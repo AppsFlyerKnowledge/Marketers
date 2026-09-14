@@ -1,0 +1,106 @@
+---
+title: "Yandex Direct campaign configuration"
+excerpt: "Learn how to set up and configure user acquisition and retargeting campaigns with Yandex Direct in AppsFlyer."
+---
+Yandex Direct is an advertising platform that allows you to run user acquisition and retargeting campaigns on Yandex Search, as well as on thousands of apps and websites in the Yandex Advertising Network.
+
+## Set up Yandex Direct
+
+> 📘 Prerequisite
+>
+> An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+
+**To set up a new integration:**
+
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
+
+( **To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+2. Select the relevant app.
+3. Search for the partner and select **Integrate**.
+4. In the **Integration** tab, turn on the **Activate partner** toggle.
+
+> 📘 Note
+>
+> The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+
+5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+
+Yandex Direct's configuration window includes 3 active tabs: **Integration, Attribution link**, and **Permissions**.
+
+## Integration tab
+
+### Activate partner
+
+On the **first visit** here, you will need to turn on **Activate partner** to enable the setup of the integration tab's parameters. The toggle must be on for as long as you work with the partner.
+
+Learn more about [partner activation/deactivation](https://support.appsflyer.com/hc/articles/360000844778).
+
+### Advanced privacy
+
+For iOS apps only, **Enable advanced privacy (for iOS 14.5 and above)** controls what data is shared with the partner via postbacks and reports. [Learn more about advanced privacy](https://support.appsflyer.com/hc/articles/4410395957521#b-advanced-privacy).
+
+### Transaction ID
+
+For iOS apps only. When **Share SKAN transaction ID** is turned on, you're [sharing the transaction ID of SKAdNetwork postbacks](https://support.appsflyer.com/hc/articles/360011420698#sending-postbacks-to-integrated-partners) with the partner. By doing so, the partner could decode your SKAdNetwork Conversion Values.
+
+### General settings
+
+The following general settings are available for Yandex Direct.
+
+#### Yandex Ecom Feed Counter ID
+
+Enter the Metrika tag number in **Yandex Ecom Feed Counter ID** if you're running Smart Banner campaigns with your product feed.
+
+#### Yandex app ID
+
+Enter the **Yandex App ID** derived from Yandex Direct.
+
+### Default postbacks
+
+Send automatic postbacks to Yandex Direct following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+
+Select **This partner only** for events coming only from users attributed to Yandex Direct.
+
+Select **All media sources, including organic** to have your entire user base available to be reported to Yandex Direct.
+
+As an all-installs network, Yandex Direct prefers to receive postbacks for all new installs of your app from all sources, and they recommended selecting **All media sources, including organic**.
+
+### In-app events postbacks
+
+In this section, you can configure in-app event postbacks that are sent to Yandex Direct.
+
+1. Turn **In-app event postbacks** on.
+2. Set the **In-app event postback window**, if required (read more about [in-app event postback window configuration](https://support.appsflyer.com/hc/articles/208439256-In-App-Events-Postback-Configuration#inapp-event-postback-window)).
+3. Click **Add event** to add an SDK Event to the list.
+4. [Complete the required parameters](https://support.appsflyer.com/hc/articles/4410395957521#g-in-app-event-postback-configuration).
+5. Click **Save integration**.
+
+## Attribution link tab
+
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](https://support.appsflyer.com/hc/articles/115005248543-OneLink-overview).
+
+[Learn more about attribution link structure and parameters](https://support.appsflyer.com/hc/articles/207447163).
+
+**To generate an attribution link,** follow [these instructions](https://support.appsflyer.com/hc/articles/4410395957521#attribution-link-tab).
+
+## Cost tab
+
+AppsFlyer gets cost details by API. See the [ad network cost integration table](https://support.appsflyer.com/hc/articles/207040526-Ad-cost-measurement-guide#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+
+**To enable the cost API**:
+
+* Follow [these integration instructions](https://support.appsflyer.com/hc/articles/360008850257#enable-cost-api). 
+
+> 📘 Note
+>
+> Add campaign ID (af_c_id=\{campaign_id\}) to your links to ensure accurate cost reporting. [Learn more](https://support.appsflyer.com/hc/articles/207447163)
+
+[View your cost API status](https://support.appsflyer.com/hc/articles/360008850257#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+
+## Ad revenue tab
+
+Ad Revenue data is not available for this partner.
+
+## Permissions tab
+
+In this tab, you can select the permissions to grant Yandex Direct, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for Yandex Direct, the Permissions tab is active and you can grant control to Yandex Direct. [Configure permissions to Yandex Direct](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
