@@ -1,0 +1,171 @@
+---
+title: "Protect360 onboarding guide"
+excerpt: "Quickly and effectively safeguard your marketing investments by following this step-by-step onboarding guide to maximize your Protect360 value within just 6 weeks."
+---
+## **Onboarding timeline and what to expect?**
+
+This guide outlines a phased onboarding approach of 6 weeks:
+
+- **Setup (weeks 1–3)**: Integrate and validate Protect360.
+- **Optimization (weeks 3–5)**: Optimize based on initial insights.
+- **Reconciliation (weeks 5–6)**: Reconcile fraud data with ad partners.
+- **Advanced protection (week 6+) [Optional]**: Enable advanced fraud protection layers.
+
+## **About Protect360**
+
+Protect360 is an advanced fraud protection solution designed to detect, prevent, and respond to ad fraud. Powered by AI and with real-time detection, it helps block fraud, reduce wasted spending, and protect your marketing from threats such as click injection, fake installs, and bots. It enables precise control and full transparency through features like validation rules and Fraud Protection Studio.
+
+### Setup (weeks 1–3)
+
+In this step, the focus is to send in-app data to AppsFlyer, set up the basic settings for Fraud Protection, and align your BI terms with AppsFlyer.
+
+**In-App event data**
+
+There are two ways to send in-app events data to AppsFlyer: SDK and Server-to-Server (S2S). Depending on the method used, there may be some action required:
+
+- **SDK**: No action required.
+- **Server-to-Server (S2S)**: Ensure events are sent via API3. [Learn more about how to do this here.](/docs/bulletin-upgrading-the-appsflyer-s2s-api)
+
+> 📘 Note
+>
+> If unsure which one you use, confirm with your development or marketing operations teams
+
+#### **Fraud Protection Studio settings**
+
+Fraud Protection Studio offers a way to evaluate the impact and value of the different layers of AppsFlyer’s fraud protection solution. It enables you to clearly distinguish between fraud detection and enforcement.
+
+Understanding these differences and available options is key to making informed decisions:
+
+- **Implemented** (default): Automatically blocks fraudulent activity in real-time or marks it as post-attribution fraud if detected post-install. This is ideal if immediate fraud prevention aligns with your goals.
+- **Tagged**: Fraud is detected and tagged but remains valid for attribution, allowing you to analyze and review without automatically blocking. Choose this if you prefer flexibility and deeper initial analysis before implementing.
+
+> 📘 Note
+>
+> You can switch ( [Admin only](/docs/user-management)) between **Implemented** and **Tagged** modes anytime to match your evolving business objectives. [Learn more here](/docs/beta-fraud-protection-studio#key-concepts).
+
+> 👍 Tip
+>
+> At this stage, when your team is getting familiar with Protect360, we strongly recommend visiting the [**App detection evaluation**](/docs/beta-fraud-protection-studio#app-detection-evaluation) card within the Fraud Protection Studio to test and understand these settings on the app level.
+
+#### **Data connection setup**
+
+You can export Protect360 data in three ways: [Raw Data Report](/docs/protect360-raw-data-reports#about-protect360-raw-data-reports), [Pull API](/docs/protect360-raw-data-reports#pull-api), or [Data Locker](/docs/protect360-raw-data-reports#data-locker). Whichever way you choose, it is important to configure your data connections properly to ensure accurate fraud data reporting and effective analysis.
+
+> ❗️ Important!
+>
+> In order to get the full value of Protect360, export the [Post-attribution report](/docs/protect360-raw-data-reports#postattribution-reports) every 8th of every month, so you can reconsolidate with partners.
+
+#### **How to display hijacked installs correctly in your BI**
+
+For greater alignment and granularity of fraud protection data within your systems, you may use Raw Data Reports, Pull APIs, or Data Locker to properly view hijacked installs within your BI.
+
+<Tabs>
+<Tab title="Raw Data Report">
+
+To display hijacked installs properly in your BI:
+
+1. Look for the **Rejected Reason Value** field.
+2. This field will be populated with one of the following:
+   1. Blank, organic, contributor1, contributor2, etc.
+3. Inform your BI team on the meaning of each, so they can align the terms and their implications.
+
+- Blank - Not hijacked
+- Organic - Change attribution to organic
+- Contributor1, contributor2, contributor3, etc. - Correct attribution to the specified media source.
+
+> 📘 Note
+>
+> To get more insight about your **Tagged** data, you can view the 4 raw data reports:
+>
+> - Tagged Installs
+> - Tagged post attribution installs
+> - Tagged in-app events
+> - Tagged post attribution in-app events
+
+</Tab>
+<Tab title="Pull API">
+
+To display hijacked installs properly in your BI:
+
+1. Look for the **Rejected Reason Value** field.
+2. This field will be populated with one of the following:
+   1. Blank, organic, contributor1, contributor2, etc.
+3. Inform your BI team on the meaning of each so they can align the terms and their implications.
+
+- Blank - Not hijacked
+- Organic - Adjust attribution to organic
+- Contributor1, contributor2, contributor3, etc. - Correct attribution to the specified media source.
+
+</Tab>
+<Tab title="Data Locker">
+
+To display hijacked installs properly in your BI:
+
+1. Look for the **validation_reason_value** field.
+2. This field will be populated with one of the following:
+   1. Blank, organic, contributor1, contributor2, etc.
+3. Inform your BI team on the meaning of each so they can align the terms and their implications.
+
+- Blank - Not hijacked
+- Organic - Adjust attribution to organic
+- Contributor1, contributor2, contributor3, etc. - Correct attribution to the specified media source.
+
+</Tab>
+</Tabs>
+
+#### **Validation rules**
+
+Validation rules allow you to add a business logic layer to your fraud protection, tailored to your marketing strategy. With validation rules, you can define which installs are considered valid or invalid based on a variety of parameters across multiple use cases.
+
+Contact your Customer Success Manager or Account Manager to learn more about best practices recommended for your vertical.
+
+> 📘 Note
+>
+> For the rules to be as effective as possible, it’s recommended to review your UA / marketing / media buying strategy and assess which types of installs or app events match your efforts, to allow or block per your needs. For example, if you do not promote your app in country (GEO) X, you can create a rule to automatically block any such activity arriving from GEO X. You can create multiple rules to align protection to your marketing strategy.
+
+#### **Working with dashboards**
+
+The [Protect360 dashboard](/docs/protect360-dashboard) provides a visual overview of your fraud data, allowing you to investigate further and better understand fraud detection and its impact on your activities.
+
+### Optimization (weeks 3–5)
+
+#### **Campaign optimization**
+
+In this step, it is time to optimize your campaign to ensure you are getting the most out of Protect360. To do this, you should:
+
+- See [best practices](https://support.appsflyer.com/hc/articles/34554022072209-Protect360-onboarding-guide-WIP#best-practices)
+- [Review your Fraud Protection settings](https://support.appsflyer.com/hc/articles/34554022072209-Protect360-onboarding-guide-WIP#review-your-fraud-protection-settings)
+
+#### Best practices
+
+- Combine real-time and post-attribution data to evaluate campaign performance based on quality (retention, in-app events, etc) and fraud.
+- Optimize campaigns based on site_id or subsite_id.
+- Analyze partner-specific fraud rates and types.
+
+#### Review your Fraud Protection settings
+
+Review your [Fraud Protection Studio settings](https://support.appsflyer.com/hc/articles/34554022072209-Protect360-onboarding-guide-WIP#fraud-protection-studio-settings) to ensure they still align with your objectives.
+
+> 📘 Note
+>
+> **Tagged** installs are a subset of valid. Switch to **implemented** mode to block in real-time according to the Protect360 detection
+
+### Reconciliation (weeks 5–6)
+
+#### **Fraud data reconciliation**
+
+After implementing Protect360 and accumulating several weeks of fraud detection data, it's time to reconcile your fraud insights with your ad partners.
+
+This critical step helps ensure that you and your partners are aligned on campaign performance, fraud detection methods, and accuracy.
+
+Download your [post-attribution data](/docs/protect360-anti-fraud-guide#postattribution-detection) and collaborate closely with your ad partners to cross-reference fraud metrics. This reconciliation helps identify discrepancies, resolve disputes proactively, and build transparency. Find out how to reconcile fraud data with ad partners [here](/docs/protect360-anti-fraud-guide#fraud-reconciliation-with-ad-networks).
+
+### Advanced protection setup (week 6+) [optional]
+
+#### **Advanced Security Module**
+
+Available exclusively for Protect360 clients, the Advanced Security Module is designed for high-trafficked apps. It adds a vital security layer to your Android SDK, validating network requests in real-time to block spoofed installs and manipulated traffic.
+
+By filtering out unauthorized signals at the source, it helps reduce app store discrepancies, strengthens attribution accuracy, and protects your data from sophisticated cyber fraud.
+
+Reach out to your CSM or send an email to [hello@appsflyer.com](https://support.appsflyer.com/hc/articles/hello@appsflyer.com)

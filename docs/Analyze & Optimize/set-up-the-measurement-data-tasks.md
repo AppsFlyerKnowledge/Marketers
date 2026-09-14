@@ -1,0 +1,23 @@
+---
+title: "Set up the measurement data tasks"
+excerpt: "Learn how to configure campaigns, engagements, conversions, media partners, and lookback windows tasks."
+---
+Set up the campaigns, engagements, conversions, media partners, and lookback windows tasks.
+
+<Cards>
+  <Card title="Set up the Campaigns task" href="/docs/set-up-the-campaigns-task">
+    Configure and manage your campaign measurement tasks.
+  </Card>
+  <Card title="Set up the Conversions task" href="/docs/set-up-the-conversions-task">
+    Configure and manage your conversion measurement tasks.
+  </Card>
+  <Card title="Set up the Engagements task" href="/docs/set-up-the-engagements-task">
+    Configure and manage your engagement measurement tasks.
+  </Card>
+  <Card title="Set up the Media partners task" href="/docs/set-up-the-media-partners-task">
+    Configure and manage your media partner measurement tasks.
+  </Card>
+  <Card title="Set up the Lookback windows task" href="/docs/set-up-the-lookback-windows-task">
+    Configure and manage your lookback window measurement tasks.
+  </Card>
+</Cards>
