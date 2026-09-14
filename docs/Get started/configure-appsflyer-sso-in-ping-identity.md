@@ -1,0 +1,122 @@
+---
+title: "Configure AppsFlyer SSO in Ping Identity"
+excerpt: "Learn how to configure single sign-on (SSO) for AppsFlyer using Ping Identity as your identity provider."
+---
+**At a glance:** Configure the SSO process using Ping Identity as an identity provider (IdP). 
+
+The first step in configuring the AppsFlyer SSO process is done on the Ping Identity platform. Follow the steps below:
+
+### Create the AppsFlyer app in Ping Identity
+
+> 📘 Prerequisite
+>
+> A Ping Identity account with administrative privileges.
+
+1. In the Ping Identity admin menu, go to **[Applications](https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/applications)** and click **+**.
+2. From the section opened on the right:
+   - Enter the name that you want to show in the Ping Identity plugin list of apps.
+   - Select SAML Application as the app type.
+3. Click **Configure**. SAML Configuration appears.
+
+<Tabs>
+<Tab title="Service Provider (SP) Initiated">
+
+For authentication starting from the service provider (AppsFlyer), select **Import From URL**:
+- **Import URL:** [https://hq1.appsflyer.com/auth/sso-metadata](https://hq1.appsflyer.com/auth/sso-metadata)
+- **ACS URLs:** Enter the following link using your AppsFlyer account ID:
+
+  [https://hq1.appsflyer.com/auth/sso-callback](https://hq1.appsflyer.com/auth/sso-callback)
+
+- **Entity ID:** Enter the following link: [https://hq1.appsflyer.com/](https://hq1.appsflyer.com/)
+
+![ping](https://files.readme.io/8b265666f05bc4f6ab984151d7d73653b9ea5dcb837898d17e96bf9c392fe638-16063467179921.png)
+
+</Tab>
+<Tab title="Identity Provider (IdP) Initiated">
+
+For authentication starting from the IdP (Ping Identity), select **Manually Enter**:
+- **ACS URLs:** Enter the following link using your AppsFlyer account ID:
+
+  `https://hq1.appsflyer.com/auth/sso-callback/<Enter your AppsFlyer account ID here>`
+- **Entity ID:** Enter the following link: [https://hq1.appsflyer.com/](https://hq1.appsflyer.com/)
+
+</Tab>
+</Tabs>
+
+4. Click **Save**.
+5. Under the **Configuration** tab:
+
+1. Click **Download Metadata**.
+2. From the top right corner, click the Edit icon and enter the fields below:
+
+      ![ping](https://files.readme.io/386fab01b9389d88ea0c4870ba2ea8e33d9ab6e27322059be5e46efbf248714b-16063435689233.png)
+
+      - **SIGNING KEY:**        - Select **Sign Assertion \& Response**.
+        - **Signing Algorithm:** Select **RSA\_SHA256**.
+      - **ENCRYPTION:**        - Select **Enable Encryption**.
+        - ALGORITHM: Select **AES\_256**.
+      - **CERTIFICATE:**        - Select **Import** and upload the [AppsFlyer encryption certificate](https://support.appsflyer.com/hc/articles/360015017198#obtaining-the-appsflyer-certificate-from-the-metadata-url). This certificate is signed by AppsFlyer and is used to both encrypt and sign the request.
+
+                  > 📘 Note
+                  >
+                  > You can upload the AppsFlyer certificate signed by Amazon. Contact your CSM to obtain this certificate.
+        - Select **Enforced Signed Authn Request**.
+6. Click **Save**.
+7. Under the **Attribute Mappings** tab, click the Edit icon and select **Email Address** under **PingOne Mappings**.
+
+![ping-identity](https://files.readme.io/b93ac5463868c8f5f7760b60492a30f7ae59c52b766e76ef57fbe42e00f4bf2b-16292200523025.png)
+
+8. Click **Save**.
+
+### Create Ping Identity groups
+
+Now that the Ping Identity SAML application is created, let’s create user groups and then add users to the groups.
+
+1. In the Ping Identity admin menu, go to **Identity** > **[Groups](https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/group)** and click **+**.
+
+![ping](https://files.readme.io/fcc2a3f035a285d96d7b7c3e83cfeed64e86cb0f0807e6acced75df89bd8dfc4-16292210866705.png)
+
+2. From the section opened on the right, enter the group name and click **Save**.
+3. Repeat steps 1-2 for all user groups.
+
+### Create Ping identity users and assign them to groups and roles
+
+1. In the Ping Identity admin menu, go to **Identity** > [**Users**](https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/user) and click **+**.
+
+![ping](https://files.readme.io/802946a62c1df918b82cccc1cf0855ffea8167ed91aa6b0d6bce8973c37b4e75-16292200536081.png)
+
+2. From the section opened on the right:
+1. Enter the user's name and email address.
+2. Select **Administrator Population**.
+3. Create a one-time password for the user or click **Generate Password** to have one generated for the user. When the user enters Ping Identity, they'll need to create
+4. Click **Save**.
+3. Click the Edit button for **Groups**, check the group to add the user, and click **Save**.
+4. Click the **Roles** tab > **Grant roles**, select the roles for the user, and click **Save**.
+
+### Provide access to your groups and activate the app
+
+### Provide access to your groups
+
+1. In the Ping Identity admin menu, go to **Connections** > **[Applications](https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/applications)** and select the app you created.
+
+![pi-applications.png](https://files.readme.io/6c8545bc5334747d7da6a090ca745c1b00cfedc3f48e59ccc304c814885cd183-16522614384785.png)
+
+2. From the section opened on the right, select the **Access** tab and click the Edit button.
+3. Select the group or groups you created, and click **Save**.
+
+### Activate the app
+
+1. In the Ping Identity admin menu, go to **Connections** > **[Applications](https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/applications)** and select the app you created.
+2. Activate the app.
+
+![pi-appsflyer](https://files.readme.io/24c34f3426ae7b46301316937ae8485464e0b3810808e3bbcc1be843ba34a616-16523020816657.png)
+
+### Complete the process in AppsFlyer
+
+Now that you've configured the IdP part, go back to AppsFlyer to [complete the configuration](https://support.appsflyer.com/hc/articles/360015017198#step-2-complete-the-configuration-at-appsflyer). You can then [test](https://support.appsflyer.com/hc/articles/360015017198#step-3-test-the-sso-process) to see that it works.
+
+<Cards>
+<Card title="Ping Identity SSO configuration documentation" href="https://docs.pingidentity.com/r/en-us/pingfederate-112/pf_ident_provid_sso_config">
+Read the official Ping Identity documentation for configuring single sign-on.
+</Card>
+</Cards>
