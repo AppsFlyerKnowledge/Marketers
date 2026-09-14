@@ -1,0 +1,96 @@
+---
+title: "Custom dimensions"
+excerpt: "Define your own dimensions and use them to group and view data in the Overview dashboard."
+---
+Custom dimensions let you use existing dimensions to create your own dimensions for data analytics relevant to your business purposes. These dimensions can be used in all widgets in the Overview dashboard to group data and help you gain deeper insights and make data-driven decisions that align with your business objectives.
+
+![Custom dimensions to organize report](https://files.readme.io/e558a7e652888088b4559131717029a8f53c40279347468624e2d35e1a84ca5e-e5c7d7a4f1bad48c5480f2142514b37a.webp)
+
+## Overview
+
+Custom dimensions let you use existing dimensions to create your own dimensions for data analytics relevant to your business purposes. These dimensions can be used in all widgets in the Overview dashboard to group data and help you gain deeper insights and make data-driven decisions that align with your business objectives.
+
+The custom dimensions you create are at the account level, meaning different apps in the same AppsFlyer account can use the same custom dimensions.
+
+### Benefits
+
+- Tailored insights: Define and collect data specific to your business needs. By capturing additional information beyond the standard dimensions, you can gain deeper insights and a more comprehensive understanding of your data.
+- Segmented analysis: Group and analyze your data based on specific relevant attributes or characteristics to get a more detailed view of user behavior, customer segments, or product performance.
+- Enhanced reporting: Create custom dashboards and reports that align with your unique reporting requirements.
+- Improved decision-making: By capturing custom dimensions that align with your business goals, you can make more informed decisions. Custom dimensions provide the necessary context to evaluate the impact of different variables and factors on your key performance indicators (KPIs), helping you identify trends, patterns, and opportunities for optimization.
+
+### Example use cases
+
+| Example use case | Description |
+| --- | --- |
+| Campaign intent | - Based on your campaign names.<br>- Select value names to differentiate your different campaign goals. For example: label a brand awareness as "brd" and a user acquisition campaign as "new" or "ua."<br>- Include the value names in your campaign names. For example: "US\_Facebook\_BRD" or "UK\_Google\_new".<br>- AppsFlyer parses the campaign name and groups data based on your labels. |
+| Regions | - Based on geos.<br>- Group several geos/countries into regions. For example: Group USA, Canada, and Mexico into "North America," or use different geos to create groupings for Europe, APAC, etc.<br>- AppsFlyer groups data based on your region values (North America, Europe, APAC, and so on). |
+| Owned vs paid media | - Based on media sources.<br>- Group different media sources into "owned" and "paid." For example: Group SMS and Facebook post into the value "owned," and Facebook and Google into the value "paid."<br>- AppsFlyer groups data from these media sources into the values "owned" and "paid," respectively. |
+| Cities | - Based on your campaign names.<br>- Values include the cities you have specific campaigns for in your campaign names. For example: "US\_Facebook\_NY" for New York and "US\_Google\_SF" for San Francisco.<br>- AppsFlyer parses the campaign name and groups data based on the cities. |
+| UA manager | - Based on media sources.<br>- Group different media sources according to specific team members. For example: Group Google and Facebook campaigns into the value "Kevin" and TikTok and Instagram campaigns into the value "Natasha."<br>- AppsFlyer groups data from these media sources into the values "Kevin" and "Natasha," respectively. |
+
+## Procedures
+
+### Create a custom dimension
+
+**To create a custom dimension**:
+
+1. In the Overview dashboard, either:
+   - Click the **Menu icon (⋮)** > **Custom dimensions**.
+   - In any chart or table, in the **Show to** p or **Group by** dropdown menu, click **+ Create custom dimension**.
+2. If this is your first time creating a custom dimension, click **+ New dimension**.
+
+The **Create** tab opens.
+3. Enter a name and description for your dimension. Choose name and description that will help you identify this custom dimension in dashboard grouping options.
+4. Define the possible dimension values. There can be up to 10 values per dimension. For each value:
+   1. Enter a value name.
+      - Example: For a custom dimension called "campaign intent," values can be "branding" and "ua." See more example use cases.
+   2. Define the rules for when the value name should be used. There can be up to 10 rules per value.
+      - Each rule includes the existing dimension the value is based on, operators, and operator values.
+      - Example: If campaign name includes "brd" or "brnd," the value name will be "branding." See more example use cases.
+      - The following table shows the different components used in defining a dimension.
+
+        | Value name | Dimension (to base the value on) | Operator | Operator value |
+        | --- | --- | --- | --- |
+        | You decide the possible value names for your custom dimension. | Media source | Select: <br> - Is<br> - Contains<br> - Starts with<br> - Ends with | - String<br> - Dropdown selection (if operator is "is") |
+        | Campaign name | String | | |
+        | Geo | Is | Dropdown selection | | |
+5. Click **Save**.
+
+### Delete or edit a custom dimension
+
+**To delete or edit a custom dimension**:
+
+1. In the Overview dashboard, either:
+   - Click the **Menu icon** > **Custom dimension**.
+   - In any chart or table, in the **Show to** p or **Group by** dropdown menu, click **+ Create custom dimension**.
+2. Click the **Edit** tab.
+3. Select or search for a custom dimension.
+4. To delete the dimension, click the **Delete** icon next to your selected dimension.
+5. To edit the dimension, make any changes you want to your custom dimension settings, and click **Save**.
+
+### View custom dimension data
+
+Custom dimensions can be used to group and view data in all widgets in the Overview dashboard.
+
+**To view custom dimension data**:
+
+1. In the Overview dashboard, go to any chart or dashboard widget.
+2. In the **Show top** or **Group by** dropdown menu, look under Custom dimensions for the custom dimension you want to use.
+3. The chart or table data is displayed in a grouping using your custom dimension
+
+## Specifications and limitations
+
+| Spec | Remarks |
+| --- | --- |
+| Custom dimensions | Up to 10 custom dimensions can be created. |
+| Advertiser | Can't view or edit custom dimensions made by agencies. |
+| Agencies | - Can create and edit their own custom dimensions and view them in their dashboard.<br>- Can't edit or view custom dimensions made by the advertiser. |
+| Ad networks | Can't view, create, or edit custom dimensions. |
+| SKAN metrics | When SSOT is off and data is grouped by a custom dimension, SKAN metrics don't display. |
+| SSOT | When SSOT is on and data is grouped by a custom dimension based on geo, data doesn't display. |
+| Permissions | Any team member can create new dimensions and edit existing dimensions, even if they were created by another team member. |
+| Case sensitivity | No. Upper case and lowercase are treated the same. |
+| Dimension values | - There can be up to 10 custom dimension values.<br>- When matching data to custom dimension values, priority is given to higher-ranked dimension values. Example:<br> - For Paid vs. owned media dimension, you set Value 1 to be paid media if media source is Facebook, and Value 2 to be owned media if media source is Facebook.<br> - Facebook can be grouped into either paid or owned media based on your settings, but AppsFlyer gives priority to the Value 1 setting (paid). |
+| Operators | The operator "does not contain" isn't available yet. |
+| Dimension rules | You can have up to 10 rules for a dimension value. These are connected with "or." The connector "and" isn't available yet. |
