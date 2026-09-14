@@ -1,0 +1,140 @@
+---
+title: "Snapchat—Web integration setup for PC and console apps"
+excerpt: "Learn how to integrate Snapchat Ads web for PC and console apps with AppsFlyer and set up campaigns in Snapchat Ads web."
+---
+## Overview
+
+This article contains information and steps on how to set up and use Snapchat Ads web for PC and console apps with AppsFlyer.
+
+> 🚧 Warning
+>
+> This integration is only available for PC and console apps, such as Steam, Epic, or Native PC. For mobile apps, see the [Snapchat Ads integration setup](/docs/tiktok-for-business-advanced-srn-integration-setup) page.
+
+### Prerequisite
+
+Before activating the Snapchat Ads web integration, make sure you have a business account in [Snapchat Ads Manager.](https://businesshelp.snapchat.com/s/topic/0TO8b000000KfssGAC/ads-manager?language=en_US)
+
+## Activating partner in AppsFlyer
+
+**To activate the partner integration:**
+
+1. In AppsFlyer, from the side menu, open **Collaborate** > **Partner Marketplace**.
+2. Search for **Snapchat Ads web** (`snapweb_int`) and select it.
+3. Click **Set up integration**. You’re directed to the **Active Integrations** setup page.
+4. In the **Integration** tab, turn on **Activate partner**. The toggle must stay on ([activated](https://support.appsflyer.com/hc/articles/360000844778)) for as long as you work with the partner.
+5. Complete the configuration using the relevant tabs, as described in the next section.
+
+## Setting up Snapchat Ads web in AppsFlyer
+
+In this part of the setup, you can also set up postbacks to Snapchat Ads web via the Snapchat events API. The Snapchat Ads web (`snapweb_int`) integration uses an Events API tool provided by Snapchat Ads, allowing advertisers to send data from their **PC and console apps** directly to Snapchat's servers. Such data may include user actions, such as purchases, registrations, and other types of conversions performed on non-mobile platforms (websites or applications). The data is then used by Snapchat Ads to optimize ad targeting, measure ad performance, and build custom audiences for retargeting.
+
+The integration with Snapchat Ads web only supports sending postbacks for installs and in-app events.
+
+### Integration tab
+
+The **Integration** tab comprises several sections, as described below.
+
+**Activate partner**
+
+To configure the integration, you must first turn on the **Activate partner** toggle.
+
+**General settings**
+
+* **Pixel ID:** Enter the Pixel ID. You can create it or retrieve it from your Snapchat Ads Manager by following the instructions detailed in the [Snapchat Ads official documentation](https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US).
+* **Access token:** Enter the access token. To generate it or retrieve it, follow the instructions in the [Snapchat Ads official documentation](https://developers.snap.com/api/marketing-api/Conversions-API/GetStarted).
+
+**Enable view-through attribution**
+
+AppsFlyer supports view-through attribution for Snapchat Ads web campaigns using probabilistic modeling (PMOD) and a [Smart Script](/docs/snapchat-web-integration-setup-for-pc-and-console-apps#create-a-landing-page-with-onelink-smart-script) or [Smart Banner](/docs/snapchat-web-integration-setup-for-pc-and-console-apps#create-a-landing-page-with-onelink-smart-banners)-enabled landing page. This allows AppsFlyer to attribute app installs that result from users viewing an ad and then later installing the app, even across platforms, without requiring a direct click.
+
+When a user clicks a Snapchat ad on the web and lands on a [Smart Script](/docs/snapchat-web-integration-setup-for-pc-and-console-apps#create-a-landing-page-with-onelink-smart-script) or [Smart Banner](/docs/snapchat-web-integration-setup-for-pc-and-console-apps#create-a-landing-page-with-onelink-smart-banners)-enabled landing page, AppsFlyer can attribute the downstream app install. If available, the `ScCid` will be included in the postback to Snapchat to enhance attribution fidelity.
+
+**To enable view-through attribution:**
+
+1. In AppsFlyer, from the sidebar, open **Active Integrations** > **Snapchat Ads web ads**.
+2. In the **Integration** tab, scroll to the **Install attribution** section.
+3. Turn on **Install view-through attribution**.
+4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see [Enable equal priority for cross-platform impressions](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions).
+5. Open the **Attribution link** tab.
+6. Scroll to the **View-through attribution** section and set the **view-through lookback window** (up to 24 hours).
+7. Click **Save integration** to apply your settings.
+
+**Default postbacks**
+
+Postbacks for installs are sent automatically only to Snapchat Ads web.
+
+**In-app event postbacks**
+
+Configure the mapping of in-app event postbacks that are sent to Snapchat Ads web. These events can be viewed in the [Snapchat Ads Manager](https://businesshelp.snapchat.com/s/topic/0TO8b000000KfssGAC/ads-manager?language=en_US).
+
+1. Turn on **In-app event postbacks**.
+2. Click **Add event** to add an SDK or server-to-server event to the list. The following table lists and describes the fields:
+
+| **Parameter name** | **Description** |
+| --- | --- |
+| AppsFlyer event | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br> - Click Add item and enter the event name. |
+| mapped to partner event | The unique name or ID of each event, as defined on the partner's side. <br> - Select from the list the most suitable pre-defined partner event. |
+| for users from | This partner only: In-app event postbacks are sent only for events attributed to this partner. |
+| including | Values and revenue: All event parameters, including the revenue value (if it exists in the event), are sent in the postback. |
+
+3. [Optional] Click the **Add condition** icon to [set conditions](https://support.appsflyer.com/hc/articles/208439256#conditional-inapp-event-postbacks) for an event. For more information, see [Conditional in-app event postbacks](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks).
+4. Set the **In-app event postback window**. For more information, see [in-app event postback window](https://support.appsflyer.com/hc/articles/208439256-In-App-Events-Postback-Configuration#inapp-event-postback-window).
+5. Click **Save integration**.
+6. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
+   1. From the top-left corner, under the partner name, click the app name to open the list of apps.
+   2. Select a different app from the drop-down list.
+   3. Repeat the integration steps for the selected app.
+
+### Attribution link tab
+
+Generating an attribution link in the AppsFlyer UI isn't currently available. You can use a cross-platform landing page with SmartScript, or you can create a direct attribution link for your app. See the table below.
+
+| Option | Actions | Who's involved |
+| --- | --- | --- |
+| Cross-platform landing page | **Recommended.** Use this option when your campaign promotes an app that’s available on multiple platforms, such as Epic and Steam.<br>[Learn about cross-platform landing pages](https://support.appsflyer.com/hc/articles/4404083608849-Connected-TV-CTV-PC-and-console-platform-attribution-overview#landing-page)<br>[Learn how to set up a cross-platform landing page](https://support.appsflyer.com/hc/articles/18440789126289)<br>Make sure all relevant URL parameters (that are later captured by the Smart Script) are appended to the ad URL<br>- Make sure the script takes the `ScCid` value from the incoming URL and adds it to the generated link. This means you must map the outgoing `ScCid` URL parameter to the incoming `ScCid` parameter.<br> <br> **Note:** To display `ScCid` in AppsFlyer raw data reports, the incoming `ScCid` parameter must also be mapped to one of the outgoing parameters `af_sub[1–5]`.<br>- Optional. You can use Snapchat’s dynamic URL macros instead of hard-coding the values manually. For more info, see the [Snapchat official documentation](https://businesshelp.snapchat.com/s/article/add-url-macros?language=en_US). | Marketer (may require developer assistance) |
+| Direct attribution link | If you don't use a cross-platform landing page, because you only have one app on one platform, you can create direct attribution links to place behind ads. <br>[Learn how to create direct attribution links](https://support.appsflyer.com/hc/articles/15199908310801)<br>Make sure the mandatory parameters are included in your link:<br>- `af_media_source`<br>- `af_campaign_id`<br>- `af_r`<br>**Template to use for Snapchat Ads web ad link:**<br>```https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}?af_media_source=snapweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adSet.name}}&af_adset_id={{adSet.id}}&af_ad={{creative.name}}&af_ad_id={{ad.id}}&af_channel={{site_source_name}}&af_r={encoded landing page and URL params}```<br>**Sample link of a Snapchat ad web link leading to Steam:**<br>```https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=snapweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adSet.name}}&af_adset_id={{adSet.id}}&af_ad={{creative.name}}&af_ad_id={{ad.id}}&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello```<br>**Note**: The template includes some dynamic URL parameters supported by Snapchat. If you prefer, you can replace them with real values manually. | Marketer |
+
+### Cost tab
+
+Cost isn't available for Snapchat Ads web.
+
+### Ad revenue tab
+
+Ad revenue isn't available for Snapchat Ads web.
+
+### Permissions tab
+
+Currently, permissions aren't granted to Snapchat Ads web.
+
+## Setting up campaigns in Snapchat Ads web for PC and console apps
+
+Set up your campaign in Snapchat Ads Manager. For more information, see [Set up AppsFlyer integration in Snapchat Ads](https://support.appsflyer.com/hc/articles/41365000854161--WIP-Create-web-based-campaigns-for-Snapchat#set-up-appsflyer-integration-in-snapchat-ads).
+
+When you set up your new campaign:
+
+* Select **Website** as the conversion location.
+* When you name your Snapchat conversion pixel, enter the same pixel ID you entered for `snapweb_int` in the _AppsFlyer Partner Marketplace_.
+* When you enter the website URL as the destination for your ad, the URL should be for one of the following:
+  * Web landing page (recommended when you have an app on multiple platforms)
+  * Store URL (recommended when your app is in a single app store, on a single platform)
+
+## View web-to-app attribution data
+
+Although web-based conversion events are sent to Snapchat under the original `snapweb_int` PID, they are reported in the AppsFlyer dashboard and raw data reports under the `snapchat_int` PID. This applies to both primary conversion events and conversion assist events.
+
+This unified reporting view allows you to analyze the performance of both web and app campaigns in one place, including comprehensive web and mobile cost reporting.
+
+### View in the dashboard
+
+All Snapchat web-to-app attributions appear under `snapchat_int` in the Overview and Activity dashboards. This provides a single, consolidated view of campaign results across platforms. Use standard filters and breakdowns to compare app and web traffic within your Snapchat Ads data.
+
+### View in raw data and API reports
+
+* **Raw data exports and API responses** include the `snapchat_int` PID in the `media_source` field for Snapchat web activity. To verify web campaign setup details, refer to the `original_url` field that shows `snapweb_int` as the PID used during the creation of web campaigns.
+* **Postback reports** show `snapweb_int` as the original media source to which the postback was sent.
+
+## Traits and limitations
+
+| Trait | Description |
+| --- | --- |
+| Clicks and impressions (Temporary limitation) | Clicks and impressions for campaigns targeting PC & Console apps are temporarily not available from Snapchat SRN. |
