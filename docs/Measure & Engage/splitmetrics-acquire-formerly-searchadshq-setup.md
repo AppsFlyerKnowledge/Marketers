@@ -1,0 +1,59 @@
+---
+title: "SplitMetrics Acquire (formerly SearchAdsHQ) setup"
+excerpt: "Optimize Apple Ads campaigns by using SplitMetrics Acquire to send postbacks from AppsFlyer."
+---
+Optimize Apple Ads campaigns by using SplitMetrics Acquire. When configured, AppsFlyer sends postbacks to SplitMetrics Acquire.
+
+## Enabling Apple Ads attribution
+
+Both advertisers and agencies can enable Attribution for Apple Ads.
+
+> 📘 Note
+>
+> If the advertiser or the agency disables attribution for Apple Ads, attribution for this app, including postback sending to Apple Ads Marketing Partners stops.
+
+- **Advertisers**: follow the instructions below on how to enable attribution for Apple Ads.
+- **Agencies**: [follow these instructions](https://support.appsflyer.com/hc/articles/213747963-Apple-Search-Ads-guide#agency-setup) to enable attribution for Apple Ads.
+
+## Setting up SplitMetrics Acquire on AppsFlyer
+
+### Getting required information from SplitMetrics Acquire
+
+Before you start configuring SplitMetrics Acquire on AppsFlyer, obtain your **client_id** and your **Apple Ads campaign group ID**.
+
+- For client_id, go to your SplitMetrics Acquire dashboard, click **Integrations** > **AppsFlyer**. In the popup that opens, copy the ID.
+- For Apple Ads Campaign Group ID: **In your Apple Ads dashboard,** get the Apple Ads Campaign Group ID parameter related to SplitMetrics Acquire. Use the screenshot that follows as a guide to locating the ID. <Image src="https://files.readme.io/a4b2aba5e7d4e0257b455b1dc44b1030a288a4c3892c0da905cdf361496041e5-360017400378.png" alt="ASACGroupID.png" />
+
+### Setting up campaigns on AppsFlyer
+
+**To set up a SplitMetrics Acquire:**
+
+1. **In AppsFlyer, configure SplitMetrics Acquire:**
+   1. In AppsFlyer, from the side menu, select **Collaboration** > **Active Integrations.**
+   2. Search for SplitMetrics Acquire. The list of marketing partners displays.
+   3. Select SplitMetrics Acquire.
+   4. Turn on **Activate Partner**.
+   5. Enter the client ID in the **client_id** field.
+   6. Enter SplitMetrics Acquire's **Apple Ads Campaign ID** that you retrieved in the earlier step. Enter the digits (numbers) only.
+   7. Click **Save**.
+2. If you want to record attributions for Apple Ads, also turn on the **Apple Ads integration:**
+   1. In AppsFlyer, from the side menu, select **Collaboration** > **Partner Marketplace**.
+   2. Search for and select the partner. You're directed to the partner configuration page.
+   3. From the **Integration** tab, turn on **Activate partner**.
+   4. Click **Save Integration**.
+
+#### Configuring in-app event postbacks
+
+**To configure postback that should be sent to SplitMetrics Acquire upon in-app events:**
+
+1. Enter the client_id.
+2. Turn on **In-app events postback**.
+3. Click **Add Event** to add an SDK Event to the list.
+4. Complete the following parameters:
+
+| Parameter Name | Description |
+| --- | --- |
+| SDK Event Name | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server-to-server events. **Tip:** If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
+| Send Revenue | Select one of the following: No values and no revenue, Values & no revenue, or Values & revenue. |
+
+5. Click **Save Integration**.
