@@ -1,0 +1,53 @@
+---
+title: "View aggregated cost data for attribution links"
+excerpt: "Learn how to view and analyze aggregated cost data reported by ad networks directly on attribution links within AppsFlyer."
+---
+**At a glance:** Viewing aggregated cost data for each ad click as reported by ad networks on the attribution link.
+
+## Basic cost reporting
+
+Cost data is reported to AppsFlyer by:
+
+- Ad networks: each time a user clicks on an ad. Viewing campaign cost in AppsFlyer helps advertisers measure ROI and make appropriate budgetary decisions.  - Cost is reported on the [attribution link](https://support.appsflyer.com/hc/articles/207447163) using the cost-per-install (CPI) model.
+  - When sending the attribution link to the ad network, ensure the ad network [adds the cost reporting parameters](https://support.appsflyer.com/hc/articles/115000748446).
+- [Advanced options for cost aggregation](https://support.appsflyer.com/hc/articles/207040526), including by API and Cost Import (CSV file upload).
+  - Cost aggregation methods support cost models used by the partner in addition to CPI, including, CPA, CPC, and CPM.
+
+### Viewing ad cost reported on the attribution link
+
+Cost data reported on attribution links is aggregated and available for viewing in real-time (maximum up to 2 hours after the link is clicked) in the AppsFlyer dashboards, performance reports, and raw data reports.
+
+In the _**Overview dashboard,** Aggregated Performance Report_ contains cost, clicks, impressions, ROI, and average eCPI data.
+
+<Image src="https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg" alt="Cost Reporting Dashboard" />
+
+The performance and raw data reports are also available for [download](https://support.appsflyer.com/hc/articles/209680773).
+
+### Ad networks providing cost data on the attribution link
+
+For ad networks that report cost on the attribution link, the dimensions supported are those contained on the link.
+
+**Ad networks that report cost on the attribution link include:**
+
+- AdAction
+- Aura from Unity
+- Blind Ferret
+- Chartboost
+- Cross Install
+- Digital Turbine
+- Fyber
+- HangMyAds
+- ironSource
+- Criteo DSP (Manage)
+- Mintegral
+- TikTok for Business
+- Vungle
+- [See full list of ad networks that support cost on the attribution link](https://docs.google.com/spreadsheets/d/e/2PACX-1vTMPZ9anfZoFBelK2bsBUoHG9n4YE3WxpXOayDF_wI8vyYClM6_6yXelFCZ3khwhd9Z_5Louxd4VVgx/pub?gid=0&single=true&output=csv)
+
+### Limitations
+
+> 🚧 Limitations
+>
+> - Cost is only reported using the cost-per-install model (CPI). Other models, including CPA, CPC, and CPM are not supported.
+> - [Self-reporting networks](https://support.appsflyer.com/hc/articles/360001546905) (SRN) do not report cost on the attribution link.
+> - Cost data on the attribution link data is immutable. Therefore, once it's logged in AppsFlyer, it cannot be changed, even if there are data-reporting errors.
