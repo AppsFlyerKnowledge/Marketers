@@ -1,0 +1,212 @@
+---
+title: "iOS integration testing for ad networks"
+excerpt: "Test your AppsFlyer iOS integration using the AppsFlyer Partner Integrations app to trigger regular and Advanced Privacy postbacks."
+---
+## iOS integration testing
+
+Testing consists of the following elements:
+
+- Use the iOS version of the AppsFlyer Partner Integrations app to generate test install and purchase in-app events. These tests, in turn, trigger postbacks sent to your endpoints. You also have the option to test login and registration in-app events.
+- On receipt of the postbacks, verify that you are able to ingest them.
+
+### Testing scope
+
+Advertisers control the data shared with ad networks via the Advanced Privacy setting. This setting, in conjunction with the app user [ATT](https://support.appsflyer.com/hc/articles/360014090597-ATT-and-LAT-raw-data-for-devices-running-iOS-14) setting, impacts the postback type and the data shared with ad networks, as described in the [Advanced Privacy postback guide](https://support.appsflyer.com/hc/articles/360011316197). The following table lists test scenarios according to the setting combinations available.
+
+For each scenario, you can test installs and in-app events. In regards to in-app events, you can use [in-app event mapping](https://support.appsflyer.com/hc/articles/4413093220113-Test-advertiser-campaign-integration-with-the-ad-network#mapping-events) to map advertiser events to your events.
+
+#### Test scenario combinations
+
+| Scenario | Advanced Privacy setting | ATT setting in the app | Postback type sent |
+| --- | --- | --- | --- |
+| A | Off | Allow | Regular |
+| B | On | Ask app not to track | Advanced Privacy |
+
+## Testing
+
+Complete the prerequisites and then perform the test procedures in the sections that follow. The test sections each contain a table you can use to record your test results.
+
+### Prerequisites
+
+Complete the prerequisites before beginning to execute the test procedure.
+
+| Prerequisites |
+| --- |
+| [Complete standard integration with AppsFlyer.](https://support.appsflyer.com/hc/articles/360001300998#part-1-integration-and-testing) If necessary, contact AppsFlyer using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif). |
+| [Complete Advanced Privacy integration with AppsFlyer.](https://support.appsflyer.com/hc/articles/360018512658#advanced-privacy-and-skan-postbacks) If necessary, contact AppsFlyer using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif). |
+| [Integrate the iOS test app into your account.](https://support.appsflyer.com/hc/articles/360020713538) |
+| [Verify that the test app is integrated into your account](https://support.appsflyer.com/hc/articles/360016588278#test-app-integrated-in-your-account) |
+| [Map in-app events to your event names](https://support.appsflyer.com/hc/articles/4413093220113-Test-advertiser-campaign-integration-with-the-ad-network#mapping-events). Event names to be mapped: `purchase`, `login`, `registration` |
+| [Prepare attribution link](https://support.appsflyer.com/hc/articles/360016588278#attribution-link) |
+| Test using a device running iOS 14.5+ |
+
+<Tabs>
+<Tab title="Test—Advanced Privacy off">
+
+**To trigger postbacks:**
+
+1. On the AppsFlyer dashboard, set [Enable Advanced Privacy](https://support.appsflyer.com/hc/articles/360016588278#set-advanced-privacy) to off.
+2. On the device:
+   1. Verify that the test app is not installed. Delete it if necessary.
+   2. In Privacy settings, verify that **Allow Apps to Request to Track** is on.
+
+      <Image src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" alt="PartnerIntegrationAllow.png" />
+3. Send the attribution link to the test device.
+4. Open the attribution link in the device browser.
+
+   You are redirected to the App Store.
+5. Download and open the app.
+
+   The ATT consent dialogue displays.
+
+   <Image src="https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png" alt="AppDialogue_us-en.png" />
+
+6. Tap **Allow**.
+
+   The **Install Data** page displays.
+
+   <Image src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" alt="PartnerIntegrationInstallData.png" />
+
+7. Tap **ATT Status**.
+
+   The **Authorized** status displays.
+8. Validate the attribution using the following parameters. If the validation fails, see [Troubleshooting](https://support.appsflyer.com/hc/articles/360016588278#troubleshooting).
+   1. `install_time`: near the current time. Time is in UTC.
+   2. `af_status: Non-organic` If this is not the case, the install was not attributed.
+   3. `media_source`: your ad network
+9. Tap **In-App Event Tests.**
+   <Image src="https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png" alt="AppPurchase.png" />
+
+10. Tap **Purchase Event.**
+
+    The Purchase Event confirmation displays.
+11. Verify that:
+    1. You received install and purchase postbacks.
+    2. The event name is mapped correctly (if you mapped in-app events).
+    3. You are able to ingest the postback.
+
+#### Advanced Privacy off—Test results
+
+| Postback | Time you triggered the event | Expected postback type | Actual postback received (pass/fail) | Postback validation (pass/fail) |
+| --- | --- | --- | --- | --- |
+| Install | | Regular | | |
+| In-app event: Purchase | | Regular | | |
+
+</Tab>
+<Tab title="Test—Advanced Privacy on">
+
+**To trigger postbacks:**
+
+1. On the AppsFlyer dashboard, set [Enable Advanced Privacy](https://support.appsflyer.com/hc/articles/360016588278#set-advanced-privacy) to on.
+2. On the device:
+   1. Verify that the test app is not installed. Delete it if necessary.
+   2. In Privacy settings, verify that **Allow Apps to Request to Track** is on.
+
+      <Image src="https://files.readme.io/f4ee4fdebd5e5ecda3d07a0605c901a66466b85335b7ec29e53a108fd8f09302-360015109697.png" alt="PartnerIntegrationAllow.png" />
+3. Send the attribution link to the test device.
+4. Open the attribution link in the device browser.
+
+   You are redirected to the App Store.
+5. Download and open the app.
+
+   The ATT consent dialogue displays.
+
+   <Image src="https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png" alt="AppDialogue_us-en.png" />
+
+6. Tap **Ask App not to Track.** The **Install Data** page displays.
+
+   <Image src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" alt="PartnerIntegrationInstallData.png" />
+
+7. Tap **ATT Status**.
+
+   The **Denied** status displays.
+8. Validate the attribution using the parameters listed. If validation fails, see [Troubleshooting](https://support.appsflyer.com/hc/articles/360016588278#troubleshooting).
+   1. `install_time`: near the current time. Time is in UTC.
+   2. `af_status: Non-organic` If this is not the case, the install was not attributed.
+   3. `media_source`: your ad network
+9. Tap **In-App Event Tests.**
+   <Image src="https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png" alt="AppPurchase.png" />
+
+10. Tap **Purchase Event.**
+11. Verify that:
+    1. You received install and purchase postbacks.
+    2. The event name is mapped correctly (if you mapped in-app events).
+    3. You are able to ingest the postback.
+
+#### Advanced Privacy on—Test results
+
+| Postback | Time you triggered the event | Expected postback type | Actual postback received (pass/fail) | Postback validation (pass/fail) |
+| --- | --- | --- | --- | --- |
+| Install | | Advanced Privacy | | |
+| In-app event: Purchase | | Advanced Privacy | | |
+
+</Tab>
+</Tabs>
+
+## Supplementary information and procedures
+
+### About the Partner Integrations test app
+
+The Partner Integrations app is available in the App Store. The app sends install and in-app events to the AppsFlyer platform.
+
+When the app is opened for the first time, the iOS **request to track** dialogue displays, followed by the **Install Data** page displaying the conversion data recorded in the AppsFlyer platform. Test in-app events are triggered in the user interface.
+
+<Image src="https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png" alt="PartnerIntegrationInstallData.png" />
+
+The following functions are available:
+
+- **In-App Event Tests** Send `purchase`,`login`, and `registration` and in-app events. By mapping the app in-app event names to your event names, postbacks are populated using your event names.
+- **ATT Status** Returns the current ATT status reported by iOS as **Authorized** or **Denied**. The ATT status depends on user agreement to track in the ATT consent dialogue and the device **Allow Apps to Request to Track** setting.
+
+### Attribution link
+
+Prepare an attribution link in the AppsFlyer dashboard, using one of the following methods:
+
+- Generate the link in the AppsFlyer dashboard.
+- Edit the example link that follows.
+
+**To generate a link in the dashboard:**
+
+1. In AppsFlyer, go to **My Apps**.
+2. Select **id1543229303**.
+3. From the side menu, select **Collaborate** > **Active Integrations** > select your ad network > **Attribution link** tab.
+4. In the Attribution link tab, set the parameters listed. You can add additional parameters if required.
+
+| Parameter | Example value | Remark |
+| --- | --- | --- |
+| Campaign | c-test-2020-12-20 | Set a value that is identifiable in your postbacks |
+
+5. Copy the resulting link for later use.
+
+**Example attribution link:**
+
+```http
+https://app.appsflyer.com/id1543229303?pid=pitestap_int&c=c-test-2020-12-20
+```
+
+### Set Advanced Privacy
+
+<Image src="https://files.readme.io/ef845ea74cbaa0d3214e61c6e2229fd4b9026d0e221b19fecb9e3486e9b795eb-360014980157.png" alt="AdvancedPrivacyOff.png" />
+
+**To change the Enable Advanced Privacy setting:**
+
+1. In AppsFlyer, go to **My Apps**.
+2. Select app id1543229303.
+3. From the side menu, select **Collaborate** > **Active Integrations** > select your ad network > **Integration** tab.
+4. Set **Enable Advanced Privacy** to the appropriate setting for each test scenario.
+5. Click **Save Integration**.
+
+### Test app integrated in your account
+
+**To verify that the test app is available in your account:**
+
+1. In AppsFlyer, go to **My Apps**.
+2. Verify that the app **Partner Integrations id1543229303** displays under Available Apps. If this is not the case, contact your Partner Development Manager.
+
+### Troubleshooting
+
+| Symptom | Cause/corrective action |
+| --- | --- |
+| The install time is not the current time | The app wasn't deleted before the install.<br />Delete the app and repeat the procedure. |
+| The media source is not your media source | Verify that you have set the correct **pid** value on the attribution link. Verify that you are using the correct attribution link |
+| af_status is Organic | Check that the device iOS version is in accordance with that stated in the prerequisites.<br />Check the format of the attribution link, especially the value of **pid**. |

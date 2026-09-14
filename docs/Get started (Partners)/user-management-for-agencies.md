@@ -1,0 +1,264 @@
+---
+title: "User management for agencies"
+excerpt: "Create and manage your agency account's AppsFlyer users, and assign them permissions to access features and apps."
+---
+## User roles and access permissions
+
+AppsFlyer accounts allow for multiple users, each with individually-managed permissions. Each user’s permissions are defined along 2 primary dimensions:
+
+- **Role** (capabilities to access features and perform functions)
+- **App access** for current and future apps
+
+Permissions within each of these dimensions are assigned independently. In other words, you may assign a user a **role** with broad functional capabilities but allow them to exercise those capabilities only within a narrowly-defined set of **apps.**
+
+The only exception is the [Admin role](https://support.appsflyer.com/hc/articles/4414231896337#admin%E2%80%94a-special-role), as discussed below, which has access to all capabilities and apps.
+
+### Predefined roles
+
+Each AppsFlyer user of an agency account is assigned one of 4 predefined roles:
+
+- Admin
+- Team manager
+- Marketing
+- Contributor
+
+Each of these roles defines the specific AppsFlyer features the user can access and the functions they can perform. A full list of capabilities per role is available on the [Roles tab](https://support.appsflyer.com/hc/articles/4414231896337#roles-tab) of the **User management** page.
+
+As a general rule, all roles are predefined, and each role’s functional capabilities are fixed: no "mixing and matching" allowed. However, you can change a user’s functional capabilities at any time by changing their role (except for the [account owner](https://support.appsflyer.com/hc/articles/4414231896337#account-owner-hash), as discussed below).
+
+#### Example
+
+You have assigned Bill Bates the role of **Team manager.** This role gives Bill the ability to manage **App settings** but does not allow him access to the **Audit log** **.**
+
+**Question:** Can I keep Bill in the Team manager role but also give him the ability to access the Audit log? Can I take away his ability to manage App settings?
+
+**Answer:** No. As long as Bill stays in the Team manager role, you cannot give him the ability to access the Audit log. Nor can you remove his ability to manage App settings. Of course, you can assign Bill to a different role, and his capabilities will change to those defined by that role.
+
+### Temp roles—an exception to the rule
+
+If your AppsFlyer account existed under our prior user management system (when the only available account types were Admin and Team member), all users were brought into the new system with unchanged capabilities. As a result, most of these users appear in the current system with **temp roles**.
+
+Learn more about [managing temp roles](https://support.appsflyer.com/hc/articles/4414231896337#managing-temp-roles).
+
+### Admin—a special role
+
+An AppsFlyer account can have **one or more** Admins, but every account has at least one. This special role has several unique characteristics:
+
+- The Admin role has access to **all** account capabilities, including:
+  - All features and functions
+  - All current and future apps
+  - All media sources and geos
+
+This "all-access" characteristic of the Admin role cannot be changed or limited.
+
+- The user created at the time the account was opened (the **"account owner"**) is assigned the Admin role by default.
+  - The account owner cannot be deleted, removed from the Admin role, or otherwise edited from the [**User management**](https://support.appsflyer.com/hc/articles/4414231896337#user-management-page) page. Likewise, the account owner’s email address cannot be changed.
+    - If you do need to change the account owner, follow the [steps listed below](https://support.appsflyer.com/hc/articles/4414231896337#changing-the-account-owner).
+  - The account owner is initially responsible for creating additional users (until additional users with user management capabilities are created).
+- Only a user with an admin role can [manage API and S2S tokens](https://support.appsflyer.com/hc/articles/360004562377).
+- Any Admin other than the account owner **can** be changed to a different role or deleted from the AppsFlyer account through the User management page.
+
+## User management page
+
+**To access the User management page:**
+
+1. In the top menu bar, click, open the account menu (email address dropdown).
+2. Select **User management.**
+
+### Users tab
+
+The **Users** tab displays a table of all existing users in your account. It is the starting point for creating, managing, and deleting users.
+
+- Click the **User** column heading to sort the table alphabetically (ascending/descending).
+- Use the search box to find and display specific users.
+- Click the filter icon ![filter_icon.png](https://files.readme.io/1ceaac3efead3a218909988be1d50a2f0af93b07360f7197cd398b11d661992b-16162502598417.png) in the **Role** column heading to filter users by their role (including temp roles).
+  - To clear the filter, select **None** in the filter dropdown list.
+- Use the checkboxes to select and [edit multiple users](https://support.appsflyer.com/hc/articles/4414231896337#multiuser-editing) at the same time.
+
+### Roles tab
+
+The **Roles** tab displays a list of all roles defined in your account, including:
+
+- The 4 [predefined roles](/docs/user-management-for-agencies#predefined-roles)
+- Any [temp roles](https://support.appsflyer.com/hc/articles/4414231896337#temp-roles%E2%80%94an-exception-to-the-rule) currently assigned to users
+
+Click on the name of any role in the left panel to see:
+
+- Full details of the role’s capabilities
+- The number of users currently assigned that role (in the top-right corner of the screen)
+  - Hover over the user icon ![user_icon.png](https://files.readme.io/afd47a11e82e0cfac3240fe39582bd141639465952f6eef76bcf1f6e7532d6a9-16162513473937.png) to see a list of the first 20.
+
+## Creating a user
+
+**To create a new user:**
+
+1. On the **Users** tab, click the **New user** button.
+2. Enter the user’s name (required):
+   - Can include letters, numbers, spaces, periods (.), hyphens (-), underscores (\_), and single (') or double (") quotation marks.
+   - Other special characters are not allowed.
+3. Enter the user’s email address (required):
+   - Can include letters, numbers, apostrophes ('), ampersands (&), dollar signs ($), hash symbols (#), hyphens (-), underscores (\_), and periods (.)
+   - Two consecutive periods (..) and other special characters are not allowed.
+   - Must end with a valid email domain.
+
+> ❗️ Important!
+>
+> A user’s email address is what identifies them in the AppsFlyer platform, meaning:
+>
+> - It cannot later be changed without deleting and recreating the user.
+> - It must be a valid email address at which the user can receive email.
+> - It cannot be associated with another user in any AppsFlyer account.
+>   - If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](https://support.appsflyer.com/hc/articles/4414231896337#troubleshooting-can%E2%80%99t-create-this-user) to resolve this issue.
+
+4. Select the user’s department (optional).
+5. Select the user’s role (required).
+6. Select the apps the user can access:
+   - The default setting allows access to all current and future apps in the account. To change this setting, use the checkboxes to select and deselect apps.
+   - A user can be given access to all future apps only if they have access to all current apps.
+7. Click **Save** to create the user.
+   - The user is sent an email invitation to activate their account.
+   - The user is displayed in the user table. The envelope icon ![pending_invitation_icon.png](https://files.readme.io/68ac08ab6e52191a592350f82996f7ade9d181773d0bdbc6e2cb60315b60a8f2-16162502609553.png) indicates that an invitation has been sent and the account is awaiting activation. Once the user activates their account, the envelope will disappear.
+   - The activation link sent to the user is valid for 48 hours. If the user didn’t receive the invitation or if the link has expired, you can [resend the invitation](https://support.appsflyer.com/hc/articles/4414231896337#resending-a-user-invitation).
+
+## Editing users
+
+Users can be edited either one at a time or in groups.
+
+### Individual editing
+
+**To edit an individual user:**
+
+1. On the **Users** tab, click the **Actions** ![actions_icon.png](https://files.readme.io/24ad987d1e77d9dfa8559a370733a7b62a6d86954ec1d552eac9c406445ed927-16162502616593.png) button on the far-right side of the user’s row.
+2. Select **Edit** from the menu.
+3. Edit user settings as required.
+4. All settings other than email address are editable.
+5. Click **Save**.
+
+### Multi-user editing
+
+Multi-user editing is an efficient way to change the account permissions of several users at one time. Using this feature in combination with the search and filtering capabilities of the **Users** tab can make it particularly helpful for managing large numbers of users.
+
+> 📘 Note
+>
+> You cannot delete users or assign them to the Admin role using multi-user editing.
+
+**To edit multiple users:**
+
+1. On the **Users** tab, select the checkboxes of the user or users you want to edit.
+   - Select the checkbox in the column heading to select all visible users.
+   - The number of currently-selected users is displayed on the right side of the search box. Note that the [account owner](https://support.appsflyer.com/hc/articles/4414231896337#account-owner-hash) cannot be selected and is not included in the number of selected users.
+2. The **Role** and **Apps** buttons are displayed at the top-right of the table.
+   - If one or more of the selected users has access to future apps, the **Apps** button is not available. (See [Temp role limitations](https://support.appsflyer.com/hc/articles/4414231896337#temp-role-limitations), below.)
+3. Click the button for the permissions you want to change.
+4. Make the necessary changes using the dialog box or dropdown lists that are displayed.
+   - Remember that your changes apply to all selected users!
+5. The edited users are highlighted in the table, and the users appear as they will once the changes are saved. However, you still have the opportunity to review your changes and confirm or cancel them in the next step.
+6. Review your changes. Click **Save** to confirm or **Cancel** to undo them.
+
+#### Example
+
+**Scenario:**
+
+- There are 10 users in your account. Six of these are in the **Marketing** role.
+- Alice, Bill, and Charlie have just received promotions, and you want to change them from the **Marketing** role to the **Team manager** role.
+- Alice will be working with the Astounding app. Bill will be working with the Beautiful app. Charlie will be working with the Charming app.
+
+**Steps:**
+
+1. Use the Role filter ![filter_icon.png](https://files.readme.io/1ceaac3efead3a218909988be1d50a2f0af93b07360f7197cd398b11d661992b-16162502598417.png) to see only the users in the **Marketing** role.
+2. Change Alice, Bill, and Charlie to the **Team manager** role:
+   - Select the checkboxes for Alice, Bill, and Charlie.
+   - Click the **Role** button.
+   - Select **Team manager** from the dropdown list.
+   - Click **Save** to confirm.
+   - Note that once you confirm the changes, the **Role** filter is cleared, and the table displays all users.
+3. Give Alice, Bill, and Charlie the appropriate app access:
+   - Use the search box to find Alice, then individually edit her user to give her access to the Astounding app.
+   - Repeat these steps for Bill and Charlie to give them access to Beautiful and Charming, respectively.
+
+## Deleting users
+
+**To delete a user:**
+
+1. On the **Users** tab, click the **Actions** button ![actions_icon.png](https://files.readme.io/24ad987d1e77d9dfa8559a370733a7b62a6d86954ec1d552eac9c406445ed927-16162502616593.png) on the far-right side of the user’s row.
+2. Select **Delete** from the menu.
+
+## Special situations and additional procedures
+
+### Managing temp roles
+
+If your account previously used our prior user management system, [**temp roles**](https://support.appsflyer.com/hc/articles/4414231896337#temp-roles%E2%80%94an-exception-to-the-rule) were assigned to existing users to ensure that they were brought into the new system with unchanged capabilities.
+
+- Users with the same capabilities were assigned the same temp role.
+- Use the features of the [Roles tab](https://support.appsflyer.com/hc/articles/4414231896337#roles-tab) to review the capabilities of each temp role and a list of users currently in it.
+
+#### Temp role limitations
+
+Temp roles were designed specifically to allow seamless transition from our prior user management system. As such, they are available only in limited situations:
+
+- Temp roles cannot be assigned to other users (whether new or existing).
+- A user with a temp role cannot be assigned a different temp role (though you can change the apps to which they have access).
+  - Note that a user's access to future apps **cannot** be changed while the user is in a temp role.
+- When a user with a temp role is changed to a predefined role, they cannot be returned to the previously-assigned temp role (or to any other temp role).
+- If the last user in a temp role is removed from it, the role will no longer appear in your account.
+
+#### Example
+
+Your account previously used our prior user management system. Diana and Edward were existing users at the time your account was moved to the new system. Diana is now in Temp role 1, and Edward is in Temp role 2.
+
+- You hire a new employee, Fiona. You can assign Fiona any one of the 4 [predefined roles](/docs/user-management-for-agencies#predefined-roles). However, you cannot assign Fiona Temp role 1 or Temp role 2.
+- Diana cannot be moved from Temp role 1 to Temp role 2. However, you can assign her any of the 4 predefined roles. You can also change her app access as necessary.
+- If you move Diana from Temp role 1 to the Team manager role, she can’t later be moved back to Temp role 1.
+- If Diana was the last user in Temp role 1 when you moved her to the Team manager role, Temp role 1 will no longer appear in your account.
+
+### Changing the account owner
+
+Because all Admins have the same permissions as the account owner, changing the account owner is not usually necessary. But if you find that you must change the account owner, follow these steps to do so.
+
+> ❗️ Important!
+>
+> A few things to consider before you begin:
+>
+> - If you're still using Pull, Master, or GDPR APIs with token v1, changing the account owner automatically resets these services. To avoid data loss, [transition to start using these APIs with token v2](https://support.appsflyer.com/hc/articles/12399683708305) **before changing the account owner**.
+> - Changing the account owner must be completed manually according to these steps. It cannot be done from the **User management** page.
+
+#### #1–Send your request via the chat widget
+
+To begin the process of changing the account owner, open the chat widget [using this link](https://hq1.appsflyer.com/apps/search?openAssistant=true) or by clicking the Help button in the top menu bar. Include the following information in the chat:
+
+- Name of the account owner you would like to replace
+- Name, title, and email of the new account owner
+
+#### #2–Next steps
+
+Once the change has been processed, you will receive an email notification from AppsFlyer.
+
+- If you want the prior account owner to continue using your AppsFlyer account, [create a new user](https://support.appsflyer.com/hc/articles/4409128270481#creating-users) for them and assign them a new role.
+- APIs using token v2 aren't affected by changing the account owner. [Learn more about managing tokens](https://support.appsflyer.com/hc/articles/360004562377).
+
+### Troubleshooting "Can’t create this user"
+
+If you receive the error message *Can’t create this user* when entering the email address of a new user, it generally means that the email is already associated with an AppsFlyer user (either in your account or a different one). Follow the steps relevant to your situation:
+
+If the user is in your account:
+
+- Check to see if the user has activated their account. If not, [resend the invitation](https://support.appsflyer.com/hc/articles/4414231896337#resending-a-user-invitation) if required.
+- If the user has activated their account, ask them to try to log in again using the email address associated with their user. Advise them to follow the **Forgot password** steps if required.
+
+If the user’s email is used in a different account or you can’t determine the account in which the user’s email is used, select one of the following options:
+
+- Delete them from the other account and add them to yours (requires that either you or the user has the required permissions in the other account); or
+- Add them to your account using a different email address. This must be a valid email address at which they can actually receive an email; or
+- Contact your Customer Success Manager (CSM) or send an email to our Customer Engagement team at [hello@appsflyer.com](mailto:hello@appsflyer.com).
+
+### Resending a user invitation
+
+If a new user did not receive their [account activation invitation](https://support.appsflyer.com/hc/articles/4414231896337#account-activation-hash) or if they did not activate within 48 hours, you can resend the email as follows:
+
+1. On the **Users** tab, click the **Actions** button ![actions_icon.png](https://files.readme.io/24ad987d1e77d9dfa8559a370733a7b62a6d86954ec1d552eac9c406445ed927-16162502616593.png) on the far-right side of the user’s row.
+   - Note that the user is still shown with an envelope icon ![pending_invitation_icon.png](https://files.readme.io/68ac08ab6e52191a592350f82996f7ade9d181773d0bdbc6e2cb60315b60a8f2-16162502609553.png), indicating that they have not yet activated their account).
+2. Select **Resend email invite** from the menu.
+
+### Resetting two-factor authentication (2FA) of a user
+
+For accounts using a 2FA, there may be occasions on which you need to reset a user’s 2FA. See [here](https://support.appsflyer.com/hc/articles/360010178037#reset) how to do this.
