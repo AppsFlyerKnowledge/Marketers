@@ -1,0 +1,113 @@
+---
+title: "Smart Banners and Smart Script security and performance"
+excerpt: "Discover how AppsFlyer proactively addresses security and performance concerns regarding Smart Banners and Smart Script."
+---
+**At a glance:** Discover how AppsFlyer proactively addresses your security concerns regarding Smart Banners and Smart Script.
+
+In this Q&A, we discuss common queries about smart banners and smart script integration, focusing on their impact on security and site speed.
+
+## Smart banners API security
+
+### What data does the smart banner capture when someone clicks or views it?
+
+| Data | Remarks |
+| --- | --- |
+| Client IP | The IP is used to calculate location (Country, region and state) |
+| Event time |  |
+| User Agent |  |
+| Website Page | The URL from which the call to the web SDK originated |
+| HTTP protocol | HTTP/HTTPS |
+| Headers | Host, Content-type, Origin, Content-length, Encoding |
+| OneLink parameters |  |
+| Banner parameters | Banner configuration settings:<br>\- [Dismissal behavior](https://support.appsflyer.com/hc/articles/360000764837#dismissal-behaviour)<br>\- [Incoming parameters](https://support.appsflyer.com/hc/articles/360000764837#param-table)<br>\- UTM parameters<br>\- AppsFlyer parameters<br>\- default parameters<br>\- other parameters |
+
+### What API calls are needed to show a smart banner?
+
+- An API to fetch the SDK from a CDN located at `https://websdk.appsflyersdk.com`.
+- An API to generate the link behind the CTA located at `banner.appsflyer.com`. This API is triggered by the [showBanner](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner) SDK method.
+- An API to fetch the the banner creative from a CDN located at `creatives-cdn-appsflyer.com`.
+
+### Do these API calls include an identifier?
+
+Yes. The client's unique web key acts as an identifier in API calls, enabling the retrieval of necessary data for banner display and the generation of the OneLink URL for the banner CTA.
+
+### Is it possible for a malicious entity to change the URL or alter the APIs web key?
+
+No. It's not possible to access and modify the code dictating the web key used in the banner's API call. This means that malicious entities cannot manipulate the banner calculation and the OneLink URL generated for the banner CTA.
+
+## Smart banners script hosting security
+
+### Can clients host a copy of the Smart Banner script on their server?
+
+Clients cannot host Smart Banners script on their servers. However they can use [Smart Script](https://support.appsflyer.com/hc/articles/4413588932241-OneLink-Smart-Script-V2-setup?query=smart%20script) for OneLink URL generation and implement their own banner creatives.
+
+Using Smart Script along with your own banners lets you design custom creatives and further map and customize your generated links, eliminating the need to implement the banner SDK on your website and perform external API calls.
+
+### Can clients host their own code and still use banners?
+
+Clients can develop their own banners, including the design, development, and integration on the site, and utilize [Smart Script](https://support.appsflyer.com/hc/articles/4413588932241-OneLink-Smart-Script-V2-setup?query=smart%20script) to generate the links for their banner's call-to-action (CTA).
+
+### Can Smart Banners be supported without embedding their code snippet on the page?
+
+- Clients have the option to use tag managers to invoke the Smart Banner APIs, as an alternative to directly integrating the code snippet. To learn more about tag managers see [here.](/docs/smart-banners-website-code-implementation-for-marketers#website-code-implementation)
+- Running the script in an iFrame is not supported.
+
+### How does AppsFlyer protect your banners from post-save tampering
+
+When editing and saving a banner creative in AppsFlyer creative editor - an attacker could try and intercept the request, take over it, and inject harmful JavaScript code.
+
+We implement multiple measures to ensure Smart Banners are secure from potential attacks and prevent unauthorized edits by users outside of their own account.
+
+- Our Security team runs tests and checks to make sure all our services (including Smart Banners) are are protected and free from vulnerabilities.
+- We conduct regular independent and unbiased penetration tests to ensure AppsFlyer's safety and security.
+- Internally, we validate HTML and Script tags and sanitize any malicious scripts.
+
+### Do Smart Banners use cookies?
+
+By default, Smart Banners do not use cookies. However, we provide an optional configuration to use first-party cookies for customers who prefer increased persistence (for example, to address storage volatility in Safari on iOS 26).
+
+The website owner must explicitly [enable this option](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#set-storage-mode-optional). If enabled, the website owner is also responsible for updating their cookie consent management and privacy disclosures as required by applicable regulations.
+
+## Smart Banners Performance
+
+### Does the Smart Banner web SDK impact website load speed?
+
+While adding any additional code to a website might potentially affect loading times, most of the smart banner's work is done server-side, asynchronously, and without blocking the page from loading.
+
+Furthermore, we employ CDNs to expedite the loading of pages and banners.
+
+### Can you share some metrics regarding banner speed performance?
+
+Banner loading speed varies and depends on several factors including:
+
+- Internet speed
+- Connectivity and connection type
+- Site performance and more.
+
+These factors, when added to the minimal response time from AppsFlyer servers to browsers, contribute to the calculation of banner load times.
+
+Since the above variables are not related to AppsFlyer, we cannot specify exact time frames for the complete end-to-end process.
+
+### How can I actively minimize the banner loading time?
+
+Banner loading time is impacted by the Largest Contentful Paint (LCP), which primarily concerns the banner image. To improve LCP loading performance, you can:
+
+- Choose a smaller banner template.
+- Reduce the image sizes of the logo and background images
+  - Consider substituting the background image with a solid color to cut down on asset loading times.
+  - Use a CDN to host your banner images for faster loading times.
+- Choose the same font weight throughout your banner.
+
+## Smart Script Security and Performance
+
+### Does Smart Script use cookies?
+
+No, we do not use cookies in our Smart Script solution.
+
+### Does Smart Script make any external calls to generate links?
+
+No, the script is executed locally on the client's website, so it doesn't rely on external calls, making it very secure to use.
+
+### Is there a download time associated with Smart Script?
+
+You can embed the script directly on your website, ensuring no download time. The script loads quickly because it doesn't require any server calls.

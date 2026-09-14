@@ -1,0 +1,158 @@
+---
+title: "QR-to-app conversion"
+excerpt: "Convert desktop, TV, CTV, or offline users into mobile app users by using QR codes generated with OneLink."
+---
+![6005_QR_code_4.jpg](https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg)
+
+## Converting mobile, non-mobile and offline traffic into mobile app users
+
+Posting OneLink-generated QR codes on ads for desktop, TV, CTV, or offline, such as on in-store displays, brochures, and packaging, provides the following benefits:
+
+- Users can quickly and easily scan the code with their mobile device to download and install your app.
+- Users save the time and effort required to go to the app store and search for your app, which greatly increases QR-to-app install conversion rates.
+- Privacy is protected, as this conversion method bypasses SMS, and users don't need to provide private information, such as a phone number for you to text.
+- You can easily attribute installs and measure the efficacy of your ads.
+
+QR codes can be created either:
+
+- [Manually, in the AppsFlyer UI](https://support.appsflyer.com/hc/articles/360015119718-Desktop-to-app-conversion#manual-qr-code-setup)
+- [Dynamically, using the OneLink Smart Script](https://support.appsflyer.com/hc/articles/4413588932241-OneLink-Smart-Script-V2-setup#qr-codes) (specifically designed for web-to-app desktop flows)
+
+### QR to App conversion
+
+#### MANUAL QR CODE SETUP
+
+**Prerequisites:**
+
+- An AppsFlyer account with at least one app.
+- For attribution: [The AppsFlyer SDK already integrated](https://support.appsflyer.com/hc/sections/6551164458257-Integrate-the-AppsFlyer-SDK) in each of your mobile apps.
+  - If the SDK is not yet installed in your apps, it is still possible to create a working redirection link, but it will not be possible to deep link, deferred deep link, or measure installs in your dashboard.
+- A [OneLink template](https://support.appsflyer.com/hc/articles/207032246#procedures) set up.
+
+**To set up a QR code for QR-to-app conversion**:
+
+1. Perform **one** of the following:
+   - [Create a single QR code image](https://support.appsflyer.com/hc/articles/208874366#create-a-onelink-link)
+     1. [Recommended] Create a new link and set the custom media source. For example, **desktop\_web**. Using a QR code from an existing link works. However, for reporting purposes, we recommend not sharing media sources with another link. Instead, use a separate link with the dedicated media source.
+     2. After you click **Generate Link**, the QR code is displayed.
+     3. Click the QR code to download it in full resolution, either in SVG or PNG format.
+   - [Create a collection of QR code images](https://support.appsflyer.com/hc/articles/14511403892369-Bulk-Links#downloading-a-collection-of-qr-codes)
+     1. In the **Bulk Links** page, create a link collection.
+     2. Download the QR images for the links in the collection.
+2. Add the QR code to your ad, the same way you would add any other image/content.
+   - See [best practices](#best-practices).
+   - Developer assistance may be required.
+
+### Customize QR code
+
+![OnelinkQRFinal__1_.gif](https://support.appsflyer.com/hc/article_attachments/11941291055505)
+
+You can customize the QR codes generated via OneLink by:
+
+- Adding your logo to the QR code
+- Changing the color of the QR code.
+
+> 📘 Note
+>
+> - QR code customization occurs at the template level; not at the individual link level. Therefore, customizations affect all QR codes based on the edited template.
+> - QR codes created via the Smart Script can't be customized.
+
+**To customize your QR code**:
+
+1. In the AppsFlyer dashboard, go to **Experiences & deep linking** \> **OneLink Management**.
+2. Select the template you want to edit and click **Customize QR code**(available only to users with template editing permissions).
+
+The QR code editor opens.
+3. Enter the URL where your logo is hosted. For example: https://yourbrand.com/logo.png.
+
+Logo requirements:
+
+   - PNG or JPG format
+   - Square or circular with a transparent background
+   - Minimum dimensions 400 x 400 px
+   - For printing, use maximum image resolution
+
+4. Set the QR code color.
+5. Click **Save**.
+
+### Measure QR-to-app conversions
+
+You can measure the performance of your QR code and its placement on different ads/media sources, by comparing impressions (for desktop pageviews), clicks (for QR code scans), and app installs.
+
+**To measure QR-to-app conversions**:
+
+1. In AppsFlyer, check the Overview dashboard or other AppsFlyer analytics tools, and record the total **clicks** and **installs** with you QR code media source (such as **desktop\_web**).
+2. Record the total desktop page views (impressions) using your web analytics software.
+3. Measure performance:
+   - [Click-through rate](https://support.appsflyer.com/hc/articles/115000610363#marketing-funnel-stages-and-conversion-rates::74b1530a)
+   - [Click-to-install rate](https://support.appsflyer.com/hc/articles/115000610363#marketing-funnel-stages-and-conversion-rates::74b1530a)
+
+### Best practices
+
+The following are tips to maximize QR-to-app conversions.
+
+- For desktop, if you're using the manual QR code setup, build a separate page on your website to place the QR code.
+  - Pick a URL slug for the page such as **/app**, **/download-app,** or **/mobile-app**.
+  - Make the page viewable only for desktop/large screen width.
+- For all ads:
+  - Make the QR code on your ads large and high-resolution, so that it is easily scannable.
+  - Add prominently situated **Download from App Store** and **Download from Google Play** badges as visual triggers (not as links).
+  - Consider adding instructions on how to scan the QR code.
+- Already using OneLink? In your _other_ custom OneLinks, being used in emails, etc., add an **af\_web\_dp** parameter with the value being the URL to the page containing the QR code. This sends desktop users clicking the link to a webpage instead of the app store.
+
+## FAQ
+
+In this section, you can find a list of frequently asked questions about QR codes.
+
+<Accordion title="QR creation with long links vs. short links – is there any difference?">
+
+Your QR code will function with either a long or short URL. However, if you use a short URL, you'll be able to update the link parameters and behavior via the OneLink dashboard (under the Link Management or Bulk links section) without needing to replace the published QR code—since the short URL itself remains unchanged.
+
+- **Short URLs:** If you change the parameters in the short URL configuration, the QR code remains the same. You don’t need to re-publish it.
+- **Long URLs (e.g., Smart Script):** If you change the parameters on a long URL, the QR code changes as well. Once you've published it, you won’t be able to update the URL contents remotely—you'll need to generate and distribute a new QR code.
+
+> 👍 Tip
+>
+> Creating a QR code using a short URL enables you to later modify the link’s parameters and behavior without needing to regenerate the QR code.
+
+</Accordion>
+
+<Accordion title="Can you create a QR code and change the behavior behind it retroactively, after printing the QR, for example?">
+
+Yes, you can—if the QR code is based on a short OneLink URL that you can edit (for example, one created via the OneLink UI). A **QR code is a visual representation of the URL behind it**.  Changing the URL itself will create a new corresponding QR code (e.g., the QR code for mike.onelink.me/123A/shorturl is different from the QR code for mike.onelink.me/123A/example).
+
+However, because a OneLink short URL is a hashed URL, its parameters and redirection rules are configured on the backend and aren't visible in the URL. This means you can keep the same visible URL and QR code while editing its backend configuration.
+
+</Accordion>
+
+<Accordion title="What AppsFlyer options are available for generating QR codes?">
+
+You have the following options:
+
+- **Via the AppsFlyer Dashboard → OneLink UI:**
+  - Automatically generates a QR code when you create a link
+  - Allows QR code customization
+  - Exportable as SVG or PNG
+  - Based on a short URL
+- **OneLink API v2 QR code:**
+  - Generates large volumes of QR codes using [OneLink API](https://dev.appsflyer.com/hc/reference/onelinkapi_v2_overview)
+- **Bulk QR code creation (via the Bulk Links page):**
+  - Allows QR code customization
+  - Exportable as SVG or PNG
+  - Supports contextual file naming
+  - Based on short URLs
+- **Smart Script QR code generation:**
+  - Based on dynamically generated long URLs
+  - QR codes are created accordingly
+  - Allows QR code customization
+
+</Accordion>
+
+<Accordion title="Can you bulk create QR codes?">
+
+Yes. You can:
+
+- [Bulk QR code creation feature](/docs/perform-onelink-bulk-actions-via-csv) available on the Bulk Links page.
+- Create large volumes of QR codes using [OneLink API](/docs/use-onelink-api-to-create-links-in-large-scale-campaigns).
+
+</Accordion>

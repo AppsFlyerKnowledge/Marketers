@@ -1,0 +1,156 @@
+---
+title: "Zhihu Ads Campaign Configuration"
+excerpt: "Configure Zhihu Ads integration in AppsFlyer to attribute campaigns, set up postbacks, and manage partner permissions."
+---
+Zhihu Ads is an AppsFlyer ad network integrated partner. This guide walks you through setting up the integration, configuring attribution links, and managing permissions. 
+
+## Setting Up Zhihu Ads
+
+The setup is done from the **Active Integrations** page, but to find new partners you must first go to the [marketplace](https://support.appsflyer.com/hc/articles/9960361873809).
+
+> 📘 Note
+>
+> Before setting up an integration, make sure you [contact the partner](https://support.appsflyer.com/hc/articles/9960361873809#contact-details) and open an account with them.
+
+**To activate the integration:**
+
+1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Marketplace**.
+2. Search for the partner and select it.
+3. Click **Set up integration**. You’re directed to the integration setup page.
+4. In the **Integration** tab, turn on **Activate partner**.
+
+> 📘 Note
+>
+> The toggle must stay on ([activated](https://support.appsflyer.com/hc/articles/360000844778)) for as long as you work with the partner.
+
+5. Complete the configuration using the relevant tabs, as described below.
+
+Zhihu Ads's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
+
+For a detailed description of the Partner Configuration Window Header, click [here](https://support.appsflyer.com/hc/articles/4410395957521#about-the-integrated-partner-page).
+
+> 👍 Tip
+>
+> - The [General Settings](https://support.appsflyer.com/hc/articles/4410395957521#d-general%20settings) step in the Integration tab is **mandatory** for all partners
+> - All the rest of the steps are either descriptive or **optional**
+
+## Integration Tab
+
+### Activate Partner
+
+On the **first visit** here, you will need to toggle below. ON the _**Activate Partner**_ button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.
+
+For more details about partner activation please click [here](https://support.appsflyer.com/hc/articles/360000844778).
+
+### General settings
+
+**Enable View-Through attribution**
+
+Toggle this to ON if you want to attribute view-through installs from Zhihu Ads. The view-through lookback slider is available on the attribution link tab (described below).
+
+### Default Postbacks
+
+![mceclip2.png](https://files.readme.io/57429fa533cd58d79951324850f600437704bd0d59f7f72560d58998950ba061-21594063299857.png)
+
+### In-app events settings
+
+In this section you can map your AppsFlyer events with Zhihu Ads via postbacks.
+
+![mceclip2.png](https://files.readme.io/476adf0a76416691798b4d6cd01871f8b52a2d2392e982f6817e0bdd660138e3-360003343557.png)
+
+1. Toggle In-App Event Postbacks to ON
+2. Click **Add Event** to add an SDK Event to the list
+3. Fill in the following parameters:
+
+| Parameter Name | Description |
+| --- | --- |
+| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.<br>**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
+| **Partner Event Identifier** | The unique name or ID of each event as defined on Zhihu Ads's side.<br>Obtain the corresponding Event ID from Zhihu Ads and set in the text field. |
+| **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af_revenue** parameter.<br>**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
+
+## Attribution Link Tab
+
+In this tab, you can create the attribution links you want to send to Zhihu Ads for attributing Zhihu Ads's campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
+
+![mceclip1.png](https://files.readme.io/e8d11aab778e42c4a62a4cc6bb5a9bb5eb04c863b77342fd58bf140dd523c414-360003343457.png)
+
+This tab is divided into different sections:
+
+### Attribution Link Parameters
+
+In this section, select which parameters you want to add to the attribution link.
+
+Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
+
+- **Campaign** - add it to compare different campaigns running with Zhihu Ads.
+
+  **Attribution link parameter:** c
+- **Adset** - set ad set names to compare different ad sets within specific Zhihu Ads campaigns.
+
+  **Attribution link parameter:** af_adset
+- **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific Zhihu Ads campaigns.
+
+  **Attribution link parameter:** af_ad
+- **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub site ID parameter, to avoid [exceeding the site ID](https://support.appsflyer.com/hc/articles/115005099063-What-are-the-Exceeded-Media-Sources-#exceeded_siteid_limit) limitations.
+
+  **Attribution link parameters:** af_siteid and af_sub_siteid
+- **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.
+
+  **Attribution link parameters:** af_sub1, af_sub2, af_sub3, af_sub4, af_sub5
+
+![attribution-link-parameters.png](https://files.readme.io/75673dff43b2dbd26c781b5b3ee0aebc08ea9d40081ad42575396567cec0926b-21594084873745.png)
+
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about **[AppsFlyer's Attribution Link Structure and Parameters](https://support.appsflyer.com/hc/articles/207447163).**
+
+### Click-Through Attribution
+
+This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Zhihu Ads.
+
+**Attribution link parameter:** af_click_lookback
+
+More details about the [click lookback window here](https://support.appsflyer.com/hc/articles/208338403-What-is-AppsFlyer-s-Configurable-Attribution-Lookback-Window-).
+
+![netease-click-through.png](https://files.readme.io/b8ae14cff74600f4468e63fba5b601cfcc1c0c20af7eee392d979f824fae0b09-21594063336593.png)
+
+### Click Attribution Link
+
+This is the attribution link that contains all the setup information you have set for it. Send it to Zhihu Ads to be activated when leads click on a corresponding ad.
+
+### View-through attribution lookback window
+
+This slider allows you to set the **maximum time from impression to install**. Only installs (first launches) that take place within this lookback window, following an ad impression, are attributed to Zhihu Ads, providing there was no other relevant ad click.
+
+You can customize this value to 1-23 hours or 1-7 days.
+
+**Attribution link parameter:** af_viewthrough_lookback
+
+More details about the [view-through attribution here](https://support.appsflyer.com/hc/articles/208338403-What-is-AppsFlyer-s-Configurable-Attribution-Lookback-Window-).
+
+### Impressions attribution link
+
+The impression attribution link contains similar attribution data to the click recording link (besides the different lookback window). Send it to Zhihu Ads to be activated when a corresponding ad is watched, usually for 1 second or more.
+
+## Cost Tab
+
+Cost data is not supported in the integration with this partner.
+
+## Ad Revenue Tab
+
+Ad Revenue is not supported in the integration with this partner.
+
+## Permissions Tab
+
+In this tab, you can select the permissions to grant Zhihu Ads, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Zhihu Ads, the permissions tab is active and you can grant control to Zhihu Ads.
+
+![rtb_house-permissions-new.png](https://files.readme.io/06ade58d90140d2c9dce72814b049a1bb010f1fbd6e2f47a783da81e5b29eedc-21594063365009.png)
+
+### Ad Network Permissions
+
+Use these toggles to give the ad network permissions to handle its own configuration for your app:
+
+- _**Allow to configure integration**_ - permit the partner to setup the integration tab (except in-app event postbacks)
+- _**Allow to configure in-app event postbacks**_ - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
+- _**Allow access to your retention report**_ - only to the partner's own retention data
+- _**Allow access to your Protect360 dashboard**_ - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+
+Learn more about granting [ad network permissions](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
