@@ -1,0 +1,8 @@
+---
+title: "Bulletin: New field in SKAN attribution messages via Push API"
+excerpt: "AppsFlyer has introduced new fields, including the af_attribution flag, measurement_window, and interval, to SKAN attribution messages via the Push API."
+---
+| | |
+| --- | --- |
+| **Bulletin date** | April 3, 2022 |
+| **What's new**<br>**![Information_icon.png](https://files.readme.io/620ca798aec80f80ef2c05e25c4eefc25ec289d29ad752534dc42a5dd7f0b6cf-20445076224657.png)** | New fields available in [SKAN attribution messages](/docs/push-api-streaming-raw-data#skan-attribution-messages) via Push API:<br>- **af\_attribution flag:** When the Single Source of Truth (SSOT) mechanism is on: If **true**, the install was attributed by both AppsFlyer and SKAN. If **false**, the install wasn't attributed by AppsFlyer. If **null**, the Conversion Value is null.<br>- **measurement\_window**<br>- **interval**<br>See [all fields available](https://support.appsflyer.com/hc/articles/360014261518#fields-available-in-decoded-event-reports) in decoded event reports. |

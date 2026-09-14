@@ -1,0 +1,11 @@
+---
+title: "Bulletin: OneLink redirection to third-party Android app stores"
+excerpt: "OneLink templates now support direct redirection to third-party Android app stores including Huawei, Xiaomi, Samsung, Oppo, and Vivo."
+---
+| | |
+| --- | --- |
+| What's new | OneLink templates provide an option to redirect users without your app to third-party Android app stores. |
+| Effective date | May 19, 2021 |
+| Where | [OneLink template setup](https://support.appsflyer.com/hc/articles/207032246) |
+| What | Before the change: OneLink templates provided options for users without your app to be redirected to Apple App Store, Google Play, or a web URL.<br>After the change: OneLink templates also provide options for users without your app to be redirected to the following third-party Android app stores:<br>- Huawei AppGallery<br>- Xiaomi Market<br>- Samsung Galaxy Store<br>- Oppo App Market<br>- Vivo App Store |
+| What you must know | - Redirecting to third-party Android app stores requires your app in the other stores to have the same package name as the Android app selected in your OneLink template.<br>- The APK package name (for example: com.shop.app) is used for the redirection, so make sure the APK package name exists in the third-party app store before you select it.<br>- Only the package name is extracted from the Android app to redirect users. For example, if the AppsFlyer name includes a channel as well, like com.shop.app-store, only com.shop.app is extracted. In such a case, redirection works, but attribution doesn't.<br>- If you select an Android app that is not in Google Play, you must enter a URL to which all Android users are redirected.<br>  <br>  <br>  !<br>  <br>- If your Android app is available exclusively through a third-party store, [you must set its Google Play status to Published out of store when adding the app.](https://support.appsflyer.com/hc/articles/207447023-Setting-up-multi-store-Android-attribution#dashboard-per-store%E2%80%94adding-the-app) Choosing any other status will prevent redirection to the third-party store and will result in an error message. |

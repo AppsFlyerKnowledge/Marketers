@@ -1,0 +1,67 @@
+---
+title: "Getting Started: Onboarding Guide for Analytics Partners"
+excerpt: "Learn how to set up your analytics partner integration with AppsFlyer, including account registration, postback endpoint configuration, and account conversion."
+---
+At a glance: Set up your analytics partner integration with AppsFlyer, including configuration of postback templates. This article outlines the steps, timelines, and dependencies involved in the onboarding process.
+
+![54150 Partners onboarding KB.png](https://files.readme.io/f8d8abe52561baf06cb3125d7f49760d2510aaa1ed63c6c0515d3543418dad91-34615688043409.png)
+
+## About the analytics partner integration
+
+An analytics partner account in AppsFlyer is a specialized account for analytics providers. It enables access to install and in-app event postback data, which allows partners to analyze user behavior, campaign results, and app performance. This article is intended for analytics providers that want to set up a partner integration with AppsFlyer.
+
+## Set up the integration
+
+**To set up the integration, follow these steps:**
+
+### Step 1: Register account
+
+1. **Create a new PID via advertiser invitation:**
+
+Analytics partner accounts (and PID creation) can only be initiated through an advertiser’s invitation. Share this [link](https://support.appsflyer.com/hc/articles/4410395957521#invite-new-partners-to-appsflyer) with your advertiser and ask them to send you an invitation.
+
+2. **Complete registration:**
+
+Follow the steps provided in the invitation email to complete the ad network registration process.
+
+> 📘 Note
+>
+> Ensure that the email address used for registration is not associated with an existing AppsFlyer account as a team member or admin.
+
+### Step 2: Set up postback endpoint and profile
+
+1. **Approval email:** Once your registration is approved, you’ll receive an email inviting you to complete mandatory integration steps.
+2. **Configure postback endpoint:** Refer to the [Postback macros for analytics partners](/docs/postback-macros-for-analytics-partners) article to set up your postback endpoint and macros using AppsFlyer’s [postback management platform](/docs/self-serve-integration-management-for-ad-networks).
+3. **Profile setup:**
+   1. In AppsFlyer, navigate to the menu bar and select your email address > **Partner Setup**.
+   2. On the Profile tab, complete the company information, and upload your company logo.
+   3. Click **Save** to apply the changes.
+
+### Step 3: Convert account type
+
+1. **Open a ticket for account conversion:**
+
+In AppsFlyer, from the top menu, select **Help** > **Contact our team**. Use the partner assistant widget to submit a ticket requesting the conversion of your account to an analytics account. Be sure to include the following information:
+   - A list of mutual advertisers planning to collaborate with your company.
+   - An overview of your company’s background and information about the core services you provide.
+2. **Validation and conversion:** AppsFlyer will validate your request and convert your ad network account to an analytics account after verification.
+
+## FAQ
+
+<Accordion title="Can I change my current ad network account to an analytics account?">
+
+No, only a newly registered PID can be converted to an analytics account. A new PID refers to one that has not sent any clicks or impressions to AppsFlyer.
+
+</Accordion>
+
+<Accordion title="Do I have access to raw data export?">
+
+No, analytics accounts can only receive install and in-app event postbacks.
+
+</Accordion>
+
+<Accordion title="Can I use attribution links to generate traffic for advertisers in an analytics account?">
+
+No, an analytics account does not have attribution links and cannot send clicks or impressions to AppsFlyer.
+
+</Accordion>
