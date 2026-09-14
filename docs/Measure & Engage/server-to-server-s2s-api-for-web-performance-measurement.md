@@ -1,0 +1,258 @@
+---
+title: "Server-to-Server (S2S) API for Web Performance Measurement"
+excerpt: "The S2S API for Web Performance Measurement lets you send web visits and events to AppsFlyer directly from your server, bypassing browser limitations like ad blockers and cookie restrictions."
+---
+The S2S API for Web Performance Measurement lets you send web visits and events to AppsFlyer directly from your server, bypassing the browser limitations like ad blockers and cookie restrictions. Use it alongside the Web SDK or on its own to get more complete, higher-quality attribution data.
+
+## About the S2S API for web attribution
+
+AppsFlyer supports two ways to send web data for attribution: the Web SDK (client-side) and the S2S API (server-to-server, or S2S). You can use either method independently, or combine them depending on your setup and needs.
+
+The Web SDK runs in the browser. The S2S API lets you send the same data from your own backend instead. Here's why that matters: privacy-focused browsers and ad blockers, including Safari ITP, Firefox ETP, and Brave, can block or limit client-side measurement. Industry estimates put browser-level blocking at 25–40% of web users. Because S2S calls originate from your server and never pass through the browser, they're not affected by these restrictions at all.
+
+### How it works
+
+1. A user visits your website or triggers an event in the browser.
+2. Your server receives the event.
+3. Your server sends the event directly to the AppsFlyer server for attribution.
+
+### Why use S2S
+
+Here's what using the S2S API means for you, broken down by benefit:
+
+- **Measure server-side events:** Some conversions never touch the browser at all, for example, subscription renewals processed on the backend or events originating in a CRM system. S2S is the only way to get these into AppsFlyer and tie them back to the right campaign.
+- **Increased measurement coverage:** S2S calls come from your server, not the browser, so ad blockers, Safari ITP cookie limits, and other browser-level restrictions don't apply. You can capture visits and conversions that client-side measurement alone would miss.
+- **Data enrichment from the backend:** With S2S, your server can add extra data to events before sending them, including Customer User IDs, hashed email or phone, CRM attributes, subscription status, or any internal identifier. This improves identity resolution and strengthens signal quality.
+- **Security:** Dev keys, user identifiers, and any added data stay on your server and are sent over a secure connection, giving you full control over what leaves your infrastructure.
+
+## API specification
+
+Base URL: `https://events.appsflyer.com`
+
+### Authentication
+
+All requests must include a valid S2S API token and the correct content type in the request headers.
+
+| Header | Type | Description |
+| --- | --- | --- |
+| `Authorization` | API token | Your S2S API token is included in the Header in the following format:<br>`Authorization: Bearer {s2s-token}` |
+| `Content-Type` | string | Must be `application/json`. Required on all requests. |
+
+> 📘 Note
+>
+> To create an S2S API token, see the instructions in [Managing AppsFlyer tokens](/docs/managing-appsflyer-tokens#manage-your-tokens).
+
+### Measure an event
+
+`POST /v2.0/s2s/inapps/app/web/{appId}`
+
+Measures a web event (for example, a purchase, sign-up, or custom action) for a given app.
+
+#### Path parameter
+
+| Parameter | Required | Description |
+| --- | --- | --- |
+| `appId` | Required | The `unified_app_id` as defined in AppsFlyer. For example: `website-www.example.com` |
+
+#### Request body
+
+| Field | Type | Required | Description |
+| --- | --- | --- | --- |
+| `user_id` | object | Required | User identifier. Must contain at least one of `customer_user_id` or `appsflyer_id`. |
+| `event_name` | string | Required | Event name. 1–64 characters. Cannot contain `@ = + -`. Example: `af_purchase` |
+| `event_revenue` | number (double) | Optional | Revenue amount for purchase or monetization events. |
+| `event_revenue_currency` | string (ISO-4217) | Optional | Currency code for the revenue value. For example, `USD` or `EUR`. |
+| `event_value` | object | Optional | Free-form event parameters. Supports a `custom_parameters` sub-object. |
+| `event_url` | string | Optional | Page URL where the event occurred. Valid HTTP URL, max 4,096 characters. |
+| `timestamp` | integer (int64) | Optional | Unix time in ms (UTC). If omitted, AppsFlyer uses the receive time. Late acceptance window: events must arrive no later than 00:30 on the next calendar day in the app's timezone. |
+| `ip` | string | Optional | Device IP address (IPv4 or IPv6). Max 46 characters. |
+| `user_agent` | string | Optional | Full user agent string from the browser. Max 1,024 characters. |
+| `http_referrer` | string | Optional | Referrer URL of the current page. |
+| `af_customer_event_id` | string | Optional | Your own unique ID for the event, which you use to deduplicate conversions on ad network platforms. AppsFlyer forwards it to the network as the event ID.<br>Send it when either applies:<br>- You run a network pixel on your site, alongside AppsFlyer tracking.<br>- You send the same event through both the Web SDK and this API.<br>When you send it, also send the same value in the network's own pixel event (for example, `eventID` in `fbq()`), so the network counts the conversion once instead of twice.<br>If you omit it, AppsFlyer generates its own ID, and the network can't match your pixel events.<br>**Limits:** Max 256 characters. Matching is exact and case-sensitive. |
+| `email_hashed` | string | Optional | SHA256 of normalized (lowercase, trimmed) email. Must be a 64-character hex string. |
+| `phone_number_hashed` | string | Optional | SHA256 of phone number. Must be a 64-character hex string. |
+| `phone_number_e164_hashed` | string | Optional | SHA256 of E.164 phone number (for example, `+14155552671`). Must be a 64-character hex string. |
+| `first_name_hashed` | string | Optional | SHA256 of normalized first name. Must be a 64-character hex string. |
+| `last_name_hashed` | string | Optional | SHA256 of normalized last name. Must be a 64-character hex string. |
+
+#### Example request
+
+```json
+{
+  "user_id": {
+    "customer_user_id": "15667737-366d-4994-ac8b-653fe6b2be4a"
+  },
+  "event_name": "af_purchase",
+  "event_revenue": 49.99,
+  "event_revenue_currency": "USD",
+  "af_customer_event_id": "550e8400-e29b-41d4-a716-446655440000",
+  "event_value": {
+    "af_content_id": "SKU-001",
+    "af_quantity": 2,
+    "custom_parameters": {
+      "promo_code": "SUMMER10"
+    }
+  },
+  "event_url": "https://example.com/checkout/success",
+  "timestamp": 1712000000000,
+  "ip": "35.244.183.10",
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) ...",
+  "email_hashed": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2"
+}
+```
+
+#### Responses
+
+| Status | Description |
+| --- | --- |
+| 202 Accepted | Request accepted. Returns status, message, and optional `messageId`. |
+| 400 Bad Request | Invalid or missing fields. |
+| 401 Unauthorized | App does not exist or authentication failed. |
+| 403 Forbidden | App traffic is blocked. |
+| 415 Unsupported Media Type | `Content-Type` must be `application/json`. |
+
+### Measure a visit
+
+`POST /v2.0/s2s/visits/app/web/{appId}`
+
+Measures a page visit for a given web app. This endpoint shares all base fields with the event endpoint, with two key differences: `event_url` is required, and event name and revenue fields do not apply.
+
+#### Path parameter
+
+| Parameter | Required | Description |
+| --- | --- | --- |
+| `appId` | Required | The `unified_app_id` as defined in AppsFlyer. For example: `website-www.example.com` |
+
+#### Request body
+
+| Field | Type | Required | Description |
+| --- | --- | --- | --- |
+| `user_id` | object | Required | User identifier. Must contain at least one of `customer_user_id` or `appsflyer_id`. |
+| `event_url` | string | Required | The URL of the visited page. Valid HTTP URL, max 4,096 characters. |
+| `timestamp` | integer (int64) | Optional | Unix time in ms (UTC). If omitted, AppsFlyer uses the receive time. Late acceptance window: visits must arrive no later than 00:30 on the next calendar day in the app's timezone. |
+| `ip` | string | Optional | Device IP address (IPv4 or IPv6). Max 46 characters. |
+| `user_agent` | string | Optional | Full user agent string from the browser. Max 1,024 characters. |
+| `http_referrer` | string | Optional | Referrer URL of the current page. |
+| `event_value` | object | Optional | Free-form event parameters, including a `custom_parameters` sub-object. |
+| `customer_dedup_id` | string | Optional | Customer-provided deduplication identifier. |
+| `email_hashed` | string | Optional | SHA256 of normalized email. Must be a 64-character hex string. |
+| `phone_number_hashed` | string | Optional | SHA256 of phone number. Must be a 64-character hex string. |
+| `phone_number_e164_hashed` | string | Optional | SHA256 of E.164 phone number. Must be a 64-character hex string. |
+| `first_name_hashed` | string | Optional | SHA256 of normalized first name. Must be a 64-character hex string. |
+| `last_name_hashed` | string | Optional | SHA256 of normalized last name. Must be a 64-character hex string. |
+
+#### Example request
+
+```json
+{
+  "user_id": {
+    "appsflyer_id": "1234567890abcdef",
+    "customer_user_id": "15667737-366d-4994-ac8b-653fe6b2be4a"
+  },
+  "event_url": "https://example.com/products/sneakers",
+  "timestamp": 1712000000000,
+  "ip": "35.244.183.10",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) ...",
+  "http_referrer": "https://www.google.com/",
+  "email_hashed": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2"
+}
+```
+
+#### Responses
+
+| Status | Description |
+| --- | --- |
+| 202 Accepted | Request accepted. Returns status, message, and optional `messageId`. |
+| 400 Bad Request | Invalid or missing fields. |
+| 401 Unauthorized | App does not exist or authentication failed. |
+| 403 Forbidden | App traffic is blocked. |
+| 415 Unsupported Media Type | `Content-Type` must be `application/json`. |
+
+## Set up a fully server-side integration
+
+If you're running the Web SDK alongside S2S, use [Extracting the Web SDK afUserID](/docs/server-to-server-s2s-api-for-web-performance-measurement#extracting-the-web-sdk-afuserid) instead. This section is only for integrations with no SDK at all.
+
+If you're not running the Web SDK on your site at all, you're responsible for everything it would normally handle: assigning the user cookie, sending the right identifiers, and keeping every event payload complete. Done right, this setup gives you the full benefits described in [Why use S2S](/docs/server-to-server-s2s-api-for-web-performance-measurement#why-use-s2s), but it depends on getting these details right.
+
+### Send visits, not just events
+
+A visit carries the attribution parameters that every event after it relies on, and the system expects a visit before any event from a user. If you send an event before a visit, the system classifies it as organic.
+
+### Assign a first-party cookie via HTTP
+
+Because there's no Web SDK to set the `afUserId` cookie for you, you need to assign and manage it yourself, as an HTTP cookie set in the `Set-Cookie` response header, not a client-side cookie written in JavaScript.
+
+Here's why that matters: a client-side cookie (set via `document.cookie`) expires quickly, as fast as 7 days on Safari, or 24 hours on domains under ITP. Once it expires, the identifier resets and a returning visitor looks new. A cookie your server sets isn't subject to that cap and can persist up to the browser maximum (Chrome allows up to 400 days). It can also be marked `HttpOnly`, so page scripts and ad blockers can't read or strip it, and it doesn't rely on any script running on the page at all.
+
+To set and read it:
+
+1. On the first request from a visitor with no cookie, generate a stable unique ID on your server (for example, a UUID).
+2. Return it in a first-party cookie:
+
+```auto
+Set-Cookie: af_web_id=<generated-id>; Max-Age=34128000; Path=/; Secure; HttpOnly; SameSite=Lax
+```
+
+3. On every later request, read the value from the incoming Cookie header and reuse it. Don't regenerate it.
+4. Send that value to AppsFlyer on every call as `appsflyer_id` inside the request's `user_id` object.
+
+You can name the cookie whatever you like; AppsFlyer reads the value you send, not the cookie's name. Just make sure you set it from your own first-party domain.
+
+### Send the right identifiers on each call
+
+Every call needs a `user_id` object with at least one of `appsflyer_id` (the cookie value) or `customer_user_id` (your internal user ID). Sending both, when you have them, improves identity resolution.
+
+Here's what to keep in mind: visits are mostly anonymous, so always send the cookie value. For on-site events, add the `customer_user_id` once the user is identified, and keep sending the cookie alongside it. For events that don't originate in the browser, the `customer_user_id` alone is enough, as long as AppsFlyer already knows that user from an earlier identified session.
+
+## Things to consider
+
+### User identification
+
+The `user_id` object is required on every request. At least one of the following identifiers must be provided.
+
+| Field | Type | Description |
+| --- | --- | --- |
+| `customer_user_id` | string (1–64 characters) | Your internal user identifier, as set in your system. |
+| `appsflyer_id` | string (min 1 character) | AppsFlyer's internal identifier for the web user. If you use the AppsFlyer Web SDK, the `appsflyer_id` value is retrieved from the Web SDK cookie. Extract it from `afUserId`. See [Extracting the Web SDK afUserId](/docs/server-to-server-s2s-api-for-web-performance-measurement#extracting-the-web-sdk-afuserid) |
+
+### Late acceptance windows
+
+Events and visits must be received no later than 00:30 on the next calendar day in the app's timezone. Late events fall back to the server receive time.
+
+### Hashed PII fields
+
+All personal data fields must be SHA256-hashed before sending. Normalize text (lowercase, trimmed) before hashing. Each hash must be exactly 64 hexadecimal characters (case-insensitive).
+
+- Pattern for all hashed fields: `^[a-fA-F0-9]{64}$`
+- Phone numbers using the `phone_number_e164_hashed` field must conform to E.164 format (for example, `+14155552671`) before hashing.
+
+### Extracting the Web SDK afUserID
+
+- The `afUserId` parameter is a unique identifier set by the Web SDK when a user first visits your site.
+- If you need `afUserId`, use one of the methods that follow.
+
+<Tabs>
+<Tab title="Get afUserId from the HTTP cookie header">
+
+- The `afUserId` is sent by the visitor's browser on calls to your site.
+- Extract it from the HTTP cookie header if needed.
+
+</Tab>
+<Tab title="Viewing afUserId in the visitor's browser">
+
+- View the `afUserId` in the visitor's browser for troubleshooting and debugging.
+- For it to be available, the visitor needs to have first visited a page having the Web SDK at least once.
+- The cookie containing `afUserId` is a first-party cookie in relation to your domain.
+- The procedure that follows was prepared using Chrome 81. There may be differences across browsers and operating systems.
+
+**To get the afUserId from the visitor's browser:**
+
+1. In your browser, go to your website.
+2. Right-click, select _**Inspect**_. The browser's inspect element window opens.
+3. Go to the (A) _**Application**_ tab.
+4. In the side menu, (B) expand Cookies.
+5. Select your website. If it does not display, refresh the browser.
+6. In the (C) _**filter**_ field, enter `afUserId`. The value of afUserID displays.
+
+</Tab>
+</Tabs>

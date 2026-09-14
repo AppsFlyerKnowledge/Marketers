@@ -1,0 +1,123 @@
+---
+title: "Implement Privacy Manifest in your app"
+excerpt: "Learn how to implement Apple's Privacy Manifests with the AppsFlyer SDK to accurately represent your app's privacy practices and data collection."
+---
+At WWDC23 Apple introduced new privacy manifests. With Privacy Manifests, app developers are able to provide more accurate descriptions of their apps privacy practices. AppsFlyer has created a Privacy Manifest for the AppsFlyer SDK and the details are explained below.
+
+## Background
+
+With Privacy Manifests, an app developer will be able to create a record of the categories of data that it collects through its app independently and through its use of third-party dependencies, such as third-party SDKs used by the app. This information helps app developers accurately represent privacy practices in their apps including through the nutrition labels they provide to their users.
+
+In many cases, app developers are not aware of what data third-party SDKs are collecting or what a specific SDK is using the data for. The Privacy Manifest enables third-party SDKs to easily pass this information to the app developers, helping them create accurate nutrition labels.
+
+### What are nutrition labels?
+
+Nutrition Labels provide information about an apps' privacy practices in an easy-to-read and understandable format. End users have more transparency into what data the app is collecting and for what purpose. For more information on Nutrition Labels see [here](/docs/preparing-for-the-app-store-review-nutrition-labels).
+
+## What is in the AppsFlyer Privacy Manifest?
+
+> ❗️ Important!
+>
+> In addition to the AppsFlyer SDK, you will have to determine your own data collection, Required Reason API, and usage in your app or other SDKs and report that information in the Nutrition Labels
+
+AppsFlyer SDK 6.14.0 includes the AppsFlyer Privacy Manifest. This includes:
+
+- [Data usage](/docs/implement-privacy-manifest-in-your-app#h_01HQ03P71BG159MCE3VQY4GTMH)
+- [Required Reason APIs](/docs/implement-privacy-manifest-in-your-app#h_01HQ03NV880VHFTXQDE8R6ZRZH)
+- [Tracking domains](/docs/implement-privacy-manifest-in-your-app#h_01HQ03NV88SJPYKBM66S7X6GP8)
+
+### Data usage
+
+Apple requires app and SDK developers to record the category of data, and the reasons, that the app or third-party SDK collects such data.
+
+App developers can then use Xcode to create a privacy report, summarizing the information about the collected data.
+
+Following are the Data Types collected by the AppsFlyer SDK, that are included in the Privacy Manifest:
+
+> 📘 Note
+>
+> The following assumes AppsFlyer software default configurations. App developers are responsible for ensuring that they adapt their own manifest accordingly in line with their specific configurations and uses of the AppsFlyer SDK.
+
+| Name | NSPrivacyCollectedDataType | NSPrivacyCollectedDataTypeLinked | NSPrivacyCollectedDataTypeTracking | NSPrivacyCollectedDataTypePurposes |
+| --- | --- | --- | --- | --- |
+| Device ID (IDFA, IDFV) | NSPrivacyCollectedDataTypeDeviceID | Yes | Yes | NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising |
+| Product Interaction (Launches) | NSPrivacyCollectedDataTypeProductInteraction | No | No | NSPrivacyCollectedDataTypePurposeAnalytics |
+
+### Required Reason APIs
+
+Apple provided a list of APIs that require reasoning for their use. Apps and SDKs that use these APIs should detail them in the Required Reson API section of the Privacy Manifest. These APIs are divided into categories based on their functionality and the information they provide according to [Apple’s list of topics.](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api?language=objc) These are the APIs that are included in the AppsFlyer SDK version 6.14.0 Privacy Manifest:
+
+- [File Timestamp APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393)
+- [User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401)
+
+To clarify the usage of Required Reason APIs, app developers will be required to declare the API category and specify the reasons for using the API. Below are the AppsFlyer APIs and their usage.
+
+<Tabs>
+<Tab title="SDK version 6.14.0 and above">
+
+| API Category | API Category Type | Reason | Comments |
+| --- | --- | --- | --- |
+| [File Timestamp APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393) | NSPrivacyAccessedAPICategoryFileTimestamp | C617.1 | The SDK is using the [NSFileCreationDate](https://developer.apple.com/documentation/foundation/nsfilecreationdate?language=objc) and [NSFileModificationDate](https://developer.apple.com/documentation/foundation/nsfilemodificationdate?language=objc) APIs to determine the app installation date and the app update date. |
+| [User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401) | NSPrivacyAccessedAPICategoryUserDefaults | CA92.1 | The SDK stores data that is needed for its operation. For example - maintaining how many times the app was launched. |
+
+</Tab>
+<Tab title="SDK versions 6.13.x and earlier">
+
+| API Category | API Category Type | Reason | Comments |
+| --- | --- | --- | --- |
+| [File Timestamp APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393) | NSPrivacyAccessedAPICategoryFileTimestamp | C617.1 | The SDK is using the [NSFileCreationDate](https://developer.apple.com/documentation/foundation/nsfilecreationdate?language=objc) and [NSFileModificationDate](https://developer.apple.com/documentation/foundation/nsfilemodificationdate?language=objc) APIs to determine the app installation date and the app update date. |
+| [System boot time APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278394) | NSPrivacyAccessedAPICategorySystemBootTime | 35F9.1 | Measure SDK performance (time it took to execute a request etc.) |
+| [User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401) | NSPrivacyAccessedAPICategoryUserDefaults | CA92.1 | The SDK stores data that is needed for its operation. For example - maintaining how many times the app was launched. |
+
+</Tab>
+</Tabs>
+
+For your convenience, you can copy the following code snippet which includes the Required Reasons above, and paste it within your PrivacyInfo.xcprivacy file.
+
+```xml
+<key>NSPrivacyAccessedAPITypes</key>
+<array>
+    <dict>
+        <key>NSPrivacyAccessedAPITypeReasons</key>
+        <array>
+            <string>CA92.1</string>
+        </array>
+        <key>NSPrivacyAccessedAPIType</key>
+        <string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+    </dict>
+    <dict>
+        <key>NSPrivacyAccessedAPITypeReasons</key>
+        <array>
+            <string>C617.1</string>
+        </array>
+        <key>NSPrivacyAccessedAPIType</key>
+        <string>NSPrivacyAccessedAPICategoryFileTimestamp</string>
+    </dict>
+    <dict>
+        <key>NSPrivacyAccessedAPITypeReasons</key>
+        <array>
+            <string>35F9.1</string>
+        </array>
+        <key>NSPrivacyAccessedAPIType</key>
+        <string>NSPrivacyAccessedAPICategorySystemBootTime</string>
+    </dict>
+</array>
+```
+
+### Tracking Domains
+
+Any Tracking Domain used in an app or a third-party SDK must be recorded in the privacy manifest. If users do not grant permissions (opt-out) through the App Tracking Transparency (ATT) framework, the iOS operating system will block all outgoing traffic to that domain. The AppsFlyer SDK checks the user's ATT status before any server request and executes the request based on whether the user has opted in.
+
+## FAQ
+
+<Accordion title="Does AppsFlyer have an SDK supporting the Privacy Manifest?">
+
+Yes, starting with version 6.14.0, the SDK has full support for the Privacy Manifest.
+
+</Accordion>
+
+<Accordion title="Do I have to report my own data collection?">
+
+Yes, in addition to AppsFlyer or other SDKs, you will have to determine your own data collection and usage and report that information in the Nutrition Labels, including any configuration changes made to the default AppsFlyer SDK configurations (e.g. measurement of in-app events).
+
+</Accordion>

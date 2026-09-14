@@ -1,0 +1,54 @@
+---
+title: "People-Based Attribution (PBA)—Overview"
+excerpt: "People-Based Attribution (PBA) consolidates website and mobile app data to provide a unified, holistic view of customer journeys across channels, platforms, and devices."
+---
+**At a glance:** People-Based Attribution (PBA) provides a unified view of customer journeys across channels, platforms, and devices.
+
+![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
+
+## PBA principles
+
+- PBA consolidates website and mobile app data to provide a holistic view of campaign performance across a brand’s digital properties. Advertisers use PBA to understand customer journeys in terms of people, instead of devices.
+- PBA data—on the PBA dashboards and in raw data reports—is used for marketing analyses and campaign optimization.
+- Data consisting of website visits and user events is acquired using [SDKs and/or APIs.](https://support.appsflyer.com/hc/articles/360001610038)
+- For each visit to the website: the media source responsible for bringing the visit is determined. Any resulting event (conversion) is [attributed](https://support.appsflyer.com/hc/articles/360002386997-Media-source-attribution-rules-in-PBA) to the media source causing the visit.
+
+### PBA analytics dashboards and raw data
+
+- PBA data is presented via analytics dashboards and reports:
+  - Website Attribution
+  - Web-Assisted Installs
+  - Raw data reports
+- Data in the dashboards [filtered and grouped](/docs/using-pba-dashboards) using dimensions like mobile platform, media channel, and media type, This enables you to drill down and dissect the data.
+
+### [Website Attribution](https://support.appsflyer.com/hc/articles/360000654377)
+
+![WebsiteAttributionTable_us-en.jpg](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)
+
+Analyze web traffic sources and marketing campaigns driving user visits and conversions on your website. Uncover performance differences down to the ad level. Supports all AppsFlyer query params in the link without the need to redirect users to AppsFlyer servers.
+
+### [Web-Assisted Installs](https://support.appsflyer.com/hc/articles/360002669837)
+
+![AppsFlyer-Web-to-App_us.en.gif](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)
+
+Use Web-Assisted Installs to examine the impact and results of your web marketing efforts on driving mobile app installs.
+
+- Gain insights as to how different media types (paid, owned, earned), media channels (direct, social media, organic search), and media sources interact and contribute to your overall user acquisition efforts.
+- Attribute organic installs driven by your web efforts.
+- Examine the interaction between the web efforts and non-organic installs.
+
+### [Raw data](https://support.appsflyer.com/hc/articles/360001917778)
+
+Raw data reports are available via Data Locker. They offer in-depth insights and includes the media source attributed/responsible for bringing the user to the website.
+
+- **Web visits:** visits to the website
+- **Web events**: actions performed on the website like subscribe or purchase
+- **Web-Assisted Installs** journeys are provided in full.
+- BI tools are used to analyze the data for additional insights.
+- [Learn more about PBA raw data](https://support.appsflyer.com/hc/articles/360001917778).
+
+<Cards>
+  <Card title="Onboarding guide to PBA" href="https://support.appsflyer.com/hc/articles/360013821097">
+    Learn how to get started with onboarding and setting up People-Based Attribution.
+  </Card>
+</Cards>
