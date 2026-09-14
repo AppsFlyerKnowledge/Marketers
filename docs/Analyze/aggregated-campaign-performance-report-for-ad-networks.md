@@ -1,0 +1,134 @@
+---
+title: "Aggregated campaign performance report for ad networks"
+excerpt: "Learn how ad networks can load the aggregated performance report into their BI systems to calculate campaign performance metrics like the 7-day retention KPI."
+---
+Ad networks load the aggregated performance report (AKA Cohort report) into their BI systems to calculate campaign performance metrics like the 7-day retention KPI.
+
+## Aggregated campaign performance report
+
+This report provides campaign performance data, including the number of unique users performing a given event. You (the ad network), use the data in your BI systems to calculate campaign performance metrics in the context of advertiser KPIs. The report is available daily via [Data Locker for Partners](https://support.appsflyer.com/hc/articles/360020818517)
+
+**Why do you need the report?**
+
+Before iOS 14.5, the postbacks AppsFlyer sent you, contained sufficient data to calculate unique user event metrics.
+
+Starting iOS 14.5, and advertiser adoption of Aggregated Advanced Privacy (AAP), postbacks of non-consenting users don't include user identifiers. The lack of identifiers prevents calculating unique user metrics, for example, 7-day retention. The lack of unique user metrics hurts your ability to optimize campaigns and the ability to set common retention goals with advertisers.
+
+**What does the report contain?**
+
+Metrics are provided with the best granularity possible using the dimensions reported and have the following performance metrics:
+
+- Revenue
+- Number of times a given event is performed
+- Number of unique users performing an event
+- [Example report](https://docs.google.com/spreadsheets/d/e/2PACX-1vS89RlkFIss7uARroJcOcX1rU6gUmZ2ySYwfTprg9GaA2BYnvDPVqWmOicea1wrBnNuGgEuLPwzL_ac/pub?gid=0&single=true&output=csv)
+
+**How do you get the report?**
+
+- Provided via Data Locker for Partners. The report updates [Daily UTC time](https://support.appsflyer.com/hc/articles/360000310629-Data-freshness-and-time-zone-support#daily).
+- Before we start sharing the data with you, the advertisers must [grant permissions](https://support.appsflyer.com/hc/articles/360020834237#permission-to-get-aggregated-performance-data) in the dashboard.
+
+## About the report
+
+### Report structure
+
+#### Dimensions
+
+| Field name | Remarks |
+| --- | --- |
+| app\_id |  |
+| media\_source |  |
+| conversion\_type | - Possible values: install, re-engagement, re-attribution<br>- Equivalent postback macro: is\_retargeting |
+| attributed\_touch\_type | Possible values: click, impressions, pre-install, unknown, tv, null |
+| days\_post\_attribution | The number of days elapsed since the attribution event.<br>The maximum number of days is 180. <br>Tip! Use this to calculate retention and KPI days. |
+| event\_date | The date the event occurred.<br>Format: yyyy-mm-dd |
+| conversion\_date | Format: yyyy-mm-dd |
+| event\_name | Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app. |
+| campaign | Campaign hierarchy |
+| campaign\_id | Campaign hierarchy |
+| adset | Campaign hierarchy |
+| adset\_id | Campaign hierarchy |
+| ad | Campaign hierarchy |
+| ad\_id | Campaign hierarchy |
+| channel | Campaign hierarchy |
+| site\_id | Campaign hierarchy |
+| is\_primary\_ attribution | Use to identify and deduplicate retargeting data |
+| country\_code | Derived from the user IP address |
+| agency | If blank, there is no agency associated |
+| Keywords | [Available starting April 27, 2022] Word(s) used in the user's online search. As reported by the ad network |
+| Keyword ID | [Available starting April 27, 2022] Keyword ID returned by the ad network. |
+
+| event\_name | What did the user do |
+| --- | --- |
+| af\_conversion | User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution. |
+| af\_sessions | Opened the app |
+| af\_uninstall | Uninstalled the app |
+| Advertiser defined in-app event | Performed an in-app event in the app. In-app event names aren't mapped to partner event names. |
+
+#### Metrics
+
+| Name | Field | Unique users performing the event |
+| --- | --- | --- |
+| Unique users | unique\_users | Number of unique users performing the event |
+| Revenue | revenue\_usd | Cumulative revenue in USD. For example, $100.00 is reflected as 100. |
+| event\_count | event\_count | Number of event occurrences |
+
+### BI developer considerations
+
+**Scope of data in the report**
+
+The report contains user attributions, installs, re-attributions, and re-engagements, and their related in-app events.
+
+In your data consumption process, you must use logic to split the data between campaign types. Meaning, user attribution (installs) and retargeting (re-engagements). To do so, use the conversion\_type and is\_primary\_attribution field. See [Double attribution of retargeting events.](https://support.appsflyer.com/hc/articles/360016371077)
+
+**Field-level considerations**
+
+- Use post-attribution days to enable easy calculation of retention metrics.
+- Calculating unique users using campaign name and campaign ID dimensions: If you can disregard campaign name granularity, you can sum unique count on campaign ID and the metrics are correct.
+- You can aggregate the data using the campaign hierarchy fields.
+- In-app events use the advertiser event name and aren't mapped to your event names. Ask the advertiser to provide you with the mappings or view them in the dashboard. [Partner in-app event mapping](https://support.appsflyer.com/hc/articles/4410395957521#g-in-app-event-postback-configuration).
+- Revenue is in USD is calculated using the exchange rate on the event day.
+- Ad revenue events are included where available but update with a lag of up to 5 days.
+
+**General considerations**
+
+- Data freshness: Daily, starting 08:00 UTC. Data is written to the Data Locker h=23 folder.
+- Data available is user journey attribution data attributed by AppsFlyer. Meaning, SKAdNetwork reported by iOS postbacks isn't included in this data set.
+- Data is contained in files that contain multiple apps. Use the app\_id field to identify the app.
+- If you don't get data for a given app, verify that the advertiser has granted you the necessary permissions.
+
+### Retention report considerations
+
+To create retention metrics, for example, retention day-7, do so by setting filters on the following fields:
+
+- days\_post\_install=7
+- event\_name=af\_session
+- conversion\_type as required
+- To prevent the inclusion of [duplicate retargeting events](https://support.appsflyer.com/hc/articles/360016371077), select is\_primary\_attribution=true or use conversion\_type to limit the data set to installs.
+- Group by: campaign and other dimensions as needed.
+- Sum: unique\_users\_count
+
+By adding or removing dimensions you can get metrics with different granularity.
+
+## Permissions
+
+You (the ad network), must ask the advertiser to grant you the permissions listed here. The advertiser must perform this procedure once per app.
+
+### Permission to get aggregated performance data
+
+Ad networks appointed (activated) by agencies: The agency can't grant permission. The agency must ask the advertiser to grant the permissions for them.
+
+**To allow the ad network to get aggregated performance data:**
+
+1. In AppsFlyer, from the side menu, select **Collaborate** \> **Integrated partners** .
+2. Search for the partner and select it.
+3. Click **Set up integration**. You’re directed to the integration setup page.
+4. Verify that **Activate partner** is on. If not, data isn't shared.
+5. Go to the **Permissions** tab.
+6. Turn on the following ad network permissions:
+   - **Access aggregate conversions data**.
+   - **Access aggregate in-app events data**.
+   - **Access aggregate revenue data**.
+7. Click **Save Permissions**.
+8. Notify the ad network that you have granted the permissions.
+9. If you have multiple apps, repeat the procedure for each app integrated with the partner.
