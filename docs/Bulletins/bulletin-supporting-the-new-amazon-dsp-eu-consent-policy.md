@@ -1,0 +1,27 @@
+---
+title: "Bulletin: Supporting the new Amazon DSP EU consent policy"
+excerpt: "Learn about Amazon Ads' updated EU consent policy under the Digital Markets Act (DMA) and the required actions to pass valid consent signals via AppsFlyer."
+---
+As part of Amazon's enforcement of the Digital Markets Act (DMA), Amazon Ads is updating their EU consent policy. AppsFlyer is making the necessary changes to support Amazon's policy requirements while ensuring that advertisers maximize the value of their Amazon Ads marketing channels.
+
+### Effective date
+
+- Effective enforcement date on Amazon - June 30, 2026
+- Effective support date on AppsFlyer - May 18, 2026
+
+### What you need to know
+
+**Relevant integrations and audience:** All advertisers with apps that are integrated with Amazon Ads via the `amazondsp_int` SRN integration and have advertising activity in the EU (including UK and Switzerland).
+
+**Required actions:** Ensure that you pass valid DMA consent signals to AppsFlyer for any event (app open or in-app event) for users in the EU, UK, or Switzerland.
+
+The consent signals can be one of the following:
+
+1. **Manual consent:** The only required field is `ad_user_data_enabled` as part of the manual consent array. The other fields required for Google's DMA consent are not relevant for Amazon.
+2. **TCF consent:** Send the full TCF consent information as created by your CMP, and make sure to include the Amazon Ads vendor ID (`793`) in the list of consented vendors.
+3. **GPP consent strings:** Amazon supports GPP consent strings, but this is not currently supported by AppsFlyer.
+
+<Cards>
+  <Card title="How to send DMA consent via AppsFlyer's SDK" href="https://dev.appsflyer.com/hc/docs/send-consent-for-dma-compliance" />
+  <Card title="How to send DMA consent via AppsFlyer's S2S" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post" />
+</Cards>

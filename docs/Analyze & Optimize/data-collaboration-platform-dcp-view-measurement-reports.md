@@ -1,0 +1,223 @@
+---
+title: "View Measurement Reports"
+excerpt: "Customize and generate Data Collaboration Platform (DCP) measurement reports by setting report fields, aggregation levels, schedules, and cloud connections."
+---
+Data Collaboration Platform (DCP) measurement reports provide top-level metrics such as clicks, impressions, and ROAS per campaign. They may also include additional metrics and dimensions based on granted access.
+
+Reports are sent directly to your connected cloud storage or data warehouse. You can receive reports in either a predefined format or customize them to include the specific metrics and dimensions you need.
+
+## What are dimensions and metrics?
+
+The collaboration measurement report is an aggregated report that summarizes data by grouping and combining individual records. It provides high-level insights rather than raw, user-level data.
+
+Report fields are divided into two types: _dimensions_ and _metrics_. Each can be further divided into _basic fields_ and _calculated fields_.
+
+### Dimensions
+
+A dimension is a grouping category that aggregates event-level data into report records. For example, if the media source is selected as the report dimension, each row will contain aggregated data for all events attributed to that media source. The number of rows equals the number of media sources.
+
+Adding more dimensions increases the grouping granularity. For instance, selecting Event date, Media source, and Campaign results in one row per unique combination of those fields.
+
+### Metrics
+
+A metric is numerical data grouped based on the selected dimensions.
+
+For example, if Revenue is selected as the metric and Media source is the only dimension, the report displays total revenue per media source.
+
+When multiple dimensions are selected, such as Event date, Media source, and Campaign, the revenue is grouped by the combination of those fields.
+
+When selecting a metric, choose its aggregation function. For example, for the revenue metric, you would select the **SUM** function.
+
+### What are basic and calculated fields?
+
+Dimensions and metrics can be either basic fields or calculated fields.
+
+- **Basic fields:** Basic fields contain raw data from sources or in-app events.
+- **Calculated fields:** Calculated fields use basic fields to compute values using defined functions.
+
+## Create a predefined report
+
+To generate a predefined report, follow these steps:
+
+1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
+2. On the **Data Collaboration Platform** page, select the relevant collaboration.
+3. On the collaboration page, click **Create report.**
+4. In the dialog that appears, click **Approve report.** The report is sent to your connected cloud service using a predefined name and schedule.
+
+## Create a custom report
+
+To create a custom report, follow these steps:
+
+### 1. Open the New report page
+
+1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
+2. On the **Data Collaboration Platform** page, select the relevant collaboration.
+3. On the measurement dashboard, click **Create report.**
+4. In the dialog that appears click **Customize**.
+5. On the **New report** page, perform the listed steps.
+
+### 2. Set the report type
+
+Under the **Report type** step, select **Commerce media measurement,** then, click **Next.**
+
+### 3. Set the report scope
+
+Under the **Filters and data sources** step:
+
+1. In the **Report name** box, enter a name for the report.
+   - This can be any name that will help you identify the report in the DCR platform.
+   - > ❗️ Important
+     >
+     > Ensure that the report name is different from all other reports in your account or you will not be able to save the report.
+   - Report name requirements:
+     - Length: 2-80 characters
+     - Valid characters:
+       - letters **(A-Z, a-z)**
+       - numbers **(0-9)**, _cannot be the first character of a name_
+       - a hyphen **(-)**, _cannot be the first character of a name_
+     - Invalid characters:
+       - spaces
+       - all other symbols or special characters
+2. In the **Collaboration name** box, select the relevant collaboration.
+3. In the **Timeframe** slider, set the report’s span in days (1-180). Only attributed conversion events occurring within the selected span will appear in the report. The span is calculated backward from the report’s day.
+4. Click **Next**.
+
+### 4. Set the report dimensions and metrics
+
+If you want to customize the report you can select your report dimensions and metrics. For a comprehensive list of the report fields see the report scheme in this article.
+
+To set the report dimensions and metrics, follow these steps:
+
+1. Under the **Structure** step, from the **Dimension from sources** list, select the fields you want to be included in the report.
+2. If you want to create a calculated field click **+ Calculated field** and see Create calculated field in this article.
+3. You can include the field in the report as a dimension or as a metric.
+   - To include the field in the report as a dimension, click **Set as dimension**.
+   - To include the field in the report as a metric, click **Set as metric**.
+4. If you set the field as a metric, select its aggregation function:
+   - **Sum:** The metric value is the sum of event-level values aggregated in the report record. For example, the revenue metric is the sum of  `sku_revenue` all events grouped in the record.
+   - **Count:** The metric value is the count of event-level values aggregated in the report record. For example, the conversions metric is the count of all the conversions included in the grouped record.
+   - **Count distinct**: The metric value is the number of unique values for a given field across the events grouped in the report record. For example, If the selected metric is count-distinct of `sku` and a grouped record includes 10 events containing 4 different SKUs, the metric value will be **4**.
+5. To change the display name of the field, hover over the field and click **Edit display name.**
+
+#### Create calculated field
+
+Calculated fields contain values calculated from basic values using a specified function.
+
+To create or edit a calculated field perform the following:
+
+1. To create or edit a calculated field perform one of the following
+   - **Create**: Click **+ Calculated field.**
+   - **Edit**: Hover over the calculated field and click the action menu → Edit calculated field.
+2. In the **Edit** or **New calculated field** dialog perform the following:
+
+1. In the **Field** box enter the name of the field.
+2. In the **Set function** list, choose the function used to calculate the new value.
+3. Set the function according to the table below:
+
+| **Function** | **Description** | **Example Calculation** | **Example Description** |
+| --- | --- | --- | --- |
+| `ADD` | Sum of two numbers | `Clicks + Impressions` | Total interactions (clicks + ad impressions). |
+| `ARRAY SIZE` | Transforms JSON string array to its size | `ARRAY_SIZE(Products_Clicked)` | Number of products a user clicked in a campaign (from JSON). |
+| `CASE WHEN` | Returns a value when the first condition is met, or ELSE | `CASE WHEN Conversions > 0 THEN 'Successful' ELSE 'Failed' END` | Classifies campaign performance based on conversions. |
+| `CONCAT` | Concatenation of two strings | `CONCAT(Campaign_Name, ' - ', Region)` | Combines campaign name with the region for reporting. |
+| `CONST` | Returns its parameter | `CONST('Marketing Budget Cap: $5000')` | Returns a constant value for budget reference. |
+| `DATETIME DIFF` | Period in selected units between `start` and `end` | `DATETIME_DIFF(End_Date, Start_Date, 'day')` | Calculates the campaign duration in days. |
+| `MAX` | Maximum of two numbers | `MAX(Click_Through_Rate, Conversion_Rate)` | Finds the higher value between CTR and conversion rate. |
+| `MIN` | Minimum of two numbers | `MIN(Budget_Remaining, Daily_Spend_Limit)` | Ensures spending does not exceed daily budget. |
+| `MULTIPLY` | Multiplying two numbers | `Conversions * Avg_Order_Value` | Calculates total revenue from conversions. |
+| `REGEX EXTRACT` | Extracts the first group by regex | `REGEX_EXTRACT(Ad_Text, 'PromoCode: (\\w+)')` | Extracts promo code from ad text using regex. |
+| `SUBSTRING` | Substring of a string from index `start` to `end` | `SUBSTRING(Campaign_ID, 0, 5)` | Extracts the first 5 characters of the campaign ID. |
+| `SUBTRACT` | Subtraction of two numbers | `Budget_Allocated - Budget_Spent` | Calculates the remaining budget for the campaign. |
+
+### 5. Manage dimension priority
+
+Dimension groups with very few user-level events may conflict with data privacy regulations.
+
+To resolve this, **DCR merges small groups** with larger groups by eliminating the dimensions with the highest specificity.
+
+By default, dimensions are removed in reverse order of their position in the **Report dimensions** list. However, you can adjust the default order and apply a different regrouping priority to preserve the dimensions most important to you.
+
+**To change the dimension priority:**
+
+1. Under the **Manage dimension priority** step, click **Manage dimension priority.**
+2. Drag the dimension to rearrange the order.
+   - The dimension labeled as the **Highest priority** (at the top of the list) means it will be the last to be eliminated if regrouping is required.
+3. [Optional] To apply regrouping to custom source dimensions:
+1. Click **Use advanced options to refine regrouping**
+2. Select custom source dimensions to which you'd like to apply regrouping.
+3. The selected dimensions are added to the **Manage dimension priority** list.
+      - By default, these dimensions are added to the bottom of the list as the **Lowest priority** for regrouping. However, you can reorder them just like attribution data dimensions, as described above.
+4. Click **Next** to save your changes.
+   - The **Report dimensions** list on the main screen remains in its original order, but the revised order has been saved. (Click again on the **Manage dimension priority** button to review or edit your selection.)
+
+### 6. Set the report schedule and destination
+
+DCP delivers reports to your selected cloud services using [AppsFlyer Data Locker](https://support.appsflyer.com/hc/articles/360000877538). Therefore, specifying the report destination involves selecting or creating a Data Locker connection.
+
+**To set the report schedule and destination:**
+
+1. In the **Settings** step, under the **Schedule** section, select the report schedule (daily, weekly, or monthly).
+2. Depending on the selected interval, select the hour, day in a week, or month of the report.
+3. Under the **Destination** section, select from the list of Data Locker connections available in your AppsFlyer account.
+   - If there are no connections defined in your account:
+     - A new tab will open in your browser (showing the AppsFlyer Data Locker page)
+     - A **New connection** dialog will open. Follow [these instructions](https://support.appsflyer.com/hc/articles/13886278812817#complete-the-connection-outbound) to create the connection.
+   - If you have existing connections but want to use a new one, click **+ New connection in Data Locker**:
+     - A new tab will open in your browser (showing the AppsFlyer Data Locker page)
+     - A **New connection** dialog will open. Follow [these instructions](https://support.appsflyer.com/hc/articles/13886278812817#complete-the-connection-outbound) to create the connection.
+     - After creating the connection, return to the DCP tab in your browser and select the newly created connection from the list of Data Locker connections.
+4. To receive report status notifications via API, turn on **Report status notifications,** and in the API endpoint box, enter your API URL.
+5. Click **Save** to save the report.
+6. The new report is now displayed in the **Reports** tab.
+
+## Report scheme
+
+The report is comprised of the following dimensions and metrics categorized as calculated fields and attribution fields:
+
+### Calculated fields
+
+| **Field** | **Description** |
+| --- | --- |
+| `clicks` | Total number of clicks on the ad. |
+| `ctr` | Click-through rate (clicks divided by impressions). |
+| `event_date` | Date the event occurred. |
+| `impressions` | Number of times the ad was displayed. |
+| `total_revenue` | Total revenue generated across all events. |
+
+### Attribution fields
+
+| **Field** | **Description** |
+| --- | --- |
+| `ad_id` | Unique identifier for the ad. |
+| `ad_name` | Name of the ad. |
+| `ad_type` | Type of ad (e.g., banner, video). |
+| `adset_id` | Unique identifier for the ad set. |
+| `adset_name` | Name of the ad set. |
+| `advertising_id` | User-resettable device ID (e.g., GAID). |
+| `android_id` | Permanent Android device ID. |
+| `app_id` | Unique identifier for the app. |
+| `app_name` | Name of the app. |
+| `app_version` | Version of the app. |
+| `appsflyer_id` | Unique ID assigned by AppsFlyer. |
+| `campaign_id` | Unique identifier for the campaign. |
+| `campaign_name` | Name of the campaign. |
+| `channel` | Media source channel (e.g., YouTube). |
+| `city` | User’s city based on IP location. |
+| `country_code` | ISO 3166-1 alpha-2 country code (e.g., US, GB). |
+| `cuid` | Unique customer/user identifier. |
+| `device_category` | Device type (e.g., phone, tablet). |
+| `event_name` | Name of the event (e.g., install, purchase). |
+| `event_revenue` | Revenue generated from the event. |
+| `idfa` | User-resettable iOS advertising ID. |
+| `idfv` | Vendor ID assigned by iOS. |
+| `platform` | The platform (iOS, Android, etc.). |
+| `region` | User’s region based on IP location. |
+| `sku_revenue` | Revenue associated with a specific SKU. |
+| `state` | User’s state based on IP location. |
+
+### Scheme fields
+
+| **Field** | **Description** | **Onsite Availability** | **Offsite availability** |
+| --- | --- | --- | --- |
+| conversions | Number or conversions | TRUE | FALSE |
+| Count_AFID | Total number of unique users | TRUE | TRUE |
