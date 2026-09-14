@@ -1,0 +1,161 @@
+---
+title: "Glispa campaign configuration"
+excerpt: "Configure Glispa integration in AppsFlyer to enable mobile attribution, cost recording, view-through attribution, and postback settings."
+---
+Glispa, an AppsFlyer integrated ad network partner, creates solutions that make it simple for agencies and brands to connect with target audiences and for publishers to monetize their apps. In addition to click-based mobile attribution, Glispa offers cost and view-through attribution, which you can record with AppsFlyer.
+
+## Setting up Glispa
+
+> 📘 Prerequisite
+>
+> An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+
+**To set up a new integration:**
+
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
+
+( **To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+2. Select the relevant app.
+3. Search for the partner and select **Integrate**.
+4. In the **Integration** tab, turn on the **Activate partner** toggle.
+
+> 📘 Note
+>
+> The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+
+5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+
+## Integration tab
+
+The Integration Tab is divided into different sections as described below.
+
+### Activate partner
+
+On the **first visit** here, you will need to toggle ON the _**Activate Partner**_ button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.
+
+For more details about partner activation please click [here](https://support.appsflyer.com/hc/articles/360000844778).
+
+### General settings
+
+**Enable View-Through attribution**
+
+<Image src="https://files.readme.io/513c24cf8bcf72d8efc3324411a1bea1fd45e8c7cb721c7f1144463fa030492c-50706625495953.png" alt="Enable View-Through attribution" />
+
+Toggle this to ON if you want to attribute view-through installs from Glispa. The view-through lookback slider is available on the attribution link tab (described below).
+
+### Default postbacks
+
+Send automatic postbacks to Glispa following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+
+Select **Only events attributed to this partner** for events coming only from users attributed to Glispa.
+
+Select **Events attributed to any partner or organic** to have your entire user base available to be reported to Glispa.
+
+### In-app events settings
+
+In this section you can map which of your AppsFlyer events to send to Glispa via postbacks.
+
+1. Toggle In-App Event Postbacks to ON.
+2. Select the Sending Option for all SDK-defined events.
+
+**- Only events attributed to this partner** for events coming **only** from users attributed to this partner
+
+**- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
+3. Click **Add Event** to add an SDK Event to the list
+4. Complete the following parameters:
+
+| Parameter Name | Description |
+| --- | --- |
+| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated with your app, or from server to server events.<br>**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
+| **Send Revenue** | **When unchecked** - send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.<br>**When checked** - send all the parameters including the revenue value (if it exists in the event). |
+
+## Attribution link tab
+
+In this tab, you can create the attribution links you want to send to Glispa for attributing Glispa's campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
+
+This tab is divided into different sections:
+
+### Attribution link parameters
+
+In this section, select which parameters you want to add to the attribution link.
+
+Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
+
+- **Campaign** - add it to compare different campaigns running with Glispa.
+
+**Attribution link parameter:** c
+- **Adset** - set ad set names to compare different ad sets within specific Glispa campaigns.
+
+**Attribution link parameter:** af\_adset
+- **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific Glispa campaigns.
+
+**Attribution link parameter:** af\_ad
+- **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the subsite ID parameter, to avoid [exceeding the site ID](https://support.appsflyer.com/hc/articles/115005099063-What-are-the-Exceeded-Media-Sources-#exceeded_siteid_limit) limitations.
+
+**Attribution link parameters:** af\_siteid and af\_sub\_siteid
+- **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.
+
+**Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
+
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about [**AppsFlyer's Attribution Link Structure and Parameters**](https://support.appsflyer.com/hc/articles/207447163).
+
+### Click-through attribution
+
+This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Glispa.
+
+**Attribution link parameter:** af\_click\_lookback
+
+More details about the [click lookback window here](https://support.appsflyer.com/hc/articles/208338403-What-is-AppsFlyer-s-Configurable-Attribution-Lookback-Window-).
+
+### Click attribution link
+
+This is the attribution link that contains all the setup information you have set for it. Send it to Glispa to be activated when leads click on a corresponding ad.
+
+### View-through attribution lookback window
+
+This slider allows you to set the **maximum time from impression to install**. Only installs (first launches) that take place within this lookback window, following an ad impression, are attributed to Glispa, providing there was no other relevant ad click.
+
+You can customize this value to 1-23 hours or 1-7 days.
+
+**Attribution link parameter:** af\_viewthrough\_lookback
+
+More details about the [view-through attribution here](https://support.appsflyer.com/hc/articles/208338403-What-is-AppsFlyer-s-Configurable-Attribution-Lookback-Window-).
+
+### Impressions attribution link
+
+The impression attribution link contains similar attribution data to the click recording link (besides the different lookback window). Send it to Glispa to be activated when a corresponding ad is watched, usually for 1 second or more.
+
+## Cost tab
+
+Glispa Media CPI automatically sends encrypted CPI cost data on the attribution link for all installs.
+
+## Ad revenue tab
+
+Ad Revenue is not supported in the integration with this partner.
+
+## Permissions tab
+
+Use these toggles to give Glispa permissions to handle its own configuration for your app:
+
+### Ad network permissions
+
+- _**Allow to configure integration**_ - permit the partner to set up the integration tab (except in-app event postbacks)
+- _**Allow to configure in-app event postbacks**_ - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
+- _**Allow access to your retention report**_ - only to the partner's own retention data
+- _**Allow access to your aggregate loyal user data**_ - only to the partner's own loyal user data
+- _**Allow access to your aggregate in-app events data**_ - only to the partner's own in-app events data
+- _**Allow access to your aggregate revenue data**_ - only to the revenue data attributed to the partner
+- _**Allow access to your Protect360 dashboard**_ - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+
+Learn more about granting [ad network permissions](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+
+### Agency permissions
+
+Use these toggles to give the agency permissions to handle its own configuration for your app:
+
+- _**Main toggle**_ - Set to On to reveal the agency permissions options
+- _**Allow access to your retention report**_ - only to the agency's own retention data
+- _**Allow access to aggregate organic data**_
+- _**Allow to configure in-app event postbacks**_ - permit the agency to setup in-app event postbacks mapping to itself on the integration tab
+
+Learn more about granting [agency permissions](https://support.appsflyer.com/hc/articles/4410395957521#agency-permissions).

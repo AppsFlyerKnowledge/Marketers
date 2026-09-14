@@ -1,0 +1,143 @@
+---
+title: "MoPub Acquire Campaign Configuration"
+excerpt: "Learn how to configure MoPub Acquire (formerly Crossinstall) in AppsFlyer to measure mobile attribution, cost, and view-through data."
+---
+MoPub Acquire (formerly Crossinstall, an X Ads company), is an AppsFlyer integrated partner. MoPub Acquire is a mobile-only demand-side platform specializing in playable ads at scale. In addition to click-based mobile attribution, MoPub Acquire also offers cost and view-through attribution, which you can record with AppsFlyer.
+
+![MoPub Acquire, a Twitter Company](https://files.readme.io/2bcd39cb20f57d2bab077873ceff6ddf8871b1ccddebf9551f8a5ad73d465fd0-crossinstall.png)
+
+## Setting up MoPub Acquire
+
+> 📘 Prerequisite
+>
+> An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+
+**To set up a new integration:**
+
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
+
+( **To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+2. Select the relevant app.
+3. Search for the partner and select **Integrate**.
+4. In the **Integration** tab, turn on the **Activate partner** toggle.
+
+> 📘 Note
+>
+> The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+
+5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+
+## Integration tab
+
+The Integration tab is divided into different sections as described below.
+
+### Activate partner
+
+**To enable the integration of this partner**, turn on **Activate partner**.
+
+The toggle must be on for as long as you work with the partner. Learn more about [partner activation](https://support.appsflyer.com/hc/articles/360000844778#activating-a-partner).
+
+**Enable View-Through attribution**
+
+Turn this on if you want to attribute view-through installs from MoPub Acquire. The view-through lookback slider is available on the attribution link tab (described below).
+
+### Default postbacks
+
+Send automatic postbacks to MoPub Acquire following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+
+Select **Only events attributed to this partner** for events coming only from users attributed to MoPub Acquire.
+
+### In-app events settings
+
+In this section, you can map your AppsFlyer events with MoPub Acquire via postbacks.
+
+**To configure in-app events postback:**
+
+1. Turn **In-app event postback** on.
+2. Set the **In-app event postback window** (read more about [in-app event postback window configuration](https://support.appsflyer.com/hc/articles/208439256-In-App-Events-Postback-Configuration#inapp-event-postback-window)).
+3. Click **Add event** to add an SDK event to the list.
+4. Complete the parameters required:
+
+| Parameter name | Description |
+| --- | --- |
+| SDK event name | The name of the event, as received by AppsFlyer either from the SDK integrated with your app or from server-to-server events.<br>**Tip**: Don't see the event you are looking for? Type in its SDK Event Name, click **Create custom**, and map normally. Read more about [custom event mapping](https://support.appsflyer.com/hc/articles/208439256#custom-events). |
+| Sending option | Select the sending option for the event:<br>- **Only events attributed to this partner** for events coming **only** from users attributed to this partner.<br>- **Events attributed to any partner or organic** to have your entire user base available to be reported to the partner. |
+| Send revenue | - **No values & no revenue:** sends only the event itself without the event value.<br>- **Values & no revenue:** sends all the parameters excluding the revenue value.<br>- **Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event). |
+
+## Attribution link tab
+
+In this tab, you can create the attribution links you want to send to MoPub Acquire for attributing MoPub Acquire's campaigns, ad sets, or even single ads.
+
+This tab is divided into different sections:
+
+### Attribution link parameters
+
+In this section, select which parameters you want to add to the attribution link.
+
+Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
+
+- **Campaign** - add it to compare different campaigns running with MoPub Acquire.
+
+  **Attribution link parameter:** c
+- **Adset** - set ad set names to compare different ad sets within specific MoPub Acquire campaigns.
+
+  **Attribution link parameter:** af\_adset
+- **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns MoPub Acquire.
+
+  **Attribution link parameter:** af\_ad
+- **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the sub site ID parameter, to avoid [exceeding the site ID](https://support.appsflyer.com/hc/articles/115005099063-What-are-the-Exceeded-Media-Sources-#exceeded_siteid_limit) limitations.
+
+  **Attribution link parameters:** af\_siteid and af\_sub\_siteid
+- **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering
+
+  **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
+
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about [**AppsFlyer's Attribution Link Structure and Parameters**](https://support.appsflyer.com/hc/articles/207447163).
+
+### Click-through attribution
+
+This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to MoPub Acquire.
+
+**Attribution link parameter:** af\_click\_lookback
+
+More details about the [click lookback window here](https://support.appsflyer.com/hc/articles/208338403-What-is-AppsFlyer-s-Configurable-Attribution-Lookback-Window-).
+
+### Click attribution link
+
+This is the attribution link that contains all the setup information you have set for it. Send it to MoPub Acquire to be activated when leads click on a corresponding ad.
+
+### View-through attribution lookback window
+
+This slider allows you to set the **maximum time from impression to install**. Only installs (first launches) that take place within this lookback window, following an ad impression, are attributed to MoPub Acquire, providing there was no other relevant ad click.
+
+You can customize this value to 1-23 hours or 1-7 days.
+
+**Attribution link parameter:** af\_viewthrough\_lookback
+
+More details about the [view-through attribution here](https://support.appsflyer.com/hc/articles/208338403-What-is-AppsFlyer-s-Configurable-Attribution-Lookback-Window-).
+
+### Impressions attribution link
+
+The impression attribution link contains similar attribution data to the click recording link (besides the different lookback window). Send it to MoPub Acquire to be activated when a corresponding ad is watched.
+
+## Cost tab
+
+AppsFlyer gets cost details by API. See the [ad network cost integration table](https://support.appsflyer.com/hc/articles/207040526-Ad-cost-measurement-guide#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. 
+
+> 📘 Note
+>
+> Cost data requires an ROI360 subscription.
+
+**To enable the cost API**:
+
+- Follow [these integration instructions](https://support.appsflyer.com/hc/articles/360008850257#enable-cost-api).
+
+[View your cost API status](https://support.appsflyer.com/hc/articles/360008850257#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+
+## Ad revenue tab
+
+Ad Revenue is not supported in the integration with this partner.
+
+## Permissions tab
+
+In this tab, you can select the permissions to grant MoPub Acquire. Note that even if attribution is disabled for MoPub Acquire, the permissions tab is active and you can grant control to MoPub Acquire. [Learn what permission can you give to MoPub Acquire](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
