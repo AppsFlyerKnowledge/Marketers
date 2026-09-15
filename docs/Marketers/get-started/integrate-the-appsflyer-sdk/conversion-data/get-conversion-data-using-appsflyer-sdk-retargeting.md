@@ -308,7 +308,7 @@ Example:
 
 > ❗️ Important!
 >
-> We recommend using the short version of OneLink. Click [here](https://support.appsflyer.com/hc/articles/360017132597) to learn more.
+> We recommend using the short version of OneLink. Click [here](/docs/understand-onelink-short-vs-long-urls) to learn more.
 
 Another reason to use the short version of OneLink is the conversion data structure that the long version returns. When using the long version, the conversion data is a map with a single field called `link` that holds the entire long OneLink.
 
@@ -320,14 +320,14 @@ Another reason to use the short version of OneLink is the conversion data struct
 
 ## Alternative conversion data sources
 
-- Push API offers a detailed conversion payload that indicates re-attribution or re-engagement. Push API payloads include a field called `re_targeting_conversion_type`. This field indicates the type of conversion, either re-attribution or re-engagement. To learn more, see our [Push API guide](https://support.appsflyer.com/hc/articles/207034356-Push-APIs-Installation-and-Conversion-Notification-APIs).
+- Push API offers a detailed conversion payload that indicates re-attribution or re-engagement. Push API payloads include a field called `re_targeting_conversion_type`. This field indicates the type of conversion, either re-attribution or re-engagement. To learn more, see our [Push API guide](/docs/push-api-streaming-raw-data).
 - Raw Data Reports also contain indicators for the type of conversion. In the raw data report for retargeting conversions, there is a column called _**Event Name**_. The value in this column is either _**re-engagement**_ or _**re-attribution**_ according to the type of conversion.
 
 ## Examples of mixed user acquisition and re-attribution
 
 **Examples**
 
-1. A user installs your app and then uninstalls it. The act of installation puts the user in a [re-attribution window](https://support.appsflyer.com/hc/articles/115002587066-Re-Attribution-Window). You set a user acquisition (not retargeting) campaign with Meta ads. You also set the AppsFlyer integration with Meta ads to allow retargeting.
+1. A user installs your app and then uninstalls it. The act of installation puts the user in a [re-attribution window](/docs/set-up-re-attribution-window). You set a user acquisition (not retargeting) campaign with Meta ads. You also set the AppsFlyer integration with Meta ads to allow retargeting.
 
 While still in the re-attribution window, the user sees the ad, clicks on it, and reinstalls the app. As far as AppsFlyer sees it, the user is a re-attributed user.
 

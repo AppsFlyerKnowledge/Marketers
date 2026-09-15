@@ -4,7 +4,7 @@ excerpt: "Learn why your app status shows as pending in the AppsFlyer dashboard 
 ---
 **At a glance:** Follow the status of apps pending publishing to app stores from the AppsFlyer dashboard.
 
-When you [add your new app](https://support.appsflyer.com/hc/articles/207377436) to the AppsFlyer dashboard, you first choose whether the app is pending or already in the market.
+When you [add your new app](/docs/adding-an-app-to-appsflyer) to the AppsFlyer dashboard, you first choose whether the app is pending or already in the market.
 
 Pending apps in AppsFlyer look the same as live apps. They have accessible dashboards and all attribution measurement works for them. The only difference is the logo of the app which displays with the AppsFlyer logo instead of the actual app logo.
 
@@ -39,26 +39,26 @@ Some apps are only available in Google Play or iTunes for certain countries. **I
 <Tabs>
 <Tab title="iOS">
 
-When you [add an iOS app](https://support.appsflyer.com/hc/articles/207377436) to your AppsFlyer dashboard, you choose the Apple Store country in which the app is published. If the wrong country is chosen, AppsFlyer is unable to update the status of the app even if it is published.
+When you [add an iOS app](/docs/adding-an-app-to-appsflyer) to your AppsFlyer dashboard, you choose the Apple Store country in which the app is published. If the wrong country is chosen, AppsFlyer is unable to update the status of the app even if it is published.
 
 To change the Apple Store country:
 
 1. In AppsFlyer, from the side menu, select **Settings** > **App Settings.**
 2. Under **App Store Country** choose the correct country
 3. Scroll down and click **Save Settings**
-4. If the app still appears as pending, [click **Refresh Status**](https://support.appsflyer.com/hc/articles/360001533885#refreshing-the-app-status).
+4. If the app still appears as pending, [click **Refresh Status**](/docs/why-is-my-app-still-pending#refreshing-the-app-status).
 
 </Tab>
 <Tab title="Android">
 
-When you [add an Android app](https://support.appsflyer.com/hc/articles/207377436) to your AppsFlyer dashboard, there is no option to choose a Google Play country and it is set to US by default. If your app is not published in the US Google Play store, it is important that the correct store is set for the app in order for AppsFlyer to be able to check and update the status of the app.
+When you [add an Android app](/docs/adding-an-app-to-appsflyer) to your AppsFlyer dashboard, there is no option to choose a Google Play country and it is set to US by default. If your app is not published in the US Google Play store, it is important that the correct store is set for the app in order for AppsFlyer to be able to check and update the status of the app.
 
 To change the Google Play country:
 
 1. In AppsFlyer, from the side menu, select **Settings** > **App Settings.**
 2. Under **App Store Country** choose the correct country
 3. Scroll down and click **Save Settings**
-4. If the app still appears as pending, [click **Refresh Status**](https://support.appsflyer.com/hc/articles/360001533885#refreshing-the-app-status).
+4. If the app still appears as pending, [click **Refresh Status**](/docs/why-is-my-app-still-pending#refreshing-the-app-status).
 
 </Tab>
 </Tabs>

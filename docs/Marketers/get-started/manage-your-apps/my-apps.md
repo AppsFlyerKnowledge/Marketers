@@ -58,7 +58,7 @@ Explore additional options available for the selected app:
 
 - Hover over the right of a specific app row, click the Menu ![menu_icon.png](https://files.readme.io/2bf1c4b0bd3aed516f8e35722d4b1bac6e4fd45d9daaddd1ee7382918f9c0704-27448775026833.png) icon, and select from the following actions:
 
-  - **App settings:** Directs you to the [settings page](https://support.appsflyer.com/hc/articles/211719806-App-settings) of the selected app.
+  - **App settings:** Directs you to the [settings page](/docs/app-settings) of the selected app.
   - **Go to store:**  Directs you to the app page in the app store.
   - **Transfer apps:** Enables you to select apps and [transfer them between AppsFlyer accounts](/docs/transferring-apps-between-accounts).
   - **Remove app:** Enables you to [remove an app](/docs/deleting-things-in-appsflyer#delete-an-app) from all views and dashboards with AppsFlyer stopping the recording of app-related data (after confirmation).

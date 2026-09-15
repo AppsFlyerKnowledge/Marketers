@@ -8,9 +8,9 @@ Starting iOS 14.5, Apple requires that you implement and comply with the terms o
 
 ## Attribution measurement in an ATT environment
 
-AppsFlyer provides you with multiple attribution methods giving you a complete range of attribution solutions. The [ATT](https://support.appsflyer.com/hc/articles/360011890298#att-principles) consent requirement impacts attribution in the context of paid app-to-app campaigns. As such, advertisers need to use a mix of attribution and reporting solutions.
+AppsFlyer provides you with multiple attribution methods giving you a complete range of attribution solutions. The [ATT](/docs/about-att-and-skan#att-principles) consent requirement impacts attribution in the context of paid app-to-app campaigns. As such, advertisers need to use a mix of attribution and reporting solutions.
 
-In the case of paid app-to-app campaigns, [SKAN](https://support.appsflyer.com/hc/articles/360011890298#skan-solution-principles) provides deterministic attribution results. Other campaign types like owned media, web-to-app and Apple Ads use AppsFlyer traditional attribution tools. The traditional tools provide long-term LTV measurement, whereas SKAN measures user performance during a short post-install post.
+In the case of paid app-to-app campaigns, [SKAN](/docs/about-att-and-skan#skan-solution-principles) provides deterministic attribution results. Other campaign types like owned media, web-to-app and Apple Ads use AppsFlyer traditional attribution tools. The traditional tools provide long-term LTV measurement, whereas SKAN measures user performance during a short post-install post.
 
 In summary, to obtain a complete picture, use both SKAN and AppsFlyer traditional solutions because they complement one another.
 
@@ -20,7 +20,7 @@ This article provides advertisers with an introduction to SKAN and ATT. It is in
 
 AppsFlyer provides aggregated iOS attribution results using SKAN postbacks from iOS. These postbacks are sent by iOS to ad networks who then forward them to AppsFlyer. The postbacks contain anonymized attribution records enriched with a conversion value (CV) set by the advertiser. The CV is a measure of user quality during an initial post-install window.
 
-The AppsFlyer [SKAN Solution](https://support.appsflyer.com/hc/articles/360011420698-SKAN-Solution-guide) provides advertisers with:
+The AppsFlyer [SKAN Solution](/docs/skadnetwork-skan-solution-guide) provides advertisers with:
 
 - SKAN data in dashboards and reports derived by aggregating postbacks from all ad networks enriched with other data points like cost.
 - The ability to control, via the AppsFlyer Conversion Studio, what the CV measures without the need to make changes to the app code. The CV can be used to measure revenue, engagements, or conversion events.
@@ -41,7 +41,7 @@ The AppsFlyer [SKAN Solution](https://support.appsflyer.com/hc/articles/36001142
    - For SKAN 4 measurement window 1: 24-48 hours
    - For SKAN 4 measurement windows 2-3: 24-144 hours
    - For SKAN 3: 24-48 hours after the most recent increase in the CV value.
-5. Postback copies sent directly from the iOS device to AppsFlyer are forwarded to the advertiser's defined endpoint. See [send SKAN postback copies to AppsFlyer.](https://support.appsflyer.com/hc/articles/4402320969617)
+5. Postback copies sent directly from the iOS device to AppsFlyer are forwarded to the advertiser's defined endpoint. See [send SKAN postback copies to AppsFlyer.](/docs/send-skan-and-adattributionkit-postback-copies-directly-to-appsflyer-ios-15)
 6. Ad network forwards enriched postback to AppsFlyer or SRN communicates postback data by API.
 7. AppsFlyer validates and decodes the CV. Decoded data is recorded and attributed before being made available in AppsFlyer via dashboards, reports, and APIs.
 
@@ -57,17 +57,17 @@ ATT is set to one of the values listed in the table that follows. Initially, iOS
 
 Consider that use of the consent prompt to convert a user from _not determined_ to _authorized_ is optional. But, if you don't display the prompt, you can't get _authorization._
 
-| ATT value | Consent<br>(IDFA available) | Remarks |
+| ATT value | Consent<br />(IDFA available) | Remarks |
 | --- | --- | --- |
-| Restricted | No | - Determined by Apple based on user age and other criteria. Can't be changed by the device user. <br>- The prompt can't be displayed to these users. |
+| Restricted | No | - Determined by Apple based on user age and other criteria. Can't be changed by the device user. <br />- The prompt can't be displayed to these users. |
 | Not determined (until iOS 14.4) | Yes | Default value |
-| Not determined<br>(starting iOS 14.5) | No | Default value |
-| Denied | No | Occurs if any of the following are true:<br>- Set after displaying the prompt<br>- The user turned off _Allow Apps to Request to Track_ (master switch at the device level)<br>- Before installing iOS 14 on the device, LAT was on |
+| Not determined<br />(starting iOS 14.5) | No | Default value |
+| Denied | No | Occurs if any of the following are true:<br />- Set after displaying the prompt<br />- The user turned off _Allow Apps to Request to Track_ (master switch at the device level)<br />- Before installing iOS 14 on the device, LAT was on |
 | Authorized | Yes | Set after displaying the prompt |
 
 **ATT implications**
 
-With ATT in place, IDFA is available only when users grant consent. As a result, advertisers benefit from using both aggregated attribution methods and user-level reporting where consent is given. [AppsFlyer attribution models](https://support.appsflyer.com/hc/articles/207447053).
+With ATT in place, IDFA is available only when users grant consent. As a result, advertisers benefit from using both aggregated attribution methods and user-level reporting where consent is given. [AppsFlyer attribution models](/docs/appsflyer-attribution-model).
 
 Attribution-related data for an app comes from a number of sources. The identifier available and used by each differ. Most data displays using the traditional attribution tools. However, for installs attributed using SKAN, reporting is via the SKAN dashboard.
 
@@ -81,16 +81,16 @@ In iOS 14 an install can be attributed to both the traditional and SKAN dashboar
 
 | Area | Article | Special interest: FAQ, discrepancies, comparisons |
 | --- | --- | --- |
-| SKAN | [SKAN raw data fields](https://support.appsflyer.com/hc/articles/360014261518) | Additional raw data SKAN fields supporting did\_win and SKAN 3.0 |
-| SKAN | [SKAN solution](https://support.appsflyer.com/hc/articles/360011420698) | - [Timing from app install to dashboard update](https://support.appsflyer.com/hc/articles/360011420698#timing-from-app-install-until-dashboard-and-reports-update)<br>- [Organic metrics in the context of SKAN](https://support.appsflyer.com/hc/articles/360011420698#organic-metrics-in-the-context-of-skadnetwork)<br>- [AppsFlyer attribution versus SKAN attribution](https://support.appsflyer.com/hc/articles/360011307357#appsflyer-attribution-vs-skan-attribution)<br>- [FAQ SKAN discrepancies](https://support.appsflyer.com/hc/articles/360011307357#faq%E2%80%94skan-discrepancies) |
-| SKAN | [SKAN partner interoperability](https://support.appsflyer.com/hc/sections/6552115163153-SKAN-interoperation)(article section) | [SKAN integrated partners list](/docs/skan-integrated-partners-list) |
-| SKAN | [Meta ads and AppsFlyer SKAN integration](https://support.appsflyer.com/hc/articles/360017095198) | - [Troubleshooting and discrepancies](https://support.appsflyer.com/hc/articles/360017095198#troubleshooting-discrepancies-and-faq)<br>- [Measurement and timing differences](https://support.appsflyer.com/hc/articles/360017095198#measurement-and-timing-differences-between-appsflyer-and-facebook) |
-| SKAN | [Snapchat and AppsFlyer SKAN interoperation](https://support.appsflyer.com/hc/articles/360017604077) | [Discrepancies guide](https://support.appsflyer.com/hc/articles/360017604077#discrepancies-guide) |
-| Privacy | [Aggregated Advanced Privacy (AAP)](https://support.appsflyer.com/hc/articles/360018515798) | - [AAP impacted features](https://support.appsflyer.com/hc/articles/360018515798#aapimpacted-features) |
-| Privacy | [Restricted media sources](https://support.appsflyer.com/hc/articles/360006868017) | [Restricted raw data fields](https://support.appsflyer.com/hc/articles/360006868017-Restricted-media-source-#unavailable-attribution-fields) |
+| SKAN | [SKAN raw data fields](/docs/skan-raw-data-reports) | Additional raw data SKAN fields supporting did\_win and SKAN 3.0 |
+| SKAN | [SKAN solution](/docs/skadnetwork-skan-solution-guide) | - [Timing from app install to dashboard update](/docs/skadnetwork-skan-solution-guide#timing-from-app-install-until-dashboard-and-reports-update)<br />- [Organic metrics in the context of SKAN](/docs/skadnetwork-skan-solution-guide#organic-metrics-in-the-context-of-skadnetwork)<br />- [AppsFlyer attribution versus SKAN attribution](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#appsflyer-attribution-vs-skan-attribution)<br />- [FAQ SKAN discrepancies](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#faq%E2%80%94skan-discrepancies) |
+| SKAN | [SKAN partner interoperability](/docs/skan-interoperation)(article section) | [SKAN integrated partners list](/docs/skan-integrated-partners-list) |
+| SKAN | [Meta ads and AppsFlyer SKAN integration](/docs/skadnetwork-skan-interoperation-with-meta-ads) | - [Troubleshooting and discrepancies](/docs/skadnetwork-skan-interoperation-with-meta-ads#troubleshooting-discrepancies-and-faq)<br />- [Measurement and timing differences](/docs/skadnetwork-skan-interoperation-with-meta-ads#measurement-and-timing-differences-between-appsflyer-and-facebook) |
+| SKAN | [Snapchat and AppsFlyer SKAN interoperation](/docs/skan-interoperation-with-snapchat) | [Discrepancies guide](/docs/skan-interoperation-with-snapchat#discrepancies-guide) |
+| Privacy | [Aggregated Advanced Privacy (AAP)](/docs/apply-aggregated-advanced-privacy-framework) | - [AAP impacted features](/docs/apply-aggregated-advanced-privacy-framework#aapimpacted-features) |
+| Privacy | [Restricted media sources](/docs/about-raw-data-identifier-restrictions) | [Restricted raw data fields](/docs/about-raw-data-identifier-restrictions#unavailable-attribution-fields) |
 | iOS 14 | [Nutrition labels—prepare for the App Store review](/docs/preparing-for-the-app-store-review-nutrition-labels) |  |
-| iOS 14 | [Configuring ATT in the app](https://support.appsflyer.com/hc/articles/207032066#configure-app-tracking-transparency-att-support) (SDK guidance developers) |  |
-| iOS 14 | [About self-reporting networks (SRNs) like Google, Meta ads, and so on](https://support.appsflyer.com/hc/articles/360001546905) | [Where are SRN installs reported?](https://support.appsflyer.com/hc/articles/360001546905-About-self-reporting-networks-SRNs-#ios-145-srn-attribution) |
+| iOS 14 | [Configuring ATT in the app](/docs/basic-sdk-integration-guide#configure-app-tracking-transparency-att-support) (SDK guidance developers) |  |
+| iOS 14 | [About self-reporting networks (SRNs) like Google, Meta ads, and so on](/docs/self-reporting-networks-srns) | [Where are SRN installs reported?](/docs/self-reporting-networks-srns#ios-145-srn-attribution) |
 | Billing | [Billing for iOS apps](https://content.appsflyer.com/ios-14-hub/billing/) |  |
 
 ### IDFA availability impact on attribution and measurement
@@ -182,7 +182,7 @@ Example: In the June 12 report, it displays 100 installs from Google that occurr
 ### See also
 
 <Cards>
-  <Card title="AppsFlyer getting started step-by-step" href="https://support.appsflyer.com/hc/articles/207033486-Getting-started-step-by-step#step-4-attribution-setup">
+  <Card title="AppsFlyer getting started step-by-step" href="/docs/getting-started-onboarding-for-marketers#step-4-attribution-setup">
     Learn how to set up attribution step-by-step in AppsFlyer.
   </Card>
 </Cards>

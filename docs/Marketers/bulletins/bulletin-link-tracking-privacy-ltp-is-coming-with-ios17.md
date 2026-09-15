@@ -10,10 +10,10 @@ We performed internal testing to see how LTP affects OneLink. Our findings sugge
 
 | Parameter Status | Parameters |
 | --- | --- |
-| **Removed by LTP** | - `gclid` - Google ads / Analytics ID<br>- `fbclid` - Facebook advertising ID |
+| **Removed by LTP** | - `gclid` - Google ads / Analytics ID<br />- `fbclid` - Facebook advertising ID |
 | **Untouched by LTP** | - UTM parameters |
-| **AppsFlyer attribution parameters (Untouched)** | - `pid`<br>- `c`<br>- `Is_regtargeting`<br>- `af_channel`<br>- `af_adset`<br>- `af_ad`<br>- `af_sub1-10`<br>- `af_inactivity_window`<br>- `af_click_lookback`<br>- `af_cost_value`<br>- `af_cost_currency` |
-| **AppsFlyer redirection parameters (Untouched)** | - `af_dp`<br>- `deep_link_value`<br>- `af_deep_link_sub1-10`<br>- `af_web_dp`<br>- `af_ios_url`<br>- `af_android_url`<br>- `af_xp` |
+| **AppsFlyer attribution parameters (Untouched)** | - `pid`<br />- `c`<br />- `Is_regtargeting`<br />- `af_channel`<br />- `af_adset`<br />- `af_ad`<br />- `af_sub1-10`<br />- `af_inactivity_window`<br />- `af_click_lookback`<br />- `af_cost_value`<br />- `af_cost_currency` |
+| **AppsFlyer redirection parameters (Untouched)** | - `af_dp`<br />- `deep_link_value`<br />- `af_deep_link_sub1-10`<br />- `af_web_dp`<br />- `af_ios_url`<br />- `af_android_url`<br />- `af_xp` |
 
 ### Effective Date
 

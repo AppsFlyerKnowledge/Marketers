@@ -4,7 +4,7 @@ excerpt: "Learn how to set up an incoming connection between Braze and AppsFlyer
 ---
 Send Braze message engagement events to AppsFlyer Audiences and use them to add precision to your audience definitions.
 
-By setting up an incoming connection between your Braze account and AppsFlyer Audiences, you bring your Braze message engagement event data into Audiences. You can then use this data in [rulesets](https://support.appsflyer.com/hc/articles/%20https://support.appsflyer.com/hc/en-us/articles/115002689186#all-about-rulesets) when defining audiences.
+By setting up an incoming connection between your Braze account and AppsFlyer Audiences, you bring your Braze message engagement event data into Audiences. You can then use this data in rulesets when defining audiences.
 
 **Prerequisites**
 
@@ -57,10 +57,10 @@ partnerInfo:brazeInfo];
 
 There is no need to configure a dedicated parameter for the Braze External ID if:
 
-- You have configured the SDK to send AppsFlyer a [CUID](https://support.appsflyer.com/hc/articles/207032016) for each user
+- You have configured the SDK to send AppsFlyer a [CUID](/docs/customer-user-id-field-cuid) for each user
 - The CUID has the same value as the Braze External ID
 
-In this case, you can simply select the **CUID option** as the SDK parameter when [creating your incoming Braze connection](https://support.appsflyer.com/hc/articles/4411130243217#create-an-incoming-braze-connection-in-appsflyer).
+In this case, you can simply select the **CUID option** as the SDK parameter when [creating your incoming Braze connection](/docs/audiences-use-braze-events-in-audience-creation#create-an-incoming-braze-connection-in-appsflyer).
 
 ### Create an incoming Braze connection in AppsFlyer
 
@@ -123,7 +123,7 @@ The **Connection credentials** dialog opens.
 
 ## Using Braze data in Audiences
 
-Once the Braze incoming connection is set up, the engagement events you've defined will appear as options in the [ruleset filters](https://support.appsflyer.com/knowledge/articles/4411130243217/%20https://support.appsflyer.com/hc/en-us/articles/115002689186#all-about-rulesets) for defining audiences.
+Once the Braze incoming connection is set up, the engagement events you've defined will appear as options in the [ruleset filters](/docs/audiences-use-braze-events-in-audience-creation/%20/docs/audiences-guide#all-about-rulesets) for defining audiences.
 
 ![audiences_braze_ruleset.png](https://files.readme.io/766a5ec25de3cf82c1411ce25864a5c8ce6c77ac338c20699e61be1c45ae3d98-33375723752337.png)
 

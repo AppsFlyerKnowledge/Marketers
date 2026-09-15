@@ -49,14 +49,14 @@ However, with ESPs that support Universal Links on top of their click recording 
 
 > 📘 Note
 >
-> If you haven’t already done so, make sure you have configured your app to support [deep linking with OneLink](https://support.appsflyer.com/hc/articles/208874366).
+> If you haven’t already done so, make sure you have configured your app to support [deep linking with OneLink](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink).
 
 After configuring your click recording domain to support Universal Links as described previously, you need to set up your app to deep-link and resolve that Universal Link.
 
 1. Associate the click recording domain in Xcode:
 
 ![configure-xcode-deeplinking-domain.png](https://files.readme.io/923d9bca2fbe448d848b6596c1087bf625ec0a0d5958ff5f28c3fc818275461a-49839289277969.png)
-2. Provide the click recording domain to the SDK API `setResolveDeepLinkURLs`. This API needs to be called before SDK initialization. For more information please refer to SDK documentation [here](https://support.appsflyer.com/hc/articles/207032126).
+2. Provide the click recording domain to the SDK API `setResolveDeepLinkURLs`. This API needs to be called before SDK initialization. For more information please refer to SDK documentation [here](/docs/sdk-integration-overview).
 
 ```objectivec
 [[AppsFlyerLib shared] resolveDeepLinkURLs = @[@"example.com",@"click.example.com"];
@@ -66,7 +66,7 @@ After configuring your click recording domain to support Universal Links as desc
 
 ## Step 3: Send emails with OneLink through EmailLabs
 
-1. [Create a OneLink URL](https://support.appsflyer.com/hc/articles/207033836) on the Link Management page (or manually). You must URL-encode parameter values.
+1. Create a OneLink URL on the Link Management page (or manually). You must URL-encode parameter values.
 2. [Best practice] Use the following parameters:
    - _pid_ (media source): Use a media source that signifies this usage such as EmailLabs.
    - _c_ (campaign): Campaign name
@@ -84,7 +84,7 @@ Example:
 
 4. If the email is part of a retargeting campaign, add the parameter is_retargeting=true.
 
-This indicates that the attribution link is from a retargeting campaign. [Learn more about retargeting](https://support.appsflyer.com/hc/articles/207033786).
+This indicates that the attribution link is from a retargeting campaign. [Learn more about retargeting](/docs/retargeting-attribution-guide).
 5. EmailLabs wraps the link with the defined click domain so that a click on the click domain redirects to the OneLink attribution link.
 
 **Example**

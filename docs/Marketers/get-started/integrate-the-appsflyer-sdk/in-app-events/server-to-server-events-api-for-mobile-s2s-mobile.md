@@ -8,7 +8,7 @@ excerpt: "Send events from your servers to AppsFlyer to measure mobile events th
 
 For iOS apps, starting iOS 14, you must send the os (operating system) parameter.
 
-The AppsFlyer platform attributes and records mobile app events sent by the AppsFlyer SDK and by APIs. Use the S2S API to report events that take place outside the app; for example, a user renews their subscription using your web interface. S2S events, once recorded, are available across the platform, including dashboards, raw data, and analytics. For PBA web events see [Web S2S for PBA.](https://support.appsflyer.com/hc/articles/360006997298-)
+The AppsFlyer platform attributes and records mobile app events sent by the AppsFlyer SDK and by APIs. Use the S2S API to report events that take place outside the app; for example, a user renews their subscription using your web interface. S2S events, once recorded, are available across the platform, including dashboards, raw data, and analytics. For PBA web events see [Web S2S for PBA.](/docs/web-server-to-server-events-api-for-pba-web-s2s)
 
 AppsFlyer populates S2S events with:
 
@@ -43,7 +43,7 @@ Backend logic is required to obtain values to populate parameter. The following 
 
 To make it easier for you to know which user performed which event, implement the flow that follows:
 
-- [Set customer user ID](https://support.appsflyer.com/hc/articles/207032016) when the user installs the app.
+- [Set customer user ID](/docs/customer-user-id-field-cuid) when the user installs the app.
 - AppsFlyer raw data reports contain the CUID and AppsFlyer ID. Use one of the data delivery tools to get this or AppsFlyer Push API.
 - Use the raw data reports to match the CUID with the AppsFlyer ID.
 - The AppsFlyer ID is available in the SDK integrated into your app (Android/iOS).
@@ -80,7 +80,7 @@ Once you map AppsFlyer ID with your CUID, you can match the user to events perfo
 </Tab>
 </Tabs>
 
-- From the AppsFlyer platform using one of the following: [Pull API,](/docs/pull-api-raw-data) [Push API,](https://support.appsflyer.com/hc/articles/207034356) Export [raw data installation.](https://support.appsflyer.com/hc/articles/209680773-Export-Data-Reports)
+- From the AppsFlyer platform using one of the following: [Pull API,](/docs/pull-api-raw-data) [Push API,](/docs/push-api-streaming-raw-data) Export [raw data installation.](/docs/raw-data-reporting-overview)
 
 ### Time stamping S2S events
 
@@ -141,8 +141,8 @@ When using gradual scaling, AppsFlyer can support a high volume of transactions 
 <Accordion title="Events aren't displaying in the dashboard">
 
 - Endpoint: Verify that the endpoint used is correct.
-- Verify that the payload contains the mandatory parameters. See [here](https://support.appsflyer.com/hc/articles/207034486#mapping-appsflyer-id-with-customer-user-id-cuid).
-- Ensure that the AppsFlyer ID you are using to fire the event is a real appsflyer\_id and related to an actual app install. See [here](https://support.appsflyer.com/hc/articles/207034486#fetching-the-appsflyer-id).
+- Verify that the payload contains the mandatory parameters. See [here](/docs/server-to-server-events-api-for-mobile-s2s-mobile#mapping-appsflyer-id-with-customer-user-id-cuid).
+- Ensure that the AppsFlyer ID you are using to fire the event is a real appsflyer\_id and related to an actual app install. See [here](/docs/server-to-server-events-api-for-mobile-s2s-mobile#fetching-the-appsflyer-id).
 - S2S events don't support multi-events in one S2S request. Each event must be sent as a separate event.
   - Events can be sent with asynchronous method to ease response time.
 - In the overview dashboard, the date range relates to the app install date (LTV) and not to the event date.

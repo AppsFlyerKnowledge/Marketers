@@ -15,7 +15,7 @@ In China, there are several challenges that app owners face:
 
 Using AppsFlyer, these challenges can be overcome by:
 
-- Implementing attribution based on [OAID](https://support.appsflyer.com/hc/articles/360000732237#o)
+- Implementing attribution based on [OAID](/docs/appsflyer-knowledge-base-glossary#o)
 - Using device IMEI as an alternative to GAID in devices having Android version 28 or earlier
 - Preparing APKs with unique identifiers to detect Android store hijacking
 - Configuring attribution links that are recognized within China
@@ -37,14 +37,14 @@ An alternative to using GAID is IMEI and/or OAID, where this is available, to en
 - Is a user-resettable advertising ID similar to GAID and IDFA.
 - Requires AppsFlyer Android SDK V5.1.0 and later.
 - From AppsFlyer SDK V5.4.0, SDK will attempt to collect OAID automatically by default.
-- Multiple manufacturers have completed OAID attribution interop testing with AppsFlyer. [Including Huawei, Lenovo, OPRO, Vivo, Samsung, and Xiaomi,](https://support.appsflyer.com/hc/articles/360006278797)
+- Multiple manufacturers have completed OAID attribution interop testing with AppsFlyer. [Including Huawei, Lenovo, OPRO, Vivo, Samsung, and Xiaomi,](/docs/android-oaid-implementation-in-the-sdk)
 
 **IMEI**:
 
 - AppsFlyer SDK prevents access to IMEI unless configured otherwise. The general assumption is that Google Play Services is active on the device and that IMEI is not needed. In China, this is not the case.
 - When integrating the AppsFlyer SDK in your app, access to IMEI needs to be enabled.
 - Where necessary, OAID and IMEI should be implemented simultaneously to ensure attribution irrespective of the Android version.
-- This is because access to IMEI is restricted starting with [Android 10 (API level 29)](https://developer.android.com/training/articles/user-data-ids), released in late 2019. Neither your app nor the AppsFlyer SDK can collect these identifiers. Where no identifier is available AppsFlyer resorts to [attribution by Probabilistic modeling.](https://support.appsflyer.com/hc/articles/207447053#probabilistic-modeling)
+- This is because access to IMEI is restricted starting with [Android 10 (API level 29)](https://developer.android.com/training/articles/user-data-ids), released in late 2019. Neither your app nor the AppsFlyer SDK can collect these identifiers. Where no identifier is available AppsFlyer resorts to [attribution by Probabilistic modeling.](/docs/appsflyer-attribution-model#probabilistic-modeling)
 
 > 📘 Before you start
 >
@@ -59,7 +59,7 @@ There are two methods to collect OAID:
 - setCollectOaid
 - setOaidData
 
-[Instructions to enable the API methods](https://support.appsflyer.com/hc/articles/360006278797-Implementing-OAID-in-the-Android-SDK#msa-sdk)
+[Instructions to enable the API methods](/docs/android-oaid-implementation-in-the-sdk#msa-sdk)
 
 ### IMEI Android API level 23-28
 
@@ -68,7 +68,7 @@ There are two methods to collect IMEI:
 - setImeiData
 - setCollectIMEI(true)
 
-Use the following code example to integrate the SDK. This code example makes use of the method `onConversionDataSuccess`. This is the name of the method for getting conversion data starting from SDK V5.0. If you are using an SDK version prior to V5.0, the name of the method is ` onInstallConversionDataLoaded`. We recommend that you upgrade to the SDK [current version.](https://support.appsflyer.com/hc/articles/207032126)
+Use the following code example to integrate the SDK. This code example makes use of the method `onConversionDataSuccess`. This is the name of the method for getting conversion data starting from SDK V5.0. If you are using an SDK version prior to V5.0, the name of the method is ` onInstallConversionDataLoaded`. We recommend that you upgrade to the SDK [current version.](/docs/sdk-integration-overview)
 
 > 📘 Note
 >
@@ -229,7 +229,7 @@ Use the following code example to integrate the SDK.
 
 > 📘 Note
 >
-> The code example uses the method `onConversionDataSuccess` to get conversion data. This is the name of the method starting SDK V5. If you are using an SDK version earlier than 5.0.0, the name of the method is ` onInstallConversionDataLoaded`. We recommend that you upgrade to SDK 5.0.0. To learn more, click [here](https://support.appsflyer.com/hc/articles/360003090618).
+> The code example uses the method `onConversionDataSuccess` to get conversion data. This is the name of the method starting SDK V5. If you are using an SDK version earlier than 5.0.0, the name of the method is ` onInstallConversionDataLoaded`. We recommend that you upgrade to SDK 5.0.0. To learn more, click [here](/docs/links-to-appsflyer-sdk-release-notes).
 
 ```java
  public class AFApplication extends Application {
@@ -271,9 +271,9 @@ Use the following code example to integrate the SDK.
 
 Select how attribution data displays in AppsFlyer from:
 
-- (best practice) **Single app:** The data of all third-party Android app stores (China domestic) displays under a single but separate app. This means that you see all the domestic Chinese stores attribution data under one app in AppsFlyer. To use this method continue to [add the app in AppsFlyer](https://support.appsflyer.com/hc/articles/360002049858#adding-the-app-in-appsflyer) section that follows.
-- **Single app consolidated with Google Play store:** The attribution of both the third-party app stores and Google Play store display as a single entity. This option requires that the package name of both the Google Play store and the third-party stores is identical. Using this option assume that the app is already defined in AppsFlyer. To use this method continue to [preparing the APK/manifest](https://support.appsflyer.com/hc/articles/360002049858#preparing-the-apkmanifest) in the section that follows.
-- **Multiple apps** means that the attribution data of each store is shown under a separate app. For example, each of the following is shown separately, Google Play Store, third-party store A, third-party B, and so on. To use this method, see [multiple apps](https://support.appsflyer.com/hc/articles/207447023).
+- (best practice) **Single app:** The data of all third-party Android app stores (China domestic) displays under a single but separate app. This means that you see all the domestic Chinese stores attribution data under one app in AppsFlyer. To use this method continue to [add the app in AppsFlyer](/docs/measure-attribution-in-the-chinese-domestic-market#adding-the-app-in-appsflyer) section that follows.
+- **Single app consolidated with Google Play store:** The attribution of both the third-party app stores and Google Play store display as a single entity. This option requires that the package name of both the Google Play store and the third-party stores is identical. Using this option assume that the app is already defined in AppsFlyer. To use this method continue to [preparing the APK/manifest](/docs/measure-attribution-in-the-chinese-domestic-market#preparing-the-apkmanifest) in the section that follows.
+- **Multiple apps** means that the attribution data of each store is shown under a separate app. For example, each of the following is shown separately, Google Play Store, third-party store A, third-party B, and so on. To use this method, see [multiple apps](/docs/set-up-multi-store-android-attribution).
 
 ### Adding the app in AppsFlyer
 
@@ -331,7 +331,7 @@ The methods described set the parameter AF_STORE which in turn sets the install_
 Many third-party Android app stores in China also sell traffic, meaning they are also an ad platform. In some cases, these stores do not support the use of attribution links. The following workaround solutions can be used as an alternative:
 
 - install_app_store field: (recommended) When installation takes place without an attribution link, AppsFlyer attributes the installation to organic installs. By using the install_app_store field, you can identify the actual source of the install. Note: The install_app_store field is set using the AF_STORE parameter described in the previous section.
-- [Preinstall name](https://support.appsflyer.com/hc/articles/207032166) in the manifest file. Using the preinstall name contained in the manifest. The disadvantage of this method is that where the preinstall APK is leaked to the market, attribution information will be incorrect. When using this method ensure that you have the appropriate commercial terms to protect your APK.
+- [Preinstall name](/docs/appsflyer-factory-preinstall-using-manifest-android) in the manifest file. Using the preinstall name contained in the manifest. The disadvantage of this method is that where the preinstall APK is leaked to the market, attribution information will be incorrect. When using this method ensure that you have the appropriate commercial terms to protect your APK.
 
 ### China domestic attribution links
 
@@ -355,7 +355,7 @@ Note: Frequently, China domestic integrated media sources have this parameter se
 
 For more information about integrated media sources:
 
-[Android app promotion in China](https://support.appsflyer.com/hc/articles/115004639203-Android-App-Promotion-in-China)
+[Android app promotion in China](/docs/android-app-promotion-in-china)
 
 ### Detecting store hijacking
 

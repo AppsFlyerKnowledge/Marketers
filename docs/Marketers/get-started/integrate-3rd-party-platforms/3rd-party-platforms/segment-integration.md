@@ -19,7 +19,7 @@ Follow [this guide from Segment](https://segment.com/docs/destinations/appsflyer
 To integrate Segment with AppsFlyer, follow these steps:
 
 - [Configure your Segment dashboard](https://segment.com/docs/destinations/appsflyer/#getting-started) to connect to AppsFlyer
-- Implement [the Segment Wrapper SDK](https://support.appsflyer.com/hc/articles/210041606#how-does-the-sdk-wrapper-work) in your app:
+- Implement [the Segment Wrapper SDK](/docs/segment-integration#how-does-the-sdk-wrapper-work) in your app:
 
   - [Native iOS](https://github.com/segment-integrations/analytics-swift-appsflyer)
   - [Native Android](https://github.com/segment-integrations/analytics-kotlin-appsflyer)
@@ -65,9 +65,9 @@ No, there is no change in functionality. All functions in the AppsFlyer SDK are 
 
 <Accordion title="Install and in-app events data in Segment and AppsFlyer doesn't match">
 
-Make sure that to only use the Segment SDK Wrapper Do not combine the Segment SDK Wrapper with AppsFlyer SDK. See [here](https://support.appsflyer.com/hc/articles/210041606#how-does-the-sdk-wrapper-work) for more info.
+Make sure that to only use the Segment SDK Wrapper Do not combine the Segment SDK Wrapper with AppsFlyer SDK. See [here](/docs/segment-integration#how-does-the-sdk-wrapper-work) for more info.
 
-[The FAQ above](https://support.appsflyer.com/hc/articles/210041606#i-dont-see-inapp-event-data-in-the-appsflyer-dashboard) also specifies reasons why data might not align between Segment and AppsFlyer.
+[The FAQ above](/docs/segment-integration#i-dont-see-inapp-event-data-in-the-appsflyer-dashboard) also specifies reasons why data might not align between Segment and AppsFlyer.
 
 </Accordion>
 

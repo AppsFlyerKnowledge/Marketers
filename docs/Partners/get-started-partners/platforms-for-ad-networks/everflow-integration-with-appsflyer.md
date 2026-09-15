@@ -2,7 +2,7 @@
 title: "Everflow integration with AppsFlyer"
 excerpt: "Learn how to integrate Everflow with AppsFlyer, create attribution links, and configure install and in-app event postbacks."
 ---
-At a glance: Everflow is an AppsFlyer integrated partner. AppsFlyer sends attribution data to Everflow for installs and in-app events.
+**At a glance:** Everflow is an AppsFlyer integrated partner. AppsFlyer sends attribution data to Everflow for installs and in-app events.
 
 ## Initiating the integration with AppsFlyer
 
@@ -11,69 +11,81 @@ At a glance: Everflow is an AppsFlyer integrated partner. AppsFlyer sends attrib
 1. Complete the [**Partner Registration Information Form**](https://www.appsflyer.com/partners-registration/).
 2. Once you have submitted the above registration form, you will receive an email from a Partner Development Manager within 24 hours.
 3. Respond to this email with the name of the AppsFlyer client you are onboarding. Send the following information to us using the partner assistant widget:
-   - Your company name
-   - Transparent logo
-   - The recommended Everflow attribution link template (use the template that follows.)
-   - The value for _pid_ needs to be set as the name you chose and will appear in AppsFlyer reports.
-   - Any additional values you want to use.
-   - Your Everflow Network ID (nid) and postback domain for install and in-app event postbacks configurations
+   * Your company name
+   * Transparent logo
+   * The recommended Everflow attribution link template (use the template that follows.)
+   * The value for *pid* needs to be set as the name you chose and will appear in AppsFlyer reports.
+   * Any additional values you want to use.
+   * Your Everflow Network ID (nid) and postback domain for install and in-app event postbacks configurations
 
 ### Attribution URL template
 
-```auto
+```
 https://app.appsflyer.com/{app_id}?pid=mediaName_int&clickid={transaction_id}&af_siteid={affiliate_id}
 &af_sub_siteid={affiliate_source_id}&idfa={idfa}&sha1_idfa={idfa_sha1}&advertising_id={google_aid}
 &af_cost_value={amount}&af_cost_currency={offer_currency}&af_cost_model=CPI
 ```
 
-If you currently have an integration with AppsFlyer, contact us using the partner assistant widget and include the new Everflow postback and attribution link template.
+If you currently have an integration with AppsFlyer, contact us using the partner assistant widget
+
+ and include the new Everflow postback and attribution link template.
 
 ## Creating your attribution link
 
-The attribution link consists of the AppsFlyer base attribution link and additional macros added by the ad-network as detailed here.
+The attribution link consists of the AppsFlyer base attribution link and additional macros added by the ad-network as detailed here. 
 
 See below the AppsFlyer base attribution link with a detailed explanation per macro:
 
+
+
 | AppsFlyer Base URL | Description |
 | --- | --- |
-| https://app.appsflyer.com/{app\_id}? | AppsFlyer end point<br>app\_ id= Application unique ID – represents the ID of the app being promoted |
+| https://app.appsflyer.com/`{app\_id}`? | AppsFlyer end point<br /><br />app\_ id= Application unique ID – represents the ID of the app being promoted |
 | pid= | Media source name concatenated with \_int to identify integrated networks. Example: mediaName\_int |
 | c= | Campaign name |
 
+
+
 Set out below is a complete attribution link once you have added the additional Everflow macros:
 
-```auto
+```
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={transaction_id}&af_siteid={affiliate_id}
 &af_sub_siteid={affiliate_source_id}&idfa={idfa}&sha1_idfa={idfa_sha1}&advertising_id={google_aid}
 &af_cost_value={amount}&af_cost_currency={offer_currency}&af_cost_model=CPI
 ```
 
-> 📘 Note
+> 📘 **Note**
 >
-> * For campaign cost models other than CPI, please update the **&af\_cost\_model=** parameter to the appropriate model. Example: CPA, CPC
+> #### Note
+>
+> * For campaign cost models other than CPI, please update the **&af\_cost\_model=** parameter to the appropriate model. Example:  CPA, CPC
 > * If you are an existing AppsFlyer partner and currently migrating to Everflow from a different platform, make sure to add `&af_additional_postback=1` to your attribution links.
 
-For the complete list of AppsFlyer parameters click [here](https://support.appsflyer.com/hc/articles/207273946-Available-Macros-on-AppsFlyer-s-Postbacks).
+
+For the complete list of AppsFlyer parameters click [here](/docs/postback-macros-for-ad-networks).
 
 For the complete list of Everflow’s macros click [here](https://help.everflow.io/support/solutions/articles/22000176119-parameters-and-macros).
 
 ## Integrating your install and in-app event postbacks
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > * See below for an explanation of how to format install and in-app event postbacks for the Everflow platform.
-> * You must send AppsFlyer your custom Everflow domain in place of [everflow\_domain\_placeholder] in the below postbacks.
+> * You must send AppsFlyer your custom Everflow domain in place of  [everflow\_domain\_placeholder] in the below postbacks.
 > * NID is the Network ID provided by Everflow.
+
 
 ## Global install postback
 
-```http
+```
 https://[everflow_domain_placeholder]/?nid=[everflow_network_placeholder]&transaction_id=$$click(clickid)
 ```
 
 ## Global in-app event postback
 
-```http
+```
 https://[everflow_domain_placeholder]/?event_id=[everflow_eventid_placeholder]&nid=[everflow_network_placeholder]&transaction_id=$$click(clickid)
 ```
 
@@ -85,7 +97,7 @@ The unique in-app event ID generated by Everflow for each offer event.
 
 This is the actual in-app event name from the application.
 
-For details on Dynamic Event Mapping for In-app Events, click [here](https://support.appsflyer.com/hc/articles/208996726)
+For details on Dynamic Event Mapping for In-app Events, click [here](/docs/dynamic-event-mapping-for-in-app-events)
 
 ## Event setup in Everflow
 
@@ -93,12 +105,11 @@ For details on Dynamic Event Mapping for In-app Events, click [here](https://sup
 
 1. To set up the events on the offer level, use the guide [here](https://help.everflow.io/support/solutions/articles/22000176131-add-post-conversion-events-).
 2. After you have set up events, remember which event ID is for each. In the example below event ID 275 is for Purchase and event ID 276 is for Registration
-3. Add these events into the AppsFlyer attribution link.
-
-You must have one event ID per "&goalid\_x" value.
-
-Replace the "x" with a different goalid number. For this example we have used &goalid\_1=275 and &goalid\_2=276
-4. Add these to the AppsFlyer attribution link in the **General** page after you edit the offer.
-5. Add the &goalid\_1=275&goalid\_2=276 to the AppsFlyer attribution link, click save.
+3. Add these events into the AppsFlyer attribution link.  
+   You must have one event ID per "&goalid\_x" value.  
+   Replace the "x" with a different goalid number. For this example we have used &goalid\_1=275 and &goalid\_2=276
+4. Add these to the AppsFlyer attribution link in the **General** page after you edit the offer. [![](https://support.appsflyer.com/hc/article_attachments/360002535645)](https://support.appsflyer.com/hc/article_attachments/360002535645)
+5. Add the &goalid\_1=275&goalid\_2=276 to the AppsFlyer attribution link, click save.  
+   It should look like this when you are done (your event IDs might be different): [![](https://support.appsflyer.com/hc/article_attachments/360002539489)](https://support.appsflyer.com/hc/article_attachments/360002539489)
 6. Ask the advertiser to map those events in AppsFlyer, For details of Dynamic Event Mapping for In-App Events.
 7. Pull event postback from Everflow and send it to AppsFlyer, make sure you are mapping the right goalid macros to the corresponding events on the advertiser's side.

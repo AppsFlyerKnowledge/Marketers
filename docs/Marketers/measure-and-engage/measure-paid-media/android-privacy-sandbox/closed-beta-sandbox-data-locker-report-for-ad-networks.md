@@ -2,7 +2,7 @@
 title: "[Closed beta] Sandbox Data Locker report for ad networks"
 excerpt: "Learn about Sandbox raw data reports for ad networks, including report formats, structures, and how to access them via Data Locker."
 ---
-At a glance: Sandbox raw data reports contain aggregated data generated after translating and decoding reports received by AppsFlyer from Android Privacy Sandbox Attribution API. Data is available via [Data Locker](https://support.appsflyer.com/hc/sections/6551591547409-Data-Locker).
+At a glance: Sandbox raw data reports contain aggregated data generated after translating and decoding reports received by AppsFlyer from Android Privacy Sandbox Attribution API. Data is available via [Data Locker](/docs/data-locker-partners).
 
 ## Sandbox raw data reports for ad networks
 
@@ -31,7 +31,7 @@ Principles:
 | String [n] | The maximum length of the string. We don't usually enforce field length limitations on receipt of the data, but data may be truncated thereafter. |
 | Time string | String having the format, `yyyy-mm-dd hh:mm:ss`. For example, `2019-09-17 00:09:25` |
 | Enum [n] | Enum fields can only contain specific values. For example, Cost currency has 3 characters and can contain only currency codes as specified. |
-| Timestamp | 10-digit UNIX timestamp. Example:<br>August 4, 2020, 07:25 UTC translates to `"timestamp": "1596525944"` |
+| Timestamp | 10-digit UNIX timestamp. Example:<br />August 4, 2020, 07:25 UTC translates to `"timestamp": "1596525944"` |
 | Boolean | The value of the field can be either `TRUE` or `FALSE` |
 | Integer | Integer |
 | Float | Real floating number that can have a decimal point and values after the decimal point. |
@@ -70,4 +70,4 @@ Principles:
 | Currency | USD |
 | Organic data | Not available |
 | Non-organic data | Based on Sandbox attribution |
-| Data freshness | [Daily](https://support.appsflyer.com/hc/articles/28637170445073-Sandbox-Data-Locker-report-WIP#skan-raw-data-reports) |
+| Data freshness | [Daily](/docs/closed-beta-sandbox-data-locker-report-for-ad-networks#skan-raw-data-reports) |

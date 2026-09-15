@@ -16,7 +16,7 @@ Movable Ink is a dynamic content optimization partner that provides personalized
 
 A list of AppsFlyer-supported ESPs can be found [here.](/docs/email-service-provider-esp-integration-guide)
 - Integration of the AppsFlyer [URL Resolver code](https://github.com/AppsFlyerSDK/appsflyer-urlresolver-client) snippet into your mobile apps (it is responsible for resolving the Movable Ink wrapped link).
-- OneLink is set up and supports Universal Links/App Links. [Learn more](https://support.appsflyer.com/hc/articles/207032246-OneLink-templates#procedures)
+- OneLink is set up and supports Universal Links/App Links. [Learn more](/docs/create-a-onelink-template#procedures)
 
 **To set up the integration:**
 
@@ -32,7 +32,7 @@ A list of AppsFlyer-supported ESPs can be found [here.](/docs/email-service-prov
    - Copy the HREF URL from the copied link (highlighted) and set it aside. It will be used as the deep link value in the final link.
 
      ![Movableink image highlighted.png](https://files.readme.io/a2ccca4d6053e1448094dd83478610693b13a7f04a77aaaff7d12305533e8fbe-28405439389201.png)
-4. **In AppsFlyer:** Navigate to the specific [OneLink template](https://support.appsflyer.com/hc/articles/207032246-OneLink-templates) that you'll use for the campaign and retrieve the following data points for the integration:   - **OneLink Domain:** The subdomain for OneLink generation within AppsFlyer.
+4. **In AppsFlyer:** Navigate to the specific [OneLink template](/docs/create-a-onelink-template) that you'll use for the campaign and retrieve the following data points for the integration:   - **OneLink Domain:** The subdomain for OneLink generation within AppsFlyer.
    - **Template ID:** ID of the referenced template or the one created for the campaign.
    - **PID**: The unique identification of the media source.
 
@@ -41,7 +41,7 @@ A list of AppsFlyer-supported ESPs can be found [here.](/docs/email-service-prov
 
 **Link structure:**
 
-https://{{onelink.domain}}/{{template_id}}?pid={{pid_value}}&c={{link_name}}deep_link_value={{mi_link_from_creative_tag}}
+https://`{{onelink.domain}}/{{template_id}}?pid={{pid_value}}&c={{link_name}}deep_link_value={{mi_link_from_creative_tag}}`
 
 **Example:**
 
@@ -51,10 +51,10 @@ https://link.movableink.com/oskuw854?pid=BRAZE&deep_link_value=https://www.movab
 
 | Parameter | Description | Example value | Note | Get from |
 | --- | --- | --- | --- | --- |
-| {{onelink.domain}} | Your AppsFlyer domain | mink.onelink.com |  | AppsFlyer UI |
-| {{template_id}} | ID of the link template set up in AppsFlyer | 1a6f |  | AppsFlyer UI |
-| {{pid_value}} | ID of the ESP / media source | ESP Name |  | AppsFlyer UI |
-| {{mi_link_from_creative_tag}} | The HREF clickthrough link from Movable Ink’s creative tag. Available on the Finish & Export page (see image in step 3.) | https://www.movable-ink-2563.com/p/cp/ee0e28529389f573/curl=https%3A%2F%2Fwww.movableink2563.com%2Fp%2Frp%2F9011ea048ec4bf03%2Furl&url_sig=D4QtmtC8vqJhU7 | The link should be encoded. | Movable Ink |
+| `{{onelink.domain}}` | Your AppsFlyer domain | mink.onelink.com |  | AppsFlyer UI |
+| `{{template_id}}` | ID of the link template set up in AppsFlyer | 1a6f |  | AppsFlyer UI |
+| `{{pid_value}}` | ID of the ESP / media source | ESP Name |  | AppsFlyer UI |
+| `{{mi_link_from_creative_tag}}` | The HREF clickthrough link from Movable Ink’s creative tag. Available on the Finish & Export page (see image in step 3.) | https://www.movable-ink-2563.com/p/cp/ee0e28529389f573/curl=https%3A%2F%2Fwww.movableink2563.com%2Fp%2Frp%2F9011ea048ec4bf03%2Furl&url_sig=D4QtmtC8vqJhU7 | The link should be encoded. | Movable Ink |
 
 > 📘 Note
 >
@@ -68,4 +68,4 @@ https://link.movableink.com/oskuw854?pid=BRAZE&deep_link_value=https://www.movab
 
 ## Traits and limitations
 
-See additional [attribution link traits and limitations](https://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters#traits-and-limitations).
+See additional [attribution link traits and limitations](/docs/about-link-structure-and-parameters#traits-and-limitations).

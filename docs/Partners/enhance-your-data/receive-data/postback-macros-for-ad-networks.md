@@ -7,10 +7,10 @@ As an ad network, you can define the content and endpoints of postbacks sent to 
 Related integrated partner postback guides:
 
 <Cards>
-  <Card title="Advanced Privacy" href="https://support.appsflyer.com/hc/articles/360011316197-iOS14-Advanced-Privacy-postback-guide-for-ad-networks">
+  <Card title="Advanced Privacy" href="/docs/advanced-privacy-guide-postback-macros-for-ad-networks">
     iOS14 Advanced Privacy postback guide for ad networks
   </Card>
-  <Card title="SKAdNetwork" href="https://support.appsflyer.com/hc/articles/360011502657-SKAdNetwork-ad-networks-integration-guide">
+  <Card title="SKAdNetwork" href="/docs/skan-integration-guide-for-ad-networks">
     SKAdNetwork ad networks integration guide
   </Card>
   <Card title="Rejected attribution postbacks" href="/docs/rejected-attribution-postbacks-to-integrated-partners">
@@ -27,9 +27,9 @@ Related integrated partner postback guides:
 
 | Source | Description |
 | --- | --- |
-| [Attribution link parameters](http://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters) | Parameters provided by the partner on click and impression URLs<br>Example: click ID parameter on the attribution link - "&click\_id=CLICK\_ID" |
-| Partner IDs in AppsFlyer | Unique IDs provided to the advertiser by the partner<br>Examples: app ID, account ID, user ID, network ID |
-| SDK derived information | Information extracted from the device by the AppsFlyer SDK<br>Example: iOS device IDs can be extracted by using "&IDFA=(idfa)" on the postback |
+| [Attribution link parameters](/docs/about-link-structure-and-parameters) | Parameters provided by the partner on click and impression URLs<br />Example: click ID parameter on the attribution link - "&click\_id=CLICK\_ID" |
+| Partner IDs in AppsFlyer | Unique IDs provided to the advertiser by the partner<br />Examples: app ID, account ID, user ID, network ID |
+| SDK derived information | Information extracted from the device by the AppsFlyer SDK<br />Example: iOS device IDs can be extracted by using "&IDFA=(idfa)" on the postback |
 | Derived by the AppsFlyer platform | Information derived by the AppsFlyer platform. |
 | Protect360 and validation rules | Information about installs identified as fraud and installs violating campaign targeting rules, and their associated in-app events |
 
@@ -52,22 +52,22 @@ The columns in the table below have the following meaning:
 | Postback macro (name) | Source | Send all | Description | [Base] Macros for all postbacks | [Optional] In-app and rejected events |
 | --- | --- | --- | --- | --- | --- |
 | advertising\_id | SDK | Yes | User-resettable device ID, AKA GAID. Also available as: (sha1-advertiserId) | Yes |  |
-| af\_ad | LINK | No | Ad Name ( [see more](https://support.appsflyer.com/hc/articles/207447163#levels-of-data-granularity)) provided by the advertiser/publisher | Yes | Yes |
+| af\_ad | LINK | No | Ad Name ( [see more](/docs/about-link-structure-and-parameters#levels-of-data-granularity)) provided by the advertiser/publisher | Yes | Yes |
 | af\_ad\_id | LINK | No | Provided by the advertiser/publisher | Yes | Yes |
-| af\_ad\_type | Link | No | Use the following naming convention:<br>- **text:** an ad unit containing only text, for example a search result<br>- **banner:** a basic format that appears at the top or bottom of the device screen<br>- **interstitial:** a full-page ad that appears during breaks in the current experience<br>- **video:** a standard video, that is non-rewarded<br>- **rewarded\_video:** an ad unit offering in-app rewards in exchange for watching a video<br>- **playable:** an ad unit containing an interactive preview of the app experience<br>- **sponsored\_content:** a link included in a piece of sponsored content, like an advertorial article<br>- **audio:** an audio ad | Yes | Yes |
-| af\_adset | Link | No | - Provided by the advertiser/publisher.<br>- Adset is an intermediate level in the hierarchy between Campaign and Ad. [See more](https://support.appsflyer.com/hc/articles/207447163#levels-of-data-granularity) | Yes | Yes |
+| af\_ad\_type | Link | No | Use the following naming convention:<br />- **text:** an ad unit containing only text, for example a search result<br />- **banner:** a basic format that appears at the top or bottom of the device screen<br />- **interstitial:** a full-page ad that appears during breaks in the current experience<br />- **video:** a standard video, that is non-rewarded<br />- **rewarded\_video:** an ad unit offering in-app rewards in exchange for watching a video<br />- **playable:** an ad unit containing an interactive preview of the app experience<br />- **sponsored\_content:** a link included in a piece of sponsored content, like an advertorial article<br />- **audio:** an audio ad | Yes | Yes |
+| af\_adset | Link | No | - Provided by the advertiser/publisher.<br />- Adset is an intermediate level in the hierarchy between Campaign and Ad. [See more](/docs/about-link-structure-and-parameters#levels-of-data-granularity) | Yes | Yes |
 | af\_adset\_id | Link | No | Provided by the advertiser/publisher | Yes | Yes |
 | af\_c\_id | Link | No | Provided by the advertiser/publisher | Yes | Yes |
-| af\_siteid | Link | No | - Unique ID that identifies the publisher that displays the ad. [Learn more](https://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters#site-id-parameter) | Yes | Yes |
-| af\_subsite\_id | Link | No | - Ad sub-network/Publisher ID.<br>- If in addition to the main publisher (site ID), there is a sub-publisher, or you want to include additional info, such as ad type/placement within the app, like banner, interstitial, video, etc. use af\_sub\_siteid. For example: af\_sub\_siteid =ABCD\_4567 | Yes | Yes |
+| af\_siteid | Link | No | - Unique ID that identifies the publisher that displays the ad. [Learn more](/docs/about-link-structure-and-parameters#site-id-parameter) | Yes | Yes |
+| af\_subsite\_id | Link | No | - Ad sub-network/Publisher ID.<br />- If in addition to the main publisher (site ID), there is a sub-publisher, or you want to include additional info, such as ad type/placement within the app, like banner, interstitial, video, etc. use af\_sub\_siteid. For example: af\_sub\_siteid =ABCD\_4567 | Yes | Yes |
 | af\_validated | AF | Yes | Indicates whether the purchase was successfully validated. Possible values: true or false. | Yes |  |
 | af\_validation\_type | AF | Yes | Indicates the type of validation performed. Possible values: roi360\_purchase, roi360\_subscription, or receipt\_validation. | Yes |  |
 | app\_id | SDK | Yes | The app ID as reported by the app | Yes |  |
 | app\_name | SDK | Yes | App name set by the advertiser | Yes |  |
 | app\_version | SDK | Yes | App version name set by the developer in the app code | Yes |  |
 | appsflyer\_id | SDK | Yes | AppsFlyer unique identifier recorded upon conversion | Yes |  |
-| att-0-1 | SDK | Yes | Possible values:<br>- 1: The ATT status is authorized or af\_authorized.<br>- 0: Any other ATT status. | Yes |  |
-| att-status | SDK | Yes | The [ATT status](https://support.appsflyer.com/hc/articles/360014090597-ATT-implications-iOS-14-and-deprecation-of-LAT-#att-values) reported by iOS. Like authorized, not\_determined. <br>In some cases there is no value and "" is returned. | Yes |  |
+| att-0-1 | SDK | Yes | Possible values:<br />- 1: The ATT status is authorized or af\_authorized.<br />- 0: Any other ATT status. | Yes |  |
+| att-status | SDK | Yes | The [ATT status](/docs/att-implications-ios-14-and-deprecation-of-lat#att-values) reported by iOS. Like authorized, not\_determined. <br />In some cases there is no value and "" is returned. | Yes |  |
 | attributed\_touch\_type | SDK | No | Possible values: click, impression, TV, pre-install | Yes |  |
 | blocked\_reason | AF | No | Fraud/validation rules reason | No | Rejected |
 | blocked\_reason\_value | AF | No | Fraud/validation rules reason value (like site ID) | No | Rejected |
@@ -87,12 +87,12 @@ The columns in the table below have the following meaning:
 | install\_time | SDK | Yes | Install timestamp | Yes |  |
 | install\_unix\_ts | SDK | Yes | Install timestamp in unix format | Yes |  |
 | is\_attributed | AF | Yes | A flag marking if the install or event is attributed to this media source | Yes |  |
-| is\_contrib | AF | Yes | Indicates whether the ad network was among the top 3 contributors to an install.<br>- If the ad network did not win the attribution but is in the top 3 contributors, `is_contrib=1`.<br>- If the ad network won the attribution, `is_contrib=0`.<br>- If the ad network is not in the top 3 contributors, `is_contrib=0`. | Yes |  |
+| is\_contrib | AF | Yes | Indicates whether the ad network was among the top 3 contributors to an install.<br />- If the ad network did not win the attribution but is in the top 3 contributors, `is_contrib=1`.<br />- If the ad network won the attribution, `is_contrib=0`.<br />- If the ad network is not in the top 3 contributors, `is_contrib=0`. | Yes |  |
 | is\_lat | SDK | Yes | Limit ad tracking (LAT): iOS: Starting iOS 14 LAT is deprecated by Apple. Determine user privacy status using ATT. In this case disregard is\_lat. Before iOS 14, if true, IDFA is not available and is set to 0. Android: When true, the user has opted-out of interest-based ads. This does not prevent the collection of GAID. | Yes |  |
 | is\_organic | AF | Yes | If an install postback is sent for all media sources including organic, then the ad network will receive an indication as to whether an install was organic or non-organic. | Installs only |  |
 | is\_primary\_attribution | AF | Yes | If false, see is\_retargeting. | No | In-app |
 | is\_reinstall | AF | Yes | If true, the event is reported as [a reinstall](/docs/measure-reinstalls). |  |  |
-| is\_retargeting | Link | No | Use in conjunction with is\_primary\_attribution. Learn more about [double attribution of retargeting events.](https://support.appsflyer.com/hc/articles/360016371077)<br>If true (1), the event is reported as part of a retargeting campaign and the media source is the retargeting media source.<br>If false (0) and is\_primary\_attribution is false, the event is part of a retargeting campaign but the media source referenced is the user attribution media source | No |  |
+| is\_retargeting | Link | No | Use in conjunction with is\_primary\_attribution. Learn more about [double attribution of retargeting events.](/docs/resolve-retargeting-double-attribution)<br />If true (1), the event is reported as part of a retargeting campaign and the media source is the retargeting media source.<br />If false (0) and is\_primary\_attribution is false, the event is part of a retargeting campaign but the media source referenced is the user attribution media source | No |  |
 | language | SDK | Yes | Language (locale) reported by the device and set by the device OS. | Yes |  |
 | oaid | SDK | Yes | User-resettable ID on some Android devices usually as an alternative to GAID | Yes |  |
 | partner\_event\_id | AF | Yes | Name/ID of the corresponding event in the partner's platform | No | In-app |

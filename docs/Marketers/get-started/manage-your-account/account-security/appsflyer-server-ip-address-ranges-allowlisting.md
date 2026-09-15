@@ -26,7 +26,7 @@ Allowlisted addresses use the following CIDR blocks:
 
 If you use network perimeter devices such as firewalls and proxy servers, you must ask your security team to allowlist AppsFlyer IP addresses as listed in this [IP allowlist for Audiences](https://support.appsflyer.com/hc/en-us/article_attachments/16888953497617/IP_list_for_Audiences.xlsx).
 
-Learn more about [Audiences](https://support.appsflyer.com/hc/articles/115002689186).
+Learn more about [Audiences](/docs/audiences-guide).
 
 ### Pull API and server-to-server (S2S)
 

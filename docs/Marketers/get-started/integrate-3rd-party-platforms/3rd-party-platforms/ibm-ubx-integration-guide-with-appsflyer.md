@@ -2,11 +2,14 @@
 title: "IBM UBX integration guide with AppsFlyer"
 excerpt: "Learn how to integrate AppsFlyer with IBM UBX (Universal Behavior Exchange) to seamlessly share customer behavior data and in-app events."
 ---
-At a glance: IBM UBX (Universal Behavior Exchange), an AppsFlyer integrated partner, is a feature of the IBM Marketing Cloud and other IBM Commerce offerings which allows marketers to take control of all their customer data integration with an easy-to-use console. This open data exchange capability provides a contextual view of customer buying behaviors across all channels, devices, and interactions, so marketers can quickly design and deploy effective campaigns, delivering meaningful experiences in an instant, while driving ROI.
+**At a glance:** IBM UBX (Universal Behavior Exchange), an AppsFlyer integrated partner, is a feature of the IBM Marketing Cloud and other IBM Commerce offerings which allows marketers to take control of all their customer data integration with an easy-to-use console. This open data exchange capability provides a contextual view of customer buying behaviors across all channels, devices, and interactions, so marketers can quickly design and deploy effective campaigns, delivering meaningful experiences in an instant, while driving ROI.
 
-> ❗️ Important!
+> 📘 **Note**
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> #### Important!
+>
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
 
 ## Setting up IBM
 
@@ -14,22 +17,17 @@ At a glance: IBM UBX (Universal Behavior Exchange), an AppsFlyer integrated part
 
 **To set up a new integration:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
-
-( **To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.
-
-> 📘 Note
->
-> The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below.
 
 The IBM configuration window uses only the **Integration** tab.
 
-For a detailed description of the Partner Configuration Window Header, click [here](https://support.appsflyer.com/hc/articles/4410395957521#about-the-integrated-partner-page).
+For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
 ## Integration tab
 
@@ -37,9 +35,8 @@ The Integration Tab is divided into different sections as described below.
 
 ### Activate partner
 
-On the **first visit** here, you will need to toggle below. ON the _**Activate Partner**_ button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.
-
-For more details about partner activation please click [here](https://support.appsflyer.com/hc/articles/360000844778).
+On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
+For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 
 ### General settings
 
@@ -55,7 +52,11 @@ The first step in setting up a generic AppsFlyer event publisher endpoint is to 
 
 To do this, log into your UBX account and navigate to the **Endpoints** tab
 
+![](https://support.appsflyer.com/hc/en-us/article_attachments/205128323/IBM1.png)
+
 Next, click **Register new endpoint**
+
+![](https://support.appsflyer.com/hc/en-us/article_attachments/205053206/ibm_2.png)
 
 Next, select **AppsFlyer** and click **Next**.
 
@@ -85,23 +86,27 @@ Click **Save.**
 
 ### In-app event settings
 
+[![](https://support.appsflyer.com/hc/article_attachments/360002219429)](https://support.appsflyer.com/hc/article_attachments/360002219429)
+
 In this section you can map your AppsFlyer events with IBM via postbacks.
 
 1. Enter the Authorization Key again.
 2. Toggle In-App Event Postbacks to ON
-3. Select the Sending Option for all SDK-defined events.
-
-**- Only events attributed to this partner** for events coming **only** from users attributed to this partner
-
-**- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
+3. Select the Sending Option for all SDK-defined events.  
+   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
+   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
 4. Click **Add Event** to add an SDK Event to the list
 5. Complete the following parameters:
 
+
+
 | Parameter Name | Description |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated with your app, or from server to server events.<br>**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on IBM's side.<br>Obtain the corresponding Event ID from IBM and set it in the text field. |
-| **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af_revenue** parameter.<br>**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
+| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated with your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
+| **Partner Event Identifier** | The unique name or ID of each event as defined on IBM's side.  <br />Obtain the corresponding Event ID from IBM and set it in the text field. |
+| **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
+
+
 
 ## Attribution link tab
 

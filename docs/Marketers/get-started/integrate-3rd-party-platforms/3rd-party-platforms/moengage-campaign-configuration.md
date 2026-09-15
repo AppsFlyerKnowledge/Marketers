@@ -6,7 +6,7 @@ At a glance: MoEngage, a third-party customer engagement platform integrated wit
 
 > ❗️ Important!
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up MoEngage
 
@@ -27,7 +27,7 @@ At a glance: MoEngage, a third-party customer engagement platform integrated wit
 
 5. Complete the configuration using the relevant tabs, as described below.
 
-Learn more about [setting the partner page header.](https://support.appsflyer.com/hc/articles/4410395957521#about-the-integrated-partner-page)
+Learn more about [setting the partner page header.](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page)
 
 ## Integration tab
 
@@ -35,7 +35,7 @@ The **Integration** tab is divided into different sections, as described below.
 
 ### Activate partner
 
-On your first visit, turn **Activate Partner** on to set up the integration. The toggle must be on for as long as you work with the partner. Learn more about [partner activation](https://support.appsflyer.com/hc/articles/360000844778).
+On your first visit, turn **Activate Partner** on to set up the integration. The toggle must be on for as long as you work with the partner. Learn more about [partner activation](/docs/partner-activation-deactivation).
 
 ### General settings
 

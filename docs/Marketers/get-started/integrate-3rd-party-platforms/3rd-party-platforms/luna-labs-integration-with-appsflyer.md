@@ -6,7 +6,7 @@ excerpt: "Learn how to set up and configure the Luna Labs integration with AppsF
 
 > ❗️ Important!
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Luna Labs
 
@@ -36,7 +36,7 @@ Use the Integration tab for the configuration. The remaining tabs are inactive.
 
 On the **first visit** here, you need to turn on **Activate partner** to enable the setup of the integration tab's parameters. **The toggle must be on for as long as you work with the partner**.
 
-Learn more about [partner activation/deactivation](https://support.appsflyer.com/hc/articles/360000844778).
+Learn more about [partner activation/deactivation](/docs/partner-activation-deactivation).
 
 ### Default postbacks
 

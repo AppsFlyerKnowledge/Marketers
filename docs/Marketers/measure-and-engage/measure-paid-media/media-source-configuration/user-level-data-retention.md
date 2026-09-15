@@ -14,7 +14,7 @@ AppsFlyer receives user-level data from apps, partners, and other sources.
 
 ### Availability of user-level data to advertisers
 
-Typically, user-level data is made available to advertisers via raw data reporting tools if their subscription package includes raw data during a 90-day access window (See [data availability windows](/docs/data-availability-windows)). In some cases, there are also [raw data restrictions](https://support.appsflyer.com/hc/articles/360006868017).
+Typically, user-level data is made available to advertisers via raw data reporting tools if their subscription package includes raw data during a 90-day access window (See [data availability windows](/docs/data-availability-windows)). In some cases, there are also [raw data restrictions](/docs/about-raw-data-identifier-restrictions).
 
 ### Data retention
 
@@ -36,9 +36,9 @@ Consider the following:
 - The access window and retention period may differ
 - AppsFlyer, in some cases, may extend the access window
 - The retention period can vary per partner, bringing the user
-- Some user-level data is attributed to the [restricted media source](https://support.appsflyer.com/hc/articles/360006868017-FAQ-What-is-the-restricted-media-source-), which means that raw data doesn't contain the attribution data. This can occur in the following instances:
+- Some user-level data is attributed to the [restricted media source](/docs/about-raw-data-identifier-restrictions), which means that raw data doesn't contain the attribution data. This can occur in the following instances:
   - Partner data sharing policy
-  - [Aggregated Advanced Privacy](https://support.appsflyer.com/hc/articles/360018515798-) is on
+  - [Aggregated Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework) is on
 
 #### Partner data retention periods
 

@@ -12,9 +12,9 @@ Say you recently ran a remarketing campaign. For the sake of simplicity, we'll s
 
 Now you want to evaluate the success of the campaign, and you need to answer important (and, of course, the most difficult) questions:
 
-- Is 5% a good conversion rate for this campaign?
-- How do we know that the campaign truly resulted in driving additional conversions?
-- Was the campaign worth the cost of running it?
+* Is 5% a good conversion rate for this campaign?
+* How do we know that the campaign truly resulted in driving additional conversions?
+* Was the campaign worth the cost of running it?
 
 In order to answer these questions accurately and without bias, we must consider more than just measured conversions. We must take into account the number of users who would have converted organically, even if they had never engaged with a remarketing campaign.
 
@@ -24,7 +24,7 @@ This difference between total conversions and those that would have happened any
 
 Incrementality overcomes the challenge of measuring incremental lift by allowing you to create scientifically valid experiments to compare the behavior of similar groups. These groups vary only in that some groups (the **"test groups"**) are exposed to your campaign, and one group (the **"control group"**) is not.
 
-[Learn more about creating and running Incrementality experiments](https://support.appsflyer.com/hc/articles/360014225577)
+[Learn more about creating and running Incrementality experiments](/docs/run-an-incrementality-for-remarketing-experiment)
 
 ## Calculation methodology
 
@@ -32,28 +32,53 @@ The following sections explain the calculations behind the numbers reported on t
 
 ### Lift
 
-AppsFlyer Incrementality employs 2 alternative methods for calculating lift:
+AppsFlyer Incrementality employs 2 alternative methods for calculating
+lift:
 
-- Intent-to-treat
-- Reach-based
+* Intent-to-treat
+* Reach-based
 
-While **reach-based methodology is preferable** for purposes of evaluating campaign performance, its calculation requires the measurement of data points not provided by all ad networks. For these networks, intent-to-treat methodology is used instead.
+While **reach-based methodology is preferable** for
+purposes of evaluating campaign performance, its calculation requires
+the measurement of data points not provided by all ad networks. For
+these networks, intent-to-treat methodology is used instead.
 
-> 📘 Note
+> 📘 **Note**
 >
-> Prior to December 16, 2021, lift was calculated using solely the intent-to-treat method. However, data for earlier dates has been updated to utilize reach-based lift where applicable. Therefore, you can review historical experiments to analyze their results in light of the new methodology.
+> #### Note
+>
+> Prior to December 16, 2021, lift was calculated using solely
+> the intent-to-treat method. However, data for earlier dates has
+> been updated to utilize reach-based lift where applicable. Therefore,
+> you can review historical experiments to analyze their results
+> in light of the new methodology.
+
 
 #### ITT-based lift
 
-Intent-to-treat (ITT) experimental methodology has its foundations in medical science. Using ITT, researchers randomly split a given population between a control group who are not treated and a test group whom researchers intend to treat. Researchers measure the efficacy of a given treatment by comparing the results of the groups. Whether or not a test group member *actually* received treatment is not taken into account.
+Intent-to-treat (ITT) experimental methodology has its foundations
+in medical science. Using ITT, researchers randomly split a given
+population between a control group who are not treated and a test
+group whom researchers intend to treat. Researchers measure the efficacy
+of a given treatment by comparing the results of the groups. Whether
+or not a test group member *actually* received treatment is
+not taken into account.
 
-Similarly, in remarketing, the lift metric measures campaign efficacy. It doesn't matter if a user in the test group *actually* engaged with a campaign (received treatment) because it is the intent that is relevant in calculating incrementality. In other words, results are calculated as if every member of the test group actually engaged with the campaign.
+Similarly, in remarketing, the lift metric measures campaign efficacy.
+It doesn't matter if a user in the test group *actually* engaged
+with a campaign (received treatment) because it is the intent that
+is relevant in calculating incrementality. In other words, results
+are calculated as if every member of the test group actually engaged
+with the campaign.
 
 **When is it used?**
 
 AppsFlyer Incrementality uses ITT-based lift calculation for SRNs.
 
-Although it is not the preferred method for measuring lift in our context, ITT remains a scientifically sound experimental method, and it provides valid results when reach-based calculation is not possible.
+Although it is not the preferred method for measuring lift in our
+context, ITT remains a scientifically sound experimental method,
+and it provides valid results when reach-based calculation is not
+possible.
 
 **Interpreting results**
 
@@ -61,16 +86,25 @@ The underlying assumption that all members of the test group were actually reach
 
 #### Reach-based lift
 
-As its name implies, reach-based lift calculation takes into account whether or not a member of the test group was *actually reached* (served a campaign ad) prior to converting. In addition to requiring additional data, reach-based lift calculation is also more complex in that it requires certain mathematical adjustments to the control group in order to be statistically valid. These adjustments are cumulatively known as the creation of a "counterfactual" control group.
+As its name implies, reach-based lift calculation takes into account
+whether or not a member of the test group was *actually reached*
+(served a campaign ad) prior to converting. In addition to requiring
+additional data, reach-based lift calculation is also more complex
+in that it requires certain mathematical adjustments to the control
+group in order to be statistically valid. These adjustments are cumulatively
+known as the creation of a "counterfactual" control group.
 
 **When is it used?**
 
-AppsFlyer Incrementality uses reach-based lift calculation for non-SRNs (attribution-link networks).
+AppsFlyer Incrementality uses reach-based lift calculation for non-SRNs
+(attribution-link networks).
 
-While it is the preferred method for calculating lift, reach-based calculation requires that ad networks report the following data to AppsFlyer:
+While it is the preferred method for calculating lift, reach-based
+calculation requires that ad networks report the following data to
+AppsFlyer:
 
-- Impression data
-- Campaign ID (from the attribution link)
+* Impression data
+* Campaign ID (from the attribution link)
 
 If this data is not reported, incrementality measurement is not available (and displays as **N/A** on the Incrementality dashboard).
 
@@ -82,110 +116,132 @@ Since reach-based lift calculation takes into account only test group members th
 
 Because the 2 different lift calculation methodologies can yield significantly different results, the following best practices are recommended in order to make interpretation more meaningful:
 
-- When creating your experiments, select audiences that are split only among a control group and one or more networks of the same type, either:
-  - Attribution-link networks (non-SRNs) for reach-based calculation; or
-  - SRNs for ITT-based calculation
-- In your initial experiments, consider using an audience split only between a single network and a control group. This makes it less likely that comparisons will be made among 2 or more networks for which different lift calculations are used.
+* When creating your experiments, select audiences that are split only among a control group and one or more networks of the same type, either:
+  * Attribution-link networks (non-SRNs) for reach-based calculation; or
+  * SRNs for ITT-based calculation
+* In your initial experiments, consider using an audience split only between a single network and a control group. This makes it less likely that comparisons will be made among 2 or more networks for which different lift calculations are used.
 
 ### Statistical significance
 
-When evaluating the validity of Incrementality experiments, sound scientific methodology requires that we consider **statistical significance** (the level of confidence that the lift result isn't due to random events or chance).
+When evaluating the validity of Incrementality experiments, sound
+scientific methodology requires that we consider
+**statistical significance** (the level of confidence
+that the lift result isn't due to random events or chance).
 
-On the Incrementality dashboard, significance is reported as a percentage for each media source:
+On the Incrementality dashboard, significance is reported as a percentage
+for each media source:
 
-- The percentage indicates the likelihood that the results for that media source would repeat themselves if the experiment were performed again under similar circumstances.
-- If statistical significance is determined to be below 60%, the dashboard will display **Unreliable results** instead of a percentage.
-- Significance is affected by audience size, experiment duration, and media source performance.
+* The percentage indicates the likelihood that the results for
+  that media source would repeat themselves if the experiment were
+  performed again under similar circumstances.
+* If statistical significance is determined to be below 60%, the
+  dashboard will display **Unreliable results** instead
+  of a percentage.
+* Significance is affected by audience size, experiment duration,
+  and media source performance.
 
 ### Scaled control group
 
-For [test-group-level metrics](https://support.appsflyer.com/hc/articles/360009360978#::2c5f08ec) (as opposed to [per-user metrics](https://support.appsflyer.com/hc/articles/360009360978#::6143ff4f)), lift is calculated based on a **scaled control group**. In other words, the size of the control group is adjusted to match the control group size for each media source.
+For
+[test-group-level metrics](/docs/incrementality-for-remarketing-overview#::2c5f08ec)
+(as opposed to
+[per-user metrics](/docs/incrementality-for-remarketing-overview#::6143ff4f)),
+lift is calculated based on a **scaled control group**.
+In other words, the size of the control group is adjusted to match
+the control group size for each media source.
 
-#### Example
+> 📘 **Note**
+>
+> #### Example
+>
+> Assume the following scenario:
+>
+> * Test group size for Network A = 100 members
+> * Control group size = 90 members
+> * Experiment results:
+>   * Network A had 40 conversions
+>   * The control group had 20 conversions
+> * Total conversions will be adjusted based on an assumed (scaled)
+>   control group size of 100 members:
+>   * Assumed members - Actual members
+>     = 100 - 90
+>     = 11%
+>
+>         Actual members
+>
+>               90
+>   * Actual incremental conversions + 11% = 20 x 1.11 = 22
+>
+> Lift will be calculated based on a scaled control group size
+> of 100 members and 22 incremental conversions.
 
-Assume the following scenario:
-
-- Test group size for Network A = 100 members
-- Control group size = 90 members
-- Experiment results:
-  - Network A had 40 conversions
-  - The control group had 20 conversions
-- Total conversions will be adjusted based on an assumed (scaled) control group size of 100 members:
-  - Assumed members - Actual members = 100 - 90 = 11%
-  - Actual incremental conversions + 11% = 20 x 1.11 = 22
-
-Lift will be calculated based on a scaled control group size of 100 members and 22 incremental conversions.
 
 ## Incrementality dashboard
 
-<Image src="https://files.readme.io/a14fa7ae346177dbdd7de5fde4917d7300cbc148097a2239e29460a67eacd9a6-15317247527569.jpg" alt="Incrementality Dashboard Overview" />
+[![New_Incrementality_Guide_image.jpg](https://files.readme.io/a14fa7ae346177dbdd7de5fde4917d7300cbc148097a2239e29460a67eacd9a6-15317247527569.jpg)](https://support.appsflyer.com/hc/article_attachments/15317247527569)
 
 ### Accessing the dashboard
 
-Incrementality is a premium feature. To get started, reach out to your customer success manager or write to [hello@appsflyer.com](mailto:hello@appsflyer.com). After subscribing, you'll be able to access the Incrementality dashboard.
+Incrementality is a premium feature. To get started, reach out to
+your customer success manager or write to
+[hello@appsflyer.com](mailto:hello@appsflyer.com). After
+subscribing, you'll be able to access the Incrementality dashboard.
 
 **To access the Incrementality dashboard:**
 
-1. In AppsFlyer, from the side menu, select **Optimize** > **Incrementality**.
-2. From the experiments list, click the row of the experiment for which you want to see the dashboard.
+1. In AppsFlyer, from the side menu, select **Optimize**
+   > **Incrementality**.
+2. From the experiments list, click the row of the experiment for
+   which you want to see the dashboard.
 
 ### A tour of the dashboard
 
-| | Component | Description |
-| --- | --- | --- |
-| ![A.png](https://files.readme.io/ac7d37f68811559b92cac8032fa2304646903b4aa623e6ee3c35e265d34250fe-5397347579665.png) | Filter bar | **Measure:** Select the metric you want to view in the dashboard:<br><br>- **Conversions**– The number of unique users who performed the selected event<br>- **Revenue**– Revenue generated by converting users of the selected event<br>- **Events**– The number of occurrences of the selected event performed by converting users<br>Your selection in the **Measure** filter determines which metrics are displayed throughout the dashboard.<br>**Event:** Select the in-app event for which you want to view data in the dashboard.<br><br>**Media source:** Filter the dashboard display by one or more media sources tested in the experiment.<br><br>**Date range:** Filter the incremental analysis of the audience according to the selected date range. |
-| ![B.png](https://files.readme.io/ae2685f993019ee2bd461055c7be9ce739797a0b43bb28b85bf4f54997936f5b-5397362069393.png) | Experiment summary | Sums up the whole experiment with quick, at-a-glance results. |
-| ![C.png](https://files.readme.io/b428e77b299e10fe0701b7850cea1da8942905ad38d7b30c32f99f0240b22a63-5397303804945.png) | Significance tile | Displays the [statistical significance](https://support.appsflyer.com/hc/articles/360009360978#statistical-significance) of the results shown in the dashboard |
-| ![D.png](https://files.readme.io/9d9abd09fc45ec65fc52cbc1c8011117b555629d243444d076a392b4245effdd-5397362181265.png) | Headline metric tile | The metric displayed is controlled by your selection in the Measure filter, as shown below.<br><br>| Measure filter selection | Displayed headline metric |<br>| --- | --- |<br>| Conversions/Events | Cost per incremental action (CPiA)<br><br>- Average cost of every incremental event, based on campaign cost |<br>| Revenue | Incremental return on ad spend (iROAS)<br>- Ratio of incremental revenue generated for every dollar spent on the campaign |<br><br>**Note:** Calculation of metrics displayed in the headline tile require cost data. Therefore, these metrics are available only to [ROI360](/docs/roi360-cost-aggregation-overview) subscribers. If the required cost and/or revenue data is not available for this or any other reason, the relevant metric will display as **N/A.** |
-| ![E.png](https://files.readme.io/28563cf0057cdd6ccfd8ebb5b727ae80bef81ec66697f8e11eadc698f72e7acd-5397355189777.png) | Target size and reach tile | **Target size:** The number of distinct users, for each media source, who were added to the audience for the first time during the experiment's date range<br><br>- Also represented by the pie chart's inner ring (darker color)<br><br>**Reach:** The percentage of the target that actually saw an ad from the relevant media source's campaign<br><br>- Also represented by the pie chart's outer ring (lighter color) |
-| ![F.png](https://files.readme.io/99f2fb8f45215ddebf9582f215e3647bc35f5a812015733b3f6e3cb8d2784bd7-5397365201809.png) | Test-group-level lift tile | Displays **total** incremental metric and lift **for the test group** (by media source):<br><br>- Total incremental lift is calculated using a [scaled control group](https://support.appsflyer.com/hc/articles/360009360978#scaled-control-group).<br>- The metric displayed is controlled by your selection in the Measure filter, as shown below.<br><br>| Measure filter selection | Displayed metric |<br>| --- | --- |<br>| Conversions | Total incremental conversions |<br>| Events | Total incremental events |<br>| Revenue | Total incremental revenue | |
-| ![G.png](https://files.readme.io/7301cda39a8a6bcd08d199097ff9b11d496c5f01ab34422364a4e467a752338a-5397303963409.png) | Per-user lift tile | Displays incremental metric and lift **per user** (by media source):<br><br>- Per-user incremental lift is calculated using the actual number of users in the test group and control group.<br>- The metric displayed is controlled by your selection in the Measure filter, as shown below.<br><br>| Measure filter selection | Displayed metric |<br>| --- | --- |<br>| Conversions | Incremental conversion rate |<br>| Events | Incremental events per user |<br>| Revenue | Incremental revenue per user | |
-| ![H.png](https://files.readme.io/36085f38ba02d718acc766af3865073bf13960b2a1c755bd48302ab5415ff89a-5397355274513.png) | Trend chart | Displays the selected **per-user** incremental metric/lift over the date range of the experiment:<br><br>- The displayed metric is controlled by your selection in the Measure filter and is the same metric as the one shown in the **Per-user lift tile.**<br>- A dotted line (in the chart view) indicates partial data for the reported date (meaning future events can still affect the data).<br><br>- Select various view and download options using the **Trend chart view controls** (as further described immediately below). |
-| ![I.jpg](https://files.readme.io/19ab5c305d3eb2609031a1a88f6f4069015b6eefe9ef4f1501613f62e5024739-15317326904465.jpg) | Trend chart view controls | Use the view controls to select options for **Trend chart** display and download:<br><br>- Cumulative or daily (On-day) values<br>- Chart or table format<br><br>Use the **Export** button to download the data as a report in CSV format.<br><br>- The data downloaded is controlled by your selection with the view controls: **Cumulative** or **On-day**<br><br>**Description of terms in the report**<br><br>| Term | Description |<br>| --- | --- |<br>| Raw measure | The total amount of conversions/events/revenue generated by the test group, regardless of impressions (solely based on the network each user was assigned to by the split configuration). |<br>| Reached measure | The amount of conversions/events/revenue generated by the test group, only by users who had an impression of the selected campaign prior to triggering the underlying event. |<br>| Unreached measure | Raw measure minus reached measure. This describes the total amount of conversions/events/revenue generated by users from the test group who did not have an impression prior to triggering the underlying event. |<br>| Per user measure | Reached/raw measure of the test group (depending on whether or not the selected network supports reach) divided by group size/reach of the test group. |<br>| Control group raw measure | The total amount of conversions/events/revenue generated by the control group. |<br>| Control group reached measure | The amount of conversions/events/revenue generated by the control group group, adjusted for the test group’s reach (this value is counterfactual and serves as a means to compare apples-to-apples). |<br>| Control group unreached measure | Raw measure minus counterfactual reached measure. This describes the total amount of conversions/events/revenue generated by users from the control group. |<br>| Control group per user measure | Counterfactual reached/raw measure of the control group (depending on whether or not the selected network supports reach) divided by group size/counterfactual reach of the control group. |<br>| Total incremental measure | Reached test measure minus control counterfactual reached measure. |<br>| Incremental per user measure | Per user measure minus control per user measure. | | |
+
+
+<table><thead><tr><th> </th><th>Component</th><th>Description</th></tr></thead><tbody><tr><td><img alt="A.png" src="https://files.readme.io/ac7d37f68811559b92cac8032fa2304646903b4aa623e6ee3c35e265d34250fe-5397347579665.png"/></td><td>Filter bar</td><td><p><strong>Measure:</strong> Select the metric you                  want to view in the dashboard:                </p><ul><li><strong>Conversions</strong><span>– The number of unique users who performed the selected event</span></li><li><strong>Revenue</strong><span>– Revenue generated by converting users of the selected event</span></li><li><strong>Events</strong><span>– The number of occurrences of the selected event performed by converting users</span></li></ul><p><span>Your selection in the <strong>Measure</strong> filter determines which metrics are displayed throughout the dashboard.</span></p><p> </p><p><strong>Event:</strong> Select the in-app event                  for which you want to view data in the dashboard.                </p><p> </p><p><strong>Media source:</strong> Filter the dashboard                  display by one or more media sources tested in                  the experiment.                </p><p> </p><p><strong>Date range:</strong> Filter the incremental                  analysis of the audience according to the selected                  date range.                </p></td></tr><tr><td><img alt="B.png" src="https://files.readme.io/ae2685f993019ee2bd461055c7be9ce739797a0b43bb28b85bf4f54997936f5b-5397362069393.png"/></td><td>Experiment summary</td><td><p>                  Sums up the whole experiment with quick, at-a-glance                  results.                </p><p><strong> </strong></p></td></tr><tr><td><img alt="C.png" src="https://files.readme.io/b428e77b299e10fe0701b7850cea1da8942905ad38d7b30c32f99f0240b22a63-5397303804945.png"/></td><td>Significance tile</td><td>                Displays the                <a href="/docs/incrementality-for-remarketing-overview#statistical-significance">statistical significance</a>                of the results shown in the dashboard              </td></tr><tr><td><img alt="D.png" src="https://files.readme.io/9d9abd09fc45ec65fc52cbc1c8011117b555629d243444d076a392b4245effdd-5397362181265.png"/></td><td>Headline metric tile</td><td><p>                  The metric displayed is controlled by your selection                  in the Measure filter, as shown below.<br/><br/>                                   </p><figure><table><thead><tr><th>Measure filter selection</th><th>Displayed headline metric</th></tr></thead><tbody><tr><td>Conversions/Events</td><td>                          Cost per incremental action (CPiA)                          <ul><li>                              Average cost of every                              incremental event, based                              on campaign cost                            </li></ul></td></tr><tr><td>Revenue</td><td><div><div><span>Incremental return on ad spend (iROAS)</span></div><ul><li><span>Ratio of incremental revenue generated for every dollar spent on the campaign</span></li></ul></div></td></tr></tbody></table></figure><p><strong>Note:</strong> Calculation of metrics                  displayed in the headline tile require cost data.                  Therefore, these metrics are available only to                  <a href="/docs/roi360-cost-aggregation-overview">ROI360</a>                  subscribers. If the required cost and/or revenue                  data is not available for this or any other reason,                  the relevant metric will display as                  <span><strong>N/A.</strong></span></p></td></tr><tr><td><img alt="E.png" src="https://files.readme.io/28563cf0057cdd6ccfd8ebb5b727ae80bef81ec66697f8e11eadc698f72e7acd-5397355189777.png"/></td><td>Target size and reach tile</td><td><p><strong>Target size:</strong> The number of distinct                  users, for each media source, who were added                  to the audience for the first time during the                  experiment's date range                </p><ul><li>                    Also represented by the pie chart's inner                    ring (darker color)                  </li></ul><p><strong>Reach:</strong> The percentage of the                  target that actually saw an ad from the relevant                  media source's campaign                </p><ul><li>                    Also represented by the pie chart's outer                    ring (<span>lighter color</span>)                  </li></ul></td></tr><tr><td><img alt="F.png" src="https://files.readme.io/99f2fb8f45215ddebf9582f215e3647bc35f5a812015733b3f6e3cb8d2784bd7-5397365201809.png"/></td><td>Test-group-level lift tile</td><td>                Displays <strong>total</strong> incremental metric                and lift <strong>for the test group</strong> (by                media source):                <ul><li>                    Total incremental lift is calculated using                    a                    <a href="/docs/incrementality-for-remarketing-overview#scaled-control-group">scaled control group</a>.                  </li><li>                    The metric displayed is controlled by your                    selection in the Measure filter, as shown                    below.<br/><br/>                                       </li></ul><figure><table><thead><tr><th>Measure filter selection</th><th>Displayed metric</th></tr></thead><tbody><tr><td>Conversions</td><td>Total incremental conversions</td></tr><tr><td>Events</td><td><div><div>Total incremental events</div></div></td></tr><tr><td>Revenue</td><td><div><div>Total incremental revenue</div></div></td></tr></tbody></table></figure></td></tr><tr><td><img alt="G.png" src="https://files.readme.io/7301cda39a8a6bcd08d199097ff9b11d496c5f01ab34422364a4e467a752338a-5397303963409.png"/></td><td>Per-user lift tile</td><td>                Displays incremental metric and lift <strong>per user</strong>                (by media source):                <ul><li>                    Per-user incremental lift is calculated using                    the actual number of users in the test group                    and control group.                  </li><li>                    The metric displayed is controlled by your                    selection in the Measure filter, as shown                    below.<br/><br/>                                       </li></ul><figure><table><thead><tr><th>Measure filter selection</th><th>Displayed metric</th></tr></thead><tbody><tr><td>Conversions</td><td>Incremental conversion rate</td></tr><tr><td>Events</td><td><div><div>Incremental events per user</div></div></td></tr><tr><td>Revenue</td><td><div><div>Incremental revenue per user</div></div></td></tr></tbody></table></figure></td></tr><tr><td><img alt="H.png" src="https://files.readme.io/36085f38ba02d718acc766af3865073bf13960b2a1c755bd48302ab5415ff89a-5397355274513.png"/></td><td>Trend chart</td><td>                Displays the selected <strong>per-user</strong> incremental                metric/lift over the date range of the experiment:                <ul><li>                    The displayed metric is controlled by your                    selection in the Measure filter and is the                    same metric as the one shown in the                    <strong>Per-user lift tile.</strong></li><li>                    A dotted line (in the chart view) indicates                    partial data for the reported date (meaning                    future events can still affect the data).                  </li><li>                    Select various view and download options                    using the <strong>Trend chart view controls</strong>                    (as further described immediately below).                  </li></ul></td></tr><tr><td><img alt="I.jpg" src="https://files.readme.io/19ab5c305d3eb2609031a1a88f6f4069015b6eefe9ef4f1501613f62e5024739-15317326904465.jpg"/></td><td>Trend chart view controls</td><td><p>                  Use the view controls to select options for                  <strong>Trend chart</strong> display and download:                </p><ul><li>Cumulative or daily (On-day) values</li><li>Chart or table format</li></ul><p>                  Use the <strong>Export</strong> button to download                  the data as a report in CSV format.                </p><ul><li>                    The data downloaded is controlled by your                    selection with the view controls:                    <strong>Cumulative</strong> or <strong>On-day</strong></li></ul><p><strong>Description of terms in the report</strong></p><figure><table><thead><tr><th>Term</th><th>Description</th></tr></thead><tbody><tr><td>Raw measure</td><td>                          The total amount of conversions/events/revenue                          generated by the test group,                          regardless of impressions (solely                          based on the network each user                          was assigned to by the split                          configuration).                        </td></tr><tr><td>Reached measure</td><td>                          The amount of conversions/events/revenue                          generated by the test group,                          only by users who had an impression                          of the selected campaign prior                          to triggering the underlying                          event.                        </td></tr><tr><td>Unreached measure</td><td>                          Raw measure minus reached measure.                          This describes the total amount                          of conversions/events/revenue                          generated by users from the test                          group who did not have an impression                          prior to triggering the underlying                          event.                        </td></tr><tr><td>Per user measure</td><td>                          Reached/raw measure of the test                          group (depending on whether or                          not the selected network supports                          reach) divided by group size/reach                          of the test group.                        </td></tr><tr><td>Control group raw measure</td><td>                          The total amount of conversions/events/revenue                          generated by the control group.                        </td></tr><tr><td>Control group reached measure</td><td>                          The amount of conversions/events/revenue                          generated by the control group                          group, adjusted for the test                          group’s reach (this value is                          counterfactual and serves as                          a means to compare apples-to-apples).                        </td></tr><tr><td>Control group unreached measure</td><td>                          Raw measure minus counterfactual                          reached measure. This describes                          the total amount of conversions/events/revenue                          generated by users from the control                          group.                        </td></tr><tr><td>Control group per user measure</td><td>                          Counterfactual reached/raw measure                          of the control group (depending                          on whether or not the selected                          network supports reach) divided                          by group size/counterfactual                          reach of the control group.                        </td></tr><tr><td>Total incremental measure</td><td>                          Reached test measure minus control                          counterfactual reached measure.                        </td></tr><tr><td>Incremental per user measure</td><td>Per user measure minus control per user measure.</td></tr></tbody></table></figure><p> </p></td></tr></tbody></table>
+
+
 
 ## Raw data reports
 
 Use Incrementality raw data reports to analyze the interaction of users with remarketing campaigns:
 
-- **Contents:** Row-level data of users included in Incrementality experiments.
-- **Availability:**
-  - Via [Data Locker](https://support.appsflyer.com/hc/articles/360000877538)
-  - Data freshness: daily 19:00-23:00 UTC
+* **Contents:** Row-level data of users included in Incrementality experiments.
+* **Availability:**
+  * Via [Data Locker](/docs/data-locker-for-marketers)
+  * Data freshness: daily 19:00-23:00 UTC
 
 [Download example Incrementality raw data files](https://support.appsflyer.com/hc/article_attachments/360012600697)
 
 ### Available reports
 
-| Category | Report name | Data Locker folder |
-| --- | --- | --- |
-| First-seen | First-seen users | incrementality\_first\_seen\_users |
-| In-app events | Organic in-app events | incrementality\_organic\_inapps |
-| In-app events | Non-organic | incrementality\_inapps |
-| In-app events | Re-attributions | incrementality\_inapps\_reattr |
-| Sessions | Organic sessions | incrementality\_organic\_sessions |
-| Sessions | Non-organic | incrementality\_sessions |
-| Sessions | Re-attributions | incrementality\_sessions\_reattr |
-| Uninstalls | Uninstalls<br>(not currently populated) | incrementality\_uninstalls |
+
+
+<table><thead><tr><th>Category</th><th>Report name </th><th>Data Locker folder</th></tr></thead><tbody><tr><td>First-seen</td><td>First-seen users</td><td>incrementality_first_seen_users</td></tr><tr><td rowspan="3">In-app events</td><td>Organic in-app events</td><td>incrementality_organic_inapps</td></tr><tr><td>In-app events non-organic</td><td>incrementality_inapps</td></tr><tr><td>In-app events re-attributions</td><td>incrementality_inapps_reattr</td></tr><tr><td rowspan="3"><p>Sessions</p><p> </p><p> </p></td><td>Organic sessions</td><td>incrementality_organic_sessions</td></tr><tr><td>Sessions non-organic</td><td>incrementality_sessions</td></tr><tr><td>Sessions re-attributions</td><td>incrementality_sessions_reattr</td></tr><tr><td>Uninstalls</td><td>Uninstalls<br/>(not currently populated) </td><td>incrementality_uninstalls</td></tr></tbody></table>
+
+
 
 ### Report logic
 
 The basic logic underlying report structure is as follows:
 
-- **Users participating in the experiment—First-seen report**
-  - In Audiences, rules are set characterizing users to include in the experiment.
-  - When a given user, is identified as matching the rules, the event is recorded in the *first\_seen* report.
-    - Users are allocated randomly to a test or control group indicated by the *is\_control\_group* field.
-    - Users in the test group are allocated to a media source (*pid\_destination*) for retargeting.
-- **User engagement within the app:** User engagement with the app during the experiment is recorded in context-specific reports:
-  - **Engagement type:** Session or in-app event
-  - **User attribution status** when the user is first-seen: Organic, non-organic, re-attribution. For example, in the past, a user installed the app and was attributed to organic. As such, during an experiment, the attribution status is organic.
-- **Uninstalls:** Users uninstalling the app during the experiment. [Uninstall measurement](https://support.appsflyer.com/hc/articles/210289286) must be active.
+* **Users participating in the experiment—First-seen report**
+  * In Audiences, rules are set characterizing users to include in the experiment.
+  * When a given user, is identified as matching the rules, the event is recorded in the *first\_seen* report.
+    * Users are allocated randomly to a test or control group indicated by the *is\_control\_group* field.
+    * Users in the test group are allocated to a media source (*pid\_destination*) for retargeting.
+* **User engagement within the app:**User engagement with the app during the experiment is recorded in context-specific reports:
+  * **Engagement type:** Session or in-app event
+  * **User attribution status** when the user is first-seen: Organic, non-organic, re-attribution. For example, in the past, a user installed the app and was attributed to organic. As such, during an experiment, the attribution status is organic.
+* **Uninstalls:** Users uninstalling the app during the experiment. Uninstall measurement must be active.
 
 ### Data characteristics and fields
 
 Field availability varies according to report type as indicated below:
 
 #### Fields unique to Incrementality (per report type)
+
+
 
 | Field | Description | First seen | In-app events | Sessions | Uninstalls |
 | --- | --- | --- | --- | --- | --- |
@@ -194,47 +250,23 @@ Field availability varies according to report type as indicated below:
 | audience\_id | Unique identifier | Y | Y | Y | Y |
 | joined\_audience\_date | Date user first joined the audience | Y | Y | Y | Y |
 | audience\_name | Audience name (not unique) | Y | Y | Y | Y |
-| tm | Hour of day | | Y | Y | Y |
-| timestamp | Event time stamp YYYY-MM-DD HH:MM | | Y | Y | |
-| app\_ids | App ids associated with the audience rules | Y | | | |
+| tm | Hour of day |  | Y | Y | Y |
+| timestamp | Event time stamp YYYY-MM-DD HH:MM |  | Y | Y |  |
+| app\_ids | App ids associated with the audience rules | Y |  |  |  |
+
+
 
 #### Other Incrementality report fields (per report type)
 
-| Field | Display name\* | First seen | In-app events | Sessions | Uninstalls |
-| --- | --- | --- | --- | --- | --- |
-| advertising\_id | Advertising ID (GAID) | Y | Y | Y | Y |
-| android\_id | Android ID | | Y | Y | |
-| app\_id | App ID | Y | Y | Y | Y |
-| app\_name | App name | | Y | Y | |
-| app\_version | App version | | Y | Y | |
-| appsflyer\_id | Appsflyer ID | | Y | Y | Y |
-| revenue\_alt | App-specific currency | | Y | | |
-| bundle\_id | Bundle ID | | Y | Y | |
-| country | Country code | | Y | Y | Y |
-| currency | Currency code | | Y | Y | Y |
-| customer\_user\_id | Customer user ID | | Y | Y | |
-| brand | Device brand | | Y | Y | |
-| device\_category | Device category | | Y | Y | |
-| model | Device model | | Y | Y | |
-| device\_model | Device model | | Y | Y | |
-| device\_type | Device type | | Y | Y | |
-| event\_name | Event name | | Y | Y | Y |
-| event\_revenue | Event revenue | | Y | | |
-| event\_revenue\_currency | Event revenue currency | | Y | | |
-| event\_revenue\_u\_s\_d | Event revenue USD | | Y | | |
-| event\_time | Event time | | Y | Y | Y |
-| event\_value | Event value | | Y | Y | |
-| idfa | IDFA | Y | Y | Y | Y |
-| idfv | IDFV | | Y | Y | |
-| imei | IMEI | | Y | Y | |
-| is\_purchase\_validated | Is receipt validated | | Y | | |
-| os\_version | OS version | | Y | Y | |
-| platform | Platform | | Y | Y | Y |
-| sdk\_version | SDK version | | Y | Y | |
 
-\* [According to raw data specification](https://support.appsflyer.com/hc/articles/208387843-Raw-data-field-dictionary-V5-#data-fields-dictionary)
+
+<table><thead><tr><th>Field</th><th>Display name*</th><th>First seen</th><th>In-app events</th><th>Sessions</th><th>Uninstalls</th></tr></thead><tbody><tr><td>advertising_id</td><td>Advertising ID (GAID)</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td>android_id</td><td>Android ID</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td>app_id</td><td>App ID</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td>app_name</td><td>App name</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td>app_version</td><td>App version</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td>appsflyer_id</td><td>Appsflyer ID</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td>revenue_alt</td><td>App-specific currency</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td>bundle_id</td><td>Bundle ID</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td>country</td><td>Country code</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td>currency</td><td>Currency code</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td>customer_user_id</td><td>Customer user ID</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td>brand</td><td>Device brand</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td>device_category</td><td>Device category</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td>model</td><td>Device model</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td>device_model</td><td>Device model</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td>device_type</td><td>Device type</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td>event_name</td><td>Event name</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td>event_revenue</td><td>Event revenue</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td>event_revenue_currency</td><td>Event revenue currency</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td>event_revenue_u_s_d</td><td>Event revenue USD</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td>event_time</td><td>Event time</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td>event_value</td><td>Event value</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td>idfa</td><td>IDFA</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td>idfv</td><td>IDFV</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td>imei</td><td>IMEI</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td>is_purchase_validated</td><td>Is receipt validated</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td>os_version</td><td>OS version</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td>platform</td><td>Platform</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td>sdk_version</td><td>SDK version</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td colspan="6">* <a href="/docs/raw-data-field-dictionary#data-fields-dictionary">According to raw data specification</a></td></tr></tbody></table>
+
+
 
 ## Incrementality specifications and limitations
+
+
 
 | Trait | Remarks |
 | --- | --- |
@@ -243,21 +275,18 @@ Field availability varies according to report type as indicated below:
 | Agency access | Not available. Incrementality is available to advertiser accounts only. |
 | Agency transparency | You can measure campaigns run by agencies that have agency transparency enabled. |
 | Currency | USD |
-| Data freshness | Dashboard: daily at 18:00 UTC for the previous day<br>Raw data reports in Data Locker: daily at 19:00-23:00 for the previous day |
+| Data freshness | Dashboard: daily at 18:00 UTC for the previous day<br /><br />Raw data reports in Data Locker: daily at 19:00-23:00 for the previous day |
 | Historical data | N/A |
 | Non-organic data | Yes |
 | Organic data | Yes |
 | S2S events | In order to be measured in Incrementality, [S2S events](/docs/server-to-server-events-api-for-mobile-s2s-mobile#servertoserver-events-api-for-mobile) must include the advertising ID in their payload (IDFA for iOS, GAID for Android). |
 | Time zone | UTC |
 
-<Cards>
-  <Card title="Audiences guide" href="https://support.appsflyer.com/hc/articles/115002689186">
-    Learn how to define and manage target audiences for your experiments.
-  </Card>
-  <Card title="Incrementality testing for marketers blog" href="https://www.appsflyer.com/blog/tips-strategy/incrementality-testing-for-marketers/">
-    Read tips and strategies on incrementality testing for marketing campaigns.
-  </Card>
-  <Card title="Incrementality blog" href="https://www.appsflyer.com/blog/topic/incrementality/">
-    Explore more articles and insights on the topic of incrementality.
-  </Card>
-</Cards>
+
+> 📘 **Note**
+>
+> #### See also
+>
+> * [Audiences guide](/docs/audiences-guide)
+> * [Incrementality testing for marketers blog](https://www.appsflyer.com/blog/tips-strategy/incrementality-testing-for-marketers/)
+> * [Incrementality blog](https://www.appsflyer.com/blog/topic/incrementality/)

@@ -6,7 +6,7 @@ Learn about the reasons for differences in attribution between AppsFlyer and thi
 
 ## Overview
 
-Due to media sources' data-sharing policies, not all user-level [data is shared with third-party platforms](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) (such as analytics and marketing platforms). For these reasons, there may be discrepancies in attribution between data displayed on third-party platforms and data in AppsFlyer.
+Due to media sources' data-sharing policies, not all user-level [data is shared with third-party platforms](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) (such as analytics and marketing platforms). For these reasons, there may be discrepancies in attribution between data displayed on third-party platforms and data in AppsFlyer.
 
 > 📘 Note
 >
@@ -20,7 +20,7 @@ When it comes to sending postbacks to third-party platforms, there are different
 
 No postbacks are sent
 
-Postbacks for raw data events restricted by media sources, as detailed in [this table](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions), aren't sent to third-party platforms. This means third-party platforms don't get postbacks of such events, leading to less attribution on their platform compared to AppsFlyer.
+Postbacks for raw data events restricted by media sources, as detailed in [this table](/docs/about-raw-data-identifier-restrictions#media-source-restrictions), aren't sent to third-party platforms. This means third-party platforms don't get postbacks of such events, leading to less attribution on their platform compared to AppsFlyer.
 
 Postbacks are sent with no attribution
 
@@ -67,7 +67,7 @@ An advertiser uses Meta ads to place an ad. They are also working with Mixpanel 
 
 | On AppsFlyer | On Mixpanel |
 | --- | --- |
-| The advertiser sees 100 installs attributed to Meta ads.<br>30 of the installs were attributed using the `gp_referrer` parameter. These events are not restricted and appear in raw data reports. | The advertiser sees only 30 installs attributed to organic.<br>Mixpanel does not get postbacks for the 70 restricted events. The postbacks for the 30 installs attributed using the `gp_referrer` parameter are sent as organic. |
+| The advertiser sees 100 installs attributed to Meta ads.<br />30 of the installs were attributed using the `gp_referrer` parameter. These events are not restricted and appear in raw data reports. | The advertiser sees only 30 installs attributed to organic.<br />Mixpanel does not get postbacks for the 70 restricted events. The postbacks for the 30 installs attributed using the `gp_referrer` parameter are sent as organic. |
 
 </Tab>
 <Tab title="AMM accepted">
@@ -78,7 +78,7 @@ An advertiser uses Meta ads to place an ad and has accepted the AMM terms. They 
 
 | On AppsFlyer | On Mixpanel |
 | --- | --- |
-| The advertiser sees 100 installs attributed to Meta ads.<br>The install raw data report will include all 100 installs, not just the installs attributed via the gp\_referrer method | The advertiser sees 100 installs attributed to organic.<br>Because AMM is accepted, Mixpanel receives postbacks for all 100 installs. However, none of the postbacks include attribution data, so all installs appear as organic. |
+| The advertiser sees 100 installs attributed to Meta ads.<br />The install raw data report will include all 100 installs, not just the installs attributed via the gp\_referrer method | The advertiser sees 100 installs attributed to organic.<br />Because AMM is accepted, Mixpanel receives postbacks for all 100 installs. However, none of the postbacks include attribution data, so all installs appear as organic. |
 
 </Tab>
 </Tabs>
@@ -104,7 +104,7 @@ An advertiser uses Bing to place an ad. They're also working with Airship to opt
 | The advertiser sees 35 purchase events attributed to Bing. | The advertiser sees 84 purchase events from organic sources. 35 of them came from Bing, but they wouldn't know that since those purchase events appear as organic. |
 
 <Cards>
-  <Card title="FAQs on raw data content restrictions" href="https://support.appsflyer.com/hc/articles/360006868017#faq">
+  <Card title="FAQs on raw data content restrictions" href="/docs/about-raw-data-identifier-restrictions#faq">
     Read frequently asked questions regarding raw data content restrictions and data sharing.
   </Card>
 </Cards>

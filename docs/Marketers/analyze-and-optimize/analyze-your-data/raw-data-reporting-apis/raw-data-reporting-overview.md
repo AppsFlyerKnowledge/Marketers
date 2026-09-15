@@ -20,19 +20,19 @@ Reports are made available using the reporting tools listed in this section.
 
 Considerations:
 
-- The report date range relates to the activity (actual) date the event took place. This is in contrast to aggregated reports where the date range is [LTV-based](https://support.appsflyer.com/hc/articles/115005600889).
-- Fields descriptions—see the [data field dictionary](https://support.appsflyer.com/hc/articles/208387843).
+- The report date range relates to the activity (actual) date the event took place. This is in contrast to aggregated reports where the date range is [LTV-based](/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports).
+- Fields descriptions—see the [data field dictionary](/docs/raw-data-field-dictionary).
 
 #### Reporting tools
 
 | Tool | Description | Multiple /single app (1) | Data freshness capability (2) | Embed in scripts | Time zone | Currency |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Raw data export page](https://support.appsflyer.com/hc/articles/360008613838) | - Download report using the user interface<br/>- Format: CSV file | Single | Continuously updated | **x** | App-specific | App-specific |
-| [Pull API\*](https://support.appsflyer.com/hc/articles/360007530258) | - Download report using API calls.<br/>- Format: CSV files | Single | Continuously updated | **✓** | - Selectable<br/>- Default: UTC | - Selectable<br/>- Default: USD |
-| [Data Locker](https://support.appsflyer.com/hc/articles/360000877538) **P** | - Data streamed to a [bucket in the cloud](https://support.appsflyer.com/hc/articles/360017603577)<br/>- No volume limitations<br/>- Data availability window: 14 days.<br/>- Format: CSV or parquet | Multiple | Continuously updated with a lag of several hours | **✓** | UTC | USD |
-| [Push API](https://support.appsflyer.com/hc/articles/207034356) **P** | - User journey data (installs, in-apps, retargeting, SKAN) sent to your servers in real-time.<br/>- Format: JSON or query params | Can use the same endpoint | Minutes after the event is recorded in AppsFlyer | **✓** | UTC + app-specific | USD + app-specific |
-| [SDK Conversion data](https://support.appsflyer.com/hc/articles/360000726098) (3) | - Get attribution conversion data within the app.<br/>- Format: JSON | N/A | SDK conversion data retrieves user attribution data in up to 8 seconds from the first app launch (up to 5 seconds on AppsFlyer servers, plus end-to-end network delay). | **✓** | UTC | N/A |
-| **Notes and abbreviations:**<br/>(1) Multiple app support<br/>(2) Actual data freshness depends on the report itself, as some reports are Daily.<br/>(3) SDK conversion data retrieves user attribution data in up to 8 seconds from the first app launch (up to 5 seconds on AppsFlyer servers, plus end-to-end network delay), and therefore is the least accurate method.<br/>**(P)**Premium feature<br/>[(\*) Report generation quotas apply](https://support.appsflyer.com/hc/articles/207034366) | | | | | | |
+| [Raw data export page](/docs/raw-data-export-page) | - Download report using the user interface<br/>- Format: CSV file | Single | Continuously updated | **x** | App-specific | App-specific |
+| [Pull API\*](/docs/pull-api-raw-data) | - Download report using API calls.<br/>- Format: CSV files | Single | Continuously updated | **✓** | - Selectable<br/>- Default: UTC | - Selectable<br/>- Default: USD |
+| [Data Locker](/docs/data-locker-for-marketers) **P** | - Data streamed to a [bucket in the cloud](/docs/data-locker-cloud-service-setup)<br/>- No volume limitations<br/>- Data availability window: 14 days.<br/>- Format: CSV or parquet | Multiple | Continuously updated with a lag of several hours | **✓** | UTC | USD |
+| [Push API](/docs/push-api-streaming-raw-data) **P** | - User journey data (installs, in-apps, retargeting, SKAN) sent to your servers in real-time.<br/>- Format: JSON or query params | Can use the same endpoint | Minutes after the event is recorded in AppsFlyer | **✓** | UTC + app-specific | USD + app-specific |
+| [SDK Conversion data](/docs/conversion-data-payloads-and-scenarios) (3) | - Get attribution conversion data within the app.<br/>- Format: JSON | N/A | SDK conversion data retrieves user attribution data in up to 8 seconds from the first app launch (up to 5 seconds on AppsFlyer servers, plus end-to-end network delay). | **✓** | UTC | N/A |
+| **Notes and abbreviations:**<br/>(1) Multiple app support<br/>(2) Actual data freshness depends on the report itself, as some reports are Daily.<br/>(3) SDK conversion data retrieves user attribution data in up to 8 seconds from the first app launch (up to 5 seconds on AppsFlyer servers, plus end-to-end network delay), and therefore is the least accurate method.<br/>**(P)**Premium feature<br/>[(\*) Report generation quotas apply](/docs/report-generation-quotas-rate-limitations) | | | | | | |
 
 #### Tool limitations
 
@@ -41,7 +41,7 @@ Considerations:
 | Data limit | 1M rows per call | N/A | N/A | N/A |
 | Data selection options | Select data types. Limited field selection options | Select data types, fields, and in-apps | Select data types, fields, and in-apps | No |
 | Data availability window | 90 days | N/A | 14 days | Lifetime (available in the SDK) |
-| [(\*) Report generation quotas apply](https://support.appsflyer.com/hc/articles/207034366) | | | | |
+| [(\*) Report generation quotas apply](/docs/report-generation-quotas-rate-limitations) | | | | |
 
 #### Integration considerations
 
@@ -61,7 +61,7 @@ Raw data records occurring in a given context are grouped together in reports. F
 
 ### Report fields
 
-The [raw data](https://support.appsflyer.com/hc/articles/208387843) field dictionary contains fields relevant to user journey reports and some feature report fields. The principles are as follows:
+The [raw data](/docs/raw-data-field-dictionary) field dictionary contains fields relevant to user journey reports and some feature report fields. The principles are as follows:
 
 - **User journey:**
   - Have a common set of fields.
@@ -70,7 +70,7 @@ The [raw data](https://support.appsflyer.com/hc/articles/208387843) field dictio
 
 > 👍 Tip
 >
-> The best way to become familiar with the reports is to view reports. You can download your reports via the [Export data page](https://support.appsflyer.com/hc/articles/360008613838).
+> The best way to become familiar with the reports is to view reports. You can download your reports via the [Export data page](/docs/raw-data-export-page).
 
 For ease of understanding, user journey fields are divided into groups based on context.
 
@@ -111,7 +111,7 @@ User journey reports contain data collected for events occurring during a user's
 - Conversion events: Either a re-engagement or re-attribution.
 - Subsequent in-app events performed as part of the re-engagement. Consider:
   - Retargeting data is always non-organic.
-  - Retargeting in-app events are in both the UA and retargeting in-app event reports. See [retargeting double-attribution](https://support.appsflyer.com/hc/articles/360016371077) methodology.
+  - Retargeting in-app events are in both the UA and retargeting in-app event reports. See [retargeting double-attribution](/docs/resolve-retargeting-double-attribution) methodology.
 
 <Image src="https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png" alt="Raw data - Retargeting" />
 
@@ -151,7 +151,7 @@ To follow a user journey, combine the reports that relate to the part of the jou
 | Report | Characteristics |
 | --- | --- |
 | Context | A user engages with a campaign and clicks or views an ad. |
-| Characteristics | The reports contain a record of the attribution link and HTTP headers present when a user clicks or [views](https://support.appsflyer.com/hc/articles/210084473-View-through-attribution-guide#set-impression-links) an ad. |
+| Characteristics | The reports contain a record of the attribution link and HTTP headers present when a user clicks or [views](/docs/measure-view-through-engagements#set-impression-links) an ad. |
 | Use case | - Optimize campaigns that don't lead to an app open (install, re-attribution, re-engagement).<br/>- Retarget these users using different campaigns. |
 | Example report | [Clicks](https://docs.google.com/spreadsheets/d/e/2PACX-1vRcNRnKgPP5ZRL51o3b9PDhbFv6VFG7xe9xHqCsIC7HwqO2ERLV5dh4bS7pr-WONxpUXvsCc64eTzzN/pub?gid=1036692270&single=true&output=csv) |
 | Remarks | SRN data not available. |
@@ -164,7 +164,7 @@ To follow a user journey, combine the reports that relate to the part of the jou
 | Context | When a user opens an app for the first time. | After a user engages with a retargeting ad and then opens the app. A retargeting conversion being a re-engagement or re-attribution.<br/>See [Retargeting attribution guide.](/docs/retargeting-attribution-guide#retargeting-reports-and-raw-data) |
 | Use cases | - Generate aggregated reports using fields not available via AppsFlyer analytics tools.<br/>- Combine with other reports for advanced, cross-section analysis.<br/>- Analyze performance across different dimensions such as cities, metropolitan areas, and so on.<br/>- Segment users according to country, city, and language for targeting purposes.<br/>- Obtain user device IDs for retargeting purposes. | Similar to installs. |
 | Organic vs. non-organic | - **Non-organic:** The attribution and contributors attribution field groups are populated<br/>- **Organic:** The media source field is either blank, null, or organic. Consider this when you load data into your systems. | Not applicable |
-| Example report | [Installs](https://docs.google.com/spreadsheets/d/e/2PACX-1vR2yvNGmZp8ataHBj89CFq856PmDixnyjKK75O8fQcS9TjT8J2jBAnJoTn3350NV-7pCSlaT0oh8ebs/pub?output=csv) | Retargeting conversions report has the same structure as the installs report. Some fields are populated in the context of retargeting. See [retargeting raw data](https://support.appsflyer.com/hc/articles/207033786#retargeting-reports-and-raw-data). |
+| Example report | [Installs](https://docs.google.com/spreadsheets/d/e/2PACX-1vR2yvNGmZp8ataHBj89CFq856PmDixnyjKK75O8fQcS9TjT8J2jBAnJoTn3350NV-7pCSlaT0oh8ebs/pub?output=csv) | Retargeting conversions report has the same structure as the installs report. Some fields are populated in the context of retargeting. See [retargeting raw data](/docs/retargeting-attribution-guide#retargeting-reports-and-raw-data). |
 
 #### In-app events
 
@@ -175,13 +175,13 @@ To follow a user journey, combine the reports that relate to the part of the jou
 | Use case | Use the report to:<br/>- Gain insights by observing the user journey during the user's lifetime<br/>- Combine the install and in-app-event raw data to follow the complete user journey. |
 | Event values | **Event value field**<br/>The event value field contains all the data related to the event in a JSON. You can load this into your BI system for further analysis.<br/>**Tip!** You can use [Power Query in Microsoft Excel](https://docs.microsoft.com/en-us/power-query/parse-json-xml) to parse the event parameters from the JSON text strings.<br/>```auto<br/>Auto<br/>{"af_level":"10","af_user_journey":"3387","arena":"7","char_type":"paladin"}<br/>```<br/>**Reporting revenue**<br/>The revenue and ROI data in AppsFlyer are derived from the af\_revenue sent in events.<br/>When the af\_revenue parameter is sent in an in-app-event, AppsFlyer uses this to populate the event revenue field. It is in this field that AppsFlyer uses to update the dashboard and aggregated reports.<br/>Note! Use only the af\_revenue parameter with in-app-events that describe **actual revenue generated.** For other events that involve revenue, but are not final, for example, add\_to\_cart, use different parameters like af\_price |
 | Example report | [In-app events](https://docs.google.com/spreadsheets/d/e/2PACX-1vQhOF-g3HeqZt3rXx7WZVQnB54p7ALW_IEpnJ9xtAkrcb9XzZwweiNCZzEmuX7q0i1g6yYMxYtuuX1c/pub?output=csv) |
-| Remarks | - Retargeting in-app events are [doubly recorded](https://support.appsflyer.com/hc/articles/360016371077) in both the UA and retargeting in-app event raw data reports.<br/>- In-app events don't include the launch (af\_app\_opened) event. This is available in the [sessions](https://support.appsflyer.com/hc/articles/360000520785) raw data report.<br/>- Geo location: Is derived using the user IP address at the time the event is performed. |
+| Remarks | - Retargeting in-app events are [doubly recorded](/docs/resolve-retargeting-double-attribution) in both the UA and retargeting in-app event raw data reports.<br/>- In-app events don't include the launch (af\_app\_opened) event. This is available in the [sessions](/docs/measure-sessions) raw data report.<br/>- Geo location: Is derived using the user IP address at the time the event is performed. |
 
 #### Sessions
 
 | Report | Characteristics |
 | --- | --- |
-| Context | When the user opens the app, a session event is sent to AppsFlyer. The event is recorded if the [minimum time between sessions](https://support.appsflyer.com/hc/articles/360000520785) threshold is exceeded. |
+| Context | When the user opens the app, a session event is sent to AppsFlyer. The event is recorded if the [minimum time between sessions](/docs/measure-sessions) threshold is exceeded. |
 | Characteristics | The report structure is the same as in-app event reports. Sessions (session events) are in a separate report due to the large number of such events. |
 | Use case | Understand user engagement with the app. |
 | Example report | The sessions report is similar to the in-app events report. Note: In raw data, sessions have the event name _launch_. |
@@ -191,7 +191,7 @@ To follow a user journey, combine the reports that relate to the part of the jou
 | Report | Characteristics |
 | --- | --- |
 | Context | Record of users uninstalling the app. |
-| Characteristics | - This report updates daily and not continuously, as is the case for other user journey reports.<br/>- In the report, the event time represents the time AppsFlyer determines the app was uninstalled, and not the actual uninstall itself. See [Uninstall measurement.](https://support.appsflyer.com/hc/articles/210289286-Uninstall-Measurement) |
+| Characteristics | - This report updates daily and not continuously, as is the case for other user journey reports.<br/>- In the report, the event time represents the time AppsFlyer determines the app was uninstalled, and not the actual uninstall itself. See Uninstall measurement. |
 | Fields available | - If the user comes from a non-organic media source, media source fields are populated.<br/>- Consider that the uninstall event is generated by AppsFlyer servers after determining that the user uninstalled. Consequently, many fields aren't populated.<br/>- User identifiers available are those recorded at the time of install. The CUID is never available.<br/>- Geo-related fields are populated with the user location at the time of engagement with the media source (click or impression). If the engagement location isn't available then the location associated with the install event is used. |
 | Example report | [Uninstalls](https://docs.google.com/spreadsheets/d/e/2PACX-1vRcNRnKgPP5ZRL51o3b9PDhbFv6VFG7xe9xHqCsIC7HwqO2ERLV5dh4bS7pr-WONxpUXvsCc64eTzzN/pub?gid=1558773473&single=true&output=csv) Note! In the example, for clarity, row 2 indicates which fields are populated if relevant data is available. |
 | Use cases | - Analyze the uninstall event, device, and user characteristics.<br/>- Build an uninstall event audience for retargeting. |
@@ -231,7 +231,7 @@ To follow a user journey, combine the reports that relate to the part of the jou
 | Details |
 | --- |
 | **What is the difference between the timestamps?**<br/>The timestamps are common to all the reports. This makes it possible to combine different reports.<br/>The following timestamps are relevant:<br/>- **Attributed touch time**: The time the user engaged with an ad.<br/>- **Install** **time**: The time that the app is launched for the first time.<br/>- **Event time**: The time the event takes place.<br/>Consider:<br/>- In install reports, the install and event times are the same.<br/>- In in-app event reports, the install and event times are different. The difference can show the time that passes between app launch and user engagement with the app. |
-| **What is the purpose of the contributor field?**<br/>The contributor field lists contributor media sources. Sometimes referred to as [Assisted Installs](https://support.appsflyer.com/hc/articles/207040506-Assisted-Installs#assisted-installs-reporting). In Protect360, it is also used for [hijacked install attribution correction](https://support.appsflyer.com/hc/articles/360015179337#hijacked-installs-attribution-correction). |
+| **What is the purpose of the contributor field?**<br/>The contributor field lists contributor media sources. Sometimes referred to as [Assisted Installs](/docs/measure-assisted-installs#assisted-installs-reporting). In Protect360, it is also used for [hijacked install attribution correction](/docs/protect360-raw-data-reports#hijacked-installs-attribution-correction). |
 | **What is the keywords field—why isn't available in all non-organic installs?**<br/>Installs attributed to Google Ads or Apple Ads, can contain the keywords or keyword ID associated with the ad bringing the install. |
 
 ### Install report tips
@@ -276,9 +276,9 @@ Since the install and in-app events reports have the same structure, they can be
 
 Reports relating to additional features available in the platform
 
-- [Ad revenue](https://support.appsflyer.com/hc/articles/217490046-Ad-revenue-attribution-guide#ad-revenue-raw-data)
-- [Incrementality](https://support.appsflyer.com/hc/articles/360009360978-Incrementality-guide#raw-data-reports)
-- [SKAdNetwork](https://support.appsflyer.com/hc/articles/360014261518-SKAdNetwork-raw-data-reports-via-Data-Locker)
+- [Ad revenue](/docs/roi360-guide-ad-revenue-attribution#ad-revenue-raw-data)
+- [Incrementality](/docs/incrementality-for-remarketing-overview#raw-data-reports)
+- [SKAdNetwork](/docs/skan-raw-data-reports)
 
 ### Postbacks
 
@@ -286,13 +286,13 @@ Use postback reports, to review copies of data sent to an ad network. For exampl
 
 - The report contains:
   - Copies of postbacks sent to the attributed media source.
-  - [Raw data fields](https://support.appsflyer.com/hc/articles/208387843-Raw-data-report-specification-V5) and additional fields as detailed in this section.
+  - [Raw data fields](/docs/raw-data-field-dictionary) and additional fields as detailed in this section.
 - The report doesn't contain:
   - SRN installs.
   - In-app events relating to Meta ads, X Ads, and Apple Ads.
-  - Unattributed partner postbacks. See [events attributed to any partner or organic](https://support.appsflyer.com/hc/articles/4410395957521#g-in-app-event-postback-configuration).
-  - Organic users. See [about organic installs.](https://support.appsflyer.com/hc/articles/4410395957521#default%20postbacks)
-- Starting in March 2021, fields are populated according to a network's Advanced Privacy setting. Meaning, if Advanced Privacy is on, some fields, like user identifiers aren't included. See [Advanced Privacy postback specification for ad networks.](https://support.appsflyer.com/hc/articles/360011316197#advanced-privacy-postback-specification)
+  - Unattributed partner postbacks. See [events attributed to any partner or organic](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration).
+  - Organic users. See [about organic installs.](/docs/set-up-an-integrated-partner#default%20postbacks)
+- Starting in March 2021, fields are populated according to a network's Advanced Privacy setting. Meaning, if Advanced Privacy is on, some fields, like user identifiers aren't included. See [Advanced Privacy postback specification for ad networks.](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification)
 - [Get postback reports by PULL API](https://dev.appsflyer.com/hc/reference/get_app-id-postbacks-v5)
 
 #### Postback reports (available via the Export Data page and Pull API)
@@ -315,8 +315,8 @@ Use postback reports, to review copies of data sent to an ad network. For exampl
 
 ### Protect360 fraud and validation rules
 
-- See [Protect360](https://support.appsflyer.com/hc/articles/360015179337) and [validation rules](https://support.appsflyer.com/hc/articles/115004703926#outcomes) raw data reports
-- Ad networks and agencies need advertiser [permission](https://support.appsflyer.com/hc/articles/4410395957521#access-protect360-dashboard-raw-data) to access Protect360 and Validation Rules reports
+- See [Protect360](/docs/protect360-raw-data-reports) and [validation rules](/docs/implement-validation-rules-to-prevent-fraud#outcomes) raw data reports
+- Ad networks and agencies need advertiser [permission](/docs/set-up-an-integrated-partner#access-protect360-dashboard-raw-data) to access Protect360 and Validation Rules reports
 
 **To grant an integrated partner permission to access Protect360:**
 
@@ -328,7 +328,7 @@ Use postback reports, to review copies of data sent to an ad network. For exampl
 #### See also
 
 <Cards>
-  <Card title="Aggregate reports and analytics" href="https://support.appsflyer.com/hc/articles/360005437257">
+  <Card title="Aggregate reports and analytics" href="/docs/aggregated-and-analytics-reporting-overview">
     Learn more about aggregate reports and analytics in AppsFlyer.
   </Card>
 </Cards>

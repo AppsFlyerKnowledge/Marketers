@@ -32,23 +32,23 @@ There are two versions of OneLink Smart Script:
 <Tabs>
 <Tab title="OneLink Smart Script V2 (recommended)">
 
-[OneLink Smart Script V2 (recommended)](https://support.appsflyer.com/hc/articles/4413588932241): If you are setting up OneLink Smart Script for the first time, this is the preferred version to use. It can be configured in the AppsFlyer UI, the developer work portion is easier, and it can also be set up using Google Tag Manager.
+[OneLink Smart Script V2 (recommended)](/docs/set-up-smart-script-to-convert-web-visitors): If you are setting up OneLink Smart Script for the first time, this is the preferred version to use. It can be configured in the AppsFlyer UI, the developer work portion is easier, and it can also be set up using Google Tag Manager.
 
 </Tab>
 <Tab title="OneLink Smart Script V1 (legacy)">
 
-[OneLink Smart Script V1 (legacy)](https://support.appsflyer.com/hc/articles/4415354290321): If you already have Onelink Smart Script set up, use the documentation for this version to maintain and edit this script. **Note**: Although not mandatory, consider migrating to V2.
+[OneLink Smart Script V1 (legacy)](/docs/legacy-onelink-smart-script-v1-setup): If you already have Onelink Smart Script set up, use the documentation for this version to maintain and edit this script. **Note**: Although not mandatory, consider migrating to V2.
 
 </Tab>
 </Tabs>
 
 > 📘 Note
 >
-> Not sure whether OneLink Smart Script is the right solution for you? [Compare](https://support.appsflyer.com/hc/articles/360001237818) OneLink Smart Script with other AppsFlyer web-to-app solutions.
+> Not sure whether OneLink Smart Script is the right solution for you? [Compare](/docs/convert-your-mobile-web-visitors-to-app-users) OneLink Smart Script with other AppsFlyer web-to-app solutions.
 
 ### Examples
 
-The examples in this section demonstrate how OneLink Smart Script is used to generate outgoing OneLink URLs that provide accurate attribution, or deep linking functionality. For use cases of campaign types with particular media sources, see [Use cases](https://support.appsflyer.com/hc/articles/4413588932241#use-cases).
+The examples in this section demonstrate how OneLink Smart Script is used to generate outgoing OneLink URLs that provide accurate attribution, or deep linking functionality. For use cases of campaign types with particular media sources, see [Use cases](/docs/set-up-smart-script-to-convert-web-visitors#use-cases).
 
 ### Attribution
 
@@ -70,4 +70,4 @@ When she clicks the link, it redirects her to the hotel’s mobile website. Ther
 
 > 📘 Note
 >
-> The deep linking is in accordance with the app settings implemented by the app developers. [Learn more](https://support.appsflyer.com/hc/articles/208874366#create-a-onelink-link).
+> The deep linking is in accordance with the app settings implemented by the app developers. [Learn more](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link).

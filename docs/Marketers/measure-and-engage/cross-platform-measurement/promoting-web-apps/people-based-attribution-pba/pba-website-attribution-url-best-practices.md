@@ -16,7 +16,7 @@ The AppsFlyer website attribution solution supports several campaign parameter c
 - Click IDs from specific channels like Google, DoubleClick, and Microsoft
 - [Lowest priority] UTM
 
-The [PBA media source attribution rules](https://support.appsflyer.com/hc/articles/360002386997-PBA-media-source-attribution-rules-) determine how a given user is attributed. Parameter classes are ranked by priority. If more than one parameter class is found on a link, the class having the highest priority is awarded the attribution.
+The [PBA media source attribution rules](/docs/pba-media-source-attribution-rules) determine how a given user is attributed. Parameter classes are ranked by priority. If more than one parameter class is found on a link, the class having the highest priority is awarded the attribution.
 
 #### Supported parameters
 

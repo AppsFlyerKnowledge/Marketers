@@ -6,12 +6,12 @@ At a glance: Learn how to configure DCP to perform SKU-level attribution based o
 
 ## Overview
 
-After [preparing the conversion, engagement, and campaign-mapping](https://support.appsflyer.com/hc/articles/32144170371985) data, you can configure DCP to use them for measurement and attribution:
+After [preparing the conversion, engagement, and campaign-mapping](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement) data, you can configure DCP to use them for measurement and attribution:
 
 1. [**Define campaign type**](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#select-campaign-type-onsite-offsite-or-both) – Choose on-site, off-site, or combined. This determines how DCP processes your data and sets the required configuration tasks.
 2. [**Assign tasks**](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#assign-configuration-task) – The owner assigns each configuration task to the collaborator with access to the relevant data.
 3. [**Configure tasks**](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-onsite-campaign-measurement) – Collaborators configure conversions, engagements, and campaign mapping. This includes setting up on-site and off-site campaigns so all data is connected, mapped, and ready for attribution.
-4. [**Run and manage measurements**](https://support.appsflyer.com/hc/articles/44427723216017--WIP-Run-and-manage-measurement) - Run measurements live or historical, duplicate them, re-run them, or change their scope.
+4. [**Run and manage measurements**](/docs/data-collaboration-platform-dcp-run-and-manage-measurement) - Run measurements live or historical, duplicate them, re-run them, or change their scope.
 
 ## Start the measurement setup
 
@@ -65,7 +65,7 @@ In some cases, it may be necessary to revoke a configuration task assignment fro
 
 To remove a configuration task assignment, follow the steps below:
 
-1. Go to collaboration measurement, see [Open measurement settings](https://support.appsflyer.com/hc/articles/38354928391313-Set-up-campaign-measurement#open-measurement-settings).
+1. Go to collaboration measurement, see Open measurement settings.
 2. In the relevant configuration step, from the **Assignee** list, remove the assigned collaborator.
 
 ## Configure on-site and off-site campaign measurement
@@ -78,10 +78,10 @@ Configure the campaign measurement setup in Measurement settings. Use the steps 
 To set up an [on-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-campaigns), follow these steps:
 
 1. [Start the measurement setup](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#open-measurement-settings).
-2. [Set up the campaigns task](https://support.appsflyer.com/hc/articles/38190881693969-Set-Campaigns-task)
-3. [Set up the conversions task](https://support.appsflyer.com/hc/articles/38187770114449-Set-the-conversion-task)
-4. [Set up the engagements task](https://support.appsflyer.com/hc/articles/38188042548113-Set-Engagements-task)
-5. [Set up the lookback windows task](https://support.appsflyer.com/hc/articles/38191154658193-Set-Lookback-windows-task)
+2. [Set up the campaigns task](/docs/set-up-the-campaigns-task)
+3. [Set up the conversions task](/docs/set-up-the-conversions-task)
+4. [Set up the engagements task](/docs/set-up-the-engagements-task)
+5. [Set up the lookback windows task](/docs/set-up-the-lookback-windows-task)
 
 </Tab>
 <Tab title="Off-site campaign measurement">
@@ -89,10 +89,10 @@ To set up an [on-site campaign](/docs/data-collaboration-platform-dcp-collaborat
 To set up an [off-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#off-site-campaigns), follow these steps:
 
 1. [Start the measurement setup](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#open-measurement-settings).
-2. [Set up the campaigns task](https://support.appsflyer.com/hc/articles/38190881693969-Set-Campaigns-task)
-3. [Set up the conversions task](https://support.appsflyer.com/hc/articles/38187770114449-Set-the-conversion-task)
-4. [Set up the media partners task](https://support.appsflyer.com/hc/articles/38191067035153-Set-Media-partners-task)
-5. [Set up the lookback windows task](https://support.appsflyer.com/hc/articles/38191154658193-Set-Lookback-windows-task)
+2. [Set up the campaigns task](/docs/set-up-the-campaigns-task)
+3. [Set up the conversions task](/docs/set-up-the-conversions-task)
+4. [Set up the media partners task](/docs/set-up-the-media-partners-task)
+5. [Set up the lookback windows task](/docs/set-up-the-lookback-windows-task)
 
 </Tab>
 <Tab title="Combined campaign measurement">
@@ -100,11 +100,11 @@ To set up an [off-site campaign](/docs/data-collaboration-platform-dcp-collabora
 To set up a [combined on-site and off-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-and-off-site-campaigns), follow these steps:
 
 1. [Start the measurement setup](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#open-measurement-settings).
-2. [Set up the campaigns task](https://support.appsflyer.com/hc/articles/38190881693969-Set-Campaigns-task)
-3. [Set up the conversions task](https://support.appsflyer.com/hc/articles/38187770114449-Set-the-conversion-task)
-4. [Set up the engagements task](https://support.appsflyer.com/hc/articles/38188042548113-Set-Engagements-task)
-5. [Set up the media partners task](https://support.appsflyer.com/hc/articles/38191067035153-Set-Media-partners-task)
-6. [Set up the lookback windows task](https://support.appsflyer.com/hc/articles/38191154658193-Set-Lookback-windows-task)
+2. [Set up the campaigns task](/docs/set-up-the-campaigns-task)
+3. [Set up the conversions task](/docs/set-up-the-conversions-task)
+4. [Set up the engagements task](/docs/set-up-the-engagements-task)
+5. [Set up the media partners task](/docs/set-up-the-media-partners-task)
+6. [Set up the lookback windows task](/docs/set-up-the-lookback-windows-task)
 
 </Tab>
 </Tabs>

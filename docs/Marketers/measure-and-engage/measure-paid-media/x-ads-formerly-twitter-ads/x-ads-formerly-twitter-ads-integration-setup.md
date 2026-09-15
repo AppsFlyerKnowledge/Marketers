@@ -14,7 +14,7 @@ X Ads is an Advanced Self-Reporting Network (SRN), enabling AppsFlyer to support
    - If both the install event and the engagement include a mobile advertiser ID (MAID), AppsFlyer performs deterministic ID matching.
    - If either the install or the engagement is missing an advertising ID, probabilistic modeling is used for attribution, unless the customer has otherwise configured it.
 2. All install postbacks are sent to X Ads through the customer's integration, regardless of whether the install is attributed to X Ads.
-3. When an advertiser ID is unavailable, and [Advanced Privacy (AP)](https://support.appsflyer.com/hc/articles/360011316197) is active, certain fields in postbacks sent to X Ads will be restricted. The restricted fields are:
+3. When an advertiser ID is unavailable, and [Advanced Privacy (AP)](/docs/advanced-privacy-guide-postback-macros-for-ad-networks) is active, certain fields in postbacks sent to X Ads will be restricted. The restricted fields are:
    - X Ads engagement ID
    - Hashed device ID
    - IP address
@@ -49,16 +49,16 @@ X Ads is an Advanced Self-Reporting Network (SRN), enabling AppsFlyer to support
 11. Authorize AppsFlyer to use your X Ads account by clicking **Authorize app**.
 12. Turn on **Activate Partner** again to display the **Integration** tab settings and enable attribution.
 
-    **Note:** The toggle must stay on (activated) for as long as you work with the partner. Learn more about [partner activation.](https://support.appsflyer.com/hc/articles/360000844778)
+    **Note:** The toggle must stay on (activated) for as long as you work with the partner. Learn more about [partner activation.](/docs/partner-activation-deactivation)
 13. Select your X Ads accounts to activate them, then click **Save & Close**.
 
 ## X Ads attribution setup
 
-For a detailed description of the partner configuration page Header, click [here](https://support.appsflyer.com/hc/articles/4410395957521).
+For a detailed description of the partner configuration page Header, click [here](/docs/set-up-an-integrated-partner).
 
 ## Integration tab
 
-The **Integration Tab** is divided into different sections, as described below. [Partner must be activated](https://support.appsflyer.com/hc/articles/360000844778) on the first visit to enable its setup.
+The **Integration Tab** is divided into different sections, as described below. [Partner must be activated](/docs/partner-activation-deactivation) on the first visit to enable its setup.
 
 ### Ad account connected
 
@@ -74,8 +74,8 @@ For iOS apps only: The **Advanced Privacy (AP)** toggle lets you control the lev
 
 When AP toggle is ON:
 
-- Postbacks follow the [Advanced Privacy template](https://support.appsflyer.com/hc/articles/360011316197).
-- Only [aggregated and anonymous data](https://support.appsflyer.com/hc/articles/360018515798) is shared. No device-level identifiers are included.
+- Postbacks follow the [Advanced Privacy template](/docs/advanced-privacy-guide-postback-macros-for-ad-networks).
+- Only [aggregated and anonymous data](/docs/apply-aggregated-advanced-privacy-framework) is shared. No device-level identifiers are included.
 
 > 📘 Note
 >
@@ -110,9 +110,9 @@ For retargeting campaigns on X Ads, AppsFlyer supports **Re-engagement** measure
 
 > ❗️ Important!
 >
-> Ensure Retargeting is enabled for the app on the App Settings page. For details, click [here](https://support.appsflyer.com/hc/articles/211719806-App-settings-#reengagement-attribution).
+> Ensure Retargeting is enabled for the app on the App Settings page. For details, click [here](/docs/app-settings#reengagement-attribution).
 
-[X Ads retargeting attribution](https://support.appsflyer.com/hc/articles/115000111486) includes only re-engagement conversions.
+X Ads retargeting attribution includes only re-engagement conversions.
 
 Turn on the **Re-engagement attribution** toggle to start attributing re-engagements for X Ads.
 
@@ -138,7 +138,7 @@ Set the duration of the **Re-engagement window** (the period when the user's in-
 
 #### Ignore active users for retargeting
 
-Set an inactivity window period to prevent recording retargeting conversions for active users within the specified time frame. See more about the [Retargeting inactivity period](https://support.appsflyer.com/hc/articles/360009305817-Retargeting-inactivity-period).
+Set an inactivity window period to prevent recording retargeting conversions for active users within the specified time frame. See more about the [Retargeting inactivity period](/docs/set-retargeting-inactivity-window).
 
 ### In-app event postback settings
 
@@ -155,14 +155,14 @@ In this section, you can map your AppsFlyer events with your partners via postba
 
 | Parameter | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br>**Tip**: Don't see the event you are looking for?<br>   - Make sure to activate the event on a device with a non-organic installation and recheck.<br>   - Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](https://support.appsflyer.com/hc/articles/208439256#custom-events) |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<br />   - Make sure to activate the event on a device with a non-organic installation and recheck.<br />   - Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
 | **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Select the most suitable pre-defined AppsFlyer event from the drop-down box. |
-| **for users from** | Select the sending option for the event:<br>#### Note<br>For X Ads to receive agency-attributed postbacks, you must select **All media sources, including organic**. Otherwise, X Ads won't receive such postbacks. <br>   - **This partner only**: send postbacks only when this event is attributed to this partner.<br>   - **All media sources, including organic**: send postbacks for events attributed to any partner and organic events. |
-| **including** | - **No data (default)**: send only the event itself without the event value.<br>   - **Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).<br>   - **Values without revenue**: send all the parameters **excluding** the revenue value. |
+| **for users from** | Select the sending option for the event:<br />#### Note<br />For X Ads to receive agency-attributed postbacks, you must select **All media sources, including organic**. Otherwise, X Ads won't receive such postbacks. <br />   - **This partner only**: send postbacks only when this event is attributed to this partner.<br />   - **All media sources, including organic**: send postbacks for events attributed to any partner and organic events. |
+| **including** | - **No data (default)**: send only the event itself without the event value.<br />   - **Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).<br />   - **Values without revenue**: send all the parameters **excluding** the revenue value. |
 
 5. [Optional] Click ![conditional-iae-postbacks-icon.png](https://files.readme.io/d84715dd43041f10684d42e4fe56fd4f76aa4c38fbf9df227c8f8f5610c4f859-19616850611857.png) to set conditions for sending certain in-app events to the partner.
 
-Learn more about [conditional in-app event postbacks](https://support.appsflyer.com/hc/articles/208439256#conditional-inapp-event-postbacks).
+Learn more about [conditional in-app event postbacks](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks).
 
 ## Attribution link tab
 
@@ -170,22 +170,22 @@ X Ads does not use attribution links for attribution.
 
 > 📘 Note
 >
-> For all [self-reporting networks (SRNs)](https://support.appsflyer.com/hc/articles/360001546905-About-self-reporting-networks-SRNs-), such as Meta ads, Apple Ads, Google Ads, X Ads, etc., this tab is not functional since they don't use external attribution links.
+> For all [self-reporting networks (SRNs)](/docs/self-reporting-networks-srns), such as Meta ads, Apple Ads, Google Ads, X Ads, etc., this tab is not functional since they don't use external attribution links.
 
 ## Cost tab
 
 The cost integration provides the following aggregated data:
 
-- Cost data for your campaigns, adsets, ads, channel, and geo/countries. See the [ad network cost integration table](https://support.appsflyer.com/hc/articles/207040526-Ad-cost-measurement-guide#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features.
+- Cost data for your campaigns, adsets, ads, channel, and geo/countries. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features.
 
 **Note:** Cost data requires an [ROI360](/docs/roi360-cost-aggregation-overview) subscription.
 - Data on clicks, impressions, and enriched data (keywords, campaign names, and adset).
 
 **To enable the cost API**:
 
-- Follow [these integration instructions](https://support.appsflyer.com/hc/articles/360008850257#enable-cost-api).
+- Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
 
-[View your cost API status](https://support.appsflyer.com/hc/articles/360008850257#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 ## Ad revenue tab
 
@@ -207,11 +207,11 @@ Use these toggles to give the ad network permissions to handle its own configura
 - **Allow access to your aggregate revenue data** - only to the revenue data attributed to the partner
 - **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about granting [ad network permissions.](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab)
+Learn more about granting [ad network permissions.](/docs/set-up-an-integrated-partner#permissions-tab)
 
 ### Agency permissions
 
-Learn about [granting agency permissions](https://support.appsflyer.com/hc/articles/4410395957521#agency-permissions).
+Learn about [granting agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 ## X-Ads features
 
@@ -236,7 +236,7 @@ To measure app activity from X non-app campaigns and gain valuable insights into
 
 ### X Ads and AppsFlyer SKAN interoperation
 
-X Ads sends SKAdNetwork postback data via a dedicated API. SKAN data from X Ads will be displayed in the [SKAN dashboard](https://support.appsflyer.com/hc/articles/360011307357-SKAdNetwork-SKAN-dashboard-by-AppsFlyer).
+X Ads sends SKAdNetwork postback data via a dedicated API. SKAN data from X Ads will be displayed in the [SKAN dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer).
 
 X Ads enriches SKAN postbacks with the following data fields:
 
@@ -263,14 +263,14 @@ Through the AMM Program, advertisers may receive more complete user-level data b
 
 The following fields in the Advanced SRN integration for X Ads **replace** their legacy counterparts across the AppsFlyer dashboard, aggregated reports, and event-level raw data.
 
-| **AppsFlyer’s**<br>**Data Column** | **Legacy SRN** | Advanced SRN |
+| **AppsFlyer’s**<br />**Data Column** | **Legacy SRN** | Advanced SRN |
 | --- | --- | --- |
 | **PID** | Twitter | Twitter |
 | **Campaign Name** | Campaign Name | Campaign name |
-| **Campaign ID** | Campaign ID<br>(base36: different X's dashboard, e.g. 21I3V9) | Campaign ID<br>(base10: same as X's dashboard, e.g. 123456789) |
-| **Adset Name** | Line Item ID<br>(base36: different X's dashboard, e.g. 21I3V9) | Line Item Name |
-| **Adset ID** | Line Item ID<br>(base36: different X's dashboard, e.g. 21I3V9) | Line Item ID<br>(base10: same as X's dashboard, e.g. 123456789) |
-| **Ad Name** | Tweet ID | Ad Name<br>(if available) |
+| **Campaign ID** | Campaign ID<br />(base36: different X's dashboard, e.g. 21I3V9) | Campaign ID<br />(base10: same as X's dashboard, e.g. 123456789) |
+| **Adset Name** | Line Item ID<br />(base36: different X's dashboard, e.g. 21I3V9) | Line Item Name |
+| **Adset ID** | Line Item ID<br />(base36: different X's dashboard, e.g. 21I3V9) | Line Item ID<br />(base10: same as X's dashboard, e.g. 123456789) |
+| **Ad Name** | Tweet ID | Ad Name<br />(if available) |
 | **Ad ID** | Tweet ID | Tweet ID |
 | **Match Type** | srn | id\_matching / probabilistic |
 

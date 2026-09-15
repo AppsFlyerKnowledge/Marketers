@@ -21,10 +21,10 @@ The following table lists the tasks required to integrate your Amazon Vega OS CT
 
 | **Task** | **Actions** | **Who's involved** |
 | --- | --- | --- |
-| App setup | - [Create an AppsFlyer account](https://www.appsflyer.com/get-started/)<br>- [Add account users with appropriate permissions](https://support.appsflyer.com/hc/articles/4409128270481--Beta-User-management)<br>- [Add your Amazon Vega OS CTV app in AppsFlyer](https://support.appsflyer.com/hc/articles/207377436) using the [Amazon Vega app ID structure](/docs/adding-an-app-to-appsflyer#amazon-vega-os). | Marketer |
-| API integration with your app (via S2S) | [Integrate the AppsFlyer CTV API](https://dev.appsflyer.com/hc/reference/overview-4) into your CTV app with commands to report the following events to AppsFlyer.<br>- First opens<br>- In-app events<br>- Sessions<br>**Note**:<br>- Installs must be reported before in-app events and sessions.<br>- Send events using the API. Tell your developer which events to send. Verify that when you set up the API, you set up and map the events to send to AppsFlyer. <br>- For the `device_ids` parameter, select the type `vegaid`.<br>- To report owned media engagements, integrate the [impression engagement API.](https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id) | App developer |
-| Link setup | [Learn how to create direct attribution links](https://support.appsflyer.com/hc/articles/15199908310801) | Marketer |
-| Report setup/view data | [Learn about data availability in dashboards and reports](https://support.appsflyer.com/hc/articles/4404083608849#data-availability) | Marketer/Data engineer |
+| App setup | - [Create an AppsFlyer account](https://www.appsflyer.com/get-started/)<br />- [Add account users with appropriate permissions](/docs/user-management)<br />- [Add your Amazon Vega OS CTV app in AppsFlyer](/docs/adding-an-app-to-appsflyer) using the [Amazon Vega app ID structure](/docs/adding-an-app-to-appsflyer#amazon-vega-os). | Marketer |
+| API integration with your app (via S2S) | [Integrate the AppsFlyer CTV API](https://dev.appsflyer.com/hc/reference/overview-4) into your CTV app with commands to report the following events to AppsFlyer.<br />- First opens<br />- In-app events<br />- Sessions<br />**Note**:<br />- Installs must be reported before in-app events and sessions.<br />- Send events using the API. Tell your developer which events to send. Verify that when you set up the API, you set up and map the events to send to AppsFlyer. <br />- For the `device_ids` parameter, select the type `vegaid`.<br />- To report owned media engagements, integrate the [impression engagement API.](https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id) | App developer |
+| Link setup | [Learn how to create direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links) | Marketer |
+| Report setup/view data | [Learn about data availability in dashboards and reports](/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability) | Marketer/Data engineer |
 
 ## Traits and limitations
 
@@ -32,10 +32,10 @@ The following table lists the tasks required to integrate your Amazon Vega OS CT
 | --- | --- |
 | Non-organic sources | Coming soon |
 | Retargeting | Not currently supported |
-| Cost data | Cost data must be sent via [Cost Import](https://support.appsflyer.com/hc/articles/360002516838) using the upload file by email method. |
+| Cost data | Cost data must be sent via [Cost Import](/docs/import-cost-data) using the upload file by email method. |
 
 <Cards>
-  <Card title="CTV, PC, and console platform overview" href="https://support.appsflyer.com/hc/articles/4404083608849">
+  <Card title="CTV, PC, and console platform overview" href="/docs/ctv-pc-and-console-platform-attribution-concepts">
     Learn about the broader CTV, PC, and console platform capabilities in AppsFlyer.
   </Card>
 </Cards>

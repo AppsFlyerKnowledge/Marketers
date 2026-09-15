@@ -8,7 +8,7 @@ At a glance: Insider, an AppsFlyer integrated partner, is a marketing and analyt
 
 > ❗️ Important!
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Insider
 
@@ -37,7 +37,7 @@ The Integration Tab is divided into different sections as described below.
 
 This toggle must be enabled for as long as you work with the partner.
 
-Learn more about [partner activation](https://support.appsflyer.com/hc/articles/360000844778#activating-a-partner).
+Learn more about [partner activation](/docs/partner-activation-deactivation#activating-a-partner).
 
 ### General settings
 
@@ -57,7 +57,7 @@ AppsFlyer can send automatic postbacks to Insider following user installs. Use t
 
 ![insider-partner-field.png](https://files.readme.io/ad4b4a5e9d688be93b20ccf645c779c361390cc95e2a2acbab7299408b7478bf-4403354160785.png)
 
-In this section, you map AppsFlyer events with the partner via postbacks. Learn more about [in-app event postbacks.](https://support.appsflyer.com/hc/articles/4410395957521#g-in-app-event-postback-configuration)
+In this section, you map AppsFlyer events with the partner via postbacks. Learn more about [in-app event postbacks.](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration)
 
 **To configure in-app events postbacks:**
 

@@ -16,8 +16,8 @@ Validation rules:
   - Fake installs or in-app events sent from bots, emulators, or device farms.
 - Defined for in-app events only take effect on IAEs associated with installs that were not previously blocked.
 - That include an ad network are visible to that ad network's personnel (but they cannot see other ad networks included in the rule).
-- Run in real-time and take immediate action. A rejection postback is sent to partners who have rejected postbacks set up. [Learn more](https://support.appsflyer.com/hc/articles/115004744123).
-- Have additional options available to [Protect360](https://support.appsflyer.com/hc/articles/218254203) customers, on top of the automatic Protect360 fraud blocking and detection. These conditions are known to help in the detection of various install-hijacking, fake install, and fake in-app event fraud types.
+- Run in real-time and take immediate action. A rejection postback is sent to partners who have rejected postbacks set up. [Learn more](/docs/rejected-attribution-postbacks-to-integrated-partners).
+- Have additional options available to [Protect360](/docs/protect360-anti-fraud-guide) customers, on top of the automatic Protect360 fraud blocking and detection. These conditions are known to help in the detection of various install-hijacking, fake install, and fake in-app event fraud types.
 
 ## Availability to ad networks and agencies
 
@@ -47,7 +47,7 @@ The rules governing additional validation rule access to agencies are as follows
 1. In AppsFlyer, from the side menu, select **Settings** > **Validation Rules**.
 2. To view the validation rule, select an **app owner Account**.
    - The list of rules defined by the app owner account for traffic that could come from you is displayed.
-   - For an explanation of how rulesets work see [Validation Rules for app owners](https://support.appsflyer.com/hc/articles/115004703926).
+   - For an explanation of how rulesets work see [Validation Rules for app owners](/docs/implement-validation-rules-to-prevent-fraud).
 
 ## Reports
 
@@ -63,6 +63,6 @@ The **Blocked Reason** and **Blocked Reason Value** fields are populated in the 
 
 ## Validation Rules rejected installation postbacks
 
-Integrated partners who integrate with AppsFlyer can [receive blocked install postbacks](https://support.appsflyer.com/hc/articles/115004744123) in real-time each time an install is rejected due to enforcement of the rules.
+Integrated partners who integrate with AppsFlyer can [receive blocked install postbacks](/docs/rejected-attribution-postbacks-to-integrated-partners) in real-time each time an install is rejected due to enforcement of the rules.
 
 Contact your Partner Development representative for further details.

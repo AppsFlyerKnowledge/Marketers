@@ -13,7 +13,7 @@ To be able to send postbacks to SearchAds.com, you should first enable attributi
 > If the advertiser or the agency disables attribution for Apple Ads, postbacks for SearchAds.com and other Apple Ads Marketing Partners are stopped.
 
 - **Advertisers**: follow the instructions below on how to enable attribution for Apple Ads.
-- **Agencies**: [follow these instructions](https://support.appsflyer.com/hc/articles/213747963-Apple-Search-Ads-guide#agency-setup) to enable attribution for Apple Ads.
+- **Agencies**: [follow these instructions](/docs/apple-ads-integration-setup#agency-setup) to enable attribution for Apple Ads.
 
 ## Setting up SearchAds.com in AppsFlyer
 

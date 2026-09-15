@@ -8,7 +8,7 @@ Pinterest, an AppsFlyer integrated partner, is one of the top contributors of tr
 >
 > * After accepting Pinterest Ad Terms, accept Pinterest Mobile Measurement Terms & Conditions [here](https://ads.pinterest.com/terms/app_install/).
 > * Pinterest requires attribution providers to delete their user-level data [6 months after the install](/docs/user-level-data-retention#partner-data-retention-periods). This means that the events performed by these users 6 months after they install the app are counted as organic. Past aggregate data remains the same.
-> * Effective September 4, 2023, Pinterest requires attribution providers to [restrict the availability of some fields in raw data reports](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) to preserve user privacy and ensure regulation compliance.
+> * Effective September 4, 2023, Pinterest requires attribution providers to [restrict the availability of some fields in raw data reports](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) to preserve user privacy and ensure regulation compliance.
 
 ## Set up Pinterest
 
@@ -35,7 +35,7 @@ Pinterest, an AppsFlyer integrated partner, is one of the top contributors of tr
 
 On the **first visit**, you will need to turn on the **Activate Partner** button to enable setup of the integration tab's parameters. The toggle must be on for as long as you work with the partner.
 
-For more details about partner activation click [here](https://support.appsflyer.com/hc/articles/360000844778).
+For more details about partner activation click [here](/docs/partner-activation-deactivation).
 
 ### General settings
 
@@ -83,20 +83,20 @@ In this section, you can map your AppsFlyer events with Pinterest via postbacks.
 
 | Parameter Name | Description |
 | --- | --- |
-| **AppsFlyer event name** | The name of the event, as received by AppsFlyer, either from the SDK integrated with your app or from server-to-server events. <br>**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
+| **AppsFlyer event name** | The name of the event, as received by AppsFlyer, either from the SDK integrated with your app or from server-to-server events. <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
 | **Partner event name** | The unique name of the event, as defined on Pinterest's side. For the Pinterest event names, see the [Pinterest documentation.](https://developers.pinterest.com/docs/api-features/track-conversion-events/#understand-conversion-events) |
-| **To users from** | - **This partner only:** For events coming **only** from users attributed to this partner.<br> - **All media sources including organic:** To have your entire user base available to be reported to the partner. |
-| **Including** | Select if event revenue or parameter values are sent to the partner in the postback, or if this data isn’t included.<br>AppsFlyer can send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af_revenue** parameter. Or, AppsFlyer can send all the parameters including the revenue value (if it exists in the event). |
+| **To users from** | - **This partner only:** For events coming **only** from users attributed to this partner.<br /> - **All media sources including organic:** To have your entire user base available to be reported to the partner. |
+| **Including** | Select if event revenue or parameter values are sent to the partner in the postback, or if this data isn’t included.<br />AppsFlyer can send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af_revenue** parameter. Or, AppsFlyer can send all the parameters including the revenue value (if it exists in the event). |
 
 5. Click **Add Event** to add an SDK Event to the list.
 
 ## Attribution link tab
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](https://support.appsflyer.com/hc/articles/115005248543-OneLink-overview).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).
 
-[Learn more about attribution link structure and parameters](https://support.appsflyer.com/hc/articles/207447163) **.**
+[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters) **.**
 
-**To generate an attribution link,** follow [these instructions](https://support.appsflyer.com/hc/articles/4410395957521#attribution-link-tab).
+**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 #### Attribution link for retargeting campaign
 
@@ -118,21 +118,21 @@ Once you set Pinterest's cost, don't change the name of any running campaign, ad
 
 ### Enabling and testing Pinterest integration
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](https://support.appsflyer.com/hc/articles/207040526-Ad-cost-measurement-guide#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
 **To enable the cost API**:
 
-* Follow [these integration instructions](https://support.appsflyer.com/hc/articles/360008850257#enable-cost-api).
+* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
 
 ### Cost data sync status
 
-[View your cost API status](https://support.appsflyer.com/hc/articles/360008850257#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 ### Stop Pinterest cost sync
 
 **To delete a connected account:**
 
-* [In the actions column, hover over an account, click _**Delete connection**_](https://support.appsflyer.com/hc/articles/360008850257#deleting-connected-accounts-in-the-cost-tab). Once deleted, AppsFlyer stops getting the cost. Deleting the connection doesn't impact historical data.
+* [In the actions column, hover over an account, click _**Delete connection**_](/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab). Once deleted, AppsFlyer stops getting the cost. Deleting the connection doesn't impact historical data.
 
 ## Ad revenue tab
 
@@ -142,7 +142,7 @@ Ad Revenue data is not supported by this partner.
 
 In this tab, you can select the permissions to grant Pinterest. Note that even if attribution is disabled for Pinterest, the permissions tab is active and you can grant control to Pinterest.
 
-Learn more about the [permissions you can grant Pinterest](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+Learn more about the [permissions you can grant Pinterest](/docs/set-up-an-integrated-partner#permissions-tab).
 
 ## Troubleshooting
 

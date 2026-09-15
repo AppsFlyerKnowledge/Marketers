@@ -77,13 +77,13 @@ The End-user events report captures detailed in-app event data, including sessio
 
 ### End user events cross-platform
 
-The End user events cross-platform report extends the end-user events report to support cross-platform use cases. See the [End-user events cross-platform report](https://support.appsflyer.com/hc/articles/39748676204817) for more information.
+The End user events cross-platform report extends the end-user events report to support cross-platform use cases. See the [End-user events cross-platform report](/docs/end-user-events-cross-platform-report-in-data-locker) for more information.
 
 - **Platforms:** Mobile, Web, CTV
 
 ### Conversions cross-platform
 
-The cross-platform conversions-with-assists report shows the complete user journey behind each cross-platform conversion, including the full assisting engagement chain, not just the last touchpoint. See the [Conversions cross-platform report](https://support.appsflyer.com/hc/articles/50451304393617--WIP-Cross-platform-conversions-with-assists-report) for more information.
+The cross-platform conversions-with-assists report shows the complete user journey behind each cross-platform conversion, including the full assisting engagement chain, not just the last touchpoint. See the [Conversions cross-platform report](/docs/conversions-cross-paltform-report) for more information.
 
 - **Data freshness:** 4 hours
 - **Report Fields:** [Download the report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vRTFg6HXtHNYwegAjMysjybPbRk4IO8uflwvbGvR_xb11BcCrCWQ7i3xZD_Y2iiYSsx_MjTPN0E_Bmk/pub?gid=670907846&single=true&output=csv)

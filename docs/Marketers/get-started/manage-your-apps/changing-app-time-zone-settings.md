@@ -48,11 +48,11 @@ After changing the time-zone:
 | Reporting method | Starts and ends before the change | Starts and ends after the change | Starts before and ends after the change |
 | --- | --- | --- | --- |
 | My Dashboards | Not supported. Data is available only in UTC when the dashboard’s timezone is changed. | Current time zone | Data is presented only for dates after the change. |
-| Overview dashboard | Previous time zone | Current time zone | Split:<br>- Before the change: UTC<br>- After the change: current time zone |
-| Events and custom dashboards | UTC | Current time zone | Split:<br>- Before the change: UTC<br>- After the change: current time zone |
+| Overview dashboard | Previous time zone | Current time zone | Split:<br />- Before the change: UTC<br />- After the change: current time zone |
+| Events and custom dashboards | UTC | Current time zone | Split:<br />- Before the change: UTC<br />- After the change: current time zone |
 | Activity dashboard | Previous time zone | Current time zone | UTC |
 | Cohort, Retention, Pivot | UTC | Current time zone (1) | UTC |
-| Master API | - Default: UTC<br>- Option: [Select the time zone when you pull data](https://support.appsflyer.com/hc/articles/207034346) | | |
+| Master API | - Default: UTC<br />- Option: [Select the time zone when you pull data](/docs/pull-api-aggregate-data) | | |
 
 > 📘 Notes
 >
@@ -64,5 +64,5 @@ After changing the time-zone:
 | --- | --- | --- | --- |
 | Export page raw data | Current time zone | Current time zone | Current time zone |
 | Push API | Separate fields for UTC and the app-specific time zone calculated using the selected time zone at the time of the event. | | |
-| Pull API | - Default: UTC<br>- Option: [Select the time zone when you pull the data](https://support.appsflyer.com/hc/articles/207034346) | | |
+| Pull API | - Default: UTC<br />- Option: [Select the time zone when you pull the data](/docs/pull-api-aggregate-data) | | |
 | Data Locker | No impact—date fields are in UTC | | |

@@ -4,7 +4,7 @@ excerpt: "Implement server-to-server events to record subscriptions and send sub
 ---
 > 📘 Legacy Feature
 >
-> This is a legacy feature. Learn more about the new, fully automatic, and improved [subscription revenue mechanism](https://support.appsflyer.com/hc/articles/4621716453009).
+> This is a legacy feature. Learn more about the new, fully automatic, and improved subscription revenue mechanism.
 
 To implement server-to-server events, you need to design backend logic. The backend logic keeps track of subscriptions (new and renewed) and sends subscription events to AppsFlyer as necessary.
 
@@ -58,12 +58,12 @@ The `subscriptionId` is the value you store into your database and associate it 
 
 #### Step 3: Associate subscription with Appsflyer ID and GAID in your database
 
-Once you get the data about the subscription, you need to set up a link between the subscription ID and the AppsFlyer ID and GAID. The AppsFlyer ID is mandatory for sending server-to-server events to AppsFlyer. We strongly recommend including the GAID  when sending a server-to-server event. Including it allows AppsFlyer to send event postbacks to SRNs (self-reporting networks). It also opens for you the option to [use AppsFlyer Audiences](https://support.appsflyer.com/hc/articles/115002689186). You can get the AppsFlyer ID and GAID in one of the following ways:
+Once you get the data about the subscription, you need to set up a link between the subscription ID and the AppsFlyer ID and GAID. The AppsFlyer ID is mandatory for sending server-to-server events to AppsFlyer. We strongly recommend including the GAID  when sending a server-to-server event. Including it allows AppsFlyer to send event postbacks to SRNs (self-reporting networks). It also opens for you the option to [use AppsFlyer Audiences](/docs/audiences-guide). You can get the AppsFlyer ID and GAID in one of the following ways:
 
-- [SDK](https://support.appsflyer.com/hc/articles/207032066#unique-identifier-for-installs)
-- [Raw data](https://support.appsflyer.com/hc/articles/208387843)
-- [Push API](https://support.appsflyer.com/hc/articles/207034356)
-- [Pull API](https://support.appsflyer.com/hc/articles/360007530258)
+- [SDK](/docs/basic-sdk-integration-guide#unique-identifier-for-installs)
+- [Raw data](/docs/raw-data-field-dictionary)
+- [Push API](/docs/push-api-streaming-raw-data)
+- [Pull API](/docs/pull-api-raw-data)
 
 #### The complete Android subscription attribution flow
 
@@ -71,7 +71,7 @@ See the following flowchart for the complete subscription attribution flow:
 
 - Getting notified about a subscription status change.
 - Associating a subscription with AppsFlyer ID and GAID.
-- [Sending a subscription-related event to AppsFlyer](https://support.appsflyer.com/hc/articles/4411049918865#sending-the-event-to-appsflyer).
+- [Sending a subscription-related event to AppsFlyer](/docs/legacy-subscription-attribution-server-to-server-events#sending-the-event-to-appsflyer).
 
 <Image src="https://files.readme.io/5fbb1479ba0b743c9fd331e02521a206fa437ae7a5e80969599418b11e745b2a-4411621302417.png" alt="google-play-server-notifications-flow.png" />
 
@@ -138,14 +138,14 @@ Now you are ready to receive notifications from Apple about subscriptions. See t
 >
 > The data from **Apple's Status Update Notification** doesn't contain the subscription price. You should implement backend logic to match the notification from Apple with the correct subscription price.
 
-You use this data to send subscription-related events to AppsFlyer. To do so, you need to associate a subscription with an AppsFlyer ID and IDFA. We strongly recommend including the IDFA when sending a server-to-server event. Including it allows AppsFlyer to send event postbacks to SRNs (self-reporting networks). It also opens for you the option to [use AppsFlyer Audiences](https://support.appsflyer.com/hc/articles/115002689186).
+You use this data to send subscription-related events to AppsFlyer. To do so, you need to associate a subscription with an AppsFlyer ID and IDFA. We strongly recommend including the IDFA when sending a server-to-server event. Including it allows AppsFlyer to send event postbacks to SRNs (self-reporting networks). It also opens for you the option to [use AppsFlyer Audiences](/docs/audiences-guide).
 
 You can get the AppsFlyer ID and IDFA in one of the following ways:
 
-- [SDK](https://support.appsflyer.com/hc/articles/207032066#unique-identifier-for-installs)
-- [Raw data](https://support.appsflyer.com/hc/articles/208387843)
-- [Push API](https://support.appsflyer.com/hc/articles/207034356)
-- [Pull API](https://support.appsflyer.com/hc/articles/360007530258)
+- [SDK](/docs/basic-sdk-integration-guide#unique-identifier-for-installs)
+- [Raw data](/docs/raw-data-field-dictionary)
+- [Push API](/docs/push-api-streaming-raw-data)
+- [Pull API](/docs/pull-api-raw-data)
 
 #### The complete iOS subscription attribution flow
 
@@ -153,7 +153,7 @@ See the following flowchart for the complete subscription attribution flow:
 
 - Getting notified about a subscription status change.
 - Associating a subscription with AppsFlyer ID and IDFA.
-- [Sending a subscription-related event to AppsFlyer](https://support.appsflyer.com/hc/articles/4411049918865#sending-the-event-to-appsflyer).
+- [Sending a subscription-related event to AppsFlyer](/docs/legacy-subscription-attribution-server-to-server-events#sending-the-event-to-appsflyer).
 
 <Image src="https://files.readme.io/da0f0f8ed0278583e5c64fe22d575b85c680d42ee4e0ac61c554379b767f8d8d-4411628011153.png" alt="apple-app-store-server-notifications-flow.png" />
 
@@ -199,4 +199,4 @@ body:
 }
 ```
 
-To learn how to format and send the event to AppsFlyer, see [sending server-to-server events](https://support.appsflyer.com/hc/articles/207034486-Server-to-Server-In-App-Events-API-HTTP-API-).
+To learn how to format and send the event to AppsFlyer, see [sending server-to-server events](/docs/server-to-server-events-api-for-mobile-s2s-mobile).

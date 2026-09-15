@@ -12,19 +12,19 @@ Consider these additional attribution methods if you plan to measure TV, uninsta
 
 CTV attribution
 
-Attribute [mobile users to CTV ads](https://support.appsflyer.com/hc/articles/4404083608849-Connected-TV-CTV-gaming-platforms-and-over-the-top-OTT-attribution-overview) aired in specific locations and at specific times.
+Attribute [mobile users to CTV ads](/docs/ctv-pc-and-console-platform-attribution-concepts) aired in specific locations and at specific times.
 
 Measure uninstalls
 
 Measure the uninstall rate of users coming from different sources. Uninstall measurement can help you to analyze and optimize your campaigns according to this significant KPI.
 
-[Learn how to set up uninstall measurement](https://support.appsflyer.com/hc/articles/4408933557137).
+[Learn how to set up uninstall measurement](/docs/measure-uninstalls).
 
 **Android only**
 
 Pre-installed apps
 
-In [pre-install campaigns](https://support.appsflyer.com/hc/articles/207032166), app owners contract with device manufacturers (OEMs) to pre-install their apps.
+In [pre-install campaigns](/docs/appsflyer-factory-preinstall-using-manifest-android), app owners contract with device manufacturers (OEMs) to pre-install their apps.
 
 With AppsFlyer, you can easily attribute installs of pre-installed apps. When users launch your app for the first time, AppsFlyer attributes the install to the preload partner as a media source.
 
@@ -36,7 +36,7 @@ Measure user engagement with your app by counting the number of user sessions du
 
 Custom time between sessions
 
-By default, at least 5 seconds must pass between two app launches to count as two separate sessions. Learn more about [counting sessions](https://support.appsflyer.com/hc/articles/360000520785-How-does-AppsFlyer-Count-Sessions-#session-reporting-by-the-app-sdk).
+By default, at least 5 seconds must pass between two app launches to count as two separate sessions. Learn more about [counting sessions](/docs/measure-sessions#session-reporting-by-the-app-sdk).
 
 > 🚧 Warning
 >
@@ -46,7 +46,7 @@ By default, at least 5 seconds must pass between two app launches to count as tw
 
 Background sessions for utility apps
 
-You can [manually report user sessions](https://support.appsflyer.com/hc/articles/360000520785-How-does-AppsFlyer-Count-Sessions-#session-reporting-by-the-app-sdk). This can be useful for utility apps that run in the background.
+You can [manually report user sessions](/docs/measure-sessions#session-reporting-by-the-app-sdk). This can be useful for utility apps that run in the background.
 
 ## Owned media
 
@@ -56,7 +56,7 @@ Use OneLink to attribute your owned media sources such as websites, social media
 
 Resolve wrapped deep link URLs
 
-Some 3rd party services, such as [email service providers](https://support.appsflyer.com/hc/articles/360004556077-Email-service-providers-ESPs-explained), wrap links in emails with their own click recording domains. Some even allow you to set your own click recording domains. If OneLink is wrapped in such domains, it might limit its functionality.
+Some 3rd party services, such as [email service providers](/docs/email-service-provider-esp-integration-guide), wrap links in emails with their own click recording domains. Some even allow you to set your own click recording domains. If OneLink is wrapped in such domains, it might limit its functionality.
 
 To overcome this issue, your developer needs to configure the app using these APIs:
 
@@ -82,19 +82,19 @@ Record push notifications
 
 AppsFlyer supports the measurement of push notification campaigns from all vendors, including Google Cloud Messaging and Apple push notification services.
 
-[Learn more about push notification measurement](https://support.appsflyer.com/hc/articles/207364076-Measuring-Push-Notification-Re-Engagement-Campaigns).
+[Learn more about push notification measurement](/docs/measuring-push-notification-re-engagement-campaigns).
 
 User invite attribution
 
 Allowing your existing users to invite their friends and contacts as new users to your app can be a key growth factor for your app. With AppsFlyer, you can attribute and record installs that originate from user invites within your app.
 
-[Learn more about user invite attribution](https://support.appsflyer.com/hc/articles/115004480866).
+[Learn more about user invite attribution](/docs/user-invite-attribution).
 
 Cross-promotion attribution
 
 Cross-promoting apps can be a major growth factor in driving additional installs for your apps. AppsFlyer enables you to attribute and record installs originating from a cross-promotion from the app the user currently has, to another one of your apps.
 
-[Learn more about cross-promotion attribution](https://support.appsflyer.com/hc/articles/115004481946-Cross-Promotion-Attribution).
+[Learn more about cross-promotion attribution](/docs/cross-promotion-attribution-for-marketers).
 
 Attribute app sessions initiated from owned websites (domains)
 
@@ -113,7 +113,7 @@ Developer documentation is available as follows:
 
 > 👍 Tip!
 >
-> [OneLink Smart Script](https://support.appsflyer.com/hc/articles/360001237818-Mobile-web-to-app-attribution-solutions#attribution-solutions) can help app owners convert website visitors to app users.
+> [OneLink Smart Script](/docs/convert-your-mobile-web-visitors-to-app-users#attribution-solutions) can help app owners convert website visitors to app users.
 
 ## User privacy
 
@@ -123,7 +123,7 @@ Review regulations like GDPR and CCPA and your business requirements, and consid
 
 Opt-out policy
 
-In some instances, you might need to instruct your developer to set the AppsFlyer SDK to stop or limit data collection, (for example, to comply with GDPR and CCPA regulations). There are different methods to preserve the privacy of users on the SDK. For more information about the various methods, see [Privacy preserving methods in the SDK](https://support.appsflyer.com/hc/articles/360001422989-Privacy-preserving-methods-in-the-SDK) article.
+In some instances, you might need to instruct your developer to set the AppsFlyer SDK to stop or limit data collection, (for example, to comply with GDPR and CCPA regulations). There are different methods to preserve the privacy of users on the SDK. For more information about the various methods, see [Privacy preserving methods in the SDK](/docs/apply-privacy-preserving-sdk-methods) article.
 
 Exclude partners from getting data
 

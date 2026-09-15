@@ -8,7 +8,7 @@ excerpt: "Learn how to identify and resolve Incrementality experiment alerts on 
 
 ## About experiment alerts
 
-Once you've [set up an Incrementality experiment](https://support.appsflyer.com/hc/articles/360014225577), you may come across alerts on the Incrementality dashboard. These alerts are designed to help you identify issues that can compromise the integrity and accuracy of your experiment results. They provide specific information about problems and suggest actions that can be taken to address them, to ensure accurate experiment results. This article provides a comprehensive overview of the different types of alerts, as well as the recommended actions for getting the issues resolved.
+Once you've [set up an Incrementality experiment](/docs/run-an-incrementality-for-remarketing-experiment), you may come across alerts on the Incrementality dashboard. These alerts are designed to help you identify issues that can compromise the integrity and accuracy of your experiment results. They provide specific information about problems and suggest actions that can be taken to address them, to ensure accurate experiment results. This article provides a comprehensive overview of the different types of alerts, as well as the recommended actions for getting the issues resolved.
 
 ## Alert types
 
@@ -87,7 +87,7 @@ This warning indicates that the configured campaign is targeting the control gro
 **How can this happen?**
 
 * The experiment was linked to the wrong campaign.
-* The campaign on the media partner side was configured to target users outside of the audience (learn about [audience expansion features](https://support.appsflyer.com/hc/articles/360014225577#check-for-audience-expansion-features) in Facebook and Google).
+* The campaign on the media partner side was configured to target users outside of the audience (learn about [audience expansion features](/docs/run-an-incrementality-for-remarketing-experiment#check-for-audience-expansion-features) in Facebook and Google).
 * Network not enforcing the targeting configuration.
 
 **Actions to take:**
@@ -125,7 +125,7 @@ Therefore, when spending money on unrelated users, metrics that involve the cost
 **How can this happen?**
 
 * The experiment was linked to the wrong campaign.
-* The campaign on the media partner side was configured to target users outside of the audience (learn about [audience expansion features](https://support.appsflyer.com/hc/articles/360014225577#check-for-audience-expansion-features) in Facebook and Google).
+* The campaign on the media partner side was configured to target users outside of the audience (learn about [audience expansion features](/docs/run-an-incrementality-for-remarketing-experiment#check-for-audience-expansion-features) in Facebook and Google).
 * Network not enforcing the targeting configuration.
 
 **Actions to take:**

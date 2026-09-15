@@ -25,11 +25,11 @@ The following table lists the tasks required to integrate your Vizio CTV app wit
 
 | Task | Actions | Who's involved |
 | --- | --- | --- |
-| App setup | - [Create an AppsFlyer account](https://www.appsflyer.com/get-started/)<br>- [Add account users with appropriate permissions](https://support.appsflyer.com/hc/articles/4409128270481--Beta-User-management)<br>- [Add your Vizio CTV app in AppsFlyer](https://support.appsflyer.com/hc/articles/207377436) | Marketer |
-| API integration with your app (via S2S) | [Integrate the AppsFlyer CTV API](https://dev.appsflyer.com/hc/reference/overview-4) into your CTV app with commands to report the following events to AppsFlyer.<br>- First opens<br>- In-app events<br>- Sessions<br>**Note**:<br>- Installs must be reported before in-app events and sessions.<br>- Send events using the API. Tell your developer which events to send.Verify that when you set up the API, you set up and map the events to send to AppsFlyer. <br>To report owned media engagements, integrate the [impression engagement API.](https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id) | App developer |
-| Partner integration | Add Vizio as an ad network (integrated partner) in AppsFlyer:<br>1. [Activate partner](https://support.appsflyer.com/hc/articles/4410395957521#a-activate-partner)<br>2. [Optional] Turn on **[View-through attribution](/docs/set-up-an-integrated-partner#e-install-attribution).** | Marketer |
-| Link setup | [Learn how to create direct attribution links](https://support.appsflyer.com/hc/articles/15199908310801) | Marketer |
-| Report setup/view data | [Learn about data availability in dashboards and reports](https://support.appsflyer.com/hc/articles/4404083608849#data-availability) | Marketer/Data engineer |
+| App setup | - [Create an AppsFlyer account](https://www.appsflyer.com/get-started/)<br />- [Add account users with appropriate permissions](/docs/user-management)<br />- [Add your Vizio CTV app in AppsFlyer](/docs/adding-an-app-to-appsflyer) | Marketer |
+| API integration with your app (via S2S) | [Integrate the AppsFlyer CTV API](https://dev.appsflyer.com/hc/reference/overview-4) into your CTV app with commands to report the following events to AppsFlyer.<br />- First opens<br />- In-app events<br />- Sessions<br />**Note**:<br />- Installs must be reported before in-app events and sessions.<br />- Send events using the API. Tell your developer which events to send.Verify that when you set up the API, you set up and map the events to send to AppsFlyer. <br />To report owned media engagements, integrate the [impression engagement API.](https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id) | App developer |
+| Partner integration | Add Vizio as an ad network (integrated partner) in AppsFlyer:<br />1. [Activate partner](/docs/set-up-an-integrated-partner#a-activate-partner)<br />2. [Optional] Turn on **[View-through attribution](/docs/set-up-an-integrated-partner#e-install-attribution).** | Marketer |
+| Link setup | [Learn how to create direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links) | Marketer |
+| Report setup/view data | [Learn about data availability in dashboards and reports](/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability) | Marketer/Data engineer |
 
 ## Traits and limitations
 
@@ -37,10 +37,10 @@ The following table lists the tasks required to integrate your Vizio CTV app wit
 | --- | --- |
 | Retargeting | Not currently supported |
 | View-through attribution | Default is 24 hours |
-| Cost data | Cost data must be sent via [Cost Import](https://support.appsflyer.com/hc/articles/360002516838) using the upload file by email method. |
+| Cost data | Cost data must be sent via [Cost Import](/docs/import-cost-data) using the upload file by email method. |
 
 <Cards>
-  <Card title="CTV, PC, and console platform overview" href="https://support.appsflyer.com/hc/articles/4404083608849">
+  <Card title="CTV, PC, and console platform overview" href="/docs/ctv-pc-and-console-platform-attribution-concepts">
     Learn more about the CTV, PC, and console platform overview.
   </Card>
 </Cards>

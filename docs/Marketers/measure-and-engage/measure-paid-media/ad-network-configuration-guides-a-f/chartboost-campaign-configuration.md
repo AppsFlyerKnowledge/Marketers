@@ -6,7 +6,7 @@ At a glance: Chartboost, an AppsFlyer ad network integrated partner, is one of t
 
 > 📘 Note
 >
-> Integrating the Chartboost SDK is only necessary if you act as a Chartboost publisher and wish to attribute ad revenue. Otherwise, the AppsFlyer SDK is all that is required. For more information, see this article's [ad revenue section](https://support.appsflyer.com/hc/articles/209731553#ad-revenue-tab).
+> Integrating the Chartboost SDK is only necessary if you act as a Chartboost publisher and wish to attribute ad revenue. Otherwise, the AppsFlyer SDK is all that is required. For more information, see this article's [ad revenue section](/docs/chartboost-campaign-configuration#ad-revenue-tab).
 
 ## Setting up Chartboost
 
@@ -33,7 +33,7 @@ The _**Integration Tab**_ is divided into different sections as described below.
 
 ### Activate partners
 
-The [partner must be activated](https://support.appsflyer.com/hc/articles/360000844778#activating-a-partner) by switching on the _**Activate partner**_ toggle on the first visit, to enable its setup.
+The [partner must be activated](/docs/partner-activation-deactivation#activating-a-partner) by switching on the _**Activate partner**_ toggle on the first visit, to enable its setup.
 
 ### General settings
 
@@ -61,7 +61,7 @@ As of July 1, 2020, we no longer send launch postbacks to Chartboost. If your in
 
 | Your configuration | Will be updated to | Your next actions |
 | --- | --- | --- |
-| Send to Chartboost **all launches** (from all media sources, including organic) | Send to Chartboost:<br>- **all installs** (from all media sources, including organic)<br>- **all**`af_app_opened` **events** (from all media sources, including organic) | No further actions required. This update has no actual impact on the configuration. |
+| Send to Chartboost **all launches** (from all media sources, including organic) | Send to Chartboost:<br />- **all installs** (from all media sources, including organic)<br />- **all**`af_app_opened` **events** (from all media sources, including organic) | No further actions required. This update has no actual impact on the configuration. |
 
 ### In-app events settings
 
@@ -76,9 +76,9 @@ In this section, you can configure in-app event postbacks that are sent to Chart
 
 | Parameter name | Description |
 | --- | --- |
-| **SDK event name** _(required for manual selection only)_ | The name of the event, as received by AppsFlyer either from the SDK, or from server-to-server events.<br>**Tip**: If you don't see the event you want in the list, activate this event on a device with a non-organic installation and recheck. |
-| **Sending option** | Select the sending option for the event:<br>**This partner only** for events coming **only** from users attributed to Chartboost.<br>**All sources, including organic** to have your entire user base available to be reported to the partner |
-| **Send event data** | - **No values & no revenue:** sends only the event itself without the event value.<br> - **Values & no revenue:** sends all the parameters excluding the revenue value.<br> - **Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event). |
+| **SDK event name** _(required for manual selection only)_ | The name of the event, as received by AppsFlyer either from the SDK, or from server-to-server events.<br />**Tip**: If you don't see the event you want in the list, activate this event on a device with a non-organic installation and recheck. |
+| **Sending option** | Select the sending option for the event:<br />**This partner only** for events coming **only** from users attributed to Chartboost.<br />**All sources, including organic** to have your entire user base available to be reported to the partner |
+| **Send event data** | - **No values & no revenue:** sends only the event itself without the event value.<br /> - **Values & no revenue:** sends all the parameters excluding the revenue value.<br /> - **Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event). |
 
 4. Click _**Save**_.
 
@@ -103,14 +103,14 @@ Adding parameters to the attribution link here enables you to later perform thor
 - **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns Chartboost.
 
 **Attribution link parameter:** af_ad
-- **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the subsite ID parameter, to avoid [exceeding the site ID](https://support.appsflyer.com/hc/articles/115005099063-What-are-the-Exceeded-Media-Sources-#exceeded_siteid_limit) limitations.
+- **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the subsite ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations.
 
 **Attribution link parameters:** af_siteid and af_sub_siteid
 - **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.
 
 **Attribution link parameters:** af_sub1, af_sub2, af_sub3, af_sub4, af_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about [**AppsFlyer Attribution Link Structure and Parameters**](https://support.appsflyer.com/hc/articles/207447163).
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about [**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
 
 ### Click-through attribution
 
@@ -118,7 +118,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 **Attribution link parameter:** af_click_lookback
 
-More details about the [click lookback window here](https://support.appsflyer.com/hc/articles/208338403-What-is-AppsFlyer-s-Configurable-Attribution-Lookback-Window-).
+More details about the [click lookback window here](/docs/set-up-lookback-windows).
 
 ### Click attribution link
 
@@ -132,7 +132,7 @@ You can customize this value to 1-23 hours or 1-7 days.
 
 **Attribution link parameter:** af_viewthrough_lookback
 
-More details about the [view-through attribution here](https://support.appsflyer.com/hc/articles/208338403-What-is-AppsFlyer-s-Configurable-Attribution-Lookback-Window-).
+More details about the [view-through attribution here](/docs/set-up-lookback-windows).
 
 ### Impressions attribution link
 
@@ -140,13 +140,13 @@ The impression attribution link contains similar attribution data to the click r
 
 ## Cost tab
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](https://support.appsflyer.com/hc/articles/207040526-Ad-cost-measurement-guide#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
 **To enable the cost API**:
 
-- Follow [these integration instructions](https://support.appsflyer.com/hc/articles/360008850257#enable-cost-api).
+- Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
 
-[View your cost API status](https://support.appsflyer.com/hc/articles/360008850257#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 ## Ad revenue tab
 
@@ -154,14 +154,14 @@ This section is relevant if you are acting as a publisher, displaying ads of the
 
 **To enable the ad revenue API**:
 
-- Follow [these integration instructions](https://support.appsflyer.com/hc/articles/217490046-Ad-revenue-attribution-guide#connect-to-ad-revenue-integrated-partners).
+- Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
 
 > ❗️ Important!
 >
 > As a Chartboost publisher, there are two additional requirements besides AppsFlyer configuration:
 >
 > 1. [Integrate Chartboost SDK](https://answers.chartboost.com/en-us/child_article/ios) - this is only required if you act as a publisher. **If you only use Chartboost to advertise your app, AppsFlyer SDK is all you need to integrate**.
-> 2. [Enable Chartboost S2S](https://answers.chartboost.com/en-us/child_article/s2s-setup) - this step is required to allow AppsFlyer to query Chartboost for ad revenue data. **This should not be confused with** [**AppsFlyer S2S**](https://support.appsflyer.com/hc/articles/207034486) **which is your way of sending in-app events to AppsFlyer using a dedicated API.**
+> 2. [Enable Chartboost S2S](https://answers.chartboost.com/en-us/child_article/s2s-setup) - this step is required to allow AppsFlyer to query Chartboost for ad revenue data. **This should not be confused with** [**AppsFlyer S2S**](/docs/server-to-server-events-api-for-mobile-s2s-mobile) **which is your way of sending in-app events to AppsFlyer using a dedicated API.**
 
 ## Permissions tab
 
@@ -177,7 +177,7 @@ Use these toggles to give the ad network permissions to handle its own configura
 - _**Allow access to your aggregate revenue data**_ - only to the revenue data attributed to the partner
 - _**Allow access to your Protect360 dashboard**_ - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about granting [ad network permissions](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 ## Discrepancies between Chartboost and AppsFlyer
 
@@ -187,8 +187,8 @@ Advertisers should be aware of the following reasons:
 
 | Cause | Chartboost | AppsFlyer |
 | --- | --- | --- |
-| **Attribution Window** | Chartboost attribution window is 21 days | AppsFlyer lookback window is 7 days<br>**\*\* This is the main cause of discrepancies between AppsFlyer and Chartboost** |
-| **Multi-Channel Source Attribution** | Chartboost attribution works as specified above regardless of other sources. | AppsFlyer uses the last click attribution (For more information about AppsFlyer attribution, click [here](https://support.appsflyer.com/hc/articles/207447053 "AppsFlyer Attribution Model")) |
+| **Attribution Window** | Chartboost attribution window is 21 days | AppsFlyer lookback window is 7 days<br />**\*\* This is the main cause of discrepancies between AppsFlyer and Chartboost** |
+| **Multi-Channel Source Attribution** | Chartboost attribution works as specified above regardless of other sources. | AppsFlyer uses the last click attribution (For more information about AppsFlyer attribution, click [here](/docs/appsflyer-attribution-model "AppsFlyer Attribution Model")) |
 
 > 📘 Note
 >

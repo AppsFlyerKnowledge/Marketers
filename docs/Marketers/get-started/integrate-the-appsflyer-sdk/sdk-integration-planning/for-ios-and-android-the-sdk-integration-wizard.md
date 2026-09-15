@@ -23,7 +23,7 @@ The table below lists the questions that developers need to address during the w
 | Should the SDK get conversion data? | [Learn about Conversion data in the SDK](/docs/get-conversion-data-using-appsflyer-sdk-overview). |
 | Should the SDK receive confirmation that it was started successfully? | Learn about the SDK start method with a completion handler ( [Android](https://dev.appsflyer.com/hc/docs/integrate-android-sdk#starting-with-a-response-listener), [iOS](https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#start-with-completion-handler)). |
 | Should the SDK support AppTrackingTransparency support (ATT)? | [Learn about ATT](/docs/basic-sdk-integration-guide#configure-app-tracking-transparency-att-support). |
-| What is your AppsFlyer v2 authentication token? (Required only if you follow the automatic test flow.) | [Learn how to retrieve your v2 token](https://support.appsflyer.com/hc/articles/360004562377-Managing-API-and-Server-to-server-S2S-tokens#reaching-the-tokens-page). |
+| What is your AppsFlyer v2 authentication token? (Required only if you follow the automatic test flow.) | [Learn how to retrieve your v2 token](/docs/managing-appsflyer-tokens#reaching-the-tokens-page). |
 
 ## The add-in-app event flow
 
@@ -33,9 +33,9 @@ The table below lists the questions that developers need to address during the w
 
 | Questions | Learn more |
 | --- | --- |
-| Choose the event name and its event parameters | [Learn which predefined events are available for you.](/docs/adding-an-app-to-appsflyer#enter-app-details) Each event description includes its typical event parameters.<br>Alternatively, you can use our [In-app event generator](https://evgen.appsflyer.com/). |
+| Choose the event name and its event parameters | [Learn which predefined events are available for you.](/docs/adding-an-app-to-appsflyer#enter-app-details) Each event description includes its typical event parameters.<br />Alternatively, you can use our [In-app event generator](https://evgen.appsflyer.com/). |
 | Should the SDK receive confirmation that the in-app event was received by AppsFlyer? | Learn about the code that verifies that events were successfully received in AppsFlyer ( [Android](https://dev.appsflyer.com/hc/docs/in-app-events-android#handling-event-submission-success-and-failure), [iOS](https://dev.appsflyer.com/hc/docs/in-app-events-ios#handling-event-submission-success-and-failure)). |
-| What is your AppsFlyer v2 authentication token? (Required only if you follow the automatic test flow.) | [Learn how to retrieve your v2 token](https://support.appsflyer.com/hc/articles/360004562377-Managing-API-and-Server-to-server-S2S-tokens#reaching-the-tokens-page). |
+| What is your AppsFlyer v2 authentication token? (Required only if you follow the automatic test flow.) | [Learn how to retrieve your v2 token](/docs/managing-appsflyer-tokens#reaching-the-tokens-page). |
 
 ## Traits and limitations
 

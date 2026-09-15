@@ -4,25 +4,24 @@ excerpt: "Learn how to test your Windows app integration with AppsFlyer, includi
 ---
 **At a glance:** Test your Windows app integration with AppsFlyer.
 
-> 🚧 Windows Referrer Restrictions
->
-> Currently, there is no way of testing with Windows Referrer other than to upload the app to the Windows App Store.
-> 
-> When testing with Windows Referrer, you must be familiar with the following restrictions:
-> * You must be logged in to the store.
-> * You must not have the Windows 10 Anniversary Update on your device.
-> * Your device must never have had the app (Windows' referrer is lifetime - even if you are allowlisted or have waited over 90 days, you will not receive referrer attribution).
+* Currently, there is no way of testing with Windows Referrer other than to upload the app to the Windows App Store.
+* When testing with Windows Referrer, you must be familiar with the following restrictions:
+  * You must be logged in to the store.
+  * You must not have the Windows 10 Anniversary Update on your device.
+  * Your device must never have had the app (Windows' referrer is lifetime - even if you are allowlisted or have waited over 90 days, you will not receive referrer attribution).
 
 ## Test SDK integration
 
-1. It is required to test the SDK Integration on a registered test device. To register your test device, follow the steps [here](https://support.appsflyer.com/hc/articles/207031996).
+1. It is required to test the SDK Integration on a registered test device. To register your test device, follow the steps [here](/docs/registering-test-devices).
 2. Open the AppsFlyer dashboard and chose the app you are testing.
 3. Select SDK Integration Tests from the Navigation Menu.
 4. You are presented with three options to test:
 
-- Non-organic Install
-- In-app events
-- Deep linking
+* Non-organic Install
+* In-app events
+* Deep linking
+
+[![](https://support.appsflyer.com/hc/article_attachments/115011326025/iOS_Testing.png)](https://support.appsflyer.com/hc/article_attachments/115011326025/iOS_Testing.png)
 
 ## Testing non-organic install
 
@@ -39,7 +38,7 @@ excerpt: "Learn how to test your Windows app integration with AppsFlyer, includi
 
 ## Testing deep linking
 
-1. OneLink must be defined for your app to test Deep Linking. See [OneLink guide](https://support.appsflyer.com/hc/articles/207032246-OneLink-Setup-Guide)
+1. OneLink must be defined for your app to test Deep Linking. See [OneLink guide](/docs/create-a-onelink-template)
 2. Select one of your registered test devices from the drop-down menu and click Next.
 3. Scan the QR code with your registered test device and follow the instructions on your device.
 4. Wait until the Deep Link is registered successfully on the Integration Test page.

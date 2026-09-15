@@ -20,8 +20,8 @@ View-through attribution measures installs, re-attributions, and re-engagements 
 
 ### View-through attribution principles
 
-- Both [device ID matching](https://support.appsflyer.com/hc/articles/207447053-What-is-AppsFlyer-s-Attribution-Model-#device-id-matching) and [probabilistic modeling](https://support.appsflyer.com/hc/articles/207447053-What-is-AppsFlyer-s-Attribution-Model-#probabilistic-modeling) are supported.
-- Supported by partners listed in the [view-through attribution partner list](https://support.appsflyer.com/hc/articles/210084473#view-vta-partner-list).
+- Both [device ID matching](/docs/appsflyer-attribution-model#device-id-matching) and [probabilistic modeling](/docs/appsflyer-attribution-model#probabilistic-modeling) are supported.
+- Supported by partners listed in the [view-through attribution partner list](/docs/measure-view-through-engagements#view-vta-partner-list).
 
 Impressions are candidates for view-through attribution using the following principles:
 
@@ -50,7 +50,7 @@ Impressions are candidates for view-through attribution using the following prin
 
 ### Set impression links
 
-Ad networks send impression links to AppsFlyer populated with campaign and other details similar to those included in click-through [attribution links](https://support.appsflyer.com/hc/articles/207447163).
+Ad networks send impression links to AppsFlyer populated with campaign and other details similar to those included in click-through [attribution links](/docs/about-link-structure-and-parameters).
 
 The links are sent in real-time so that if an install follows an impression, it is attributed correctly.
 
@@ -59,7 +59,7 @@ Consider the following in preparing links:
 - The base URL is `https://impression.appsflyer.com`.
 - Use a GET request.
 - Include device IDs where available: IDFA, GAID, IDFV, and so on.
-- Include [probabilistic modeling](https://support.appsflyer.com/hc/articles/207447053#probabilistic-modeling-parameters-for-ad-networks) parameters.
+- Include [probabilistic modeling](/docs/appsflyer-attribution-model#probabilistic-modeling-parameters-for-ad-networks) parameters.
 - The device ID values can be hashed for better security using SHA1. The parameter name should begin with "sha1_" and be followed by the parameter name and the hashed value, for example, sha1_idfa, sha1_advertising_id, sha1_android_id, and sha1_imei.
 
 Example
@@ -74,9 +74,9 @@ https://impression.appsflyer.com/{app-id}?c={campaign name}&pid={media source}
 
 Advertisers utilize attribution impression links with their own custom media sources, for example, website banners.
 
-When advertisers [create custom attribution links](https://support.appsflyer.com/hc/articles/208874366#create-a-onelink-link), they get full impression links, which can be fired every time a user engages with their owned ads.
+When advertisers [create custom attribution links](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link), they get full impression links, which can be fired every time a user engages with their owned ads.
 
-Custom impression links (created via OneLink) can also be used to perform view-through attribution of mobile website visitors. Learn more about [creating custom impression URLs](https://support.appsflyer.com/hc/articles/208874366#create-a-custom-impression-url).
+Custom impression links (created via OneLink) can also be used to perform view-through attribution of mobile website visitors. Learn more about [creating custom impression URLs](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url).
 
 ### Turn off view-through-attribution
 

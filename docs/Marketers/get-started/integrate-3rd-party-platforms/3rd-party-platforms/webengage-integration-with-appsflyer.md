@@ -6,7 +6,7 @@ WebEngage, an AppsFlyer integrated partner, is an Intelligent Marketing Cloud bu
 
 > ❗️ Important!
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up WebEngage
 
@@ -29,7 +29,7 @@ WebEngage, an AppsFlyer integrated partner, is an Intelligent Marketing Cloud bu
 
 The WebEngage configuration window uses only the **Integration** tab.
 
-Learn more about [setting the partner page header.](https://support.appsflyer.com/hc/articles/4410395957521#about-the-integrated-partner-page)
+Learn more about [setting the partner page header.](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page)
 
 ## Integration tab
 
@@ -37,7 +37,7 @@ The Integration tab is divided into different sections, as described below.
 
 ### Activate partner
 
-On your first visit, turn **Activate Partner** on to set up the integration. The toggle must be on for as long as you work with the partner. Learn more about [partner activation](https://support.appsflyer.com/hc/articles/360000844778).
+On your first visit, turn **Activate Partner** on to set up the integration. The toggle must be on for as long as you work with the partner. Learn more about [partner activation](/docs/partner-activation-deactivation).
 
 ### General settings
 
@@ -73,13 +73,13 @@ Map AppsFlyer events with WebEngage via postbacks. If postback sending is enable
 4. Complete the parameters required.
 5. [Optional] Click ![conditional-iae-postbacks-icon.png](https://files.readme.io/62f8f45f72137c00326b90f046b15bc36214e35626afafd2e76513b91eea31d9-17028066777873.png) to set conditions for sending certain in-app events to the partner.
 
-Learn more about [conditional in-app event postbacks](https://support.appsflyer.com/hc/articles/208439256#conditional-inapp-event-postbacks).
+Learn more about [conditional in-app event postbacks](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks).
 
 | Parameter Name | Description |
 | --- | --- |
-| **AppsFlyer event** | The event name, as received by AppsFlyer, either from the SDK integrated into your app or from server-to-server events.<br>**Tip**: Don't see the event you are looking for?<br>- Make sure to activate the event on a device with a non-organic installation and recheck.<br>- Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](https://support.appsflyer.com/hc/articles/208439256#custom-events) |
-| **for users from** | Select the sending option for the event:<br>- **This partner only**: send postbacks only when this event is attributed to this partner.<br>- **All media sources, including organic**: send postbacks for events attributed to any partner, including organic events. |
-| **including** | - **No data (default)**: send only the event itself without the event value.<br>- **Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).<br>- **Values without revenue**: send all the parameters **excluding** the revenue value. |
+| **AppsFlyer event** | The event name, as received by AppsFlyer, either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<br />- Make sure to activate the event on a device with a non-organic installation and recheck.<br />- Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
+| **for users from** | Select the sending option for the event:<br />- **This partner only**: send postbacks only when this event is attributed to this partner.<br />- **All media sources, including organic**: send postbacks for events attributed to any partner, including organic events. |
+| **including** | - **No data (default)**: send only the event itself without the event value.<br />- **Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).<br />- **Values without revenue**: send all the parameters **excluding** the revenue value. |
 
 ## Attribution link tab
 

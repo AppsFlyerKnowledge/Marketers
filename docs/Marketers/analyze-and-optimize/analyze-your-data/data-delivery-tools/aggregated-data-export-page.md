@@ -4,7 +4,7 @@ excerpt: "Download lifetime value (LTV) aggregate reports filtered by attributio
 ---
 ## Aggregate data reports
 
-[User acquisition](https://support.appsflyer.com/hc/articles/360005437257#ua-ltv-aggregate-data-reports-containing-nonorganic-and-organic-users) and [retargeting](https://support.appsflyer.com/hc/articles/360005437257#retargeting) reports have these characteristics:
+[User acquisition](/docs/aggregated-and-analytics-reporting-overview#ua-ltv-aggregate-data-reports-containing-nonorganic-and-organic-users) and [retargeting](/docs/aggregated-and-analytics-reporting-overview#retargeting) reports have these characteristics:
 
 - Contain LTV data of users performing an Attribution Event during the specified date range.
 - An Attribution Event is any of the following:
@@ -16,7 +16,7 @@ excerpt: "Download lifetime value (LTV) aggregate reports filtered by attributio
   - Re-engagements: Events performed by the user starting during the re-engagement window
 - Reports, depending on size, can take several minutes to download.
 - Reports hold up to 200K rows.
-- [Rate limitations](https://support.appsflyer.com/hc/articles/207034366)
+- [Rate limitations](/docs/report-generation-quotas-rate-limitations)
 
 ### Download aggregate data reports
 
@@ -28,7 +28,7 @@ excerpt: "Download lifetime value (LTV) aggregate reports filtered by attributio
 4. Select a report, click **Download.**
 
 <Cards>
-  <Card title="Aggregated and analytics reporting overview" href="https://support.appsflyer.com/hc/articles/360005437257">
+  <Card title="Aggregated and analytics reporting overview" href="/docs/aggregated-and-analytics-reporting-overview">
     Learn more about aggregated and analytics reporting in AppsFlyer.
   </Card>
 </Cards>

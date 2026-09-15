@@ -18,7 +18,7 @@ However, there are options that bypass these limitations to successfully perform
 A podcast call-to-action (CTA), when it advertises a mobile app, usually involves mentioning an app name so users can search for it.
 
 - In a dedicated landing-page scenario, the CTA is a specific web destination on a landing page.
-- This page includes a web element (button, banner, etc.), powered by OneLink. To easily create dynamic landing-page banners without coding, we recommend using [Smart Banners](https://support.appsflyer.com/hc/articles/360000764837).
+- This page includes a web element (button, banner, etc.), powered by OneLink. To easily create dynamic landing-page banners without coding, we recommend using [Smart Banners](/docs/smart-banners-mobile-web-to-app-for-marketers).
 - Users who engage with this element, and install the mobile app, are attributed according to the OneLink parameters.
 
 #### Example

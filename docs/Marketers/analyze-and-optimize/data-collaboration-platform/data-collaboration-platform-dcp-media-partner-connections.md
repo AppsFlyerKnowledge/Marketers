@@ -4,7 +4,7 @@ excerpt: "Connect your audiences to media partners so you can activate your tail
 ---
 ## About partner connections
 
-[Data Collaboration Platform (DCP)](/docs/data-collaboration-platform-dcp-guide) partner connections enable you to securely connect your DCP audiences to supported media partners, so you can activate tailored campaigns on their platforms. Once a partner is connected to an audience, DCP delivers the audience based on the configured refresh and activation flow, using the latest available source data and [permissions](https://support.appsflyer.com/hc/articles/24740010687249#permissions).
+[Data Collaboration Platform (DCP)](/docs/data-collaboration-platform-dcp-guide) partner connections enable you to securely connect your DCP audiences to supported media partners, so you can activate tailored campaigns on their platforms. Once a partner is connected to an audience, DCP delivers the audience based on the configured refresh and activation flow, using the latest available source data and [permissions](/docs/data-collaboration-platform-dcp-create-and-manage-sources#permissions).
 
 > 📘 Note
 >

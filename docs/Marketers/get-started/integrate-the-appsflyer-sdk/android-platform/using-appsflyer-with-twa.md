@@ -26,7 +26,7 @@ This form of PWA allows you to measure installs. The other form of PWA, those th
 
 ### Sending in-app events from TWA
 
-In-app events are sent using the AppsFlyer SDK from native app activities. Since TWA is web-based and not a native activity, you cannot send in-app events using the AppsFlyer SDK. You can use [server-to-server in-app events](https://support.appsflyer.com/hc/articles/207034486) as an alternative. Follow the instructions below to send server-to-server events with TWA.
+In-app events are sent using the AppsFlyer SDK from native app activities. Since TWA is web-based and not a native activity, you cannot send in-app events using the AppsFlyer SDK. You can use [server-to-server in-app events](/docs/server-to-server-events-api-for-mobile-s2s-mobile) as an alternative. Follow the instructions below to send server-to-server events with TWA.
 
 ### Prerequisites
 
@@ -74,7 +74,7 @@ maven { url "https://jitpack.io"}
 
 To send server-to-server events, you need the AppsFlyer ID. You can get the AppsFlyer ID from AppsFlyer Android SDK.
 
-First, make sure to [integrate the AppsFlyer Android SDK](https://support.appsflyer.com/hc/articles/207032126). You can then get the AppsFlyer ID using the following SDK API:
+First, make sure to [integrate the AppsFlyer Android SDK](/docs/sdk-integration-overview). You can then get the AppsFlyer ID using the following SDK API:
 
 ```java
 String appsflyerId = AppsFlyerLib.getInstance().getAppsFlyerUID(this);
@@ -194,7 +194,7 @@ console.log(appsflyer_id);
 
 To send in-app events, you need to send the event data to your server and have your server send the event to AppsFlyer. There are a few other prerequisites for sending in-app events:
 
-- [SDK dev key](https://support.appsflyer.com/hc/articles/207032126) -
+- [SDK dev key](/docs/sdk-integration-overview) -
 
 > ❗️ Important
 >
@@ -204,7 +204,7 @@ To send in-app events, you need to send the event data to your server and have y
 
 Once you have these three parameters (AppsFlyer ID, SDK dev key, app ID), you can send the in-app event. Whenever an event takes place on the web activity you should send a request to your webserver to handle this event. The webserver gets the data related to the event, composes the event, and sends it to AppsFlyer.
 
-See [here](https://support.appsflyer.com/hc/articles/207034486#servertoserver-events-api-for-mobile) for examples how to send server-to-server in-app events.
+See [here](/docs/server-to-server-events-api-for-mobile-s2s-mobile#servertoserver-events-api-for-mobile) for examples how to send server-to-server in-app events.
 
 ### Customizing web content with conversion data
 
@@ -287,7 +287,7 @@ conversion data example:
 */
 ```
 
-To learn more about conversion data use cases, see [here](https://support.appsflyer.com/hc/articles/360000726098).
+To learn more about conversion data use cases, see [here](/docs/conversion-data-payloads-and-scenarios).
 
 ## PWA
 
@@ -295,16 +295,16 @@ To learn more about conversion data use cases, see [here](https://support.appsfl
 
 As with any other Android app, you can integrate the AppsFlyer SDK with the app to measure installs and get conversion data.
 
-To measure installs, all you need to do is integrate the SDK following the instructions [here](https://support.appsflyer.com/hc/articles/207032126).
+To measure installs, all you need to do is integrate the SDK following the instructions [here](/docs/sdk-integration-overview).
 
 ### Customizing content using conversion data
 
 You can customize web content according to the campaign that prompts a user to install your app. For example, if a user installs an app from a campaign that gives them 20% discount on products from your web store. You can get the conversion data and apply the discount as soon as the app opens the web activity.
 
-To learn about using conversion data to customize web content, follow the instructions [here](https://support.appsflyer.com/hc/articles/360002330178#sending-conversion-data-to-twa).
+To learn about using conversion data to customize web content, follow the instructions [here](/docs/using-appsflyer-with-twa#sending-conversion-data-to-twa).
 
 ### Recording events in PWA
 
 PWA makes use of TWA which are essentially web activities. Since TWA is web-based and not a native activity, you cannot send in-app events using the AppsFlyer SDK. As an alternative, you can use server-to-server in-app events.
 
-Follow the instructions [here](https://support.appsflyer.com/hc/articles/360002330178#sending-inapp-events-from-twa) to learn how to send in-app events for PWA.
+Follow the instructions [here](/docs/using-appsflyer-with-twa#sending-inapp-events-from-twa) to learn how to send in-app events for PWA.

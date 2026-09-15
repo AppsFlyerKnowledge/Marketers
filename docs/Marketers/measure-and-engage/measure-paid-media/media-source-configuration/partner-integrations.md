@@ -55,7 +55,7 @@ The **Active integrations** tab allows you to:
 | Go to the Marketplace tab | Click the **Marketplace** tab to explore new partners, where you can find all partners integrated with AppsFlyer. |
 | Manage the integration | Click a partner card or **Manage integration** to view and manage the partner integration setup page. |
 | Search within your active integrations | Enter a partner name in the search bar to find an active partner for the currently selected app. |
-| Change apps | The list of active partner integrations depends on the currently selected app. To see [active partners](/docs/partner-activation-deactivation#active-partners) for a different app:<br>1. Click the app selector to open the list of your apps.<br>2. Select another app. |
+| Change apps | The list of active partner integrations depends on the currently selected app. To see [active partners](/docs/partner-activation-deactivation#active-partners) for a different app:<br />1. Click the app selector to open the list of your apps.<br />2. Select another app. |
 | See the partner page | Click the **About** icon on a partner card to view the partner page. |
 
 ## Discover partners
@@ -85,7 +85,7 @@ Use the filters at the top of the page to find partners relevant to your search.
 
 | Filter | Description |
 | --- | --- |
-| Partner type | Browse partners by type:<br>- Ad networks<br>- Agencies<br>- Tech partner |
+| Partner type | Browse partners by type:<br />- Ad networks<br />- Agencies<br />- Tech partner |
 | Target region | Filter partners by activity in the selected regions. |
 | Target geo | Filter partners whose main activity is in the selected geos. |
 | High Quality Traffic | When selected, shows only partners with a low-fraud-rate badge (based on traffic from the last month). |

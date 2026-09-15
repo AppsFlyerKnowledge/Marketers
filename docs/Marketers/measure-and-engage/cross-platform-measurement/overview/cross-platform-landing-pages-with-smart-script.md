@@ -19,15 +19,15 @@ The Smart Script in a cross-platform landing page uses the incoming link (the li
 
 |  |
 | --- |
-| **Who's involved**<br>- **Advertiser**:<br>  <br>  - Decides what the outgoing [cross-platform impression](/docs/cross-platform-landing-pages-with-smart-script#01H8EQ4KS75Q62Z7WVNSTDXBZX) and [direct attribution links](/docs/cross-platform-landing-pages-with-smart-script#01H8EQ4KS7C6HADNKQZYNTTFMF) should contain based on the [arguments](https://support.appsflyer.com/hc/articles/4413588932241#arguments) in the Smart Script. This determines the attribution data that gets appended to the outgoing URL, either by manipulating the incoming URL or by forcing certain values.<br>    <br>  - Makes sure all campaigns leading to the website have incoming URLs with parameters that the script can process.<br>  - [Tests the Smart Script](https://appsflyersdk.github.io/appsflyer-onelink-smart-script/examples/test_page.html).<br>- **Web developer**:<br>  - Adds the arguments to the script and implements the Smart Script on the landing page.<br>  - Tests the Smart Script. |
-| **Prerequisites**<br>- An AppsFlyer account with at least one app.<br>- For the impression URL: A [OneLink template](https://support.appsflyer.com/hc/articles/207032246#procedures) with cross-platform attribution enabled. |
+| **Who's involved**<br />- **Advertiser**:<br />  <br />  - Decides what the outgoing [cross-platform impression](/docs/cross-platform-landing-pages-with-smart-script#01H8EQ4KS75Q62Z7WVNSTDXBZX) and [direct attribution links](/docs/cross-platform-landing-pages-with-smart-script#01H8EQ4KS7C6HADNKQZYNTTFMF) should contain based on the [arguments](/docs/set-up-smart-script-to-convert-web-visitors#arguments) in the Smart Script. This determines the attribution data that gets appended to the outgoing URL, either by manipulating the incoming URL or by forcing certain values.<br />    <br />  - Makes sure all campaigns leading to the website have incoming URLs with parameters that the script can process.<br />  - [Tests the Smart Script](https://appsflyersdk.github.io/appsflyer-onelink-smart-script/examples/test_page.html).<br />- **Web developer**:<br />  - Adds the arguments to the script and implements the Smart Script on the landing page.<br />  - Tests the Smart Script. |
+| **Prerequisites**<br />- An AppsFlyer account with at least one app.<br />- For the impression URL: A [OneLink template](/docs/create-a-onelink-template#procedures) with cross-platform attribution enabled. |
 
 ### Create cross-platform impression link
 
 **To create a cross-platform OneLink link that sends an impression to AppsFlyer**:
 
-1. Map incoming link parameters to the parameters that the impression link should contain (for media source, campaign, ad name, etc.).   - Learn more about [arguments](https://support.appsflyer.com/hc/articles/4413588932241#arguments) in the script that process the incoming URL.
-   - The value of the [OneLinkURL argument](https://support.appsflyer.com/hc/articles/4413588932241#arguments) is the domain+ID of the OneLink template with cross-platform attribution enabled.
+1. Map incoming link parameters to the parameters that the impression link should contain (for media source, campaign, ad name, etc.).   - Learn more about [arguments](/docs/set-up-smart-script-to-convert-web-visitors#arguments) in the script that process the incoming URL.
+   - The value of the [OneLinkURL argument](/docs/set-up-smart-script-to-convert-web-visitors#arguments) is the domain+ID of the OneLink template with cross-platform attribution enabled.
 2. Tell your developer to initialize the Smart Script arguments and call the Smart Script method `generateOneLinkURL`. [See developer demo and instructions](https://appsflyersdk.github.io/appsflyer-sample-app-smartscript-demo-page/).
 
 > 📘 Note
@@ -36,7 +36,7 @@ The Smart Script in a cross-platform landing page uses the incoming link (the li
 
 ### Create direct attribution links
 
-1. Map incoming link parameters to the parameters that the outgoing direct attribution links should contain (media source, campaign, ad name, etc.). Learn more about [arguments](https://support.appsflyer.com/hc/articles/4413588932241#arguments) in the script that process the incoming URL.
+1. Map incoming link parameters to the parameters that the outgoing direct attribution links should contain (media source, campaign, ad name, etc.). Learn more about [arguments](/docs/set-up-smart-script-to-convert-web-visitors#arguments) in the script that process the incoming URL.
 2. Tell your developer to initialize the Smart Script arguments,and run the Smart Script method`generateDirectClickURL` to create a link for each platform/app. See developer [demo](https://appsflyersdk.github.io/appsflyer-sample-app-smartscript-demo-page/) and [instructions](https://dev.appsflyer.com/hc/docs/create-direct-click-url).
 
 > 📘 Note
@@ -45,6 +45,6 @@ The Smart Script in a cross-platform landing page uses the incoming link (the li
 
 | Parameter/Argument | Remarks | Record your responses (for you or your developer to use) |
 | --- | --- | --- |
-| platform | A string describes the platform and must be from this list:<br>   - smartcast<br>   - tizen<br>   - roku<br>   - webos<br>   - vidaa<br>   - playstation<br>   - android<br>   - ios<br>   - steam<br>   - quest<br>   - battlenet<br>   - nativepc |  |
-| app\_id | - App ID<br>   - Example: 123456 |  |
-| redirectURL | - The URL to which the platform/app user should be redirected.<br>   - Example: `https://store.steampowered.com/app/123456/Team_Fortress_2/` |  |
+| platform | A string describes the platform and must be from this list:<br />   - smartcast<br />   - tizen<br />   - roku<br />   - webos<br />   - vidaa<br />   - playstation<br />   - android<br />   - ios<br />   - steam<br />   - quest<br />   - battlenet<br />   - nativepc |  |
+| app\_id | - App ID<br />   - Example: 123456 |  |
+| redirectURL | - The URL to which the platform/app user should be redirected.<br />   - Example: `https://store.steampowered.com/app/123456/Team_Fortress_2/` |  |

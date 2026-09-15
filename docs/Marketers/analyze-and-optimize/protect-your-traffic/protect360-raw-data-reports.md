@@ -11,7 +11,7 @@ Raw data reports:
   - Installs and in-app events identified via Validation Rules.
 - Include the block reason for each click, install, or in-app event.
 - Are used by advertisers to reconcile ad network accounts, for optimization, and to adjust attribution dashboards for post-attribution fraud.
-- May have [some fields are restricted or not available](https://support.appsflyer.com/hc/articles/360006868017) if [AppsFlyer Aggregated Advanced Privacy (AAP)](https://support.appsflyer.com/hc/articles/360018515798).
+- May have [some fields are restricted or not available](/docs/about-raw-data-identifier-restrictions) if [AppsFlyer Aggregated Advanced Privacy (AAP)](/docs/apply-aggregated-advanced-privacy-framework).
 - Report types and their availability by download, API, and Data Locker (S3 bucket) are described in the sections that follow.
 - Historical raw data report retention is up to 90 days, depending on the reporting tool and origin of the raw data.
 
@@ -25,10 +25,10 @@ Raw data reports:
 
 | Report | Description |
 | --- | --- |
-| Installs | Reports include: <br>- **Fake installs**: Installs identified as fraudulent by the Protect360 engine. These do not appear in any AppsFlyer dashboard or raw data, except for the Protect360 dashboard and raw data.<br>- **Hijacked installs**: Real user installs where attribution is stolen, but Protect360 [corrects the attribution](https://support.appsflyer.com/hc/articles/360015179337#hijacked-installs-attribution-correction).<br>- **Validation Rules**: That either blocked the install or blocked the attribution (Protect360 [corrects the attribution](https://support.appsflyer.com/hc/articles/360015179337#hijacked-installs-attribution-correction)). |
-| Post-attribution installs | Reports include installs attributed to a media source, but later found to be fraudulent. Protect360 [corrects the attribution](https://support.appsflyer.com/hc/articles/360015179337#hijacked-installs-attribution-correction). |
-| Blocked in-app events | Reports include in-app events from:<br>- **Fake installs**: IAEs are blocked.<br>- **In-app events**: Identified as fraudulent independent of the original installs.<br>- **Validation Rules**:  - IAEs from a rule that blocked the install or blocked attribution.<br>  - IAEs from a rule that blocked the in-app event. |
-| Post-attribution in-app events | Reports include in-app events:<br>- Identified post-attribution.<br>- Of installs attributed to a media source, but later found to be fraudulent. |
+| Installs | Reports include: <br />- **Fake installs**: Installs identified as fraudulent by the Protect360 engine. These do not appear in any AppsFlyer dashboard or raw data, except for the Protect360 dashboard and raw data.<br />- **Hijacked installs**: Real user installs where attribution is stolen, but Protect360 [corrects the attribution](/docs/protect360-raw-data-reports#hijacked-installs-attribution-correction).<br />- **Validation Rules**: That either blocked the install or blocked the attribution (Protect360 [corrects the attribution](/docs/protect360-raw-data-reports#hijacked-installs-attribution-correction)). |
+| Post-attribution installs | Reports include installs attributed to a media source, but later found to be fraudulent. Protect360 [corrects the attribution](/docs/protect360-raw-data-reports#hijacked-installs-attribution-correction). |
+| Blocked in-app events | Reports include in-app events from:<br />- **Fake installs**: IAEs are blocked.<br />- **In-app events**: Identified as fraudulent independent of the original installs.<br />- **Validation Rules**:  - IAEs from a rule that blocked the install or blocked attribution.<br />  - IAEs from a rule that blocked the in-app event. |
+| Post-attribution in-app events | Reports include in-app events:<br />- Identified post-attribution.<br />- Of installs attributed to a media source, but later found to be fraudulent. |
 | Clicks | Reports include blocked clicks with the block reasons. |
 | Blocked install postbacks | Reports include copies of the rejection postbacks sent to media sources bringing blocked installs. |
 
@@ -71,11 +71,11 @@ Raw data reports:
 | Blocked install postbacks | Real-time | - | **✓** | - |
 | Post-attribution installs | Daily 15:00 UTC | **✓** | **✓** | **✓\*** |
 | Post-attribution in-app events | Daily 20:00 UTC | **✓** | **✓** | - |
-| \* Limitations to report via Data Locker:<br>- Agency transparency not supported. Meaning that agency-driven traffic does not contain the name of the media source sending the install.<br>- The report has a unique set of fields relative to other Data Locker reports. This list can't be changed.<br>- Retargeting data is not available in the Installs report; only in the Post-attribution installs report. |
+| \* Limitations to report via Data Locker:<br />- Agency transparency not supported. Meaning that agency-driven traffic does not contain the name of the media source sending the install.<br />- The report has a unique set of fields relative to other Data Locker reports. This list can't be changed.<br />- Retargeting data is not available in the Installs report; only in the Post-attribution installs report. |
 
 ## Getting raw data reports
 
-Raw data reports are available by download, Pull API, and Data Locker (S3 bucket). You can also [give partners access to reports](https://support.appsflyer.com/hc/articles/115004745523).
+Raw data reports are available by download, Pull API, and Data Locker (S3 bucket). You can also [give partners access to reports](/docs/protect360-for-integrated-partners).
 
 <Tabs>
 <Tab title="Download">
@@ -102,9 +102,9 @@ Raw data reports are available by download, Pull API, and Data Locker (S3 bucket
 
 **Before you begin:**
 
-You need a Pull API token. Get the token from an [admin user](https://support.appsflyer.com/hc/articles/360004562377).
+You need a Pull API token. Get the token from an [admin user](/docs/managing-appsflyer-tokens).
 
-1. Go to **Report > API Access.** The [Pull API](https://support.appsflyer.com/hc/articles/360007530258-Using-Pull-API-raw-data) page opens.
+1. Go to **Report > API Access.** The [Pull API](/docs/pull-api-raw-data) page opens.
 2. In the Protect360 fraud reports section, select the necessary Pull API call.
 3. Populate the parameters as required. The table that follows lists the parameters.
 4. Pull the report.
@@ -115,21 +115,21 @@ You need a Pull API token. Get the token from an [admin user](https://support.ap
 | --- | --- | --- | --- |
 | app\_id | App ID as it appears in AppsFlyer | String | Yes |
 | api\_token | Retrieve the key from the Dashboard. Go to **Report** \> **API Access.** Only an admin user can retrieve the API token. | String | Yes |
-| from | Start of the date range:<br>- For installs, this is the install date.<br>- For in-app events, this is the date of the event. | YYYY-MM-DD | Yes |
-| to | End of the date range:<br>- For installs, this is the install date.<br>- For in-app events, this is the date of the event. | YYYY-MM-DD | Yes |
-| event\_name | [Optional for Post-attribution in-app events fraud]<br>Filter events by in-app event. Limit the report to specific events.  One or more events can be included.<br>Example usage: `&event_name=af_purchase,af_login` | String | No |
-| additional\_fields=rejected\_reason\_value | [Optional for Post-attribution in-app events fraud]<br>**[rejected\_reason\_value](https://support.appsflyer.com/hc/articles/208387843-Raw-data-field-dictionary-V5-0-spec-#protect360)** displays the valid contributor (media source) for hijacked installs/in-app events. Populated with either [**contributor[1-3]**](https://support.appsflyer.com/hc/articles/208387843-Raw-data-field-dictionary-V5-0-spec-#attribution::2a6fd501) or **organic**. | String | No |
-| detect-from | [Optional for Post-attribution installs]<br>Start of the fraud detect date range. (Default is from.) (Used in Post-attribution install fraud.) (Used in Post-attribution install fraud.) | YYYY-MM-DD | No |
-| detect-to | [Optional for Post-attribution installs]<br>End of the fraud detection date range. (Default is to.) | YYYY-MM-DD | No |
+| from | Start of the date range:<br />- For installs, this is the install date.<br />- For in-app events, this is the date of the event. | YYYY-MM-DD | Yes |
+| to | End of the date range:<br />- For installs, this is the install date.<br />- For in-app events, this is the date of the event. | YYYY-MM-DD | Yes |
+| event\_name | [Optional for Post-attribution in-app events fraud]<br />Filter events by in-app event. Limit the report to specific events.  One or more events can be included.<br />Example usage: `&event_name=af_purchase,af_login` | String | No |
+| additional\_fields=rejected\_reason\_value | [Optional for Post-attribution in-app events fraud]<br />**[rejected\_reason\_value](/docs/raw-data-field-dictionary#protect360)** displays the valid contributor (media source) for hijacked installs/in-app events. Populated with either [**contributor[1-3]**](/docs/raw-data-field-dictionary#attribution::2a6fd501) or **organic**. | String | No |
+| detect-from | [Optional for Post-attribution installs]<br />Start of the fraud detect date range. (Default is from.) (Used in Post-attribution install fraud.) (Used in Post-attribution install fraud.) | YYYY-MM-DD | No |
+| detect-to | [Optional for Post-attribution installs]<br />End of the fraud detection date range. (Default is to.) | YYYY-MM-DD | No |
 
 </Tab>
 <Tab title="Data Locker">
 
 Data Locker writes raw-data to an AWS S3 bucket.
 
-[See list of available Protect360 reports](https://support.appsflyer.com/hc/articles/4410643856657#protect360).
+[See list of available Protect360 reports](/docs/data-locker-advertiser-reports#protect360).
 
-[See Data Locker configuration instructions](https://support.appsflyer.com/hc/articles/360000877538-Using-Data-Locker-raw-data-deposited-into-an-S3-bucket#aws-cli).
+[See Data Locker configuration instructions](/docs/data-locker-for-marketers#aws-cli).
 
 </Tab>
 </Tabs>
@@ -138,7 +138,7 @@ Data Locker writes raw-data to an AWS S3 bucket.
 
 Protect360 reports have the same general structure as user acquisition reports fields.
 
-In addition to the regular [raw data report fields](https://support.appsflyer.com/hc/articles/208387843), Protect360 reports also have retargeting and blocked reason fields, as follows:
+In addition to the regular [raw data report fields](/docs/raw-data-field-dictionary), Protect360 reports also have retargeting and blocked reason fields, as follows:
 
 ### Blocked reasons
 
@@ -148,9 +148,9 @@ At the click level, clicks are blocked, and the attribution process ignores them
 
 | Blocked reason | Description |
 | --- | --- |
-| ip\_blacklist | Based on a dynamically created list ( [details](https://support.appsflyer.com/hc/articles/218254203#ip-denylists)) |
-| click\_capping | Extremely high rates of click fraud are detected from that ad network. [Learn more](https://support.appsflyer.com/hc/articles/115004745523#impression-and-click-capping) |
-| click\_signing | Signature on the click is not validated. [Learn more](https://support.appsflyer.com/hc/articles/360017831497) |
+| ip\_blacklist | Based on a dynamically created list ( [details](/docs/protect360-anti-fraud-guide#ip-denylists)) |
+| click\_capping | Extremely high rates of click fraud are detected from that ad network. [Learn more](/docs/protect360-for-integrated-partners#impression-and-click-capping) |
+| click\_signing | Signature on the click is not validated. [Learn more](/docs/click-signing-for-ad-networks) |
 | input\_validation | Invalid media source name |
 
 #### Install level blocked reasons
@@ -169,8 +169,8 @@ The following tables list possible install level blocked reasons:
 | bots | fake\_device\_parameters | Non-human behavior detected in device-related parameters during the app installation process |
 | bots | fake\_install\_parameters | Non-human behavior detected in install-related parameters during the app installation process |
 | bots | bayesian\_network | Bayesian network identification of fraudulent patterns |
-| bots | user activity anomalies | Identifies abnormal or suspicious user behavior within the app using behavioral anomaly detection models. These models:<br>- Analyze user activity on an individual level<br>- Surface deviations from expected patterns<br>- Detect behavior clustering that diverges from legitimate user profiles<br>- This detection helps flag bot activity that mimics real users but performs in-app actions in atypical ways. |
-| bots | store validation | Validates that each install originates from an authentic and expected source. This mechanism:<br>- Verifies the integrity of the acquisition channel<br>- Detects spoofed or manipulated install signals<br>- Rejects installs that don’t align with genuine distribution pathways<br>- By ensuring legitimacy at the install level, this method helps block bots attempting to fake organic or paid installs. |
+| bots | user activity anomalies | Identifies abnormal or suspicious user behavior within the app using behavioral anomaly detection models. These models:<br />- Analyze user activity on an individual level<br />- Surface deviations from expected patterns<br />- Detect behavior clustering that diverges from legitimate user profiles<br />- This detection helps flag bot activity that mimics real users but performs in-app actions in atypical ways. |
+| bots | store validation | Validates that each install originates from an authentic and expected source. This mechanism:<br />- Verifies the integrity of the acquisition channel<br />- Detects spoofed or manipulated install signals<br />- Rejects installs that don’t align with genuine distribution pathways<br />- By ensuring legitimacy at the install level, this method helps block bots attempting to fake organic or paid installs. |
 | bots | App-interaction anomalies | Flags non-in-app-based events on post-install app interactions. Helps identify suspicious behavior in the transition from install to launches. |
 | validation\_bots | invalid\_device\_parameters | Specific device fields expectation mismatch - defined by the customer |
 | validation\_bots | validation\_rules | Rules where the outcome is blocked installs based on manually defined validation rule |
@@ -212,7 +212,7 @@ The following tables list possible cluster level blocked reasons:
 | ctit\_anomalies, install\_hijacking | ctit\_anomalies | Abnormal CTIT pattern per app standards |
 | click\_flood | click\_flood | Abnormally high click volume across long CTIT distribution |
 | install\_hijacking | click\_clusters | Clicks generated by a device-level malware |
-| Re-engagement Hijacking | Re-engagement Click Clusters | Detects fraudulent attempts to hijack re-engagement attribution. These manipulations aim to steal credit from legitimate retargeting networks or even from users who didn’t see any retargeting ad at all.<br>Once detected, attribution is corrected and reassigned to: <br>- The valid retargeting network<br>- The original user acquisition (UA) provider<br>- Organic, if the user installed the app without being exposed to any valid retargeting ad |
+| Re-engagement Hijacking | Re-engagement Click Clusters | Detects fraudulent attempts to hijack re-engagement attribution. These manipulations aim to steal credit from legitimate retargeting networks or even from users who didn’t see any retargeting ad at all.<br />Once detected, attribution is corrected and reassigned to: <br />- The valid retargeting network<br />- The original user acquisition (UA) provider<br />- Organic, if the user installed the app without being exposed to any valid retargeting ad |
 
 #### In-app level blocked reasons
 
@@ -228,14 +228,14 @@ The following table lists possible in-app level blocked reasons.
 
 | Blocked reason | Blocked sub reason | Description |
 | --- | --- | --- |
-| Inherits from install | Inherits from install | Initial install identified as fake based on [install](https://support.appsflyer.com/hc/articles/360015179337#install-level-blocked-reasons) or [denylisted](https://support.appsflyer.com/hc/articles/360015179337#cluster-level-blocked-reasons) level reason |
+| Inherits from install | Inherits from install | Initial install identified as fake based on [install](/docs/protect360-raw-data-reports#install-level-blocked-reasons) or [denylisted](/docs/protect360-raw-data-reports#cluster-level-blocked-reasons) level reason |
 | inapps\_bots | fake\_device\_parameters | AppsFlyer algorithm detects fraud |
-| in\_app\_store\_validation | - | [Receipt validation](https://support.appsflyer.com/hc/articles/207032106) for in-app purchase fails. |
+| in\_app\_store\_validation | - | [Receipt validation](/docs/legacy-receipt-validation-for-in-app-purchases) for in-app purchase fails. |
 | validation\_inapps | validation\_rules | Based on manually defined validation rule |
 
 ### Retargeting
 
-Protect360 raw data includes fraudulent installs and sessions from retargeting campaigns (known as re-attributions and re-engagements, respectively). Data displays using the [event name](https://support.appsflyer.com/hc/articles/208387843-Raw-data-field-dictionary-V5-0-spec-#event) and [retargeting conversion type](https://support.appsflyer.com/hc/articles/208387843-Raw-data-field-dictionary-V5-0-spec-#attribution::e9c68f6c) fields. They are marked as either an:
+Protect360 raw data includes fraudulent installs and sessions from retargeting campaigns (known as re-attributions and re-engagements, respectively). Data displays using the [event name](/docs/raw-data-field-dictionary#event) and [retargeting conversion type](/docs/raw-data-field-dictionary#attribution::e9c68f6c) fields. They are marked as either an:
 
 - Install (applies to event name, but not retargeting conversion type)
 - Re-attribution
@@ -254,9 +254,9 @@ Protect360 retargeting raw data is available for real-time blocks and fraud iden
 
 For hijacked installs, AppsFlyer blocks attribution to the fraudulent network and instead attributes the last legitimate contributor source.
 
-For hijacked installs use the [rejected\_reason\_value](https://support.appsflyer.com/hc/articles/208387843-Raw-data-field-dictionary-V5-0-spec-#protect360) field to identify the valid contributor (media source), meaning the contributor that should have originally received attribution.
+For hijacked installs use the [rejected\_reason\_value](/docs/raw-data-field-dictionary#protect360) field to identify the valid contributor (media source), meaning the contributor that should have originally received attribution.
 
-- The **rejected\_reason\_value** is populated with either [**contributor[1-3]**](https://support.appsflyer.com/hc/articles/208387843-Raw-data-field-dictionary-V5-0-spec-#attribution::2a6fd501) or **organic**. Check the **contributor[1-3]** **media source/partner** fields to view the contributor details and reconcile.
+- The **rejected\_reason\_value** is populated with either [**contributor[1-3]**](/docs/raw-data-field-dictionary#attribution::2a6fd501) or **organic**. Check the **contributor[1-3]** **media source/partner** fields to view the contributor details and reconcile.
 - If the contributor fields are not displayed in your report, they are available to be added from the **Export data** page.
 
 > 📘 Note

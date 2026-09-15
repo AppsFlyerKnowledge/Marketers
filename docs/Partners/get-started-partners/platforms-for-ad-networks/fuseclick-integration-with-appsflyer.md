@@ -16,17 +16,17 @@ https://app.appsflyer.com/app_id?pid=mediaName_int&c={campaign}
 | --- | --- |
 | https://app.appsflyer.com | AppsFlyer endpoint |
 | app\_id | Application unique ID - Dynamic value changed per-app promoted |
-| pid | Media source name include **\_int** to identify<br>**integrated** network at AppsFlyer servers |
+| pid | Media source name include **\_int** to identify<br />**integrated** network at AppsFlyer servers |
 | c | Campaign name |
 
 **Recommended Attribution Link Parameters:**
 
 | AppsFlyer Parameter | FuseClick Macros | Description |
 | --- | --- | --- |
-| clickid | {TID} | Request ID of each user session - **Required** |
-| af\_siteid | {SC} | ID of the affiliate promoting the offer - **Optional** |
+| clickid | `{TID}` | Request ID of each user session - **Required** |
+| af\_siteid | `{SC}` | ID of the affiliate promoting the offer - **Optional** |
 
-For the complete AppsFlyer parameter list [click here](https://support.appsflyer.com/hc/articles/207273946-Available-Macros-on-AppsFlyer-s-Postbacks)
+For the complete AppsFlyer parameter list [click here](/docs/postback-macros-for-ad-networks)
 
 For complete FuseClick macro list [click here](https://support.fuseclick.com/documentation/open/iwf/2016/0805/199.html)
 

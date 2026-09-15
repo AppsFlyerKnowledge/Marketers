@@ -6,7 +6,7 @@ At a glance: AppTweak, an AppsFlyer integrated partner, is an app store acquisit
 
 ## Overview
 
-This integration allows you to grant AppTweak permission to access your aggregated analytics reports and SKAN reposts (for iOS apps), using their API token. See [more details and limitations about these permissions](https://support.appsflyer.com/hc/articles/360005854857).
+This integration allows you to grant AppTweak permission to access your aggregated analytics reports and SKAN reposts (for iOS apps), using their API token. See [more details and limitations about these permissions](/docs/access-to-aggregated-analytics-tools-for-api-partners).
 
 ## Setting up AppTweak
 
@@ -32,4 +32,4 @@ This integration allows you to grant AppTweak permission to access your aggregat
 
 > 📘 Note
 >
-> AppsFlyer provides aggregate reporting via the [Data Locker solution for partners](https://support.appsflyer.com/hc/articles/12000718524561).
+> AppsFlyer provides aggregate reporting via the [Data Locker solution for partners](/docs/data-locker-reports-for-api-partners).

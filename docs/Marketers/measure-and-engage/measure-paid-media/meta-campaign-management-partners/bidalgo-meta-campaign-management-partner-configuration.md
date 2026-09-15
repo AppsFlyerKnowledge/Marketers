@@ -28,7 +28,7 @@ Bidalgo, an AppsFlyer integrated partner (formerly known as Facebook Marketing P
 ### In-app events
 
 1. To send in-app event postbacks to Bidalgo, turn on **In-app event postbacks**.
-2. Set the configuration according to the guidelines [here](https://support.appsflyer.com/hc/articles/4410480904081#predefined-event-mapping).
+2. Set the configuration according to the guidelines [here](/docs/meta-ads-in-app-event-mapping#predefined-event-mapping).
 3. Click **Save**.
 
 <Image src="https://files.readme.io/29453cf562585ab43c45e4869ca2a904b80817a6c1c73bf0d12fbd3e181c1a0a-14238354506769.png" alt="meta_campaign_management_partner_settings.png" />

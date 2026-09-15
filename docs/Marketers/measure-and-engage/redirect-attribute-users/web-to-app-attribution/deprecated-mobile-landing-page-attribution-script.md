@@ -4,11 +4,11 @@ excerpt: "This deprecated script generates URLs embedded behind buttons on mobil
 ---
 > 🚧 Deprecation Notice
 >
-> This script is deprecated as of December 17, 2020, and is replaced by the [OneLink Smart Script](https://support.appsflyer.com/hc/articles/360000677217). This version continues to work, but will not be updated or changed. The script generates URLs that are embedded behind a button on your mobile website and redirects visitors to download your app. The URLs also support install attribution and deep linking.
+> This script is deprecated as of December 17, 2020, and is replaced by the [OneLink Smart Script](/docs/onelink-smart-script-overview). This version continues to work, but will not be updated or changed. The script generates URLs that are embedded behind a button on your mobile website and redirects visitors to download your app. The URLs also support install attribution and deep linking.
 
 ![5648_Sunset_and_deprecation-01.png](https://files.readme.io/d081bc5f4a2dd4010efe360436973ac39fac999136c265d007646ae2e7f61fec-5648_Sunset_and_deprecation-01.png)
 
-**[Migrate to OneLink Smart Script](https://support.appsflyer.com/hc/articles/360000677217)**
+**[Migrate to OneLink Smart Script](/docs/onelink-smart-script-overview)**
 
 Landing pages are a very common technique among digital marketers. They allow the marketers to capture their leads' details for remarketing, even if these users don’t convert at first.
 
@@ -116,7 +116,7 @@ http://www.yoursite.com/yourlandingpage?gclid={USER_GCLID}
 On your landing page load -
 
 1. Activate the _**generateUrl**_ Javascript function
-2. The function (see below) looks for the _**GCLID**_ parameter and builds a long OneLink URL containing its value under the af_sub1 parameter (you can use any of the [subscriber parameters](https://support.appsflyer.com/hc/articles/207447163#what-are-subscriber-parameters-good-for) af_sub1 - af_sub5).
+2. The function (see below) looks for the _**GCLID**_ parameter and builds a long OneLink URL containing its value under the af_sub1 parameter (you can use any of the [subscriber parameters](/docs/about-link-structure-and-parameters#what-are-subscriber-parameters-good-for) af_sub1 - af_sub5).
 3. Landing page download button uses the generated OneLink URL.
 
 OneLink URL example: `https://yourapp.onelink.me/abcd?pid=google_lp&c={CAMPAIGN_NAME}&af_sub1={USER_PARSED_GCLID}`
@@ -143,7 +143,7 @@ You can export the CSVs with this information from your AppsFlyer account, or yo
 >
 > URL example:
 > ```
-> http://www.yoursite.com/yourlandingpage?gclid={USER_GCLID}&keyword={USER_KEYWORD}
+> http://www.yoursite.com/yourlandingpage?gclid=`{USER_GCLID}&keyword={USER_KEYWORD}`
 > ```
 > 2. The Javascript function (see below) looks for the _**keyword**_ parameter
 > 3. The value is added to the generated OneLink URL under af_keywords
@@ -162,7 +162,7 @@ In the script, look for **gclidValue** to learn how the script detects users com
 
 #### Description:
 
-Other [SRNs](https://support.appsflyer.com/hc/articles/360001546905-Self-Reporting-Networks#srns-integrated-with-appsflyer), for example, Snapchat or Twitter, are not cross-platform like Meta ads, and require a bit of work to get your mobile users attributed to them.
+Other [SRNs](/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer), for example, Snapchat or Twitter, are not cross-platform like Meta ads, and require a bit of work to get your mobile users attributed to them.
 
 Your campaigns with other SRNs lead your users to the landing page, and you are billed according to clicking leads, unrelated to any derived mobile users.
 
@@ -223,8 +223,8 @@ All that is left to do is NOT prevent the correct attribution with another last 
 
 #### Instructions:
 
-1. [Create the attribution link](https://support.appsflyer.com/hc/articles/208874366#create-a-onelink-link) for the media source
-2. Add the [landing page parameter](https://support.appsflyer.com/hc/articles/208874366#redirection) leading to your landing page to the attribution link
+1. [Create the attribution link](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link) for the media source
+2. Add the [landing page parameter](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#redirection) leading to your landing page to the attribution link
 3. Add `&af_redirect=true` to the landing page value under **any redirection parameters** (that is, af_r, af_ios_url, and af_android_url) in the attribution link.
 
 Example: `https://yourapp.onelink.me/abcd?pid=email&c={CAMPAIGN_NAME}&af_r=http://www.yoursite.com/yourlandingpage?af_redirect=true`
@@ -287,13 +287,13 @@ If you have a significant amount of mobile organic traffic from your website, it
 
 To attribute mobile organic visitors, the website should have _**download**_ or _**install**_ buttons, with a OneLink attribution link behind them. OneLink enables diagnosing the device type and redirecting the lead to the correct app store according to it.
 
-To learn how to set and build OneLink URLs go [here](https://support.appsflyer.com/hc/articles/207032246-OneLink-Redirections-Setup-Guide).
+To learn how to set and build OneLink URLs go [here](/docs/create-a-onelink-template).
 
 > 👍 Tip
 >
 > Add "&pid=website" to your attribution link to attribute all these visitors to your website.
 >
-> In each page of your website, which has a download/install button with an attribution Link, add "&c={PAGE NAME}". This can help you find the highest and lowest converting pages in your website.
+> In each page of your website, which has a download/install button with an attribution Link, add "&c=`{PAGE NAME}`". This can help you find the highest and lowest converting pages in your website.
 
 #### What the script does
 
@@ -319,7 +319,7 @@ A great solution to this attribution problem is using a **text-to-download form 
 2. When your user types in their phone number, text them a link to your app, with a OneLink short URL. You can also ask for their email address to email them app download messages.
 3. The usage of OneLink is crucial here, as the mobile device platform isn't known when sending the message to the users. OneLink's diagnosis and redirection functionalities take care of this for you.
 4. Add "&pid=desktop_website" to the OneLink URL to identify this source.
-5. Add "&c={PAGE NAME}" to help you find the highest and lowest converting pages in your website for desktop users.
+5. Add "&c=`{PAGE NAME}`" to help you find the highest and lowest converting pages in your website for desktop users.
 
 #### What the script does
 
@@ -430,7 +430,7 @@ function generateUrl(isDebug) {
   ];
 
   if (SRNs.includes(pidValue)) {
-  	alert("DO NOT USE NAMES OF SRNS IN af_pid or utm_source - use the names listed in Other SRNs: Add Parameter section in the landing page article\nhttps://support.appsflyer.com/hc/en-us/articles/360000677217#other-srns-add-parameter");
+  	alert("DO NOT USE NAMES OF SRNS IN af_pid or utm_source - use the names listed in Other SRNs: Add Parameter section in the landing page article\n/docs/onelink-smart-script-overview#other-srns-add-parameter");
     return;
   }
 
@@ -601,12 +601,12 @@ If your mobile marketing funnel always leads to your landing page, these media s
 
 OneLink™ is a unique AppsFlyer attribution link, which is used for device detection and redirection, or for deep linking.
 
-The [Social apps landing page](https://support.appsflyer.com/hc/articles/208874366-OneLink-2-4-Sending-existing-users-to-open-your-app#social-app-landing-page) solution requires the advertiser to have a basic OneLink URL. Users who click ads in social media apps are then redirected to an AppsFlyer-generated landing page. From there, they can be deep linked, or continue to install the app.
+The [Social apps landing page](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page) solution requires the advertiser to have a basic OneLink URL. Users who click ads in social media apps are then redirected to an AppsFlyer-generated landing page. From there, they can be deep linked, or continue to install the app.
 
 AppsFlyer provides a variety of social media apps landing page templates. Element positions in the templates are fixed, but the elements themselves are customizable, including background image or color, titles, texts, images, buttons, tags, and more.
 
 If you haven't implemented OneLink for your app:
 
-1. Configure [OneLink template](https://support.appsflyer.com/hc/articles/207032246#procedures).
-2. Create a [OneLink URL](https://support.appsflyer.com/hc/articles/208874366#create-a-onelink-link) based on the template.
+1. Configure [OneLink template](/docs/create-a-onelink-template#procedures).
+2. Create a [OneLink URL](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link) based on the template.
 3. In the script, replace https://yourapp.onelink.me/abcd with your OneLink URL.

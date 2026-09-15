@@ -22,7 +22,7 @@ Use the playbook to understand:
 - Step-by-step instructions on how to set up an app in China
 - Success stories from Gismart, Lightricks, SKYROCKET, and Ubisoft
 
-**[Android attribution guide for out-of-store-markets](https://support.appsflyer.com/hc/articles/360002049858):**
+**[Android attribution guide for out-of-store-markets](/docs/measure-attribution-in-the-chinese-domestic-market):**
 
 - Out-of-market challenges
 - Integrating the AppsFlyer SDK
@@ -30,12 +30,12 @@ Use the playbook to understand:
 - Record app store traffic
 - Identify store hijacking
 
-**[Key media source partners configuration guide](https://support.appsflyer.com/hc/sections/6552066355601-China-domestic-market-ad-network-configuration)**: AppsFlyer is integrated and pre-configured with all the major Chinese media sources. Meaning that both AppsFlyer and the media sources are ready and able to support your user acquisition campaigns in China.
+**[Key media source partners configuration guide](/docs/china-domestic-market-ad-network-configuration)**: AppsFlyer is integrated and pre-configured with all the major Chinese media sources. Meaning that both AppsFlyer and the media sources are ready and able to support your user acquisition campaigns in China.
 
 App promotion in China guides :
 
-- EN: [iOS](https://support.appsflyer.com/hc/articles/115004641383-iOS-App-Promotion-in-China), [Android](https://support.appsflyer.com/hc/articles/115004639203-Android-App-Promotion-in-China)
-- CN: [iOS](https://support.appsflyer.com/hc/articles/360001061517-%E4%B8%AD%E5%9B%BD%E6%9C%AC%E5%9C%9F%E5%90%88%E4%BD%9C%E4%BC%99%E4%BC%B4%E5%88%97%E8%A1%A8-iOS), [Android](https://support.appsflyer.com/hc/articles/360001061457-%E4%B8%AD%E5%9B%BD%E6%9C%AC%E5%9C%9F%E5%90%88%E4%BD%9C%E4%BC%99%E4%BC%B4%E5%88%97%E8%A1%A8-Android)
+- EN: [iOS](/docs/ios-app-promotion-in-china), [Android](/docs/android-app-promotion-in-china)
+- CN: iOS, Android
 
 **Leading media sources in China**
 

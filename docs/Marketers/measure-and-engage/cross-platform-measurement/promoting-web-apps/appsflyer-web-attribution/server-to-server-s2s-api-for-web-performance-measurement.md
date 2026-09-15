@@ -35,7 +35,7 @@ All requests must include a valid S2S API token and the correct content type in 
 
 | Header | Type | Description |
 | --- | --- | --- |
-| `Authorization` | API token | Your S2S API token is included in the Header in the following format:<br>`Authorization: Bearer {s2s-token}` |
+| `Authorization` | API token | Your S2S API token is included in the Header in the following format:<br />`Authorization: Bearer {s2s-token}` |
 | `Content-Type` | string | Must be `application/json`. Required on all requests. |
 
 > 📘 Note
@@ -68,7 +68,7 @@ Measures a web event (for example, a purchase, sign-up, or custom action) for a 
 | `ip` | string | Optional | Device IP address (IPv4 or IPv6). Max 46 characters. |
 | `user_agent` | string | Optional | Full user agent string from the browser. Max 1,024 characters. |
 | `http_referrer` | string | Optional | Referrer URL of the current page. |
-| `af_customer_event_id` | string | Optional | Your own unique ID for the event, which you use to deduplicate conversions on ad network platforms. AppsFlyer forwards it to the network as the event ID.<br>Send it when either applies:<br>- You run a network pixel on your site, alongside AppsFlyer tracking.<br>- You send the same event through both the Web SDK and this API.<br>When you send it, also send the same value in the network's own pixel event (for example, `eventID` in `fbq()`), so the network counts the conversion once instead of twice.<br>If you omit it, AppsFlyer generates its own ID, and the network can't match your pixel events.<br>**Limits:** Max 256 characters. Matching is exact and case-sensitive. |
+| `af_customer_event_id` | string | Optional | Your own unique ID for the event, which you use to deduplicate conversions on ad network platforms. AppsFlyer forwards it to the network as the event ID.<br />Send it when either applies:<br />- You run a network pixel on your site, alongside AppsFlyer tracking.<br />- You send the same event through both the Web SDK and this API.<br />When you send it, also send the same value in the network's own pixel event (for example, `eventID` in `fbq()`), so the network counts the conversion once instead of twice.<br />If you omit it, AppsFlyer generates its own ID, and the network can't match your pixel events.<br />**Limits:** Max 256 characters. Matching is exact and case-sensitive. |
 | `email_hashed` | string | Optional | SHA256 of normalized (lowercase, trimmed) email. Must be a 64-character hex string. |
 | `phone_number_hashed` | string | Optional | SHA256 of phone number. Must be a 64-character hex string. |
 | `phone_number_e164_hashed` | string | Optional | SHA256 of E.164 phone number (for example, `+14155552671`). Must be a 64-character hex string. |

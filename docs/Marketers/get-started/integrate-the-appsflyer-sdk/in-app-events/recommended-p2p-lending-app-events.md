@@ -10,12 +10,12 @@ The data that you gather from event recording can highlight trustworthy borrower
 
 > 📘 Important!
 >
-> * Make sure to read the [instructions](https://support.appsflyer.com/hc/articles/115005544169-Rich-in-app-events-guide#setting-up-inapp-events) for marketers about implementing in-app events.
+> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=p2p_lending). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
 > * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=p2p_lending&view=code) for iOS, Android, and Unity developers.
 > * Detailed instructions for your developer can be found in the **[AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).**
 
-For more information about recording in-app events, see the [In-app events guide](https://support.appsflyer.com/hc/articles/115005544169).
+For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
 
 ![Flowchart_for_recommended_events P2P_lending_app_user_journey](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)
 
@@ -94,7 +94,7 @@ Can be sent without any additional parameters
 
 > 📘 Note
 >
-> It is highly recommended that you associate loans with lenders. To do so, make sure to set the Customer User ID. [Setting the Customer User ID](https://support.appsflyer.com/hc/articles/207032016-Customer-User-ID) is your way to match lenders with users of your app as they appear in AppsFlyer. By setting the Customer User ID you make sure that any event is sent with the Customer User ID.
+> It is highly recommended that you associate loans with lenders. To do so, make sure to set the Customer User ID. [Setting the Customer User ID](/docs/customer-user-id-field-cuid) is your way to match lenders with users of your app as they appear in AppsFlyer. By setting the Customer User ID you make sure that any event is sent with the Customer User ID.
 
 ### Submit loan application (submit\_loan\_application)
 

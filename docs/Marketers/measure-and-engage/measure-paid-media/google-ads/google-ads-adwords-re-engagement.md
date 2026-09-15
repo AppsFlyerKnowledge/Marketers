@@ -4,7 +4,7 @@ excerpt: "Learn how to measure Google Ads App Campaigns for Engagement, set up d
 ---
 With AppsFlyer, you can measure the results of **Google Ads App Campaigns for Engagement**.
 
-In AppsFlyer, such campaigns are called [Retargeting](https://support.appsflyer.com/hc/articles/207033786) campaigns. AppsFlyer supports getting cost, click and impression data for retargeting campaigns. This integration allows you to view and measure your ad spend on Google Ads, and then calculate eCPI and ROI of your Google Ads campaigns.
+In AppsFlyer, such campaigns are called [Retargeting](/docs/retargeting-attribution-guide) campaigns. AppsFlyer supports getting cost, click and impression data for retargeting campaigns. This integration allows you to view and measure your ad spend on Google Ads, and then calculate eCPI and ROI of your Google Ads campaigns.
 
 Retargeting campaigns target users who have installed your app in the past.
 
@@ -29,7 +29,7 @@ To enable retargeting campaigns of any media source, you need to enable it on th
 
 ### Enable Google Ads retargeting in AppsFlyer
 
-- Follow the [instructions](https://support.appsflyer.com/hc/articles/115002504686#step-2-set-up-google-ads-on-appsflyer-mandatory) for setting up Google Ads in AppsFlyer.
+- Follow the [instructions](/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory) for setting up Google Ads in AppsFlyer.
 
 ### Importing session start conversions in Google Ads
 
@@ -37,7 +37,7 @@ To record conversions for re-engagement campaigns **in Google Ads**, you need to
 
 This event appears in Google Ads if at least one user launches the app after you enable retargeting in AppsFlyer for Google Ads. Just to be sure, launch the app yourself after you enable retargeting.
 
-To learn how to import conversions in Google Ads, see [here](https://support.appsflyer.com/hc/articles/115002504686#step-4-measure-your-app-conversions-mandatory).
+To learn how to import conversions in Google Ads, see [here](/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory).
 
 > 📘 Note
 >
@@ -78,7 +78,7 @@ These campaigns work **out of the box** with AppsFlyer and do not require:
 **Opt-out:** Google does not currently support opting in or out of non-app campaign measurement (unlike platforms such as TikTok or Meta).
 
 <Cards>
-  <Card title="Google Ads SKAdNetwork interoperability with AppsFlyer" href="https://support.appsflyer.com/hc/articles/4403215779857">
+  <Card title="Google Ads SKAdNetwork interoperability with AppsFlyer" href="/docs/get-skan-postback-data-from-google-ads">
     For iOS 14-related considerations, see Google Ads SKAdNetwork interoperability with AppsFlyer.
   </Card>
 </Cards>

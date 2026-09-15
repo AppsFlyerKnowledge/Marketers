@@ -86,6 +86,6 @@ You can delete a custom metric either from the dashboard or from within a specif
 | Trait | Remarks |
 | --- | --- |
 | Account-level accessibility | All account members can create, view, edit, and delete any custom metric. This includes metrics created by other users. |
-| Custom metrics | - Custom metrics have a cap of 100 custom metrics per account.<br>- Custom metrics are currently supported only with daily time breakdown. Weekly and monthly breakdowns are not supported. |
+| Custom metrics | - Custom metrics have a cap of 100 custom metrics per account.<br />- Custom metrics are currently supported only with daily time breakdown. Weekly and monthly breakdowns are not supported. |
 | Formula complexity | Maximum 5 metrics per custom metric formula. |
 | Nesting restriction | Custom metrics can't be used as components in other custom metric formulas. |

@@ -6,11 +6,11 @@ excerpt: "Create and manage your ad network account's AppsFlyer users, and assig
 
 AppsFlyer ad network accounts allow for multiple users, each with a role that defines their access to features and functions.
 
-The **Admin** role has access to all capabilities. The **Marketing** role has access to a more limited set of features. A full list of capabilities per role is available on the [Roles tab](https://support.appsflyer.com/hc/articles/4414238502289#roles-tab) of the **User management** page.
+The **Admin** role has access to all capabilities. The **Marketing** role has access to a more limited set of features. A full list of capabilities per role is available on the [Roles tab](/docs/user-management-for-ad-networks#roles-tab) of the **User management** page.
 
 ## More about roles
 
-As a general rule, all roles are predefined, and each role’s functional capabilities are fixed: no "mixing and matching" allowed. However, you can change a user’s functional capabilities at any time by changing their role (except for the [account owner](https://support.appsflyer.com/hc/articles/4414238502289#admin%E2%80%94a-special-role), as discussed below).
+As a general rule, all roles are predefined, and each role’s functional capabilities are fixed: no "mixing and matching" allowed. However, you can change a user’s functional capabilities at any time by changing their role (except for the [account owner](/docs/user-management-for-ad-networks#admin%E2%80%94a-special-role), as discussed below).
 
 #### Example
 
@@ -24,7 +24,7 @@ You have assigned Bill Bates to the **Marketing** role. This role gives Bill the
 
 If your AppsFlyer account existed under our prior user management system (when the only available account types were Admin and Team member), all users were brought into the new system with unchanged capabilities. As a result, most of these users appear in the current system with **temp roles**.
 
-Learn more about [managing temp roles](https://support.appsflyer.com/hc/articles/4414238502289#managing-temp-roles).
+Learn more about [managing temp roles](/docs/user-management-for-ad-networks#managing-temp-roles).
 
 ### Admin—a special role
 
@@ -37,10 +37,10 @@ An AppsFlyer account can have **one or more** Admins, but every account has at l
 
 This "all-access" characteristic of the Admin role cannot be changed or limited.
 
-- **Account owner:**The user created at the time the account was opened is assigned the Admin role by default.  - The account owner cannot be deleted, removed from the Admin role, or otherwise edited from the [User management](https://support.appsflyer.com/hc/articles/4414238502289#user-management-page) page. Likewise, the account owner’s email address cannot be changed.
-    - If you do need to change the account owner, follow the [steps listed below](https://support.appsflyer.com/hc/articles/4414238502289#changing-the-account-owner).
+- **Account owner:**The user created at the time the account was opened is assigned the Admin role by default.  - The account owner cannot be deleted, removed from the Admin role, or otherwise edited from the [User management](/docs/user-management-for-ad-networks#user-management-page) page. Likewise, the account owner’s email address cannot be changed.
+    - If you do need to change the account owner, follow the [steps listed below](/docs/user-management-for-ad-networks#changing-the-account-owner).
   - The account owner is initially responsible for creating additional users (until additional users with user management capabilities are created).
-- Admins can [manage API and S2S tokens](https://support.appsflyer.com/hc/articles/360004562377).
+- Admins can [manage API and S2S tokens](/docs/managing-appsflyer-tokens).
 - Any Admin other than the account owner **can** be changed to a different role or deleted from the AppsFlyer account through the User management page.
 
 ## User management page
@@ -58,14 +58,14 @@ The **Users** tab displays a table of all existing users in your account. It is 
 - Use the search box to find and display specific users.
 - Click the filter icon <Image src="https://files.readme.io/00fa39bef5e51bf9a8a0b2ae2dee4b631b57d423e261883bff1199d7293c0458-17387375698833.png" alt="filter_icon.png" /> in the **Role** column heading to filter users by their role (including temp roles).
   - To clear the filter, select **None** in the filter dropdown list.
-- Use the checkboxes to select and [edit multiple users](https://support.appsflyer.com/hc/articles/4414238502289#multiuser-editing) at the same time.
+- Use the checkboxes to select and [edit multiple users](/docs/user-management-for-ad-networks#multiuser-editing) at the same time.
 
 ### Roles tab
 
 The **Roles** tab displays a list of all roles defined in your account, including:
 
-- The 3 [predefined roles](https://support.appsflyer.com/hc/articles/4414238502289#more-about-roles) of Admin, Marketing, and Team manager
-- Any [temp roles](https://support.appsflyer.com/hc/articles/4414238502289#temp-roles%E2%80%94an-exception-to-the-rule) currently assigned to users
+- The 3 [predefined roles](/docs/user-management-for-ad-networks#more-about-roles) of Admin, Marketing, and Team manager
+- Any [temp roles](/docs/user-management-for-ad-networks#temp-roles%E2%80%94an-exception-to-the-rule) currently assigned to users
 
 Click on the name of any role in the left panel to see:
 
@@ -93,7 +93,7 @@ Click on the name of any role in the left panel to see:
 > - It cannot later be changed without deleting and recreating the user.
 > - It must be a valid email address at which the user can receive email.
 > - It cannot be associated with another user in any AppsFlyer account.
->   - If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](https://support.appsflyer.com/hc/articles/4414238502289#troubleshooting-can%E2%80%99t-create-this-user) to resolve this issue.
+>   - If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](/docs/user-management-for-ad-networks#troubleshooting-can%E2%80%99t-create-this-user) to resolve this issue.
 
 4. Select the user’s department (optional).
 5. Select the user’s role (required).
@@ -105,7 +105,7 @@ Click on the name of any role in the left panel to see:
 
 #### Becoming an active user
 
-After clicking **Save** to finish the procedure of [creating a user](https://support.appsflyer.com/hc/articles/4414238502289#creating-a-user) (above), the user receives an email invitation to activate their account. The activation link is valid for 48 hours. If the user didn’t receive the invitation or if the link has expired, you can [resend the invitation](https://support.appsflyer.com/hc/articles/4414238502289#resending-a-user-invitation).
+After clicking **Save** to finish the procedure of [creating a user](/docs/user-management-for-ad-networks#creating-a-user) (above), the user receives an email invitation to activate their account. The activation link is valid for 48 hours. If the user didn’t receive the invitation or if the link has expired, you can [resend the invitation](/docs/user-management-for-ad-networks#resending-a-user-invitation).
 
 You can see the new user on the User management page, with an envelope icon <Image src="https://files.readme.io/1e334edd433f9ac13a175cdd48345adebe02892215896ea967768dc3cabf0349-17387375704209.png" alt="pending_invitation_icon.png" /> near their name. This indicates that an invitation has been sent and the account is awaiting activation. Once the user activates their account, the envelope disappears.
 
@@ -135,7 +135,7 @@ Multi-user editing is an efficient way to change the role of several users at on
 
 1. On the **Users** tab, select the checkboxes of the user or users you want to edit.
    - Select the checkbox in the column heading to select all visible users.
-   - The number of currently-selected users is displayed on the right side of the search box. Note that the [account owner](https://support.appsflyer.com/hc/articles/4414238502289#admin%E2%80%94a-special-role) cannot be selected and is not included in the number of selected users.
+   - The number of currently-selected users is displayed on the right side of the search box. Note that the [account owner](/docs/user-management-for-ad-networks#admin%E2%80%94a-special-role) cannot be selected and is not included in the number of selected users.
 2. Click the **Role** button that is displayed at the top-right of the table.
 3. Make the necessary changes. Remember that your changes apply to all selected users!
 4. The edited users are highlighted in the table, and the users appear as they will once the changes are saved. However, you still have the opportunity to review your changes and confirm or cancel them in the next step.
@@ -152,10 +152,10 @@ Multi-user editing is an efficient way to change the role of several users at on
 
 ### Managing temp roles
 
-If your account previously used our prior user management system, [temp roles](https://support.appsflyer.com/hc/articles/4414238502289#temp-roles%E2%80%94an-exception-to-the-rule) were assigned to existing users to ensure that they were brought into the new system with unchanged capabilities.
+If your account previously used our prior user management system, [temp roles](/docs/user-management-for-ad-networks#temp-roles%E2%80%94an-exception-to-the-rule) were assigned to existing users to ensure that they were brought into the new system with unchanged capabilities.
 
 - Users with the same capabilities were assigned the same temp role.
-- Use the features of the [Roles tab](https://support.appsflyer.com/hc/articles/4414238502289#roles-tab) to review the capabilities of each temp role and a list of users currently in it.
+- Use the features of the [Roles tab](/docs/user-management-for-ad-networks#roles-tab) to review the capabilities of each temp role and a list of users currently in it.
 
 #### Temp role limitations
 
@@ -196,8 +196,8 @@ To begin the process of changing the account owner, open the chat widget [using 
 
 Once the change has been processed, you will receive an email notification from AppsFlyer.
 
-- If you want the prior account owner to continue using your AppsFlyer account, [create a new user](https://support.appsflyer.com/hc/articles/4409128270481#creating-users) for them and assign them a new role.
-- APIs using token v2 aren't affected by changing the account owner. [Learn more about managing tokens](https://support.appsflyer.com/hc/articles/360004562377).
+- If you want the prior account owner to continue using your AppsFlyer account, [create a new user](/docs/user-management#creating-users) for them and assign them a new role.
+- APIs using token v2 aren't affected by changing the account owner. [Learn more about managing tokens](/docs/managing-appsflyer-tokens).
 
 ### Troubleshooting "Can’t create this user"
 
@@ -205,7 +205,7 @@ If you receive the error message *Can’t create this user* when entering the em
 
 If the user is in your account:
 
-- Check to see if the user has activated their account. If not, [resend the invitation](https://support.appsflyer.com/hc/articles/4414238502289#resending-a-user-invitation) if required.
+- Check to see if the user has activated their account. If not, [resend the invitation](/docs/user-management-for-ad-networks#resending-a-user-invitation) if required.
 - If the user has activated their account, ask them to try to log in again using the email address associated with their user. Advise them to follow the **Forgot password** steps if required.
 
 If the user’s email is used in a different account or you can’t determine the account in which the user’s email is used, select one of the following options:
@@ -216,7 +216,7 @@ If the user’s email is used in a different account or you can’t determine th
 
 ### Resending a user invitation
 
-If a new user did not receive their [account activation invitation](https://support.appsflyer.com/hc/articles/4414238502289#becoming-an-active-user) or if they did not activate within 48 hours, you can resend the email as follows:
+If a new user did not receive their [account activation invitation](/docs/user-management-for-ad-networks#becoming-an-active-user) or if they did not activate within 48 hours, you can resend the email as follows:
 
 1. On the **Users** tab, click the **Actions** button <Image src="https://files.readme.io/7bdbda083da16718b90246b7d915ebee2e164fa402a143e0c6cc9be95ca34dca-17387343712017.png" alt="actions_icon.png" /> on the far-right side of the user’s row.
    - Note that the user is still shown with an envelope icon <Image src="https://files.readme.io/1e334edd433f9ac13a175cdd48345adebe02892215896ea967768dc3cabf0349-17387375704209.png" alt="pending_invitation_icon.png" />, indicating that they have not yet activated their account).
@@ -231,4 +231,4 @@ If your account uses 2FA, there may be occasions on which you need to reset a us
 
 > 📘 Note
 >
-> An admin can reset any other admin's 2FA other than their own or the [account owner's](https://support.appsflyer.com/hc/articles/4414238502289#admin%E2%80%94a-special-role). To reset the account owner's 2FA, contact AppsFlyer support for partners through the [partner assistant chatbot](/docs/using-the-partner-assistant-chatbot).
+> An admin can reset any other admin's 2FA other than their own or the [account owner's](/docs/user-management-for-ad-networks#admin%E2%80%94a-special-role). To reset the account owner's 2FA, contact AppsFlyer support for partners through the [partner assistant chatbot](/docs/using-the-partner-assistant-chatbot).

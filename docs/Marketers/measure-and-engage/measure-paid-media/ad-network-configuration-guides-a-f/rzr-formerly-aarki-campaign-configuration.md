@@ -31,7 +31,7 @@ RZR, an AppsFlyer ad network integrated partner, is a well-known mobile DSP. RZR
 
 ### Activate partner
 
-On the **first visit**, you will need to toggle ON the _**Activate Partner**_ button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner. For more details about partner activation please click [here](https://support.appsflyer.com/hc/articles/360006091197).
+On the **first visit**, you will need to toggle ON the _**Activate Partner**_ button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner. For more details about partner activation please click [here](/docs/user-level-data-retention).
 
 > 📘 Note
 >
@@ -64,17 +64,17 @@ In this section you can map your AppsFlyer events with RZR via postbacks.
 
 | Parameter name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br>**Tip**: Don't see the event you are looking for?<br>   - Make sure to activate the event on a device with a non-organic installation, and recheck.<br>   - Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](https://support.appsflyer.com/hc/articles/208439256#custom-events) |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<br>   - **Text field:** Get the corresponding event ID from the partner.<br>   - **Drop-down box:** Select the most suitable pre-defined AppsFlyer event.<br>   - **As is**: Send the events as they are, without name mapping. |
-| **for users from** | Select the sending option for the event:<br>   - **This partner only**: Send postbacks only when this event is attributed to this partner.<br>   - **All media sources including organic**: Send postbacks for events attributed to any partner, as well as organic events. |
-| **including** | - **No data (default)**: Send only the event itself without any event values.<br>   - **Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).<br>   - **Values without revenue**: Send all the parameters **excluding** the revenue value. |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<br />   - Make sure to activate the event on a device with a non-organic installation, and recheck.<br />   - Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
+| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<br />   - **Text field:** Get the corresponding event ID from the partner.<br />   - **Drop-down box:** Select the most suitable pre-defined AppsFlyer event.<br />   - **As is**: Send the events as they are, without name mapping. |
+| **for users from** | Select the sending option for the event:<br />   - **This partner only**: Send postbacks only when this event is attributed to this partner.<br />   - **All media sources including organic**: Send postbacks for events attributed to any partner, as well as organic events. |
+| **including** | - **No data (default)**: Send only the event itself without any event values.<br />   - **Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).<br />   - **Values without revenue**: Send all the parameters **excluding** the revenue value. |
 
-3. [Optional] Click the **Add condition** ![conditional-iae-postbacks-icon.png](https://files.readme.io/b7d9d43fd559bb7fe6b77531ea87229dbcbfdd20f2683815f9f1eaccc1720e01-27310995360273.png) icon to [set conditions](https://support.appsflyer.com/hc/articles/208439256#conditional-inapp-event-postbacks) for an event.
+3. [Optional] Click the **Add condition** ![conditional-iae-postbacks-icon.png](https://files.readme.io/b7d9d43fd559bb7fe6b77531ea87229dbcbfdd20f2683815f9f1eaccc1720e01-27310995360273.png) icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
 4. Click **Save integration**.
 5. [Optional]After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
 1. From the top-left corner, under the partner name, click the app name to open the list of apps.
 2. Select a different app from the drop-down list.
-3. Repeat the [integration steps](https://support.appsflyer.com/hc/articles/11904659502737#integration-tab) for the selected app.
+3. Repeat the [integration steps](/docs/amazon-ads-campaign-configuration#integration-tab) for the selected app.
 
 ### Attribution link tab
 
@@ -91,14 +91,14 @@ Adding parameters to the attribution link here enables you to later perform thor
 - **Campaign** \- add it to compare different campaigns running with Aarki. **Attribution link parameter:** c
 - **Adset** \- set ad set names to compare different ad sets within specific Aarki campaigns. **Attribution link parameter:** af\_adset
 - **Ad Name** \- set ad set names to compare different creatives within specific ad sets within specific campaigns Aarki. **Attribution link parameter:** af\_ad
-- **Site ID** and **Sub Site ID** \- set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub site ID parameter, to avoid [exceeding the site ID](https://support.appsflyer.com/hc/articles/115005099063-What-are-the-Exceeded-Media-Sources-#exceeded_siteid_limit) limitations. **Attribution link parameters:** af\_siteid and af\_sub\_siteid
+- **Site ID** and **Sub Site ID** \- set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub site ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations. **Attribution link parameters:** af\_siteid and af\_sub\_siteid
 - **Subscriber Parameters** \- use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering. **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information [**about AppsFlyer's Attribution Link Structure and Parameters**](https://support.appsflyer.com/hc/articles/207447163) **.**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information [**about AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters) **.**
 
 ### Retargeting settings
 
-When enabled, AppsFlyer recognizes a link as a [retargeting](https://support.appsflyer.com/hc/articles/207033786-AppsFlyer-s-Retargeting-Attribution) attribution link, rather than a user acquisition link, by adding the &is\_retargeting=true to the click recording link. Note that retargeting is currently only supported for click-through and not view-through attribution. **Attribution link parameter:** is\_retargeting.
+When enabled, AppsFlyer recognizes a link as a [retargeting](/docs/retargeting-attribution-guide) attribution link, rather than a user acquisition link, by adding the &is\_retargeting=true to the click recording link. Note that retargeting is currently only supported for click-through and not view-through attribution. **Attribution link parameter:** is\_retargeting.
 
 The following setup below is displayed when retargeting is enabled.
 
@@ -107,18 +107,18 @@ The following setup below is displayed when retargeting is enabled.
 Select _**standard attribution link**_ option if:
 
 - You don't need to deep link with the URL or
-- Plan to use only [URI schemes](https://support.appsflyer.com/hc/articles/208874366#social-app-landing-page) for deep linking
+- Plan to use only [URI schemes](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page) for deep linking
 
 Select _**Use OneLink**_ for:
 
 - Using a single link for both Android and iOS apps or
 - Deep linking using Universal or app links
 
-Note that selecting OneLink changes the click recording link from app specific to a [OneLink URL](https://support.appsflyer.com/hc/articles/115005248543-OneLink-Overview).
+Note that selecting OneLink changes the click recording link from app specific to a [OneLink URL](/docs/onelink-guide).
 
 2\. Deep Link URL
 
-Use this field if the link is meant to deep link users to any specific activity within your app. **Attribution link parameter:** af\_dp You can find more information about AppsFlyer's [deep linking solution in this guide.](https://support.appsflyer.com/hc/articles/208874366-Deep-Linking-Step-by-Step)
+Use this field if the link is meant to deep link users to any specific activity within your app. **Attribution link parameter:** af\_dp You can find more information about AppsFlyer's [deep linking solution in this guide.](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink)
 
 3\. Re-engagement Window
 
@@ -132,7 +132,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 **Attribution link parameter:** af\_click\_lookback
 
-More details about the [click lookback window here](https://support.appsflyer.com/hc/articles/208338403-What-is-AppsFlyer-s-Configurable-Attribution-Lookback-Window-).
+More details about the [click lookback window here](/docs/set-up-lookback-windows).
 
 ### Click attribution link
 
@@ -146,7 +146,7 @@ You can customize this value to 1-23 hours or 1-7 days.
 
 **Attribution link parameter:** af\_viewthrough\_lookback
 
-More details about the [view-through attribution here](https://support.appsflyer.com/hc/articles/208338403-What-is-AppsFlyer-s-Configurable-Attribution-Lookback-Window-).
+More details about the [view-through attribution here](/docs/set-up-lookback-windows).
 
 ### Impressions attribution link
 
@@ -154,13 +154,13 @@ The impression attribution link contains similar attribution data to the click r
 
 ### Cost tab
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](https://support.appsflyer.com/hc/articles/207040526-Ad-cost-measurement-guide#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
 **To enable the cost API**:
 
-- Follow [these integration instructions](https://support.appsflyer.com/hc/articles/360008850257#enable-cost-api).
+- Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
 
-[View your cost API status](https://support.appsflyer.com/hc/articles/360008850257#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 > 🚧 Warning
 >
@@ -186,7 +186,7 @@ Use these toggles to give the ad network permissions to handle its own configura
 - _**Allow access to your aggregate revenue data**_ \- only to the revenue data attributed to the partner
 - _**Allow access to your Protect360 dashboard**_ \- only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about granting [ad network permissions](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 ### Agency permissions
 
@@ -197,4 +197,4 @@ Use these toggles to give the agency permissions to handle its own configuration
 - _**Allow access to aggregate organic data**_
 - _**Allow access to your retention report**_ \- only to the agency's own retention data
 
-Learn more about granting [agency permissions](https://support.appsflyer.com/hc/articles/4410395957521#agency-permissions).
+Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).

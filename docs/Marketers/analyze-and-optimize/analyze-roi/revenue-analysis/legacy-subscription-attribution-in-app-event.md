@@ -6,7 +6,7 @@ Configure and send a subscription-related in-app event to record subscriptions a
 
 > 📘 Note
 >
-> This is a legacy feature. Learn more about the new, fully automatic, and improved [subscription revenue mechanism](https://support.appsflyer.com/hc/articles/4621716453009).
+> This is a legacy feature. Learn more about the new, fully automatic, and improved subscription revenue mechanism.
 
 ## In-app subscription event
 
@@ -109,4 +109,4 @@ AppsFlyer.sendEvent("af_subscribe", SubscriptionEvent);
 
 > 📘 Note
 >
-> It is highly recommended that you associate subscriptions with customers. To do so, make sure to set the [customer user ID](https://support.appsflyer.com/hc/articles/207032016-Customer-User-ID). Setting the customer user ID is your way to match your customers with users of your app as they appear in AppsFlyer. By setting the customer user ID you make sure that any event, subscription-related events included, is sent with the customer user ID.
+> It is highly recommended that you associate subscriptions with customers. To do so, make sure to set the [customer user ID](/docs/customer-user-id-field-cuid). Setting the customer user ID is your way to match your customers with users of your app as they appear in AppsFlyer. By setting the customer user ID you make sure that any event, subscription-related events included, is sent with the customer user ID.

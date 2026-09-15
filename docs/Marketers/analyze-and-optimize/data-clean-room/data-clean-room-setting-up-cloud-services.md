@@ -10,7 +10,7 @@ Preparing to use the Data Clean Room (DCR) involves setting up:
 Creating an inbound or outbound connection is a 2-step process:
 
 - **Step #1 –** Use the interfaces of your selected cloud services to prepare them for use with the DCR (this article).
-- **Step #2 –** Use the AppsFlyer platform to connect them to the DCR. (See [Data Clean Room—Working with connections](https://support.appsflyer.com/hc/articles/13886278812817)).
+- **Step #2 –** Use the AppsFlyer platform to connect them to the DCR. (See [Data Clean Room—Working with connections](/docs/data-clean-room-working-with-connections)).
 
 > 📘 Note
 >
@@ -32,7 +32,7 @@ You can use one or any combination of these services for inbound and outbound co
 > 🚧 Important!
 >
 > - If you will be using multiple custom data sources for a single report, they must be located in cloud storage buckets.
-> - It's very common to use the same cloud storage bucket on Amazon S3 or GCS for both inbound and outbound connections. Be sure to follow the [special instructions for that setup](https://support.appsflyer.com/hc/articles/4591167507217#setting-up-cloud-services-inbound-outbound).
+> - It's very common to use the same cloud storage bucket on Amazon S3 or GCS for both inbound and outbound connections. Be sure to follow the [special instructions for that setup](/docs/data-clean-room-setting-up-cloud-services#setting-up-cloud-services-inbound-outbound).
 
 ## Setting up cloud services for inbound connections
 
@@ -203,13 +203,13 @@ The following requirements are relevant to buckets on both cloud services:
       - spaces
       - all other symbols or special characters
     - Characters used for special purposes only:
-      - equal signs `(=)`, *only where required in* [date and version folder names](https://support.appsflyer.com/hc/articles/5041487011601#nested-subfolders-for-each-date-and-version)
-      - underscores `(_)`, *only where used to identify the parts of* [multi-part GZIP files](https://support.appsflyer.com/hc/articles/5041487011601#file-format) *or for naming* [\_SUCCESS files](https://support.appsflyer.com/hc/articles/5041487011601#_success-files)
+      - equal signs `(=)`, *only where required in* [date and version folder names](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version)
+      - underscores `(_)`, *only where used to identify the parts of* [multi-part GZIP files](/docs/data-clean-room-working-with-sources#file-format) *or for naming* [\_SUCCESS files](/docs/data-clean-room-working-with-sources#_success-files)
       - dots `(.)`, *only directly before filename extensions* `(.csv, .gzip)`
 
 ## Setting up cloud services for outbound connections
 
-The DCR delivers reports to your selected cloud services using [AppsFlyer Data Locker](https://support.appsflyer.com/hc/articles/360000877538).
+The DCR delivers reports to your selected cloud services using [AppsFlyer Data Locker](/docs/data-locker-for-marketers).
 
 > 📘 Note
 >
@@ -252,19 +252,19 @@ Your DCR reports can be delivered to one or more locations on your cloud service
 
 <Tab title="Snowflake">
 
-The procedure for preparing Snowflake for outbound connections is completed in combination with the [procedure for creating the outbound connection](https://support.appsflyer.com/hc/articles/13886278812817#snowflake-outbound) itself.
+The procedure for preparing Snowflake for outbound connections is completed in combination with the [procedure for creating the outbound connection](/docs/data-clean-room-working-with-connections#snowflake-outbound) itself.
 
 </Tab>
 
 <Tab title="Amazon S3">
 
-Follow the instructions for creating an [Amazon S3 bucket for inbound connections](https://support.appsflyer.com/hc/articles/4591167507217#amazon-s3-inbound) (with no changes to that procedure).
+Follow the instructions for creating an [Amazon S3 bucket for inbound connections](/docs/data-clean-room-setting-up-cloud-services#amazon-s3-inbound) (with no changes to that procedure).
 
 </Tab>
 
 <Tab title="GCS">
 
-Follow the instructions for creating a [GCS bucket for inbound connections](https://support.appsflyer.com/hc/articles/4591167507217#gcs-inbound). In step #4 of that procedure, enter the following account in the **New members** box:
+Follow the instructions for creating a [GCS bucket for inbound connections](/docs/data-clean-room-setting-up-cloud-services#gcs-inbound). In step #4 of that procedure, enter the following account in the **New members** box:
 
 `af-data-delivery@af-raw-data.iam.gserviceaccount.com`
 
@@ -275,7 +275,7 @@ Follow the instructions for creating a [GCS bucket for inbound connections](http
 
 As previously mentioned, it's common to use the same bucket on Amazon S3 or GCS for both inbound and outbound connections.
 
-The instructions for this setup vary only slightly from the [instructions for inbound connections](https://support.appsflyer.com/hc/articles/4591167507217#setting-up-cloud-services-inbound). They do differ, however, depending on whether you are:
+The instructions for this setup vary only slightly from the [instructions for inbound connections](/docs/data-clean-room-setting-up-cloud-services#setting-up-cloud-services-inbound). They do differ, however, depending on whether you are:
 
 - creating a new bucket for use with DCR inbound and outbound connections; ***or***
 - modifying a bucket previously used only for Data Locker to one now used for both inbound and outbound DCR connections
@@ -287,7 +287,7 @@ Instructions for both of these scenarios are included in the tabs below:
 
 ### Creating a new bucket for inbound/outbound connections
 
-Follow the instructions for creating an [Amazon S3 bucket for inbound connections](https://support.appsflyer.com/hc/articles/4591167507217#amazon-s3-inbound) (with no changes to that procedure).
+Follow the instructions for creating an [Amazon S3 bucket for inbound connections](/docs/data-clean-room-setting-up-cloud-services#amazon-s3-inbound) (with no changes to that procedure).
 
 ### Modifying an existing bucket previously used only for Data Locker
 
@@ -344,7 +344,7 @@ Modifying an existing bucket that you used previously only for Data Locker requi
 
 ### Creating a new bucket for inbound/outbound connections
 
-Follow the instructions for creating a [GCS bucket for inbound connections](https://support.appsflyer.com/hc/articles/4591167507217#gcs-inbound). Modify step #4 of that procedure to enter the following **2 accounts** in the **New members** box:
+Follow the instructions for creating a [GCS bucket for inbound connections](/docs/data-clean-room-setting-up-cloud-services#gcs-inbound). Modify step #4 of that procedure to enter the following **2 accounts** in the **New members** box:
 
 `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
 

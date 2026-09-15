@@ -16,19 +16,19 @@ Below you can find the base attribution link with a detailed explanation per eac
 | --- | --- |
 | https://app.appsflyer.com | AppsFlyer End-Point |
 | app\_id | Application Unique ID - Dynamic value changed per app promoted |
-| pid= | Media source name include **\_int** to identify<br>**integrated** network at AppsFlyer servers |
+| pid= | Media source name include **\_int** to identify<br />**integrated** network at AppsFlyer servers |
 | c= | Campaign name |
 
 **Recommended Attribution Link Parameters:**
 
 | AppsFlyer Parameter | Voluum Macros | Description |
 | --- | --- | --- |
-| &clickid= | {clickid} | Unique transaction ID of the user session - **Required** |
-| &af\_siteid= | {trafficsource.id} | ID of the traffic source - **Optional** |
+| &clickid= | `{clickid}` | Unique transaction ID of the user session - **Required** |
+| &af\_siteid= | `{trafficsource.id}` | ID of the traffic source - **Optional** |
 
 > 📘 Note
 >
-> * For the complete AppsFlyer parameter list, [click here](https://support.appsflyer.com/hc/articles/207447163)
+> * For the complete AppsFlyer parameter list, [click here](/docs/about-link-structure-and-parameters)
 > * For the complete PeerClick list, [click here](https://help-center.peerclick.com/en/)
 
 ### Complete attribution link template

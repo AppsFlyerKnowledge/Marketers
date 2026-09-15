@@ -6,9 +6,9 @@ excerpt: "Retrieve active and pending apps associated with your AppsFlyer accoun
 
 ![mceclip0.png](https://files.readme.io/34b4b3d56ca5d7419830ba26701483f64ebb0a908e1e8e7ed65779bb89a14c67-24507752775313.png)
 
-If you are an ad network, use the [app list for ad networks](https://support.appsflyer.com/hc/articles/360011700857) API.
+If you are an ad network, use the [app list for ad networks](/docs/app-list-api-for-ad-networks) API.
 
-**Further reading**: [API list for advertisers](https://support.appsflyer.com/hc/articles/360009122638)
+**Further reading**: [API list for advertisers](/docs/about-advertiser-apis)
 
 ## Get app list API
 
@@ -20,9 +20,9 @@ The following sections include information necessary for using the API.
 | --- | --- | --- |
 | Request | HTTP method | `GET` |
 | Path | https://hq1.appsflyer.com/api/mng/apps |
-| Authorization header | - The mandatory authorization header contains a Bearer token. <br>- An admin user gets the token in the dashboard as follows: [The Admin goes to email drop-down list > API tokens to get the V2.0 token](https://support.appsflyer.com/hc/articles/360004562377) |
+| Authorization header | - The mandatory authorization header contains a Bearer token. <br />- An admin user gets the token in the dashboard as follows: [The Admin goes to email drop-down list > API tokens to get the V2.0 token](/docs/managing-appsflyer-tokens) |
 | Response | Results | Return in a JSON |
-| Request limit | - 20 requests/minute<br>- 100 requests/day |
+| Request limit | - 20 requests/minute<br />- 100 requests/day |
 | Record limit | 1,000 records/request. If more than 1,000 records are to return, use follow-on pagination requests described in this article. |
 
 ### API request
@@ -84,8 +84,8 @@ Pagination mechanism parameters (optional):
 
 | Query parameter | Description |
 | --- | --- |
-| limit | Number of records that return per call<br>- Maximum: 1,000<br>- If you don't send `limit`, it is automatically set to 1,000.<br>- Example: `limit=2`<br>- Mandatory: No |
-| offset | The first record to return in the call. Record numbers start with 0. <br>- If you don't send `offset`, it is automatically set to 0.<br>- Example: `offset=2`<br>- Mandatory: No |
+| limit | Number of records that return per call<br />- Maximum: 1,000<br />- If you don't send `limit`, it is automatically set to 1,000.<br />- Example: `limit=2`<br />- Mandatory: No |
+| offset | The first record to return in the call. Record numbers start with 0. <br />- If you don't send `offset`, it is automatically set to 0.<br />- Example: `offset=2`<br />- Mandatory: No |
 
 ### JSON response
 
@@ -98,7 +98,7 @@ Pagination mechanism parameters (optional):
 | currency | App-specific currency code |
 | time_zone | App-specific timezone |
 | total_items | Number of apps housed in the account |
-| links | Pagination mechanism (explained in the parameters section)<br>- prev: the call used to generate the previous page<br>- self: the call used to generate the current page<br>- next: the call used to generate the next page |
+| links | Pagination mechanism (explained in the parameters section)<br />- prev: the call used to generate the previous page<br />- self: the call used to generate the current page<br />- next: the call used to generate the next page |
 
 ### Get app list cURL example and response
 
@@ -165,8 +165,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/mng/apps?limit=1000
 | Code | Message | Remarks/troubleshooting |
 | --- | --- | --- |
 | 200 | OK | Valid data returned |
-| 200 | OK | **Symptom**: No data returns<br>**Action**: Make sure the authentication token is in the bearer header. |
+| 200 | OK | **Symptom**: No data returns<br />**Action**: Make sure the authentication token is in the bearer header. |
 | 400 | Bad request | See the message contained in the JSON |
-| 401 | Unauthorized | **Message**: Authorization token is malformed<br>Make sure you have the correct token; token must have 700+ characters. |
-| 404 | Not found | - Handle any network or firewall-related problems. <br>- Make sure that AppsFlyer [IP addresses are allowlisted](https://support.appsflyer.com/hc/articles/207447093-AppsFlyer-server-IP-address-ranges-allowlisting-)<br>- Make sure you use the most recently-issued token.<br>- No data found: No apps found. |
+| 401 | Unauthorized | **Message**: Authorization token is malformed<br />Make sure you have the correct token; token must have 700+ characters. |
+| 404 | Not found | - Handle any network or firewall-related problems. <br />- Make sure that AppsFlyer [IP addresses are allowlisted](/docs/appsflyer-server-ip-address-ranges-allowlisting)<br />- Make sure you use the most recently-issued token.<br />- No data found: No apps found. |
 | 429 | Too many requests | Exceeded rate limitation |

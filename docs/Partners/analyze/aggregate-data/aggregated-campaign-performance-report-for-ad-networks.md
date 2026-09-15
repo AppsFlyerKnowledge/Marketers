@@ -6,7 +6,7 @@ Ad networks load the aggregated performance report (AKA Cohort report) into thei
 
 ## Aggregated campaign performance report
 
-This report provides campaign performance data, including the number of unique users performing a given event. You (the ad network), use the data in your BI systems to calculate campaign performance metrics in the context of advertiser KPIs. The report is available daily via [Data Locker for Partners](https://support.appsflyer.com/hc/articles/360020818517)
+This report provides campaign performance data, including the number of unique users performing a given event. You (the ad network), use the data in your BI systems to calculate campaign performance metrics in the context of advertiser KPIs. The report is available daily via [Data Locker for Partners](/docs/data-locker-for-partners)
 
 **Why do you need the report?**
 
@@ -25,8 +25,8 @@ Metrics are provided with the best granularity possible using the dimensions rep
 
 **How do you get the report?**
 
-- Provided via Data Locker for Partners. The report updates [Daily UTC time](https://support.appsflyer.com/hc/articles/360000310629-Data-freshness-and-time-zone-support#daily).
-- Before we start sharing the data with you, the advertisers must [grant permissions](https://support.appsflyer.com/hc/articles/360020834237#permission-to-get-aggregated-performance-data) in the dashboard.
+- Provided via Data Locker for Partners. The report updates [Daily UTC time](/docs/about-data-freshness-and-timezone-support#daily).
+- Before we start sharing the data with you, the advertisers must [grant permissions](/docs/aggregated-campaign-performance-report-for-ad-networks#permission-to-get-aggregated-performance-data) in the dashboard.
 
 ## About the report
 
@@ -38,10 +38,10 @@ Metrics are provided with the best granularity possible using the dimensions rep
 | --- | --- |
 | app\_id |  |
 | media\_source |  |
-| conversion\_type | - Possible values: install, re-engagement, re-attribution<br>- Equivalent postback macro: is\_retargeting |
+| conversion\_type | - Possible values: install, re-engagement, re-attribution<br />- Equivalent postback macro: is\_retargeting |
 | attributed\_touch\_type | Possible values: click, impressions, pre-install, unknown, tv, null |
-| days\_post\_attribution | The number of days elapsed since the attribution event.<br>The maximum number of days is 180. <br>Tip! Use this to calculate retention and KPI days. |
-| event\_date | The date the event occurred.<br>Format: yyyy-mm-dd |
+| days\_post\_attribution | The number of days elapsed since the attribution event.<br />The maximum number of days is 180. <br />Tip! Use this to calculate retention and KPI days. |
+| event\_date | The date the event occurred.<br />Format: yyyy-mm-dd |
 | conversion\_date | Format: yyyy-mm-dd |
 | event\_name | Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app. |
 | campaign | Campaign hierarchy |
@@ -79,14 +79,14 @@ Metrics are provided with the best granularity possible using the dimensions rep
 
 The report contains user attributions, installs, re-attributions, and re-engagements, and their related in-app events.
 
-In your data consumption process, you must use logic to split the data between campaign types. Meaning, user attribution (installs) and retargeting (re-engagements). To do so, use the conversion\_type and is\_primary\_attribution field. See [Double attribution of retargeting events.](https://support.appsflyer.com/hc/articles/360016371077)
+In your data consumption process, you must use logic to split the data between campaign types. Meaning, user attribution (installs) and retargeting (re-engagements). To do so, use the conversion\_type and is\_primary\_attribution field. See [Double attribution of retargeting events.](/docs/resolve-retargeting-double-attribution)
 
 **Field-level considerations**
 
 - Use post-attribution days to enable easy calculation of retention metrics.
 - Calculating unique users using campaign name and campaign ID dimensions: If you can disregard campaign name granularity, you can sum unique count on campaign ID and the metrics are correct.
 - You can aggregate the data using the campaign hierarchy fields.
-- In-app events use the advertiser event name and aren't mapped to your event names. Ask the advertiser to provide you with the mappings or view them in the dashboard. [Partner in-app event mapping](https://support.appsflyer.com/hc/articles/4410395957521#g-in-app-event-postback-configuration).
+- In-app events use the advertiser event name and aren't mapped to your event names. Ask the advertiser to provide you with the mappings or view them in the dashboard. [Partner in-app event mapping](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration).
 - Revenue is in USD is calculated using the exchange rate on the event day.
 - Ad revenue events are included where available but update with a lag of up to 5 days.
 
@@ -104,7 +104,7 @@ To create retention metrics, for example, retention day-7, do so by setting filt
 - days\_post\_install=7
 - event\_name=af\_session
 - conversion\_type as required
-- To prevent the inclusion of [duplicate retargeting events](https://support.appsflyer.com/hc/articles/360016371077), select is\_primary\_attribution=true or use conversion\_type to limit the data set to installs.
+- To prevent the inclusion of [duplicate retargeting events](/docs/resolve-retargeting-double-attribution), select is\_primary\_attribution=true or use conversion\_type to limit the data set to installs.
 - Group by: campaign and other dimensions as needed.
 - Sum: unique\_users\_count
 

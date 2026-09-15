@@ -8,13 +8,13 @@ Before you can share eligible conversions with your [off-site campaign](/docs/da
 
 ## Prerequisites
 
-Before the Media partners task can be set up, the collaboration owner needs to assign it to the collaborator who owns the third-party account (e.g, Facebook or Google). For more information, see [Assign configuration tasks](https://support.appsflyer.com/hc/articles/38354928391313-Set-up-collaboration-measurement#assign-configuration-task)
+Before the Media partners task can be set up, the collaboration owner needs to assign it to the collaborator who owns the third-party account (e.g, Facebook or Google). For more information, see Assign configuration tasks
 
 ## Create a media partner connection
 
 > 📘 Note
 >
-> The **Media Partners** task appears on the **Measurement settings** page only when you set up an [off-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#off-site-campaigns) that uses a custom source as the provisioning method. For more information, see: [Set conversion data provision method](https://support.appsflyer.com/hc/articles/38187770114449-Set-the-Conversions-task#set-conversion-data-provision-method)
+> The **Media Partners** task appears on the **Measurement settings** page only when you set up an [off-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#off-site-campaigns) that uses a custom source as the provisioning method. For more information, see: [Set conversion data provision method](/docs/set-up-the-conversions-task#set-conversion-data-provision-method)
 
 To select or create a media partner connection, follow these steps:
 
@@ -22,7 +22,7 @@ To select or create a media partner connection, follow these steps:
 
 > 📘 Note
 >
-> - If the **Media partners** dialog is locked, it means that the **Media partners** task has been assigned to your collaborator and that you cannot view its content. If you are the collaboration owner, you can unlock it and [reassign the task](https://support.appsflyer.com/hc/articles/38354928391313-Set-up-collaboration-measurement#assign-configuration-task) to yourself. However, any previous settings will be deleted, and the task will be reset.
+> - If the **Media partners** dialog is locked, it means that the **Media partners** task has been assigned to your collaborator and that you cannot view its content. If you are the collaboration owner, you can unlock it and reassign the task to yourself. However, any previous settings will be deleted, and the task will be reset.
 > - If the **Media partners** pane is grayed out, ask the collaboration owner to assign you the Conversion task.
 
 2. In the Media partners dialog, click **\+ Connect media partner**.

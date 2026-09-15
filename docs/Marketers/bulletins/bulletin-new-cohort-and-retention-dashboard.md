@@ -4,10 +4,10 @@ excerpt: "AppsFlyer has redesigned and improved the Cohort dashboard, integratin
 ---
 |     |     |
 | --- | --- |
-| **What's new** | The [cohort dashboard](https://support.appsflyer.com/hc/articles/207040496) has been redesigned and improved. It also now includes retention data. |
+| **What's new** | The [cohort dashboard](/docs/cohort-and-retention-dashboard) has been redesigned and improved. It also now includes retention data. |
 | **Effective date** | December 26, 2023 |
-| **Where** | [Cohort dashboard](https://support.appsflyer.com/hc/articles/207040496) (now called Cohort and Retention dashboard) |
-| **What you must know** | - Retention dashboard will be deprecated (date to be decided).<br>- We recommend using the new and improved Cohort and Retention dashboard.<br>- For those used to using the old Cohort dashboard, please be aware that as one of the improvements to the dashboard, the old requirement to select a metric and function has largely been replaced. Now, except in a few cases, you only need to select a metric. You can use the table in the mapping section that follows to help you align your previous cohort reports in the new UI. |
+| **Where** | [Cohort dashboard](/docs/cohort-and-retention-dashboard) (now called Cohort and Retention dashboard) |
+| **What you must know** | - Retention dashboard will be deprecated (date to be decided).<br />- We recommend using the new and improved Cohort and Retention dashboard.<br />- For those used to using the old Cohort dashboard, please be aware that as one of the improvements to the dashboard, the old requirement to select a metric and function has largely been replaced. Now, except in a few cases, you only need to select a metric. You can use the table in the mapping section that follows to help you align your previous cohort reports in the new UI. |
 
 ### Mapping metrics from the old cohort dashboard UI to the new UI
 

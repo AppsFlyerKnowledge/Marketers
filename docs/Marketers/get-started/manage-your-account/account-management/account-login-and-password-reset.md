@@ -43,7 +43,7 @@ Log in to AppsFlyer can be done using your:
 
 - Credentials (username and password)
 - Google login
-- [Single Sign-on](https://support.appsflyer.com/hc/sections/20162151531793-SSO-authentication)
+- [Single Sign-on](/docs/sso-authentication)
 
 > 📘 Note
 >
@@ -99,4 +99,4 @@ If your account uses 2FA, there may be occasions on which you need to reset a us
 
 > 📘 Note
 >
-> An admin can reset any other user's 2FA other than their own. To reset the account owner's 2FA, [contact AppsFlyer Support team](https://support.appsflyer.com/hc/articles/360020991538).
+> An admin can reset any other user's 2FA other than their own. To reset the account owner's 2FA, contact AppsFlyer Support team.

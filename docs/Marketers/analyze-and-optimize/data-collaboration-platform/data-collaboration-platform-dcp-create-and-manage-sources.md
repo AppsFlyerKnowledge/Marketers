@@ -41,10 +41,10 @@ In addition to data shared for processing, source tables in BigQuery or Snowflak
 
 Source files stored in Amazon S3 or GCS must meet these file name and format requirements:
 
-- File name must comply with [DCR naming requirements](https://support.appsflyer.com/hc/articles/24604528827921#dcr-naming-requirements)
+- File name must comply with [DCR naming requirements](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements)
 - CSV or GZIP format
   - The file underlying GZIP compression must be a CSV file.
-- Number of data source files per [data folder](https://support.appsflyer.com/hc/articles/24603890457617#snowflake-outbound):
+- Number of data source files per [data folder](/docs/data-collaboration-platform-dcp-add-connections#snowflake-outbound):
   - **CSV:** Maximum of 1
   - **GZIP:** Maximum of 1 single-part file. Multi-part GZIP files are supported when named as follows: `filename_part01.csv.gz`, `filename_part02.csv.gz`, etc.
 
@@ -52,7 +52,7 @@ Source files stored in Amazon S3 or GCS must meet these file name and format req
 
 > 📘 Prerequisite
 >
-> Before creating your source, [set up the cloud services](https://support.appsflyer.com/hc/articles/24604528827921) that AppsFlyer DCP will use to retrieve your source data. If these connections aren't set up, you'll be prompted to do so during source creation.
+> Before creating your source, [set up the cloud services](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services) that AppsFlyer DCP will use to retrieve your source data. If these connections aren't set up, you'll be prompted to do so during source creation.
 
 **To create a source in DCP, follow the steps below:**
 
@@ -90,9 +90,9 @@ Enter the source name. This can be any unique name that will help you identify t
 
 **To specify the source location:**
 
-1. Select the [connection](https://support.appsflyer.com/hc/articles/24604528827921#overview) in which the source will be (or has been) created.
-   - If there are no connections defined in your account, the **New connection** dialog will open, prompting you to create one. Follow [these instructions](https://support.appsflyer.com/hc/articles/24603890457617) to create it.
-   - If you have existing connections but want to use a new one, click **+ New connection** and follow [these instructions](https://support.appsflyer.com/hc/articles/13886278812817) to create it.
+1. Select the [connection](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#overview) in which the source will be (or has been) created.
+   - If there are no connections defined in your account, the **New connection** dialog will open, prompting you to create one. Follow [these instructions](/docs/data-collaboration-platform-dcp-add-connections) to create it.
+   - If you have existing connections but want to use a new one, click **+ New connection** and follow [these instructions](/docs/data-clean-room-working-with-connections) to create it.
 2. Continue with the relevant instructions below, based on where the data for your source is located.
 
 > 📘 Note
@@ -127,16 +127,16 @@ Source locations in Amazon S3 or GCS consist of the cloud storage bucket specifi
 
 Once you have specified the connection, AppsFlyer can automatically generate the required underlying folder path as part of the source creation process.
 
-- Allowing AppsFlyer to generate the folders makes the process easy. However, you can choose to manually create them instead, according to the instructions [detailed here](https://support.appsflyer.com/hc/articles/24604528827921).
+- Allowing AppsFlyer to generate the folders makes the process easy. However, you can choose to manually create them instead, according to the instructions [detailed here](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services).
 
 If AppsFlyer generates the folders, the only additional information required is the name you want to give the **source folder.** (This is the top-level folder in which you update the source each time your want to use it for running a new report version.) You can also indicate whether you want the source folder to be created underneath a parent folder – often named **input.**
 
 **To complete specifying a source location in a cloud storage bucket, enter the source folder name.**
 
 - By default, the displayed source folder name:
-  - Is based on the [name you gave the source](/docs/data-collaboration-platform-dcp-create-and-manage-sources#1-name-the-source). You can change the folder name to meet your needs, so long as it complies with the [DCR naming requirements](https://support.appsflyer.com/hc/articles/24604528827921#dcr-naming-requirements).
+  - Is based on the [name you gave the source](/docs/data-collaboration-platform-dcp-create-and-manage-sources#1-name-the-source). You can change the folder name to meet your needs, so long as it complies with the [DCR naming requirements](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements).
   - Indicates that it will be generated within a parent folder named **input.** This folder serves as the parent folder for all sources you upload to the DCR.
-    - The **input** folder is not required, and you can remove it or name it something different, so long as it complies with the [DCR naming requirements](https://support.appsflyer.com/hc/articles/24604528827921#dcr-naming-requirements).
+    - The **input** folder is not required, and you can remove it or name it something different, so long as it complies with the [DCR naming requirements](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements).
     - Although this folder is not required, having an **input** folder (or an equivalent folder of a different name) is considered best practice. It is even more highly recommended when you are using the same cloud storage bucket both for uploading data files (input) and receiving reports (output).
 
 > 🚧 Important!
@@ -564,7 +564,7 @@ You can delete any source except when it's being used in an audience. If this is
 
 ## Sharing permissions
 
-Granting permissions to your collaborators to view and use your source data is done when [creating collaborations](https://support.appsflyer.com/hc/articles/32192739295377). Learn more about [sharing permissions](/docs/data-collaboration-platform-dcp-sharing-permissions).
+Granting permissions to your collaborators to view and use your source data is done when [creating collaborations](/docs/data-collaboration-platform-dcp-create-a-collaboration). Learn more about [sharing permissions](/docs/data-collaboration-platform-dcp-sharing-permissions).
 
 ## Additional information
 
@@ -597,7 +597,7 @@ Though it is not required, best practice is to create a top-level input folder d
 The top-level input folder is generally created manually using the interface of your selected cloud service.
 
 - This practice is even more highly recommended when you are using the same bucket both for uploading data files (input) and receiving reports (output).
-- You can name this folder anything you want, so long as it complies with the [DCR naming requirements](https://support.appsflyer.com/hc/articles/24604528827921#dcr-naming-requirements). For ease of identification, it is usually named `input/`.
+- You can name this folder anything you want, so long as it complies with the [DCR naming requirements](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements). For ease of identification, it is usually named `input/`.
 
 After creating the top-level input folder, your bucket/folder structure might look something like this:
 

@@ -41,7 +41,7 @@ The following table lists the reject reason, reject reason value, and an explana
 
 | Reject reason | Reject reason value | Explanation |
 | --- | --- | --- |
-| Inherits from install | Inherits from install | Initial install identified as fake based on [install](https://support.appsflyer.com/hc/articles/360015179337#blocked-reasons) or [denylisted](https://support.appsflyer.com/hc/articles/360015179337#blocked-reasons) level reason |
+| Inherits from install | Inherits from install | Initial install identified as fake based on [install](/docs/protect360-raw-data-reports#blocked-reasons) or [denylisted](/docs/protect360-raw-data-reports#blocked-reasons) level reason |
 | inapps\_bots | fake\_device\_parameters | AppsFlyer algorithm detects fraud |
 | validation\_inapps | invalid\_event\_name | Based on requested or manually defined validation rule |
 | validation\_inapps | invalid\_event\_value | Based on requested or manually defined validation rule |
@@ -51,7 +51,7 @@ The following table lists the reject reason, reject reason value, and an explana
 >
 > To be able to distinguish between postbacks for legitimate events and rejected postbacks, you must configure the [rejected postback macros](/docs/postback-macros-for-ad-networks#macros%E2%80%94installs-inapp-events-and-rejected-events).
 >
-> To enable rejected postbacks for Advance Privacy you must first append the following parameters to the [Default postback](https://support.appsflyer.com/hc/articles/360018512658#default-postback):
+> To enable rejected postbacks for Advance Privacy you must first append the following parameters to the [Default postback](/docs/self-serve-integration-management-for-ad-networks#default-postback):
 >
 > - `is-rejected`
 > - `blocked-reason`

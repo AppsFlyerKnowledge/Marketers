@@ -14,9 +14,9 @@ The following sections include information necessary for using the API.
 | --- | --- | --- |
 | Request | HTTP method | `GET` |
 | Path | https://hq1.appsflyer.com/api/mng/apps |
-| Authorization header | - The mandatory authorization header contains a Bearer token. <br>- The admin gets the token in the dashboard as follows: [The Admin goes to email drop-down list > API tokens to get the V2.0 token](https://support.appsflyer.com/hc/articles/360004562377) |
+| Authorization header | - The mandatory authorization header contains a Bearer token. <br />- The admin gets the token in the dashboard as follows: [The Admin goes to email drop-down list > API tokens to get the V2.0 token](/docs/managing-appsflyer-tokens) |
 | Response | Results | Return in JSON |
-| Request limit | - 20 requests/minute<br>- 100 requests/day |
+| Request limit | - 20 requests/minute<br />- 100 requests/day |
 | Record limit | 1,000 records/request. If more than 1,000 records are to be returned, use follow-on pagination requests, described in this article. |
 
 ### API request
@@ -38,7 +38,7 @@ GET https://hq1.appsflyer.com/api/mng/apps?capabilities={capabilities}
 | Option | Type | Description |
 | --- | --- | --- |
 | `protect_360` | Report permission | Get [Protect360 raw data reports for ad networks](/docs/protect360-for-integrated-partners) |
-| `cost` | Integration | App is enabled to get cost data [via InCost API](https://support.appsflyer.com/hc/articles/360007714957) |
+| `cost` | Integration | App is enabled to get cost data [via InCost API](/docs/incost-api-for-ad-networks) |
 
 **Example**: List of apps for which you have Protect360 report API permission: `capabilities=protect_360`
 
@@ -85,8 +85,8 @@ A pagination mechanism, always operational, is implemented.
 
 | Query parameter | Description |
 | --- | --- |
-| limit | Number of records that return per call<br>- Maximum: 1,000<br>- If you don't send `limit`, it is automatically set to 1,000.<br>- Example: `limit=2`<br>- Mandatory: No |
-| offset | The first record to return in the call. Record numbers start with 0. <br>- If you don't send `offset`, it is automatically set to 0.<br>- Example: `offset=2`<br>- Mandatory: No |
+| limit | Number of records that return per call<br />- Maximum: 1,000<br />- If you don't send `limit`, it is automatically set to 1,000.<br />- Example: `limit=2`<br />- Mandatory: No |
+| offset | The first record to return in the call. Record numbers start with 0. <br />- If you don't send `offset`, it is automatically set to 0.<br />- Example: `offset=2`<br />- Mandatory: No |
 
 ### JSON response
 
@@ -99,7 +99,7 @@ A pagination mechanism, always operational, is implemented.
 | currency | App-specific currency code as set by the advertiser |
 | time_zone | App-specific timezone as set by the advertiser |
 | total_items | Number of apps to which the ad network has the requested capabilities option |
-| links | Pagination mechanism (explained in the parameters section)<br>- prev: the call used to generate the previous page<br>- self: the call used to generate the current page<br>- next: the call used to generate the next page |
+| links | Pagination mechanism (explained in the parameters section)<br />- prev: the call used to generate the previous page<br />- self: the call used to generate the current page<br />- next: the call used to generate the next page |
 
 ### Get app list curl example and response
 
@@ -166,8 +166,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/mng/apps?capabiliti
 | Code | Message | Remarks/troubleshooting |
 | --- | --- | --- |
 | 200 | OK | Valid data returned |
-| 200 | OK | **Symptom**: No data returns<br>**Action**: Make sure the authentication token is in the bearer header. |
-| 400 | Bad request | - See the message contained in the JSON<br>- Empty JSON: illegal capability specified |
-| 401 | Unauthorized | **Message**: Authorization token is malformed<br>Make sure you have the correct token; token must have 700+ characters. |
-| 404 | Not found | - Handle any network or firewall-related problems. <br>- Make sure that AppsFlyer [IP addresses are allowlisted](https://support.appsflyer.com/hc/articles/207447093-AppsFlyer-server-IP-address-ranges-allowlisting-)<br>- Make sure you use the most recently-issued token.<br>- No data found: The permission/integration (capabilities) type requested is legal, but no apps with permission were found. |
+| 200 | OK | **Symptom**: No data returns<br />**Action**: Make sure the authentication token is in the bearer header. |
+| 400 | Bad request | - See the message contained in the JSON<br />- Empty JSON: illegal capability specified |
+| 401 | Unauthorized | **Message**: Authorization token is malformed<br />Make sure you have the correct token; token must have 700+ characters. |
+| 404 | Not found | - Handle any network or firewall-related problems. <br />- Make sure that AppsFlyer [IP addresses are allowlisted](/docs/appsflyer-server-ip-address-ranges-allowlisting)<br />- Make sure you use the most recently-issued token.<br />- No data found: The permission/integration (capabilities) type requested is legal, but no apps with permission were found. |
 | 429 | Too many requests | Exceeded rate limitation |

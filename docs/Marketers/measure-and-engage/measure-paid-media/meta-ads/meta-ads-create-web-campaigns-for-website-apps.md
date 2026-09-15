@@ -7,7 +7,7 @@ AppsFlyer supports integration with Meta Ads (`metaweb_int`) for website app cam
 Here's how it works: when a user clicks a Meta ad and lands on your website, AppsFlyer captures any conversion events the user completes, such as a purchase or sign-up, and sends that signal to Meta via CAPI. Meta uses this data to refine targeting and evaluate campaign results.
 
 <Cards>
-  <Card title="Web Performance Measurement - Overview" href="https://support.appsflyer.com/hc/articles/43521734577809--Beta-AppsFlyer-Web-Attribution-Overview">
+  <Card title="Web Performance Measurement - Overview" href="/docs/web-performance-measurement-overview">
     Learn more about AppsFlyer's web attribution capabilities.
   </Card>
 </Cards>
@@ -22,7 +22,7 @@ Before activating the Meta Ads integration, make sure you have:
 
 - A website app set up in AppsFlyer. For more information, see:
   - [Adding a web app](/docs/adding-an-app-to-appsflyer#web)
-  - [Configure Web Performance Measurement settings](https://support.appsflyer.com/hc/articles/43541863890961--Beta-Configure-AppsFlyer-Web-Attribution-settings)
+  - [Configure Web Performance Measurement settings](/docs/configure-web-performance-measurement-settings)
 - A [business account in Meta Business Manager](https://www.facebook.com/business/help/1710077379203657?id=180505742745347).
 
 ## Set up Meta Ads web campaigns for website apps
@@ -47,7 +47,7 @@ To activate the Meta Ads integration:
 
 > 📘 Note
 >
-> The toggle must stay on ([activated](https://support.appsflyer.com/hc/articles/360000844778)) for as long as you work with the partner.
+> The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner.
 
 5. Complete the **Pixel ID** field. To retrieve your pixel ID from Meta Ads Manager:
    1. From the [Ads Manager](https://www.facebook.com/ads/manager) side menu, go to **All tools** > **Events Manager**.
@@ -59,7 +59,7 @@ To activate the Meta Ads integration:
    2. From the **Events Manager** side menu, select **Data sources**. You'll see a list of your pixels. If you don't have a pixel for the selected business, you can create one from the same view.
    3. Copy the pixel ID shown under the pixel name and paste it into the **Pixel ID** field in AppsFlyer.
 6. Complete the **Access Token** field. To retrieve your access token, follow [these instructions](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token).
-7. Turn on **Limit Meta Ads' use of users' personal information (CCPA)** to enable compliance with [data protection laws](https://support.appsflyer.com/hc/articles/11332840660625).
+7. Turn on **Limit Meta Ads' use of users' personal information (CCPA)** to enable compliance with [data protection laws](/docs/send-opendsr-api-requests).
 
 > 📘 Note
 >
@@ -72,7 +72,7 @@ You can define which web conversion events AppsFlyer sends to Meta Ads by mappin
 To set in-app event postbacks:
 
 1. Turn on **In-app event postbacks**.
-2. If required, set the in-app event postback window. For more information, see [In-app event postback window configuration](https://support.appsflyer.com/hc/articles/208439256-In-App-Events-Postback-Configuration#inapp-event-postback-window).
+2. If required, set the in-app event postback window. For more information, see [In-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window).
 3. Click **Add event** to add an event to the list.
 4. In the **AppsFlyer event** column, select the event name from the drop-down list. AppsFlyer receives the event name from the Web SDK integrated on your website, or from server-to-server (S2S) events you send to AppsFlyer.
 5. In the **Mapped to partner event** column, select the most suitable pre-defined partner event from the drop-down list, or select **CUSTOM**.
@@ -85,7 +85,7 @@ To set in-app event postbacks:
 >
 > If you are setting a purchase event, set the **Including** column to **Values and revenue**. Selecting any other option causes the postback to fail.
 
-8. [Optional] Click the **Add condition** icon to [set conditions](https://support.appsflyer.com/hc/articles/208439256#conditional-inapp-event-postbacks) for an event.
+8. [Optional] Click the **Add condition** icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
 9. Click **Save integration**.
 
 If you also run the Meta Pixel on your website, send the same event ID to both AppsFlyer and Meta so AppsFlyer can deduplicate the events:
@@ -97,7 +97,7 @@ AppsFlyer forwards this value to Meta as the event ID. Meta then uses it to dedu
 
 If you don't send `af_customer_event_id`, AppsFlyer generates an event ID automatically. This ID won't match your Pixel events.
 
-For more information, see [[Beta] Integrate AppsFlyer Web SDK](https://support.appsflyer.com/hc/articles/43485611331473).
+For more information, see [[Beta] Integrate AppsFlyer Web SDK](/docs/integrate-appsflyer-web-sdk).
 
 ## Part 2: Set up AppsFlyer integration in Meta Ads
 
@@ -125,7 +125,7 @@ Complete the following steps in Meta Ads Manager.
 
 1. Under **Destination**, in the **Website URL** field, enter the URL that serves as the destination for your ad. Choose one of the following:
    - **Website URL**: Use your website URL when you want users to land directly on your website and complete web conversion events, such as a purchase or sign-up.
-   - **AF attribution link (OneLink)**: Use an AF attribution link when you want users to be redirected to your mobile app, with a fallback to your website if the app is not installed. This is useful when your campaign targets both app and web users. For more information, see [OneLink links and experiences](https://support.appsflyer.com/hc/articles/208874366-OneLink-links-and-experiences).
+   - **AF attribution link (OneLink)**: Use an AF attribution link when you want users to be redirected to your mobile app, with a fallback to your website if the app is not installed. This is useful when your campaign targets both app and web users. For more information, see [OneLink links and experiences](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink).
 
 > ❗️ Important!
 >
@@ -137,14 +137,14 @@ Complete the following steps in Meta Ads Manager.
 
 | AF parameter | Mapped Meta value |
 | --- | --- |
-| [`pid`](https://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters#pid) | `metaweb_int` |
-| [`c`](https://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters#c) | `{{campaign.name}}` |
-| [`af_siteid`](https://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters#af_siteid) | `{{site_source_name}}` |
-| [`af_c_id`](https://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters#af_c_id) | `{{campaign.id}}` |
-| [`af_adset`](https://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters#af_adset) | `{{adset.name}}` |
-| [`af_adset_id`](https://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters#af_adset_id) | `{{adset.id}}` |
-| [`af_ad`](https://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters#af_ad) | `{{ad.name}}` |
-| [`af_ad_id`](https://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters#af_ad_id) | `{{ad.id}}` |
+| [`pid`](/docs/about-link-structure-and-parameters#pid) | `metaweb_int` |
+| [`c`](/docs/about-link-structure-and-parameters#c) | `{{campaign.name}}` |
+| [`af_siteid`](/docs/about-link-structure-and-parameters#af_siteid) | `{{site_source_name}}` |
+| [`af_c_id`](/docs/about-link-structure-and-parameters#af_c_id) | `{{campaign.id}}` |
+| [`af_adset`](/docs/about-link-structure-and-parameters#af_adset) | `{{adset.name}}` |
+| [`af_adset_id`](/docs/about-link-structure-and-parameters#af_adset_id) | `{{adset.id}}` |
+| [`af_ad`](/docs/about-link-structure-and-parameters#af_ad) | `{{ad.name}}` |
+| [`af_ad_id`](/docs/about-link-structure-and-parameters#af_ad_id) | `{{ad.id}}` |
 
 An example of a resulting URL:
 
@@ -162,7 +162,7 @@ https://www.example.com?pid=metaweb_int&c={{campaign.name}}&af_siteid={{site_sou
 
 > 📘 See also
 >
-> For best practices on building your ad URL with all relevant parameters, see [About traffic source resolution](https://support.appsflyer.com/hc/articles/43518064765201--Beta-About-traffic-source-resolution).
+> For best practices on building your ad URL with all relevant parameters, see [About traffic source resolution](/docs/about-traffic-source-resolution).
 
 ### Step 3: Select tracked events
 

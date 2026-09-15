@@ -97,7 +97,7 @@ To protect your users' privacy, you must not design the CUID to contain informat
 If the CUID contains a user's email address or phone number, you must hash it before sending it to AppsFlyer. Never send unhashed CUIDs containing personal data to AppsFlyer.
 
 <Cards>
-  <Card title="User journey reports" href="https://support.appsflyer.com/hc/articles/209680773#user-journey-reports">
+  <Card title="User journey reports" href="/docs/raw-data-reporting-overview#user-journey-reports">
     Learn more about the CUID in raw data reports.
   </Card>
   <Card title="Google best practices to avoid sending PII" href="https://support.google.com/analytics/answer/6366371?hl=en">

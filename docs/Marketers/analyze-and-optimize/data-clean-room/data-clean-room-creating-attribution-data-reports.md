@@ -2,110 +2,115 @@
 title: "Data Clean Room—Creating Attribution data reports"
 excerpt: "Learn how to create Attribution data reports in the Data Clean Room to match user-level data from installs and retargeting events with your internal systems."
 ---
-Create Attribution data reports to match user-level data from installs/retargeting events with data from your systems. 
+**At a glance:** Create Attribution data reports to match user-level data from installs/retargeting events with data from your systems.
 
 ## Creating an Attribution data report
 
-To create an Attribution data report, follow the steps detailed in the tabs below. All steps must be completed in order to create the report.
+**To create an Attribution data report, follow the steps detailed in the tabs below.**
 
-<Tabs>
-<Tab title="Perform preliminary steps">
+**Note:** These steps are divided into tabs for ease of reading. All steps must be completed in order to create the report.
+
+### Perform preliminary steps
 
 1. Go to the **Reports** tab of the **DCR.**
 2. Click the **+ New report** button.
 3. Select **Attribution data** as the type of source data, then click **Next** in the bottom right corner of the screen.
 4. Enter a name for the report.
-   - This can be any name that will help you identify the report in the DCR platform.
-   - **Important!** Ensure that the report name is different from all other reports in your account or you will not be able to save the report.
-   - Report name requirements:
-     - Length: 2-80 characters
-     - Valid characters:
-       - letters **(A-Z, a-z)**
-       - numbers **(0-9)**, *cannot be the first character of a name*
-       - a hyphen **(-)**, *cannot be the first character of a name*
-     - Invalid characters:
-       - spaces
-       - all other symbols or special characters
+   * This can be any name that will help you identify the report in the DCR platform.
+   * **Important!** Ensure that the report name is different from all other reports in your account or you will not be able to [save the report](/docs/data-clean-room-creating-attribution-data-reports#set-the-report-destination-and-save-the-report).
+   * Report name requirements:
+     * Length: 2-80 characters
+     * Valid characters:
+       * letters **(A-Z, a-z)**
+       * numbers **(0-9)**, *cannot be the first character of a name*
+       * a hyphen **(-)**, *cannot be the first character of a name*
+     * Invalid characters:
+       * spaces
+       * all other symbols or special characters
 
-</Tab>
-
-<Tab title="Select sources">
+### Select sources
 
 Specify the data to be used for the report:
 
 #### **Attribution data sources**
 
-- **Apps:** Select one or more of the apps in your AppsFlyer account.
-- **Attribution types:** Select one or more types of attribution data to be used for the report:
+* **Apps:** Select one or more of the apps in your AppsFlyer account.
+* **Attribution types:** Select one or more types of attribution data to be used for the report:
 
-| Attribution Type | Description |
-| --- | --- |
 | Installs | An install is recorded when a user downloads, installs, and launches a mobile app. |
-| Re-installs | A re-install is recorded when a user installs an app, then uninstalls and re-installs it during the re-attribution window.<br>  - **Note:** The length of the re-attribution window is set in Settings > App Settings. |
+| --- | --- |
+| Re-installs | A re-install is recorded when a user installs an app, then uninstalls and re-installs it during the re-attribution window.<br /><br />* **Note:** The length of the re-attribution window is set in Settings > App Settings. |
 | Re-engagements | A re-engagement is recorded when an inactive user of a specific app engages with a retargeting campaign for the app and subsequently launches it. |
 | Re-attributions | A re-attribution is recorded when a former user of a specific app (who had uninstalled it) engages with a retargeting campaign for the app and subsequently reinstalls it. |
-| Organic installs | Organic installs are those not attributed to a specific media source.<br>  - **Note:** Including organic installs in your report can significantly increase the number of scanned rows. |
+| Organic installs | Organic installs are those not attributed to a specific media source.<br /><br />* **Note:** Including organic installs in your report can significantly increase the number of scanned rows. |
 
-- **Timeframe:** Select the number of days of historical data you want the DCR to search for attribution events matching your custom source events (from 1 to 180 days).
+
+* **Timeframe:** Select the number of days of historical data you want the DCR to search for attribution events matching your custom source events (from 1 to 180 days).
 
 #### **Custom sources**
 
-When defining report structure, you can choose to use data from any of the custom sources you have set up.
+When defining report structure, you can choose to use data from any of the [custom sources you have set up](/docs/data-clean-room-working-with-sources).
 
-</Tab>
+### Join sources
 
-<Tab title="Join sources">
-
-To match data among sources, each of the **custom** sources used in the report must include an identifier mapped to a **key identifier** in the attribution data.
+To match data among sources, each of the **custom** sources used in the report must include an [identifier](/docs/data-clean-room-setting-up-cloud-services) mapped to a **key identifier** in the attribution data.
 
 #### **What is a key identifier?**
 
 You can map to either of these attribution data identifiers as **key identifiers:**
 
-- **AppsFlyer ID (af_id):** A unique app identifier generated by AppsFlyer at installation –  - This ID appears in all events recorded by AppsFlyer.
-  - A new AppsFlyer ID is generated if an app is deleted and then reinstalled.
-- **Customer User ID (CUID):** A unique user identifier usually generated and set by the app owner at the time of user registration.  - Using CUID to map data requires that your app is configured to send the CUID to AppsFlyer via the SDK or the server-to-server API (S2S).
+* **AppsFlyer ID (af\_id):** A unique app identifier generated by AppsFlyer at installation –
+  * This ID appears in all events recorded by AppsFlyer.
+  * A new AppsFlyer ID is generated if an app is deleted and then reinstalled.
+* **Customer User ID (CUID):** A unique user identifier usually generated and set by the app owner at the time of user registration.
+  * Using CUID to map data requires that your app is configured to [send the CUID to AppsFlyer](/docs/customer-user-id-field-cuid) via the SDK or the server-to-server API (S2S).
 
-> 🚧 Important!
+> 📘 **Note**
+>
+> #### Important!
 >
 > Not all media sources permit matching using CUID. It is highly recommended to use AppsFlyer ID.
+
 
 #### **Mapping schemes (direct/indirect)**
 
 If the report uses more than one custom source, only one of them needs to be mapped **directly** to an attribution data key identifier. Other custom sources can be mapped either **directly or indirectly,** as illustrated in the following example:
 
-#### Example
-
-<Image src="https://files.readme.io/18d1ddd8305f790dc621f871695b8cfb30f5e5a5d758c219e76ec7822ec18f2f-9969690360849.png" alt="dcr_mapping_identifiers_attribution_data.png" />
-
-In the scenario shown above:
-
-- Custom source #1 identifier **AF** is mapped directly to the attribution data key identifier **af_id.**
-- Custom source #2 is mapped indirectly: **user_code** --> **AF** --> **af_id.**
-- Custom source #3 is mapped indirectly (through a longer chain):
-
-**user_id**--> **user_code**--> **AF**--> **af_id.**
-- Custom source #4 identifier **ID** is mapped directly to the attribution data key identifier **af_id.**
-  - Note that it could have been mapped indirectly instead (through custom source #3 identifier **user_id**), but either option works fine.
-
-**✓** This mapping scheme works to match data among all the sources since each custom source is mapped either directly or indirectly to the attribution data key identifier **af_id.**
-
-</Tab>
-
-<Tab title="Determine treatment of multiple matching events">
-
-> 📘 Note
+> 📘 **Note**
 >
-> If the attribution types selected for this report **include only installs and/or organic installs,** this section is irrelevant. Skip to **Select dimensions**.
+> #### Example
+>
+> ![dcr_mapping_identifiers_attribution_data.png](https://files.readme.io/18d1ddd8305f790dc621f871695b8cfb30f5e5a5d758c219e76ec7822ec18f2f-9969690360849.png)
+>
+> In the scenario shown above:
+>
+> * Custom source #1 identifier **AF** is mapped directly to the attribution data key identifier **af\_id.**
+> * Custom source #2 is mapped indirectly: **user\_code** --> **AF** --> **af\_id.**
+> * Custom source #3 is mapped indirectly (through a longer chain):
+>   **user\_id** --> **user\_code** --> **AF** --> **af\_id.**
+> * Custom source #4 identifier **ID** is mapped directly to the attribution data key identifier **af\_id.**
+>   * Note that it could have been mapped indirectly instead (through custom source #3 identifier **user\_id**), but either option works fine.
+>
+> **✓** This mapping scheme works to match data among all the sources since each custom source is mapped either directly or indirectly to the attribution data key identifier **af\_id.**
+
+
+### Determine treatment of multiple matching events
+
+> 📘 **Note**
+>
+> #### Note
+>
+> If the attribution types selected for this report **include only installs and/or organic installs,** this section is irrelevant. Skip to [**Select dimensions**](/docs/data-clean-room-creating-attribution-data-reports#select-dimensions)**.**
+
 
 If the attribution types you select for your report include **re-installs,** **re-engagements, or re-attributions,** it's possible that the attribution data will include more than one event during the selected timeframe with the same key identifier. When this is the case, you must instruct the DCR which matching events it should include in the report.
 
 #### **Matching all events**
 
-The most comprehensive matching method allows your report to include all matching events. In order to achieve this result, you must map an identifier in one of the report's custom sources to the attribution data identifier **install_time.**
+The most comprehensive matching method allows your report to include all matching events. In order to achieve this result, you must map an identifier in one of the report's custom sources to the attribution data identifier **install\_time.**
 
-- The identifier in your source that is mapped to install_time must be in the following format: **yyyy-MM-dd HH:mm:ss.**
-- **Note:** Though the attribution data identifier's name is `install_time`, it actually means **event time** when referring to re-install, re-engagement, or re-attribution events.
+* The identifier in your source that is mapped to install\_time must be in the following format: **yyyy-MM-dd HH:mm:ss.**
+* **Note:** Though the attribution data identifier's name is `install_time`, it actually means **event time** when referring to re-install, re-engagement, or re-attribution events.
 
 #### **Matching a single event**
 
@@ -113,20 +118,21 @@ If the attribution types selected for your report include re-installs, re-engage
 
 Single-event matching behavior differs when the AppsFlyer attribution data source is used alone versus when it is joined with custom sources.
 
-- When the attribution data source is used alone, AppsFlyer selects the matching event with the latest `event_time` in the timeframe that matches a specific key identifier.
-- When the attribution data source is joined with custom sources, you must elect to use either the **last** or **first** matching event in your report.
-  - **Last event:** The attribution event included in the report is the event with the latest `event_time` in the timeframe that matches a specific key identifier.
-  - **First event:** The attribution event included in the report is the event with the earliest `event_time` in the timeframe that matches a specific key identifier.
+* When the attribution data source is used alone, AppsFlyer selects the matching event with the latest `event_time` in the timeframe that matches a specific key identifier.
+* When the attribution data source is joined with custom sources, you must elect to use either the **last** or **first** matching event in your report.
+  * **Last event:** The attribution event included in the report is the event with the latest `event_time` in the timeframe that matches a specific key identifier.
+  * **First event:** The attribution event included in the report is the event with the earliest `event_time` in the timeframe that matches a specific key identifier.
 
 Make this selection based on the event you consider to be most relevant to the insights you want to obtain from the report.
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > In case of record duplicates, DCR deduplicates records with the same `appsflyer_id`, selecting the latest event based on `event_time`.
 
-</Tab>
 
-<Tab title="Select dimensions">
+### Select dimensions
 
 Recall that user-level data cannot be reported by the DCR. Instead, it provides you with the decision-making insights you need by aggregating (or grouping) the data by the dimensions you choose.
 
@@ -136,17 +142,17 @@ A dimension is generally an attribute by which you categorize app users (for exa
 
 Attribution data report dimensions can include:
 
-- Any available attribution data dimension
-- Any field in the report's custom sources that has been categorized as a dimension
+* Any [available attribution data dimension](/docs/data-clean-room-creating-attribution-data-reports#available-attribution-data-dimensions)
+* Any field in the report's custom sources that has been [categorized as a dimension](/docs/data-clean-room-working-with-sources#3-define-the-source-structure)
 
 **To select the dimensions to include in your report:**
 
-1. Select one or more dimensions in the **Dimensions from sources** list on the left and use the **Add** button in the middle of the screen to add them to the list of **Report dimensions.**
-   - You can use the search bar to search for dimensions in the lists.
-2. To remove a dimension, select it from the **Report dimensions** list and use the **Remove** button to return it to the **Dimensions from sources** list.
+1. Select one or more dimensions in the **Dimensions from sources** list on the left and use the **Add** button in the middle of the screen to add them to the list of **Report dimensions.**  
+   * You can use the search bar to search for dimensions in the lists.
+2. To remove a dimension, select it from the **Report dimensions** list and use the **Remove** button to return it to the **Dimensions from sources** list.
 3. Repeat this process until you have added each dimension you want to include in the report.
 
-**Note:** By default, all reports are grouped by the attribution data dimension **media_source.** If you do not wish to use this dimension in your report, you can remove it from the **Report dimensions** list.
+**Note:** By default, all reports are grouped by the attribution data dimension **media\_source.** If you do not wish to use this dimension in your report, you can remove it from the **Report dimensions** list.
 
 #### **[Optional] Customizing dimension display names**
 
@@ -155,7 +161,7 @@ By default, dimension names are displayed in your report exactly as they are nam
 **To customize dimension display names:**
 
 1. In the **Report dimensions** list, hover over the name of the dimension whose display name you want to edit.
-2. Click the edit button that displays to the right of the dimension.
+2. Click the edit button ![edit_button.png](https://support.appsflyer.com/hc/article_attachments/10753875375377) that displays to the right of the dimension.
 3. Change the name to the dimension display name to be used in your report (up to 50 characters).
 4. Click **OK** to save the display name, or **X** to cancel it.
 
@@ -163,59 +169,70 @@ By default, dimension names are displayed in your report exactly as they are nam
 
 Depending on the size of your data set, the number of dimensions you choose, and other factors, it's possible that a report would include one or more groups containing too few users to allow reporting. If the data were reported this way, it would violate restrictions against providing user-level data.
 
-- **Important!** The minimum number of users required in order to permit reporting varies by media source.
+* **Important!** The minimum number of users required in order to permit reporting varies by media source.
 
 However, instead of removing or hiding the data from the report completely, the DCR uses a **regrouping mechanism** to provide as much detail as possible while maintaining user privacy.
 
-#### Regrouping example
+> 📘 **Note**
+>
+> #### Regrouping example
+>
+> Assume you have set up a report according to the following dimensions (in order):
+>
+> * **Attribution data dimensions:**
+>   * media source
+>   * campaign
+>   * adset\_name
+>   * ad\_id
+> * **Custom source dimensions:**
+>   * user\_type
+>
+> **Before regrouping**
+>
+> After initial analysis of the data, the DCR determines that the data would break down as follows:
+>
+>
+>
+> | media  <br />source | campaign | adset  <br />name | ad  <br />id | user  <br />type | rev  <br />D0 | rev  <br />D7 | count | reportable? |
+> | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+> | media\_source | UA\_100 | green | kjh867 | buyer | 1 | 4 | 120 | **✓** |
+> | media\_source | UA\_101 | green | jkj987 | ultra | 2 | 23 | 220 | **✓** |
+> | media\_source | UA\_200 | green | lkh123 | beg | 6 | 7 | x | **X** |
+> | media\_source | UA\_200 | green | ilk945 | beg | 3 | 21 | x | **X** |
+> | media\_source | UA\_200 | green | plm654 | beg | 8 | 17 | x | **X** |
+>
+>
+>
+> As it stands, the final 3 rows are not reportable because there are too few users in each. (This media source requires a minimum of **y** users in order to be reportable. Here, we have only **x**.)
+>
+> According to the regrouping logic, the DCR first "eliminates" the last-listed attribution data dimension (in this case, **ad\_id**). It then analyzes the data again to see which rows are reportable.
+>
+> **After regrouping**
+>
+> After applying the regrouping logic, the report appears as follows:
+>
+>
+>
+> | media  <br />source | campaign | adset  <br />name | ad  <br />id | user  <br />type | rev  <br />D0 | rev  <br />D7 | count | reportable? |
+> | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+> | media\_source | UA\_100 | green | kjh867 | buyer | 1 | 4 | 120 | **✓** |
+> | media\_source | UA\_101 | green | jkj987 | ultra | 2 | 23 | 220 | **✓** |
+> | media\_source | UA\_200 | green | RESTRICTED | beg | 17 | 45 | y (x+x+x) | **✓** |
+>
+>
+>
+> **Results:**
+>
+> * The last row now combines the data that had previously been on 3 rows. Now, the combined row has a user count equal to **y** and can be reported.
+> * The dimension that was eliminated is now reported as RESTRICTED.
+> * Had there still been unreportable rows (fewer than **y** users), the DCR would continue to analyze the data on an iterative basis, eliminating one dimension after another until it either:
+>   * can report all rows; or
+>   * runs out of attribution data dimensions to eliminate
+>
+> **Note:** By default, the DCR applies regrouping only to [**attribution data dimensions**](/docs/data-clean-room-creating-attribution-data-reports#available-attribution-data-dimensions) (not to custom source dimensions). If data grouped by an attribution data dimension would result in a row containing fewer than **y** users, the data in that row will be reported as RESTRICTED.
+>
+> * *See below for an advanced option you can use to apply regrouping to custom source dimensions as well.*
 
-Assume you have set up a report according to the following dimensions (in order):
-
-- **Attribution data dimensions:**
-  - media source
-  - campaign
-  - adset_name
-  - ad_id
-- **Custom source dimensions:**
-  - user_type
-
-**Before regrouping**
-
-After initial analysis of the data, the DCR determines that the data would break down as follows:
-
-| media source | campaign | adset name | ad id | user type | rev D0 | rev D7 | count | reportable? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| media_source | UA_100 | green | kjh867 | buyer | 1 | 4 | 120 | **✓** |
-| media_source | UA_101 | green | jkj987 | ultra | 2 | 23 | 220 | **✓** |
-| media_source | UA_200 | green | lkh123 | beg | 6 | 7 | x | **X** |
-| media_source | UA_200 | green | ilk945 | beg | 3 | 21 | x | **X** |
-| media_source | UA_200 | green | plm654 | beg | 8 | 17 | x | **X** |
-
-As it stands, the final 3 rows are not reportable because there are too few users in each. (This media source requires a minimum of **y** users in order to be reportable. Here, we have only **x**.)
-
-According to the regrouping logic, the DCR first "eliminates" the last-listed attribution data dimension (in this case, **ad_id**). It then analyzes the data again to see which rows are reportable.
-
-**After regrouping**
-
-After applying the regrouping logic, the report appears as follows:
-
-| media source | campaign | adset name | ad id | user type | rev D0 | rev D7 | count | reportable? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| media_source | UA_100 | green | kjh867 | buyer | 1 | 4 | 120 | **✓** |
-| media_source | UA_101 | green | jkj987 | ultra | 2 | 23 | 220 | **✓** |
-| media_source | UA_200 | green | RESTRICTED | beg | 17 | 45 | y (x+x+x) | **✓** |
-
-**Results:**
-
-- The last row now combines the data that had previously been on 3 rows. Now, the combined row has a user count equal to **y** and can be reported.
-- The dimension that was eliminated is now reported as RESTRICTED.
-- Had there still been unreportable rows (fewer than **y** users), the DCR would continue to analyze the data on an iterative basis, eliminating one dimension after another until it either:
-  - can report all rows; or
-  - runs out of attribution data dimensions to eliminate
-
-**Note:** By default, the DCR applies regrouping only to **attribution data dimensions** (not to custom source dimensions). If data grouped by an attribution data dimension would result in a row containing fewer than **y** users, the data in that row will be reported as RESTRICTED.
-
-- *See below for an advanced option you can use to apply regrouping to custom source dimensions as well.*
 
 #### **[Optional] Managing dimension priority**
 
@@ -225,29 +242,27 @@ By default, attribution data dimensions are eliminated in reverse order from the
 
 1. Click the **Manage dimension priority** button.
 2. Select a dimension and drag it to the desired position in the list (or use the arrow buttons on the right to move it).
-   - The dimension labeled as **Highest priority** (at the top of the list) means it's the last to be eliminated if regrouping is required.
+   * The dimension labeled as **Highest priority** (at the top of the list) means it's the last to be eliminated if regrouping is required.
 3. [Optional] To apply regrouping to custom source dimensions:
    1. Click **Use advanced options to refine regrouping**
    2. Select custom source dimensions to which you'd like to apply regrouping.
    3. The selected dimensions are added to the **Manage dimension priority** list.
-      - By default, these dimensions are added to the bottom of the list, as **Lowest priority** for regrouping. However, you can reorder them just like attribution data dimensions as described above.
+      * By default, these dimensions are added to the bottom of the list, as **Lowest priority** for regrouping. However, you can reorder them just like attribution data dimensions as described above.
 4. Click **OK** to save your changes.
-   - The **Report dimensions** list on the main screen remains in its original order, but the revised order has been saved. (Click again on the **Manage dimension priority** button if you wish to review or edit your selection.)
+   * The **Report dimensions** list on the main screen remains in its original order, but the revised order has been saved. (Click again on the **Manage dimension priority** button if you wish to review or edit your selection.)
 
-</Tab>
-
-<Tab title="Select metrics">
+### Select metrics
 
 Metrics are the numeric data you have collected with respect to an app user (examples might include revenue, number of app opens, LTV, etc.) and can be any **numeric** data field from your sources that you have categorized as a metric.
 
 **To select the metrics to include in your report:**
 
 1. Select one or more metrics in the **Metrics from sources** list on the left and use the **Add** button in the middle of the screen to add them to the list of **Report metrics.**
-   - You can use the search bar to search for metrics in the lists.
+   * You can use the search bar to search for metrics in the lists.
 2. For each metric in the **Report metrics** list, select whether you want the data reported as either:
-   - a sum of numeric values; or
-   - a count of distinct values
-3. To remove a metric, select it from the **Report metrics** list and use the **Remove** button to return it to the **Metrics from sources** list.
+   * a sum of numeric values; or
+   * a count of distinct values
+3. To remove a metric, select it from the **Report metrics** list and use the **Remove** button to return it to the **Metrics from sources** list.
 4. Repeat this process until you've added each metric you want to include in the report.
 
 #### **[Optional] Customizing metric display names**
@@ -257,7 +272,7 @@ By default, metric names are displayed in your report exactly as they are named 
 **To customize metric display names:**
 
 1. In the **Report metrics** list, hover over the name of the metric whose display name you want to edit.
-2. Click the edit button that displays to the right of the metric.
+2. Click the edit button ![edit_button.png](https://support.appsflyer.com/hc/article_attachments/10753875375377) that displays to the right of the metric.
 3. Change the name to the metric display name to be used in your report (up to 50 characters).
 4. Click **OK** to save the display name, or **X** to cancel it.
 
@@ -268,41 +283,36 @@ By default, each row of the report ends with a column containing a count of the 
 **If you wish to add columns for the distinct counts of other identifiers from your sources, do so as follows:**
 
 1. Select one or more identifiers in the **Identifiers from sources** list on the left and use the **Add** button in the middle of the screen to add them to the list of **Distinct count identifiers**.
-   - You can use the search bar to search for identifiers in the lists.
-2. To remove an identifier, select it from the **Distinct count identifiers** list and use the **Remove** button to return it to the **Identifiers from sources** list.
+   * You can use the search bar to search for identifiers in the lists.
+2. To remove an identifier, select it from the **Distinct count identifiers** list and use the **Remove** button to return it to the **Identifiers from sources** list.
 3. Repeat this process until you have added each identifier you want counted in the report.
 
-</Tab>
+### Set the report destination and save the report
 
-<Tab title="Set the report destination and save the report">
+The DCR delivers reports to your selected cloud services using [AppsFlyer Data Locker](/docs/data-locker-for-marketers). Therefore, specifying the report destination involves selecting or creating a Data Locker connection.
 
-The DCR delivers reports to your selected cloud services using AppsFlyer Data Locker. Therefore, specifying the report destination involves selecting or creating a Data Locker connection.
-
-- **Note:** Receiving DCR reports does not require a premium subscription to Data Locker. If you are interested in receiving other AppsFlyer reports via Data Locker, contact your CSM or send an email to hello@appsflyer.com.
+* **Note:** Receiving DCR reports does not require a premium subscription to Data Locker. If you are interested in receiving other AppsFlyer reports via Data Locker, contact your CSM or send an email to [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
 **To set the report destination and save the report:**
 
 1. Select from the list of Data Locker connections available in your AppsFlyer account.
-   - If there are no connections defined in your account:
-     - A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     - A **New connection** dialog will open. Follow the outbound connection instructions to create the connection.
-   - If you have existing connections but want to use a new one, click the new connection button:
-     - A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     - A **New connection** dialog will open. Follow the outbound connection instructions to create the connection.
-   - After creating the connection, return to the DCR tab in your browser and select the newly created connection from the list of Data Locker connections.
+   * If there are no connections defined in your account:
+     * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
+     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-outbound) to create the connection.
+   * If you have existing connections but want to use a new one, click the ![dcr_new_connection_data_locker_button.png](https://support.appsflyer.com/hc/article_attachments/14995870859281) button:
+     * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
+     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-outbound) to create the connection.
+   * After creating the connection, return to the DCR tab in your browser and select the newly created connection from the list of Data Locker connections.
 2. Click **Save** to save the report.
 3. The new report is now displayed in the **Reports** tab of the **Data Clean Room.**
 
-</Tab>
-</Tabs>
-
 ## When does the report run?
 
-Once you have created and saved a report, the report runs whenever new versions of all of the custom sources it uses are detected:
+Once you have created and saved a report, the report runs whenever new versions of all of the [custom sources it uses](/docs/data-clean-room-creating-attribution-data-reports#custom-sources) are detected:
 
-- For sources located in **data warehouses** (BigQuery and Snowflake), the DCR recognizes that a new version of a source has been created when it detects a new value in the `v` column of the source table.
-  - **Important!** Whenever the column value changes, be sure to populate the source table with a complete set of data to ensure the completeness of your report.
-- The DCR recognizes that a new version of a source has been created when it detects that a new version of a source file has been uploaded to a connected cloud account, along with its accompanying `_SUCCESS` file.
+* For sources located in **data warehouses** (BigQuery and Snowflake), the DCR recognizes that a new version of a source has been created when it detects a new value in [the `v` column of the source table](/docs/data-clean-room-working-with-sources#table-columns).
+  * **Important!** Whenever the column value changes, be sure to populate the source table with a complete set of data to ensure the completeness of your report.
+* The DCR recognizes that a new version of a source has been created when it detects that a [new version of a source file has been uploaded](/docs/data-clean-room-working-with-sources#uploading-source-files-to-trigger-report-processing) to a connected cloud account, along with its accompanying \_SUCCESS file.
 
 AppsFlyer continually scans for new versions of sources for the **current date and 2 days prior.**
 
@@ -312,52 +322,52 @@ AppsFlyer continually scans for new versions of sources for the **current date a
 
 In addition to dimensions from your custom sources, the following attribution data dimensions can be used to group reports:
 
-- media_source *(included as a report dimension by default)*
-- ad
-- ad_id
-- ad_type
-- adset_id
-- adset_name
-- app_id
-- app_version
-- attributed_touch_type
-- brand
-- campaign
-- campaign_id
-- channel
-- city
-- contributor_1_campaign¹
-- contributor_1_engagement_type¹
-- contributor_1_match_type¹
-- contributor_1_media_source¹
-- contributor_1_partner¹
-- contributor_1_touch_type¹
-- contributor_2_campaign¹
-- contributor_2_engagement_type¹
-- contributor_2_match_type¹
-- contributor_2_media_source¹
-- contributor_2_partner¹
-- contributor_2_touch_type¹
-- contributor_3_campaign¹
-- contributor_3_engagement_type¹
-- contributor_3_match_type¹
-- contributor_3_media_source¹
-- contributor_3_partner¹
-- contributor_3_touch_type¹
-- conversion_type
-- country
-- customer_id
-- device_type
-- dma
-- engagement_type
-- geo_region
-- keywords
-- match_type
-- media_source
-- model
-- original_url
-- partner
-- platform
-- site_id
+* media\_source *(*[*included as a report dimension by default*](#selecting-report-dimensions)*)*
+* ad
+* ad\_id
+* ad\_type
+* adset\_id
+* adset\_name
+* app\_id
+* app\_version
+* attributed\_touch\_type
+* brand
+* campaign
+* campaign\_id
+* channel
+* city
+* contributor\_1\_campaign¹
+* contributor\_1\_engagement\_type¹
+* contributor\_1\_match\_type¹
+* contributor\_1\_media\_source¹
+* contributor\_1\_partner¹
+* contributor\_1\_touch\_type¹
+* contributor\_2\_campaign¹
+* contributor\_2\_engagement\_type¹
+* contributor\_2\_match\_type¹
+* contributor\_2\_media\_source¹
+* contributor\_2\_partner¹
+* contributor\_2\_touch\_type¹
+* contributor\_3\_campaign¹
+* contributor\_3\_engagement\_type¹
+* contributor\_3\_match\_type¹
+* contributor\_3\_media\_source¹
+* contributor\_3\_partner¹
+* contributor\_3\_touch\_type¹
+* conversion\_type
+* country
+* customer\_id
+* device\_type
+* dma
+* engagement\_type
+* geo\_region
+* keywords
+* match\_type
+* media\_source
+* model
+* original\_url
+* partner
+* platform
+* site\_id
 
 ¹ *For re-engagements and re-attributions, reports will show these fields as empty.*

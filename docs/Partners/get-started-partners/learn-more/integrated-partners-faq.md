@@ -10,7 +10,7 @@ FAQ and integration troubleshooting for integrated partners.
 
 An advertiser should invite you to be onboarded with us.
 
-Share [this invitation procedure](https://support.appsflyer.com/hc/articles/4410395957521#invite-new-partners-to-appsflyer) with the advertiser. After the advertiser invites you, you will receive an email with a form to fill out.
+Share [this invitation procedure](/docs/set-up-an-integrated-partner#invite-new-partners-to-appsflyer) with the advertiser. After the advertiser invites you, you will receive an email with a form to fill out.
 
 Once the form is filled out, we will let you know the next steps.
 
@@ -20,13 +20,13 @@ Once the form is filled out, we will let you know the next steps.
 
 ### How can I update my integration?
 
-Take a look at the required update [here](https://support.appsflyer.com/hc/articles/360017189177) and follow the instructions provided.
+Take a look at the required update [here](/docs/integration-requests-for-partners) and follow the instructions provided.
 
 If your update isn't listed, contact AppsFlyer using the [partner assistant widget](https://support.appsflyer.com/hc/article_attachments/42824303168657), include your integration PID, and describe your request.
 
 ### How do I change the login email of the account?
 
-Follow [these instructions](https://support.appsflyer.com/hc/articles/360017189177#create-update-partner-dashboard-login-email).
+Follow [these instructions](/docs/integration-requests-for-partners#create-update-partner-dashboard-login-email).
 
 ### I can't find or add an app to the dashboard
 
@@ -56,7 +56,7 @@ If you can't add an app to the **App search** screen, verify that:
 
 ### How do I enable Advanced Privacy postbacks?
 
-Follow [these instructions](https://support.appsflyer.com/hc/articles/360018512658#advanced-privacy-and-skan-postbacks).
+Follow [these instructions](/docs/self-serve-integration-management-for-ad-networks#advanced-privacy-and-skan-postbacks).
 
 ### Why can't advertisers find my account?
 
@@ -88,7 +88,7 @@ The permissions are (depending on the advertiser account):
 - Retention reports
 - Protect360 dashboard
 
-For more information, visit the [Providing permissions to ad networks](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab) guide.
+For more information, visit the [Providing permissions to ad networks](/docs/set-up-an-integrated-partner#permissions-tab) guide.
 
 ### I can't configure the integration with the advertiser
 
@@ -118,7 +118,7 @@ Install and in-app data appears in reports within 15 minutes.
 
 | Reason | Solution |
 | --- | --- |
-| The advertiser didn't define any value for the dashboard parameters. | - If you have access to the application setup,<br/>  1. In the AppsFlyer Dashboard, go to **Active integrations**, and click on your logo.<br/>  2. Under the **Integration** tab, find the relevant parameter and check its value.<br/>  3. If it's not defined, contact the Advertiser and ask to fill in the value.<br/>- If you don't have the application setup, ask the Advertiser to [enable Ad Network Permissions](https://support.appsflyer.com/hc/articles/4410395957521#ad-network-permissions) |
+| The advertiser didn't define any value for the dashboard parameters. | - If you have access to the application setup,<br/>  1. In the AppsFlyer Dashboard, go to **Active integrations**, and click on your logo.<br/>  2. Under the **Integration** tab, find the relevant parameter and check its value.<br/>  3. If it's not defined, contact the Advertiser and ask to fill in the value.<br/>- If you don't have the application setup, ask the Advertiser to [enable Ad Network Permissions](/docs/set-up-an-integrated-partner#ad-network-permissions) |
 
 ### Server-to-Server event data from the advertiser is missing or incorrect
 
@@ -145,7 +145,7 @@ Install and in-app data appears in reports within 15 minutes.
 
 | Reason | Solution |
 | --- | --- |
-| Macro `(mapped-iae)` isn't integrated in the in-app event postback. | Use the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif) and request to integrate the macro. Include the following information:<br/>- pid or ad network email<br/>- receiving parameter of partner event identifier<br/>[More on postback macros](https://support.appsflyer.com/hc/articles/207273946#postback-macros). |
+| Macro `(mapped-iae)` isn't integrated in the in-app event postback. | Use the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif) and request to integrate the macro. Include the following information:<br/>- pid or ad network email<br/>- receiving parameter of partner event identifier<br/>[More on postback macros](/docs/postback-macros-for-ad-networks#postback-macros). |
 | Advertiser or agency didn't configure the partner event identifier correctly or at all. | If the click attribution URL contains `af_prt`<br/>ask the agency to check if the partner event identifier is correctly configured on their dashboard.<br/>If not,<br/>ask the advertiser to check if the partner event identifier is correctly configured on their dashboard. |
 
 ### I can't see campaign-level data for non-attributed traffic on postbacks
@@ -163,10 +163,10 @@ Even if the Advertiser allows sending you postbacks for traffic attributed to al
 
 To correctly perform integration tests using test apps, follow the relevant platform guide:
 
-- [Android integration testing for ad networks](https://support.appsflyer.com/hc/articles/4412945443857)
+- [Android integration testing for ad networks](/docs/android-integration-testing-for-ad-networks)
 - [iOS integration testing for ad networks](/docs/ios-integration-testing-for-ad-networks)
 
-To perform an integration test with an advertised app, follow these [guidelines](https://support.appsflyer.com/hc/articles/4413093220113) and make sure the advertiser has allowlisted the device used for testing.
+To perform an integration test with an advertised app, follow these [guidelines](/docs/test-marketer-campaign-integration-with-the-ad-network) and make sure the advertiser has allowlisted the device used for testing.
 
 ### Install postbacks aren't sent to my servers
 
@@ -196,7 +196,7 @@ When **Sonnet** logs into the dashboard of **com.fused**, they see only the **af
 
 ### Click data is missing
 
-If click data is missing from postbacks, make sure that the AppsFlyer link has all the data you want to return to you in the postbacks. See our [attribution link guide](https://support.appsflyer.com/hc/articles/207447163) for more information.
+If click data is missing from postbacks, make sure that the AppsFlyer link has all the data you want to return to you in the postbacks. See our [attribution link guide](/docs/about-link-structure-and-parameters) for more information.
 
 If the advertiser configured the ad network to receive all postbacks, postbacks for events not attributed to the ad network don't contain click data.
 
@@ -247,7 +247,7 @@ You can check blocked data only if the advertiser gives you access to Protect360
 
 You can further investigate this with the publishers that deliver fraudulent traffic and make educated decisions about working with such publishers.
 
-Learn more about [fraud](https://support.appsflyer.com/hc/articles/218254203).
+Learn more about [fraud](/docs/protect360-anti-fraud-guide).
 
 ### Why are impressions/clicks being capped?
 

@@ -2,11 +2,7 @@
 title: "Share ad revenue data with partners"
 excerpt: "Allow user acquisition partners to receive ad revenue data from mediation networks to optimize their campaigns."
 ---
-At a glance: Allow partners to receive ad revenue information from mediation networks so they can optimize their user acquisition (UA) campaigns.
-
-> 📘 ROI360 Advanced Subscription
->
-> Sharing ad revenue data with partners requires an ROI360 Advanced subscription.
+**At a glance:** Allow partners to receive ad revenue information from mediation networks so they can optimize their user acquisition (UA) campaigns. **Note**: This requires an ROI360 Advanced subscription.
 
 ## About sharing ad revenue data with partners
 
@@ -14,15 +10,19 @@ You can allow ad networks responsible for user acquisition to receive ad revenue
 
 Partners can receive ad revenue data via either:
 
-- [UA signals for ad networks](#ua-signals-for-ad-networks)
-- [Ad revenue postbacks for ad networks](#ad-revenue-event-postbacks-for-ad-networks)
+* [UA signals for ad networks](#ua-signals-for-ad-networks)
+* [Ad revenue postbacks for ad networks](#ad-revenue-event-postbacks-for-ad-networks)
 
-The following table compares the 2 ad-revenue-data-sharing solutions.
+The following table compares the 2 ad-revenue-data-sharing solutions. 
+
+
 
 | Ad revenue data-sharing solution | Data freshness | Use case | Integration type required | Subscription type required |
 | --- | --- | --- | --- | --- |
-| UA signals | Daily | Accurate and complete data, commonly used for D3 and D7 optimization. | - Impression-level or device-level<br>- If both are configured, device-level data is sent | ROI360 Advanced |
+| UA signals | Daily | Accurate and complete data, commonly used for D3 and D7 optimization. | * Impression-level or device-level<br />* If both are configured, device-level data is sent | ROI360 Advanced |
 | Postbacks | Realtime | Fresh data, commonly used for D0 and D1 optimization. | Impression-level | ROI360 Advanced |
+
+
 
 ## Procedures
 
@@ -32,7 +32,7 @@ You may want to work with ad networks that can receive UA signals. This means th
 
 **To send UA signals to an ad network**:
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Active integrations**.
+1. In AppsFlyer, from the side menu, select **Collaborate** > **Active integrations***.*
 2. Select the integrated partner.
 3. Go to the **Integration** tab.
 4. Verify that **Activate Partner** is on. If not, data isn't shared.
@@ -43,79 +43,85 @@ You may want to work with ad networks that can receive UA signals. This means th
 9. Click **Save Settings**.
 10. Contact the ad network:
     1. Notify it that you've granted the permissions.
-    2. Tell them to follow [their instructions](https://support.appsflyer.com/hc/articles/4402898251409#enable-the-ad-revenue-report) to receive the report.
+    2. Tell them to follow [their instructions](/docs/ad-revenue-signals-for-ua-ad-networks#enable-the-ad-revenue-report) to receive the report.
 
 **List of mediation partners that can send UA signals to ad networks:**
 
-- Applovin Max
-- Google AdMob
-- Appodeal
-- Chartboost
-- Fyber
-- Tapdaq
-- Topon
-- Unity
-- Unity LevelPlay mediation (formerly ironSource)
-- Admost
-- Tradplusad
-- Yandex
-- Custom mediation
+* Applovin Max
+* Google AdMob
+* Appodeal
+* Chartboost
+* Fyber
+* Tapdaq
+* Topon
+* Unity
+* Unity LevelPlay mediation (formerly ironSource)
+* Admost
+* Tradplusad
+* Yandex
+* Custom mediation
 
 ### Ad revenue event postbacks for ad networks
 
-You can configure ad revenue postbacks for ad networks. This means that ad networks responsible for user acquisition can receive real-time data from mediation networks regarding ad revenue and use it to optimize their customers' UA campaigns.
+You can configure ad revenue postbacks for ad networks. This means that ad networks responsible for user acquisition can receive real-time data from mediation networks regarding ad revenue and use it to optimize their customers' UA campaigns. 
 
-> 🚧 Important requirements
+> 📘 **Note**
 >
-> - Ad revenue event postbacks to ad networks only work with Impression-level via SDK and Impression-level (via SDK) with device-level (via server-to-server (S2S) API) ad revenue [integration types](https://support.appsflyer.com/hc/articles/217490046-Ad-revenue-attribution-guide#integration-types-for-ad-revenue-attribution). This means your developer must integrate the [AppsFlyer ad revenue SDK API](https://support.appsflyer.com/hc/articles/4416353506833).
-> - While you can send ad revenue postbacks to specific partners, we recommend validating how partners use the data before starting the integration.
+> #### Important!
+>
+> * Ad revenue event postbacks to ad networks only work with Impression-level via SDK and Impression-level (via SDK) with device-level (via server-to-server (S2S) API) ad revenue [integration types](/docs/roi360-guide-ad-revenue-attribution#integration-types-for-ad-revenue-attribution). This means your developer must integrate the [AppsFlyer ad revenue SDK API](/docs/integrate-the-roi360-ad-revenue-sdk-api).
+> * While you can send ad revenue postbacks to specific partners, we recommend validating how partners use the data before starting the integration.
+
 
 **To set up ad revenue event postbacks**:
 
-1. Search for and select your partner, either [from the marketplace](https://support.appsflyer.com/hc/articles/9960361873809#manage-existing-integrations) or from the **Collaborate** > **Active Integrations** page.
+1. Search for and select your partner, either [from the marketplace](/docs/partner-integrations#manage-existing-integrations) or from the **Collaborate** > **Active** **Integrations** page.
 2. In the **Integration** tab, scroll down and turn on **In-app event postbacks**.
-3. Select the AppsFlyer event `af_ad_revenue`. **Note**: Some ad network integrations have the option to **Select all events**. Don't use this option, as it excludes `af_ad_revenue` events.
+3. Select the AppsFlyer event af\_ad\_revenue. **Note**: Some ad network integrations have the option to **Select all events**. Don't use this option, as it excludes af\_ad\_revenue events.
 4. Map it to the ad network event as follows:
 
-| Ad network | Event to map `af_ad_revenue` to | Screenshot |
+   
+
+| Ad network | Event to map af\_ad\_revenue to | Screenshot |
 | --- | --- | --- |
-| Google Ads | ad\_impression | <Image src="https://support.appsflyer.com/hc/article_attachments/50421403523601" alt="Google Ads ad_impression event mapping" /> |
-| Unity Ads | ad\_revenue | |
-| Moloco | No mapping needed | |
-| Mintegral | No mapping needed | |
-| Smadex | No mapping needed | |
-| Mistplay | No mapping needed | |
-| Meta Ads | fb\_mobile\_purchase, for iOS apps<br />or<br />Adimpression, for Android apps<br />[Meta Ads in-app event mapping guide](/docs/meta-ads-in-app-event-mapping#mapping-ad-revenue-data-for-campaign-optimization). | <Image src="https://files.readme.io/9ec143cbcb622dec2aa0081812e41c0c7586b3583f4da7e57d71dffcb2d68a79-29375912802193.jpg" alt="revenue-mapping-meta2.jpg" /> |
-| TikTok For Business - Advanced SRN | ImpressionLevelAdRevenue | |
-| Aura from Unity | ad\_revenue | |
-| Digital Turbine | ad\_revenue | |
-| SingleTap by Digital Turbine | ad\_revenue | |
-| Persona.ly RTB | ad-revenue | |
-| Bigo | ad\_watch | |
-| Appier | No mapping needed | |
-| Bidease | No mapping needed | |
-| MAF | No mapping needed | |
+| Google Ads | ad\_impression | ![Google Ads ad_impression event mapping](https://support.appsflyer.com/hc/article_attachments/50421403523601) |
+| Unity Ads | ad\_revenue | [![](https://support.appsflyer.com/hc/article_attachments/24100803652369)](https://support.appsflyer.com/hc/article_attachments/24100803652369) |
+| Moloco | No mapping needed |  |
+| Mintegral | No mapping needed |  |
+| Smadex | No mapping needed |  |
+| Mistplay | No mapping needed |  |
+| Meta Ads | fb\_mobile\_purchase, for iOS apps  <br />or  <br />Adimpression, for Android apps  <br />[Meta Ads in-app event mapping guide](/docs/meta-ads-in-app-event-mapping#mapping-ad-revenue-data-for-campaign-optimization). | [![revenue-mapping-meta2.jpg](https://files.readme.io/9ec143cbcb622dec2aa0081812e41c0c7586b3583f4da7e57d71dffcb2d68a79-29375912802193.jpg)](https://support.appsflyer.com/hc/article_attachments/29375912802193) |
+| TikTok For Business - Advanced SRN | ImpressionLevelAdRevenue | [![](https://support.appsflyer.com/hc/article_attachments/24100803659665)](https://support.appsflyer.com/hc/article_attachments/24100803659665) |
+| Aura from Unity | ad\_revenue | [![](https://support.appsflyer.com/hc/article_attachments/24100803652369)](https://support.appsflyer.com/hc/article_attachments/24100803652369) |
+| Digital Turbine | ad\_revenue | [![](https://support.appsflyer.com/hc/article_attachments/24100803652369)](https://support.appsflyer.com/hc/article_attachments/24100803652369) |
+| SingleTap by Digital Turbine | ad\_revenue | [![](https://support.appsflyer.com/hc/article_attachments/24100803652369)](https://support.appsflyer.com/hc/article_attachments/24100803652369) |
+| Persona.ly RTB | ad-revenue | [![](https://support.appsflyer.com/hc/article_attachments/24658308681873)](https://support.appsflyer.com/hc/article_attachments/24658308681873) |
+| Bigo | ad\_watch | [![](https://support.appsflyer.com/hc/article_attachments/24658241206929)](https://support.appsflyer.com/hc/article_attachments/24658241206929) |
+| Appier | No mapping needed |  |
+| Bidease | No mapping needed |  |
+| MAF | No mapping needed |  |
+
 
 5. Select a **for user from** sending option for the event:
-   - **This partner only**: Send postbacks only when the event is attributed to this partner, meaning the user who performed it came from this partner.
-   - **All media sources including organic**: Send postbacks for events attributed to any partner and for organic events, meaning the user who performed it came from any media source. **Note**: When All media sources including organic is selected, postbacks for other partners don't contain attribution data.
+   * **This partner only**: Send postbacks only when the event is attributed to this partner, meaning the user who performed it came from this partner.
+   * **All media sources including organic**: Send postbacks for events attributed to any partner and for organic events, meaning the user who performed it came from any media source. **Note**: When All media sources including organic is selected, postbacks for other partners don't contain attribution data.
 6. Click **Save integration**.
 
 **List of mediation partners that can send impression-level ad revenue events to ad networks:**
 
-- Applovin Max
-- Google AdMob
-- Appodeal
-- Chartboost
-- Fyber
-- Tapdaq
-- Topon
-- Unity
-- Unity LevelPlay mediation (formerly ironSource)
-- Admost
-- Tradplusad
-- Yandex
-- Custom mediation
+* Applovin Max
+* Google AdMob
+* Appodeal
+* Chartboost
+* Fyber
+* Tapdaq
+* Topon
+* Unity
+* Unity LevelPlay mediation (formerly ironSource)
+* Admost
+* Tradplusad
+* Yandex
+* Custom mediation
 
 ## Additional information
 
@@ -123,109 +129,15 @@ You can configure ad revenue postbacks for ad networks. This means that ad netwo
 
 The following table lists the ad networks that can receive ad revenue UA signals and postbacks from mediation networks.
 
-| Ad network (partner) | Supports UA signals | Supports Postbacks |
-| --- | --- | --- |
-| RZR (formerly Aarki) | - | **✓** |
-| AdAction | **✓** | - |
-| Adaction3 | - | **✓** |
-| Adamobi | **✓** | - |
-| Adikteev (Trademob) | **✓** | - |
-| Adjoe | **✓** | **✓** |
-| Adonco | **✓** | - |
-| Adshow | **✓** | - |
-| Almedia GmbH | - | **✓** |
-| Appgrowth | - | **✓** |
-| Appier | **✓** | **✓** |
-| Apprainbow | **✓** | - |
-| Aura from Unity | **✓** | **✓** |
-| Avow OEM | | **✓** |
-| ayeT-Studios | - | **✓** |
-| Betop | **✓** | - |
-| Bidswave | **✓** | - |
-| Bidease | - | **✓** |
-| Bigo | - | **✓** |
-| Brandscale | **✓** | - |
-| Buzzvil | - | **✓** |
-| Chameleostudios | **✓** | - |
-| Chartboost | **✓** | - |
-| Churney | - | **✓** |
-| Datawave | **✓** | - |
-| Digital Turbine | - | **✓** |
-| DLab | **✓** | - |
-| Ecomonline | **✓** | - |
-| Etusdigital | **✓** | - |
-| Exmox | - | **✓** |
-| Fluent | **✓** | - |
-| Foregon | **✓** | - |
-| GNA Company | **✓** | - |
-| Google Ads | | **✓** |
-| Greedygame | **✓** | **✓** |
-| Happimobi | **✓** | - |
-| Hybrid | **✓** | - |
-| Inflecto | **✓** | - |
-| Irismedia | **✓** | - |
-| Kashkick | - | **✓** |
-| Kwai ads | - | **✓** |
-| Lacuna | - | **✓** |
-| Lambadapp | **✓** | - |
-| Leadidadmonster | **✓** | - |
-| Lifestreet | **✓** | - |
-| Liftoff | **✓** | - |
-| MAF | **✓** | **✓** |
-| Melodong | **✓** | - |
-| Meta Ads | - | **✓** |
-| Miniclip | - | **✓** |
-| Mintegral | - | **✓** |
-| Mistplay | - | **✓** |
-| Mobrand | **✓** | - |
-| Moloco | **✓** | **✓** |
-| Motive | **✓** | - |
-| Mpnd | **✓** | - |
-| Msla | **✓** | - |
-| Muvmobile | **✓** | - |
-| NewsBreak | - | **✓** |
-| Nexamob | **✓** | - |
-| Nftdroper | **✓** | - |
-| Nsofmedia | **✓** | - |
-| Performadlive | **✓** | - |
-| Persona.ly RTB | **✓** | **✓** |
-| Pitatroas | **✓** | - |
-| Playgap | - | **✓** |
-| Rebornads | **✓** | - |
-| Remerge | **✓** | - |
-| RTBhouse | **✓** | - |
-| Runfuns | **✓** | - |
-| SayGames LTD | - | **✓** |
-| Scmobi | **✓** | - |
-| Shalltry | **✓** | - |
-| Shareit | **✓** | - |
-| SingleTap by Digital Turbine | - | **✓** |
-| Smadex | **✓** | **✓** |
-| Surgex | - | **✓** |
-| Tapjoy | **✓** | **✓** |
-| Targetmedia | **✓** | - |
-| TaurusX | - | **✓** |
-| Thepurpleline | **✓** | - |
-| TikTok for Business | **✓** | **✓** |
-| Trade Desk | | **✓** |
-| Transsion | - | **✓** |
-| Truemoney | **✓** | - |
-| Tyrads | - | **✓** |
-| Unity Ads | **✓** | **✓** |
-| Unity CTV | **✓** | **✓** |
-| Vivo Global | | **✓** |
-| Voodoo | - | **✓** |
-| Vungle | **✓** | - |
-| VYBS | - | **✓** |
-| Yandex | **✓** | - |
-| Yeahmobi | **✓** | - |
-| YouAppi | - | **✓** |
-| Xiaomi Global | - | **✓** |
-| YSO Network | - | **✓** |
-| Z2A Digital | **✓** | - |
-| Zoyo | **✓** | - |
+
+
+<table><colgroup><col/><col/><col/></colgroup><thead><tr><th rowspan="2">Ad network (partner)</th><th colspan="2">Supports</th></tr><tr><th>UA signals</th><th>Postbacks</th></tr></thead><tbody><tr><td>RZR (formerly Aarki)</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>AdAction</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Adaction3</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Adamobi</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Adikteev (Trademob)</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Adjoe</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Adonco</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Adshow</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Almedia GmbH</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Appgrowth</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Appier</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Apprainbow</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Aura from Unity</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Avow OEM</td><td> </td><td><span><strong>✓</strong></span></td></tr><tr><td>ayeT-Studios</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Betop</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Bidswave</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Bidease</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Bigo</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Brandscale</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Buzzvil</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Chameleostudios</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Chartboost</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Churney</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Datawave</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Digital Turbine</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>DLab</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Ecomonline</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Etusdigital</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Exmox</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Fluent</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Foregon</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>GNA Company</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Google Ads</td><td> </td><td><span><strong>✓</strong></span></td></tr><tr><td>Greedygame</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Happimobi</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Hybrid</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Inflecto</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Irismedia</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Kashkick</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Kwai ads</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Lacuna</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Lambadapp</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Leadidadmonster</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Lifestreet</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Liftoff</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>MAF</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Melodong</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Meta Ads</td><td><span>-</span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Miniclip</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Mintegral</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Mistplay</td><td><span>-</span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Mobrand</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Moloco</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Motive</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Mpnd</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Msla</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Muvmobile</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>NewsBreak</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Nexamob</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Nftdroper</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Nsofmedia</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Performadlive</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Persona.ly RTB</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Pitatroas</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Playgap</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Rebornads</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Remerge</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>RTBhouse</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Runfuns</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>SayGames LTD</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Scmobi</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Shalltry</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Shareit</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>SingleTap by Digital Turbine</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Smadex</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Surgex</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Tapjoy</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Targetmedia</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>TaurusX</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Thepurpleline</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>TikTok for Business</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Trade Desk</td><td> </td><td><span><strong>✓</strong></span></td></tr><tr><td>Transsion</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Truemoney</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Tyrads</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Unity Ads</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Unity CTV</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Vivo Global </td><td> </td><td><span><strong>✓</strong></span></td></tr><tr><td>Voodoo</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Vungle</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>VYBS</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Yandex</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Yeahmobi</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>YouAppi</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Xiaomi Global</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>YSO Network</td><td>-</td><td><span><strong>✓</strong></span></td></tr><tr><td>Z2A Digital</td><td><span><strong>✓</strong></span></td><td>-</td></tr><tr><td>Zoyo</td><td><span><strong>✓</strong></span></td><td>-</td></tr></tbody></table>
+
+
 
 ### Traits and limitations
+
+
 
 | Trait | Description |
 | --- | --- |

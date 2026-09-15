@@ -15,7 +15,7 @@ Salesforce Marketing Cloud MobilePush allows you to create and send targeted pus
 
 > ❗️ Important!
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Salesforce Marketing Cloud MobilePush
 
@@ -47,4 +47,4 @@ Most of the setup is done in Salesforce (steps 1-4). Step 5 is done in AppsFlyer
 
 > 📘 Note
 >
-> Make sure the `AF_xxxxxxxxx` custom key you entered in [step 4](https://support.appsflyer.com/hc/articles/10590769196817#step-4-set-up-app-push-notifications) has the same value as the one entered in the `addPushNotificationDeepLinkPath` function.
+> Make sure the `AF_xxxxxxxxx` custom key you entered in [step 4](/docs/salesforce-marketing-cloud-mobilepush-integration-setup#step-4-set-up-app-push-notifications) has the same value as the one entered in the `addPushNotificationDeepLinkPath` function.

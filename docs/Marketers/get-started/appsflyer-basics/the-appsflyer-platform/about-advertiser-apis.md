@@ -8,27 +8,29 @@ excerpt: "An overview of the APIs available to advertisers for accessing, report
 
 Specific information about reports, reporting tools, and reporting APIs:
 
-* [Raw-data reporting tools/APIs](https://support.appsflyer.com/hc/articles/209680773)
-* [Aggregate and analytics reporting tools/APIs](https://support.appsflyer.com/hc/articles/360005437257)
+* [Raw-data reporting tools/APIs](/docs/raw-data-reporting-overview)
+* [Aggregate and analytics reporting tools/APIs](/docs/aggregated-and-analytics-reporting-overview)
 
 #### Interfaces for advertisers
 
-| Arena | API name | Premium feature | Description | Authentication<br>token/key | Interface type |
+
+
+| Arena | API name | ![af_premium.png](https://support.appsflyer.com/hc/article_attachments/4403570953105)<br /><br />Premium feature | Description | Authentication  <br />token/key | Interface type |
 | --- | --- | --- | --- | --- | --- |
-| Mobile attribution | [Server-to-server events](https://support.appsflyer.com/hc/articles/207034486) | No | Record in-app events that occur outside a mobile app | [SDK dev key](https://support.appsflyer.com/hc/articles/211719806-App-settings-#sdk-authentication-dev-key) | REST API |
-| People-based Attribution (PBA) | [Server-to-server web](https://support.appsflyer.com/hc/articles/360006997298) | No | Report PBA events that occur in the Backend | [PBA key](/docs/pba-brand-bundles-and-settings#managing-brand-bundles) | REST API |
-| Engagement | [OneLink](https://support.appsflyer.com/hc/articles/360001250345-OneLink-API) | Yes | Manage OneLinks: create, update, retrieve, delete | [SDK dev key](https://support.appsflyer.com/hc/articles/211719806-App-settings-#sdk-authentication-dev-key) | REST API |
-| Remarketing | [Audiences](/docs/audiences-guide#import-an-audience) | Yes | Upload user lists to Audiences | [Import key](https://support.appsflyer.com/hc/articles/360013291857-Audiences-import-an-audience) | REST API |
-| Privacy | [openDSR requests](https://support.appsflyer.com/hc/articles/11332840660625-OpenDSR-API) | No | Data removal requests and status | [V2.0](https://support.appsflyer.com/hc/articles/360004562377-) | REST API |
-| Reporting | [Master performance KPIs](https://support.appsflyer.com/hc/articles/213223166) | Yes | Multi-app campaign performance metrics in CSV files | [V2.0](https://support.appsflyer.com/hc/articles/360004562377-) | REST API |
-| Reporting | [Pull aggregate reports](https://support.appsflyer.com/hc/articles/207034346) | No | Aggregate reports in CSV files | [V2.0](https://support.appsflyer.com/hc/articles/360004562377-) | REST API |
-| Reporting | [Pull raw data](https://support.appsflyer.com/hc/articles/360007530258) | Yes | Raw data reports in CSV files | [V2.0](https://support.appsflyer.com/hc/articles/360004562377-) | REST API |
-| Reporting | [Cohort analytics](https://support.appsflyer.com/hc/articles/360004799057-Cohort-analtyics-API) | Yes | Cohort metrics in JSON or CSV files | [V2.0](https://support.appsflyer.com/hc/articles/360004562377-Managing-API-tokens) | REST API |
-| Reporting | [Data Locker](https://support.appsflyer.com/hc/articles/360000877538) | Yes | Raw and aggregate data reports | N/A | Cloud storage |
-| Mobile attribution | [Push](https://support.appsflyer.com/hc/articles/207034356) | Yes | Real-time installs and in-app events sent to advertisers' servers | N/A | REST API |
-| Campaign cost | [Cost Import](https://support.appsflyer.com/hc/articles/360002868097) | No | Report campaign cost | N/A | File upload |
-| Account | [Get app list](https://support.appsflyer.com/hc/articles/360011999877) | No | Get a list of apps in your account | [V2.0](https://support.appsflyer.com/hc/articles/360004562377-Managing-API-tokens) | REST API |
-| Reporting | [ETL Cost](https://support.appsflyer.com/hc/articles/360008849238-Cost-ETL-granular-campaign-cost-in-a-bucket) | Yes | Cost ETL granular campaign cost | N/A | Cloud storage |
-| Reporting | [SKAN reporting](https://support.appsflyer.com/hc/articles/360011420698#reporting-options) | No | SKAN aggregate reporting | V2.0 | REST API |
+| Mobile attribution | [Server-to-server events](/docs/server-to-server-events-api-for-mobile-s2s-mobile) | No | Record in-app events that occur outside a mobile app | [SDK dev key](/docs/app-settings#sdk-authentication-dev-key) | REST API |
+| People-based Attribution (PBA) | [Server-to-server web](/docs/web-server-to-server-events-api-for-pba-web-s2s) | No | Report PBA events that occur in the Backend | [PBA key](/docs/pba-brand-bundles-and-settings#managing-brand-bundles) | REST API |
+| Engagement | [OneLink](/docs/use-onelink-api-to-create-links-in-large-scale-campaigns) | Yes | Manage OneLinks: create, update, retrieve, delete | [SDK dev key](/docs/app-settings#sdk-authentication-dev-key) | REST API |
+| Remarketing | [Audiences](/docs/audiences-guide#import-an-audience) | Yes | Upload user lists to Audiences | [Import key](/docs/audiences-import-audience-segments-from-internal-systems) | REST API |
+| Privacy | [openDSR requests](/docs/send-opendsr-api-requests) | No | Data removal requests and status | [V2.0](/docs/managing-appsflyer-tokens) | REST API |
+| Reporting | [Master performance KPIs](/docs/master-api-user-acquisition-metrics-via-api) | Yes | Multi-app campaign performance metrics in CSV files | [V2.0](/docs/managing-appsflyer-tokens) | REST API |
+| Reporting | [Pull aggregate reports](/docs/pull-api-aggregate-data) | No | Aggregate reports in CSV files | [V2.0](/docs/managing-appsflyer-tokens) | REST API |
+| Reporting | [Pull raw data](/docs/pull-api-raw-data) | Yes | Raw data reports in CSV files | [V2.0](/docs/managing-appsflyer-tokens) | REST API |
+| Reporting | [Cohort analytics](/docs/cohort-api) | Yes | Cohort metrics in JSON or CSV files | [V2.0](/docs/managing-appsflyer-tokens) | REST API |
+| Reporting | [Data Locker](/docs/data-locker-for-marketers) | Yes | Raw and aggregate data reports | N/A | Cloud storage |
+| Mobile attribution | [Push](/docs/push-api-streaming-raw-data) | Yes | Real-time installs and in-app events sent to advertisers' servers | N/A | REST API |
+| Campaign cost | [Cost Import](/docs/cost-import-for-ad-networks) | No | Report campaign cost | N/A | File upload |
+| Account | [Get app list](/docs/app-list-api-for-app-owners) | No | Get a list of apps in your account | [V2.0](/docs/managing-appsflyer-tokens) | REST API |
+| Reporting | [ETL Cost](/docs/set-up-and-use-roi360-cost-etl-reports) | Yes | Cost ETL granular campaign cost | N/A | Cloud storage |
+| Reporting | [SKAN reporting](/docs/skadnetwork-skan-solution-guide#reporting-options) | No | SKAN aggregate reporting | V2.0 | REST API |
 | Integrated partners | [Copy partner integration settings](https://dev.appsflyer.com/hc/reference/post_v1-copy) | No | Copy integration configuration parameters from one app to the other | V2.0 | REST API |
 | Integrated partners | [Set install referrer decryption key](https://dev.appsflyer.com/hc/reference/post_v1-integration-params) | No | Set install referrer decryption key received from Meta ads | V2.0 | REST API |

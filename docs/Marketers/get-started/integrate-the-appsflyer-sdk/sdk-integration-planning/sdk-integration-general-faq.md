@@ -16,7 +16,7 @@ To learn how to install and update the AppsFlyer SDK, please see [the Dev Hub](h
 
 In less than an hour, an experienced developer can ready apps for attribution with AppsFlyer. Then, they only need a few minutes per app.
 
-Check out the AppsFlyer SDK integration guides for [Android](https://support.appsflyer.com/hc/articles/207032126), [iOS](https://support.appsflyer.com/hc/articles/207032126), [Unity,](https://support.appsflyer.com/hc/articles/360007314277) or these [other platforms](https://support.appsflyer.com/hc/sections/6551244207121-Other-platforms).
+Check out the AppsFlyer SDK integration guides for [Android](/docs/sdk-integration-overview), [iOS](/docs/sdk-integration-overview), Unity, or these [other platforms](/docs/other-platforms).
 
 ## Does the AppsFlyer SDK affect app download time?
 
@@ -33,4 +33,4 @@ In other words, **the AppsFlyer SDK has no effect on app performance or user exp
 
 ## Can I record in-app events that occur outside my app?
 
-You can use the [S2S API to report events](https://support.appsflyer.com/hc/articles/207034486-Server-to-server-events-API-for-mobile-S2S-mobile-) that take place outside the app; for example, a user renews their subscription using your web interface. S2S events, once recorded, are available across the platform, including dashboards, raw data, and analytics.
+You can use the [S2S API to report events](/docs/server-to-server-events-api-for-mobile-s2s-mobile) that take place outside the app; for example, a user renews their subscription using your web interface. S2S events, once recorded, are available across the platform, including dashboards, raw data, and analytics.

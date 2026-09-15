@@ -8,7 +8,7 @@ At a glance: Use this API to get raw data reports in CSV files.
 
 ## Pull API raw data
 
-- Pull API lets you get raw data reports for in CSV files. [Learn more about raw data reports](https://support.appsflyer.com/hc/articles/209680773)
+- Pull API lets you get raw data reports for in CSV files. [Learn more about raw data reports](/docs/raw-data-reporting-overview)
 - Filter by options available: Media source, date range, in-app event name, and geo.
 - Additional capabilities in Pull API are:
   - Select currency
@@ -67,8 +67,8 @@ At a glance: Use this API to get raw data reports in CSV files.
 | event\_name | Filter in-app events by specified events. Select multiple events by using a comma-separated list.<br/>**Example**: `event_name=af_purchase,ftd` |
 | reattr | Set retargeting attribution data.<br/>- [Default] If false, user acquisition data (UA) campaigns returns.<br/>- If true, retargeting attribution data returns.<br/>- **Example**: `reattr=true` |
 | additional\_fields | To get additional fields in addition to the default fields.<br/>**Example**: `additional_fields=device_download_time,deeplink_url` |
-| currency | Currency of the revenue and cost<br/>- [Default] If the parameter is not sent, data returns as USD. Meaning, do nothing and results return in USD.<br/>- If you send, `currency=preferred` the [app-specific](https://support.appsflyer.com/hc/articles/211719806-App-settings-#localization-time-zone) currency is used. Meaning the currency set in the app settings.<br/>**Example**: If the app-specific currency is EUR, by sending `currency=preferred` the values return in EUR. |
-| timezone | [Default] Data returns using UTC.<br/>- To get data in the [app-specific](https://support.appsflyer.com/hc/articles/211719806-App-settings-#localization-time-zone) timezone, add `timezone` as shown in this section to the call:<br/>- `timezone=[Numerical value]`<br/>- Example: For time zone UTC+10:00 use `timezone=+10:00` **Note**: The `+`, `-`, and `:` need to be encoded. Example: +10:00 encodes to `%2B10%3A00` |
+| currency | Currency of the revenue and cost<br/>- [Default] If the parameter is not sent, data returns as USD. Meaning, do nothing and results return in USD.<br/>- If you send, `currency=preferred` the [app-specific](/docs/app-settings#localization-time-zone) currency is used. Meaning the currency set in the app settings.<br/>**Example**: If the app-specific currency is EUR, by sending `currency=preferred` the values return in EUR. |
+| timezone | [Default] Data returns using UTC.<br/>- To get data in the [app-specific](/docs/app-settings#localization-time-zone) timezone, add `timezone` as shown in this section to the call:<br/>- `timezone=[Numerical value]`<br/>- Example: For time zone UTC+10:00 use `timezone=+10:00` **Note**: The `+`, `-`, and `:` need to be encoded. Example: +10:00 encodes to `%2B10%3A00` |
 | geo | Filter the data by country code.<br/>Limitation: You can set only one country code filter per API call.<br/>Example: `geo=ZA` |
 | from\_install time | - The date range consists of `from` and `to` parameters. The dates relate to the activity date.<br/>- Format: `yyyy-mm-dd`<br/>- Example: 2010-01-01 |
 | to\_install\_time | End date. As for `from_install time` |
@@ -76,7 +76,7 @@ At a glance: Use this API to get raw data reports in CSV files.
 
 ### Protect360 fields
 
-[See the Protect360 raw data guide](https://support.appsflyer.com/hc/articles/360015179337#postattribution-reports)
+[See the Protect360 raw data guide](/docs/protect360-raw-data-reports#postattribution-reports)
 
 ### Time frame fields
 
@@ -104,7 +104,7 @@ If the API results exceed the maximum, split the report using hours and minutes.
 Additional report fields are not added to the default list of fields so that new fields don\'t impact your existing import and ingestion processes. Use the `additional_fields` parameter to get non-default fields.
 
 - List a field only once.
-- See the [list of available fields](https://support.appsflyer.com/hc/articles/208387843).
+- See the [list of available fields](/docs/raw-data-field-dictionary).
 - Example: `additional_fields=device_download_time,deeplink_url`
 
 ### Default fields
@@ -199,17 +199,17 @@ Additional report fields are not added to the default list of fields so that new
 
 | Trait | Comments |
 | --- | --- |
-| API token type required | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/ff3f7349af66b7b80d311953567eef821eec56d46146fa9ad7c43d73dd2f8af5-33379479626641.png)[V2.0 token](https://support.appsflyer.com/hc/articles/360004562377-Managing-API-tokens) |
+| API token type required | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/ff3f7349af66b7b80d311953567eef821eec56d46146fa9ad7c43d73dd2f8af5-33379479626641.png)[V2.0 token](/docs/managing-appsflyer-tokens) |
 | Ad network access | No |
 | Agency access | Yes |
 | Agency transparency | Yes. However, note that if you use both the agency filter and media source filters, the media source filters don\'t apply for non-transparent agencies. This means that for non-transparent agencies, all data is included; not just data from the filtered media sources. |
 | App-specific currency | Yes |
 | App-specific timezone | Yes |
 | Data freshness | - Equivalent to the availability of the data in the overview dashboard.<br/>- Reports updated with a lag of a few hours:<br/><br/><br/>- Organic in-app events<br/>- Reports updated Daily:<br/>- Uninstalls<br/>- Post-attribution in-app events<br/>- Ad revenue |
-| Historical data | Yes. According to [retention](https://support.appsflyer.com/hc/articles/360006091197) and [rate limitation](https://support.appsflyer.com/hc/articles/207034366) policies. |
+| Historical data | Yes. According to [retention](/docs/user-level-data-retention) and [rate limitation](/docs/report-generation-quotas-rate-limitations) policies. |
 | Non-organic data | Yes |
 | Organic data | Yes |
-| Rate limitation | API limitations for [raw data](https://support.appsflyer.com/hc/articles/207034366). |
+| Rate limitation | API limitations for [raw data](/docs/report-generation-quotas-rate-limitations). |
 | Size limitations | - API calls return a max. of 200K/1M rows.<br/>- If a report has exactly 200K/1M rows, then assume rows are missing.<br/>- Use the maximum\_rows parameter to select the maximum number of rows.<br/>- Make multiple API calls, using from/to parameters that include the time of day. |
 | Install\_date from and install\_date\_to | Install date range must be earlier than the activity date range. |
 
@@ -220,7 +220,7 @@ Additional report fields are not added to the default list of fields so that new
 | The report doesn\'t contain the data expected according to the selected time range or there is a discrepancy between the raw data report and aggregated data report. | Verify that you have set the `timezone` parameter. If you don\'t, data is sent using UTC and not your app time zone. |
 
 <Cards>
-  <Card title="Selecting the right data delivery tool/reporting API" href="https://support.appsflyer.com/hc/articles/209680773-raw%20data-reporting-overview#reporting-tools%E2%80%94characteristics-and-features">
+  <Card title="Selecting the right data delivery tool/reporting API" href="/docs/raw-data-reporting-overview#reporting-tools%E2%80%94characteristics-and-features">
     Learn how to choose the best reporting tool or API for your data delivery needs.
   </Card>
 </Cards>

@@ -19,7 +19,7 @@ In this Q&A, we discuss common queries about smart banners and smart script inte
 | HTTP protocol | HTTP/HTTPS |
 | Headers | Host, Content-type, Origin, Content-length, Encoding |
 | OneLink parameters |  |
-| Banner parameters | Banner configuration settings:<br>\- [Dismissal behavior](https://support.appsflyer.com/hc/articles/360000764837#dismissal-behaviour)<br>\- [Incoming parameters](https://support.appsflyer.com/hc/articles/360000764837#param-table)<br>\- UTM parameters<br>\- AppsFlyer parameters<br>\- default parameters<br>\- other parameters |
+| Banner parameters | Banner configuration settings:<br />\- [Dismissal behavior](/docs/smart-banners-mobile-web-to-app-for-marketers#dismissal-behaviour)<br />\- [Incoming parameters](/docs/smart-banners-mobile-web-to-app-for-marketers#param-table)<br />\- UTM parameters<br />\- AppsFlyer parameters<br />\- default parameters<br />\- other parameters |
 
 ### What API calls are needed to show a smart banner?
 
@@ -39,13 +39,13 @@ No. It's not possible to access and modify the code dictating the web key used i
 
 ### Can clients host a copy of the Smart Banner script on their server?
 
-Clients cannot host Smart Banners script on their servers. However they can use [Smart Script](https://support.appsflyer.com/hc/articles/4413588932241-OneLink-Smart-Script-V2-setup?query=smart%20script) for OneLink URL generation and implement their own banner creatives.
+Clients cannot host Smart Banners script on their servers. However they can use [Smart Script](/docs/set-up-smart-script-to-convert-web-visitors?query=smart%20script) for OneLink URL generation and implement their own banner creatives.
 
 Using Smart Script along with your own banners lets you design custom creatives and further map and customize your generated links, eliminating the need to implement the banner SDK on your website and perform external API calls.
 
 ### Can clients host their own code and still use banners?
 
-Clients can develop their own banners, including the design, development, and integration on the site, and utilize [Smart Script](https://support.appsflyer.com/hc/articles/4413588932241-OneLink-Smart-Script-V2-setup?query=smart%20script) to generate the links for their banner's call-to-action (CTA).
+Clients can develop their own banners, including the design, development, and integration on the site, and utilize [Smart Script](/docs/set-up-smart-script-to-convert-web-visitors?query=smart%20script) to generate the links for their banner's call-to-action (CTA).
 
 ### Can Smart Banners be supported without embedding their code snippet on the page?
 

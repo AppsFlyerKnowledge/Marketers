@@ -10,7 +10,7 @@ Some privacy regulations, such as GDPR or CCPA, give users a *right to erasure*.
 
 **Scenario:** A user requests that you delete data related to them. GDPR requires that this be done within 30 days.
 
-**Action required:** Use [OpenDSR API](https://support.appsflyer.com/hc/articles/11332840660625) to send an erasure request.
+**Action required:** Use [OpenDSR API](/docs/send-opendsr-api-requests) to send an erasure request.
 
 ## Stop attributing installs to a media source
 
@@ -22,10 +22,10 @@ AppsFlyer collects install and event information for your configured media sourc
 
 - **SKAN (for iOS apps):** 
   1. [Disable SKAN measurement](/docs/skan-conversion-studio#disable-skan-measurement).
-  2. For [Google Ads](https://support.appsflyer.com/hc/articles/4403215779857-Get-SKAN-postback-data-from-Google-Ads-#turning-off-the-skan-integration) and [Meta ads](/docs/skadnetwork-skan-interoperation-with-meta-ads#turning-off-the-skan-integration), you must also remove the SKAN connections to stop SKAN data recording.
-- **SRN:** [Deactivate the partner integration](https://support.appsflyer.com/hc/articles/360000844778#deactivated-partners).
+  2. For [Google Ads](/docs/get-skan-postback-data-from-google-ads#turning-off-the-skan-integration) and [Meta ads](/docs/skadnetwork-skan-interoperation-with-meta-ads#turning-off-the-skan-integration), you must also remove the SKAN connections to stop SKAN data recording.
+- **SRN:** [Deactivate the partner integration](/docs/partner-activation-deactivation#deactivated-partners).
 - **Non-SRNs:**
-  1. [Deactivate the partner integration](https://support.appsflyer.com/hc/articles/360000844778#deactivated-partners).
+  1. [Deactivate the partner integration](/docs/partner-activation-deactivation#deactivated-partners).
   2. Incoming clicks and installs from the AppsFlyer attribution link in your ads continue to be recorded and attributed. Make sure that ads displayed to leads no longer contain an AppsFlyer attribution link.
 - **Owned media:**
   - Discontinue using relevant OneLink custom links.
@@ -56,7 +56,7 @@ The app is deleted and no longer displays in the app list.
 
 ## Transfer apps between accounts
 
-See this guide for details: [Transferring apps between accounts](https://support.appsflyer.com/hc/articles/360001336005).
+See this guide for details: [Transferring apps between accounts](/docs/transferring-apps-between-accounts).
 
 ## Delete your account or downgrade your subscription plan
 

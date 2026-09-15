@@ -16,7 +16,7 @@ The re-attribution window is a time window that begins the first time a user ins
 
 The re-attribution window:
 
-- is set in the [App Settings](https://support.appsflyer.com/hc/articles/211719806) page
+- is set in the [App Settings](/docs/app-settings) page
 - the default value is 90 days (3 months)
 - has a range of 1-24 months
 
@@ -53,7 +53,7 @@ The following happens:
 
 - The install is NOT attributed - it doesn't appear on the dashboard, nor on the data
 - NO install postback is sent to any media source
-- Depending on the [**Post Reinstall Events Attribution**](https://support.appsflyer.com/hc/articles/10164066030737#overview) state, in-app events of these reinstalling users are either attributed to organic or to the original install.
+- Depending on the [**Post Reinstall Events Attribution**](/docs/measure-reinstalls#overview) state, in-app events of these reinstalling users are either attributed to organic or to the original install.
 
 ### Re-attribution
 
@@ -67,7 +67,7 @@ The following happens:
 - All following in-app events are attributed to the retargeting media source
 - An install postback is sent to the retargeting media source
 
-For more Retargeting Attribution information, click [here](https://support.appsflyer.com/hc/articles/207033786-AppsFlyer-s-Re-Targeting-Attribution).
+For more Retargeting Attribution information, click [here](/docs/retargeting-attribution-guide).
 
 ### New install
 

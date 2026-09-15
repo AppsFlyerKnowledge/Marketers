@@ -14,7 +14,7 @@ However, deep linking and click recording are still possible with ESPs that supp
 
 ## Prerequisites
 
-- Configure your app to support [deep linking with OneLink](https://support.appsflyer.com/hc/articles/208874366).
+- Configure your app to support [deep linking with OneLink](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink).
 - Verify your SDK version (both Android and iOS)
 
 <Tabs>
@@ -104,7 +104,7 @@ The SDK needs to resolve the OneLink behind the click domain to get the campaign
 To resolve click domains:
 
 1. Make sure that your SDK version is at least 4.9.0.
-2. List the click domains in the SDK API `setResolveDeepLinkURLs`. This API needs to be called before SDK initialization. For more information please refer to SDK documentation [here](https://support.appsflyer.com/hc/articles/4408735106193#resolve-wrapped-deep-link-urls).
+2. List the click domains in the SDK API `setResolveDeepLinkURLs`. This API needs to be called before SDK initialization. For more information please refer to SDK documentation [here](/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls).
 
 ```java
 AppsFlyerLib.getInstance().setResolveDeepLinkURLs("click.example.com");
@@ -140,7 +140,7 @@ The SDK needs to resolve the OneLink behind the click domain to get the campaign
 To resolve click domains:
 
 1. Make sure that your SDK version is at least 4.9.0.
-2. List the click domains in the SDK property `resolveDeepLinkURLs`. This property needs to be set before SDK initialization. For more information please refer to SDK documentation [here](https://support.appsflyer.com/hc/articles/4408735106193#resolve-wrapped-deep-link-urls).
+2. List the click domains in the SDK property `resolveDeepLinkURLs`. This property needs to be set before SDK initialization. For more information please refer to SDK documentation [here](/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls).
 
 ```objectivec Objective-C
 [AppsFlyerTracker sharedTracker].resolveDeepLinkURLs = @[@"example.com",@"click.example.com"];
@@ -193,7 +193,7 @@ func allHTTPHeaderFields(forResolveDeepLinkURL URL: URL!) -> [String : String]! 
 
 ## Sending your first email
 
-1. [Create a OneLink URL](https://support.appsflyer.com/hc/articles/207033836) in the Link Management page (or manually).
+1. Create a OneLink URL in the Link Management page (or manually).
 2. When creating the OneLink URL make sure to URL encode all parameter values.
 3. The following parameters are highly recommended to use:
    - pid (media source) - Use a media source that signifies this usage such as Email.

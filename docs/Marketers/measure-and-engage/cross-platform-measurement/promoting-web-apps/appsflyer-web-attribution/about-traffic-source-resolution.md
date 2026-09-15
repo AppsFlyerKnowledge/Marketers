@@ -10,11 +10,11 @@ For web attribution, the landing page load ( **web visit**) is the user’s firs
 
 This process, known as **traffic source resolution**, identifies and resolves media source and campaign information from URL parameters. AppsFlyer captures and prioritizes these parameters to determine the initial traffic source context for a visit.
 
-Traffic source resolution is a **pre-attribution process**. The resolved parameters may be overridden later during [the attribution process](https://support.appsflyer.com/hc/articles/43521734577809--WIP-AppsFlyer-Web-Attribution-Overview#the-appsflyer-web-attribution-flow).
+Traffic source resolution is a **pre-attribution process**. The resolved parameters may be overridden later during [the attribution process](/docs/web-performance-measurement-overview#the-appsflyer-web-attribution-flow).
 
 The role of traffic source resolution does not end with the visit. Its outcome provides the traffic-source context that the attribution process later uses to attribute subsequent web events, including the user-acquisition event.
 
-Understanding the mechanics of traffic source resolution is essential for constructing accurate URLs. To learn how to create a well-structured URL, see [Choose attribution parameters for landing page URLs](https://support.appsflyer.com/hc/articles/43525434385809--WIP-Choose-attribution-parameters-for-landing-page-URLs).
+Understanding the mechanics of traffic source resolution is essential for constructing accurate URLs. To learn how to create a well-structured URL, see [Choose attribution parameters for landing page URLs](/docs/choose-attribution-parameters-for-landing-page-urls).
 
 ## The traffic source resolution flow
 
@@ -71,7 +71,7 @@ AppsFlyer follows a priority order to resolve the media source. The process stop
 
 First, AppsFlyer checks if the visit comes from a domain on your **Exclude list**. If the domain is excluded (for example, your internal domain or a payment processor like PayPal), the visit is automatically ignored or classified as **Organic.**
 
-For more information about how to specify the excluded domains when adding a web app to AppsFlyer, see [Excluded domains](https://support.appsflyer.com/hc/articles/43541863890961-Configure-AppsFlyer-Web-Attribution-settings#excluded-domains).
+For more information about how to specify the excluded domains when adding a web app to AppsFlyer, see [Excluded domains](/docs/configure-web-performance-measurement-settings#excluded-domains).
 
 2\. AppsFlyer PID (partner ID)
 
@@ -225,8 +225,8 @@ AppsFlyer pulls campaign information from the following URL parameters, in order
 
 | URL parameter(s) | Maps to | Priority order |
 | --- | --- | --- |
-| `c`, `af_campaign`, `utm_campaign` | Campaign name | 1. `c`<br>2. `af_campaign`<br>3. `utm_campaign` |
-| `af_c_id`, `af_campaign_id` | Campaign ID | 1. `af_c_id`<br>2. `af_campaign_id` |
+| `c`, `af_campaign`, `utm_campaign` | Campaign name | 1. `c`<br />2. `af_campaign`<br />3. `utm_campaign` |
+| `af_c_id`, `af_campaign_id` | Campaign ID | 1. `af_c_id`<br />2. `af_campaign_id` |
 | `af_adset` | Ad set name | — |
 | `af_adset_id` | Ad set ID | — |
 | `af_ad` | Ad name | — |

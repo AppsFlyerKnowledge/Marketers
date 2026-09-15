@@ -2,7 +2,7 @@
 title: "Adding an app to AppsFlyer"
 excerpt: "Learn how to add your app to AppsFlyer to get attribution data on installs and in-app events, and analyze the data using the platform's tools."
 ---
-Learn how to add your app to AppsFlyer so you can get attribution data on installs and in-app events, and analyze the data using the different tools on AppsFlyer.
+**At a glance:** Learn how to add your app to AppsFlyer so you can get attribution data on installs and in-app events, and analyze the data using the different tools on AppsFlyer.
 
 ## Overview
 
@@ -16,9 +16,12 @@ You can enter the wizard for adding apps from the platform or you can add your a
 
 * In the **Add your app** step, click **Add app** and follow the instructions for adding an app.
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > If the onboarding page isn't already open, from the top menu bar > email address dropdown, click **App onboarding**.
+
 
 ![onboarding page.png](https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png)
 
@@ -26,24 +29,27 @@ You can enter the wizard for adding apps from the platform or you can add your a
 
 * From the top menu bar > **My Apps,** click **+ Add app**
 * From the AppsFlyer Homepage, click **+ Add app**
-* From the top bar, open the account menu (email address dropdown) > **App onboarding**, click **+ Onboard another app**
+* From the top bar, open the account menu (email address dropdown) >**App onboarding**, click **+ Onboard another app**
 
 ![add an app (1).png](https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png)
 
 ## Adding an app
 
-After you've [entered the Add an app wizard](/docs/adding-an-app-to-appsflyer#entering-the-wizard-for-adding-an-app), follow these steps:
+After you've [entered the Add an app wizard](#entering-the-wizard-for-adding-an-app), follow these steps:
 
-1. [Enter the app details](/docs/adding-an-app-to-appsflyer#enter-app-details).
-2. [Enter additional information](/docs/adding-an-app-to-appsflyer#enter-additional-information-not-applicable-to-web-apps).
+1. [Enter the app details](#enter-app-details).
+2. [Enter additional information](#enter-additional-information-not-applicable-to-web-apps).
 3. Click **Add my app**.
-4. Copy the Dev key, to be used in the [SDK integration](/docs/getting-started-onboarding-for-marketers#step-3-sdk-integration) (you can retrieve it later from the [App Settings](https://support.appsflyer.com/hc/articles/211719806-App-settings-#general-app-settings) page).
+4. Copy the Dev key, to be used in the [SDK integration](/docs/getting-started-onboarding-for-marketers#step-3-sdk-integration) (you can retrieve it later from the [App Settings](/docs/app-settings#general-app-settings) page).
 5. Click **Done** or **+ Add another app** to add more apps. Repeat the process for adding more apps.
 
-> 📘 Note
+> 📘 **Note**
 >
-> * Only admins and [account users with the necessary permissions](https://support.appsflyer.com/hc/articles/4409128270481) are able to add apps.
+> #### Note
+>
+> * Only admins and [account users with the necessary permissions](/docs/user-management) are able to add apps.
 > * As you follow the steps for adding an app (below), the available options will vary depending on the previous options you've selected.
+
 
 After registering the app, it will appear on the dashboard. To have installs and in-app events recorded and attributed to the correct media sources, you'll need to:
 
@@ -66,13 +72,17 @@ Use this option for the following platforms:
 * Amazon Fire TV
 * Kindle
 
+
+
 | Google Play status | When to use it | Required details |
 | --- | --- | --- |
-| In store | Your app is currently available in the Google Play store | **Google Play URL** (copied from Google Play)<br>- **Example:** https://play.google.com/store/apps/details?id=com.appsflyer.adNetworkTest **\&hl=en\&gl=GB**<br>- **Important!**  - If your app is **not** listed in the US Google Play store:<br>    - The URL must include the country code of any store in which it is listed, as shown in the example above: **\&gl=\{country\_code\}.** If you do not include the country code, you will receive an error when trying to add the app.<br>    - The language code is optional: **\&hl=\{language\_code\}**<br>  - If your store **is** listed in the US Google Play store, both the country and language codes are optional. |
-| Pending approval/not published | Your app is not yet published or is pending approval from Google Play | **Android package name**<br>- **Example:** com.appsflyer.adNetworkTest<br>- **Note:** Package name is case sensitive<br>- **Format:**  - At least two segments (one or more dots)<br>  - Each segment must start with a letter<br>  - All characters must be alphanumeric or underscore (a-z, A-Z, 0-9, or \_)<br>  - Maximum length of 100 characters<br>For more information, see [Android developer documentation](https://developer.android.com/studio/build/application-id) |
-| 3rd-party store/out-of-store | Your app is in an Android app store other than Google Play, and/or it can be downloaded from a location other than an app store | - **Android package name:** For detailed requirements, see previous row.<br>- **App URL:** (copied from the 3rd-party app store or out-of-store location)<br>- **Channel name: (optional)** a unique name you set in the AndroidManifest.xml of the individual APK prepared for that store/location, e.g. my\_apk. The name must be:  - case-sensitive<br>  - identical to the name you entered in [the **Channel name** field when you added the app](https://support.appsflyer.com/hc/articles/207447023-Setting-up-multi-store-Android-attribution#dashboard-per-store%E2%80%94adding-the-app).<br>```xml<br>XML\<application\><br>     ...<br>     \<meta-data android:name="CHANNEL" android:value="my_apk"/\><br>     ...<br>\</application\><br>```<br>#### Note<br>Using the channel parameter for multi-store attribution is not recommended. For a simpler and more standardized implementation, use the af\_store parameter instead.<br>#### Important!<br>If your app is available from more than one source (in other words, any combination of Google Play, 3rd-party stores, or out-of-store locations), it is vital to consider the options for [setting up multi-store Android attribution](https://support.appsflyer.com/hc/articles/207447023-Setting-up-multi-store-Android-attribution-). |
+| In store | Your app is currently available in the Google Play store | **Google Play URL** (copied from Google Play)<br /><br />* **Example:** https://play.google.com/store/apps/details?id=com.appsflyer.adNetworkTest**&hl=en&gl=GB**<br />* **Important!**<br />  * If your app is **not** listed in the US Google Play store:<br />    * The URL must include the country code of any store in which it is listed, as shown in the example above: **&gl=`{country\_code}.** If you do not include the country code, you will receive an error when trying to add the app.<br />    * The language code is optional: **&hl={language\_code}`**<br />  * If your store **is** listed in the US Google Play store, both the country and language codes are optional. |
+| Pending approval/not published | Your app is not yet published or is pending approval from Google Play | **Android package name**<br /><br />* **Example:** com.appsflyer.adNetworkTest<br />* **Note:** Package name is case sensitive<br />* **Format:**<br />  * At least two segments (one or more dots)<br />  * Each segment must start with a letter<br />  * All characters must be alphanumeric or underscore (a-z, A-Z, 0-9, or \_)<br />  * Maximum length of 100 characters<br /><br />For more information, see [Android developer documentation](https://developer.android.com/studio/build/application-id) |
+| 3rd-party store/out-of-store | Your app is in an Android app store other than Google Play, and/or it can be downloaded from a location other than an app store | * **Android package name:** For detailed requirements, see previous row.<br />* **App URL:** (copied from the 3rd-party app store or out-of-store location)<br />* **Channel name: (optional)** a unique name you set in the AndroidManifest.xml of the individual APK prepared for that store/location, e.g. my\_apk. The name must be:<br />  * case-sensitive<br />  * identical to the name you entered in [the **Channel name** field when you added the app](/docs/set-up-multi-store-android-attribution#dashboard-per-store%E2%80%94adding-the-app).<br /><br />```<br /><application><br />     ...<br />     <meta-data android:name="CHANNEL" android:value="my_apk"/><br />     ...<br /></application><br />```<br /><br />Note<br />CALLSTART::Note::<br /><br />#### Note<br /><br />Using the channel parameter for multi-store attribution is not recommended. For a simpler and more standardized implementation, use the af\_store parameter instead.<br /><br />CALLEND::<br />CALLSTART::Note::<br /><br />#### Important!<br /><br />If your app is available from more than one source (in other words, any combination of Google Play, 3rd-party stores, or out-of-store locations), it is vital to consider the options for [setting up multi-store Android attribution](/docs/set-up-multi-store-android-attribution).<br /><br />CALLEND:: |
 
-#### iOS, tvOS, MacOS
+
+
+#### ioS, tvOS, MacOS
 
 Use this option for the following platforms:
 
@@ -80,10 +90,14 @@ Use this option for the following platforms:
 * tvOS
 * MacOS
 
+
+
 | App Store status | When to use it | Required details |
 | --- | --- | --- |
-| In store | Your app is currently available in the App Store | **App Store URL** (copied from the App Store)<br>- **Example:** https://apps.apple.com/ **us**/app/partner-integrations/id1543229303<br>- **Notes:**  - Be sure that the URL includes the 2-letter country code of the store (for example, **us** in the URL above)<br>  - An app added to the App Store prior to June 14, 2019, may contain itunes.apple.com in its URL (instead of apps.apple.com). |
-| Pending approval/not published | Your app is not yet published or is pending approval from the App Store | **Country** of the App Store to which the app has been submitted<br>**App ID** assigned by the App Store, without the prefix id<br>- **Example:** 1543229303<br>- **Format:** 9 or 10 numeric characters, 0-9 |
+| In store | Your app is currently available in the App Store | **App Store URL** (copied from the App Store)<br /><br />* **Example:** https://apps.apple.com/**us**/app/partner-integrations/id1543229303<br />* **Notes:**<br />  * Be sure that the URL includes the 2-letter country code of the store (for example, **us** in the URL above)<br />  * An app added to the App Store prior to June 14, 2019, may contain itunes.apple.com in its URL (instead of apps.apple.com). |
+| Pending approval/not published | Your app is not yet published or is pending approval from the App Store | **Country** of the App Store to which the app has been submitted<br /><br />**App ID** assigned by the App Store, without the prefix id<br /><br />* **Example:** 1543229303<br />* **Format:** 9 or 10 numeric characters, 0-9 |
+
+
 
 #### Windows
 
@@ -92,23 +106,30 @@ Use this option for the following platforms:
 * Windows Phone
 * Windows (desktop)
 
+
+
 | Microsoft Store status | When to use it | Required details |
 | --- | --- | --- |
-| In store | Your app is currently available in the Microsoft Store | **Microsoft Store URL** (copied from the Microsoft Store)<br>- **Example:** https://www.microsoft.com/en-us/p/wordament/9wzdncrfhwfg<br>- **Note:** The URL above is an example for a Windows Phone app. URL format varies for Windows desktop apps.<br>**App ID:** Maximum length of 150 characters. |
-| Pending approval/not published | Your app is not yet published or is pending approval from the store | **App ID** assigned by the Microsoft Store<br>- **Maximum length:** 150 characters<br>- **Example:** 9wzdncrfhwfg<br>- **Note:** App ID is case sensitive |
+| In store | Your app is currently available in the Microsoft Store | **Microsoft Store URL** (copied from the Microsoft Store)<br /><br />* **Example:** https://www.microsoft.com/en-us/p/wordament/9wzdncrfhwfg<br />* **Note:** The URL above is an example for a Windows Phone app. URL format varies for Windows desktop apps.<br /><br />**App ID:** Maximum length of 150 characters. |
+| Pending approval/not published | Your app is not yet published or is pending approval from the store | **App ID** assigned by the Microsoft Store<br /><br />* **Maximum length:** 150 characters<br />* **Example:** 9wzdncrfhwfg<br />* **Note:** App ID is case sensitive |
+
+
 
 #### Web (PBA)
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > A web app is where you define a website to include in a brand bundle for our People-Based Attribution (PBA) feature.
 >
 > * This option is available only to customers who have subscribed to PBA.
-> * [Learn more](https://support.appsflyer.com/hc/articles/360002274017) about PBA and attributing web visits, web events, and website-assisted installs to obtain a unified view of customer journeys across channels, platforms, and devices.
+> * [Learn more](/docs/people-based-attribution-pba-overview) about PBA and attributing web visits, web events, and website-assisted installs to obtain a unified view of customer journeys across channels, platforms, and devices.
 
-**Full URL:** The full URL of the website for which you want to measure traffic. This is the website on which you have implemented (or will implement) the [PBA Web SDK](https://support.appsflyer.com/hc/articles/360013821097-Onboarding-guide-to-People-Based-Attribution-#2).
 
-![URL_diagram](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)
+**Full URL:** The full URL of the website for which you want to measure traffic. This is the website on which you have implemented (or will implement) the [PBA Web SDK](/docs/onboarding-guide-to-people-based-attribution#2).
+
+[![URL_diagram](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)](https://support.appsflyer.com/hc/article_attachments/33198323426961)
 
 Include –
 
@@ -123,15 +144,18 @@ Include –
 * Maximum length: 100 characters
 * XSS tags not permitted
 
-> ❗️ Important!
+> 📘 **Note**
 >
-> Once you create a web app, you are not able to edit its properties (URL and app name) without deleting it and re-creating it, **which means you also must** [**delete the brand bundle**](https://support.appsflyer.com/hc/articles/360000646498#what-happens-if-i-delete-a-bundle) **of which it is a part.**
+> #### Important!
+>
+> Once you create a web app, you are not able to edit its properties (URL and app name) without deleting it and re-creating it, **which means you also must** [**delete the brand bundle**](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle) **of which it is a part.**
+
 
 **Next steps:**
 
-* Add your newly-created web app to a [PBA brand bundle](https://support.appsflyer.com/hc/articles/360000646498) to see it on the PBA dashboard.
+* Add your newly-created web app to a [PBA brand bundle](/docs/pba-brand-bundles-and-settings) to see it on the PBA dashboard.
   * Make sure all the mobile apps you want to include in the brand bundle have been added to your account before creating the bundle.
-* [Integrate the PBA Web SDK](https://support.appsflyer.com/hc/articles/360001610038) to the website specified in the web app to get the measurement data flowing.
+* [Integrate the PBA Web SDK](/docs/pba-web-sdk-integration-guide) to the website specified in the web app to get the measurement data flowing.
 
 ### Web
 
@@ -139,20 +163,20 @@ Use the Web platform to create a new Web app and measure website visits and conv
 
 #### **Before you begin**
 
-* Legacy People-Based Attribution (PBA) web apps appear under “ **Web (PBA)”** marked as Legacy.
+* Legacy People-Based Attribution (PBA) web apps appear under “**Web (PBA)”** marked as Legacy.
 * If you are migrating from a legacy PBA Web app, you can use your existing PBA Web Dev Key.
 
 #### **To add a Web app**
 
-1. Go to **My Apps** \> **Add app**.
+1. Go to **My Apps** > **Add app**.
 2. Select **Website**.
 3. Enter the following:
 
 **App name**: The name you have chosen for your Web app.
 
 * **Length:** 1-100 characters
-* **Allowed characters:** Letters (any language), numbers, spaces (not at start or end), and special characters: .-\_:
-* **Blocked characters:**;\{\}\$\<\>\`\
+* **Allowed characters:** Letters (any language), numbers, spaces (not at start or end), and special characters: . - \_ :
+* **Blocked characters:** ; `{ }` $ < > ` \
 
 **Example:** My Online Store, Corporate Website 2024, E-Commerce\_Production
 
@@ -160,23 +184,22 @@ Use the Web platform to create a new Web app and measure website visits and conv
 
 * **Format:** Valid domain name only (no protocol, path, or port)
 * **Length:** Maximum 500 characters
-* **Processing:** AppsFlyer automatically  - Removes http:// or https://
-  - Removes trailing slashes
-  - converts the domain to lowercase
+* **Processing:** AppsFlyer automatically
+  * Removes http:// or https://
+  * Removes trailing slashes
+  * converts the domain to lowercase
 * **Immutability:** Cannot be edited after app creation
 
-> ❗️ Important
->
-> To change the primary domain, you must delete and recreate the web app, which results in loss of historical data continuity.
+**Important:** To change the primary domain, you must delete and recreate the web app, which results in loss of historical data continuity.
 
 **Examples:**
 
 * https://shop.example.com/checkout → Stored as shop.example.com → App ID: website-shop.example.com
-* example.com/ → Stored as example.com → App ID: [website-example.com](http://website-example.com/)
+* example.com/ → Stored as example.com → App ID: [website-example.com](http://website-example.com)
 
 **App ID**: The unique ID AppsFlyer creates for the Web app, based on the primary domain.
 
-* Generated automatically using the format: website-\<primary\_domain\>
+* Generated automatically using the format: website-`<primary_domain>`
 * Example: website-shop.example.com
 
 **Web SDK ID**: The identifier used by the Web SDK for attribution (previously named web\_dev\_key).
@@ -186,7 +209,7 @@ Two options during app creation:
 **Option 1: Generate new (default)**
 
 * Automatically creates a new Web SDK ID
-* Format: website-\{yourdomain.com\}
+* Format: website-`{yourdomain.com}`
 * Example: website-shop.example.com
 * **Use case:** New web attribution implementations
 
@@ -196,9 +219,7 @@ Two options during app creation:
 * Enables seamless migration without changing website code
 * **Use case:** Migrating from legacy PBA to the new web attribution solution
 
-> 📘 Note
->
-> Reusing the PBA Dev Key allows you to migrate from PBA to the new Web app **without making any changes to your website implementation.**
+**Note:** Reusing the PBA Dev Key allows you to migrate from PBA to the new Web app **without making any changes to your website implementation.**
 
 Each PBA dev key can only be assigned to **ONE** web app. Once a PBA dev key is used for a web app, it is no longer available for other web apps.
 
@@ -227,33 +248,40 @@ Each PBA dev key can only be assigned to **ONE** web app. Once a PBA dev key is 
 
 Each legacy **Web Dev Key can be reused for only one** new Web app.
 
-> 📘 Note
+> 📘 **Note**
 >
-> For full information on Web attribution settings [see here](https://support.appsflyer.com/hc/articles/43541863890961-Web-attribution-settings).
+> #### Note
+>
+> For full information on Web attribution settings [see here](/docs/configure-web-performance-measurement-settings).
+
 
 #### Roku
 
 **App name:** Channel name copied from the [Roku Developer Dashboard](https://developer.roku.com/developer).
 
 * **Example:** My Roku channel
-* **Format:**  - Maximum length of 100 characters
-  - XSS tags not permitted
+* **Format:**
+  * Maximum length of 100 characters
+  * XSS tags not permitted
 
 **Channel ID:** Numeric ID assigned to the channel by Roku.
 
-* **Format:**  - Numeric characters (0-9)
-  - Maximum length: 50 characters
-* **How do I find it?**  - From the [Roku Developer Dashboard](https://developer.roku.com/developer), click on the name of the channel you are adding to AppsFlyer. This opens the Roku Preview \& Publish page for the channel.
-  - The number at the end of the URL page is the Channel ID:
+* **Format:**
+  * Numeric characters (0-9)
+  * Maximum length: 50 characters
+* **How do I find it?**
+  * From the [Roku Developer Dashboard](https://developer.roku.com/developer), click on the name of the channel you are adding to AppsFlyer. This opens the Roku Preview & Publish page for the channel.
+  * The number at the end of the URL page is the Channel ID:
+
+    ![](https://support.appsflyer.com/hc/article_attachments/33198275490577)
 
 ### Amazon Vega OS
 
 **App name:** The name you have chosen for your app.
 
-**App ID:** The ID of the app. Found using reverse DNS notation:  \<tld\>.\<company\_name\>.\<app\_name\>
-
-Must contain a minimum of 2 segments. Each segment must start with a letter followed by characters from: `A-Z``a-z``0-9.``-`
-
+**App ID:** The ID of the app. Found using reverse DNS notation:  `<tld>`.`<company_name>`.`<app_name>`  
+Must contain a minimum of 2 segments. Each segment must start with a letter followed by characters from: `A-Z` `a-z` `0-9.` `-`  
+  
 Example: com.company.my\_app
 
 For more information, see the “id” field in the [Amazon Vega OS documentation](https://developer.amazon.com/docs/vega/0.21/manifest-package.html#fields).
@@ -262,7 +290,7 @@ For more information, see the “id” field in the [Amazon Vega OS documentatio
 
 **App name:** The name you have chosen for your app.
 
-**App ID:** The ID of the app, as recognized by Vizio. Starts with `vizio.`, followed by 2-10 characters from: `A-Z``a-z``0-9.``-`. If you need to confirm the app ID, check with your Vizio representative.
+**App ID:** The ID of the app, as recognized by Vizio. Starts with `vizio.`, followed by 2-10 characters from: `A-Z` `a-z` `0-9.` `-`. If you need to confirm the app ID, check with your Vizio representative.
 
 #### Samsung Tizen
 
@@ -271,13 +299,16 @@ For more information, see the “id” field in the [Amazon Vega OS documentatio
 **App ID:** The Bundle ID assigned to your app by Samsung. Starts with the letter `G`, followed by 8-15 digits. To get the App ID:
 
 1. Sign in to the Samsung TV Seller Office Using [this link](https://developer.samsung.com/tv-seller-office/guides/overview.html).
-2. Enter your developer URL
-3. Your Bundle ID is automatically generated and displayed. This can be used to access the app store URL.
-4. For any issues, open an issue board ticket in the seller office.
 
-Note: To access your unique app store web page, add the bundle ID to the URL " [https://www.samsung.com/us/appstore/app/](https://www.samsung.com/us/appstore/app/)".
+   1. Enter your developer URL
+2. Your Bundle ID is automatically generated and displayed. This can be used to access the app store URL.
+3. For any issues, open an issue board ticket in the seller office.
 
-For example, if your bundle ID is "G15147002586", the URL of your page will be " [https://www.samsung.com/us/appstore/app/G15147002586/](https://www.samsung.com/us/appstore/app/G15147002586/) ". The developer URL, bundle ID, and app store ID are then displayed in the metadata on that page.
+Note: To access your unique app store web page, add the bundle ID to the URL "[https://www.samsung.com/us/appstore/app/](https://www.samsung.com/us/appstore/app/)".
+
+For example, if your bundle ID is "G15147002586", the URL of your page will be "[https://www.samsung.com/us/appstore/app/G15147002586/](https://www.samsung.com/us/appstore/app/G15147002586/) ". The developer URL, bundle ID, and app store ID are then displayed in the metadata on that page.
+
+![](https://support.appsflyer.com/hc/article_attachments/33198275491729)
 
 #### LG WebOS
 
@@ -285,8 +316,9 @@ For example, if your bundle ID is "G15147002586", the URL of your page will be "
 
 **App ID:** The LG WebOS app ID.
 
-* **Format:**  - Maximum length of 50 characters
-  - Characters from `A-Z``a-z._` in bundle-like format. Must start with letters.
+* **Format:**
+  * Maximum length of 50 characters
+  * Characters from `A-Z` `a-z._` in bundle-like format. Must start with letters.
 * **Example:** com.my-company.app
 
 If you need to confirm the app ID, check with your LB WebOS representative.
@@ -317,7 +349,9 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 **App name:** The name you have chosen for your app.
 
-**App ID:** The Meta Quest app ID, as it appears at the end of the Meta app store URL from which the app is downloaded. Includes 3-50 characters from: `A-Z``a-z0-9._-`.
+**App ID:**The Meta Quest app ID, as it appears at the end of the Meta app store URL from which the app is downloaded. Includes 3-50 characters from: `A-Z` `a-z0-9._-`.
+
+![](https://support.appsflyer.com/hc/article_attachments/33198323442449)
 
 #### Nintendo Switch
 
@@ -331,7 +365,9 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 **App name:** The name you have chosen for your app.
 
-**App ID:** The Xbox app ID, as it appears at the end of the Xbox store URL from which the app is downloaded. Includes 12 letters and digits only (`A-Z``a-z0-9`).
+**App ID:** The Xbox app ID, as it appears at the end of the Xbox store URL from which the app is downloaded. Includes 12 letters and digits only (`A-Z` `a-z0-9`).
+
+![](https://support.appsflyer.com/hc/article_attachments/33198275505041)
 
 **Note:** App ID is case-sensitive.
 
@@ -339,62 +375,80 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 **App name:** The name you have chosen for your app.
 
-**App ID:** The Epic Games app ID, as it appears in the store from which the app is downloaded. Includes 3-50 characters from: `A-Z``a-z0-9._-`.
+**App ID:** The Epic Games app ID, as it appears in the store from which the app is downloaded. Includes 3-50 characters from: `A-Z` `a-z0-9._-`.
+
+![](https://support.appsflyer.com/hc/article_attachments/33198275508497)
 
 #### Native PC
 
 **App name:** The name you have chosen for your app.
 
-**App ID:** The Native PC app ID. Includes 3-50 characters from: `A-Z``a-z0-9._-`.
+**App ID:** The Native PC app ID. Includes 3-50 characters from: `A-Z` `a-z0-9._-`.
 
 ### Enter additional information (not applicable to web apps):
 
+![](https://support.appsflyer.com/hc/article_attachments/33198323448081)
+
 #### **Select currency**
 
-Select the currency in which this app's data will be displayed in the dashboard. Revenue and spend events are converted to this currency using the exchange rate in effect at the event time. [Learn more](https://support.appsflyer.com/hc/articles/211719806-App-settings-#localization-currency) about an app's currency setting and its impact.
+Select the currency in which this app's data will be displayed in the dashboard. Revenue and spend events are converted to this currency using the exchange rate in effect at the event time. [Learn more](/docs/app-settings#localization-currency) about an app's currency setting and its impact.
 
-> ❗️ Important!
+> 📘 **Note**
+>
+> #### Important!
 >
 > Use care in selecting the currency you want to use for the app. You won't be able to change it once cost and revenue have been recorded.
+
 
 #### **Select timezone**
 
 Align the timezone you select here with the timezone you set with other attribution partners (such as Meta ads and Google Ads). This ensures the closest match between the data reported in the AppsFlyer dashboard and the data you receive from these partners.
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > * Once the timezone is set, it remains locked and can't be changed until the following day.
 > * [Learn more](/docs/changing-app-time-zone-settings) about app timezone setting and its impact.
 
+
 #### **Define app audience**
 
-Select **Yes** or **No** to indicate whether or not your app is directed toward children or a mixed audience (both children and adults).
-
+Select **Yes** or **No** to indicate whether or not your app is directed toward children or a mixed audience (both children and adults).  
 If you've selected **Yes:**
 
 1. Open and read the [guide](https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf) about implementing compliance with child-directed apps.
 2. Select the box to confirm you've read the guide and will implement the controls it specifies.
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > * Two weeks after adding the app, you'll get a notification asking you to confirm you've implemented privacy controls for your child-directed apps. After confirming, you'll get a confirmation message. You can always access the confirmation message from the Notification center or see the confirmation details in the [Audit log](/docs/audit-log).
-> * See [frequently asked questions about child-directed apps](https://support.appsflyer.com/hc/articles/18324823209745).
+> * See [frequently asked questions about child-directed apps](/docs/child-directed-apps-faq).
+
 
 #### Manage your apps in bulk via API
 
 Account admins can [manage multiple apps in bulk](https://dev.appsflyer.com/hc/reference/app-management-v2-overview) using a dedicated API that supports the main features of the UI. This includes adding and deleting apps, and updating the app settings. The API also incorporates the same error verification mechanisms.
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > At this stage, adding apps and updating the app settings via API is possible for mobile apps only. Deleting apps is possible for all platforms.
+
 
 ### Add a debug or testing app
 
 If your developer creates a **debug**, **sandbox**, or **testing app**, you must add the app to the dashboard. Once your developer starts testing with the app, data displays in the app’s dashboard.
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > For iOS apps that haven’t been published to the App Store and don’t yet have a valid App Store ID, you can still proceed with SDK testing by adding the app using a **dummy iOS App Store ID**. This enables SDK integration and testing without needing a real App Store listing.
+
 
 For developer instructions on how to create a debug app and add it to the dashboard, see:
 
@@ -407,45 +461,35 @@ Working with an app in pending status can be useful when you are debugging it to
 
 The status of the app as pending on the dashboard has no effect on data collection and measurement. Whether an app is pending or live on an app store, if users install and interact with it, install and in-app event data is recorded on the dashboard just the same.
 
-Once your pending app goes live, AppsFlyer will detect and automatically update its status, so you don't need to add it again. [Learn more](https://support.appsflyer.com/hc/articles/360001533885) about pending apps and the optional procedure for manually refreshing status.
+Once your pending app goes live, AppsFlyer will detect and automatically update its status, so you don't need to add it again. [Learn more](/docs/why-is-my-app-still-pending) about pending apps and the optional procedure for manually refreshing status.
 
 ## Troubleshooting
 
 Find solutions for some common issues:
 
-<Accordion title="App wasn't added">
+### App wasn't added
 
 If this error occurs, contact your CSM or send an email to [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
-</Accordion>
-
-<Accordion title="App not in the store">
+### App not in the store
 
 Confirm that you have copied the store URL correctly, using the appropriate app name/ID.
 
-</Accordion>
+### Can't access marketplace
 
-<Accordion title="Can't access marketplace">
-
-This error sometimes occurs when adding an Android app from a non-US store. Follow these steps to resolve it:
+This error sometimes occurs when adding an Android app from a non-US store. Follow these steps to resolve it:
 
 1. Add the app with a status of **Pending approval/not published**, as described above.
 2. Go to the AppsFlyer **App settings** page.
 3. Change the **App store country** to the correct country (for example, Japan).
 
-</Accordion>
+### Something went wrong. Please try again.
 
-<Accordion title="Something went wrong. Please try again.">
+One possible reason for this error is trying to add an Android app without a country code (for apps **not** listed in the US Google Play Store). See full details for resolving this issue [above](/docs/adding-an-app-to-appsflyer#in-store).
 
-One possible reason for this error is trying to add an Android app without a country code (for apps **not** listed in the US Google Play Store). See full details for resolving this issue [above](https://support.appsflyer.com/hc/articles/207377436#in-store).
-
-</Accordion>
-
-<Accordion title="My iOS app was removed from the App Store. Why am I still seeing installs?">
+### My iOS app was removed from the App Store. Why am I still seeing installs?
 
 This happens because users can reinstall an app via the operating system if it previously existed on their device. Even if the app is no longer available in the App Store, users can still install it, and these installs will be counted in AppsFlyer.
-
-</Accordion>
 
 ## Other information
 

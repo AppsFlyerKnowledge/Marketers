@@ -21,7 +21,7 @@ Use Receipt validation to make informed decisions and optimize campaigns based o
 For more information, see:
 
 - [About Receipt validation](/docs/about-receipt-validation)
-- [Set up Receipt validation](https://support.appsflyer.com/hc/articles/42137474889489--WIP-Set-up-receipt-validation)
+- [Set up Receipt validation](/docs/set-up-receipt-validation)
 
 ### ROI360 store revenue Premium
 
@@ -37,8 +37,8 @@ Use this solution if you need complete revenue accuracy, subscription lifecycle 
 
 For more information, see:
 
-- [About ROI360 store revenue](https://support.appsflyer.com/hc/articles/42138855425297--WIP-About-ROI360-store-revenue)
-- [Set up ROI360 store revenue](https://support.appsflyer.com/hc/articles/42158608158353-Setup-ROI360-store-revenue)
+- [About ROI360 store revenue](/docs/about-roi360-store-revenue)
+- [Set up ROI360 store revenue](/docs/set-up-roi360-store-revenue)
 
 ## Compare Receipt validation and ROI360 store revenue
 
@@ -48,12 +48,12 @@ Use the tables below to determine which solution best fits your needs.
 
 | **Feature** | **Receipt validation** | ROI360 store revenue Premium |
 | --- | --- | --- |
-| **Receipt validation**<br>Verifies in-app purchases to filter out fraudulent transactions. | ✔ | ✔ |
-| **Automated purchase detection & deduplication**<br>Automatically detects IAPs and subscriptions, including transactions from existing subscribers, and removes duplicates for cleaner reporting. | ✖ | ✔ |
-| **Refund handling**<br>Detects refunds and attributes them to the original purchase to reflect true revenue. | ✖ | ✔\* |
-| **Complete IAP measurement**<br>Handles family sharing and reports the final outcome of pending purchases using App Store confirmation. | ✖ | ✔ |
-| **Full subscription funnel coverage**<br>Measures renewals, upgrades, and conversions to reflect the full value from your subscriber base. | ✖ | ✔ |
-| **Net revenue calculation**<br>Calculates both gross and net revenue by deducting store fees and taxes automatically. | ✖ | ✔ |
+| **Receipt validation**<br />Verifies in-app purchases to filter out fraudulent transactions. | ✔ | ✔ |
+| **Automated purchase detection & deduplication**<br />Automatically detects IAPs and subscriptions, including transactions from existing subscribers, and removes duplicates for cleaner reporting. | ✖ | ✔ |
+| **Refund handling**<br />Detects refunds and attributes them to the original purchase to reflect true revenue. | ✖ | ✔\* |
+| **Complete IAP measurement**<br />Handles family sharing and reports the final outcome of pending purchases using App Store confirmation. | ✖ | ✔ |
+| **Full subscription funnel coverage**<br />Measures renewals, upgrades, and conversions to reflect the full value from your subscriber base. | ✖ | ✔ |
+| **Net revenue calculation**<br />Calculates both gross and net revenue by deducting store fees and taxes automatically. | ✖ | ✔ |
 
 \* Refund handling **for in-app purchases** is available only on the ROI360 Advanced plan.
 

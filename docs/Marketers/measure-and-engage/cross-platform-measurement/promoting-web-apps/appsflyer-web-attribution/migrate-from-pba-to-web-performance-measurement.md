@@ -50,7 +50,7 @@ The table below compares PBA and Web Performance Measurement capabilities across
 
 ### Traffic source resolution, PBA vs. Web Performance Measurement
 
-If media source, channel, or campaign values differ from what PBA reported, here's why. Both use the same underlying approach: they resolve the media source from URL parameters and the referrer at the web visit by walking a priority list until the first match wins. But several rules changed, and those changes move the values you see in reporting, based on [PBA media source attribution rules](/docs/pba-media-source-attribution-rules) and [About traffic source resolution](https://support.appsflyer.com/hc/articles/43518064765201--Beta-About-traffic-source-resolution).
+If media source, channel, or campaign values differ from what PBA reported, here's why. Both use the same underlying approach: they resolve the media source from URL parameters and the referrer at the web visit by walking a priority list until the first match wins. But several rules changed, and those changes move the values you see in reporting, based on [PBA media source attribution rules](/docs/pba-media-source-attribution-rules) and [About traffic source resolution](/docs/about-traffic-source-resolution).
 
 Media source values renamed
 
@@ -95,7 +95,7 @@ Migration has one required step for everyone. After that, perform the steps that
 Migrate to the new S2S API:
 
 1. Review [PBA Web-S2S to new S2S API migration](/docs/migrate-from-pba-to-web-performance-measurement#pba-web-s2s-to-new-s2s-api-migration) for what's different from your current PBA S2S integration, endpoints, authentication, and payload fields.
-2. Set up the [new S2S API](https://support.appsflyer.com/hc/articles/45670116601617--Beta-Server-to-Server-S2S-API-for-Web-Attribution) for Web Performance Measurement.
+2. Set up the [new S2S API](/docs/server-to-server-s2s-api-for-web-performance-measurement) for Web Performance Measurement.
 3. Update your server-side integration to send to the new endpoints.
 
 ### Step 3. If you consume PBA's raw data reports
@@ -104,7 +104,7 @@ Move to the new Data Locker reports. The End User Events report replaces [PBA's 
 
 1. Confirm you have Data Locker. If you don't, you'll need to add it to your account or purchase it.
 2. Review [Raw data field mapping](/docs/migrate-from-pba-to-web-performance-measurement#raw-data-field-mapping) for the full field-level mapping, renamed, redefined, or deprecated fields.
-3. Enable the new report using [Export AppsFlyer Web Attribution report data from Data Locker](https://support.appsflyer.com/hc/articles/43510758321809--Beta-Export-AppsFlyer-Web-Attribution-report-data-from-Data-Locker).
+3. Enable the new report using [Export AppsFlyer Web Attribution report data from Data Locker](/docs/export-web-performance-measurement-report-data-from-data-locker).
 4. Point your BI/ETL to the new report location and fields. This applies whether your events arrive via SDK or S2S; both land in the same raw report.
 
 ### Step 4. If you use the PBA Brand Bundle for cross-platform reporting
@@ -139,7 +139,7 @@ Raw data for any platform and cross-platform reporting are available only throug
 | `af_web_id` | Cookie ID sent from the web SDK | Renamed | `appsflyer_id_value`, same web cookie. |
 | `amazon_aid` | Amazon Fire TV advertising ID | Deprecated | Mobile/device ID, not relevant for web. |
 | `android_id` | Android device ID | Deprecated | Mobile/device ID, not relevant for web. |
-| `app_id` | Most recent app ID installed | Deprecated | Mobile cross-platform field. The web app identifier in the new report is `unified_app_id` ("website-{domain}"), a different concept. |
+| `app_id` | Most recent app ID installed | Deprecated | Mobile cross-platform field. The web app identifier in the new report is `unified_app_id` ("website-`{domain}`"), a different concept. |
 | `app_name` | Most recent app name | Unchanged | `app_name`. |
 | `app_version` | Most recent app version | Deprecated | Mobile cross-platform field, not relevant for web. |
 | `appsflyer_id` | AppsFlyer (install) ID | Deprecated | Mobile install ID. The new `appsflyer_id_value` is the web cookie (`af_web_id`), a distinct identifier. |
@@ -288,7 +288,7 @@ Scan the codebase for any filter, CASE, join key, or dashboard grouping keyed on
 
 ## PBA Web-S2S to new S2S API migration
 
-If you report events to PBA through the [Web Server-to-server events API (Web-S2S)](/docs/web-server-to-server-events-api-for-pba-web-s2s), move to the [new S2S API](https://support.appsflyer.com/hc/articles/45670116601617--Beta-Server-to-Server-S2S-API-for-Web-Attribution). The new API supports both visits and events, so your website can run fully server-side; PBA's S2S accepts only events.
+If you report events to PBA through the [Web Server-to-server events API (Web-S2S)](/docs/web-server-to-server-events-api-for-pba-web-s2s), move to the [new S2S API](/docs/server-to-server-s2s-api-for-web-performance-measurement). The new API supports both visits and events, so your website can run fully server-side; PBA's S2S accepts only events.
 
 Endpoints and authentication
 
@@ -298,7 +298,7 @@ Endpoints and authentication
 | Event call | `POST /v1/{bundleId}/event` | `POST /v2.0/s2s/inapps/app/web/{appId}` |
 | Visit call | Not available (visits came from the Web SDK only) | `POST /v2.0/s2s/visits/app/web/{appId}` |
 | Identity call | `POST /v1/{bundleId}/setcuid` (separate call to associate a CUID with a web user) | None, identity is sent inline in the `user_id` object on every event/visit |
-| App identifier | `bundleId` (brand bundle ID) in the path | `appId` = the web `unified_app_id` ("website-{domain}") in the path |
+| App identifier | `bundleId` (brand bundle ID) in the path | `appId` = the web `unified_app_id` ("website-`{domain}`") in the path |
 | Authentication | `webDevKey` inside the JSON body on every call | Authorization header carrying the S2S API key |
 | Content type | `application/json` | `application/json` |
 | Success response | 200 OK | 202 Accepted |

@@ -2,7 +2,7 @@
 title: "Activity metrics in My Dashboards"
 excerpt: "Learn how to use Activity metrics in My Dashboards to assess app performance, analyze revenue, and monitor user engagement trends."
 ---
-Use Activity metrics in [My Dashboards](https://support.appsflyer.com/hc/articles/23461861877009--Beta-My-Dashboards) to quickly assess app performance, spot engagement trends, analyze revenue, and detect issues early, across any date range, with improved accuracy and flexibility.
+Use Activity metrics in [My Dashboards](/docs/my-dashboards) to quickly assess app performance, spot engagement trends, analyze revenue, and detect issues early, across any date range, with improved accuracy and flexibility.
 
 > 📘 Note
 >
@@ -30,7 +30,7 @@ The **Activity view** template helps marketers quickly assess app performance, s
 
 **Adding widgets to your dashboard**
 
-You can add widgets to your dashboard by clicking the **+ Create new** button in the top-right of the dashboard,and select the type of widget you want to create: Table, KPI, Chart, in-app events table, in-app events chart, text, or Custom metric. More detailed instructions can be found [here](https://support.appsflyer.com/hc/articles/23461861877009--Beta-My-Dashboards#add-widget).
+You can add widgets to your dashboard by clicking the **+ Create new** button in the top-right of the dashboard,and select the type of widget you want to create: Table, KPI, Chart, in-app events table, in-app events chart, text, or Custom metric. More detailed instructions can be found [here](/docs/my-dashboards#add-widget).
 
 **Adding metrics to your chart or table**
 
@@ -38,7 +38,7 @@ In the Chart Settings or Table Settings dialog, click the Metrics + plus sign.
 
 You can then add a Group by dimension and select Filters.
 
-More detailed instructions can be found [here](https://support.appsflyer.com/hc/articles/23461861877009--Beta-My-Dashboards#add-metric).
+More detailed instructions can be found [here](/docs/my-dashboards#add-metric).
 
 ## Available Activity metrics
 
@@ -46,9 +46,9 @@ More detailed instructions can be found [here](https://support.appsflyer.com/hc/
 
 | **Metric** | **Description** |
 | --- | --- |
-| Active Users | - Number of unique Active users who opened the app at least once during the selected period, based on sessions, as per the selected time breakdown setting.<br>- If daily is selected, it's shown as DAU.<br>- If monthly is selected, it’s shown as MAU.<br>- When viewed in line charts, column charts, or a table grouped by date, it is shown as DAU. <br>- For information about querying raw data reports for DAU and MAU, see: [Calculate daily and monthly active users (DAU and MAU)](/docs/calculate-daily-and-monthly-active-users-dau-and-mau). |
+| Active Users | - Number of unique Active users who opened the app at least once during the selected period, based on sessions, as per the selected time breakdown setting.<br />- If daily is selected, it's shown as DAU.<br />- If monthly is selected, it’s shown as MAU.<br />- When viewed in line charts, column charts, or a table grouped by date, it is shown as DAU. <br />- For information about querying raw data reports for DAU and MAU, see: [Calculate daily and monthly active users (DAU and MAU)](/docs/calculate-daily-and-monthly-active-users-dau-and-mau). |
 | Active Users Last 31 Days | Number of unique users (counted only once) who opened the app at least once during the previous 31 days (Not based on calendar month). |
-| DAU/MAU | The rate of returning users (stickiness). <br>For example, a DAU/MAU rate of 50% means that the average user opened the app on 15 out of the previous 31 days.<br>The DAU/MAU rate is a measure of user stickiness and provides a snapshot of user retention. <br>Formula: Daily Active users / Active users in the last 31 days |
+| DAU/MAU | The rate of returning users (stickiness). <br />For example, a DAU/MAU rate of 50% means that the average user opened the app on 15 out of the previous 31 days.<br />The DAU/MAU rate is a measure of user stickiness and provides a snapshot of user retention. <br />Formula: Daily Active users / Active users in the last 31 days |
 | Sessions | Sessions during the selected date range. |
 | Total Revenue | Revenue generated for the selected period. Revenue consists of in-app purchases and ad revenue. |
 | Net revenue | Net revenue for the selected period, aggregated from the af_net_revenue event parameter. For apps using ROI360 store revenue, this is gross revenue minus app store fees and taxes (Net = Gross - store fees - taxes); apps that send af_net_revenue themselves define the calculation. |
@@ -62,19 +62,19 @@ More detailed instructions can be found [here](https://support.appsflyer.com/hc/
 | --- | --- |
 | Conversion rate | Percentage of unique users (attributions) who perform the event. Formula: Event unique users / Attributions x 100 |
 | Unique Users | Number of unique users (attributions) who perform the event |
-| Average count | Average number of times this event was performed per attribution. <br>Formula: Event count / Attributions |
-| eCPA | Effective cost per action (event). <br>Formula: Cost / Event unique users |
+| Average count | Average number of times this event was performed per attribution. <br />Formula: Event count / Attributions |
+| eCPA | Effective cost per action (event). <br />Formula: Cost / Event unique users |
 | Count | Number of times this event was performed |
 | Revenue | Revenue generated by this specific event |
-| ARPU | Average revenue per user. <br>Formula: Revenue / Unique users (users = attributions) |
+| ARPU | Average revenue per user. <br />Formula: Revenue / Unique users (users = attributions) |
 | Gross profit | Revenue - Cost |
-| ROAS | Return on ad spend. <br>Formula: Revenue / Cost * 100 |
-| ROI | Return on investment. <br>Formula: (Revenue - Cost) / Cost * 100 |
+| ROAS | Return on ad spend. <br />Formula: Revenue / Cost * 100 |
+| ROI | Return on investment. <br />Formula: (Revenue - Cost) / Cost * 100 |
 | Net revenue | Net revenue generated by this specific event (after app store fees and taxes). |
-| Net ARPU | Average net revenue per user. <br>Formula: Net revenue / Unique users (users = attributions) |
+| Net ARPU | Average net revenue per user. <br />Formula: Net revenue / Unique users (users = attributions) |
 | Net profit | Net revenue - Cost |
-| Net ROAS | Return on ad spend, based on net revenue. <br>Formula: Net revenue / Cost * 100 |
-| Net ROI | Return on investment, based on net revenue. <br>Formula: (Net revenue - Cost) / Cost * 100 |
+| Net ROAS | Return on ad spend, based on net revenue. <br />Formula: Net revenue / Cost * 100 |
+| Net ROI | Return on investment, based on net revenue. <br />Formula: (Net revenue - Cost) / Cost * 100 |
 
 **Net revenue metrics**
 
@@ -130,22 +130,22 @@ You can group and filter Activity metrics using:
 
 | **Spec** | **Remark** |
 | --- | --- |
-| Data freshness | Real-time is not supported for Web, CTV, or PC and console apps for Cohort and Activity metrics.<br>**Note:** LTV metrics for CTV and PC and console apps are available in real-time — this limitation applies to Activity and Cohort data only. |
+| Data freshness | Real-time is not supported for Web, CTV, or PC and console apps for Cohort and Activity metrics.<br />**Note:** LTV metrics for CTV and PC and console apps are available in real-time — this limitation applies to Activity and Cohort data only. |
 | Time granularity | For Web, CTV, and PC and console apps, Cohort and Activity data is available at daily granularity only. Weekly and monthly breakdowns aren't supported for these platforms. |
 | Ad revenue | Real-time data is not supported. |
 | Net revenue metrics - periods | Supported for Activity and Cohort metrics. Not supported for LTV. |
 | Net revenue metrics - data freshness | Real-time is not supported. Data is available starting the next day. |
-| Net revenue metrics - ad revenue | Ad revenue events are not included in net revenue metrics.<br>**Tip:** To see net revenue that includes ad revenue, create a custom metric that adds ad revenue to net revenue, for example: Net revenue + Revenue (event: af_ad_revenue). See [Set up custom metrics in My Dashboards](https://support.appsflyer.com/hc/articles/31400289569169-Set-up-custom-metrics-in-My-Dashboards). |
+| Net revenue metrics - ad revenue | Ad revenue events are not included in net revenue metrics.<br />**Tip:** To see net revenue that includes ad revenue, create a custom metric that adds ad revenue to net revenue, for example: Net revenue + Revenue (event: af_ad_revenue). See [Set up custom metrics in My Dashboards](/docs/beta-set-up-custom-metrics-in-my-dashboards). |
 | Net revenue metrics - attribution source | Not supported for SKAN and SSOT. |
 | Net revenue metrics - platforms | Android and iOS (mobile) only. |
-| Timezones | All metrics are supported in local timezones except these that are UTC only:<br>- Active users last 31 days<br>- DAU/MAU<br>- Active users with a monthly grouping (MAU) |
+| Timezones | All metrics are supported in local timezones except these that are UTC only:<br />- Active users last 31 days<br />- DAU/MAU<br />- Active users with a monthly grouping (MAU) |
 | Charts | Currently supports **DAU** in line or column format |
 | Widgets | KPI and table widgets support all Activity metrics. |
 | Daily data range | Limited to 62 days per view |
 | Uninstall events | Not included in Activity data |
 | Historical data | Up to 3 years (daily) |
 | Geo grouping | Based on geo at install time; limited to top 62 geos |
-| Session metrics | - Activity data is unified for UA and retargeting from February 1, 2025<br>- You can see a Retargeting view by filtering **Attribution type** values by **Re-engagements** and **Re-attributions**. |
+| Session metrics | - Activity data is unified for UA and retargeting from February 1, 2025<br />- You can see a Retargeting view by filtering **Attribution type** values by **Re-engagements** and **Re-attributions**. |
 | Unified view metrics | All metrics are supported only in Unified view |
 | Unique Users from in-app events and Active Users | **Unique Users from in-app events** and **Active Users** in My Dashboards are based on a statistical estimation algorithm that reduces duplicate counting and provides a consistent view of user Activity. |
 | Active Users and Unique Users Actual | If the selected date range includes today and previous days, and the widget isn’t grouped by date, today’s data doesn’t appear. |

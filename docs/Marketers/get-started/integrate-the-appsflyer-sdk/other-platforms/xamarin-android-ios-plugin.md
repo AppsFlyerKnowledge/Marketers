@@ -4,7 +4,7 @@ excerpt: "Integrate AppsFlyer into apps developed using Xamarin to measure insta
 ---
 > 🚧 Important!
 >
-> On March 1st, 2020, AppsFlyer deprecated old SDK versions. To learn about which versions have been deprecated, how it affects you, and how to update to the latest SDK version, click [here](https://support.appsflyer.com/hc/articles/360004769817).
+> On March 1st, 2020, AppsFlyer deprecated old SDK versions. To learn about which versions have been deprecated, how it affects you, and how to update to the latest SDK version, click here.
 
 **Android:** Follow these instructions for the AppsFlyer Xamarin Android binding: [https://github.com/AppsFlyerSDK/XamarinAndroidBinding](https://github.com/AppsFlyerSDK/XamarinAndroidBinding)
 

@@ -17,7 +17,7 @@ excerpt: "Learn how to automatically share data from AppsFlyer to Rockerbox, a m
 
 > ❗️ Important!
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Rockerbox
 
@@ -46,7 +46,7 @@ The Integration Tab is divided into different sections as described below.
 
 This toggle must be enabled for as long as you work with the partner.
 
-Learn more about [partner activation](https://support.appsflyer.com/hc/articles/360000844778#activating-a-partner).
+Learn more about [partner activation](/docs/partner-activation-deactivation#activating-a-partner).
 
 ### General settings
 
@@ -58,7 +58,7 @@ Your Rockerbox account ID is available in the Rockerbox platform under **Setting
 
 ### Default postbacks
 
-AppsFlyer can send automatic postbacks to Rockerbox following user installs. Use this section to define the source of the users the postbacks are sent to for each event. Learn more about [default postbacks](https://support.appsflyer.com/hc/articles/4410395957521#default%20postbacks).
+AppsFlyer can send automatic postbacks to Rockerbox following user installs. Use this section to define the source of the users the postbacks are sent to for each event. Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default%20postbacks).
 
 To send postbacks for any user that downloads the app to Rockerbox, select **All media sources, including organic**.
 
@@ -66,7 +66,7 @@ To send postbacks for any user that downloads the app to Rockerbox, select **All
 
 ![rockerbox-in-app-events_en-us.png](https://files.readme.io/3fc74bb16d6a1222d1d244bbb1083ff247e3315d0fc7060e0ec3e8ad30a07233-360013891517.png)
 
-In this section, you map AppsFlyer events with the partner via postbacks. Learn more about [in-app event postbacks.](https://support.appsflyer.com/hc/articles/4410395957521#g-in-app-event-postback-configuration)
+In this section, you map AppsFlyer events with the partner via postbacks. Learn more about [in-app event postbacks.](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration)
 
 **To configure in-app events postbacks:**
 

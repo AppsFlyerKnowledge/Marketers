@@ -8,7 +8,7 @@ Here's how it works: when a user clicks a TikTok ad and lands on your website, a
 
 > 👍 See also
 >
-> [Web Performance Measurement - Overview](https://support.appsflyer.com/hc/articles/43521734577809--Beta-AppsFlyer-Web-Attribution-Overview)
+> [Web Performance Measurement - Overview](/docs/web-performance-measurement-overview)
 
 > ❗️ Important!
 >
@@ -42,7 +42,7 @@ To activate the TikTok Web Ads integration:
 4. In the **Integration** tab, turn on **Activate Partner**. The toggle must stay on for as long as you work with the partner.
 5. **Pixel ID:** Enter the Pixel ID. You can generate it or retrieve it from your TikTok Ads Manager by following the instructions in the [TikTok documentation](https://business-api.tiktok.com/portal/docs?id=1771100865818625).
 6. **Access token:** Enter the access token. To generate or retrieve it, follow the same [TikTok documentation](https://business-api.tiktok.com/portal/docs?id=1771100865818625).
-7. **Limit TikTok Web Ads' use of users' personal information (CCPA):** Turn on this toggle to enable compliance with [data protection laws](https://support.appsflyer.com/hc/articles/11332840660625).
+7. **Limit TikTok Web Ads' use of users' personal information (CCPA):** Turn on this toggle to enable compliance with [data protection laws](/docs/send-opendsr-api-requests).
 
 > 📘 Note
 >
@@ -56,7 +56,7 @@ To set in-app event postbacks:
 
 01. Turn on **In-app event postbacks**.
 
-02. If required, set the in-app event postback window. Read more about in-app event postback window configuration in [In-app event postback configuration](https://support.appsflyer.com/hc/articles/208439256-In-App-Events-Postback-Configuration#inapp-event-postback-window).
+02. If required, set the in-app event postback window. Read more about in-app event postback window configuration in [In-app event postback configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window).
 
 03. Click **Add event** to add an event to the list.
 
@@ -75,7 +75,7 @@ To set in-app event postbacks:
     > - If you are setting a purchase event, set the **including** column to **Values and revenue**. Selecting any other option will cause the postback to fail.
     > - Currently, only the purchase event can be set to include revenue.
 
-08. [Optional] Click the **Add condition** icon to [set conditions](https://support.appsflyer.com/hc/articles/208439256#conditional-inapp-event-postbacks) for an event.
+08. [Optional] Click the **Add condition** icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
 
 09. Click **Save integration**.
 
@@ -88,7 +88,7 @@ AppsFlyer forwards this value to TikTok as the event ID. TikTok then uses it to 
 
 If you don't send `af_customer_event_id`, AppsFlyer generates an event ID automatically. This ID won't match your Pixel events.
 
-For more information, see [[Beta] Integrate AppsFlyer Web SDK](https://support.appsflyer.com/hc/articles/43485611331473).
+For more information, see [[Beta] Integrate AppsFlyer Web SDK](/docs/integrate-appsflyer-web-sdk).
 
 ## Part 2: Set up AppsFlyer integration in TikTok Web Ads
 
@@ -123,7 +123,7 @@ You can choose any pre-defined in-app event sent from AppsFlyer as your campaign
 >
 > To simplify campaign analysis, include the campaign type (web or mobile) as a prefix or suffix in the campaign name, for example, `campaign-name_web`.
 
-For best practices on URL parameter configuration and traffic source resolution, see [About traffic source resolution](https://support.appsflyer.com/hc/articles/43518064765201--Beta-About-traffic-source-resolution).
+For best practices on URL parameter configuration and traffic source resolution, see [About traffic source resolution](/docs/about-traffic-source-resolution).
 
 An example of the resulting URL:
 

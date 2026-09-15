@@ -25,9 +25,9 @@ Val provides the following insight types and the following user actions to take 
 
 | Insight type | Description | User actions |
 | --- | --- | --- |
-| **Fraud spike** | - Highlights abnormal increases or decreases in fraud for specific networks or sources.<br>- Provides a comparative analysis of fraud trends at the app level to better understand whether they are expected or an anomaly. | - Investigate further in the Protect360 dashboard.<br>- Share the insight as a PNG.<br>- Dismiss the insight for one week. |
-| **Old SDK version** | Detects apps using SDKs older than one year, which may lack up-to-date fraud protection and be prone to fraud attacks. | - Learn more about SDK updates.<br>- Share the insight as a PNG.<br>- Dismiss the insight for one week. |
-| **Fraudulent SDK version** | Identifies traffic originating from SDK versions, and broken down by app versions, known to have been affected by high fraud rates. | - Access the Validation Rules setup page.<br>- Share the insight as a PNG.<br>- Dismiss the insight for one week. |
+| **Fraud spike** | - Highlights abnormal increases or decreases in fraud for specific networks or sources.<br />- Provides a comparative analysis of fraud trends at the app level to better understand whether they are expected or an anomaly. | - Investigate further in the Protect360 dashboard.<br />- Share the insight as a PNG.<br />- Dismiss the insight for one week. |
+| **Old SDK version** | Detects apps using SDKs older than one year, which may lack up-to-date fraud protection and be prone to fraud attacks. | - Learn more about SDK updates.<br />- Share the insight as a PNG.<br />- Dismiss the insight for one week. |
+| **Fraudulent SDK version** | Identifies traffic originating from SDK versions, and broken down by app versions, known to have been affected by high fraud rates. | - Access the Validation Rules setup page.<br />- Share the insight as a PNG.<br />- Dismiss the insight for one week. |
 
 ## How Val works
 

@@ -2,24 +2,31 @@
 title: "Recommended online education app events"
 excerpt: "Measure user quality and track the remote learning journey by recording recommended in-app events for your online education app."
 ---
+**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your online education app.
+
+## ![education.png](https://support.appsflyer.com/hc/article_attachments/20659493109393) Online education
+
 Online education apps enable users to learn remotely. The typical events that we recommend recording include registration, tutorials and courses completed, and certificates received.
 
 Recording events can help you determine:
 
-- What courses users want the most and provide you with ideas for targeting
-- Which users can be retargeted and reminded that they have additional tutorials to complete a course
-- Which courses and certificates are the most in demand
+* What courses users want the most and provide you with ideas for targeting
+* Which users can be retargeted and reminded that they have additional tutorials to complete a course
+* Which courses and certificates are the most in demand
 
-> 📘 Important!
+> 📘 **Note**
 >
-> * Make sure to read the [instructions](https://support.appsflyer.com/hc/articles/115005544169-Rich-in-app-events-guide#setting-up-inapp-events) for marketers about implementing in-app events.
+> #### Important!
+>
+> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=online_education). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
 > * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=online_education&view=code) for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the [**AppsFlyer developer hub**](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions) **.**
+> * Detailed instructions for your developer can be found in the [**AppsFlyer developer hub**](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions)**.**
+>
+> For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
 
-For more information about recording in-app events, see the [In-app events guide](https://support.appsflyer.com/hc/articles/115005544169).
 
-![Flowchart_for_recommended_events_online_education_app_user_journey](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)
+[![Flowchart_for_recommended_events_online_education_app_user_journey](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)](https://support.appsflyer.com/hc/article_attachments/360020170478)
 
 ## Recommended structures for predefined events
 
@@ -51,9 +58,13 @@ When the user completes the signup process
 
 **Event parameters**
 
+
+
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_registration\_method | Type of signup method | email, facebook |
+
+
 
 ### Tutorial completion (af\_tutorial\_completion)
 
@@ -61,16 +72,18 @@ When the user completes the signup process
 
 Recording this event can help you determine:
 
-- What topics users might have trouble with
-- Which tutorials are not performing well and improve them
-- Associate overall user activity with dimensions such as revenue
+* What topics users might have trouble with
+* Which tutorials are not performing well and improve them
+* Associate overall user activity with dimensions such as revenue
 
 **Trigger**
 
-- When a user completes the tutorial
-- When a user starts the tutorial but quits without completing it
+* When a user completes the tutorial
+* When a user starts the tutorial but quits without completing it
 
 **Event parameters**
+
+
 
 | Name | Description | Example value |
 | --- | --- | --- |
@@ -78,17 +91,19 @@ Recording this event can help you determine:
 | af\_tutorial\_id | ID of the tutorial | 3 |
 | af\_content | Name of the tutorial | algebra |
 
+
+
 ### Purchase (af\_purchase)
 
 **Purpose**
 
 Recording in-app purchases made by users can help you:
 
-- Determine the LTV of your users and the ROI of your campaigns across ad networks and ad agencies
-- Determine what offers are most popular with your users
-- Cross-reference campaigns with purchased items in order to optimize campaign targeting
+* Determine the LTV of your users and the ROI of your campaigns across ad networks and ad agencies
+* Determine what offers are most popular with your users
+* Cross-reference campaigns with purchased items in order to optimize campaign targeting
 
-To record and validate this event, see [Purchase and subscription validation](/docs/purchase-and-subscription-validation-overview).
+To record and validate this event, see [Purchase and subscription validation](/docs/purchase-and-subscription-validation-overview).
 
 **Trigger**
 
@@ -96,13 +111,17 @@ When the user lands on the thank you page after a successful purchase
 
 **Event parameters**
 
+
+
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](https://support.appsflyer.com/hc/articles/115005544169-Rich-in-app-events-Overview#revenue-events) | Estimated revenue from the purchase | 250.99 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Estimated revenue from the purchase | 250.99 |
 | af\_currency | Currency code | USD |
 | af\_content\_id | ID of the item | 001, 092 |
 | order\_id | Order ID | 9277 |
 | af\_receipt\_id | Receipt ID | 9277 |
+
+
 
 ## Recommended structures for custom events
 
@@ -120,10 +139,14 @@ When the user completes an exercise
 
 **Event parameters**
 
+
+
 | Name | Description | Example value |
 | --- | --- | --- |
 | course\_name | Name of the course | algebra |
 | exercise\_name | Name of the exercise | 2 |
+
+
 
 ### Course completed (course\_completed)
 
@@ -137,10 +160,14 @@ When the user completes a course
 
 **Event parameters**
 
+
+
 | Name | Description | Example value |
 | --- | --- | --- |
 | course\_name | Name of the course | algebra |
 | course\_completed | Whether the course was completed | yes |
+
+
 
 ### Certificate issued (certificate\_issued)
 
@@ -153,6 +180,8 @@ Record this event and compare it with other data to learn more about your users.
 When the user is issued a certificate
 
 **Event parameters**
+
+
 
 | Name | Description | Example value |
 | --- | --- | --- |

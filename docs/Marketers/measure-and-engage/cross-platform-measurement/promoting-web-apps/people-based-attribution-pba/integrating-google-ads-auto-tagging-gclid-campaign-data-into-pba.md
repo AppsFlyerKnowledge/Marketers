@@ -2,7 +2,13 @@
 title: "Integrating Google Ads auto-tagging (gclid) campaign data into PBA"
 excerpt: "Enrich PBA data with auto-tagging gclid campaign information by connecting your Google Ads account to AppsFlyer."
 ---
-Connect your Google Ads account (1 or more) to your brand bundle. Google Ads campaign data improves dashboard analytics capabilities and further enriches raw data reports.
+**At a glance:** Enrich PBA data with auto-tagging gclid campaign information by connecting to Google Ads.
+
+![](https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png)
+
+## Integrating Google Ads campaign data in PBA
+
+Connect your Google Ads account (1 or more) to your brand bundle**.** Google Ads campaign data improves dashboard analytics capabilities and further enriches raw data reports.
 
 * If the **gclid** is present on a web visit URL, PBA gets the following data from Google using GCLID. Note! The GCLID solution is not officially supported by Google Ads, which may deprecate the parameter in the future.
 * The integration enriches the following fields. Field availability depends on the PBA dashboard and raw data reports.
@@ -22,13 +28,13 @@ Campaign and ad hierarchy data is available in dashboards and raw data as follow
   * **Website Attribution:** Campaign > Adset > Ad levels supported.
   * **Web-Assisted Installs:** Campaign level
 * **Raw-data:**
-  * **Web-to-App:** web_googleads_campaign_id, web_googleads_campaign_name
+  * **Web-to-App:** web\_googleads\_campaign\_id, web\_googleads\_campaign\_name
 
 **To connect to Google Ads:**
 
-1. In AppsFlyer, from the side menu, select **Settings** > **Brand Bundles**
+1. In AppsFlyer, from the side menu, select **Settings**> **Brand Bundles**
 2. Go to **Google Ads integration** tab.
-3. Click **Connect account.** The Google Ads sign-in page opens.
+3. Click **Connect account.**The Google Ads sign-in page opens.
 4. Sign in to the Google Ads account. Complete the process to give AppsFlyer access.
 
 **Manage Google Ads connections**
@@ -40,6 +46,8 @@ On the Google Ads integration page, the following actions are available:
 
 ### PBA—Google Ads status messages
 
+
+
 | Status | Meaning | Remarks/action required |
 | --- | --- | --- |
 | Active | The connection is live and pulling data | N/A |
@@ -48,4 +56,4 @@ On the Google Ads integration page, the following actions are available:
 | No data | The connection was successful | Google Ads did not return any data to our query. Ensure that you connect all the relevant Google Ads accounts to PBA. |
 | No response | We can't contact Google Ads servers | At present, we can't connect to the Google Ads servers. If the status persists for more than 24 hours contact AppsFlyer support. |
 | Invalid credentials | AppsFlyer can't get the data as the credentials are not valid. | Ensure that the correct credentials are set in the Google Ads integration page. Try to connect again using the most recent credentials. If the problem persists contact AppsFlyer support. |
-| General error | | If this status persists for more than 24 hours contact AppsFlyer support |
+| General error |  | If this status persists for more than 24 hours contact AppsFlyer support |

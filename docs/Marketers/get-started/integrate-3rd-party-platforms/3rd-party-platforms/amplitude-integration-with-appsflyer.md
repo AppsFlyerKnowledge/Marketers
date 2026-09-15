@@ -265,7 +265,7 @@ The Integration Tab is divided into different sections as described below.
 
 On the **first visit** here, you will need to turn **Activate Partner** on to enable setup of the integration tab's parameters. The toggle must be on for as long as you work with the partner.
 
-Learn more about [partner activation](https://support.appsflyer.com/hc/articles/360000844778).
+Learn more about [partner activation](/docs/partner-activation-deactivation).
 
 ### General settings
 
@@ -317,7 +317,7 @@ Amplitude connects with AppsFlyer via a unique API Key. If you don't already hav
 
 ### Default postbacks
 
-AppsFlyer can send automatic postbacks to Amplitude following user installs, including both installs and re-engagements (including re-attributions). Re-engagements occur when a user who already has the app installed opens it after clicking through a campaign. Learn more about [default postbacks](https://support.appsflyer.com/hc/articles/4410395957521#default%20postbacks).
+AppsFlyer can send automatic postbacks to Amplitude following user installs, including both installs and re-engagements (including re-attributions). Re-engagements occur when a user who already has the app installed opens it after clicking through a campaign. Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default%20postbacks).
 
 <Image src="https://files.readme.io/3454ca573ee63ea076251459a9c619a747fc5640862e83582b2d10a985c2489a-41748033847953.png" alt="Screenshot 2025-12-03 at 1.57.03 PM.png" />
 
@@ -334,11 +334,11 @@ Once you have saved the configuration, AppsFlyer sends the following data to Amp
 - Media Source
 - Campaign name
 
-Sending IDFA for iOS devices is subject to [ATT consent by the user and to Advanced Privacy settings](https://support.appsflyer.com/hc/articles/360018515798).
+Sending IDFA for iOS devices is subject to [ATT consent by the user and to Advanced Privacy settings](/docs/apply-aggregated-advanced-privacy-framework).
 
 ### In-app event postbacks
 
-[Configure sending in-app event postbacks](https://support.appsflyer.com/hc/articles/4410395957521#g-in-app-event-postback-configuration) to Amplitude.
+[Configure sending in-app event postbacks](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration) to Amplitude.
 
 Attribution link tab
 

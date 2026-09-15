@@ -23,10 +23,10 @@ Below you can find the base attribution link with a detailed explanation per eac
 
 | AppsFlyer Parameter | Voluum Macros | Description |
 | --- | --- | --- |
-| &clickid= | {clickid} | Unique transaction ID of the user session - **Required** |
-| &af\_siteid= | {trafficsource.id} | ID of the traffic source - **Optional** |
+| &clickid= | `{clickid}` | Unique transaction ID of the user session - **Required** |
+| &af\_siteid= | `{trafficsource.id}` | ID of the traffic source - **Optional** |
 
-\*\* For complete AppsFlyer parameter list, [click here](https://support.appsflyer.com/hc/articles/207447163)
+\*\* For complete AppsFlyer parameter list, [click here](/docs/about-link-structure-and-parameters)
 
 \*\* For complete Voluum macro list, [click here](http://feedback.voluum.com/knowledgebase/articles/318681-click-urls)
 
@@ -50,7 +50,7 @@ Global In-App Event Postback:
 https://{Company-Domain}.trackvoluum.com/postback?cid={clickid}&payout={monetary}&txid={event-name}
 ```
 
-\*\* {Company-Domain} the network ID (domain) name provided by Volumm.
+\*\* `{Company-Domain}` the network ID (domain) name provided by Volumm.
 
 \*\* txid= Set as **Event Tag** in the AppsFlyer dashboard for each App by the advertiser. This is the actual in-app event name from the application.
 

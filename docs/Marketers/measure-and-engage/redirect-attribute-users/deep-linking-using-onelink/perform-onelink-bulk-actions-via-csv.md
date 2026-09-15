@@ -11,7 +11,7 @@ You can create, view, and edit links generated in bulk. These links are organize
 1. In AppsFlyer, go to **Engage** > **Bulk links**.
 2. You will see an intro page with one of the following buttons:
 1. **Get Started** - Click to create your first collection.
-2. **Create a OneLink template** - Make sure you have at least one OneLink template in your account, and a Growth/Enterprise plan. See [OneLink templates](https://support.appsflyer.com/hc/articles/207032246-OneLink-templates).
+2. **Create a OneLink template** - Make sure you have at least one OneLink template in your account, and a Growth/Enterprise plan. See [OneLink templates](/docs/create-a-onelink-template).
 3. **Upgrade** - Bulk links are available with the Enterprise or Growth plan. Contact your CSM or write to [hello@appsflyer.com](mailto:hello@appsflyer.com) about upgrading your package.
 
 ## Creating your first collection
@@ -24,7 +24,7 @@ Choose a name that reflects the purpose of your collection so you can quickly id
 4. Click **Save & continue.**
 5. Upload your CSV file. You can use the following [Sample CSV](https://cdn.appsflyer.com/onelink-bulk-links-mgmt/sample_file.csv) as a guide.
 
-See [Upload format](https://support.appsflyer.com/hc/articles/14511403892369-Bulk-Links#upload-format) to make sure your CSV is compatible and uploads successfully. Once the CSV file is uploaded, it gets validated. If there are invalid rows, a validity report CSV will be available for download to help fix your file. Follow the instructions in the UI and upload a corrected file.
+See [Upload format](/docs/perform-onelink-bulk-actions-via-csv#upload-format) to make sure your CSV is compatible and uploads successfully. Once the CSV file is uploaded, it gets validated. If there are invalid rows, a validity report CSV will be available for download to help fix your file. Follow the instructions in the UI and upload a corrected file.
 6. Click **Create collection.**
 
 ## Managing your bulk links with collections
@@ -48,7 +48,7 @@ Creating a new collection is available when the [monthly usage](/docs/perform-on
 
 1. Click **New collection**.
 2. Follow the instructions.
-1. The process follows the same steps as [Creating your first collection](https://support.appsflyer.com/hc/articles/14511403892369-Bulk-Links#creating-your-first-collection).
+1. The process follows the same steps as [Creating your first collection](/docs/perform-onelink-bulk-actions-via-csv#creating-your-first-collection).
 
 ### Downloading a collection of links
 
@@ -66,7 +66,7 @@ To Download a collection:
 
 > 📘 Important!
 >
-> AppsFlyer recommends using Branded Domains as they can improve campaign performance by driving trust and promoting brand awareness. [Learn more here.](https://support.appsflyer.com/hc/articles/360002329137-Branded-Domains)
+> AppsFlyer recommends using Branded Domains as they can improve campaign performance by driving trust and promoting brand awareness. [Learn more here.](/docs/brand-onelink-with-your-domain)
 
 ### Downloading a collection of QR codes
 
@@ -97,7 +97,7 @@ The adding links option is available when:
 
 To add links to a collection, click **menu options** > **Add links to collection.**
 
-- Links will be added using the method described in [Creating your first collection](https://support.appsflyer.com/hc/articles/14511403892369-Bulk-Links#creating-your-first-collection) from point 5 onwards.
+- Links will be added using the method described in [Creating your first collection](/docs/perform-onelink-bulk-actions-via-csv#creating-your-first-collection) from point 5 onwards.
 
 ### Editing links in a collection
 
@@ -113,7 +113,7 @@ The editing links option is available when:
 2. Download the collection base CSV. This file contains all the links in the collection you can edit.
 3. Follow the instructions in the first step to edit link parameters. For any links you want to update, make sure **Mark for update** is set to **true**.
 4. Click **Next**.
-5. Upload your edited CSV. See [Upload format](https://support.appsflyer.com/hc/articles/14511403892369-Bulk-Links#upload-format) to make sure your CSV is compatible and uploads successfully.
+5. Upload your edited CSV. See [Upload format](/docs/perform-onelink-bulk-actions-via-csv#upload-format) to make sure your CSV is compatible and uploads successfully.
    - Once the CSV file is uploaded, it gets validated.
    - If there are invalid rows, a validity report CSV is available for download to help fix your file. Follow the instructions in the UI and upload a corrected file.
 6. Click **Update links**.
@@ -190,7 +190,7 @@ In order to make sure your CSV uploads without any errors, make sure that your f
 - The file cannot be bigger than 4 MB
 - The file should only contain content for the links you are creating/updating
 - Each link should be in their own row
-- The **Custom Link ID** is a unique column, that enables the user to set the link short URL ID. The short URL ID cannot be edited after the link is created. To learn more about URL ID, see [here](https://support.appsflyer.com/hc/articles/208874366-OneLink-links-and-experiences#url-id).
+- The **Custom Link ID** is a unique column, that enables the user to set the link short URL ID. The short URL ID cannot be edited after the link is created. To learn more about URL ID, see [here](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#url-id).
 - Each column represents a parameter (Maximum 35 parameter columns)
 - Only UTF-8 character encoding is accepted
 

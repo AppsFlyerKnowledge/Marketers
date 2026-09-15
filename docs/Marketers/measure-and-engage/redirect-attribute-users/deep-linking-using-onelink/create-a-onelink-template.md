@@ -2,212 +2,193 @@
 title: "Create a OneLink template"
 excerpt: "Learn how to create and configure a OneLink template to establish the redirection and deep linking logic for your marketing campaigns."
 ---
-At a glance: Create a template to form the basis of the redirection logic for all OneLink links that you create for your various marketing campaigns. A template is required for creating links and end-user experiences.
+**At a glance:** Create a template to form the basis of the redirection logic for all OneLink links that you create for your various marketing campaigns. A template is required for creating links and end-user experiences.
 
 ## OneLink templates
 
-<Embed title="OneLink templates" typeOfEmbed="youtube" url="https://www.youtube.com/embed/d4AtCJ9122Q" />
+<Embed title="Create a OneLink template" typeOfEmbed="youtube" url="https://www.youtube.com/embed/d4AtCJ9122Q" providerUrl="https://www.youtube.com" />
 
 A OneLink template:
 
-- Is not a clickable link for your end-users; it is the foundation for generating many custom links. Usually, you only need one template per app (outside of testing) to generate as many links as you want for all your different advertising campaigns.
-- Is where you record your decisions on how to redirect users based on their device platform and on whether or not they have your app installed.
-- Represents the routing logic at the core of all the OneLink links you create for your various marketing campaigns. This includes the redirection settings for:
-  - **New users without your app installed**: To the correct app store or web URL
-  - **Existing users with your app already installed**: Opening the app via Android App Links, iOS Universal Links, or URI schemes. This involves some developer work to set up.
-  - **Note**: Redirection settings for website or app store can be overridden on the link level.
+* Is not a clickable link for your end-users; it is the foundation for generating many custom links. Usually, you only need one template per app (outside of testing) to generate as many links as you want for all your different advertising campaigns.
+* Is where you record your decisions on how to redirect users based on their device platform and on whether or not they have your app installed.
+* Represents the routing logic at the core of all the OneLink links you create for your various marketing campaigns. This includes the redirection settings for:
+  * **New users without your app installed**: To the correct app store or web URL
+  * **Existing users with your app already installed**: Opening the app via Android App Links, iOS Universal Links, or URI schemes. This involves some developer work to set up.
+  * **Note**: Redirection settings for website or app store can be overridden on the link level.
 
 ## Create a OneLink template
 
+
+
 | Who's involved | Prerequisites | Time required | Outcome |
 | --- | --- | --- | --- |
-| - Only a marketer is required to set up redirection logic for new users who don't have your app installed (for example, to the correct app store or web page). <br>- To add redirection logic for existing app users who already have your app installed (for example, to open the app), both a marketer and Android/iOS developers are required. | - An AppsFlyer account with at least one app.<br>-  Marketer must either be an AppsFlyer admin user, or have permission to add/edit OneLink templates. | Approximately 1.5 hours, working together with your Android/iOS developers. | A template from which you can create links that send users to the correct app store, web page, or into the app based on their device. |
+| * Only a marketer is required to set up redirection logic for new users who don't have your app installed (for example, to the correct app store or web page).<br />* To add redirection logic for existing app users who already have your app installed (for example, to open the app), both a marketer and Android/iOS developers are required. | * An AppsFlyer account with at least one app.<br />* Marketer must either be an AppsFlyer admin user, or have permission to add/edit OneLink templates. | Approximately 1.5 hours, working together with your Android/iOS developers. | A template from which you can create links that send users to the correct app store, web page, or into the app based on their device. |
+
+
 
 ### Create a OneLink template with redirection logic for new app users
 
 **To create a OneLink template:**
 
-1. In AppsFlyer, from the side menu, select **Engage** > **OneLink management**.
-
-   The OneLink suite is an account-level feature, which lets you create OneLink templates and their custom links for all your apps.
-
-   > 📘 Note
-   >
-   > If you don't have any templates created, an onboarding wizard opens. Follow the directions in the wizard and disregard the rest of this procedure.
-
-2. Click the menu icon > **Add OneLink template**.
-
-   The OneLink template setup page opens.
-
-   ![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
-
+1. In AppsFlyer, from the side menu, select **Engage** > **OneLink management**.  
+   The OneLink suite is an account-level feature, which lets you create OneLink templates and their custom links for all your apps.  
+   [![](https://support.appsflyer.com/hc/article_attachments/4406696125713)](https://support.appsflyer.com/hc/article_attachments/4406696125713) **Note**: If you don't have any templates created, an onboarding wizard opens. Follow the directions in the wizard and disregard the rest of this procedure.
+2. Click the menu icon > **Add OneLink template**.  
+   The OneLink template setup page opens.  
+   [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://support.appsflyer.com/hc/article_attachments/360009665478)
 3. In the **OneLink template name** field, enter a name.
 
-   > 📘 Note
-   >
-   > - A good OneLink template name includes the **name of the app** (for example feed\_me) or the use case or experience represented by the OneLink (for example pre\_launch\_landing\_page).
-   > - The name should not include the campaign or channel name or media source (since this isn't the actual end-user link, just the underlying template to create many links), or the name of the platform (Android, iOS, since multiple platforms are usually the reason for using a OneLink template in the first place).
-   > - This template name is only used internally. It doesn't affect your marketing attribution data and is not seen by users.
+   CALLSTART::Note::
 
-4. In the **Subdomain** field, enter your [subdomain](https://support.appsflyer.com/hc/articles/360000732237#subdomain) name.
-   - Choose a subdomain that matches your brand. For example, if your website is www.abcd.com choose abcd as your subdomain.
-   - Users will see this subdomain as part of the link URL. For example: `https://abcd.onelink.me/RPsv/37e5cd36`.
-   - The subdomain can’t be changed once custom links are created based on this template.
-   - Only use lower-case letters, digits, or hyphen (-).
-   - OneLink also supports fully branded domains, that can help you improve campaign performance and increase brand exposure. [Learn more](https://support.appsflyer.com/hc/articles/360002329137)
+   #### Note
+
+   * A good OneLink template name includes the **name of the app** (for example feed\_me) or the use case or experience represented by the OneLink (for example pre\_launch\_landing\_page).
+   * The name should not include the campaign or channel name or media source (since this isn't the actual end-user link, just the underlying template to create many links), or the name of the platform (Android, iOS, since multiple platforms are usually the reason for using a OneLink template in the first place).
+   * This template name is only used internally. It doesn't affect your marketing attribution data and is not seen by users.CALLEND::
+4. In the **Subdomain**field, enter your [subdomain](/docs/appsflyer-knowledge-base-glossary#subdomain) name.
+   * Choose a subdomain that matches your brand. For example, if your website is www.abcd.com choose abcd as your subdomain.
+   * Users will see this subdomain as part of the link URL. For example: `https://abcd.onelink.me/RPsv/37e5cd36`.
+   * The subdomain can’t be changed once custom links are created based on this template.
+   * Only use lower-case letters, digits, or hyphen (-).
+   * OneLink also supports fully branded domains, that can help you improve campaign performance and increase brand exposure. [Learn more](/docs/brand-onelink-with-your-domain)
 5. Select your Android app, iOS app, or both.
 6. (Optional) Turn on Secure Shortlinks if you want to stop your links from being hijacked with extra parameters. **To turn on secure shortlinks:**
 
    Under **Secure Shortlinks**, turn on **Don't attribute clicks with added parameters**.
 
-   Here's what this means for you: once it's on, if anyone adds a parameter to a shortlink created from this template, that click won't be attributed. The user is redirected according to the template's redirection settings; only attribution is affected.
-
+   Here's what this means for you: once it's on, if anyone adds a parameter to a shortlink created from this template, that click won't be attributed. The user is redirected according to the template's redirection settings; only attribution is affected.  
+     
    **Example:**
 
-   | Link | Result |
-   | --- | --- |
-   | `[subdomain].onelink.me/[template_id]/[shortlink_id]` | Attributed as usual. |
-   | `[subdomain].onelink.me/[template_id]/[shortlink_id]?param=value` | A parameter was added, so the click isn't attributed. |
+   
+
+| Link | Result |
+| --- | --- |
+| `[subdomain].onelink.me/[template_id]/[shortlink_id]` | Attributed as usual. |
+| `[subdomain].onelink.me/[template_id]/[shortlink_id]?param=value` | A parameter was added, so the click isn't attributed. |
+
+
 
    **Notes:**
-   - This setting applies at the template level. There's no way to turn it on or off for individual links.
-   - For templates created before this feature's release, the setting is off. Turn it on if you want it. For templates created after release, it's on by default; turn it off if you don't want it.
-7. Set where to redirect users **When app isn't installed**.
 
-   - If you've selected an Android app and an iOS app, the template is by default configured to send new app users to the correct app store.
-   - If you've selected only one app, Android or iOS, the template is configured to send ALL users (iOS and Android, new and existing) to the single defined destination.
-   - If you select an Android app that isn't in Google Play, you must enter a URL to which Android users are redirected.
-   - [Optional] **Redirect to third-party app stores** if the app is in other stores besides Google Play. Make sure the app in the other stores has the same package name as the Android app selected in your OneLink template.
-   - [Optional] **Change to a different URL**: In some cases, you may prefer to take new users to a mobile web experience instead of directly to the app store (or your app may not be listed in the store). To implement, enter that URL in the URL field. **Note**: If you set both a third-party redirection and a different URL, the default redirection is to the third-party app store.
-   - [Optional] Turn on **Display App Clip for users with Private Relay** (available on iOS 14+). [Learn more about App Clips](https://support.appsflyer.com/hc/articles/360014262358).
-8. Skip **When app is installed**. This is discussed in the [next procedure](https://support.appsflyer.com/hc/articles/207032246#add-redirection-logic-for-existing-app-users).
-9. [Optional] Change destination for **When link is clicked on desktop.**
-
-   - In some cases, your link might be clicked on a desktop computer, especially if it is sent via email or social media. If you expect a lot of desktop traffic to your link, you might want to send those users to a landing page or the main website homepage, or a page where they can request an SMS link on their phone, instead of the correct app store.
-   - By default, desktop users are redirected to a web version of the App Store or the Google Play store - depending on the apps set on the template.
-   - To change the default store option, select "Desktop web URL" and add the relevant web store URL. Make sure to add the store domain to the redirect allowlist.
-10. [Optional] **Select apps from other platforms**
-
+   * This setting applies at the template level. There's no way to turn it on or off for individual links.
+   * For templates created before this feature's release, the setting is off. Turn it on if you want it. For templates created after release, it's on by default; turn it off if you don't want it.
+7. Set where to redirect users **When app isn't installed**.  
+   * If you've selected an Android app and an iOS app, the template is by default configured to send new app users to the correct app store.
+   * If you've selected only one app, Android or iOS, the template is configured to send ALL users (iOS and Android, new and existing) to the single defined destination.
+   * If you select an Android app that isn't in Google Play, you must enter a URL to which Android users are redirected.
+   * [Optional] **Redirect to third-party app stores** if the app is in other stores besides Google Play. Make sure the app in the other stores has the same package name as the Android app selected in your OneLink template.
+   * [Optional] **Change to a different URL**: In some cases, you may prefer to take new users to a mobile web experience instead of directly to the app store (or your app may not be listed in the store). To implement, enter that URL in the URL field. **Note**: If you set both a third-party redirection and a different URL, the default redirection is to the third-party app store.
+   * [Optional] Turn on **Display App Clip for users with Private Relay** (available on iOS 14+). [Learn more about App Clips](/docs/apple-app-clips-integration-guide).
+8. Skip **When app is installed**. This is discussed in the [next procedure](/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users).
+9. [Optional] Change destination for **When link is clicked on desktop.**  
+   * In some cases, your link might be clicked on a desktop computer, especially if it is sent via email or social media. If you expect a lot of desktop traffic to your link, you might want to send those users to a landing page or the main website homepage, or a page where they can request an SMS link on their phone, instead of the correct app store.
+   * By default, desktop users are redirected to a web version of the App Store or the Google Play store - depending on the apps set on the template.
+     * To change the default store option, select "Desktop web URL" and add the relevant web store URL. Make sure to add the store domain to the redirect allowlist.
+10. [Optional] **Select apps from other platforms**  
     If you have a dedicated app version for the following:
-    - **Windows phone**: Turn on the toggle and select app or **Change to a different URL**.
-    - **iPad**: Turn on the toggle and select iPad app
-    - **Amazon Kindle Fire**: Turn on the toggle and add the Amazon store ASIN or app page URL.
-11. Click **Save OneLink template** (Update OneLink template for edited templates).
-
-    Your OneLink template is now created and can be used to create many different clickable links (see [OneLink links and experiences](https://support.appsflyer.com/hc/articles/208874366)).
+    * **Windows phone**: Turn on the toggle and select app or **Change to a different URL**.
+    * **iPad**: Turn on the toggle and select iPad app
+    * **Amazon Kindle Fire**: Turn on the toggle and add the Amazon store ASIN or app page URL.
+11. Click **Save OneLink template** (Update OneLink template for edited templates).   
+    Your OneLink template is now created and can be used to create many different clickable links (see [OneLink links and experiences](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink)).
 
 ### Add redirection logic for existing app users
 
 Existing app users usually expect to be redirected directly into the app, not to an app store or web page. There are three technologies available to open the app directly after a click:
 
-- **iOS Universal Links**: Works with iOS 9 and up, and provides a smooth, secure experience when opening your app.
-- **Android App Links**: Works with Android 6 and up, and provides a smooth, secure experience when opening your app. **Note**: Samsung Internet Browser can't open apps using Android App Links.
-- **URI scheme**:
+* **iOS U****niversal Links**: Works with iOS 9 and up, and provides a smooth, secure experience when opening your app.
+* **Android App Links**: Works with Android 6 and up, and provides a smooth, secure experience when opening your app. **Note**: Samsung Internet Browser can't open apps using Android App Links.
+* **URI scheme**:  
+  * Fallback method:
+    * Android: URI scheme is an effective fallback method for when Android App Links fail to open the app either because they don't work or aren't set up
+    * iOS: Limited fallback capabilities for when Universal Links fail to open the app either because they don't work or aren't set up. [Learn more](/docs/uri-scheme-fallback-for-ios)
+  * Primary method for opening apps on Samsung devices.
+  * Is an address, that when accessed, opens your app if it's installed. They are similar to website links, but open apps instead of websites.
+  * Must be the same for iOS and Android.
 
-  - Fallback method:
-    - Android: URI scheme is an effective fallback method for when Android App Links fail to open the app either because they don't work or aren't set up
-    - iOS: Limited fallback capabilities for when Universal Links fail to open the app either because they don't work or aren't set up. [Learn more](https://support.appsflyer.com/hc/articles/115002366466)
-  - Primary method for opening apps on Samsung devices.
-  - Is an address, that when accessed, opens your app if it's installed. They are similar to website links, but open apps instead of websites.
-  - Must be the same for iOS and Android.
-
-For the best user experience, security, and device coverage, we recommend enabling as many technologies as possible. If you enable all link technologies, OneLink will automatically apply the best method for each user.
+For the best user experience, security, and device coverage, we recommend enabling as many technologies as possible. If you enable all link technologies, OneLink will automatically apply the best method for each user.
 
 **To add redirection logic for existing app users to your OneLink template:**
 
-1. In AppsFlyer, from the side menu, select **Engage** > **OneLink management**.
+1. In AppsFlyer, from the side menu, select **Engage** > **OneLink management**.
 2. Select the OneLink template you want to edit.
 3. Click the menu icon (**⋮**), then click **Edit OneLink template**.
-4. Scroll down to **When app is installed**.
+4. Scroll down to **When app is installed**. [![](https://support.appsflyer.com/hc/article_attachments/18363965490833)](https://support.appsflyer.com/hc/article_attachments/18363965490833)
 5. Follow the instructions for iOS, Android, and fallback setup:
 
-<Tabs>
-<Tab title="iOS Universal Links">
+   iOS Universal Links Android App Links URI scheme
 
-Universal Links take the format of regular web links (e.g. **https://yourbrand.onelink.me** or **https://www.yourbrand.com**) and thus require setting a subdomain (covered in the previous guide). OneLink also supports fully [branded domains](https://support.appsflyer.com/hc/articles/360002329137), but that isn't necessary to complete this guide.
+   Universal Links take the format of regular web links (e.g. **https://yourbrand.onelink.me**or**https://www.yourbrand.com)**and thus require setting a subdomain (covered in the [previous guide](/docs/create-a-onelink-template#procedures)). OneLink also supports fully [branded domains](/docs/brand-onelink-with-your-domain), but that isn't necessary to complete this guide.
 
-**To launch the app using Universal Links**:
+   **To launch the app using Universal Links**:
 
-1. Contact your iOS developer:
-   - Give them the subdomain for this OneLink template.
-   - Tell them to follow [these instructions](https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#procedures-for-ios-universal-links).
-   - The developer returns to you with the Team ID (also called Apple App ID Prefix, for example, PF23MIWNTW).
-   - If the app is not yet published, the developer must also give you the Bundle Identifier (for example, com.myapp.something).
-2. In the OneLink template page click **Change to launch the app using Universal Links**.
-3. In the new window, select **Launch the app using Universal Links**.
-4. In the **Team ID** field, enter the team ID provided by the developer.
-5. If the app is not published, also enter the **Bundle Identifier**.
-6. Click **Save changes**.
+   1. Contact your iOS developer:
+      * Give them the subdomain for this OneLink template.
+      * Tell them to follow [these instructions](https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#procedures-for-ios-universal-links).
+      * The developer returns to you with the Team ID (also called Apple App ID Prefix, for example, PF23MIWNTW).
+      * If the app is not yet published, the developer must also give you the Bundle Identifier (for example, com.myapp.something).  
+        [![](https://support.appsflyer.com/hc/article_attachments/18363965493521)](https://support.appsflyer.com/hc/article_attachments/18363965493521)
+   2. In the OneLink template page click **Change to launch the app using Universal Links**.
+   3. In the new window, select **Launch the app using Universal Links**.
+   4. In the **Team ID** field, enter the team ID provided by the developer.
+   5. If the app is not published, also enter the **Bundle Identifier**.
+   6. Click **Save changes**.
 
-</Tab>
+   App Links take the format of regular web links (e.g. **https://yourbrand.onelink.me** or **https://www.yourbrand.com)**and thus require setting a subdomain (covered in the [previous guide](/docs/create-a-onelink-template#procedures)). OneLink also supports fully [branded domains](/docs/brand-onelink-with-your-domain), but that isn't necessary to complete this guide.
 
-<Tab title="Android App Links">
+   **Before you begin**:
 
-App Links take the format of regular web links (e.g. **https://yourbrand.onelink.me** or **https://www.yourbrand.com**) and thus require setting a subdomain (covered in the previous guide). OneLink also supports fully [branded domains](https://support.appsflyer.com/hc/articles/360002329137), but that isn't necessary to complete this guide.
+   Record the subdomain you chose for this OneLink template.
 
-**Before you begin**:
+   **To launch the app using Android App Links**:
 
-Record the subdomain you chose for this OneLink template.
+   1. Contact your Android developer:   
+      Tell them to generate a SHA256 fingerprint by following [these instructions](https://dev.appsflyer.com/hc/docs/dl_android_init_setup#generating-a-sha256-fingerprint).  
+      The developer will come back to you with the SHA256 fingerprint. For example: `DC:65:43:67:F3:BD:02:52:AC:B4:50:F1:74:54: 23:49:4D:49:6C:E6:DF:56:BD:CB:53:06:11:5B:C9:4E:5D:0C`
+   2. In the OneLink template page click **Change to launch the app using App Links**.
+   3. In the new window, select **Launch the app using App Links**.
+   4. In the **SHA256 fingerprint** field, enter the SHA256 fingerprint provided by the developer.  
+      An auto-generated intent-filter code appears.
+   5. Contact your Android developer:   
+      Give them the auto-generated intent-filter code.  
+      Tell them to follow [these instructions](https://dev.appsflyer.com/hc/docs/dl_android_init_setup#adding-app-link-intent-filter-to-main-activity) and confirm completion.
 
-**To launch the app using Android App Links**:
+   The URI scheme mainly serves as a fallback for both iOS and Android users, and so must be the same at both.
 
-1. Contact your Android developer:
+   **To set the Android and iOS URI fallback:**
 
-   Tell them to generate a SHA256 fingerprint by following [these instructions](https://dev.appsflyer.com/hc/docs/dl_android_init_setup#generating-a-sha256-fingerprint).
+   1. Contact your iOS AND Android developers and decide on a URI scheme. For example: `feedmeapp://`
 
-   The developer will come back to you with the SHA256 fingerprint. For example: `DC:65:43:67:F3:BD:02:52:AC:B4:50:F1:74:54: 23:49:4D:49:6C:E6:DF:56:BD:CB:53:06:11:5B:C9:4E:5D:0C`
-2. In the OneLink template page click **Change to launch the app using App Links**.
-3. In the new window, select **Launch the app using App Links**.
-4. In the **SHA256 fingerprint** field, enter the SHA256 fingerprint provided by the developer.
+      CALLSTART::Note::
 
-   An auto-generated intent-filter code appears.
-5. Contact your Android developer:
+      #### Tip
 
-   Give them the auto-generated intent-filter code.
-
-   Tell them to follow [these instructions](https://dev.appsflyer.com/hc/docs/dl_android_init_setup#adding-app-link-intent-filter-to-main-activity) and confirm completion.
-
-</Tab>
-
-<Tab title="URI scheme">
-
-The URI scheme mainly serves as a fallback for both iOS and Android users, and so must be the same at both.
-
-**To set the Android and iOS URI fallback:**
-
-1. Contact your iOS AND Android developers and decide on a URI scheme. For example: `feedmeapp://`
-
-   > 👍 Tip
-   >
-   > - Neither Apple or Google enforce unique naming for app schemes. **Choose a scheme name unique to your brand** to avoid conflicting schemes across different applications. A good scheme name could be your app bundle ID, for example, **com.company.app**
-   > - To enable OneLink to serve both iOS and Android, it is important that **the same scheme is defined for both platforms**. Here are instructions for [iOS](https://help.contrast.co/hc/en-us/articles/200865293-URL-Scheme-Intro-for-App-Developers) and [Android](https://developer.android.com/training/app-links/deep-linking.html).
-   > - The URI scheme should not start with http or https.
-
-2. Tell the iOS developer to implement the URI scheme in their app by [following these instructions](https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#procedures-for-uri-scheme).
-
-   **AND**
-
-   Tell the Android developer to implement the URI scheme in their app by [following these instructions](https://dev.appsflyer.com/hc/docs/dl_android_init_setup#procedures-for-uri-scheme).
-3. When done, the developer confirms the value of the URI scheme implemented. Expect it to look like: `exampleapp://` or `exampleapp://home` or `exampleapp://main`, etc.
-4. In the OneLink template page click **Add URI scheme to launch the app**.
-5. Select **Launch the app using URI scheme**.
-6. Enter the URI scheme value.
-7. Click **Save changes**.
-8. Test the URI scheme (this can be done by you OR your developers):
-   1. Go to [this free public testing tool](https://halgatewood.com/deeplink/) on both an iOS and an Android device that has your app installed.
-   2. Tap the link generated by the tool.
-
-      If the URI scheme is correct, the app opens.
-
-</Tab>
-</Tabs>
-
+      * Neither Apple or Google enforce unique naming for app schemes. **Choose a scheme name unique to your brand** to avoid conflicting schemes across different applications. A good scheme name could be your app bundle ID, for example, **com.company.app**
+      * To enable OneLink to serve both iOS and Android, it is important that **the same scheme is defined for both platforms**. Here are instructions for [iOS](https://help.contrast.co/hc/en-us/articles/200865293-URL-Scheme-Intro-for-App-Developers) and [Android](https://developer.android.com/training/app-links/deep-linking.html).
+      * The URI scheme should not start with http or https.CALLEND::
+   2. Tell the iOS developer to implement the URI scheme in their app by [following these instructions](https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#procedures-for-uri-scheme).  
+      **AND**  
+      Tell the Android developer to implement the URI scheme in their app by [following these instructions](https://dev.appsflyer.com/hc/docs/dl_android_init_setup#procedures-for-uri-scheme).
+   3. When done, the developer confirms the value of the URI scheme implemented. Expect it to look like: `exampleapp://` or `exampleapp://home` or `exampleapp://main`, etc.
+   4. In the OneLink template page click **Add URI scheme to launch the app**.
+   5. Select **Launch the app using URI scheme**.
+   6. Enter the URI scheme value.
+   7. Click **Save changes**.
+   8. Test the URI scheme (this can be done by you OR your developers):
+      1. Go to [this free public testing tool](https://halgatewood.com/deeplink/) on both an iOS and an Android device that has your app installed.
+      2. Tap the link generated by the tool.  
+         If the URI scheme is correct, the app opens.
 6. Click **Update OneLink template**.
 
-> 📘 Note
+> 📘 **Note**
 >
-   > - When you save or update your OneLink template, AppsFlyer automatically generates the AASA and/or Digital Asset Links JSON file to verify your app domain, and hosts it for you. This is critical for your Universal Links and App Links to work properly.
-   > - It can take up to 1 hour for OneLink template updates to take effect.
+> #### Note
+>
+> * When you save or update your OneLink template, AppsFlyer automatically generates the AASA and/or Digital Asset Links JSON file to verify your app domain, and hosts it for you. This is critical for your Universal Links and App Links to work properly.
+> * It can take up to 1 hour for OneLink template updates to take effect.
+
 
 ### Customize QR codes
 
@@ -215,26 +196,23 @@ The URI scheme mainly serves as a fallback for both iOS and Android users, and s
 
 You can customize the QR codes generated via OneLink by:
 
-- Adding your logo to the QR code
-- Changing the color of the QR code.
+* Adding your logo to the QR code
+* Changing the color of the QR code.
 
 **Note**: QR code customization occurs at the template level; not at the individual link level. Therefore, customizations affect all QR codes based on the edited template.
 
 **To customize your QR code**:
 
 1. In AppsFlyer, from the side menu, select **Engage** > **OneLink Custom Links**.
-2. Hover over the **Actions** icon of the template you want to edit and click **Customize QR code**.
+2. Hover over the **Actions** icon of the template you want to edit and click **Customize QR code**.  
+   The QR code editor opens.
+3. Enter the URL where your logo is hosted. For example: https://yourbrand.com/logo.png.  
+   Logo requirements:
 
-The QR code editor opens.
-3. Enter the URL where your logo is hosted. For example: https://yourbrand.com/logo.png.
-
-Logo requirements:
-
-- PNG or JPG format
-- Square or circular with a transparent background
-- Minimum dimensions 400 x 400 px
-- For printing, use maximum image resolution
-
+   * PNG or JPG format
+   * Square or circular with a transparent background
+   * Minimum dimensions 400 x 400 px
+   * For printing, use maximum image resolution
 4. Set the QR code color.
 5. Click **Save**.
 
@@ -242,21 +220,24 @@ Logo requirements:
 
 A favicon is the small icon that appears next to your link title when a link is shared on social media or messaging apps. Customize how it looks by adding your own icon here. It applies to all links based on this template, and displays on supported platforms when a link is shared with a custom social media preview configured.
 
-> 📘 Note
+> 📘 **Note**
 >
-> This favicon only appears in link previews on platforms that support it, and only when **Custom preview (image and tags)** is configured at the link level. [Learn more](https://support.appsflyer.com/hc/articles/208874366#social-media-preview-og-tags)
+> #### Note
+>
+> This favicon only appears in link previews on platforms that support it, and only when **Custom preview (image and tags)** is configured at the link level. [Learn more](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-media-preview-og-tags)
+
 
 **To set a favicon for your OneLink template:**
 
 1. In AppsFlyer, from the side menu, select **Engage** > **OneLink management**.
 2. Select the OneLink template you want to edit.
-3. Click the menu icon ( **⋮**), then click **Edit OneLink template**.
+3. Click the menu icon (**⋮**), then click **Edit OneLink template**.
 4. Scroll down to the **Favicon** section.
 5. In the **Favicon Image URL** field, enter the URL of your favicon image.
-   - Supported format: ICO
-   - Recommended icon size: 32×32 or 64×64 pixels
-   - The file size should not exceed 100 KB.
-   - The URL must be publicly accessible
+   * Supported format: ICO
+   * Recommended icon size: 32×32 or 64×64 pixels
+   * The file size should not exceed 100 KB.
+   * The URL must be publicly accessible
 6. Check the **Preview** to confirm the icon displays correctly.
 7. Click **Update OneLink template**.
 
@@ -264,18 +245,22 @@ A favicon is the small icon that appears next to your link title when a link is 
 
 ### Key traits and limitations
 
+
+
 | Trait | Remarks |
 | --- | --- |
 | Agencies | Agencies cannot create OneLink templates and links. |
-| Add/edit OneLink templates | Account users require [permission](https://support.appsflyer.com/hc/articles/4409128270481) to add and edit OneLink templates. |
+| Add/edit OneLink templates | Account users require [permission](/docs/user-management) to add and edit OneLink templates. |
 | OneLink templates | Up to 600 OneLink templates per account. |
-| Desktop | When you set the OneLink URL or template to redirect desktop users to a different URL, the web URL is added to the link in the `af_web_dp` parameter. When the link contains `af_web_dp`, AppsFlyer does not register a click when it comes from a desktop. |
-| Redirect to third-party app stores | Multiple app stores can be set on the OneLink template only if the app package name is the same for all app stores. To learn more about OneLink redirection to third-party Android app stores see [here](/docs/bulletin-onelink-redirection-to-third-party-android-app-stores).<br>**Note**:<br>- Huawei and other third-party stores sometimes require different package names. When this is the case, the same OneLink template can't be used for multiple app stores.<br>- Some Xiaomi devices have the GetApps store which uses the same URI scheme as Google Play. This means that if your intention is to redirect these device users to Google Play but your app doesn't exist in Xiaomi, the link will redirect to GetApps.<br>- If the package name is the same, but the channel is different, the redirection works, but attribution doesn't.<br>- [Learn more](https://support.appsflyer.com/hc/articles/207447023) about third-party app store attribution and data. |
-| Updating a template | - Changes to the configuration of a OneLink template take up to 1 hour to apply.<br>- Onelink templates can't be edited if an associated app was deleted from the account. In this case, you can:<br>  - Create a new template.<br>  - Contact your AppsFlyer customer success manager or write to hello@appsflyer.com to restore the deleted app. |
-| URI scheme | See [here](https://support.appsflyer.com/hc/articles/208874366-OneLink-links-and-experiences#chrome-browser-on-ios). |
+| Desktop | When you set the OneLink URL or template to redirect desktop users to a different URL, the web URL is added to the link in the `af_web_dp` parameter. When the link contains `af_web_dp`, AppsFlyer does not register a click when it comes from a desktop. |
+| Redirect to third-party app stores | Multiple app stores can be set on the OneLink template only if the app package name is the same for all app stores. To learn more about OneLink redirection to third-party Android app stores see [here](/docs/bulletin-onelink-redirection-to-third-party-android-app-stores?query=3rd%20party%20store).<br /><br />**Note**:<br /><br />* Huawei and other third-party stores sometimes require different package names. When this is the case, the same OneLink template can't be used for multiple app stores.<br />* Some Xiaomi devices have the GetApps store which uses the same URI scheme as Google Play. This means that if your intention is to redirect these device users to Google Play but your app doesn't exist in Xiaomi, the link will redirect to GetApps.<br />* If the package name is the same, but the channel is different, the redirection works, but attribution doesn't.<br />* [Learn more](/docs/set-up-multi-store-android-attribution) about third-party app store attribution and data. |
+| Updating a template | * Changes to the configuration of a OneLink template take up to 1 hour to apply.<br />* Onelink templates can't be edited if an associated app was deleted from the account. In this case, you can:<br />  * Create a new template.<br />  * Contact your AppsFlyer customer success manager or write to hello@appsflyer.com to restore the deleted app. |
+| URI scheme | See [here](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#chrome-browser-on-ios). |
 
-Got a question about OneLink templates? Check out our [FAQ](https://support.appsflyer.com/hc/articles/360014821438#onelink-template-faq)!
+
+
+Got a question about OneLink templates? Check out our [FAQ](/docs/onelink-troubleshooting-and-faq#onelink-template-faq)!
 
 ## Next step
 
-Follow the instructions to [create OneLink links](https://support.appsflyer.com/hc/articles/208874366) based on your template.
+Follow the instructions to [create OneLink links](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink) based on your template.

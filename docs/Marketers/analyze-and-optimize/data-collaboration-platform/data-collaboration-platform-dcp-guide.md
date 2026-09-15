@@ -83,7 +83,7 @@ Sources refer to your first-party data ingested into the Data Collaboration Plat
 
 ### Step 4. Create a collaboration
 
-The collaboration is where all the action happens. It entails inviting a collaborator, setting [permissions](/docs/data-collaboration-platform-dcp-sharing-permissions) defining what your collaborator can do with the shared data, and finally, sharing your data. Learn how to [create a collaboration](https://support.appsflyer.com/hc/articles/32192739295377).
+The collaboration is where all the action happens. It entails inviting a collaborator, setting [permissions](/docs/data-collaboration-platform-dcp-sharing-permissions) defining what your collaborator can do with the shared data, and finally, sharing your data. Learn how to [create a collaboration](/docs/data-collaboration-platform-dcp-create-a-collaboration).
 
 ### Step 5. Build audiences and run campaigns
 

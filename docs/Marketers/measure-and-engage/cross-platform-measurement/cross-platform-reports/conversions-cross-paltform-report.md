@@ -6,13 +6,13 @@ excerpt: "The Conversions cross-platform report shows the complete user journey 
 
 The Conversions cross-platform report is a raw data report that provides user-level conversion records, linked across platforms using your [Customer User ID (CUID)](https://dev.appsflyer.com/hc/docs/set-customer-user-id). This lets you analyze the complete user journey that led to a conversion, not only the last touchpoint.
 
-For more information about the user-based attribution flow and configuration, see [User-based cross-platform attribution](https://support.appsflyer.com/hc/articles/39104189339793).
+For more information about the user-based attribution flow and configuration, see [User-based cross-platform attribution](/docs/beta-user-based-cross-platform-attribution).
 
 ## Report fields
 
 To learn which fields are contained in the report, download a [report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vRTFg6HXtHNYwegAjMysjybPbRk4IO8uflwvbGvR_xb11BcCrCWQ7i3xZD_Y2iiYSsx_MjTPN0E_Bmk/pub?gid=670907846&single=true&output=csv).
 
-The report sample includes all the report fields and their values. For the definitions of the fields, see [the field dictionary](https://support.appsflyer.com/hc/articles/208387843).
+The report sample includes all the report fields and their values. For the definitions of the fields, see [the field dictionary](/docs/raw-data-field-dictionary).
 
 The report contains three groups of fields:
 

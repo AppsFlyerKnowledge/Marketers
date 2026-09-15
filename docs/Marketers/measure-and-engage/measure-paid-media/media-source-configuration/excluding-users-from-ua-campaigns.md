@@ -14,7 +14,7 @@ Campaign performance can suffer for the following reasons:
 - **Distorted conversion rates** - UA campaigns seem less successful. There are fewer installs as impressions are wasted on existing users.
 - **Loss of alternative users** - Non-users could have seen the ads and become your mobile users.
 
-[SRN mistargeting](https://support.appsflyer.com/hc/articles/360001546905#what-is-srn-mistargeting) is a similar and common performance issue. This significant issue may happen if both your UA and retargeting campaigns are with the same SRN. [Learn more](https://support.appsflyer.com/hc/articles/360001546905#is-mistargeting-a-problem)
+[SRN mistargeting](/docs/self-reporting-networks-srns#what-is-srn-mistargeting) is a similar and common performance issue. This significant issue may happen if both your UA and retargeting campaigns are with the same SRN. [Learn more](/docs/self-reporting-networks-srns#is-mistargeting-a-problem)
 
 ## Solutions
 

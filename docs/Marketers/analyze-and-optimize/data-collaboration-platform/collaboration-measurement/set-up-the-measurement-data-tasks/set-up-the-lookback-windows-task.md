@@ -6,7 +6,7 @@ Lookback windows define the maximum time between a user engagement (click or vie
 
 ## Prerequisites
 
-Before a collaborator who is not the collaboration owner can set up the Lookback Windows task, the owner must first assign it to them. For more information, see [Assign configuration tasks](https://support.appsflyer.com/hc/articles/38354928391313-Set-up-collaboration-measurement#assign-configuration-task).
+Before a collaborator who is not the collaboration owner can set up the Lookback Windows task, the owner must first assign it to them. For more information, see Assign configuration tasks.
 
 ## Open the Lookback windows task
 
@@ -22,7 +22,7 @@ To open the Lookback windows task, follow these steps:
 
 > 📘 Note
 >
-> If the **Lookback windows** pane is grayed out, ask the collaboration owner [to assign you the Lookback windows task](https://support.appsflyer.com/hc/articles/38354928391313-Set-up-collaboration-measurement#assign-configuration-task).
+> If the **Lookback windows** pane is grayed out, ask the collaboration owner to assign you the Lookback windows task.
 
 ## Set the collaboration lookback window
 

@@ -40,10 +40,10 @@ If the CMN platform is an app, follow the instructions below for each data type:
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Campaigns | CMN | - [Campaign source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](https://support.appsflyer.com/hc/articles/38190881693969-Set-Campaigns-task) |
-| Conversions | CMN | - [Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)<br>- [Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events) | - [On-site Conversions task configuration](https://support.appsflyer.com/hc/articles/38187770114449-Set-the-Conversions-task#set-up-onsite-campaign-conversions) |
-| Engagements | CMN | - [Engagement source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme)<br>- [Engagement in-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-engagement-inapp-events) | - [Engagements task configuration](https://support.appsflyer.com/hc/articles/38188042548113-Set-Engagements-task) |
-| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows task configuration](https://support.appsflyer.com/hc/articles/38191154658193-Set-Lookback-windows-task) |
+| Campaigns | CMN | - [Campaign source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](/docs/set-up-the-campaigns-task) |
+| Conversions | CMN | - [Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)<br />- [Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events) | - [On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-onsite-campaign-conversions) |
+| Engagements | CMN | - [Engagement source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme)<br />- [Engagement in-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-engagement-inapp-events) | - [Engagements task configuration](/docs/set-up-the-engagements-task) |
+| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows task configuration](/docs/set-up-the-lookback-windows-task) |
 
 ##### The CMN platform is a website
 
@@ -51,10 +51,10 @@ If the CMN platform is a website, follow the instructions below for each data ty
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Campaigns | CMN | - [Campaign source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](https://support.appsflyer.com/hc/articles/38190881693969-Set-Campaigns-task) |
-| Conversions | CMN | - [Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme) | - [On-site Conversions task configuration](https://support.appsflyer.com/hc/articles/38187770114449-Set-the-Conversions-task#set-up-onsite-campaign-conversions) |
-| Engagements | CMN | - [Engagement source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme) | - [Engagements task configuration](https://support.appsflyer.com/hc/articles/38188042548113-Set-Engagements-task) |
-| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows task configuration](https://support.appsflyer.com/hc/articles/38191154658193-Set-Lookback-windows-task) |
+| Campaigns | CMN | - [Campaign source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](/docs/set-up-the-campaigns-task) |
+| Conversions | CMN | - [Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme) | - [On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-onsite-campaign-conversions) |
+| Engagements | CMN | - [Engagement source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme) | - [Engagements task configuration](/docs/set-up-the-engagements-task) |
+| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows task configuration](/docs/set-up-the-lookback-windows-task) |
 
 </Tab>
 <Tab title="The conversions take place on the advertiser platform">
@@ -65,10 +65,10 @@ If the advertiser platform is an app, follow the instructions below for each dat
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Campaigns | Advertiser | - [Campaign source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](https://support.appsflyer.com/hc/articles/38190881693969-Set-Campaigns-task) |
-| Conversions | Advertiser | - [Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)<br>- [Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events) | - [On-site Conversions task configuration](https://support.appsflyer.com/hc/articles/38187770114449-Set-the-Conversions-task#set-up-onsite-campaign-conversions) |
-| Engagements | CMN | - [Engagement source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme)<br>- [Engagement in-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-engagement-inapp-events) | - [Engagements task configuration](https://support.appsflyer.com/hc/articles/38188042548113-Set-Engagements-task) |
-| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows task configuration](https://support.appsflyer.com/hc/articles/38191154658193-Set-Lookback-windows-task) |
+| Campaigns | Advertiser | - [Campaign source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](/docs/set-up-the-campaigns-task) |
+| Conversions | Advertiser | - [Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)<br />- [Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events) | - [On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-onsite-campaign-conversions) |
+| Engagements | CMN | - [Engagement source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme)<br />- [Engagement in-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-engagement-inapp-events) | - [Engagements task configuration](/docs/set-up-the-engagements-task) |
+| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows task configuration](/docs/set-up-the-lookback-windows-task) |
 
 ##### The advertiser platform is a website
 
@@ -76,10 +76,10 @@ If the advertiser platform is a website, follow the instructions below for each 
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Campaigns | Advertiser | - [Campaign source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](https://support.appsflyer.com/hc/articles/38190881693969-Set-Campaigns-task) |
-| Conversions | Advertiser | - [Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme) | - [On-site Conversions task configuration](https://support.appsflyer.com/hc/articles/38187770114449-Set-the-Conversions-task#set-up-onsite-campaign-conversions) |
-| Engagements | CMN | - [Engagement source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme) | - [Engagements task configuration](https://support.appsflyer.com/hc/articles/38188042548113-Set-Engagements-task) |
-| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows task configuration](https://support.appsflyer.com/hc/articles/38191154658193-Set-Lookback-windows-task) |
+| Campaigns | Advertiser | - [Campaign source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](/docs/set-up-the-campaigns-task) |
+| Conversions | Advertiser | - [Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme) | - [On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-onsite-campaign-conversions) |
+| Engagements | CMN | - [Engagement source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme) | - [Engagements task configuration](/docs/set-up-the-engagements-task) |
+| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows task configuration](/docs/set-up-the-lookback-windows-task) |
 
 </Tab>
 </Tabs>
@@ -103,10 +103,10 @@ If the CMN platform is an app, follow the instructions below for each task:
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Conversions | CMN | - [Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)<br>- [Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events) | - [On-site Conversions task configuration](https://support.appsflyer.com/hc/articles/38187770114449-Set-the-Conversions-task#set-up-onsite-campaign-conversions) |
-| Campaigns | CMN | - [Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](https://support.appsflyer.com/hc/articles/38190881693969-Set-Campaigns-task) |
-| Media partners | CMN | Not relevant | - [Media partners task configuration](https://support.appsflyer.com/hc/articles/38191067035153-Set-Media-partners-task) |
-| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows configuration](https://support.appsflyer.com/hc/articles/38191154658193-Set-Lookback-windows-task) |
+| Conversions | CMN | - [Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)<br />- [Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events) | - [On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-onsite-campaign-conversions) |
+| Campaigns | CMN | - [Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](/docs/set-up-the-campaigns-task) |
+| Media partners | CMN | Not relevant | - [Media partners task configuration](/docs/set-up-the-media-partners-task) |
+| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows configuration](/docs/set-up-the-lookback-windows-task) |
 
 ###### The CMN platform is a website
 
@@ -114,10 +114,10 @@ If the CMN platform is a website, follow the instructions below for each task:
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Conversions | CMN | - [Conversion source (custom)](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme) | - [On-site Conversions task configuration](https://support.appsflyer.com/hc/articles/38187770114449-Set-the-Conversions-task#set-up-onsite-campaign-conversions) |
-| Campaigns | CMN | - [Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](https://support.appsflyer.com/hc/articles/38190881693969-Set-Campaigns-task) |
-| Media partners | CMN | Not relevant | - [Media partners task configuration](https://support.appsflyer.com/hc/articles/38191067035153-Set-Media-partners-task) |
-| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows configuration](https://support.appsflyer.com/hc/articles/38191154658193-Set-Lookback-windows-task) |
+| Conversions | CMN | - [Conversion source (custom)](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme) | - [On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-onsite-campaign-conversions) |
+| Campaigns | CMN | - [Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](/docs/set-up-the-campaigns-task) |
+| Media partners | CMN | Not relevant | - [Media partners task configuration](/docs/set-up-the-media-partners-task) |
+| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows configuration](/docs/set-up-the-lookback-windows-task) |
 
 ##### The conversions take place on the advertiser platform
 
@@ -127,10 +127,10 @@ If the advertiser platform is an app, follow the instructions below for each tas
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Conversions | Advertiser | - [Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)<br>- [Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events) | - [On-site Conversions task configuration](https://support.appsflyer.com/hc/articles/38187770114449-Set-the-Conversions-task#set-up-onsite-campaign-conversions) |
-| Campaigns | Advertiser | - [Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](https://support.appsflyer.com/hc/articles/38190881693969-Set-Campaigns-task) |
-| Media partners | CMN | Not relevant | - [Media partners task configuration](https://support.appsflyer.com/hc/articles/38191067035153-Set-Media-partners-task) |
-| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows configuration](https://support.appsflyer.com/hc/articles/38191154658193-Set-Lookback-windows-task) |
+| Conversions | Advertiser | - [Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)<br />- [Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events) | - [On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-onsite-campaign-conversions) |
+| Campaigns | Advertiser | - [Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](/docs/set-up-the-campaigns-task) |
+| Media partners | CMN | Not relevant | - [Media partners task configuration](/docs/set-up-the-media-partners-task) |
+| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows configuration](/docs/set-up-the-lookback-windows-task) |
 
 ###### The advertiser platform is a website
 
@@ -138,10 +138,10 @@ If the advertiser platform is a website, follow the instructions below for each 
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Conversions | Advertiser | - [Conversion source (custom)](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme) | - [On-site Conversions task configuration](https://support.appsflyer.com/hc/articles/38187770114449-Set-the-Conversions-task#set-up-onsite-campaign-conversions) |
-| Campaigns | Advertiser | - [Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](https://support.appsflyer.com/hc/articles/38190881693969-Set-Campaigns-task) |
-| Media partners | CMN | Not relevant | - [Media partners task configuration](https://support.appsflyer.com/hc/articles/38191067035153-Set-Media-partners-task) |
-| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows configuration](https://support.appsflyer.com/hc/articles/38191154658193-Set-Lookback-windows-task) |
+| Conversions | Advertiser | - [Conversion source (custom)](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme) | - [On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-onsite-campaign-conversions) |
+| Campaigns | Advertiser | - [Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](/docs/set-up-the-campaigns-task) |
+| Media partners | CMN | Not relevant | - [Media partners task configuration](/docs/set-up-the-media-partners-task) |
+| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows configuration](/docs/set-up-the-lookback-windows-task) |
 
 </Tab>
 <Tab title="The Advertiser external-platform account displays the ad">
@@ -154,10 +154,10 @@ If the CMN platform is an app, follow the instructions below for each task:
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Conversions | CMN | - [Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)<br>- [Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events) | - [On-site Conversions task configuration](https://support.appsflyer.com/hc/articles/38187770114449-Set-the-Conversions-task#set-up-onsite-campaign-conversions) |
-| Campaigns | CMN | - [Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](https://support.appsflyer.com/hc/articles/38190881693969-Set-Campaigns-task) |
-| Media partners | Advertiser | Not relevant | - [Media partners task configuration](https://support.appsflyer.com/hc/articles/38191067035153-Set-Media-partners-task) |
-| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows configuration](https://support.appsflyer.com/hc/articles/38191154658193-Set-Lookback-windows-task) |
+| Conversions | CMN | - [Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)<br />- [Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events) | - [On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-onsite-campaign-conversions) |
+| Campaigns | CMN | - [Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](/docs/set-up-the-campaigns-task) |
+| Media partners | Advertiser | Not relevant | - [Media partners task configuration](/docs/set-up-the-media-partners-task) |
+| Lookback windows | CMN/Advertiser | Not relevant | - [Lookback windows configuration](/docs/set-up-the-lookback-windows-task) |
 
 ###### The CMN platform is a website
 
@@ -165,10 +165,10 @@ If the CMN platform is a website, follow the instructions below for each task:
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Conversions | CMN | - [Conversion source (custom)](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme) | - [On-site Conversions task configuration](https://support.appsflyer.com/hc/articles/38187770114449-Set-the-Conversions-task#set-up-onsite-campaign-conversions) |
-| Campaigns | CMN | - [Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](https://support.appsflyer.com/hc/articles/38190881693969-Set-Campaigns-task) |
-| Media partners | Advertiser | Not relevant | - [Media partners task configuration](https://support.appsflyer.com/hc/articles/38191067035153-Set-Media-partners-task) |
-| Lookback windows | CMN | Not relevant | - [Lookback windows configuration](https://support.appsflyer.com/hc/articles/38191154658193-Set-Lookback-windows-task) |
+| Conversions | CMN | - [Conversion source (custom)](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme) | - [On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-onsite-campaign-conversions) |
+| Campaigns | CMN | - [Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](/docs/set-up-the-campaigns-task) |
+| Media partners | Advertiser | Not relevant | - [Media partners task configuration](/docs/set-up-the-media-partners-task) |
+| Lookback windows | CMN | Not relevant | - [Lookback windows configuration](/docs/set-up-the-lookback-windows-task) |
 
 ##### The conversions take place on the advertiser platform
 
@@ -178,10 +178,10 @@ If the advertiser platform is an app, follow the instructions below for each tas
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Conversions | Advertiser | - [Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)<br>- [Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events) | - [On-site Conversions task configuration](https://support.appsflyer.com/hc/articles/38187770114449-Set-the-Conversions-task#set-up-onsite-campaign-conversions) |
-| Campaigns | Advertiser | - [Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](https://support.appsflyer.com/hc/articles/38190881693969-Set-Campaigns-task) |
-| Media partners | Advertiser | Not relevant | - [Media partners task configuration](https://support.appsflyer.com/hc/articles/38191067035153-Set-Media-partners-task) |
-| Lookback windows | CMN | Not relevant | - [Lookback windows configuration](https://support.appsflyer.com/hc/articles/38191154658193-Set-Lookback-windows-task) |
+| Conversions | Advertiser | - [Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)<br />- [Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events) | - [On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-onsite-campaign-conversions) |
+| Campaigns | Advertiser | - [Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](/docs/set-up-the-campaigns-task) |
+| Media partners | Advertiser | Not relevant | - [Media partners task configuration](/docs/set-up-the-media-partners-task) |
+| Lookback windows | CMN | Not relevant | - [Lookback windows configuration](/docs/set-up-the-lookback-windows-task) |
 
 ###### The advertiser platform is a website
 
@@ -189,10 +189,10 @@ If the advertiser platform is a website, follow the instructions below for each 
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Conversions | Advertiser | - [Conversion source (custom)](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme) | - [On-site Conversions task configuration](https://support.appsflyer.com/hc/articles/38187770114449-Set-the-Conversions-task#set-up-onsite-campaign-conversions) |
-| Campaigns | Advertiser | - [Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](https://support.appsflyer.com/hc/articles/38190881693969-Set-Campaigns-task) |
-| Media partners | Advertiser | Not relevant | - [Media partners task configuration](https://support.appsflyer.com/hc/articles/38191067035153-Set-Media-partners-task) |
-| Lookback windows | CMN | Not relevant | - [Lookback windows configuration](https://support.appsflyer.com/hc/articles/38191154658193-Set-Lookback-windows-task) |
+| Conversions | Advertiser | - [Conversion source (custom)](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme) | - [On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-onsite-campaign-conversions) |
+| Campaigns | Advertiser | - [Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source) | - [Campaigns task configuration](/docs/set-up-the-campaigns-task) |
+| Media partners | Advertiser | Not relevant | - [Media partners task configuration](/docs/set-up-the-media-partners-task) |
+| Lookback windows | CMN | Not relevant | - [Lookback windows configuration](/docs/set-up-the-lookback-windows-task) |
 
 </Tab>
 </Tabs>

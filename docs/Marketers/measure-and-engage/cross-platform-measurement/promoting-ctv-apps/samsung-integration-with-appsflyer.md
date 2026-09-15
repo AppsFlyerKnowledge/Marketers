@@ -23,22 +23,22 @@ The following table lists the tasks required to integrate your Samsung CTV app w
 
 | Task | Actions | Who's involved |
 | --- | --- | --- |
-| App setup | - [Create an AppsFlyer account](https://www.appsflyer.com/get-started/)<br>- [Add account users with appropriate permissions](https://support.appsflyer.com/hc/articles/4409128270481--Beta-User-management)<br>- [Add your Samsung CTV app in AppsFlyer](https://support.appsflyer.com/hc/articles/207377436) | Marketer |
-| API integration with your app (via S2S or SDK) | There are two methods of integration you can use: S2S and SDK.<br>For the S2S method, [integrate the AppsFlyer API](https://dev.appsflyer.com/hc/reference/pc-console-ctv-api-overview) into your app with commands to report the following events to AppsFlyer.<br>- First opens<br>- In-app events<br>- Sessions<br>**Note**:<br>- Installs must be reported before in-app events and sessions.<br>- Send events using the API. Tell your developer which events to send. Verify that when you set up the API, you set up and map the events to send to AppsFlyer. <br>To report owned media engagements, integrate the [impression engagement API.](https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id)<br>For the SDK method, see the developer hub for [Samsung documentation](https://github.com/AppsFlyerSDK/appsflyer-html5-ctv-sdk). | App developer |
-| Partner integration | Add Samsung as an ad network (integrated partner) in AppsFlyer.<br>1. [Activate partner](https://support.appsflyer.com/hc/articles/4410395957521#a-activate-partner)<br>2. [Optional] Turn on [**View-through attribution**](/docs/set-up-an-integrated-partner#e-install-attribution) **.** | Marketer |
-| Link setup | [Learn how to create direct attribution links](https://support.appsflyer.com/hc/articles/15199908310801) | Marketer |
-| Report setup/view data | [Learn about data availability in dashboards and reports](https://support.appsflyer.com/hc/articles/4404083608849#data-availability) | Marketer/Data engineer |
+| App setup | - [Create an AppsFlyer account](https://www.appsflyer.com/get-started/)<br />- [Add account users with appropriate permissions](/docs/user-management)<br />- [Add your Samsung CTV app in AppsFlyer](/docs/adding-an-app-to-appsflyer) | Marketer |
+| API integration with your app (via S2S or SDK) | There are two methods of integration you can use: S2S and SDK.<br />For the S2S method, [integrate the AppsFlyer API](https://dev.appsflyer.com/hc/reference/pc-console-ctv-api-overview) into your app with commands to report the following events to AppsFlyer.<br />- First opens<br />- In-app events<br />- Sessions<br />**Note**:<br />- Installs must be reported before in-app events and sessions.<br />- Send events using the API. Tell your developer which events to send. Verify that when you set up the API, you set up and map the events to send to AppsFlyer. <br />To report owned media engagements, integrate the [impression engagement API.](https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id)<br />For the SDK method, see the developer hub for [Samsung documentation](https://github.com/AppsFlyerSDK/appsflyer-html5-ctv-sdk). | App developer |
+| Partner integration | Add Samsung as an ad network (integrated partner) in AppsFlyer.<br />1. [Activate partner](/docs/set-up-an-integrated-partner#a-activate-partner)<br />2. [Optional] Turn on [**View-through attribution**](/docs/set-up-an-integrated-partner#e-install-attribution) **.** | Marketer |
+| Link setup | [Learn how to create direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links) | Marketer |
+| Report setup/view data | [Learn about data availability in dashboards and reports](/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability) | Marketer/Data engineer |
 
 ## Traits and limitations
 
 | Trait | Remarks |
 | --- | --- |
 | Retargeting | Not currently supported |
-| Cost data | Cost data must be sent via [Cost Import](https://support.appsflyer.com/hc/articles/360002516838) using the upload file by email method. |
+| Cost data | Cost data must be sent via [Cost Import](/docs/import-cost-data) using the upload file by email method. |
 | Supported regions | CTV campaigns are supported only in the US, except for preload campaigns, which are supported globally. |
 
 <Cards>
-  <Card title="CTV, PC, and console platform overview" href="https://support.appsflyer.com/hc/articles/4404083608849">
+  <Card title="CTV, PC, and console platform overview" href="/docs/ctv-pc-and-console-platform-attribution-concepts">
     Read the platform overview for Connected TV, PC, and console attribution.
   </Card>
 </Cards>

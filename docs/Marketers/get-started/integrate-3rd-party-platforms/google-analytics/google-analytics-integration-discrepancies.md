@@ -10,7 +10,7 @@ Listed below are reasons for discrepancies between AppsFlyer and Google Analytic
 
 ### High volume of non-consenting iOS 14.5+ users
 
-When [AAP is enabled for your app](https://support.appsflyer.com/hc/articles/360018515798-Aggregated-Advanced-Privacy-framework), AppsFlyer doesn't send postbacks to Google Analytics for non-consenting iOS 14.5+ users. In case your app has a large number of such users, there will be a discrepancy between AppsFlyer and Google Analytics dashboards.
+When [AAP is enabled for your app](/docs/apply-aggregated-advanced-privacy-framework), AppsFlyer doesn't send postbacks to Google Analytics for non-consenting iOS 14.5+ users. In case your app has a large number of such users, there will be a discrepancy between AppsFlyer and Google Analytics dashboards.
 
 ### Customer user ID
 
@@ -34,7 +34,7 @@ AppsFlyer, on the other hand, sees this user as two different users:
 - A user that comes from a UA campaign
 - A user that comes from a retargeting campaign
 
-In addition, discrepancies might arise if you implement [both GA and AppsFlyer SDK](https://support.appsflyer.com/hc/articles/4413033818641#appsflyer-and-google-analytics-sdks).
+In addition, discrepancies might arise if you implement both GA and AppsFlyer SDK.
 
 ### Time zone differences
 
@@ -48,7 +48,7 @@ Therefore, data that appears in GA dashboard for March 2nd only appears in your 
 
 ### Duplicate events
 
-If events occur in proximity to each other, both AppsFlyer and Google Analytics might drop them as duplicate events. AppsFlyer's [event deduplication mechanism](https://support.appsflyer.com/hc/articles/115005544169-Rich-in-app-events-guide#how-does-appsflyer-handle-event-deduplication) is different than the one that Google Analytics uses.
+If events occur in proximity to each other, both AppsFlyer and Google Analytics might drop them as duplicate events. AppsFlyer's [event deduplication mechanism](/docs/in-app-events-overview#how-does-appsflyer-handle-event-deduplication) is different than the one that Google Analytics uses.
 
 Because AppsFlyer and Google Analytics deduplicate events differently, discrepancies in events data might occur.
 
@@ -64,7 +64,7 @@ To AppsFlyer, this counts as 5 different sessions. However, to Google Analytics 
 
 To learn more about how AppsFlyer and Google Analytics calculate sessions, check the resources below.
 
-1. [How AppsFlyer counts sessions](https://support.appsflyer.com/hc/articles/360000520785)
+1. [How AppsFlyer counts sessions](/docs/measure-sessions)
 2. [Google Analytics sessions](https://support.google.com/analytics/answer/2731565?hl=en)
 
 ### Google Analytics views and filters

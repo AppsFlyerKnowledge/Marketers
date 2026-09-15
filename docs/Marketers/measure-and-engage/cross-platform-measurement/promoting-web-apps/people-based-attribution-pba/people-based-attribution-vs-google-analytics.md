@@ -17,7 +17,7 @@ The following are the benefits of PBA over Google Analytics:
 
 - PBA includes:
   - Web-to-app measurement. This metric tells you how many users move from your website to your app. It also tells you which media sources and campaigns bring users to your website who subsequently install your app.
-  - [Raw data for conversions and events](https://support.appsflyer.com/hc/articles/360001917778) that you can pull into your own BI systems. This gives you the ability and power to run your analysis.
+  - [Raw data for conversions and events](/docs/pba-raw-data-reports) that you can pull into your own BI systems. This gives you the ability and power to run your analysis.
 
 ### Reasons for differences
 
@@ -37,7 +37,7 @@ If Google Analytics loads before the Web SDK users that bounce or users that spe
 
 We strongly recommend positioning the Web SDK such that it loads as early as possible.
 
-Whether you [load the SDK directly or through Google Tag Manager](https://support.appsflyer.com/hc/articles/360001610038#integrating-the-web-sdk-into-the-website), late loading of the SDK can cause significant discrepancies.
+Whether you [load the SDK directly or through Google Tag Manager](/docs/pba-web-sdk-integration-guide#integrating-the-web-sdk-into-the-website), late loading of the SDK can cause significant discrepancies.
 
 </Accordion>
 
@@ -128,7 +128,7 @@ When you send events, verify the following:
 - Make sure that the same trigger applies to both
 - Make sure you send the event to both Google Analytics and PBA
 
-Click [here](https://support.appsflyer.com/hc/articles/360001610038#principles-of-event-recording) to learn how to send events using the Web SDK.
+Click [here](/docs/pba-web-sdk-integration-guide#principles-of-event-recording) to learn how to send events using the Web SDK.
 
 </Accordion>
 

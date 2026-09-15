@@ -16,9 +16,9 @@ Compare events listed in Meta ads **Event Manager** to those in AppsFlyer report
 | --- | --- | --- |
 | **Click attribution lookback window** | 7 days (Note that [there are some specific cases where the default is different](https://www.facebook.com/business/help/395050428485124?id=428636648170202)). | 1-30 days. Make sure to set to 7 days with Meta ads. |
 | **View-through attribution lookback window** | 1 day (Note that [there are some specific cases where the default is different](https://www.facebook.com/business/help/395050428485124?id=428636648170202)). | 1 day by default, but can be configured to be 1-48 hours (keep this default value) |
-| **Multi-channel source**<br>**attribution** | Meta ads self-attributes installs regardless of other media sources. | AppsFlyer uses last-click attribution (more information about AppsFlyer attribution available [here](https://support.appsflyer.com/hc/articles/207447053-What-is-AppsFlyer-s-Attribution-Model- "AppsFlyer Attribution Model")) |
+| **Multi-channel source**<br />**attribution** | Meta ads self-attributes installs regardless of other media sources. | AppsFlyer uses last-click attribution (more information about AppsFlyer attribution available [here](/docs/appsflyer-attribution-model "AppsFlyer Attribution Model")) |
 | **Cross-device attribution** | Meta ads attributes its users that click and install on different devices, for example, iOS/Android/desktop. | AppsFlyer attributes single devices, which perform both the engagement and the install |
-| **Different time zones** | Meta ads default reporting time zone is PST. Make sure to [change it in Meta ads Manager](https://www.facebook.com/business/help/754049591334898) to match the app time zone defined in the app settings in AppsFlyer. | AppsFlyer's default app time zone is UTC+0. You can change the time zone set for the app in the [app settings page](https://support.appsflyer.com/hc/articles/211719806-App-settings-#localization-time-zone) to match the time zone defined in Meta ads Manager. |
+| **Different time zones** | Meta ads default reporting time zone is PST. Make sure to [change it in Meta ads Manager](https://www.facebook.com/business/help/754049591334898) to match the app time zone defined in the app settings in AppsFlyer. | AppsFlyer's default app time zone is UTC+0. You can change the time zone set for the app in the [app settings page](/docs/app-settings#localization-time-zone) to match the time zone defined in Meta ads Manager. |
 | **Install referrers** | When an install without an advertiser ID is attributed to Meta ads via the Google Play install referrer, Facebook install referrer, or Instagram install referrer, AppsFlyer does not report it back to Meta ads. This can lead to discrepancies, as it will appear in AppsFlyer but not in Meta ads. | |
 
 ## Click-through and view-through attribution
@@ -41,17 +41,17 @@ The differences between platforms may also be present with post-install events (
 
 | Cause | Description | AppsFlyer's Tip |
 | --- | --- | --- |
-| **Different lifetime definition** | A user's lifetime on Meta ads is defined as up to 7 days, meaning Meta ads doesn't show events if they occurred over 7 days after the ad click.<br>In AppsFlyer, a Meta ads user's lifetime is defined as up to 180 days. | When assessing the value of users from Meta ads campaigns that occurred after 7 days, use AppsFlyer's data to get a broader picture. |
-| **Unmapped events** | AppsFlyer gets SDK originated events, but they are not mapped to Meta ads, and therefore aren't sent. | Make sure to [map with Meta ads](https://support.appsflyer.com/hc/articles/4410480904081-Facebook-Ads-in-app-event-mapping) all the in-app events that signify users' quality. |
+| **Different lifetime definition** | A user's lifetime on Meta ads is defined as up to 7 days, meaning Meta ads doesn't show events if they occurred over 7 days after the ad click.<br />In AppsFlyer, a Meta ads user's lifetime is defined as up to 180 days. | When assessing the value of users from Meta ads campaigns that occurred after 7 days, use AppsFlyer's data to get a broader picture. |
+| **Unmapped events** | AppsFlyer gets SDK originated events, but they are not mapped to Meta ads, and therefore aren't sent. | Make sure to [map with Meta ads](/docs/meta-ads-in-app-event-mapping) all the in-app events that signify users' quality. |
 | **Unsent Revenue** | AppsFlyer gets the revenue from the SDK originated events, but they are not sent to Meta ads. | Make sure the **Send Revenue** boxes of the in-app events are always checked, for example, the purchase event in the capture below. |
-| **Missing event values on Meta ads** | AppsFlyer sends parameters and values to Meta ads as part of the events mapping, if they have the correct structures. | Build your SDK in-app events according to [AppsFlyer's recommended structures](https://support.appsflyer.com/hc/articles/4410481112081) to fully map the event values with Meta ads. |
+| **Missing event values on Meta ads** | AppsFlyer sends parameters and values to Meta ads as part of the events mapping, if they have the correct structures. | Build your SDK in-app events according to [AppsFlyer's recommended structures](/docs/in-app-events-event-structure) to fully map the event values with Meta ads. |
 | **Different event count** | The count for a specified in-app event (e.g., purchase event) in the Facebook (FB) dashboard differs from its corresponding count in the AppsFlyer (AF) dashboard. | The Facebook (FB) dashboard is activity-based, while the AppsFlyer (AF) Overview and Event dashboards are LTV-based. For event count comparisons, use an AF activity-based dashboard. For more information, see [LTV vs. Activity](/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports#ltv-vs-activity) |
 
 ## Installs from re-engagement campaigns in my UA dashboard?
 
 A re-engagement campaign can cause users to open an already installed app( **re-engagement**). Alternately, when AppsFlyer recognizes a previous install of the app existed on the same device, AppsFlyer may refer to that conversion as a **re-attribution**.
 
-If, on a re-engagement campaign, Meta ads targets **new users** or users that have installed the app for the first time **after more than the set** [**re-attribution window**](https://support.appsflyer.com/hc/articles/115002587066-Re-Attribution-Window) following the original installation, these users are recorded as **new user acquisition installs on AppsFlyer**, which belong to a re-engagement campaigns on Meta ads.
+If, on a re-engagement campaign, Meta ads targets **new users** or users that have installed the app for the first time **after more than the set** [**re-attribution window**](/docs/set-up-re-attribution-window) following the original installation, these users are recorded as **new user acquisition installs on AppsFlyer**, which belong to a re-engagement campaigns on Meta ads.
 
 On the other hand, installs that take place **within the set re-attribution window** following the original installation, are considered as re-attributions and appear on the retargeting page of AppsFlyer, while they may be appearing as new installs by Meta ads.
 
@@ -69,7 +69,7 @@ Linda clicks on a mobile ad of GreatApp on Facebook using her Android phone. Met
 
 ## Validation rules and Protect360
 
-If you use [AppsFlyer's Validation Rules](https://support.appsflyer.com/hc/articles/115004703926-Validation-Rules), results may differ between AppsFlyer and Meta ads when there are rejected installs that originally come from Meta ads. In these cases Meta ads self-reports installs to itself, while AppsFlyer rejects the same installs.
+If you use [AppsFlyer's Validation Rules](/docs/implement-validation-rules-to-prevent-fraud), results may differ between AppsFlyer and Meta ads when there are rejected installs that originally come from Meta ads. In these cases Meta ads self-reports installs to itself, while AppsFlyer rejects the same installs.
 
 Similarly, if you use AppsFlyer's anti-fraud solution, Protect360, there may be installs since Meta ads self-reports, while AppsFlyer rejects.
 
@@ -81,11 +81,11 @@ When a Meta ads user from Spain clicks and installs the app, Meta ads self-repor
 
 ## SDK related discrepancies
 
-There could be [several occasions when advertisers implement both AppsFlyer and Facebook SDKs](https://support.appsflyer.com/hc/articles/4410472805649#who-needs-facebooks-sdk). This might cause discrepancies for in-app events. Meta ads doesn't de-duplicate in-app events that are reported from both SDKs. This means that Meta ads may falsely report revenue and other events.
+There could be [several occasions when advertisers implement both AppsFlyer and Facebook SDKs](/docs/meta-ads-faq#who-needs-facebooks-sdk). This might cause discrepancies for in-app events. Meta ads doesn't de-duplicate in-app events that are reported from both SDKs. This means that Meta ads may falsely report revenue and other events.
 
 * Use **either** of the following methods to avoid duplicate in-app event reporting in Meta ads:
   * Don't configure events in the Facebook SDK.
-  * Disable the [Meta ads in-app events mapping](https://support.appsflyer.com/hc/articles/4410480904081) from AppsFlyer.
+  * Disable the [Meta ads in-app events mapping](/docs/meta-ads-in-app-event-mapping) from AppsFlyer.
 
 ## Meta probabilistic modeling (AEM) discrepancies in iOS apps
 

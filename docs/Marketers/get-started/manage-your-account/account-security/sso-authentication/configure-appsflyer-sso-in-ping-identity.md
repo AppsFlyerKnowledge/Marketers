@@ -55,7 +55,7 @@ For authentication starting from the IdP (Ping Identity), select **Manually Ente
         - **Signing Algorithm:** Select **RSA\_SHA256**.
       - **ENCRYPTION:**        - Select **Enable Encryption**.
         - ALGORITHM: Select **AES\_256**.
-      - **CERTIFICATE:**        - Select **Import** and upload the [AppsFlyer encryption certificate](https://support.appsflyer.com/hc/articles/360015017198#obtaining-the-appsflyer-certificate-from-the-metadata-url). This certificate is signed by AppsFlyer and is used to both encrypt and sign the request.
+      - **CERTIFICATE:**        - Select **Import** and upload the [AppsFlyer encryption certificate](/docs/set-up-sso-authentication-with-your-identity-provider-idp#obtaining-the-appsflyer-certificate-from-the-metadata-url). This certificate is signed by AppsFlyer and is used to both encrypt and sign the request.
 
                   > 📘 Note
                   >
@@ -113,7 +113,7 @@ Now that the Ping Identity SAML application is created, let’s create user grou
 
 ### Complete the process in AppsFlyer
 
-Now that you've configured the IdP part, go back to AppsFlyer to [complete the configuration](https://support.appsflyer.com/hc/articles/360015017198#step-2-complete-the-configuration-at-appsflyer). You can then [test](https://support.appsflyer.com/hc/articles/360015017198#step-3-test-the-sso-process) to see that it works.
+Now that you've configured the IdP part, go back to AppsFlyer to [complete the configuration](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer). You can then [test](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-process) to see that it works.
 
 <Cards>
 <Card title="Ping Identity SSO configuration documentation" href="https://docs.pingidentity.com/r/en-us/pingfederate-112/pf_ident_provid_sso_config">

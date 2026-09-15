@@ -42,7 +42,7 @@ Make sure all user emails are set up in both systems—in your IdP and in the Ap
 
 <Accordion title="Do I need a test environment to test setup before setting the configuration?">
 
-A test environment isn’t required. Follow the steps [in Step 3](https://support.appsflyer.com/hc/articles/27127902898449#step-3-test-the-sso-configuration) to test the SSO login, either from the IdP or the service provider's side (AppsFlyer).
+A test environment isn’t required. Follow the steps in Step 3 to test the SSO login, either from the IdP or the service provider's side (AppsFlyer).
 
 </Accordion>
 
@@ -58,7 +58,7 @@ AppsFlyer will alert you via the platform when your AppsFlyer SSO certificate is
 
 <Accordion title="Force SSO login is disabled, how can I enable it?">
 
-Once the **Force SSO login** option is selected and the configuration is saved, this option becomes disabled. To revert and have **Force SSO login** enabled, you'll need to re-configure [step 2](https://support.appsflyer.com/hc/articles/360015017198#step-2-complete-the-configuration-at-appsflyer) of the SSO process from the beginning.
+Once the **Force SSO login** option is selected and the configuration is saved, this option becomes disabled. To revert and have **Force SSO login** enabled, you'll need to re-configure [step 2](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer) of the SSO process from the beginning.
 
 > 📘 Note
 >
@@ -74,7 +74,7 @@ Implementing the AppsFlyer certificate in your IdP is **strongly recommended** b
 
 <Accordion title="What happens when I deactivate SSO and how do I do it?">
 
-When deactivating SSO authentication, users will be able to log in using other methods, such as their AppsFlyer usernames and passwords and the [2FA](https://support.appsflyer.com/hc/articles/360010178037) method.
+When deactivating SSO authentication, users will be able to log in using other methods, such as their AppsFlyer usernames and passwords and the [2FA](/docs/implementing-and-using-2fa-login) method.
 
 1. From the top bar, open the account menu (admin email address dropdown) > **Security center**.
 2. Under **Enhanced login security**, select **Configure login method**.

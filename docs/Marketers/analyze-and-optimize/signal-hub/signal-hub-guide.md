@@ -44,7 +44,7 @@ Step 2. Add your first-party data to the collaboration (Optional)
 
 If you want to build audiences using your first-party data, you can [associate your existing AppsFlyer data](/docs/data-collaboration-platform-dcp-create-a-collaboration#associate-or-manage-sources) (your SDK data) with the collaboration you were invited to.
 
-Additionally, you can [connect external data sources](https://support.appsflyer.com/hc/articles/39096485642001--WIP-Signal-Hub#add-your-own-custom-data-to-signal-hub-optional), such as your CRM or other relevant systems, directly to your clean room. Data remains in place and is never moved or copied. AppsFlyer is granted read-only access only.
+Additionally, you can [connect external data sources](/docs/signal-hub-guide#add-your-own-custom-data-to-signal-hub-optional), such as your CRM or other relevant systems, directly to your clean room. Data remains in place and is never moved or copied. AppsFlyer is granted read-only access only.
 
 Step 3. Build high-intent audiences and activate them
 
@@ -89,7 +89,7 @@ Signal Hub connects marketers with real-world purchase signals in a privacy-safe
   Signal Hub partners with leading brands (e.g., Mastercard), which share aggregated purchase data at the ZIP+4 level (about 10–20 households). For example, Mastercard might show that "70% of consumers in this ZIP+4 purchased at Shoprite," offering real-world spending insights without user-level data.
 - **Identity resolution**
 
-  Since ZIP+4 data can't be used directly for ad targeting, integrated AppsFlyer identity resolution partners translate it into privacy-safe hashed identifiers, such as hashed emails, that media platforms can recognize. [Learn more](https://support.appsflyer.com/hc/articles/39096485642001--WIP-Signal-Hub#understand-identity-enrichment)
+  Since ZIP+4 data can't be used directly for ad targeting, integrated AppsFlyer identity resolution partners translate it into privacy-safe hashed identifiers, such as hashed emails, that media platforms can recognize. [Learn more](/docs/signal-hub-guide#understand-identity-enrichment)
 - **Audience building and activation**
 
   Marketers can combine these purchase signals with their own first-party data inside AppsFlyer's clean room to create enriched audience segments. Once activated, the audiences are securely matched and delivered to media platforms, while AppsFlyer measures performance across channels.

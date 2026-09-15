@@ -6,7 +6,7 @@ AppsFlyer uses Google Play Auto Install (PAI) to attribute installs to preload c
 
 > 📘 Note
 >
-> This attribution method differs from [APK preinstall attribution](https://support.appsflyer.com/hc/articles/207032166).
+> This attribution method differs from [APK preinstall attribution](/docs/appsflyer-factory-preinstall-using-manifest-android).
 
 ## PAI preload attribution
 
@@ -42,7 +42,7 @@ Raw data includes the following fields:
 
 - Media\_source = Partner ID
 - Match\_type = preload\_pai
-- Campaign\_name = preload campaign by <preloadpartner ID>
+- Campaign\_name = preload campaign by 
 
 ### Set up Google Play Auto Install (PAI) preload attribution
 

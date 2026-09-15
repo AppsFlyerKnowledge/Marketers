@@ -6,7 +6,7 @@ Collaborations enable commerce media networks and brands to leverage combined da
 
 ## About collaborations
 
-The AppsFlyer [Data Collaboration Platform (DCP)](https://support.appsflyer.com/hc/articles/26183285566353-Data-Collaboration-Platform-DCP-Guide) empowers commerce media networks and brands to partner up and unlock the potential of their first-party data to reach high-intent users. The secure, privacy-centric platform enables seamless collaborations, allowing partners to generate new ad revenue streams and build custom audiences from collaborative data for activation in the commerce media network or in media channels such as Meta, Google, and more.
+The AppsFlyer [Data Collaboration Platform (DCP)](/docs/data-collaboration-platform-dcp-guide) empowers commerce media networks and brands to partner up and unlock the potential of their first-party data to reach high-intent users. The secure, privacy-centric platform enables seamless collaborations, allowing partners to generate new ad revenue streams and build custom audiences from collaborative data for activation in the commerce media network or in media channels such as Meta, Google, and more.
 
 ## Create a collaboration
 

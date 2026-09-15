@@ -2,7 +2,7 @@
 title: "Attributing iOS Safari App Banners"
 excerpt: "Learn how to implement and attribute iOS Safari App Banners using AppsFlyer measurement links."
 ---
-At a glance: Safari implements an [App Banner](http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html) feature providing a standardized way to promote apps in the Apple App Store. **This is not related to the recommended AppsFlyer [Smart Banner](https://support.appsflyer.com/hc/articles/360000764837) solution.**
+At a glance: Safari implements an [App Banner](http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html) feature providing a standardized way to promote apps in the Apple App Store. **This is not related to the recommended AppsFlyer [Smart Banner](/docs/smart-banners-mobile-web-to-app-for-marketers) solution.**
 
 > 👍 Recommended alternative
 >

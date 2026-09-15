@@ -14,7 +14,7 @@ The integration works by notifying Swrve of installs to their API using their RE
 
 > ❗️ Important!
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Integrating Swrve and AppsFlyer
 
@@ -70,7 +70,7 @@ SwiftAppsflyer.setCustomerUserID(SwrveComponent.Instance.SDK.UserId);
 
 Swrve's configuration window only uses the **Integration** tab.
 
-For a detailed description of the Partner Configuration Window Header, click [here](https://support.appsflyer.com/hc/articles/4410395957521#about-the-integrated-partner-page).
+For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
 ### Integration tab
 
@@ -80,7 +80,7 @@ The Integration tab is divided into different sections as described below.
 
 On the **first visit** here, you will need to toggle ON the _**Activate Partner**_ button to enable the set up of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.
 
-For more details about partner activation please click [here](https://support.appsflyer.com/hc/articles/360000844778).
+For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 
 #### General settings
 

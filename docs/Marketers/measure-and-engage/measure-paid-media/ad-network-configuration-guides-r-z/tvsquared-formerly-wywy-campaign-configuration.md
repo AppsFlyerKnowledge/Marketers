@@ -29,7 +29,7 @@ At a glance: TVSquared (formerly Wywy), an AppsFlyer ad network integrated partn
 >
 > For TVSquared you need to complete the Integration tab. The remaining tabs are not applicable to TVSquared.
 
-For a detailed description of the Partner Configuration Window Header, click [here](https://support.appsflyer.com/hc/articles/4410395957521#about-the-integrated-partner-page).
+For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
 ## Integration tab
 
@@ -41,7 +41,7 @@ The Integration Tab is divided into different sections as described below.
 
 The Integrations parameters display.
 
-For more details about partner activation please click [here](https://support.appsflyer.com/hc/articles/360000844778).
+For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 2. Complete the General Setting fields:
    - _**SITEID**_: Fill in the SITEID you obtained from TVSquared.
    - _**COLLECTORID**_: Fill in the COLLECTORID obtained from TVSquared.
@@ -61,7 +61,7 @@ For more details about partner activation please click [here](https://support.ap
 
 According to both Meta ads and X Ads terms and conditions, AppsFlyer can't share user-level data with any 3rd party. Therefore, all Meta ads and X Ads installs are sent to TVSquared as organic.
 
-For details on sharing data with 3rd parties, click [here](https://support.appsflyer.com/hc/articles/360006091197).
+For details on sharing data with 3rd parties, click [here](/docs/user-level-data-retention).
 
 ## Attribution link tab
 

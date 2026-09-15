@@ -34,7 +34,7 @@ excerpt: "Learn how to set up and configure the Webpals mobile integration in Ap
 
 1. To send in-app event postbacks to Webpals mobile—Meta campaign management partner, enter **Facebook pixel\_id** under _**In-App Events Settings**_.
 2. Turn on **In-app event postbacks**.
-3. Set the configuration according to the guidelines [here](https://support.appsflyer.com/hc/articles/4410480904081#predefined-event-mapping).
+3. Set the configuration according to the guidelines [here](/docs/meta-ads-in-app-event-mapping#predefined-event-mapping).
 4. Click **Save**.
 
 <Image src="https://files.readme.io/fdf34ada3d2b6dc645b07d0c1064020011c83baa863191299448e514dfe88e0a-14238447553297.png" alt="meta_campaign_management_partner_settings_2.png" />

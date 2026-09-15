@@ -4,7 +4,7 @@ excerpt: "Learn how to configure organic search attribution to attribute mobile 
 ---
 > 🚧 Important!
 >
-> We recommend implementing our [updated organic search attribution method](https://support.appsflyer.com/hc/articles/15123194526353).
+> We recommend implementing our [updated organic search attribution method](/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution).
 
 ## Organic search attribution
 

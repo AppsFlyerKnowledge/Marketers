@@ -26,7 +26,7 @@ You can personalize a dashboard by moving and sizing widgets.
 | --- | --- |
 | Resize widget | Drag the bottom-right corner of a widget to resize it |
 | Widget position | Drag and drop a widget to change its location in a dashboard |
-| Actions | Hover over a widget in the top-right corner, click actions. The following actions are available per widget:<br>- Edit<br>- Duplicate<br>- Delete <br>- Export CSV |
+| Actions | Hover over a widget in the top-right corner, click actions. The following actions are available per widget:<br />- Edit<br />- Duplicate<br />- Delete <br />- Export CSV |
 
 ## Procedures
 
@@ -67,14 +67,14 @@ A dashboard displays.
 
 | Setting | Description |
 | --- | --- |
-| Widget type | ![WidgetType_us-en.png](https://files.readme.io/00174da67c1b5046033655aad2f0af815d5abb3229cdc7c2f225f689c8adc7d8-360015793638.png)<br>Select a widget type:<br>- Pie chart<br>- Bar chart<br>- Line chart<br>- Data table<br>- Geo map<br>- Metric<br>- Funnel chart |
+| Widget type | ![WidgetType_us-en.png](https://files.readme.io/00174da67c1b5046033655aad2f0af815d5abb3229cdc7c2f225f689c8adc7d8-360015793638.png)<br />Select a widget type:<br />- Pie chart<br />- Bar chart<br />- Line chart<br />- Data table<br />- Geo map<br />- Metric<br />- Funnel chart |
 | Description | Enter a widget description |
 | Apps | Select 1–more or all apps to include in the widget data. Note if you select all it means the top-100 apps in your account. |
-| KPIs | - Select KPIs to display in the widget<br>- Data table and bar chart are sorted according to the first KPI selected |
+| KPIs | - Select KPIs to display in the widget<br />- Data table and bar chart are sorted according to the first KPI selected |
 | Group by | Select group by |
 | Show top | Enter the number of values to display. |
 | Pre-Covid | If selected, show data of a pre-COVID-19 date range of November 1-30, 2019. |
-| Filters | Use filters to limit data in the widget:<br>- **Countries (geo)**<br>- **Media sources**<br>- **Campaigns**<br>- **Channels**<br>Select **Exclude organic** to explicitly exclude data not attributed to a media source. |
+| Filters | Use filters to limit data in the widget:<br />- **Countries (geo)**<br />- **Media sources**<br />- **Campaigns**<br />- **Channels**<br />Select **Exclude organic** to explicitly exclude data not attributed to a media source. |
 
 ### Export widget data
 
@@ -104,9 +104,9 @@ Dates in CSV files have the format dd/mm/yyyy. You can [convert them to a differ
 | Cost data | Only available if there is at least 1 recorded install. [Learn more](/docs/roi360-cost-aggregation-overview#cost-data-availability-and-reports) |
 | Organic data | Available |
 | Non-organic data | Available |
-| eCPA | - In Custom dashboards, the eCPA formula is: Total spend / Number of actions = eCPA<br>- This differs from other dashboards, including Overview, where the formula is: Total spend / **unique users** who performed an action = eCPA |
-| Data freshness | [Real-time](https://support.appsflyer.com/hc/articles/360000310629-Data-freshness-and-time-zone-support#continuous-aka-realtime). Equivalent to the Overview Dashboard |
+| eCPA | - In Custom dashboards, the eCPA formula is: Total spend / Number of actions = eCPA<br />- This differs from other dashboards, including Overview, where the formula is: Total spend / **unique users** who performed an action = eCPA |
+| Data freshness | [Real-time](/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime). Equivalent to the Overview Dashboard |
 | Account user access | Yes |
-| Limitations | - Full page export to PDF option is not available.<br>- Export to PNG is not supported in the following browsers: Edge, Firefox 69 (Max).<br>- Searching for a specific campaign is limited to cases where there are less than 100 campaigns. If necessary, narrow the time period and search again. <br>- KPI availability: User acquisition LTV KPIs are available. Retargeting, retention, activity, and Protect360 KPIs aren't available. Note! Don't compare Custom dashboard metrics to Overview unified or retargeting view metrics. <br>- Campaign name changes aren't supported. |
+| Limitations | - Full page export to PDF option is not available.<br />- Export to PNG is not supported in the following browsers: Edge, Firefox 69 (Max).<br />- Searching for a specific campaign is limited to cases where there are less than 100 campaigns. If necessary, narrow the time period and search again. <br />- KPI availability: User acquisition LTV KPIs are available. Retargeting, retention, activity, and Protect360 KPIs aren't available. Note! Don't compare Custom dashboard metrics to Overview unified or retargeting view metrics. <br />- Campaign name changes aren't supported. |
 | Timezones | - If all apps in the account have the same timezone name, data is displayed using the app timezone. If not, UTC will be used. |
 | Historical data | LTV data is available for up to 25 months (2 years + 1 month). |

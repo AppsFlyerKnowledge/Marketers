@@ -42,8 +42,8 @@ In Audiences, create user attributes (favorite sport and game score). This gives
 
 | Name | Format | Level |
 | --- | --- | --- |
-| Game score | **Number**: Lets you set rules like ' _ScoreGameB is greater than 29'_. | **App-level**: User's score is recorded for each game played.<br>Meaning: ScoreGameA, ScoreGameB. |
-| Favorite sport | **String:** Lets you set rules like ' _whose favorite sport is tennis'._<br>Note! Values are case-sensitive. | **Account-level**: User's favorite sport is the same regardless of the app.<br>Note! A user can have only 1 value associated with account-level attributes. |
+| Game score | **Number**: Lets you set rules like ' _ScoreGameB is greater than 29'_. | **App-level**: User's score is recorded for each game played.<br />Meaning: ScoreGameA, ScoreGameB. |
+| Favorite sport | **String:** Lets you set rules like ' _whose favorite sport is tennis'._<br />Note! Values are case-sensitive. | **Account-level**: User's favorite sport is the same regardless of the app.<br />Note! A user can have only 1 value associated with account-level attributes. |
 
 **User attributes in rulesets**
 
@@ -63,12 +63,12 @@ To manage app-level attributes, an account user must have app permission.
 
 **To set up user attributes follow these procedures:**
 
-1. [Add user attributes.](https://support.appsflyer.com/hc/articles/360009775517#add)
+1. [Add user attributes.](/docs/audiences-create-better-audiences-with-user-attribute-data#add)
 
-2. [Do one of the following](https://support.appsflyer.com/hc/articles/360009775517#import-data-by-csv)
-   - [Import user-attribute data by CSV.](https://support.appsflyer.com/hc/articles/360009775517#import-data-by-csv)
+2. [Do one of the following](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)
+   - [Import user-attribute data by CSV.](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)
 
-   - [Import user-attribute data by API.](https://support.appsflyer.com/hc/articles/360009775517#import-data-by-api)
+   - [Import user-attribute data by API.](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)
 3. [Implement user attributes in rulesets.](/docs/audiences-guide#user-attributes)
 
 ### Add
@@ -89,9 +89,9 @@ To manage app-level attributes, an account user must have app permission.
 
 | Field | Characteristics |
 | --- | --- |
-| Attribute name | - English characters only<br>- No punctuation or special characters<br>- Same name cannot be used at both the app- and account-level<br>- Same name **can** be used at the app-level; for example, above scenario use of ScoreGameA and ScoreGameB |
-| Format | - Text: Test if the attribute value **is** or **is not equal** to a specified rule value. Example: Is cricket or is not cricket.<br>- Number: Test if the attribute value is greater than, less than, or equal to a specified rule value. Example: Score greater than 15 |
-| Level | - Account-level: An attribute has no connection to the app.<br> <br> Example: gender, favorite sport<br>- App-level: An attribute is app-related. Select the apps associated with the attribute. |
+| Attribute name | - English characters only<br />- No punctuation or special characters<br />- Same name cannot be used at both the app- and account-level<br />- Same name **can** be used at the app-level; for example, above scenario use of ScoreGameA and ScoreGameB |
+| Format | - Text: Test if the attribute value **is** or **is not equal** to a specified rule value. Example: Is cricket or is not cricket.<br />- Number: Test if the attribute value is greater than, less than, or equal to a specified rule value. Example: Score greater than 15 |
+| Level | - Account-level: An attribute has no connection to the app.<br /> <br /> Example: gender, favorite sport<br />- App-level: An attribute is app-related. Select the apps associated with the attribute. |
 
 **User attribute fields**
 
@@ -105,8 +105,8 @@ To manage user attributes, go to **Audiences** \> **User attributes** tab.
 | --- | --- |
 | Search and filter | By attribute name, app name, and attribute level. |
 | Sort by | Click a column header to sort table rows. |
-| Import data | - [Import data by CSV](https://support.appsflyer.com/hc/articles/360009775517#import-data-by-csv)<br>- [Import data by API](https://support.appsflyer.com/hc/articles/360009775517#import-data-by-api) |
-| Change API import key | **To change the API import key:**<br>1. Click **Import data**.<br>2. Select **API**.<br>3. Click **Refresh import key**.<br>**Note!** If scripts have embedded keys, make sure to update them with the new key. |
+| Import data | - [Import data by CSV](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)<br />- [Import data by API](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api) |
+| Change API import key | **To change the API import key:**<br />1. Click **Import data**.<br />2. Select **API**.<br />3. Click **Refresh import key**.<br />**Note!** If scripts have embedded keys, make sure to update them with the new key. |
 
 Manage user attributes
 
@@ -125,13 +125,13 @@ Manage user attributes
 
 ### Import field specifications
 
-| Field | Content | Format | Add data<br>by CSV | Remove data by CSV |
+| Field | Content | Format | Add data<br />by CSV | Remove data by CSV |
 | --- | --- | --- | --- | --- |
-| device\_id | Includes 1 of these user IDs:<br>- IDFA<br>- GAID | Text | Either **device\_id** or **customer\_id** is mandatory | Either **device\_id** or **customer\_id** is mandatory<br>To remove existing data, don't send |
-| customer\_id | [Customer user ID](https://support.appsflyer.com/hc/articles/207032016-Customer-user-ID-field) | Text | Either **device\_id** or **customer\_id** is mandatory | Either **device\_id** or **customer\_id** is mandatory<br>To remove existing data, don't send |
-| app\_id | **App-level attribute:** App ID as it displays in the dashboard.<br>For iOS apps, include the prefix _ID_. <br>**Account-level attribute**: Always populate with \* | Text | Mandatory | Mandatory |
+| device\_id | Includes 1 of these user IDs:<br />- IDFA<br />- GAID | Text | Either **device\_id** or **customer\_id** is mandatory | Either **device\_id** or **customer\_id** is mandatory<br />To remove existing data, don't send |
+| customer\_id | [Customer user ID](/docs/customer-user-id-field-cuid) | Text | Either **device\_id** or **customer\_id** is mandatory | Either **device\_id** or **customer\_id** is mandatory<br />To remove existing data, don't send |
+| app\_id | **App-level attribute:** App ID as it displays in the dashboard.<br />For iOS apps, include the prefix _ID_. <br />**Account-level attribute**: Always populate with \* | Text | Mandatory | Mandatory |
 | attribute\_key | User-attribute name, exactly as it displays on the user-attributes tab. | Text | Mandatory | Mandatory |
-| attribute\_value | Assigned value<br>[\*See limitations](https://support.appsflyer.com/hc/articles/360009775517#limitations) | Text or number | Mandatory | Don't send |
+| attribute\_value | Assigned value<br />[\*See limitations](/docs/audiences-create-better-audiences-with-user-attribute-data#limitations) | Text or number | Mandatory | Don't send |
 
 User-attribute field list
 
@@ -168,7 +168,7 @@ User-attribute data is added or removed via a CSV file. The figure and example C
 This import method requires a request URL and JSON with user-attribute data.
 
 1. In the dashboard, get the prepared API request calls and JSON template.
-2. Populate the JSON template with your data according to the [field specifications](https://support.appsflyer.com/hc/articles/360009775517#import-field-specifications).
+2. Populate the JSON template with your data according to the [field specifications](/docs/audiences-create-better-audiences-with-user-attribute-data#import-field-specifications).
 
 **To generate the API request URL and JSON template:**
 
@@ -208,7 +208,7 @@ This import method requires a request URL and JSON with user-attribute data.
 
 > 📘 Authentication
 >
-> You must authenticate the request using an Authorization Bearer Header with an [API token V2.0](https://support.appsflyer.com/hc/articles/360004562377-Managing-API-tokens#v20-token%E2%80%94advertiser-apis)
+> You must authenticate the request using an Authorization Bearer Header with an [API token V2.0](/docs/managing-appsflyer-tokens#v20-token%E2%80%94advertiser-apis)
 
 **Example with multiple device IDs, attribute keys, and attribute values**
 

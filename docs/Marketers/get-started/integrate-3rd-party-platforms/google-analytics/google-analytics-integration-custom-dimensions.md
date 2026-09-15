@@ -55,7 +55,7 @@ First, you need to get the media source value from AppsFlyer SDK. You can do thi
 
 > 📘 Note
 >
-> Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is ` onInstallConversionDataLoaded` in Android and `onConversionDataReceived` in iOS. We recommend that you upgrade to SDK 5.0.0. To learn more, click [here](https://support.appsflyer.com/hc/articles/360003090618).
+> Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is ` onInstallConversionDataLoaded` in Android and `onConversionDataReceived` in iOS. We recommend that you upgrade to SDK 5.0.0. To learn more, click [here](/docs/links-to-appsflyer-sdk-release-notes).
 
 Then, you can set the media source as custom dimension using Google Analytics SDK. See the following code samples to learn how to do it:
 
@@ -112,6 +112,6 @@ Objective-C-(void)onConversionDataSuccess:(NSDictionary*) installData {
 
 ### Step 3: See the results in Google Analytics
 
-Most GA reports have a drill-down option called _**Custom Dimensions**_. You can select the dimensions _**AppsFlyer Media Source**_ or _**AppsFlyer Campaign**_ ([set in step 1](https://support.appsflyer.com/hc/articles/4413033740817#step-1-define-it-on-google-analytics)) to see which media sources and campaigns bring users that install your app.
+Most GA reports have a drill-down option called _**Custom Dimensions**_. You can select the dimensions _**AppsFlyer Media Source**_ or _**AppsFlyer Campaign**_ ([set in step 1](/docs/google-analytics-integration-custom-dimensions#step-1-define-it-on-google-analytics)) to see which media sources and campaigns bring users that install your app.
 
 <Image src="https://files.readme.io/dde9219a7a8eec5c861b5031ad741ff7377d85ba9c3693bcbc455fd735f8af2d-4413121449617.png" alt="G_analytics1.png" />

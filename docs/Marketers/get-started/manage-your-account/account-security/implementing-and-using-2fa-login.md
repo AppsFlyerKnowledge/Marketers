@@ -44,7 +44,7 @@ For accounts using 2FA, there may be occasions on which you need to reset a user
 > 📘 Note
 >
 >
-> An admin can reset any other user's 2FA (including [account owners](https://support.appsflyer.com/hc/articles/4409128270481#admin%E2%80%94a-special-role)) other than their own. In the case of no other admin users, to reset the account owner's 2FA, [contact the AppsFlyer CS team](https://support.appsflyer.com/hc/articles/360020991538).
+> An admin can reset any other user's 2FA (including [account owners](/docs/user-management#admin%E2%80%94a-special-role)) other than their own. In the case of no other admin users, to reset the account owner's 2FA, contact the AppsFlyer CS team.
 
 ### Deactivate
 

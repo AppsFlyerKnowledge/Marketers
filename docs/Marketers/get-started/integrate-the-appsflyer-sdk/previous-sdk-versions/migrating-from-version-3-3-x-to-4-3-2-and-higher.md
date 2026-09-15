@@ -30,7 +30,7 @@ This is necessary only if the app is not running in the background.
 
 AppsFlyerLib.getInstance().setDebugLog(true);
 
-To view the AppsFlyer SDK Integration Guide for Android, click [here](https://support.appsflyer.com/hc/articles/207032126).
+To view the AppsFlyer SDK Integration Guide for Android, click [here](/docs/sdk-integration-overview).
 
 ### Migrating to 4.4.0 and higher
 

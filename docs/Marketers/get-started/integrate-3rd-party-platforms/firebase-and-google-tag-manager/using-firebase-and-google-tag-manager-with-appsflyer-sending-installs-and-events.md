@@ -2,184 +2,164 @@
 title: "Using Firebase and Google Tag Manager with AppsFlyer—Sending installs and events"
 excerpt: "Learn how to configure events in your app and send install events reported via Firebase SDK to AppsFlyer using Google Tag Manager."
 ---
-At a glance: Instructions for setting up event sending reported via Firebase SDK to AppsFlyer in your app.
+**At a glance:** Instructions for setting up event sending reported via Firebase SDK to AppsFlyer in your app.
 
 ## Configuring events in the app
 
 This section discusses how to set up and create events in the app with Google Tag Manager (GTM).
 
-When the event is sent, GTM checks to see if there is a tag that is configured to process this event with the help of the event trigger. The event trigger is set to fire the tag whenever a specific event is sent. If a specific event is sent and it has a corresponding trigger, the tag is fired. When the tag is fired, Google Tag Manager collects all the data in the event. Such data includes the AppsFlyer ID, event name, and event parameters. After collecting all the data, Google Tag Manager sends the event to AppsFlyer.
+When the event is sent, GTM checks to see if there is a tag that is configured to process this event with the help of the event trigger. The event trigger is set to fire the tag whenever a specific event is sent. If a specific event is sent and it has a corresponding trigger, the tag is fired. When the tag is fired, Google Tag Manager collects all the data in the event. Such data includes the AppsFlyer ID,  event name, and event parameters. After collecting all the data, Google Tag Manager sends the event to AppsFlyer.
 
 ### Creating event variables for revenue and price
 
-<Tabs>
-<Tab title="Android (Java)">
+#### Android
 
-1. In the MainActivity class, create a variables to hold AppsFlyer Device ID:
+JavaKotlin
 
-```java
-public static String appsFlyerID;
-```
+1. In the MainActivity class, create a variables to hold AppsFlyer Device ID:  
 
+   ```
+   public static String appsFlyerID;
+   ```
 2. Back in the MainActivity class, in the `onCreate` method and after `super.onCreate`, pass the AppsFlyer ID to the variable:
 
-```java
-appsFlyerID = AppsFlyerLib.getInstance().getAppsFlyerUID(this);
-```
+   ```
+   appsFlyerID = AppsFlyerLib.getInstance().getAppsFlyerUID(this);
+   ```
 
-</Tab>
-<Tab title="Android (Kotlin)">
+1. In the MainActivity class, create a variable to hold AppsFlyer Device ID:  
 
-1. In the MainActivity class, create a variable to hold AppsFlyer Device ID:
-
-```kotlin
-var appsFlyerID: String? = null
-```
-
+   ```
+   var appsFlyerID: String? = null
+   ```
 2. Back in the MainActivity class, in the `onCreate` method and after `super.onCreate`, pass the AppsFlyer ID value to the variable:
 
-```kotlin
-override fun onCreate(savedInstanceState: Bundle?) {
+   ```
+   override fun onCreate(savedInstanceState: Bundle?) {
     ...
     appsFlyerID = AppsFlyerLib.getInstance().getAppsFlyerUID(this)
-}
-```
+   }
+   ```
 
-</Tab>
-<Tab title="iOS (Objective-C)">
-
-For iOS, parameters are available across the app. You can retrieve them through the AppsFlyerTracker instance.
-
-1. AppsFlyer Device ID -
-
-```objectivec
-[AppsFlyerTracker sharedTracker].getAppsFlyerUID
-```
-
-2. Apple App ID -
-
-```objectivec
-[AppsFlyerTracker sharedTracker].appleAppID
-```
-
-</Tab>
-<Tab title="iOS (Swift)">
+#### iOS
 
 For iOS, parameters are available across the app. You can retrieve them through the AppsFlyerTracker instance.
 
+Objective C Swift
+
 1. AppsFlyer Device ID -
 
-```swift
-AppsFlyerTracker.shared().getAppsFlyerUID()
-```
-
+   ```
+   [AppsFlyerTracker sharedTracker].getAppsFlyerUID
+   ```
 2. Apple App ID -
 
-```swift
-AppsFlyerTracker.shared().appleAppID
-```
+   ```
+   [AppsFlyerTracker sharedTracker].appleAppID
+   ```
 
-</Tab>
-</Tabs>
+1. AppsFlyer Device ID -
+
+   ```
+    AppsFlyerTracker.shared().getAppsFlyerUID()
+   ```
+2. Apple App ID -
+
+   ```
+   AppsFlyerTracker.shared().appleAppID
+   ```
 
 ### Adding events in the app
 
-The first step is to configure the event in the app. The event is sent using Firebase Event Logging In the event you specify the AppsFlyer ID, event name, and event parameters. The AppsFlyer ID is retrieved from the variable that is created in the setup step.
+The first step is to configure the event in the app. The event is sent using Firebase Event Logging In the event you specify the AppsFlyer ID, event name, and event parameters. The AppsFlyer ID is retrieved from the variable that is created in the [setup step](/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup#google-tag-manager-setup).
 
-Google Tag Manager uses Firebase Analytics Events to trigger tag events. Whenever an event is sent to Firebase, Tag Manager recognizes the event and sends it to AppsFlyer as well.
+[Google Tag Manager uses Firebase Analytics](https://developers.google.com/tag-manager/ios/v5/#log-events-and-variables) Events to trigger tag events. Whenever an event is sent to Firebase, Tag Manager recognizes the event and sends it to AppsFlyer as well.
 
-<Tabs>
-<Tab title="Android (Java)">
+#### Android
 
-1. In the desired activity, add the import statement for Firebase:
+JavaKotlin
 
-```java
-import com.google.firebase.analytics.FirebaseAnalytics;
-```
+1. In the desired activity, add the import statement for Firebase:  
 
+   ```
+   import com.google.firebase.analytics.FirebaseAnalytics;
+   ```
 2. Add the following code to run whenever a purchase event occurs:
 
-```java
-Bundle bundle = new Bundle();
-// notice "af_id", this is the name of the event parameter
-// for AppsFlyer ID that we created in the previous step
-bundle.putString("af_id", appsFlyerID);
-bundle.putString("af_revenue", "200");
-bundle.putString("af_price", "250");
-mFirebaseAnalytics.logEvent("af_purchase", bundle);
-```
+   ```
+   Bundle bundle = new Bundle();
+     // notice "af_id", this is the name of the event parameter 
+     // for AppsFlyer ID that we created in the previous step
+     bundle.putString("af_id", appsFlyerID);
+     bundle.putString("af_revenue", "200");
+     bundle.putString("af_price", "250");
+     mFirebaseAnalytics.logEvent("af_purchase", bundle);
+   ```
 
-</Tab>
-<Tab title="Android (Kotlin)">
+1. In the desired activity, add the import statement for Firebase:  
 
-1. In the desired activity, add the import statement for Firebase:
-
-```kotlin
-import com.google.firebase.analytics.FirebaseAnalytics
-```
-
+   ```
+   import com.google.firebase.analytics.FirebaseAnalytics
+   ```
 2. Add the following code to run whenever a purchase event occurs:
 
-```kotlin
-val bundle = Bundle()
-// notice "af_id", this is the name of the event parameter
-// for AppsFlyer ID that we created in the previous step
-bundle.putString("af_id", appsFlyerID)
-bundle.putString("af_revenue", "200")
-bundle.putString("af_price", "250")
-FirebaseAnalytics.getInstance(this).logEvent("af_purchase", bundle)
-```
+   ```
+   val bundle = Bundle()
+     // notice "af_id", this is the name of the event parameter
+     // for AppsFlyer ID that we created in the previous step
+     bundle.putString("af_id", appsFlyerID)
+     bundle.putString("af_revenue", "200")
+     bundle.putString("af_price", "250")
+     FirebaseAnalytics.getInstance(this).logEvent("af_purchase", bundle)
+   ```
 
-</Tab>
-<Tab title="iOS (Objective-C)">
+iOS
+
+Objective-C Swift
 
 1. In the view where the event is sent add `@import Firebase`
 2. Add the following code to run whenever a purchase event occurs:
 
-```objectivec
-NSString *id_prefix = @"id";
-NSString *apple_app_id = [id_prefix stringByAppendingString:[AppsFlyerTracker sharedTracker].appleAppID];
-[FIRAnalytics logEventWithName:@"af_purchase"\
-         parameters:@{\
-          @"apple_app_id": apple_app_id,\
-          @"af_id": [AppsFlyerTracker sharedTracker].getAppsFlyerUID,\
-          @"af_revenue": @250,\
-          @"af_price": @375\
+   ```
+   NSString *id_prefix = @"id";  
+   NSString *apple_app_id = [id_prefix stringByAppendingString:[AppsFlyerTracker sharedTracker].appleAppID];  
+     
+   [FIRAnalytics logEventWithName:@"af_purchase"
+         parameters:@{
+          @"apple_app_id": apple_app_id,
+          @"af_id": [AppsFlyerTracker sharedTracker].getAppsFlyerUID,
+          @"af_revenue": @250,
+          @"af_price": @375
        }];
-```
-
-</Tab>
-<Tab title="iOS (Swift)">
+   ```
 
 1. In the view where the event is sent add `import Firebase`
 2. Add the following code to run whenever a purchase event occurs:
 
-```swift
-Analytics.logEvent("af_purchase", parameters: [\
-          "apple_app_id": "id" + AppsFlyerTracker.shared().appleAppID,\
-          "af_id": AppsFlyerTracker.shared().getAppsFlyerUID(),\
-          "af_revenue": 250,\
-          "af_price": 375\
+   ```
+   Analytics.logEvent("af_purchase", parameters: [
+          "apple_app_id": "id" + AppsFlyerTracker.shared().appleAppID,
+          "af_id": AppsFlyerTracker.shared().getAppsFlyerUID(),
+          "af_revenue": 250,
+          "af_price": 375
        ]);
-```
-
-</Tab>
-</Tabs>
+   ```
 
 ## Sending install events to Firebase
 
 You can also send install events to Firebase with all install-related data.
 
-<Tabs>
-<Tab title="Android (Java)">
+#### Android
 
-To send install events to Firebase in Android, you can use the `conversionData` object.
+Java Kotlin
+
+To send install events to Firebase in Android, you can use the `conversionData`object.
 
 #### Creating the send event method
 
 Add the following method in the `AFApplication` class right below the `onCreate` method:
 
-```java
+```
 public void sendInstallToFirebase(Map<String, String> conversionData){
        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
        Bundle bundle = new Bundle();
@@ -198,7 +178,7 @@ This method accepts a `conversionData` object. The method checks whether install
 
 Add the following code in the `onConversionDataSuccess` method:
 
-```java
+```
 if(conversionData.get("is_first_launch").equals("true")){
        sendInstallToFirebase(conversionData);
     }
@@ -206,20 +186,13 @@ if(conversionData.get("is_first_launch").equals("true")){
 
 This code checks if this is the first time the app is launched. If so, it calls the `sendInstallToFirebase` method.
 
-> 📘 Note
->
-> Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is `onInstallConversionDataLoaded`. We recommend that you upgrade to SDK 5.0.0.
-
-</Tab>
-<Tab title="Android (Kotlin)">
-
-To send install events to Firebase in Android, you can use the `conversionData` object.
+To send install events to Firebase in Android, you can use the `conversionData`object.
 
 #### Creating the send event method
 
 Add the following method in the `AFApplication` class right below the `onCreate` method:
 
-```kotlin
+```
 fun sendInstallToFirebase(conversionData: Map<String, Any>) {
       val bundle = Bundle()
       bundle.putString("install_time", conversionData["install_time"]?.toString() ?: Date().time.toString())
@@ -237,7 +210,7 @@ This method accepts a `conversionData` object. The method checks whether install
 
 Add the following code in the `onConversionDataSuccess` method:
 
-```kotlin
+```
 if(conversionData?.get("is_first_launch") == true){
       sendInstallToFirebase(conversionData);
   }
@@ -245,41 +218,40 @@ if(conversionData?.get("is_first_launch") == true){
 
 This code checks if this is the first time the app is launched. If so, it calls the `sendInstallToFirebase` method.
 
-> 📘 Note
->
-> Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is `onInstallConversionDataLoaded`. We recommend that you upgrade to SDK 5.0.0.
+**Note:** Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is `onInstallConversionDataLoaded`. We recommend that you upgrade to SDK 5.0.0. To learn more, click [here](/docs/links-to-appsflyer-sdk-release-notes).
 
-</Tab>
-<Tab title="iOS (Objective-C)">
+#### iOS
+
+Objective-C Swift
 
 #### Creating the send event method
 
 In AppDelegate.m, add the following method at the end of the file:
 
-```objectivec
-- (void)sendInstallToFirebase:(NSDictionary *)installData{
+```
+- (void) sendInstallToFirebase:(NSDictionary *) installData{
       NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
       [dateFormatter setDateFormat:@"dd/MM/yyyy HH:mm:ss"];
       NSDate *date = [NSDate date];
       NSString *newDate = [dateFormatter stringFromDate:date];
-
+    
       if([[installData objectForKey: @"af_status"] isEqual: @"Organic"]){
-        [FIRAnalytics logEventWithName:@"install"\
-         parameters:@{\
-          @"install_time": newDate,\
-          @"media_source": @"organic",\
-          @"campaign": @"organic"\
-\
+        [FIRAnalytics logEventWithName:@"install"
+         parameters:@{
+          @"install_time": newDate,
+          @"media_source": @"organic",
+          @"campaign": @"organic"
+    
         }];
       }
       else {
-        [FIRAnalytics logEventWithName:@"install"\
-          parameters:@{\
-          @"install_time": [installData objectForKey: @"install_time"],\
-          @"click_time": [installData objectForKey: @"click_time"],\
-          @"install_type": [installData objectForKey: @"af_status"],\
-          @"media_source": [installData objectForKey: @"media_source"],\
-          @"campaign": [installData objectForKey: @"campaign"]\
+        [FIRAnalytics logEventWithName:@"install"
+          parameters:@{
+          @"install_time": [installData objectForKey: @"install_time"],
+          @"click_time": [installData objectForKey: @"click_time"],
+          @"install_type": [installData objectForKey: @"af_status"],
+          @"media_source": [installData objectForKey: @"media_source"],
+          @"campaign": [installData objectForKey: @"campaign"]
         }];
       }
     }
@@ -297,7 +269,7 @@ In AppDelegate.m, in the method `didFinishLaunchingWithOptions`, add `[FIRApp co
 
 In AppDelegate.m, in the `onConversionDataSuccess` method, add the following code at the end of the method:
 
-```objectivec
+```
 if([installData objectForKey:@"is_first_launch"]){
       [self sendInstallToFirebase: installData];
     }
@@ -305,43 +277,36 @@ if([installData objectForKey:@"is_first_launch"]){
 
 The code snippet above checks if this is the first time the app is launched. If it is, it calls the `sendInstallToFirebase` method.
 
-> 📘 Note
->
-> Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is `onConversionDataReceived`. We recommend that you upgrade to SDK 5.0.0.
-
-</Tab>
-<Tab title="iOS (Swift)">
-
-#### Creating the send event method
-
 In AppDelegate.swift, add the following method at the end of the file:
 
-```swift
+```
 func sendInstallToFirebase(_ installData: [AnyHashable : Any]!){
-
+    
         let date = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy hh:mm:ss"
         let _newDate: String = dateFormatter.string(from: date)
-
+    
         if(installData["af_status"] as? String == "Organic"){
-          Analytics.logEvent("install", parameters: [\
-            "install_time": _newDate,\
-            "media_source": "organic",\
-            "campaign": "organic"\
+          Analytics.logEvent("install", parameters: [
+            "install_time": _newDate,
+            "media_source": "organic",
+            "campaign": "organic"
           ]);
         } else {
-          Analytics.logEvent("install", parameters: [\
-            "install_time": installData["install_time"],\
-            "click_time": installData["click_time"],\
-            "media_source": installData["media_source"],\
-            "campaign": installData["campaign"],\
-            "install_type": installData["af_status"]\
+          Analytics.logEvent("install", parameters: [
+            "install_time": installData["install_time"],
+            "click_time": installData["click_time"],
+            "media_source": installData["media_source"],
+            "campaign": installData["campaign"],
+            "install_type": installData["af_status"]
           ]);
         }
-
+    
       }
 ```
+
+**Note:** Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is `onConversionDataReceived`. We recommend that you upgrade to SDK 5.0.0. To learn more, click [here](/docs/links-to-appsflyer-sdk-release-notes).
 
 This method accepts the `installData` object and checks if the install is organic or not. If it's organic, it sets the install time to the current time and the media source, campaign, and install type to organic.
 
@@ -355,7 +320,7 @@ In AppDelegate.swift, in the method `didFinishLaunchingWithOptions`, add `Fireba
 
 In AppDelegate.swift, in the `onConversionDataSuccess` method, add the following code at the end of the method:
 
-```swift
+```
 if let is_first_launch = data["is_first_launch"] , let launch_code = is_first_launch as? Int {
       if(launch_code == 1){
         print("First Launch")
@@ -366,14 +331,13 @@ if let is_first_launch = data["is_first_launch"] , let launch_code = is_first_la
     }
 ```
 
-> 📘 Note
+**Note:** Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is `onConversionDataReceived`. We recommend that you upgrade to SDK 5.0.0. To learn more, click [here](/docs/links-to-appsflyer-sdk-release-notes).
+
+The code snippet above checks if this is the first time the app is launched. If it is, it calls the `sendInstallToFirebase` method.
+
+> 📘 **Note**
 >
-> Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is `onConversionDataReceived`. We recommend that you upgrade to SDK 5.0.0.
-
-</Tab>
-</Tabs>
-
-> 🚧 Warning
+> #### Warning
 >
 > Certain media sources don't allow their data to be shared with third-party platforms and services. If you are working with partners such as Meta ads, Twitter, Snap, Pinterest, etc. who have set restrictions on sharing their data with third-party platforms and services, please make sure **to follow their guidelines and remove any data which is under these restrictions**.
 >

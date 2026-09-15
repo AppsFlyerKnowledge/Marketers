@@ -70,7 +70,7 @@ We recommend taking a look at these articles:
 
 AppsFlyer provides rejected attribution postbacks to ad networks for every install Protect360 rejects from attribution.
 
-You can enable “rejected postback” by appending “rejected postback” parameters to your postback template by using [Integration Management](https://support.appsflyer.com/hc/articles/360018512658).
+You can enable “rejected postback” by appending “rejected postback” parameters to your postback template by using [Integration Management](/docs/self-serve-integration-management-for-ad-networks).
 
 </Accordion>
 

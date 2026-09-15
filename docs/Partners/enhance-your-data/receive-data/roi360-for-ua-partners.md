@@ -30,7 +30,7 @@ To enable the partner to get the report via Data Locker:
 - The partner has to perform the following steps in Data Locker:
 1. [Set up Data Locker](/docs/data-locker-for-partners#set-up-data-locker) in the partner account including the connection to the cloud service provider, and the reports’ format and contents.
 2. [Enable the ROI360 UA Signals report](/docs/ad-revenue-signals-for-ua-ad-networks#enable-the-ad-revenue-report).
-- The advertiser has to [grant the partner permission for the report](https://support.appsflyer.com/hc/articles/217490046-Ad-revenue-attribution-guide#permission-to-get-ad-revenue-data).
+- The advertiser has to [grant the partner permission for the report](/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data).
 
 ### How to receive ROI360 postbacks from AppsFlyer
 
@@ -50,7 +50,7 @@ The UA Signals report does not provide real-time data as ad revenue postbacks do
 
 Depending on the advertiser integration type, the report data can originate from either:
 
-1. [AdRevenue SDK](https://support.appsflyer.com/hc/articles/4416353506833--Beta-Generic-impression-level-ad-revenue-SDK-connector-integration-guide) integrations: customers can share impression-level revenue data loaded by the partner to client devices, and then reported to AppsFlyer in near real-time.
+1. [AdRevenue SDK](/docs/integrate-the-roi360-ad-revenue-sdk-api) integrations: customers can share impression-level revenue data loaded by the partner to client devices, and then reported to AppsFlyer in near real-time.
 2. S2S API-based device-level integrations: customers can configure their partner credentials within the AppsFlyer UI under integrated partners and allow ROI360 ad revenue to collect device-level ad revenue data on their behalf.
 3. A combination of the two (Freshness to Accuracy). 
 
@@ -73,7 +73,7 @@ Device-level data is written daily to the report in Data Locker
 
 ### What is the report data freshness?
 
-Data is written daily to the h=23 folder of your Data Locker bucket at 21:00 [UTC time](https://support.appsflyer.com/hc/articles/360000310629-Data-freshness-and-time-zone-support#daily).
+Data is written daily to the h=23 folder of your Data Locker bucket at 21:00 [UTC time](/docs/about-data-freshness-and-timezone-support#daily).
 
 ### What are the report fields?
 
@@ -87,7 +87,7 @@ Data is written daily to the h=23 folder of your Data Locker bucket at 21:00 [U
 | platform | Device platform: iOS, Android, or Windows Mobile |
 | country | Country code using [ISO 3166 (alpha-2)](https://www.iso.org/iso-3166-country-codes.html) Example: US, CN |
 | original\_url | • For iOS 14+ devices and non-consenting users, or if the advertiser has Advanced Privacy on, this does not display. • Only populated if UA is attributed to the partner receiving the data. |
-| mediation\_network | The mediation network associated with the impression or impressions. [See list of possible networks](https://support.appsflyer.com/hc/articles/217490046-Ad-revenue-attribution-guide#[closed-beta]-ua-signals-for-ad-networks) |
+| mediation\_network | The mediation network associated with the impression or impressions. [See list of possible networks](/docs/roi360-guide-ad-revenue-attribution#[closed-beta]-ua-signals-for-ad-networks) |
 | ad\_unit | Coming Q3 2023: The monetization ad\_unit associated with the impression or impressions |
 | placement | Coming Q3 2023: The monetization placement associated with the impression or impressions |
 

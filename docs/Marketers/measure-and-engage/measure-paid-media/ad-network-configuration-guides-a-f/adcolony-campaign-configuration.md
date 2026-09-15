@@ -31,7 +31,7 @@ The **Integration** tag is divided into different sections as described below.
 
 ### Activate partners
 
-The [partner must be activated](https://support.appsflyer.com/hc/articles/360000844778#activating-a-partner) by switching on the _**Activate partner**_ toggle on the first visit, to enable its setup.
+The [partner must be activated](/docs/partner-activation-deactivation#activating-a-partner) by switching on the _**Activate partner**_ toggle on the first visit, to enable its setup.
 
 ### General settings
 
@@ -55,9 +55,9 @@ As of July 1, 2020, we no longer send launch postbacks to AdColony. If your inte
 
 | Your configuration | Will be updated to | Your next actions |
 | --- | --- | --- |
-| Send to AdColony **all launches** (from all media sources, including organic) | Send to AdColony:<br>- **all installs** (from all media sources, including organic)<br>- **all**`af_app_opened` **events** (from all media sources, including organic) | No further actions required. This update has no actual impact on the configuration. |
-| Send to AdColony **attributed first launches only** | Send to AdColony **installs** attributed to AdColony only | If you wish to send `af_app_open` events as well:<br>- In AppsFlyer, on AdColony integration page, configure sending the event under the _**In-app event postbacks**_ section |
-| Send to AdColony **all launches** (from all media sources, including organic)<br>**BUT**<br>No conversions have been attributed to AdColony in the 3 months prior to July 1, 2020 | Send **all installs**<br>**AND**<br>For 30 days after July 1, 2020, **all launches** | If you wish to send `af_app_open` events as well:<br>- In AppsFlyer, on AdColony integration page, configure sending the event under the _**In-app event postbacks**_ section.<br>If done during the 30 days period, we will discontinue sending all launches and start sending all `af_app_open` events instead.<br>If done after the 30 days period, we will stop sending launches and won't send `af_app_open` events until configured otherwise. |
+| Send to AdColony **all launches** (from all media sources, including organic) | Send to AdColony:<br />- **all installs** (from all media sources, including organic)<br />- **all**`af_app_opened` **events** (from all media sources, including organic) | No further actions required. This update has no actual impact on the configuration. |
+| Send to AdColony **attributed first launches only** | Send to AdColony **installs** attributed to AdColony only | If you wish to send `af_app_open` events as well:<br />- In AppsFlyer, on AdColony integration page, configure sending the event under the _**In-app event postbacks**_ section |
+| Send to AdColony **all launches** (from all media sources, including organic)<br />**BUT**<br />No conversions have been attributed to AdColony in the 3 months prior to July 1, 2020 | Send **all installs**<br />**AND**<br />For 30 days after July 1, 2020, **all launches** | If you wish to send `af_app_open` events as well:<br />- In AppsFlyer, on AdColony integration page, configure sending the event under the _**In-app event postbacks**_ section.<br />If done during the 30 days period, we will discontinue sending all launches and start sending all `af_app_open` events instead.<br />If done after the 30 days period, we will stop sending launches and won't send `af_app_open` events until configured otherwise. |
 
 ### In-app events settings
 
@@ -70,20 +70,20 @@ In this section, you can configure in-app event postbacks that are sent to AdCol
 3. 
 | Parameter name | Description |
 | --- | --- |
-| **SDK event name** | The name of the event, as received by AppsFlyer either from the SDK, or from server-to-server events.<br>**Tip**: If you don't see the event you want in the list, activate this event on a device with a non-organic installation and recheck. |
+| **SDK event name** | The name of the event, as received by AppsFlyer either from the SDK, or from server-to-server events.<br />**Tip**: If you don't see the event you want in the list, activate this event on a device with a non-organic installation and recheck. |
 | **Partner event identifier** | The unique name or ID of each event as defined on the partner's side. Select the most suitable pre-defined event for your SDK event. |
-| **Sending option** | Select the sending option for the event:<br>**This partner only** for events coming **only** from users attributed to AdColony.<br>**All sources, including organic** to have your entire user base available to be reported to the partner |
-| **Send event data** | - **No values & no revenue:** sends only the event itself without the event value.<br>   - **Values & no revenue:** sends all the parameters excluding the revenue value.<br>   - **Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event). |
+| **Sending option** | Select the sending option for the event:<br />**This partner only** for events coming **only** from users attributed to AdColony.<br />**All sources, including organic** to have your entire user base available to be reported to the partner |
+| **Send event data** | - **No values & no revenue:** sends only the event itself without the event value.<br />   - **Values & no revenue:** sends all the parameters excluding the revenue value.<br />   - **Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event). |
 
 4. Click _**Save**_.
 
 ## Attribution link tab
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](https://support.appsflyer.com/hc/articles/115005248543-OneLink-overview).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).
 
-[Learn more about attribution link structure and parameters](https://support.appsflyer.com/hc/articles/207447163).
+[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
 
-**To generate an attribution link,** follow [these instructions](https://support.appsflyer.com/hc/articles/4410395957521#attribution-link-tab).
+**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 ## Cost tab
 
@@ -109,4 +109,4 @@ Use these toggles to give the ad network permissions to handle its own configura
 - _**Allow access to your aggregate revenue data**_ - only to the revenue data attributed to the partner
 - _**Allow access to your Protect360 dashboard**_ - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about granting [ad network permissions](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).

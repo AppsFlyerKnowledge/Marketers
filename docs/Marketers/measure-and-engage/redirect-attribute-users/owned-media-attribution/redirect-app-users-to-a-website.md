@@ -10,9 +10,9 @@ Advertisers can post OneLink URLs leading to external web pages or social media 
 
 **To set up app-to-web redirection**:
 
-1. Set up a [OneLink template](https://support.appsflyer.com/hc/articles/207032246#procedures).
+1. Set up a [OneLink template](/docs/create-a-onelink-template#procedures).
    - In the **When app is installed** section, make sure you don't set up an app-opening method (Universal Links, App Links, or URI scheme).
-2. Create a [OneLink custom link](https://support.appsflyer.com/hc/articles/208874366#create-a-onelink-link).
+2. Create a [OneLink custom link](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link).
    - In the **When app isn’t installed** section, make sure the redirection settings are to the desired web URL.
    - Don't add an `af_dp` parameter with a URI Scheme.
 3. Make sure the domain you're redirecting users to appears in your [redirect allowlist](/docs/set-up-your-domain-redirect-allowlist).

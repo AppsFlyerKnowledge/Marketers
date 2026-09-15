@@ -12,7 +12,7 @@ The following visual displays the first time you go to the **Raw data export** p
 
 The **My reports** page lists reports previously generated and ready download, duplication, or both. The reports listed were generated during the previous 90 days; their download period is 7 days. After 7 days, if you still need the report, you must generate it again.
 
-For a description of the raw data reports, see [Raw data reporting overview](https://support.appsflyer.com/hc/articles/209680773)
+For a description of the raw data reports, see [Raw data reporting overview](/docs/raw-data-reporting-overview)
 
 To generate or download reports, see the procedures section of this article.
 
@@ -27,18 +27,18 @@ The raw data export page provides reports having the features listed in the foll
 | Report categories | Differ according to your subscription plan |
 | Date range | Raw data reports are filtered by activity dates (event occurrence). You can also add a filter for install dates. See list of filter options in the table that follows. |
 | Maximum number of rows | 1M rows |
-| Rate limitation | A [quota mechanism](https://support.appsflyer.com/hc/articles/207034366) limits the number of reports that can be generated per day. |
-| Retention/report window | Install-related reports (installs, install postbacks) **60** out of the previous 90 days in a single download. <br>In-app event-related reports: 31 out of the previous 90 days in a single download. |
+| Rate limitation | A [quota mechanism](/docs/report-generation-quotas-rate-limitations) limits the number of reports that can be generated per day. |
+| Retention/report window | Install-related reports (installs, install postbacks) **60** out of the previous 90 days in a single download. <br />In-app event-related reports: 31 out of the previous 90 days in a single download. |
 | Filter options | The filters listed are available for use. In some cases, depending on the filter, filter options are populated. For example, when filtering by Geo the list of available countries is listed. |
-| Field selection | The most important fields are pre-selected. You can add/clear select fields in the **Report fields** tab. Some fields may not have relevance to a given report. Nevertheless, you can select the field. We do this so that you can have consistent report formats (columns) <br>For example, selecting fraud (Protect360) related fields in the user acquisition in-app events report returns blank columns. These fields are populated only in the context of explicit Protect360 reports. |
+| Field selection | The most important fields are pre-selected. You can add/clear select fields in the **Report fields** tab. Some fields may not have relevance to a given report. Nevertheless, you can select the field. We do this so that you can have consistent report formats (columns) <br />For example, selecting fraud (Protect360) related fields in the user acquisition in-app events report returns blank columns. These fields are populated only in the context of explicit Protect360 reports. |
 | Report (CSV) field order | Columns in reports are arranged according to the field order setting. The column sequence [listed in a spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGYcMOgC5yy_82yn3DWd3ucLE5KtuTA72eJfvu5KVB9fFH_mYwzM3KpR_inQOnat-KzgVjuuvXa6_g/pub?output=xlsx) contains separate tabs for the legacy and default options. |
 
 | Setting | Field selection allowed | Remarks |
 | --- | --- | --- |
-| Default | Yes | - Selected fields are ordered according to an AppsFlyer template.<br>- Going forward, the sequence will be preserved. Future fields will be appended to the right of the existing fields. |
+| Default | Yes | - Selected fields are ordered according to an AppsFlyer template.<br />- Going forward, the sequence will be preserved. Future fields will be appended to the right of the existing fields. |
 | Alphabetical (A-Z) | Yes | Selected fields are ordered alphabetically (ascending). |
 | Alphabetical (Z-A) | Yes | Selected fields are ordered in reverse order alphabetically (descending). |
-| Legacy | No | - Fields are ordered according to the sequence of columns in reports prepared using the previous version of the export data page.<br>- Field selection is fixed and can't be changed.<br>- There is some variation of the reports per field depending on the actual report | |
+| Legacy | No | - Fields are ordered according to the sequence of columns in reports prepared using the previous version of the export data page.<br />- Field selection is fixed and can't be changed.<br />- There is some variation of the reports per field depending on the actual report | |
 
 | Filter | Advertiser | Ad network | Agency |
 | --- | --- | --- | --- |
@@ -139,7 +139,7 @@ You can create a custom report by setting its filters and fields.
 | Non-organic data | Available |
 | Data freshness | Report dependent |
 | Historical data | Previous 90 days |
-| Account user access | Users in [roles with required permissions](https://support.appsflyer.com/hc/articles/4409128270481) |
+| Account user access | Users in [roles with required permissions](/docs/user-management) |
 | Email delivery | Not supported |
 | Install date range | The install date range must be earlier than the activity date range. |
 | Raw data postback reports | Postbacks sent to partners due to events attributed to agencies are not included in the Advertiser's Raw Data Postback reports. |
@@ -150,10 +150,10 @@ The Report field order setting allows you to specify the sequence of columns in 
 
 | Setting | Field selection allowed | Remarks |
 | --- | --- | --- |
-| Default | Yes | - Selected fields are ordered according to an AppsFlyer template.<br>- Going forward, the sequence will be preserved. Future fields will be appended to the right of the existing fields. |
+| Default | Yes | - Selected fields are ordered according to an AppsFlyer template.<br />- Going forward, the sequence will be preserved. Future fields will be appended to the right of the existing fields. |
 | Alphabetical (A-Z) | Yes | Selected fields are ordered alphabetically. |
 | Alphabetical (Z-A) | Yes | Selected fields are ordered in reverse order alphabetically |
-| Legacy | No | - Fields are ordered according to the sequence of columns in reports prepared using the previous version of the export data page.<br>- Field selection is fixed and can't be changed.<br>- There is some variation of the reports per field depending on the actual report. |
+| Legacy | No | - Fields are ordered according to the sequence of columns in reports prepared using the previous version of the export data page.<br />- Field selection is fixed and can't be changed.<br />- There is some variation of the reports per field depending on the actual report. |
 
 This [spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGYcMOgC5yy_82yn3DWd3ucLE5KtuTA72eJfvu5KVB9fFH_mYwzM3KpR_inQOnat-KzgVjuuvXa6_g/pub?output=xlsx) contains both a Default and Legacy sheet. Each contains the relevant field order list.
 

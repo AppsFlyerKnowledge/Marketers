@@ -2,7 +2,7 @@
 title: "Iterable integration with AppsFlyer"
 excerpt: "Integrate OneLink-based attribution links with Iterable to enable deep linking from emails while preserving click recording functionality."
 ---
-Integrate OneLink-based attribution links with Iterable system to [deep link from emails](https://support.appsflyer.com/hc/articles/360004556077). The integration utilizes Iterable’s support for Universal Links on top of branded click recording domains.
+Integrate OneLink-based attribution links with Iterable system to [deep link from emails](/docs/email-service-provider-esp-integration-guide). The integration utilizes Iterable’s support for Universal Links on top of branded click recording domains.
 
 ![iterable-af-logo.png](https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png)
 
@@ -26,7 +26,7 @@ With Iterable, which supports Universal Links on top of their click recording do
 
 - AppsFlyer Android SDK version 4.9.0
 
-Iterable doesn’t support Android App Links. However, [URI Scheme deep linking is still supported](https://support.appsflyer.com/hc/articles/208874366#social-app-landing-page). No special actions are required on Iterable side to support deep linking in Android.
+Iterable doesn’t support Android App Links. However, [URI Scheme deep linking is still supported](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page). No special actions are required on Iterable side to support deep linking in Android.
 
 </Tab>
 </Tabs>
@@ -96,7 +96,7 @@ The SDK needs to resolve the OneLink behind the click domain to get the campaign
 To resolve click domains:
 
 1. Make sure that your SDK version is at least 4.9.0.
-2. List the click domains in the SDK API `setResolveDeepLinkURLs`. This API needs to be called before SDK initialization. For more information, see the SDK documentation [here](https://support.appsflyer.com/hc/articles/4408735106193#resolve-wrapped-deep-link-urls).
+2. List the click domains in the SDK API `setResolveDeepLinkURLs`. This API needs to be called before SDK initialization. For more information, see the SDK documentation [here](/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls).
 
 ```java
 AppsFlyerLib.getInstance().setResolveDeepLinkURLs("click.example.com");
@@ -123,7 +123,7 @@ The SDK needs to resolve the OneLink behind the click domain to get the campaign
 To resolve click domains:
 
 1. Make sure that your SDK version is at least 4.9.0.
-2. List the click domains in the SDK property `resolveDeepLinkURLs`. This property needs to be set before SDK initialization. For more information, see the SDK documentation [here](https://support.appsflyer.com/hc/articles/4408735106193#resolve-wrapped-deep-link-urls).
+2. List the click domains in the SDK property `resolveDeepLinkURLs`. This property needs to be set before SDK initialization. For more information, see the SDK documentation [here](/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls).
 
 ```java
 AppsFlyerLib.getInstance().setResolveDeepLinkURLs("clickdomain.com", "myclickdomain.com", "anotherclickdomain.com");
@@ -136,7 +136,7 @@ The SDK needs to resolve the OneLink behind the click domain to get the campaign
 To resolve click domains:
 
 1. Make sure that your SDK version is at least 4.9.0.
-2. List the click domains in the SDK property `resolveDeepLinkURLs`. This property needs to be set before SDK initialization. For more information, see the SDK documentation [here](https://support.appsflyer.com/hc/articles/4408735106193#resolve-wrapped-deep-link-urls).
+2. List the click domains in the SDK property `resolveDeepLinkURLs`. This property needs to be set before SDK initialization. For more information, see the SDK documentation [here](/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls).
 
 <Tabs>
 <Tab title="Objective-C">
@@ -194,7 +194,7 @@ func allHTTPHeaderFields(forResolveDeepLinkURL URL: URL!) -> [String : String]! 
 
 ## Sending your first email
 
-1. [Create a OneLink URL](https://support.appsflyer.com/hc/articles/208874366-Create-a-OneLink-link) on the Link Management page (or manually).
+1. [Create a OneLink URL](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink) on the Link Management page (or manually).
 2. When creating the OneLink URL make sure to URL encode all parameter values.
 3. The following parameters are highly recommended to use:
    - pid (media source) - Use a media source that signifies this usage such as Email.

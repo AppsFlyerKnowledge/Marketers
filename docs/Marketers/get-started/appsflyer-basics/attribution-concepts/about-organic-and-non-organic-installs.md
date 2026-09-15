@@ -10,8 +10,8 @@ Non-organic users are attributed to the media source motivating the install or e
 
 ## Organic vs. non-organic
 
-| Organic installs<br>Not attributed to media sources | Non-organic installs (NOI)<br>Attributed to media sources |
+| Organic installs<br />Not attributed to media sources | Non-organic installs (NOI)<br />Attributed to media sources |
 | --- | --- |
 | **Not attributed** has no media source | **Attributed** to a media source |
-| **No attribution** due to the following:<br>- App was installed without using an attribution link. For example, when the user downloads the app from your site or the app store without engaging with an ad first.<br>- Click and app launch couldn't be matched. For example, when data is not available due to privacy policy, or install was attributed by a different MMP first. | **Attribution** of an install or launch due to any of the following:<br>- Use of an AppsFlyer attribution link<br>- Click and launch are matched by AppsFlyer<br>- Claimed by an SRN |
-| | **Attribution info:**<br>- Uses *last-click attribution*: Last ad interaction gets credit for the app install or action.<br>- Only one media source is credited per install.<br>- Learn more about [AppsFlyer attribution](https://support.appsflyer.com/hc/articles/207447053). |
+| **No attribution** due to the following:<br />- App was installed without using an attribution link. For example, when the user downloads the app from your site or the app store without engaging with an ad first.<br />- Click and app launch couldn't be matched. For example, when data is not available due to privacy policy, or install was attributed by a different MMP first. | **Attribution** of an install or launch due to any of the following:<br />- Use of an AppsFlyer attribution link<br />- Click and launch are matched by AppsFlyer<br />- Claimed by an SRN |
+| | **Attribution info:**<br />- Uses *last-click attribution*: Last ad interaction gets credit for the app install or action.<br />- Only one media source is credited per install.<br />- Learn more about [AppsFlyer attribution](/docs/appsflyer-attribution-model). |

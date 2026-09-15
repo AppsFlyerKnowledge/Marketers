@@ -6,35 +6,35 @@ excerpt: "Cohort analytics in Data Locker provides aggregated data of all elemen
 
 ## Cohort analytics in Data Locker
 
-In some cases, attribution raw data in AppsFlyer is [restricted](https://support.appsflyer.com/hc/articles/360006868017) due to media source data-sharing policies or your [privacy-preserving policies.](https://support.appsflyer.com/hc/articles/360018515798) The restriction includes all attribution-related fields like campaign and adset. Cohort reports provide you with aggregated data that can be used as an alternative to raw data.
+In some cases, attribution raw data in AppsFlyer is [restricted](/docs/about-raw-data-identifier-restrictions) due to media source data-sharing policies or your [privacy-preserving policies.](/docs/apply-aggregated-advanced-privacy-framework) The restriction includes all attribution-related fields like campaign and adset. Cohort reports provide you with aggregated data that can be used as an alternative to raw data.
 
 [Download example report](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8q_4xv83wHkl4fs6jndEffRu-RHsPobBRfxDG-bUNXb0pOnvJH4QT0nXKdWvi3JPtVUBegTFbxIEe/pub?output=xlsx)
 
 ### Enable Data Locker
 
-The report is available to Data Locker, Cohort API, and raw data subscribers. To enable the report in [Data Locker,](https://support.appsflyer.com/hc/articles/360000877538) complete one of the following procedures.
+The report is available to Data Locker, Cohort API, and raw data subscribers. To enable the report in [Data Locker,](/docs/data-locker-for-marketers) complete one of the following procedures.
 
 | Do you currently get data via Data Locker? | Procedure |
 | --- | --- |
-| Yes | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/13d984aa18df9aacf5a8977c7dd3f8ca950df5a34e371014a72836981718399c-33338207213329.png) To add the Cohort reports to Data Locker:<br>1. In AppsFlyer, from the side menu, select **Report > Data Locker**.<br>2. Select all the reports in the **Cohort analytics** section. <br>3. Click **Save configuration**. <br>   <br>   The reports will be available on the next day by 10:00 UTC. |
-| No | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/13d984aa18df9aacf5a8977c7dd3f8ca950df5a34e371014a72836981718399c-33338207213329.png)**To set up Data Locker**:<br>1. Complete the first-time Data Locker ( [advertiser](https://support.appsflyer.com/hc/articles/360000877538#set-up-data-locker) \| [partner](https://support.appsflyer.com/hc/articles/36020818517) ) setup.<br>2. Add the Cohort reports to Data Locker:<br>   1. In AppsFlyer, from the side menu, select **Report > Data Locker**.<br>   2. Select all the reports in the **Cohort analytics** section. <br>   3. Click **Save configuration**. <br>      <br>      The reports will be available on the next day by 10:00 UTC. |
+| Yes | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/13d984aa18df9aacf5a8977c7dd3f8ca950df5a34e371014a72836981718399c-33338207213329.png) To add the Cohort reports to Data Locker:<br />1. In AppsFlyer, from the side menu, select **Report > Data Locker**.<br />2. Select all the reports in the **Cohort analytics** section. <br />3. Click **Save configuration**. <br />   <br />   The reports will be available on the next day by 10:00 UTC. |
+| No | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/13d984aa18df9aacf5a8977c7dd3f8ca950df5a34e371014a72836981718399c-33338207213329.png)**To set up Data Locker**:<br />1. Complete the first-time Data Locker ( [advertiser](/docs/data-locker-for-marketers#set-up-data-locker) \| partner ) setup.<br />2. Add the Cohort reports to Data Locker:<br />   1. In AppsFlyer, from the side menu, select **Report > Data Locker**.<br />   2. Select all the reports in the **Cohort analytics** section. <br />   3. Click **Save configuration**. <br />      <br />      The reports will be available on the next day by 10:00 UTC. |
 
 You can load the data into your BI systems and use them as part of your campaign performance and optimization processes.
 
 **Metrics available**
 
-The metrics available are revenue, unique users performing an event and the number of event occurrences. To calculate cost-related metrics like ROI, and ROAS you need both revenue and cost metrics. Revenue metrics are in Cohort, and cost metrics are provided by [ROI360 Cost ETL](https://support.appsflyer.com/hc/articles/360008849238).
+The metrics available are revenue, unique users performing an event and the number of event occurrences. To calculate cost-related metrics like ROI, and ROAS you need both revenue and cost metrics. Revenue metrics are in Cohort, and cost metrics are provided by [ROI360 Cost ETL](/docs/set-up-and-use-roi360-cost-etl-reports).
 
 ### Cohort analytics facts
 
 |     |     |
 | --- | --- |
-| Reports available | The following reports are available for download. The reports types are described in more detail in [Cohort dashboard.](https://support.appsflyer.com/hc/articles/207040496-Cohort-dashboard#cohort-principles)<br>- **User acquisition:** attributed to a user acquisition media source including LTV occurring during re-engagement windows.<br>- **Retargeting:** attributed to a retargeting media source for events occurring:  - During a re-engagement window<br>  - As a result of re-attributions<br>- **Unified:** display data under the last touch media source bringing the user according to AppsFlyer [double attribution](https://support.appsflyer.com/hc/articles/360016371077) rules. Meaning that LTV occurring during re-engagements displays under the retargeting media source and not under the UA media source. |
+| Reports available | The following reports are available for download. The reports types are described in more detail in [Cohort dashboard.](/docs/cohort-and-retention-dashboard#cohort-principles)<br />- **User acquisition:** attributed to a user acquisition media source including LTV occurring during re-engagement windows.<br />- **Retargeting:** attributed to a retargeting media source for events occurring:  - During a re-engagement window<br />  - As a result of re-attributions<br />- **Unified:** display data under the last touch media source bringing the user according to AppsFlyer [double attribution](/docs/resolve-retargeting-double-attribution) rules. Meaning that LTV occurring during re-engagements displays under the retargeting media source and not under the UA media source. |
 | Reporting period | Users converting during the previous 365 days. In other words, each day the reports include the user converting during the previous 365 days. |
-| Report structure | The schema of each report (the dimensions and metrics included) is fixed and can't be edited. See [report structure](https://support.appsflyer.com/hc/articles/4408945472529#report-structure). |
-| Report delivery | See [Enable Cohort reports in Data Locker](https://support.appsflyer.com/hc/articles/4408945472529#enable-data-locker). |
-| Data freshness | - Daily.<br>- Metrics are calculated using data available at midnight UTC. In other words, at the end of the day. <br>- Reports are available in Data Locker in the date-time (dt) folder by 10:00 UTC. For example, Monday's data is available on Tuesday at 10:00 UTC in the Monday folder. |
-| Impact of partner retention policies | Consider that some partners implement a data retention policy. In this case, events occurring after the end of the retention period are considered organic in the Cohort reports.<br>Example: SRN A has a data retention policy of 180 days. User events until day 180 are attributed to SRN A. Events that occur after 180 days are considered organic. |
+| Report structure | The schema of each report (the dimensions and metrics included) is fixed and can't be edited. See [report structure](/docs/cohort-analytics-via-data-locker#report-structure). |
+| Report delivery | See [Enable Cohort reports in Data Locker](/docs/cohort-analytics-via-data-locker#enable-data-locker). |
+| Data freshness | - Daily.<br />- Metrics are calculated using data available at midnight UTC. In other words, at the end of the day. <br />- Reports are available in Data Locker in the date-time (dt) folder by 10:00 UTC. For example, Monday's data is available on Tuesday at 10:00 UTC in the Monday folder. |
+| Impact of partner retention policies | Consider that some partners implement a data retention policy. In this case, events occurring after the end of the retention period are considered organic in the Cohort reports.<br />Example: SRN A has a data retention policy of 180 days. User events until day 180 are attributed to SRN A. Events that occur after 180 days are considered organic. |
 
 ### Report structure
 
@@ -53,9 +53,9 @@ The format of the fields is as follows:
 | media\_source | -- |
 | conversion\_type | Possible values: install, install\_unified (representing installs in the unified report), re-engagement, re-attribution |
 | attributed\_touch\_type | Possible values: click, impressions, pre-install, unknown, tv, null |
-| days\_post\_attribution | - The number of days elapsed since the conversion date (not the specific conversion timestamp).<br>- Tip! Use this to calculate retention and KPI days |
-| event\_date | - The date a user performs a given event.<br>- Format: yyyy-mm-dd<br>- Example: The date a user performed a given in-app event. In the case of a conversion.<br>- Note! If the event\_name is af\_conversion, then the event date and conversion date will be the same. |
-| conversion\_date | - The date the conversion occurred<br>- Format: yyyy-mm-dd<br>- Example: The install date |
+| days\_post\_attribution | - The number of days elapsed since the conversion date (not the specific conversion timestamp).<br />- Tip! Use this to calculate retention and KPI days |
+| event\_date | - The date a user performs a given event.<br />- Format: yyyy-mm-dd<br />- Example: The date a user performed a given in-app event. In the case of a conversion.<br />- Note! If the event\_name is af\_conversion, then the event date and conversion date will be the same. |
+| conversion\_date | - The date the conversion occurred<br />- Format: yyyy-mm-dd<br />- Example: The install date |
 | event\_name | Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app. |
 
 | event\_name | What did the user do |
@@ -67,18 +67,18 @@ The format of the fields is as follows:
 
 | Field name | Description |
 | --- | --- |
-| campaign | Campaign hierarchy<br>Consider: Campaign name changes not supported. Consequently, multiple names can be associated with a given campaign ID. |
+| campaign | Campaign hierarchy<br />Consider: Campaign name changes not supported. Consequently, multiple names can be associated with a given campaign ID. |
 | campaign\_id | Campaign hierarchy |
 | adset | Campaign hierarchy |
 | adset\_id | Campaign hierarchy |
 | ad | Campaign hierarchy |
 | ad\_id | Campaign hierarchy |
-| channel | Campaign hierarchy.<br>[Updated October 27, 2021] At present, Meta ads doesn't populate channel in data provided via the Google Install Referrer mechanism. |
+| channel | Campaign hierarchy.<br />[Updated October 27, 2021] At present, Meta ads doesn't populate channel in data provided via the Google Install Referrer mechanism. |
 | site\_id | Campaign hierarchy |
 | is\_primary\_attribution | Use to identify and deduplicate retargeting data. |
 | geo | The ISO country code derived from the user IP address. |
-| agency | - Agency transparency supported.<br>- In the case of non-transparent agencies, there can be multiple rows containing the same campaign name if the advertiser and the agency both run campaigns with the same name. Don't worry. The rows aren't duplicated. |
-| install\_app\_store | Android apps only: The Android store from where the app was downloaded. Populated by advertisers implementing [multi-store Android attribution](https://support.appsflyer.com/hc/articles/207447023). If blank, it means Google Play Store. |
+| agency | - Agency transparency supported.<br />- In the case of non-transparent agencies, there can be multiple rows containing the same campaign name if the advertiser and the agency both run campaigns with the same name. Don't worry. The rows aren't duplicated. |
+| install\_app\_store | Android apps only: The Android store from where the app was downloaded. Populated by advertisers implementing [multi-store Android attribution](/docs/set-up-multi-store-android-attribution). If blank, it means Google Play Store. |
 | keywords | Word(s) used in the user's online search. As reported by the ad network |
 | keyword\_id | [Field available starting April 27, 2022] Keyword ID returned by the ad network. |
 
@@ -87,10 +87,10 @@ The format of the fields is as follows:
 | Field name | Description | Format |
 | --- | --- | --- |
 | unique\_users | Number of on-day unique users performing the event. | Number |
-| revenue\_usd | - Amount of revenue in USD. For example, $100.56 is reflected as 100.56.<br>- Maximum of 2 places after the decimal point. | Number |
+| revenue\_usd | - Amount of revenue in USD. For example, $100.56 is reflected as 100.56.<br />- Maximum of 2 places after the decimal point. | Number |
 | event\_count | Number of event occurrences. | Number |
 | selected\_currency | 3-letter currency code (USD, EUR) set by you in the app settings. Format [ISO-4217](http://www.xe.com/symbols.php#section1). This is the same currency used to display revenue in Cohort in the user interface. | String |
-| revenue\_selected\_currency | - Amount of revenue in the selected currency. For example, if the selected currency is EUR, then €1234.56 is reflected as 1234.56<br>- Maximum of 2 places after the decimal point | Number |
+| revenue\_selected\_currency | - Amount of revenue in the selected currency. For example, if the selected currency is EUR, then €1234.56 is reflected as 1234.56<br />- Maximum of 2 places after the decimal point | Number |
 
 ### BI developer considerations
 
@@ -104,7 +104,7 @@ You can load unified, user acquisition, and retargeting reports separately or to
 - For user acquisition, use conversion\_type=Install.
 - For retargeting, use conversion\_type=re-engagement or re-attribution.
 
-If you just use the unified view in your data loading process, you can use logic to split the data between campaign types, which means, user attribution (installs) and retargeting (re-engagements). To do so, use the conversion\_type=install, install\_unified, re-engagement, or re-attribution. See [Double attribution of retargeting events.](https://support.appsflyer.com/hc/articles/360016371077)
+If you just use the unified view in your data loading process, you can use logic to split the data between campaign types, which means, user attribution (installs) and retargeting (re-engagements). To do so, use the conversion\_type=install, install\_unified, re-engagement, or re-attribution. See [Double attribution of retargeting events.](/docs/resolve-retargeting-double-attribution)
 
 **Field-level considerations**
 
@@ -182,7 +182,7 @@ group by 1
 
 **Excel example**
 
-| Campaign ID | Conversion type | ARPU<br>Day 1 | ARPU<br>Day 3 | ARPU<br>Day 7 |
+| Campaign ID | Conversion type | ARPU<br />Day 1 | ARPU<br />Day 3 | ARPU<br />Day 7 |
 | --- | --- | --- | --- | --- |
 | 12345678 | re-engagement | 6.23 | 5.11 | 2.34 |
 | 98765432 | re-engagement | 3.57 | 1.34 | 4.86 |
@@ -282,7 +282,7 @@ group by 1,2,3
 
 **Excel example**
 
-| Conversion date | App ID | Media source | Revenue<br>Day 3 |
+| Conversion date | App ID | Media source | Revenue<br />Day 3 |
 | --- | --- | --- | --- |
 | 2022-11-07 | id123456789 | adnet1\_int | 400.45 |
 | 2022-11-05 | id123456789 | adnet2\_int | 99.23 |
@@ -313,7 +313,7 @@ group by 1
 
 **Excel example**
 
-| Media source | Keyword ID | ARPU<br>Day 365 |
+| Media source | Keyword ID | ARPU<br />Day 365 |
 | --- | --- | --- |
 | adnet1\_int | 123456 | 57,019.93 |
 | adnet2\_int | 987654 | 64,867.84 |
@@ -321,7 +321,7 @@ group by 1
 
 #### **7\. Calculating ARPU Days 7 by attribution time per geo**
 
-The following example illustrates how to use [KPIs by attribution time](https://support.appsflyer.com/hc/articles/207040496-Cohort-dashboard#trend-type%E2%80%94kpi-by-attribution-time). In the example, we:
+The following example illustrates how to use [KPIs by attribution time](/docs/cohort-and-retention-dashboard#trend-type%E2%80%94kpi-by-attribution-time). In the example, we:
 
 - Calculate ARPU Days 7 by attribution date per geo.
 - Results are sorted by the number of conversions, with the top 20 geos displaying.
@@ -366,24 +366,24 @@ limit 20
 
 | Trait |  |
 | --- | --- |
-| Cost data | - Not available. [Use Cost ETL](https://support.appsflyer.com/hc/articles/360008849238).<br>- See also [combine Cost ETL with cohort reports](https://support.appsflyer.com/hc/articles/27494360719505). |
+| Cost data | - Not available. [Use Cost ETL](/docs/set-up-and-use-roi360-cost-etl-reports).<br />- See also [combine Cost ETL with cohort reports](/docs/combine-cost-etl-and-cohort-reports-via-data-locker). |
 | Campaign name changes | Not supported. |
 | Data freshness | Daily UTC. Reports are in the Data Locker date-time (dt) folder of the reporting day by 10:00 UTC of the next day. |
-| Ad revenue | - Available<br>- For af\_ad\_revenue events, the unique users metric isn't available for dates between October 5, 2022-February 16, 2023. |
+| Ad revenue | - Available<br />- For af\_ad\_revenue events, the unique users metric isn't available for dates between October 5, 2022-February 16, 2023. |
 | Currency | USD and app-specific currency are both available per row |
-| Timezone | - UTC<br>- App-specific timezone is available with the [Advanced aggregated cohort timezone versioned report](https://support.appsflyer.com/hc/articles/23127074968721). |
+| Timezone | - UTC<br />- App-specific timezone is available with the [Advanced aggregated cohort timezone versioned report](/docs/advanced-aggregated-reports-in-data-locker). |
 | Organic data | Available |
-| Days post-conversion (install, re-attribution, re-engagement) | - 365 days of post-install data is available.<br>- 1,095 days is available with [advanced aggregated reports](https://support.appsflyer.com/hc/articles/23127074968721). |
-| Agency transparency | - Supported <br>- X Ads and Meta ads data is always transparent |
+| Days post-conversion (install, re-attribution, re-engagement) | - 365 days of post-install data is available.<br />- 1,095 days is available with [advanced aggregated reports](/docs/advanced-aggregated-reports-in-data-locker). |
+| Agency transparency | - Supported <br />- X Ads and Meta ads data is always transparent |
 | App segregation | Supported |
 | SKAN data | Not included. Meaning, the data provided by iOS postbacks. |
-| Reinstalls | - If post-reinstall events are considered unattributed organic:<br>  - They're included only as of May 26, 2024. [Learn more](https://support.appsflyer.com/hc/articles/22973553145361)<br>  - The install time is based on the [device\_download\_time](/docs/raw-data-field-dictionary#device-info::dfd9504e) field.<br>  - They aren't counted toward unique user and retention measurements.<br>- If post-reinstall events are attributed to the first install, they're always included. [Learn more](https://support.appsflyer.com/hc/articles/27435981457553) |
+| Reinstalls | - If post-reinstall events are considered unattributed organic:<br />  - They're included only as of May 26, 2024. [Learn more](/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events)<br />  - The install time is based on the [device\_download\_time](/docs/raw-data-field-dictionary#device-info::dfd9504e) field.<br />  - They aren't counted toward unique user and retention measurements.<br />- If post-reinstall events are attributed to the first install, they're always included. [Learn more](/docs/unique-users) |
 
 <Cards>
-  <Card title="Combine Cost ETL and cohort reports" href="https://support.appsflyer.com/hc/articles/27494360719505">
+  <Card title="Combine Cost ETL and cohort reports" href="/docs/combine-cost-etl-and-cohort-reports-via-data-locker">
     Learn how to combine Cost ETL with cohort reports to calculate ROI and ROAS.
   </Card>
-  <Card title="Cohort dashboard" href="https://support.appsflyer.com/hc/articles/207040496">
+  <Card title="Cohort dashboard" href="/docs/cohort-and-retention-dashboard">
     Read the overview and principles of the Cohort dashboard in AppsFlyer.
   </Card>
   <Card title="Example report for advertisers" href="https://support.appsflyer.com/hc/en-us/article_attachments/9222913724945">

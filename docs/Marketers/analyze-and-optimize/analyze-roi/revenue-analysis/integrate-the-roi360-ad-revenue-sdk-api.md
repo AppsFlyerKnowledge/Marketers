@@ -36,16 +36,16 @@ The `af_ad_revenue` event is used to identify ad revenue. This event is used thr
 The list of supported ad revenue mediation and monetization networks that can send us data via the ad revenue SDK API is as follows:
 
 - [Unity LevelPlay mediation](/docs/ironsource-campaign-configuration#ad-revenue-tab) (formerly ironSource)
-- [Applovin Max](https://support.appsflyer.com/hc/articles/360004707378)
-- [Google AdMob](https://support.appsflyer.com/hc/articles/360006951817)
-- [Fyber](https://support.appsflyer.com/hc/articles/208209366)
-- [Appodeal](https://support.appsflyer.com/hc/articles/360004404977)
+- [Applovin Max](/docs/applovin-max-ad-revenue-configuration)
+- [Google AdMob](/docs/google-admob-ad-revenue-attribution-configuration)
+- [Fyber](/docs/fyber-campaign-configuration)
+- [Appodeal](/docs/appodeal-campaign-configuration)
 - Admost
 - Topon
 - Topon Pte.
 - Tradplus
-- [Yandex](https://support.appsflyer.com/hc/articles/360018910138)
-- [Chartboost](https://support.appsflyer.com/hc/articles/209731553)
+- [Yandex](/docs/yandex-direct-campaign-configuration)
+- [Chartboost](/docs/chartboost-campaign-configuration)
 - customMediation (when the mediation solution is not in the list of supported mediation partners)
 - directMonetizationNetwork (when the app integrates directly with monetization networks without mediation)
 
@@ -60,7 +60,7 @@ The SDK API sends the revenue data to the platform at the time the ad displays. 
 
 **To implement the AppsFlyer ad revenue SDK API**:
 
-1. [Enable SDK-level ad revenue in AppsFlyer](https://support.appsflyer.com/hc/articles/217490046-Ad-revenue-attribution-guide#connect-to-ad-revenue-integrated-partners) for the partner you want to connect. **Note**: This needs to be done for each app individually.
+1. [Enable SDK-level ad revenue in AppsFlyer](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners) for the partner you want to connect. **Note**: This needs to be done for each app individually.
 2. Tell your developer to integrate the AppsFlyer ad revenue SDK API using [these instructions](https://dev.appsflyer.com/hc/docs/gs-ad-revenue).
 3. To record ad revenue in your SKAdNetwork dashboard, follow the [SKAN ad revenue instructions](/docs/skadnetwork-skan-solution-guide#recording-ad-revenue).
 4. Test your integration: once integrated, verify that ad revenue events are being received using either of the following methods:
@@ -71,5 +71,5 @@ The SDK API sends the revenue data to the platform at the time the ad displays. 
 
 | Trait | Remarks |
 | --- | --- |
-| Admob | - To turn on iLTV for Admob, follow [this link](https://support.google.com/admob/answer/11322405#getstarted)<br>- For Android and Unity, impression revenue is reported by the Admob iLTV SDK in [micro-units](https://developers.google.com/android/reference/com/google/android/gms/ads/AdValue#public-long-getvaluemicros). For the correct ad revenue amount in USD to display in AppsFlyer, before sending the ad revenue amount to AppsFlyer, divide the amount extracted from the iLTV event handler by 1 million. |
+| Admob | - To turn on iLTV for Admob, follow [this link](https://support.google.com/admob/answer/11322405#getstarted)<br />- For Android and Unity, impression revenue is reported by the Admob iLTV SDK in [micro-units](https://developers.google.com/android/reference/com/google/android/gms/ads/AdValue#public-long-getvaluemicros). For the correct ad revenue amount in USD to display in AppsFlyer, before sending the ad revenue amount to AppsFlyer, divide the amount extracted from the iLTV event handler by 1 million. |
 | Ad revenue value | Impression events with revenue values above $10 (and the equivalent in other currencies) aren't processed by the SDK API. |

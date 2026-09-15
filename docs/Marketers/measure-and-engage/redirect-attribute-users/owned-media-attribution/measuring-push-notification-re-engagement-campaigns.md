@@ -25,16 +25,16 @@ In the OneLink scenario, if the OneLink is configured to route the user to a spe
 
 ## Prerequisites
 
-Before continuing, make sure that your app has [the AppsFlyer SDK integrated](https://support.appsflyer.com/hc/articles/207032066) **and** can receive push notifications.
+Before continuing, make sure that your app has [the AppsFlyer SDK integrated](/docs/basic-sdk-integration-guide) **and** can receive push notifications.
 
 ## Steps
 
 To set up push notification measurement, the following steps must be completed:
 
-1. [Create a push notification](https://support.appsflyer.com/hc/articles/207364076#1-creating-the-push-notification) that contains a custom data key with the OneLink link **or** an `af` key with a JSON object as its value.
-2. [Configure the SDK to resolve the custom key](https://support.appsflyer.com/hc/articles/207364076#2-configuring-the-sdk) (done by the app developer).
-3. [Test the integration](https://support.appsflyer.com/hc/articles/207364076#3-testing-the-integration) by triggering a push notification.
-4. [View push notification campaigns performance](https://support.appsflyer.com/hc/articles/207364076#4-viewing-push-notification-campaigns-in-the-dashboard) in the dashboard.
+1. [Create a push notification](/docs/measuring-push-notification-re-engagement-campaigns#1-creating-the-push-notification) that contains a custom data key with the OneLink link **or** an `af` key with a JSON object as its value.
+2. [Configure the SDK to resolve the custom key](/docs/measuring-push-notification-re-engagement-campaigns#2-configuring-the-sdk) (done by the app developer).
+3. [Test the integration](/docs/measuring-push-notification-re-engagement-campaigns#3-testing-the-integration) by triggering a push notification.
+4. [View push notification campaigns performance](/docs/measuring-push-notification-re-engagement-campaigns#4-viewing-push-notification-campaigns-in-the-dashboard) in the dashboard.
 
 ### 1. Creating the push notification
 
@@ -49,7 +49,7 @@ First, create a push notification that contains attribution data using one of th
 
 This is the recommended method of integrating AppsFlyer with push notifications.
 
-1. Create a [OneLink link and set it up for retargeting.](https://support.appsflyer.com/hc/articles/208874366#general-settings)
+1. Create a [OneLink link and set it up for retargeting.](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings)
 
 **Note**: OneLink short and long URLs are both supported.
 2. In the push notification custom data, add the OneLink that contains the attribution data you want to send to AppsFlyer.
@@ -65,7 +65,7 @@ In Firebase:
 
 > 📘 Note
 >
-> The following documents the legacy method of integrating AppsFlyer with push notifications, and is available for backward-compatibility purposes. If you're setting up a new app, use the [recommended OneLink-based solution](https://support.appsflyer.com/hc/articles/207364076#using-onelink-recommended).
+> The following documents the legacy method of integrating AppsFlyer with push notifications, and is available for backward-compatibility purposes. If you're setting up a new app, use the [recommended OneLink-based solution](/docs/measuring-push-notification-re-engagement-campaigns#using-onelink-recommended).
 
 In the push notification's custom data, add a custom key called `af` that contains the attribution data you want to send to AppsFlyer in JSON format. The following attribution parameters are required:
 

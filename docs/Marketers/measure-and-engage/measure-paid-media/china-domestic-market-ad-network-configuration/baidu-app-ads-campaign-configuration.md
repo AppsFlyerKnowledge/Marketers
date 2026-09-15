@@ -6,11 +6,11 @@ Baidu App Ads (Baitong), an AppsFlyer ad network integrated partner, is one of t
 
 ## Setting Up Baidu App Ads (Baitong)
 
-The setup is done from the **Active Integrations** page, but to find new partners you must first go to the [marketplace](https://support.appsflyer.com/hc/articles/9960361873809).
+The setup is done from the **Active Integrations** page, but to find new partners you must first go to the [marketplace](/docs/partner-integrations).
 
 > 📘 Note
 >
-> Before setting up an integration, make sure you [contact the partner](https://support.appsflyer.com/hc/articles/9960361873809#contact-details) and open an account with them.
+> Before setting up an integration, make sure you [contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
 
 **To activate the integration:**
 
@@ -21,17 +21,17 @@ The setup is done from the **Active Integrations** page, but to find new partner
 
 > 📘 Note
 >
-> The toggle must stay on ([activated](https://support.appsflyer.com/hc/articles/360000844778)) for as long as you work with the partner.
+> The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner.
 
 5. Complete the configuration using the relevant tabs, as described below.
 
 Baidu App Ads configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
-For a detailed description of the Partner Configuration Window Header, click [here](https://support.appsflyer.com/hc/articles/4410395957521#about-the-integrated-partner-page).
+For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
 > 👍 Tip
 >
-> - The [General Settings](https://support.appsflyer.com/hc/articles/4410395957521#d-general%20settings) step in the Integration tab is **mandatory** for all partners.
+> - The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners.
 > - All the rest of the steps are either descriptive or **optional**.
 
 ## Integration tab
@@ -42,7 +42,7 @@ The Integration Tab is divided into different sections as described below.
 
 On the **first visit** here, you must toggle ON the _**Activate Partner**_ button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.
 
-For more details about partner activation please click [here](https://support.appsflyer.com/hc/articles/360000844778).
+For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 
 ### Default postbacks
 
@@ -70,12 +70,12 @@ Adding parameters to the attribution link here enables you to later perform thor
   **Attribution link parameter:** af\_adset
 - **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns Baidu App Ads（Baitong).
   **Attribution link parameter:** af\_ad
-- **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub site ID parameter, to avoid [exceeding the site ID](https://support.appsflyer.com/hc/articles/115005099063-What-are-the-Exceeded-Media-Sources-#exceeded_siteid_limit) limitations.
+- **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub site ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations.
   **Attribution link parameters:** af\_siteid and af\_sub\_siteid
 - **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information, see **[AppsFlyer Attribution Link Structure and Parameters](https://support.appsflyer.com/hc/articles/207447163).**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information, see **[AppsFlyer Attribution Link Structure and Parameters](/docs/about-link-structure-and-parameters).**
 
 ### Click-through attribution
 
@@ -83,7 +83,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 **Attribution link parameter:** af\_click\_lookback
 
-More details about the [click lookback window here](https://support.appsflyer.com/hc/articles/208338403-What-is-AppsFlyer-s-Configurable-Attribution-Lookback-Window-).
+More details about the [click lookback window here](/docs/set-up-lookback-windows).
 
 ### Click attribution link
 
@@ -113,4 +113,4 @@ Use these toggles to give the ad network permissions to handle its own configura
 - _**Allow access to your aggregate revenue data**_ - only to the revenue data attributed to the partner
 - _**Allow access to your Protect360 dashboard**_ - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about granting [ad network permissions](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).

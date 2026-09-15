@@ -13,7 +13,7 @@ Optimize Apple Ads campaigns by using Bidalgo. When configured, AppsFlyer sends 
 Both advertisers and agencies can enable attribution for Apple Ads.
 
 - **Advertisers:** follow the instructions below on how to enable attribution for Apple Ads.
-- **Agencies:** [follow these instructions](https://support.appsflyer.com/hc/articles/213747963-Apple-Search-Ads-guide#agency-setup) to enable attribution for Apple Ads.
+- **Agencies:** [follow these instructions](/docs/apple-ads-integration-setup#agency-setup) to enable attribution for Apple Ads.
 
 ### Configuring Bidalgo
 

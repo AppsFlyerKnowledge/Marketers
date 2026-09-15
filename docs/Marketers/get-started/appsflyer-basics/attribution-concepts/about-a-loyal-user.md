@@ -11,7 +11,7 @@ excerpt: "Learn what defines a loyal user in AppsFlyer and how you can customize
 
 ## Changing the loyal user definition
 
-You can define a loyal user per app by specifying an in-app event trigger. To change the loyal-user event trigger, see [App settings](https://support.appsflyer.com/hc/articles/211719806).
+You can define a loyal user per app by specifying an in-app event trigger. To change the loyal-user event trigger, see [App settings](/docs/app-settings).
 
 > 👍 Example
 >

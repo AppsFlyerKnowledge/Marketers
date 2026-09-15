@@ -92,7 +92,7 @@ To set up cross-platform attribution, you need to apply a few settings in AppsFl
 
 ## View cross-platform attribution results
 
-- **Report:** To view cross-platform attribution results, see the [Data Locker End-user events cross-platform report](https://support.appsflyer.com/hc/articles/39748676204817--WIP-Cross-platform-end-user-events-report-in-Data-Locker).
+- **Report:** To view cross-platform attribution results, see the [Data Locker End-user events cross-platform report](/docs/end-user-events-cross-platform-report-in-data-locker).
 - **My Dashboards:** Available via the "Cross Platform" template. For more information about selecting a dashboard template, see [Create a custom dashboard](/docs/my-dashboards#create-dashboard).
 
 ## Frequently Asked Questions (FAQs)

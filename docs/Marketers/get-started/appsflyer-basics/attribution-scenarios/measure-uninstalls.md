@@ -41,7 +41,7 @@ Based on these insights, you could reallocate more of your budget to Media sourc
 
 ### Share uninstall data with ad networks for optimization
 
-Sending uninstall event postbacks to the ad networks you work with is useful for optimizing user acquisition campaigns. You can send the uninstall event by [mapping af_uninstall to your ad network](https://support.appsflyer.com/hc/articles/4408933557137#mapping-the-uninstall-event). Once the mapping is complete, an event is sent each time a user is identified as having uninstalled the app. Ad networks can use this information to determine which users are less engaged and focus on getting more engaged users.
+Sending uninstall event postbacks to the ad networks you work with is useful for optimizing user acquisition campaigns. You can send the uninstall event by [mapping af_uninstall to your ad network](/docs/measure-uninstalls#mapping-the-uninstall-event). Once the mapping is complete, an event is sent each time a user is identified as having uninstalled the app. Ad networks can use this information to determine which users are less engaged and focus on getting more engaged users.
 
 **Example**
 
@@ -83,11 +83,11 @@ The flow for the marketer and the developer is as follows:
 
 | Task | Owner |
 | --- | --- |
-| [Connect Firebase Cloud Messaging (FCM) to AppsFlyer](https://support.appsflyer.com/hc/articles/4408933557137#connect-firebase-cloud-messaging-to-appsflyer-android) | Marketer |
-| [Configure uninstall measurement in AppsFlyer](https://support.appsflyer.com/hc/articles/4408933557137#configure-uninstall-measurement-in-appsflyer) | Marketer |
+| [Connect Firebase Cloud Messaging (FCM) to AppsFlyer](/docs/measure-uninstalls#connect-firebase-cloud-messaging-to-appsflyer-android) | Marketer |
+| [Configure uninstall measurement in AppsFlyer](/docs/measure-uninstalls#configure-uninstall-measurement-in-appsflyer) | Marketer |
 | [Integrate with the SDK](https://dev.appsflyer.com/hc/docs/uninstall-measurement) | Android developer |
-| [Test uninstall measurement](https://support.appsflyer.com/hc/articles/4408933557137#testing-uninstall-measurement) | Marketer |
-| [Optional] [Map the uninstall event](https://support.appsflyer.com/hc/articles/4408933557137#mapping-the-uninstall-event) to relevant partners in the dashboard | Marketer |
+| [Test uninstall measurement](/docs/measure-uninstalls#testing-uninstall-measurement) | Marketer |
+| [Optional] [Map the uninstall event](/docs/measure-uninstalls#mapping-the-uninstall-event) to relevant partners in the dashboard | Marketer |
 
 </Tab>
 <Tab title="iOS">
@@ -95,10 +95,10 @@ The flow for the marketer and the developer is as follows:
 | Task | Owner |
 | --- | --- |
 | [Generate P12 certificate](https://dev.appsflyer.com/hc/docs/uninstall-measurement-ios#creating-a-p12-certificate) | iOS developer |
-| [Configure uninstall measurement in AppsFlyer](https://support.appsflyer.com/hc/articles/4408933557137#configure-uninstall-measurement-in-appsflyer) | Marketer |
+| [Configure uninstall measurement in AppsFlyer](/docs/measure-uninstalls#configure-uninstall-measurement-in-appsflyer) | Marketer |
 | [Integrate with the SDK](https://dev.appsflyer.com/hc/docs/uninstall-measurement) | iOS developer |
-| [Test uninstall measurement](https://support.appsflyer.com/hc/articles/4408933557137#testing-uninstall-measurement) | Marketer |
-| [Optional] [Map the uninstall event](https://support.appsflyer.com/hc/articles/4408933557137#mapping-the-uninstall-event) to relevant partners in the dashboard | Marketer |
+| [Test uninstall measurement](/docs/measure-uninstalls#testing-uninstall-measurement) | Marketer |
+| [Optional] [Map the uninstall event](/docs/measure-uninstalls#mapping-the-uninstall-event) to relevant partners in the dashboard | Marketer |
 
 </Tab>
 </Tabs>
@@ -159,7 +159,7 @@ Android uninstall measurement is available by configuring uninstall measurement 
 
 > ❗️ Important!
 >
-> HTTP legacy API were deprecated by Firebase on June 20, 2023, and will be removed on June 21st, 2024. If you are using the legacy API, we strongly recommend that you [use the HTTP v1 API](https://support.appsflyer.com/hc/articles/4408933557137#http-v1). [Learn more](https://firebase.google.com/docs/cloud-messaging/http-server-ref)
+> HTTP legacy API were deprecated by Firebase on June 20, 2023, and will be removed on June 21st, 2024. If you are using the legacy API, we strongly recommend that you [use the HTTP v1 API](/docs/measure-uninstalls#http-v1). [Learn more](https://firebase.google.com/docs/cloud-messaging/http-server-ref)
 
 Uninstall measurement using Firebase Messaging is supported by Android SDK V4.7.0+.
 
@@ -220,7 +220,7 @@ The success message displays.
 
 ## Testing uninstall measurement
 
-Once the implementation procedures are complete, you can install and then uninstall the app to test that uninstalls are recorded correctly. Uninstalls and uninstall rates are displayed on the [Overview dashboard](https://support.appsflyer.com/hc/articles/360014697157#rowlevel-metrics).
+Once the implementation procedures are complete, you can install and then uninstall the app to test that uninstalls are recorded correctly. Uninstalls and uninstall rates are displayed on the [Overview dashboard](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv#rowlevel-metrics).
 
 <Tabs>
 <Tab title="Android">
@@ -234,8 +234,8 @@ You can perform this test on apps that are:
 
 Keep in mind the following when testing Android apps:
 
-- Uninstall measurement is processed [daily](https://support.appsflyer.com/hc/articles/360000310629-Data-freshness-and-time-zone-support#uninstalls). An uninstall event is registered within 24 hours, but if the app is reinstalled during this time, an event isn't recorded.
-- **Uninstall events take up to 48 hours to display** in [raw-data reports](https://support.appsflyer.com/hc/articles/209680773) and in the AppsFlyer dashboard (Aggregated Performance Report).
+- Uninstall measurement is processed [daily](/docs/about-data-freshness-and-timezone-support#uninstalls). An uninstall event is registered within 24 hours, but if the app is reinstalled during this time, an event isn't recorded.
+- **Uninstall events take up to 48 hours to display** in [raw-data reports](/docs/raw-data-reporting-overview) and in the AppsFlyer dashboard (Aggregated Performance Report).
 
 </Tab>
 <Tab title="iOS">
@@ -259,7 +259,7 @@ Keep in mind the following when testing iOS apps:
 
 ![Uninstall_event_postback.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png)
 
-To share uninstall data with an ad network requires mapping the [af_uninstall event](https://support.appsflyer.com/hc/articles/4410395957521#g-in-app-event-postback-configuration) to a partner. Unlike postbacks for regular in-app events, the uninstall event is not sent in real-time. The event time that is reported represents the time that AppsFlyer determined the app was uninstalled, and not the actual uninstall itself.
+To share uninstall data with an ad network requires mapping the [af_uninstall event](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration) to a partner. Unlike postbacks for regular in-app events, the uninstall event is not sent in real-time. The event time that is reported represents the time that AppsFlyer determined the app was uninstalled, and not the actual uninstall itself.
 
 Keep in mind the following:
 

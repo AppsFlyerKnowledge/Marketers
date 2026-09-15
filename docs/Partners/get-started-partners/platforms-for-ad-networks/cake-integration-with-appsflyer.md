@@ -14,7 +14,7 @@ Below you can find the base attribution link with a detailed explanation per eac
 | --- | --- |
 | https://app.appsflyer.com | AppsFlyer endpoint |
 | app\_id | Application unique ID - Dynamic value changed per app promoted |
-| pid | Media source name include **\_int** to identify<br>**integrated** network at AppsFlyer servers |
+| pid | Media source name include **\_int** to identify<br />**integrated** network at AppsFlyer servers |
 | c | Campaign name |
 
 ### Recommended attribution link parameters
@@ -24,7 +24,7 @@ Below you can find the base attribution link with a detailed explanation per eac
 | clickid | #oreqid# | Request ID of each user session - **Required** |
 | af\_siteid | #affid# | ID of the Affiliate promoting the offer - **Optional** |
 
-For a complete AppsFlyer parameter list, click [here](https://support.appsflyer.com/hc/articles/207447163)
+For a complete AppsFlyer parameter list, click [here](/docs/about-link-structure-and-parameters)
 
 For a complete CAKE macro list, click [here](https://support.getcake.com/support/solutions/articles/5000566463-tokens).
 
@@ -48,7 +48,7 @@ https://{company-domain}.com/p.ashx?f=pb&r=(Click-ID)
 Click-ID
 ```
 
-{Company-Domain} the network ID (domain) name provided by CAKE.
+`{Company-Domain}` the network ID (domain) name provided by CAKE.
 
 e= Set as **Event Tag** in the AppsFlyer dashboard for each App by the advertiser - This is the actual in-app event name from the application.
 

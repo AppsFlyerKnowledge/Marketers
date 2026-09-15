@@ -12,7 +12,7 @@ The campaign flow starts when a user clicks a Google ad and lands on your websit
 
 #### See also
 
-- [Web Performance Measurement - Overview](https://support.appsflyer.com/hc/articles/43521734577809--Beta-AppsFlyer-Web-Attribution-Overview)
+- [Web Performance Measurement - Overview](/docs/web-performance-measurement-overview)
 
 ### Prerequisites
 
@@ -147,7 +147,7 @@ https://example.com?product=1234&af_c_id={campaignid}
 
 > 📘 Note
 >
-> Google Web Ads campaigns can use two URLs per engagement: the Final URL and the Tracking Template URL. However, the Tracking Template URL is not required for website app campaigns where the ad destination is a website. Only when the campaign goal is web-to-mobile may a Tracking Template URL be needed. For more information, see the [Google Ads web-to-app campaign article](https://support.appsflyer.com/hc/articles/25096718837137).
+> Google Web Ads campaigns can use two URLs per engagement: the Final URL and the Tracking Template URL. However, the Tracking Template URL is not required for website app campaigns where the ad destination is a website. Only when the campaign goal is web-to-mobile may a Tracking Template URL be needed. For more information, see the [Google Ads web-to-app campaign article](/docs/google-ads-adwords-create-web-based-campaigns).
 
 ## View Web Performance Measurement Data
 

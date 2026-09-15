@@ -8,7 +8,7 @@ Troubleshoot common issues and discrepancies relating to Google Ads.
 
 ### Why am I not seeing clicks from Google Ads?
 
-Aggregate clicks and impressions data from Google Ads is collected once you have [authenticated cost, clicks and impressions](https://support.appsflyer.com/hc/articles/115002504686#step-2-set-up-google-ads-on-appsflyer-mandatory) collection in the **Cost** tab.
+Aggregate clicks and impressions data from Google Ads is collected once you have [authenticated cost, clicks and impressions](/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory) collection in the **Cost** tab.
 
 Clicks and impressions data from Google Ads was made available during August 2018, first for Android apps and later on for iOS apps. Therefore, when analyzing clicks data from 2018 and before, Google Ads clicks data may be missing or incomplete.
 
@@ -18,7 +18,7 @@ If you are not seeing first_open conversions on Google Ads as shown in the scree
 
 ![AW_13.png](https://files.readme.io/082f79266fced9fc012cdb373321a836129205992adbe29f7509321516e8f5ab-33743114088849.png)
 
-it means that you need to import conversions in Google Ads. Follow the instruction on [importing conversions](https://support.appsflyer.com/hc/articles/115002504686#step-4-measure-your-app-conversions-mandatory).
+it means that you need to import conversions in Google Ads. Follow the instruction on [importing conversions](/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory).
 
 ### Why don’t I see installs from Google Ads?
 
@@ -114,7 +114,7 @@ No. In the Google API, this information is already set and is based on your In-A
 
 ### I'm running an app campaign, why can't I see data or conversion events in the AppsFlyer or Google Ads dashboard?
 
-It is very likely that you have not yet imported events. For details about how to import events, click [here](https://support.appsflyer.com/hc/articles/115002504686#step-4-measure-your-app-conversions-mandatory).
+It is very likely that you have not yet imported events. For details about how to import events, click [here](/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory).
 
 ### What do I do if there are multiple accounts?
 
@@ -122,7 +122,7 @@ There is no problem using multiple accounts with Google Ads with AppsFlyer. Apps
 
 ### What happens with link IDs created at MCC level vs. account level
 
-Link IDs at MCC or account level are supported by AppsFlyer. We recommend working closely with your Google Ads representative to ensure your account is structured correctly. For more information, click [here](https://support.appsflyer.com/hc/articles/115004970386).
+Link IDs at MCC or account level are supported by AppsFlyer. We recommend working closely with your Google Ads representative to ensure your account is structured correctly. For more information, click [here](/docs/recording-multiple-agency-mcc-google-ads-accounts).
 
 ### What is parallel tracking?
 
@@ -132,13 +132,13 @@ For a full explanation of Parallel Tracking, click [here](https://support.google
 
 #### What is needed?
 
-In order for parallel tracking to work as intended, the final URL must match what is in the campaign URL and be put in [Google's {lpurl} ValueTrack parameter.](https://support.google.com/google-ads/answer/6305348?hl=en)
+In order for parallel tracking to work as intended, the final URL must match what is in the campaign URL and be put in [Google's `{lpurl}` ValueTrack parameter.](https://support.google.com/google-ads/answer/6305348?hl=en)
 
 This is done by:
 
 - Using a single platform attribution link (not recommended)
   - af_r parameter must be used in the URL
-- Using a [OneLink long link](https://support.appsflyer.com/hc/articles/360017132597-OneLink-long-URLs) (recommended)
+- Using a [OneLink long link](/docs/understand-onelink-short-vs-long-urls) (recommended)
   - Having the following URL parameters included in the campaign URL
     - af_android_url
     - af_ios_url
@@ -154,7 +154,7 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}&af_android_u
 
 Note: To see all supported parameters refer to this [article](https://support.google.com/google-ads/answer/6305348?hl=en&sjid=12409212435602417786-AP#zippy=%2Cset-up-or-edit-a-tracking-template-with-valuetrack-parameters-at-the-campaign-level%2Cset-up-or-edit-a-tracking-template-with-valuetrack-parameters-at-the-ad-group-level%2Cfinal-url-tracking-template-or-custom-parameter).
 
-[Click here](https://support.appsflyer.com/hc/articles/17287511645585) to see how to configure Google ad web campaigns with parallel tracking.
+Click here to see how to configure Google ad web campaigns with parallel tracking.
 
 ### How do you configure a campaign with Android or iOS configuration
 
@@ -162,7 +162,7 @@ Note: To see all supported parameters refer to this [article](https://support.go
 >
 > AppsFlyer supports all app campaigns enabled by Google Ads.
 
-Google is an SRN (Self Reporting Network). For more information about how the attribution flow works for these networks, click [here](https://support.appsflyer.com/hc/articles/360001546905).
+Google is an SRN (Self Reporting Network). For more information about how the attribution flow works for these networks, click [here](/docs/self-reporting-networks-srns).
 
 AppsFlyer can present any campaign information that is provided by Google. The campaign type (Search, Video, Display, and Re-engagement) and associated information is determined by Google. It is recommended to configure App campaigns. For guidance on other campaign types, you should contact your Google representative. For details of these campaigns, click [here](https://developers.google.com/app-conversion-tracking/api/request-response-specs).
 
@@ -172,7 +172,7 @@ To support Android attribution, make sure that your app supports GAID (Google Ad
 
 #### Creating conversion recording (installs)
 
-For details of how to create conversion recording, click [here](https://support.appsflyer.com/hc/articles/115002504686#step-2-set-up-google-ads-on-appsflyer-mandatory).
+For details of how to create conversion recording, click [here](/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory).
 
 Google Ads - Android Configuration - Sending In-App Events
 
@@ -180,7 +180,7 @@ If you want to further measure the success of your Mobile App Install campaigns 
 
 #### Create a conversion (in-app events)
 
-For details of how to measure your app conversions, click [here](https://support.appsflyer.com/hc/articles/115002504686#step-4-measure-your-app-conversions-mandatory).
+For details of how to measure your app conversions, click [here](/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory).
 
 #### iOS configuration for Google Ads
 
@@ -194,7 +194,7 @@ In contrast, **iOS search on App Campaigns can be attributed by Google Ads**, fo
 
 #### creating conversion recording (installs)
 
-For details of how to create conversion recording, click [here](https://support.appsflyer.com/hc/articles/115002504686#step-2-set-up-google-ads-on-appsflyer-mandatory).
+For details of how to create conversion recording, click [here](/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory).
 
 #### Google Ads - iOS configuration - sending in-app events
 
@@ -202,7 +202,7 @@ If you want to further measure the success of your Mobile App Install campaigns 
 
 #### Creating a conversion (in-app events)
 
-For details of how to measure your app conversions, click [here](https://support.appsflyer.com/hc/articles/115002504686#step-4-measure-your-app-conversions-mandatory).
+For details of how to measure your app conversions, click [here](/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory).
 
 ### For how long do you keep Google Ads’ user-level data?
 
@@ -223,7 +223,7 @@ While we work closely with Google Ads to minimize these discrepancies, advertise
 | Cause | Google Ads | AppsFlyer |
 | --- | --- | --- |
 | **Modelled conversions and ICM conversions** | Google Ads shows modelled installs generated by Google’s internal modelling, and does not show ICM-based modelled installs. | AppsFlyer shows modelled installs generated by Google ICM (probabilistic claims), and does not show Google’s internally modelled installs. |
-| **Assisted installs (aka Multi-touch attribution)** | Google Ads, as an SRN, attributes all installs following engagements with Google Ads, within their attribution window. | AppsFlyer attributes the last click in a user's journey and treats engagements before it as [assists](https://support.appsflyer.com/hc/articles/207040506-How-Are-Assisted-Installs-Calculated-Multi-Touch-Attribution-). |
+| **Assisted installs (aka Multi-touch attribution)** | Google Ads, as an SRN, attributes all installs following engagements with Google Ads, within their attribution window. | AppsFlyer attributes the last click in a user's journey and treats engagements before it as [assists](/docs/measure-assisted-installs). |
 | **Install record time** | Google Ads attributes the conversion to the Click time. | AppsFlyer attributes the conversion to the launch time (app open). |
 | **Time zones** | Varies - based on location | Varies - based on location. |
 | **Attribution window** | 30 Days | Google integration is set for 30 days by default (can be modified). |
@@ -239,11 +239,11 @@ While we work closely with Google Ads to minimize these discrepancies, advertise
 #### Notes
 
 - While Google Ads shows all installs of a retargeting campaign in the same place, in the AppsFlyer Overview dashboard, the UA view displays new installs, the retargeting view displays re-attributions, and the unified view displays both.
-- When comparing data from Google Ads dashboard and AppsFlyer, make sure that the data in the Google Ads dashboard is data that is imported from 3rd party analytics (AppsFlyer). Data imported from Firebase or Google Play is structured differently and is not fully comparable with AppsFlyer data. To learn how to import data from AppsFlyer to Google Ads dashboard, click [here](https://support.appsflyer.com/hc/articles/115002504686#step-4-measure-your-app-conversions-mandatory).
+- When comparing data from Google Ads dashboard and AppsFlyer, make sure that the data in the Google Ads dashboard is data that is imported from 3rd party analytics (AppsFlyer). Data imported from Firebase or Google Play is structured differently and is not fully comparable with AppsFlyer data. To learn how to import data from AppsFlyer to Google Ads dashboard, click [here](/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory).
 - To compare install events (first_open in Google Ads), make sure that you drill down to install events in the conversion report in Google Ads. Google Ads might show all conversions (e.g. installs, purchases, subscriptions) which is why it is important to select only those install events out of all conversion events.
 
 <Cards>
-  <Card title="Google Ads SKAdNetwork interoperability with AppsFlyer" href="https://support.appsflyer.com/hc/articles/4403215779857">
+  <Card title="Google Ads SKAdNetwork interoperability with AppsFlyer" href="/docs/get-skan-postback-data-from-google-ads">
     For iOS 14-related considerations, see Google Ads SKAdNetwork interoperability with AppsFlyer.
   </Card>
 </Cards>

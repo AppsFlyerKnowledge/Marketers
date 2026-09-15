@@ -9,12 +9,12 @@ Healthcare apps enable users to perform tasks such as purchasing health insuranc
 > ❗️ Important!
 >
 > * **A note from our lawyers**: Health data is considered "Restricted Data" and is considered a special category of data in many jurisdictions. As such, customers are prohibited from sending AppsFlyer any such data.
-> * Make sure to read the [instructions](https://support.appsflyer.com/hc/articles/115005544169-Rich-in-app-events-guide#setting-up-inapp-events) for marketers about implementing in-app events.
+> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](https://evgen.appsflyer.com/?vertical=healthcare). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
 > * For each recommended event included in this article, there are [code samples](https://evgen.appsflyer.com/?vertical=healthcare&view=code) for iOS, Android, and Unity developers.
 > * Detailed instructions for your developer can be found in the [AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).
 
-For more information about recording in-app events, see the [In-app events guide](https://support.appsflyer.com/hc/articles/115005544169).
+For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
 
 ![In_appEvents_UserJourneys_-_Copy_of_Healthcare__1_.png](https://files.readme.io/54174e697c8dfe2d0d388c19fdd5fa0fbf9703c0155b9c250b40b5d0bcf19698-8232949117073.png)
 
@@ -91,7 +91,7 @@ When the user lands on the thank you page after a successful purchase
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](https://support.appsflyer.com/hc/articles/115005544169-Rich-in-app-events-Overview#revenue-events) | Revenue from the purchase | 50.55 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Revenue from the purchase | 50.55 |
 | af\_currency | Currency code | USD |
 | af\_order\_id | Order ID | 9277 |
 | payment\_method\_type | Payment method used | credit card, local |
@@ -114,6 +114,6 @@ When the user completes the top-up
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](https://support.appsflyer.com/hc/articles/115005544169-Rich-in-app-events-Overview#revenue-events) | Amount of the top-up | 2000.55 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Amount of the top-up | 2000.55 |
 | top\_up\_id | ID of the top-up | 397 |
 | payment\_method\_type | Payment method used | credit card, local payment |

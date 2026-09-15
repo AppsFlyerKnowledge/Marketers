@@ -28,7 +28,7 @@ The _af_app_opened event_ displays as _launch_ in sessions raw data available vi
 A session is reported by the SDK when any of the following occur:
 
 - A user launches the app.
-- When the app is brought to the foreground from the background. The developer can alter the reporting behavior by calling [setMinTimeBetweenSessions.](https://support.appsflyer.com/hc/articles/360000520785-How-does-AppsFlyer-Count-Sessions-#session-reporting-by-the-app-sdk)
+- When the app is brought to the foreground from the background. The developer can alter the reporting behavior by calling [setMinTimeBetweenSessions.](/docs/measure-sessions#session-reporting-by-the-app-sdk)
 - An explicit session report by the developer in Android apps. For example, this is implemented by utility apps that are always in the background.
 
 **Sessions metric**
@@ -86,12 +86,12 @@ The change takes effect within an hour.
     - Data freshness: Daily 13:00 UTC.
   - Data Locker: Retargeting sessions reports can be enabled; they include both re-engagement and re-attribution sessions.
     - Data freshness: 6-hour lag.
-- During re-engagement windows, sessions are attributed to both the UA and retargeting media source. Similarly, other re-engagement in-app events are [double-attributed](https://support.appsflyer.com/hc/articles/360016371077-Double-attribution-of-retargeting-events).
+- During re-engagement windows, sessions are attributed to both the UA and retargeting media source. Similarly, other re-engagement in-app events are [double-attributed](/docs/resolve-retargeting-double-attribution).
 - In the case of Google Ads and X Ads, to avoid duplicate postbacks, the _af_app_opened_ event is sent once.
 
 ### Sessions postbacks to partners
 
-You can send partner session postbacks so that a [postback](https://support.appsflyer.com/hc/articles/208439256-In-app-events-postback-configuration#mapping-methods) is sent for each session counted.
+You can send partner session postbacks so that a [postback](/docs/in-app-event-postback-configuration#mapping-methods) is sent for each session counted.
 
 - To send the postback: Explicitly map _af_app_opened_ to a partner event. Note! In the AppsFlyer raw data report available via Data Locker this event reflects as a _launch._
 - Consider that this is a high-volume event and that many partners don't want to receive it.
@@ -104,7 +104,7 @@ You can send partner session postbacks so that a [postback](https://support.apps
 
 **App-side:** The SDK sends _af_app_opened_ each time the app is opened or brought to the foreground after considering the SDK _setMinTimeBetweenSessions_ setting.
 
-**Server-side:** A session is counted **if it's not on of the first 5 sessions after the app's first launch** and after considering the minimum time between sessions mechanism. Counted sessions are attributed using the same [attribution rules](https://support.appsflyer.com/hc/articles/207447053-Attribution-model-explained) as other in-app events.
+**Server-side:** A session is counted **if it's not on of the first 5 sessions after the app's first launch** and after considering the minimum time between sessions mechanism. Counted sessions are attributed using the same [attribution rules](/docs/appsflyer-attribution-model) as other in-app events.
 
 #### **Explicit sessions reporting by the developer (Android apps only)**
 

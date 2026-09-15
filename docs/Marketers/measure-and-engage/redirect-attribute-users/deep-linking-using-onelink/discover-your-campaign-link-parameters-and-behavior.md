@@ -28,7 +28,7 @@ Link Discovery shows the following information about a URL:
 
 > 📘 Note
 >
-> If there is redirection to a domain not in your [redirect allowlist](https://support.appsflyer.com/hc/articles/25068636064529), an alert should appear.
+> If there is redirection to a domain not in your [redirect allowlist](/docs/set-up-your-domain-redirect-allowlist), an alert should appear.
 
 - **Capabilities**: The different capabilities enabled for the link, such as retargeting, deep linking, social media preview, and social media landing page.
 - **Redirection**: A summary of how the link is designed to redirect users based on their device, platform, and whether they already have the app installed.
@@ -44,7 +44,7 @@ Link Discovery shows the following information about a URL:
 
 | Specification | Remarks |
 | --- | --- |
-| Links supported by Link Discovery | - Short or long URLs created via AppsFlyer, whether they are single-platform links or multi-platform links created via OneLink.<br>- Links created in the AppsFlyer UI, and via API, SDK, and bulk creation.<br>- Links with branded domains. |
+| Links supported by Link Discovery | - Short or long URLs created via AppsFlyer, whether they are single-platform links or multi-platform links created via OneLink.<br />- Links created in the AppsFlyer UI, and via API, SDK, and bulk creation.<br />- Links with branded domains. |
 | Agencies | Not supported |
 | Ad networks | Not supported |
 | Impression URLs | Not supported |

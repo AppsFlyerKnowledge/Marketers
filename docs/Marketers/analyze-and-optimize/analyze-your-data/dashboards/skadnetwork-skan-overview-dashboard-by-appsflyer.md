@@ -12,18 +12,18 @@ The dashboard contains SKAN campaign performance data and adheres to the followi
 
 - Consider that Apple, due to a [privacy threshold mechanism](https://developer.apple.com/documentation/storekit/skadnetwork), doesn't always populate the conversion value (CV). These are referred to as null CVs. In the case of null CVs, only an install is recorded.
 - Metrics are calculated as follows:
-  - Non-organic metrics in the dashboard are calculated using SKAN postback data received by AppsFlyer. Some metrics like redownloads, source app ID, and fidelity type metrics require that you configure your app to [send postback copies directly to AppsFlyer](https://support.appsflyer.com/hc/articles/4402320969617).
+  - Non-organic metrics in the dashboard are calculated using SKAN postback data received by AppsFlyer. Some metrics like redownloads, source app ID, and fidelity type metrics require that you configure your app to [send postback copies directly to AppsFlyer](/docs/send-skan-and-adattributionkit-postback-copies-directly-to-appsflyer-ios-15).
   - Organic metrics are calculated as AppsFlyer attribution data minus SKAN non-organic attribution data. 
     > 📘 Note
     >
     > Organic metrics aren't always available. [Learn more](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#traits-and-limitations).
     - Make sure you filter by **New installs** in the install type field.
-  - Some metrics, like revenue and ROAS, have both the original value derived from postbacks and a [modeled value](https://support.appsflyer.com/hc/articles/360011307357#modeled-metrics-and-null-cv) that considers the null CV rate.
+  - Some metrics, like revenue and ROAS, have both the original value derived from postbacks and a [modeled value](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#modeled-metrics-and-null-cv) that considers the null CV rate.
 - Agency-driven traffic is treated as coming from a transparent agency.
 - Data freshness:
   - Daily.
   - Postbacks received on a given day are processed at the end of the day UTC. Data is available by 08:00 UTC of the following day. Meaning postbacks received on Monday are available in the dashboard on Tuesday morning.
-  - See [expected dashboard update time.](https://support.appsflyer.com/hc/articles/360011420698#timing-from-app-install-until-dashboard-and-reports-update)
+  - See [expected dashboard update time.](/docs/skadnetwork-skan-solution-guide#timing-from-app-install-until-dashboard-and-reports-update)
 
 ## SKAN dashboard view options
 
@@ -37,7 +37,7 @@ Additional filters and display options are described in the sections that follow
 
 ### Dashboard settings
 
-Dashboard settings are available when your app uses legacy [fixed-mode conversion measurement](https://support.appsflyer.com/hc/articles/4403727223185-SKAN-Conversion-Studio-SKAdNetwork-settings-#fixed-modes) to select the conversion event.
+Dashboard settings are available when your app uses legacy [fixed-mode conversion measurement](/docs/skan-conversion-studio#fixed-modes) to select the conversion event.
 
 **To select the conversion event**:
 
@@ -91,7 +91,7 @@ The charts available depend on the selected measurement type.
 | Metric breakdown by advertising hierarchy elements | Elements available: Media source, Campaign, Site ID, Adset, Ad, Version<br />![SKAdNetwork_Dashboard_AppsFlyer5_us-en.png](https://files.readme.io/f201592b110b3137329f7ad3c48c53e20639fb664383d76ceba2a347e969f6e4-360010368657.png) |
 | Top events | Top events contain both organic and non-organic users. Use the media source filter, at the top of the page, to distinguish between organic and non-organic users or per selected media sources. <br />![SKAdNetwork_Dashboard_AppsFlyer6_us-en.png](https://files.readme.io/1a569224cec155b54a96433d6b2e36918c9c6f7924629cb09dcfc859358199c3-360010454658.png) |
 | Top countries | ![mceclip1.png](https://files.readme.io/aba8db1a2aa7a90d5fd5c07e184eebd6d09762c5564f87f87f584d91686a59c6-360011169298.png)<br />Note: This chart is available to agencies and not to advertisers |
-| Postback copy | This chart is available after you configure the app to send iOS 15+ [postback copies](https://support.appsflyer.com/hc/articles/4402320969617) to AppsFlyer. If no chart displays, consider that:<br /><br />- We aren't receiving the postbacks from the app or aren't yet receiving them. Verify with your app developer, that the AppsFlyer endpoint has been set in the app and the updated app version is in the App Store.<br />- No postbacks were received (meaning there are no SKAN installs) for the selected date or you selected a date earlier than January 1, 2022.<br /><br />Notes:<br /><br />- All other metrics in the dashboard are calculated using iOS postbacks forwarded by ad networks to AppsFlyer or from data provided directly by SRNs. Expect discrepancies between postback copy metrics and the other metrics.<br />- The postback copy chart isn't available to agencies.<br /><br />![PostbackCopy.png](https://files.readme.io/0f2d290817650c87b3719ce2cdd107fdf66f62f575d3b4b75fcdd1f8330a04a9-4417816656657.png) |
+| Postback copy | This chart is available after you configure the app to send iOS 15+ [postback copies](/docs/send-skan-and-adattributionkit-postback-copies-directly-to-appsflyer-ios-15) to AppsFlyer. If no chart displays, consider that:<br /><br />- We aren't receiving the postbacks from the app or aren't yet receiving them. Verify with your app developer, that the AppsFlyer endpoint has been set in the app and the updated app version is in the App Store.<br />- No postbacks were received (meaning there are no SKAN installs) for the selected date or you selected a date earlier than January 1, 2022.<br /><br />Notes:<br /><br />- All other metrics in the dashboard are calculated using iOS postbacks forwarded by ad networks to AppsFlyer or from data provided directly by SRNs. Expect discrepancies between postback copy metrics and the other metrics.<br />- The postback copy chart isn't available to agencies.<br /><br />![PostbackCopy.png](https://files.readme.io/0f2d290817650c87b3719ce2cdd107fdf66f62f575d3b4b75fcdd1f8330a04a9-4417816656657.png) |
 
 | Dimension | Remarks |
 | --- | --- |
@@ -101,7 +101,7 @@ The charts available depend on the selected measurement type.
 
 ### Metrics
 
-- Select metrics from those available. [Modeled metrics](https://support.appsflyer.com/hc/articles/360011307357#modeled-metrics-and-null-cv) consider the null CV rate.
+- Select metrics from those available. [Modeled metrics](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#modeled-metrics-and-null-cv) consider the null CV rate.
 - Set the primary and secondary groups by dimensions to drill down into performance metrics.
 
 ![SKAdNetwork_Dashboard_AppsFlyer7_us-en.png](https://files.readme.io/434a848c7a33c052c80101788b066f4bdb90ef36423ea140f85c1cc59ace2ebf-360010368617.png)
@@ -179,7 +179,7 @@ Modeled metrics available include:
 - ROI
 - ROAS
 
-[Learn more about modeled SKAN data](https://support.appsflyer.com/hc/articles/7086372479505)
+[Learn more about modeled SKAN data](/docs/skan-modeled-data)
 
 ### AppsFlyer attribution vs. SKAN attribution
 
@@ -189,15 +189,15 @@ Definitions:
 
 - **Times:** Assume the default activity window of 24 hours (48 hours once you upgrade to SKAN 4).
 - **SDK:** AppsFlyer SDK embedded in the app.
-- **Rules**: [AppsFlyer attribution model](https://support.appsflyer.com/hc/articles/207447053)
+- **Rules**: [AppsFlyer attribution model](/docs/appsflyer-attribution-model)
 
 #### Attribution framework differences
 
 | Concept | SKAN | AppsFlyer |
 | --- | --- | --- |
-| Attribution methodology supported | Apple SKAN for click- and view-through attribution. Contains traffic of app-to-app campaigns of ad networks and SRNs supporting SKAN. | [**AppsFlyer attribution model**](https://support.appsflyer.com/hc/articles/207447053) **supports multiple attribution methods and scenarios:**<br />- Mobile web<br />- View-through<br />- Click-through<br />- App Clips<br />- Web attribution<br />- Apple Search Ads<br />- Owned media<br />- SRN traffic (consenting users)<br />- And more |
+| Attribution methodology supported | Apple SKAN for click- and view-through attribution. Contains traffic of app-to-app campaigns of ad networks and SRNs supporting SKAN. | [**AppsFlyer attribution model**](/docs/appsflyer-attribution-model) **supports multiple attribution methods and scenarios:**<br />- Mobile web<br />- View-through<br />- Click-through<br />- App Clips<br />- Web attribution<br />- Apple Search Ads<br />- Owned media<br />- SRN traffic (consenting users)<br />- And more |
 | Primary data source | - SKAN postbacks<br />- SDK | SDK and associated solutions.  Example: Server-to-Server events. |
-| Data freshness | [SKAN data freshness.](https://support.appsflyer.com/hc/articles/360000310629-Data-freshness-and-time-zone-support#skan) | Real-time when the user launches and uses the app. |
+| Data freshness | [SKAN data freshness.](/docs/about-data-freshness-and-timezone-support#skan) | Real-time when the user launches and uses the app. |
 | Time zone | UTC | App-specific time zone. |
 | Install time | Derived from the iOS postback arrival time. | Reported by SDK. |
 | Activity window | User activity during a fixed measurement window, starting with the app open. | Contains LTV data from the install date until the present.<br />Use Cohort to view data limited to cohort day 0 or cohort day 1, or both together to view a comparable measurement period.<br />Consider, cohort day 0 consists of less than 24 hours of activity. For example, a user installing at 18:00 on a given day has 6 hours of activity on cohort day 0. |
@@ -212,7 +212,7 @@ Definitions:
 | Non-organic installs | Count of valid iOS postbacks received by AppsFlyer.<br />Consider, AppsFlyer doesn't get the postbacks of ad networks that haven't completed SKAN integration with AppsFlyer.<br />This can lead to undercounting of non-organic installs and increased organic installs. | - Reported by SDK.<br />- Attributed to a media source.<br />- Counted using Rules. |
 | Organic installs | SDK installs minus SKAN installs. | - Reported by SDK.<br />- Not attributed to any media source.<br />- Counted using Rules. |
 | Revenue | **Non-organic**: Revenue reported by SKAN postbacks.<br />**Organic:** Revenue reported by SDK in-app events minus non-organic revenue. **Note**: Organic metrics aren't always available. [Learn more](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#traits-and-limitations). | - Reported by SDK and server-to-server API. |
-| Ad revenue | [Available](https://support.appsflyer.com/hc/articles/360011420698-SKAN-Solution-guide#recording-ad-revenue) | User-level ad revenue is attributed based on IDFV |
+| Ad revenue | [Available](/docs/skadnetwork-skan-solution-guide#recording-ad-revenue) | User-level ad revenue is attributed based on IDFV |
 | ROI/ROAS | Revenue during the measurement window. | - LTV<br />- Metrics of UA and retargeting campaigns. |
 
 ### FAQ—SKAN discrepancies
@@ -220,7 +220,7 @@ Definitions:
 | Reason | Discrepancies—Q&A |
 | --- | --- |
 | A | **Q: Why do the conversion numbers in the AppsFlyer dashboard differ to that of the ad network dashboard?**<br />**A**: Reasons for discrepancies<br />- **Install date vs. postback arrival date:**  - AppsFlyer **:** The install date is derived using a formula that takes into account the iOS postback arrival time, window length, and postback delay time.<br />  - Ad network **:** Typically use only the iOS postback arrival time as the install date, without adjustment.<br />  - Use the **display by postback arrival date** option in the dashboard to eliminate this difference.<br />- **Postback validation:** AppsFlyer validates the iOS postbacks received and ensures that the Apple signature is valid. The ad network may send invalid postbacks disregarded by AppsFlyer.<br />- **Missing postbacks**: iOS Postbacks must be sent by the ad network to AppsFlyer. AppsFlyer doesn't get the postback directly from the device. If postbacks are missing, AppsFlyer has no way of knowing this. |
-| B | **Q**: **Differences between the** [**SKAN performance API**](https://support.appsflyer.com/hc/articles/360014104157) **and dashboard versus the** [**SKAN aggregate postback API?**](https://support.appsflyer.com/hc/articles/360016646557)<br />**A**: The postback API date range relates to the date on which AppsFlyer received the postback. The performance API date range relates to the install date derived as described in reason A. |
+| B | **Q**: **Differences between the** [**SKAN performance API**](/docs/skan-aggregated-performance-report-api) **and dashboard versus the** [**SKAN aggregate postback API?**](/docs/skan-aggregated-postback-arrival-date-api)<br />**A**: The postback API date range relates to the date on which AppsFlyer received the postback. The performance API date range relates to the install date derived as described in reason A. |
 | C | **Q: Do all ad networks report the Geo?**<br />**A:** No. |
 | D | **Q: Why are there differences between the Overview dashboard and the SKAN dashboard.**<br />**A:** See the preceding section for an overview as to reasons for discrepancies. |
 
@@ -228,9 +228,9 @@ Definitions:
 
 | Trait | Remarks |
 | --- | --- |
-| Modeled event occurrences | - Modeled events are based on the formula described in [modeled metrics and null CV](https://support.appsflyer.com/hc/articles/360011307357#modeled-metrics-and-null-cv).<br />- The formula is applied per row of data. This may cause discrepancies between the modeled event count for a given media source and the sum of the modeled event count of its campaigns. |
+| Modeled event occurrences | - Modeled events are based on the formula described in [modeled metrics and null CV](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#modeled-metrics-and-null-cv).<br />- The formula is applied per row of data. This may cause discrepancies between the modeled event count for a given media source and the sum of the modeled event count of its campaigns. |
 | Postback arrival date | The final date in a date range is limited to the day when the last install was recorded. |
-| Organic data | - **Organic revenue** is only available for Revenue in either [fixed](https://support.appsflyer.com/hc/articles/4403727223185-SKAN-Conversion-Studio-SKAdNetwork-settings-#fixed-modes) or legacy mode.<br />- **Organic in-app** events are only available for "Conversion" in [fixed](https://support.appsflyer.com/hc/articles/4403727223185-SKAN-Conversion-Studio-SKAdNetwork-settings-#fixed-modes) or legacy modes.<br />- For the **non-legacy modes** ( [SKAN4](https://support.appsflyer.com/hc/articles/4403727223185#skan-4), custom encode, and decode modes) organic data is available only for installs.<br />- Consider using SSOT to view organic data, as SSOT deduplicates SKAN-attributed and AppsFlyer model-attributed events.<br />- If AppsFlyer attribution data (new installs for both organic and non-organic) minus SKAN attribution data (non-organic installs) equals a negative number, the SKAN dashboard displays 0 under organic installs. |
+| Organic data | - **Organic revenue** is only available for Revenue in either [fixed](/docs/skan-conversion-studio#fixed-modes) or legacy mode.<br />- **Organic in-app** events are only available for "Conversion" in [fixed](/docs/skan-conversion-studio#fixed-modes) or legacy modes.<br />- For the **non-legacy modes** ( [SKAN4](/docs/skan-conversion-studio#skan-4), custom encode, and decode modes) organic data is available only for installs.<br />- Consider using SSOT to view organic data, as SSOT deduplicates SKAN-attributed and AppsFlyer model-attributed events.<br />- If AppsFlyer attribution data (new installs for both organic and non-organic) minus SKAN attribution data (non-organic installs) equals a negative number, the SKAN dashboard displays 0 under organic installs. |
 | Historical data | Earliest conversion data supported: November 1, 2020 |
 | Currency | Displays in USD or in the app-specific local currency as set on the [app settings page](/docs/app-settings). |
 | Timezone | For SKAN-reported data, installs and events display using UTC, with the exception of Meta and Google SKAN data, for which the timezone is based on the timezone configured in your Meta and Google accounts, respectively. |
@@ -240,10 +240,10 @@ Definitions:
 ### See also
 
 <Cards>
-  <Card title="AppsFlyer SKAN Solution guide" href="https://support.appsflyer.com/hc/articles/360011420698">
+  <Card title="AppsFlyer SKAN Solution guide" href="/docs/skadnetwork-skan-solution-guide">
     Learn how to configure and use AppsFlyer's SKAdNetwork solution.
   </Card>
-  <Card title="What's different—AppsFlyer iOS 14 related updates" href="https://support.appsflyer.com/hc/articles/360011890298">
+  <Card title="What's different—AppsFlyer iOS 14 related updates" href="/docs/about-att-and-skan">
     Understand the changes introduced with iOS 14 and how they affect attribution.
   </Card>
 </Cards>

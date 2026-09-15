@@ -6,7 +6,7 @@ At a glance: Eulerian, an AppsFlyer integrated partner, is focusing on the analy
 
 > ❗️ Important!
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Eulerian
 
@@ -29,7 +29,7 @@ At a glance: Eulerian, an AppsFlyer integrated partner, is focusing on the analy
 
 Eulerian's configuration window includes 4 tabs: **Integration, Attribution link, Data Enrichment**, and **Permissions**. Click on the items below to read about the tab setup.
 
-For a detailed description of the Partner Configuration Window Header, click [here](https://support.appsflyer.com/hc/articles/360006091197).
+For a detailed description of the Partner Configuration Window Header, click [here](/docs/user-level-data-retention).
 
 ## Integration tab
 
@@ -39,7 +39,7 @@ The Integration Tab is divided into different sections as described below.
 
 On the **first visit** here, you will need to toggle ON the _**Activate Partner**_ button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.
 
-For more details about partner activation, click [here](https://support.appsflyer.com/hc/articles/360000844778).
+For more details about partner activation, click [here](/docs/partner-activation-deactivation).
 
 ### General settings
 
@@ -80,9 +80,9 @@ In this section you can map your AppsFlyer events with Eulerian via postbacks.
 
 | Parameter Name | Description |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.<br>**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on Eulerian's side.<br>Obtain the corresponding Event ID from Eulerian and set in the text field. |
-| **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af_revenue** parameter.<br>**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
+| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.<br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
+| **Partner Event Identifier** | The unique name or ID of each event as defined on Eulerian's side.<br />Obtain the corresponding Event ID from Eulerian and set in the text field. |
+| **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af_revenue** parameter.<br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
 6. Click **Save**.
 

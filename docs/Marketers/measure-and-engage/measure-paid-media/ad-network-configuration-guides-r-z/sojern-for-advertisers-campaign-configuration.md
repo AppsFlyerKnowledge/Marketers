@@ -35,7 +35,7 @@ The Integration Tab is divided into different sections as described below.
 
 On the **first visit** here, you'll need to turn on the _**Activate Partner**_ toggle to enable setup of the Integration parameters. The toggle MUST be ON for as long as you work with the partner.
 
-For more details about partner activation please click [here](https://support.appsflyer.com/hc/articles/360000844778).
+For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 
 > 📘 Note
 >
@@ -75,9 +75,9 @@ For more details about Sojern for Advertisers In-App Events, click here.
 
 | Parameter Name | Description |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server-to-server events.<br>**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on Sojern for the Advertisers' side.<br>Obtain the corresponding Event ID from Sojern for Advertisers and set it in the text field. |
-| **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.<br>**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
+| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server-to-server events.<br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
+| **Partner Event Identifier** | The unique name or ID of each event as defined on Sojern for the Advertisers' side.<br />Obtain the corresponding Event ID from Sojern for Advertisers and set it in the text field. |
+| **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.<br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 ### Event types
 
@@ -222,7 +222,7 @@ Set out below is an example of the Search and Confirmation for the hotel and fli
 
 Flight Search event values:
 
-In-app event: af\_list\_view in-app event values: et=‘fs’&af\_num\_adults={number of adults}&af\_num\_children={number of children}&af\_class={service class}&fow={one way}&fmc={multi city}&dctry={website country domain}&af\_destination\_a={departure airport code}&af\_destination\_b={arrival airport code}&af\_city={destination city}&fc2={origin city}&af\_departing\_departure\_date={YYYY-MM-DD}&af\_returning\_departure\_date{YYYY-MM-DD}
+In-app event: af\_list\_view in-app event values: et=‘fs’&af\_num\_adults=`{number of adults}&af\_num\_children={number of children}&af\_class={service class}&fow={one way}&fmc={multi city}&dctry={website country domain}&af\_destination\_a={departure airport code}&af\_destination\_b={arrival airport code}&af\_city={destination city}&fc2={origin city}&af\_departing\_departure\_date={YYYY-MM-DD}&af\_returning\_departure\_date{YYYY-MM-DD}`
 
 ## Attribution link tab
 
@@ -245,14 +245,14 @@ Adding parameters to the attribution link here enables you to later perform thor
 - **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific Sojern for Advertiser campaigns.
 
 **Attribution link parameter:** af\_ad
-- **Site ID** and **Sub Site ID** - set the Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the subsite ID parameter, to avoid [exceeding the site ID](https://support.appsflyer.com/hc/articles/115005099063-What-are-the-Exceeded-Media-Sources-#exceeded_siteid_limit) limitations.
+- **Site ID** and **Sub Site ID** - set the Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the subsite ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations.
 
 **Attribution link parameters:** af\_siteid and af\_sub\_siteid
 - **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.
 
 **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about [**AppsFlyer's Attribution Link Structure and Parameters**](https://support.appsflyer.com/hc/articles/207447163) **.**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about [**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters) **.**
 
 ### Click-through attribution
 
@@ -260,7 +260,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 **Attribution link parameter:** af\_click\_lookback
 
-More details about the [click lookback window here](https://support.appsflyer.com/hc/articles/208338403-What-is-AppsFlyer-s-Configurable-Attribution-Lookback-Window-).
+More details about the [click lookback window here](/docs/set-up-lookback-windows).
 
 ### Click attribution link
 

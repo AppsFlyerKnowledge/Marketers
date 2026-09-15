@@ -35,7 +35,7 @@ The Integration tab is divided into different sections as described below.
 
 **To enable the integration of this partner**, turn on **Activate partner**.
 
-The toggle must be on for as long as you work with the partner. Learn more about [partner activation](https://support.appsflyer.com/hc/articles/360000844778#activating-a-partner).
+The toggle must be on for as long as you work with the partner. Learn more about [partner activation](/docs/partner-activation-deactivation#activating-a-partner).
 
 **Enable View-Through attribution**
 
@@ -54,15 +54,15 @@ In this section, you can map your AppsFlyer events with MoPub Acquire via postba
 **To configure in-app events postback:**
 
 1. Turn **In-app event postback** on.
-2. Set the **In-app event postback window** (read more about [in-app event postback window configuration](https://support.appsflyer.com/hc/articles/208439256-In-App-Events-Postback-Configuration#inapp-event-postback-window)).
+2. Set the **In-app event postback window** (read more about [in-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).
 3. Click **Add event** to add an SDK event to the list.
 4. Complete the parameters required:
 
 | Parameter name | Description |
 | --- | --- |
-| SDK event name | The name of the event, as received by AppsFlyer either from the SDK integrated with your app or from server-to-server events.<br>**Tip**: Don't see the event you are looking for? Type in its SDK Event Name, click **Create custom**, and map normally. Read more about [custom event mapping](https://support.appsflyer.com/hc/articles/208439256#custom-events). |
-| Sending option | Select the sending option for the event:<br>- **Only events attributed to this partner** for events coming **only** from users attributed to this partner.<br>- **Events attributed to any partner or organic** to have your entire user base available to be reported to the partner. |
-| Send revenue | - **No values & no revenue:** sends only the event itself without the event value.<br>- **Values & no revenue:** sends all the parameters excluding the revenue value.<br>- **Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event). |
+| SDK event name | The name of the event, as received by AppsFlyer either from the SDK integrated with your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for? Type in its SDK Event Name, click **Create custom**, and map normally. Read more about [custom event mapping](/docs/in-app-event-postback-configuration#custom-events). |
+| Sending option | Select the sending option for the event:<br />- **Only events attributed to this partner** for events coming **only** from users attributed to this partner.<br />- **Events attributed to any partner or organic** to have your entire user base available to be reported to the partner. |
+| Send revenue | - **No values & no revenue:** sends only the event itself without the event value.<br />- **Values & no revenue:** sends all the parameters excluding the revenue value.<br />- **Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event). |
 
 ## Attribution link tab
 
@@ -85,14 +85,14 @@ Adding parameters to the attribution link here enables you to later perform thor
 - **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns MoPub Acquire.
 
   **Attribution link parameter:** af\_ad
-- **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the sub site ID parameter, to avoid [exceeding the site ID](https://support.appsflyer.com/hc/articles/115005099063-What-are-the-Exceeded-Media-Sources-#exceeded_siteid_limit) limitations.
+- **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the sub site ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations.
 
   **Attribution link parameters:** af\_siteid and af\_sub\_siteid
 - **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering
 
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about [**AppsFlyer's Attribution Link Structure and Parameters**](https://support.appsflyer.com/hc/articles/207447163).
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about [**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
 
 ### Click-through attribution
 
@@ -100,7 +100,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 **Attribution link parameter:** af\_click\_lookback
 
-More details about the [click lookback window here](https://support.appsflyer.com/hc/articles/208338403-What-is-AppsFlyer-s-Configurable-Attribution-Lookback-Window-).
+More details about the [click lookback window here](/docs/set-up-lookback-windows).
 
 ### Click attribution link
 
@@ -114,7 +114,7 @@ You can customize this value to 1-23 hours or 1-7 days.
 
 **Attribution link parameter:** af\_viewthrough\_lookback
 
-More details about the [view-through attribution here](https://support.appsflyer.com/hc/articles/208338403-What-is-AppsFlyer-s-Configurable-Attribution-Lookback-Window-).
+More details about the [view-through attribution here](/docs/set-up-lookback-windows).
 
 ### Impressions attribution link
 
@@ -122,7 +122,7 @@ The impression attribution link contains similar attribution data to the click r
 
 ## Cost tab
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](https://support.appsflyer.com/hc/articles/207040526-Ad-cost-measurement-guide#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. 
+AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. 
 
 > 📘 Note
 >
@@ -130,9 +130,9 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 **To enable the cost API**:
 
-- Follow [these integration instructions](https://support.appsflyer.com/hc/articles/360008850257#enable-cost-api).
+- Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
 
-[View your cost API status](https://support.appsflyer.com/hc/articles/360008850257#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 ## Ad revenue tab
 
@@ -140,4 +140,4 @@ Ad Revenue is not supported in the integration with this partner.
 
 ## Permissions tab
 
-In this tab, you can select the permissions to grant MoPub Acquire. Note that even if attribution is disabled for MoPub Acquire, the permissions tab is active and you can grant control to MoPub Acquire. [Learn what permission can you give to MoPub Acquire](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+In this tab, you can select the permissions to grant MoPub Acquire. Note that even if attribution is disabled for MoPub Acquire, the permissions tab is active and you can grant control to MoPub Acquire. [Learn what permission can you give to MoPub Acquire](/docs/set-up-an-integrated-partner#permissions-tab).

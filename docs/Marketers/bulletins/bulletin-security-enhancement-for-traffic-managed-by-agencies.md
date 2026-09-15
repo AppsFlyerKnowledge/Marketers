@@ -12,6 +12,6 @@ To protect your data, ensure its security, and reduce fraud, we're enhancing sec
 | | |
 | --- | --- |
 | **Effective date** | July 31, 2024 |
-| **Where** | - **Agency:** Integration page<br>- **Ad network:** Security center |
-| **What you should know** | - **Agency:** Reach out to the partner and make sure your agency ID ( [the af_prt name](/docs/about-agency-accounts#af_prt-parameter)) is added to their list of authorized agencies.<br>- **Partner:** Make sure to add all agency IDs (af_prt) in the [new authorized agencies section](https://support.appsflyer.com/hc/articles/25774607860113-Agency-allowlist). |
+| **Where** | - **Agency:** Integration page<br />- **Ad network:** Security center |
+| **What you should know** | - **Agency:** Reach out to the partner and make sure your agency ID ( [the af_prt name](/docs/about-agency-accounts#af_prt-parameter)) is added to their list of authorized agencies.<br />- **Partner:** Make sure to add all agency IDs (af_prt) in the [new authorized agencies section](/docs/set-up-your-list-of-authorized-agencies). |
 | **Implications** | Starting from the specified date, agencies not on the ad network's approved list won't have their traffic recorded and measured, nor will they be able to access the integration page for all apps running campaigns on the ad network. |

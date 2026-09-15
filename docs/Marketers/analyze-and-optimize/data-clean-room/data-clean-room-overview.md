@@ -62,9 +62,9 @@ The AppsFlyer Data Clean Room (DCR) is very flexible in terms of the types of da
 Follow these steps to set up the DCR to meet your organization's needs:
 
 1. Consider the reports you want to receive from the DCR. These reports are the result of enriching your advertiser data sources with AppsFlyer attribution data. Determine the first-party data sources you need to upload into the DCR in order to create these reports.
-2. [Create the basic cloud storage structure](https://support.appsflyer.com/hc/articles/4591167507217) to support those data sources and reports.
+2. [Create the basic cloud storage structure](/docs/data-clean-room-setting-up-cloud-services) to support those data sources and reports.
 3. Define the queries that will pull the data and produce the data source files; produce prototypes of the data source files.
-4. Develop the automations that will pull the data, create the source subfolders, and upload the data sources and [\_SUCCESS files](https://support.appsflyer.com/hc/articles/5041487011601#_success-files) on a regular basis.
-5. Set up your [sources](https://support.appsflyer.com/hc/articles/5041487011601) in the AppsFlyer DCR platform.
-6. Set up your [reports](https://support.appsflyer.com/hc/articles/5415945483921) in the AppsFlyer DCR platform.
+4. Develop the automations that will pull the data, create the source subfolders, and upload the data sources and [\_SUCCESS files](/docs/data-clean-room-working-with-sources#_success-files) on a regular basis.
+5. Set up your [sources](/docs/data-clean-room-working-with-sources) in the AppsFlyer DCR platform.
+6. Set up your [reports](/docs/data-clean-room-working-with-reports) in the AppsFlyer DCR platform.
 7. Develop the automations that will ingest the reports after they are delivered by the DCR to your cloud storage.

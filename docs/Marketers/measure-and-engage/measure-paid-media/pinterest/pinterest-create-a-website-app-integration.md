@@ -8,7 +8,7 @@ excerpt: "Set up a Pinterest integration for your website app to send web conver
 
 - An account with Pinterest
 - A website app set up in AppsFlyer. [Learn more](/docs/adding-an-app-to-appsflyer#web)
-- The AppsFlyer [Web SDK](https://support.appsflyer.com/hc/articles/43485611331473--Beta-Integrate-AppsFlyer-Web-SDK) or [Server-to-Server (S2S) API](https://support.appsflyer.com/hc/articles/45670116601617--Beta-Server-to-Server-S2S-API-for-Web-Attribution) for web attribution
+- The AppsFlyer [Web SDK](/docs/integrate-appsflyer-web-sdk) or [Server-to-Server (S2S) API](/docs/server-to-server-s2s-api-for-web-performance-measurement) for web attribution
 
 **To activate or edit the integration:**
 
@@ -21,7 +21,7 @@ excerpt: "Set up a Pinterest integration for your website app to send web conver
 
 > 📘 Note
 >
-> The toggle must remain on [(activated)](https://support.appsflyer.com/hc/articles/360000844778) for as long as you work with Pinterest.
+> The toggle must remain on [(activated)](/docs/partner-activation-deactivation) for as long as you work with Pinterest.
 
 5. Complete the configuration in the **Integration** tab as described below.
 
@@ -58,9 +58,9 @@ In this section, you map your AppsFlyer web events to Pinterest events via postb
 
 | Parameter name | Description |
 | --- | --- |
-| **AppsFlyer event name** | The name of the web event, as received by AppsFlyer from either the Web SDK integrated on your website or from server-to-server events. <br>**Note:** If you don't see the event you want in the list, make sure the event has been activated and recheck. |
+| **AppsFlyer event name** | The name of the web event, as received by AppsFlyer from either the Web SDK integrated on your website or from server-to-server events. <br />**Note:** If you don't see the event you want in the list, make sure the event has been activated and recheck. |
 | **Partner event name** | The Pinterest event to map to, selected from Pinterest's predefined event list. For Pinterest event names, see the [Pinterest documentation](https://developers.pinterest.com/docs/api-features/track-conversion-events/#understand-conversion-events). |
-| **To users from** | **This partner only:** Events coming only from users attributed to Pinterest. <br>**All media sources, including organic:** Your entire user base is available to be reported to the partner. |
+| **To users from** | **This partner only:** Events coming only from users attributed to Pinterest. <br />**All media sources, including organic:** Your entire user base is available to be reported to the partner. |
 | **Including** | Select whether event revenue or parameter values are sent to the partner in the postback. AppsFlyer can send all parameters of the rich web event except the revenue parameter (contained in **af_revenue**), or all parameters including the revenue value (if present). |
 
 If you also run the Pinterest Tag on your website, send the same event ID to both AppsFlyer and Pinterest so AppsFlyer can deduplicate the events:

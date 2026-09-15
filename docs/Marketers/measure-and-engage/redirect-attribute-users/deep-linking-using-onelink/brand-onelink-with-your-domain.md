@@ -35,10 +35,10 @@ Complete the action list to set up a Branded Domain.
 
 | | Responsibility | Action | Remarks |
 | --- | --- | --- | --- |
-| 1 | Marketer assisted by the DNS admin | [Set up a Branded Link in AppsFlyer](https://support.appsflyer.com/hc/articles/360002329137#set-up-a-branded-domain-in-appsflyer) | The DNS admin, usually a member of your IT team or your DNS hosting provider, needs to define the full domain (aka host) and set a CNAME record as described in the procedure. |
-| 2 | Developer | [Set up Branded Domains in the app](https://support.appsflyer.com/hc/articles/360002329137#set-up-branded-domains-in-the-app) | Make minor changes to the app code. |
-| 3 | Marketer | [Using and testing Branded Domains](https://support.appsflyer.com/hc/articles/360002329137#using-and-testing-branded-domains) | |
-| As needed | Marketer | [Editing and deleting Branded Domains](https://support.appsflyer.com/hc/articles/360002329137#editing-and-deleting-branded-domains) | |
+| 1 | Marketer assisted by the DNS admin | [Set up a Branded Link in AppsFlyer](/docs/brand-onelink-with-your-domain#set-up-a-branded-domain-in-appsflyer) | The DNS admin, usually a member of your IT team or your DNS hosting provider, needs to define the full domain (aka host) and set a CNAME record as described in the procedure. |
+| 2 | Developer | [Set up Branded Domains in the app](/docs/brand-onelink-with-your-domain#set-up-branded-domains-in-the-app) | Make minor changes to the app code. |
+| 3 | Marketer | [Using and testing Branded Domains](/docs/brand-onelink-with-your-domain#using-and-testing-branded-domains) | |
+| As needed | Marketer | [Editing and deleting Branded Domains](/docs/brand-onelink-with-your-domain#editing-and-deleting-branded-domains) | |
 
 ### Procedures
 
@@ -237,11 +237,11 @@ Using and testing Branded Domains
 
 **Prerequisites**:
 
-Before using and testing, Branded Domains complete the steps in the [Branded Domains workflow](https://support.appsflyer.com/hc/articles/360002329137#set-up-branded-domains-in-the-app).
+Before using and testing, Branded Domains complete the steps in the [Branded Domains workflow](/docs/brand-onelink-with-your-domain#set-up-branded-domains-in-the-app).
 
 **To create and test branded domains:**
 
-1. [Create a OneLink link](https://support.appsflyer.com/hc/articles/208874366#create-a-onelink-link) using the OneLink template mapped to the branded domain.
+1. [Create a OneLink link](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link) using the OneLink template mapped to the branded domain.
 2. Copy the custom attribution link to a text editor.
 3. The custom attribution link is made up of a OneLink subdomain, OneLink ID, and custom Link ID. Replace the OneLink subdomain with the Branded Domain full domain. Example:
 
@@ -249,7 +249,7 @@ Before using and testing, Branded Domains complete the steps in the [Branded Dom
 | --- | --- |
 | **abcdef.onelink.me**/A1bc/dc1234ef | **click.abcdef.com**/A1bc/dc1234ef |
 
-4. Use the branded link to [test installs and deep linking](https://support.appsflyer.com/hc/articles/208874366#testing).
+4. Use the branded link to [test installs and deep linking](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#testing).
 5. If you use raw data reports as part of the testing, the Original URL field is populated by the branded links.
 
 Editing, verifying, and deleting Branded Domains
@@ -289,7 +289,7 @@ Changing your CNAME record to no longer point to AppsFlyer will result in the br
 
 #### **Delete a branded domain mapping**
 
-To delete a branded domain contact your AppsFlyer CSM or [hello@appsflyer.com](https://support.appsflyer.com/hc/articles/hello@appsflyer.com).
+To delete a branded domain contact your AppsFlyer CSM or hello@appsflyer.com.
 
 ## Troubleshooting, traits, and limitations
 
@@ -297,14 +297,14 @@ Troubleshooting
 
 | Symptom | Cause/solution |
 | --- | --- |
-| Branded Domain cannot be mapped to a OneLink template | - **Invalid domain name:** When mapping a Branded Domain to a OneLink template, AppsFlyer tries to verify that the branded link has a valid domain name. A valid domain name has the format click.abdef.com <br>- **The Branded Domain is already mapped**: A full domain can only be mapped once. |
-| Branded Domain is not deep linking into the app | - [Verify that the Branded Domain is operational](/docs/brand-onelink-with-your-domain#h_01HQ5FK5XJNZ1EABJA66RMYBCN)<br>- **Verify CNAME**: Ensure that a CNAME record points from your Branded Domain to AppsFlyer.<br>- **Verify deep linking setting for OneLink template**: It's possible there is an issue with the OneLink deep linking settings. Make sure to set up deep linking with OneLink.<br>- **OneLink mapping changed**: You can edit the Branded Domain and map it to a different OneLink. If the newly mapped OneLink has different deep linking settings or no deep linking settings, deep linking might not work. |
-| No installs measured from Branded Domains | - **Check OneLink template settings**: Make sure that the OneLink subdomain used to map to the branded domain is associated with the correct apps.<br>- **OneLink subdomain changed:** If you map a branded domain to a OneLink template and the OneLink subdomain changes, it might affect attribution.<br>- **Ensure implementation:** Of setOneLinkCustomDomain API in the app. |
-| No re-engagements recorded from branded domains | Ensure that the following are active and configured: <br>- [Configure deep linking using OneLink](/docs/onelink-guide#setup).<br>- The app makes use of the dedicated [SDK API setOneLinkCustomDomain](https://support.appsflyer.com/hc/articles/360002329137#set-up-a-branded-domain-in-appsflyer).<br>- [Retargeting is enabled in the app settings](/docs/retargeting-attribution-guide#retargeting-settings). |
-| During Branded Domain setup, **Domain doesn't exist** message displays | 1. Contact your DNS admin and ask them to investigate.<br>2. Wait for the DNS admin to confirm that the domain is registered. <br>3. Click **Reverify**. |
-| During Branded Domain setup, **AppsFlyer CNAME not found** message displays | 1. Request that the DNS admin set a CNAME record such that the full domain (Brand domain) points to the specified URL (aka AppsFlyer host). This is depicted in the figure Branded Link pointing to AppsFlyer servers in this section. <br>2. Wait for the DNS admin to confirm that the CNAME is active. |
-| **You have been blocked** message when loading a branded domain page | Branded domains do not include the template or any parameters. When using a branded domain, you must add the template or parameters to the end of the branded domain URL.<br>For example, if 'click.abcdef.com' is your branded domain, using just ' **click.abcdef.com'**, will lead to a **you have been blocked** message.<br>You must add the parameters or templates to the end. For example, click.abcdef.com **/A1bc/dc1234ef** |
-| **err\_cert\_authority\_invalid** error when loading a branded domain page | This error indicates that your branded domain lacks a valid HTTPS certificate because the Certificate Authority is not recognized. Since AppsFlyer certifies your Branded domains with Let's Encrypt the error is likely due to Let's Encrypt not being recognized as a valid Certificate Authority (CA) according to the CAA (Certification Authority Authorization) DNS records of your domain.<br>**Solution**<br>Please perform the following:<br>1. Determine if your domain recognize Let's Encrypt as CA using services such as [this one](https://www.entrust.com/resources/certificate-solutions/tools/caa-lookup).<br>2. Ask your system administrators to update your domain CAA records to include Let's Encrypt as an authorized CA. |
+| Branded Domain cannot be mapped to a OneLink template | - **Invalid domain name:** When mapping a Branded Domain to a OneLink template, AppsFlyer tries to verify that the branded link has a valid domain name. A valid domain name has the format click.abdef.com <br />- **The Branded Domain is already mapped**: A full domain can only be mapped once. |
+| Branded Domain is not deep linking into the app | - [Verify that the Branded Domain is operational](/docs/brand-onelink-with-your-domain#h_01HQ5FK5XJNZ1EABJA66RMYBCN)<br />- **Verify CNAME**: Ensure that a CNAME record points from your Branded Domain to AppsFlyer.<br />- **Verify deep linking setting for OneLink template**: It's possible there is an issue with the OneLink deep linking settings. Make sure to set up deep linking with OneLink.<br />- **OneLink mapping changed**: You can edit the Branded Domain and map it to a different OneLink. If the newly mapped OneLink has different deep linking settings or no deep linking settings, deep linking might not work. |
+| No installs measured from Branded Domains | - **Check OneLink template settings**: Make sure that the OneLink subdomain used to map to the branded domain is associated with the correct apps.<br />- **OneLink subdomain changed:** If you map a branded domain to a OneLink template and the OneLink subdomain changes, it might affect attribution.<br />- **Ensure implementation:** Of setOneLinkCustomDomain API in the app. |
+| No re-engagements recorded from branded domains | Ensure that the following are active and configured: <br />- [Configure deep linking using OneLink](/docs/onelink-guide#setup).<br />- The app makes use of the dedicated [SDK API setOneLinkCustomDomain](/docs/brand-onelink-with-your-domain#set-up-a-branded-domain-in-appsflyer).<br />- [Retargeting is enabled in the app settings](/docs/retargeting-attribution-guide#retargeting-settings). |
+| During Branded Domain setup, **Domain doesn't exist** message displays | 1. Contact your DNS admin and ask them to investigate.<br />2. Wait for the DNS admin to confirm that the domain is registered. <br />3. Click **Reverify**. |
+| During Branded Domain setup, **AppsFlyer CNAME not found** message displays | 1. Request that the DNS admin set a CNAME record such that the full domain (Brand domain) points to the specified URL (aka AppsFlyer host). This is depicted in the figure Branded Link pointing to AppsFlyer servers in this section. <br />2. Wait for the DNS admin to confirm that the CNAME is active. |
+| **You have been blocked** message when loading a branded domain page | Branded domains do not include the template or any parameters. When using a branded domain, you must add the template or parameters to the end of the branded domain URL.<br />For example, if 'click.abcdef.com' is your branded domain, using just ' **click.abcdef.com'**, will lead to a **you have been blocked** message.<br />You must add the parameters or templates to the end. For example, click.abcdef.com **/A1bc/dc1234ef** |
+| **err\_cert\_authority\_invalid** error when loading a branded domain page | This error indicates that your branded domain lacks a valid HTTPS certificate because the Certificate Authority is not recognized. Since AppsFlyer certifies your Branded domains with Let's Encrypt the error is likely due to Let's Encrypt not being recognized as a valid Certificate Authority (CA) according to the CAA (Certification Authority Authorization) DNS records of your domain.<br />**Solution**<br />Please perform the following:<br />1. Determine if your domain recognize Let's Encrypt as CA using services such as [this one](https://www.entrust.com/resources/certificate-solutions/tools/caa-lookup).<br />2. Ask your system administrators to update your domain CAA records to include Let's Encrypt as an authorized CA. |
 
 Traits and limitations
 

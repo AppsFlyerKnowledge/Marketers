@@ -10,7 +10,7 @@ Partner integrations can be either active or inactive. An integration is first a
 
 > ❗️ Important!
 >
-> When enabling a partner integration, certain data, including personal information (e.g., Advertising ID, IP address), will, by default, be shared with them by you. Please ensure you have the appropriate legal basis and rights to share this data. You can limit data sharing with a partner by following the instructions provided in the [Aggregated Advanced Privacy framework](https://support.appsflyer.com/hc/articles/36018515798-Aggregated-Advanced-Privacy-framework) and [Privacy preserving methods in the SDK](https://support.appsflyer.com/hc/articles/360001422989-Privacy-preserving-methods-in-the-SDK) articles.
+> When enabling a partner integration, certain data, including personal information (e.g., Advertising ID, IP address), will, by default, be shared with them by you. Please ensure you have the appropriate legal basis and rights to share this data. You can limit data sharing with a partner by following the instructions provided in the Aggregated Advanced Privacy framework and [Privacy preserving methods in the SDK](/docs/apply-privacy-preserving-sdk-methods) articles.
 
 **To get to the partner integration page of the currently selected app:**
 
@@ -24,22 +24,22 @@ The primary integration ( **Activate partner**) is activated on the first integr
 
 | Integration type | Description |
 | --- | --- |
-| **Main integration (** [**Activate partner**](https://support.appsflyer.com/hc/articles/4410395957521#a-activate-partner) **)** | Enables conversions to be attributed and postbacks to be sent to partners |
-| [**Cost**](https://support.appsflyer.com/hc/articles/207040526) (when applicable) | Enables getting data on cost, clicks, and impressions for your campaigns, adsets, ads, and geos/countries |
-| [**Ad revenue**](https://support.appsflyer.com/hc/articles/217490046-Ad-revenue-attribution-guide) (when applicable) | Enables getting data on revenue from your ads |
+| **Main integration (** [**Activate partner**](/docs/set-up-an-integrated-partner#a-activate-partner) **)** | Enables conversions to be attributed and postbacks to be sent to partners |
+| [**Cost**](/docs/roi360-cost-aggregation-overview) (when applicable) | Enables getting data on cost, clicks, and impressions for your campaigns, adsets, ads, and geos/countries |
+| [**Ad revenue**](/docs/roi360-guide-ad-revenue-attribution) (when applicable) | Enables getting data on revenue from your ads |
 | [**SKAN**](/docs/skan-integrated-partners-list) (when applicable) | Enables getting SKAN postbacks from partners |
-| [**Permissions**](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab) | Enables granting permissions for ad networks and agencies to access your data and perform actions in your integration |
+| [**Permissions**](/docs/set-up-an-integrated-partner#permissions-tab) | Enables granting permissions for ad networks and agencies to access your data and perform actions in your integration |
 
 ### Effect of the partner activation setting
 
 The following table presents the impact of partner activation settings on attribution and postbacks in various scenarios.
 
-| Scenario | Activate partner:<br>On | Activate partner: Off |
+| Scenario | Activate partner:<br />On | Activate partner: Off |
 | --- | --- | --- |
-| Attribution and postbacks for new installs, re-attributions, and re-engagements | **Attribution:** Yes<br>**Postbacks:** Yes | **Attribution:** No<br>**Postbacks:** No |
+| Attribution and postbacks for new installs, re-attributions, and re-engagements | **Attribution:** Yes<br />**Postbacks:** Yes | **Attribution:** No<br />**Postbacks:** No |
 | Engagement (click) occurs before deactivation; install/re-attribution/re-engagement occurs after deactivation | Not applicable | The deactivated partner is not attributed. |
-| Clicks and impressions | The engagements can be attributed and displayed in the dashboard. | - The click redirects to a 403 forbidden page.<br>- The engagements cannot be attributed and not displayed in the dashboard. |
-| SKAN attribution | Not applicable.<br>When SKAN attribution is configured, SKAN data is recorded whether **Activate partner** is turned on or off. | |
+| Clicks and impressions | The engagements can be attributed and displayed in the dashboard. | - The click redirects to a 403 forbidden page.<br />- The engagements cannot be attributed and not displayed in the dashboard. |
+| SKAN attribution | Not applicable.<br />When SKAN attribution is configured, SKAN data is recorded whether **Activate partner** is turned on or off. | |
 
 ## Activate a partner integration
 
@@ -112,7 +112,7 @@ You can grant agencies permission to work with your app and run traffic on your 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Active integrations**.
 2. Find the agency and select it.
 3. Go to the **Permissions** tab and turn on **Agency Permissions.**
-4. [Optional] Grant the agency additional [permissions](https://support.appsflyer.com/hc/articles/4410395957521#agency-permissions).
+4. [Optional] Grant the agency additional [permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 > 📘 Note
 >

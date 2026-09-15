@@ -27,7 +27,7 @@ Learn more about [partner integrations](/docs/set-up-an-integrated-partner).
 ### In-app events
 
 1. To send in-app event postbacks to Bidalgo, turn on **In-app event postbacks**.
-2. Set the configuration according to the guidelines [here](https://support.appsflyer.com/hc/articles/4410480904081#predefined-event-mapping).
+2. Set the configuration according to the guidelines [here](/docs/meta-ads-in-app-event-mapping#predefined-event-mapping).
 3. Click **Save**.
 
 ![](https://files.readme.io/b1f38694b090db5e48ed27956684faee39004deae8b86aa532a206aacbd21c38-14238400542353.png)

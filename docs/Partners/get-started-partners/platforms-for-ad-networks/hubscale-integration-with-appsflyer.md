@@ -19,7 +19,7 @@ See below AppsFlyers base attribution link with a detailed explanation per macro
 | --- | --- |
 | https://app.appsflyer.com | AppsFlyer endpoint |
 | app\_id | Application unique ID – dynamic value changed per app promoted |
-| pid | Media source name concatenated with \_int to identify integrated<br>networks |
+| pid | Media source name concatenated with \_int to identify integrated<br />networks |
 | c | Campaign name |
 
 See below what the complete attribution link should look like after you have added additional Hubscale macros:
@@ -28,7 +28,7 @@ See below what the complete attribution link should look like after you have add
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={transaction_id}&af_siteid={affiliate_id}&af_sub5={offer_id}af_ad_id={offer_file_id}&advertising_id={google_aid}&idfa={ios_ifa}
 ```
 
-[AppsFlyer complete list of parameters](https://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters)
+[AppsFlyer complete list of parameters](/docs/about-link-structure-and-parameters)
 
 ## Global postbacks for installs and in-app events:
 
@@ -71,14 +71,14 @@ https://app.appsflyer.com/com.appsflyer?pid=partnername_int&clickid={transaction
 
 | AppsFlyer Parameters | Hubscale Macros | Description |
 | --- | --- | --- |
-| pid | pub\_id | Media source name - for integrated partners and should not be changed. [More details](https://support.appsflyer.com/hc/articles/207447163#partner-id-pid-parameter). |
+| pid | pub\_id | Media source name - for integrated partners and should not be changed. [More details](/docs/about-link-structure-and-parameters#partner-id-pid-parameter). |
 | c | campaign\_name | Campaign name - provided by the advertiser. |
 | clickid | transaction\_id | The Ad network unique click identifier |
 | af\_siteid | pub\_id | Ad Network publisher ID |
 | af\_sub\_siteid | sub\_pub\_id | Ad Sub-Network/Publisher ID |
 | af\_c\_id | campaign\_id | Campaign ID - provided by the advertiser |
-| af\_adset | | Adset Name - provided by the advertiser. Adset is an intermediate level in the hierarchy between Campaign and Ad. [See more](https://support.appsflyer.com/hc/articles/207447163#levels-of-data-granularity) |
-| af\_ad | adv\_name | Ad Name ([see more](https://support.appsflyer.com/hc/articles/207447163#levels-of-data-granularity)) |
+| af\_adset | | Adset Name - provided by the advertiser. Adset is an intermediate level in the hierarchy between Campaign and Ad. [See more](/docs/about-link-structure-and-parameters#levels-of-data-granularity) |
+| af\_ad | adv\_name | Ad Name ([see more](/docs/about-link-structure-and-parameters#levels-of-data-granularity)) |
 | af\_ad\_id | adv\_id | Ad ID |
 | af\_cost\_model | adv\_payout\_model | Cost model - CPI is currently the only supported model |
 | af\_cost\_currency | adv\_payout\_currency | Currency code (example: USD) |

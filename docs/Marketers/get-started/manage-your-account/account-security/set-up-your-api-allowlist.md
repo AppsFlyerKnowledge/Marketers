@@ -64,5 +64,5 @@ You can add or delete IP addresses from the allowlist at any time (whether or no
 ### Allowlist specifications
 
 - To protect your account from unauthorized API calls, the allowlist must be set to **Active** and include at least one IP address or range.
-- The allowlist applies to all [AppsFlyer APIs that utilize the V2.0 token](https://support.appsflyer.com/hc/articles/360004562377#applications-of-the-api-v2-token). Calls from APIs that use the V1.0 API token will be permitted from all API addresses.
+- The allowlist applies to all [AppsFlyer APIs that utilize the V2.0 token](/docs/managing-appsflyer-tokens#applications-of-the-api-v2-token). Calls from APIs that use the V1.0 API token will be permitted from all API addresses.
 - Up to 20 IP addresses or ranges can be added to the allowlist.

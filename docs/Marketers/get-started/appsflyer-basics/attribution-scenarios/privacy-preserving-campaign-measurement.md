@@ -10,23 +10,23 @@ In today's privacy-conscious era, platforms and technologies are increasingly li
 
 AppsFlyer provides the following measurement methods:
 
-- [Install referrer matching](https://support.appsflyer.com/hc/articles/207447053#install-referrer-android-only) (for Android only)
-- [Probabilistic modeling](https://support.appsflyer.com/hc/articles/207447053#probabilistic-modeling)
-- [Deep linking](https://support.appsflyer.com/hc/articles/207447053#deep-link) (for retargeting only)
+- [Install referrer matching](/docs/appsflyer-attribution-model#install-referrer-android-only) (for Android only)
+- [Probabilistic modeling](/docs/appsflyer-attribution-model#probabilistic-modeling)
+- [Deep linking](/docs/appsflyer-attribution-model#deep-link) (for retargeting only)
 
 ### What attribution methods do ad networks support?
 
 **Non-SRN ad networks** can be measured using the additional privacy-preserving attribution methods described in the [FAQ above](/docs/privacy-preserving-campaign-measurement#what-methods-of-attribution-dont-require-collecting-device-ids).
 
-**Most** [**SRNs**](https://support.appsflyer.com/hc/articles/360001546905-Self-reporting-networks-SRNs-) require an advertising ID for measurement; however, a few, as specified below, support other privacy-preserving methods.
+**Most** [**SRNs**](/docs/self-reporting-networks-srns) require an advertising ID for measurement; however, a few, as specified below, support other privacy-preserving methods.
 
 | SRN | Method |
 | --- | --- |
 | Advanced SRNs (such as Tiktok and Snapchat) | Based on clicks and impressions from the Advanced SRN |
-| Meta ads | - [Using AEM for iOS devices](https://support.appsflyer.com/hc/articles/207033826-Meta-ads-integration-setup#aggregate-event-measurement-aem-for-ios)<br>- [Using the following parameters for Android devices:](https://support.appsflyer.com/hc/articles/207033826-Meta-ads-integration-setup#getting-userlevel-data-for-android-installs)  - `gp_referrer`<br>  - `fb_referrer`<br>  - `ig_referrer` |
+| Meta ads | - [Using AEM for iOS devices](/docs/meta-ads-integration-setup#aggregate-event-measurement-aem-for-ios)<br />- [Using the following parameters for Android devices:](/docs/meta-ads-integration-setup#getting-userlevel-data-for-android-installs)  - `gp_referrer`<br />  - `fb_referrer`<br />  - `ig_referrer` |
 | Google Ads | Using the `gbraid` parameter for iOS devices |
-| Apple Search Ads (ASA) | Using [ASA attribution](https://support.appsflyer.com/hc/articles/213747963#asa-attribution) |
-| - Google Ads<br>- Meta Ads<br>- Snapchat<br>- TikTok<br>- X ads<br>- Yahoo! Japan | [SKAN](/docs/skadnetwork-skan-solution-guide) |
+| Apple Search Ads (ASA) | Using [ASA attribution](/docs/apple-ads-integration-setup#asa-attribution) |
+| - Google Ads<br />- Meta Ads<br />- Snapchat<br />- TikTok<br />- X ads<br />- Yahoo! Japan | [SKAN](/docs/skadnetwork-skan-solution-guide) |
 
 ### What retargeting measurement options does AppsFlyer support?
 
@@ -40,7 +40,7 @@ Retargeting attribution can be used with the methods mentioned [above](/docs/pri
 
 View-through is supported using [probabilistic modeling](/docs/appsflyer-attribution-model#probabilistic-modeling). Other methods, such as referrer and deep linking, support click measurement but not view-through.
 
-Learn more about [view-through attribution](https://support.appsflyer.com/hc/articles/207447053#viewthrough-attribution).
+Learn more about [view-through attribution](/docs/appsflyer-attribution-model#viewthrough-attribution).
 
 ### Does deep linking require an advertising ID?
 
@@ -50,7 +50,7 @@ The availability of an advertising ID may affect deep linking behavior depending
 
 - **Direct deep linking:** **no impact**.
 
-The deep link sends existing users directly to a specific activity in your app. As specified in the [table of attribution methods](https://support.appsflyer.com/hc/articles/207447053#attribution-methods), attribution is done using details on the deep link URL, which is directly fed into the SDK.
+The deep link sends existing users directly to a specific activity in your app. As specified in the [table of attribution methods](/docs/appsflyer-attribution-model#attribution-methods), attribution is done using details on the deep link URL, which is directly fed into the SDK.
 - **Indirect deep linking:** **works only if attribution is successful**.
 
 The deep link sends existing users to a specific activity in your app, but the app fails to open directly. When the user opens the app again later, a re-engagement is recorded, and **indirect deep linking is performed. However, this happens only if the attribution is successful** (using the attribution methods [described above](/docs/privacy-preserving-campaign-measurement#what-methods-of-attribution-dont-require-collecting-device-ids)). Therefore, if attribution is successful, deep linking will also work.
@@ -63,7 +63,7 @@ The deep link sends new users to the app store. After the install, the app opens
 In certain privacy-restricted scenarios, measurement coverage may be more limited. AppsFlyer continues to provide meaningful campaign measurement while preserving user privacy.
 
 <Cards>
-  <Card title="Preserving user privacy" href="https://support.appsflyer.com/hc/sections/6551440878097-Preserve-user-privacy">
+  <Card title="Preserving user privacy" href="/docs/preserve-user-privacy">
     Learn more about AppsFlyer's approach to preserving user privacy.
   </Card>
   <Card title="User privacy on the SDK level" href="/docs/additional-sdk-integration-guide#user-privacy">

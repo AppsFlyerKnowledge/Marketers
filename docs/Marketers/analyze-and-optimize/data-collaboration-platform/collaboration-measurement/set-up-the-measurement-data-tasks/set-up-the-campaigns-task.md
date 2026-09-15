@@ -4,11 +4,11 @@ excerpt: "Learn how to configure the campaign source for on-site, off-site, and 
 ---
 At a glance: Learn how to configure the campaign source for on-site, off-site and combined campaigns (on-site and off-site campaigns).
 
-[The campaign source](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#campaign-mapping) connects on-site conversion events to their respective [off-site, on-site, and combined campaigns](https://support.appsflyer.com/hc/articles/38354928391313-Set-up-collaboration-measurement#select-campaign-type-onsite-offsite-or-both), enabling accurate attribution and performance reporting. Unlike other tasks in DCP (such as conversions or engagements), the **Campaigns task is identical for both on-site and off-site campaigns**. This means you follow the same configuration process regardless of the campaign type.
+[The campaign source](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#campaign-mapping) connects on-site conversion events to their respective off-site, on-site, and combined campaigns, enabling accurate attribution and performance reporting. Unlike other tasks in DCP (such as conversions or engagements), the **Campaigns task is identical for both on-site and off-site campaigns**. This means you follow the same configuration process regardless of the campaign type.
 
 ## Prerequisites
 
-Before the Campaigns task can be set up, the collaboration owner needs to assign it to the collaborator who owns the platform where the conversion events are generated. For more information, see [Assign configuration tasks](https://support.appsflyer.com/hc/articles/38354928391313-Set-up-campaign-measurement@assign-configuration-tasks)
+Before the Campaigns task can be set up, the collaboration owner needs to assign it to the collaborator who owns the platform where the conversion events are generated. For more information, see Assign configuration tasks
 
 ## Set up the Campaigns task
 
@@ -40,7 +40,7 @@ To open the **Measurement settings** page, follow these steps:
 
 > 📘 Note
 >
-> - If the **Campaigns** dialog is locked, it means that the **Campaigns** task is assigned to your collaborator, and you cannot view its content. If you are the collaboration owner, you can unlock by [reassigning the task](https://support.appsflyer.com/hc/articles/38354928391313-Set-up-collaboration-measurement#assign-configuration-task) to yourself. However, any previous settings will be deleted, and the task will be reset.
+> - If the **Campaigns** dialog is locked, it means that the **Campaigns** task is assigned to your collaborator, and you cannot view its content. If you are the collaboration owner, you can unlock by reassigning the task to yourself. However, any previous settings will be deleted, and the task will be reset.
 > - If the **Campaigns** pane is grayed out, ask the collaboration owner to assign you the Campaigns task.
 
 ### 3. Set campaign data provision method
@@ -94,7 +94,7 @@ If the conversion source fields are loaded, you can map them to the DCP fields.
 To map the campaigns' custom source fields, follow these steps:
 
 1. Map the fields under **Source fields** to their corresponding fields under **DCP fields**.
-   - For a list of fields and descriptions, see [The campaigns scheme](https://support.appsflyer.com/hc/articles/article_number).
+   - For a list of fields and descriptions, see The campaigns scheme.
 2. Click **Save**. The **campaign_mapping source created** message is displayed.
 
 ### 6. Align collaborator name

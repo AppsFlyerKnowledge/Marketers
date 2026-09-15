@@ -8,7 +8,7 @@ At a glance: CleverTap is a modern, integrated retention cloud that empowers dig
 
 > ❗️ Important!
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up CleverTap
 
@@ -34,7 +34,7 @@ The Integration Tab is divided into different sections as described below.
 
 This toggle must be enabled for as long as you work with the partner.
 
-Learn more about [partner activation](https://support.appsflyer.com/hc/articles/360000844778#activating-a-partner).
+Learn more about [partner activation](/docs/partner-activation-deactivation#activating-a-partner).
 
 ### General settings
 
@@ -47,7 +47,7 @@ CleverTap connects with AppsFlyer via a unique Account Token, Region, Account Pa
 > To allow sending postbacks to CleverTap, make sure to complete **both** of the following steps:
 >
 > - Complete at least **one** of the following fields: account\_token, account\_passcode, or account\_id
-> - In the AppsFlyer SDK, set the value of Customer User ID ( [iOS, Android](https://support.appsflyer.com/hc/articles/207032016#setting-the-cuid)). See [CleverTap documentation](https://developer.clevertap.com/docs/appsflyer#section-step-2-integration) for guidelines on which parameter is recommended to use as your Customer User ID. Note that in case Customer User ID is empty, postbacks won't be sent to CleverTap.
+> - In the AppsFlyer SDK, set the value of Customer User ID ( [iOS, Android](/docs/customer-user-id-field-cuid#setting-the-cuid)). See [CleverTap documentation](https://developer.clevertap.com/docs/appsflyer#section-step-2-integration) for guidelines on which parameter is recommended to use as your Customer User ID. Note that in case Customer User ID is empty, postbacks won't be sent to CleverTap.
 
 ![CleverTap_msc_new_2.png](https://files.readme.io/dd3f79fdce7dc4d48605f18021e328754d3e78aae98cb5214466c7489fd29fdf-360002305685.png)
 
@@ -78,7 +78,7 @@ At the very top of the “Settings” view, you’ll see your CleverTap Account 
 
 ### Default postbacks
 
-AppsFlyer can send automatic postbacks to CleverTap following user installs. Use this section to define the source of the users that the postbacks are sent to for each event. Learn more about [default postbacks](https://support.appsflyer.com/hc/articles/4410395957521#default%20postbacks).
+AppsFlyer can send automatic postbacks to CleverTap following user installs. Use this section to define the source of the users that the postbacks are sent to for each event. Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default%20postbacks).
 
 ![clevertap-default-postbacks_en-us.png](https://files.readme.io/58424df9f5e8ba0e30e2390e26e0ecec7fc827baa43f3b812181caa2283dca0a-360014085238.png)
 
@@ -90,7 +90,7 @@ AppsFlyer can send automatic postbacks to CleverTap following user installs. Use
 
 In this section, you map AppsFlyer events with the partner via postbacks.
 
-Learn more about [in-app event postbacks.](https://support.appsflyer.com/hc/articles/4410395957521#g-in-app-event-postback-configuration)
+Learn more about [in-app event postbacks.](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration)
 
 **To configure in-app events postbacks:**
 
@@ -122,4 +122,4 @@ Permissions are not available for CleverTap.
 
 ## Measure CleverTap owned media
 
-Since CleverTap is a platform that uses emails, SMS, push notifications, etc., for marketing automation purposes, you can use [AppsFlyer OneLink](https://support.appsflyer.com/hc/articles/115005248543-OneLink-overview) as a solution for measuring owned media that originates from CleverTap.
+Since CleverTap is a platform that uses emails, SMS, push notifications, etc., for marketing automation purposes, you can use [AppsFlyer OneLink](/docs/onelink-guide) as a solution for measuring owned media that originates from CleverTap.

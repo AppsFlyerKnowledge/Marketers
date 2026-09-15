@@ -2,11 +2,13 @@
 title: "Postback macros for analytics partners"
 excerpt: "Use macros as part of the postbacks sent to analytics partners to get relevant attribution data."
 ---
+Use macros as part of the postbacks sent to analytics partners to get relevant attribution data.
+
 ## Postbacks for analytics partners
 
 Analytics partners can define the content and endpoints of postbacks sent to them, as part of their integration with AppsFlyer. Postbacks relate to app user engagement like installs, in-app events, re-engagements, and so on.
 
-* **Postback configuration:** To request changes to your postback settings, use the partner assistant widget to open a ticket, or contact your AppsFlyer partner development manager.
+* **Postback configuration:** To request changes to your postback settings, use the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif) to open a ticket, or contact your AppsFlyer partner development manager.
 * **Postback types**: Postbacks are available for install and in-app events.
 
 ## Postback macros
@@ -54,15 +56,15 @@ When included in a postback, macros are replaced with user-relevant data. For ex
 | platform | SDK | Device platform: iOS, Android, or Windows Mobile | Yes |  |
 | retargeting\_conversion\_type | SDK | A flag marking if this is a re-attribution or re-engagement | Yes |  |
 | pid | AF | Ad network that the install or in-app event is attributed to | Yes |  |
-| af\_ad | Link | Ad Name ( [see more](https://support.appsflyer.com/hc/articles/207447163#levels-of-data-granularity)) provided by the advertiser/publisher | Yes | Yes |
+| af\_ad | Link | Ad Name ([see more](/docs/about-link-structure-and-parameters#levels-of-data-granularity)) provided by the advertiser/publisher | Yes | Yes |
 | af\_ad\_id | Link | Provided by the advertiser/publisher | Yes | Yes |
-| af\_adset | Link | - Provided by the advertiser/publisher.<br/>- Adset is an intermediate level in the hierarchy between Campaign and Ad. [See more](https://support.appsflyer.com/hc/articles/207447163#levels-of-data-granularity) | Yes | Yes |
+| af\_adset | Link | * Provided by the advertiser/publisher.<br />* Adset is an intermediate level in the hierarchy between Campaign and Ad. [See more](/docs/about-link-structure-and-parameters#levels-of-data-granularity) | Yes | Yes |
 | af\_adset\_id | Link | Provided by the advertiser/publisher | Yes | Yes |
 | c | Link | Provided by the advertiser/publisher. Campaign names that exceed 100 characters in length are displayed on the dashboard as "c\_name\_exceeded\_max\_length" | Yes | Yes |
 | af\_c\_id | Link | Provided by the advertiser/publisher | Yes | Yes |
-| af\_siteid | Link | - Unique ID that identifies the publisher that displays the ad. [Learn more](https://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters#site-id-parameter) | Yes | Yes |
-| af\_subsite\_id | Link | - Ad sub-network/Publisher ID. <br/>- If in addition to the main publisher (site ID), there is a sub-publisher, or you want to include additional info, such as ad type/placement within the app, like banner, interstitial, video, etc. use af\_sub\_siteid. For example: af\_sub\_siteid =ABCD\_4567 | Yes | Yes |
-| af\_ad\_type | Link | Use the following naming convention:<br/>- **text:** an ad unit containing only text, for example a search result<br/>- **banner:** a basic format that appears at the top or bottom of the device screen<br/>- **interstitial:** a full-page ad that appears during breaks in the current experience<br/>- **video:** a standard video, that is non-rewarded<br/>- **rewarded\_video:** an ad unit offering in-app rewards in exchange for watching a video<br/>- **playable:** an ad unit containing an interactive preview of the app experience<br/>- **sponsored\_content:** a link included in a piece of sponsored content, like an advertorial article<br/>- **audio:** an audio ad | Yes | Yes |
+| af\_siteid | Link | * Unique ID that identifies the publisher that displays the ad. [Learn more](/docs/about-link-structure-and-parameters#site-id-parameter) | Yes | Yes |
+| af\_subsite\_id | Link | * Ad sub-network/Publisher ID.<br />* If in addition to the main publisher (site ID), there is a sub-publisher, or you want to include additional info, such as ad type/placement within the app, like banner, interstitial, video, etc. use af\_sub\_siteid. For example: af\_sub\_siteid =ABCD\_4567 | Yes | Yes |
+| af\_ad\_type | Link | Use the following naming convention:<br /><br />* **text:** an ad unit containing only text, for example a search result<br />* **banner:** a basic format that appears at the top or bottom of the device screen<br />* **interstitial:** a full-page ad that appears during breaks in the current experience<br />* **video:** a standard video, that is non-rewarded<br />* **rewarded\_video:** an ad unit offering in-app rewards in exchange for watching a video<br />* **playable:** an ad unit containing an interactive preview of the app experience<br />* **sponsored\_content:** a link included in a piece of sponsored content, like an advertorial article<br />* **audio:** an audio ad | Yes | Yes |
 
 ## In-app event only macros
 
@@ -72,7 +74,7 @@ The examples that follow relate to in-app event postbacks available to partners.
 
 Event postback template `&event=(event)&json=(encode)` was translated to the following postback for a specific af\_purchase event:
 
-```http
+```
 &event=af_purchase&json=%7B%22af_quantity%22%3A1%2C%22
 af_revenue%22%3A%2212000%22%2C%22af_currency%22%3A%22USD%22%2C%22af_content_id%22%3A%221107%22%2C%22af_content_type%22%3A%22default_type%22%7D%0A
 ```
@@ -81,49 +83,38 @@ The decoded JSON value of this postback is `{"af_quantity":1,"af_revenue":"12000
 
 ### Encoded values
 
-Postbacks may contain irregular characters, which are not alpha-numerical. To transfer these values correctly via postbacks, AppsFlyer URL-encodes non-alpha-numerical values.
-
+Postbacks may contain irregular characters, which are not alpha-numerical. To transfer these values correctly via postbacks, AppsFlyer URL-encodes non-alpha-numerical values.  
 To decode or encode a postback use [an encoding web service](https://www.urldecoder.org/).
 
 ## Sample postbacks
 
 ### General install postback examples
+<Accordion title="Android">
 
-<Tabs>
-<Tab title="Android">
+``
+```[`http://YourCompanyDomain.com?pid=(media](http://YourCompanyDomain.com?&amp;pid=(media)_source)&amp;advertising_id=(advertiserId)&amp;android_id=(android-id)&amp;install_time=(install-unix-ts)
 
-```http
-http://YourCompanyDomain.com?pid=(media_source)&advertising_id=(advertiserId)&android_id=(android-id)&install_time=(install-unix-ts)
-```
+</Accordion>
+<Accordion title="iOS">
 
-</Tab>
-<Tab title="iOS">
+``
+``http://YourCompanyDomain.com?`[`pid=(media](http://YourCompanyDomain.com?&amp;pid=(media) source)&amp;device_ip=(ip)&amp;idfa=(idfa)&amp;install_time=(install-unix-ts)
 
-```http
-http://YourCompanyDomain.com?pid=(media source)&device_ip=(ip)&idfa=(idfa)&install_time=(install-unix-ts)
-```
-
-</Tab>
-</Tabs>
+</Accordion>
 
 ### General in-app event postback examples
+<Accordion title="Android">
 
-<Tabs>
-<Tab title="Android">
+``
+``http://YourCompanyDomain.com?`[`pid=(media](http://YourCompanyDomain.com?&amp;pid=(media)_source)&amp;device_ip=(ip)&amp;advertising_id=(advertiserId)&amp;android_id=(android-id)&amp;install_time=(install-unix-ts)&amp;event_name=(event-name)&amp;currency=(currency)&amp;json=(event-value)
 
-```http
-http://YourCompanyDomain.com?pid=(media_source)&device_ip=(ip)&advertising_id=(advertiserId)&android_id=(android-id)&install_time=(install-unix-ts)&event_name=(event-name)&currency=(currency)&json=(event-value)
-```
+</Accordion>
+<Accordion title="iOS">
 
-</Tab>
-<Tab title="iOS">
+``
+``http://YourCompanyDomain.com?`[`pid=(media](http://YourCompanyDomain.com?&amp;pid=(media)_source)&amp;device_ip=(ip)&amp;idfa=(idfa)&amp;install_time=(install-unix-ts)&amp;event_name=(event-name)&amp;currency=(currency)&amp;json=(event-value)
 
-```http
-http://YourCompanyDomain.com?pid=(media_source)&device_ip=(ip)&idfa=(idfa)&install_time=(install-unix-ts)&event_name=(event-name)&currency=(currency)&json=(event-value)
-```
-
-</Tab>
-</Tabs>
+</Accordion>
 
 ## In-app event postback example
 
@@ -132,10 +123,10 @@ http://YourCompanyDomain.com?pid=(media_source)&device_ip=(ip)&idfa=(idfa)&insta
 * Event Name: af\_revenue
 * Event Revenue: 120.00
 * Event Currency: USD
-* Event Value: `{"af_quantity":1,"af_revenue":"120","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}`
+* Event Value: `{"af\_quantity":1,"af\_revenue":"120","af\_currency":"USD","af\_content\_id":"1107","af\_content\_type":"default\_type"}`
 
 **Postback:**
 
-```http
+```
 http://YourCompanyDomain.com?pid=(media_source)&device_ip=38.166.144.142&advertising_id=121sxxxx-xxxx-xxxx-xxxx-52454bd7500b&android_id=9aaeecc4455xxxxx&install_time=1451923560&event_name=af_purchase&currency=USD&revenue=120.00&json=%7B%22af_quantity%22%3A1%2C%22 />af_revenue%22%3A%22120.10%22%2C%22af_currency%22%3A%22USD%22%2C%22af_content_id%22%3A%221107%22%2C%22af_content_type%22%3A%22default_type%22%7D%0A
 ```

@@ -13,13 +13,13 @@ Advertisers can grant the following app-level permissions:
 | Permission type | Reporting tool | Limitations |
 | --- | --- | --- |
 | Aggregated analytics reporting | [Cohort analytics data via DataLocker](/docs/cohort-analytics-via-data-locker) | X Ads campaign data isn't available to API partners due to their restrictions. |
-| SKAN reporting | - [SKAN performance reporting](https://support.appsflyer.com/hc/articles/360014104157)<br>  <br>- [SKAN aggregate postback reporting](https://support.appsflyer.com/hc/articles/360016646557) | -- |
+| SKAN reporting | - [SKAN performance reporting](/docs/skan-aggregated-performance-report-api)<br />  <br />- [SKAN aggregate postback reporting](/docs/skan-aggregated-postback-arrival-date-api) | -- |
 
 ### Considerations
 
 - **Advertiser perspective**   - Advertisers can grant the API partner permissions as listed in the preceding table.
 - **Partner perspective**
-  - Extract data by API. **Note**: Security is implemented via an authentication [token](https://support.appsflyer.com/hc/articles/360004562377-Managing-API-tokens) available in the AppsFlyer dashboard. The same token is valid for all apps and advertisers.
+  - Extract data by API. **Note**: Security is implemented via an authentication [token](/docs/managing-appsflyer-tokens) available in the AppsFlyer dashboard. The same token is valid for all apps and advertisers.
   - Get data via Data Locker
   - Advertisers can revoke permissions to access their app data. This won't impact your partner credentials.
 

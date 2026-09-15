@@ -29,11 +29,11 @@ To configure your campaigns with StartApp, follow the steps below.
 
 StartApp's configuration window includes 4 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
-For a detailed description of the Partner Configuration Window Header, click [here](https://support.appsflyer.com/hc/articles/4410395957521#about-the-integrated-partner-page).
+For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
 > 👍 Tip
 >
-> - The [General Settings](https://support.appsflyer.com/hc/articles/4410395957521#d-general%20settings) step in the Integration tab is **mandatory** for all partners
+> - The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
 > - All the rest of the steps are either descriptive or **optional**
 
 ## Integration tab
@@ -44,7 +44,7 @@ The Integration Tab is divided into different sections as described below.
 
 On the **first visit** here, you will need to turn on the **Activate Partner** toggle to enable setup of the Integration parameters. The toggle MUST be ON for as long as you work with the partner.
 
-For more details about partner activation please click [here](https://support.appsflyer.com/hc/articles/360000844778).
+For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 
 > 📘 Note
 >
@@ -79,9 +79,9 @@ In this section, you can map your AppsFlyer events with StartApp via postbacks.
 
 | Parameter Name | Description |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app or from server-to-server events.<br>**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on StartApp's side.<br>Obtain the corresponding Event ID from StartApp and set it in the text field. |
-| **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af_revenue** parameter.<br>**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
+| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app or from server-to-server events.<br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
+| **Partner Event Identifier** | The unique name or ID of each event as defined on StartApp's side.<br />Obtain the corresponding Event ID from StartApp and set it in the text field. |
+| **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af_revenue** parameter.<br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 ## Attribution link tab
 
@@ -104,18 +104,18 @@ Adding parameters to the attribution link here enables you to later perform thor
 - **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns StartApp.
 
 **Attribution link parameter:** af_ad
-- **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the subsite ID parameter, to avoid [exceeding the site ID](https://support.appsflyer.com/hc/articles/115005099063-What-are-the-Exceeded-Media-Sources-#exceeded_siteid_limit) limitations.
+- **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the subsite ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations.
 
 **Attribution link parameters:** af_siteid and af_sub_siteid
 - **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.
 
 **Attribution link parameters:** af_sub1, af_sub2, af_sub3, af_sub4, af_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about [**AppsFlyer's attribution link structure and parameters**](https://support.appsflyer.com/hc/articles/207447163) .
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about [**AppsFlyer's attribution link structure and parameters**](/docs/about-link-structure-and-parameters) .
 
 ### Retargeting settings
 
-When enabled, AppsFlyer recognizes a link as a [retargeting](https://support.appsflyer.com/hc/articles/207033786-AppsFlyer-s-Retargeting-Attribution) attribution link, rather than a user acquisition link, by adding the `&is_retargeting=true` to the click recording link. Note that retargeting is currently only supported for click-through and not view-through attribution.
+When enabled, AppsFlyer recognizes a link as a [retargeting](/docs/retargeting-attribution-guide) attribution link, rather than a user acquisition link, by adding the `&is_retargeting=true` to the click recording link. Note that retargeting is currently only supported for click-through and not view-through attribution.
 
 **Attribution link parameter:** is_retargeting.
 
@@ -126,14 +126,14 @@ The following setup below is displayed when retargeting is enabled.
 Select _**standard attribution link**_ option if:
 
 - You don't need to deep link with the URL or
-- Plan to use only [URI schemes](https://support.appsflyer.com/hc/articles/208874366#general-settings) for deep linking
+- Plan to use only [URI schemes](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings) for deep linking
 
 select _**Use OneLink**_ for:
 
 - Using a single link for both Android and iOS apps or
 - Deep linking using Universal or app links
 
-Note that selecting OneLink changes the click recording link from app specific to a [OneLink URL](https://support.appsflyer.com/hc/articles/115005248543-OneLink-Overview).
+Note that selecting OneLink changes the click recording link from app specific to a [OneLink URL](/docs/onelink-guide).
 
 2. Deep Link URL
 
@@ -141,7 +141,7 @@ Use this field if the link is meant to deep link users to any specific activity 
 
 **Attribution link parameter:** af_dp
 
-You can find more information about AppsFlyer [deep linking solution in this guide.](https://support.appsflyer.com/hc/articles/208874366-Deep-Linking-Step-by-Step)
+You can find more information about AppsFlyer [deep linking solution in this guide.](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink)
 
 3. Re-engagement Window
 
@@ -155,7 +155,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 **Attribution link parameter:** af_click_lookback
 
-More details about the [click lookback window here](https://support.appsflyer.com/hc/articles/208338403-What-is-AppsFlyer-s-Configurable-Attribution-Lookback-Window-).
+More details about the [click lookback window here](/docs/set-up-lookback-windows).
 
 ### Click attribution link
 
@@ -169,7 +169,7 @@ You can customize this value to 1-23 hours or 1-7 days.
 
 **Attribution link parameter:** af_viewthrough_lookback
 
-More details about the [view-through attribution here](https://support.appsflyer.com/hc/articles/208338403-What-is-AppsFlyer-s-Configurable-Attribution-Lookback-Window-).
+More details about the [view-through attribution here](/docs/set-up-lookback-windows).
 
 ### Impressions attribution link
 
@@ -199,4 +199,4 @@ Use these toggles to give the ad network permissions to handle its own configura
 - _**Allow access to your aggregate revenue data**_ - only to the revenue data attributed to the partner
 - _**Allow access to your Protect360 dashboard**_ - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about granting [ad network permissions](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).

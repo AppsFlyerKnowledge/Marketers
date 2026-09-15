@@ -32,14 +32,14 @@ https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={click_id}&af_si
 
 See complete parameter lists for:
 
-- [AppsFlyer](https://support.appsflyer.com/hc/articles/207447163)
+- [AppsFlyer](/docs/about-link-structure-and-parameters)
 - [Trackier](https://trackier.com/support/kb/tracking-macros/)
 
 | AppsFlyer parameter | Trackier macro | Description |
 | --- | --- | --- |
-| &clickid= | {click\_id} | Request the ID for each user session |
-| &af\_siteid= | {publisher\_id} | ID of the affiliate promoting an offer |
-| &af\_c\_id= | {camp\_id} | Offer ID |
+| &clickid= | `{click\_id}` | Request the ID for each user session |
+| &af\_siteid= | `{publisher\_id}` | ID of the affiliate promoting an offer |
+| &af\_c\_id= | `{camp\_id}` | Offer ID |
 
 ## Postback URLs for install and in-app events
 
@@ -82,8 +82,8 @@ https://yourdomain.com/acquisition?click_id={click_id}&security_token=xxxxxxxxxx
 
 | AppsFlyer Base URL | Description |
 | --- | --- |
-| yourdomain.com | - Network ID (domain) name<br>- Provided by Trackier |
-| event-name | - In-app event name<br>- Defined by the advertiser |
+| yourdomain.com | - Network ID (domain) name<br />- Provided by Trackier |
+| event-name | - In-app event name<br />- Defined by the advertiser |
 | security\_token | Provided by Trackier |
 | Country code, advertising ID, IDFA, etc. | [Optional] Attribution information that can be added to a postback |
 

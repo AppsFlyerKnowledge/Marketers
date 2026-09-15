@@ -6,7 +6,7 @@ mParticle, an AppsFlyer integrated partner, collects customer data and sends it 
 
 > ❗️ Important
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Event integrations
 
@@ -100,7 +100,7 @@ You are now taken to the Setup screen, where you can continue the configuration 
 
 AppsFlyer allows you to access the user attribution data in real-time directly at the SDK level. It enables you to customize the landing page a user sees on the very first app open after a fresh app install. This is commonly referred to as “deferred” deep linking.
 
-For more details of deferred deep linking, click [here](https://support.appsflyer.com/hc/articles/208874366-OneLink-links-and-experiences).
+For more details of deferred deep linking, click [here](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink).
 
 AppsFlyer conversion data contains a parameter called `is_First_Launch`. The value of `is_First_Launch` is 'true' on first launches only, and 'false' on all following launches. You can use this parameter to determine on every launch if the app should defer deep link to the user or not.
 
@@ -205,12 +205,12 @@ if let conversionData = params?[MPKitAppsFlyerConversionResultKey] as? [AnyHasha
 
 AppsFlyer uses iOS _**UserDefaults**_ and Android _**Shared Preferences**_ to indicate whether the user is opening the app for the first time and should be redirected to the appropriate page, or if the app has already been opened and the user has already been directed to that page. To do this, the `alreadyLoggedAppsflyerConversionData` value is read and written to UserDefaults/ SharedPreferences, so that the value _**af_dp**_ is not looked at on the first launch.
 
-For more details about serving personalized content on deep linking [click here](https://support.appsflyer.com/hc/articles/208874366).
+For more details about serving personalized content on deep linking [click here](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink).
 
 ## Enabling AppsFlyer uninstall measurement in mParticle
 
-AppsFlyer uninstall measurement isn't automatically enabled with the mParticle-AppsFlyer SDK kit. To measure app uninstalls, call the AppsFlyer methods directly by following the AppsFlyer [uninstall measurement documentation](https://support.appsflyer.com/hc/articles/210289286-Uninstall-Measurement).
+AppsFlyer uninstall measurement isn't automatically enabled with the mParticle-AppsFlyer SDK kit. To measure app uninstalls, call the AppsFlyer methods directly by following the AppsFlyer uninstall measurement documentation.
 
 **To implement uninstall measurement for either iOS or Android:**
 
-- Call AppsFlyer methods directly by following our [uninstall measurement documentation](https://support.appsflyer.com/hc/articles/210289286-Uninstall-Measurement)
+- Call AppsFlyer methods directly by following our uninstall measurement documentation

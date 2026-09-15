@@ -10,7 +10,7 @@ OneSignal delivers 8 billion messages every day across the globe. Powered by sup
 
 > ❗️ Important!
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up OneSignal
 
@@ -135,7 +135,7 @@ The Integration Tab is divided into different sections as described below.
 
 Must be enabled for as long as you work with the partner.
 
-Learn more about [partner activation](https://support.appsflyer.com/hc/articles/360000844778#activating-a-partner).
+Learn more about [partner activation](/docs/partner-activation-deactivation#activating-a-partner).
 
 #### General settings
 
@@ -153,7 +153,7 @@ Your OneSignal app ID is available in the OneSignal platform under **Settings** 
 
 AppsFlyer can send automatic postbacks to OneSignal following user installs. Use this section to define the source of the users that the postbacks are sent to for each event.
 
-Learn more about [default postbacks](https://support.appsflyer.com/hc/articles/4410395957521#default%20postbacks).
+Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default%20postbacks).
 
 **To send postbacks for any user that downloads the app to OneSignal**, select **All media sources, including organic**.
 

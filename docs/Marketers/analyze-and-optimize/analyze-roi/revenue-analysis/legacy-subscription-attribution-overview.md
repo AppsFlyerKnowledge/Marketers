@@ -4,7 +4,7 @@ excerpt: "Learn how to record subscriptions and subscription renewals to highlig
 ---
 > 🚧 Legacy Feature
 >
-> This is a legacy feature. Learn more about the new, fully automatic, and improved [subscription revenue mechanism](https://support.appsflyer.com/hc/articles/4621716453009).
+> This is a legacy feature. Learn more about the new, fully automatic, and improved subscription revenue mechanism.
 
 **At a glance:** Record subscriptions and subscription renewals to help you to highlight successful campaigns and calculate revenue and ROI.
 
@@ -20,7 +20,7 @@ Select a subscription recording method from those listed in the table that follo
 
 | Topic | Server-to-Server | In-App Events |
 | --- | --- | --- |
-| Event dependence on the app | The event is [sent from the server](https://support.appsflyer.com/hc/articles/4411049918865) and is not dependent on app launch | The event is [sent by the app](https://support.appsflyer.com/hc/articles/4411039135121) which means that the app must be launched |
-| Implementation | - Requires backend logic to handle subscriptions<br>- Requires backend logic to send events to AppsFlyer using API | - Implemented using the SDK<br>- Can be implemented once in the app for all users |
-| Data accuracy | - The event is sent in real-time at the time of subscription creation or renewal<br>- When sending a set of events simultaneously, you still have control over the event timestamp<br>- Accurate subscription and subscription renewal timestamps<br>- Accurate revenue data | - Events are only sent when the app is launched<br>- Subscription time and event time might differ<br>- Less control over the event<br>- Some events might be missing<br>- Revenue data might not be accurate |
-| Identifying subscribing users | Requires you to cross-reference data in order to identify the actual user for whom a subscription was renewed | - Easy to identify the user for whom a subscription is created or renewed<br>- The SDK allows you to easily identify the user |
+| Event dependence on the app | The event is [sent from the server](/docs/legacy-subscription-attribution-server-to-server-events) and is not dependent on app launch | The event is [sent by the app](/docs/legacy-subscription-attribution-in-app-event) which means that the app must be launched |
+| Implementation | - Requires backend logic to handle subscriptions<br />- Requires backend logic to send events to AppsFlyer using API | - Implemented using the SDK<br />- Can be implemented once in the app for all users |
+| Data accuracy | - The event is sent in real-time at the time of subscription creation or renewal<br />- When sending a set of events simultaneously, you still have control over the event timestamp<br />- Accurate subscription and subscription renewal timestamps<br />- Accurate revenue data | - Events are only sent when the app is launched<br />- Subscription time and event time might differ<br />- Less control over the event<br />- Some events might be missing<br />- Revenue data might not be accurate |
+| Identifying subscribing users | Requires you to cross-reference data in order to identify the actual user for whom a subscription was renewed | - Easy to identify the user for whom a subscription is created or renewed<br />- The SDK allows you to easily identify the user |

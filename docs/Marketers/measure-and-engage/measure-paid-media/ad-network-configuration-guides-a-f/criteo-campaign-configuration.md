@@ -31,7 +31,7 @@ At a glance: Criteo, an AppsFlyer ad network integrated partner, drives growth t
 
 On the **first visit**, you will need to toggle ON the _**Activate Partner**_ button to enable the setup of integration tab parameters. The toggle MUST be ON for as long as you work with the partner.
 
-For more details about partner activation please click [here](https://support.appsflyer.com/hc/articles/360000844778).
+For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 
 > 📘 Note
 >
@@ -60,9 +60,9 @@ In this section, map your AppsFlyer events with Criteo via postbacks.
 
 | Parameter Name | Description |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.<br>**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on Criteo's side.<br>Obtain the corresponding Event ID from Criteo and set in the text field. |
-| **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af_revenue** parameter.<br>**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
+| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.<br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
+| **Partner Event Identifier** | The unique name or ID of each event as defined on Criteo's side.<br />Obtain the corresponding Event ID from Criteo and set in the text field. |
+| **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af_revenue** parameter.<br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 > 🚧 Warning
 >
@@ -70,27 +70,27 @@ In this section, map your AppsFlyer events with Criteo via postbacks.
 
 ## Attribution link tab
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](https://support.appsflyer.com/hc/articles/115005248543-OneLink-overview).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).
 
-[Learn more about attribution link structure and parameters](https://support.appsflyer.com/hc/articles/207447163).
+[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
 
-**To generate an attribution link,** follow [these instructions](https://support.appsflyer.com/hc/articles/4410395957521#attribution-link-tab).
+**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 ## Cost tab
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](https://support.appsflyer.com/hc/articles/207040526-Ad-cost-measurement-guide#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features.
+AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features.
 
 > 📘 Note
 >
 > * Cost data requires an ROI360 subscription.
 > * Cost data from Criteo can be received only for downloads coming from Google Play or Apple App Store. For Android, cost data for third-party Android app stores isn't supported.
-> * Agency cost is only available via [click](https://support.appsflyer.com/hc/articles/360008981698); not via API integration.
+> * Agency cost is only available via [click](/docs/view-aggregated-cost-data-for-attribution-links); not via API integration.
 
 **To enable the cost API**:
 
-* Follow [these integration instructions](https://support.appsflyer.com/hc/articles/360008850257#enable-cost-api).
+* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
 
-[View your cost API status](https://support.appsflyer.com/hc/articles/360008850257#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 ## Ad revenue tab
 
@@ -112,4 +112,4 @@ Ad Network Permissions
 * _**Allow access to your aggregate revenue data**_ - only to the revenue data attributed to the partner
 * _**Allow access to your Protect360 dashboard**_ - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about granting [ad network permissions](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).

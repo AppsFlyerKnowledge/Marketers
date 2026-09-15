@@ -20,9 +20,12 @@ Full asset-level performance reporting is provided, including all key performanc
 
 Standard Creative ETL uses Data Locker to send your reporting data to cloud storage. You can choose from a range of storage destinations, including an AppsFlyer-owned bucket in Amazon Web Services (AWS), or your own storage in AWS, Google Cloud Storage (GCS), Yandex, BigQuery, Snowflake, and more. Data Locker supports multiple destinations, you can send all data to one or more locations, route specific data to certain destinations, and customize delivery to your needs.
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > Standard Creative ETL has a fixed schema and doesn't support in-app events, AI dimensions, or retargeting/unified breakdowns. For a fully customizable schema, see [Custom Creative ETL](#custom-creative-etl) below.
+
 
 #### Get started
 
@@ -30,11 +33,11 @@ This section describes how to set up Data Locker for Creative Optimization repor
 
 **Prerequisite**
 
-- A Creative Optimization Premium subscription (contact your AppsFlyer customer success manager)
+* A Creative Optimization Premium subscription (contact your AppsFlyer customer success manager)
 
 **To set up Data Locker:**
 
-1. Follow the [Data Locker setup instructions](https://support.appsflyer.com/hc/articles/360017603577).
+1. Follow the [Data Locker setup instructions](/docs/data-locker-cloud-service-setup).
 2. When setting up Data Locker, select **Creative Optimization** under **Select reports** on the Data Locker configuration page.
 
 #### Edit Data Locker configuration
@@ -43,20 +46,22 @@ This section describes how to add Creative Optimization reporting to an existing
 
 **To add Creative Optimization reporting to Data Locker:**
 
-1. In AppsFlyer, go to **Export** \> **Data Locker**.
+1. In AppsFlyer, go to **Export** > **Data Locker**.
 2. On the Data Locker configuration page, under **Select reports**, select **Creative Optimization**.
 
 #### Data freshness
 
 Once configured, the Creative Optimization report streams to Data Locker once per day. Each delivery includes data for the last 30 days, streamed daily at UTC+12. The exact local time depends on your time zone:
 
-- New York: UTC+12 − 5 = 7:00 AM
-- Berlin: UTC+12 + 1 = 1:00 PM
-- Shanghai: UTC+12 + 8 = 8:00 PM
+* New York: UTC+12 − 5 = 7:00 AM
+* Berlin: UTC+12 + 1 = 1:00 PM
+* Shanghai: UTC+12 + 8 = 8:00 PM
 
 #### Available data
 
 The following Creative data is available in Data Locker.
+
+
 
 | Field | Type |
 | --- | --- |
@@ -120,19 +125,24 @@ The following Creative data is available in Data Locker.
 | partner\_installs | String |
 | partner\_ecpi | String |
 
+
+
 See [definitions for standard metrics and metrics unique to Creative Optimization](/docs/creative-optimization-guide#standard-metrics-and-dimensions).
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > When an ad has no available preview, the `asset_link` and `creative` columns won't be populated.
 
+
 The following data is **not** available in Standard Creative ETL:
 
-- Custom dimensions
-- Custom metrics
-- In-app events
-- AI data (elements and scenes)
-- Retargeting data
+* Custom dimensions
+* Custom metrics
+* In-app events
+* AI data (elements and scenes)
+* Retargeting data
 
 ### Custom Creative ETL
 
@@ -140,18 +150,18 @@ Custom Creative ETL gives you full control over your report schema. You configur
 
 Unlike Standard Creative ETL's fixed schema, Custom Creative ETL lets you build reports exactly the way you need them:
 
-- **Full in-app event data**, include up to 30 in-app events per report, with sub-metrics for event count, unique users, revenue, and cost per action (CPA).
-- **Attribution type breakdowns**, report on User Acquisition, Retargeting, or a Unified view combining both.
-- **AI dimensions**, include AI-generated creative tags (auto-tags and custom dimensions) alongside standard performance data.
-- **Self-serve setup**, create, edit, and manage reports directly in the Creative ETL UI, with no backend configuration or customer success manager involvement required.
+* **Full in-app event data**, include up to 30 in-app events per report, with sub-metrics for event count, unique users, revenue, and cost per action (CPA).
+* **Attribution type breakdowns**, report on User Acquisition, Retargeting, or a Unified view combining both.
+* **AI dimensions**, include AI-generated creative tags (auto-tags and custom dimensions) alongside standard performance data.
+* **Self-serve setup**, create, edit, and manage reports directly in the Creative ETL UI, with no backend configuration or customer success manager involvement required.
 
 #### Before you begin
 
 Before setting up Custom Creative ETL, make sure the following are in place:
 
-- **Creative Optimization Premium subscription.** Custom Creative ETL is available exclusively on the Premium plan. Contact your AppsFlyer representative to confirm your subscription.
-- **Admin permissions.** Only admin users can create, edit, or delete ETL report configurations.
-- **Data Locker destination.** Custom Creative ETL delivers data to a Data Locker connection. You must have at least one connection already configured, or create one as part of the report setup (see Step 1 below). Supported destinations include AWS S3, GCS, BigQuery, Snowflake, Azure Blob [beta], and Yandex [beta]. See [Set up a Data Locker connection](https://support.appsflyer.com/hc/articles/360017603577).
+* **Creative Optimization Premium subscription.** Custom Creative ETL is available exclusively on the Premium plan. Contact your AppsFlyer representative to confirm your subscription.
+* **Admin permissions.** Only admin users can create, edit, or delete ETL report configurations.
+* **Data Locker destination.** Custom Creative ETL delivers data to a Data Locker connection. You must have at least one connection already configured, or create one as part of the report setup (see Step 1 below). Supported destinations include AWS S3, GCS, BigQuery, Snowflake, Azure Blob [beta], and Yandex [beta]. See [Set up a Data Locker connection](/docs/data-locker-cloud-service-setup).
 
 #### Set up Custom Creative ETL
 
@@ -159,7 +169,7 @@ Custom Creative ETL setup is a three-step process: configure your data destinati
 
 **To set up Custom Creative ETL:**
 
-1. In AppsFlyer, go to **Export** \> **Creative ETL**.
+1. In AppsFlyer, go to **Export** > **Creative ETL**.
 2. Click **Create report**.
 
 ##### Step 1 - Destination
@@ -167,8 +177,8 @@ Custom Creative ETL setup is a three-step process: configure your data destinati
 Select or configure the Data Locker connection where your report will be delivered.
 
 3. In the **Data Locker connections** dropdown, select an existing connection.
-   - If you don't have a connection yet, click **\+ New connection in Data Locker**. This opens the Data Locker setup page. Once you've created a connection, return to Creative ETL and select it from the dropdown.
-   - You can select multiple connections if you want the same report delivered to more than one destination.
+   * If you don't have a connection yet, click **+ New connection in Data Locker**. This opens the Data Locker setup page. Once you've created a connection, return to Creative ETL and select it from the dropdown.
+   * You can select multiple connections if you want the same report delivered to more than one destination.
 4. Click **Next**.
 
 ##### Step 2 - Details
@@ -177,11 +187,16 @@ Define the report name and report type.
 
 5. Enter a **Report name**. This name identifies the report in the report list and can't be changed after saving.
 
-> 📘 Note
->
-> Use letters, numbers, and underscores only. The name must be between 2 and 80 characters.
+   CALLSTART::Note::
 
+   #### Note
+
+   Use letters, numbers, and underscores only. The name must be between 2 and 80 characters.
+
+   CALLEND::
 6. Select a **Report type**:
+
+   
 
 | Report type | Description |
 | --- | --- |
@@ -189,35 +204,48 @@ Define the report name and report type.
 | Retargeting | Re-engagement and re-attribution activity |
 | Unified | Combined view of User Acquisition and Retargeting in a single report |
 
+
 7. Click **Next**.
 
 ##### Step 3 - Schema
 
 Select the dimensions, metrics, AI dimensions, and in-app events to include in your report output.
 
-#### What is a schema?
+> 📘 **Note**
+>
+> #### What is a schema?
+>
+> A schema defines the columns in your report, which dimensions (attributes like campaign, geo, or creative type) and metrics (performance numbers like installs, CTR, or ROAS) are included, and in what order. The order you select fields in the UI determines the column order in the output file.
 
-A schema defines the columns in your report, which dimensions (attributes like campaign, geo, or creative type) and metrics (performance numbers like installs, CTR, or ROAS) are included, and in what order. The order you select fields in the UI determines the column order in the output file.
 
 9. Under **Dimensions**, select the creative and campaign dimensions to include.
 
-> 📘 Note
->
-> The **Event date** (event attribution date), **App ID**, **Creative**, and **Asset link** fields are mandatory and can't be removed. Two additional fields, `dt` (partition date) and `version` (run version for backfill scenarios), are always included in every report but are hidden in the UI.
+   CALLSTART::Note::
 
+   #### Note
+
+   The **Event date** (event attribution date), **App ID**, **Creative**, and **Asset link** fields are mandatory and can't be removed. Two additional fields, `dt` (partition date) and `version` (run version for backfill scenarios), are always included in every report but are hidden in the UI.
+
+   CALLEND::
 10. Under **AI Dimensions**, select any auto-tag or custom dimension fields to include. These fields are generated by AppsFlyer's AI creative analysis pipeline.
 
-> 📘 Note
->
-> AI dimensions are populated only for creatives that have been processed by the AI tagging pipeline. There may be a delay before AI tags are available for recently uploaded creatives.
+    CALLSTART::Note::
 
+    #### Note
+
+    AI dimensions are populated only for creatives that have been processed by the AI tagging pipeline. There may be a delay before AI tags are available for recently uploaded creatives.
+
+    CALLEND::
 11. Under **Metrics**, select the performance KPIs to include.
 12. Under **In-app events**, select the events to include. Each selected event automatically includes four sub-metrics in the report output: event count, unique users, revenue, and CPA.
 
-> ❗️ Important!
->
-> You can include a maximum of **30 in-app events** per report.
+    CALLSTART::Note::
 
+    #### Important!
+
+    You can include a maximum of **30 in-app events** per report.
+
+    CALLEND::
 13. Click **Save** to activate the report.
 
 The report is now configured. The first delivery will occur on the next daily run.
@@ -228,22 +256,28 @@ You can modify an existing Custom Creative ETL report, including its schema, rep
 
 **To edit a report:**
 
-1. In AppsFlyer, go to **Export** \> **Creative ETL**.
+1. In AppsFlyer, go to **Export** > **Creative ETL**.
 2. In the report list, click the **Edit** (pencil) icon on the report you want to modify.
 3. Make your changes across the three setup steps.
 4. Click **Save changes**.
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > Changes to the schema apply to future report runs only. Previously delivered files are not retroactively updated.
 >
 > The **Event date**, **App ID**, **Asset link**, and **Creative** dimensions are mandatory and can't be removed.
 
+
 You can also **duplicate** or **delete** a report using the action icons on each row.
 
-> ❗️ Important!
+> 📘 **Note**
+>
+> #### Important!
 >
 > Deleting a report permanently removes the report configuration and all associated run history. This action can't be undone.
+
 
 #### Report management
 
@@ -251,14 +285,17 @@ The Creative ETL page lists all Custom Creative ETL reports configured for your 
 
 The following actions are available from the action icons on each report row:
 
-- **View** (eye icon), opens a read-only view of the full report configuration.
-- **Edit** (pencil icon), opens the report in edit mode.
-- **Duplicate** (copy icon), creates a copy of the report configuration.
-- **Delete** (trash icon), permanently removes the report and its run history.
+* **View** (eye icon), opens a read-only view of the full report configuration.
+* **Edit** (pencil icon), opens the report in edit mode.
+* **Duplicate** (copy icon), creates a copy of the report configuration.
+* **Delete** (trash icon), permanently removes the report and its run history.
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > Each account can have a maximum of **5 active Custom Creative ETL reports**.
+
 
 If you have a Standard Creative ETL report configured via Data Locker, a notification banner appears at the top of the Creative ETL page. Clicking it takes you to Data Locker, where the standard report is configured.
 
@@ -276,8 +313,8 @@ Each daily delivery includes data for a 30-day lookback window. Each file reflec
 
 Data files are organized within your delivery folder based on the setting you choose in your Data Locker connection configuration:
 
-- **Unified (default):** All apps are included in unified data files. Use the row-level `app_id` field to distinguish between apps when consuming the data.
-- **By app:** Data is organized into subfolders, one per app.
+* **Unified (default):** All apps are included in unified data files. Use the row-level `app_id` field to distinguish between apps when consuming the data.
+* **By app:** Data is organized into subfolders, one per app.
 
 See [app segregation in Data Locker](/docs/data-locker-for-marketers#app-segregation) to learn more.
 
@@ -286,6 +323,8 @@ See [app segregation in Data Locker](/docs/data-locker-for-marketers#app-segrega
 ##### Mandatory fields
 
 The following fields are always included in every Custom Creative ETL report and can't be removed.
+
+
 
 | Field | Type | Description |
 | --- | --- | --- |
@@ -296,9 +335,13 @@ The following fields are always included in every Custom Creative ETL report and
 | `dt` | String (YYYY-MM-DD) | Partition date, the date the report data was written to storage |
 | `version` | String | Run version identifier, increments for backfill reruns on the same `dt` |
 
+
+
 ##### Dimensions
 
 You can select any combination of the following dimensions to include in your report.
+
+
 
 | Field | Type | Description |
 | --- | --- | --- |
@@ -328,9 +371,13 @@ You can select any combination of the following dimensions to include in your re
 | `resolution` | String | Creative resolution |
 | `text_type` | String | Text type classification for the creative |
 
+
+
 ##### AI dimensions
 
 AI dimensions are generated by AppsFlyer's AI creative analysis engine and include auto-tags, smart tags, and custom dimensions.
+
+
 
 | Group | Field prefix | Description |
 | --- | --- | --- |
@@ -338,11 +385,17 @@ AI dimensions are generated by AppsFlyer's AI creative analysis engine and inclu
 | Smart tags | `cd_ai_label` | AI-generated smart tags |
 | Custom dimensions | `cd_` | User-defined creative attributes configured for your account |
 
-> 📘 Note
+
+> 📘 **Note**
+>
+> #### Note
 >
 > AI dimensions are only populated for creatives that have been processed by the AI tagging pipeline. Newly uploaded creatives may not have AI tags immediately available.
 
+
 ##### Metrics
+
+
 
 | Field | Type | Description |
 | --- | --- | --- |
@@ -417,9 +470,13 @@ AI dimensions are generated by AppsFlyer's AI creative analysis engine and inclu
 | `partner_video_75p_views` | Integer | Video played to 75% (partner-reported) |
 | `partner_video_completions` | Integer | Video completions (partner-reported) |
 
+
+
 ##### In-app events
 
 In-app events appear in the report as metric columns using the format `{event_name}.{sub_metric}`. When you select an event, all four sub-metrics are automatically included. For example, selecting `af_purchase` generates the following columns: `af_purchase.event_count`, `af_purchase.unique_users`, `af_purchase.revenue`, and `af_purchase.cpa`.
+
+
 
 | Sub-metric | Description |
 | --- | --- |
@@ -428,12 +485,16 @@ In-app events appear in the report as metric columns using the format `{event_na
 | `revenue` | Total revenue attributed to the event |
 | `cpa` | Cost per action (cost / event count) |
 
+
+
 Limits:
 
-- Maximum of **30 in-app events** per report.
-- Available events are account-specific and reflect the events your apps actively send to AppsFlyer.
+* Maximum of **30 in-app events** per report.
+* Available events are account-specific and reflect the events your apps actively send to AppsFlyer.
 
 #### Limitations
+
+
 
 | Limitation | Details |
 | --- | --- |
@@ -447,53 +508,39 @@ Limits:
 | Conversion actions (web) | Not yet supported |
 | App selection | All apps within your account are included in each report. The ability to filter by specific apps is planned for a future release |
 
+
+
 ## FAQ
 
 A list of frequently asked questions about ETL reporting.
 
-<Accordion title="What's the difference between Standard Creative ETL and Custom Creative ETL?">
+### What's the difference between Standard Creative ETL and Custom Creative ETL?
 
 **Standard Creative ETL** is configured via Data Locker's Select reports page and delivers a fixed set of fields (schema) once per day. It doesn't support in-app events, retargeting or unified breakdowns, or AI dimensions.
 
 **Custom Creative ETL** is configured directly in the AppsFlyer UI with a fully customizable set of fields. You can include up to 30 in-app events, AI dimensions, and User Acquisition/Retargeting/Unified breakdowns, with no backend configuration or customer success manager involvement required.
 
-</Accordion>
-
-<Accordion title="Can I run both Standard Creative ETL and Custom Creative ETL at the same time?">
+### Can I run both Standard Creative ETL and Custom Creative ETL at the same time?
 
 Yes. Both can run in parallel. If you have a Standard Creative ETL report active, a notification banner appears on the Creative ETL page with a link to your Data Locker configuration.
 
-</Accordion>
-
-<Accordion title="Can I have multiple Custom Creative ETL reports with different report types?">
+### Can I have multiple Custom Creative ETL reports with different report types?
 
 Yes. Each report is configured with a single report type (User Acquisition, Retargeting, or Unified), and you can create up to 5 reports per account.
 
-</Accordion>
+### How do I add new in-app events to an existing Custom Creative ETL report?
 
-<Accordion title="How do I add new in-app events to an existing Custom Creative ETL report?">
+Go to **Export** > **Creative ETL**, click the **Edit** icon on the report, go to **Step 3 (Schema)**, and add the new events. Changes take effect on the next daily delivery.
 
-Go to **Export** \> **Creative ETL**, click the **Edit** icon on the report, go to **Step 3 (Schema)**, and add the new events. Changes take effect on the next daily delivery.
-
-</Accordion>
-
-<Accordion title="What happens if a report runs more than once on the same day?">
+### What happens if a report runs more than once on the same day?
 
 If a report is re-run (typically during a backfill), each run receives an incremented `version` value. Always use the highest version available for a given `dt` partition.
 
-</Accordion>
-
-<Cards>
-  <Card title="Creative Optimization guide" href="/docs/creative-optimization-guide">
-    Learn more about standard metrics and dimensions unique to Creative Optimization.
-  </Card>
-  <Card title="Data Locker advertiser reports" href="/docs/data-locker-advertiser-reports">
-    Read about advertiser reports available in Data Locker.
-  </Card>
-  <Card title="Set up a Data Locker connection" href="https://support.appsflyer.com/hc/articles/360017603577">
-    Follow instructions to configure your Data Locker storage destination.
-  </Card>
-  <Card title="Set up and use ROI360 cost ETL reports" href="/docs/set-up-and-use-roi360-cost-etl-reports">
-    Learn how to configure cost ETL reports for ROI360.
-  </Card>
-</Cards>
+> 📘 **Note**
+>
+> #### See also
+>
+> * [Creative Optimization guide](/docs/creative-optimization-guide)
+> * [Data Locker advertiser reports](/docs/data-locker-advertiser-reports)
+> * [Set up a Data Locker connection](/docs/data-locker-cloud-service-setup)
+> * [Set up and use ROI360 cost ETL reports](/docs/set-up-and-use-roi360-cost-etl-reports)

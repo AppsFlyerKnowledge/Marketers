@@ -2,70 +2,71 @@
 title: "Integrated partners dashboard"
 excerpt: "Learn how integrated partners can use the AppsFlyer dashboard and reports to view and analyze campaign traffic."
 ---
-At a glance: Integrated partners use the dashboard and reports to view and analyze campaign traffic attributed to you.
+**At a glance:** Integrated partners use the dashboard and reports to view and analyze campaign traffic attributed to you.
 
 ## Using the AppsFlyer dashboard
 
 **To log in to AppsFlyer**:
 
-1. [Log in](https://hq1.appsflyer.com/auth/login) or navigate to https://hq1.appsflyer.com/auth/login
-
-The list of apps displays.
-2. Select an app or search for it.
-
-> 📘 Note!
->
-> If you don't see the required app, ask the advertiser to grant you [Ad network permissions](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab). The advertiser does this in the AppsFlyer dashboard in the permissions tab.
+1. [Log in](https://hq1.appsflyer.com/auth/login) or navigate to https://hq1.appsflyer.com/auth/login  
+   The list of apps displays.
+2. Select an app or search for it.  
+   Note! If you don't see the required app, ask the advertiser to grant you [Ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab). The advertiser does this in the AppsFlyer dashboard in the permissions tab.
 
 ## Overview dashboard
 
-Campaign performance metrics and charts are available in the [Overview dashboard](https://support.appsflyer.com/hc/articles/360014697157). This dashboard contains different view types for UA and retargeting campaigns.
+Campaign performance metrics and charts are available in the [Overview dashboard](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv). This dashboard contains different view types for UA and retargeting campaigns.
 
 ## Report access
 
 To view report data:
 
-- In the side menu, select one of the following:
-  - [Raw Data Export](https://support.appsflyer.com/hc/articles/360008613838)
-  - [Aggregated Data Export](https://support.appsflyer.com/hc/articles/360008614078)
-
+* In the side menu, select one of the following:
+  * [Raw Data Export](/docs/raw-data-export-page)
+  * [Aggregated Data Export](/docs/aggregated-data-export-page)  
     The Reports window opens.
 
-> 📘 Note
+> 📘 **Note**
 >
-> - Data shown in raw data reports is limited to raw data in postbacks attributed to the partner only.
-> - For Protect360 subscribers, when the **[Protect360 dashboard \& raw data](/docs/set-up-an-integrated-partner#access-protect360-dashboard-raw-data)** permission is granted by the advertiser, partners also have access to Protect360 raw data reports.
-> - **Event value** data is not displayed in this report. To get event values, you can do one of the following:
->   - Request from the advertiser to provide you in-app event raw data reports
->   - Add `(event-value)` [macro to the postback URL](https://support.appsflyer.com/hc/articles/207273946)
+> #### Note
+>
+> * Data shown in raw data reports is limited to raw data in postbacks attributed to the partner only.
+> * For Protect360 subscribers, when the **[Protect360 dashboard & raw data](/docs/set-up-an-integrated-partner#access-protect360-dashboard-raw-data)** permission is granted by the advertiser, partners also have access to Protect360 raw data reports.
+> * **Event value** data is not displayed in this report. To get event values, you can do one of the following:
+>
+> * * Request from the advertiser to provide you in-app event raw data reports
+>   * Add `(event-value)` [macro to the postback URL](/docs/postback-macros-for-ad-networks)
+
 
 ### Using Postback reports
 
-You can use the Installation and In-app event [postback reports](https://support.appsflyer.com/hc/articles/209680773#postbacks) to find 'missing' actions, i.e. when the advertiser's raw data shows user actions that were not recorded in the ad network.
+You can use the Installation and In-app event [postback reports](/docs/raw-data-reporting-overview#postbacks) to find 'missing' actions., i.e. when the advertiser's raw data shows user actions that were not recorded in the ad network.
 
-Download the relevant Postbacks report and look for the **Postback URL** and **Postback HTTP Response Code** fields:
+Download the relevant Postbacks report and look for the **Postback URL** and **Postback HTTP Response Code** fields:
 
-- If the response code is 200, AppsFlyer sent the postback and received acknowledgment from the ad network.
-- If the response code is missing, AppsFlyer sent the postback but received no response. The **Postback Error Message** field describes the problem.
+* If the response code is 200, AppsFlyer sent the postback and received acknowledgment from the ad network.
+* If the response code is missing, AppsFlyer sent the postback but received no response. The **Postback Error Message** field describes the problem.
+
+[![](https://support.appsflyer.com/hc/article_attachments/360005578257)](https://support.appsflyer.com/hc/article_attachments/360005578257)
 
 ## Viewing configuration settings and data
 
 Click **Active Integrations** on the left side of the window to view the current configuration settings. Even if you have not been granted permissions, you may be able to view the configuration settings (read-only mode).
 
-Ad network can view the configuration on its dashboard only when it is set up by the advertiser.
+Ad network can view the configuration on its dashboard only when it is set up by the advertiser. 
 
-Agencies can configure ad network setup upon getting relevant permission from the advertiser. Note that **when the configuration is made by an agency, the ad network sees it as inactive**.
+Agencies can configure ad network setup upon getting relevant permission from the advertiser. Note that **when****the configuration is made by an agency, the ad network sees it as inactive**.
 
 ## Permissions
 
-Using the **Permissions** tab, advertisers can [grant different types of permissions to the ad networks](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+Using the **Permissions** tab, advertisers can [grant different types of permissions to the ad networks](/docs/set-up-an-integrated-partner#permissions-tab).
 
 ### Enabling Permissions
 
 The first step is for your client to enable permissions. Your client must switch **Ad Network Permissions** on. When they do so, the following takes place:
 
 1. The app displays in your ad network account.
-2. The admin of your ad network account gets access to view the dashboard of your client's app. At the first stage, only the admin has access. If you want your team member to also view the app's dashboard, your client needs to give them permissions.
+2. The admin of your ad network account gets access to view the dashboard of your client's app. At the first stage, only the admin has access. If you want your team member to also view the app's dashboard, your client needs to give them permissions.
 3. Permissions to view the app's dashboard are given only to your ad network.
 
 ### Granting permissions to ad network team members
@@ -73,28 +74,31 @@ The first step is for your client to enable permissions. Your client must switch
 If you want your team member to also view the app's dashboard, your client needs to give them permissions.
 
 1. Give your client the emails of the team members that you want the client to give permissions to.
-2. The client should then [add them to the integration with your ad network](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+2. The client should then [add them to the integration with your ad network](/docs/set-up-an-integrated-partner#permissions-tab).
 
 ### Granting additional permissions
 
 Your client can grant additional permission for the ad network and its team members to view the following:
 
-- Integration parameter configuration
-- In-app event postback configuration
-- Retention report
-- Loyal users
-- In-app events
-- Revenue
-- Protect360 dashboard \& raw data - available only to Protect360 customers
+* Integration parameter configuration
+* In-app event postback configuration
+* Retention report
+* Loyal users
+* In-app events
+* Revenue
+* Protect360 dashboard & raw data - available only to Protect360 customers
 
 To allow this, contact your client to select you from the list of Active Integrations and grant you access to the relevant section within the Permissions tab.
 
 When the advertiser gives permission for the ad network to configure their attribution link and map in-app events, they can enter the relevant tabs and make changes accordingly.
 
-> 📘 Note
+> 📘 **Note**
 >
-> - Any changes made to the configuration overwrite the current configuration irrespective of whether it is set by the advertiser or the ad network.
-> - Agencies can add ad network team members to the configuration, but only app owners can provide permissions to ad networks.
+> #### Note
+>
+> * Any changes made to the configuration overwrite the current configuration irrespective of whether it is set by the advertiser or the ad network.
+> * Agencies can add ad network team members to the configuration, but only app owners can provide permissions to ad networks.
+
 
 Once your client has granted you permission to the integration parameter configurations, you are able to access it from the left side of the main dashboard and select **Active Integrations.**
 

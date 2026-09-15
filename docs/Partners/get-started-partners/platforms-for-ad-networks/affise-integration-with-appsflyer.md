@@ -18,11 +18,11 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_s
 
 | AppsFlyer Parameter | Affise Macros | Description |
 | --- | --- | --- |
-| clickid | {clickid} | Request ID of each user session |
-| af\_siteid | {pid} | ID of the affiliate promoting the offer |
-| af\_c\_id | {offer\_id} | ID of the offer |
+| clickid | `{clickid}` | Request ID of each user session |
+| af\_siteid | `{pid}` | ID of the affiliate promoting the offer |
+| af\_c\_id | `{offer\_id}` | ID of the offer |
 
-For a complete AppsFlyer parameter list [click here](https://support.appsflyer.com/hc/articles/207447163).
+For a complete AppsFlyer parameter list [click here](/docs/about-link-structure-and-parameters).
 
 ## Complete attribution link template
 

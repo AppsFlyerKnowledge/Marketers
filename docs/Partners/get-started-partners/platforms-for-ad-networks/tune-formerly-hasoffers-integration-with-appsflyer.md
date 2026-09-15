@@ -19,7 +19,7 @@ See the following AppsFlyers base attribution link with a detailed explanation p
 | --- | --- |
 | https://app.appsflyer.com | AppsFlyer endpoint |
 | app\_id | Unique app ID – dynamic value changed per app promoted |
-| pid= | Media source name concatenated with `_int` to identify<br>integrated networks |
+| pid= | Media source name concatenated with `_int` to identify<br />integrated networks |
 | c= | Campaign name |
 
 ### Example attribution link after adding TUNE macros
@@ -65,7 +65,7 @@ In the above postback URLs:
   * To ensure proper attribution, the NETWORK\_ID should always be the branded domain name provided by TUNE, not a custom tracking domain used for a specific offer (if any).
 * goal\_id = event tag in the AppsFlyer dashboard for each of your apps. This is the actual in-app event name from the app.
 
-Learn more about [Dynamic Event Mapping for In-App Events](https://support.appsflyer.com/hc/articles/208996726).
+Learn more about [Dynamic Event Mapping for In-App Events](/docs/dynamic-event-mapping-for-in-app-events).
 
 ## Finalizing your registration
 

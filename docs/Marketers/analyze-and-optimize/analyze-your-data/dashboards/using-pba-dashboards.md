@@ -8,7 +8,7 @@ Get the most out of our PBA dashboard features.
 
 ## PBA dashboards
 
-The following sections relate to the [Website Attribution](https://support.appsflyer.com/hc/articles/360000654377) and [Web-Assisted Installs](https://support.appsflyer.com/hc/articles/360002669837-PBA-Web-To-App-analysis-dashboard) dashboards.
+The following sections relate to the [Website Attribution](/docs/pba-website-attribution-dashboard) and [Web-Assisted Installs](/docs/pba-web-assisted-installs) dashboards.
 
 ## Settings
 
@@ -36,19 +36,19 @@ Refine PBA dashboard results by using the (A) date picker, (B) main filters, and
 
 #### Available filter dimensions per dashboard
 
-| Filter | Description/values | Website Attribution | Web-Assisted Installs | Conversion<br>Paths |
+| Filter | Description/values | Website Attribution | Web-Assisted Installs | Conversion<br />Paths |
 | --- | --- | --- | --- | --- |
-| Date picker | The date one of the following PBA conversion events occurred: <br>- App install<br>- Web conversion<br>- Mobile conversion | Y | Y | Y |
+| Date picker | The date one of the following PBA conversion events occurred: <br />- App install<br />- Web conversion<br />- Mobile conversion | Y | Y | Y |
 | Geo | List of countries/territories | Y | Y (1) | Y (2) |
 | Install type | Organic, smart banner, custom link, paid | -- | Y | -- |
 | Media channel | Ad, direct, email, referral, organic search, social | Y | Y | Y (2) |
 | Mobile platform | Android, iOS | -- | Y | -- |
 | Media source | Media source to which the event is attributed | Y | Y(1) | Y (2) |
-| Media type | Includes paid, [owned](https://support.appsflyer.com/hc/sections/6551214397585-Owned-media-attribution), earned | Y | Y | Y (2) |
+| Media type | Includes paid, [owned](/docs/owned-media-attribution), earned | Y | Y | Y (2) |
 | Conversion events | Show paths that lead to the conversion event for the conversion path | Y | -- | Y |
 | Path length (steps) | Number of steps in the current conversion path view: Media source, media channel, media type | -- | -- | Y |
 | Path duration (days) | Duration of the conversion starting with the first touchpoint | -- | -- | Y |
-| **(1)** In the web-assisted installs dashboard, you associate the filter with the web media source or the mobile media source. You can set multiple instances of the filter. [Example case](https://support.appsflyer.com/hc/articles/360005926278#example-scenarios%E2%80%94setting-filters-associated-with-conversion-and-steps) |
+| **(1)** In the web-assisted installs dashboard, you associate the filter with the web media source or the mobile media source. You can set multiple instances of the filter. Example case |
 
 ### Grouping options
 
@@ -70,19 +70,19 @@ Dashboard data is grouped by, for example, media source, device, or country. Whe
 | Group | Description | Web-Assisted Installs | Website Attribution |
 | --- | --- | --- | --- |
 | Device type | Includes smartphone, tablet, desktop, TV, and other (unrecognized devices) | Y | Y |
-| Environment | - Use to differentiate between web and mobile KPIs<br>- Website Attribution dashboard: Combines operating system and platform. For example, Android/Web, iOS/Web, Windows/Web, Linux/Web <br>- Web-Assisted Installs: iOS, Android, Windows | Y | N |
-| Geo | - View traffic and engagement trends by country<br>- Results can directly impact investment decisions per country | Y | Y |
-| Media source/campaign | **Media source**<br>Media source attributed to a conversion<br>- To view in-depth campaign data click down through the campaign hierarchy: campaign > ad set > ad<br>- Available hierarchy levels differ between the various media sources<br>**Campaign names**<br>- Available campaign names based on URL parameters.<br>- Campaign names aren't available in all cases. | Y | Y |
+| Environment | - Use to differentiate between web and mobile KPIs<br />- Website Attribution dashboard: Combines operating system and platform. For example, Android/Web, iOS/Web, Windows/Web, Linux/Web <br />- Web-Assisted Installs: iOS, Android, Windows | Y | N |
+| Geo | - View traffic and engagement trends by country<br />- Results can directly impact investment decisions per country | Y | Y |
+| Media source/campaign | **Media source**<br />Media source attributed to a conversion<br />- To view in-depth campaign data click down through the campaign hierarchy: campaign > ad set > ad<br />- Available hierarchy levels differ between the various media sources<br />**Campaign names**<br />- Available campaign names based on URL parameters.<br />- Campaign names aren't available in all cases. | Y | Y |
 | Media channel | Ad, direct, email, referral, organic search, social | N | Y |
-| Media type | Includes paid, [owned](https://support.appsflyer.com/hc/sections/6551214397585-Owned-media-attribution), earned | N | Y |
+| Media type | Includes paid, [owned](/docs/owned-media-attribution), earned | N | Y |
 | Platform |  | N | Y |
 
 ### Other settings
 
 | Setting | Description |
 | --- | --- |
-| Brand bundle | PBA dashboards have brand-bundle level data. Bundles consist of a website, 1 Android app, and 1 iOS app.<br>- You can select bundles if your [permissions](https://support.appsflyer.com/hc/articles/360000646498#faq) let you view/edit the apps that form the bundle.<br>- Use the selector to switch between bundles.<br>- [Create and edit bundles.](https://support.appsflyer.com/hc/articles/360000646498) |
-| PBA settings | - Set conversion events<br>- Change bundle settings |
+| Brand bundle | PBA dashboards have brand-bundle level data. Bundles consist of a website, 1 Android app, and 1 iOS app.<br />- You can select bundles if your [permissions](/docs/pba-brand-bundles-and-settings#faq) let you view/edit the apps that form the bundle.<br />- Use the selector to switch between bundles.<br />- [Create and edit bundles.](/docs/pba-brand-bundles-and-settings) |
+| PBA settings | - Set conversion events<br />- Change bundle settings |
 
 ## Additional information
 
@@ -90,7 +90,7 @@ Dashboard data is grouped by, for example, media source, device, or country. Whe
 
 > 📘 Data Freshness
 >
-> PBA dashboards and reports are updated [daily](https://support.appsflyer.com/hc/articles/360000310629-Data-freshness-and-time-zone-support#eod) per the UTC time zone.
+> PBA dashboards and reports are updated [daily](/docs/about-data-freshness-and-timezone-support#eod) per the UTC time zone.
 
 - Daily processing includes events received during the previous day.
 - Data finalization:

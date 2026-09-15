@@ -71,7 +71,7 @@ To learn what method a particular media source uses, you can see the **Integrati
 
 ## Site ID mapping
 
-[Some media source integrations](https://support.appsflyer.com/hc/articles/207040526-Campaign-cost-measurement-guide#ad-networks-supporting-cost-api) allow you to select how the [site ID](/docs/raw-data-field-dictionary#attribution::e9b53459) field populates when reporting cost data. This makes sure that the AppsFlyer attribution link `site-id` macros match the value the media source expects.
+[Some media source integrations](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) allow you to select how the [site ID](/docs/raw-data-field-dictionary#attribution::e9b53459) field populates when reporting cost data. This makes sure that the AppsFlyer attribution link `site-id` macros match the value the media source expects.
 
 - By default, site ID mapping is aligned with the AppsFlyer macros in the attribution link.
 - If your attribution link uses macros that differ from the site ID mapping options, site ID data will not populate correctly.
@@ -134,7 +134,7 @@ To turn off Cost API, follow these steps:
 
 The operational status of cost integrations is available as follows:
 
-- [Cost (and ad revenue) integration status dashboard](https://support.appsflyer.com/hc/articles/36016789458): Centralized list of media sources for which cost integration is enabled for one or more apps housed in your account.
+- Cost (and ad revenue) integration status dashboard: Centralized list of media sources for which cost integration is enabled for one or more apps housed in your account.
 - Integrated partners: Status available in the context of an individual app.
 - Cost settings: The **Cost settings** page allows you to view the cost API status at both the account and app levels. For more information, see the "View the media source aggregate cost integration status" below.
 

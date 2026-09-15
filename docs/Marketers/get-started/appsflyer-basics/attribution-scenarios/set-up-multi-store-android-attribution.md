@@ -10,8 +10,8 @@ AppsFlyer attributes apps, irrespective of the app store. Meaning Google Play st
 
 > 📘 Note
 >
-> - AppsFlyer Android attribution supports all device identifier types including GAID and [OAID](https://support.appsflyer.com/hc/articles/360006278797-Implementing-OAID-in-the-Android-SDK)
-> - For apps marketed in China, see [Attributing Android apps in the Chinese domestic market](https://support.appsflyer.com/hc/articles/360002049858)
+> - AppsFlyer Android attribution supports all device identifier types including GAID and [OAID](/docs/android-oaid-implementation-in-the-sdk)
+> - For apps marketed in China, see [Attributing Android apps in the Chinese domestic market](/docs/measure-attribution-in-the-chinese-domestic-market)
 
 <Image src="https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg" alt="DashboardType_us-en-new.jpg" />
 
@@ -20,15 +20,15 @@ AppsFlyer attributes apps, irrespective of the app store. Meaning Google Play st
 - **Single dashboard:** One dashboard that combines data from all stores, including Google Play Store
 - **Dashboard per store:** Multiple dashboards—each store has its own dashboard. This means you have as many dashboards as stores providing the app.
 
-|  | Single dashboard<br>[Best practice] | Dashboard per store |
+|  | Single dashboard<br />[Best practice] | Dashboard per store |
 | --- | --- | --- |
 | Android package name | Use the same (identical) package name irrespective of the option selected. |
-| Channel name | Nothing to set | - When adding the App in the AppsFlyer dashboard using the **Android Out-of-Store APK** option, set the channel.<br>- The channel identifies the store.<br>- The combination of Android package name and channel uniquely identifies each AppsFlyer dashboard.<br>- Example: The Android package name is com.abc.def and the channel is xyzdevicestore. The unique dashboard identifier is com.abc.def-xyzdevicestore.<br>- If the APK has a channel setting but there is no app with this setting, traffic is attributed to the default app, being the app with a blank channel setting being Google Play Store. |
-| Populating the install_app_store field | - Uniquely identifies the store providing the app by download.<br>- In the case of Google Play Store, this is blank.<br>- The store name is set in the [manifest/APK](https://support.appsflyer.com/hc/articles/207447023-Setting-up-multi-store-Android-attribution-#single-dashboard%E2%80%94apk-preparation). | N/A |
-| [OneLink template](https://support.appsflyer.com/hc/articles/207032246#procedures) | When working with OneLink this method is recommended. | N/A |
-| Measurement/Attribution links | - Links are the same irrespective of the store.<br>- To redirect to the correct store, use [af_r](https://support.appsflyer.com/hc/articles/207447023#single-dashboard%E2%80%94attribution-links) to set the redirect URL | - A unique link is required for each store.<br>- Create these using the **Active integrations** page.<br>- The app ID is the channel name appended to the android package name. Ex: com.abc.def-def_store.<br>  <br>  Hence the attribution links will be different. |
+| Channel name | Nothing to set | - When adding the App in the AppsFlyer dashboard using the **Android Out-of-Store APK** option, set the channel.<br />- The channel identifies the store.<br />- The combination of Android package name and channel uniquely identifies each AppsFlyer dashboard.<br />- Example: The Android package name is com.abc.def and the channel is xyzdevicestore. The unique dashboard identifier is com.abc.def-xyzdevicestore.<br />- If the APK has a channel setting but there is no app with this setting, traffic is attributed to the default app, being the app with a blank channel setting being Google Play Store. |
+| Populating the install_app_store field | - Uniquely identifies the store providing the app by download.<br />- In the case of Google Play Store, this is blank.<br />- The store name is set in the [manifest/APK](/docs/set-up-multi-store-android-attribution#single-dashboard%E2%80%94apk-preparation). | N/A |
+| [OneLink template](/docs/create-a-onelink-template#procedures) | When working with OneLink this method is recommended. | N/A |
+| Measurement/Attribution links | - Links are the same irrespective of the store.<br />- To redirect to the correct store, use [af_r](/docs/set-up-multi-store-android-attribution#single-dashboard%E2%80%94attribution-links) to set the redirect URL | - A unique link is required for each store.<br />- Create these using the **Active integrations** page.<br />- The app ID is the channel name appended to the android package name. Ex: com.abc.def-def_store.<br />  <br />  Hence the attribution links will be different. |
 | Reporting options available having install_app_store field | Raw data reports always contain this field. For Overview and Cohort, reach out to your CSM asking them to add the necessary feature. | N/A |
-| Considerations | - Attribution accuracy: Re-installs from different stores don't result in inflated install numbers.<br>- Organic installs will reflect organic installs of APKs from all stores under one dashboard.<br>- Reporting options, broken down per store,  are limited to Overview, Cohort, and raw data at present. | - Attribution accuracy: Re-installs are counted, which results in less accurate attribution.<br>- View organic and non-organic installs and in-app event data per store (channel) on separate app dashboards in AppsFlyer.<br>- Use Cohort to display combined reports of all stores together<br>- Activate a partner ( [Activate partner](/docs/partner-activation-deactivation) is turned on) in each third-party store app where the partner is running an active campaign. This helps prevent attribution discrepancies, especially when working with self-reporting networks (SRNs). |
+| Considerations | - Attribution accuracy: Re-installs from different stores don't result in inflated install numbers.<br />- Organic installs will reflect organic installs of APKs from all stores under one dashboard.<br />- Reporting options, broken down per store,  are limited to Overview, Cohort, and raw data at present. | - Attribution accuracy: Re-installs are counted, which results in less accurate attribution.<br />- View organic and non-organic installs and in-app event data per store (channel) on separate app dashboards in AppsFlyer.<br />- Use Cohort to display combined reports of all stores together<br />- Activate a partner ( [Activate partner](/docs/partner-activation-deactivation) is turned on) in each third-party store app where the partner is running an active campaign. This helps prevent attribution discrepancies, especially when working with self-reporting networks (SRNs). |
 
 ## Set-up tasks
 
@@ -42,20 +42,20 @@ For the Dashboard-per-store option repeat the tasks for each store.
 - Use the naming table that follows to map the channels and stores.
 - The table is used by the developer to prepare the APKs.
 
-| Parameter | Instruction | Single dashboard<br>[Best practice] | Dashboard per store |
+| Parameter | Instruction | Single dashboard<br />[Best practice] | Dashboard per store |
 | --- | --- | --- | --- |
 | Android package name | The identical package name for all dashboard options | If the app is already in Google Play Store use the existing package name. Example: comb.abc.def |
-| Channel name | A unique value for each store. | Not set. Leave blank. | Unique for each store. Set the value in the individual APK prepared for the store and when adding the app in AppsFlyer. <br>Don't set a channel for the Google Play Store APK. |
+| Channel name | A unique value for each store. | Not set. Leave blank. | Unique for each store. Set the value in the individual APK prepared for the store and when adding the app in AppsFlyer. <br />Don't set a channel for the Google Play Store APK. |
 | Install app store AF_STORE | A unique value identifying the store | Unique for each store. Set in the APK through the manifest. Each store has its own APK. | Not set |
 
 ### Tasks
 
 | Step | Responsibility | Single dashboard | Dashboard per store |
 | --- | --- | --- | --- |
-| 1 | Developer | [APK preparation](https://support.appsflyer.com/hc/articles/207447023-Setting-up-multi-store-Android-attribution-#single-dashboard%E2%80%94apk-preparation) | [APK preparation](https://support.appsflyer.com/hc/articles/207447023-Setting-up-multi-store-Android-attribution-#dashboard-per-store%E2%80%94apk-preparation) |
-| 2 | Marketer | No action required. The assumption is that the app is already active in AppsFlyer. | [Add the app](https://support.appsflyer.com/hc/articles/207447023#dashboard-per-store%E2%80%94adding-the-app) in AppsFlyer. |
-| 3 | Marketer | [Prepare attribution links](https://support.appsflyer.com/hc/articles/207447023#single-dashboard%E2%80%94attribution-links) | Prepare attribution links with the app ID combined with the channel name. |
-| 4 | Developer and marketer | [Testing](https://support.appsflyer.com/hc/articles/207447023#testing%E2%80%94both-dashboard-options) | [Testing](https://support.appsflyer.com/hc/articles/207447023#testing%E2%80%94both-dashboard-options) |
+| 1 | Developer | [APK preparation](/docs/set-up-multi-store-android-attribution#single-dashboard%E2%80%94apk-preparation) | [APK preparation](/docs/set-up-multi-store-android-attribution#dashboard-per-store%E2%80%94apk-preparation) |
+| 2 | Marketer | No action required. The assumption is that the app is already active in AppsFlyer. | [Add the app](/docs/set-up-multi-store-android-attribution#dashboard-per-store%E2%80%94adding-the-app) in AppsFlyer. |
+| 3 | Marketer | [Prepare attribution links](/docs/set-up-multi-store-android-attribution#single-dashboard%E2%80%94attribution-links) | Prepare attribution links with the app ID combined with the channel name. |
+| 4 | Developer and marketer | [Testing](/docs/set-up-multi-store-android-attribution#testing%E2%80%94both-dashboard-options) | [Testing](/docs/set-up-multi-store-android-attribution#testing%E2%80%94both-dashboard-options) |
 
 ## Procedures
 
@@ -91,7 +91,7 @@ The value set here appears in AppsFlyer raw data install_app_store field. This f
 
 - Overview dashboard
 - Cohort dashboard
-- [Raw data reports](https://support.appsflyer.com/hc/articles/209680773-raw%20data-reporting-overview#reporting-tools%E2%80%94characteristics-and-features) (Raw data reports are an AppsFlyer premium feature)
+- [Raw data reports](/docs/raw-data-reporting-overview#reporting-tools%E2%80%94characteristics-and-features) (Raw data reports are an AppsFlyer premium feature)
 
 ### Single dashboard—attribution links
 
@@ -101,12 +101,12 @@ Whether you create your attribution link [for use by an advertising network](/do
 
 > 📘 Note
 >
-> The default redirect **Out-of-store app URL** is set in the [App Settings](https://support.appsflyer.com/hc/articles/211719806) page. If this has been set up, there's no need to update the attribution link because attribution links created for the app will be auto-populated with this URL. [Learn more](/docs/app-settings#outofstore-app-url)
+> The default redirect **Out-of-store app URL** is set in the [App Settings](/docs/app-settings) page. If this has been set up, there's no need to update the attribution link because attribution links created for the app will be auto-populated with this URL. [Learn more](/docs/app-settings#outofstore-app-url)
 
 2. Add `af_r` redirection to the [redirection allowlist](/docs/set-up-your-domain-redirect-allowlist).
 3. Populate the `af_r` macro with the store landing page URL.
-4. Set additional [attribution link parameters](https://support.appsflyer.com/hc/articles/4410395957521#attribution-link-parameters).
-5. Out-of-store media sources **make use of ID matching for attribution** and the AppsFlyer [Probabilistic modeling](https://support.appsflyer.com/hc/articles/207447053-What-is-AppsFlyer-s-Attribution-Model-#probabilistic-modeling) serves as a fallback method.
+4. Set additional [attribution link parameters](/docs/set-up-an-integrated-partner#attribution-link-parameters).
+5. Out-of-store media sources **make use of ID matching for attribution** and the AppsFlyer [Probabilistic modeling](/docs/appsflyer-attribution-model#probabilistic-modeling) serves as a fallback method.
 6. Add one or more user ID placeholders to the link URL:
    - `android_id`
    - `advertising_id`
@@ -160,8 +160,8 @@ Add a dashboard (app) identified by the combination of the Android package name 
 
 **To test non-organic installs:**
 
-1. Use an Android device that does not have your app installed or [register the device](https://support.appsflyer.com/hc/articles/207031996--Whitelisting-a-Test-Device).
-2. Generate a test attribution link using a [OneLink link](https://support.appsflyer.com/hc/articles/208874366). Use test as the Media source name ("&pid=test").
+1. Use an Android device that does not have your app installed or [register the device](/docs/registering-test-devices).
+2. Generate a test attribution link using a [OneLink link](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink). Use test as the Media source name ("&pid=test").
 3. Add an advertising ID being GAID, OAID, or Android ID to the click URL.
 
 ```http
@@ -173,13 +173,13 @@ Send the attribution link to yourself via email and click on it. **Once redirect
 
 | Single dashboard | Dashboard per store |
 | --- | --- |
-| 1. Check your app installation raw-data report on the Export Data page.<br>2. You should see one install conversion with the test media source. Under the column titled **Install App Store,** you should see the name of the store as it appears on the manifest.xml file.<br>3. You can also see the param "af_installstore": "STORE_NAME" in the install logs. | 1. Go to the necessary app per store dashboard.<br>2. Check the app's installs raw-data report under the Export Data page or look at the overview page of the app.<br>3. You should see one installation conversion with the “test” media source. |
+| 1. Check your app installation raw-data report on the Export Data page.<br />2. You should see one install conversion with the test media source. Under the column titled **Install App Store,** you should see the name of the store as it appears on the manifest.xml file.<br />3. You can also see the param "af_installstore": "STORE_NAME" in the install logs. | 1. Go to the necessary app per store dashboard.<br />2. Check the app's installs raw-data report under the Export Data page or look at the overview page of the app.<br />3. You should see one installation conversion with the “test” media source. |
 
 #### **Organic installs**
 
 **To test organic installs:**
 
-1. Use an Android device that does not have your app installed or that is [registered](https://support.appsflyer.com/hc/articles/207031996--Whitelisting-a-Test-Device).
+1. Use an Android device that does not have your app installed or that is [registered](/docs/registering-test-devices).
 2. Install the updated beta version app with AppsFlyer attribution SDK embedded and launch it.
 3. Check the results:
 
@@ -187,7 +187,7 @@ Send the attribution link to yourself via email and click on it. **Once redirect
 
 | Single dashboard | Dashboard per store |
 | --- | --- |
-| Check the overview page for a new organic install (under the “organic” media source). At present, with the single app method, there is no indication as to the origin of organic installs. | 1. Go to the dashboard and overview page of the app that is specific to the tested store.<br>2. You should see one installation conversion under “organic” media source. |
+| Check the overview page for a new organic install (under the “organic” media source). At present, with the single app method, there is no indication as to the origin of organic installs. | 1. Go to the dashboard and overview page of the app that is specific to the tested store.<br />2. You should see one installation conversion under “organic” media source. |
 
 ## Additional features
 
@@ -209,8 +209,8 @@ In addition to the Overview dashboard, you can use the following reporting metho
 - Cohort:
   - Combine multiple dashboards (apps) in a single report
   - View the performance of each dashboard by breaking it down by install_app_store
-- Pull API (for single app method): [Pull API](https://support.appsflyer.com/hc/articles/207034346-Pull-APIs-Pulling-AppsFlyer-Reports-by-APIs) installs raw data does not contain the **Install App Store** by default. To include the column add the following to the Pull API call: `&additional_fields=install_app_store`
-- Custom dashboard (for multiple apps method): If you use the multi-dashboard approach, use the [custom dashboard](https://support.appsflyer.com/hc/articles/212750286-AppsFlyer-s-Custom-Dashboard-Premium-) to combine performance data from several apps in one place.
+- Pull API (for single app method): [Pull API](/docs/pull-api-aggregate-data) installs raw data does not contain the **Install App Store** by default. To include the column add the following to the Pull API call: `&additional_fields=install_app_store`
+- Custom dashboard (for multiple apps method): If you use the multi-dashboard approach, use the [custom dashboard](/docs/custom-dashboards) to combine performance data from several apps in one place.
 
 ### Referrer implementation—third-party Android app stores
 
@@ -248,7 +248,7 @@ If you create an app APK with a channel setting but don't create a dashboard for
 
 | Trait | Remarks |
 | --- | --- |
-| OneLink redirection to multiple app stores | Multiple app stores can be set on the [OneLink template](https://support.appsflyer.com/hc/articles/207032246#procedures) if the app package name is the same for all app stores and you implement the single dashboard option. |
+| OneLink redirection to multiple app stores | Multiple app stores can be set on the [OneLink template](/docs/create-a-onelink-template#procedures) if the app package name is the same for all app stores and you implement the single dashboard option. |
 | Install app store | This parameter isn't available for agencies or ad networks. |
-| OneLink redirection to a third-party store | If your Android app is available exclusively through a third-party store, [you must set its Google Play status to Published out of store when adding the app](https://support.appsflyer.com/hc/articles/207447023-Setting-up-multi-store-Android-attribution#dashboard-per-store%E2%80%94adding-the-app). Choosing any other status will prevent redirection to the third-party store and will result in an error message. |
+| OneLink redirection to a third-party store | If your Android app is available exclusively through a third-party store, [you must set its Google Play status to Published out of store when adding the app](/docs/set-up-multi-store-android-attribution#dashboard-per-store%E2%80%94adding-the-app). Choosing any other status will prevent redirection to the third-party store and will result in an error message. |
 | Ad revenue | `af_ad_revenue` values cannot be grouped by `install_app_store` values. |

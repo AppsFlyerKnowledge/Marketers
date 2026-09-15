@@ -58,7 +58,7 @@ Turn on the **Activate partner** toggle.
 >
 > The toggle **must remain on** as long as you work with ChatGPT Ads. Deactivating the integration will turn off attribution and postbacks for your campaigns.
 
-Learn more about [partner activation](https://support.appsflyer.com/hc/articles/360000844778).
+Learn more about [partner activation](/docs/partner-activation-deactivation).
 
 #### General settings
 
@@ -205,7 +205,7 @@ Turn on the **Activate partner** toggle.
 >
 > The toggle **must remain on** as long as you work with ChatGPT Ads. Deactivating the integration will turn off event forwarding for your website.
 
-Learn more about [partner activation](https://support.appsflyer.com/hc/articles/360000844778).
+Learn more about [partner activation](/docs/partner-activation-deactivation).
 
 #### In-app event settings
 

@@ -4,9 +4,9 @@ excerpt: "Learn how the legacy receipt validation flow works to protect against 
 ---
 > 🚧 Important!
 >
-> This article describes the deprecated Receipt validation feature. For more information, see [Bulletin: Legacy Receipt validation is deprecated](https://support.appsflyer.com/hc/articles/42133487071121-Bulletin-Legacy-Receipt-Validation-is-deprecated)
+> This article describes the deprecated Receipt validation feature. For more information, see [Bulletin: Legacy Receipt validation is deprecated](/docs/bulletin-legacy-receipt-validation-is-deprecated)
 
-**At a glance:** Implement receipt validation to protect against fraudulent in-app purchases made in iOS and Android app stores, and make sure an in-app purchase occurred as reported. **Note**: This is a legacy feature. Learn more about the new, fully automatic, and improved [in-app purchase validation mechanism](https://support.appsflyer.com/hc/articles/42120228484241).
+**At a glance:** Implement receipt validation to protect against fraudulent in-app purchases made in iOS and Android app stores, and make sure an in-app purchase occurred as reported. **Note**: This is a legacy feature. Learn more about the new, fully automatic, and improved [in-app purchase validation mechanism](/docs/purchase-and-subscription-validation-overview).
 
 ## Receipt validation flow
 
@@ -26,7 +26,7 @@ validateAndLogInAppPurchase
 7. The AppsFlyer validation service transfers the response to the SDK.
 8. The SDK transfers the receipt validation response to the app (either success or fail).
 
-If receipt validation fails, the event displays in the [blocked in-app events raw-data](https://support.appsflyer.com/hc/articles/360015179337#inapp-level-blocked-reasons) report (available to Protect360 subscribers).
+If receipt validation fails, the event displays in the [blocked in-app events raw-data](/docs/protect360-raw-data-reports#inapp-level-blocked-reasons) report (available to Protect360 subscribers).
 
 For details about the implementation of receipt validation, see our developer SDK documentation:
 
@@ -46,5 +46,5 @@ For details about the implementation of receipt validation, see our developer SD
 
 > 📘 Note
 >
-> - The legacy receipt validation explained here does not support _StoreKit v2_. For the current version, see [Set up integration with iOS App Store.](https://support.appsflyer.com/hc/articles/7459048170769-Set-up-in-app-purchase-and-subscription-revenue-measurement#step-2-set-up-notifications-from-the-ios-app-store)
+> - The legacy receipt validation explained here does not support _StoreKit v2_. For the current version, see Set up integration with iOS App Store.
 > - Receipt validation for in-app purchases isn't supported for third-party Android app stores.

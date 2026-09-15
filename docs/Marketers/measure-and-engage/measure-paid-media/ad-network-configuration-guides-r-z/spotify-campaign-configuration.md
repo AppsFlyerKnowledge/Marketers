@@ -25,13 +25,13 @@ At a glance: Spotify, an AppsFlyer ad network integrated partner, uses its enhan
 
 5. Complete the configuration using the relevant tabs, as described below.
 
-Learn more about the [partner configuration window header](https://support.appsflyer.com/hc/articles/4410395957521#about-the-integrated-partner-page).
+Learn more about the [partner configuration window header](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
-Learn more about [partner activation rules](https://support.appsflyer.com/hc/articles/360000844778#activating-a-partner).
+Learn more about [partner activation rules](/docs/partner-activation-deactivation#activating-a-partner).
 
 > ❗️ Important
 >
-> - The [general settings](https://support.appsflyer.com/hc/articles/4410395957521#d-general%20settings) step in the Integration tab is **mandatory** for all partners.
+> - The [general settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners.
 > - All the rest of the steps are either descriptive or **optional.**
 
 ## Integration tab
@@ -85,4 +85,4 @@ The following are the permissions types that advertisers can grant Spotify:
 - **Allow access to your aggregate revenue data** - only to the revenue data attributed to the partner.
 - **Allow access to your Protect360 dashboard & raw data via API** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser.
 
-Learn more about granting [ad network permissions](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).

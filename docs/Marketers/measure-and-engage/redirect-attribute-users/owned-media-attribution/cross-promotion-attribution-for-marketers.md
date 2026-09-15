@@ -8,7 +8,7 @@ At a glance: Attribute installs from cross-promotion campaigns that promote your
 
 ## About cross-promotion
 
-Cross-promotion campaigns are one of the best ways to promote your existing apps or guide your users to new apps launched by your company. These types of campaigns can result in higher conversion and retention rates compared with most other sources of traffic. Since cross-promotion is advertising on owned media, you can use [device ID matching](https://support.appsflyer.com/hc/articles/115004481946#attributing-crosspromotion) to deterministically attribute new installs. Cross-promotion attribution is available for all accounts, regardless of your AppsFlyer plan.
+Cross-promotion campaigns are one of the best ways to promote your existing apps or guide your users to new apps launched by your company. These types of campaigns can result in higher conversion and retention rates compared with most other sources of traffic. Since cross-promotion is advertising on owned media, you can use [device ID matching](/docs/cross-promotion-attribution-for-marketers#attributing-crosspromotion) to deterministically attribute new installs. Cross-promotion attribution is available for all accounts, regardless of your AppsFlyer plan.
 
 The following image shows the promoted app's dashboard with a breakdown of metrics for campaigns running on owned media ( **af\_cross\_promotion**) and other media sources. You can see that the number of installs and conversion rate for the cross-promotion campaign are much higher than those for the other media sources.
 
@@ -17,10 +17,10 @@ The following image shows the promoted app's dashboard with a breakdown of metri
 ### How does cross-promotion work?
 
 1. The user is served a cross-promotion ad on an existing app your company owns. The ad is promoting another app also owned by your company. The ad creative can be a banner, video, or any clickable object.
-2. [optional] The [SDK records and sends](https://support.appsflyer.com/hc/articles/4410480466065) a cross-promotion impression to AppsFlyer.
+2. [optional] The [SDK records and sends](/docs/cross-promotion-attribution-for-developers) a cross-promotion impression to AppsFlyer.
 3. The user clicks on the ad.
 4. The SDK records the click and redirects the user to the promoted app's page on the app store. The click recorded by the SDK already includes the device advertising ID.
-5. Once the promoted app is installed and launched, the [AppsFlyer dashboard](https://support.appsflyer.com/hc/articles/115004481946#promoted-app-dashboard) shows the newly acquired user under the media source **af\_cross\_promotion**.
+5. Once the promoted app is installed and launched, the [AppsFlyer dashboard](/docs/cross-promotion-attribution-for-marketers#promoted-app-dashboard) shows the newly acquired user under the media source **af\_cross\_promotion**.
 
    * To change the media source value, your developer needs to add a custom parameter called `pid` with the value you want.
    > 📘 Note
@@ -33,7 +33,7 @@ The event name for Android is `af_cross_promotion` and for iOS it's `af_cross_pr
 
 ## Attributing cross-promotion
 
-AppsFlyer allows you to use device ID matching as the attribution method for recording and attributing installs that originate from your cross-promotion campaigns. You can attribute both impressions and clicks, enabling you to calculate the [click-through rate](https://support.appsflyer.com/hc/articles/115000610363#marketing-funnel-stages-and-conversion-rates::74b1530a) or installs/impressions ratio.
+AppsFlyer allows you to use device ID matching as the attribution method for recording and attributing installs that originate from your cross-promotion campaigns. You can attribute both impressions and clicks, enabling you to calculate the [click-through rate](/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates::74b1530a) or installs/impressions ratio.
 
 The device identifier used for matching depends on the following:
 
@@ -56,10 +56,10 @@ The flow for the marketer and the developer is as follows:
 | Step | Role | Task | Details |
 | --- | --- | --- | --- |
 | 1 | Marketer | Decide on the existing apps in which to run the cross-promotion campaign. | The source app attributed with the install will appear as the **Site ID** in the promoted app’s dashboard. |
-| 2 | Marketer | Determine if you want to add [additional parameters](https://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters) such as lookback window, ad set name, and subscriber parameters. Send these additional parameter names and values to the developer. |  |
-| 3 | Developer | Implement the code in the SDK. | Developer documentation is [here](https://support.appsflyer.com/hc/articles/4410480466065). |
-| 4 | Marketer | In the [promoted app's dashboard](https://support.appsflyer.com/hc/articles/115004481946#promoted-app-dashboard), view the traffic coming from the cross-promotion campaign and optimize your campaigns accordingly. |  |
-| 5 [Optional] | Marketer | Create a [custom dashboard](https://support.appsflyer.com/hc/articles/115004481946#custom-dashboard) to compare cross-promotion traffic and share data with account users. |  |
+| 2 | Marketer | Determine if you want to add [additional parameters](/docs/about-link-structure-and-parameters) such as lookback window, ad set name, and subscriber parameters. Send these additional parameter names and values to the developer. |  |
+| 3 | Developer | Implement the code in the SDK. | Developer documentation is [here](/docs/cross-promotion-attribution-for-developers). |
+| 4 | Marketer | In the [promoted app's dashboard](/docs/cross-promotion-attribution-for-marketers#promoted-app-dashboard), view the traffic coming from the cross-promotion campaign and optimize your campaigns accordingly. |  |
+| 5 [Optional] | Marketer | Create a [custom dashboard](/docs/cross-promotion-attribution-for-marketers#custom-dashboard) to compare cross-promotion traffic and share data with account users. |  |
 
 ## Viewing cross-promotion data
 
@@ -88,13 +88,13 @@ When you check the dashboard you see that the conversion rate for Golfing,18.22%
 Based on these insights, you could optimize your campaign as follows:
 
 * Run a full-scale cross-promotion campaign on Golfing.
-* Start to [attribute impressions](https://support.appsflyer.com/hc/articles/210084473#viewthrough-attribution-flow) in addition to clicks. Since you initially set up your campaign to measure only clicks, installs from users that see the ad without clicking and then install later are counted as organic installs instead of non-organic. This means you don't yet have a complete picture of the campaign performance for each source app.
+* Start to [attribute impressions](/docs/measure-view-through-engagements#viewthrough-attribution-flow) in addition to clicks. Since you initially set up your campaign to measure only clicks, installs from users that see the ad without clicking and then install later are counted as organic installs instead of non-organic. This means you don't yet have a complete picture of the campaign performance for each source app.
 
 ### Custom dashboard
 
 The promoted app's dashboard is great for getting a picture of which source apps are driving the best traffic. But what about if you want to evaluate the performance of a single existing app being used to promote multiple apps? This is where a custom dashboard can do exactly what you need.
 
-A [custom dashboard](https://support.appsflyer.com/hc/articles/212750286) allows you to view information from several promoted apps in one place, including cross-promotion traffic. In addition, a custom dashboard is a quick and easy way to share data with account users.
+A [custom dashboard](/docs/custom-dashboards) allows you to view information from several promoted apps in one place, including cross-promotion traffic. In addition, a custom dashboard is a quick and easy way to share data with account users.
 
 #### Example
 

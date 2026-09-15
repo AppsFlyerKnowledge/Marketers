@@ -8,7 +8,7 @@ The Adobe Launch SDK is an integral part of the Adobe Experience Platform. Adobe
 
 > 📘 Note
 >
-> If you're using the Adobe Launch extension, there's no need for the standard [Adobe Analytics integration](https://support.appsflyer.com/hc/articles/115003326706).
+> If you're using the Adobe Launch extension, there's no need for the standard [Adobe Analytics integration](/docs/adobe-analytics-integration-with-appsflyer).
 
 ## Prerequisites
 
@@ -69,7 +69,7 @@ Install the following extensions in Adobe Launch:
 2. Search for and install _**AppsFlyer SDK Extension**_.
 3. Under _**AppsFlyer iOS App ID**_, specify the iOS app ID that you got in the prerequisites step.
 4. Under _**AppsFlyer Dev Key**_ specify the dev key that you got in the prerequisites step.
-5. Enable _**Send attribution data to Adobe Analytics**_. Note that there are some [restrictions on sharing user-level data with 3rd-party analytics platforms](https://support.appsflyer.com/hc/articles/360006091197).
+5. Enable _**Send attribution data to Adobe Analytics**_. Note that there are some [restrictions on sharing user-level data with 3rd-party analytics platforms](/docs/user-level-data-retention).
 6. Click _**Save**_.
 
 #### Install Profile and Mobile Core extension
@@ -152,7 +152,7 @@ If you are using ProGuard and want to use Google's new referrer API, set the fol
 
 2.4 Setting required permissions
 
-Adding permissions helps increase the rate of [Probabilistic modeling attribution](https://support.appsflyer.com/hc/articles/207447053-AppsFlyer-s-Attribution-Model#probabilistic-modeling). It also allows the SDK to send more data like Wifi and carrier network data. You can find this data in [raw data reports](https://support.appsflyer.com/hc/articles/209680773) and use it for analysis and optimization of campaigns.
+Adding permissions helps increase the rate of [Probabilistic modeling attribution](/docs/appsflyer-attribution-model#probabilistic-modeling). It also allows the SDK to send more data like Wifi and carrier network data. You can find this data in [raw data reports](/docs/raw-data-reporting-overview) and use it for analysis and optimization of campaigns.
 
 #### Add Required Permissions
 

@@ -42,7 +42,7 @@ For information about how to prepare in-app events, see the [Create in-app event
 
 ### Prepare engagement in-app events
 
-[On-site campaigns](https://support.appsflyer.com/hc/articles/32143318560017--WIP-Data-collaboration-platform-Collaboration-measurement-Overview#onsite-and-offsite-campaign-measurement) can receive engagements via in-app events. The engagement in-app event should include the attribution data in the `event_value` key. See, as an example, the following `event_value` JSON structure:
+[On-site campaigns](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#onsite-and-offsite-campaign-measurement) can receive engagements via in-app events. The engagement in-app event should include the attribution data in the `event_value` key. See, as an example, the following `event_value` JSON structure:
 
 ```json
 "event_value": {
@@ -67,7 +67,7 @@ You can use the fields below in your `event_value` JSON key:
 | `campaign_id` | Campaign ID | Yes | No | `string` |
 | `campaign_name` | Campaign name | No | No | `string` |
 | `engagement_type` | Differentiates between clicks and impressions | Yes | No | `string` |
-| `media_source` | Media source attributed to an event or restricted ( [see more](https://support.appsflyer.com/hc/articles/360006868017#media-source-restrictions)) | Yes | No | `string` |
+| `media_source` | Media source attributed to an event or restricted ( [see more](/docs/about-raw-data-identifier-restrictions#media-source-restrictions)) | Yes | No | `string` |
 | `ad_id` | Ad ID | No | No | `string` |
 | `ad_name` | Ad name | No | No | `string` |
 | `ad_type` | Example: banner, footer | No | No | `string` |
@@ -192,7 +192,7 @@ Use the schema below to create the engagement data source.
 | `app_id` | Unique app identifier in AppsFlyer. Example: iOS: `id123456789`, Android: `com.appsflyer.referrersender` | Optional | `string` |
 | `campaign_id` | Campaign ID | Mandatory | `string` |
 | `campaign_name` | Campaign name | Optional | `string` |
-| `media_source` | Media source attributed to an event or restricted ( [see more](https://support.appsflyer.com/hc/articles/360006868017#media-source-restrictions)) | Mandatory | `string` |
+| `media_source` | Media source attributed to an event or restricted ( [see more](/docs/about-raw-data-identifier-restrictions#media-source-restrictions)) | Mandatory | `string` |
 | `engagement_type` | Differentiates between clicks and impressions | Mandatory | `string` |
 | `event_name` | Set by the advertiser | Mandatory | `string` |
 | `event_time` | Event time, rounded down to the nearest hour | Mandatory | `datetime` |

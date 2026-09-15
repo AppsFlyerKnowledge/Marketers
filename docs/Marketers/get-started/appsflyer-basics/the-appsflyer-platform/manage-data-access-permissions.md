@@ -10,7 +10,7 @@ Advertisers, ad networks, and agencies have access to data according to their ac
 
 | Account type | Can access |
 | --- | --- |
-| Advertiser | All their data in AppsFlyer, although some data is masked or hashed:<br>- Traffic attributed to restricted media sources due to regulatory requirements or data-sharing terms. |
+| Advertiser | All their data in AppsFlyer, although some data is masked or hashed:<br />- Traffic attributed to restricted media sources due to regulatory requirements or data-sharing terms. |
 | Ad network | Data attributed to the ad network |
 | Agency | Data relating to campaigns run by the agency and to which the traffic is attributed |
 
@@ -48,15 +48,15 @@ Abbreviations key:
 | Loyal users |  |  | [P](/docs/set-up-an-integrated-partner#access-aggregate-loyal-users-data) | [P](/docs/set-up-an-integrated-partner#access-aggregate-loyal-users-data) |
 | People-Based Attribution | – | – | – | – |
 | Reports | Raw Data Export | [P](/docs/set-up-an-integrated-partner#access-rawdata-reports) | [P](/docs/set-up-an-integrated-partner#access-rawdata-reports) | L(2) | L(2) |
-| Aggregated Data Export | **✓** | **✓** | [P](https://support.appsflyer.com/hc/articles/4410395957521#access-aggregate-conversions-data) | [P](https://support.appsflyer.com/hc/articles/4410395957521#access-aggregate-conversions-data) |
+| Aggregated Data Export | **✓** | **✓** | [P](/docs/set-up-an-integrated-partner#access-aggregate-conversions-data) | [P](/docs/set-up-an-integrated-partner#access-aggregate-conversions-data) |
 | Protect360 dashboard & raw data | [P](/docs/set-up-an-integrated-partner#access-protect360-dashboard-raw-data::dd9829fd) | [P](/docs/set-up-an-integrated-partner#access-protect360-dashboard-raw-data::dd9829fd) | [P](/docs/set-up-an-integrated-partner#access-protect360-dashboard-raw-data) | [P](/docs/set-up-an-integrated-partner#access-protect360-dashboard-raw-data) |
 | Ad revenue raw data (UA signals) | – | – | [P](/docs/set-up-an-integrated-partner#access-ad-revenue-raw-data) | [P](/docs/set-up-an-integrated-partner#access-ad-revenue-raw-data) |
-| Retention reports | [P](https://support.appsflyer.com/hc/articles/4410395957521#access-retention-and-cohort-reports) | [P](https://support.appsflyer.com/hc/articles/4410395957521#access-retention-and-cohort-reports) | [P](https://support.appsflyer.com/hc/articles/4410395957521#access-retention-report) | [P](https://support.appsflyer.com/hc/articles/4410395957521#access-retention-report) |
+| Retention reports | [P](/docs/set-up-an-integrated-partner#access-retention-and-cohort-reports) | [P](/docs/set-up-an-integrated-partner#access-retention-and-cohort-reports) | [P](/docs/set-up-an-integrated-partner#access-retention-report) | [P](/docs/set-up-an-integrated-partner#access-retention-report) |
 | Pivot | – | – | – | – |
 | Configuration | Active Integrations | Read-only | Read-only | Read-only | Read-only |
 | Active Integrations > Configure integration | – | – | [P](/docs/set-up-an-integrated-partner#configure-integration) | [P](/docs/set-up-an-integrated-partner#configure-integration) |
 | Active Integrations > Configure in-app event postbacks | [P](/docs/set-up-an-integrated-partner#configure-inapp-event-postbacks::8743ba60) | [P](/docs/set-up-an-integrated-partner#configure-inapp-event-postbacks::8743ba60) | [P](/docs/set-up-an-integrated-partner#configure-inapp-event-postbacks) | [P](/docs/set-up-an-integrated-partner#configure-inapp-event-postbacks) |
-| Validation Rules | [P](/docs/set-up-an-integrated-partner#add-validation-rules) | [P](/docs/set-up-an-integrated-partner#add-validation-rules) | [P](https://support.appsflyer.com/hc/articles/%20%20%20%20https://support.appsflyer.com/hc/en-us/articles/4410395957521-Set-up-an-integrated-partner#view-validation-rules)(3) | [P](https://support.appsflyer.com/hc/articles/%20%20%20%20https://support.appsflyer.com/hc/en-us/articles/4410395957521-Set-up-an-integrated-partner#view-validation-rules)(3) |
+| Validation Rules | [P](/docs/set-up-an-integrated-partner#add-validation-rules) | [P](/docs/set-up-an-integrated-partner#add-validation-rules) | P(3) | P(3) |
 | Approved Agencies | – | – | – | – |
 | App Settings | L(4) | – | – | – |
 | Experiences & Deep Linking | Configure OneLink | – | – | – | – |
@@ -71,13 +71,13 @@ Abbreviations key:
 1. If the advertiser has [Protect360](/docs/protect360-anti-fraud-guide) (premium)—you have access to the full dashboard. If not, you have access to the lite dashboard.
 2. Limited to raw data in postbacks attributed to the partner only. 
 3. Read-only.
-4. Limited to turning on [Agency transparency](https://support.appsflyer.com/hc/articles/360002381617#transparency) only, for agencies with legacy non-transparency.
+4. Limited to turning on [Agency transparency](/docs/getting-started-agency-onboarding#transparency) only, for agencies with legacy non-transparency.
 5. Agencies can't create OneLink templates or links.
 6. Partners can upload spend data for the selected app.
 
 #### Access for advertisers
 
-The [Admin role](/docs/user-management#admin%E2%80%94a-special-role) in an advertiser account has access to all features listed in the [table above](https://support.appsflyer.com/hc/articles/115005972889#access-by-feature). All other users have access according to the [roles](/docs/user-management#more-about-roles) they're assigned to.
+The [Admin role](/docs/user-management#admin%E2%80%94a-special-role) in an advertiser account has access to all features listed in the [table above](/docs/manage-data-access-permissions#access-by-feature). All other users have access according to the [roles](/docs/user-management#more-about-roles) they're assigned to.
 
 #### Access to the aggregate cost and revenue data
 

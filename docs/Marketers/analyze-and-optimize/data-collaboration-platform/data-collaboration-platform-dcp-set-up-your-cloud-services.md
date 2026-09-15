@@ -12,7 +12,7 @@ DCP uses two types of connections to move data between your cloud services and t
 Setting up a connection is a two-step process:
 
 - **Step 1:** Use your cloud service's interface to prepare it for use with DCP.
-- **Step 2:** Connect it to DCP in the AppsFlyer platform. See [Data Collaboration Platform (DCP) - Add connections](https://support.appsflyer.com/hc/articles/24603890457617).
+- **Step 2:** Connect it to DCP in the AppsFlyer platform. See [Data Collaboration Platform (DCP) - Add connections](/docs/data-collaboration-platform-dcp-add-connections).
 
 The table below shows which services are supported for each connection type:
 
@@ -199,20 +199,20 @@ Salesforce Cloud/CRM supports source connections only. See [DCP - Integration wi
 | --- | --- |
 | Supported cloud services | Amazon S3 and GCS support both source and cloud storage connections. BigQuery, Snowflake, and Salesforce Cloud/CRM support source connections only. |
 | Bucket use | S3 and GCS buckets must be for the exclusive use of DCP. No other service can write data to the bucket. |
-| DCR naming requirements | The following naming requirements apply to all DCR data entities, including buckets, folders, and files:<br>- **Maximum length:** 200 characters<br>- **Valid characters:** letters (A-Z, a-z), numbers (0-9), hyphens (-)<br>- **Invalid characters:** spaces, and all other symbols or special characters<br>- Numbers and hyphens cannot be the first character of a name<br>- **Special-purpose characters only:**  - Equal signs (=): only in [date and version folder names](https://support.appsflyer.com/hc/articles/5041487011601#nested-subfolders-for-each-date-and-version)<br>  - Underscores (_): only in [multi-part GZIP file names](https://support.appsflyer.com/hc/articles/24740010687249#file-format) or [_SUCCESS files](https://support.appsflyer.com/hc/articles/24740010687249#_success-files)<br>  - Dots (.): only directly before filename extensions (.csv, .gzip) |
+| DCR naming requirements | The following naming requirements apply to all DCR data entities, including buckets, folders, and files:<br />- **Maximum length:** 200 characters<br />- **Valid characters:** letters (A-Z, a-z), numbers (0-9), hyphens (-)<br />- **Invalid characters:** spaces, and all other symbols or special characters<br />- Numbers and hyphens cannot be the first character of a name<br />- **Special-purpose characters only:**  - Equal signs (=): only in [date and version folder names](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version)<br />  - Underscores (_): only in [multi-part GZIP file names](/docs/data-collaboration-platform-dcp-create-and-manage-sources#file-format) or [_SUCCESS files](/docs/data-collaboration-platform-dcp-create-and-manage-sources#_success-files)<br />  - Dots (.): only directly before filename extensions (.csv, .gzip) |
 | Bucket naming | Bucket names must begin with `af-dcr-` followed by your text. Example: `af-dcr-example-bucket`. |
 
 <Cards>
-  <Card title="DCP - Add connections" href="https://support.appsflyer.com/hc/articles/24603890457617">
+  <Card title="DCP - Add connections" href="/docs/data-collaboration-platform-dcp-add-connections">
     Learn how to connect your prepared cloud services to DCP in the AppsFlyer platform.
   </Card>
-  <Card title="DCP - Build and activate audiences" href="https://support.appsflyer.com/hc/articles/24522739719057">
+  <Card title="DCP - Build and activate audiences" href="/docs/data-collaboration-platform-dcp-build-and-activate-audiences">
     Learn how to build and activate audiences after setting up your connections.
   </Card>
-  <Card title="DCP - Create and manage sources" href="https://support.appsflyer.com/hc/articles/24740010687249">
+  <Card title="DCP - Create and manage sources" href="/docs/data-collaboration-platform-dcp-create-and-manage-sources">
     Learn how to create and manage your data sources within the platform.
   </Card>
-  <Card title="Data Collaboration Platform (DCP) guide" href="https://support.appsflyer.com/hc/articles/26183285566353">
+  <Card title="Data Collaboration Platform (DCP) guide" href="/docs/data-collaboration-platform-dcp-guide">
     Read the comprehensive guide to the Data Collaboration Platform.
   </Card>
 </Cards>

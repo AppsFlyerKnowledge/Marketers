@@ -40,15 +40,15 @@ In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations**
 
 #### Activate partner
 
-On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with Appcharge. Learn more about [partner activation](https://support.appsflyer.com/hc/articles/360000844778).
+On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with Appcharge. Learn more about [partner activation](/docs/partner-activation-deactivation).
 
 #### Advanced Privacy
 
-For iOS apps, the [Advance Privacy](https://support.appsflyer.com/hc/articles/360018515798) toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the [Aggregated Advanced Privacy](https://support.appsflyer.com/hc/articles/360018515798) toggle is turned on in the App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked by default.
+For iOS apps, the [Advance Privacy](/docs/apply-aggregated-advanced-privacy-framework) toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the [Aggregated Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework) toggle is turned on in the App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked by default.
 
 #### Default postbacks
 
-AppsFlyer sends default postbacks to Appcharge following user installs. Use this section to [define these postbacks](https://support.appsflyer.com/hc/articles/4410395957521#default%20postbacks).
+AppsFlyer sends default postbacks to Appcharge following user installs. Use this section to [define these postbacks](/docs/set-up-an-integrated-partner#default%20postbacks).
 
 - **Off:** Install postbacks aren't sent to Appcharge.
 

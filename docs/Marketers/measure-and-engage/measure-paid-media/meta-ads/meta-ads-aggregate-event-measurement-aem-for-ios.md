@@ -74,7 +74,7 @@ When an app is eligible for AEM on Meta Ads, during the Ad Set creation process 
 **Advanced data sharing** enables you to make all qualifying conversion events available to Meta ads for measurement, including events from users for whom an Advertiser ID is unavailable.
 
 - When turned off, Advanced data sharing is limited to conversion events for users whose Advertiser ID is available. Events from users without an Advertiser ID are not shared or attributed.
-- When turned on, Advanced data sharing enables conversion events to be made available to Meta ads for all users, including those where an Advertiser ID is not available. AppsFlyer attributes these events. The data made available may include additional device-related information that does not involve the device ID. To learn more, see [Advanced data sharing](https://support.appsflyer.com/hc/articles/207033826-Meta-ads-integration-setup#advanced_data_sharing).
+- When turned on, Advanced data sharing enables conversion events to be made available to Meta ads for all users, including those where an Advertiser ID is not available. AppsFlyer attributes these events. The data made available may include additional device-related information that does not involve the device ID. To learn more, see [Advanced data sharing](/docs/meta-ads-integration-setup#advanced_data_sharing).
 
 ![aem](https://files.readme.io/77e44d893994581dbe1a058fb5bebbf9b5e8bf167abe6e9d35ea8aa809ceca4b-46192056604305.png)
 

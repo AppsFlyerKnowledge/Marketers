@@ -4,43 +4,42 @@ excerpt: "Learn how to configure the AppsFlyer integration with Kahuna to share 
 ---
 **At a glance:** Kahuna, an AppsFlyer integrated partner, dedicated to empowering businesses to grow and thrive in the mobile era. We enable a new level of authentic engagement between brands and their customers wherever they are — the web, email, mobile, social channels — through personalized communication at scale. Powered by big data and machine learning, we help create delightful experiences for every customer with the perfect message, delivered on the right channel, at just the right time.
 
-> ❗️ Important!
+> 📘 **Note**
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> #### Important!
+>
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
 
 Follow the instructions below to configure the integration with Kahuna:
 
 1. Minimum requirements - AppsFlyer SDK:
 
-- Android – version 2.3.1.18 and above
-- iOS – version 3.3.3 and above
+* Android – version 2.3.1.18 and above
+* iOS – version 3.3.3 and above
 
 2. Integrating with Kahuna requires that the Kahuna [Device ID](https://www.appsflyer.com/mobile-fraud-glossary/deviceid/) (Kahuna’s unique user identifier) is populated in AppsFlyer's SDK. This parameter is sent with every postback and enables the identification of each user. To perform this you must insert the following strings to your app code:
 
-> 📘 Important Note
+> 📘 **Note**
+>
+> #### Important Note
 >
 > Make sure the lines of code are inserted at the correct place – after Kahuna SDK was launched and before the appsflyer.sendtracking (Android) / trackAppLaunch (iOS) methods are called.
 
-<Tabs>
-<Tab title="Android">
 
-```java
+For AndroidFor iOS
+
+```
 HashMap<String, Object> customData = new HashMap<String,Object>();
 String deviceId = Kahuna.getInstance().getKahunaDeviceId();
-customData.put("customData", deviceId);
+customData .put("customData", deviceId);
 AppsFlyerLib.setAdditionalData(customData);
 ```
 
-</Tab>
-<Tab title="iOS">
-
-```objectivec
+```
 NSString *kahunaDeviceID = [Kahuna getKahunaDeviceId];
 [[AppsFlyerTracker sharedTracker] setAdditionalData:@{@"customData" : kahunaDeviceID}];
 ```
-
-</Tab>
-</Tabs>
 
 ## Setting up Kahuna
 
@@ -48,17 +47,15 @@ NSString *kahunaDeviceID = [Kahuna getKahunaDeviceId];
 
 **To set up a new integration:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
-
-( **To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.
-
-**Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
-The Kahuna configuration window uses only the _**Integration**_ tab.
+The Kahuna configuration window uses only the ***Integration*** tab.
 
 ## Integration tab
 
@@ -66,15 +63,14 @@ The Integration Tab is divided into different sections as described below.
 
 ### Activate partner
 
-On the **first visit** here, you will need to toggle below. ON the _**Activate Partner**_ button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.
-
-For more details about partner activation please click [here](https://support.appsflyer.com/hc/articles/360000844778).
+On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
+For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 
 ### General settings
 
 **Kahuna Secret Key, Staging and Production**
 
-Kahuna connects with AppsFlyer via a unique Secret Key. If you don't already have it, you must obtain it from Kahuna to continue with the integration or follow the steps below. !
+Kahuna connects with AppsFlyer via a unique Secret Key. If you don't already have it, you must obtain it from Kahuna to continue with the integration or follow the steps below. [![](https://support.appsflyer.com/hc/article_attachments/360002216249)](https://support.appsflyer.com/hc/article_attachments/360002216249)
 
 ### Obtaining the kahuna secret key
 
@@ -82,15 +78,19 @@ Kahuna connects with AppsFlyer via a unique Secret Key. If you don't already hav
 
 2. Click the user icon and Select **Settings** on the right-hand corner of dashboard menu
 
+[![](https://support.appsflyer.com/hc/en-us/article_attachments/207206166/Kahuna_1.png)](https://support.appsflyer.com/hc/en-us/article_attachments/207206166/Kahuna_1.png)
+
 3. Copy the Kahuna secret key:
+
+[![](https://support.appsflyer.com/hc/en-us/article_attachments/207229823/Kahuna_2.png)](https://support.appsflyer.com/hc/en-us/article_attachments/207229823/Kahuna_2.png)
 
 4. Select **APIs & Integrations**– on this page you can find the parameters:
 
-- Insert the Kahuna Master Key taken from Kahuna console (see Section 3)
-- If you want to send the events to Kahuna’s Sandbox environment insert the letter S in the Staging box (see “Testing with Kahuna Sandbox”)
-- For the Production environment insert the letter P in the production
-- If you insert both, the events are sent to production
-- Click **Save**
+* Insert the Kahuna Master Key taken from Kahuna console (see Section 3)
+* If you want to send the events to Kahuna’s Sandbox environment insert the letter S in the Staging box (see “Testing with Kahuna Sandbox”)
+* For the Production environment insert the letter P in the production
+* If you insert both, the events are sent to production
+* Click **Save**
 
 ### Default postbacks
 
@@ -104,10 +104,10 @@ Click **Save.**
 
 Once you have saved the configuration, AppsFlyer sends the following data to Kahuna for every organic and non-organic install:
 
-- Kahuna Dev_ID
-- Media Source
-- Country code
-- OS Version
+* Kahuna Dev\_ID
+* Media Source
+* Country code
+* OS Version
 
 ## Attribution link tab
 
@@ -129,15 +129,23 @@ Permissions are not available for Kahuna.
 
 The install events can be viewed as Newbies in Kahuna's main dashboard.
 
+[![](https://support.appsflyer.com/hc/en-us/article_attachments/207230483/Kahuna_5.png)](https://support.appsflyer.com/hc/en-us/article_attachments/207230483/Kahuna_5.png)
+
 You can search for a specific user or go to “Top People” in your left side navigation.
 
-Selecting one of the users opens the Mini Profile where you can see the install event “af_install” in the Top Events section:
+[![](https://support.appsflyer.com/hc/en-us/article_attachments/207230503/Kahuna_6.png)](https://support.appsflyer.com/hc/en-us/article_attachments/207230503/Kahuna_6.png)
+
+Selecting one of the users opens the Mini Profile where you can see the install event “af\_install” in the Top Events section:
+
+[![](https://support.appsflyer.com/hc/en-us/article_attachments/207230563/Kahuna_7.png)](https://support.appsflyer.com/hc/en-us/article_attachments/207230563/Kahuna_7.png)
 
 ## Testing with sandbox
 
 If you haven’t released your app to the app store yet and want to test the integration from Kahuna’s Sandbox environment, follow these steps:
 
 1. Make sure you enter “s” in the Staging Textbox when configuring Kahuna within AppsFlyer
+
+[![](https://support.appsflyer.com/hc/article_attachments/360002217229)](https://support.appsflyer.com/hc/article_attachments/360002217229)
 
 2. Make sure you have added the code to your App to integrate AppsFlyer and Kahuna SDKs as described in the above sections
 
@@ -147,10 +155,14 @@ If you haven’t released your app to the app store yet and want to test the int
 
 5. Uninstall the app from your device
 
-6. Configure this URL with your data (app package name, advertising ID, and campaign name...don’t include the brackets) - [https://app.appsflyer.com/[APP PACKAGE NAME]?pid=[SOMETHING]&advertising_id=](https://app.appsflyer.com/com.dailylabs.kahunatest?pid=Testing_Installs&advertising_id=0eea1488-3037-44b2-a944-11f8bfc3e479)[DEVICE’S ADVERTISING ID]
+6. Configure this URL with your data (app package name, advertising ID, and campaign name...don’t include the brackets) - [https://app.appsflyer.com/[APP PACKAGE NAME]?pid=[SOMETHING]&advertising\_id=](https://app.appsflyer.com/com.dailylabs.kahunatest?pid=Testing_Installs&advertising_id=0eea1488-3037-44b2-a944-11f8bfc3e479)[DEVICE’S ADVERTISING ID]
 
 7. Go to that URL, you may see this:
 
+[![](https://support.appsflyer.com/hc/en-us/article_attachments/207230963/Kahuna_9.png)](https://support.appsflyer.com/hc/en-us/article_attachments/207230963/Kahuna_9.png)
+
 8. Install the App on your device
 
-9. Go to Kahuna’s dashboard and search for the user (you can enable Kahuna debugging and look at the logs to get the Kahuna unique device ID for that user.. “dev_id”... or if your app requires log-in and you pass credentials to Kahuna, then you can search by that credential also). Once you find the user, you should see an “af_install” event for that user.
+9. Go to Kahuna’s dashboard and search for the user (you can enable Kahuna debugging and look at the logs to get the Kahuna unique device ID for that user.. “dev\_id”... or if your app requires log-in and you pass credentials to Kahuna, then you can search by that credential also). Once you find the user, you should see an “af\_install” event for that user.
+
+[![](https://support.appsflyer.com/hc/en-us/article_attachments/207207606/Kahuna_10.png)](https://support.appsflyer.com/hc/en-us/article_attachments/207207606/Kahuna_10.png)

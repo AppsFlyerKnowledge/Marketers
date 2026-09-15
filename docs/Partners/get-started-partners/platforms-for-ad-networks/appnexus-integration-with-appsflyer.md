@@ -16,24 +16,24 @@ Below you can find the base attribution link with a detailed explanation per eac
 | --- | --- |
 | https://app.appsflyer.com | AppsFlyer end-Point |
 | app\_id | Application Unique ID - Dynamic value changed per app promoted |
-| pid | Media source name include **\_int** to identify<br>**integrated** network at AppsFlyer servers |
+| pid | Media source name include **\_int** to identify<br />**integrated** network at AppsFlyer servers |
 | c | Campaign name |
 
 **AppNexus Advertising ID Macros**
 
 | Operating System | Macro |
 | --- | --- |
-| Android | &advertising\_id=${DEVICE\_AAID} |
-| iOS | idfa=${DEVICE\_APPLE\_IDA} |
+| Android | &advertising\_id=$`{DEVICE\_AAID}` |
+| iOS | idfa=$`{DEVICE\_APPLE\_IDA}` |
 
 **Recommended Attribution Link Parameters**
 
 | AppsFlyer Parameter | AppNexus Macros | Description |
 | --- | --- | --- |
-| clickid | ${SSP\_DATA} | Request ID of each user session - **Required** |
-| af\_siteid | ${PUBLISHER\_ID} | ID of the affiliate promoting the offer - **Optional** |
+| clickid | $`{SSP\_DATA}` | Request ID of each user session - **Required** |
+| af\_siteid | $`{PUBLISHER\_ID}` | ID of the affiliate promoting the offer - **Optional** |
 
-For the complete AppsFlyer parameter list [click here](https://support.appsflyer.com/hc/articles/207447163).
+For the complete AppsFlyer parameter list [click here](/docs/about-link-structure-and-parameters).
 
 For the complete AppNexus macro list [click here](https://wiki.appnexus.com/display/sdk/Welcome).
 
@@ -51,7 +51,7 @@ Global Install Postback:
 https://sspx-router.adnxs.net/sspx?id={ID}&sspdata={clickid}
 ```
 
-{ID} the Network ID provided by AppNexus, inserted in AppsFlyer dashboard per app.
+`{ID}` the Network ID provided by AppNexus, inserted in AppsFlyer dashboard per app.
 
 ### AppsFlyer install dashboard
 

@@ -17,11 +17,11 @@ With Product Lines, you can:
 
 > 📘 Optional cross-platform re-engagement
 >
-> Cross-platform re-engagement measurement is optional. When you opt in, AppsFlyer can attribute eligible returning-user activity to the media source that re-engaged the user across platforms. For more information, see [Cross-platform re-engagement measurement](https://support.appsflyer.com/hc/articles/45444294953361).
+> Cross-platform re-engagement measurement is optional. When you opt in, AppsFlyer can attribute eligible returning-user activity to the media source that re-engaged the user across platforms. For more information, see [Cross-platform re-engagement measurement](/docs/beta-user-based-cross-platform-re-engagement-attribution).
 
 For example, if a user installs your app on iOS, logs in on the PlayStation app, and streams content via their Samsung TV, you can view their full journey as a single user.
 
-For a more complete overview of Product Lines, see [User-based cross-platform attribution](https://support.appsflyer.com/hc/articles/39104189339793-User-based-cross-platform-attribution-overview).
+For a more complete overview of Product Lines, see [User-based cross-platform attribution](/docs/beta-user-based-cross-platform-attribution).
 
 ## How to set up a Product Line
 
@@ -51,7 +51,7 @@ For a more complete overview of Product Lines, see [User-based cross-platform at
 
 > 📘 Note
 >
-> Cross-platform re-engagement attribution works on top of cross-platform attribution. Before you can opt in to re-engagement, you must create a Product Line, activate cross-platform attribution, and send events with a valid CUID.To learn how re-engagement attribution works across platforms, see [Cross-platform re-engagement attribution](https://support.appsflyer.com/hc/articles/45444294953361).
+> Cross-platform re-engagement attribution works on top of cross-platform attribution. Before you can opt in to re-engagement, you must create a Product Line, activate cross-platform attribution, and send events with a valid CUID.To learn how re-engagement attribution works across platforms, see [Cross-platform re-engagement attribution](/docs/beta-user-based-cross-platform-re-engagement-attribution).
 
 ### How to remove an app from a Product Line
 
@@ -92,7 +92,7 @@ For a more complete overview of Product Lines, see [User-based cross-platform at
 | One Product Line only | An app can belong to only one Product Line at a time |
 | CUID requirement | Required only for cross-platform attribution |
 | Inactivity restoration window | 14–390 days (default: 90 days) |
-| App removal impact | Removing an app resets attribution settings<br>Removing an app from a Product Line affects cross-platform attribution from that point forward.<br>• Future in-app events from the removed app are not eligible for cross-platform attribution under that Product Line, because events must come from apps that belong to the Product Line.<br>• Historical results aren’t retroactively reprocessed |
+| App removal impact | Removing an app resets attribution settings<br />Removing an app from a Product Line affects cross-platform attribution from that point forward.<br />• Future in-app events from the removed app are not eligible for cross-platform attribution under that Product Line, because events must come from apps that belong to the Product Line.<br />• Historical results aren’t retroactively reprocessed |
 
 ## FAQs
 

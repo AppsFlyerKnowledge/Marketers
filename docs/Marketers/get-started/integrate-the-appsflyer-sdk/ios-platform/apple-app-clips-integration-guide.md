@@ -44,14 +44,14 @@ App Clips analytic and raw data are available in the platform based on the user 
 | User action | AppsFlyer event | Overview dashboard and analytic tools | Raw data |
 | --- | --- | --- | --- |
 | Invocation (example: QR code) | No event | No event | No event |
-| Clicks App Card and App Clip opens | Click and install attributed to the invocation source | - Clicks<br>- Installs | [app\_type=app\_clip](https://support.appsflyer.com/hc/articles/208387843#app::5a1697f1) |
-| Uses App Clip | - [Optional] Developer sends in-app event<br>- After the first App Clip launch, follow-up launches are counted as sessions. | - In-app event<br>- Session | - In-app event sent by the developer<br>- [app\_type=app\_clip](https://support.appsflyer.com/hc/articles/208387843#app::5a1697f1) |
-| Downloads and launches full app | In-app event | In-app event name= af\_app\_clip\_to\_full\_app | - In-app event name= af\_app\_clip\_to\_full\_app<br>- [app\_type=full\_app](https://support.appsflyer.com/hc/articles/208387843#app::5a1697f1) |
-| Ongoing use of full app | [Optional] Developer sends in-app event | In-app event | - In-app event sent by the developer<br>- [app\_type=full\_app](https://support.appsflyer.com/hc/articles/208387843#app::5a1697f1) |
+| Clicks App Card and App Clip opens | Click and install attributed to the invocation source | - Clicks<br />- Installs | [app\_type=app\_clip](/docs/raw-data-field-dictionary#app::5a1697f1) |
+| Uses App Clip | - [Optional] Developer sends in-app event<br />- After the first App Clip launch, follow-up launches are counted as sessions. | - In-app event<br />- Session | - In-app event sent by the developer<br />- [app\_type=app\_clip](/docs/raw-data-field-dictionary#app::5a1697f1) |
+| Downloads and launches full app | In-app event | In-app event name= af\_app\_clip\_to\_full\_app | - In-app event name= af\_app\_clip\_to\_full\_app<br />- [app\_type=full\_app](/docs/raw-data-field-dictionary#app::5a1697f1) |
+| Ongoing use of full app | [Optional] Developer sends in-app event | In-app event | - In-app event sent by the developer<br />- [app\_type=full\_app](/docs/raw-data-field-dictionary#app::5a1697f1) |
 
 **Cohort dashboard**
 
-View App Clip performance in the [Cohort dashboard](https://support.appsflyer.com/hc/articles/207040496-Cohort-dashboard#trend-type%E2%80%94user-lifetime-performance), where you can:
+View App Clip performance in the [Cohort dashboard](/docs/cohort-and-retention-dashboard#trend-type%E2%80%94user-lifetime-performance), where you can:
 
 - See how long it takes users to go from the App Clip to the full app install.
 - Use the in-app conversion metric to compare the performance of different invocation campaigns.
@@ -64,8 +64,8 @@ The following procedure detail what you and the iOS developer need to do to deve
 
 | |
 | --- |
-| **Who's involved**<br>- **Advertiser**: - Configures Apple App Clips in OneLink templates.<br> - Puts the OneLink links in the Apple App Store Connect portal.<br> - Views metrics in AppsFlyer dashboard and reports.<br>- **iOS developer**:<br> - Creates the App Clip<br> - Integrates the AppsFlyer SDK in the App Clip. |
-| **Prerequisites**<br>- An AppsFlyer account with at least one app.<br>- A OneLink template with Universal Links, and OneLink link set up to direct your full app users.<br> <br> **Recommendation**: The template and link invocation you use for the App Clip sends all users without your full app to the App Clip. Therefore, consider having a separate template and custom link for cases in which you want to send those users to the Store, instead of the App Clip. |
+| **Who's involved**<br />- **Advertiser**: - Configures Apple App Clips in OneLink templates.<br /> - Puts the OneLink links in the Apple App Store Connect portal.<br /> - Views metrics in AppsFlyer dashboard and reports.<br />- **iOS developer**:<br /> - Creates the App Clip<br /> - Integrates the AppsFlyer SDK in the App Clip. |
+| **Prerequisites**<br />- An AppsFlyer account with at least one app.<br />- A OneLink template with Universal Links, and OneLink link set up to direct your full app users.<br /> <br /> **Recommendation**: The template and link invocation you use for the App Clip sends all users without your full app to the App Clip. Therefore, consider having a separate template and custom link for cases in which you want to send those users to the Store, instead of the App Clip. |
 
 ### Develop App Clip
 
@@ -94,14 +94,14 @@ Send the following links to your iOS developer and tell them to follow the instr
 
 **Prerequisites**:
 
-- [OneLink template](https://support.appsflyer.com/hc/articles/207032246#procedures) for your full app with iOS Universal Links configured.
-- [OneLink link](https://support.appsflyer.com/hc/articles/208874366#create-a-onelink-link).
+- [OneLink template](/docs/create-a-onelink-template#procedures) for your full app with iOS Universal Links configured.
+- [OneLink link](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link).
 
 **To configure the OneLink template for your App Clip**:
 
 1. In the AppsFlyer dashboard, go to **Engage** > **OneLink Management**.
 2. Select the **OneLink template** you use to direct users to your full app.
-3. Make sure the OneLink template has Universal Links configured. (See [instructions](https://support.appsflyer.com/hc/articles/208874366#general-settings) for adding Universal Links.)
+3. Make sure the OneLink template has Universal Links configured. (See [instructions](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings) for adding Universal Links.)
 4. Click **Save**.
 
 The AASA file is updated to support the App Clip.
@@ -136,7 +136,7 @@ If it does, then you have successfully set up App Clips on the AppsFlyer side, a
 
 ### Configure App Store Connect
 
-**Prerequisites**: Completion of [OneLink template configuration for App Clips](https://support.appsflyer.com/hc/articles/360014262358#configure-onelink)
+**Prerequisites**: Completion of [OneLink template configuration for App Clips](/docs/apple-app-clips-integration-guide#configure-onelink)
 
 **To configure your App Clip to work with OneLink**:
 
@@ -158,7 +158,7 @@ Your App Clip is now configured to work with OneLink. Further instructions regar
 
 ### Testing
 
-**Prerequisites**: A [registered test device](https://support.appsflyer.com/hc/articles/207031996) with iOS 14 without your full app installed.
+**Prerequisites**: A [registered test device](/docs/registering-test-devices) with iOS 14 without your full app installed.
 
 **To test your OneLink/App Clip integration:**
 
@@ -172,7 +172,7 @@ The App Clip Card displays on your device, indicating that your OneLink/App Clip
 
 | Trait/Limitation | Description |
 | --- | --- |
-| Invocation methods | - QR codes and NFC tags are supported.<br>- Safari Smart App Banners and links in Messages are not supported. |
+| Invocation methods | - QR codes and NFC tags are supported.<br />- Safari Smart App Banners and links in Messages are not supported. |
 | SKAdNetwork | SKAdNetwork functionality isn’t available. Therefore, App Clip installs display in the SKAdNetwork dashboard as organic. |
 | OneLink | Only one advanced App Clip experience is allowed per OneLink custom link. This means you cannot add additional paths to the OneLink in App Store Connect. |
 | Protect360 | Protect360 does not support App Clips. |

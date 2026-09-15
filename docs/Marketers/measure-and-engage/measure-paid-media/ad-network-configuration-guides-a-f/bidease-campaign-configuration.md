@@ -50,17 +50,17 @@ Turn on the **Activate partner** toggle.
 
 #### Advanced Privacy
 
-**For iOS apps only:** Your control over data shared with the partner via postbacks and [reports](https://support.appsflyer.com/hc/articles/360006868017) depends on the **Advanced Privacy (for iOS 14.5+ and later)** toggle state:
+**For iOS apps only:** Your control over data shared with the partner via postbacks and [reports](/docs/about-raw-data-identifier-restrictions) depends on the **Advanced Privacy (for iOS 14.5+ and later)** toggle state:
 
 | Advanced Privacy: On | Advanced Privacy: Off |
 | --- | --- |
-| Postbacks are sent only for events attributed to the partner | Postbacks are sent according to your configuration:<br>- **All media sources, including organic**<br>- **This partner only** |
+| Postbacks are sent only for events attributed to the partner | Postbacks are sent according to your configuration:<br />- **All media sources, including organic**<br />- **This partner only** |
 | Postbacks are sent according to the [Advanced Privacy template](/docs/advanced-privacy-guide-postback-macros-for-ad-networks) |  |
-| [Aggregated and anonymous data](https://support.appsflyer.com/hc/articles/360018515798-Aggregated-Advanced-Privacy-framework) is shared with the partner, meaning no user-level data (device ID) is shared. |  |
+| [Aggregated and anonymous data](/docs/apply-aggregated-advanced-privacy-framework) is shared with the partner, meaning no user-level data (device ID) is shared. |  |
 
 #### Transaction ID
 
-**For iOS apps only:** When **Share SKAN transaction ID** is turned on, you're allowing AppsFlyer to [share the transaction ID of SKAdNetwork postbacks](https://support.appsflyer.com/hc/articles/360011420698#sending-postbacks-to-integrated-partners) with Bidease. By doing so, Bidease could decode your SKAdNetwork Conversion Values.
+**For iOS apps only:** When **Share SKAN transaction ID** is turned on, you're allowing AppsFlyer to [share the transaction ID of SKAdNetwork postbacks](/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners) with Bidease. By doing so, Bidease could decode your SKAdNetwork Conversion Values.
 
 #### Install attribution
 
@@ -77,7 +77,7 @@ Define the source of users for sending automatic postbacks to partners relating 
 
 #### In-app event postbacks
 
-Set the **In-app event postback window**, as required (read more about [in-app event postback window configuration](https://support.appsflyer.com/hc/articles/208439256-In-App-Events-Postback-Configuration#inapp-event-postback-window)).
+Set the **In-app event postback window**, as required (read more about [in-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).
 
 Configure mapping of in-app events with Bidease events, sent via postbacks:
 
@@ -86,26 +86,26 @@ Configure mapping of in-app events with Bidease events, sent via postbacks:
 
 | Parameter name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br>**Tip**: Don't see the event you are looking for?<br>   - Make sure to activate the event on a device with a non-organic installation, and recheck.<br>   - Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](https://support.appsflyer.com/hc/articles/208439256#custom-events) |
-| **for users from** | Select the sending option for the event:<br>   - **This partner only**: Send postbacks only when this event is attributed to this partner.<br>   - **All media sources including organic**: Send postbacks for events attributed to any partner, as well as organic events. |
-| **including** | - **No data (default)**: Send only the event itself without any event values.<br>   - **Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).<br>   - **Values without revenue**: Send all the parameters **excluding** the revenue value. |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<br />   - Make sure to activate the event on a device with a non-organic installation, and recheck.<br />   - Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
+| **for users from** | Select the sending option for the event:<br />   - **This partner only**: Send postbacks only when this event is attributed to this partner.<br />   - **All media sources including organic**: Send postbacks for events attributed to any partner, as well as organic events. |
+| **including** | - **No data (default)**: Send only the event itself without any event values.<br />   - **Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).<br />   - **Values without revenue**: Send all the parameters **excluding** the revenue value. |
 
-3. [Optional] Click the **Add condition** ![conditional-iae-postbacks-icon.png](https://files.readme.io/f5a35c6e26ceef82e2850f5ff40c5985a48de5de57baed289e8cd05aac5427c1-20106422231953.png) icon to [set conditions](https://support.appsflyer.com/hc/articles/208439256#conditional-inapp-event-postbacks) for an event.
+3. [Optional] Click the **Add condition** ![conditional-iae-postbacks-icon.png](https://files.readme.io/f5a35c6e26ceef82e2850f5ff40c5985a48de5de57baed289e8cd05aac5427c1-20106422231953.png) icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
 4. Click **Save integration**.
 5. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
 1. From the top-left corner, under the partner name, click the app name to open the list of apps.
 2. Select a different app from the drop-down list.
-3. Repeat the [integration steps](https://support.appsflyer.com/hc/articles/11904659502737#integration-tab) for the selected app.
+3. Repeat the [integration steps](/docs/amazon-ads-campaign-configuration#integration-tab) for the selected app.
 
 > 📘 Note
 >
-> **For iOS apps only:** Your control over data shared with the partner via postbacks and [reports](https://support.appsflyer.com/hc/articles/360006868017) depends on the **Advanced Privacy (for iOS 14.5+ and later)** [toggle state](https://support.appsflyer.com/hc/articles/6722785184913#advanced-privacy).
+> **For iOS apps only:** Your control over data shared with the partner via postbacks and [reports](/docs/about-raw-data-identifier-restrictions) depends on the **Advanced Privacy (for iOS 14.5+ and later)** [toggle state](/docs/tiktok-for-business-advanced-srn-integration-setup#advanced-privacy).
 
 ### Attribution link tab
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](https://support.appsflyer.com/hc/articles/115005248543-OneLink-overview). [Learn more about attribution link structure and parameters](https://support.appsflyer.com/hc/articles/207447163).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide). [Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
 
-**To generate an attribution link,** follow [these instructions](https://support.appsflyer.com/hc/articles/4410395957521#attribution-link-tab).
+**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 ### Cost tab
 
@@ -117,8 +117,8 @@ Ad revenue isn't available for Bidease.
 
 ### Permissions tab
 
-Select which [permissions you're granting](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab) Bidease to access your data and perform various actions.
+Select which [permissions you're granting](/docs/set-up-an-integrated-partner#permissions-tab) Bidease to access your data and perform various actions.
 
 > 📘 Note
 >
-> When the integration is [deactivated](https://support.appsflyer.com/hc/articles/360000844778) while the Permissions toggle is still turned on, permissions remain granted.
+> When the integration is [deactivated](/docs/partner-activation-deactivation) while the Permissions toggle is still turned on, permissions remain granted.

@@ -2,15 +2,15 @@
 title: "[Beta] AppsFlyer MCP"
 excerpt: "Connect your AppsFlyer data to large language models (LLMs) like Claude, ChatGPT, and Gemini to ask questions and retrieve performance insights directly in your AI chat or development environment."
 ---
-AppsFlyer MCP connects your AppsFlyer data to large language models (LLMs), such as Claude, ChatGPT, Gemini CLI, Copilot CLI, and VS Code. Ask questions, get performance insights, and retrieve AppsFlyer information directly in your AI chat or development environment.
+**At a glance:** AppsFlyer MCP connects your AppsFlyer data to large language models (LLMs), such as Claude, ChatGPT, Gemini CLI, Copilot CLI, and VS Code. Ask questions, get performance insights, and retrieve AppsFlyer information directly in your AI chat or development environment.
 
-<Embed title="AppsFlyer MCP Server | Product tour" typeOfEmbed="youtube" url="https://www.youtube.com/embed/jAw7oocIx6o" />
+<Embed title="[Beta] AppsFlyer MCP" typeOfEmbed="youtube" url="https://www.youtube.com/embed/jAw7oocIx6o?si=-s107vTaTTwO076n" providerUrl="https://www.youtube.com" />
 
-> 🚧 Disclaimer
->
-> **The AppsFlyer MCP Server is a service currently in beta phase, provided by AppsFlyer for evaluation purposes.**
->
-> By using it to connect third-party AI tools, you agree that AppsFlyer has no responsibility or liability for such tools, their outputs, results, performance, operation, legality, or reliability. AppsFlyer does not control, endorse, or verify these tools or their results and expressly disclaims all warranties, express or implied, relating thereto. AppsFlyer is not responsible for data storage, retention, processing, or use by such tools. You are solely responsible for ensuring compliance with applicable laws and your own internal policies. You represent that you have all necessary rights and consents to connect these tools to the MCP Server and provide them access to your data. The service is provided "as-is" for supported use cases only. Use outside this scope is at your sole risk. Use is subject to the terms of the [Master Services Agreement](https://www.appsflyer.com/legal/msa/), or if a definitive agreement has been signed, then the terms of such agreement.
+### Disclaimer
+
+**The AppsFlyer MCP Server is a service currently in beta phase, provided by AppsFlyer for evaluation purposes.**
+
+By using it to connect third-party AI tools, you agree that AppsFlyer has no responsibility or liability for such tools, their outputs, results, performance, operation, legality, or reliability. AppsFlyer does not control, endorse, or verify these tools or their results and expressly disclaims all warranties, express or implied, relating thereto. AppsFlyer is not responsible for data storage, retention, processing, or use by such tools. You are solely responsible for ensuring compliance with applicable laws and your own internal policies. You represent that you have all necessary rights and consents to connect these tools to the MCP Server and provide them access to your data. The service is provided "as-is" for supported use cases only. Use outside this scope is at your sole risk. Use is subject to the terms of the [Master Services Agreement](https://www.appsflyer.com/legal/msa/), or if a definitive agreement has been signed, then the terms of such agreement.
 
 ## What is AppsFlyer MCP?
 
@@ -18,27 +18,34 @@ AppsFlyer MCP lets you securely connect LLMs to the AppsFlyer platform so you ca
 
 With MCP, you can:
 
-- Get instant campaign performance, trends, and KPI information.
-- Compare metrics like ROAS, installs, and LTV.
-- Audit and troubleshoot OneLink templates, links, and Audiences connections.
-- Retrieve setup guidance or product documentation.
+* Get instant campaign performance, trends, and KPI information.
+* Compare metrics like ROAS, installs, and LTV.
+* Audit and troubleshoot OneLink templates, links, and Audiences connections.
+* Retrieve setup guidance or product documentation.
 
 ## Set up AppsFlyer MCP
 
 AppsFlyer MCP can connect to chat assistants, CLIs, IDEs, automation platforms, and self-hosted agents. Setup depends on the client you use and the authentication method it supports.
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > Some platforms might require admin approval to connect MCP servers. If you don't see the setup options described below, contact your IT or workspace admin.
+
 
 ## Authentication methods
 
 AppsFlyer MCP supports two authentication methods. Use the method that matches how you plan to connect to AppsFlyer MCP.
 
+
+
 | Authentication method | Used by | Best for | Access duration |
 | --- | --- | --- | --- |
 | Browser-based OAuth login | Gemini CLI, Copilot CLI, ChatGPT, Claude.ai, and Claude Desktop | Ad hoc questions, exploratory analysis, and one-off reports | Valid for 7 days from connection. Re-authentication is required at the end of the session |
 | Bearer token authentication | Claude Code, automation platforms, self-hosted agents, and integrations | Automations, scheduled tasks, background agents, and non-interactive workflows | Valid until manually revoked |
+
+
 
 ### Browser-based OAuth login
 
@@ -50,7 +57,7 @@ Use this method for interactive sessions, exploratory analysis, and one-off repo
 
 Bearer token authentication lets non-interactive tools connect to AppsFlyer MCP by using an AppsFlyer MCP token. The token is passed in the request header:
 
-```auto
+```
 Authorization: Bearer <YOUR_MCP_TOKEN>
 ```
 
@@ -60,14 +67,16 @@ To create a token, go to **Account menu > Security Center > AppsFlyer Tokens** a
 
 ## Set up by client
 
-<Tabs>
-<Tab title="Claude Chat and Cowork">
+### Claude Chat and Cowork
 
 Use Claude chat and Claude Cowork with browser-based OAuth login. These instructions apply to Claude on web, desktop, and Cowork.
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > For Team and Enterprise plan users, only Owners or Admins can add organization-wide integrations.
+
 
 #### Set up Claude chat and Cowork
 
@@ -76,8 +85,8 @@ Use Claude chat and Claude Cowork with browser-based OAuth login. These instruct
 3. Switch to the **Organization connectors** tab.
 4. In the connectors section, click **Add connector**.
 5. Enter the following connector details:
-   - **Connector name:** AppsFlyer
-   - **Connector URL:** `https://mcp.appsflyer.com/auth/mcp`
+   * **Connector name:** AppsFlyer
+   * **Connector URL:** `https://mcp.appsflyer.com/auth/mcp`
 6. Click **Add**.
 7. Switch to the **Your connectors** tab.
 8. In the connectors section, click **Connect** next to the AppsFlyer connection.
@@ -85,16 +94,18 @@ Use Claude chat and Claude Cowork with browser-based OAuth login. These instruct
 
 #### Test the Claude connection
 
-1. In any chat window, click the settings button.
+1. In any chat window, click the settings button.   
+   ![](https://support.appsflyer.com/hc/article_attachments/46334217789073)
 2. If AppsFlyer MCP was set up correctly, the AppsFlyer tools appear in the menu.
 
-> 👍 Get started faster with Cowork: save as a Skill
+> 📘 **Note**
 >
-> If your team works in Claude Cowork, use the [Claude Cowork starter kit for marketers](https://github.com/AppsFlyerKnowledge/appsflyer-ai-agents-examples/tree/main/Claude/AppsFlyer%20Cowork%20Starter%20Kit) to get set up faster. The starter kit includes an activation plan, ready-to-use templates, and copy-paste prompts for working with your AppsFlyer data through AI from day one, so you don't have to build your first workflows, reports, or briefs from scratch.
+> #### Note
+>
+> **Get started faster with Cowork: save as a Skill.** If your team works in Claude Cowork, use the [Claude Cowork starter kit for marketers](https://github.com/AppsFlyerKnowledge/appsflyer-ai-agents-examples/tree/main/Claude/AppsFlyer%20Cowork%20Starter%20Kit) to get set up faster. The starter kit includes an activation plan, ready-to-use templates, and copy-paste prompts for working with your AppsFlyer data through AI from day one, so you don't have to build your first workflows, reports, or briefs from scratch.
 
-</Tab>
 
-<Tab title="Claude Code">
+### Claude Code
 
 Use Claude Code with bearer token authentication for automation, scheduling, and non-interactive workflows.
 
@@ -104,89 +115,78 @@ Use Claude Code with bearer token authentication for automation, scheduling, and
 2. Create an MCP token.
 3. In Terminal, add the AppsFlyer MCP server:
 
-```bash
-claude mcp add-json appsflyer '{"type":"http","url":"https://mcp.appsflyer.com/auth/mcp","headers":{"Authorization":"Bearer YOUR_APPSFLYER_MCP_TOKEN"}}'
-```
-
+   ```
+   claude mcp add-json appsflyer '{"type":"http","url":"https://mcp.appsflyer.com/auth/mcp","headers":{"Authorization":"Bearer YOUR_APPSFLYER_MCP_TOKEN"}}'
+   ```
 4. Start Claude Code:
 
-```bash
-claude .
-```
-
+   ```
+   claude .
+   ```
 5. Verify that the MCP server was added:
 
-```bash
-claude mcp list
-```
-
+   ```
+   claude mcp list
+   ```
 6. Confirm that `appsflyer` appears in the list of configured MCP servers.
 7. Ask an AppsFlyer question. For example:
 
-```auto
-What apps are in my AppsFlyer account?
-```
+   ```
+   What apps are in my AppsFlyer account?
+   ```
 
-```auto
-What were my top media sources in the US last week for "Mypets.android.com"?
-```
+   ```
+   What were my top media sources in the US last week for "Mypets.android.com"?
+   ```
 
-```auto
-Create a summary of the performance of "Mypets.android.com" in the last day, segmented by campaign.
-```
+   ```
+   Create a summary of the performance of "Mypets.android.com" in the last day, segmented by campaign.
+   ```
 
-</Tab>
-
-<Tab title="Cursor IDE">
+### Cursor IDE
 
 Use Cursor IDE to connect AppsFlyer MCP from your local development environment.
 
 1. Create or open a configuration file, depending on the scope:
-   - **Global configuration:** `~/.cursor/mcp.json`
-   - **Project-specific configuration:** `.cursor/mcp.json`
+   * **Global configuration:** `~/.cursor/mcp.json`
+   * **Project-specific configuration:** `.cursor/mcp.json`
 2. Add the following entry under the `mcpServers` field in your JSON file:
 
-```json
-{
+   ```
+   {
      "mcpServers": {
        "appsflyer": {
          "url": "https://mcp.appsflyer.com/auth/mcp"
        }
      }
-}
-```
-
+   }
+   ```
 3. Restart Cursor IDE to apply the new configuration.
 4. Authenticate when prompted to access AppsFlyer MCP services.
 
-</Tab>
-
-<Tab title="VS Code">
+### VS Code
 
 1. Press `Cmd+Shift+P` or `Ctrl+Shift+P` to open the Command Palette.
 2. Select **Configure MCP Servers**.
 3. In `.vscode/mcp.json`, add the AppsFlyer MCP server configuration:
 
-```json
-{
+   ```
+   {
      "servers": {
        "appsflyer": {
          "url": "https://mcp.appsflyer.com/auth/mcp"
        }
      }
-}
-```
-
+   }
+   ```
 4. Save the file and restart Copilot Chat.
 
-</Tab>
-
-<Tab title="ChatGPT">
+### ChatGPT
 
 There are two ways to use ChatGPT with AppsFlyer MCP.
 
-- [Custom GPT](/docs/beta-appsflyer-mcp#custom-gpt-available-for-all-packages-including-free-enterprise): Best for simple access to an AppsFlyer assistant.
-- [MCP in ChatGPT](/docs/beta-appsflyer-mcp#mcp-in-chatgpt-supported-for-chatgpt-users-on-all-paid-plans): Best for users who want to bring AppsFlyer data into ChatGPT conversations.
+* [Custom GPT](#custom-gpt-available-for-all-packages-including-free-enterprise): Best for simple access to an AppsFlyer assistant.
+* [MCP in ChatGPT](#mcp-in-chatgpt-supported-for-chatgpt-users-on-all-paid-plans): Best for users who want to bring AppsFlyer data into ChatGPT conversations.
 
 #### Add the AppsFlyer custom GPT
 
@@ -195,21 +195,24 @@ There are two ways to use ChatGPT with AppsFlyer MCP.
 3. Open the custom GPT.
 4. Ask a question. For example:
 
-```auto
-Show me my Meta campaign performance from last week.
-```
+   ```
+   Show me my Meta campaign performance from last week.
+   ```
 
 #### Add AppsFlyer MCP in ChatGPT
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > Admin setup might be required to add and publish a connector to your organization.
 
+
 1. Add a connector and publish it to your organization.
 2. Enter the following connector details:
-   - **Name:** AppsFlyer MCP
-   - **URL:** `https://mcp.appsflyer.com/auth/mcp`
-   - **Authentication:** OAuth
+   * **Name:** AppsFlyer MCP
+   * **URL:** `https://mcp.appsflyer.com/auth/mcp`
+   * **Authentication:** OAuth
 3. To connect for the first time, go to **Settings > Apps & Sources > AppsFlyer MCP**.
 4. Connect to AppsFlyer MCP.
 5. Follow the steps to connect and log in with your AppsFlyer credentials.
@@ -218,9 +221,7 @@ After setup, open a chat, select **Sources** or **Connectors**, and turn on the 
 
 For security, AppsFlyer MCP disconnects approximately every 10 hours. To reconnect, repeat the connection flow.
 
-</Tab>
-
-<Tab title="Gemini CLI">
+### Gemini CLI
 
 Use Gemini CLI with browser-based OAuth login.
 
@@ -228,42 +229,37 @@ Use Gemini CLI with browser-based OAuth login.
 
 1. In Terminal, add the AppsFlyer MCP server:
 
-```bash
-gemini mcp add appsflyer https://mcp.appsflyer.com/auth/mcp -t http
-```
-
+   ```
+   gemini mcp add appsflyer https://mcp.appsflyer.com/auth/mcp -t http
+   ```
 2. Start Gemini CLI:
 
-```bash
-gemini
-```
-
+   ```
+   gemini
+   ```
 3. In the Gemini CLI prompt, enter:
 
-```auto
-auth
-```
-
+   ```
+   auth
+   ```
 4. Complete the authentication flow in your browser, and then return to Terminal.
 5. Ask an AppsFlyer question. For example:
 
-```auto
-What apps are in my AppsFlyer account?
-```
+   ```
+   What apps are in my AppsFlyer account?
+   ```
 
 #### Troubleshoot Gemini CLI authentication
 
 If authentication fails, start Gemini CLI in debug mode:
 
-```bash
+```
 GEMINI_LOG_LEVEL=debug gemini
 ```
 
 Then enter `auth` again in the Gemini CLI prompt.
 
-</Tab>
-
-<Tab title="Copilot CLI">
+### Copilot CLI
 
 Use Copilot CLI with browser-based OAuth login.
 
@@ -272,24 +268,23 @@ Use Copilot CLI with browser-based OAuth login.
 1. Open Terminal.
 2. Start Copilot CLI:
 
-```bash
-copilot
-```
-
+   ```
+   copilot
+   ```
 3. If you're not logged in, enter the following command in the Copilot CLI prompt:
 
-```auto
-/login
-```
-
+   ```
+   /login
+   ```
 4. Complete the browser login.
 5. In the Copilot CLI prompt, enter:
 
-```auto
-/mcp add
-```
-
+   ```
+   /mcp add
+   ```
 6. Enter the following MCP server details:
+
+   
 
 | Field | Value |
 | --- | --- |
@@ -298,18 +293,17 @@ copilot
 | URL | `https://mcp.appsflyer.com/auth/mcp` |
 | Tools | `*` |
 
+
 7. Press **Ctrl+S** to save the configuration.
 8. When prompted, complete the AppsFlyer authentication flow in your browser.
 9. Return to Terminal.
 10. Ask an AppsFlyer question. For example:
 
-```auto
-What apps are in my AppsFlyer account?
-```
+    ```
+    What apps are in my AppsFlyer account?
+    ```
 
-</Tab>
-
-<Tab title="Third-party and self-hosted">
+### Third-party and self-hosted platforms
 
 Use an MCP token to authenticate third-party or self-hosted systems with AppsFlyer MCP. This supports automation and AI integrations with platforms like n8n, Make, or your own LLM-powered agents.
 
@@ -319,23 +313,27 @@ The MCP token is an account-level bearer token that inherits the permissions of 
 
 To connect your automation or agent platform to AppsFlyer MCP, use the following configuration:
 
-- **Auth Type:** Bearer Token
-- **Base URL / Endpoint:** `https://mcp.appsflyer.com/auth/mcp`
-- **Bearer Token:** Your MCP token
+* **Auth Type:** Bearer Token
+* **Base URL / Endpoint:** `https://mcp.appsflyer.com/auth/mcp`
+* **Bearer Token:** Your MCP token
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > Never share or publish your token publicly. Treat it as a private credential. Your MCP token grants direct access to your MCP environment.
 
+
 #### Example use cases
+
+
 
 | Category | Example |
 | --- | --- |
 | Custom agents | Build an AI agent that uses MCP to fetch data, analyze it, and send recommendations. |
 | LLM integrations | Let a self-hosted LLM query campaign performance metrics through MCP. |
 
-</Tab>
-</Tabs>
+
 
 ### Other platforms
 
@@ -369,9 +367,12 @@ See an example of this flow in [this video](https://www.youtube.com/watch?v=o5oK
 
 AppsFlyer MCP gives you a set of tools and resources designed to help you retrieve marketing analytics, performance insights, and configuration information.
 
-> ❗️ Important!
+> 📘 **Note**
+>
+> #### Important!
 >
 > Answers generated through AppsFlyer MCP are only reliable when used for the supported use cases listed below. Responses outside of these use cases have not been validated by AppsFlyer and might be inaccurate or misleading. We can't guarantee the precision or correctness of AI-generated answers that fall outside the intended scope of the AppsFlyer MCP integration.
+
 
 Some example use cases and prompts are:
 
@@ -399,9 +400,12 @@ Explore aggregated marketing performance data in real time. You can identify top
 
 **Expected AI response:** The AI performs a week-over-week comparison of D1 retention rates, grouped by media source.
 
-> 👍 Get started faster with Cowork: save as a Skill
+> 📘 **Note**
 >
-> If your team works in Claude Cowork, use the [Claude Cowork starter kit for marketers](https://github.com/AppsFlyerKnowledge/appsflyer-ai-agents-examples/tree/main/Claude/AppsFlyer%20Cowork%20Starter%20Kit) to get set up faster. The starter kit includes an activation plan, ready-to-use templates, and copy-paste prompts for working with your AppsFlyer data through AI from day one, so you don't have to build your first workflows, reports, or briefs from scratch.
+> #### Note
+>
+> **Get started faster with Cowork: save as a Skill.** If your team works in Claude Cowork, use the [Claude Cowork starter kit for marketers](https://github.com/AppsFlyerKnowledge/appsflyer-ai-agents-examples/tree/main/Claude/AppsFlyer%20Cowork%20Starter%20Kit) to get set up faster. The starter kit includes an activation plan, ready-to-use templates, and copy-paste prompts for working with your AppsFlyer data through AI from day one, so you don't have to build your first workflows, reports, or briefs from scratch.
+
 
 ### Analyze Incrementality for UA experiments
 
@@ -494,6 +498,8 @@ Retrieve key app configuration details such as attribution windows, session time
 **Prompt:** "What is the current session timeout setting for the AppsFlyer gaming app and could it affect my re-engagement from being attributed?"
 
 **Expected AI response:** The AI returns the session timeout setting and explains its impact on re-engagement.
+
+### Audiences management
 
 ### Audiences management
 
@@ -633,42 +639,31 @@ Each tool is mapped to a functional category, such as Analyze performance, apps 
 
 See the table below for the complete list of tools and their category mappings.
 
-| Category | Tool | Description |
-| --- | --- | --- |
-| [Analyze performance](/docs/beta-appsflyer-mcp#analyze-performance) | fetch\_aggregated\_data | Retrieves aggregated dashboard data with custom date ranges, groupings, metrics, and filters. |
-| [Analyze Incrementality for UA experiments](/docs/beta-appsflyer-mcp#analyze-incrementality-experiments) | incrementality\_list\_experiments | Lists incrementality experiments, filtered by status, app, country, media source, and date range. |
-| | incrementality\_get\_experiment\_results | Gets results for a specific experiment, including lift, incremental conversions, incrementality factor, and cost per incremental conversion. |
-| [Apps management](/docs/beta-appsflyer-mcp#apps-management) | get\_apps | Lists all permitted apps organized by pinned and unpinned status with transfer requests. |
-| | get\_app\_settings | Gets app configuration settings including attribution windows, privacy controls, session management, and platform-specific configurations. |
-| [Cost configuration integration](/docs/beta-appsflyer-mcp#cost-configuration-integration) | get\_active\_cost\_integrations<br />list\_cost\_supported\_media\_source | Gets an overview of active cost integration status and missing cost integrations in your account. |
-| [Ad revenue integrations](/docs/beta-appsflyer-mcp#ad-revenue-integrations) | list\_adrevenue\_supported\_media\_sources<br />get\_active\_adrevenue\_integrations | Checks which integrations are enabled, monitors health, detects configuration gaps, and helps keep ad revenue data consistent. |
-| [SKAN performance](/docs/beta-appsflyer-mcp#analyze-skan-performance) | skan\_get\_app\_data | Retrieves aggregated SKAN performance data grouped by network, campaign, or event across custom date ranges. |
-| [OneLink management](/docs/beta-appsflyer-mcp#onelink-management) | get\_onelink\_templates | Lists all OneLink templates. |
-| | get\_onelink\_template\_links | Gets all OneLink links created from a specific template. |
-| | get\_onelink\_details | Gets configuration details for a specific OneLink. |
-| | discover\_onelink | Discovers a link's parameters, capabilities, and redirection behavior from a short or long URL. |
-| [Audiences management](/docs/beta-appsflyer-mcp#audiences-management) | list\_active\_audiences | Lists all active audiences that are calculated daily. |
-| | list\_audiences\_connections | Lists advertising partner integrations for audience data. |
-| | get\_audience\_connections | Gets partner connections for a specific audience. |
-| [Knowledge base and developer support](/docs/beta-appsflyer-mcp#knowledge-base-and-developer-support) | get\_public\_knowledge | Searches AppsFlyer Knowledge Base and DevHub documentation. |
-| [Feedback tool](/docs/beta-appsflyer-mcp#feedback-tool) | send\_feedback | Submits feedback about the tools or system. |
-| [User management and role control](/docs/beta-appsflyer-mcp#user-management-and-role-control) | get\_users | Lists users and roles from AppsFlyer. |
+
+
+<table><thead><tr><th>Category</th><th>Tool</th><th>Description</th></tr></thead><tbody><tr><td><a href="#analyze-performance">Analyze performance</a></td><td>fetch_aggregated_data</td><td>Retrieves aggregated dashboard data with custom date ranges, groupings, metrics, and filters.</td></tr><tr><td rowspan="2"><a href="#analyze-incrementality-experiments">Analyze Incrementality for UA experiments</a></td><td>incrementality_list_experiments</td><td>Lists incrementality experiments, filtered by status, app, country, media source, and date range.</td></tr><tr><td>incrementality_get_experiment_results</td><td>Gets results for a specific experiment, including lift, incremental conversions, incrementality factor, and cost per incremental conversion.</td></tr><tr><td rowspan="2"><a href="#apps-management">Apps management</a></td><td>get_apps</td><td>Lists all permitted apps organized by pinned and unpinned status with transfer requests.</td></tr><tr><td>get_app_settings</td><td>Gets app configuration settings including attribution windows, privacy controls, session management, and platform-specific configurations.</td></tr><tr><td><a href="#cost-configuration-integration">Cost configuration integration</a></td><td><p>get_active_cost_integrations</p><p>list_cost_supported_media_source</p></td><td>Gets an overview of active cost integration status and missing cost integrations in your account.</td></tr><tr><td><a href="#ad-revenue-integrations">Ad revenue integrations</a></td><td><p>list_adrevenue_supported_media_sources</p><p>get_active_adrevenue_integrations</p></td><td>Checks which integrations are enabled, monitors health, detects configuration gaps, and helps keep ad revenue data consistent.</td></tr><tr><td><a href="#analyze-skan-performance">SKAN performance</a></td><td>skan_get_app_data</td><td>Retrieves aggregated SKAN performance data grouped by network, campaign, or event across custom date ranges.</td></tr><tr><td rowspan="4"><a href="#onelink-management">OneLink management</a></td><td>get_onelink_templates</td><td>Lists all OneLink templates.</td></tr><tr><td>get_onelink_template_links</td><td>Gets all OneLink links created from a specific template.</td></tr><tr><td>get_onelink_details</td><td>Gets configuration details for a specific OneLink.</td></tr><tr><td>discover_onelink</td><td>Discovers a link's parameters, capabilities, and redirection behavior from a short or long URL.</td></tr><tr><td rowspan="3"><a href="#audiences-management">Audiences management</a></td><td>list_active_audiences</td><td>Lists all active audiences that are calculated daily.</td></tr><tr><td>list_audiences_connections</td><td>Lists advertising partner integrations for audience data.</td></tr><tr><td>get_audience_connections</td><td>Gets partner connections for a specific audience.</td></tr><tr><td><a href="#knowledge-base-and-developer-support">Knowledge base and developer support</a></td><td>get_public_knowledge</td><td>Searches AppsFlyer Knowledge Base and DevHub documentation.</td></tr><tr><td><a href="#feedback-tool">Feedback tool</a></td><td>send_feedback</td><td>Submits feedback about the tools or system.</td></tr><tr><td><a href="#user-management-and-role-control">User management and role control</a></td><td>get_users</td><td>Lists users and roles from AppsFlyer.</td></tr></tbody></table>
+
+
 
 ### Traits and limitations
 
+
+
 | Trait | Description |
 | --- | --- |
-| Multi-account use | AppsFlyer MCP uses data from the default account only. To switch accounts or connect several accounts at once, see [Use multiple accounts or agencies](/docs/beta-appsflyer-mcp#use-multiple-accounts-or-agencies). |
-| OneLink links | - The get\_onelink\_template\_links tool includes only links created from the OneLink Management page, not links created via API, SDK, or bulk creation. <br />- Discover OneLink (discover\_onelink) has no such restriction. It supports all AppsFlyer link types, including single-platform (legacy) links, branded domains, and links created via the UI, API, SDK, or bulk creation. |
-| Rate limits | - Analytics: 20 requests per minute<br />- Audiences: 350 requests per minute<br />- SKAN: Up to 10,000 rows per query |
-| Date range | - Analytics: 3 years<br />- SKAN: Maximum 90 days per request |
-| Groupings | - Analytics: 4 groupings per request<br />- SKAN: As available in the [SKAN dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#metrics) |
-| App limits | - Analytics: 10 apps per request<br />- SKAN: One app per request, iOS only |
+| Multi-account use | AppsFlyer MCP uses data from the default account only. To switch accounts or connect several accounts at once, see [Use multiple accounts or agencies](#use-multiple-accounts-or-agencies). |
+| OneLink links | * The get\_onelink\_template\_links tool includes only links created from the OneLink Management page, not links created via API, SDK, or bulk creation.<br />* Discover OneLink (discover\_onelink) has no such restriction. It supports all AppsFlyer link types, including single-platform (legacy) links, branded domains, and links created via the UI, API, SDK, or bulk creation. |
+| Rate limits | * Analytics: 20 requests per minute<br />* Audiences: 350 requests per minute<br />* SKAN: Up to 10,000 rows per query |
+| Date range | * Analytics: 3 years<br />* SKAN: Maximum 90 days per request |
+| Groupings | * Analytics: 4 groupings per request<br />* SKAN: As available in the [SKAN dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#metrics) |
+| App limits | * Analytics: 10 apps per request<br />* SKAN: One app per request, iOS only |
 | Supported dimensions | Analytics supports all dimensions available in My Dashboards. |
 | Aggregated data | Aggregated data is supported. This includes weekly and monthly granularity levels and custom metrics. |
 | Freshness | SKAN data is available with up to a 3-day delay, in UTC. |
 | Currency and time zone | SKAN data is available in USD by default. Alternative currencies are supported by using `revenue_alt = true`. Data is reported in UTC. |
-| Disabling MCP | - MCP is enabled by default and can be disabled by an admin in **Account & Profile > AI capabilities**.<br />- When MCP is disabled, users can't access AppsFlyer data through MCP in external AI tools.<br />- Existing connections might continue until the current session expires.<br />- Disabling MCP doesn't affect regular API connections or other AI capabilities in AppsFlyer.<br />- If an MCP token is in use, delete it first in **Security Center > AppsFlyer Tokens**. |
+| Disabling MCP | * MCP is enabled by default and can be disabled by an admin in **Account & Profile > AI capabilities**.<br />* When MCP is disabled, users can't access AppsFlyer data through MCP in external AI tools.<br />* Existing connections might continue until the current session expires.<br />* Disabling MCP doesn't affect regular API connections or other AI capabilities in AppsFlyer.<br />* If an MCP token is in use, delete it first in **Security Center > AppsFlyer Tokens**. |
+
+
 
 ## Troubleshoot connection issues
 
@@ -683,10 +678,13 @@ Use this section for clients that connect through browser login, such as Gemini 
 3. **Restart the session.** Restart your CLI, chat, or application session. Then reconnect to the MCP server.
 4. **Verify the MCP server configuration.** Confirm the following values:
 
+   
+
 | Field | Value |
 | --- | --- |
 | Server Type | `HTTP` |
 | URL | `https://mcp.appsflyer.com/auth/mcp` |
+
 
 5. **Check user permissions.** Make sure your AppsFlyer user has access to the relevant apps and requested data.
 
@@ -704,11 +702,12 @@ Use this section for Claude Code, n8n, Make, self-hosted agents, and other autom
    6. Update your MCP client or automation with the new token.
 3. **Check the Authorization header.** Make sure the header uses this exact format:
 
-```auto
-Authorization: Bearer <YOUR_MCP_TOKEN>
-```
-
+   ```
+   Authorization: Bearer <YOUR_MCP_TOKEN>
+   ```
 4. **Verify the MCP server configuration.** Confirm the following values:
+
+   
 
 | Field | Value |
 | --- | --- |
@@ -716,40 +715,38 @@ Authorization: Bearer <YOUR_MCP_TOKEN>
 | Transport | `HTTP` |
 | Header | `Authorization: Bearer <YOUR_MCP_TOKEN>` |
 
+
 5. **Verify that the server is registered.** For Claude Code, run:
 
-```bash
-claude mcp list
-```
-
+   ```
+   claude mcp list
+   ```
 6. **Re-add the MCP server, if needed.**
 
-```bash
-claude mcp remove appsflyer
-claude mcp add-json appsflyer '{"type":"http","url":"https://mcp.appsflyer.com/auth/mcp","headers":{"Authorization":"Bearer YOUR_APPSFLYER_MCP_TOKEN"}}'
-```
-
+   ```
+   claude mcp remove appsflyer
+   claude mcp add-json appsflyer '{"type":"http","url":"https://mcp.appsflyer.com/auth/mcp","headers":{"Authorization":"Bearer YOUR_APPSFLYER_MCP_TOKEN"}}'
+   ```
 7. **Check token permissions.** The MCP token inherits permissions from the admin who created it. Make sure the token has access to the relevant apps and requested data.
 
 ### Access and permission issues
 
 If authentication succeeds but access still fails:
 
-- MCP access might be restricted by your AppsFlyer admin.
-- If you don't have access to Account & Profile settings, MCP access might be blocked.
-- Contact your AppsFlyer admin to enable access.
-- Make sure your user or token has access to the relevant apps and requested data.
+* MCP access might be restricted by your AppsFlyer admin.
+* If you don't have access to Account & Profile settings, MCP access might be blocked.
+* Contact your AppsFlyer admin to enable access.
+* Make sure your user or token has access to the relevant apps and requested data.
 
 ### General checks
 
 If the issue persists:
 
-- Make sure your client supports MCP.
-- Check whether network or firewall restrictions block the MCP endpoint.
-- Confirm that the MCP URL is correct:
+* Make sure your client supports MCP.
+* Check whether network or firewall restrictions block the MCP endpoint.
+* Confirm that the MCP URL is correct:
 
-```auto
-https://mcp.appsflyer.com/auth/mcp
-```
-
-- Try reconnecting from a new session or environment.
+  ```
+  https://mcp.appsflyer.com/auth/mcp
+  ```
+* Try reconnecting from a new session or environment.

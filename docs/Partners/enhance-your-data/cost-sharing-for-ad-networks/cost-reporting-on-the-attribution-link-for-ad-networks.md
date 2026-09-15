@@ -2,11 +2,13 @@
 title: "Cost reporting on the attribution link for ad networks"
 excerpt: "Learn how ad networks can report cost data to AppsFlyer via unencrypted or encrypted parameters on click attribution links."
 ---
-Ad networks can report cost every time an ad is clicked.
+**At a glance:** Ad networks can report cost every time an ad is clicked.
 
 Advertisers use the AppsFlyer dashboard as their source of truth for all budget allocation decisions, making it easy to see where to invest. For networks wanting to be visible in that process, sharing cost data with AppsFlyer is an absolute must.
 
 Advertisers often check their top-performing partners using sort by ROI. Those that have no cost data always appear at the bottom of the list.
+
+![](https://support.appsflyer.com/hc/en-us/article_attachments/115002046163/Cost_Sharing_1.png)
 
 ## How to share cost
 
@@ -14,23 +16,18 @@ There are two ways to pass user-level cost data through AppsFlyer attribution UR
 
 **Unencrypted cost** can be passed by hardcoding the following 3 parameters to the click URL:
 
-- af\_cost\_model=CPI (currently CPI is the only model viewable in AppsFlyer reporting)
-- af\_cost\_value={insert CPI value, for example: 1.00}
+* af\_cost\_model=CPI (currently CPI is the only model viewable in AppsFlyer reporting)
+* af\_cost\_value=`{insert CPI value, for example: 1.00}`  
+  **Note**: Values less than 1 require a 0 before the decimal, for example: 0.05.
+* af\_cost\_currency=`{insert 3 letter currency code. If blank we will assume USD}`
 
-> 📘 Note
->
-> Values less than 1 require a 0 before the decimal, for example: 0.05.
-
-- af\_cost\_currency={insert 3 letter currency code. If blank we will assume USD}
-
-> 📘 NOTE
->
-> While any cost model can be sent via the attribution link, only CPI is currently supported for presenting cost data on the dashboard. Other cost models are available in the raw reports.
+*NOTE*: While any cost model can be sent via the attribution link, only CPI is currently supported for presenting cost data on the dashboard. Other cost models are available in the raw reports.
 
 An example of an attribution Link with an unencrypted cost pass:
 
-```auto
-https://app.appsflyer.com/id554782625?pid=mediasource_int&c=campaignName&idfa=ABCDEFGH-ABCD-ABCD-ABCD-A12345678910&af_siteid=12345&af_cost_model=CPI&af_cost_value=1.00&af_cost_currency=USD
+```
+https://app.appsflyer.com/id554782625?pid=mediasource_int&c=campaignName&idfa=ABCDEFGH-ABCD-ABCD-ABCD- 
+A12345678910&af_siteid=12345&af_cost_model=CPI&af_cost_value=1.00&af_cost_currency=USD
 ```
 
 **Encrypted cost**
@@ -40,27 +37,24 @@ If you prefer not to reveal the actual cost value in the attribution URL, you ca
 Steps for encryption:
 
 1. Request your **network encryption key** from your PSE team using the [partner assistant widget](https://support.appsflyer.com/hc/article_attachments/34951742603025).
-2. Use the AES encryption method (shown below) to encrypt the required 4 values ( **network key, cost value, cost model, and cost currency**)
+2. Use the AES encryption method (shown below) to encrypt the required 4 values (**network key, cost value, cost model, and cost currency**)
 3. Append the generated encryption value to your AppsFlyer attribution URL in the **af\_enc\_data=** parameter.
 
 Sample attribution link with encrypted value pass:
 
-https://app.appsflyer.com/id554782625?pid=mediasource\_int&c=campaignName&idfa=ABCDEFGH-ABCD-ABCD-ABCD-A12345678910&af\_siteid=12345 **&af\_enc\_data=DvVvQRow%2F2N0LiQGZh0wvwucFygbll9IwAMSN%2B%2BDQxo%3D**
+https://app.appsflyer.com/id554782625?pid=mediasource\_int&c=campaignName&idfa=ABCDEFGH-ABCD-ABCD-ABCD-A12345678910&af\_siteid=12345**&af\_enc\_data=DvVvQRow%2F2N0LiQGZh0wvwucFygbll9IwAMSN%2B%2BDQxo%3D**
 
-> 📘 Note
->
-> Only ad networks that perform the cost encryption integration with AppsFlyer can actually send encrypted cost data with their clients' attribution links.
+**Note:** Only ad networks that perform the cost encryption integration with AppsFlyer can actually send encrypted cost data with their clients' attribution links.
 
 ## AES encryption process
 
-To accomplish the encryption, partners must use the [**AES algorithm**](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard), with an [**ECB block mode**](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_.28ECB.29), using [**PKCS5 padding**](https://en.wikipedia.org/wiki/Padding_(cryptography)#PKCS7). Then they must [**Base-64 encode**](https://en.wikipedia.org/wiki/Base64) the encrypted data, and finally, [**URL-encode**](https://en.wikipedia.org/wiki/Percent-encoding) the result.
+To accomplish the encryption, partners must use the [**AES algorithm**](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard), with an [**ECB block mode**](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_.28ECB.29), using [**PKCS5 padding**](https://en.wikipedia.org/wiki/Padding_(cryptography) #PKCS7). Then they must [**Base-64 encode**](https://en.wikipedia.org/wiki/Base64) the encrypted data, and finally, [**URL-encode**](https://en.wikipedia.org/wiki/Percent-encoding) the result.
 
 Networks can use any tech stack to accomplish this. See examples below for PHP, Java, and Python:
 
-<Tabs>
-<Tab title="PHP">
+PHP
 
-```php
+```
 <?php
 $f = fopen( 'php://stdin', 'r' );
 echo "Enter private key: ";
@@ -92,10 +86,9 @@ fclose( $f );
 ?>
 ```
 
-</Tab>
-<Tab title="Java">
+Java
 
-```java
+```
 private static final String CIPHER_ALGORITHM = "AES/ECB/PKCS5Padding";
 private static final String encryptionKey = "XXXXXXXXXXXXXXXX"; // secret key provided by appsflyer
 private static final SecretKeySpec key = new SecretKeySpec(encryptionKey.getBytes(), "AES");
@@ -114,10 +107,9 @@ public static String encrypt(String str) throws Exception {
 }
 ```
 
-</Tab>
-<Tab title="Python">
+Python
 
-```python
+```
 import sys
 import base64
 import urllib
@@ -160,11 +152,8 @@ print(msg)
 print(urllib.quote_plus(base64.b64encode(enc)))
 ```
 
-</Tab>
-</Tabs>
-
 ## Which networks support cost reporting?
 
-To see a full list of the networks that support cost reporting on the attribution link, click [here](https://support.appsflyer.com/hc/articles/360008981698-Ad-cost-reporting-on-attribution-links#ad-networks-providing-cost-by-click-data).
+To see a full list of the networks that support cost reporting on the attribution link, click [here](/docs/view-aggregated-cost-data-for-attribution-links#ad-networks-providing-cost-by-click-data).
 
-To see a full list of the networks that support cost reporting via API, click [here](https://support.appsflyer.com/hc/articles/207040526#ad-networks-supporting-cost-api).
+To see a full list of the networks that support cost reporting via API, click [here](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api).

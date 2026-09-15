@@ -14,7 +14,7 @@ Attributing cross-promotion clicks and impressions is performed by using two sep
 
 For example, using the map of parameters you can set the click lookback window and other parameters such as ad IDs, ad sets. You can also mark the campaign as incentivized campaigns. See AppsFlyer attribution parameter for more information.
 
-For a list of standard parameters that you can pass to the API method, see [AppsFlyer attribution parameter.](https://support.appsflyer.com/hc/articles/207447163)
+For a list of standard parameters that you can pass to the API method, see [AppsFlyer attribution parameter.](/docs/about-link-structure-and-parameters)
 
 With the first launch of the promoted app, all the original parameters can be accessed via the SDK's conversion data API, for [Android](https://dev.appsflyer.com/hc/docs/conversion-data-android) or [iOS](https://dev.appsflyer.com/hc/docs/conversion-data-ios).
 
@@ -119,7 +119,7 @@ In iOS, an attribution Link is generated and returned to the `onOpenStoreLinkGen
 
 > 📘 Note
 >
-> You can add any of these [attribution link parameters](https://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters#attribution-link-parameters) to the generated link.
+> You can add any of these [attribution link parameters](/docs/about-link-structure-and-parameters#attribution-link-parameters) to the generated link.
 
 ### Attribute cross-promotion impressions
 

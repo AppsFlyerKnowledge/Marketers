@@ -2,11 +2,13 @@
 title: "In-app events—Event structure"
 excerpt: "View the list of predefined event names and event parameters to record post-install in-app events such as login, register, or in-app purchase."
 ---
+**At a glance:** View the list of predefined event names and event parameters to record post-install in-app events (such as login, register, or in-app purchase).
+
 ## Overview
 
 In-app events that you want to send require your developer to implement code where applicable in your app. This article describes the predefined event names and predefined event parameters.
 
-To help you determine what events and parameters to record, see our [articles that include examples and flows](https://support.appsflyer.com/hc/articles/115005544169#recommended-events-by-business-vertical) according to business verticals.
+To help you determine what events and parameters to record, see our [articles that include examples and flows](/docs/in-app-events-overview#recommended-events-by-business-vertical) according to business verticals.
 
 ## Predefined event names
 
@@ -20,6 +22,8 @@ Each event name also includes the typical predefined event parameters associated
 
 **Event mapping:**
 
+
+
 | AppsFlyer | af\_achievement\_unlocked |
 | --- | --- |
 | Meta ads | fb\_mobile\_achievement\_unlocked |
@@ -31,17 +35,21 @@ Each event name also includes the typical predefined event parameters associated
 | Criteo | achievement |
 | Roku Ads | UNLOCK\_ACHIEVEMENT |
 
+
+
 **Typical parameter:**
 
 Click the link to view the mapping to SRNs.
 
-- [af\_description](https://support.appsflyer.com/hc/articles/4410481112081#af_description)
+* [af\_description](/docs/in-app-events-event-structure#af_description)
 
 #### Ad click (af\_ad\_click)
 
 **Description**: Used to record ad clicks on ads displayed in the app
 
 **Event mapping**:
+
+
 
 | AppsFlyer | af\_ad\_click |
 | --- | --- |
@@ -53,18 +61,22 @@ Click the link to view the mapping to SRNs.
 | Amazon Ads | - |
 | Criteo | - |
 
+
+
 **Typical parameters:**
 
 Click the links to view the mapping to SRNs.
 
-- [af\_adrev\_ad\_type](https://support.appsflyer.com/hc/articles/4410481112081#af_adrev_ad_type)
-- [af\_currency](https://support.appsflyer.com/hc/articles/4410481112081#af_currency)
+* [af\_adrev\_ad\_type](/docs/in-app-events-event-structure#af_adrev_ad_type)
+* [af\_currency](/docs/in-app-events-event-structure#af_currency)
 
 #### Ad view (af\_ad\_view)
 
 **Description**: Used to record ad views of ads displayed in the app
 
 **Event mapping:**
+
+
 
 | AppsFlyer | af\_ad\_view |
 | --- | --- |
@@ -76,12 +88,14 @@ Click the links to view the mapping to SRNs.
 | Amazon Ads | - |
 | Criteo | - |
 
+
+
 **Typical parameters:**
 
 Click the links to view the mapping to SRNs.
 
-- [af\_adrev\_ad\_type](https://support.appsflyer.com/hc/articles/4410481112081#af_adrev_ad_type)
-- [af\_currency](https://support.appsflyer.com/hc/articles/4410481112081#af_currency)
+* [af\_adrev\_ad\_type](/docs/in-app-events-event-structure#af_adrev_ad_type)
+* [af\_currency](/docs/in-app-events-event-structure#af_currency)
 
 #### Add payment info (af\_add\_payment\_info)
 
@@ -90,6 +104,8 @@ Click the links to view the mapping to SRNs.
 **Appears in these verticals:** [Ride-hailing](/docs/recommended-ride-hailing-app-events#add-payment-info-af_add_payment_info), [Flight booking](/docs/recommended-flight-booking-app-events#add-payment-info-af_add_payment_info)
 
 **Event mapping**:
+
+
 
 | AppsFlyer | af\_add\_payment\_info |
 | --- | --- |
@@ -102,19 +118,23 @@ Click the links to view the mapping to SRNs.
 | Criteo | ADD\_BILLING |
 | Roku Ads | ADD\_PAYMENT\_INFO |
 
+
+
 **Typical parameter:**
 
 Click the link to view the mapping to SRNs.
 
-- [af\_success](https://support.appsflyer.com/hc/articles/4410481112081#af_success)
+* [af\_success](/docs/in-app-events-event-structure#af_success)
 
 #### Add to cart (af\_add\_to\_cart)
 
-**Description**: Used to record add to cart events of specific items. To report an event containing multiple items, click [here](https://support.appsflyer.com/hc/articles/115005544169#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record add to cart events of specific items. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
 
-**Appears in these verticals:** [eCommerce](https://support.appsflyer.com/hc/articles/360019347957--Recommended-eCommerce-app-events#add-to-cart-af_add_to_cart), [Healthcare](/docs/recommended-healthcare-app-events#add-to-cart-af_add_to_cart)
+**Appears in these verticals:** [eCommerce](/docs/recommended-ecommerce-app-events#add-to-cart-af_add_to_cart), [Healthcare](/docs/recommended-healthcare-app-events#add-to-cart-af_add_to_cart)
 
 **Event mapping:**
+
+
 
 | AppsFlyer | af\_add\_to\_cart |
 | --- | --- |
@@ -127,24 +147,28 @@ Click the link to view the mapping to SRNs.
 | Criteo | viewBasket |
 | Roku Ads | ADD\_TO\_CART |
 
+
+
 **Typical parameters:**
 
 Click the links to view the mapping to SRNs.
 
-- [af\_price](https://support.appsflyer.com/hc/articles/4410481112081#af_price)
-- [af\_content\_type](https://support.appsflyer.com/hc/articles/4410481112081#af_content_type)
-- [af\_content\_id](https://support.appsflyer.com/hc/articles/4410481112081#af_content_id)
-- [af\_content](https://support.appsflyer.com/hc/articles/4410481112081#af_content)
-- [af\_currency](https://support.appsflyer.com/hc/articles/4410481112081#af_currency)
-- [af\_quantity](https://support.appsflyer.com/hc/articles/4410481112081#af_quantity)
+* [af\_price](/docs/in-app-events-event-structure#af_price)
+* [af\_content\_type](/docs/in-app-events-event-structure#af_content_type)
+* [af\_content\_id](/docs/in-app-events-event-structure#af_content_id)
+* [af\_content](/docs/in-app-events-event-structure#af_content)
+* [af\_currency](/docs/in-app-events-event-structure#af_currency)
+* [af\_quantity](/docs/in-app-events-event-structure#af_quantity)
 
 #### Add to wishlist (af\_add\_to\_wishlist)
 
-**Description**: Used to record add to wishlist events of specific items. To report an event containing multiple items, click [here](https://support.appsflyer.com/hc/articles/115005544169#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record add to wishlist events of specific items. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
 
-**Appears in these verticals:** [eCommerce](https://support.appsflyer.com/hc/articles/360019347957--Recommended-eCommerce-app-events#add-to-wishlist-af_add_to_wishlist), [Hotel booking](/docs/recommended-hotel-booking-app-events#add-to-wishlist-af_add_to_wishlist)
+**Appears in these verticals:** [eCommerce](/docs/recommended-ecommerce-app-events#add-to-wishlist-af_add_to_wishlist), [Hotel booking](/docs/recommended-hotel-booking-app-events#add-to-wishlist-af_add_to_wishlist)
 
 **Event mapping:**
+
+
 
 | AppsFlyer | af\_add\_to\_wishlist |
 | --- | --- |
@@ -157,32 +181,40 @@ Click the links to view the mapping to SRNs.
 | Criteo | - |
 | Roku Ads | ADD\_TO\_WISHLIST |
 
+
+
 **Typical parameters:**
 
 Click the links to view the mapping to SRNs.
 
-- [af\_price](https://support.appsflyer.com/hc/articles/4410481112081#af_price)
-- [af\_content\_type](https://support.appsflyer.com/hc/articles/4410481112081#af_content_type)
-- [af\_content\_id](https://support.appsflyer.com/hc/articles/4410481112081#af_content_id)
-- [af\_content](https://support.appsflyer.com/hc/articles/4410481112081#af_content)
-- [af\_currency](https://support.appsflyer.com/hc/articles/4410481112081#af_currency)
-- [af\_quantity](https://support.appsflyer.com/hc/articles/4410481112081#af_quantity)
+* [af\_price](/docs/in-app-events-event-structure#af_price)
+* [af\_content\_type](/docs/in-app-events-event-structure#af_content_type)
+* [af\_content\_id](/docs/in-app-events-event-structure#af_content_id)
+* [af\_content](/docs/in-app-events-event-structure#af_content)
+* [af\_currency](/docs/in-app-events-event-structure#af_currency)
+* [af\_quantity](/docs/in-app-events-event-structure#af_quantity)
 
 #### App open (af\_app\_opened)
 
 Roku Ads event mapping:
 
+
+
 | AppsFlyer | af\_app\_opened |
 | --- | --- |
 | Roku Ads | SESSION\_START |
+
+
 
 #### Complete registration (af\_complete\_registration)
 
 **Description**: Used to record user registration methods
 
-**Appears in these verticals:** [Gaming](/docs/recommended-gaming-app-events#complete-registration-af_complete_registration), [eCommerce](https://support.appsflyer.com/hc/articles/360019347957--Recommended-eCommerce-app-events#complete-registration-af_complete_registration), [Entertainment](/docs/recommended-entertainment-app-events#complete-registration-af_complete_registration), [Finance and banking](/docs/recommended-finance-and-banking-app-events#complete-registration-af_complete_registration), [P2P lending](/docs/recommended-p2p-lending-app-events#complete-registration-af_complete_registration), [Online education](/docs/recommended-online-education-app-events#complete-registration-af_complete_registration), [Ride-hailing](/docs/recommended-ride-hailing-app-events#complete-registration-af_complete_registration), [Hotel booking](/docs/recommended-hotel-booking-app-events#complete-registration-af_complete_registration), [Healthcare](/docs/recommended-healthcare-app-events#complete-registration-af_complete_registration), [Telecommunication](/docs/recommended-telecommunication-app-events#complete-registration-af_complete_registration)
+**Appears in these verticals:** [Gaming](/docs/recommended-gaming-app-events#complete-registration-af_complete_registration), [eCommerce](/docs/recommended-ecommerce-app-events#complete-registration-af_complete_registration), [Entertainment](/docs/recommended-entertainment-app-events#complete-registration-af_complete_registration), [Finance and banking](/docs/recommended-finance-and-banking-app-events#complete-registration-af_complete_registration), [P2P lending](/docs/recommended-p2p-lending-app-events#complete-registration-af_complete_registration), [Online education](/docs/recommended-online-education-app-events#complete-registration-af_complete_registration), [Ride-hailing](/docs/recommended-ride-hailing-app-events#complete-registration-af_complete_registration), [Hotel booking](/docs/recommended-hotel-booking-app-events#complete-registration-af_complete_registration), [Healthcare](/docs/recommended-healthcare-app-events#complete-registration-af_complete_registration), [Telecommunication](/docs/recommended-telecommunication-app-events#complete-registration-af_complete_registration)
 
 **Event mapping:**
+
+
 
 | AppsFlyer | af\_complete\_registration |
 | --- | --- |
@@ -195,19 +227,23 @@ Roku Ads event mapping:
 | Criteo | - |
 | Roku Ads | COMPLETE\_REGISTRATION |
 
+
+
 **Typical parameter:**
 
 Click the link to view the mapping to SRNs.
 
-- [af\_registration\_method](https://support.appsflyer.com/hc/articles/4410481112081#af_registration_method)
+* [af\_registration\_method](/docs/in-app-events-event-structure#af_registration_method)
 
 #### Content view (af\_content\_view)
 
-**Description**: Used to record content view events. To report an event containing multiple items, click [here](https://support.appsflyer.com/hc/articles/115005544169#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record content view events. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
 
-**Appears in these verticals:** [eCommerce](https://support.appsflyer.com/hc/articles/360019347957--Recommended-eCommerce-app-events#content-view-af_content_view), [Flight booking](/docs/recommended-flight-booking-app-events#content-view-af_content_view), [Hotel booking](/docs/recommended-hotel-booking-app-events#content-view-af_content_view)
+**Appears in these verticals:** [eCommerce](/docs/recommended-ecommerce-app-events#content-view-af_content_view), [Flight booking](/docs/recommended-flight-booking-app-events#content-view-af_content_view), [Hotel booking](/docs/recommended-hotel-booking-app-events#content-view-af_content_view)
 
 **Event mapping:**
+
+
 
 | AppsFlyer | af\_content\_view |
 | --- | --- |
@@ -220,100 +256,109 @@ Click the link to view the mapping to SRNs.
 | Criteo | viewProduct |
 | Roku Ads | VIEW\_CONTENT |
 
+
+
 **Typical parameters:**
 
 Click the parameters that are relevant to your business needs to view the mapping to SRNs.
 
-- [af\_price](https://support.appsflyer.com/hc/articles/4410481112081#af_price)
-- [af\_content\_type](https://support.appsflyer.com/hc/articles/4410481112081#af_content_type)
-- [af\_content\_id](https://support.appsflyer.com/hc/articles/4410481112081#af_content_id)
-- [af\_content](https://support.appsflyer.com/hc/articles/4410481112081#af_content)
-- [af\_currency](https://support.appsflyer.com/hc/articles/4410481112081#af_currency)
-- [af\_content\_list](https://support.appsflyer.com/hc/articles/4410481112081#af_content_list)
-- [af\_date\_a](https://support.appsflyer.com/hc/articles/4410481112081#af_date_a)
-- [af\_date\_b](https://support.appsflyer.com/hc/articles/4410481112081#af_date_b)
-- [af\_departing\_departure\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_departing_departure_date)
-- [af\_returning\_departure\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_returning_departure_date)
-- [af\_destination\_a](https://support.appsflyer.com/hc/articles/4410481112081#af_destination_a)
-- [af\_destination\_b](https://support.appsflyer.com/hc/articles/4410481112081#af_destination_b)
-- [af\_destination\_list](https://support.appsflyer.com/hc/articles/4410481112081#af_destination_list)
-- [af\_city](https://support.appsflyer.com/hc/articles/4410481112081#af_city)
-- [af\_region](https://support.appsflyer.com/hc/articles/4410481112081#af_region)
-- [af\_country](https://support.appsflyer.com/hc/articles/4410481112081#af_country)
-- [af\_departing\_arrival\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_departing_arrival_date)
-- [af\_returning\_arrival\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_returning_arrival_date)
-- [af\_suggested\_destinations](https://support.appsflyer.com/hc/articles/4410481112081#af_suggested_destinations)
-- [af\_travel\_start](https://support.appsflyer.com/hc/articles/4410481112081#af_travel_start)
-- [af\_travel\_end](https://support.appsflyer.com/hc/articles/4410481112081#af_travel_end)
-- [af\_num\_adults](https://support.appsflyer.com/hc/articles/4410481112081#af_num_adults)
-- [af\_num\_children](https://support.appsflyer.com/hc/articles/4410481112081#af_num_children)
-- [af\_num\_infants](https://support.appsflyer.com/hc/articles/4410481112081#af_num_infants)
-- [af\_class](https://support.appsflyer.com/hc/articles/4410481112081#af_class)
-- [af\_suggested\_hotels](https://support.appsflyer.com/hc/articles/4410481112081#af_suggested_hotels)
-- [af\_user\_score](https://support.appsflyer.com/hc/articles/4410481112081#af_user_score)
-- [af\_hotel\_score](https://support.appsflyer.com/hc/articles/4410481112081#af_hotel_score)
-- [af\_preferred\_star\_ratings](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_star_ratings)
-- [af\_preferred\_price\_range](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_price_range)
-- [af\_preferred\_neighborhoods](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_neighborhoods)
-- [af\_preferred\_num\_stops](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_num_stops)
+* [af\_price](/docs/in-app-events-event-structure#af_price)
+* [af\_content\_type](/docs/in-app-events-event-structure#af_content_type)
+* [af\_content\_id](/docs/in-app-events-event-structure#af_content_id)
+* [af\_content](/docs/in-app-events-event-structure#af_content)
+* [af\_currency](/docs/in-app-events-event-structure#af_currency)
+* [af\_content\_list](/docs/in-app-events-event-structure#af_content_list)
+* [af\_date\_a](/docs/in-app-events-event-structure#af_date_a)
+* [af\_date\_b](/docs/in-app-events-event-structure#af_date_b)
+* [af\_departing\_departure\_date](/docs/in-app-events-event-structure#af_departing_departure_date)
+* [af\_returning\_departure\_date](/docs/in-app-events-event-structure#af_returning_departure_date)
+* [af\_destination\_a](/docs/in-app-events-event-structure#af_destination_a)
+* [af\_destination\_b](/docs/in-app-events-event-structure#af_destination_b)
+* [af\_destination\_list](/docs/in-app-events-event-structure#af_destination_list)
+* [af\_city](/docs/in-app-events-event-structure#af_city)
+* [af\_region](/docs/in-app-events-event-structure#af_region)
+* [af\_country](/docs/in-app-events-event-structure#af_country)
+* [af\_departing\_arrival\_date](/docs/in-app-events-event-structure#af_departing_arrival_date)
+* [af\_returning\_arrival\_date](/docs/in-app-events-event-structure#af_returning_arrival_date)
+* [af\_suggested\_destinations](/docs/in-app-events-event-structure#af_suggested_destinations)
+* [af\_travel\_start](/docs/in-app-events-event-structure#af_travel_start)
+* [af\_travel\_end](/docs/in-app-events-event-structure#af_travel_end)
+* [af\_num\_adults](/docs/in-app-events-event-structure#af_num_adults)
+* [af\_num\_children](/docs/in-app-events-event-structure#af_num_children)
+* [af\_num\_infants](/docs/in-app-events-event-structure#af_num_infants)
+* [af\_class](/docs/in-app-events-event-structure#af_class)
+* [af\_suggested\_hotels](/docs/in-app-events-event-structure#af_suggested_hotels)
+* [af\_user\_score](/docs/in-app-events-event-structure#af_user_score)
+* [af\_hotel\_score](/docs/in-app-events-event-structure#af_hotel_score)
+* [af\_price](/docs/in-app-events-event-structure#af_price)
+* [af\_preferred\_star\_ratings](/docs/in-app-events-event-structure#af_preferred_star_ratings)
+* [af\_preferred\_price\_range](/docs/in-app-events-event-structure#af_preferred_price_range)
+* [af\_preferred\_neighborhoods](/docs/in-app-events-event-structure#af_preferred_neighborhoods)
+* [af\_preferred\_num\_stops](/docs/in-app-events-event-structure#af_preferred_num_stops)
 
 #### Initiated checkout (af\_initiated\_checkout)
 
-**Description**: Used to record checkout events. To report an event containing multiple items, click [here](https://support.appsflyer.com/hc/articles/115005544169#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record checkout events. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
 
-**Appears in verticals:** [eCommerce](https://support.appsflyer.com/hc/articles/360019347957--Recommended-eCommerce-app-events#initiated-checkout-af_initiated_checkout), [Hotel booking](/docs/recommended-hotel-booking-app-events#initiated-checkout-af_initiated_checkout)
+**Appears in verticals:** [eCommerce](/docs/recommended-ecommerce-app-events#initiated-checkout-af_initiated_checkout), [Hotel booking](/docs/recommended-hotel-booking-app-events#initiated-checkout-af_initiated_checkout)
 
 **Event mapping:**
 
-| AppsFlyer | af\_initiated\_checkout |
+
+
+| AppsFlyer | af\_achievement\_unlocked |
 | --- | --- |
-| Meta ads | fb\_mobile\_initiated\_checkout |
-| Google Ads | begin\_checkout |
-| TikTok | Checkout |
-| Snap | START\_CHECKOUT |
-| X Ads | CHECKOUT\_INITIATED |
-| Amazon Ads | CHECKOUT |
-| Criteo | viewBasket |
-| Roku Ads | INITIATE\_CHECKOUT |
+| Meta ads | fb\_mobile\_achievement\_unlocked |
+| Google Ads | unlock\_achievement |
+| TikTok | UnlockAchievement |
+| Snap | ACHIEVEMENT\_UNLOCKED |
+| X Ads | ACHIEVEMENT\_UNLOCKED |
+| Amazon Ads | - |
+| Criteo | achievement |
+| Roku Ads | UNLOCK\_ACHIEVEMENT |
+
+0
 
 **Typical parameters:**
 
 Click the parameters that are relevant to your business needs to view the mapping to SRNs.
 
-- [af\_price](https://support.appsflyer.com/hc/articles/4410481112081#af_price)
-- [af\_content\_type](https://support.appsflyer.com/hc/articles/4410481112081#af_content_type)
-- [af\_content\_id](https://support.appsflyer.com/hc/articles/4410481112081#af_content_id)
-- [af\_content](https://support.appsflyer.com/hc/articles/4410481112081#af_content)
-- [af\_currency](https://support.appsflyer.com/hc/articles/4410481112081#af_currency)
-- [af\_quantity](https://support.appsflyer.com/hc/articles/4410481112081#af_quantity)
-- [af\_payment\_info\_available](https://support.appsflyer.com/hc/articles/4410481112081#af_payment_info_available)
-- [af\_content\_list](https://support.appsflyer.com/hc/articles/4410481112081#af_content_list)
-- [af\_date\_a](https://support.appsflyer.com/hc/articles/4410481112081#af_date_a)
-- [af\_date\_b](https://support.appsflyer.com/hc/articles/4410481112081#af_date_b)
-- [af\_departing\_departure\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_departing_departure_date)
-- [af\_returning\_departure\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_returning_departure_date)
-- [af\_destination\_a](https://support.appsflyer.com/hc/articles/4410481112081#af_destination_a)
-- [af\_destination\_b](https://support.appsflyer.com/hc/articles/4410481112081#af_destination_b)
-- [af\_destination\_list](https://support.appsflyer.com/hc/articles/4410481112081#af_destination_list)
-- [af\_city](https://support.appsflyer.com/hc/articles/4410481112081#af_city)
-- [af\_region](https://support.appsflyer.com/hc/articles/4410481112081#af_region)
-- [af\_country](https://support.appsflyer.com/hc/articles/4410481112081#af_country)
-- [af\_departing\_arrival\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_departing_arrival_date)
-- [af\_returning\_arrival\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_returning_arrival_date)
-- [af\_suggested\_destinations](https://support.appsflyer.com/hc/articles/4410481112081#af_suggested_destinations)
-- [af\_travel\_start](https://support.appsflyer.com/hc/articles/4410481112081#af_travel_start)
-- [af\_travel\_end](https://support.appsflyer.com/hc/articles/4410481112081#af_travel_end)
-- [af\_num\_adults](https://support.appsflyer.com/hc/articles/4410481112081#af_num_adults)
-- [af\_num\_children](https://support.appsflyer.com/hc/articles/4410481112081#af_num_children)
-- [af\_num\_infants](https://support.appsflyer.com/hc/articles/4410481112081#af_num_infants)
-- [af\_class](https://support.appsflyer.com/hc/articles/4410481112081#af_class)
-- [af\_suggested\_hotels](https://support.appsflyer.com/hc/articles/4410481112081#af_suggested_hotels)
-- [af\_user\_score](https://support.appsflyer.com/hc/articles/4410481112081#af_user_score)
-- [af\_hotel\_score](https://support.appsflyer.com/hc/articles/4410481112081#af_hotel_score)
-- [af\_preferred\_star\_ratings](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_star_ratings)
-- [af\_preferred\_price\_range](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_price_range)
-- [af\_preferred\_neighborhoods](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_neighborhoods)
-- [af\_preferred\_num\_stops](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_num_stops)
+* [af\_price](/docs/in-app-events-event-structure#af_price)
+* [af\_content\_type](/docs/in-app-events-event-structure#af_content_type)
+* [af\_content\_id](/docs/in-app-events-event-structure#af_content_id)
+* [af\_content](/docs/in-app-events-event-structure#af_content)
+* [af\_currency](/docs/in-app-events-event-structure#af_currency)
+* [af\_quantity](/docs/in-app-events-event-structure#af_quantity)
+* [af\_payment\_info\_available](/docs/in-app-events-event-structure#af_payment_info_available)
+* [af\_content\_list](/docs/in-app-events-event-structure#af_content_list)
+* [af\_date\_a](/docs/in-app-events-event-structure#af_date_a)
+* [af\_date\_b](/docs/in-app-events-event-structure#af_date_b)
+* [af\_departing\_departure\_date](/docs/in-app-events-event-structure#af_departing_departure_date)
+* [af\_returning\_departure\_date](/docs/in-app-events-event-structure#af_returning_departure_date)
+* [af\_destination\_a](/docs/in-app-events-event-structure#af_destination_a)
+* [af\_destination\_b](/docs/in-app-events-event-structure#af_destination_b)
+* [af\_destination\_list](/docs/in-app-events-event-structure#af_destination_list)
+* [af\_city](/docs/in-app-events-event-structure#af_city)
+* [af\_region](/docs/in-app-events-event-structure#af_region)
+* [af\_country](/docs/in-app-events-event-structure#af_country)
+* [af\_departing\_arrival\_date](/docs/in-app-events-event-structure#af_departing_arrival_date)
+* [af\_returning\_arrival\_date](/docs/in-app-events-event-structure#af_returning_arrival_date)
+* [af\_suggested\_destinations](/docs/in-app-events-event-structure#af_suggested_destinations)
+* [af\_travel\_start](/docs/in-app-events-event-structure#af_travel_start)
+* [af\_travel\_end](/docs/in-app-events-event-structure#af_travel_end)
+* [af\_num\_adults](/docs/in-app-events-event-structure#af_num_adults)
+* [af\_num\_children](/docs/in-app-events-event-structure#af_num_children)
+* [af\_num\_infants](/docs/in-app-events-event-structure#af_num_infants)
+* [af\_class](/docs/in-app-events-event-structure#af_class)
+* [af\_suggested\_hotels](/docs/in-app-events-event-structure#af_suggested_hotels)
+* [af\_user\_score](/docs/in-app-events-event-structure#af_user_score)
+* [af\_hotel\_score](/docs/in-app-events-event-structure#af_hotel_score)
+* [af\_price](/docs/in-app-events-event-structure#af_price)
+* [af\_preferred\_star\_ratings](/docs/in-app-events-event-structure#af_preferred_star_ratings)
+* [af\_preferred\_price\_range](/docs/in-app-events-event-structure#af_preferred_price_range)
+* [af\_preferred\_neighborhoods](/docs/in-app-events-event-structure#af_preferred_neighborhoods)
+* [af\_currency](/docs/in-app-events-event-structure#af_currency)
+* [af\_preferred\_num\_stops](/docs/in-app-events-event-structure#af_preferred_num_stops)
 
 #### Invite (af\_invite)
 
@@ -323,29 +368,45 @@ Click the parameters that are relevant to your business needs to view the mappin
 
 **Event mapping:**
 
-| AppsFlyer | af\_invite |
+
+
+| AppsFlyer | af\_achievement\_unlocked |
 | --- | --- |
-| Meta ads | - |
-| Google Ads | invite |
-| TikTok | - |
-| Snap | INVITE |
-| X Ads | INVITE |
+| Meta ads | fb\_mobile\_achievement\_unlocked |
+| Google Ads | unlock\_achievement |
+| TikTok | UnlockAchievement |
+| Snap | ACHIEVEMENT\_UNLOCKED |
+| X Ads | ACHIEVEMENT\_UNLOCKED |
 | Amazon Ads | - |
-| Criteo | - |
+| Criteo | achievement |
+| Roku Ads | UNLOCK\_ACHIEVEMENT |
+
+1
 
 **Typical parameter:**
 
 Click the link to view the mapping to SRNs.
 
-- [af\_description](https://support.appsflyer.com/hc/articles/4410481112081#af_description)
+* [af\_description](/docs/in-app-events-event-structure#af_description)
 
 #### Lead (lead)
 
 Roku Ads event mapping:
 
-| AppsFlyer | lead |
+
+
+| AppsFlyer | af\_achievement\_unlocked |
 | --- | --- |
-| Roku Ads | LEAD |
+| Meta ads | fb\_mobile\_achievement\_unlocked |
+| Google Ads | unlock\_achievement |
+| TikTok | UnlockAchievement |
+| Snap | ACHIEVEMENT\_UNLOCKED |
+| X Ads | ACHIEVEMENT\_UNLOCKED |
+| Amazon Ads | - |
+| Criteo | achievement |
+| Roku Ads | UNLOCK\_ACHIEVEMENT |
+
+2
 
 #### Level achieved (af\_level\_achieved)
 
@@ -355,66 +416,80 @@ Roku Ads event mapping:
 
 **Event mapping:**
 
-| AppsFlyer | af\_level\_achieved |
+
+
+| AppsFlyer | af\_achievement\_unlocked |
 | --- | --- |
-| Meta ads | fb\_mobile\_level\_achieved |
-| Google Ads | level\_up |
-| TikTok | AchieveLevel |
-| Snap | LEVEL\_COMPLETE |
-| X Ads | LEVEL\_ACHIEVED |
+| Meta ads | fb\_mobile\_achievement\_unlocked |
+| Google Ads | unlock\_achievement |
+| TikTok | UnlockAchievement |
+| Snap | ACHIEVEMENT\_UNLOCKED |
+| X Ads | ACHIEVEMENT\_UNLOCKED |
 | Amazon Ads | - |
-| Criteo | userLevel |
-| Roku Ads | ACHIEVE\_LEVEL |
+| Criteo | achievement |
+| Roku Ads | UNLOCK\_ACHIEVEMENT |
+
+3
 
 **Typical parameters:**
 
 Click the links to view the mapping to SRNs.
 
-- [af\_level](https://support.appsflyer.com/hc/articles/4410481112081#af_level)
-- [af\_score](https://support.appsflyer.com/hc/articles/4410481112081#af_score)
+* [af\_level](/docs/in-app-events-event-structure#af_level)
+* [af\_score](/docs/in-app-events-event-structure#af_score)
 
 #### List view (af\_list\_view)
 
 **Description**: Used to record listings view events
 
-**Appears in these verticals:** [eCommerce](https://support.appsflyer.com/hc/articles/360019347957--Recommended-eCommerce-app-events#list-view-af_list_view)
+**Appears in these verticals:** [eCommerce](/docs/recommended-ecommerce-app-events#list-view-af_list_view)
 
 **Event mapping:**
 
-| AppsFlyer | af\_list\_view |
+
+
+| AppsFlyer | af\_achievement\_unlocked |
 | --- | --- |
-| Meta ads | - |
-| Google Ads | view\_item\_list |
-| TikTok | - |
-| Snap | LIST\_VIEW |
-| X Ads | - |
+| Meta ads | fb\_mobile\_achievement\_unlocked |
+| Google Ads | unlock\_achievement |
+| TikTok | UnlockAchievement |
+| Snap | ACHIEVEMENT\_UNLOCKED |
+| X Ads | ACHIEVEMENT\_UNLOCKED |
 | Amazon Ads | - |
-| Criteo | viewListing |
+| Criteo | achievement |
+| Roku Ads | UNLOCK\_ACHIEVEMENT |
+
+4
 
 **Typical parameters:**
 
 Click the links to view the mapping to SRNs.
 
-- [af\_content\_type](https://support.appsflyer.com/hc/articles/4410481112081#af_content_type)
-- [af\_content\_list](https://support.appsflyer.com/hc/articles/4410481112081#af_content_list)
+* [af\_content\_type](/docs/in-app-events-event-structure#af_content_type)
+* [af\_content\_list](/docs/in-app-events-event-structure#af_content_list)
 
 #### Login (af\_login)
 
 **Description**: Used to record user login events
 
-**Appears in these verticals:** [Gaming](/docs/recommended-gaming-app-events#login-af_login), [eCommerce](https://support.appsflyer.com/hc/articles/360019347957--Recommended-eCommerce-app-events#login-af_login), [Entertainment](/docs/recommended-entertainment-app-events#login-af_login), [Finance and banking](/docs/recommended-finance-and-banking-app-events#login-af_login), [Online education](/docs/recommended-online-education-app-events#login-af_login), [Hotel booking](/docs/recommended-hotel-booking-app-events#login-af_login), [Healthcare](/docs/recommended-healthcare-app-events#login-af_login), [Telecommunication](/docs/recommended-telecommunication-app-events#login-af_login)
+**Appears in these verticals:** [Gaming](/docs/recommended-gaming-app-events#login-af_login), [eCommerce](/docs/recommended-ecommerce-app-events#login-af_login), [Entertainment](/docs/recommended-entertainment-app-events#login-af_login), [Finance and banking](/docs/recommended-finance-and-banking-app-events#login-af_login), [Online education](/docs/recommended-online-education-app-events#login-af_login), [Hotel booking](/docs/recommended-hotel-booking-app-events#login-af_login), [Healthcare](/docs/recommended-healthcare-app-events#login-af_login), [Telecommunication](/docs/recommended-telecommunication-app-events#login-af_login)
 
 **Event mapping:**
 
-| AppsFlyer | af\_login |
+
+
+| AppsFlyer | af\_achievement\_unlocked |
 | --- | --- |
-| Meta ads | - |
-| Google Ads | login |
-| TikTok | Login |
-| Snap | LOGIN |
-| X Ads | LOGIN |
+| Meta ads | fb\_mobile\_achievement\_unlocked |
+| Google Ads | unlock\_achievement |
+| TikTok | UnlockAchievement |
+| Snap | ACHIEVEMENT\_UNLOCKED |
+| X Ads | ACHIEVEMENT\_UNLOCKED |
 | Amazon Ads | - |
-| Criteo | - |
+| Criteo | achievement |
+| Roku Ads | UNLOCK\_ACHIEVEMENT |
+
+5
 
 #### Opened from push notification (af\_opened\_from\_push\_notification)
 
@@ -422,106 +497,120 @@ Click the links to view the mapping to SRNs.
 
 **Event mapping:**
 
-| AppsFlyer | af\_opened\_from\_push\_notification |
+
+
+| AppsFlyer | af\_achievement\_unlocked |
 | --- | --- |
-| Meta ads | - |
-| Google Ads | notification\_open |
-| TikTok | - |
-| Snap | - |
-| X Ads | - |
+| Meta ads | fb\_mobile\_achievement\_unlocked |
+| Google Ads | unlock\_achievement |
+| TikTok | UnlockAchievement |
+| Snap | ACHIEVEMENT\_UNLOCKED |
+| X Ads | ACHIEVEMENT\_UNLOCKED |
 | Amazon Ads | - |
-| Criteo | - |
+| Criteo | achievement |
+| Roku Ads | UNLOCK\_ACHIEVEMENT |
+
+6
 
 #### Purchase (af\_purchase)
 
 **Description**: Used to record purchase events (and associate revenue to them).
 
-- For a list of currency symbols supported by AppsFlyer, click [here](https://docs.openexchangerates.org/docs/supported-currencies).
-- To report an event containing multiple items, click [here](https://support.appsflyer.com/hc/articles/115005544169#can-i-add-multiple-items-to-a-single-transaction).
-- To record and validate this event, see [Purchase and subscription validation](/docs/purchase-and-subscription-validation-overview).
+* For a list of currency symbols supported by AppsFlyer, click [here](https://docs.openexchangerates.org/docs/supported-currencies).
+* To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
+* To record and validate this event, see [Purchase and subscription validation](/docs/purchase-and-subscription-validation-overview).
 
-**Appears in verticals:** [Gaming](/docs/recommended-gaming-app-events#purchase-af_purchase), [eCommerce](https://support.appsflyer.com/hc/articles/360019347957--Recommended-eCommerce-app-events#purchase-af_purchase), [Online education](/docs/recommended-online-education-app-events#purchase-af_purchase), [Healthcare](/docs/recommended-healthcare-app-events#purchase-af_purchase), [Telecommunication](/docs/recommended-telecommunication-app-events#purchase-af_purchase)
+**Appears in verticals:** [Gaming](/docs/recommended-gaming-app-events#purchase-af_purchase), [eCommerce](/docs/recommended-ecommerce-app-events#purchase-af_purchase), [Online education](/docs/recommended-online-education-app-events#purchase-af_purchase), [Healthcare](/docs/recommended-healthcare-app-events#purchase-af_purchase), [Telecommunication](/docs/recommended-telecommunication-app-events#purchase-af_purchase)
 
 **Event mapping:**
 
-| AppsFlyer | af\_purchase |
+
+
+| AppsFlyer | af\_achievement\_unlocked |
 | --- | --- |
-| Meta ads | fb\_mobile\_purchase |
-| Google Ads | in\_app\_purchase |
-| TikTok | Purchase |
-| Snap | PURCHASE |
-| X Ads | PURCHASE |
-| Amazon Ads | OFF\_AMAZON\_PURCHASES |
-| Criteo | transactionConfirmation |
-| Roku Ads | PURCHASE |
+| Meta ads | fb\_mobile\_achievement\_unlocked |
+| Google Ads | unlock\_achievement |
+| TikTok | UnlockAchievement |
+| Snap | ACHIEVEMENT\_UNLOCKED |
+| X Ads | ACHIEVEMENT\_UNLOCKED |
+| Amazon Ads | - |
+| Criteo | achievement |
+| Roku Ads | UNLOCK\_ACHIEVEMENT |
+
+7
 
 **Typical parameters:**
 
 Click the parameters that are relevant to your business needs to view the mapping to SRNs.
 
-- [af\_revenue](https://support.appsflyer.com/hc/articles/4410481112081#af_revenue)
-- [af\_content\_type](https://support.appsflyer.com/hc/articles/4410481112081#af_content_type)
-- [af\_content\_id](https://support.appsflyer.com/hc/articles/4410481112081#af_content_id)
-- [af\_content](https://support.appsflyer.com/hc/articles/4410481112081#af_content)
-- [af\_currency](https://support.appsflyer.com/hc/articles/4410481112081#af_currency)
-- [af\_quantity](https://support.appsflyer.com/hc/articles/4410481112081#af_quantity)
-- [af\_validated](https://support.appsflyer.com/hc/articles/4410481112081#af_validated)
-- [af\_receipt\_id](https://support.appsflyer.com/hc/articles/4410481112081#af_receipt_id)
-- [af\_order\_id](https://support.appsflyer.com/hc/articles/4410481112081#af_order_id)
-- [af\_content\_list](https://support.appsflyer.com/hc/articles/4410481112081#af_content_list)
-- [af\_date\_a](https://support.appsflyer.com/hc/articles/4410481112081#af_date_a)
-- [af\_date\_b](https://support.appsflyer.com/hc/articles/4410481112081#af_date_b)
-- [af\_departing\_departure\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_departing_departure_date)
-- [af\_returning\_departure\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_returning_departure_date)
-- [af\_destination\_a](https://support.appsflyer.com/hc/articles/4410481112081#af_destination_a)
-- [af\_destination\_b](https://support.appsflyer.com/hc/articles/4410481112081#af_destination_b)
-- [af\_destination\_list](https://support.appsflyer.com/hc/articles/4410481112081#af_destination_list)
-- [af\_city](https://support.appsflyer.com/hc/articles/4410481112081#af_city)
-- [af\_region](https://support.appsflyer.com/hc/articles/4410481112081#af_region)
-- [af\_country](https://support.appsflyer.com/hc/articles/4410481112081#af_country)
-- [af\_departing\_arrival\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_departing_arrival_date)
-- [af\_returning\_arrival\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_returning_arrival_date)
-- [af\_suggested\_destinations](https://support.appsflyer.com/hc/articles/4410481112081#af_suggested_destinations)
-- [af\_travel\_start](https://support.appsflyer.com/hc/articles/4410481112081#af_travel_start)
-- [af\_travel\_end](https://support.appsflyer.com/hc/articles/4410481112081#af_travel_end)
-- [af\_num\_adults](https://support.appsflyer.com/hc/articles/4410481112081#af_num_adults)
-- [af\_num\_children](https://support.appsflyer.com/hc/articles/4410481112081#af_num_children)
-- [af\_num\_infants](https://support.appsflyer.com/hc/articles/4410481112081#af_num_infants)
-- [af\_class](https://support.appsflyer.com/hc/articles/4410481112081#af_class)
-- [af\_suggested\_hotels](https://support.appsflyer.com/hc/articles/4410481112081#af_suggested_hotels)
-- [af\_user\_score](https://support.appsflyer.com/hc/articles/4410481112081#af_user_score)
-- [af\_hotel\_score](https://support.appsflyer.com/hc/articles/4410481112081#af_hotel_score)
-- [af\_price](https://support.appsflyer.com/hc/articles/4410481112081#af_price)
-- [af\_preferred\_star\_ratings](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_star_ratings)
-- [af\_preferred\_price\_range](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_price_range)
-- [af\_preferred\_neighborhoods](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_neighborhoods)
-- [af\_preferred\_num\_stops](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_num_stops)
+* [af\_revenue](/docs/in-app-events-event-structure#af_revenue)
+* [af\_content\_type](/docs/in-app-events-event-structure#af_content_type)
+* [af\_content\_id](/docs/in-app-events-event-structure#af_content_id)
+* [af\_content](/docs/in-app-events-event-structure#af_content)
+* [af\_currency](/docs/in-app-events-event-structure#af_currency)
+* [af\_quantity](/docs/in-app-events-event-structure#af_quantity)
+* [af\_validated](/docs/in-app-events-event-structure#af_validated)
+* [af\_receipt\_id](/docs/in-app-events-event-structure#af_receipt_id)
+* [af\_order\_id](/docs/in-app-events-event-structure#af_order_id)
+* [af\_content\_list](/docs/in-app-events-event-structure#af_content_list)
+* [af\_date\_a](/docs/in-app-events-event-structure#af_date_a)
+* [af\_date\_b](/docs/in-app-events-event-structure#af_date_b)
+* [af\_departing\_departure\_date](/docs/in-app-events-event-structure#af_departing_departure_date)
+* [af\_returning\_departure\_date](/docs/in-app-events-event-structure#af_returning_departure_date)
+* [af\_destination\_a](/docs/in-app-events-event-structure#af_destination_a)
+* [af\_destination\_b](/docs/in-app-events-event-structure#af_destination_b)
+* [af\_destination\_list](/docs/in-app-events-event-structure#af_destination_list)
+* [af\_city](/docs/in-app-events-event-structure#af_city)
+* [af\_region](/docs/in-app-events-event-structure#af_region)
+* [af\_country](/docs/in-app-events-event-structure#af_country)
+* [af\_departing\_arrival\_date](/docs/in-app-events-event-structure#af_departing_arrival_date)
+* [af\_returning\_arrival\_date](/docs/in-app-events-event-structure#af_returning_arrival_date)
+* [af\_suggested\_destinations](/docs/in-app-events-event-structure#af_suggested_destinations)
+* [af\_travel\_start](/docs/in-app-events-event-structure#af_travel_start)
+* [af\_travel\_end](/docs/in-app-events-event-structure#af_travel_end)
+* [af\_num\_adults](/docs/in-app-events-event-structure#af_num_adults)
+* [af\_num\_children](/docs/in-app-events-event-structure#af_num_children)
+* [af\_num\_infants](/docs/in-app-events-event-structure#af_num_infants)
+* [af\_class](/docs/in-app-events-event-structure#af_class)
+* [af\_suggested\_hotels](/docs/in-app-events-event-structure#af_suggested_hotels)
+* [af\_user\_score](/docs/in-app-events-event-structure#af_user_score)
+* [af\_hotel\_score](/docs/in-app-events-event-structure#af_hotel_score)
+* [af\_price](/docs/in-app-events-event-structure#af_price)
+* [af\_preferred\_star\_ratings](/docs/in-app-events-event-structure#af_preferred_star_ratings)
+* [af\_preferred\_price\_range](/docs/in-app-events-event-structure#af_preferred_price_range)
+* [af\_preferred\_neighborhoods](/docs/in-app-events-event-structure#af_preferred_neighborhoods)
+* [af\_preferred\_num\_stops](/docs/in-app-events-event-structure#af_preferred_num_stops)
 
 #### Rate (af\_rate)
 
-**Description**: Used to record app/item rating events. To report an event containing multiple items, click [here](https://support.appsflyer.com/hc/articles/115005544169#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record app/item rating events. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
 
 **Event mapping:**
 
-| AppsFlyer | af\_rate |
+
+
+| AppsFlyer | af\_achievement\_unlocked |
 | --- | --- |
-| Meta ads | fb\_mobile\_rate |
-| Google Ads | submit\_rating |
-| TikTok | Rate |
-| Snap | RATE |
-| X Ads | RATED |
+| Meta ads | fb\_mobile\_achievement\_unlocked |
+| Google Ads | unlock\_achievement |
+| TikTok | UnlockAchievement |
+| Snap | ACHIEVEMENT\_UNLOCKED |
+| X Ads | ACHIEVEMENT\_UNLOCKED |
 | Amazon Ads | - |
-| Criteo | - |
+| Criteo | achievement |
+| Roku Ads | UNLOCK\_ACHIEVEMENT |
+
+8
 
 **Typical parameters:**
 
 Click the links to view the mapping to SRNs.
 
-- [af\_rating\_value](https://support.appsflyer.com/hc/articles/4410481112081#af_rating_value)
-- [af\_content\_type](https://support.appsflyer.com/hc/articles/4410481112081#af_content_type)
-- [af\_content\_id](https://support.appsflyer.com/hc/articles/4410481112081#af_content_id)
-- [af\_content](https://support.appsflyer.com/hc/articles/4410481112081#af_content)
-- [af\_max\_rating\_value](https://support.appsflyer.com/hc/articles/4410481112081#af_max_rating_value)
+* [af\_rating\_value](/docs/in-app-events-event-structure#af_rating_value)
+* [af\_content\_type](/docs/in-app-events-event-structure#af_content_type)
+* [af\_content\_id](/docs/in-app-events-event-structure#af_content_id)
+* [af\_content](/docs/in-app-events-event-structure#af_content)
+* [af\_max\_rating\_value](/docs/in-app-events-event-structure#af_max_rating_value)
 
 #### Re-engage (af\_re\_engage)
 
@@ -529,75 +618,84 @@ Click the links to view the mapping to SRNs.
 
 **Event mapping:**
 
-| AppsFlyer | af\_re\_engage |
+
+
+| AppsFlyer | af\_achievement\_unlocked |
 | --- | --- |
-| Meta ads | - |
-| Google Ads | custom\_event |
-| Snap | - |
-| X Ads | RE\_ENGAGE |
+| Meta ads | fb\_mobile\_achievement\_unlocked |
+| Google Ads | unlock\_achievement |
+| TikTok | UnlockAchievement |
+| Snap | ACHIEVEMENT\_UNLOCKED |
+| X Ads | ACHIEVEMENT\_UNLOCKED |
 | Amazon Ads | - |
-| Criteo | - |
+| Criteo | achievement |
+| Roku Ads | UNLOCK\_ACHIEVEMENT |
+
+9
 
 **Typical parameter:**
 
 Click the link to view the mapping to SRNs.
 
-- [af\_description](https://support.appsflyer.com/hc/articles/4410481112081#af_description)
+* [af\_description](/docs/in-app-events-event-structure#af_description)
 
 #### Search (af\_search)
 
 **Description**: Used to record search events
 
-**Appears in these verticals:** [eCommerce](https://support.appsflyer.com/hc/articles/360019347957--Recommended-eCommerce-app-events#search-af_search), [Flight booking](/docs/recommended-flight-booking-app-events#search-af_search), [Hotel booking](/docs/recommended-hotel-booking-app-events#search-af_search)
+**Appears in these verticals:** [eCommerce](/docs/recommended-ecommerce-app-events#search-af_search), [Flight booking](/docs/recommended-flight-booking-app-events#search-af_search), [Hotel booking](/docs/recommended-hotel-booking-app-events#search-af_search)
 
 **Event mapping:**
 
-| AppsFlyer | af\_search |
+
+
+| AppsFlyer | af\_ad\_click |
 | --- | --- |
-| Meta ads | fb\_mobile\_search |
-| Google Ads | view\_search\_results |
-| TikTok | Search |
-| Snap | SEARCH |
-| X Ads | SEARCH |
-| Amazon Ads | SEARCH |
-| Criteo | viewSearch |
-| Roku Ads | SEARCH |
+| Meta ads | AdClick |
+| Google Ads | - |
+| TikTok | InAppADClick |
+| Snap | AD\_CLICK |
+| X Ads | - |
+| Amazon Ads | - |
+| Criteo | - |
+
+0
 
 **Typical parameters:**
 
 Click the parameters that are relevant to your business needs to view the mapping to SRNs.
 
-- [af\_content\_type](https://support.appsflyer.com/hc/articles/4410481112081#af_content_type)
-- [af\_search\_string](https://support.appsflyer.com/hc/articles/4410481112081#af_search_string)
-- [af\_date\_a](https://support.appsflyer.com/hc/articles/4410481112081#af_date_a)
-- [af\_date\_b](https://support.appsflyer.com/hc/articles/4410481112081#af_date_b)
-- [af\_destination\_a](https://support.appsflyer.com/hc/articles/4410481112081#af_destination_a)
-- [af\_destination\_b](https://support.appsflyer.com/hc/articles/4410481112081#af_destination_b)
-- [af\_success](https://support.appsflyer.com/hc/articles/4410481112081#af_success)
-- [af\_content\_list](https://support.appsflyer.com/hc/articles/4410481112081#af_content_list)
-- [af\_departing\_departure\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_departing_departure_date)
-- [af\_returning\_departure\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_returning_departure_date)
-- [af\_destination\_list](https://support.appsflyer.com/hc/articles/4410481112081#af_destination_list)
-- [af\_city](https://support.appsflyer.com/hc/articles/4410481112081#af_city)
-- [af\_region](https://support.appsflyer.com/hc/articles/4410481112081#af_region)
-- [af\_country](https://support.appsflyer.com/hc/articles/4410481112081#af_country)
-- [af\_departing\_arrival\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_departing_arrival_date)
-- [af\_returning\_arrival\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_returning_arrival_date)
-- [af\_suggested\_destinations](https://support.appsflyer.com/hc/articles/4410481112081#af_suggested_destinations)
-- [af\_travel\_start](https://support.appsflyer.com/hc/articles/4410481112081#af_travel_start)
-- [af\_travel\_end](https://support.appsflyer.com/hc/articles/4410481112081#af_travel_end)
-- [af\_num\_adults](https://support.appsflyer.com/hc/articles/4410481112081#af_num_adults)
-- [af\_num\_children](https://support.appsflyer.com/hc/articles/4410481112081#af_num_children)
-- [af\_num\_infants](https://support.appsflyer.com/hc/articles/4410481112081#af_num_infants)
-- [af\_class](https://support.appsflyer.com/hc/articles/4410481112081#af_class)
-- [af\_suggested\_hotels](https://support.appsflyer.com/hc/articles/4410481112081#af_suggested_hotels)
-- [af\_user\_score](https://support.appsflyer.com/hc/articles/4410481112081#af_user_score)
-- [af\_hotel\_score](https://support.appsflyer.com/hc/articles/4410481112081#af_hotel_score)
-- [af\_price](https://support.appsflyer.com/hc/articles/4410481112081#af_price)
-- [af\_preferred\_star\_ratings](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_star_ratings)
-- [af\_preferred\_price\_range](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_price_range)
-- [af\_preferred\_neighborhoods](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_neighborhoods)
-- [af\_preferred\_num\_stops](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_num_stops)
+* [af\_content\_type](/docs/in-app-events-event-structure#af_content_type)
+* [af\_search\_string](/docs/in-app-events-event-structure#af_search_string)
+* [af\_date\_a](/docs/in-app-events-event-structure#af_date_a)
+* [af\_date\_b](/docs/in-app-events-event-structure#af_date_b)
+* [af\_destination\_a](/docs/in-app-events-event-structure#af_destination_a)
+* [af\_destination\_b](/docs/in-app-events-event-structure#af_destination_b)
+* [af\_success](/docs/in-app-events-event-structure#af_success)
+* [af\_content\_list](/docs/in-app-events-event-structure#af_content_list)
+* [af\_departing\_departure\_date](/docs/in-app-events-event-structure#af_departing_departure_date)
+* [af\_returning\_departure\_date](/docs/in-app-events-event-structure#af_returning_departure_date)
+* [af\_destination\_list](/docs/in-app-events-event-structure#af_destination_list)
+* [af\_city](/docs/in-app-events-event-structure#af_city)
+* [af\_region](/docs/in-app-events-event-structure#af_region)
+* [af\_country](/docs/in-app-events-event-structure#af_country)
+* [af\_departing\_arrival\_date](/docs/in-app-events-event-structure#af_departing_arrival_date)
+* [af\_returning\_arrival\_date](/docs/in-app-events-event-structure#af_returning_arrival_date)
+* [af\_suggested\_destinations](/docs/in-app-events-event-structure#af_suggested_destinations)
+* [af\_travel\_start](/docs/in-app-events-event-structure#af_travel_start)
+* [af\_travel\_end](/docs/in-app-events-event-structure#af_travel_end)
+* [af\_num\_adults](/docs/in-app-events-event-structure#af_num_adults)
+* [af\_num\_children](/docs/in-app-events-event-structure#af_num_children)
+* [af\_num\_infants](/docs/in-app-events-event-structure#af_num_infants)
+* [af\_class](/docs/in-app-events-event-structure#af_class)
+* [af\_suggested\_hotels](/docs/in-app-events-event-structure#af_suggested_hotels)
+* [af\_user\_score](/docs/in-app-events-event-structure#af_user_score)
+* [af\_hotel\_score](/docs/in-app-events-event-structure#af_hotel_score)
+* [af\_price](/docs/in-app-events-event-structure#af_price)
+* [af\_preferred\_star\_ratings](/docs/in-app-events-event-structure#af_preferred_star_ratings)
+* [af\_preferred\_price\_range](/docs/in-app-events-event-structure#af_preferred_price_range)
+* [af\_preferred\_neighborhoods](/docs/in-app-events-event-structure#af_preferred_neighborhoods)
+* [af\_preferred\_num\_stops](/docs/in-app-events-event-structure#af_preferred_num_stops)
 
 #### Share (af\_share)
 
@@ -607,223 +705,259 @@ Click the parameters that are relevant to your business needs to view the mappin
 
 **Event mapping:**
 
-| AppsFlyer | af\_share |
+
+
+| AppsFlyer | af\_ad\_click |
 | --- | --- |
-| Meta ads | - |
-| Google Ads | share |
-| TikTok | - |
-| Snap | SHARE |
-| X Ads | SHARE |
+| Meta ads | AdClick |
+| Google Ads | - |
+| TikTok | InAppADClick |
+| Snap | AD\_CLICK |
+| X Ads | - |
 | Amazon Ads | - |
 | Criteo | - |
+
+1
 
 **Typical parameter:**
 
 Click the link to view the mapping to SRNs.
 
-- [af\_description](https://support.appsflyer.com/hc/articles/4410481112081#af_description)
+* [af\_description](/docs/in-app-events-event-structure#af_description)
 
 #### Spent credits (af\_spent\_credits)
 
-**Description**: Used to record credit spend events. To report an event containing multiple items, click [here](https://support.appsflyer.com/hc/articles/115005544169#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record credit spend events. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
 
-**Appears in verticals:** [Ride-hailing](https://support.appsflyer.com/hc/articles/360019651957#spent-credits-af_spent_credits)
+**Appears in verticals:** [Ride-hailing](/docs/recommended-ride-hailing-app-events#spent-credits-af_spent_credits)
 
 **Event mapping:**
 
-| AppsFlyer | af\_spent\_credits |
+
+
+| AppsFlyer | af\_ad\_click |
 | --- | --- |
-| Meta ads | fb\_mobile\_spent\_credits |
-| Google Ads | spend\_virtual\_currency |
-| TikTok | SpendCredits |
-| Snap | SPENT\_CREDITS |
-| X Ads | SPENT\_CREDITS |
+| Meta ads | AdClick |
+| Google Ads | - |
+| TikTok | InAppADClick |
+| Snap | AD\_CLICK |
+| X Ads | - |
 | Amazon Ads | - |
-| Criteo | transactionConfirmation |
+| Criteo | - |
+
+2
 
 **Typical parameters:**
 
 Click the links to view the mapping to SRNs.
 
-- [af\_price](https://support.appsflyer.com/hc/articles/4410481112081#af_price)
-- [af\_content\_type](https://support.appsflyer.com/hc/articles/4410481112081#af_content_type)
-- [af\_content\_id](https://support.appsflyer.com/hc/articles/4410481112081#af_content_id)
-- [af\_content](https://support.appsflyer.com/hc/articles/4410481112081#af_content)
+* [af\_price](/docs/in-app-events-event-structure#af_price)
+* [af\_content\_type](/docs/in-app-events-event-structure#af_content_type)
+* [af\_content\_id](/docs/in-app-events-event-structure#af_content_id)
+* [af\_content](/docs/in-app-events-event-structure#af_content)
 
 #### Start trial (af\_start\_trial)
 
-**Description**: Used to record the start of a free trial of a product. To record and validate this event, see [Purchase and subscription validation](/docs/purchase-and-subscription-validation-overview).
+**Description**: Used to record the start of a free trial of a product. To record and validate this event, see [Purchase and subscription validation](/docs/purchase-and-subscription-validation-overview).
 
 **Appears in these verticals:** [Entertainment](/docs/recommended-entertainment-app-events#start-trial-af_start_trial)
 
 **Event mapping:**
 
-| AppsFlyer | af\_start\_trial |
+
+
+| AppsFlyer | af\_ad\_click |
 | --- | --- |
-| Meta ads | StartTrial |
+| Meta ads | AdClick |
 | Google Ads | - |
-| TikTok | StartTrial |
-| Snap | START\_TRIAL |
+| TikTok | InAppADClick |
+| Snap | AD\_CLICK |
 | X Ads | - |
 | Amazon Ads | - |
 | Criteo | - |
-| Roku Ads | START\_TRIAL |
+
+3
 
 **Typical parameters:**
 
 Click the links to view the mapping to SRNs.
 
-- [af\_price](https://support.appsflyer.com/hc/articles/4410481112081#af_price)
-- [af\_currency](https://support.appsflyer.com/hc/articles/4410481112081#af_currency)
-- [af\_subscription\_id](https://support.appsflyer.com/hc/articles/4410481112081#af_subscription_id)
+* [af\_price](/docs/in-app-events-event-structure#af_price)
+* [af\_currency](/docs/in-app-events-event-structure#af_currency)
+* [af\_subscription\_id](/docs/in-app-events-event-structure#af_subscription_id)
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > If you are mapping this event to the Meta ads StartTrial event and want to associate revenue, use the af\_price parameter instead of the af\_revenue parameter.
 
+
 #### Subscription (af\_subscribe)
 
-**Description**: Used to record paid subscription purchases. To record and validate this event, see [Purchase and subscription validation](/docs/purchase-and-subscription-validation-overview).
+**Description**: Used to record paid subscription purchases. To record and validate this event, see [Purchase and subscription validation](/docs/purchase-and-subscription-validation-overview).
 
 **Appears in these verticals:** [Entertainment](/docs/recommended-entertainment-app-events#subscription-af_subscribe)
 
 **Event mapping:**
 
-| AppsFlyer | af\_subscribe |
+
+
+| AppsFlyer | af\_ad\_click |
 | --- | --- |
-| Meta ads | Subscribe |
+| Meta ads | AdClick |
 | Google Ads | - |
-| TikTok | Subscribe |
-| Snap | SUBSCRIBE |
+| TikTok | InAppADClick |
+| Snap | AD\_CLICK |
 | X Ads | - |
-| Amazon Ads | SUBSCRIBE |
-| Criteo | SUBSCRIBE |
-| Roku Ads | SUBSCRIBE |
+| Amazon Ads | - |
+| Criteo | - |
+
+4
 
 **Typical parameters:**
 
 Click the links to view the mapping to SRNs.
 
-- [af\_revenue](https://support.appsflyer.com/hc/articles/4410481112081#af_revenue)
-- [af\_currency](https://support.appsflyer.com/hc/articles/4410481112081#af_currency)
-- [af\_subscription\_id](https://support.appsflyer.com/hc/articles/4410481112081#af_subscription_id)
+* [af\_revenue](/docs/in-app-events-event-structure#af_revenue)
+* [af\_currency](/docs/in-app-events-event-structure#af_currency)
+* [af\_subscription\_id](/docs/in-app-events-event-structure#af_subscription_id)
 
 #### Travel booking (af\_travel\_booking)
 
-**Description**: Used to record travel booking events (and associate revenue to them). To report an event containing multiple items, click [here](https://support.appsflyer.com/hc/articles/115005544169#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record travel booking events (and associate revenue to them). To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
 
-**Appears in these verticals:** [Flight booking](/docs/recommended-flight-booking-app-events#travel-booking-af_travel_booking), [Hotel booking](https://support.appsflyer.com/hc/articles/360019843558#travel-booking-af_travel_booking)
+**Appears in these verticals:** [Flight booking](/docs/recommended-flight-booking-app-events#travel-booking-af_travel_booking), [Hotel booking](/docs/recommended-hotel-booking-app-events#travel-booking-af_travel_booking)
 
 **Event mapping:**
 
-| AppsFlyer | af\_travel\_booking |
+
+
+| AppsFlyer | af\_ad\_click |
 | --- | --- |
-| Meta ads | fb\_mobile\_purchase |
-| Google Ads | ecommerce\_purchase |
-| TikTok | Purchase |
-| Snap | RESERVE |
-| X Ads | PURCHASE |
+| Meta ads | AdClick |
+| Google Ads | - |
+| TikTok | InAppADClick |
+| Snap | AD\_CLICK |
+| X Ads | - |
 | Amazon Ads | - |
-| Criteo | transactionConfirmation |
+| Criteo | - |
+
+5
 
 **Typical parameters:**
 
 Click the parameters that are relevant to your business needs to view the mapping to SRNs.
 
-- [af\_revenue](https://support.appsflyer.com/hc/articles/4410481112081#af_revenue)
-- [af\_customer\_user\_id](https://support.appsflyer.com/hc/articles/4410481112081#af_customer_user_id)
-- [af\_content\_type](https://support.appsflyer.com/hc/articles/4410481112081#af_content_type)
-- [af\_content\_id](https://support.appsflyer.com/hc/articles/4410481112081#af_content_id)
-- [af\_class](https://support.appsflyer.com/hc/articles/4410481112081#af_class)
-- [af\_date\_a](https://support.appsflyer.com/hc/articles/4410481112081#af_date_a)
-- [af\_date\_b](https://support.appsflyer.com/hc/articles/4410481112081#af_date_b)
-- [af\_destination\_a](https://support.appsflyer.com/hc/articles/4410481112081#af_destination_a)
-- [af\_destination\_b](https://support.appsflyer.com/hc/articles/4410481112081#af_destination_b)
-- [af\_success](https://support.appsflyer.com/hc/articles/4410481112081#af_success)
-- [af\_content\_list](https://support.appsflyer.com/hc/articles/4410481112081#af_content_list)
-- [af\_departing\_departure\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_departing_departure_date)
-- [af\_returning\_departure\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_returning_departure_date)
-- [af\_destination\_list](https://support.appsflyer.com/hc/articles/4410481112081#af_destination_list)
-- [af\_city](https://support.appsflyer.com/hc/articles/4410481112081#af_city)
-- [af\_region](https://support.appsflyer.com/hc/articles/4410481112081#af_region)
-- [af\_country](https://support.appsflyer.com/hc/articles/4410481112081#af_country)
-- [af\_departing\_arrival\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_departing_arrival_date)
-- [af\_returning\_arrival\_date](https://support.appsflyer.com/hc/articles/4410481112081#af_returning_arrival_date)
-- [af\_suggested\_destinations](https://support.appsflyer.com/hc/articles/4410481112081#af_suggested_destinations)
-- [af\_travel\_start](https://support.appsflyer.com/hc/articles/4410481112081#af_travel_start)
-- [af\_travel\_end](https://support.appsflyer.com/hc/articles/4410481112081#af_travel_end)
-- [af\_num\_adults](https://support.appsflyer.com/hc/articles/4410481112081#af_num_adults)
-- [af\_num\_children](https://support.appsflyer.com/hc/articles/4410481112081#af_num_children)
-- [af\_num\_infants](https://support.appsflyer.com/hc/articles/4410481112081#af_num_infants)
-- [af\_class](https://support.appsflyer.com/hc/articles/4410481112081#af_class)
-- [af\_suggested\_hotels](https://support.appsflyer.com/hc/articles/4410481112081#af_suggested_hotels)
-- [af\_user\_score](https://support.appsflyer.com/hc/articles/4410481112081#af_user_score)
-- [af\_hotel\_score](https://support.appsflyer.com/hc/articles/4410481112081#af_hotel_score)
-- [af\_price](https://support.appsflyer.com/hc/articles/4410481112081#af_price)
-- [af\_preferred\_star\_ratings](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_star_ratings)
-- [af\_preferred\_price\_range](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_price_range)
-- [af\_preferred\_neighborhoods](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_neighborhoods)
-- [af\_preferred\_num\_stops](https://support.appsflyer.com/hc/articles/4410481112081#af_preferred_num_stops)
-- [af\_order\_id](https://support.appsflyer.com/hc/articles/4410481112081#af_order_id)
+* [af\_revenue](/docs/in-app-events-event-structure#af_revenue)
+* [af\_customer\_user\_id](/docs/in-app-events-event-structure#af_customer_user_id)
+* [af\_content\_type](/docs/in-app-events-event-structure#af_content_type)
+* [af\_content\_id](/docs/in-app-events-event-structure#af_content_id)
+* [af\_class](/docs/in-app-events-event-structure#af_class)
+* [af\_date\_a](/docs/in-app-events-event-structure#af_date_a)
+* [af\_date\_b](/docs/in-app-events-event-structure#af_date_b)
+* [af\_destination\_a](/docs/in-app-events-event-structure#af_destination_a)
+* [af\_destination\_b](/docs/in-app-events-event-structure#af_destination_b)
+* [af\_success](/docs/in-app-events-event-structure#af_success)
+* [af\_content\_list](/docs/in-app-events-event-structure#af_content_list)
+* [af\_departing\_departure\_date](/docs/in-app-events-event-structure#af_departing_departure_date)
+* [af\_returning\_departure\_date](/docs/in-app-events-event-structure#af_returning_departure_date)
+* [af\_destination\_list](/docs/in-app-events-event-structure#af_destination_list)
+* [af\_city](/docs/in-app-events-event-structure#af_city)
+* [af\_region](/docs/in-app-events-event-structure#af_region)
+* [af\_country](/docs/in-app-events-event-structure#af_country)
+* [af\_departing\_arrival\_date](/docs/in-app-events-event-structure#af_departing_arrival_date)
+* [af\_returning\_arrival\_date](/docs/in-app-events-event-structure#af_returning_arrival_date)
+* [af\_suggested\_destinations](/docs/in-app-events-event-structure#af_suggested_destinations)
+* [af\_travel\_start](/docs/in-app-events-event-structure#af_travel_start)
+* [af\_travel\_end](/docs/in-app-events-event-structure#af_travel_end)
+* [af\_num\_adults](/docs/in-app-events-event-structure#af_num_adults)
+* [af\_num\_children](/docs/in-app-events-event-structure#af_num_children)
+* [af\_num\_infants](/docs/in-app-events-event-structure#af_num_infants)
+* [af\_class](/docs/in-app-events-event-structure#af_class)
+* [af\_suggested\_hotels](/docs/in-app-events-event-structure#af_suggested_hotels)
+* [af\_user\_score](/docs/in-app-events-event-structure#af_user_score)
+* [af\_hotel\_score](/docs/in-app-events-event-structure#af_hotel_score)
+* [af\_price](/docs/in-app-events-event-structure#af_price)
+* [af\_preferred\_star\_ratings](/docs/in-app-events-event-structure#af_preferred_star_ratings)
+* [af\_preferred\_price\_range](/docs/in-app-events-event-structure#af_preferred_price_range)
+* [af\_preferred\_neighborhoods](/docs/in-app-events-event-structure#af_preferred_neighborhoods)
+* [af\_preferred\_num\_stops](/docs/in-app-events-event-structure#af_preferred_num_stops)
+* [af\_order\_id](/docs/in-app-events-event-structure#af_order_id)
 
 #### Tutorial completion (af\_tutorial\_completion)
 
-**Description**: Used to record tutorial completions. To report an event containing multiple items, click [here](https://support.appsflyer.com/hc/articles/115005544169#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record tutorial completions. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
 
 **Appears in these verticals:** [Gaming](/docs/recommended-gaming-app-events#tutorial-completion-af_tutorial_completion), [Online education](/docs/recommended-gaming-app-events#tutorial-completion-af_tutorial_completion)
 
 **Event mapping:**
 
-| AppsFlyer | af\_tutorial\_completion |
+
+
+| AppsFlyer | af\_ad\_click |
 | --- | --- |
-| Meta ads | fb\_mobile\_tutorial\_completion |
-| Google Ads | tutorial\_complete |
-| TikTok | CompleteTutorial |
-| Snap | COMPLETE\_TUTORIAL |
-| X Ads | TUTORIAL\_COMPLETE |
+| Meta ads | AdClick |
+| Google Ads | - |
+| TikTok | InAppADClick |
+| Snap | AD\_CLICK |
+| X Ads | - |
 | Amazon Ads | - |
 | Criteo | - |
+
+6
 
 **Typical parameters:**
 
 Click the links to view the mapping to SRNs.
 
-- [af\_success](https://support.appsflyer.com/hc/articles/4410481112081#af_success)
-- [af\_content\_id](https://support.appsflyer.com/hc/articles/4410481112081#af_content_id)
-- [af\_content](https://support.appsflyer.com/hc/articles/4410481112081#af_content)
+* [af\_success](/docs/in-app-events-event-structure#af_success)
+* [af\_content\_id](/docs/in-app-events-event-structure#af_content_id)
+* [af\_content](/docs/in-app-events-event-structure#af_content)
 
 #### Update (af\_update)
 
-**Description**: Used to record update events. To report an event containing multiple items, click [here](https://support.appsflyer.com/hc/articles/115005544169#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record update events. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
 
 **Event mapping:**
 
-| AppsFlyer | af\_update |
+
+
+| AppsFlyer | af\_ad\_click |
 | --- | --- |
-| Meta ads | - |
-| Google Ads | app\_update |
-| Snap | - |
-| X Ads | UPDATE |
+| Meta ads | AdClick |
+| Google Ads | - |
+| TikTok | InAppADClick |
+| Snap | AD\_CLICK |
+| X Ads | - |
 | Amazon Ads | - |
 | Criteo | - |
+
+7
 
 **Typical parameter:**
 
 Click the link to view the mapping to SRNs.
 
-- [af\_content\_id](https://support.appsflyer.com/hc/articles/4410481112081#af_content_id)
+* [af\_content\_id](/docs/in-app-events-event-structure#af_content_id)
 
-> 📘 Note
+> 📘 **Note**
 >
-> In addition to the predefined event names described in this section, [Meta ads offers additional events](https://support.appsflyer.com/hc/articles/4410480904081#predefined-event-mapping) that are sent without attributes.
+> #### Note
+>
+> In addition to the predefined event names described in this section, [Meta ads offers additional events](/docs/meta-ads-in-app-event-mapping#predefined-event-mapping) that are sent without attributes.
+
 
 ## Predefined event parameters
 
 The following section provides a list of the predefined event parameters. Each event parameter includes the mapping used for Meta ads, Google Ads, Snap, X Ads, and Criteo. You can choose to include any of the event parameters in an event.
 
-> 📘 Note
+> 📘 **Note**
 >
-> You can see the event parameters in the Event Value column in [raw data reports](https://support.appsflyer.com/hc/articles/209680773) (premium feature).
+> #### Note
+>
+> You can see the event parameters in the Event Value column in [raw data reports](/docs/raw-data-reporting-overview) (premium feature).
+
 
 #### af\_adrev\_ad\_type
 
@@ -831,14 +965,19 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_adrev\_ad\_type |
+
+
+| AppsFlyer | af\_ad\_click |
 | --- | --- |
-| Meta ads | ad\_type |
+| Meta ads | AdClick |
 | Google Ads | - |
-| Snap | - |
+| TikTok | InAppADClick |
+| Snap | AD\_CLICK |
 | X Ads | - |
-| TikTok | - |
+| Amazon Ads | - |
 | Criteo | - |
+
+8
 
 #### af\_city
 
@@ -846,14 +985,19 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_city |
+
+
+| AppsFlyer | af\_ad\_click |
 | --- | --- |
-| Meta ads | fb\_city |
+| Meta ads | AdClick |
 | Google Ads | - |
-| Snap | - |
+| TikTok | InAppADClick |
+| Snap | AD\_CLICK |
 | X Ads | - |
-| TikTok | flight\_city |
+| Amazon Ads | - |
 | Criteo | - |
+
+9
 
 #### af\_class
 
@@ -861,14 +1005,19 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_class |
+
+
+| AppsFlyer | af\_ad\_view |
 | --- | --- |
-| Meta ads | fb\_travel\_class |
-| Google Ads | travel\_class |
-| Snap | - |
+| Meta ads | AdImpression |
+| Google Ads | - |
+| TikTok | InAppADImpr |
+| Snap | AD\_VIEW |
 | X Ads | - |
-| TikTok | flight\_class |
+| Amazon Ads | - |
 | Criteo | - |
+
+0
 
 #### af\_content
 
@@ -876,14 +1025,19 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_content |
+
+
+| AppsFlyer | af\_ad\_view |
 | --- | --- |
-| Meta ads | fb\_content |
+| Meta ads | AdImpression |
 | Google Ads | - |
-| Snap | - |
+| TikTok | InAppADImpr |
+| Snap | AD\_VIEW |
 | X Ads | - |
-| TikTok | - |
+| Amazon Ads | - |
 | Criteo | - |
+
+1
 
 #### af\_content\_id
 
@@ -893,31 +1047,41 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_content\_id |
+
+
+| AppsFlyer | af\_ad\_view |
 | --- | --- |
-| Meta ads | fb\_content\_id |
-| Google Ads | item\_id |
-| Snap | item\_ids |
-| X Ads | content\_id |
-| TikTok | content\_id |
-| Criteo | id |
+| Meta ads | AdImpression |
+| Google Ads | - |
+| TikTok | InAppADImpr |
+| Snap | AD\_VIEW |
+| X Ads | - |
+| Amazon Ads | - |
+| Criteo | - |
+
+2
 
 #### af\_content\_list
 
 **Description**: List of content IDs
 
-**Note:** When you use `af_content_list`, AppsFlyer treats the entire list as a single value. AppsFlyer audience segmentation tools can’t filter for individual content IDs within the list. For example, if `af_content_list` is `["ID1","ID2","ID3"]`, the audience tool can’t isolate or match `ID1` alone.
+**Note:** When you use `af_content_list`, AppsFlyer treats the entire list as a single value. AppsFlyer audience segmentation tools can’t filter for individual content IDs within the list. For example, if  `af_content_list` is `["ID1","ID2","ID3"]`, the audience tool can’t isolate or match `ID1` alone.
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_content\_list |
+
+
+| AppsFlyer | af\_ad\_view |
 | --- | --- |
-| Meta ads | fb\_content\_id |
-| Google Ads | item\_id |
-| Snap | item\_ids |
+| Meta ads | AdImpression |
+| Google Ads | - |
+| TikTok | InAppADImpr |
+| Snap | AD\_VIEW |
 | X Ads | - |
-| TikTok | - |
+| Amazon Ads | - |
 | Criteo | - |
+
+3
 
 #### af\_content\_type
 
@@ -925,14 +1089,19 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_content\_type |
+
+
+| AppsFlyer | af\_ad\_view |
 | --- | --- |
-| Meta ads | fb\_content\_type |
-| Google Ads | item\_category |
-| Snap | item\_category |
-| X Ads | content\_type |
-| TikTok | content\_type |
+| Meta ads | AdImpression |
+| Google Ads | - |
+| TikTok | InAppADImpr |
+| Snap | AD\_VIEW |
+| X Ads | - |
+| Amazon Ads | - |
 | Criteo | - |
+
+4
 
 #### af\_country
 
@@ -940,14 +1109,19 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_country |
+
+
+| AppsFlyer | af\_ad\_view |
 | --- | --- |
-| Meta ads | fb\_country |
+| Meta ads | AdImpression |
 | Google Ads | - |
-| Snap | - |
+| TikTok | InAppADImpr |
+| Snap | AD\_VIEW |
 | X Ads | - |
-| TikTok | flight\_country |
+| Amazon Ads | - |
 | Criteo | - |
+
+5
 
 #### af\_currency
 
@@ -955,15 +1129,19 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_currency |
+
+
+| AppsFlyer | af\_ad\_view |
 | --- | --- |
-| Meta ads | fb\_currency |
-| Google Ads | currency\_code |
-| Snap | currency |
-| X Ads | price\_currency |
-| TikTok | currency |
-| Amazon Ads | currency |
-| Criteo | currency |
+| Meta ads | AdImpression |
+| Google Ads | - |
+| TikTok | InAppADImpr |
+| Snap | AD\_VIEW |
+| X Ads | - |
+| Amazon Ads | - |
+| Criteo | - |
+
+6
 
 #### af\_customer\_user\_id
 
@@ -971,14 +1149,19 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_customer\_user\_id |
+
+
+| AppsFlyer | af\_ad\_view |
 | --- | --- |
-| Meta ads | - |
-| Google Ads | customer\_user\_id |
-| Snap | - |
+| Meta ads | AdImpression |
+| Google Ads | - |
+| TikTok | InAppADImpr |
+| Snap | AD\_VIEW |
 | X Ads | - |
-| TikTok | - |
-| Criteo | cid |
+| Amazon Ads | - |
+| Criteo | - |
+
+7
 
 #### af\_date\_a
 
@@ -986,14 +1169,19 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_date\_a |
+
+
+| AppsFlyer | af\_ad\_view |
 | --- | --- |
-| Meta ads | fb\_checkin\_date |
-| Google Ads | start\_date |
-| Snap | - |
+| Meta ads | AdImpression |
+| Google Ads | - |
+| TikTok | InAppADImpr |
+| Snap | AD\_VIEW |
 | X Ads | - |
-| TikTok | checkin\_date |
-| Criteo | din |
+| Amazon Ads | - |
+| Criteo | - |
+
+8
 
 #### af\_date\_b
 
@@ -1001,14 +1189,19 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_date\_b |
+
+
+| AppsFlyer | af\_ad\_view |
 | --- | --- |
-| Meta ads | fb\_checkout\_date |
-| Google Ads | end\_date |
-| Snap | - |
+| Meta ads | AdImpression |
+| Google Ads | - |
+| TikTok | InAppADImpr |
+| Snap | AD\_VIEW |
 | X Ads | - |
-| TikTok | checkout\_date |
-| Criteo | dout |
+| Amazon Ads | - |
+| Criteo | - |
+
+9
 
 #### af\_departing\_arrival\_date
 
@@ -1016,14 +1209,20 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_departing\_arrival\_date |
+
+
+| AppsFlyer | af\_add\_payment\_info |
 | --- | --- |
-| Meta ads | fb\_departing\_arrival\_date |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | - |
-| Criteo | - |
+| Meta ads | fb\_mobile\_add\_payment\_info |
+| Google Ads | add\_payment\_info |
+| TikTok | AddPaymentInfo |
+| Snap | ADD\_BILLING |
+| X Ads | ADDED\_PAYMENT\_INFO |
+| Amazon Ads | - |
+| Criteo | ADD\_BILLING |
+| Roku Ads | ADD\_PAYMENT\_INFO |
+
+0
 
 #### af\_departing\_departure\_date
 
@@ -1031,14 +1230,20 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_departing\_ departure\_date |
+
+
+| AppsFlyer | af\_add\_payment\_info |
 | --- | --- |
-| Meta ads | fb\_departing\_ departure\_date |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | departing\_date |
-| Criteo | - |
+| Meta ads | fb\_mobile\_add\_payment\_info |
+| Google Ads | add\_payment\_info |
+| TikTok | AddPaymentInfo |
+| Snap | ADD\_BILLING |
+| X Ads | ADDED\_PAYMENT\_INFO |
+| Amazon Ads | - |
+| Criteo | ADD\_BILLING |
+| Roku Ads | ADD\_PAYMENT\_INFO |
+
+1
 
 #### af\_description
 
@@ -1046,14 +1251,20 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_description |
+
+
+| AppsFlyer | af\_add\_payment\_info |
 | --- | --- |
-| Meta ads | fb\_description |
-| Google Ads | description |
-| Snap | description |
-| X Ads | description |
-| TikTok | description |
-| Criteo | ui\_achievement |
+| Meta ads | fb\_mobile\_add\_payment\_info |
+| Google Ads | add\_payment\_info |
+| TikTok | AddPaymentInfo |
+| Snap | ADD\_BILLING |
+| X Ads | ADDED\_PAYMENT\_INFO |
+| Amazon Ads | - |
+| Criteo | ADD\_BILLING |
+| Roku Ads | ADD\_PAYMENT\_INFO |
+
+2
 
 #### af\_destination\_a
 
@@ -1061,14 +1272,20 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_destination\_a |
+
+
+| AppsFlyer | af\_add\_payment\_info |
 | --- | --- |
-| Meta ads | fb\_origin\_airport |
-| Google Ads | origin |
-| Snap | - |
-| X Ads | - |
-| TikTok | departing\_airport |
-| Criteo | - |
+| Meta ads | fb\_mobile\_add\_payment\_info |
+| Google Ads | add\_payment\_info |
+| TikTok | AddPaymentInfo |
+| Snap | ADD\_BILLING |
+| X Ads | ADDED\_PAYMENT\_INFO |
+| Amazon Ads | - |
+| Criteo | ADD\_BILLING |
+| Roku Ads | ADD\_PAYMENT\_INFO |
+
+3
 
 #### af\_destination\_b
 
@@ -1076,14 +1293,20 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_destination\_b |
+
+
+| AppsFlyer | af\_add\_payment\_info |
 | --- | --- |
-| Meta ads | fb\_destination\_airport |
-| Google Ads | destination |
-| Snap | - |
-| X Ads | - |
-| TikTok | destination\_airport |
-| Criteo | - |
+| Meta ads | fb\_mobile\_add\_payment\_info |
+| Google Ads | add\_payment\_info |
+| TikTok | AddPaymentInfo |
+| Snap | ADD\_BILLING |
+| X Ads | ADDED\_PAYMENT\_INFO |
+| Amazon Ads | - |
+| Criteo | ADD\_BILLING |
+| Roku Ads | ADD\_PAYMENT\_INFO |
+
+4
 
 #### af\_destination\_list
 
@@ -1091,14 +1314,20 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_destination\_list |
+
+
+| AppsFlyer | af\_add\_payment\_info |
 | --- | --- |
-| Meta ads | fb\_destination\_ids |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | - |
-| Criteo | - |
+| Meta ads | fb\_mobile\_add\_payment\_info |
+| Google Ads | add\_payment\_info |
+| TikTok | AddPaymentInfo |
+| Snap | ADD\_BILLING |
+| X Ads | ADDED\_PAYMENT\_INFO |
+| Amazon Ads | - |
+| Criteo | ADD\_BILLING |
+| Roku Ads | ADD\_PAYMENT\_INFO |
+
+5
 
 #### af\_hotel\_score
 
@@ -1106,14 +1335,20 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_hotel\_score |
+
+
+| AppsFlyer | af\_add\_payment\_info |
 | --- | --- |
-| Meta ads | fb\_hotel\_score |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | - |
-| Criteo | - |
+| Meta ads | fb\_mobile\_add\_payment\_info |
+| Google Ads | add\_payment\_info |
+| TikTok | AddPaymentInfo |
+| Snap | ADD\_BILLING |
+| X Ads | ADDED\_PAYMENT\_INFO |
+| Amazon Ads | - |
+| Criteo | ADD\_BILLING |
+| Roku Ads | ADD\_PAYMENT\_INFO |
+
+6
 
 #### af\_level
 
@@ -1121,14 +1356,20 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_level |
+
+
+| AppsFlyer | af\_add\_payment\_info |
 | --- | --- |
-| Meta ads | fb\_level |
-| Google Ads | level\_up |
-| Snap | level |
-| X Ads | level |
-| TikTok | - |
-| Criteo | ui\_level |
+| Meta ads | fb\_mobile\_add\_payment\_info |
+| Google Ads | add\_payment\_info |
+| TikTok | AddPaymentInfo |
+| Snap | ADD\_BILLING |
+| X Ads | ADDED\_PAYMENT\_INFO |
+| Amazon Ads | - |
+| Criteo | ADD\_BILLING |
+| Roku Ads | ADD\_PAYMENT\_INFO |
+
+7
 
 #### af\_max\_rating\_value
 
@@ -1136,14 +1377,20 @@ The following section provides a list of the predefined event parameters. Each e
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_max\_rating\_value |
+
+
+| AppsFlyer | af\_add\_payment\_info |
 | --- | --- |
-| Meta ads | fb\_max\_rating\_value |
-| Google Ads | max\_rating |
-| Snap | - |
-| X Ads | max\_rated\_value |
-| TikTok | - |
-| Criteo | - |
+| Meta ads | fb\_mobile\_add\_payment\_info |
+| Google Ads | add\_payment\_info |
+| TikTok | AddPaymentInfo |
+| Snap | ADD\_BILLING |
+| X Ads | ADDED\_PAYMENT\_INFO |
+| Amazon Ads | - |
+| Criteo | ADD\_BILLING |
+| Roku Ads | ADD\_PAYMENT\_INFO |
+
+8
 
 #### af\_net\_revenue
 
@@ -1153,9 +1400,12 @@ The value is in the transaction currency, expressed by af\_currency (default USD
 
 **Note:** There is no predefined SDK constant for this parameter, so send it as a custom parameter with the key af\_net\_revenue.
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > For apps with [ROI360 store revenue](/docs/about-roi360-store-revenue) enabled, AppsFlyer populates af\_net\_revenue automatically on the in-app purchase and subscription events it records, calculated as gross revenue minus app store fees and taxes (Net = Gross - store fees - taxes).
+
 
 #### af\_num\_adults
 
@@ -1163,14 +1413,20 @@ The value is in the transaction currency, expressed by af\_currency (default USD
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_num\_adults |
+
+
+| AppsFlyer | af\_add\_payment\_info |
 | --- | --- |
-| Meta ads | fb\_num\_adults |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | num\_people |
-| Criteo | - |
+| Meta ads | fb\_mobile\_add\_payment\_info |
+| Google Ads | add\_payment\_info |
+| TikTok | AddPaymentInfo |
+| Snap | ADD\_BILLING |
+| X Ads | ADDED\_PAYMENT\_INFO |
+| Amazon Ads | - |
+| Criteo | ADD\_BILLING |
+| Roku Ads | ADD\_PAYMENT\_INFO |
+
+9
 
 #### af\_num\_children
 
@@ -1178,14 +1434,20 @@ The value is in the transaction currency, expressed by af\_currency (default USD
 
 Parameter mapping:
 
-| AppsFlyer | af\_num\_children |
+
+
+| AppsFlyer | af\_add\_to\_cart |
 | --- | --- |
-| Meta ads | fb\_num\_children |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | num\_children |
-| Criteo | - |
+| Meta ads | fb\_mobile\_add\_to\_cart |
+| Google Ads | add\_to\_cart |
+| TikTok | AddToCart |
+| Snap | ADD\_CART |
+| X Ads | ADD\_TO\_CART |
+| Amazon Ads | ADD\_TO\_SHOPPING\_CART |
+| Criteo | viewBasket |
+| Roku Ads | ADD\_TO\_CART |
+
+0
 
 #### af\_num\_infants
 
@@ -1193,14 +1455,20 @@ Parameter mapping:
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_num\_infants |
+
+
+| AppsFlyer | af\_add\_to\_cart |
 | --- | --- |
-| Meta ads | fb\_num\_infants |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | - |
-| Criteo | - |
+| Meta ads | fb\_mobile\_add\_to\_cart |
+| Google Ads | add\_to\_cart |
+| TikTok | AddToCart |
+| Snap | ADD\_CART |
+| X Ads | ADD\_TO\_CART |
+| Amazon Ads | ADD\_TO\_SHOPPING\_CART |
+| Criteo | viewBasket |
+| Roku Ads | ADD\_TO\_CART |
+
+1
 
 #### af\_order\_id
 
@@ -1208,14 +1476,20 @@ Parameter mapping:
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_order\_id |
+
+
+| AppsFlyer | af\_add\_to\_cart |
 | --- | --- |
-| Meta ads | fb\_order\_id |
-| Google Ads | order\_id |
-| Snap | transaction\_id |
-| X Ads | - |
-| TikTok | order\_id |
-| Criteo | transaction\_id |
+| Meta ads | fb\_mobile\_add\_to\_cart |
+| Google Ads | add\_to\_cart |
+| TikTok | AddToCart |
+| Snap | ADD\_CART |
+| X Ads | ADD\_TO\_CART |
+| Amazon Ads | ADD\_TO\_SHOPPING\_CART |
+| Criteo | viewBasket |
+| Roku Ads | ADD\_TO\_CART |
+
+2
 
 #### af\_payment\_info\_available
 
@@ -1223,14 +1497,20 @@ Parameter mapping:
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_payment\_info\_available |
+
+
+| AppsFlyer | af\_add\_to\_cart |
 | --- | --- |
-| Meta ads | fb\_payment\_info\_ available |
-| Google Ads | payment\_info\_available |
-| Snap | payment\_info\_available |
-| X Ads | user\_payment\_info |
-| TikTok | - |
-| Criteo | - |
+| Meta ads | fb\_mobile\_add\_to\_cart |
+| Google Ads | add\_to\_cart |
+| TikTok | AddToCart |
+| Snap | ADD\_CART |
+| X Ads | ADD\_TO\_CART |
+| Amazon Ads | ADD\_TO\_SHOPPING\_CART |
+| Criteo | viewBasket |
+| Roku Ads | ADD\_TO\_CART |
+
+3
 
 #### af\_preferred\_neighborhoods
 
@@ -1238,14 +1518,20 @@ Parameter mapping:
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_preferred\_neighborhoods |
+
+
+| AppsFlyer | af\_add\_to\_cart |
 | --- | --- |
-| Meta ads | fb\_preferred\_neighborhoods |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | - |
-| Criteo | - |
+| Meta ads | fb\_mobile\_add\_to\_cart |
+| Google Ads | add\_to\_cart |
+| TikTok | AddToCart |
+| Snap | ADD\_CART |
+| X Ads | ADD\_TO\_CART |
+| Amazon Ads | ADD\_TO\_SHOPPING\_CART |
+| Criteo | viewBasket |
+| Roku Ads | ADD\_TO\_CART |
+
+4
 
 #### af\_preferred\_num\_stops
 
@@ -1253,14 +1539,20 @@ Parameter mapping:
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_preferred\_num\_stops |
+
+
+| AppsFlyer | af\_add\_to\_cart |
 | --- | --- |
-| Meta ads | fb\_preferred\_num\_stops |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | - |
-| Criteo | - |
+| Meta ads | fb\_mobile\_add\_to\_cart |
+| Google Ads | add\_to\_cart |
+| TikTok | AddToCart |
+| Snap | ADD\_CART |
+| X Ads | ADD\_TO\_CART |
+| Amazon Ads | ADD\_TO\_SHOPPING\_CART |
+| Criteo | viewBasket |
+| Roku Ads | ADD\_TO\_CART |
+
+5
 
 #### af\_preferred\_price\_range
 
@@ -1268,14 +1560,20 @@ Parameter mapping:
 
 Parameter mapping:
 
-| AppsFlyer | af\_preferred\_price\_range |
+
+
+| AppsFlyer | af\_add\_to\_cart |
 | --- | --- |
-| Meta ads | fb\_preferred\_price\_range |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | - |
-| Criteo | - |
+| Meta ads | fb\_mobile\_add\_to\_cart |
+| Google Ads | add\_to\_cart |
+| TikTok | AddToCart |
+| Snap | ADD\_CART |
+| X Ads | ADD\_TO\_CART |
+| Amazon Ads | ADD\_TO\_SHOPPING\_CART |
+| Criteo | viewBasket |
+| Roku Ads | ADD\_TO\_CART |
+
+6
 
 #### af\_preferred\_star\_ratings
 
@@ -1283,29 +1581,41 @@ Parameter mapping:
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_preferred\_star\_ratings |
+
+
+| AppsFlyer | af\_add\_to\_cart |
 | --- | --- |
-| Meta ads | fb\_preferred\_star\_ratings |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | - |
-| Criteo | - |
+| Meta ads | fb\_mobile\_add\_to\_cart |
+| Google Ads | add\_to\_cart |
+| TikTok | AddToCart |
+| Snap | ADD\_CART |
+| X Ads | ADD\_TO\_CART |
+| Amazon Ads | ADD\_TO\_SHOPPING\_CART |
+| Criteo | viewBasket |
+| Roku Ads | ADD\_TO\_CART |
+
+7
 
 #### af\_price
 
-**Description**: Price of the product. You can use af\_price as a monetary parameter that is not counted as revenue (such as an Add to cart event). This parameter refers to the individual item price. The total amount of all purchases displays under the [af\_revenue](https://support.appsflyer.com/hc/articles/4410481112081#af_revenue) parameter.
+**Description**: Price of the product. You can use af\_price as a monetary parameter that is not counted as revenue (such as an Add to cart event). This parameter refers to the individual item price. The total amount of all purchases displays under the [af\_revenue](/docs/in-app-events-event-structure#af_revenue) parameter.
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_price |
+
+
+| AppsFlyer | af\_add\_to\_cart |
 | --- | --- |
-| Meta ads | fb\_price |
-| Google Ads | price |
-| Snap | price |
-| X Ads | price\_micro |
-| TikTok | price |
-| Criteo | price |
+| Meta ads | fb\_mobile\_add\_to\_cart |
+| Google Ads | add\_to\_cart |
+| TikTok | AddToCart |
+| Snap | ADD\_CART |
+| X Ads | ADD\_TO\_CART |
+| Amazon Ads | ADD\_TO\_SHOPPING\_CART |
+| Criteo | viewBasket |
+| Roku Ads | ADD\_TO\_CART |
+
+8
 
 #### af\_projected\_revenue
 
@@ -1317,14 +1627,20 @@ The estimated revenue an advertiser expects from a user based on their early int
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_quantity |
+
+
+| AppsFlyer | af\_add\_to\_cart |
 | --- | --- |
-| Meta ads | fb\_num\_items |
-| Google Ads | quantity |
-| Snap | number\_items |
-| X Ads | number\_items |
-| TikTok | quantity |
-| Criteo | quantity |
+| Meta ads | fb\_mobile\_add\_to\_cart |
+| Google Ads | add\_to\_cart |
+| TikTok | AddToCart |
+| Snap | ADD\_CART |
+| X Ads | ADD\_TO\_CART |
+| Amazon Ads | ADD\_TO\_SHOPPING\_CART |
+| Criteo | viewBasket |
+| Roku Ads | ADD\_TO\_CART |
+
+9
 
 #### af\_rating\_value
 
@@ -1332,14 +1648,20 @@ The estimated revenue an advertiser expects from a user based on their early int
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_rating\_value |
+
+
+| AppsFlyer | af\_add\_to\_wishlist |
 | --- | --- |
-| Meta ads | \_valueToSum |
-| Google Ads | value |
-| Snap | - |
-| X Ads | price\_micro |
-| TikTok | - |
+| Meta ads | fb\_mobile\_add\_to\_wishlist |
+| Google Ads | add\_to\_wishlist |
+| TikTok | AddToWishlist |
+| Snap | ADD\_TO\_WISHLIST |
+| X Ads | ADD\_TO\_WISHLIST |
+| Amazon Ads | - |
 | Criteo | - |
+| Roku Ads | ADD\_TO\_WISHLIST |
+
+0
 
 #### af\_receipt\_id
 
@@ -1347,14 +1669,20 @@ The estimated revenue an advertiser expects from a user based on their early int
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_receipt\_id |
+
+
+| AppsFlyer | af\_add\_to\_wishlist |
 | --- | --- |
-| Meta ads | - |
-| Google Ads | transaction\_id |
-| Snap | - |
-| X Ads | - |
-| TikTok | - |
-| Criteo | transaction\_id |
+| Meta ads | fb\_mobile\_add\_to\_wishlist |
+| Google Ads | add\_to\_wishlist |
+| TikTok | AddToWishlist |
+| Snap | ADD\_TO\_WISHLIST |
+| X Ads | ADD\_TO\_WISHLIST |
+| Amazon Ads | - |
+| Criteo | - |
+| Roku Ads | ADD\_TO\_WISHLIST |
+
+1
 
 #### af\_region
 
@@ -1362,14 +1690,20 @@ The estimated revenue an advertiser expects from a user based on their early int
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_region |
+
+
+| AppsFlyer | af\_add\_to\_wishlist |
 | --- | --- |
-| Meta ads | fb\_region |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | flight\_region |
+| Meta ads | fb\_mobile\_add\_to\_wishlist |
+| Google Ads | add\_to\_wishlist |
+| TikTok | AddToWishlist |
+| Snap | ADD\_TO\_WISHLIST |
+| X Ads | ADD\_TO\_WISHLIST |
+| Amazon Ads | - |
 | Criteo | - |
+| Roku Ads | ADD\_TO\_WISHLIST |
+
+2
 
 #### af\_registration\_method
 
@@ -1377,14 +1711,20 @@ The estimated revenue an advertiser expects from a user based on their early int
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_registration\_method |
+
+
+| AppsFlyer | af\_add\_to\_wishlist |
 | --- | --- |
-| Meta ads | fb\_registration\_method |
-| Google Ads | registration\_method |
-| Snap | sign\_up\_method |
-| X Ads | registration\_method |
-| TikTok | - |
+| Meta ads | fb\_mobile\_add\_to\_wishlist |
+| Google Ads | add\_to\_wishlist |
+| TikTok | AddToWishlist |
+| Snap | ADD\_TO\_WISHLIST |
+| X Ads | ADD\_TO\_WISHLIST |
+| Amazon Ads | - |
 | Criteo | - |
+| Roku Ads | ADD\_TO\_WISHLIST |
+
+3
 
 #### af\_returning\_arrival\_date
 
@@ -1392,53 +1732,73 @@ The estimated revenue an advertiser expects from a user based on their early int
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_returning\_arrival\_ date |
+
+
+| AppsFlyer | af\_add\_to\_wishlist |
 | --- | --- |
-| Meta ads | fb\_returning\_arrival\_ date |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | - |
+| Meta ads | fb\_mobile\_add\_to\_wishlist |
+| Google Ads | add\_to\_wishlist |
+| TikTok | AddToWishlist |
+| Snap | ADD\_TO\_WISHLIST |
+| X Ads | ADD\_TO\_WISHLIST |
+| Amazon Ads | - |
 | Criteo | - |
+| Roku Ads | ADD\_TO\_WISHLIST |
+
+4
 
 #### af\_returning\_departure\_date
 
-**Description**: Date and time the return journey starts
+**Description**:  Date and time the return journey starts
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_returning\_departure\_date |
+
+
+| AppsFlyer | af\_add\_to\_wishlist |
 | --- | --- |
-| Meta ads | fb\_returning\_departure\_date |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | returning\_date |
+| Meta ads | fb\_mobile\_add\_to\_wishlist |
+| Google Ads | add\_to\_wishlist |
+| TikTok | AddToWishlist |
+| Snap | ADD\_TO\_WISHLIST |
+| X Ads | ADD\_TO\_WISHLIST |
+| Amazon Ads | - |
 | Criteo | - |
+| Roku Ads | ADD\_TO\_WISHLIST |
+
+5
 
 #### af\_revenue
 
-**Description**: Total amount of purchases. af\_revenue is counted as revenue in the AppsFlyer platform. It also counts [negative revenue](https://support.appsflyer.com/hc/articles/115005544169#revenue-events), from cancellations or refunds.
+**Description**: Total amount of purchases. af\_revenue is counted as revenue in the AppsFlyer platform. It also counts [negative revenue](/docs/in-app-events-overview#revenue-events), from cancellations or refunds.
 
-> ❗️ Important!
+> 📘 **Note**
+>
+> #### Important!
 >
 > The revenue value should not contain comma separators, currency, special characters, or text. For example, a revenue value should be, 1234.56. AppsFlyer provides revenue value with an accuracy of up to five decimal places.
 
-To learn more about how to use the revenue parameter, click [here](https://support.appsflyer.com/hc/articles/115005544169#revenue-events).
 
-**Net revenue:** To report net revenue alongside gross revenue, send [af\_net\_revenue](https://support.appsflyer.com/hc/articles/4410481112081#af_net_revenue) as a custom event parameter. You define what net means for your business (for example, revenue after store fees and/or taxes, gross margin, or revenue after service fees). Apps with ROI360 store revenue enabled have it populated automatically on the purchase and subscription events it records, as gross minus app store fees and taxes.
+To learn more about how to use the revenue parameter, click [here](/docs/in-app-events-overview#revenue-events).
+
+**Net revenue:** To report net revenue alongside gross revenue, send [af\_net\_revenue](/docs/in-app-events-event-structure#af_net_revenue) as a custom event parameter. You define what net means for your business (for example, revenue after store fees and/or taxes, gross margin, or revenue after service fees). Apps with ROI360 store revenue enabled have it populated automatically on the purchase and subscription events it records, as gross minus app store fees and taxes.
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_revenue |
+
+
+| AppsFlyer | af\_add\_to\_wishlist |
 | --- | --- |
-| Meta ads | \_valueToSum |
-| Google Ads | value |
-| Snap | price |
-| X Ads | price\_micro |
-| TikTok | value |
-| Amazon Ads | eventValue |
-| Criteo | ui\_revenue |
+| Meta ads | fb\_mobile\_add\_to\_wishlist |
+| Google Ads | add\_to\_wishlist |
+| TikTok | AddToWishlist |
+| Snap | ADD\_TO\_WISHLIST |
+| X Ads | ADD\_TO\_WISHLIST |
+| Amazon Ads | - |
+| Criteo | - |
+| Roku Ads | ADD\_TO\_WISHLIST |
+
+6
 
 #### af\_score
 
@@ -1446,14 +1806,20 @@ To learn more about how to use the revenue parameter, click [here](https://suppo
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_score |
+
+
+| AppsFlyer | af\_add\_to\_wishlist |
 | --- | --- |
-| Meta ads | - |
-| Google Ads | - |
-| Snap | - |
-| X Ads | score |
-| TikTok | - |
+| Meta ads | fb\_mobile\_add\_to\_wishlist |
+| Google Ads | add\_to\_wishlist |
+| TikTok | AddToWishlist |
+| Snap | ADD\_TO\_WISHLIST |
+| X Ads | ADD\_TO\_WISHLIST |
+| Amazon Ads | - |
 | Criteo | - |
+| Roku Ads | ADD\_TO\_WISHLIST |
+
+7
 
 #### af\_search\_string
 
@@ -1461,14 +1827,20 @@ To learn more about how to use the revenue parameter, click [here](https://suppo
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_search\_string |
+
+
+| AppsFlyer | af\_add\_to\_wishlist |
 | --- | --- |
-| Meta ads | fb\_search\_string |
-| Google Ads | search\_string |
-| Snap | search\_string |
-| X Ads | search\_string |
-| TikTok | - |
+| Meta ads | fb\_mobile\_add\_to\_wishlist |
+| Google Ads | add\_to\_wishlist |
+| TikTok | AddToWishlist |
+| Snap | ADD\_TO\_WISHLIST |
+| X Ads | ADD\_TO\_WISHLIST |
+| Amazon Ads | - |
 | Criteo | - |
+| Roku Ads | ADD\_TO\_WISHLIST |
+
+8
 
 #### af\_subscription\_id
 
@@ -1476,14 +1848,20 @@ To learn more about how to use the revenue parameter, click [here](https://suppo
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_subscription\_id |
+
+
+| AppsFlyer | af\_add\_to\_wishlist |
 | --- | --- |
-| Meta ads | subscription\_id |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | - |
+| Meta ads | fb\_mobile\_add\_to\_wishlist |
+| Google Ads | add\_to\_wishlist |
+| TikTok | AddToWishlist |
+| Snap | ADD\_TO\_WISHLIST |
+| X Ads | ADD\_TO\_WISHLIST |
+| Amazon Ads | - |
 | Criteo | - |
+| Roku Ads | ADD\_TO\_WISHLIST |
+
+9
 
 #### af\_success
 
@@ -1491,14 +1869,13 @@ To learn more about how to use the revenue parameter, click [here](https://suppo
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_success |
+
+
+| AppsFlyer | af\_app\_opened |
 | --- | --- |
-| Meta ads | fb\_success |
-| Google Ads | success |
-| Snap | success |
-| X Ads | - |
-| TikTok | - |
-| Criteo | - |
+| Roku Ads | SESSION\_START |
+
+0
 
 #### af\_suggested\_destinations
 
@@ -1506,14 +1883,13 @@ To learn more about how to use the revenue parameter, click [here](https://suppo
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_suggested\_ destinations |
+
+
+| AppsFlyer | af\_app\_opened |
 | --- | --- |
-| Meta ads | fb\_suggested\_ destinations |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | - |
-| Criteo | - |
+| Roku Ads | SESSION\_START |
+
+1
 
 #### af\_suggested\_hotels
 
@@ -1521,14 +1897,13 @@ To learn more about how to use the revenue parameter, click [here](https://suppo
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_suggested\_ hotels |
+
+
+| AppsFlyer | af\_app\_opened |
 | --- | --- |
-| Meta ads | fb\_suggested\_hotels |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | - |
-| Criteo | - |
+| Roku Ads | SESSION\_START |
+
+2
 
 #### af\_travel\_end
 
@@ -1536,14 +1911,13 @@ To learn more about how to use the revenue parameter, click [here](https://suppo
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_travel\_end |
+
+
+| AppsFlyer | af\_app\_opened |
 | --- | --- |
-| Meta ads | fb\_travel\_end |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | - |
-| Criteo | - |
+| Roku Ads | SESSION\_START |
+
+3
 
 #### af\_travel\_start
 
@@ -1551,14 +1925,13 @@ To learn more about how to use the revenue parameter, click [here](https://suppo
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_travel\_start |
+
+
+| AppsFlyer | af\_app\_opened |
 | --- | --- |
-| Meta ads | fb\_travel\_start |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | - |
-| Criteo | - |
+| Roku Ads | SESSION\_START |
+
+4
 
 #### af\_user\_score
 
@@ -1566,14 +1939,13 @@ To learn more about how to use the revenue parameter, click [here](https://suppo
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_user\_score |
+
+
+| AppsFlyer | af\_app\_opened |
 | --- | --- |
-| Meta ads | fb\_user\_score |
-| Google Ads | - |
-| Snap | - |
-| X Ads | - |
-| TikTok | - |
-| Criteo | - |
+| Roku Ads | SESSION\_START |
+
+5
 
 #### af\_validated
 
@@ -1581,44 +1953,43 @@ To learn more about how to use the revenue parameter, click [here](https://suppo
 
 **Parameter mapping:**
 
-| AppsFlyer | af\_validated |
+
+
+| AppsFlyer | af\_app\_opened |
 | --- | --- |
-| Meta ads | - |
-| Google Ads | validated |
-| Snap | success |
-| X Ads | - |
-| TikTok | - |
-| Criteo | - |
+| Roku Ads | SESSION\_START |
+
+6
 
 The following is a list of predefined event parameters that do not include SRN mapping:
 
-- af\_achievement\_id
-- af\_coupon\_code
-- af\_customer\_segment
-- af\_deep\_link
-- af\_event\_end
-- af\_event\_start
-- af\_lat
-- af\_long
-- af\_new\_version
-- af\_old\_version
-- af\_param\_1
-- af\_param\_2
-- af\_param\_3
-- af\_param\_4
-- af\_param\_5
-- af\_param\_6
-- af\_param\_7
-- af\_param\_8
-- af\_param\_9
-- af\_param\_10
-- af\_review\_text
-- af\_tutorial\_id
-- af\_virtual\_currency\_name
-- af\_duration\_seconds
+* af\_achievement\_id
+* af\_coupon\_code
+* af\_customer\_segment
+* af\_deep\_link
+* af\_event\_end
+* af\_event\_start
+* af\_lat
+* af\_long
+* af\_new\_version
+* af\_old\_version
+* af\_param\_1
+* af\_param\_2
+* af\_param\_3
+* af\_param\_4
+* af\_param\_5
+* af\_param\_6
+* af\_param\_7
+* af\_param\_8
+* af\_param\_9
+* af\_param\_10
+* af\_review\_text
+* af\_tutorial\_id
+* af\_virtual\_currency\_name
+* af\_duration\_seconds
 
-<Cards>
-  <Card title="In-app event postback configuration" href="https://support.appsflyer.com/hc/articles/208439256">
-    Learn how to configure postbacks for post-install in-app events.
-  </Card>
-</Cards>
+> 📘 **Note**
+>
+> #### See also
+>
+> * [In-app event postback configuration](/docs/in-app-event-postback-configuration)

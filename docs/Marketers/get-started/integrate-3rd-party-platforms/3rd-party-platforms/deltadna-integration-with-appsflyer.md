@@ -6,7 +6,7 @@ deltaDNA, an AppsFlyer integrated partner, is the leading real-time analytics an
 
 > ❗️ Important
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Integrating with deltaDNA
 
@@ -64,7 +64,7 @@ Follow the instructions below to configure the integration with deltaDNA
 
 > 📘 Note
 >
-> The toggle must be on [(activated)](https://support.appsflyer.com/hc/articles/360000844778) for as long as you work with the partner.
+> The toggle must be on [(activated)](/docs/partner-activation-deactivation) for as long as you work with the partner.
 
 5. Insert the Enviorment\_key taken from deltaDNA console (see Section 2).
 6. Set the **Sending option** to **All media sources, including organic**.

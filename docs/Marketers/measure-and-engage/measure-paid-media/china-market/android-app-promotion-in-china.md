@@ -2,7 +2,7 @@
 title: "Android app promotion in China"
 excerpt: "Learn the best practices and attribution solutions for promoting your Android app in the Chinese market."
 ---
-At a glance: Best practices to promote your Android app in the Chinese market.
+**At a glance:** Best practices to promote your Android app in the Chinese market.
 
 ## Android apps in China
 
@@ -14,11 +14,11 @@ To achieve accurate attribution a unique identifier (ID) that represents the use
 
 At present GPS is not available on devices marketed in China. App owners are required to use alternative ID based on device hardware being IMEI and Android ID.
 
-Starting with [Android 10 (API level 29)](https://developer.android.com/training/articles/user-data-ids), released in late 2019, access to the IMEI and Android ID is restricted. The effect of this is that the IMEI/Android ID won't be accessible on newer devices.
+Starting with [Android 10 (API  level 29)](https://developer.android.com/training/articles/user-data-ids), released in late 2019,  access to the IMEI and Android ID is restricted. The effect of this is that the IMEI/Android ID won't be accessible on newer devices.
 
 To overcome this, an alternative to GAID, is OAID. OAID (available starting late 2019) is being promoted by Chinese device manufacturers, for example, [Huawei](https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/3030304).
 
-See [AppsFlyer SDK Integration - Android](https://support.appsflyer.com/hc/articles/360002049858-Guide-for-attributing-out-of-market-Android-apps-in-China-).
+See[AppsFlyer SDK Integration - Android](/docs/measure-attribution-in-the-chinese-domestic-market)**.**
 
 ### Attribution solutions for the Chinese market
 
@@ -27,6 +27,8 @@ Since there are multiple Android App stores that serve the Chinese market, AppsF
 Chinese Android device users download apps from different Chinese Android App Stores instead of Google Play and most of these App Stores provide ad units for App Advertisers. Among these App Stores the main ones are Tencent MyApp, 360 App Store, Baidu App Store, Xiaomi App Store, OPPO App Store and Huawei App Store.
 
 For example, if you want to promote your Android App via Tencent Social Ads, Tencent Tui Ads and Wechat Ads, upload the Android app to MyApp (Tencent Android App Store), which brings you organic installs at the same time. Baidu series ad networks, 360 Ads, Xiaomi Ads, OPPO Ads all operate in a similar way.
+
+[![](https://support.appsflyer.com/hc/article_attachments/115015245283/Android_China.png)](https://support.appsflyer.com/hc/article_attachments/115015245283/Android_China.png)
 
 Meanwhile, many Android installs are generated from APK download links in mobile web pages or in-app ad space.
 
@@ -42,7 +44,7 @@ By using this method, you can attribute both organic install and non-organic ins
 
 **Example:** If you want to promote your Android App via Tencent Social Ads, Tencent Tui Ads, and Wechat Ads, you must upload the Android App to Tencent Android App Store and MyApp, etc, which brings you organic installs at the same time. Baidu series ad networks, 360 Ads, Xiaomi Ads, OPPO Ads all work in the same way.
 
-**Preparation:** How to attribute out-of-store apps, click [here](https://support.appsflyer.com/hc/articles/207447023).
+**Preparation:** How to attribute out-of-store apps, click [here](/docs/set-up-multi-store-android-attribution).
 
 ### Ad network
 
@@ -52,103 +54,105 @@ By using this method, you can attribute both organic install and non-organic ins
 
 It is easy and fast to launch ad campaigns. It is also convenient to check the performance of different media sources at the same app overview page.
 
-**Example:** Bytedance Ads(Toutiao), Sina Weibo, iQiyi
+**Example:**Bytedance Ads(Toutiao), Sina Weibo, iQiyi
 
-**Preparation:** Set up one Android out-of-store app, and generate different attribution links for different ad networks. To learn how to attribute out-of-store apps, click [here](https://support.appsflyer.com/hc/articles/207447023).
+**Preparation:** Set up one Android out-of-store app, and generate different attribution links for different ad networks. To learn how to attribute out-of-store apps, click [here](/docs/set-up-multi-store-android-attribution).
 
 ### Android app store that does not support ad attribution
 
 **Solution:** Android out-of-store app
 
-**Description:** For Android App Stores that do not support ad attribution, you can still use Out-Of-Store Apps to attribute all the installs coming from this App Store, only all the installs are attributed as organic installs.
+**Description:**  For Android App Stores that do not support ad attribution, you can still use Out-Of-Store Apps to attribute all the installs coming from this App Store, only all the installs are attributed as organic installs.
 
 **Example:** Lenovo app store, Huawei app store.
 
-**Preparation:** how to attribute out-of-store apps, click [here](https://support.appsflyer.com/hc/articles/207447023).
+**Preparation:** how to attribute out-of-store apps, click [here](/docs/set-up-multi-store-android-attribution).
 
-If you are promoting your apps with more than one of the solutions mentioned above and you want to check the data of all your China campaigns int the same dashboard view, you can use [Custom Dashboard](https://support.appsflyer.com/hc/articles/212750286-AppsFlyer-s-Custom-Dashboard-Premium-).
+If you are promoting your apps with more than one of the solutions mentioned above and you want to check the data of all your China campaigns int the same dashboard view, you can use [Custom Dashboard](/docs/custom-dashboards).
 
 ## Integrated media sources
 
-[Configuration guides](https://support.appsflyer.com/hc/sections/6552066355601-China-domestic-market-ad-network-configuration)
+[Configuration guides](/docs/china-domestic-market-ad-network-configuration)
 
 Integrated media sources in China:
 
+
+
 | Media source name | Chinese name | PID | Logo |
 | --- | --- | --- | --- |
-| [Tencent Ads](https://support.appsflyer.com/hc/articles/360000264689) | 腾讯广告 | tencent\_int | ![ac1.png](https://files.readme.io/dd4dde79f0de93c5ee072166222231658df8dd6f793192b40fafc3d7a09be648-ac1.png) |
-| [Bytedance Ads](https://support.appsflyer.com/hc/articles/115003019403) | 巨量引擎（今日头条） | bytedance\_int | ![ac2.png](https://files.readme.io/e433c7b245e9e59eaabad91e5267ff66048f8ea9f7e2bf2f1d8d96bafadc91b1-ac2.png) |
-| [WeChat Ads](https://support.appsflyer.com/hc/articles/115003044106) | 微信公众平台 | wechat\_int | ![ac4.png](https://files.readme.io/df27fc2d7fe5e4ecb803d4ab0707a516b7e7eef984a16d0b6e6f5da2b9e1abc9-ac4.png) |
-| [Weibo Ads](https://support.appsflyer.com/hc/articles/115004134086) | 微博超级粉丝通 | sinaweibo\_int | ![ac5.png](https://files.readme.io/d363aab7711b2d520ba4f5f0b4b1d65dd348fe93c4a6284de884b587383fec04-ac5.png) |
-| Sina Fuyi Ads | 新浪扶翼 | sinafuyi\_int | ![sinafuyi.logo.png](https://files.readme.io/a3fff3cd69b7cd2443cf9b118859afbbcb59c0403ed9a69e622b985f2971d979-sinafuyi.logo.png) |
-| [Baidu App Ads](https://support.appsflyer.com/hc/articles/115003044146) | 百度百通 | baitong\_int | ![ac6.png](https://files.readme.io/023e26b458c3c0618e310acd1f5e4d6995e96ba7e142dd0ebca2224f62fc823c-ac6.png) |
-| [Baidu mDSP](https://support.appsflyer.com/hc/articles/115004330446) | 百度百易 | baidumdsp\_int | ![ac7.png](https://files.readme.io/bb650b5c3cb0186dbbaeb6230462b02d515f72fab74a39a4f4098cc78b42bd78-ac7.png) |
-| Baidu Search Ads | 百度搜索广告 | baidusearch\_int | ! |
-| Baidu Native Ads | 百度信息流广告（百度原生） | baidufeedads\_int | ! |
-| Baidu Native Ads 2.0 | 百度信息流广告（百度原生）2.0 | baiduxinxiliu\_int | ! |
-| [Xiaomi Ads & App Store](https://support.appsflyer.com/hc/articles/115001605286-How-to-Configure-a-Campaign-with-Xiaomi-Ads-Network) | 小米营销平台 & 应用商店 | xiaomichina\_int | ![ac8.png](https://files.readme.io/b7d9541e0f9602181f879685ba1623f342e666970791488381161149e95e5086-ac8.png) |
+| Tencent Ads | 腾讯广告 | tencent\_int | ![ac1.png](https://support.appsflyer.com/hc/article_attachments/115015067906/ac1.png) |
+| [Bytedance Ads](/docs/bytedance-ads-china-campaign-configuration) | 巨量引擎（今日头条） | bytedance\_int | ![ac2.png](https://support.appsflyer.com/hc/article_attachments/115015067926/ac2.png) |
+| [WeChat Ads](/docs/wechat-ads-campaign-configuration) | 微信公众平台 | wechat\_int | ![ac4.png](https://support.appsflyer.com/hc/article_attachments/115015067966/ac4.png) |
+| [Weibo Ads](/docs/sina-weibo-ads-campaign-configuration) | 微博超级粉丝通 | sinaweibo\_int | ![ac5.png](https://support.appsflyer.com/hc/article_attachments/115015247263/ac5.png) |
+| Sina Fuyi Ads | 新浪扶翼 | sinafuyi\_int | ![sinafuyi.logo.png](https://support.appsflyer.com/hc/article_attachments/360001660797/sinafuyi.logo.png) |
+| [Baidu App Ads](/docs/baidu-app-ads-campaign-configuration) | 百度百通 | baitong\_int | ![ac6.png](https://support.appsflyer.com/hc/article_attachments/115015067986/ac6.png) |
+| [Baidu mDSP](/docs/baidu-mdsp-ads-baiyi-campaign-configuration) | 百度百易 | baidumdsp\_int | ![ac7.png](https://support.appsflyer.com/hc/article_attachments/115015068006/ac7.png) |
+| Baidu Search Ads | 百度搜索广告 | baidusearch\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/baidusearch.png) |
+| Baidu Native Ads | 百度信息流广告（百度原生） | baidufeedads\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/baidufeedads.png) |
+| Baidu Native Ads 2.0 | 百度信息流广告（百度原生）2.0 | baiduxinxiliu\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/baidufeedads.png) |
+| [Xiaomi Ads & App Store](/docs/xiaomi-ads-network-campaign-configuration) | 小米营销平台 & 应用商店 | xiaomichina\_int | ![ac8.png](https://support.appsflyer.com/hc/article_attachments/115015068026/ac8.png) |
 | Huawei App Gallery in China | 华为应用商店 | huaweiappgallerychina\_int | ![huawei_app_store_logo.png](https://files.readme.io/29f84e8d0e90fc5bb85fc86810a45810fd0bc5fea58869c124b8f66354b67c78-10801903185809.png) |
 | OPPO App Store in China | OPPO软件商店 | oppostorechina\_int | ![oppo_store_logo.png](https://files.readme.io/30bdc4b4613f423f028eea5adfc6eee714805db65b857c49d6221639f19b3523-10801961659153.png) |
 | vivo Ads & App Store | vivo营销平台&应用商店 | vivoads\_int | ![vivo_store_logo.png](https://files.readme.io/5b3b87a0d4a6c424421d9d1b156cf0b1d81da7b534a53e760227de2726db8445-10802004853009.png) |
-| 360 Ads | 360点睛实效平台 | 360\_int | ![ac9.png](https://files.readme.io/7ab3fd1b8db39fdc2ca2061a963a2c6ac3ed83be0f2fcc0db7bdd214ca17f2ce-ac9.png) |
-| Ali UC Ads | 阿里汇川 （UC头条） | uctoutiao\_int | ![ac10.png](https://files.readme.io/6ba93e195ace24c0ea6dd4d0e93ccf2602f22be56e9a36409f13870aec77de2f-ac10.png) |
-| Netease Ads | 网易易效 | netease\_int | ![ac11.png](https://files.readme.io/1c0290236fba996561162188e099ec694f119af7733313be35711a6d20267009-ac11.png) |
-| iQIYI Ads | 爱奇艺奇麟神算 | iqiyi\_int | ![ac12.png](https://files.readme.io/aef33a6a9bfc7b42a96aec726e3098ff17c51ae0a378fcf96626d21c653b4dd0-ac12.png) |
-| MOMO Ads | 陌陌广告 | momo\_int | ![ac13.png](https://files.readme.io/86d51b660c29256e273bc3c95be2434de79f154369aadc51913a37d588964852-ac13.png) |
-| YouKu DSP | 阿里妈妈（睿视优酷DSP系统） | youkudsp\_int | ![ac14.png](https://files.readme.io/cd7861ff98d8ef7d5e592f566a062574f2f3d00a8153c4af9e7c6c52ea1b3a4b-ac14.png) |
-| Kuaishou | 快手广告管理平台 | kuaishou\_int | ![ac15.png](https://files.readme.io/d343a8d10e71b5a2d8b22ba662d0c6347e98504f156757e8001334755b30021d-ac15.png) |
-| douyu.TV | 斗鱼TV | douyu\_int | ![ac16.png](https://files.readme.io/9c68cc497965717c570f1340fc147105fc413a7b6554fb5675d5c9e00e52817b-ac16.png) |
-| Bilibili Ads | 哔哩哔哩广告投放平台 | bilibili\_int | ![bilibili.logo.png](https://files.readme.io/8c25fe6af4c8d7db9d3819aed6c9be93c9d3fa6dd6bcca12624be9ee5dfd514c-bilibili.logo.png) |
-| Youdao DSP | 有道智选 | youdaodsp\_int | ![youdaozhixuan.logo.png](https://files.readme.io/064a8f835094078950ba074d17cd98ef176510a54f70626bdb3d3952c20a016c-youdaozhixuan.logo.png) |
-| Meitu China Ads | 美图广告平台 | meituchina\_int | ![meitu.logo.png](https://files.readme.io/202a4c2b9b4de5e9c3a1459fe1079e1c9fb769c08895f386882a80d3b27db321-meitu.logo.png) |
-| Meiyou Ads | 美柚广告 女人通 | meiyou\_int | ![meiyou.logo.png](https://files.readme.io/b1eff273e3fba31a4ef268b92a03afa5c22d2f8ec7abd40eb4cd4c33a4665c68-meiyou.logo.png) |
-| OPPO | OPPO | oppo\_int | ![ac17.png](https://files.readme.io/e08759d89b8cd98dc36d2ad74f06f5a619cc3203a076e7b052704975317518b9-ac17.png) |
-| Yunshu | 云数（百思不得姐） | yunshu\_int | ![ac18.png](https://files.readme.io/8d3ad62114e73d6efc277fce282147f157cc71e6a6f4cd425a125d58c9c540df-ac18.png) |
-| TapTap Game | TapTap | taptapgame\_int | ![ac19.png](https://files.readme.io/ddb4c7ddf69d86358add9c2d05d35cc35f7fcf0c8b65638ebd3060261be665ec-ac19.png) |
-| Ipinyou | 品友 | ipinyou\_int | ![ac20.png](https://files.readme.io/5762063976f787473c9b0e26d65c4a3983eecff3c8efeff3542ad5a5608f51db-ac20.png) |
-| Hupu | 虎扑 | hupu\_int | ![ac22.png](https://files.readme.io/de435baeba4cfaa6da05525894e1b58b839c2945626a0c6079103a3944918682-ac22.png) |
-| Chance | 畅思 | chance\_int | ![ac23.png](https://files.readme.io/c2f6f264c8538316a3d5b759d11af5548425a8f95d5a1ef67d530d0452d99ca1-ac23.png) |
-| Domob China | 多盟 | domobc\_int | ![ac24.png](https://files.readme.io/5ca87c2f0041a9d07b317d57bc35b9ac51f93b7e8220ec66c1126572c7359126-ac24.png) |
-| Adwo | 安沃 | adwo\_int | ![ac26.png](https://files.readme.io/b6c0d07afcf4513ccdc13244ebb5336f319e460f784b538875532bc3643cc36a-ac26.png) |
-| Youmi | 有米 | youmi\_int | ![ac28.png](https://files.readme.io/f5a17889f8777a4ddd5b130b5cfdfcf54bfc8dcda541c84d9f7a7f06e6ecbc76-ac28.png) |
-| Behe | 璧合 | behe\_int | ![ac29.png](https://files.readme.io/afd4509fe986459577bc4f70bb985eb75ce698c7125e63e73ac4b0e23d4e0e72-ac29.png) |
-| biddingx | 舜飞 | biddingx\_int | ![biddingx_logo.png](https://files.readme.io/f5f0b9654351e20962f704f5ca936211062d43e8529bbbe8c4ede6d1693cc044-biddingx_logo.png) |
-| Auto Home Ads | 汽车之家广告平台 | autohome\_int | ![autohome_logo.png](https://files.readme.io/2389335b20f77e94a22c5ad0b2d4d7673eb88505ed5b830240804b6f3f1ca8f0-autohome_logo.png) |
-| [Zhihu Ads](https://support.appsflyer.com/hc/articles/360001758338) | 知乎营销平台 | zhihu\_int | ![zhihu_logo.png](https://files.readme.io/83ae8c6e70b1aaa71addf8da9224bb1fa50a55052c25d00c61bff2dd7c87cca0-zhihu_logo.png) |
-| kkworld | 快看漫画 | kkworld\_int | ![kkworld_logo.png](https://files.readme.io/8a424012e518e3908b9a9ee18aa6c3ef6f2e32992717ddb6aa8ec93576c361a9-kkworld_logo.png) |
-| All Football Ads | 懂球帝广告平台 | allfootball\_int | ![allfootball_logo.png](https://files.readme.io/9d6a6bcaeb7d91b9baf38ef602383e03724ac8d4137c5962d792f5a55916191a-allfootball_logo.png) |
-| VoiceAds | 讯飞DSP | voiceads\_int | ![voiceads_logo.png](https://files.readme.io/6cab8ebc8e2741351f1b716e2068988f3123f68e2e52f6f96a192afa0756ea39-voiceads_logo.png) |
-| WiseMedia | 新数DSP | wisemedia\_int | ![wisemedia_logo.png](https://files.readme.io/13853d4d5fc67c568775457ae541128ead8142cf439f5ae7fd59c3cf26d49aed-wisemedia_logo.png) |
-| WPS | WPS办公软件 | wps\_int | ![wps_logo.png](https://files.readme.io/0df62e39f006b3e1b55192280d61ada130c5299eb5f40b682fd5fe8db7f198b5-wps_logo.png) |
-| MadhouseChina | 亿动传媒 | madhousechina\_int | ![madhouse_china_logo.png](https://files.readme.io/1778603a51bb8fd0525530f73af189763dbc7f1c6556f9245b4a0f0f74ebd482-madhouse_china_logo.png) |
-| Weidong | 微动 | weidong\_int | ![weidong.png](https://files.readme.io/5e4992efe133ea21e4291d91231c0d7015cf8c2be8ece1ea45643acdd791cc74-weidong.png) |
-| AdinAll | 聚告 | adinall\_int | ![adinall.logo.png](https://files.readme.io/65aab4bbe08e60a0401654b6b121e80b5e6c57b0c129740aa9ed3fd96df252b5-adinall.logo.png) |
-| BlackDragon | 黑珑 | blackdragon\_int | ![blackdragon.logo.png](https://files.readme.io/e9edd70ecf6750c091648f58e9ec619016284a027bc67408ce67d09c6b422f42-blackdragon.logo.png) |
-| chenbai | 宸百 | chenbai\_int | ! |
-| Dayumob | 智渠传媒 | dayumob\_int | ! |
-| Idvert | 艾瓦特 | idvert\_int | ! |
-| Jingmeng | 京盟世纪 | jingmeng\_int | ! |
-| Jusha | 巨鲨 | jusha\_int | ! |
-| Mailuo | 脉络时代 | mailuo\_int | ! |
-| Manhuaren | 漫画人 | manhuaren\_int | ! |
-| iFeng Ads | 凤凰凤羽客户平台 | ifeng\_int | ! |
-| Qutoutiao Ads | 趣头条广告 | qutoutiao\_int | ! |
-| Shenma Search | 神马搜索 | smsearch\_int | ! |
-| Sogou Qidian Ads | 搜狗奇点系统 | sogouqidian\_int | ! |
-| Sohu XinPinSuan Ads | 搜狐新品算 | sohuxps\_int | ! |
-| Tuia | 推啊 | tuia\_int | ! |
-| Yidian Zixun | 一点资讯 | yidian\_int | ! |
-| Zhi Zi Yun | 智子云 | zhiziyun\_int | ! |
-| Hesheng | 合声 | hesheng\_int | ! |
-| Zuo Ye Bang | 作业帮 | zuoyebang\_int | ! |
-| Chuniu | 初牛 | chuniu\_int | ! |
-| Zuiyou | 最右 | zuiyou\_int | ! |
+| 360 Ads | 360点睛实效平台 | 360\_int | ![ac9.png](https://support.appsflyer.com/hc/article_attachments/115015068046/ac9.png) |
+| Ali UC Ads | 阿里汇川 （UC头条） | uctoutiao\_int | ![ac10.png](https://support.appsflyer.com/hc/article_attachments/115015068086/ac10.png) |
+| Netease Ads | 网易易效 | netease\_int | ![ac11.png](https://support.appsflyer.com/hc/article_attachments/115015068106/ac11.png) |
+| iQIYI Ads | 爱奇艺奇麟神算 | iqiyi\_int | ![ac12.png](https://support.appsflyer.com/hc/article_attachments/115015247303/ac12.png) |
+| MOMO Ads | 陌陌广告 | momo\_int | ![ac13.png](https://support.appsflyer.com/hc/article_attachments/115015247323/ac13.png) |
+| YouKu DSP | 阿里妈妈（睿视优酷DSP系统） | youkudsp\_int | ![ac14.png](https://support.appsflyer.com/hc/article_attachments/115015247343/ac14.png) |
+| Kuaishou | 快手广告管理平台 | kuaishou\_int | ![ac15.png](https://support.appsflyer.com/hc/article_attachments/115015068126/ac15.png) |
+| douyu.TV | 斗鱼TV | douyu\_int | ![ac16.png](https://support.appsflyer.com/hc/article_attachments/115015247363/ac16.png) |
+| Bilibili Ads | 哔哩哔哩广告投放平台 | bilibili\_int | ![bilibili.logo.png](https://support.appsflyer.com/hc/article_attachments/360001660817/bilibili.logo.png) |
+| Youdao DSP | 有道智选 | youdaodsp\_int | ![youdaozhixuan.logo.png](https://support.appsflyer.com/hc/article_attachments/360001660837/youdaozhixuan.logo.png) |
+| Meitu China Ads | 美图广告平台 | meituchina\_int | ![meitu.logo.png](https://support.appsflyer.com/hc/article_attachments/360001660857/meitu.logo.png) |
+| Meiyou Ads | 美柚广告 女人通 | meiyou\_int | ![meiyou.logo.png](https://support.appsflyer.com/hc/article_attachments/360001660877/meiyou.logo.png) |
+| OPPO | OPPO | oppo\_int | ![ac17.png](https://support.appsflyer.com/hc/article_attachments/115015247383/ac17.png) |
+| Yunshu | 云数（百思不得姐） | yunshu\_int | ![ac18.png](https://support.appsflyer.com/hc/article_attachments/115015247403/ac18.png) |
+| TapTap Game | TapTap | taptapgame\_int | ![ac19.png](https://support.appsflyer.com/hc/article_attachments/115015068146/ac19.png) |
+| Ipinyou | 品友 | ipinyou\_int | ![ac20.png](https://support.appsflyer.com/hc/article_attachments/115015068166/ac20.png) |
+| Hupu | 虎扑 | hupu\_int | ![ac22.png](https://support.appsflyer.com/hc/article_attachments/115015068226/ac22.png) |
+| Chance | 畅思 | chance\_int | ![ac23.png](https://support.appsflyer.com/hc/article_attachments/115015068246/ac23.png) |
+| Domob China | 多盟 | domobc\_int | ![ac24.png](https://support.appsflyer.com/hc/article_attachments/115015247423/ac24.png) |
+| Adwo | 安沃 | adwo\_int | ![ac26.png](https://support.appsflyer.com/hc/article_attachments/115015068266/ac26.png) |
+| Youmi | 有米 | youmi\_int | ![ac28.png](https://support.appsflyer.com/hc/article_attachments/115015247483/ac28.png) |
+| Behe | 璧合 | behe\_int | ![ac29.png](https://support.appsflyer.com/hc/article_attachments/115015068286/ac29.png) |
+| biddingx | 舜飞 | biddingx\_int | ![biddingx_logo.png](https://support.appsflyer.com/hc/article_attachments/115011112389/biddingx_logo.png) |
+| Auto Home Ads | 汽车之家广告平台 | autohome\_int | ![autohome_logo.png](https://support.appsflyer.com/hc/article_attachments/115011049905/autohome_logo.png) |
+| [Zhihu Ads](/docs/zhihu-ads-campaign-configuration) | 知乎营销平台 | zhihu\_int | ![zhihu_logo.png](https://support.appsflyer.com/hc/article_attachments/115011049925/zhihu_logo.png) |
+| kkworld | 快看漫画 | kkworld\_int | ![kkworld_logo.png](https://support.appsflyer.com/hc/article_attachments/115011112409/kkworld_logo.png) |
+| All Football Ads | 懂球帝广告平台 | allfootball\_int | ![allfootball_logo.png](https://support.appsflyer.com/hc/article_attachments/115011049945/allfootball_logo.png) |
+| VoiceAds | 讯飞DSP | voiceads\_int | ![voiceads_logo.png](https://support.appsflyer.com/hc/article_attachments/115011049985/voiceads_logo.png) |
+| WiseMedia | 新数DSP | wisemedia\_int | ![wisemedia_logo.png](https://support.appsflyer.com/hc/article_attachments/115011050005/wisemedia_logo.png) |
+| WPS | WPS办公软件 | wps\_int | ![wps_logo.png](https://support.appsflyer.com/hc/article_attachments/115011112429/wps_logo.png) |
+| MadhouseChina | 亿动传媒 | madhousechina\_int | ![madhouse_china_logo.png](https://support.appsflyer.com/hc/article_attachments/115011050025/madhouse_china_logo.png) |
+| Weidong | 微动 | weidong\_int | ![weidong.png](https://support.appsflyer.com/hc/article_attachments/360002013098/weidong.png) |
+| AdinAll | 聚告 | adinall\_int | ![adinall.logo.png](https://support.appsflyer.com/hc/article_attachments/360001976997/adinall.logo.png) |
+| BlackDragon | 黑珑 | blackdragon\_int | ![blackdragon.logo.png](https://support.appsflyer.com/hc/article_attachments/360002076458/blackdragon.logo.png) |
+| chenbai | 宸百 | chenbai\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/chenbai.png?v=1) |
+| Dayumob | 智渠传媒 | dayumob\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/dayumob.png?v=1) |
+| Idvert | 艾瓦特 | idvert\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/idvert.png?v=1) |
+| Jingmeng | 京盟世纪 | jingmeng\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/jingmeng.png?v=1) |
+| Jusha | 巨鲨 | jusha\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/jusha.png?v=1) |
+| Mailuo | 脉络时代 | mailuo\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/mailuo.png?v=1) |
+| Manhuaren | 漫画人 | manhuaren\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/manhuaren.png?v=1) |
+| iFeng Ads | 凤凰凤羽客户平台 | ifeng\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/ifeng.png?v=1) |
+| Qutoutiao Ads | 趣头条广告 | qutoutiao\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/qutoutiao.png?v=1) |
+| Shenma Search | 神马搜索 | smsearch\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/smsearch.png?v=1) |
+| Sogou Qidian Ads | 搜狗奇点系统 | sogouqidian\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/sogouqidian.png?v=1) |
+| Sohu XinPinSuan Ads | 搜狐新品算 | sohuxps\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/sohuxps.png?v=1) |
+| Tuia | 推啊 | tuia\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/tuia.png?v=1) |
+| Yidian Zixun | 一点资讯 | yidian\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/yidianzixun.png?v=1) |
+| Zhi Zi Yun | 智子云 | zhiziyun\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/zhiziyun.png) |
+| Hesheng | 合声 | hesheng\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/hesheng.png?v=1) |
+| Zuo Ye Bang | 作业帮 | zuoyebang\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/zuoyebang.png?v=1) |
+| Chuniu | 初牛 | chuniu\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/chuniu.png?v=1) |
+| Zuiyou | 最右 | zuiyou\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/zuiyou.png) |
 | Himalaya Ads | 喜马拉雅广告平台 | ximalaya\_int | ![ximalaya.png](https://support.appsflyer.com/hc/article_attachments/360002781137/ximalaya.png) |
-| Wifi Master Key Ads | WiFi万能钥匙广告平台 | wifimasterkey\_int | ! |
-| vivo Ads | vivo营销平台 | vivoads\_int | ![vivo-logo.png](https://files.readme.io/4d192fd4b29237cfffcbd6446f622d026ecf7460c4c167678d314541af8a9693-vivo-logo.png) |
-| ShiHuo Ads | 识货广告 | shihuo\_int | ![__logo.png](https://files.readme.io/cb8076f754e31df2af1d45842f721bcabdb3d93462e5bf35d559281164cbb824-__logo.png) |
-| OneSavour Ads | OneSavour广告 | onesavour\_int | ![onesavour_logo.png](https://files.readme.io/d856370b4a1db2828f3a7073e180671b25eef760212cec731a8c29af66aa4b27-onesavour_logo.png) |
-| Qianka | 钱咖 | qianka\_int | ![__.jpeg](https://files.readme.io/cfcab4dc5ffd2a079b791dabcf5d63e347f48f383d7b8baa7945236f930b19dc-__.jpeg) |
+| Wifi Master Key Ads | WiFi万能钥匙广告平台 | wifimasterkey\_int | ![](https://cdn.appsflyer.com/marketplace/static/logo/wifimasterkey.png) |
+| vivo Ads | vivo营销平台 | vivoads\_int | ![vivo-logo.png](https://support.appsflyer.com/hc/article_attachments/360003580657/vivo-logo.png) |
+| ShiHuo Ads | 识货广告 | shihuo\_int | ![__logo.png](https://support.appsflyer.com/hc/article_attachments/360004371338/__logo.png) |
+| OneSavour Ads | OneSavour广告 | onesavour\_int | ![onesavour_logo.png](https://support.appsflyer.com/hc/article_attachments/360004371358/onesavour_logo.png) |
+| Qianka | 钱咖 | qianka\_int | ![__.jpeg](https://support.appsflyer.com/hc/article_attachments/360004682538/__.jpeg) |
 | SMZDM | 什么值得买 | smzdm\_int | ![logo.png](https://support.appsflyer.com/hc/article_attachments/360005790558/logo.png) |
 | MGTV | 芒果TV | mgtv\_int | ![250.png](https://support.appsflyer.com/hc/article_attachments/360005790578/250.png) |
 | AdView Ads | 快友 | adview\_int | ![adview_logo.png](https://support.appsflyer.com/hc/article_attachments/360006700317/adview_logo.png) |

@@ -21,10 +21,10 @@ See below AppsFlyers base attribution link with a detailed explanation per macro
 
 | AppsFlyer Parameter | FOCUUS Macros | Description |
 | --- | --- | --- |
-| **clickid** | **{tid}** | **Request ID of each user session** \- **Required** |
-| af\_siteid | {publisher\_id} | ID of the Affiliate promoting the offer - Optional |
+| **clickid** | **`{tid}`** | **Request ID of each user session** \- **Required** |
+| af\_siteid | `{publisher\_id}` | ID of the Affiliate promoting the offer - Optional |
 
-For a complete list of AppsFlyer parameters, [click here](https://support.appsflyer.com/hc/articles/207447163#attribution-link-parameters).
+For a complete list of AppsFlyer parameters, [click here](/docs/about-link-structure-and-parameters#attribution-link-parameters).
 
 FOCUUS allows an unlimited number of macros, and you can name them as you wish, [click here](http://support.focuus.com/knowledgebase/articles/827379-traffic-source-template-tokens-macros "Link: http://support.focuus.com/knowledgebase/articles/827379-traffic-source-template-tokens-macros").
 
@@ -43,16 +43,16 @@ To create your install and in-app event postbacks at **FOCUUS**
 3. Copy the postback URL that appears in the box labeled [Server2Server Pixel](http://support.focuus.com/knowledgebase/articles/827766-s2s-integration "Link: http://support.focuus.com/knowledgebase/articles/827766-s2s-integration") **.**
 4. Replace the TRANSACTION\_ID with AppsFleyr macro - “ **clickid**”
 
-https://pixel.focuusing.com/event.php?type=imp& **tid={clickid}**
+https://pixel.focuusing.com/event.php?type=imp& **tid=`{clickid}`**
 
 **Optional Postback Parameters**
 
 | FOCUUS Macros | Description | Example |
 | --- | --- | --- |
-| event\_value | Payout value for each type of event | https://pixel.focuusing.com/event.php?type=cpi&tid={Your\_TRANSACTION\_ID}&eid=49816&event\_value={25} |
+| event\_value | Payout value for each type of event | https://pixel.focuusing.com/event.php?type=cpi&tid=`{Your\_TRANSACTION\_ID}&eid=49816&event\_value={25}` |
 
 **Event name (Install, Registration, etc.) appears by default on the generated pixel. for example:**
 
-* https://traffic.focuusing.com/ **install**?tid={TRANSACTION\_ID}
-* https://traffic.focuusing.com/ **conversion**?tid={TRANSACTION\_ID}
-* https://traffic.focuusing.com/ **ftd**?tid={TRANSACTION\_ID}
+* https://traffic.focuusing.com/ **install**?tid=`{TRANSACTION\_ID}`
+* https://traffic.focuusing.com/ **conversion**?tid=`{TRANSACTION\_ID}`
+* https://traffic.focuusing.com/ **ftd**?tid=`{TRANSACTION\_ID}`

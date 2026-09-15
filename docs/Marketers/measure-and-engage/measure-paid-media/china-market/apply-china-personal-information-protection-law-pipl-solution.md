@@ -46,11 +46,11 @@ The following section describes the actions you have to take to apply the AppsFl
    - Use the following Chinese domains for OneLink and attribution links:
      - For single platform clicks - **hclicks.aflink.com**, don't use click signing. Make sure to [exclude the app from click signing](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add).
      - For single platform impressions - **himpressions.aflink.com**
-     - For OneLink clicks - **{subdomain}.onelnk.com**
+     - For OneLink clicks - **`{subdomain}`.onelnk.com**
    - Send your CSM a list of relevant app IDs and OneLink subdomains.
    - If you’re using smart banners:
-     - [Send AppsFlyer the website key.](https://support.appsflyer.com/hc/articles/360000764837-Smart-Banners-mobile-web-to-app-for-marketers-#1-website-workplace-setup)
-     - Use only {subdomain}.onelnk.com.
+     - [Send AppsFlyer the website key.](/docs/smart-banners-mobile-web-to-app-for-marketers#1-website-workplace-setup)
+     - Use only `{subdomain}`.onelnk.com.
      - Note! Since PIPL requires masking and hashing of IP addresses, smart banners based on geolocation rules will not function as expected.
 3. Mask and hash SDK and S2S events and transfer them through a relay server in China
    - **SDK Events:**

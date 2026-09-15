@@ -9,7 +9,7 @@ excerpt: "Learn about the data availability windows and retention periods for ra
 > 📘 Good to know
 >
 > * The window duration depends on your subscription package.
-> * The article doesn't apply to [Data Locker](https://support.appsflyer.com/hc/articles/360000877538).
+> * The article doesn't apply to [Data Locker](/docs/data-locker-for-marketers).
 
 ### Raw data availability window
 
@@ -29,7 +29,7 @@ An availability window limits data provided by Pull API and the Aggregated Data 
 | Aggregated reports | 25 months (2 years + 1 month), [starting with the first app install](/docs/bulletin-aggregated-ltv-data-availability) |
 
 <Cards>
-  <Card title="Report generation quotas" href="https://support.appsflyer.com/hc/articles/207034366">
+  <Card title="Report generation quotas" href="/docs/report-generation-quotas-rate-limitations">
     View the report generation quotas and limits for your account.
   </Card>
 </Cards>

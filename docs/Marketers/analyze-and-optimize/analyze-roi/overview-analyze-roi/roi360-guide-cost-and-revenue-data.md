@@ -18,15 +18,15 @@ Previously known as Xpend, the ROI360 cost tools aggregate and report cost data.
 
 | Tool | Description |
 | --- | --- |
-| [Attributed cost](https://support.appsflyer.com/hc/articles/207040526) | Cost data tied to attribution, clicks, and impressions at the most granular level available.<br>This includes access to more than 80 API integrations, enabling you to easily connect to global or local ad networks. |
-| [File import](https://support.appsflyer.com/hc/articles/360002516838) | Cost Import to record cost data not received via API. |
-| [Agency fees](https://support.appsflyer.com/hc/articles/4402103019665) | Agency fee calculations included in your cost. |
-| [Cost ETL\*](https://support.appsflyer.com/hc/articles/360008849238) | Delivers campaign cost data, updated 4 times daily, to your AWS S3 or GCS bucket ready for loading into advertiser BI systems. |
+| [Attributed cost](/docs/roi360-cost-aggregation-overview) | Cost data tied to attribution, clicks, and impressions at the most granular level available.<br />This includes access to more than 80 API integrations, enabling you to easily connect to global or local ad networks. |
+| [File import](/docs/import-cost-data) | Cost Import to record cost data not received via API. |
+| [Agency fees](/docs/incorporate-agency-fees-into-campaign-costs) | Agency fee calculations included in your cost. |
+| [Cost ETL\*](/docs/set-up-and-use-roi360-cost-etl-reports) | Delivers campaign cost data, updated 4 times daily, to your AWS S3 or GCS bucket ready for loading into advertiser BI systems. |
 | \* Available with ROI360 advanced package | |
 
 > 📘 Note
 >
-> You can also aggregate [cost data reported on the attribution link](https://support.appsflyer.com/hc/articles/360008981698) without ROI360. However, this method is only for the CPI cost model, not for other models, such as CPA, CPC, and CPM.
+> You can also aggregate [cost data reported on the attribution link](/docs/view-aggregated-cost-data-for-attribution-links) without ROI360. However, this method is only for the CPI cost model, not for other models, such as CPA, CPC, and CPM.
 
 ### Revenue tools
 
@@ -36,8 +36,8 @@ The ROI360 revenue tools aggregate and report revenue data, taking into account 
 | --- | --- |
 | [In-app purchases](/docs/purchase-and-subscription-validation-overview) | Automatic reporting of validated in-app purchases, including data for follow-up transactions such as refunds or cancellations. |
 | [Subscription revenue](/docs/purchase-and-subscription-validation-overview) | Automatic reporting of subscriptions, including changes, cancellations, and family sharing. |
-| [Ad revenue](https://support.appsflyer.com/hc/articles/217490046-Ad-revenue-attribution-guide) | Access to more than 20 ad revenue partners that connect via API or SDK that provide superior accuracy and data freshness. |
-| [Revenue ETL](https://support.appsflyer.com/hc/articles/16464765619985)\* | Delivers revenue data to your AWS S3 or GCS bucket ready for loading into advertiser BI systems. |
+| [Ad revenue](/docs/roi360-guide-ad-revenue-attribution) | Access to more than 20 ad revenue partners that connect via API or SDK that provide superior accuracy and data freshness. |
+| [Revenue ETL](/docs/revenue-etl-reports)\* | Delivers revenue data to your AWS S3 or GCS bucket ready for loading into advertiser BI systems. |
 | \* Available with ROI360 advanced package | |
 
 > 📘 Note
@@ -46,4 +46,4 @@ The ROI360 revenue tools aggregate and report revenue data, taking into account 
 >
 > * [In-app purchase receipt validation](/docs/about-receipt-validation)
 > * [Subscription revenue measurement](/docs/purchase-and-subscription-validation-overview)
-> * [Revenue recording via customized in-app events](https://support.appsflyer.com/hc/articles/360001546009)
+> * [Revenue recording via customized in-app events](/docs/roi360-revenue-attribution-overview)

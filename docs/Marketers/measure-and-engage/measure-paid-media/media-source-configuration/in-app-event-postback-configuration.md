@@ -6,7 +6,7 @@ At a glance: Measure app engagement and quality of your users, and optimize camp
 
 ## Overview
 
-In-app events enable marketers to measure app engagement and user quality from different sources and to build an appropriate user acquisition strategy. Ad networks use in-app event information to optimize campaigns and run cost-per-action/event campaigns. Ad networks receive in-app event data via postbacks, which are sent in real time. [Learn more about rich in-app events](https://support.appsflyer.com/hc/articles/115005544169).
+In-app events enable marketers to measure app engagement and user quality from different sources and to build an appropriate user acquisition strategy. Ad networks use in-app event information to optimize campaigns and run cost-per-action/event campaigns. Ad networks receive in-app event data via postbacks, which are sent in real time. [Learn more about rich in-app events](/docs/in-app-events-overview).
 
 ## Postback in-app event selection
 
@@ -19,7 +19,7 @@ Marketers can select which in-app events they want to send postbacks to ad netwo
 
 ## In-app event postback window
 
-The in-app event postback window allows marketers who work with networks on a [CPA (cost-per-action)](https://support.appsflyer.com/hc/articles/360000732237-AppsFlyer-Help-Center-glossary#cpa) basis to configure post-conversion windows after which event postbacks are no longer sent.
+The in-app event postback window allows marketers who work with networks on a [CPA (cost-per-action)](/docs/appsflyer-knowledge-base-glossary#cpa) basis to configure post-conversion windows after which event postbacks are no longer sent.
 
 For example, if you're charged for events happening within 15 days of a user install, set the window as follows:
 
@@ -31,11 +31,11 @@ The postbacks are always sent based on the **current** window setting. See the f
 
 | Date | Event / Setting |
 | --- | --- |
-| January 1 | The window is 15 days.<br>A user installs an app. |
+| January 1 | The window is 15 days.<br />A user installs an app. |
 | January 2 | The window is changed to 10 days. |
-| January 14 | The user makes a purchase.<br>The postback isn't sent to the ad network because the event doesn't fall within the current window (10 days). |
+| January 14 | The user makes a purchase.<br />The postback isn't sent to the ad network because the event doesn't fall within the current window (10 days). |
 | January 15 | The window is changed to 20 days. |
-| January 18 | The user makes another purchase.<br>This time the postback is sent, because the event falls within the current window (20 days). |
+| January 18 | The user makes another purchase.<br />This time the postback is sent, because the event falls within the current window (20 days). |
 
 > 📘 Note
 >
@@ -54,13 +54,13 @@ When starting to set up in-app event postbacks, the default window is automatica
 The following roles can configure postback windows:
 
 * Marketers
-* Agencies, if they're given the **Allow to configure in-app event postbacks** [permissions](https://support.appsflyer.com/hc/articles/4410395957521#agency-permissions).
+* Agencies, if they're given the **Allow to configure in-app event postbacks** [permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 > 📘 Note
 >
 > A marketer and an agency working with the same ad network can configure postback windows separately, based on their contracts with the network.
 
-* Partners, if they're given the **Allow to configure in-app event postbacks** [permissions](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+* Partners, if they're given the **Allow to configure in-app event postbacks** [permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 ## Event mapping
 
@@ -72,20 +72,20 @@ To make sure that the marketer's events match the same events as the partners', 
 
 > 📘 Note
 >
-> Events mapped in the Integration tab for a specific partner apply to both standard and [SKAdNetwork (SKAN) postbacks.](https://support.appsflyer.com/hc/articles/360011420698#sending-postbacks-to-integrated-partners)
+> Events mapped in the Integration tab for a specific partner apply to both standard and [SKAdNetwork (SKAN) postbacks.](/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners)
 
 ### Mapping methods
 
 Each partner decides which of the following methods are to be used for mapping their in-app events:
 
-* [Enter the partner event ID](https://support.appsflyer.com/hc/articles/208439256#enter-the-partner-event-id)
-* [Select the event ID from the list](https://support.appsflyer.com/hc/articles/208439256#select-an-event-id-from-the-list)
-* [Send events as they are (unmapped)](https://support.appsflyer.com/hc/articles/208439256#send-events-as-they-are-unmapped)
+* [Enter the partner event ID](/docs/in-app-event-postback-configuration#enter-the-partner-event-id)
+* [Select the event ID from the list](/docs/in-app-event-postback-configuration#select-an-event-id-from-the-list)
+* [Send events as they are (unmapped)](/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped)
 
 > 📘 Note
 >
 > * Not all mapping methods appear for all partners
-> * You can [give the partner permission](https://support.appsflyer.com/hc/articles/208439256#event-mapping-by-ad-networks) to do the mapping itself
+> * You can [give the partner permission](/docs/in-app-event-postback-configuration#event-mapping-by-ad-networks) to do the mapping itself
 
 #### Enter the partner event ID
 
@@ -124,8 +124,8 @@ You can choose which unmapped events to send to the partner:
 1. Click **Add event**.
 2. Select the postback options:
    * **AppsFlyer event**: From the list of your app events, select an event.
-   * **for users from**: Select the [sending option](https://support.appsflyer.com/hc/articles/208439256#options-for-sending-postbacks) for the event.
-   * **including**: Select [which data to include](https://support.appsflyer.com/hc/articles/208439256#data-to-include-in-the-postbacks) in the postback.
+   * **for users from**: Select the [sending option](/docs/in-app-event-postback-configuration#options-for-sending-postbacks) for the event.
+   * **including**: Select [which data to include](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks) in the postback.
 3. Repeat this procedure for more events.
 
 <Image src="https://files.readme.io/cc6b2bb1a381d88add035b9f369b0ba68dee8744aa3c2ee2f8f6f054b365a0dd-33379684962705.png" alt="Manually adding unmapped events with sending and data-inclusion options" />
@@ -134,12 +134,12 @@ You can choose which unmapped events to send to the partner:
 
 1. Select **Send all events (excludes uninstalls and sessions)**.
 2. Select the postback options:
-   * **for users from**: Select the [sending option](https://support.appsflyer.com/hc/articles/208439256#options-for-sending-postbacks) for all events.
-   * **including**: Select [which data to include](https://support.appsflyer.com/hc/articles/208439256#data-to-include-in-the-postbacks) for all events in the postback.
+   * **for users from**: Select the [sending option](/docs/in-app-event-postback-configuration#options-for-sending-postbacks) for all events.
+   * **including**: Select [which data to include](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks) for all events in the postback.
 
 <Image src="https://files.readme.io/458ca832d4176ccd306236cf10f211499e841dc9f550558987dff3ee683bd2d1-33379700651665.png" alt="Sending all unmapped events without individual event mapping" />
 
-For more information on mapping events, see [in-app event postbacks](https://support.appsflyer.com/hc/articles/4410395957521#g-in-app-event-postback-configuration).
+For more information on mapping events, see [in-app event postbacks](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration).
 
 ### Options for sending postbacks
 
@@ -233,12 +233,12 @@ Otherwise (**OR**),
 
 **To set up conditions for an event:**
 
-1. On the partner integration page, [define and map](https://support.appsflyer.com/hc/articles/4410395957521#g-in-app-event-postback-configuration) the required in-app events to send to the partner.
+1. On the partner integration page, [define and map](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration) the required in-app events to send to the partner.
 2. Click the Add condition ![Add condition icon](https://files.readme.io/5e8fda784fcb306b07c9dd549abd608bdb23d0028fbeade731039e6e91dd44e4-33379700656401.png) icon of the required event.
-3. Enter the condition fields, as they appear in the [event value](https://support.appsflyer.com/hc/articles/209680773#event-values):
+3. Enter the condition fields, as they appear in the [event value](/docs/raw-data-reporting-overview#event-values):
    * Property name
    * Value
-   * Partner event to map the condition to (using any of these [mapping options](https://support.appsflyer.com/hc/articles/208439256-In-app-events-postback-configuration#mapping-methods))
+   * Partner event to map the condition to (using any of these [mapping options](/docs/in-app-event-postback-configuration#mapping-methods))
 4. You can add more conditions, just make sure you enter all the fields of the existing condition first.
 5. Click **Save integration**.
 
@@ -303,12 +303,12 @@ The list of events available for mapping shows only the events already reported 
 >
 > * Adding custom events on the postback page doesn't automatically pull them from your app. Events must be configured in the SDK or S2S for proper functionality. See [how to send events to AppsFlyer](/docs/in-app-events-overview#sending-events).
 > * When a custom event is added under a specific partner, it is added to the list of events for all partners, so you can see it in any partner's event dropdown.
-> * See [tips](https://support.appsflyer.com/hc/articles/115005544169#tips) and [limitations](https://support.appsflyer.com/hc/articles/115005544169#limitations) for defining event names and parameters.
+> * See [tips](/docs/in-app-events-overview#tips) and [limitations](/docs/in-app-events-overview#limitations) for defining event names and parameters.
 
 **Agencies and ad networks:**
 
 * Can't add custom events
-* Can only view and/or map events after the marketer added the event and granted the necessary [permissions](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+* Can only view and/or map events after the marketer added the event and granted the necessary [permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 ## Event mapping by ad networks
 
@@ -340,5 +340,5 @@ Marketers can allow agencies to configure in-app event postbacks.
 
 ### See also
 
-* [Rich in-app events, Overview](https://support.appsflyer.com/hc/articles/115005544169)
-* [Rich in-app events, Event structure](https://support.appsflyer.com/hc/articles/4410481112081)
+* [Rich in-app events, Overview](/docs/in-app-events-overview)
+* [Rich in-app events, Event structure](/docs/in-app-events-event-structure)

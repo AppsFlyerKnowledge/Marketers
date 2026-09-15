@@ -11,7 +11,7 @@ AppsFlyer accounts allow for multiple users, each with individually-managed perm
 
 Permissions within each of these dimensions are assigned independently. In other words, you may assign a user a **role** with broad functional capabilities but allow them to exercise those capabilities only within a narrowly-defined set of **apps.**
 
-The only exception is the [Admin role](https://support.appsflyer.com/hc/articles/4414231896337#admin%E2%80%94a-special-role), as discussed below, which has access to all capabilities and apps.
+The only exception is the [Admin role](/docs/user-management-for-agencies#admin%E2%80%94a-special-role), as discussed below, which has access to all capabilities and apps.
 
 ### Predefined roles
 
@@ -22,9 +22,9 @@ Each AppsFlyer user of an agency account is assigned one of 4 predefined roles:
 - Marketing
 - Contributor
 
-Each of these roles defines the specific AppsFlyer features the user can access and the functions they can perform. A full list of capabilities per role is available on the [Roles tab](https://support.appsflyer.com/hc/articles/4414231896337#roles-tab) of the **User management** page.
+Each of these roles defines the specific AppsFlyer features the user can access and the functions they can perform. A full list of capabilities per role is available on the [Roles tab](/docs/user-management-for-agencies#roles-tab) of the **User management** page.
 
-As a general rule, all roles are predefined, and each role’s functional capabilities are fixed: no "mixing and matching" allowed. However, you can change a user’s functional capabilities at any time by changing their role (except for the [account owner](https://support.appsflyer.com/hc/articles/4414231896337#account-owner-hash), as discussed below).
+As a general rule, all roles are predefined, and each role’s functional capabilities are fixed: no "mixing and matching" allowed. However, you can change a user’s functional capabilities at any time by changing their role (except for the [account owner](/docs/user-management-for-agencies#account-owner-hash), as discussed below).
 
 #### Example
 
@@ -38,7 +38,7 @@ You have assigned Bill Bates the role of **Team manager.** This role gives Bill 
 
 If your AppsFlyer account existed under our prior user management system (when the only available account types were Admin and Team member), all users were brought into the new system with unchanged capabilities. As a result, most of these users appear in the current system with **temp roles**.
 
-Learn more about [managing temp roles](https://support.appsflyer.com/hc/articles/4414231896337#managing-temp-roles).
+Learn more about [managing temp roles](/docs/user-management-for-agencies#managing-temp-roles).
 
 ### Admin—a special role
 
@@ -52,10 +52,10 @@ An AppsFlyer account can have **one or more** Admins, but every account has at l
 This "all-access" characteristic of the Admin role cannot be changed or limited.
 
 - The user created at the time the account was opened (the **"account owner"**) is assigned the Admin role by default.
-  - The account owner cannot be deleted, removed from the Admin role, or otherwise edited from the [**User management**](https://support.appsflyer.com/hc/articles/4414231896337#user-management-page) page. Likewise, the account owner’s email address cannot be changed.
-    - If you do need to change the account owner, follow the [steps listed below](https://support.appsflyer.com/hc/articles/4414231896337#changing-the-account-owner).
+  - The account owner cannot be deleted, removed from the Admin role, or otherwise edited from the [**User management**](/docs/user-management-for-agencies#user-management-page) page. Likewise, the account owner’s email address cannot be changed.
+    - If you do need to change the account owner, follow the [steps listed below](/docs/user-management-for-agencies#changing-the-account-owner).
   - The account owner is initially responsible for creating additional users (until additional users with user management capabilities are created).
-- Only a user with an admin role can [manage API and S2S tokens](https://support.appsflyer.com/hc/articles/360004562377).
+- Only a user with an admin role can [manage API and S2S tokens](/docs/managing-appsflyer-tokens).
 - Any Admin other than the account owner **can** be changed to a different role or deleted from the AppsFlyer account through the User management page.
 
 ## User management page
@@ -73,14 +73,14 @@ The **Users** tab displays a table of all existing users in your account. It is 
 - Use the search box to find and display specific users.
 - Click the filter icon ![filter_icon.png](https://files.readme.io/1ceaac3efead3a218909988be1d50a2f0af93b07360f7197cd398b11d661992b-16162502598417.png) in the **Role** column heading to filter users by their role (including temp roles).
   - To clear the filter, select **None** in the filter dropdown list.
-- Use the checkboxes to select and [edit multiple users](https://support.appsflyer.com/hc/articles/4414231896337#multiuser-editing) at the same time.
+- Use the checkboxes to select and [edit multiple users](/docs/user-management-for-agencies#multiuser-editing) at the same time.
 
 ### Roles tab
 
 The **Roles** tab displays a list of all roles defined in your account, including:
 
 - The 4 [predefined roles](/docs/user-management-for-agencies#predefined-roles)
-- Any [temp roles](https://support.appsflyer.com/hc/articles/4414231896337#temp-roles%E2%80%94an-exception-to-the-rule) currently assigned to users
+- Any [temp roles](/docs/user-management-for-agencies#temp-roles%E2%80%94an-exception-to-the-rule) currently assigned to users
 
 Click on the name of any role in the left panel to see:
 
@@ -108,7 +108,7 @@ Click on the name of any role in the left panel to see:
 > - It cannot later be changed without deleting and recreating the user.
 > - It must be a valid email address at which the user can receive email.
 > - It cannot be associated with another user in any AppsFlyer account.
->   - If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](https://support.appsflyer.com/hc/articles/4414231896337#troubleshooting-can%E2%80%99t-create-this-user) to resolve this issue.
+>   - If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](/docs/user-management-for-agencies#troubleshooting-can%E2%80%99t-create-this-user) to resolve this issue.
 
 4. Select the user’s department (optional).
 5. Select the user’s role (required).
@@ -118,7 +118,7 @@ Click on the name of any role in the left panel to see:
 7. Click **Save** to create the user.
    - The user is sent an email invitation to activate their account.
    - The user is displayed in the user table. The envelope icon ![pending_invitation_icon.png](https://files.readme.io/68ac08ab6e52191a592350f82996f7ade9d181773d0bdbc6e2cb60315b60a8f2-16162502609553.png) indicates that an invitation has been sent and the account is awaiting activation. Once the user activates their account, the envelope will disappear.
-   - The activation link sent to the user is valid for 48 hours. If the user didn’t receive the invitation or if the link has expired, you can [resend the invitation](https://support.appsflyer.com/hc/articles/4414231896337#resending-a-user-invitation).
+   - The activation link sent to the user is valid for 48 hours. If the user didn’t receive the invitation or if the link has expired, you can [resend the invitation](/docs/user-management-for-agencies#resending-a-user-invitation).
 
 ## Editing users
 
@@ -146,9 +146,9 @@ Multi-user editing is an efficient way to change the account permissions of seve
 
 1. On the **Users** tab, select the checkboxes of the user or users you want to edit.
    - Select the checkbox in the column heading to select all visible users.
-   - The number of currently-selected users is displayed on the right side of the search box. Note that the [account owner](https://support.appsflyer.com/hc/articles/4414231896337#account-owner-hash) cannot be selected and is not included in the number of selected users.
+   - The number of currently-selected users is displayed on the right side of the search box. Note that the [account owner](/docs/user-management-for-agencies#account-owner-hash) cannot be selected and is not included in the number of selected users.
 2. The **Role** and **Apps** buttons are displayed at the top-right of the table.
-   - If one or more of the selected users has access to future apps, the **Apps** button is not available. (See [Temp role limitations](https://support.appsflyer.com/hc/articles/4414231896337#temp-role-limitations), below.)
+   - If one or more of the selected users has access to future apps, the **Apps** button is not available. (See [Temp role limitations](/docs/user-management-for-agencies#temp-role-limitations), below.)
 3. Click the button for the permissions you want to change.
 4. Make the necessary changes using the dialog box or dropdown lists that are displayed.
    - Remember that your changes apply to all selected users!
@@ -187,10 +187,10 @@ Multi-user editing is an efficient way to change the account permissions of seve
 
 ### Managing temp roles
 
-If your account previously used our prior user management system, [**temp roles**](https://support.appsflyer.com/hc/articles/4414231896337#temp-roles%E2%80%94an-exception-to-the-rule) were assigned to existing users to ensure that they were brought into the new system with unchanged capabilities.
+If your account previously used our prior user management system, [**temp roles**](/docs/user-management-for-agencies#temp-roles%E2%80%94an-exception-to-the-rule) were assigned to existing users to ensure that they were brought into the new system with unchanged capabilities.
 
 - Users with the same capabilities were assigned the same temp role.
-- Use the features of the [Roles tab](https://support.appsflyer.com/hc/articles/4414231896337#roles-tab) to review the capabilities of each temp role and a list of users currently in it.
+- Use the features of the [Roles tab](/docs/user-management-for-agencies#roles-tab) to review the capabilities of each temp role and a list of users currently in it.
 
 #### Temp role limitations
 
@@ -219,7 +219,7 @@ Because all Admins have the same permissions as the account owner, changing the 
 >
 > A few things to consider before you begin:
 >
-> - If you're still using Pull, Master, or GDPR APIs with token v1, changing the account owner automatically resets these services. To avoid data loss, [transition to start using these APIs with token v2](https://support.appsflyer.com/hc/articles/12399683708305) **before changing the account owner**.
+> - If you're still using Pull, Master, or GDPR APIs with token v1, changing the account owner automatically resets these services. To avoid data loss, [transition to start using these APIs with token v2](/docs/bulletin-api-token-changes) **before changing the account owner**.
 > - Changing the account owner must be completed manually according to these steps. It cannot be done from the **User management** page.
 
 #### #1–Send your request via the chat widget
@@ -233,8 +233,8 @@ To begin the process of changing the account owner, open the chat widget [using 
 
 Once the change has been processed, you will receive an email notification from AppsFlyer.
 
-- If you want the prior account owner to continue using your AppsFlyer account, [create a new user](https://support.appsflyer.com/hc/articles/4409128270481#creating-users) for them and assign them a new role.
-- APIs using token v2 aren't affected by changing the account owner. [Learn more about managing tokens](https://support.appsflyer.com/hc/articles/360004562377).
+- If you want the prior account owner to continue using your AppsFlyer account, [create a new user](/docs/user-management#creating-users) for them and assign them a new role.
+- APIs using token v2 aren't affected by changing the account owner. [Learn more about managing tokens](/docs/managing-appsflyer-tokens).
 
 ### Troubleshooting "Can’t create this user"
 
@@ -242,7 +242,7 @@ If you receive the error message *Can’t create this user* when entering the em
 
 If the user is in your account:
 
-- Check to see if the user has activated their account. If not, [resend the invitation](https://support.appsflyer.com/hc/articles/4414231896337#resending-a-user-invitation) if required.
+- Check to see if the user has activated their account. If not, [resend the invitation](/docs/user-management-for-agencies#resending-a-user-invitation) if required.
 - If the user has activated their account, ask them to try to log in again using the email address associated with their user. Advise them to follow the **Forgot password** steps if required.
 
 If the user’s email is used in a different account or you can’t determine the account in which the user’s email is used, select one of the following options:
@@ -253,7 +253,7 @@ If the user’s email is used in a different account or you can’t determine th
 
 ### Resending a user invitation
 
-If a new user did not receive their [account activation invitation](https://support.appsflyer.com/hc/articles/4414231896337#account-activation-hash) or if they did not activate within 48 hours, you can resend the email as follows:
+If a new user did not receive their [account activation invitation](/docs/user-management-for-agencies#account-activation-hash) or if they did not activate within 48 hours, you can resend the email as follows:
 
 1. On the **Users** tab, click the **Actions** button ![actions_icon.png](https://files.readme.io/24ad987d1e77d9dfa8559a370733a7b62a6d86954ec1d552eac9c406445ed927-16162502616593.png) on the far-right side of the user’s row.
    - Note that the user is still shown with an envelope icon ![pending_invitation_icon.png](https://files.readme.io/68ac08ab6e52191a592350f82996f7ade9d181773d0bdbc6e2cb60315b60a8f2-16162502609553.png), indicating that they have not yet activated their account).
@@ -261,4 +261,4 @@ If a new user did not receive their [account activation invitation](https://supp
 
 ### Resetting two-factor authentication (2FA) of a user
 
-For accounts using a 2FA, there may be occasions on which you need to reset a user’s 2FA. See [here](https://support.appsflyer.com/hc/articles/360010178037#reset) how to do this.
+For accounts using a 2FA, there may be occasions on which you need to reset a user’s 2FA. See [here](/docs/implementing-and-using-2fa-login#reset) how to do this.

@@ -18,11 +18,11 @@ Data regarding the custom store product pages is available in the AppsFlyer dash
 
 ### Dashboard
 
-Aggregate data for App Store custom product pages is available in the [Overview dashboard](https://support.appsflyer.com/hc/articles/360014697157). For Google Play custom store listings, availability is coming soon.
+Aggregate data for App Store custom product pages is available in the [Overview dashboard](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv). For Google Play custom store listings, availability is coming soon.
 
 **To view the data**:
 
-* In the [Overview dashboard](https://support.appsflyer.com/hc/articles/360014697157-Overview-dashboard-user-acquisition-and-retargeting-LTV-#view-types), add the **Store product page** grouping dimension.
+* In the [Overview dashboard](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv#view-types), add the **Store product page** grouping dimension.
 
 Custom store product page displays in the dashboard charts and tables.
 
@@ -56,8 +56,8 @@ Prerequisites:
 >
 > In Google Console, the custom listing must be set to be via a unique URL param.
 
-* [OneLink template](https://support.appsflyer.com/hc/articles/207032246#procedures)
-* [OneLink custom link](https://support.appsflyer.com/hc/articles/208874366#create-a-onelink-link)
+* [OneLink template](/docs/create-a-onelink-template#procedures)
+* [OneLink custom link](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link)
 
 **To add a redirection to a custom store listing to a OneLink custom link**:
 
@@ -89,8 +89,8 @@ To set up redirections to a custom product page in the App Store, you can either
 Prerequisites:
 
 * Custom product page created in App Store Connect
-* [OneLink template](https://support.appsflyer.com/hc/articles/207032246#procedures)
-* [OneLink custom link](https://support.appsflyer.com/hc/articles/208874366#create-a-onelink-link)
+* [OneLink template](/docs/create-a-onelink-template#procedures)
+* [OneLink custom link](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link)
 
 **To add a redirection to a custom product page to a OneLink custom link**:
 

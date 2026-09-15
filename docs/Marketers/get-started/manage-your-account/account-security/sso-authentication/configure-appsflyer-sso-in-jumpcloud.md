@@ -18,13 +18,13 @@ The first stage in configuring the AppsFlyer SSO process is done on the JumpClou
 4. [Optional] Add a description.
 5. Under the **SSO** tab:
    1. **Upload Metadata:** Download the [AppsFlyer SSO metadata](https://hq1.appsflyer.com/auth/sso-metadata) as an XML file, then upload it here.
-   2. **ACS URLs:** Enter the callback URL according to the [method for authenticating your users](https://support.appsflyer.com/hc/articles/360015017198#single-signon-url-configuration).
+   2. **ACS URLs:** Enter the callback URL according to the [method for authenticating your users](/docs/set-up-sso-authentication-with-your-identity-provider-idp#single-signon-url-configuration).
    3. **Login URL:** Enter the AppsFlyer [login URL](https://hq1.appsflyer.com/auth/login).
 
 ![jumpcloud_sso_tab2__1_.png](https://files.readme.io/3b45c98d191a35644c5479a0237e92908ca6f18416f6df2b6e0c84a30940307b-15934671100561.png)
 
 6. Click **activate**.
-7. A public certificate is created. An indication of it appears on the top right of the page. Click **Download Certificate**. This certificate is needed in [Step 2, on the AppsFlyer platform](https://support.appsflyer.com/hc/articles/360015017198#step-2-complete-the-configuration-at-appsflyer).
+7. A public certificate is created. An indication of it appears on the top right of the page. Click **Download Certificate**. This certificate is needed in [Step 2, on the AppsFlyer platform](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer).
 
 ### Create JumpCloud users
 
@@ -54,4 +54,4 @@ Create a group and assign users to it:
 
 ### Complete the process in AppsFlyer
 
-Now that you've configured the IdP part, go back to AppsFlyer to [complete the configuration](https://support.appsflyer.com/hc/articles/360015017198#step-2-complete-the-configuration-at-appsflyer). You can then [test](https://support.appsflyer.com/hc/articles/360015017198#step-3-test-the-sso-process) to see that it works.
+Now that you've configured the IdP part, go back to AppsFlyer to [complete the configuration](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer). You can then [test](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-process) to see that it works.

@@ -6,7 +6,7 @@ Medialyzer, an AppsFlyer integrated partner, develops and markets the software a
 
 > ❗️ Important!
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Medialyzer
 
@@ -27,21 +27,21 @@ Medialyzer, an AppsFlyer integrated partner, develops and markets the software a
 
 5. Complete the configuration using the relevant tabs, as described below.
 
-For a detailed description of the Partner Configuration Window Header, click [here](https://support.appsflyer.com/hc/articles/4410395957521#about-the-integrated-partner-page).
+For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
 ### Integration tab
 
 #### Activate partner
 
-On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with Medialyzer. Learn more about [partner activation](https://support.appsflyer.com/hc/articles/360000844778).
+On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with Medialyzer. Learn more about [partner activation](/docs/partner-activation-deactivation).
 
 #### Advanced Privacy
 
-For iOS apps, the [Advance Privacy](https://support.appsflyer.com/hc/articles/360018515798) toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the [Aggregated Advanced Privacy](https://support.appsflyer.com/hc/articles/360018515798) toggle is turned on in the App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked by default.
+For iOS apps, the [Advance Privacy](/docs/apply-aggregated-advanced-privacy-framework) toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the [Aggregated Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework) toggle is turned on in the App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked by default.
 
 #### Default postbacks
 
-AppsFlyer sends default postbacks to Medialyzer following user installs. Use this section to [define these postbacks](https://support.appsflyer.com/hc/articles/4410395957521#default%20postbacks).
+AppsFlyer sends default postbacks to Medialyzer following user installs. Use this section to [define these postbacks](/docs/set-up-an-integrated-partner#default%20postbacks).
 
 - **Off**: Install postbacks aren't sent to Medialyzer.
 - **All media sources, including organic**: Install postbacks are sent for events attributed to any partner and for organic events.
@@ -60,10 +60,10 @@ In this section, you can map your AppsFlyer events with your partners via postba
 
 | Parameter Name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br>**Tip**: Don't see the event you are looking for?<br>   - Make sure to activate the event on a device with a non-organic installation and recheck.<br>   - Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](https://support.appsflyer.com/hc/articles/208439256#custom-events) |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<br />   - Make sure to activate the event on a device with a non-organic installation and recheck.<br />   - Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
 | **mapped to partner event** | Enter the corresponding event name or ID of each event, as defined in BPM, or send the events as they are without name mapping. |
 | **for users from** | Select **All media sources, including organic** to send postbacks for events attributed to any partner and for organic events. |
-| **including** | - **No values & no revenue**: Send just the event itself without any parameters (values or revenue).<br>   - **Values & no revenue**: Send all the parameters **excluding** the revenue value.<br>   - **Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event). |
+| **including** | - **No values & no revenue**: Send just the event itself without any parameters (values or revenue).<br />   - **Values & no revenue**: Send all the parameters **excluding** the revenue value.<br />   - **Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event). |
 
 4. Click **Save Integration**.
 

@@ -13,7 +13,7 @@ Both advertisers and agencies can enable Attribution for Apple Ads.
 > If the advertiser or the agency disables attribution for Apple Ads, attribution for this app, including postback sending to Apple Ads Marketing Partners stops.
 
 - **Advertisers**: follow the instructions below on how to enable attribution for Apple Ads.
-- **Agencies**: [follow these instructions](https://support.appsflyer.com/hc/articles/213747963-Apple-Search-Ads-guide#agency-setup) to enable attribution for Apple Ads.
+- **Agencies**: [follow these instructions](/docs/apple-ads-integration-setup#agency-setup) to enable attribution for Apple Ads.
 
 ## Setting up SplitMetrics Acquire on AppsFlyer
 

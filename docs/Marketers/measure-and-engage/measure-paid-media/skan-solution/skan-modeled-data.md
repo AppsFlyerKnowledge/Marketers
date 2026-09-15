@@ -25,7 +25,7 @@ SKAN modeled data solves these issues:
 
 | Data type | Availability | Remarks |
 | --- | --- | --- |
-| Null conversion values | - Overview dashboard Single Source of Truth view<br>- SKAN dashboard<br>- SKAN aggregated performance report API<br>- SKAN aggregated postback arrival date API |  |
+| Null conversion values | - Overview dashboard Single Source of Truth view<br />- SKAN dashboard<br />- SKAN aggregated performance report API<br />- SKAN aggregated postback arrival date API |  |
 | Revenue LTV | Overview dashboard Single Source of Truth view | Up to 30 days in the SSOT Data Locker report (D7 still displayed in the dashboard) |
 | In-app event LTV | Overview dashboard Single Source of Truth view | In-app LTV modeling is currently limited to 7 days |
 | Geo | Overview dashboard Single Source of Truth view |  |

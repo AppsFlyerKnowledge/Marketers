@@ -2,11 +2,13 @@
 title: "Bulletin: Ad revenue reporting change"
 excerpt: "This bulletin outlines the change in AppsFlyer's ad revenue reporting, aligning data to the actual day of the ad display event instead of the day after."
 ---
-- **What's changing**: The date of Ad revenue data (user-level and aggregate-level) in the platform is the day of the ad display event itself (the day the ad revenue occurs), instead of the day after. Meaning if an ad displays on Monday, the revenue displays under Monday. This gives advertisers a more accurate and actionable understanding of their ad revenue data.
-- **Who is impacted**: App owners, agencies
-- **Where is it changing**: Essentially, data alignment to the day of the ad display event is active in all reports and APIs, for all types of network integrations.See the following table for where and when the alignment took effect.
+* **What's changing**: The date of Ad revenue data (user-level and aggregate-level) in the platform is the day of the ad display event itself (the day the ad revenue occurs), instead of the day after. Meaning if an ad displays on Monday, the revenue displays under Monday. This gives advertisers a more accurate and actionable understanding of their ad revenue data.
+* **Who is impacted**: App owners, agencies
+* **Where is it changing**: Essentially, data alignment to the day of the ad display event is active in all reports and APIs, for all types of network integrations.See the following table for where and when the alignment took effect.
 
 #### Ad revenue reporting change
+
+
 
 | Reporting method | Effective date (date change occurs) | Publication date (date of announcement) |
 | --- | --- | --- |
@@ -16,6 +18,8 @@ excerpt: "This bulletin outlines the change in AppsFlyer's ad revenue reporting,
 | Activity dashboard | June 17, 2020 | June 14, 2020 |
 | Data Locker (h=23 folder) | August 3, 2020 | August 3, 2020 |
 | Pull API (for aggregate data) | September 1, 2020 | August 31, 2020 |
+
+
 
 ### Before the change
 
@@ -27,16 +31,21 @@ This means that the ad revenue date is not aligned with actual user engagement. 
 
 The change is dependent on the integration type between the app and the monetization network as follows:
 
-- This change affects user-level and aggregate-level ad revenue available via the reporting methods outlined in the table prior.
-- The date of ad revenue data in the platform is the day of the ad display event itself. Meaning if an ad displays on Monday, the revenue displays under Monday. The data is available in reports from Wednesday after processing.
-- There is no change to historical data recorded before the effective date.
-- The revenue on the effective date includes two days' revenue, meaning the revenue of the effective date and the previous day’s revenue. Depending on the reporting scenario, you may discern a revenue spike on this day.
+* This change affects user-level and aggregate-level ad revenue available via the reporting methods outlined in the table prior.
+* The date of ad revenue data in the platform is the day of the ad display event itself. Meaning if an ad displays on Monday, the revenue displays under Monday. The data is available in reports from Wednesday after processing.
+* There is no change to historical data recorded before the effective date.
+* The revenue on the effective date includes two days' revenue, meaning the revenue of the effective date and the previous day’s revenue. Depending on the reporting scenario, you may discern a revenue spike on this day.
 
 See the example that follows.
 
-#### Example
-
-- Ads display and ad revenue occurs on Day 0 (the day of user acquisition).
-- Ad revenue data is pulled on Day 1.
-- Ad revenue data is processed and available in the AppsFlyer platform on Day 2.
-- Ad revenue data is reported under Day 0.  - In the Activity dashboard, Data Locker (h=23 folder), and raw data reports, the ad display time is also available.
+> 📘 **Note**
+>
+> #### Example
+>
+> * Ads display and ad revenue occurs on Day 0 (the day of user acquisition).
+> * Ad revenue data is pulled on Day 1.
+> * Ad revenue data is processed and available in the AppsFlyer platform on Day 2.
+> * Ad revenue data is reported under Day 0.
+>   * In the Activity dashboard, Data Locker (h=23 folder), and raw data reports, the ad display time is also available.
+>
+> [![](https://support.appsflyer.com/hc/article_attachments/360010993537/Ad_revenue_display_timeline_3_en-us.jpg)](https://support.appsflyer.com/hc/article_attachments/360010993537/Ad_revenue_display_timeline_3_en-us.jpg)

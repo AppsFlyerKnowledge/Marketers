@@ -4,6 +4,8 @@ excerpt: "Learn how to combine Cost ETL and cohort reports via Data Locker to ge
 ---
 **At a glance:** Combine Cost ETL and cohort reports via Data Locker (regular and advanced aggregated) to get the full picture of your marketing campaigns with the best available freshness, accuracy, and granularity.
 
+![](https://support.appsflyer.com/hc/article_attachments/27497862728465)
+
 ## About combining Cost ETL and cohort reports
 
 Cost ETL reports and cohort reports via Data Locker (regular and advanced aggregated) each have their own unique qualities. For example, Cost ETL reports include impression, click, and cost data, while cohort reports include detailed attribution, in-app event, and revenue data.
@@ -12,35 +14,34 @@ The best practice is that once the Cost ETL and aggregated cohort reports are re
 
 Combined, they:
 
-- Provide the full picture of your marketing performance, with the best available freshness, accuracy, and granularity.
-- Match your internal BI to the data you see in AppsFlyer dashboards.
-- Allow you to calculate important metrics, like return on ad spend (ROAS) and cost per action (CPA).
+* Provide the full picture of your marketing performance, with the best available freshness, accuracy, and granularity.
+* Match your internal BI to the data you see in AppsFlyer dashboards.
+* Allow you to calculate important metrics, like return on ad spend (ROAS) and cost per action (CPA).
 
 ## Queries to combine reports
 
 The sections that follow provide the queries and considerations you need to take into account when combining Cost ETL reports with:
 
-- [Advanced aggregated cohort reports](https://support.appsflyer.com/hc/articles/27494360719505-Combine-Cost-ETL-and-cohort-reports#query-to-combine-cost-etl-and-advanced-aggregated-cohort-report)
-- [Cohort reports via Data Locker](https://support.appsflyer.com/hc/articles/27494360719505-Combine-Cost-ETL-and-cohort-reports#query-to-combine-cost-etl-and-cohort-report)
+* [Advanced aggregated cohort reports](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-advanced-aggregated-cohort-report)
+* [Cohort reports via Data Locker](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-cohort-report)
 
-<Tabs>
-<Tab title="Advanced aggregated cohort reports">
+### Query to combine Cost ETL and Advanced aggregated cohort report
 
 **To combine the Cost ETL and cohort reports, your BI developer should**:
 
-- Use the following query as a guide, customizing it to fit your internal BI.
-- **Important considerations**:
-  - Adjust the query:
-    - Customize the start dates and end dates.
-    - Customize your report names.
-    - Choose the dimensions and metrics in your specific Cost ETL schema.
-  - There are differences in the reports' freshness. For example, Cost ETL updates up to four times a day and Advanced aggregated cohort reports update multiple times a day.
-  - Advanced aggregated cohort reports include users converted in the past 1,095 days. If they converted before that, they aren't taken into account.
-  - Cost ETL reports use the timezone of the data as it's stored by AppsFlyer. Advanced aggregated cohort reports include versioned (UTC) and versioned timezone reports. **Best practice**: Combine Cost ETL and cohort timezone versioned reports.
+* Use the following query as a guide, customizing it to fit your internal BI.
+* **Important considerations**:
+  * Adjust the query:
+    * Customize the start dates and end dates.
+    * Customize your report names.
+    * Choose the dimensions and metrics in your specific Cost ETL schema.
+  * There are differences in the reports' freshness. For example, Cost ETL updates up to four times a day and Advanced aggregated cohort reports update multiple times a day.
+  * Advanced aggregated cohort reports include users converted in the past 1,095 days. If they converted before that, they aren't taken into account.
+  * Cost ETL reports use the timezone of the data as it's stored by AppsFlyer. Advanced aggregated cohort reports include versioned (UTC) and versioned timezone reports. **Best practice**: Combine Cost ETL and cohort timezone versioned reports.
 
 #### Query
 
-```sql
+```
 select ag.app_id,
    ag.days_post_attribution,
    ag.conversion_date,
@@ -61,7 +62,7 @@ select ag.app_id,
    ag.selected_currency as revenue_currency,
    ag.timezone as cohort_timezone,
    cst.timezone as cost_timezone,
-   cst.os,
+   cst.os,     
    cst.ad_account,
    cst.currency as cost_currency,
    cst.original_currency as cost_original_currency,
@@ -124,23 +125,22 @@ WHERE ag.conversion_date between {start date} and {end date}
 GROUP BY ALL;
 ```
 
-</Tab>
-<Tab title="Cohort reports via Data Locker">
+### Query to combine Cost ETL and cohort report
 
 **To combine the Cost ETL and cohort reports, your BI developer should**:
 
-- Use the following query as a guide, customizing it to fit your internal BI.
-- **Important considerations**:
-  - Adjust the query:
-    - Customize the start dates and end dates.
-    - Customize your report names.
-    - Choose the dimensions and metrics in your specific Cost ETL schema.
-  - There are differences in the reports' freshness. For example, Cost ETL updates up to four times a day and cohort reports via Data Locker update once per day.
-  - Cost ETL reports use the timezone of the data as it's stored by AppsFlyer. Cohort reports via Data Locker use UTC.
+* Use the following query as a guide, customizing it to fit your internal BI.
+* **Important considerations**:
+  * Adjust the query:
+    * Customize the start dates and end dates.
+    * Customize your report names.
+    * Choose the dimensions and metrics in your specific Cost ETL schema.
+  * There are differences in the reports' freshness. For example, Cost ETL updates up to four times a day and cohort reports via Data Locker update once per day.
+  * Cost ETL reports use the timezone of the data as it's stored by AppsFlyer. Cohort reports via Data Locker use UTC.
 
 #### Query
 
-```sql
+```
 select dl.app_id,
    dl.days_post_attribution,
    dl.conversion_date,
@@ -160,7 +160,7 @@ select dl.app_id,
    dl.agency,
    dl.selected_currency as revenue_currency,
    cst.timezone as cost_timezone,
-   cst.os,
+   cst.os,          
    cst.ad_account,
    cst.currency as cost_currency,
    cst.original_currency as cost_original_currency,
@@ -222,17 +222,10 @@ WHERE dl.conversion_date between {start date} and {end date}
 GROUP BY ALL;
 ```
 
-</Tab>
-</Tabs>
-
-<Cards>
-  <Card title="Cost ETL" href="https://support.appsflyer.com/hc/articles/360008849238">
-    Learn more about Cost ETL reports and how to access them.
-  </Card>
-  <Card title="Advanced aggregated reports in Data Locker" href="https://support.appsflyer.com/hc/articles/23127074968721">
-    Read about advanced aggregated reports available in Data Locker.
-  </Card>
-  <Card title="Cohort reports via Data Locker" href="https://support.appsflyer.com/hc/articles/4408945472529">
-    Understand cohort reports and how to configure them in Data Locker.
-  </Card>
-</Cards>
+> 📘 **Note**
+>
+> #### See also
+>
+> * [Cost ETL](/docs/set-up-and-use-roi360-cost-etl-reports)
+> * [Advanced aggregated reports in Data Locker](/docs/advanced-aggregated-reports-in-data-locker)
+> * [Cohort reports via Data Locker](/docs/cohort-analytics-via-data-locker)

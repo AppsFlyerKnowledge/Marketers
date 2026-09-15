@@ -27,8 +27,8 @@ Meta documentation can be found [here](https://developers.facebook.com/docs/mark
 
 ## Instagram landing page for deep linking
 
-Currently, [Instagram supports deep linking into iOS apps using Universal Links](https://support.appsflyer.com/hc/articles/208874366#social-app-landing-page) for Static ads (non-catalog). iOS Universal Links and Android App Links are only supported in campaigns where **App** is selected as a destination.
+Currently, [Instagram supports deep linking into iOS apps using Universal Links](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page) for Static ads (non-catalog). iOS Universal Links and Android App Links are only supported in campaigns where **App** is selected as a destination.
 
-If you need to use custom links with deep linking on Instagram in campaigns where **App** cannot be selected, for example, if you set up an awareness campaign in Meta - as this campaign does not allow **App** to be selected as a destination, iOS Universal Links and Android App Links are not supported. You can [configure Instagram landing](https://support.appsflyer.com/hc/articles/208874366#social-app-landing-page). This allows you to use OneLink with Universal Links in Instagram to deep link users for better user experience.
+If you need to use custom links with deep linking on Instagram in campaigns where **App** cannot be selected, for example, if you set up an awareness campaign in Meta - as this campaign does not allow **App** to be selected as a destination, iOS Universal Links and Android App Links are not supported. You can [configure Instagram landing](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page). This allows you to use OneLink with Universal Links in Instagram to deep link users for better user experience.
 
-For Dynamic ads, iOS Universal Links, Android App Links, and URI schemes can be used as outlined [here](https://support.appsflyer.com/hc/articles/4410472805649-Facebook-Ads-FAQ#can-onelink-links-be-used-for-app-opening-and-deep-linking-in-facebook-dynamic-product-ads).
+For Dynamic ads, iOS Universal Links, Android App Links, and URI schemes can be used as outlined [here](/docs/meta-ads-faq#can-onelink-links-be-used-for-app-opening-and-deep-linking-in-facebook-dynamic-product-ads).

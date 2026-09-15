@@ -9,7 +9,7 @@ AppsFlyer Audiences automatically supports the following device identifiers for 
 - **iOS**:
  IDFA
 - **Android (Google Play):** GAID
-- **Android (3rd-party app stores):** [OAID](https://support.appsflyer.com/hc/articles/360006278797) and IMEI
+- **Android (3rd-party app stores):** [OAID](/docs/android-oaid-implementation-in-the-sdk) and IMEI
 
 Some advertising partners also support custom audience matching based on additional user identifiers. Audiences offers you the option to use these identifiers if you specifically configure them through the AppsFlyer SDK or S2S-mobile API.
 
@@ -17,10 +17,10 @@ Such additional identifiers can include phone numbers and emails, but can **only
 
 ## Next steps
 
-1. Select the additional identifiers you want to use (if any) from the [table of available identifiers](https://support.appsflyer.com/hc/articles/360017807278#additional-identifiers%E2%80%94parameters-and-formatting). Note that not all advertising partners support all identifiers.
+1. Select the additional identifiers you want to use (if any) from the [table of available identifiers](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#additional-identifiers%E2%80%94parameters-and-formatting). Note that not all advertising partners support all identifiers.
 2. Developers—Configure the selected identifiers, using:
-   - Parameters and formatting requirements as appear in the [table of available identifiers](https://support.appsflyer.com/hc/articles/360017807278#additional-identifiers%E2%80%94parameters-and-formatting)
-   - The reference and code samples for [SDK](https://support.appsflyer.com/hc/articles/360017807278#sdk-reference-and-code-samples) and [S2S](https://support.appsflyer.com/hc/articles/360017807278#s2s-reference-and-code-samples)
+   - Parameters and formatting requirements as appear in the [table of available identifiers](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#additional-identifiers%E2%80%94parameters-and-formatting)
+   - The reference and code samples for [SDK](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#sdk-reference-and-code-samples) and [S2S](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#s2s-reference-and-code-samples)
 3. In the Audiences dashboard:
    - Set your [account-level user identifier policy](/docs/audiences-user-identifier-policy)
    - Select the identifiers to be uploaded in each of your [partner connections](/docs/audiences-guide#manage-connections)
@@ -322,7 +322,7 @@ AppsFlyerLib.getInstance().setUserEmail("name@domain.com");
 
 ## S2S reference and code samples
 
-When sending identifiers for Audiences via [S2S](https://support.appsflyer.com/hc/articles/207034486-Server-to-server-events-API-for-mobile-S2S-mobile-), use the `custom_data` parameter for **all identifiers (including hashed *Email address*).** You can send one or more identifiers.
+When sending identifiers for Audiences via [S2S](/docs/server-to-server-events-api-for-mobile-s2s-mobile), use the `custom_data` parameter for **all identifiers (including hashed *Email address*).** You can send one or more identifiers.
 
 ### Sending identifiers via S2S
 

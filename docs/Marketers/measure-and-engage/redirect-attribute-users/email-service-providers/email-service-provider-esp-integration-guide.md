@@ -31,27 +31,27 @@ ESP email campaigns for mobile app users can cause attribution and deep linking 
 
 | Supported ESP list | Uses AppsFlyer integration method |
 | --- | --- |
-| [![acoustic logo.svg](https://files.readme.io/b3dac2e0a4f326da76584ed95ee2cd61683edff054c67110c56b95a361444acb-38086051586577.svg)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
-| [![aws-ses-logo-horizontal-transparent.png](https://files.readme.io/371a43248e0c88469a5a4599c501da148745c3b12d080f114dbb385ef9a7f899-46799108961937.png)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
-| [![53798 KB blueshift.png](https://files.readme.io/038b29f54fdb4e20775d7c1af0e6543a78351abdfad8b8d7d029a1fdd5b5de7b-32377991388945.png)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
-| [![53798 KB braze.png](https://files.readme.io/41e9614c7a35cd18f1d17d5958d6a7243e53a1af0a3e56935342b90103d7be20-32378022189969.png)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
-| [![53798 KB CleverTap.png](https://files.readme.io/f3190c5c82b380e93d70bbccccf279f78decf6a223bcab3ca62958356202e1a1-32378022192657.png)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
-| [![53798 KB customer.io.png](https://files.readme.io/e893909294e6397226b10dbad55f06644cf7a9e6db0a3020280495a9d17fc53c-32378022194833.png)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
-| [![53798 KB emarsys.png](https://files.readme.io/449120ed88bb0540b758530ca5d8884e2e8210485859b17eb272d61e218566a1-32378022206737.png)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
-| [![53798 KB expertsender.png](https://files.readme.io/25141c53c10b3f2eed600567b04849dda88f6b379bb71ae00bcc2e85fa0171e7-32377991413393.png)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
-| [![Insider (1).svg](https://files.readme.io/544b4f408b64e99e037cfca238c578185db66d87d85f7d329e39d62b253ba618-36655909659153.svg)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
-| [![klaviyo (1).png](https://files.readme.io/4144e48e7c072ec2034671752a02398e98bb023cda647f37986e953772d97f89-41351882139409.png)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
-| [![53798 KB MailExpress (2).png](https://files.readme.io/7a196f7d2825ea7dbb14a7deda4af907c5056957b63e93c53a7550bd8394a5c4-32377991435921.png)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
-| [![53798 KB Mailgun.png](https://files.readme.io/4a19bb320d3abf176ca3bb2384f4de5a06d8e2f1925df2fc6e082372b711b19a-32377991438865.png)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
+| [![acoustic logo.svg](https://files.readme.io/b3dac2e0a4f326da76584ed95ee2cd61683edff054c67110c56b95a361444acb-38086051586577.svg)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
+| [![aws-ses-logo-horizontal-transparent.png](https://files.readme.io/371a43248e0c88469a5a4599c501da148745c3b12d080f114dbb385ef9a7f899-46799108961937.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
+| [![53798 KB blueshift.png](https://files.readme.io/038b29f54fdb4e20775d7c1af0e6543a78351abdfad8b8d7d029a1fdd5b5de7b-32377991388945.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
+| [![53798 KB braze.png](https://files.readme.io/41e9614c7a35cd18f1d17d5958d6a7243e53a1af0a3e56935342b90103d7be20-32378022189969.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
+| [![53798 KB CleverTap.png](https://files.readme.io/f3190c5c82b380e93d70bbccccf279f78decf6a223bcab3ca62958356202e1a1-32378022192657.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
+| [![53798 KB customer.io.png](https://files.readme.io/e893909294e6397226b10dbad55f06644cf7a9e6db0a3020280495a9d17fc53c-32378022194833.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
+| [![53798 KB emarsys.png](https://files.readme.io/449120ed88bb0540b758530ca5d8884e2e8210485859b17eb272d61e218566a1-32378022206737.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
+| [![53798 KB expertsender.png](https://files.readme.io/25141c53c10b3f2eed600567b04849dda88f6b379bb71ae00bcc2e85fa0171e7-32377991413393.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
+| [![Insider (1).svg](https://files.readme.io/544b4f408b64e99e037cfca238c578185db66d87d85f7d329e39d62b253ba618-36655909659153.svg)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
+| [![klaviyo (1).png](https://files.readme.io/4144e48e7c072ec2034671752a02398e98bb023cda647f37986e953772d97f89-41351882139409.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
+| [![53798 KB MailExpress (2).png](https://files.readme.io/7a196f7d2825ea7dbb14a7deda4af907c5056957b63e93c53a7550bd8394a5c4-32377991435921.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
+| [![53798 KB Mailgun.png](https://files.readme.io/4a19bb320d3abf176ca3bb2384f4de5a06d8e2f1925df2fc6e082372b711b19a-32377991438865.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
 | [![mindbox-black_large_padded.png](https://files.readme.io/5fdc6f90d39879c994298762de429528719f9be0f08e78ac25f1d2a6240d20f2-50865749335057.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
-| [![53798 KB moengage.png](https://files.readme.io/d2316501fe1f428d4337a4924a59e93545b50171d173b3371bdd4dd180805509-32377991440913.png)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
-| [![53798 KB ongage.png](https://files.readme.io/d3dd0839abd7ee6fbcf065a815d71a20885b0a09beabd37452c47d0396ee1d6e-32378022240273.png)](https://support.appsflyer.com/hc/articles/26967438815377--Closed-beta-Set-up-your-ESP-integration-with-AppsFlyer) | Yes |
+| [![53798 KB moengage.png](https://files.readme.io/d2316501fe1f428d4337a4924a59e93545b50171d173b3371bdd4dd180805509-32377991440913.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
+| [![53798 KB ongage.png](https://files.readme.io/d3dd0839abd7ee6fbcf065a815d71a20885b0a09beabd37452c47d0396ee1d6e-32378022240273.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
 | [![logo_black.png](https://files.readme.io/25e13e60d862c3694e698ecd66d1a26e5d8e1a1849c5ded15ad308e1c8d99b6e-44854095773457.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
-| [![53798 KB RD STATION.png](https://files.readme.io/91a24e7341c87484a4c06d077a1ee7fd7a04b3817b63ced27cec944421ca58aa-32378022248977.png)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
-| [![53798 KB Reteno.png](https://files.readme.io/4e1d8fab29601c1d3c2015a7253258a9c152cd987ee6c5f0125c6f6e79a370a1-32377991454609.png)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
-| [![53798 KB SAILTHRU.png](https://files.readme.io/61b721936f4f9cc64ee9551a213865eca2bea188599311f79d92d945204a713b-32378022253841.png)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
-| [![53798 KB sendgrid.png](https://files.readme.io/f4c3217e956db7e922a6150597d596c2c4848e5aa0a43b2347824aacbeb2caa3-32378022256785.png)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
-| [![53798 KB SPARKPOST.png](https://files.readme.io/bec55e3c96bb80b736777e110d05df9009e015ef2c1cdd8b3d8088880264f593-32377991460369.png)](https://support.appsflyer.com/hc/articles/26967438815377) | Yes |
+| [![53798 KB RD STATION.png](https://files.readme.io/91a24e7341c87484a4c06d077a1ee7fd7a04b3817b63ced27cec944421ca58aa-32378022248977.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
+| [![53798 KB Reteno.png](https://files.readme.io/4e1d8fab29601c1d3c2015a7253258a9c152cd987ee6c5f0125c6f6e79a370a1-32377991454609.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
+| [![53798 KB SAILTHRU.png](https://files.readme.io/61b721936f4f9cc64ee9551a213865eca2bea188599311f79d92d945204a713b-32378022253841.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
+| [![53798 KB sendgrid.png](https://files.readme.io/f4c3217e956db7e922a6150597d596c2c4848e5aa0a43b2347824aacbeb2caa3-32378022256785.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
+| [![53798 KB SPARKPOST.png](https://files.readme.io/bec55e3c96bb80b736777e110d05df9009e015ef2c1cdd8b3d8088880264f593-32377991460369.png)](/docs/set-up-your-esp-integration-with-appsflyer) | Yes |
 
 ## Other ESPs
 

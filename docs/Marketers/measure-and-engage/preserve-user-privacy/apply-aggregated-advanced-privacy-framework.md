@@ -29,8 +29,8 @@ If AAP is on, the raw data is affected, and some fields are restricted or unavai
 
 Data availability is affected when AAP is on as follows:
 
-- **Attribution data and fraud (Protect360):** [Some attribution fields are restricted or not available.](https://support.appsflyer.com/hc/articles/360006868017)
-- **Click, impression, and blocked clicks (fraud) data:** [User and device-related identifiers](https://support.appsflyer.com/hc/articles/360006868017#identifier-restriction) aren't available.
+- **Attribution data and fraud (Protect360):** [Some attribution fields are restricted or not available.](/docs/about-raw-data-identifier-restrictions)
+- **Click, impression, and blocked clicks (fraud) data:** [User and device-related identifiers](/docs/about-raw-data-identifier-restrictions#identifier-restriction) aren't available.
 - **Deferred deep linking**: If you implement deferred deep linking in paid media, use the [unified deep linking API (UDL).](https://dev.appsflyer.com/hc/docs/unifieddeeplink) The legacy API, which uses GCD, can't be used in the context of non-consenting users. In the case of owned media, deferred deep linking for owned media is supported via GCD and the most recent deferred deep linking API.
 
 ## Data availability principles in Aggregated Advanced Privacy
@@ -86,7 +86,7 @@ The AAP is an app-level toggle that controls the Advanced Privacy settings for a
 
 - Aggregated attribution is available. This includes, for example, Overview dashboards and reporting tools such as Cohort and the Master API.
 - [Advanced Privacy partner toggles](/docs/apply-aggregated-advanced-privacy-framework#partner-advanced-privacy-switch) are turned on and cannot be modified. Note! They are locked in position.
-- The data customers may make available to advertisers and partners is limited to aggregated data only, as defined in the [previous section](https://support.appsflyer.com/hc/articles/360018515798#data-availability-principles-in-aggregated-advanced-privacy).
+- The data customers may make available to advertisers and partners is limited to aggregated data only, as defined in the [previous section](/docs/apply-aggregated-advanced-privacy-framework#data-availability-principles-in-aggregated-advanced-privacy).
 
 #### AAP disabled
 
@@ -130,7 +130,7 @@ As previously stated, the AAP setting overrides the Advanced Privacy (AP) settin
 
 #### **Postbacks to ad network partners**
 
-[AAP affects ad networks](https://support.appsflyer.com/hc/articles/360011316197) in relation to data shared with them and is aligned with the AAP principles that apply to advertisers in the context of an ad network. Data shared with ad networks is via postbacks which differ between the attributed ad network and the unattributed ad network.
+[AAP affects ad networks](/docs/advanced-privacy-guide-postback-macros-for-ad-networks) in relation to data shared with them and is aligned with the AAP principles that apply to advertisers in the context of an ad network. Data shared with ad networks is via postbacks which differ between the attributed ad network and the unattributed ad network.
 
 Data sharing rules described apply to a given ad network if either of the following toggles is on:
 
@@ -182,7 +182,7 @@ Advanced Privacy behaves differently when served on the web and the af\_media\_t
 
 ### Agencies
 
-**Data availability**: The impact of AAP on agencies is similar to that of advertisers. If raw data is available to the agency for a given app and AAP applies to a given user's data, the data is available according to the rules of [limited attribution data for advertisers](https://support.appsflyer.com/hc/articles/360018515798#data-availability-principles-in-aggregated-advanced-privacy).
+**Data availability**: The impact of AAP on agencies is similar to that of advertisers. If raw data is available to the agency for a given app and AAP applies to a given user's data, the data is available according to the rules of [limited attribution data for advertisers](/docs/apply-aggregated-advanced-privacy-framework#data-availability-principles-in-aggregated-advanced-privacy).
 
 **Agency changing an ad network's Advanced Privacy setting:**
 
@@ -201,7 +201,7 @@ Advanced Privacy behaves differently when served on the web and the af\_media\_t
 4. Click **Save.**
 
 <Cards>
-  <Card title="Advanced Privacy guide & postback macros for ad networks" href="https://support.appsflyer.com/hc/articles/360011316197">
+  <Card title="Advanced Privacy guide & postback macros for ad networks" href="/docs/advanced-privacy-guide-postback-macros-for-ad-networks">
     Learn how Advanced Privacy affects ad networks and how to configure postback macros.
   </Card>
 </Cards>

@@ -8,7 +8,7 @@ Here is how it works: when a user clicks a Snapchat ad and lands on your website
 
 #### See also
 
-- [Web Performance Measurement - Overview](https://support.appsflyer.com/hc/articles/43521734577809--Beta-AppsFlyer-Web-Attribution-Overview)
+- [Web Performance Measurement - Overview](/docs/web-performance-measurement-overview)
 
 > 🚧 Important!
 >
@@ -51,7 +51,7 @@ To set in-app event postbacks:
 
 01. Turn on **In-app event postbacks**.
 
-02. If required, set the in-app event postback window. Read more in [In-app event postback configuration](https://support.appsflyer.com/hc/articles/208439256-In-App-Events-Postback-Configuration#inapp-event-postback-window).
+02. If required, set the in-app event postback window. Read more in [In-app event postback configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window).
 
 03. Click **Add event** to add an event to the list.
 
@@ -65,7 +65,7 @@ To set in-app event postbacks:
 
 07. In the **including** column, select whether to send events with their revenue values. See [Data to include in the postbacks](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks).
 
-08. [Optional] Click the **Add condition** icon to [set conditions](https://support.appsflyer.com/hc/articles/208439256#conditional-inapp-event-postbacks) for an event.
+08. [Optional] Click the **Add condition** icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
 
     > 📘 Note
     >
@@ -83,7 +83,7 @@ AppsFlyer forwards this value to Snapchat as the event ID. Snapchat then uses it
 
 If you don't send `af_customer_event_id`, AppsFlyer generates an event ID automatically. This ID won't match your Pixel events.
 
-For more information, see [[Beta] Integrate AppsFlyer Web SDK](https://support.appsflyer.com/hc/articles/43485611331473).
+For more information, see [[Beta] Integrate AppsFlyer Web SDK](/docs/integrate-appsflyer-web-sdk).
 
 ## Part 2: Set up AppsFlyer integration in Snapchat Web Ads
 
@@ -114,7 +114,7 @@ You can choose any predefined in-app event sent from AppsFlyer as your campaign 
 
 \* To simplify campaign analysis, include the campaign type (web or mobile) as a prefix or suffix in the campaign name, for example, `campaign-name_web`.
 
-For best practices on URL parameter configuration and traffic source resolution, see [About traffic source resolution](https://support.appsflyer.com/hc/articles/43518064765201--Beta-About-traffic-source-resolution).
+For best practices on URL parameter configuration and traffic source resolution, see [About traffic source resolution](/docs/about-traffic-source-resolution).
 
 An example of the resulting URL:
 

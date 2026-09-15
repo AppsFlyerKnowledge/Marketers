@@ -13,22 +13,22 @@ At a glance: Aggregate and raw data reports available via Data Locker
 | Raw | People-Based Attribution (PBA) | No |
 | Raw | Incrementality | No |
 | Raw | SKAN | No (1) |
-| Raw | Revenue | Ad revenue single version report requires a Data Locker subscription.<br>All other reports require a ROI360 Advanced package subscription. |
+| Raw | Revenue | Ad revenue single version report requires a Data Locker subscription.<br />All other reports require a ROI360 Advanced package subscription. |
 | Raw | CTV, PC, and console apps | Yes |
 | Aggregated | Cohort analytics | No (1) |
 | Advanced aggregated | Cohort analytics | No (3) |
-| Aggregated | Creative Optimization | No (1)<br>Requires a Creative Optimization Premium subscription plan. |
+| Aggregated | Creative Optimization | No (1)<br />Requires a Creative Optimization Premium subscription plan. |
 | Aggregated | SSOT | No (1) |
 
 > 📘 Note
 >
-> (1) If you don't have a Data Locker subscription, you must provide [storage owned by you](https://support.appsflyer.com/hc/articles/360000877538#storage-options).
+> (1) If you don't have a Data Locker subscription, you must provide [storage owned by you](/docs/data-locker-for-marketers#storage-options).
 > (2) Except for Cross-platform engagements.
 > (3) Available with Data Locker subscription or with analytics API suite.
 
 ### Data freshness
 
-Data Locker report availability varies by report type. Depending on the report, data is delivered using an hourly, daily, or versioned freshness model. For more information on how these freshness intervals map to the Data Locker folder hierarchy, see [Folder structure](https://support.appsflyer.com/hc/articles/360000877538/live_preview/01KKER5X9ZVJNR5RWJ08ZN1P8Y#folder-structure).
+Data Locker report availability varies by report type. Depending on the report, data is delivered using an hourly, daily, or versioned freshness model. For more information on how these freshness intervals map to the Data Locker folder hierarchy, see [Folder structure](/docs/data-locker-for-marketers/live_preview/01KKER5X9ZVJNR5RWJ08ZN1P8Y#folder-structure).
 
 | Data Freshness | Description | Report Example |
 | --- | --- | --- |
@@ -72,7 +72,7 @@ See [about Protect360 reports](/docs/protect360-raw-data-reports)
 | Blocked installs | 1-3 hours |
 | Blocked in-app events | 1-3 hours |
 | Blocked clicks | 1-3 hours |
-| Post-attribution installs | Daily<br>Each day's report contains post-attribution installs reported on the previous day. For example, the report for data generated on Monday is in the Tuesday report. |
+| Post-attribution installs | Daily<br />Each day's report contains post-attribution installs reported on the previous day. For example, the report for data generated on Monday is in the Tuesday report. |
 
 ### People-Based Attribution
 
@@ -94,7 +94,7 @@ Daily available 10-12 hours after the end of the previous day UTC. For example, 
 
 ### Incrementality
 
-See [Incrementality reports](https://support.appsflyer.com/hc/articles/360009360978-Incrementality-guide#available-reports)
+See [Incrementality reports](/docs/incrementality-for-remarketing-overview#available-reports)
 
 ### SKAN
 
@@ -116,13 +116,13 @@ About [SKAN raw data reports](/docs/skan-raw-data-reports)
 
 ### Revenue
 
-See [Revenue ETL Data Locker reports](https://support.appsflyer.com/hc/articles/16464765619985)
+See [Revenue ETL Data Locker reports](/docs/revenue-etl-reports)
 
-See [ad revenue raw data](https://support.appsflyer.com/hc/articles/217490046-Ad-revenue-attribution-guide#ad-revenue-raw-data)
+See [ad revenue raw data](/docs/roi360-guide-ad-revenue-attribution#ad-revenue-raw-data)
 
 ### CTV, PC, and console platform data
 
-See [CTV, PC, and console platform data via Data Locker](https://support.appsflyer.com/hc/articles/18170499230609)
+See [CTV, PC, and console platform data via Data Locker](/docs/ctv-pc-and-console-data-via-data-locker)
 
 ## Advanced raw data reports (Beta)
 
@@ -173,14 +173,14 @@ The reports are typically available by 12:00 UTC in the folder of the preceding 
 
 | Report type (topic) |
 | --- |
-| [Cohort unified](https://support.appsflyer.com/hc/articles/4408945472529) |
-| [Cohort user acquisition](https://support.appsflyer.com/hc/articles/4408945472529) |
-| [Cohort retargeting](https://support.appsflyer.com/hc/articles/4408945472529) |
+| [Cohort unified](/docs/cohort-analytics-via-data-locker) |
+| [Cohort user acquisition](/docs/cohort-analytics-via-data-locker) |
+| [Cohort retargeting](/docs/cohort-analytics-via-data-locker) |
 
 ### Advanced aggregated reports
 
-Advanced aggregated reports in Data Locker contain aggregated data with optimal data freshness, accuracy, granularity, and unlimited volume. [Learn more](https://support.appsflyer.com/hc/articles/23127074968721)
+Advanced aggregated reports in Data Locker contain aggregated data with optimal data freshness, accuracy, granularity, and unlimited volume. [Learn more](/docs/advanced-aggregated-reports-in-data-locker)
 
 ### Creative Optimization ETL
 
-Creative Optimization ETL reports equip your data analysts with all the information they need for creative performance analysis. Full asset-level performance reporting is provided, including all key performance indicators (KPIs), upper and lower funnel KPIs, attribution data, and creative asset data. [Learn more](https://support.appsflyer.com/hc/articles/19253873174801)
+Creative Optimization ETL reports equip your data analysts with all the information they need for creative performance analysis. Full asset-level performance reporting is provided, including all key performance indicators (KPIs), upper and lower funnel KPIs, attribution data, and creative asset data. [Learn more](/docs/creative-optimization-etl-reporting)

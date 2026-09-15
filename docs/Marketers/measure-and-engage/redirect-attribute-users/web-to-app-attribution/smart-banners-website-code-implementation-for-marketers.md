@@ -23,7 +23,7 @@ To add the code to your website via other platforms, or to make changes to the c
 
 **To implement the Smart Banners code on your site**:
 
-1. Follow the [website workplace instructions](https://support.appsflyer.com/hc/articles/360000764837-Smart-Banners-mobile-web-to-app-#1-website-workplace-setup) to get the Smart Banners code.
+1. Follow the [website workplace instructions](/docs/smart-banners-mobile-web-to-app-for-marketers#1-website-workplace-setup) to get the Smart Banners code.
 2. Use the platform-specific instructions that follow to implement the code into your website:
 
 <Tabs>
@@ -117,7 +117,7 @@ Your current theme displays.
 2. Click **Actions** > **Edit code**.
 
 The Edit code page opens for your theme.
-3. In the Layout folder, click the file that starts with **{/} theme**.
+3. In the Layout folder, click the file that starts with **`{/}` theme**.
 
 The webpage code displays.
 4. In the code, directly under **&lt;head&gt;**, paste your Smart Banners code.
@@ -167,7 +167,7 @@ The Edit Themes page opens and the CSS code for your website displays.
 </Tabs>
 
 <Cards>
-  <Card title="PBA integration with Smart Banners" href="https://support.appsflyer.com/hc/articles/360001610038-PBA-web-SDK-integration-guide#installation-and-integration">
+  <Card title="PBA integration with Smart Banners" href="/docs/pba-web-sdk-integration-guide#installation-and-integration">
     Learn how to integrate PBA with your Smart Banners setup.
   </Card>
 </Cards>

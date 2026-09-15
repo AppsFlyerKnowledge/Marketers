@@ -8,10 +8,10 @@ At a glance: Test ad network integration using marketer apps.
 
 Before you can start testing the marketer's integration with your ad network, there are a few requirements:
 
-- Allowlist devices: you need to ask the marketer to [allowlist](https://support.appsflyer.com/hc/articles/207031996--Whitelisting-a-Test-Device) any devices that you use for testing
+- Allowlist devices: you need to ask the marketer to [allowlist](/docs/registering-test-devices) any devices that you use for testing
 - The app should include the AppsFlyer SDK
 - If the app is not live on Google Play or the iOS App Store, you need to ask the marketer to provide you with the app
-- Whether or not the app is live, it must be [in the marketer's AppsFlyer account](https://support.appsflyer.com/hc/articles/207377436-Adding-a-New-App-to-the-AppsFlyer-Dashboard)
+- Whether or not the app is live, it must be [in the marketer's AppsFlyer account](/docs/adding-an-app-to-appsflyer)
 
 ## Getting started
 
@@ -33,7 +33,7 @@ In the AppsFlyer dashboard for your app, from the side menu, select, **Active in
 
 > ❗️ Important!
 >
-> If the options under **Attribution link** are grayed out, ask the marketer to [enable ad network permissions](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab). The required permissions are **Allow to configure integration** and **Allow to configure in-app events postbacks**.
+> If the options under **Attribution link** are grayed out, ask the marketer to [enable ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab). The required permissions are **Allow to configure integration** and **Allow to configure in-app events postbacks**.
 
 Alternatively, you can ask the marketer to provide you with the attribution link.
 
@@ -47,7 +47,7 @@ Add parameters to the attribution link according to your requirements and the da
 
 > 👍 Tip
 >
-> To learn more about the parameters that you can add to the attribution link, see [AppsFlyer attribution link structure and parameters](https://support.appsflyer.com/hc/articles/207447163).
+> To learn more about the parameters that you can add to the attribution link, see [AppsFlyer attribution link structure and parameters](/docs/about-link-structure-and-parameters).
 
 ### Testing install attribution
 
@@ -55,7 +55,7 @@ Send the attribution link to the test device. Open the link in the browser, inst
 
 Launching the app is crucial for the attribution flow. If the app is not launched, no attribution is recorded.
 
-You can then [view the install in your dashboard](https://support.appsflyer.com/hc/articles/4413093220113#viewing-installs-in-the-dashboard).
+You can then [view the install in your dashboard](/docs/test-marketer-campaign-integration-with-the-ad-network#viewing-installs-in-the-dashboard).
 
 ## Testing apps in development
 
@@ -63,7 +63,7 @@ You can test a marketer's campaign integration with your ad network even if the 
 
 ### Generate an attribution link
 
-Generate an attribution link. You can use the [same instructions as listed above](https://support.appsflyer.com/hc/articles/4413093220113#installing-the-app-through-the-attribution-link). Send the attribution link to the test device and navigate to it using the device's browser.
+Generate an attribution link. You can use the [same instructions as listed above](/docs/test-marketer-campaign-integration-with-the-ad-network#installing-the-app-through-the-attribution-link). Send the attribution link to the test device and navigate to it using the device's browser.
 
 The following screen appears:
 
@@ -73,7 +73,7 @@ This is the expected result. Since the app is not live, the attribution link doe
 
 ### Installing the app
 
-Install the app on the test device using the file that the marketer provides you and then launch the app. Delete the app and repeat the process (to generate several installs). You can then [view the installs in your dashboard](https://support.appsflyer.com/hc/articles/4413093220113#viewing-installs-in-the-dashboard).
+Install the app on the test device using the file that the marketer provides you and then launch the app. Delete the app and repeat the process (to generate several installs). You can then [view the installs in your dashboard](/docs/test-marketer-campaign-integration-with-the-ad-network#viewing-installs-in-the-dashboard).
 
 ## Testing in-app events
 
@@ -85,7 +85,7 @@ Before you can test in-app event postbacks, you should contact the marketer to l
 
 ### Mapping events
 
-If the marketer has enabled the permission [**Configure in-app event postbacks**](https://support.appsflyer.com/hc/articles/4410395957521#g-in-app-event-postback-configuration) in its integration settings for your ad network, you can map AppsFlyer events to the events that you log in your servers.
+If the marketer has enabled the permission [**Configure in-app event postbacks**](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration) in its integration settings for your ad network, you can map AppsFlyer events to the events that you log in your servers.
 
 In your app's AppsFlyer dashboard, from the side menu, select **Active integrations** and choose your ad network. Under the **Integration** tab scroll down to **In-app event settings**. Choose the in-app event and map it to the corresponding event:
 
@@ -97,7 +97,7 @@ Once you know which in-app events the marketer records, and event mapping is in 
 
 > 📘 Note
 >
-> Ad networks don’t have access to the Events Dashboard and can see in-app events on Overview Dashboard only after the advertiser enables the **Access aggregate in-app events data** [ad network permission](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab). However, you can export in-app event-related data from the [In-app events postback](https://support.appsflyer.com/hc/articles/4413093220113#verifying-postback-data) report.
+> Ad networks don’t have access to the Events Dashboard and can see in-app events on Overview Dashboard only after the advertiser enables the **Access aggregate in-app events data** [ad network permission](/docs/set-up-an-integrated-partner#permissions-tab). However, you can export in-app event-related data from the [In-app events postback](/docs/test-marketer-campaign-integration-with-the-ad-network#verifying-postback-data) report.
 
 In the in-app events postback report, you can find data such as the postback URL and mapped parameters. Use the data in the report and compare it with the data in your servers (from the postback) to make sure that data from postbacks is accurate and properly recorded by your servers.
 
@@ -114,7 +114,7 @@ Once you install and launch the app, you can see the results in your dashboard.
 
 > ❗️ Important!
 >
-> In order to generate several installs, [the device must be allowlisted](https://support.appsflyer.com/hc/articles/4413093220113#prerequisites).
+> In order to generate several installs, [the device must be allowlisted](/docs/test-marketer-campaign-integration-with-the-ad-network#prerequisites).
 
 Access your AppsFlyer dashboard and from the side menu, select **Analyze** > **Overview**.
 
@@ -126,7 +126,7 @@ Data related to clicks and installs appears at the top of the **Overview** scree
 
 Every install that is attributed to your ad network generates an install postback. If in-app events postbacks are enabled, events that come from an app whose install is attributed to your ad network, also generate postbacks.
 
-Open the [Raw data export page](https://support.appsflyer.com/hc/articles/360008613838) and generate 2 postback reports:
+Open the [Raw data export page](/docs/raw-data-export-page) and generate 2 postback reports:
 
 1. **Installs**
 2. **In-app events**

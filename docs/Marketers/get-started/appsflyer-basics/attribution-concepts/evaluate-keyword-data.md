@@ -12,7 +12,7 @@ With a few tweaks to your app page, it is possible to increase the amount of new
 
 ### iOS keywords
 
-If you work with Apple Ads, you can get [detailed keyword data](https://support.appsflyer.com/hc/articles/213747963-Apple-Search-Ads-configuration#get-keyword-data) for your **non-organic** users attributed to Apple Ads. In iOS, **organic** keyword data is not available.
+If you work with Apple Ads, you can get [detailed keyword data](/docs/apple-ads-integration-setup#get-keyword-data) for your **non-organic** users attributed to Apple Ads. In iOS, **organic** keyword data is not available.
 
 ### Android keywords
 
@@ -45,14 +45,14 @@ Organic keyword data is found in the following:
 In AppsFlyer, from the side menu, select **Export** > **Raw Data Export** to view the breakdown of used organic keywords.
 - **Advanced reports**
 
-Go to [Pivot](https://support.appsflyer.com/hc/articles/115001421846-Pivot-report), [Retention, and Cohort](https://support.appsflyer.com/hc/articles/207040496-Cohort-analytics-) reports and group by keywords.
+Go to [Pivot](/docs/pivot-table-user-metrics), [Retention, and Cohort](/docs/cohort-and-retention-dashboard) reports and group by keywords.
 
 Compare the quality of organic users based on their keywords.
-- [Push API](https://support.appsflyer.com/hc/articles/207034356) messages
+- [Push API](/docs/push-api-streaming-raw-data) messages
 
 ### Testing organic keyword data
 
-1. Use an [allowlisted](https://support.appsflyer.com/hc/articles/207031996) Android device.
+1. Use an [allowlisted](/docs/registering-test-devices) Android device.
 2. Open Chrome browser and go to Google.com.
 3. Use a strong keyword to search for your app.
 
@@ -65,4 +65,4 @@ This example uses " **hotels tonight**".
 
 <Image src="https://files.readme.io/366e23d3a9b4481d3a5af0889dc73ff4149027b3bf69e115331efa9812aeca0c-Hotels_Tonight_3.png" alt="Hotels_Tonight_3.png" />
 
-6. Search for the keyword in the AppsFlyer sources [described above](https://support.appsflyer.com/hc/articles/115002095726).
+6. Search for the keyword in the AppsFlyer sources described above.

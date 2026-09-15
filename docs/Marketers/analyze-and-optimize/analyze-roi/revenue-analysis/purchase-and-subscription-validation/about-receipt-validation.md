@@ -35,7 +35,7 @@ To activate Receipt validation, follow these steps:
 
 ## Set up Receipt validation
 
-For more information, see [Set up receipt validation](https://support.appsflyer.com/hc/articles/42137474889489--WIP-Set-up-receipt-validation) [..](https://support.appsflyer.com/hc/articles/42137474889489--WIP-Set-up-receipt-validation#step-3-verify-sdk-implementation)
+For more information, see [Set up receipt validation](/docs/set-up-receipt-validation) [..](/docs/set-up-receipt-validation#step-3-verify-sdk-implementation)
 
 ## In-app purchase events and parameters for Receipt validation
 
@@ -94,5 +94,5 @@ If you currently use ROI360 store revenue and want to switch to Receipt validati
 
 | Trait | Remark |
 | --- | --- |
-| Supported stores | • Play Store<br>• App Store<br>• For any other (third-party) stores, you must manually send in-app purchase events. |
+| Supported stores | • Play Store<br />• App Store<br />• For any other (third-party) stores, you must manually send in-app purchase events. |
 | iOS sandbox apps | For iOS sandbox apps, meaning apps that are not live in the App Store, 'Validate the Key' will always display invalid status |

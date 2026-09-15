@@ -47,7 +47,7 @@ It consists of a subdomain and your main domain, such as mail.yourbrand.com. Dif
 
 ### Step 2. Use a OneLink template for your email campaign
 
-Create a [OneLink template](https://support.appsflyer.com/hc/articles/207032246#procedures) and configure Universal Links/App Links under "When app is installed". This template will be used later to create OneLink links for your email campaigns.
+Create a [OneLink template](/docs/create-a-onelink-template#procedures) and configure Universal Links/App Links under "When app is installed". This template will be used later to create OneLink links for your email campaigns.
 
 \*If you already have an existing OneLink template configured that enables Universal Links/App Links, you can use it.
 
@@ -110,7 +110,7 @@ Have your developer make the following configurations to your app:
 
 #### **Configure your app to support associated domains**
 
-AppsFlyer hosts app association files for your app to enable [Universal Links (iOS)](https://support.appsflyer.com/hc/articles/360000732237#universal-links) or [App Links (Android)](https://support.appsflyer.com/hc/articles/360000732237#android-app-link).
+AppsFlyer hosts app association files for your app to enable [Universal Links (iOS)](/docs/appsflyer-knowledge-base-glossary#universal-links) or [App Links (Android)](/docs/appsflyer-knowledge-base-glossary#android-app-link).
 
 **To configure your app to access the files:**
 
@@ -130,7 +130,7 @@ Learn more about configuring [Universal links](https://dev.appsflyer.com/hc/docs
 
 **Prerequisite:** SDK from [v6.12.5](https://mvnrepository.com/artifact/com.appsflyer/af-android-sdk)
 
-Configure your app to enable Android App Linking from the email message to your app. Learn more about configuring Android [App Links](https://support.appsflyer.com/hc/articles/360000732237#universal-links).
+Configure your app to enable Android App Linking from the email message to your app. Learn more about configuring Android [App Links](/docs/appsflyer-knowledge-base-glossary#universal-links).
 
 > 📘 Note
 >
@@ -180,7 +180,7 @@ We appreciate your assistance with this update.
 
 **To create and customize the OneLink link for your campaign:**
 
-1. In AppsFlyer, create an “Email-to-app” OneLink link on the OneLink management page (or manually) within the OneLink template you created earlier. This is the link you’ll use in your email campaign that will attribute and redirect users per your specifications. Learn how to create a [OneLink link](https://support.appsflyer.com/hc/articles/208874366#create-a-onelink-link).
+1. In AppsFlyer, create an “Email-to-app” OneLink link on the OneLink management page (or manually) within the OneLink template you created earlier. This is the link you’ll use in your email campaign that will attribute and redirect users per your specifications. Learn how to create a [OneLink link](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link).
 
 ![email-to-app.png](https://files.readme.io/4e30986e039ed4cc13b9963ef3d1bb7b933061176bed812dced45a7240023d54-27082280943761.png)
 
@@ -203,7 +203,7 @@ Once the test is successful, you're all set.
 
 Well done! You're now ready to use links in your email campaigns. Afterwards, you can view the campaign results in your ESP or AppsFlyer dashboards.
 
-\*ESPs supported by this integration include: Blueshift, Braze, CleverTap, Customer.io, Emarsys, Expert Sender, Klaviyo, MailExpress, MailGun, Moengage, RDStation, Reteno, Sailthru, Sendgrid, Sparkpost, and more. See the full [list](https://support.appsflyer.com/hc/articles/360004556077).
+\*ESPs supported by this integration include: Blueshift, Braze, CleverTap, Customer.io, Emarsys, Expert Sender, Klaviyo, MailExpress, MailGun, Moengage, RDStation, Reteno, Sailthru, Sendgrid, Sparkpost, and more. See the full [list](/docs/email-service-provider-esp-integration-guide).
 
 ## FAQ
 

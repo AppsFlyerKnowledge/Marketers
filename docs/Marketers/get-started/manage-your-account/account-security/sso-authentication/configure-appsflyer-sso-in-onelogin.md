@@ -26,12 +26,12 @@ The first stage in configuring the AppsFlyer SSO process is done on the OneLogin
 09. Define the integration according to the following fields:
 
     - **Audience (EntityID):** Enter this link: [https://hq1.appsflyer.com](https://hq1.appsflyer.com/)
-    - **ACS (Consumer) URL Validation**, **ACS (Consumer) URL:** Enter the endpoint to which OneLogin sends the user verification. Use the link according to the [callback URL configuration described here](https://support.appsflyer.com/hc/articles/360015017198#single-signon-url-configuration)
+    - **ACS (Consumer) URL Validation**, **ACS (Consumer) URL:** Enter the endpoint to which OneLogin sends the user verification. Use the link according to the [callback URL configuration described here](/docs/set-up-sso-authentication-with-your-identity-provider-idp#single-signon-url-configuration)
     - **Recipient:** Enter the same URL as entered in the **ACS (Consumer) URL** field.
     - **Login URL:** Enter the AppsFlyer [login URL](https://hq1.appsflyer.com/auth/login).
     - **SAML not valid before**, **SAML not valid on or after:** Specify the time period (in minutes) the assertion is valid for.
 
-    - **SAML initiator:** [Select from where authentication begins](https://support.appsflyer.com/hc/articles/360015017198#single-signon-url-configuration):
+    - **SAML initiator:** [Select from where authentication begins](/docs/set-up-sso-authentication-with-your-identity-provider-idp#single-signon-url-configuration):
       - For authentication starting from the IdP, select **OneLogin**
       - For authentication starting from AppsFlyer, select **Service Provider**
     - **SAML nameID format:** Select Email.
@@ -72,4 +72,4 @@ The first stage in configuring the AppsFlyer SSO process is done on the OneLogin
 
 ## Complete the process in AppsFlyer
 
-Now that you've configured the IdP part, go back to AppsFlyer to [complete the configuration](https://support.appsflyer.com/hc/articles/360015017198#step-2-complete-the-configuration-at-appsflyer). You can then [test](https://support.appsflyer.com/hc/articles/360015017198#step-3-test-the-sso-process) to see that it works.
+Now that you've configured the IdP part, go back to AppsFlyer to [complete the configuration](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer). You can then [test](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-process) to see that it works.

@@ -32,7 +32,7 @@ The following is the list of the enriched engagement types:
 
 The Enriched Engagement Types framework does not impact the engagement type attribution priority. Hence, introducing EET is not expected to affect your install and conversion rate.
 
-The table below specifies the [attribution priority](/docs/appsflyer-attribution-model#attribution-waterfall) and [lookback window](https://support.appsflyer.com/hc/articles/208338403-Lookback-windows-explained#lookback-windows) of each engagement type:
+The table below specifies the [attribution priority](/docs/appsflyer-attribution-model#attribution-waterfall) and [lookback window](/docs/set-up-lookback-windows#lookback-windows) of each engagement type:
 
 | Engagement | Engagement type | Attribution priority\* | Lookback window\*\* |
 | --- | --- | --- | --- |

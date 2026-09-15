@@ -27,7 +27,7 @@ At a glance: Kenshoo, an AppsFlyer integrated partner (formerly known as Faceboo
 ### In-app events
 
 1. To send in-app event postbacks to Kenshoo, turn on **In-app event postbacks**.
-2. Set the configuration according to the guidelines [here](https://support.appsflyer.com/hc/articles/4410480904081#predefined-event-mapping).
+2. Set the configuration according to the guidelines [here](/docs/meta-ads-in-app-event-mapping#predefined-event-mapping).
 3. Click **Save**.
 
 ![meta_campaign_management_partner_settings.png](https://files.readme.io/776ce8b6017e1f39186df6a9e1614b6eeed7585327156369c9650d2f9645f42b-14238309599121.png)

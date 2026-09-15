@@ -33,7 +33,7 @@ The _**Integration Tab**_ is divided into different sections as described below.
 
 ### Activate partners
 
-The [partner must be activated](https://support.appsflyer.com/hc/articles/360000844778#activating-a-partner) by switching on the _**Activate partner**_ toggle on the first visit, to enable its setup.
+The [partner must be activated](/docs/partner-activation-deactivation#activating-a-partner) by switching on the _**Activate partner**_ toggle on the first visit, to enable its setup.
 
 ### General settings
 
@@ -61,9 +61,9 @@ As of July 1, 2020, we no longer send launch postbacks to Tapjoy. If your integr
 
 | Your configuration | Will be updated to | Your next actions |
 | --- | --- | --- |
-| Send to Tapjoy **all launches** (from all media sources, including organic) | Send to Tapjoy:<br>- **all installs** (from all media sources, including organic)<br>- **all `af_app_opened` events** (from all media sources, including organic) | No further actions are required. This update has no actual impact on the configuration. |
-| Send to Tapjoy **attributed first launches only** | Send to Tapjoy **installs** attributed to Tapjoy only | If you wish to send `af_app_open` events as well:<br>- In AppsFlyer, on Tapjoy integration page, configure sending the event under the _**In-app event postbacks**_ section |
-| Send to Tapjoy **all launches** (from all media sources, including organic)<br>**BUT**<br>No conversions have been attributed to Tapjoy in the 3 months prior to July 1, 2020 | Send **all installs**<br>**AND**<br>For 30 days after July 1, 2020, **all launches** | If you wish to send `af_app_open` events as well:<br>- In AppsFlyer, on Tapjoy integration page, configure sending the event under the _**In-app event postbacks**_ section.<br>If done during the 30-day period, we will discontinue sending all launches and start sending all `af_app_open` events instead.<br>If done after the 30-day period, we will stop sending launches and won't send `af_app_open` events until configured otherwise. |
+| Send to Tapjoy **all launches** (from all media sources, including organic) | Send to Tapjoy:<br />- **all installs** (from all media sources, including organic)<br />- **all `af_app_opened` events** (from all media sources, including organic) | No further actions are required. This update has no actual impact on the configuration. |
+| Send to Tapjoy **attributed first launches only** | Send to Tapjoy **installs** attributed to Tapjoy only | If you wish to send `af_app_open` events as well:<br />- In AppsFlyer, on Tapjoy integration page, configure sending the event under the _**In-app event postbacks**_ section |
+| Send to Tapjoy **all launches** (from all media sources, including organic)<br />**BUT**<br />No conversions have been attributed to Tapjoy in the 3 months prior to July 1, 2020 | Send **all installs**<br />**AND**<br />For 30 days after July 1, 2020, **all launches** | If you wish to send `af_app_open` events as well:<br />- In AppsFlyer, on Tapjoy integration page, configure sending the event under the _**In-app event postbacks**_ section.<br />If done during the 30-day period, we will discontinue sending all launches and start sending all `af_app_open` events instead.<br />If done after the 30-day period, we will stop sending launches and won't send `af_app_open` events until configured otherwise. |
 
 ### In-app events settings
 
@@ -77,12 +77,12 @@ In this section, you can configure in-app event postbacks that are sent to Tapjo
 
 | Parameter name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br>**Tip**: Don't see the event you are looking for?<br>   - Make sure to activate the event on a device with a non-organic installation and recheck.<br>   - Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](https://support.appsflyer.com/hc/articles/208439256#custom-events) |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<br>   - **Text field:** Get the corresponding event ID from the partner.<br>   - **Drop-down box:** Select the most suitable pre-defined AppsFlyer event.<br>   - **As is**: Send the events as they are, without name mapping. |
-| **for users from** | Select the sending option for the event:<br>   - **This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner.<br>   - **All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, the user who performed it came from any media source. |
-| **including** | - **No data (default)**: Send just the event itself, without any event values.<br>   - **Values and revenue**: Send all event parameters, including revenue values (if exist in the event).<br>   - **Values without revenue**: Send all event parameters, excluding revenue values. |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<br />   - Make sure to activate the event on a device with a non-organic installation and recheck.<br />   - Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
+| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<br />   - **Text field:** Get the corresponding event ID from the partner.<br />   - **Drop-down box:** Select the most suitable pre-defined AppsFlyer event.<br />   - **As is**: Send the events as they are, without name mapping. |
+| **for users from** | Select the sending option for the event:<br />   - **This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner.<br />   - **All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, the user who performed it came from any media source. |
+| **including** | - **No data (default)**: Send just the event itself, without any event values.<br />   - **Values and revenue**: Send all event parameters, including revenue values (if exist in the event).<br />   - **Values without revenue**: Send all event parameters, excluding revenue values. |
 
-4. [Optional] Click the Add condition ![image.png](https://files.readme.io/8e650caf6472b316bd49bc25c45cc4c9d63b67770dd1c920fb873118b82ff868-17023682954385.png) icon of an event to [set conditions for the event](https://support.appsflyer.com/hc/articles/208439256#conditional-inapp-event-postbacks) sent to Tapjoy.
+4. [Optional] Click the Add condition ![image.png](https://files.readme.io/8e650caf6472b316bd49bc25c45cc4c9d63b67770dd1c920fb873118b82ff868-17023682954385.png) icon of an event to [set conditions for the event](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) sent to Tapjoy.
 
 > 🚧 Note
 >
@@ -92,11 +92,11 @@ In this section, you can configure in-app event postbacks that are sent to Tapjo
 
 ## Attribution link tab
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](https://support.appsflyer.com/hc/articles/115005248543-OneLink-overview).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).
 
-[Learn more about attribution link structure and parameters](https://support.appsflyer.com/hc/articles/207447163).
+[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
 
-**To generate an attribution link,** follow [these instructions](https://support.appsflyer.com/hc/articles/4410395957521#attribution-link-tab).
+**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 > 📘 Note
 >
@@ -104,15 +104,15 @@ Generate and save attribution links and send them to the partner for attributing
 
 ## Cost tab
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](https://support.appsflyer.com/hc/articles/207040526-Ad-cost-measurement-guide#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
 **To enable the cost API**:
 
-- Follow [these integration instructions](https://support.appsflyer.com/hc/articles/360008850257#enable-cost-api).
+- Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
 
 ### Cost data sync status
 
-[View your cost API status](https://support.appsflyer.com/hc/articles/360008850257#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 > 📘 Notes
 >
@@ -125,7 +125,7 @@ This section is relevant if you are a publisher displaying partner ads to your u
 
 **To enable the ad revenue API**:
 
-- Follow [these integration instructions](https://support.appsflyer.com/hc/articles/217490046-Ad-revenue-attribution-guide#connect-to-ad-revenue-integrated-partners).
+- Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
 
 ## Permissions tab
 
@@ -143,4 +143,4 @@ Use these toggles to give the ad network permissions to handle its own configura
 - _**Allow access to your aggregate revenue data**_ - only to the revenue data attributed to the partner
 - _**Allow access to your Protect360 dashboard**_ - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about [ad network permissions](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+Learn more about [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).

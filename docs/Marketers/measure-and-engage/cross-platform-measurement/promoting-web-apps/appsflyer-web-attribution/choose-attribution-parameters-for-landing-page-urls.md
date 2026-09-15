@@ -15,7 +15,7 @@ The URL parameters can belong to one of two classes: PID and UTM.
 * The PID class includes the AppsFlyer URL parameters.
 * The UTM class includes the standard UTM parameters.
 
-For more information about how Web Performance Measurement processes URL parameters, see [About traffic source resolution](https://support.appsflyer.com/hc/articles/43518064765201--WIP-About-traffic-source-resolution).
+For more information about how Web Performance Measurement processes URL parameters, see [About traffic source resolution](/docs/about-traffic-source-resolution).
 
 ### Supported PID and UTM parameters
 

@@ -10,8 +10,8 @@ This article covers working with the reports you have already created. You can v
 
 If you are looking for instructions on creating new DCR reports, you can find them in these articles:
 
-- [Creating Attribution data reports](https://support.appsflyer.com/hc/articles/9035047905297)
-- [Creating In-app event reports](https://support.appsflyer.com/hc/articles/9312610473233)
+- [Creating Attribution data reports](/docs/data-clean-room-creating-attribution-data-reports)
+- [Creating In-app event reports](/docs/data-clean-room-creating-in-app-event-reports)
 
 ## Editing or deleting a report
 

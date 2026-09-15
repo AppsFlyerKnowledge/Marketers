@@ -29,9 +29,9 @@ The dashboard contains Sandbox campaign performance data and adheres to the foll
 
 | Filter | Remarks |
 | --- | --- |
-| Date range | - The attributed install date.<br>- The date range is limited to 90 days. |
-| Media source | - The ad network attributed to the install.<br>- Agency-driven traffic: The actual media source displays irrespective of the agency transparency status. Consequently, you may see media sources that you aren't familiar with. |
-| Campaign | - Campaign name and ID as set by the ad network.<br>- If a given campaign ID has multiple campaign names associated with it, then all names are displayed in the dashboard. **Note:** The ad network provides the campaign ID and name. |
+| Date range | - The attributed install date.<br />- The date range is limited to 90 days. |
+| Media source | - The ad network attributed to the install.<br />- Agency-driven traffic: The actual media source displays irrespective of the agency transparency status. Consequently, you may see media sources that you aren't familiar with. |
+| Campaign | - Campaign name and ID as set by the ad network.<br />- If a given campaign ID has multiple campaign names associated with it, then all names are displayed in the dashboard. **Note:** The ad network provides the campaign ID and name. |
 | Adset | Available if the ad network provides this data point. |
 | Ad | Available if the ad network provides this data point. |
 | Site ID | Available if the ad network provides this data point. |
@@ -120,10 +120,7 @@ The Sandbox attribution overview dashboard currently supports predefined in-app 
 ### See also
 
 <Cards>
-  <Card title="[Closed Beta] Android privacy sandbox - Attribution API" href="https://support.appsflyer.com/hc/articles/25471654983825--Beta-Android-privacy-sandbox-Attribution-API">
+  <Card title="[Closed Beta] Android privacy sandbox - Attribution API" href="/docs/closed-beta-android-privacy-sandbox-attribution-api">
     Learn more about the Android privacy sandbox Attribution API.
-  </Card>
-  <Card title="[Closed Beta] Android privacy sandbox - Integrated partners list" href="https://support.appsflyer.com/hc/articles/26035455628689--Beta-Android-privacy-sandbox-Integrated-partners-list">
-    View the list of integrated partners for the Android privacy sandbox.
   </Card>
 </Cards>

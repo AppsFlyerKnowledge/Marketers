@@ -58,6 +58,6 @@ In order to receive a high score, the following parameters should be provided by
 To add more parameters, and improve your integration and visibility in the AppsFlyer platform,
 
 1. Check which parameters your integration is missing.
-   - [Read about attribution link templates](https://support.appsflyer.com/hc/articles/360001300998#part-1-integration-and-testing)
-   - [Check the full list of parameters available for use](https://support.appsflyer.com/hc/articles/207447163#attribution-link-parameters)
+   - [Read about attribution link templates](/docs/getting-started-onboarding-guide-for-ad-networks#part-1-integration-and-testing)
+   - [Check the full list of parameters available for use](/docs/about-link-structure-and-parameters#attribution-link-parameters)
 2. Contact your PDM to update the link template or get more information.

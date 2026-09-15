@@ -175,7 +175,7 @@ To use transactional data for audience creation, you must first aggregate it int
 
 > 📘 Note
 >
-> Make sure you have the [Build audiences](https://support.appsflyer.com/hc/articles/24740010687249#grant-permissions-for-your-source) permission to create an audience.
+> Make sure you have the [Build audiences](/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source) permission to create an audience.
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
 
@@ -214,10 +214,10 @@ Use the SQL builder to query the data and create an audience. The following tabl
 
 | Section | Description |
 | --- | --- |
-| Left pane | Presents all available sources for creating your audience. This may include your sources and those shared with you. You'll only be able to view sources to which you have the [**Build audience**](https://support.appsflyer.com/hc/articles/24740010687249#grant-permissions-for-your-source) permission.<br>Selecting a source expands it to reveal corresponding columns. |
+| Left pane | Presents all available sources for creating your audience. This may include your sources and those shared with you. You'll only be able to view sources to which you have the [**Build audience**](/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source) permission.<br />Selecting a source expands it to reveal corresponding columns. |
 | Top-middle section (query editor) | The query editor for writing your SQL statements. |
-| Bottom-middle section (context panel) | This section dynamically shows details based on the selected object from the left pane:<br>- **When selecting a source:** Shows the column names ("Field name") and their corresponding types ("Type").<br>- **When a column is selected:** Shows the column values ("Distinct values") and the row count for each value ("Count").<br>- **Following query execution:** Shows a sample of the query results.<br>  <br>  **Note:** As a privacy measure, the results table doesn't display hashed values, such as emails and IDs. These values are shown as "Restricted". |
-| Right pane | This section dynamically shows details based on the selected object:<br>- **When selecting a source:** Shows the permissions granted for the source.<br>- **While writing the SQL query:**  - Shows the query validity status on the top right of the page. This may include any of the following statuses: <br>  - **Ready to run:** No issues found. You can test the query and proceed to the next step.<br>  - **Syntax error:** An error in syntax was detected along with guidance on resolving it.<br>  - **Permission error:** Indicates a lack of required permissions, with a tooltip detailing which [access rights are provided for the source](https://support.appsflyer.com/hc/articles/24740010687249#view-permissions-for-collaborator%E2%80%99s-source).<br>  - Shows a **Test** button on the top right of the page. Once you've completed writing your query, you must test it to confirm the accuracy of the intended audience.<br>    <br>    Click **Test** to test your query and examine the results. |
+| Bottom-middle section (context panel) | This section dynamically shows details based on the selected object from the left pane:<br />- **When selecting a source:** Shows the column names ("Field name") and their corresponding types ("Type").<br />- **When a column is selected:** Shows the column values ("Distinct values") and the row count for each value ("Count").<br />- **Following query execution:** Shows a sample of the query results.<br />  <br />  **Note:** As a privacy measure, the results table doesn't display hashed values, such as emails and IDs. These values are shown as "Restricted". |
+| Right pane | This section dynamically shows details based on the selected object:<br />- **When selecting a source:** Shows the permissions granted for the source.<br />- **While writing the SQL query:**  - Shows the query validity status on the top right of the page. This may include any of the following statuses: <br />  - **Ready to run:** No issues found. You can test the query and proceed to the next step.<br />  - **Syntax error:** An error in syntax was detected along with guidance on resolving it.<br />  - **Permission error:** Indicates a lack of required permissions, with a tooltip detailing which [access rights are provided for the source](/docs/data-collaboration-platform-dcp-create-and-manage-sources#view-permissions-for-collaborator%E2%80%99s-source).<br />  - Shows a **Test** button on the top right of the page. Once you've completed writing your query, you must test it to confirm the accuracy of the intended audience.<br />    <br />    Click **Test** to test your query and examine the results. |
 
 #### Transactional data in SQL queries
 
@@ -240,7 +240,7 @@ When working with transactional data sources in the SQL Builder, the following q
 
 ## Send an audience for activation
 
-After an audience is built, activate it where it can drive results. Select a destination, such as media partners for campaign targeting or a cloud storage bucket for downstream use, and DCP refreshes and delivers the audience daily based on the latest source data and [permissions](https://support.appsflyer.com/hc/articles/24740010687249#permissions).
+After an audience is built, activate it where it can drive results. Select a destination, such as media partners for campaign targeting or a cloud storage bucket for downstream use, and DCP refreshes and delivers the audience daily based on the latest source data and [permissions](/docs/data-collaboration-platform-dcp-create-and-manage-sources#permissions).
 
 - [**Connect an audience to media partners**](#connect-an-audience-to-media-partners) - Media partner platforms include Meta Ads, Google Ads, and many more. Connect your audience to media partners when you want to run paid campaigns, remarketing, or look-alike expansion.
 - [**Export an audience to cloud storage**](#export-to-cloud-storage) - Connect your audience to cloud storage when you need the file in BI models, CDPs, or internal enrichment pipelines.
@@ -283,7 +283,7 @@ Send the audience directly to your cloud storage bucket. With every audience upd
 
 > 📘 Note
 >
-> Before exporting, make sure your cloud storage bucket is set up and connected to DCP. See [Set up your cloud services](https://support.appsflyer.com/hc/articles/24604528827921) and [Add connections](https://support.appsflyer.com/hc/articles/24603890457617) for instructions.
+> Before exporting, make sure your cloud storage bucket is set up and connected to DCP. See [Set up your cloud services](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services) and [Add connections](/docs/data-collaboration-platform-dcp-add-connections) for instructions.
 
 **To export the audience to cloud storage:**
 

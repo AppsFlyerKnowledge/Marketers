@@ -42,10 +42,10 @@ The SSO configuration is done on both the IdP platform and in AppsFlyer, as deta
 
 See the detailed procedures for configuring SSO authentication in the following IdPs:
 
-- [JumpCloud](https://support.appsflyer.com/hc/articles/13563131567249)
-- [Okta](https://support.appsflyer.com/hc/articles/12934808889745)
-- [OneLogin](https://support.appsflyer.com/hc/articles/15044997313041)
-- [Ping Identity](https://support.appsflyer.com/hc/articles/16062655361937)
+- [JumpCloud](/docs/configure-appsflyer-sso-in-jumpcloud)
+- [Okta](/docs/configure-appsflyer-sso-in-okta)
+- [OneLogin](/docs/configure-appsflyer-sso-in-onelogin)
+- [Ping Identity](/docs/configure-appsflyer-sso-in-ping-identity)
 
 #### Setup overview for other IdP platforms
 
@@ -304,7 +304,7 @@ When you delete the SSO configuration, AppsFlyer deletes the SSO metadata and se
 
 | Name | Description |
 | --- | --- |
-| Symbols in email address | SSO does not support email addresses with the + sign in the email address.<br>For example: my+customer@demo.com<br>Having this will result in login failure. |
+| Symbols in email address | SSO does not support email addresses with the + sign in the email address.<br />For example: my+customer@demo.com<br />Having this will result in login failure. |
 | Exception users | Exception users must be explicitly added by an admin. |
 | Alternative login methods | Supported alternative login methods are **Username & password** and **Authenticator app**. |
 | SMS authentication | SMS isn’t supported as an alternative login method for exception users. |
@@ -315,10 +315,10 @@ When you delete the SSO configuration, AppsFlyer deletes the SSO metadata and se
 | Recommended exception user | We recommend adding at least one trusted admin as an exception user before activating SSO. This helps prevent account lockout if the SSO configuration is incorrect. |
 
 <Cards>
-  <Card title="About SSO authentication" href="https://support.appsflyer.com/hc/articles/27434547337617-About-SSO-authentication">
+  <Card title="About SSO authentication" href="/docs/sso-authentication-overview-and-faq">
     Learn about SSO authentication and find answers to FAQs.
   </Card>
-  <Card title="Managing exception users" href="https://support.appsflyer.com/hc/articles/47096696016529/">
+  <Card title="Managing exception users" href="/docs/manage-exception-users-for-sso/">
     Learn about managing exception users for SSO.
   </Card>
 </Cards>

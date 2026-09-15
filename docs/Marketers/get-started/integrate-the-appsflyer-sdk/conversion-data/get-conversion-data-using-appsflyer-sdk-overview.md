@@ -25,5 +25,5 @@ The AppsFlyer SDK returns conversion data using the following:
 
 - `onConversionDataSuccess`: User Acquisition (UA) and re-attribution conversions  - Android: [onConversionDataSuccess](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerconversionlistener#onconversiondatasuccess)
   - iOS: [onConversionDataSuccess](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlibdelegate#onconversiondatasuccess)
-  - Unity: [loadConversionData](https://support.appsflyer.com/hc/articles/4412863162897#get-conversion-data)
+  - Unity: loadConversionData
 - `onAppOpenAttribution`: For re-engagement conversions

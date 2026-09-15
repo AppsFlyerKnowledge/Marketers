@@ -18,7 +18,7 @@ An analytics partner account in AppsFlyer is a specialized account for analytics
 
 1. **Create a new PID via advertiser invitation:**
 
-Analytics partner accounts (and PID creation) can only be initiated through an advertiser’s invitation. Share this [link](https://support.appsflyer.com/hc/articles/4410395957521#invite-new-partners-to-appsflyer) with your advertiser and ask them to send you an invitation.
+Analytics partner accounts (and PID creation) can only be initiated through an advertiser’s invitation. Share this [link](/docs/set-up-an-integrated-partner#invite-new-partners-to-appsflyer) with your advertiser and ask them to send you an invitation.
 
 2. **Complete registration:**
 

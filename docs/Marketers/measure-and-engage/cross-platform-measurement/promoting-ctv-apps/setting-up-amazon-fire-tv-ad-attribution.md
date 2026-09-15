@@ -14,13 +14,13 @@ Requirements:
 
 1. [Develop an Amazon Fire TV app.](https://developer.amazon.com/docs/fire-tv/getting-started-developing-apps-and-games.html)
 2. [Publish your app in the Amazon Appstore](https://developer.amazon.com/apps-and-games).
-3. [Set up attribution](https://support.appsflyer.com/hc/articles/207447023-Attributing-out-of-store-Android-markets-guide#setup-tasks) and viewing for your Amazon Fire TV app installs and in-app data.
+3. [Set up attribution](/docs/set-up-multi-store-android-attribution#setup-tasks) and viewing for your Amazon Fire TV app installs and in-app data.
 
 Use the single or multiple app set-up methods.
 
 | Set-up method | Description |
 | --- | --- |
-| [Single app](https://support.appsflyer.com/hc/articles/207447023-Setting-up-multi-store-Android-attribution#single-dashboard%E2%80%94apk-preparation) | View combined, out-of-store market results for a single app |
-| [Multiple apps](https://support.appsflyer.com/hc/articles/207447023-Setting-up-multi-store-Android-attribution#dashboard-per-store%E2%80%94apk-preparation) | - View individual, out-of-store market results for each app<br>   - For Amazon Fire ads: Amazon Appstore install data is associated with each app |
+| [Single app](/docs/set-up-multi-store-android-attribution#single-dashboard%E2%80%94apk-preparation) | View combined, out-of-store market results for a single app |
+| [Multiple apps](/docs/set-up-multi-store-android-attribution#dashboard-per-store%E2%80%94apk-preparation) | - View individual, out-of-store market results for each app<br />   - For Amazon Fire ads: Amazon Appstore install data is associated with each app |
 
 4. [Test the integration](/docs/testing-the-sdk-integration-for-marketers#testing-from-the-dashboard) using the Android SDK testing method in the AppsFlyer dashboard.

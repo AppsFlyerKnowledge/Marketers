@@ -15,11 +15,11 @@ The Enterprise-Grade Security Package brings together three key features that el
 
 | Feature | Standard package | Enterprise-Grade Security Package |
 | --- | --- | --- |
-| [Single sign on (SSO)](https://support.appsflyer.com/hc/articles/34053592094737-Advanced-security-package#accordion-item) | SSO login (existing customers only) | SSO SAML 2.0 with SCIM provisioning for automated user and role management |
-| [Token management](https://support.appsflyer.com/hc/articles/34053592094737-Advanced-security-package#multitoken-management-with-restrictions) | Manage up to 2 tokens per type (API, S2S, or OneLink) | Manage multiple tokens per type (up to 30) with granular permissions |
-| [Audit log access](https://support.appsflyer.com/hc/articles/34053592094737-Advanced-security-package#audit-log-api-and-extended-retention) | UI access only, 90 day retention data | UI and API access, 180-day data retention |
-| [User management based on roles (RBAC)](https://support.appsflyer.com/hc/articles/34053592094737-Advanced-security-package#multitoken-management-with-restrictions) | Up to 10 custom roles | Up to 50 custom roles |
-| [IP allowlist](https://support.appsflyer.com/hc/articles/34053592094737-Advanced-security-package#ip-allowlist) | IP Allow list for APIs | IP allowlist for Login and APIs for enhanced security |
+| [Single sign on (SSO)](/docs/enterprise-grade-security-package#accordion-item) | SSO login (existing customers only) | SSO SAML 2.0 with SCIM provisioning for automated user and role management |
+| [Token management](/docs/enterprise-grade-security-package#multitoken-management-with-restrictions) | Manage up to 2 tokens per type (API, S2S, or OneLink) | Manage multiple tokens per type (up to 30) with granular permissions |
+| [Audit log access](/docs/enterprise-grade-security-package#audit-log-api-and-extended-retention) | UI access only, 90 day retention data | UI and API access, 180-day data retention |
+| [User management based on roles (RBAC)](/docs/enterprise-grade-security-package#multitoken-management-with-restrictions) | Up to 10 custom roles | Up to 50 custom roles |
+| [IP allowlist](/docs/enterprise-grade-security-package#ip-allowlist) | IP Allow list for APIs | IP allowlist for Login and APIs for enhanced security |
 | 24/7 security monitoring | Included | Included |
 | Multi-factor authentication | Included | Included |
 
@@ -129,8 +129,8 @@ By syncing users via SCIM, you maintain full control over access permissions in 
 
 To start using SCIM provisioning in AppsFlyer, you need to:
 
-1. [Set up SSO](https://support.appsflyer.com/hc/articles/34053592094737-Advanced-security-package#sso-set-up)
-2. [Enable SCIM](https://support.appsflyer.com/hc/articles/34053592094737-Advanced-security-package#enable-scim)
+1. [Set up SSO](/docs/enterprise-grade-security-package#sso-set-up)
+2. [Enable SCIM](/docs/enterprise-grade-security-package#enable-scim)
 
 #### SSO set up
 
@@ -148,11 +148,11 @@ To set up SSO, you need to:
 
 To enable SCIM, there are a few steps that must be followed:
 
-- Follow the [idP configuration instructions](https://support.appsflyer.com/hc/articles/34053592094737-Advanced-security-package#idp-instruction-links)
-- Configure the [SCIM connections](https://support.appsflyer.com/hc/articles/34053592094737-Advanced-security-package#scim-connections)
-- Add the [SCIM Attributes](https://support.appsflyer.com/hc/articles/34053592094737-Advanced-security-package#scim-attributes)
-- Add [roles](https://support.appsflyer.com/hc/articles/34053592094737-Advanced-security-package#roles)
-- Add [external namespace](https://support.appsflyer.com/hc/articles/34053592094737-Advanced-security-package#external-namespace)
+- Follow the [idP configuration instructions](/docs/enterprise-grade-security-package#idp-instruction-links)
+- Configure the [SCIM connections](/docs/enterprise-grade-security-package#scim-connections)
+- Add the [SCIM Attributes](/docs/enterprise-grade-security-package#scim-attributes)
+- Add [roles](/docs/enterprise-grade-security-package#roles)
+- Add [external namespace](/docs/enterprise-grade-security-package#external-namespace)
 
 #### IdP instruction links
 
@@ -172,13 +172,13 @@ In the SCIM connections, the following fields must be filled in:
 
 | **Attribute** | **Type** | **Required** | **Field name** | **External namespace** | **Description** |
 | --- | --- | --- | --- | --- | --- |
-| Role | String | ✅ | role | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | - Assign a predefined or custom role to the user.<br>- See below for the list of AppsFlyer roles that must be entered |
+| Role | String | ✅ | role | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | - Assign a predefined or custom role to the user.<br />- See below for the list of AppsFlyer roles that must be entered |
 | Allow access to all future apps | Boolean | ❌ | allowAccessToAllFutureApps | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | If enabled, the user will be granted access to new apps automatically. |
 | Allowed App IDs | String | ❌ | appIDs | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | Comma-separated list of app IDs. Leave empty for all apps or set to "None" for no apps. |
 
 #### Roles
 
-The roles must match the [AppsFlyer roles](/docs/user-management#roles-tab). The table below shows the current AppsFlyer roles and their values. Custom roles can be added. For JumpCloud, see the [limitations](https://support.appsflyer.com/hc/articles/34053592094737-Advanced-security-package#limitations) below.
+The roles must match the [AppsFlyer roles](/docs/user-management#roles-tab). The table below shows the current AppsFlyer roles and their values. Custom roles can be added. For JumpCloud, see the [limitations](/docs/enterprise-grade-security-package#limitations) below.
 
 | **Display name** | **Value** |
 | --- | --- |

@@ -15,7 +15,7 @@ The AppsFlyer iOS SDK V6:
 - Provides app attribution and event reporting functionality to iOS mobile apps.
 - Includes significant API method changes from previous versions.
 
-For full information about the SDK V6, and to integrate it into a new app that does not have an earlier version of the AppsFlyer SDK, read our [iOS SDK integration guide for marketers](https://support.appsflyer.com/hc/articles/207032126).
+For full information about the SDK V6, and to integrate it into a new app that does not have an earlier version of the AppsFlyer SDK, read our [iOS SDK integration guide for marketers](/docs/sdk-integration-overview).
 
 ## Update to iOS SDK V6
 
@@ -249,14 +249,14 @@ extension AppDelegate: AppsFlyerLibDelegate {
 
 A source app is an app that participates in ad campaigns by displaying ads signed by an ad network. Configuring your app to display ads is not within the scope of the AppsFlyer SDK. To configure, you must follow the [iOS instructions](https://developer.apple.com/documentation/storekit/skadnetwork/configuring_the_participating_apps).
 
-For configuring the advertised app, the AppsFlyer [SKAdNetwork Solution](https://support.appsflyer.com/hc/articles/360011420698) uses the SKAdNetwork to provide advertisers and ad networks with LTV analytics, reports, and postbacks, while maintaining user privacy. On launching the app for the first time, the AppsFlyer platform, using the configuration set by the marketer, instructs the SDK how to set the SKAdNetwork conversion value.
+For configuring the advertised app, the AppsFlyer [SKAdNetwork Solution](/docs/skadnetwork-skan-solution-guide) uses the SKAdNetwork to provide advertisers and ad networks with LTV analytics, reports, and postbacks, while maintaining user privacy. On launching the app for the first time, the AppsFlyer platform, using the configuration set by the marketer, instructs the SDK how to set the SKAdNetwork conversion value.
 
-To use the [SKAdNetwork Solution](https://support.appsflyer.com/hc/articles/360011420698):
+To use the [SKAdNetwork Solution](/docs/skadnetwork-skan-solution-guide):
 
 - The developer does nothing.
 - AppsFlyer SDK automatically calls the necessary SKAdNetwork APIs, meaning `registerAppForAdNetworkAttribution()` and `updateConversionValue()`. The developer must not call them.
 - Don't allow other SDKs to call SKAdNet APIs. Doing so can delay iOS in sending the postback to AppsFlyer and change the conversion value which we use to populate the SKAdNetwork dashboard with user quality measurement data as configured by the marketer in the dashboard.
-- The marketer needs to configure SKAdNetwork measurement [in AppsFlyer](https://support.appsflyer.com/hc/articles/360011420698).
+- The marketer needs to configure SKAdNetwork measurement [in AppsFlyer](/docs/skadnetwork-skan-solution-guide).
 
 There is no other action or registration process required by either the developer or the marketer in the App Store.
 
@@ -282,7 +282,7 @@ The AppsFlyer iOS SDK V6 has some API name changes. See the following table to c
 
 The following is required if push notification integration is already implemented.
 
-Follow the [push notification instructions](https://support.appsflyer.com/hc/articles/207364076-Measuring-Push-Notification-Re-Engagement-Campaigns) to ensure you have push notifications integrated using the handlePushNotificationData method.
+Follow the [push notification instructions](/docs/measuring-push-notification-re-engagement-campaigns) to ensure you have push notifications integrated using the handlePushNotificationData method.
 
 ## Plugins
 
@@ -290,7 +290,7 @@ The following V6 plugins are available:
 
 <Accordion title="Unity">
 
-The AppsFlyer [Unity V6 plugin](https://support.appsflyer.com/hc/articles/360007314277) helps app owners and developers support iOS 14, providing app attribution and event reporting functionality to Android and iOS mobile apps developed on the Unity development platform. The plugin is functionally equivalent to the AppsFlyer iOS and Android SDKs.
+The AppsFlyer Unity V6 plugin helps app owners and developers support iOS 14, providing app attribution and event reporting functionality to Android and iOS mobile apps developed on the Unity development platform. The plugin is functionally equivalent to the AppsFlyer iOS and Android SDKs.
 
 To update your plugin from an earlier version, see our guides on updating to the Unity plugin V6:
 

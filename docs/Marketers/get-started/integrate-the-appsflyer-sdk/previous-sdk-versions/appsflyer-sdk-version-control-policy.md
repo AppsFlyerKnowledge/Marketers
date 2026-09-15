@@ -40,10 +40,10 @@ Once a version of the SDK has reached its end-of-support date, AppsFlyer servers
 Since adoption takes time, it is **highly recommended** that your developer upgrade to the latest SDK version well in advance of the end-of-support date.
 
 <Cards>
-  <Card title="AppsFlyer Android SDK release notes" href="https://support.appsflyer.com/hc/articles/115001256006">
+  <Card title="AppsFlyer Android SDK release notes" href="/docs/appsflyer-android-sdk-release-notes">
     View release notes and updates for the Android SDK.
   </Card>
-  <Card title="AppsFlyer iOS SDK release notes" href="https://support.appsflyer.com/hc/articles/115001224823">
+  <Card title="AppsFlyer iOS SDK release notes" href="/docs/appsflyer-ios-sdk-release-notes">
     View release notes and updates for the iOS SDK.
   </Card>
 </Cards>

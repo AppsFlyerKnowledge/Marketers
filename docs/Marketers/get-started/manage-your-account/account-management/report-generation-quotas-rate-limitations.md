@@ -16,7 +16,7 @@ The quota limits the number of reports that can be generated per day per report 
 
 | Data delivery tool | Quota |
 | --- | --- |
-| Pull API aggregate | - Up to 2 days in the date range:<br>  - Maximum of 1 call per minute per app per report<br>- 3+ days date range, calls are limited as follows: <br>  - Maximum 120 calls per day, per account<br>  - 24 calls per day, per app |
+| Pull API aggregate | - Up to 2 days in the date range:<br />  - Maximum of 1 call per minute per app per report<br />- 3+ days date range, calls are limited as follows: <br />  - Maximum 120 calls per day, per account<br />  - 24 calls per day, per app |
 | Aggregated export data page | Unlimited |
 | Master API | Unlimited |
 | Cohort API | 60 calls per minute per account |
@@ -45,10 +45,10 @@ For ease of understanding, see the FAQ that follows the tables.
 
 Ad networks can pull the following postback report types:
 
-| Postback group | Report type<br>(each report type has a separate quota) | App-level daily quota | Account-level daily quota |
+| Postback group | Report type<br />(each report type has a separate quota) | App-level daily quota | Account-level daily quota |
 | --- | --- | --- | --- |
-| Postbacks for attribution | - Installs<br>- Retargeting conversions | 24 | 120 |
-| Postbacks for In-app events | - In-app events<br>- In-app events retargeting | 12 | 60 |
+| Postbacks for attribution | - Installs<br />- Retargeting conversions | 24 | 120 |
+| Postbacks for In-app events | - In-app events<br />- In-app events retargeting | 12 | 60 |
 
 #### FAQ
 
@@ -79,7 +79,7 @@ No. Agencies and advertisers have separate Pull API quotas. Agency-generated rep
 #### See also
 
 <Cards>
-  <Card title="Data availability windows" href="https://support.appsflyer.com/hc/articles/4415473374865">
+  <Card title="Data availability windows" href="/docs/data-availability-windows">
     Learn more about data availability windows and retention periods.
   </Card>
 </Cards>

@@ -11,7 +11,7 @@ Run custom DCR queries in real time on your attribution data in the AppsFlyer sy
 Dynamic Query gives you the ability to run ad hoc, custom queries on your DCR data in real time to answer your specific marketing questions quickly and efficiently.
 
 - Incorporating the power and flexibility of SQL, it allows you to perform advanced research and complex calculations that can't be accomplished in any other way. With Dynamic Query, you can bring your business logic to data that would otherwise be inaccessible.
-- In addition, Dynamic Query makes it possible to obtain efficient answers to one-time or occasional questions without the need to set up reports. (Of course, [traditional DCR reports](https://support.appsflyer.com/hc/articles/5415945483921) are still the right solution for ongoing data retrieval and ingestion.)
+- In addition, Dynamic Query makes it possible to obtain efficient answers to one-time or occasional questions without the need to set up reports. (Of course, [traditional DCR reports](/docs/data-clean-room-working-with-reports) are still the right solution for ongoing data retrieval and ingestion.)
 
 Dynamic Query is available to **all DCR customers,** giving you the ability to run queries and preview the results without using credits from your DCR package. You'll only be charged credits if you decide to download the full results. In this way, you can be sure you've set up your queries correctly and that you'll get the answers you need before you incur any charges.
 
@@ -30,7 +30,7 @@ Dynamic Query allows you to perform custom queries on the following data sources
 
 - Your attribution data in the AppsFlyer system
   - [Learn more](/docs/data-clean-room-dynamic-query#querying-attribution-data) about attribution data tables and how to query them
-- [Custom sources](https://support.appsflyer.com/hc/articles/5041487011601) you've set up in the DCR
+- [Custom sources](/docs/data-clean-room-working-with-sources) you've set up in the DCR
 
 You can query these sources individually, or [combine 2 or more](/docs/data-clean-room-dynamic-query#combining-sources) using **JOIN** or **UNION** statements. This flexibility makes Dynamic Query useful in a variety of scenarios, for example:
 
@@ -41,7 +41,7 @@ Based on the types of sources used in a query, [rules are applied](/docs/data-cl
 
 > 📘 Note
 >
-> Currently, Dynamic Query does not query attribution data or return results from Meta (Facebook, Instagram, etc.) To query this data, set up [DCR reports](https://support.appsflyer.com/hc/articles/5415945483921).
+> Currently, Dynamic Query does not query attribution data or return results from Meta (Facebook, Instagram, etc.) To query this data, set up [DCR reports](/docs/data-clean-room-working-with-reports).
 
 ### Preserving privacy
 

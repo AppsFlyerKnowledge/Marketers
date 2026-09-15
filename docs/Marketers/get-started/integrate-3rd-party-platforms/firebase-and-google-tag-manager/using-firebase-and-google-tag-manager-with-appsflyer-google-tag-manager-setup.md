@@ -46,7 +46,7 @@ Below is a screenshot from GTM UI. It shows the event parameter's final configur
 >
 > For iOS, an additional Event Parameter should be configured. Follow the same flow as listed above. Create a variable and name it "Apple App ID". In the Event Parameter field, enter "apple\_app\_id" and save.
 
-The next step is to create and set AppsFlyer ID and Dev Key variables inside the app. This step is discussed in the [Sending Events](https://support.appsflyer.com/hc/articles/4410481550609#configuring-events-in-the-app) Section.
+The next step is to create and set AppsFlyer ID and Dev Key variables inside the app. This step is discussed in the [Sending Events](/docs/using-firebase-and-google-tag-manager-with-appsflyer-sending-installs-and-events#configuring-events-in-the-app) Section.
 
 </Tab>
 <Tab title="Revenue and Price">

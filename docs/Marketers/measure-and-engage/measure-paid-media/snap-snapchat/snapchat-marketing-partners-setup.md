@@ -8,7 +8,7 @@ At a glance: Integrate with Snapchat marketing partners to measure campaigns you
 
 Follow the steps below to configure your campaigns with any one of Snapchat Marketing Partners.
 
-* Activate [Snapchat attribution](https://support.appsflyer.com/hc/articles/211011983).
+* Activate [Snapchat attribution](/docs/snapchat-advanced-srn-integration-setup).
 * In the Snapchat **Business Manager** dashboard, copy the **Snap Account ID** highlighted below in green.
 
 ![snapchat-dashboard.png](https://files.readme.io/4d943f14633d51b7c43408616e8e771c45c8555400efb1e6c74eb5fbfd696084-4417687661841.png)
@@ -35,7 +35,7 @@ Select **Events attributed to any partner or organic** to have your entire user 
 ### In-app events
 
 1. To send in-app event postbacks to the Snapchat marketing partner you're configuring, toggle the In-App Events Postback to **ON**.
-2. Individually add the in-app events (SDK events) you want to send to the partner and [map them as required.](https://support.appsflyer.com/hc/articles/208439256-In-App-Events-Postback-Configuration#event-mapping)
+2. Individually add the in-app events (SDK events) you want to send to the partner and [map them as required.](/docs/in-app-event-postback-configuration#event-mapping)
 
 > ❗️ Important!
 >
@@ -44,7 +44,7 @@ Select **Events attributed to any partner or organic** to have your entire user 
 ### See also
 
 <Cards>
-  <Card title="Snapchat and AppsFlyer SKAdNetwork interoperation" href="https://support.appsflyer.com/hc/articles/360017604077">
+  <Card title="Snapchat and AppsFlyer SKAdNetwork interoperation" href="/docs/skan-interoperation-with-snapchat">
     Learn about the interoperation between Snapchat and AppsFlyer for SKAdNetwork.
   </Card>
 </Cards>

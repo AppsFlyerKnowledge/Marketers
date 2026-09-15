@@ -39,7 +39,7 @@ Connect to Aura from Unity by activating and setting parameters in the Integrati
    - **Disable**: View-through installs from the partner are not attributed.
 3. **Default postbacks** are sent to Aura from Unity for:
    - **Installs**: Postbacks are sent every time a user installs the app. Choose if you want to send postbacks for users attributed to Aura from Unity or all users, including organic installs.
-   - **Rejected installs**: With **Protect360**, postbacks are sent when an [install is rejected due to fraud](https://support.appsflyer.com/hc/articles/115004744123). Only users attributed to Aura from Unity are reported.
+   - **Rejected installs**: With **Protect360**, postbacks are sent when an [install is rejected due to fraud](/docs/rejected-attribution-postbacks-to-integrated-partners). Only users attributed to Aura from Unity are reported.
 4. **In-app events settings**: To send postbacks, map your in-app event IDs to Aura from Unity's in-app IDs. Configure the parameters as follows:
    - Enable **In-app event postbacks**.
    - Sending option: Select if you want to send **Only events attributed to this partner** or **Events attributed to any partners**, including organic installs.
@@ -47,25 +47,25 @@ Connect to Aura from Unity by activating and setting parameters in the Integrati
 
 | Setting name | Description |
 | --- | --- |
-| SDK event name | Event name received by AppsFlyer from:<br>- SDK integrated into the app<br>- Server-to-server events<br>**Tip:** If a needed event isn't on the list, perform a non-organic installation on a device, then check again. |
-| Partner event identifier | Unique event name or ID as defined by Aura from Unity.<br>Choose an event name (from the drop-down list) that most closely matches the event. |
-| Send revenue | [Default] **Not enabled:** sends all in-app parameters to Aura from Unity, except the revenue parameter (`af_revenue`).<br>**Enabled**: sends all in-app parameters including, when available, the revenue amount. |
+| SDK event name | Event name received by AppsFlyer from:<br />- SDK integrated into the app<br />- Server-to-server events<br />**Tip:** If a needed event isn't on the list, perform a non-organic installation on a device, then check again. |
+| Partner event identifier | Unique event name or ID as defined by Aura from Unity.<br />Choose an event name (from the drop-down list) that most closely matches the event. |
+| Send revenue | [Default] **Not enabled:** sends all in-app parameters to Aura from Unity, except the revenue parameter (`af_revenue`).<br />**Enabled**: sends all in-app parameters including, when available, the revenue amount. |
 
 ### Attribution link tab
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](https://support.appsflyer.com/hc/articles/115005248543-OneLink-overview). [Learn more about attribution link structure and parameters](https://support.appsflyer.com/hc/articles/207447163). **To generate an attribution link,** follow [these instructions](https://support.appsflyer.com/hc/articles/4410395957521#attribution-link-tab).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide). [Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters). **To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 ### Cost tab
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](https://support.appsflyer.com/hc/articles/207040526-Ad-cost-measurement-guide#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
 **To enable the cost API**:
 
-- Follow [these integration instructions](https://support.appsflyer.com/hc/articles/360008850257#enable-cost-api).
+- Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
 
-[View your cost API status](https://support.appsflyer.com/hc/articles/360008850257#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
-For the full list of partners supporting cost data [go here](https://support.appsflyer.com/hc/articles/207040526#ad-networks-supporting-cost-api).
+For the full list of partners supporting cost data [go here](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api).
 
 ### Ad revenue tab
 

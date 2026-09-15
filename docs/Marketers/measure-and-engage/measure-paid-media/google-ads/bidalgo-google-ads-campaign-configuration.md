@@ -2,14 +2,13 @@
 title: "Bidalgo - Google Ads—Campaign configuration"
 excerpt: "Learn how to set up and configure the Bidalgo integration with Google Ads in AppsFlyer to scale your app growth using AI solutions."
 ---
-Bidalgo, an AppsFlyer integrated partner, is a leading provider of Artificial Intelligence solutions to help app marketers scale their growth.
+**At a glance:** Bidalgo, an AppsFlyer integrated partner, is a leading provider of Artificial Intelligence solutions to help app marketers scale their growth.
 
 ## Set up Bidalgo integration
 
-**Prerequisite:** Before setting up the integration, make sure you contact the partner and open an account with them.
+**Prerequisite:** Before setting up the integration, make sure you contact the partner and open an account with them.
 
-<Tabs>
-<Tab title="New integration">
+**New integration:**
 
 1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
 2. Select the relevant app.
@@ -17,19 +16,20 @@ Bidalgo, an AppsFlyer integrated partner, is a leading provider of Artificial In
 4. In the **Integration** tab, turn on the **Activate partner** toggle. Keep it on as long as you work with Bidalgo.
 5. Configure remaining tabs as needed below.
 
-</Tab>
-<Tab title="Edit existing integration">
+**Edit existing integration:**
 
 In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations** tab, search for the partner, and make your changes.
 
-</Tab>
-</Tabs>
-
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > The Google Ads Customer ID must be entered **without** hyphens.
 
+
 6. From your **Google Ads** account, copy the Customer ID (without hyphens) from the top left-hand corner and paste it into the AppsFlyer **Ads Customer ID** parameter as shown in the following screenshots.
+
+[![](https://support.appsflyer.com/hc/article_attachments/360002379489)](https://support.appsflyer.com/hc/article_attachments/360002379489)
 
 7. Enter the number in the **Google Ads Customer ID** field.
 
@@ -43,7 +43,9 @@ In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations**
 
 4. Click **Save**.
 
-> 🚧 Important Note
+> 📘 **Note**
+>
+> #### Important Note
 >
 > * Disabling attribution for Google Ads prevents sending postbacks to Google Ads Partners.
 > * You can configure multiple Google Ads accounts (CID) to send postbacks (step 5) by separating each CID with a comma.

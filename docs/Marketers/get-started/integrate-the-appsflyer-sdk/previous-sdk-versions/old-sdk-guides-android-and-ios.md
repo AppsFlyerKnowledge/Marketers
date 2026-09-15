@@ -10,11 +10,11 @@ As time moves on, so do our SDK integration guides. They are replaced by newer, 
 
 In this article, you can find the SDK integration guides of AppsFlyer SDKs from 2016 or even beforehand, in PDF form.
 
-**If your apps still use one of these very (very) old SDKs, we strongly urge you to upgrade to the newest SDK version**, for [Android](https://support.appsflyer.com/hc/articles/207032126) or for [iOS](https://support.appsflyer.com/hc/articles/207032126).
+**If your apps still use one of these very (very) old SDKs, we strongly urge you to upgrade to the newest SDK version**, for [Android](/docs/sdk-integration-overview) or for [iOS](/docs/sdk-integration-overview).
 
 > 👍 Tip
 >
-> By upgrading from an old SDK version to the new version you can get **numerous improvements, new features, and bug fixes**. It also helps protect you from fraudsters and ensures you can be [GDPR-compliant](https://support.appsflyer.com/hc/articles/360000811585).
+> By upgrading from an old SDK version to the new version you can get **numerous improvements, new features, and bug fixes**. It also helps protect you from fraudsters and ensures you can be GDPR-compliant.
 >
 > We recommend updating the SDK version at least every 6 months.
 
@@ -41,7 +41,7 @@ Set out below are the links to the previous SDK Integration Guides for Android:
 
 ![ios_logo.png](https://files.readme.io/72c2f017636f5ed5b14aa63a83b03062dcd919baffdb2f786423bed1291b93af-360001319257.png)
 
-Click [here](https://support.appsflyer.com/hc/articles/207032126), for our latest iOS SDK Integration Guide.
+Click [here](/docs/sdk-integration-overview), for our latest iOS SDK Integration Guide.
 
 Set out below are links to the previous SDK Integration Guides for iOS:
 

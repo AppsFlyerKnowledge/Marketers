@@ -6,7 +6,7 @@ With AppsFlyer cross-platform impression URLs, you can attribute mobile app inst
 
 ![Diagram of the CTV-to-mobile app attribution flow](https://files.readme.io/401bcb083e1cc618794cb302668f7271cf825a5a6045ff10055e0164baf423a1-19774176963473.jpg)
 
-CTV-to-mobile app view-through attribution uses a [OneLink impression URL](https://support.appsflyer.com/hc/articles/6966260647185#setup) based on a cross-platform OneLink template (with a template ID) created by the advertisers. This lets advertisers group multiple apps from different platforms (for example, both Android and iOS apps) using a single URL.
+CTV-to-mobile app view-through attribution uses a [OneLink impression URL](/docs/set-up-cross-platform-links-for-multi-device-campaigns#setup) based on a cross-platform OneLink template (with a template ID) created by the advertisers. This lets advertisers group multiple apps from different platforms (for example, both Android and iOS apps) using a single URL.
 
 When users view the ad on CTV, you send AppsFlyer the impression URL in real time.
 
@@ -26,8 +26,8 @@ AppsFlyer sends postbacks to you after each conversion.
 
 **To set up CTV-to-mobile app view-through attribution with an advertiser**:
 
-1. Make sure you're an [AppsFlyer integrated partner](https://support.appsflyer.com/hc/articles/360001300998), that you have postbacks properly set up, and that you've [tested your CTV-to-mobile app integration](https://support.appsflyer.com/hc/articles/8528418936977#test-partner-integration) with AppsFlyer.
-2. Make sure the URL has the [mandatory parameters](https://support.appsflyer.com/hc/articles/8528418936977#parameters), as well as any other parameters you want.
+1. Make sure you're an [AppsFlyer integrated partner](/docs/getting-started-onboarding-guide-for-ad-networks), that you have postbacks properly set up, and that you've [tested your CTV-to-mobile app integration](/docs/ctv-to-mobile-app-view-through-attribution-for-ad-networks#test-partner-integration) with AppsFlyer.
+2. Make sure the URL has the [mandatory parameters](/docs/ctv-to-mobile-app-view-through-attribution-for-ad-networks#parameters), as well as any other parameters you want.
 3. Send AppsFlyer the user IP address and user agent. These are required for CTV-to-mobile app view-through attribution. They can be sent either:
    1. As the `af_ip` and `af_ua` parameters on the impression URL.
    2. As `<X-Forwarded-For>` and `<User-Agent>` parameters in the headers of the request.
@@ -52,7 +52,7 @@ The following parameters are used to provide attribution data and measurement to
 
 | Parameter | Mandatory | Description |
 | --- | --- | --- |
-| `template_id` | **✓** | The ID of the [OneLink template](https://support.appsflyer.com/hc/articles/207032246). The template contains basic prediction settings for the advertiser apps and is the basis for creating other links. Note: Never encode the `template_id` value. |
+| `template_id` | **✓** | The ID of the [OneLink template](/docs/create-a-onelink-template). The template contains basic prediction settings for the advertiser apps and is the basis for creating other links. Note: Never encode the `template_id` value. |
 | `pid` | **✓** | The partner identifier, allocated by AppsFlyer to the media source (ad network) placing the ad. |
 | `af_xplatform` | **✓** | - Set by the advertiser to indicate whether the link supports cross-platform attribution.<br />- Values: true/false |
 | `af_xplatform_vt_lookback` | **-** | Configurable window that indicates the number of hours following the impression during which the app install can be attributed to the impression. Available parameter values: 1h - 72h (hours). The default is 24h. |
@@ -61,7 +61,7 @@ The following parameters are used to provide attribution data and measurement to
 | `af_source_platform` | - | - A set list of values to represent the operating system where the impression occurs.<br />- Values:<br />  - android<br />  - ios<br />  - tizen<br />  - webos<br />  - smartcast<br />  - roku<br />  - windowsphone<br />  - vidaa<br />  - PlayStation<br />  - website |
 | `af_source_device_category` | - | - A set list of values to represent the device type where the impression occurs.<br />  - tv<br />  - mobile_phone<br />  - desktop<br />  - tablet<br />  - set_top_box<br />  - games_console<br />  - unknown_device_category<br />  - media_player |
 
-Other parameters that can be added to the URL can be found in the [attribution link structure and parameters article](https://support.appsflyer.com/hc/articles/207447163).
+Other parameters that can be added to the URL can be found in the [attribution link structure and parameters article](/docs/about-link-structure-and-parameters).
 
 ### Traits and limitations
 

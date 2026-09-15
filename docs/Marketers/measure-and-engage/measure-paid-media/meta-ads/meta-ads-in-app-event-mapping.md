@@ -2,11 +2,11 @@
 title: "Meta ads in-app event mapping"
 excerpt: "Send your app's rich in-app events from AppsFlyer to Meta ads to utilize advanced optimization and build Custom and Lookalike Audience segments."
 ---
-Send your app's rich in-app events from AppsFlyer to Meta ads.
+**At a glance:** Send your app's rich in-app events from AppsFlyer to Meta ads.
 
 ## Meta in-app events mapping
 
-Advertisers map their in-app events, SDK or Servers-to-servers, to Meta predefined events. Advertisers can also send Meta postbacks about each [app launch](https://support.appsflyer.com/hc/articles/360000520785) or any known [app uninstall](https://support.appsflyer.com/hc/articles/4408933557137#mapping-the-uninstall-event).
+Advertisers map their in-app events, SDK or Servers-to-servers, to Meta predefined events. Advertisers can also send Meta postbacks about each [app launch](/docs/measure-sessions) or any known [app uninstall](/docs/measure-uninstalls#mapping-the-uninstall-event).
 
 This enables advertisers to utilize Meta's advanced optimization capabilities, as well as build Custom and Lookalike Audience segments.
 
@@ -14,17 +14,17 @@ This enables advertisers to utilize Meta's advanced optimization capabilities, a
 
 Meta ads offers a [wide range of events](https://developers.facebook.com/docs/app-events/getting-started-app-events-android#event-names) that are already predefined and can be mapped.
 
-Find [here](https://support.appsflyer.com/hc/articles/4410481112081) the list of **rich in-app events** that can be sent to Meta with additional parameters providing **extra information about the quality of events**.
+Find [here](/docs/in-app-events-event-structure) the list of **rich in-app events** that can be sent to Meta with additional parameters providing **extra information about the quality of events**.
 
-Learn more about [mapping events on Meta](https://support.appsflyer.com/hc/articles/207033826-Facebook-Ads-integration-setup#inapp-event-mapping).
+Learn more about [mapping events on Meta](/docs/meta-ads-integration-setup#inapp-event-mapping).
 
-![In-app_event_postbacks_en-us.png](https://files.readme.io/ea80246ce8005c4150c70790aefb26aa6a73b5b5ae0eb07f90dcad8b50f2f1a8-37750374219153.png)
+[![In-app_event_postbacks_en-us.png](https://files.readme.io/ea80246ce8005c4150c70790aefb26aa6a73b5b5ae0eb07f90dcad8b50f2f1a8-37750374219153.png)](https://support.appsflyer.com/hc/article_attachments/37750374219153)
 
-> 📘 Note
->
-> There's no predefined event for sending uninstalls to Meta ads. To send uninstalls, use a [custom event](https://support.appsflyer.com/hc/articles/4410480904081#custom-inapp-events-mapping).
+Note that there's no predefined event for sending uninstalls to Meta ads. To send uninstalls, use a [custom event](/docs/meta-ads-in-app-event-mapping#custom-inapp-events-mapping).
 
 Below is the list of other predefined Meta events that don't have additional parameters:
+
+
 
 | Meta event identifier | Description | Recommended AppsFlyer SDK name |
 | --- | --- | --- |
@@ -34,24 +34,27 @@ Below is the list of other predefined Meta events that don't have additional par
 | FindLocation | When a person finds one of your locations via web or app, with an intention to visit. For example, searching for a product and finding it at one of your local stores. | af\_find\_location |
 | Contact | A telephone or SMS, email, chat or other type of contact between a customer and your business. | af\_contact |
 | CustomizeProduct | The customization of products through a configuration tool or other application your business owns. | af\_customize\_product |
-| `Adimpression`—for Android<br />`Fb_mobile_purchase`—for iOS | Optimizes ad revenue on the Meta ads platform. [See details below](/docs/meta-ads-in-app-event-mapping#mapping-ad-revenue-data-for-campaign-optimization). | af\_ad\_revenue |
+| `Adimpression`—for Android  <br />`Fb_mobile_purchase`—for iOS | Optimizes ad revenue on the Meta ads platform. [See details below](#mapping-ad-revenue-data-for-campaign-optimization). | af\_ad\_revenue |
+
+
 
 ### Mapping ad revenue data for campaign optimization
 
 Meta ads can optimize your campaigns based on your ad revenue data. This is done by mapping the af\_ad\_revenue event to the following Meta ads event:
 
-| **Event name in AppsFlyer** | **Platform** | **Mapped to partner event** | **Meta ads optimization based on:** |
-| --- | --- | --- | --- |
-| af\_ad\_revenue | Android | Adimpression | Specific ad revenue |
-| iOS | fb\_mobile\_purchase | In-app purchases |
+
+
+<table><colgroup><col/><col/><col/><col/></colgroup><thead><tr><th><strong>Event name in AppsFlyer</strong></th><th><strong>Platform </strong></th><th><strong>Mapped to partner event</strong></th><th><strong>Meta ads optimization based on:</strong></th></tr></thead><tbody><tr><td rowspan="2"><br/>af_ad_revenue</td><td>Android</td><td>Adimpression</td><td>Specific ad revenue</td></tr><tr><td>iOS</td><td>fb_mobile_purchase</td><td>In-app purchases</td></tr></tbody></table>
+
+
 
 #### Availability limitations
 
-- Currently, optimization via the **Adimpression** event is available only for:
-  - Android apps. iOS apps can continue sending ad revenue data using the _fb\_mobile\_purchase_ event.
-  - Selected Meta ads accounts, as per Meta's criteria. When grayed out, [eligibility criteria may not be met](https://www.facebook.com/business/help/571188993373447?id=561906377587030).
-- The _af\_ad\_revenue_ event is available for plans with an [ROI360 advanced subscription](https://support.appsflyer.com/hc/articles/10515748254609-ROI360-cost-and-revenue-data) only. Additionally, you need the [impression-level via SDK ad revenue integration type](https://support.appsflyer.com/hc/articles/217490046-Ad-revenue-attribution-guide#integration-types-for-ad-revenue-attribution).
-  - Non-ROI360 plans can send ad revenue data using other event names.
+* Currently, optimization via the **Adimpression** event is available only for:
+  * Android apps. iOS apps can continue sending ad revenue data using the *fb\_mobile\_purchase* event.
+  * Selected Meta ads accounts, as per Meta's criteria. When grayed out, [eligibility criteria may not be met](https://www.facebook.com/business/help/571188993373447?id=561906377587030).
+* The *af\_ad\_revenue* event is available for plans with an [ROI360 advanced subscription](/docs/roi360-guide-cost-and-revenue-data) only. Additionally, you need the [impression-level via SDK ad revenue integration type](/docs/roi360-guide-ad-revenue-attribution#integration-types-for-ad-revenue-attribution).
+  * Non-ROI360 plans can send ad revenue data using other event names.
 
 ### Custom in-app events mapping
 
@@ -61,19 +64,26 @@ The event name and the event value (including the event parameters) configured i
 
 Note that you are able to [use these events to optimize your campaigns](https://www.facebook.com/business/help/2308889442692949?id=1716638325041491).
 
+[![](https://support.appsflyer.com/hc/article_attachments/37750368969233)](https://support.appsflyer.com/hc/article_attachments/37750368969233)
+
 ### Automatic parameter mapping with the custom event
 
 Through the AppsFlyer deep integration with Meta, many of the AppsFlyer standard SDK event parameters are automatically mapped to Meta's predefined parameters. For example, the **af\_revenue** parameter is converted to the **\_valueToSum** parameter in Meta, which allows you to send a revenue per event that can be measured and optimized in Meta.
 
-> 📘 Note
+> 📘 **Note**
 >
-> Automatic parameter mapping can differ between CUSTOM and predefined events.
+> #### Note
 >
-> For [predefined events](https://support.appsflyer.com/hc/articles/4410481112081), **af\_price** is mapped to **\_valueToSum** in some cases (for example, `fb_mobile_add_to_cart`). In other cases, **af\_revenue** is mapped to **\_valueToSum** (for example, in `fb_mobile_purchase`).
+> Automatic parameter mapping can differ between CUSTOM and predefined events.
+>
+> For [predefined events](/docs/in-app-events-event-structure), **af\_price** is mapped to **\_valueToSum** in some cases (for example, `fb_mobile_add_to_cart`). In other cases, **af\_revenue** is mapped to **\_valueToSum** (for example, in `fb_mobile_purchase`).
 >
 > For events mapped to CUSTOM, **af\_price** is always mapped to **fb\_price**, and **af\_revenue** to **\_valueToSum**.
 
+
 The following table details all the AppsFlyer event parameters, which when mapped through the CUSTOM event to Meta, are automatically mapped to Meta parameters.
+
+
 
 | AppsFlyer Parameter | Meta Parameter |
 | --- | --- |
@@ -120,11 +130,15 @@ The following table details all the AppsFlyer event parameters, which when mappe
 | af\_travel\_start | fb\_travel\_start |
 | af\_user\_score | fb\_user\_score |
 
+
+
 #### Predefined events automatic mapping to the `_valueToSum` parameter
 
 For predefined events, the Meta parameter `_valueToSum` is mapped either to the `af_price` or to the `af_revenue` parameters.
 
 The following table details this mapping for all predefined Meta events with the `_valueToSum` parameter:
+
+
 
 | **Meta event** | **\_valueToSum mapped to** |
 | --- | --- |
@@ -144,6 +158,8 @@ The following table details this mapping for all predefined Meta events with the
 | StartTrial | af\_price |
 | Subscribe | af\_revenue |
 
+
+
 ### Send complex in-app events to Meta ads
 
 As of September 2026, we recommend using the new `af_order_info` object to send complex in-app events – events with multiple items – to Meta Ads. This object lets advertisers share complex in-app events with multiple supported networks. For more information, see [Item-level order data for ad networks (af\_order\_info)](/docs/item-level-order-data-for-ad-networks-af-order-info).
@@ -156,26 +172,34 @@ As an alternative, you can still use a structured `af_content` array. Each objec
 
 If you do include `af_content_list`, do not also include `af_content_id` in the same event. Both parameters map to `fb_content_id`, and only one should be populated to prevent conflicts.
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > `fb_content_id` is important for product-level use cases such as matching events to catalog items for Advantage+ Catalog Ads and Dynamic Ads, product-level performance reporting, and product-based optimization signals. For general conversion optimization based on event count and value, campaigns work without it.
 
-#### Example, unified format compatible with Meta and TikTok
+> 📘 **Note**
+>
+> #### Example, unified format compatible with Meta and TikTok
+>
+> ```
+> {
+>   "af_revenue": 4.99,
+>   "af_currency": "USD",
+>   "af_order_id": "12345",
+>   "af_content": "[`{\"id\":\"ID1\",\"quantity\":\"1\"},{\"id\":\"ID2\",\"quantity\":\"1\"},{\"id\":\"ID3\",\"quantity\":\"2\"}`]"
+> }
+> ```
 
-```json
-{
-  "af_revenue": 4.99,
-  "af_currency": "USD",
-  "af_order_id": "12345",
-  "af_content": "[{\"id\":\"ID1\",\"quantity\":\"1\"},{\"id\":\"ID2\",\"quantity\":\"1\"},{\"id\":\"ID3\",\"quantity\":\"2\"}]"
-}
-```
 
 This format works for both Meta and TikTok. TikTok also reads `id` values from the `af_content` field, so a single payload is sufficient when postbacking to both networks.
 
-> ❗️ Important!
+> 📘 **Note**
+>
+> #### Important!
 >
 > If the `af_content` parameter exceeds 1,000 characters, AppsFlyer may send the event to Meta without the `fb_content` parameter. If `af_content_list` is also absent in that scenario, Meta receives no product identification data. Keep `af_content` under 1,000 characters for events that include many items.
+
 
 For more details about structuring complex in-app events, see the [In-app events: Overview](/docs/in-app-events-overview#what-are-complex-inapp-events-and-how-do-i-set-them-up) article.
 
@@ -183,23 +207,25 @@ For more details about structuring complex in-app events, see the [In-app events
 
 The following limits apply to [events you send to Meta ads](https://developers.facebook.com/docs/app-events/faq#limits):
 
-- The following characters are not allowed:
-  - Colon (:)
-  - Period (.)
-  - Non-Latin (English) character sets: As of January 12, 2020, Meta rejects Chinese characters. AppsFlyer has not tested other character sets, and you should use them only after verifying with Meta if they support them in postbacks.
-- Event names are case-sensitive. To avoid discrepancies, make sure you use the correct case in the event names for all media sources and app versions.
-- Maximum number of parameters: 25.
-- Length of event names and parameters: 2–40.
-- Maximum parameter length: 100 characters.
-- Maximum parameter length for the af\_content parameter: 1000 characters.
-- Characters permitted: Alphanumeric characters, underscores, hyphens, or spaces. Don't use non-Latin (English) characters. Using non-Latin letters results in inconsistent results.
+* The following characters are not allowed:
+  * Colon (:)
+  * Period (.)
+  * Non-Latin (English) character sets: As of January 12, 2020, Meta rejects Chinese characters. AppsFlyer has not tested other character sets, and you should use them only after verifying with Meta if they support them in postbacks.
+* Event names are case-sensitive. To avoid discrepancies, make sure you use the correct case in the event names for all media sources and app versions.
+* Maximum number of parameters: 25.
+* Length of event names and parameters: 2–40.
+* Maximum parameter length: 100 characters.
+* Maximum parameter length for the af\_content parameter: 1000 characters.
+* Characters permitted: Alphanumeric characters, underscores, hyphens, or spaces. Don't use non-Latin (English) characters. Using non-Latin letters results in inconsistent results.
 
 Considerations regarding in-app event naming:
 
-- Event names on AppsFlyer can be named the same as Meta event names (for example, fb\_price), however, these should not be sent as CUSTOM events to Meta.
-- **To keep on the safe side, refrain from naming events the same as Meta event names.**
-- To perform in-app events postback mapping with Meta, get events data from all sources, including organic.
+* Event names on AppsFlyer can be named the same as Meta event names (for example, fb\_price), however, these should not be sent as CUSTOM events to Meta.  
+  **To keep on the safe side, refrain from naming events the same as Meta event names.**
+* To perform in-app events postback mapping with Meta, get events data from all sources, including organic.
 
-> ❗️ Important!
+> 📘 **Note**
+>
+> #### Important!
 >
 > With the exception of the above parameters, AppsFlyer sends the CUSTOM events data **as is** to Meta. It is the responsibility of the app owner to verify the event data is according to Meta requirements, using valid Meta parameters (see the table above). Otherwise, these parameters aren't sent to Meta.

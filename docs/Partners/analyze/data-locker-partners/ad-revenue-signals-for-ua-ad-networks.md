@@ -14,7 +14,7 @@ The following activities need to be completed to access the Ad Revenue report in
 
 - Ad networks have to [onboard to Data Locker for Partners](/docs/data-locker-for-partners#set-up-data-locker).
 - Ad networks have to [configure the report output settings](/docs/ad-revenue-signals-for-ua-ad-networks#configure-the-report-output-settings) and [enable the Ad revenue report](/docs/ad-revenue-signals-for-ua-ad-networks#enable-the-ad-revenue-report).
-- Advertisers have to permit ad networks to view the report. [See advertiser instructions](https://support.appsflyer.com/hc/articles/24100803679761-ROI360-Sharing-ad-revenue-data-with-UA-partners#ua-signals-for-ad-networks)
+- Advertisers have to permit ad networks to view the report. [See advertiser instructions](/docs/share-ad-revenue-data-with-partners#ua-signals-for-ad-networks)
 
 ### Configure the report output settings
 
@@ -33,7 +33,7 @@ To configure the report output setting, follow the steps below:
 1. In the **Data Locker content** section select the **Ad revenue [daily]** report type.
 2. Click **Save connection**.
 3. Make sure that the advertiser permitted the Ad network to view the report.
-4. For instruction, see [Permit ad networks to get ad revenue data.](https://support.appsflyer.com/hc/articles/217490046-Ad-revenue-attribution-guide#permission-to-get-ad-revenue-data)
+4. For instruction, see [Permit ad networks to get ad revenue data.](/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data)
 
 ## Report specification
 
@@ -42,7 +42,7 @@ To configure the report output setting, follow the steps below:
 - Format: Data arrives in CSV format to the UA partner's S3 bucket.
 - Level: Contains device-level dimensions and metrics.
 - Data enrichment: Includes ad revenue data from mediation partners, and adds attribution data relevant to the UA ad network (that is cleaned of all dimensions irrelevant to the UA ad network).
-- Data freshness: [Daily, meaning data for Day 0 arrives on Day 1](https://support.appsflyer.com/hc/articles/360000310629-Data-freshness-and-time-zone-support#ad-revenue). Data is written daily at 17:00 [UTC time](https://support.appsflyer.com/hc/articles/360000310629-Data-freshness-and-time-zone-support#daily) to the h=23 of your Data Locker bucket.
+- Data freshness: [Daily, meaning data for Day 0 arrives on Day 1](/docs/about-data-freshness-and-timezone-support#ad-revenue). Data is written daily at 17:00 [UTC time](/docs/about-data-freshness-and-timezone-support#daily) to the h=23 of your Data Locker bucket.
 - Apps included: A single report contains the data of all apps for which advertisers have granted permission.
 - The reports include data about all conversion types: Installs, re-attributions, re-engagements, and reinstalls.
 - Currency: In USD. Event revenue is calculated to USD on the day the event occurred.
@@ -54,12 +54,12 @@ To configure the report output setting, follow the steps below:
 | --- | --- |
 | Version | Unix timestamp in second. Example: 1661315124 |
 | app\_id | App ID in the AppsFlyer platform |
-| install\_time | - Timestamp of install: YYYY-MM-DD HH:MM:SS<br><br>Example: 2020-08-16 11:22:33<br>- For iOS 14+ devices and non-consenting users, or if the advertiser has Advanced Privacy on, install time is rounded to the nearest hour. |
+| install\_time | - Timestamp of install: YYYY-MM-DD HH:MM:SS<br /><br />Example: 2020-08-16 11:22:33<br />- For iOS 14+ devices and non-consenting users, or if the advertiser has Advanced Privacy on, install time is rounded to the nearest hour. |
 | campaign, campaign\_id, adset\_name, adset\_id, ad\_name, ad\_name, ad\_id, site\_id | Only populated if UA is attributed to the partner receiving the data. |
-| idfa, idfv, advertising\_id | - The same device ID, like IDFA, IDFV, or advertiser\_id could display in multiple rows if there are more than one ad revenue monetization events.<br>- For iOS 14+ devices and non-consenting users, or if the advertiser has Advanced Privacy on, this does not display. |
+| idfa, idfv, advertising\_id | - The same device ID, like IDFA, IDFV, or advertiser\_id could display in multiple rows if there are more than one ad revenue monetization events.<br />- For iOS 14+ devices and non-consenting users, or if the advertiser has Advanced Privacy on, this does not display. |
 | platform | Device platform: iOS, Android, or Windows Mobile |
 | country | Country code using [ISO 3166 (alpha-2)](https://www.iso.org/iso-3166-country-codes.html) Example: US, CN |
-| original\_url | - For iOS 14+ devices and non-consenting users, or if the advertiser has Advanced Privacy on, this does not display.<br>- Only populated if UA is attributed to the partner receiving the data. |
+| original\_url | - For iOS 14+ devices and non-consenting users, or if the advertiser has Advanced Privacy on, this does not display.<br />- Only populated if UA is attributed to the partner receiving the data. |
 | ad\_unit |  |
 | placement |  |
 | mediation\_network |  |

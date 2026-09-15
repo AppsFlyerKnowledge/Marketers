@@ -4,7 +4,7 @@ excerpt: "Learn how to set up the advanced Self-Reporting Network (SRN) integrat
 ---
 TikTok for Business (tiktokglobal_int) is an advanced Self-Reporting Network (SRN) providing app owners the ability to measure click and view-based mobile attribution with AppsFlyer. This includes app installs coming from app and non-mobile TikTok campaigns.
 
-On January 30, 2023, the new TikTok for Business (Advanced SRN) integration `tiktokglobal_int` was added. The [[Legacy] TikTok for Business](https://support.appsflyer.com/hc/articles/360002254918) integration `bytedanceglobal_int` was gradually phased out and officially deprecated on March 20, 2024. TikTok handles the transition, and they will notify you when you can delete the old integration. To avoid any data loss, make sure to keep both integrations live during the transition phase. Learn more in the [bulletin](https://support.appsflyer.com/hc/articles/7925111265041).
+On January 30, 2023, the new TikTok for Business (Advanced SRN) integration `tiktokglobal_int` was added. The [Legacy] TikTok for Business integration `bytedanceglobal_int` was gradually phased out and officially deprecated on March 20, 2024. TikTok handles the transition, and they will notify you when you can delete the old integration. To avoid any data loss, make sure to keep both integrations live during the transition phase. Learn more in the [bulletin](/docs/bulletin-tiktok-for-business-advanced-srn).
 
 AppsFlyer supports measuring app activity for [non-app campaigns](/docs/tiktok-for-business-advanced-srn-integration-setup#measure-app-activity-for-nonapp-campaigns).
 
@@ -16,7 +16,7 @@ An Advanced SRN integration means that all traffic that includes an advertising 
 
 ## Set up TikTok for Business
 
-**Prerequisite:** Before setting up the integration, [contact the partner](https://support.appsflyer.com/hc/articles/9960361873809#contact-details) and open an account with them.
+**Prerequisite:** Before setting up the integration, [contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
 
 **To activate or edit the integration:**
 
@@ -29,7 +29,7 @@ An Advanced SRN integration means that all traffic that includes an advertising 
 
 > 📘 Note
 >
-> The turn on/turn off must be on [(activated)](https://support.appsflyer.com/hc/articles/360000844778) for as long as you work with the partner.
+> The turn on/turn off must be on [(activated)](/docs/partner-activation-deactivation) for as long as you work with the partner.
 
 5. Complete the configuration using the relevant tabs, as described below.
 
@@ -47,16 +47,16 @@ The **Integration** tab includes several sections, as described below.
 
 #### Activate partner
 
-To configure the integration, you will first need to turn on the **Activate partner** toggle. For more information about [activating and deactivating a partner](https://support.appsflyer.com/hc/articles/360000844778#activating-a-partner), see integrations.
+To configure the integration, you will first need to turn on the **Activate partner** toggle. For more information about [activating and deactivating a partner](/docs/partner-activation-deactivation#activating-a-partner), see integrations.
 
 #### Advanced Data Sharing
 
-For iOS apps only: Use **Advanced Data Sharing** (ADS) to control how AppsFlyer shares install, reinstall, and postback data with TikTok. Your control over data shared with the partner via postbacks and [reports](https://support.appsflyer.com/hc/articles/360006868017) depends on the Advanced Data Sharing (for iOS 14.5 and later) toggle state:
+For iOS apps only: Use **Advanced Data Sharing** (ADS) to control how AppsFlyer shares install, reinstall, and postback data with TikTok. Your control over data shared with the partner via postbacks and [reports](/docs/about-raw-data-identifier-restrictions) depends on the Advanced Data Sharing (for iOS 14.5 and later) toggle state:
 
 | Advanced Data Sharing: On | Advanced Data Sharing: Off |
 | --- | --- |
 | AppsFlyer shares all installs and reinstalls with TikTok. | AppsFlyer shares installs and reinstalls only for users who have opted in. |
-| Postbacks are sent according to your configuration:<br>- **All media sources, including organic**<br>- **This partner only** | Postbacks are sent according to the following templates:<br>- **Opted-in users:** Postbacks follow the regular template.<br>- **Opted-out users:** Postbacks follow the [Advanced Privacy template](/docs/advanced-privacy-guide-postback-macros-for-ad-networks). |
+| Postbacks are sent according to your configuration:<br />- **All media sources, including organic**<br />- **This partner only** | Postbacks are sent according to the following templates:<br />- **Opted-in users:** Postbacks follow the regular template.<br />- **Opted-out users:** Postbacks follow the [Advanced Privacy template](/docs/advanced-privacy-guide-postback-macros-for-ad-networks). |
 
 When activating the integration (`tiktokglobal_int`), the **Advanced Data Sharing** toggle is turned off by default.
 
@@ -90,7 +90,7 @@ Configure how to send postbacks for app **Installs**. For **Rejected installs** 
 - **This partner only** [Default]: Send postbacks only when the event is attributed to this partner, meaning the user who performed it came from this partner.
 - **All media sources including organic**: Send postbacks for events attributed to any partner and for organic events, meaning the user who performed it came from any media source. TikTok for Business recommends changing the selection to **All media sources including organic** for better optimization.
 
-For iOS apps only: Your control over data shared with the partner via postbacks and [reports](https://support.appsflyer.com/hc/articles/360006868017) depends on the **Advanced Data Sharing toggle (iOS 14.5+ and later)**.
+For iOS apps only: Your control over data shared with the partner via postbacks and [reports](/docs/about-raw-data-identifier-restrictions) depends on the **Advanced Data Sharing toggle (iOS 14.5+ and later)**.
 
 When migrating from the legacy integration (`bytedanceglobal_int`) and activating the new integration (`tiktokglobal_int`), the default selected state for postback installs is " **This partner only**," regardless of its state before the migration.
 
@@ -141,11 +141,11 @@ Setting the re-engagement click-through lookback window also determines the re-e
 
 When migrating from the legacy integration (`bytedanceglobal_int`) and activating the new integration (`tiktokglobal_int`), the **Re-engagement** toggle is turned off by default, regardless of its state before the migration. If your legacy integration has [retargeting campaigns](/docs/retargeting-attribution-guide), make sure to turn them on in the new integration to ensure continuity.
 
-Learn more about re-engagement [rules and windows](https://support.appsflyer.com/hc/articles/207033786-AppsFlyer-s-Retargeting-Attribution#reengagement-rules-and-windows).
+Learn more about re-engagement [rules and windows](/docs/retargeting-attribution-guide#reengagement-rules-and-windows).
 
 #### Ignore active users for retargeting
 
-Set a window timeframe to [ignore re-engagements and re-attributions](https://support.appsflyer.com/hc/articles/360009305817-Retargeting-inactivity-period#inactivity-period) of users who launched your app. This means their activity during the window timeframe is not recorded in AppsFlyer.
+Set a window timeframe to [ignore re-engagements and re-attributions](/docs/set-retargeting-inactivity-window#inactivity-period) of users who launched your app. This means their activity during the window timeframe is not recorded in AppsFlyer.
 
 Re-engagement and re-attribution conversions of users who were **dormant** in the set timeframe **are recorded**.
 
@@ -161,19 +161,19 @@ Configure mapping of in-app events with TikTok for Business events, sent via pos
 
 | Parameter name | Description |
 | --- | --- |
-| **AppsFlyer event** | The event name, as received by AppsFlyer, is either from the SDK integrated into your app or from server-to-server events.<br>**Tip**: Don't see the event you are looking for?<br>   - Make sure to activate the event on a device with a non-organic installation, and recheck.<br>   - Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping](https://support.appsflyer.com/hc/articles/208439256#custom-events). |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<br>   - **Drop-down box:** Select the most suitable predefined TikTok event.<br>   - **As is**: If you choose **Custom** from the dropdown, AppsFlyer sends the events as they are, without mapping them to any of TikTok's predefined events. Please note that TikTok does not use custom events for optimization, only for reporting purposes, so this setup is not recommended by TikTok. To learn more about TikTok standard and custom events, see the [TikTok documentation](https://ads.tiktok.com/help/article/standard-events-parameters). |
-| **for users from** | Select the sending option for the event:<br>   - **This partner only** (default): Send postbacks only when this event is attributed to this partner.<br>   - **All media sources including organic**: Send postbacks for events attributed to any partner, as well as organic events. TikTok for Business recommends selecting **All media sources including organic** for better optimization. |
-| **including** | - **No values & no revenue** (default): Send only the event itself without any event values.<br>   - **Values & no revenue**: Send all the parameters excluding the revenue value.<br>   - **Values & revenue**: Send all the event parameters, including the revenue value (if it exists in the event). TikTok for Business recommends selecting **Values & revenue** for better optimization. |
+| **AppsFlyer event** | The event name, as received by AppsFlyer, is either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<br />   - Make sure to activate the event on a device with a non-organic installation, and recheck.<br />   - Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping](/docs/in-app-event-postback-configuration#custom-events). |
+| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<br />   - **Drop-down box:** Select the most suitable predefined TikTok event.<br />   - **As is**: If you choose **Custom** from the dropdown, AppsFlyer sends the events as they are, without mapping them to any of TikTok's predefined events. Please note that TikTok does not use custom events for optimization, only for reporting purposes, so this setup is not recommended by TikTok. To learn more about TikTok standard and custom events, see the [TikTok documentation](https://ads.tiktok.com/help/article/standard-events-parameters). |
+| **for users from** | Select the sending option for the event:<br />   - **This partner only** (default): Send postbacks only when this event is attributed to this partner.<br />   - **All media sources including organic**: Send postbacks for events attributed to any partner, as well as organic events. TikTok for Business recommends selecting **All media sources including organic** for better optimization. |
+| **including** | - **No values & no revenue** (default): Send only the event itself without any event values.<br />   - **Values & no revenue**: Send all the parameters excluding the revenue value.<br />   - **Values & revenue**: Send all the event parameters, including the revenue value (if it exists in the event). TikTok for Business recommends selecting **Values & revenue** for better optimization. |
 
-3. [Optional] Click the **Add condition** ![conditional-iae-postbacks-icon.png](https://files.readme.io/575c9ab0dd82a125319591072b17604a7f9d1b71fff6baff4124d99edc1a7fc7-16570673855121.png) icon to [set conditions](https://support.appsflyer.com/hc/articles/208439256#conditional-inapp-event-postbacks) for an event.
+3. [Optional] Click the **Add condition** ![conditional-iae-postbacks-icon.png](https://files.readme.io/575c9ab0dd82a125319591072b17604a7f9d1b71fff6baff4124d99edc1a7fc7-16570673855121.png) icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
 4. Click **Save integration**.
 5. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
    1. In the top-left corner, under the partner name, click the app name to open the app list.
    2. Select a different app from the drop-down list.
    3. Repeat the integration steps for the selected app.
 
-For iOS apps only: Your control over data shared with the partner via postbacks and [reports](https://support.appsflyer.com/hc/articles/360006868017) depends on the **Advanced Data Sharing (iOS 14.5+ and later)** [toggle](/docs/tiktok-for-business-advanced-srn-integration-setup#advanced-data-sharing).
+For iOS apps only: Your control over data shared with the partner via postbacks and [reports](/docs/about-raw-data-identifier-restrictions) depends on the **Advanced Data Sharing (iOS 14.5+ and later)** [toggle](/docs/tiktok-for-business-advanced-srn-integration-setup#advanced-data-sharing).
 
 When migrating to the new integration (`tiktokglobal_int`), all postback events configured at the legacy integration (`bytedanceglobal_int`) are auto-populated with the same configuration.
 
@@ -181,13 +181,13 @@ When migrating to the new integration (`tiktokglobal_int`), all postback events 
 
 ### Attribution link tab
 
-Attribution links are not relevant for [SRNs](https://support.appsflyer.com/hc/articles/360001546905-About-self-reporting-networks-SRNs) or Advanced SRNs.
+Attribution links are not relevant for [SRNs](/docs/self-reporting-networks-srns) or Advanced SRNs.
 
 SRNs perform attribution on their own platform. Attribution for Advanced SRNs is performed by combining their engagement data with AppsFlyer data, using the attribution settings you defined in the [Integration tab](/docs/tiktok-for-business-advanced-srn-integration-setup#integration-tab).
 
 ### Cost tab (for cost, clicks, and impressions)
 
-This integration provides aggregated data on cost, clicks, and impressions for your campaigns, adsets, ads, and geos/countries. See the [ad network cost integration table](https://support.appsflyer.com/hc/articles/207040526-Ad-cost-measurement-guide#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features.
+This integration provides aggregated data on cost, clicks, and impressions for your campaigns, adsets, ads, and geos/countries. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features.
 
 > 📘 Note
 >
@@ -212,13 +212,13 @@ Connect at least one **Advertiser ID**. You can add up to 30.
 #### For ROI360 subscribers
 
 - Advertisers and agencies that have the cost API enabled in both the legacy `bytedanceglobal_int` and the current `tiktokglobal_int` integrations may see duplicated cost data. To avoid this, go to the `bytedanceglobal_int` integration > **Cost** tab, and turn off the toggle. However, when enabling the new cost integration, cost data from 5 days preceding the transition day is automatically collected. This means the new integration is expected to show duplicated cost data for those 5 days. For example, if the old cost integration was disabled on January 15 and the new cost integration was enabled on the same day, duplicate cost data appears in the new cost integration between January 10th and 14th, even though the new cost integration was only enabled on January 15.
-- See the [ad network cost integration table](https://support.appsflyer.com/hc/articles/207040526-Ad-cost-measurement-guide#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features.
-- [View your cost API status](https://support.appsflyer.com/hc/articles/360008850257#cost-api-status) and the last time AppsFlyer managed to pull matching cost data, in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
-- Learn more about [enabling the Cost API](https://support.appsflyer.com/hc/articles/360008850257#enable-cost-api).
+- See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features.
+- [View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data, in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+- Learn more about [enabling the Cost API](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
 
 ### Ad revenue tab
 
-To send your ad revenue data to TikTok for user acquisition (UA) optimization, you can configure [ad revenue postbacks or UA signals](https://support.appsflyer.com/hc/articles/24100803679761).
+To send your ad revenue data to TikTok for user acquisition (UA) optimization, you can configure [ad revenue postbacks or UA signals](/docs/share-ad-revenue-data-with-partners).
 
 To get ad revenue data from Pangle, use the Pangle (ad revenue) partner integration.
 
@@ -226,9 +226,9 @@ To get ad revenue data from Pangle, use the Pangle (ad revenue) partner integrat
 
 In this section, you can select permissions to grant TikTok for Business access to your data and perform various actions.
 
-Note that even after the integration is [deactivated](https://support.appsflyer.com/hc/articles/360000844778), the **TikTok for Business permissions** toggle still grants permissions.
+Note that even after the integration is [deactivated](/docs/partner-activation-deactivation), the **TikTok for Business permissions** toggle still grants permissions.
 
-Learn more about [granting permissions](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+Learn more about [granting permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 ## Deep linking with TikTok for Business
 
@@ -268,7 +268,7 @@ The following limitations apply when an agency works with this integration:
 | Access depends on the advertiser | An agency can access the TikTok for Business integration only after the advertiser they work with has activated it on their side. |
 | View-only attribution parameters | Starting January 1, 2024, attribution parameters showing on the agency's integration page are inherited from the advertiser's integration in **view-only** mode. This means the agency can see how the advertiser configured the attribution lookback windows, but cannot configure them on their own. |
 | No control over Advanced Data Sharing | An agency cannot turn on the Advanced Data Sharing setting, even when granted permission. This setting is limited to the advertiser only. |
-| In-app event postback configuration | With the advertiser's [permission](https://support.appsflyer.com/hc/articles/4410395957521#configure-inapp-event-postbacks::8743ba60), an agency can configure in-app event postbacks. |
+| In-app event postback configuration | With the advertiser's [permission](/docs/set-up-an-integrated-partner#configure-inapp-event-postbacks::8743ba60), an agency can configure in-app event postbacks. |
 | Mapping alignment recommended | When mapping in-app event postbacks, we recommend making sure the mapping configuration is identical for both the agency and the marketer. |
 
 **To set up TikTok for Business for agencies:**
@@ -328,8 +328,8 @@ If Aggregated Advanced Privacy (AAP) is enabled at either the app level or the T
 
 Use the steps below to get your app verified:
 
-1. You can temporarily disable the AAP setting in AppsFlyer to allow TikTok to receive organic postbacks for verification purposes only. (Disabling AAP can make user-level data available to advertisers and partners. For more information, see [AAP disabled](https://support.appsflyer.com/hc/articles/360018515798-Aggregated-Advanced-Privacy-framework#aap-disabled).)
-   1. Go to the [app-level settings](https://support.appsflyer.com/hc/articles/360018515798-Aggregated-Advanced-Privacy-framework#aap-central-switch) and disable AAP.
+1. You can temporarily disable the AAP setting in AppsFlyer to allow TikTok to receive organic postbacks for verification purposes only. (Disabling AAP can make user-level data available to advertisers and partners. For more information, see [AAP disabled](/docs/apply-aggregated-advanced-privacy-framework#aap-disabled).)
+   1. Go to the [app-level settings](/docs/apply-aggregated-advanced-privacy-framework#aap-central-switch) and disable AAP.
    2. Go to [TikTok's partner integration configuration](/docs/tiktok-for-business-advanced-srn-integration-setup#advanced-data-sharing) and disable AAP there as well.
 2. In the [Postbacks section](/docs/tiktok-for-business-advanced-srn-integration-setup#default-postbacks), set the postback method to **All Media Sources, including Organic**.
 3. Wait for TikTok to receive at least one install or in-app event postback. Once received, your app should automatically update to "verified" on the TikTok dashboard.

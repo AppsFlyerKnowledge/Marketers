@@ -12,11 +12,11 @@ The dashboard includes the following components:
 
 ## **A** - Measurement panel
 
-Select the measurement you want to view in the dashboard panel ( **B**). You can view either the live dashboard or one of the historical dashboards you set up. For more information about live and historical dashboards, see [About measurement run modes](https://support.appsflyer.com/hc/articles/44427723216017--WIP-Run-and-manage-measurement#about-measurement-run-modes).
+Select the measurement you want to view in the dashboard panel ( **B**). You can view either the live dashboard or one of the historical dashboards you set up. For more information about live and historical dashboards, see [About measurement run modes](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#about-measurement-run-modes).
 
 ## **B** - Dashboard panel
 
-Displays the dashboard you selected in the measurement panel ( **A**). The pane enables you to edit, duplicate, re-run, and share the dashboard with your collaborators. For more information, see [Manage measurement](https://support.appsflyer.com/hc/articles/44427723216017--WIP-Run-and-manage-measurement#manage-measurements).
+Displays the dashboard you selected in the measurement panel ( **A**). The pane enables you to edit, duplicate, re-run, and share the dashboard with your collaborators. For more information, see [Manage measurement](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#manage-measurements).
 
 ## **C** - Filter bar
 

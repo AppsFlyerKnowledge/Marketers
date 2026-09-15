@@ -22,10 +22,10 @@ Cost is reported via CSV files uploaded or emailed to AppsFlyer. Once AppsFlyer 
 
 To use Cost Import and send cost data to AppsFlyer, you need to:
 
-1. [Prepare the CSV file](https://support.appsflyer.com/hc/articles/360002516838-Cost-Import-guide#prepare-csv-file-with-cost-data) with the cost data to send.
+1. [Prepare the CSV file](/docs/import-cost-data#prepare-csv-file-with-cost-data) with the cost data to send.
 2. Send the file to AppsFlyer via either:
-   - [Uploading](https://support.appsflyer.com/hc/articles/360002516838-Cost-Import-guide#email-file) it in the AppsFlyer UI.
-   - [Email](https://support.appsflyer.com/hc/articles/360002516838-Cost-Import-guide#email-file). **Note**: For apps on CTV, PC, and console platforms, use only this method.
+   - [Uploading](/docs/import-cost-data#email-file) it in the AppsFlyer UI.
+   - [Email](/docs/import-cost-data#email-file). **Note**: For apps on CTV, PC, and console platforms, use only this method.
 
 See the sections that follow for detailed instructions.
 
@@ -37,30 +37,30 @@ Advertisers, ad networks, and agencies can prepare the Cost Import CSV file. [Se
 
 - Follow the file schema, format, and rules detailed in the following tables.
 
-You can optionally include the ad network's reported clicks and reported impressions alongside your cost data. **Note**: If you use Excel or Google Sheets to create the file, follow the [Excel and Google Sheets formatting instructions](https://support.appsflyer.com/hc/articles/360002516838-Cost-Import-guide#using-excel-or-google-sheets-to-prepare-csv-file).
+You can optionally include the ad network's reported clicks and reported impressions alongside your cost data. **Note**: If you use Excel or Google Sheets to create the file, follow the [Excel and Google Sheets formatting instructions](/docs/import-cost-data#using-excel-or-google-sheets-to-prepare-csv-file).
 
 #### CSV schema
 
-| Column name <br>(case sensitive) | Format/remark | Example | Mandatory |
+| Column name <br />(case sensitive) | Format/remark | Example | Mandatory |
 | --- | --- | --- | --- |
-| date | - The date the cost occurred<br>- Format: String<br>  <br>  (Best practice):  - YYYY-MM-DD<br>  - YYYY/MM/DD<br>  - MM-DD-YYYY<br>  - MM/DD/YYYY<br>- Future dates not permitted<br>- **Best practice**: Use the same timezone as the one defined for your app in AppsFlyer.<br>- **Note**: Are you using Excel/Google sheets to prepare the file? [Read this](https://support.appsflyer.com/hc/articles/360002516838-Cost-Import-guide#using-excel-or-google-sheets-to-prepare-csv-file). | - 2019-05-30<br>- 2019/05/30<br>- 5-30-2019<br>- 5/30/2019<br>- 05-30-2019<br>- 05/30/2019 | **✓** |
-| app-id | - Format: String<br>- App ID as it appears in AppsFlyer.<br>- Multiple app IDs are allowed in a single file.<br>- All app IDs need to belong to the same advertiser account. | - com.app.name <br>- id12356789 | **✓** |
-| media-source | - Format: String<br>- Media source name **exactly** as it appears in AppsFlyer. **Note:** Include the \_int suffix if relevant.<br>- Only one media source per file permitted. Multiple apps for the same media source are permitted. | network\_x\_int | **✓** |
-| campaign | - Format: String<br>- Campaign name. If the campaign name appears in the ad network, the name in this file should match it (case sensitive).<br>- Don't use the same campaign name for multiple apps. | campaign\_a | **✓**<br>**Note**: If attribution data exists with both name and ID, the CSV must contain both to match. |
-| spend | - Monetary cost<br>- Five digits allowed after the decimal point<br>- The value 0 (zero) is permitted<br>- **Note**:   - 1000 comma separators aren’t allowed, for example: "2,874.12".<br>  - Are you using Excel/Google sheets to prepare the file? [Read this](https://support.appsflyer.com/hc/articles/360002516838-Cost-Import-guide#using-excel-or-google-sheets-to-prepare-csv-file). | 2874.12345 | **✓** |
-| reported-clicks | - Format: Integer<br>- The number of clicks reported by the ad network.<br>- Whole numbers only. No decimals, comma separators, currency symbols, or scientific notation.<br>- The value must be 0 or greater. The value 0 is permitted. | 1200 | No |
-| reported-impressions | - Format: Integer<br>- The number of impressions reported by the ad network.<br>- Whole numbers only. No decimals, comma separators, currency symbols, or scientific notation.<br>- The value must be 0 or greater. The value 0 is permitted. | 45000 | No |
-| geo | - Format: String<br>- Two-letter country code compliant with [ISO 3166](https://www.iso.org/iso-3166-country-codes.html). **Note**: Make sure that you send 2 characters with no blanks.<br>- For the United Kingdom use UK,not GB. | US, CN, AU | No |
-| currency | - Format: String<br>- Three-letter currency code compliant with [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html). **Note**: Make sure that you send three characters with no leading or trailing blanks.<br>- One currency code per app in the file allowed. Different apps can have different currency codes. | USD, GBP, EUR, JPY | No.<br>Will default to USD if left empty. |
-| campaign-id | Format: String | abc1234def | No.<br>**Note**: If attribution data exists with both name and ID, the CSV must contain both to match. |
+| date | - The date the cost occurred<br />- Format: String<br />  <br />  (Best practice):  - YYYY-MM-DD<br />  - YYYY/MM/DD<br />  - MM-DD-YYYY<br />  - MM/DD/YYYY<br />- Future dates not permitted<br />- **Best practice**: Use the same timezone as the one defined for your app in AppsFlyer.<br />- **Note**: Are you using Excel/Google sheets to prepare the file? [Read this](/docs/import-cost-data#using-excel-or-google-sheets-to-prepare-csv-file). | - 2019-05-30<br />- 2019/05/30<br />- 5-30-2019<br />- 5/30/2019<br />- 05-30-2019<br />- 05/30/2019 | **✓** |
+| app-id | - Format: String<br />- App ID as it appears in AppsFlyer.<br />- Multiple app IDs are allowed in a single file.<br />- All app IDs need to belong to the same advertiser account. | - com.app.name <br />- id12356789 | **✓** |
+| media-source | - Format: String<br />- Media source name **exactly** as it appears in AppsFlyer. **Note:** Include the \_int suffix if relevant.<br />- Only one media source per file permitted. Multiple apps for the same media source are permitted. | network\_x\_int | **✓** |
+| campaign | - Format: String<br />- Campaign name. If the campaign name appears in the ad network, the name in this file should match it (case sensitive).<br />- Don't use the same campaign name for multiple apps. | campaign\_a | **✓**<br />**Note**: If attribution data exists with both name and ID, the CSV must contain both to match. |
+| spend | - Monetary cost<br />- Five digits allowed after the decimal point<br />- The value 0 (zero) is permitted<br />- **Note**:   - 1000 comma separators aren’t allowed, for example: "2,874.12".<br />  - Are you using Excel/Google sheets to prepare the file? [Read this](/docs/import-cost-data#using-excel-or-google-sheets-to-prepare-csv-file). | 2874.12345 | **✓** |
+| reported-clicks | - Format: Integer<br />- The number of clicks reported by the ad network.<br />- Whole numbers only. No decimals, comma separators, currency symbols, or scientific notation.<br />- The value must be 0 or greater. The value 0 is permitted. | 1200 | No |
+| reported-impressions | - Format: Integer<br />- The number of impressions reported by the ad network.<br />- Whole numbers only. No decimals, comma separators, currency symbols, or scientific notation.<br />- The value must be 0 or greater. The value 0 is permitted. | 45000 | No |
+| geo | - Format: String<br />- Two-letter country code compliant with [ISO 3166](https://www.iso.org/iso-3166-country-codes.html). **Note**: Make sure that you send 2 characters with no blanks.<br />- For the United Kingdom use UK,not GB. | US, CN, AU | No |
+| currency | - Format: String<br />- Three-letter currency code compliant with [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html). **Note**: Make sure that you send three characters with no leading or trailing blanks.<br />- One currency code per app in the file allowed. Different apps can have different currency codes. | USD, GBP, EUR, JPY | No.<br />Will default to USD if left empty. |
+| campaign-id | Format: String | abc1234def | No.<br />**Note**: If attribution data exists with both name and ID, the CSV must contain both to match. |
 | adset | Format: String | my\_adset\_1 | |
 | adset-id | Format: String | id5678ghi | |
 | ad | Format: String | my\_ad\_name | |
 | ad-id | Format: String | id91011jkl | |
-| site-id | - Format: String <br>- Unique ID that identifies the publisher that displays the ad. [Learn more](https://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters#site-id-parameter) | id1213mno | No |
+| site-id | - Format: String <br />- Unique ID that identifies the publisher that displays the ad. [Learn more](/docs/about-link-structure-and-parameters#site-id-parameter) | id1213mno | No |
 | channel | Format: String | video | No |
-| keywords | Format: String | - better<br>- better you app<br>- better you online | No |
-| agency | - Format: String<br>- The agency name. The value in the `af_prt` parameter.<br>- Only one agency can be included in a file, and only campaigns managed by that agency can be included in the file.<br>- The agency name is mandatory per row. No blank cells are allowed in the agency column.<br>- The agency must have permission to all the apps included in the file.<br>- Only advertisers can upload the file. Agencies can't upload data. They can prepare their files and send them to the advertiser to upload.<br>- If cost data is re-sent for the same dates and the agency name (`af_prt`) is included in a subsequent submission when it was absent in the original, this results in duplicated cost data. | AgencyName | No |
+| keywords | Format: String | - better<br />- better you app<br />- better you online | No |
+| agency | - Format: String<br />- The agency name. The value in the `af_prt` parameter.<br />- Only one agency can be included in a file, and only campaigns managed by that agency can be included in the file.<br />- The agency name is mandatory per row. No blank cells are allowed in the agency column.<br />- The agency must have permission to all the apps included in the file.<br />- Only advertisers can upload the file. Agencies can't upload data. They can prepare their files and send them to the advertiser to upload.<br />- If cost data is re-sent for the same dates and the agency name (`af_prt`) is included in a subsequent submission when it was absent in the original, this results in duplicated cost data. | AgencyName | No |
 
 > 📘 Note
 >
@@ -73,14 +73,14 @@ You can optionally include the ad network's reported clicks and reported impress
 | Prohibited characters | Fields in string format can't have `=`, `+`, `-`, or `@` as the first character. For example, `@example_campaign` or `=123` are prohibited. |
 | App owner | One advertiser (app owner) per file permitted. Multiple apps from the same advertiser account are permitted. |
 | Filename extension | CSV Example: abc123.csv |
-| File structure | - **Format**: Files have a CSV format meaning that each column is separated by a comma.<br>- **Header row**: The first row is a header row that matches the schema<br>- **Data rows**: Contain the mandatory columns. **Note**: Make sure that there are no trailing blanks in your data. For example, [USD] (a blank follows the **D** should be changed to [USD].<br>- **Blank rows**: Not permitted<br>- **Duplicate rows** having the same key: Not permitted. The key is derived from using the mandatory fields.<br>- **Blank cells:** Empty values are not allowed in the file. If you do not want to upload certain fields, they should not be in the file. |
-| Advertising hierarchy | Cost must be recorded at the campaign level with other dimensions in the advertising hierarchy being optional.<br>Any partial data that is uploaded at a lower hierarchy will override all data from the campaign level down.<br>**For example:** If you import a file with campaign cost for adset 1, and separately import another file for adset 2 of the same campaign, the total cost of the campaign will be replaced and show only adset 2 data. For total campaign cost, the file you import needs to include adset 1 and adset 2. |
+| File structure | - **Format**: Files have a CSV format meaning that each column is separated by a comma.<br />- **Header row**: The first row is a header row that matches the schema<br />- **Data rows**: Contain the mandatory columns. **Note**: Make sure that there are no trailing blanks in your data. For example, [USD] (a blank follows the **D** should be changed to [USD].<br />- **Blank rows**: Not permitted<br />- **Duplicate rows** having the same key: Not permitted. The key is derived from using the mandatory fields.<br />- **Blank cells:** Empty values are not allowed in the file. If you do not want to upload certain fields, they should not be in the file. |
+| Advertising hierarchy | Cost must be recorded at the campaign level with other dimensions in the advertising hierarchy being optional.<br />Any partial data that is uploaded at a lower hierarchy will override all data from the campaign level down.<br />**For example:** If you import a file with campaign cost for adset 1, and separately import another file for adset 2 of the same campaign, the total cost of the campaign will be replaced and show only adset 2 data. For total campaign cost, the file you import needs to include adset 1 and adset 2. |
 
 ### Upload file
 
 Advertisers and ad networks can upload Cost Import CSV files.
 
-**Prerequisites**: Ad networks require [Cost Import permission from the advertiser](https://support.appsflyer.com/hc/articles/360002516838-Cost-Import-guide#cost-import-permissions-for-ad-networks).
+**Prerequisites**: Ad networks require [Cost Import permission from the advertiser](/docs/import-cost-data#cost-import-permissions-for-ad-networks).
 
 **To upload the CSV file via the AppsFlyer UI**:
 
@@ -113,11 +113,11 @@ Advertisers and ad networks can email Cost Import CSV files.
   - Sender email must be for a registered AppsFlyer user.
 - **Ad networks**:
   - Sender email must be for a registered AppsFlyer user.
-  - [Cost Import permission from the advertiser](https://support.appsflyer.com/hc/articles/360002516838-Cost-Import-guide#cost-import-permissions-for-ad-networks).
+  - [Cost Import permission from the advertiser](/docs/import-cost-data#cost-import-permissions-for-ad-networks).
 
 **To send the CSV file by email**:
 
-1. Get the [token for email import](https://support.appsflyer.com/hc/articles/360002516838-Cost-Import-guide#token-for-email-import).
+1. Get the [token for email import](/docs/import-cost-data#token-for-email-import).
    1. In AppsFlyer, from the side menu, select **Settings** > **Cost Import.**
    2. In the upper right-hand of the page, click **Token for email import.**
    3. Copy and save the token.
@@ -128,7 +128,7 @@ Advertisers and ad networks can email Cost Import CSV files.
    - **Attachment**: CSV file with the data.
 3. Send the email.
    - Once the file is received and processed, a status email summarizes the details, issues, or errors found during processing. The email is sent to all parties on the submission email and to the advertiser admin. Where errors are identified, follow the [error message instructions](/docs/import-cost-data#error-messages-and-solutions).
-   - You can view the status of files submitted on the [Cost Import dashboard](https://support.appsflyer.com/hc/articles/360002516838-Cost-Import-guide#error-messages-and-solutions)
+   - You can view the status of files submitted on the [Cost Import dashboard](/docs/import-cost-data#error-messages-and-solutions)
 
 ## Dashboard
 
@@ -146,9 +146,9 @@ Details about the information available for previously imported files are descri
 | Upload date | Date file was imported. |
 | Media source | Media source included in the file. |
 | Date range | First and last dates in the file in which ad spend occurred. |
-| Matched rows (%) | The percentage of rows in the file where cost was matched to attribution. [Learn more](/docs/import-cost-data#matched-rows) [.](https://support.appsflyer.com/hc/articles/25435841888913#matched-rows) |
-| Status | The status of the imported file:<br>- **Success**: Action completed successfully. Cost is recorded and available in AppsFlyer dashboards and reports.<br>- **Validation error**: AppsFlyer system problem. Wait 10 minutes and try again. If it fails again, contact AppsFlyer support.<br>- **No permissions**: The token is not approved for this app. - Advertisers: Make sure the app ID is correct.<br>  - Ad networks: Confirm with the advertiser that they've given you Cost Import permission.<br>- **Reverted**: Action completed successfully. File was overwritten/replaced by other data. |
-| Action | - At the file level: If you have app permissions to all the apps contained in the file, you can:<br>  - **Download CSV file**: This a copy of the imported CSV file.<br>  - **Download unmatched report** for all apps in the file. See the Matched rows section of this table to learn more.<br>- At the app level: If you click a specific file, information about all Cost Imports for the app displays, from that specific file, as well as other files. If you have app permission for the app you can:<br>  - **Download app data.**<br>  - **Download unmatched report** for the app<br>  - **Revert**(cancel) the Cost Import for the selected app. |
+| Matched rows (%) | The percentage of rows in the file where cost was matched to attribution. [Learn more](/docs/import-cost-data#matched-rows) . |
+| Status | The status of the imported file:<br />- **Success**: Action completed successfully. Cost is recorded and available in AppsFlyer dashboards and reports.<br />- **Validation error**: AppsFlyer system problem. Wait 10 minutes and try again. If it fails again, contact AppsFlyer support.<br />- **No permissions**: The token is not approved for this app. - Advertisers: Make sure the app ID is correct.<br />  - Ad networks: Confirm with the advertiser that they've given you Cost Import permission.<br />- **Reverted**: Action completed successfully. File was overwritten/replaced by other data. |
+| Action | - At the file level: If you have app permissions to all the apps contained in the file, you can:<br />  - **Download CSV file**: This a copy of the imported CSV file.<br />  - **Download unmatched report** for all apps in the file. See the Matched rows section of this table to learn more.<br />- At the app level: If you click a specific file, information about all Cost Imports for the app displays, from that specific file, as well as other files. If you have app permission for the app you can:<br />  - **Download app data.**<br />  - **Download unmatched report** for the app<br />  - **Revert**(cancel) the Cost Import for the selected app. |
 
 ### Matched rows
 
@@ -268,7 +268,7 @@ The following table lists all possible Cost Import error messages and correspond
 | --- | --- | --- |
 | None of the app IDs provided in the file exist in AppsFlyer. Please verify the correctness of app IDs. | App ID does not exist in the account. | Change app ID and resubmit. |
 | Line [line name] has the wrong number of columns. Expected [number] columns, received [number] columns. | All columns in the file must have a value. | Change the values populated in the file based on the headers you defined. |
-| Missing 'media-source' in file header. | - File header is missing media- source.<br>- The column name needs to be exactly as it is in the scheme. | Add media-source as a header name. |
+| Missing 'media-source' in file header. | - File header is missing media- source.<br />- The column name needs to be exactly as it is in the scheme. | Add media-source as a header name. |
 | The file can contain only one media source. Multiple media sources encountered in the file: [number of media sources]. | The file contains more than one media source. Hidden empty lines or malformed rows in the CSV can also trigger this error, even if they aren't visible in Excel. | Open the file in a text editor, such as Notepad++, and remove any empty lines or malformed rows. Save the file and upload it again. If the file contains more than one media source, split it into one file per media source. |
 | The value provided [value] for [field] is not a valid value for this column. | Data format in the column is incorrect. For example, the date is dd-mm-yy instead of yyyy-mm-dd. | Correct the format and resubmit. |
 | Multiple currencies identified for the app. Please use a single currency for each app in the file. Encountered currencies: %number of currencies%. | Only one currency can be used for an app. | Use one currency in the upload and resubmit. |
@@ -282,20 +282,20 @@ The following table lists all possible Cost Import error messages and correspond
 | Geo (country) code was not found for app [app ID]. Use an ISO 3166 2-letter code | Geo does not exist. | Correct the geo and resubmit. |
 | Currency code was not found for app [app ID]. Use an ISO 4217 3-letter code. | Currency does not exist | Change the currency to a valid currency and resubmit. |
 | There were validation errors for one or more apps in the file. Please review the file information for more details. | There is more than one error in the file. | Download the file and review for errors. |
-| There was an internal error processing the file, please try uploading it again. | - Backend issue processing the file.<br>- Typically a temporary issue. | Wait 1 hour and upload again. |
+| There was an internal error processing the file, please try uploading it again. | - Backend issue processing the file.<br />- Typically a temporary issue. | Wait 1 hour and upload again. |
 
 ### Traits and limitations
 
 | Trait | Remarks |
 | --- | --- |
-| Ad networks | Supported.<br>Exceptions:<br>- Meta Ads<br>- X Ads<br>- ASA |
-| Agencies | - Agencies can't upload data. They can prepare their files and send them to the advertiser to upload.<br>- The CSV files must contain an Agency column with the agency name (the agency name is the value in the af\_prt parameter). [See CSV schema](https://support.appsflyer.com/hc/articles/360002516838#ad-spend-csv-schema) |
+| Ad networks | Supported.<br />Exceptions:<br />- Meta Ads<br />- X Ads<br />- ASA |
+| Agencies | - Agencies can't upload data. They can prepare their files and send them to the advertiser to upload.<br />- The CSV files must contain an Agency column with the agency name (the agency name is the value in the af\_prt parameter). [See CSV schema](/docs/import-cost-data#ad-spend-csv-schema) |
 | Agency transparency | Not supported |
 | App-specific timezone | Supported |
 | App-specific currency | Supported. Campaign costs are converted to the app-specific currency. |
 | Campaign name | The same campaign name can't be used for multiple apps, or the cost of one app will apply to both. |
-| Field names | If field names in the campaign hierarchy do not match the field names as they appear in the attribution data, they will be counted separately. <br>For example, if the campaign names do not match, then even though the campaign IDs are the same, they will be counted as different campaigns. |
-| File size | When uploading a CSV Cost Import file the size limit is:<br>- Via AppsFlyer dashboard: 2 MB<br>- Via email: 5 MB per file |
+| Field names | If field names in the campaign hierarchy do not match the field names as they appear in the attribution data, they will be counted separately. <br />For example, if the campaign names do not match, then even though the campaign IDs are the same, they will be counted as different campaigns. |
+| File size | When uploading a CSV Cost Import file the size limit is:<br />- Via AppsFlyer dashboard: 2 MB<br />- Via email: 5 MB per file |
 | Organic data | Supported |
 | Non-organic data | Supported |
 | Data freshness | [Ad spend](/docs/about-data-freshness-and-timezone-support#intraday-during-the-day) |
@@ -306,10 +306,7 @@ The following table lists all possible Cost Import error messages and correspond
 #### See also
 
 <Cards>
-  <Card title="Attribution link structure and parameters" href="https://support.appsflyer.com/hc/articles/207447163-Attribution-link-structure-and-parameters">
+  <Card title="Attribution link structure and parameters" href="/docs/about-link-structure-and-parameters">
     Learn about the parameters and structure used in AppsFlyer attribution links.
-  </Card>
-  <Card title="Matched rows" href="https://support.appsflyer.com/hc/articles/25435841888913#matched-rows">
-    Understand how cost data is matched with attribution data in AppsFlyer.
   </Card>
 </Cards>

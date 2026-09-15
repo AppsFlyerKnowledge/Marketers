@@ -27,8 +27,8 @@ The AppsFlyer customer experience and deep linking suite powered by OneLink allo
 
 - **Social-to-app**: Engage your users on social media and send them from social media feeds to your app.
 - **App-to-app**: Lead users to your app from within other apps.
-- [**Web-to-app**](https://support.appsflyer.com/hc/articles/360001237818): Convert your mobile website visitors into new mobile app users using Smart Banners and Smart Script.
-- [**QR-to-app**](https://support.appsflyer.com/hc/articles/360015119718): Use QR codes to drive app installs by having users scan a QR code at key points during their offline customer experience. You can also put QR codes on your desktop site, or on TV and CTV ads to route users to your app.
+- [**Web-to-app**](/docs/convert-your-mobile-web-visitors-to-app-users): Convert your mobile website visitors into new mobile app users using Smart Banners and Smart Script.
+- [**QR-to-app**](/docs/qr-to-app-conversion): Use QR codes to drive app installs by having users scan a QR code at key points during their offline customer experience. You can also put QR codes on your desktop site, or on TV and CTV ads to route users to your app.
 - **Email-to-app**: Use email service providers (ESPs) to engage users via email and send them from their inbox to your app.
 - **Text-to-app**: Create links for your SMS and messaging campaigns and engage users via text messages.
 - **Referral-to-app**: Create user invite links that allow users and influencers to invite others to your app or share specific in-app content, for example, an article.
@@ -39,7 +39,7 @@ The AppsFlyer customer experience and deep linking suite powered by OneLink allo
 Providing the desired customer experience from link to app install for your users using the AppsFlyer UI requires:
 
 - Two different roles within an organization (marketers and developers) working together.
-- [Creating a OneLink template](https://support.appsflyer.com/hc/articles/207032246)that represents the routing logic at the core of all your links, to redirect:
+- [Creating a OneLink template](/docs/create-a-onelink-template)that represents the routing logic at the core of all your links, to redirect:
   - New users without your app installed to the correct app store or web URL.
   - Existing users with your app installed into the app via Android App Links, iOS Universal Links, and URI scheme.
     - If these are not defined, users will default to the same settings as new users without your app installed (web URL or app store).
@@ -48,29 +48,29 @@ Providing the desired customer experience from link to app install for your user
 >
 > A OneLink template is not a clickable link for your end-users; it is the foundation for generating many custom links. Based on the template, you can create many OneLink custom links for the users to click on. It is rare to need more than one or two OneLink templates in the lifetime of an app (outside of testing).
 
-- [Creating a OneLink link](https://support.appsflyer.com/hc/articles/208874366). This is the clickable link or scannable QR code displayed in your ads. During link setup, you define the desired customer experience and add any desired parameters.
+- [Creating a OneLink link](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink). This is the clickable link or scannable QR code displayed in your ads. During link setup, you define the desired customer experience and add any desired parameters.
 
 The following table describes the details of the marketer and developer tasks and provides links to their resources.
 
 | Task | Details | Resources |
 | --- | --- | --- |
-| Create OneLink template | - Marketer/product manager sets up the template in AppsFlyer.<br>- Android developer configures app-opening methods for existing users (Android App Links and URI scheme).<br>- iOS developer configures app-opening methods for existing users (iOS Universal Links and URI scheme). | - AppsFlyer dashboard<br>- [Marketer instructions](https://support.appsflyer.com/hc/articles/207032246)<br>- Developer instructions for [Android](https://dev.appsflyer.com/hc/docs/dl_android_init_setup#app-opening-methods) and [iOS](https://dev.appsflyer.com/hc/docs/dl_ios_init_setup) |
-| Create OneLink link | - Marketer/product manager sets up the link in AppsFlyer, including selecting the desired customer experience and adding any desired attribution or deep linking parameters.<br>- Android and iOS developers implement UDL method for deep linking (if deep linking is required). | - [Marketer instructions](https://support.appsflyer.com/hc/articles/208874366)<br>- Developer instructions for [Android](https://dev.appsflyer.com/hc/docs/dl_android_unified_deep_linking) and [iOS](https://dev.appsflyer.com/hc/docs/dl_ios_unified_deep_linking)<br>- Sample apps (Github) |
+| Create OneLink template | - Marketer/product manager sets up the template in AppsFlyer.<br />- Android developer configures app-opening methods for existing users (Android App Links and URI scheme).<br />- iOS developer configures app-opening methods for existing users (iOS Universal Links and URI scheme). | - AppsFlyer dashboard<br />- [Marketer instructions](/docs/create-a-onelink-template)<br />- Developer instructions for [Android](https://dev.appsflyer.com/hc/docs/dl_android_init_setup#app-opening-methods) and [iOS](https://dev.appsflyer.com/hc/docs/dl_ios_init_setup) |
+| Create OneLink link | - Marketer/product manager sets up the link in AppsFlyer, including selecting the desired customer experience and adding any desired attribution or deep linking parameters.<br />- Android and iOS developers implement UDL method for deep linking (if deep linking is required). | - [Marketer instructions](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink)<br />- Developer instructions for [Android](https://dev.appsflyer.com/hc/docs/dl_android_unified_deep_linking) and [iOS](https://dev.appsflyer.com/hc/docs/dl_ios_unified_deep_linking)<br />- Sample apps (Github) |
 
 ## Additional options
 
 After completing some or all of the setup in the UI, consider implementing the additional features described below.
 
-- [OneLink API](https://support.appsflyer.com/hc/articles/360001250345) and [bulk link creation](https://support.appsflyer.com/hc/articles/14511403892369): Scale and run multiple campaigns at once, and create thousands of OneLink links quickly and easily, saving you time and effort, and letting you focus on your campaign and marketing efforts instead.
-- [Export OneLink URLs](https://support.appsflyer.com/hc/articles/4416027813905): Download all OneLink URLs created in the AppsFlyer user interface (OneLink URLs created via SDK, OneLink API, or bulk upload aren't included).
+- [OneLink API](/docs/use-onelink-api-to-create-links-in-large-scale-campaigns) and [bulk link creation](/docs/perform-onelink-bulk-actions-via-csv): Scale and run multiple campaigns at once, and create thousands of OneLink links quickly and easily, saving you time and effort, and letting you focus on your campaign and marketing efforts instead.
+- [Export OneLink URLs](/docs/export-onelink-urls): Download all OneLink URLs created in the AppsFlyer user interface (OneLink URLs created via SDK, OneLink API, or bulk upload aren't included).
 - [Measure push notification re-engagement campaigns](/docs/measuring-push-notification-re-engagement-campaigns): Use push notifications with OneLink to measure mobile user re-engagements.
-- [Cross-promotion attribution](https://support.appsflyer.com/hc/articles/115004481946-Cross-promotion-attribution): Your existing app users are excellent candidates for installing your other new apps. Learn how to use SDK methods to easily create and measure cross-promotion campaigns.
-- [Long URL](https://support.appsflyer.com/hc/articles/360017132597) s: Add parameters to your OneLink custom links or generate a large number of OneLink custom links by applying your own simple formulas in a spreadsheet.
-- [App-to-web redirection](https://support.appsflyer.com/hc/articles/4460838224273): Redirect users from your app to a website or social media page.
+- [Cross-promotion attribution](/docs/cross-promotion-attribution-for-marketers): Your existing app users are excellent candidates for installing your other new apps. Learn how to use SDK methods to easily create and measure cross-promotion campaigns.
+- [Long URL](/docs/understand-onelink-short-vs-long-urls) s: Add parameters to your OneLink custom links or generate a large number of OneLink custom links by applying your own simple formulas in a spreadsheet.
+- [App-to-web redirection](/docs/redirect-app-users-to-a-website): Redirect users from your app to a website or social media page.
 
 ## Troubleshooting and FAQ
 
-Quickly find solutions for testing and debugging OneLink custom link redirection/behavior issues with our [OneLink troubleshooting guide](https://support.appsflyer.com/hc/articles/360014821438).
+Quickly find solutions for testing and debugging OneLink custom link redirection/behavior issues with our [OneLink troubleshooting guide](/docs/onelink-troubleshooting-and-faq).
 
 ## Limitations
 

@@ -14,7 +14,7 @@ When turning on IP masking:
 > 📘 Note
 >
 > - Installs that occurred before IP masking was turned on aren't masked
-> - [AEM data sharing](https://support.appsflyer.com/hc/articles/19228737402129#aem-data-sharing) for Meta ads isn't supported for both server-to-server and SDK events when IP masking is turned on. This means data isn't shared with Meta ads.
+> - [AEM data sharing](/docs/meta-ads-aggregate-event-measurement-aem-for-ios#aem-data-sharing) for Meta ads isn't supported for both server-to-server and SDK events when IP masking is turned on. This means data isn't shared with Meta ads.
 
 #### Example
 
@@ -36,9 +36,9 @@ IP masking and raw data:
 | --- | --- | --- |
 | January 1 | Off | User A 192.0.2.1 |
 | January 2 | On | User\_A 192.0.2.1 |
-| January 8 | On | User\_A 192.0.2.1<br>User\_B 1.1.1.1 |
-| January 9 | Off | User\_A 192.0.2.1<br>User\_B 1.1.1.1 |
-| January 15 | Off | User\_A 192.0.2.1<br>User\_B 1.1.1.1<br>User\_C 203.0.113.1 |
+| January 8 | On | User\_A 192.0.2.1<br />User\_B 1.1.1.1 |
+| January 9 | Off | User\_A 192.0.2.1<br />User\_B 1.1.1.1 |
+| January 15 | Off | User\_A 192.0.2.1<br />User\_B 1.1.1.1<br />User\_C 203.0.113.1 |
 
 ## Turn on IP masking
 
@@ -55,7 +55,7 @@ IP masking is set per app and affects installs from all sources.
 When IP masking is turned on:
 
 - New installs and in-app events show an IP address of 1.1.1.1.
-- [Location-related parameters](https://support.appsflyer.com/hc/articles/360000847378), like country and city, still appear in raw data reports.
+- [Location-related parameters](/docs/determine-user-location), like country and city, still appear in raw data reports.
 
 **Example raw data report**
 

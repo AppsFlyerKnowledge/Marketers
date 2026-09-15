@@ -11,8 +11,8 @@ The following guide contains various user conversion scenarios and their corresp
 
 Conversion data is made available in the platform using any of the following:
 
-- [Raw-data reports](https://support.appsflyer.com/hc/articles/360008613838)
-- [Push API](https://support.appsflyer.com/hc/articles/207034356)
+- [Raw-data reports](/docs/raw-data-export-page)
+- [Push API](/docs/push-api-streaming-raw-data)
 - [The AppsFlyer SDK](https://dev.appsflyer.com/hc/docs/conversion-data)
 
 Due to the accuracy/latency tradeoff, conversion data for the same device IDs might differ across APIs.
@@ -54,14 +54,14 @@ The fields in the table that follows are available in some cases, depending on h
 
 > 📘 Note
 >
-> (1) Cost fields are populated with values shared by the ad network. In order for the ad network to share cost data with AppsFlyer, you must enable cost integration on the [**Active integrations**](https://support.appsflyer.com/hc/articles/207040526#ad-networks-supporting-cost-api) page. Some SRNs support cost-sharing in bulk. In this case, event-level cost fields return as 0.
+> (1) Cost fields are populated with values shared by the ad network. In order for the ad network to share cost data with AppsFlyer, you must enable cost integration on the [**Active integrations**](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) page. Some SRNs support cost-sharing in bulk. In this case, event-level cost fields return as 0.
 
 ### Additional fields
 
-- [AppsFlyer parameter list](https://support.appsflyer.com/hc/articles/207447163#attribution-link-parameters)
+- [AppsFlyer parameter list](/docs/about-link-structure-and-parameters#attribution-link-parameters)
 - You can add parameters to the attribution link, they are made available in the payload
 
-See [raw-data fields dictionary](https://support.appsflyer.com/hc/articles/208387843#data-fields-dictionary) for additional information.
+See [raw-data fields dictionary](/docs/raw-data-field-dictionary#data-fields-dictionary) for additional information.
 
 ### Limitations
 
@@ -75,7 +75,7 @@ If a parameter is called `name`, it is removed from the payload.
 
 ## UA conversion data with SRNs
 
-[Self-reporting networks](https://support.appsflyer.com/hc/articles/360001546905-Self-Reporting-Networks) (SRNs) are ad networks that implement their own attribution mechanisms, for example, Meta ads and Google.
+[Self-reporting networks](/docs/self-reporting-networks-srns) (SRNs) are ad networks that implement their own attribution mechanisms, for example, Meta ads and Google.
 
 SRNs don't use attribution links. It means that:
 
@@ -100,7 +100,7 @@ SRNs report conversions to AppsFlyer. The conversion data is made available in t
 | --- | --- | --- |
 | `match_type` | `srn`, `gp_referrer`, `probabilistic` | AF |
 | `media_source` | Always `Facebook Ads` | AF |
-| `agency` | `null` or contains the agency name when [running Meta ads campaigns](https://support.appsflyer.com/hc/articles/207034106#srn-configurations) | Meta ads |
+| `agency` | `null` or contains the agency name when [running Meta ads campaigns](/docs/about-agency-accounts#srn-configurations) | Meta ads |
 | `http_referrer` | Always `null` | Meta ads |
 | `retargeting_conversion_type` |  | AF |
 | `af_channel` |  | Meta ads (publisher\_platform) |
@@ -122,7 +122,7 @@ SRNs report conversions to AppsFlyer. The conversion data is made available in t
 
 > 📘 Note
 >
-> Cost-related fields are not available because Meta ads does not share cost data upon conversion. If [cost-sharing](https://support.appsflyer.com/hc/articles/207033826-Facebook-Ads-setup-guide#cost-clicks-and-impressions) is enabled, Meta ads shares cost data with AppsFlyer several times a day.
+> Cost-related fields are not available because Meta ads does not share cost data upon conversion. If [cost-sharing](/docs/meta-ads-integration-setup#cost-clicks-and-impressions) is enabled, Meta ads shares cost data with AppsFlyer several times a day.
 
 </Tab>
 
@@ -160,7 +160,7 @@ SRNs report conversions to AppsFlyer. The conversion data is made available in t
 | `af_c_id` | Available in raw-data: Campaign ID |
 | `af_click_lookback` |  |
 | `af_cpi` | Note (2) |
-| `af_dp` | Only relevant to [Google App campaigns in Feeds](https://support.appsflyer.com/hc/articles/115002504686#using-deferred-deep-linking-in-app-campaigns). |
+| `af_dp` | Only relevant to [Google App campaigns in Feeds](/docs/google-ads-adwords-integration-setup-for-advertisers#using-deferred-deep-linking-in-app-campaigns). |
 | `af_keywords` | Available in raw-data: Keywords |
 | `af_prt` | `none` or value of `af_prt` |
 | `af_reengagement_window` | Available in raw-data: Re-engagement Window |
@@ -218,7 +218,7 @@ SRNs report conversions to AppsFlyer. The conversion data is made available in t
 > 📘 Notes
 >
 > (1) Apple Search Ads supports cost-sharing in bulk, not in conversion data.
-> (2) Deprecated starting February 15, 2021, due to [Apple Search Ads adoption of the AdServices AP.](https://support.appsflyer.com/hc/articles/360016711377-Bulletin-Action-required-Apple-Search-Ads-integration#availability-of-campaign-names-and-other-identifiers)
+> (2) Deprecated starting February 15, 2021, due to Apple Search Ads adoption of the AdServices AP.
 
 </Tab>
 
@@ -364,7 +364,7 @@ SRNs report conversions to AppsFlyer. The conversion data is made available in t
 
 ## UA conversion with other ad networks
 
-For other ad networks, the data in the payload is directly affected by the [parameters in the attribution link](https://support.appsflyer.com/hc/articles/207447163).
+For other ad networks, the data in the payload is directly affected by the [parameters in the attribution link](/docs/about-link-structure-and-parameters).
 
 Examine the following JSON payloads.
 
@@ -569,7 +569,7 @@ This is referred to as Deferred Deep Linking. Conversion data payload for Deferr
 
 Deferred deep linking with SRNs
 
-Deep Link parameters defined in SRNs campaigns are not available outside of the SRN. This includes the `af_dp` parameter, which holds the scheme path in the app. The only exception to this is when using [Google App campaigns in Feeds](https://support.appsflyer.com/hc/articles/115002504686#using-deferred-deep-linking-in-app-campaigns). To implement deferred deep linking, additional logic must be applied for SRN campaigns. Use the data in `onConversionSuccess` response, such as campaign, adset, adgroup, to programmatically redirect your users.
+Deep Link parameters defined in SRNs campaigns are not available outside of the SRN. This includes the `af_dp` parameter, which holds the scheme path in the app. The only exception to this is when using [Google App campaigns in Feeds](/docs/google-ads-adwords-integration-setup-for-advertisers#using-deferred-deep-linking-in-app-campaigns). To implement deferred deep linking, additional logic must be applied for SRN campaigns. Use the data in `onConversionSuccess` response, such as campaign, adset, adgroup, to programmatically redirect your users.
 
 #### Conversion data for deferred deep linking with Meta ads
 
@@ -798,7 +798,7 @@ Example:
 
 > ❗️ Important!
 >
-> We recommend using the short version of OneLink. Click [here](https://support.appsflyer.com/hc/articles/360017132597) to learn more.
+> We recommend using the short version of OneLink. Click [here](/docs/understand-onelink-short-vs-long-urls) to learn more.
 >
 > Another reason to use the short version of OneLink is the conversion data structure that the long version returns. When using the long version, the conversion data is a map with a single field called `link` that holds the entire long OneLink.
 
@@ -810,14 +810,14 @@ Example:
 
 ### Alternative conversion data sources
 
-- Push API offers a detailed conversion payload that indicates re-attribution or re-engagement. Push API payloads include a field called `re_targeting_conversion_type`. This field indicates the type of conversion, either re-attribution or re-engagement. To learn more, see our [Push API guide](https://support.appsflyer.com/hc/articles/207034356-Push-APIs-Installation-and-Conversion-Notification-APIs).
+- Push API offers a detailed conversion payload that indicates re-attribution or re-engagement. Push API payloads include a field called `re_targeting_conversion_type`. This field indicates the type of conversion, either re-attribution or re-engagement. To learn more, see our [Push API guide](/docs/push-api-streaming-raw-data).
 - Raw Data Reports also contain indicators for the type of conversion. In the raw data report for retargeting conversions, there is a column called _**Event Name**_. The value in this column is either _**re-engagement**_ or _**re-attribution**_ according to the type of conversion.
 
 ### Examples of mixed user acquisition and re-attribution
 
 **Example**
 
-1. A user installs your app and then uninstalls it. The act of installation puts the user in a [re-attribution window](https://support.appsflyer.com/hc/articles/115002587066-Re-Attribution-Window). You set a user acquisition (not retargeting) campaign with Meta ads. You also set the AppsFlyer integration with Meta ads to allow retargeting.
+1. A user installs your app and then uninstalls it. The act of installation puts the user in a [re-attribution window](/docs/set-up-re-attribution-window). You set a user acquisition (not retargeting) campaign with Meta ads. You also set the AppsFlyer integration with Meta ads to allow retargeting.
 
 While still in the re-attribution window, the user sees the ad, clicks on it, and reinstalls the app. As far as AppsFlyer sees it, the user is a re-attributed user.
 

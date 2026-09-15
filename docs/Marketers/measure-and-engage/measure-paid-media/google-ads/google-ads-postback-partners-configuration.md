@@ -2,48 +2,58 @@
 title: "Google Ads postback partners—Configuration"
 excerpt: "Learn how to configure Google Ads postback partners (GAPPs) in AppsFlyer to send conversion postbacks for optimizing your Google Ads campaigns."
 ---
-At a glance: Enable Google Ads postback partners to help run your Google Ads campaigns.
+**At a glance:** Enable Google Ads postback partners to help run your Google Ads campaigns.
 
-Some partners (for example, Bidalgo, Adquant), referred to as **Google Ads postback partners**, are similar to agencies. They help their advertiser clients run Google Ads campaigns, but require getting postbacks for Google Ads conversions.
+Some partners (for example, Bidalgo, Adquant), referred to as **Google Ads postback partners**, are similar to agencies. They help their advertiser clients run Google Ads campaigns, but require getting postbacks for Google Ads conversions.
 
-These Google Ads Postback Partners (GAPPs) can also collect postbacks for Google Ads installs acquired by the advertiser directly, or even by other agencies (see [Use Cases](#google-ads-postback-partners-use-cases)). Using the postbacks information the GAPPs are able to optimize on Google Ads campaigns for the app.
+These Google Ads Postback Partners (GAPPs) can also collect postbacks for Google Ads installs acquired by the advertiser directly, or even by other agencies (see [Use Cases](/docs/google-ads-postback-partners-configuration#google-ads-postback-partners-use-cases)). Using the postbacks information the GAPPs are able to optimize on Google Ads campaigns for the app.
 
-> ❗️ Important!
+> 📘 **Note**
 >
-> Google Ads Postback Partners are **NOT** attributed with installs or events in AppsFlyer.
+> #### Important!
+>
+> Google Ads Postback Partners are **NOT** attributed with installs or events in AppsFlyer.
 
-The advertiser needs an active Google Ads account [set up](https://support.appsflyer.com/hc/articles/115002504686) in AppsFlyer, and also to set up the specific GAPP in AppsFlyer to enable sending postbacks to it.
+
+The advertiser needs an active Google Ads account [set up](/docs/google-ads-adwords-integration-setup-for-advertisers) in AppsFlyer, and also to set up the specific GAPP in AppsFlyer to enable sending postbacks to it.
 
 Other GAPPs integrated with AppsFlyer: Blackbox, Appreciate, Marin Software, Miramedia, Mpbisummer, Protonads, Springrain.
 
 ## Google Ads postback partner setup
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations**.
+1. In AppsFlyer, from the side menu, select**Collaborate**>**Active Integrations**.
 
 2. Type the name of the GAPP you would like to work with into the search box and select it from the dropdown list.
 
-> 👍 Tip
+> 📘 **Note**
+>
+> #### Tip
 >
 > Enter "Google Ads" in the search box and press Enter to receive the list of GAPPs.
+
 
 3. Click on the required GAPP to open its integration setup.
 
 4. In your **Google Ads** account, copy the Customer ID (without hyphens):
 
+![](https://support.appsflyer.com/hc/article_attachments/21414601345681)
+
 5. Paste the number in the **Google Ads Customer ID** field.
 
-6. Configure the [In-App Events Postback section](https://support.appsflyer.com/hc/articles/4410395957521#g-in-app-event-postback-configuration).
+6. Configure the [In-App Events Postback section](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration).
 
-7. Click **Save**.
+7. Click **Save**.
 
-> 📘 Important Notes
+> 📘 **Note**
+>
+> #### Important Notes
 >
 > * Disabling attribution for Google Ads also stops sending postbacks to GAPPs.
 > * You can configure multiple Ads accounts (CID) to send postbacks (step 5) by separating each CID with a comma.
+>
+>   ![zds_Agency_multiple.png](https://files.readme.io/36112b9a08ca1e6a2150523e1ec39eda5c28a4be826e9f776f5dbd7b1d0c5378-21414553418897.png)
+> * To work with multiple GAPPs, the campaigns for each GAPP should be run from separate google accounts. If you switch from one GAPP to another, make sure to disable the first GAPPs setup in AppsFlyer.
 
-![zds_Agency_multiple.png](https://files.readme.io/36112b9a08ca1e6a2150523e1ec39eda5c28a4be826e9f776f5dbd7b1d0c5378-21414553418897.png)
-
-* To work with multiple GAPPs, the campaigns for each GAPP should be run from separate google accounts. If you switch from one GAPP to another, make sure to disable the first GAPPs setup in AppsFlyer.
 
 ## Google Ads postback partners use cases
 
@@ -51,8 +61,8 @@ Other GAPPs integrated with AppsFlyer: Blackbox, Appreciate, Marin Software, Mir
 
 An advertiser is running Google Ads campaigns and wants the traffic from its Google Ads accounts to be sent to GAPP X.
 
-1. Advertiser [configures](https://support.appsflyer.com/hc/articles/115002504686-Google-AdWords-Integration-Configuration-New-API) Google Ads
-2. Advertiser [configures](https://support.appsflyer.com/hc/articles/4411047077905#google-ads-postback-partner-setup) GAPP X - Google Ads
+1. Advertiser [configures](/docs/google-ads-adwords-integration-setup-for-advertisers) Google Ads
+2. Advertiser [configures](/docs/google-ads-postback-partners-configuration#google-ads-postback-partner-setup) GAPP X - Google Ads
 
 The advertiser must enter all its CIDs (Ads Account IDs) in the GAPP X - Google Ads configuration.
 
@@ -60,9 +70,9 @@ The advertiser must enter all its CIDs (Ads Account IDs) in the GAPP X - Google 
 
 An advertiser and an agency are both running Google Ads campaigns, the advertiser wants only its traffic to be sent to GAPP X.
 
-1. Advertiser [configures](https://support.appsflyer.com/hc/articles/115002504686-Google-AdWords-Integration-Configuration-New-API) Google Ads
-2. Agency [configures](https://support.appsflyer.com/hc/articles/115003669983-Agency-Configuration-for-Google-AdWords-Integration-New-API) Google Ads (just for their traffic to be attributed to them as an agency)
-3. Advertiser [configures](https://support.appsflyer.com/hc/articles/4411047077905#google-ads-postback-partner-setup) GAPP X - Google Ads
+1. Advertiser [configures](/docs/google-ads-adwords-integration-setup-for-advertisers) Google Ads
+2. Agency [configures](/docs/google-ads-adwords-integration-setup-for-agencies) Google Ads (just for their traffic to be attributed to them as an agency)
+3. Advertiser [configures](/docs/google-ads-postback-partners-configuration#google-ads-postback-partner-setup) GAPP X - Google Ads
 
 The advertiser must enter ONLY its CIDs in the GAPP X - Google Ads configuration.
 
@@ -70,9 +80,9 @@ The advertiser must enter ONLY its CIDs in the GAPP X - Google Ads configuration
 
 An advertiser and agency are running Google Ads campaigns, the agency wants only its traffic to be sent to GAPP X.
 
-1. Advertiser [configures](https://support.appsflyer.com/hc/articles/115002504686-Google-AdWords-Integration-Configuration-New-API) Google Ads
-2. Agency [configures](https://support.appsflyer.com/hc/articles/115003669983-Agency-Configuration-for-Google-AdWords-Integration-New-API) Google Ads
-3. Agency [configures](https://support.appsflyer.com/hc/articles/4411047077905#google-ads-postback-partner-setup) GAPP X - Google Ads
+1. Advertiser [configures](/docs/google-ads-adwords-integration-setup-for-advertisers) Google Ads
+2. Agency [configures](/docs/google-ads-adwords-integration-setup-for-agencies) Google Ads
+3. Agency [configures](/docs/google-ads-postback-partners-configuration#google-ads-postback-partner-setup) GAPP X - Google Ads
 
 The agency must enter ONLY their CIDs in the GAPP X - Google Ads configuration
 
@@ -80,42 +90,44 @@ The agency must enter ONLY their CIDs in the GAPP X - Google Ads configuration
 
 An advertiser and agency are running Google Ads campaigns, both the advertiser and agency want their traffic to be sent to GAPP X.
 
-1. Advertiser [configures](https://support.appsflyer.com/hc/articles/115002504686-Google-AdWords-Integration-Configuration-New-API) Google Ads
-2. Agency [configures](https://support.appsflyer.com/hc/articles/115003669983-Agency-Configuration-for-Google-AdWords-Integration-New-API) Google Ads
-3. Advertiser [configures](https://support.appsflyer.com/hc/articles/4411047077905#google-ads-postback-partner-setup) GAPP X - Google Ads for their CIDs
-4. Agency [configures](https://support.appsflyer.com/hc/articles/4411047077905#google-ads-postback-partner-setup) GAPP X - Google Ads for their CIDs
+1. Advertiser [configures](/docs/google-ads-adwords-integration-setup-for-advertisers) Google Ads
+2. Agency [configures](/docs/google-ads-adwords-integration-setup-for-agencies) Google Ads
+3. Advertiser [configures](/docs/google-ads-postback-partners-configuration#google-ads-postback-partner-setup) GAPP X - Google Ads for their CIDs
+4. Agency [configures](/docs/google-ads-postback-partners-configuration#google-ads-postback-partner-setup) GAPP X - Google Ads for their CIDs
 
 Notice that these must be different CIDs between the advertiser and agency.
 
 ## Available parameters for GAPPs
 
-**The contents of the postbacks depend on the initial integration of the GAPPs with AppsFlyer** and are unrelated to any advertiser configuration. Therefore, any two GAPPs may have differently defined postback parameters.
+**The contents of the postbacks depend on the initial integration of the GAPPs with AppsFlyer** and are unrelated to any advertiser configuration. Therefore, any two GAPPs may have differently defined postback parameters.
 
-For example, `campaign type`, `city`, `carrier` and `ad_type` are parameters, which may or may not exist in any GAPP's postback.
+For example, `campaign type`, `city`, `carrier` and `ad_type` are parameters, which may or may not exist in any GAPP's postback.
 
 There are two sources for GAPP postback parameters:
 
-1. **AppsFlyer macros** - for details of all the macros available on AppsFlyer's postbacks, click [here](https://support.appsflyer.com/hc/articles/207273946-Available-Macros-on-AppsFlyer-s-Postbacks).
+1. **AppsFlyer macros** - for details of all the macros available on AppsFlyer's postbacks, click [here](/docs/postback-macros-for-ad-networks).
 2. **Google Response** - with every install attributed to Google Ads, AppsFlyer receives relevant information from Google. The following are available parameters on GAPPs postbacks, as received by AppsFlyer from Google Ads (for detailed parameter descriptions, click [here](https://developers.google.com/app-conversion-tracking/api/request-response-specs#sample_responses))
-   - Ad Events ID
-   - Campaign ID
-   - Campaign Name
-   - Campaign Type
-   - External Customer ID (CID)
-   - Network Type
-   - Network Sub Type
-   - Timestamp
-   - Video ID
-   - Ad Group ID
-   - Creative ID
-   - Keyword
-   - Match Type
-   - Placement
-   - Interaction Type
-   - Ad Type
-   - Conversion Metric
-   - Location
+   * Ad Events ID
+   * Campaign ID
+   * Campaign Name
+   * Campaign Type
+   * External Customer ID (CID)
+   * Network Type
+   * Network Sub Type
+   * Timestamp
+   * Video ID
+   * Ad Group ID
+   * Creative ID
+   * Keyword
+   * Match Type
+   * Placement
+   * Interaction Type
+   * Ad Type
+   * Conversion Metric
+   * Location
 
-> 📘 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > The information available is based solely on the information sent by Google to AppsFlyer. If, for some reason, Google does not send an install's information, AppsFlyer can't pass it on to the GAPP.

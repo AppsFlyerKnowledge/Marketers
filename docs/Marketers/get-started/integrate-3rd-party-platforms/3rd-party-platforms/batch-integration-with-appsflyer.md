@@ -8,13 +8,13 @@ Batch allows advertisers to maximize user engagement while offering a personaliz
 
 > ❗️ Important
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Integrating Batch and AppsFlyer
 
 ### Setting Customer User ID
 
-In order for Batch to be able to match data from AppsFlyer with its own data, the advertiser must provide the same [Customer User ID](https://support.appsflyer.com/hc/articles/207032016-Customer-User-ID) to both. The Customer User ID is set in the SDK.
+In order for Batch to be able to match data from AppsFlyer with its own data, the advertiser must provide the same [Customer User ID](/docs/customer-user-id-field-cuid) to both. The Customer User ID is set in the SDK.
 
 It's important that you put a real Customer User ID, and not a placeholder value. A real Customer User ID is a user ID that you use to identify your customers in your own systems.
 
@@ -112,7 +112,7 @@ The Batch configuration only requires the **Integration** tab. The other four ta
 
 On the **first visit** here, you will need to toggle ON the **Activate Partner** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.
 
-For more details about partner activation please click [here](https://support.appsflyer.com/hc/articles/360000844778).
+For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 
 ##### General Settings
 

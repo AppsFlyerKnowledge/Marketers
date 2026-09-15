@@ -10,9 +10,9 @@ Ad networks after setting up integration and postbacks must test integration usi
 
 | Test app type | App name or ID |
 | --- | --- |
-| [Android](https://support.appsflyer.com/hc/articles/360001300998#part-2-test-using-advertiser-apps) | com.appsflyer.adNetworkTest |
-| [iOS](https://support.appsflyer.com/hc/articles/360016588278) | id1543229303 |
-| [SKAdNetwork](https://support.appsflyer.com/hc/articles/360011502657-SKAdNetwork-integration-guide-for-ad-networks) | - id888707085<br>- id888707086<br>- id888707087 |
+| [Android](/docs/getting-started-onboarding-guide-for-ad-networks#part-2-test-using-advertiser-apps) | com.appsflyer.adNetworkTest |
+| [iOS](/docs/ios-integration-testing-for-ad-networks) | id1543229303 |
+| [SKAdNetwork](/docs/skan-integration-guide-for-ad-networks) | - id888707085<br />- id888707086<br />- id888707087 |
 
 ### Activation procedure
 

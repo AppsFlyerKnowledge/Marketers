@@ -17,12 +17,12 @@ Recording events can help you determine:
 
 > 📘 Important!
 >
-> * Make sure to read the [instructions](https://support.appsflyer.com/hc/articles/115005544169-Rich-in-app-events-guide#setting-up-inapp-events) for marketers about implementing in-app events.
+> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](https://evgen.appsflyer.com/?vertical=ecommerce). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
 > * For each recommended event included in this article, there are [code samples](https://evgen.appsflyer.com/?vertical=ecommerce&view=code) for iOS, Android, and Unity developers.
 > * Detailed instructions for your developer can be found in the [**AppsFlyer developer hub**](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions) **.**
 
-For more information about recording in-app events, see the [In-app events guide](https://support.appsflyer.com/hc/articles/115005544169).
+For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
 
 ![Flowchart_for_recommended_events e-Commerce_app_user_journey](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)
 
@@ -99,9 +99,9 @@ When the user views a specific product details page
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_price | Product price | 2000 |
-| af\_content | International Article Number (EAN) when applicable, or other product or content identifier<br>**Required parameter for Meta ads dynamic ads** | ABC123 |
-| af\_content\_id | Product ID<br>**Required parameter for Meta ads dynamic ads** | 102 |
-| af\_content\_type | Item category<br>**Required parameter for Meta ads dynamic ads**<br>**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shoes |
+| af\_content | International Article Number (EAN) when applicable, or other product or content identifier<br />**Required parameter for Meta ads dynamic ads** | ABC123 |
+| af\_content\_id | Product ID<br />**Required parameter for Meta ads dynamic ads** | 102 |
+| af\_content\_type | Item category<br />**Required parameter for Meta ads dynamic ads**<br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shoes |
 | af\_currency | Currency on the product details page | THB, USD |
 
 ### List view (af\_list\_view)
@@ -118,7 +118,7 @@ When the user views a specific list
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| af\_content\_type | Item category<br>**Required parameter for Meta ads dynamic ads**<br>**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Related, recommended, new arrivals |
+| af\_content\_type | Item category<br />**Required parameter for Meta ads dynamic ads**<br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Related, recommended, new arrivals |
 | af\_content\_list | List of content IDs from the category | 001, 092 |
 
 ### Add to wishlist (af\_add\_to\_wishlist)
@@ -137,7 +137,7 @@ When the user adds items to their wishlist
 | --- | --- | --- |
 | af\_price | Price of the product | 600 |
 | af\_content\_id | Product ID | 300 |
-| af\_content\_type | Item category<br>**Required parameter for Meta ads dynamic ads**<br>**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shoes, electronics |
+| af\_content\_type | Item category<br />**Required parameter for Meta ads dynamic ads**<br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shoes, electronics |
 | af\_currency | Currency displayed on the product details page | GBP |
 
 ### Add to cart (af\_add\_to\_cart)
@@ -159,9 +159,9 @@ When the user adds a product to the cart
 | Field name | Description | Example value |
 | --- | --- | --- |
 | af\_price | Product price | 350, 1000 |
-| af\_content | International Article Number (EAN) when applicable, or other product or content identifier<br>**Required parameter for Meta ads dynamic ads** | ABC123 |
-| af\_content\_id | Product ID<br>**Required parameter for Meta ads dynamic ads** | 001, 092 |
-| af\_content\_type | Item category<br>**Required parameter for Meta ads dynamic ads**<br>**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shirt, shoes |
+| af\_content | International Article Number (EAN) when applicable, or other product or content identifier<br />**Required parameter for Meta ads dynamic ads** | ABC123 |
+| af\_content\_id | Product ID<br />**Required parameter for Meta ads dynamic ads** | 001, 092 |
+| af\_content\_type | Item category<br />**Required parameter for Meta ads dynamic ads**<br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shirt, shoes |
 | af\_currency | Product currency | THB, USD |
 | af\_quantity | How many items of the same product were added to the cart | 2, 5 |
 
@@ -184,7 +184,7 @@ When the user initiates the checkout but didn't yet complete the checkout
 | --- | --- | --- |
 | af\_price | Total price in the cart | 4000 |
 | af\_content\_id | ID of products in the cart | 221, 124 |
-| af\_content\_type | Item category<br>**Required parameter for Meta ads dynamic ads**<br>**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shirt, pants |
+| af\_content\_type | Item category<br />**Required parameter for Meta ads dynamic ads**<br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shirt, pants |
 | af\_currency | Currency during time of checkout | THB |
 | af\_quantity | Total number of items in the cart | 2, 5 |
 
@@ -206,15 +206,15 @@ When the user lands on the thank you page after a successful purchase
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](https://support.appsflyer.com/hc/articles/115005544169-Rich-in-app-events-Overview#revenue-events) | Estimated revenue from the purchase | 1205.99 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Estimated revenue from the purchase | 1205.99 |
 | af\_price | Overall purchase sum | 4000 |
-| af\_content | International Article Number (EAN) when applicable, or other product or content identifier<br>**Required parameter for Meta ads** **dynamic ads** | ABC123 |
-| af\_content\_id | Item ID<br>**Required parameter for Meta ads dynamic ads** | 121, 262 |
-| af\_content\_type | Item category<br>**Required parameter for Meta ads dynamic ads**<br>**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | product\_group |
+| af\_content | International Article Number (EAN) when applicable, or other product or content identifier<br />**Required parameter for Meta ads** **dynamic ads** | ABC123 |
+| af\_content\_id | Item ID<br />**Required parameter for Meta ads dynamic ads** | 121, 262 |
+| af\_content\_type | Item category<br />**Required parameter for Meta ads dynamic ads**<br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | product\_group |
 | af\_currency | Currency code | AUD |
 | af\_quantity | Number of items in the cart | 2, 5 |
 | af\_order\_id | ID of the order that is generated after the purchase | X123ABC |
-| af\_receipt\_id | Order ID<br>**Required parameter for CRITEO and Google Ad Words for purchase validation** | X123ABC |
+| af\_receipt\_id | Order ID<br />**Required parameter for CRITEO and Google Ad Words for purchase validation** | X123ABC |
 
 ## Recommended structures for custom events
 
@@ -224,7 +224,7 @@ The following section provides a list of event structures that include custom ev
 
 **Purpose**
 
-Same as the [Purchase](https://support.appsflyer.com/hc/articles/360019347957#purchase-af_purchase) event. In addition, this event can help you determine:
+Same as the [Purchase](/docs/recommended-ecommerce-app-events#purchase-af_purchase) event. In addition, this event can help you determine:
 
 - How long it takes a new buyer to purchase
 - What products first-time buyers prefer to purchase
@@ -238,15 +238,15 @@ When the user completes their first purchase
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](https://support.appsflyer.com/hc/articles/115005544169-Rich-in-app-events-Overview#revenue-events) | Revenue from purchase | 1205.99 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Revenue from purchase | 1205.99 |
 | af\_price | Overall purchase sum | 4000 |
-| af\_content | International Article Number (EAN) when applicable, or other product or content identifier<br>**Required parameter for Meta ads dynamic ads** | ABC123 |
-| af\_content\_id | Item ID<br>**Required parameter for Meta ads dynamic ads** | 121, 262 |
-| af\_content\_type | Item category<br>**Required parameter for Meta ads dynamic ads**<br>**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shoes, pants |
+| af\_content | International Article Number (EAN) when applicable, or other product or content identifier<br />**Required parameter for Meta ads dynamic ads** | ABC123 |
+| af\_content\_id | Item ID<br />**Required parameter for Meta ads dynamic ads** | 121, 262 |
+| af\_content\_type | Item category<br />**Required parameter for Meta ads dynamic ads**<br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shoes, pants |
 | af\_currency | Currency | AUD |
 | af\_quantity | Quantity of items in the cart | 2, 5 |
 | af\_order\_id | ID of the order that is generated after the purchase | X123ABC |
-| af\_receipt\_id | Order ID<br>**Required parameter for CRITEO and Google AdWords retargeting integration** | X123ABC |
+| af\_receipt\_id | Order ID<br />**Required parameter for CRITEO and Google AdWords retargeting integration** | X123ABC |
 
 ### Remove from cart (remove\_from\_cart)
 
@@ -256,7 +256,7 @@ Recording this event can help you:
 
 - Determine what items buyers remove from their cart
 - Determine the product categories of items that buyers remove from their cart
-- Compare the data from the [Add to cart](https://support.appsflyer.com/hc/articles/360019347957#add-to-cart-af_add_to_cart) event to gain insights into products that don't make it to checkout
+- Compare the data from the [Add to cart](/docs/recommended-ecommerce-app-events#add-to-cart-af_add_to_cart) event to gain insights into products that don't make it to checkout
 
 **Trigger**
 
@@ -267,4 +267,4 @@ When the user removes an item from the cart
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_content\_id | Item or product ID | 521 |
-| af\_content\_type | Item category<br>**Required parameter for Meta ads dynamic ads**<br>**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shoes |
+| af\_content\_type | Item category<br />**Required parameter for Meta ads dynamic ads**<br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shoes |

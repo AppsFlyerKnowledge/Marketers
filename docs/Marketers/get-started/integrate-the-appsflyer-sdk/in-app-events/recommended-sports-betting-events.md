@@ -15,12 +15,12 @@ Recording events can help you determine:
 
 > 📘 Important!
 >
-> - Make sure to read the [instructions](https://support.appsflyer.com/hc/articles/115005544169-Rich-in-app-events-guide#setting-up-inapp-events) for marketers about implementing in-app events.
+> - Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
 > - (Coming soon) To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=gaming). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
 > - For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=gaming&view=code) for iOS, Android, and Unity developers.
 > - Detailed instructions for your developer can be found in the **[AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).**
 
-For more information about recording in-app events, see the [In-app events guide](https://support.appsflyer.com/hc/articles/115005544169).
+For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
 
 ![In_appEvents_UserJourneys_-_Sports_betting__5_.png](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)
 
@@ -81,7 +81,7 @@ First time the user makes a deposit into their betting account
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](https://support.appsflyer.com/hc/articles/115005544169#revenue-events) | Monetary value of the deposit that was made | 200 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Monetary value of the deposit that was made | 200 |
 | af\_currency | Currency in which the deposit was made | AUD |
 
 ### Deposit (deposit)
@@ -98,7 +98,7 @@ Subsequent deposit the user makes after the first time deposit
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](https://support.appsflyer.com/hc/articles/115005544169#revenue-events) | Monetary value of the deposit that was made | 200 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Monetary value of the deposit that was made | 200 |
 | af\_currency | Currency in which the deposit was made | AUD |
 
 ### Placed bet (placed\_bet)
@@ -136,7 +136,7 @@ When a user withdraws money from their betting account
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](https://support.appsflyer.com/hc/articles/115005544169#revenue-events) | Monetary value of the withdrawal. Record as a negative revenue value. | -100 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Monetary value of the withdrawal. Record as a negative revenue value. | -100 |
 | af\_currency | Currency that was withdrawn | AUD |
 
 ### Bonus bet (bonus\_bet)

@@ -31,7 +31,7 @@ The organic search attribution flow works as follows:
 **To set up organic search attribution**:
 
 1. Tell your developers to enable app opening by following the instructions for [Android App Links](https://dev.appsflyer.com/hc/docs/dl_android_init_setup#app-opening-methods) and [iOS Universal Links](https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#app-opening-methods) (using the app's top-level domain).
-2. In AppsFlyer, from the side menu, select **Settings** \> [App Settings](https://support.appsflyer.com/hc/articles/211719806), and turn on:
+2. In AppsFlyer, from the side menu, select **Settings** \> [App Settings](/docs/app-settings), and turn on:
    - **SEO (organic search) and AEO mobile app re-engagement attribution.**
    - **Re-engagement attribution**.
 

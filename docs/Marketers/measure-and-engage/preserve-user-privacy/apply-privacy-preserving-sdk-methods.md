@@ -29,7 +29,7 @@ Attribution does **not** occur when:
 
 | Use case | Description |
 | --- | --- |
-| Opt-in or opt-out on launch | Call `start` after the user consents to share data on the first launch.<br>If the user does not consent to share data, don’t call<br>`start` at all. |
+| Opt-in or opt-out on launch | Call `start` after the user consents to share data on the first launch.<br />If the user does not consent to share data, don’t call<br />`start` at all. |
 | Session opt-out | In every app session, ask for consent and call or do not call `start` accordingly. |
 | One-time opt-out (When a user opts-in and then decides to opt-out). | Call `stop` to stop the SDK from sending further events. |
 
@@ -143,7 +143,7 @@ The SDK API includes the following methods to disable identifiers.
 
 | Method | Identifiers disabled |
 | --- | --- |
-| [`setdisableadvertisingIdentifiers`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisableadvertisingidentifiers) | \* Google Advertising ID (GAID)<br>\* Open Anonymous Device Identifier (OAID)<br>\* Amazon Advertising ID (AAID) |
+| [`setdisableadvertisingIdentifiers`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisableadvertisingidentifiers) | \* Google Advertising ID (GAID)<br />\* Open Anonymous Device Identifier (OAID)<br />\* Amazon Advertising ID (AAID) |
 | [`setcollectoaid`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectoaid) | Open Anonymous Device Identifier (OAID) |
 
 ### iOS identifiers

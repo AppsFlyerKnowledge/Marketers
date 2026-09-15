@@ -18,9 +18,9 @@ excerpt: "Starting iOS 14, iOS uses ATT to determine user privacy preferences an
 
 | ATT status | IDFA availability | Behavior |
 | --- | --- | --- |
-| not\_determined | In iOS 14-14.4: Available<br>Starting iOS 14.5: Not available | ATT default value |
+| not\_determined | In iOS 14-14.4: Available<br />Starting iOS 14.5: Not available | ATT default value |
 | restricted | Not available | This is determined by Apple based on the iTunes account and is not related to user behavior. For example, based on user age, devices controlled by organizations. |
-| denied | Not available | Occurs if any of the following are true:<br>- Set after displaying the prompt<br>- The user turned off _Allow Apps to Request to Track_ (master switch at the device level)<br>- Before installing iOS 14 on the device, LAT was on |
+| denied | Not available | Occurs if any of the following are true:<br />- Set after displaying the prompt<br />- The user turned off _Allow Apps to Request to Track_ (master switch at the device level)<br />- Before installing iOS 14 on the device, LAT was on |
 | authorized | Available | The user explicitly gave consent. |
 
 #### Additional ATT values defined by AppsFlyer
@@ -28,14 +28,14 @@ excerpt: "Starting iOS 14, iOS uses ATT to determine user privacy preferences an
 | ATT status | Remark | IDFA availability |
 | --- | --- | --- |
 | af\_unknown | ATT value was reported by the advertiser but is not a known value per the [ATTrackingManager](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/) specification | iOS version-dependent |
-| af\_authorized | IDFA use is permitted for one of the following reasons: <br>- Device iOS version: prior to iOS 14.<br>- The event reported contained IDFA but not ATT. For example, an app having SDK V5.X on a device running an iOS version before iOS 14. | Available |
-| af\_unavailable | - ATT was not reported in the event by the advertiser and IDFA is not available.<br>- AppsFlyer SDK version V5.X is unable to get ATT and did not get IDFA | Not available |
+| af\_authorized | IDFA use is permitted for one of the following reasons: <br />- Device iOS version: prior to iOS 14.<br />- The event reported contained IDFA but not ATT. For example, an app having SDK V5.X on a device running an iOS version before iOS 14. | Available |
+| af\_unavailable | - ATT was not reported in the event by the advertiser and IDFA is not available.<br />- AppsFlyer SDK version V5.X is unable to get ATT and did not get IDFA | Not available |
 
 ### Is LAT in iOS—considerations and how LAT translates to ATT in iOS 14
 
 | iOS version | Use of Is LAT |
 | --- | --- |
-| Until iOS 13 | <Image src="https://files.readme.io/28440075d9c3913a148228a85ede15048d76f24913b48799ec4de3952d8f33e7-360011938457.png" alt="IsLatTrue_us-en.png" /><br>If true, the user-enabled Limit Ad Tracking, IDFA is not available. |
+| Until iOS 13 | <Image src="https://files.readme.io/28440075d9c3913a148228a85ede15048d76f24913b48799ec4de3952d8f33e7-360011938457.png" alt="IsLatTrue_us-en.png" /><br />If true, the user-enabled Limit Ad Tracking, IDFA is not available. |
 | Starting in iOS 14 | [Apple deprecated I _s LAT_](https://developer.apple.com/documentation/adsupport/asidentifiermanager/1614148-isadvertisingtrackingenabled). Disregard the _Is LAT_ value and use ATT instead. |
 
 **How LAT translates to ATT in iOS 14**

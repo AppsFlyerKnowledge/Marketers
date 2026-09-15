@@ -29,7 +29,7 @@ See below AppsFlyer’s base attribution link with a detailed explanation per ma
 | http://app.appsflyer.com | AppsFlyer end point |  |
 | app\_id | Application unique ID – dynamic value changed per app promoted |  |
 | pid= | Media source name concatenated with \_int to identify integrated networks |  |
-| c= | Campaign name | {offer\_id} |
+| c= | Campaign name | `{offer\_id}` |
 
 See below for an example of an attribution Link once you have added additional Offerslook macros:
 
@@ -37,7 +37,7 @@ See below for an example of an attribution Link once you have added additional O
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={click_id}&af_siteid={aff_id}&advertising_id={ga_id}&idfa={idfa}
 ```
 
-For a complete list of AppsFlyer parameters, click [here](https://support.appsflyer.com/hc/articles/207447163).
+For a complete list of AppsFlyer parameters, click [here](/docs/about-link-structure-and-parameters).
 
 Available Macros on AppsFlyer Attribution Links
 
@@ -47,8 +47,8 @@ The following macros are available to use within the generated link:
 | --- | --- | --- |
 | pid | Media source name - provided by AppsFlyer and should not be changed |  |
 | c | Campaign name |  |
-| clickid | The Ad network unique click identifier | {click\_id} |
-| af\_siteid | Ad network publisher ID | {aff\_id} |
+| clickid | The Ad network unique click identifier | `{click\_id}` |
+| af\_siteid | Ad network publisher ID | `{aff\_id}` |
 
 #### New Macros
 
@@ -56,7 +56,7 @@ The new set of macros adds a number of additional parameters in a clear, standar
 
 | **Macro Name** | **Description** | **Offerslook** |
 | --- | --- | --- |
-| af\_c\_id | Campaign ID - provided by the advertiser | {adv\_sub1}<br>{adv\_sub2}<br>{adv\_sub3} |
+| af\_c\_id | Campaign ID - provided by the advertiser | `{adv\_sub1}<br />{adv\_sub2}<br />{adv\_sub3}` |
 | af\_adset | Adset name - provided by the advertiser. Adset is an intermediate level in the hierarchy between **Campaign** and **Ad**. |  |
 | af\_adset\_id | Adset ID |  |
 | af\_ad | Ad name |  |
@@ -64,17 +64,17 @@ The new set of macros adds a number of additional parameters in a clear, standar
 | af\_ad\_type | Ad type - use anything that "describes" the ad format (examples: video or banner, medium size or big size) |  |
 | af\_channel | The channel through which the ads are distributed (for example: YouTube vs Google Search) |  |
 | af\_keywords | Keywords list for text-targeted campaigns |  |
-| af\_cost\_model | Cost model - CPI is currently supported and the default model. CPC and CPA values are also valid. | {pricing\_type} |
-| af\_cost\_currency | Currency code (example: USD) | {currency} |
-| af\_cost\_value | Cost value | {revenue} |
+| af\_cost\_model | Cost model - CPI is currently supported and the default model. CPC and CPA values are also valid. | `{pricing\_type}` |
+| af\_cost\_currency | Currency code (example: USD) | `{currency}` |
+| af\_cost\_value | Cost value | `{revenue}` |
 
 **Android Specific Macros**
 
 | **Macro Name** | **Description** | **Offerslook** |
 | --- | --- | --- |
-| android\_id | Device Android\_id - Requires ad network support | {android\_id} |
+| android\_id | Device Android\_id - Requires ad network support | `{android\_id}` |
 | sha1\_android\_id | Device Android\_id hashed with SHA1 - Requires ad network support |  |
-| advertising\_id | Google Advertising ID - Requires ad network support | {ga\_id} |
+| advertising\_id | Google Advertising ID - Requires ad network support | `{ga\_id}` |
 | sha1\_advertising\_id | Google Advertising ID hashed with SHA1 - Requires ad network support |  |
 | af\_r | For out of store only - Target redirect URL |  |
 | sha1\_el | Used for desktop to mobile attribution - email hashed with SHA1, requires ad network support |  |
@@ -83,9 +83,9 @@ The new set of macros adds a number of additional parameters in a clear, standar
 
 | **Macro Name** | **Description** | **Offerslook** |
 | --- | --- | --- |
-| idfa | Apple Advertiser ID - should be provided using upper case format, requires ad network support | {idfa} |
+| idfa | Apple Advertiser ID - should be provided using upper case format, requires ad network support | `{idfa}` |
 | sha1\_idfa | Apple Advertiser ID hashed with SHA1 - Requires ad network support |  |
-| mac | Device mac address - Requires ad network support | {mac} |
+| mac | Device mac address - Requires ad network support | `{mac}` |
 | sha1\_mac | Device mac address hashed with SHA1 - Requires ad network support |  |
 
 ## Creating your Install Postbacks
@@ -99,7 +99,7 @@ Following is a step-by-step explanation of how to create your install postbacks 
 
 Global Install Postback:
 
-http://{networkname}.offerstrack.net/advBack.php?click\_id={click\_id}&adv\_id={adv\_id}
+http://`{networkname}.offerstrack.net/advBack.php?click\_id={click\_id}&adv\_id={adv\_id}`
 
 `networkname` is the domain name provided by Offerslook.
 

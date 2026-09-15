@@ -17,10 +17,10 @@ excerpt: "Learn how to set up the integration between AppsFlyer and venedash to 
 
 | AppsFlyer parameter | venedash parameter | Description |
 | --- | --- | --- |
-| &clickid= | {#ydrid#} | Request ID of each user session |
-| &af\_siteid= | {#ydr\_pid#} | ID of the affiliate who promotes the offer |
-| &advertising\_id | {#android\_adv#} | Android device ID |
-| &idfa= | {#iosidfa#} | ​iOS device ID |
+| &clickid= | `{#ydrid#}` | Request ID of each user session |
+| &af\_siteid= | `{#ydr\_pid#}` | ID of the affiliate who promotes the offer |
+| &advertising\_id | `{#android\_adv#}` | Android device ID |
+| &idfa= | `{#iosidfa#}` | ​iOS device ID |
 
 > 📘 Note
 >
@@ -32,7 +32,7 @@ Example:
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=#ydrid#&af_siteid=#ydr_pid#&advertising_id=advertising_id&idfa=#iosidfa#
 ```
 
-Learn more about [attribution link parameters](https://support.appsflyer.com/hc/articles/207447163-AppsFlyer-Tracking-Link-Structure-and-Parameters).
+Learn more about [attribution link parameters](/docs/about-link-structure-and-parameters).
 
 4. In Venedash, create an offer and paste the AppsFlyer attribution link in the Destination URL field.
 

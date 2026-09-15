@@ -2,13 +2,11 @@
 title: "Adquant by Kenshoo - Google Ads—Campaign configuration"
 excerpt: "Learn how to configure Adquant by Kenshoo to optimize your Google Ads campaigns and send postbacks from AppsFlyer."
 ---
-Optimize Google AdWords campaigns by using Adquant by Kenshoo. When configured, AppsFlyer sends postbacks to Adquant.
+**At a glance:** Optimize Google AdWords campaigns by using Adquant by Kenshoo. When configured, AppsFlyer sends postbacks to Adquant.
 
 ## Setting up Adquant by Kenshoo
 
-> 📘 Prerequisite
->
-> Before setting up the integration, make sure you contact the partner and open an account with them.
+**Prerequisite:** Before setting up the integration, make sure you contact the partner and open an account with them.
 
 **New integration:**
 
@@ -22,13 +20,18 @@ Optimize Google AdWords campaigns by using Adquant by Kenshoo. When configured, 
 
 In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations** tab, search for the partner, and make your changes.
 
-> 🚧 Note
+> 📘 **Note**
+>
+> #### Note
 >
 > The Google Ads Customer ID must be entered **without** hyphens.
 
+
 6. From your **Google Ads** account, copy the Customer ID (without hyphens) from the top left-hand corner and paste it to the AppsFlyer **Ads Customer ID** parameter as shown in the screenshots below.
 
-7. Enter the **Action Identifier**, **Disable_Country_Sending** (provided by Adquant) and the **Google Ads Customer ID** number in the appropriate fields.
+[![](https://support.appsflyer.com/hc/article_attachments/21414640108689)](https://support.appsflyer.com/hc/article_attachments/21414640108689)
+
+7. Enter the **Action Identifier**, **Disable\_Country\_Sending** (provided by Adquant) and the **Google Ads Customer ID** number in the appropriate fields.
 
 ### In-app events
 
@@ -40,7 +43,9 @@ In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations**
 
 4. Click **Save**
 
-> 🚧 Important Note
+> 📘 **Note**
+>
+> #### Important Note
 >
 > * Disabling attribution for Google Ads prevents sending postbacks to Google Ads Partners.
 > * You can configure multiple Google Ads accounts (CID) to send postbacks (step 5) by separating each CID with a comma.

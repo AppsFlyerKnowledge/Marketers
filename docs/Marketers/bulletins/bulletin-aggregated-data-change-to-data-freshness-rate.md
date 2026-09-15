@@ -2,25 +2,12 @@
 title: "Bulletin: Aggregated data change to data freshness rate"
 excerpt: "An overview of the changes to the data freshness rates of installs and in-app event data in AppsFlyer analytics reports and dashboards."
 ---
-| Headline | Data freshness rate of installs and in-app events in analytics reports and dashboards |
-| Bulletin date | August 24, 2021 |
-| What's changing | The data freshness rates of installs and in-app event data is changing. The table details the freshness before and after the change.
+<table><tbody><tr><td>Headline</td><td>Data freshness rate of installs and in-app events in analytics reports and dashboards</td></tr><tr><td><span>Bulletin date</span></td><td>August 24, 2021</td></tr><tr><td><p>What's changing</p></td><td><p>The data freshness rates of installs and in-app event data is changing. The table details the freshness before and after the change. </p><h4>Data freshness rate per event type</h4><table><tbody><tr><th>Event type</th><th>Before the change (minutes)</th><th><p>After the change</p><p>(minutes)</p></th></tr><tr><td>Install, re-attribution, re-engagement</td><td>3-5 </td><td>15-30 </td></tr><tr><td>In-app event</td><td>90 </td><td>30-60</td></tr></tbody></table></td></tr><tr><td>Where is it changing</td><td><p>The data freshness change affects the dashboards and reporting tools listed. The change takes place in phases as follows:</p><p><strong>Phase 1—s<span>tarting September 12, 2021 (subject to change)</span></strong><span></span></p><ul><li>Dashboards:<ul><li>Overview</li><li>Overview V2</li><li>Retargeting </li><li>Events</li><li>Custom </li></ul></li><li>Aggregated reports via Pull API</li></ul><p><strong>Phase 2—starting <span>October 6, 2021 (planned) </span></strong></p><ul><li>Dashboards:<ul><li>Activity</li><li>Cohort </li></ul></li><li>API: Cohort</li></ul></td></tr><tr><td>What's not changing</td><td>Master API and raw data </td></tr><tr><td>Action required</td><td><ul><li>When viewing or downloading data, consider the changed data freshness.</li><li>If you use the Overview dashboard to test SDK integration or integration with an ad network partner, install events will take longer to display. Consider using raw data reports to verify your integration tests. </li></ul></td></tr></tbody></table>
 
-#### Data freshness rate per event type
 
-| Event type | Before the change (minutes) | After the change<br>(minutes) |
-| --- | --- | --- |
-| Install, re-attribution, re-engagement | 3-5 | 15-30 |
-| In-app event | 90 | 30-60 | |
-| Where is it changing | The data freshness change affects the dashboards and reporting tools listed. The change takes place in phases as follows:<br>**Phase 1—starting September 12, 2021 (subject to change)**<br>- Dashboards:<br>  - Overview<br>  - Overview V2<br>  - Retargeting <br>  - Events<br>  - Custom<br>- Aggregated reports via Pull API<br>**Phase 2—starting October 6, 2021 (planned)**<br>- Dashboards:<br>  - Activity<br>  - Cohort<br>- API: Cohort |
-| What's not changing | Master API and raw data |
-| Action required | - When viewing or downloading data, consider the changed data freshness.<br>- If you use the Overview dashboard to test SDK integration or integration with an ad network partner, install events will take longer to display. Consider using raw data reports to verify your integration tests. |
-
-<Cards>
-  <Card title="AppsFlyer data freshness" href="https://support.appsflyer.com/hc/articles/360000310629">
-    Learn more about how data freshness works in AppsFlyer.
-  </Card>
-  <Card title="What's new in AppsFlyer" href="https://support.appsflyer.com/hc/articles/360003083598">
-    Stay up to date with the latest product updates and announcements.
-  </Card>
-</Cards>
+> 📘 **Note**
+>
+> #### See also
+>
+> * [AppsFlyer data freshness](/docs/about-data-freshness-and-timezone-support)
+> * What's new in AppsFlyer

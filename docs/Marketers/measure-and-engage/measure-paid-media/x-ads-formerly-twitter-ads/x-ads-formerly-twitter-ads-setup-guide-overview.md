@@ -38,7 +38,7 @@ For more detailed information, contact your X Ads Account Manager.
 
 ## X Ads and AppsFlyer SKAN interoperation
 
-X Ads sends SKAdNetwork postback data via a dedicated API. SKAN data from X Ads will be displayed in the [SKAN dashboard](https://support.appsflyer.com/hc/articles/360011307357-SKAdNetwork-SKAN-dashboard-by-AppsFlyer).
+X Ads sends SKAdNetwork postback data via a dedicated API. SKAN data from X Ads will be displayed in the [SKAN dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer).
 
 X Ads enriches SKAN postbacks with the following data fields:
 

@@ -6,7 +6,7 @@ Xsolla, an AppsFlyer integrated partner, is a gaming commerce tech partner speci
 
 > ❗️ Important!
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Integration types
 
@@ -17,7 +17,7 @@ There are two available integration methods with Xsolla:
 
 **Prerequisites:**
 
-- Before setting up the integration, make sure you [contact the partner](https://support.appsflyer.com/hc/articles/9960361873809#contact-details) and open an account with them.
+- Before setting up the integration, make sure you [contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
 - To enable the integration to function properly, make sure to share the Customer User ID (CUID) with AppsFlyer, and that it matches the user ID shared with Xsolla. This alignment allows users to log in to Xsolla's Web Shop and ensures that user data is accurately sent to AppsFlyer.
 
 ## Setting up the tech partner integration
@@ -45,15 +45,15 @@ The configuration window only uses the **Integration** tab.
 
 #### Activate partner
 
-On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with Xsolla. Learn more about [partner activation](https://support.appsflyer.com/hc/articles/360000844778).
+On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with Xsolla. Learn more about [partner activation](/docs/partner-activation-deactivation).
 
 #### Advanced Privacy
 
-For iOS apps, the [Advance Privacy](https://support.appsflyer.com/hc/articles/360018515798) toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the [Aggregated Advanced Privacy](https://support.appsflyer.com/hc/articles/360018515798) toggle is turned on in the App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked by default.
+For iOS apps, the [Advance Privacy](/docs/apply-aggregated-advanced-privacy-framework) toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the [Aggregated Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework) toggle is turned on in the App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked by default.
 
 #### Default postbacks
 
-AppsFlyer sends default postbacks to Xsolla following user installs. Use this section to [define these postbacks](https://support.appsflyer.com/hc/articles/4410395957521#default%20postbacks).
+AppsFlyer sends default postbacks to Xsolla following user installs. Use this section to [define these postbacks](/docs/set-up-an-integrated-partner#default%20postbacks).
 
 - **Off:** Install postbacks aren't sent to Xsolla.
 
@@ -77,10 +77,10 @@ In this section, you can map your AppsFlyer events with your partners via postba
 
 | Parameter Name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br>**Note:**<br>   - For Xsolla, make sure to add the `af_login` event or any other event that represents user login to the mobile app, as shown in the screenshot above. |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Note:**<br />   - For Xsolla, make sure to add the `af_login` event or any other event that represents user login to the mobile app, as shown in the screenshot above. |
 | **mapped to partner event** | Enter the corresponding event name you want to send to Xsolla. Xsolla's naming is flexible and any name can be used in this field. |
 | **for users from** | Select **All media sources, including organic** to send postbacks for events attributed to any partner and for organic events. |
-| **including** | - **No values & no revenue**: Send just the event itself without any parameters (values or revenue).<br>   - **Values & no revenue**: Send all the parameters **excluding** the revenue value.<br>   - **Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).<br>Note: Xsolla's integration with AppsFlyer doesn't require sending values or revenue. Therefore, any option selected is applicable. |
+| **including** | - **No values & no revenue**: Send just the event itself without any parameters (values or revenue).<br />   - **Values & no revenue**: Send all the parameters **excluding** the revenue value.<br />   - **Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).<br />Note: Xsolla's integration with AppsFlyer doesn't require sending values or revenue. Therefore, any option selected is applicable. |
 
 4. Click **Save Integration**.
 

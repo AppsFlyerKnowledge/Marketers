@@ -287,7 +287,7 @@ Use status information to answer questions such as:
 | Campaign scope | Creative Management currently supports app promotion campaigns only. |
 | Supported storage sources | Repository sync is currently supported for Google Drive and Dropbox. |
 | Upload destinations vary by network | Supported upload destinations and required fields vary by media source. |
-| Upload method varies by network | Upload method varies by network.<br>Google Ads, Meta Ads, and TikTok support upload directly into campaigns (as ads or creative sets); Unity Ads and Mintegral currently support upload to the network's creative library only. |
+| Upload method varies by network | Upload method varies by network.<br />Google Ads, Meta Ads, and TikTok support upload directly into campaigns (as ads or creative sets); Unity Ads and Mintegral currently support upload to the network's creative library only. |
 | Asset requirements | Creative file formats, dimensions, duration, and size must meet each network's requirements. |
 | Upload history scope | Upload history reflects the upload result, not the creative's ongoing delivery or moderation status. |
 

@@ -27,7 +27,7 @@ Bing, an AppsFlyer ad network integrated partner, is one of the world's leading 
 
 5. Complete the configuration using the relevant tabs, as described below.
 
-See [partner configuration window.](https://support.appsflyer.com/hc/articles/4410395957521#about-the-integrated-partner-page)
+See [partner configuration window.](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page)
 
 ### Integration tab
 
@@ -35,7 +35,7 @@ See [partner configuration window.](https://support.appsflyer.com/hc/articles/44
 
 On the **first visit**, you must toggle ON the _**Activate Partner**_ button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.
 
-For more details about partner activation please click [here](https://support.appsflyer.com/hc/articles/360000844778).
+For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 
 #### Default postbacks
 
@@ -47,11 +47,11 @@ Send automatic postbacks to Bing following user installs.
 
 ### Attribution link tab
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](https://support.appsflyer.com/hc/articles/115005248543-OneLink-overview).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).
 
-[Learn more about attribution link structure and parameters](https://support.appsflyer.com/hc/articles/207447163) **.**
+[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters) **.**
 
-**To generate an attribution link,** follow [these instructions](https://support.appsflyer.com/hc/articles/4410395957521#attribution-link-tab).
+**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 ### Cost tab
 
@@ -63,4 +63,4 @@ Ad revenue is not available for this partner.
 
 ### Permissions tab
 
-See [permissions tab](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+See [permissions tab](/docs/set-up-an-integrated-partner#permissions-tab).

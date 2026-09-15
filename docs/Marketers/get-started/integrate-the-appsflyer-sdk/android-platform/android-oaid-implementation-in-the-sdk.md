@@ -44,7 +44,7 @@ The integration of OAID consists of 3 steps:
 
 ### Opting out of OAID collection
 
-Once the [OAID integration](https://support.appsflyer.com/hc/articles/11000769132945#integration) is complete, the SDK attempts to collect OAID automatically. If you want to prevent the collection of OAID for certain users, tell the developer to use of the following:
+Once the OAID integration is complete, the SDK attempts to collect OAID automatically. If you want to prevent the collection of OAID for certain users, tell the developer to use of the following:
 
 <Tabs>
 <Tab title="Android">

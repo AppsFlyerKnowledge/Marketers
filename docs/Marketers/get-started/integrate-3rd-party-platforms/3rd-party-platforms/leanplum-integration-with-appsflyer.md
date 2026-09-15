@@ -2,21 +2,14 @@
 title: "Leanplum integration with AppsFlyer"
 excerpt: "Learn how to integrate Leanplum with AppsFlyer to send attribution data and postbacks for intelligent mobile marketing campaigns."
 ---
-<Cards>
-  <Card title="Setting up Leanplum" href="#setting-up-leanplum" />
-  <Card title="Integration tab" href="#integration-tab" />
-  <Card title="Attribution link tab" href="#attribution-link-tab" />
-  <Card title="Cost tab" href="#cost-tab" />
-  <Card title="Ad revenue tab" href="#ad-revenue-tab" />
-  <Card title="Permissions tab" href="#permissions-tab" />
-  <Card title="Viewing user attribution data in Leanplum" href="#viewing-user-attribution-data-in-leanplum" />
-</Cards>
-
 **At a glance:** Leanplum, an AppsFlyer integrated partner, is a mobile marketing platform, designed for intelligent action. Its integrated solution delivers engagement across messaging and the in-app experience. Leanplum offers Messaging, Automation, App Editing, Personalization, A/B Testing, and Analytics.
 
-> ❗️ Important!
+> 📘 **Note**
 >
-> [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> #### Important!
+>
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
 
 ## Setting up Leanplum
 
@@ -30,22 +23,17 @@ By default, Leanplum collects the IDFV for iOS and the MD5 hash of the MAC addre
 
 **To set up a new integration:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
-
-( **To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.
-
-> 📘 Note
->
-> The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below.
 
 The Leanplum configuration window uses only the **Integration** tab.
 
-For a detailed description of the Partner Configuration Window Header, click [here](https://support.appsflyer.com/hc/articles/4410395957521#about-the-integrated-partner-page).
+For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
 ## Integration tab
 
@@ -53,9 +41,8 @@ The Integration tab is divided into different sections as described below.
 
 ### Activate partner
 
-On the **first visit** here, you will need to toggle ON the _**Activate Partner**_ button to enable the set up of the Integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.
-
-For more details about partner activation please click [here](https://support.appsflyer.com/hc/articles/360000844778).
+On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable the set up of the Integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
+For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 
 ### General settings
 
@@ -63,7 +50,7 @@ For more details about partner activation please click [here](https://support.ap
 
 Leanplum connects with AppsFlyer via a unique App ID and Client Key. If you don't already have them, you must obtain them from Leanplum to continue with the integration or follow the steps below.
 
-<Image src="https://files.readme.io/0ef9adb16568192e922b33688a0525a3e61bc0f18dfc63e3717390adc34a66c4-360001904209.png" alt="Leanplum_msc_new_3.png" />
+![Leanplum_msc_new_3.png](https://files.readme.io/0ef9adb16568192e922b33688a0525a3e61bc0f18dfc63e3717390adc34a66c4-360001904209.png)
 
 **Sending IDFA or IDFV**
 
@@ -77,13 +64,19 @@ If neither is available, no postback is sent.
 
 Click on your name at the top right of the screen and select **App Settings**
 
+![](https://support.appsflyer.com/hc/en-us/article_attachments/206117303/Leanplum_1.png)
+
 Select an app and click **Keys & Settings**
+
+[![](https://support.appsflyer.com/hc/en-us/article_attachments/206117323/Leanplum_2.png)](https://support.appsflyer.com/hc/en-us/article_attachments/206117323/Leanplum_2.png)
+
+![](https://support.appsflyer.com/hc/en-us/article_attachments/206117343/Leanplum_3.png)
 
 ### Default postbacks
 
 AppsFlyer can send automatic postbacks to Leanplum user installs. Use this section to define sending these postbacks.
 
-<Image src="https://files.readme.io/bb7f10cea006b95701be3fd4beb33fd237e1aa59a148bf2dd88935bf61aed2e1-18274529202193.png" alt="Swrve_msc_new_4.png" />
+![Swrve_msc_new_4.png](https://files.readme.io/bb7f10cea006b95701be3fd4beb33fd237e1aa59a148bf2dd88935bf61aed2e1-18274529202193.png)
 
 Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to Leanplum.
 
@@ -108,5 +101,7 @@ Permissions are not available for Leanplum.
 ## Viewing user attribution data in Leanplum
 
 Once you have set up the integration between Leanplum and Appsflyer, you can access the information by utilizing Leanplum’s targeting and segmentation menu:
+
+[![](https://support.appsflyer.com/hc/en-us/article_attachments/206117523/Leanplum_4.png)](https://support.appsflyer.com/hc/en-us/article_attachments/206117523/Leanplum_4.png)
 
 This menu is available in the Analytics, Messages, A/B Tests, and Users sections of the Leanplum platform. You can filter by, group by, and cohort by this data in Analytics, filter by this data in the Users section, and target by this data in Analytics and A/B Tests.

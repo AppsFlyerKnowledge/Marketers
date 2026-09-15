@@ -32,7 +32,7 @@ By default, Ads Manager uses PST timezone whereas AppsFlyer uses UTC +0 by defau
 
 #### Solution
 
-Configure PST as the timezone for each app in AppsFlyer. Click [here](https://support.appsflyer.com/hc/articles/115000306786-Changing-Time-Zone-for-Existing-Apps) for details of how to change the time zone for existing apps.
+Configure PST as the timezone for each app in AppsFlyer. Click [here](/docs/changing-app-time-zone-settings) for details of how to change the time zone for existing apps.
 
 ### Multi-channel source attribution
 
@@ -60,10 +60,10 @@ To manage the discrepancy, advertisers should keep records of the approximate pe
 
 ### Fewer installs in raw data
 
-In certain instances, due to raw data restrictions from Snapchat, installs via [Aggregated Advanced Privacy](https://support.appsflyer.com/hc/articles/360000732237-AppsFlyer-Help-Center-glossary?query=glossary#aggregated-advancedprivacy) won't show in raw data reports. This means that advertisers may see on the AppsFlyer platform fewer installs in raw data than in aggregated data.
+In certain instances, due to raw data restrictions from Snapchat, installs via [Aggregated Advanced Privacy](/docs/appsflyer-knowledge-base-glossary?query=glossary#aggregated-advancedprivacy) won't show in raw data reports. This means that advertisers may see on the AppsFlyer platform fewer installs in raw data than in aggregated data.
 
 <Cards>
-  <Card title="Snapchat and AppsFlyer SKAdNetwork interoperation" href="https://support.appsflyer.com/hc/articles/360017604077">
+  <Card title="Snapchat and AppsFlyer SKAdNetwork interoperation" href="/docs/skan-interoperation-with-snapchat">
     Learn how Snapchat and AppsFlyer interoperate when using Apple's SKAdNetwork framework.
   </Card>
 </Cards>

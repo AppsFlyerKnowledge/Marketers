@@ -48,17 +48,17 @@ The **Integration** tab includes a number of sections, as described below.
 
 #### Activate partner
 
-To configure the integration, you must first [turn on](https://support.appsflyer.com/hc/articles/11904659502737#activate-partner) the **Activate partner** toggle. Learn more about [activating and deactivating partner integrations](https://support.appsflyer.com/hc/articles/360000844778#activating-a-partner). For additional information, you can reference the [Awin integration page](https://developer.awin.com/docs/appsflyer).
+To configure the integration, you must first [turn on](/docs/amazon-ads-campaign-configuration#activate-partner) the **Activate partner** toggle. Learn more about [activating and deactivating partner integrations](/docs/partner-activation-deactivation#activating-a-partner). For additional information, you can reference the [Awin integration page](https://developer.awin.com/docs/appsflyer).
 
 #### Advanced Privacy
 
-For iOS apps only: Your control over data shared with the partner via postbacks and [reports](https://support.appsflyer.com/hc/articles/360006868017) depends on the **Advanced Privacy (for iOS 14.5+ and later)** toggle state:
+For iOS apps only: Your control over data shared with the partner via postbacks and [reports](/docs/about-raw-data-identifier-restrictions) depends on the **Advanced Privacy (for iOS 14.5+ and later)** toggle state:
 
 | Advanced Privacy: On | Advanced Privacy: Off |
 | --- | --- |
-| Postbacks are sent only for events attributed to the partner | Postbacks are sent according to your configuration:<br>- **All media sources, including organic**<br>- **This partner only** |
+| Postbacks are sent only for events attributed to the partner | Postbacks are sent according to your configuration:<br />- **All media sources, including organic**<br />- **This partner only** |
 | Postbacks are sent according to the [Advanced Privacy template](/docs/advanced-privacy-guide-postback-macros-for-ad-networks) |  |
-| [Aggregated and anonymous data](https://support.appsflyer.com/hc/articles/360018515798-Aggregated-Advanced-Privacy-framework) is shared with the partner, meaning no user-level data (device ID) is shared. |  |
+| [Aggregated and anonymous data](/docs/apply-aggregated-advanced-privacy-framework) is shared with the partner, meaning no user-level data (device ID) is shared. |  |
 
 #### General settings
 
@@ -89,26 +89,26 @@ Configure mapping of in-app events with Awin events, sent via postbacks:
 
 | Parameter name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br>**Tip**: Don't see the event you are looking for?<br>   - Make sure to activate the event on a device with a non-organic installation, and recheck.<br>   - Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](https://support.appsflyer.com/hc/articles/208439256#custom-events) |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<br>   - **Text field:** Get the corresponding event ID from the partner.<br>   - **Drop-down box:** Select the most suitable pre-defined AppsFlyer event.<br>   - **As is**: Send the events as they are, without name mapping. |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<br />   - Make sure to activate the event on a device with a non-organic installation, and recheck.<br />   - Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
+| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<br />   - **Text field:** Get the corresponding event ID from the partner.<br />   - **Drop-down box:** Select the most suitable pre-defined AppsFlyer event.<br />   - **As is**: Send the events as they are, without name mapping. |
 | **for users from** | **This partner only:** You can send in-app event postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner. |
-| **including** | - **No data (default)**: Send only the event itself without any event values.<br>   - **Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).<br>   - **Values without revenue**: Send all the parameters **excluding** the revenue value. |
+| **including** | - **No data (default)**: Send only the event itself without any event values.<br />   - **Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).<br />   - **Values without revenue**: Send all the parameters **excluding** the revenue value. |
 
-3. [Optional] Click the **Add condition**  ![conditional-iae-postbacks-icon.png](https://files.readme.io/c95f88d3e2fce153d0a04390fcbca5dabdb97f93ee700f0d69feb568169fddf0-18532570767761.png) icon to [set conditions](https://support.appsflyer.com/hc/articles/208439256#conditional-inapp-event-postbacks) for an event.
-4. Set the **In-app event postback window**, if required (read more about [in-app event postback window configuration](https://support.appsflyer.com/hc/articles/208439256-In-App-Events-Postback-Configuration#inapp-event-postback-window)).
+3. [Optional] Click the **Add condition**  ![conditional-iae-postbacks-icon.png](https://files.readme.io/c95f88d3e2fce153d0a04390fcbca5dabdb97f93ee700f0d69feb568169fddf0-18532570767761.png) icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
+4. Set the **In-app event postback window**, if required (read more about [in-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).
 5. Click **Save integration**.
 6. [Optional]After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
 1. From the top-left corner, under the partner name, click the app name to open the list of apps.
 2. Select a different app from the drop-down list.
-3. Repeat the [integration steps](https://support.appsflyer.com/hc/articles/11904659502737#integration-tab) for the selected app.
+3. Repeat the [integration steps](/docs/amazon-ads-campaign-configuration#integration-tab) for the selected app.
 
 > 📘 Note
 >
-> For iOS apps only: Your control over data shared with the partner via postbacks and [reports](https://support.appsflyer.com/hc/articles/360006868017) depends on the **Advanced Privacy (for iOS 14.5+ and later)** [toggle state](https://support.appsflyer.com/hc/articles/6722785184913#advanced-privacy).
+> For iOS apps only: Your control over data shared with the partner via postbacks and [reports](/docs/about-raw-data-identifier-restrictions) depends on the **Advanced Privacy (for iOS 14.5+ and later)** [toggle state](/docs/tiktok-for-business-advanced-srn-integration-setup#advanced-privacy).
 
 ### Attribution link tab
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](https://support.appsflyer.com/hc/articles/115005248543-OneLink-overview). [Learn more about attribution link structure and parameters](https://support.appsflyer.com/hc/articles/207447163). **To generate an attribution link,** follow [these instructions](https://support.appsflyer.com/hc/articles/4410395957521#attribution-link-tab).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide). [Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters). **To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 ### Cost tab
 
@@ -124,8 +124,8 @@ Select which permissions to grant Awin to access your data and perform various a
 
 > 📘 Note
 >
-> - When the integration is [deactivated](https://support.appsflyer.com/hc/articles/360000844778) while the Permissions toggle is still turned on, permissions remain granted.
-> - Learn more about [granting permissions](https://support.appsflyer.com/hc/articles/4410395957521#permissions-tab).
+> - When the integration is [deactivated](/docs/partner-activation-deactivation) while the Permissions toggle is still turned on, permissions remain granted.
+> - Learn more about [granting permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 ## Deep linking and deferred deep linking using OneLink
 
@@ -135,8 +135,8 @@ AWIN as a platform supports a URI scheme but **doesn’t support** handling the 
 
 To deep link with OneLink via AWIN:
 
-- [Setup your OneLink URL with a URI scheme](https://support.appsflyer.com/hc/articles/207032246-OneLink-templates#add-redirection-logic-for-existing-app-users)
+- [Setup your OneLink URL with a URI scheme](/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users)
 
 > 📘 Note
 >
-> For iOS apps, use the `af_force_deeplink=true` parameter on the OneLink URL to activate the deep link [URI scheme](https://support.appsflyer.com/hc/articles/207032246-OneLink-templates#add-redirection-logic-for-existing-app-users).
+> For iOS apps, use the `af_force_deeplink=true` parameter on the OneLink URL to activate the deep link [URI scheme](/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users).

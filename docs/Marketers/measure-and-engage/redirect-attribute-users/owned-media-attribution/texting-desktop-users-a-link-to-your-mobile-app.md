@@ -16,7 +16,7 @@ This way, they don't have to open the app store on their mobile, find your app, 
 
 > 📘 Note
 >
-> We offer another solution for [desktop-to-web conversion](https://support.appsflyer.com/hc/articles/36015119718) that simply requires you to post a QR code (generated from your OneLink) to your desktop site.
+> We offer another solution for desktop-to-web conversion that simply requires you to post a QR code (generated from your OneLink) to your desktop site.
 
 ## Requirements
 
@@ -24,7 +24,7 @@ To text desktop users a link to your mobile app, you need the following:
 
 1. An SMS provider account like Twilio, AWS SNS, or bandwidth.com.
 2. A backend environment where you can handle the logic for texting links to users.
-3. A multi-platform custom link such as [OneLink](https://support.appsflyer.com/hc/articles/115005248543).
+3. A multi-platform custom link such as [OneLink](/docs/onelink-guide).
 
 ## Setting up
 
@@ -65,7 +65,7 @@ Create a multi-platform OneLink to put in the SMS. When you create the link, you
 
 When sending OneLink in SMS, it's best to use the short link version of the OneLink.
 
-To learn how to create the link, see [here](https://support.appsflyer.com/hc/articles/115005248543).
+To learn how to create the link, see [here](/docs/onelink-guide).
 
 ### Set up an SMS topic in your SMS provider account
 
@@ -83,9 +83,9 @@ Refer to your SMS provider API and documentation to learn how to create the logi
 
 ## How Attribution works when sending a link to the app
 
-There's no way to include the advertising ID when texting desktop users a link to the app. Therefore, AppsFlyer resorts to [attribution using Probabilistic modeling](https://support.appsflyer.com/hc/articles/207447053#probabilistic-modeling).
+There's no way to include the advertising ID when texting desktop users a link to the app. Therefore, AppsFlyer resorts to [attribution using Probabilistic modeling](/docs/appsflyer-attribution-model#probabilistic-modeling).
 
-AppsFlyer [limits the lookback window](https://support.appsflyer.com/hc/articles/208338403#probabilistic-modeling-lookback-window) for Probabilistic modeling clicks to maintain accuracy. The limits are:
+AppsFlyer [limits the lookback window](/docs/set-up-lookback-windows#probabilistic-modeling-lookback-window) for Probabilistic modeling clicks to maintain accuracy. The limits are:
 
 - iOS: up to 24 hours
 - Android (Google Play): up to one hour
@@ -101,4 +101,4 @@ To get more insights into how many web users convert to mobile apps users, and w
 
 People-based attribution (PBA) puts together data from both web and mobile app campaigns. The consolidated data helps you analyze user journeys across platforms and user transition from web to mobile apps.
 
-To learn more, see [here](https://support.appsflyer.com/hc/articles/360002274017).
+To learn more, see [here](/docs/people-based-attribution-pba-overview).

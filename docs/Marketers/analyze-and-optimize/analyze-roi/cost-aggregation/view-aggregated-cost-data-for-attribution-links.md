@@ -8,9 +8,9 @@ excerpt: "Learn how to view and analyze aggregated cost data reported by ad netw
 
 Cost data is reported to AppsFlyer by:
 
-- Ad networks: each time a user clicks on an ad. Viewing campaign cost in AppsFlyer helps advertisers measure ROI and make appropriate budgetary decisions.  - Cost is reported on the [attribution link](https://support.appsflyer.com/hc/articles/207447163) using the cost-per-install (CPI) model.
-  - When sending the attribution link to the ad network, ensure the ad network [adds the cost reporting parameters](https://support.appsflyer.com/hc/articles/115000748446).
-- [Advanced options for cost aggregation](https://support.appsflyer.com/hc/articles/207040526), including by API and Cost Import (CSV file upload).
+- Ad networks: each time a user clicks on an ad. Viewing campaign cost in AppsFlyer helps advertisers measure ROI and make appropriate budgetary decisions.  - Cost is reported on the [attribution link](/docs/about-link-structure-and-parameters) using the cost-per-install (CPI) model.
+  - When sending the attribution link to the ad network, ensure the ad network [adds the cost reporting parameters](/docs/cost-reporting-on-the-attribution-link-for-ad-networks).
+- [Advanced options for cost aggregation](/docs/roi360-cost-aggregation-overview), including by API and Cost Import (CSV file upload).
   - Cost aggregation methods support cost models used by the partner in addition to CPI, including, CPA, CPC, and CPM.
 
 ### Viewing ad cost reported on the attribution link
@@ -21,7 +21,7 @@ In the _**Overview dashboard,** Aggregated Performance Report_ contains cost, cl
 
 <Image src="https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg" alt="Cost Reporting Dashboard" />
 
-The performance and raw data reports are also available for [download](https://support.appsflyer.com/hc/articles/209680773).
+The performance and raw data reports are also available for [download](/docs/raw-data-reporting-overview).
 
 ### Ad networks providing cost data on the attribution link
 
@@ -49,5 +49,5 @@ For ad networks that report cost on the attribution link, the dimensions support
 > 🚧 Limitations
 >
 > - Cost is only reported using the cost-per-install model (CPI). Other models, including CPA, CPC, and CPM are not supported.
-> - [Self-reporting networks](https://support.appsflyer.com/hc/articles/360001546905) (SRN) do not report cost on the attribution link.
+> - [Self-reporting networks](/docs/self-reporting-networks-srns) (SRN) do not report cost on the attribution link.
 > - Cost data on the attribution link data is immutable. Therefore, once it's logged in AppsFlyer, it cannot be changed, even if there are data-reporting errors.

@@ -21,7 +21,7 @@ If end users of your apps via these integrations are based in the European Econo
 
 > 📘 Note
 >
-> The [Legacy] Google Marketing Platform DV360/CM integration (`doubleclick_int`) will be deprecated and not supported under Google's new EU consent policy. If you're using this integration, we recommend [transitioning to the new DV360 integration (dv360_int)](https://support.appsflyer.com/hc/articles/21035061438737).
+> The [Legacy] Google Marketing Platform DV360/CM integration (`doubleclick_int`) will be deprecated and not supported under Google's new EU consent policy. If you're using this integration, we recommend [transitioning to the new DV360 integration (dv360_int)](/docs/bulletin-google-marketing-platform-gmp-integration-transition).
 
 ### What should be done to continue using Google's features
 
@@ -34,7 +34,7 @@ Marketers need to obtain end-user consent in the EEA to continue using Google Ad
 The AppsFlyer SDK (Android - v6.13.0+, iOS - v6.13.1+) can send the necessary consent data with each event to meet Google's requirements.
 
 - [Upgrade your SDK](https://dev.appsflyer.com/hc/docs/sdk-installation) to the latest version (Android - v6.13.0+, iOS - v6.13.1+). Applicable to Android or iOS apps.
-- Once the SDK is upgraded, [see here](https://support.appsflyer.com/hc/articles/4408735106193#send-consent-for-dma-compliance) for implementation instructions for supporting the DMA.
+- Once the SDK is upgraded, [see here](/docs/additional-sdk-integration-guide#send-consent-for-dma-compliance) for implementation instructions for supporting the DMA.
 
 ## Sending consent data
 
@@ -143,7 +143,7 @@ Consider the following options for sending the new consent fields, either using 
 
 #### Transition from the legacy GMP integration (DoubleClick)
 
-If you're still using the legacy AppsFlyer GMP integration (doubleclick_int), transition to the newer version (dv360_int), which is available now. The legacy integration is **not EU consent compatible** and will be deprecated soon. See more details [here](https://support.appsflyer.com/hc/articles/21035061438737).
+If you're still using the legacy AppsFlyer GMP integration (doubleclick_int), transition to the newer version (dv360_int), which is available now. The legacy integration is **not EU consent compatible** and will be deprecated soon. See more details [here](/docs/bulletin-google-marketing-platform-gmp-integration-transition).
 
 ## Impact on advertising activity—FAQ
 
@@ -173,7 +173,7 @@ In case you have further questions or any uncertainties, you can reach out to th
   <Card title="Additional SDK integration guide" href="/docs/additional-sdk-integration-guide">
     Learn how to implement consent and other advanced configurations in the AppsFlyer SDK.
   </Card>
-  <Card title="Transition to the new DV360 integration" href="https://support.appsflyer.com/hc/articles/21035061438737">
+  <Card title="Transition to the new DV360 integration" href="/docs/bulletin-google-marketing-platform-gmp-integration-transition">
     Step-by-step instructions to migrate from the legacy DoubleClick integration to the new DV360 integration.
   </Card>
   <Card title="Audiences user identifier policy" href="/docs/audiences-user-identifier-policy">
