@@ -335,6 +335,48 @@ The following sections provide additional details about key aspects of ROI360 in
   - Can be used in SKAN Conversion Studio.
 
     **Note**: depending on the user device platform, some parameeters aren't always populated for an in-app events
+    <Accordion title="Subscription refunded (af_ars_subscription_refunded)" icon="fa-info-circle">
+      **Description**
+
+      Recorded when a subscriber is issued a refund.
+
+      **Note:**
+
+      - This event is usually generated along with a negative value. In cases where it is impossible to detect which transactions were refunded, or details of the refund aren't included in the notification, the refund event shows no value.
+
+      **Parameters**
+
+      - app_id
+      - customer_user_id
+      - af_reason
+      - af_subscription_ownership_type
+      - af_discount_id
+      - af_discount_type
+      - af_original_transaction_id
+      - af_order_id
+      - af_purchase_token
+      - af_refunded_transaction_ids
+      - event_revenue_usd
+      - event_revenue (included in the event when the revenue exceeds zero)
+      - af_product_id
+      - android_id
+      - idfa
+      - ip
+      - appsflyer_id
+      - af_store
+      - af_environment
+      - af_period_type
+      - store_commission
+      - af_revenue
+      - af_net_revenue
+      - af_net_revenue_factors
+      - af_net_revenue_tax_name
+      - af_net_revenue_tax_rate
+      - af_net_revenue_tax_exclusive
+      - af_net_revenue_country
+      - af_net_revenue_subdivision
+      - af_net_revenue_postal_code
+    </Accordion>
     <Accordion title="Subscription billing grace (af_ars_subscription_billing_grace)" icon="fa-info-circle">
       **Description**
 
@@ -816,48 +858,9 @@ Recorded when a subscriber churns. This usually happens after auto-renewal cance
 - af_period_type
 - af_reason
 
-#### Subscription refunded (af_ars_subscription_refunded)
+<br />
 
-**Description**
-
-Recorded when a subscriber is issued a refund.
-
-**Note:**
-
-- This event is usually generated along with a negative value. In cases where it is impossible to detect which transactions were refunded, or details of the refund aren't included in the notification, the refund event shows no value.
-
-**Parameters**
-
-- app_id
-- customer_user_id
-- af_reason
-- af_subscription_ownership_type
-- af_discount_id
-- af_discount_type
-- af_original_transaction_id
-- af_order_id
-- af_purchase_token
-- af_refunded_transaction_ids
-- event_revenue_usd
-- event_revenue (included in the event when the revenue exceeds zero)
-- af_product_id
-- android_id
-- idfa
-- ip
-- appsflyer_id
-- af_store
-- af_environment
-- af_period_type
-- store_commission
-- af_revenue
-- af_net_revenue
-- af_net_revenue_factors
-- af_net_revenue_tax_name
-- af_net_revenue_tax_rate
-- af_net_revenue_tax_exclusive
-- af_net_revenue_country
-- af_net_revenue_subdivision
-- af_net_revenue_postal_code
+####
 
 ####
 
