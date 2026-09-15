@@ -121,16 +121,61 @@ The following sections provide additional details about key aspects of ROI360 in
   These parameters will be available in the raw data report's `custom_data` field.
 </Callout>
 
-### IAP-related events and parameters
+<Accordion title="IAP-related events and parameters" icon="fa-info-circle">
+  The following sections display the IAP-related events that AppsFlyer measures and the parameters recorded for each event. For an explanation of the included parameters, see the [event parameter dictionary](/docs/about-roi360-store-revenue#parameter-dictionary).
 
-The following sections display the IAP-related events that AppsFlyer measures and the parameters recorded for each event. For an explanation of the included parameters, see the [event parameter dictionary](/docs/about-roi360-store-revenue#parameter-dictionary).
+  **All generated events have the following properties:**
 
-**All generated events have the following properties:**
+  - Server-to-server (S2S) events.
+  - Available in raw data reports as organic or non-organic in-app events, and included in the Revenue ETL Stores reports.
+  - Sent to partners via postbacks.
+  - Supported in SKAN Conversion Studio.
+    <Accordion title="Purchase (af_purchase)" icon="fa-info-circle">
+      **Description**
 
-- Server-to-server (S2S) events.
-- Available in raw data reports as organic or non-organic in-app events, and included in the Revenue ETL Stores reports.
-- Sent to partners via postbacks.
-- Supported in SKAN Conversion Studio.
+      Recorded when a user makes a purchase.
+
+      **Parameters**
+
+      - app_id
+      - customer_user_id
+      - af_currency
+      - af_original_transaction_id
+      - af_order_id
+      - af_purchase_token
+      - af_transaction_id
+      - af_product_id
+      - android_id
+      - idfa
+      - ip
+      - appsflyer_id
+      - af_purchase_date_ms
+      - af_store
+      - af_environment
+      - af_revenue
+      - af_net_revenue
+      - af_net_revenue_tax_name
+      - af_net_revenue_tax_rate
+      - af_net_revenue_tax_exclusive
+      - af_net_revenue_country
+      - af_net_revenue_subdivision
+      - af_net_revenue_postal_code
+      - af_net_revenue_factors
+    </Accordion>
+</Accordion>
+
+<Accordion title="Purchase (af_purchase)" icon="fa-info-circle">
+  The following sections display the IAP-related events that AppsFlyer measures and the parameters recorded for each event. For an explanation of the included parameters, see the [event parameter dictionary](/docs/about-roi360-store-revenue#parameter-dictionary).
+
+  **All generated events have the following properties:**
+
+  - Server-to-server (S2S) events.
+  - Available in raw data reports as organic or non-organic in-app events, and included in the Revenue ETL Stores reports.
+  - Sent to partners via postbacks.
+  - Supported in SKAN Conversion Studio.
+</Accordion>
+
+###
 
 #### Purchase (af_purchase)
 
