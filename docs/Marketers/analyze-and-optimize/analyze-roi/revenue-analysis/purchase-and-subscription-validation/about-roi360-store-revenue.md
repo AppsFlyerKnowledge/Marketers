@@ -1322,7 +1322,148 @@ The following sections provide additional details about key aspects of ROI360 in
   </Table>
 </Accordion>
 
-####
+<Accordion title="Net Revenue" icon="fa-info-circle">
+  Net revenue is a business logic layer built to serve the ROI360 Store revenue solution. It automatically calculates the net revenue value for each incoming transaction in real time and includes it in reports.
+
+  <Callout icon="far fa-circle-exclamation" theme="info">
+    ### Note
+
+    Net revenue is displayed in raw data reports and can be sent in real time via in-app event postbacks. It is also available in [My Dashboards](/docs/my-dashboards) as the Net metrics (Net revenue, Net ROI, Net ROAS, Net ARPU, Net profit).
+
+    To send net revenue in postbacks, configure the in-app event with the option **Values, revenue & net revenue**. See [In-app event postback configuration](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks) for details.
+  </Callout>
+
+  <Callout icon="far fa-circle-exclamation" theme="info">
+    ### Tip
+
+    You can also configure your in-app event postbacks to send net revenue in place of gross revenue in the standard revenue (monetary) parameter. To get access to this configuration, contact your Customer Success Manager (CSM).
+  </Callout>
+
+  Net revenue considers the following factors in the gross-to-net revenue calculation:
+
+  - **Store commission**:
+    - It is calculated and reported automatically. No action is required on your part.
+    - For purchases (IAP), the default store commission depends on the storefront:
+      - App Store — Japan: 26%. China mainland (CN): 25%. Rest of the world: 30%.
+      - Play Store: 30%.
+    - For subscriptions, the commission is automatically calculated per subscriber, based on the subscriber's lifetime.
+      - App Store — first 12 months: 26% in Japan, 25% in China mainland (CN), 30% in the rest of the world. From the 13th month: 15% in Japan, 12% in China mainland (CN), 15% in the rest of the world.
+      - Play Store: 15% from day one.
+    - Related net revenue parameters are available in raw data reports.
+    - Use [the Net revenue API](https://dev.appsflyer.com/hc/reference/overview-7) to set a different store commission rate than the default. This is useful, for example, if your app is enrolled in Apple's Small Business Program, where the commission rate is 15% (12% in China mainland (CN)).
+  - **Tax**:
+    - Tax is reported by default for any transaction measured by ROI360 using the default tax rate configuration.
+    - This applies to tax-inclusive countries (where tax is included in the list price). So, for example, in the UK, AppsFlyer deducts the sum of the tax and the store commission. For tax-exclusive countries, such as the USA, where the list price does not include tax, revenue and net revenue parameters do not include tax by default.
+    - The configuration can be edited using [the Net revenue API](https://dev.appsflyer.com/hc/reference/overview-7). To learn which countries are supported and their default tax rates, see [this JSON file](https://docs.google.com/document/d/e/2PACX-1vSl3DwlK2Gt2aa5gmDzD3-K3CtnIM85oMNrqx3PCTamwCERWYU48GugNpD31BFjA2PJjZnqaXIVe2Hx/pub). The developer can edit it or use it as-is in the API.
+
+  When viewing net revenue in reports, the following parameters contain the net revenue data. See the [parameter dictionary](/docs/about-roi360-store-revenue#parameter-dictionary) for more details.
+
+  <Table>
+    <thead>
+      <tr>
+        <th>
+          Parameter
+        </th>
+
+        <th>
+          Net revenue factor
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>
+          `store_commission`
+        </td>
+
+        <td>
+          Store commission
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `af_net_revenue_tax_name`
+        </td>
+
+        <td>
+          Tax
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `af_net_revenue_tax_rate`
+        </td>
+
+        <td>
+          Tax
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `af_net_revenue_tax_exclusive`
+        </td>
+
+        <td>
+          Tax
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `af_net_revenue_postal_code`
+        </td>
+
+        <td>
+          Tax
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `af_net_revenue_country`
+        </td>
+
+        <td>
+          Tax
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `af_net_revenue_subdivision`
+        </td>
+
+        <td>
+          Tax
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `af_net_revenue`
+        </td>
+
+        <td>
+          - Store commission<br />- Tax
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          `af_net_revenue_factors`
+        </td>
+
+        <td>
+          - Store commission<br />- Tax
+        </td>
+      </tr>
+    </tbody>
+  </Table>
+</Accordion>
 
 ####
 
@@ -1335,497 +1476,6 @@ The following sections provide additional details about key aspects of ROI360 in
 ####
 
 <br />
-
-####
-
-####
-
-<br />
-
-####
-
-####
-
-####
-
-####
-
-####
-
-### Parameter dictionary
-
-Parameters for IAP and subscription events display in raw data reports either as their own columns or populated as part of the **Event value**.
-
-The parameters that have their own columns are:
-
-- app_id
-- customer_user_id
-- country_code
-- af_currency
-- event_revenue_usd
-- af_revenue
-- android_id
-- ip
-- idfa
-- appsflyer_id
-
-See the [data fields dictionary](/docs/raw-data-field-dictionary) for more details about these parameters.
-
-The following table describes the raw data parameters available in ARS and VIAP events.
-
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Parameter
-      </th>
-
-      <th>
-        Remarks
-      </th>
-
-      <th>
-        Product
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        af_cancelation_date_ms
-      </td>
-
-      <td>
-        Date of the cancelation
-      </td>
-
-      <td>
-        IAP
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_cuids
-      </td>
-
-      <td>
-        - In the context of ARS, this parameter contains an array with all CUIDs.<br />- The array of CUIDs displays irrespective of the device IDs. Thus, the same CUIDs can display for more than one device ID.
-      </td>
-
-      <td>
-        Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_discount_id
-      </td>
-
-      <td>
-        The offer ID presented to the user during the initial purchase. The ID is populated only when there is a discount code.
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_discount_type
-      </td>
-
-      <td>
-        The discount type redeemed by the user. Possible values:<br />- IOS<br />  - introductory<br />  - promotional<br />  - offer_codes<br />  - win_back<br />- Android<br />  - intro price<br />  - one_time_code<br />  - vanity_code
-      </td>
-
-      <td>
-        Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_environment
-      </td>
-
-      <td>
-        The environment from which data is received, either production or sandbox.
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_expires_date_ms
-      </td>
-
-      <td>
-        The expiration date of the current subscription billing cycle
-      </td>
-
-      <td>
-        Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_net_revenue
-      </td>
-
-      <td>
-        Net revenue calculated based on all factored reasons. See af_net_revenue_factors.
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_net_revenue_country
-      </td>
-
-      <td>
-        - [Two-letter ISO country code](https://www.nationsonline.org/oneworld/country_code_list.htm) for which the tax is applied.<br />- Example: CA<br />- Note: For United Kingdom, the code implemented is UK, not GB.
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_net_revenue_factors
-      </td>
-
-      <td>
-        - An array representing all factored reasons that produce the reported af_net_revenue amount.<br />- Example value: store_commission
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_net_revenue_postal_code
-      </td>
-
-      <td>
-        - String of letters and/or numbers<br />- Example: L4J8E3
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_net_revenue_subdivision
-      </td>
-
-      <td>
-        - For some countries, there can be an additional state or subdivision. This is handled according to [ISO 3166-2 subdivision codes](https://service.unece.org/trade/locode/2023-1%20SubdivisionCodes.htm).<br />- Includes the country code and subdivision code.<br />- Example: US-CA
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_net_revenue_tax_exclusive
-      </td>
-
-      <td>
-        - Boolean parameter, either true or false.<br />- False means tax is included in the overall revenue.<br />- True means tax is in addition to the overall stated revenue.
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_net_revenue_tax_name
-      </td>
-
-      <td>
-        - Name appearing in the customer invoice that describes the specific type of tax.<br />- Example: Sales, VAT, GST
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_net_revenue_tax_rate
-      </td>
-
-      <td>
-        - Number up to 4 decimal places representing the tax percentage collected.<br />- Example: 7.25
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_offer_id
-      </td>
-
-      <td>
-        - The offer ID applied to the transaction, when relevant (for example, discounted or promotional offers).<br />- Android only
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_order_id
-      </td>
-
-      <td>
-        - The order ID for the transaction<br />- Android only
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_original_transaction_id
-      </td>
-
-      <td>
-        - The original transaction ID<br />- iOS only
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_original_transaction_id
-      </td>
-
-      <td>
-        - The original ID of the transaction<br />- iOS only
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_period_type
-      </td>
-
-      <td>
-        - Subscription or trial period type.<br />- Possible values:<br />  - trial<br />  - intro<br />  - normal
-      </td>
-
-      <td>
-        Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_product_id
-      </td>
-
-      <td>
-        The subscription product ID
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_purchase_date_ms
-      </td>
-
-      <td>
-        The purchase date for the reported product ID in-app event
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_purchase_option_id
-      </td>
-
-      <td>
-        - The purchase option ID associated with the transaction.<br />- Android only
-      </td>
-
-      <td>
-        IAP
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_purchase_option_type
-      </td>
-
-      <td>
-        The purchase option type of the transaction. Possible values (Android):<br />- buy<br />- rent
-      </td>
-
-      <td>
-        IAP
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_purchase_state
-      </td>
-
-      <td>
-        Possible values:<br />- Purchased<br />- Canceled<br />- Pending
-      </td>
-
-      <td>
-        IAP
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_purchase_token
-      </td>
-
-      <td>
-        - The purchase token for the transaction<br />- Android only
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_reason
-      </td>
-
-      <td>
-        \[content unchanged]
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_refunded_transaction_ids
-      </td>
-
-      <td>
-        - An array of all refunded transaction IDs<br />- iOS only
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_store
-      </td>
-
-      <td>
-        The app store the subscription product was purchased from
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_subscription_ownership_type
-      </td>
-
-      <td>
-        FAMILY_SHARED means the user has access via family sharing. PURCHASED means the paying user made the purchase.
-      </td>
-
-      <td>
-        Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        af_transaction_id
-      </td>
-
-      <td>
-        - The ID of the transaction<br />- iOS only
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        store_commission
-      </td>
-
-      <td>
-        - The calculated percentage of commission the store gets from the purchased product.<br />- Displayed as a decimal.<br />- Example: 30
-      </td>
-
-      <td>
-        - IAP<br />- Subscription
-      </td>
-    </tr>
-  </tbody>
-</Table>
 
 ### Net revenue
 
