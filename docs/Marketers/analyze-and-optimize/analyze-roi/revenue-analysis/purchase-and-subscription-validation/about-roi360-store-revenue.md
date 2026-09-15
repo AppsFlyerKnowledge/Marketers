@@ -6,7 +6,7 @@ excerpt: >-
 ---
 Use ROI360 store revenue to validate in-app purchases and subscriptions, prevent duplicates, and calculate net revenue.
 
-<Callout icon="❗️" theme="error">
+<Callout icon="fad fa-triangle-exclamation" theme="warn">
   ### Important!
 
   ROI360 store revenue is available only to customers on the ROI360 premium plan. To check your plan or upgrade, contact your Customer Success Manager (CSM).
