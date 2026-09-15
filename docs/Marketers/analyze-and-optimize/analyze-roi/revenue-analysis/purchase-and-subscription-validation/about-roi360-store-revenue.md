@@ -335,6 +335,31 @@ The following sections provide additional details about key aspects of ROI360 in
   - Can be used in SKAN Conversion Studio.
 
     **Note**: depending on the user device platform, some parameeters aren't always populated for an in-app events
+    <Accordion title="Subscription paused (af_ars_subscription_paused) - Android only" icon="fa-info-circle">
+      **Description**
+
+      Recorded when a user pauses an active subscription.
+
+      **Parameters**
+
+      - app_id
+      - customer_user_id
+      - af_currency
+      - af_expires_date_ms
+      - af_subscription_ownership_type
+      - af_original_transaction_id
+      - af_order_id
+      - af_purchase_token
+      - af_product_id
+      - android_id
+      - idfa
+      - ip
+      - appsflyer_id
+      - af_purchase_date_ms
+      - af_store
+      - af_environment
+      - af_period_type
+    </Accordion>
     <Accordion title="Subscription resumed (af_ars_subscription_resumed)" icon="fa-info-circle">
       **Description**
 
@@ -830,31 +855,7 @@ Recorded when an auto-renewal subscription is canceled in the middle of a billin
 - af_environment
 - af_period_type
 
-#### Subscription paused (af_ars_subscription_paused) - Android only
-
-**Description**
-
-Recorded when a user pauses an active subscription.
-
-**Parameters**
-
-- app_id
-- customer_user_id
-- af_currency
-- af_expires_date_ms
-- af_subscription_ownership_type
-- af_original_transaction_id
-- af_order_id
-- af_purchase_token
-- af_product_id
-- android_id
-- idfa
-- ip
-- appsflyer_id
-- af_purchase_date_ms
-- af_store
-- af_environment
-- af_period_type
+#### xc
 
 ####
 
