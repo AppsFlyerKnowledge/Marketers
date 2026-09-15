@@ -335,6 +335,35 @@ The following sections provide additional details about key aspects of ROI360 in
   - Can be used in SKAN Conversion Studio.
 
     **Note**: depending on the user device platform, some parameeters aren't always populated for an in-app events
+    <Accordion title="Existing subscriber (af_ars_existing_subscriber)" icon="fa-info-circle">
+      **Description**
+
+      Recorded when the SDK connector is notified about a subscriber in the middle of a billing cycle, before getting a follow-up server notification that transitions the subscriber to another relevant lifecycle stage. This event is usually generated during your onboarding and SDK connector adoption period.
+
+      **Parameters**
+
+      - app_id
+      - customer_user_id
+      - country
+      - af_currency
+      - af_expires_date_ms
+      - af_subscription_ownership_type
+      - af_original_transaction_id
+      - af_order_id
+      - af_purchase_token
+      - af_transaction_id
+      - af_product_id
+      - android_id
+      - idfa
+      - ip
+      - appsflyer_id
+      - af_purchase_date_ms
+      - af_store
+      - af_environment
+      - af_period_type
+      - af_cuids
+      - af_validated
+    </Accordion>
     <Accordion title="Test purchase (af_ars_sandbox_sdk)" icon="fa-info-circle">
       **Description**
 
