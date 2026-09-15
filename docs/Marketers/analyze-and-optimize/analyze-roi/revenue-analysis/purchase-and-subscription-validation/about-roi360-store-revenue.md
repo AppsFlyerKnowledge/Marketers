@@ -76,7 +76,7 @@ ROI360 store revenue is AppsFlyer’s premium solution for complete and accurate
   </tbody>
 </Table>
 
-<Callout icon="🚧" theme="warn">
+<Callout icon="far fa-circle-exclamation" theme="error">
   ### Warning
 
   When using ROI360 store revenue, do not send in-app purchase events, as this will result in duplicate revenue reporting.
