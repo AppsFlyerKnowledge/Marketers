@@ -240,8 +240,41 @@ The following sections provide additional details about key aspects of ROI360 in
       - af_store
       - af_environment
     </Accordion>
-    <Accordion title="Purchase" icon="fa-info-circle">
+    <Accordion title="Refund (af_purchase_refund)" icon="fa-info-circle">
+      **Description**
 
+      Recorded when a purchase is refunded.
+
+      **Parameters**
+
+      - app_id
+      - customer_user_id
+      - af_currency
+      - af_original_transaction_id
+      - af_order_id
+      - af_purchase_token
+      - af_transaction_id
+      - af_product_id
+      - android_id
+      - idfa
+      - ip
+      - appsflyer_id
+      - af_purchase_date_ms
+      - af_store
+      - af_environment
+      - af_discount_type
+      - event_revenue_usd
+      - event_revenue (included in the event when the revenue exceeds zero)
+      - store_commission
+      - af_revenue
+      - af_net_revenue
+      - af_net_revenue_factors
+      - af_net_revenue_tax_name
+      - af_net_revenue_tax_rate
+      - af_net_revenue_tax_exclusive
+      - af_net_revenue_country
+      - af_net_revenue_subdivision
+      - af_net_revenue_postal_code
     </Accordion>
     <Accordion title="Purchase (af_purchase)" icon="fa-info-circle">
 
@@ -255,29 +288,7 @@ The following sections provide additional details about key aspects of ROI360 in
 
 ####
 
-#### Purchase pending (af_purchase_pending)
-
-**Description**
-
-Recorded when a user makes a purchase but the payment isn't yet processed.
-
-**Parameters**
-
-- app_id
-- customer_user_id
-- af_currency
-- af_original_transaction_id
-- af_order_id
-- af_purchase_token
-- af_transaction_id
-- af_product_id
-- android_id
-- idfa
-- ip
-- appsflyer_id
-- af_purchase_date_ms
-- af_store
-- af_environment
+####
 
 #### Refund (af_purchase_refund)
 
