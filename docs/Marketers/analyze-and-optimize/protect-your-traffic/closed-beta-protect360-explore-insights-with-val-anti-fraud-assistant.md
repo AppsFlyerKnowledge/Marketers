@@ -1,5 +1,5 @@
 ---
-title: "Protect360 Explore Insights with Val Anti-Fraud Assistant"
+title: "Closed Beta: Protect360 Explore insights with Val anti-fraud assistant"
 excerpt: "Learn how Val, a preemptive anti-fraud assistant in Protect360, provides weekly insights to highlight trends, recommend actions, and improve fraud protection."
 ---
 At a glance: Val is a preemptive anti-fraud assistant in Protect360 that provides weekly insights to help highlight trends, recommend actions, and improve fraud protection. By surfacing actionable intelligence, Val transforms fraud detection from reactive to proactive.

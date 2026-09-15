@@ -1,5 +1,5 @@
 ---
-title: "Google Ads Postback Partners Configuration"
+title: "Google Ads postback partners—Configuration"
 excerpt: "Learn how to configure Google Ads postback partners (GAPPs) in AppsFlyer to send conversion postbacks for optimizing your Google Ads campaigns."
 ---
 At a glance: Enable Google Ads postback partners to help run your Google Ads campaigns.

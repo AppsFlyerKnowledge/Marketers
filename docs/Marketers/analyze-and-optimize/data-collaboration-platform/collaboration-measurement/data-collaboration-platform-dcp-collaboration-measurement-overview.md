@@ -1,5 +1,5 @@
 ---
-title: "Collaboration Measurement Overview"
+title: "Data collaboration platform (DCP) - Collaboration measurement - Overview"
 excerpt: "Learn about collaboration measurement, its basic concepts, and data flow within the Data Collaboration Platform (DCP)."
 ---
 The DCP measurement model attributes conversion events to engagement events occurring in a collaboration context. This process requires data from three key data sources: conversions, engagements, and campaign mapping. Each source plays a critical role in the attribution flow.

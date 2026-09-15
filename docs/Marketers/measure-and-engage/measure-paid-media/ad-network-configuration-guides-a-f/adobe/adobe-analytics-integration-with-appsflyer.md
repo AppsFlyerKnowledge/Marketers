@@ -1,5 +1,5 @@
 ---
-title: "Adobe Analytics Integration"
+title: "Adobe Analytics integration with AppsFlyer"
 excerpt: "Learn how to set up the two-way data flow between AppsFlyer and Adobe Analytics to automatically transfer attribution data."
 ---
 The integration with [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html) (formerly Omniture) consists of a two-way data flow between Adobe and AppsFlyer. For the integration to be successful, this integration requires code implementation in your app. Both AppsFlyer and Adobe requirements must be met for the integration to be fully successful. This integration enables the automatic transfer of attribution data from AppsFlyer to Adobe to help you achieve your goals.

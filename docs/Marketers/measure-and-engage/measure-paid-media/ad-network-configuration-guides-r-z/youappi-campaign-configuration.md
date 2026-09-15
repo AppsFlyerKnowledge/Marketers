@@ -1,5 +1,5 @@
 ---
-title: "YouAppi Campaign Configuration"
+title: "YouAppi campaign configuration"
 excerpt: "Configure your mobile growth marketing campaigns with YouAppi, including attribution links, cost API integration, and partner permissions."
 ---
 YouAppi, an AppsFlyer ad network integrated partner, is a leading mobile growth marketing platform for premium mobile brands. In addition to click-based mobile attribution, YouAppi offers cost, ad revenue, retargeting and view-through attribution, which can be recorded with AppsFlyer.

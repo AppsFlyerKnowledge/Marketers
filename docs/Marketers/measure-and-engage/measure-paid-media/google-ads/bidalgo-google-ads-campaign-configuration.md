@@ -1,5 +1,5 @@
 ---
-title: "Bidalgo - Google Ads Campaign Configuration"
+title: "Bidalgo - Google Ads—Campaign configuration"
 excerpt: "Learn how to set up and configure the Bidalgo integration with Google Ads in AppsFlyer to scale your app growth using AI solutions."
 ---
 Bidalgo, an AppsFlyer integrated partner, is a leading provider of Artificial Intelligence solutions to help app marketers scale their growth.

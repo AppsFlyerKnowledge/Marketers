@@ -1,5 +1,5 @@
 ---
-title: "Update App Store credentials for iOS ROI360 receipt validation"
+title: "Bulletin: Update App Store credentials for iOS ROI360 receipt validation"
 excerpt: "Learn how to update your App Store credentials in AppsFlyer to transition your ROI360 iOS validation flow to Apple's new in-app purchase validation APIs."
 ---
 AppsFlyer will transition the ROI360 iOS validation flow to Apple's new in-app purchase validation APIs, as the current API is deprecated by Apple. To ensure your iOS revenue data continues to be validated accurately and in real-time, you’ll need to update your App Store credentials in the AppsFlyer platform. If your app still uses Apple Server Notifications Version 1, you’ll also be required to switch to Version 2 notifications before updating credentials.

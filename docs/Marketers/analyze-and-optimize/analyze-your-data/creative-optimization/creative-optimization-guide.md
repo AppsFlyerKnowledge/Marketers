@@ -1,5 +1,5 @@
 ---
-title: "Creative Optimization Guide"
+title: "Creative Optimization guide"
 excerpt: "Creative Optimization enables you to pull all creative asset data from all your campaigns into a single platform to analyze performance and discover which creatives work best."
 ---
 At a glance: Creative Optimization enables you to pull all creative asset data from all your campaigns into a single platform, so you can analyze their performance, discover which creatives work best, and make better data-driven decisions. Data is LTV, meaning the metrics are for conversions that occurred from creatives during the selected date range.

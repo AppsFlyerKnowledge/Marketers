@@ -1,5 +1,5 @@
 ---
-title: "Configure Collaboration Measurement"
+title: "Data Collaboration Platform (DCP) - Configure collaboration measurement"
 excerpt: "Learn how to configure the Data Collaboration Platform (DCP) to perform SKU-level attribution based on conversion, engagement, and campaign mapping data."
 ---
 At a glance: Learn how to configure DCP to perform SKU-level attribution based on the conversion, engagement, and campaign mapping data.

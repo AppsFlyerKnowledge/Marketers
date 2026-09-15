@@ -1,5 +1,5 @@
 ---
-title: "Run and Manage Measurement"
+title: "Data collaboration platform (DCP) - Run and manage measurement"
 excerpt: "Learn how to run and manage live or historical measurements in the Data Collaboration Platform (DCP)."
 ---
 After you configure on-site or off-site measurement, run it as either a live measurement or a historical measurement. Choose the mode that best matches your goal: measure performance continuously or validate results for a defined period.

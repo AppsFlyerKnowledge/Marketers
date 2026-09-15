@@ -1,5 +1,5 @@
 ---
-title: "OneSignal Integration with AppsFlyer"
+title: "OneSignal integration with AppsFlyer"
 excerpt: "Learn how to integrate OneSignal with AppsFlyer to send user attribution data and trigger push notifications based on install campaigns."
 ---
 OneSignal is the market-leading push notification and in-app messaging provider, supporting over 1 million developers and marketers with a best-of-breed engagement platform.

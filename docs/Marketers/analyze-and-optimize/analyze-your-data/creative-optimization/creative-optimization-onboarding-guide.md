@@ -1,5 +1,5 @@
 ---
-title: "Creative Optimization onboarding guide"
+title: "Creative Optimization—onboarding guide"
 excerpt: "Follow this onboarding guide to set up partner integrations, explore dashboards, and configure ETL reports for Creative Optimization."
 ---
 At a glance: Follow the onboarding instructions in this article to get Creative Optimization up and running.

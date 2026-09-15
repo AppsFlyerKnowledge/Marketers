@@ -1,5 +1,5 @@
 ---
-title: "Appnext Campaign Configuration"
+title: "Appnext campaign configuration"
 excerpt: "Configure Appnext integration in AppsFlyer to record click-based mobile attribution, cost, retargeting, and view-through attribution."
 ---
 At a glance: Appnext, an AppsFlyer ad network integrated partner, uses technology and data solutions for premium mobile monetization, app marketing, and re-engagement. In addition to click-based mobile attribution, Appnext also offers cost, retargeting and view-through attribution, which you can record with AppsFlyer.

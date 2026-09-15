@@ -1,5 +1,5 @@
 ---
-title: "Data Clean Room: Creating In-app Event Reports"
+title: "Data Clean Room—Creating In-app event reports"
 excerpt: "Learn how to create In-app event reports in the Data Clean Room to extract specific event parameters, match them with custom sources, and present aggregated user activity data."
 ---
 Create In-app event reports to focus on user activity occurring after an app has been installed. Extract specific event parameters from your in-app event raw data, optionally match the data with custom sources, then process and present it in aggregated form.

@@ -1,5 +1,5 @@
 ---
-title: "Create Customized Data Views"
+title: "Data Collaboration Platform (DCP) - Create customized data views"
 excerpt: "Learn how to create, filter, aggregate, and share customized subsets of your source data using the Data Collaboration Platform (DCP) without any SQL knowledge."
 ---
 Create customized subsets of your existing source data with no SQL or technical expertise needed. Data views let you modify, refine, and summarize the data, so you can share only what's relevant with collaborators.

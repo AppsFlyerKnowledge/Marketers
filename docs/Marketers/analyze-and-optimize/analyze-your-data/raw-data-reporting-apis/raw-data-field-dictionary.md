@@ -1,5 +1,5 @@
 ---
-title: "Raw Data Field Dictionary"
+title: "Raw data field dictionary"
 excerpt: "The raw data field dictionary describes the contents, formats, and availability of raw data fields in AppsFlyer reports."
 ---
 The data field dictionary (raw data specification) describes field contents. It should be used to help you understand what fields mean, how they are formatted, and when they are available.

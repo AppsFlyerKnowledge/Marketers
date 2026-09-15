@@ -1,5 +1,5 @@
 ---
-title: "Advanced Privacy Guide & Postback Macros for Ad Networks"
+title: "Advanced Privacy guide & postback macros for ad networks"
 excerpt: "A comprehensive guide for ad networks on setting up Advanced Privacy postbacks and understanding data-sharing principles when Advanced Privacy is enabled."
 ---
 Data sharing with partners when Advanced Privacy is enabled. Instructions for ad networks on setting up Advanced Privacy postbacks.

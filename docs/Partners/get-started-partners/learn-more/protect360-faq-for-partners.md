@@ -1,5 +1,5 @@
 ---
-title: "Protect360 FAQ for Partners"
+title: "Protect360—FAQ for partners"
 excerpt: "Find answers to frequently asked questions by partners about AppsFlyer's Protect360 anti-fraud system, including impression capping and install rejections."
 ---
 At a glance: Find answers to questions frequently asked by partners about Protect360.

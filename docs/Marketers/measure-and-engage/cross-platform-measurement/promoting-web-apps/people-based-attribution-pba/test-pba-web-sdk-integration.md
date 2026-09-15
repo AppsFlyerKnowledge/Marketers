@@ -1,5 +1,5 @@
 ---
-title: "Test PBA Web SDK Integration"
+title: "Test PBA web SDK integration"
 excerpt: "Learn how to test the Web SDK PBA plugin integration, send test events, and troubleshoot common issues."
 ---
 Test the Web SDK PBA plugin integration. 

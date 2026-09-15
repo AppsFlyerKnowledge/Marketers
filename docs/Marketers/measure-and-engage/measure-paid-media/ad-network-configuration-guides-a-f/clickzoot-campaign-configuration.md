@@ -1,5 +1,5 @@
 ---
-title: "ClickZoot Campaign Configuration"
+title: "ClickZoot campaign configuration"
 excerpt: "Learn how to configure the ClickZoot integration in AppsFlyer, including setting up attribution links, postbacks, and partner permissions."
 ---
 At a glance: Clickzoot, an AppsFlyer ad network integrated partner, provides solutions for mobile, lead generation, email marketing, and data optimization.

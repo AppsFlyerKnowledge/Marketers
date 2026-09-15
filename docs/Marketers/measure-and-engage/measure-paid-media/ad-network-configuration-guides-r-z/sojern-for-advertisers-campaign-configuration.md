@@ -1,5 +1,5 @@
 ---
-title: "Sojern for Advertisers Campaign Configuration"
+title: "Sojern for Advertisers campaign configuration"
 excerpt: "Configure your programmatic travel market campaigns with Sojern for Advertisers in AppsFlyer."
 ---
 Sojern for Advertisers, an AppsFlyer ad network integrated partner, specializes in programmatic buying for the travel market.

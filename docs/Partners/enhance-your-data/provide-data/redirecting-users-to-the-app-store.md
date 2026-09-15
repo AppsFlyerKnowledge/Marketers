@@ -1,5 +1,5 @@
 ---
-title: "Redirecting users to the app store"
+title: "Redirecting users to the app store"
 excerpt: "Learn about the options for redirecting users to the app store after an ad is served, and how to send engagement data to AppsFlyer."
 ---
 ## Overview

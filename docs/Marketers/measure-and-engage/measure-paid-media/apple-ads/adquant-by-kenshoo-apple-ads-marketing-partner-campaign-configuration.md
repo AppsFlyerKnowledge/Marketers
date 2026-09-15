@@ -1,5 +1,5 @@
 ---
-title: "Adquant by Kenshoo Apple Ads Campaign Configuration"
+title: "Adquant by Kenshoo Apple Ads marketing partner—campaign configuration"
 excerpt: "Optimize Apple Ads campaigns by configuring AppsFlyer to send postbacks to Adquant by Kenshoo."
 ---
 Optimize Apple Ads campaigns by using Adquant by Kenshoo. When configured, AppsFlyer sends postbacks to Adquant.

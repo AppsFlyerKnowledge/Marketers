@@ -1,5 +1,5 @@
 ---
-title: "View Measurement Reports"
+title: "Data Collaboration Platform (DCP) - View measurement reports"
 excerpt: "Customize and generate Data Collaboration Platform (DCP) measurement reports by setting report fields, aggregation levels, schedules, and cloud connections."
 ---
 Data Collaboration Platform (DCP) measurement reports provide top-level metrics such as clicks, impressions, and ROAS per campaign. They may also include additional metrics and dimensions based on granted access.

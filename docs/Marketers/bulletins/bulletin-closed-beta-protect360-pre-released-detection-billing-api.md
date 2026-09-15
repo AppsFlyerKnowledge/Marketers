@@ -1,5 +1,5 @@
 ---
-title: "Bulletin: Protect360 Pre-released Detection (Billing API)"
+title: "Bulletin: [Closed Beta] Protect360 Pre-released detection (Billing API)"
 excerpt: "Learn about the Protect360 pre-released detection feature in the billing API, which credits detected fraud back to your package plan."
 ---
 ## What's new

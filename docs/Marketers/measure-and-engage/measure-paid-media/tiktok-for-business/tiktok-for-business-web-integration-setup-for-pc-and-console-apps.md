@@ -1,5 +1,5 @@
 ---
-title: "TikTok for Business: Web Integration Setup for PC and Console Apps"
+title: "TikTok for Business—Web integration setup for PC and console apps"
 excerpt: "Learn how to integrate TikTok Web for PC and console apps with AppsFlyer and set up campaigns in TikTok Web."
 ---
 This article contains information and steps on how to set up and use TikTok Web for PC and console apps with AppsFlyer. 

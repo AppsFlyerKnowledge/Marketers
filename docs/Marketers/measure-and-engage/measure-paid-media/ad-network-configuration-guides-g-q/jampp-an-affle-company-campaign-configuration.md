@@ -1,5 +1,5 @@
 ---
-title: "Jampp Campaign Configuration"
+title: "Jampp, an Affle company campaign configuration"
 excerpt: "Configure Jampp, an Affle company, in AppsFlyer to enable mobile attribution, cost tracking, retargeting, and view-through attribution."
 ---
 Jampp, an Affle company and AppsFlyer integrated partner, provides a performance marketing platform for acquiring and retargeting app customers. In addition to click-based mobile attribution, Jampp also offers cost, retargeting and view-through attribution, which you can record with AppsFlyer.

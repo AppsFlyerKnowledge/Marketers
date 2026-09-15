@@ -1,5 +1,5 @@
 ---
-title: "Segment Integration"
+title: "Segment integration"
 excerpt: "Learn how to integrate Segment with AppsFlyer to route your analytics data and optimize your mobile attribution."
 ---
 At a glance: Send your Segment analytics data to AppsFlyer.

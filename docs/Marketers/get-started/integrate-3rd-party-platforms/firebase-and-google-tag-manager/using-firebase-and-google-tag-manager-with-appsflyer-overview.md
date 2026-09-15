@@ -1,5 +1,5 @@
 ---
-title: "Using Firebase and Google Tag Manager with AppsFlyer"
+title: "Using Firebase and Google Tag Manager with AppsFlyer—Overview"
 excerpt: "Learn how to send in-app events reported via Firebase SDK to AppsFlyer using Google Tag Manager without needing to implement duplicate event tracking."
 ---
 At a glance: About sending events reported via Firebase SDK to AppsFlyer using Google Tag Manager.

@@ -1,5 +1,5 @@
 ---
-title: "Protect360 Dashboard"
+title: "Protect360 dashboard"
 excerpt: "The Protect360 dashboard provides insights about fraudulent traffic and installs blocked due to the application of validation rules."
 ---
 ## About Protect360 dashboard

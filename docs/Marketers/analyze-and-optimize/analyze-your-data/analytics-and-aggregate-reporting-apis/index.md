@@ -1,5 +1,5 @@
 ---
-title: "Analytics and Aggregate Reporting APIs"
+title: "Analytics and aggregate reporting/APIs"
 excerpt: "Access analytics data via APIs, Cohort, SKAN, Pivot, and Ad Revenue Monetization."
 ---
 <Cards>

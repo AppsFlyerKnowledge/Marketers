@@ -1,5 +1,5 @@
 ---
-title: "Conversions cross-platform report"
+title: "Conversions cross-paltform report"
 excerpt: "The Conversions cross-platform report shows the complete user journey behind each cross-platform conversion, including the full assisting engagement chain and revenue context."
 ---
 ## About the report

@@ -1,5 +1,5 @@
 ---
-title: "AppsFlyer Glossary"
+title: "AppsFlyer Knowledge Base glossary"
 excerpt: "Get familiar with AppsFlyer terms, definitions, and mobile attribution concepts."
 ---
 Get familiar with AppsFlyer terms.

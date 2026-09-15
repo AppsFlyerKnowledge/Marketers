@@ -1,5 +1,5 @@
 ---
-title: "PBA Media Source Attribution Rules"
+title: "PBA media source attribution rules"
 excerpt: "Learn how AppsFlyer People-Based Attribution (PBA) determines the media source, type, and channel responsible for website visits and conversion events."
 ---
 Measure the impact of marketing efforts to drive effective website traffic. Which media sources, types, and channels are responsible for visits and conversion events. Ad level metrics available.

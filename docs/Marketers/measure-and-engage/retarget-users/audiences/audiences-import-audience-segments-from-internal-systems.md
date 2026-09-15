@@ -1,5 +1,5 @@
 ---
-title: "Audiences: Import audience segments from internal systems"
+title: "Audiences - Import audience segments from internal systems"
 excerpt: "Import predefined audience segments from your internal systems to AppsFlyer Audiences to connect and maintain them with your advertising partners."
 ---
 Import predefined audience segments from your internal systems (such as BI and CRM) to AppsFlyer Audiences, allowing you to use Audiences to connect and maintain these segments with your advertising partners. This enables you to take full advantage of other Audiences features, such as identifier matching/data enrichment and connected campaign metrics.

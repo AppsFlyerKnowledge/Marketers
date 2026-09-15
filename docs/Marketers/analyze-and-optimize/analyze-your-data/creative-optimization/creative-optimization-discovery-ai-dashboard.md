@@ -1,5 +1,5 @@
 ---
-title: "Creative Optimization Discovery AI Dashboard"
+title: "Creative Optimization Discovery AI dashboard"
 excerpt: "Analyze the performance of your creatives, scenes, and elements using the AI-powered Creative Optimization Discovery AI dashboard to produce data-driven, winning assets."
 ---
 Use the Creative Optimization Discovery AI dashboard to analyze the performance of your creatives and the scenes and elements they're built from, to produce and maintain data-driven, winning creatives.

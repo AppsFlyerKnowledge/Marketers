@@ -1,5 +1,5 @@
 ---
-title: "Agency data is now transparent"
+title: "[Bulletin] Agency data is now transparent"
 excerpt: "All agency-managed campaign data is now fully visible down to the media source level, enhancing your ability to analyze and optimize marketing investments."
 ---
 | | |

@@ -1,5 +1,5 @@
 ---
-title: "Using Firebase and Google Tag Manager with AppsFlyer"
+title: "Using Firebase and Google Tag Manager with AppsFlyer—Sending installs and events"
 excerpt: "Learn how to configure events in your app and send install events reported via Firebase SDK to AppsFlyer using Google Tag Manager."
 ---
 At a glance: Instructions for setting up event sending reported via Firebase SDK to AppsFlyer in your app.

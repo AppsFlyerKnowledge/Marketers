@@ -1,5 +1,5 @@
 ---
-title: "TikTok for Business: Create Web Campaigns for Website Apps"
+title: "TikTok for Business—Create web campaigns for website apps"
 excerpt: "Learn how to set up a TikTok Web Ads integration for your website app to send web conversion signals to TikTok via the Events API."
 ---
 AppsFlyer supports integration with TikTok Web Ads (`tiktokweb_int`) for website app campaigns, letting you report attribution and conversion data directly through TikTok's Events API. TikTok can then use this data to optimize ad targeting, measure performance, and build custom audiences.

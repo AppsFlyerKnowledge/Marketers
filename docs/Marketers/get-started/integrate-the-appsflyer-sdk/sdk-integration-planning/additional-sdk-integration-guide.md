@@ -1,5 +1,5 @@
 ---
-title: "Additional SDK Integration Guide"
+title: "Additional SDK integration guide"
 excerpt: "Explore additional AppsFlyer SDK functionalities such as uninstall measurement, user invite attribution, push notifications, and privacy settings."
 ---
 Consider the additional SDK functionalities that are available and work with your developer to implement APIs such as uninstall measurement, user invite attribution, push notifications, and privacy settings.

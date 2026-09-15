@@ -1,5 +1,5 @@
 ---
-title: "Partner Integrations FAQ"
+title: "Partner Integrations—FAQ"
 excerpt: "Find answers to frequently asked questions about AppsFlyer Partner Integrations, including partner cards, search filters, and troubleshooting."
 ---
 **At a glance**: Find answers to frequently asked questions about AppsFlyer Partner Integrations.

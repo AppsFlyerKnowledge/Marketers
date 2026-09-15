@@ -1,5 +1,5 @@
 ---
-title: "CTV-to-Mobile App View-Through Attribution for Ad Networks"
+title: "CTV-to-mobile app view-through attribution for ad networks"
 excerpt: "Learn how to attribute mobile app installs to ads viewed on Connected TV (CTV) devices using AppsFlyer cross-platform impression URLs."
 ---
 With AppsFlyer cross-platform impression URLs, you can attribute mobile app installs to ads displayed on CTV. Multiple installs within the same household can be attributed to the same CTV ad impression.

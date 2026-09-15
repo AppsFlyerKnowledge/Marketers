@@ -1,5 +1,5 @@
 ---
-title: "Onboarding Guide to People-Based Attribution"
+title: "Onboarding guide to People-Based Attribution"
 excerpt: "Learn how to set up AppsFlyer's People-Based Attribution (PBA) to measure and analyze customer journeys across web and mobile properties."
 ---
 ## Setting up PBA

@@ -1,5 +1,5 @@
 ---
-title: "Recommended eCommerce App Events"
+title: "Recommended eCommerce app events"
 excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your eCommerce app."
 ---
 ## eCommerce

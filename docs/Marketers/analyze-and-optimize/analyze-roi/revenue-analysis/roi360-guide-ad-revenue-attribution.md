@@ -1,5 +1,5 @@
 ---
-title: "ROI360 Guide: Ad Revenue Attribution"
+title: "ROI360 guide - ad revenue attribution"
 excerpt: "Learn how to attribute ad revenue to complete your LTV performance view and determine ROI by matching user lifetime value to media spend campaigns."
 ---
 Attribute ad revenue to complete the LTV (lifetime value) performance view.

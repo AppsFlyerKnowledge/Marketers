@@ -1,5 +1,5 @@
 ---
-title: "Enrich Sources with ID5"
+title: "Data Collaboration Platform (DCP) - Enrich sources with ID5"
 excerpt: "Enrich your first-party data with ID5 identifiers to unify fragmented user data and improve match rates with activation partners."
 ---
 Enrich your first-party data with ID5 identifiers to unify fragmented user data and improve match rates with activation partners, resulting in larger audiences.

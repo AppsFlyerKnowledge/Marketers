@@ -1,5 +1,5 @@
 ---
-title: "Offerslook Integration with AppsFlyer for Ad Networks"
+title: "Offerslook integration with AppsFlyer for ad networks"
 excerpt: "Learn how ad networks using Offerslook can integrate with AppsFlyer to receive install attribution data and configure attribution links and postbacks."
 ---
 **At a glance:** Learn how ad networks that use Offerslook can integrate with AppsFlyer and receive install attribution data.

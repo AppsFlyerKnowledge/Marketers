@@ -1,5 +1,5 @@
 ---
-title: "Qutoutiao Ads Campaign Configuration"
+title: "Qutoutiao ads campaign configuration"
 excerpt: "Learn how to configure and activate the Qutoutiao Ads integration in AppsFlyer, including setting up postbacks, attribution links, and partner permissions."
 ---
 Qutoutiao Ads is an AppsFlyer ad network integrated partner. This guide covers how to set up the integration, configure attribution links, and manage permissions. 

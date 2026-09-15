@@ -1,5 +1,5 @@
 ---
-title: "AppsFlyer iOS SDK Release Notes"
+title: "AppsFlyer iOS SDK release notes"
 excerpt: "The SDK release notes provide a quick overview of the latest changes, deprecations, and end-of-support dates for the AppsFlyer iOS SDK."
 ---
 **At a glance:** The SDK release notes provide a quick overview of the latest changes to the iOS SDK. Developers looking for more comprehensive details should review [the iOS Release Notes on the Dev Hub](https://dev.appsflyer.com/hc/docs/ios-release-notes).

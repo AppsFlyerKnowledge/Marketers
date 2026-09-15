@@ -1,5 +1,5 @@
 ---
-title: "Getting Started: Onboarding Guide for Analytics Partners"
+title: "Getting started—onboarding guide for analytics partners"
 excerpt: "Learn how to set up your analytics partner integration with AppsFlyer, including account registration, postback endpoint configuration, and account conversion."
 ---
 At a glance: Set up your analytics partner integration with AppsFlyer, including configuration of postback templates. This article outlines the steps, timelines, and dependencies involved in the onboarding process.

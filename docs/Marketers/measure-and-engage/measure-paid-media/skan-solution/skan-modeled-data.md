@@ -1,5 +1,5 @@
 ---
-title: "SKAN Modeled Data"
+title: "SKAN modeled data"
 excerpt: "AppsFlyer models aggregate data that basic SKAdNetwork reporting is unable to provide, helping advertisers get a more complete picture of app and campaign LTV performance."
 ---
 AppsFlyer models aggregate data that basic SKAdNetwork reporting is unable to provide.

@@ -1,5 +1,5 @@
 ---
-title: "Data Clean Room: Tech Partner Integrations"
+title: "Data Clean Room—Data enrichment through tech partner integrations"
 excerpt: "Enrich your data and enhance your Data Clean Room (DCR) reports with data from our integrated tech partners."
 ---
 > 📘 Try out this new feature!

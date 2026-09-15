@@ -1,5 +1,5 @@
 ---
-title: "Kuaishou Ads (China Domestic) Campaign Configuration"
+title: "Kuaishou Ads (China Domestic) campaign configuration"
 excerpt: "Learn how to configure the Kuaishou Ads (China Domestic) integration in AppsFlyer, including setting up postbacks, attribution links, and partner permissions."
 ---
 At a glance: Kuaishou is an AppsFlyer ad network integrated partner.

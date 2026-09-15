@@ -1,5 +1,5 @@
 ---
-title: "Xsolla Integration with AppsFlyer"
+title: "Xsolla integration with AppsFlyer"
 excerpt: "Learn how to integrate Xsolla with AppsFlyer to automate Web Shop purchases and revenue tracking, presenting the full ROAS and LTV of your game."
 ---
 Xsolla, an AppsFlyer integrated partner, is a gaming commerce tech partner specializing in payment processing outside of traditional app platforms. The integration between Xsolla and AppsFlyer enables Xsolla to automate Web Shop purchases and revenue to be sent to AppsFlyer, to present the full ROAS and LTV of the game, including purchases made in the Xsolla Web Shop.

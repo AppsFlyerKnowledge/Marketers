@@ -1,5 +1,5 @@
 ---
-title: "Pull API Raw Data"
+title: "Pull API raw data"
 excerpt: "Use the Pull API to retrieve raw data reports in CSV format, with options to filter by media source, date range, in-app event name, and geo."
 ---
 At a glance: Use this API to get raw data reports in CSV files.

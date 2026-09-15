@@ -1,5 +1,5 @@
 ---
-title: "PBA Website Attribution Dashboard"
+title: "PBA Website Attribution dashboard"
 excerpt: "Measure the impact of marketing efforts driving website traffic, including visits, conversion events, and ad-level performance metrics."
 ---
 At a glance: Measure the impact of marketing efforts to drive effective website traffic. Which media sources, types, and channels are responsible for visits, conversion events and ad-level metrics are available.

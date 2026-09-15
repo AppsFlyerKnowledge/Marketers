@@ -1,5 +1,5 @@
 ---
-title: "Measure Exceeded Dimensions and Cardinality Limits"
+title: "Measure exceeded dimensions and cardinality limits"
 excerpt: "Learn why some aggregate data dimensions display as exceeded in AppsFlyer and how to prevent reaching cardinality limits."
 ---
 **At a glance:** Why some aggregate data dimensions display as _exceeded_ and how to prevent reaching cardinality limits.

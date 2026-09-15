@@ -1,5 +1,5 @@
 ---
-title: "OneLink Guide"
+title: "OneLink guide"
 excerpt: "Create links with attribution, redirection, and deep linking capabilities to convert owned or paid media users into app users across any device or platform."
 ---
 At a glance: Create links with attribution, redirection, and deep linking capabilities that convert owned or paid media users into app users, regardless of device, operating system, channel, or platform. These links help you provide the best experience for your users, no matter which of your owned media sources they convert from: websites, banners, social media posts, emails, texts, and more.

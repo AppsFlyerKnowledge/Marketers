@@ -1,5 +1,5 @@
 ---
-title: "SDK Information Dashboard"
+title: "SDK information (version & consent) dashboard"
 excerpt: "Learn how to use the SDK Information dashboard to view SDK and OS adoption rates alongside iOS ATT consent metrics."
 ---
 **At a glance:** Dashboard view of SDK, operating system (iOS, Android) adoption rates, and iOS ATT consent metrics.

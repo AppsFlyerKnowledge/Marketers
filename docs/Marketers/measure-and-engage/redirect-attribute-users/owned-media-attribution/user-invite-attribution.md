@@ -1,5 +1,5 @@
 ---
-title: "User Invite Attribution"
+title: "User invite attribution"
 excerpt: "Attribute and record new installs when existing users refer others to use your apps."
 ---
 ![Invite_Attribution_new.png](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)

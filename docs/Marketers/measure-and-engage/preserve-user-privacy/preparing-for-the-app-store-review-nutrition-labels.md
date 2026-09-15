@@ -1,5 +1,5 @@
 ---
-title: "Preparing for the App Store review: nutrition labels"
+title: "Preparing for the App Store review—nutrition labels"
 excerpt: "Learn how to complete the App Store privacy questionnaire and nutrition labels when submitting your iOS app with the AppsFlyer SDK."
 ---
 Starting iOS 14 App developers must provide the App Store information related to their Privacy Practices when they submit an app. The App Store publishes the practices in the format of a _nutrition label._

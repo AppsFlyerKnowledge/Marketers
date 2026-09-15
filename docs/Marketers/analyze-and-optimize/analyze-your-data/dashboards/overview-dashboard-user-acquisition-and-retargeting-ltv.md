@@ -1,5 +1,5 @@
 ---
-title: "Overview Dashboard: User Acquisition and Retargeting LTV"
+title: "Overview dashboard—user acquisition and retargeting LTV"
 excerpt: "The Overview dashboard gives advertisers a real-time window into the LTV performance of user acquisition and retargeting campaigns."
 ---
 ## Overview

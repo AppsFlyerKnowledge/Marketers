@@ -1,5 +1,5 @@
 ---
-title: "Prepare source data for ingestion"
+title: "Data Collaboration Platform (DCP) - Prepare source data for ingestion"
 excerpt: "Learn how to structure and format your source data for the AppsFlyer Data Collaboration Platform (DCP) to maximize match rates and optimize collaboration outcomes."
 ---
 **At a glance:** Prepare your source data to maximize match rates between collaborator datasets and optimize collaboration outcomes.

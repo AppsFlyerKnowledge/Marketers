@@ -1,5 +1,5 @@
 ---
-title: "Smart Banners: Mobile Web-to-App (for Marketers)"
+title: "Smart Banners—mobile web-to-app (for marketers)"
 excerpt: "Convert your website visitors into mobile app users and measure campaign performance with AppsFlyer Smart Banners."
 ---
 At a glance: Convert your website visitors into mobile app users with Smart Banners.

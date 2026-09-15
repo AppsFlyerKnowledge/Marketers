@@ -1,5 +1,5 @@
 ---
-title: "Creative Optimization Overview Dashboard"
+title: "Creative Optimization Overview dashboard"
 excerpt: "Analyze creative performance across multiple campaigns and channels to choose the most effective creatives and maximize campaign impact."
 ---
 Use the Creative Optimization Overview dashboard to analyze creative performance, so you can choose the most effective creatives and maximize the impact of your campaigns.

@@ -1,5 +1,5 @@
 ---
-title: "Yahoo Japan Search Ads Campaign Configuration"
+title: "Yahoo Japan Search Ads campaign configuration"
 excerpt: "Learn how to configure the Yahoo Japan Search Ads integration with AppsFlyer for Android apps, including mapping in-app events and setting up agency permissions."
 ---
 Yahoo Japan Search Ads is a self-reporting network (SRN) partner that combines advertising and analytics. 

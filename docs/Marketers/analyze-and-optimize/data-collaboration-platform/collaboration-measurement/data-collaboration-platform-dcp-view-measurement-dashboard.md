@@ -1,5 +1,5 @@
 ---
-title: "View Measurement Dashboard"
+title: "Data Collaboration Platform (DCP) - View measurement dashboard"
 excerpt: "Analyze performance and trends over time of your collaborative campaigns using visualizations and table views."
 ---
 Use the measurement dashboard to view and analyze campaign performance. It contains performance KPIs, over-time trends, impressions and clicks, revenue, and other metrics.

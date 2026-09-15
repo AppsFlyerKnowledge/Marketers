@@ -1,5 +1,5 @@
 ---
-title: "Brands Directory: Overview and FAQs"
+title: "Brands Directory—Overview and FAQs"
 excerpt: "Learn about the AppsFlyer Brands Directory, an exclusive network connecting advertisers with Commerce Media Networks free of charge."
 ---
 The Brand Directory is an exclusive network of AppsFlyer advertisers receiving top priority on introductions to Commerce Media Networks (CMNs).

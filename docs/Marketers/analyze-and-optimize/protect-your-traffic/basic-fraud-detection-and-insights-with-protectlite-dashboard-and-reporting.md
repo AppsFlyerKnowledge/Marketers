@@ -1,5 +1,5 @@
 ---
-title: "Basic Fraud Detection and Insights with ProtectLITE"
+title: "Basic fraud detection and insights​ with ProtectLITE dashboard and reporting"
 excerpt: "ProtectLITE provides insights about fraudulent installs blocked by AppsFlyer's basic, free protection engine and validation rules."
 ---
 ProtectLITE provides insights about fraudulent installs blocked by our basic, free protection engine, and installs blocked due to the application of validation rules.

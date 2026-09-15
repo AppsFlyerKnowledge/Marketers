@@ -1,5 +1,5 @@
 ---
-title: "iOS Metrics in the Overview Dashboard"
+title: "iOS metrics in the Overview dashboard (SKAN and AppsFlyer metrics side-by-side)"
 excerpt: "View and compare SKAdNetwork (SKAN) and AppsFlyer attribution framework metrics side-by-side to optimize your iOS 14+ campaigns."
 ---
 **At a glance**: View metrics of SKAdNetwork (SKAN) and AppsFlyer attribution frameworks side-by-side in the [Overview](https://support.appsflyer.com/hc/articles/360014697157-Overview-dashboard-V2) dashboard. Identify the framework with the best campaign performance metric for you, then leverage it to gain insights and optimize campaigns.

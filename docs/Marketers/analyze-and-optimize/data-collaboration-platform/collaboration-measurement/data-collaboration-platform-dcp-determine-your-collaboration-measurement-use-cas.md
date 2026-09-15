@@ -1,5 +1,5 @@
 ---
-title: "Determine your collaboration measurement use case"
+title: "Data collaboration platform (DCP) - Determine your collaboration measurement use case"
 excerpt: "Identify your collaboration scenario to determine what data to provide, who is responsible for it, and in what format to submit it."
 ---
 **At a glance:** Identify your collaboration scenario, making sure you know what data to provide, who is responsible for it, and in what format to submit it.

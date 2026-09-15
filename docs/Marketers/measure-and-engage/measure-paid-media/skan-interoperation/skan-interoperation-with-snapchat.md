@@ -1,5 +1,5 @@
 ---
-title: "SKAN Interoperation with Snapchat"
+title: "SKAN interoperation with Snapchat"
 excerpt: "Learn how to configure SKAN interoperability between AppsFlyer and Snapchat to share postbacks and conversion value measurement mapping."
 ---
 SKAN interoperability enables Snapchat to share SKAN postbacks with AppsFlyer and enables AppsFlyer to share your conversion value measurement mapping with Snapchat.

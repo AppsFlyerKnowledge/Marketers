@@ -1,5 +1,5 @@
 ---
-title: "Build and Activate Audiences"
+title: "Data Collaboration Platform (DCP) - Build and activate audiences"
 excerpt: "Learn how to build high-value audience segments in DCP collaborations using shared data and activate them on media partner sites or cloud services."
 ---
 **At a glance:** Build high-value audiences in DCP collaborations using shared data and activate them on media partner sites or cloud services for maximum campaign impact.

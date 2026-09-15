@@ -1,5 +1,5 @@
 ---
-title: "Nativex Campaign Configuration"
+title: "Nativex (formerly Mobvista) campaign configuration"
 excerpt: "Learn how to configure Nativex (formerly Mobvista) in AppsFlyer to set up mobile attribution, cost tracking, and view-through attribution."
 ---
 Nativex, an AppsFlyer integrated partner, is a mobile marketing platform providing user acquisition, analytics, and monetization solutions to worldwide mobile developers and brands. In addition to click-based mobile attribution, Nativex also offers cost and view-through attribution, which you can record with AppsFlyer.

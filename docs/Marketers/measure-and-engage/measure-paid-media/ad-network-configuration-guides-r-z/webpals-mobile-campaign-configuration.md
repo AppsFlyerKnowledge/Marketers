@@ -1,5 +1,5 @@
 ---
-title: "Webpals Mobile Campaign Configuration"
+title: "Webpals Mobile campaign configuration"
 excerpt: "Learn how to configure your mobile user acquisition and revenue campaigns with Webpals Mobile in AppsFlyer."
 ---
 Webpals Mobile, an AppsFlyer ad network integrated partner with global coverage, is a leader in mobile user acquisition and revenue maximization.

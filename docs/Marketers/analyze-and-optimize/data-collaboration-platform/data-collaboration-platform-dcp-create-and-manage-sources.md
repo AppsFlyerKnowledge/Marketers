@@ -1,5 +1,5 @@
 ---
-title: "Create and manage sources"
+title: "Data Collaboration Platform (DCP) - Create and manage sources"
 excerpt: "Learn how to create, configure, and manage data sources in the Data Collaboration Platform (DCP) to securely share your first-party data."
 ---
 In the Data Collaboration Platform (DCP), a source is a dataset, typically uploaded to AppsFlyer from your cloud storage. These sources form the foundation of any collaboration, supplying the data that your collaborators can use for audience creation and activation. This article contains everything you need to know about creating and managing your sources, including:

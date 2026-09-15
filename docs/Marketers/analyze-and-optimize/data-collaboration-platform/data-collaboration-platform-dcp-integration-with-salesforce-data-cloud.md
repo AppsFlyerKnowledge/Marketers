@@ -1,5 +1,5 @@
 ---
-title: "Integration with Salesforce Data Cloud"
+title: "Data Collaboration Platform (DCP) - Integration with Salesforce Data Cloud"
 excerpt: "Learn how to integrate Salesforce Data Cloud with the AppsFlyer Data Collaboration Platform to easily bring your first-party data into your Data Clean Room."
 ---
 The Salesforce Data Cloud integration allows you to bring your first-party data to the AppsFlyer Data Collaboration Platform with a click of a button.

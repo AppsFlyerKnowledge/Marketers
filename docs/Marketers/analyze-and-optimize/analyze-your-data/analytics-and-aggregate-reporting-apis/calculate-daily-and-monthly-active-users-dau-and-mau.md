@@ -1,5 +1,5 @@
 ---
-title: "Calculate Daily and Monthly Active Users (DAU and MAU)"
+title: "Calculate daily and monthly active users (DAU and MAU)"
 excerpt: "Learn how to calculate Daily and Monthly active users using SQL queries on Data Locker raw data tables."
 ---
 Daily Active Users (DAU) and Monthly Active Users (MAU) are key metrics for understanding app engagement and overall user behavior. They provide valuable insights into your active user base, including user stickiness, campaign performance, and growth trends over time.

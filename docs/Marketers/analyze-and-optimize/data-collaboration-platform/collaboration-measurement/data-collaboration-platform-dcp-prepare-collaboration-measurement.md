@@ -1,5 +1,5 @@
 ---
-title: "Prepare Collaboration Measurement"
+title: "Data collaboration platform (DCP) - Prepare collaboration measurement"
 excerpt: "Learn how to create measurement data sources and provide access to them for the attribution job in the Data Collaboration Platform."
 ---
 The first step in setting up the measurement process is to prepare the three inputs that feed it: conversions, engagements, and campaign mapping. These inputs must be prepared based on the predefined schema or event structure, depending on the data provision mode: in-app events or custom source files.

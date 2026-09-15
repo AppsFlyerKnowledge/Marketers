@@ -1,5 +1,5 @@
 ---
-title: "360 Ads Campaign Configuration"
+title: "360 Ads campaign configuration"
 excerpt: "Learn how to configure the 360 Ads integrated partner settings in AppsFlyer, including integration, attribution links, and permissions."
 ---
 **At a glance:** 360 Ads is an AppsFlyer ad network integrated partner.

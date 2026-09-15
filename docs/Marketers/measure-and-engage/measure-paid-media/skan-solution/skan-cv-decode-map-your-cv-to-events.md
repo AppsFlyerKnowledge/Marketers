@@ -1,5 +1,5 @@
 ---
-title: "SKAN CV Decode: Map Your CV to Events"
+title: "SKAN CV decode (map your CV to events)"
 excerpt: "Learn how AppsFlyer decodes and transforms your custom SKAdNetwork conversion values into events for reporting and dashboards."
 ---
 AppsFlyer decodes and transforms the conversion value set by you into events. The events are used to populate the SKAN dashboard, raw data, and postbacks to partners.
