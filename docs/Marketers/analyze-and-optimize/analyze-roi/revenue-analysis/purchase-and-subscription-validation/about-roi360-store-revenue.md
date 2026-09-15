@@ -218,7 +218,27 @@ The following sections provide additional details about key aspects of ROI360 in
       - af_environment
     </Accordion>
     <Accordion title="Purchase pending (af_purchase_pending)" icon="fa-info-circle">
+      **Description**
 
+      Recorded when a user makes a purchase but the payment isn't yet processed.
+
+      **Parameters**
+
+      - app_id
+      - customer_user_id
+      - af_currency
+      - af_original_transaction_id
+      - af_order_id
+      - af_purchase_token
+      - af_transaction_id
+      - af_product_id
+      - android_id
+      - idfa
+      - ip
+      - appsflyer_id
+      - af_purchase_date_ms
+      - af_store
+      - af_environment
     </Accordion>
     <Accordion title="Purchase" icon="fa-info-circle">
 
