@@ -335,7 +335,41 @@ The following sections provide additional details about key aspects of ROI360 in
   - Can be used in SKAN Conversion Studio.
 
     **Note**: depending on the user device platform, some parameeters aren't always populated for an in-app events
-  - <Accordion title="Subscription churned (af_ars_subscription_churned)" icon="fa-info-circle">
+    <Accordion title="Subscription resumed (af_ars_subscription_resumed)" icon="fa-info-circle">
+      **Description**
+
+      Recorded when a fully priced subscription is resumed following a churned or refunded subscription.
+
+      **Parameters**
+
+      - app_id
+      - customer_user_id
+      - af_currency
+      - af_expires_date_ms
+      - af_subscription_ownership_type
+      - af_original_transaction_id
+      - af_order_id
+      - af_purchase_token
+      - af_transaction_id
+      - af_product_id
+      - android_id
+      - idfa
+      - ip
+      - appsflyer_id
+      - af_purchase_date_ms
+      - af_store
+      - af_environment
+      - af_period_type
+      - af_discount_id
+      - af_discount_type
+      - af_reason
+      - event_revenue (included in the event when event revenue exceeds zero)
+      - store_commission
+      - af_revenue
+      - af_net_revenue
+      - af_net_revenue_factors
+    </Accordion>
+    <Accordion title="Subscription churned (af_ars_subscription_churned)" icon="fa-info-circle">
       **Description**
 
       Recorded when a subscriber churns. This usually happens after auto-renewal cancelation or billing period expiration. It can also follow a billing or technical issue, with the renewal leading to churn.
@@ -362,7 +396,7 @@ The following sections provide additional details about key aspects of ROI360 in
       - af_period_type
       - af_reason
     </Accordion>
-    <Accordion title="Subscription refunded (af_ars_subscription_refunded)" icon="fa-info-circle">
+  - <Accordion title="Subscription refunded (af_ars_subscription_refunded)" icon="fa-info-circle">
       **Description**
 
       Recorded when a subscriber is issued a refund.
@@ -822,40 +856,7 @@ Recorded when a user pauses an active subscription.
 - af_environment
 - af_period_type
 
-#### Subscription resumed (af_ars_subscription_resumed)
-
-**Description**
-
-Recorded when a fully priced subscription is resumed following a churned or refunded subscription.
-
-**Parameters**
-
-- app_id
-- customer_user_id
-- af_currency
-- af_expires_date_ms
-- af_subscription_ownership_type
-- af_original_transaction_id
-- af_order_id
-- af_purchase_token
-- af_transaction_id
-- af_product_id
-- android_id
-- idfa
-- ip
-- appsflyer_id
-- af_purchase_date_ms
-- af_store
-- af_environment
-- af_period_type
-- af_discount_id
-- af_discount_type
-- af_reason
-- event_revenue (included in the event when event revenue exceeds zero)
-- store_commission
-- af_revenue
-- af_net_revenue
-- af_net_revenue_factors
+####
 
 ####
 
