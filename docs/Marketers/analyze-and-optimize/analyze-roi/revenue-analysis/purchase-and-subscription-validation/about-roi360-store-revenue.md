@@ -299,36 +299,32 @@ The following sections provide additional details about key aspects of ROI360 in
       - af_net
       - af_sandbox_revenue
     </Accordion>
-    <Accordion title="Purchase (af_purchase) " icon="fa-info-circle">
+    <Accordion title="Test purchase (af_purchase_sandbox_s2s)" icon="fa-info-circle">
+      **Description**
 
+      Recorded when testing a purchase reported via S2S in a sandbox environment.
+
+      **Parameters**
+
+      - app_id
+      - customer_user_id
+      - af_currency
+      - af_original_transaction_id
+      - af_order_id
+      - af_purchase_token
+      - af_transaction_id
+      - af_purchase_state
+      - af_product_id
+      - android_id
+      - idfa
+      - ip
+      - appsflyer_id
+      - af_net
+      - af_sandbox_revenue
     </Accordion>
 </Accordion>
 
 ###
-
-#### Test purchase (af_purchase_sandbox_sdk)
-
-**Description**
-
-Recorded when testing a purchase recorded via SDK in sandbox environment.
-
-**Parameters**
-
-- app_id
-- customer_user_id
-- af_currency
-- af_original_transaction_id
-- af_order_id
-- af_purchase_token
-- af_transaction_id
-- af_purchase_state
-- af_product_id
-- android_id
-- idfa
-- ip
-- appsflyer_id
-- af_net
-- af_sandbox_revenue
 
 #### Test purchase (af_purchase_sandbox_s2s)
 
