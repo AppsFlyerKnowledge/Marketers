@@ -1473,218 +1473,214 @@ The following sections provide additional details about key aspects of ROI360 in
   | AppsFlyer shows fewer in-app purchase and subscription events than the actual app stores. | In AppsFlyer, events are only generated for users who have updated to a version of the app that includes the SDK connector. Meanwhile, the app stores log every event, regardless of the user's app version. As a result, until full adoption of the updated app version, a discrepancy between the revenue data from the app and the store data is expected. |
 </Accordion>
 
-####
+<Accordion title="Traits and limitations" icon="fa-info-circle">
+  ###
+
+  <Table>
+    <thead>
+      <tr>
+        <th>
+          Specification
+        </th>
+
+        <th>
+          Product
+        </th>
+
+        <th>
+          Remarks
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>
+          Installment subscriptions (Android)
+        </td>
+
+        <td>
+          Subscription revenue
+        </td>
+
+        <td>
+          Not supported
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Subscription pending<br />transactions (Android)
+        </td>
+
+        <td>
+          Subscription revenue
+        </td>
+
+        <td>
+          Not supported
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          New subscriptions
+        </td>
+
+        <td>
+          Subscription revenue
+        </td>
+
+        <td>
+          Only recorded via the AppsFlyer purchase SDK
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Price change
+        </td>
+
+        <td>
+          Subscription revenue
+        </td>
+
+        <td>
+          If subscription revenue doesn't receive an SDK-originated notification with the new product price, subscription revenue continues to report the previous product price as revenue. Once the new product price is received from the purchase SDK, the new price is recorded.
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Gross revenue
+        </td>
+
+        <td>
+          - IAP<br />- Subscription revenue
+        </td>
+
+        <td>
+          Supported
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Net revenue
+        </td>
+
+        <td>
+          - IAP<br />- Subscription revenue
+        </td>
+
+        <td>
+          Supported in raw data and in My Dashboards (as the Net metrics)
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Refunds
+        </td>
+
+        <td>
+          IAP
+        </td>
+
+        <td>
+          Can be reported until 180 days after the original purchase.
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Deduplication
+        </td>
+
+        <td>
+          - IAP<br />- Subscription revenue
+        </td>
+
+        <td>
+          Supported for transactions reported up to 180 days after event date.
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          SDK strict mode
+        </td>
+
+        <td>
+          - IAP<br />- Subscription revenue
+        </td>
+
+        <td>
+          ROI360 subscriptions and IAP are supported under SDK strict mode from the:<br />- AppsFlyer iOS purchase SDK connector V6.13.0<br />- Unity purchase SDK connector V2.0.1
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Currency
+        </td>
+
+        <td>
+          - IAP<br />- Subscription revenue
+        </td>
+
+        <td>
+          Revenue is reported in the original currency (using the event_revenue parameter) and in USD (using the event_revenue_usd parameter).
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Data freshness
+        </td>
+
+        <td>
+          - IAP<br />- Subscription revenue
+        </td>
+
+        <td>
+          - Transaction-level store revenue report: Hourly<br />- Device-level store revenue report: Every 8 hours
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          StoreKit 2
+        </td>
+
+        <td>
+          - IAP<br />- Subscription revenue
+        </td>
+
+        <td>
+          - StoreKit 2 is supported starting with Purchase SDK Connector version 6.16.2.<br />- Make sure your app is using the updated App Store credentials as described [here](/docs/bulletin-update-app-store-credentials-for-ios-roi360-receipt-validation).
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Google one-time products
+        </td>
+
+        <td>
+          IAP
+        </td>
+
+        <td>
+          - Supported purchase options: Buy and Rent<br />- Pre-order: Not supported
+        </td>
+      </tr>
+    </tbody>
+  </Table>
+</Accordion>
 
 ####
 
 ####
 
-### Troubleshooting and discrepancies
-
-| Symptom                                                                                   | Explanation / Solution                                                                                                                                                                                                                                                                                                                                        |
-| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| AppsFlyer shows fewer in-app purchase and subscription events than the actual app stores. | In AppsFlyer, events are only generated for users who have updated to a version of the app that includes the SDK connector. Meanwhile, the app stores log every event, regardless of the user's app version. As a result, until full adoption of the updated app version, a discrepancy between the revenue data from the app and the store data is expected. |
-
-### Traits and limitations
-
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Specification
-      </th>
-
-      <th>
-        Product
-      </th>
-
-      <th>
-        Remarks
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        Installment subscriptions (Android)
-      </td>
-
-      <td>
-        Subscription revenue
-      </td>
-
-      <td>
-        Not supported
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Subscription pending<br />transactions (Android)
-      </td>
-
-      <td>
-        Subscription revenue
-      </td>
-
-      <td>
-        Not supported
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        New subscriptions
-      </td>
-
-      <td>
-        Subscription revenue
-      </td>
-
-      <td>
-        Only recorded via the AppsFlyer purchase SDK
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Price change
-      </td>
-
-      <td>
-        Subscription revenue
-      </td>
-
-      <td>
-        If subscription revenue doesn't receive an SDK-originated notification with the new product price, subscription revenue continues to report the previous product price as revenue. Once the new product price is received from the purchase SDK, the new price is recorded.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Gross revenue
-      </td>
-
-      <td>
-        - IAP<br />- Subscription revenue
-      </td>
-
-      <td>
-        Supported
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Net revenue
-      </td>
-
-      <td>
-        - IAP<br />- Subscription revenue
-      </td>
-
-      <td>
-        Supported in raw data and in My Dashboards (as the Net metrics)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Refunds
-      </td>
-
-      <td>
-        IAP
-      </td>
-
-      <td>
-        Can be reported until 180 days after the original purchase.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Deduplication
-      </td>
-
-      <td>
-        - IAP<br />- Subscription revenue
-      </td>
-
-      <td>
-        Supported for transactions reported up to 180 days after event date.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        SDK strict mode
-      </td>
-
-      <td>
-        - IAP<br />- Subscription revenue
-      </td>
-
-      <td>
-        ROI360 subscriptions and IAP are supported under SDK strict mode from the:<br />- AppsFlyer iOS purchase SDK connector V6.13.0<br />- Unity purchase SDK connector V2.0.1
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Currency
-      </td>
-
-      <td>
-        - IAP<br />- Subscription revenue
-      </td>
-
-      <td>
-        Revenue is reported in the original currency (using the event_revenue parameter) and in USD (using the event_revenue_usd parameter).
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Data freshness
-      </td>
-
-      <td>
-        - IAP<br />- Subscription revenue
-      </td>
-
-      <td>
-        - Transaction-level store revenue report: Hourly<br />- Device-level store revenue report: Every 8 hours
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        StoreKit 2
-      </td>
-
-      <td>
-        - IAP<br />- Subscription revenue
-      </td>
-
-      <td>
-        - StoreKit 2 is supported starting with Purchase SDK Connector version 6.16.2.<br />- Make sure your app is using the updated App Store credentials as described [here](/docs/bulletin-update-app-store-credentials-for-ios-roi360-receipt-validation).
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Google one-time products
-      </td>
-
-      <td>
-        IAP
-      </td>
-
-      <td>
-        - Supported purchase options: Buy and Rent<br />- Pre-order: Not supported
-      </td>
-    </tr>
-  </tbody>
-</Table>
+###
