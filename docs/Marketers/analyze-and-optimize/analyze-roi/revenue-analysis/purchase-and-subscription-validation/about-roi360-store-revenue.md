@@ -113,7 +113,7 @@ See the [Set up ROI360 store revenue](/docs/set-up-roi360-store-revenue) article
 
 The following sections provide additional details about key aspects of ROI360 in-app purchase (IAP) and subscription revenue measurement. These include events and parameters for IAP and subscription events, Net revenue, which supports gross-to-net revenue calculations, and the general characteristics and limitations of the ROI360 IAP and subscription revenue measurement solution.
 
-<Callout icon="📘" theme="info">
+<Callout icon="far fa-pen-field" theme="info">
   ### Note
 
   To send additional custom parameters with your in-app events, configure a **custom data source** in the [Purchase SDK Connector](https://dev.appsflyer.com/hc/docs/purchase-connector). This allows you to enrich purchase and subscription events with your own business logic or metadata.
