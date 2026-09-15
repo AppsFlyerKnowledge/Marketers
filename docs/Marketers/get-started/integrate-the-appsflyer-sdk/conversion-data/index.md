@@ -1,6 +1,7 @@
 ---
 title: "Conversion data"
 excerpt: "Explore conversion data payloads and scenarios for user acquisition and retargeting using the AppsFlyer SDK."
+table_of_contents: false
 ---
 Conversion data payloads and scenarios for user acquisition and retargeting
 

@@ -1,6 +1,7 @@
 ---
 title: "Windows platform"
 excerpt: "Access integration and testing guides for the AppsFlyer Windows SDK."
+table_of_contents: false
 ---
 Windows SDK integration and testing guides
 

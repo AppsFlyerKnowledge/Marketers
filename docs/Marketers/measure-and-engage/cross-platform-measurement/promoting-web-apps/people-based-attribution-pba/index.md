@@ -1,6 +1,7 @@
 ---
 title: "People Based Attribution (PBA)"
 excerpt: "An overview of guides and resources for setting up and understanding AppsFlyer's People-Based Attribution (PBA)."
+table_of_contents: false
 ---
 People-Based Attribution (PBA) allows you to attribute campaigns across web and app platforms to understand the complete customer journey.
 

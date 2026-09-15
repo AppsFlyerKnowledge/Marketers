@@ -1,6 +1,7 @@
 ---
 title: "Google Ads"
 excerpt: "Learn how to attribute Google Ads campaigns, set up integrations for advertisers and agencies, and configure cost and ad revenue tracking."
+table_of_contents: false
 ---
 Attribute Google Ads campaigns and work with Google Marketing Partners
 

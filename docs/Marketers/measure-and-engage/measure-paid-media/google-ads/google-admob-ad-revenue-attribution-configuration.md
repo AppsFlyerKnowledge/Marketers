@@ -1,6 +1,7 @@
 ---
 title: "Google AdMob—Ad revenue attribution configuration"
 excerpt: "Configure Google AdMob with AppsFlyer to receive aggregate and impression-level ad revenue data for attribution."
+table_of_contents: false
 ---
 **At a glance:** Google AdMob, an AppsFlyer integrated partner, allows app owners to receive ad revenue data to be used for ad revenue attribution.
 

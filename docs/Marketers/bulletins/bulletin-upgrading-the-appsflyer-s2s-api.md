@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Upgrading the AppsFlyer S2S API"
 excerpt: "AppsFlyer has upgraded its server-to-server (S2S) API for in-app events to provide a more secure experience and reduce fraud."
+table_of_contents: false
 ---
 To provide a more secure experience for API usage and to reduce fraud, AppsFlyer has upgraded its server-to-server (S2S) API for in-app events. The existing endpoint will be deprecated in the future and we recommend to start planning the switch. AppsFlyer is working on a solution for third-party tech partners that send data on your behalf.
 

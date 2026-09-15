@@ -1,6 +1,7 @@
 ---
 title: "Apple Ads"
 excerpt: "Set up Apple Ads and its partners for AppsFlyer attribution."
+table_of_contents: false
 ---
 <Cards>
   <Card title="Apple Ads integration setup" href="/docs/apple-ads-integration-setup" icon="fa-solid fa-bullhorn">

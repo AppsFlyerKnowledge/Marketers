@@ -1,6 +1,7 @@
 ---
 title: "App promotion in China"
 excerpt: "Learn how to promote your app in the Chinese market, configure key media sources, and set up Android attribution for out-of-store markets."
+table_of_contents: false
 ---
 > 📘 At a glance
 >

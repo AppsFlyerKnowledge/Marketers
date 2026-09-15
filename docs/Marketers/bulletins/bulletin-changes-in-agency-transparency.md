@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Changes in agency transparency"
 excerpt: "An overview of AppsFlyer's update permanently enabling the app-level agency transparency toggle by default starting August 14, 2023."
+table_of_contents: false
 ---
 | | |
 | --- | --- |

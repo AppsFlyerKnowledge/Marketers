@@ -1,6 +1,7 @@
 ---
 title: "Web-to-app attribution"
 excerpt: "Convert and attribute mobile website visitors with our attribution solutions."
+table_of_contents: false
 ---
 <Cards>
   <Card title="Convert your mobile web visitors to app users" href="/docs/convert-your-mobile-web-visitors-to-app-users" icon="fa-solid fa-globe">

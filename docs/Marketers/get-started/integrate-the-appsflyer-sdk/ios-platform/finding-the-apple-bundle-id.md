@@ -1,6 +1,7 @@
 ---
 title: "Finding the Apple bundle ID"
 excerpt: "Learn how to locate your unique iOS app identifier within your iTunes Connect account."
+table_of_contents: false
 ---
 > 👍 At a glance
 >

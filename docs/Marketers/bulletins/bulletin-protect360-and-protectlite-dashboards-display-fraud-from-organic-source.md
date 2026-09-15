@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Protect360 and ProtectLITE dashboards display fraud from organic sources"
 excerpt: "Protect360 and ProtectLITE dashboards now display fraud data for installs from organic sources, which was previously only available in raw data reports."
+table_of_contents: false
 ---
 |     |     |
 | --- | --- |

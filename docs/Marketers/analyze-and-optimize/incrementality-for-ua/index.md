@@ -1,6 +1,7 @@
 ---
 title: "Incrementality for UA"
 excerpt: "Learn how to run experiments to understand the true impact of your User Acquisition campaigns."
+table_of_contents: false
 ---
 Run experiments to understand the true impact of your User Acquisition (UA) campaigns
 

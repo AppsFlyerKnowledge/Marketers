@@ -1,6 +1,7 @@
 ---
 title: "Marketer onboarding"
 excerpt: "Get started with AppsFlyer using our step-by-step guides, migration resources, and onboarding materials designed specifically for marketers."
+table_of_contents: false
 ---
 Check out all AppsFlyer can do for you with a short video and step-by-step guide
 

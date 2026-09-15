@@ -1,6 +1,7 @@
 ---
 title: "In-app events"
 excerpt: "Explore in-app event fields, Customer User IDs, and recommended in-app events for every vertical."
+table_of_contents: false
 ---
 In-app event fields, Customer User IDs, and in-app events for every vertical
 

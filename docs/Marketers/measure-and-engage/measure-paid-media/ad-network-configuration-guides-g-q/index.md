@@ -1,6 +1,7 @@
 ---
 title: "Ad network configuration guides (G-Q)"
 excerpt: "Set up selected ad networks from G to Q for AppsFlyer attribution."
+table_of_contents: false
 ---
 Set up selected ad networks for AppsFlyer attribution
 

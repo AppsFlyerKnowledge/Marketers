@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Apple Ads sign-in error and solution"
 excerpt: "Resolve the sign-in error that displays when attempting to integrate Apple Ads cost data with AppsFlyer."
+table_of_contents: false
 ---
 **At a glance:** Solve the sign-in error that displays during Apple Ads cost integration.
 

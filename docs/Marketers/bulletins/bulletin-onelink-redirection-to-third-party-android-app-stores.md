@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: OneLink redirection to third-party Android app stores"
 excerpt: "OneLink templates now support direct redirection to third-party Android app stores including Huawei, Xiaomi, Samsung, Oppo, and Vivo."
+table_of_contents: false
 ---
 | What's new | OneLink templates provide an option to redirect users without your app to third-party Android app stores. |
 | --- | --- |

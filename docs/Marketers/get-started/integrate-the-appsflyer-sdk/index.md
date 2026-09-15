@@ -1,6 +1,7 @@
 ---
 title: "Integrate the AppsFlyer SDK"
 excerpt: "Plan your SDK integration, in-app events, and data delivery options across Android, iOS, Windows, and other platforms."
+table_of_contents: false
 ---
 Plan your SDK integration, in-app events, and data delivery options
 

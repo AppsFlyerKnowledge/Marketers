@@ -1,6 +1,7 @@
 ---
 title: "Cross-platform measurement"
 excerpt: "Learn how to attribute and measure user engagements and conversions across different platforms and industries."
+table_of_contents: false
 ---
 <Cards>
   <Card title="Overview" href="/docs/overview" icon="fa-solid fa-circle-info">

@@ -1,6 +1,7 @@
 ---
 title: "Data Locker"
 excerpt: "Access and retrieve advertiser attribution data directly in your cloud storage."
+table_of_contents: false
 ---
 Receive advertiser attribution data in your cloud storage
 

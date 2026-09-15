@@ -1,6 +1,7 @@
 ---
 title: "Previous SDK versions"
 excerpt: "Access upgrade instructions and version control policies for deprecated AppsFlyer SDKs."
+table_of_contents: false
 ---
 Upgrade instructions for deprecated SDKs
 

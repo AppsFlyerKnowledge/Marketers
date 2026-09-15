@@ -1,6 +1,7 @@
 ---
 title: "Xamarin Android/iOS plugin"
 excerpt: "Integrate AppsFlyer into apps developed using Xamarin to measure installs, in-app events, media sources, and more."
+table_of_contents: false
 ---
 > 🚧 Important!
 >

@@ -1,6 +1,7 @@
 ---
 title: "End-user privacy"
 excerpt: "Optimize your platform for the user privacy era with SKAN integration and Advanced Privacy guides."
+table_of_contents: false
 ---
 Optimize your platform for the user privacy era
 

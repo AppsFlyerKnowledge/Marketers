@@ -1,6 +1,7 @@
 ---
 title: "Cocos2ds"
 excerpt: "Integrate AppsFlyer into games developed in Cocos2dX to measure installs, in-app events, media sources, and more."
+table_of_contents: false
 ---
 For the **Cocos2dX** AppsFlyer plugin for Android and iOS, follow this link:
 

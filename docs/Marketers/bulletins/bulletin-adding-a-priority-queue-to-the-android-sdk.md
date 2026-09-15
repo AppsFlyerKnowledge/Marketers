@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Adding a priority queue to the Android SDK"
 excerpt: "Learn about the priority queue changes introduced in Android SDK version 6.7.0 to ensure in-app events are sent in the correct order."
+table_of_contents: false
 ---
 | **What's new** | In version 6.7.0 we introduced some changes to the way the SDK is handling the various requests to the AppsFlyer servers.<br /><br />We've noticed that there are apps that try and send in-app events before they have started the SDK. By introducing this change, we're making sure things are executed in the right order. |
 | --- | --- |

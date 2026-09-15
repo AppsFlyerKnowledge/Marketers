@@ -1,6 +1,7 @@
 ---
 title: "Analyze ROI"
 excerpt: "Calculate your campaign's true ROI with attributed revenue and cost data."
+table_of_contents: false
 ---
 <Cards>
   <Card title="Overview" href="/docs/overview" icon="fa-solid fa-circle-info">

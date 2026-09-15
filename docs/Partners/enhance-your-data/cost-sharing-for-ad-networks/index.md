@@ -1,6 +1,7 @@
 ---
 title: "Cost sharing for ad networks"
 excerpt: "Learn how to refine customer data by providing cost information through various cost-sharing options, APIs, and attribution links."
+table_of_contents: false
 ---
 Refine customer data by providing cost information
 

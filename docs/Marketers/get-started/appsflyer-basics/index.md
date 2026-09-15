@@ -1,6 +1,7 @@
 ---
 title: "AppsFlyer basics"
 excerpt: "Review core attribution concepts, explore the AppsFlyer platform, and learn how to work with agencies."
+table_of_contents: false
 ---
 Review attribution concepts, learn the AppsFlyer platform, work with agencies
 

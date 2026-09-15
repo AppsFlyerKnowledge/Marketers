@@ -1,6 +1,7 @@
 ---
 title: "Marketing partner onboarding"
 excerpt: "Get started with AppsFlyer for marketing technology platforms and learn how to integrate Meta campaign management partners."
+table_of_contents: false
 ---
 Getting started with AppsFlyer for marketing technology platforms
 

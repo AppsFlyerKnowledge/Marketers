@@ -1,6 +1,7 @@
 ---
 title: "Platforms"
 excerpt: "Learn how to promote and measure the attribution of your apps across different platforms, including CTV, Console, Desktop, and Web."
+table_of_contents: false
 ---
 Find out how to promote and measure the attribution of your apps according to the platforms they belong to.
 

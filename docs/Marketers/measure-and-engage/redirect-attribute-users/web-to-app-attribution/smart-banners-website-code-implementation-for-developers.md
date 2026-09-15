@@ -1,6 +1,7 @@
 ---
 title: "Smart Banners website code implementation for developers"
 excerpt: "Access the updated developer documentation and implementation guides for AppsFlyer Smart Banners."
+table_of_contents: false
 ---
 > 🚧 Deprecated
 >

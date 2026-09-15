@@ -1,6 +1,7 @@
 ---
 title: "Snap (Snapchat)"
 excerpt: "Set up Snap for AppsFlyer attribution and configure advanced SRN integrations, web campaigns, and marketing partners."
+table_of_contents: false
 ---
 Set up Snap for AppsFlyer attribution
 

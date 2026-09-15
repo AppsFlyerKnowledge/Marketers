@@ -2,6 +2,7 @@
 title: "Get started"
 deprecated: false
 hidden: false
+table_of_contents: false
 ---
 <Cards columns={2}>
   <Card title="Analytics partner onboarding" href="/docs/analytics-partner-onboarding" icon="fa-solid fa-rocket">

@@ -1,6 +1,7 @@
 ---
 title: "About media source types"
 excerpt: "Understand the basic media source types in AppsFlyer, including self-reporting networks, non-SRNs, and owned media."
+table_of_contents: false
 ---
 **At a glance:** Understand the basic media source types in AppsFlyer.
 

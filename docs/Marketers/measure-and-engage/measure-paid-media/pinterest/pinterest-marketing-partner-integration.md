@@ -1,6 +1,7 @@
 ---
 title: "Pinterest Marketing Partner Integration"
 excerpt: "Learn how to enable Pinterest Marketing Partners (PMPs) to receive install data for users attributed to Pinterest."
+table_of_contents: false
 ---
 Every PMP must be an official PMP and must also be approved by AppsFlyer on the back-end.
 

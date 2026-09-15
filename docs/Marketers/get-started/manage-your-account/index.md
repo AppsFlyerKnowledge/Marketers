@@ -1,6 +1,7 @@
 ---
 title: "Manage your account"
 excerpt: "Learn how to manage your account security, users, permissions, invoices, support tickets, and more."
+table_of_contents: false
 ---
 Manage account security, users, permissions, invoices, support tickets, and more
 

@@ -1,6 +1,7 @@
 ---
 title: "Attribution concepts"
 excerpt: "Understand the AppsFlyer attribution model, terms, dashboards, and A/B testing."
+table_of_contents: false
 ---
 <Cards>
   <Card title="AppsFlyer attribution model" href="/docs/appsflyer-attribution-model" icon="fa-solid fa-diagram-project">

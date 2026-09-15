@@ -1,6 +1,7 @@
 ---
 title: "iOS platform"
 excerpt: "Access iOS SDK release notes, Apple App Clips integration guides, and other iOS platform-related topics."
+table_of_contents: false
 ---
 iOS SDK release notes, Apple App Clips integration, and other iOS platform-related topics
 

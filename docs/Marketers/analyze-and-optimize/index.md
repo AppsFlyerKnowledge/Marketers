@@ -2,6 +2,7 @@
 title: "Analyze & Optimize"
 deprecated: false
 hidden: false
+table_of_contents: false
 ---
 <Cards columns={2}>
   <Card title="Incrementality for UA" href="/docs/incrementality-for-ua" icon="fa-solid fa-flask">

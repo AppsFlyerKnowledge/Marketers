@@ -2,6 +2,7 @@
 title: "Measure & Engage"
 deprecated: false
 hidden: false
+table_of_contents: false
 ---
 <Cards columns={2}>
   <Card title="Measure paid media" href="/docs/measure-paid-media" icon="fa-solid fa-chart-line">

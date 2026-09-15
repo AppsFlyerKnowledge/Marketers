@@ -1,6 +1,7 @@
 ---
 title: "China domestic market ad network configuration"
 excerpt: "Learn how to set up selected domestic China ad networks for AppsFlyer attribution."
+table_of_contents: false
 ---
 <Cards>
   <Card title="360 Ads campaign configuration" href="/docs/360-ads-campaign-configuration" icon="fa-solid fa-bullhorn">

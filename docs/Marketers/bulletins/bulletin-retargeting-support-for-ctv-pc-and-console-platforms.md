@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Retargeting support for CTV, PC, and console platforms"
 excerpt: "AppsFlyer now supports retargeting measurement, including re-engagement and re-attribution, for CTV, PC, and Console platforms."
+table_of_contents: false
 ---
 | Section | Details |
 | --- | --- |

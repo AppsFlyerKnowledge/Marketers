@@ -1,6 +1,7 @@
 ---
 title: "Agency onboarding"
 excerpt: "Learn how to get started with AppsFlyer for marketing agencies, including account setup, user management, and marketplace profiles."
+table_of_contents: false
 ---
 Getting started with AppsFlyer for marketing agencies
 

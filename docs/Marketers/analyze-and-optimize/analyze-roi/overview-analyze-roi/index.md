@@ -1,6 +1,7 @@
 ---
 title: "Overview"
 excerpt: "Get cost and revenue data to understand your total ROI and ROAS with ROI360."
+table_of_contents: false
 ---
 <Cards>
   <Card title="ROI360 guide - cost and revenue data" href="/docs/roi360-guide-cost-and-revenue-data" icon="fa-solid fa-sack-dollar">

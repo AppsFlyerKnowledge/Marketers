@@ -1,6 +1,7 @@
 ---
 title: "Protect your traffic"
 excerpt: "Learn how to set up Protect360 Validation Rules, dashboards, and alerts to protect your mobile application traffic from fraud."
+table_of_contents: false
 ---
 Set up Protect360 Validation Rules and alerts to protect your traffic from fraud
 

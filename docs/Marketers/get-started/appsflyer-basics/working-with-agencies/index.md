@@ -1,6 +1,7 @@
 ---
 title: "Working with agencies"
 excerpt: "Learn how to set up ad agencies and view agency data in AppsFlyer to maximize your collaborative marketing efforts."
+table_of_contents: false
 ---
 Get the most out of working with ad agencies and AppsFlyer
 

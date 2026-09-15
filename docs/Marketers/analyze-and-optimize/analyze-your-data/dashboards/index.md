@@ -1,6 +1,7 @@
 ---
 title: "Dashboards"
 excerpt: "Set up your AppsFlyer dashboards to get the most from your data, including user acquisition, cohort retention, and PBA metrics."
+table_of_contents: false
 ---
 Set up your AppsFlyer dashboards to get the most from your data (including PBA)
 

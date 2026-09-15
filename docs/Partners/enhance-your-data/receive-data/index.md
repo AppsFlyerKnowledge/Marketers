@@ -1,6 +1,7 @@
 ---
 title: "Receive data"
 excerpt: "Learn how to create postback templates to receive advertiser attribution data, including postback macros, retries, and troubleshooting."
+table_of_contents: false
 ---
 Create postback templates to receive advertiser attribution data
 

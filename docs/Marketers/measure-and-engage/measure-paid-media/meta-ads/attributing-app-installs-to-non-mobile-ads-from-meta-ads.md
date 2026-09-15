@@ -1,6 +1,7 @@
 ---
 title: "Attributing app installs to non-mobile ads from Meta ads"
 excerpt: "Learn how to attribute mobile app installs back to non-mobile Meta ads campaigns to understand the full impact of your marketing efforts."
+table_of_contents: false
 ---
 Advertisers create ads on Meta ads to serve different objectives, including brand awareness, website conversions, and more. However, the influence of seeing or clicking these ads may indirectly lead to a mobile app install.
 

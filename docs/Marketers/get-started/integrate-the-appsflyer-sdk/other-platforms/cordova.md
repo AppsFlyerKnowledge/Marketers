@@ -1,6 +1,7 @@
 ---
 title: "Cordova"
 excerpt: "Integrate AppsFlyer into your Cordova apps to measure installs, in-app events, media sources, and more."
+table_of_contents: false
 ---
 > 🚧 Important!
 >

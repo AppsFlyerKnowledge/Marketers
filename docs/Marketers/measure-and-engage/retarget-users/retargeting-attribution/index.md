@@ -1,6 +1,7 @@
 ---
 title: "Retargeting attribution"
 excerpt: "Understand retargeting attribution and learn how to configure inactivity windows and resolve double attribution with our specialized guides."
+table_of_contents: false
 ---
 Understand retargeting attribution with our specialized guides
 

@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Cohort data includes unattributed sessions and events"
 excerpt: "Starting May 26, 2024, unattributed sessions and events are included in Cohort dashboards and reports under the organic media source to resolve reporting discrepancies."
+table_of_contents: false
 ---
 | | |
 | --- | --- |

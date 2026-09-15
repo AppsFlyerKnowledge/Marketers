@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Unspecified engagement type"
 excerpt: "To standardize reporting when engagement type is missing or mismatched, AppsFlyer is introducing default values in raw data reports and dashboards starting December 9, 2024."
+table_of_contents: false
 ---
 | What’s new? | To standardize reporting when `engagement_type` is missing or mismatched, we are introducing `click_unspecified` or `impression_unspecified` as the default values in raw data reports and dashboards. |
 | --- | --- |

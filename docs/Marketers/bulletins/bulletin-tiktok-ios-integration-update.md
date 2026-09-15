@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: TikTok iOS integration update"
 excerpt: "AppsFlyer is updating the privacy configuration for the TikTok iOS integration, replacing the Advanced Privacy toggle with Advanced Data Sharing."
+table_of_contents: false
 ---
 | Section | Details |
 | --- | --- |

@@ -1,6 +1,7 @@
 ---
 title: "SDK integration planning"
 excerpt: "A step-by-step guide for integrating the AppsFlyer SDK, covering everything from planning and basic setup to testing and FAQs."
+table_of_contents: false
 ---
 Our step-by-step guide for integrating the SDK from planning to testing
 

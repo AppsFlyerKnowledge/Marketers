@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Enhanced engagement types visibility"
 excerpt: "Enriched Engagement Types (EET) will be visible to all accounts starting November 2024, bringing changes to reporting, lookback windows, and dashboard dimensions."
+table_of_contents: false
 ---
 | | |
 | --- | --- |

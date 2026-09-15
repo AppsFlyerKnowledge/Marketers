@@ -1,6 +1,7 @@
 ---
 title: "Pinterest"
 excerpt: "Learn how to set up Pinterest and its partners for AppsFlyer attribution across mobile and website integrations."
+table_of_contents: false
 ---
 Set up Pinterest and its partners for AppsFlyer attribution
 

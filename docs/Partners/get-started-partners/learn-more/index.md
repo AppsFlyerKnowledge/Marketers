@@ -1,6 +1,7 @@
 ---
 title: "Learn more"
 excerpt: "Find important information and answers to your questions about working with AppsFlyer."
+table_of_contents: false
 ---
 <Cards>
   <Card title="Integrated partners—FAQ" href="/docs/integrated-partners-faq" icon="fa-solid fa-circle-question">

@@ -1,6 +1,7 @@
 ---
 title: "Retarget users"
 excerpt: "Set up retargeting campaigns and optimize them using Audiences and Incrementality."
+table_of_contents: false
 ---
 Set up retargeting campaigns, then optimize them with Audiences and Incrementality
 

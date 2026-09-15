@@ -1,6 +1,7 @@
 ---
 title: "Adobe"
 excerpt: "Learn how to set up Adobe Analytics and Adobe Experience Platform (AEP) integrations with AppsFlyer."
+table_of_contents: false
 ---
 Set up Adobe Analytics and Adobe Experience Platform (AEP) in AppsFlyer
 

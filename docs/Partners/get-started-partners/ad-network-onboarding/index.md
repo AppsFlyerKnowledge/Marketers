@@ -1,6 +1,7 @@
 ---
 title: "Ad network onboarding"
 excerpt: "Learn how to integrate with AppsFlyer as an ad network, manage your profile, set up user access, and configure attribution settings."
+table_of_contents: false
 ---
 Integration with AppsFlyer for ad networks
 

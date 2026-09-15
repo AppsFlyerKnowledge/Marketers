@@ -1,6 +1,7 @@
 ---
 title: "Promoting Desktop apps"
 excerpt: "Learn how to promote and measure attribution of your Desktop apps from platforms like Steam, Epic, and Google Play Games on PC."
+table_of_contents: false
 ---
 How to promote and measure attribution of your Desktop apps from anywhere
 

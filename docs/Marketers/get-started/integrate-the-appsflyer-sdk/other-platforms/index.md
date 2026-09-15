@@ -1,6 +1,7 @@
 ---
 title: "Other platforms"
 excerpt: "Integrate specialized plugins and platforms, such as Unity, React, and Native with AppsFlyer."
+table_of_contents: false
 ---
 <Cards>
   <Card title="React Native plugin overview" href="/docs/react-native-plugin-overview" icon="fa-solid fa-code">

@@ -1,6 +1,7 @@
 ---
 title: "The AppsFlyer platform"
 excerpt: "Explore the core features of the AppsFlyer platform, including notifications, data access permissions, APIs, and timezone support."
+table_of_contents: false
 ---
 The ins-and-outs of the platform, notifications, data access, APIs, and more
 

@@ -1,6 +1,7 @@
 ---
 title: "Promoting Console apps"
 excerpt: "Learn how to promote and measure attribution of your Console apps across PlayStation, Nintendo Switch, Meta Quest, and Xbox integrations."
+table_of_contents: false
 ---
 How to promote and measure attribution of your Console apps from anywhere
 

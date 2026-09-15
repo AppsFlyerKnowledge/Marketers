@@ -1,6 +1,7 @@
 ---
 title: "Android privacy sandbox"
 excerpt: "An overview of the Android Privacy Sandbox, including the Attribution API, Protected Audiences API, and related AppsFlyer dashboards and reports."
+table_of_contents: false
 ---
 All about Android Privacy Sandbox:
 Topics, Protected App Signals API, Attribution API, and Protected Audiences API

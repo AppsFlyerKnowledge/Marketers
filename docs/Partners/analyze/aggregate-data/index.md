@@ -1,6 +1,7 @@
 ---
 title: "Aggregate data"
 excerpt: "Learn how to use aggregate attribution data to analyze trends and gain insights through dashboards and performance reports."
+table_of_contents: false
 ---
 Use aggregate attribution data to see trends and gain insights
 

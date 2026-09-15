@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Reinstall postbacks support"
 excerpt: "AppsFlyer now supports postbacks on app re-installs, allowing you to distinguish them from first-time installs for improved measurement and optimization."
+table_of_contents: false
 ---
 | Section | Details |
 | --- | --- |

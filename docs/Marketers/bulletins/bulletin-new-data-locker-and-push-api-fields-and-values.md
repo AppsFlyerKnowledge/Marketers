@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: New Data Locker and Push API fields and values"
 excerpt: "Learn about the new SKAdNetwork 4 fields and Meta ads media source updates coming to Data Locker and Push API reports."
+table_of_contents: false
 ---
 | **What's new** | * SKAdNetwork reports via Data Locker and Push API contain new fields to support SKAN 4:<br />  * **skad\_postback\_sequence\_index**: Value is an integer that represents the SKAN window, either `0`,`1`, or `2`. For SKAN 3 the value is `0`.<br />  * **skad\_coarse\_conversion\_value**: Value can be `low`, `medium`, or `high`. For SKAN 3 the value is `null`.<br />  * **skad\_source\_identifier**: Value is a string up to 4 digits. For SKAN 3 the value is `null`.<br />  * **skad\_source\_domain**: Value is a string that represents the source of attributable web ads. For SKAN 3 the value is `null`.<br />  * **ad\_network\_creative**: Value is a string based on data enrichment received from the ad network. For SKAN 3 the value is `null`.<br />* When the media source is Meta ads, all reports display the value `Facebook Ads` (not Facebook). |
 | --- | --- |

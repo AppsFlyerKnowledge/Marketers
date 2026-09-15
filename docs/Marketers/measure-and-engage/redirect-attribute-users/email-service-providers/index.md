@@ -1,6 +1,7 @@
 ---
 title: "Email service providers"
 excerpt: "Learn how to integrate AppsFlyer with leading email service providers (ESPs) to streamline your marketing campaigns."
+table_of_contents: false
 ---
 Integrate AppsFlyer with leading email service providers (ESPs)
 

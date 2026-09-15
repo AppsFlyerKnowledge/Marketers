@@ -1,6 +1,7 @@
 ---
 title: "Preserve user privacy"
 excerpt: "Ensure compliance with app store requirements and privacy regulations like GDPR using AppsFlyer privacy features."
+table_of_contents: false
 ---
 Ensure compliance with app store requirements and privacy regulations like GDPR
 

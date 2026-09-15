@@ -1,6 +1,7 @@
 ---
 title: "Manage your apps"
 excerpt: "Learn how to define your apps in AppsFlyer, configure app settings, manage currencies and time zones, and transfer apps between accounts."
+table_of_contents: false
 ---
 Define your apps in AppsFlyer and manage app settings
 

@@ -2,6 +2,7 @@
 title: "Analyze"
 deprecated: false
 hidden: false
+table_of_contents: false
 ---
 <Cards columns={2}>
   <Card title="Aggregate data" href="/docs/aggregate-data" icon="fa-solid fa-file-lines">

@@ -1,6 +1,7 @@
 ---
 title: "Meta ads"
 excerpt: "An overview of the Meta ads integration with AppsFlyer, including setup guides, campaign creation, event mapping, and troubleshooting."
+table_of_contents: false
 ---
 All about the Meta ads integration
 

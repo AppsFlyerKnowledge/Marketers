@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: SKAN 4 support in AppsFlyer"
 excerpt: "An overview of AppsFlyer's support for SKAN 4, including required SDK updates, prerequisites, and changes to dashboards and reports."
+table_of_contents: false
 ---
 | | |
 | --- | --- |

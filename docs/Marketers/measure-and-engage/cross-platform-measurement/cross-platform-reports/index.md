@@ -1,6 +1,7 @@
 ---
 title: "Cross platform reports"
 excerpt: "Access and analyze your cross-platform conversion and end-user event reports."
+table_of_contents: false
 ---
 These reports provide insights into cross-platform user journeys and event data.
 

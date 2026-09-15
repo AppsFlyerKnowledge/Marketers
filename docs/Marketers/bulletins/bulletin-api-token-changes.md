@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: API token changes"
 excerpt: "Important update regarding the deprecation of API V1 tokens and the transition to secure JWT-based API V2 tokens."
+table_of_contents: false
 ---
 | **What's new** | To provide a more secure and reliable experience for API usage, the API V1 token, which was included in the API URLs, was deprecated in favor of the API V2 token, which is a JWT-based token that is passed in the header for bearer authorization.<br /><br />API V1 token and the APIs that use them are no longer available as of September 18, 2023. |
 | --- | --- |

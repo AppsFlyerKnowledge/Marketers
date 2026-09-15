@@ -1,6 +1,7 @@
 ---
 title: "Purchase and subscription validation"
 excerpt: "An overview of guides and setup instructions for validating purchases, subscriptions, and ROI360 store revenue."
+table_of_contents: false
 ---
 This section covers purchase and subscription validation, including receipt validation and ROI360 store revenue setup.
 

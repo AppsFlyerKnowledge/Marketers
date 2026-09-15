@@ -1,6 +1,7 @@
 ---
 title: "Integration requests for partners"
 excerpt: "Request changes to your existing AppsFlyer integration settings, including postbacks, attribution URLs, and more."
+table_of_contents: false
 ---
 **At a glance**: Request changes to your existing AppsFlyer integration settings, including postbacks, attribution URLs, and much more.
 

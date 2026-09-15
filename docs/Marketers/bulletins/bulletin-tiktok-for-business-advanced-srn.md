@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: TikTok for Business—advanced SRN"
 excerpt: "AppsFlyer has introduced the new TikTok for Business—advanced SRN integration (tiktokglobal_int) to replace the legacy integration (bytedanceglobal_int)."
+table_of_contents: false
 ---
 > 🚧 Important Transition Notice
 >

@@ -1,6 +1,7 @@
 ---
 title: "SSO authentication"
 excerpt: "Configure the SSO process using your Identity Provider (IdP) and manage exception users."
+table_of_contents: false
 ---
 Configure the SSO process using your IdP
 

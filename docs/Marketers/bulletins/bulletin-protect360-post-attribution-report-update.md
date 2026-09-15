@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Protect360 post-attribution report update"
 excerpt: "Protect360 post-attribution reports now display the valid contributor (media source) for hijacked installs and in-app events to assist with reconciliation."
+table_of_contents: false
 ---
 | **What's new** | Protect360 post-attribution reports display the valid contributor (media source) for hijacked installs and in-app events. Meaning, the contributor that should have originally received attribution. |
 | --- | --- |

@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Supporting the new Amazon DSP EU consent policy"
 excerpt: "Learn about Amazon Ads' updated EU consent policy under the Digital Markets Act (DMA) and the required actions to pass valid consent signals via AppsFlyer."
+table_of_contents: false
 ---
 | Section | Details |
 | --- | --- |

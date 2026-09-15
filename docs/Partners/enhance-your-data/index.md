@@ -2,6 +2,7 @@
 title: "Enhance your data"
 deprecated: false
 hidden: false
+table_of_contents: false
 ---
 <Cards columns={2}>
   <Card title="Provide data" href="/docs/provide-data" icon="fa-solid fa-file-lines">

@@ -1,6 +1,7 @@
 ---
 title: "SKAN CV schema API for ad networks"
 excerpt: "Retrieve the SKAdNetwork conversion value schema mapped by advertisers to decode postbacks and measure post-install user activity."
+table_of_contents: false
 ---
 With SKAdNetwork (SKAN) attribution, advertisers grade user quality by setting conversion values (CV) based on post-install user activity during specific time periods (windows). [Learn more about SKAN](/docs/skadnetwork-skan-solution-guide)
 

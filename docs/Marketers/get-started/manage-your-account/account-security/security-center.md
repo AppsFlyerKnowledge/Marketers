@@ -1,6 +1,7 @@
 ---
 title: "Security Center"
 excerpt: "Review and manage the status of all the security-related features of your AppsFlyer account from a single location."
+table_of_contents: false
 ---
 The **Security Center** provides you with an at-a-glance overview of your AppsFlyer account's security status. Click the button in any section of the **Security Center** to access the following features:
 

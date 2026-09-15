@@ -1,6 +1,7 @@
 ---
 title: "Postback troubleshooting for ad networks"
 excerpt: "A troubleshooting guide for ad networks to resolve issues with receiving install and in-app event postbacks."
+table_of_contents: false
 ---
 **At a glance:** If you have problems receiving postbacks, review the following solutions.
 

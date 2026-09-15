@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Cohort and Activity metrics update in My Dashboards"
 excerpt: "Starting July 2026, Cohort and Activity metrics in My Dashboards are moving to upgraded data infrastructure designed to support AI-ready data."
+table_of_contents: false
 ---
 | **What’s new?** | Starting **July 2026**, Cohort and Activity metrics in **My Dashboards** are moving to upgraded data infrastructure designed to support **AI-ready data**. These changes will roll out gradually to clients throughout **July - August 2026**.<br /><br />As part of this gradual rollout, you may notice changes to some metric values, historical data availability, and segmentation options.<br /><br />This update introduces new view types and metrics for Activity data, improves Unique User accuracy in Cohort data, and expands historical data and segmentation options across both Cohort and Activity. |
 | --- | --- |

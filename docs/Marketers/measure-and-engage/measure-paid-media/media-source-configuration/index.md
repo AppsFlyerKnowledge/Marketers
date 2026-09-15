@@ -1,6 +1,7 @@
 ---
 title: "Media source configuration"
 excerpt: "Learn how to set up integrated partners, configure attribution links, and troubleshoot postbacks for your mobile campaigns."
+table_of_contents: false
 ---
 Attribution link structure and setup guides for working with integrated partners
 

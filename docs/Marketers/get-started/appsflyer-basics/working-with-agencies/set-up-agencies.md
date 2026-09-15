@@ -1,6 +1,7 @@
 ---
 title: "Set up agencies"
 excerpt: "Learn how to set up agency integrations in AppsFlyer, understand the attribution flow, and manage partner deactivation settings."
+table_of_contents: false
 ---
 **At a glance:** Get started working with agencies in AppsFlyer: all the details in this video!
 

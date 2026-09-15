@@ -1,6 +1,7 @@
 ---
 title: "Audiences"
 excerpt: "Learn how to build, configure, and connect audience segments to your partner networks using AppsFlyer Audiences."
+table_of_contents: false
 ---
 Build and connect audience segments to your partner networks
 

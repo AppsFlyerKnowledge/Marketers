@@ -1,6 +1,7 @@
 ---
 title: "Ad network integration testing"
 excerpt: "Ensure your ad network integration is configured correctly with these testing guides for Android, iOS, and marketer campaigns."
+table_of_contents: false
 ---
 Make sure your integration is configured correctly
 

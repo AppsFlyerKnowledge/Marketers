@@ -1,6 +1,7 @@
 ---
 title: "Cost aggregation"
 excerpt: "Get reliable aggregate ad spend data with ROI360 and learn how to set up cost APIs, ETL reports, and import cost data."
+table_of_contents: false
 ---
 Get reliable aggregate ad spend data with ROI360
 

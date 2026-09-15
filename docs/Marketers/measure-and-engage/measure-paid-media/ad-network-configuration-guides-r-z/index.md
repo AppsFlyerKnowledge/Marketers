@@ -1,6 +1,7 @@
 ---
 title: "Ad network configuration guides (R-Z)"
 excerpt: "Set up selected ad networks starting with letters R through Z for AppsFlyer attribution."
+table_of_contents: false
 ---
 Set up selected ad networks for AppsFlyer attribution
 

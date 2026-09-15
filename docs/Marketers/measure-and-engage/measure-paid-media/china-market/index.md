@@ -1,6 +1,7 @@
 ---
 title: "China market"
 excerpt: "Learn how to promote your Android and iOS apps in China from elsewhere in the world, including compliance with the Personal Information Protection Law (PIPL)."
+table_of_contents: false
 ---
 Promote Android and iOS apps in China from elsewhere in the world
 

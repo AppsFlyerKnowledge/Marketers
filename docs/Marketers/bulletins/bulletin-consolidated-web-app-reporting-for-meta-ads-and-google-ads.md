@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Consolidated Web+App reporting for Meta Ads and Google Ads"
 excerpt: "Learn about the consolidation of Meta Web and Google Web campaign reporting under main media sources for holistic mobile and web cost analysis."
+table_of_contents: false
 ---
 This bulletin outlines the consolidation of Web and App reporting for Meta Ads and Google Ads, providing holistic reporting of all campaigns from specific networks.
 

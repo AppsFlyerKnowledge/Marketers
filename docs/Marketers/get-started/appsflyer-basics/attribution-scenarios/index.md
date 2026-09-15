@@ -1,6 +1,7 @@
 ---
 title: "Attribution scenarios"
 excerpt: "Learn how to measure uninstalls, multi-store Android apps, view-through engagements, and other advanced attribution scenarios."
+table_of_contents: false
 ---
 Measure uninstalls, apps in multiple stores, impressions, affiliates, and more
 

@@ -1,6 +1,7 @@
 ---
 title: "AppsFlyer Web Attribution"
 excerpt: "An overview of guides and resources for setting up and managing AppsFlyer Web Attribution and Web Performance Measurement."
+table_of_contents: false
 ---
 This section provides resources and guides for setting up and managing AppsFlyer Web Attribution and Web Performance Measurement.
 

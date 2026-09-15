@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Unified data in the Activity dashboard"
 excerpt: "Activity metrics in the Activity and Pivot dashboards, as well as the Master API, are now unified to include both UA and retargeting data."
+table_of_contents: false
 ---
 | | |
 | --- | --- |

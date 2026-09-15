@@ -1,6 +1,7 @@
 ---
 title: "Amazon Ads"
 excerpt: "Learn how to set up Amazon Ads for AppsFlyer attribution and resolve any attribution discrepancies."
+table_of_contents: false
 ---
 Set up Amazon Ads for AppsFlyer attribution
 

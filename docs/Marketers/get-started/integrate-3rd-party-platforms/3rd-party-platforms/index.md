@@ -1,6 +1,7 @@
 ---
 title: "3rd-party platforms"
 excerpt: "Integrate tech partners and analytics platforms, such as Segment, mParticle, Amplitude, MixPanel, and Braze with AppsFlyer."
+table_of_contents: false
 ---
 <Cards>
   <Card title="Airship integration with AppsFlyer" href="/docs/airship-integration-with-appsflyer" icon="fa-solid fa-puzzle-piece">

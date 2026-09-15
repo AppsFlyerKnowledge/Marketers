@@ -1,6 +1,7 @@
 ---
 title: "Platforms for ad networks"
 excerpt: "Learn how to integrate AppsFlyer with specific technology platforms used by ad networks."
+table_of_contents: false
 ---
 Integration with AppsFlyer for ad networks using specific technology platforms
 

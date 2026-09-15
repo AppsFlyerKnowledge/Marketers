@@ -1,6 +1,7 @@
 ---
 title: "Analyze your data"
 excerpt: "Discover how to use dashboards, reports, and data delivery tools to analyze your AppsFlyer data."
+table_of_contents: false
 ---
 Use our dashboards, reports, and other data delivery tools
 

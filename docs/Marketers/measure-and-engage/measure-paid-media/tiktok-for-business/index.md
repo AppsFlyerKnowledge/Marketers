@@ -1,6 +1,7 @@
 ---
 title: "TikTok for Business"
 excerpt: "Learn how to set up TikTok for Business for AppsFlyer attribution across mobile, web, PC, and console applications."
+table_of_contents: false
 ---
 Set up TikTok for Business for AppsFlyer attribution
 

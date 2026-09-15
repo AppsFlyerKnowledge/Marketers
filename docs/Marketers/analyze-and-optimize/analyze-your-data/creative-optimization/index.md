@@ -1,6 +1,7 @@
 ---
 title: "Creative Optimization"
 excerpt: "Analyze your creative performance to gain critical insights before planning, selecting, or producing your next batch of creatives."
+table_of_contents: false
 ---
 <Cards>
   <Card title="Creative Optimization—onboarding guide" href="/docs/creative-optimization-onboarding-guide" icon="fa-solid fa-rocket">

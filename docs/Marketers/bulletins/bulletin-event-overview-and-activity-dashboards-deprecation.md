@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Event, Overview, and Activity dashboards deprecation"
 excerpt: "The legacy Events, Overview, and Activity dashboards are being deprecated and replaced by My Dashboards, with full deprecation taking effect on June 30, 2026."
+table_of_contents: false
 ---
 | **What’s new?** | The **Events**, **Overview**, and **Activity** dashboards are getting deprecated as part of the transition to **My Dashboards** as the main analytics experience.<br /><br />After **June 30, 2026**, these legacy dashboards will no longer be accessible. The same data is available in My Dashboards, with enhanced analytics capabilities, flexible views, custom metrics, advanced filters, and shared or private dashboards. |
 | --- | --- |

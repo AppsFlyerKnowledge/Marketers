@@ -1,6 +1,7 @@
 ---
 title: "AI"
 excerpt: "Discover how to use AI to unlock insights, automate workflows, and drive smarter decisions within AppsFlyer."
+table_of_contents: false
 ---
 Use AI to unlock insights, automate workflows, and drive smarter decisions.
 

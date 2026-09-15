@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Measure ad revenue generated during the SKAdNetwork activity window"
 excerpt: "Learn how to attribute ad revenue generated during the SKAdNetwork activity window to the campaign bringing the user."
+table_of_contents: false
 ---
 ![iOS15.png](https://files.readme.io/b61770f82edee601aec1fba95c93bbf5b7e4ad3615a82205aa9c7da8cfe547f0-20445082158609.png)
 

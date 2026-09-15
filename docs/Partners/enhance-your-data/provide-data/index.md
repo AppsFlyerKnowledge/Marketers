@@ -1,6 +1,7 @@
 ---
 title: "Provide data"
 excerpt: "Learn how to send engagement data to AppsFlyer for attribution, including attribution link specifications, probabilistic modeling, and redirecting users."
+table_of_contents: false
 ---
 Send engagement data to AppsFlyer for attribution
 

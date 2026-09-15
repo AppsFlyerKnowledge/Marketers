@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Apple Ads now supports SKAN attribution"
 excerpt: "Apple Ads SKAN postbacks are now fully ingested, processed, and reported by AppsFlyer, providing privacy-safe measurement for your campaigns."
+table_of_contents: false
 ---
 | **What's new** | Apple Ads (AA) SKAN postbacks are now fully ingested, processed and reported by AppsFlyer, giving marketers the same privacy-safe measurement already available for other networks. |
 | --- | --- |

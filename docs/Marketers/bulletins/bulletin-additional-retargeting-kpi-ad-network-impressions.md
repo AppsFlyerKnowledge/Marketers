@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Additional retargeting KPI—ad network impressions"
 excerpt: "Learn about the addition of ad network retargeting impressions as a new KPI in the AppsFlyer Retargeting dashboard."
+table_of_contents: false
 ---
 - **What's changing**: Additional KPI - Ad network retargeting **impressions** (not SRNs.)
 - **Where is it changing**: Retargeting dashboard  (including ad network and agency dashboards)

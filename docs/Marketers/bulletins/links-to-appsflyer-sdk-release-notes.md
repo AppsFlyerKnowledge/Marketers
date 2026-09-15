@@ -1,6 +1,7 @@
 ---
 title: "Links to AppsFlyer SDK release notes"
 excerpt: "Access the official release notes for the AppsFlyer iOS and Android SDKs."
+table_of_contents: false
 ---
 **At a glance:** Release notes for iOS and Android SDKs.
 

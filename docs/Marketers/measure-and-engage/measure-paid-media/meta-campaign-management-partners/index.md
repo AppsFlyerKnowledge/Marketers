@@ -1,6 +1,7 @@
 ---
 title: "Meta campaign management partners"
 excerpt: "Learn how to configure and send postbacks to Meta campaign management partners to optimize your Meta ads campaigns."
+table_of_contents: false
 ---
 Send postbacks to Meta campaign management partners to optimize your Meta ads campaigns
 

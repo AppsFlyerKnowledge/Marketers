@@ -1,6 +1,7 @@
 ---
 title: "Redirect & attribute users"
 excerpt: "Set up owned media, deep link users, and attribute web and mobile user journeys."
+table_of_contents: false
 ---
 Set up owned media, deep link users, attribute web and mobile user journeys (PBA)
 

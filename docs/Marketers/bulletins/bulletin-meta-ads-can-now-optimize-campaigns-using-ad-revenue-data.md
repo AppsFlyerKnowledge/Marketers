@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Meta ads can now optimize campaigns using ad revenue data"
 excerpt: "Meta ads now supports optimizing Android App promotion campaigns using the AdImpression ad revenue postback event."
+table_of_contents: false
 ---
 Meta ads can now optimize your Android App promotion campaigns using the ad revenue postback event **AdImpression**.
 

@@ -1,6 +1,7 @@
 ---
 title: "Analytics partner onboarding"
 excerpt: "An overview of the onboarding process and resources available for AppsFlyer analytics partners."
+table_of_contents: false
 ---
 This section contains resources and guides for analytics partners onboarding with AppsFlyer.
 

@@ -1,6 +1,7 @@
 ---
 title: "Promoting CTV apps"
 excerpt: "Learn how to promote and measure attribution of your Connected TV (CTV) apps across major platforms like Roku, Amazon Fire TV, Samsung, and LG."
+table_of_contents: false
 ---
 How to promote and measure attribution of your CTV apps from anywhere
 

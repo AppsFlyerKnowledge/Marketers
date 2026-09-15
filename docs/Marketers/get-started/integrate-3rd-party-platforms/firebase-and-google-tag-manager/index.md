@@ -1,6 +1,7 @@
 ---
 title: "Firebase and Google Tag Manager"
 excerpt: "Learn how to integrate Firebase with AppsFlyer using Google Tag Manager to send installs and events."
+table_of_contents: false
 ---
 Integrate Firebase with AppsFlyer using Google Tag Manager
 

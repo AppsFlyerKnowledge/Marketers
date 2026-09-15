@@ -1,6 +1,7 @@
 ---
 title: "Analytics and aggregate reporting/APIs"
 excerpt: "Access analytics data via APIs, Cohort, SKAN, Pivot, and Ad Revenue Monetization."
+table_of_contents: false
 ---
 <Cards>
   <Card title="Aggregated and analytics reporting overview" href="/docs/aggregated-and-analytics-reporting-overview" icon="fa-solid fa-chart-column">

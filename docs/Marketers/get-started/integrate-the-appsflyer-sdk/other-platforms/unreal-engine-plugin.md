@@ -1,6 +1,7 @@
 ---
 title: "Unreal Engine plugin"
 excerpt: "Integrate AppsFlyer into games developed in Unreal Engine to measure app installs, in-app events, media sources, and more."
+table_of_contents: false
 ---
 **At a glance:** Integrate AppsFlyer into games developed in Unreal Engine to measure app installs, in-app events, media sources, and more.
 

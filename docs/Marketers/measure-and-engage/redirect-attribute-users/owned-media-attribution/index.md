@@ -1,6 +1,7 @@
 ---
 title: "Owned media attribution"
 excerpt: "Learn how to measure owned-media user journeys including user invites, cross-promotion, SMS, QR codes, and push notifications."
+table_of_contents: false
 ---
 Measure owned-media user journeys: user invites, cross-promotion, SMS, and more
 

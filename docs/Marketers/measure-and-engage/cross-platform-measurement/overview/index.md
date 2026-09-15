@@ -1,6 +1,7 @@
 ---
 title: "Overview"
 excerpt: "Get started with cross-platform measurement, including attribution concepts, multi-device campaigns, and landing pages."
+table_of_contents: false
 ---
 Guides for getting started with Cross-platform measurement
 

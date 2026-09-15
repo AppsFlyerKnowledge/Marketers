@@ -1,6 +1,7 @@
 ---
 title: "Data delivery tools"
 excerpt: "Access your AppsFlyer data using Push API, Pull API, or various raw and aggregated data export download options."
+table_of_contents: false
 ---
 Use Push API, Pull API, or download options to access your data
 

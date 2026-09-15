@@ -1,6 +1,7 @@
 ---
 title: "AppsFlyer Knowledge Base glossary"
 excerpt: "Get familiar with AppsFlyer terms, definitions, and mobile attribution concepts."
+table_of_contents: false
 ---
 Get familiar with AppsFlyer terms.
 

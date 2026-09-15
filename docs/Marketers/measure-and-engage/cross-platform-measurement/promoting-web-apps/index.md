@@ -1,6 +1,7 @@
 ---
 title: "Promoting Web apps"
 excerpt: "Learn how to promote and measure attribution of your Web apps from anywhere using AppsFlyer Web Attribution and People Based Attribution."
+table_of_contents: false
 ---
 How to promote and measure attribution of your Web apps from anywhere
 

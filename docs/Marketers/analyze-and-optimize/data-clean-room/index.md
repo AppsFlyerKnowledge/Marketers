@@ -1,6 +1,7 @@
 ---
 title: "Data Clean Room"
 excerpt: "Leverage data from your AppsFlyer account to obtain privacy-preserving insights through secure cloud services, connections, and custom reports."
+table_of_contents: false
 ---
 Leverage data from your AppsFlyer account to obtain privacy-preserving insights
 

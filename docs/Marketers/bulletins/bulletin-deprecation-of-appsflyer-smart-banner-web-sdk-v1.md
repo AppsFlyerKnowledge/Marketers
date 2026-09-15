@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Deprecation of AppsFlyer Smart Banner web SDK v1"
 excerpt: "AppsFlyer Smart Banner web SDK v1 has been deprecated. Learn how to check if your website is affected and how to upgrade to v2 to continue displaying banners."
+table_of_contents: false
 ---
 As of Nov. 8th, 2023, AppsFlyer Smart Banner web SDK v1 is deprecated.
 

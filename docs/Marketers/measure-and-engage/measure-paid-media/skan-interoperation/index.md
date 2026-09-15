@@ -1,6 +1,7 @@
 ---
 title: "SKAN interoperation"
 excerpt: "Set up SKAN integrated partners for AppsFlyer SKAN attribution."
+table_of_contents: false
 ---
 <Cards>
   <Card title="[Beta] SKAN interoperation with Amazon" href="/docs/beta-skan-interoperation-with-amazon" icon="fa-solid fa-lock">

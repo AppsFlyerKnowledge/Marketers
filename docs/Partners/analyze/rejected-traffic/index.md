@@ -1,6 +1,7 @@
 ---
 title: "Rejected traffic"
 excerpt: "Access and understand data regarding traffic blocked by fraud protection and validation rules."
+table_of_contents: false
 ---
 Receive data about traffic blocked by fraud protection
 

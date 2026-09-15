@@ -1,6 +1,7 @@
 ---
 title: "X Ads (formerly Twitter Ads)"
 excerpt: "Set up X Ads and its partners for AppsFlyer attribution, configure integration settings, and resolve discrepancies."
+table_of_contents: false
 ---
 Set up X Ads and its partners for AppsFlyer attribution
 

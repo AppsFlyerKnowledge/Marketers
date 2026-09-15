@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Supporting the new Google EU consent policy"
 excerpt: "An overview of the updates and required actions for advertisers to comply with Google's updated EU user consent policy under the Digital Markets Act."
+table_of_contents: false
 ---
 As part of Google’s preparations for the enforcement of the [Digital Markets Act](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en)(DMA), Google is updating their [EU user consent policy](https://www.google.com/about/company/user-consent-policy/?sjid=15416941068016224808-NA). AppsFlyer is making the necessary changes to support Google’s policy requirements while ensuring that advertisers maximize the value of their Google Ads marketing channels.
 

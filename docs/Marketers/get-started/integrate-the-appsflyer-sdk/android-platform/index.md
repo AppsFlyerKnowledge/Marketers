@@ -1,6 +1,7 @@
 ---
 title: "Android platform"
 excerpt: "Access release notes and platform-specific implementation guides for the AppsFlyer Android SDK."
+table_of_contents: false
 ---
 Android SDK release notes and other Android platform-related topics
 

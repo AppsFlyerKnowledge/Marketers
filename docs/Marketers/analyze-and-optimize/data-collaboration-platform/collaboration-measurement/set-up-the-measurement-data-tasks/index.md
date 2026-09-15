@@ -1,6 +1,7 @@
 ---
 title: "Set up the measurement data tasks"
 excerpt: "Learn how to configure campaigns, engagements, conversions, media partners, and lookback windows tasks."
+table_of_contents: false
 ---
 Set up the campaigns, engagements, conversions, media partners, and lookback windows tasks.
 

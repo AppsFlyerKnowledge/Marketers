@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Security enhancement for traffic managed by agencies"
 excerpt: "AppsFlyer is enhancing security measures for agencies managing traffic on behalf of advertisers, requiring ad network authorization for traffic to be recorded and measured."
+table_of_contents: false
 ---
 To protect your data, ensure its security, and reduce fraud, we're enhancing security measures for agencies managing traffic on behalf of advertisers that are running campaigns on ad networks. As of the effective date, only traffic from agencies authorized by the ad networks will be recorded and measured in AppsFlyer. This means unauthorized agencies won't be able to configure the integration (the partner configuration window will be grayed out), and unauthorized traffic from these agencies will result in a 403 (Forbidden) response from AppsFlyer. After the agencies are added to the list, the approval applies account-wide allowing them to run campaigns with all apps on your network.
 

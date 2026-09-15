@@ -1,6 +1,7 @@
 ---
 title: "Google Analytics"
 excerpt: "Learn how to integrate Google Analytics (GA4) with AppsFlyer, configure custom dimensions, and resolve data discrepancies."
+table_of_contents: false
 ---
 Integrate Google Analytics with AppsFlyer
 

@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Snapchat has become an Advanced SRN"
 excerpt: "Snapchat has transitioned to an Advanced Self-Reporting Network (SRN), enabling probabilistic attribution without IDFA and introducing raw data restrictions for view-through conversions."
+table_of_contents: false
 ---
 | | |
 | --- | --- |

@@ -1,6 +1,7 @@
 ---
 title: "Data Locker"
 excerpt: "Deliver your data to major cloud platforms with Data Locker."
+table_of_contents: false
 ---
 <Cards>
   <Card title="Data Locker for marketers" href="/docs/data-locker-for-marketers" icon="fa-solid fa-box-archive">

@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: Smart Banners support multiple media sources for attribution"
 excerpt: "Smart Banner settings now allow you to choose multiple media source types for attribution, providing greater flexibility for web-to-app URLs."
+table_of_contents: false
 ---
 | **What's new** | Smart Banner settings allow you to choose multiple media source types for attribution. They are no longer limited to one type of web-to-app URL. |
 | --- | --- |

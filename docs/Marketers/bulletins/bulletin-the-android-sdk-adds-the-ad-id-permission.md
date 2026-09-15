@@ -1,6 +1,7 @@
 ---
 title: "Bulletin: The Android SDK adds the AD_ID permission"
 excerpt: "Starting with AppsFlyer Android SDK V6.8.0, the AD_ID permission is declared in the SDK's AndroidManifest.xml to comply with Google Play Services requirements for Android 13."
+table_of_contents: false
 ---
 **At a glance:** Starting with AppsFlyer Android SDK V6.8.0, the AD_ID permission is declared in the SDK's AndroidManifest.xml.
 
