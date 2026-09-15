@@ -220,7 +220,7 @@ Additional report fields are not added to the default list of fields so that new
 | The report doesn\'t contain the data expected according to the selected time range or there is a discrepancy between the raw data report and aggregated data report. | Verify that you have set the `timezone` parameter. If you don\'t, data is sent using UTC and not your app time zone. |
 
 <Cards>
-  <Card title="Selecting the right data delivery tool/reporting API" href="/docs/raw-data-reporting-overview#reporting-tools%E2%80%94characteristics-and-features">
+  <Card title="Selecting the right data delivery tool/reporting API" href="/docs/raw-data-reporting-overview#reporting-tools%E2%80%94characteristics-and-features" icon="fa-solid fa-plug">
     Learn how to choose the best reporting tool or API for your data delivery needs.
   </Card>
 </Cards>

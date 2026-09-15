@@ -328,7 +328,7 @@ Use postback reports, to review copies of data sent to an ad network. For exampl
 #### See also
 
 <Cards>
-  <Card title="Aggregate reports and analytics" href="/docs/aggregated-and-analytics-reporting-overview">
+  <Card title="Aggregate reports and analytics" href="/docs/aggregated-and-analytics-reporting-overview" icon="fa-solid fa-chart-column">
     Learn more about aggregate reports and analytics in AppsFlyer.
   </Card>
 </Cards>

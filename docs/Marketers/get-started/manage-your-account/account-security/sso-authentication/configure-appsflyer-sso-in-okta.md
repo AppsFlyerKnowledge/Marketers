@@ -90,7 +90,7 @@ Now that the Okta SAML application has been created, let’s add users.
 Now that you've configured the IdP part, go back to AppsFlyer to [complete the configuration](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer). You can then [test](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-process) to see that it works.
 
 <Cards>
-  <Card title="Okta SSO documentation" href="https://developer.okta.com/docs/guides/build-sso-integration/openidconnect/main/">
+  <Card title="Okta SSO documentation" href="https://developer.okta.com/docs/guides/build-sso-integration/openidconnect/main/" icon="fa-solid fa-user-gear">
     View Okta's developer documentation for building SSO integrations.
   </Card>
 </Cards>

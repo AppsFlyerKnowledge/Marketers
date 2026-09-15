@@ -4,9 +4,7 @@ excerpt: "Learn how to integrate Google Marketing Platform - Display & Video 360
 ---
 **At a glance:** Google Marketing Platform - Display & Video 360 (GMP-DV360) is an AppsFlyer self-reporting network (SRN) partner combining advertising and analytics. The GMP-DV360 integration  (dv360\_int) combines advertising and analytics to enhance customer connections, reveal insights, and improve marketing outcomes.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > See the bulletin about [supporting the new Google EU consent policy](/docs/bulletin-supporting-the-new-google-eu-consent-policy).
 
@@ -21,8 +19,6 @@ The GMP-DV360 integration uses the link ID for conversion measurement. You can w
 * [DV360 for agencies](#setting-up-gmp-dv360-for-agencies): Optional per agency
 
 > 📘 **Note**
->
-> #### Note
 >
 > Keep the following in mind:
 >
@@ -140,8 +136,6 @@ Set the different attribution windows to attribute re-engagements of your existi
 
 > 📘 **Note**
 >
-> #### Note
->
 > Re-attribution is not supported for DV360 campaigns
 
 
@@ -158,8 +152,6 @@ Set the time window during which in-app events are primarily attributed to the r
 Set a window timeframe to [ignore re-engagements](/docs/set-retargeting-inactivity-window#inactivity-period) of users who launched your app. This means their activity during the window timeframe isn't recorded in AppsFlyer.
 
 > 📘 **Note**
->
-> #### Note
 >
 > Re-engagement conversions of users who were **dormant** in the set timeframe **are recorded**.
 
@@ -192,8 +184,6 @@ Configure mapping of in-app events with GMP-DV360 events sent via postbacks:
    3. Repeat the integration steps for the selected app.
 
 > 📘 **Note**
->
-> #### Note
 >
 > For iOS apps only: Your control over data shared with the partner via postbacks and [reports](/docs/about-raw-data-identifier-restrictions) depends on the **Advanced Privacy (for iOS 14.5+ and later)** [toggle state](#advanced-privacy).
 
@@ -246,9 +236,7 @@ You can **use AppsFlyer attribution links with DV360 for impressions and click r
 
 If you want to be able to measure the number of clicks from DV360 on AppsFlyer, we recommend adding an AppsFlyer attribution URL on your DV360 dashboard, via CM360. When doing so, make sure the campaign name in the attribution URL **is identical** to the **line item name** on GMP (if possible) so that AppsFlyer can retrieve and append the click data for the correct campaigns.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Using attribution links for DV360 is not mandatory.
 >
@@ -278,8 +266,6 @@ ROI360 customers can create and edit cost integrations in the **Cost tab** and i
 Starting September 7, 2026, clicks and impressions will no longer be reported through attribution. To keep receiving these metrics, set up the DV360 SRN/Cost integration.
 
 > 📘 **Note**
->
-> #### Note
 >
 > Clicks and impressions for this integration are reported in:
 >
@@ -325,9 +311,7 @@ See possible reasons for discrepancies and how to minimize them:
 | Incorrect mapping | Mapping between AppsFlyer and GMP-DV360 isn't correct | * Verify the link ID<br />* Verify that the in-app events are correctly mapped |
 
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [Set up ROI360 cost API to measure cost data](/docs/set-up-roi360-cost-api-to-measure-cost-data)
 > * [AppsFlyer's Retargeting Attribution](/docs/retargeting-attribution-guide)

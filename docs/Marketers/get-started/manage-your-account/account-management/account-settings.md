@@ -3,11 +3,11 @@ title: "Account settings"
 excerpt: "Manage your personal profile, account-level security settings, and AI capabilities from a single centralized page."
 ---
 <Cards>
-  <Card title="About Account settings" href="#about-account-settings" />
-  <Card title="Profile" href="#profile" />
-  <Card title="Account" href="#account" />
-  <Card title="AI capabilities" href="#ai-capabilities" />
-  <Card title="Permissions" href="#permissions" />
+  <Card title="About Account settings" href="#about-account-settings" icon="fa-solid fa-user-gear" />
+  <Card title="Profile" href="#profile" icon="fa-solid fa-file-lines" />
+  <Card title="Account" href="#account" icon="fa-solid fa-user-gear" />
+  <Card title="AI capabilities" href="#ai-capabilities" icon="fa-solid fa-robot" />
+  <Card title="Permissions" href="#permissions" icon="fa-solid fa-user-gear" />
 </Cards>
 
 At a glance: Use the **Account settings** page to manage your personal profile, account-level settings, and AI capabilities from one single place.

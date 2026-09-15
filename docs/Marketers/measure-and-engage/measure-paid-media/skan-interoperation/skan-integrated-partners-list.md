@@ -117,9 +117,7 @@ The table that follows contains the list of Apple SKAdNetwork IDs to populate yo
 
 In accordance with [Apple guidance](https://developer.apple.com/forums/thread/663032) IDs must be in lowercase
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [AppsFlyer SKAN solution guide](/docs/skadnetwork-skan-solution-guide)
 > * [SKAN Conversion Studio: Configuring performance measurement](/docs/skan-conversion-studio)

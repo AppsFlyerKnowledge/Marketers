@@ -51,7 +51,7 @@ The following table lists the tasks required to integrate your PlayStation app w
 | Cost data | Cost data must be sent via [Ad Spend Ingestion](/docs/import-cost-data) using the upload file by email method. |
 
 <Cards>
-  <Card title="CTV, PC, and console platform overview" href="/docs/ctv-pc-and-console-platform-attribution-concepts">
+  <Card title="CTV, PC, and console platform overview" href="/docs/ctv-pc-and-console-platform-attribution-concepts" icon="fa-solid fa-diagram-project">
     Learn more about attribution for Connected TV, PC, and console platforms.
   </Card>
 </Cards>

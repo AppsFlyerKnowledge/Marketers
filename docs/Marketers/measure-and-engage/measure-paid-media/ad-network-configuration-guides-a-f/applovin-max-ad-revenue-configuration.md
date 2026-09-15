@@ -30,8 +30,6 @@ Applovin MAX provides ad revenue mediation with aggregate data at the device lev
 
 > 📘 **Note**
 >
-> #### Note
->
 > * Ad revenue for the Fire OS platform isn't reported in AppsFlyer.
 > * Learn more about [ad revenue attribution](/docs/roi360-guide-ad-revenue-attribution) (ad monetization).
 

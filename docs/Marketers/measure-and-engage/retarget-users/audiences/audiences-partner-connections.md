@@ -223,9 +223,7 @@ A partner connection enables you to easily and continuously send your audiences 
 | Zoomd DSP | ![](https://cdn.appsflyer.com/marketplace/static/logo/zoomd.png) | API key | * IDFA<br />* GAID |
 
 
-> 📘 **Note**
->
-> #### We love working with new Audiences partners!
+> 📘 **We love working with new Audiences partners!**
 >
 > If the partner you're looking for doesn't appear in the list above, feel free to contact your CSM. They will be happy to check with the partner to see what options are available.
 
@@ -528,9 +526,7 @@ To enable AppsFlyer to send Audiences to Google Ads the following actions must b
 
 ### Leanplum
 
-> 📘 **Note**
->
-> #### Prerequisite
+> 📘 **Prerequisite**
 >
 > To successfully upload audiences to Leanplum:
 >
@@ -559,9 +555,7 @@ Within up to 30 minutes, the audience and the users in it will be populated in y
 
 ### MoEngage
 
-> 📘 **Note**
->
-> #### Prerequisite
+> 📘 **Prerequisite**
 >
 > To successfully upload audiences to MoEngage:
 >
@@ -622,8 +616,6 @@ AppsFlyer uploads a CSV file of Device IDs to your public Slack channel.
    The audience will appear in the Snapchat dashboard 24 hours after upload.
 
 > 📘 **Note**
->
-> #### Note
 >
 > Snapchat deducts unfamiliar Device IDs, which potentially results in smaller audience sizes.
 

@@ -43,9 +43,7 @@ AppsFlyer treats install events that originate from test devices differently to 
 
 Test device registration can also be done with IDFA. However, an iOS app does not have access to the IDFA when the app does not implement App Tracking Transparency (ATT) or when the user does not consent to share personal data. In these cases, we can use IDFV access to identify the test device because it is not dependent on ATT.
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [Cross-promotion attribution for marketers](/docs/cross-promotion-attribution-for-marketers)
 > * [How to register your test device with IDFV](/docs/registering-test-devices#how-to-register-your-device-with-idfv)

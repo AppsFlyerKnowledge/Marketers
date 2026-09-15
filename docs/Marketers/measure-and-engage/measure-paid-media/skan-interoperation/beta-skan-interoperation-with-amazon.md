@@ -73,7 +73,7 @@ Interoperation is achieved via settings in the AppsFlyer and Amazon dashboards. 
 | 3 | In-app event mapping | Review, and if necessary, make changes to your Amazon in-app event mappings. **At least one in-app event must be mapped to Amazon** for Amazon to retrieve the schema and complete the integration.<br />**To view and set in-app event mappings**:<br />1. In AppsFlyer, Go to **Settings** \> **Active Integrations**.<br />2. Search for and select **Amazon Ads**.<br />3. In the **In-app events postback section:**<br />   1. [Mandatory] If not on, turn on **In-app events postback**.<br />   2. Verify that the in-app events you set in [SKAN conversion studio](/docs/skan-conversion-studio) are mapped to Amazon event names or to the events in your [custom conversion map](/docs/skan-cv-decode-map-your-cv-to-events).<br />      <br />      **Note:** Map `af_skad_revenue` to Amazon's event name `OFF_AMAZON_purchases`<br />4. Click **Save integration**. |
 
 <Cards>
-  <Card title="AppsFlyer SKAN solution guide" href="/docs/skadnetwork-skan-solution-guide">
+  <Card title="AppsFlyer SKAN solution guide" href="/docs/skadnetwork-skan-solution-guide" icon="fa-solid fa-lock">
     Read the comprehensive guide to setting up and using the AppsFlyer SKAN solution.
   </Card>
 </Cards>

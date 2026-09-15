@@ -24,9 +24,7 @@ MOLOCO's configuration window includes 3 active tabs: Integration, Attribution l
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
@@ -42,8 +40,6 @@ On the **first visit** here, you will need to toggle ON the ***Activate Partner*
 For more details about partner activation, please click [here](/docs/partner-activation-deactivation).
 
 > 📘 **Note**
->
-> #### Note
 >
 > As an all-install network, MOLOCO prefers to receive postbacks for all new installs of your app from any source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to MOLOCO.
 
@@ -83,8 +79,6 @@ In this section you can map your AppsFlyer events with MOLOCO via postbacks.
 
 
 > 📘 **Note**
->
-> #### Note
 >
 > You can send [ad revenue postbacks](/docs/roi360-guide-ad-revenue-attribution#ad-revenue-event-postbacks-for-ad-networks) to MOLOCO using the`af_ad_revenue` event so they can optimize campaigns.
 

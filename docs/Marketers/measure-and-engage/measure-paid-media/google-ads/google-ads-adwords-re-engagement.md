@@ -78,7 +78,7 @@ These campaigns work **out of the box** with AppsFlyer and do not require:
 **Opt-out:** Google does not currently support opting in or out of non-app campaign measurement (unlike platforms such as TikTok or Meta).
 
 <Cards>
-  <Card title="Google Ads SKAdNetwork interoperability with AppsFlyer" href="/docs/get-skan-postback-data-from-google-ads">
+  <Card title="Google Ads SKAdNetwork interoperability with AppsFlyer" href="/docs/get-skan-postback-data-from-google-ads" icon="fa-solid fa-lock">
     For iOS 14-related considerations, see Google Ads SKAdNetwork interoperability with AppsFlyer.
   </Card>
 </Cards>

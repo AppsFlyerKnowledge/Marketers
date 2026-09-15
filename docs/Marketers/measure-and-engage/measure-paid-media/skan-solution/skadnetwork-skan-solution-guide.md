@@ -202,16 +202,16 @@ Take note of the various options and requirements in the table that follows
 ### Cards
 
 <Cards>
-  <Card title="Quickstart guide & FAQ to iOS 14, ATT, and SKAN" href="/docs/about-att-and-skan">
+  <Card title="Quickstart guide & FAQ to iOS 14, ATT, and SKAN" href="/docs/about-att-and-skan" icon="fa-solid fa-circle-question">
     Understand the basics of iOS 14 privacy changes, App Tracking Transparency, and SKAdNetwork.
   </Card>
-  <Card title="Set up measurement using SKAN Conversion Studio" href="/docs/skan-conversion-studio">
+  <Card title="Set up measurement using SKAN Conversion Studio" href="/docs/skan-conversion-studio" icon="fa-solid fa-lock">
     Configure your conversion value settings and measurement modes in AppsFlyer.
   </Card>
-  <Card title="AppsFlyer SKAN dashboard" href="/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">
+  <Card title="AppsFlyer SKAN dashboard" href="/docs/skadnetwork-skan-overview-dashboard-by-appsflyer" icon="fa-solid fa-lock">
     Learn how to view and analyze your SKAdNetwork performance metrics.
   </Card>
-  <Card title="SKAN integrated partners list" href="/docs/skan-integrated-partners-list">
+  <Card title="SKAN integrated partners list" href="/docs/skan-integrated-partners-list" icon="fa-solid fa-lock">
     View the list of ad networks and partners integrated with AppsFlyer SKAN.
   </Card>
 </Cards>

@@ -356,8 +356,6 @@ The rule is now active and will be applied to all geo designs calculated for the
 
 > 📘 **Note**
 >
-> #### Note
->
 > Deleting a rule doesn't affect active experiments. If there were previous rules (or no rules), that is what remains in effect for any experiment already running. Deleting a rule only removes it from future geo designs/experiments.
 
 

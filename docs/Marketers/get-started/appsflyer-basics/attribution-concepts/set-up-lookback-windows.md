@@ -55,9 +55,7 @@ SRNs Lookback Window Non-SRNs Lookback Window
 
 ### Attribution lookback window for SRNs
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Each SRN has its own default lookback. We recommend matching the lookback window value in AppsFlyer with the SRN's value to minimize discrepancies. Changing it might result in discrepancies. To learn more, see an [SRN discrepancy example](#scenarios-and-examples).
 
@@ -97,9 +95,7 @@ See below each SRN lookback window:
 3. In the Integration tab, scroll down to the **Install engaged click-through lookback window** slider or to the **Install engaged view-through lookback window** slider.
 4. Set the lookback window using the sliders.
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > * Want some tips and tricks for the lookback window configuration? Check out this [short, informative course](https://elevate.appsflyer.com/learn/course/7768/play/18612/attribution-102-tips-and-tricks) on the AppsFlyer Learning Portal.
 > * [Click here](/docs/set-up-lookback-windows#lookback-in-hours-for-flash-campaigns) to learn when you should use hours for attribution windows.
@@ -154,8 +150,6 @@ Johnny, SuperShopping's lead marketer, creates an attribution Link and sets the 
 
 In addition, the app's developer can identify the users that come from this flash campaign and deliver the promotions that the campaign advertises.
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > Want some tips and tricks on lookback windows and attribution? Check out this short, informative [course on the AppsFlyer Learning Portal](https://elevate.appsflyer.com/learn/course/7768/play/18612/attribution-102-tips-and-tricks).

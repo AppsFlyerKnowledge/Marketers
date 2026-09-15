@@ -16,8 +16,6 @@ excerpt: "Understand the flow when a user with an iOS device clicks on a OneLink
 
 > 📘 **Note**
 >
-> #### Note
->
 > X (Twitter) does not support URI schemes. We recommend using a social app landing page with Universal Link setup to avoid app-launching issues.
 
 

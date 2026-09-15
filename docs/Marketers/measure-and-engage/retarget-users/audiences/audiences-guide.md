@@ -66,9 +66,7 @@ A Custom Audience is built from scratch using any rulesets and filters you wish.
 13. Complete defining the audience, then click **Next.**  
     The **Audience connection** window appears. This is where you [connect the audience to your media partners](/docs/audiences-guide#connect-an-audience-to-media-partners).
 
-> 📘 **Note**
->
-> #### Notes
+> 📘 **Notes**
 >
 > * You can have up to 100 active Custom/Suggested audiences at a time.
 > * Audience names may be visible on your connected media partner sites. Do not include sensitive information in names.
@@ -88,9 +86,7 @@ Choose from over 30+ audiences within the **categories of Acquire, Activate, Eng
 * Monetize purchasers
 * And a lot more…
 
-> 📘 **Note**
->
-> #### Example use case
+> 📘 **Example use case**
 >
 > This example illustrates one typical use case. Let’s say you want to urge active users of your app, who haven’t purchased yet, to make their first purchase. You can select the “Encourage purchase” audience and customize it to specify which event defines an in-app purchase. Then you can connect the audience to your partners and run a promotional campaign that nudges them towards making a purchase and leads them to the app's purchase page.
 >
@@ -115,9 +111,7 @@ Choose from over 30+ audiences within the **categories of Acquire, Activate, Eng
 10. If you wish to further customize the audience by adding additional [rulesets](/docs/audiences-guide#all-about-rulesets), you can do so if you wish by clicking **+ Filter**. When done, click **Next**.   
     The **Audience connection** window appears. This is where you [connect the audience to your media partners](/docs/audiences-guide#connect-an-audience-to-media-partners).
 
-> 📘 **Note**
->
-> #### Notes
+> 📘 **Notes**
 >
 > * You can have up to 100 active Custom/Suggested audiences at a time.
 > * Audience names may be visible on your connected media partner sites. Do not include sensitive information in names.
@@ -162,9 +156,7 @@ Audience rule evaluation is performed using an app user identifier. Select from:
 
 ![CuidExaplainded_us-en.jpg](https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg)
 
-> 📘 **Note**
->
-> #### Example: Device ID vs. CUID
+> 📘 **Example: Device ID vs. CUID**
 >
 > An audience of users who spent more than $5
 >
@@ -269,33 +261,25 @@ The examples that follow illustrate ruleset implementation in various scenarios.
 
 ### Ruleset examples
 
-> 📘 **Note**
->
-> #### Example: Location-based rule
+> 📘 **Example: Location-based rule**
 >
 > Users from New York who uninstalled the app in the last month
 >
 > ![example_location_based_rule.jpg](https://files.readme.io/7ee7e2b9e8f06dc47c93148767fd67d87855a05cd09ba06f2dd2c0ea9dc29607-46335625068817.jpg)
 
-> 📘 **Note**
->
-> #### Example: User attributes-based rule
+> 📘 **Example: User attributes-based rule**
 >
 > Users who launched the app in the last 7 days at least once and whose favorite weapon is a sword.
 >
 > ![example_user_attributes_based_rule.jpg](https://files.readme.io/8ab97cdccd2a1b33b671b1f686ca642306197ccf5151ca2ba9836db8ca496d03-46335625073809.jpg)
 
-> 📘 **Note**
->
-> #### Example: Revenue
+> 📘 **Example: Revenue**
 >
 > Users who installed the app during the last seven days, and spent $1
 >
 > ![example_revenue.jpg](https://files.readme.io/d7768bec78ff5981639da4e1c8e1a3121961464c0a5932bf8f542f27979358a8-46335625074833.jpg)
 
-> 📘 **Note**
->
-> #### Example: Owned media filter
+> 📘 **Example: Owned media filter**
 >
 > Build targeted audiences consisting of users who were attributed to specific owned media sources such as social media (excluding paid advertising), SMS, email, referrals, web, or QR codes. You can also choose your level of granularity and target users who came from a specific media source, campaign, ad set, or individual ad.
 >
@@ -305,9 +289,7 @@ The examples that follow illustrate ruleset implementation in various scenarios.
 >
 > The audience can be used to re-engage these users with personalized messaging on either owned or paid media, or as an exclusion list to prevent them from seeing irrelevant or unnecessary ads when running campaigns.
 
-> 📘 **Note**
->
-> #### Example: Remarketing
+> 📘 **Example: Remarketing**
 >
 > Using clicks and views for effective remarketing. To convert these users, a little extra convincing or a gentle reminder is needed. These users have a high probability of converting so remarketing to them can produce significantly better results than advertising to new segments. Create precise audiences for remarketing based on clicks and impressions data collected.
 >
@@ -556,9 +538,7 @@ Please note the following traits and limitations.
 
 3
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [Incrementality guide](/docs/incrementality-for-remarketing-overview)
 > * [Running an Incrementality experiment](/docs/run-an-incrementality-for-remarketing-experiment)

@@ -47,9 +47,7 @@ As in any experiment, it's important to define exactly what you are testing (var
 | Hypothesis | Define the expected outcome of the experiment.<br /><br />While it may feel somewhat counterintuitive to predict the outcome before you begin, setting out a hypothesis is an important element of experimental design; it's what helps you interpret your results.<br /><br />**Best practice:** State a hypothesis that is easily testable by using actual percentages as opposed to vague estimates. For example:<br /><br />* ***15% more users will purchase an upgrade*** is an easily testable hypothesis.<br />* ***Significantly more users will purchase an upgrade*** is more difficult to test. |
 
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > Using the guidelines described above, you might define an experiment that looks something like the following.
 >
@@ -184,8 +182,6 @@ Initial experiment results are available on the [Incrementality dashboard](/docs
 
 [Incrementality raw data reports](/docs/incrementality-for-remarketing-overview#raw-data-reports) are available via Data Locker.
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [Audiences guide](/docs/audiences-guide)

@@ -198,9 +198,7 @@ Repeat the integration steps for the selected app.
 
 </Accordion>
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > The Google Ads API integration automatically includes the Google Ads remarketing feature. By completing this integration and sending events to Google Ads you are able to create remarketing audience lists in Google Ads without any additional integrations.
 
@@ -298,8 +296,6 @@ For more information on what ad types are available in Google's response, see th
 
 > 📘 **Note**
 >
-> #### Note
->
 > When Google attributes an install through probabilistic attribution (ICM), Google doesn’t share the `network_type` with AppsFlyer. As a result, the network type is missing, and the channel value is `ACI_` (without a suffix).
 
 ### Campaign type: app campaigns
@@ -319,9 +315,7 @@ For more information on what ad types are available in Google's response, see th
 An engaged view is a user impression of a video ad that lasted more than 10 seconds. It has the same attribution priority as a click.  For Android, engaged views are displayed in raw data reports as `engaged_view` under the  `Engagement Type` and `Sub Param 5` parameters.   
 Engaged views are counted if they occur within the defined click lookback window in AppsFlyer, with a maximum limit of 3 days.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > * Google is an SRN (Self Reporting Network). For more information about how the attribution flow works for these networks, see [Self-reporting networks (SRNs)](/docs/self-reporting-networks-srns).
 > * AppsFlyer can present any campaign information that is provided by Google. The campaign type (Search, Video, Display) and associated information is determined by Google. For more information, see the [Google request and response specifications](https://developers.google.com/app-conversion-tracking/api/request-response-specs).

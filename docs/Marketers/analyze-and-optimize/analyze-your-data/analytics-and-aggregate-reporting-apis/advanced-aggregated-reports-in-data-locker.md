@@ -690,6 +690,6 @@ group by 1,2,3
 #### See also
 
 <Cards>
-  <Card title="Combine Cost ETL and Advanced aggregated cohort reports" href="/docs/combine-cost-etl-and-cohort-reports-via-data-locker" />
-  <Card title="Cohort dashboard" href="/docs/cohort-and-retention-dashboard" />
+  <Card title="Combine Cost ETL and Advanced aggregated cohort reports" href="/docs/combine-cost-etl-and-cohort-reports-via-data-locker" icon="fa-solid fa-chart-column" />
+  <Card title="Cohort dashboard" href="/docs/cohort-and-retention-dashboard" icon="fa-solid fa-gauge-high" />
 </Cards>

@@ -38,7 +38,7 @@ The following table lists the tasks required to integrate your Samsung CTV app w
 | Supported regions | CTV campaigns are supported only in the US, except for preload campaigns, which are supported globally. |
 
 <Cards>
-  <Card title="CTV, PC, and console platform overview" href="/docs/ctv-pc-and-console-platform-attribution-concepts">
+  <Card title="CTV, PC, and console platform overview" href="/docs/ctv-pc-and-console-platform-attribution-concepts" icon="fa-solid fa-diagram-project">
     Read the platform overview for Connected TV, PC, and console attribution.
   </Card>
 </Cards>

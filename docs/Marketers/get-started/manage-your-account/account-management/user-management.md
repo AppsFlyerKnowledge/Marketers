@@ -105,8 +105,6 @@ Set user access levels for media sources and geos. Decide whether to grant acces
 
 > 📘 **Note**
 >
-> #### Note
->
 > Users with limited access to media source or geos are unable to access certain [dashboards and features](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
 
 
@@ -115,8 +113,6 @@ Set user access levels for media sources and geos. Decide whether to grant acces
 By default, the setting **All** allows access to all media sources within the account. This includes those that will be added in the future. Selecting specific media sources doesn't include access to future media sources.
 
 > 📘 **Note**
->
-> #### Note
 >
 > * Users with limited media source access are unable to access certain [dashboards and features](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
 > * Admin and security roles have unrestricted access to all media sources. This can't be changed.
@@ -160,8 +156,6 @@ Select if users have access to data for **All** geos or specific geos only. The 
 Once the user is created, you can see them in the user table with an envelope icon ![pending_invitation_icon.png](https://files.readme.io/cd556e0b9137fbcfbf4bef574332622ca1e567ac76a041b7f7f3874052b037e6-31780969031825.png). This indicates an invitation has been sent and the account is awaiting activation. The user must activate their account using the link in their email. The activation link is valid for 48 hours. After the user activates their account, the envelope disappears.
 
 > 📘 **Note**
->
-> #### Note
 >
 > If the user didn’t receive the invitation or if the link has expired, you can [resend the invitation](/docs/user-management#resending-a-user-invitation).
 
@@ -214,8 +208,6 @@ Multi-user editing is an efficient way to change the account permissions of seve
 
 > 📘 **Note**
 >
-> #### Note
->
 > You can't assign users to the Admin role using multi-user editing.
 
 
@@ -232,9 +224,7 @@ Multi-user editing is an efficient way to change the account permissions of seve
 5. The edited users are highlighted in the table, and the users appear as they will once the changes are saved. However, you still have the opportunity to review your changes and confirm or cancel them in the next step.
 6. Review your changes. Click **Save** to confirm or **Cancel** to undo them.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > **Scenario:**
 >
@@ -261,8 +251,6 @@ Multi-user editing is an efficient way to change the account permissions of seve
 Multiple users can be deleted from the account in bulk.
 
 > 📘 **Note**
->
-> #### Note
 >
 > * The [account owner](/docs/user-management#account-owner) can't be deleted
 > * Deleting users is irreversible
@@ -306,13 +294,9 @@ AppsFlyer is configured with many predefined roles:
 
 > 📘 **Note**
 >
-> #### Note
->
 > For each of these predefined roles, the functional capabilities are fixed: no "mixing and matching" allowed. However, you can change a user’s functional capabilities at any time by assigning them to a different predefined or custom role (except for the [account owner](#account-owner), as discussed below).
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > You have assigned Bill Bates the role of **Team manager.** This role gives Bill the ability to manage **OneLink templates,** but it does not allow him access to the **My plan** and **Payments** pages.
 >
@@ -398,9 +382,7 @@ Through the [Get roles API](https://dev.appsflyer.com/hc/reference/get_roles), y
 4. When you are satisfied with all of your selections, click the **Save role** button.
 5. The role's permission levels are changed for all new and existing users.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Any changes you make to a custom role are automatically applied to **all existing users** in that role.
 
@@ -433,9 +415,7 @@ Temp roles were designed specifically to allow seamless transition from our prio
 * When a user with a temp role is changed to a predefined role, they cannot be returned to the previously-assigned temp role (or to any other temp role).
 * If the last user in a temp role is removed from it, the role will no longer appear in your account.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > Your account previously used our prior user management system. Diana and Edward were existing users at the time your account was moved to the new system. Diana is now in Temp role 1, and Edward is in Temp role 2.
 >
@@ -470,9 +450,7 @@ Additionally, the following AppsFlyer features are **not available** to these us
 
 When you grant a user access to a specific agency **and** a specific media source, their data access reflects only the overlap between the two. They don't see all of that agency's data across every media source, and they don't see all of that media source's data across every agency — only the portion where both permissions intersect.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > You give a user access to Agency B and Media Source A. Agency B manages app installs coming from several media sources, including Media Source A. This user sees only the installs from Media Source A that Agency B manages — not Agency B's data from other media sources, and not Media Source A's data managed by other agencies.
 
@@ -481,9 +459,7 @@ When you grant a user access to a specific agency **and** a specific media sourc
 
 Because all Admins have essentially the same permissions as the account owner, changing the account owner is not usually necessary. But if you find that you must change the account owner, follow these steps to do so.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Changing the account owner must be completed manually according to the steps below. It can't be done from the **User management** page.
 

@@ -5,13 +5,13 @@ excerpt: "Access and understand data regarding traffic blocked by fraud protecti
 Receive data about traffic blocked by fraud protection
 
 <Cards>
-  <Card title="Protect360 reports for ad networks" href="/docs/protect360-reports-for-ad-networks">
+  <Card title="Protect360 reports for ad networks" href="/docs/protect360-reports-for-ad-networks" icon="fa-solid fa-shield-halved">
     View reports and data on traffic blocked by Protect360 fraud prevention.
   </Card>
-  <Card title="Validation Rules for ad networks and agencies" href="/docs/validation-rules-for-ad-networks-and-agencies">
+  <Card title="Validation Rules for ad networks and agencies" href="/docs/validation-rules-for-ad-networks-and-agencies" icon="fa-solid fa-shield-halved">
     Learn about validation rules and how they affect traffic delivery and attribution.
   </Card>
-  <Card title="Protect360 for integrated partners" href="/docs/protect360-for-integrated-partners">
+  <Card title="Protect360 for integrated partners" href="/docs/protect360-for-integrated-partners" icon="fa-solid fa-shield-halved">
     Information for integrated partners regarding Protect360 fraud detection.
   </Card>
 </Cards>

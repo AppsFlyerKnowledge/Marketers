@@ -22,9 +22,7 @@ excerpt: "Configure Ligatus, an AppsFlyer integrated partner, to record mobile a
 
 Ligatus's configuration window includes 2 active tabs: Integration and Attribution link. Click on the items below to read about the tab setup.
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners.
 > * All the rest of the steps are either descriptive or **optional**

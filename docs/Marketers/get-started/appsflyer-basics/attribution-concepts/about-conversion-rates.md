@@ -41,7 +41,7 @@ See the table that follows for:
 | Conversion rate | **Event conversion rate (Event CVR)**<br />**(in-app events/installs)\*100** | - Measures how many users perform an in-app event after install. **Article**(/docs/appsflyer-knowledge-base-glossary#event-cvr)<br />- Examples: Register, make a purchase, complete a level, etc. <br />- Enables Cost per Action (CPA) calculations. | AppsFlyer | - Provide timely messaging and calls to action.<br />- Improve the user interface.<br />- Organize retargeting campaigns using deep links. **Article**(/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink) |
 
 <Cards>
-  <Card title="Everything you need to know about app marketing KPIs" href="https://www.appsflyer.com/blog/measurement-analytics/mobile-app-metrics/">
+  <Card title="Everything you need to know about app marketing KPIs" href="https://www.appsflyer.com/blog/measurement-analytics/mobile-app-metrics/" icon="fa-solid fa-chart-line">
     Read the full guide on mobile app metrics and KPIs on the AppsFlyer blog.
   </Card>
 </Cards>

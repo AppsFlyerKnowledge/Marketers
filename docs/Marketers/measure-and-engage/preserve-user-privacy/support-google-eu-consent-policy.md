@@ -170,13 +170,13 @@ In case you have further questions or any uncertainties, you can reach out to th
 - See Google's [consent mode article](https://support.google.com/tagmanager/answer/13802165?hl=en) for reference definitions.
 
 <Cards>
-  <Card title="Additional SDK integration guide" href="/docs/additional-sdk-integration-guide">
+  <Card title="Additional SDK integration guide" href="/docs/additional-sdk-integration-guide" icon="fa-solid fa-code">
     Learn how to implement consent and other advanced configurations in the AppsFlyer SDK.
   </Card>
-  <Card title="Transition to the new DV360 integration" href="/docs/bulletin-google-marketing-platform-gmp-integration-transition">
+  <Card title="Transition to the new DV360 integration" href="/docs/bulletin-google-marketing-platform-gmp-integration-transition" icon="fa-solid fa-bullhorn">
     Step-by-step instructions to migrate from the legacy DoubleClick integration to the new DV360 integration.
   </Card>
-  <Card title="Audiences user identifier policy" href="/docs/audiences-user-identifier-policy">
+  <Card title="Audiences user identifier policy" href="/docs/audiences-user-identifier-policy" icon="fa-solid fa-users">
     Understand how the EU Digital Markets Act affects user identifiers and audience building.
   </Card>
 </Cards>

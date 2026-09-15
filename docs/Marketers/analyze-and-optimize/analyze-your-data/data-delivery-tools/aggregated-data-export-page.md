@@ -28,7 +28,7 @@ excerpt: "Download lifetime value (LTV) aggregate reports filtered by attributio
 4. Select a report, click **Download.**
 
 <Cards>
-  <Card title="Aggregated and analytics reporting overview" href="/docs/aggregated-and-analytics-reporting-overview">
+  <Card title="Aggregated and analytics reporting overview" href="/docs/aggregated-and-analytics-reporting-overview" icon="fa-solid fa-chart-column">
     Learn more about aggregated and analytics reporting in AppsFlyer.
   </Card>
 </Cards>

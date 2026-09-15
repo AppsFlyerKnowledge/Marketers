@@ -4,9 +4,7 @@ excerpt: "Learn how to manage AppsFlyer API and server-to-server tokens to secur
 ---
 **At a glance:** Tokens enhance data security. They enable users to access data via the AppsFlyer APIs or receive event data using server-to-server calls. Admins can manage multiple tokens while maintaining data continuity. This includes creating, renaming, and removing API and server-to-server tokens as necessary.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > ![AppsFlyerAdmin_us-en.png](https://support.appsflyer.com/hc/article_attachments/32934372878481)
 >
@@ -66,8 +64,6 @@ As an admin, you can manage multiple tokens: create, rename, and remove tokens. 
 
 > 📘 **Note**
 >
-> #### Note
->
 > * API V2 tokens are active immediately after you create them.
 > * S2S, OneLink, and other token types may take up to 30 minutes to become active.
 >   * Until activation is complete, the token status is **Pending**.
@@ -77,9 +73,7 @@ As an admin, you can manage multiple tokens: create, rename, and remove tokens. 
 
 ### Delete a token
 
-> 📘 **Note**
->
-> #### Caution
+> 📘 **Caution**
 >
 > * Deleting a token could cause failure to systems depending on it.
 > * When deleting a token, it's removed from the Tokens page, and all calls from the previous token are rejected.
@@ -152,8 +146,6 @@ Use cases for advertisers and advertisers using the S2S token:
 
 
 > 📘 **Note**
->
-> #### Note
 >
 > For most ad networks, S2S token generation is no longer self-serve. As a result, admins won’t see the option to generate an S2S token in the UI. Self-serve token generation is available only for specific managed partners.
 

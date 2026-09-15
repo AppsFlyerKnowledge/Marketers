@@ -29,8 +29,6 @@ AppsFlyer MCP can connect to chat assistants, CLIs, IDEs, automation platforms, 
 
 > 📘 **Note**
 >
-> #### Note
->
 > Some platforms might require admin approval to connect MCP servers. If you don't see the setup options described below, contact your IT or workspace admin.
 
 
@@ -73,8 +71,6 @@ Use Claude chat and Claude Cowork with browser-based OAuth login. These instruct
 
 > 📘 **Note**
 >
-> #### Note
->
 > For Team and Enterprise plan users, only Owners or Admins can add organization-wide integrations.
 
 
@@ -99,8 +95,6 @@ Use Claude chat and Claude Cowork with browser-based OAuth login. These instruct
 2. If AppsFlyer MCP was set up correctly, the AppsFlyer tools appear in the menu.
 
 > 📘 **Note**
->
-> #### Note
 >
 > **Get started faster with Cowork: save as a Skill.** If your team works in Claude Cowork, use the [Claude Cowork starter kit for marketers](https://github.com/AppsFlyerKnowledge/appsflyer-ai-agents-examples/tree/main/Claude/AppsFlyer%20Cowork%20Starter%20Kit) to get set up faster. The starter kit includes an activation plan, ready-to-use templates, and copy-paste prompts for working with your AppsFlyer data through AI from day one, so you don't have to build your first workflows, reports, or briefs from scratch.
 
@@ -202,8 +196,6 @@ There are two ways to use ChatGPT with AppsFlyer MCP.
 #### Add AppsFlyer MCP in ChatGPT
 
 > 📘 **Note**
->
-> #### Note
 >
 > Admin setup might be required to add and publish a connector to your organization.
 
@@ -319,8 +311,6 @@ To connect your automation or agent platform to AppsFlyer MCP, use the following
 
 > 📘 **Note**
 >
-> #### Note
->
 > Never share or publish your token publicly. Treat it as a private credential. Your MCP token grants direct access to your MCP environment.
 
 
@@ -367,9 +357,7 @@ See an example of this flow in [this video](https://www.youtube.com/watch?v=o5oK
 
 AppsFlyer MCP gives you a set of tools and resources designed to help you retrieve marketing analytics, performance insights, and configuration information.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Answers generated through AppsFlyer MCP are only reliable when used for the supported use cases listed below. Responses outside of these use cases have not been validated by AppsFlyer and might be inaccurate or misleading. We can't guarantee the precision or correctness of AI-generated answers that fall outside the intended scope of the AppsFlyer MCP integration.
 
@@ -401,8 +389,6 @@ Explore aggregated marketing performance data in real time. You can identify top
 **Expected AI response:** The AI performs a week-over-week comparison of D1 retention rates, grouped by media source.
 
 > 📘 **Note**
->
-> #### Note
 >
 > **Get started faster with Cowork: save as a Skill.** If your team works in Claude Cowork, use the [Claude Cowork starter kit for marketers](https://github.com/AppsFlyerKnowledge/appsflyer-ai-agents-examples/tree/main/Claude/AppsFlyer%20Cowork%20Starter%20Kit) to get set up faster. The starter kit includes an activation plan, ready-to-use templates, and copy-paste prompts for working with your AppsFlyer data through AI from day one, so you don't have to build your first workflows, reports, or briefs from scratch.
 

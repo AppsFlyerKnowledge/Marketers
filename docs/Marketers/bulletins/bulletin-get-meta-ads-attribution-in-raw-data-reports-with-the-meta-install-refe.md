@@ -16,7 +16,7 @@ Meta install referrer helps with attribution measurement for your Android ad cam
 | **What's the impact?** | - You may see an increase in Meta-attributed installs in raw data reports<br />- Two new match-type fields are now included in raw data reports, `fb_referrer` and `ig_referrer`:<br />  <br />  <br />  - `fb_referrer` for attribution from the Facebook app<br />  - `ig_referrer` for attribution from the Instagram app<br />  - `fb_referrer` or `ig_referrer`for attribution from the Audience Network. |
 
 <Cards>
-  <Card title="Meta install referrer" href="/docs/meta-ads-integration-setup#userlevel-data">
+  <Card title="Meta install referrer" href="/docs/meta-ads-integration-setup#userlevel-data" icon="fa-solid fa-bullhorn">
     Learn more about setting up user-level data and the Meta install referrer integration.
   </Card>
 </Cards>

@@ -48,9 +48,7 @@ Starting June 17, 2025, Meta has re-enabled **Advanced Mobile Measurement (AMM)*
 2. Select the relevant app ID(s).
 3. Accept Meta's Advanced Mobile Measurement terms.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > * An admin of your Meta developer app is required to accept Meta's AMM terms.
 > * Device-level data with full attribution visibility is only available for new attributed devices after the AMM terms have been accepted.
@@ -99,8 +97,6 @@ Meta ads share campaign metadata with advertisers for Android app ads that direc
 
 > 📘 **Note**
 >
-> #### Note
->
 > Meta install referrer allows AppsFlyer to receive ad campaign metadata from a device’s local storage. See [the Dev Hub](https://dev.appsflyer.com/hc/docs/install-android-sdk#meta-install-referrer) to learn how to enable the SDK to access the Meta install referrer.
 
 
@@ -123,8 +119,6 @@ As a result, you may see an increase in Meta-attributed installs in raw data rep
 * Channel
 
 > 📘 **Note**
->
-> #### Note
 >
 > * **For the Google Play Install Referrer API:**
 >   * AppsFlyer SDK must be **V5.4.0+** for the referrer data to be passed properly. Referrer data has priority over data provided by the API and isn't restricted. This solution applies to click-through attribution and not view-through attribution.
@@ -200,9 +194,7 @@ This integration provides aggregated data on cost, clicks, and impressions for y
 
 **To delete a connected Meta ads account:** In the actions column, hover over an account and click **Delete connection.**
 
-> 📘 **Note**
->
-> #### Notes
+> 📘 **Notes**
 >
 > * If you are already logged into Meta ads, when you click the **f login** button, the window immediately opens and closes. This is regular behavior.
 > * If you have several users with permissions to Meta ads, the best practice is to perform the login for all of them to [avoid getting partial data](/docs/meta-ads-faq#why-doesnt-cost-data-include-data-from-all-campaigns).
@@ -249,8 +241,6 @@ Learn more about enriching your data with[cost, clicks, and impressions data](/d
 
 > 📘 **Note**
 >
-> #### Note
->
 > Meta ads can optimize your campaigns based on your ad revenue data by [mapping the af\_ad\_revenue event to the right Meta ads event](/docs/meta-ads-in-app-event-mapping#mapping-ad-revenue-data-for-campaign-optimization).
 
 
@@ -293,8 +283,6 @@ This method attributes iOS click-through and view-through installs, as well as i
 
 > 📘 **Note**
 >
-> #### Note
->
 > If the **Advanced Data Sharing** toggle is turned on and you’re not receiving attribution with Meta, check if the shared events meet Meta's eligibility criteria. See [Meta documentation](https://www.facebook.com/business/help/716239976391518?id=1877298665783613)
 
 
@@ -327,9 +315,7 @@ The table below describes which Meta Ads campaign objectives support direct deep
 | Leads | Supported | Not supported | Configure at the ad set level under **Conversion**. | * Requires **Enable Install Tracking** to be active. |
 
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [OneLink guide](/docs/onelink-guide)
 > * [Create deep linking and redirection links for your campaigns with OneLink](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink)
@@ -423,9 +409,7 @@ Incorrect set-up - attribution fails.
 
 AppsFlyer confirms that our MMP integration with Meta ads always implements the *Advertiser Tracking Enabled* flag. Meaning, no action is required of you in AppsFlyer. This information is provided pursuant to the Meta ads app guidance iOS 14 checklist dated February 2021.
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * For iOS 14-related considerations, see [Meta ads SKAN interoperation](/docs/skadnetwork-skan-interoperation-with-meta-ads)
 > * [Meta campaign management partners configuration](/docs/configuring-meta-campaign-management-partners) ([Bidalgo](/docs/bidalgo-meta-campaign-management-partner-configuration) / [Kenshoo](/docs/kenshoo-meta-campaign-management-partner-configuration) / [Adquant](/docs/adquant-meta-campaign-management-partner-configuration) / [Webpals](/docs/webpals-mobile-meta-campaign-management-partner-configuration))

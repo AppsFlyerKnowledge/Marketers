@@ -48,8 +48,6 @@ The following chart outlines the flow from initial development and basic tests t
 
 > 📘 **Note**
 >
-> #### Note
->
 > Make sure any URL encoding of special characters or spaces in your link occurs before the click signature is generated. Generating the signature first results in verification failure.
 
 

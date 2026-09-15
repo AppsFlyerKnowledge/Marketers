@@ -151,7 +151,7 @@ Xsolla's web events will appear in PBA's web attribution and raw "Web events" Da
 PC / Console support - the AppsFlyer integration with Xsolla does not support PC / Console Apps at this phase
 
 <Cards>
-  <Card title="Xsolla documentation" href="https://developers.xsolla.com/solutions/web-shop/analytics/appsflyer/">
+  <Card title="Xsolla documentation" href="https://developers.xsolla.com/solutions/web-shop/analytics/appsflyer/" icon="fa-solid fa-chart-line">
     View the official integration guide on Xsolla's developer portal.
   </Card>
 </Cards>

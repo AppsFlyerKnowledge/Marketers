@@ -4,9 +4,7 @@ excerpt: "Learn how to configure the AppsFlyer ROI360 store revenue solution, in
 ---
 **At a glance:** Set up the AppsFlyer ROI360 store revenue solution.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > ROI360 store revenue is available only to customers on the ROI360 premium plan. To check your plan or upgrade, contact your Customer Success Manager (CSM).
 
@@ -14,8 +12,6 @@ excerpt: "Learn how to configure the AppsFlyer ROI360 store revenue solution, in
 ## Overview
 
 > 📘 **Note**
->
-> #### Note
 >
 > For more information about ROI360, including how it works and how to enable it in AppsFlyer, see [About ROI360 Store revenue](/docs/about-roi360-store-revenue).
 
@@ -212,8 +208,6 @@ If you prefer to keep your existing endpoint as the primary destination, configu
 To use this option, skip steps 2.1, 2.2 and complete steps [2.3](#23-[optional]-forward-notifications-from-your-endpoint-to-appsflyer) and [2.4](#24-test-the-server-notifications-integration)
 
 > 📘 **Note**
->
-> #### Note
 >
 > Apple supports only one App Store server notification endpoint per app, and sends all notification types to it, not only purchase and subscription notifications. AppsFlyer uses the purchase and subscription notifications to measure revenue. It acknowledges any other type back to Apple, so Apple stops retrying, but does not process or act on it.
 >
@@ -414,8 +408,6 @@ This message provides all the information your developers need to complete the i
 
 > 📘 **Note**
 >
-> #### Note
->
 > The connector uses automatic transaction detection. As an alternative, you can implement the `validateAndLog` SDK method to manually log each transaction. This method does not support all features available with the connector. For details on both SDK integration options, see [the DevHub documentation](https://dev.appsflyer.com/hc/docs/purchase-and-subscription-validation).
 
 
@@ -533,8 +525,6 @@ If you completed onboarding for Receipt Validation but want to activate the ROI3
 7. Review your current SDK setup to ensure it can support the ROI360 Store revenue functionality you need.
 
 > 📘 **Note**
->
-> #### Note
 >
 > ROI360 Store revenue supports two integration methods: Purchase SDK connector and Validate and Log. Of the two, we recommend using the **Purchase SDK Connector** to benefit from:
 >

@@ -14,9 +14,7 @@ Recording events can help you determine:
 * Which users can be retargeted and reminded that they have additional tutorials to complete a course
 * Which courses and certificates are the most in demand
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=online_education). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.

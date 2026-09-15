@@ -23,9 +23,7 @@ These events are also relevant for gaming apps that run on the following platfor
 * Xbox
 * Windows mobile devices
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=gaming). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.

@@ -16,9 +16,7 @@ In pre-install campaigns, app owners can ask device manufacturers to **pre-insta
 
 Pre-install campaigns can also be a collaboration with 3rd party media sources, which work with various manufacturers on behalf of app owners.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > AppsFlyer counts an install once an app launches for the first time. Therefore, the number of displayed pre-installs is the number of users launching your app, and not the number of devices that have the app pre-installed on.
 
@@ -41,13 +39,9 @@ Pre-installs appear in the AppsFlyer dashboard under the attributed media source
 
 > 📘 **Note**
 >
-> #### Note
->
 > You can specify different campaign names for pre-installs with the [SDK API Method](/docs/appsflyer-factory-preinstall-using-manifest-android#sdk-api-method).
 
 > 📘 **Note**
->
-> #### Note
 >
 > Starting May 24, 2022:
 >
@@ -98,9 +92,7 @@ In the **pre\_install.appsflyer** file, pass the additional parameters in JSON f
 com.appsflyer.sampleapp={"pid":"huawei", "c":"special_campaign","af_adset":"some_adset"}
 ```
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > It's important to note the following behavior when using this option:
 >
@@ -119,8 +111,6 @@ The manufacturer places the ***pre\_install.appsflyer*** in a file path of its c
 The manufacturer then edits the system properties file in order to point to the ***pre\_install.appsflyer***file. To do so, the manufacturer needs to add a key-value pair to system properties.
 
 > 📘 **Note**
->
-> #### Note
 >
 > Root permissions are required for this step. Root permissions are also required when testing preinstall configuration. See the [Testing section](/docs/appsflyer-factory-preinstall-using-manifest-android#testing-preinstall-configuration) for more details.
 
@@ -179,8 +169,6 @@ AppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplication
   
 > 📘 **Note**
 >
-> #### Note
->
 > * The media source parameter is mandatory.
 > * The `android.os.Build.MANUFACTURER` property holds the manufacturer name as configured by the operating system. Using this property doesn't guarantee that you get the manufacturer name in the same format across devices from that manufacturer. Make sure that this property holds the manufacturer name as expected.
 > * The `campaign` and `siteId` parameters are optional but are required by the `setPreinstallAttribution` method. If you don't want to specify `campaign` and `siteId`, pass null in both.
@@ -204,9 +192,7 @@ In some cases, the install might not be attributed to the pre-install media sour
 * A user with a new device updates the pre-installed app directly from Google Play without first launching it, the install is considered organic.
 * A user with a new device updates the app from Google Play after clicking an ad, the install is attributed to the media source that serves the ad.
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > You can implement logic in the app to make sure that the install is counted as pre-install, even if the scenarios above take place. Both the Play Store APK and the APK intended for Pre Install should contain that logic.
 >
@@ -247,8 +233,6 @@ In some cases, the install might not be attributed to the pre-install media sour
 ### Pathway method
 
 > 📘 **Note**
->
-> #### Note
 >
 > Supported by SDK version 4.5.0 or later.
 
@@ -308,9 +292,7 @@ OR
 
 Some manufacturers prefer to put the file in a non-default path. In such case you can specify this non-default path in the manifest file.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Non-default path requires SDK version 4.8 or later
 >
@@ -332,9 +314,7 @@ If a **non-default path** is used, the install might not be attributed to the pr
 
 This section demonstrates how to test and verify your pre-install configuration.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Before you start testing, make sure to [allowlist the devices](/docs/registering-test-devices) you are using for testing.
 > Also, make sure to set the debug log to true in the AFApplication class.
@@ -346,9 +326,7 @@ This section demonstrates how to test and verify your pre-install configuration.
 
 ### Verifying the configuration in the app
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > To avoid caching issues and for best results, it is recommended that you clean the project before building it. In Android Studio, click on ***Build*** in the context menu and choose ***Clean Project***.
 

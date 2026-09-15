@@ -581,10 +581,10 @@ You can now access the Data Locker files.
 #### See also
 
 <Cards>
-  <Card title="Reports available via Data Locker" href="/docs/data-locker-advertiser-reports">
+  <Card title="Reports available via Data Locker" href="/docs/data-locker-advertiser-reports" icon="fa-solid fa-handshake">
     View the list of reports available for export via Data Locker.
   </Card>
-  <Card title="Selecting the right raw data delivery tool" href="/docs/raw-data-reporting-overview#reporting-tools%E2%80%94characteristics-and-features">
+  <Card title="Selecting the right raw data delivery tool" href="/docs/raw-data-reporting-overview#reporting-tools%E2%80%94characteristics-and-features" icon="fa-solid fa-database">
     Compare raw data delivery tools and choose the best fit for your needs.
   </Card>
 </Cards>

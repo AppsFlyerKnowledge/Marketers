@@ -125,9 +125,7 @@ Helping advertisers identify the best (and worst) performing media sources for t
 3. Group by Media Source -> Campaign -> Ad set -> Ad.
 4. Compare KPIs to identify the top-performing media source.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > [![](https://support.appsflyer.com/hc/article_attachments/360002829938)](https://support.appsflyer.com/hc/article_attachments/360002829938)
 >

@@ -335,9 +335,7 @@ if let is_first_launch = data["is_first_launch"] , let launch_code = is_first_la
 
 The code snippet above checks if this is the first time the app is launched. If it is, it calls the `sendInstallToFirebase` method.
 
-> 📘 **Note**
->
-> #### Warning
+> 📘 **Warning**
 >
 > Certain media sources don't allow their data to be shared with third-party platforms and services. If you are working with partners such as Meta ads, Twitter, Snap, Pinterest, etc. who have set restrictions on sharing their data with third-party platforms and services, please make sure **to follow their guidelines and remove any data which is under these restrictions**.
 >

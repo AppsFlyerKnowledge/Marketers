@@ -159,8 +159,6 @@ Only Web-to-app and App-to-app iOS campaigns are supported for SKAN measurement.
 
 </Accordion>
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [AppsFlyer SKAN Solution guide](/docs/skadnetwork-skan-solution-guide)

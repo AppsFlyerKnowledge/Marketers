@@ -19,8 +19,6 @@ Once a partner integration is added:
 
 > 📘 **Note**
 >
-> #### Note
->
 > To see AppsFlyer cost data (such as ROAS), an [ROI360 subscription](/docs/roi360-cost-aggregation-overview) is required.
 
 
@@ -94,8 +92,6 @@ This section describes how to set up integrations with each partner.
 6. Then click **Save**.
 
 > 📘 **Note**
->
-> #### Note
 >
 > AppLovin's asset-level reporting API only returns data for the previous day. It doesn't support historical lookback. Because of this, when you activate the integration, AppsFlyer can only start collecting asset-level data from the activation date forward. As a result, full data coverage builds up gradually and is typically complete within 30 days of activation.
 
@@ -360,9 +356,7 @@ This section describes how to set up integrations with each partner.
 6. Complete the sign-in and provide your permissions. Note that in order for AppsFlyer to pull complete data, it is recommended that you have full permissions.
 7. Click **Save**.
 
-> 📘 **Note**
->
-> #### Notes
+> 📘 **Notes**
 >
 > * On January 30, 2023, the new **TikTok for Business—Advanced SRN** integration `tiktokglobal_int` was added, while the **[Legacy] TikTok for Business** integration `bytedanceglobal_int` is gradually phasing out and will be deprecated by March 2024. Learn more in this [bulletin](/docs/bulletin-tiktok-for-business-advanced-srn).
 >   * If the legacy integration (bytedanceglobal\_int) is still active after the new one (tiktokglobal\_int) is integrated, there will be a duplication of performance data in Creative Optimization as it will be pulled from both networks.

@@ -4,9 +4,7 @@ excerpt: "A comprehensive guide for ad networks on setting up Advanced Privacy p
 ---
 **At a glance:** Data sharing with partners when Advanced Privacy is enabled. Instructions for ad networks on setting up Advanced Privacy postbacks. Note! This article is not related to either SKAdNetwork postbacks nor is it intended for use by advertisers.
 
-> 📘 **Note**
->
-> #### Advanced Privacy for Ad Networks news
+> 📘 **Advanced Privacy for Ad Networks news**
 >
 > The Advanced Privacy postback mechanism described in this article works when all of the following are true:
 >
@@ -47,8 +45,6 @@ You can view the current AP setting, per app: In AppsFlyer, from the side menu, 
   **Note:** If an AP postback is required and you haven't completed AP integration, no postback is sent. You can set up AP integration using our self-service [Postback Management](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#setting-up-your-advanced-privacy-postback) tool.
 
 > 📘 **Note**
->
-> #### Note
 >
 > * If a user gives ATT consent in the apps of both the advertiser and the publisher ("dual consent"), regular postbacks are sent to both the attributed and non-attributed ad networks.
 > * **Exception:** For installs attributed to Apple Search Ads (ASA), ASA sends install postbacks to the ad network even when Advanced Privacy is turned on for the advertiser in the following conditions:
@@ -208,9 +204,7 @@ To receive Advanced Privacy postbacks, you must set up an Advanced Privacy integ
 1. [Set up your Advanced Privacy postback in the AppsFlyer dashboard.](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#setting-up-your-advanced-privacy-postback)
 2. [Test Advanced Privacy integration.](/docs/ios-integration-testing-for-ad-networks)
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > * In order to be able to distinguish between postbacks for legitimate events and rejected postbacks, you must configure the rejected postback macros.
 > * To enable rejected installs/events postback, contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).

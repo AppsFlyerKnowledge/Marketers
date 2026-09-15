@@ -14,9 +14,7 @@ Recording these events can help you determine:
 * What are the most popular types of services users use eWallet for when making bill payments
 * Which merchants are the most popular
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=ewallet). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.

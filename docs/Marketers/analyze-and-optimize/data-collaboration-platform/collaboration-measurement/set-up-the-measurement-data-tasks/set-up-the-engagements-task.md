@@ -81,8 +81,6 @@ If a custom source is used to provide engagement events to DCP, map your custom 
 
 > 📘 **Note**
 >
-> #### Note
->
 > The **DCP conversion events database** stores all the conversion events of the current collaboration under a unitary scheme, including conversion events originating from **in-app events** or **off-site campaigns** (if you’re running a combined on-site off-site campaign).
 
 

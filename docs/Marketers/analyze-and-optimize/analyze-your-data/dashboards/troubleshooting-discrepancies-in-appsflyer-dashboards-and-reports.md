@@ -41,9 +41,7 @@ Advertisers find both types of data useful but for different purposes. For this 
 * Because activity data shows a breakdown of chronological events, it's useful for measuring the overall performance of media sources during specific date ranges. For example, use activity data to see how many purchase events were performed by all app users during a specific month.
 * Use activity data to compare user behavior in the current month relative to a previous month.
 
-> 📘 **Note**
->
-> #### The train analogy
+> 📘 **The train analogy**
 >
 > This analogy will help you understand the difference between activity and LTV data.
 >

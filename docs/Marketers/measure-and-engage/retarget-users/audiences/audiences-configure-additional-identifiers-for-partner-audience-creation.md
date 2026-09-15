@@ -357,10 +357,10 @@ Populated example for hashed *Phone number* and hashed *Email address*:
 ```
 
 <Cards>
-  <Card title="Audiences partner connections" href="/docs/audiences-partner-connections">
+  <Card title="Audiences partner connections" href="/docs/audiences-partner-connections" icon="fa-solid fa-users">
     Learn how to connect and send custom audiences to advertising partners.
   </Card>
-  <Card title="Audiences user identifier policy" href="/docs/audiences-user-identifier-policy">
+  <Card title="Audiences user identifier policy" href="/docs/audiences-user-identifier-policy" icon="fa-solid fa-users">
     Configure account-level user identifier policies for your audiences.
   </Card>
 </Cards>

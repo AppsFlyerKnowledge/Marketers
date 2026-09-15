@@ -116,7 +116,7 @@ Now that the Ping Identity SAML application is created, let’s create user grou
 Now that you've configured the IdP part, go back to AppsFlyer to [complete the configuration](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer). You can then [test](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-process) to see that it works.
 
 <Cards>
-<Card title="Ping Identity SSO configuration documentation" href="https://docs.pingidentity.com/r/en-us/pingfederate-112/pf_ident_provid_sso_config">
+<Card title="Ping Identity SSO configuration documentation" href="https://docs.pingidentity.com/r/en-us/pingfederate-112/pf_ident_provid_sso_config" icon="fa-solid fa-user-gear">
 Read the official Ping Identity documentation for configuring single sign-on.
 </Card>
 </Cards>

@@ -48,8 +48,6 @@ See [user journey raw data.](/docs/raw-data-reporting-overview#user-journey-repo
 
 > 📘 **Note**
 >
-> #### Note
->
 > **Media sources with user-level data restrictions**
 > If a
 > [media source restricts user-level data](/docs/about-raw-data-identifier-restrictions),
@@ -58,8 +56,6 @@ See [user journey raw data.](/docs/raw-data-reporting-overview#user-journey-repo
 > appear as contributors even if they engaged the user before the install.
 
 > 📘 **Note**
->
-> #### Note
 >
 > **Agency considerations**
 > Several major ad networks [restrict sharing their data with 3rd party platforms](/docs/user-level-data-retention), including agencies. Therefore, assisted installs do not appear in the agency dashboard for these networks.
@@ -86,7 +82,5 @@ In practice, this means:
 To summarize, `total_candidates` indicates engagements received, which are not necessarily valid candidates for attribution. It is possible to see value in this field while still having the install attributed to organic or without contributors.
 
 > 📘 **Note**
->
-> #### Note
 >
 > AppsFlyer Support will not provide engagement-level explanations or breakdowns of `total_candidates` due to the complexity of the attribution logic.

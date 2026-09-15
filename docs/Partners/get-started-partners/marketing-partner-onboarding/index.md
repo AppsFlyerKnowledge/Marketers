@@ -5,7 +5,7 @@ excerpt: "Get started with AppsFlyer for marketing technology platforms and lear
 Getting started with AppsFlyer for marketing technology platforms
 
 <Cards>
-  <Card title="Integrating Meta campaign management partners with AppsFlyer" href="/docs/integrating-meta-campaign-management-partners-with-appsflyer">
+  <Card title="Integrating Meta campaign management partners with AppsFlyer" href="/docs/integrating-meta-campaign-management-partners-with-appsflyer" icon="fa-solid fa-handshake">
     Learn how to integrate Meta campaign management partners with AppsFlyer.
   </Card>
 </Cards>

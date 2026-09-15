@@ -36,7 +36,7 @@ The following table lists the tasks required to integrate your LG CTV app with A
 | Deterministic attribution | There is an option to enable deterministic ad ID matching for attribution. To do so, the following requirements must be met:<br />- LG must conduct a legal review before content partner apps can be enabled to surface the AD ID.<br />- This legal review involves the content partner working directly with LG Electronics and requires both parties to sign a legal agreement.<br />- Content partner apps must integrate the functionality to collect and transmit the LG AD ID, and release a user-initiated app update to begin surfacing the AD ID to AppsFlyer.<br />- For more information, contact your AppsFlyer CSM and [partnerships@lgads.tv](mailto:partnerships@lgads.tv) |
 
 <Cards>
-  <Card title="CTV, PC, and console platform overview" href="/docs/ctv-pc-and-console-platform-attribution-concepts">
+  <Card title="CTV, PC, and console platform overview" href="/docs/ctv-pc-and-console-platform-attribution-concepts" icon="fa-solid fa-diagram-project">
     Learn more about the overview of CTV, PC, and console platforms.
   </Card>
 </Cards>

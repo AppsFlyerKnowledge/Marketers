@@ -46,8 +46,6 @@ For more information and setup instructions, see [Set up ROI360 store revenue](/
 
 > 📘 **Note**
 >
-> #### Note
->
 > For more information about Receipt validation, including how it works and how to enable it in AppsFlyer, see [About Receipt validation](/docs/about-receipt-validation).
 
 

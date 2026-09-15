@@ -47,10 +47,10 @@ In some cases, there may be differences in the derived location of users between
 ### Reference Files
 
 <Cards>
-  <Card title="metro_codes.csv" href="https://support.appsflyer.com/hc/en-us/article_attachments/360012539677">
+  <Card title="metro_codes.csv" href="https://support.appsflyer.com/hc/en-us/article_attachments/360012539677" icon="fa-solid fa-code">
     Download the CSV file containing Nielsen metro codes.
   </Card>
-  <Card title="Localized_Region_List-UTF8.csv" href="https://support.appsflyer.com/hc/en-us/article_attachments/360012615238">
+  <Card title="Localized_Region_List-UTF8.csv" href="https://support.appsflyer.com/hc/en-us/article_attachments/360012615238" icon="fa-solid fa-file-lines">
     Download the CSV file containing localized state and region names.
   </Card>
 </Cards>

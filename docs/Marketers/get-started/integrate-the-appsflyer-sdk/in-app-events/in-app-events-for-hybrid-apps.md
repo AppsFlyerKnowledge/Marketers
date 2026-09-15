@@ -18,15 +18,11 @@ This guide regards the hybrid scenario. Learn how to bridge the gap between the 
 
 > 📘 **Note**
 >
-> #### Note
->
 > If your app integrates AppsFlyer **using a hybrid plugin** (for example, Cordova, Ionic, React Native, or Flutter), the bridging method described in this guide doesn’t apply.
 >
 > We recommend sending WebView-based events using the [AppsFlyer server-to-server (S2S) API](/docs/server-to-server-events-api-for-mobile-s2s-mobile).
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > You have a hybrid app that offers subscriptions. You implement the subscription form in a web view which actually loads from your website.
 >
@@ -225,8 +221,6 @@ When passing event value, keep the following in mind:
   event names.
 
 > 📘 **Note**
->
-> #### Note
 >
 > The HTML code is for both Objective C and Swift.
 

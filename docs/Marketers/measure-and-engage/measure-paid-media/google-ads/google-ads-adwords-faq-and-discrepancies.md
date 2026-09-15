@@ -243,7 +243,7 @@ While we work closely with Google Ads to minimize these discrepancies, advertise
 - To compare install events (first_open in Google Ads), make sure that you drill down to install events in the conversion report in Google Ads. Google Ads might show all conversions (e.g. installs, purchases, subscriptions) which is why it is important to select only those install events out of all conversion events.
 
 <Cards>
-  <Card title="Google Ads SKAdNetwork interoperability with AppsFlyer" href="/docs/get-skan-postback-data-from-google-ads">
+  <Card title="Google Ads SKAdNetwork interoperability with AppsFlyer" href="/docs/get-skan-postback-data-from-google-ads" icon="fa-solid fa-lock">
     For iOS 14-related considerations, see Google Ads SKAdNetwork interoperability with AppsFlyer.
   </Card>
 </Cards>

@@ -788,8 +788,6 @@ Click the links to view the mapping to SRNs.
 
 > 📘 **Note**
 >
-> #### Note
->
 > If you are mapping this event to the Meta ads StartTrial event and want to associate revenue, use the af\_price parameter instead of the af\_revenue parameter.
 
 
@@ -943,8 +941,6 @@ Click the link to view the mapping to SRNs.
 
 > 📘 **Note**
 >
-> #### Note
->
 > In addition to the predefined event names described in this section, [Meta ads offers additional events](/docs/meta-ads-in-app-event-mapping#predefined-event-mapping) that are sent without attributes.
 
 
@@ -953,8 +949,6 @@ Click the link to view the mapping to SRNs.
 The following section provides a list of the predefined event parameters. Each event parameter includes the mapping used for Meta ads, Google Ads, Snap, X Ads, and Criteo. You can choose to include any of the event parameters in an event.
 
 > 📘 **Note**
->
-> #### Note
 >
 > You can see the event parameters in the Event Value column in [raw data reports](/docs/raw-data-reporting-overview) (premium feature).
 
@@ -1402,8 +1396,6 @@ The value is in the transaction currency, expressed by af\_currency (default USD
 
 > 📘 **Note**
 >
-> #### Note
->
 > For apps with [ROI360 store revenue](/docs/about-roi360-store-revenue) enabled, AppsFlyer populates af\_net\_revenue automatically on the in-app purchase and subscription events it records, calculated as gross revenue minus app store fees and taxes (Net = Gross - store fees - taxes).
 
 
@@ -1772,9 +1764,7 @@ The estimated revenue an advertiser expects from a user based on their early int
 
 **Description**: Total amount of purchases. af\_revenue is counted as revenue in the AppsFlyer platform. It also counts [negative revenue](/docs/in-app-events-overview#revenue-events), from cancellations or refunds.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > The revenue value should not contain comma separators, currency, special characters, or text. For example, a revenue value should be, 1234.56. AppsFlyer provides revenue value with an accuracy of up to five decimal places.
 
@@ -1988,8 +1978,6 @@ The following is a list of predefined event parameters that do not include SRN m
 * af\_virtual\_currency\_name
 * af\_duration\_seconds
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [In-app event postback configuration](/docs/in-app-event-postback-configuration)

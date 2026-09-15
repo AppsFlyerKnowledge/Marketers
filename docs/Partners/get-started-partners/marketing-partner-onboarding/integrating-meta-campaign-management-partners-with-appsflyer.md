@@ -26,9 +26,7 @@ Upon conversion, AppsFlyer can return the following parameters:
 | Geo | `{user\_country}` |
 
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > http://mcmp\_postbackURL.........&mcmp\_ADset\_name =`{adset\_name}`
 
@@ -45,9 +43,7 @@ Upon In-app events, AppsFlyer can return the following parameters (in addition t
 | Event Value | `{event\_value}` |
 
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > http://FMP\_postbackURL.........&eventname=`{event\_name}`
 
@@ -66,13 +62,9 @@ For example: If an install happened at 4.32 pm and 42 seconds, we can pass 5 pm 
 
 > 📘 **Note**
 >
-> #### Note
->
 > Based on Meta terms sending postbacks is available only for companies obtaining the following badges: Ad Technology
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > ![](https://support.appsflyer.com/hc/article_attachments/360001440909/mceclip0.png)
 >

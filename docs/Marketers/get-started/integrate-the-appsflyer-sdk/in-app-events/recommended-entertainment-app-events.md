@@ -20,9 +20,7 @@ These events are also relevant for entertainment apps that run on the following 
 * Apple TV (tvOS)
 * Amazon Fire TV
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=entertainment). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
@@ -99,8 +97,6 @@ When the user opts-in and activates the trial period
 
 
 > 📘 **Note**
->
-> #### Note
 >
 > If you are mapping this event to the Meta ads StartTrial event, and want to associate revenue, use the af\_price parameter instead of the af\_revenue parameter.
 

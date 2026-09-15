@@ -45,8 +45,6 @@ You can also create a source connection directly when setting up a source. See [
 
 > 📘 **Note**
 >
-> #### Note
->
 > Creating an incoming Source connection to Amazon S3 or GCS automatically creates a matching outgoing Cloud storage connection (and vice versa). Deleting Amazon S3 or GCS connection also automatically deletes the other. Since it's really one underlying connection, removing it from either tab removes it everywhere it's used.
 
 
@@ -60,9 +58,7 @@ Source connections are for connecting your data sources securely to DCP. From th
 
 **ACCOUNTADMIN** > **Account** > hover over the relevant account > **Copy account identifier**. See the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account) for details.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Look for the ID labeled **Locator**. This is **not** the same ID used to create outbound Snowflake connections.
 
@@ -134,8 +130,6 @@ s3://af-dcr-example-bucket/dcp-output/audiences/8f3a1c02-44b1-4e9a-9c7d-2b6e1a0f
 
 > 📘 **Note**
 >
-> #### Note
->
 > This folder structure is created and managed automatically. Don't rename or restructure it manually — any automated process reading these files should be built to follow this path pattern, and should wait for \_SUCCESS to appear before processing the part files, to avoid reading a partial delivery.
 
 
@@ -180,9 +174,7 @@ Data & Identity connections unify fragmented user data to improve match rates wi
 
 [Enrich your first-party data with ID5 identifiers](/docs/data-collaboration-platform-dcp-enrich-sources-with-id5) to unify fragmented user data, improve match rates with activation partners, and increase partner-side audience size.
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [DCP - Set up your cloud services](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services)
 > * [DCP - Build and activate audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences)

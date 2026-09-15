@@ -222,9 +222,7 @@ WHERE dl.conversion_date between {start date} and {end date}
 GROUP BY ALL;
 ```
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [Cost ETL](/docs/set-up-and-use-roi360-cost-etl-reports)
 > * [Advanced aggregated reports in Data Locker](/docs/advanced-aggregated-reports-in-data-locker)

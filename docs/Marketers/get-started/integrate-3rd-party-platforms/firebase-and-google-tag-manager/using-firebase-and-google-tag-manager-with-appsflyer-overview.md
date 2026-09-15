@@ -42,7 +42,7 @@ Before you can start sending events to AppsFlyer using GTM, you need to implemen
 Once everything is in place, proceed to [GTM setup](/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup).
 
 <Cards>
-  <Card title="Migrate from Firebase Dynamic Links to AppsFlyer" href="/docs/migrate-from-firebase-dynamic-links-to-appsflyer">
+  <Card title="Migrate from Firebase Dynamic Links to AppsFlyer" href="/docs/migrate-from-firebase-dynamic-links-to-appsflyer" icon="fa-solid fa-right-left">
     Learn how to migrate your existing Firebase Dynamic Links setup to AppsFlyer.
   </Card>
 </Cards>

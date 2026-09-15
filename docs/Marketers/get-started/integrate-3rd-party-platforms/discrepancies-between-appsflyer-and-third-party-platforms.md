@@ -104,7 +104,7 @@ An advertiser uses Bing to place an ad. They're also working with Airship to opt
 | The advertiser sees 35 purchase events attributed to Bing. | The advertiser sees 84 purchase events from organic sources. 35 of them came from Bing, but they wouldn't know that since those purchase events appear as organic. |
 
 <Cards>
-  <Card title="FAQs on raw data content restrictions" href="/docs/about-raw-data-identifier-restrictions#faq">
+  <Card title="FAQs on raw data content restrictions" href="/docs/about-raw-data-identifier-restrictions#faq" icon="fa-solid fa-circle-question">
     Read frequently asked questions regarding raw data content restrictions and data sharing.
   </Card>
 </Cards>

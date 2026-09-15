@@ -210,7 +210,7 @@ ___report, this is the in-app event name as configured in Meta ads. | String | Y
 | Account user access | Available. According to account permissions |
 
 <Cards>
-  <Card title="Available SKAN reports (SKAN solution guide)" href="/docs/skadnetwork-skan-solution-guide#reporting-options">
+  <Card title="Available SKAN reports (SKAN solution guide)" href="/docs/skadnetwork-skan-solution-guide#reporting-options" icon="fa-solid fa-lock">
     Learn more about the reporting options available for SKAN.
   </Card>
 </Cards>

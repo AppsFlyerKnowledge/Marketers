@@ -79,7 +79,7 @@ No. Agencies and advertisers have separate Pull API quotas. Agency-generated rep
 #### See also
 
 <Cards>
-  <Card title="Data availability windows" href="/docs/data-availability-windows">
+  <Card title="Data availability windows" href="/docs/data-availability-windows" icon="fa-solid fa-desktop">
     Learn more about data availability windows and retention periods.
   </Card>
 </Cards>

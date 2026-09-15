@@ -41,9 +41,7 @@ Asset types supported by the Creative Optimization dashboard include:
 * HTML (including Playable)
 * Text
 
-> 📘 **Note**
->
-> #### Notes
+> 📘 **Notes**
 >
 > * Assets that can be previewed in the dashboard include images, videos, and text.
 > * The “Creative similarity” feature is not yet available for
@@ -63,9 +61,7 @@ Creative Optimization has the unique ability to identify which assets are the sa
 
 Meta Advantage+ (dynamic creatives), and Google Universal App Campaigns (UAC) can include ad creatives with multiple assets. However, AppsFlyer doesn't break down the data on the asset level. Meta ads provides data up to the **ad level** and Google provides data only up to the **ad group level**. For these types of ad creatives, AppsFlyer uses data modeling to divide performance data across the assets.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > Suppose there is an ad creative on Facebook with multiple assets. Facebook attributes it with 100 installs total, broken down to assets as follows: **asset A** has 60 installs and **asset B** has 40 installs, as measured by Facebook. In AppsFlyer, let’s say the ad is attributed with 50 installs (due to inherent attribution differences between AppsFlyer and [SRNs](/docs/self-reporting-networks-srns)). To enable asset-level analysis, AppsFlyer distributes the performance data (impressions, clicks, installs, and cost) based on the asset metrics ratio from the total as illustrated below.
 >
@@ -295,8 +291,6 @@ Add a new [partner integration](/docs/creative-optimization-partner-integrations
      5. Copy the **Organization ID**.
 
 > 📘 **Note**
->
-> #### Note
 >
 > We recommend entering the partner metrics credentials when setting up a new partner integration. However, it's not mandatory. You can save the integration and add the credentials at a later time. But please note that we pull 90 days of partner data from the time the partner integration is created, so not entering the partner metric credentials may result in missing data.
 

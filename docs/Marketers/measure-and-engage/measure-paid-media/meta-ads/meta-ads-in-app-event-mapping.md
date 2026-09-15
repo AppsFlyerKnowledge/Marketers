@@ -72,8 +72,6 @@ Through the AppsFlyer deep integration with Meta, many of the AppsFlyer standard
 
 > 📘 **Note**
 >
-> #### Note
->
 > Automatic parameter mapping can differ between CUSTOM and predefined events.
 >
 > For [predefined events](/docs/in-app-events-event-structure), **af\_price** is mapped to **\_valueToSum** in some cases (for example, `fb_mobile_add_to_cart`). In other cases, **af\_revenue** is mapped to **\_valueToSum** (for example, in `fb_mobile_purchase`).
@@ -174,13 +172,9 @@ If you do include `af_content_list`, do not also include `af_content_id` in the 
 
 > 📘 **Note**
 >
-> #### Note
->
 > `fb_content_id` is important for product-level use cases such as matching events to catalog items for Advantage+ Catalog Ads and Dynamic Ads, product-level performance reporting, and product-based optimization signals. For general conversion optimization based on event count and value, campaigns work without it.
 
-> 📘 **Note**
->
-> #### Example, unified format compatible with Meta and TikTok
+> 📘 **Example, unified format compatible with Meta and TikTok**
 >
 > ```
 > {
@@ -194,9 +188,7 @@ If you do include `af_content_list`, do not also include `af_content_id` in the 
 
 This format works for both Meta and TikTok. TikTok also reads `id` values from the `af_content` field, so a single payload is sufficient when postbacking to both networks.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > If the `af_content` parameter exceeds 1,000 characters, AppsFlyer may send the event to Meta without the `fb_content` parameter. If `af_content_list` is also absent in that scenario, Meta receives no product identification data. Keep `af_content` under 1,000 characters for events that include many items.
 
@@ -224,8 +216,6 @@ Considerations regarding in-app event naming:
   **To keep on the safe side, refrain from naming events the same as Meta event names.**
 * To perform in-app events postback mapping with Meta, get events data from all sources, including organic.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > With the exception of the above parameters, AppsFlyer sends the CUSTOM events data **as is** to Meta. It is the responsibility of the app owner to verify the event data is according to Meta requirements, using valid Meta parameters (see the table above). Otherwise, these parameters aren't sent to Meta.

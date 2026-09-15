@@ -88,7 +88,7 @@ SKAdNetwork aggregate report structure
 | Account user access | The authorization token is available to an admin user in the dashboard. |
 
 <Cards>
-  <Card title="SKAN aggregated performance report API" href="/docs/skan-aggregated-performance-report-api">
+  <Card title="SKAN aggregated performance report API" href="/docs/skan-aggregated-performance-report-api" icon="fa-solid fa-lock">
     View the documentation for the SKAN aggregated performance report API.
   </Card>
 </Cards>

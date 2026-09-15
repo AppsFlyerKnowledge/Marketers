@@ -8,8 +8,6 @@ excerpt: "Convert your website visitors into mobile app users and measure campai
 
 > 📘 **Note**
 >
-> #### Note
->
 > AppsFlyer Smart Banner web SDK v1 was deprecated on Nov. 8th, 2023. To show Smart Banners on your website you need to upgrade to v2. [Learn more.](/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1)
 
 ## Smart Banners
@@ -64,9 +62,7 @@ Approximately 20 minutes.
 
 ---
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > Mark is a marketer working for the successful food delivery service "Feed Me".
 >
@@ -78,9 +74,7 @@ Approximately 20 minutes.
 >
 > AppsFlyer then **attributes the click/install to Mark's defined media source and campaign**.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Use either AppsFlyer Smart Banner or iOS Safari smart app banner, but not both. Using both may cause display issues on your mobile website, and result in attribution discrepancies.
 
@@ -204,9 +198,7 @@ Banner groups contain one or more banners. Here you can:
 1. Click **Create Banner group**.
 2. [Optional] To edit the banner group again, hover over **Targeting & behavior** and click **Edit**.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > Mark is the marketer for a food delivery service called "Feed Me". He decides to create a campaign for the app’s plum sale. Mark decides to use an SMS blast, as well as ad networks and Google for the campaign.
 >
@@ -277,9 +269,7 @@ The Targeting & behavior panel shows you the settings you configured for that ba
 5. After finishing and saving the new creative, the banner's status becomes active. Use the **Status** toggle to switch between **Active** and **Paused** statuses.
 6. Click **Save all** to save your work or **Save all and close** to save your work and close the banner setup page.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > For tips and tricks, see our [Smart Banners cheat sheet](https://drive.google.com/file/d/1mr6g3uNwlLw6UQ_WgtQZprJMhauw7Xi3/view?usp=sharing).
 

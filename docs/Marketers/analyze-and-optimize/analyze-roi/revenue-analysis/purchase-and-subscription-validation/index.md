@@ -5,19 +5,19 @@ excerpt: "An overview of guides and setup instructions for validating purchases,
 This section covers purchase and subscription validation, including receipt validation and ROI360 store revenue setup.
 
 <Cards>
-  <Card title="Purchase and subscription validation - Overview" href="/docs/purchase-and-subscription-validation-overview">
+  <Card title="Purchase and subscription validation - Overview" href="/docs/purchase-and-subscription-validation-overview" icon="fa-solid fa-sack-dollar">
     Learn the basics of validating purchases and subscriptions.
   </Card>
-  <Card title="About Receipt validation" href="/docs/about-receipt-validation">
+  <Card title="About Receipt validation" href="/docs/about-receipt-validation" icon="fa-solid fa-sack-dollar">
     Understand how receipt validation works and why it is important.
   </Card>
-  <Card title="Set up receipt validation" href="/docs/set-up-receipt-validation">
+  <Card title="Set up receipt validation" href="/docs/set-up-receipt-validation" icon="fa-solid fa-sack-dollar">
     Step-by-step instructions to configure receipt validation.
   </Card>
-  <Card title="About ROI360 store revenue" href="/docs/about-roi360-store-revenue">
+  <Card title="About ROI360 store revenue" href="/docs/about-roi360-store-revenue" icon="fa-solid fa-sack-dollar">
     Learn about tracking store revenue using ROI360.
   </Card>
-  <Card title="Set up ROI360 store revenue" href="/docs/set-up-roi360-store-revenue">
+  <Card title="Set up ROI360 store revenue" href="/docs/set-up-roi360-store-revenue" icon="fa-solid fa-sack-dollar">
     Configure ROI360 to accurately measure and validate store revenue.
   </Card>
 </Cards>

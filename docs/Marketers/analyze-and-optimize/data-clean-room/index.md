@@ -5,34 +5,34 @@ excerpt: "Leverage data from your AppsFlyer account to obtain privacy-preserving
 Leverage data from your AppsFlyer account to obtain privacy-preserving insights
 
 <Cards>
-  <Card title="Data Clean Room—Overview" href="/docs/data-clean-room-overview">
+  <Card title="Data Clean Room—Overview" href="/docs/data-clean-room-overview" icon="fa-solid fa-handshake-angle">
     An introduction and overview of the AppsFlyer Data Clean Room solution.
   </Card>
-  <Card title="Data Clean Room—Setting up cloud services" href="/docs/data-clean-room-setting-up-cloud-services">
+  <Card title="Data Clean Room—Setting up cloud services" href="/docs/data-clean-room-setting-up-cloud-services" icon="fa-solid fa-handshake-angle">
     Learn how to configure and connect your cloud storage services.
   </Card>
-  <Card title="Data Clean Room—Working with connections" href="/docs/data-clean-room-working-with-connections">
+  <Card title="Data Clean Room—Working with connections" href="/docs/data-clean-room-working-with-connections" icon="fa-solid fa-handshake-angle">
     Manage secure data connections within the Data Clean Room environment.
   </Card>
-  <Card title="Data Clean Room—Working with sources" href="/docs/data-clean-room-working-with-sources">
+  <Card title="Data Clean Room—Working with sources" href="/docs/data-clean-room-working-with-sources" icon="fa-solid fa-handshake-angle">
     Configure and manage your incoming data sources.
   </Card>
-  <Card title="Data Clean Room—Working with reports" href="/docs/data-clean-room-working-with-reports">
+  <Card title="Data Clean Room—Working with reports" href="/docs/data-clean-room-working-with-reports" icon="fa-solid fa-handshake-angle">
     Generate, schedule, and manage privacy-compliant reports.
   </Card>
-  <Card title="Data Clean Room—Creating Attribution data reports" href="/docs/data-clean-room-creating-attribution-data-reports">
+  <Card title="Data Clean Room—Creating Attribution data reports" href="/docs/data-clean-room-creating-attribution-data-reports" icon="fa-solid fa-handshake-angle">
     Step-by-step guide to building attribution reports.
   </Card>
-  <Card title="Data Clean Room—Creating In-app event reports" href="/docs/data-clean-room-creating-in-app-event-reports">
+  <Card title="Data Clean Room—Creating In-app event reports" href="/docs/data-clean-room-creating-in-app-event-reports" icon="fa-solid fa-handshake-angle">
     Step-by-step guide to building in-app event reports.
   </Card>
-  <Card title="Data Clean Room—Dynamic Query" href="/docs/data-clean-room-dynamic-query">
+  <Card title="Data Clean Room—Dynamic Query" href="/docs/data-clean-room-dynamic-query" icon="fa-solid fa-handshake-angle">
     Run flexible, dynamic queries on your clean room datasets.
   </Card>
-  <Card title="Data Clean Room—Data enrichment through tech partner integrations" href="/docs/data-clean-room-data-enrichment-through-tech-partner-integrations">
+  <Card title="Data Clean Room—Data enrichment through tech partner integrations" href="/docs/data-clean-room-data-enrichment-through-tech-partner-integrations" icon="fa-solid fa-handshake-angle">
     Enrich your data by integrating with third-party technology partners.
   </Card>
-  <Card title="Brands Directory—Overview and FAQs" href="/docs/brands-directory-overview-and-faqs">
+  <Card title="Brands Directory—Overview and FAQs" href="/docs/brands-directory-overview-and-faqs" icon="fa-solid fa-circle-question">
     Frequently asked questions and overview of the Brands Directory.
   </Card>
 </Cards>

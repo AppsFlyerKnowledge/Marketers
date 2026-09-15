@@ -23,9 +23,7 @@ The report sample includes all the report fields and their values. For the defin
 * Events are allocated to their corresponding hourly buckets.
   * Example: Events that entered the database between 3:00 and 4:00 AM will appear in the 3:00 AM bucket.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > There is typically a short delay between an event's actual happening and its entry into the database. The report uses the database entry time to ensure accurate and consistent hourly grouping.
 

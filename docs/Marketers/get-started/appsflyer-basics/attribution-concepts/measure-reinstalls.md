@@ -93,8 +93,6 @@ Re-attribution
 
 > 📘 **Note**
 >
-> #### Note
->
 > The first-install mode automatically applies to apps added to AppsFlyer on or after July 31, 2024. For apps added before this date, we recommend contacting AppsFlyer to migrate your existing apps to the first-install mode.
 
 
@@ -108,8 +106,6 @@ The first install mode provides advertisers with a better picture of user engage
 (2) You will only see this in the raw data.
 
 > 📘 **Note**
->
-> #### Note
 >
 > Organic KPI data in the dashboard may show a lower value with **Post Reinstall Events Attribution** set to **Attributed to the first install** as some of those numbers may now be attributed to a non-organic media source.
 
@@ -192,9 +188,7 @@ You can verify in your raw data report that your post-reinstall in-app events ar
 
 ## Reinstalls raw data reports
 
-> 📘 **Note**
->
-> #### Prerequisites
+> 📘 **Prerequisites**
 >
 > Requires enabling. Reach out to your CSM to discuss this.
 

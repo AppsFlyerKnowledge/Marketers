@@ -178,7 +178,7 @@ The App Clip Card displays on your device, indicating that your OneLink/App Clip
 | Protect360 | Protect360 does not support App Clips. |
 
 <Cards>
-  <Card title="Attribution solution for Apple App Clips by AppsFlyer" href="https://www.appsflyer.com/resources/guides/ios-14-app-clips/">
+  <Card title="Attribution solution for Apple App Clips by AppsFlyer" href="https://www.appsflyer.com/resources/guides/ios-14-app-clips/" icon="fa-solid fa-diagram-project">
     Read the comprehensive guide on AppsFlyer's attribution solution for iOS App Clips.
   </Card>
 </Cards>

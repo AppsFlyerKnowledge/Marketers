@@ -14,9 +14,7 @@ This status enables advertisers to detect fraud without automatically implementi
 * Control: Tailor fraud detection to your business model and needs.
 * Transparency: Tagged data provides insights on additional fraud protection layers.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Only the Admin, Marketing lead, Team manager, and Security [permissions roles](/docs/user-management#more-about-roles) are able to access the Fraud protection Studio.
 
@@ -49,8 +47,6 @@ FPS has two modes, **implemented** and **tagged**. Advertisers can switch betwee
 [![Image description](https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png)](https://support.appsflyer.com/hc/article_attachments/31990048826513)
 
 > 📘 **Note**
->
-> #### Note
 >
 > In tagged mode, all fraud detections that are tagged but remain valid are considered valid according to the client configuration, and as such, we won’t credit back to the consumption plan
 
@@ -100,9 +96,7 @@ On the click flood card page you can [see and adjust the detection status](/docs
 
 Download the Click flood report data sample
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > * When tagged detection is selected they are reported in raw data reports, meaning, not in fraud reports.
 > * Tagging the click flood is on the app level and will prevent blocking or post-attribution implementation. Therefore, by tagging it, you are exposed to abuse on your non-organic and organic installs.
@@ -175,8 +169,6 @@ Download the New Release report data sample
 
 > 📘 **Note**
 >
-> #### Note
->
 > A detection package is one or multiple detection updates that are grouped and released together.
 
 
@@ -213,8 +205,6 @@ Future Releases allow you to set the number of days you want future detection pa
 
 > 📘 **Note**
 >
-> #### Note
->
 > * This only affects future packages. Detection packages that are currently in effect will not get delayed or changed.
 > * Selecting 0 days from the dropdown box is equivalent to selecting [Implement now](/docs/beta-fraud-protection-studio#to-implement-the-current-package-if-in-tagged-status), and overrides the the [Future Release](/docs/beta-fraud-protection-studio#how-to-set-the-tagged-mode-time-period-for-future-packages) settings for this package.
 
@@ -239,8 +229,6 @@ The New Current Release section allows you to see:
 
 > 📘 **Note**
 >
-> #### Note
->
 > This overrides the [Future Release](/docs/beta-fraud-protection-studio#how-to-set-the-tagged-mode-time-period-for-future-packages) settings for this package.
 
 
@@ -252,9 +240,7 @@ Tagging a detection on the App Detection Evaluation Card impacts all Protect360 
 
 On the App detection evaluation page you can [see and adjust the detection status](/docs/beta-fraud-protection-studio#adjust-detection-status) between implemented and tagged, and view the [current detection status](/docs/beta-fraud-protection-studio#analyze-click-flood-by-media-source) data.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > * When tagged detection is selected, they are reported in raw data reports, meaning not in fraud reports.
 > * Tagging the app detection evaluation is on the app level and will prevent blocking or post-attribution implementation of Protect360 logics. Therefore, by tagging it, you are exposed to abuse on your non-organic and organic installs.
@@ -393,8 +379,6 @@ Detections are shown as one of the following:
 * **Untagged** — install candidates the module didn't flag.
 
 > 📘 **Note**
->
-> #### Note
 >
 > For full setup, requirements, and detailed reporting, see [[Beta] Advanced Security Protect360 Module](/docs/beta-advanced-security-protect360-module).
 

@@ -292,7 +292,7 @@ Use status information to answer questions such as:
 | Upload history scope | Upload history reflects the upload result, not the creative's ongoing delivery or moderation status. |
 
 <Cards>
-  <Card title="Creative Optimization guide" href="/docs/creative-optimization-guide">
+  <Card title="Creative Optimization guide" href="/docs/creative-optimization-guide" icon="fa-solid fa-palette">
     Learn more about analyzing and optimizing your creative performance.
   </Card>
 </Cards>

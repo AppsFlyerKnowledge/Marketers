@@ -71,8 +71,6 @@ You can apply filters to narrow down the data by using selected attributes, help
 
 > 📘 **Note**
 >
-> #### Note
->
 > * You can add as many conditions as needed, using the AND and OR operations.
 > * Multiple conditions are processed according to the standard logical order, with priority given to AND operations over OR.
 > * When using functions or filters on date-type fields (columns), make sure that the date values conform to the supported date format specific to the selected function. Any discrepancies may lead to suboptimal choices among the provided options.
@@ -142,8 +140,6 @@ The data view structure includes fields from the original data source and any cu
 
 > 📘 **Note**
 >
-> #### Note
->
 > * Adjusting the field type can only be done from the original source, not from the data view.
 > * If you created a new field that is using an aggregation function, the fields available in the selection will only be the ones that are in the **Group by** of the function.
 > * Removing a field from the selected fields will not affect the aggregation function results.
@@ -188,8 +184,6 @@ You can [associate your data view with a collaboration](You%20can%20share%20(ass
 
 > 📘 **Note**
 >
-> #### Note
->
 > If you created this Data View to aggregate a transactional source for audience creation, make sure to associate it with the relevant collaboration. The aggregated Data View must be associated with the collaboration before it becomes available as a source in the Audience Builder. [Learn how to associate sources with a collaboration](/docs/data-collaboration-platform-dcp-create-a-collaboration).
 
 
@@ -219,8 +213,6 @@ Data views are useful when you need to tailor and control access to data for dif
 Transactional data refers to sources that contain multiple records per user (for example, purchases, orders, or events). If you're working with a transactional data source, you must aggregate it into a user-level dataset before it can be used for audience creation in the Audience Builder.
 
 > 📘 **Note**
->
-> #### Note
 >
 > When you open a transactional data source directly, or are redirected here from the Audience Builder, a banner is displayed confirming that aggregation is required. The aggregated Data View must also be associated with the relevant collaboration before it becomes available as a source in the Audience Builder.
 
@@ -290,7 +282,5 @@ Share your data view with the collaborator and grant them the necessary permissi
 5. Set the permissions according to your preferences ([learn about permissions](/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source)), then click **Save**.
 
 > 📘 **Note**
->
-> #### Note
 >
 > You can only associate data views created from your sources.

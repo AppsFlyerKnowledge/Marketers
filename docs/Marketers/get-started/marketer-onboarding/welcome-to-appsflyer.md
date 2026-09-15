@@ -28,8 +28,6 @@ There are a number of ways to log into your AppsFlyer account:
 
 > 📘 **Note**
 >
-> #### Note
->
 > If your administrator configured a two-factor authentication ([2FA](/docs/implementing-and-using-2fa-login)) for your account, you'll be asked to verify the login using another authentication method.
 
 
@@ -38,8 +36,6 @@ There are a number of ways to log into your AppsFlyer account:
 Users can exist in multiple accounts with different roles and permissions. They can navigate between their accounts without the need to re-enter credentials.
 
 > 📘 **Note**
->
-> #### Note
 >
 > * Switching between accounts and changing the primary account is supported for all login methods: Username and password, 2FA, and Single Sign-On (SSO).
 > * At this stage, switching between accounts is restricted to advertiser accounts only.
@@ -68,18 +64,14 @@ The primary account is the initial account that was created and acts as the defa
 
 To get started with AppsFlyer, proceed to our [step-by-step guide](/docs/getting-started-onboarding-for-marketers). 
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > Want to know more about the mobile ecosystem? Check out this short, informative [course on the AppsFlyer Learning Portal](https://elevate.appsflyer.com/lms/index.php?r=course/deeplink&course_id=7767&generated_by=14109&hash=b421539db1c0352890d6f3e82e7fe9a74c0e5cce).
 
 
 Related reading: [Mobile attribution](/docs/convert-your-mobile-web-visitors-to-app-users) | [CTV attribution](/docs/ctv-pc-and-console-platform-attribution-concepts)
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [AppsFlyer attribution model](/docs/appsflyer-attribution-model)
 > * [SDK integration overview](/docs/sdk-integration-overview)

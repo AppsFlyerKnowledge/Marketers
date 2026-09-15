@@ -27,7 +27,7 @@ Cross-platform reports:
 | Cross-platform impressions | - Includes impression data from cross-platform OneLink links.<br />- Doesn't require a Data Locker subscription. | [Download](https://docs.google.com/spreadsheets/d/e/2PACX-1vT_d8Tf0AzwOybJQG1L7d42l7LhMO5SuAcHwguRcV32mdvTZVSk6U-jTVuYFfQtTCo0rte-k7pDeOqi/pub?gid=964292901&single=true&output=csv) |
 
 <Cards>
-  <Card title="Data Locker for Advertisers" href="/docs/data-locker-for-marketers">
+  <Card title="Data Locker for Advertisers" href="/docs/data-locker-for-marketers" icon="fa-solid fa-handshake">
     Learn how to set up and configure Data Locker to access your raw data reports.
   </Card>
 </Cards>

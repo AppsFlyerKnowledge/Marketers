@@ -72,10 +72,10 @@ Learn all about it [here](/docs/pull-api-raw-data).
 | Campaign name changes | Pull API reports don't support campaign name changes |
 
 <Cards>
-  <Card title="Descriptions and examples of aggregate reports" href="/docs/aggregated-and-analytics-reporting-overview">
+  <Card title="Descriptions and examples of aggregate reports" href="/docs/aggregated-and-analytics-reporting-overview" icon="fa-solid fa-chart-column">
     View detailed descriptions and examples of the aggregate reports available.
   </Card>
-  <Card title="Selecting the right data delivery tool for aggregated data" href="/docs/aggregated-and-analytics-reporting-overview">
+  <Card title="Selecting the right data delivery tool for aggregated data" href="/docs/aggregated-and-analytics-reporting-overview" icon="fa-solid fa-chart-column">
     Compare and choose the best tool for delivering your aggregated data.
   </Card>
 </Cards>

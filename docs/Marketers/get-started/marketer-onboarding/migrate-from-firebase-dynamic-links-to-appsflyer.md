@@ -94,8 +94,6 @@ Use this table as a reference for all the parameters you currently use when you 
 
 > 📘 **Note**
 >
-> #### Note
->
 > If a Firebase parameter isn't listed, it is because AppsFlyer covers this in the OneLink template setup without you needing to put a parameter in your links.
 
 
@@ -126,9 +124,7 @@ Use the following table to determine which method best works for your use.
 
 
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [Branded Domains](/docs/brand-onelink-with-your-domain)
 > * [Using Firebase and Google Tag Manager with AppsFlyer—Overview](/docs/using-firebase-and-google-tag-manager-with-appsflyer-overview)

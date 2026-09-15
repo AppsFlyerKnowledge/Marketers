@@ -166,8 +166,6 @@ You might be on a Zero package which doesn't include attribution.
 
 > 📘 **Note**
 >
-> #### Note
->
 > Meta’s data-sharing policies can affect the level of detail available through GCD. Ensure that AMM is signed to maximize available campaign-level data.
 
 
@@ -297,8 +295,6 @@ Your app requires the Facebook SDK in addition to the AppsFlyer SDK for the foll
 
 > 📘 **Note**
 >
-> #### Note
->
 > The above information and recommendations regarding deep linking and deferred deep linking are based on thorough testing we conducted using the Meta ads available demo/preview tools, which uses a different mechanism than live ads.
 
 
@@ -343,8 +339,6 @@ However, you can advertise and record installs for out-of-store apps on Meta ads
 
 > 📘 **Note**
 >
-> #### Note
->
 > The same solution applies to apps in Google Play and the App store, which [require a landing page](/docs/set-up-smart-script-to-convert-web-visitors#facebook-click-id) prior to the redirection to the market.
 
 
@@ -356,9 +350,7 @@ Meta ads identifies users based on their Meta ads account. Some users have both 
 
 If such a user clicks or views an ad for your app on their Android device, but install the app on their iOS device, Meta ads considers themselves as having generated the install. As a result, an Android Campaign name appears on your iOS dashboard.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > Andrew Josef is busy on his Android device. While using it, he clicks on an Android Meta campaign ad for an app called **Bubbles**. He does not download the app.
 >

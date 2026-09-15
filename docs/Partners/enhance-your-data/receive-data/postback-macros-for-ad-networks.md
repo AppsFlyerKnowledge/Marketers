@@ -7,13 +7,13 @@ As an ad network, you can define the content and endpoints of postbacks sent to 
 Related integrated partner postback guides:
 
 <Cards>
-  <Card title="Advanced Privacy" href="/docs/advanced-privacy-guide-postback-macros-for-ad-networks">
+  <Card title="Advanced Privacy" href="/docs/advanced-privacy-guide-postback-macros-for-ad-networks" icon="fa-solid fa-user-shield">
     iOS14 Advanced Privacy postback guide for ad networks
   </Card>
-  <Card title="SKAdNetwork" href="/docs/skan-integration-guide-for-ad-networks">
+  <Card title="SKAdNetwork" href="/docs/skan-integration-guide-for-ad-networks" icon="fa-solid fa-lock">
     SKAdNetwork ad networks integration guide
   </Card>
-  <Card title="Rejected attribution postbacks" href="/docs/rejected-attribution-postbacks-to-integrated-partners">
+  <Card title="Rejected attribution postbacks" href="/docs/rejected-attribution-postbacks-to-integrated-partners" icon="fa-solid fa-handshake">
     Rejected attribution postbacks to integrated partners
   </Card>
 </Cards>

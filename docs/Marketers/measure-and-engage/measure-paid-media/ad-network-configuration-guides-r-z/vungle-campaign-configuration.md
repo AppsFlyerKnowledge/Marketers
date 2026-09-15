@@ -27,9 +27,7 @@ an account, contact the partner to open one before setting up the integration.
    more about
    [partner integrations.](/docs/set-up-an-integrated-partner)
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
@@ -44,8 +42,6 @@ The Integration tab is divided into different sections as described below.
 Connect to Vungle by activating and setting parameters in the integration tab. Vungle must supply its unique network ID, ***app\_id***; this is necessary in order to connect with AppsFlyer.
 
 > 📘 **Note**
->
-> #### Note
 >
 > As an all-installs network, Vungle prefers to receive postbacks for all new installs of your app from any source, and they recommend selecting **All media sources, including organic** to send all install postbacks to Vungle.
 

@@ -205,15 +205,11 @@ Benchmarks and tips
 
 Advanced anti-fraud tips
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > Want to understand more about protection from fraud? Check out this short, informative [course on the AppsFlyer Learning Portal](https://elevate.appsflyer.com/learn/course/7809/play/18635/mobile-app-fraud-and-protect360).
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [Raw data](/docs/protect360-raw-data-reports)
 > * [Introductory guide for marketers to mobile ad fraud](https://www.appsflyer.com/resources/others/marketers-guide-mobile-ad-fraud/)

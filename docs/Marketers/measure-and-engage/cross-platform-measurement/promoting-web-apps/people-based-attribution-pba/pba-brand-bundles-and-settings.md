@@ -10,9 +10,7 @@ excerpt: "Learn how to consolidate attribution, events, visits, and revenue of b
 
 Brands operate in an ecosystem encompassing both web and mobile properties. As an advertiser, a full picture of brand performance across platforms–web and mobile–is needed. In PBA, brand bundles consolidate the data of mobile and web properties into a single entity for purposes of analytics and raw data.
 
-> 📘 **Note**
->
-> #### What is a web app?
+> 📘 **What is a web app?**
 >
 > A web app is an [entity you have created in AppsFlyer](/docs/adding-an-app-to-appsflyer) that specifies a website for which you want to measure performance.
 >
@@ -70,9 +68,7 @@ Before proceeding, make sure that all the apps you want to include in the bundle
      * There is no limit to the number of mobile apps you can include in a bundle.
 4. Click Create bundle.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Brand bundles cannot be created in the following circumstances:
 >
@@ -174,9 +170,7 @@ If you delete a bundle:
 
 You probably didn’t subscribe to PBA. Please contact your CSM or [hello@appsflyer.com](mailto:hello@appsflyer.com) to upgrade your package.
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [Onboarding guide to PBA](/docs/onboarding-guide-to-people-based-attribution)
 > * [PBA getting started](/docs/people-based-attribution-pba-overview)

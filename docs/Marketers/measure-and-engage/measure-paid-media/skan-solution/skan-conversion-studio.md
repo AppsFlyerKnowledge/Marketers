@@ -93,9 +93,7 @@ There are several modes available in SKAN Conversion Studio to set conversion va
 
 Learn more about the different measurement modes in the sections that follow.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Setting conversion values in SKAN Conversion Studio must be performed by an admin or an account user with the **Manage*** permissions in **SKAN Conversion Studio**.
 >
@@ -183,8 +181,6 @@ Note: By default, AppsFlyer displays SKAN 4 on the Conversion Studio. To revert 
 ### [Legacy] Fixed modes
 
 > 📘 **Note**
->
-> #### Note
 >
 > Fixed modes are unavailable for new apps starting from 23/06/2024.  All functionalities are supported in the Custom and SKAN4.
 
@@ -523,8 +519,6 @@ In the table:
 
 > 📘 **Note**
 >
-> #### Note
->
 > Fixed modes are unavailable for new apps starting from 23/06/2024. All functionalities are supported in the Custom and SKAN4.
 
 
@@ -706,8 +700,6 @@ The S2Sflow is as follows:
 
 > 📘 **Note**
 >
-> #### Note
->
 > Fixed modes are unavailable for new apps starting from 23/06/2024. All functionalities are supported in the Custom and SKAN4.
 
 
@@ -786,9 +778,7 @@ User then did another session event - it will remain on CV 3
 
 Enabling the **Support anonymized users** toggle ensures that SKAN conversion values are accurately updated for [anonymized users](/docs/apply-privacy-preserving-sdk-methods#anonymize-user-information), while still protecting their privacy.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > This feature is relevant only for apps that call the [anonymize user method](/docs/apply-privacy-preserving-sdk-methods#anonymize-user-information) to remove and hash all user-identifying information. To ensure accurate reporting by SKAN, these apps must activate the **Support anonymized users** toggle.
 

@@ -8,9 +8,7 @@ excerpt: "Learn how to set up Snapchat Ads Web campaigns to attribute web-to-app
 
 AppsFlyer supports integration with Snapchat Ads (`snapweb_int`) for User Acquisition web-based campaigns, allowing you to report attribution and conversion data directly through Snapchat's Events API. Snapchat can then utilize this data to optimize ad targeting, measure performance, and build custom audiences.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > At present, the integration with Snapchat Web does not support sending re-engagement postbacks to CAPI.
 
@@ -101,9 +99,7 @@ Perform the next steps in Snapchat Ads Manager.
 
 You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign goal, or choose “PAGE\_VIEW” if you want to optimize for mobile App Installs.
 
-> 📘 **Note**
->
-> #### Warning
+> 📘 **Warning**
 >
 > Make sure that you do not choose **App Events;**otherwise, Snapchat will claim those conversions using the SRN API, which can lead to misalignments in reporting and optimization.
 

@@ -28,8 +28,6 @@ To view report data:
 
 > 📘 **Note**
 >
-> #### Note
->
 > * Data shown in raw data reports is limited to raw data in postbacks attributed to the partner only.
 > * For Protect360 subscribers, when the **[Protect360 dashboard & raw data](/docs/set-up-an-integrated-partner#access-protect360-dashboard-raw-data)** permission is granted by the advertiser, partners also have access to Protect360 raw data reports.
 > * **Event value** data is not displayed in this report. To get event values, you can do one of the following:
@@ -93,8 +91,6 @@ To allow this, contact your client to select you from the list of Active Integra
 When the advertiser gives permission for the ad network to configure their attribution link and map in-app events, they can enter the relevant tabs and make changes accordingly.
 
 > 📘 **Note**
->
-> #### Note
 >
 > * Any changes made to the configuration overwrite the current configuration irrespective of whether it is set by the advertiser or the ad network.
 > * Agencies can add ad network team members to the configuration, but only app owners can provide permissions to ad networks.

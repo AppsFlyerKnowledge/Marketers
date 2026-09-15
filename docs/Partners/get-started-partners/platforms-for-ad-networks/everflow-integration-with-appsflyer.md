@@ -56,8 +56,6 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={transaction_i
 
 > 📘 **Note**
 >
-> #### Note
->
 > * For campaign cost models other than CPI, please update the **&af\_cost\_model=** parameter to the appropriate model. Example:  CPA, CPC
 > * If you are an existing AppsFlyer partner and currently migrating to Everflow from a different platform, make sure to add `&af_additional_postback=1` to your attribution links.
 
@@ -69,8 +67,6 @@ For the complete list of Everflow’s macros click [here](https://help.everflow.
 ## Integrating your install and in-app event postbacks
 
 > 📘 **Note**
->
-> #### Note
 >
 > * See below for an explanation of how to format install and in-app event postbacks for the Everflow platform.
 > * You must send AppsFlyer your custom Everflow domain in place of  [everflow\_domain\_placeholder] in the below postbacks.

@@ -6,9 +6,7 @@ excerpt: "Learn how to set up and configure mobile attribution, cost API, SKAdNe
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png)
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Some media sources restrict sharing data with 3rd parties. AppsFlyer can't share user-level data of users acquired through these media sources with 3rd party platforms or services. All installs from such media sources are therefore sent as organic.
 >
@@ -51,8 +49,6 @@ Select **This partner only** for events coming only from users attributed to Lif
 Select **All sources, including organic** to have your entire user base available to be reported to Liftoff.
 
 > 📘 **Note**
->
-> #### Note
 >
 > As an ALL-Installs network, Liftoff prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **All sources, including organic** to send all install postbacks to Liftoff.
 

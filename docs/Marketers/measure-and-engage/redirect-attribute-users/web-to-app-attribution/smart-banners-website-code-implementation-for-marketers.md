@@ -167,7 +167,7 @@ The Edit Themes page opens and the CSS code for your website displays.
 </Tabs>
 
 <Cards>
-  <Card title="PBA integration with Smart Banners" href="/docs/pba-web-sdk-integration-guide#installation-and-integration">
+  <Card title="PBA integration with Smart Banners" href="/docs/pba-web-sdk-integration-guide#installation-and-integration" icon="fa-solid fa-code">
     Learn how to integrate PBA with your Smart Banners setup.
   </Card>
 </Cards>

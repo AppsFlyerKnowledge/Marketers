@@ -65,9 +65,7 @@ You may want to work with ad networks that can receive UA signals. This means th
 
 You can configure ad revenue postbacks for ad networks. This means that ad networks responsible for user acquisition can receive real-time data from mediation networks regarding ad revenue and use it to optimize their customers' UA campaigns. 
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > * Ad revenue event postbacks to ad networks only work with Impression-level via SDK and Impression-level (via SDK) with device-level (via server-to-server (S2S) API) ad revenue [integration types](/docs/roi360-guide-ad-revenue-attribution#integration-types-for-ad-revenue-attribution). This means your developer must integrate the [AppsFlyer ad revenue SDK API](/docs/integrate-the-roi360-ad-revenue-sdk-api).
 > * While you can send ad revenue postbacks to specific partners, we recommend validating how partners use the data before starting the integration.

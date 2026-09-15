@@ -19,8 +19,6 @@ Learn about the settings that impact the attribution and analytics of your app a
 
 > 📘 **Note**
 >
-> #### Note
->
 > You can also change many of these settings for multiple apps at once, instead of one at a time. Look for the **Apply to additional apps** button next to a changed setting. Learn more in Apply settings to multiple apps at once.
 
 
@@ -55,8 +53,6 @@ Learn about the settings that impact the attribution and analytics of your app a
 
 > 📘 **Note**
 >
-> #### Note
->
 > The settings in this table apply to mobile apps (iOS and Android). Some settings may not be available, or may work differently, for Web apps.
 
 
@@ -85,9 +81,7 @@ Learn about the settings that impact the attribution and analytics of your app a
 | Out-of-store app URL | * Set the app download URL used as the default redirect destination in attribution links associated with the app.<br />* This field is mandatory for Android apps specified as out-of-store apps.<br />* Once set, the URL will be applied as the default redirect destination within about an hour. |
 
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [Retargeting attribution guide](/docs/retargeting-attribution-guide)
 > * [Organic search attribution](/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution)

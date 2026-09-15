@@ -108,10 +108,10 @@ Google has provided a list of purposes from which app developers must choose as 
 | Account management | Select if you use the data for the setup and management of user accounts |
 
 <Cards>
-  <Card title="Preparing for Google Play's new safety section" href="https://android-developers.googleblog.com/2021/07/new-google-play-safety-section.html">
+  <Card title="Preparing for Google Play's new safety section" href="https://android-developers.googleblog.com/2021/07/new-google-play-safety-section.html" icon="fa-solid fa-sack-dollar">
     Read the official Android developers blog post about the safety section.
   </Card>
-  <Card title="Provide information for Google Play's Data safety section" href="https://support.google.com/googleplay/android-developer/answer/10787469">
+  <Card title="Provide information for Google Play's Data safety section" href="https://support.google.com/googleplay/android-developer/answer/10787469" icon="fa-solid fa-sack-dollar">
     Review Google's developer support guide on completing the form.
   </Card>
 </Cards>

@@ -5,22 +5,22 @@ excerpt: "Explore the core features of the AppsFlyer platform, including notific
 The ins-and-outs of the platform, notifications, data access, APIs, and more
 
 <Cards>
-  <Card title="Notifications" href="/docs/notifications">
+  <Card title="Notifications" href="/docs/notifications" icon="fa-solid fa-file-lines">
     Stay updated with real-time alerts and notifications within the AppsFlyer platform.
   </Card>
-  <Card title="About advertiser APIs" href="/docs/about-advertiser-apis">
+  <Card title="About advertiser APIs" href="/docs/about-advertiser-apis" icon="fa-solid fa-handshake">
     Learn about the available APIs for advertisers to programmatically access and manage data.
   </Card>
-  <Card title="Manage data access permissions" href="/docs/manage-data-access-permissions">
+  <Card title="Manage data access permissions" href="/docs/manage-data-access-permissions" icon="fa-solid fa-user-gear">
     Control and configure user permissions and data access levels across your account.
   </Card>
-  <Card title="About data freshness and timezone support" href="/docs/about-data-freshness-and-timezone-support">
+  <Card title="About data freshness and timezone support" href="/docs/about-data-freshness-and-timezone-support" icon="fa-solid fa-circle-info">
     Understand how data freshness updates and how different timezones are supported in reports.
   </Card>
-  <Card title="About the AppsFlyer mobile app" href="/docs/about-the-appsflyer-mobile-app">
+  <Card title="About the AppsFlyer mobile app" href="/docs/about-the-appsflyer-mobile-app" icon="fa-solid fa-mobile-screen-button">
     Monitor your campaigns on the go using the AppsFlyer mobile application.
   </Card>
-  <Card title="Navigate AppsFlyer with the launchpad" href="/docs/navigate-appsflyer-with-the-launchpad">
+  <Card title="Navigate AppsFlyer with the launchpad" href="/docs/navigate-appsflyer-with-the-launchpad" icon="fa-solid fa-bullhorn">
     Quickly access different sections and tools within AppsFlyer using the launchpad.
   </Card>
 </Cards>

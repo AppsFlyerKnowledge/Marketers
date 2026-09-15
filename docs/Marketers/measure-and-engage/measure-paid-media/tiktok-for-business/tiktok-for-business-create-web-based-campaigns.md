@@ -8,9 +8,7 @@ excerpt: "Learn how to set up TikTok Ads Web campaigns to attribute web-to-app c
 
 AppsFlyer supports integration with TikTok Ads (`tiktokweb_int`) for User Acquisition web-based campaigns, allowing you to report attribution and conversion data directly through TikTok's Events API. TikTok can then utilize this data to optimize ad targeting, measure performance, and build custom audiences.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > At present, the integration with TikTok Web does not support sending re-engagement postbacks to CAPI.
 
@@ -110,9 +108,7 @@ Perform the next steps in TikTok Ads Manager.
 
 You can choose any pre-defined INAPP event sent from Appsflyer as your campaign goal, or choose “Download” if you want to optimize for mobile App Installs.
 
-> 📘 **Note**
->
-> #### Warning
+> 📘 **Warning**
 >
 > If you want to ensure that your web-to-app-triggered conversion events are sent via the TikTok Events API, skip [these steps](/docs/tiktok-for-business-advanced-srn-integration-setup#measuring-app-activity-for-nonapp-campaigns) when creating the campaign; otherwise, TikTok will claim those conversions through the SRN API, which can cause reporting and optimization misalignments.
 
@@ -340,7 +336,5 @@ You can measure TikTok cost, clicks, and impressions alongside your web-to-app a
    Include `af_c_id` along with the full campaign hierarchy in the landing page URL. This ensures cost, clicks, and impressions are matched to your web attribution data at the most granular level.
 
 > 📘 **Note**
->
-> #### Note
 >
 > Cost data is available to ROI360 customers only. Clicks and impressions are available to all customers who complete this setup.

@@ -51,8 +51,6 @@ The Active Integrations tab in Partner Integrations shows all your [active](/doc
 
 > 📘 **Note**
 >
-> #### Note
->
 > The list of partners shown on the **Active integrations** tab varies according to the selected app. You can see which partners are connected to other apps by clicking the app from the top-left corner and selecting a different app.
 
 
@@ -86,9 +84,7 @@ The page is structured as follows:
 
 ## Set up a partner (non-SRN)
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > When enabling a partner integration, certain data, including personal information (e.g., Advertising ID, IP address), will, by default, be shared with them by you. Please ensure you have the appropriate legal basis and rights to share this data. You can limit data sharing with a partner by following the instructions provided in the [Aggregated Advanced Privacy framework](/docs/apply-aggregated-advanced-privacy-framework) and [Privacy preserving methods in the SDK](/docs/apply-privacy-preserving-sdk-methods) articles.
 
@@ -98,8 +94,6 @@ The page is structured as follows:
 Search for and select your partner, [from Partner Integrations.](/docs/set-up-an-integrated-partner#partners-in-the-marketplace)
 
 > 📘 **Note**
->
-> #### Note
 >
 > The [General settings](#d-general%20settings) step in the **Integration** tab is mandatory for all partners. You must also complete the **Attribution link** tab for non-SRN ad networks. The remaining tabs are optional.
 
@@ -273,8 +267,6 @@ Send it to the partner to be activated when a corresponding ad is watched, usual
 
 > 📘 **Note**
 >
-> #### Note
->
 > If an advertiser uses an agency to run their campaigns, the agency, and not the advertiser, should integrate with the relevant partners. Otherwise, if both the advertiser and agency integrate with a partner using the same credentials for the same app, cost data is duplicated.
 
 
@@ -329,8 +321,6 @@ Turning on **Ad network permissions** allows the ad network access to your dashb
 
 > 📘 **Note**
 >
-> #### Note
->
 > Any access permissions are restricted to data owned by the ad network.
 
 
@@ -366,9 +356,7 @@ Turning on **Ad network permissions** allows the ad network access to your dashb
 
 Read all about [what agencies can do](/docs/getting-started-agency-onboarding#what-does-it-mean-to-get-permission-from-a-marketer) when granted permissions.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > When working with agencies, turning off an integrated partner does not automatically disable certain attribution capabilities for the agencies linked to that partner:
 >
@@ -411,8 +399,6 @@ Learn more about [working with agencies](/docs/about-agency-accounts#agency-acce
 After completing the partner integration, and before you start running campaigns with the newly added partner, it's important to test the integration. Mistakes are most likely to occur during setup. Testing in advance avoids the risk of spending considerable resources, only to discover your attribution data is missing or wrong. 
 
 > 📘 **Note**
->
-> #### Note
 >
 > Before testing the integration, make sure to first [test the app for basic SDK integration,](/docs/testing-the-sdk-integration-for-marketers) including organic and non-organic installs.
 
@@ -459,9 +445,7 @@ If your subscription plan with AppsFlyer includes access to raw data, you should
 3. Allow up to 15 minutes from the install and then download the Installs report.
 4. Check the install records from the partner exist and include parameters such as the media source, campaign name, touch time and type, device ID (if applicable), agency name (called "Partner" in the report), and so on.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Some ad networks require special actions to enable the collection of raw user-level data.
 >

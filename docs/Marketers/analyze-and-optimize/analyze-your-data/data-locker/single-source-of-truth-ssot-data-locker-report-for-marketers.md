@@ -222,9 +222,7 @@ You can load unified, user acquisition, and retargeting reports separately or to
 
 ### Days post-attribution
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > The report includes a dimension, days\_post\_attribution, which associates revenue and unique user data with the specific number of days post-install
 

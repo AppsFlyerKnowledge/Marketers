@@ -10,8 +10,6 @@ The setup is done from the **Active Integrations** page, but to find new partner
 
 > 📘 **Note**
 >
-> #### Note
->
 > Before setting up an integration, make sure you [contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
 
 
@@ -28,9 +26,7 @@ The Sina Weibo Ads configuration window includes 3 active tabs: Integration, Att
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
@@ -213,9 +209,7 @@ All of the ad formats support AppsFlyer Attribution.
 
 Enter the AppsFlyer attribution link
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > ```
 > https://app.appsflyer.com/com.king.candycrushsaga?pid=sinaweibo_int&c=creative1
@@ -228,8 +222,6 @@ Enter the AppsFlyer attribution link
 Complete any additional settings and publish the ad.
 
 > 📘 **Note**
->
-> #### Note
 >
 > * You can preview the Ad Format in the upper right part at Ad Creative Setting Page.
 > * If you are not using deep linking in the ad campaign, leave the deep link box empty.

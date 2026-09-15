@@ -18,9 +18,7 @@ You can then choose to send these identifiers to your Audiences partners (subjec
 
 This API was designed to be used when you want to upload a large volume of identifier data. Typically, this means data collected over time (for example, hashed emails collected from all users of an app over the last 12 months). For real-time, individual updates of identifiers from specific devices, [configure additional identifiers](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation) in the AppsFlyer SDK or S2S-mobile API.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > **Encryption:** All additional identifier values **must** be encrypted with SHA256 hashing. Unencrypted identifiers will not be processed.
 >
@@ -93,8 +91,6 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/\{
 | `\{phone\_number\_e164\_sha256\}` | Phone number in E164 format (see note below)<br /><br />Format<br /><br />* E164 phone number<br />* SHA256 hashed<br /><br />Example value before hashing:<br /><br />+442070313000 | No |
 
 > 📘 **Note**
->
-> #### Note
 >
 > Different advertising partners support different phone number formats. So, if you choose to add a phone number, sending both identifiers is recommended: *phone\_number\_sha256* and *phone\_number\_e164\_sha256*.
 

@@ -60,8 +60,6 @@ Send automatic postbacks to Unity Ads following user installs. Use this section 
 
 > 📘 **Note**
 >
-> #### Note
->
 > As an all-installs network, Unity Ads prefers to receive postbacks for all new installs of your app from any source, and they recommended selecting **All media sources including organic** to send all install postbacks to Unity Ads.
 
 
@@ -89,15 +87,11 @@ Map AppsFlyer events with the partner via postbacks. If postback sending is enab
 | **including** | * **No data (default)**: send only the event itself without the event value.<br />* **Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event). According to Unity Ads, this option is recommended.<br />* **Values without revenue**: send all the parameters **excluding** the revenue value. |
 
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Select the correct SDK/server-to-server event and the corresponding partner event identifier. Do not duplicate events (do not pass the same events under different SDK/server-to-server event names).
 
 > 📘 **Note**
->
-> #### Note
 >
 > You can send [ad revenue postbacks](/docs/roi360-guide-ad-revenue-attribution#ad-revenue-event-postbacks-for-ad-networks) to Unity Ads so they can optimize campaigns using ad revenue data:
 >

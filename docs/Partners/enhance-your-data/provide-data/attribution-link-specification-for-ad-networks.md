@@ -34,8 +34,6 @@ As it follows from this flow, we use attribution links to get information from y
 
 > 📘 **Note**
 >
-> #### Note
->
 > If you use third-party performance marketing tools such as TUNE, CAKE, or Affise, see [platform-specific instructions](/docs/platforms-for-ad-networks).
 
 

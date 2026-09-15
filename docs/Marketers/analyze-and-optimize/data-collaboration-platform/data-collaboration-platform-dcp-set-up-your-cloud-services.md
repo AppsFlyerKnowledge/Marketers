@@ -203,16 +203,16 @@ Salesforce Cloud/CRM supports source connections only. See [DCP - Integration wi
 | Bucket naming | Bucket names must begin with `af-dcr-` followed by your text. Example: `af-dcr-example-bucket`. |
 
 <Cards>
-  <Card title="DCP - Add connections" href="/docs/data-collaboration-platform-dcp-add-connections">
+  <Card title="DCP - Add connections" href="/docs/data-collaboration-platform-dcp-add-connections" icon="fa-solid fa-handshake-angle">
     Learn how to connect your prepared cloud services to DCP in the AppsFlyer platform.
   </Card>
-  <Card title="DCP - Build and activate audiences" href="/docs/data-collaboration-platform-dcp-build-and-activate-audiences">
+  <Card title="DCP - Build and activate audiences" href="/docs/data-collaboration-platform-dcp-build-and-activate-audiences" icon="fa-solid fa-handshake-angle">
     Learn how to build and activate audiences after setting up your connections.
   </Card>
-  <Card title="DCP - Create and manage sources" href="/docs/data-collaboration-platform-dcp-create-and-manage-sources">
+  <Card title="DCP - Create and manage sources" href="/docs/data-collaboration-platform-dcp-create-and-manage-sources" icon="fa-solid fa-handshake-angle">
     Learn how to create and manage your data sources within the platform.
   </Card>
-  <Card title="Data Collaboration Platform (DCP) guide" href="/docs/data-collaboration-platform-dcp-guide">
+  <Card title="Data Collaboration Platform (DCP) guide" href="/docs/data-collaboration-platform-dcp-guide" icon="fa-solid fa-handshake-angle">
     Read the comprehensive guide to the Data Collaboration Platform.
   </Card>
 </Cards>

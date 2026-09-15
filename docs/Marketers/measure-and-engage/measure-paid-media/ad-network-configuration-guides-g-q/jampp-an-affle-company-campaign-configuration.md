@@ -20,21 +20,13 @@ excerpt: "Configure Jampp, an Affle company, in AppsFlyer to enable mobile attri
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
-> 📘 **Note**
->
-> ####
-
-
-## Integration tab
-
+> 📘 **## Integration tab**
 ### Activate partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 
 > 📘 **Note**
->
-> #### Note
 >
 > As an ALL-Installs network, Jampp prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to Jampp.
 

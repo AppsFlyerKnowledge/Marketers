@@ -12,9 +12,7 @@ The AppsFlyer SDK provides app installation and event recording functionality.
 
 You can record installs, updates, and sessions (by following the mandatory steps below), and also record additional in-app events beyond app installs (including in-app purchases, game levels, etc.) to evaluate ROI and user engagement levels.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > The AppsFlyer Windows SDK is compatible with all [Universal Windows Platform](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide) (UWP) devices, including Windows mobile phones, PC, HoloLens, and Surface hub.
 
@@ -43,9 +41,7 @@ If you choose to not use the NuGet package you can embed the AppsFlyer SDK into 
 
 [![](https://support.appsflyer.com/hc/article_attachments/21241904443153)](https://support.appsflyer.com/hc/article_attachments/21241904443153)
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > AppsFlyer uses a Newtonsoft.json package. This is a standard library for parsing Json in Windows. You can add this package using NuGet in Visual Studio. This solves the File Not Found exception in the DLL.
 >
@@ -101,9 +97,7 @@ public void TrackEvent(string eventName, IDictionary<string, Object> eventValues
 * *eventValues* is a dictionary of event parameters that comprise an event. You can find a list of recommended parameters [here](/docs/in-app-events-overview).
 * When counting revenue as part of in-app events, use InAppEventParameterName.REVENUE (“af\_revenue”) constant parameter name to count revenue as part of an in-app event. You can populate it with any numeric value, positive or negative.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > ```
 > AppsFlyerLib.AppsFlyerTracker tracker = AppsFlyerLib.AppsFlyerTracker.GetAppsFlyerTracker();

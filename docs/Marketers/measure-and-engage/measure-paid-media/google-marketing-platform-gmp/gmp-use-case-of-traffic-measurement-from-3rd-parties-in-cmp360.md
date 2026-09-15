@@ -14,8 +14,6 @@ In the context of AppsFlyer, the standard DV360 SRN integration (dv360\_int) wit
 
 > 📘 **Note**
 >
-> #### Note
->
 > * AppsFlyer attributes DV360 campaigns managed in CM360 via the standard DV360 SRN integration, without the need for attribution links. Installs and re-engagements are attributed to DV360 via DV360 SRN claims using the integration. If you're running DV360 campaigns via CM360, refer to the [DV360 integration guide](/docs/google-marketing-platform-display-video-360-dv360-integration).
 > * If the third-party media source is an SRN, AppsFlyer recommends not using the integration described in this article to avoid conflicts when conversions from the same partner are reported via two different integrations. For example, if the [Meta ads SRN integration](/docs/meta-ads-integration-setup) is enabled in AppsFlyer but CM360 is also utilized to report on Meta ads traffic (facebook\_int) using the method described in this article, conversions may be reported by both Meta ads and CM360, with CM360 capturing some of the conversions that would have been claimed by the main Meta ads integration.
 
@@ -32,8 +30,6 @@ To ensure attribution by AppsFlyer:
 * If the third-party media source isn’t integrated with AppsFlyer, it should be handled as a custom or owned media source. In this case, implement an attribution link with any PID (media source) value.
 
 > 📘 **Note**
->
-> #### Note
 >
 > For Agency attribution: AppsFlyer requires the agency's name for install attribution. Include it using the `af_prt` parameter in the attribution link or through the referrer in the URL.
 

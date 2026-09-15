@@ -201,7 +201,7 @@ Advanced Privacy behaves differently when served on the web and the af\_media\_t
 4. Click **Save.**
 
 <Cards>
-  <Card title="Advanced Privacy guide & postback macros for ad networks" href="/docs/advanced-privacy-guide-postback-macros-for-ad-networks">
+  <Card title="Advanced Privacy guide & postback macros for ad networks" href="/docs/advanced-privacy-guide-postback-macros-for-ad-networks" icon="fa-solid fa-user-shield">
     Learn how Advanced Privacy affects ad networks and how to configure postback macros.
   </Card>
 </Cards>

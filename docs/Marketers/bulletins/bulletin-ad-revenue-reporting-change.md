@@ -38,9 +38,7 @@ The change is dependent on the integration type between the app and the monetiza
 
 See the example that follows.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > * Ads display and ad revenue occurs on Day 0 (the day of user acquisition).
 > * Ad revenue data is pulled on Day 1.

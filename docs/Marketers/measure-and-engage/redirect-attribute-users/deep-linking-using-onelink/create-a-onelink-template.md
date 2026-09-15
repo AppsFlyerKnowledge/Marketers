@@ -184,8 +184,6 @@ For the best user experience, security, and device coverage, we recommend enabli
 
 > 📘 **Note**
 >
-> #### Note
->
 > * When you save or update your OneLink template, AppsFlyer automatically generates the AASA and/or Digital Asset Links JSON file to verify your app domain, and hosts it for you. This is critical for your Universal Links and App Links to work properly.
 > * It can take up to 1 hour for OneLink template updates to take effect.
 
@@ -221,8 +219,6 @@ You can customize the QR codes generated via OneLink by:
 A favicon is the small icon that appears next to your link title when a link is shared on social media or messaging apps. Customize how it looks by adding your own icon here. It applies to all links based on this template, and displays on supported platforms when a link is shared with a custom social media preview configured.
 
 > 📘 **Note**
->
-> #### Note
 >
 > This favicon only appears in link previews on platforms that support it, and only when **Custom preview (image and tags)** is configured at the link level. [Learn more](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-media-preview-og-tags)
 

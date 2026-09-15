@@ -20,9 +20,7 @@ Attribution links are generated using **OneLink** or a **single-platform link**.
 | URL structure | `https://\{subdomain\}.onelink.me/`  <br />`\{templateid\}?pid=\{media_source\}`  <br />`&af_siteid=\{ApplicationID\}`  <br />`&c=\{CampaignName\}` | `https://app.appsflyer.com/\{app_id\}?pid=\{media_source\}&af_siteid=\{ApplicationID\}&c=\{CampaignName\}` |
 | Example | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int`  <br />`&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&`  <br />`c=GreatCampaign&af_siteid=A1b1` |
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > AppsFlyer supports only the HTTPS protocol for incoming engagement traffic, i.e. clicks and impressions.
 
@@ -140,9 +138,7 @@ Depending on the ad type, you can also send the relevant viewability parameter d
 | md5\_idfv | N/A | IDFV hashed with MD5 |
 | sha1\_mac | N/A | Device mac address hashed with SHA1. Requires ad network support |
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > `
 > https://app.appsflyer.com/`\{app_id\}`/?pid=airpush_int&c=RedBanner&
@@ -184,8 +180,6 @@ reserved by an integrated partner.
 
 > 📘 **Note**
 >
-> #### Note
->
 > AppsFlyer blocks attribution links that use reserved
 > [SRN](/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer)
 > names as PID values in custom media sources, such as email
@@ -225,9 +219,7 @@ like email, SMS, or mail pigeons.
   * Attribution links will not be attributed
   * Deep linking capabilities will not work on clicks
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > Avoid using white spaces in the PID value, or make sure to
 > URL
@@ -263,9 +255,7 @@ or
 both within the app, for example, banner, interstitial, or video,
 use the sub-site ID parameter.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > The following attribution link includes:
 >
@@ -330,9 +320,7 @@ The parameters are:
 * `Ad set (af_adset=)`
 * `Ad name (af_ad=)`
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > The following attribution link uses 4 levels of granularity to record the "cashmere" ad in the "coats" ad set in the "winter" campaign running on the integrated "network" media source.
 >
@@ -376,9 +364,7 @@ Usually, these characters are in the link because they are macros, and are dynam
 
 The Subscriber Parameters, meaning af\_sub1, af\_sub2, ..., af\_sub\_5 can be used to record any useful KPIs. These parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > A hail ride app, Luber, has creatives with 3 color templates: blue, yellow, and red. Luber's mobile marketer, Linda, wants to test which color template brings in more installs. To do so she adds `&af_sub3=blue` in the attribution links of all the blue ads across ALL non-SRN media sources. The same is done for the yellow and red ads as well. With this information parsed and appearing in the raw data reports, Linda is able to analyze the success of the different colored ads and pick the best converting one.
 

@@ -29,7 +29,7 @@ An availability window limits data provided by Pull API and the Aggregated Data 
 | Aggregated reports | 25 months (2 years + 1 month), [starting with the first app install](/docs/bulletin-aggregated-ltv-data-availability) |
 
 <Cards>
-  <Card title="Report generation quotas" href="/docs/report-generation-quotas-rate-limitations">
+  <Card title="Report generation quotas" href="/docs/report-generation-quotas-rate-limitations" icon="fa-solid fa-chart-column">
     View the report generation quotas and limits for your account.
   </Card>
 </Cards>

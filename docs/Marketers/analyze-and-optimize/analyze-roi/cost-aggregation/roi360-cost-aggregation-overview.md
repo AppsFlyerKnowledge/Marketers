@@ -96,9 +96,7 @@ The cost prioritization mechanism impacts aggregate data reports and dashboards.
 * If you change cost aggregation methods, the change has a retroactive impact. Historical aggregate cost data can change.
 * Change to the cost aggregation method affects agency-generated traffic in the same manner. This includes both transparent and non-transparent agencies.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > **Scenario:** A media source reports cost on the attribution link, but you decide to enable the media source's Cost API.
 >
@@ -131,8 +129,6 @@ If no conversions exist on the reported cost date, the cost is split equally acr
 * Android: **$50**
 
 > 📘 **Note**
->
-> #### Note
 >
 > The proportional (conversion-based) split applies only when the conversion granularity available in attribution exactly matches the granularity the ad network reports for its cost data. When the two only partially match, AppsFlyer can't map the cost to each app's conversions, so it applies the equal split across the matched apps instead.
 
@@ -170,9 +166,7 @@ To avoid display anomalies, make sure that:
 
 AppsFlyer completes the cost data for missing dimensions from an upper-level hierarchy. This guarantees a full view of the cost data at any level and minimizes internal discrepancies.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > An advertiser runs a campaign. The advertising hierarchy is as follows:
 >
@@ -238,9 +232,7 @@ If the campaign cost currency provided by the media source differs from that of 
 | API Cost data availability | API cost data is displayed only for customers with an active ROI360 asset. If ROI360 is deactivated, cost data from API sources is no longer available, and only CPI-based cost data will be shown in the dashboard. |
 | Mintegral: ad level granularity | To get cost reporting with ad-level granularity from Mintegral, the following ad network permissions are required per ad account: **Sub/Package × Creative dimension**. |
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [Cost aggregation overview](/docs/roi360-cost-aggregation-overview)
 > * [Cost on the attribution link](/docs/view-aggregated-cost-data-for-attribution-links)

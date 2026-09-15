@@ -26,9 +26,7 @@ A single template supports your app across multiple platforms (meaning one templ
 
 To set up cross-platform attribution using cross-platform impression URLs, configure the partner integration for each targeted app.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Make sure to enable the partner integration by performing the steps below for all targeted apps that you selected in the OneLink template (see the [section above](#step-1-create-or-edit-a%C2%A0onelink-template%C2%A0for-crossplatform-attribution)). If the integration is disabled for one of the targeted apps,  cross-platform attribution will not occur.
 
@@ -63,9 +61,7 @@ To Create an [attribution link](/docs/set-up-an-integrated-partner#attribution-
    ```
 8. Give the link to the ad network to place behind the ad displayed on CTV, PC, or console platforms.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > For owned media and non-integrated partners add parameters as needed.  [Learn more](/docs/about-link-structure-and-parameters) about the parameters you can add for additional data and metrics.
 
@@ -80,8 +76,6 @@ You can optionally assign **equal priority** to clicks and impressions in cross-
 2. Click **Save**.
 
 > 📘 **Note**
->
-> #### Note
 >
 > Enabling equal priority may cause AppsFlyer to prioritize its own attribution over other sources. Use this setting with caution and only if it aligns with your overall attribution strategy.
 

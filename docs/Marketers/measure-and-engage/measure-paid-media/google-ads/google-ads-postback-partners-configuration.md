@@ -8,9 +8,7 @@ Some partners (for example, Bidalgo, Adquant), referred to as **Google Ads postb
 
 These Google Ads Postback Partners (GAPPs) can also collect postbacks for Google Ads installs acquired by the advertiser directly, or even by other agencies (see [Use Cases](/docs/google-ads-postback-partners-configuration#google-ads-postback-partners-use-cases)). Using the postbacks information the GAPPs are able to optimize on Google Ads campaigns for the app.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Google Ads Postback Partners are **NOT** attributed with installs or events in AppsFlyer.
 
@@ -25,9 +23,7 @@ Other GAPPs integrated with AppsFlyer: Blackbox, Appreciate, Marin Software, Mir
 
 2. Type the name of the GAPP you would like to work with into the search box and select it from the dropdown list.
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > Enter "Google Ads" in the search box and press Enter to receive the list of GAPPs.
 
@@ -44,9 +40,7 @@ Other GAPPs integrated with AppsFlyer: Blackbox, Appreciate, Marin Software, Mir
 
 7. Click **Save**.
 
-> 📘 **Note**
->
-> #### Important Notes
+> 📘 **Important Notes**
 >
 > * Disabling attribution for Google Ads also stops sending postbacks to GAPPs.
 > * You can configure multiple Ads accounts (CID) to send postbacks (step 5) by separating each CID with a comma.
@@ -127,7 +121,5 @@ There are two sources for GAPP postback parameters:
    * Location
 
 > 📘 **Note**
->
-> #### Note
 >
 > The information available is based solely on the information sent by Google to AppsFlyer. If, for some reason, Google does not send an install's information, AppsFlyer can't pass it on to the GAPP.

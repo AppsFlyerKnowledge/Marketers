@@ -151,8 +151,6 @@ For example, if your af\_prt is AgencyX, your campaign name may look like this:
 
 > 📘 **Note**
 >
-> #### Note
->
 > * Agency campaigns in Sandbox attribution are also transparent and the identity of the ad network running the campaign is not masked from the marketer.
 
 
@@ -173,8 +171,6 @@ For example, if your af\_prt is AgencyX, your campaign name may look like this:
 `AgencyX_SummerSale`
 
 > 📘 **Note**
->
-> #### Note
 >
 > * Agency campaigns in SKAdNetwork are also transparent and the identity of the ad network running the campaign is not masked from the marketer. Consider that starting iOS 15, the marketer (app owner) can [opt-in to directly receive a copy of the postback.](https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks)
 > * Make sure the marketer activates the ad network **Partner activation** setting in the Integration tab. Failure to do so will prevent AppsFlyer from sharing decoded postback data with networks, impacting their ability to use it for reporting and optimization. This is in addition to the Partner activation setting that you can access in the user interface.

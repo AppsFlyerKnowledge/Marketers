@@ -66,9 +66,7 @@ Data types collected through AppsFlyer are typically connected to an identifier 
 
 Therefore, app developers should select **Yes** when asked if the data is linked to an identity.
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [AppsFlyer Service Privacy Policy](https://www.appsflyer.com/services-privacy-policy/): How AppsFlyer handles and uses data.
 > * [App privacy details on the App Store by Apple](https://developer.apple.com/app-store/app-privacy-details/).

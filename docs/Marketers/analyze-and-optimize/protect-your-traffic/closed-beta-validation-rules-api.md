@@ -8,8 +8,6 @@ excerpt: "Automate the creation and management of Validation Rules at scale with
 
 > 📘 **Note**
 >
-> #### Note
->
 > The Validation Rules API is available to Protect360 customers. It's currently in closed beta, and access is limited and enabled per account. Contact your Customer Success Manager (CSM) to request access.
 
 
@@ -53,8 +51,6 @@ The API uses Bearer token (JWT) authentication.
 3. Include the token in the **Authorization** header of your API requests.
 
 > 📘 **Note**
->
-> #### Note
 >
 > API access must be enabled per account before a token will work. Contact your CSM to activate it.
 
@@ -183,8 +179,6 @@ No. Only AND logic is supported between dimensions.
 
 Install events only. In-app events aren't supported in this version.
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * Implement validation rules to prevent fraud

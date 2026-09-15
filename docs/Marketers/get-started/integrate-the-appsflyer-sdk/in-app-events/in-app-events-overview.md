@@ -402,7 +402,7 @@ After deletion, events related to deleted users display as organic. Past aggrega
 </Accordion>
 
 <Cards>
-  <Card title="In-app event postback configuration" href="/docs/in-app-event-postback-configuration">
+  <Card title="In-app event postback configuration" href="/docs/in-app-event-postback-configuration" icon="fa-solid fa-plug">
     Configure postbacks for in-app events to send data to your integrated partners.
   </Card>
 </Cards>

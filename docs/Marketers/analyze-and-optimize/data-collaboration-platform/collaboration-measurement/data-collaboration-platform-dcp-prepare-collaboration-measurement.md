@@ -269,13 +269,13 @@ When configuring in-app events for conversions, engagements, or both, you must s
 To connect data through custom sources customer will first need to follow the instructions in the following DCP knowledge base articles:
 
 <Cards>
-  <Card title="Set up your cloud services" href="/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">
+  <Card title="Set up your cloud services" href="/docs/data-collaboration-platform-dcp-set-up-your-cloud-services" icon="fa-solid fa-handshake-angle">
     Learn how to configure cloud storage and permissions for DCP.
   </Card>
-  <Card title="Add connections" href="/docs/data-collaboration-platform-dcp-add-connections">
+  <Card title="Add connections" href="/docs/data-collaboration-platform-dcp-add-connections" icon="fa-solid fa-handshake-angle">
     Learn how to link your cloud storage connections to the platform.
   </Card>
-  <Card title="Create and manage sources" href="/docs/data-collaboration-platform-dcp-create-and-manage-sources">
+  <Card title="Create and manage sources" href="/docs/data-collaboration-platform-dcp-create-and-manage-sources" icon="fa-solid fa-handshake-angle">
     Learn how to define and manage data sources within DCP.
   </Card>
 </Cards>

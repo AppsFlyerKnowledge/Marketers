@@ -48,7 +48,7 @@ Raw data reports are available via Data Locker. They offer in-depth insights and
 - [Learn more about PBA raw data](/docs/pba-raw-data-reports).
 
 <Cards>
-  <Card title="Onboarding guide to PBA" href="/docs/onboarding-guide-to-people-based-attribution">
+  <Card title="Onboarding guide to PBA" href="/docs/onboarding-guide-to-people-based-attribution" icon="fa-solid fa-rocket">
     Learn how to get started with onboarding and setting up People-Based Attribution.
   </Card>
 </Cards>

@@ -67,8 +67,6 @@ When an agency creates a new X Ads campaign, the campaign name must start with t
 
 > 📘 **Note**
 >
-> #### Note
->
 > To establish the connection between AppsFlyer and X Ads, the advertiser MUST configure X Ads permissions allowing agencies to run X Ads traffic.
 
 
@@ -168,7 +166,5 @@ These are the common reasons for such discrepancies that advertisers should be a
 
 
 > 📘 **Note**
->
-> #### Note
 >
 > As a result of [AppsFlyer's Validation Rules](/docs/implement-validation-rules-to-prevent-fraud), results may differ in the dashboards as some installs are shown in X Ads and are not shown in the AppsFlyer dashboard.

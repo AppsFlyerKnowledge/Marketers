@@ -12,9 +12,7 @@ Related reading: [Differences between Cohort flavors](/docs/aggregated-and-anal
 
 To use Cohort and retention, select users from one or more apps and segment them by conversion time. Cohort metrics like revenue, ROI, and event conversion rates are available. Break the cohort down, for comparison purposes, into dimensions like campaign or media source. Doing so can uncover patterns or changes in performance over user or campaign life cycles. See [Cohort use cases](https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689).
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > Want to know more about cohort reports? Check out this short, informative [course on the AppsFlyer Learning Portal](https://elevate.appsflyer.com/learn/course/7804/play/18625/your-users-journey-with-retention-and-cohort-reports).
 

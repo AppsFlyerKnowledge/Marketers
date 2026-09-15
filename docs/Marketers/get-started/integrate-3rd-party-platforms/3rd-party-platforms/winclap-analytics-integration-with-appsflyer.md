@@ -3,12 +3,12 @@ title: "Winclap Analytics integration with AppsFlyer"
 excerpt: "Learn how to set up the Winclap Analytics integration with AppsFlyer to share attribution data for BI and post-attribution analytics."
 ---
 <Cards>
-  <Card title="Setting up Winclap" href="#setting-up-winclap" />
-  <Card title="Integration tab" href="#integration-tab" />
-  <Card title="Attribution link tab" href="#attribution-link-tab" />
-  <Card title="Cost tab" href="#cost-tab" />
-  <Card title="Ad revenue tab" href="#ad-revenue-tab" />
-  <Card title="Permissions tab" href="#permissions-tab" />
+  <Card title="Setting up Winclap" href="#setting-up-winclap" icon="fa-solid fa-sliders" />
+  <Card title="Integration tab" href="#integration-tab" icon="fa-solid fa-puzzle-piece" />
+  <Card title="Attribution link tab" href="#attribution-link-tab" icon="fa-solid fa-link" />
+  <Card title="Cost tab" href="#cost-tab" icon="fa-solid fa-coins" />
+  <Card title="Ad revenue tab" href="#ad-revenue-tab" icon="fa-solid fa-sack-dollar" />
+  <Card title="Permissions tab" href="#permissions-tab" icon="fa-solid fa-user-gear" />
 </Cards>
 
 **At a glance:** Winclap Analytics, an AppsFlyer integrated partner, uses AppsFlyer attribution data for BI and post-attribution analytics.

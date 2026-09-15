@@ -168,8 +168,8 @@ Select which permissions to grant Amazon Ads to access your data and perform var
 #### See also
 
 <Cards>
-  <Card title="Setting up Amazon Fire TV ad attribution" href="/docs/setting-up-amazon-fire-tv-ad-attribution" />
-  <Card title="Attribution discrepancies between AppsFlyer and Amazon Ads" href="/docs/attribution-discrepancies-between-amazon-ads-and-appsflyer" />
+  <Card title="Setting up Amazon Fire TV ad attribution" href="/docs/setting-up-amazon-fire-tv-ad-attribution" icon="fa-solid fa-diagram-project" />
+  <Card title="Attribution discrepancies between AppsFlyer and Amazon Ads" href="/docs/attribution-discrepancies-between-amazon-ads-and-appsflyer" icon="fa-solid fa-diagram-project" />
 </Cards>
 
 ## Deferred deep linking
@@ -217,8 +217,8 @@ AppsFlyer currently supports two methods of DMA consent sharing:
 #### See also
 
 <Cards>
-  <Card title="Send DMA consent via the AppsFlyer SDK" href="https://dev.appsflyer.com/hc/docs/send-consent-for-dma-compliance" />
-  <Card title="Send DMA consent via AppsFlyer S2S" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-overview" />
+  <Card title="Send DMA consent via the AppsFlyer SDK" href="https://dev.appsflyer.com/hc/docs/send-consent-for-dma-compliance" icon="fa-solid fa-user-shield" />
+  <Card title="Send DMA consent via AppsFlyer S2S" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-overview" icon="fa-solid fa-user-shield" />
 </Cards>
 
 ## Traits and limitations

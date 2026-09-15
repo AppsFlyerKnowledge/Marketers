@@ -82,9 +82,7 @@ To set up cross-platform re-engagement attribution, you need to apply a few sett
 
 ## View cross-platform attribution results
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [Data Locker end-user events cross-platform report](/docs/end-user-events-cross-platform-report-in-data-locker)
 > * [The cross-platform dashboard](/docs/my-dashboards#crossplatform-dashboard)

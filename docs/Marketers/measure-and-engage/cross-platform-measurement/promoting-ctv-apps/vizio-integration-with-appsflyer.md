@@ -40,7 +40,7 @@ The following table lists the tasks required to integrate your Vizio CTV app wit
 | Cost data | Cost data must be sent via [Cost Import](/docs/import-cost-data) using the upload file by email method. |
 
 <Cards>
-  <Card title="CTV, PC, and console platform overview" href="/docs/ctv-pc-and-console-platform-attribution-concepts">
+  <Card title="CTV, PC, and console platform overview" href="/docs/ctv-pc-and-console-platform-attribution-concepts" icon="fa-solid fa-diagram-project">
     Learn more about the CTV, PC, and console platform overview.
   </Card>
 </Cards>

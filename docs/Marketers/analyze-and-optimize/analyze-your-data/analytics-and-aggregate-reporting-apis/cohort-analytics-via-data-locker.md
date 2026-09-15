@@ -380,13 +380,13 @@ limit 20
 | Reinstalls | - If post-reinstall events are considered unattributed organic:<br />  - They're included only as of May 26, 2024. [Learn more](/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events)<br />  - The install time is based on the [device\_download\_time](/docs/raw-data-field-dictionary#device-info::dfd9504e) field.<br />  - They aren't counted toward unique user and retention measurements.<br />- If post-reinstall events are attributed to the first install, they're always included. [Learn more](/docs/unique-users) |
 
 <Cards>
-  <Card title="Combine Cost ETL and cohort reports" href="/docs/combine-cost-etl-and-cohort-reports-via-data-locker">
+  <Card title="Combine Cost ETL and cohort reports" href="/docs/combine-cost-etl-and-cohort-reports-via-data-locker" icon="fa-solid fa-chart-column">
     Learn how to combine Cost ETL with cohort reports to calculate ROI and ROAS.
   </Card>
-  <Card title="Cohort dashboard" href="/docs/cohort-and-retention-dashboard">
+  <Card title="Cohort dashboard" href="/docs/cohort-and-retention-dashboard" icon="fa-solid fa-gauge-high">
     Read the overview and principles of the Cohort dashboard in AppsFlyer.
   </Card>
-  <Card title="Example report for advertisers" href="https://support.appsflyer.com/hc/en-us/article_attachments/9222913724945">
+  <Card title="Example report for advertisers" href="https://support.appsflyer.com/hc/en-us/article_attachments/9222913724945" icon="fa-solid fa-handshake">
     Download the Cohort analytics in Data Locker example CSV report.
   </Card>
 </Cards>

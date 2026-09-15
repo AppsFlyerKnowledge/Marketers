@@ -22,8 +22,6 @@ In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations**
 
 > 📘 **Note**
 >
-> #### Note
->
 > The Google Ads Customer ID must be entered **without** hyphens.
 
 
@@ -43,9 +41,7 @@ In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations**
 
 4. Click **Save**
 
-> 📘 **Note**
->
-> #### Important Note
+> 📘 **Important Note**
 >
 > * Disabling attribution for Google Ads prevents sending postbacks to Google Ads Partners.
 > * You can configure multiple Google Ads accounts (CID) to send postbacks (step 5) by separating each CID with a comma.

@@ -6,9 +6,7 @@ excerpt: "Enrich your data and enhance your Data Clean Room (DCR) reports with d
 
 **At a glance:** Enrich your data and enhance your Data Clean Room (DCR) reports with data from our integrated tech partners.
 
-> 📘 **Note**
->
-> #### Try out this new feature!
+> 📘 **Try out this new feature!**
 >
 > The tech partner integration feature is currently in open beta. If you are interested in activating any of the available integrations, just contact your CSM. We look forward to your feedback.
 
@@ -17,9 +15,7 @@ excerpt: "Enrich your data and enhance your Data Clean Room (DCR) reports with d
 
 While matching conversion data and custom source data is at the heart of the DCR, the possibilities don't end there. Available integrations with our tech partners allow you to sharpen your focus and improve campaign performance.
 
-> 📘 **Note**
->
-> #### Cost considerations
+> 📘 **Cost considerations**
 >
 > Utilizing tech partner integrations involves 2 primary cost considerations:
 >
@@ -45,9 +41,7 @@ Follow the instructions in the tabs below for activating one or more of these in
 
 ### Braze
 
-> 📘 **Note**
->
-> #### Prerequisites
+> 📘 **Prerequisites**
 >
 > The Braze integration makes use of data sharing through Snowflake. To utilize the integration, you must have:
 >

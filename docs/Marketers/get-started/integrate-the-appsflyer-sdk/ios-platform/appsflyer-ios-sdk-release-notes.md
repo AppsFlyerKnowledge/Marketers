@@ -115,7 +115,7 @@ The following SDK versions have reached **End-of-Support** status. These version
 | 6.0.0 beta<br />End of support: 2024-08-31 | 2020-08-04 | - Extended debugging capabilities<br />- Major changes to SDK functionality and API. [Learn more](/docs/appsflyer-ios-sdk-release-notes#ios-v600-release-notes) |
 
 <Cards>
-  <Card title="Quickstart guide to iOS 14, ATT, and SKAdNetwork" href="/docs/about-att-and-skan">
+  <Card title="Quickstart guide to iOS 14, ATT, and SKAdNetwork" href="/docs/about-att-and-skan" icon="fa-solid fa-lock">
     Learn how to configure your iOS app for AppTrackingTransparency and SKAdNetwork.
   </Card>
 </Cards>

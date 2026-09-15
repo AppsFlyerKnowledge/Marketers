@@ -15,9 +15,7 @@ Retargeting attribution occurs when a user engages with a retargeting campaign b
 
 Before running retargeting campaigns, review the re-engagement rules and example cases in the sections that follow, then set up retargeting as described in the retargeting procedures section. For ease of understanding, you should be familiar with the AppsFlyer [attribution model](/docs/appsflyer-attribution-model) and the associated attribution windows.
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > Want to know more about retargeting? Check out this short, informative [course on the AppsFlyer Learning Portal](https://elevate.appsflyer.com/pages/142/remarketing).
 
@@ -222,9 +220,7 @@ To run retargeting campaigns the app must meet the following minimum requirement
 
 
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [AppsFlyer attribution model](/docs/appsflyer-attribution-model)
 > * [Audiences guide](/docs/audiences-guide)

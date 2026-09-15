@@ -157,9 +157,7 @@ Examples:
 
 Combining attributes helps isolate clearer creative patterns and reduces noise in your analysis.
 
-> 📘 **Note**
->
-> #### Notes
+> 📘 **Notes**
 >
 > * Search supports natural language queries about creative content only.
 > * Search queries do not support:

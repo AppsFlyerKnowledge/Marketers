@@ -15,9 +15,7 @@ excerpt: "See app activity, engagement, and in-app metrics during a given period
   * **Average:** Daily. Example: MAU, Average DAU, Average MAU
 * Geo filter relates to the user location at install time
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > Want to know more about the Activity dashboard? Check out this short, informative[course on the AppsFlyer Learning Portal](https://elevate.appsflyer.com/learn/course/7802/play/18621/the-activity-dashboard).
 

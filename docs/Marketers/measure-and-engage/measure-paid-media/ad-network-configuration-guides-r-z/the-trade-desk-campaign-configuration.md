@@ -65,8 +65,6 @@ In this step, you'll add the click and impression trackers that were created in 
 
 > 📘 **Note**
 >
-> #### Note
->
 > If you've chosen for conversions to be attributed by TTD (in [Step 1](/docs/the-trade-desk-campaign-configuration#step-1-define-conversion-events-in-ttd)), you can edit the attribution windows:
 >
 > 1. From the menu of icons on the right of any TTD page, click the cogwheel to open the **Advertiser Preferences**.
@@ -128,8 +126,6 @@ Send automatic postbacks to The Trade Desk following user installs and re-engage
 * **All media sources including organic**: to have your entire user base available to be reported to The Trade Desks.
 
 > 📘 **Note**
->
-> #### Note
 >
 > As an all-installs network, The Trade Desk prefers to receive postbacks for all new installs of your app from any source, and they recommend selecting **All media sources including organic** to send all install postbacks to The Trade Desk.
 

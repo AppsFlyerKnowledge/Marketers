@@ -138,9 +138,7 @@ It is not possible to properly compare the Sandbox results to AppsFlyer attribut
    In the regular AppsFlyer flow, TikTok - being the last touch point, will win the attribution. However, with Sandbox, assuming TikTok is still not integrated with Sandbox, Unity Ads will win the attribution.
 2. Sandbox attribution results can also contain "noise". Which is the addition of random data to user-related information to protect individual privacy. This technique is used to obscure specific details about user actions, making it more difficult to measure or identify individual users while still allowing for the aggregation and analysis of overall trends and patterns.
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [Closed Beta] Android privacy sandbox - Integrated partners list
 > * [[Closed Beta] Attribution API dashboard by AppsFlyer](/docs/special-access-android-privacy-sandbox-attribution-api-dashboard-by-appsflyer-cl)

@@ -182,7 +182,7 @@ Example: In the June 12 report, it displays 100 installs from Google that occurr
 ### See also
 
 <Cards>
-  <Card title="AppsFlyer getting started step-by-step" href="/docs/getting-started-onboarding-for-marketers#step-4-attribution-setup">
+  <Card title="AppsFlyer getting started step-by-step" href="/docs/getting-started-onboarding-for-marketers#step-4-attribution-setup" icon="fa-solid fa-rocket">
     Learn how to set up attribution step-by-step in AppsFlyer.
   </Card>
 </Cards>

@@ -53,7 +53,7 @@ Are these statements true or false?
 After an app has been configured to send postback copies to AppsFlyer, it may take a couple of days for it to show on the dashboard.
 
 <Cards>
-  <Card title="Apple developer" href="https://developer.apple.com/documentation/storekit/skadnetwork/configuring_an_advertised_app?changes=latest_minor#see-also">
+  <Card title="Apple developer" href="https://developer.apple.com/documentation/storekit/skadnetwork/configuring_an_advertised_app?changes=latest_minor#see-also" icon="fa-solid fa-lock">
     View Apple's developer documentation on configuring an advertised app.
   </Card>
 </Cards>

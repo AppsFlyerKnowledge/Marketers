@@ -12,9 +12,7 @@ excerpt: "Integrate your X Ads account with AppsFlyer to display attribution dat
 
 **Read**
 
-> 📘 **Note**
->
-> #### Before you begin
+> 📘 **Before you begin**
 >
 > Make sure you've
 > [added a payment method](https://business.twitter.com/en/help/account-setup/billing-basics.html)
@@ -97,9 +95,7 @@ You can customize this value to 1-23 hours or 1-7 days. We recommend setting th
 
 For retargeting campaigns on X Ads, AppsFlyer supports **Re-engagement** measurement only. That is an engagement with a retargeting campaign by a user who already has the app installed at the time of engagement. **Currently, re-attribution measurement is not supported by X Ads.**
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Ensure Retargeting is enabled for the app on the App Settings page. For details, click [here](/docs/app-settings#reengagement-attribution).
 
@@ -155,8 +151,6 @@ In this section, you can map your AppsFlyer events with your partners via postba
 X Ads does not use attribution links for attribution.
 
 > 📘 **Note**
->
-> #### Note
 >
 > For all [self-reporting networks (SRNs)](/docs/self-reporting-networks-srns), such as Meta ads, Apple Ads, Google Ads, X Ads, etc., this tab is not functional since they don't use external attribution links.
 

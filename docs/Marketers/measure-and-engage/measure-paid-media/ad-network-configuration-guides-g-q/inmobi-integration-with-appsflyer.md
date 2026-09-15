@@ -22,9 +22,7 @@ excerpt: "Learn how to set up the InMobi integration with AppsFlyer to record cl
 
 Inmobi's configuration window includes 4 active tabs: **Integration, Attribution link, Cost**, and **Permissions**. Click on the following items to read about the tab setup.
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
@@ -38,8 +36,6 @@ On the **first visit** here, you will need to toggle ON the **Activate Partner**
 For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 
 > 📘 **Note**
->
-> #### Note
 >
 > As an ALL-Installs network, Inmobi prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to InMobi.
 
@@ -198,7 +194,5 @@ Ad Revenue data is not supported by this partner.
 Select which [permissions to grant](/docs/set-up-an-integrated-partner#permissions-tab) InMobi to access your data and perform various actions.
 
 > 📘 **Note**
->
-> #### Note
 >
 > When the integration is [deactivated](/docs/partner-activation-deactivation) while the Permissions toggle is still turned on, permissions remain granted.

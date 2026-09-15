@@ -150,8 +150,6 @@ There are a number of [specific cases for SRNs](/docs/self-reporting-networks-sr
 
 When Advanced Privacy (AP) is turned on, user-level data for non-consenting users running iOS 14.5+ is not available via postbacks. Postbacks are sent according to the [Advanced Privacy template](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks).
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > [Postback troubleshooting for ad networks](/docs/postback-troubleshooting-for-ad-networks)

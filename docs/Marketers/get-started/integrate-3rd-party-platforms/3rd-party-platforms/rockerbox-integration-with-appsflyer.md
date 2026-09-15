@@ -3,12 +3,12 @@ title: "Rockerbox integration with AppsFlyer"
 excerpt: "Learn how to automatically share data from AppsFlyer to Rockerbox, a marketing and analytics platform for mobile and web apps."
 ---
 <Cards>
-  <Card title="Setting up Rockerbox" href="#setting-up-rockerbox" />
-  <Card title="Integration tab" href="#integration-tab" />
-  <Card title="Attribution link tab" href="#attribution-link-tab" />
-  <Card title="Cost tab" href="#cost-tab" />
-  <Card title="Ad revenue tab" href="#ad-revenue-tab" />
-  <Card title="Permissions tab" href="#permissions-tab" />
+  <Card title="Setting up Rockerbox" href="#setting-up-rockerbox" icon="fa-solid fa-sliders" />
+  <Card title="Integration tab" href="#integration-tab" icon="fa-solid fa-puzzle-piece" />
+  <Card title="Attribution link tab" href="#attribution-link-tab" icon="fa-solid fa-link" />
+  <Card title="Cost tab" href="#cost-tab" icon="fa-solid fa-coins" />
+  <Card title="Ad revenue tab" href="#ad-revenue-tab" icon="fa-solid fa-sack-dollar" />
+  <Card title="Permissions tab" href="#permissions-tab" icon="fa-solid fa-user-gear" />
 </Cards>
 
 **At a glance:** Learn how to automatically share data from AppsFlyer to Rockerbox, a marketing and analytics platform for mobile and web apps.

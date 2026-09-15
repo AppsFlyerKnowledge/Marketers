@@ -59,7 +59,7 @@ In the End-user events Advanced Report, set the **Conversion type** filter to ma
 | Reports not reproducible | Cross-platform engagements, reinstalls, and organic reinstalls are not reproducible using Advanced Reports. |
 
 <Cards>
-  <Card title="About Data Locker Advanced Reports" href="/docs/about-data-locker-advanced-reports">
+  <Card title="About Data Locker Advanced Reports" href="/docs/about-data-locker-advanced-reports" icon="fa-solid fa-box-archive">
     Learn more about the features and capabilities of Advanced Reports in Data Locker.
   </Card>
 </Cards>

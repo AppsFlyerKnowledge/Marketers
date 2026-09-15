@@ -77,9 +77,7 @@ Device migration is the process of uploading a list of your existing user device
 
 Device migration solves data issues associated with existing app users who downloaded the app, and were attributed by Adjust. For example, SRN double charges, which occur when users originally attributed to an SRN under Adjust, and who are still within the lookback window, are claimed by the SRN again under AppsFlyer.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > * A new user clicks on an ad on the Facebook app and installs your app on June 15.
 > * On June 24 the user updates the app to the version with the AppsFlyer SDK, and launches. For AppsFlyer, this is a new user, that needs to be attributed in real time.
@@ -95,8 +93,6 @@ Once you migrate devices, data reflects in AppsFlyer as follows:
 * **Retention and cohort data:** Migrated devices have no install record. As such, they aren't associated with any cohort, and can't be shown in the cohort and retention reports.
 
 > 📘 **Note**
->
-> #### Note
 >
 > If the app is not opened within 180 days from the migration date, all of the migrated device data is deleted. Consequently, if the app is opened after the 180-day period, a new install will be recorded.
 
@@ -128,8 +124,6 @@ SRNs reply to Mobile Measurement Partners (MMPs) when queried about engagements 
 * Activate and configure relevant [SRNs](/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer) in AppsFlyer.
 
 > 📘 **Note**
->
-> #### Note
 >
 > * SRNs can run multiple MMPs (except Meta ads and Twitter).
 > * Meta ads cannot de-duplicate in-app events.

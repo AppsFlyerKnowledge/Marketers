@@ -110,9 +110,7 @@ So how can you deep link your users and get the relevant data from SRNs?
 
 When a user device performs deep linking, direct deep linking with SRNs is done without calling the AppsFlyer deep linking method. In the example below, existing users clicking an ad are redirected to the activity directly using Facebook's methods, while new users get the same experience using AppsFlyer's conversion data. Learn how [Meta ads uses OneLink for deep linking](/docs/meta-ads-faq#who-needs-facebooks-sdk)
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > Jill, the mobile marketer of "greatapp", decides to run a deep linking campaign on Meta ads, targeted at general audiences. The campaign redirects any clicking users to a "bonus" activity.
 > Jack, the mobile developer, adds this logic after getting the conversion data:
@@ -140,8 +138,6 @@ Starting iOS 14.5, when users give ATT consent in both the advertiser and publis
 
 > 📘 **Note**
 >
-> #### Note
->
 > * The traditional dashboard shows a reduction in installs attributed to SRNs. When considering SRN performance, use the [SKAdNetwork dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer). Overall expect a decrease in SRN attributions of installs, with a matching increase in organic installs. However, for advanced SRNs, the impact is lower, as they also support measurement via the [Aggregated Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework) framework and other privacy-preserving methods.
 > * The [SKAdNetwork dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer) updates with a lag of 48-72 hours after installs.
 > * Installs brought by Apple Ads (ASA) aren't attributed in the SKAdNetwork dashboard.
@@ -155,8 +151,6 @@ SRNs receiving event postbacks rely on the device ID being included in the postb
 * Discrepancies in the number of event postbacks between SRNs and AppsFlyer, which log all events.
 
 > 📘 **Note**
->
-> #### Note
 >
 > * If an advertising ID is not available, postbacks for installs, app opens, or in-app events are not sent to SRNs. [However, in some cases, limited postbacks may still be sent to SRNs even when an advertiser ID is unavailable](/docs/self-reporting-networks-srns#does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid)[.](/docs/self-reporting-networks-srns#does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid)
 > * Click ad networks are not affected, as they use their own transaction IDs rather than device IDs to self-attribute event postback information.

@@ -6,8 +6,6 @@ excerpt: "Learn how to set up Google Ads Web campaigns to promote your PC and co
 
 > 📘 **Note**
 >
-> #### Note
->
 > This article focuses on web campaigns that promote PC or Console apps. If you want to create web campaigns that promote mobile apps, see [Google Ads (AdWords) - Create web-based campaigns](/docs/google-ads-adwords-create-web-based-campaigns).
 
 
@@ -56,8 +54,6 @@ To configure the integration, you must first turn on the **Activate partner** to
 #### General settings
 
 > 📘 **Note**
->
-> #### Note
 >
 > The **Missing token** error message will stop appearing once you’ll sign in with Google and allow AppsFlyer to fetch the token in the step below. If the error persists after you sign in, [verify that your token has the required permissions](/docs/google-ads-adwords-create-web-based-campaigns#access-token-permissions).
 
@@ -133,9 +129,7 @@ Generating an attribution link in the AppsFlyer UI isn't currently available. Ho
 | Direct attribution link | If you don't use a cross-platform landing page, because you only have 1 app on 1 platform, you can create direct attribution links to place behind ads.<br /><br />[Learn how to create direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links)<br /><br />* Make sure the following parameters are included in your link:<br />  * af\_media\_source<br />  * af\_campaign\_id<br />  * af\_r  <br />    **Note**: The [Google click identifier (GCLID)](https://support.google.com/google-ads/answer/9744275?hl=en) parameter is automatically added by Google Ads to any outgoing click if you are using [auto-tagging](https://support.google.com/google-ads/answer/3095550?hl=en). If auto-tagging is deactivated in your Google Ads account, add `gclid={gclid}` to the Google Ads tracking template URL.<br />* For af\_camapign\_id, af\_adset\_id and af\_ad\_id parameters, you can use Google’s [value track parameters](https://support.google.com/google-ads/answer/6305348) (dynamic URL parameter) macros. All other parameters should be set manually.<br />* Don't include the af\_dp parameter.<br /><br />**Template to use for most platforms (Epic, Steam, Xbox, PlayStation, etc.)**:<br /><br />`https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}? af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=ACTUAL_CAMPAIGN_NAME&af_adset=ACTUAL_ADGROUP_NAME&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**Sample link leading to Steam**: `https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=campaign1&af_adset=adgroup1&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**Template to use for Google PC and Mac apps ONLY**:<br /><br />`https://app.appsflyer.com/{app_id}?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=ACTUAL_CAMPAIGN_NAME&af_adset=ACTUAL_ADGROUP_NAME&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**Sample link leading to Google PC**: `https://app.appsflyer.com/123456?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=campaign1&af_adset=adgroup1&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}` | Marketer |
 
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
 

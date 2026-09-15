@@ -13,13 +13,13 @@ A media source is an entity that displays ads. The AppsFlyer platform enables at
 | Owned media | - Owned media use [OneLink links](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink) for campaigns.<br />- Examples: Email, SMS, social networks, landing pages, QR codes, and so on. |
 
 <Cards>
-  <Card title="Cross-promotion attribution" href="/docs/cross-promotion-attribution-for-marketers">
+  <Card title="Cross-promotion attribution" href="/docs/cross-promotion-attribution-for-marketers" icon="fa-solid fa-diagram-project">
     Learn about attributing users who are cross-promoted from one of your apps to another.
   </Card>
-  <Card title="User invite attribution" href="/docs/user-invite-attribution">
+  <Card title="User invite attribution" href="/docs/user-invite-attribution" icon="fa-solid fa-diagram-project">
     Understand how to attribute new installs generated from existing user invitations.
   </Card>
-  <Card title="Smart Banners" href="/docs/smart-banners-mobile-web-to-app-for-marketers">
+  <Card title="Smart Banners" href="/docs/smart-banners-mobile-web-to-app-for-marketers" icon="fa-solid fa-globe">
     Discover how to convert web visitors into mobile app users using Smart Banners.
   </Card>
 </Cards>

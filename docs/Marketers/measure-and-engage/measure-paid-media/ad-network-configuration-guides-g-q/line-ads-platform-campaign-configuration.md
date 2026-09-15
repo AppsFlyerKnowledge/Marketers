@@ -26,8 +26,6 @@ The Integration Tab is divided into different sections as described below.
 
 > 📘 **Note**
 >
-> #### Note
->
 > As an ALL-Installs network, LINE prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to LINE. This can only be performed by the account owner.
 
 
@@ -52,8 +50,6 @@ You can connect multiple Line Ads accounts and apps to AppsFlyer by manually add
 
 > 📘 **Note**
 >
-> #### Note
->
 > Parameters existing in both the attribution link and under the **General settings** lead to conflicts. To avoid this, see the **Parameter priority logic** described below before adding parameters to the attribution link.
 
 
@@ -68,9 +64,7 @@ You can connect multiple Line Ads accounts and apps to AppsFlyer by manually add
 1. Set up one or more [attribution links](/docs/about-link-structure-and-parameters).
 2. Add to each attribution link an account ID and app ID parameter, using lower-case letters. See the highlighted part in the example below.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > An example attribution link with an account ID and app ID parameters:
 >

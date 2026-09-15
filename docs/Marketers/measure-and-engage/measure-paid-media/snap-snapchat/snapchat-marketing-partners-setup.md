@@ -44,7 +44,7 @@ Select **Events attributed to any partner or organic** to have your entire user 
 ### See also
 
 <Cards>
-  <Card title="Snapchat and AppsFlyer SKAdNetwork interoperation" href="/docs/skan-interoperation-with-snapchat">
+  <Card title="Snapchat and AppsFlyer SKAdNetwork interoperation" href="/docs/skan-interoperation-with-snapchat" icon="fa-solid fa-lock">
     Learn about the interoperation between Snapchat and AppsFlyer for SKAdNetwork.
   </Card>
 </Cards>

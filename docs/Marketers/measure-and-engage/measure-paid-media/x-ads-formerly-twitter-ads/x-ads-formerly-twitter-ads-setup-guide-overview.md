@@ -3,9 +3,9 @@ title: "X Ads (formerly Twitter Ads) setup guide—overview"
 excerpt: "Learn the background of integrating your X Ads account with AppsFlyer, including mobile app promotion, user privacy policies, and SKAdNetwork interoperation."
 ---
 <Cards>
-  <Card title="Mobile app promotion on X Ads" href="#mobile-app-promotion-on-x-ads" />
-  <Card title="X Ads user privacy" href="#x-ads-user-privacy" />
-  <Card title="X Ads and AppsFlyer SKAN interoperation" href="#x-ads-and-appsflyer-skan-interoperation" />
+  <Card title="Mobile app promotion on X Ads" href="#mobile-app-promotion-on-x-ads" icon="fa-solid fa-bullhorn" />
+  <Card title="X Ads user privacy" href="#x-ads-user-privacy" icon="fa-solid fa-user-shield" />
+  <Card title="X Ads and AppsFlyer SKAN interoperation" href="#x-ads-and-appsflyer-skan-interoperation" icon="fa-solid fa-lock" />
 </Cards>
 
 **At a glance:** Learn the background of integrating your X Ads account with AppsFlyer.

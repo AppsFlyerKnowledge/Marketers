@@ -45,8 +45,6 @@ these networks, intent-to-treat methodology is used instead.
 
 > 📘 **Note**
 >
-> #### Note
->
 > Prior to December 16, 2021, lift was calculated using solely
 > the intent-to-treat method. However, data for earlier dates has
 > been updated to utilize reach-based lift where applicable. Therefore,
@@ -150,9 +148,7 @@ lift is calculated based on a **scaled control group**.
 In other words, the size of the control group is adjusted to match
 the control group size for each media source.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > Assume the following scenario:
 >
@@ -283,9 +279,7 @@ Field availability varies according to report type as indicated below:
 | Time zone | UTC |
 
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [Audiences guide](/docs/audiences-guide)
 > * [Incrementality testing for marketers blog](https://www.appsflyer.com/blog/tips-strategy/incrementality-testing-for-marketers/)

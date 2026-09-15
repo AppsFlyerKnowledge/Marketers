@@ -306,7 +306,7 @@ The following table lists all possible Cost Import error messages and correspond
 #### See also
 
 <Cards>
-  <Card title="Attribution link structure and parameters" href="/docs/about-link-structure-and-parameters">
+  <Card title="Attribution link structure and parameters" href="/docs/about-link-structure-and-parameters" icon="fa-solid fa-link">
     Learn about the parameters and structure used in AppsFlyer attribution links.
   </Card>
 </Cards>

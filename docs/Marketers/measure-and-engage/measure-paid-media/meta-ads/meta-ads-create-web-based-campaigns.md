@@ -10,8 +10,6 @@ AppsFlyer supports integration with Meta Ads (`metaweb_int`) for User Acquisitio
 
 > 📘 **Note**
 >
-> #### Note
->
 > At present, the integration with Meta Web does not support sending re-engagement postbacks to CAPI.
 
 
@@ -101,8 +99,6 @@ To set in-app events postbacks perform the following:
     3. Repeat the integration steps for the selected app.
 
 > 📘 **Note**
->
-> #### Note
 >
 > If you are sending S2S events to `metaweb_int`, the S2S payload must include the `ua` (User Agent) and `ip` (IP address) parameters. These values are required for Meta CAPI campaign optimization. AppsFlyer includes them automatically for SDK events. For S2S events, advertisers must send them explicitly. See [Server-to-server events API for mobile](/docs/server-to-server-events-api-for-mobile-s2s-mobile).
 
@@ -230,8 +226,6 @@ Perform the next steps in Meta Ads Manager.
 
 > 📘 **Note**
 >
-> #### Note
->
 > For a comprehensive guide on the AF link parameters, see [Attribution link parameters](/docs/about-link-structure-and-parameters#attribution-link-parameters).
 
 
@@ -241,9 +235,7 @@ Use the Tracking section to select the conversion events promoted by your ad (se
 
 [![](https://support.appsflyer.com/hc/article_attachments/25646834958481)](https://support.appsflyer.com/hc/article_attachments/25646834958481)
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Make sure not to choose **App Events,** otherwise Meta will claim those conversions using the SRN API, which can cause reporting and optimization misalignments.
 

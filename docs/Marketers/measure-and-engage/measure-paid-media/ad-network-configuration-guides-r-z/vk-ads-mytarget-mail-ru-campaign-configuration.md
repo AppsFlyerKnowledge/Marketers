@@ -94,9 +94,7 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 * [In the actions column, hover over an account, click ***Delete connection***](/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab)
 
-> 📘 **Note**
->
-> #### Notes
+> 📘 **Notes**
 >
 > 1. To support cost with VK Ads the advertiser must add the Campaign ID to the link **af\_c\_id=**.
 > 2. Once you set VK Ads cost, do not change the name of any active campaign, asset, or single ad, nor use dynamic macros with the campaign name parameter, as they can cause serious discrepancies or missing cost data.

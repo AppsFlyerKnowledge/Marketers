@@ -315,10 +315,10 @@ When you delete the SSO configuration, AppsFlyer deletes the SSO metadata and se
 | Recommended exception user | We recommend adding at least one trusted admin as an exception user before activating SSO. This helps prevent account lockout if the SSO configuration is incorrect. |
 
 <Cards>
-  <Card title="About SSO authentication" href="/docs/sso-authentication-overview-and-faq">
+  <Card title="About SSO authentication" href="/docs/sso-authentication-overview-and-faq" icon="fa-solid fa-circle-question">
     Learn about SSO authentication and find answers to FAQs.
   </Card>
-  <Card title="Managing exception users" href="/docs/manage-exception-users-for-sso/">
+  <Card title="Managing exception users" href="/docs/manage-exception-users-for-sso/" icon="fa-solid fa-user-gear">
     Learn about managing exception users for SSO.
   </Card>
 </Cards>

@@ -10,9 +10,7 @@ Use the Overview dashboard to view campaign performance and app health. The das
 
 ![](https://fast.wistia.com/embed/medias/29sf4osshg/swatch)
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > * If you don't run retargeting campaigns, use the [UA view](#view-types).
 > * If you're familiar with the V1.0 dashboard, you can skip to the [quick-start guide](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv#quickstart-guide) below.

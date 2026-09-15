@@ -27,9 +27,7 @@ an account, contact the partner to open one before setting up the integration.
    more about
    [partner integrations.](/docs/set-up-an-integrated-partner)
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
@@ -52,9 +50,7 @@ Select **Only events attributed to this partner** for events coming only from us
 
 In this section, you can map your AppsFlyer events with Ibotta via postbacks.
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > For a simple and quick integration, select **Send all events excluding their revenue value** or **Send all events including their revenue value**
 

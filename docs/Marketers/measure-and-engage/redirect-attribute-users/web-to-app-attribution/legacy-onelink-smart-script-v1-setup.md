@@ -93,8 +93,6 @@ Since in this case, you are redirecting leads from Google Ads to a web/landing p
 
 > 📘 **Note**
 >
-> #### Note
->
 > This GCLID solution is not officially supported or recommended by Google. In case Google deprecates the GCLID parameter we will change the script to support the changes. Follow this article, by clicking the **Follow** button in the article header, to get informed when there is an update to the article or attached script.
 
 
@@ -112,9 +110,7 @@ For these SRNs, script setup is the same as for links from owned media, or other
 
 **Result**: For these SRNs/media sources, the values in the media source and campaign parameters in the incoming link are used to populate the values for the **pid** and **c** parameters in the outgoing link.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > **Incoming URL**: https://hotel.me/af\_pid=twitter&af\_c=big\_social
 >
@@ -127,9 +123,7 @@ AppsFlyer attribution links can be used when the media source is a click ad netw
 
 **Result**: If the **af\_r** and **af\_redirect=true** parameters are on the incoming link, the landing page script makes no changes. It leaves the web/landing page direct links to the app stores as they are. 
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > **Incoming URL**: https://app.appsflyer.com/id123456789?pid=click\_ad\_network\_int&c=orlando&af\_redirect=true&af\_r=hotel.me
 >

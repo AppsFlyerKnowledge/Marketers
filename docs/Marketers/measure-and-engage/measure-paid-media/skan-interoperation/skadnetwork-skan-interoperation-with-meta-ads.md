@@ -155,8 +155,6 @@ ads\_read permission provides Meta ads customers API access to ad performance da
 | An updated CV doesn't appear on Meta ads | When adding, changing, or removing a conversion value (CV) in the SKAN Conversion Studio, make sure that the event is mapped in the **In-app event postbacks**. Otherwise, the CV won't be updated on Meta ads. |
 | Modeled data differences in AppsFlyer and Meta ads Manager | AppsFlyer models aggregate data that basic SKAN reporting is unable to provide. [Learn more](/docs/skan-modeled-data)<br /><br />When AppsFlyer models data, data that is modeled by Meta ads isn’t taken into consideration, as AppsFlyer relies solely on confirmed, impartial data. Therefore, there may be data and granularity discrepancies between Meta ads Manager reports and AppsFlyer reports. |
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [AppsFlyer SKANetwork Solution guide](/docs/skadnetwork-skan-solution-guide)

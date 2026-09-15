@@ -25,8 +25,6 @@ AppsFlyer Partner Marketplace is where advertisers can find new ad networks, age
 
 > 📘 **Note**
 >
-> #### Note
->
 > You can see a preview of your currently saved draft:
 >
 > * From the bottom-right, click **Preview draft**.

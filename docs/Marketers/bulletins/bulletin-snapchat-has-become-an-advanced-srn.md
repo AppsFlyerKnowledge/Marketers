@@ -11,5 +11,5 @@ excerpt: "Snapchat has transitioned to an Advanced Self-Reporting Network (SRN),
 | **What's changing?** | As of September 12, 2023, Snapchat has become an advanced SRN. This means:<br />- Clicks and impressions are sent to AppsFlyer and attribution without IDFA will be done probabilistically<br />- Snapchat view-through conversions are [partially restricted](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) in raw data reports |
 
 <Cards>
-  <Card title="Snapchat—Advanced SRN integration setup" href="/docs/snapchat-advanced-srn-integration-setup" />
+  <Card title="Snapchat—Advanced SRN integration setup" href="/docs/snapchat-advanced-srn-integration-setup" icon="fa-solid fa-puzzle-piece" />
 </Cards>

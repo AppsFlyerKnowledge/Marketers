@@ -63,10 +63,10 @@ The deep link sends new users to the app store. After the install, the app opens
 In certain privacy-restricted scenarios, measurement coverage may be more limited. AppsFlyer continues to provide meaningful campaign measurement while preserving user privacy.
 
 <Cards>
-  <Card title="Preserving user privacy" href="/docs/preserve-user-privacy">
+  <Card title="Preserving user privacy" href="/docs/preserve-user-privacy" icon="fa-solid fa-user-shield">
     Learn more about AppsFlyer's approach to preserving user privacy.
   </Card>
-  <Card title="User privacy on the SDK level" href="/docs/additional-sdk-integration-guide#user-privacy">
+  <Card title="User privacy on the SDK level" href="/docs/additional-sdk-integration-guide#user-privacy" icon="fa-solid fa-user-shield">
     Configure user privacy settings directly within the SDK integration.
   </Card>
 </Cards>

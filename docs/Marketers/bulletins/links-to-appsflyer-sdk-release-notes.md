@@ -5,10 +5,10 @@ excerpt: "Access the official release notes for the AppsFlyer iOS and Android SD
 **At a glance:** Release notes for iOS and Android SDKs.
 
 <Cards>
-  <Card title="iOS Release Notes" href="/docs/appsflyer-ios-sdk-release-notes">
+  <Card title="iOS Release Notes" href="/docs/appsflyer-ios-sdk-release-notes" icon="fa-solid fa-bullhorn">
     View the latest updates, features, and fixes for the AppsFlyer iOS SDK.
   </Card>
-  <Card title="Android Release Notes" href="/docs/appsflyer-android-sdk-release-notes">
+  <Card title="Android Release Notes" href="/docs/appsflyer-android-sdk-release-notes" icon="fa-solid fa-bullhorn">
     View the latest updates, features, and fixes for the AppsFlyer Android SDK.
   </Card>
 </Cards>

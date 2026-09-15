@@ -23,10 +23,10 @@ The following table lists the tasks required to integrate your Google Play Games
 | Report setup/view data | AppsFlyer dashboards and reports for Google Play Games apps are similar to those available for mobile apps.<br />[Learn more about AppsFlyer dashboards and reports](/docs/analyze-your-data) | Marketer/Data engineer |
 
 <Cards>
-  <Card title="CTV, PC, and console platform concepts" href="/docs/ctv-pc-and-console-platform-attribution-concepts">
+  <Card title="CTV, PC, and console platform concepts" href="/docs/ctv-pc-and-console-platform-attribution-concepts" icon="fa-solid fa-diagram-project">
     Learn about Connected TV, PC, and console platform attribution concepts.
   </Card>
-  <Card title="Google Ads Web integration for PC and console apps" href="/docs/google-ads-web-integration-for-pc-and-console-apps">
+  <Card title="Google Ads Web integration for PC and console apps" href="/docs/google-ads-web-integration-for-pc-and-console-apps" icon="fa-solid fa-bullhorn">
     Learn how to integrate Google Ads Web for PC and console applications.
   </Card>
 </Cards>

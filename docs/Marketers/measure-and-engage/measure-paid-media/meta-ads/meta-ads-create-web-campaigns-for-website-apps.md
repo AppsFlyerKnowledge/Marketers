@@ -7,7 +7,7 @@ AppsFlyer supports integration with Meta Ads (`metaweb_int`) for website app cam
 Here's how it works: when a user clicks a Meta ad and lands on your website, AppsFlyer captures any conversion events the user completes, such as a purchase or sign-up, and sends that signal to Meta via CAPI. Meta uses this data to refine targeting and evaluate campaign results.
 
 <Cards>
-  <Card title="Web Performance Measurement - Overview" href="/docs/web-performance-measurement-overview">
+  <Card title="Web Performance Measurement - Overview" href="/docs/web-performance-measurement-overview" icon="fa-solid fa-chart-line">
     Learn more about AppsFlyer's web attribution capabilities.
   </Card>
 </Cards>

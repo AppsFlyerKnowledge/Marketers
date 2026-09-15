@@ -39,10 +39,10 @@ The Data Locker—AEP integration enables you to use AppsFlyer data within the A
    7. Repeat for each desired Data Locker report.
 
 <Cards>
-  <Card title="Adobe Launch SDK Extension" href="/docs/adobe-launch-sdk-extension?query=adobe">
+  <Card title="Adobe Launch SDK Extension" href="/docs/adobe-launch-sdk-extension?query=adobe" icon="fa-solid fa-code">
     Learn how to integrate the Adobe Launch SDK Extension with AppsFlyer.
   </Card>
-  <Card title="Adobe Air plugin" href="/docs/adobe-air-plugin">
+  <Card title="Adobe Air plugin" href="/docs/adobe-air-plugin" icon="fa-solid fa-code">
     Learn how to integrate the Adobe AIR plugin with AppsFlyer.
   </Card>
 </Cards>

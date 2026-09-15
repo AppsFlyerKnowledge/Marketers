@@ -121,9 +121,7 @@ After enabling permissions for Roku Ads, you can add team members and assign the
 2. Enter the ad network team member's email.
 3. Click **Add**.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > * When you give Roku Ads permissions to configure the integration and change in-app event postbacks, you allow them to potentially access all attribution events, including organic and non-organic traffic from all media sources.
 > * Changes that Roku Ads makes override the current configuration, even if you (the advertiser) set them.
@@ -164,8 +162,6 @@ Agencies working on behalf of advertisers can turn on the Roku Ads integration a
 3. Enter your agency **Roku Ads Account ID**. This identifies agency traffic and distinguishes it from the advertiser's.
 4. Click **Save Integration**.
 
-> 📘 **Note**
->
-> #### Warning
+> 📘 **Warning**
 >
 > Roku Ads account IDs MUST NOT be shared between the advertiser and the agency. If shared, ALL the advertiser's installs are automatically attributed to the agency's dashboard.

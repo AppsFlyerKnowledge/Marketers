@@ -346,8 +346,6 @@ All the metrics found in the [My Dashboards](/docs/my-dashboards#metrics) can be
 
 > 📘 **Note**
 >
-> #### Note
->
 > Note: When adding a metric to the dashboard, ensure that you select a cross-platform attribution method to reflect user-based attribution rather than device-based attribution.
 >
 > Data is available from November 1, 2025, or the date you create your Product Line and opt in to cross-platform attribution.
@@ -428,9 +426,7 @@ Changes to preferences take effect immediately.
 
 The metrics available for widgets (tables, KPIs, and charts) are described in the following table.
 
-> 📘 **Note**
->
-> #### Custom metrics
+> 📘 **Custom metrics**
 >
 > Define your own metrics using custom metrics. Custom metrics let you tailor data analysis to your unique business needs by defining calculations based on existing data. They provide more control and flexibility than standard metrics, enabling you to combine multiple metrics, create projections, and customize KPIs.
 >

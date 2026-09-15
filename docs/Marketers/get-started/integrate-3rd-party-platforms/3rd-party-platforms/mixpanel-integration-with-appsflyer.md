@@ -8,9 +8,7 @@ excerpt: "Learn how to automatically share acquisition campaign and install data
 
 The integration between AppsFlyer and Mixpanel enables you to import the Acquisition Campaign information from AppsFlyer to Mixpanel.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
@@ -78,8 +76,6 @@ AppsFlyer can send automatic postbacks to Mixpanel following user installs, incl
 In this section, you map AppsFlyer events with Mixpanel via postbacks.
 
 > 📘 **Note**
->
-> #### Note
 >
 > Mixpanel captures in-app events using their own SDK. The only event that can be sent to Mixpanel that is not captured by them is af\_uninstall.
 
@@ -170,8 +166,6 @@ The following shows an example of the integration steps:
 7. Mixpanel receives the customer\_user\_id from AppsFlyer with the alias of the User ID (for example, email address).
 
 > 📘 **Note**
->
-> #### Note
 >
 > If you are not using any registration process inside your application, implement steps 1-3 as described above.
 

@@ -22,8 +22,6 @@ excerpt: "Configure ironSource integration in AppsFlyer to record click-based mo
 
 > 📘 **Note**
 >
-> #### Note
->
 > As an all-installs network, ironSource prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to ironSource.
 
 
@@ -48,8 +46,6 @@ For iOS apps only, when**Advanced Privacy (for iOS 14.5+ and later)** is turned
 For iOS apps only, when **Share SKAN transaction ID** is turned on, you're allowing AppsFlyer to [share the transaction ID of SKAdNetwork postbacks](/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners) with ironSource. By doing so, ironSource could decode your SKAdNetwork Conversion Values.
 
 > 📘 **Note**
->
-> #### Note
 >
 > For SKAN interoperation with AppsFlyer, contact your ironSource account manager to [enable sending SKAN data to MMPs](https://developers.is.com/ironsource-mobile/general/universal-skan-reporting/#step-1).
 
@@ -83,8 +79,6 @@ Select **Events attributed to any partner, or organic** to have your entire user
 
 > 📘 **Note**
 >
-> #### Note
->
 > As an all-installs network, ironSource prefers to receive postbacks for all new installs of your app from any source, including organic. To do so, select **Events attributed to any partner, or organic** to send all install postbacks to ironSource.
 
 
@@ -113,8 +107,6 @@ Configure mapping of in-app events with ironSource events, sent via postbacks:
    3. Repeat the [integration steps](/docs/amazon-ads-campaign-configuration#integration-tab) for the selected app.
 
 > 📘 **Note**
->
-> #### Note
 >
 > * For iOS apps only: Your control over data shared with the partner via postbacks and [reports](/docs/about-raw-data-identifier-restrictions) depends on the **Advanced Privacy (for iOS 14.5+ and later)** [toggle state](/docs/tiktok-for-business-advanced-srn-integration-setup#advanced-privacy).
 > * You can send [ad revenue postbacks](/docs/roi360-guide-ad-revenue-attribution#ad-revenue-event-postbacks-for-ad-networks) to ironSource so they can optimize campaigns using ad revenue data:

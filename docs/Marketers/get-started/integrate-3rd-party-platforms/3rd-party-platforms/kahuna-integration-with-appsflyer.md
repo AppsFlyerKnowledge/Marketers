@@ -4,9 +4,7 @@ excerpt: "Learn how to configure the AppsFlyer integration with Kahuna to share 
 ---
 **At a glance:** Kahuna, an AppsFlyer integrated partner, dedicated to empowering businesses to grow and thrive in the mobile era. We enable a new level of authentic engagement between brands and their customers wherever they are — the web, email, mobile, social channels — through personalized communication at scale. Powered by big data and machine learning, we help create delightful experiences for every customer with the perfect message, delivered on the right channel, at just the right time.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
@@ -20,9 +18,7 @@ Follow the instructions below to configure the integration with Kahuna:
 
 2. Integrating with Kahuna requires that the Kahuna [Device ID](https://www.appsflyer.com/mobile-fraud-glossary/deviceid/) (Kahuna’s unique user identifier) is populated in AppsFlyer's SDK. This parameter is sent with every postback and enables the identification of each user. To perform this you must insert the following strings to your app code:
 
-> 📘 **Note**
->
-> #### Important Note
+> 📘 **Important Note**
 >
 > Make sure the lines of code are inserted at the correct place – after Kahuna SDK was launched and before the appsflyer.sendtracking (Android) / trackAppLaunch (iOS) methods are called.
 

@@ -120,16 +120,16 @@ The SDK records your app events, such as installs, re-engagements, and in-app ev
 ### See also
 
 <Cards>
-  <Card title="SDK integration overview" href="/docs/sdk-integration-overview">
+  <Card title="SDK integration overview" href="/docs/sdk-integration-overview" icon="fa-solid fa-code">
     Learn how to integrate the AppsFlyer SDK into your application.
   </Card>
-  <Card title="SDK: Privacy preserving methods" href="/docs/apply-privacy-preserving-sdk-methods">
+  <Card title="SDK: Privacy preserving methods" href="/docs/apply-privacy-preserving-sdk-methods" icon="fa-solid fa-user-shield">
     Explore methods to preserve user privacy within the SDK.
   </Card>
-  <Card title="SDK: User privacy settings" href="/docs/additional-sdk-integration-guide#user-privacy">
+  <Card title="SDK: User privacy settings" href="/docs/additional-sdk-integration-guide#user-privacy" icon="fa-solid fa-user-shield">
     Configure user privacy settings and compliance controls.
   </Card>
-  <Card title="AppsFlyer's privacy measures" href="https://www.appsflyer.com/trust/privacy/">
+  <Card title="AppsFlyer's privacy measures" href="https://www.appsflyer.com/trust/privacy/" icon="fa-solid fa-user-shield">
     Read about AppsFlyer's commitment to security and privacy.
   </Card>
 </Cards>

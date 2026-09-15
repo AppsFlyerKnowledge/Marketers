@@ -54,8 +54,6 @@ The rule builder user interface is designed for interactive rule building. **Ti
 
 > 📘 **Note**
 >
-> #### Note
->
 > The following errors can prevent your rule from being created:
 >
 > * A mandatory field is not populated. To resolve, ensure that all the mandatory fields are populated.
@@ -78,8 +76,6 @@ When you edit or delete a rule, previously calculated data (up to 90 days in the
 3. Select the action you want to perform.
 
 > 📘 **Note**
->
-> #### Note
 >
 > The agency and start date of a rule cannot be edited after the rule is created. If you need to change them, delete your old configuration, and create a new rule.
 

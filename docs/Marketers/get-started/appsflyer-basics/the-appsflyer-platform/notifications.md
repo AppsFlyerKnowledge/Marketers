@@ -81,8 +81,6 @@ Some notifications are available only via email. These notification settings can
 
 > 📘 **Note**
 >
-> #### Note
->
 > All AppsFlyer notification emails are sent from [notifications@appsflyer.com](mailto:notifications@appsflyer.com)
 
 

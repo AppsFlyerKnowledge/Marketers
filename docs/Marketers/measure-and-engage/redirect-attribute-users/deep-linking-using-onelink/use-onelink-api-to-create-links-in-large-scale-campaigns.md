@@ -17,9 +17,7 @@ OneLink API is a premium feature that lets you turn any owned channel into a dir
 * Enforce strict parameter validation to ensure predictable redirection behavior and reliable measurement.
 * [Retrieve quota usage](https://dev.appsflyer.com/hc/reference/get-onelink-v2-link-quota) for consumption management.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > A global travel app generates millions of contextual short links daily across CRM, email, and QR experiences. Using OneLink API v2.0, their automation platform builds per-user deep links that respect locale, loyalty tier, and specific in-app destinations — while maintaining governance and consistent measurement across all markets.
 
@@ -87,7 +85,5 @@ This section lists some of the key OneLink API traits and limitations. See a [co
 
 
 > 📘 **Note**
->
-> #### Note
 >
 > A new version of OneLink API (v2.0) was released in December 2025. The previous version (v1.0) is deprecated and will continue to work until June 2026, after which it won’t be maintained. New integrations should use OneLink API v2.0. For migration guidance, see the Dev Hub [migration guide](https://dev.appsflyer.com/hc/reference/migrate_to_onelink_api_v2).

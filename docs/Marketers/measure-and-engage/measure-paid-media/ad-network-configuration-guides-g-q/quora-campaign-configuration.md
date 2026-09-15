@@ -24,9 +24,7 @@ Quora's configuration window includes 3 active tabs: **Integration, Attribution 
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
@@ -44,8 +42,6 @@ Default Postbacks
 Send automatic postbacks to Quora following user installs.
 
 > 📘 **Note**
->
-> #### Note
 >
 > The option **Only events attributed to this partner** is the only option with Quora and is selected by default.
 

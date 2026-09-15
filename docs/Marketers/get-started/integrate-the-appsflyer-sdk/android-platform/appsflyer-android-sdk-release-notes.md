@@ -98,7 +98,7 @@ The following SDK versions have reached **End-of-Support** status. These version
 | 6.0.0<br />End of support: 2024-08-31 | 2020-10-14 | - Major changes to SDK functionality and API including deprecation and method name changes. [Learn more](/docs/appsflyer-android-sdk-release-notes#android-v600-release-notes) |
 
 <Cards>
-  <Card title="AppsFlyer SDK version control policy" href="/docs/appsflyer-sdk-version-control-policy">
+  <Card title="AppsFlyer SDK version control policy" href="/docs/appsflyer-sdk-version-control-policy" icon="fa-solid fa-code">
     Learn more about AppsFlyer's SDK version control and support lifecycle policies.
   </Card>
 </Cards>

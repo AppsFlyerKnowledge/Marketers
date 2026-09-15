@@ -27,9 +27,7 @@ The **account admin** should complete the following steps:
 
 **Result:** Welcome! You now have an active AppsFlyer account and account users who can access it.
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > New to AppsFlyer and wondering what it can do for you? [Watch this 6-minute video](/docs/welcome-to-appsflyer#what-can-you-do-with-appsflyer).
 
@@ -140,15 +138,11 @@ Recommended for all AppsFlyer users:
 
 ## Related
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > New to UA (user acquisition)? Learn [all about](https://www.appsflyer.com/resources/ecommerce/getting-started-user-acquisition-apps-complete-guide/) the biggest challenges and critical elements of planning, executing, and continuously optimizing your user acquisition efforts.
 
 > 📘 **Note**
->
-> #### Note
 >
 > New to AppsFlyer but not a marketer? No worries!
 > Choose the guide for you below and get started:

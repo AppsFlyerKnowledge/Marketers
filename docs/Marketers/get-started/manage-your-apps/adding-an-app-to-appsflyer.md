@@ -18,8 +18,6 @@ You can enter the wizard for adding apps from the platform or you can add your a
 
 > 📘 **Note**
 >
-> #### Note
->
 > If the onboarding page isn't already open, from the top menu bar > email address dropdown, click **App onboarding**.
 
 
@@ -44,8 +42,6 @@ After you've [entered the Add an app wizard](#entering-the-wizard-for-adding-an-
 5. Click **Done** or **+ Add another app** to add more apps. Repeat the process for adding more apps.
 
 > 📘 **Note**
->
-> #### Note
 >
 > * Only admins and [account users with the necessary permissions](/docs/user-management) are able to add apps.
 > * As you follow the steps for adding an app (below), the available options will vary depending on the previous options you've selected.
@@ -119,8 +115,6 @@ Use this option for the following platforms:
 
 > 📘 **Note**
 >
-> #### Note
->
 > A web app is where you define a website to include in a brand bundle for our People-Based Attribution (PBA) feature.
 >
 > * This option is available only to customers who have subscribed to PBA.
@@ -144,9 +138,7 @@ Include –
 * Maximum length: 100 characters
 * XSS tags not permitted
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Once you create a web app, you are not able to edit its properties (URL and app name) without deleting it and re-creating it, **which means you also must** [**delete the brand bundle**](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle) **of which it is a part.**
 
@@ -249,8 +241,6 @@ Each PBA dev key can only be assigned to **ONE** web app. Once a PBA dev key is 
 Each legacy **Web Dev Key can be reused for only one** new Web app.
 
 > 📘 **Note**
->
-> #### Note
 >
 > For full information on Web attribution settings [see here](/docs/configure-web-performance-measurement-settings).
 
@@ -393,9 +383,7 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 Select the currency in which this app's data will be displayed in the dashboard. Revenue and spend events are converted to this currency using the exchange rate in effect at the event time. [Learn more](/docs/app-settings#localization-currency) about an app's currency setting and its impact.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Use care in selecting the currency you want to use for the app. You won't be able to change it once cost and revenue have been recorded.
 
@@ -405,8 +393,6 @@ Select the currency in which this app's data will be displayed in the dashboard.
 Align the timezone you select here with the timezone you set with other attribution partners (such as Meta ads and Google Ads). This ensures the closest match between the data reported in the AppsFlyer dashboard and the data you receive from these partners.
 
 > 📘 **Note**
->
-> #### Note
 >
 > * Once the timezone is set, it remains locked and can't be changed until the following day.
 > * [Learn more](/docs/changing-app-time-zone-settings) about app timezone setting and its impact.
@@ -422,8 +408,6 @@ If you've selected **Yes:**
 
 > 📘 **Note**
 >
-> #### Note
->
 > * Two weeks after adding the app, you'll get a notification asking you to confirm you've implemented privacy controls for your child-directed apps. After confirming, you'll get a confirmation message. You can always access the confirmation message from the Notification center or see the confirmation details in the [Audit log](/docs/audit-log).
 > * See [frequently asked questions about child-directed apps](/docs/child-directed-apps-faq).
 
@@ -434,8 +418,6 @@ Account admins can [manage multiple apps in bulk](https://dev.appsflyer.com/hc/r
 
 > 📘 **Note**
 >
-> #### Note
->
 > At this stage, adding apps and updating the app settings via API is possible for mobile apps only. Deleting apps is possible for all platforms.
 
 
@@ -444,8 +426,6 @@ Account admins can [manage multiple apps in bulk](https://dev.appsflyer.com/hc/r
 If your developer creates a **debug**, **sandbox**, or **testing app**, you must add the app to the dashboard. Once your developer starts testing with the app, data displays in the app’s dashboard.
 
 > 📘 **Note**
->
-> #### Note
 >
 > For iOS apps that haven’t been published to the App Store and don’t yet have a valid App Store ID, you can still proceed with SDK testing by adding the app using a **dummy iOS App Store ID**. This enables SDK integration and testing without needing a real App Store listing.
 

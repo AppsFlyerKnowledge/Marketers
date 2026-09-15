@@ -83,9 +83,7 @@ To set up the Smart Script, you can either:
     5. Tell your web developer what to do with the generated outgoing URL. For example, place it under a CTA button on your mobile site or present a QR code on your desktop site. [Developer instructions](https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#use-google-tag-manager)
 13. Saved scripts can be viewed in the [dropdown menu](/docs/set-up-smart-script-to-convert-web-visitors#how-to-edit-or-delete-a-script).
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Every time you update the script, it needs to be implemented again
 
@@ -101,9 +99,7 @@ To set up the Smart Script, you can either:
    1. Follow the steps in [How to create a OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#set-up-onelink-smart-script)
 3. Click on the trash bin icon to delete the Smart Script
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Every time you update the script, it needs to be implemented again
 
@@ -202,8 +198,6 @@ With auto-tagging enabled, the URL contains the *GCLID* parameter.
 
 > 📘 **Note**
 >
-> #### Note
->
 > This GCLID solution is not officially supported or recommended by Google. In case Google deprecates the GCLID parameter we will change the script to support the changes. Follow this article, by clicking the **Follow** button in the article header, to get informed when there is an update to the article or attached script.
 
 ### Facebook FBCLID
@@ -251,9 +245,7 @@ For these SRNs, script setup is the same as for links from owned media, or other
 
 **Result**: For these SRNs/media sources, the values in the media source and campaign parameters in the incoming link are used to populate the values for the **media\_source** and **campaign** parameters in the outgoing link.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > **Incoming URL**: https://hotel.me/incoming\_mediasource=twitter&incoming\_campaign=big\_social
 >
@@ -267,9 +259,7 @@ AppsFlyer attribution links can be used when the media source is a click ad netw
 
 **Result**: When the Smart Script finds the **af\_r** parameter on the incoming link, the Smart Script doesn't produce an outgoing URL and the developer must decide what link to place as the outgoing URL and implement it.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > **Incoming URL**: https://app.appsflyer.com/id123456789?pid=click\_ad\_network\_int&c=orlando&af\_r=hotel.me
 >
@@ -326,9 +316,7 @@ Smart Script displays a QR code on your web page, instead of a button with a lin
 
 **Result**: The script displays a QR code instead of a button with a URL behind it.
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > **Incoming URL**:
 >
@@ -357,9 +345,7 @@ The OneLink Smart Script can be used to count impressions on your website. To do
 2. Tell your developer to [call the impression function](https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#fire-an-impression) in the Smart Script.
 3. Make sure [view-through attribution is turned on](/docs/measure-view-through-engagements).
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > As of February 1st, 2023 (Chrome 110 stable release), Google has made some changes to [reduce User-Agent data](https://developer.chrome.com/en/docs/privacy-sandbox/user-agent/). In order to properly get [view-thorough attributions](https://www.appsflyer.com/glossary/view-through-attribution/) using the OneLink Smart Script, you should use the OneLink Smart Script version 2.3 and above.
 

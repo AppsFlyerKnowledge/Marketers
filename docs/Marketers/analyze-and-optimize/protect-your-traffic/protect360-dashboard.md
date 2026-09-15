@@ -411,9 +411,7 @@ Payable events are IAEs that have a cost. Once enabled and configured, the In-ap
 
 
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [Protect360 Overview](/docs/protect360-anti-fraud-guide)
 > * [Raw data reports](/docs/protect360-raw-data-reports)

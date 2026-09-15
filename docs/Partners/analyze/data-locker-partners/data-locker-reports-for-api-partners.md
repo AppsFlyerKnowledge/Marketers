@@ -33,7 +33,7 @@ Reports are streamed to the h=23 folder.
 | Data freshness | - For daily cohort reports:<br />  - Reports are typically available by 10:00 UTC in the h=23 folder of the preceding day. For example, the report for data generated on Monday is in the Monday h=23 folder.<br />  - Exception: Ad revenue events have data freshness of Day 0+3. Meaning, ad revenue events in the Monday report occurred on Saturday.<br />- The first versioned reports are typically available by 06:00 UTC. |
 
 <Cards>
-  <Card title="Aggregated analytics tools for API partners" href="/docs/access-to-aggregated-analytics-tools-for-api-partners">
+  <Card title="Aggregated analytics tools for API partners" href="/docs/access-to-aggregated-analytics-tools-for-api-partners" icon="fa-solid fa-handshake">
     Learn more about aggregated analytics tools available for API partners.
   </Card>
 </Cards>

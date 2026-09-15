@@ -120,7 +120,7 @@ The Sandbox attribution overview dashboard currently supports predefined in-app 
 ### See also
 
 <Cards>
-  <Card title="[Closed Beta] Android privacy sandbox - Attribution API" href="/docs/closed-beta-android-privacy-sandbox-attribution-api">
+  <Card title="[Closed Beta] Android privacy sandbox - Attribution API" href="/docs/closed-beta-android-privacy-sandbox-attribution-api" icon="fa-solid fa-user-shield">
     Learn more about the Android privacy sandbox Attribution API.
   </Card>
 </Cards>

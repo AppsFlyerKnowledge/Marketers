@@ -116,8 +116,6 @@ Once saved, AppsFlyer sends the following data to Adobe Analytics for every orga
 
 > 📘 **Note**
 >
-> #### Note
->
 > In accordance with the terms of service of both Meta ads and X Ads, AppsFlyer is prohibited from sharing user-level data with third parties. This means that Meta ads and X Ads installs are sent as organic.
 
 

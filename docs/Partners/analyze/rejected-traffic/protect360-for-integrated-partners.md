@@ -25,8 +25,6 @@ There are also [raw data reports](/docs/protect360-reports-for-ad-networks) avai
 
 > 📘 **Note**
 >
-> #### Note
->
 > For advertisers that work with ad networks through an agency, in order for both the ad network and agency to access data, the advertiser must integrate both the agency and ad network in AppsFlyer, and grant them both permission to access data.
 >
 > If only the agency is integrated and granted permissions, the ad network does not have access to the data.

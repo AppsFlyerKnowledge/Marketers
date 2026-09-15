@@ -30,8 +30,6 @@ There are two ways to send in-app events data to AppsFlyer: SDK and Server-to-Se
 
 > 📘 **Note**
 >
-> #### Note
->
 > If unsure which one you use, confirm with your development or marketing operations teams
 
 
@@ -46,8 +44,6 @@ Understanding these differences and available options is key to making informed 
 
 > 📘 **Note**
 >
-> #### Note
->
 > You can switch ([Admin only](/docs/user-management)) between **Implemented** and **Tagged** modes anytime to match your evolving business objectives. [Learn more here](/docs/beta-fraud-protection-studio#key-concepts).
 
 ![](https://support.appsflyer.com/hc/article_attachments/35506628777105)
@@ -60,9 +56,7 @@ You can export Protect360 data in three ways: [Raw Data Report](/docs/protect360
 
 ![](https://support.appsflyer.com/hc/article_attachments/35506660373393)
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > In order to get the full value of Protect360, export the [Post-attribution report](/docs/protect360-raw-data-reports#postattribution-reports) every 8th of every month, so you can reconsolidate with partners.
 
@@ -85,8 +79,6 @@ To display hijacked installs properly in your BI:
 * Contributor1, contributor2, contributor3, etc. - Correct attribution to the specified media source.
 
 > 📘 **Note**
->
-> #### Note
 >
 > To get more insight about your **Tagged** data, you can view the 4 raw data reports:
 >
@@ -132,8 +124,6 @@ Contact your Customer Success Manager or Account Manager to learn more about bes
 
 > 📘 **Note**
 >
-> #### Note
->
 > For the rules to be as effective as possible, it’s recommended to review your UA / marketing / media buying strategy and assess which types of installs or app events match your efforts, to allow or block per your needs. For example, if you do not promote your app in country (GEO) X, you can create a rule to automatically block any such activity arriving from GEO X. You can create multiple rules to align protection to your marketing strategy.
 
 
@@ -163,8 +153,6 @@ In this step, it is time to optimize your campaign to ensure you are getting the
 Review your [Fraud Protection Studio settings](/docs/protect360-onboarding-guide#fraud-protection-studio-settings) to ensure they still align with your objectives.
 
 > 📘 **Note**
->
-> #### Note
 >
 > **Tagged** installs are a subset of valid. Switch to **implemented** mode to block in real-time according to the Protect360 detection
 

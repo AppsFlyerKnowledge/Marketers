@@ -12,8 +12,6 @@ This article covers these cases, from measuring agencies to using MCCs and also 
 
 > 📘 **Note**
 >
-> #### Note
->
 > The following applies **only**to clients using the Google Ads new API.
 
 
@@ -24,8 +22,6 @@ For details on agency account configuration on Google Ads [click here](/docs/goo
 * **Link ID** – **a** **unique identifier of a mobile app defined on Google Ads**.
 
 > 📘 **Note**
->
-> #### Note
 >
 > Android and iOS versions of the same app require different link IDs.
 
@@ -45,24 +41,18 @@ App owners having a single Google Ads account, or that plan on working with agen
 
 The app owner can share any link ID with any other account, identified by its customer ID, as the capture below shows. Here are some more details about [sharing the link ID with an agency](/docs/google-ads-adwords-integration-setup-for-agencies#setting-up-google-ads-attribution-for-agencies).
 
-> 📘 **Note**
->
-> #### Important
+> 📘 **Important**
 >
 > * If MCC is the Recording Manager for subaccounts then there is no need to share the Link ID from the MCC to the subaccounts. However, if a subaccount, under the MCC is its own recording manager, then the MCC must share the Link ID with the subaccount Recording Manager.
 > * Importing Conversions: If MCC is the Recording Manager then the MCC is responsible for importing conversions for the subaccounts controlled by it. However, if a subaccount under the MCC is its own recording manager then that subaccount must also import the conversions.
 
 > 📘 **Note**
 >
-> #### Note
->
 > * On the Google Ads dashboard click (3 dots) >> ***Linked accounts*** >> ***Third-party app analytics details*** [![](https://support.appsflyer.com/hc/article_attachments/115016034186/mceclip0.png)](https://support.appsflyer.com/hc/article_attachments/115016034186/mceclip0.png)
 > * The other account needs to approve the "share".
 > * As a result, the other account is authorized to run Google Ads campaigns for the app.
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > AppsFlyer recommends sharing the Link ID from the advertiser’s main account to the other accounts, rather than directly generating link IDs in those accounts. This is the fastest option, and also enables easy detachment between the advertiser and the agencies once the mutual work is completed.
 
@@ -85,9 +75,7 @@ This setup can be modified afterward if needed.
 
 Big advertisers working with multiple agencies may use an MCC of MCCs account. Similar to the standard MCC account. It is recommended that the highest level MCC of MCCs or Advertiser is the one to generate the link ID. The correct setup for this structure requires the subaccounts to select the correct level of MCC (most likely, the highest level of MCC) as the Recording Manager. If this is the setup used, then the Link ID does not need to be shared with subaccounts and the import conversions at the highest level are sufficient.
 
-> 📘 **Note**
->
-> #### Tip
+> 📘 **Tip**
 >
 > For additional information about MCCs and hierarchies of accounts, see the links below:
 >

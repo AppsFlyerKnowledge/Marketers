@@ -251,7 +251,7 @@ Permissions aren't available for website integrations with ChatGPT Ads.
 | Supported countries | [List of countries](https://help.openai.com/en/articles/20001245-ads-manager-availability) where ChatGPT Ads Manager is available. |
 
 <Cards>
-  <Card title="Partner integrations" href="/docs/set-up-an-integrated-partner">
+  <Card title="Partner integrations" href="/docs/set-up-an-integrated-partner" icon="fa-solid fa-handshake">
     Learn more about setting up integrated partners in AppsFlyer.
   </Card>
 </Cards>

@@ -63,7 +63,7 @@ To manage the discrepancy, advertisers should keep records of the approximate pe
 In certain instances, due to raw data restrictions from Snapchat, installs via [Aggregated Advanced Privacy](/docs/appsflyer-knowledge-base-glossary?query=glossary#aggregated-advancedprivacy) won't show in raw data reports. This means that advertisers may see on the AppsFlyer platform fewer installs in raw data than in aggregated data.
 
 <Cards>
-  <Card title="Snapchat and AppsFlyer SKAdNetwork interoperation" href="/docs/skan-interoperation-with-snapchat">
+  <Card title="Snapchat and AppsFlyer SKAdNetwork interoperation" href="/docs/skan-interoperation-with-snapchat" icon="fa-solid fa-lock">
     Learn how Snapchat and AppsFlyer interoperate when using Apple's SKAdNetwork framework.
   </Card>
 </Cards>

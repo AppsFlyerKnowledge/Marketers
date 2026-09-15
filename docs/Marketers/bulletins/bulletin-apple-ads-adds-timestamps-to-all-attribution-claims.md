@@ -10,7 +10,7 @@ excerpt: "Apple's AdServices API now includes engagement timestamps for all iOS 
 | What you should do | No action is required. Your Apple Ads integration reflects this change automatically. If you run age or gender targeted ad groups, review your Apple Ads reporting after September 1 to understand any change in attributed conversions. |
 
 <Cards>
-  <Card title="Apple Ads integration setup" href="/docs/apple-ads-integration-setup">
+  <Card title="Apple Ads integration setup" href="/docs/apple-ads-integration-setup" icon="fa-solid fa-bullhorn">
     Learn how to set up and configure your Apple Ads integration in AppsFlyer.
   </Card>
 </Cards>

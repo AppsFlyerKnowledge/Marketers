@@ -6,8 +6,6 @@ excerpt: "Learn how to configure mobile attribution, view-through tracking, cost
 
 > 📘 **Note**
 >
-> #### Note
->
 > If you want to promote your Android Apps with ByteDance Ads China, you are required to send your OAID to AppsFlyer SDK according to the instructions in the [AppsFlyer SDK Integration - Android](/docs/sdk-integration-overview). Google Play service is blocked in China, OAID is the most popular Android Device ID for ad attribution.
 
 

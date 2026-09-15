@@ -12,8 +12,6 @@ The setup is done from the **Active Integrations** page, but to find new partner
 
 > 📘 **Note**
 >
-> #### Note
->
 > Before setting up an integration, make sure you [contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
 
 
@@ -39,8 +37,6 @@ The Integration tab is divided into different sections as described below. To in
 ![tencent.png](https://files.readme.io/56bfdc43b976f1f29f5ba121986aa66228cd79029025e84278cb3c304989fc3e-38300461521041.png)
 
 > 📘 **Note**
->
-> #### Note
 >
 > The **access\_token** is issued by Tencent AMS and is valid for 30 days. Per Tencent's requirement, you (or your managing agency) must **manually refresh the token every 30 days and update it in the above field**.
 >

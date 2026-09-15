@@ -117,17 +117,13 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 
 4. Click ***Save***.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Import the first-open and in-app actions to Google Ads to begin counting conversions in both Google Ads and your AppsFlyer dashboard.
 >
 > To be able to import, you must launch the app and perform your mapped in-app events at least once.
 
 > 📘 **Note**
->
-> #### Note
 >
 > * It may take up to 6 hours until the new conversions change status from No Recent Conversion to Recording Conversion.
 > * If an agency works with an MCC account and the app is promoted via several MCC sub-accounts all sub-accounts must be configured in the **Google Ads Customer ID**field (as seen on above screenshot).
@@ -138,9 +134,7 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 
 **(**Google Ads** admin only)**
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > For Google Ads to register your new conversions, you must**launch your app and perform your mapped in-app events** at least once. To test iOS apps, you must collect IDFA to see the event. It may take up to 6 hours until the event conversions are added to the queue. Once they are added you can import them, and the new conversions change status from “No recent conversion” to “recording conversion".
 
@@ -168,8 +162,6 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 7. Congratulations! You're now measuring Google Ads mobile campaigns with AppsFlyer!
 
 > 📘 **Note**
->
-> #### Note
 >
 > Please ensure your "include in conversions" setup is aligned with your campaign goals in Google Ads. For more information, consult with your Google representative or refer to the Google documentation [here](https://support.google.com/google-ads/answer/4677036?hl=en&co=ADWORDS.IsAWNCustomer=false).
 

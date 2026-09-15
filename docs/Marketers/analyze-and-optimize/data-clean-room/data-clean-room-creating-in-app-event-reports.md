@@ -75,9 +75,7 @@ You can map to either of these in-app event data identifiers as **key identifier
 * **Customer User ID (CUID):** A unique user identifier usually generated and set by the app owner at the time of user registration.
   * Using CUID to map data requires that your app is configured to [send the CUID to AppsFlyer](/docs/customer-user-id-field-cuid) via the SDK or the server-to-server API (S2S).
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Not all media sources permit matching using CUID. It is highly recommended to use AppsFlyer ID.
 
@@ -86,9 +84,7 @@ You can map to either of these in-app event data identifiers as **key identifier
 
 If the report includes more than one custom source, only one of them needs to be mapped **directly** to an in-app event key identifier. Other custom sources can be mapped either **directly or indirectly,** as illustrated in the following example:
 
-> 📘 **Note**
->
-> #### Example
+> 📘 **Example**
 >
 > ![dcr_mapping_identifiers_in-app events.png](https://files.readme.io/73d0e929663bda4e6f142c64d0228fdf1eeec3b02ef1560f6f03f2a089d00664-9969546429713.png)
 >
@@ -184,9 +180,7 @@ Depending on the size of your data set, the number of dimensions you choose, and
 
 However, instead of removing or hiding the data from the report completely, the DCR uses a **regrouping mechanism** to provide as much detail as possible while maintaining user privacy.
 
-> 📘 **Note**
->
-> #### Regrouping example
+> 📘 **Regrouping example**
 >
 > Assume you have set up a report according to the following dimensions (in order):
 >
@@ -347,9 +341,7 @@ Reports without custom sources are run according to the schedule you define.
 1. Select whether to run the report daily or on one or more days each week.
 2. Select the time at which to run the report (timezone is UTC).
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > Scheduling options are disabled for reports that use custom sources. This type of report runs whenever new versions of all of the [custom sources it uses](/docs/data-clean-room-creating-attribution-data-reports#custom-sources) are detected:
 >

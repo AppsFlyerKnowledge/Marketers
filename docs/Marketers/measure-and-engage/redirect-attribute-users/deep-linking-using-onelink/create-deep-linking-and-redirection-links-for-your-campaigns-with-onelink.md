@@ -148,17 +148,13 @@ These OG tags may automatically be taken from the web URL or app store you are r
 
 > 📘 **Note**
 >
-> #### Note
->
 > * You can add the OG tag parameters to your link outside the AppsFlyer UI.
 > * If you add separate OG tags for X (formerly Twitter), they will override the regular AppsFlyer preview.
 
 
 ### Social app landing page
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > iOS Universal Links are now supported in Meta ads.
 >
@@ -196,8 +192,6 @@ When the user engages with the CTA button in the landing page:
 * **If app is NOT installed**: the user is taken to the relevant app store. Upon install, it's possible to defer deep linking the user (explained in [deep linking and deferred deep linking](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking)).
 
 > 📘 **Note**
->
-> #### Note
 >
 > The social app landing page only supports OneLink short URL.
 
@@ -252,8 +246,6 @@ Deferred deep linking means you give new users a similar deep linking experience
 
 > 📘 **Note**
 >
-> #### Note
->
 > Setting up deep linking and deferred deep linking requires your Android and iOS developers.
 
 
@@ -298,8 +290,6 @@ Deferred deep linking means you give new users a similar deep linking experience
    3. In the **Additional parameters** section, add custom parameters **deep\_link\_sub2-10** and values as required, according to what you decided with the developers.
 
 > 📘 **Note**
->
-> #### Note
 >
 > Once parameters and dynamic values are implemented by the developers, the marketer can use OneLink API to automatically generate thousands of custom links. [Learn more](/docs/use-onelink-api-to-create-links-in-large-scale-campaigns)
 

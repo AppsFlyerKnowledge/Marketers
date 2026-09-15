@@ -69,8 +69,6 @@ When you select **Site ID**, the data displayed is based on your filter selectio
 
 > 📘 **Note**
 >
-> #### Note
->
 > Site\_id data is available as of 16 May 2016 and onwards.
 
 
@@ -93,8 +91,6 @@ The filter options expand:
 ![](https://support.appsflyer.com/hc/en-us/article_attachments/211309586/Site_ID_Filter_Advanced_Expand.png)
 
 > 📘 **Note**
->
-> #### Note
 >
 > Once you select a Campaign/Channel but no Media Source, a warning notification is displayed indicating that you must select a media source first.
 

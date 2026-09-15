@@ -48,8 +48,6 @@ Click Save integration.4Allow Snapchat to share postbacks with AppsFlyerGo to yo
 | Dashboard filters | **Discrepancy cause**<br /><br />* AppsFlyer: The SKAN dashboard contains installs relating to iOS postbacks received.<br />* Snapchat: By default, the Snapchat dashboard and report includes both SKAN and installs attributed traditionally (IDFA). Filter the Snapchat report to get only SKAN installs.<br /><br />**Solution**<br /><br />Align the Snapchat dashboard filters to display SKAN installs only as indicated in the screenshot that follows.<br /><br />[![SnapchatFilter.png](https://files.readme.io/6e067557aabe899df48454aaf4b7be7f466da55e41b7cd3c68db802e48df7d07-360019782137.png)](https://support.appsflyer.com/hc/article_attachments/360019782137) |
 | Install date differences | **Discrepancy cause**<br /><br />There can be differences between the AppsFlyer and Snapchat install dates as follows:<br /><br />* AppsFlyer: Derives the install date using the following formula: Postback arrival time - 24 hours - measurement window (default 24 hours.) So the default adjustment is 48 hours. All times UTC. [SKAN data freshness](/docs/about-data-freshness-and-timezone-support#skan)<br />* Snapchat: Typically uses the iOS postback arrival time as the install date without adjustment.<br /><br />**Solution**<br /><br />Take the above into consideration when comparing results. |
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * [AppsFlyer SKAN solution guide](/docs/skadnetwork-skan-solution-guide)

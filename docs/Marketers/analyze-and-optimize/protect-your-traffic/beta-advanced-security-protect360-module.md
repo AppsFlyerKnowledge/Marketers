@@ -4,9 +4,7 @@ excerpt: "Strengthen fraud protection for your Android app with the Advanced Sec
 ---
 **At a glance:** Strengthen fraud protection for your Android app with the Advanced Security Module. This real-time solution detects and blocks attribution spoofing and manipulated traffic before installs are attributed. Designed for high-traffic apps and Protect360 clients, especially those working with affiliates. The module is fully configurable by you, allowing initial setup and ongoing maintenance to adapt to evolving fraud patterns and protect data integrity.
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > The Advanced Security Protect360 Module beta is available to all Protect360 customers. To join, contact your CSM.
 
@@ -62,8 +60,6 @@ Note: Ask your developer for all the [certificate hashes](https://dev.appsflyer.
 3. Once complete, copy the code by clicking the **Copy code** button on the build and send it to your developer for integration into the app SDK.
 
 > 📘 **Note**
->
-> #### Note
 >
 > After you build, the detection mode is set to **Tagged** by default. In this mode, AppsFlyer flags suspicious traffic but doesn't block it. After the secured version is live, switch to **Implemented** mode to block spoofed traffic. For more information about the Tagged and Implemented modes, see [FPS Modes](/docs/beta-fraud-protection-studio#fps-modes).
 

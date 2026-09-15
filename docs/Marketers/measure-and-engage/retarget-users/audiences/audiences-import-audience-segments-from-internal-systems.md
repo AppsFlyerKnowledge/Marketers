@@ -10,9 +10,7 @@ In certain circumstances, you may have predefined audience segments in your inte
 
 Consider the following examples:
 
-> 📘 **Note**
->
-> #### Examples
+> 📘 **Examples**
 >
 > **Promotional remarketing**
 > You want to target promotional offers to users during the month of their birthdays.
@@ -54,9 +52,7 @@ When you import an audience, you designate it as one of two types, which determi
 * Is uploaded to partners without reference to your account's user identifier policy (meaning all imported identifiers are uploaded to partners).
 * Can be imported using the V2.0 import feature (described in this article).
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > * All audiences existing as of November 23, 2021, **are designated as-is audiences and cannot be changed to standard audiences.** You can continue to update these audiences as necessary using either the V2.0 import feature (described in this article).
 > * You can have up to 500 active imported audiences at any one time.

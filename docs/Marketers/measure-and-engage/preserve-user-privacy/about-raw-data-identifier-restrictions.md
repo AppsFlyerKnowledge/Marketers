@@ -176,7 +176,7 @@ Data related to assists is regarded as attribution data and isn't available.
 ### See also
 
 <Cards>
-  <Card title="User-level data retention" href="/docs/user-level-data-retention">
+  <Card title="User-level data retention" href="/docs/user-level-data-retention" icon="fa-solid fa-file-lines">
     Learn more about user-level data retention policies and timelines.
   </Card>
 </Cards>

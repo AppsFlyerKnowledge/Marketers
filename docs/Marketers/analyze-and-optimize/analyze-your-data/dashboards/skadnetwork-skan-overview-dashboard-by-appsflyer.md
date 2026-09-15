@@ -240,10 +240,10 @@ Definitions:
 ### See also
 
 <Cards>
-  <Card title="AppsFlyer SKAN Solution guide" href="/docs/skadnetwork-skan-solution-guide">
+  <Card title="AppsFlyer SKAN Solution guide" href="/docs/skadnetwork-skan-solution-guide" icon="fa-solid fa-lock">
     Learn how to configure and use AppsFlyer's SKAdNetwork solution.
   </Card>
-  <Card title="What's different—AppsFlyer iOS 14 related updates" href="/docs/about-att-and-skan">
+  <Card title="What's different—AppsFlyer iOS 14 related updates" href="/docs/about-att-and-skan" icon="fa-solid fa-lock">
     Understand the changes introduced with iOS 14 and how they affect attribution.
   </Card>
 </Cards>

@@ -385,10 +385,10 @@ The following fields are **not supported for web data** and will always be empty
 ## See also
 
 <Cards>
-  <Card title="About Data Locker Advanced Reports" href="/docs/about-data-locker-advanced-reports">
+  <Card title="About Data Locker Advanced Reports" href="/docs/about-data-locker-advanced-reports" icon="fa-solid fa-box-archive">
     Learn more about Advanced Reports in Data Locker.
   </Card>
-  <Card title="Data Locker for marketers" href="/docs/data-locker-for-marketers">
+  <Card title="Data Locker for marketers" href="/docs/data-locker-for-marketers" icon="fa-solid fa-box-archive">
     Overview of Data Locker features and setup for marketers.
   </Card>
 </Cards>

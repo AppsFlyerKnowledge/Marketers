@@ -6,8 +6,6 @@ excerpt: "The Single Source of Truth (SSOT) report in Data Locker offers a unifi
 
 > 📘 **Note**
 >
-> #### Note
->
 > * Before we start sharing the data with you, the advertisers must grant [permissions](/docs/single-source-of-truth-ssot-data-locker-report-for-ad-networks#permissions) in the dashboard
 > * The SSOT Data Locker report contains LTV-based data, not activity-based data. This means the data reflects users’ lifetime value across all touchpoints, rather than their in-app or event activity
 
@@ -236,9 +234,7 @@ You can load unified, user acquisition, and retargeting reports separately or to
 
 ### Days post-attribution
 
-> 📘 **Note**
->
-> #### Important!
+> 📘 **Important!**
 >
 > The report includes a dimension, days\_post\_attribution, which associates revenue and unique user data with the specific number of days post-install
 

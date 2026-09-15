@@ -296,10 +296,10 @@ https://your.server.com?consumer_key=abc456
 ```
 
 <Cards>
-  <Card title="Comparing raw data delivery tools" href="/docs/raw-data-reporting-overview#reporting-tools%E2%80%94characteristics-and-features">
+  <Card title="Comparing raw data delivery tools" href="/docs/raw-data-reporting-overview#reporting-tools%E2%80%94characteristics-and-features" icon="fa-solid fa-database">
     Compare characteristics and features of AppsFlyer raw data reporting tools.
   </Card>
-  <Card title="Set up the Push API using an API" href="https://dev.appsflyer.com/hc/reference/put_app-app-id">
+  <Card title="Set up the Push API using an API" href="https://dev.appsflyer.com/hc/reference/put_app-app-id" icon="fa-solid fa-database">
     Configure and manage your Push API endpoints programmatically.
   </Card>
 </Cards>

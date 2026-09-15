@@ -65,8 +65,6 @@ By using the In-app event generator marketers can:
 
 **Note**: [Predefined naming](/docs/in-app-events-overview#predefined-and-custom-events) allows automatic mapping of events and parameters to partners and is the recommended method.
 
-> 📘 **Note**
->
-> #### See also
+> 📘 **See also**
 >
 > * Events dashboard
