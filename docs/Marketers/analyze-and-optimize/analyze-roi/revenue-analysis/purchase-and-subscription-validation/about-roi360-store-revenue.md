@@ -193,8 +193,6 @@ The following sections provide additional details about key aspects of ROI360 in
       - af_net_revenue_subdivision
       - af_net_revenue_postal_code
       - af_net_revenue_factors
-
-      ####
     </Accordion>
     <Accordion title="Purchase canceled (af_purchase_canceled)" icon="fa-info-circle">
       **Description**
@@ -219,7 +217,7 @@ The following sections provide additional details about key aspects of ROI360 in
       - af_store
       - af_environment
     </Accordion>
-    <Accordion title="Purchase" icon="fa-info-circle">
+    <Accordion title="Purchase pending (af_purchase_pending)" icon="fa-info-circle">
 
     </Accordion>
     <Accordion title="Purchase" icon="fa-info-circle">
