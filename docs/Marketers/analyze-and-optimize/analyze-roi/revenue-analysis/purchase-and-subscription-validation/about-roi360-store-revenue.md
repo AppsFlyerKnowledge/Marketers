@@ -324,31 +324,22 @@ The following sections provide additional details about key aspects of ROI360 in
     </Accordion>
 </Accordion>
 
-###
+<Accordion title="Subscription-related events and parameters" icon="fa-info-circle">
+  The following sections display the subscription-related events that AppsFlyer measures, and the parameters that are recorded for each event. See the [event parameter dictionary](/docs/about-roi360-store-revenue#parameter-dictionary) for an explanation of the included parameters.
 
-#### Test purchase (af_purchase_sandbox_s2s)
+  All generated events:
 
-**Description**
+  - Are considered S2S events.
+  - Are accessible in raw data reports (as organic or non-organic in-app events).
+  - Can be sent via postbacks to partners.
+    - Can be used in SKAN Conversion Studio.
+      <Callout icon="📘" theme="info">
+        ### Note
 
-Recorded when testing a purchase reported via S2S in a sandbox environment.
-
-**Parameters**
-
-- app_id
-- customer_user_id
-- af_currency
-- af_original_transaction_id
-- af_order_id
-- af_purchase_token
-- af_transaction_id
-- af_purchase_state
-- af_product_id
-- android_id
-- idfa
-- ip
-- appsflyer_id
-- af_net
-- af_sandbox_revenue
+        Depending on the user device platform, some parameters aren't always populated for an in-app events
+      </Callout>
+  -
+</Accordion>
 
 ### Subscription-related events and parameters
 
