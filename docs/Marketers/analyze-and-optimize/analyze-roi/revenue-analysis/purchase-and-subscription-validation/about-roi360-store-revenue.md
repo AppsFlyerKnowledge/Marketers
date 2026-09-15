@@ -335,6 +335,40 @@ The following sections provide additional details about key aspects of ROI360 in
   - Can be used in SKAN Conversion Studio.
 
     **Note**: depending on the user device platform, some parameeters aren't always populated for an in-app events
+    <Accordion title="Subscription changed (af_ars_subscription_xgraded)" icon="fa-info-circle">
+      **Description**
+
+      Recorded when a subscriber upgrades, downgrades, or cross-grades to a different product.
+
+      **Parameters**
+
+      - app_id
+      - customer_user_id
+      - af_currency
+      - af_expires_date_ms
+      - af_subscription_ownership_type
+      - af_original_transaction_id
+      - af_order_id
+      - af_purchase_token
+      - af_transaction_id
+      - af_product_id
+      - android_id
+      - idfa
+      - ip
+      - appsflyer_id
+      - af_purchase_date_ms
+      - af_store
+      - af_environment
+      - af_period_type
+      - af_discount_id
+      - af_discount_type
+      - event_revenue_usd
+      - event_revenue (included in the event when the revenue exceeds zero)
+      - store_commission
+      - af_revenue
+      - af_net_revenue
+      - af_net_revenue_factors
+    </Accordion>
     <Accordion title="Existing subscriber (af_ars_existing_subscriber)" icon="fa-info-circle">
       **Description**
 
@@ -825,70 +859,9 @@ Recorded when an auto-renewal subscription takes place.
 - af_net_revenue
 - af_net_revenue_factors
 
-#### Subscription changed (af_ars_subscription_xgraded)
+####
 
-**Description**
-
-Recorded when a subscriber upgrades, downgrades, or cross-grades to a different product.
-
-**Parameters**
-
-- app_id
-- customer_user_id
-- af_currency
-- af_expires_date_ms
-- af_subscription_ownership_type
-- af_original_transaction_id
-- af_order_id
-- af_purchase_token
-- af_transaction_id
-- af_product_id
-- android_id
-- idfa
-- ip
-- appsflyer_id
-- af_purchase_date_ms
-- af_store
-- af_environment
-- af_period_type
-- af_discount_id
-- af_discount_type
-- event_revenue_usd
-- event_revenue (included in the event when the revenue exceeds zero)
-- store_commission
-- af_revenue
-- af_net_revenue
-- af_net_revenue_factors
-
-#### Existing subscriber (af_ars_existing_subscriber)
-
-**Description**
-
-Recorded when the SDK connector is notified about a subscriber in the middle of a billing cycle, before getting a follow-up server notification that transitions the subscriber to another relevant lifecycle stage. This event is usually generated during your onboarding and SDK connector adoption period.
-
-**Parameters**
-
-- app_id
-- customer_user_id
-- country
-- af_currency
-- af_expires_date_ms
-- af_subscription_ownership_type
-- af_original_transaction_id
-- af_order_id
-- af_purchase_token
-- af_transaction_id
-- af_product_id
-- android_id
-- idfa
-- ip
-- appsflyer_id
-- af_purchase_date_ms
-- af_store
-- af_environment
-- af_period_type
-- af_cuids
-- af_validated
+####
 
 ####
 
