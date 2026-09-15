@@ -26,11 +26,12 @@ Because of Google's click-reporting methodology and its retroactive data update 
 ## Set up interoperation
 
 To set up interoperation with Google Ads, complete the steps in the following tabs.
+
 <Accordion title="Set up postbacks">
 
-``
+
 To set up sending postbacks:
-``
+
 
 | Step | Action | Details |
 | --- | --- | --- |
@@ -38,49 +39,52 @@ To set up sending postbacks:
 | 2 | In-app event mapping in AppsFlyer | **To view and set in-app event mapping**:<br /><br />1. In AppsFlyer, go to **Collaborate** > **Active integrations**.<br />2. Select **Google Ads**.<br />3. From the **Integration** tab, verify that **Activate Partner** is on. If not, you must first complete the [integration with Google Ads](/docs/google-ads-adwords-integration-setup-for-advertisers).<br />4. In the **In-app events postbacks section**:<br />   1. If not on, turn on **In-app events postbacks**.<br />   2. The best practice is to map the events related to the currently selected measurement type. Note! In the case of revenue measurement, map af\_skad\_revenue to the appropriate Google revenue event<br />5. Scroll down to the bottom of the page.<br />6. Click **Save integration**. |
 
 </Accordion>
+
 <Accordion title="Allow Google Ads to share SKAN data with AppsFlyer">
 
-``
+
 In order to see SKAN installs attributed to Google Ads in the AppsFlyer SKAN dashboard, you must allow Google Ads to share SKAN data with AppsFlyer.
 To grant Google Ads permission to share SKAN data with AppsFlyer:
 
-``The procedure that follows must be performed by the advertiser. In the case of an agency, both the agency and advertiser have to enable SKAN measurement.  
-``In AppsFlyer, go to Collaborate &gt; Active integrations.
-``Search for and select Google Ads.
-``Go to the SKAN tab. `![mceclip0.png](https://files.readme.io/ba8d881ca8430bfdcf67a37e862ad3e31a9af522f2f877d3fba30bc2e13006a6-4404428381457.png)`
+The procedure that follows must be performed by the advertiser. In the case of an agency, both the agency and advertiser have to enable SKAN measurement.  
+In AppsFlyer, go to Collaborate &gt; Active integrations.
+Search for and select Google Ads.
+Go to the SKAN tab. `![mceclip0.png](https://files.readme.io/ba8d881ca8430bfdcf67a37e862ad3e31a9af522f2f877d3fba30bc2e13006a6-4404428381457.png)`
 
-``If the temporarily unavailable message displays, most times it means an ad blocker is active. If so, disable the ad blocker and reload the page. If this is not the case, contact AppsFlyer support.  `![mceclip1.png](https://files.readme.io/e86b868f71e11ad347ff7557a793090d9d6adb8fe4df4f9010c8d770b373ac6a-4404428420497.png)`
+If the temporarily unavailable message displays, most times it means an ad blocker is active. If so, disable the ad blocker and reload the page. If this is not the case, contact AppsFlyer support.  `![mceclip1.png](https://files.readme.io/e86b868f71e11ad347ff7557a793090d9d6adb8fe4df4f9010c8d770b373ac6a-4404428420497.png)`
 
-``Click Connect Google Ads.
-``You must log in to Google Ads using an Administrator user role on the account.
-``If the Google account is associated with multiple apps, log in once, and all apps are authorized. In other words, there is no need to authorize on a per-app basis.
-``AppsFlyer pulls data for all the AppsFlyer iOS apps that your Google account is associated with, irrespective of the app's activate partner setting. 
+Click Connect Google Ads.
+You must log in to Google Ads using an Administrator user role on the account.
+If the Google account is associated with multiple apps, log in once, and all apps are authorized. In other words, there is no need to authorize on a per-app basis.
+AppsFlyer pulls data for all the AppsFlyer iOS apps that your Google account is associated with, irrespective of the app's activate partner setting. 
 
-``Follow the instructions in the user interface.
-``In some cases, you might be prompted to give AppsFlyer permission to Manage your AdWords campaigns.  If so, you must enable the permission. Don't worry, we won't make changes to your campaign settings. `[``![GoogleManageAdWords.png](https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png)`](https://support.appsflyer.com/hc/article_attachments/4405185007121)
+Follow the instructions in the user interface.
+In some cases, you might be prompted to give AppsFlyer permission to Manage your AdWords campaigns.  If so, you must enable the permission. Don't worry, we won't make changes to your campaign settings. `[![GoogleManageAdWords.png](https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png)`](https://support.appsflyer.com/hc/article_attachments/4405185007121)
 
-``Verify that the account status, waiting for sync displays.`<br/>`This message persists until we get data from Google Ads (maximum 24 hours.)
-``Wait until after 02:00 UTC of the next day, then verify that the status changes to active.`<br/>`Data in the SKAN dashboard updates daily by 08:00 UTC. Note! As described in the considerations section, Google can update data 45 days retroactively. 
-``Read about`[` measurement differences](/docs/get-skan-postback-data-from-google-ads#measurement-and-timing-differences-between-appsflyer-and-google-ads). 
+Verify that the account status, waiting for sync displays.`<br/>`This message persists until we get data from Google Ads (maximum 24 hours.)
+Wait until after 02:00 UTC of the next day, then verify that the status changes to active.`<br/>`Data in the SKAN dashboard updates daily by 08:00 UTC. Note! As described in the considerations section, Google can update data 45 days retroactively. 
+Read about`[` measurement differences](/docs/get-skan-postback-data-from-google-ads#measurement-and-timing-differences-between-appsflyer-and-google-ads). 
 
 </Accordion>
 
 ## Additional information
+
 <Accordion title="Turning off the SKAN integration">
 
-``
+
 When turning off your Google Ads integration, it's not enough to turn off the Activate partner toggle, you must separately remove the SKAN connections to stop SKAN data recording.
 To turn off the SKAN integration:
 
-``In AppsFlyer, go to Collaborate &gt; Active integrations.
-``Search for and select Google Ads.
-``Go to the SKAN tab.
-``Click the delete icon for the account you want to remove.
+In AppsFlyer, go to Collaborate &gt; Active integrations.
+Search for and select Google Ads.
+Go to the SKAN tab.
+Click the delete icon for the account you want to remove.
 
 </Accordion>
+
 <Accordion title="Measurement and timing differences between AppsFlyer and Google Ads">
 
-````
+``
 
 | Item | Details |
 | --- | --- |
@@ -91,7 +95,7 @@ To turn off the SKAN integration:
 </Accordion>
 <Accordion title="Troubleshooting and FAQ">
 
-````
+``
 
 | Item | Details |
 | --- | --- |
@@ -101,9 +105,10 @@ To turn off the SKAN integration:
 | No data to pull | **Q:**Why does the connection status display "No data to pull: Check your Google data-sharing permissions"?<br /><br />**A**: Either there is no SKAN data yet or you need to log into Google Ads using an Administrator user role on the account. |
 
 </Accordion>
+
 <Accordion title="Specifications and limitations">
 
-````
+``
 
 | Spec | Description |
 | --- | --- |
@@ -115,42 +120,42 @@ To turn off the SKAN integration:
 </Accordion>
 <Accordion title="Not seeing SKAN installs from Google Ads?">
 
-``
+
 Use this checklist to confirm your setup is correct and data can flow into the AppsFlyer SKAN dashboard.
 Quick fix checklist
 
-``Check integration status.
-``Confirm the Google Ads integration is active in AppsFlyer.
-``In the SKAN tab, verify the status shows Active. If it shows Temporarily unavailable, disable any ad blockers and reload the page.
+Check integration status.
+Confirm the Google Ads integration is active in AppsFlyer.
+In the SKAN tab, verify the status shows Active. If it shows Temporarily unavailable, disable any ad blockers and reload the page.
 
-``Authorize the Google Ads connection, if not already connected.
-``Click Connect Google Ads.
-``Log in using a Google Ads Administrator account, and allow AppsFlyer to manage AdWords campaigns if prompted.
+Authorize the Google Ads connection, if not already connected.
+Click Connect Google Ads.
+Log in using a Google Ads Administrator account, and allow AppsFlyer to manage AdWords campaigns if prompted.
 
-``Wait for sync.
-``After you log in, the status shows Waiting for sync.
-``Once AppsFlyer starts receiving SKAN data from Google, the status changes to Active — this can take up to 24 hours.
-``After that, SKAN dashboard data updates daily by 08:00 UTC.
+Wait for sync.
+After you log in, the status shows Waiting for sync.
+Once AppsFlyer starts receiving SKAN data from Google, the status changes to Active — this can take up to 24 hours.
+After that, SKAN dashboard data updates daily by 08:00 UTC.
 
 Still not working?
 If you've completed the steps above and installs still aren't showing, check the following:
 
-``If the status shows "No data to pull: Check your Google data-sharing permissions," Google hasn't shared SKAN data yet, or you need to log into Google Ads using an Administrator user role.
-``Make sure you're running SKAN-specific campaigns in Google Ads and are logged in with an Administrator account.
-``
+If the status shows "No data to pull: Check your Google data-sharing permissions," Google hasn't shared SKAN data yet, or you need to log into Google Ads using an Administrator user role.
+Make sure you're running SKAN-specific campaigns in Google Ads and are logged in with an Administrator account.
+
 Check install counts directly in Google Ads:
 
-``In Google Ads, go to Campaigns.
-``Click the Reports icon &gt; Goals and conversions &gt; SKAdNetwork conversions.
-``If you see "Error loading report — This report is incompatible with the current view filters," click Clear view filters.
-``Use the column search (magnifying glass icon) to find and add SKAN-specific columns, such as SKAdNetwork conv. value segment.
+In Google Ads, go to Campaigns.
+Click the Reports icon &gt; Goals and conversions &gt; SKAdNetwork conversions.
+If you see "Error loading report — This report is incompatible with the current view filters," click Clear view filters.
+Use the column search (magnifying glass icon) to find and add SKAN-specific columns, such as SKAdNetwork conv. value segment.
 
 If there are no installs in Google, there won't be any in AppsFlyer. Check with your Google representative to understand why there are no installs.
 
 Good to know
 
-``SKAN data is collected from Google Ads daily starting at 01:00 UTC. Google's data can occasionally take up to two extra days to arrive.
-``Only Web-to-app and App-to-app iOS campaigns are supported for SKAN measurement.
+SKAN data is collected from Google Ads daily starting at 01:00 UTC. Google's data can occasionally take up to two extra days to arrive.
+Only Web-to-app and App-to-app iOS campaigns are supported for SKAN measurement.
 
 </Accordion>
 

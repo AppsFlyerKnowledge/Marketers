@@ -47,24 +47,25 @@ Google Ads allows you to sync several accounts for pulling cost data. For each s
 ## Recording ad revenue with Google Ads
 
 Google Ads (AdWords) revenue integration is deprecated as of November 30, 2020. For ad revenue data, AdWords customers need to migrate to [Google AdMob](/docs/google-admob-ad-revenue-attribution-configuration).
+
 <Accordion title="FAQ">
 
-``
+
 Q. Why can't I see my cost data?
 A. There are several possible reasons why you don't see the data:
 
-``When logging in, it is important to verify the right Google account is used.`<br/>`If you log in using the wrong Google account, no cost is pulled or displayed. In such a situation, you must remove the app from Google apps permissions and login with the correct account. To do so, follow these steps:
-``Click on the following URL: `[`https://myaccount.google.com/permissions](https://myaccount.google.com/permissions)
+When logging in, it is important to verify the right Google account is used.`<br/>`If you log in using the wrong Google account, no cost is pulled or displayed. In such a situation, you must remove the app from Google apps permissions and login with the correct account. To do so, follow these steps:
+Click on the following URL: `[`https://myaccount.google.com/permissions](https://myaccount.google.com/permissions)
 
-``Remove AppsFlyer Cost on Google and login again.
+Remove AppsFlyer Cost on Google and login again.
 
-``
-``In some cases, the agency cost integration is turned on but doesn't pull cost because the agency user who logged in doesn't have access to the correct Google ads customer ID. This results in the advertiser seeing incomplete cost data.
-``Make sure the agency user who logs into the Cost tab has access to the Google ads customer ID set up in the Integration tab.
-```![](https://support.appsflyer.com/hc/article_attachments/49938966132753)`
 
-``Using spaces or special characters in iOS Search or Android Landing Page campaigns may cause issues with matching cost data to click data and leading to missing cost reporting.
-``When an agency disables a cost integration after cost is already collected, but the advertiser still has an active cost integration, the data is associated with the advertiser only from the day the agency disables the integration.
+In some cases, the agency cost integration is turned on but doesn't pull cost because the agency user who logged in doesn't have access to the correct Google ads customer ID. This results in the advertiser seeing incomplete cost data.
+Make sure the agency user who logs into the Cost tab has access to the Google ads customer ID set up in the Integration tab.
+`![](https://support.appsflyer.com/hc/article_attachments/49938966132753)`
+
+Using spaces or special characters in iOS Search or Android Landing Page campaigns may cause issues with matching cost data to click data and leading to missing cost reporting.
+When an agency disables a cost integration after cost is already collected, but the advertiser still has an active cost integration, the data is associated with the advertiser only from the day the agency disables the integration.
 
 Q. Where is my geo-based click data?
 A. In some cases, AppsFlyer receives partial Geo clicks data from Google. When this occurs AppsFlyer completes the missing clicks information from other Google sources, which lack the Geo data. Therefore, when grouping by Geo, the total number of clicks from Google's campaigns, may not match with the same number with another grouping dimension.
@@ -72,7 +73,7 @@ A. In some cases, AppsFlyer receives partial Geo clicks data from Google. When t
 </Accordion>
 <Accordion title="Traits and limitations">
 
-````
+``
 
 | Trait | Remarks |
 | --- | --- |
