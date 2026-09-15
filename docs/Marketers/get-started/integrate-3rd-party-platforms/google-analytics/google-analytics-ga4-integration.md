@@ -19,7 +19,7 @@ Follow the instructions below to configure the integration with Google Analytics
 
 ### 1. Select Google Analytics (GA4) in the Partner Marketplace
 
-**Prerequisite:** Before setting up the integration, make sure you [contact the partner](https://support.appsflyer.com/hc/articles/9960361873809#contact-details) and open an account with them.
+**Prerequisite:** Before setting up the integration, make sure you [contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
 
 **To set up a new integration:**
 
@@ -46,7 +46,7 @@ Configure the following settings:
 
 > 📘 Note
 >
-> The toggle must be on [(activated)](https://support.appsflyer.com/hc/articles/360000844778) for as long as you work with the partner.
+> The toggle must be on [(activated)](/docs/partner-activation-deactivation) for as long as you work with the partner.
 
 2. In **Firebase App ID,** enter the identifier of the Firebase app. To learn how to locate the Firebase App ID, see [the Firebase documentation](https://firebase.google.com/support/faq#find-app-id).
 3. In **API Secret,** enter the API Secret used to authenticate postbacks to Google Analytics. An API Secret is generated through the Google Analytics user interface. To view, edit, or create a secret, follow the instructions in the [Google documentation](https://support.google.com/analytics/answer/9814495?sjid=5179426966283787649-EU). **When instructed to select a web data stream, choose an Android or iOS data stream instead.**
@@ -59,7 +59,7 @@ Configure the following settings:
 
 ### 3. Set default postbacks
 
-AppsFlyer can send automatic postbacks to GA4 following user installs, including both installs and re-engagements (including re-attributions). Re-engagements occur when a user who already has the app installed opens it after clicking a campaign link. Learn more about [default postbacks](https://support.appsflyer.com/hc/articles/4410395957521#default%20postbacks).
+AppsFlyer can send automatic postbacks to GA4 following user installs, including both installs and re-engagements (including re-attributions). Re-engagements occur when a user who already has the app installed opens it after clicking a campaign link. Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default%20postbacks).
 
 ### 4. Set in-app event postbacks
 
@@ -75,12 +75,12 @@ In the **Integration** tab, map AppsFlyer in-app events to Google Analytics (GA4
 
 | Parameter name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received from the AppsFlyer SDK integrated into your app.<br />**Tip**: Don't see the event you are looking for?<br />   - Make sure to activate the event on a device with a non-organic installation, and recheck.<br />   - Type it in **AppsFlyer event**, then click **Create custom**.<br />Read more about [custom event mapping.](https://support.appsflyer.com/hc/articles/208439256#custom-events) |
+| **AppsFlyer event** | The name of the event, as received from the AppsFlyer SDK integrated into your app.<br />**Tip**: Don't see the event you are looking for?<br />   - Make sure to activate the event on a device with a non-organic installation, and recheck.<br />   - Type it in **AppsFlyer event**, then click **Create custom**.<br />Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
 | **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<br />   - **Text field:** Get the corresponding event ID from the partner.<br />   - **Drop-down box:** Select the most suitable pre-defined AppsFlyer event.<br />   - **As is**: Send the events as they are, without name mapping. |
 | **for users from** | Select the sending option for the event:<br />   - **All media sources including organic**: Send postbacks for events attributed to any partner, as well as organic events. |
 | **including** | - **No data (default)**: Send only the event itself without any event values.<br />   - **Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).<br />   - **Values without revenue**: Send all the parameters **excluding** the revenue value. |
 
-3. [Optional] Click the **Add condition** icon ( <Image src="https://files.readme.io/959329be2b1286507b5c87b033785e91ab135592ae37cf3200539400832490c0-25709762755857.png" alt="condition-2.png" />) to [set conditions](https://support.appsflyer.com/hc/articles/208439256#conditional-inapp-event-postbacks) for an event.
+3. [Optional] Click the **Add condition** icon ( <Image src="https://files.readme.io/959329be2b1286507b5c87b033785e91ab135592ae37cf3200539400832490c0-25709762755857.png" alt="condition-2.png" />) to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
 4. Click **Save integration**.
 5. Send the event postback mapping
 

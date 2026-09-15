@@ -8,7 +8,7 @@ Learn more at [braze.com](https://www.braze.com/).
 
 > 🚧 Important notes
 >
-> * [Some media sources](https://support.appsflyer.com/hc/articles/360006868017-Raw-data-content-restriction-media-source-or-user-identifiers#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> * [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 > * Postbacks won't be sent if the source is organic.
 
 ## Integration overview
@@ -17,8 +17,8 @@ Follow the instructions below to configure the integration with Braze.
 
 Minimum requirements - AppsFlyer SDK:
 
-- [Android](https://support.appsflyer.com/hc/articles/207032126) (Android SDK – version 2.3.1.18 and above)
-- [iOS](https://support.appsflyer.com/hc/articles/207032126)
+- [Android](/docs/sdk-integration-overview) (Android SDK – version 2.3.1.18 and above)
+- [iOS](/docs/sdk-integration-overview)
 
 On Android, integrating with Braze requires that the Braze [Device ID](https://www.braze.com/docs/partners/advertising_technologies/attribution/appsflyer/#integration) (Braze unique user identifier) is populated in AppsFlyer Android SDK. This parameter is sent with every postback and enables the identification of each user. To perform this you must insert the following strings to your app code:
 
