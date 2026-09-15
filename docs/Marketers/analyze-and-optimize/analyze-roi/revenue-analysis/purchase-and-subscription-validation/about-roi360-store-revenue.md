@@ -335,6 +335,51 @@ The following sections provide additional details about key aspects of ROI360 in
   - Can be used in SKAN Conversion Studio.
 
     **Note**: depending on the user device platform, some parameeters aren't always populated for an in-app events
+    <Accordion title="Subscription started (af_ars_subscription_started)" icon="fa-info-circle">
+      **Description**
+
+      Recorded when a discounted or a fully priced subscription starts.
+
+      **Note**:
+
+      - New subscriptions can only be recorded via the SDK connector.
+      - For iOS, if a subscriber repurchases a subscription they already own, the SDK connector reports a successful receipt validation back to the app, but doesn't record a new transaction in AppsFlyer.
+
+      **Parameters**
+
+      - app_id
+      - customer_user_id
+      - af_currency
+      - af_expires_date_ms
+      - af_subscription_ownership_type
+      - af_original_transaction_id
+      - af_order_id
+      - af_purchase_token
+      - af_transaction_id
+      - af_product_id
+      - android_id
+      - idfa
+      - ip
+      - appsflyer_id
+      - af_purchase_date_ms
+      - af_store
+      - af_environment
+      - af_period_type
+      - af_discount_id
+      - af_discount_type
+      - event_revenue_usd
+      - event_revenue (included in the event when the revenue exceeds zero)
+      - store_commission
+      - af_revenue
+      - af_net_revenue
+      - af_net_revenue_factors
+      - af_net_revenue_tax_name
+      - af_net_revenue_tax_rate
+      - af_net_revenue_tax_exclusive
+      - af_net_revenue_country
+      - af_net_revenue_subdivision
+      - af_net_revenue_postal_code
+    </Accordion>
     <Accordion title="Subscription canceled (af_ars_subscription_canceled)" icon="fa-info-circle">
       **Description**
 
@@ -808,51 +853,7 @@ Recorded when a fully priced renewal starts, following a trial period.
 - af_net_revenue_subdivision
 - af_net_revenue_postal_code
 
-#### Subscription started (af_ars_subscription_started)
-
-**Description**
-
-Recorded when a discounted or a fully priced subscription starts.
-
-**Note**:
-
-- New subscriptions can only be recorded via the SDK connector.
-- For iOS, if a subscriber repurchases a subscription they already own, the SDK connector reports a successful receipt validation back to the app, but doesn't record a new transaction in AppsFlyer.
-
-**Parameters**
-
-- app_id
-- customer_user_id
-- af_currency
-- af_expires_date_ms
-- af_subscription_ownership_type
-- af_original_transaction_id
-- af_order_id
-- af_purchase_token
-- af_transaction_id
-- af_product_id
-- android_id
-- idfa
-- ip
-- appsflyer_id
-- af_purchase_date_ms
-- af_store
-- af_environment
-- af_period_type
-- af_discount_id
-- af_discount_type
-- event_revenue_usd
-- event_revenue (included in the event when the revenue exceeds zero)
-- store_commission
-- af_revenue
-- af_net_revenue
-- af_net_revenue_factors
-- af_net_revenue_tax_name
-- af_net_revenue_tax_rate
-- af_net_revenue_tax_exclusive
-- af_net_revenue_country
-- af_net_revenue_subdivision
-- af_net_revenue_postal_code
+####
 
 ####
 
