@@ -1465,160 +1465,19 @@ The following sections provide additional details about key aspects of ROI360 in
   </Table>
 </Accordion>
 
-####
+<Accordion title="Troubleshooting and discrepancies " icon="fa-info-circle">
+  ###
+
+  | Symptom                                                                                   | Explanation / Solution                                                                                                                                                                                                                                                                                                                                        |
+  | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | AppsFlyer shows fewer in-app purchase and subscription events than the actual app stores. | In AppsFlyer, events are only generated for users who have updated to a version of the app that includes the SDK connector. Meanwhile, the app stores log every event, regardless of the user's app version. As a result, until full adoption of the updated app version, a discrepancy between the revenue data from the app and the store data is expected. |
+</Accordion>
 
 ####
 
 ####
 
 ####
-
-####
-
-<br />
-
-### Net revenue
-
-Net revenue is a business logic layer built to serve the ROI360 Store revenue solution. It automatically calculates the net revenue value for each incoming transaction in real time and includes it in reports.
-
-<Callout icon="📘" theme="info">
-  ### Note
-
-  Net revenue is displayed in raw data reports and can be sent in real time via in-app event postbacks. It is also available in [My Dashboards](/docs/my-dashboards) as the Net metrics (Net revenue, Net ROI, Net ROAS, Net ARPU, Net profit).
-
-  To send net revenue in postbacks, configure the in-app event with the option **Values, revenue & net revenue**. See [In-app event postback configuration](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks) for details.
-</Callout>
-
-<Callout icon="👍" theme="okay">
-  ### Tip
-
-  You can also configure your in-app event postbacks to send net revenue in place of gross revenue in the standard revenue (monetary) parameter. To get access to this configuration, contact your Customer Success Manager (CSM).
-</Callout>
-
-Net revenue considers the following factors in the gross-to-net revenue calculation:
-
-- **Store commission**:
-  - It is calculated and reported automatically. No action is required on your part.
-  - For purchases (IAP), the default store commission depends on the storefront:
-    - App Store — Japan: 26%. China mainland (CN): 25%. Rest of the world: 30%.
-    - Play Store: 30%.
-  - For subscriptions, the commission is automatically calculated per subscriber, based on the subscriber's lifetime.
-    - App Store — first 12 months: 26% in Japan, 25% in China mainland (CN), 30% in the rest of the world. From the 13th month: 15% in Japan, 12% in China mainland (CN), 15% in the rest of the world.
-    - Play Store: 15% from day one.
-  - Related net revenue parameters are available in raw data reports.
-  - Use [the Net revenue API](https://dev.appsflyer.com/hc/reference/overview-7) to set a different store commission rate than the default. This is useful, for example, if your app is enrolled in Apple's Small Business Program, where the commission rate is 15% (12% in China mainland (CN)).
-- **Tax**:
-  - Tax is reported by default for any transaction measured by ROI360 using the default tax rate configuration.
-  - This applies to tax-inclusive countries (where tax is included in the list price). So, for example, in the UK, AppsFlyer deducts the sum of the tax and the store commission. For tax-exclusive countries, such as the USA, where the list price does not include tax, revenue and net revenue parameters do not include tax by default.
-  - The configuration can be edited using [the Net revenue API](https://dev.appsflyer.com/hc/reference/overview-7). To learn which countries are supported and their default tax rates, see [this JSON file](https://docs.google.com/document/d/e/2PACX-1vSl3DwlK2Gt2aa5gmDzD3-K3CtnIM85oMNrqx3PCTamwCERWYU48GugNpD31BFjA2PJjZnqaXIVe2Hx/pub). The developer can edit it or use it as-is in the API.
-
-When viewing net revenue in reports, the following parameters contain the net revenue data. See the [parameter dictionary](/docs/about-roi360-store-revenue#parameter-dictionary) for more details.
-
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Parameter
-      </th>
-
-      <th>
-        Net revenue factor
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        `store_commission`
-      </td>
-
-      <td>
-        Store commission
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `af_net_revenue_tax_name`
-      </td>
-
-      <td>
-        Tax
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `af_net_revenue_tax_rate`
-      </td>
-
-      <td>
-        Tax
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `af_net_revenue_tax_exclusive`
-      </td>
-
-      <td>
-        Tax
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `af_net_revenue_postal_code`
-      </td>
-
-      <td>
-        Tax
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `af_net_revenue_country`
-      </td>
-
-      <td>
-        Tax
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `af_net_revenue_subdivision`
-      </td>
-
-      <td>
-        Tax
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `af_net_revenue`
-      </td>
-
-      <td>
-        - Store commission<br />- Tax
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        `af_net_revenue_factors`
-      </td>
-
-      <td>
-        - Store commission<br />- Tax
-      </td>
-    </tr>
-  </tbody>
-</Table>
 
 ### Troubleshooting and discrepancies
 
