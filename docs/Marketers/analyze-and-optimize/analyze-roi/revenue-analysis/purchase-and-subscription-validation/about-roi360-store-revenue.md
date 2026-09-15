@@ -1,25 +1,86 @@
 ---
-title: "About ROI360 store revenue"
-excerpt: "ROI360 store revenue is AppsFlyer's premium solution for complete and accurate measurement of revenue from in-app purchases and subscriptions."
+title: About ROI360 store revenue
+excerpt: >-
+  ROI360 store revenue is AppsFlyer's premium solution for complete and accurate
+  measurement of revenue from in-app purchases and subscriptions.
 ---
 Use ROI360 store revenue to validate in-app purchases and subscriptions, prevent duplicates, and calculate net revenue.
 
-> ❗️ Important!
->
-> ROI360 store revenue is available only to customers on the ROI360 premium plan. To check your plan or upgrade, contact your Customer Success Manager (CSM).
+<Callout icon="❗️" theme="error">
+  ### Important!
+
+  ROI360 store revenue is available only to customers on the ROI360 premium plan. To check your plan or upgrade, contact your Customer Success Manager (CSM).
+</Callout>
 
 ROI360 store revenue is AppsFlyer’s premium solution for complete and accurate measurement of revenue from in-app purchases and subscriptions. It provides a comprehensive view of the customer life cycle, enabling the accurate measurement of Return On Ad Spend (ROAS).
 
-| Feature | Details |
-| --- | --- |
-| Revenue measurement scope | - Revenue from all in-app purchases of products and subscriptions managed through App Store Connect (iOS) and Google Play Console (Android)<br />- Refunds<br />- Pending and deferred transaction revenue (Android)<br />- Subscription-related events that occur both inside and outside the app<br />- Net revenue, which accounts for store commissions and taxes |
-| Revenue validation and accuracy | The solution prevents duplicate transactions from being recorded. On iOS, this also includes preventing duplication caused by Family Sharing. ROI360 store revenue can also forward Apple App Store transaction data directly to advertisers. |
-| Data sources | - AppsFlyer purchase SDK connector for Android and iOS<br />- App Store server notifications<br />- Google Play Real-Time Developer Notifications (RTDN) |
-| Reporting and data availability | Revenue data is available in AppsFlyer dashboards and reports and can also be shared with partners through postbacks. |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Feature
+      </th>
 
-> 🚧 Warning
->
-> When using ROI360 store revenue, do not send in-app purchase events, as this will result in duplicate revenue reporting.
+      <th>
+        Details
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Revenue measurement scope
+      </td>
+
+      <td>
+        - Revenue from all in-app purchases of products and subscriptions managed through App Store Connect (iOS) and Google Play Console (Android)
+        - Refunds
+        - Pending and deferred transaction revenue (Android)
+        - Subscription-related events that occur both inside and outside the app
+        - Net revenue, which accounts for store commissions and taxes&#x20;
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Revenue validation and accuracy
+      </td>
+
+      <td>
+        The solution prevents duplicate transactions from being recorded. On iOS, this also includes preventing duplication caused by Family Sharing. ROI360 store revenue can also forward Apple App Store transaction data directly to advertisers.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Data sources
+      </td>
+
+      <td>
+        - AppsFlyer purchase SDK connector for Android and iOS
+        - App Store server notifications
+        - Google Play Real-Time Developer Notifications (RTDN)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Reporting and data availability
+      </td>
+
+      <td>
+        Revenue data is available in AppsFlyer dashboards and reports and can also be shared with partners through postbacks.
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+<Callout icon="🚧" theme="warn">
+  ### Warning
+
+  When using ROI360 store revenue, do not send in-app purchase events, as this will result in duplicate revenue reporting.
+</Callout>
 
 ## How does ROI360 store revenue work?
 
@@ -52,11 +113,13 @@ See the [Set up ROI360 store revenue](/docs/set-up-roi360-store-revenue) article
 
 The following sections provide additional details about key aspects of ROI360 in-app purchase (IAP) and subscription revenue measurement. These include events and parameters for IAP and subscription events, Net revenue, which supports gross-to-net revenue calculations, and the general characteristics and limitations of the ROI360 IAP and subscription revenue measurement solution.
 
-> 📘 Note
->
-> To send additional custom parameters with your in-app events, configure a **custom data source** in the [Purchase SDK Connector](https://dev.appsflyer.com/hc/docs/purchase-connector). This allows you to enrich purchase and subscription events with your own business logic or metadata.
->
-> These parameters will be available in the raw data report's `custom_data` field.
+<Callout icon="📘" theme="info">
+  ### Note
+
+  To send additional custom parameters with your in-app events, configure a **custom data source** in the [Purchase SDK Connector](https://dev.appsflyer.com/hc/docs/purchase-connector). This allows you to enrich purchase and subscription events with your own business logic or metadata.
+
+  These parameters will be available in the raw data report's `custom_data` field.
+</Callout>
 
 ### IAP-related events and parameters
 
@@ -69,7 +132,7 @@ The following sections display the IAP-related events that AppsFlyer measures an
 - Sent to partners via postbacks.
 - Supported in SKAN Conversion Studio.
 
-#### Purchase (af\_purchase)
+#### Purchase (af_purchase)
 
 **Description**
 
@@ -77,32 +140,32 @@ Recorded when a user makes a purchase.
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_revenue
-- af\_net\_revenue
-- af\_net\_revenue\_tax\_name
-- af\_net\_revenue\_tax\_rate
-- af\_net\_revenue\_tax\_exclusive
-- af\_net\_revenue\_country
-- af\_net\_revenue\_subdivision
-- af\_net\_revenue\_postal\_code
-- af\_net\_revenue\_factors
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_revenue
+- af_net_revenue
+- af_net_revenue_tax_name
+- af_net_revenue_tax_rate
+- af_net_revenue_tax_exclusive
+- af_net_revenue_country
+- af_net_revenue_subdivision
+- af_net_revenue_postal_code
+- af_net_revenue_factors
 
-#### Purchase free (af\_purchase\_free)
+#### Purchase free (af_purchase_free)
 
 **Description**
 
@@ -110,32 +173,32 @@ Recorded when a user makes a purchase that has no revenue amount. All revenue pa
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_revenue
-- af\_net\_revenue
-- af\_net\_revenue\_tax\_name
-- af\_net\_revenue\_tax\_rate
-- af\_net\_revenue\_tax\_exclusive
-- af\_net\_revenue\_country
-- af\_net\_revenue\_subdivision
-- af\_net\_revenue\_postal\_code
-- af\_net\_revenue\_factors
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_revenue
+- af_net_revenue
+- af_net_revenue_tax_name
+- af_net_revenue_tax_rate
+- af_net_revenue_tax_exclusive
+- af_net_revenue_country
+- af_net_revenue_subdivision
+- af_net_revenue_postal_code
+- af_net_revenue_factors
 
-#### Purchase canceled (af\_purchase\_canceled)
+#### Purchase canceled (af_purchase_canceled)
 
 **Description**
 
@@ -143,23 +206,23 @@ Recorded when a user cancels a purchase.
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
 
-#### Purchase pending (af\_purchase\_pending)
+#### Purchase pending (af_purchase_pending)
 
 **Description**
 
@@ -167,23 +230,23 @@ Recorded when a user makes a purchase but the payment isn't yet processed.
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
 
-#### Refund (af\_purchase\_refund)
+#### Refund (af_purchase_refund)
 
 **Description**
 
@@ -191,36 +254,36 @@ Recorded when a purchase is refunded.
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_discount\_type
-- event\_revenue\_usd
-- event\_revenue (included in the event when the revenue exceeds zero)
-- store\_commission
-- af\_revenue
-- af\_net\_revenue
-- af\_net\_revenue\_factors
-- af\_net\_revenue\_tax\_name
-- af\_net\_revenue\_tax\_rate
-- af\_net\_revenue\_tax\_exclusive
-- af\_net\_revenue\_country
-- af\_net\_revenue\_subdivision
-- af\_net\_revenue\_postal\_code
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_discount_type
+- event_revenue_usd
+- event_revenue (included in the event when the revenue exceeds zero)
+- store_commission
+- af_revenue
+- af_net_revenue
+- af_net_revenue_factors
+- af_net_revenue_tax_name
+- af_net_revenue_tax_rate
+- af_net_revenue_tax_exclusive
+- af_net_revenue_country
+- af_net_revenue_subdivision
+- af_net_revenue_postal_code
 
-#### Test purchase (af\_purchase\_sandbox\_sdk)
+#### Test purchase (af_purchase_sandbox_sdk)
 
 **Description**
 
@@ -228,23 +291,23 @@ Recorded when testing a purchase recorded via SDK in sandbox environment.
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_purchase\_state
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_purchase_state
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_net
-- af\_sandbox\_revenue
+- appsflyer_id
+- af_net
+- af_sandbox_revenue
 
-#### Test purchase (af\_purchase\_sandbox\_s2s)
+#### Test purchase (af_purchase_sandbox_s2s)
 
 **Description**
 
@@ -252,21 +315,21 @@ Recorded when testing a purchase reported via S2S in a sandbox environment.
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_purchase\_state
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_purchase_state
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_net
-- af\_sandbox\_revenue
+- appsflyer_id
+- af_net
+- af_sandbox_revenue
 
 ### Subscription-related events and parameters
 
@@ -279,11 +342,13 @@ All generated events:
 - Can be sent via postbacks to partners.
 - Can be used in SKAN Conversion Studio.
 
-> 📘 Note
->
-> Depending on the user device platform, some parameters aren't always populated for an in-app event.
+<Callout icon="📘" theme="info">
+  ### Note
 
-#### Trial started (af\_ars\_trial\_started)
+  Depending on the user device platform, some parameters aren't always populated for an in-app event.
+</Callout>
+
+#### Trial started (af_ars_trial_started)
 
 **Description**
 
@@ -291,26 +356,26 @@ Recorded when a subscriber begins a trial period.
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_expires\_date\_ms
-- af\_subscription\_ownership\_type
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_expires_date_ms
+- af_subscription_ownership_type
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_period\_type
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_period_type
 
-#### Trial canceled (af\_ars\_trial\_canceled)
+#### Trial canceled (af_ars_trial_canceled)
 
 **Description**
 
@@ -318,26 +383,26 @@ Recorded when a subscriber cancels the automatic renewal of the subscription dur
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_expires\_date\_ms
-- af\_subscription\_ownership\_type
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_expires_date_ms
+- af_subscription_ownership_type
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_period\_type
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_period_type
 
-#### Trial churned (af\_ars\_trial\_churned)
+#### Trial churned (af_ars_trial_churned)
 
 **Description**
 
@@ -345,27 +410,27 @@ Recorded when a subscriber churns following a trial period. This happens after a
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_expires\_date\_ms
-- af\_subscription\_ownership\_type
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_expires_date_ms
+- af_subscription_ownership_type
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_period\_type
-- af\_reason
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_period_type
+- af_reason
 
-#### Trial converted (af\_ars\_trial\_converted)
+#### Trial converted (af_ars_trial_converted)
 
 **Description**
 
@@ -373,84 +438,85 @@ Recorded when a fully priced renewal starts, following a trial period.
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_expires\_date\_ms
-- af\_subscription\_ownership\_type
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_expires_date_ms
+- af_subscription_ownership_type
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_period\_type
-- af\_discount\_id
-- af\_discount\_type
-- event\_revenue\_usd
-- store\_commission
-- af\_revenue (included in the event only when the revenue exceeds zero)
-- af\_net\_revenue
-- af\_net\_revenue\_factors
-- af\_net\_revenue\_tax\_name
-- af\_net\_revenue\_tax\_rate
-- af\_net\_revenue\_tax\_exclusive
-- af\_net\_revenue\_country
-- af\_net\_revenue\_subdivision
-- af\_net\_revenue\_postal\_code
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_period_type
+- af_discount_id
+- af_discount_type
+- event_revenue_usd
+- store_commission
+- af_revenue (included in the event only when the revenue exceeds zero)
+- af_net_revenue
+- af_net_revenue_factors
+- af_net_revenue_tax_name
+- af_net_revenue_tax_rate
+- af_net_revenue_tax_exclusive
+- af_net_revenue_country
+- af_net_revenue_subdivision
+- af_net_revenue_postal_code
 
-#### Subscription started (af\_ars\_subscription\_started)
+#### Subscription started (af_ars_subscription_started)
 
 **Description**
 
 Recorded when a discounted or a fully priced subscription starts.
 
 **Note**:
+
 - New subscriptions can only be recorded via the SDK connector.
 - For iOS, if a subscriber repurchases a subscription they already own, the SDK connector reports a successful receipt validation back to the app, but doesn't record a new transaction in AppsFlyer.
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_expires\_date\_ms
-- af\_subscription\_ownership\_type
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_expires_date_ms
+- af_subscription_ownership_type
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_period\_type
-- af\_discount\_id
-- af\_discount\_type
-- event\_revenue\_usd
-- event\_revenue (included in the event when the revenue exceeds zero)
-- store\_commission
-- af\_revenue
-- af\_net\_revenue
-- af\_net\_revenue\_factors
-- af\_net\_revenue\_tax\_name
-- af\_net\_revenue\_tax\_rate
-- af\_net\_revenue\_tax\_exclusive
-- af\_net\_revenue\_country
-- af\_net\_revenue\_subdivision
-- af\_net\_revenue\_postal\_code
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_period_type
+- af_discount_id
+- af_discount_type
+- event_revenue_usd
+- event_revenue (included in the event when the revenue exceeds zero)
+- store_commission
+- af_revenue
+- af_net_revenue
+- af_net_revenue_factors
+- af_net_revenue_tax_name
+- af_net_revenue_tax_rate
+- af_net_revenue_tax_exclusive
+- af_net_revenue_country
+- af_net_revenue_subdivision
+- af_net_revenue_postal_code
 
-#### Subscription canceled (af\_ars\_subscription\_canceled)
+#### Subscription canceled (af_ars_subscription_canceled)
 
 **Description**
 
@@ -458,26 +524,26 @@ Recorded when an auto-renewal subscription is canceled in the middle of a billin
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_expires\_date\_ms
-- af\_subscription\_ownership\_type
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_expires_date_ms
+- af_subscription_ownership_type
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_period\_type
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_period_type
 
-#### Subscription paused (af\_ars\_subscription\_paused) - Android only
+#### Subscription paused (af_ars_subscription_paused) - Android only
 
 **Description**
 
@@ -485,25 +551,25 @@ Recorded when a user pauses an active subscription.
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_expires\_date\_ms
-- af\_subscription\_ownership\_type
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_expires_date_ms
+- af_subscription_ownership_type
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_period\_type
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_period_type
 
-#### Subscription resumed (af\_ars\_subscription\_resumed)
+#### Subscription resumed (af_ars_subscription_resumed)
 
 **Description**
 
@@ -511,34 +577,34 @@ Recorded when a fully priced subscription is resumed following a churned or refu
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_expires\_date\_ms
-- af\_subscription\_ownership\_type
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_expires_date_ms
+- af_subscription_ownership_type
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_period\_type
-- af\_discount\_id
-- af\_discount\_type
-- af\_reason
-- event\_revenue (included in the event when event revenue exceeds zero)
-- store\_commission
-- af\_revenue
-- af\_net\_revenue
-- af\_net\_revenue\_factors
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_period_type
+- af_discount_id
+- af_discount_type
+- af_reason
+- event_revenue (included in the event when event revenue exceeds zero)
+- store_commission
+- af_revenue
+- af_net_revenue
+- af_net_revenue_factors
 
-#### Subscription churned (af\_ars\_subscription\_churned)
+#### Subscription churned (af_ars_subscription_churned)
 
 **Description**
 
@@ -546,69 +612,70 @@ Recorded when a subscriber churns. This usually happens after auto-renewal cance
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_expires\_date\_ms
-- af\_subscription\_ownership\_type
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_expires_date_ms
+- af_subscription_ownership_type
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_period\_type
-- af\_reason
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_period_type
+- af_reason
 
-#### Subscription refunded (af\_ars\_subscription\_refunded)
+#### Subscription refunded (af_ars_subscription_refunded)
 
 **Description**
 
 Recorded when a subscriber is issued a refund.
 
 **Note:**
+
 - This event is usually generated along with a negative value. In cases where it is impossible to detect which transactions were refunded, or details of the refund aren't included in the notification, the refund event shows no value.
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_reason
-- af\_subscription\_ownership\_type
-- af\_discount\_id
-- af\_discount\_type
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_refunded\_transaction\_ids
-- event\_revenue\_usd
-- event\_revenue (included in the event when the revenue exceeds zero)
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_reason
+- af_subscription_ownership_type
+- af_discount_id
+- af_discount_type
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_refunded_transaction_ids
+- event_revenue_usd
+- event_revenue (included in the event when the revenue exceeds zero)
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_store
-- af\_environment
-- af\_period\_type
-- store\_commission
-- af\_revenue
-- af\_net\_revenue
-- af\_net\_revenue\_factors
-- af\_net\_revenue\_tax\_name
-- af\_net\_revenue\_tax\_rate
-- af\_net\_revenue\_tax\_exclusive
-- af\_net\_revenue\_country
-- af\_net\_revenue\_subdivision
-- af\_net\_revenue\_postal\_code
+- appsflyer_id
+- af_store
+- af_environment
+- af_period_type
+- store_commission
+- af_revenue
+- af_net_revenue
+- af_net_revenue_factors
+- af_net_revenue_tax_name
+- af_net_revenue_tax_rate
+- af_net_revenue_tax_exclusive
+- af_net_revenue_country
+- af_net_revenue_subdivision
+- af_net_revenue_postal_code
 
-#### Subscription billing grace (af\_ars\_subscription\_billing\_grace)
+#### Subscription billing grace (af_ars_subscription_billing_grace)
 
 **Description**
 
@@ -616,26 +683,26 @@ Recorded when a subscription renewal fails due to a billing issue and the subscr
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_expires\_date\_ms
-- af\_subscription\_ownership\_type
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_expires_date_ms
+- af_subscription_ownership_type
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_period\_type
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_period_type
 
-#### Subscription renewed (af\_ars\_subscription\_renewed)
+#### Subscription renewed (af_ars_subscription_renewed)
 
 **Description**
 
@@ -643,34 +710,34 @@ Recorded when an auto-renewal subscription takes place.
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_expires\_date\_ms
-- af\_subscription\_ownership\_type
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_expires_date_ms
+- af_subscription_ownership_type
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_period\_type
-- af\_discount\_id
-- af\_discount\_type
-- event\_revenue\_usd
-- event\_revenue (included in the event when the revenue exceeds zero)
-- store\_commission
-- af\_revenue
-- af\_net\_revenue
-- af\_net\_revenue\_factors
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_period_type
+- af_discount_id
+- af_discount_type
+- event_revenue_usd
+- event_revenue (included in the event when the revenue exceeds zero)
+- store_commission
+- af_revenue
+- af_net_revenue
+- af_net_revenue_factors
 
-#### Subscription changed (af\_ars\_subscription\_xgraded)
+#### Subscription changed (af_ars_subscription_xgraded)
 
 **Description**
 
@@ -678,34 +745,34 @@ Recorded when a subscriber upgrades, downgrades, or cross-grades to a different 
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
-- af\_currency
-- af\_expires\_date\_ms
-- af\_subscription\_ownership\_type
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- app_id
+- customer_user_id
+- af_currency
+- af_expires_date_ms
+- af_subscription_ownership_type
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_period\_type
-- af\_discount\_id
-- af\_discount\_type
-- event\_revenue\_usd
-- event\_revenue (included in the event when the revenue exceeds zero)
-- store\_commission
-- af\_revenue
-- af\_net\_revenue
-- af\_net\_revenue\_factors
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_period_type
+- af_discount_id
+- af_discount_type
+- event_revenue_usd
+- event_revenue (included in the event when the revenue exceeds zero)
+- store_commission
+- af_revenue
+- af_net_revenue
+- af_net_revenue_factors
 
-#### Existing subscriber (af\_ars\_existing\_subscriber)
+#### Existing subscriber (af_ars_existing_subscriber)
 
 **Description**
 
@@ -713,29 +780,29 @@ Recorded when the SDK connector is notified about a subscriber in the middle of 
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
+- app_id
+- customer_user_id
 - country
-- af\_currency
-- af\_expires\_date\_ms
-- af\_subscription\_ownership\_type
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- af_currency
+- af_expires_date_ms
+- af_subscription_ownership_type
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_period\_type
-- af\_cuids
-- af\_validated
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_period_type
+- af_cuids
+- af_validated
 
-#### Test purchase (af\_ars\_sandbox\_sdk)
+#### Test purchase (af_ars_sandbox_sdk)
 
 **Description**
 
@@ -743,33 +810,33 @@ Recorded when testing a purchase recorded via SDK in sandbox environment.
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
+- app_id
+- customer_user_id
 - country
-- af\_currency
-- af\_expires\_date\_ms
-- af\_subscription\_ownership\_type
-- af\_discount\_id
-- af\_discount\_type
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- af_currency
+- af_expires_date_ms
+- af_subscription_ownership_type
+- af_discount_id
+- af_discount_type
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_period\_type
-- af\_cuids
-- af\_validated
-- af\_net
-- af\_sandbox\_revenue
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_period_type
+- af_cuids
+- af_validated
+- af_net
+- af_sandbox_revenue
 
-#### Test purchase (af\_ars\_sandbox\_s2s)
+#### Test purchase (af_ars_sandbox_s2s)
 
 **Description**
 
@@ -777,31 +844,31 @@ Recorded when testing a purchase reported via S2S in a sandbox environment.
 
 **Parameters**
 
-- app\_id
-- customer\_user\_id
+- app_id
+- customer_user_id
 - country
-- af\_currency
-- af\_expires\_date\_ms
-- af\_subscription\_ownership\_type
-- af\_discount\_id
-- af\_discount\_type
-- af\_original\_transaction\_id
-- af\_order\_id
-- af\_purchase\_token
-- af\_transaction\_id
-- af\_product\_id
-- android\_id
+- af_currency
+- af_expires_date_ms
+- af_subscription_ownership_type
+- af_discount_id
+- af_discount_type
+- af_original_transaction_id
+- af_order_id
+- af_purchase_token
+- af_transaction_id
+- af_product_id
+- android_id
 - idfa
 - ip
-- appsflyer\_id
-- af\_purchase\_date\_ms
-- af\_store
-- af\_environment
-- af\_period\_type
-- af\_cuids
-- af\_validated
-- af\_net
-- af\_sandbox\_revenue
+- appsflyer_id
+- af_purchase_date_ms
+- af_store
+- af_environment
+- af_period_type
+- af_cuids
+- af_validated
+- af_net
+- af_sandbox_revenue
 
 ### Parameter dictionary
 
@@ -809,68 +876,492 @@ Parameters for IAP and subscription events display in raw data reports either as
 
 The parameters that have their own columns are:
 
-- app\_id
-- customer\_user\_id
-- country\_code
-- af\_currency
-- event\_revenue\_usd
-- af\_revenue
-- android\_id
+- app_id
+- customer_user_id
+- country_code
+- af_currency
+- event_revenue_usd
+- af_revenue
+- android_id
 - ip
 - idfa
-- appsflyer\_id
+- appsflyer_id
 
 See the [data fields dictionary](/docs/raw-data-field-dictionary) for more details about these parameters.
 
 The following table describes the raw data parameters available in ARS and VIAP events.
 
-| Parameter | Remarks | Product |
-| --- | --- | --- |
-| af\_cancelation\_date\_ms | Date of the cancelation | IAP |
-| af\_cuids | - In the context of ARS, this parameter contains an array with all CUIDs.<br />- The array of CUIDs displays irrespective of the device IDs. Thus, the same CUIDs can display for more than one device ID. | Subscription |
-| af\_discount\_id | The offer ID presented to the user during the initial purchase. The ID is populated only when there is a discount code. | - IAP<br />- Subscription |
-| af\_discount\_type | The discount type redeemed by the user. Possible values:<br />- IOS<br />  - introductory<br />  - promotional<br />  - offer\_codes<br />  - win\_back<br />- Android<br />  - intro price<br />  - one\_time\_code<br />  - vanity\_code | Subscription |
-| af\_environment | The environment from which data is received, either production or sandbox. | - IAP<br />- Subscription |
-| af\_expires\_date\_ms | The expiration date of the current subscription billing cycle | Subscription |
-| af\_net\_revenue | Net revenue calculated based on all factored reasons. See af\_net\_revenue\_factors. | - IAP<br />- Subscription |
-| af\_net\_revenue\_country | - [Two-letter ISO country code](https://www.nationsonline.org/oneworld/country_code_list.htm) for which the tax is applied.<br />- Example: CA<br />- Note: For United Kingdom, the code implemented is UK, not GB. | - IAP<br />- Subscription |
-| af\_net\_revenue\_factors | - An array representing all factored reasons that produce the reported af\_net\_revenue amount.<br />- Example value: store\_commission | - IAP<br />- Subscription |
-| af\_net\_revenue\_postal\_code | - String of letters and/or numbers<br />- Example: L4J8E3 | - IAP<br />- Subscription |
-| af\_net\_revenue\_subdivision | - For some countries, there can be an additional state or subdivision. This is handled according to [ISO 3166-2 subdivision codes](https://service.unece.org/trade/locode/2023-1%20SubdivisionCodes.htm).<br />- Includes the country code and subdivision code.<br />- Example: US-CA | - IAP<br />- Subscription |
-| af\_net\_revenue\_tax\_exclusive | - Boolean parameter, either true or false.<br />- False means tax is included in the overall revenue.<br />- True means tax is in addition to the overall stated revenue. | - IAP<br />- Subscription |
-| af\_net\_revenue\_tax\_name | - Name appearing in the customer invoice that describes the specific type of tax.<br />- Example: Sales, VAT, GST | - IAP<br />- Subscription |
-| af\_net\_revenue\_tax\_rate | - Number up to 4 decimal places representing the tax percentage collected.<br />- Example: 7.25 | - IAP<br />- Subscription |
-| af\_offer\_id | - The offer ID applied to the transaction, when relevant (for example, discounted or promotional offers).<br />- Android only | - IAP<br />- Subscription |
-| af\_order\_id | - The order ID for the transaction<br />- Android only | - IAP<br />- Subscription |
-| af\_original\_transaction\_id | - The original transaction ID<br />- iOS only | - IAP<br />- Subscription |
-| af\_original\_transaction\_id | - The original ID of the transaction<br />- iOS only | - IAP<br />- Subscription |
-| af\_period\_type | - Subscription or trial period type.<br />- Possible values:<br />  - trial<br />  - intro<br />  - normal | Subscription |
-| af\_product\_id | The subscription product ID | - IAP<br />- Subscription |
-| af\_purchase\_date\_ms | The purchase date for the reported product ID in-app event | - IAP<br />- Subscription |
-| af\_purchase\_option\_id | - The purchase option ID associated with the transaction.<br />- Android only | IAP |
-| af\_purchase\_option\_type | The purchase option type of the transaction. Possible values (Android):<br />- buy<br />- rent | IAP |
-| af\_purchase\_state | Possible values:<br />- Purchased<br />- Canceled<br />- Pending | IAP |
-| af\_purchase\_token | - The purchase token for the transaction<br />- Android only | - IAP<br />- Subscription |
-| af\_reason | [content unchanged] | - IAP<br />- Subscription |
-| af\_refunded\_transaction\_ids | - An array of all refunded transaction IDs<br />- iOS only | - IAP<br />- Subscription |
-| af\_store | The app store the subscription product was purchased from | - IAP<br />- Subscription |
-| af\_subscription\_ownership\_type | FAMILY\_SHARED means the user has access via family sharing. PURCHASED means the paying user made the purchase. | Subscription |
-| af\_transaction\_id | - The ID of the transaction<br />- iOS only | - IAP<br />- Subscription |
-| store\_commission | - The calculated percentage of commission the store gets from the purchased product.<br />- Displayed as a decimal.<br />- Example: 30 | - IAP<br />- Subscription |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Parameter
+      </th>
+
+      <th>
+        Remarks
+      </th>
+
+      <th>
+        Product
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        af_cancelation_date_ms
+      </td>
+
+      <td>
+        Date of the cancelation
+      </td>
+
+      <td>
+        IAP
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_cuids
+      </td>
+
+      <td>
+        - In the context of ARS, this parameter contains an array with all CUIDs.<br />- The array of CUIDs displays irrespective of the device IDs. Thus, the same CUIDs can display for more than one device ID.
+      </td>
+
+      <td>
+        Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_discount_id
+      </td>
+
+      <td>
+        The offer ID presented to the user during the initial purchase. The ID is populated only when there is a discount code.
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_discount_type
+      </td>
+
+      <td>
+        The discount type redeemed by the user. Possible values:<br />- IOS<br />  - introductory<br />  - promotional<br />  - offer_codes<br />  - win_back<br />- Android<br />  - intro price<br />  - one_time_code<br />  - vanity_code
+      </td>
+
+      <td>
+        Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_environment
+      </td>
+
+      <td>
+        The environment from which data is received, either production or sandbox.
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_expires_date_ms
+      </td>
+
+      <td>
+        The expiration date of the current subscription billing cycle
+      </td>
+
+      <td>
+        Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_net_revenue
+      </td>
+
+      <td>
+        Net revenue calculated based on all factored reasons. See af_net_revenue_factors.
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_net_revenue_country
+      </td>
+
+      <td>
+        - [Two-letter ISO country code](https://www.nationsonline.org/oneworld/country_code_list.htm) for which the tax is applied.<br />- Example: CA<br />- Note: For United Kingdom, the code implemented is UK, not GB.
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_net_revenue_factors
+      </td>
+
+      <td>
+        - An array representing all factored reasons that produce the reported af_net_revenue amount.<br />- Example value: store_commission
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_net_revenue_postal_code
+      </td>
+
+      <td>
+        - String of letters and/or numbers<br />- Example: L4J8E3
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_net_revenue_subdivision
+      </td>
+
+      <td>
+        - For some countries, there can be an additional state or subdivision. This is handled according to [ISO 3166-2 subdivision codes](https://service.unece.org/trade/locode/2023-1%20SubdivisionCodes.htm).<br />- Includes the country code and subdivision code.<br />- Example: US-CA
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_net_revenue_tax_exclusive
+      </td>
+
+      <td>
+        - Boolean parameter, either true or false.<br />- False means tax is included in the overall revenue.<br />- True means tax is in addition to the overall stated revenue.
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_net_revenue_tax_name
+      </td>
+
+      <td>
+        - Name appearing in the customer invoice that describes the specific type of tax.<br />- Example: Sales, VAT, GST
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_net_revenue_tax_rate
+      </td>
+
+      <td>
+        - Number up to 4 decimal places representing the tax percentage collected.<br />- Example: 7.25
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_offer_id
+      </td>
+
+      <td>
+        - The offer ID applied to the transaction, when relevant (for example, discounted or promotional offers).<br />- Android only
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_order_id
+      </td>
+
+      <td>
+        - The order ID for the transaction<br />- Android only
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_original_transaction_id
+      </td>
+
+      <td>
+        - The original transaction ID<br />- iOS only
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_original_transaction_id
+      </td>
+
+      <td>
+        - The original ID of the transaction<br />- iOS only
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_period_type
+      </td>
+
+      <td>
+        - Subscription or trial period type.<br />- Possible values:<br />  - trial<br />  - intro<br />  - normal
+      </td>
+
+      <td>
+        Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_product_id
+      </td>
+
+      <td>
+        The subscription product ID
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_purchase_date_ms
+      </td>
+
+      <td>
+        The purchase date for the reported product ID in-app event
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_purchase_option_id
+      </td>
+
+      <td>
+        - The purchase option ID associated with the transaction.<br />- Android only
+      </td>
+
+      <td>
+        IAP
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_purchase_option_type
+      </td>
+
+      <td>
+        The purchase option type of the transaction. Possible values (Android):<br />- buy<br />- rent
+      </td>
+
+      <td>
+        IAP
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_purchase_state
+      </td>
+
+      <td>
+        Possible values:<br />- Purchased<br />- Canceled<br />- Pending
+      </td>
+
+      <td>
+        IAP
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_purchase_token
+      </td>
+
+      <td>
+        - The purchase token for the transaction<br />- Android only
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_reason
+      </td>
+
+      <td>
+        \[content unchanged]
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_refunded_transaction_ids
+      </td>
+
+      <td>
+        - An array of all refunded transaction IDs<br />- iOS only
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_store
+      </td>
+
+      <td>
+        The app store the subscription product was purchased from
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_subscription_ownership_type
+      </td>
+
+      <td>
+        FAMILY_SHARED means the user has access via family sharing. PURCHASED means the paying user made the purchase.
+      </td>
+
+      <td>
+        Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        af_transaction_id
+      </td>
+
+      <td>
+        - The ID of the transaction<br />- iOS only
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        store_commission
+      </td>
+
+      <td>
+        - The calculated percentage of commission the store gets from the purchased product.<br />- Displayed as a decimal.<br />- Example: 30
+      </td>
+
+      <td>
+        - IAP<br />- Subscription
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ### Net revenue
 
 Net revenue is a business logic layer built to serve the ROI360 Store revenue solution. It automatically calculates the net revenue value for each incoming transaction in real time and includes it in reports.
 
-> 📘 Note
->
-> Net revenue is displayed in raw data reports and can be sent in real time via in-app event postbacks. It is also available in [My Dashboards](/docs/my-dashboards) as the Net metrics (Net revenue, Net ROI, Net ROAS, Net ARPU, Net profit).
->
-> To send net revenue in postbacks, configure the in-app event with the option **Values, revenue & net revenue**. See [In-app event postback configuration](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks) for details.
+<Callout icon="📘" theme="info">
+  ### Note
 
-> 👍 Tip
->
-> You can also configure your in-app event postbacks to send net revenue in place of gross revenue in the standard revenue (monetary) parameter. To get access to this configuration, contact your Customer Success Manager (CSM).
+  Net revenue is displayed in raw data reports and can be sent in real time via in-app event postbacks. It is also available in [My Dashboards](/docs/my-dashboards) as the Net metrics (Net revenue, Net ROI, Net ROAS, Net ARPU, Net profit).
+
+  To send net revenue in postbacks, configure the in-app event with the option **Values, revenue & net revenue**. See [In-app event postback configuration](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks) for details.
+</Callout>
+
+<Callout icon="👍" theme="okay">
+  ### Tip
+
+  You can also configure your in-app event postbacks to send net revenue in place of gross revenue in the standard revenue (monetary) parameter. To get access to this configuration, contact your Customer Success Manager (CSM).
+</Callout>
 
 Net revenue considers the following factors in the gross-to-net revenue calculation:
 
@@ -891,38 +1382,318 @@ Net revenue considers the following factors in the gross-to-net revenue calculat
 
 When viewing net revenue in reports, the following parameters contain the net revenue data. See the [parameter dictionary](/docs/about-roi360-store-revenue#parameter-dictionary) for more details.
 
-| Parameter | Net revenue factor |
-| --- | --- |
-| `store_commission` | Store commission |
-| `af_net_revenue_tax_name` | Tax |
-| `af_net_revenue_tax_rate` | Tax |
-| `af_net_revenue_tax_exclusive` | Tax |
-| `af_net_revenue_postal_code` | Tax |
-| `af_net_revenue_country` | Tax |
-| `af_net_revenue_subdivision` | Tax |
-| `af_net_revenue` | - Store commission<br />- Tax |
-| `af_net_revenue_factors` | - Store commission<br />- Tax |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Parameter
+      </th>
+
+      <th>
+        Net revenue factor
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        `store_commission`
+      </td>
+
+      <td>
+        Store commission
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `af_net_revenue_tax_name`
+      </td>
+
+      <td>
+        Tax
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `af_net_revenue_tax_rate`
+      </td>
+
+      <td>
+        Tax
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `af_net_revenue_tax_exclusive`
+      </td>
+
+      <td>
+        Tax
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `af_net_revenue_postal_code`
+      </td>
+
+      <td>
+        Tax
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `af_net_revenue_country`
+      </td>
+
+      <td>
+        Tax
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `af_net_revenue_subdivision`
+      </td>
+
+      <td>
+        Tax
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `af_net_revenue`
+      </td>
+
+      <td>
+        - Store commission<br />- Tax
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        `af_net_revenue_factors`
+      </td>
+
+      <td>
+        - Store commission<br />- Tax
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ### Troubleshooting and discrepancies
 
-| Symptom | Explanation / Solution |
-| --- | --- |
+| Symptom                                                                                   | Explanation / Solution                                                                                                                                                                                                                                                                                                                                        |
+| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | AppsFlyer shows fewer in-app purchase and subscription events than the actual app stores. | In AppsFlyer, events are only generated for users who have updated to a version of the app that includes the SDK connector. Meanwhile, the app stores log every event, regardless of the user's app version. As a result, until full adoption of the updated app version, a discrepancy between the revenue data from the app and the store data is expected. |
 
 ### Traits and limitations
 
-| Specification | Product | Remarks |
-| --- | --- | --- |
-| Installment subscriptions (Android) | Subscription revenue | Not supported |
-| Subscription pending<br />transactions (Android) | Subscription revenue | Not supported |
-| New subscriptions | Subscription revenue | Only recorded via the AppsFlyer purchase SDK |
-| Price change | Subscription revenue | If subscription revenue doesn't receive an SDK-originated notification with the new product price, subscription revenue continues to report the previous product price as revenue. Once the new product price is received from the purchase SDK, the new price is recorded. |
-| Gross revenue | - IAP<br />- Subscription revenue | Supported |
-| Net revenue | - IAP<br />- Subscription revenue | Supported in raw data and in My Dashboards (as the Net metrics) |
-| Refunds | IAP | Can be reported until 180 days after the original purchase. |
-| Deduplication | - IAP<br />- Subscription revenue | Supported for transactions reported up to 180 days after event date. |
-| SDK strict mode | - IAP<br />- Subscription revenue | ROI360 subscriptions and IAP are supported under SDK strict mode from the:<br />- AppsFlyer iOS purchase SDK connector V6.13.0<br />- Unity purchase SDK connector V2.0.1 |
-| Currency | - IAP<br />- Subscription revenue | Revenue is reported in the original currency (using the event\_revenue parameter) and in USD (using the event\_revenue\_usd parameter). |
-| Data freshness | - IAP<br />- Subscription revenue | - Transaction-level store revenue report: Hourly<br />- Device-level store revenue report: Every 8 hours |
-| StoreKit 2 | - IAP<br />- Subscription revenue | - StoreKit 2 is supported starting with Purchase SDK Connector version 6.16.2.<br />- Make sure your app is using the updated App Store credentials as described [here](/docs/bulletin-update-app-store-credentials-for-ios-roi360-receipt-validation). |
-| Google one-time products | IAP | - Supported purchase options: Buy and Rent<br />- Pre-order: Not supported |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Specification
+      </th>
+
+      <th>
+        Product
+      </th>
+
+      <th>
+        Remarks
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Installment subscriptions (Android)
+      </td>
+
+      <td>
+        Subscription revenue
+      </td>
+
+      <td>
+        Not supported
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Subscription pending<br />transactions (Android)
+      </td>
+
+      <td>
+        Subscription revenue
+      </td>
+
+      <td>
+        Not supported
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        New subscriptions
+      </td>
+
+      <td>
+        Subscription revenue
+      </td>
+
+      <td>
+        Only recorded via the AppsFlyer purchase SDK
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Price change
+      </td>
+
+      <td>
+        Subscription revenue
+      </td>
+
+      <td>
+        If subscription revenue doesn't receive an SDK-originated notification with the new product price, subscription revenue continues to report the previous product price as revenue. Once the new product price is received from the purchase SDK, the new price is recorded.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Gross revenue
+      </td>
+
+      <td>
+        - IAP<br />- Subscription revenue
+      </td>
+
+      <td>
+        Supported
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Net revenue
+      </td>
+
+      <td>
+        - IAP<br />- Subscription revenue
+      </td>
+
+      <td>
+        Supported in raw data and in My Dashboards (as the Net metrics)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Refunds
+      </td>
+
+      <td>
+        IAP
+      </td>
+
+      <td>
+        Can be reported until 180 days after the original purchase.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Deduplication
+      </td>
+
+      <td>
+        - IAP<br />- Subscription revenue
+      </td>
+
+      <td>
+        Supported for transactions reported up to 180 days after event date.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        SDK strict mode
+      </td>
+
+      <td>
+        - IAP<br />- Subscription revenue
+      </td>
+
+      <td>
+        ROI360 subscriptions and IAP are supported under SDK strict mode from the:<br />- AppsFlyer iOS purchase SDK connector V6.13.0<br />- Unity purchase SDK connector V2.0.1
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Currency
+      </td>
+
+      <td>
+        - IAP<br />- Subscription revenue
+      </td>
+
+      <td>
+        Revenue is reported in the original currency (using the event_revenue parameter) and in USD (using the event_revenue_usd parameter).
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Data freshness
+      </td>
+
+      <td>
+        - IAP<br />- Subscription revenue
+      </td>
+
+      <td>
+        - Transaction-level store revenue report: Hourly<br />- Device-level store revenue report: Every 8 hours
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        StoreKit 2
+      </td>
+
+      <td>
+        - IAP<br />- Subscription revenue
+      </td>
+
+      <td>
+        - StoreKit 2 is supported starting with Purchase SDK Connector version 6.16.2.<br />- Make sure your app is using the updated App Store credentials as described [here](/docs/bulletin-update-app-store-credentials-for-ios-roi360-receipt-validation).
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Google one-time products
+      </td>
+
+      <td>
+        IAP
+      </td>
+
+      <td>
+        - Supported purchase options: Buy and Rent<br />- Pre-order: Not supported
+      </td>
+    </tr>
+  </tbody>
+</Table>
