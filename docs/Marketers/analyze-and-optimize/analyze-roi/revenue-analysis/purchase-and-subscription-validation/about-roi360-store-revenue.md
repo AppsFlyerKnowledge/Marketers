@@ -335,6 +335,40 @@ The following sections provide additional details about key aspects of ROI360 in
   - Can be used in SKAN Conversion Studio.
 
     **Note**: depending on the user device platform, some parameeters aren't always populated for an in-app events
+    <Accordion title="Subscription renewed (af_ars_subscription_renewed)" icon="fa-info-circle">
+      **Description**
+
+      Recorded when an auto-renewal subscription takes place.
+
+      **Parameters**
+
+      - app_id
+      - customer_user_id
+      - af_currency
+      - af_expires_date_ms
+      - af_subscription_ownership_type
+      - af_original_transaction_id
+      - af_order_id
+      - af_purchase_token
+      - af_transaction_id
+      - af_product_id
+      - android_id
+      - idfa
+      - ip
+      - appsflyer_id
+      - af_purchase_date_ms
+      - af_store
+      - af_environment
+      - af_period_type
+      - af_discount_id
+      - af_discount_type
+      - event_revenue_usd
+      - event_revenue (included in the event when the revenue exceeds zero)
+      - store_commission
+      - af_revenue
+      - af_net_revenue
+      - af_net_revenue_factors
+    </Accordion>
     <Accordion title="Subscription changed (af_ars_subscription_xgraded)" icon="fa-info-circle">
       **Description**
 
@@ -824,40 +858,7 @@ Recorded when a subscription renewal fails due to a billing issue and the subscr
 - af_environment
 - af_period_type
 
-#### Subscription renewed (af_ars_subscription_renewed)
-
-**Description**
-
-Recorded when an auto-renewal subscription takes place.
-
-**Parameters**
-
-- app_id
-- customer_user_id
-- af_currency
-- af_expires_date_ms
-- af_subscription_ownership_type
-- af_original_transaction_id
-- af_order_id
-- af_purchase_token
-- af_transaction_id
-- af_product_id
-- android_id
-- idfa
-- ip
-- appsflyer_id
-- af_purchase_date_ms
-- af_store
-- af_environment
-- af_period_type
-- af_discount_id
-- af_discount_type
-- event_revenue_usd
-- event_revenue (included in the event when the revenue exceeds zero)
-- store_commission
-- af_revenue
-- af_net_revenue
-- af_net_revenue_factors
+####
 
 ####
 
