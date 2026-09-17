@@ -116,7 +116,7 @@ The following sections provide additional details about key aspects of ROI360 in
 <Callout icon="far fa-pen-field" theme="info">
   ### Note
 
-  To send additional custom parameters with your in-app events, configure a **custom data source** in the [Purchase SDK Connector](https://dev.appsflyer.com/hc/docs/purchase-connector). This allows you to enrich purchase and subscription events with your own business logic or metadata.
+  To send additional custom parameters with your in-app events, configure a **custom data source** in the [Purchase SDK Connector](https://dev.appsflyer.com/hc/docs/purchase-connector). This allows you to enrich purchase and subscription events with your own business logic or metadata.&#x20;
 
   These parameters will be available in the raw data report's `custom_data` field.
 </Callout>
