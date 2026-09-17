@@ -129,7 +129,7 @@ The following sections provide additional details about key aspects of ROI360 in
   - Server-to-server (S2S) events.
   - Available in raw data reports as organic or non-organic in-app events, and included in the Revenue ETL Stores reports.
   - Sent to partners via postbacks.
-  - Supported in SKAN Conversion Studio.
+  - Supported in SKAN Conversion Studio.&#x20;
     <Accordion title="Purchase (af_purchase)" icon="fa-info-circle">
       **Description**
 
@@ -335,6 +335,7 @@ The following sections provide additional details about key aspects of ROI360 in
   - Can be used in SKAN Conversion Studio.
 
     **Note**: depending on the user device platform, some parameeters aren't always populated for an in-app events
+
     <Accordion title="Trial started (af_ars_trial_started)" icon="fa-info-circle">
       **Description**
 
@@ -361,6 +362,7 @@ The following sections provide additional details about key aspects of ROI360 in
       - af_environment
       - af_period_type
     </Accordion>
+
     <Accordion title="Trial canceled (af_ars_trial_canceled)" icon="fa-info-circle">
       **Description**
 
@@ -387,6 +389,7 @@ The following sections provide additional details about key aspects of ROI360 in
       - af_environment
       - af_period_type
     </Accordion>
+
     <Accordion title="Trial churned (af_ars_trial_churned)" icon="fa-info-circle">
       **Description**
 
@@ -414,6 +417,7 @@ The following sections provide additional details about key aspects of ROI360 in
       - af_period_type
       - af_reason
     </Accordion>
+
     <Accordion title="Trial converted (af_ars_trial_converted)" icon="fa-info-circle">
       **Description**
 
@@ -453,6 +457,7 @@ The following sections provide additional details about key aspects of ROI360 in
       - af_net_revenue_subdivision
       - af_net_revenue_postal_code
     </Accordion>
+
     <Accordion title="Subscription started (af_ars_subscription_started)" icon="fa-info-circle">
       **Description**
 
@@ -498,6 +503,7 @@ The following sections provide additional details about key aspects of ROI360 in
       - af_net_revenue_subdivision
       - af_net_revenue_postal_code
     </Accordion>
+
     <Accordion title="Subscription canceled (af_ars_subscription_canceled)" icon="fa-info-circle">
       **Description**
 
@@ -524,6 +530,7 @@ The following sections provide additional details about key aspects of ROI360 in
       - af_environment
       - af_period_type
     </Accordion>
+
     <Accordion title="Subscription paused (af_ars_subscription_paused) - Android only" icon="fa-info-circle">
       **Description**
 
@@ -549,6 +556,7 @@ The following sections provide additional details about key aspects of ROI360 in
       - af_environment
       - af_period_type
     </Accordion>
+
     <Accordion title="Subscription resumed (af_ars_subscription_resumed)" icon="fa-info-circle">
       **Description**
 
@@ -583,6 +591,7 @@ The following sections provide additional details about key aspects of ROI360 in
       - af_net_revenue
       - af_net_revenue_factors
     </Accordion>
+
     <Accordion title="Subscription churned (af_ars_subscription_churned)" icon="fa-info-circle">
       **Description**
 
