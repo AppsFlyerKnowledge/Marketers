@@ -49,7 +49,7 @@ See below AppsFlyer’s base attribution link with a detailed explanation per ma
 | http://app.appsflyer.com | AppsFlyer end point |  |
 | app\_id | Application unique ID – dynamic value changed per app promoted |  |
 | pid= | Media source name concatenated with \_int to identify integrated networks |  |
-| c= | Campaign name | `{offer\_id}` |
+| c= | Campaign name | `{offer_id}` |
 
 See below for an example of an attribution Link once you have added additional Offerslook macros:
 
@@ -67,8 +67,8 @@ The following macros are available to use within the generated link:
 | --- | --- | --- |
 | pid | Media source name - provided by AppsFlyer and should not be changed |  |
 | c | Campaign name |  |
-| clickid | The Ad network unique click identifier | `{click\_id}` |
-| af\_siteid | Ad network publisher ID | `{aff\_id}` |
+| clickid | The Ad network unique click identifier | `{click_id}` |
+| af\_siteid | Ad network publisher ID | `{aff_id}` |
 
 #### New Macros
 
@@ -76,7 +76,7 @@ The new set of macros adds a number of additional parameters in a clear, standar
 
 | **Macro Name** | **Description** | **Offerslook** |
 | --- | --- | --- |
-| af\_c\_id | Campaign ID - provided by the advertiser | `{adv\_sub1}<br />{adv\_sub2}<br />{adv\_sub3}` |
+| af\_c\_id | Campaign ID - provided by the advertiser | `{adv_sub1}<br />{adv_sub2}<br />{adv_sub3}` |
 | af\_adset | Adset name - provided by the advertiser. Adset is an intermediate level in the hierarchy between **Campaign** and **Ad**. |  |
 | af\_adset\_id | Adset ID |  |
 | af\_ad | Ad name |  |
@@ -84,7 +84,7 @@ The new set of macros adds a number of additional parameters in a clear, standar
 | af\_ad\_type | Ad type - use anything that "describes" the ad format (examples: video or banner, medium size or big size) |  |
 | af\_channel | The channel through which the ads are distributed (for example: YouTube vs Google Search) |  |
 | af\_keywords | Keywords list for text-targeted campaigns |  |
-| af\_cost\_model | Cost model - CPI is currently supported and the default model. CPC and CPA values are also valid. | `{pricing\_type}` |
+| af\_cost\_model | Cost model - CPI is currently supported and the default model. CPC and CPA values are also valid. | `{pricing_type}` |
 | af\_cost\_currency | Currency code (example: USD) | `{currency}` |
 | af\_cost\_value | Cost value | `{revenue}` |
 
@@ -92,9 +92,9 @@ The new set of macros adds a number of additional parameters in a clear, standar
 
 | **Macro Name** | **Description** | **Offerslook** |
 | --- | --- | --- |
-| android\_id | Device Android\_id - Requires ad network support | `{android\_id}` |
+| android\_id | Device Android\_id - Requires ad network support | `{android_id}` |
 | sha1\_android\_id | Device Android\_id hashed with SHA1 - Requires ad network support |  |
-| advertising\_id | Google Advertising ID - Requires ad network support | `{ga\_id}` |
+| advertising\_id | Google Advertising ID - Requires ad network support | `{ga_id}` |
 | sha1\_advertising\_id | Google Advertising ID hashed with SHA1 - Requires ad network support |  |
 | af\_r | For out of store only - Target redirect URL |  |
 | sha1\_el | Used for desktop to mobile attribution - email hashed with SHA1, requires ad network support |  |
@@ -119,7 +119,7 @@ Following is a step-by-step explanation of how to create your install postbacks 
 
 Global Install Postback:
 
-http://`{networkname}.offerstrack.net/advBack.php?click\_id={click\_id}&adv\_id={adv\_id}`
+http://`{networkname}.offerstrack.net/advBack.php?click_id={click_id}&adv_id={adv_id}`
 
 `networkname` is the domain name provided by Offerslook.
 

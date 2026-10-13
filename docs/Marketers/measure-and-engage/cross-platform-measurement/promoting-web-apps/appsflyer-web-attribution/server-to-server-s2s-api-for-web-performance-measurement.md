@@ -101,7 +101,7 @@ Measures a web event (for example, a purchase, sign-up, or custom action) for a 
 
 <Accordion title="Example request">
 
-```
+```json
 {"user_id":{"customer_user_id":"15667737-366d-4994-ac8b-653fe6b2be4a"},"event_name":"af_purchase","event_revenue":49.99,"event_revenue_currency":"USD","af_customer_event_id": "550e8400-e29b-41d4-a716-446655440000","event_value":{"af_content_id":"SKU-001","af_quantity":2,"custom_parameters":{"promo_code":"SUMMER10"}},"event_url":"https://example.com/checkout/success","timestamp":1712000000000,"ip":"35.244.183.10","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) ...","email_hashed":"a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2"}
 ```
 
@@ -155,7 +155,7 @@ Measures a page visit for a given web app. This endpoint shares all base fields 
 
 <Accordion title="Example request">
 
-```
+```json
 {"user_id":{"appsflyer_id":"1234567890abcdef","customer_user_id":"15667737-366d-4994-ac8b-653fe6b2be4a"},"event_url":"https://example.com/products/sneakers","timestamp":1712000000000,"ip":"35.244.183.10","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) ...","http_referrer":"https://www.google.com/","email_hashed":"a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2"}
 ```
 
@@ -339,7 +339,7 @@ Get your S2S API key from the AppsFlyer token management page (see [Authenticati
 
 Build the JSON body for each mapped event with these fields:
 
-```
+```json
 {
   "user_id": {
     "customer_user_id": "<your internal user ID>",

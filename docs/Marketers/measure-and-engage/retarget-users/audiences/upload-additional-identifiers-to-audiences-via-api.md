@@ -69,7 +69,7 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 
 **API request body**
 
-```
+```json
 {
   "key_type": "<key_type>",
   "action": "add",
@@ -102,13 +102,13 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 
 | Parameter | Description | Mandatory |
 | --- | --- | --- |
-| `{key\_type}` | The identifier used as the unique value to represent the user in each data row of the request.<br /><br />The value specified here applies to every row in the request.<br /><br />Possible values:<br /><br />* idfa<br />* gaid<br />* idfv<br />* customer\_user\_id<br />* imei<br />* oaid | Yes |
+| `{key_type}` | The identifier used as the unique value to represent the user in each data row of the request.<br /><br />The value specified here applies to every row in the request.<br /><br />Possible values:<br /><br />* idfa<br />* gaid<br />* idfv<br />* customer\_user\_id<br />* imei<br />* oaid | Yes |
 | `{action}` | "add" | No<br /><br />Default value: "add" |
-| `{key\_value}` | Valid identifier value for the key\_type specified | Yes |
+| `{key_value}` | Valid identifier value for the key\_type specified | Yes |
 | \{identifiers\} | Object containing the names and values of the identifiers to add:<br /><br />* \{hashed\_emails\}<br />* \{phone\_number\_sha256\}<br />* \{phone\_number\_e164\_sha256\} | Yes<br /><br />* Must include a value for at least 1 of these 3 identifiers |
-| `{hashed\_emails}` | An array of up to 2 hashed email addresses<br /><br />Format:<br /><br />* Lowercase<br />* No white spaces<br />* SHA256 hashed<br /><br />Example value before hashing: name@domain.com | No |
-| `{phone\_number\_sha256}` | Phone number (see note below)<br /><br />Format:<br /><br />* No symbols, letters, or leading zeroes<br />* Include country code<br />* SHA256 hashed<br /><br />Example value before hashing:<br /><br />442070313000 | No |
-| `{phone\_number\_e164\_sha256}` | Phone number in E164 format (see note below)<br /><br />Format<br /><br />* E164 phone number<br />* SHA256 hashed<br /><br />Example value before hashing:<br /><br />+442070313000 | No |
+| `{hashed_emails}` | An array of up to 2 hashed email addresses<br /><br />Format:<br /><br />* Lowercase<br />* No white spaces<br />* SHA256 hashed<br /><br />Example value before hashing: name@domain.com | No |
+| `{phone_number_sha256}` | Phone number (see note below)<br /><br />Format:<br /><br />* No symbols, letters, or leading zeroes<br />* Include country code<br />* SHA256 hashed<br /><br />Example value before hashing:<br /><br />442070313000 | No |
+| `{phone_number_e164_sha256}` | Phone number in E164 format (see note below)<br /><br />Format<br /><br />* E164 phone number<br />* SHA256 hashed<br /><br />Example value before hashing:<br /><br />+442070313000 | No |
 
 > 📘 **Notes**
 >
@@ -160,7 +160,7 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 
 **API request body**
 
-```
+```json
 {
   "key_type": "<key_type>",
   "action": "remove",
@@ -187,8 +187,8 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 
 | Parameter | Description | Mandatory |
 | --- | --- | --- |
-| `{key\_type}` | The identifier used as the unique value to represent the user in each data row of the request.<br /><br />The value specified here applies to every row in the request.<br /><br />Possible values:<br /><br />* idfa<br />* gaid<br />* idfv<br />* customer\_user\_id<br />* imei<br />* oaid | Yes |
-| `{key\_value}` | Valid identifier value for the key\_type specified | Yes |
+| `{key_type}` | The identifier used as the unique value to represent the user in each data row of the request.<br /><br />The value specified here applies to every row in the request.<br /><br />Possible values:<br /><br />* idfa<br />* gaid<br />* idfv<br />* customer\_user\_id<br />* imei<br />* oaid | Yes |
+| `{key_value}` | Valid identifier value for the key\_type specified | Yes |
 | `{action}` | "remove" | No<br /><br />Default value: "add" |
 | \{identifiers\} | An array containing the names of the identifiers for which values should be deleted:<br /><br />* \{hashed\_emails\}<br />* \{phone\_number\_sha256\}<br />* \{phone\_number\_e164\_sha256\} | Yes<br /><br />* Must include at least 1 of these 3 identifiers |
 
@@ -230,7 +230,7 @@ body:
 
 **Response examples**
 
-```
+```json
 {
 "message": "Accepted for processing",
 "received": 1000,"invalid": 2,
@@ -238,28 +238,28 @@ body:
 }
 ```
 
-```
+```json
 {
 "error": "Request body must have a valid key_type",
 "trace-id": "18a5f685-ea4d-4ca9-beab-a542a3786d12"
 }
 ```
 
-```
+```json
 {
 "error": "Request must have 'data' with at least 1 element",
 "trace-id": "c155a7fa-b573-4efe-9bfb-5ae7de40e7fd"
 }
 ```
 
-```
+```json
 {
 "error": "Request 'data' should not exceeds the size of 4000 in a single request”,
 "trace-id": "b325a7fa-b573-4efe-9bfb-5ae7de40e72c"
 }
 ```
 
-```
+```json
 {
 "error": "Request data has too many invalid 'data' elements",
 "valid": 2,

@@ -107,9 +107,9 @@ https://engagements.appsflyer.com/v1.0/s2s/impression/app/playstation/10000000
 | --- | --- | --- |
 | 10000000 | Path parameter | The advertiser's PlayStation app ID in AppsFlyer. Replace with the real app ID, with no platform prefix. |
 | s2s / c2s | Path parameter | Whether the request is sent server-to-server (s2s) or client-to-server (c2s). Replaces the s2s segment shown in the example URLs above. The PlayStation Ads team decides which one applies. |
-| `{campaign\_id}` | Query parameter | Campaign ID, populated by PlayStation. |
-| `{campaign\_name}` | Query parameter | Campaign name, populated by PlayStation. |
-| `{USER\_IP}` | Query parameter | End-user IP address, populated by PlayStation. |
+| `{campaign_id}` | Query parameter | Campaign ID, populated by PlayStation. |
+| `{campaign_name}` | Query parameter | Campaign name, populated by PlayStation. |
+| `{USER_IP}` | Query parameter | End-user IP address, populated by PlayStation. |
 
 ## Traits and limitations
 

@@ -99,7 +99,7 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table]
 
 **To enable the cost API**:
 
-* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api). **Note**: Add campaign ID (af\_c\_id=`{campaign\_id}`) to your links to ensure accurate cost reporting. [Learn more](/docs/about-link-structure-and-parameters)
+* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api). **Note**: Add campaign ID (af\_c\_id=`{campaign_id}`) to your links to ensure accurate cost reporting. [Learn more](/docs/about-link-structure-and-parameters)
 
 [View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 

@@ -248,7 +248,7 @@ API reference: [setAdditionalData](https://dev.appsflyer.com/hc/docs/android-sdk
 
 **iOS native**
 
-```
+```javascript
 let appInstanceId = Analytics.appInstanceID()
     AppsFlyerLib.shared().customData = ["app_instance_id": appInstanceId]
 ```

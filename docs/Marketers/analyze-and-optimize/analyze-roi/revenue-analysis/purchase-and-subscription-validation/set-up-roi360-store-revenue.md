@@ -530,7 +530,7 @@ However, before the developer releases the new app version, make sure that:
 
 Once the app with the SDK connector is released, [in-app purchase](/docs/about-roi360-store-revenue#iaprelated-events-and-parameters) and [subscription events](/docs/about-roi360-store-revenue#subscriptionrelated-events-and-parameters) will be generated and made available across all AppsFlyer dashboards, as well as in aggregated and raw data reports, including [Revenue ETL](/docs/revenue-etl-reports).
 
-**Note:**Events will only be generated for users who have updated to a version of the app that includes the SDK connector. As a result, a discrepancy is expected between the revenue data from the app and the store data until the updated app version is fully adopted.
+**Note:** Events will only be generated for users who have updated to a version of the app that includes the SDK connector. As a result, a discrepancy is expected between the revenue data from the app and the store data until the updated app version is fully adopted.
 
 ## Switch to ROI360 Store revenue (from Receipt validation)
 

@@ -128,7 +128,7 @@ Learn more about [Protect360 raw data reports](/docs/protect360-raw-data-reports
 
 Replace the app\_id, from, to, and token placeholders.
 
-```
+```bash
 curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/export/blocked_installs_report/app/{app_id}?from={2020-07-10}&to={2020-07-20}&additional_fields=keyword_id,store_reinstall,deeplink_url,oaid,blocked_reason,blocked_reason_value,blocked_reason_rule,blocked_sub_reason,match_type,device_category,gp_referrer,gp_click_time,gp_install_begin,amazon_aid,keyword_match_type' \
 -H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \
 ```
@@ -137,7 +137,7 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 
 Replace the app id, from, to, and token placeholders.
 
-```
+```bash
 curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/export/detection/app/{app-id}?from={2020-06-10}&to={2020-07-20}&additonal-fields=fraud_reason,fraud_sub_reason,match_type,device_category,gp_referrer,gp_click_time,gp_install_begin,detection_date' \
 -H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \
 ```
@@ -146,7 +146,7 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 
 Replace the app id, from, to, and token placeholders.
 
-```
+```bash
 curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/export/blocked_in_app_events_report/app/?from=YYYY-MM-DD&to=YYYY-MM-DD&additional_fields=keyword_id,store_reinstall,deeplink_url,oaid,blocked_reason,blocked_reason_value,blocked_reason_rule,blocked_sub_reason,match_type,device_category,gp_referrer,gp_click_time,gp_install_begin,amazon_aid,keyword_match_type' \
 -H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \
 ```
@@ -155,7 +155,7 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 
 Replace the app id, from, to, and token placeholders.
 
-```
+```bash
 curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/export/fraud-post-inapps/app/{app-id}?from={2020-06-10}&to={2020-07-20}&additional_fields=match_type,device_category,gp_referrer,gp_click_time,gp_install_begin,fraud_reason,fraud_sub_reason,detection_date' \
 -H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \
 ```
@@ -164,7 +164,7 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 
 Replace the app id, from, to, and token placeholders.
 
-```
+```bash
 curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/export/blocked_clicks_report/app/{app-id}?from={2020-06-10}&to={2020-07-20}&additional_fields=keyword_id,store_reinstall,deeplink_url,oaid,blocked_reason,blocked_reason_value,blocked_reason_rule,blocked_sub_reason,gp_referrer,gp_click_time,gp_install_begin,amazon_aid,keyword_match_type' \
 -H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \
 ```

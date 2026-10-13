@@ -106,7 +106,7 @@ Use it to isolate patterns, validate hypotheses, and identify which elements dri
 **To use search:**
 
 1. Use the filters at the top to define the creatives you want to analyze, for example, by app or date range.  
-   **Note:**The top-level Creative Optimization [filter](/docs/creative-optimization-guide#filter-bar) is the primary one. Search filters those results further. This means that the top-level filter will override search in case of conflicting requests.
+   **Note:** The top-level Creative Optimization [filter](/docs/creative-optimization-guide#filter-bar) is the primary one. Search filters those results further. This means that the top-level filter will override search in case of conflicting requests.
 2. Enter a natural language query in the Discovery AI search bar describing what you want to explore.
 
 Search queries should refer only to creative content, such as visuals, text, audio, themes, or story elements. Do not search by performance metrics, for example, "creatives with IPM above 2," or by creative name.
@@ -189,7 +189,7 @@ Combining attributes helps isolate clearer creative patterns and reduces noise i
 
 Smart tags are saved searches that you can refer back to whenever you need. Perhaps even more importantly, they tag all creatives with the name and search term, so you can use these Smart tags as group by dimensions for your creatives in the Overview dashboard. For example, if you create Smart tags called "Gameplay scenes" and "Animated scenes" in the Creative Optimization Overview dashboard you can group data by Smart Tags and get separate data rows for Gameplay scenes and Animated scenes.
 
-**Note:**The top-level Creative Optimization [filter](/docs/creative-optimization-guide#creative-dashboard) is the primary one. Smart tags filter those results further. This means that the top-level filter will override Smart tags in case of conflicting requests.
+**Note:** The top-level Creative Optimization [filter](/docs/creative-optimization-guide#creative-dashboard) is the primary one. Smart tags filter those results further. This means that the top-level filter will override Smart tags in case of conflicting requests.
 
 **Example common queries you can use to create Smart tags:**
 

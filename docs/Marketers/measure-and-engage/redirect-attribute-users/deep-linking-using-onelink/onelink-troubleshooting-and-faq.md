@@ -26,17 +26,7 @@ Quickly find solutions for testing and debugging OneLink custom link redirection
 
 ## OneLink troubleshooting guide
 
-OneLink Troubleshooting - AppsFlyer HQ
-
-Powered by Typeform
-
-!
-
-# OneLink troubleshooting guide
-
-Start
-
-Takes 7 minutes
+[Open the OneLink troubleshooting guide](https://form.typeform.com/to/bgBOGSiK) (an interactive Typeform, about 7 minutes).
 
 ## OneLink frequently asked questions
 

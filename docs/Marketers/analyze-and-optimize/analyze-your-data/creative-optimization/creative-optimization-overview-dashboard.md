@@ -112,7 +112,7 @@ Customize the table by clicking the![Creative_table_settings_en_us.png](https://
   * CTR
   * eCPI
   * CPM  
-    **Note:**Partner metrics appear with a "Partners" indication next to them.
+    **Note:** Partner metrics appear with a "Partners" indication next to them.
 
 * #### **In-app events**
 

@@ -84,7 +84,7 @@ To open the **measurement settings** page, follow these steps:
 
 1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
 2. On the **Data Collaboration Platform** page, select the collaboration you want to set.
-3. At the bottom of the collaboration page, click **Set up measurement.**(If the link is disabled, set up the collaboration's [data sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources) and [audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences).)
+3. At the bottom of the collaboration page, click **Set up measurement.** (If the link is disabled, set up the collaboration's [data sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources) and [audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences).)
 4. On the **Measurement Settings** page, click the **Conversions** pane to open the **Conversions** dialog.
 
    CALLSTART::Note::

@@ -32,23 +32,23 @@ Upon conversion, AppsFlyer can return the following parameters:
 
 | Parameter Name | Parameter Name Convention |
 | --- | --- |
-| Campaign Name | `{campaign\_name}` |
-| Campaign ID | `{campaign\_id}` |
-| Ad Set Name | `{adset\_name}` |
-| Ad Set ID | `{adset\_id}` |
-| Ad Group Name | `{adgroup\_name}` |
-| Ad Group ID | `{adgroup\_id}` |
+| Campaign Name | `{campaign_name}` |
+| Campaign ID | `{campaign_id}` |
+| Ad Set Name | `{adset_name}` |
+| Ad Set ID | `{adset_id}` |
+| Ad Group Name | `{adgroup_name}` |
+| Ad Group ID | `{adgroup_id}` |
 | Event time – Rounded up | `{timestamp}` |
 | Unique AppsFlyer User ID | `{sha1-appsflyer-device-id}` |
 | Device ID Hashed MD5 | `{md5IDFA\md4GAID}` |
 | If the attribution was from a view | `{is-impression}` |
-| Channel (Instagram, Meta Audience Network, Facebook, Messenger) | `{af\_channel}` |
-| Geo | `{user\_country}` |
+| Channel (Instagram, Meta Audience Network, Facebook, Messenger) | `{af_channel}` |
+| Geo | `{user_country}` |
 
 
 > 📘 **Example**
 >
-> http://mcmp\_postbackURL.........&mcmp\_ADset\_name =`{adset\_name}`
+> http://mcmp\_postbackURL.........&mcmp\_ADset\_name =`{adset_name}`
 
 
 ## In-app event postbacks
@@ -59,13 +59,13 @@ Upon In-app events, AppsFlyer can return the following parameters (in addition t
 
 | Parameter Name | Parameter Name Convention |
 | --- | --- |
-| Event Name* | `{event\_name}` |
-| Event Value | `{event\_value}` |
+| Event Name* | `{event_name}` |
+| Event Value | `{event_value}` |
 
 
 > 📘 **Example**
 >
-> http://FMP\_postbackURL.........&eventname=`{event\_name}`
+> http://FMP\_postbackURL.........&eventname=`{event_name}`
 
 
 * The Meta campaign management partner can choose to receive the in-app event name as the advertiser configured it in AppsFlyer's SDK or to have the advertiser fill in a free text field per event.

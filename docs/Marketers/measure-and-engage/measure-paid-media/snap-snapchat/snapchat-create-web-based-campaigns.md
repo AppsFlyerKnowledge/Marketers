@@ -151,7 +151,7 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
 | [`af_adset_id`](/docs/about-link-structure-and-parameters#af_adset_id) | `{{adSet.id}}`* |
 | [`af_ad`](/docs/about-link-structure-and-parameters#af_ad) | `{{creative.name }}` |
 | [`af_ad_id`](/docs/about-link-structure-and-parameters#af_ad_id) | `{{ad.id}}`* |
-| [`af_channel`](/docs/raw-data-field-dictionary#attribution::1d1e08b5) | `{{site\_source\_name}}` |
+| [`af_channel`](/docs/raw-data-field-dictionary#attribution::1d1e08b5) | `{{site_source_name}}` |
 
      An example of the resulting URL should be:
 
@@ -186,7 +186,7 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
 | [`af_adset_id`](/docs/about-link-structure-and-parameters#af_adset_id) | `{{adSet.id}}`* |
 | [`af_ad`](/docs/about-link-structure-and-parameters#af_ad) | `{{creative.name }}` |
 | [`af_ad_id`](/docs/about-link-structure-and-parameters#af_ad_id) | `{{ad.id}}`* |
-| [`af_channel`](/docs/raw-data-field-dictionary#attribution::1d1e08b5) | `{{site\_source\_name}}` |
+| [`af_channel`](/docs/raw-data-field-dictionary#attribution::1d1e08b5) | `{{site_source_name}}` |
 
   ***** To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
 

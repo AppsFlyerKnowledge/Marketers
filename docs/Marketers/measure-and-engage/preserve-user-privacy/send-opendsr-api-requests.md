@@ -124,7 +124,7 @@ For the API authorization, use the same V2 API token as for Pull API. An admin u
 
 **Example of an erasure request for** `android`**,** `ios`**,** `web`**,** `windowsphone` **platforms:**
 
-```
+```bash
 curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests' \
 --header 'Accept: application/json' \
 --header 'Content-Type: application/json' \
@@ -151,7 +151,7 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_re
 
 **Example of an erasure request for**`CTV`**,** `PC`**, and** `Console` **platforms:**
 
-```
+```bash
 curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests' \
 --header 'Accept: application/json' \
 --header 'Content-Type: application/json' \

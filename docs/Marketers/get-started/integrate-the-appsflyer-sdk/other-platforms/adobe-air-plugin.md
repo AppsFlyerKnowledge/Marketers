@@ -55,7 +55,7 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 > * In the AppsFlyer dashboard you will need to add "air." prefix to the package name as this is added automatically by Air. For example - an app with the package name "**com.test.android**", should set the app id in the AppsFlyer Dashboard as "**air.com.test.android**".
 > * Add the following permissions to Android Manifest (in the app description `APP_NAME-app.xml`):
 >
->   ```
+>   ```xml
 >   <uses-permission android:name="android.permission.INTERNET"/>
 >   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 >   <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
@@ -71,7 +71,7 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 >
 > [![](https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png)](https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png)
 >
-> **Important:**Due to some limitations in the [ADT](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fd9.html), after the APK is built, it is missing some important files.
+> **Important:** Due to some limitations in the [ADT](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fd9.html), after the APK is built, it is missing some important files.
 >
 > To add those files (with the help of **automated** script):
 >

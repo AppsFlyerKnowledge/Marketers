@@ -61,7 +61,7 @@ Learn more about [the setAdditionalData method](https://dev.appsflyer.com/hc/doc
 
 Objective C
 
-```
+```json
 [[AppsFlyerTracker sharedTracker] setAdditionalData:@{
   @"marketingCloudID" : "ADOBE_VISITOR_ID"
 }];
@@ -69,7 +69,7 @@ Objective C
 
 Swift
 
-```
+```javascript
 let CustomDataMap: [AnyHashable: Any] = [
   "marketingCloudID" : "ADOBE_VISITOR_ID"
 ]
@@ -104,7 +104,7 @@ NSString *customerUserID = [AppsFlyerLib shared].customerUserID;
 
 Swift
 
-```
+```javascript
 let customerUserID = AppsFlyerLib.shared().customerUserIDp
 ```
 

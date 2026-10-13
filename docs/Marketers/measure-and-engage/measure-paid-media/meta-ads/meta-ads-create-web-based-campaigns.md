@@ -199,7 +199,7 @@ Perform the next steps in Meta Ads Manager.
 
      
 
-<table><thead><tr><th colspan="2">Attribution link structure</th></tr></thead><tbody><tr><td>Base URL</td><td>engagements.appsflyer.com/v1.0/c2s/click/app/</td></tr><tr><td>Mandatory path parameters</td><td><ul><li>platform<br/>Example: steam</li><li>app_id<br/>Example: 123456</li></ul></td></tr><tr><td>Mandatory query parameters</td><td><ul><li>af_media_source</li><li>af_campaign_id</li><li>af_r</li></ul></td></tr><tr><td>Other parameters</td><td><a href="/docs/ctv-pc-and-console-platform-direct-attribution-links#attribution-link-parameters">See all parameters</a></td></tr><tr><td>URL structure</td><td><code>https://engagements.appsflyer.com/v1.0/c2s/click/app/`{platform}/{app_id}?af_media_source={media_source}&amp;af_campaign_id={campaign_id}&amp;af_r={app_store_url}`</code></td></tr></tbody></table>
+<table><thead><tr><th colspan="2">Attribution link structure</th></tr></thead><tbody><tr><td>Base URL</td><td>engagements.appsflyer.com/v1.0/c2s/click/app/</td></tr><tr><td>Mandatory path parameters</td><td><ul><li>platform<br/>Example: steam</li><li>app_id<br/>Example: 123456</li></ul></td></tr><tr><td>Mandatory query parameters</td><td><ul><li>af_media_source</li><li>af_campaign_id</li><li>af_r</li></ul></td></tr><tr><td>Other parameters</td><td><a href="./ctv-pc-and-console-platform-direct-attribution-links#attribution-link-parameters">See all parameters</a></td></tr><tr><td>URL structure</td><td><code>https://engagements.appsflyer.com/v1.0/c2s/click/app/`{platform}/{app_id}?af_media_source={media_source}&amp;af_campaign_id={campaign_id}&amp;af_r={app_store_url}`</code></td></tr></tbody></table>
 
      Map the following AppsFlyer parameters to their Meta counterparts:
 

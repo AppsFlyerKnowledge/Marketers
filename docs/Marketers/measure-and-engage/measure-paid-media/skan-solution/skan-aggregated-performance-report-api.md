@@ -85,8 +85,8 @@ The API returns a CSV file.
 | ROI | Revenue metric | Y | Y | Y | Y |
 | ARPU | Revenue metric | Y | Y | Y | Y |
 | Average eCPI | Metric | Y | Y | Y | Y |
-| `{af\_skad\_revenue}` (Unique users) | Revenue metric | Y | Y | Y | Y |
-| `{af\_skad\_revenue}` (Event counter) | Revenue metric | Y | Y | Y | Y |
+| `{af_skad_revenue}` (Unique users) | Revenue metric | Y | Y | Y | Y |
+| `{af_skad_revenue}` (Event counter) | Revenue metric | Y | Y | Y | Y |
 | `{your in-app event name}` (Unique users) | Metric | Y | Y | Y | Y |
 | `{your in-app event name}` (Event counter) | Metric | Y | Y | Y | Y |
 

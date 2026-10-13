@@ -95,7 +95,7 @@ Minimum requirements - Airship SDK - Version 13.1.0 and above.
 
    For more details about the  `setAdditionalData` method, click [here](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#customdata).
 
-   ```
+   ```javascript
    let channelID = UAirship.channel().identifier
    print("My Application Channel ID: \(channelID)")
    ```

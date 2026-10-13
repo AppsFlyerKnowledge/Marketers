@@ -86,7 +86,7 @@ Raw data fields are populated in part from data originating in the mobile app us
 | event\_time | Website visits: time of visit Website event: time of event | yyyy-mm-dd hh:mm:ss | 9/17/2020 0:09:25 |
 | event\_type | The following: Standard event, conversion event, website visit | String | conversion event |
 | event\_url | URL of the webpage where event occurred (Equals Original URL in website visits) | String | http://www.brandpit.com/checkout |
-| event\_value | Website events: Event value details contained in a JSON. Website visits: Always null | JSON | `{"sku": "ABC123", “color": "blue", "unit\_price":3.99,"currency": "USD"}` |
+| event\_value | Website events: Event value details contained in a JSON. Website visits: Always null | JSON | `{"sku": "ABC123", “color": "blue", "unit_price":3.99,"currency": "USD"}` |
 | idfa | Advertising identifier | String | A56B9887-FEBA-458C-BEFC-C891F9DF7681 |
 | idfv | Advertising identifier | String | EBC2F523-B1E5-4484-A4C8-ADC32DC7C23D |
 | imei | Device identifier | String | 3532211234 |
@@ -100,7 +100,7 @@ Raw data fields are populated in part from data originating in the mobile app us
 | original\_url | URL address redirecting the user to the website on the attributed website visit | String | https://www.brandpitt.com/signin?utm\_source=Googleg&utm\_term=shoes&utm\_campaign=cool&c=summer⁡\_siteid=publisher⁡\_sub1=helloworld |
 | platform | The platform | String | macOS |
 | postal\_code | Resolved using the IP address | String | 10977 |
-| query\_params | Query params on the redirecting URL (after the ?) Example: https://www.brandpitt.com/signin?utm\_source=Google&utm\_term=shoes&utm\_campaign=cool&c=summer⁡\_siteid=publisher⁡\_sub1=helloworld⁡\_keyword=shoes If URL has no query params, the value will be null | JSON | `{"c":"summer",af\_siteid":"publisher",af\_sub1":helloworld",af\_keywords":"shoes","utm\_source":"Google","utm\_campaign":"cool","utm\_term":"shoes"}` |
+| query\_params | Query params on the redirecting URL (after the ?) Example: https://www.brandpitt.com/signin?utm\_source=Google&utm\_term=shoes&utm\_campaign=cool&c=summer⁡\_siteid=publisher⁡\_sub1=helloworld⁡\_keyword=shoes If URL has no query params, the value will be null | JSON | `{"c":"summer",af_siteid":"publisher",af_sub1":helloworld",af_keywords":"shoes","utm_source":"Google","utm_campaign":"cool","utm_term":"shoes"}` |
 | referrer | HTTP document referrer of the attributed website visit | String | https://www.google.com/ |
 | region | Resolved using the IP address | String | NA |
 | state | Resolved using the IP address | String | NY |

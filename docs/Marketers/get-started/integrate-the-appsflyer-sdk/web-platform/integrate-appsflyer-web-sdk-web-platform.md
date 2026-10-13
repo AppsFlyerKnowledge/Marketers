@@ -371,7 +371,7 @@ Use this snippet to deploy the standard Web SDK integration. Paste it near the t
 
 <Accordion title="Without Smart Banners">
 
-```
+```html
 <script>
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -396,7 +396,7 @@ Use this snippet to deploy the standard Web SDK integration. Paste it near the t
 
 <Accordion title="With Smart Banners">
 
-```
+```html
 <script>
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -435,7 +435,7 @@ If your website enforces a Content Security Policy (CSP) using a nonce, see [Con
 
 <Accordion title="Without Smart Banners">
 
-```
+```html
 <script>
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -466,7 +466,7 @@ If your website enforces a Content Security Policy (CSP) using a nonce, see [Con
 
 <Accordion title="With Smart Banners">
 
-```
+```html
 <script>
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -630,7 +630,7 @@ Events are the fundamental building blocks of web measurement, representing spec
 
 **Example event (purchase event with associated revenue)**
 
-```
+```javascript
 AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12, eventValue: {"key1": 123, "key2": "name", "af_customer_event_id": "evt-abc-001"}});
 ```
 
@@ -664,7 +664,7 @@ This approach is ideal for recording conversions that occur via redirects, such 
 
 **Native page load example:**
 
-```
+```javascript
 window.onload = function(){
   AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category': 'holiday_promotion'}, eventName: 'subscription'});
 }
@@ -686,7 +686,7 @@ This approach is used to record successful conversions, such as a newsletter sub
 
 The following HTML structure loads GTM, which in turn loads the Web SDK. It also demonstrates how data can be made available to GTM via functions or `localStorage`.
 
-```
+```html
 <html>
 <head>
     <script>
@@ -716,7 +716,7 @@ The following HTML structure loads GTM, which in turn loads the Web SDK. It also
 2. Provide a distinct name (for example, "AF Subscription Event").
 3. Paste the following script into the HTML text area:
 
-   ```
+   ```javascript
    AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'subscription'});
    ```
 4. Expand **Advanced Settings** > **Tag Sequencing**. Make sure it is configured to fire after the main Web SDK initialization tag.
@@ -742,7 +742,7 @@ Use this method to measure specific actions users take on a page, such as clicki
 
 **Native user interaction example:**
 
-```
+```html
 <html>
 <head>
     <script>
@@ -775,7 +775,7 @@ This method captures specific actions, such as clicking a **Checkout** button, u
 
 #### 1. Set up a checkout page
 
-```
+```html
 <html>
 <head>
     <script>
@@ -807,7 +807,7 @@ This method captures specific actions, such as clicking a **Checkout** button, u
 1. Create a new **Custom HTML** tag for the checkout action.
 2. Paste the interaction script:
 
-   ```
+   ```html
    <script>
      AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'checkout'});
    </script>
@@ -860,7 +860,7 @@ User scenario:
 
 The code below is a simple signup form. When the form is submitted, the email address is stored in `localStorage`. When the user reaches the thank-you page, the user's email address is sent to the server to get the unique CUID for that email.
 
-```
+```html
 <html>
 <head>
     <script>
@@ -894,7 +894,7 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
 The code uses the Fetch API. It sends the server the email address entered by the user. Assuming the server creates a user with a unique CUID upon signup, sending the email address to the server returns a unique CUID. The server responds with a unique CUID, and this unique CUID is the value that is passed with the `setCustomerUserId` method.
 
-```
+```html
 <html>
 <head>
     <script>
@@ -930,7 +930,7 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
    The code example below is a simple signup form. When the form is submitted, the email address is stored in `localStorage`. When the user reaches the thank-you page, the user's email address is sent to the server to get the unique CUID for that email.
 
-   ```
+   ```html
    <html>
    <head>
        <script>
@@ -961,7 +961,7 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
    ```
 2. Set up a thank-you page for users who sign up. The code below is a thank-you page with a GTM trigger that sends the server the email address provided by the user in the signup form. Assuming that on signup the server creates a user with a unique CUID, sending the email to the server returns a unique CUID. The server responds with a unique CUID, which is sent using the `setCustomerUserId()` method.
 
-   ```
+   ```html
    <script>
        window.onload = function () {
            var userEmail = localStorage.getItem('user_email');
@@ -981,7 +981,7 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
    [![Naming the tag and selecting the Custom HTML tag type in GTM](https://files.readme.io/fddcd6db6025b5e50b69c2071134f7d587bb277d57f7a284d579b5655a16e738-50896216533393.jpg)](https://files.readme.io/fddcd6db6025b5e50b69c2071134f7d587bb277d57f7a284d579b5655a16e738-50896216533393.jpg)
 
-   ```
+   ```html
    <script>
        var userEmail = localStorage.getItem('user_email');
        fetch('users/' + userEmail).then(function (res) {
@@ -1059,7 +1059,7 @@ CSP policy compatibility
 
 <Accordion title="Without Smart Banners">
 
-```
+```html
 <script nonce="{{CSP_NONCE}}">
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -1092,7 +1092,7 @@ CSP policy compatibility
 
 <Accordion title="With Smart Banners">
 
-```
+```html
 <script nonce="{{CSP_NONCE}}">
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";

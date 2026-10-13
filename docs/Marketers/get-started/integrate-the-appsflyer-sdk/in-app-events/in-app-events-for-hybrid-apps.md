@@ -201,7 +201,7 @@ class.
 
 Add the following HTML code to the web view or web page:
 
-```
+```html
 <body>
  <h1>Recroding Event From Web View</h1>
  <div id="main">
@@ -383,7 +383,7 @@ The implementation below consists of two steps:
 
 #### HTML code (for both Android WebView and iOS WKWebView)
 
-```
+```html
 <html>
 <head>
 </head>

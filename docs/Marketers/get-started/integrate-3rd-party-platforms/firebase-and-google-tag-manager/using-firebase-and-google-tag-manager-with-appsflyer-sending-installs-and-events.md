@@ -49,7 +49,7 @@ JavaKotlin
 
 1. In the MainActivity class, create a variable to hold AppsFlyer Device ID:  
 
-   ```
+   ```javascript
    var appsFlyerID: String? = null
    ```
 2. Back in the MainActivity class, in the `onCreate` method and after `super.onCreate`, pass the AppsFlyer ID value to the variable:

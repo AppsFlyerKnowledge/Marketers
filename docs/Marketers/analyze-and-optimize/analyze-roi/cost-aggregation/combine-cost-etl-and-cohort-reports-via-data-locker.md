@@ -61,7 +61,7 @@ The sections that follow provide the queries and considerations you need to take
 
 #### Query
 
-```
+```sql
 select ag.app_id,
    ag.days_post_attribution,
    ag.conversion_date,
@@ -160,7 +160,7 @@ GROUP BY ALL;
 
 #### Query
 
-```
+```sql
 select dl.app_id,
    dl.days_post_attribution,
    dl.conversion_date,

@@ -99,7 +99,7 @@ The following are examples of some popular, practical applications of the data t
 
 Count the number of new unique users per media source and campaign.
 
-```
+```sql
 SELECT DATE (event_time__conversion) AS install_date
 	,CASE 
 		WHEN media_source IS NULL
@@ -122,7 +122,7 @@ GROUP BY install_date
 
 Sum the number of total new platforms, groups, media sources, and campaigns brought per user.
 
-```
+```sql
 SELECT DATE (event_time__conversion) AS install_date
 	,CASE 
 		WHEN media_source IS NULL
@@ -168,7 +168,7 @@ GROUP BY install_date
 
 Sum the total revenue per media source and campaign.
 
-```
+```sql
 SELECT DATE (event_time__conversion) AS install_date
 	,CASE 
 		WHEN media_source IS NULL

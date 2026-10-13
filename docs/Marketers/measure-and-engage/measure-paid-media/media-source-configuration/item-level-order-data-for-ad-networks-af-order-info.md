@@ -60,7 +60,7 @@ AppsFlyer supports two ways to structure `af_order_info`, both nested under `eve
 
 The following example shows the recommended format, with one field for all items:
 
-```
+```json
 {
   "af_order_info": {
     "sku": ["SKU-001", "SKU-002", "SKU-003"],
@@ -76,7 +76,7 @@ The following example shows the recommended format, with one field for all items
 
 The following example shows the alternative format, with one object per item:
 
-```
+```json
 {
   "af_order_info": [
     {

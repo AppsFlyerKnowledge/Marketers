@@ -290,7 +290,7 @@ In this query, we:
 * Sum the total unique attributions per campaign for each install date.
 * Filter for conversions with the event name 'af\_conversion' and a specific campaign ID (af\_c\_id).
 
-```
+```sql
 SELECT install_date, SUM(unique_users) AS total_attributions
 FROM ssot_unified
 WHERE event_name = 'af_conversion'
@@ -306,7 +306,7 @@ In this query, we:
 * Count conversions distinguishing between new installs and re-downloads per unique campaign and install date.
 * Compare installs to the dashboard install metric, which merge conversion types 'install' and 're-download'.
 
-```
+```sql
 SELECT install_date, conversion_type, SUM(unique_users) AS total_conversions
 FROM ssot_unified
 WHERE event_name = 'af_conversion'
@@ -324,7 +324,7 @@ In this query, we:
 * Count conversions from retargeting campaigns broken down by geographic location.
 * By considering types 're-attribution' and 're-engagement' for these conversions.
 
-```
+```sql
 SELECT install_date, conversion_type, geo, SUM(unique_users) AS total_conversions
 FROM ssot_unified
 WHERE event_name = 'af_conversion'
@@ -341,7 +341,7 @@ In this query, we:
 * Count installs by attribution methods (SKAN, AppsFlyer methods, and organic) and break it by media source.
 * Filter based on 'af\_conversion' events with a conversion type of 'install'.
 
-```
+```sql
 SELECT install_date, attribution_method, media_source, SUM(unique_users)   
 AS total_installs
 FROM ssot_unified
@@ -355,7 +355,7 @@ GROUP BY install_date, attribution_method, media_source;
 
 In this query, we measure the accumulated revenue within a 7-day period post-install for ads served on Facebook.
 
-```
+```sql
 SELECT install_date,
        af_adset,
        SUM(revenue_usd) AS total_revenue_day_7
@@ -373,7 +373,7 @@ In this query, we:
 * Calculate cumulative revenue for multiple selected days after installation, breaking out sums for day 2 and day 7.
 * Please note that when analyzing installs from the past 7 days, the data for 7 days post-install may be incomplete. [Learn more](/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#partial-data)
 
-```
+```sql
 SELECT install_date,
        SUM(IF(days_post_attribution = 2, revenue_usd, 0)) AS total_revenue_day2,
        SUM(IF(days_post_attribution = 7, revenue_usd, 0)) AS total_revenue_day7
@@ -389,7 +389,7 @@ In this query, we:
 * Measure revenue value from a specific in-app event (like 'af\_purchase') and sum that data by media source.
 * Filter selected days post-install to make sure data isn’t double-counted.
 
-```
+```sql
 SELECT install_date, media_source, SUM(revenue_usd) AS total_purchase_revenue
 FROM ssot_unified
 WHERE event_name = 'af_purchase'  -- Change to your specific event
@@ -402,7 +402,7 @@ GROUP BY install_date, media_source;
 
 In this query, we calculate the conversion rate of a specific in-app event (such as 'af\_complete\_tutorial') in relation to all installations.
 
-```
+```sql
 SELECT install_date,
   SUM(IF(days_post_attribution = 2 AND   
 event_name = 'af_complete_tutorial', unique_users, 0)) 
@@ -422,7 +422,7 @@ In this query, we:
 * Calculate the Average Revenue Per User (ARPU) for day 2 and day 7 post-install across campaigns.
 * Please note that when analyzing installs from the past 7 days, the data for 7 days post-install may be incomplete. [Learn more](/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#partial-data)
 
-```
+```sql
 SELECT install_date,
        af_c_id,
        SUM(IF(days_post_attribution = 2, revenue_usd, 0)) 
@@ -440,7 +440,7 @@ GROUP BY install_date, af_c_id;
 
 In this query, we count the total number of duplicated user attributions by media source and install date, to highlight media channels that may have higher duplication in user attribution.
 
-```
+```sql
 SELECT install_date, media_source, SUM(skan_duplicates)
 FROM ssot_unified
 WHERE app_id = 'YOUR_APP'
@@ -448,7 +448,7 @@ WHERE app_id = 'YOUR_APP'
 GROUP BY install_date, media_source;
 ```
 
-```
+```sql
 SELECT install_date, media_source, SUM(skan_duplicates)
 FROM ssot_unified
 WHERE app_id = 'YOUR_APP'

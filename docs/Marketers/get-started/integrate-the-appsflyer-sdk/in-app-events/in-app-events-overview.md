@@ -246,7 +246,7 @@ You can view your in-app event data in these locations:
 * [Activity page](/docs/activity-dashboard): Displays in-app activities for the selected date range.
 * [Raw data in-app event report](/docs/raw-data-reporting-overview): Displays activity data, meaning, a chronological list of the actions performed by your entire user base. This report includes event parameter values, for example:
 
-  ```
+  ```json
   {
     "af_level":"10",
     "af_score":"3387",
@@ -347,7 +347,7 @@ We recommend using the `af_order_info` object to send complex in-app events to s
 
 **Example** (recommended format, one field per item array):
 
-```
+```json
 {
   "af_order_info": {
     "sku": ["ID1", "ID2", "ID3"],
@@ -363,7 +363,7 @@ As an alternative, you can still structure the event using `af_content` as a JSO
 
 **Example**
 
-```
+```json
 {
   "af_revenue": 4.99,
   "af_currency": "USD",

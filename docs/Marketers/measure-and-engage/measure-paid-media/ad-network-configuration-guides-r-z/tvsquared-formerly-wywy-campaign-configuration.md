@@ -72,7 +72,7 @@ For more details about partner activation please click [here](/docs/partner-acti
 
 - _**SITEID**_: Fill in the SITEID you obtained from TVSquared.
 - _**COLLECTORID**_: Fill in the COLLECTORID obtained from TVSquared.
-- **customerid:**(optional) You can leave this field blank.
+- **customerid:** (optional) You can leave this field blank.
 - (optional) Enable _**In-App Events Postback**_: Map your in-app events with TVSquared using postbacks. Configure the parameters as follows:
   - Click Add Event to add an SDK event to the list and complete the parameters.
 - Click **Save integration.**

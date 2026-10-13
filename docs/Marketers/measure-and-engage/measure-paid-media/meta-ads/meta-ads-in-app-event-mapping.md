@@ -196,7 +196,7 @@ If you do include `af_content_list`, do not also include `af_content_id` in the 
 
 > 📘 **Example, unified format compatible with Meta and TikTok**
 >
-> ```
+> ```json
 > {
 >   "af_revenue": 4.99,
 >   "af_currency": "USD",

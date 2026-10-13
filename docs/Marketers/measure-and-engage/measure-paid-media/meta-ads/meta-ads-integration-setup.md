@@ -144,7 +144,7 @@ As a result, you may see an increase in Meta-attributed installs in raw data rep
 >   * AppsFlyer SDK must be **V5.4.0+** for the referrer data to be passed properly. Referrer data has priority over data provided by the API and isn't restricted. This solution applies to click-through attribution and not view-through attribution.
 >   * The Channel field is determined by the channel value received from the Google Play Referrer API (sent to Google Play by Meta). If an empty string is received, the Channel field shows "None".
 >
-> * **For the Meta install referrer:**Refer to the [prerequisites and required actions](/docs/bulletin-get-meta-ads-attribution-in-raw-data-reports-with-the-meta-install-refe) described in the bulletin.
+> * **For the Meta install referrer:** Refer to the [prerequisites and required actions](/docs/bulletin-get-meta-ads-attribution-in-raw-data-reports-with-the-meta-install-refe) described in the bulletin.
 
 
 #### Meta install referrer—FAQ

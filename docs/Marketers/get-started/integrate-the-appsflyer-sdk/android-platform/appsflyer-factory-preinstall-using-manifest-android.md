@@ -137,14 +137,14 @@ The manufacturer then edits the system properties file in order to point to the 
 
 **Adding a Key-Value Pair to Android System Properties:**
 
-```
+```bash
 adb shell su
 setprop ro.appsflyer.preinstall.path /data/pre_install.appsflyer
 ```
 
 An alternative method is to retrieve the system-properties-file from the android file system, edit it, and push it back:
 
-```
+```bash
 adb root
 adb remount
 adb pull /system/build.prop
@@ -289,7 +289,7 @@ The pathway method allows you to specify a path to a file that holds the name of
 2. Talk to the media source or manufacturer and agree with them on a path where they put the file. The recommended path is "/data/local/tmp/pre\_install.appsflyer".
 3. Once a path is agreed upon, specify it in the manifest file. Place the following snippet before the closing application tag:  
 
-   ```
+   ```xml
    <meta-data android:name="AF_PRE_INSTALL_PATH" 
          android:value="/data/local/temp/pre_install.appsflyer" />
    ```

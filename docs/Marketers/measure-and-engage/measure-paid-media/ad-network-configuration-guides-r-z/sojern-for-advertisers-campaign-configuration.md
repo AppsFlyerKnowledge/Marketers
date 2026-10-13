@@ -242,7 +242,7 @@ Set out below is an example of the Search and Confirmation for the hotel and fli
 
 Flight Search event values:
 
-In-app event: af\_list\_view in-app event values: et=‘fs’&af\_num\_adults=`{number of adults}&af\_num\_children={number of children}&af\_class={service class}&fow={one way}&fmc={multi city}&dctry={website country domain}&af\_destination\_a={departure airport code}&af\_destination\_b={arrival airport code}&af\_city={destination city}&fc2={origin city}&af\_departing\_departure\_date={YYYY-MM-DD}&af\_returning\_departure\_date{YYYY-MM-DD}`
+In-app event: af\_list\_view in-app event values: et=‘fs’&af\_num\_adults=`{number of adults}&af_num_children={number of children}&af_class={service class}&fow={one way}&fmc={multi city}&dctry={website country domain}&af_destination_a={departure airport code}&af_destination_b={arrival airport code}&af_city={destination city}&fc2={origin city}&af_departing_departure_date={YYYY-MM-DD}&af_returning_departure_date{YYYY-MM-DD}`
 
 ## Attribution link tab
 

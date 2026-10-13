@@ -147,7 +147,7 @@ Use Claude Code with bearer token authentication for automation, scheduling, and
    What were my top media sources in the US last week for "Mypets.android.com"?
    ```
 
-   ```
+   ```sql
    Create a summary of the performance of "Mypets.android.com" in the last day, segmented by campaign.
    ```
 
@@ -160,7 +160,7 @@ Use Cursor IDE to connect AppsFlyer MCP from your local development environment.
    * **Project-specific configuration:** `.cursor/mcp.json`
 2. Add the following entry under the `mcpServers` field in your JSON file:
 
-   ```
+   ```json
    {
      "mcpServers": {
        "appsflyer": {
@@ -178,7 +178,7 @@ Use Cursor IDE to connect AppsFlyer MCP from your local development environment.
 2. Select **Configure MCP Servers**.
 3. In `.vscode/mcp.json`, add the AppsFlyer MCP server configuration:
 
-   ```
+   ```json
    {
      "servers": {
        "appsflyer": {

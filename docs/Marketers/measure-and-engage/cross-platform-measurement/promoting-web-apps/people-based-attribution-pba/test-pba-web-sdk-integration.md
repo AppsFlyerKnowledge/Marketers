@@ -38,7 +38,7 @@ Web SDK sends web events to PBA, which are made available via PBA dashboards and
 
 
 
-<table><tbody><tr><td><p><strong>Page main view</strong></p><p><a href="https://files.readme.io/345bb7bfffcb7756c0a61d05daadd8a355df5a7b7a07adaeeef203a64adc79bf-360011199758.jpg"><img alt="TestScreen_us-en.jpg" src="https://files.readme.io/345bb7bfffcb7756c0a61d05daadd8a355df5a7b7a07adaeeef203a64adc79bf-360011199758.jpg"/></a></p><ul><li>The most recent events appear first.</li><li><strong>Event cache</strong>:<ul><li>Contains up to 100 events</li><li>Older events are deleted to make way for newer events</li><li>Cached events are deleted after 24 hours</li></ul></li><li><strong>Page controls</strong>:<ul><li><strong>Refresh rate indicator</strong>: The page refreshes automatically every 5 seconds.</li><li><strong>Clear all</strong>: Clears events from the cache permanently. <strong>Note!</strong> The cache is common to websites sharing the same web dev key. Thus, if another developer is using the test page, it will clear for them as well. </li><li><strong>Pause/start</strong>: Pauses automatic refresh. New events don't display until you click start. </li></ul></li></ul><p><strong>Event table columns</strong></p><table><thead><tr><th>Field</th><th>Description</th></tr></thead><tbody><tr><td>Time (UTC)</td><td>Event time</td></tr><tr><td>Event type</td><td><p>Event types are as follows:</p><ul><li>Events sent by you:<ul><li><code>EVENT</code></li><li><code>setCustomerUserId</code></li><li><code>pageLoad</code>: Sent by the web SDK each time a page is loaded/refreshed on your website</li></ul></li></ul></td></tr><tr><td>Event content</td><td><p>The event payload, as recorded by PBA.</p></td></tr><tr><td>Comments</td><td><ul><li><strong><span>Valid</span></strong>: PBA received and recorded the event. No further action is required.</li><li><strong>Invalid</strong>: List of errors requiring corrective action. The error message format is:<br/>event field name: error description </li><li>Hover over error messages to see details:<br/><p><img alt="PBAWebSDKTestingErrorMessagesPopup_en-us.png" src="https://files.readme.io/0e050e60dbf9f1289880b5d58c4885d4be66392265986eaf4b2f76876697e429-360011317358.png"/></p></li></ul></td></tr></tbody></table><p> </p></td></tr><tr><td><p><strong>Drill-down view<br/><br/></strong><a href="https://files.readme.io/893f2654c8a3d4f9e8bce43728c65723d9fe1583825b2ae8c2276afc33612511-360011199738.png"><img alt="mceclip0.png" src="https://files.readme.io/893f2654c8a3d4f9e8bce43728c65723d9fe1583825b2ae8c2276afc33612511-360011199738.png"/></a></p><p>Click an event row to display its contents after processing. See <a href="/docs/pba-web-sdk-integration-guide#web-sdk-event-parameters">Web SDK event parameters</a> for additional information</p></td></tr></tbody></table>
+<table><tbody><tr><td><p><strong>Page main view</strong></p><p><a href="https://files.readme.io/345bb7bfffcb7756c0a61d05daadd8a355df5a7b7a07adaeeef203a64adc79bf-360011199758.jpg"><img alt="TestScreen_us-en.jpg" src="https://files.readme.io/345bb7bfffcb7756c0a61d05daadd8a355df5a7b7a07adaeeef203a64adc79bf-360011199758.jpg"/></a></p><ul><li>The most recent events appear first.</li><li><strong>Event cache</strong>:<ul><li>Contains up to 100 events</li><li>Older events are deleted to make way for newer events</li><li>Cached events are deleted after 24 hours</li></ul></li><li><strong>Page controls</strong>:<ul><li><strong>Refresh rate indicator</strong>: The page refreshes automatically every 5 seconds.</li><li><strong>Clear all</strong>: Clears events from the cache permanently. <strong>Note!</strong> The cache is common to websites sharing the same web dev key. Thus, if another developer is using the test page, it will clear for them as well. </li><li><strong>Pause/start</strong>: Pauses automatic refresh. New events don't display until you click start. </li></ul></li></ul><p><strong>Event table columns</strong></p><table><thead><tr><th>Field</th><th>Description</th></tr></thead><tbody><tr><td>Time (UTC)</td><td>Event time</td></tr><tr><td>Event type</td><td><p>Event types are as follows:</p><ul><li>Events sent by you:<ul><li><code>EVENT</code></li><li><code>setCustomerUserId</code></li><li><code>pageLoad</code>: Sent by the web SDK each time a page is loaded/refreshed on your website</li></ul></li></ul></td></tr><tr><td>Event content</td><td><p>The event payload, as recorded by PBA.</p></td></tr><tr><td>Comments</td><td><ul><li><strong><span>Valid</span></strong>: PBA received and recorded the event. No further action is required.</li><li><strong>Invalid</strong>: List of errors requiring corrective action. The error message format is:<br/>event field name: error description </li><li>Hover over error messages to see details:<br/><p><img alt="PBAWebSDKTestingErrorMessagesPopup_en-us.png" src="https://files.readme.io/0e050e60dbf9f1289880b5d58c4885d4be66392265986eaf4b2f76876697e429-360011317358.png"/></p></li></ul></td></tr></tbody></table><p> </p></td></tr><tr><td><p><strong>Drill-down view<br/><br/></strong><a href="https://files.readme.io/893f2654c8a3d4f9e8bce43728c65723d9fe1583825b2ae8c2276afc33612511-360011199738.png"><img alt="mceclip0.png" src="https://files.readme.io/893f2654c8a3d4f9e8bce43728c65723d9fe1583825b2ae8c2276afc33612511-360011199738.png"/></a></p><p>Click an event row to display its contents after processing. See <a href="./pba-web-sdk-integration-guide#web-sdk-event-parameters">Web SDK event parameters</a> for additional information</p></td></tr></tbody></table>
 
 
 
@@ -60,7 +60,7 @@ If test mode is enabled on a given browser, irrespective of the tab; the browser
 
 1. **Verify that the SDK is loaded:**
    1. In AppsFlyer, from the top menu, select **My Apps** > **View brand** **bundles**.
-   2. Select the required **Web SDK integration test.**The integration page opens. The web dev key is displayed.  
+   2. Select the required **Web SDK integration test.** The integration page opens. The web dev key is displayed.  
 
       [![pba_web_sdk_integration_test_web_dev_key_en-us.png](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)
    3. In a new browser tab, go to your website (that has the Web SDK installed).
@@ -68,7 +68,7 @@ If test mode is enabled on a given browser, irrespective of the tab; the browser
    5. Go to the **Console** tab.
    6. In the console, enter:  
 
-      ```
+      ```javascript
       window.AF_SDK.initPluginsConfig.pba.webAppId
       ```
 
@@ -80,7 +80,7 @@ If test mode is enabled on a given browser, irrespective of the tab; the browser
    1. In the website browser tab, go to the **Console** tab.
    2. Enter:
 
-      ```
+      ```javascript
       window.AF_SDK.PLUGINS.PBA.turnOnDevMode()
       ```
 
@@ -90,7 +90,7 @@ If test mode is enabled on a given browser, irrespective of the tab; the browser
 3. **Verify that test mode is enabled:**
    * In **Console** tab, Enter:  
 
-     ```
+     ```javascript
      window.AF_SDK.PLUGINS.PBA.isDevModeOn()
      ```
 

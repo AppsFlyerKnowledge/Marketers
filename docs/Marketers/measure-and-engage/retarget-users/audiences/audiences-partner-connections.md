@@ -315,7 +315,7 @@ Creating an S3 integration allows AppsFlyer to send the audience device IDs dire
 10. Click **JSON.**
 11. Paste the following policy snippet into the JSON window.
 
-    ```
+    ```json
     {
     							"Version": "2012-10-17",
     							"Statement": [

@@ -73,8 +73,8 @@ Add details about the services you provide. We recommend adding as much informat
 
 * **Type of services you offer:** Select from the list up to 3 types of [supported capabilities](/docs/partner-integrations#supported-capabilities).
 * **Search tags:** Add up to 5 keywords or phrases for advertisers to find you when searching by feature. Press Enter after each keyword or phrase.
-* **Offering highlights:**List the highlights of your offering as bullet points.
-* **Offering description:**Provide an extensive description of your offering.
+* **Offering highlights:** List the highlights of your offering as bullet points.
+* **Offering description:** Provide an extensive description of your offering.
 
 ![partner offering.png](https://files.readme.io/67444ccc29c930e8e4322fb999288e459b93c6189bfae9d11821f7cebdc9bb65-21120457390993.png)
 

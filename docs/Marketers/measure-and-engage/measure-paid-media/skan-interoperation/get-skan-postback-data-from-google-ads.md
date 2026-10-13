@@ -121,8 +121,8 @@ Click the delete icon for the account you want to remove.
 | --- | --- |
 | Sending events to Google Ads | **Q**: Does it make sense to send additional event postbacks to Google Ads for events not selected in the conversion value measurement option?<br /><br />**A**: For consenting users, send the full range of events to maximize Google Ads' ability to optimize. |
 | Map multiple events to the same Google Ads event | **Q**: Can I map multiple in-app events to one Google Ads event?<br /><br />**A**: If multiple events are mapped to one Google Ads standard event, Google Ads can't differentiate between the events. So, Google Ads will optimize toward the one event they recognize. |
-| Campaign types supported | **Q:**What types of Google Ads campaigns are supported?<br /><br />**A**: Web-to-app and App-to-app iOS campaigns including search, video, and so on. |
-| No data to pull | **Q:**Why does the connection status display "No data to pull: Check your Google data-sharing permissions"?<br /><br />**A**: Either there is no SKAN data yet or you need to log into Google Ads using an Administrator user role on the account. |
+| Campaign types supported | **Q:** What types of Google Ads campaigns are supported?<br /><br />**A**: Web-to-app and App-to-app iOS campaigns including search, video, and so on. |
+| No data to pull | **Q:** Why does the connection status display "No data to pull: Check your Google data-sharing permissions"?<br /><br />**A**: Either there is no SKAN data yet or you need to log into Google Ads using an Administrator user role on the account. |
 
 </Accordion>
 

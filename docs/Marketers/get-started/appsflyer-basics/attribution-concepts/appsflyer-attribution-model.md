@@ -88,7 +88,7 @@ Device ID matching is the primary attribution method on iOS, but requires ATT co
 Available IDs are:
 
 * **iOS devices**: IDFA, IDFV
-* **Android devices: having Google Play services:**GAID
+* **Android devices: having Google Play services:** GAID
 * **Android devices without Google Play services:** OAID, Android ID, IMEI, Fire ID
 
 Device IDs can be hashed using SHA1 or MD5 on attribution links.

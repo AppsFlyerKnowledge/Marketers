@@ -74,7 +74,7 @@ By using this method, you can attribute both organic install and non-organic ins
 
 It is easy and fast to launch ad campaigns. It is also convenient to check the performance of different media sources at the same app overview page.
 
-**Example:**Bytedance Ads(Toutiao), Sina Weibo, iQiyi
+**Example:** Bytedance Ads(Toutiao), Sina Weibo, iQiyi
 
 **Preparation:** Set up one Android out-of-store app, and generate different attribution links for different ad networks. To learn how to attribute out-of-store apps, click [here](/docs/set-up-multi-store-android-attribution).
 

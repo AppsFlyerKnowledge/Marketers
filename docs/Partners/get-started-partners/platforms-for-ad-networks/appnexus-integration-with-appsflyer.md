@@ -43,15 +43,15 @@ Below you can find the base attribution link with a detailed explanation per eac
 
 | Operating System | Macro |
 | --- | --- |
-| Android | &advertising\_id=$`{DEVICE\_AAID}` |
-| iOS | idfa=$`{DEVICE\_APPLE\_IDA}` |
+| Android | &advertising\_id=$`{DEVICE_AAID}` |
+| iOS | idfa=$`{DEVICE_APPLE_IDA}` |
 
 **Recommended Attribution Link Parameters**
 
 | AppsFlyer Parameter | AppNexus Macros | Description |
 | --- | --- | --- |
-| clickid | $`{SSP\_DATA}` | Request ID of each user session - **Required** |
-| af\_siteid | $`{PUBLISHER\_ID}` | ID of the affiliate promoting the offer - **Optional** |
+| clickid | $`{SSP_DATA}` | Request ID of each user session - **Required** |
+| af\_siteid | $`{PUBLISHER_ID}` | ID of the affiliate promoting the offer - **Optional** |
 
 For the complete AppsFlyer parameter list [click here](/docs/about-link-structure-and-parameters).
 

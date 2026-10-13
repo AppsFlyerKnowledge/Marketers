@@ -196,7 +196,7 @@ SRN campaigns should target a specific audience, but this doesn't always happen:
 
 If one SRN is used to run both user acquisition and retargeting campaigns, this can lead to user mistargeting. As a result, you pay for unintended traffic.
 
-**Scenario:**An SRN in the AppsFlyer platform is enabled for a user-acquisition campaign.
+**Scenario:** An SRN in the AppsFlyer platform is enabled for a user-acquisition campaign.
 
 * After each app launch, AppsFlyer queries the SRN to check if the advertising ID (user) had a recent engagement.
 * If yes,

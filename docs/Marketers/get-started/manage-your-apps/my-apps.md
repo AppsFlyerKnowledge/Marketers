@@ -48,7 +48,7 @@ Explore the actions and functionalities available on the My Apps page:
 ### Search and filter the list of apps
 
 - **Search:** Use the search bar at the top-left to search by app name, ID, or brand bundle.
-- **Filter:**Use the filters in the top-right menu to narrow the list by:
+- **Filter:** Use the filters in the top-right menu to narrow the list by:
   - **Status:** The app status in the app store: **Available** or **Pending in store**. The status is updated every 4 hours. You can [refresh the status manually](/docs/my-apps#refresh-the-status-of-pending-apps).
   - **Platform:** Select platforms by which to filter the apps.
 

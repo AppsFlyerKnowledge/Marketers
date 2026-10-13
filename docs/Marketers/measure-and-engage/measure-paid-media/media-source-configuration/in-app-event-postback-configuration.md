@@ -210,7 +210,7 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 
 A marketer sends a purchase event with the following `event_value`:
 
-```
+```json
 {"af_currency":"USD","af_content_id":"1234567","af_revenue":50.87,"af_content_type":"category_a"}
 ```
 

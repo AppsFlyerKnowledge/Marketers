@@ -299,7 +299,7 @@ Once the creative is ready, it's time to put it to the test **before** setting
 
 **To test a Smart Banner creative:**
 
-**Prerequisite:**Make sure that the Smart Banner code snippet is integrated into your website.
+**Prerequisite:** Make sure that the Smart Banner code snippet is integrated into your website.
 
 1. In the **Test Creative** page, enter the link to your web page where the Smart Banner SDK is integrated (see [Smart Banners for developers](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2)).
 2. Click **Generate**.

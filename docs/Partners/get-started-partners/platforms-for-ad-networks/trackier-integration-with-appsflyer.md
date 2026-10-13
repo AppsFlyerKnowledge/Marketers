@@ -57,9 +57,9 @@ See complete parameter lists for:
 
 | AppsFlyer parameter | Trackier macro | Description |
 | --- | --- | --- |
-| &clickid= | `{click\_id}` | Request the ID for each user session |
-| &af\_siteid= | `{publisher\_id}` | ID of the affiliate promoting an offer |
-| &af\_c\_id= | `{camp\_id}` | Offer ID |
+| &clickid= | `{click_id}` | Request the ID for each user session |
+| &af\_siteid= | `{publisher_id}` | ID of the affiliate promoting an offer |
+| &af\_c\_id= | `{camp_id}` | Offer ID |
 
 ## Postback URLs for install and in-app events
 

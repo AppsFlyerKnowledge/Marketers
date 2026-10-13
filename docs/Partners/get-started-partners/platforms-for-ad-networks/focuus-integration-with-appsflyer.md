@@ -42,7 +42,7 @@ See below AppsFlyers base attribution link with a detailed explanation per macro
 | AppsFlyer Parameter | FOCUUS Macros | Description |
 | --- | --- | --- |
 | **clickid** | **`{tid}`** | **Request ID of each user session** \- **Required** |
-| af\_siteid | `{publisher\_id}` | ID of the Affiliate promoting the offer - Optional |
+| af\_siteid | `{publisher_id}` | ID of the Affiliate promoting the offer - Optional |
 
 For a complete list of AppsFlyer parameters, [click here](/docs/about-link-structure-and-parameters#attribution-link-parameters).
 
@@ -69,10 +69,10 @@ https://pixel.focuusing.com/event.php?type=imp& **tid=`{clickid}`**
 
 | FOCUUS Macros | Description | Example |
 | --- | --- | --- |
-| event\_value | Payout value for each type of event | https://pixel.focuusing.com/event.php?type=cpi&tid=`{Your\_TRANSACTION\_ID}&eid=49816&event\_value={25}` |
+| event\_value | Payout value for each type of event | https://pixel.focuusing.com/event.php?type=cpi&tid=`{Your_TRANSACTION_ID}&eid=49816&event_value={25}` |
 
 **Event name (Install, Registration, etc.) appears by default on the generated pixel. for example:**
 
-* https://traffic.focuusing.com/ **install**?tid=`{TRANSACTION\_ID}`
-* https://traffic.focuusing.com/ **conversion**?tid=`{TRANSACTION\_ID}`
-* https://traffic.focuusing.com/ **ftd**?tid=`{TRANSACTION\_ID}`
+* https://traffic.focuusing.com/ **install**?tid=`{TRANSACTION_ID}`
+* https://traffic.focuusing.com/ **conversion**?tid=`{TRANSACTION_ID}`
+* https://traffic.focuusing.com/ **ftd**?tid=`{TRANSACTION_ID}`

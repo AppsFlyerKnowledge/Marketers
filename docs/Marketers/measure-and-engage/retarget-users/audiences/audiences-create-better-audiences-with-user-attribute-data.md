@@ -231,7 +231,7 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 
 **Example with multiple device IDs, attribute keys, and attribute values**
 
-```
+```json
 {
     "import_key": "c733e4d7-b538-4d12-a2ef-ffffffffffff",
     "attributes_values": [
@@ -273,7 +273,7 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 
 **Example with a single device ID and multiple attribute keys and values**
 
-```
+```json
 {
     "import_key": "c733e4d7-b538-4d12-a2ef-ffffffffffff",
     "attributes_values": [

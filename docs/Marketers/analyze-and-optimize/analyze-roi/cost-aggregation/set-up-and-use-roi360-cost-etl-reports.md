@@ -396,7 +396,7 @@ Cost ETL provides information regarding all your cost data. Some campaigns provi
 
 To get complete cost data tied with attribution for Google, Meta, TikTok (mobile and non-mobile), and other media sources (mobile only), use the following query:
 
-```
+```sql
 with etl as (
     select *
     from etl

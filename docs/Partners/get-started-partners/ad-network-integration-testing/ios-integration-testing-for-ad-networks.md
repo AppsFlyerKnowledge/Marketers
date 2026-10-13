@@ -136,7 +136,7 @@ Complete the prerequisites before beginning to execute the test procedure.
    The ATT consent dialogue displays.
 
    ![AppDialogue_us-en.png](https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png)
-6. Tap **Ask App not to Track.**The **Install Data** page displays.
+6. Tap **Ask App not to Track.** The **Install Data** page displays.
 
    [![PartnerIntegrationInstallData.png](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
 7. Tap **ATT Status**.  

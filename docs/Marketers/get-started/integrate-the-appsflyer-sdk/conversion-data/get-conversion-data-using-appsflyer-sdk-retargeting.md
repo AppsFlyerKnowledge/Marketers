@@ -54,7 +54,7 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 
 #### Conversion data payload
 
-```
+```json
 {
       "adgroup": null,
       "campaign": "campaign_name",
@@ -111,7 +111,7 @@ adgroup, to programmatically redirect your users.
 
 <Accordion title="Android">
 
-```
+```json
 {
      "adset":"Adidas Running Shoes Women",
        "adgroup": null,
@@ -145,7 +145,7 @@ adgroup, to programmatically redirect your users.
 
 <Accordion title="iOS">
 
-```
+```json
   {
      "media_source":"Meta ads",
      "campaign":"running shoes summer collection",
@@ -226,7 +226,7 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 
 **Payload**
 
-```
+```json
 {
       "af_deeplink": true,
       "campaign": "campaign_name",
@@ -287,7 +287,7 @@ are as follows:
 
 **Payload**
 
-```
+```json
 {
       "install_time": "2019-01-08 16:24:49.853",
       "cost_cents_USD": "0",
@@ -355,7 +355,7 @@ For both iOS and Android, when using the short version of OneLink, the conversio
 
 Example:
 
-```
+```json
 {
      af_dp: "superapp://Deeplink",
      pid: "media_source_name"
@@ -371,7 +371,7 @@ We recommend using the short version of OneLink. Click [here](/docs/understand-o
 
 Another reason to use the short version of OneLink is the conversion data structure that the long version returns. When using the long version, the conversion data is a map with a single field called `link` that holds the entire long OneLink.
 
-```
+```json
 {
      "link": "https://abcd.onelink.me/12ab?pid=media_source&c=campaign_name&is_retargeting=true&af_dp=superapp%3A%2F%2FDeepLink"
   }

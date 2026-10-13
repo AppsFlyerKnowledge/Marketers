@@ -243,7 +243,7 @@ AppsFlyer supports sending additional parameters (u parameters), limited up to u
 | u22= | site id | site\_id\_123456 |
 | u23= | event time | 2019-01-04 12:56:35.707 |
 | u24= | event name | af\_purchase |
-| u25= | event value | `{"af\_price":459,"af\_content\_id":"77147","af\_revenue":4.59,"af\_currency":"EUR"}` |
+| u25= | event value | `{"af_price":459,"af_content_id":"77147","af_revenue":4.59,"af_currency":"EUR"}` |
 | u26= | currency | EUR |
 
 
