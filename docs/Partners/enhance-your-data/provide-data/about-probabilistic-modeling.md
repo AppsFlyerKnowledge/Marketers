@@ -1,6 +1,6 @@
 ---
 title: "About probabilistic modeling"
-excerpt: "Learn how AppsFlyer uses probabilistic modeling as a privacy-preserving statistical method to attribute campaigns when deterministic signals are unavailable."
+excerpt: "Learn how to set up your ad engagement data so AppsFlyer can apply probabilistic modelling when deterministic signals aren’t available."
 x-zendesk:
   id: 40188089592209
   url: https://support.appsflyer.com/hc/en-us/articles/40188089592209-About-probabilistic-modeling

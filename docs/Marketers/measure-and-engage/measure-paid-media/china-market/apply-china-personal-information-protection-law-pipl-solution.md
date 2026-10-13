@@ -1,6 +1,6 @@
 ---
 title: "Apply China Personal Information Protection Law (PIPL) solution"
-excerpt: "Learn how to configure AppsFlyer to comply with China's Personal Information Protection Law (PIPL) by masking IPs and disabling device ID collection."
+excerpt: "Improve flexibility while measuring with AppsFlyer and complying with PIPL."
 x-zendesk:
   id: 6031419375377
   url: https://support.appsflyer.com/hc/en-us/articles/6031419375377-Apply-China-Personal-Information-Protection-Law-PIPL-solution
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-05-10T08:59:00Z'
   edited_at: '2025-08-11T12:06:31Z'
 ---
-Improve flexibility while measuring with AppsFlyer and complying with PIPL.
-
 ## Background
 
 In late 2021, China passed the Personal Information Protection Laws (PIPL) which regulates the collection, use, and transfer of user personal data. To provide customers with additional flexibility while using AppsFlyer and to support PIPL compliance, follow the step-by-step instructions described in this article.

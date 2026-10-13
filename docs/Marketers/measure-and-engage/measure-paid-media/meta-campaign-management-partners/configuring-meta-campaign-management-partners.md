@@ -1,6 +1,6 @@
 ---
 title: "Configuring Meta campaign management partners"
-excerpt: "Learn how to configure Meta campaign management partners to optimize your Meta ads campaigns and set up in-app event postbacks."
+excerpt: "Optimize Meta ads campaigns by using Meta campaign management partners (formerly known as Facebook Marketing Partners), such as Kenshoo, Bidalgo, and Smartly. When configured, AppsFlyer sends them the postbacks."
 x-zendesk:
   id: 360000562569
   url: https://support.appsflyer.com/hc/en-us/articles/360000562569-Configuring-Meta-campaign-management-partners
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-03-18T12:43:51Z'
   edited_at: '2026-06-16T09:57:20Z'
 ---
-At a glance: Optimize Meta ads campaigns by using Meta campaign management partners (formerly known as Facebook Marketing Partners), such as Kenshoo, Bidalgo, and Smartly. When configured, AppsFlyer sends them the postbacks.
-
 ## Configure Meta campaign management partners
 
 > 📘 Prerequisite

@@ -1,6 +1,6 @@
 ---
 title: "Android OAID implementation in the SDK"
-excerpt: "Learn how to collect and integrate the Android Open Anonymous Device Identifier (OAID) to attribute installs from third-party Android app stores."
+excerpt: "Collect the Android OAID to attribute installs from third-party Android app stores."
 x-zendesk:
   id: 360006278797
   url: https://support.appsflyer.com/hc/en-us/articles/360006278797-Android-OAID-implementation-in-the-SDK
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-02-27T20:21:05Z'
   edited_at: '2023-11-27T15:49:37Z'
 ---
-Collect the Android OAID to attribute installs from third-party Android app stores.
-
 ## About OAID
 
 The Open Anonymous Device Identifier (OAID) is a user-resettable unique identifier for Android devices. It was introduced by the Mobile Security Alliance (MSA), China Information and Communication Research Institute, and device manufacturers, as a privacy-preserving alternative to non-resettable device identifiers like IMEI.

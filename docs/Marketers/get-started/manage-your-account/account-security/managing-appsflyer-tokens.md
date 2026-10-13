@@ -1,6 +1,6 @@
 ---
 title: "Managing AppsFlyer tokens"
-excerpt: "Learn how to manage AppsFlyer API and server-to-server tokens to securely access data and integrate with external systems."
+excerpt: "Tokens enhance data security. They enable users to access data via the AppsFlyer APIs or receive event data using server-to-server calls. Admins can manage multiple tokens while maintaining data continuity. This includes creating, renaming, and removing API and server-to-server tokens as necessary."
 x-zendesk:
   id: 360004562377
   url: https://support.appsflyer.com/hc/en-us/articles/360004562377-Managing-AppsFlyer-tokens
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-01-01T09:50:22Z'
   edited_at: '2026-09-23T09:06:11Z'
 ---
-**At a glance:** Tokens enhance data security. They enable users to access data via the AppsFlyer APIs or receive event data using server-to-server calls. Admins can manage multiple tokens while maintaining data continuity. This includes creating, renaming, and removing API and server-to-server tokens as necessary.
-
 > 📘 **Important!**
 >
 > ![AppsFlyerAdmin_us-en.png](https://files.readme.io/8597603fc60e16b6ee5048c90e6293bf42c4acf8b63d553d6f77c34ab7945d02-32934372878481.png)

@@ -1,6 +1,6 @@
 ---
 title: "Attribution discrepancies between TikTok for Business and AppsFlyer"
-excerpt: "Learn about the differences in attribution models and install reporting between TikTok for Business and AppsFlyer, and how to reduce discrepancies."
+excerpt: "Learn about the differences in attribution models between TikTok for Business and AppsFlyer."
 x-zendesk:
   id: 19733501619473
   url: https://support.appsflyer.com/hc/en-us/articles/19733501619473-Attribution-discrepancies-between-TikTok-for-Business-and-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-10-30T07:45:29Z'
   edited_at: '2024-05-01T00:00:56Z'
 ---
-At a glance: Learn about the differences in attribution models between TikTok for Business and AppsFlyer.
-
 ## Overview
 
 As two major players in the mobile user acquisition ecosystem, TikTok for Business and AppsFlyer use distinct attribution models. This may cause discrepancies between TikTok for Business and AppsFlyer dashboards. While we work closely with TikTok for Business to minimize these discrepancies, advertisers need to be aware of potential causes.

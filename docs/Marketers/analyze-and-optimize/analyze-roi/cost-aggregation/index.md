@@ -1,6 +1,6 @@
 ---
 title: "Cost aggregation"
-excerpt: "Get reliable aggregate ad spend data with ROI360 and learn how to set up cost APIs, ETL reports, and import cost data."
+excerpt: "Get reliable aggregate ad spend data with ROI360"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,30 +18,30 @@ Get reliable aggregate ad spend data with ROI360
 
 <Cards>
   <Card title="ROI360 cost aggregation overview" href="/docs/roi360-cost-aggregation-overview" icon="fa-solid fa-sack-dollar">
-    Learn about the fundamentals of ROI360 cost aggregation.
+    Learn about methods for advertisers to aggregate and view marketing cost data.
   </Card>
   <Card title="Set up ROI360 cost API to measure cost data" href="/docs/set-up-roi360-cost-api-to-measure-cost-data" icon="fa-solid fa-plug">
-    Configure the cost API to start measuring your ad spend data.
+    Get aggregate marketing cost data (including cost-related LTV (Lifetime Value) performance metrics) using Cost API at the app or media source account level.
   </Card>
   <Card title="Set up and use ROI360 cost ETL reports" href="/docs/set-up-and-use-roi360-cost-etl-reports" icon="fa-solid fa-chart-column">
-    Extract, transform, and load your cost data using ETL reports.
+    Cost ETL, part of AppsFlyer ROI360, provides advertisers with campaign cost data having the best granularity available per media source. Data, updated up to 4 times daily, is delivered to your cloud service ready for loading into advertiser BI systems.
   </Card>
   <Card title="Combine Cost ETL and cohort reports via Data Locker" href="/docs/combine-cost-etl-and-cohort-reports-via-data-locker" icon="fa-solid fa-box-archive">
-    Integrate your cost ETL and cohort reports using Data Locker.
+    Combine Cost ETL and cohort reports via Data Locker (regular and advanced aggregated) to get the full picture of your marketing campaigns with the best available freshness, accuracy, and granularity.
   </Card>
   <Card title="Import cost data" href="/docs/import-cost-data" icon="fa-solid fa-coins">
-    Manually or automatically import external cost data into your dashboard.
+    Cost Import, part of AppsFlyer ROI360, allows advertisers to get full and accurate coverage of their marketing cost by importing CSV files via upload or email.
   </Card>
   <Card title="Dashboard - Cost and ad Revenue Status" href="/docs/dashboard-cost-and-ad-revenue-status" icon="fa-solid fa-gauge-high">
-    Monitor the status of your cost and ad revenue data integration.
+    Advertisers and agencies can check the status of cost and ad revenue integrations.
   </Card>
   <Card title="View aggregated cost data for attribution links" href="/docs/view-aggregated-cost-data-for-attribution-links" icon="fa-solid fa-link">
-    Analyze cost metrics associated with specific attribution links.
+    Viewing aggregated cost data for each ad click as reported by ad networks on the attribution link.
   </Card>
   <Card title="Incorporate agency fees into campaign costs" href="/docs/incorporate-agency-fees-into-campaign-costs" icon="fa-solid fa-handshake">
-    Adjust your campaign cost metrics to include agency fees.
+    Agency fee rules are part of the AppsFlyer ROI360 premium feature that enables advertisers to add the percentage fees agencies charge for traffic so they can see the total campaign cost.
   </Card>
   <Card title="Campaign properties in cost ETL reports" href="/docs/campaign-properties-in-cost-etl-reports" icon="fa-solid fa-chart-column">
-    Understand the campaign properties and dimensions available in ETL reports.
+    Learn about campaign properties and how they display in AppsFlyer Cost ETL data.
   </Card>
 </Cards>

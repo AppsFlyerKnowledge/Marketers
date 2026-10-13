@@ -1,6 +1,6 @@
 ---
 title: "Use the Web SDK Test page"
-excerpt: "Learn how to use the Web SDK Test page to validate your AppsFlyer Web SDK installation and event recording in real time."
+excerpt: "Use the Web SDK Test page to validate the Web SDK installation and event recording in real time. Run it when you first integrate the SDK and whenever you add or change an event."
 x-zendesk:
   id: 50118956978577
   url: https://support.appsflyer.com/hc/en-us/articles/50118956978577-Use-the-Web-SDK-Test-page
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2026-08-23T16:04:12Z'
   edited_at: '2026-08-24T06:28:48Z'
 ---
-Use the Web SDK Test page to validate the Web SDK installation and event recording in real time. Run it when you first integrate the SDK and whenever you add or change an event.
-
 ## Overview
 
 The Web SDK Test page opens your website in a new browser tab with a dedicated test session. Every Web SDK activity in that tab, including page loads, events, and identity calls, streams live into the test page, where you can inspect each event and its properties. This lets you verify your implementation in minutes, without waiting for data to appear in reports.

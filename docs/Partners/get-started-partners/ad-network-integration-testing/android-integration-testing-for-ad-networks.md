@@ -1,6 +1,6 @@
 ---
 title: "Android integration testing for ad networks"
-excerpt: "Test your AppsFlyer Android integration using the AppsFlyer Partner Integrations app to trigger postbacks and verify install and in-app event attribution."
+excerpt: "Test your AppsFlyer Android integration using the AppsFlyer Partner Integrations app to trigger postbacks."
 x-zendesk:
   id: 4412945443857
   url: https://support.appsflyer.com/hc/en-us/articles/4412945443857-Android-integration-testing-for-ad-networks
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-12-06T10:35:58Z'
   edited_at: '2024-01-04T10:46:04Z'
 ---
-**At a glance:** Test your AppsFlyer Android integration using the AppsFlyer Partner Integrations app to trigger postbacks.
-
 ## Android integration testing
 
 Testing consists of the following elements:

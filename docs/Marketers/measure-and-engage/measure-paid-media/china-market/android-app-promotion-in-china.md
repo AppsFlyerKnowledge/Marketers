@@ -1,6 +1,6 @@
 ---
 title: "Android app promotion in China"
-excerpt: "Learn the best practices and attribution solutions for promoting your Android app in the Chinese market."
+excerpt: "Best practices to promote your Android app in the Chinese market."
 x-zendesk:
   id: 115004639203
   url: https://support.appsflyer.com/hc/en-us/articles/115004639203-Android-app-promotion-in-China
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-09-12T08:13:46Z'
   edited_at: '2023-02-15T13:15:04Z'
 ---
-**At a glance:** Best practices to promote your Android app in the Chinese market.
-
 ## Android apps in China
 
 Treat the sections that follow as a checklist of items that you should consider if you market your app in China.

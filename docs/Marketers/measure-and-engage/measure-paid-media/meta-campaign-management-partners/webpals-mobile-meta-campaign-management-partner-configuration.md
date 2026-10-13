@@ -1,6 +1,6 @@
 ---
 title: "Webpals mobile (Meta campaign management partner) configuration"
-excerpt: "Learn how to set up and configure the Webpals mobile integration in AppsFlyer to manage your Meta campaigns and send in-app event postbacks."
+excerpt: "Webpals mobile - a Meta campaign management partner (formerly known as Facebook Marketing Partners), one of AppsFlyer's integrated partners, is a leader in mobile user acquisition and revenue maximization with global coverage."
 x-zendesk:
   id: 115000135126
   url: https://support.appsflyer.com/hc/en-us/articles/115000135126-Webpals-mobile-Meta-campaign-management-partner-configuration
@@ -26,8 +26,6 @@ x-zendesk:
   <Card title="Setting up Webpals mobile" href="#setting-up-webpals-mobile" icon="fa-solid fa-sliders" />
   <Card title="Configuring on Webpals mobile" href="#configuring-on-webpals-mobile" icon="fa-solid fa-puzzle-piece" />
 </Cards>
-
-**At a glance:** Webpals mobile - a Meta campaign management partner (formerly known as Facebook Marketing Partners), one of AppsFlyer's integrated partners, is a leader in mobile user acquisition and revenue maximization with global coverage.
 
 ## Setting up Webpals mobile
 

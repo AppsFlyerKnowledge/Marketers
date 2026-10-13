@@ -1,6 +1,6 @@
 ---
 title: "Netease Ads campaign configuration"
-excerpt: "Learn how to configure Netease Ads integration in AppsFlyer, including setting up attribution links, default postbacks, and partner permissions."
+excerpt: "Netease, an AppsFlyer integrated partner, is a leading advertisement service provider in the Chinese market."
 x-zendesk:
   id: 115003044126
   url: https://support.appsflyer.com/hc/en-us/articles/115003044126-Netease-Ads-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-06-18T06:59:42Z'
   edited_at: '2026-09-15T10:34:46Z'
 ---
-**At a glance:** Netease, an AppsFlyer integrated partner, is a leading advertisement service provider in the Chinese market.
-
 ## Setting up Netease
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.

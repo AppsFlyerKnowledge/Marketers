@@ -31,8 +31,6 @@ x-zendesk:
   <Card title="Permissions tab" href="#permissions-tab" icon="fa-solid fa-user-gear" />
 </Cards>
 
-**At a glance:** Learn how to automatically share data from AppsFlyer to Rockerbox, a marketing and analytics platform for mobile and web apps.
-
 ![rockerbox-logo_en-us.png](https://files.readme.io/d21ed29ebfff58b6ce129b1767a7ce4e5dd0a90aab217b1d41aac5ca90e34003-rockerbox.png)
 
 > ❗️ Important!

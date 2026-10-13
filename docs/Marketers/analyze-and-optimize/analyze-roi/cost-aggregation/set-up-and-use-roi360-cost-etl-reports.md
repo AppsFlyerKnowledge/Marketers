@@ -1,6 +1,6 @@
 ---
 title: "Set up and use ROI360 cost ETL reports"
-excerpt: "Learn how to configure and use AppsFlyer ROI360 Cost ETL reports to deliver granular campaign cost data directly to your cloud service."
+excerpt: "Cost ETL, part of AppsFlyer ROI360, provides advertisers with campaign cost data having the best granularity available per media source. Data, updated up to 4 times daily, is delivered to your cloud service ready for loading into advertiser BI systems."
 x-zendesk:
   id: 360008849238
   url: https://support.appsflyer.com/hc/en-us/articles/360008849238-Set-up-and-use-ROI360-cost-ETL-reports
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-05-17T15:36:41Z'
   edited_at: '2026-08-13T15:58:03Z'
 ---
-**At a glance:** Cost ETL, part of AppsFlyer ROI360, provides advertisers with campaign cost data having the best granularity available per media source. Data, updated up to 4 times daily, is delivered to your cloud service ready for loading into advertiser BI systems.
-
 [![5896_CostETL_graphic__2_.png](https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png)](https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png)
 
 Cost ETL, part of AppsFlyer ROI360, provides advertisers with campaign cost data with the best granularity available per media source. Up to four times daily, the data is updated and delivered to your Data Locker cloud service, ready for loading into advertiser BI systems.

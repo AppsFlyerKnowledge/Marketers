@@ -1,6 +1,6 @@
 ---
 title: "OneLink Standalone Deep Linking Suite"
-excerpt: "The OneLink Standalone Deep Linking Suite provides deep linking and redirection for owned media journeys without requiring a paid media attribution package."
+excerpt: "The OneLink Standalone Deep Linking Suite gives you deep linking and redirection for owned media journeys (email-to-app, web-to-app, QR-to-app, social-to-app, referrals, SMS/text, etc.), without requiring a paid media attribution package."
 x-zendesk:
   id: 44703014449809
   url: https://support.appsflyer.com/hc/en-us/articles/44703014449809-OneLink-Standalone-Deep-Linking-Suite
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2026-03-12T13:38:32Z'
   edited_at: '2026-07-08T13:07:11Z'
 ---
-**At a glance:** The OneLink Standalone Deep Linking Suite gives you deep linking and redirection for owned media journeys (email-to-app, web-to-app, QR-to-app, social-to-app, referrals, SMS/text, etc.), without requiring a paid media attribution package.
-
 ## About the OneLink Standalone Deep Linking Suite
 
 The Standalone Deep Linking Suite is built for teams that need **reliable, scalable deep linking, redirection, and attribution for owned channels**, without integrations involving paid media channels and partner postbacks.

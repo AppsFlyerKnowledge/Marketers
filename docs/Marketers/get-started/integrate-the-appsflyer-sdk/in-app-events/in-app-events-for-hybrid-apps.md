@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2014-08-07T12:45:23Z'
   edited_at: '2025-11-29T11:08:05Z'
 ---
-**At a glance:** Record in-app events from web-views embedded in your mobile app, allowing full event measurement even when the interaction occurs in the app’s web-based content.
-
 ## Introduction
 
 [In-app events](/docs/in-app-events-overview) that occur within the app are reported using the SDK. What about events that occur outside the app?

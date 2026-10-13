@@ -1,6 +1,5 @@
 ---
 title: "AppsFlyer factory preinstall using manifest (Android)"
-excerpt: "Learn how to attribute app installs to device manufacturers for apps added to Android devices before leaving the factory."
 x-zendesk:
   id: 207032166
   url: https://support.appsflyer.com/hc/en-us/articles/207032166-AppsFlyer-factory-preinstall-using-manifest-Android

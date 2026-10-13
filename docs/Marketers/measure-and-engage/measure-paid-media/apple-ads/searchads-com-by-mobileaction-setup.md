@@ -1,6 +1,6 @@
 ---
 title: "SearchAds.com (by MobileAction) setup"
-excerpt: "Learn how to optimize Apple Ads campaigns by configuring AppsFlyer to send postbacks to SearchAds.com by MobileAction."
+excerpt: "Optimize Apple Ads campaigns by using SearchAds.com by MobileAction. When configured, AppsFlyer sends postbacks to SearchAds.com."
 x-zendesk:
   id: 4402846897041
   url: https://support.appsflyer.com/hc/en-us/articles/4402846897041-SearchAds-com-by-MobileAction-setup
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-06-20T13:34:38Z'
   edited_at: '2026-09-15T11:02:59Z'
 ---
-**At a glance:** Optimize Apple Ads campaigns by using SearchAds.com by MobileAction. When configured, AppsFlyer sends postbacks to SearchAds.com.
-
 ## Enabling Apple Ads attribution
 
 To be able to send postbacks to SearchAds.com, you should first enable attribution for Apple Ads. This can be done by either an advertiser or an agency.

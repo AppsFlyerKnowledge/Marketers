@@ -1,6 +1,6 @@
 ---
 title: "Configure AppsFlyer SSO in Okta"
-excerpt: "Learn how to configure single sign-on (SSO) for AppsFlyer using Okta as your identity provider."
+excerpt: "Configure the SSO process using Okta as an identity provider (IdP)."
 x-zendesk:
   id: 12934808889745
   url: https://support.appsflyer.com/hc/en-us/articles/12934808889745-Configure-AppsFlyer-SSO-in-Okta
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-02-12T13:10:51Z'
   edited_at: '2024-10-09T04:55:25Z'
 ---
-**At a glance:** Configure the SSO process using Okta as an identity provider (IdP). 
-
 The first step in configuring the AppsFlyer SSO process is done on the Okta platform. Follow the steps below:
 
 ### Create the AppsFlyer app in Okta

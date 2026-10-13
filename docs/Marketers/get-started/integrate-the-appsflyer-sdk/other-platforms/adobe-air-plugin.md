@@ -1,6 +1,6 @@
 ---
 title: "Adobe AIR plugin"
-excerpt: "Integrate the AppsFlyer SDK into iOS and Android apps developed with the Adobe AIR platform to measure installs, in-app events, and media sources."
+excerpt: "Integrate AppsFlyer SDK into iOS/Android apps developed with Adobe AIR development platform to measure installs, in-app events, media sources, and more."
 x-zendesk:
   id: 207032226
   url: https://support.appsflyer.com/hc/en-us/articles/207032226-Adobe-AIR-plugin
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2013-12-09T11:32:45Z'
   edited_at: '2023-02-15T13:15:03Z'
 ---
-**At a glance:** Integrate AppsFlyer SDK into iOS/Android apps developed with Adobe AIR development platform to measure installs, in-app events, media sources, and more.
-
 ## Plugin information
 
 Supported platforms:

@@ -1,6 +1,6 @@
 ---
 title: "Implement Privacy Manifest in your app"
-excerpt: "Learn how to implement Apple's Privacy Manifests with the AppsFlyer SDK to accurately represent your app's privacy practices and data collection."
+excerpt: "At WWDC23 Apple introduced new privacy manifests. With Privacy Manifests, app developers are able to provide more accurate descriptions of their apps privacy practices. AppsFlyer has created a Privacy Manifest for the AppsFlyer SDK and the details are explained below."
 x-zendesk:
   id: 21677433322641
   url: https://support.appsflyer.com/hc/en-us/articles/21677433322641-Implement-Privacy-Manifest-in-your-app
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-01-15T10:17:30Z'
   edited_at: '2026-05-04T09:19:15Z'
 ---
-At WWDC23 Apple introduced new privacy manifests. With Privacy Manifests, app developers are able to provide more accurate descriptions of their apps privacy practices. AppsFlyer has created a Privacy Manifest for the AppsFlyer SDK and the details are explained below.
-
 ## Background
 
 With Privacy Manifests, an app developer will be able to create a record of the categories of data that it collects through its app independently and through its use of third-party dependencies, such as third-party SDKs used by the app. This information helps app developers accurately represent privacy practices in their apps including through the nutrition labels they provide to their users.

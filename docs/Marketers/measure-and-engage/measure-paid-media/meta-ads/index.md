@@ -1,6 +1,6 @@
 ---
 title: "Meta ads"
-excerpt: "An overview of the Meta ads integration with AppsFlyer, including setup guides, campaign creation, event mapping, and troubleshooting."
+excerpt: "All about the Meta ads integration"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,33 +18,33 @@ All about the Meta ads integration
 
 <Cards>
   <Card title="Meta Ads—integration setup" href="/docs/meta-ads-integration-setup" icon="fa-solid fa-bullhorn">
-    Learn how to set up the integration between AppsFlyer and Meta Ads.
+    Learn about integrating Meta ads with AppsFlyer.
   </Card>
   <Card title="Meta Ads—Create web campaigns for website apps" href="/docs/meta-ads-create-web-campaigns-for-website-apps" icon="fa-solid fa-bullhorn">
-    Guide on creating web campaigns specifically for website applications.
+    Set up a Meta Ads integration for your website app to send web conversion signals to Meta via the Conversions API (CAPI), so Meta can optimize ad targeting and measure campaign performance.
   </Card>
   <Card title="Meta Ads—Web integration setup for PC and console apps" href="/docs/meta-ads-web-integration-setup-for-pc-and-console-apps" icon="fa-solid fa-bullhorn">
-    Configure web integration for PC and console applications with Meta Ads.
+    Learn how to integrate Meta Web for PC and console apps with AppsFlyer and set up campaigns in Meta Web.
   </Card>
   <Card title="Meta Ads— Create web-based campaigns" href="/docs/meta-ads-create-web-based-campaigns" icon="fa-solid fa-bullhorn">
-    Step-by-step instructions for creating web-based campaigns.
+    Use Meta Ads Web campaigns to attribute web-to-app conversions from Meta Ads
   </Card>
   <Card title="Meta ads in-app event mapping" href="/docs/meta-ads-in-app-event-mapping" icon="fa-solid fa-bullhorn">
-    Map your in-app events to Meta ads to measure post-install actions.
+    Send your app's rich in-app events from AppsFlyer to Meta ads.
   </Card>
   <Card title="Meta ads FAQ" href="/docs/meta-ads-faq" icon="fa-solid fa-circle-question">
-    Frequently asked questions about the Meta ads integration.
+    Find answers to frequently asked questions about using Meta ads in AppsFlyer.
   </Card>
   <Card title="Meta ads discrepancies" href="/docs/meta-ads-discrepancies" icon="fa-solid fa-bullhorn">
-    Understand and resolve data discrepancies between AppsFlyer and Meta.
+    Learn about the differences in attribution models between Meta ads and AppsFlyer.
   </Card>
   <Card title="Meta Ads—Aggregate Event Measurement (AEM) for iOS" href="/docs/meta-ads-aggregate-event-measurement-aem-for-ios" icon="fa-solid fa-chart-line">
-    Configure Aggregate Event Measurement (AEM) for iOS campaigns.
+    Learn about the AEM solution for optimizing iOS conversions and in-app events and for attributing iOS re-engagements on Meta Ads.
   </Card>
   <Card title="Attributing app installs to non-mobile ads from Meta ads" href="/docs/attributing-app-installs-to-non-mobile-ads-from-meta-ads" icon="fa-solid fa-bullhorn">
-    Learn how to attribute app installs originating from non-mobile Meta ads.
+    Attribute installs coming from non-mobile Meta ads campaigns.
   </Card>
   <Card title="Instagram mobile app install ads configuration" href="/docs/instagram-mobile-app-install-ads-configuration" icon="fa-solid fa-bullhorn">
-    Configure mobile app install ads specifically for Instagram.
+    Add Instagram mobile app installs to your Meta ads account.
   </Card>
 </Cards>

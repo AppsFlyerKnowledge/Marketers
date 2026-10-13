@@ -1,6 +1,6 @@
 ---
 title: "Migrate from PBA to Web Performance Measurement"
-excerpt: "People-Based Attribution (PBA) is being replaced by Web Performance Measurement. Learn what is changing, how to migrate, and how to map your raw data reports and server-side integrations."
+excerpt: "People-Based Attribution (PBA) is being replaced by Web Performance Measurement, AppsFlyer upgraded web measurement solution. This article covers what's changing, the migration steps, and the full field mapping for your reports and server-side integrations."
 x-zendesk:
   id: 49156441281425
   url: https://support.appsflyer.com/hc/en-us/articles/49156441281425-Migrate-from-PBA-to-Web-Performance-Measurement
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2026-07-26T11:53:06Z'
   edited_at: '2026-09-07T13:34:12Z'
 ---
-People-Based Attribution (PBA) is being replaced by Web Performance Measurement, AppsFlyer upgraded web measurement solution. This article covers what's changing, the migration steps, and the full field mapping for your reports and server-side integrations.
-
 ## Why we're upgrading your web measurement
 
 Web measurement matters more than ever. The website is where many of your users convert and where the path to your mobile app begins. It isn't just a landing page; it's a full acquisition funnel of quiz flows, personalized onboarding, paywalls, and web stores that often win higher-intent users at a lower acquisition cost.

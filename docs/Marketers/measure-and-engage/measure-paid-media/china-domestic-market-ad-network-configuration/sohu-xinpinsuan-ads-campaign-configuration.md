@@ -1,6 +1,6 @@
 ---
 title: "Sohu XinPinSuan Ads campaign configuration"
-excerpt: "Learn how to configure the integration, attribution links, and permissions for Sohu XinPinSuan Ads in AppsFlyer."
+excerpt: "Sohu XinPinSuan Ads is an AppsFlyer ad network integrated partner."
 x-zendesk:
   id: 360001953697
   url: https://support.appsflyer.com/hc/en-us/articles/360001953697-Sohu-XinPinSuan-Ads-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-07-05T08:57:46Z'
   edited_at: '2026-09-15T10:28:17Z'
 ---
-**At a glance:** Sohu XinPinSuan Ads is an AppsFlyer ad network integrated partner.
-
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 
 **To set up a new integration:**

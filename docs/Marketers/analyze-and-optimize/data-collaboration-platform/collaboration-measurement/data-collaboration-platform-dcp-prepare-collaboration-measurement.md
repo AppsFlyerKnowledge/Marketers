@@ -1,6 +1,6 @@
 ---
 title: "Data collaboration platform (DCP) - Prepare collaboration measurement"
-excerpt: "Learn how to create measurement data sources and provide access to them for the attribution job in the Data Collaboration Platform."
+excerpt: "Learn how to create measurement data sources, and how to provide access to them in a way that can be digested by the attribution job."
 x-zendesk:
   id: 32144170371985
   url: https://support.appsflyer.com/hc/en-us/articles/32144170371985-Data-collaboration-platform-DCP-Prepare-collaboration-measurement

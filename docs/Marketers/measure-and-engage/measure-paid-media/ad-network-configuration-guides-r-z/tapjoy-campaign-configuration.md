@@ -1,6 +1,6 @@
 ---
 title: "Tapjoy campaign configuration"
-excerpt: "Configure your mobile attribution, view-through attribution, cost, and ad revenue campaigns with Tapjoy in AppsFlyer."
+excerpt: "Tapjoy, an AppsFlyer ad network integrated partner, is an advertising and app monetization platform. In addition to click-based mobile attribution, Tapjoy offers view-through attribution, which can be recorded with AppsFlyer."
 x-zendesk:
   id: 207033956
   url: https://support.appsflyer.com/hc/en-us/articles/207033956-Tapjoy-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-06-10T14:19:38Z'
   edited_at: '2026-09-08T13:50:56Z'
 ---
-At a glance: Tapjoy, an AppsFlyer ad network integrated partner, is an advertising and app monetization platform. In addition to click-based mobile attribution, Tapjoy offers view-through attribution, which can be recorded with AppsFlyer.
-
 To configure your campaigns with Tapjoy, follow the steps below.
 
 ## Setting up Tapjoy

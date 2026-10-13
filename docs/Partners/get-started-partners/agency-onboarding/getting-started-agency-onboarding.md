@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-09-02T12:50:49Z'
   edited_at: '2026-08-12T11:37:20Z'
 ---
-**At a glance:** Start measuring the campaigns of your clients by setting up an Agency account.
-
 <Embed title="Getting started—agency onboarding" typeOfEmbed="wistia" url="https://fast.wistia.com/embed/iframe/54qzpj1lm7" providerUrl="https://fast.wistia.com" />
 
 ## 

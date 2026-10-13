@@ -1,6 +1,6 @@
 ---
 title: "Turn on test app integration for ad networks"
-excerpt: "Learn how ad networks can activate integration and grant permissions for iOS and Android test apps in AppsFlyer."
+excerpt: "Ad networks performing integration testing must turn on app integration (activation)."
 x-zendesk:
   id: 360020713538
   url: https://support.appsflyer.com/hc/en-us/articles/360020713538-Turn-on-test-app-integration-for-ad-networks
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-05-22T15:56:20Z'
   edited_at: '2026-09-09T13:49:26Z'
 ---
-Ad networks performing integration testing must turn on app integration (activation).
-
 ## Test apps for ad networks (iOS and Android)
 
 Ad networks after setting up integration and postbacks must test integration using AppsFlyer test apps. Before testing, the ad network must activate the app integration and enable additional ad network permissions as needed. The activation is performed once per app.

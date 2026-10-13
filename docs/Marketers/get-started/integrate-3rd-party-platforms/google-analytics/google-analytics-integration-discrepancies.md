@@ -1,6 +1,6 @@
 ---
 title: "Google Analytics integration—Discrepancies"
-excerpt: "Understand the discrepancies that might occur between AppsFlyer and Google Analytics, including time zone differences, session counts, and duplicate events."
+excerpt: "Understand the discrepancies that might occur between AppsFlyer and Google Analytics."
 x-zendesk:
   id: 4413026674833
   url: https://support.appsflyer.com/hc/en-us/articles/4413026674833-Google-Analytics-integration-Discrepancies
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-12-07T13:38:17Z'
   edited_at: '2026-08-09T14:24:20Z'
 ---
-**At a glance:** Understand the discrepancies that might occur between AppsFlyer and Google Analytics.
-
 ## Discrepancies in data between AppsFlyer and Google Analytics
 
 Listed below are reasons for discrepancies between AppsFlyer and Google Analytics.

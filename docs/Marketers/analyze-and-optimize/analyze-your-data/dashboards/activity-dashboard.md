@@ -1,6 +1,6 @@
 ---
 title: "Activity dashboard"
-excerpt: "See app activity, engagement, and in-app metrics during a given period with real-time updates for current day metrics."
+excerpt: "See app activity, engagement, and in-app metrics during a given period. Current day metrics update in real-time."
 x-zendesk:
   id: 207602503
   url: https://support.appsflyer.com/hc/en-us/articles/207602503-Activity-dashboard
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-01-12T15:50:15Z'
   edited_at: '2025-11-24T09:07:15Z'
 ---
-**At a glance:** See app activity, engagement, and in-app metrics during a given period. Current day metrics update in real-time.
-
 ![ActivityDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
 
 ## Activity dashboard

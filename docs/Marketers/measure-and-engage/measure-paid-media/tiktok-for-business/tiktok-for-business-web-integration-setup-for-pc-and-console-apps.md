@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-10-31T13:58:16Z'
   edited_at: '2026-09-15T09:26:02Z'
 ---
-**At a glance:** Learn how to integrate TikTok Web for PC and console apps with AppsFlyer and set up campaigns in TikTok Web.
-
 > 📘 **Warning**
 >
 > This integration is only available for PC and console apps, such as Steam, Epic, or Native PC. For mobile apps, see the [TikTok ads integration setup](/docs/tiktok-for-business-advanced-srn-integration-setup) page.

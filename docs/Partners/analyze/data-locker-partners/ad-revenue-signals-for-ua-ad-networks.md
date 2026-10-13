@@ -1,6 +1,6 @@
 ---
 title: "Ad revenue signals for UA ad networks"
-excerpt: "Ad networks responsible for user acquisition can receive ad revenue data via Data Locker to optimize their customers' UA campaigns and improve ROAS."
+excerpt: "Ad networks responsible for user acquisition can receive data regarding ad revenue and use it to optimize their customers' UA campaigns."
 x-zendesk:
   id: 4402898251409
   url: https://support.appsflyer.com/hc/en-us/articles/4402898251409-Ad-revenue-signals-for-UA-ad-networks
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-06-21T13:39:13Z'
   edited_at: '2026-05-14T15:36:34Z'
 ---
-**At a glance:** Ad networks responsible for user acquisition can receive data regarding ad revenue and use it to optimize their customers' UA campaigns.
-
 Ad networks can receive reports via Data Locker with valuable ad revenue information regarding users. These users may have been acquired from campaigns served through them, or they may be from a different media source.
 
 Ad networks can then ingest this data to campaign-targeting and optimization algorithms, and use it to improve ROAS campaigns based on a complete view of UA-generated revenue.

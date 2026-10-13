@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-10-22T05:21:45Z'
   edited_at: '2026-06-11T08:42:59Z'
 ---
-**At a glance:** Learn about self-reporting networks (SRNs)—attribution, deep linking, iOS implications, and FAQ.
-
 ## SRNs integrated with AppsFlyer
 
 

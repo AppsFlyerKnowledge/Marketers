@@ -1,6 +1,6 @@
 ---
 title: "Adquant (Meta campaign management partner) configuration"
-excerpt: "Learn how to configure the integration between AppsFlyer and Adquant to scale your app growth using AI solutions."
+excerpt: "Adquant, an AppsFlyer integrated partner (formerly known as Facebook Marketing Partners), is a leading provider of Artificial Intelligence solutions to help app marketers scale their growth."
 x-zendesk:
   id: 360001425369
   url: https://support.appsflyer.com/hc/en-us/articles/360001425369-Adquant-Meta-campaign-management-partner-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-08-21T08:20:24Z'
   edited_at: '2026-06-16T09:27:56Z'
 ---
-Adquant, an AppsFlyer integrated partner (formerly known as Facebook Marketing Partners), is a leading provider of Artificial Intelligence solutions to help app marketers scale their growth.
-
 ## Setting up Adquant
 
 > 📘 Prerequisite

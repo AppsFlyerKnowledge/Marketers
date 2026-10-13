@@ -1,6 +1,6 @@
 ---
 title: "Registering test devices"
-excerpt: "Register your test device to ensure each install is recorded as a new install during attribution testing, preventing repeated installs from being flagged as reinstalls."
+excerpt: "When performing attribution tests, register your test device to make sure each install is recorded as a new install. A registered test device prevents installs from being recorded as reinstalls."
 x-zendesk:
   id: 207031996
   url: https://support.appsflyer.com/hc/en-us/articles/207031996-Registering-test-devices
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-03-10T08:19:35Z'
   edited_at: '2026-08-28T10:04:49Z'
 ---
-When performing attribution tests, register your test device to make sure each install is recorded as a new install. A registered test device prevents installs from being recorded as reinstalls.
-
 ## Why register a test device
 
 When performing attribution tests, the re-attribution window limits install attributions to one per 90-day window. Therefore, if you repeatedly use the same device to test install attributions, nothing is recorded. Registering a device as a test device prevents repeated installs on the registered device from being recorded as reinstalls.

@@ -1,6 +1,5 @@
 ---
 title: "Google Analytics (GA4) integration"
-excerpt: "Learn how to integrate AppsFlyer with Google Analytics (GA4) to send attribution data and selected in-app events."
 x-zendesk:
   id: 25707682812561
   url: https://support.appsflyer.com/hc/en-us/articles/25707682812561-Google-Analytics-GA4-integration

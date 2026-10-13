@@ -1,6 +1,6 @@
 ---
 title: "Steam integration with AppsFlyer"
-excerpt: "Integrate your Steam game or app with AppsFlyer to receive attribution and event data for your Steam campaigns."
+excerpt: "Integrate your Steam game/app with AppsFlyer to receive attribution and event data for your Steam campaigns. The Steam integration supports attribution and in-app event recording for Steam apps on a user's Steam device."
 x-zendesk:
   id: 11241130508433
   url: https://support.appsflyer.com/hc/en-us/articles/11241130508433-Steam-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-12-08T10:02:09Z'
   edited_at: '2026-10-05T06:59:19Z'
 ---
-**At a glance:** Integrate your Steam game/app with AppsFlyer to receive attribution and event data for your Steam campaigns. The Steam integration supports attribution and in-app event recording for Steam apps on a user's Steam device.
-
 ## About Steam attribution
 
 Steam runs across Windows and Mac devices, Steam Deck, and other Steam OS devices.

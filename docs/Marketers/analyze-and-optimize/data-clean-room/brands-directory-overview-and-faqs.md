@@ -1,6 +1,5 @@
 ---
 title: "Brands Directory—Overview and FAQs"
-excerpt: "Learn about the AppsFlyer Brands Directory, an exclusive network connecting advertisers with Commerce Media Networks free of charge."
 x-zendesk:
   id: 24853411853329
   url: https://support.appsflyer.com/hc/en-us/articles/24853411853329-Brands-Directory-Overview-and-FAQs

@@ -1,6 +1,6 @@
 ---
 title: "Airship integration with AppsFlyer"
-excerpt: "Learn how to integrate Airship with AppsFlyer to share attribution data and target audiences with greater specificity."
+excerpt: "Airship, an AppsFlyer integrated partner, provides the world’s leading mobile engagement platform, helping thousands of businesses of all sizes form a direct and lasting connection with their customers. With Airship, companies gain total control of their mobile footprint — apps, wallets, and user-level data — to deliver experiences that get noticed and drive action across mobile or any other customer touch-point."
 x-zendesk:
   id: 207033976
   url: https://support.appsflyer.com/hc/en-us/articles/207033976-Airship-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-12-16T11:31:38Z'
   edited_at: '2026-06-16T11:22:40Z'
 ---
-**At a glance:** Airship, an AppsFlyer integrated partner, provides the world’s leading mobile engagement platform, helping thousands of businesses of all sizes form a direct and lasting connection with their customers. With Airship, companies gain total control of their mobile footprint — apps, wallets, and user-level data — to deliver experiences that get noticed and drive action across mobile or any other customer touch-point.
-
 > 📘 **Important!**
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.

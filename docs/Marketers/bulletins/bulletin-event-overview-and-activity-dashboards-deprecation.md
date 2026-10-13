@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Event, Overview, and Activity dashboards deprecation"
-excerpt: "The legacy Events, Overview, and Activity dashboards are being deprecated and replaced by My Dashboards, with full deprecation taking effect on June 30, 2026."
 table_of_contents: false
 x-zendesk:
   id: 46643660055057

@@ -1,6 +1,6 @@
 ---
 title: "Audiences partner connections"
-excerpt: "Connect your audiences to partners to easily and continuously send tailored campaigns using supported user identifiers."
+excerpt: "Connect your audiences to partners."
 x-zendesk:
   id: 360013960577
   url: https://support.appsflyer.com/hc/en-us/articles/360013960577-Audiences-partner-connections
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-10-05T06:49:59Z'
   edited_at: '2026-10-01T07:31:47Z'
 ---
-**At a glance:**  Connect your audiences to partners.
-
 ## About partner connections
 
 A partner connection enables you to easily and continuously send your audiences to partners so you can serve your tailored campaigns. Below is a list of Audiences partners, connection requirements, and the user identifiers supported by each.

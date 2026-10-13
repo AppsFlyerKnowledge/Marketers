@@ -1,6 +1,6 @@
 ---
 title: "Account login and password reset"
-excerpt: "Learn how to log in to AppsFlyer, manage first-time access, and reset user passwords or two-factor authentication."
+excerpt: "Log in to AppsFlyer, add multiple accounts, and reset user passwords."
 x-zendesk:
   id: 33114514624273
   url: https://support.appsflyer.com/hc/en-us/articles/33114514624273-Account-login-and-password-reset
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-03-03T09:04:23Z'
   edited_at: '2026-03-19T12:17:06Z'
 ---
-At a glance: Log in to AppsFlyer, add multiple accounts, and reset user passwords.
-
 ## Log in instructions
 
 Log in instructions for first-time and existing users. This includes a new account creation, a new user invitation, or how to log in as an existing user.

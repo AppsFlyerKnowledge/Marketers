@@ -1,6 +1,6 @@
 ---
 title: "[Closed beta] Validation Rules API"
-excerpt: "Automate the creation and management of Validation Rules at scale with the programmatic Validation Rules API."
+excerpt: "Automate the creation and management of Validation Rules at scale. The Validation Rules API lets technical teams programmatically create, update, patch, and delete rules, going beyond the UI's value limits and cutting out manual rule management overhead."
 x-zendesk:
   id: 48341412127249
   url: https://support.appsflyer.com/hc/en-us/articles/48341412127249--Closed-beta-Validation-Rules-API
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2026-07-02T09:03:27Z'
   edited_at: '2026-09-27T13:16:32Z'
 ---
-Automate the creation and management of Validation Rules at scale. The Validation Rules API lets technical teams programmatically create, update, patch, and delete rules, going beyond the UI's value limits and cutting out manual rule management overhead.
-
 > 📘 **Note**
 >
 > The Validation Rules API is available to Protect360 customers. It's currently in closed beta, and access is limited and enabled per account. Contact your Customer Success Manager (CSM) to request access.

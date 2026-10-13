@@ -1,6 +1,6 @@
 ---
 title: "Send SKAN and AdAttributionKit postback copies directly to AppsFlyer (iOS 15+)"
-excerpt: "Configure your iOS app to send SKAN and AdAttributionKit postback copies directly to AppsFlyer to validate conversion values and verify postback integrity."
+excerpt: "Starting iOS 15, configure your app to send postback copies to AppsFlyer in addition to sending them to ad networks. Doing so enables AppsFlyer to validate the conversion value (CV) and verify postback integrity. Configure AppsFlyer Push API to forward postback copies to an additional selected endpoint."
 x-zendesk:
   id: 4402320969617
   url: https://support.appsflyer.com/hc/en-us/articles/4402320969617-Send-SKAN-and-AdAttributionKit-postback-copies-directly-to-AppsFlyer-iOS-15
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-06-08T12:09:25Z'
   edited_at: '2025-12-31T09:07:08Z'
 ---
-**At a glance:** Starting iOS 15, configure your app to send postback copies to AppsFlyer in addition to sending them to ad networks. Doing so enables AppsFlyer to validate the conversion value (CV) and verify postback integrity. Configure AppsFlyer Push API to forward postback copies to an additional selected endpoint.
-
 > 📘 Note
 >
 > Throughout this article, references to **SKAN** include both **SKAdNetwork** and the latest **AdAttributionKit (AAK)** framework.

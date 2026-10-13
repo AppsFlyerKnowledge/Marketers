@@ -1,6 +1,6 @@
 ---
 title: "Meta campaign management partners"
-excerpt: "Learn how to configure and send postbacks to Meta campaign management partners to optimize your Meta ads campaigns."
+excerpt: "Send postbacks to Meta campaign management partners to optimize your Meta ads campaigns"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,18 +18,18 @@ Send postbacks to Meta campaign management partners to optimize your Meta ads ca
 
 <Cards>
   <Card title="Configuring Meta campaign management partners" href="/docs/configuring-meta-campaign-management-partners" icon="fa-solid fa-handshake">
-    Set up integration and postbacks for Meta campaign management partners.
+    Optimize Meta ads campaigns by using Meta campaign management partners (formerly known as Facebook Marketing Partners), such as Kenshoo, Bidalgo, and Smartly. When configured, AppsFlyer sends them the postbacks.
   </Card>
   <Card title="Bidalgo (Meta campaign management partner) configuration" href="/docs/bidalgo-meta-campaign-management-partner-configuration" icon="fa-solid fa-handshake">
-    Configure Bidalgo integration to optimize your Meta campaigns.
+    Bidalgo, an AppsFlyer integrated partner (formerly known as Facebook Marketing Partners), is a leading provider of artificial intelligence solutions to help app marketers scale their growth.
   </Card>
   <Card title="Kenshoo (Meta campaign management partner) configuration" href="/docs/kenshoo-meta-campaign-management-partner-configuration" icon="fa-solid fa-handshake">
-    Configure Kenshoo integration to optimize your Meta campaigns.
+    Kenshoo, an AppsFlyer integrated partner (formerly known as Facebook Marketing Partners), empowers every marketer in the world with technology to build brands and generate demand across all media.
   </Card>
   <Card title="Adquant (Meta campaign management partner) configuration" href="/docs/adquant-meta-campaign-management-partner-configuration" icon="fa-solid fa-handshake">
-    Configure Adquant integration to optimize your Meta campaigns.
+    Adquant, an AppsFlyer integrated partner (formerly known as Facebook Marketing Partners), is a leading provider of Artificial Intelligence solutions to help app marketers scale their growth.
   </Card>
   <Card title="Webpals mobile (Meta campaign management partner) configuration" href="/docs/webpals-mobile-meta-campaign-management-partner-configuration" icon="fa-solid fa-handshake">
-    Configure Webpals mobile integration to optimize your Meta campaigns.
+    Webpals mobile - a Meta campaign management partner (formerly known as Facebook Marketing Partners), one of AppsFlyer's integrated partners, is a leader in mobile user acquisition and revenue maximization with global coverage.
   </Card>
 </Cards>

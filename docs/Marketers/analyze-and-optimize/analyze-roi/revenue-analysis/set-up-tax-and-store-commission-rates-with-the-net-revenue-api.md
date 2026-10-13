@@ -1,6 +1,6 @@
 ---
 title: "Set up tax and store commission rates with the Net Revenue API"
-excerpt: "Configure how AppsFlyer calculates net revenue for in-app purchases and subscriptions by using the Net Revenue API to customize store commission rates and tax rules per app."
+excerpt: "Configure how AppsFlyer calculates net revenue for in-app purchases and subscriptions by using the Net Revenue API to customize store commission rates and tax rules per app. This ensures that your reports accurately reflect actual earnings, including cases with non-standard commission fees or specific tax rules."
 x-zendesk:
   id: 30468586765841
   url: https://support.appsflyer.com/hc/en-us/articles/30468586765841-Set-up-tax-and-store-commission-rates-with-the-Net-Revenue-API
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-11-28T13:57:14Z'
   edited_at: '2026-08-12T09:02:34Z'
 ---
-At a glance: Configure how AppsFlyer calculates net revenue for in-app purchases and subscriptions by using the Net Revenue API to customize store commission rates and tax rules per app. This ensures that your reports accurately reflect actual earnings, including cases with non-standard commission fees or specific tax rules.
-
 The ROI360 store revenue product calculates the net revenue of in-app purchases and subscriptions by automatically deducting store commission and tax from gross revenue. The default configuration reflects standard commission fees and tax rules applied by the App Store and Google Play. If your store commission differs or if you operate in a country with special tax treatment, use the Net Revenue API to override the default configuration.
 
 The Net Revenue API is implemented through two REST APIs that let you configure store commission rates and tax rules for individual apps.

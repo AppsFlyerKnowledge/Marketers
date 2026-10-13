@@ -1,6 +1,6 @@
 ---
 title: "[Beta] Agent Hub overview"
-excerpt: "Agent Hub is AppsFlyer's centralized platform for managing AI-driven agents that proactively deliver actionable marketing insights directly into your workflow."
+excerpt: "Agent Hub is AppsFlyer's centralized platform for managing AI-driven agents that proactively deliver actionable marketing insights directly into your workflow. These agents constantly analyze your data to deliver valuable outputs and recommend actionable steps, all within your team's collaborative environment."
 x-zendesk:
   id: 40967933109649
   url: https://support.appsflyer.com/hc/en-us/articles/40967933109649--Beta-Agent-Hub-overview
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-11-16T10:18:23Z'
   edited_at: '2026-10-05T08:00:46Z'
 ---
-Agent Hub is AppsFlyer's centralized platform for managing AI-driven agents that proactively deliver actionable marketing insights directly into your workflow. These agents constantly analyze your data to deliver valuable outputs and recommend actionable steps, all within your team's collaborative environment.
-
 <Embed title="[Beta] Agent Hub overview" typeOfEmbed="youtube" url="https://www.youtube-nocookie.com/embed/LEuqdVEXBD0" providerUrl="https://www.youtube-nocookie.com" />
 
 ## About Agent Hub

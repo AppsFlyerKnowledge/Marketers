@@ -1,6 +1,6 @@
 ---
 title: "Cost reporting on the attribution link for ad networks"
-excerpt: "Learn how ad networks can report cost data to AppsFlyer via unencrypted or encrypted parameters on click attribution links."
+excerpt: "Ad networks can report cost every time an ad is clicked."
 x-zendesk:
   id: 115000748446
   url: https://support.appsflyer.com/hc/en-us/articles/115000748446-Cost-reporting-on-the-attribution-link-for-ad-networks
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-02-12T14:54:50Z'
   edited_at: '2026-06-22T10:03:59Z'
 ---
-**At a glance:** Ad networks can report cost every time an ad is clicked.
-
 Advertisers use the AppsFlyer dashboard as their source of truth for all budget allocation decisions, making it easy to see where to invest. For networks wanting to be visible in that process, sharing cost data with AppsFlyer is an absolute must.
 
 Advertisers often check their top-performing partners using sort by ROI. Those that have no cost data always appear at the bottom of the list.

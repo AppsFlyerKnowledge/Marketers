@@ -1,6 +1,6 @@
 ---
 title: "View aggregated cost data for attribution links"
-excerpt: "Learn how to view and analyze aggregated cost data reported by ad networks directly on attribution links within AppsFlyer."
+excerpt: "Viewing aggregated cost data for each ad click as reported by ad networks on the attribution link."
 x-zendesk:
   id: 360008981698
   url: https://support.appsflyer.com/hc/en-us/articles/360008981698-View-aggregated-cost-data-for-attribution-links
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-05-20T10:50:58Z'
   edited_at: '2025-04-05T11:07:35Z'
 ---
-**At a glance:** Viewing aggregated cost data for each ad click as reported by ad networks on the attribution link.
-
 ## Basic cost reporting
 
 Cost data is reported to AppsFlyer by:

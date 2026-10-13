@@ -1,6 +1,6 @@
 ---
 title: "Data Collaboration Platform"
-excerpt: "Leverage your first-party data in a secure environment to build targeted audiences and activate them within media networks."
+excerpt: "Leverage your first-party data in a secure environment to build targeted audiences and activate them within media networks"
 x-zendesk:
   type: section
   id: 26230608274065
@@ -17,39 +17,39 @@ x-zendesk:
 
 <Cards>
   <Card title="Data Collaboration Platform (DCP) guide" href="/docs/data-collaboration-platform-dcp-guide" icon="fa-solid fa-handshake-angle">
-    Learn the fundamentals and get an overview of the Data Collaboration Platform.
+    The AppsFlyer Data Collaboration Platform provides a seamless, privacy-centric solution for commerce media networks and collaborating brands to leverage their combined data to achieve maximum campaign results and create powerful new ad revenue streams.
   </Card>
   <Card title="Set up your cloud services" href="/docs/data-collaboration-platform-dcp-set-up-your-cloud-services" icon="fa-solid fa-handshake-angle">
-    Configure and connect your cloud storage and services with DCP.
+    Set up your cloud services so you can connect your source data to DCP and export audiences to your cloud storage buckets.
   </Card>
   <Card title="Add connections" href="/docs/data-collaboration-platform-dcp-add-connections" icon="fa-solid fa-handshake-angle">
-    Manage and add new data connections to your platform.
+    Set up DCP connections to connect your data sources, enrich your data, and export audiences to cloud storage and media partners.
   </Card>
   <Card title="Media partner connections" href="/docs/data-collaboration-platform-dcp-media-partner-connections" icon="fa-solid fa-handshake-angle">
-    Connect with supported media partners to activate your audiences.
+    Connect your audiences to media partners so you can activate your tailored campaigns and achieve maximum results.
   </Card>
   <Card title="Prepare source data for ingestion" href="/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion" icon="fa-solid fa-handshake-angle">
-    Format and structure your first-party data before importing.
+    Prepare your source data to maximize match rates between collaborator datasets and optimize collaboration outcomes.
   </Card>
   <Card title="Create and manage sources" href="/docs/data-collaboration-platform-dcp-create-and-manage-sources" icon="fa-solid fa-handshake-angle">
-    Set up and maintain your incoming data sources.
+    Create and manage sources to securely share your first-party data with other collaborators.
   </Card>
   <Card title="Create customized data views" href="/docs/data-collaboration-platform-dcp-create-customized-data-views" icon="fa-solid fa-handshake-angle">
-    Build tailored views of your data for specific collaboration needs.
+    Create customized subsets of your existing source data with no SQL or technical expertise needed. Data views let you modify, refine, and summarize the data, so you can share only what's relevant with collaborators.
   </Card>
   <Card title="Create a collaboration" href="/docs/data-collaboration-platform-dcp-create-a-collaboration" icon="fa-solid fa-handshake-angle">
-    Initiate secure data collaborations with your partners.
+    Collaborations enable commerce media networks and brands to leverage combined data to create new ad revenue streams and achieve maximum campaign results.
   </Card>
   <Card title="Sharing permissions" href="/docs/data-collaboration-platform-dcp-sharing-permissions" icon="fa-solid fa-handshake-angle">
-    Configure access controls and privacy permissions for shared data.
+    Define the DCP collaboration permissions that determine how your collaborator can use your shared data.
   </Card>
   <Card title="Build and activate audiences" href="/docs/data-collaboration-platform-dcp-build-and-activate-audiences" icon="fa-solid fa-handshake-angle">
-    Segment your data to create audiences and push them to media networks.
+    Build high-value audiences in DCP collaborations using shared data and activate them on media partner sites or cloud services for maximum campaign impact.
   </Card>
   <Card title="Enrich sources with ID5" href="/docs/data-collaboration-platform-dcp-enrich-sources-with-id5" icon="fa-solid fa-handshake-angle">
-    Enhance your identity resolution capabilities using ID5 integration.
+    Enrich your first-party data with ID5 identifiers to unify fragmented user data and improve match rates with activation partners, resulting in larger audiences.
   </Card>
   <Card title="Integration with Salesforce Data Cloud" href="/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud" icon="fa-solid fa-handshake-angle">
-    Connect and sync your Salesforce Data Cloud assets with DCP.
+    The Salesforce Data Cloud integration allows you to bring your first-party data to the AppsFlyer Data Collaboration Platform with a click of a button.
   </Card>
 </Cards>

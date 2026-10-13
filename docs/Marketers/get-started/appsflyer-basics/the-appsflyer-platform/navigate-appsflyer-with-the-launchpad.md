@@ -1,6 +1,6 @@
 ---
 title: "Navigate AppsFlyer with the launchpad"
-excerpt: "Learn how to use the Launchpad keyboard shortcut to quickly search and navigate to any page on your AppsFlyer dashboard."
+excerpt: "Use Launchpad (Ctrl+K or Cmd+K) to quickly navigate to a page on the dashboard."
 x-zendesk:
   id: 115003602866
   url: https://support.appsflyer.com/hc/en-us/articles/115003602866-Navigate-AppsFlyer-with-the-launchpad
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-07-18T12:10:02Z'
   edited_at: '2025-04-05T13:17:41Z'
 ---
-Use Launchpad (Ctrl+K or Cmd+K) to quickly navigate to a page on the dashboard.
-
 ## Using Launchpad
 
 **To open Launchpad:**

@@ -16,15 +16,15 @@ x-zendesk:
 ---
 <Cards columns={2}>
   <Card title="Aggregate data" href="/docs/aggregate-data" icon="fa-solid fa-file-lines">
-    Learn how to use aggregate attribution data to analyze trends and gain insights through dashboards and performance reports.
+    Use aggregate attribution data to see trends and gain insights
   </Card>
   <Card title="APIs for ad networks" href="/docs/apis-for-ad-networks" icon="fa-solid fa-handshake">
-    An overview of the AppsFlyer APIs specifically designated for ad networks to manage and retrieve app lists.
+    Use AppsFlyer APIs designated for ad networks
   </Card>
   <Card title="Rejected traffic" href="/docs/rejected-traffic" icon="fa-solid fa-file-lines">
-    Access and understand data regarding traffic blocked by fraud protection and validation rules.
+    Receive data about traffic blocked by fraud protection
   </Card>
   <Card title="Data Locker" href="/docs/data-locker-partners" icon="fa-solid fa-handshake">
-    Access and retrieve advertiser attribution data directly in your cloud storage.
+    Receive advertiser attribution data in your cloud storage
   </Card>
 </Cards>

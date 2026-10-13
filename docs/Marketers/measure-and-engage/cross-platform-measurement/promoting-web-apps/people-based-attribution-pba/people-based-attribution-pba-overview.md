@@ -1,6 +1,6 @@
 ---
 title: "People-Based Attribution (PBA)—Overview"
-excerpt: "People-Based Attribution (PBA) consolidates website and mobile app data to provide a unified, holistic view of customer journeys across channels, platforms, and devices."
+excerpt: "People-Based Attribution (PBA) provides a unified view of customer journeys across channels, platforms, and devices."
 x-zendesk:
   id: 360002274017
   url: https://support.appsflyer.com/hc/en-us/articles/360002274017-People-Based-Attribution-PBA-Overview
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-08-19T11:53:56Z'
   edited_at: '2024-02-22T07:54:54Z'
 ---
-**At a glance:** People-Based Attribution (PBA) provides a unified view of customer journeys across channels, platforms, and devices.
-
 ![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
 
 ## PBA principles

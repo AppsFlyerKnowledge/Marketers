@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Validation Rules"
-excerpt: "An overview of the updated layout, features, and raw data reporting changes for AppsFlyer Validation Rules."
 table_of_contents: false
 x-zendesk:
   id: 360015724037

@@ -1,6 +1,6 @@
 ---
 title: "Audiences - Use Braze events in audience creation"
-excerpt: "Learn how to set up an incoming connection between Braze and AppsFlyer Audiences to use message engagement events in your audience definitions."
+excerpt: "Send Braze message engagement events to AppsFlyer Audiences and use them to add precision to your audience definitions."
 x-zendesk:
   id: 4411130243217
   url: https://support.appsflyer.com/hc/en-us/articles/4411130243217-Audiences-Use-Braze-events-in-audience-creation
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-11-17T09:55:26Z'
   edited_at: '2026-10-04T12:09:19Z'
 ---
-Send Braze message engagement events to AppsFlyer Audiences and use them to add precision to your audience definitions.
-
 By setting up an incoming connection between your Braze account and AppsFlyer Audiences, you bring your Braze message engagement event data into Audiences. You can then use this data in [rulesets](/docs/audiences-guide#h_01HBQMA61ANB4K0TCJ4WBHMV8D) when defining audiences.
 
 **Prerequisites**

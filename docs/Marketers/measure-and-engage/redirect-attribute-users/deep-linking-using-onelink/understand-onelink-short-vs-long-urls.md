@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-01-26T09:39:19Z'
   edited_at: '2026-08-17T13:50:28Z'
 ---
-**At a glance:** Understand the difference between OneLink short and long URLs, and how to create long URLs outside of AppsFlyer.
-
 ## **About OneLink links**
 
 * Work across all media marketing channels to redirect users to either: 

@@ -1,6 +1,6 @@
 ---
 title: "AI Assistant"
-excerpt: "The AI Assistant is your virtual analyst and platform knowledge helper in AppsFlyer, designed to help you uncover performance insights and understand your marketing data."
+excerpt: "The AI Assistant is your virtual analyst and platform knowledge helper in AppsFlyer. Use it to uncover insights, measure performance, identify top and low performers, explore campaign trends, and understand visual insights like tables and charts, either by asking questions directly in the AI Assistant or by using Analyze with AI from My Dashboards to investigate specific charts in context."
 x-zendesk:
   id: 38423389662609
   url: https://support.appsflyer.com/hc/en-us/articles/38423389662609-AI-Assistant
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-08-26T08:30:32Z'
   edited_at: '2026-10-04T07:37:17Z'
 ---
-The AI Assistant is your virtual analyst and platform knowledge helper in AppsFlyer. Use it to uncover insights, measure performance, identify top and low performers, explore campaign trends, and understand visual insights like tables and charts, either by asking questions directly in the AI Assistant or by using Analyze with AI from My Dashboards to investigate specific charts in context.
-
 <Embed title="AI Assistant" typeOfEmbed="youtube" url="https://www.youtube-nocookie.com/embed/F9PDfKmoUEo" providerUrl="https://www.youtube-nocookie.com" />
 
 ## **About AI Assistant**

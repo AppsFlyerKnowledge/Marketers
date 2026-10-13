@@ -1,6 +1,6 @@
 ---
 title: "Data Clean Room—Working with reports"
-excerpt: "Learn how to manage, edit, and delete the reports you have set up in the AppsFlyer Data Clean Room."
+excerpt: "Work with the reports you have set up in the Data Clean Room (DCR)."
 x-zendesk:
   id: 5415945483921
   url: https://support.appsflyer.com/hc/en-us/articles/5415945483921-Data-Clean-Room-Working-with-reports
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-04-12T12:49:39Z'
   edited_at: '2024-03-06T07:59:14Z'
 ---
-**At a glance:** Work with the reports you have set up in the Data Clean Room (DCR).
-
 ## Introduction
 
 This article covers working with the reports you have already created. You can view the full list of these reports and their status in the **Reports** tab of the DCR.

@@ -1,6 +1,6 @@
 ---
 title: "Sina Weibo Ads campaign configuration"
-excerpt: "Learn how to configure Sina Weibo Ads campaigns in AppsFlyer, including setting up attribution links, retargeting, and permissions."
+excerpt: "Sina Weibo Ads, an AppsFlyer ad network integrated partner, is one of the most popular social media platforms in China."
 x-zendesk:
   id: 115004134086
   url: https://support.appsflyer.com/hc/en-us/articles/115004134086-Sina-Weibo-Ads-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-08-15T08:37:03Z'
   edited_at: '2026-09-15T10:50:56Z'
 ---
-**At a glance:** Sina Weibo Ads, an AppsFlyer ad network integrated partner, is one of the most popular social media platforms in China.
-
 ## Setting up Sina Weibo Ads
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.

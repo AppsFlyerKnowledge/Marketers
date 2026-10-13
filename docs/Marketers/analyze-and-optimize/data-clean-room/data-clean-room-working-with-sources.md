@@ -1,6 +1,6 @@
 ---
 title: "Data Clean Room—Working with sources"
-excerpt: "Learn how to format, create, update, and manage custom data sources shared with the AppsFlyer Data Clean Room."
+excerpt: "Set up the custom data sources you share with the Data Clean Room (DCR) for matching with attribution data and creating DCR reports."
 x-zendesk:
   id: 5041487011601
   url: https://support.appsflyer.com/hc/en-us/articles/5041487011601-Data-Clean-Room-Working-with-sources
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-03-27T10:58:23Z'
   edited_at: '2026-08-14T16:22:51Z'
 ---
-Set up the custom data sources you share with the Data Clean Room (DCR) for matching with attribution data and creating DCR reports.
-
 ## Introduction
 
 Many DCR reports are designed to match your **attribution data** with data from your **custom data sources.** This article contains everything you need to know about working with your custom data sources, including how to:

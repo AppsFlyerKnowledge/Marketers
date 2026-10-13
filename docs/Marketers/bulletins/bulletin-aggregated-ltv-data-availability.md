@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Aggregated LTV data availability"
-excerpt: "Starting April 1, 2026, AppsFlyer is updating its aggregated LTV data retention policy to 25 months."
 table_of_contents: false
 x-zendesk:
   id: 43193300429201

@@ -1,6 +1,6 @@
 ---
 title: "Implement validation rules to prevent fraud"
-excerpt: "Validation rules add a custom layer of protection against incorrectly targeted campaigns and fraud by enabling app owners to control which installs and in-app event attributions get blocked."
+excerpt: "Validation rules add a custom layer of protection against incorrectly targeted campaigns and fraud. The rules enable app owners to control which installs and in-app event attributions get blocked, or attributed to the last valid source."
 x-zendesk:
   id: 115004703926
   url: https://support.appsflyer.com/hc/en-us/articles/115004703926-Implement-validation-rules-to-prevent-fraud
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-09-14T14:43:46Z'
   edited_at: '2026-09-09T07:57:33Z'
 ---
-Validation rules add a custom layer of protection against incorrectly targeted campaigns and fraud. The rules enable app owners to control which installs and in-app event attributions get blocked, or attributed to the last valid source.
-
 ![5906_animation-750x330__1_.gif](https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif)
 
 ## Overview

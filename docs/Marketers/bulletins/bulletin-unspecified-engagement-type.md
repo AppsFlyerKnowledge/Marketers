@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Unspecified engagement type"
-excerpt: "To standardize reporting when engagement type is missing or mismatched, AppsFlyer is introducing default values in raw data reports and dashboards starting December 9, 2024."
 table_of_contents: false
 x-zendesk:
   id: 30795194720785

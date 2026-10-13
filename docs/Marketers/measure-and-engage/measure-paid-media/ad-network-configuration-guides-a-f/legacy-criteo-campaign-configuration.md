@@ -1,6 +1,6 @@
 ---
 title: "[Legacy] Criteo campaign configuration"
-excerpt: "Configure the legacy Criteo integration in AppsFlyer to measure personalized retargeting campaigns, set up attribution links, and manage partner permissions."
+excerpt: "Criteo (Legacy), an AppsFlyer ad network integrated partner, is a personalized retargeting company that works with Internet retailers to serve personalized online display advertisements to consumers who have previously visited the advertiser's website. In addition to click-based mobile attribution, Criteo (Legacy) also offers retargeting, which you can record with AppsFlyer."
 x-zendesk:
   id: 207033946
   url: https://support.appsflyer.com/hc/en-us/articles/207033946--Legacy-Criteo-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-06-03T08:06:04Z'
   edited_at: '2026-09-07T07:23:50Z'
 ---
-At a glance: Criteo (Legacy), an AppsFlyer ad network integrated partner, is a personalized retargeting company that works with Internet retailers to serve personalized online display advertisements to consumers who have previously visited the advertiser's website. In addition to click-based mobile attribution, Criteo (Legacy) also offers retargeting, which you can record with AppsFlyer.
-
 ## Setting up Criteo (legacy)
 
 > 📘 Prerequisite

@@ -1,6 +1,6 @@
 ---
 title: "Batch integration with AppsFlyer"
-excerpt: "Learn how to integrate Batch with AppsFlyer to customize user engagement and push notifications based on attribution data."
+excerpt: "Batch, an AppsFlyer integrated partner, is an app analytics, marketing automation and mobile CRM platform."
 x-zendesk:
   id: 360000833437
   url: https://support.appsflyer.com/hc/en-us/articles/360000833437-Batch-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-01-28T10:06:24Z'
   edited_at: '2026-08-14T16:22:48Z'
 ---
-Batch, an AppsFlyer integrated partner, is an app analytics, marketing automation and mobile CRM platform.
-
 Batch allows advertisers to maximize user engagement while offering a personalized user experience. The Batch advanced user engagement platform lets you communicate with your smartphone users in a more personalized way, reduce your churn and boost your app ROI. AppsFlyer and Batch combined can help the advertiser to further customize user experience and engagement based on user journey. This means that the advertiser can send specific in-app messages and push notifications based on attribution data such as media source and campaign. Integrating Batch and AppsFlyer is simple and straightforward.
 
 > ❗️ Important

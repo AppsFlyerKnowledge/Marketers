@@ -1,6 +1,6 @@
 ---
 title: "Import cost data"
-excerpt: "Learn how to use Cost Import to upload or email CSV files containing campaign cost data to AppsFlyer ROI360."
+excerpt: "Cost Import, part of AppsFlyer ROI360, allows advertisers to get full and accurate coverage of their marketing cost by importing CSV files via upload or email."
 x-zendesk:
   id: 360002516838
   url: https://support.appsflyer.com/hc/en-us/articles/360002516838-Import-cost-data
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-09-15T15:53:44Z'
   edited_at: '2026-08-05T10:36:56Z'
 ---
-Cost Import, part of AppsFlyer ROI360, allows advertisers to get full and accurate coverage of their marketing cost by importing CSV files via upload or email.
-
 ## Overview
 
 Use Cost Import to:

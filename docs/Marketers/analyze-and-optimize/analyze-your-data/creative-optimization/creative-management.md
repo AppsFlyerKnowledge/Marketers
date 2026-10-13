@@ -1,6 +1,6 @@
 ---
 title: "Creative Management"
-excerpt: "Creative Management helps you centralize, review, and launch creatives faster by syncing assets from storage and uploading them directly to media source campaigns."
+excerpt: "Creative Management helps you centralize, review, and launch creatives faster. Use it to sync creatives from your creative storage, understand creative activity status across media sources, easily find relevant creatives, and upload them directly to supported media source campaigns."
 x-zendesk:
   id: 39137008313105
   url: https://support.appsflyer.com/hc/en-us/articles/39137008313105-Creative-Management
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-09-17T12:01:55Z'
   edited_at: '2026-10-07T11:34:33Z'
 ---
-Creative Management helps you centralize, review, and launch creatives faster. Use it to sync creatives from your creative storage, understand creative activity status across media sources, easily find relevant creatives, and upload them directly to supported media source campaigns.
-
 ## About Creative Management
 
 Creative Management is a centralized hub for managing creative assets across their lifecycle, from storage sync to media source upload.

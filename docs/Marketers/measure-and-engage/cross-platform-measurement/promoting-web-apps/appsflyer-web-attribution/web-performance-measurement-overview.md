@@ -1,6 +1,6 @@
 ---
 title: "Web Performance Measurement - Overview"
-excerpt: "Web Performance Measurement enables you to identify which media sources and campaigns drive users to your website and measure how those visits influence downstream actions over time."
+excerpt: "Web Performance Measurement enables you to identify which media sources and campaigns drive users to your website and measure how those visits influence downstream actions over time. It enables you to capture and attribute user interactions end-to-end, supporting both user acquisition (first-time visitors) and re-engagement, from the initial visit through lifetime value measurement."
 x-zendesk:
   id: 43521734577809
   url: https://support.appsflyer.com/hc/en-us/articles/43521734577809-Web-Performance-Measurement-Overview
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2026-02-04T15:07:53Z'
   edited_at: '2026-09-17T11:40:46Z'
 ---
-**At a glance:** Web Performance Measurement enables you to identify which media sources and campaigns drive users to your website and measure how those visits influence downstream actions over time. It enables you to capture and attribute user interactions end-to-end, supporting both user acquisition (first-time visitors) and re-engagement, from the initial visit through lifetime value measurement.
-
 ## About Web Performance Measurement
 
 Web attribution is the process of identifying which media sources and campaigns drive users to visit a website and influence their subsequent actions.

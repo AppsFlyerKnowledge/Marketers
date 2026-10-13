@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Field order and selection in Export Data page"
-excerpt: "Learn how to set and customize the report column sequence and field selection options on the AppsFlyer Export Data page."
 table_of_contents: false
 x-zendesk:
   id: 360021043718

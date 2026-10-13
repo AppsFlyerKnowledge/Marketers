@@ -1,6 +1,6 @@
 ---
 title: "Integration requests for partners"
-excerpt: "Request changes to your existing AppsFlyer integration settings, including postbacks, attribution URLs, and more."
+excerpt: "Request changes to your existing AppsFlyer integration settings, including postbacks, attribution URLs, and much more."
 table_of_contents: false
 x-zendesk:
   id: 360017189177
@@ -23,8 +23,6 @@ x-zendesk:
   created_at: '2021-01-28T12:40:43Z'
   edited_at: '2026-10-04T07:23:53Z'
 ---
-**At a glance**: Request changes to your existing AppsFlyer integration settings, including postbacks, attribution URLs, and much more.
-
 > 📘 **Important!**
 >
 > Changes to AppsFlyer postbacks and attribution URL structures affect all existing and future campaigns across all apps.

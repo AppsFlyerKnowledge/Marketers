@@ -1,6 +1,6 @@
 ---
 title: "Meta Ads—Create web campaigns for website apps"
-excerpt: "Set up a Meta Ads integration for your website app to send web conversion signals to Meta via the Conversions API (CAPI) for optimized ad targeting and performance measurement."
+excerpt: "Set up a Meta Ads integration for your website app to send web conversion signals to Meta via the Conversions API (CAPI), so Meta can optimize ad targeting and measure campaign performance."
 x-zendesk:
   id: 46172666260241
   url: https://support.appsflyer.com/hc/en-us/articles/46172666260241-Meta-Ads-Create-web-campaigns-for-website-apps

@@ -1,6 +1,6 @@
 ---
 title: "Raw data reporting overview"
-excerpt: "Row-level data describes user events like installs, in-app events, and website visits, and is available via download, API, and Data Locker."
+excerpt: "Row-level data (aka raw data) describes events relating to users like installs, in-app events, website visits, Protect360 blocked installs, ad revenue generated, and user-associated postbacks sent to partners. Raw data reports are available via download, API, and Data Locker."
 x-zendesk:
   id: 209680773
   url: https://support.appsflyer.com/hc/en-us/articles/209680773-Raw-data-reporting-overview
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-03-21T08:32:06Z'
   edited_at: '2026-08-11T08:38:12Z'
 ---
-At a glance: Row-level data (aka raw data) describes events relating to users like installs, in-app events, website visits, Protect360 blocked installs, ad revenue generated, and user-associated postbacks sent to partners. Raw data reports are available via download, API, and Data Locker.
-
 ## Raw data reporting—tools and reports
 
 Raw data reports enable you to analyze user behavior and journeys, reconcile ad network accounts, and enrich your CRM and BI systems. By using raw data, you increase your ability to analyze, optimize, and improve app performance.

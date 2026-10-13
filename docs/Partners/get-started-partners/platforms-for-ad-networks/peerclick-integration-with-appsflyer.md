@@ -1,6 +1,6 @@
 ---
 title: "PeerClick integration with AppsFlyer"
-excerpt: "Learn how to integrate PeerClick with AppsFlyer to receive attribution data about installs and in-app events using probabilistic modeling."
+excerpt: "Ad networks that use PeerClick can benefit from the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events."
 x-zendesk:
   id: 21479841979793
   url: https://support.appsflyer.com/hc/en-us/articles/21479841979793-PeerClick-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-01-07T08:27:18Z'
   edited_at: '2024-12-23T14:57:46Z'
 ---
-Ad networks that use PeerClick can benefit from the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events.
-
 ## Starting the integration
 
 To start the integration you must send AppsFlyer both the attribution link and the postback for reporting purposes.

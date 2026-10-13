@@ -1,6 +1,6 @@
 ---
 title: "Recommended healthcare app events"
-excerpt: "Measure the quality of your users throughout their user journey by recording these sample in-app events for your healthcare app."
+excerpt: "Measure the quality of your users throughout their user journey by recording these sample in-app events for your healthcare app ."
 x-zendesk:
   id: 360019888518
   url: https://support.appsflyer.com/hc/en-us/articles/360019888518-Recommended-healthcare-app-events

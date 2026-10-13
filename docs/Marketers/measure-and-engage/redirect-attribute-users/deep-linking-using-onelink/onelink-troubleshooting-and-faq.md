@@ -1,6 +1,6 @@
 ---
 title: "OneLink troubleshooting and FAQ"
-excerpt: "Find solutions and answers to frequently asked questions for testing and debugging OneLink custom link redirection and deep linking behavior."
+excerpt: "Quickly find solutions for testing and debugging OneLink custom link redirection/behavior issues."
 x-zendesk:
   id: 360014821438
   url: https://support.appsflyer.com/hc/en-us/articles/360014821438-OneLink-troubleshooting-and-FAQ
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-10-27T11:26:30Z'
   edited_at: '2026-09-14T13:45:26Z'
 ---
-Quickly find solutions for testing and debugging OneLink custom link redirection/behavior issues.
-
 ## OneLink troubleshooting guide
 
 [Open the OneLink troubleshooting guide](https://form.typeform.com/to/bgBOGSiK) (an interactive Typeform, about 7 minutes).

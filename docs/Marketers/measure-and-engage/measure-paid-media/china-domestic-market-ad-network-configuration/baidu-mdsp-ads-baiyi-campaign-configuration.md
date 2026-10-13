@@ -1,6 +1,6 @@
 ---
 title: "Baidu mDSP Ads (Baiyi) campaign configuration"
-excerpt: "Configure Baidu mDSP Ads (Baiyi) integration in AppsFlyer to attribute campaigns, set up postbacks, and track in-app events."
+excerpt: "Baidu mDSP Ads (Baiyi), an AppsFlyer ad network integrated partner, is an advertising solutions provider and part of Baidu, the dominant search engine in China with over 70% market share."
 x-zendesk:
   id: 115004330446
   url: https://support.appsflyer.com/hc/en-us/articles/115004330446-Baidu-mDSP-Ads-Baiyi-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-08-24T07:22:04Z'
   edited_at: '2026-09-15T11:04:35Z'
 ---
-**At a glance:** Baidu mDSP Ads (Baiyi), an AppsFlyer ad network integrated partner, is an advertising solutions provider and part of Baidu, the dominant search engine in China with over 70% market share.
-
 ## Setting up Baidu mDSO Ads (Baiyi)
 
 1. In AppsFlyer, from the side menu, select**Collaborate****> Partner Integrations** > **Partner Marketplace**.

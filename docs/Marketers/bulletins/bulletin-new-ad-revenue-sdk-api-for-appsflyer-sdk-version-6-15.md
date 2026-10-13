@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: New ad revenue SDK API for AppsFlyer SDK version 6.15+"
-excerpt: "Learn about the transition from the ad revenue SDK connector to the new AdRevenue SDK API starting in AppsFlyer SDK version 6.15."
 table_of_contents: false
 x-zendesk:
   id: 26956998859153

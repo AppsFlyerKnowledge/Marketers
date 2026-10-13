@@ -1,6 +1,6 @@
 ---
 title: "Set up cross-platform links for multi-device campaigns"
-excerpt: "Learn how to promote, attribute, and measure app installs on platforms to ad views on other platforms using AppsFlyer cross-platform attribution links."
+excerpt: "How to promote, attribute, and measure app installs on platforms to ad views on other platforms. For example, mobile app installs to ads viewed on CTV devices, game console app installs to ads viewed on mobile or desktops (web), and CTV app installs to ads viewed on mobile or desktop (web)."
 x-zendesk:
   id: 6966260647185
   url: https://support.appsflyer.com/hc/en-us/articles/6966260647185-Set-up-cross-platform-links-for-multi-device-campaigns
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-06-19T07:02:43Z'
   edited_at: '2026-09-15T11:16:51Z'
 ---
-**At a glance:** How to promote, attribute, and measure app installs on platforms to ad views on other platforms. For example, mobile app installs to ads viewed on CTV devices, game console app installs to ads viewed on mobile or desktops (web), and CTV app installs to ads viewed on mobile or desktop (web).
-
 ## Overview
 
 With AppsFlyer cross-platform attribution links (impression URLs), you can attribute installs from one platform to ad views displayed on another platform. Multiple installs within the same household can be attributed to the same cross-platform ad impression.

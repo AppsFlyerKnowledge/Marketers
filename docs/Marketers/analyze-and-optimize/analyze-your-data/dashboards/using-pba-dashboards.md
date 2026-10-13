@@ -1,6 +1,6 @@
 ---
 title: "Using PBA dashboards"
-excerpt: "Get the most out of AppsFlyer's People-Based Attribution (PBA) dashboards, including filtering, grouping, and configuration settings."
+excerpt: "Get the most out of our PBA dashboard features."
 x-zendesk:
   id: 360007630318
   url: https://support.appsflyer.com/hc/en-us/articles/360007630318-Using-PBA-dashboards
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-04-21T04:53:54Z'
   edited_at: '2024-02-01T14:21:50Z'
 ---
-Get the most out of our PBA dashboard features.
-
 ![AppsFlyer-People-Based-Attribution_us-en.png](https://files.readme.io/d2178dfedb2f67420e66626adbd72dd96ba9edc39fcb0be08648b01656fd2d4b-360010094118.png)
 
 ## PBA dashboards

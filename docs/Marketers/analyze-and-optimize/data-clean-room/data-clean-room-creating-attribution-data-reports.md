@@ -1,6 +1,6 @@
 ---
 title: "Data Clean Room—Creating Attribution data reports"
-excerpt: "Learn how to create Attribution data reports in the Data Clean Room to match user-level data from installs and retargeting events with your internal systems."
+excerpt: "Create Attribution data reports to match user-level data from installs/retargeting events with data from your systems."
 x-zendesk:
   id: 9035047905297
   url: https://support.appsflyer.com/hc/en-us/articles/9035047905297-Data-Clean-Room-Creating-Attribution-data-reports
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-09-11T10:42:43Z'
   edited_at: '2025-02-23T15:42:47Z'
 ---
-**At a glance:** Create Attribution data reports to match user-level data from installs/retargeting events with data from your systems.
-
 ## Creating an Attribution data report
 
 **To create an Attribution data report, follow the steps detailed in the tabs below.**

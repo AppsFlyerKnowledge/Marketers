@@ -1,6 +1,6 @@
 ---
 title: "Recommended entertainment app events"
-excerpt: "Measure the quality of your users throughout their user journey by recording suggested in-app events for your entertainment app."
+excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your entertainment app."
 x-zendesk:
   id: 360019699898
   url: https://support.appsflyer.com/hc/en-us/articles/360019699898-Recommended-entertainment-app-events
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-04-25T10:44:33Z'
   edited_at: '2026-02-25T13:59:20Z'
 ---
-**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your entertainment app.
-
 ## ![InApp_Events_streaming.png](https://files.readme.io/27f2f38b0ce7d242580c60edeff730079a3801f98ff0d7cb8a605380ed11071f-20659453813905.png) Entertainment
 
 With the growing requirement by users for on-demand content, the entertainment applications market has become very competitive. The typical events that we suggest recording are user subscriptions, streaming content, and downloading and saving content.

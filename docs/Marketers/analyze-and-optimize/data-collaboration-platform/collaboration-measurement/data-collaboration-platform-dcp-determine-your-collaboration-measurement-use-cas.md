@@ -1,6 +1,6 @@
 ---
 title: "Data collaboration platform (DCP) - Determine your collaboration measurement use case"
-excerpt: "Identify your collaboration scenario to determine what data to provide, who is responsible for it, and in what format to submit it."
+excerpt: "Identify your collaboration scenario, making sure you know what data to provide, who is responsible for it, and in what format to submit it."
 x-zendesk:
   id: 32964487756561
   url: https://support.appsflyer.com/hc/en-us/articles/32964487756561-Data-collaboration-platform-DCP-Determine-your-collaboration-measurement-use-case
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-02-25T15:52:06Z'
   edited_at: '2026-05-04T09:20:22Z'
 ---
-**At a glance:** Identify your collaboration scenario, making sure you know what data to provide, who is responsible for it, and in what format to submit it.
-
 ## Overview
 
 DCP supports a variety of on-site and off-site use cases. Each use case requires a different setup, specifying which collaborator is responsible for preparing each data source and the format in which the data should be configured.

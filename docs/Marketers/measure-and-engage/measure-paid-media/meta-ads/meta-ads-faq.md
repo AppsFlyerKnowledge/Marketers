@@ -1,6 +1,6 @@
 ---
 title: "Meta ads FAQ"
-excerpt: "Find answers to frequently asked questions about using Meta ads, cost data, SDK integration, and attribution in AppsFlyer."
+excerpt: "Find answers to frequently asked questions about using Meta ads in AppsFlyer."
 x-zendesk:
   id: 4410472805649
   url: https://support.appsflyer.com/hc/en-us/articles/4410472805649-Meta-ads-FAQ
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-11-09T10:04:49Z'
   edited_at: '2026-05-06T12:58:42Z'
 ---
-**At a glance:** Find answers to frequently asked questions about using Meta ads in AppsFlyer.
-
 ## Meta ads FAQ
 
 #### I don't see Meta ads campaign clicks in AppsFlyer's dashboard

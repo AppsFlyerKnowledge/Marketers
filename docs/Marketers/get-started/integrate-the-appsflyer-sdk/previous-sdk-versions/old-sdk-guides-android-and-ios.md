@@ -1,6 +1,6 @@
 ---
 title: "Old SDK guides - Android and iOS"
-excerpt: "Access legacy PDF integration guides for AppsFlyer SDKs from 2016 and earlier, covering Android, iOS, and Windows Phone."
+excerpt: "Find the SDK integration guides of AppsFlyer SDKs from 2016 and onwards, in PDF form."
 x-zendesk:
   id: 360000699617
   url: https://support.appsflyer.com/hc/en-us/articles/360000699617-Old-SDK-guides-Android-and-iOS
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-12-16T11:22:29Z'
   edited_at: '2023-12-18T00:00:56Z'
 ---
-At a glance: Find the SDK integration guides of AppsFlyer SDKs from 2016 and onwards, in PDF form.
-
 ## Overview
 
 As time moves on, so do our SDK integration guides. They are replaced by newer, more agile, flexible, and technologically advanced SDKs.

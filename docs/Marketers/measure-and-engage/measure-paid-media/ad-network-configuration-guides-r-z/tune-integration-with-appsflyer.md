@@ -1,6 +1,6 @@
 ---
 title: "TUNE integration with AppsFlyer"
-excerpt: "Integrate AppsFlyer with TUNE to measure incoming traffic and enable deep linking into your mobile application."
+excerpt: "TUNE, an AppsFlyer integrated partner, is a partner marketing platform. Integrate with TUNE to measure incoming traffic and to enable deep linking into your app."
 x-zendesk:
   id: 4406153487505
   url: https://support.appsflyer.com/hc/en-us/articles/4406153487505-TUNE-integration-with-AppsFlyer
@@ -22,9 +22,6 @@ x-zendesk:
   created_at: '2021-08-25T08:58:17Z'
   edited_at: '2026-07-07T09:51:48Z'
 ---
-**At a glance:** TUNE, an AppsFlyer integrated partner, is a partner marketing platform.  
-Integrate with TUNE to measure incoming traffic and to enable deep linking into your app.
-
 ![](https://cdn.appsflyer.com/marketplace/static/logo/hasoffers.png)
 
 ## Setting up TUNE integration

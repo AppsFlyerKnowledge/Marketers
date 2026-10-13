@@ -1,6 +1,6 @@
 ---
 title: "Advanced filter and group by options in events and activity dashboards"
-excerpt: "Learn how to use advanced filter and group by options in AppsFlyer events and activity dashboards to view precise and relevant data for your apps."
+excerpt: "Use advanced filter and group by options in events and activity dashboards."
 x-zendesk:
   id: 211490886
   url: https://support.appsflyer.com/hc/en-us/articles/211490886-Advanced-filter-and-group-by-options-in-events-and-activity-dashboards
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-08-08T14:04:48Z'
   edited_at: '2023-03-29T10:35:48Z'
 ---
-**At a glance**: Use advanced filter and group by options in events and activity dashboards.
-
 ## Advanced filter by and group by options in dashboards
 
 * **Filter by**: Media Source, Geo

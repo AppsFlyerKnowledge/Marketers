@@ -1,6 +1,6 @@
 ---
 title: "Incrementality for UA Guide"
-excerpt: "Run an Incrementality experiment to understand the true causal lift and impact of your User Acquisition campaigns."
+excerpt: "Run an Incrementality experiment to understand the true impact of your User Acquisition (UA) campaigns."
 x-zendesk:
   id: 41021758795025
   url: https://support.appsflyer.com/hc/en-us/articles/41021758795025-Incrementality-for-UA-Guide
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-11-18T06:58:45Z'
   edited_at: '2026-07-30T09:04:57Z'
 ---
-**At a glance:** Run an Incrementality experiment to understand the true impact of your User Acquisition (UA) campaigns.
-
 <Embed title="Incrementality for UA Guide" typeOfEmbed="youtube" url="https://www.youtube.com/embed/vGrLyOvgdN0?si=91ZV8Xw25mmShB_F" providerUrl="https://www.youtube.com" />
 
 ## About Incrementality for UA

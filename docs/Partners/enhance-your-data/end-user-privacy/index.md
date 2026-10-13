@@ -1,6 +1,6 @@
 ---
 title: "End-user privacy"
-excerpt: "Optimize your platform for the user privacy era with SKAN integration and Advanced Privacy guides."
+excerpt: "Optimize your platform for the user privacy era"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,12 +18,12 @@ Optimize your platform for the user privacy era
 
 <Cards>
   <Card title="SKAN CV schema API for ad networks" href="/docs/skan-cv-schema-api-for-ad-networks" icon="fa-solid fa-lock">
-    Access the SKAN conversion value schema API documentation for ad networks.
+    See the SKAN CV schema as mapped by the advertiser.
   </Card>
   <Card title="SKAN integration guide for ad networks" href="/docs/skan-integration-guide-for-ad-networks" icon="fa-solid fa-lock">
-    Learn how to integrate SKAdNetwork with your ad network platform.
+    Ad networks integrate with AppsFlyer SKAdNetworks (SKAN), enabling them to optimize campaigns and to be attributed to the traffic they generate.
   </Card>
   <Card title="Advanced Privacy guide & postback macros for ad networks" href="/docs/advanced-privacy-guide-postback-macros-for-ad-networks" icon="fa-solid fa-user-shield">
-    Configure Advanced Privacy settings and utilize postback macros.
+    Data sharing with partners when Advanced Privacy is enabled. Instructions for ad networks on setting up Advanced Privacy postbacks. Note! This article is not related to either SKAdNetwork postbacks nor is it intended for use by advertisers.
   </Card>
 </Cards>

@@ -1,6 +1,6 @@
 ---
 title: "Data Collaboration Platform (DCP) - Enrich sources with ID5"
-excerpt: "Enrich your first-party data with ID5 identifiers to unify fragmented user data and improve match rates with activation partners."
+excerpt: "Enrich your first-party data with ID5 identifiers to unify fragmented user data and improve match rates with activation partners, resulting in larger audiences."
 x-zendesk:
   id: 42626850533137
   url: https://support.appsflyer.com/hc/en-us/articles/42626850533137-Data-Collaboration-Platform-DCP-Enrich-sources-with-ID5
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2026-01-08T07:53:48Z'
   edited_at: '2026-01-15T11:49:48Z'
 ---
-Enrich your first-party data with ID5 identifiers to unify fragmented user data and improve match rates with activation partners, resulting in larger audiences.
-
 ## About ID5 enrichment
 
 AppsFlyer’s Data Collaboration Platform integrates with ID5, a leading identity solution provider for the open web. ID5 connects disparate identifiers such as IP addresses, hashed emails (HEM), and mobile advertising IDs (MAIDs) into a unified, privacy-first ID. This increases match rates across collaborators’ datasets, enabling more users to be recognized, joined, and activated in audiences. This guide explains how ID5 enrichment works in DCP, how to set it up, and how to use it for collaborations and activation.

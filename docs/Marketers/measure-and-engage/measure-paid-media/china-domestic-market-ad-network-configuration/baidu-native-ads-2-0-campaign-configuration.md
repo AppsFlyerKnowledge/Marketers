@@ -1,6 +1,6 @@
 ---
 title: "Baidu Native Ads 2.0 campaign configuration"
-excerpt: "Learn how to set up and configure the Baidu Native Ads 2.0 integration in AppsFlyer, including integration settings, attribution links, and in-app event mapping."
+excerpt: "Baidu Native Ads 2.0 is an AppsFlyer ad network integrated partner."
 x-zendesk:
   id: 360002158958
   url: https://support.appsflyer.com/hc/en-us/articles/360002158958-Baidu-Native-Ads-2-0-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-08-02T04:18:11Z'
   edited_at: '2026-09-15T10:23:19Z'
 ---
-**At a glance:** Baidu Native Ads 2.0 is an AppsFlyer ad network integrated partner.
-
 ## Setting Up Baidu Native Ads 2.0
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.

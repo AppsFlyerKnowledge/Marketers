@@ -1,6 +1,6 @@
 ---
 title: "Attributing app installs to non-mobile ads from Meta ads"
-excerpt: "Learn how to attribute mobile app installs back to non-mobile Meta ads campaigns to understand the full impact of your marketing efforts."
+excerpt: "Attribute installs coming from non-mobile Meta ads campaigns."
 table_of_contents: false
 x-zendesk:
   id: 115001460566

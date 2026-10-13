@@ -1,6 +1,6 @@
 ---
 title: "Recommended eWallet app events"
-excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your eWallet app."
+excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your eWallet app ."
 x-zendesk:
   id: 4402425586065
   url: https://support.appsflyer.com/hc/en-us/articles/4402425586065-Recommended-eWallet-app-events
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-06-10T11:36:07Z'
   edited_at: '2023-12-04T11:47:33Z'
 ---
-**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your eWallet app.
-
 ## ![InApp_Events_eWallet.png](https://files.readme.io/4d2ed4994bbe8e8eca7009b8ec8f5dbf22a626421a7a1efb213ddb4a12c7b487-4402543191825.png) eWallet
 
 eWallet apps enable users to make digital payments or purchases from their devices. The typical events that we suggest recording include adding funds, viewing content, selecting merchants, viewing promotions, and completing transactions.

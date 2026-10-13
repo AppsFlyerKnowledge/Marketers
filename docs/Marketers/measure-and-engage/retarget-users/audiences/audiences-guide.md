@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-05-30T07:21:22Z'
   edited_at: '2026-05-31T10:25:39Z'
 ---
-**At a glance:** Increase the efficiency of your user acquisition and remarketing campaigns by using AppsFlyer Audiences to build and connect audience segments to your partner networks.
-
 ![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
 
 ## Audiences basics

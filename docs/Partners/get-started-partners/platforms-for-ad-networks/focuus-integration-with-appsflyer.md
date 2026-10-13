@@ -1,6 +1,6 @@
 ---
 title: "FOCUUS integration with AppsFlyer"
-excerpt: "Learn how to integrate FOCUUS with AppsFlyer to receive attribution data about installs and in-app events using probabilistic modeling."
+excerpt: "Ad networks that use FOCUUS can utilize the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events."
 x-zendesk:
   id: 213374546
   url: https://support.appsflyer.com/hc/en-us/articles/213374546-FOCUUS-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-10-02T05:18:19Z'
   edited_at: '2026-05-05T07:16:25Z'
 ---
-Ad networks that use FOCUUS can utilize the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events.
-
 ## Creating your attribution link
 
 The attribution link consists of the below AppsFlyer base attribution link and additional macros added by the ad network.

@@ -1,6 +1,6 @@
 ---
 title: "Redirect users to custom app store product pages"
-excerpt: "Learn how to redirect users to custom store listings in Google Play or custom product pages in the App Store using AppsFlyer OneLink URLs."
+excerpt: "Redirect users to your app's custom store listings in Google Play or custom product pages in the App Store. Use AppsFlyer data about the custom store pages to optimize your campaigns."
 x-zendesk:
   id: 4406217556625
   url: https://support.appsflyer.com/hc/en-us/articles/4406217556625-Redirect-users-to-custom-app-store-product-pages
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-08-26T07:25:53Z'
   edited_at: '2025-01-15T14:38:48Z'
 ---
-At a glance: Redirect users to your app's custom store listings in Google Play or custom product pages in the App Store. Use AppsFlyer data about the custom store pages to optimize your campaigns.
-
 ## Overview
 
 Google Play custom store listings and Apple App Store custom product pages (referred to collectively in this article as custom store product pages), allow app owners to create additional versions of their Google Play and App Store pages that showcase different features or content within their app. Custom store product pages can have promotional text, screenshots, and previews that are different from those on the default store page.

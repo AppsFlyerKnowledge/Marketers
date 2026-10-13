@@ -1,6 +1,6 @@
 ---
 title: "App Settings"
-excerpt: "Learn about the settings that impact the attribution and analytics of your app across all media sources in AppsFlyer."
+excerpt: "Learn about the settings that impact the attribution and analytics of your app across all media sources."
 x-zendesk:
   id: 211719806
   url: https://support.appsflyer.com/hc/en-us/articles/211719806-App-Settings
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-08-16T07:50:37Z'
   edited_at: '2026-10-12T15:24:47Z'
 ---
-Learn about the settings that impact the attribution and analytics of your app across all media sources.
-
 ## App Settings
 
 **Access:**

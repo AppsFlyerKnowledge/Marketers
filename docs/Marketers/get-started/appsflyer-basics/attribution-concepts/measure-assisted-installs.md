@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-12-24T10:21:25Z'
   edited_at: '2026-05-25T14:01:59Z'
 ---
-**At a glance:** Measure the broader impact of media sources that engaged your users and assisted before the last touch.
-
 ## Assisted installs
 
 [Assisted installs](https://www.appsflyer.com/mobile-fraud-glossary/assisted-installs-mobile-advertising-assists/) (AKA multi-touch attribution) are installs where the media source/campaign didn't have the last touch but did touch the user before the install and during the attribution window. One install can have up to 3 assisted installs.

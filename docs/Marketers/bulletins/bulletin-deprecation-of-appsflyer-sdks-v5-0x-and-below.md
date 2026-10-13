@@ -1,6 +1,6 @@
 ---
 title: "Bulletin: Deprecation of AppsFlyer SDKs V5.0x and below"
-excerpt: "As of October 31, 2022, AppsFlyer SDK versions 5.0x and below for Android and iOS are deprecated and will no longer collect measurement data."
+excerpt: "As of Oct. 31, 2022, AppsFlyer SDK versions 5.0x or older, for Android and iOS, are deprecated."
 table_of_contents: false
 x-zendesk:
   id: 10113358959121
@@ -23,8 +23,6 @@ x-zendesk:
   created_at: '2022-10-25T10:00:14Z'
   edited_at: '2022-10-25T11:10:49Z'
 ---
-**At a glance:** As of Oct. 31, 2022, AppsFlyer SDK versions 5.0x or older, for Android and iOS, are deprecated.
-
 | | |
 | --- | --- |
 | **What's changing** | As of Oct. 31, 2022, AppsFlyer SDK versions 5.0x or below, for Android and iOS, are deprecated. Apps that have these SDKs will continue to work, but no data will be collected in AppsFlyer for these apps. |

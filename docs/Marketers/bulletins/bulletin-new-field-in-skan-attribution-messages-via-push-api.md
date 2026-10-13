@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: New field in SKAN attribution messages via Push API"
-excerpt: "AppsFlyer has introduced new fields, including the af_attribution flag, measurement_window, and interval, to SKAN attribution messages via the Push API."
 table_of_contents: false
 x-zendesk:
   id: 5203225179153

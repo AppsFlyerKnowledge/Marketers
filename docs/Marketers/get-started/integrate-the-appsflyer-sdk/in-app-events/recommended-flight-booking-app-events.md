@@ -1,6 +1,6 @@
 ---
 title: "Recommended flight booking app events"
-excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your flight booking app."
+excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your flight booking app ."
 x-zendesk:
   id: 360019670857
   url: https://support.appsflyer.com/hc/en-us/articles/360019670857--Recommended-flight-booking-app-events

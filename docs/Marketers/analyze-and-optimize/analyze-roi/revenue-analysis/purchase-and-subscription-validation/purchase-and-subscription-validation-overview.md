@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-12-20T16:30:47Z'
   edited_at: '2026-09-27T07:21:00Z'
 ---
-Understand how AppsFlyer validates purchases and subscriptions, and compare the two available solutions: Receipt validation and ROI360 store revenue.
-
 ## About purchase and subscription validation
 
 Purchase and subscription validation is essential for ensuring the accuracy and reliability of your revenue data. When users make purchases in your app, whether one-time or subscription-based, validating those transactions with the app stores (Apple App Store and Google Play) ensures that only legitimate, paid transactions are measured and attributed.

@@ -1,6 +1,6 @@
 ---
 title: "Agency onboarding"
-excerpt: "Learn how to get started with AppsFlyer for marketing agencies, including account setup, user management, and marketplace profiles."
+excerpt: "Getting started with AppsFlyer for marketing agencies"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,15 +18,15 @@ Getting started with AppsFlyer for marketing agencies
 
 <Cards>
   <Card title="Getting started—agency onboarding" href="/docs/getting-started-agency-onboarding" icon="fa-solid fa-rocket">
-    Learn the essential steps to set up and onboard your agency with AppsFlyer.
+    Start measuring the campaigns of your clients by setting up an Agency account.
   </Card>
   <Card title="About agency accounts" href="/docs/about-agency-accounts" icon="fa-solid fa-handshake">
-    Understand how agency accounts work and their key features.
+    Make the most of your AppsFlyer Agency account with advanced configuration.
   </Card>
   <Card title="User management for agencies" href="/docs/user-management-for-agencies" icon="fa-solid fa-user-gear">
-    Manage team members, roles, and permissions within your agency account.
+    Create and manage your agency account's AppsFlyer users, and assign them permissions to access features and apps.
   </Card>
   <Card title="AppsFlyer Partner Marketplace profile setup for agencies" href="/docs/appsflyer-partner-marketplace-profile-setup-for-agencies" icon="fa-solid fa-handshake">
-    Set up and optimize your agency profile on the AppsFlyer Partner Marketplace.
+    Create your agency profile page in the Partner Marketplace with information about your company, its services, and solutions.
   </Card>
 </Cards>

@@ -1,6 +1,6 @@
 ---
 title: "Single Source of Truth (SSOT) Data Locker report for ad networks"
-excerpt: "The Single Source of Truth (SSOT) report in Data Locker offers a unified and accurate overview of app campaign performances by merging data from various attribution methods."
+excerpt: "The Single Source of Truth (SSOT) report in Data Locker offers a unified and accurate overview of app campaign performances by merging data from various attribution methods, such as ID matching and SKAN. It provides a way to load data into your BI systems to get the highest accuracy of data."
 x-zendesk:
   id: 27168206416017
   url: https://support.appsflyer.com/hc/en-us/articles/27168206416017-Single-Source-of-Truth-SSOT-Data-Locker-report-for-ad-networks
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-07-31T19:51:34Z'
   edited_at: '2025-04-17T08:51:20Z'
 ---
-**At a glance:** The Single Source of Truth (SSOT) report in Data Locker offers a unified and accurate overview of app campaign performances by merging data from various attribution methods, such as ID matching and SKAN.  It provides a way to load data into your BI systems to get the highest accuracy of data.
-
 > 📘 **Note**
 >
 > * Before we start sharing the data with you, the advertisers must grant [permissions](/docs/single-source-of-truth-ssot-data-locker-report-for-ad-networks#permissions) in the dashboard

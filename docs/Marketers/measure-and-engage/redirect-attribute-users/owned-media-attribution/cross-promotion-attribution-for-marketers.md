@@ -1,6 +1,6 @@
 ---
 title: "Cross-promotion attribution for marketers"
-excerpt: "Learn how to attribute installs from cross-promotion campaigns that promote your apps on other apps you own using device ID matching."
+excerpt: "Attribute installs from cross-promotion campaigns that promote your apps on other apps you own."
 x-zendesk:
   id: 115004481946
   url: https://support.appsflyer.com/hc/en-us/articles/115004481946-Cross-promotion-attribution-for-marketers
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-08-30T13:26:03Z'
   edited_at: '2024-09-22T10:59:57Z'
 ---
-At a glance: Attribute installs from cross-promotion campaigns that promote your apps on other apps you own.
-
 ![CrossPromo_userJourney](https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png)
 
 ## About cross-promotion

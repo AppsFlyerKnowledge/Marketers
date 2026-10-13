@@ -1,6 +1,6 @@
 ---
 title: "Smart Banners—mobile web-to-app (for marketers)"
-excerpt: "Convert your website visitors into mobile app users and measure campaign performance with AppsFlyer Smart Banners."
+excerpt: "Convert your website visitors into mobile app users with Smart Banners."
 x-zendesk:
   id: 360000764837
   url: https://support.appsflyer.com/hc/en-us/articles/360000764837-Smart-Banners-mobile-web-to-app-for-marketers
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-01-14T12:33:07Z'
   edited_at: '2026-02-23T14:37:29Z'
 ---
-**At a glance:** Convert your website visitors into mobile app users with Smart Banners.
-
 [![](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)
 
 > 📘 **Note**

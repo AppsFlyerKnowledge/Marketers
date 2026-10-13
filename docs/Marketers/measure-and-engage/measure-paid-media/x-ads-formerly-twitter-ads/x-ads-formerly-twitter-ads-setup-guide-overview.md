@@ -1,6 +1,6 @@
 ---
 title: "X Ads (formerly Twitter Ads) setup guide—overview"
-excerpt: "Learn the background of integrating your X Ads account with AppsFlyer, including mobile app promotion, user privacy policies, and SKAdNetwork interoperation."
+excerpt: "Learn the background of integrating your X Ads account with AppsFlyer."
 x-zendesk:
   id: 4410464316049
   url: https://support.appsflyer.com/hc/en-us/articles/4410464316049-X-Ads-formerly-Twitter-Ads-setup-guide-overview
@@ -27,8 +27,6 @@ x-zendesk:
   <Card title="X Ads user privacy" href="#x-ads-user-privacy" icon="fa-solid fa-user-shield" />
   <Card title="X Ads and AppsFlyer SKAN interoperation" href="#x-ads-and-appsflyer-skan-interoperation" icon="fa-solid fa-lock" />
 </Cards>
-
-**At a glance:** Learn the background of integrating your X Ads account with AppsFlyer.
 
 ![X Ads logo.png](https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png)
 

@@ -1,6 +1,6 @@
 ---
 title: "In-app event generator"
-excerpt: "Automatically create native Android, iOS, and Unity code for sending in-app events by defining event names and content according to your business needs."
+excerpt: "Automatically create the app code (native Android and iOS, Unity) for sending in-app events by defining the event names and content according to your business needs."
 x-zendesk:
   id: 10457123447953
   url: https://support.appsflyer.com/hc/en-us/articles/10457123447953-In-app-event-generator
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-11-08T12:47:30Z'
   edited_at: '2023-11-02T10:46:46Z'
 ---
-**At a glance:** Automatically create the app code (native Android and iOS, Unity) for sending in-app events by defining the event names and content according to your business needs.
-
 ## Introduction
 
 In-app events are a major tool for **app owners to measure the quality of their users coming from different sources** based on the actions they take after app installation. Events are also often used for performing CPA-based marketing campaigns.

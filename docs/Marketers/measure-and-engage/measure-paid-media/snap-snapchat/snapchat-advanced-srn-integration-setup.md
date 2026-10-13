@@ -1,6 +1,6 @@
 ---
 title: "Snapchat—Advanced SRN integration setup"
-excerpt: "Learn how to set up the integration between AppsFlyer and Snapchat to enable attribution measurement for advanced Self-Reporting Networks."
+excerpt: "Learn how to set up the integration between AppsFlyer and Snapchat to enable attribution measurement. Snapchat is an advanced SRN (Self-Reporting Network)."
 x-zendesk:
   id: 211011983
   url: https://support.appsflyer.com/hc/en-us/articles/211011983-Snapchat-Advanced-SRN-integration-setup
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-06-13T12:28:59Z'
   edited_at: '2026-10-07T11:44:22Z'
 ---
-Learn how to set up the integration between AppsFlyer and Snapchat to enable attribution measurement. Snapchat is an advanced SRN (Self-Reporting Network).
-
 ![](https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1)
 
 ## Overview

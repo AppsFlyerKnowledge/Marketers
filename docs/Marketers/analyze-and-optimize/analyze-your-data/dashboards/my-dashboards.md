@@ -1,6 +1,6 @@
 ---
 title: "My Dashboards"
-excerpt: "Use My Dashboards to design your own dashboard, adding and customizing widgets, charts, and tables that display the exact performance metrics you want."
+excerpt: "Use \"My Dashboards\" to design your own dashboard, adding and customizing widgets, charts, and tables that display the exact performance metrics you want, in the way you want to view them."
 x-zendesk:
   id: 23461861877009
   url: https://support.appsflyer.com/hc/en-us/articles/23461861877009-My-Dashboards
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-03-19T14:29:53Z'
   edited_at: '2026-10-11T10:42:20Z'
 ---
-**At a glance:** Use "My Dashboards" to design your own dashboard, adding and customizing widgets, charts, and tables that display the exact performance metrics you want, in the way you want to view them.
-
 ## About My Dashboards
 
 <Embed title="My Dashboards" typeOfEmbed="youtube" url="https://www.youtube.com/embed/euXEfhL0cmE?si=SI8qQAd7EpSeEaJk" providerUrl="https://www.youtube.com" />

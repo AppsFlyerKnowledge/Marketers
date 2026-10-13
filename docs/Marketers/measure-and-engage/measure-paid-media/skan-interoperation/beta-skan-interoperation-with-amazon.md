@@ -1,6 +1,6 @@
 ---
 title: "[Beta] SKAN interoperation with Amazon"
-excerpt: "Learn how to enable SKAN interoperability to share postbacks and conversion value mappings between AppsFlyer and Amazon."
+excerpt: "SKAN interoperability enables Amazon to share SKAN postbacks with AppsFlyer and enables AppsFlyer to share your conversion value measurement mapping with Amazon."
 x-zendesk:
   id: 27548444974353
   url: https://support.appsflyer.com/hc/en-us/articles/27548444974353--Beta-SKAN-interoperation-with-Amazon
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-08-15T09:36:46Z'
   edited_at: '2026-09-08T06:52:18Z'
 ---
-SKAN interoperability enables Amazon to share SKAN postbacks with AppsFlyer and enables AppsFlyer to share your conversion value measurement mapping with Amazon.
-
 > 📘 Note
 >
 > To participate in this closed beta, notify your Amazon representative.

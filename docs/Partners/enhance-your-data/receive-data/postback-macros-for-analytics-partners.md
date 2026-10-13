@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-01-04T04:44:40Z'
   edited_at: '2026-08-14T16:22:42Z'
 ---
-Use macros as part of the postbacks sent to analytics partners to get relevant attribution data.
-
 ## Postbacks for analytics partners
 
 Analytics partners can define the content and endpoints of postbacks sent to them, as part of their integration with AppsFlyer. Postbacks relate to app user engagement like installs, in-app events, re-engagements, and so on.

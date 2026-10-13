@@ -1,6 +1,6 @@
 ---
 title: "The AppsFlyer platform"
-excerpt: "Explore the core features of the AppsFlyer platform, including notifications, data access permissions, APIs, and timezone support."
+excerpt: "The ins-and-outs of the platform, notifications, data access, APIs, and more"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,21 +18,21 @@ The ins-and-outs of the platform, notifications, data access, APIs, and more
 
 <Cards>
   <Card title="Notifications" href="/docs/notifications" icon="fa-solid fa-file-lines">
-    Stay updated with real-time alerts and notifications within the AppsFlyer platform.
+    Manage critical AppsFlyer account notifications from the platform.
   </Card>
   <Card title="About advertiser APIs" href="/docs/about-advertiser-apis" icon="fa-solid fa-handshake">
-    Learn about the available APIs for advertisers to programmatically access and manage data.
+    APIs available to advertisers to access or update data.
   </Card>
   <Card title="Manage data access permissions" href="/docs/manage-data-access-permissions" icon="fa-solid fa-user-gear">
-    Control and configure user permissions and data access levels across your account.
+    The ability to access data and features in AppsFlyer depends on team member account type, individual team member permissions, and account permissions.
   </Card>
   <Card title="About data freshness and timezone support" href="/docs/about-data-freshness-and-timezone-support" icon="fa-solid fa-circle-info">
-    Understand how data freshness updates and how different timezones are supported in reports.
+    Data freshness is the period of time between event occurrence and data availability in the platform.
   </Card>
   <Card title="About the AppsFlyer mobile app" href="/docs/about-the-appsflyer-mobile-app" icon="fa-solid fa-mobile-screen-button">
-    Monitor your campaigns on the go using the AppsFlyer mobile application.
+    Use the AppsFlyer mobile app to review your mobile attribution and marketing analytics right from your phone.
   </Card>
   <Card title="Navigate AppsFlyer with the launchpad" href="/docs/navigate-appsflyer-with-the-launchpad" icon="fa-solid fa-bullhorn">
-    Quickly access different sections and tools within AppsFlyer using the launchpad.
+    Use Launchpad (Ctrl+K or Cmd+K) to quickly navigate to a page on the dashboard.
   </Card>
 </Cards>

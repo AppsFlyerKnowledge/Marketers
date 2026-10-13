@@ -1,6 +1,6 @@
 ---
 title: "About data freshness and timezone support"
-excerpt: "Learn how AppsFlyer handles data freshness rates and app-specific time zones across different dashboards, reports, and APIs."
+excerpt: "Data freshness is the period of time between event occurrence and data availability in the platform."
 x-zendesk:
   id: 360000310629
   url: https://support.appsflyer.com/hc/en-us/articles/360000310629-About-data-freshness-and-timezone-support
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-02-19T15:57:01Z'
   edited_at: '2026-09-16T08:20:40Z'
 ---
-Data freshness is the period of time between event occurrence and data availability in the platform.
-
 **Time zones**
 
 ![TimeZoneMap.jpg](https://files.readme.io/eddfa3df4d43fed82ba5e867eb1278466d1ba51f9fbc2970f62fa61c6659d340-360005463738.jpg)

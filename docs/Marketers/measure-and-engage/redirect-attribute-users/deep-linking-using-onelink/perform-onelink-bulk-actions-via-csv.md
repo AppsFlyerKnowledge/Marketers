@@ -1,6 +1,6 @@
 ---
 title: "Perform OneLink bulk actions via CSV"
-excerpt: "Learn how to create, view, and edit OneLink custom shortlinks in bulk using CSV files and collections."
+excerpt: "The OneLink Bulk Links page allows you to create and manage OneLink custom shortlinks in bulk."
 x-zendesk:
   id: 14511403892369
   url: https://support.appsflyer.com/hc/en-us/articles/14511403892369-Perform-OneLink-bulk-actions-via-CSV
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-04-13T11:31:43Z'
   edited_at: '2026-08-18T00:01:06Z'
 ---
-**At a glance:** The OneLink Bulk Links page allows you to create and manage OneLink custom shortlinks in bulk.
-
 You can create, view, and edit links generated in bulk. These links are organized into a convenient collection format, allowing you to perform batch actions on the whole collection, such as adding new links, downloading them, and generating QR code image files.
 
 ## Getting started

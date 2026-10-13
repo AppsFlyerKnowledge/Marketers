@@ -1,6 +1,5 @@
 ---
 title: "About ATT and SKAN"
-excerpt: "An introduction to Apple's AppTrackingTransparency (ATT) framework and SKAdNetwork (SKAN) attribution solutions for iOS 14.5+."
 x-zendesk:
   id: 360011890298
   url: https://support.appsflyer.com/hc/en-us/articles/360011890298-About-ATT-and-SKAN

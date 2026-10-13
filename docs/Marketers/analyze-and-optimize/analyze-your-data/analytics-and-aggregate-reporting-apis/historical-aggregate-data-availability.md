@@ -1,6 +1,6 @@
 ---
 title: "Historical aggregate data availability"
-excerpt: "A comprehensive reference guide detailing how far back historical data is retained and accessible across different AppsFlyer aggregate dashboards, reports, and APIs."
+excerpt: "See what historical data is available via different AppsFlyer aggregate dashboards and reports."
 x-zendesk:
   id: 15557418667537
   url: https://support.appsflyer.com/hc/en-us/articles/15557418667537-Historical-aggregate-data-availability
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-05-24T08:38:43Z'
   edited_at: '2026-08-24T10:05:47Z'
 ---
-**At a glance:** See what historical data is available via different AppsFlyer aggregate dashboards and reports.
-
 ## Historical aggregate data availability
 
 The following table displays how far back historical data is available via different AppsFlyer aggregate dashboards and reports.

@@ -1,6 +1,6 @@
 ---
 title: "Yahoo integration setup"
-excerpt: "Learn how to set up mobile attribution, cost, and view-through tracking with Yahoo in AppsFlyer."
+excerpt: "Yahoo, an AppsFlyer ad network integrated partner, offers search and native advertising in one advertising platform. In addition to click-based mobile attribution, Yahoo offers cost and view-through attribution, which can be recorded with AppsFlyer."
 x-zendesk:
   id: 212067546
   url: https://support.appsflyer.com/hc/en-us/articles/212067546-Yahoo-integration-setup
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-08-25T13:09:48Z'
   edited_at: '2026-09-09T12:41:37Z'
 ---
-Yahoo, an AppsFlyer ad network integrated partner, offers search and native advertising in one advertising platform. In addition to click-based mobile attribution, Yahoo offers cost and view-through attribution, which can be recorded with AppsFlyer.
-
 ## Setting up Yahoo
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.

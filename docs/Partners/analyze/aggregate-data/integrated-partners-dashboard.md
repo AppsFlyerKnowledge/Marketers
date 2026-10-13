@@ -1,6 +1,6 @@
 ---
 title: "Integrated partners dashboard"
-excerpt: "Learn how integrated partners can use the AppsFlyer dashboard and reports to view and analyze campaign traffic."
+excerpt: "Integrated partners use the dashboard and reports to view and analyze campaign traffic attributed to you."
 x-zendesk:
   id: 212955423
   url: https://support.appsflyer.com/hc/en-us/articles/212955423-Integrated-partners-dashboard
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-08-08T08:11:38Z'
   edited_at: '2023-10-11T12:54:23Z'
 ---
-**At a glance:** Integrated partners use the dashboard and reports to view and analyze campaign traffic attributed to you.
-
 ## Using the AppsFlyer dashboard
 
 **To log in to AppsFlyer**:

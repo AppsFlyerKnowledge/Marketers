@@ -1,6 +1,6 @@
 ---
 title: "Spoteffects integration with AppsFlyer"
-excerpt: "Learn how to set up the Spoteffects integration with AppsFlyer to optimize your TV campaigns based on immediately generated visits and conversions."
+excerpt: "Spoteffects, an AppsFlyer integrated partner, develops and markets the software as a service solution. The solution allows media planners to optimize their TV campaigns for online shops and websites based on immediately generated visits and conversions per ad."
 x-zendesk:
   id: 115004574426
   url: https://support.appsflyer.com/hc/en-us/articles/115004574426-Spoteffects-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-09-06T14:38:15Z'
   edited_at: '2026-06-16T09:52:43Z'
 ---
-**At a glance:** Spoteffects, an AppsFlyer integrated partner, develops and markets the software as a service solution. The solution allows media planners to optimize their TV campaigns for online shops and websites based on immediately generated visits and conversions per ad.
-
 > 📘 **Important!**
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.

@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Change in Preload referrer attribution parameter"
-excerpt: "Important update regarding changes to the preload referrer attribution parameter in raw data reports and dashboards starting January 17, 2024."
 table_of_contents: false
 x-zendesk:
   id: 20161765461009

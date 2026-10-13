@@ -1,6 +1,6 @@
 ---
 title: "Migrate from Adjust to AppsFlyer"
-excerpt: "Plan your migration from Adjust to AppsFlyer to avoid double charges, data duplication, and data loss during the transition period."
+excerpt: "Plan your migration from Adjust to AppsFlyer. Understand how to avoid double charges, data duplication, and data loss during the migration period."
 x-zendesk:
   id: 30563700129297
   url: https://support.appsflyer.com/hc/en-us/articles/30563700129297-Migrate-from-Adjust-to-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-12-02T10:01:48Z'
   edited_at: '2024-12-05T10:13:18Z'
 ---
-**At a glance:** Plan your migration from Adjust to AppsFlyer. Understand how to avoid double charges, data duplication, and data loss during the migration period.
-
 ![](https://files.readme.io/cc012894dd05255c0b7fa448b1c95d925d556ddb43dc461086bb71e9279da90d-30633481029137.png)
 
 ## About migrating to AppsFlyer

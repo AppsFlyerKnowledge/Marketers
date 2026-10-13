@@ -1,6 +1,6 @@
 ---
 title: "vivo Ads Campaign Configuration"
-excerpt: "Learn how to configure vivo Ads in AppsFlyer, including setting up the integration, configuring attribution links, and managing lookback windows."
+excerpt: "vivo Ads is an AppsFlyer ad network integrated partner."
 x-zendesk:
   id: 360002358897
   url: https://support.appsflyer.com/hc/en-us/articles/360002358897-vivo-Ads-Campaign-Configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-08-29T08:24:47Z'
   edited_at: '2026-09-15T10:34:14Z'
 ---
-**At a glance:** vivo Ads is an AppsFlyer ad network integrated partner.
-
 ## Setting Up vivo Ads
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.

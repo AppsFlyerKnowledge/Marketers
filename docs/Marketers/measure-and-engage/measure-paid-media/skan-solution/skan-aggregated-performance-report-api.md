@@ -1,6 +1,6 @@
 ---
 title: "SKAN aggregated performance report API"
-excerpt: "The SKAN aggregated performance report API returns attribution metrics reported by Apple SKAdNetwork enriched with additional data points using the install or postback arrival date."
+excerpt: "SKAN performance enriched with additional data points. Similar to the data in the SKAdNetwork dashboard. Aggregate using either the install date or postback arrival date."
 x-zendesk:
   id: 360014104157
   url: https://support.appsflyer.com/hc/en-us/articles/360014104157-SKAN-aggregated-performance-report-API

@@ -1,6 +1,6 @@
 ---
 title: "ROI360 - revenue attribution overview"
-excerpt: "Learn about the different products and features available for advertisers to aggregate and view revenue data to get a clear picture of ROI and ROAS."
+excerpt: "Revenue data helps give you a clear and complete picture of ROI and ROAS. Learn about the different products and features available for advertisers to aggregate and view revenue data."
 x-zendesk:
   id: 360001546009
   url: https://support.appsflyer.com/hc/en-us/articles/360001546009-ROI360-revenue-attribution-overview
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-11-12T07:56:29Z'
   edited_at: '2026-05-26T10:58:30Z'
 ---
-Revenue data helps give you a clear and complete picture of ROI and ROAS. Learn about the different products and features available for advertisers to aggregate and view revenue data.
-
 ![roi_revenue.png](https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png)
 
 ## Overview

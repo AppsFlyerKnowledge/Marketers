@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-04-21T09:58:52Z'
   edited_at: '2026-01-08T11:54:02Z'
 ---
-**At a glance:** Quickly and effectively safeguard your marketing investments by following this step-by-step onboarding guide to maximize your Protect360 value within just 6 weeks.
-
 ## **Onboarding timeline and what to expect?**
 
 This guide outlines a phased onboarding approach of 6 weeks:

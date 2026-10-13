@@ -1,6 +1,6 @@
 ---
 title: "Cost-sharing options for ad networks"
-excerpt: "Compare the different cost-sharing methods available to AppsFlyer ad network partners, including InCost API, Cost API, Cost Import, and Cost by click."
+excerpt: "Compare cost-sharing methods available to AppsFlyer ad network partners."
 x-zendesk:
   id: 360012893658
   url: https://support.appsflyer.com/hc/en-us/articles/360012893658-Cost-sharing-options-for-ad-networks
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-09-07T13:50:24Z'
   edited_at: '2024-05-22T12:07:38Z'
 ---
-At a glance: Compare cost-sharing methods available to AppsFlyer ad network partners.
-
 ## Sharing cost with AppsFlyer and advertisers
 
 Advertisers use AppsFlyer as their source of truth for ROI, billing, and to make marketing budget allocation decisions. For networks to be visible, sharing cost data with AppsFlyer is a must. Networks with no cost data appear at the bottom of the AppsFlyer dashboard list.

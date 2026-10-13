@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Meta ads breakdown by channel update"
-excerpt: "Learn about Meta's per-ad-account opt-in requirement for the impression device breakdown and how to ensure your channel-level cost data remains complete."
 x-zendesk:
   id: 49465306965393
   url: https://support.appsflyer.com/hc/en-us/articles/49465306965393-Bulletin-Meta-ads-breakdown-by-channel-update

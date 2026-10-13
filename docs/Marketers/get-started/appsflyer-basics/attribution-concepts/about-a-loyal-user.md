@@ -1,6 +1,6 @@
 ---
 title: "About a loyal user"
-excerpt: "Learn what defines a loyal user in AppsFlyer and how you can customize this key user engagement metric."
+excerpt: "Learn what defines a loyal user in AppsFlyer, and how you can customize it."
 x-zendesk:
   id: 207447003
   url: https://support.appsflyer.com/hc/en-us/articles/207447003-About-a-loyal-user
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-12-24T10:15:54Z'
   edited_at: '2025-04-05T12:55:02Z'
 ---
-**At a glance:** Learn what defines a loyal user in AppsFlyer, and how you can customize it.
-
 ## What is a loyal user?
 
 * According to the AppsFlyer default setting, a loyal user is a user who after downloading and opening the app for the first time, opens it a further 3 times.

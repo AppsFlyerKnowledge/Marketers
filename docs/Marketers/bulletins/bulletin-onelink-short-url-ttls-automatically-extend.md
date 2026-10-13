@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: OneLink short URL TTLs automatically extend"
-excerpt: "Learn about the automatic extension of default time to live (TTL) for OneLink short URLs created via bulk upload, SDK, and OneLink API upon user clicks."
 table_of_contents: false
 x-zendesk:
   id: 4667188714001

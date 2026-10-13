@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-05-03T09:19:48Z'
   edited_at: '2026-10-05T07:00:31Z'
 ---
-Integrate your Samsung Connected TV (CTV) app with AppsFlyer to receive attribution and event data for your campaigns on Samsung.
-
 ## About Samsung CTV attribution
 
 The Samsung Tizen OS for streaming runs across all Samsung TVs.

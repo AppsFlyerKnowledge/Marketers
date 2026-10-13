@@ -1,6 +1,6 @@
 ---
 title: "Data richness score for ad networks"
-excerpt: "Learn how the AppsFlyer data richness score measures the quality and completeness of ad network campaign data to help advertisers make better marketing decisions."
+excerpt: "Improve the quality of the data you provide to advertisers using the AppsFlyer data richness score."
 x-zendesk:
   id: 360009443338
   url: https://support.appsflyer.com/hc/en-us/articles/360009443338-Data-richness-score-for-ad-networks
@@ -22,10 +22,6 @@ x-zendesk:
   created_at: '2020-06-03T09:27:03Z'
   edited_at: '2023-05-14T14:09:19Z'
 ---
-> 👍 At a glance
->
-> Improve the quality of the data you provide to advertisers using the AppsFlyer data richness score.
-
 The quality of the data that advertisers receive from ad networks on which they run their campaigns can play an important role in marketing decisions.
 
 The data provided by different ad networks vary in terms of its coverage, accuracy, and granularity. Partial and inaccurate data reduces the advertisers' ability to analyze and optimize their campaign performance on AppsFlyer.

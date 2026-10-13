@@ -1,6 +1,5 @@
 ---
 title: "Purchase and subscription validation"
-excerpt: "An overview of guides and setup instructions for validating purchases, subscriptions, and ROI360 store revenue."
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,18 +17,18 @@ This section covers purchase and subscription validation, including receipt vali
 
 <Cards>
   <Card title="Purchase and subscription validation - Overview" href="/docs/purchase-and-subscription-validation-overview" icon="fa-solid fa-sack-dollar">
-    Learn the basics of validating purchases and subscriptions.
+    Understand how AppsFlyer validates purchases and subscriptions, and compare the two available solutions: Receipt validation and ROI360 store revenue.
   </Card>
   <Card title="About Receipt validation" href="/docs/about-receipt-validation" icon="fa-solid fa-sack-dollar">
-    Understand how receipt validation works and why it is important.
+    Understand how Receipt validation measures revenue from in-app purchases and subscriptions and verifies it with the app stores, ensuring accurate revenue measurement.
   </Card>
   <Card title="Set up receipt validation" href="/docs/set-up-receipt-validation" icon="fa-solid fa-sack-dollar">
-    Step-by-step instructions to configure receipt validation.
+    Receipt validation measures revenue from in-app purchases and subscriptions, and verifies it with the app stores, ensuring accurate Return on Ad Spend (ROAS) results.
   </Card>
   <Card title="About ROI360 store revenue" href="/docs/about-roi360-store-revenue" icon="fa-solid fa-sack-dollar">
-    Learn about tracking store revenue using ROI360.
+    Use ROI360 store revenue to validate in-app purchases and subscriptions, prevent duplicates, and calculate net revenue.
   </Card>
   <Card title="Set up ROI360 store revenue" href="/docs/set-up-roi360-store-revenue" icon="fa-solid fa-sack-dollar">
-    Configure ROI360 to accurately measure and validate store revenue.
+    Set up the AppsFlyer ROI360 store revenue solution.
   </Card>
 </Cards>

@@ -1,6 +1,6 @@
 ---
 title: "In-app events—Event structure"
-excerpt: "View the list of predefined event names and event parameters to record post-install in-app events such as login, register, or in-app purchase."
+excerpt: "View the list of predefined event names and event parameters to record post-install in-app events (such as login, register, or in-app purchase)."
 x-zendesk:
   id: 4410481112081
   url: https://support.appsflyer.com/hc/en-us/articles/4410481112081-In-app-events-Event-structure
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-11-09T10:09:16Z'
   edited_at: '2026-08-12T09:04:04Z'
 ---
-**At a glance:** View the list of predefined event names and event parameters to record post-install in-app events (such as login, register, or in-app purchase).
-
 ## Overview
 
 In-app events that you want to send require your developer to implement code where applicable in your app. This article describes the predefined event names and predefined event parameters.

@@ -1,6 +1,6 @@
 ---
 title: "Using the Customer Assistant Chatbot"
-excerpt: "Learn how to contact AppsFlyer support through the Customer Assistant Chatbot to troubleshoot issues, get product guidance, or open support tickets."
+excerpt: "Contact AppsFlyer support through the Customer Assistant Chatbot for assistance with troubleshooting issues or product guidance. The chatbot also helps you open tickets to the correct team where necessary."
 x-zendesk:
   id: 23583984402193
   url: https://support.appsflyer.com/hc/en-us/articles/23583984402193-Using-the-Customer-Assistant-Chatbot
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-03-24T14:36:24Z'
   edited_at: '2026-08-31T07:51:13Z'
 ---
-At a glance: Contact AppsFlyer support through the Customer Assistant Chatbot for assistance with troubleshooting issues or product guidance. The chatbot also helps you open tickets to the correct team where necessary.
-
 ## Overview
 
 The Customer Assistant Chatbot directs your issues to the appropriate team, covering app-related concerns, account management, billing, product guidance, and technical support. The steps in the chatbot prompt you to provide the necessary details for accurate assistance, reducing the need for extra information.

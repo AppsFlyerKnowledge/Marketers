@@ -1,6 +1,6 @@
 ---
 title: "Voluum integration with AppsFlyer"
-excerpt: "Learn how to integrate Voluum with AppsFlyer to receive attribution data about installs and in-app events using probabilistic modeling."
+excerpt: "Ad networks that use Voluum can utilize the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events."
 x-zendesk:
   id: 207274016
   url: https://support.appsflyer.com/hc/en-us/articles/207274016-Voluum-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-01-11T14:46:09Z'
   edited_at: '2026-05-04T09:31:48Z'
 ---
-Ad networks that use Voluum can utilize the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events.
-
 ## Starting the integration
 
 To start the integration you must send AppsFlyer both the attribution link and the postback for reporting purposes.

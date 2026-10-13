@@ -1,6 +1,6 @@
 ---
 title: "Medialyzer integration with AppsFlyer"
-excerpt: "Learn how to set up the Medialyzer integration with AppsFlyer to optimize your TV campaigns for online businesses based on visits and conversions."
+excerpt: "Medialyzer, an AppsFlyer integrated partner, develops and markets the software as a service solution. The solution allows media planners to optimize their TV campaigns for online businesses based on immediately generated visits and conversions per TV ad airing."
 x-zendesk:
   id: 14963611180689
   url: https://support.appsflyer.com/hc/en-us/articles/14963611180689-Medialyzer-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-05-01T11:43:34Z'
   edited_at: '2026-06-16T09:51:58Z'
 ---
-Medialyzer, an AppsFlyer integrated partner, develops and markets the software as a service solution. The solution allows media planners to optimize their TV campaigns for online businesses based on immediately generated visits and conversions per TV ad airing.
-
 > ❗️ Important!
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.

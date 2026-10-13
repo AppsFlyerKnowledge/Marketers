@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-11-09T09:33:40Z'
   edited_at: '2026-09-15T09:23:09Z'
 ---
-**At a glance:** Integrate your X Ads account with AppsFlyer to display attribution data of X Ads campaigns.
-
 ## Overview
 
 X Ads is an Advanced Self-Reporting Network (SRN), enabling AppsFlyer to support campaign measurement for X Ads campaigns through its range of privacy-preserving measurement methods.

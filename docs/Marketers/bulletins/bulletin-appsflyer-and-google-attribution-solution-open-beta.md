@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: AppsFlyer and Google attribution solution [Open BETA]"
-excerpt: "Learn about Google's Integrated Conversions Measurement (ICM) solution for measuring iOS and Android installs and re-attributions without device IDs."
 table_of_contents: false
 x-zendesk:
   id: 37857301293457

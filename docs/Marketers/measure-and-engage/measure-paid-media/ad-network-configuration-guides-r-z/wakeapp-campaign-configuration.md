@@ -1,6 +1,6 @@
 ---
 title: "WakeApp campaign configuration"
-excerpt: "Learn how to configure your mobile marketing campaigns with WakeApp, an integrated ad network partner in AppsFlyer."
+excerpt: "WakeApp, an AppsFlyer ad network integrated partner, is a global company specializing in mobile marketing."
 x-zendesk:
   id: 211506443
   url: https://support.appsflyer.com/hc/en-us/articles/211506443-WakeApp-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-06-30T12:39:52Z'
   edited_at: '2026-09-07T07:24:59Z'
 ---
-WakeApp, an AppsFlyer ad network integrated partner, is a global company specializing in mobile marketing.
-
 To configure your campaigns with Wakeapp, follow the steps below.
 
 ## Setting up WakeApp

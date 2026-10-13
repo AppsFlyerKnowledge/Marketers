@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Ad revenue update for cohort reports"
-excerpt: "Ad revenue calculations in Cohort reports will be fully aligned with LTV reports starting August 3, 2022, affecting customers with non-UTC timezone settings."
 table_of_contents: false
 x-zendesk:
   id: 7610260326033

@@ -1,6 +1,6 @@
 ---
 title: "Resolve AppsFlyer App stores discrepancies"
-excerpt: "Understand the leading causes of attribution discrepancies between AppsFlyer and app stores, and learn how to minimize them."
+excerpt: "Find the leading causes of attribution discrepancies between AppsFlyer and app stores, as well as tips to minimize these discrepancies."
 x-zendesk:
   id: 207040726
   url: https://support.appsflyer.com/hc/en-us/articles/207040726-Resolve-AppsFlyer-App-stores-discrepancies
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-12-24T12:52:53Z'
   edited_at: '2025-04-05T12:49:42Z'
 ---
-Find the leading causes of attribution discrepancies between AppsFlyer and app stores, as well as tips to minimize these discrepancies.
-
 ## Attribution discrepancies
 
 There are inherent differences in the attribution models used by all players in the mobile attribution ecosystem. The same applies to AppsFlyer and the main app stores: (iOS) App Store and (Android) Google Play. **Note**: In this article, the two stores are referred to as app store or app stores.

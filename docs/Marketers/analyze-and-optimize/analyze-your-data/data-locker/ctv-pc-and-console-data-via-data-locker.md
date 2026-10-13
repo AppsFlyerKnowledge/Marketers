@@ -1,6 +1,5 @@
 ---
 title: "CTV, PC, and console data via Data Locker"
-excerpt: "Access cross-platform reports for CTV, PC, and console platforms, including impressions, clicks, installs, in-app events, and sessions via Data Locker."
 x-zendesk:
   id: 18170499230609
   url: https://support.appsflyer.com/hc/en-us/articles/18170499230609-CTV-PC-and-console-data-via-Data-Locker

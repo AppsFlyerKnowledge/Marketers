@@ -1,6 +1,6 @@
 ---
 title: "NativeScript plugin"
-excerpt: "Integrate AppsFlyer into apps developed in NativeScript to measure app installs, in-app events, media sources, and more."
+excerpt: "Integrate AppsFlyer into apps developed in NativeScript to measure app installs, in-app events, media sources and more."
 table_of_contents: false
 x-zendesk:
   id: 217183026

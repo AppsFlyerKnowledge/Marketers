@@ -1,6 +1,6 @@
 ---
 title: "Pinterest"
-excerpt: "Learn how to set up Pinterest and its partners for AppsFlyer attribution across mobile and website integrations."
+excerpt: "Set up Pinterest and its partners for AppsFlyer attribution"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,12 +18,12 @@ Set up Pinterest and its partners for AppsFlyer attribution
 
 <Cards>
   <Card title="Pinterest—Create a website app integration" href="/docs/pinterest-create-a-website-app-integration" icon="fa-solid fa-globe">
-    Set up website app integration for Pinterest attribution.
+    Set up a Pinterest integration for your website app to send web conversion events to Pinterest for campaign optimization and reporting.
   </Card>
   <Card title="Pinterest—Create a mobile app integration" href="/docs/pinterest-create-a-mobile-app-integration" icon="fa-solid fa-mobile-screen-button">
-    Set up mobile app integration for Pinterest attribution.
+    Pinterest, an AppsFlyer integrated partner, is one of the top contributors of traffic for bloggers and brands. Pinterest offers both click-based and view-through mobile attribution. In addition, Pinterest also offers click-based retargeting which you can record with AppsFlyer.
   </Card>
   <Card title="Pinterest Marketing Partner Integration" href="/docs/pinterest-marketing-partner-integration" icon="fa-solid fa-handshake">
-    Configure integration with Pinterest Marketing Partners.
+    Enable Pinterest Marketing Partners (PMPs) to receive install data for users attributed to Pinterest.
   </Card>
 </Cards>

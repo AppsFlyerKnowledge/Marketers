@@ -1,6 +1,6 @@
 ---
 title: "GameAnalytics integration with AppsFlyer"
-excerpt: "Learn how to integrate GameAnalytics with AppsFlyer to visualize core gaming KPIs and understand player behavior."
+excerpt: "Game Analytics, an AppsFlyer integrated partner, is a powerful free tool that helps developers understand player behavior so they can improve engagement, reduce churn, and perfect monetization. It helps to visualize core gaming KPIs in one convenient view and offers in-game benchmarking to see how your metrics stack up against more than 14,000 similar titles."
 x-zendesk:
   id: 207447143
   url: https://support.appsflyer.com/hc/en-us/articles/207447143-GameAnalytics-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-12-24T11:42:56Z'
   edited_at: '2026-06-16T11:24:01Z'
 ---
-**At a glance:** Game Analytics, an AppsFlyer integrated partner, is a powerful free tool that helps developers understand player behavior so they can improve engagement, reduce churn, and perfect monetization. It helps to visualize core gaming KPIs in one convenient view and offers in-game benchmarking to see how your metrics stack up against more than 14,000 similar titles.
-
 It takes just a few minutes to set up and it’s totally free of charge – no usage caps or hidden premium features! If you’d rather see the platform in action before integrating it with your title, just sign up to see a demo game with pre-populated data.
 
 The platform is trusted by more than 40,000 game developers worldwide, from indies to world-renowned studios, and handles over five billion unique events every day across 2+ billion devices. GameAnalytics is widely integrated, with SDKs for every major game engine and platform. You can sign up for free today at https://gameanalytics.com/

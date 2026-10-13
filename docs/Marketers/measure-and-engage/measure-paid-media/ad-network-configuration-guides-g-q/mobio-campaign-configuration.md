@@ -1,6 +1,6 @@
 ---
 title: "Mobio campaign configuration"
-excerpt: "Learn how to configure mobile app marketing campaigns, attribution links, and permissions with Mobio in AppsFlyer."
+excerpt: "Mobio, one of AppsFlyer's integrated partners, is a mobile app marketing platform with Russia's #1 successful case studies portfolio. In addition to click-based mobile attribution, Mobio also offers cost, ad revenue, retargeting and view-through attribution, which you can record with AppsFlyer."
 x-zendesk:
   id: 209587526
   url: https://support.appsflyer.com/hc/en-us/articles/209587526-Mobio-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-06-20T13:07:24Z'
   edited_at: '2026-07-23T13:16:56Z'
 ---
-**At a glance:** Mobio, one of AppsFlyer's integrated partners, is a mobile app marketing platform with Russia's #1 successful case studies portfolio. In addition to click-based mobile attribution, Mobio also offers cost, ad revenue, retargeting and view-through attribution, which you can record with AppsFlyer.
-
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mobio.png?v=1%0A)
 
 ## Setting up Mobio

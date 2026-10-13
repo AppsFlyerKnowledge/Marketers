@@ -1,6 +1,6 @@
 ---
 title: "App list API for app owners"
-excerpt: "Retrieve active and pending apps associated with your AppsFlyer account using the App List API."
+excerpt: "Retrieve active and pending apps associated with your AppsFlyer account."
 x-zendesk:
   id: 360011999877
   url: https://support.appsflyer.com/hc/en-us/articles/360011999877-App-list-API-for-app-owners
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-08-17T18:07:10Z'
   edited_at: '2026-05-05T06:57:58Z'
 ---
-**At a glance:** Retrieve active and pending apps associated with your AppsFlyer account.
-
 ![mceclip0.png](https://files.readme.io/34b4b3d56ca5d7419830ba26701483f64ebb0a908e1e8e7ed65779bb89a14c67-24507752775313.png)
 
 If you are an ad network, use the [app list for ad networks](/docs/app-list-api-for-ad-networks) API.

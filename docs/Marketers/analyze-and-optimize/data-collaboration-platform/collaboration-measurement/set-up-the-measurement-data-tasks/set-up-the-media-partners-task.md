@@ -1,6 +1,6 @@
 ---
 title: "Set up the Media partners task"
-excerpt: "Learn how to configure and connect media partners like Google Ads and Meta Ads for off-site campaigns in DCP."
+excerpt: "Learn how to configure media partners for off-site campaigns."
 x-zendesk:
   id: 38191067035153
   url: https://support.appsflyer.com/hc/en-us/articles/38191067035153-Set-up-the-Media-partners-task
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-08-18T11:36:01Z'
   edited_at: '2025-08-26T00:01:05Z'
 ---
-At a glance: Learn how to configure media partners for off-site campaigns.
-
 Before you can share eligible conversions with your [off-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#off-site-campaigns) media partners and receive aggregated performance data in response, you must first connect DCP to the media account that activates the campaign. This connection tells AppsFlyer how to send the conversion data to the media partner.
 
 ## Prerequisites

@@ -1,6 +1,6 @@
 ---
 title: "Google Ads (AdWords)—FAQ and discrepancies"
-excerpt: "Troubleshoot common issues, missing installs, in-app event sync, and data discrepancies between Google Ads and AppsFlyer."
+excerpt: "Troubleshoot common issues and discrepancies relating to Google Ads."
 x-zendesk:
   id: 4417303339921
   url: https://support.appsflyer.com/hc/en-us/articles/4417303339921-Google-Ads-AdWords-FAQ-and-discrepancies
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-01-20T10:06:31Z'
   edited_at: '2026-03-16T16:54:16Z'
 ---
-Troubleshoot common issues and discrepancies relating to Google Ads.
-
 ## Google Ads FAQ
 
 ### Why am I not seeing clicks from Google Ads?

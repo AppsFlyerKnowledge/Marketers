@@ -1,6 +1,6 @@
 ---
 title: "Convert your mobile web visitors to app users"
-excerpt: "Learn how to use your mobile website to convert mobile web visitors into new mobile app users with AppsFlyer's web-to-app attribution solutions."
+excerpt: "Use your mobile website to convert mobile web visitors into new mobile app users."
 x-zendesk:
   id: 360001237818
   url: https://support.appsflyer.com/hc/en-us/articles/360001237818-Convert-your-mobile-web-visitors-to-app-users
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-03-19T08:54:10Z'
   edited_at: '2026-09-07T10:17:00Z'
 ---
-**At a glance:** Use your mobile website to convert mobile web visitors into new mobile app users.
-
 ## Mobile web-to-app attribution solutions
 
 ![Web_to_app_.png](https://files.readme.io/deb9ba0dfd18671666e9f06dc27440759844ea365988f80e05ce7ac2817a7299-46646996021777.png)

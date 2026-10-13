@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-06-11T06:13:55Z'
   edited_at: '2026-10-05T06:49:12Z'
 ---
-**At a glance:** Enrich your ability to segment users into relevant groups by adding your data about their characteristics into Audiences.
-
 [![UserAttributionNavigationXL3_us-en.png](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)
 
 ## About user attributes

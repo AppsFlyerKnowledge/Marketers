@@ -1,6 +1,6 @@
 ---
 title: "[Closed beta] Android privacy sandbox - Attribution API"
-excerpt: "A privacy-preserving mechanism designed to measure the effectiveness of ad campaigns without relying on user identifiers."
+excerpt: "A privacy-preserving mechanism designed to measure the effectiveness of ad campaigns without relying on user identifiers. Managed on-device, with last-touch attribution. No user data is exchanged between ad networks, which preserves user privacy."
 x-zendesk:
   id: 25471654983825
   url: https://support.appsflyer.com/hc/en-us/articles/25471654983825--Closed-beta-Android-privacy-sandbox-Attribution-API
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-05-29T10:14:59Z'
   edited_at: '2026-08-19T10:31:42Z'
 ---
-**At a glance:** A privacy-preserving mechanism designed to measure the effectiveness of ad campaigns without relying on user identifiers. Managed on-device, with last-touch attribution. No user data is exchanged between ad networks, which preserves user privacy.
-
 [![53090 Android Privacy Sandbox image for KB (1).png](https://files.readme.io/6d9489a792351c33ed0c5f9669fe8bf998c04c8ab665c016aea4c859cec65fe2-26337856151441.png)](https://files.readme.io/6d9489a792351c33ed0c5f9669fe8bf998c04c8ab665c016aea4c859cec65fe2-26337856151441.png)
 
 ## Introduction

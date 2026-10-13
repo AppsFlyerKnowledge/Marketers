@@ -1,6 +1,6 @@
 ---
 title: "Child-directed apps—FAQ"
-excerpt: "Get answers to frequently asked questions about privacy compliance, SDK tools, and attribution for apps directed towards children."
+excerpt: "Get answers to frequently asked questions about apps directed towards children."
 x-zendesk:
   id: 18324823209745
   url: https://support.appsflyer.com/hc/en-us/articles/18324823209745-Child-directed-apps-FAQ
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-09-05T19:02:32Z'
   edited_at: '2024-01-18T11:25:52Z'
 ---
-**At a glance:** Get answers to frequently asked questions about apps directed towards children.
-
 ## Overview
 
 There are many policies, laws, and regulations on child-directed apps to protect children's privacy. The main ones are [COPPA](https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa) and [GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2029-1-1). In recent years, platforms such as iOS and Android have implemented policies for improved privacy for children. When creating an app, one of the first things to do is determine whether it’s directed to children only or to a mixed audience (both children and adults). Learn from [this guide](https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf) how to implement a compliant attribution solution for apps directed to children.

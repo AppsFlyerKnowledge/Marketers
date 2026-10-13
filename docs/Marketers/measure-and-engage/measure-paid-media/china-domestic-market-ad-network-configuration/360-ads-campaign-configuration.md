@@ -1,6 +1,6 @@
 ---
 title: "360 Ads campaign configuration"
-excerpt: "Learn how to configure the 360 Ads integrated partner settings in AppsFlyer, including integration, attribution links, and permissions."
+excerpt: "360 Ads is an AppsFlyer ad network integrated partner."
 x-zendesk:
   id: 360002152957
   url: https://support.appsflyer.com/hc/en-us/articles/360002152957-360-Ads-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-08-02T05:47:59Z'
   edited_at: '2026-09-15T10:35:24Z'
 ---
-**At a glance:** 360 Ads is an AppsFlyer ad network integrated partner.
-
 ## Setting Up 360 Ads
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.

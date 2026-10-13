@@ -1,6 +1,6 @@
 ---
 title: Google Ads (AdWords)—Create web-based campaigns for mobile apps
-excerpt: "Learn how to set up mobile web campaigns in AppsFlyer and Google Ads to attribute web-to-app conversions using the Google Offline Conversion API."
+excerpt: "Create web campaigns to attribute web-to-app conversions from Google Ads"
 x-zendesk:
   id: 25096718837137
   url: https://support.appsflyer.com/hc/en-us/articles/25096718837137-Google-Ads-AdWords-Create-web-based-campaigns-for-mobile-apps
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-05-16T09:12:15Z'
   edited_at: '2026-10-12T09:30:39Z'
 ---
-Create web campaigns to attribute web-to-app conversions from Google Ads
-
 This article focuses on web campaigns that promote mobile apps. If you want to create campaigns that promote PC or Console apps, see Google Ads Web—Integration for PC and console apps.
 
 ## Overview

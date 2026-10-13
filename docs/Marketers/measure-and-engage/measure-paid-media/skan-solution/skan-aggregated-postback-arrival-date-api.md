@@ -1,6 +1,6 @@
 ---
 title: "SKAN aggregated postback arrival date API"
-excerpt: "Retrieve aggregated SKAdNetwork postbacks via API using the postback arrival date range."
+excerpt: "Aggregated SKAdNetwork postbacks via API. Data is aggregated using postback arrival date."
 x-zendesk:
   id: 360016646557
   url: https://support.appsflyer.com/hc/en-us/articles/360016646557-SKAN-aggregated-postback-arrival-date-API
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-12-21T09:03:09Z'
   edited_at: '2024-09-18T06:25:36Z'
 ---
-Aggregated SKAdNetwork postbacks via API. Data is aggregated using postback arrival date.
-
 ## SKAN aggregated postback arrival date API
 
 The API returns aggregated SKAdNetwork postbacks, using the postback arrival date range.

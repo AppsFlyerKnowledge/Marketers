@@ -1,6 +1,6 @@
 ---
 title: "Enriched Engagement Types guide for ad networks"
-excerpt: "Learn how to create Enriched Engagement Types (EET) attribution links to reflect users' full spectrum of engagement and achieve accurate campaign optimization."
+excerpt: "Learn how to create Enriched Engagement Types (EET) attribution links to reflect users’ full spectrum of engagement and achieve accurate and effective campaign optimization."
 x-zendesk:
   id: 29221265052433
   url: https://support.appsflyer.com/hc/en-us/articles/29221265052433-Enriched-Engagement-Types-guide-for-ad-networks

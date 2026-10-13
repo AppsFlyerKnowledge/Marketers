@@ -1,6 +1,6 @@
 ---
 title: "Integrating Google Ads auto-tagging (gclid) campaign data into PBA"
-excerpt: "Enrich PBA data with auto-tagging gclid campaign information by connecting your Google Ads account to AppsFlyer."
+excerpt: "Enrich PBA data with auto-tagging gclid campaign information by connecting to Google Ads."
 x-zendesk:
   id: 360011487937
   url: https://support.appsflyer.com/hc/en-us/articles/360011487937-Integrating-Google-Ads-auto-tagging-gclid-campaign-data-into-PBA
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-08-02T05:47:05Z'
   edited_at: '2024-08-11T07:08:52Z'
 ---
-**At a glance:** Enrich PBA data with auto-tagging gclid campaign information by connecting to Google Ads.
-
 ![](https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png)
 
 ## Integrating Google Ads campaign data in PBA

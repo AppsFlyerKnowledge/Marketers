@@ -1,6 +1,6 @@
 ---
 title: "Incorporate agency fees into campaign costs"
-excerpt: "Learn how to use AppsFlyer's ROI360 premium feature to add agency percentage fees to campaign costs for accurate total ad spend reporting."
+excerpt: "Agency fee rules are part of the AppsFlyer ROI360 premium feature that enables advertisers to add the percentage fees agencies charge for traffic so they can see the total campaign cost."
 x-zendesk:
   id: 4402103019665
   url: https://support.appsflyer.com/hc/en-us/articles/4402103019665-Incorporate-agency-fees-into-campaign-costs
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-06-03T13:53:23Z'
   edited_at: '2025-08-07T17:10:38Z'
 ---
-**At a glance:** Agency fee rules are part of the AppsFlyer ROI360 premium feature that enables advertisers to add the percentage fees agencies charge for traffic so they can see the total campaign cost.
-
 ## Overview
 
 Agency fee rules are defined by the advertiser (with AppsFlyer account admin privileges) in the rule builder using customized conditions that add fee percentages to the cost of agency campaigns for specific apps and/or media sources.

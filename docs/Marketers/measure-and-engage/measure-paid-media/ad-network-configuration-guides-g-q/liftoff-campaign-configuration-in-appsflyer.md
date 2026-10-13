@@ -1,6 +1,6 @@
 ---
 title: "Liftoff campaign configuration in AppsFlyer"
-excerpt: "Learn how to set up and configure mobile attribution, cost API, SKAdNetwork, and product feed retargeting for Liftoff in AppsFlyer."
+excerpt: "Liftoff, an AppsFlyer ad network integrated partner, is one of the top demand partners for brands and app developers. Liftoff offers click-based and view-through mobile attribution, as well as click-based and view-through retargeting which you can record with AppsFlyer."
 x-zendesk:
   id: 209731633
   url: https://support.appsflyer.com/hc/en-us/articles/209731633-Liftoff-campaign-configuration-in-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-03-28T09:38:23Z'
   edited_at: '2026-09-09T13:05:34Z'
 ---
-**At a glance:** Liftoff, an AppsFlyer ad network integrated partner, is one of the top demand partners for brands and app developers. Liftoff offers click-based and view-through mobile attribution, as well as click-based and view-through retargeting which you can record with AppsFlyer.
-
 ![](https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png)
 
 > 📘 **Important!**

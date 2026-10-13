@@ -1,6 +1,6 @@
 ---
 title: "Data Collaboration Platform (DCP) - Prepare source data for ingestion"
-excerpt: "Learn how to structure and format your source data for the AppsFlyer Data Collaboration Platform (DCP) to maximize match rates and optimize collaboration outcomes."
+excerpt: "Prepare your source data to maximize match rates between collaborator datasets and optimize collaboration outcomes."
 x-zendesk:
   id: 43205325114897
   url: https://support.appsflyer.com/hc/en-us/articles/43205325114897-Data-Collaboration-Platform-DCP-Prepare-source-data-for-ingestion
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2026-01-26T12:08:32Z'
   edited_at: '2026-07-27T10:44:15Z'
 ---
-**At a glance:** Prepare your source data to maximize match rates between collaborator datasets and optimize collaboration outcomes.
-
 ## About data preparation
 
 The AppsFlyer [Data Collaboration Platform (DCP)](/docs/data-collaboration-platform-dcp-guide) is designed to ingest and process large-scale transactional data, user-level data, or a combination of both from multiple collaborators. Once ingested, the DCP can match users across datasets using shared identifiers (for example, hashed email or hashed phone) and enable collaboration workflows based on that data.

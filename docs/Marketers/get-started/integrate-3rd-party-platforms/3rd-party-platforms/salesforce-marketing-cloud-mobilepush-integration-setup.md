@@ -1,6 +1,6 @@
 ---
 title: "Salesforce Marketing Cloud MobilePush integration setup"
-excerpt: "Learn how to integrate Salesforce Marketing Cloud MobilePush with AppsFlyer to drive engagement, gain user insights, and attribute push notification campaigns."
+excerpt: "Salesforce Marketing Cloud MobilePush, an AppsFlyer integrated partner, is a user engagement platform for marketing, growth, and engagement teams."
 x-zendesk:
   id: 10590769196817
   url: https://support.appsflyer.com/hc/en-us/articles/10590769196817-Salesforce-Marketing-Cloud-MobilePush-integration-setup
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-11-14T06:37:05Z'
   edited_at: '2023-09-10T07:54:37Z'
 ---
-Salesforce Marketing Cloud MobilePush, an AppsFlyer integrated partner, is a user engagement platform for marketing, growth, and engagement teams.
-
 ## Overview
 
 Salesforce Marketing Cloud MobilePush allows you to create and send targeted push messages based on cross-channel consumer data. This helps encourage app usage and deliver increased ROI. With MobilePush, you can view how users navigate through your app, from the products they view to the time spent on each page. Integrating MobilePush allows you to:

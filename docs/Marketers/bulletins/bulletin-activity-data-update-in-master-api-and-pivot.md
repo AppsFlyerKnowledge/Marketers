@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Activity data update in Master API and Pivot"
-excerpt: "Master API and Pivot are moving to a new Activity data pipeline to ensure metrics match across all AppsFlyer dashboards and tools."
 table_of_contents: false
 x-zendesk:
   id: 49896622875537

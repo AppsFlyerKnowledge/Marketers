@@ -1,6 +1,6 @@
 ---
 title: "Data collaboration platform (DCP) - Run and manage measurement"
-excerpt: "Learn how to run and manage live or historical measurements in the Data Collaboration Platform (DCP)."
+excerpt: "After you configure on-site or off-site measurement, run it as either a live measurement or a historical measurement. Choose the mode that best matches your goal: measure performance continuously or validate results for a defined period."
 x-zendesk:
   id: 44427723216017
   url: https://support.appsflyer.com/hc/en-us/articles/44427723216017-Data-collaboration-platform-DCP-Run-and-manage-measurement
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2026-03-04T10:59:23Z'
   edited_at: '2026-03-15T17:18:01Z'
 ---
-**At a glance:** After you configure on-site or off-site measurement, run it as either a live measurement or a historical measurement. Choose the mode that best matches your goal: measure performance continuously or validate results for a defined period.
-
 ## About the measurement run modes
 
 After you’ve [configured the on-site or off-site measurement](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-onsite-campaign-measurement), you’re ready to choose how to run the measurement.

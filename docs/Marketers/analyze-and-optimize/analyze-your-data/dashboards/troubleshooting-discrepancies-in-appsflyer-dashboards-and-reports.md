@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting discrepancies in AppsFlyer dashboards and reports"
-excerpt: "Understand why differences and discrepancies occur when comparing data from different AppsFlyer dashboards and reports, primarily due to LTV versus activity data models."
+excerpt: "Understand why there can be differences and discrepancies when comparing data from different dashboards and reports. Often, this may be because data in one place is lifetime value (LTV) data and in another it's activity data. LTV data is related to installs that occurred during a specified date range. Activity data is events that occurred during a specified date range."
 x-zendesk:
   id: 115005600889
   url: https://support.appsflyer.com/hc/en-us/articles/115005600889-Troubleshooting-discrepancies-in-AppsFlyer-dashboards-and-reports
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-11-07T12:42:27Z'
   edited_at: '2025-12-18T00:01:08Z'
 ---
-**At a glance:** Understand why there can be differences and discrepancies when comparing data from different dashboards and reports. Often, this may be because data in one place is lifetime value (LTV) data and in another it's activity data. LTV data is related to installs that occurred during a specified date range. Activity data is events that occurred during a specified date range.
-
 ## About data differences and discrepancies
 
 When comparing data from different dashboards and reports, the general reason for discrepancies is that you may not be comparing the same data to the same data. The following is a quick checklist to help you make sure you're comparing same to same:

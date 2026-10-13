@@ -1,6 +1,6 @@
 ---
 title: "Smart Banners website code implementation for marketers"
-excerpt: "Learn how to implement the AppsFlyer Smart Banners code on your website using Google Tag Manager, Adobe Launch, Shopify, Wix, Squarespace, or WordPress."
+excerpt: "Add the Smart Banners code to your website to convert your website visitors into mobile app users."
 x-zendesk:
   id: 4416119954705
   url: https://support.appsflyer.com/hc/en-us/articles/4416119954705-Smart-Banners-website-code-implementation-for-marketers
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-01-10T11:25:54Z'
   edited_at: '2024-04-25T07:23:35Z'
 ---
-**At a glance:** Add the Smart Banners code to your website to convert your website visitors into mobile app users.
-
 > 🚧 Note
 >
 > AppsFlyer Smart Banner web SDK v1 was deprecated on Nov. 8th, 2023. To show Smart Banners on your website you need to upgrade to v2. [Learn more](/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1)

@@ -1,6 +1,5 @@
 ---
 title: "AppsFlyer Android SDK release notes"
-excerpt: "Check out the SDK release notes for a quick overview of the latest changes to the Android SDK."
 x-zendesk:
   id: 115001256006
   url: https://support.appsflyer.com/hc/en-us/articles/115001256006-AppsFlyer-Android-SDK-release-notes

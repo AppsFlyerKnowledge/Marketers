@@ -1,6 +1,6 @@
 ---
 title: "Upload additional identifiers to Audiences via API"
-excerpt: "Use the Audiences Additional Identifiers API to bulk upload user identifiers from your internal systems to AppsFlyer Audiences."
+excerpt: "Use the Audiences Additional Identifiers API to bulk upload user identifiers from your internal systems (such as BI and CRM) to AppsFlyer Audiences, enabling broader audience communication to relevant partners based on these identifiers."
 x-zendesk:
   id: 4411552670993
   url: https://support.appsflyer.com/hc/en-us/articles/4411552670993-Upload-additional-identifiers-to-Audiences-via-API
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-11-22T14:05:51Z'
   edited_at: '2026-10-05T06:59:12Z'
 ---
-**At a glance:** Use the Audiences Additional Identifiers API to bulk upload user identifiers from your internal systems (such as BI and CRM) to AppsFlyer Audiences, enabling broader audience communication to relevant partners based on these identifiers.
-
 ## About the API
 
 The Audiences Additional Identifiers API can be used to add the following user identifiers from your internal systems to AppsFlyer Audiences:

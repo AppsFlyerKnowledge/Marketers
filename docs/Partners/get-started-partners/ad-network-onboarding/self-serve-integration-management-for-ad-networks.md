@@ -1,6 +1,6 @@
 ---
 title: "Self-serve integration management for ad networks"
-excerpt: "Learn how to set up and manage your attribution links, default postbacks, and Advanced Privacy or SKAN postbacks directly from the AppsFlyer dashboard."
+excerpt: "Set up and manage your integration from the AppsFlyer dashboard."
 x-zendesk:
   id: 360018512658
   url: https://support.appsflyer.com/hc/en-us/articles/360018512658-Self-serve-integration-management-for-ad-networks
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-03-15T10:03:41Z'
   edited_at: '2026-08-13T00:01:05Z'
 ---
-**At a glance**: Set up and manage your integration from the AppsFlyer dashboard.
-
 <Embed title="Self-serve integration management for ad networks" typeOfEmbed="wistia" url="https://fast.wistia.com/embed/iframe/9kvwrhnzjo" providerUrl="https://fast.wistia.com" />
 
 ## **Prerequisites:**

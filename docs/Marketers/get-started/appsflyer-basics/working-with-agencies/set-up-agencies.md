@@ -1,6 +1,6 @@
 ---
 title: "Set up agencies"
-excerpt: "Learn how to set up agency integrations in AppsFlyer, understand the attribution flow, and manage partner deactivation settings."
+excerpt: "Get started working with agencies in AppsFlyer: all the details in this video!"
 table_of_contents: false
 x-zendesk:
   id: 360004013198
@@ -23,8 +23,6 @@ x-zendesk:
   created_at: '2019-12-02T14:01:53Z'
   edited_at: '2025-12-14T14:20:57Z'
 ---
-**At a glance:** Get started working with agencies in AppsFlyer: all the details in this video!
-
 Watch the video below to learn:
 
 - What is the attribution flow when working with agencies?

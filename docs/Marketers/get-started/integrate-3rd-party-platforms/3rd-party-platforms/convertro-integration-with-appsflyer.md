@@ -1,6 +1,6 @@
 ---
 title: "Convertro integration with AppsFlyer"
-excerpt: "Learn how to set up the Convertro integration with AppsFlyer to measure and optimize your marketing performance."
+excerpt: "Convertro, an AppsFlyer integrated partner, strives to be the leading automated tool for marketers to truly understand the performance of their advertising choices and activate upon these insights as quickly as possible. They've built a technology that not only gathers granular information about the customer path to conversion, but is also able to scientifically optimize marketing mix and automatically understand how to shift spend to maximize ROI."
 x-zendesk:
   id: 207040636
   url: https://support.appsflyer.com/hc/en-us/articles/207040636-Convertro-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-12-24T11:37:56Z'
   edited_at: '2026-06-16T10:00:29Z'
 ---
-**At a glance:** Convertro, an AppsFlyer integrated partner, strives to be the leading automated tool for marketers to truly understand the performance of their advertising choices and activate upon these insights as quickly as possible. They've built a technology that not only gathers granular information about the customer path to conversion, but is also able to scientifically optimize marketing mix and automatically understand how to shift spend to maximize ROI.
-
 > 📘 **Important!**
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.

@@ -1,6 +1,6 @@
 ---
 title: "Advanced Privacy guide & postback macros for ad networks"
-excerpt: "A comprehensive guide for ad networks on setting up Advanced Privacy postbacks and understanding data-sharing principles when Advanced Privacy is enabled."
+excerpt: "Data sharing with partners when Advanced Privacy is enabled. Instructions for ad networks on setting up Advanced Privacy postbacks. Note! This article is not related to either SKAdNetwork postbacks nor is it intended for use by advertisers."
 x-zendesk:
   id: 360011316197
   url: https://support.appsflyer.com/hc/en-us/articles/360011316197-Advanced-Privacy-guide-postback-macros-for-ad-networks
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-07-27T07:09:37Z'
   edited_at: '2026-04-19T14:49:32Z'
 ---
-**At a glance:** Data sharing with partners when Advanced Privacy is enabled. Instructions for ad networks on setting up Advanced Privacy postbacks. Note! This article is not related to either SKAdNetwork postbacks nor is it intended for use by advertisers.
-
 > 📘 **Advanced Privacy for Ad Networks news**
 >
 > The Advanced Privacy postback mechanism described in this article works when all of the following are true:

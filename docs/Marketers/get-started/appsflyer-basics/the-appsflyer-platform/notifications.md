@@ -1,6 +1,6 @@
 ---
 title: "Notifications"
-excerpt: "Manage critical AppsFlyer account notifications and configure your preferences from the platform."
+excerpt: "Manage critical AppsFlyer account notifications from the platform."
 x-zendesk:
   id: 33732395637905
   url: https://support.appsflyer.com/hc/en-us/articles/33732395637905-Notifications
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-03-24T10:10:37Z'
   edited_at: '2026-01-25T14:51:04Z'
 ---
-**At a glance:** Manage critical AppsFlyer account notifications from the platform.
-
 You can select to receive notifications from AppsFlyer when certain events occur in your account. In your **notification preferences**, you can opt in or out of receiving these notifications.
 
 ## Accessing and configuring notification preferences

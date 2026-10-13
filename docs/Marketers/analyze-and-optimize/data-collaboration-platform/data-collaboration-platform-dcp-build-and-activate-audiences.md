@@ -1,6 +1,6 @@
 ---
 title: "Data Collaboration Platform (DCP) - Build and activate audiences"
-excerpt: "Learn how to build high-value audience segments in DCP collaborations using shared data and activate them on media partner sites or cloud services."
+excerpt: "Build high-value audiences in DCP collaborations using shared data and activate them on media partner sites or cloud services for maximum campaign impact."
 x-zendesk:
   id: 24522739719057
   url: https://support.appsflyer.com/hc/en-us/articles/24522739719057-Data-Collaboration-Platform-DCP-Build-and-activate-audiences
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-04-25T12:55:13Z'
   edited_at: '2026-07-28T11:30:35Z'
 ---
-**At a glance:** Build high-value audiences in DCP collaborations using shared data and activate them on media partner sites or cloud services for maximum campaign impact.
-
 ## About DCP audiences
 
 Build audiences in a DCP collaboration by combining datasets to create enriched audience segments and reach specific consumer groups. Audiences can be based on one collaborator's data or on intersecting users across both collaborators' datasets, based on the permissions defined by the data source owner. After an audience is built, it can be sent to media partners for activation or to a cloud storage bucket.

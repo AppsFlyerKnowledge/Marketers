@@ -1,6 +1,6 @@
 ---
 title: "[Legacy] Set up organic search attribution"
-excerpt: "Learn how to configure organic search attribution to attribute mobile app opens from organic web searches to your configured media source."
+excerpt: "Get detailed organic search attribution data so you can optimize organic conversions. See our updated organic search attribution method ."
 x-zendesk:
   id: 210195193
   url: https://support.appsflyer.com/hc/en-us/articles/210195193--Legacy-Set-up-organic-search-attribution

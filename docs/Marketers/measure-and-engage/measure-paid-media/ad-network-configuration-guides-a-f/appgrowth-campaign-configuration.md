@@ -1,6 +1,6 @@
 ---
 title: "Appgrowth campaign configuration"
-excerpt: "Learn how to configure Appgrowth, an integrated partner in AppsFlyer, to set up attribution links, postbacks, cost APIs, and permissions."
+excerpt: "Appgrowth, an AppsFlyer ad network integrated partner, is a producer of original content for mobile app growth professionals. In addition to click-based mobile attribution, Appgrowth also offers view-through attribution, which you can record with AppsFlyer."
 x-zendesk:
   id: 360000068905
   url: https://support.appsflyer.com/hc/en-us/articles/360000068905-Appgrowth-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-01-21T15:13:54Z'
   edited_at: '2026-09-09T12:33:57Z'
 ---
-Appgrowth, an AppsFlyer ad network integrated partner, is a producer of original content for mobile app growth professionals. In addition to click-based mobile attribution, Appgrowth also offers view-through attribution, which you can record with AppsFlyer.
-
 ## Setting up Appgrowth
 
 > 📘 Prerequisite

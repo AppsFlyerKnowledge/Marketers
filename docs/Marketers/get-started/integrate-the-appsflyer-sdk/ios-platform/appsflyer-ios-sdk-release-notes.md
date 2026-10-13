@@ -1,6 +1,5 @@
 ---
 title: "AppsFlyer iOS SDK release notes"
-excerpt: "The SDK release notes provide a quick overview of the latest changes, deprecations, and end-of-support dates for the AppsFlyer iOS SDK."
 x-zendesk:
   id: 115001224823
   url: https://support.appsflyer.com/hc/en-us/articles/115001224823-AppsFlyer-iOS-SDK-release-notes

@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Push API Update: Changes to “Message Fields” Selection Behavior"
-excerpt: "Important update regarding changes to the AppsFlyer Push API configuration setting for selecting all fields, effective December 30, 2025."
 table_of_contents: false
 x-zendesk:
   id: 41785747996689

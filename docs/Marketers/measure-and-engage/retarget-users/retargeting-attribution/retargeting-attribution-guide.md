@@ -1,6 +1,6 @@
 ---
 title: "Retargeting attribution guide"
-excerpt: "Retargeting campaigns motivate users to open and re-engage with an app, or cause users who deleted the app to reinstall it."
+excerpt: "Retargeting (remarketing) campaigns motivate users to open and re-engage with the app or cause users who deleted the app to reinstall it."
 x-zendesk:
   id: 207033786
   url: https://support.appsflyer.com/hc/en-us/articles/207033786-Retargeting-attribution-guide
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-09-30T13:18:26Z'
   edited_at: '2026-03-28T16:48:19Z'
 ---
-**At a glance:** Retargeting (remarketing) campaigns motivate users to open and re-engage with the app or cause users who deleted the app to reinstall it.
-
 ## Retargeting fundamentals
 
 Retargeting attribution occurs when a user engages with a retargeting campaign by clicking on a [retargeting attribution link](/docs/retargeting-attribution-guide#retargeting-attribution-links) or [deep link](/docs/create-a-onelink-template). This results in one of the following attribution events:

@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-11-09T10:17:47Z'
   edited_at: '2026-09-23T12:20:18Z'
 ---
-Learn how re-attributions and re-engagements reflect in the conversion data for SRNs and non-SRN user journeys.
-
 ## Retargeting conversion
 
 Retargeting includes two types of conversions, re-attribution or re-engagement.

@@ -1,6 +1,6 @@
 ---
 title: "Data Locker for partners"
-excerpt: "Data Locker for partners delivers app data to the partner's storage in AWS, GCS, or BigQuery based on advertiser permissions."
+excerpt: "Data Locker for partners (ad networks and agencies) delivers app data to the partner's storage in AWS, GCS, or BigQuery."
 x-zendesk:
   id: 360020818517
   url: https://support.appsflyer.com/hc/en-us/articles/360020818517-Data-Locker-for-partners
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-05-28T15:37:04Z'
   edited_at: '2025-06-05T13:56:06Z'
 ---
-At a glance: Data Locker for partners (ad networks and agencies) delivers app data to the partner's storage in AWS, GCS, or BigQuery.
-
 ![6133DataLockerForPartners.png](https://files.readme.io/f6cad12250fe07cf2b0a12b64eeaa597c83527b4b4e09aea11cc2a52ab53339b-4637680455313.png)
 
 ## Data Locker for partners

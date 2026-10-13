@@ -1,6 +1,6 @@
 ---
 title: "Partner Integrations"
-excerpt: "Discover, review, activate, and manage partner integrations such as ad networks, agencies, and analytics platforms from one central place in AppsFlyer."
+excerpt: "Discover, review, activate, and manage partner integrations (ad networks, agencies, tech partners, analytics platforms, and more) from one central place in AppsFlyer."
 x-zendesk:
   id: 9960361873809
   url: https://support.appsflyer.com/hc/en-us/articles/9960361873809-Partner-Integrations
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-10-18T19:06:54Z'
   edited_at: '2026-05-03T13:55:35Z'
 ---
-**At a glance**: Discover, review, activate, and manage partner integrations (ad networks, agencies, tech partners, analytics platforms, and more) from one central place in AppsFlyer.
-
 <Embed title="Partners Integration I Product tour" typeOfEmbed="youtube" url="https://www.youtube.com/embed/gADoRdje5z8" />
 
 ## About partner integrations

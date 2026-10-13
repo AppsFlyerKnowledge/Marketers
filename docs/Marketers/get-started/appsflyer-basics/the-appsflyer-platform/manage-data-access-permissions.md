@@ -1,6 +1,6 @@
 ---
 title: "Manage data access permissions"
-excerpt: "Understand how data access and feature availability in AppsFlyer are determined by account types, roles, and specific permissions."
+excerpt: "The ability to access data and features in AppsFlyer depends on team member account type, individual team member permissions, and account permissions."
 x-zendesk:
   id: 115005972889
   url: https://support.appsflyer.com/hc/en-us/articles/115005972889-Manage-data-access-permissions
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-01-08T11:33:39Z'
   edited_at: '2025-11-26T09:07:05Z'
 ---
-At a glance: The ability to access data and features in AppsFlyer depends on team member account type, individual team member permissions, and account permissions.
-
 ## Access to data by account type
 
 Advertisers, ad networks, and agencies have access to data according to their account type:

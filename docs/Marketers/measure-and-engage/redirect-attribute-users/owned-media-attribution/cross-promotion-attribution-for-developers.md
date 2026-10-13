@@ -1,6 +1,6 @@
 ---
 title: "Cross-promotion attribution for developers"
-excerpt: "Learn how to implement cross-promotion attribution in the AppsFlyer SDK for Android, iOS, Unity, and non-native platforms."
+excerpt: "Implement additional code in the AppsFlyer SDK to enable cross-promotion attribution."
 x-zendesk:
   id: 4410480466065
   url: https://support.appsflyer.com/hc/en-us/articles/4410480466065-Cross-promotion-attribution-for-developers
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-11-09T09:21:34Z'
   edited_at: '2026-08-14T16:22:55Z'
 ---
-Implement additional code in the AppsFlyer SDK to enable cross-promotion attribution.
-
 ## Implementing cross-promotion attribution in the SDK
 
 > 📘 Note

@@ -1,6 +1,6 @@
 ---
 title: "About link structure and parameters"
-excerpt: "Learn about the AppsFlyer attribution link structure, parameters, and levels of data granularity."
+excerpt: "Learn about the AppsFlyer attribution link structure and parameters."
 x-zendesk:
   id: 207447163
   url: https://support.appsflyer.com/hc/en-us/articles/207447163-About-link-structure-and-parameters
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-12-24T11:50:00Z'
   edited_at: '2026-08-13T10:48:12Z'
 ---
-**At a glance:**  Learn about the AppsFlyer attribution link structure and parameters.
-
 ## Overview
 
 Attribution links allow advertisers to collect data about user engagement with an ad. Attribution links are placed behind ads and notify AppsFlyer when users engage with an ad. The engagement can occur via a click on an ad or when a user views an ad impression. A copy of the attribution URL is sent to AppsFlyer.

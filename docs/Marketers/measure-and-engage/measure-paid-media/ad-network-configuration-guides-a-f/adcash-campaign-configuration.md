@@ -1,6 +1,6 @@
 ---
 title: "Adcash campaign configuration"
-excerpt: "Learn how to configure the Adcash integration in AppsFlyer, including setting up postbacks, attribution links, and partner permissions."
+excerpt: "Adcash, an AppsFlyer ad network integrated partner, is a worldwide advertising platform providing a fully programmable self-service demand-side platform."
 x-zendesk:
   id: 216519003
   url: https://support.appsflyer.com/hc/en-us/articles/216519003-Adcash-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-11-06T08:15:21Z'
   edited_at: '2026-07-23T13:13:54Z'
 ---
-Adcash, an AppsFlyer ad network integrated partner, is a worldwide advertising platform providing a fully programmable self-service demand-side platform.
-
 ## Setting up Adcash
 
 > 📘 Prerequisite

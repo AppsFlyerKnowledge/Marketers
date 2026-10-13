@@ -1,6 +1,5 @@
 ---
 title: "[Legacy] OneLink Smart Script V1 setup"
-excerpt: "Set up OneLink Smart Script V1 to convert and attribute your mobile website visitors, coming from any source, into mobile app users."
 x-zendesk:
   id: 4415354290321
   url: https://support.appsflyer.com/hc/en-us/articles/4415354290321--Legacy-OneLink-Smart-Script-V1-setup

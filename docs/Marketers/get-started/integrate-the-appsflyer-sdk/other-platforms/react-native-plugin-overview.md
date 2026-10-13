@@ -1,6 +1,6 @@
 ---
 title: "React Native plugin overview"
-excerpt: "Integrate the AppsFlyer SDK into your React Native iOS and Android apps to measure installs, in-app events, and media sources."
+excerpt: "Integrate AppsFlyer SDK into iOS/Android apps developed with React Native to measure installs, in-app events, media sources, and more."
 table_of_contents: false
 x-zendesk:
   id: 217108646
@@ -23,8 +23,6 @@ x-zendesk:
   created_at: '2016-11-22T06:25:19Z'
   edited_at: '2023-11-09T16:07:04Z'
 ---
-**At a glance:** Integrate AppsFlyer SDK into iOS/Android apps developed with React Native to measure installs, in-app events, media sources, and more.
-
 > ❗️ Important!
 >
 > * The plugin is open-source and available on [GitHub](https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin).

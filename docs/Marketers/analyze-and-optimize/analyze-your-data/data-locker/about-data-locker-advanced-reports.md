@@ -1,6 +1,6 @@
 ---
 title: "About Data Locker Advanced Reports"
-excerpt: "Advanced Reports deliver consolidated, typed, and consistently named event-level data across mobile, web, and connected TV (CTV) platforms in a single report."
+excerpt: "Advanced Reports deliver consolidated, typed, and consistently named event-level data across mobile, web, and connected TV (CTV) platforms in a single report, so you can spend less time preparing data and more time using it."
 x-zendesk:
   id: 45424430660497
   url: https://support.appsflyer.com/hc/en-us/articles/45424430660497-About-Data-Locker-Advanced-Reports
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2026-04-04T10:49:27Z'
   edited_at: '2026-09-03T15:20:32Z'
 ---
-Advanced Reports deliver consolidated, typed, and consistently named event-level data across mobile, web, and connected TV (CTV) platforms in a single report, so you can spend less time preparing data and more time using it.
-
 <Embed title="Date Locker Advanced Reports I Product tour" typeOfEmbed="youtube" url="https://www.youtube.com/embed/0Myz1hxZJH0" />
 
 ## About Advanced Reports

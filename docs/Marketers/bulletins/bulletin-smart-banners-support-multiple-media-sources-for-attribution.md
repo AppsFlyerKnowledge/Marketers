@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Smart Banners support multiple media sources for attribution"
-excerpt: "Smart Banner settings now allow you to choose multiple media source types for attribution, providing greater flexibility for web-to-app URLs."
 table_of_contents: false
 x-zendesk:
   id: 4406100924689

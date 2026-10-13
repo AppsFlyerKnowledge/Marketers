@@ -1,6 +1,6 @@
 ---
 title: "SSO authentication—Overview and FAQ"
-excerpt: "Learn about single sign-on (SSO) authentication and the process of logging in to AppsFlyer via your identity provider (IdP) using SSO."
+excerpt: "Learn about single sign-on (SSO) authentication and the process of logging in to AppsFlyer via with your identity provider (IdP) using SSO. Find answers to FAQs about SSO login."
 x-zendesk:
   id: 27434547337617
   url: https://support.appsflyer.com/hc/en-us/articles/27434547337617-SSO-authentication-Overview-and-FAQ
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-08-11T07:54:46Z'
   edited_at: '2025-01-27T00:01:02Z'
 ---
-At a glance: Learn about single sign-on (SSO) authentication and the process of logging in to AppsFlyer via with your identity provider (IdP) using SSO. Find answers to FAQs about SSO login.
-
 ## What is SSO authentication?
 
 SSO is an authentication method that allows users to access multiple independent apps, systems, or platforms by logging in once via your identity provider (for example, Okta, Azure AD, or OneLogin). Adding AppsFlyer to your IdP lets your users sign into AppsFlyer directly from your IdP by a single sign-on (SSO) process. This lets your users sign in automatically with more **secure authentication** using only one set of credentials.

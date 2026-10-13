@@ -1,6 +1,6 @@
 ---
 title: "Meta Ads— Create web-based campaigns"
-excerpt: "Learn how to set up Meta Ads Web campaigns to attribute web-to-app conversions from Meta Ads using AppsFlyer's integration."
+excerpt: "Use Meta Ads Web campaigns to attribute web-to-app conversions from Meta Ads"
 x-zendesk:
   id: 25646834966033
   url: https://support.appsflyer.com/hc/en-us/articles/25646834966033-Meta-Ads-Create-web-based-campaigns
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-06-04T16:08:28Z'
   edited_at: '2026-09-15T10:56:07Z'
 ---
-**At a glance:** Use Meta Ads Web campaigns to attribute web-to-app conversions from Meta Ads
-
 ## Overview
 
 AppsFlyer supports integration with Meta Ads (`metaweb_int`) for User Acquisition web-based campaigns, allowing you to report attribution and conversion data directly through Meta's Conversion API (CAPI). Meta can then utilize this data to optimize ad targeting, measure performance, and build custom audiences.

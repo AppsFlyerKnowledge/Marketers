@@ -1,6 +1,6 @@
 ---
 title: "Windows SDK integration for developers"
-excerpt: "Learn how to integrate the AppsFlyer SDK into your Windows apps and games to measure installs, in-app events, and media sources."
+excerpt: "Add AppsFlyer to Windows apps and games to measure app installs, in-app events, media sources, and more."
 x-zendesk:
   id: 207032026
   url: https://support.appsflyer.com/hc/en-us/articles/207032026-Windows-SDK-integration-for-developers
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-05-07T12:17:52Z'
   edited_at: '2026-05-25T10:09:27Z'
 ---
-**At a glance:** Add AppsFlyer to Windows apps and games to measure app installs, in-app events, media sources, and more.
-
 **Current Version: 3.1.0 (17/12/2023)**
 
 The AppsFlyer SDK provides app installation and event recording functionality.

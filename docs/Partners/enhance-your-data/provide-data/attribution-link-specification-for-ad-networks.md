@@ -1,6 +1,6 @@
 ---
 title: "Attribution link specification for ad networks"
-excerpt: "Learn how ad networks integrate with AppsFlyer by specifying and structuring their attribution links to notify AppsFlyer of user ad engagements."
+excerpt: "Ad networks integrating with AppsFlyer specify their attribution link according to this article."
 x-zendesk:
   id: 4412938154513
   url: https://support.appsflyer.com/hc/en-us/articles/4412938154513-Attribution-link-specification-for-ad-networks
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-12-06T10:31:00Z'
   edited_at: '2024-09-22T11:01:40Z'
 ---
-**At a glance:** Ad networks integrating with AppsFlyer specify their attribution link according to this article.
-
 ## Attribution links for ad networks
 
 Attribution links are used to notify AppsFlyer that a user engaged with an ad by clicking it. In its simplest form, the attribution link is placed behind an ad so that when a user clicks on an ad they are clicking on an attribution link.

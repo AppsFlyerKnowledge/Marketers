@@ -1,6 +1,6 @@
 ---
 title: "iOS platform"
-excerpt: "Access iOS SDK release notes, Apple App Clips integration guides, and other iOS platform-related topics."
+excerpt: "iOS SDK release notes, Apple App Clips integration, and other iOS platform-related topics"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,21 +18,20 @@ iOS SDK release notes, Apple App Clips integration, and other iOS platform-relat
 
 <Cards>
   <Card title="AppsFlyer iOS SDK release notes" href="/docs/appsflyer-ios-sdk-release-notes" icon="fa-solid fa-bullhorn">
-    Read the latest updates, improvements, and fixes in the AppsFlyer iOS SDK.
   </Card>
   <Card title="Updating to iOS SDK V6 and plugins" href="/docs/updating-to-ios-sdk-v6-and-plugins" icon="fa-solid fa-code">
-    Learn how to upgrade your integration to iOS SDK V6 and its associated plugins.
+    Update an existing AppsFlyer iOS SDK/wrapper integration to iOS SDK V6.
   </Card>
   <Card title="Apple App Clips integration guide" href="/docs/apple-app-clips-integration-guide" icon="fa-solid fa-mobile">
-    Step-by-step instructions for integrating AppsFlyer with Apple App Clips.
+    App Clips lets users with iOS 14 or later quickly access and experience your app. AppsFlyer enables App Clip attribution, and redirects users who can't use App Clips (for example, Android users) as needed.
   </Card>
   <Card title="Finding the Apple bundle ID" href="/docs/finding-the-apple-bundle-id" icon="fa-solid fa-mobile">
-    Locate your Apple bundle identifier for app configuration and setup.
+    Find the Apple bundle ID and use it as needed.
   </Card>
   <Card title="Testing tvOS integration before publishing" href="/docs/testing-tvos-integration-before-publishing" icon="fa-solid fa-vial">
-    Verify and test your tvOS app integration prior to submitting to the App Store.
+    Simulate a non-organic install from your AppleTV device using the tvOS Test App.
   </Card>
   <Card title="URI scheme fallback for iOS" href="/docs/uri-scheme-fallback-for-ios" icon="fa-solid fa-mobile">
-    Configure URI scheme fallbacks to handle deep linking scenarios on iOS.
+    Understand the flow when a user with an iOS device clicks on a OneLink custom link and Universal Links fails to open the app.
   </Card>
 </Cards>

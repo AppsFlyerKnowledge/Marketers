@@ -1,6 +1,6 @@
 ---
 title: "Finding the Apple bundle ID"
-excerpt: "Learn how to locate your unique iOS app identifier within your iTunes Connect account."
+excerpt: "Find the Apple bundle ID and use it as needed."
 table_of_contents: false
 x-zendesk:
   id: 360013555718
@@ -23,10 +23,6 @@ x-zendesk:
   created_at: '2020-09-21T09:03:32Z'
   edited_at: '2026-08-18T09:08:36Z'
 ---
-> 👍 At a glance
->
-> Find the Apple bundle ID and use it as needed.
-
 The Apple bundle ID is a unique identifier associated with iOS apps.
 
 * App owners set this ID

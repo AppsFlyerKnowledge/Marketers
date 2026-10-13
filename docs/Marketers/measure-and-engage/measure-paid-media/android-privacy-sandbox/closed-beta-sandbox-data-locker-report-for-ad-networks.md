@@ -1,6 +1,5 @@
 ---
 title: "[Closed beta] Sandbox Data Locker report for ad networks"
-excerpt: "Learn about Sandbox raw data reports for ad networks, including report formats, structures, and how to access them via Data Locker."
 x-zendesk:
   id: 28637170445073
   url: https://support.appsflyer.com/hc/en-us/articles/28637170445073--Closed-beta-Sandbox-Data-Locker-report-for-ad-networks

@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Adding a priority queue to the Android SDK"
-excerpt: "Learn about the priority queue changes introduced in Android SDK version 6.7.0 to ensure in-app events are sent in the correct order."
 table_of_contents: false
 x-zendesk:
   id: 6971914107025

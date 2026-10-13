@@ -1,8 +1,6 @@
 ---
 title: About ROI360 store revenue
-excerpt: >-
-  ROI360 store revenue is AppsFlyer's premium solution for complete and accurate
-  measurement of revenue from in-app purchases and subscriptions.
+excerpt: "Use ROI360 store revenue to validate in-app purchases and subscriptions, prevent duplicates, and calculate net revenue."
 x-zendesk:
   id: 42138855425297
   url: https://support.appsflyer.com/hc/en-us/articles/42138855425297-About-ROI360-store-revenue
@@ -24,8 +22,6 @@ x-zendesk:
   created_at: '2025-12-21T16:34:39Z'
   edited_at: '2026-10-05T09:07:40Z'
 ---
-**At a glance:** Use ROI360 store revenue to validate in-app purchases and subscriptions, prevent duplicates, and calculate net revenue.
-
 > 📘 **Important!**
 >
 > ROI360 store revenue is available only to customers on the ROI360 premium plan. To check your plan or upgrade, contact your Customer Success Manager (CSM).

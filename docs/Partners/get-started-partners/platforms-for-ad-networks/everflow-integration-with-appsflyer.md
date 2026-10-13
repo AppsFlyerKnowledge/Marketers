@@ -1,6 +1,6 @@
 ---
 title: "Everflow integration with AppsFlyer"
-excerpt: "Learn how to integrate Everflow with AppsFlyer, create attribution links, and configure install and in-app event postbacks."
+excerpt: "Everflow is an AppsFlyer integrated partner. AppsFlyer sends attribution data to Everflow for installs and in-app events."
 x-zendesk:
   id: 115005709185
   url: https://support.appsflyer.com/hc/en-us/articles/115005709185-Everflow-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-11-21T07:36:24Z'
   edited_at: '2026-04-19T12:54:10Z'
 ---
-**At a glance:** Everflow is an AppsFlyer integrated partner. AppsFlyer sends attribution data to Everflow for installs and in-app events.
-
 ## Initiating the integration with AppsFlyer
 
 **To initiate the integration with AppsFlyer:**

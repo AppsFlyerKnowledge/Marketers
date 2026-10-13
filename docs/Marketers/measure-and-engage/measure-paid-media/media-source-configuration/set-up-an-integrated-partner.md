@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-11-08T08:02:46Z'
   edited_at: '2026-08-31T11:29:22Z'
 ---
-**At a glance:** Enable attribution measurement, send postbacks to partners, and enable other integration features by setting up the partner connection with AppsFlyer.
-
 ## Overview
 
 Partners, media sources, and third-party platforms integrate with AppsFlyer by API. This article contains the generic instructions to activate and set up the integration, including generating attribution links for non-SRN ad networks.

@@ -1,6 +1,6 @@
 ---
 title: "Appnexus integration with AppsFlyer"
-excerpt: "Learn how to integrate AppNexus with AppsFlyer, configure attribution links, and set up install and in-app event postbacks."
+excerpt: "Ad networks that use Affise can utilize the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events."
 x-zendesk:
   id: 207583523
   url: https://support.appsflyer.com/hc/en-us/articles/207583523-Appnexus-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-01-11T14:45:34Z'
   edited_at: '2024-12-23T15:08:44Z'
 ---
-Ad networks that use Affise can utilize the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events.
-
 ## Starting the integration
 
 To start the integration you must send AppsFlyer both the attribution link and the postback for reporting purposes.

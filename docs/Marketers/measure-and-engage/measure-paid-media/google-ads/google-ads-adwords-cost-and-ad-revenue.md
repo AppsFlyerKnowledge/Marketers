@@ -1,6 +1,6 @@
 ---
 title: "Google Ads (AdWords)—Cost and ad revenue"
-excerpt: "Learn how to enable and configure Google Ads cost and ad revenue data integration in AppsFlyer."
+excerpt: "Enable Google Ads cost and ad revenue data in AppsFlyer."
 x-zendesk:
   id: 4417309205521
   url: https://support.appsflyer.com/hc/en-us/articles/4417309205521-Google-Ads-AdWords-Cost-and-ad-revenue
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-01-20T10:01:42Z'
   edited_at: '2026-08-19T06:49:25Z'
 ---
-Enable Google Ads cost and ad revenue data in AppsFlyer.
-
 ## Cost, clicks, and impressions
 
 The cost integration provides the following aggregated data:

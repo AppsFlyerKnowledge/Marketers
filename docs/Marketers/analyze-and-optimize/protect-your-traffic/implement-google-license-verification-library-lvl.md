@@ -1,6 +1,6 @@
 ---
 title: "Implement Google License Verification Library (LVL)"
-excerpt: "Protect your Android apps against unauthorized use by integrating the Google License Verification Library to verify installs from real Google Play users."
+excerpt: "Protect your apps against unauthorized use by adding the Google License Verification Library (LVL) to handle all license-related communication with Google Play."
 x-zendesk:
   id: 17329535522961
   url: https://support.appsflyer.com/hc/en-us/articles/17329535522961-Implement-Google-License-Verification-Library-LVL

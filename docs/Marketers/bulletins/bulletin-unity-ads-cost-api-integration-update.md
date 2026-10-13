@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Unity Ads cost API integration update"
-excerpt: "Learn how to update your Unity Ads cost API integration in AppsFlyer with the new credentials required before the October 1, 2024 sunset date."
 x-zendesk:
   id: 26078530790289
   url: https://support.appsflyer.com/hc/en-us/articles/26078530790289-Bulletin-Unity-Ads-cost-API-integration-update

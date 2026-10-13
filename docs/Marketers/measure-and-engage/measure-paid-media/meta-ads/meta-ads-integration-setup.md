@@ -1,6 +1,6 @@
 ---
 title: "Meta Ads—integration setup"
-excerpt: "Learn how to integrate Meta ads with AppsFlyer to attribute mobile app installations, configure advanced settings, and map in-app events."
+excerpt: "Learn about integrating Meta ads with AppsFlyer."
 x-zendesk:
   id: 207033826
   url: https://support.appsflyer.com/hc/en-us/articles/207033826-Meta-Ads-integration-setup
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2013-01-24T20:13:58Z'
   edited_at: '2026-09-09T13:34:51Z'
 ---
-**At a glance:** Learn about integrating Meta ads with AppsFlyer.
-
 ## Meta ads setup guide
 
 How long does it take to start attributing your Meta ads mobile app ads with AppsFlyer?

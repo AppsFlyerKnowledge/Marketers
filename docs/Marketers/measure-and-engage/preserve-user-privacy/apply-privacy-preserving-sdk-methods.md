@@ -1,6 +1,6 @@
 ---
 title: "Apply privacy-preserving SDK methods"
-excerpt: "Learn how to protect user privacy and control data sharing using the AppsFlyer SDK's start/stop, sharing filter, anonymization, and identifier removal methods."
+excerpt: "Preserve the privacy of your users with one or more of the methods available through the AppsFlyer SDK."
 x-zendesk:
   id: 360001422989
   url: https://support.appsflyer.com/hc/en-us/articles/360001422989-Apply-privacy-preserving-SDK-methods
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-08-20T11:14:36Z'
   edited_at: '2026-08-14T16:22:41Z'
 ---
-Preserve the privacy of your users with one or more of the methods available through the AppsFlyer SDK.
-
 > 📘 Note
 >
 > The information presented in this article is intended solely to provide insight into the methods available to app developers for controlling the sharing of user-related data with app owners, ad networks, and social networks. **This article does not include or constitute guidance on compliance with privacy regulations such as COPPA or GDPR or any specific privacy-preserving regulations.**

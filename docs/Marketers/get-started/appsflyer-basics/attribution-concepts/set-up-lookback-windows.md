@@ -1,6 +1,6 @@
 ---
 title: "Set up lookback windows"
-excerpt: "Customize the click-through and view-through lookback windows based on your agreements with media sources."
+excerpt: "Customize the click-through and view-through lookback windows, based on your agreements with media sources."
 x-zendesk:
   id: 208338403
   url: https://support.appsflyer.com/hc/en-us/articles/208338403-Set-up-lookback-windows
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-03-07T09:27:55Z'
   edited_at: '2026-07-13T14:30:13Z'
 ---
-**At a glance:** Customize the click-through and view-through lookback windows, based on your agreements with media sources.
-
 ## Lookback windows
 
 Configurable attribution lookback window allows you to customize the attribution period based on your agreement with media sources.

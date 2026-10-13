@@ -1,6 +1,6 @@
 ---
 title: "Onboarding guide to People-Based Attribution"
-excerpt: "Learn how to set up AppsFlyer's People-Based Attribution (PBA) to measure and analyze customer journeys across web and mobile properties."
+excerpt: "PBA setup checklist"
 x-zendesk:
   id: 360013821097
   url: https://support.appsflyer.com/hc/en-us/articles/360013821097-Onboarding-guide-to-People-Based-Attribution

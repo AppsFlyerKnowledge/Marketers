@@ -1,6 +1,6 @@
 ---
 title: "Creative Optimization ETL reporting"
-excerpt: "Creative Optimization ETL streams your creative performance data to cloud storage daily for direct loading into your business intelligence systems."
+excerpt: "Creative Optimization ETL streams your creative performance data to cloud storage daily for direct loading into your business intelligence (BI) systems, with no manual exports needed. Choose between Standard Creative ETL , which delivers a fixed report structure, and Custom Creative ETL , which lets you choose exactly which dimensions, metrics, and events to include."
 x-zendesk:
   id: 19253873174801
   url: https://support.appsflyer.com/hc/en-us/articles/19253873174801-Creative-Optimization-ETL-reporting
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-10-10T14:33:17Z'
   edited_at: '2026-07-06T07:18:48Z'
 ---
-**At a glance:** Creative Optimization ETL streams your creative performance data to cloud storage daily for direct loading into your business intelligence (BI) systems, with no manual exports needed. Choose between **Standard Creative ETL**, which delivers a fixed report structure, and **Custom Creative ETL**, which lets you choose exactly which dimensions, metrics, and events to include.
-
 ## About Creative Optimization ETL reporting
 
 Creative Optimization ETL automatically streams your creative performance data to cloud storage daily, making it available for programmatic loading into your BI systems. Two options are available depending on your needs and subscription plan.

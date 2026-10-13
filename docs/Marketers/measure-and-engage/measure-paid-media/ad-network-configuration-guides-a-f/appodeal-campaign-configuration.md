@@ -1,6 +1,6 @@
 ---
 title: "Appodeal campaign configuration"
-excerpt: "Learn how to set up AppsFlyer integration with Appodeal for click attribution and user-level ad revenue attribution."
+excerpt: "Appodeal, an AppsFlyer integrated partner, provides app owners with click attribution and an all-in-one ad monetization solution. Ad revenue is reported with user-level granularity."
 x-zendesk:
   id: 360004404977
   url: https://support.appsflyer.com/hc/en-us/articles/360004404977-Appodeal-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-12-17T19:36:02Z'
   edited_at: '2026-06-16T09:48:54Z'
 ---
-**At a glance:** Appodeal, an AppsFlyer integrated partner, provides app owners with click attribution and an all-in-one ad monetization solution. Ad revenue is reported with user-level granularity.
-
 ## Setting up Appodeal integration
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/appodeal.png)

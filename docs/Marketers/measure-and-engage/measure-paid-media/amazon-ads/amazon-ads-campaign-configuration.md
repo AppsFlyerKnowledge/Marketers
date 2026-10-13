@@ -1,6 +1,5 @@
 ---
 title: "Amazon Ads campaign configuration"
-excerpt: "Configure Amazon Ads with AppsFlyer to measure click and view-based attribution for TV, tablet, and mobile devices."
 x-zendesk:
   id: 11904659502737
   url: https://support.appsflyer.com/hc/en-us/articles/11904659502737-Amazon-Ads-campaign-configuration

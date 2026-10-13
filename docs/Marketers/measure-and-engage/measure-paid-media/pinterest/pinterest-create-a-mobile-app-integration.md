@@ -1,6 +1,6 @@
 ---
 title: "Pinterest—Create a mobile app integration"
-excerpt: "Learn how to set up and configure Pinterest mobile app integration with AppsFlyer, including attribution, cost, and in-app event postbacks."
+excerpt: "Pinterest, an AppsFlyer integrated partner, is one of the top contributors of traffic for bloggers and brands. Pinterest offers both click-based and view-through mobile attribution. In addition, Pinterest also offers click-based retargeting which you can record with AppsFlyer."
 x-zendesk:
   id: 216912786
   url: https://support.appsflyer.com/hc/en-us/articles/216912786-Pinterest-Create-a-mobile-app-integration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-11-09T12:51:03Z'
   edited_at: '2026-09-09T13:05:01Z'
 ---
-Pinterest, an AppsFlyer integrated partner, is one of the top contributors of traffic for bloggers and brands. Pinterest offers both click-based and view-through mobile attribution. In addition, Pinterest also offers click-based retargeting which you can record with AppsFlyer.
-
 > 📘 Note
 >
 > * After accepting Pinterest Ad Terms, accept Pinterest Mobile Measurement Terms & Conditions [here](https://ads.pinterest.com/terms/app_install/).

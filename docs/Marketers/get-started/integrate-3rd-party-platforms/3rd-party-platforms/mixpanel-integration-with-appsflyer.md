@@ -1,6 +1,6 @@
 ---
 title: "Mixpanel integration with AppsFlyer"
-excerpt: "Learn how to automatically share acquisition campaign and install data from AppsFlyer to Mixpanel."
+excerpt: "Learn how to automatically share data from AppsFlyer to Mixpanel, a product analytics platform."
 x-zendesk:
   id: 207447103
   url: https://support.appsflyer.com/hc/en-us/articles/207447103-Mixpanel-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-12-24T11:33:01Z'
   edited_at: '2026-06-16T11:45:26Z'
 ---
-**At a glance:** Learn how to automatically share data from AppsFlyer to Mixpanel, a product analytics platform.
-
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mixpanel.png)
 
 The integration between AppsFlyer and Mixpanel enables you to import the Acquisition Campaign information from AppsFlyer to Mixpanel.

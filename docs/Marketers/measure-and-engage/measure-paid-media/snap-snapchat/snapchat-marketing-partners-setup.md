@@ -1,6 +1,6 @@
 ---
 title: "Snapchat marketing partners setup"
-excerpt: "Learn how to integrate with Snapchat marketing partners to measure your campaigns and configure postbacks in AppsFlyer."
+excerpt: "Integrate with Snapchat marketing partners to measure campaigns you run with them. When configured, AppsFlyer sends postbacks to the configured Snapchat marketing partner."
 x-zendesk:
   id: 4417694142481
   url: https://support.appsflyer.com/hc/en-us/articles/4417694142481-Snapchat-marketing-partners-setup
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-01-24T08:47:31Z'
   edited_at: '2026-09-15T11:22:07Z'
 ---
-**At a glance:** Integrate with Snapchat marketing partners to measure campaigns you run with them. When configured, AppsFlyer sends postbacks to the configured Snapchat marketing partner.
-
 ## Setting up a Snapchat Marketing Partner
 
 Follow the steps below to configure your campaigns with any one of Snapchat Marketing Partners.

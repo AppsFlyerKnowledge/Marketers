@@ -1,6 +1,6 @@
 ---
 title: "Set up re-attribution window"
-excerpt: "Learn about the re-attribution window, during which reinstalls are not attributed as new installs."
+excerpt: "Learn about re-attribution window, during which reinstalls are not attributed as new installs."
 x-zendesk:
   id: 115002587066
   url: https://support.appsflyer.com/hc/en-us/articles/115002587066-Set-up-re-attribution-window
@@ -22,10 +22,6 @@ x-zendesk:
   created_at: '2017-05-23T08:55:35Z'
   edited_at: '2025-04-17T09:39:55Z'
 ---
-> 📘 At a glance
->
-> Learn about re-attribution window, during which reinstalls are not attributed as new installs.
-
 ## Re-attribution window
 
 The re-attribution window is a time window that begins the first time a user installs the app and continues for a duration set by the advertiser (default 90 days.) During the re-attribution window app reinstalls aren't recorded as new installs and don't generate a new install postback unless they originate from a **retargeting** campaign.

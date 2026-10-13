@@ -1,6 +1,6 @@
 ---
 title: "SKAN integrated partners list"
-excerpt: "Lists of ad network partners having SKAN integration with AppsFlyer, and ad network Apple SKAdNetwork IDs."
+excerpt: "Lists of ad network partners having SKAN integration with AppsFlyer, Ad network Apple SKAdNewtork IDs."
 x-zendesk:
   id: 360012640377
   url: https://support.appsflyer.com/hc/en-us/articles/360012640377-SKAN-integrated-partners-list
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-09-01T20:45:57Z'
   edited_at: '2026-04-28T09:55:09Z'
 ---
-**At a glance:** Lists of ad network partners having SKAN integration with AppsFlyer, Ad network Apple SKAdNewtork IDs.
-
 ## AppsFlyer SKAN partners
 
 The partners listed are integrated with AppsFlyer and forward iOS SKAN postbacks to AppsFlyer.

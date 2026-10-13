@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: New AI layer added to Protect360 sub reasons"
-excerpt: "AppsFlyer has introduced a new AI detection layer to Protect360 to enhance fraud detection capabilities for identifying fraudulent devices and installation activities."
 table_of_contents: false
 x-zendesk:
   id: 27250541538705

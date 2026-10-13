@@ -1,6 +1,6 @@
 ---
 title: "[Beta] User-based cross-platform attribution"
-excerpt: "Learn what cross-platform user-based attribution is, how it operates, and how to set it up in AppsFlyer."
+excerpt: "Learn what cross-platform user-based attribution is, how it operates, and how to set it in AppsFlyer."
 x-zendesk:
   id: 39104189339793
   url: https://support.appsflyer.com/hc/en-us/articles/39104189339793--Beta-User-based-cross-platform-attribution
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-09-16T13:58:09Z'
   edited_at: '2026-08-12T11:16:09Z'
 ---
-Learn what cross-platform user-based attribution is, how it operates, and how to set it in AppsFlyer.
-
 ## What is user-based attribution?
 
 User-based attribution is a cross-platform model that relies on a persistent [Customer User ID (CUID)](/docs/customer-user-id-field-cuid) to link conversion events across platforms. Using the CUID, the model attributes all activity to the media source that drove the user’s first conversion or re-engagement event.

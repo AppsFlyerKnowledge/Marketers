@@ -1,6 +1,6 @@
 ---
 title: "Tencent AMS campaign configuration"
-excerpt: "Learn how to configure Tencent AMS campaigns in AppsFlyer, including integration settings, attribution links, cost API setup, and partner permissions."
+excerpt: "Tencent AMS, an AppsFlyer ad network integrated partner, operates social media and mobile utility properties in China, and enables marketers to run app install campaigns on: WeChat, the company’s mobile communication platform, QQ, the instant messaging service, QQ Music, QQ Browser, Myapp, and more."
 x-zendesk:
   id: 360017577338
   url: https://support.appsflyer.com/hc/en-us/articles/360017577338-Tencent-AMS-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-02-01T18:20:01Z'
   edited_at: '2026-09-15T10:40:24Z'
 ---
-**At a glance:** Tencent AMS, an AppsFlyer ad network integrated partner, operates social media and mobile utility properties in China, and enables marketers to run app install campaigns on: WeChat, the company’s mobile communication platform, QQ, the instant messaging service, QQ Music, QQ Browser, Myapp, and more.
-
 ![](https://cdn.appsflyer.com/marketplace/static/logo/tencentams.png)
 
 ## Setting up Tencent AMS

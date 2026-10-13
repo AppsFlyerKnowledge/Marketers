@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: iAd framework to be removed from the iOS SDK"
-excerpt: "Important update regarding the removal of the deprecated iAd framework from the AppsFlyer iOS SDK to comply with Apple's future requirements."
 table_of_contents: false
 x-zendesk:
   id: 19329934807569

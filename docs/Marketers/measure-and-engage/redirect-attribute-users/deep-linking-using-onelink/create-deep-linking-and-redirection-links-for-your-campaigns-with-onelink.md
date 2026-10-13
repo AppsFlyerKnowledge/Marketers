@@ -1,6 +1,6 @@
 ---
 title: "Create deep linking and redirection links for your campaigns with OneLink"
-excerpt: "Create links that give users exactly the experience you want them to have, with OneLink, redirecting them to the correct app store, web URL, or into the app."
+excerpt: "Create links that give users exactly the experience you want them to have, with OneLink. Users who click the link are redirected to the correct app store, web URL, or into the app, and attributed to the media source."
 x-zendesk:
   id: 208874366
   url: https://support.appsflyer.com/hc/en-us/articles/208874366-Create-deep-linking-and-redirection-links-for-your-campaigns-with-OneLink
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-05-22T10:03:37Z'
   edited_at: '2026-10-07T10:22:41Z'
 ---
-**At a glance:** Create links that give users exactly the experience you want them to have, with OneLink. Users who click the link are redirected to the correct app store, web URL, or into the app, and attributed to the media source.
-
 ## OneLink links and experiences
 
 <Embed title="Create deep linking and redirection links for your campaigns with OneLink" typeOfEmbed="youtube" url="https://www.youtube.com/embed/KZBrxGEjVUE" providerUrl="https://www.youtube.com" />

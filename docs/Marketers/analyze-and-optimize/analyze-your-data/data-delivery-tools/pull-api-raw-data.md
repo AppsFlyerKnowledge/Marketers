@@ -1,6 +1,6 @@
 ---
 title: "Pull API raw data"
-excerpt: "Use the Pull API to retrieve raw data reports in CSV format, with options to filter by media source, date range, in-app event name, and geo."
+excerpt: "Use this API to get raw data reports in CSV files."
 x-zendesk:
   id: 360007530258
   url: https://support.appsflyer.com/hc/en-us/articles/360007530258-Pull-API-raw-data
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-04-14T18:24:00Z'
   edited_at: '2026-03-12T12:19:12Z'
 ---
-At a glance: Use this API to get raw data reports in CSV files.
-
 ![PullAPIRaw_us-en.png](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)
 
 ## Pull API raw data

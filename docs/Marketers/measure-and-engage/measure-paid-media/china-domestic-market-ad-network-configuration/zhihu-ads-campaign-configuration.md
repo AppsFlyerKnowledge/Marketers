@@ -1,6 +1,6 @@
 ---
 title: "Zhihu Ads campaign configuration"
-excerpt: "Configure Zhihu Ads integration in AppsFlyer to attribute campaigns, set up postbacks, and manage partner permissions."
+excerpt: "Zhihu Ads is an AppsFlyer ad network integrated partner."
 x-zendesk:
   id: 360001758338
   url: https://support.appsflyer.com/hc/en-us/articles/360001758338-Zhihu-Ads-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-06-05T06:05:50Z'
   edited_at: '2026-09-15T10:38:21Z'
 ---
-**At a glance:** Zhihu Ads is an AppsFlyer ad network integrated partner.
-
 ## Setting Up Zhihu Ads
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.

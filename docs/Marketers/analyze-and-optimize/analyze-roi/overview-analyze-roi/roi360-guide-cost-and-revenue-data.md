@@ -1,6 +1,6 @@
 ---
 title: "ROI360 guide - cost and revenue data"
-excerpt: "Get a complete picture of your return on ad spend and return on investment with ROI360's suite of cost and revenue reporting tools."
+excerpt: "Get cost and revenue data to understand your total ROI and ROAS."
 x-zendesk:
   id: 10515748254609
   url: https://support.appsflyer.com/hc/en-us/articles/10515748254609-ROI360-guide-cost-and-revenue-data
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-11-10T13:52:03Z'
   edited_at: '2026-01-14T14:48:46Z'
 ---
-**At a glance**: Get cost and revenue data to understand your total ROI and ROAS.
-
 ![M_emptyState.png](https://files.readme.io/5eec5be77bf0b72afdd95b1957642cc67ba509000bc756ac68d87da5e96ed08e-11832563913489.png)
 
 ## Overview

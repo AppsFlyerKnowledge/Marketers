@@ -1,6 +1,6 @@
 ---
 title: "TVSquared (formerly Wywy) campaign configuration"
-excerpt: "Learn how to configure the TVSquared (formerly Wywy) integration in AppsFlyer to measure and optimize your campaigns."
+excerpt: "TVSquared (formerly WyWy), an AppsFlyer ad network integrated partner, enables the entire digital organization - marketers, product managers, and data scientists - to run the business based on data. TVSquared creates an integrated view of consumers across devices, providing tools to optimize the user experience in real-time."
 x-zendesk:
   id: 213836263
   url: https://support.appsflyer.com/hc/en-us/articles/213836263-TVSquared-formerly-Wywy-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-09-06T08:58:47Z'
   edited_at: '2026-06-16T09:45:39Z'
 ---
-At a glance: TVSquared (formerly Wywy), an AppsFlyer ad network integrated partner, enables the entire digital organization - marketers, product managers, and data scientists - to run the business based on data. TVSquared creates an integrated view of consumers across devices, providing tools to optimize the user experience in real-time.
-
 ## Setting up TVSquared
 
 > 📘 Prerequisite

@@ -1,6 +1,6 @@
 ---
 title: "Basic SDK integration guide"
-excerpt: "Work with your mobile or CTV app developer to integrate and install the AppsFlyer SDK into Android or iOS apps for install attribution and in-app event measurement."
+excerpt: "Work with your mobile or CTV app developer to integrate and install the SDK into Android or iOS apps. Once basic integration tasks are complete, your app is ready for install attribution and in-app event measurement."
 x-zendesk:
   id: 207032066
   url: https://support.appsflyer.com/hc/en-us/articles/207032066-Basic-SDK-integration-guide
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2013-08-22T16:09:08Z'
   edited_at: '2026-08-13T12:39:14Z'
 ---
-Work with your mobile or CTV app developer to integrate and install the SDK into Android or iOS apps. Once basic integration tasks are complete, your app is ready for install attribution and in-app event measurement.
-
 ## **Implementing the dev key in your app**
 
 AppsFlyer uses the dev key to uniquely identify your account. The dev key is mandatory because it allows the SDK to securely send and retrieve data that belongs to your account. Your developer should install and integrate the SDK, and embed the dev key.

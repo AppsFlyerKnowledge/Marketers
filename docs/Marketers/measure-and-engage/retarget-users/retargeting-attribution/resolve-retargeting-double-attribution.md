@@ -1,6 +1,6 @@
 ---
 title: "Resolve retargeting double attribution"
-excerpt: "Learn how AppsFlyer attributes in-app events and sessions to both user acquisition and retargeting media sources during a re-engagement window."
+excerpt: "To evaluate performance during the retargeting campaign's re-engagement window, in-app events and sessions are double-attributed to the user acquisition (UA) and retargeting media sources."
 x-zendesk:
   id: 360016371077
   url: https://support.appsflyer.com/hc/en-us/articles/360016371077-Resolve-retargeting-double-attribution
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-12-13T07:35:18Z'
   edited_at: '2025-06-03T07:43:50Z'
 ---
-**At a glance:** To evaluate performance during the retargeting campaign's re-engagement window, in-app events and sessions are double-attributed to the user acquisition (UA) and retargeting media sources.
-
 ![](https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png)
 
 ## Overview

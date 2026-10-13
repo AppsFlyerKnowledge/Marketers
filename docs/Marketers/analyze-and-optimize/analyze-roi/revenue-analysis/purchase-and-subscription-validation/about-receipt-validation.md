@@ -1,6 +1,6 @@
 ---
 title: "About Receipt validation"
-excerpt: "Understand how Receipt validation measures and verifies revenue from in-app purchases and subscriptions with the App Store and Play Store."
+excerpt: "Understand how Receipt validation measures revenue from in-app purchases and subscriptions and verifies it with the app stores, ensuring accurate revenue measurement."
 x-zendesk:
   id: 42136725767569
   url: https://support.appsflyer.com/hc/en-us/articles/42136725767569-About-Receipt-validation

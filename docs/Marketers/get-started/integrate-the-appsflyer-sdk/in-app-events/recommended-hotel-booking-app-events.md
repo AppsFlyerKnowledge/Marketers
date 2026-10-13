@@ -1,6 +1,6 @@
 ---
 title: "Recommended hotel booking app events"
-excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your hotel booking app."
+excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your hotel booking app ."
 x-zendesk:
   id: 360019843558
   url: https://support.appsflyer.com/hc/en-us/articles/360019843558-Recommended-hotel-booking-app-events
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-04-29T14:49:54Z'
   edited_at: '2023-12-04T11:56:58Z'
 ---
-**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your hotel booking app.
-
 ## ![InApp_Events_hotel.png](https://files.readme.io/ffc23cc65b6b6cfe99c12e988cca3df6667058b7e3a672db3639472a17602546-20659548553745.png) Hotel booking
 
 Hotel booking apps allow travelers to easily book hotels while choosing from the best offers. The typical events that we suggest recording are search, purchase, travel booking, and add to wishlist.

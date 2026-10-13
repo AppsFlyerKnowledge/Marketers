@@ -1,6 +1,6 @@
 ---
 title: "Get conversion data using AppsFlyer SDK–Overview"
-excerpt: "Learn how to use conversion data from the AppsFlyer SDK to customize user experiences and identify conversion scenarios."
+excerpt: "Use conversion data to identify various conversion scenarios, customize user experience, and more."
 x-zendesk:
   id: 4410481069969
   url: https://support.appsflyer.com/hc/en-us/articles/4410481069969-Get-conversion-data-using-AppsFlyer-SDK-Overview

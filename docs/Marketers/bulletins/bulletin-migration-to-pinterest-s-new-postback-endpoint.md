@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Migration to Pinterest’s New Postback Endpoint"
-excerpt: "Pinterest has migrated to a new endpoint based on their Conversions API (CAPI) infrastructure, requiring an upgrade to continue sending app events."
 table_of_contents: false
 x-zendesk:
   id: 37418019002641

@@ -1,6 +1,6 @@
 ---
 title: "My Apps"
-excerpt: "View, search, filter, and manage all your apps in AppsFlyer, including pinning preferred apps and configuring brand bundles."
+excerpt: "View all your apps in AppsFlyer, search and filter them, pin your preferred apps, and perform specific actions for each app."
 x-zendesk:
   id: 27438234288529
   url: https://support.appsflyer.com/hc/en-us/articles/27438234288529-My-Apps
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-08-11T12:26:13Z'
   edited_at: '2024-09-13T06:57:52Z'
 ---
-**At a glance:** View all your apps in AppsFlyer, search and filter them, pin your preferred apps, and perform specific actions for each app.
-
 ## Overview
 
 ![New-My-apps.jpg](https://files.readme.io/df286b15b469cb78093b3d2517f64f61246396bedf44932b5a344ac360242e19-small-27448775025937.jpg)

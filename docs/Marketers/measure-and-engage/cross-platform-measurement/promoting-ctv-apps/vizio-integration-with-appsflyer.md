@@ -1,6 +1,6 @@
 ---
 title: "Vizio integration with AppsFlyer"
-excerpt: "Integrate your Vizio Connected TV (CTV) app with AppsFlyer to receive attribution and event data for your campaigns on Vizio."
+excerpt: "Integrate your Vizio Connected TV (CTV) app (channel) with AppsFlyer to receive attribution and event data for your campaigns on Vizio."
 x-zendesk:
   id: 5045234293777
   url: https://support.appsflyer.com/hc/en-us/articles/5045234293777-Vizio-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-03-27T15:48:04Z'
   edited_at: '2024-05-07T09:27:49Z'
 ---
-At a glance: Integrate your Vizio Connected TV (CTV) app (channel) with AppsFlyer to receive attribution and event data for your campaigns on Vizio.
-
 ## About Vizio CTV attribution
 
 The Vizio SmartCast OS for streaming runs across all Vizio TVs.

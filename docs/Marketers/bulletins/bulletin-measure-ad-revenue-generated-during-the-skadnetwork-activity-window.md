@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Measure ad revenue generated during the SKAdNetwork activity window"
-excerpt: "Learn how to attribute ad revenue generated during the SKAdNetwork activity window to the campaign bringing the user."
 table_of_contents: false
 x-zendesk:
   id: 4404213118481

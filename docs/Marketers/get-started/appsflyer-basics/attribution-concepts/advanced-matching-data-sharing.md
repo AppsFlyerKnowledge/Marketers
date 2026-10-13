@@ -1,6 +1,6 @@
 ---
 title: "Advanced-Matching Data Sharing"
-excerpt: "Advanced-Matching Data Sharing enables hashed user identifiers, such as email and phone number, to be forwarded from AppsFlyer to selected ad networks."
+excerpt: "Advanced-Matching Data Sharing enables hashed user identifiers, such as email and phone number, to be forwarded from AppsFlyer to selected ad networks, allowing partners to attribute events to ad engagements without a device ID."
 x-zendesk:
   id: 47876839961489
   url: https://support.appsflyer.com/hc/en-us/articles/47876839961489-Advanced-Matching-Data-Sharing
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2026-06-18T14:23:54Z'
   edited_at: '2026-10-11T11:53:49Z'
 ---
-Advanced-Matching Data Sharing enables hashed user identifiers, such as email and phone number, to be forwarded from AppsFlyer to selected ad networks, allowing partners to attribute events to ad engagements without a device ID.
-
 ## About Advanced-Matching Data Sharing
 
 As device identifiers become less available, ad networks increasingly rely on first-party data to match ad engagements. Advanced-Matching Data Sharing addresses this gap by forwarding hashed identifiers to supported partners in a privacy-compliant format.

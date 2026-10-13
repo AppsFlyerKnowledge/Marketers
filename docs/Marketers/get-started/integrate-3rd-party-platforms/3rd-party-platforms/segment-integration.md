@@ -1,6 +1,6 @@
 ---
 title: "Segment integration"
-excerpt: "Learn how to integrate Segment with AppsFlyer to route your analytics data and optimize your mobile attribution."
+excerpt: "Send your Segment analytics data to AppsFlyer."
 x-zendesk:
   id: 210041606
   url: https://support.appsflyer.com/hc/en-us/articles/210041606-Segment-integration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-06-30T07:54:38Z'
   edited_at: '2025-07-08T07:14:01Z'
 ---
-At a glance: Send your Segment analytics data to AppsFlyer.
-
 ## Introduction
 
 Segment makes it easy to send your data to AppsFlyer. Once you have recorded your data through Segment's open source libraries, the data is translated and routed to AppsFlyer in the appropriate format. AppsFlyer helps marketers to pinpoint targeting, optimize ad spend, and boost ROI.

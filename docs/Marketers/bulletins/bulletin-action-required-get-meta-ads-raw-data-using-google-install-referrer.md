@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Action required—Get Meta ads raw data using Google Install Referrer"
-excerpt: "Learn how to configure the Google Install Referrer decryption key to access Meta ads campaign raw data for Android apps."
 table_of_contents: false
 x-zendesk:
   id: 4409322107537

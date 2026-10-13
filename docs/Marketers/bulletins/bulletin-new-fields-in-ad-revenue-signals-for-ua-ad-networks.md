@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: New fields in ad revenue signals for UA ad networks"
-excerpt: "Learn about the new fields added to ad revenue signals for UA ad networks starting September 19, 2024, and how to configure your BI systems."
 table_of_contents: false
 x-zendesk:
   id: 26957246184209

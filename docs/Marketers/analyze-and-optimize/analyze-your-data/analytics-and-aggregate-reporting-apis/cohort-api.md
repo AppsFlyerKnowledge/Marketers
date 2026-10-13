@@ -1,6 +1,6 @@
 ---
 title: "Cohort API"
-excerpt: "The Cohort API provides advertisers with a programmatic way to retrieve cohorted campaign performance data from the AppsFlyer platform."
+excerpt: "Cohort API provides advertisers a programmatic way to get Cohort data. Use the API to integrate Cohort data into BI and marketing automation systems."
 x-zendesk:
   id: 360004799057
   url: https://support.appsflyer.com/hc/en-us/articles/360004799057-Cohort-API
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-01-14T07:04:32Z'
   edited_at: '2026-05-04T15:23:53Z'
 ---
-**At a glance:** Cohort API provides advertisers a programmatic way to get Cohort data. Use the API to integrate Cohort data into BI and marketing automation systems.
-
 ## Cohort API
 
 The Cohort API is used to get cohorted campaign performance data from the AppsFlyer platform. It is functionally equivalent to the [Cohort dashboard](/docs/cohort-and-retention-dashboard).

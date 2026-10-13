@@ -1,6 +1,6 @@
 ---
 title: "Pinterest Marketing Partner Integration"
-excerpt: "Learn how to enable Pinterest Marketing Partners (PMPs) to receive install data for users attributed to Pinterest."
+excerpt: "Enable Pinterest Marketing Partners (PMPs) to receive install data for users attributed to Pinterest."
 table_of_contents: false
 x-zendesk:
   id: 217408966

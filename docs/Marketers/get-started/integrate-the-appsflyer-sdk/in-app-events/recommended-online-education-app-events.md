@@ -1,6 +1,6 @@
 ---
 title: "Recommended online education app events"
-excerpt: "Measure user quality and track the remote learning journey by recording recommended in-app events for your online education app."
+excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your online education app."
 x-zendesk:
   id: 360019794378
   url: https://support.appsflyer.com/hc/en-us/articles/360019794378-Recommended-online-education-app-events
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-04-28T12:35:57Z'
   edited_at: '2026-05-04T09:28:56Z'
 ---
-**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your online education app.
-
 ## ![education.png](https://files.readme.io/fb036c8f3b0cb4cc06a5284c26089bbb361273ab628bc5b740692bc49e7a2c40-20659493109393.png) Online education
 
 Online education apps enable users to learn remotely. The typical events that we recommend recording include registration, tutorials and courses completed, and certificates received.

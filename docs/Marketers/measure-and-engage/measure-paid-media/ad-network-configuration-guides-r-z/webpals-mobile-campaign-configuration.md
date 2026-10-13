@@ -1,6 +1,6 @@
 ---
 title: "Webpals Mobile campaign configuration"
-excerpt: "Learn how to configure your mobile user acquisition and revenue campaigns with Webpals Mobile in AppsFlyer."
+excerpt: "Webpals Mobile, an AppsFlyer ad network integrated partner with global coverage, is a leader in mobile user acquisition and revenue maximization."
 x-zendesk:
   id: 211395903
   url: https://support.appsflyer.com/hc/en-us/articles/211395903-Webpals-Mobile-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-06-27T13:49:23Z'
   edited_at: '2026-09-09T12:32:54Z'
 ---
-Webpals Mobile, an AppsFlyer ad network integrated partner with global coverage, is a leader in mobile user acquisition and revenue maximization.
-
 To configure your campaigns with Webpals Mobile, follow the steps below.
 
 ## Setting up Webpals Mobile

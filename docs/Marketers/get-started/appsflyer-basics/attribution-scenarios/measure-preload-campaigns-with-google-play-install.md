@@ -1,6 +1,5 @@
 ---
 title: "Measure preload campaigns with Google Play Install"
-excerpt: "Learn how AppsFlyer uses Google Play Auto Install (PAI) to attribute installs to preload campaigns from mobile carriers and app discovery partners."
 x-zendesk:
   id: 4404557237649
   url: https://support.appsflyer.com/hc/en-us/articles/4404557237649-Measure-preload-campaigns-with-Google-Play-Install

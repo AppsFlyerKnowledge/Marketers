@@ -1,6 +1,6 @@
 ---
 title: "Awin campaign configuration"
-excerpt: "Configure the Awin integration in AppsFlyer to run user acquisition and retargeting campaigns, including setting up attribution links, postbacks, and deep linking."
+excerpt: "Awin (affiliatewindow_int) is an integrated partner that allows advertisers to run UA and retargeting campaigns. Awin's marketing platform helps connect merchants (advertisers) with affiliates (publishers)."
 x-zendesk:
   id: 18532554968849
   url: https://support.appsflyer.com/hc/en-us/articles/18532554968849-Awin-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-09-13T11:50:38Z'
   edited_at: '2026-09-09T12:39:48Z'
 ---
-At a glance: Awin (affiliatewindow_int) is an integrated partner that allows advertisers to run UA and retargeting campaigns. Awin's marketing platform helps connect merchants (advertisers) with affiliates (publishers).
-
 ![awin icon.png](https://files.readme.io/2a7f22084586fec820c0bfab7f3a256259c43d37f14d6fed8e8db3d2e9905947-18533392495377.png)
 
 ## Activate partner

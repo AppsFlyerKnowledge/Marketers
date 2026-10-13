@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: New fields in ad revenue reports"
-excerpt: "Learn about the new fields added to AppsFlyer ad revenue reports starting September 19, 2024, and how to configure your Data Locker settings to ingest them."
 table_of_contents: false
 x-zendesk:
   id: 26907692192273

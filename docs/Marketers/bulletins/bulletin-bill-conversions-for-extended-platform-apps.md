@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Bill conversions for extended platform apps"
-excerpt: "Starting February 1, 2026, non-organic installs from extended platform apps like CTV, PC, and console will be included in billable conversions."
 table_of_contents: false
 x-zendesk:
   id: 42720965896721

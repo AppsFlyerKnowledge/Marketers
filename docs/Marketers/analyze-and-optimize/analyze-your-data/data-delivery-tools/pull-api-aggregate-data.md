@@ -1,6 +1,6 @@
 ---
 title: "Pull API aggregate data"
-excerpt: "Learn how to use the AppsFlyer Pull API to retrieve aggregate user acquisition and retargeting reports in CSV format."
+excerpt: "Use this Pull API to get your AppsFlyer aggregate reports in CSV files."
 x-zendesk:
   id: 207034346
   url: https://support.appsflyer.com/hc/en-us/articles/207034346-Pull-API-aggregate-data
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2013-04-24T15:08:25Z'
   edited_at: '2026-03-18T09:04:12Z'
 ---
-Use this Pull API to get your AppsFlyer aggregate reports in CSV files.
-
 ![PullAPIAverage_us-en.png](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)
 
 #### Looking for Pull API raw data?

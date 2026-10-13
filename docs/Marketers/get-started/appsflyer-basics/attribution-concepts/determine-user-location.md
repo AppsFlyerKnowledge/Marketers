@@ -1,6 +1,6 @@
 ---
 title: "Determine user location"
-excerpt: "Learn how AppsFlyer determines user location using device IP addresses mapped via Digital Element, and understand potential reasons for location discrepancies."
+excerpt: "User location is determined using the device IP address which is mapped to the general location of the user (city, state, country, and so on). User location impacts creatives selection, campaign cost, engagement, and user quality."
 x-zendesk:
   id: 360000847378
   url: https://support.appsflyer.com/hc/en-us/articles/360000847378-Determine-user-location
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-01-29T12:52:11Z'
   edited_at: '2025-04-08T09:14:14Z'
 ---
-**At a glance:** User location is determined using the device IP address which is mapped to the general location of the user (city, state, country, and so on). User location impacts creatives selection, campaign cost, engagement, and user quality.
-
 ![5888ResolveIpAddress_us-en.png](https://files.readme.io/166e48fb0bb90b627bc51e29b53a556b71939749ab3e5eadff7d6edf0f0dfd25-360011758517.png)
 
 ## Determining user location

@@ -1,6 +1,6 @@
 ---
 title: "iTunes App Analytics integration with AppsFlyer"
-excerpt: "Learn how to view attribution data in iTunes Connect by integrating iTunes App Analytics with AppsFlyer."
+excerpt: "View attribution data in iTunes Connect by integrating iTunes App Analytics with AppsFlyer."
 x-zendesk:
   id: 207040606
   url: https://support.appsflyer.com/hc/en-us/articles/207040606-iTunes-App-Analytics-integration-with-AppsFlyer

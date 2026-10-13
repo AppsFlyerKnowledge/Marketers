@@ -1,6 +1,6 @@
 ---
 title: "Data availability windows"
-excerpt: "Learn about the data availability windows and retention periods for raw and aggregated reports in AppsFlyer."
+excerpt: "Data availability depends on the report type and the defined availability window."
 x-zendesk:
   id: 4415473374865
   url: https://support.appsflyer.com/hc/en-us/articles/4415473374865-Data-availability-windows

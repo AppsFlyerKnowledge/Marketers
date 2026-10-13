@@ -1,6 +1,6 @@
 ---
 title: "Cheetah Mobile campaign configuration"
-excerpt: "Learn how to configure Cheetah Mobile campaigns in AppsFlyer, including setting up integration, attribution links, cost tracking, and permissions."
+excerpt: "Cheetah Mobile, an AppsFlyer ad network integrated partner, aims to provide leading apps for mobile users worldwide and connect users with personalized content on the mobile platform. In addition to click-based mobile attribution, Cheetah Mobile also offers cost and view-through attribution, which you can record with AppsFlyer."
 x-zendesk:
   id: 209731703
   url: https://support.appsflyer.com/hc/en-us/articles/209731703-Cheetah-Mobile-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-03-28T10:23:35Z'
   edited_at: '2026-09-09T13:12:18Z'
 ---
-At a glance: Cheetah Mobile, an AppsFlyer ad network integrated partner, aims to provide leading apps for mobile users worldwide and connect users with personalized content on the mobile platform. In addition to click-based mobile attribution, Cheetah Mobile also offers cost and view-through attribution, which you can record with AppsFlyer.
-
 ## Setting up Cheetah Mobile
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.

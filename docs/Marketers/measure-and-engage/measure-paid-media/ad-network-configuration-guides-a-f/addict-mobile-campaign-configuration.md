@@ -1,6 +1,6 @@
 ---
 title: "Addict Mobile campaign configuration"
-excerpt: "Configure your AppsFlyer integration with Addict Mobile to track mobile performance marketing campaigns, user acquisition, retargeting, and view-through attribution."
+excerpt: "Addict Mobile, an AppsFlyer ad network integrated partner, is a mobile performance marketing expert for user acquisition and retargeting on mobile. In addition to click-based mobile attribution, Addict Mobile also offers view-through attribution, which you can record with AppsFlyer."
 x-zendesk:
   id: 115000174783
   url: https://support.appsflyer.com/hc/en-us/articles/115000174783-Addict-Mobile-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-01-03T09:11:00Z'
   edited_at: '2026-09-09T13:53:27Z'
 ---
-Addict Mobile, an AppsFlyer ad network integrated partner, is a mobile performance marketing expert for user acquisition and retargeting on mobile. In addition to click-based mobile attribution, Addict Mobile also offers view-through attribution, which you can record with AppsFlyer.
-
 ## Setting up Addict Mobile
 
 > 📘 Prerequisite

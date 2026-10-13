@@ -1,6 +1,6 @@
 ---
 title: "Marketing partner onboarding"
-excerpt: "Get started with AppsFlyer for marketing technology platforms and learn how to integrate Meta campaign management partners."
+excerpt: "Getting started with AppsFlyer for marketing technology platforms"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,6 +18,6 @@ Getting started with AppsFlyer for marketing technology platforms
 
 <Cards>
   <Card title="Integrating Meta campaign management partners with AppsFlyer" href="/docs/integrating-meta-campaign-management-partners-with-appsflyer" icon="fa-solid fa-handshake">
-    Learn how to integrate Meta campaign management partners with AppsFlyer.
+    Learn what data types Meta campaign management partners can receive from AppsFlyer.
   </Card>
 </Cards>

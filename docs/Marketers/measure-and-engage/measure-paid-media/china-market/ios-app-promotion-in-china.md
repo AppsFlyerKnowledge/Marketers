@@ -1,6 +1,6 @@
 ---
 title: "iOS app promotion in China"
-excerpt: "Learn about marketing your iOS apps in China and configuring integrated ad networks for the Chinese domestic market."
+excerpt: "Learn about marketing your iOS apps in China."
 x-zendesk:
   id: 115004641383
   url: https://support.appsflyer.com/hc/en-us/articles/115004641383-iOS-app-promotion-in-China
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-09-12T11:30:06Z'
   edited_at: '2023-02-15T13:15:09Z'
 ---
-**At a glance:** Learn about marketing your iOS apps in China.
-
 ## Apple in China
 
 In China, about 30% of mobile devices are iOS. In 2016, App Annie reported that China has leaped ahead to become the world’s top revenue generator in the iOS App Store with some $1.7 billion earned.

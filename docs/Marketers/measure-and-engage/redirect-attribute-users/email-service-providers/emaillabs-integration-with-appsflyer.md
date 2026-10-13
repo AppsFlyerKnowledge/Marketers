@@ -1,6 +1,6 @@
 ---
 title: "EmailLabs integration with AppsFlyer"
-excerpt: "Learn how to integrate EmailLabs with AppsFlyer to enable deep linking and click recording using OneLink."
+excerpt: "EmailLabs, an email delivery and analytics platform, embeds AppsFlyer OneLink within emails. When email recipients click on the link, they are deep-linked into your app."
 x-zendesk:
   id: 4419148952721
   url: https://support.appsflyer.com/hc/en-us/articles/4419148952721-EmailLabs-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-01-31T14:00:18Z'
   edited_at: '2026-08-14T16:22:42Z'
 ---
-EmailLabs, an email delivery and analytics platform, embeds AppsFlyer OneLink within emails. When email recipients click on the link, they are deep-linked into your app.
-
 ![emaillabs-af-logo.png](https://files.readme.io/467ee1fbcea8a36dff40172b1dbc97780a7e6cafd958ecb5b520a612c3308231-49839289267857.png)
 
 ## Introduction

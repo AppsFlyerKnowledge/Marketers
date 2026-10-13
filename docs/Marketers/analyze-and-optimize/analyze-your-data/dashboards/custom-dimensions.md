@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-06-06T09:28:20Z'
   edited_at: '2025-01-01T11:17:18Z'
 ---
-**At a glance:** Define your own dimensions and use them to group and view data in the Overview dashboard.
-
 ![](https://fast.wistia.com/embed/medias/tvcdofnwjo/swatch)
 
 ## Overview

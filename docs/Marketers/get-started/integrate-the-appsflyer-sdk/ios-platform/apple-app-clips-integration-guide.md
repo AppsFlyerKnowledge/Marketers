@@ -1,6 +1,6 @@
 ---
 title: "Apple App Clips integration guide"
-excerpt: "Learn how to integrate Apple App Clips with AppsFlyer to enable attribution, deep linking, and seamless user redirection."
+excerpt: "App Clips lets users with iOS 14 or later quickly access and experience your app. AppsFlyer enables App Clip attribution, and redirects users who can't use App Clips (for example, Android users) as needed."
 x-zendesk:
   id: 360014262358
   url: https://support.appsflyer.com/hc/en-us/articles/360014262358-Apple-App-Clips-integration-guide
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-10-09T00:42:10Z'
   edited_at: '2024-08-05T15:24:14Z'
 ---
-App Clips lets users with iOS 14 or later quickly access and experience your app. AppsFlyer enables App Clip attribution, and redirects users who can't use App Clips (for example, Android users) as needed.
-
 ![app_clip_flow_3.png](https://files.readme.io/1a5ec7a6b8a061955742d8e79ba78fa0262c0609e1e801decc92300d6c24a774-360012832058.png)
 
 ## App Clip integration

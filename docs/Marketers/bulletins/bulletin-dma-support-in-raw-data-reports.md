@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: DMA support in Raw data reports"
-excerpt: "AppsFlyer is adding new DMA consent fields to raw data tools, including GDPR applicability and Google ad consent indicators."
 table_of_contents: false
 x-zendesk:
   id: 25485269115793

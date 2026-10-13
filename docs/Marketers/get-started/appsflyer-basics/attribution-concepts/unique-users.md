@@ -1,6 +1,6 @@
 ---
 title: "Unique users"
-excerpt: "Learn how unique users are counted and used in metrics across AppsFlyer dashboards and reports."
+excerpt: "Learn how unique users are counted and used in metrics in AppsFlyer dashboards and reports."
 x-zendesk:
   id: 27435981457553
   url: https://support.appsflyer.com/hc/en-us/articles/27435981457553-Unique-users
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-08-11T09:52:33Z'
   edited_at: '2026-06-03T07:43:47Z'
 ---
-**At a glance:** Learn how unique users are counted and used in metrics in AppsFlyer dashboards and reports.
-
 ## About unique users
 
 A unique user is a term that refers to an attributed device whose presence is counted only once, regardless of how many actions a user performs on the device.

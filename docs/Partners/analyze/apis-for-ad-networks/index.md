@@ -1,6 +1,6 @@
 ---
 title: "APIs for ad networks"
-excerpt: "An overview of the AppsFlyer APIs specifically designated for ad networks to manage and retrieve app lists."
+excerpt: "Use AppsFlyer APIs designated for ad networks"
 table_of_contents: false
 x-zendesk:
   type: section

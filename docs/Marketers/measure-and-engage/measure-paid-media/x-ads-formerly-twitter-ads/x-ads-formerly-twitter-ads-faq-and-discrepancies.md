@@ -1,6 +1,6 @@
 ---
 title: "X Ads (formerly Twitter Ads) FAQ and discrepancies"
-excerpt: "Resolve frequently asked questions and understand attribution discrepancies between X Ads and AppsFlyer."
+excerpt: "Resolve X Ads FAQs and understand discrepancies."
 x-zendesk:
   id: 4410464352017
   url: https://support.appsflyer.com/hc/en-us/articles/4410464352017-X-Ads-formerly-Twitter-Ads-FAQ-and-discrepancies
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-11-09T09:34:59Z'
   edited_at: '2026-09-15T11:41:04Z'
 ---
-**At a glance:** Resolve X Ads FAQs and understand discrepancies.
-
 ## X Ads FAQ and discrepancies
 
 ### Who can perform the setup on AppsFlyer?

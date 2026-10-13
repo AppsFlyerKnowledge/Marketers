@@ -1,6 +1,6 @@
 ---
 title: "Youdao DSP campaign configuration"
-excerpt: "Learn how to set up and configure your mobile attribution campaigns with Youdao DSP in AppsFlyer."
+excerpt: "Youdao DSP is an AppsFlyer ad network integrated partner."
 x-zendesk:
   id: 360002133558
   url: https://support.appsflyer.com/hc/en-us/articles/360002133558-Youdao-DSP-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-07-30T09:13:02Z'
   edited_at: '2026-09-15T10:32:12Z'
 ---
-**At a glance:** Youdao DSP is an AppsFlyer ad network integrated partner.
-
 ## Setting Up Youdao DSP
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.

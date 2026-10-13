@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Additional retargeting KPI—ad network impressions"
-excerpt: "Learn about the addition of ad network retargeting impressions as a new KPI in the AppsFlyer Retargeting dashboard."
 table_of_contents: false
 x-zendesk:
   id: 360004587258

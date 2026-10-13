@@ -1,6 +1,6 @@
 ---
 title: "ATT implications (iOS 14+) and deprecation of LAT"
-excerpt: "Starting iOS 14, iOS uses ATT to determine user privacy preferences and Limit ad tracking (LAT) is deprecated."
+excerpt: "Starting iOS 14 iOS uses ATT to determine user privacy preferences and Limit ad tracking (LAT) is deprecated."
 x-zendesk:
   id: 360014090597
   url: https://support.appsflyer.com/hc/en-us/articles/360014090597-ATT-implications-iOS-14-and-deprecation-of-LAT

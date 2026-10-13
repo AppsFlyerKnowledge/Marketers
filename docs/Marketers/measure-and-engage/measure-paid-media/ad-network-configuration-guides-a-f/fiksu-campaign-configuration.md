@@ -1,6 +1,6 @@
 ---
 title: "Fiksu campaign configuration"
-excerpt: "Configure Fiksu integration in AppsFlyer to target and engage specific audiences, including setting up attribution links, postbacks, and permissions."
+excerpt: "Fiksu, an AppsFlyer ad network integrated partner, lets performance-driven marketers target and engage specific audiences that are most likely to spend time and money in their app. In addition to click-based mobile attribution, Fiksu also offers view-through attribution, which you can record with AppsFlyer."
 x-zendesk:
   id: 207033936
   url: https://support.appsflyer.com/hc/en-us/articles/207033936-Fiksu-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-03-08T13:07:42Z'
   edited_at: '2026-09-09T13:11:43Z'
 ---
-At a glance: Fiksu, an AppsFlyer ad network integrated partner, lets performance-driven marketers target and engage specific audiences that are most likely to spend time and money in their app. In addition to click-based mobile attribution, Fiksu also offers view-through attribution, which you can record with AppsFlyer.
-
 ## Setting up Fiksu
 
 > 📘 Prerequisite

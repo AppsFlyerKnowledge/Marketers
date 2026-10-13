@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-06-22T11:41:06Z'
   edited_at: '2026-09-15T09:20:35Z'
 ---
-**At a glance:** Integrate your X Ads account with AppsFlyer to display attribution data of X Ads campaigns.
-
 ## Connecting your X Ads account to AppsFlyer
 
 **Watch**

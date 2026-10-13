@@ -1,6 +1,6 @@
 ---
 title: "Use OneLink API to create links in large-scale campaigns"
-excerpt: "Learn how to programmatically generate personalized short links at scale to take users from owned media directly into your mobile app."
+excerpt: "OneLink API lets you programmatically generate personalized short links at scale, taking users from any owned media—such as SMS, email, web, or QR—directly into your mobile app. Use it to create seamless cross-channel journeys, deepen engagement, and improve conversion."
 x-zendesk:
   id: 360001250345
   url: https://support.appsflyer.com/hc/en-us/articles/360001250345-Use-OneLink-API-to-create-links-in-large-scale-campaigns
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-06-27T12:00:29Z'
   edited_at: '2026-05-13T09:31:09Z'
 ---
-**At a glance:** OneLink API lets you programmatically generate personalized short links at scale, taking users from any owned media—such as SMS, email, web, or QR—directly into your mobile app. Use it to create seamless cross-channel journeys, deepen engagement, and improve conversion.
-
 ## About OneLink API
 
 OneLink API is a premium feature that lets you turn any owned channel into a direct path into your mobile app. By generating personalized short links programmatically, you can deliver customized user journeys at scale, deepen engagement, and drive higher conversions across SMS, email, websites, social posts, and more. With OneLink API, you can:

@@ -1,6 +1,6 @@
 ---
 title: "Set up multi-store Android attribution"
-excerpt: "Learn how to attribute your apps across multiple Android stores and view the data in a single dashboard or in separate dashboards per store."
+excerpt: "Attribute your apps in multiple Android stores and view the data in a single app dashboard or in an app dashboard per store."
 x-zendesk:
   id: 207447023
   url: https://support.appsflyer.com/hc/en-us/articles/207447023-Set-up-multi-store-Android-attribution
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-12-24T10:48:17Z'
   edited_at: '2025-10-21T08:51:45Z'
 ---
-Attribute your apps in multiple Android stores and view the data in a single app dashboard or in an app dashboard per store.
-
 ## Multi-store Android attribution
 
 AppsFlyer attributes apps, irrespective of the app store. Meaning Google Play store and third-party Android app stores like Amazon, Opera, GetJar, Baidu, and Huawei (also known as out-of-market stores or alternate Android app stores). App owners, who market the app via multiple stores, can choose between a **single dashboard** having the data of all stores together or a **dashboard per store.**

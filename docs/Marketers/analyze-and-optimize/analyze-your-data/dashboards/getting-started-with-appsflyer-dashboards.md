@@ -1,6 +1,6 @@
 ---
 title: "Getting started with AppsFlyer dashboards"
-excerpt: "Learn how to navigate and use AppsFlyer dashboards to analyze your campaign performance and app behavior."
+excerpt: "The platform contains multiple dashboards. These dashboards enable you to view your campaign performance and app behavior."
 x-zendesk:
   id: 209680753
   url: https://support.appsflyer.com/hc/en-us/articles/209680753-Getting-started-with-AppsFlyer-dashboards
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-03-21T08:30:02Z'
   edited_at: '2023-02-15T13:15:05Z'
 ---
-**At a glance:** The platform contains multiple dashboards. These dashboards enable you to view your campaign performance and app behavior.
-
 ## AppsFlyer dashboards
 
 ![OverviewBasic.png](https://files.readme.io/58185f6682891435b05110cc9f7ecfa3204226fef526366f4aab9fbda76b2d8c-OverviewBasic.png)

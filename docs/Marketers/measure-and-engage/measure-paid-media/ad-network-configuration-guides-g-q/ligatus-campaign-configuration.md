@@ -1,6 +1,6 @@
 ---
 title: "Ligatus campaign configuration"
-excerpt: "Configure Ligatus, an AppsFlyer integrated partner, to record mobile attribution, cost, ad revenue, retargeting, and view-through attribution."
+excerpt: "Ligatus, an AppsFlyer ad network integrated partner, leads Native Advertising Solutions for Publishers, Advertisers, and Programmatic buyers offering high-quality and high-performance results. In addition to click-based mobile attribution, Ligatus also offers cost, ad revenue, retargeting, and view-through attribution, which you can record with AppsFlyer."
 x-zendesk:
   id: 211189743
   url: https://support.appsflyer.com/hc/en-us/articles/211189743-Ligatus-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-06-20T12:47:01Z'
   edited_at: '2026-06-16T11:41:41Z'
 ---
-**At a glance:** Ligatus, an AppsFlyer ad network integrated partner, leads Native Advertising Solutions for Publishers, Advertisers, and Programmatic buyers offering high-quality and high-performance results. In addition to click-based mobile attribution, Ligatus also offers cost, ad revenue, retargeting, and view-through attribution, which you can record with AppsFlyer.
-
 ![](https://cdn.appsflyer.com/marketplace/static/logo/ligatus.png)
 
 ## Setting up Ligatus

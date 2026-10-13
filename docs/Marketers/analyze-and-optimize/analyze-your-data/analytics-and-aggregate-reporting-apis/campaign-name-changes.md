@@ -1,6 +1,6 @@
 ---
 title: "Campaign name changes"
-excerpt: "Learn how changing campaign names affects aggregate data displays in AppsFlyer dashboards and reports."
+excerpt: "Change the names of campaigns without creating duplicate data displays."
 x-zendesk:
   id: 14038324952465
   url: https://support.appsflyer.com/hc/en-us/articles/14038324952465-Campaign-name-changes
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-03-26T10:56:19Z'
   edited_at: '2024-04-24T14:48:53Z'
 ---
-Change the names of campaigns without creating duplicate data displays.
-
 ## Campaign name changes
 
 Changing the names of campaigns affects the display of **aggregate data** in dashboards and reports. AppsFlyer displays campaigns using the campaign ID as the key. If there is more than one name associated with the same campaign ID, the most recently reported name is used to display data.

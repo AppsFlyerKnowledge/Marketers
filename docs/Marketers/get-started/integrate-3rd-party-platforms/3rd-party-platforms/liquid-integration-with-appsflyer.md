@@ -1,6 +1,6 @@
 ---
 title: "Liquid integration with AppsFlyer"
-excerpt: "Learn how to set up the Liquid integration with AppsFlyer to automate your campaigns and processes using their intelligent rules engine."
+excerpt: "Liquid, an AppsFlyer integrated partner, automates your campaigns and processes with no need to call your IT. Their intelligent rules engine acts based on user behavior and advanced analytics."
 x-zendesk:
   id: 207040626
   url: https://support.appsflyer.com/hc/en-us/articles/207040626-Liquid-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-12-24T11:36:06Z'
   edited_at: '2026-06-16T09:40:28Z'
 ---
-**At a glance:** Liquid, an AppsFlyer integrated partner, automates your campaigns and processes with no need to call your IT. Their intelligent rules engine acts based on user behavior and advanced analytics.
-
 > 📘 **Important!**
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.

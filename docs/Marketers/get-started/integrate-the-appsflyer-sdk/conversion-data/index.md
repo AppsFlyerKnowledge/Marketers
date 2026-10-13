@@ -1,6 +1,6 @@
 ---
 title: "Conversion data"
-excerpt: "Explore conversion data payloads and scenarios for user acquisition and retargeting using the AppsFlyer SDK."
+excerpt: "Conversion data payloads and scenarios for user acquisition and retargeting"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,12 +18,12 @@ Conversion data payloads and scenarios for user acquisition and retargeting
 
 <Cards>
   <Card title="Get conversion data using AppsFlyer SDK–Overview" href="/docs/get-conversion-data-using-appsflyer-sdk-overview" icon="fa-solid fa-code">
-    Overview of retrieving conversion data using the AppsFlyer SDK.
+    Use conversion data to identify various conversion scenarios, customize user experience, and more.
   </Card>
   <Card title="Get conversion data using AppsFlyer SDK–Retargeting" href="/docs/get-conversion-data-using-appsflyer-sdk-retargeting" icon="fa-solid fa-users">
-    Learn how to retrieve conversion data specifically for retargeting campaigns.
+    Learn how re-attributions and re-engagements reflect in the conversion data for SRNs and non-SRN user journeys.
   </Card>
   <Card title="Conversion data payloads and scenarios" href="/docs/conversion-data-payloads-and-scenarios" icon="fa-solid fa-bullhorn">
-    Detailed scenarios and payload examples for conversion data.
+    Use conversion data to identify various conversion scenarios, customize user experience, and more.
   </Card>
 </Cards>

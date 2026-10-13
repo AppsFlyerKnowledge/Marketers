@@ -1,6 +1,6 @@
 ---
 title: "AppsFlyer server IP address ranges (allowlisting)"
-excerpt: "A comprehensive guide to AppsFlyer's server IP address ranges and CIDR blocks required for network perimeter allowlisting."
+excerpt: "AppsFlyer IP addresses used for outgoing API requests."
 x-zendesk:
   id: 207447093
   url: https://support.appsflyer.com/hc/en-us/articles/207447093-AppsFlyer-server-IP-address-ranges-allowlisting
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-12-24T11:30:11Z'
   edited_at: '2023-07-12T00:00:57Z'
 ---
-**At a glance:** AppsFlyer IP addresses used for outgoing API requests.
-
 ## AppsFlyer server IP address ranges
 
 The IP addresses listed are controlled by and for the use of AppsFlyer. The list changes from time to time according to our capacity and operational requirements. We make every effort to make list changes infrequently.

@@ -1,6 +1,6 @@
 ---
 title: "Run an Incrementality for remarketing experiment"
-excerpt: "Learn how to set up and run an Incrementality experiment in AppsFlyer to measure the true incremental lift of your remarketing campaigns."
+excerpt: "Run an Incrementality experiment to understand the true impact of your remarketing campaigns."
 x-zendesk:
   id: 360014225577
   url: https://support.appsflyer.com/hc/en-us/articles/360014225577-Run-an-Incrementality-for-remarketing-experiment
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-10-12T19:26:09Z'
   edited_at: '2025-07-06T10:53:34Z'
 ---
-**At a glance:** Run an Incrementality experiment to understand the true impact of your remarketing campaigns.
-
 ![KB_toggle_final.jpg](https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg)
 
 ## About the experiment

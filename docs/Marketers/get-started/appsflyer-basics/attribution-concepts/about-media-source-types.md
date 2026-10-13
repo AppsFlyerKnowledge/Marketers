@@ -1,6 +1,6 @@
 ---
 title: "About media source types"
-excerpt: "Understand the basic media source types in AppsFlyer, including self-reporting networks, non-SRNs, and owned media."
+excerpt: "Understand the basic media source types in AppsFlyer."
 table_of_contents: false
 x-zendesk:
   id: 212188826
@@ -23,8 +23,6 @@ x-zendesk:
   created_at: '2016-09-01T09:36:27Z'
   edited_at: '2025-04-05T12:52:44Z'
 ---
-**At a glance:** Understand the basic media source types in AppsFlyer.
-
 A media source is an entity that displays ads. The AppsFlyer platform enables attribution recording from different types of media sources.
 
 | Type of media source | Description |

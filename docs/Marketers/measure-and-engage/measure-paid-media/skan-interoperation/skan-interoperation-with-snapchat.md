@@ -1,6 +1,6 @@
 ---
 title: "SKAN interoperation with Snapchat"
-excerpt: "Learn how to configure SKAN interoperability between AppsFlyer and Snapchat to share postbacks and conversion value measurement mapping."
+excerpt: "SKAN interoperability enables Snapchat to share SKAN postbacks with AppsFlyer and enables AppsFlyer to share your conversion value measurement mapping with Snapchat."
 x-zendesk:
   id: 360017604077
   url: https://support.appsflyer.com/hc/en-us/articles/360017604077-SKAN-interoperation-with-Snapchat
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-02-10T20:20:51Z'
   edited_at: '2024-01-04T10:56:54Z'
 ---
-**At a glance:** SKAN interoperability enables Snapchat to share SKAN postbacks with AppsFlyer and enables AppsFlyer to share your conversion value measurement mapping with Snapchat.
-
 ## SKAN interoperability: AppsFlyer &lt;-> Snapchat
 
 If you work with multiple ad network partners, the best practice is to configure your SKAN integration in AppsFlyer. By doing so, SKAN performance metrics, enriched with other metrics like cost, are available in the AppsFlyer platform. 

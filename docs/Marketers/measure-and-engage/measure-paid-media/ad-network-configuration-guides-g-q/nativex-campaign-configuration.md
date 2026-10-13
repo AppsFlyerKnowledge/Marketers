@@ -1,6 +1,6 @@
 ---
 title: "NativeX campaign configuration"
-excerpt: "Learn how to configure NativeX in AppsFlyer to measure mobile attribution, cost, and view-through data."
+excerpt: "NativeX, an AppsFlyer integrated partner, is a mobile advertising network specializing in native ad formats that seamlessly blend in with the user’s game or app, delivering higher revenues for developers. In addition to click-based mobile attribution, NativeX also offers cost and view-through attribution, which you can record with AppsFlyer."
 x-zendesk:
   id: 208209876
   url: https://support.appsflyer.com/hc/en-us/articles/208209876-NativeX-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-03-28T12:46:22Z'
   edited_at: '2026-08-13T08:46:59Z'
 ---
-**At a glance:** NativeX, an AppsFlyer integrated partner, is a mobile advertising network specializing in native ad formats that seamlessly blend in with the user’s game or app, delivering higher revenues for developers. In addition to click-based mobile attribution, NativeX also offers cost and view-through attribution, which you can record with AppsFlyer.
-
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mobvista.png?v=1%0A)
 
 ## Setting up NativeX

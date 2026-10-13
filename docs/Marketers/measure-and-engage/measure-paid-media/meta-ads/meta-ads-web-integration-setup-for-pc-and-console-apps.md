@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-09-20T09:54:52Z'
   edited_at: '2026-09-15T09:42:21Z'
 ---
-**At a glance:** Learn how to integrate Meta Web for PC and console apps with AppsFlyer and set up campaigns in Meta Web.
-
 > 📘 **Important!**
 >
 > This integration is only available for PC and console apps, such as Steam, Epic, or Native PC. For mobile apps, see the [Meta ads integration setup](/docs/meta-ads-integration-setup) page.

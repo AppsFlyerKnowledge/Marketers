@@ -1,6 +1,6 @@
 ---
 title: "Google Ads"
-excerpt: "Learn how to attribute Google Ads campaigns, set up integrations for advertisers and agencies, and configure cost and ad revenue tracking."
+excerpt: "Attribute Google Ads campaigns and work with Google Marketing Partners"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,42 +18,42 @@ Attribute Google Ads campaigns and work with Google Marketing Partners
 
 <Cards>
   <Card title="Google Ads (AdWords)—Integration setup for advertisers" href="/docs/google-ads-adwords-integration-setup-for-advertisers" icon="fa-solid fa-handshake">
-    Set up Google Ads integration to attribute campaigns for advertisers.
+    Integrate your Google Ads account with AppsFlyer to display attribution data from all of your campaigns.
   </Card>
   <Card title="Google Ads (AdWords)—Create web campaigns for website apps" href="/docs/google-ads-adwords-create-web-campaigns-for-website-apps" icon="fa-solid fa-bullhorn">
-    Learn how to create and attribute web campaigns for website apps.
+    Set up a Google Ads integration for your website app to send web conversion signals to Google via the Offline Conversion API (OCI).
   </Card>
   <Card title="Google Ads (AdWords)—Create web-based campaigns for mobile apps" href="/docs/google-ads-adwords-create-web-based-campaigns" icon="fa-solid fa-bullhorn">
-    Configure web-based campaigns for your Google Ads integration.
+    Create web campaigns to attribute web-to-app conversions from Google Ads
   </Card>
   <Card title="Google Ads Web—Integration for PC and console apps" href="/docs/google-ads-web-integration-for-pc-and-console-apps" icon="fa-solid fa-bullhorn">
-    Set up Google Ads Web attribution for PC and console applications.
+    Use Google Ads web campaigns to promote your apps on PC and console platforms and enable attribution. AppsFlyer supports Google web-based campaigns using cross-platform landing pages or direct attribution links.
   </Card>
   <Card title="Google Ads (AdWords)—Integration setup for agencies" href="/docs/google-ads-adwords-integration-setup-for-agencies" icon="fa-solid fa-bullhorn">
-    Guide for agencies setting up Google Ads integration on behalf of clients.
+    Setting up Google Ads integration with AppsFlyer — as an agency.
   </Card>
   <Card title="Google Ads (AdWords)—FAQ and discrepancies" href="/docs/google-ads-adwords-faq-and-discrepancies" icon="fa-solid fa-circle-question">
-    Find answers to frequently asked questions and resolve data discrepancies.
+    Troubleshoot common issues and discrepancies relating to Google Ads.
   </Card>
   <Card title="Google Ads (AdWords)—Re-engagement" href="/docs/google-ads-adwords-re-engagement" icon="fa-solid fa-bullhorn">
-    Configure and measure Google Ads re-engagement campaigns.
+    Measure Google Ads retargeting campaigns.
   </Card>
   <Card title="Google Ads (AdWords)—Cost and ad revenue" href="/docs/google-ads-adwords-cost-and-ad-revenue" icon="fa-solid fa-sack-dollar">
-    Track and attribute cost and ad revenue from your Google Ads campaigns.
+    Enable Google Ads cost and ad revenue data in AppsFlyer.
   </Card>
   <Card title="Google Ads postback partners—Configuration" href="/docs/google-ads-postback-partners-configuration" icon="fa-solid fa-handshake">
-    Configure postbacks for Google Ads partners.
+    Enable Google Ads postback partners to help run your Google Ads campaigns.
   </Card>
   <Card title="Recording multiple agency/MCC Google Ads accounts" href="/docs/recording-multiple-agency-mcc-google-ads-accounts" icon="fa-solid fa-handshake">
-    Manage and record attribution across multiple agency or MCC Google Ads accounts.
+    Set up recording for different Google Ads accounts so traffic gets attributed correctly.
   </Card>
   <Card title="Google AdMob—Ad revenue attribution configuration" href="/docs/google-admob-ad-revenue-attribution-configuration" icon="fa-solid fa-diagram-project">
-    Configure ad revenue attribution with Google AdMob.
+    Google AdMob, an AppsFlyer integrated partner, allows app owners to receive ad revenue data to be used for ad revenue attribution.
   </Card>
   <Card title="Bidalgo - Google Ads—Campaign configuration" href="/docs/bidalgo-google-ads-campaign-configuration" icon="fa-solid fa-bullhorn">
-    Configure Google Ads campaigns using Bidalgo.
+    Bidalgo, an AppsFlyer integrated partner, is a leading provider of Artificial Intelligence solutions to help app marketers scale their growth.
   </Card>
   <Card title="Adquant by Kenshoo - Google Ads—Campaign configuration" href="/docs/adquant-by-kenshoo-google-ads-campaign-configuration" icon="fa-solid fa-bullhorn">
-    Configure Google Ads campaigns using Adquant by Kenshoo.
+    Optimize Google AdWords campaigns by using Adquant by Kenshoo. When configured, AppsFlyer sends postbacks to Adquant.
   </Card>
 </Cards>

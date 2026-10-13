@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-08-11T09:58:07Z'
   edited_at: '2026-05-07T00:01:09Z'
 ---
-**At a glance:** The Protect360 dashboard provides insights about fraudulent traffic and installs blocked due to the application of validation rules.
-
 ## About Protect360 dashboard
 
 The Protect360 dashboard:

@@ -1,6 +1,6 @@
 ---
 title: "Ad network onboarding"
-excerpt: "Learn how to integrate with AppsFlyer as an ad network, manage your profile, set up user access, and configure attribution settings."
+excerpt: "Integration with AppsFlyer for ad networks"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,33 +18,33 @@ Integration with AppsFlyer for ad networks
 
 <Cards>
   <Card title="Getting started—onboarding guide for ad networks" href="/docs/getting-started-onboarding-guide-for-ad-networks" icon="fa-solid fa-rocket">
-    Learn the essential steps to get started and onboard your ad network with AppsFlyer.
+    Complete integration with AppsFlyer by setting up and testing your attribution link and postback integrations. Understand the steps, timelines, and dependencies of the process.
   </Card>
   <Card title="Self-serve integration management for ad networks" href="/docs/self-serve-integration-management-for-ad-networks" icon="fa-solid fa-handshake">
-    Manage your integration settings directly using self-serve tools.
+    Set up and manage your integration from the AppsFlyer dashboard.
   </Card>
   <Card title="User management for ad networks" href="/docs/user-management-for-ad-networks" icon="fa-solid fa-handshake">
-    Configure user accounts, roles, and permissions for your team.
+    Create and manage your ad network account's AppsFlyer users, and assign them a role defining which features they can access.
   </Card>
   <Card title="Implementing and using 2FA login" href="/docs/implementing-and-using-2fa-login" icon="fa-solid fa-code">
-    Secure your partner account by setting up and using two-factor authentication.
+    Use two-factor authentication (2FA) to add an extra layer of security to the login process. Login credentials for account users are supplemented by Google or Microsoft Authenticator or SMS verification.
   </Card>
   <Card title="AppsFlyer Partner Marketplace profile setup" href="/docs/appsflyer-partner-marketplace-profile-setup" icon="fa-solid fa-handshake">
-    Set up and optimize your public profile on the AppsFlyer Partner Marketplace.
+    Create a robust Partner Marketplace profile page with information about your company and its services and solutions.
   </Card>
   <Card title="Set up your list of authorized agencies" href="/docs/set-up-your-list-of-authorized-agencies" icon="fa-solid fa-puzzle-piece">
-    Manage and authorize agencies to run campaigns on your behalf.
+    Manage which agencies you authorize to run campaigns through your network integration.
   </Card>
   <Card title="CTV-to-mobile app view-through attribution for ad networks" href="/docs/ctv-to-mobile-app-view-through-attribution-for-ad-networks" icon="fa-solid fa-handshake">
-    Configure view-through attribution for Connected TV to mobile app campaigns.
+    Attribute mobile app installs to ads viewed on Connected TV (CTV) devices.
   </Card>
   <Card title="Preload attribution for partners" href="/docs/preload-attribution-for-partners" icon="fa-solid fa-handshake">
-    Understand and set up attribution for pre-installed mobile applications.
+    Attribute mobile app installs to campaigns that preload the app at the Original Equipment Manufacturer (OEM) or when the device is first turned on by the user.
   </Card>
   <Card title="Integration requests for partners" href="/docs/integration-requests-for-partners" icon="fa-solid fa-handshake">
-    Submit and track requests for new integrations or updates.
+    Request changes to your existing AppsFlyer integration settings, including postbacks, attribution URLs, and much more.
   </Card>
   <Card title="Using the Partner Assistant Chatbot" href="/docs/using-the-partner-assistant-chatbot" icon="fa-solid fa-robot">
-    Get quick support and answers using the automated Partner Assistant Chatbot.
+    Contact AppsFlyer support for partners through the Partner Assistant Chatbot for troubleshooting issues, opening a support ticket, or product guidance.
   </Card>
 </Cards>

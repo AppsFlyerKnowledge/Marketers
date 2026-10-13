@@ -16,15 +16,15 @@ x-zendesk:
 ---
 <Cards columns={2}>
   <Card title="Provide data" href="/docs/provide-data" icon="fa-solid fa-file-lines">
-    Learn how to send engagement data to AppsFlyer for attribution, including attribution link specifications, probabilistic modeling, and redirecting users.
+    Send engagement data to AppsFlyer for attribution
   </Card>
   <Card title="Receive data" href="/docs/receive-data" icon="fa-solid fa-file-lines">
-    Learn how to create postback templates to receive advertiser attribution data, including postback macros, retries, and troubleshooting.
+    Create postback templates to receive advertiser attribution data
   </Card>
   <Card title="End-user privacy" href="/docs/end-user-privacy" icon="fa-solid fa-user-shield">
-    Optimize your platform for the user privacy era with SKAN integration and Advanced Privacy guides.
+    Optimize your platform for the user privacy era
   </Card>
   <Card title="Cost sharing for ad networks" href="/docs/cost-sharing-for-ad-networks" icon="fa-solid fa-handshake">
-    Learn how to refine customer data by providing cost information through various cost-sharing options, APIs, and attribution links.
+    Refine customer data by providing cost information
   </Card>
 </Cards>

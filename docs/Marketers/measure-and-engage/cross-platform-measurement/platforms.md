@@ -1,6 +1,6 @@
 ---
 title: "Platforms"
-excerpt: "Learn how to promote and measure the attribution of your apps across different platforms, including CTV, Console, Desktop, and Web."
+excerpt: "Find out how to promote and measure the attribution of your apps according to the platforms they belong to"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,15 +18,15 @@ Find out how to promote and measure the attribution of your apps according to th
 
 <Cards>
   <Card title="Promoting CTV apps" href="/docs/promoting-ctv-apps" icon="fa-solid fa-tv">
-    Guides and resources for promoting and measuring Connected TV (CTV) applications.
+    How to promote and measure attribution of your CTV apps from anywhere
   </Card>
   <Card title="Promoting Console apps" href="/docs/promoting-console-apps" icon="fa-solid fa-gamepad">
-    Guides and resources for promoting and measuring gaming console applications.
+    How to promote and measure attribution of your Console apps from anywhere
   </Card>
   <Card title="Promoting Desktop apps" href="/docs/promoting-desktop-apps" icon="fa-solid fa-desktop">
-    Guides and resources for promoting and measuring desktop applications.
+    How to promote and measure attribution of your Desktop apps from anywhere
   </Card>
   <Card title="Promoting Web apps" href="/docs/promoting-web-apps" icon="fa-solid fa-globe">
-    Guides and resources for promoting and measuring web applications.
+    How to promote and measure attribution of your Web apps from anywhere
   </Card>
 </Cards>

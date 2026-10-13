@@ -1,6 +1,6 @@
 ---
 title: "MOLOCO campaign configuration"
-excerpt: "Learn how to configure MOLOCO integration in AppsFlyer, including setting up attribution links, postbacks, cost API, and partner permissions."
+excerpt: "MOLOCO, an AppsFlyer integrated partner, turns user data into ad performance, enabling mobile businesses to execute marketing and advertising monetization programs."
 x-zendesk:
   id: 360000691978
   url: https://support.appsflyer.com/hc/en-us/articles/360000691978-MOLOCO-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-12-16T07:37:12Z'
   edited_at: '2026-07-27T09:44:04Z'
 ---
-**At a glance:** MOLOCO, an AppsFlyer integrated partner, turns user data into ad performance, enabling mobile businesses to execute marketing and advertising monetization programs.
-
 ![](https://cdn.appsflyer.com/marketplace/static/logo/moloco.png?v=1%0A)
 
 ## Setting up MOLOCO

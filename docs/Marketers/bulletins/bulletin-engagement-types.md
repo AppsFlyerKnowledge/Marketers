@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Engagement types"
-excerpt: "Learn about the new engagement type fields added to AppsFlyer raw data reports, including preload, click-to-download, and engaged-view values."
 table_of_contents: false
 x-zendesk:
   id: 20161875390865

@@ -1,6 +1,6 @@
 ---
 title: "Integrate 3rd-party platforms"
-excerpt: "Learn how to integrate third-party platforms, Firebase, Google Tag Manager, and Google Analytics with AppsFlyer."
+excerpt: "Integrate 3rd-party platforms with AppsFlyer"
 x-zendesk:
   type: section
   id: 6551084534545
@@ -17,13 +17,13 @@ Integrate 3rd-party platforms with AppsFlyer
 
 <Cards>
   <Card title="3rd-party platforms" href="/docs/3rd-party-platforms" icon="fa-solid fa-file-lines">
-    Integrate and configure external third-party platforms with AppsFlyer.
+    Integrate tech partners and analytics platforms, such as Segment, mParticle, Amplitude, MixPanel, and Braze
   </Card>
   <Card title="Firebase and Google Tag Manager" href="/docs/firebase-and-google-tag-manager" icon="fa-solid fa-file-lines">
-    Set up Firebase and Google Tag Manager integrations.
+    Integrate Firebase with AppsFlyer using Google Tag Manager
   </Card>
   <Card title="Google Analytics" href="/docs/google-analytics" icon="fa-solid fa-chart-line">
-    Connect and sync your data with Google Analytics.
+    Integrate Google Analytics with AppsFlyer
   </Card>
 </Cards>
 

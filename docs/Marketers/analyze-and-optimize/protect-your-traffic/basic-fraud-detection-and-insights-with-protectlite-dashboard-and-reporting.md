@@ -1,6 +1,6 @@
 ---
 title: "Basic fraud detection and insights​ with ProtectLITE dashboard and reporting"
-excerpt: "ProtectLITE provides insights about fraudulent installs blocked by AppsFlyer's basic, free protection engine and validation rules."
+excerpt: "ProtectLITE provides insights about fraudulent installs blocked by our basic, free protection engine, and installs blocked due to the application of validation rules."
 x-zendesk:
   id: 360017223058
   url: https://support.appsflyer.com/hc/en-us/articles/360017223058-Basic-fraud-detection-and-insights-with-ProtectLITE-dashboard-and-reporting
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-01-25T09:47:02Z'
   edited_at: '2025-06-03T07:54:47Z'
 ---
-**At a glance:** ProtectLITE provides insights about fraudulent installs blocked by our basic, free protection engine, and installs blocked due to the application of validation rules.
-
 ## ProtectLITE
 
 ProtectLITE provides free, basic protection against install attribution fraud. Advanced fraud protection and detection are available with [Protect360](/docs/protect360-anti-fraud-guide).

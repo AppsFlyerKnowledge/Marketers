@@ -1,6 +1,6 @@
 ---
 title: "ROI360 cost aggregation overview"
-excerpt: "Learn about methods for advertisers to aggregate and view marketing cost data, including API, Cost Import, and attribution link methods."
+excerpt: "Learn about methods for advertisers to aggregate and view marketing cost data."
 x-zendesk:
   id: 207040526
   url: https://support.appsflyer.com/hc/en-us/articles/207040526-ROI360-cost-aggregation-overview
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-12-24T10:45:16Z'
   edited_at: '2026-10-05T06:57:44Z'
 ---
-**At a glance:** Learn about methods for advertisers to aggregate and view marketing cost data.
-
 ## Cost aggregation
 
 ROI360 does the following:

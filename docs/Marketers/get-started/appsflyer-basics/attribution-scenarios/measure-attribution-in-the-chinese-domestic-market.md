@@ -1,6 +1,6 @@
 ---
 title: "Measure attribution in the Chinese domestic market"
-excerpt: "Learn how to overcome Android attribution challenges in China by implementing OAID, IMEI, and configuring custom attribution links."
+excerpt: "Attribution of Android devices without GAID by using OAID or IMEI. Best practice for viewing attribution data in AppsFlyer."
 x-zendesk:
   id: 360002049858
   url: https://support.appsflyer.com/hc/en-us/articles/360002049858-Measure-attribution-in-the-Chinese-domestic-market
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-07-17T12:33:29Z'
   edited_at: '2025-04-05T12:56:57Z'
 ---
-At a glance: Attribution of Android devices without GAID by using OAID or IMEI. Best practice for viewing attribution data in AppsFlyer.
-
 ## Attribution Android apps in the Chinese domestic market
 
 In China, there are several challenges that app owners face:

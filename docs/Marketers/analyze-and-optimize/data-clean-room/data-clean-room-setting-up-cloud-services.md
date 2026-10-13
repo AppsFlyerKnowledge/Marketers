@@ -1,6 +1,6 @@
 ---
 title: "Data Clean Room—Setting up cloud services"
-excerpt: "Set up data warehouses and cloud storage buckets to share data with the Data Clean Room and receive reports."
+excerpt: "Set up one or more data warehouses (BigQuery, Snowflake) and/or cloud storage buckets (Amazon S3, GCS) to share data with the Data Clean Room and receive reports."
 x-zendesk:
   id: 4591167507217
   url: https://support.appsflyer.com/hc/en-us/articles/4591167507217-Data-Clean-Room-Setting-up-cloud-services

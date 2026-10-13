@@ -1,6 +1,6 @@
 ---
 title: "Test marketer campaign integration with the ad network"
-excerpt: "Learn how to test your ad network integration using marketer apps, including testing live apps, apps in development, and verifying postback data."
+excerpt: "Test ad network integration using marketer apps."
 x-zendesk:
   id: 4413093220113
   url: https://support.appsflyer.com/hc/en-us/articles/4413093220113-Test-marketer-campaign-integration-with-the-ad-network
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-12-08T04:41:04Z'
   edited_at: '2024-01-16T09:44:09Z'
 ---
-At a glance: Test ad network integration using marketer apps.
-
 ## Prerequisites
 
 Before you can start testing the marketer's integration with your ad network, there are a few requirements:

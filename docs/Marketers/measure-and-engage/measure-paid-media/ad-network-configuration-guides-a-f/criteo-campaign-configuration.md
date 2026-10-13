@@ -1,6 +1,6 @@
 ---
 title: "Criteo campaign configuration"
-excerpt: "Configure Criteo integration in AppsFlyer to measure mobile attribution, retargeting, cost data, and manage partner permissions."
+excerpt: "Criteo, an AppsFlyer ad network integrated partner, drives growth through machine-learning technology, data and performance at scale, and measurable ROI for its clients. In addition to click-based mobile attribution, Criteo also offers retargeting attribution, which you can record with AppsFlyer."
 x-zendesk:
   id: 360000601785
   url: https://support.appsflyer.com/hc/en-us/articles/360000601785-Criteo-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-03-27T06:56:54Z'
   edited_at: '2026-09-09T13:00:13Z'
 ---
-At a glance: Criteo, an AppsFlyer ad network integrated partner, drives growth through machine-learning technology, data and performance at scale, and measurable ROI for its clients. In addition to click-based mobile attribution, Criteo also offers retargeting attribution, which you can record with AppsFlyer.
-
 ## Setting up Criteo
 
 > 📘 Prerequisite

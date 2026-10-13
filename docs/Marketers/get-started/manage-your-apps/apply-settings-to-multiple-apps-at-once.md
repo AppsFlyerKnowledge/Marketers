@@ -1,5 +1,6 @@
 ---
 title: Apply settings to multiple apps at once
+excerpt: "Apply the same setting change to multiple apps at once instead of repeating it for each app individually."
 hidden: false
 deprecated: false
 x-zendesk:
@@ -23,8 +24,6 @@ x-zendesk:
   created_at: '2026-09-09T09:10:13Z'
   edited_at: '2026-09-23T10:38:40Z'
 ---
-Apply the same setting change to multiple apps at once instead of repeating it for each app individually.
-
 ## About bulk app settings
 
 You can now apply the same setting changes to multiple apps at once using bulk app settings on the App Settings page. This lets you make a change once and apply it to other eligible apps in a single operation.

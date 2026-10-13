@@ -1,6 +1,6 @@
 ---
 title: "Leanplum integration with AppsFlyer"
-excerpt: "Learn how to integrate Leanplum with AppsFlyer to send attribution data and postbacks for intelligent mobile marketing campaigns."
+excerpt: "Leanplum, an AppsFlyer integrated partner, is a mobile marketing platform, designed for intelligent action. Its integrated solution delivers engagement across messaging and the in-app experience. Leanplum offers Messaging, Automation, App Editing, Personalization, A/B Testing, and Analytics."
 x-zendesk:
   id: 211487846
   url: https://support.appsflyer.com/hc/en-us/articles/211487846-Leanplum-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-08-08T13:41:18Z'
   edited_at: '2026-06-16T09:59:12Z'
 ---
-**At a glance:** Leanplum, an AppsFlyer integrated partner, is a mobile marketing platform, designed for intelligent action. Its integrated solution delivers engagement across messaging and the in-app experience. Leanplum offers Messaging, Automation, App Editing, Personalization, A/B Testing, and Analytics.
-
 > 📘 **Important!**
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.

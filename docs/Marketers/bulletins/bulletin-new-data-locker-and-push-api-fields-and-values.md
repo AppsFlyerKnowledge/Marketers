@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: New Data Locker and Push API fields and values"
-excerpt: "Learn about the new SKAdNetwork 4 fields and Meta ads media source updates coming to Data Locker and Push API reports."
 table_of_contents: false
 x-zendesk:
   id: 11135475316113

@@ -1,6 +1,6 @@
 ---
 title: "Audiences - Import audience segments from internal systems"
-excerpt: "Import predefined audience segments from your internal systems to AppsFlyer Audiences to connect and maintain them with your advertising partners."
+excerpt: "Import predefined audience segments from your internal systems (such as BI and CRM) to AppsFlyer Audiences, allowing you to use Audiences to connect and maintain these segments with your advertising partners."
 x-zendesk:
   id: 360013291857
   url: https://support.appsflyer.com/hc/en-us/articles/360013291857-Audiences-Import-audience-segments-from-internal-systems
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-09-15T10:45:43Z'
   edited_at: '2026-10-05T06:46:48Z'
 ---
-**At a glance:** Import predefined audience segments from your internal systems (such as BI and CRM) to AppsFlyer Audiences, allowing you to use Audiences to connect and maintain these segments with your advertising partners.
-
 ## Why import audiences?
 
 In certain circumstances, you may have predefined audience segments in your internal systems. Importing these audiences (as lists of device and/or user identifiers) to AppsFlyer allows you to use Audiences as your central point for connecting and maintaining all of your audience segments with your advertising partners. Additionally, it enables you to take full advantage of other Audiences features, such as identifier matching/data enrichment and connected campaign metrics.

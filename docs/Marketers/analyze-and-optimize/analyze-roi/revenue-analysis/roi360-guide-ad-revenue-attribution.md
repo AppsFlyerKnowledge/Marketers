@@ -1,6 +1,6 @@
 ---
 title: "ROI360 guide - ad revenue attribution"
-excerpt: "Learn how to attribute ad revenue to complete your LTV performance view and determine ROI by matching user lifetime value to media spend campaigns."
+excerpt: "Attribute ad revenue to complete the LTV (lifetime value) performance view."
 x-zendesk:
   id: 217490046
   url: https://support.appsflyer.com/hc/en-us/articles/217490046-ROI360-guide-ad-revenue-attribution
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-12-12T10:53:27Z'
   edited_at: '2026-09-06T10:09:17Z'
 ---
-Attribute ad revenue to complete the LTV (lifetime value) performance view.
-
 ![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
 
 ## Ad revenue attribution

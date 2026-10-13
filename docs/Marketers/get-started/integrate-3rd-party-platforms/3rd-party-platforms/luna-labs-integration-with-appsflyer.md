@@ -1,6 +1,6 @@
 ---
 title: "Luna Labs integration with AppsFlyer"
-excerpt: "Learn how to set up and configure the Luna Labs integration with AppsFlyer to manage and optimize playables and video ads."
+excerpt: "Luna Labs is an end-to-end platform that allows its customers to create, manage, and optimize playables and video ads."
 x-zendesk:
   id: 360019465017
   url: https://support.appsflyer.com/hc/en-us/articles/360019465017-Luna-Labs-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-04-21T15:51:20Z'
   edited_at: '2026-06-16T09:38:55Z'
 ---
-**At a glance:** Luna Labs is an end-to-end platform that allows its customers to create, manage, and optimize playables and video ads.
-
 > ❗️ Important!
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.

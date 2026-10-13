@@ -1,6 +1,6 @@
 ---
 title: "AppsFlyer Partner Marketplace profile setup"
-excerpt: "Learn how to create and configure a robust Partner Marketplace profile page with information about your company, services, and solutions."
+excerpt: "Create a robust Partner Marketplace profile page with information about your company and its services and solutions."
 x-zendesk:
   id: 5688918701073
   url: https://support.appsflyer.com/hc/en-us/articles/5688918701073-AppsFlyer-Partner-Marketplace-profile-setup
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-04-25T14:41:12Z'
   edited_at: '2024-01-09T13:05:11Z'
 ---
-**At a glance**: Create a robust Partner Marketplace profile page with information about your company and its services and solutions.
-
 ## Overview
 
 AppsFlyer Partner Marketplace is where advertisers can find new ad networks, agencies, and other platforms to work with. Create your profile and provide as much information as possible for them to see in the marketplace and make educated choices.

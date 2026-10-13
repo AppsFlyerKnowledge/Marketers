@@ -1,6 +1,6 @@
 ---
 title: "Data delivery tools"
-excerpt: "Access your AppsFlyer data using Push API, Pull API, or various raw and aggregated data export download options."
+excerpt: "Use Push API, Pull API, or download options to access your data"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,18 +18,18 @@ Use Push API, Pull API, or download options to access your data
 
 <Cards>
   <Card title="Aggregated data export page" href="/docs/aggregated-data-export-page" icon="fa-solid fa-box-archive">
-    Learn how to export aggregated performance data directly from the AppsFlyer dashboard.
+    Download lifetime value (LTV) aggregate reports filtered by attribution date and media source.
   </Card>
   <Card title="Raw data export page" href="/docs/raw-data-export-page" icon="fa-solid fa-box-archive">
-    Find out how to download raw, user-level data reports from the export page.
+    Download raw data reports in CSV files. Up to 1M rows per download. Limit reports to the data you need by using filters.
   </Card>
   <Card title="Pull API raw data" href="/docs/pull-api-raw-data" icon="fa-solid fa-database">
-    Use HTTP GET requests to programmatically retrieve raw user-level data.
+    Use this API to get raw data reports in CSV files.
   </Card>
   <Card title="Push API streaming raw data" href="/docs/push-api-streaming-raw-data" icon="fa-solid fa-database">
-    Set up real-time streaming of raw installation and event data to your endpoints.
+    Stream raw data attribution events to your server-side endpoints.
   </Card>
   <Card title="Pull API aggregate data" href="/docs/pull-api-aggregate-data" icon="fa-solid fa-database">
-    Programmatically request aggregated performance and marketing metrics via API.
+    Use this Pull API to get your AppsFlyer aggregate reports in CSV files.
   </Card>
 </Cards>

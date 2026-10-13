@@ -1,6 +1,6 @@
 ---
 title: "[Beta] Set up custom metrics in My Dashboards"
-excerpt: "Learn how to define your own custom metrics and use them to analyze tailored data in My Dashboards."
+excerpt: "Define your own metrics and use them to view data in My Dashboards."
 x-zendesk:
   id: 31400289569169
   url: https://support.appsflyer.com/hc/en-us/articles/31400289569169--Beta-Set-up-custom-metrics-in-My-Dashboards
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-01-01T09:21:05Z'
   edited_at: '2026-08-19T10:32:26Z'
 ---
-At a glance: Define your own metrics and use them to view data in My Dashboards.
-
 ## About custom metrics
 
 Custom metrics let you tailor data analysis to your unique business needs by defining calculations based on existing data. They provide more control and flexibility than standard metrics, enabling you to combine multiple metrics, create projections, and customize KPIs.

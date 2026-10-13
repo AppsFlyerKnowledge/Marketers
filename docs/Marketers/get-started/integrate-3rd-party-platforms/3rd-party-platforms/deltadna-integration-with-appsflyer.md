@@ -1,6 +1,6 @@
 ---
 title: "deltaDNA integration with AppsFlyer"
-excerpt: "Learn how to integrate AppsFlyer with deltaDNA to maximize player engagement and lifetime value through real-time analytics and attribution data."
+excerpt: "deltaDNA, an AppsFlyer integrated partner, is the leading real-time analytics and marketing platform for mobile gaming. The combination of market-leading deep data functionality, ultra-high performance and a flexible, open environment allows users to maximize engagement and lifetime value through player segmentation, predictive modeling and real-time targeted interventions."
 x-zendesk:
   id: 212247706
   url: https://support.appsflyer.com/hc/en-us/articles/212247706-deltaDNA-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-09-04T06:41:51Z'
   edited_at: '2026-09-09T13:22:45Z'
 ---
-deltaDNA, an AppsFlyer integrated partner, is the leading real-time analytics and marketing platform for mobile gaming. The combination of market-leading deep data functionality, ultra-high performance and a flexible, open environment allows users to maximize engagement and lifetime value through player segmentation, predictive modeling and real-time targeted interventions.
-
 > ❗️ Important
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.

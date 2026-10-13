@@ -1,6 +1,6 @@
 ---
 title: "Provide data"
-excerpt: "Learn how to send engagement data to AppsFlyer for attribution, including attribution link specifications, probabilistic modeling, and redirecting users."
+excerpt: "Send engagement data to AppsFlyer for attribution"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,18 +18,18 @@ Send engagement data to AppsFlyer for attribution
 
 <Cards>
   <Card title="Attribution link specification for ad networks" href="/docs/attribution-link-specification-for-ad-networks" icon="fa-solid fa-handshake">
-    Learn about the structure and parameters required for ad network attribution links.
+    Ad networks integrating with AppsFlyer specify their attribution link according to this article.
   </Card>
   <Card title="About probabilistic modeling" href="/docs/about-probabilistic-modeling" icon="fa-solid fa-circle-info">
-    Understand how AppsFlyer uses probabilistic modeling to attribute conversions.
+    Learn how to set up your ad engagement data so AppsFlyer can apply probabilistic modelling when deterministic signals aren’t available.
   </Card>
   <Card title="Enriched Engagement Types guide for ad networks" href="/docs/enriched-engagement-types-guide-for-ad-networks" icon="fa-solid fa-handshake">
-    Explore the guide on enriched engagement types for advanced attribution scenarios.
+    Learn how to create Enriched Engagement Types (EET) attribution links to reflect users’ full spectrum of engagement and achieve accurate and effective campaign optimization.
   </Card>
   <Card title="Redirecting users to the app store" href="/docs/redirecting-users-to-the-app-store" icon="fa-solid fa-link">
-    Configure redirection paths to send users to the correct app store.
+    Learn about the options for redirecting users to the app store after an ad is served, and how to send engagement data to AppsFlyer.
   </Card>
   <Card title="Click signing for ad networks" href="/docs/click-signing-for-ad-networks" icon="fa-solid fa-handshake">
-    Secure your attribution links using click signing methods.
+    Add signature validation to clicks to avoid fraud liabilities and so fraudulent clicks aren't attributed to your ad network.
   </Card>
 </Cards>

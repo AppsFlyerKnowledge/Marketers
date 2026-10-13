@@ -1,6 +1,6 @@
 ---
 title: "Roku integration with AppsFlyer"
-excerpt: "Learn how to set up the Roku Ads integration with AppsFlyer to receive attribution and event data for your campaigns across Connected TV and mobile apps."
+excerpt: "Rokuads_int is an SRN integration that allows advertisers to integrate their mobile or Roku CTV app with Roku Ads to receive attribution and event data for their campaigns on Roku Ads."
 x-zendesk:
   id: 4404257169169
   url: https://support.appsflyer.com/hc/en-us/articles/4404257169169-Roku-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-07-19T09:00:10Z'
   edited_at: '2026-07-28T14:35:31Z'
 ---
-**At a glance** Rokuads\_int is an SRN integration that allows advertisers to integrate their mobile or Roku CTV app with Roku Ads to receive attribution and event data for their campaigns on Roku Ads.
-
 ## About Roku Ads Attribution
 
 Roku is a unique ad network that has ad inventory across both Connected TV (CTV) and mobile apps. The SRN integration between AppsFlyer and Roku Ads allows advertisers to measure multiple user journeys, including:

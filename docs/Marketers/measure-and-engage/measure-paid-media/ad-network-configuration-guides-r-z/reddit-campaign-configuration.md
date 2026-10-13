@@ -1,6 +1,6 @@
 ---
 title: "Reddit campaign configuration"
-excerpt: "Learn how to set up and configure your Reddit campaigns in AppsFlyer, including integration settings, attribution links, cost APIs, and raw data restrictions."
+excerpt: "Reddit, an AppsFlyer ad network integrated partner, is home to 430 million highly engaged monthly users who can’t be found anywhere else."
 x-zendesk:
   id: 360011016138
   url: https://support.appsflyer.com/hc/en-us/articles/360011016138-Reddit-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-07-09T09:50:46Z'
   edited_at: '2026-09-09T13:07:27Z'
 ---
-At a glance: Reddit, an AppsFlyer ad network integrated partner, is home to 430 million highly engaged monthly users who can’t be found anywhere else.
-
 ## Setting up Reddit
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.

@@ -1,6 +1,6 @@
 ---
 title: "Export OneLink URLs"
-excerpt: "Learn how to download a CSV file containing all the OneLink URLs created in the AppsFlyer user interface."
+excerpt: "Download all OneLink URLs created in the AppsFlyer user interface."
 x-zendesk:
   id: 4416027813905
   url: https://support.appsflyer.com/hc/en-us/articles/4416027813905-Export-OneLink-URLs
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-01-09T11:58:46Z'
   edited_at: '2026-10-01T13:43:04Z'
 ---
-**At a glance:** Download all OneLink URLs created in the AppsFlyer user interface.
-
 ## Export OneLink URLs
 
 Download a CSV file of all the OneLink URLs created per OneLink template using the OneLink setup in the AppsFlyer user interface. (OneLink URLs created via SDK, OneLink API, or bulk upload, aren't exported).

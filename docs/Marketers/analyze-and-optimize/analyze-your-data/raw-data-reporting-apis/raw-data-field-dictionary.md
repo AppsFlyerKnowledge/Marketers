@@ -1,6 +1,6 @@
 ---
 title: "Raw data field dictionary"
-excerpt: "The raw data field dictionary describes the contents, formats, and availability of raw data fields in AppsFlyer reports."
+excerpt: "The data field dictionary (raw data specification) describes field contents. It should be used to help you understand what fields mean, how they are formatted, and when they are available."
 x-zendesk:
   id: 208387843
   url: https://support.appsflyer.com/hc/en-us/articles/208387843-Raw-data-field-dictionary
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-03-10T14:37:44Z'
   edited_at: '2026-10-05T08:49:04Z'
 ---
-The data field dictionary (raw data specification) describes field contents. It should be used to help you understand what fields mean, how they are formatted, and when they are available.
-
 ## Overview
 
 The Raw data field dictionary table lists the raw data fields available in various AppsFlyer reports. The table is consistently being updated as additional raw data fields are added in AppsFlyer.

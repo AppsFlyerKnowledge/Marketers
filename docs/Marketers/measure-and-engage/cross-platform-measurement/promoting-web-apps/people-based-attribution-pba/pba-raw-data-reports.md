@@ -1,6 +1,6 @@
 ---
 title: "PBA raw data reports"
-excerpt: "PBA raw data reports are available via Data Locker to help you analyze user journeys and actions across your website and mobile app."
+excerpt: "PBA raw data reports are available via Data Locker."
 x-zendesk:
   id: 360001917778
   url: https://support.appsflyer.com/hc/en-us/articles/360001917778-PBA-raw-data-reports
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-07-01T07:53:57Z'
   edited_at: '2025-08-01T11:01:02Z'
 ---
-**At a glance**: PBA raw data reports are available via Data Locker.
-
 ## PBA raw data reports
 
 Use PBA raw data reports to analyze user journeys and actions.

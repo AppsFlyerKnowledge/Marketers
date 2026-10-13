@@ -1,6 +1,6 @@
 ---
 title: "Texting desktop users a link to your mobile app"
-excerpt: "Learn how to convert desktop web users to mobile app users by texting them a direct OneLink installation link via SMS."
+excerpt: "Convert desktop users to mobile app users using SMS vendors and OneLink."
 x-zendesk:
   id: 360003799658
   url: https://support.appsflyer.com/hc/en-us/articles/360003799658-Texting-desktop-users-a-link-to-your-mobile-app
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-11-21T09:13:52Z'
   edited_at: '2026-05-05T06:54:49Z'
 ---
-Convert desktop users to mobile app users using SMS vendors and OneLink.
-
 ![text-me-the-app-web-form.png](https://files.readme.io/d28b843ab7528138b4d85b147b8d613efde740d354238227b0f123030fa3a1de-360004940018.png)
 
 ## Introduction

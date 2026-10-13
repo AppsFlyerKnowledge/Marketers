@@ -1,6 +1,6 @@
 ---
 title: "Cocos2ds"
-excerpt: "Integrate AppsFlyer into games developed in Cocos2dX to measure installs, in-app events, media sources, and more."
+excerpt: "Integrate AppsFlyer into games developed in cocos2dX to measure installs, in-app events, media sources, and more."
 table_of_contents: false
 x-zendesk:
   id: 115005899505

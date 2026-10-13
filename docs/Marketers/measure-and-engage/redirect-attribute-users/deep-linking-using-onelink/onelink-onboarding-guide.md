@@ -1,6 +1,6 @@
 ---
 title: "OneLink onboarding guide"
-excerpt: "Use OneLink for powerful, customized user redirection, deep linking, and attribution from your campaigns across all devices and platforms."
+excerpt: "Use OneLink for powerful, customized user redirection, deep linking, and attribution from your campaigns, regardless of user device, operating system, channel, or platform, for maximum conversion."
 x-zendesk:
   id: 27699299657617
   url: https://support.appsflyer.com/hc/en-us/articles/27699299657617-OneLink-onboarding-guide
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-08-21T11:48:39Z'
   edited_at: '2026-05-13T07:07:16Z'
 ---
-At a glance: Use OneLink for powerful, customized user redirection, deep linking, and attribution from your campaigns, regardless of user device, operating system, channel, or platform, for maximum conversion.
-
 ![53010_Onelink.jpg](https://files.readme.io/c0d24ab87126bf765a89a25077b07d8678159cdb6f1b68eddc14a4cd2759b12a-30192941047185.jpg)
 
 ## About OneLink

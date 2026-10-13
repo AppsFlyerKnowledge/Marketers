@@ -1,6 +1,6 @@
 ---
 title: "Bidalgo (Meta campaign management partner) configuration"
-excerpt: "Learn how to set up and configure the Bidalgo integration in AppsFlyer to send in-app event postbacks and manage your Meta campaigns."
+excerpt: "Bidalgo, an AppsFlyer integrated partner (formerly known as Facebook Marketing Partners), is a leading provider of artificial intelligence solutions to help app marketers scale their growth."
 x-zendesk:
   id: 218002103
   url: https://support.appsflyer.com/hc/en-us/articles/218002103-Bidalgo-Meta-campaign-management-partner-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-11-20T07:49:34Z'
   edited_at: '2026-06-16T09:31:52Z'
 ---
-Bidalgo, an AppsFlyer integrated partner (formerly known as Facebook Marketing Partners), is a leading provider of artificial intelligence solutions to help app marketers scale their growth.
-
 ## Setting up Bidalgo
 
 > 📘 Prerequisite

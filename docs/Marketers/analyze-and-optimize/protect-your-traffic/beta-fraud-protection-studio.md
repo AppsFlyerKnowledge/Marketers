@@ -1,6 +1,6 @@
 ---
 title: "[Beta] Fraud protection studio"
-excerpt: "Fraud protection studio (FPS) provides greater control over how fraud detection is applied, allowing you to choose whether fraud detection data is blocked and reported or tagged."
+excerpt: "Fraud protection studio (FPS) provides greater control over how fraud detection is applied than usual methods. With FPS, you can choose whether fraud detection data is blocked and reported as fraud or tagged, empowering tailored fraud management."
 x-zendesk:
   id: 30754984040977
   url: https://support.appsflyer.com/hc/en-us/articles/30754984040977--Beta-Fraud-protection-studio
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-12-08T06:38:30Z'
   edited_at: '2026-08-19T10:37:41Z'
 ---
-**At a glance:** Fraud protection studio (FPS) provides greater control over how fraud detection is applied than usual methods. With FPS, you can choose whether fraud detection data is blocked and reported as fraud or tagged, empowering tailored fraud management.
-
 ## About fraud protection studio
 
 Fraud protection studio introduces a tagged detection status.

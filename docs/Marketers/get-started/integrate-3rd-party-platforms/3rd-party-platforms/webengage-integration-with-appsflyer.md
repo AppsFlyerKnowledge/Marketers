@@ -1,6 +1,6 @@
 ---
 title: "WebEngage integration with AppsFlyer"
-excerpt: "Learn how to set up and configure the WebEngage integration with AppsFlyer to send install and in-app event postbacks."
+excerpt: "WebEngage, an AppsFlyer integrated partner, is an Intelligent Marketing Cloud built for the mobile-first world."
 x-zendesk:
   id: 7898288493841
   url: https://support.appsflyer.com/hc/en-us/articles/7898288493841-WebEngage-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-07-25T13:44:42Z'
   edited_at: '2026-06-16T09:54:49Z'
 ---
-WebEngage, an AppsFlyer integrated partner, is an Intelligent Marketing Cloud built for the mobile-first world.
-
 > ❗️ Important!
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.

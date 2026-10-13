@@ -1,6 +1,6 @@
 ---
 title: "Set up the Conversions task"
-excerpt: "Learn how to configure conversion events for on-site and off-site campaigns in AppsFlyer's Data Collaboration Platform."
+excerpt: "AAG: Learn how to configure conversion events for on-site and off-site campaigns."
 x-zendesk:
   id: 38187770114449
   url: https://support.appsflyer.com/hc/en-us/articles/38187770114449-Set-up-the-Conversions-task
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-08-18T10:13:32Z'
   edited_at: '2026-05-27T09:32:18Z'
 ---
-**At a glance:** :AAG: Learn how to configure conversion events for on-site and off-site campaigns.
-
 [Conversion events](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#conversions) capture valuable post-engagement actions—such as purchases—across various campaign setups. While the structure and content of each conversion event remain consistent, the way conversions are measured, attributed, and shared varies depending on whether it’s an [on-site](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-campaigns), [off-site](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#off-site-campaigns), or [on-site and off-site](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-and-off-site-campaigns) campaign. This article explains how to set the Conversion task for each campaign type.
 
 ## Prerequisites

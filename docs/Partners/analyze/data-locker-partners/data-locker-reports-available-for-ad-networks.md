@@ -1,6 +1,6 @@
 ---
 title: "Data Locker—reports available for ad networks"
-excerpt: "An overview of the reports available to ad networks via Data Locker, including required permissions and data freshness details."
+excerpt: "Reports listed are available to ad networks via Data Locker. Advertisers must give the ad network explicit permission."
 x-zendesk:
   id: 4542778150545
   url: https://support.appsflyer.com/hc/en-us/articles/4542778150545-Data-Locker-reports-available-for-ad-networks
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-03-02T08:51:14Z'
   edited_at: '2025-03-25T11:15:41Z'
 ---
-At a glance: Reports listed are available to ad networks via Data Locker. Advertisers must give the ad network explicit permission.
-
 ## Reports available for ad networks
 
 | Report type (topic) | Which data access permissions are required? | Data freshness\* | Available to |

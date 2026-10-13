@@ -1,6 +1,6 @@
 ---
 title: "Validation Rules for ad networks and agencies"
-excerpt: "Learn how integrated partners, ad networks, and agencies can view validation rules, manage permissions, and access reports of blocked installs and in-app events."
+excerpt: "Advertisers use Validation Rules to manually define conditions to block installs, attribution, and in-app events of non-compliant installs/IAEs. Integrated partners (ad networks and agencies) can view the rules and get reports of blocked installs, attribution, and IAEs."
 x-zendesk:
   id: 115004751486
   url: https://support.appsflyer.com/hc/en-us/articles/115004751486-Validation-Rules-for-ad-networks-and-agencies
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-09-18T13:53:49Z'
   edited_at: '2024-01-11T12:27:23Z'
 ---
-**At a glance:** Advertisers use Validation Rules to manually define conditions to block installs, attribution, and in-app events of non-compliant installs/IAEs. Integrated partners (ad networks and agencies) can view the rules and get reports of blocked installs, attribution, and IAEs.
-
 ## About Validation Rules
 
 Validation rules:

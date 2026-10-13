@@ -1,6 +1,6 @@
 ---
 title: "Set up ROI360 ad revenue partner integrations via API"
-excerpt: "Configure and manage your AppsFlyer ad revenue partner integrations at the account or app level using the API."
+excerpt: "Configure ad revenue partner integrations for your AppsFlyer account or individual apps via API."
 x-zendesk:
   id: 9901416616465
   url: https://support.appsflyer.com/hc/en-us/articles/9901416616465-Set-up-ROI360-ad-revenue-partner-integrations-via-API
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-10-16T14:53:47Z'
   edited_at: '2025-04-05T11:17:41Z'
 ---
-**At a glance:** Configure ad revenue partner integrations for your AppsFlyer account or individual apps via API.
-
 ## Ad revenue partner integration API
 
 The ad revenue partner integration API is used to:

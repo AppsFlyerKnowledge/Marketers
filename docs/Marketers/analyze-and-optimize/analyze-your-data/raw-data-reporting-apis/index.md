@@ -1,6 +1,6 @@
 ---
 title: "Raw data reporting/APIs"
-excerpt: "Access your raw data via download, API, and Data Locker with our comprehensive reporting tools."
+excerpt: "Access your raw data via download, API, and Data Locker"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,12 +18,12 @@ Access your raw data via download, API, and Data Locker
 
 <Cards>
   <Card title="Raw data reporting overview" href="/docs/raw-data-reporting-overview" icon="fa-solid fa-database">
-    Learn about the fundamentals of raw data reporting and how to access your data.
+    Row-level data (aka raw data) describes events relating to users like installs, in-app events, website visits, Protect360 blocked installs, ad revenue generated, and user-associated postbacks sent to partners. Raw data reports are available via download, API, and Data Locker.
   </Card>
   <Card title="Raw data field dictionary" href="/docs/raw-data-field-dictionary" icon="fa-solid fa-database">
-    Explore the complete dictionary of raw data fields and their definitions.
+    The data field dictionary (raw data specification) describes field contents. It should be used to help you understand what fields mean, how they are formatted, and when they are available.
   </Card>
   <Card title="Data availability windows" href="/docs/data-availability-windows" icon="fa-solid fa-desktop">
-    Understand the retention periods and availability windows for your raw data.
+    Data availability depends on the report type and the defined availability window.
   </Card>
 </Cards>

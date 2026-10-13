@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Ad revenue reporting change"
-excerpt: "This bulletin outlines the change in AppsFlyer's ad revenue reporting, aligning data to the actual day of the ad display event instead of the day after."
 x-zendesk:
   id: 360007980057
   url: https://support.appsflyer.com/hc/en-us/articles/360007980057-Bulletin-Ad-revenue-reporting-change

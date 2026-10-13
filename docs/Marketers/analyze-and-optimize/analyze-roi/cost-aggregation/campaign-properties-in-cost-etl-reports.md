@@ -1,6 +1,6 @@
 ---
 title: "Campaign properties in cost ETL reports"
-excerpt: "Learn about campaign properties and how they display in AppsFlyer Cost ETL data for Meta ads, Google, and Snap."
+excerpt: "Learn about campaign properties and how they display in AppsFlyer Cost ETL data."
 x-zendesk:
   id: 360020994977
   url: https://support.appsflyer.com/hc/en-us/articles/360020994977-Campaign-properties-in-cost-ETL-reports
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-06-02T17:21:22Z'
   edited_at: '2025-04-05T11:08:21Z'
 ---
-**At a glance:** Learn about campaign properties and how they display in AppsFlyer Cost ETL data.
-
 ## About campaign properties
 
 Campaign properties are a special group of dimensions that represent various settings of an advertising campaign, including campaign objective, bid type, and bid amount. These are settings you normally view and edit in your ad network dashboard, but AppsFlyer pulls the campaign properties dimensions and makes the data available in Cost ETL, just as you view other dimensions.

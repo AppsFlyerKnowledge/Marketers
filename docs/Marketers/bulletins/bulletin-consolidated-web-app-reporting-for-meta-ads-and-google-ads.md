@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Consolidated Web+App reporting for Meta Ads and Google Ads"
-excerpt: "Learn about the consolidation of Meta Web and Google Web campaign reporting under main media sources for holistic mobile and web cost analysis."
 table_of_contents: false
 x-zendesk:
   id: 39686956300433

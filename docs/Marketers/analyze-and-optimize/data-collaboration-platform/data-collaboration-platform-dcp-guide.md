@@ -1,6 +1,6 @@
 ---
 title: "Data Collaboration Platform (DCP) guide"
-excerpt: "The AppsFlyer Data Collaboration Platform provides a seamless, privacy-centric solution for commerce media networks and collaborating brands to leverage combined data for maximum campaign results."
+excerpt: "The AppsFlyer Data Collaboration Platform provides a seamless, privacy-centric solution for commerce media networks and collaborating brands to leverage their combined data to achieve maximum campaign results and create powerful new ad revenue streams."
 x-zendesk:
   id: 26183285566353
   url: https://support.appsflyer.com/hc/en-us/articles/26183285566353-Data-Collaboration-Platform-DCP-guide

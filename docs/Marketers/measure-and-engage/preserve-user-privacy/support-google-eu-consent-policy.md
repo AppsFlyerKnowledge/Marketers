@@ -1,6 +1,6 @@
 ---
 title: "Support Google EU consent policy"
-excerpt: "Learn how AppsFlyer helps marketers comply with the Digital Markets Act (DMA) and support Google's updated EU user consent policy."
+excerpt: "AppsFlyer is helping marketers comply with the Digital Markets Act (DMA) and improve the value of their ads in Google. Find answers to frequently asked questions about compliance with the DMA and optimizing ad value."
 x-zendesk:
   id: 22310731147153
   url: https://support.appsflyer.com/hc/en-us/articles/22310731147153-Support-Google-EU-consent-policy
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-02-07T07:28:17Z'
   edited_at: '2026-08-14T10:58:57Z'
 ---
-**At a glance:** AppsFlyer is helping marketers comply with the Digital Markets Act (DMA) and improve the value of their ads in Google. Find answers to frequently asked questions about compliance with the DMA and optimizing ad value.
-
 ## Overview
 
 Google is updating its [EU user consent policy](https://www.google.com/about/company/user-consent-policy/?sjid=15416941068016224808-NA) in preparation for the enforcement of the [Digital Markets Act](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en)(DMA). As a Google [App Attribution Partner](https://ads.google.com/lp/appcampaigns/attribution/), AppsFlyer is adapting to the policy changes while empowering advertisers to get the most out of their ads in Google. The updated policy is in effect as of March 6, 2024.

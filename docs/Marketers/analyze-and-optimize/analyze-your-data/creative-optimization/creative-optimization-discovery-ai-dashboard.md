@@ -1,6 +1,6 @@
 ---
 title: "Creative Optimization Discovery AI dashboard"
-excerpt: "Analyze the performance of your creatives, scenes, and elements using the AI-powered Creative Optimization Discovery AI dashboard to produce data-driven, winning assets."
+excerpt: "Use the Creative Optimization Discovery AI dashboard to analyze the performance of your creatives and the scenes and elements they're built from, to produce and maintain data-driven, winning creatives."
 x-zendesk:
   id: 18565941422993
   url: https://support.appsflyer.com/hc/en-us/articles/18565941422993-Creative-Optimization-Discovery-AI-dashboard
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-09-14T14:10:49Z'
   edited_at: '2026-05-31T10:35:58Z'
 ---
-**At a glance:** Use the Creative Optimization Discovery AI dashboard to analyze the performance of your creatives and the scenes and elements they're built from, to produce and maintain data-driven, winning creatives.
-
 [![Main Discovery image.jpg](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)
 
 ## About the Creative Optimization Discovery AI dashboard

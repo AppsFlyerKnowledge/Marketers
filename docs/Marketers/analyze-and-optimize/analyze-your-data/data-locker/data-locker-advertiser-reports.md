@@ -1,6 +1,6 @@
 ---
 title: "Data Locker advertiser reports"
-excerpt: "An overview of the aggregate, raw, and advanced raw data reports available to advertisers via Data Locker."
+excerpt: "Aggregate and raw data reports available via Data Locker"
 x-zendesk:
   id: 4410643856657
   url: https://support.appsflyer.com/hc/en-us/articles/4410643856657-Data-Locker-advertiser-reports
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-11-11T09:48:51Z'
   edited_at: '2026-05-01T12:12:32Z'
 ---
-At a glance: Aggregate and raw data reports available via Data Locker
-
 ## Reports available via Data Locker for advertisers
 
 | Data type | Report group | Data Locker subscription required |

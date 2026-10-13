@@ -1,6 +1,6 @@
 ---
 title: "SKAN CV schema API for ad networks"
-excerpt: "Retrieve the SKAdNetwork conversion value schema mapped by advertisers to decode postbacks and measure post-install user activity."
+excerpt: "See the SKAN CV schema as mapped by the advertiser."
 table_of_contents: false
 x-zendesk:
   id: 11705009866001

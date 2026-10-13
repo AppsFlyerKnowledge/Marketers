@@ -1,6 +1,6 @@
 ---
 title: "Custom dashboards"
-excerpt: "Build and personalize your own customized dashboards inside AppsFlyer to select, name, and position your user acquisition metrics."
+excerpt: "Build your own customized dashboards inside AppsFlyer. You can easily select, name, and position the data in your own customized reports."
 x-zendesk:
   id: 212750286
   url: https://support.appsflyer.com/hc/en-us/articles/212750286-Custom-dashboards
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-09-15T11:06:24Z'
   edited_at: '2026-03-18T09:05:20Z'
 ---
-At a glance: Build your own customized dashboards inside AppsFlyer. You can easily select, name, and position the data in your own customized reports.
-
 ![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
 
 ## Custom Dashboards

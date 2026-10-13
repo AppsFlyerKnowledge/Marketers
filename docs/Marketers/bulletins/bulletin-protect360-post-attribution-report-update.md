@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Protect360 post-attribution report update"
-excerpt: "Protect360 post-attribution reports now display the valid contributor (media source) for hijacked installs and in-app events to assist with reconciliation."
 table_of_contents: false
 x-zendesk:
   id: 360015900018

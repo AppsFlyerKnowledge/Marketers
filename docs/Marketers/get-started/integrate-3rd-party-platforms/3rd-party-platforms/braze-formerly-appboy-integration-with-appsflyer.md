@@ -1,6 +1,6 @@
 ---
 title: "Braze (formerly Appboy) integration with AppsFlyer"
-excerpt: "Learn how to configure the integration between AppsFlyer and Braze to share user attribution data and drive deep lifecycle engagement."
+excerpt: "Braze, an AppsFlyer integrated partner, offers a lifecycle engagement platform for marketing, growth, and engagement teams. The platform enables marketers to connect human-to-human, at scale, with their customers, driving deep engagement and ROI. The center of our platform is the holistic user profile, which provides a single view of the customer."
 x-zendesk:
   id: 115001603343
   url: https://support.appsflyer.com/hc/en-us/articles/115001603343-Braze-formerly-Appboy-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-03-30T08:39:03Z'
   edited_at: '2026-08-14T15:06:14Z'
 ---
-Braze, an AppsFlyer integrated partner, offers a lifecycle engagement platform for marketing, growth, and engagement teams. The platform enables marketers to connect human-to-human, at scale, with their customers, driving deep engagement and ROI. The center of our platform is the holistic user profile, which provides a single view of the customer.
-
 Learn more at [braze.com](https://www.braze.com/).
 
 > 🚧 Important notes

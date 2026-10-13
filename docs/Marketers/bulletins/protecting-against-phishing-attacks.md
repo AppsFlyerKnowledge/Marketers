@@ -1,6 +1,5 @@
 ---
 title: "Protecting against phishing attacks"
-excerpt: "Learn how to identify phishing attempts, recognize employment scams, and protect your personal information by verifying official AppsFlyer communications."
 x-zendesk:
   id: 37207216165905
   url: https://support.appsflyer.com/hc/en-us/articles/37207216165905-Protecting-against-phishing-attacks

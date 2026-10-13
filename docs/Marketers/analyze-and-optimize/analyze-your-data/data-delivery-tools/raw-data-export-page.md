@@ -1,6 +1,6 @@
 ---
 title: "Raw data export page"
-excerpt: "Download raw data reports in CSV files with up to 1M rows per download, and limit reports to the data you need by using filters."
+excerpt: "Download raw data reports in CSV files. Up to 1M rows per download. Limit reports to the data you need by using filters."
 x-zendesk:
   id: 360008613838
   url: https://support.appsflyer.com/hc/en-us/articles/360008613838-Raw-data-export-page
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-05-11T22:25:33Z'
   edited_at: '2026-08-13T16:49:58Z'
 ---
-**At a glance:** Download raw data reports in CSV files. Up to 1M rows per download. Limit reports to the data you need by using filters.
-
 The following visual displays the first time you go to the **Raw data export** page; the **My reports** page displays if you have reports ready for download or duplication.
 
 ![RawDataSplash.png](https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png)

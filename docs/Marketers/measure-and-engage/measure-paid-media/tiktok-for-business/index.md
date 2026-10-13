@@ -1,6 +1,6 @@
 ---
 title: "TikTok for Business"
-excerpt: "Learn how to set up TikTok for Business for AppsFlyer attribution across mobile, web, PC, and console applications."
+excerpt: "Set up TikTok for Business for AppsFlyer attribution"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,18 +18,18 @@ Set up TikTok for Business for AppsFlyer attribution
 
 <Cards>
   <Card title="TikTok for Business—Advanced SRN integration setup" href="/docs/tiktok-for-business-advanced-srn-integration-setup" icon="fa-solid fa-puzzle-piece">
-    Configure the advanced Self-Reporting Network (SRN) integration between AppsFlyer and TikTok for Business.
+    TikTok for Business (tiktokglobal_int) is an advanced Self-Reporting Network (SRN) providing app owners the ability to measure click and view-based mobile attribution with AppsFlyer. This includes app installs coming from app and non-mobile TikTok campaigns.
   </Card>
   <Card title="TikTok for Business—Create web campaigns for website apps" href="/docs/tiktok-for-business-create-web-campaigns-for-website-apps" icon="fa-solid fa-bullhorn">
-    Set up and measure web campaigns designed specifically for website applications.
+    Set up a TikTok Web Ads integration for your website app to send web conversion signals to TikTok via the Events API.
   </Card>
   <Card title="TikTok for Business—Create web-based campaigns" href="/docs/tiktok-for-business-create-web-based-campaigns" icon="fa-solid fa-bullhorn">
-    Learn how to create and track standard web-based advertising campaigns on TikTok.
+    Use TikTok Ads Web campaigns to attribute web-to-app conversions from TikTok Ads
   </Card>
   <Card title="TikTok for Business—Web integration setup for PC and console apps" href="/docs/tiktok-for-business-web-integration-setup-for-pc-and-console-apps" icon="fa-solid fa-globe">
-    Configure web integration to attribute PC and console application installs and events.
+    Learn how to integrate TikTok Web for PC and console apps with AppsFlyer and set up campaigns in TikTok Web.
   </Card>
   <Card title="Attribution discrepancies between TikTok for Business and AppsFlyer" href="/docs/attribution-discrepancies-between-tiktok-for-business-and-appsflyer" icon="fa-solid fa-diagram-project">
-    Understand and troubleshoot reporting differences between TikTok and AppsFlyer.
+    Learn about the differences in attribution models between TikTok for Business and AppsFlyer.
   </Card>
 </Cards>

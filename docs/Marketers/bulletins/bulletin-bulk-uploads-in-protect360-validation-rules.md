@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Bulk uploads in Protect360 validation rules"
-excerpt: "Protect360 validation rules now support bulk uploading CSV files with up to 17K values for specific rule conditions."
 table_of_contents: false
 x-zendesk:
   id: 27288400396049

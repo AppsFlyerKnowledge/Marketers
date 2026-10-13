@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-11-28T12:53:35Z'
   edited_at: '2026-09-15T10:17:44Z'
 ---
-**At a glance:** Learn how to integrate Snapchat Ads web for PC and console apps with AppsFlyer and set up campaigns in Snapchat Ads web.
-
 > 📘 **Warning**
 >
 > This integration is only available for PC and console apps, such as Steam, Epic, or Native PC. For mobile apps, see the [Snapchat Ads integration setup](/docs/tiktok-for-business-advanced-srn-integration-setup) page.

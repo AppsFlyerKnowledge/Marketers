@@ -1,6 +1,6 @@
 ---
 title: "Chartboost campaign configuration"
-excerpt: "Learn how to configure Chartboost integration in AppsFlyer, including setting up attribution links, cost API, ad revenue tracking, and permissions."
+excerpt: "Chartboost, an AppsFlyer ad network integrated partner, is one of the largest mobile games-only ad platforms to increase revenue. In addition to click-based mobile attribution, Chartboost also offers cost, ad revenue, and view-through attribution, which you can record with AppsFlyer."
 x-zendesk:
   id: 209731553
   url: https://support.appsflyer.com/hc/en-us/articles/209731553-Chartboost-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-03-28T08:01:01Z'
   edited_at: '2026-09-09T12:35:22Z'
 ---
-At a glance: Chartboost, an AppsFlyer ad network integrated partner, is one of the largest mobile games-only ad platforms to increase revenue. In addition to click-based mobile attribution, Chartboost also offers cost, ad revenue, and view-through attribution, which you can record with AppsFlyer.
-
 > 📘 Note
 >
 > Integrating the Chartboost SDK is only necessary if you act as a Chartboost publisher and wish to attribute ad revenue. Otherwise, the AppsFlyer SDK is all that is required. For more information, see this article's [ad revenue section](/docs/chartboost-campaign-configuration#ad-revenue-tab).

@@ -1,6 +1,6 @@
 ---
 title: "Click signing for ad networks"
-excerpt: "Learn how ad networks can sign click URLs with HMAC-SHA256 signatures to prevent click fraud and click flooding liabilities."
+excerpt: "Add signature validation to clicks to avoid fraud liabilities and so fraudulent clicks aren't attributed to your ad network."
 x-zendesk:
   id: 360017831497
   url: https://support.appsflyer.com/hc/en-us/articles/360017831497-Click-signing-for-ad-networks
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-02-22T09:33:52Z'
   edited_at: '2024-11-17T09:37:22Z'
 ---
-**At a glance:** Add signature validation to clicks to avoid fraud liabilities and so fraudulent clicks aren't attributed to your ad network.
-
 ## About click signing
 
 With minimal tech, fraudsters can send clicks on behalf of an ad network and create thousands, or even millions, of fake clicks that get sent to AppsFlyer. Sometimes, the ad networks themselves aren't aware of the issue.

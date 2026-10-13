@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Apple Ads adds timestamps to all attribution claims"
-excerpt: "Apple's AdServices API now includes engagement timestamps for all iOS attribution claims, improving lookback window accuracy, while ad groups with age or gender targeting will return false payloads."
 table_of_contents: false
 x-zendesk:
   id: 50216486847249

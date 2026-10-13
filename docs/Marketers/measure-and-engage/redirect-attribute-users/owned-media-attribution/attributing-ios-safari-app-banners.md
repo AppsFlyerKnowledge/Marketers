@@ -1,6 +1,5 @@
 ---
 title: "Attributing iOS Safari App Banners"
-excerpt: "Learn how to implement and attribute iOS Safari App Banners using AppsFlyer measurement links."
 x-zendesk:
   id: 115000171743
   url: https://support.appsflyer.com/hc/en-us/articles/115000171743-Attributing-iOS-Safari-App-Banners

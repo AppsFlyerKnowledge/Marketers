@@ -1,6 +1,6 @@
 ---
 title: "Meta ads discrepancies"
-excerpt: "Learn about the differences in attribution models, lookback windows, and in-app event reporting between Meta ads and AppsFlyer."
+excerpt: "Learn about the differences in attribution models between Meta ads and AppsFlyer."
 x-zendesk:
   id: 4410481130641
   url: https://support.appsflyer.com/hc/en-us/articles/4410481130641-Meta-ads-discrepancies

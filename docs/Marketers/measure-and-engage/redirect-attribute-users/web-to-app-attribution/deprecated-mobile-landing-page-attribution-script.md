@@ -1,6 +1,5 @@
 ---
 title: "[Deprecated] Mobile landing page attribution script"
-excerpt: "This deprecated script generates URLs embedded behind buttons on mobile websites to redirect visitors to download apps while supporting install attribution and deep linking."
 x-zendesk:
   id: 360016643258
   url: https://support.appsflyer.com/hc/en-us/articles/360016643258--Deprecated-Mobile-landing-page-attribution-script

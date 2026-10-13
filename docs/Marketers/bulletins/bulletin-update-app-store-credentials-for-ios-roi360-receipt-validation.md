@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Update App Store credentials for iOS ROI360 receipt validation"
-excerpt: "Learn how to update your App Store credentials in AppsFlyer to transition your ROI360 iOS validation flow to Apple's new in-app purchase validation APIs."
 x-zendesk:
   id: 27880822483985
   url: https://support.appsflyer.com/hc/en-us/articles/27880822483985-Bulletin-Update-App-Store-credentials-for-iOS-ROI360-receipt-validation

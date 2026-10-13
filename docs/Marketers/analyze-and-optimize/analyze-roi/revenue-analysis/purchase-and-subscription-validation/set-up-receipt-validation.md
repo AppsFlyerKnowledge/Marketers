@@ -1,6 +1,6 @@
 ---
 title: "Set up receipt validation"
-excerpt: "Learn how to set up receipt validation to measure revenue from in-app purchases and subscriptions, and verify it with the App Store and Google Play."
+excerpt: "Receipt validation measures revenue from in-app purchases and subscriptions, and verifies it with the app stores, ensuring accurate Return on Ad Spend (ROAS) results."
 x-zendesk:
   id: 42137474889489
   url: https://support.appsflyer.com/hc/en-us/articles/42137474889489-Set-up-receipt-validation
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-12-21T15:14:21Z'
   edited_at: '2026-06-18T16:05:25Z'
 ---
-**At a glance:** Receipt validation measures revenue from in-app purchases and subscriptions, and verifies it with the app stores, ensuring accurate Return on Ad Spend (ROAS) results.
-
 ## Upgrade to new Receipt validation
 
 The legacy Receipt validation will be shut down on **September 7, 2026**, see [Bulletin: Legacy Receipt validation is deprecated](/docs/bulletin-legacy-receipt-validation-is-deprecated). If your app uses the legacy Receipt validation, migrate to the new one by performing the setup steps below. Before you start, review the key differences and prepare the migration.

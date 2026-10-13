@@ -18,30 +18,30 @@ x-zendesk:
 ---
 <Cards columns="2">
   <Card title="Marketer onboarding" href="/docs/marketer-onboarding" icon="fa-solid fa-rocket">
-    Get started with AppsFlyer using our step-by-step guides, migration resources, and onboarding materials designed specifically for marketers.
+    Check out all AppsFlyer can do for you with a short video and step-by-step guide
   </Card>
 
   <Card title="Manage your account" href="/docs/manage-your-account" icon="fa-solid fa-user-gear">
-    Learn how to manage your account security, users, permissions, invoices, support tickets, and more.
+    Manage account security, users, permissions, invoices, support tickets, and more
   </Card>
 
   <Card title="Manage your apps" href="/docs/manage-your-apps" icon="fa-solid fa-mobile-screen-button">
-    Learn how to define your apps in AppsFlyer, configure app settings, manage currencies and time zones, and transfer apps between accounts.
+    Define your apps in AppsFlyer and manage app settings
   </Card>
 
   <Card title="Integrate the AppsFlyer SDK" href="/docs/integrate-the-appsflyer-sdk" icon="fa-solid fa-code">
-    Plan your SDK integration, in-app events, and data delivery options across Android, iOS, Windows, and other platforms.
+    Plan your SDK integration, in-app events, and data delivery options
   </Card>
 
   <Card title="Integrate 3rd-party platforms" href="/docs/integrate-3rd-party-platforms" icon="fa-solid fa-puzzle-piece">
-    Learn how to integrate third-party platforms, Firebase, Google Tag Manager, and Google Analytics with AppsFlyer.
+    Integrate 3rd-party platforms with AppsFlyer
   </Card>
 
   <Card title="AppsFlyer basics" href="/docs/appsflyer-basics" icon="fa-solid fa-circle-info">
-    Review core attribution concepts, explore the AppsFlyer platform, and learn how to work with agencies.
+    Review attribution concepts, learn the AppsFlyer platform, work with agencies
   </Card>
 
   <Card title="AI" href="/docs/ai" icon="fa-solid fa-robot">
-    Discover how to use AI to unlock insights, automate workflows, and drive smarter decisions within AppsFlyer.
+    Use AI to unlock insights, automate workflows, and drive smarter decisions.
   </Card>
 </Cards>

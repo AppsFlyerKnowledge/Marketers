@@ -1,6 +1,6 @@
 ---
 title: "Persona.ly RTB campaign configuration"
-excerpt: "Learn how to configure the integration with Persona.ly RTB in AppsFlyer, including setting up attribution links, cost APIs, and postbacks."
+excerpt: "Persona.ly RTB (personalyrtb_int), an AppsFlyer integrated partner, is a mobile-first DSP operating worldwide. Using proprietary bidder and machine-learning algorithms, Persona.ly offers transparent, performance-driven, highly targeted UA and retargeting solutions."
 x-zendesk:
   id: 18699025653265
   url: https://support.appsflyer.com/hc/en-us/articles/18699025653265-Persona-ly-RTB-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-09-20T07:13:43Z'
   edited_at: '2026-07-23T13:13:23Z'
 ---
-Persona.ly RTB (personalyrtb_int), an AppsFlyer integrated partner, is a mobile-first DSP operating worldwide. Using proprietary bidder and machine-learning algorithms, Persona.ly offers transparent, performance-driven, highly targeted UA and retargeting solutions.
-
 ![persona.ly_logo.png](https://files.readme.io/b0dacbdc4c2e884610a040b5049a1410a88214f8275320163764bcf09f90305b-18699636413969.png)
 
 ## Setting up Persona.ly RTB

@@ -1,6 +1,6 @@
 ---
 title: "Epic integration with AppsFlyer"
-excerpt: "Integrate your Epic game with AppsFlyer to receive attribution and event data for your Epic campaigns."
+excerpt: "Integrate your Epic game with AppsFlyer to receive attribution and event data for your Epic campaigns. The Epic integration supports attribution and in-app event recording for Epic games (in other words, attribution and recording on a user's device)."
 x-zendesk:
   id: 14241298075921
   url: https://support.appsflyer.com/hc/en-us/articles/14241298075921-Epic-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-04-03T07:18:07Z'
   edited_at: '2026-05-19T08:10:01Z'
 ---
-Integrate your Epic game with AppsFlyer to receive attribution and event data for your Epic campaigns. The Epic integration supports attribution and in-app event recording for Epic games (in other words, attribution and recording on a user's device).
-
 ## About Epic game attribution
 
 Games running on Epic can integrate with AppsFlyer via API (both S2S and client-side) to receive attribution data and performance measurements about which sources and campaigns drive app open and in-app events. Marketers rely on these insights to measure and optimize marketing activities.

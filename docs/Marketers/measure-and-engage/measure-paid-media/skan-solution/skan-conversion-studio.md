@@ -1,6 +1,6 @@
 ---
 title: "SKAN Conversion Studio"
-excerpt: "Configure and optimize your SKAdNetwork conversion values to measure post-install user revenue, engagement, and retention."
+excerpt: "Use SKAN Conversion Studio to set which user engagements in the app to measure, and for how long. Measure revenue, conversion, engagement, and retention during a limited post-install period. By adding the Single Source of Truth measurement we can let you know if the user was attributed by both AppsFlyer and SKAN."
 x-zendesk:
   id: 4403727223185
   url: https://support.appsflyer.com/hc/en-us/articles/4403727223185-SKAN-Conversion-Studio
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-07-08T09:26:58Z'
   edited_at: '2026-04-26T06:04:28Z'
 ---
-**At a glance**: Use SKAN Conversion Studio to set which user engagements in the app to measure, and for how long. Measure revenue, conversion, engagement, and retention during a limited post-install period. By adding the Single Source of Truth measurement we can let you know if the user was attributed by both AppsFlyer and SKAN.
-
 <Embed title="SKAN 4 Conversion Studio (including lock window)" typeOfEmbed="vimeo" url="https://player.vimeo.com/video/810457121?h=a3acc3ee41&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" providerUrl="https://player.vimeo.com" />
 
 ## SKAN Conversion Studio basics

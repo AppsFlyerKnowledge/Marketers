@@ -1,6 +1,6 @@
 ---
 title: "Ibotta campaign configuration"
-excerpt: "Learn how to configure the AppsFlyer integration with Ibotta, including setting up attribution links, mapping in-app events, and granting partner permissions."
+excerpt: "Ibotta, an AppsFlyer integrated ad network partner, makes it easier for consumers to earn cashback on everyday purchases through a single smartphone app."
 x-zendesk:
   id: 360000295445
   url: https://support.appsflyer.com/hc/en-us/articles/360000295445-Ibotta-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-02-18T07:55:23Z'
   edited_at: '2026-09-08T07:19:36Z'
 ---
-**At a glance:** Ibotta, an AppsFlyer integrated ad network partner, makes it easier for consumers to earn cashback on everyday purchases through a single smartphone app.
-
 ![](https://cdn.appsflyer.com/marketplace/static/logo/ibotta.png?v=1%0A%0A)
 
 ## Setting up Ibotta

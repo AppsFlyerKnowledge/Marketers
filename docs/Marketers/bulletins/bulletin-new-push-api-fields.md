@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: New Push API fields"
-excerpt: "Three new fields have been added to the AppsFlyer Push API: engagement_type, event_type, and store_product_page."
 table_of_contents: false
 x-zendesk:
   id: 20161752179601

@@ -1,6 +1,6 @@
 ---
 title: "Testing the SDK integration for marketers"
-excerpt: "Learn how to test your Android, iOS, and CTV app integrations with AppsFlyer using the SDK Integration Tests page or attribution links."
+excerpt: "Test your Android or iOS app integration with AppsFlyer."
 x-zendesk:
   id: 360001559405
   url: https://support.appsflyer.com/hc/en-us/articles/360001559405-Testing-the-SDK-integration-for-marketers
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-11-12T14:15:08Z'
   edited_at: '2026-08-13T12:49:29Z'
 ---
-Test your Android or iOS app integration with AppsFlyer.
-
 ## Overview
 
 After the SDK integration is complete you can verify that the SDK is communicating successfully with AppsFlyer servers. Marketers can choose between two testing methods:

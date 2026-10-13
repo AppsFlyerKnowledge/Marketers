@@ -1,6 +1,6 @@
 ---
 title: "Server-to-Server (S2S) API for Web Performance Measurement"
-excerpt: "The S2S API for Web Performance Measurement lets you send web visits and events to AppsFlyer directly from your server, bypassing browser limitations like ad blockers and cookie restrictions."
+excerpt: "The S2S API for Web Performance Measurement lets you send web visits and events to AppsFlyer directly from your server, bypassing browser limitations like ad blockers and cookie restrictions. Use it alongside the Web SDK or on its own to get more complete, higher-quality attribution data."
 x-zendesk:
   id: 45670116601617
   url: https://support.appsflyer.com/hc/en-us/articles/45670116601617-Server-to-Server-S2S-API-for-Web-Performance-Measurement
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2026-04-12T15:09:07Z'
   edited_at: '2026-10-04T12:54:37Z'
 ---
-The S2S API for Web Performance Measurement lets you send web visits and events to AppsFlyer directly from your server, bypassing browser limitations like ad blockers and cookie restrictions. Use it alongside the Web SDK or on its own to get more complete, higher-quality attribution data.
-
 ## About the S2S API for web attribution
 
 AppsFlyer supports two ways to send web data for attribution: the Web SDK (client-side) and the S2S API (server-to-server, or S2S). You can use either method independently or combine them depending on your setup and needs.

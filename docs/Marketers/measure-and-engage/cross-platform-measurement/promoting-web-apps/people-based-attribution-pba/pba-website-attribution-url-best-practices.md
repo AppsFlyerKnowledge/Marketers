@@ -1,6 +1,6 @@
 ---
 title: "PBA website attribution URL best practices"
-excerpt: "Learn the best practices for structuring website attribution URLs to achieve optimal campaign granularity and accurate reporting in AppsFlyer."
+excerpt: "Best practices to attribute your website attribution campaigns with the best campaign granularity available."
 x-zendesk:
   id: 6313062676497
   url: https://support.appsflyer.com/hc/en-us/articles/6313062676497-PBA-website-attribution-URL-best-practices
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-05-23T05:29:27Z'
   edited_at: '2026-05-05T06:53:16Z'
 ---
-Best practices to attribute your website attribution campaigns with the best campaign granularity available.
-
 ## PBA website attribution URLs
 
 To get the best campaign granularity results combined with the most accurate attribution in your website attribution data, populate URLs (links), bringing users to your website using the practices detailed in this article.

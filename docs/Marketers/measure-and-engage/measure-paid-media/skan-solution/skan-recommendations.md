@@ -1,6 +1,6 @@
 ---
 title: "SKAN recommendations"
-excerpt: "Use SKAN recommendations to optimize your conversion value settings and receive more accurate post-install activity measurements."
+excerpt: "Use SKAN recommendations to optimize your conversion value settings and receive more accurate post-install activity measurements ."
 x-zendesk:
   id: 7078169815057
   url: https://support.appsflyer.com/hc/en-us/articles/7078169815057-SKAN-recommendations

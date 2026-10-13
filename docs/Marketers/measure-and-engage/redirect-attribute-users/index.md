@@ -1,6 +1,6 @@
 ---
 title: "Redirect & attribute users"
-excerpt: "Set up owned media, deep link users, and attribute web and mobile user journeys."
+excerpt: "Set up owned media, deep link users, attribute web and mobile user journeys (PBA)"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,15 +18,15 @@ Set up owned media, deep link users, attribute web and mobile user journeys (PBA
 
 <Cards>
   <Card title="Deep linking using OneLink" href="/docs/deep-linking-using-onelink" icon="fa-solid fa-link">
-    Configure deep linking and deferred deep linking using AppsFlyer OneLink.
+    Convert and deep link your owned media users with OneLink
   </Card>
   <Card title="Web-to-app attribution" href="/docs/web-to-app-attribution" icon="fa-solid fa-diagram-project">
-    Attribute and measure user journeys from web visits to mobile app installs.
+    Convert and attribute mobile website visitors with our attribution solutions
   </Card>
   <Card title="Owned media attribution" href="/docs/owned-media-attribution" icon="fa-solid fa-diagram-project">
-    Measure performance and attribute conversions from your own marketing channels.
+    Measure owned-media user journeys: user invites, cross-promotion, SMS, and more
   </Card>
   <Card title="Email service providers" href="/docs/email-service-providers" icon="fa-solid fa-envelope">
-    Integrate with email service providers to attribute campaigns and deep link users.
+    Integrate AppsFlyer with leading email service providers (ESPs)
   </Card>
 </Cards>

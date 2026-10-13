@@ -1,5 +1,6 @@
 ---
 title: Adobe ESP integration with AppsFlyer
+excerpt: "Set up an Adobe ESP integration with AppsFlyer to enable seamless and secure deep linking in your email campaigns for better user engagement and conversion rates."
 hidden: false
 deprecated: false
 x-zendesk:
@@ -23,8 +24,6 @@ x-zendesk:
   created_at: '2026-09-23T06:43:55Z'
   edited_at: '2026-09-23T10:35:28Z'
 ---
-Set up an Adobe ESP integration with AppsFlyer to enable seamless and secure deep linking in your email campaigns for better user engagement and conversion rates.
-
 ![adobe_appsflyer_banner_updated.png](https://files.readme.io/95ae69b9b07c2972e03213509fac02516f7ffb300688deb72db5c9aa744e67cf-51180732192401.png)
 
 ## About the Adobe ESP integration

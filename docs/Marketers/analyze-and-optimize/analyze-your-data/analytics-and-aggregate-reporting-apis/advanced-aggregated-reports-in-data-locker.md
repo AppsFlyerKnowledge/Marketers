@@ -1,6 +1,6 @@
 ---
 title: "Advanced aggregated reports in Data Locker"
-excerpt: "Advanced aggregated reports in Data Locker contain aggregated attribution, events, and revenue data with optimal freshness, accuracy, and granularity."
+excerpt: "Advanced aggregated reports in Data Locker contain aggregated data with optimal data freshness, accuracy, granularity, and unlimited volume."
 x-zendesk:
   id: 23127074968721
   url: https://support.appsflyer.com/hc/en-us/articles/23127074968721-Advanced-aggregated-reports-in-Data-Locker
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-03-06T10:46:12Z'
   edited_at: '2025-03-10T14:45:58Z'
 ---
-Advanced aggregated reports in Data Locker contain aggregated data with optimal data freshness, accuracy, granularity, and unlimited volume.
-
 ## Advanced aggregated reports in Data Locker
 
 Advanced aggregated reports in Data Locker:

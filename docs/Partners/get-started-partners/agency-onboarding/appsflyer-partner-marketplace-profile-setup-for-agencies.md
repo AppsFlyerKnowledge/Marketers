@@ -1,6 +1,6 @@
 ---
 title: "AppsFlyer Partner Marketplace profile setup for agencies"
-excerpt: "Learn how to create and configure your agency profile page in the AppsFlyer Partner Marketplace to showcase your services and attract potential advertisers."
+excerpt: "Create your agency profile page in the Partner Marketplace with information about your company, its services, and solutions."
 x-zendesk:
   id: 21231679419793
   url: https://support.appsflyer.com/hc/en-us/articles/21231679419793-AppsFlyer-Partner-Marketplace-profile-setup-for-agencies
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-12-27T07:05:59Z'
   edited_at: '2024-01-30T12:01:55Z'
 ---
-At a glance: Create your agency profile page in the Partner Marketplace with information about your company, its services, and solutions.
-
 ## Overview
 
 AppsFlyer Partner Marketplace is where advertisers can find new ad networks, agencies, and other platforms to work with. Create your profile and provide as much information as possible for them to see in the marketplace and make educated choices.

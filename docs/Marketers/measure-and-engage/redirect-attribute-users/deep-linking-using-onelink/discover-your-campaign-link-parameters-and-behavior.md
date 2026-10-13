@@ -1,6 +1,6 @@
 ---
 title: "Discover your campaign link parameters and behavior"
-excerpt: "Learn how to use the Link Discovery feature to analyze your AppsFlyer campaign links, understand their parameters, and verify expected user redirection behavior."
+excerpt: "Discover the parameters included in your AppsFlyer campaign links and understand the expected user experience and link behavior."
 x-zendesk:
   id: 16678138044689
   url: https://support.appsflyer.com/hc/en-us/articles/16678138044689-Discover-your-campaign-link-parameters-and-behavior

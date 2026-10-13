@@ -1,6 +1,6 @@
 ---
 title: "Data Collaboration Platform (DCP) - Configure collaboration measurement"
-excerpt: "Learn how to configure the Data Collaboration Platform (DCP) to perform SKU-level attribution based on conversion, engagement, and campaign mapping data."
+excerpt: "Learn how to configure DCP to perform SKU-level attribution based on the conversion, engagement, and campaign mapping data."
 x-zendesk:
   id: 32147174933905
   url: https://support.appsflyer.com/hc/en-us/articles/32147174933905-Data-Collaboration-Platform-DCP-Configure-collaboration-measurement
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-01-27T09:58:46Z'
   edited_at: '2026-03-05T00:01:07Z'
 ---
-At a glance: Learn how to configure DCP to perform SKU-level attribution based on the conversion, engagement, and campaign mapping data.
-
 ## Overview
 
 After [preparing the conversion, engagement, and campaign-mapping](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement) data, you can configure DCP to use them for measurement and attribution:

@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-04-28T13:26:59Z'
   edited_at: '2026-07-27T13:03:23Z'
 ---
-**At a glance:** Set up DCP connections to connect your data sources, enrich your data, and export audiences to cloud storage and media partners.
-
 ## About DCP connections
 
 Connections determine how DCP ingests your data and exports your audiences. After [setting up your cloud services](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services), connect them to DCP using the **Manage connections** modal. The following connection types are available:

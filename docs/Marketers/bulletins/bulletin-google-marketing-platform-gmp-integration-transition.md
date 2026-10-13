@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Google Marketing Platform (GMP) integration transition"
-excerpt: "Learn how to transition from the legacy DoubleClick integration to the new DV360 integration to comply with Google's updated EU user consent policy."
 table_of_contents: false
 x-zendesk:
   id: 21035061438737

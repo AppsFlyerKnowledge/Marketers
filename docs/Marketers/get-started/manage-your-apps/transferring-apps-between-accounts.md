@@ -1,6 +1,6 @@
 ---
 title: "Transferring apps between accounts"
-excerpt: "Learn how to transfer apps between AppsFlyer accounts, including prerequisites, transfer scope, and step-by-step procedures for both senders and receivers."
+excerpt: "Transfer apps between AppsFlyer accounts by following the steps described in this article (for admins of both the sender and receiver accounts)."
 x-zendesk:
   id: 360001336005
   url: https://support.appsflyer.com/hc/en-us/articles/360001336005-Transferring-apps-between-accounts
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-07-24T07:56:37Z'
   edited_at: '2026-09-22T10:53:22Z'
 ---
-Transfer apps between AppsFlyer accounts by following the steps described in this article (for admins of both the sender and receiver accounts).
-
 ![App transfer process animation showing the transfer wizard steps](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
 
 ## App transfer between accounts

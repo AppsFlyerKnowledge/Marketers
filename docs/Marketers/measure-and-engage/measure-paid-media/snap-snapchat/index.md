@@ -1,6 +1,6 @@
 ---
 title: "Snap (Snapchat)"
-excerpt: "Set up Snap for AppsFlyer attribution and configure advanced SRN integrations, web campaigns, and marketing partners."
+excerpt: "Set up Snap for AppsFlyer attribution"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,21 +18,21 @@ Set up Snap for AppsFlyer attribution
 
 <Cards>
   <Card title="Snapchat—Advanced SRN integration setup" href="/docs/snapchat-advanced-srn-integration-setup" icon="fa-solid fa-puzzle-piece">
-    Configure advanced Self-Reporting Network (SRN) integration settings for Snapchat.
+    Learn how to set up the integration between AppsFlyer and Snapchat to enable attribution measurement. Snapchat is an advanced SRN (Self-Reporting Network).
   </Card>
   <Card title="Snapchat—Create web campaigns for website apps" href="/docs/snapchat-create-web-campaigns-for-website-apps" icon="fa-solid fa-bullhorn">
-    Learn how to create and measure Snapchat web campaigns for website apps.
+    Set up a Snapchat Web Ads integration for your website app to send web conversion signals to Snapchat via the Conversions API.
   </Card>
   <Card title="Snapchat—Create web-based campaigns" href="/docs/snapchat-create-web-based-campaigns" icon="fa-solid fa-bullhorn">
-    Set up and optimize web-based advertising campaigns on Snapchat.
+    Use Snapchat Ads Web campaigns to attribute web-to-app conversions from Snapchat Ads
   </Card>
   <Card title="Snapchat—Web integration setup for PC and console apps" href="/docs/snapchat-web-integration-setup-for-pc-and-console-apps" icon="fa-solid fa-globe">
-    Configure web integration for measuring PC and console app campaigns.
+    Learn how to integrate Snapchat Ads web for PC and console apps with AppsFlyer and set up campaigns in Snapchat Ads web.
   </Card>
   <Card title="Snapchat marketing partners setup" href="/docs/snapchat-marketing-partners-setup" icon="fa-solid fa-handshake">
-    Connect and configure Snapchat marketing partners within AppsFlyer.
+    Integrate with Snapchat marketing partners to measure campaigns you run with them. When configured, AppsFlyer sends postbacks to the configured Snapchat marketing partner.
   </Card>
   <Card title="Snapchat integration discrepancies" href="/docs/snapchat-integration-discrepancies" icon="fa-solid fa-puzzle-piece">
-    Troubleshoot and understand data discrepancies in your Snapchat integration.
+    Learn about the different discrepancies between Snapchat and AppsFlyer dashboards and reposts.
   </Card>
 </Cards>

@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Minimum time between sessions"
-excerpt: "This bulletin details the change in the calculation of the sessions metric in AppsFlyer, introducing a minimum time between sessions timer."
 table_of_contents: false
 x-zendesk:
   id: 360016827858

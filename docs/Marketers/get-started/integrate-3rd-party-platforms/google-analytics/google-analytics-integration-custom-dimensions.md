@@ -1,6 +1,6 @@
 ---
 title: "Google Analytics integration—Custom dimensions"
-excerpt: "Learn how to set up the integration with Google Analytics using custom dimensions to send AppsFlyer's attribution data."
+excerpt: "Set up the integration with Google Analytics using custom dimensions."
 x-zendesk:
   id: 4413033740817
   url: https://support.appsflyer.com/hc/en-us/articles/4413033740817-Google-Analytics-integration-Custom-dimensions
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-12-07T13:34:54Z'
   edited_at: '2026-08-14T16:22:39Z'
 ---
-Set up the integration with Google Analytics using custom dimensions.
-
 ## Custom dimensions on Google Analytics
 
 There is another method for sending AppsFlyer's attribution data to Google analytics, that is set up on GA and not on AppsFlyer's dashboard.

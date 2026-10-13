@@ -1,6 +1,6 @@
 ---
 title: "Pivot table—user metrics"
-excerpt: "Learn how to view and customize user metrics like LTV, activity, Protect360, and retention using AppsFlyer Pivot reports."
+excerpt: "View different user metrics—LTV, activity, Protect360, and retention. Download results to CSV files for ingestion by your BI systems. Pivot supports multiple apps in a single query. Use to generate Master API calls."
 x-zendesk:
   id: 115001421846
   url: https://support.appsflyer.com/hc/en-us/articles/115001421846-Pivot-table-user-metrics
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-03-16T13:11:23Z'
   edited_at: '2026-03-19T11:52:08Z'
 ---
-**At a glance**: View different user metrics—LTV, activity, Protect360, and retention. Download results to CSV files for ingestion by your BI systems. Pivot supports multiple apps in a single query. Use to generate Master API calls.
-
 ## About pivot reports page
 
 Using Pivot, you generate customized reports containing user acquisition metrics. Pivot comes with a number of pre-defined reports to use as a base from which you create your customized reports. Reports created by a given account user are available to all users.

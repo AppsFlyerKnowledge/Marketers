@@ -1,6 +1,6 @@
 ---
 title: "Measure podcast-based campaigns"
-excerpt: "Learn how to overcome the attribution challenge of mobile app advertising on podcasts using AppsFlyer solutions."
+excerpt: "Overcome the attribution challenge of mobile app advertising on podcasts by using one of several AppsFlyer solutions."
 x-zendesk:
   id: 360004494318
   url: https://support.appsflyer.com/hc/en-us/articles/360004494318-Measure-podcast-based-campaigns
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-12-22T15:49:12Z'
   edited_at: '2026-06-11T10:00:09Z'
 ---
-**At a glance:** Overcome the attribution challenge of mobile app advertising on podcasts by using one of several AppsFlyer solutions.
-
 ## Podcast attribution methods
 
 Podcasts are a relatively untapped source of mobile user traffic. Podcast users may react favorably to mobile app ads, but attribution is a challenge. That is because podcasts don’t have a visual interface that generates user impressions or clicks.

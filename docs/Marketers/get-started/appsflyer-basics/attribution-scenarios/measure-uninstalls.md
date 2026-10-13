@@ -1,6 +1,6 @@
 ---
 title: "Measure uninstalls"
-excerpt: "Learn how to measure and analyze your app's uninstall rate to determine which media sources, campaigns, and creatives bring the highest quality users."
+excerpt: "Measure the uninstall rate for your app and determine which sources (media sources, campaigns, ad creatives, and geo) bring quality users."
 x-zendesk:
   id: 4408933557137
   url: https://support.appsflyer.com/hc/en-us/articles/4408933557137-Measure-uninstalls
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-10-14T08:03:47Z'
   edited_at: '2026-08-14T15:06:29Z'
 ---
-Measure the uninstall rate for your app and determine which sources (media sources, campaigns, ad creatives, and geo) bring quality users.
-
 ## Overview
 
 To understand the value of your app users, you must analyze both install and uninstall rates. The uninstall metric can help you measure your app's performance, and understand when and why users leave your app.

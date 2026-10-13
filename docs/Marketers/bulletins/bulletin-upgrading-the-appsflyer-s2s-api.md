@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Upgrading the AppsFlyer S2S API"
-excerpt: "AppsFlyer has upgraded its server-to-server (S2S) API for in-app events to provide a more secure experience and reduce fraud."
 table_of_contents: false
 x-zendesk:
   id: 20509378973457

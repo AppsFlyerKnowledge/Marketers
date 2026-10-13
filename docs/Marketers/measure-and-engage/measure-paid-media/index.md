@@ -1,6 +1,6 @@
 ---
 title: "Measure paid media"
-excerpt: "Set up paid media sources and SKAdNetwork for attribution measurement."
+excerpt: "Set up paid media sources and SKAdNetwork for attribution measurement"
 x-zendesk:
   type: section
   id: 6550990672401
@@ -15,61 +15,61 @@ x-zendesk:
 ---
 <Cards>
   <Card title="Android privacy sandbox" href="/docs/android-privacy-sandbox" icon="fa-solid fa-user-shield">
-    Learn about Android privacy sandbox integration.
+    All about Android Privacy Sandbox: Topics, Protected App Signals API, Attribution API, and Protected Audiences API
   </Card>
   <Card title="Media source configuration" href="/docs/media-source-configuration" icon="fa-solid fa-bullhorn">
-    Configure your media sources for attribution.
+    Attribution link structure and setup guides for working with integrated partners
   </Card>
   <Card title="SKAN interoperation" href="/docs/skan-interoperation" icon="fa-solid fa-lock">
-    Understand SKAdNetwork interoperation.
+    Set up SKAN integrated partners for AppsFlyer SKAN attribution
   </Card>
   <Card title="SKAN solution" href="/docs/skan-solution" icon="fa-solid fa-lock">
-    Explore the SKAdNetwork solution.
+    All about iOS attribution: our SKAN solution, Conversion Studio, ATT, and LAT
   </Card>
   <Card title="Amazon Ads" href="/docs/amazon-ads" icon="fa-solid fa-bullhorn">
-    Set up and measure Amazon Ads campaigns.
+    Set up Amazon Ads for AppsFlyer attribution
   </Card>
   <Card title="Apple Ads" href="/docs/apple-ads" icon="fa-solid fa-bullhorn">
-    Configure Apple Search Ads integration.
+    Set up Apple Ads and its partners for AppsFlyer attribution
   </Card>
   <Card title="Google Ads" href="/docs/google-ads" icon="fa-solid fa-bullhorn">
-    Connect and measure Google Ads campaigns.
+    Attribute Google Ads campaigns and work with Google Marketing Partners
   </Card>
   <Card title="Google Marketing Platform (GMP)" href="/docs/google-marketing-platform-gmp" icon="fa-solid fa-file-lines">
-    Integrate with Google Marketing Platform.
+    Integrate with GMP Display & Video 360 and Campaign Manager 360, and review data and possible discrepancies
   </Card>
   <Card title="Meta ads" href="/docs/meta-ads" icon="fa-solid fa-bullhorn">
-    Set up Meta ads attribution.
+    All about the Meta ads integration
   </Card>
   <Card title="Meta campaign management partners" href="/docs/meta-campaign-management-partners" icon="fa-solid fa-handshake">
-    Manage campaigns with Meta partners.
+    Send postbacks to Meta campaign management partners to optimize your Meta ads campaigns
   </Card>
   <Card title="Pinterest" href="/docs/pinterest" icon="fa-solid fa-file-lines">
-    Measure Pinterest advertising campaigns.
+    Set up Pinterest and its partners for AppsFlyer attribution
   </Card>
   <Card title="Snap (Snapchat)" href="/docs/snap-snapchat" icon="fa-solid fa-file-lines">
-    Configure Snapchat attribution.
+    Set up Snap for AppsFlyer attribution
   </Card>
   <Card title="TikTok for Business" href="/docs/tiktok-for-business" icon="fa-solid fa-file-lines">
-    Set up TikTok for Business campaigns.
+    Set up TikTok for Business for AppsFlyer attribution
   </Card>
   <Card title="X Ads (formerly Twitter Ads)" href="/docs/x-ads-formerly-twitter-ads" icon="fa-solid fa-bullhorn">
-    Measure X Ads campaigns.
+    Set up X Ads and its partners for AppsFlyer attribution
   </Card>
   <Card title="Ad network configuration guides (A-F)" href="/docs/ad-network-configuration-guides-a-f" icon="fa-solid fa-handshake">
-    Configuration guides for ad networks starting with A through F.
+    Set up selected ad networks for AppsFlyer attribution
   </Card>
   <Card title="Ad network configuration guides (G-Q)" href="/docs/ad-network-configuration-guides-g-q" icon="fa-solid fa-handshake">
-    Configuration guides for ad networks starting with G through Q.
+    Set up selected ad networks for AppsFlyer attribution
   </Card>
   <Card title="Ad network configuration guides (R-Z)" href="/docs/ad-network-configuration-guides-r-z" icon="fa-solid fa-handshake">
-    Configuration guides for ad networks starting with R through Z.
+    Set up selected ad networks for AppsFlyer attribution
   </Card>
   <Card title="China market" href="/docs/china-market" icon="fa-solid fa-earth-asia">
-    Attribution solutions for the Chinese market.
+    Promote Android and iOS apps in China from elsewhere in the world
   </Card>
   <Card title="China domestic market ad network configuration" href="/docs/china-domestic-market-ad-network-configuration" icon="fa-solid fa-handshake">
-    Configure domestic ad networks in China.
+    Set up selected domestic China ad networks for AppsFlyer attribution
   </Card>
 </Cards>
 

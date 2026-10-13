@@ -1,6 +1,6 @@
 ---
 title: "Data Collaboration Platform (DCP) - Create a collaboration"
-excerpt: "Learn how to create, manage, and administer collaborations in the AppsFlyer Data Collaboration Platform (DCP) to securely leverage first-party data."
+excerpt: "Collaborations enable commerce media networks and brands to leverage combined data to create new ad revenue streams and achieve maximum campaign results."
 x-zendesk:
   id: 32192739295377
   url: https://support.appsflyer.com/hc/en-us/articles/32192739295377-Data-Collaboration-Platform-DCP-Create-a-collaboration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-01-28T14:17:59Z'
   edited_at: '2026-02-16T09:48:48Z'
 ---
-Collaborations enable commerce media networks and brands to leverage combined data to create new ad revenue streams and achieve maximum campaign results.
-
 ## About collaborations
 
 The AppsFlyer [Data Collaboration Platform (DCP)](/docs/data-collaboration-platform-dcp-guide) empowers commerce media networks and brands to partner up and unlock the potential of their first-party data to reach high-intent users. The secure, privacy-centric platform enables seamless collaborations, allowing partners to generate new ad revenue streams and build custom audiences from collaborative data for activation in the commerce media network or in media channels such as Meta, Google, and more.

@@ -1,6 +1,6 @@
 ---
 title: "Customer User ID field (CUID)"
-excerpt: "Learn how the Customer User ID (CUID) enables you to group and analyze user events across different devices, media sources, and channels."
+excerpt: "The CUID enables you to group events of the same user across different devices, media sources, or channels."
 x-zendesk:
   id: 207032016
   url: https://support.appsflyer.com/hc/en-us/articles/207032016-Customer-User-ID-field-CUID
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-11-18T11:55:22Z'
   edited_at: '2026-09-10T17:02:50Z'
 ---
-The CUID enables you to group events of the same user across different devices, media sources, or channels.
-
 ## What is CUID?
 
 The Customer User ID (CUID) is a unique user identifier. The app owner usually generates and sets it at the time of user registration. The CUID lets app owners follow user journeys across different devices.

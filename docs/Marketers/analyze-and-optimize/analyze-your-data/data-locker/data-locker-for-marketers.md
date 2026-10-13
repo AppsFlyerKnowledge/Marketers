@@ -1,6 +1,5 @@
 ---
 title: "Data Locker for marketers"
-excerpt: "Data Locker sends your report data to cloud storage for loading into your BI systems, supporting destinations like AWS, GCS, Azure, BigQuery, and Snowflake."
 x-zendesk:
   id: 360000877538
   url: https://support.appsflyer.com/hc/en-us/articles/360000877538-Data-Locker-for-marketers

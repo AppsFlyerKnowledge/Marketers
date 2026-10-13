@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Supporting the new Google EU consent policy"
-excerpt: "An overview of the updates and required actions for advertisers to comply with Google's updated EU user consent policy under the Digital Markets Act."
 table_of_contents: false
 x-zendesk:
   id: 21660448176785

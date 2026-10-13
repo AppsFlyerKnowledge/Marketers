@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-12-16T11:39:36Z'
   edited_at: '2023-12-28T12:30:40Z'
 ---
-**At a glance:** Test your AppsFlyer iOS integration using the AppsFlyer Partner Integrations app to trigger regular and Advanced Privacy postbacks.
-
 ## iOS integration testing
 
 Testing consists of the following elements:

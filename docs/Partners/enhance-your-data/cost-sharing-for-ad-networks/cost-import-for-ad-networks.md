@@ -1,6 +1,6 @@
 ---
 title: "Cost Import for ad networks"
-excerpt: "Learn how ad networks can report campaign costs directly to AppsFlyer via CSV files using email or file upload."
+excerpt: "Learn how ad networks can report the advertiser's campaign costs directly to AppsFlyer via CSV files."
 x-zendesk:
   id: 360002868097
   url: https://support.appsflyer.com/hc/en-us/articles/360002868097-Cost-Import-for-ad-networks
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-10-20T06:03:13Z'
   edited_at: '2025-09-10T14:33:39Z'
 ---
-**At a glance:** Learn how ad networks can report the advertiser's campaign costs directly to AppsFlyer via CSV files.
-
 ## Cost Import for ad networks
 
 ![AdspendIngestion.jpg](https://files.readme.io/e870005c5f20531a2d06cc78b47a82a8a1f730f2c04728f5d0a5674c1c70129a-24507313816337.jpg)

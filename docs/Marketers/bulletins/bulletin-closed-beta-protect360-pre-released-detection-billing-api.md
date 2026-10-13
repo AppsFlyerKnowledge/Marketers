@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: [Closed Beta] Protect360 Pre-released detection (Billing API)"
-excerpt: "Learn about the Protect360 pre-released detection feature in the billing API, which credits detected fraud back to your package plan."
 table_of_contents: false
 x-zendesk:
   id: 27286254350481

@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Aggregated data change to data freshness rate"
-excerpt: "An overview of the changes to the data freshness rates of installs and in-app event data in AppsFlyer analytics reports and dashboards."
 table_of_contents: false
 x-zendesk:
   id: 4404329828497

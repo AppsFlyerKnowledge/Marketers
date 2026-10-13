@@ -1,6 +1,6 @@
 ---
 title: "Trackier integration with AppsFlyer"
-excerpt: "Learn how to configure attribution links and postback URLs to integrate Trackier with AppsFlyer for tracking installs and in-app events."
+excerpt: "Ad networks that use Trackier can receive attribution data from AppsFlyer about installs and in-app events."
 x-zendesk:
   id: 360006111917
   url: https://support.appsflyer.com/hc/en-us/articles/360006111917-Trackier-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-02-24T13:25:45Z'
   edited_at: '2024-12-23T15:22:55Z'
 ---
-**At a glance:** Ad networks that use Trackier can receive attribution data from AppsFlyer about installs and in-app events.
-
 To begin integration, provide AppsFlyer with both the attribution link URL and the postback URL. The URLs are needed for reporting purposes. This article explains how to build these URLs.
 
 ## Attribution link URL

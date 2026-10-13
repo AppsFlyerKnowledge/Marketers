@@ -1,6 +1,6 @@
 ---
 title: "TikTok for Business—Create web campaigns for website apps"
-excerpt: "Learn how to set up a TikTok Web Ads integration for your website app to send web conversion signals to TikTok via the Events API."
+excerpt: "Set up a TikTok Web Ads integration for your website app to send web conversion signals to TikTok via the Events API."
 x-zendesk:
   id: 46191822292113
   url: https://support.appsflyer.com/hc/en-us/articles/46191822292113-TikTok-for-Business-Create-web-campaigns-for-website-apps

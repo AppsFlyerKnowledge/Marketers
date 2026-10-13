@@ -1,6 +1,6 @@
 ---
 title: "AppsFlyer HTTPS/SSL encryption policy support"
-excerpt: "Learn about the outgoing SSL cipher suites and TLS protocols supported by AppsFlyer for secure API communications."
+excerpt: "Learn about outgoing SSL cipher suites supported by AppsFlyer."
 x-zendesk:
   id: 360001288945
   url: https://support.appsflyer.com/hc/en-us/articles/360001288945-AppsFlyer-HTTPS-SSL-encryption-policy-support
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-07-10T09:34:40Z'
   edited_at: '2024-12-31T09:53:54Z'
 ---
-At a glance: Learn about outgoing SSL cipher suites supported by AppsFlyer.
-
 ## Introduction
 
 AppsFlyer APIs use secured protocols.

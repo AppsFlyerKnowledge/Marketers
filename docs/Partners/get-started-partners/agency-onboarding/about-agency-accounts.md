@@ -1,6 +1,6 @@
 ---
 title: "About agency accounts"
-excerpt: "Learn how to make the most of your AppsFlyer Agency account to measure and analyze app marketing campaigns run on behalf of marketer clients."
+excerpt: "Make the most of your AppsFlyer Agency account with advanced configuration."
 x-zendesk:
   id: 207034106
   url: https://support.appsflyer.com/hc/en-us/articles/207034106-About-agency-accounts
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2013-12-08T10:02:42Z'
   edited_at: '2026-05-26T11:24:00Z'
 ---
-Make the most of your AppsFlyer Agency account with advanced configuration.
-
 ## About agency accounts
 
 Agency accounts are used by agency teams to measure app marketing campaigns run by the agency on behalf of marketer clients (app owners).

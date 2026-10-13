@@ -1,6 +1,6 @@
 ---
 title: "Audiences"
-excerpt: "Learn how to build, configure, and connect audience segments to your partner networks using AppsFlyer Audiences."
+excerpt: "Build and connect audience segments to your partner networks"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,36 +18,36 @@ Build and connect audience segments to your partner networks
 
 <Cards>
   <Card title="Audiences guide" href="/docs/audiences-guide" icon="fa-solid fa-users">
-    Read the comprehensive guide to understanding and using Audiences.
+    Increase the efficiency of your user acquisition and remarketing campaigns by using AppsFlyer Audiences to build and connect audience segments to your partner networks.
   </Card>
   <Card title="Audiences onboarding guide" href="/docs/audiences-onboarding-guide" icon="fa-solid fa-rocket">
-    Get started with setting up and onboarding your Audiences.
+    Use AppsFlyer Audiences to build and connect customized audience segments to your partner networks for the most effective user acquisition and remarketing campaigns.
   </Card>
   <Card title="Use AI Predictive Audiences to reach high-intent users" href="/docs/closed-beta-use-ai-predictive-audiences-to-reach-high-intent-users" icon="fa-solid fa-robot">
-    [Closed beta] Leverage AI predictive modeling to target high-intent users.
+    Predictive Audiences uses AI to create an audience of users most likely to take a key action, such as purchasing, so you can reach high-intent users, reduce wasted spend, and maximize campaign impact.
   </Card>
   <Card title="Audiences user identifier policy" href="/docs/audiences-user-identifier-policy" icon="fa-solid fa-users">
-    Understand the policies and guidelines regarding user identifiers in Audiences.
+    Configure your user identifier policy to exercise account-level control over the identifiers you send to advertising partners via Audiences.
   </Card>
   <Card title="Audiences partner connections" href="/docs/audiences-partner-connections" icon="fa-solid fa-users">
-    Connect your audience segments directly to partner networks.
+    Connect your audiences to partners.
   </Card>
   <Card title="Import audience segments from internal systems" href="/docs/audiences-import-audience-segments-from-internal-systems" icon="fa-solid fa-users">
-    Learn how to import your own audience segments from internal systems.
+    Import predefined audience segments from your internal systems (such as BI and CRM) to AppsFlyer Audiences, allowing you to use Audiences to connect and maintain these segments with your advertising partners.
   </Card>
   <Card title="Configure additional identifiers for partner audience creation" href="/docs/audiences-configure-additional-identifiers-for-partner-audience-creation" icon="fa-solid fa-users">
-    Set up additional identifiers to optimize partner audience creation.
+    Configure additional user identifiers for sending custom audiences to advertising partners.
   </Card>
   <Card title="Upload additional identifiers to Audiences via API" href="/docs/upload-additional-identifiers-to-audiences-via-api" icon="fa-solid fa-users">
-    Programmatically upload additional identifiers using the Audiences API.
+    Use the Audiences Additional Identifiers API to bulk upload user identifiers from your internal systems (such as BI and CRM) to AppsFlyer Audiences, enabling broader audience communication to relevant partners based on these identifiers.
   </Card>
   <Card title="Create better audiences with user attribute data" href="/docs/audiences-create-better-audiences-with-user-attribute-data" icon="fa-solid fa-users">
-    Enhance your audience targeting using rich user attribute data.
+    Enrich your ability to segment users into relevant groups by adding your data about their characteristics into Audiences.
   </Card>
   <Card title="Use your Amplitude cohorts as audiences" href="/docs/audiences-use-your-amplitude-cohorts-as-audiences" icon="fa-solid fa-users">
-    Sync and target your Amplitude cohorts directly within Audiences.
+    Leverage your first-party data by syncing your Amplitude cohorts to AppsFlyer as imported audiences.
   </Card>
   <Card title="Use Braze events in audience creation" href="/docs/audiences-use-braze-events-in-audience-creation" icon="fa-solid fa-users">
-    Incorporate Braze event data to build highly targeted audiences.
+    Send Braze message engagement events to AppsFlyer Audiences and use them to add precision to your audience definitions.
   </Card>
 </Cards>

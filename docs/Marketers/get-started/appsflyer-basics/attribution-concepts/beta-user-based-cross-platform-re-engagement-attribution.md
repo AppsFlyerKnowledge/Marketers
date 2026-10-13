@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2026-04-05T12:40:10Z'
   edited_at: '2026-04-27T13:56:06Z'
 ---
-**At a glance:** Learn how cross-platform re-engagement attribution credits the media sources that bring existing users back to your product across platforms.
-
 ## About cross-platform re-engagement attribution
 
 Cross-platform re-engagement attribution extends the [User-based cross-platform attribution](/docs/beta-user-based-cross-platform-attribution) model to include measuring user cohorts based on the latest ad engagement, in addition to the original acquisition source.

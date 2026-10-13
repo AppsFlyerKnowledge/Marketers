@@ -1,6 +1,6 @@
 ---
 title: "Bing campaign configuration"
-excerpt: "Learn how to set up and configure user acquisition campaigns with Bing, an AppsFlyer integrated partner, and manage attribution settings."
+excerpt: "Bing, an AppsFlyer ad network integrated partner, is one of the world's leading search engines. You can manage user acquisition campaigns through Bing and attribute them with AppsFlyer."
 x-zendesk:
   id: 360000985718
   url: https://support.appsflyer.com/hc/en-us/articles/360000985718-Bing-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-02-17T11:13:20Z'
   edited_at: '2026-06-16T09:37:37Z'
 ---
-Bing, an AppsFlyer ad network integrated partner, is one of the world's leading search engines. You can manage user acquisition campaigns through Bing and attribute them with AppsFlyer.
-
 > 📘 Note
 >
 > Microsoft requires attribution providers to delete its user-level data 13 months after the install. This means that the events performed by these users 13 months after they install the app are counted as organic. Past aggregate data remains the same.

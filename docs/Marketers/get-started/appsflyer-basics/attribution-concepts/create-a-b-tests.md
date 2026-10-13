@@ -1,6 +1,6 @@
 ---
 title: "Create A/B tests"
-excerpt: "Learn how to use AppsFlyer to A/B test media sources, campaigns, creatives, targeting, and ad placement to optimize your mobile marketing performance."
+excerpt: "Use AppsFlyer to A/B test media sources, campaigns, creatives, targeting, and ad placement."
 x-zendesk:
   id: 360001523657
   url: https://support.appsflyer.com/hc/en-us/articles/360001523657-Create-A-B-tests
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-05-07T09:17:43Z'
   edited_at: '2026-07-27T15:46:37Z'
 ---
-**At a glance:** Use AppsFlyer to A/B test media sources, campaigns, creatives, targeting, and ad placement.
-
 ![AB_TESTING.jpg](https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg)
 
 ## What is A/B testing?

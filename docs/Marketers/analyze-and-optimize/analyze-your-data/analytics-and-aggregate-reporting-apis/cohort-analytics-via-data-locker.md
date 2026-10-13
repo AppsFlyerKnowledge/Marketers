@@ -1,6 +1,6 @@
 ---
 title: "Cohort analytics via Data Locker"
-excerpt: "Cohort analytics in Data Locker provides aggregated data of all elements in the advertising hierarchy for users attributing in the previous 365 days."
+excerpt: "Cohort analytics in Data Locker contains aggregated data of all elements in the advertising hierarchy. Reports contain data of users attributing in the previous 365 days. This report is available to advertisers who have raw data or Cohort API, or both as part of their subscription. It means that a Data Locker subscription isn't required for this report."
 x-zendesk:
   id: 4408945472529
   url: https://support.appsflyer.com/hc/en-us/articles/4408945472529-Cohort-analytics-via-Data-Locker
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-10-14T08:46:00Z'
   edited_at: '2025-03-10T14:46:25Z'
 ---
-**At a glance**: Cohort analytics in Data Locker contains aggregated data of all elements in the advertising hierarchy. Reports contain data of users attributing in the previous 365 days. This report is available to advertisers who have raw data or Cohort API, or both as part of their subscription. It means that a Data Locker subscription isn't required for this report.
-
 ## Cohort analytics in Data Locker
 
 In some cases, attribution raw data in AppsFlyer is [restricted](/docs/about-raw-data-identifier-restrictions) due to media source data-sharing policies or your [privacy-preserving policies.](/docs/apply-aggregated-advanced-privacy-framework) The restriction includes all attribution-related fields like campaign and adset. Cohort reports provide you with aggregated data that can be used as an alternative to raw data.

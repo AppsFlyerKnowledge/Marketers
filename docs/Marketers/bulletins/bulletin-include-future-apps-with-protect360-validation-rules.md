@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Include future apps with Protect360 validation rules"
-excerpt: "Learn how to automatically apply Protect360 validation rules to any future apps you add to your account."
 table_of_contents: false
 x-zendesk:
   id: 27288616008977

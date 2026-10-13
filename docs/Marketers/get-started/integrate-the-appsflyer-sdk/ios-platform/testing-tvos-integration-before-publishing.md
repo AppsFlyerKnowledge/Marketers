@@ -1,6 +1,6 @@
 ---
 title: "Testing tvOS integration before publishing"
-excerpt: "Learn how to simulate non-organic installs on your AppleTV device using the tvOS Test App to verify attribution before publishing your app."
+excerpt: "Simulate a non-organic install from your AppleTV device using the tvOS Test App."
 x-zendesk:
   id: 211758923
   url: https://support.appsflyer.com/hc/en-us/articles/211758923-Testing-tvOS-integration-before-publishing
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-07-12T09:49:14Z'
   edited_at: '2023-02-15T13:15:03Z'
 ---
-**At a glance:** Simulate a non-organic install from your AppleTV device using the tvOS Test App.
-
 ## Overview
 
 AppleTV does not contain a browser. Therefore, you cannot test clicks or installs on the device for an **unpublished** app. (For **published** apps, you can [test using attribution links](/docs/testing-the-sdk-integration-for-marketers#testing-using-attribution-links)).

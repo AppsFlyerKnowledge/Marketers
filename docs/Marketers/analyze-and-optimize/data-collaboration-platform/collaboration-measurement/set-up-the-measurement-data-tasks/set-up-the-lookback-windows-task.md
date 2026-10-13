@@ -1,6 +1,6 @@
 ---
 title: "Set up the Lookback windows task"
-excerpt: "Learn how to configure click-through and view-through lookback windows for on-site and off-site campaigns, including specific settings for Meta Ads and Google Ads."
+excerpt: "Set attribution windows for on-site and off-site campaigns to determine how far back user engagements can be matched to conversions."
 x-zendesk:
   id: 38191154658193
   url: https://support.appsflyer.com/hc/en-us/articles/38191154658193-Set-up-the-Lookback-windows-task

@@ -1,6 +1,6 @@
 ---
 title: "ByteDance Ads China—campaign configuration"
-excerpt: "Learn how to configure mobile attribution, view-through tracking, cost API, and ad revenue integration for ByteDance Ads China (Ocean Engine) in AppsFlyer."
+excerpt: "ByteDance Ads China (Ocean Engine), an AppsFlyer integrated partner, is an Internet technology company operating several machine learning-enabled content platforms."
 x-zendesk:
   id: 115003019403
   url: https://support.appsflyer.com/hc/en-us/articles/115003019403-ByteDance-Ads-China-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-06-18T07:05:42Z'
   edited_at: '2026-09-07T07:24:30Z'
 ---
-**At a glance:** ByteDance Ads China (Ocean Engine), an AppsFlyer integrated partner, is an Internet technology company operating several machine learning-enabled content platforms.
-
 > 📘 **Note**
 >
 > If you want to promote your Android Apps with ByteDance Ads China, you are required to send your OAID to AppsFlyer SDK according to the instructions in the [AppsFlyer SDK Integration - Android](/docs/sdk-integration-overview). Google Play service is blocked in China, OAID is the most popular Android Device ID for ad attribution.

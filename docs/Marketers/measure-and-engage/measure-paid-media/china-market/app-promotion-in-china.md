@@ -1,6 +1,6 @@
 ---
 title: "App promotion in China"
-excerpt: "Learn how to promote your app in the Chinese market, configure key media sources, and set up Android attribution for out-of-store markets."
+excerpt: "Promote your app in the Chinese market."
 table_of_contents: false
 x-zendesk:
   id: 115004656946
@@ -23,10 +23,6 @@ x-zendesk:
   created_at: '2017-09-12T07:49:03Z'
   edited_at: '2022-10-31T12:56:12Z'
 ---
-> 📘 At a glance
->
-> Promote your app in the Chinese market.
-
 [**China Internet Report**](https://www.scmp.com/china-internet-report) 2020 presented by SCMP with an overview of the Chinese market
 
 - China At A Glance

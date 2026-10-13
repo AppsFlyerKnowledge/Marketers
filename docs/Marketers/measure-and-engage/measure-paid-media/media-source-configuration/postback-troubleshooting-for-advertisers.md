@@ -1,6 +1,6 @@
 ---
 title: "Postback troubleshooting for advertisers"
-excerpt: "Find the leading causes and solutions to why your partner isn't receiving expected postbacks."
+excerpt: "Find the leading causes and solutions to why your partner isn't receiving expected postbacks. Go through each of the topics below and see if they may be the cause."
 x-zendesk:
   id: 14272573202833
   url: https://support.appsflyer.com/hc/en-us/articles/14272573202833-Postback-troubleshooting-for-advertisers
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-04-04T07:09:26Z'
   edited_at: '2026-09-15T11:00:17Z'
 ---
-**At a glance:** Find the leading causes and solutions to why your partner isn't receiving expected postbacks. Go through each of the topics below and see if they may be the cause.
-
 ## Check the integration toggles
 
 Various toggles control different parts of the integration. The state of the toggle could be the reason for not receiving postbacks.

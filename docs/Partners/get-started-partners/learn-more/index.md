@@ -1,6 +1,6 @@
 ---
 title: "Learn more"
-excerpt: "Find important information and answers to your questions about working with AppsFlyer."
+excerpt: "Find important information and answers to your questions about working with AppsFlyer"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -16,18 +16,18 @@ x-zendesk:
 ---
 <Cards>
   <Card title="Integrated partners—FAQ" href="/docs/integrated-partners-faq" icon="fa-solid fa-circle-question">
-    Frequently asked questions about integrated partners.
+    FAQ and integration troubleshooting for integrated partners.
   </Card>
   <Card title="Protect360—FAQ for partners" href="/docs/protect360-faq-for-partners" icon="fa-solid fa-circle-question">
-    Frequently asked questions about Protect360 for partners.
+    Find answers to questions frequently asked by partners about Protect360.
   </Card>
   <Card title="Audiences—Connections FAQ for ad networks" href="/docs/audiences-connections-faq-for-ad-networks" icon="fa-solid fa-circle-question">
-    Frequently asked questions about Audiences connections for ad networks.
+    Are you an ad network? Find answers to frequently asked questions about Audiences partner connections.
   </Card>
   <Card title="Agency account vs. ad network" href="/docs/agency-account-vs-ad-network" icon="fa-solid fa-handshake">
-    Learn about the differences between an agency account and an ad network.
+    Learn the differences between an Agency account and an Ad Network integration, and the advantages of each.
   </Card>
   <Card title="Data richness score for ad networks" href="/docs/data-richness-score-for-ad-networks" icon="fa-solid fa-handshake">
-    Understand the data richness score for ad networks.
+    Improve the quality of the data you provide to advertisers using the AppsFlyer data richness score.
   </Card>
 </Cards>

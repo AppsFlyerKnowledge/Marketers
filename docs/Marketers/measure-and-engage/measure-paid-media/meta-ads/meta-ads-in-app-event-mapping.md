@@ -1,6 +1,6 @@
 ---
 title: "Meta ads in-app event mapping"
-excerpt: "Send your app's rich in-app events from AppsFlyer to Meta ads to utilize advanced optimization and build Custom and Lookalike Audience segments."
+excerpt: "Send your app's rich in-app events from AppsFlyer to Meta ads."
 x-zendesk:
   id: 4410480904081
   url: https://support.appsflyer.com/hc/en-us/articles/4410480904081-Meta-ads-in-app-event-mapping
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-11-09T09:57:19Z'
   edited_at: '2026-09-10T11:15:42Z'
 ---
-**At a glance:** Send your app's rich in-app events from AppsFlyer to Meta ads.
-
 ## Meta in-app events mapping
 
 Advertisers map their in-app events, SDK or Servers-to-servers, to Meta predefined events. Advertisers can also send Meta postbacks about each [app launch](/docs/measure-sessions) or any known [app uninstall](/docs/measure-uninstalls#mapping-the-uninstall-event).

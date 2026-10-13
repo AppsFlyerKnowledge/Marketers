@@ -1,6 +1,6 @@
 ---
 title: "Applovin MAX ad revenue configuration"
-excerpt: "Learn how to configure Applovin MAX ad revenue integration with AppsFlyer to receive device-level and aggregate ad monetization data."
+excerpt: "Applovin MAX, an AppsFlyer integrated partner, provides app owners with ad revenue-generating solutions."
 x-zendesk:
   id: 360004707378
   url: https://support.appsflyer.com/hc/en-us/articles/360004707378-Applovin-MAX-ad-revenue-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-01-09T10:53:21Z'
   edited_at: '2026-06-16T09:35:28Z'
 ---
-**At a glance:** Applovin MAX, an AppsFlyer integrated partner, provides app owners with ad revenue-generating solutions.
-
 ![](https://cdn.appsflyer.com/marketplace/static/logo/applovinmax.png)
 
 ## Setting up Applovin MAX integration

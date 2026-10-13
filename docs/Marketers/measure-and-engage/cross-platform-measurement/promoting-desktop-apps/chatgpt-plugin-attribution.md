@@ -1,6 +1,6 @@
 ---
 title: "ChatGPT plugin attribution"
-excerpt: "Learn how to report ChatGPT plugin data to AppsFlyer to measure user journeys, LTV, and platform performance side by side."
+excerpt: "See how to report ChatGPT plugin data to AppsFlyer for a holistic view of your user journeys."
 x-zendesk:
   id: 15224646285713
   url: https://support.appsflyer.com/hc/en-us/articles/15224646285713-ChatGPT-plugin-attribution
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-05-11T07:44:43Z'
   edited_at: '2023-05-23T11:54:16Z'
 ---
-**At a glance:** See how to report ChatGPT plugin data to AppsFlyer for a holistic view of your user journeys.
-
 ![51523_Image_3.jpg](https://files.readme.io/211f85239a4ce3d1da9d7b0f9cb6a3768ca429bfd09f5c3667f1ee419a625b66-15533978285073.jpg)
 
 ## What are ChatGPT plugins?

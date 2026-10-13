@@ -1,6 +1,6 @@
 ---
 title: "About organic and non-organic installs"
-excerpt: "Learn the key differences between organic and non-organic app installs and how AppsFlyer attributes them."
+excerpt: "Understand the difference between organic and non-organic installs."
 x-zendesk:
   id: 115005995229
   url: https://support.appsflyer.com/hc/en-us/articles/115005995229-About-organic-and-non-organic-installs
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-01-11T09:31:52Z'
   edited_at: '2025-04-05T12:50:39Z'
 ---
-**At a glance:** Understand the difference between organic and non-organic installs. 
-
 ![6453OrganicvsNon-organic.jpg](https://files.readme.io/673290940d44db8acbc5ade68e7c7bc2da45e5786b62885a012720ab26a2e7e2-6453OrganicvsNon-organic.jpg)
 
 Non-organic users are attributed to the media source motivating the install or engagement. In the case of organic users, there is no media source identified with install or engagement.

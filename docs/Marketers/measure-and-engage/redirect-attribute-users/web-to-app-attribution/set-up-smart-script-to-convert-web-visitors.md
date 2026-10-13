@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-12-13T09:57:23Z'
   edited_at: '2026-09-02T13:20:25Z'
 ---
-**At a glance:** Set up OneLink Smart Script to convert and attribute your mobile website visitors, coming from any source, into mobile app users.
-
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/4f506532e65c118a76e875b992be59cf8cca925f78e125dbb35b958fc1639d16-42045468431121.png)
 
 ## Setup

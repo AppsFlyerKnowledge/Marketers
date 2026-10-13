@@ -1,6 +1,6 @@
 ---
 title: "TikTok for Business—Create web-based campaigns"
-excerpt: "Learn how to set up TikTok Ads Web campaigns to attribute web-to-app conversions from TikTok Ads directly through the Events API."
+excerpt: "Use TikTok Ads Web campaigns to attribute web-to-app conversions from TikTok Ads"
 x-zendesk:
   id: 40496161157521
   url: https://support.appsflyer.com/hc/en-us/articles/40496161157521-TikTok-for-Business-Create-web-based-campaigns
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-10-31T12:09:51Z'
   edited_at: '2026-09-15T10:58:44Z'
 ---
-**At a glance:** Use TikTok Ads Web campaigns to attribute web-to-app conversions from TikTok Ads
-
 ## Overview
 
 AppsFlyer supports integration with TikTok Ads (`tiktokweb_int`) for User Acquisition web-based campaigns, allowing you to report attribution and conversion data directly through TikTok's Events API. TikTok can then utilize this data to optimize ad targeting, measure performance, and build custom audiences.

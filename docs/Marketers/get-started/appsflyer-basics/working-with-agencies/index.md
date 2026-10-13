@@ -1,6 +1,6 @@
 ---
 title: "Working with agencies"
-excerpt: "Learn how to set up ad agencies and view agency data in AppsFlyer to maximize your collaborative marketing efforts."
+excerpt: "Get the most out of working with ad agencies and AppsFlyer"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,9 +18,9 @@ Get the most out of working with ad agencies and AppsFlyer
 
 <Cards>
   <Card title="Set up agencies" href="/docs/set-up-agencies" icon="fa-solid fa-puzzle-piece">
-    Learn how to configure and authorize ad agencies to manage your AppsFlyer campaigns.
+    Get started working with agencies in AppsFlyer: all the details in this video!
   </Card>
   <Card title="View agency data" href="/docs/view-agency-data" icon="fa-solid fa-handshake">
-    Understand how to access, filter, and analyze performance data shared with your agency partners.
+    Learn about agency data to understand its impact on how your data is presented in AppsFlyer.
   </Card>
 </Cards>

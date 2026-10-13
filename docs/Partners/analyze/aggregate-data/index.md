@@ -1,6 +1,6 @@
 ---
 title: "Aggregate data"
-excerpt: "Learn how to use aggregate attribution data to analyze trends and gain insights through dashboards and performance reports."
+excerpt: "Use aggregate attribution data to see trends and gain insights"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,12 +18,12 @@ Use aggregate attribution data to see trends and gain insights
 
 <Cards>
   <Card title="Integrated partners dashboard" href="/docs/integrated-partners-dashboard" icon="fa-solid fa-handshake">
-    View performance metrics and attribution data for your integrated partners.
+    Integrated partners use the dashboard and reports to view and analyze campaign traffic attributed to you.
   </Card>
   <Card title="Access to aggregated analytics tools for API partners" href="/docs/access-to-aggregated-analytics-tools-for-api-partners" icon="fa-solid fa-handshake">
-    Learn how API partners can access and utilize aggregated analytics tools.
+    API partners can use their API token to access advertisers' data when granted permission by the advertiser, allowing them to extract performance metrics from the platform.
   </Card>
   <Card title="Aggregated campaign performance report for ad networks" href="/docs/aggregated-campaign-performance-report-for-ad-networks" icon="fa-solid fa-handshake">
-    Access and analyze campaign performance reports tailored for ad networks.
+    Ad networks load the aggregated performance report (AKA Cohort report) into their BI systems to calculate campaign performance metrics like the 7-day retention KPI.
   </Card>
 </Cards>

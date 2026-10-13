@@ -1,6 +1,6 @@
 ---
 title: "Implementing and using 2FA login"
-excerpt: "Learn how to implement and use two-factor authentication (2FA) to add an extra layer of security to your AppsFlyer login process."
+excerpt: "Use two-factor authentication (2FA) to add an extra layer of security to the login process. Login credentials for account users are supplemented by Google or Microsoft Authenticator or SMS verification."
 x-zendesk:
   id: 360010178037
   url: https://support.appsflyer.com/hc/en-us/articles/360010178037-Implementing-and-using-2FA-login
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-06-22T10:25:26Z'
   edited_at: '2026-05-25T07:53:34Z'
 ---
-Use two-factor authentication (2FA) to add an extra layer of security to the login process. Login credentials for account users are supplemented by Google or Microsoft Authenticator or SMS verification.
-
 ## Highlights
 
 - 2FA is an optional feature activated by an admin user.

@@ -1,6 +1,6 @@
 ---
 title: "Postback macros for ad networks"
-excerpt: "As an ad network, you can define the content and endpoints of postbacks sent to you as part of your integration with AppsFlyer."
+excerpt: "As an ad network, you can define the content and endpoints of postbacks sent to you as part of your integration with AppsFlyer. Postbacks relate to app user engagement like installs, in-app events, re-engagements, and so on."
 x-zendesk:
   id: 207273946
   url: https://support.appsflyer.com/hc/en-us/articles/207273946-Postback-macros-for-ad-networks
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-01-11T14:41:40Z'
   edited_at: '2025-12-22T10:42:52Z'
 ---
-As an ad network, you can define the content and endpoints of postbacks sent to you as part of your integration with AppsFlyer. Postbacks relate to app user engagement like installs, in-app events, re-engagements, and so on.
-
 Related integrated partner postback guides:
 
 <Cards>

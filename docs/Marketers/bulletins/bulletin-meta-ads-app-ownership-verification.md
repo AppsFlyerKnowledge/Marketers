@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Meta ads app ownership verification"
-excerpt: "Meta ads requires all app owners to confirm ownership of Android and iOS mobile apps to run Mobile App Install campaigns and optimize ad delivery."
 table_of_contents: false
 x-zendesk:
   id: 5410285239313

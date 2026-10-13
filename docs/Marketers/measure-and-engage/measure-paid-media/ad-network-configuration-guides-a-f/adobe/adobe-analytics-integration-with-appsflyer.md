@@ -1,6 +1,5 @@
 ---
 title: "Adobe Analytics integration with AppsFlyer"
-excerpt: "Learn how to set up the two-way data flow between AppsFlyer and Adobe Analytics to automatically transfer attribution data."
 x-zendesk:
   id: 115003326706
   url: https://support.appsflyer.com/hc/en-us/articles/115003326706-Adobe-Analytics-integration-with-AppsFlyer

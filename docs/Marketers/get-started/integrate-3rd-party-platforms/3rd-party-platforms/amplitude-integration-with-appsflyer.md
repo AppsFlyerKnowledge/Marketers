@@ -1,6 +1,6 @@
 ---
 title: "Amplitude integration with AppsFlyer"
-excerpt: "Integrate AppsFlyer with Amplitude to share user attribution data and event analytics for better insights into user engagement, retention, and revenue."
+excerpt: "Integrate AppsFlyer with Amplitude to share user attribution data and event analytics for better insights into user engagement, retention, and revenue. Choose between two integration versions, V1 or V2 , depending on your use case and analytics needs."
 x-zendesk:
   id: 211200306
   url: https://support.appsflyer.com/hc/en-us/articles/211200306-Amplitude-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-08-02T05:18:03Z'
   edited_at: '2026-09-09T13:59:07Z'
 ---
-Integrate AppsFlyer with Amplitude to share user attribution data and event analytics for better insights into user engagement, retention, and revenue. Choose between **two integration versions, V1 or V2**, depending on your use case and analytics needs.
-
 ## About the integration
 
 Amplitude, an AppsFlyer integrated partner, is a product analytics platform used by product, growth, and marketing teams to understand user behavior across mobile and web. The integration allows AppsFlyer to send key event data to Amplitude post-install, enabling comprehensive user-level analysis.

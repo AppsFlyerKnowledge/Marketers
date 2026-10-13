@@ -1,6 +1,6 @@
 ---
 title: "Protect360 for integrated partners"
-excerpt: "Integrated partners can view fraud related to their traffic identified and blocked by the ProtectLITE and Protect360 engines, as well as the customer's manually-defined validation rules."
+excerpt: "Integrated partners (ad networks and agencies) can view fraud related to their traffic identified and blocked by the ProtectLITE and Protect360 engines, as well as the customer’s manually-defined validation rules."
 x-zendesk:
   id: 115004745523
   url: https://support.appsflyer.com/hc/en-us/articles/115004745523-Protect360-for-integrated-partners
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-09-19T08:27:29Z'
   edited_at: '2026-05-25T07:54:54Z'
 ---
-**At a glance:** Integrated partners (ad networks and agencies) can view fraud related to their traffic identified and blocked by the ProtectLITE and Protect360 engines, as well as the customer’s manually-defined validation rules.
-
 ## Overview
 
 AppsFlyer identifies and blocks fraud via: 

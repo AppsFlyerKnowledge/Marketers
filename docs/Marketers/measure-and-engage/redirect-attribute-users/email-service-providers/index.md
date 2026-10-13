@@ -1,6 +1,6 @@
 ---
 title: "Email service providers"
-excerpt: "Learn how to integrate AppsFlyer with leading email service providers (ESPs) to streamline your marketing campaigns."
+excerpt: "Integrate AppsFlyer with leading email service providers (ESPs)"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,29 +18,29 @@ Integrate AppsFlyer with leading email service providers (ESPs)
 
 <Cards>
   <Card title="Email service provider (ESP) integration guide" href="/docs/email-service-provider-esp-integration-guide" icon="fa-solid fa-envelope">
-    Learn the fundamentals of integrating your ESP with AppsFlyer.
+    Create email campaigns with integrated ESPs using OneLink branded links and deep linking for seamless user experiences that drive conversion (for those using iOS Universal Links or Android App Links).
   </Card>
   <Card title="Set up your ESP integration with AppsFlyer" href="/docs/set-up-your-esp-integration-with-appsflyer" icon="fa-solid fa-envelope">
-    Step-by-step instructions to configure your ESP integration.
+    Set up an ESP integration with AppsFlyer to enable seamless and secure deep linking in your email campaigns for better user engagement and conversion rates.
   </Card>
   <Card title="Adobe ESP integration with AppsFlyer" href="/docs/adobe-esp-integration-with-appsflyer" icon="fa-solid fa-envelope">
+    Set up an Adobe ESP integration with AppsFlyer to enable seamless and secure deep linking in your email campaigns for better user engagement and conversion rates.
   </Card>
   <Card title="Bloomreach integration with AppsFlyer" href="/docs/bloomreach-integration-with-appsflyer" icon="fa-solid fa-puzzle-piece">
-    Connect Bloomreach with AppsFlyer for seamless email attribution.
+    Set up an integration with Bloomreach to enable seamless deep linking from email campaigns, measure traffic in both Bloomreach and AppsFlyer, and create user experiences that drive conversion.
   </Card>
   <Card title="EmailLabs integration with AppsFlyer" href="/docs/emaillabs-integration-with-appsflyer" icon="fa-solid fa-envelope">
-    Configure EmailLabs to work with AppsFlyer attribution links.
+    EmailLabs, an email delivery and analytics platform, embeds AppsFlyer OneLink within emails. When email recipients click on the link, they are deep-linked into your app.
   </Card>
   <Card title="Iterable integration with AppsFlyer" href="/docs/iterable-integration-with-appsflyer" icon="fa-solid fa-puzzle-piece">
-    Set up Iterable to track and attribute your email campaigns.
   </Card>
   <Card title="Movable Ink integration with AppsFlyer" href="/docs/movable-ink-integration-with-appsflyer" icon="fa-solid fa-puzzle-piece">
-    Integrate Movable Ink with AppsFlyer for dynamic email personalization.
+    Set up an integration with Movable Ink to create unique AI-powered user journeys in your marketing campaigns and in-app content.
   </Card>
   <Card title="Oracle Responsys integration with AppsFlyer" href="/docs/oracle-responsys-integration-with-appsflyer" icon="fa-solid fa-puzzle-piece">
-    Connect Oracle Responsys to attribute mobile app installs and events.
+    Oracle Responsys, an email delivery and analytics platform, embeds AppsFlyer OneLink within emails. Email recipients who click the link are deep linked into your app.
   </Card>
   <Card title="Salesforce Marketing Cloud (SFMC) integration with AppsFlyer" href="/docs/salesforce-marketing-cloud-sfmc-integration-with-appsflyer" icon="fa-solid fa-puzzle-piece">
-    Integrate Salesforce Marketing Cloud with AppsFlyer for advanced tracking.
+    Integrate AppsFlyer with Salesforce Marketing Cloud (SFMC) to deep link users from email campaigns to in-app content. Sync in-app event data into SFMC to build audiences and trigger journeys based on real app behavior.
   </Card>
 </Cards>

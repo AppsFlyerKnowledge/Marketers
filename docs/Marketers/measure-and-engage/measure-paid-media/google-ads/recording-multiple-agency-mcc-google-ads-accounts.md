@@ -1,6 +1,6 @@
 ---
 title: "Recording multiple agency/MCC Google Ads accounts"
-excerpt: "Learn how to set up recording and attribution for multiple Google Ads accounts, including agencies, MCCs, and MCCs of MCCs."
+excerpt: "Set up recording for different Google Ads accounts so traffic gets attributed correctly."
 x-zendesk:
   id: 115004970386
   url: https://support.appsflyer.com/hc/en-us/articles/115004970386-Recording-multiple-agency-MCC-Google-Ads-accounts
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-09-28T11:11:04Z'
   edited_at: '2023-03-12T12:50:37Z'
 ---
-**At a glance:** Set up recording for different Google Ads accounts so traffic gets attributed correctly.
-
 ## Introduction
 
 Google Ads traffic often comes from various accounts, such as agencies specializing in Google Ads or even different local teams within the app owner’s organization. It is important to understand how to set up recordings for different Google Ads accounts so that attribution goes to the correct parties.

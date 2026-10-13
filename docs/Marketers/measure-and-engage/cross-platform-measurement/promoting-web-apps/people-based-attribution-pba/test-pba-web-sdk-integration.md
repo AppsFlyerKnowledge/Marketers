@@ -1,6 +1,6 @@
 ---
 title: "Test PBA web SDK integration"
-excerpt: "Learn how to test the Web SDK PBA plugin integration, send test events, and troubleshoot common issues."
+excerpt: "Test the Web SDK PBA plugin integration."
 x-zendesk:
   id: 360012729178
   url: https://support.appsflyer.com/hc/en-us/articles/360012729178-Test-PBA-web-SDK-integration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-09-01T19:09:41Z'
   edited_at: '2024-01-11T11:04:05Z'
 ---
-**At a glance:** Test the Web SDK PBA plugin integration.
-
 ## Test PBA web events
 
 **Principles of using the test page**

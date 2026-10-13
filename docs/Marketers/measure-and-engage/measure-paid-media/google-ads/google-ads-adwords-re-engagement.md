@@ -1,6 +1,6 @@
 ---
 title: "Google Ads (AdWords)—Re-engagement"
-excerpt: "Learn how to measure Google Ads App Campaigns for Engagement, set up deep linking, and configure dynamic remarketing with AppsFlyer."
+excerpt: "Measure Google Ads retargeting campaigns."
 x-zendesk:
   id: 4417296925073
   url: https://support.appsflyer.com/hc/en-us/articles/4417296925073-Google-Ads-AdWords-Re-engagement

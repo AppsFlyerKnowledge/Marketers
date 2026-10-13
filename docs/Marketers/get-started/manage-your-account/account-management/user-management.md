@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-10-17T11:54:49Z'
   edited_at: '2026-09-20T12:12:52Z'
 ---
-**At a glance:** Create and manage your account's AppsFlyer users, and assign them permissions to access features, apps, and data.
-
 ## Overview
 
 AppsFlyer accounts allow for multiple users, each with individually-managed permissions. The maximum number of users per account is determined by your subscription plan.

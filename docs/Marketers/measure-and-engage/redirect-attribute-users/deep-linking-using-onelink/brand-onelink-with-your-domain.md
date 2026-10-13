@@ -1,6 +1,6 @@
 ---
 title: "Brand OneLink with your domain"
-excerpt: "Learn how to brand your OneLink attribution links with your own domain to improve campaign performance and increase brand exposure."
+excerpt: "Advertisers using OneLink links can brand them with their own domain. This improves campaign performance and increases brand exposure."
 x-zendesk:
   id: 360002329137
   url: https://support.appsflyer.com/hc/en-us/articles/360002329137-Brand-OneLink-with-your-domain
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-08-26T09:00:09Z'
   edited_at: '2026-08-14T16:22:56Z'
 ---
-Advertisers using OneLink links can brand them with their own domain. This improves campaign performance and increases brand exposure.
-
 ![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
 
 ## Branded Domains

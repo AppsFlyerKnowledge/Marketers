@@ -1,6 +1,6 @@
 ---
 title: "Adding an app to AppsFlyer"
-excerpt: "Learn how to add your app to AppsFlyer to get attribution data on installs and in-app events, and analyze the data using the platform's tools."
+excerpt: "Learn how to add your app to AppsFlyer so you can get attribution data on installs and in-app events, and analyze the data using the different tools on AppsFlyer."
 x-zendesk:
   id: 207377436
   url: https://support.appsflyer.com/hc/en-us/articles/207377436-Adding-an-app-to-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-01-20T08:57:00Z'
   edited_at: '2026-08-03T09:05:58Z'
 ---
-**At a glance:** Learn how to add your app to AppsFlyer so you can get attribution data on installs and in-app events, and analyze the data using the different tools on AppsFlyer.
-
 ## Overview
 
 If you haven't yet added an app to your dashboard, the app onboarding page will display when you log into AppsFlyer. App onboarding guides you through all the steps to add your app and also get it ready for attribution.

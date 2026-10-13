@@ -1,6 +1,5 @@
 ---
 title: "Activity metrics in My Dashboards"
-excerpt: "Learn how to use Activity metrics in My Dashboards to assess app performance, analyze revenue, and monitor user engagement trends."
 x-zendesk:
   id: 38874924986001
   url: https://support.appsflyer.com/hc/en-us/articles/38874924986001-Activity-metrics-in-My-Dashboards

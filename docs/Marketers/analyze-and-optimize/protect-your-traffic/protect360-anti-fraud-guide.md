@@ -1,6 +1,6 @@
 ---
 title: "Protect360 anti-fraud guide"
-excerpt: "Protect360 provides app owners with real-time fraud protection and post-attribution detection to guard against attribution fraud."
+excerpt: "Attribution fraud drains marketing budgets, pollutes marketing performance data, and can turn successful campaigns into losing ones. Protect360 provides app owners with real-time fraud protection and post-attribution detection."
 x-zendesk:
   id: 218254203
   url: https://support.appsflyer.com/hc/en-us/articles/218254203-Protect360-anti-fraud-guide
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-12-06T07:47:17Z'
   edited_at: '2025-09-17T10:12:30Z'
 ---
-**At a glance:** Attribution fraud drains marketing budgets, pollutes marketing performance data, and can turn successful campaigns into losing ones. **Protect360 provides app owners with real-time fraud protection and post-attribution detection.**
-
 ![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
 
 ## Protect360 overview

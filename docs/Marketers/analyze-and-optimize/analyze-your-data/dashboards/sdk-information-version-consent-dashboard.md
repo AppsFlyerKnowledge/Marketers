@@ -1,6 +1,6 @@
 ---
 title: "SDK information (version & consent) dashboard"
-excerpt: "Learn how to use the SDK Information dashboard to view SDK and OS adoption rates alongside iOS ATT consent metrics."
+excerpt: "Dashboard view of SDK, operating system (iOS, Android) adoption rates, and iOS ATT consent metrics."
 x-zendesk:
   id: 115000805366
   url: https://support.appsflyer.com/hc/en-us/articles/115000805366-SDK-information-version-consent-dashboard
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-02-15T09:32:15Z'
   edited_at: '2023-12-28T19:15:00Z'
 ---
-**At a glance:** Dashboard view of SDK, operating system (iOS, Android) adoption rates, and iOS ATT consent metrics.
-
 ## Version adoption and ATT consent dashboard
 
 Data in the dashboard is derived from the af\_open (session) event and isn't related to install events. The dashboard has the following main sections: 

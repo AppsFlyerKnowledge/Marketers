@@ -1,6 +1,6 @@
 ---
 title: "About advertiser APIs"
-excerpt: "An overview of the APIs available to advertisers for accessing, reporting, and updating data within AppsFlyer."
+excerpt: "APIs available to advertisers to access or update data."
 x-zendesk:
   id: 360009122638
   url: https://support.appsflyer.com/hc/en-us/articles/360009122638-About-advertiser-APIs
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-05-24T15:14:53Z'
   edited_at: '2025-05-13T15:23:31Z'
 ---
-**At a glance:** APIs available to advertisers to access or update data.
-
 ## Advertiser API list and interfaces
 
 Specific information about reports, reporting tools, and reporting APIs:

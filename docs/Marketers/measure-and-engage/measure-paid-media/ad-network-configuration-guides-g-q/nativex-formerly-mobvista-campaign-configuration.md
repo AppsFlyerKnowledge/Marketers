@@ -1,6 +1,6 @@
 ---
 title: "Nativex (formerly Mobvista) campaign configuration"
-excerpt: "Learn how to configure Nativex (formerly Mobvista) in AppsFlyer to set up mobile attribution, cost tracking, and view-through attribution."
+excerpt: "Nativex, an AppsFlyer integrated partner, is a mobile marketing platform providing user acquisition, analytics, and monetization solutions to worldwide mobile developers and brands. In addition to click-based mobile attribution, Nativex also offers cost and view-through attribution, which you can record with AppsFlyer."
 x-zendesk:
   id: 208209476
   url: https://support.appsflyer.com/hc/en-us/articles/208209476-Nativex-formerly-Mobvista-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-03-28T09:15:13Z'
   edited_at: '2026-08-13T08:31:46Z'
 ---
-Nativex, an AppsFlyer integrated partner, is a mobile marketing platform providing user acquisition, analytics, and monetization solutions to worldwide mobile developers and brands. In addition to click-based mobile attribution, Nativex also offers cost and view-through attribution, which you can record with AppsFlyer.
-
 ![nativex.png](https://files.readme.io/840450215d38dc171452049ce1e9ce8c5f289e489fcb985a8d7ecb745fd11ede-49783409596049.png)
 
 ## Setting up Nativex

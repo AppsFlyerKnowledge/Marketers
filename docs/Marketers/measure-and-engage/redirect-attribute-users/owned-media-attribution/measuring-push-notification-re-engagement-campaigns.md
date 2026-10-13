@@ -1,6 +1,6 @@
 ---
 title: "Measuring push notification re-engagement campaigns"
-excerpt: "Learn how to measure push notification campaigns on both iOS and Android using OneLink or custom JSON payloads."
+excerpt: "Measure push notification campaigns on both iOS and Android."
 x-zendesk:
   id: 207364076
   url: https://support.appsflyer.com/hc/en-us/articles/207364076-Measuring-push-notification-re-engagement-campaigns

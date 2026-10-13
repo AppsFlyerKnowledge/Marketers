@@ -1,6 +1,6 @@
 ---
 title: "Agency account vs. ad network"
-excerpt: "Understand the key differences and advantages of using an AppsFlyer Agency account compared to an Ad Network integration."
+excerpt: "Learn the differences between an Agency account and an Ad Network integration, and the advantages of each."
 x-zendesk:
   id: 207034116
   url: https://support.appsflyer.com/hc/en-us/articles/207034116-Agency-account-vs-ad-network
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2013-12-30T09:46:12Z'
   edited_at: '2023-03-22T06:13:36Z'
 ---
-At a glance: Learn the differences between an Agency account and an Ad Network integration, and the advantages of each.
-
 ## Agency account
 
 AppsFlyer Agency Solution enables you to manage all your advertiser's performance under one universal dashboard!

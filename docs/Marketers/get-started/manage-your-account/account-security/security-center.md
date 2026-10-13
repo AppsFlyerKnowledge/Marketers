@@ -23,8 +23,6 @@ x-zendesk:
   created_at: '2021-12-26T12:49:02Z'
   edited_at: '2026-09-30T07:39:07Z'
 ---
-**At a glance:** Review and manage the status of all the security-related features of your AppsFlyer account from a single location.
-
 ## What can I do from the Security Center?
 
 The **Security Center** provides you with an at-a-glance overview of your AppsFlyer account's security status. Click the button in any section of the **Security Center** to access the following features:

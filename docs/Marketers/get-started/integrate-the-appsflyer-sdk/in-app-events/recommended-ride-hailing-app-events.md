@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-04-29T08:42:34Z'
   edited_at: '2023-12-04T11:56:22Z'
 ---
-**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your ride-hailing app.
-
 ## ![InApp_Events_ride.png](https://files.readme.io/3901cfcc0cc821cc9c93edbe806bc2d570698be366b76b3710cb60e9aa190d91-20659532208401.png) Ride-hailing
 
 Ride-hailing has become very popular recently, especially in urban areas where most residents don't own a car. The typical events that we suggest recording are ride requests and bookings.

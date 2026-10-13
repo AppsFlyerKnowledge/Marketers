@@ -1,6 +1,6 @@
 ---
 title: "Adquant by Kenshoo - Google Ads—Campaign configuration"
-excerpt: "Learn how to configure Adquant by Kenshoo to optimize your Google Ads campaigns and send postbacks from AppsFlyer."
+excerpt: "Optimize Google AdWords campaigns by using Adquant by Kenshoo. When configured, AppsFlyer sends postbacks to Adquant."
 x-zendesk:
   id: 360000654357
   url: https://support.appsflyer.com/hc/en-us/articles/360000654357-Adquant-by-Kenshoo-Google-Ads-Campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-12-09T07:43:55Z'
   edited_at: '2026-06-16T09:36:53Z'
 ---
-**At a glance:** Optimize Google AdWords campaigns by using Adquant by Kenshoo. When configured, AppsFlyer sends postbacks to Adquant.
-
 ## Setting up Adquant by Kenshoo
 
 **Prerequisite:** Before setting up the integration, make sure you contact the partner and open an account with them.

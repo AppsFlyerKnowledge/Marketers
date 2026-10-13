@@ -1,6 +1,6 @@
 ---
 title: "App list API for ad networks"
-excerpt: "Ad networks can retrieve metadata of apps associated with their integrated partner account using the AppsFlyer App List API."
+excerpt: "Ad networks can retrieve metadata of apps associated with their integrated partner account."
 x-zendesk:
   id: 360011700857
   url: https://support.appsflyer.com/hc/en-us/articles/360011700857-App-list-API-for-ad-networks
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-08-06T20:11:15Z'
   edited_at: '2026-05-05T07:03:21Z'
 ---
-Ad networks can retrieve metadata of apps associated with their integrated partner account.
-
 ## Get app list API
 
 The following sections include information necessary for using the API.

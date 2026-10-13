@@ -1,6 +1,6 @@
 ---
 title: "Petal Ads Global (formerly HUAWEI Ads global) campaign configuration"
-excerpt: "Learn how to configure campaigns, set up attribution, and resolve data discrepancies with Petal Ads Global (formerly HUAWEI Ads global) in AppsFlyer."
+excerpt: "Petal Ads Global, an AppsFlyer integrated partner, is a paid presentation service, which provided by Huawei for pan-ecosystem partners. It aims to help partners set up a communication bridge with Huawei device users so they can provide valuable information and quality services for users. Petal Ads Global provides slots for displaying mainstream ads such as native ads, rewarded video ads, banner ads, and interstitial ads to more than 570 million Huawei device users around the world."
 x-zendesk:
   id: 360010605858
   url: https://support.appsflyer.com/hc/en-us/articles/360010605858-Petal-Ads-Global-formerly-HUAWEI-Ads-global-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-06-28T08:40:00Z'
   edited_at: '2026-09-09T12:36:05Z'
 ---
-**At a glance:** Petal Ads Global, an AppsFlyer integrated partner, is a paid presentation service, which provided by Huawei for pan-ecosystem partners. It aims to help partners set up a communication bridge with Huawei device users so they can provide valuable information and quality services for users. Petal Ads Global provides slots for displaying mainstream ads such as native ads, rewarded video ads, banner ads, and interstitial ads to more than 570 million Huawei device users around the world.
-
 ![huaweiadsglobal.png](https://files.readme.io/12f1351923768c1afc1ba0f16b267388a8c9b1ae7fc2d6d36b5d1d01381f1bbc-14151449726353.png)
 
 ## Petal Ads Global introduction

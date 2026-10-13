@@ -1,6 +1,6 @@
 ---
 title: "Measure exceeded dimensions and cardinality limits"
-excerpt: "Learn why some aggregate data dimensions display as exceeded in AppsFlyer and how to prevent reaching cardinality limits."
+excerpt: "Why some aggregate data dimensions display as exceeded and how to prevent reaching cardinality limits."
 x-zendesk:
   id: 115005099063
   url: https://support.appsflyer.com/hc/en-us/articles/115005099063-Measure-exceeded-dimensions-and-cardinality-limits
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-10-08T15:20:55Z'
   edited_at: '2025-04-05T12:54:30Z'
 ---
-**At a glance:** Why some aggregate data dimensions display as *exceeded*and how to prevent reaching cardinality limits.
-
 ## What are exceeded dimensions?
 
 AppsFlyer collects your install and event data and aggregates it. Data is aggregated using unique values populating a given dimension. The number of unique values in a dimension is called cardinality. Most analytics and aggregated reporting tools have cardinality limits per dimension. When the number of unique values in a dimension exceeds the cardinality limit, the remaining data is grouped in an *exceeded* group. And when the number of unique values in the media source dimension exceeds the cardinality limit, the remaining media source data **as well as all dimensions based on the remaining media sources** are grouped in *exceeded* groups.

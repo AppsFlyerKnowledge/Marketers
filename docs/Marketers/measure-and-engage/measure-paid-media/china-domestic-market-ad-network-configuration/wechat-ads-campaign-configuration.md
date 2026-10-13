@@ -1,6 +1,6 @@
 ---
 title: "WeChat Ads campaign configuration"
-excerpt: "Learn how to configure and measure your WeChat advertising campaigns using AppsFlyer."
+excerpt: "Learn how to measure your campaigns with WeChat on AppsFlyer."
 x-zendesk:
   id: 115003044106
   url: https://support.appsflyer.com/hc/en-us/articles/115003044106-WeChat-Ads-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-06-18T06:41:29Z'
   edited_at: '2026-09-15T10:36:12Z'
 ---
-**At a glance:** Learn how to measure your campaigns with WeChat on AppsFlyer.
-
 ## Introduction
 
 WeChat, one of AppsFlyer's integrated partners, is a Chinese multi-purpose messaging, social media and mobile payment app developed by Tencent.

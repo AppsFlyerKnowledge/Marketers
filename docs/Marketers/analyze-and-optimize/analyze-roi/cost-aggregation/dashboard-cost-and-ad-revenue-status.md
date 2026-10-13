@@ -1,6 +1,6 @@
 ---
 title: "Dashboard - Cost and ad Revenue Status"
-excerpt: "Check the operational status of your cost and ad revenue integrations, view headline metrics, and troubleshoot API issues."
+excerpt: "Advertisers and agencies can check the status of cost and ad revenue integrations."
 x-zendesk:
   id: 360016789458
   url: https://support.appsflyer.com/hc/en-us/articles/360016789458-Dashboard-Cost-and-ad-Revenue-Status
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-12-23T12:52:57Z'
   edited_at: '2026-08-13T16:29:42Z'
 ---
-Advertisers and agencies can check the status of cost and ad revenue integrations.
-
 ## Cost and Ad Revenue integration status
 
 - The dashboard displays the current operational status of your cost/ad revenue integrations.

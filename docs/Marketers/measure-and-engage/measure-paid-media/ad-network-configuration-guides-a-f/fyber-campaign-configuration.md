@@ -1,6 +1,6 @@
 ---
 title: "Fyber campaign configuration"
-excerpt: "Learn how to set up and configure your Fyber campaigns in AppsFlyer, including integration settings, attribution links, cost, ad revenue, and permissions."
+excerpt: "Fyber, an AppsFlyer ad network integrated partner, develops a next-generation monetization platform for mobile publishers."
 x-zendesk:
   id: 208209366
   url: https://support.appsflyer.com/hc/en-us/articles/208209366-Fyber-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-03-28T08:29:40Z'
   edited_at: '2026-09-09T13:04:24Z'
 ---
-Fyber, an AppsFlyer ad network integrated partner, develops a next-generation monetization platform for mobile publishers.
-
 ## Setting up Fyber
 
 > 📘 Prerequisite

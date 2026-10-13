@@ -1,6 +1,6 @@
 ---
 title: "Set up ROI360 store revenue"
-excerpt: "Learn how to configure the AppsFlyer ROI360 store revenue solution, including store credentials, server notifications, and SDK connector implementation."
+excerpt: "Set up the AppsFlyer ROI360 store revenue solution."
 x-zendesk:
   id: 42158608158353
   url: https://support.appsflyer.com/hc/en-us/articles/42158608158353-Set-up-ROI360-store-revenue
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-12-22T11:05:11Z'
   edited_at: '2026-07-01T17:06:19Z'
 ---
-**At a glance:** Set up the AppsFlyer ROI360 store revenue solution.
-
 > 📘 **Important!**
 >
 > ROI360 store revenue is available only to customers on the ROI360 premium plan. To check your plan or upgrade, contact your Customer Success Manager (CSM).

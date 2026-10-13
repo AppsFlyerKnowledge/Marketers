@@ -1,6 +1,6 @@
 ---
 title: "About traffic source resolution"
-excerpt: "Learn how AppsFlyer uses traffic source resolution to identify the initial media source, campaign, and channel for each web visit using URL parameters and referrer data."
+excerpt: "Use traffic source resolution to identify the initial media source, campaign, and channel for each web visit, using the URL parameters and referrer data available at landing page load. This gives attribution the traffic-source context it needs to accurately attribute downstream web events, including the user-acquisition event."
 x-zendesk:
   id: 43518064765201
   url: https://support.appsflyer.com/hc/en-us/articles/43518064765201-About-traffic-source-resolution
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2026-02-04T13:46:22Z'
   edited_at: '2026-09-15T07:15:11Z'
 ---
-Use traffic source resolution to identify the initial media source, campaign, and channel for each web visit, using the URL parameters and referrer data available at landing page load. This gives attribution the traffic-source context it needs to accurately attribute downstream web events, including the user-acquisition event.
-
 ## What is traffic source resolution?
 
 For web attribution, the landing page load (**web visit**) is the user’s first engagement with the website. AppsFlyer relies on information available at the time, such as URL parameters and referrer data, to identify the user's media source, campaign, and channel.

@@ -1,6 +1,6 @@
 ---
 title: "Measuring attribution with multiple MMPs"
-excerpt: "Learn which media sources support attribution measurement when working with multiple MMPs simultaneously and how to compare results."
+excerpt: "See which media sources are able to measure attribution when working with multiple MMPs simultaneously so you can compare attribution results between AppsFlyer and your other MMP."
 x-zendesk:
   id: 17316973509393
   url: https://support.appsflyer.com/hc/en-us/articles/17316973509393-Measuring-attribution-with-multiple-MMPs

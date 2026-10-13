@@ -1,6 +1,6 @@
 ---
 title: "Dev Key management"
-excerpt: "Learn how to view, generate, and update your app's Developer Key directly in the App Settings for greater flexibility and security."
+excerpt: "Control and update your app’s Dev Key directly in the App Settings. Giving you greater flexibility and security."
 x-zendesk:
   id: 37139123425809
   url: https://support.appsflyer.com/hc/en-us/articles/37139123425809-Dev-Key-management
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-07-14T11:20:11Z'
   edited_at: '2026-10-07T07:41:56Z'
 ---
-**At a glance:** Control and update your app’s Dev Key directly in the App Settings. Giving you greater flexibility and security.
-
 ## What is a Dev Key?
 
 The Developer Key (Dev Key) is a unique identifier for your app, used to authenticate event data sent from the SDK and server-to-server (S2S) integrations to AppsFlyer. It’s essential for enabling attribution, sessions, and in-app event measurement.  

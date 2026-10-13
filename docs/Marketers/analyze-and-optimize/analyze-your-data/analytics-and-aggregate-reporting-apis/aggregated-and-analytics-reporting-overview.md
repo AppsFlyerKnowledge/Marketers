@@ -1,6 +1,6 @@
 ---
 title: "Aggregated and analytics reporting overview"
-excerpt: "A comprehensive guide and comparison of the aggregated and analytics attribution reports, tools, and APIs available in AppsFlyer."
+excerpt: "Description and comparison of aggregated and analytics attribution reports, tools, and APIs available."
 x-zendesk:
   id: 360005437257
   url: https://support.appsflyer.com/hc/en-us/articles/360005437257-Aggregated-and-analytics-reporting-overview
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-02-04T09:38:14Z'
   edited_at: '2026-09-07T09:56:56Z'
 ---
-Description and comparison of aggregated and analytics attribution reports, tools, and APIs available.
-
 ## Aggregated and analytics performance reporting overview
 
 Aggregated analytic tools in the platform provide advertisers with metrics enabling them to assess the performance of their apps, campaigns, and users.

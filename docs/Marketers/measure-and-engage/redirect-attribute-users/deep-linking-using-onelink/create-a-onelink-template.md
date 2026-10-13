@@ -1,6 +1,6 @@
 ---
 title: "Create a OneLink template"
-excerpt: "Learn how to create and configure a OneLink template to establish the redirection and deep linking logic for your marketing campaigns."
+excerpt: "Create a template to form the basis of the redirection logic for all OneLink links that you create for your various marketing campaigns. A template is required for creating links and end-user experiences."
 x-zendesk:
   id: 207032246
   url: https://support.appsflyer.com/hc/en-us/articles/207032246-Create-a-OneLink-template
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2014-11-03T12:35:49Z'
   edited_at: '2026-08-31T12:47:56Z'
 ---
-**At a glance:** Create a template to form the basis of the redirection logic for all OneLink links that you create for your various marketing campaigns. A template is required for creating links and end-user experiences.
-
 ## OneLink templates
 
 <Embed title="Create a OneLink template" typeOfEmbed="youtube" url="https://www.youtube.com/embed/d4AtCJ9122Q" providerUrl="https://www.youtube.com" />

@@ -1,6 +1,6 @@
 ---
 title: "Audiences onboarding guide"
-excerpt: "Learn how to build, connect, and manage customized audience segments in AppsFlyer to optimize your user acquisition and remarketing campaigns."
+excerpt: "Use AppsFlyer Audiences to build and connect customized audience segments to your partner networks for the most effective user acquisition and remarketing campaigns."
 x-zendesk:
   id: 27276077637649
   url: https://support.appsflyer.com/hc/en-us/articles/27276077637649-Audiences-onboarding-guide
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-08-05T11:44:00Z'
   edited_at: '2024-12-09T09:29:35Z'
 ---
-Use AppsFlyer Audiences to build and connect customized audience segments to your partner networks for the most effective user acquisition and remarketing campaigns.
-
 ![53010_Audiences.jpg](https://files.readme.io/37aa78c4e885438f7912110a424a9ddbb9ddb7842fcb7239c7e2bc893eb36a50-30778512024081.jpg)
 
 ## About Audiences

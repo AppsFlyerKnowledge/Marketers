@@ -1,6 +1,6 @@
 ---
 title: "Account settings"
-excerpt: "Manage your personal profile, account-level security settings, and AI capabilities from a single centralized page."
+excerpt: "Use the Account settings page to manage your personal profile, account-level settings, and AI capabilities from one single place."
 x-zendesk:
   id: 44784756352273
   url: https://support.appsflyer.com/hc/en-us/articles/44784756352273-Account-settings
@@ -29,8 +29,6 @@ x-zendesk:
   <Card title="AI capabilities" href="#ai-capabilities" icon="fa-solid fa-robot" />
   <Card title="Permissions" href="#permissions" icon="fa-solid fa-user-gear" />
 </Cards>
-
-At a glance: Use the **Account settings** page to manage your personal profile, account-level settings, and AI capabilities from one single place.
 
 ## About Account settings
 

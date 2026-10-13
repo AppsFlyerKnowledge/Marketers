@@ -1,6 +1,6 @@
 ---
 title: "Google Ads (AdWords)—Integration setup for advertisers"
-excerpt: "Set up the Google Ads integration in AppsFlyer to measure and attribute installs and in-app events from your Google Ads campaigns."
+excerpt: "Integrate your Google Ads account with AppsFlyer to display attribution data from all of your campaigns."
 x-zendesk:
   id: 115002504686
   url: https://support.appsflyer.com/hc/en-us/articles/115002504686-Google-Ads-AdWords-Integration-setup-for-advertisers
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-05-17T19:16:15Z'
   edited_at: '2026-10-13T10:46:28Z'
 ---
-Integrate your Google Ads account with AppsFlyer to display attribution data from all of your campaigns.
-
 Set up the Google Ads integration in AppsFlyer to measure and attribute installs and in-app events from your Google Ads campaigns. In AppsFlyer, this integration is named `googleadwords_int`, and attribution results are reported under the media source `googleadwords_int`.
 
 ## Google Ads attribution flow with advanced data sharing

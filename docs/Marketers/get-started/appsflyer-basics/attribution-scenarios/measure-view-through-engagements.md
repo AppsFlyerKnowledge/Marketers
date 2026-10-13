@@ -1,6 +1,6 @@
 ---
 title: "Measure view-through engagements"
-excerpt: "Learn how view-through attribution measures app installs, re-attributions, and re-engagements from users who viewed an ad without clicking."
+excerpt: "A user who views an ad (impression) and subsequently installs the app, is attributed by view-through attribution."
 x-zendesk:
   id: 210084473
   url: https://support.appsflyer.com/hc/en-us/articles/210084473-Measure-view-through-engagements
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-04-20T07:38:24Z'
   edited_at: '2026-05-05T15:20:54Z'
 ---
-**At a glance:** A user who views an ad (impression) and subsequently installs the app, is attributed by view-through attribution.
-
 ## Overview
 
 View-through attribution measures installs, re-attributions, and re-engagements of users who viewed an ad but didn't click on it.

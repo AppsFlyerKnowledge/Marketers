@@ -1,6 +1,6 @@
 ---
 title: "Why is my app still pending?"
-excerpt: "Learn why your app status shows as pending in the AppsFlyer dashboard and how to manually refresh it or configure the correct store country."
+excerpt: "Follow the status of apps pending publishing to app stores from the AppsFlyer dashboard."
 x-zendesk:
   id: 360001533885
   url: https://support.appsflyer.com/hc/en-us/articles/360001533885-Why-is-my-app-still-pending
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-10-14T07:22:04Z'
   edited_at: '2024-01-11T12:45:23Z'
 ---
-**At a glance:** Follow the status of apps pending publishing to app stores from the AppsFlyer dashboard.
-
 When you [add your new app](/docs/adding-an-app-to-appsflyer) to the AppsFlyer dashboard, you first choose whether the app is pending or already in the market.
 
 Pending apps in AppsFlyer look the same as live apps. They have accessible dashboards and all attribution measurement works for them. The only difference is the logo of the app which displays with the AppsFlyer logo instead of the actual app logo.

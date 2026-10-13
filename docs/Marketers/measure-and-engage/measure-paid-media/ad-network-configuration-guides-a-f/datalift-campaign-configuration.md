@@ -1,6 +1,6 @@
 ---
 title: "DataLift campaign configuration"
-excerpt: "Configure your DataLift integration in AppsFlyer to measure programmatic mobile campaigns, retargeting, and in-app events."
+excerpt: "DataLift, an AppsFlyer ad network integrated partner, enables app marketers to programmatically access all major mobile ad inventory worldwide and control their campaigns through a single proprietary technology platform, providing advanced data integration and extended targeting and audience management capabilities. In addition to click-based mobile attribution, DataLift also offers retargeting, which you can record with AppsFlyer."
 x-zendesk:
   id: 217752383
   url: https://support.appsflyer.com/hc/en-us/articles/217752383-DataLift-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-11-09T14:57:24Z'
   edited_at: '2026-09-09T10:34:05Z'
 ---
-DataLift, an AppsFlyer ad network integrated partner, enables app marketers to programmatically access all major mobile ad inventory worldwide and control their campaigns through a single proprietary technology platform, providing advanced data integration and extended targeting and audience management capabilities. In addition to click-based mobile attribution, DataLift also offers retargeting, which you can record with AppsFlyer.
-
 ## Setting up DataLift
 
 > 📘 Prerequisite

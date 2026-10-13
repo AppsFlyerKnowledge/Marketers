@@ -1,6 +1,6 @@
 ---
 title: "Smart Banners and Smart Script security and performance"
-excerpt: "Discover how AppsFlyer proactively addresses security and performance concerns regarding Smart Banners and Smart Script."
+excerpt: "Discover how AppsFlyer proactively addresses your security concerns regarding Smart Banners and Smart Script."
 x-zendesk:
   id: 22082177372561
   url: https://support.appsflyer.com/hc/en-us/articles/22082177372561-Smart-Banners-and-Smart-Script-security-and-performance
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-01-30T14:54:37Z'
   edited_at: '2026-05-31T11:57:28Z'
 ---
-**At a glance:** Discover how AppsFlyer proactively addresses your security concerns regarding Smart Banners and Smart Script.
-
 In this Q&A, we discuss common queries about smart banners and smart script integration, focusing on their impact on security and site speed.
 
 ## Smart banners API security

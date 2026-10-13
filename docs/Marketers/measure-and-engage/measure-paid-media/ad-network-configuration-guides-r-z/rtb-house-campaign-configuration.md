@@ -1,6 +1,6 @@
 ---
 title: "RTB House campaign configuration"
-excerpt: "Configure RTB House integration in AppsFlyer to enable deep learning-based retargeting and mobile attribution."
+excerpt: "RTB House, an AppsFlyer ad network integrated partner, provides retargeting technology for e-commerce and gaming companies. RTB House has developed its own retargeting solution, based on deep learning algorithms, for purchasing online ads in the Real-Time Bidding model. In addition to click-based mobile attribution, RTB House offers retargeting attribution, which can be recorded with AppsFlyer."
 x-zendesk:
   id: 360001274325
   url: https://support.appsflyer.com/hc/en-us/articles/360001274325-RTB-House-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-07-05T08:30:48Z'
   edited_at: '2026-06-16T12:15:23Z'
 ---
-RTB House, an AppsFlyer ad network integrated partner, provides retargeting technology for e-commerce and gaming companies. RTB House has developed its own retargeting solution, based on deep learning algorithms, for purchasing online ads in the Real-Time Bidding model. In addition to click-based mobile attribution, RTB House offers retargeting attribution, which can be recorded with AppsFlyer. 
-
 ## Setting up RTB House
 
 > 📘 Prerequisite

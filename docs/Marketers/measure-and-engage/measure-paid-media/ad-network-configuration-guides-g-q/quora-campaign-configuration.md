@@ -1,6 +1,6 @@
 ---
 title: "Quora campaign configuration"
-excerpt: "Learn how to set up and configure your mobile attribution campaigns with Quora in AppsFlyer."
+excerpt: "Quora, AppsFlyer integrated partners, is one of the most popular online Q&A communities. Over 300 million unique visitors come to Quora every month to ask questions and read insightful answers. Quora's large, engaged audience is one of the key reasons why marketers have found success advertising on Quora."
 x-zendesk:
   id: 360000974737
   url: https://support.appsflyer.com/hc/en-us/articles/360000974737-Quora-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-02-17T12:56:30Z'
   edited_at: '2026-06-16T09:55:40Z'
 ---
-**At a glance:** Quora, AppsFlyer integrated partners, is one of the most popular online Q&A communities. Over 300 million unique visitors come to Quora every month to ask questions and read insightful answers. Quora's large, engaged audience is one of the key reasons why marketers have found success advertising on Quora.
-
 ![](https://cdn.appsflyer.com/marketplace/static/logo/quora.png?v=1%0A)
 
 ## Setting up Quora

@@ -1,6 +1,6 @@
 ---
 title: "SKAN solution"
-excerpt: "Explore AppsFlyer's comprehensive SKAN solution, including Conversion Studio, ATT implications, and iOS attribution guides."
+excerpt: "All about iOS attribution: our SKAN solution, Conversion Studio, ATT, and LAT"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,42 +18,41 @@ All about iOS attribution: our SKAN solution, Conversion Studio, ATT, and LAT
 
 <Cards>
   <Card title="SKAN conversion schema templates" href="/docs/skan-conversion-schema-templates" icon="fa-solid fa-lock">
-    Learn about pre-configured templates for setting up your SKAN conversion value schema.
+    SKAN conversion schema templates are ready-to-use templates. Simplifying the SKAN setup by offering templates based on a combination of industry and specific app data, offering industry insights and best practices. SKAN conversion schema templates can be found in the Conversion Studio.
   </Card>
   <Card title="SKAdNetwork (SKAN) solution guide" href="/docs/skadnetwork-skan-solution-guide" icon="fa-solid fa-lock">
-    A comprehensive guide to understanding and implementing AppsFlyer's SKAN attribution solution.
+    Attributing app installs using SKAN.
   </Card>
   <Card title="SKAN Conversion Studio" href="/docs/skan-conversion-studio" icon="fa-solid fa-lock">
-    Configure your conversion value measurement settings and maximize your post-install insights.
+    Use SKAN Conversion Studio to set which user engagements in the app to measure, and for how long. Measure revenue, conversion, engagement, and retention during a limited post-install period. By adding the Single Source of Truth measurement we can let you know if the user was attributed by both AppsFlyer and SKAN.
   </Card>
   <Card title="Single Source of Truth (SSOT) guide for iOS attribution" href="/docs/single-source-of-truth-ssot-guide-for-ios-attribution" icon="fa-solid fa-diagram-project">
-    Eliminate duplicate attributions between SKAN and traditional attribution methods.
+    In the context of the iOS 14+ environment, AppsFlyer brings together data from multiple attribution match methods like IDFA, IDFV, SKAN, Apple Ads, and so on, and gives a complete picture of app campaign performance. No attribution method provides the full app performance picture. The challenge is to count a given user once because that same user can be attributed by two methods. The AppsFlyer Single Source of Truth (SSOT) mechanism does just that. SSOT reports and metrics are true and accurate and count the same user only once.
   </Card>
   <Card title="SKAN modeled data" href="/docs/skan-modeled-data" icon="fa-solid fa-lock">
-    Understand how modeled data helps fill reporting gaps caused by SKAN privacy thresholds.
+    AppsFlyer models aggregate data that basic SKAdNetwork reporting is unable to provide.
   </Card>
   <Card title="SKAN recommendations" href="/docs/skan-recommendations" icon="fa-solid fa-lock">
-    Best practices and optimization strategies for your SKAN setup.
+    Use SKAN recommendations to optimize your conversion value settings and receive more accurate post-install activity measurements .
   </Card>
   <Card title="SKAN CV decode (map your CV to events)" href="/docs/skan-cv-decode-map-your-cv-to-events" icon="fa-solid fa-lock">
-    How to decode and map SKAN conversion values back to specific in-app events.
+    AppsFlyer decodes and transforms the conversion value set by you into events. The events are used to populate the SKAN dashboard, raw data, and postbacks to partners.
   </Card>
   <Card title="SKAN raw data reports" href="/docs/skan-raw-data-reports" icon="fa-solid fa-lock">
-    Access and analyze raw postback data received from SKAdNetwork.
   </Card>
   <Card title="Send SKAN and AdAttributionKit postback copies directly to AppsFlyer (iOS 15+)" href="/docs/send-skan-and-adattributionkit-postback-copies-directly-to-appsflyer-ios-15" icon="fa-solid fa-lock">
-    Configure your app to send direct copies of winning postbacks to AppsFlyer.
+    Starting iOS 15, configure your app to send postback copies to AppsFlyer in addition to sending them to ad networks. Doing so enables AppsFlyer to validate the conversion value (CV) and verify postback integrity. Configure AppsFlyer Push API to forward postback copies to an additional selected endpoint.
   </Card>
   <Card title="ATT implications (iOS 14+) and deprecation of LAT" href="/docs/att-implications-ios-14-and-deprecation-of-lat" icon="fa-solid fa-user-shield">
-    Understand the impact of App Tracking Transparency and the transition from Limit Ad Tracking.
+    Starting iOS 14 iOS uses ATT to determine user privacy preferences and Limit ad tracking (LAT) is deprecated.
   </Card>
   <Card title="SKAN aggregated postback arrival date API" href="/docs/skan-aggregated-postback-arrival-date-api" icon="fa-solid fa-lock">
-    API reference for retrieving aggregated postback data based on arrival date.
+    Aggregated SKAdNetwork postbacks via API. Data is aggregated using postback arrival date.
   </Card>
   <Card title="SKAN CV schema API for advertisers" href="/docs/skan-cv-schema-api-for-advertisers" icon="fa-solid fa-lock">
-    Programmatically manage and retrieve your conversion value schemas.
+    View your current SKAdNetwork (SKAN) conversion value (CV) schema as configured in AppsFlyer Conversion Studio.
   </Card>
   <Card title="SKAN aggregated performance report API" href="/docs/skan-aggregated-performance-report-api" icon="fa-solid fa-lock">
-    Pull aggregated performance and attribution metrics via API.
+    SKAN performance enriched with additional data points. Similar to the data in the SKAdNetwork dashboard. Aggregate using either the install date or postback arrival date.
   </Card>
 </Cards>

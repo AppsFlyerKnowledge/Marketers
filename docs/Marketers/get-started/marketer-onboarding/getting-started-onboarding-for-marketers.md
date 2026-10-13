@@ -1,6 +1,6 @@
 ---
 title: "Getting started—Onboarding for marketers"
-excerpt: "Get everything set up to make the most of your AppsFlyer account by understanding the steps, timelines, and dependencies for onboarding your apps and team."
+excerpt: "Get everything set up to make the most of your AppsFlyer account. Understand the steps, timelines, and dependencies for getting your apps and your team on board."
 x-zendesk:
   id: 207033486
   url: https://support.appsflyer.com/hc/en-us/articles/207033486-Getting-started-Onboarding-for-marketers
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-01-18T11:03:01Z'
   edited_at: '2025-03-25T11:21:10Z'
 ---
-**At a glance:** Get everything set up to make the most of your AppsFlyer account. Understand the steps, timelines, and dependencies for getting your apps and your team on board.
-
 ![](https://fast.wistia.com/embed/medias/gamcb25kgu/swatch)
 
 ## Introduction

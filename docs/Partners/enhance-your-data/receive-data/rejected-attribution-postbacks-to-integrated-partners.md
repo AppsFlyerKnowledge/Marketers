@@ -1,6 +1,6 @@
 ---
 title: "Rejected attribution postbacks to integrated partners"
-excerpt: "Integrated partners get real-time postbacks of rejected installs and in-app events due to fraud or non-compliance with validation rules."
+excerpt: "Integrated partners get postbacks of rejected installs and in-app events due to fraud or non-compliance with validation rules."
 x-zendesk:
   id: 115004744123
   url: https://support.appsflyer.com/hc/en-us/articles/115004744123-Rejected-attribution-postbacks-to-integrated-partners

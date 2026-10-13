@@ -1,6 +1,6 @@
 ---
 title: "Partner activation/deactivation"
-excerpt: "Learn how to activate or deactivate partner integrations in AppsFlyer, allowing or denying them from getting your data and performing actions."
+excerpt: "Activate or deactivate partner integrations, allowing or denying them from getting your data and performing actions."
 x-zendesk:
   id: 360000844778
   url: https://support.appsflyer.com/hc/en-us/articles/360000844778-Partner-activation-deactivation
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-01-29T08:53:31Z'
   edited_at: '2026-09-09T13:25:57Z'
 ---
-At a glance: Activate or deactivate partner integrations, allowing or denying them from getting your data and performing actions.
-
 ## Activation overview
 
 Partner integrations can be either active or inactive. An integration is first activated by turning on the **Activate partner** toggle from the main integration page. There are various integration types. An integration can also be considered active if any other [integration type](#integration-types) (see table below) is turned on, even while the **Activate partner** toggle is turned off.

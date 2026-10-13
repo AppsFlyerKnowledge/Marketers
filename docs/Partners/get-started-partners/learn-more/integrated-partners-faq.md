@@ -1,6 +1,6 @@
 ---
 title: "Integrated partners—FAQ"
-excerpt: "Find answers to frequently asked questions and troubleshooting tips for integrated partners, covering account setup, permissions, postbacks, and anti-fraud."
+excerpt: "FAQ and integration troubleshooting for integrated partners."
 x-zendesk:
   id: 4406549295249
   url: https://support.appsflyer.com/hc/en-us/articles/4406549295249-Integrated-partners-FAQ
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-09-02T09:33:34Z'
   edited_at: '2026-01-14T08:33:02Z'
 ---
-FAQ and integration troubleshooting for integrated partners.
-
 ## Account and dashboard
 
 ### I want to become an integrated partner

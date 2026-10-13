@@ -1,6 +1,6 @@
 ---
 title: "Spotify campaign configuration"
-excerpt: "Learn how to configure and set up Spotify campaigns in AppsFlyer, including integration, attribution, and permissions."
+excerpt: "Spotify, an AppsFlyer ad network integrated partner, uses its enhanced mobile advertising solution to cultivate strategic, scalable, and smart campaigns to meet the needs of mobile users. In Spotify, clicks are generated when a user clicks on a CTA button while watching or hearing an ad."
 x-zendesk:
   id: 360015074677
   url: https://support.appsflyer.com/hc/en-us/articles/360015074677-Spotify-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-11-05T07:36:01Z'
   edited_at: '2026-06-16T10:01:47Z'
 ---
-At a glance: Spotify, an AppsFlyer ad network integrated partner, uses its enhanced mobile advertising solution to cultivate strategic, scalable, and smart campaigns to meet the needs of mobile users. In Spotify, clicks are generated when a user clicks on a CTA button while watching or hearing an ad.
-
 ![Spotify_Full_Logo_RGB_Black.png](https://files.readme.io/e3908e19ec71c506c2ff135652cea6529f128743d8284c02c1a481f24485b3a6-small-37818004235409.png)
 
 ## Setting up Spotify

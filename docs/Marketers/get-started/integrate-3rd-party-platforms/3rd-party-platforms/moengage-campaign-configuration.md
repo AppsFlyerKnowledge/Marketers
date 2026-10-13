@@ -1,6 +1,6 @@
 ---
 title: "MoEngage campaign configuration"
-excerpt: "Learn how to configure the MoEngage integration in AppsFlyer to send install and event postbacks to your customer engagement platform."
+excerpt: "MoEngage, a third-party customer engagement platform integrated with AppsFlyer, is an agentic customer engagement platform built for the mobile-first world."
 x-zendesk:
   id: 115003139643
   url: https://support.appsflyer.com/hc/en-us/articles/115003139643-MoEngage-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-06-25T07:50:18Z'
   edited_at: '2026-07-07T09:25:09Z'
 ---
-At a glance: MoEngage, a third-party customer engagement platform integrated with AppsFlyer, is an agentic customer engagement platform built for the mobile-first world.
-
 > ❗️ Important!
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.

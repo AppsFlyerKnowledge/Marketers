@@ -1,6 +1,6 @@
 ---
 title: "Postback troubleshooting for ad networks"
-excerpt: "A troubleshooting guide for ad networks to resolve issues with receiving install and in-app event postbacks."
+excerpt: "If you have problems receiving postbacks, review the following solutions."
 table_of_contents: false
 x-zendesk:
   id: 7466104144145
@@ -23,8 +23,6 @@ x-zendesk:
   created_at: '2022-07-07T15:16:00Z'
   edited_at: '2026-01-13T10:25:26Z'
 ---
-**At a glance:** If you have problems receiving postbacks, review the following solutions.
-
 | **Problem** | **Solution** |
 | --- | --- |
 | I don't see my Advertiser's app under **My Apps** | - If the Advertiser's app doesn't appear under **My Apps** (from the top menu), reach out to the Advertiser and ask them to [provide you with relevant permissions](/docs/set-up-an-integrated-partner#ad-network-permissions).<br />- Verify that the [**Activate partner** toggle is enabled](/docs/partner-activation-deactivation#activating-a-partner).<br />**Note:** If you're running a test with a production application, make sure to register your device according to the instructions [here](/docs/registering-test-devices). |

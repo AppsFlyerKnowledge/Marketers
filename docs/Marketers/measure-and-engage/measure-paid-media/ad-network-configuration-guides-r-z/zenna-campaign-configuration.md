@@ -1,6 +1,6 @@
 ---
 title: "Zenna campaign configuration"
-excerpt: "Learn how to configure Zenna, an AppsFlyer integrated ad network partner, to set up attribution links, in-app event postbacks, and partner permissions."
+excerpt: "Zenna, an AppsFlyer integrated ad network partner, provides a performance-based user acquisition solution solely for mobile games."
 x-zendesk:
   id: 115005277446
   url: https://support.appsflyer.com/hc/en-us/articles/115005277446-Zenna-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-10-23T06:52:44Z'
   edited_at: '2026-09-09T13:01:57Z'
 ---
-At a glance: Zenna, an AppsFlyer integrated ad network partner, provides a performance-based user acquisition solution solely for mobile games.
-
 ## Setting up Zenna
 
 > 📘 Prerequisite

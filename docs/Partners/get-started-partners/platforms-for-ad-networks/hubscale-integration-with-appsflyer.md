@@ -1,6 +1,6 @@
 ---
 title: "Hubscale integration with AppsFlyer"
-excerpt: "Learn how ad networks using Hubscale can integrate with AppsFlyer by setting up attribution links and global postbacks."
+excerpt: "Learn how ad networks using Hubscale can integrate with AppsFlyer."
 x-zendesk:
   id: 115005874869
   url: https://support.appsflyer.com/hc/en-us/articles/115005874869-Hubscale-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-12-19T12:25:07Z'
   edited_at: '2024-12-23T15:18:26Z'
 ---
-At a glance: Learn how ad networks using Hubscale can integrate with AppsFlyer.
-
 To initiate the integration you need to send AppsFlyer:
 
 1. Your attribution link

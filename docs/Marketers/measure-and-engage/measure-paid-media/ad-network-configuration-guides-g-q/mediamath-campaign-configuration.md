@@ -1,6 +1,6 @@
 ---
 title: "MediaMath campaign configuration"
-excerpt: "Learn how to configure MediaMath with AppsFlyer to enable programmatic marketing, mobile attribution, retargeting, and view-through attribution."
+excerpt: "MediaMath, an AppsFlyer integrated partner, specializes in programmatic marketing technology, with data management platforms and omnichannel DSPs. In addition to click-based mobile attribution, MediaMath also offers retargeting and view-through attribution, which you can record with AppsFlyer."
 x-zendesk:
   id: 214956583
   url: https://support.appsflyer.com/hc/en-us/articles/214956583-MediaMath-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-10-06T14:55:35Z'
   edited_at: '2026-07-23T13:08:45Z'
 ---
-**At a glance:** MediaMath, an AppsFlyer integrated partner, specializes in programmatic marketing technology, with data management platforms and omnichannel DSPs. In addition to click-based mobile attribution, MediaMath also offers retargeting and view-through attribution, which you can record with AppsFlyer.
-
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mediamath.png)
 
 ## Setting up Mediamath

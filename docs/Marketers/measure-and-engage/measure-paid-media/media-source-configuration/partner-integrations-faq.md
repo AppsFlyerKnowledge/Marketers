@@ -1,6 +1,6 @@
 ---
 title: "Partner Integrations—FAQ"
-excerpt: "Find answers to frequently asked questions about AppsFlyer Partner Integrations, including partner cards, search filters, and troubleshooting."
+excerpt: "Find answers to frequently asked questions about AppsFlyer Partner Integrations."
 x-zendesk:
   id: 11189057923601
   url: https://support.appsflyer.com/hc/en-us/articles/11189057923601-Partner-Integrations-FAQ
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-12-06T14:20:35Z'
   edited_at: '2026-04-15T11:28:11Z'
 ---
-**At a glance**: Find answers to frequently asked questions about AppsFlyer Partner Integrations.
-
 ## Use Partner Integrations
 
 <Accordion title="What information can I see on a partner card without entering the page?">

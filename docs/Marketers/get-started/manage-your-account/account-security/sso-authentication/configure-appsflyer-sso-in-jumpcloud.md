@@ -1,6 +1,6 @@
 ---
 title: "Configure AppsFlyer SSO in JumpCloud"
-excerpt: "Learn how to configure the single sign-on (SSO) process using JumpCloud as your identity provider for AppsFlyer."
+excerpt: "Configure the SSO process using JumpCloud as an identity provider (IdP)."
 x-zendesk:
   id: 13563131567249
   url: https://support.appsflyer.com/hc/en-us/articles/13563131567249-Configure-AppsFlyer-SSO-in-JumpCloud
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-03-08T07:39:41Z'
   edited_at: '2023-11-15T10:59:34Z'
 ---
-At a glance: Configure the SSO process using JumpCloud as an identity provider (IdP).
-
 The first stage in configuring the AppsFlyer SSO process is done on the JumpCloud platform. Follow the steps below:
 
 ### Create the AppsFlyer app in JumpCloud

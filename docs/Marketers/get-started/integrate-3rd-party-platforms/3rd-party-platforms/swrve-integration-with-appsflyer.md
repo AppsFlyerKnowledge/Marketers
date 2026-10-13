@@ -1,6 +1,6 @@
 ---
 title: "Swrve integration with AppsFlyer"
-excerpt: "Learn how to integrate Swrve with AppsFlyer to deliver targeted, personal, and optimized interactions to your mobile app users."
+excerpt: "Swrve, an AppsFlyer integrated partner, is a cross-platform customer interaction engine, allowing advertisers to deliver targeted, personal and optimized interactions to end-users:"
 x-zendesk:
   id: 207040656
   url: https://support.appsflyer.com/hc/en-us/articles/207040656-Swrve-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-12-24T11:46:00Z'
   edited_at: '2026-08-14T16:22:59Z'
 ---
-Swrve, an AppsFlyer integrated partner, is a cross-platform customer interaction engine, allowing advertisers to deliver targeted, personal and optimized interactions to end-users:
-
 - Dynamic optimization and testing of core app content
 - In-app and push notification campaigns
 - Email

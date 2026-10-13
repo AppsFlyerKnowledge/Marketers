@@ -1,6 +1,6 @@
 ---
 title: "Account management—plans, payments, and billing"
-excerpt: "Learn about AppsFlyer plans, premium add-on features, and how plan usage and invoices are calculated."
+excerpt: "Learn about AppsFlyer plans and premium add-on features. See how plan usage and invoices are calculated. Manage your account."
 x-zendesk:
   id: 115000136303
   url: https://support.appsflyer.com/hc/en-us/articles/115000136303-Account-management-plans-payments-and-billing
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-12-26T07:52:27Z'
   edited_at: '2026-07-08T09:48:21Z'
 ---
-**At a glance:** Learn about AppsFlyer plans and premium add-on features. See how plan usage and invoices are calculated. Manage your account. 
-
 ## AppsFlyer plans and usage
 
 ### AppsFlyer plans

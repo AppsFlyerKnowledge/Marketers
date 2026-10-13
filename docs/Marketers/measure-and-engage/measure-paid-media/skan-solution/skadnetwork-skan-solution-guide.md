@@ -1,6 +1,6 @@
 ---
 title: "SKAdNetwork (SKAN) solution guide"
-excerpt: "Learn how to attribute iOS app installs and measure campaign performance while preserving user privacy using AppsFlyer's SKAdNetwork (SKAN) solution."
+excerpt: "Attributing app installs using SKAN."
 x-zendesk:
   id: 360011420698
   url: https://support.appsflyer.com/hc/en-us/articles/360011420698-SKAdNetwork-SKAN-solution-guide
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-07-25T21:19:42Z'
   edited_at: '2026-06-11T08:38:51Z'
 ---
-Attributing app installs using SKAN.
-
 ![SKAN Solution](https://files.readme.io/a970d7b0e8da300ded2138f941bf2e891f32d396c8500292534992a4b4449d71-30757780264337.png)
 
 ## SKAN

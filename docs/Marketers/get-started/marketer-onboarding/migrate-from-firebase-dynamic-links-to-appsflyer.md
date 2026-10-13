@@ -1,6 +1,6 @@
 ---
 title: "Migrate from Firebase Dynamic Links to AppsFlyer"
-excerpt: "Migrate from Firebase Dynamic Links to AppsFlyer OneLink using our step-by-step guide to prevent disruptions to user journeys."
+excerpt: "Migrate from Firebase Dynamic Links to AppsFlyer OneLink using our step-by-step guide."
 x-zendesk:
   id: 16282289097105
   url: https://support.appsflyer.com/hc/en-us/articles/16282289097105-Migrate-from-Firebase-Dynamic-Links-to-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-06-19T09:27:37Z'
   edited_at: '2026-08-19T09:29:28Z'
 ---
-**At a glance:** Migrate from Firebase Dynamic Links to AppsFlyer OneLink using our step-by-step guide.
-
 ## ![53375 Firebase migration KB image.png](https://files.readme.io/b5340a5b30c160bca2b420052fd60b23f4bfe0de6d2868f91ad4342bee36c7df-30063560499345.png)
 
 ## About the migration

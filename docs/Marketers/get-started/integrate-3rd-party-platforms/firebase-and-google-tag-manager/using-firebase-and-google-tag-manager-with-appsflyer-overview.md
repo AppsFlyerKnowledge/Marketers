@@ -1,6 +1,6 @@
 ---
 title: "Using Firebase and Google Tag Manager with AppsFlyer—Overview"
-excerpt: "Learn how to send in-app events reported via Firebase SDK to AppsFlyer using Google Tag Manager without needing to implement duplicate event tracking."
+excerpt: "About sending events reported via Firebase SDK to AppsFlyer using Google Tag Manager."
 x-zendesk:
   id: 210353513
   url: https://support.appsflyer.com/hc/en-us/articles/210353513-Using-Firebase-and-Google-Tag-Manager-with-AppsFlyer-Overview
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-05-13T19:42:23Z'
   edited_at: '2023-11-02T10:37:24Z'
 ---
-At a glance: About sending events reported via Firebase SDK to AppsFlyer using Google Tag Manager.
-
 ![gtm.png](https://files.readme.io/fbb4e0f83baf6f5f7f8dc83e02986ca011f5cb919b9870768da1606798211dcc-360002517245.png)
 
 The AppsFlyer integration with Google Tag Manager (GTM) and Firebase allows the developer to send in-app events to Firebase using Firebase SDK, and to have the events sent to AppsFlyer via the SDK using Google Tag Manager. This avoids needing to send the same event twice.

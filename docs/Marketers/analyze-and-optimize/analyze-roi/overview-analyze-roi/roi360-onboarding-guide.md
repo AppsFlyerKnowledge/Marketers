@@ -1,6 +1,6 @@
 ---
 title: "ROI360 - onboarding guide"
-excerpt: "Follow the onboarding instructions in this guide to get ROI360 for cost, ad revenue, and in-app purchase and subscription revenue data up and running."
+excerpt: "Follow the onboarding instructions in this article to get ROI360 for cost and revenue data up and running."
 x-zendesk:
   id: 25301111725329
   url: https://support.appsflyer.com/hc/en-us/articles/25301111725329-ROI360-onboarding-guide
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-05-23T08:36:31Z'
   edited_at: '2026-09-09T15:54:38Z'
 ---
-**At a glance**: Follow the onboarding instructions in this article to get ROI360 for cost and revenue data up and running.
-
 ![](https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png)
 
 ## About ROI360

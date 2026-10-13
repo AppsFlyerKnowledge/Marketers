@@ -1,6 +1,6 @@
 ---
 title: "mParticle integration with AppsFlyer"
-excerpt: "Learn how to configure event and feed integrations, implement deferred deep linking, and enable uninstall measurement between mParticle and AppsFlyer."
+excerpt: "mParticle, an AppsFlyer integrated partner, collects customer data and sends it to different analytics, marketing, and data warehousing platforms."
 x-zendesk:
   id: 209787323
   url: https://support.appsflyer.com/hc/en-us/articles/209787323-mParticle-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-04-03T05:31:23Z'
   edited_at: '2026-08-14T16:22:58Z'
 ---
-mParticle, an AppsFlyer integrated partner, collects customer data and sends it to different analytics, marketing, and data warehousing platforms.
-
 > ❗️ Important
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.

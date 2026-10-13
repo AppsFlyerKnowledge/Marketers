@@ -1,6 +1,6 @@
 ---
 title: "Data Clean Room—Creating In-app event reports"
-excerpt: "Learn how to create In-app event reports in the Data Clean Room to extract specific event parameters, match them with custom sources, and present aggregated user activity data."
+excerpt: "Create In-app event reports to focus on user activity occurring after an app has been installed. Extract specific event parameters from your in-app event raw data, optionally match the data with custom sources, then process and present it in aggregated form."
 x-zendesk:
   id: 9312610473233
   url: https://support.appsflyer.com/hc/en-us/articles/9312610473233-Data-Clean-Room-Creating-In-app-event-reports
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-09-22T12:03:40Z'
   edited_at: '2024-07-22T12:05:41Z'
 ---
-**At a glance:** Create In-app event reports to focus on user activity occurring after an app has been installed. Extract specific event parameters from your in-app event raw data, optionally match the data with custom sources, then process and present it in aggregated form.
-
 ## Creating an In-app event report
 
 **To create an In-app event report, follow the steps detailed in the tabs below.**

@@ -1,6 +1,6 @@
 ---
 title: "Cost sharing for ad networks"
-excerpt: "Learn how to refine customer data by providing cost information through various cost-sharing options, APIs, and attribution links."
+excerpt: "Refine customer data by providing cost information"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,18 +18,18 @@ Refine customer data by providing cost information
 
 <Cards>
   <Card title="Cost-sharing options for ad networks" href="/docs/cost-sharing-options-for-ad-networks" icon="fa-solid fa-handshake">
-    Explore the different methods and options available for ad networks to share cost data with AppsFlyer.
+    Compare cost-sharing methods available to AppsFlyer ad network partners.
   </Card>
   <Card title="Cost Import for ad networks" href="/docs/cost-import-for-ad-networks" icon="fa-solid fa-handshake">
-    Learn how to manually or automatically import cost data directly into your ad network account.
+    Learn how ad networks can report the advertiser's campaign costs directly to AppsFlyer via CSV files.
   </Card>
   <Card title="InCost API for ad networks" href="/docs/incost-api-for-ad-networks" icon="fa-solid fa-handshake">
-    Integrate with the InCost API to programmatically send cost details to AppsFlyer.
+    InCost API, part of AppsFlyer ROI360, lets ad networks programmatically send advertising cost data to AppsFlyer. Doing so provides advertisers with aggregate cost data and lets them understand the true impact of your network.
   </Card>
   <Card title="ROI360—cost reporting options for agencies" href="/docs/roi360-cost-reporting-options-for-agencies" icon="fa-solid fa-chart-column">
-    Understand cost reporting options and ROI360 features tailored specifically for agencies.
+    Report cost data via cost API (requires a subscription to ROI360 premium solution), and cost by click.
   </Card>
   <Card title="Cost reporting on the attribution link for ad networks" href="/docs/cost-reporting-on-the-attribution-link-for-ad-networks" icon="fa-solid fa-handshake">
-    Configure cost parameters directly on your attribution links to pass cost data in real-time.
+    Ad networks can report cost every time an ad is clicked.
   </Card>
 </Cards>

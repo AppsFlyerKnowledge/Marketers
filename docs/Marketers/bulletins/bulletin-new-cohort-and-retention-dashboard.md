@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: New Cohort and Retention dashboard"
-excerpt: "AppsFlyer has redesigned and improved the Cohort dashboard, integrating retention data and simplifying metric selection."
 x-zendesk:
   id: 21334347923729
   url: https://support.appsflyer.com/hc/en-us/articles/21334347923729-Bulletin-New-Cohort-and-Retention-dashboard

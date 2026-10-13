@@ -1,6 +1,6 @@
 ---
 title: "Privacy-preserving campaign measurement"
-excerpt: "Learn how AppsFlyer measures campaign performance and attribution when advertiser IDs are unavailable using privacy-preserving methods."
+excerpt: "Get answers to common FAQ about privacy-preserving campaign measurement methods, the networks involved, and their implications on retargeting, view-through, and child-directed app limitations."
 x-zendesk:
   id: 20489739742609
   url: https://support.appsflyer.com/hc/en-us/articles/20489739742609-Privacy-preserving-campaign-measurement

@@ -1,6 +1,6 @@
 ---
 title: "Combine Cost ETL and cohort reports via Data Locker"
-excerpt: "Learn how to combine Cost ETL and cohort reports via Data Locker to get a complete picture of your marketing performance with optimal freshness, accuracy, and granularity."
+excerpt: "Combine Cost ETL and cohort reports via Data Locker (regular and advanced aggregated) to get the full picture of your marketing campaigns with the best available freshness, accuracy, and granularity."
 x-zendesk:
   id: 27494360719505
   url: https://support.appsflyer.com/hc/en-us/articles/27494360719505-Combine-Cost-ETL-and-cohort-reports-via-Data-Locker
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-08-13T11:05:26Z'
   edited_at: '2026-08-13T16:01:09Z'
 ---
-**At a glance:** Combine Cost ETL and cohort reports via Data Locker (regular and advanced aggregated) to get the full picture of your marketing campaigns with the best available freshness, accuracy, and granularity.
-
 ![](https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png)
 
 ## About combining Cost ETL and cohort reports

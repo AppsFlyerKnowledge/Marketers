@@ -1,6 +1,6 @@
 ---
 title: "Apply IP masking to user data"
-excerpt: "Learn how to mask app user IP addresses in AppsFlyer raw data reports and in postbacks sent to partners."
+excerpt: "How to mask app user IP addresses in AppsFlyer raw data reports and in postbacks sent to partners."
 x-zendesk:
   id: 208879066
   url: https://support.appsflyer.com/hc/en-us/articles/208879066-Apply-IP-masking-to-user-data
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-05-23T12:59:55Z'
   edited_at: '2025-06-03T07:49:17Z'
 ---
-At a glance: How to mask app user IP addresses in AppsFlyer raw data reports and in postbacks sent to partners.
-
 ## IP masking
 
 When turning on IP masking:

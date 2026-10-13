@@ -1,6 +1,6 @@
 ---
 title: "CleverTap integration with AppsFlyer"
-excerpt: "Learn how to set up and configure the CleverTap integration with AppsFlyer to measure user retention, lifetime value, and owned media campaigns."
+excerpt: "CleverTap is a modern, integrated retention cloud that empowers digital consumer brands to increase customer retention and lifetime value."
 x-zendesk:
   id: 360001299165
   url: https://support.appsflyer.com/hc/en-us/articles/360001299165-CleverTap-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-07-12T06:26:58Z'
   edited_at: '2026-06-16T11:23:22Z'
 ---
-At a glance: CleverTap is a modern, integrated retention cloud that empowers digital consumer brands to increase customer retention and lifetime value.
-
 ![clevertap-logo.png](https://files.readme.io/ee01a7da1ae0c77758e279c47f2f588d90fdb7f52dce51161fce3891cc5fd498-4405112002833.png)
 
 > ❗️ Important!

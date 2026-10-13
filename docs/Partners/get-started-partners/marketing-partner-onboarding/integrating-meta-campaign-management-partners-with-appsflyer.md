@@ -1,6 +1,6 @@
 ---
 title: "Integrating Meta campaign management partners with AppsFlyer"
-excerpt: "Learn what data types Meta campaign management partners can receive from AppsFlyer, including install postbacks, in-app event postbacks, and user-level data policies."
+excerpt: "Learn what data types Meta campaign management partners can receive from AppsFlyer."
 x-zendesk:
   id: 207034146
   url: https://support.appsflyer.com/hc/en-us/articles/207034146-Integrating-Meta-campaign-management-partners-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2015-03-29T12:38:26Z'
   edited_at: '2023-05-05T15:41:46Z'
 ---
-**At a glance:** Learn what data types Meta campaign management partners can receive from AppsFlyer.
-
 ## Install postbacks
 
 Upon conversion, AppsFlyer can return the following parameters:

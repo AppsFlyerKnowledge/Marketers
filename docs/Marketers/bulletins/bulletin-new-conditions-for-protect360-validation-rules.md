@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: New conditions for Protect360 validation rules"
-excerpt: "Protect360 validation rules now include currency and revenue conditions to help premium users identify and flag fraudulent in-app events."
 table_of_contents: false
 x-zendesk:
   id: 27310438572177

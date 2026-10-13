@@ -1,6 +1,6 @@
 ---
 title: "Data Locker reports for agencies"
-excerpt: "Learn about the Data Locker reports available to agencies and the specific permissions advertisers must grant to share this data."
+excerpt: "Reports listed in this article are available to you (agencies) in your Data Locker. Before we can share the data with you, the advertiser (app owner) must grant you data access as detailed in this article."
 x-zendesk:
   id: 4543231254417
   url: https://support.appsflyer.com/hc/en-us/articles/4543231254417-Data-Locker-reports-for-agencies
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-03-02T09:16:03Z'
   edited_at: '2024-01-04T12:33:41Z'
 ---
-**At a glance**: Reports listed in this article are available to you (agencies) in your Data Locker. Before we can share the data with you, the advertiser (app owner) must grant you data access as detailed in this article.
-
 ## Data Locker reports for agencies
 
 The following data-sharing principles apply:

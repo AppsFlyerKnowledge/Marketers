@@ -1,6 +1,6 @@
 ---
 title: "About device identifiers"
-excerpt: "Understand the device identifiers supported in the AppsFlyer SDK for attribution and analytics across Android, Apple, CTV, PC, and console platforms."
+excerpt: "Understand the device identifiers supported in the AppsFlyer SDK."
 x-zendesk:
   id: 4408847686161
   url: https://support.appsflyer.com/hc/en-us/articles/4408847686161-About-device-identifiers
@@ -22,10 +22,6 @@ x-zendesk:
   created_at: '2021-10-12T14:16:09Z'
   edited_at: '2026-04-19T11:43:45Z'
 ---
-> 👍 At a glance
->
-> Understand the device identifiers supported in the AppsFlyer SDK.
-
 ## Overview
 
 The AppsFlyer SDK provides a framework for customers to configure which device identifiers their app uses for [attribution](/docs/basic-sdk-integration-guide#attribution) and analytics.

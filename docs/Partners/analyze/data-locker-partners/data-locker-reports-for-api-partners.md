@@ -1,6 +1,6 @@
 ---
 title: "Data Locker reports for API partners"
-excerpt: "Learn how API partners can access and configure Data Locker reports, including cohort and advanced aggregated analytics."
+excerpt: "Reports listed in this article are available to you (API partners) in your Data Locker. Before we can share the data with you, the advertiser (app owner) must grant you data access as detailed in this article."
 x-zendesk:
   id: 12000718524561
   url: https://support.appsflyer.com/hc/en-us/articles/12000718524561-Data-Locker-reports-for-API-partners
@@ -22,10 +22,6 @@ x-zendesk:
   created_at: '2023-01-08T11:32:00Z'
   edited_at: '2026-03-10T08:28:05Z'
 ---
-> 📘 At a glance
->
-> Reports listed in this article are available to you (API partners) in your Data Locker. Before we can share the data with you, the advertiser (app owner) must grant you data access as detailed in this article.
-
 To get reports you, the API partner must:
 
 - Ensure that the advertiser has provided you with permission to [access Aggregated analytics reporting](/docs/access-to-aggregated-analytics-tools-for-api-partners#grant-permission-to-a-partner).

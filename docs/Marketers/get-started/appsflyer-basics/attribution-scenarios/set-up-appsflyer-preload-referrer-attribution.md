@@ -1,6 +1,6 @@
 ---
 title: "Set up AppsFlyer preload referrer attribution"
-excerpt: "Learn how to set up and measure preload referrer campaigns with OEMs, mobile carriers, and app discovery partners using AppsFlyer."
+excerpt: "AppsFlyer uses preload referrer to attribute installs to preload campaigns, where marketers contract with Original Equipment Manufacturers (OEMs), mobile carriers, and app discovery partners to preload their app at the factory or at the time the device is first turned on by the user."
 x-zendesk:
   id: 4543811207313
   url: https://support.appsflyer.com/hc/en-us/articles/4543811207313-Set-up-AppsFlyer-preload-referrer-attribution
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-03-02T09:54:10Z'
   edited_at: '2026-09-15T11:20:06Z'
 ---
-**At a glance:** AppsFlyer uses preload referrer to attribute installs to preload campaigns, where marketers contract with Original Equipment Manufacturers (OEMs), mobile carriers, and app discovery partners to preload their app at the factory or at the time the device is first turned on by the user.
-
 ## Overview
 
 In preload campaigns, Original Device Manufacturers (OEMs), mobile carriers, and app discovery partners preload apps on devices before they reach the user. This can be done by the OEM at the factory or by providers upon first device activation.

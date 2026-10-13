@@ -1,6 +1,6 @@
 ---
 title: "Getting started—onboarding guide for ad networks"
-excerpt: "Complete integration with AppsFlyer by setting up and testing your attribution link and postback integrations."
+excerpt: "Complete integration with AppsFlyer by setting up and testing your attribution link and postback integrations. Understand the steps, timelines, and dependencies of the process."
 x-zendesk:
   id: 360001300998
   url: https://support.appsflyer.com/hc/en-us/articles/360001300998-Getting-started-onboarding-guide-for-ad-networks
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-03-28T08:41:59Z'
   edited_at: '2025-11-13T10:20:40Z'
 ---
-**At a glance:** Complete integration with AppsFlyer by setting up and testing your attribution link and postback integrations. Understand the steps, timelines, and dependencies of the process.
-
 ![AdNetworks_-_Onboarding__2_.png](https://files.readme.io/33217648d1f5c1ef327871b9b2ccfaadb6b9ae34fb2645ffcfbe187c378dd054-30603793569297.png)
 
 ## What is AppsFlyer?

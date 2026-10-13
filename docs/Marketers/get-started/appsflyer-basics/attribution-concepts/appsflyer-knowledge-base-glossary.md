@@ -1,6 +1,6 @@
 ---
 title: "AppsFlyer Knowledge Base glossary"
-excerpt: "Get familiar with AppsFlyer terms, definitions, and mobile attribution concepts."
+excerpt: "Get familiar with AppsFlyer terms."
 table_of_contents: false
 x-zendesk:
   id: 360000732237
@@ -23,8 +23,6 @@ x-zendesk:
   created_at: '2019-01-01T10:12:13Z'
   edited_at: '2026-08-30T10:07:43Z'
 ---
-Get familiar with AppsFlyer terms.
-
  **[A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [I](#i) · J · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [Q](#q) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [X](#X) · Y · Z** 
 
 **Translated glossary terms are ordered according to the English alphabet.*

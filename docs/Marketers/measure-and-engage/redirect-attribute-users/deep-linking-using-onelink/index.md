@@ -1,6 +1,6 @@
 ---
 title: "Deep linking using OneLink"
-excerpt: "Learn how to convert and deep link your owned media users using AppsFlyer's OneLink suite."
+excerpt: "Convert and deep link your owned media users with OneLink"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,39 +18,39 @@ Convert and deep link your owned media users with OneLink
 
 <Cards>
   <Card title="OneLink onboarding guide" href="/docs/onelink-onboarding-guide" icon="fa-solid fa-rocket">
-    Get started with the essential steps to set up and onboard with OneLink.
+    Use OneLink for powerful, customized user redirection, deep linking, and attribution from your campaigns, regardless of user device, operating system, channel, or platform, for maximum conversion.
   </Card>
   <Card title="OneLink guide" href="/docs/onelink-guide" icon="fa-solid fa-link">
-    Explore the comprehensive guide to understanding and using OneLink.
+    Create links with attribution, redirection, and deep linking capabilities that convert owned or paid media users into app users, regardless of device, operating system, channel, or platform. These links help you provide the best experience for your users, no matter which of your owned media sources they convert from: websites, banners, social media posts, emails, texts, and more.
   </Card>
   <Card title="OneLink Standalone Deep Linking Suite" href="/docs/onelink-standalone-deep-linking-suite" icon="fa-solid fa-link">
-    Learn about the standalone suite dedicated to deep linking solutions.
+    The OneLink Standalone Deep Linking Suite gives you deep linking and redirection for owned media journeys (email-to-app, web-to-app, QR-to-app, social-to-app, referrals, SMS/text, etc.), without requiring a paid media attribution package.
   </Card>
   <Card title="Create a OneLink template" href="/docs/create-a-onelink-template" icon="fa-solid fa-link">
-    Step-by-step instructions on how to set up and configure a OneLink template.
+    Create a template to form the basis of the redirection logic for all OneLink links that you create for your various marketing campaigns. A template is required for creating links and end-user experiences.
   </Card>
   <Card title="Create deep linking and redirection links for your campaigns with OneLink" href="/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink" icon="fa-solid fa-link">
-    Generate custom deep links and redirection paths for your marketing campaigns.
+    Create links that give users exactly the experience you want them to have, with OneLink. Users who click the link are redirected to the correct app store, web URL, or into the app, and attributed to the media source.
   </Card>
   <Card title="Export OneLink URLs" href="/docs/export-onelink-urls" icon="fa-solid fa-link">
-    Find out how to export your generated OneLink URLs for external use.
+    Download all OneLink URLs created in the AppsFlyer user interface.
   </Card>
   <Card title="OneLink troubleshooting and FAQ" href="/docs/onelink-troubleshooting-and-faq" icon="fa-solid fa-circle-question">
-    Resolve common issues and find answers to frequently asked questions.
+    Quickly find solutions for testing and debugging OneLink custom link redirection/behavior issues.
   </Card>
   <Card title="Use OneLink API to create links in large-scale campaigns" href="/docs/use-onelink-api-to-create-links-in-large-scale-campaigns" icon="fa-solid fa-link">
-    Programmatically generate links at scale using the OneLink API.
+    OneLink API lets you programmatically generate personalized short links at scale, taking users from any owned media—such as SMS, email, web, or QR—directly into your mobile app. Use it to create seamless cross-channel journeys, deepen engagement, and improve conversion.
   </Card>
   <Card title="Perform OneLink bulk actions via CSV" href="/docs/perform-onelink-bulk-actions-via-csv" icon="fa-solid fa-link">
-    Manage and create multiple OneLink URLs simultaneously using CSV uploads.
+    The OneLink Bulk Links page allows you to create and manage OneLink custom shortlinks in bulk.
   </Card>
   <Card title="Discover your campaign link parameters and behavior" href="/docs/discover-your-campaign-link-parameters-and-behavior" icon="fa-solid fa-bullhorn">
-    Understand how different parameters affect link behavior and attribution.
+    Discover the parameters included in your AppsFlyer campaign links and understand the expected user experience and link behavior.
   </Card>
   <Card title="Brand OneLink with your domain" href="/docs/brand-onelink-with-your-domain" icon="fa-solid fa-link">
-    Configure custom branded domains for your OneLink tracking links.
+    Advertisers using OneLink links can brand them with their own domain. This improves campaign performance and increases brand exposure.
   </Card>
   <Card title="Understand OneLink short vs. long URLs" href="/docs/understand-onelink-short-vs-long-urls" icon="fa-solid fa-link">
-    Compare the differences and use cases for short and long URL formats.
+    Understand the difference between OneLink short and long URLs, and how to create long URLs outside of AppsFlyer.
   </Card>
 </Cards>

@@ -1,6 +1,6 @@
 ---
 title: "StartApp campaign configuration"
-excerpt: "Learn how to configure mobile attribution, cost, and permissions for your StartApp campaigns in AppsFlyer."
+excerpt: "StartApp, an AppsFlyer ad network integrated partner, is an insight-driven mobile tech company that enables its partners to deliver the world's most fulfilling mobile experiences for their users. In addition to click-based mobile attribution, StartApp offers cost, retargeting, and view-through attribution, which can be recorded with AppsFlyer."
 x-zendesk:
   id: 210042746
   url: https://support.appsflyer.com/hc/en-us/articles/210042746-StartApp-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-06-30T10:55:10Z'
   edited_at: '2026-09-07T07:26:10Z'
 ---
-StartApp, an AppsFlyer ad network integrated partner, is an insight-driven mobile tech company that enables its partners to deliver the world's most fulfilling mobile experiences for their users. In addition to click-based mobile attribution, StartApp offers cost, retargeting, and view-through attribution, which can be recorded with AppsFlyer.
-
 To configure your campaigns with StartApp, follow the steps below.
 
 ## Setting up StartApp

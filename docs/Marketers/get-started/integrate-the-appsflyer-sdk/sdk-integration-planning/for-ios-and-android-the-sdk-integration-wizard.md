@@ -1,6 +1,6 @@
 ---
 title: "For iOS and Android: The SDK integration wizard"
-excerpt: "Learn how to use the AppsFlyer SDK integration wizard to automatically generate and test your SDK integration code for iOS and Android."
+excerpt: "Create and test your SDK integration code automatically."
 x-zendesk:
   id: 24073235369617
   url: https://support.appsflyer.com/hc/en-us/articles/24073235369617-For-iOS-and-Android-The-SDK-integration-wizard

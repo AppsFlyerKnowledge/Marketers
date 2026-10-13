@@ -1,6 +1,6 @@
 ---
 title: "Google Ads postback partners—Configuration"
-excerpt: "Learn how to configure Google Ads postback partners (GAPPs) in AppsFlyer to send conversion postbacks for optimizing your Google Ads campaigns."
+excerpt: "Enable Google Ads postback partners to help run your Google Ads campaigns."
 x-zendesk:
   id: 4411047077905
   url: https://support.appsflyer.com/hc/en-us/articles/4411047077905-Google-Ads-postback-partners-Configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-11-16T09:36:56Z'
   edited_at: '2024-07-18T07:44:23Z'
 ---
-**At a glance:** Enable Google Ads postback partners to help run your Google Ads campaigns.
-
 Some partners (for example, Bidalgo, Adquant), referred to as **Google Ads postback partners**, are similar to agencies. They help their advertiser clients run Google Ads campaigns, but require getting postbacks for Google Ads conversions.
 
 These Google Ads Postback Partners (GAPPs) can also collect postbacks for Google Ads installs acquired by the advertiser directly, or even by other agencies (see [Use Cases](/docs/google-ads-postback-partners-configuration#google-ads-postback-partners-use-cases)). Using the postbacks information the GAPPs are able to optimize on Google Ads campaigns for the app.

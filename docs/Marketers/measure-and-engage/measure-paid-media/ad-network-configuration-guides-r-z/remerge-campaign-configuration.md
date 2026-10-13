@@ -1,6 +1,6 @@
 ---
 title: "Remerge campaign configuration"
-excerpt: "Learn how to configure Remerge, an integrated partner in AppsFlyer, to enable click-based and view-through mobile attribution, retargeting, and cost API integration."
+excerpt: "Remerge, an AppsFlyer ad network integrated partner, enables app-marketers to deliver better-placed, customized advertisements. In addition to click-based mobile attribution, Remerge offers view-through mobile attribution and click-based retargeting, which can be recorded with AppsFlyer."
 x-zendesk:
   id: 115000172003
   url: https://support.appsflyer.com/hc/en-us/articles/115000172003-Remerge-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-01-02T16:20:43Z'
   edited_at: '2026-09-09T13:13:23Z'
 ---
-Remerge, an AppsFlyer ad network integrated partner, enables app-marketers to deliver better-placed, customized advertisements. In addition to click-based mobile attribution, Remerge offers view-through mobile attribution and click-based retargeting, which can be recorded with AppsFlyer.
-
 ## Setting up Remerge
 
 > 📘 Prerequisite

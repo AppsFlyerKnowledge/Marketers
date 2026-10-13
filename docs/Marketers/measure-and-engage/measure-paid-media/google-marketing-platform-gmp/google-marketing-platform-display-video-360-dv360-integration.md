@@ -1,6 +1,6 @@
 ---
 title: "Google Marketing Platform - Display & Video 360 (DV360) integration"
-excerpt: "Learn how to integrate Google Marketing Platform - Display & Video 360 (GMP-DV360) with AppsFlyer to measure attribution, configure postbacks, and set up agency permissions."
+excerpt: "Google Marketing Platform - Display & Video 360 (GMP-DV360) is an AppsFlyer self-reporting network (SRN) partner combining advertising and analytics. The GMP-DV360 integration (dv360_int) combines advertising and analytics to enhance customer connections, reveal insights, and improve marketing outcomes."
 x-zendesk:
   id: 360017595598
   url: https://support.appsflyer.com/hc/en-us/articles/360017595598-Google-Marketing-Platform-Display-Video-360-DV360-integration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-02-02T17:40:13Z'
   edited_at: '2026-09-09T13:14:48Z'
 ---
-**At a glance:** Google Marketing Platform - Display & Video 360 (GMP-DV360) is an AppsFlyer self-reporting network (SRN) partner combining advertising and analytics. The GMP-DV360 integration  (dv360\_int) combines advertising and analytics to enhance customer connections, reveal insights, and improve marketing outcomes.
-
 > 📘 **Important!**
 >
 > See the bulletin about [supporting the new Google EU consent policy](/docs/bulletin-supporting-the-new-google-eu-consent-policy).

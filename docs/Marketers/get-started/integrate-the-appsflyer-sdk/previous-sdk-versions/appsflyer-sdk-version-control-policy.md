@@ -1,6 +1,6 @@
 ---
 title: "AppsFlyer SDK version control policy"
-excerpt: "Learn about the AppsFlyer SDK version control policy, including version lifecycles, deprecation, and end-of-support timelines."
+excerpt: "Learn about the AppsFlyer SDK version control policy and what versions we maintain."
 x-zendesk:
   id: 4412316953105
   url: https://support.appsflyer.com/hc/en-us/articles/4412316953105-AppsFlyer-SDK-version-control-policy
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-11-30T10:43:19Z'
   edited_at: '2025-05-19T00:01:05Z'
 ---
-**At a glance:** Learn about the AppsFlyer SDK version control policy and what versions we maintain.
-
 ## About versioning
 
 Throughout the years, AppsFlyer has released many versions of the SDK. Each SDK version calls a specific API version. The intent of the version control policy is to define how long an API will serve the SDK versions.

@@ -1,6 +1,6 @@
 ---
 title: "Redirect app users to a website"
-excerpt: "Learn how to redirect app users to an external web URL or social media page using a OneLink URL while measuring click efficacy."
+excerpt: "Redirect app users to a web URL or social media page by using a URL generated with OneLink."
 x-zendesk:
   id: 4460838224273
   url: https://support.appsflyer.com/hc/en-us/articles/4460838224273-Redirect-app-users-to-a-website

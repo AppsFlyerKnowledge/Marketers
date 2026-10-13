@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Security enhancement for traffic managed by agencies"
-excerpt: "AppsFlyer is enhancing security measures for agencies managing traffic on behalf of advertisers, requiring ad network authorization for traffic to be recorded and measured."
 table_of_contents: false
 x-zendesk:
   id: 25770412740369

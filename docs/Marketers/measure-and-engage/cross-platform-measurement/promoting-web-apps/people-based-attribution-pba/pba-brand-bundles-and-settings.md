@@ -1,6 +1,6 @@
 ---
 title: "PBA brand bundles and settings"
-excerpt: "Learn how to consolidate attribution, events, visits, and revenue of brand-related apps and websites using PBA brand bundles."
+excerpt: "Brand bundles consolidate the attribution, events, visits, and revenue of brand-related apps and websites. Use the brand bundle settings page to mark conversion events, integrate with Google Ads, and more."
 x-zendesk:
   id: 360000646498
   url: https://support.appsflyer.com/hc/en-us/articles/360000646498-PBA-brand-bundles-and-settings
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-12-09T11:42:52Z'
   edited_at: '2025-05-08T09:17:30Z'
 ---
-**At a glance:** Brand bundles consolidate the attribution, events, visits, and revenue of brand-related apps and websites. Use the brand bundle settings page to mark conversion events, integrate with Google Ads, and more.
-
 ![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
 
 ## About brand bundles

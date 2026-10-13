@@ -1,6 +1,6 @@
 ---
 title: "Winclap Analytics integration with AppsFlyer"
-excerpt: "Learn how to set up the Winclap Analytics integration with AppsFlyer to share attribution data for BI and post-attribution analytics."
+excerpt: "Winclap Analytics, an AppsFlyer integrated partner, uses AppsFlyer attribution data for BI and post-attribution analytics."
 x-zendesk:
   id: 360002403537
   url: https://support.appsflyer.com/hc/en-us/articles/360002403537-Winclap-Analytics-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-09-04T11:07:12Z'
   edited_at: '2026-09-15T09:17:18Z'
 ---
-**At a glance:** Winclap Analytics, an AppsFlyer integrated partner, uses AppsFlyer attribution data for BI and post-attribution analytics.
-
 > 📘 **Important!**
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.

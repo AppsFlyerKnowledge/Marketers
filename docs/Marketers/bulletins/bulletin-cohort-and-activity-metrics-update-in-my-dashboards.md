@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Cohort and Activity metrics update in My Dashboards"
-excerpt: "Starting July 2026, Cohort and Activity metrics in My Dashboards are moving to upgraded data infrastructure designed to support AI-ready data."
 table_of_contents: false
 x-zendesk:
   id: 45887523041425

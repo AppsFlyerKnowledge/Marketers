@@ -1,6 +1,6 @@
 ---
 title: "Analyze your data"
-excerpt: "Discover how to use dashboards, reports, and data delivery tools to analyze your AppsFlyer data."
+excerpt: "Use our dashboards, reports, and other data delivery tools"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,21 +18,21 @@ Use our dashboards, reports, and other data delivery tools
 
 <Cards>
   <Card title="Dashboards" href="/docs/dashboards" icon="fa-solid fa-gauge-high">
-    Access visual analytics and performance overviews.
+    Set up your AppsFlyer dashboards to get the most from your data (including PBA)
   </Card>
   <Card title="Analytics and aggregate reporting/APIs" href="/docs/analytics-and-aggregate-reporting-apis" icon="fa-solid fa-chart-column">
-    Retrieve aggregated performance data and analytics via APIs.
+    Access analytics data via APIs, Cohort, SKAN, Pivot, and Ad Revenue Monetization
   </Card>
   <Card title="Raw data reporting/APIs" href="/docs/raw-data-reporting-apis" icon="fa-solid fa-database">
-    Export and analyze user-level raw data reports.
+    Access your raw data via download, API, and Data Locker
   </Card>
   <Card title="Data delivery tools" href="/docs/data-delivery-tools" icon="fa-solid fa-file-lines">
-    Explore tools for scheduling and delivering your data.
+    Use Push API, Pull API, or download options to access your data
   </Card>
   <Card title="Data Locker" href="/docs/data-locker" icon="fa-solid fa-box-archive">
-    Stream raw data directly to your cloud storage buckets.
+    Deliver your data to major cloud platforms with Data Locker
   </Card>
   <Card title="Creative Optimization" href="/docs/creative-optimization" icon="fa-solid fa-palette">
-    Analyze and optimize the performance of your ad creatives.
+    Analyze your creative performance to gain critical insights before planning, selecting, or producing your next batch of creatives
   </Card>
 </Cards>

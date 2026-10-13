@@ -1,6 +1,6 @@
 ---
 title: "Tyroo campaign configuration"
-excerpt: "Learn how to configure mobile user acquisition, cost, and view-through attribution campaigns with Tyroo in AppsFlyer."
+excerpt: "Tyroo, an AppsFlyer ad network integrated partner, is a leading global mobile user acquisition and monetization platform. In addition to click-based mobile attribution, Tyroo offers cost and view-through attribution, which can be recorded with AppsFlyer."
 x-zendesk:
   id: 208270836
   url: https://support.appsflyer.com/hc/en-us/articles/208270836-Tyroo-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-04-03T11:32:42Z'
   edited_at: '2026-09-09T13:07:33Z'
 ---
-Tyroo, an AppsFlyer ad network integrated partner, is a leading global mobile user acquisition and monetization platform. In addition to click-based mobile attribution, Tyroo offers cost and view-through attribution, which can be recorded with AppsFlyer.
-
 To configure your campaigns with Tyroo, follow the steps below.
 
 ## Setting up Tyroo

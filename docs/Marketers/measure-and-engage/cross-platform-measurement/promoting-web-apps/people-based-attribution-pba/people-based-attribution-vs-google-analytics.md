@@ -1,6 +1,6 @@
 ---
 title: "People-Based Attribution vs. Google Analytics"
-excerpt: "Understand the key differences, benefits, and data discrepancy causes between AppsFlyer's People-Based Attribution (PBA) and Google Analytics."
+excerpt: "The differences between People-based Attribution (PBA) and Google Analytics"
 x-zendesk:
   id: 360001305617
   url: https://support.appsflyer.com/hc/en-us/articles/360001305617-People-Based-Attribution-vs-Google-Analytics
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-03-28T07:22:04Z'
   edited_at: '2023-02-15T13:15:05Z'
 ---
-The differences between People-based Attribution (PBA) and Google Analytics
-
 ## PBA compared to Google Analytics
 
 PBA and Google Analytics are web analytics and conversion measurement solutions. Each focuses on different measurement aspects. PBA also offers additional benefits.

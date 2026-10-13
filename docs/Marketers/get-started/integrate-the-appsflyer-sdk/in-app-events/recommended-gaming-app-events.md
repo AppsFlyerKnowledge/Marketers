@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-04-06T14:46:54Z'
   edited_at: '2026-02-25T13:58:31Z'
 ---
-**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your gaming app.
-
 ## ![InApp_Events_games.png](https://files.readme.io/ee2d46ddf11a6a6cacc95399ffd778d6613ecdd905d237cd971073e095cada5b-20659444711953.png) Gaming
 
 Gaming apps include games such as arcade, strategy, educational games, and gambling. The typical events that we suggest recording are in-app purchases, sharing on social media, and inviting friends. In addition, you can include events such as leveling up and completing an in-game tutorial.

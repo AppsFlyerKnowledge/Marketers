@@ -1,6 +1,6 @@
 ---
 title: "Leadbolt campaign configuration"
-excerpt: "Learn how to configure Leadbolt integration in AppsFlyer, including setting up attribution links, postbacks, and permissions."
+excerpt: "Leadbolt, an AppsFlyer integrated ad network partner, is a high-performance mobile advertising platform for user acquisition and in-app monetization. In addition to click-based mobile attribution, Leadbolt also offers view-through attribution, which you can record with AppsFlyer."
 x-zendesk:
   id: 213504346
   url: https://support.appsflyer.com/hc/en-us/articles/213504346-Leadbolt-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-10-05T09:37:19Z'
   edited_at: '2026-09-09T10:34:24Z'
 ---
-**At a glance:** Leadbolt, an AppsFlyer integrated ad network partner, is a high-performance mobile advertising platform for user acquisition and in-app monetization. In addition to click-based mobile attribution, Leadbolt also offers view-through attribution, which you can record with AppsFlyer.
-
 ![](https://cdn.appsflyer.com/marketplace/static/logo/leadbolt.png)
 
 ## Setting up Leadbolt integration

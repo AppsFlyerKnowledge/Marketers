@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-08-23T11:55:41Z'
   edited_at: '2026-09-20T12:08:48Z'
 ---
-**At a glance:** Learn what mobile advertising attribution is and how AppsFlyer helps marketers pinpoint their targeting, optimize their ad spend, and boost ROI.
-
 ## What is app attribution?
 
 App attribution **determines which campaigns, partners, and channels drive your app installs** and post-install events, such as in-app purchases. Marketers rely on these insights to measure and optimize marketing activities for both user acquisition and retargeting campaigns.

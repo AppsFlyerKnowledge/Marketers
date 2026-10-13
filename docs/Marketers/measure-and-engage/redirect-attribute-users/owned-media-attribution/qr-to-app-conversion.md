@@ -1,6 +1,6 @@
 ---
 title: "QR-to-app conversion"
-excerpt: "Convert desktop, TV, CTV, or offline users into mobile app users by using QR codes generated with OneLink."
+excerpt: "Convert desktop, TV, CTV, or offline users, into mobile app users by using QR codes generated with OneLink."
 x-zendesk:
   id: 360015119718
   url: https://support.appsflyer.com/hc/en-us/articles/360015119718-QR-to-app-conversion
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-11-04T09:49:23Z'
   edited_at: '2026-02-24T15:52:52Z'
 ---
-**At a glance:** Convert desktop, TV, CTV, or offline users, into mobile app users by using QR codes generated with OneLink.
-
 ![6005_QR_code_4.jpg](https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg)
 
 ## Converting mobile, non-mobile and offline traffic into mobile app users

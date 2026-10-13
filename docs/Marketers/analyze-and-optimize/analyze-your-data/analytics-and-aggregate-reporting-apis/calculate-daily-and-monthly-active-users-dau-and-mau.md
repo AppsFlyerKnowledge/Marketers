@@ -1,6 +1,6 @@
 ---
 title: "Calculate daily and monthly active users (DAU and MAU)"
-excerpt: "Learn how to calculate Daily and Monthly active users using SQL queries on Data Locker raw data tables."
+excerpt: "Learn how to calculate Daily and Monthly active users to get valuable insights about your campaigns"
 x-zendesk:
   id: 39071744864657
   url: https://support.appsflyer.com/hc/en-us/articles/39071744864657-Calculate-daily-and-monthly-active-users-DAU-and-MAU

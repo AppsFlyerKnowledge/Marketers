@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Apple Ads now supports SKAN attribution"
-excerpt: "Apple Ads SKAN postbacks are now fully ingested, processed, and reported by AppsFlyer, providing privacy-safe measurement for your campaigns."
 table_of_contents: false
 x-zendesk:
   id: 34395758837137

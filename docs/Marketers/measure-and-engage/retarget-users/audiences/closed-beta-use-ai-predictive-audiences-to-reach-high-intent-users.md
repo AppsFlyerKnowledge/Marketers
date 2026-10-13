@@ -1,6 +1,6 @@
 ---
 title: "[Closed beta] Use AI Predictive Audiences to reach high-intent users"
-excerpt: "Learn how to use AI-powered Predictive Audiences to target users most likely to purchase, optimize your ad spend, and connect audiences to partners."
+excerpt: "Predictive Audiences uses AI to create an audience of users most likely to take a key action, such as purchasing, so you can reach high-intent users, reduce wasted spend, and maximize campaign impact."
 x-zendesk:
   id: 45762246838801
   url: https://support.appsflyer.com/hc/en-us/articles/45762246838801--Closed-beta-Use-AI-Predictive-Audiences-to-reach-high-intent-users
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2026-04-15T09:20:36Z'
   edited_at: '2026-04-27T10:30:56Z'
 ---
-**At a glance:** Predictive Audiences uses AI to create an audience of users most likely to take a key action, such as purchasing, so you can reach high-intent users, reduce wasted spend, and maximize campaign impact.
-
 <Embed title="Predictive Audiences I Product tour" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LuEJrfARo5g" />
 
 ## About Predictive Audiences

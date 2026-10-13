@@ -1,6 +1,6 @@
 ---
 title: "UC Toutiao Ads campaign configuration"
-excerpt: "Learn how to configure and activate the UC Toutiao Ads integration in AppsFlyer, set up attribution links, and create conversions."
+excerpt: "UC Toutiao Ads, an AppsFlyer ad network integrated partner, is one of China's leading news aggregator apps."
 x-zendesk:
   id: 115004843026
   url: https://support.appsflyer.com/hc/en-us/articles/115004843026-UC-Toutiao-Ads-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-09-25T05:41:49Z'
   edited_at: '2026-09-15T10:39:33Z'
 ---
-**At a glance:** UC Toutiao Ads, an AppsFlyer ad network integrated partner, is one of China's leading news aggregator apps.
-
 ## Setting up UC Toutiao
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.

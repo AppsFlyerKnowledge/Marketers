@@ -1,6 +1,6 @@
 ---
 title: "Protect360—FAQ for partners"
-excerpt: "Find answers to frequently asked questions by partners about AppsFlyer's Protect360 anti-fraud system, including impression capping and install rejections."
+excerpt: "Find answers to questions frequently asked by partners about Protect360."
 x-zendesk:
   id: 16091549732497
   url: https://support.appsflyer.com/hc/en-us/articles/16091549732497-Protect360-FAQ-for-partners
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-06-12T12:43:34Z'
   edited_at: '2026-01-25T06:59:41Z'
 ---
-At a glance: Find answers to questions frequently asked by partners about Protect360.
-
 ## Impression level anomalies
 
 <Accordion title="Why are impressions being capped?">

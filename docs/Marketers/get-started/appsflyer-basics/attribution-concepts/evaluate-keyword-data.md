@@ -1,6 +1,6 @@
 ---
 title: "Evaluate Keyword data"
-excerpt: "Learn how to retrieve and analyze organic and non-organic keyword data for iOS and Android to optimize your app store conversions."
+excerpt: "Get detailed keyword data that lets you see which search terms are most popular, so you can optimize organic conversions."
 x-zendesk:
   id: 17255366785553
   url: https://support.appsflyer.com/hc/en-us/articles/17255366785553-Evaluate-Keyword-data
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-07-25T08:19:25Z'
   edited_at: '2026-06-11T08:43:58Z'
 ---
-Get detailed keyword data that lets you see which search terms are most popular, so you can optimize organic conversions.
-
 ## Keyword data
 
 Organic search is a valuable traffic source for your apps. Organic users don't incur acquisition costs and are usually among the most engaged cohorts.

@@ -1,6 +1,6 @@
 ---
 title: "Changing app currency settings"
-excerpt: "Learn how changing your app's currency settings impacts historical and future revenue reporting, who can make these changes, and the required approval steps."
+excerpt: "Easily manage your app’s currency settings to align your revenue reporting with your business needs. This article clarifies how currency changes impact your historical and future data, helps you understand who can make changes, and outlines the required approval steps."
 x-zendesk:
   id: 42223406543249
   url: https://support.appsflyer.com/hc/en-us/articles/42223406543249-Changing-app-currency-settings
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-12-24T08:22:42Z'
   edited_at: '2025-12-25T00:01:08Z'
 ---
-**At a glance:** Easily manage your app’s currency settings to align your revenue reporting with your business needs. This article clarifies how currency changes impact your historical and future data, helps you understand who can make changes, and outlines the required approval steps.
-
 ## **About changing app currency settings**
 
 By default, your AppsFlyer dashboards display data using your selected local currency. You can easily switch to USD view at any time without changing the actual currency settings of your app.

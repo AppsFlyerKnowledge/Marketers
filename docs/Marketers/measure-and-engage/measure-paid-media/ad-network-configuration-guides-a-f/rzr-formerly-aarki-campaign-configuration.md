@@ -1,6 +1,6 @@
 ---
 title: "RZR (formerly Aarki) campaign configuration"
-excerpt: "Configure mobile attribution, retargeting, and cost API integrations with RZR (formerly Aarki) in AppsFlyer."
+excerpt: "RZR, an AppsFlyer ad network integrated partner, is a well-known mobile DSP. RZR offers both click-based and view-through mobile attribution. In addition, RZR also offers click-based retargeting which you can record with AppsFlyer."
 x-zendesk:
   id: 360000423105
   url: https://support.appsflyer.com/hc/en-us/articles/360000423105-RZR-formerly-Aarki-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-03-12T06:15:54Z'
   edited_at: '2026-09-09T12:40:35Z'
 ---
-RZR, an AppsFlyer ad network integrated partner, is a well-known mobile DSP. RZR offers both click-based and view-through mobile attribution. In addition, RZR also offers click-based retargeting which you can record with AppsFlyer.
-
 ![RZR Logo Horizontal gradient black wordmark (3).png](https://files.readme.io/b1064bdec0e836399c583c3f55e5e79a81380a9a8d86eeaee19391b6d09f2bbd-small-46161100230545.png)
 
 ## Setting up RZR

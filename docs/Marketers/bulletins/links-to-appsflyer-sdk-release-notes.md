@@ -1,6 +1,6 @@
 ---
 title: "Links to AppsFlyer SDK release notes"
-excerpt: "Access the official release notes for the AppsFlyer iOS and Android SDKs."
+excerpt: "Release notes for iOS and Android SDKs."
 table_of_contents: false
 x-zendesk:
   id: 360003090618
@@ -23,8 +23,6 @@ x-zendesk:
   created_at: '2019-10-28T10:09:34Z'
   edited_at: '2026-08-18T09:13:34Z'
 ---
-**At a glance:** Release notes for iOS and Android SDKs.
-
 <Cards>
   <Card title="iOS Release Notes" href="/docs/appsflyer-ios-sdk-release-notes" icon="fa-solid fa-bullhorn">
     View the latest updates, features, and fixes for the AppsFlyer iOS SDK.

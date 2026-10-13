@@ -1,6 +1,6 @@
 ---
 title: "Appnext campaign configuration"
-excerpt: "Configure Appnext integration in AppsFlyer to record click-based mobile attribution, cost, retargeting, and view-through attribution."
+excerpt: "Appnext, an AppsFlyer ad network integrated partner, uses technology and data solutions for premium mobile monetization, app marketing, and re-engagement. In addition to click-based mobile attribution, Appnext also offers cost, retargeting and view-through attribution, which you can record with AppsFlyer."
 x-zendesk:
   id: 360001407109
   url: https://support.appsflyer.com/hc/en-us/articles/360001407109-Appnext-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-08-20T07:46:36Z'
   edited_at: '2026-09-09T12:42:49Z'
 ---
-At a glance: Appnext, an AppsFlyer ad network integrated partner, uses technology and data solutions for premium mobile monetization, app marketing, and re-engagement. In addition to click-based mobile attribution, Appnext also offers cost, retargeting and view-through attribution, which you can record with AppsFlyer.
-
 ## Setting up Appnext
 
 > 📘 Prerequisite

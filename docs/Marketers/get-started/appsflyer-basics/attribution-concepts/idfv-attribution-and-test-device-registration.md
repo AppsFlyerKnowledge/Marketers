@@ -1,6 +1,6 @@
 ---
 title: "IDFV attribution and test-device registration"
-excerpt: "Learn how IDFV (Identifier for Vendor) is used in AppsFlyer for cross-promotion attribution and registering iOS test devices."
+excerpt: "IDFV is a unique identifier assigned by iOS to apps of the same vendor. You can use it to attribute installs that originated in cross-promotion campaigns and register test devices."
 x-zendesk:
   id: 17798709514001
   url: https://support.appsflyer.com/hc/en-us/articles/17798709514001-IDFV-attribution-and-test-device-registration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-08-15T13:44:35Z'
   edited_at: '2026-08-12T11:20:39Z'
 ---
-IDFV is a unique identifier assigned by iOS to apps of the same vendor. You can use it to attribute installs that originated in cross-promotion campaigns and register test devices.
-
 IDFV (Identifier for Vendor) is a unique identifier iOS generates while installing the first app the vendor owns. When another vendor app is installed on the same device, it is assigned the same IDFV. If all the vendor apps are deleted from the device, the IDFV is deleted, too, and a different one is generated when the vendor apps are installed again.
 
 According to Apple: "The ID for Vendors (IDFV) may be used for analytics across apps from the same content provider. In this case, the use of the [ATTrackingManager](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/) framework is not required. The IDFV may not be combined with other data to track a user across apps and websites owned by other companies. You remain fully responsible to ensure that your collection and use of the IDFV complies with applicable law."

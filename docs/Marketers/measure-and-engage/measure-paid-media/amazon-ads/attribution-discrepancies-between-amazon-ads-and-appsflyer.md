@@ -1,6 +1,6 @@
 ---
 title: "Attribution discrepancies between Amazon Ads and AppsFlyer"
-excerpt: "Understand the differences in attribution models and timezone configurations that can cause reporting discrepancies between Amazon Ads and AppsFlyer."
+excerpt: "Learn about the differences in attribution models between Amazon Ads and AppsFlyer."
 x-zendesk:
   id: 28461159218449
   url: https://support.appsflyer.com/hc/en-us/articles/28461159218449-Attribution-discrepancies-between-Amazon-Ads-and-AppsFlyer

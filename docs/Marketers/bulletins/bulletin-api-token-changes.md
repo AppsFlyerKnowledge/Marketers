@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: API token changes"
-excerpt: "Important update regarding the deprecation of API V1 tokens and the transition to secure JWT-based API V2 tokens."
 table_of_contents: false
 x-zendesk:
   id: 12399683708305

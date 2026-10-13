@@ -1,6 +1,6 @@
 ---
 title: "Eulerian integration with AppsFlyer"
-excerpt: "Learn how to set up the Eulerian integration with AppsFlyer to centralize, analyze, and optimize your e-marketing operations in real-time."
+excerpt: "Eulerian, an AppsFlyer integrated partner, is focusing on the analysis and real-time optimization of e-marketing operations. Based on an exhaustive data collection system, Eulerian marketing suite provides a combination of marketing web attribution and data management solutions. This technology enables users to centralize, analyze, manage and activate data in real-time."
 x-zendesk:
   id: 360001521405
   url: https://support.appsflyer.com/hc/en-us/articles/360001521405-Eulerian-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-10-02T08:41:24Z'
   edited_at: '2026-06-16T09:54:27Z'
 ---
-At a glance: Eulerian, an AppsFlyer integrated partner, is focusing on the analysis and real-time optimization of e-marketing operations. Based on an exhaustive data collection system, Eulerian marketing suite provides a combination of marketing web attribution and data management solutions. This technology enables users to centralize, analyze, manage and activate data in real-time.
-
 > ❗️ Important!
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.

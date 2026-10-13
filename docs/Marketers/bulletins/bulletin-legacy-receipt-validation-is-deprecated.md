@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Legacy Receipt validation is deprecated"
-excerpt: "AppsFlyer is sunsetting its legacy Receipt validation backend service on September 7, 2026, requiring apps to migrate to either the new Receipt validation or ROI360 Store Revenue."
 x-zendesk:
   id: 42133487071121
   url: https://support.appsflyer.com/hc/en-us/articles/42133487071121-Bulletin-Legacy-Receipt-validation-is-deprecated

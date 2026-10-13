@@ -1,6 +1,5 @@
 ---
 title: "SKAN raw data reports"
-excerpt: "SKAN raw data reports contain row-level data generated after translating and decoding postbacks received by AppsFlyer from iOS, as well as raw SKAN postbacks."
 x-zendesk:
   id: 360014261518
   url: https://support.appsflyer.com/hc/en-us/articles/360014261518-SKAN-raw-data-reports

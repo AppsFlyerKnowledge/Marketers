@@ -1,6 +1,6 @@
 ---
 title: "Oracle Responsys integration with AppsFlyer"
-excerpt: "Learn how to integrate Oracle Responsys with AppsFlyer to enable deep linking and click recording via Universal Links and App Links."
+excerpt: "Oracle Responsys, an email delivery and analytics platform, embeds AppsFlyer OneLink within emails. Email recipients who click the link are deep linked into your app."
 x-zendesk:
   id: 360003798297
   url: https://support.appsflyer.com/hc/en-us/articles/360003798297-Oracle-Responsys-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-11-20T09:26:13Z'
   edited_at: '2026-08-14T16:22:53Z'
 ---
-Oracle Responsys, an email delivery and analytics platform, embeds AppsFlyer OneLink within emails. Email recipients who click the link are deep linked into your app.
-
 ![oracle-responsys-af-logo.png](https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png)
 
 ESPs (Email Service Providers) can be excellent sources for segmented user traffic.

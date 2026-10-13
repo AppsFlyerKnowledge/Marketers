@@ -1,6 +1,6 @@
 ---
 title: "Mobusi campaign configuration"
-excerpt: "Learn how to configure Mobusi, an AppsFlyer integrated partner, to set up mobile user acquisition campaigns, postbacks, attribution links, and permissions."
+excerpt: "Mobusi, an AppsFlyer integrated partner, is a mobile user acquisition and marketing services company with expertise in performance advertising."
 x-zendesk:
   id: 217909583
   url: https://support.appsflyer.com/hc/en-us/articles/217909583-Mobusi-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-11-14T09:59:36Z'
   edited_at: '2026-09-09T13:09:26Z'
 ---
-**At a glance:** Mobusi, an AppsFlyer integrated partner, is a mobile user acquisition and marketing services company with expertise in performance advertising.
-
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mobusi.png?v=1)
 
 ## Setting up Mobusi

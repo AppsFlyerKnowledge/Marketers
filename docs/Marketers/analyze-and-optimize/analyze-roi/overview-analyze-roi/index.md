@@ -1,6 +1,6 @@
 ---
 title: "Overview"
-excerpt: "Get cost and revenue data to understand your total ROI and ROAS with ROI360."
+excerpt: "Get cost and revenue data to understand your total ROI and ROAS"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -16,9 +16,9 @@ x-zendesk:
 ---
 <Cards>
   <Card title="ROI360 guide - cost and revenue data" href="/docs/roi360-guide-cost-and-revenue-data" icon="fa-solid fa-sack-dollar">
-    Learn about cost and revenue data integration.
+    Get cost and revenue data to understand your total ROI and ROAS.
   </Card>
   <Card title="ROI360 - onboarding guide" href="/docs/roi360-onboarding-guide" icon="fa-solid fa-rocket">
-    Get started with the ROI360 onboarding guide.
+    Follow the onboarding instructions in this article to get ROI360 for cost and revenue data up and running.
   </Card>
 </Cards>

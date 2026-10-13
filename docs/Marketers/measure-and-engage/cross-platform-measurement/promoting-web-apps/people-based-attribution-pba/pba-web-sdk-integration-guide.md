@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-05-17T09:05:30Z'
   edited_at: '2026-08-14T16:22:54Z'
 ---
-Integrate AppsFlyer into websites using the Web SDK to record and measure visits, events, conversions, and revenue.
-
 ![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
 ## Web SDK user and integration guide

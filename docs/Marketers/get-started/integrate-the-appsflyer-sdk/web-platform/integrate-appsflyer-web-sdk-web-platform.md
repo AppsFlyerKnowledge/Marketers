@@ -1,5 +1,6 @@
 ---
 title: Integrate AppsFlyer Web SDK
+excerpt: "Install the AppsFlyer Web SDK (also known as the pixel) on your website to report user visits and events to AppsFlyer, and set a persistent customer user ID (CUID) to unify journeys across platforms."
 hidden: false
 deprecated: false
 x-zendesk:
@@ -23,8 +24,6 @@ x-zendesk:
   created_at: '2026-09-15T09:07:44Z'
   edited_at: '2026-09-15T09:07:44Z'
 ---
-**At a glance:** Install the AppsFlyer Web SDK (also known as the pixel) on your website to report user visits and events to AppsFlyer, and set a persistent customer user ID (CUID) to unify journeys across platforms.
-
 ## Overview
 
 The Web SDK lets you record how visitors interact with your website and sends this information to AppsFlyer. It is a 40–60 KB plug-in module that reports user visits and actions on your website to the AppsFlyer platform.

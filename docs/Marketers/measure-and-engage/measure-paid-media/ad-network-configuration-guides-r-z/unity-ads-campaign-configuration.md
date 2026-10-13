@@ -1,6 +1,6 @@
 ---
 title: "Unity Ads campaign configuration"
-excerpt: "Configure Unity Ads campaigns in AppsFlyer to measure mobile attribution, cost, ad revenue, and view-through attribution for iOS and Android."
+excerpt: "Unity Ads, an AppsFlyer ad network integrated partner, is a video ad network for iOS and Android. In addition to click-based mobile attribution, Unity Ads offers cost, ad revenue, and view-through attribution, which can be recorded in AppsFlyer."
 x-zendesk:
   id: 208005086
   url: https://support.appsflyer.com/hc/en-us/articles/208005086-Unity-Ads-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-03-06T10:05:52Z'
   edited_at: '2026-09-09T13:06:37Z'
 ---
-**At a glance:** Unity Ads, an AppsFlyer ad network integrated partner, is a video ad network for iOS and Android. In addition to click-based mobile attribution, Unity Ads offers cost, ad revenue, and view-through attribution, which can be recorded in AppsFlyer.
-
 To configure your campaigns with Unity Ads, follow the steps below.
 
 ## Setting up Unity Ads

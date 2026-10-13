@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-05-10T12:50:00Z'
   edited_at: '2025-11-25T15:15:46Z'
 ---
-**At a glance:** Understand the flow when a user with an iOS device clicks on a OneLink custom link and Universal Links fails to open the app.
-
 ## About URI fallback for iOS
 
 * The best-supported way to open apps on iOS devices is by using Universal Links. Since 2016, there are considerable built-in OS limitations to using URI schemes as a fallback method for when iOS Universal Links don't open the app. These limitations are not AppsFlyer-related, and would also impact any other links with URI schemes you might use to open the app.

@@ -1,6 +1,6 @@
 ---
 title: "Creative Optimization Overview dashboard"
-excerpt: "Analyze creative performance across multiple campaigns and channels to choose the most effective creatives and maximize campaign impact."
+excerpt: "Use the Creative Optimization Overview dashboard to analyze creative performance, so you can choose the most effective creatives and maximize the impact of your campaigns."
 x-zendesk:
   id: 18565649486481
   url: https://support.appsflyer.com/hc/en-us/articles/18565649486481-Creative-Optimization-Overview-dashboard
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-09-14T14:02:20Z'
   edited_at: '2026-05-31T10:29:02Z'
 ---
-**At a glance:** Use the Creative Optimization Overview dashboard to analyze creative performance, so you can choose the most effective creatives and maximize the impact of your campaigns.
-
 [![Main image -Default view.jpg](https://files.readme.io/ae0f7caecf8e232027f14175eac9bc5e1f43250fbd5a438fb62fbdcd3300f484-21367365037073.jpg)](https://files.readme.io/ae0f7caecf8e232027f14175eac9bc5e1f43250fbd5a438fb62fbdcd3300f484-21367365037073.jpg)
 
 ## About the Creative Optimization Overview dashboard

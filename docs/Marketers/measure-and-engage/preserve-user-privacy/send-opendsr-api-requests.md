@@ -1,6 +1,6 @@
 ---
 title: "Send OpenDSR API requests"
-excerpt: "Implement the OpenDSR API to comply with global data protection laws and manage user data requests."
+excerpt: "This article is for the use of AppsFlyer clients, often referred to as Advertisers or App Owners, using the Platform to record app use and attribution. App Owners implement OpenDSR (Data Subject Request) API to comply with applicable data protection laws like GDPR (Europe), CCPA (California), LGPD (Brazil), PDPA (Thailand), and PIPA (Korea)."
 x-zendesk:
   id: 11332840660625
   url: https://support.appsflyer.com/hc/en-us/articles/11332840660625-Send-OpenDSR-API-requests
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-12-12T09:14:00Z'
   edited_at: '2026-10-01T15:42:01Z'
 ---
-This article is for the use of AppsFlyer clients, often referred to as Advertisers or App Owners, using the Platform to record app use and attribution. App Owners implement OpenDSR (Data Subject Request) API to comply with applicable data protection laws like GDPR (Europe), CCPA (California), LGPD (Brazil), PDPA (Thailand), and PIPA (Korea).
-
 **A word from our lawyers:** *Nothing stated here is legal advice. It is provided for your information and convenience. You should work closely with legal and other professional advisors to determine exactly how GDPR, CCPA, or any other laws may or may not apply to you.* The privacy relationship between you and AppsFlyer is governed by the [AppsFlyer Services Privacy Policy](https://www.appsflyer.com/services-privacy-policy). For any questions relating to this Services Privacy Policy or to contact our data protection officer please send us a mail to [privacy@appsflyer.com](mailto:privacy@appsflyer.com). For the purposes of Article 27 of the General Data Protection Regulation, the representative within the EU of AppsFlyer is AppsFlyer Germany GmbH, Schönhauser Allee 180, 10119 Berlin, Germany (contact [privacy@appsflyer.com](mailto:privacy@appsflyer.com); +49-30-166373500).
 
 ## Privacy regulations

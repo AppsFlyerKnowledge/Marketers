@@ -1,6 +1,6 @@
 ---
 title: "Yandex Direct campaign configuration"
-excerpt: "Learn how to set up and configure user acquisition and retargeting campaigns with Yandex Direct in AppsFlyer."
+excerpt: "Yandex Direct is an advertising platform that allows you to run user acquisition and retargeting campaigns on Yandex Search, as well as on thousands of apps and websites in the Yandex Advertising Network."
 x-zendesk:
   id: 360018910138
   url: https://support.appsflyer.com/hc/en-us/articles/360018910138-Yandex-Direct-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-03-30T10:52:06Z'
   edited_at: '2026-06-16T11:43:21Z'
 ---
-**At a glance:** Yandex Direct is an advertising platform that allows you to run user acquisition and retargeting campaigns on Yandex Search, as well as on thousands of apps and websites in the Yandex Advertising Network.
-
 ## Set up Yandex Direct
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.

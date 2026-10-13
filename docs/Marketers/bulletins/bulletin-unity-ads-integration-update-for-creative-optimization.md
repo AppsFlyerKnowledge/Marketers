@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Unity Ads integration update for Creative Optimization"
-excerpt: "Important update regarding the Unity Ads API integration for Creative Optimization and the required service account role updates before November 14, 2024."
 table_of_contents: false
 x-zendesk:
   id: 29015948289937

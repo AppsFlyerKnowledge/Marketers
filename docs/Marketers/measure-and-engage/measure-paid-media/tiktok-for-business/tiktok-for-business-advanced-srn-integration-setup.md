@@ -1,6 +1,6 @@
 ---
 title: "TikTok for Business—Advanced SRN integration setup"
-excerpt: "Learn how to set up the advanced Self-Reporting Network (SRN) integration with TikTok for Business to measure click and view-based mobile attribution."
+excerpt: "TikTok for Business (tiktokglobal_int) is an advanced Self-Reporting Network (SRN) providing app owners the ability to measure click and view-based mobile attribution with AppsFlyer. This includes app installs coming from app and non-mobile TikTok campaigns."
 x-zendesk:
   id: 6722785184913
   url: https://support.appsflyer.com/hc/en-us/articles/6722785184913-TikTok-for-Business-Advanced-SRN-integration-setup
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-06-09T16:49:57Z'
   edited_at: '2026-09-09T10:24:24Z'
 ---
-TikTok for Business (tiktokglobal_int) is an advanced Self-Reporting Network (SRN) providing app owners the ability to measure click and view-based mobile attribution with AppsFlyer. This includes app installs coming from app and non-mobile TikTok campaigns.
-
 On January 30, 2023, the new TikTok for Business (Advanced SRN) integration `tiktokglobal_int` was added. The [Legacy] TikTok for Business integration `bytedanceglobal_int` was gradually phased out and officially deprecated on March 20, 2024. TikTok handles the transition, and they will notify you when you can delete the old integration. To avoid any data loss, make sure to keep both integrations live during the transition phase. Learn more in the [bulletin](/docs/bulletin-tiktok-for-business-advanced-srn).
 
 AppsFlyer supports measuring app activity for [non-app campaigns](/docs/tiktok-for-business-advanced-srn-integration-setup#measure-app-activity-for-nonapp-campaigns).

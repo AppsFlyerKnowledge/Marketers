@@ -1,6 +1,6 @@
 ---
 title: "Meta Quest (Oculus) integration with AppsFlyer"
-excerpt: "Integrate your Meta Quest (Oculus) app with AppsFlyer to receive attribution and event data for your campaigns."
+excerpt: "Integrate your Meta Quest (Oculus) app with AppsFlyer to receive attribution and event data for your campaigns on Meta Quest (Oculus)."
 x-zendesk:
   id: 11241398279569
   url: https://support.appsflyer.com/hc/en-us/articles/11241398279569-Meta-Quest-Oculus-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2022-12-08T10:10:00Z'
   edited_at: '2026-10-05T07:01:20Z'
 ---
-**At a glance:** Integrate your Meta Quest (Oculus) app with AppsFlyer to receive attribution and event data for your campaigns on Meta Quest (Oculus).
-
 ## About Meta Quest (Oculus) attribution
 
 The Meta Quest (Oculus) OS for gaming runs across all Meta Quest (Oculus) devices.

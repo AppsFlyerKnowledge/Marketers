@@ -1,6 +1,6 @@
 ---
 title: "Implement Apple App Store (itunes) install validation"
-excerpt: "Prevent attribution of fraudulent activities by using the Apple install validation service for any iOS install."
+excerpt: "Prevent attribution of fraudulent activities by using the Apple install validation service for any iOS install (both organic and non-organic)."
 x-zendesk:
   id: 115003285626
   url: https://support.appsflyer.com/hc/en-us/articles/115003285626-Implement-Apple-App-Store-itunes-install-validation
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-07-02T08:36:31Z'
   edited_at: '2025-06-03T07:57:06Z'
 ---
-At a glance: Prevent attribution of fraudulent activities by using the Apple install validation service for any iOS install (both organic and non-organic).
-
 ## Receipt validation flow
 
 The receipt validation flow is as follows:

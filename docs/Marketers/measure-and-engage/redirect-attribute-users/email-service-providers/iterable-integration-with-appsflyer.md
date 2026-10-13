@@ -1,6 +1,5 @@
 ---
 title: "Iterable integration with AppsFlyer"
-excerpt: "Integrate OneLink-based attribution links with Iterable to enable deep linking from emails while preserving click recording functionality."
 x-zendesk:
   id: 360002522337
   url: https://support.appsflyer.com/hc/en-us/articles/360002522337-Iterable-integration-with-AppsFlyer

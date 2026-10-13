@@ -1,6 +1,6 @@
 ---
 title: "Bidalgo Apple Ads marketing partner—campaign configuration"
-excerpt: "Learn how to configure Bidalgo as an Apple Ads marketing partner in AppsFlyer to optimize your campaigns and send postbacks."
+excerpt: "Optimize Apple Ads campaigns by using Bidalgo. When configured, AppsFlyer sends postbacks to Bidalgo."
 x-zendesk:
   id: 360001340429
   url: https://support.appsflyer.com/hc/en-us/articles/360001340429-Bidalgo-Apple-Ads-marketing-partner-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2018-07-26T10:33:54Z'
   edited_at: '2026-09-15T10:41:33Z'
 ---
-**At a glance:** Optimize Apple Ads campaigns by using Bidalgo. When configured, AppsFlyer sends postbacks to Bidalgo.
-
 ## Enabling sending postbacks to Bidalgo (Apple Ads marketing partner)
 
 > 📘 **Note**

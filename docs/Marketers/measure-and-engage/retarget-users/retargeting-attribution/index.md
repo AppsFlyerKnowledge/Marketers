@@ -1,6 +1,6 @@
 ---
 title: "Retargeting attribution"
-excerpt: "Understand retargeting attribution and learn how to configure inactivity windows and resolve double attribution with our specialized guides."
+excerpt: "Understand retargeting attribution with our specialized guides"
 table_of_contents: false
 x-zendesk:
   type: section
@@ -18,12 +18,12 @@ Understand retargeting attribution with our specialized guides
 
 <Cards>
   <Card title="Retargeting attribution guide" href="/docs/retargeting-attribution-guide" icon="fa-solid fa-users">
-    Learn the fundamentals of retargeting attribution.
+    Retargeting (remarketing) campaigns motivate users to open and re-engage with the app or cause users who deleted the app to reinstall it.
   </Card>
   <Card title="Resolve retargeting double attribution" href="/docs/resolve-retargeting-double-attribution" icon="fa-solid fa-users">
-    Understand and resolve issues related to double attribution in retargeting campaigns.
+    To evaluate performance during the retargeting campaign's re-engagement window, in-app events and sessions are double-attributed to the user acquisition (UA) and retargeting media sources.
   </Card>
   <Card title="Set retargeting inactivity window" href="/docs/set-retargeting-inactivity-window" icon="fa-solid fa-users">
-    Configure the inactivity window settings for your retargeting campaigns.
+    Increase incremental lift by retargeting inactive users. Set inactivity windows by media source.
   </Card>
 </Cards>

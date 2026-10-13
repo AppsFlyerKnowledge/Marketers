@@ -1,6 +1,6 @@
 ---
 title: "In-app event postback configuration"
-excerpt: "Measure app engagement and user quality, and optimize campaigns using in-app events data sent via real-time postbacks."
+excerpt: "Measure app engagement and quality of your users, and optimize campaigns using in-app events data."
 x-zendesk:
   id: 208439256
   url: https://support.appsflyer.com/hc/en-us/articles/208439256-In-app-event-postback-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-04-11T08:47:14Z'
   edited_at: '2026-09-27T06:37:38Z'
 ---
-**At a glance:** Measure app engagement and quality of your users, and optimize campaigns using in-app events data.
-
 ## Overview
 
 In-app events enable marketers to measure app engagement and user quality from different sources and to build an appropriate user acquisition strategy. Ad networks use in-app event information to optimize campaigns and run cost-per-action/event campaigns. Ad networks receive in-app event data via postbacks, which are sent in real time. [Learn more about rich in-app events](/docs/in-app-events-overview).

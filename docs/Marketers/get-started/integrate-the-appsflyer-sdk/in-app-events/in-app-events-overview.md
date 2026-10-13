@@ -1,6 +1,6 @@
 ---
 title: "In-app events—Overview"
-excerpt: "Record post-install in-app events (such as login, register, or in-app purchase) attributed to media sources and campaigns to measure KPIs like ROI and LTV."
+excerpt: "Record post-install in-app events (such as login, register, or in-app purchase) attributed to media sources and campaigns."
 x-zendesk:
   id: 115005544169
   url: https://support.appsflyer.com/hc/en-us/articles/115005544169-In-app-events-Overview
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2017-11-02T08:12:51Z'
   edited_at: '2026-10-07T08:30:43Z'
 ---
-Record post-install in-app events (such as login, register, or in-app purchase) attributed to media sources and campaigns.
-
 ## Why record in-app events?
 
 In-app events provide insight into what is happening in your app and are the ideal tool to determine the value of app users and the **quality of traffic originating from different media sources**. Recording in-app events helps you measure key performance indicators (KPIs) such as ROI (Return on Investment) and LTV (Lifetime Value).

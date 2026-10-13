@@ -1,6 +1,6 @@
 ---
 title: "MoPub Acquire campaign configuration"
-excerpt: "Learn how to configure MoPub Acquire (formerly Crossinstall) in AppsFlyer to measure mobile attribution, cost, and view-through data."
+excerpt: "MoPub Acquire (formerly Crossinstall, an X Ads company), is an AppsFlyer integrated partner. MoPub Acquire is a mobile-only demand-side platform specializing in playable ads at scale. In addition to click-based mobile attribution, MoPub Acquire also offers cost and view-through attribution, which you can record with AppsFlyer."
 x-zendesk:
   id: 211187263
   url: https://support.appsflyer.com/hc/en-us/articles/211187263-MoPub-Acquire-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-06-20T11:27:42Z'
   edited_at: '2026-09-09T12:38:54Z'
 ---
-MoPub Acquire (formerly Crossinstall, an X Ads company), is an AppsFlyer integrated partner. MoPub Acquire is a mobile-only demand-side platform specializing in playable ads at scale. In addition to click-based mobile attribution, MoPub Acquire also offers cost and view-through attribution, which you can record with AppsFlyer.
-
 ![MoPub Acquire, a Twitter Company](https://files.readme.io/2bcd39cb20f57d2bab077873ceff6ddf8871b1ccddebf9551f8a5ad73d465fd0-crossinstall.png)
 
 ## Setting up MoPub Acquire

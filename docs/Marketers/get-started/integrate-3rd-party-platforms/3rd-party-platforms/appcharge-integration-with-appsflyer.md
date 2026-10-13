@@ -1,6 +1,6 @@
 ---
 title: "Appcharge integration with AppsFlyer"
-excerpt: "Learn how to integrate Appcharge with AppsFlyer to automatically send web store purchase and refund data for a complete view of ROAS and LTV."
+excerpt: "Appcharge, an integrated AppsFlyer partner, is a gaming commerce technology provider that specializes in processing payments outside traditional app store ecosystems. Through its integration with AppsFlyer, Appcharge can automatically send web store purchase and refund data to AppsFlyer, enabling a more complete view of return on ad spend (ROAS) and lifetime value (LTV)."
 x-zendesk:
   id: 36292113943825
   url: https://support.appsflyer.com/hc/en-us/articles/36292113943825-Appcharge-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-06-17T13:21:47Z'
   edited_at: '2026-07-07T09:58:17Z'
 ---
-Appcharge, an integrated AppsFlyer partner, is a gaming commerce technology provider that specializes in processing payments outside traditional app store ecosystems. Through its integration with AppsFlyer, Appcharge can automatically send web store purchase and refund data to AppsFlyer, enabling a more complete view of return on ad spend (ROAS) and lifetime value (LTV). 
-
 ## About Appcharge
 
 [Appcharge](https://appcharge.com/) an integrated AppsFlyer partner, is a direct-to-consumer (D2C) platform built for mobile gaming publishers. The integration helps publishers monitor purchases from their web store, a critical revenue channel outside traditional app stores. By sending purchase and refund data directly to AppsFlyer, Appcharge enables accurate return on ad spend (ROAS) calculations based on net revenue, unlocking better insights into campaign performance and player lifetime value (LTV).

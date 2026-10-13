@@ -1,6 +1,6 @@
 ---
 title: "Single Source of Truth (SSOT) guide for iOS attribution"
-excerpt: "Learn how AppsFlyer's Single Source of Truth (SSOT) mechanism eliminates duplicate install data and corrects attribution across multiple iOS data streams."
+excerpt: "In the context of the iOS 14+ environment, AppsFlyer brings together data from multiple attribution match methods like IDFA, IDFV, SKAN, Apple Ads, and so on, and gives a complete picture of app campaign performance. No attribution method provides the full app performance picture. The challenge is to count a given user once because that same user can be attributed by two methods. The AppsFlyer Single Source of Truth (SSOT) mechanism does just that. SSOT reports and metrics are true and accurate and count the same user only once."
 x-zendesk:
   id: 4410634145425
   url: https://support.appsflyer.com/hc/en-us/articles/4410634145425-Single-Source-of-Truth-SSOT-guide-for-iOS-attribution
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-11-11T09:28:42Z'
   edited_at: '2026-06-11T08:37:47Z'
 ---
-In the context of the iOS 14+ environment, AppsFlyer brings together data from multiple attribution match methods like IDFA, IDFV, SKAN, Apple Ads, and so on, and gives a complete picture of app campaign performance. No attribution method provides the full app performance picture. The challenge is to count a given user once because that same user can be attributed by two methods. The AppsFlyer Single Source of Truth (SSOT) mechanism does just that. SSOT reports and metrics are true and accurate and count the same user only once.
-
 ![Single Source of Truth Video](https://files.readme.io/3659b54d10fc8be09c4ca0c8c0e990eaa372fdf33d48f381ac97b783b284dc33-13be6cbbcdfdb59f84f5c317016ebdc6.webp)
 
 ## About Single Source of Truth—True iOS performance data

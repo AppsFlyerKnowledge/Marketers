@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-10-03T08:08:37Z'
   edited_at: '2024-04-15T18:14:08Z'
 ---
-**At a glance:** At a glance: Use the PBA Web-Assisted Installs dashboard to understand the impact of your web marketing efforts on mobile app installs and to enhance the performance of web campaigns.
-
 **Web-Assisted Installs use case**
 
 ![web_to_app_image.png](https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png)

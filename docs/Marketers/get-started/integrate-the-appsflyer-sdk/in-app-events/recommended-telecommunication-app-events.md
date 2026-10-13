@@ -1,6 +1,6 @@
 ---
 title: "Recommended telecommunication app events"
-excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your telecommunication app."
+excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your telecommunication app ."
 x-zendesk:
   id: 360019896558
   url: https://support.appsflyer.com/hc/en-us/articles/360019896558-Recommended-telecommunication-app-events
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-05-02T11:59:16Z'
   edited_at: '2023-12-04T11:48:21Z'
 ---
-**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your telecommunication app.
-
 ## ![telecommunications_icon.png](https://files.readme.io/42f1aac3b825957d9d0584d83480c441b9d53665cc6cf1a6b8cd1803bb9b6121-20659194885393.png) Telecommunication
 
 Telecommunication apps enable users to purchase and manage cell phone plans, data plans, and so on. The typical events that we suggest recording include purchases, top-ups, and subscriptions.

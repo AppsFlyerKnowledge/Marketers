@@ -1,6 +1,6 @@
 ---
 title: "SKAdNetwork (SKAN) interoperation with Meta ads"
-excerpt: "Interoperability enables Meta ads to share decoded SKAN data with AppsFlyer and enables AppsFlyer to share your CV measurement bits with Meta ads."
+excerpt: "Interoperability enables Meta ads to share decoded SKAN data with AppsFlyer and enables AppsFlyer to share your CV measurement bits (mapping) with Meta ads."
 x-zendesk:
   id: 360017095198
   url: https://support.appsflyer.com/hc/en-us/articles/360017095198-SKAdNetwork-SKAN-interoperation-with-Meta-ads
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2021-01-17T10:08:28Z'
   edited_at: '2026-09-15T11:51:07Z'
 ---
-**At a glance:** Interoperability enables Meta ads to share decoded SKAN data with AppsFlyer and enables AppsFlyer to share your CV measurement bits (mapping) with Meta ads.
-
 ![](https://fast.wistia.com/embed/medias/15jnbml3h7/swatch)
 
 ## SKAN interoperability: AppsFlyer &lt;-> Meta ads

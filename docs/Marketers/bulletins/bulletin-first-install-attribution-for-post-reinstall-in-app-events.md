@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: First install attribution for post-reinstall in-app events"
-excerpt: "Learn about the enhancement that attributes post-reinstall in-app events and sessions to the original media source instead of labeling them organic unattributed."
 table_of_contents: false
 x-zendesk:
   id: 25676426941457

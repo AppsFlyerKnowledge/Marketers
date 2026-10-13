@@ -1,6 +1,6 @@
 ---
 title: "Product Line: Group apps for cross-platform attribution"
-excerpt: "Group platform-specific apps under a single brand using Product Line to unlock cross-platform attribution and user journey insights."
+excerpt: "Group platform-specific apps under a single brand using Product Line. Unlock cross-platform attribution and user journey insights across mobile, web, and CTV apps using a unified Customer User ID (CUID)."
 x-zendesk:
   id: 39524780935185
   url: https://support.appsflyer.com/hc/en-us/articles/39524780935185-Product-Line-Group-apps-for-cross-platform-attribution
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2025-09-30T07:06:57Z'
   edited_at: '2026-09-09T08:00:03Z'
 ---
-Group platform-specific apps under a single brand using Product Line. Unlock cross-platform attribution and user journey insights across mobile, web, and CTV apps using a unified Customer User ID (CUID).
-
 ## About Product Line
 
 Product Line lets you organize different platform versions of the same app (like Android, iOS, web, and CTV) under one brand umbrella. This simplifies app management and enables seamless cross-platform attribution based on a customer user identifier (CUID).

@@ -1,6 +1,5 @@
 ---
 title: "[Legacy] Receipt validation for in-app purchases"
-excerpt: "Learn how the legacy receipt validation flow works to protect against fraudulent in-app purchases in iOS and Android app stores."
 x-zendesk:
   id: 207032106
   url: https://support.appsflyer.com/hc/en-us/articles/207032106--Legacy-Receipt-validation-for-in-app-purchases

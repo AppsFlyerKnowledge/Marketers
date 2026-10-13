@@ -1,6 +1,6 @@
 ---
 title: "Fuseclick integration with AppsFlyer"
-excerpt: "Learn how to configure FuseClick integration with AppsFlyer, including setting up basic attribution links, recommended parameters, and postbacks."
+excerpt: "Ad networks that use FuseClick can utilize the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events."
 x-zendesk:
   id: 207583573
   url: https://support.appsflyer.com/hc/en-us/articles/207583573-Fuseclick-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2016-01-11T14:46:45Z'
   edited_at: '2024-12-23T14:59:12Z'
 ---
-Ad networks that use FuseClick can utilize the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events.
-
 ## Basic attribution link
 
 Below you can find the base attribution link with a detailed explanation per each parameter:

@@ -1,6 +1,6 @@
 ---
 title: "Xbox integration with AppsFlyer"
-excerpt: "Integrate your Xbox app with AppsFlyer via S2S API to receive attribution and event data for your campaigns on Xbox."
+excerpt: "Integrate your Xbox app with AppsFlyer to receive attribution and event data for your campaigns on Xbox."
 x-zendesk:
   id: 14504812967057
   url: https://support.appsflyer.com/hc/en-us/articles/14504812967057-Xbox-integration-with-AppsFlyer
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-04-13T08:28:00Z'
   edited_at: '2024-05-07T09:10:17Z'
 ---
-At a glance: Integrate your Xbox app with AppsFlyer to receive attribution and event data for your campaigns on Xbox.
-
 ## About Xbox attribution
 
 The Xbox OS for console and CTV apps runs across all Xboxes.

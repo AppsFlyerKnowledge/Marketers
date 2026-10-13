@@ -1,6 +1,6 @@
 ---
 title: "Email service provider (ESP) integration guide"
-excerpt: "Learn how to create email campaigns with integrated ESPs using OneLink branded links and deep linking for seamless user experiences."
+excerpt: "Create email campaigns with integrated ESPs using OneLink branded links and deep linking for seamless user experiences that drive conversion (for those using iOS Universal Links or Android App Links)."
 x-zendesk:
   id: 360004556077
   url: https://support.appsflyer.com/hc/en-us/articles/360004556077-Email-service-provider-ESP-integration-guide
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-12-31T10:43:24Z'
   edited_at: '2026-09-23T11:00:22Z'
 ---
-**At a glance:** Create email campaigns with integrated ESPs using OneLink branded links and deep linking for seamless user experiences that drive conversion (for those using iOS Universal Links or Android App Links).
-
 ## About ESP integration
 
 Email marketing is a simple, powerful, and effective way of engaging with customers and potential customers. Many marketers rely on email service providers (ESPs) to send large-scale email campaigns to their users. And while this should be a straightforward and simple process, delivering the perfect mobile user journey you envision, this is usually not the case.

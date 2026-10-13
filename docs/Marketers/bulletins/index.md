@@ -1,5 +1,6 @@
 ---
 title: "Bulletins"
+excerpt: "Get all the latest news: bulletins & non-SDK release notes"
 deprecated: false
 hidden: false
 table_of_contents: false

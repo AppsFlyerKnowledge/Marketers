@@ -1,6 +1,6 @@
 ---
 title: "Share ad revenue data with partners"
-excerpt: "Allow user acquisition partners to receive ad revenue data from mediation networks to optimize their campaigns."
+excerpt: "Allow partners to receive ad revenue information from mediation networks so they can optimize their user acquisition (UA) campaigns. Note : This requires an ROI360 Advanced subscription."
 x-zendesk:
   id: 24100803679761
   url: https://support.appsflyer.com/hc/en-us/articles/24100803679761-Share-ad-revenue-data-with-partners
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2024-04-11T11:04:45Z'
   edited_at: '2026-09-15T11:11:27Z'
 ---
-**At a glance:** Allow partners to receive ad revenue information from mediation networks so they can optimize their user acquisition (UA) campaigns. **Note**: This requires an ROI360 Advanced subscription.
-
 ## About sharing ad revenue data with partners
 
 You can allow ad networks responsible for user acquisition to receive ad revenue data from mediation networks. The partners can then use the information to optimize their UA campaigns.

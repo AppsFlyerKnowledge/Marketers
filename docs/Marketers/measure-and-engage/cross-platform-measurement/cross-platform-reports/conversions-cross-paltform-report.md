@@ -1,6 +1,6 @@
 ---
 title: Conversions cross-platform report
-excerpt: "The Conversions cross-platform report shows the complete user journey behind each cross-platform conversion, including the full assisting engagement chain and revenue context."
+excerpt: "The Conversions cross-platform report shows the complete user journey behind each cross-platform conversion, including the full assisting engagement chain and revenue context, not just the last touchpoint."
 x-zendesk:
   id: 50451304393617
   url: https://support.appsflyer.com/hc/en-us/articles/50451304393617-Conversions-cross-platform-report

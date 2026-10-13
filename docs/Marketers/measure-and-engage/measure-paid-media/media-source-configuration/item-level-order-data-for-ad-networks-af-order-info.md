@@ -1,6 +1,6 @@
 ---
 title: "Item-level order data for ad networks (af_order_info)"
-excerpt: "Send item-level order data to AppsFlyer with the af_order_info parameter to optimize campaigns across major ad networks."
+excerpt: "Send item-level order data to AppsFlyer with the af_order_info parameter. It supports two consistent formats for single or multi-item purchases. AppsFlyer automatically maps it to the structure each ad network requires."
 x-zendesk:
   id: 50185623016721
   url: https://support.appsflyer.com/hc/en-us/articles/50185623016721-Item-level-order-data-for-ad-networks-af-order-info
@@ -22,11 +22,6 @@ x-zendesk:
   created_at: '2026-08-25T12:25:01Z'
   edited_at: '2026-09-22T14:00:28Z'
 ---
-**At a glance:** Send item-level order data to AppsFlyer
-with the `af_order_info` parameter. It supports two consistent
-formats for single or multi-item purchases. AppsFlyer automatically maps
-it to the structure each ad network requires.
-
 ## Why item-level data matters
 
 `af_order_info` is an event parameter that reports the individual items in an order, whether the order has one item or several. It replaces the older `af_content` and `af_content_list` fields with a single, more complete format for the same purpose. It supports two consistent array formats for both single-item and multi-item orders and works across six networks (Google Ads, DV360, Meta, TikTok, Snapchat, and Pinterest) rather than requiring a separate structure for each.

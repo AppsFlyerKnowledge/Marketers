@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Activity and Retention dashboard deprecation"
-excerpt: "Important updates regarding the deprecation of the Retention Dashboard and the transition of the Activity Dashboard to the new Activity View in My Dashboards starting October 1, 2025."
 table_of_contents: false
 x-zendesk:
   id: 37857170718481

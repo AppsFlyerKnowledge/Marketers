@@ -1,6 +1,6 @@
 ---
 title: "OPPO campaign configuration"
-excerpt: "Learn how to configure the OPPO integration in AppsFlyer, including setting up attribution links, default postbacks, and partner permissions."
+excerpt: "OPPO is an AppsFlyer ad network integrated partner."
 x-zendesk:
   id: 360002159158
   url: https://support.appsflyer.com/hc/en-us/articles/360002159158-OPPO-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-08-02T06:46:03Z'
   edited_at: '2026-09-15T10:26:17Z'
 ---
-**At a glance:** OPPO is an AppsFlyer ad network integrated partner.
-
 ## Setting Up OPPO
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.

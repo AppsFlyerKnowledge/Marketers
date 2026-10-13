@@ -1,6 +1,6 @@
 ---
 title: "Meiyou Ads campaign configuration"
-excerpt: "Learn how to configure and set up the Meiyou Ads integration in AppsFlyer, including integration settings, attribution links, and partner permissions."
+excerpt: "Meiyou Ads is an AppsFlyer ad network integrated partner."
 x-zendesk:
   id: 360002141597
   url: https://support.appsflyer.com/hc/en-us/articles/360002141597-Meiyou-Ads-campaign-configuration
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2019-08-01T03:26:18Z'
   edited_at: '2026-09-15T10:30:43Z'
 ---
-**At a glance:** Meiyou Ads is an AppsFlyer ad network integrated partner.
-
 ## Setting Up Meiyou Ads
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.

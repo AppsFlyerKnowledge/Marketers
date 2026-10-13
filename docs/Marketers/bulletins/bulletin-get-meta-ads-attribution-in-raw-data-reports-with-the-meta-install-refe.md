@@ -1,6 +1,5 @@
 ---
 title: "Bulletin: Get Meta ads attribution in raw data reports with the Meta install referrer"
-excerpt: "Learn how the Meta install referrer enables Android campaign attribution in raw data reports and how to configure it."
 x-zendesk:
   id: 22461635687185
   url: https://support.appsflyer.com/hc/en-us/articles/22461635687185-Bulletin-Get-Meta-ads-attribution-in-raw-data-reports-with-the-Meta-install-referrer

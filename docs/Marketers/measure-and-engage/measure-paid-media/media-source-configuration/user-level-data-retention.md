@@ -1,6 +1,6 @@
 ---
 title: "User-level data retention"
-excerpt: "Understand AppsFlyer's retention and user-level raw data policies, including specific partner data retention periods and legal compliance guidelines."
+excerpt: "Retention and user-level (raw data) use policies are determined by AppsFlyer, relevant laws, and SRNs (\" Partners \") terms of use."
 x-zendesk:
   id: 360006091197
   url: https://support.appsflyer.com/hc/en-us/articles/360006091197-User-level-data-retention
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2020-02-23T15:35:57Z'
   edited_at: '2026-09-01T11:14:24Z'
 ---
-Retention and user-level (raw data) use policies are determined by AppsFlyer, relevant laws, and SRNs (" **Partners**") terms of use.
-
 > 🚧 Caution
 >
 > AppsFlyer provides the data restriction explanations, in this article, for information purposes only. _Nothing stated here is legal advice. It is provided for your information and convenience._

@@ -1,6 +1,6 @@
 ---
 title: "Creative Optimization guide"
-excerpt: "Creative Optimization enables you to pull all creative asset data from all your campaigns into a single platform to analyze performance and discover which creatives work best."
+excerpt: "Creative Optimization enables you to pull all creative asset data from all your campaigns into a single platform, so you can analyze their performance, discover which creatives work best, and make better data-driven decisions. Data is LTV, meaning the metrics are for conversions that occurred from creatives during the selected date range."
 x-zendesk:
   id: 18564718580625
   url: https://support.appsflyer.com/hc/en-us/articles/18564718580625-Creative-Optimization-guide
@@ -22,8 +22,6 @@ x-zendesk:
   created_at: '2023-09-14T13:32:13Z'
   edited_at: '2026-09-23T08:06:40Z'
 ---
-**At a glance:** Creative Optimization enables you to pull all creative asset data from all your campaigns into a single platform, so you can analyze their performance, discover which creatives work best, and make better data-driven decisions. Data is LTV, meaning the metrics are for conversions that occurred from creatives during the selected date range.
-
 [![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
 
 ## About Creative Optimization
