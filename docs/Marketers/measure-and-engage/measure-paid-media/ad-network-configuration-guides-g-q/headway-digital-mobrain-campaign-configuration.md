@@ -1,6 +1,26 @@
 ---
 title: "Headway Digital (Mobrain) campaign configuration"
 excerpt: "Configure Headway Digital (Mobrain) in AppsFlyer to record click-based mobile attribution, cost, retargeting, and view-through attribution."
+x-zendesk:
+  id: 209803183
+  url: https://support.appsflyer.com/hc/en-us/articles/209803183-Headway-Digital-Mobrain-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (G-Q)
+  section_id: 6552006535953
+  position: 1
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [headway, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-04-04T14:59:03Z'
+  edited_at: '2026-09-09T13:09:39Z'
 ---
 **At a glance:** Headway Digital, an AppsFlyer integrated ad network partner, provides data-focused marketing solutions that drive execution and powerful brand insight on mobile. In addition to click-based mobile attribution, they offer cost, retargeting, and view-through attribution, which you can record with AppsFlyer.
 

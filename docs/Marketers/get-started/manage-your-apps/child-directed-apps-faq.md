@@ -1,6 +1,26 @@
 ---
 title: "Child-directed apps—FAQ"
 excerpt: "Get answers to frequently asked questions about privacy compliance, SDK tools, and attribution for apps directed towards children."
+x-zendesk:
+  id: 18324823209745
+  url: https://support.appsflyer.com/hc/en-us/articles/18324823209745-Child-directed-apps-FAQ
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Manage your apps
+  section_id: 6551015977105
+  position: 5
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies, Ad Networks]
+  labels: [Agencies, Ad Networks, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-09-05T19:02:32Z'
+  edited_at: '2024-01-18T11:25:52Z'
 ---
 **At a glance:** Get answers to frequently asked questions about apps directed towards children.
 

@@ -2,6 +2,17 @@
 title: "Snap (Snapchat)"
 excerpt: "Set up Snap for AppsFlyer attribution and configure advanced SRN integrations, web campaigns, and marketing partners."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551316540945
+  url: https://support.appsflyer.com/hc/en-us/sections/6551316540945-Snap-Snapchat
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550990672401
+  position: 12
+  sorting: manual
+  created_at: '2022-06-02T11:39:26Z'
 ---
 Set up Snap for AppsFlyer attribution
 

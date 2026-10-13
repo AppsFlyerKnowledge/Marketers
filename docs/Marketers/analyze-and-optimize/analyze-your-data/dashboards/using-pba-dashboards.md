@@ -1,6 +1,26 @@
 ---
 title: "Using PBA dashboards"
 excerpt: "Get the most out of AppsFlyer's People-Based Attribution (PBA) dashboards, including filtering, grouping, and configuration settings."
+x-zendesk:
+  id: 360007630318
+  url: https://support.appsflyer.com/hc/en-us/articles/360007630318-Using-PBA-dashboards
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Dashboards
+  section_id: 6550925337873
+  position: 15
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, Marketers, Cross-Platform Measurement]
+  labels: [pba, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-04-21T04:53:54Z'
+  edited_at: '2024-02-01T14:21:50Z'
 ---
 Get the most out of our PBA dashboard features.
 

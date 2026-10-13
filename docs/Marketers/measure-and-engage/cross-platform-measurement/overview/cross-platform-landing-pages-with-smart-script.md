@@ -1,6 +1,26 @@
 ---
 title: "Cross-platform landing pages with Smart Script"
 excerpt: "Learn how to use a cross-platform landing page running the AppsFlyer Smart Script to perform web-to-app attribution and convert web ad viewers into app users."
+x-zendesk:
+  id: 18440789126289
+  url: https://support.appsflyer.com/hc/en-us/articles/18440789126289-Cross-platform-landing-pages-with-Smart-Script
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Overview
+  section_id: 15323084579345
+  position: 3
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-moran-davida, Marketers, Cross-Platform Measurement]
+  labels: [CTV, Marketers, gaming, cross-platform]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-09-10T07:17:21Z'
+  edited_at: '2024-06-01T10:37:30Z'
 ---
 **At a glance:** Use a cross-platform landing page running the AppsFlyer Smart Script to perform web-to-app attribution. Meaning, convert users who see a web ad from any media source into app users on CTV, PC, console, or mobile platforms.
 

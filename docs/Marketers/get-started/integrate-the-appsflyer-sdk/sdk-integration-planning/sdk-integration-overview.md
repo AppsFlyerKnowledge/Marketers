@@ -1,6 +1,26 @@
 ---
 title: "SDK integration overview"
 excerpt: "Learn about the AppsFlyer SDK functionalities that are available and determine which APIs you want your Android or iOS app to use."
+x-zendesk:
+  id: 207032126
+  url: https://support.appsflyer.com/hc/en-us/articles/207032126-SDK-integration-overview
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: SDK integration planning
+  section_id: 6551182964369
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [iOS, Android, SDK, Integration, Advertisers, firetv, fire tv, Advertiser, Developer, appuid, anonymous, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2012-12-26T14:34:58Z'
+  edited_at: '2026-08-13T12:37:40Z'
 ---
 Learn about the AppsFlyer SDK functionalities that are available and determine which APIs you want your Android or iOS app to use.
 

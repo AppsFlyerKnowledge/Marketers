@@ -1,6 +1,26 @@
 ---
 title: "Manage exception users for SSO"
 excerpt: "Learn how to configure and manage exception users who can bypass SSO using alternative login methods like username/password or authenticator apps."
+x-zendesk:
+  id: 47096696016529
+  url: https://support.appsflyer.com/hc/en-us/articles/47096696016529-Manage-exception-users-for-SSO
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: SSO authentication
+  section_id: 20162151531793
+  position: 0
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials]
+  labels: []
+  promoted: false
+  comments_disabled: true
+  created_at: '2026-05-27T08:43:46Z'
+  edited_at: '2026-05-31T05:00:01Z'
 ---
 Exception users are users who aren’t required to log in through SSO. SSO remains enforced for the account, and admins can give specific users access to an assigned alternative login method.
 

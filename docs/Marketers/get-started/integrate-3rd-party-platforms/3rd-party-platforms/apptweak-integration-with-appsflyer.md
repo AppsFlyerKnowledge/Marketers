@@ -1,6 +1,26 @@
 ---
 title: "AppTweak integration with AppsFlyer"
 excerpt: "Learn how to integrate AppTweak with AppsFlyer to grant access to aggregated analytics and SKAN reports."
+x-zendesk:
+  id: 23661808773649
+  url: https://support.appsflyer.com/hc/en-us/articles/23661808773649-AppTweak-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 2
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-03-27T10:56:41Z'
+  edited_at: '2026-06-16T09:17:27Z'
 ---
 At a glance: AppTweak, an AppsFlyer integrated partner, is an app store acquisition partner for global mobile industry leaders. AppTweak offers solutions to help apps and games optimize their app store presence and increase downloads.
 

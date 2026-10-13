@@ -1,6 +1,26 @@
 ---
 title: "[Legacy] X Ads (formerly Twitter Ads) integration setup"
 excerpt: "Integrate your X Ads account with AppsFlyer to display attribution data of X Ads campaigns."
+x-zendesk:
+  id: 36433415114769
+  url: https://support.appsflyer.com/hc/en-us/articles/36433415114769--Legacy-X-Ads-formerly-Twitter-Ads-integration-setup
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: X Ads (formerly Twitter Ads)
+  section_id: 6551370375569
+  position: 4
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-06-22T11:41:06Z'
+  edited_at: '2026-09-15T09:20:35Z'
 ---
 **At a glance:** Integrate your X Ads account with AppsFlyer to display attribution data of X Ads campaigns.
 

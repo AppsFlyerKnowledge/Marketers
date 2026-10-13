@@ -1,6 +1,26 @@
 ---
 title: "Integrate the ROI360 ad revenue SDK API"
 excerpt: "Learn how to implement the AppsFlyer ad revenue SDK API to report impression-level ad revenue with better data freshness and SKAN support."
+x-zendesk:
+  id: 4416353506833
+  url: https://support.appsflyer.com/hc/en-us/articles/4416353506833-Integrate-the-ROI360-ad-revenue-SDK-API
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Revenue analysis
+  section_id: 6551069075089
+  position: 3
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-michael-talapov, Marketers, ROI360]
+  labels: [ROI, ad revenue, Advertisers, Advertiser, Developer, Developers, ad revenue SDK, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-01-12T09:09:07Z'
+  edited_at: '2026-06-25T15:09:37Z'
 ---
 The AppsFlyer ad revenue SDK API works with ad networks to report ad revenue with impression-level granularity.
 

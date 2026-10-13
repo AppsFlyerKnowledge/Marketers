@@ -1,6 +1,26 @@
 ---
 title: "About probabilistic modeling"
 excerpt: "Learn how AppsFlyer uses probabilistic modeling as a privacy-preserving statistical method to attribute campaigns when deterministic signals are unavailable."
+x-zendesk:
+  id: 40188089592209
+  url: https://support.appsflyer.com/hc/en-us/articles/40188089592209-About-probabilistic-modeling
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Provide data
+  section_id: 6551209900817
+  position: 1
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-yael-sharabi, Marketers, Data Management]
+  labels: []
+  promoted: false
+  comments_disabled: true
+  created_at: '2025-10-21T14:32:11Z'
+  edited_at: '2026-04-19T13:00:27Z'
 ---
 AppsFlyer uses probabilistic modeling as a privacy-preserving statistical method to report on how app developers’ marketing campaigns are performing. It produces aggregate campaign-level performance reports for app developers.
 

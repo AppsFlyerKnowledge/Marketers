@@ -1,6 +1,26 @@
 ---
 title: "Advanced aggregated reports in Data Locker"
 excerpt: "Advanced aggregated reports in Data Locker contain aggregated attribution, events, and revenue data with optimal freshness, accuracy, and granularity."
+x-zendesk:
+  id: 23127074968721
+  url: https://support.appsflyer.com/hc/en-us/articles/23127074968721-Advanced-aggregated-reports-in-Data-Locker
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Analytics and aggregate reporting/APIs
+  section_id: 6550976670225
+  position: 1
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-rona-einat, Marketers, Data Locker]
+  labels: [Premium, Premium Feature, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-03-06T10:46:12Z'
+  edited_at: '2025-03-10T14:45:58Z'
 ---
 Advanced aggregated reports in Data Locker contain aggregated data with optimal data freshness, accuracy, granularity, and unlimited volume.
 

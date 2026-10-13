@@ -1,6 +1,26 @@
 ---
 title: "Bloomreach integration with AppsFlyer"
 excerpt: "Set up an integration with Bloomreach to enable seamless deep linking from email campaigns, measure traffic in both Bloomreach and AppsFlyer, and create user experiences that drive conversion."
+x-zendesk:
+  id: 45235709425553
+  url: https://support.appsflyer.com/hc/en-us/articles/45235709425553-Bloomreach-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Email service providers
+  section_id: 6551247620881
+  position: 3
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-asaf-mashiah, Marketers, OneLink]
+  labels: [marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2026-03-29T13:30:32Z'
+  edited_at: '2026-03-31T11:39:52Z'
 ---
 ![Bloomreach + AppsFlyer.png](https://files.readme.io/842523ac61d5f702a451b361d435e794f8dedad0f54eecffdf27f596c2cab262-45298084947473.png)
 

@@ -2,6 +2,26 @@
 title: "Bulletin: Change in Preload referrer attribution parameter"
 excerpt: "Important update regarding changes to the preload referrer attribution parameter in raw data reports and dashboards starting January 17, 2024."
 table_of_contents: false
+x-zendesk:
+  id: 20161765461009
+  url: https://support.appsflyer.com/hc/en-us/articles/20161765461009-Bulletin-Change-in-Preload-referrer-attribution-parameter
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 29
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-alina-koifman, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-11-15T10:47:47Z'
+  edited_at: '2023-12-11T10:31:24Z'
 ---
 | | |
 | --- | --- |

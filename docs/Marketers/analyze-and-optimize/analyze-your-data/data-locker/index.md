@@ -2,6 +2,17 @@
 title: "Data Locker"
 excerpt: "Deliver your data to major cloud platforms with Data Locker."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6550945728657
+  url: https://support.appsflyer.com/hc/en-us/sections/6550945728657-Data-Locker
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550901627921
+  position: 4
+  sorting: manual
+  created_at: '2022-06-02T11:23:31Z'
 ---
 <Cards>
   <Card title="Data Locker for marketers" href="/docs/data-locker-for-marketers" icon="fa-solid fa-box-archive">

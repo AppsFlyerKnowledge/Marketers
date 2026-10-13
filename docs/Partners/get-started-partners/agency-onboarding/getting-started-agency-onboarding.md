@@ -1,6 +1,26 @@
 ---
 title: "Getting started—agency onboarding"
 excerpt: "Start measuring the campaigns of your clients by setting up an Agency account."
+x-zendesk:
+  id: 360002381617
+  url: https://support.appsflyer.com/hc/en-us/articles/360002381617-Getting-started-agency-onboarding
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Agency onboarding
+  section_id: 6551110223889
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies]
+  labels: [Agency Account, Agency, permissions, Advertisers, Agencies, Partners, agencies, Localize]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-09-02T12:50:49Z'
+  edited_at: '2026-08-12T11:37:20Z'
 ---
 **At a glance:** Start measuring the campaigns of your clients by setting up an Agency account.
 

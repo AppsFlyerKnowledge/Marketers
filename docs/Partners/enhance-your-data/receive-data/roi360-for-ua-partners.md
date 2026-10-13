@@ -1,6 +1,26 @@
 ---
 title: "ROI360 for UA partners"
 excerpt: "AppsFlyer provides UA partners with complete and accurate ad, in-app purchases, and auto-renewable subscription data via reports and postbacks to optimize UA campaigns."
+x-zendesk:
+  id: 17735150011921
+  url: https://support.appsflyer.com/hc/en-us/articles/17735150011921-ROI360-for-UA-partners
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Receive data
+  section_id: 6551235995281
+  position: 5
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Mobile Attribution, Ad Networks]
+  labels: [Ad Networks, Partners]
+  promoted: false
+  comments_disabled: false
+  created_at: '2023-08-12T17:09:08Z'
+  edited_at: '2024-10-27T14:32:39Z'
 ---
 AppsFlyer receives revenue information from both its partners and the app stores (Apple App Store and Google Play Store). Once received, the data undergoes a series of steps including validation, normalization, attribution, and enrichment with additional properties and dimensions.  AppsFlyer can send the information to the UA partner. Following this process, AppsFlyer transmits the enriched and attributed data to the UA partner. The UA partner can then utilize this information to optimize their user acquisition campaigns and enhance the service they offer to advertisers.
 

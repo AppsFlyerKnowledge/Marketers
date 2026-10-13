@@ -1,6 +1,26 @@
 ---
 title: "Convert your mobile web visitors to app users"
 excerpt: "Learn how to use your mobile website to convert mobile web visitors into new mobile app users with AppsFlyer's web-to-app attribution solutions."
+x-zendesk:
+  id: 360001237818
+  url: https://support.appsflyer.com/hc/en-us/articles/360001237818-Convert-your-mobile-web-visitors-to-app-users
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Web-to-app attribution
+  section_id: 6551240476177
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-asaf-mashiah, Marketers, Smart Banners and Scripts]
+  labels: [OneLink, Advertisers, Smart Banner, Marketers, Loc In Prog, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-03-19T08:54:10Z'
+  edited_at: '2026-09-07T10:17:00Z'
 ---
 **At a glance:** Use your mobile website to convert mobile web visitors into new mobile app users.
 

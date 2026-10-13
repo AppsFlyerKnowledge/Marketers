@@ -1,6 +1,26 @@
 ---
 title: "Historical aggregate data availability"
 excerpt: "A comprehensive reference guide detailing how far back historical data is retained and accessible across different AppsFlyer aggregate dashboards, reports, and APIs."
+x-zendesk:
+  id: 15557418667537
+  url: https://support.appsflyer.com/hc/en-us/articles/15557418667537-Historical-aggregate-data-availability
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Analytics and aggregate reporting/APIs
+  section_id: 6550976670225
+  position: 3
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
+  labels: [Aggregated Data, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-05-24T08:38:43Z'
+  edited_at: '2026-08-24T10:05:47Z'
 ---
 **At a glance:** See what historical data is available via different AppsFlyer aggregate dashboards and reports.
 

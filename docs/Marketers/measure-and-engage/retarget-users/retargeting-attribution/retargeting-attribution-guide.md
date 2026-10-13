@@ -1,6 +1,26 @@
 ---
 title: "Retargeting attribution guide"
 excerpt: "Retargeting campaigns motivate users to open and re-engage with an app, or cause users who deleted the app to reinstall it."
+x-zendesk:
+  id: 207033786
+  url: https://support.appsflyer.com/hc/en-us/articles/207033786-Retargeting-attribution-guide
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Retargeting attribution
+  section_id: 6551326229265
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-moran-davida, Marketers, Mobile Attribution]
+  labels: [Attribution, Re-targeting, retargeting, Advertisers, reatribution, re-atribution, Developers, Marketers]
+  promoted: true
+  comments_disabled: true
+  created_at: '2015-09-30T13:18:26Z'
+  edited_at: '2026-03-28T16:48:19Z'
 ---
 **At a glance:** Retargeting (remarketing) campaigns motivate users to open and re-engage with the app or cause users who deleted the app to reinstall it.
 

@@ -2,6 +2,26 @@
 title: "Bulletin: Protect360 and ProtectLITE dashboards display fraud from organic sources"
 excerpt: "Protect360 and ProtectLITE dashboards now display fraud data for installs from organic sources, which was previously only available in raw data reports."
 table_of_contents: false
+x-zendesk:
+  id: 4414296864913
+  url: https://support.appsflyer.com/hc/en-us/articles/4414296864913-Bulletin-Protect360-and-ProtectLITE-dashboards-display-fraud-from-organic-sources
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 43
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-yanai, Marketers, Protect360, Agencies]
+  labels: [Protect360, Agencies, Marketers, ProtectLITE]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-12-20T07:40:11Z'
+  edited_at: '2026-08-18T09:13:19Z'
 ---
 |     |     |
 | --- | --- |

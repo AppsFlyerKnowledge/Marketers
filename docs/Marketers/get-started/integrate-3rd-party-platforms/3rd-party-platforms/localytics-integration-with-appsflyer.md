@@ -1,6 +1,26 @@
 ---
 title: "Localytics integration with AppsFlyer"
 excerpt: "Learn how to set up the Localytics integration with AppsFlyer to share attribution data, configure postbacks, and view analytics in the Localytics console."
+x-zendesk:
+  id: 210748626
+  url: https://support.appsflyer.com/hc/en-us/articles/210748626-Localytics-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 17
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
+  labels: [Localytics, Advertisers, Ad Networks, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-07-27T11:09:25Z'
+  edited_at: '2026-06-16T09:50:11Z'
 ---
 **At a glance:** Localytics, an AppsFlyer integrated partner, is a marketing and analytics platform for mobile and web apps. Localytics app analytics provide cohort-based retention analysis, funnels, customer segmentation, and real-time analyses to uncover groups of users with the highest loyalty rates and lifetime value. Localytics app marketing brings marketing automation services to apps by measuring the long-term success of customer acquisition campaigns and delivering rich and actionable in-app and push messages to relevant customers when they can have the greatest impact.
 

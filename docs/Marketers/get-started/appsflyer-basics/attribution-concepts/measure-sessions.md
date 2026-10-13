@@ -1,6 +1,26 @@
 ---
 title: "Measure sessions"
 excerpt: "The sessions metric is used by advertisers to measure app user engagement during a given period."
+x-zendesk:
+  id: 360000520785
+  url: https://support.appsflyer.com/hc/en-us/articles/360000520785-Measure-sessions
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Attribution concepts
+  section_id: 6551394235409
+  position: 21
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-moran-davida, Marketers, Mobile Attribution, Agencies, Ad Networks]
+  labels: [Advertisers, Agencies, Ad Networks, Developers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2018-03-14T12:13:13Z'
+  edited_at: '2025-04-05T12:53:49Z'
 ---
 <Image src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" alt="DAU_example.jpg" />
 

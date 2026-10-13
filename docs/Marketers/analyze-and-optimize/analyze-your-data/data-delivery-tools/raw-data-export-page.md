@@ -1,6 +1,26 @@
 ---
 title: "Raw data export page"
 excerpt: "Download raw data reports in CSV files with up to 1M rows per download, and limit reports to the data you need by using filters."
+x-zendesk:
+  id: 360008613838
+  url: https://support.appsflyer.com/hc/en-us/articles/360008613838-Raw-data-export-page
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Data delivery tools
+  section_id: 6550995484561
+  position: 1
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-rona-einat, Marketers, Agencies, Raw Reports, Ad Networks]
+  labels: [ad networks, Advertisers, Agencies, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-05-11T22:25:33Z'
+  edited_at: '2026-08-13T16:49:58Z'
 ---
 **At a glance:** Download raw data reports in CSV files. Up to 1M rows per download. Limit reports to the data you need by using filters.
 

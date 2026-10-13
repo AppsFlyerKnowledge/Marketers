@@ -1,6 +1,26 @@
 ---
 title: "Android OAID implementation in the SDK"
 excerpt: "Learn how to collect and integrate the Android Open Anonymous Device Identifier (OAID) to attribute installs from third-party Android app stores."
+x-zendesk:
+  id: 360006278797
+  url: https://support.appsflyer.com/hc/en-us/articles/360006278797-Android-OAID-implementation-in-the-SDK
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Android platform
+  section_id: 6551190827921
+  position: 1
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Web Attribution]
+  labels: [China, Marketers, Loc In Prog]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-02-27T20:21:05Z'
+  edited_at: '2023-11-27T15:49:37Z'
 ---
 Collect the Android OAID to attribute installs from third-party Android app stores.
 

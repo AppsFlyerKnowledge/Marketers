@@ -1,6 +1,26 @@
 ---
 title: "Understand Incrementality for remarketing experiment alerts"
 excerpt: "Learn how to identify and resolve Incrementality experiment alerts on your dashboard to ensure accurate and reliable remarketing results."
+x-zendesk:
+  id: 13479545385489
+  url: https://support.appsflyer.com/hc/en-us/articles/13479545385489-Understand-Incrementality-for-remarketing-experiment-alerts
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Incrementality for remarketing
+  section_id: 6551378485649
+  position: 2
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-niv-klein, Marketers, Incrementality]
+  labels: [Premium Feature, Marketers, Incrementality]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-03-05T12:31:35Z'
+  edited_at: '2025-07-06T10:54:14Z'
 ---
 **At a glance:** Understand alerts and get them resolved, to ensure accurate experiment results.
 

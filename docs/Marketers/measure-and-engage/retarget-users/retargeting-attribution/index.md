@@ -2,6 +2,17 @@
 title: "Retargeting attribution"
 excerpt: "Understand retargeting attribution and learn how to configure inactivity windows and resolve double attribution with our specialized guides."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551326229265
+  url: https://support.appsflyer.com/hc/en-us/sections/6551326229265-Retargeting-attribution
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6551296371217
+  position: 2
+  sorting: manual
+  created_at: '2022-06-02T11:38:47Z'
 ---
 Understand retargeting attribution with our specialized guides
 

@@ -2,6 +2,17 @@
 title: "Audiences"
 excerpt: "Learn how to build, configure, and connect audience segments to your partner networks using AppsFlyer Audiences."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551336428945
+  url: https://support.appsflyer.com/hc/en-us/sections/6551336428945-Audiences
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6551296371217
+  position: 1
+  sorting: manual
+  created_at: '2022-06-02T11:39:21Z'
 ---
 Build and connect audience segments to your partner networks
 

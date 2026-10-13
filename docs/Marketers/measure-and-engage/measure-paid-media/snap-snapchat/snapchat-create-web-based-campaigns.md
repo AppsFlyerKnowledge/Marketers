@@ -1,6 +1,26 @@
 ---
 title: "Snapchat—Create web-based campaigns"
 excerpt: "Learn how to set up Snapchat Ads Web campaigns to attribute web-to-app conversions from Snapchat Ads using AppsFlyer."
+x-zendesk:
+  id: 41365000854161
+  url: https://support.appsflyer.com/hc/en-us/articles/41365000854161-Snapchat-Create-web-based-campaigns
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Snap (Snapchat)
+  section_id: 6551316540945
+  position: 2
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: []
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-11-27T14:39:44Z'
+  edited_at: '2026-09-15T10:59:21Z'
 ---
 **At a glance:** Use Snapchat Ads Web campaigns to attribute web-to-app conversions from Snapchat Ads
 

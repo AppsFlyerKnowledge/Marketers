@@ -1,6 +1,26 @@
 ---
 title: "Export Web Performance Measurement report data from Data Locker"
 excerpt: "Export Web Performance Measurement data from Data Locker in two report types that enable you to analyze website performance at the right level."
+x-zendesk:
+  id: 43510758321809
+  url: https://support.appsflyer.com/hc/en-us/articles/43510758321809-Export-Web-Performance-Measurement-report-data-from-Data-Locker
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: AppsFlyer Web Attribution
+  section_id: 43560690387729
+  position: 9
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, Marketers, Web Attribution, Agencies]
+  labels: [Agencies, Web Attribution, Web Attribution SDK, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2026-02-04T10:49:59Z'
+  edited_at: '2026-08-24T10:51:46Z'
 ---
 At a glance: Export Web Performance Measurement data from Data Locker in two report types that enable you to analyze website performance at the right level. Use End User Events to analyze all visits and events, and use Conversions to count and attribute unique conversion anchors (first visits, revisits, and user-acquisition events).
 

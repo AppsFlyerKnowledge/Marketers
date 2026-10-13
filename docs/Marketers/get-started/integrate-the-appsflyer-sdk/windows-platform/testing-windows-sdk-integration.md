@@ -1,6 +1,26 @@
 ---
 title: "Testing Windows SDK integration"
 excerpt: "Learn how to test your Windows app integration with AppsFlyer, including non-organic installs, in-app events, and deep linking."
+x-zendesk:
+  id: 217924503
+  url: https://support.appsflyer.com/hc/en-us/articles/217924503-Testing-Windows-SDK-integration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Windows platform
+  section_id: 6551223206417
+  position: 2
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [Testing, Windows, SDK, Advertisers, Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-11-15T12:35:48Z'
+  edited_at: '2023-02-15T13:15:01Z'
 ---
 **At a glance:** Test your Windows app integration with AppsFlyer.
 

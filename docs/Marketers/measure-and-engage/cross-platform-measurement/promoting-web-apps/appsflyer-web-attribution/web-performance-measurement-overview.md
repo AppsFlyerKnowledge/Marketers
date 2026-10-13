@@ -1,6 +1,26 @@
 ---
 title: "Web Performance Measurement - Overview"
 excerpt: "Web Performance Measurement enables you to identify which media sources and campaigns drive users to your website and measure how those visits influence downstream actions over time."
+x-zendesk:
+  id: 43521734577809
+  url: https://support.appsflyer.com/hc/en-us/articles/43521734577809-Web-Performance-Measurement-Overview
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: AppsFlyer Web Attribution
+  section_id: 43560690387729
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, Marketers, Web Attribution, Agencies]
+  labels: [Agencies, Web Attribution, Web Attribution SDK, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2026-02-04T15:07:53Z'
+  edited_at: '2026-09-17T11:40:46Z'
 ---
 **At a glance:** Web Performance Measurement enables you to identify which media sources and campaigns drive users to your website and measure how those visits influence downstream actions over time. It enables you to capture and attribute user interactions end-to-end, supporting both user acquisition (first-time visitors) and re-engagement, from the initial visit through lifetime value measurement.
 

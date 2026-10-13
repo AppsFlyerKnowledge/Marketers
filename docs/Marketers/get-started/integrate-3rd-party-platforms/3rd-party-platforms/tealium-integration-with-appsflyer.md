@@ -1,6 +1,26 @@
 ---
 title: "Tealium integration with AppsFlyer"
 excerpt: "Learn how to integrate Tealium with AppsFlyer using client-side or server-side methods to automatically share conversion data."
+x-zendesk:
+  id: 10820404821393
+  url: https://support.appsflyer.com/hc/en-us/articles/10820404821393-Tealium-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 30
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Marketers, Loc In Prog, TEST ID LOC]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-11-22T16:09:24Z'
+  edited_at: '2024-02-14T06:58:32Z'
 ---
 **At a glance:** Tealium, a Customer Data Platform (CDP), connects customer data across the web, mobile, IoT, and offline. Learn how to automatically share conversion data with Tealium.
 

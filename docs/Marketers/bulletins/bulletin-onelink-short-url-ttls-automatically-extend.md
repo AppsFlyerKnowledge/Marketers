@@ -2,6 +2,26 @@
 title: "Bulletin: OneLink short URL TTLs automatically extend"
 excerpt: "Learn about the automatic extension of default time to live (TTL) for OneLink short URLs created via bulk upload, SDK, and OneLink API upon user clicks."
 table_of_contents: false
+x-zendesk:
+  id: 4667188714001
+  url: https://support.appsflyer.com/hc/en-us/articles/4667188714001-Bulletin-OneLink-short-URL-TTLs-automatically-extend
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 48
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-asaf-mashiah, Marketers, Link Management]
+  labels: [OneLink, User invite, OneLink API, Developers, Marketers, bulk upload, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-03-10T11:17:11Z'
+  edited_at: '2024-05-14T13:02:59Z'
 ---
 | | |
 | --- | --- |

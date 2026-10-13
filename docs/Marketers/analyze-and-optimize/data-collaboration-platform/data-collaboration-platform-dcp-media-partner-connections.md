@@ -1,6 +1,26 @@
 ---
 title: "Data Collaboration Platform (DCP) media partner connections"
 excerpt: "Connect your audiences to media partners so you can activate your tailored campaigns and achieve maximum results."
+x-zendesk:
+  id: 45669216166417
+  url: https://support.appsflyer.com/hc/en-us/articles/45669216166417-Data-Collaboration-Platform-DCP-media-partner-connections
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Data Collaboration Platform
+  section_id: 26230608274065
+  position: 3
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-yael-sharabi, Marketers, Audience Activation]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2026-04-12T14:19:36Z'
+  edited_at: '2026-05-24T13:27:09Z'
 ---
 ## About partner connections
 

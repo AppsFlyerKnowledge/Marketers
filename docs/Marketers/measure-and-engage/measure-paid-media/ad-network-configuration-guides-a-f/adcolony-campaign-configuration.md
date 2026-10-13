@@ -1,6 +1,26 @@
 ---
 title: "AdColony campaign configuration"
 excerpt: "Configure your AdColony integration in AppsFlyer to record mobile attribution, cost, ad revenue, and view-through attribution."
+x-zendesk:
+  id: 208005106
+  url: https://support.appsflyer.com/hc/en-us/articles/208005106-AdColony-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  position: 2
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Adcolony, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-03-06T10:58:12Z'
+  edited_at: '2026-09-09T12:34:54Z'
 ---
 AdColony, an AppsFlyer ad network integrated partner, is a premium video advertising network, providing advertisers and brands with an engaged and responsive audience and offers monetization solutions to publishers and developers. In addition to click-based mobile attribution, AdColony also offers cost, ad revenue, and view-through attribution, which you can record with AppsFlyer.
 

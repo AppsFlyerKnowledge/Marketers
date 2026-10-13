@@ -1,6 +1,26 @@
 ---
 title: "Implement Google License Verification Library (LVL)"
 excerpt: "Protect your Android apps against unauthorized use by integrating the Google License Verification Library to verify installs from real Google Play users."
+x-zendesk:
+  id: 17329535522961
+  url: https://support.appsflyer.com/hc/en-us/articles/17329535522961-Implement-Google-License-Verification-Library-LVL
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Protect your traffic
+  section_id: 6551015912465
+  position: 10
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-roy-yanai, Marketers, Protect360]
+  labels: [Premium, Premium Feature, Marketers, Localize, Loc Published]
+  promoted: false
+  comments_disabled: false
+  created_at: '2023-07-27T14:45:46Z'
+  edited_at: '2025-08-06T08:14:01Z'
 ---
 The License Verification Library (LVL) is a library you can add to your apps (downloadable from the Android SDK) that handles all of the licensing-related communication with the Google Play licensing service.
 

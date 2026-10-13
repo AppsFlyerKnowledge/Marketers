@@ -1,6 +1,26 @@
 ---
 title: "Yahoo Japan Search Ads campaign configuration"
 excerpt: "Learn how to configure the Yahoo Japan Search Ads integration with AppsFlyer for Android apps, including mapping in-app events and setting up agency permissions."
+x-zendesk:
+  id: 4412602890641
+  url: https://support.appsflyer.com/hc/en-us/articles/4412602890641-Yahoo-Japan-Search-Ads-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  position: 25
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Advertisers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-12-02T10:07:00Z'
+  edited_at: '2026-09-15T10:48:52Z'
 ---
 **At a glance:** Yahoo Japan Search Ads, a self-reporting network (SRN) partner that combines advertising and analytics.
 

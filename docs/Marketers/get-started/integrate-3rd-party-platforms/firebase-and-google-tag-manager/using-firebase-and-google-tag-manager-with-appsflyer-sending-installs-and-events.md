@@ -1,6 +1,26 @@
 ---
 title: "Using Firebase and Google Tag Manager with AppsFlyer—Sending installs and events"
 excerpt: "Learn how to configure events in your app and send install events reported via Firebase SDK to AppsFlyer using Google Tag Manager."
+x-zendesk:
+  id: 4410481550609
+  url: https://support.appsflyer.com/hc/en-us/articles/4410481550609-Using-Firebase-and-Google-Tag-Manager-with-AppsFlyer-Sending-installs-and-events
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Firebase and Google Tag Manager
+  section_id: 6551267006225
+  position: 6
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Developers, Marketers, Localize, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-11-09T10:31:07Z'
+  edited_at: '2023-11-23T10:09:50Z'
 ---
 **At a glance:** Instructions for setting up event sending reported via Firebase SDK to AppsFlyer in your app.
 

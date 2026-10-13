@@ -1,6 +1,26 @@
 ---
 title: "Audiences partner connections"
 excerpt: "Connect your audiences to partners to easily and continuously send tailored campaigns using supported user identifiers."
+x-zendesk:
+  id: 360013960577
+  url: https://support.appsflyer.com/hc/en-us/articles/360013960577-Audiences-partner-connections
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Audiences
+  section_id: 6551336428945
+  position: 4
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-neama-benhabib, Marketers, Audience Segmentation]
+  labels: [Premium, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-10-05T06:49:59Z'
+  edited_at: '2026-10-01T07:31:47Z'
 ---
 **At a glance:**  Connect your audiences to partners.
 

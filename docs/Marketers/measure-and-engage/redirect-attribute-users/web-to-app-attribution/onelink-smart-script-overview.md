@@ -1,6 +1,26 @@
 ---
 title: "OneLink Smart Script overview"
 excerpt: "Use OneLink Smart Script to convert and attribute your mobile website visitors, coming from any source, into mobile app users."
+x-zendesk:
+  id: 360000677217
+  url: https://support.appsflyer.com/hc/en-us/articles/360000677217-OneLink-Smart-Script-overview
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Web-to-app attribution
+  section_id: 6551240476177
+  position: 5
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-asaf-mashiah, Marketers, Smart Banners and Scripts]
+  labels: [OneLink, Adwords, Advertisers, referral, referal, landing, redirect, gclid, GCLID, facebook, adwords, landing page, Developers, Marketers, Loc In Prog, Loc Published]
+  promoted: false
+  comments_disabled: false
+  created_at: '2018-12-12T16:32:47Z'
+  edited_at: '2024-11-19T13:16:26Z'
 ---
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 

@@ -2,6 +2,26 @@
 title: "Bulletin: Activity and Retention dashboard deprecation"
 excerpt: "Important updates regarding the deprecation of the Retention Dashboard and the transition of the Activity Dashboard to the new Activity View in My Dashboards starting October 1, 2025."
 table_of_contents: false
+x-zendesk:
+  id: 37857170718481
+  url: https://support.appsflyer.com/hc/en-us/articles/37857170718481-Bulletin-Activity-and-Retention-dashboard-deprecation
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 0
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2025-08-06T13:20:51Z'
+  edited_at: '2026-03-19T11:42:56Z'
 ---
 | Section | Details |
 | --- | --- |

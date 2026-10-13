@@ -2,6 +2,26 @@
 title: "Bulletin: Cohort data includes unattributed sessions and events"
 excerpt: "Starting May 26, 2024, unattributed sessions and events are included in Cohort dashboards and reports under the organic media source to resolve reporting discrepancies."
 table_of_contents: false
+x-zendesk:
+  id: 22973553145361
+  url: https://support.appsflyer.com/hc/en-us/articles/22973553145361-Bulletin-Cohort-data-includes-unattributed-sessions-and-events
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 22
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 27439133508369
+  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
+  labels: [Marketers, Loc In Prog, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-02-29T12:49:36Z'
+  edited_at: '2024-06-03T14:16:24Z'
 ---
 | | |
 | --- | --- |

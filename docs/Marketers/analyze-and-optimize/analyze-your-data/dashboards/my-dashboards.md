@@ -1,6 +1,26 @@
 ---
 title: "My Dashboards"
 excerpt: "Use My Dashboards to design your own dashboard, adding and customizing widgets, charts, and tables that display the exact performance metrics you want."
+x-zendesk:
+  id: 23461861877009
+  url: https://support.appsflyer.com/hc/en-us/articles/23461861877009-My-Dashboards
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Dashboards
+  section_id: 6550925337873
+  position: 1
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-maya-kahane, Marketers, Marketing Analytics, Agencies, Ad Networks]
+  labels: [Agencies, Ad Networks, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-03-19T14:29:53Z'
+  edited_at: '2026-10-11T10:42:20Z'
 ---
 **At a glance:** Use "My Dashboards" to design your own dashboard, adding and customizing widgets, charts, and tables that display the exact performance metrics you want, in the way you want to view them.
 

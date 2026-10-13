@@ -2,6 +2,17 @@
 title: "Account management"
 excerpt: "Manage your AppsFlyer account settings, user access, billing plans, and report generation quotas."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551191075473
+  url: https://support.appsflyer.com/hc/en-us/sections/6551191075473-Account-management
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6551054625937
+  position: 0
+  sorting: manual
+  created_at: '2022-06-02T11:32:24Z'
 ---
 User management, billing, quotas, and how to get support from AppsFlyer
 

@@ -2,6 +2,17 @@
 title: "AppsFlyer basics"
 excerpt: "Review core attribution concepts, explore the AppsFlyer platform, and learn how to work with agencies."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551113099153
+  url: https://support.appsflyer.com/hc/en-us/sections/6551113099153-AppsFlyer-basics
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550753145745
+  position: 5
+  sorting: manual
+  created_at: '2022-06-02T11:28:19Z'
 ---
 Review attribution concepts, learn the AppsFlyer platform, work with agencies
 

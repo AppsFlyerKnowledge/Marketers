@@ -1,6 +1,26 @@
 ---
 title: "IBM UBX integration guide with AppsFlyer"
 excerpt: "Learn how to integrate AppsFlyer with IBM UBX (Universal Behavior Exchange) to seamlessly share customer behavior data and in-app events."
+x-zendesk:
+  id: 210093266
+  url: https://support.appsflyer.com/hc/en-us/articles/210093266-IBM-UBX-integration-guide-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 11
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
+  labels: [Analytics, IBM, UBX, integrated partner, Advertisers, Ad Networks, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-07-03T09:06:26Z'
+  edited_at: '2026-06-16T10:01:11Z'
 ---
 **At a glance:** IBM UBX (Universal Behavior Exchange), an AppsFlyer integrated partner, is a feature of the IBM Marketing Cloud and other IBM Commerce offerings which allows marketers to take control of all their customer data integration with an easy-to-use console. This open data exchange capability provides a contextual view of customer buying behaviors across all channels, devices, and interactions, so marketers can quickly design and deploy effective campaigns, delivering meaningful experiences in an instant, while driving ROI.
 

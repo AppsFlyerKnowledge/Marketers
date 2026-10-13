@@ -1,6 +1,26 @@
 ---
 title: "Getting started—Onboarding for marketers"
 excerpt: "Get everything set up to make the most of your AppsFlyer account by understanding the steps, timelines, and dependencies for onboarding your apps and team."
+x-zendesk:
+  id: 207033486
+  url: https://support.appsflyer.com/hc/en-us/articles/207033486-Getting-started-Onboarding-for-marketers
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Marketer onboarding
+  section_id: 6550866490129
+  position: 1
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials]
+  labels: [SDK, Integration, Reports, Advertisers, Marketers]
+  promoted: true
+  comments_disabled: true
+  created_at: '2015-01-18T11:03:01Z'
+  edited_at: '2025-03-25T11:21:10Z'
 ---
 **At a glance:** Get everything set up to make the most of your AppsFlyer account. Understand the steps, timelines, and dependencies for getting your apps and your team on board.
 

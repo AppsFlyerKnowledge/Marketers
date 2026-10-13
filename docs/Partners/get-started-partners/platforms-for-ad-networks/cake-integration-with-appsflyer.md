@@ -1,6 +1,26 @@
 ---
 title: "Cake integration with AppsFlyer"
 excerpt: "Learn how to configure attribution links and postbacks for CAKE-based ad networks integrating with AppsFlyer."
+x-zendesk:
+  id: 207273986
+  url: https://support.appsflyer.com/hc/en-us/articles/207273986-Cake-integration-with-AppsFlyer
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Platforms for ad networks
+  section_id: 6551055575185
+  position: 2
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
+  labels: [Advertisers, Ad Networks, Partners]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-01-11T14:44:55Z'
+  edited_at: '2024-12-23T15:15:33Z'
 ---
 At a glance: Ad networks that use CAKE can receive attribution data from AppsFlyer about installs and in-app events.
 

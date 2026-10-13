@@ -1,6 +1,26 @@
 ---
 title: "Adobe Launch SDK extension"
 excerpt: "Send data to Adobe Launch SDK and AppsFlyer SDK with the single implementation of AppsFlyer Adobe Launch SDK Extension."
+x-zendesk:
+  id: 360000939097
+  url: https://support.appsflyer.com/hc/en-us/articles/360000939097-Adobe-Launch-SDK-extension
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Other platforms
+  section_id: 6551244207121
+  position: 13
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [SDK, Adobe, Advertisers, AppsFlyer SDK, Adobe Experience Platform, Developers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-02-13T08:03:45Z'
+  edited_at: '2026-08-14T16:22:58Z'
 ---
 ## Overview
 

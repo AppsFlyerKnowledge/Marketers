@@ -1,6 +1,26 @@
 ---
 title: "Meta Ads—integration setup"
 excerpt: "Learn how to integrate Meta ads with AppsFlyer to attribute mobile app installations, configure advanced settings, and map in-app events."
+x-zendesk:
+  id: 207033826
+  url: https://support.appsflyer.com/hc/en-us/articles/207033826-Meta-Ads-integration-setup
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Meta ads
+  section_id: 6551109855761
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [iOS, Android, SDK, Facebook, App Install, View-Through, integrated partner, Advertisers, facebook, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2013-01-24T20:13:58Z'
+  edited_at: '2026-09-09T13:34:51Z'
 ---
 **At a glance:** Learn about integrating Meta ads with AppsFlyer.
 

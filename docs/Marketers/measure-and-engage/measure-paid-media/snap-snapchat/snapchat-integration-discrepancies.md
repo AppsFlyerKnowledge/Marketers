@@ -1,6 +1,26 @@
 ---
 title: "Snapchat integration discrepancies"
 excerpt: "Learn about the different discrepancies between Snapchat and AppsFlyer dashboards and reports, and how to address them."
+x-zendesk:
+  id: 4417686973841
+  url: https://support.appsflyer.com/hc/en-us/articles/4417686973841-Snapchat-integration-discrepancies
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Snap (Snapchat)
+  section_id: 6551316540945
+  position: 5
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-01-24T08:57:20Z'
+  edited_at: '2023-11-02T10:20:16Z'
 ---
 At a glance: Learn about the different discrepancies between Snapchat and AppsFlyer dashboards and reports.
 

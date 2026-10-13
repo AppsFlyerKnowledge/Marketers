@@ -1,6 +1,26 @@
 ---
 title: "SKAN Conversion Studio"
 excerpt: "Configure and optimize your SKAdNetwork conversion values to measure post-install user revenue, engagement, and retention."
+x-zendesk:
+  id: 4403727223185
+  url: https://support.appsflyer.com/hc/en-us/articles/4403727223185-SKAN-Conversion-Studio
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: SKAN solution
+  section_id: 6552135379985
+  position: 1
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
+  labels: [Advertisers, Marketers, Localize]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-07-08T09:26:58Z'
+  edited_at: '2026-04-26T06:04:28Z'
 ---
 **At a glance**: Use SKAN Conversion Studio to set which user engagements in the app to measure, and for how long. Measure revenue, conversion, engagement, and retention during a limited post-install period. By adding the Single Source of Truth measurement we can let you know if the user was attributed by both AppsFlyer and SKAN.
 

@@ -2,6 +2,26 @@
 title: "Set up agencies"
 excerpt: "Learn how to set up agency integrations in AppsFlyer, understand the attribution flow, and manage partner deactivation settings."
 table_of_contents: false
+x-zendesk:
+  id: 360004013198
+  url: https://support.appsflyer.com/hc/en-us/articles/360004013198-Set-up-agencies
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Working with agencies
+  section_id: 6551289835025
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies]
+  labels: [Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-12-02T14:01:53Z'
+  edited_at: '2025-12-14T14:20:57Z'
 ---
 **At a glance:** Get started working with agencies in AppsFlyer: all the details in this video!
 

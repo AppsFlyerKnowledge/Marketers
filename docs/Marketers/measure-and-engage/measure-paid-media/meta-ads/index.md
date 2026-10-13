@@ -2,6 +2,17 @@
 title: "Meta ads"
 excerpt: "An overview of the Meta ads integration with AppsFlyer, including setup guides, campaign creation, event mapping, and troubleshooting."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551109855761
+  url: https://support.appsflyer.com/hc/en-us/sections/6551109855761-Meta-ads
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550990672401
+  position: 9
+  sorting: manual
+  created_at: '2022-06-02T11:27:42Z'
 ---
 All about the Meta ads integration
 

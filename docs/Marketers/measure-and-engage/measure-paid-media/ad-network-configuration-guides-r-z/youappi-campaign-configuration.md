@@ -1,6 +1,26 @@
 ---
 title: "YouAppi campaign configuration"
 excerpt: "Configure your mobile growth marketing campaigns with YouAppi, including attribution links, cost API integration, and partner permissions."
+x-zendesk:
+  id: 212932106
+  url: https://support.appsflyer.com/hc/en-us/articles/212932106-YouAppi-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  position: 27
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Advertisers, YouAppi, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-09-20T07:14:26Z'
+  edited_at: '2026-07-23T13:15:18Z'
 ---
 YouAppi, an AppsFlyer ad network integrated partner, is a leading mobile growth marketing platform for premium mobile brands. In addition to click-based mobile attribution, YouAppi offers cost, ad revenue, retargeting and view-through attribution, which can be recorded with AppsFlyer.
 

@@ -1,6 +1,26 @@
 ---
 title: "Aggregated campaign performance report for ad networks"
 excerpt: "Learn how ad networks can load the aggregated performance report into their BI systems to calculate campaign performance metrics like the 7-day retention KPI."
+x-zendesk:
+  id: 360020834237
+  url: https://support.appsflyer.com/hc/en-us/articles/360020834237-Aggregated-campaign-performance-report-for-ad-networks
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Aggregate data
+  section_id: 6551715006353
+  position: 2
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-nohar-avigal, Marketing Analytics, Ad Networks]
+  labels: [Ad Networks, Partners]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-05-30T12:34:03Z'
+  edited_at: '2026-02-04T10:24:58Z'
 ---
 Ad networks load the aggregated performance report (AKA Cohort report) into their BI systems to calculate campaign performance metrics like the 7-day retention KPI.
 

@@ -1,6 +1,26 @@
 ---
 title: "Set up tax and store commission rates with the Net Revenue API"
 excerpt: "Configure how AppsFlyer calculates net revenue for in-app purchases and subscriptions by using the Net Revenue API to customize store commission rates and tax rules per app."
+x-zendesk:
+  id: 30468586765841
+  url: https://support.appsflyer.com/hc/en-us/articles/30468586765841-Set-up-tax-and-store-commission-rates-with-the-Net-Revenue-API
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Revenue analysis
+  section_id: 6551069075089
+  position: 2
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-michael-talapov, Marketers, ROI360]
+  labels: [Revenue, Premium, Marketers, ROI360]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-11-28T13:57:14Z'
+  edited_at: '2026-08-12T09:02:34Z'
 ---
 At a glance: Configure how AppsFlyer calculates net revenue for in-app purchases and subscriptions by using the Net Revenue API to customize store commission rates and tax rules per app. This ensures that your reports accurately reflect actual earnings, including cases with non-standard commission fees or specific tax rules.
 

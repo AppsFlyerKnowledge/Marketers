@@ -1,6 +1,26 @@
 ---
 title: "Tapcart integration"
 excerpt: "Learn how to integrate Tapcart with AppsFlyer to measure installs, deep link users, and track default in-app events."
+x-zendesk:
+  id: 4411720533905
+  url: https://support.appsflyer.com/hc/en-us/articles/4411720533905-Tapcart-integration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 29
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-11-24T09:21:54Z'
+  edited_at: '2025-03-25T10:24:36Z'
 ---
 Use Tapcart to leverage AppsFlyer capabilities in your app.
 

@@ -1,6 +1,26 @@
 ---
 title: "Convertro integration with AppsFlyer"
 excerpt: "Learn how to set up the Convertro integration with AppsFlyer to measure and optimize your marketing performance."
+x-zendesk:
+  id: 207040636
+  url: https://support.appsflyer.com/hc/en-us/articles/207040636-Convertro-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 7
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
+  labels: [Attribution, Convertro, integrated partner, Advertisers, Ad Networks, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2015-12-24T11:37:56Z'
+  edited_at: '2026-06-16T10:00:29Z'
 ---
 **At a glance:** Convertro, an AppsFlyer integrated partner, strives to be the leading automated tool for marketers to truly understand the performance of their advertising choices and activate upon these insights as quickly as possible. They've built a technology that not only gathers granular information about the customer path to conversion, but is also able to scientifically optimize marketing mix and automatically understand how to shift spend to maximize ROI.
 

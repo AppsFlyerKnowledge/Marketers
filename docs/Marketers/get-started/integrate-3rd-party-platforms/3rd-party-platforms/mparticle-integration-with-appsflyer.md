@@ -1,6 +1,26 @@
 ---
 title: "mParticle integration with AppsFlyer"
 excerpt: "Learn how to configure event and feed integrations, implement deferred deep linking, and enable uninstall measurement between mParticle and AppsFlyer."
+x-zendesk:
+  id: 209787323
+  url: https://support.appsflyer.com/hc/en-us/articles/209787323-mParticle-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 22
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
+  labels: [Advertisers, Ad Networks, mParticle, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-04-03T05:31:23Z'
+  edited_at: '2026-08-14T16:22:58Z'
 ---
 mParticle, an AppsFlyer integrated partner, collects customer data and sends it to different analytics, marketing, and data warehousing platforms.
 

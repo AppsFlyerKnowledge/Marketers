@@ -1,6 +1,26 @@
 ---
 title: "Get conversion data using AppsFlyer SDK–Retargeting"
 excerpt: "Learn how re-attributions and re-engagements reflect in the conversion data for SRNs and non-SRN user journeys."
+x-zendesk:
+  id: 4410481260817
+  url: https://support.appsflyer.com/hc/en-us/articles/4410481260817-Get-conversion-data-using-AppsFlyer-SDK-Retargeting
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Conversion data
+  section_id: 6551287787537
+  position: 4
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [Developers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-11-09T10:17:47Z'
+  edited_at: '2026-09-23T12:20:18Z'
 ---
 Learn how re-attributions and re-engagements reflect in the conversion data for SRNs and non-SRN user journeys.
 

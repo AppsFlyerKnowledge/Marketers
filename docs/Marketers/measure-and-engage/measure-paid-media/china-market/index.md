@@ -2,6 +2,17 @@
 title: "China market"
 excerpt: "Learn how to promote your Android and iOS apps in China from elsewhere in the world, including compliance with the Personal Information Protection Law (PIPL)."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6552042145425
+  url: https://support.appsflyer.com/hc/en-us/sections/6552042145425-China-market
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550990672401
+  position: 18
+  sorting: manual
+  created_at: '2022-06-02T12:06:53Z'
 ---
 Promote Android and iOS apps in China from elsewhere in the world
 

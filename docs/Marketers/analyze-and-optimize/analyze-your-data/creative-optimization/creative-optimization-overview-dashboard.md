@@ -1,6 +1,26 @@
 ---
 title: "Creative Optimization Overview dashboard"
 excerpt: "Analyze creative performance across multiple campaigns and channels to choose the most effective creatives and maximize campaign impact."
+x-zendesk:
+  id: 18565649486481
+  url: https://support.appsflyer.com/hc/en-us/articles/18565649486481-Creative-Optimization-Overview-dashboard
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Creative Optimization
+  section_id: 4419063475217
+  position: 2
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-omer-katzburg, Marketers, Creative Optimization]
+  labels: [Premium, Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2023-09-14T14:02:20Z'
+  edited_at: '2026-05-31T10:29:02Z'
 ---
 **At a glance:** Use the Creative Optimization Overview dashboard to analyze creative performance, so you can choose the most effective creatives and maximize the impact of your campaigns.
 

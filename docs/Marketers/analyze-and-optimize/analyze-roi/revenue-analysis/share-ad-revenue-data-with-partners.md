@@ -1,6 +1,26 @@
 ---
 title: "Share ad revenue data with partners"
 excerpt: "Allow user acquisition partners to receive ad revenue data from mediation networks to optimize their campaigns."
+x-zendesk:
+  id: 24100803679761
+  url: https://support.appsflyer.com/hc/en-us/articles/24100803679761-Share-ad-revenue-data-with-partners
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Revenue analysis
+  section_id: 6551069075089
+  position: 5
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-michael-talapov, Marketers, ROI360]
+  labels: [Premium, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-04-11T11:04:45Z'
+  edited_at: '2026-09-15T11:11:27Z'
 ---
 **At a glance:** Allow partners to receive ad revenue information from mediation networks so they can optimize their user acquisition (UA) campaigns. **Note**: This requires an ROI360 Advanced subscription.
 

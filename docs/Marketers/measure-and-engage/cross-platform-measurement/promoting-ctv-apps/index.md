@@ -2,6 +2,17 @@
 title: "Promoting CTV apps"
 excerpt: "Learn how to promote and measure attribution of your Connected TV (CTV) apps across major platforms like Roku, Amazon Fire TV, Samsung, and LG."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 15328952633489
+  url: https://support.appsflyer.com/hc/en-us/sections/15328952633489-Promoting-CTV-apps
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 15323134852497
+  position: 1
+  sorting: manual
+  created_at: '2023-05-15T13:12:48Z'
 ---
 How to promote and measure attribution of your CTV apps from anywhere
 

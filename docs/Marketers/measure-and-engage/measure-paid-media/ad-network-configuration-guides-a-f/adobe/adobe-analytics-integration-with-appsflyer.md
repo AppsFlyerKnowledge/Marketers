@@ -1,6 +1,26 @@
 ---
 title: "Adobe Analytics integration with AppsFlyer"
 excerpt: "Learn how to set up the two-way data flow between AppsFlyer and Adobe Analytics to automatically transfer attribution data."
+x-zendesk:
+  id: 115003326706
+  url: https://support.appsflyer.com/hc/en-us/articles/115003326706-Adobe-Analytics-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Adobe
+  section_id: 6551419728657
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Adobe Analytics, Integration, Advertisers, Developers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2017-07-05T07:20:10Z'
+  edited_at: '2026-09-22T08:30:33Z'
 ---
 **At a glance:** [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html) (formerly Omniture) is a set of tools for predictive and real-time analytics that can be integrated into third-party sources. It includes the Marketing Reports and Analytics (SiteCatalyst), Ad hoc analysis (Adobe Discover), and Insight applications to help create a holistic view of business activities by transforming customer interactions into insights.
 

@@ -1,6 +1,26 @@
 ---
 title: "ATT implications (iOS 14+) and deprecation of LAT"
 excerpt: "Starting iOS 14, iOS uses ATT to determine user privacy preferences and Limit ad tracking (LAT) is deprecated."
+x-zendesk:
+  id: 360014090597
+  url: https://support.appsflyer.com/hc/en-us/articles/360014090597-ATT-implications-iOS-14-and-deprecation-of-LAT
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: SKAN solution
+  section_id: 6552135379985
+  position: 7
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN), Ad Networks]
+  labels: [Advertisers, Ad Networks, Developers, Marketers, Localize, Loc In Prog]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-10-07T17:33:35Z'
+  edited_at: '2023-12-06T00:00:59Z'
 ---
 ### ATT values
 

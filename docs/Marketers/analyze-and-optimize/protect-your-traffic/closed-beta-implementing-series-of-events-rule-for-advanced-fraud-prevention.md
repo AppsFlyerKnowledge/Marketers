@@ -1,6 +1,26 @@
 ---
 title: "[Closed beta] Implementing Series of Events Rule for advanced fraud prevention"
 excerpt: "Learn how to set up and use the Series of Events validation rule to define expected user event sequences and block fraudulent traffic."
+x-zendesk:
+  id: 26596474431761
+  url: https://support.appsflyer.com/hc/en-us/articles/26596474431761--Closed-beta-Implementing-Series-of-Events-Rule-for-advanced-fraud-prevention
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Protect your traffic
+  section_id: 6551015912465
+  position: 4
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-yanai, Marketers, Protect360]
+  labels: [Marketers, Closed beta]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-07-10T09:41:19Z'
+  edited_at: '2026-09-28T07:49:15Z'
 ---
 Series of events in validation rules allows advertisers to define an event sequence a real user should go through. Any deviation from your defined order, or from the timing between events, is detected and blocked.
 

@@ -1,6 +1,26 @@
 ---
 title: "Get SKAN postback data from Google Ads"
 excerpt: "Enable Google to share the content of your SKAdNetwork (SKAN) app iOS postbacks with AppsFlyer."
+x-zendesk:
+  id: 4403215779857
+  url: https://support.appsflyer.com/hc/en-us/articles/4403215779857-Get-SKAN-postback-data-from-Google-Ads
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: SKAN interoperation
+  section_id: 6552115163153
+  position: 0
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
+  labels: [Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-06-28T19:34:39Z'
+  edited_at: '2026-09-08T07:01:05Z'
 ---
 **At a glance:** Enable Google to share the content of your SKAdNewtork (SKAN) app iOS postbacks with AppsFlyer.
 

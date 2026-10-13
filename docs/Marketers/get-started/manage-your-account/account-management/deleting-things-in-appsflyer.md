@@ -1,6 +1,26 @@
 ---
 title: "Deleting things in AppsFlyer"
 excerpt: "Learn how advertisers can remove apps to stop attribution, remove media sources, or delete user-related data."
+x-zendesk:
+  id: 360000603117
+  url: https://support.appsflyer.com/hc/en-us/articles/360000603117-Deleting-things-in-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Account management
+  section_id: 6551191075473
+  position: 5
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials]
+  labels: [Advertisers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2018-11-21T16:07:58Z'
+  edited_at: '2026-07-15T08:29:57Z'
 ---
 ![shutterstock_699498934.jpg](https://files.readme.io/db2cd79f6da6de42042707fb2c8bbfe450a6cdc17a93f7a9dc9ea27d04716ef3-34228068995857.jpg)
 

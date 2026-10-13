@@ -2,6 +2,26 @@
 title: "Bulletin: Meta ads app ownership verification"
 excerpt: "Meta ads requires all app owners to confirm ownership of Android and iOS mobile apps to run Mobile App Install campaigns and optimize ad delivery."
 table_of_contents: false
+x-zendesk:
+  id: 5410285239313
+  url: https://support.appsflyer.com/hc/en-us/articles/5410285239313-Bulletin-Meta-ads-app-ownership-verification
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 50
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Facebook, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-04-12T09:40:58Z'
+  edited_at: '2023-11-26T12:48:41Z'
 ---
 | **Bulletin date** | April 7, 2022 |
 | --- | --- |

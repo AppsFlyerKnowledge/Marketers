@@ -1,6 +1,26 @@
 ---
 title: "LINE Ads Platform campaign configuration"
 excerpt: "Learn how to set up and configure the LINE Ads Platform integration in AppsFlyer, including attribution links, in-app event mapping, and multi-account settings."
+x-zendesk:
+  id: 213050543
+  url: https://support.appsflyer.com/hc/en-us/articles/213050543-LINE-Ads-Platform-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (G-Q)
+  section_id: 6552006535953
+  position: 10
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Advertisers, LINE Ads, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-08-10T15:26:17Z'
+  edited_at: '2026-09-09T13:00:38Z'
 ---
 **At a glance:** LINE Ads Platform, an AppsFlyer integrated partner combines a bidding and customized targeting system. In addition to click-based mobile attribution, LINE Ads Platform also offers retargeting attribution, which you can record with AppsFlyer.
 

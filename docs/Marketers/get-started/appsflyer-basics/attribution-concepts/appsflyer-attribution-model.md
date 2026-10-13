@@ -1,6 +1,26 @@
 ---
 title: "AppsFlyer attribution model"
 excerpt: "Learn how AppsFlyer determines the media source motivating a user to install or re-engage with an app using its attribution model."
+x-zendesk:
+  id: 207447053
+  url: https://support.appsflyer.com/hc/en-us/articles/207447053-AppsFlyer-attribution-model
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Attribution concepts
+  section_id: 6551394235409
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-moran-davida, Marketers, Mobile Attribution, Ad Networks]
+  labels: [Attribution, NativeTrack, Look-Back, Twiiter, Multi-Channel, Re-Install, Facebook, media source, Advertisers, Ad Networks, reinstall, branch, attribution determination, Marketers, Loc Published]
+  promoted: true
+  comments_disabled: true
+  created_at: '2015-12-24T10:54:37Z'
+  edited_at: '2026-08-12T11:02:01Z'
 ---
 **At a glance:** AppsFlyer determines the media source motivating a user to install or re-engage with an app and attributes the user action to that source using the AppsFlyer attribution model.
 

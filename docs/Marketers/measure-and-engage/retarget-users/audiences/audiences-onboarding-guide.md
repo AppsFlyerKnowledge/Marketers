@@ -1,6 +1,26 @@
 ---
 title: "Audiences onboarding guide"
 excerpt: "Learn how to build, connect, and manage customized audience segments in AppsFlyer to optimize your user acquisition and remarketing campaigns."
+x-zendesk:
+  id: 27276077637649
+  url: https://support.appsflyer.com/hc/en-us/articles/27276077637649-Audiences-onboarding-guide
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Audiences
+  section_id: 6551336428945
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-neama-benhabib, Marketers, Audience Segmentation]
+  labels: [Premium, Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2024-08-05T11:44:00Z'
+  edited_at: '2024-12-09T09:29:35Z'
 ---
 Use AppsFlyer Audiences to build and connect customized audience segments to your partner networks for the most effective user acquisition and remarketing campaigns.
 

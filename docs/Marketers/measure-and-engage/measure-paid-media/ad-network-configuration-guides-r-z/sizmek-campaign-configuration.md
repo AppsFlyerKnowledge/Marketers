@@ -1,6 +1,26 @@
 ---
 title: "Sizmek campaign configuration"
 excerpt: "Configure Sizmek, an independent buy-side advertising platform and ad server, for mobile and view-through attribution with AppsFlyer."
+x-zendesk:
+  id: 115001605243
+  url: https://support.appsflyer.com/hc/en-us/articles/115001605243-Sizmek-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  position: 6
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Advertisers, Sizmek, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2017-03-30T12:40:13Z'
+  edited_at: '2026-07-23T13:08:11Z'
 ---
 Sizmek, an AppsFlyer ad network integrated partner, is an independent buy-side advertising platform and ad server. In addition to click-based mobile attribution, Sizmek offers view-through attribution, which can be recorded with AppsFlyer.
 

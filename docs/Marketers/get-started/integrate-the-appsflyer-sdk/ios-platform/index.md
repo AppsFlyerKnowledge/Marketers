@@ -2,6 +2,17 @@
 title: "iOS platform"
 excerpt: "Access iOS SDK release notes, Apple App Clips integration guides, and other iOS platform-related topics."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551263106577
+  url: https://support.appsflyer.com/hc/en-us/sections/6551263106577-iOS-platform
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6551164458257
+  position: 2
+  sorting: manual
+  created_at: '2022-06-02T11:34:00Z'
 ---
 iOS SDK release notes, Apple App Clips integration, and other iOS platform-related topics
 

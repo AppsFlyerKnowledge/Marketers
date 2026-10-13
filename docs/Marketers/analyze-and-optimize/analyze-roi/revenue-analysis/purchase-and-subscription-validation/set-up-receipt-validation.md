@@ -1,6 +1,26 @@
 ---
 title: "Set up receipt validation"
 excerpt: "Learn how to set up receipt validation to measure revenue from in-app purchases and subscriptions, and verify it with the App Store and Google Play."
+x-zendesk:
+  id: 42137474889489
+  url: https://support.appsflyer.com/hc/en-us/articles/42137474889489-Set-up-receipt-validation
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Purchase and subscription validation
+  section_id: 42227328788241
+  position: 2
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-michael-talapov, Marketers, ROI360]
+  labels: []
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-12-21T15:14:21Z'
+  edited_at: '2026-06-18T16:05:25Z'
 ---
 **At a glance:** Receipt validation measures revenue from in-app purchases and subscriptions, and verifies it with the app stores, ensuring accurate Return on Ad Spend (ROAS) results.
 

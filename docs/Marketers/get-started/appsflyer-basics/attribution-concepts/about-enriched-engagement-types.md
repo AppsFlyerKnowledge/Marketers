@@ -1,6 +1,26 @@
 ---
 title: "About Enriched Engagement Types"
 excerpt: "Enriched Engagement Types (EET) reflect users' full spectrum of engagement and intentionality when viewing or interacting with an ad, moving beyond simple view-through and click-through attribution."
+x-zendesk:
+  id: 21837486015889
+  url: https://support.appsflyer.com/hc/en-us/articles/21837486015889-About-Enriched-Engagement-Types
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Attribution concepts
+  section_id: 6551394235409
+  position: 2
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-moran-davida, Marketers, Mobile Attribution]
+  labels: [Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-01-21T13:45:23Z'
+  edited_at: '2026-07-09T14:27:40Z'
 ---
 While ad types have become sophisticated and complex, reporting has remained very narrow, focusing solely on view-through and click-through attribution. Enriched Engagement Types changes that by reflecting users' full spectrum of engagement and intentionality when viewing or interacting with an ad.
 

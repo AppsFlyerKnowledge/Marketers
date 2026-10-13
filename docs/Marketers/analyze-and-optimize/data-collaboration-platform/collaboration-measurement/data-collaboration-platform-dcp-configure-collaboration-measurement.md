@@ -1,6 +1,26 @@
 ---
 title: "Data Collaboration Platform (DCP) - Configure collaboration measurement"
 excerpt: "Learn how to configure the Data Collaboration Platform (DCP) to perform SKU-level attribution based on conversion, engagement, and campaign mapping data."
+x-zendesk:
+  id: 32147174933905
+  url: https://support.appsflyer.com/hc/en-us/articles/32147174933905-Data-Collaboration-Platform-DCP-Configure-collaboration-measurement
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Collaboration measurement
+  section_id: 38034865098641
+  position: 3
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-yael-sharabi, Marketers, Data Clean Room]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-01-27T09:58:46Z'
+  edited_at: '2026-03-05T00:01:07Z'
 ---
 At a glance: Learn how to configure DCP to perform SKU-level attribution based on the conversion, engagement, and campaign mapping data.
 

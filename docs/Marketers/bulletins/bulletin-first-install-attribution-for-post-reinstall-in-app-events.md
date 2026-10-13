@@ -2,6 +2,26 @@
 title: "Bulletin: First install attribution for post-reinstall in-app events"
 excerpt: "Learn about the enhancement that attributes post-reinstall in-app events and sessions to the original media source instead of labeling them organic unattributed."
 table_of_contents: false
+x-zendesk:
+  id: 25676426941457
+  url: https://support.appsflyer.com/hc/en-us/articles/25676426941457-Bulletin-First-install-attribution-for-post-reinstall-in-app-events
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 19
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-moran-davida, Marketers, Mobile Attribution]
+  labels: [Marketers, Loc Published]
+  promoted: false
+  comments_disabled: false
+  created_at: '2024-06-05T15:04:01Z'
+  edited_at: '2025-04-30T14:37:51Z'
 ---
 | **What's new** | This enhancement attributes all [in-app events](/docs/measure-reinstalls#inapp-events) and sessions following a re-engagements or a [re-attribution](/docs/measure-reinstalls#reattribution) to the original media source that drove it (’first install’) rather than labeling them ‘organic unattributed.’<br /><br />![Screenshot 2024-06-11 at 8.44.30.png](https://files.readme.io/42a96ec533d217ee4dadad71592023d1fd0c977557308638f3553660a95fc7b5-25827620446353.png) |
 | --- | --- |

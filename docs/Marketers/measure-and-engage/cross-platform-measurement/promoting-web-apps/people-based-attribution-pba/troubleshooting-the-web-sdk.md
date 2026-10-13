@@ -1,6 +1,26 @@
 ---
 title: "Troubleshooting the web SDK"
 excerpt: "A troubleshooting guide for AppsFlyer Web SDK added directly to your website or implemented via Google Tag Manager."
+x-zendesk:
+  id: 360002075858
+  url: https://support.appsflyer.com/hc/en-us/articles/360002075858-Troubleshooting-the-web-SDK
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: People Based Attribution (PBA)
+  section_id: 43560588808721
+  position: 10
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Web Attribution]
+  labels: [People Based Attribution, People Based Attribution SDK, Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-07-22T13:55:15Z'
+  edited_at: '2023-03-12T12:50:39Z'
 ---
 ## SDK added directly
 

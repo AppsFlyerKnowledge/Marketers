@@ -1,6 +1,26 @@
 ---
 title: "The Trade Desk campaign configuration"
 excerpt: "Learn how to set up and integrate The Trade Desk (TTD) with AppsFlyer to measure click-based and view-through mobile attribution, CTV campaigns, and retargeting."
+x-zendesk:
+  id: 360000894849
+  url: https://support.appsflyer.com/hc/en-us/articles/360000894849-The-Trade-Desk-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  position: 13
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Advertisers, The Trade Desk, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2018-05-13T07:34:13Z'
+  edited_at: '2026-09-14T09:46:11Z'
 ---
 **At a glance:** The Trade Desk, an AppsFlyer ad network integrated partner, uses its enhanced mobile advertising solution to cultivate strategic, scalable, and smart campaigns to meet the needs of cross-device users. The Trade Desk offers click-based mobile attribution, view-through mobile attribution, and click-based retargeting, all of which can be recorded through AppsFlyer.
 

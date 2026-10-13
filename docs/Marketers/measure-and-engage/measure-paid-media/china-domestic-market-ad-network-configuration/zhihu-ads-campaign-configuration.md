@@ -1,6 +1,26 @@
 ---
 title: "Zhihu Ads campaign configuration"
 excerpt: "Configure Zhihu Ads integration in AppsFlyer to attribute campaigns, set up postbacks, and manage partner permissions."
+x-zendesk:
+  id: 360001758338
+  url: https://support.appsflyer.com/hc/en-us/articles/360001758338-Zhihu-Ads-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: China domestic market ad network configuration
+  section_id: 6552066355601
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-06-05T06:05:50Z'
+  edited_at: '2026-09-15T10:38:21Z'
 ---
 **At a glance:** Zhihu Ads is an AppsFlyer ad network integrated partner.
 

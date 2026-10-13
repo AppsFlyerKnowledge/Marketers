@@ -1,6 +1,26 @@
 ---
 title: "Leanplum integration with AppsFlyer"
 excerpt: "Learn how to integrate Leanplum with AppsFlyer to send attribution data and postbacks for intelligent mobile marketing campaigns."
+x-zendesk:
+  id: 211487846
+  url: https://support.appsflyer.com/hc/en-us/articles/211487846-Leanplum-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 15
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
+  labels: [Leanplum, Advertisers, Ad Networks, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-08-08T13:41:18Z'
+  edited_at: '2026-06-16T09:59:12Z'
 ---
 **At a glance:** Leanplum, an AppsFlyer integrated partner, is a mobile marketing platform, designed for intelligent action. Its integrated solution delivers engagement across messaging and the in-app experience. Leanplum offers Messaging, Automation, App Editing, Personalization, A/B Testing, and Analytics.
 

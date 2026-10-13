@@ -1,6 +1,26 @@
 ---
 title: "InCost API for ad networks"
 excerpt: "InCost API, part of AppsFlyer ROI360, lets ad networks programmatically send advertising cost data to AppsFlyer to provide advertisers with aggregate cost data."
+x-zendesk:
+  id: 360007714957
+  url: https://support.appsflyer.com/hc/en-us/articles/360007714957-InCost-API-for-ad-networks
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Cost sharing for ad networks
+  section_id: 6551141756177
+  position: 2
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-maytav-avnat, Marketers, ROI360, Ad Networks]
+  labels: [Advertisers, Ad Networks, Partners, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-04-26T19:13:47Z'
+  edited_at: '2026-09-15T08:39:11Z'
 ---
 **At a glance:** InCost API, part of AppsFlyer ROI360, lets ad networks programmatically send advertising cost data to AppsFlyer. Doing so provides advertisers with aggregate cost data and lets them understand the true impact of your network.
 

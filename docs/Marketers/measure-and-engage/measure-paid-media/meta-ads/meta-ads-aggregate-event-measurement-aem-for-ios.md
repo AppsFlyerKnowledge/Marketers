@@ -1,6 +1,26 @@
 ---
 title: "Meta Ads—Aggregate Event Measurement (AEM) for iOS"
 excerpt: "Learn about the AEM solution for optimizing iOS conversions and in-app events and for attributing iOS re-engagements on Meta Ads."
+x-zendesk:
+  id: 19228737402129
+  url: https://support.appsflyer.com/hc/en-us/articles/19228737402129-Meta-Ads-Aggregate-Event-Measurement-AEM-for-iOS
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Meta ads
+  section_id: 6551109855761
+  position: 7
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution, Agencies]
+  labels: [Agencies, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-10-09T16:40:55Z'
+  edited_at: '2026-05-25T14:38:28Z'
 ---
 AppsFlyer supports the [Meta Ads Aggregated Event Measurement (AEM)](https://www.facebook.com/business/help/721422165168355) solution. This solution enables measuring web and app events for iOS 14+ devices using the following attribution methods:
 

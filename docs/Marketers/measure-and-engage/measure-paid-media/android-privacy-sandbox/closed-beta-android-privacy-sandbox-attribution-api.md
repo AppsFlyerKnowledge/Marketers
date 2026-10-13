@@ -1,6 +1,26 @@
 ---
 title: "[Closed beta] Android privacy sandbox - Attribution API"
 excerpt: "A privacy-preserving mechanism designed to measure the effectiveness of ad campaigns without relying on user identifiers."
+x-zendesk:
+  id: 25471654983825
+  url: https://support.appsflyer.com/hc/en-us/articles/25471654983825--Closed-beta-Android-privacy-sandbox-Attribution-API
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Android privacy sandbox
+  section_id: 25467093087761
+  position: 2
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roi-tamir, Marketers, Mobile Attribution, Ad Networks]
+  labels: [Advertisers, Ad Networks, Marketers, Loc In Prog, Android Privacy Sandbox, Closed beta]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-05-29T10:14:59Z'
+  edited_at: '2026-08-19T10:31:42Z'
 ---
 **At a glance:** A privacy-preserving mechanism designed to measure the effectiveness of ad campaigns without relying on user identifiers. Managed on-device, with last-touch attribution. No user data is exchanged between ad networks, which preserves user privacy.
 

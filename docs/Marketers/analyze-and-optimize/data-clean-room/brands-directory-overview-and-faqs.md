@@ -1,6 +1,26 @@
 ---
 title: "Brands Directory—Overview and FAQs"
 excerpt: "Learn about the AppsFlyer Brands Directory, an exclusive network connecting advertisers with Commerce Media Networks free of charge."
+x-zendesk:
+  id: 24853411853329
+  url: https://support.appsflyer.com/hc/en-us/articles/24853411853329-Brands-Directory-Overview-and-FAQs
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Data Clean Room
+  section_id: 4591191779217
+  position: 12
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-inbar-agassi, Marketers, Data Clean Room]
+  labels: [Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-05-07T09:27:31Z'
+  edited_at: '2024-05-12T07:07:03Z'
 ---
 The Brand Directory is an exclusive network of AppsFlyer advertisers receiving top priority on introductions to Commerce Media Networks (CMNs).
 

@@ -2,6 +2,26 @@
 title: "Bulletin: Retargeting support for CTV, PC, and console platforms"
 excerpt: "AppsFlyer now supports retargeting measurement, including re-engagement and re-attribution, for CTV, PC, and Console platforms."
 table_of_contents: false
+x-zendesk:
+  id: 48515925079313
+  url: https://support.appsflyer.com/hc/en-us/articles/48515925079313-Bulletin-Retargeting-support-for-CTV-PC-and-console-platforms
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roi-tamir, Marketers, CTV Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2026-07-07T14:08:17Z'
+  edited_at: '2026-08-12T08:37:22Z'
 ---
 | Section | Details |
 | --- | --- |

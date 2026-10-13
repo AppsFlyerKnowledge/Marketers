@@ -1,6 +1,26 @@
 ---
 title: "Enterprise-Grade Security Package"
 excerpt: "Enhance your account protection with the Enterprise-Grade Security Package, a premium offering designed for enterprise-grade identity management, token access control, and extended audit visibility."
+x-zendesk:
+  id: 34053592094737
+  url: https://support.appsflyer.com/hc/en-us/articles/34053592094737-Enterprise-Grade-Security-Package
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Account security
+  section_id: 6551173202065
+  position: 0
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2025-04-03T11:42:43Z'
+  edited_at: '2026-04-26T06:35:42Z'
 ---
 ## Intro
 

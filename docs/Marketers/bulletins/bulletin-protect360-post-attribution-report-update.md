@@ -2,6 +2,26 @@
 title: "Bulletin: Protect360 post-attribution report update"
 excerpt: "Protect360 post-attribution reports now display the valid contributor (media source) for hijacked installs and in-app events to assist with reconciliation."
 table_of_contents: false
+x-zendesk:
+  id: 360015900018
+  url: https://support.appsflyer.com/hc/en-us/articles/360015900018-Bulletin-Protect360-post-attribution-report-update
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 59
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-yanai, Marketers, Protect360]
+  labels: [Pull API, Advertisers, Protect360, Raw Data, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-11-25T11:39:55Z'
+  edited_at: '2023-10-26T17:09:11Z'
 ---
 | **What's new** | Protect360 post-attribution reports display the valid contributor (media source) for hijacked installs and in-app events. Meaning, the contributor that should have originally received attribution. |
 | --- | --- |

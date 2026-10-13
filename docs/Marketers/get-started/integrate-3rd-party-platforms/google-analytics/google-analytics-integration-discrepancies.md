@@ -1,6 +1,26 @@
 ---
 title: "Google Analytics integration—Discrepancies"
 excerpt: "Understand the discrepancies that might occur between AppsFlyer and Google Analytics, including time zone differences, session counts, and duplicate events."
+x-zendesk:
+  id: 4413026674833
+  url: https://support.appsflyer.com/hc/en-us/articles/4413026674833-Google-Analytics-integration-Discrepancies
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Google Analytics
+  section_id: 6551226043793
+  position: 3
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Analytics, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-12-07T13:38:17Z'
+  edited_at: '2026-08-09T14:24:20Z'
 ---
 **At a glance:** Understand the discrepancies that might occur between AppsFlyer and Google Analytics.
 

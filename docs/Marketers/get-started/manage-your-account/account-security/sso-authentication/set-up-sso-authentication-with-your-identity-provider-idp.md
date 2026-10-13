@@ -1,6 +1,26 @@
 ---
 title: "Set up SSO authentication with your identity provider (IdP)"
 excerpt: "Integrate AppsFlyer with your identity provider to enable single sign-on (SSO) for your account users."
+x-zendesk:
+  id: 360015017198
+  url: https://support.appsflyer.com/hc/en-us/articles/360015017198-Set-up-SSO-authentication-with-your-identity-provider-IdP
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: SSO authentication
+  section_id: 20162151531793
+  position: 0
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies, Ad Networks]
+  labels: [Agencies, Ad Networks, login security, SSO, SSO verification, SSO certificate, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-11-02T10:50:55Z'
+  edited_at: '2026-05-31T05:00:01Z'
 ---
 **At a glance:** By integrating AppsFlyer with your identity provider (IdP), AppsFlyer account users can log in to AppsFlyer using single sign-on (SSO). Learn how to set up SSO authentication, activate SSO, and optionally add exception users who can log in with an assigned alternative login method.
 

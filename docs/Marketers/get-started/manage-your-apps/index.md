@@ -2,6 +2,17 @@
 title: "Manage your apps"
 excerpt: "Learn how to define your apps in AppsFlyer, configure app settings, manage currencies and time zones, and transfer apps between accounts."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551015977105
+  url: https://support.appsflyer.com/hc/en-us/sections/6551015977105-Manage-your-apps
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550753145745
+  position: 2
+  sorting: manual
+  created_at: '2022-06-02T11:27:15Z'
 ---
 Define your apps in AppsFlyer and manage app settings
 

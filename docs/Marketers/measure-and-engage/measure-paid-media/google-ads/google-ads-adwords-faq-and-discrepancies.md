@@ -1,6 +1,26 @@
 ---
 title: "Google Ads (AdWords)—FAQ and discrepancies"
 excerpt: "Troubleshoot common issues, missing installs, in-app event sync, and data discrepancies between Google Ads and AppsFlyer."
+x-zendesk:
+  id: 4417303339921
+  url: https://support.appsflyer.com/hc/en-us/articles/4417303339921-Google-Ads-AdWords-FAQ-and-discrepancies
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Google Ads
+  section_id: 6551205645457
+  position: 5
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-01-20T10:06:31Z'
+  edited_at: '2026-03-16T16:54:16Z'
 ---
 Troubleshoot common issues and discrepancies relating to Google Ads.
 

@@ -2,6 +2,17 @@
 title: "SDK integration planning"
 excerpt: "A step-by-step guide for integrating the AppsFlyer SDK, covering everything from planning and basic setup to testing and FAQs."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551182964369
+  url: https://support.appsflyer.com/hc/en-us/sections/6551182964369-SDK-integration-planning
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6551164458257
+  position: 0
+  sorting: manual
+  created_at: '2022-06-02T11:31:41Z'
 ---
 Our step-by-step guide for integrating the SDK from planning to testing
 

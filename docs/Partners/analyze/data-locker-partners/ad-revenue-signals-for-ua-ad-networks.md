@@ -1,6 +1,26 @@
 ---
 title: "Ad revenue signals for UA ad networks"
 excerpt: "Ad networks responsible for user acquisition can receive ad revenue data via Data Locker to optimize their customers' UA campaigns and improve ROAS."
+x-zendesk:
+  id: 4402898251409
+  url: https://support.appsflyer.com/hc/en-us/articles/4402898251409-Ad-revenue-signals-for-UA-ad-networks
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Data Locker
+  section_id: 6551591547409
+  position: 3
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-michael-talapov, ROI360, Ad Networks]
+  labels: [Ad Network, Partner, ad revenue, Data Locker, Ad Networks, Partners]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-06-21T13:39:13Z'
+  edited_at: '2026-05-14T15:36:34Z'
 ---
 **At a glance:** Ad networks responsible for user acquisition can receive data regarding ad revenue and use it to optimize their customers' UA campaigns.
 

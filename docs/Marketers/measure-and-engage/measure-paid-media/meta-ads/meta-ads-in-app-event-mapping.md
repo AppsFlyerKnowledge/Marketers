@@ -1,6 +1,26 @@
 ---
 title: "Meta ads in-app event mapping"
 excerpt: "Send your app's rich in-app events from AppsFlyer to Meta ads to utilize advanced optimization and build Custom and Lookalike Audience segments."
+x-zendesk:
+  id: 4410480904081
+  url: https://support.appsflyer.com/hc/en-us/articles/4410480904081-Meta-ads-in-app-event-mapping
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Meta ads
+  section_id: 6551109855761
+  position: 4
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Facebook, Advertisers, facebook, Localize]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-11-09T09:57:19Z'
+  edited_at: '2026-09-10T11:15:42Z'
 ---
 **At a glance:** Send your app's rich in-app events from AppsFlyer to Meta ads.
 

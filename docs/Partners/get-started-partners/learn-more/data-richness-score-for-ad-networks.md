@@ -1,6 +1,26 @@
 ---
 title: "Data richness score for ad networks"
 excerpt: "Learn how the AppsFlyer data richness score measures the quality and completeness of ad network campaign data to help advertisers make better marketing decisions."
+x-zendesk:
+  id: 360009443338
+  url: https://support.appsflyer.com/hc/en-us/articles/360009443338-Data-richness-score-for-ad-networks
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Learn more
+  section_id: 6551121200017
+  position: 6
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Mobile Attribution, Ad Networks]
+  labels: [Ad Networks, Partners, attribution link, data richness score]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-06-03T09:27:03Z'
+  edited_at: '2023-05-14T14:09:19Z'
 ---
 > 👍 At a glance
 >

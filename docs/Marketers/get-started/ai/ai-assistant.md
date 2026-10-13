@@ -1,6 +1,26 @@
 ---
 title: "AI Assistant"
 excerpt: "The AI Assistant is your virtual analyst and platform knowledge helper in AppsFlyer, designed to help you uncover performance insights and understand your marketing data."
+x-zendesk:
+  id: 38423389662609
+  url: https://support.appsflyer.com/hc/en-us/articles/38423389662609-AI-Assistant
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: AI
+  section_id: 36348470056081
+  position: 0
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-eden-locker, AI Assistant, Marketers]
+  labels: [Advertisers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2025-08-26T08:30:32Z'
+  edited_at: '2026-10-04T07:37:17Z'
 ---
 The AI Assistant is your virtual analyst and platform knowledge helper in AppsFlyer. Use it to uncover insights, measure performance, identify top and low performers, explore campaign trends, and understand visual insights like tables and charts, either by asking questions directly in the AI Assistant or by using Analyze with AI from My Dashboards to investigate specific charts in context.
 

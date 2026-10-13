@@ -1,6 +1,26 @@
 ---
 title: "Data collaboration platform (DCP) - Prepare collaboration measurement"
 excerpt: "Learn how to create measurement data sources and provide access to them for the attribution job in the Data Collaboration Platform."
+x-zendesk:
+  id: 32144170371985
+  url: https://support.appsflyer.com/hc/en-us/articles/32144170371985-Data-collaboration-platform-DCP-Prepare-collaboration-measurement
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Collaboration measurement
+  section_id: 38034865098641
+  position: 2
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-yael-sharabi, Marketers, Data Management]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-01-27T08:47:05Z'
+  edited_at: '2026-06-22T07:25:10Z'
 ---
 The first step in setting up the measurement process is to prepare the three inputs that feed it: conversions, engagements, and campaign mapping. These inputs must be prepared based on the predefined schema or event structure, depending on the data provision mode: in-app events or custom source files.
 

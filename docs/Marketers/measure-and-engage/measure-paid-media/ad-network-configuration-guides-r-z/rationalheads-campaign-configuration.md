@@ -1,6 +1,26 @@
 ---
 title: "RationalHeads campaign configuration"
 excerpt: "Configure the integration, attribution links, and permissions for RationalHeads in AppsFlyer."
+x-zendesk:
+  id: 208277926
+  url: https://support.appsflyer.com/hc/en-us/articles/208277926-RationalHeads-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  position: 1
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [rationalheads, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-04-04T15:30:57Z'
+  edited_at: '2026-07-27T09:43:16Z'
 ---
 At a glance: Remerge, an AppsFlyer ad network integrated partner, enables app-marketers to deliver better-placed, customized advertisements. In addition to click-based mobile attribution, Remerge offers view-through mobile attribution and click-based retargeting, which can be recorded with AppsFlyer.
 

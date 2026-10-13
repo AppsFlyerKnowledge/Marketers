@@ -1,6 +1,26 @@
 ---
 title: "TikTok for Business—Advanced SRN integration setup"
 excerpt: "Learn how to set up the advanced Self-Reporting Network (SRN) integration with TikTok for Business to measure click and view-based mobile attribution."
+x-zendesk:
+  id: 6722785184913
+  url: https://support.appsflyer.com/hc/en-us/articles/6722785184913-TikTok-for-Business-Advanced-SRN-integration-setup
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: TikTok for Business
+  section_id: 12192554266385
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-06-09T16:49:57Z'
+  edited_at: '2026-09-09T10:24:24Z'
 ---
 TikTok for Business (tiktokglobal_int) is an advanced Self-Reporting Network (SRN) providing app owners the ability to measure click and view-based mobile attribution with AppsFlyer. This includes app installs coming from app and non-mobile TikTok campaigns.
 

@@ -1,6 +1,26 @@
 ---
 title: "Native PC integration with AppsFlyer"
 excerpt: "Integrate your PC game or app with AppsFlyer to receive attribution and event data for your PC campaigns."
+x-zendesk:
+  id: 16308237781649
+  url: https://support.appsflyer.com/hc/en-us/articles/16308237781649-Native-PC-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Promoting Desktop apps
+  section_id: 15329004312593
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-roi-tamir, Marketers, PC & Console Attribution]
+  labels: [Marketers, Localize, Loc In Prog]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-06-20T05:52:13Z'
+  edited_at: '2026-10-05T06:59:57Z'
 ---
 **At a glance:** Integrate your PC game or app with AppsFlyer to receive attribution and event data for your PC campaigns. The Native PC integration supports attribution and in-app event recording for PC apps (in other words, attribution and recording on a user's PC).
 

@@ -1,6 +1,26 @@
 ---
 title: "Master API—user acquisition metrics via API"
 excerpt: "Get selected LTV, activity, retention, cohort, and Protect360 campaign performance KPIs by API, in CSV or JSON format."
+x-zendesk:
+  id: 213223166
+  url: https://support.appsflyer.com/hc/en-us/articles/213223166-Master-API-user-acquisition-metrics-via-API
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Analytics and aggregate reporting/APIs
+  section_id: 6550976670225
+  position: 7
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
+  labels: [Master API, Customizable, Aggregated Data, Advertisers, Developers, Premium, Marketers, Loc In Prog, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-09-27T15:10:38Z'
+  edited_at: '2026-03-18T09:00:26Z'
 ---
 **At a glance:** Get selected LTV, activity, retention, cohort, and Protect360 campaign performance KPIs by API, in CSV or JSON format. Select 1 or more apps.
 

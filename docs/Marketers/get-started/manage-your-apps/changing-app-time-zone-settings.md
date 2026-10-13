@@ -1,6 +1,26 @@
 ---
 title: "Changing app time-zone settings"
 excerpt: "Learn how to set or change an app-specific time zone in AppsFlyer to align your data reporting with your local time zone or advertising partners."
+x-zendesk:
+  id: 115000306786
+  url: https://support.appsflyer.com/hc/en-us/articles/115000306786-Changing-app-time-zone-settings
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Manage your apps
+  section_id: 6551015977105
+  position: 2
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials]
+  labels: [Time Zone, Existing Apps, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2017-01-12T15:33:00Z'
+  edited_at: '2025-09-17T10:16:51Z'
 ---
 **At a glance:** Set or change an app-specific time zone in order to view the app's data more closely aligned with your time zone or that of your advertising partners. Understand the effect of time zone changes on the reporting of data within the AppsFlyer platform.
 

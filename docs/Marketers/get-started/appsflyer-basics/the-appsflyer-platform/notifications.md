@@ -1,6 +1,26 @@
 ---
 title: "Notifications"
 excerpt: "Manage critical AppsFlyer account notifications and configure your preferences from the platform."
+x-zendesk:
+  id: 33732395637905
+  url: https://support.appsflyer.com/hc/en-us/articles/33732395637905-Notifications
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: The AppsFlyer platform
+  section_id: 6551361489297
+  position: 0
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials]
+  labels: [Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2025-03-24T10:10:37Z'
+  edited_at: '2026-01-25T14:51:04Z'
 ---
 **At a glance:** Manage critical AppsFlyer account notifications from the platform.
 

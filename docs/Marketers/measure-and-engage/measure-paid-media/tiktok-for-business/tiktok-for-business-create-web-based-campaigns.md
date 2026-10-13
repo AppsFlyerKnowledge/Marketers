@@ -1,6 +1,26 @@
 ---
 title: "TikTok for Business—Create web-based campaigns"
 excerpt: "Learn how to set up TikTok Ads Web campaigns to attribute web-to-app conversions from TikTok Ads directly through the Events API."
+x-zendesk:
+  id: 40496161157521
+  url: https://support.appsflyer.com/hc/en-us/articles/40496161157521-TikTok-for-Business-Create-web-based-campaigns
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: TikTok for Business
+  section_id: 12192554266385
+  position: 2
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: []
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-10-31T12:09:51Z'
+  edited_at: '2026-09-15T10:58:44Z'
 ---
 **At a glance:** Use TikTok Ads Web campaigns to attribute web-to-app conversions from TikTok Ads
 

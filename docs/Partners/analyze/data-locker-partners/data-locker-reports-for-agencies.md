@@ -1,6 +1,26 @@
 ---
 title: "Data Locker reports for agencies"
 excerpt: "Learn about the Data Locker reports available to agencies and the specific permissions advertisers must grant to share this data."
+x-zendesk:
+  id: 4543231254417
+  url: https://support.appsflyer.com/hc/en-us/articles/4543231254417-Data-Locker-reports-for-agencies
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Data Locker
+  section_id: 6551591547409
+  position: 2
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-rona-einat, Data Locker, Agencies]
+  labels: [Agencies, Partners]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-03-02T09:16:03Z'
+  edited_at: '2024-01-04T12:33:41Z'
 ---
 **At a glance**: Reports listed in this article are available to you (agencies) in your Data Locker. Before we can share the data with you, the advertiser (app owner) must grant you data access as detailed in this article.
 

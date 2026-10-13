@@ -1,6 +1,26 @@
 ---
 title: "ROI360 guide - cost and revenue data"
 excerpt: "Get a complete picture of your return on ad spend and return on investment with ROI360's suite of cost and revenue reporting tools."
+x-zendesk:
+  id: 10515748254609
+  url: https://support.appsflyer.com/hc/en-us/articles/10515748254609-ROI360-guide-cost-and-revenue-data
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Overview
+  section_id: 15173289016593
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-michael-talapov, Marketers, ROI360]
+  labels: [cost, Advertisers, Premium, Marketers, revenue, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-11-10T13:52:03Z'
+  edited_at: '2026-01-14T14:48:46Z'
 ---
 **At a glance**: Get cost and revenue data to understand your total ROI and ROAS.
 

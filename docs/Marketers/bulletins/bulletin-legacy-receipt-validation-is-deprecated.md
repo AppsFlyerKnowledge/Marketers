@@ -1,6 +1,26 @@
 ---
 title: "Bulletin: Legacy Receipt validation is deprecated"
 excerpt: "AppsFlyer is sunsetting its legacy Receipt validation backend service on September 7, 2026, requiring apps to migrate to either the new Receipt validation or ROI360 Store Revenue."
+x-zendesk:
+  id: 42133487071121
+  url: https://support.appsflyer.com/hc/en-us/articles/42133487071121-Bulletin-Legacy-Receipt-validation-is-deprecated
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-michael-talapov, Marketers, ROI360]
+  labels: []
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-12-21T11:33:45Z'
+  edited_at: '2026-06-23T07:35:42Z'
 ---
 On September 7, 2026, AppsFlyer will stop supporting the legacy Receipt validation backend service. Starting from this date, any app calling the legacy `validateAndLogInAppPurchase` method, regardless of SDK version, will receive no validation response, and `af_purchase` events validated and logged by that method will no longer be recorded in AppsFlyer.
 

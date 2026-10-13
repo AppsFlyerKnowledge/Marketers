@@ -1,6 +1,26 @@
 ---
 title: "Bidease campaign configuration"
 excerpt: "Learn how to configure and set up the AppsFlyer integration with Bidease, a fully transparent DSP for mobile marketers."
+x-zendesk:
+  id: 20106343354129
+  url: https://support.appsflyer.com/hc/en-us/articles/20106343354129-Bidease-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  position: 15
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-11-13T13:17:18Z'
+  edited_at: '2026-09-09T12:48:03Z'
 ---
 Bidease (bidease_int), an AppsFlyer integrated partner, is a fully transparent DSP for mobile marketers. Using proprietary programmatic advertising technology, machine learning, and first-party data, Bidease optimizes campaigns across all major mobile formats for desired post-install behaviors at no risk to their clients.
 

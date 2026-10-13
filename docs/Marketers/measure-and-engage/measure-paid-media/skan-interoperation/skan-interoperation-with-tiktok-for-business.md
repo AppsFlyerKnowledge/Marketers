@@ -1,6 +1,26 @@
 ---
 title: "SKAN interoperation with TikTok for Business"
 excerpt: "Learn how to configure SKAN interoperability between AppsFlyer and TikTok for Business to share conversion value mappings and optimize your iOS 14 campaigns."
+x-zendesk:
+  id: 360018499098
+  url: https://support.appsflyer.com/hc/en-us/articles/360018499098-SKAN-interoperation-with-TikTok-for-Business
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: SKAN interoperation
+  section_id: 6552115163153
+  position: 3
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
+  labels: [Advertisers, ios14, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-03-14T12:05:58Z'
+  edited_at: '2026-06-03T07:48:26Z'
 ---
 **At a glance:** SKAN interoperability enables TikTok to share SKAN postbacks with AppsFlyer and enables AppsFlyer to share your conversion value measurement mapping with TikTok.
 

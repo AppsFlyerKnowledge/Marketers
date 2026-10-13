@@ -2,6 +2,17 @@
 title: "Purchase and subscription validation"
 excerpt: "An overview of guides and setup instructions for validating purchases, subscriptions, and ROI360 store revenue."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 42227328788241
+  url: https://support.appsflyer.com/hc/en-us/sections/42227328788241-Purchase-and-subscription-validation
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6551069075089
+  position: 0
+  sorting: manual
+  created_at: '2025-12-24T10:40:25Z'
 ---
 This section covers purchase and subscription validation, including receipt validation and ROI360 store revenue setup.
 

@@ -1,6 +1,26 @@
 ---
 title: "Recommended healthcare app events"
 excerpt: "Measure the quality of your users throughout their user journey by recording these sample in-app events for your healthcare app."
+x-zendesk:
+  id: 360019888518
+  url: https://support.appsflyer.com/hc/en-us/articles/360019888518-Recommended-healthcare-app-events
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: In-app events
+  section_id: 6551285343761
+  position: 18
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [Advertisers, Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-05-01T10:41:05Z'
+  edited_at: '2023-12-04T11:47:58Z'
 ---
 ## ![Healthcare](https://files.readme.io/bb4bb46d842d1f2d08da548724e7d69910b0a050302fcdbd1500a8ebef325516-20659200427281.png) Healthcare
 

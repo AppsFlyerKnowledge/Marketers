@@ -1,6 +1,26 @@
 ---
 title: "Cohort and retention dashboard"
 excerpt: "The Cohort and retention dashboard groups app users by acquisition date to perform performance analysis across user life cycles."
+x-zendesk:
+  id: 207040496
+  url: https://support.appsflyer.com/hc/en-us/articles/207040496-Cohort-and-retention-dashboard
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Dashboards
+  section_id: 6550925337873
+  position: 5
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
+  labels: [Cohort, Cohort Report, Advertisers, Marketers, Loc In Prog]
+  promoted: false
+  comments_disabled: true
+  created_at: '2015-12-24T10:20:01Z'
+  edited_at: '2026-06-03T07:45:58Z'
 ---
 **At a glance:** The Cohort and retention dashboard (also referred to as simply "Cohort") groups app users by acquisition date. Perform performance analysis across user life cycles (LTV). Use the dashboard to gain insights as to how campaign differences alter campaign metrics.
 

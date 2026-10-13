@@ -2,6 +2,26 @@
 title: "Bulletin: Event, Overview, and Activity dashboards deprecation"
 excerpt: "The legacy Events, Overview, and Activity dashboards are being deprecated and replaced by My Dashboards, with full deprecation taking effect on June 30, 2026."
 table_of_contents: false
+x-zendesk:
+  id: 46643660055057
+  url: https://support.appsflyer.com/hc/en-us/articles/46643660055057-Bulletin-Event-Overview-and-Activity-dashboards-deprecation
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 0
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
+  labels: []
+  promoted: false
+  comments_disabled: true
+  created_at: '2026-05-13T08:08:40Z'
+  edited_at: '2026-05-18T10:12:03Z'
 ---
 | **What’s new?** | The **Events**, **Overview**, and **Activity** dashboards are getting deprecated as part of the transition to **My Dashboards** as the main analytics experience.<br /><br />After **June 30, 2026**, these legacy dashboards will no longer be accessible. The same data is available in My Dashboards, with enhanced analytics capabilities, flexible views, custom metrics, advanced filters, and shared or private dashboards. |
 | --- | --- |

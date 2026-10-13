@@ -1,6 +1,26 @@
 ---
 title: "Nintendo Switch integration with AppsFlyer"
 excerpt: "Integrate your Nintendo Switch game or app with AppsFlyer to receive attribution and event data for your Nintendo Switch campaigns."
+x-zendesk:
+  id: 14988397864593
+  url: https://support.appsflyer.com/hc/en-us/articles/14988397864593-Nintendo-Switch-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Promoting Console apps
+  section_id: 15329052471057
+  position: 11
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roi-tamir, Marketers, PC & Console Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2023-05-02T10:50:43Z'
+  edited_at: '2024-02-08T00:01:01Z'
 ---
 ## About Nintendo Switch attribution
 

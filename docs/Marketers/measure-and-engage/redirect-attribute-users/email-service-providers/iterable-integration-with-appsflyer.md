@@ -1,6 +1,26 @@
 ---
 title: "Iterable integration with AppsFlyer"
 excerpt: "Integrate OneLink-based attribution links with Iterable to enable deep linking from emails while preserving click recording functionality."
+x-zendesk:
+  id: 360002522337
+  url: https://support.appsflyer.com/hc/en-us/articles/360002522337-Iterable-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Email service providers
+  section_id: 6551247620881
+  position: 5
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-asaf-mashiah, Marketers, OneLink]
+  labels: [OneLink, Advertisers, ESP, Developers, Iterable, Deep Likning, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-09-16T13:14:19Z'
+  edited_at: '2026-08-14T16:22:46Z'
 ---
 Integrate OneLink-based attribution links with Iterable system to [deep link from emails](/docs/email-service-provider-esp-integration-guide). The integration utilizes Iterable’s support for Universal Links on top of branded click recording domains.
 

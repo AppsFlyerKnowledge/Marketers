@@ -2,6 +2,26 @@
 title: Adobe ESP integration with AppsFlyer
 hidden: false
 deprecated: false
+x-zendesk:
+  id: 51170889016977
+  url: https://support.appsflyer.com/hc/en-us/articles/51170889016977-Adobe-ESP-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Email service providers
+  section_id: 6551247620881
+  position: 2
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: []
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2026-09-23T06:43:55Z'
+  edited_at: '2026-09-23T10:35:28Z'
 ---
 Set up an Adobe ESP integration with AppsFlyer to enable seamless and secure deep linking in your email campaigns for better user engagement and conversion rates.
 

@@ -1,6 +1,26 @@
 ---
 title: "Bulletin: Link tracking Privacy (LTP) is coming with iOS17"
 excerpt: "An overview of how Apple's Link Tracking Privacy (LTP) in iOS17 affects AppsFlyer parameters, redirection, deep linking, and web-to-app flows."
+x-zendesk:
+  id: 18730398273553
+  url: https://support.appsflyer.com/hc/en-us/articles/18730398273553-Bulletin-Link-tracking-Privacy-LTP-is-coming-with-iOS17
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 32
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-asaf-mashiah, Marketers, Smart Banners and Scripts]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2023-09-21T08:37:39Z'
+  edited_at: '2023-09-21T12:11:54Z'
 ---
 iOS17 will detect and remove parameters identified as tracking parameters from links users share in built-in applications: Mail, Messages, and Safari's Private Browsing mode.
 

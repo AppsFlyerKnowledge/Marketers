@@ -1,6 +1,26 @@
 ---
 title: "Recreating classic reports in advanced reports"
 excerpt: "Learn how to migrate from classic Data Locker raw reports to Advanced Reports by applying the exact filter selections that reproduce each classic report."
+x-zendesk:
+  id: 47741416390161
+  url: https://support.appsflyer.com/hc/en-us/articles/47741416390161-Recreating-classic-reports-in-advanced-reports
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Data Locker
+  section_id: 6550945728657
+  position: 3
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-rona-einat, Marketers, Data Locker]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2026-06-15T08:16:54Z'
+  edited_at: '2026-06-23T11:05:18Z'
 ---
 > 📘 At a glance
 >

@@ -2,6 +2,26 @@
 title: "Bulletin: SKAN 4 support in AppsFlyer"
 excerpt: "An overview of AppsFlyer's support for SKAN 4, including required SDK updates, prerequisites, and changes to dashboards and reports."
 table_of_contents: false
+x-zendesk:
+  id: 11938810583825
+  url: https://support.appsflyer.com/hc/en-us/articles/11938810583825-Bulletin-SKAN-4-support-in-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 37
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
+  labels: [iOS, Marketers, SKAN]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-01-05T12:36:02Z'
+  edited_at: '2023-08-20T06:59:16Z'
 ---
 | | |
 | --- | --- |

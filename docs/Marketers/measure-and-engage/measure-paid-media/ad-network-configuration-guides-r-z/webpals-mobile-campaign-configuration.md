@@ -1,6 +1,26 @@
 ---
 title: "Webpals Mobile campaign configuration"
 excerpt: "Learn how to configure your mobile user acquisition and revenue campaigns with Webpals Mobile in AppsFlyer."
+x-zendesk:
+  id: 211395903
+  url: https://support.appsflyer.com/hc/en-us/articles/211395903-Webpals-Mobile-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  position: 22
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [ClicksMob, Advertisers, Webpals mobile, Webpals, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-06-27T13:49:23Z'
+  edited_at: '2026-09-09T12:32:54Z'
 ---
 Webpals Mobile, an AppsFlyer ad network integrated partner with global coverage, is a leader in mobile user acquisition and revenue maximization.
 

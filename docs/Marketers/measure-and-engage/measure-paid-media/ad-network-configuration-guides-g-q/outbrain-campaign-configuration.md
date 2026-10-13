@@ -1,6 +1,26 @@
 ---
 title: "Outbrain campaign configuration"
 excerpt: "Learn how to set up and configure AppsFlyer's integration with Outbrain to support click attribution for your campaigns."
+x-zendesk:
+  id: 115003981026
+  url: https://support.appsflyer.com/hc/en-us/articles/115003981026-Outbrain-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (G-Q)
+  section_id: 6552006535953
+  position: 19
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Advertisers, Outbrain, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2017-08-09T13:26:55Z'
+  edited_at: '2026-06-16T09:33:37Z'
 ---
 **At a glance:** Outbrain, an AppsFlyer integrated partner, is a premium discovery platform that helps connect marketers to their target audience through personalized recommendations on the world's leading publishers.
 

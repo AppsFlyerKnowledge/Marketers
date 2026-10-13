@@ -1,6 +1,26 @@
 ---
 title: "Protect360 reports for ad networks"
 excerpt: "Ad networks responsible for user acquisition and retargeting can receive data regarding blocked clicks and impressions."
+x-zendesk:
+  id: 4420246395793
+  url: https://support.appsflyer.com/hc/en-us/articles/4420246395793-Protect360-reports-for-ad-networks
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Rejected traffic
+  section_id: 6551666000273
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-yanai, Protect360, Ad Networks]
+  labels: [Ad Networks, Partners]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-02-08T14:53:48Z'
+  edited_at: '2023-03-12T12:50:25Z'
 ---
 ## Protect360 reports for ad networks
 

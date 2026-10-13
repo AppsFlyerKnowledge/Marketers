@@ -1,6 +1,26 @@
 ---
 title: "CTV, PC, and console platform direct attribution links"
 excerpt: "Learn about the AppsFlyer attribution link structure and parameters for CTV, PC, and console platforms."
+x-zendesk:
+  id: 15199908310801
+  url: https://support.appsflyer.com/hc/en-us/articles/15199908310801-CTV-PC-and-console-platform-direct-attribution-links
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Overview
+  section_id: 15323084579345
+  position: 2
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roi-tamir, Marketers, CTV Attribution]
+  labels: [Advertiser, Marketers, Loc In Prog]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-05-10T10:21:14Z'
+  edited_at: '2026-01-05T17:09:17Z'
 ---
 > 📘 Note
 >

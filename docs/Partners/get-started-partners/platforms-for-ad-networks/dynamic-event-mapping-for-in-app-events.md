@@ -1,6 +1,26 @@
 ---
 title: "Dynamic event mapping for in-app events"
 excerpt: "Learn how to configure your attribution links so partners can receive different postbacks for a single in-app event based on Goal IDs."
+x-zendesk:
+  id: 208996726
+  url: https://support.appsflyer.com/hc/en-us/articles/208996726-Dynamic-event-mapping-for-in-app-events
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Platforms for ad networks
+  section_id: 6551055575185
+  position: 10
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Mobile Attribution, Ad Networks]
+  labels: [In-App, Mapping, Dynamic Event Mapping, Ad Networks, Partners]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-05-26T08:48:23Z'
+  edited_at: '2023-05-14T14:09:20Z'
 ---
 **At a glance:** Set up your attribution link so that your partners (such as TUNE or CAKE) can receive different postbacks for a single in-app event, based on Goal IDs.
 

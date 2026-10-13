@@ -1,6 +1,26 @@
 ---
 title: "Set up ROI360 cost API to measure cost data"
 excerpt: "Learn how to set up and manage ROI360 Cost API integrations at both the app and account levels to measure aggregate marketing cost data."
+x-zendesk:
+  id: 360008850257
+  url: https://support.appsflyer.com/hc/en-us/articles/360008850257-Set-up-ROI360-cost-API-to-measure-cost-data
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Cost aggregation
+  section_id: 6551029483281
+  position: 1
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-maytav-avnat, Marketers, Agencies, ROI360]
+  labels: [ROI, cost, Advertisers, Agencies, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-05-19T12:50:13Z'
+  edited_at: '2026-09-15T11:18:49Z'
 ---
 Get aggregate marketing cost data (including cost-related LTV (Lifetime Value) performance metrics) using Cost API at the app or media source account level.
 

@@ -2,6 +2,26 @@
 title: "Bulletin: Changes in agency transparency"
 excerpt: "An overview of AppsFlyer's update permanently enabling the app-level agency transparency toggle by default starting August 14, 2023."
 table_of_contents: false
+x-zendesk:
+  id: 16065571938961
+  url: https://support.appsflyer.com/hc/en-us/articles/16065571938961-Bulletin-Changes-in-agency-transparency
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 35
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies]
+  labels: [Partner, partner account, Agencies, Partners, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-06-11T12:30:46Z'
+  edited_at: '2023-12-28T12:16:47Z'
 ---
 | | |
 | --- | --- |

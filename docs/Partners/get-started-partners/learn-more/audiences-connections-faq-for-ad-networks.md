@@ -1,6 +1,26 @@
 ---
 title: "Audiences—Connections FAQ for ad networks"
 excerpt: "Find answers to frequently asked questions about AppsFlyer Audiences partner connections for ad networks."
+x-zendesk:
+  id: 20459388348305
+  url: https://support.appsflyer.com/hc/en-us/articles/20459388348305-Audiences-Connections-FAQ-for-ad-networks
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Learn more
+  section_id: 6551121200017
+  position: 4
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-neama-benhabib, Marketers, Audience Segmentation, Ad Networks]
+  labels: [Advertisers, Ad Networks, Partners]
+  promoted: false
+  comments_disabled: false
+  created_at: '2023-11-27T08:25:39Z'
+  edited_at: '2024-12-29T08:45:34Z'
 ---
 Are you an ad network? Find answers to frequently asked questions about Audiences partner connections.
 

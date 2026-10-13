@@ -1,6 +1,26 @@
 ---
 title: "Privacy-preserving campaign measurement"
 excerpt: "Learn how AppsFlyer measures campaign performance and attribution when advertiser IDs are unavailable using privacy-preserving methods."
+x-zendesk:
+  id: 20489739742609
+  url: https://support.appsflyer.com/hc/en-us/articles/20489739742609-Privacy-preserving-campaign-measurement
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Attribution scenarios
+  section_id: 6551328497041
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-moran-davida, Marketers, Mobile Attribution, Agencies, Ad Networks]
+  labels: [Agencies, Ad Networks, Marketers, Loc In Prog]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-11-28T07:10:15Z'
+  edited_at: '2026-04-19T12:18:41Z'
 ---
 ## Overview
 

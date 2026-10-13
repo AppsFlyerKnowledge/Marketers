@@ -1,6 +1,26 @@
 ---
 title: "Testing the SDK integration for marketers"
 excerpt: "Learn how to test your Android, iOS, and CTV app integrations with AppsFlyer using the SDK Integration Tests page or attribution links."
+x-zendesk:
+  id: 360001559405
+  url: https://support.appsflyer.com/hc/en-us/articles/360001559405-Testing-the-SDK-integration-for-marketers
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: SDK integration planning
+  section_id: 6551182964369
+  position: 4
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [Testing, SDK, Advertisers, Debug, Debugging, redirects test, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2018-11-12T14:15:08Z'
+  edited_at: '2026-08-13T12:49:29Z'
 ---
 Test your Android or iOS app integration with AppsFlyer.
 

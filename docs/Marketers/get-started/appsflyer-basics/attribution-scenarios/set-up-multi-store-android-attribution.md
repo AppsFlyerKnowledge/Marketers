@@ -1,6 +1,26 @@
 ---
 title: "Set up multi-store Android attribution"
 excerpt: "Learn how to attribute your apps across multiple Android stores and view the data in a single dashboard or in separate dashboards per store."
+x-zendesk:
+  id: 207447023
+  url: https://support.appsflyer.com/hc/en-us/articles/207447023-Set-up-multi-store-Android-attribution
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Attribution scenarios
+  section_id: 6551328497041
+  position: 1
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-moran-davida, Marketers, Mobile Attribution, Agencies]
+  labels: [Android, Google, Google Play, Add App, amazon, Advertisers, Agencies, baidu, Developers, Marketers]
+  promoted: true
+  comments_disabled: true
+  created_at: '2015-12-24T10:48:17Z'
+  edited_at: '2025-10-21T08:51:45Z'
 ---
 Attribute your apps in multiple Android stores and view the data in a single app dashboard or in an app dashboard per store.
 

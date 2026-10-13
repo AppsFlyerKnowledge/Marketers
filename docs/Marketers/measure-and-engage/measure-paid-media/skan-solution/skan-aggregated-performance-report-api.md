@@ -1,6 +1,26 @@
 ---
 title: "SKAN aggregated performance report API"
 excerpt: "The SKAN aggregated performance report API returns attribution metrics reported by Apple SKAdNetwork enriched with additional data points using the install or postback arrival date."
+x-zendesk:
+  id: 360014104157
+  url: https://support.appsflyer.com/hc/en-us/articles/360014104157-SKAN-aggregated-performance-report-API
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: SKAN solution
+  section_id: 6552135379985
+  position: 12
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
+  labels: [Advertisers, SKAD, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-10-08T09:45:03Z'
+  edited_at: '2024-02-08T08:56:21Z'
 ---
 The API returns attribution metrics reported by Apple SKAdNetwork (real data) and other data points using the install or postback arrival date. The report is similar in structure to the data presented in the [SKAN dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer).
 

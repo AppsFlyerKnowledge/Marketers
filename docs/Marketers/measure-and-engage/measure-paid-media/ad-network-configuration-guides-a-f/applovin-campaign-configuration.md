@@ -1,6 +1,26 @@
 ---
 title: "AppLovin campaign configuration"
 excerpt: "Configure AppLovin integration in AppsFlyer to record click-based mobile attribution, cost, ad revenue, and view-through attribution."
+x-zendesk:
+  id: 208335613
+  url: https://support.appsflyer.com/hc/en-us/articles/208335613-AppLovin-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  position: 8
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Applovin, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-03-06T12:20:32Z'
+  edited_at: '2026-09-09T13:01:06Z'
 ---
 AppLovin, an AppsFlyer integrated partner, is a well-known ad network for mobile app traffic. In addition to click-based mobile attribution, AppLovin also offers cost, ad revenue, and view-through attribution, which you can record with AppsFlyer.
 

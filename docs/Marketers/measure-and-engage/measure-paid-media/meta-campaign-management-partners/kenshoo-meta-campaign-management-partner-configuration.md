@@ -1,6 +1,26 @@
 ---
 title: "Kenshoo (Meta campaign management partner) configuration"
 excerpt: "Learn how to integrate and configure Kenshoo with AppsFlyer to manage and measure your Meta campaigns."
+x-zendesk:
+  id: 360001430625
+  url: https://support.appsflyer.com/hc/en-us/articles/360001430625-Kenshoo-Meta-campaign-management-partner-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Meta campaign management partners
+  section_id: 6551188365457
+  position: 9
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Facebook, kenshoo, Advertisers, facebook, fmp, facebook marketing partner, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2018-08-20T11:51:44Z'
+  edited_at: '2026-06-16T09:32:52Z'
 ---
 At a glance: Kenshoo, an AppsFlyer integrated partner (formerly known as Facebook Marketing Partners), empowers every marketer in the world with technology to build brands and generate demand across all media.
 

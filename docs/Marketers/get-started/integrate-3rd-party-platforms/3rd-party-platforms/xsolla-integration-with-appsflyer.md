@@ -1,6 +1,26 @@
 ---
 title: "Xsolla integration with AppsFlyer"
 excerpt: "Learn how to integrate Xsolla with AppsFlyer to automate Web Shop purchases and revenue tracking, presenting the full ROAS and LTV of your game."
+x-zendesk:
+  id: 23593013687185
+  url: https://support.appsflyer.com/hc/en-us/articles/23593013687185-Xsolla-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 33
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-03-25T06:20:28Z'
+  edited_at: '2026-06-16T12:08:48Z'
 ---
 Xsolla, an AppsFlyer integrated partner, is a gaming commerce tech partner specializing in payment processing outside of traditional app platforms. The integration between Xsolla and AppsFlyer enables Xsolla to automate Web Shop purchases and revenue to be sent to AppsFlyer, to present the full ROAS and LTV of the game, including purchases made in the Xsolla Web Shop.
 

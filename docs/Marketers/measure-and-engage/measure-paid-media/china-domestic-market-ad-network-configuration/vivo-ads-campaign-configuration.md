@@ -1,6 +1,26 @@
 ---
 title: "vivo Ads Campaign Configuration"
 excerpt: "Learn how to configure vivo Ads in AppsFlyer, including setting up the integration, configuring attribution links, and managing lookback windows."
+x-zendesk:
+  id: 360002358897
+  url: https://support.appsflyer.com/hc/en-us/articles/360002358897-vivo-Ads-Campaign-Configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: China domestic market ad network configuration
+  section_id: 6552066355601
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-08-29T08:24:47Z'
+  edited_at: '2026-09-15T10:34:14Z'
 ---
 **At a glance:** vivo Ads is an AppsFlyer ad network integrated partner.
 

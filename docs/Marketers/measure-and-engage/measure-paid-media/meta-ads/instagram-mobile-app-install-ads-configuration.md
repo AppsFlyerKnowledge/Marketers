@@ -1,6 +1,26 @@
 ---
 title: "Instagram mobile app install ads configuration"
 excerpt: "Learn how to add Instagram mobile app installs to your Meta ads account and configure landing pages for deep linking."
+x-zendesk:
+  id: 207034066
+  url: https://support.appsflyer.com/hc/en-us/articles/207034066-Instagram-mobile-app-install-ads-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Meta ads
+  section_id: 6551109855761
+  position: 9
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Facebook, Instagram, install ads, integrated partner, Advertisers, Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2015-09-09T01:10:44Z'
+  edited_at: '2023-08-07T07:31:39Z'
 ---
 **At a glance:** Add Instagram mobile app installs to your Meta ads account.
 

@@ -1,6 +1,26 @@
 ---
 title: "Additional SDK integration guide"
 excerpt: "Explore additional AppsFlyer SDK functionalities such as uninstall measurement, user invite attribution, push notifications, and privacy settings."
+x-zendesk:
+  id: 4408735106193
+  url: https://support.appsflyer.com/hc/en-us/articles/4408735106193-Additional-SDK-integration-guide
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: SDK integration planning
+  section_id: 6551182964369
+  position: 2
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Web Attribution]
+  labels: [iOS, Android, Integration, Advertisers, firetv, Advertiser, appuid, anonymous, kakao, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-10-10T11:54:14Z'
+  edited_at: '2026-08-13T12:40:39Z'
 ---
 Consider the additional SDK functionalities that are available and work with your developer to implement APIs such as uninstall measurement, user invite attribution, push notifications, and privacy settings.
 

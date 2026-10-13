@@ -1,6 +1,26 @@
 ---
 title: "Set retargeting inactivity window"
 excerpt: "Increase incremental lift by retargeting inactive users and setting inactivity windows by media source."
+x-zendesk:
+  id: 360009305817
+  url: https://support.appsflyer.com/hc/en-us/articles/360009305817-Set-retargeting-inactivity-window
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Retargeting attribution
+  section_id: 6551326229265
+  position: 2
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-moran-davida, Marketers, Mobile Attribution, Ad Networks]
+  labels: [Agencies, Ad Networks, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-05-31T13:56:38Z'
+  edited_at: '2026-09-15T11:14:51Z'
 ---
 **At a glance:** Increase incremental lift by retargeting inactive users. Set inactivity windows by media source.
 

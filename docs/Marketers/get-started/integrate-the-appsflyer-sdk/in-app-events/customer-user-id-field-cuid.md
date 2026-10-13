@@ -1,6 +1,26 @@
 ---
 title: "Customer User ID field (CUID)"
 excerpt: "Learn how the Customer User ID (CUID) enables you to group and analyze user events across different devices, media sources, and channels."
+x-zendesk:
+  id: 207032016
+  url: https://support.appsflyer.com/hc/en-us/articles/207032016-Customer-User-ID-field-CUID
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: In-app events
+  section_id: 6551285343761
+  position: 5
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [ID, Customer User ID, User, Mixpanel, Swrve, Advertisers, Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2015-11-18T11:55:22Z'
+  edited_at: '2026-09-10T17:02:50Z'
 ---
 The CUID enables you to group events of the same user across different devices, media sources, or channels.
 

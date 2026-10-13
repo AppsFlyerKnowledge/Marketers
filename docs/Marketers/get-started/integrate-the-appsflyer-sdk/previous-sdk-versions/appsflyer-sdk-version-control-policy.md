@@ -1,6 +1,26 @@
 ---
 title: "AppsFlyer SDK version control policy"
 excerpt: "Learn about the AppsFlyer SDK version control policy, including version lifecycles, deprecation, and end-of-support timelines."
+x-zendesk:
+  id: 4412316953105
+  url: https://support.appsflyer.com/hc/en-us/articles/4412316953105-AppsFlyer-SDK-version-control-policy
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Previous SDK versions
+  section_id: 6551300280977
+  position: 1
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [iOS, Android, SDK, Advertisers, Developers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-11-30T10:43:19Z'
+  edited_at: '2025-05-19T00:01:05Z'
 ---
 **At a glance:** Learn about the AppsFlyer SDK version control policy and what versions we maintain.
 

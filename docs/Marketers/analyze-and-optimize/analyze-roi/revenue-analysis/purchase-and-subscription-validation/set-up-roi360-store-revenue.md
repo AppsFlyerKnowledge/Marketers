@@ -1,6 +1,26 @@
 ---
 title: "Set up ROI360 store revenue"
 excerpt: "Learn how to configure the AppsFlyer ROI360 store revenue solution, including store credentials, server notifications, and SDK connector implementation."
+x-zendesk:
+  id: 42158608158353
+  url: https://support.appsflyer.com/hc/en-us/articles/42158608158353-Set-up-ROI360-store-revenue
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Purchase and subscription validation
+  section_id: 42227328788241
+  position: 4
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-michael-talapov, Marketers, ROI360]
+  labels: [Premium, Advertisters]
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-12-22T11:05:11Z'
+  edited_at: '2026-07-01T17:06:19Z'
 ---
 **At a glance:** Set up the AppsFlyer ROI360 store revenue solution.
 

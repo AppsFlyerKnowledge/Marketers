@@ -1,6 +1,26 @@
 ---
 title: "SKAN integration guide for ad networks"
 excerpt: "Integrate with AppsFlyer SKAdNetwork (SKAN) to optimize campaigns and ensure proper attribution for the traffic your ad network generates."
+x-zendesk:
+  id: 360011502657
+  url: https://support.appsflyer.com/hc/en-us/articles/360011502657-SKAN-integration-guide-for-ad-networks
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: End-user privacy
+  section_id: 6551186412689
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, SKAdNetwork (SKAN), Ad Networks]
+  labels: [Ad Networks, Partners, SKAD, Loc In Prog]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-08-03T08:56:14Z'
+  edited_at: '2026-05-17T09:44:53Z'
 ---
 **At a glance**: Ad networks integrate with AppsFlyer SKAdNetworks (SKAN), enabling them to optimize campaigns and to be attributed to the traffic they generate.
 

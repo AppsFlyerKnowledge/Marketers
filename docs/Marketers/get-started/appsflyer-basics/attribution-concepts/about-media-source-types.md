@@ -2,6 +2,26 @@
 title: "About media source types"
 excerpt: "Understand the basic media source types in AppsFlyer, including self-reporting networks, non-SRNs, and owned media."
 table_of_contents: false
+x-zendesk:
+  id: 212188826
+  url: https://support.appsflyer.com/hc/en-us/articles/212188826-About-media-source-types
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Attribution concepts
+  section_id: 6551394235409
+  position: 18
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-moran-davida, Marketers, Mobile Attribution, Agencies]
+  labels: [Advertisers, Agencies, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-09-01T09:36:27Z'
+  edited_at: '2025-04-05T12:52:44Z'
 ---
 **At a glance:** Understand the basic media source types in AppsFlyer.
 

@@ -1,6 +1,26 @@
 ---
 title: "[Closed beta] Validation Rules API"
 excerpt: "Automate the creation and management of Validation Rules at scale with the programmatic Validation Rules API."
+x-zendesk:
+  id: 48341412127249
+  url: https://support.appsflyer.com/hc/en-us/articles/48341412127249--Closed-beta-Validation-Rules-API
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Protect your traffic
+  section_id: 6551015912465
+  position: 0
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-yanai, Marketers, Protect360]
+  labels: [Marketers, Closed beta]
+  promoted: false
+  comments_disabled: true
+  created_at: '2026-07-02T09:03:27Z'
+  edited_at: '2026-09-27T13:16:32Z'
 ---
 Automate the creation and management of Validation Rules at scale. The Validation Rules API lets technical teams programmatically create, update, patch, and delete rules, going beyond the UI's value limits and cutting out manual rule management overhead.
 

@@ -1,6 +1,26 @@
 ---
 title: "SKAN aggregated postback arrival date API"
 excerpt: "Retrieve aggregated SKAdNetwork postbacks via API using the postback arrival date range."
+x-zendesk:
+  id: 360016646557
+  url: https://support.appsflyer.com/hc/en-us/articles/360016646557-SKAN-aggregated-postback-arrival-date-API
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: SKAN solution
+  section_id: 6552135379985
+  position: 10
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
+  labels: [Advertisers, Marketers, Loc In Prog]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-12-21T09:03:09Z'
+  edited_at: '2024-09-18T06:25:36Z'
 ---
 Aggregated SKAdNetwork postbacks via API. Data is aggregated using postback arrival date.
 

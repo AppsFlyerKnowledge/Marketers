@@ -1,6 +1,26 @@
 ---
 title: "Meta ads discrepancies"
 excerpt: "Learn about the differences in attribution models, lookback windows, and in-app event reporting between Meta ads and AppsFlyer."
+x-zendesk:
+  id: 4410481130641
+  url: https://support.appsflyer.com/hc/en-us/articles/4410481130641-Meta-ads-discrepancies
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Meta ads
+  section_id: 6551109855761
+  position: 6
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution, Agencies]
+  labels: [Facebook, Advertisers, Agencies, facebook, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-11-09T10:10:54Z'
+  edited_at: '2025-11-17T00:01:08Z'
 ---
 As any two major players in the mobile user acquisition eco-system, AppsFlyer and Meta ads differ in their attribution models. This may cause discrepancies to occur between Meta ads and AppsFlyer dashboards.
 

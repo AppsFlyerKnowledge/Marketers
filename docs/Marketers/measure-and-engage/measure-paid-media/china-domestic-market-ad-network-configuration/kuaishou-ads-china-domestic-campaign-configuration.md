@@ -1,6 +1,26 @@
 ---
 title: "Kuaishou Ads (China Domestic) campaign configuration"
 excerpt: "Learn how to configure the Kuaishou Ads (China Domestic) integration in AppsFlyer, including setting up postbacks, attribution links, and partner permissions."
+x-zendesk:
+  id: 360001748437
+  url: https://support.appsflyer.com/hc/en-us/articles/360001748437-Kuaishou-Ads-China-Domestic-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: China domestic market ad network configuration
+  section_id: 6552066355601
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-06-05T06:07:11Z'
+  edited_at: '2026-09-15T10:22:46Z'
 ---
 **At a glance:** Kuaishou is an AppsFlyer ad network integrated partner.
 

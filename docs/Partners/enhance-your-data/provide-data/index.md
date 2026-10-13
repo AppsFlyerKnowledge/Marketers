@@ -2,6 +2,17 @@
 title: "Provide data"
 excerpt: "Learn how to send engagement data to AppsFlyer for attribution, including attribution link specifications, probabilistic modeling, and redirecting users."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551209900817
+  url: https://support.appsflyer.com/hc/en-us/sections/6551209900817-Provide-data
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  parent_section_id: 6551110127761
+  position: 0
+  sorting: manual
+  created_at: '2022-06-02T11:32:58Z'
 ---
 Send engagement data to AppsFlyer for attribution
 

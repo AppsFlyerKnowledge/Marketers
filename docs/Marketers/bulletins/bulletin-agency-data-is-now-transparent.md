@@ -2,6 +2,26 @@
 title: "[Bulletin] Agency data is now transparent"
 excerpt: "All agency-managed campaign data is now fully visible down to the media source level, enhancing your ability to analyze and optimize marketing investments."
 table_of_contents: false
+x-zendesk:
+  id: 32048747169553
+  url: https://support.appsflyer.com/hc/en-us/articles/32048747169553--Bulletin-Agency-data-is-now-transparent
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 2
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-01-23T11:20:37Z'
+  edited_at: '2025-02-10T09:52:44Z'
 ---
 | | |
 | --- | --- |

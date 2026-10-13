@@ -1,6 +1,26 @@
 ---
 title: "Bulletin: Get Meta ads attribution in raw data reports with the Meta install referrer"
 excerpt: "Learn how the Meta install referrer enables Android campaign attribution in raw data reports and how to configure it."
+x-zendesk:
+  id: 22461635687185
+  url: https://support.appsflyer.com/hc/en-us/articles/22461635687185-Bulletin-Get-Meta-ads-attribution-in-raw-data-reports-with-the-Meta-install-referrer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 23
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-02-12T10:47:33Z'
+  edited_at: '2024-08-12T11:20:08Z'
 ---
 Meta install referrer helps with attribution measurement for your Android ad campaigns on Facebook, Instagram, and Audience Network, where the objective is app installs. This is in addition to the Google Play Install Referrer.
 

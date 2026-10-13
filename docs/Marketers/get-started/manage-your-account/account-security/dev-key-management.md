@@ -1,6 +1,26 @@
 ---
 title: "Dev Key management"
 excerpt: "Learn how to view, generate, and update your app's Developer Key directly in the App Settings for greater flexibility and security."
+x-zendesk:
+  id: 37139123425809
+  url: https://support.appsflyer.com/hc/en-us/articles/37139123425809-Dev-Key-management
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Account security
+  section_id: 6551173202065
+  position: 0
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2025-07-14T11:20:11Z'
+  edited_at: '2026-10-07T07:41:56Z'
 ---
 **At a glance:** Control and update your app’s Dev Key directly in the App Settings. Giving you greater flexibility and security.
 

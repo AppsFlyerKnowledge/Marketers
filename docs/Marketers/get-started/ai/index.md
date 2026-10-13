@@ -2,6 +2,17 @@
 title: "AI"
 excerpt: "Discover how to use AI to unlock insights, automate workflows, and drive smarter decisions within AppsFlyer."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 36348470056081
+  url: https://support.appsflyer.com/hc/en-us/sections/36348470056081-AI
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550753145745
+  position: 7
+  sorting: manual
+  created_at: '2025-06-19T07:02:00Z'
 ---
 Use AI to unlock insights, automate workflows, and drive smarter decisions.
 

@@ -1,6 +1,26 @@
 ---
 title: "ROI360 - onboarding guide"
 excerpt: "Follow the onboarding instructions in this guide to get ROI360 for cost, ad revenue, and in-app purchase and subscription revenue data up and running."
+x-zendesk:
+  id: 25301111725329
+  url: https://support.appsflyer.com/hc/en-us/articles/25301111725329-ROI360-onboarding-guide
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Overview
+  section_id: 15173289016593
+  position: 1
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-michael-talapov, Marketers, ROI360]
+  labels: [ROI, cost, Marketers, revenue, ROI360, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-05-23T08:36:31Z'
+  edited_at: '2026-09-09T15:54:38Z'
 ---
 **At a glance**: Follow the onboarding instructions in this article to get ROI360 for cost and revenue data up and running.
 

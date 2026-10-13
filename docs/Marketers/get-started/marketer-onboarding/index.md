@@ -2,6 +2,17 @@
 title: "Marketer onboarding"
 excerpt: "Get started with AppsFlyer using our step-by-step guides, migration resources, and onboarding materials designed specifically for marketers."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6550866490129
+  url: https://support.appsflyer.com/hc/en-us/sections/6550866490129-Marketer-onboarding
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550753145745
+  position: 0
+  sorting: manual
+  created_at: '2022-06-02T11:17:07Z'
 ---
 Check out all AppsFlyer can do for you with a short video and step-by-step guide
 

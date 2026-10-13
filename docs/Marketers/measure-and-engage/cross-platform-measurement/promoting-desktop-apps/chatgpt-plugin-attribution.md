@@ -1,6 +1,26 @@
 ---
 title: "ChatGPT plugin attribution"
 excerpt: "Learn how to report ChatGPT plugin data to AppsFlyer to measure user journeys, LTV, and platform performance side by side."
+x-zendesk:
+  id: 15224646285713
+  url: https://support.appsflyer.com/hc/en-us/articles/15224646285713-ChatGPT-plugin-attribution
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Promoting Desktop apps
+  section_id: 15329004312593
+  position: 3
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roi-tamir, Marketers, PC & Console Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-05-11T07:44:43Z'
+  edited_at: '2023-05-23T11:54:16Z'
 ---
 **At a glance:** See how to report ChatGPT plugin data to AppsFlyer for a holistic view of your user journeys.
 

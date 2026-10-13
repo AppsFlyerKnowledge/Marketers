@@ -1,6 +1,26 @@
 ---
 title: "Data Collaboration Platform (DCP) - Prepare source data for ingestion"
 excerpt: "Learn how to structure and format your source data for the AppsFlyer Data Collaboration Platform (DCP) to maximize match rates and optimize collaboration outcomes."
+x-zendesk:
+  id: 43205325114897
+  url: https://support.appsflyer.com/hc/en-us/articles/43205325114897-Data-Collaboration-Platform-DCP-Prepare-source-data-for-ingestion
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Data Collaboration Platform
+  section_id: 26230608274065
+  position: 4
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-yael-sharabi, Marketers, Data Management]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2026-01-26T12:08:32Z'
+  edited_at: '2026-07-27T10:44:15Z'
 ---
 **At a glance:** Prepare your source data to maximize match rates between collaborator datasets and optimize collaboration outcomes.
 

@@ -1,6 +1,26 @@
 ---
 title: "Pull API aggregate data"
 excerpt: "Learn how to use the AppsFlyer Pull API to retrieve aggregate user acquisition and retargeting reports in CSV format."
+x-zendesk:
+  id: 207034346
+  url: https://support.appsflyer.com/hc/en-us/articles/207034346-Pull-API-aggregate-data
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Data delivery tools
+  section_id: 6550995484561
+  position: 8
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-rona-einat, Marketers, Raw Reports]
+  labels: [Performance, raw data, Pull API, Reports, API, Parameters, API Policy, Advertisers, facebook rawdata, facebook raw data, Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2013-04-24T15:08:25Z'
+  edited_at: '2026-03-18T09:04:12Z'
 ---
 Use this Pull API to get your AppsFlyer aggregate reports in CSV files.
 

@@ -2,6 +2,26 @@
 title: "Bulletin: Upgrading the AppsFlyer S2S API"
 excerpt: "AppsFlyer has upgraded its server-to-server (S2S) API for in-app events to provide a more secure experience and reduce fraud."
 table_of_contents: false
+x-zendesk:
+  id: 20509378973457
+  url: https://support.appsflyer.com/hc/en-us/articles/20509378973457-Bulletin-Upgrading-the-AppsFlyer-S2S-API
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 27
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-11-28T16:26:35Z'
+  edited_at: '2024-04-14T07:07:17Z'
 ---
 To provide a more secure experience for API usage and to reduce fraud, AppsFlyer has upgraded its server-to-server (S2S) API for in-app events. The existing endpoint will be deprecated in the future and we recommend to start planning the switch. AppsFlyer is working on a solution for third-party tech partners that send data on your behalf.
 

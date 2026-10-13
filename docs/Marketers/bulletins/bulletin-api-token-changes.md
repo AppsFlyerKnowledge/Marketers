@@ -2,6 +2,26 @@
 title: "Bulletin: API token changes"
 excerpt: "Important update regarding the deprecation of API V1 tokens and the transition to secure JWT-based API V2 tokens."
 table_of_contents: false
+x-zendesk:
+  id: 12399683708305
+  url: https://support.appsflyer.com/hc/en-us/articles/12399683708305-Bulletin-API-token-changes
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 38
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies]
+  labels: [Agencies, Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-01-23T15:35:25Z'
+  edited_at: '2023-09-21T10:43:51Z'
 ---
 | **What's new** | To provide a more secure and reliable experience for API usage, the API V1 token, which was included in the API URLs, was deprecated in favor of the API V2 token, which is a JWT-based token that is passed in the header for bearer authorization.<br /><br />API V1 token and the APIs that use them are no longer available as of September 18, 2023. |
 | --- | --- |

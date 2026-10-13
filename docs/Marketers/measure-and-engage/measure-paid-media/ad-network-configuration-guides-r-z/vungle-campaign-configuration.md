@@ -1,6 +1,26 @@
 ---
 title: "Vungle campaign configuration"
 excerpt: "Learn how to configure Vungle integration in AppsFlyer to measure mobile attribution, cost, and view-through data."
+x-zendesk:
+  id: 207990186
+  url: https://support.appsflyer.com/hc/en-us/articles/207990186-Vungle-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  position: 20
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Vungle, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-03-03T08:53:29Z'
+  edited_at: '2026-09-08T07:18:37Z'
 ---
 **At a glance:** Vungle, an AppsFlyer ad network integrated partner, offers an in-app video advertising platform for performance marketers. In addition to click-based mobile attribution, Vungle offers cost and view-through attribution, which can be recorded with AppsFlyer.
 

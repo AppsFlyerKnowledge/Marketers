@@ -1,6 +1,26 @@
 ---
 title: "Set up lookback windows"
 excerpt: "Customize the click-through and view-through lookback windows based on your agreements with media sources."
+x-zendesk:
+  id: 208338403
+  url: https://support.appsflyer.com/hc/en-us/articles/208338403-Set-up-lookback-windows
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Attribution concepts
+  section_id: 6551394235409
+  position: 9
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-moran-davida, Marketers, Mobile Attribution]
+  labels: [Advertisers, look back, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-03-07T09:27:55Z'
+  edited_at: '2026-07-13T14:30:13Z'
 ---
 **At a glance:** Customize the click-through and view-through lookback windows, based on your agreements with media sources.
 

@@ -2,6 +2,17 @@
 title: "Ad network configuration guides (R-Z)"
 excerpt: "Set up selected ad networks starting with letters R through Z for AppsFlyer attribution."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6552025468305
+  url: https://support.appsflyer.com/hc/en-us/sections/6552025468305-Ad-network-configuration-guides-R-Z
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550990672401
+  position: 17
+  sorting: manual
+  created_at: '2022-06-02T12:06:14Z'
 ---
 Set up selected ad networks for AppsFlyer attribution
 

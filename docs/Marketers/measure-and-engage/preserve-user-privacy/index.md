@@ -2,6 +2,17 @@
 title: "Preserve user privacy"
 excerpt: "Ensure compliance with app store requirements and privacy regulations like GDPR using AppsFlyer privacy features."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551440878097
+  url: https://support.appsflyer.com/hc/en-us/sections/6551440878097-Preserve-user-privacy
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6551006275729
+  position: 3
+  sorting: manual
+  created_at: '2022-06-02T11:42:26Z'
 ---
 Ensure compliance with app store requirements and privacy regulations like GDPR
 

@@ -1,6 +1,26 @@
 ---
 title: "Onboard Web Performance Measurement"
 excerpt: "Follow this onboarding guide to set up Web Performance Measurement in AppsFlyer, allowing you to measure and attribute website visits and web events to marketing sources."
+x-zendesk:
+  id: 43529798016401
+  url: https://support.appsflyer.com/hc/en-us/articles/43529798016401-Onboard-Web-Performance-Measurement
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: AppsFlyer Web Attribution
+  section_id: 43560690387729
+  position: 2
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, Marketers, Web Attribution, Agencies]
+  labels: [Attribution, Agencies, Web Attribution, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2026-02-04T19:35:31Z'
+  edited_at: '2026-08-24T07:22:47Z'
 ---
 At a glance: Follow the onboarding instructions in this guide to set up Web Performance Measurement. Once set up, you can measure and attribute website visits and web events to marketing sources, understand what drives meaningful website outcomes, and support cross-platform measurement.
 

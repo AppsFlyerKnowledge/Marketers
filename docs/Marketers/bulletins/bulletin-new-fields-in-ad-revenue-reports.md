@@ -2,6 +2,26 @@
 title: "Bulletin: New fields in ad revenue reports"
 excerpt: "Learn about the new fields added to AppsFlyer ad revenue reports starting September 19, 2024, and how to configure your Data Locker settings to ingest them."
 table_of_contents: false
+x-zendesk:
+  id: 26907692192273
+  url: https://support.appsflyer.com/hc/en-us/articles/26907692192273-Bulletin-New-fields-in-ad-revenue-reports
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 11
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-michael-talapov, Marketers, ROI360]
+  labels: [Marketers, Localize]
+  promoted: false
+  comments_disabled: false
+  created_at: '2024-07-22T13:25:32Z'
+  edited_at: '2024-09-24T12:01:56Z'
 ---
 | **What's new?** | Ad revenue reports have new fields. |
 | --- | --- |

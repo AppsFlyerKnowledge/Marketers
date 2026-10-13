@@ -1,6 +1,26 @@
 ---
 title: "Set up the Engagements task"
 excerpt: "Learn how to configure engagement events for on-site and combined campaigns in the Data Collaboration Platform."
+x-zendesk:
+  id: 38188042548113
+  url: https://support.appsflyer.com/hc/en-us/articles/38188042548113-Set-up-the-Engagements-task
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Set up the measurement data tasks
+  section_id: 38035061674769
+  position: 2
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-yael-sharabi, Marketers, Data Clean Room]
+  labels: []
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-08-18T10:19:20Z'
+  edited_at: '2026-05-27T09:33:55Z'
 ---
 **At a glance:** Learn how to configure engagement events for on-site and combined campaigns (on-site and off-site campaigns).
 

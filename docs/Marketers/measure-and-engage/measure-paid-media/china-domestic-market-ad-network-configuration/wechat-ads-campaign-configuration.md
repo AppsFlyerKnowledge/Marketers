@@ -1,6 +1,26 @@
 ---
 title: "WeChat Ads campaign configuration"
 excerpt: "Learn how to configure and measure your WeChat advertising campaigns using AppsFlyer."
+x-zendesk:
+  id: 115003044106
+  url: https://support.appsflyer.com/hc/en-us/articles/115003044106-WeChat-Ads-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: China domestic market ad network configuration
+  section_id: 6552066355601
+  position: 38
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Wechat Ads, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2017-06-18T06:41:29Z'
+  edited_at: '2026-09-15T10:36:12Z'
 ---
 **At a glance:** Learn how to measure your campaigns with WeChat on AppsFlyer.
 

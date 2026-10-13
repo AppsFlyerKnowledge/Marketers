@@ -1,6 +1,26 @@
 ---
 title: "Advanced filter and group by options in events and activity dashboards"
 excerpt: "Learn how to use advanced filter and group by options in AppsFlyer events and activity dashboards to view precise and relevant data for your apps."
+x-zendesk:
+  id: 211490886
+  url: https://support.appsflyer.com/hc/en-us/articles/211490886-Advanced-filter-and-group-by-options-in-events-and-activity-dashboards
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Dashboards
+  section_id: 6550925337873
+  position: 12
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics, Agencies]
+  labels: [advance filters, Site ID, Advertisers, Agencies, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-08-08T14:04:48Z'
+  edited_at: '2023-03-29T10:35:48Z'
 ---
 **At a glance**: Use advanced filter and group by options in events and activity dashboards.
 

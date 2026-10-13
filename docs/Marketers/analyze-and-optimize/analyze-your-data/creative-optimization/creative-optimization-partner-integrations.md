@@ -1,6 +1,26 @@
 ---
 title: "Creative Optimization partner integrations"
 excerpt: "Set up partner integrations to automatically import all your creative data into Creative Optimization."
+x-zendesk:
+  id: 18565403047569
+  url: https://support.appsflyer.com/hc/en-us/articles/18565403047569-Creative-Optimization-partner-integrations
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Creative Optimization
+  section_id: 4419063475217
+  position: 4
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-omer-katzburg, Marketers, Creative Optimization]
+  labels: [Premium, Marketers, Loc In Prog, Loc Published]
+  promoted: false
+  comments_disabled: false
+  created_at: '2023-09-14T13:52:36Z'
+  edited_at: '2026-07-22T07:41:56Z'
 ---
 **At a glance:** Set up partner integrations to automatically import all your creative data into Creative Optimization.
 

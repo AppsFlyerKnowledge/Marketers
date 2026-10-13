@@ -1,6 +1,26 @@
 ---
 title: "Webpals mobile (Meta campaign management partner) configuration"
 excerpt: "Learn how to set up and configure the Webpals mobile integration in AppsFlyer to manage your Meta campaigns and send in-app event postbacks."
+x-zendesk:
+  id: 115000135126
+  url: https://support.appsflyer.com/hc/en-us/articles/115000135126-Webpals-mobile-Meta-campaign-management-partner-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Meta campaign management partners
+  section_id: 6551188365457
+  position: 11
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Facebook, Advertisers, DAU-UP, Webpals mobile, Webpals, Facebook Marketing Partner, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-12-26T08:34:10Z'
+  edited_at: '2026-06-16T09:34:16Z'
 ---
 <Cards>
   <Card title="Setting up Webpals mobile" href="#setting-up-webpals-mobile" icon="fa-solid fa-sliders" />

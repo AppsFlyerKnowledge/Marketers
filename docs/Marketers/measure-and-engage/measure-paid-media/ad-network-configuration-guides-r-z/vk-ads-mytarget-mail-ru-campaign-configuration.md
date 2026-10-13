@@ -1,6 +1,26 @@
 ---
 title: "VK Ads (myTarget, Mail.ru) campaign configuration"
 excerpt: "Learn how to configure the VK Ads integration in AppsFlyer, including setting up attribution links, cost APIs, and partner permissions."
+x-zendesk:
+  id: 209731913
+  url: https://support.appsflyer.com/hc/en-us/articles/209731913-VK-Ads-myTarget-Mail-ru-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  position: 18
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [mytarget, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-03-28T11:53:13Z'
+  edited_at: '2026-09-09T13:06:35Z'
 ---
 **At a glance:** VK Ads is a mobile advertising platform aimed at connecting advertisers with Russian-speaking mobile users. With VK Ads advertisers can place targeted advertising in social networks (Vkontakte, Odnoklassniki, Moi Mir) and the Mail.Ru Group. In addition to click-based mobile attribution, VK Ads also offers retargeting attribution.
 

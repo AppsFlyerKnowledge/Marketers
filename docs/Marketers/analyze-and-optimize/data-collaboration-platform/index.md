@@ -1,6 +1,17 @@
 ---
 title: "Data Collaboration Platform"
 excerpt: "Leverage your first-party data in a secure environment to build targeted audiences and activate them within media networks."
+x-zendesk:
+  type: section
+  id: 26230608274065
+  url: https://support.appsflyer.com/hc/en-us/sections/26230608274065-Data-Collaboration-Platform
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550913619473
+  position: 5
+  sorting: manual
+  created_at: '2024-06-26T14:49:31Z'
 ---
 ### [Collaboration measurement](/docs/collaboration-measurement)
 

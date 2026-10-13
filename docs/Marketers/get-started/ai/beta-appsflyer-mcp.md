@@ -1,6 +1,26 @@
 ---
 title: "[Beta] AppsFlyer MCP"
 excerpt: "Connect your AppsFlyer data to large language models (LLMs) like Claude, ChatGPT, and Gemini to ask questions and retrieve performance insights directly in your AI chat or development environment."
+x-zendesk:
+  id: 36349070304785
+  url: https://support.appsflyer.com/hc/en-us/articles/36349070304785--Beta-AppsFlyer-MCP
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: AI
+  section_id: 36348470056081
+  position: 0
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-eden-locker, Marketers, MCP]
+  labels: [Marketers, Beta feature]
+  promoted: false
+  comments_disabled: true
+  created_at: '2025-06-19T07:19:33Z'
+  edited_at: '2026-10-07T10:00:26Z'
 ---
 **At a glance:** AppsFlyer MCP connects your AppsFlyer data to large language models (LLMs), such as Claude, ChatGPT, Gemini CLI, Copilot CLI, and VS Code. Ask questions, get performance insights, and retrieve AppsFlyer information directly in your AI chat or development environment.
 

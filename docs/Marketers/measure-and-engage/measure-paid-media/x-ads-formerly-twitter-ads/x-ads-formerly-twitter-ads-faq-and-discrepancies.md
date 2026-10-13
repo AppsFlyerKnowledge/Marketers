@@ -1,6 +1,26 @@
 ---
 title: "X Ads (formerly Twitter Ads) FAQ and discrepancies"
 excerpt: "Resolve frequently asked questions and understand attribution discrepancies between X Ads and AppsFlyer."
+x-zendesk:
+  id: 4410464352017
+  url: https://support.appsflyer.com/hc/en-us/articles/4410464352017-X-Ads-formerly-Twitter-Ads-FAQ-and-discrepancies
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: X Ads (formerly Twitter Ads)
+  section_id: 6551370375569
+  position: 2
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-11-09T09:34:59Z'
+  edited_at: '2026-09-15T11:41:04Z'
 ---
 **At a glance:** Resolve X Ads FAQs and understand discrepancies.
 

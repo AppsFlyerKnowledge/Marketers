@@ -1,6 +1,26 @@
 ---
 title: "Fyber campaign configuration"
 excerpt: "Learn how to set up and configure your Fyber campaigns in AppsFlyer, including integration settings, attribution links, cost, ad revenue, and permissions."
+x-zendesk:
+  id: 208209366
+  url: https://support.appsflyer.com/hc/en-us/articles/208209366-Fyber-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  position: 23
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [fyber, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-03-28T08:29:40Z'
+  edited_at: '2026-09-09T13:04:24Z'
 ---
 Fyber, an AppsFlyer ad network integrated partner, develops a next-generation monetization platform for mobile publishers.
 

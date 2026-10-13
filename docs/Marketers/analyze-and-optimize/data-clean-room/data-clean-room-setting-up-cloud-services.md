@@ -1,6 +1,26 @@
 ---
 title: "Data Clean Room—Setting up cloud services"
 excerpt: "Set up data warehouses and cloud storage buckets to share data with the Data Clean Room and receive reports."
+x-zendesk:
+  id: 4591167507217
+  url: https://support.appsflyer.com/hc/en-us/articles/4591167507217-Data-Clean-Room-Setting-up-cloud-services
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Data Clean Room
+  section_id: 4591191779217
+  position: 4
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-inbar-agassi, Marketers, Data Clean Room]
+  labels: [Premium, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-03-06T08:23:55Z'
+  edited_at: '2024-09-04T08:34:44Z'
 ---
 Preparing to use the Data Clean Room (DCR) involves setting up:
 

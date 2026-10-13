@@ -1,6 +1,26 @@
 ---
 title: "Set up organic search (SEO) and organic AI answers (AEO) re-engagement attribution"
 excerpt: "Learn how to attribute mobile app re-engagements to organic search engines and AI answer engines to optimize your SEO and AEO efforts."
+x-zendesk:
+  id: 15123194526353
+  url: https://support.appsflyer.com/hc/en-us/articles/15123194526353-Set-up-organic-search-SEO-and-organic-AI-answers-AEO-re-engagement-attribution
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Attribution concepts
+  section_id: 6551394235409
+  position: 7
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-moran-davida, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-05-07T13:34:36Z'
+  edited_at: '2026-09-14T15:30:59Z'
 ---
 Get detailed attribution data about re-engagements (users who already have your app installed) from organic search engines and AI answer engines so that you can optimize your organic search and AI-driven conversions.
 

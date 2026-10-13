@@ -1,6 +1,26 @@
 ---
 title: "[Beta] Agent Hub overview"
 excerpt: "Agent Hub is AppsFlyer's centralized platform for managing AI-driven agents that proactively deliver actionable marketing insights directly into your workflow."
+x-zendesk:
+  id: 40967933109649
+  url: https://support.appsflyer.com/hc/en-us/articles/40967933109649--Beta-Agent-Hub-overview
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: AI
+  section_id: 36348470056081
+  position: 0
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-rona-einat, Marketers, Agent Hub]
+  labels: [Advertisers, Beta feature]
+  promoted: false
+  comments_disabled: true
+  created_at: '2025-11-16T10:18:23Z'
+  edited_at: '2026-10-05T08:00:46Z'
 ---
 Agent Hub is AppsFlyer's centralized platform for managing AI-driven agents that proactively deliver actionable marketing insights directly into your workflow. These agents constantly analyze your data to deliver valuable outputs and recommend actionable steps, all within your team's collaborative environment.
 

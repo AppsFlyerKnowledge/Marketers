@@ -1,6 +1,26 @@
 ---
 title: "Protect360—FAQ for partners"
 excerpt: "Find answers to frequently asked questions by partners about AppsFlyer's Protect360 anti-fraud system, including impression capping and install rejections."
+x-zendesk:
+  id: 16091549732497
+  url: https://support.appsflyer.com/hc/en-us/articles/16091549732497-Protect360-FAQ-for-partners
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Learn more
+  section_id: 6551121200017
+  position: 3
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-yanai, Protect360, Agencies, Ad Networks]
+  labels: [Agencies, Ad Networks, Partners, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-06-12T12:43:34Z'
+  edited_at: '2026-01-25T06:59:41Z'
 ---
 At a glance: Find answers to questions frequently asked by partners about Protect360.
 

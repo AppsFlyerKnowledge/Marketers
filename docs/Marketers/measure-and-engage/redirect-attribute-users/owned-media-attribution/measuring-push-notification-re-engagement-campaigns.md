@@ -1,6 +1,26 @@
 ---
 title: "Measuring push notification re-engagement campaigns"
 excerpt: "Learn how to measure push notification campaigns on both iOS and Android using OneLink or custom JSON payloads."
+x-zendesk:
+  id: 207364076
+  url: https://support.appsflyer.com/hc/en-us/articles/207364076-Measuring-push-notification-re-engagement-campaigns
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Owned media attribution
+  section_id: 6551214397585
+  position: 6
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-asaf-mashiah, Marketers, OneLink]
+  labels: [Re-Engagement, push, notifications, Advertisers, Developers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-01-18T10:03:11Z'
+  edited_at: '2026-08-14T16:22:53Z'
 ---
 AppsFlyer supports the measurement of push notification campaigns from all push providers, as well as campaigns implemented directly on top of Firebase Cloud Messaging or Apple Push Notification Services (APNS). 
 

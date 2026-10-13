@@ -1,6 +1,26 @@
 ---
 title: "Migration to AppsFlyer from other vendors"
 excerpt: "Plan your migration to AppsFlyer from another attribution vendor to avoid double charges, data duplication, and data loss."
+x-zendesk:
+  id: 360001923697
+  url: https://support.appsflyer.com/hc/en-us/articles/360001923697-Migration-to-AppsFlyer-from-other-vendors
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Marketer onboarding
+  section_id: 6550866490129
+  position: 4
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials]
+  labels: [Advertisers, Marketers, Loc In Prog]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-07-01T13:11:37Z'
+  edited_at: '2026-06-16T12:04:07Z'
 ---
 At a glance: Plan your migration to AppsFlyer from another attribution vendor. Understand how to avoid double charges, data duplication, and data loss during the migration period.
 

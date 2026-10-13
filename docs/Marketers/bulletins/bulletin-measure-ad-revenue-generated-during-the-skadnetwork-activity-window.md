@@ -2,6 +2,26 @@
 title: "Bulletin: Measure ad revenue generated during the SKAdNetwork activity window"
 excerpt: "Learn how to attribute ad revenue generated during the SKAdNetwork activity window to the campaign bringing the user."
 table_of_contents: false
+x-zendesk:
+  id: 4404213118481
+  url: https://support.appsflyer.com/hc/en-us/articles/4404213118481-Bulletin-Measure-ad-revenue-generated-during-the-SKAdNetwork-activity-window
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 54
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-michael-talapov, Marketers, ROI360, Ad Networks]
+  labels: [Ad Networks, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-07-18T08:44:11Z'
+  edited_at: '2023-11-26T12:52:15Z'
 ---
 ![iOS15.png](https://files.readme.io/b61770f82edee601aec1fba95c93bbf5b7e4ad3615a82205aa9c7da8cfe547f0-20445082158609.png)
 

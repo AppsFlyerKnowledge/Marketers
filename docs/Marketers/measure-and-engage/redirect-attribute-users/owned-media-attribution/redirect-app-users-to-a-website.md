@@ -1,6 +1,26 @@
 ---
 title: "Redirect app users to a website"
 excerpt: "Learn how to redirect app users to an external web URL or social media page using a OneLink URL while measuring click efficacy."
+x-zendesk:
+  id: 4460838224273
+  url: https://support.appsflyer.com/hc/en-us/articles/4460838224273-Redirect-app-users-to-a-website
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Owned media attribution
+  section_id: 6551214397585
+  position: 4
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-asaf-mashiah, Marketers, Social-to-App]
+  labels: [OneLink, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-02-22T11:45:43Z'
+  edited_at: '2024-12-09T09:17:42Z'
 ---
 Advertisers can post OneLink URLs leading to external web pages or social media sites. AppsFlyer measures the clicks on the link inside the app, by which you can determine the efficacy of the ad.
 

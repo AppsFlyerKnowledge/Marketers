@@ -1,6 +1,26 @@
 ---
 title: "Salesforce Marketing Cloud (SFMC) integration with AppsFlyer"
 excerpt: "Integrate AppsFlyer with Salesforce Marketing Cloud to deep link users from email campaigns to in-app content and sync in-app event data to trigger journeys."
+x-zendesk:
+  id: 50431751712529
+  url: https://support.appsflyer.com/hc/en-us/articles/50431751712529-Salesforce-Marketing-Cloud-SFMC-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Email service providers
+  section_id: 6551247620881
+  position: 8
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: []
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2026-09-01T14:53:41Z'
+  edited_at: '2026-09-07T12:30:09Z'
 ---
 Integrate AppsFlyer with Salesforce Marketing Cloud (SFMC) to deep link users from email campaigns to in-app content. Sync in-app event data into SFMC to build audiences and trigger journeys based on real app behavior.
 

@@ -1,6 +1,26 @@
 ---
 title: Conversions cross-platform report
 excerpt: "The Conversions cross-platform report shows the complete user journey behind each cross-platform conversion, including the full assisting engagement chain and revenue context."
+x-zendesk:
+  id: 50451304393617
+  url: https://support.appsflyer.com/hc/en-us/articles/50451304393617-Conversions-cross-platform-report
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Cross platform reports
+  section_id: 50467263168657
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [Marketers, Data Locker, Cross-Platform Measurement]
+  labels: []
+  promoted: false
+  comments_disabled: true
+  created_at: '2026-09-02T07:11:54Z'
+  edited_at: '2026-09-16T13:31:34Z'
 ---
 ## About the report
 

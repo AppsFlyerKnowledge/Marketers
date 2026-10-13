@@ -1,6 +1,26 @@
 ---
 title: "Updating to iOS SDK V6 and plugins"
 excerpt: "Learn how to update an existing AppsFlyer iOS SDK or wrapper integration to iOS SDK V6, including API changes and plugin updates."
+x-zendesk:
+  id: 360011571778
+  url: https://support.appsflyer.com/hc/en-us/articles/360011571778-Updating-to-iOS-SDK-V6-and-plugins
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: iOS platform
+  section_id: 6551263106577
+  position: 2
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [iOS, SDK, Integration, Advertisers, Developers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-07-30T14:07:32Z'
+  edited_at: '2026-08-14T16:22:40Z'
 ---
 Update an existing AppsFlyer iOS SDK/wrapper integration to iOS SDK V6.
 

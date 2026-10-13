@@ -2,6 +2,26 @@
 title: "Bulletin: Additional parameters available for deep linking existing users"
 excerpt: "AppsFlyer SDK V6.6+ allows the Unified Deep Linking (UDL) method to return additional parameters when deep linking existing users who already have the app installed."
 table_of_contents: false
+x-zendesk:
+  id: 5733303620113
+  url: https://support.appsflyer.com/hc/en-us/articles/5733303620113-Bulletin-Additional-parameters-available-for-deep-linking-existing-users
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 49
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-asaf-mashiah, Marketers, OneLink]
+  labels: [SDK, deep link, deep linking, Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-04-27T09:49:22Z'
+  edited_at: '2025-11-09T08:44:17Z'
 ---
 **At a glance:** Returning additional parameters for deep linking existing users via UDL method.
 

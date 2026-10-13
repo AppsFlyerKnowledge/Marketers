@@ -5,6 +5,16 @@ hidden: false
 link:
   new_tab: false
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6550753145745
+  url: https://support.appsflyer.com/hc/en-us/sections/6550753145745-Get-started
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  position: 0
+  sorting: manual
+  created_at: '2022-06-02T11:13:47Z'
 ---
 <Cards columns="2">
   <Card title="Marketer onboarding" href="/docs/marketer-onboarding" icon="fa-solid fa-rocket">

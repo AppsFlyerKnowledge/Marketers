@@ -1,6 +1,26 @@
 ---
 title: "In-app events for hybrid apps"
 excerpt: "Record in-app events from web-views embedded in your mobile app, allowing full event measurement even when the interaction occurs in the app’s web-based content."
+x-zendesk:
+  id: 207031976
+  url: https://support.appsflyer.com/hc/en-us/articles/207031976-In-app-events-for-hybrid-apps
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: In-app events
+  section_id: 6551285343761
+  position: 7
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Web Attribution]
+  labels: [Event, In-App, Native, HTML, Web View, wkwebview, webkit, Developers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2014-08-07T12:45:23Z'
+  edited_at: '2025-11-29T11:08:05Z'
 ---
 **At a glance:** Record in-app events from web-views embedded in your mobile app, allowing full event measurement even when the interaction occurs in the app’s web-based content.
 

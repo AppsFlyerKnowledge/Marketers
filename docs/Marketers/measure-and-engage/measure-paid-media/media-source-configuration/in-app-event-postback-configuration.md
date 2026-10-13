@@ -1,6 +1,26 @@
 ---
 title: "In-app event postback configuration"
 excerpt: "Measure app engagement and user quality, and optimize campaigns using in-app events data sent via real-time postbacks."
+x-zendesk:
+  id: 208439256
+  url: https://support.appsflyer.com/hc/en-us/articles/208439256-In-app-event-postback-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Media source configuration
+  section_id: 6551067072785
+  position: 3
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [In-App Events, Advertisers, Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-04-11T08:47:14Z'
+  edited_at: '2026-09-27T06:37:38Z'
 ---
 **At a glance:** Measure app engagement and quality of your users, and optimize campaigns using in-app events data.
 

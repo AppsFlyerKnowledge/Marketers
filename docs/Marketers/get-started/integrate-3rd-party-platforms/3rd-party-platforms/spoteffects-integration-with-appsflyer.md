@@ -1,6 +1,26 @@
 ---
 title: "Spoteffects integration with AppsFlyer"
 excerpt: "Learn how to set up the Spoteffects integration with AppsFlyer to optimize your TV campaigns based on immediately generated visits and conversions."
+x-zendesk:
+  id: 115004574426
+  url: https://support.appsflyer.com/hc/en-us/articles/115004574426-Spoteffects-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 27
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
+  labels: [Advertisers, Webeffects, Ad Networks, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2017-09-06T14:38:15Z'
+  edited_at: '2026-06-16T09:52:43Z'
 ---
 **At a glance:** Spoteffects, an AppsFlyer integrated partner, develops and markets the software as a service solution. The solution allows media planners to optimize their TV campaigns for online shops and websites based on immediately generated visits and conversions per ad.
 

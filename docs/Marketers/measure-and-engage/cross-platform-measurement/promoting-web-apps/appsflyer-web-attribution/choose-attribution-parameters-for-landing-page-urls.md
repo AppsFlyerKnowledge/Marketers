@@ -1,6 +1,26 @@
 ---
 title: "Choose attribution parameters for landing page URLs"
 excerpt: "Learn how to use consistent PID and UTM parameters in your landing page URLs to ensure accurate campaign attribution and granularity in Web Performance Measurement."
+x-zendesk:
+  id: 43525434385809
+  url: https://support.appsflyer.com/hc/en-us/articles/43525434385809-Choose-attribution-parameters-for-landing-page-URLs
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: AppsFlyer Web Attribution
+  section_id: 43560690387729
+  position: 7
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, Marketers, Web Attribution, Agencies]
+  labels: [Agencies, Web Attribution, Web Attribution SDK, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2026-02-04T16:46:08Z'
+  edited_at: '2026-08-03T08:32:26Z'
 ---
 Use consistent, complete URL parameters in your website landing page links to get the best campaign granularity while maintaining accurate attribution in Web Performance Measurement.
 

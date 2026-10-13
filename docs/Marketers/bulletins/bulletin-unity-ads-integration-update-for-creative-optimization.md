@@ -2,6 +2,26 @@
 title: "Bulletin: Unity Ads integration update for Creative Optimization"
 excerpt: "Important update regarding the Unity Ads API integration for Creative Optimization and the required service account role updates before November 14, 2024."
 table_of_contents: false
+x-zendesk:
+  id: 29015948289937
+  url: https://support.appsflyer.com/hc/en-us/articles/29015948289937-Bulletin-Unity-Ads-integration-update-for-Creative-Optimization
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 9
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-omer-katzburg, Marketers, Creative Optimization]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-10-08T03:18:32Z'
+  edited_at: '2024-10-10T21:31:08Z'
 ---
 |     |     |
 | --- | --- |

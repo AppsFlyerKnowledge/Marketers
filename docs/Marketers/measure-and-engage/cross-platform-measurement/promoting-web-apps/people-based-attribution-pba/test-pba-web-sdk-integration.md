@@ -1,6 +1,26 @@
 ---
 title: "Test PBA web SDK integration"
 excerpt: "Learn how to test the Web SDK PBA plugin integration, send test events, and troubleshoot common issues."
+x-zendesk:
+  id: 360012729178
+  url: https://support.appsflyer.com/hc/en-us/articles/360012729178-Test-PBA-web-SDK-integration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: People Based Attribution (PBA)
+  section_id: 43560588808721
+  position: 9
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-gil-or, Marketers, Cross-Platform Measurement]
+  labels: [Developers, PBA, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-09-01T19:09:41Z'
+  edited_at: '2024-01-11T11:04:05Z'
 ---
 **At a glance:** Test the Web SDK PBA plugin integration.
 

@@ -1,6 +1,26 @@
 ---
 title: "Campaign properties in cost ETL reports"
 excerpt: "Learn about campaign properties and how they display in AppsFlyer Cost ETL data for Meta ads, Google, and Snap."
+x-zendesk:
+  id: 360020994977
+  url: https://support.appsflyer.com/hc/en-us/articles/360020994977-Campaign-properties-in-cost-ETL-reports
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Cost aggregation
+  section_id: 6551029483281
+  position: 9
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-maytav-avnat, Marketers, ROI360]
+  labels: [cost, Advertisers, Xpend, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-06-02T17:21:22Z'
+  edited_at: '2025-04-05T11:08:21Z'
 ---
 **At a glance:** Learn about campaign properties and how they display in AppsFlyer Cost ETL data.
 

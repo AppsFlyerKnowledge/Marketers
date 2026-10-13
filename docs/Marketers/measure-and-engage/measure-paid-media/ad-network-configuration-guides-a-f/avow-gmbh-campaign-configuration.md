@@ -1,6 +1,26 @@
 ---
 title: "Avow GmbH campaign configuration"
 excerpt: "Configure the Avow GmbH integration in AppsFlyer to run User Acquisition campaigns with click-through and view-through attribution."
+x-zendesk:
+  id: 18523546870929
+  url: https://support.appsflyer.com/hc/en-us/articles/18523546870929-Avow-GmbH-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  position: 13
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Agencies]
+  labels: [Agencies, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-09-13T07:21:40Z'
+  edited_at: '2026-06-16T12:14:26Z'
 ---
 AVOW GmbH (avow1_int) is an integrated partner with both ad network and agency accounts, that allows advertisers to run User Acquisition campaigns on mobile devices. In addition to click-based mobile attribution, Avow GmbH also offers view-through attribution, which advertisers can record with AppsFlyer.
 

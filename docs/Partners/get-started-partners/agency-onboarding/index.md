@@ -2,6 +2,17 @@
 title: "Agency onboarding"
 excerpt: "Learn how to get started with AppsFlyer for marketing agencies, including account setup, user management, and marketplace profiles."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551110223889
+  url: https://support.appsflyer.com/hc/en-us/sections/6551110223889-Agency-onboarding
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  parent_section_id: 6550863656977
+  position: 3
+  sorting: manual
+  created_at: '2022-06-02T11:27:47Z'
 ---
 Getting started with AppsFlyer for marketing agencies
 

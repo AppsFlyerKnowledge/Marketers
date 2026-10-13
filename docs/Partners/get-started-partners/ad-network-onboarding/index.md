@@ -2,6 +2,17 @@
 title: "Ad network onboarding"
 excerpt: "Learn how to integrate with AppsFlyer as an ad network, manage your profile, set up user access, and configure attribution settings."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551058566033
+  url: https://support.appsflyer.com/hc/en-us/sections/6551058566033-Ad-network-onboarding
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  parent_section_id: 6550863656977
+  position: 0
+  sorting: manual
+  created_at: '2022-06-02T11:25:56Z'
 ---
 Integration with AppsFlyer for ad networks
 

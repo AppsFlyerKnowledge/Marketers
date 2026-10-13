@@ -1,6 +1,26 @@
 ---
 title: "About raw data identifier restrictions"
 excerpt: "Some partners require AppsFlyer to restrict certain fields in specific raw data reports, or request redaction of the media source when sharing postbacks with third-party platforms."
+x-zendesk:
+  id: 360006868017
+  url: https://support.appsflyer.com/hc/en-us/articles/360006868017-About-raw-data-identifier-restrictions
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Preserve user privacy
+  section_id: 6551440878097
+  position: 6
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-rona-einat, Marketers, Agencies, Raw Reports]
+  labels: [Advertisers, Agencies, Marketers, Loc In Prog]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-03-23T08:29:01Z'
+  edited_at: '2026-10-07T08:17:07Z'
 ---
 **At a glance:** Some partners require AppsFlyer to restrict certain fields in specific raw data reports. In other cases, partners may request redaction of the media source when sharing postbacks with third-party platforms. This article outlines these restrictions and their implications.
 

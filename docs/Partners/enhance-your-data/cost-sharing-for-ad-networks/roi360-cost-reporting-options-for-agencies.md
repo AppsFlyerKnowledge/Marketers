@@ -1,6 +1,26 @@
 ---
 title: "ROI360—cost reporting options for agencies"
 excerpt: "Learn how agencies can report cost data to AppsFlyer using Cost API via ROI360 or Cost by click on attribution links."
+x-zendesk:
+  id: 360014054998
+  url: https://support.appsflyer.com/hc/en-us/articles/360014054998-ROI360-cost-reporting-options-for-agencies
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Cost sharing for ad networks
+  section_id: 6551141756177
+  position: 3
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-maytav-avnat, Agencies, ROI360]
+  labels: [clicks, cost, Agencies, Partners, ad spend, Xpend]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-10-04T15:07:34Z'
+  edited_at: '2023-03-15T08:18:33Z'
 ---
 Report cost data via cost API (requires a subscription to ROI360 premium solution), and cost by click.
 

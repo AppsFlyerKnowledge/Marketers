@@ -1,6 +1,26 @@
 ---
 title: "Using AppsFlyer with TWA"
 excerpt: "Learn how to use AppsFlyer with Trusted Web Activities (TWA) and Progressive Web Apps (PWA) to measure installs and record in-app events."
+x-zendesk:
+  id: 360002330178
+  url: https://support.appsflyer.com/hc/en-us/articles/360002330178-Using-AppsFlyer-with-TWA
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Android platform
+  section_id: 6551190827921
+  position: 4
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [Web View, Developers, TWA, PWA, Trusted web activities, Progressive web apps, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-08-26T05:08:01Z'
+  edited_at: '2023-03-26T09:39:25Z'
 ---
 **At a glance:** Use AppsFlyer with Trusted Web Activities (TWA) to measure installs and record in-app events.
 

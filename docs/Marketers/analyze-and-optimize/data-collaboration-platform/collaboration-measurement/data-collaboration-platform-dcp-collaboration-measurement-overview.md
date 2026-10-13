@@ -1,6 +1,26 @@
 ---
 title: "Data collaboration platform (DCP) - Collaboration measurement - Overview"
 excerpt: "Learn about collaboration measurement, its basic concepts, and data flow within the Data Collaboration Platform (DCP)."
+x-zendesk:
+  id: 32143318560017
+  url: https://support.appsflyer.com/hc/en-us/articles/32143318560017-Data-collaboration-platform-DCP-Collaboration-measurement-Overview
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Collaboration measurement
+  section_id: 38034865098641
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-yael-sharabi, Marketers, Retail Media Measurement]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-01-27T08:21:27Z'
+  edited_at: '2026-02-22T16:23:08Z'
 ---
 **At a glance:** Learn about collaboration measurement, its basic concepts, and data flow.
 

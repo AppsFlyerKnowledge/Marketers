@@ -2,6 +2,17 @@
 title: "X Ads (formerly Twitter Ads)"
 excerpt: "Set up X Ads and its partners for AppsFlyer attribution, configure integration settings, and resolve discrepancies."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551370375569
+  url: https://support.appsflyer.com/hc/en-us/sections/6551370375569-X-Ads-formerly-Twitter-Ads
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550990672401
+  position: 14
+  sorting: manual
+  created_at: '2022-06-02T11:40:14Z'
 ---
 Set up X Ads and its partners for AppsFlyer attribution
 

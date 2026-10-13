@@ -3,6 +3,16 @@ title: "Enhance your data"
 deprecated: false
 hidden: false
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551110127761
+  url: https://support.appsflyer.com/hc/en-us/sections/6551110127761-Enhance-your-data
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  position: 1
+  sorting: manual
+  created_at: '2022-06-02T11:27:46Z'
 ---
 <Cards columns={2}>
   <Card title="Provide data" href="/docs/provide-data" icon="fa-solid fa-file-lines">

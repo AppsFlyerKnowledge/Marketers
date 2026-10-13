@@ -2,6 +2,17 @@
 title: "Protect your traffic"
 excerpt: "Learn how to set up Protect360 Validation Rules, dashboards, and alerts to protect your mobile application traffic from fraud."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551015912465
+  url: https://support.appsflyer.com/hc/en-us/sections/6551015912465-Protect-your-traffic
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550913619473
+  position: 3
+  sorting: manual
+  created_at: '2022-06-02T11:27:14Z'
 ---
 Set up Protect360 Validation Rules and alerts to protect your traffic from fraud
 

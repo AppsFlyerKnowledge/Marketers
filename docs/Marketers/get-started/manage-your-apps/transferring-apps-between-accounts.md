@@ -1,6 +1,26 @@
 ---
 title: "Transferring apps between accounts"
 excerpt: "Learn how to transfer apps between AppsFlyer accounts, including prerequisites, transfer scope, and step-by-step procedures for both senders and receivers."
+x-zendesk:
+  id: 360001336005
+  url: https://support.appsflyer.com/hc/en-us/articles/360001336005-Transferring-apps-between-accounts
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Manage your apps
+  section_id: 6551015977105
+  position: 3
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies]
+  labels: [Account, Advertisers, Agencies, moving apps, move app, app transfer, transferring apps, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2018-07-24T07:56:37Z'
+  edited_at: '2026-09-22T10:53:22Z'
 ---
 Transfer apps between AppsFlyer accounts by following the steps described in this article (for admins of both the sender and receiver accounts).
 

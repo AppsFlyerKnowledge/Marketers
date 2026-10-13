@@ -1,6 +1,26 @@
 ---
 title: "Partner Integrations"
 excerpt: "Discover, review, activate, and manage partner integrations such as ad networks, agencies, and analytics platforms from one central place in AppsFlyer."
+x-zendesk:
+  id: 9960361873809
+  url: https://support.appsflyer.com/hc/en-us/articles/9960361873809-Partner-Integrations
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Media source configuration
+  section_id: 6551067072785
+  position: 5
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Marketers, marketplace, Loc In Prog]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-10-18T19:06:54Z'
+  edited_at: '2026-05-03T13:55:35Z'
 ---
 **At a glance**: Discover, review, activate, and manage partner integrations (ad networks, agencies, tech partners, analytics platforms, and more) from one central place in AppsFlyer.
 

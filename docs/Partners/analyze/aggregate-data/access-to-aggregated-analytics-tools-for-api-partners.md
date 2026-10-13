@@ -1,6 +1,26 @@
 ---
 title: "Access to aggregated analytics tools for API partners"
 excerpt: "Learn how API partners can use their API token to access advertisers' performance metrics and how advertisers can grant and manage these permissions."
+x-zendesk:
+  id: 360005854857
+  url: https://support.appsflyer.com/hc/en-us/articles/360005854857-Access-to-aggregated-analytics-tools-for-API-partners
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Aggregate data
+  section_id: 6551715006353
+  position: 1
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics, Ad Networks]
+  labels: [Advertisers, Ad Networks, Partners, Premium API]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-02-17T10:50:10Z'
+  edited_at: '2026-08-13T13:36:27Z'
 ---
 API partners can use their API token to access advertisers' data when granted permission by the advertiser, allowing them to extract performance metrics from the platform.
 

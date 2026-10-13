@@ -1,6 +1,26 @@
 ---
 title: "PBA Web-Assisted Installs"
 excerpt: "Use the PBA Web-Assisted Installs dashboard to understand the impact of your web marketing efforts on mobile app installs and to enhance the performance of web campaigns."
+x-zendesk:
+  id: 360002669837
+  url: https://support.appsflyer.com/hc/en-us/articles/360002669837-PBA-Web-Assisted-Installs
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Dashboards
+  section_id: 6550925337873
+  position: 17
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, Marketers, Cross-Platform Measurement]
+  labels: [People Based Attribution, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-10-03T08:08:37Z'
+  edited_at: '2024-04-15T18:14:08Z'
 ---
 **At a glance:** At a glance: Use the PBA Web-Assisted Installs dashboard to understand the impact of your web marketing efforts on mobile app installs and to enhance the performance of web campaigns.
 

@@ -1,6 +1,26 @@
 ---
 title: "Cross-promotion attribution for marketers"
 excerpt: "Learn how to attribute installs from cross-promotion campaigns that promote your apps on other apps you own using device ID matching."
+x-zendesk:
+  id: 115004481946
+  url: https://support.appsflyer.com/hc/en-us/articles/115004481946-Cross-promotion-attribution-for-marketers
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Owned media attribution
+  section_id: 6551214397585
+  position: 7
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-asaf-mashiah, Marketers, OneLink]
+  labels: [tracking, Advertisers, Cross Promotion, cross-promotion, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2017-08-30T13:26:03Z'
+  edited_at: '2024-09-22T10:59:57Z'
 ---
 At a glance: Attribute installs from cross-promotion campaigns that promote your apps on other apps you own.
 

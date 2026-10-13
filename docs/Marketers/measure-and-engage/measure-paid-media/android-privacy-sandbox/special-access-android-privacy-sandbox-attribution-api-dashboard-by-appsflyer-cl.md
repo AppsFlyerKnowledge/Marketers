@@ -1,6 +1,26 @@
 ---
 title: "[Special access] Android privacy sandbox attribution API dashboard by AppsFlyer (closed beta)"
 excerpt: "Learn how to use the AppsFlyer Sandbox attribution dashboard to view campaign performance metrics reported via the Android Privacy Sandbox attribution reporting API."
+x-zendesk:
+  id: 26152436542097
+  url: https://support.appsflyer.com/hc/en-us/articles/26152436542097--Special-access-Android-privacy-sandbox-attribution-API-dashboard-by-AppsFlyer-closed-beta
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Android privacy sandbox
+  section_id: 25467093087761
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roi-tamir, Marketers, Mobile Attribution, Ad Networks]
+  labels: [Advertisers, Ad Networks, Marketers, Loc Published, Android Privacy Sandbox]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-06-24T07:50:19Z'
+  edited_at: '2026-08-13T12:17:12Z'
 ---
 The Sandbox attribution dashboard displays campaign metrics reported via Android Privacy Sandbox attribution reporting API and additional data points during the post-install attribution exclusivity window.
 

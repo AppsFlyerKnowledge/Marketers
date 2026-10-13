@@ -1,6 +1,26 @@
 ---
 title: "Protecting against phishing attacks"
 excerpt: "Learn how to identify phishing attempts, recognize employment scams, and protect your personal information by verifying official AppsFlyer communications."
+x-zendesk:
+  id: 37207216165905
+  url: https://support.appsflyer.com/hc/en-us/articles/37207216165905-Protecting-against-phishing-attacks
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 70
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2025-07-16T09:39:30Z'
+  edited_at: '2025-07-17T00:01:09Z'
 ---
 Phishing is a deceptive tactic used by cybercriminals to obtain sensitive information such as login credentials, financial details, or personal data. These attacks typically involve fraudulent emails, messages, or websites that impersonate legitimate organizations or individuals, with the intention of manipulating recipients into disclosing confidential information.
 

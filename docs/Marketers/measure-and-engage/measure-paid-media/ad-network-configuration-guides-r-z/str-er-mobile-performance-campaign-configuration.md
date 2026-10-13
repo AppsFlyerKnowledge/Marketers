@@ -1,6 +1,26 @@
 ---
 title: "Ströer Mobile Performance campaign configuration"
 excerpt: "Learn how to configure your mobile campaigns and record cost data with Ströer Mobile Performance in AppsFlyer."
+x-zendesk:
+  id: 115000068903
+  url: https://support.appsflyer.com/hc/en-us/articles/115000068903-Str%C3%B6er-Mobile-Performance-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  position: 9
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Stroer, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-12-19T09:26:27Z'
+  edited_at: '2026-07-27T09:42:39Z'
 ---
 Ströer Mobile Performance, an AppsFlyer ad network integrated partner, provides international exposure suited to mobile applications through its unique global network. In addition to click-based mobile attribution, Ströer Mobile Performance provides cost data, which can be recorded with AppsFlyer.
 

@@ -1,6 +1,26 @@
 ---
 title: "Data Collaboration Platform (DCP) guide"
 excerpt: "The AppsFlyer Data Collaboration Platform provides a seamless, privacy-centric solution for commerce media networks and collaborating brands to leverage combined data for maximum campaign results."
+x-zendesk:
+  id: 26183285566353
+  url: https://support.appsflyer.com/hc/en-us/articles/26183285566353-Data-Collaboration-Platform-DCP-guide
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Data Collaboration Platform
+  section_id: 26230608274065
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-yael-sharabi, Marketers, Data Clean Room]
+  labels: [Premium, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-06-25T07:41:51Z'
+  edited_at: '2025-12-18T10:57:39Z'
 ---
 The AppsFlyer Data Collaboration Platform (DCP) is an advanced, next-generation solution that empowers commerce media networks and brands to unlock the potential of their combined data. Through secure, privacy-centric features, the platform enables seamless collaborations, allowing businesses to generate new ad revenue streams and build custom audiences for activation of spot-on campaigns anywhere.
 

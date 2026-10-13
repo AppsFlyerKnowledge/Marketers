@@ -1,6 +1,26 @@
 ---
 title: "Adcash campaign configuration"
 excerpt: "Learn how to configure the Adcash integration in AppsFlyer, including setting up postbacks, attribution links, and partner permissions."
+x-zendesk:
+  id: 216519003
+  url: https://support.appsflyer.com/hc/en-us/articles/216519003-Adcash-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  position: 1
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Advertisers, Adcash, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-11-06T08:15:21Z'
+  edited_at: '2026-07-23T13:13:54Z'
 ---
 Adcash, an AppsFlyer ad network integrated partner, is a worldwide advertising platform providing a fully programmable self-service demand-side platform.
 

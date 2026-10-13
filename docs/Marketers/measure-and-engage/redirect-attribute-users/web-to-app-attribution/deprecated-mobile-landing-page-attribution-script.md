@@ -1,6 +1,26 @@
 ---
 title: "[Deprecated] Mobile landing page attribution script"
 excerpt: "This deprecated script generates URLs embedded behind buttons on mobile websites to redirect visitors to download apps while supporting install attribution and deep linking."
+x-zendesk:
+  id: 360016643258
+  url: https://support.appsflyer.com/hc/en-us/articles/360016643258--Deprecated-Mobile-landing-page-attribution-script
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Web-to-app attribution
+  section_id: 6551240476177
+  position: 8
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-asaf-mashiah, Marketers, Agencies, Smart Banners and Scripts]
+  labels: [Landing Page, Facebook, Adwords, Advertisers, Agencies, GCLID, Developers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-12-16T17:28:55Z'
+  edited_at: '2023-04-02T15:41:35Z'
 ---
 > 🚧 Deprecation Notice
 >

@@ -1,6 +1,26 @@
 ---
 title: "Youdao DSP campaign configuration"
 excerpt: "Learn how to set up and configure your mobile attribution campaigns with Youdao DSP in AppsFlyer."
+x-zendesk:
+  id: 360002133558
+  url: https://support.appsflyer.com/hc/en-us/articles/360002133558-Youdao-DSP-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: China domestic market ad network configuration
+  section_id: 6552066355601
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [integrated partner, Advertisers, youdao, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-07-30T09:13:02Z'
+  edited_at: '2026-09-15T10:32:12Z'
 ---
 **At a glance:** Youdao DSP is an AppsFlyer ad network integrated partner.
 

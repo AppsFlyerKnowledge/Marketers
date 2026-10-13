@@ -1,6 +1,26 @@
 ---
 title: "Adikteev campaign configuration"
 excerpt: "Learn how to configure Adikteev, an AppsFlyer integrated partner, for mobile attribution, retargeting, cost API, and permissions."
+x-zendesk:
+  id: 115001997643
+  url: https://support.appsflyer.com/hc/en-us/articles/115001997643-Adikteev-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  position: 5
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Trademob, Advertisers, adikteev, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2017-04-20T15:23:26Z'
+  edited_at: '2026-09-09T13:27:01Z'
 ---
 At a glance: Adikteev, an AppsFlyer ad network integrated partner, is an ad-tech company focusing on in-app retargeting and engagement advertising technology. Adikteev offers both click-based and view-through mobile attribution. In addition, Adikteev also offers click-based retargeting which you can record with AppsFlyer.
 

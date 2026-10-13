@@ -1,6 +1,26 @@
 ---
 title: "Meta Ads— Create web-based campaigns"
 excerpt: "Learn how to set up Meta Ads Web campaigns to attribute web-to-app conversions from Meta Ads using AppsFlyer's integration."
+x-zendesk:
+  id: 25646834966033
+  url: https://support.appsflyer.com/hc/en-us/articles/25646834966033-Meta-Ads-Create-web-based-campaigns
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Meta ads
+  section_id: 6551109855761
+  position: 3
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Marketers, Loc Published]
+  promoted: false
+  comments_disabled: false
+  created_at: '2024-06-04T16:08:28Z'
+  edited_at: '2026-09-15T10:56:07Z'
 ---
 **At a glance:** Use Meta Ads Web campaigns to attribute web-to-app conversions from Meta Ads
 

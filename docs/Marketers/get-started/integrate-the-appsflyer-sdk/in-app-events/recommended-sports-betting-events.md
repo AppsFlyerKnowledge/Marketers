@@ -1,6 +1,26 @@
 ---
 title: "Recommended sports betting events"
 excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your sports betting app."
+x-zendesk:
+  id: 4410672219025
+  url: https://support.appsflyer.com/hc/en-us/articles/4410672219025-Recommended-sports-betting-events
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: In-app events
+  section_id: 6551285343761
+  position: 20
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-11-11T13:24:45Z'
+  edited_at: '2023-12-04T11:47:06Z'
 ---
 ## ![soccer_ball.png](https://files.readme.io/2c5150b2c50ec166878cd976154dc81c0dc8a1e710fa8869aa582b535313b464-4413968925585.png) Sports betting
 

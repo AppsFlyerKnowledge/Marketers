@@ -2,6 +2,26 @@
 title: "Bulletin: TikTok iOS integration update"
 excerpt: "AppsFlyer is updating the privacy configuration for the TikTok iOS integration, replacing the Advanced Privacy toggle with Advanced Data Sharing."
 table_of_contents: false
+x-zendesk:
+  id: 47060384221457
+  url: https://support.appsflyer.com/hc/en-us/articles/47060384221457-Bulletin-TikTok-iOS-integration-update
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: []
+  promoted: false
+  comments_disabled: false
+  created_at: '2026-05-26T09:57:55Z'
+  edited_at: '2026-06-02T14:44:06Z'
 ---
 | Section | Details |
 | --- | --- |

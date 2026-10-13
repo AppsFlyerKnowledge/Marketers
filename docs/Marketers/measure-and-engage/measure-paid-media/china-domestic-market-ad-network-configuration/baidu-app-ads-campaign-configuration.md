@@ -1,6 +1,26 @@
 ---
 title: "Baidu App Ads campaign configuration"
 excerpt: "Learn how to configure and set up Baidu App Ads (Baitong) campaigns in AppsFlyer, including integration, attribution links, and permissions."
+x-zendesk:
+  id: 115003044146
+  url: https://support.appsflyer.com/hc/en-us/articles/115003044146-Baidu-App-Ads-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: China domestic market ad network configuration
+  section_id: 6552066355601
+  position: 35
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Baidu App Ads, Baidu, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2017-06-18T07:40:30Z'
+  edited_at: '2026-09-15T10:37:14Z'
 ---
 **At a glance:** Baidu App Ads (Baitong), an AppsFlyer ad network integrated partners, is one of the biggest App promotion and distribution platforms in the China domestic market, integrating the mobile traffic of App Stores (Baidu Mobile Assistant, Android Market, 91 Mobile Assistant, etc.), Baidu Mobile Search, Super App, and Baidu Affiliates.
 

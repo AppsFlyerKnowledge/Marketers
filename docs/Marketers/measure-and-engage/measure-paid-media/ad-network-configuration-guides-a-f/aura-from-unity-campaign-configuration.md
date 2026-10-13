@@ -1,6 +1,26 @@
 ---
 title: "Aura from Unity campaign configuration"
 excerpt: "Learn how to integrate and configure Aura from Unity in AppsFlyer to attribute campaigns, measure cost, and manage permissions."
+x-zendesk:
+  id: 360005208578
+  url: https://support.appsflyer.com/hc/en-us/articles/360005208578-Aura-from-Unity-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  position: 12
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Agencies]
+  labels: [Campaign, Advertisers, Agencies, aura, ironsource, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-01-27T11:23:49Z'
+  edited_at: '2026-06-16T12:13:38Z'
 ---
 Aura from Unity, an AppsFlyer ad network integrated partner, is a platform that allows advertisers to connect with users when they set up a new device.
 

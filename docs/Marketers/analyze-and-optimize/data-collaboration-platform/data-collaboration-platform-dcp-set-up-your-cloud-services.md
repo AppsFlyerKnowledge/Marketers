@@ -1,6 +1,26 @@
 ---
 title: "Data Collaboration Platform (DCP) - Set up your cloud services"
 excerpt: "Set up your cloud services so you can connect your source data to DCP and export audiences to your cloud storage buckets."
+x-zendesk:
+  id: 24604528827921
+  url: https://support.appsflyer.com/hc/en-us/articles/24604528827921-Data-Collaboration-Platform-DCP-Set-up-your-cloud-services
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Data Collaboration Platform
+  section_id: 26230608274065
+  position: 1
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-yael-sharabi, Marketers, Audience Activation]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-04-28T14:01:34Z'
+  edited_at: '2026-07-27T06:59:59Z'
 ---
 ## About cloud service setup
 

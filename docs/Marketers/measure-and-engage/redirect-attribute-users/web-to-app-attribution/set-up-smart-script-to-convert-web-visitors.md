@@ -1,6 +1,26 @@
 ---
 title: "Set up Smart Script to convert web visitors"
 excerpt: "Set up OneLink Smart Script to convert and attribute your mobile website visitors, coming from any source, into mobile app users."
+x-zendesk:
+  id: 4413588932241
+  url: https://support.appsflyer.com/hc/en-us/articles/4413588932241-Set-up-Smart-Script-to-convert-web-visitors
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Web-to-app attribution
+  section_id: 6551240476177
+  position: 6
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-asaf-mashiah, Marketers, Smart Banners and Scripts]
+  labels: [OneLink, Advertisers, Developers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-12-13T09:57:23Z'
+  edited_at: '2026-09-02T13:20:25Z'
 ---
 **At a glance:** Set up OneLink Smart Script to convert and attribute your mobile website visitors, coming from any source, into mobile app users.
 

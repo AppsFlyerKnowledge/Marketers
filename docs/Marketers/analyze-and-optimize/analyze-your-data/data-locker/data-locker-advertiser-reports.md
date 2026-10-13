@@ -1,6 +1,26 @@
 ---
 title: "Data Locker advertiser reports"
 excerpt: "An overview of the aggregate, raw, and advanced raw data reports available to advertisers via Data Locker."
+x-zendesk:
+  id: 4410643856657
+  url: https://support.appsflyer.com/hc/en-us/articles/4410643856657-Data-Locker-advertiser-reports
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Data Locker
+  section_id: 6550945728657
+  position: 1
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-rona-einat, Marketers, Data Locker]
+  labels: [Advertisers, Premium Feature, Marketers, Loc In Prog, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-11-11T09:48:51Z'
+  edited_at: '2026-05-01T12:12:32Z'
 ---
 At a glance: Aggregate and raw data reports available via Data Locker
 

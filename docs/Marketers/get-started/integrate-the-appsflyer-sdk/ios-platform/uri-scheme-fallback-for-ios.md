@@ -1,6 +1,26 @@
 ---
 title: "URI scheme fallback for iOS"
 excerpt: "Understand the flow when a user with an iOS device clicks on a OneLink custom link and Universal Links fails to open the app."
+x-zendesk:
+  id: 115002366466
+  url: https://support.appsflyer.com/hc/en-us/articles/115002366466-URI-scheme-fallback-for-iOS
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: iOS platform
+  section_id: 6551263106577
+  position: 7
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [Advertisers, Redirects, Developers, Marketers, Loc In Prog]
+  promoted: false
+  comments_disabled: true
+  created_at: '2017-05-10T12:50:00Z'
+  edited_at: '2025-11-25T15:15:46Z'
 ---
 **At a glance:** Understand the flow when a user with an iOS device clicks on a OneLink custom link and Universal Links fails to open the app.
 

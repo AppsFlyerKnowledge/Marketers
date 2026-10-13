@@ -1,6 +1,26 @@
 ---
 title: "Protect360 anti-fraud guide"
 excerpt: "Protect360 provides app owners with real-time fraud protection and post-attribution detection to guard against attribution fraud."
+x-zendesk:
+  id: 218254203
+  url: https://support.appsflyer.com/hc/en-us/articles/218254203-Protect360-anti-fraud-guide
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Protect your traffic
+  section_id: 6551015912465
+  position: 5
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-yanai, Marketers, Protect360]
+  labels: [Advertisers, Protect360, protect, protect 360, '360', p360, P360, p 360, 360protect, Premium, Marketers]
+  promoted: true
+  comments_disabled: true
+  created_at: '2016-12-06T07:47:17Z'
+  edited_at: '2025-09-17T10:12:30Z'
 ---
 **At a glance:** Attribution fraud drains marketing budgets, pollutes marketing performance data, and can turn successful campaigns into losing ones. **Protect360 provides app owners with real-time fraud protection and post-attribution detection.**
 

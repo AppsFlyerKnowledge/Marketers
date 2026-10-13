@@ -1,6 +1,26 @@
 ---
 title: "Sina Weibo Ads campaign configuration"
 excerpt: "Learn how to configure Sina Weibo Ads campaigns in AppsFlyer, including setting up attribution links, retargeting, and permissions."
+x-zendesk:
+  id: 115004134086
+  url: https://support.appsflyer.com/hc/en-us/articles/115004134086-Sina-Weibo-Ads-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: China domestic market ad network configuration
+  section_id: 6552066355601
+  position: 29
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Advertisers, Sina Weibo Ads, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2017-08-15T08:37:03Z'
+  edited_at: '2026-09-15T10:50:56Z'
 ---
 **At a glance:** Sina Weibo Ads, an AppsFlyer ad network integrated partner, is one of the most popular social media platforms in China.
 

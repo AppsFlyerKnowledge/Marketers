@@ -2,6 +2,17 @@
 title: "Data delivery tools"
 excerpt: "Access your AppsFlyer data using Push API, Pull API, or various raw and aggregated data export download options."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6550995484561
+  url: https://support.appsflyer.com/hc/en-us/sections/6550995484561-Data-delivery-tools
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550901627921
+  position: 3
+  sorting: manual
+  created_at: '2022-06-02T11:22:49Z'
 ---
 Use Push API, Pull API, or download options to access your data
 

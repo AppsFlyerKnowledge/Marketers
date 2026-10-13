@@ -2,6 +2,26 @@
 title: "Bulletin: The Android SDK adds the AD_ID permission"
 excerpt: "Starting with AppsFlyer Android SDK V6.8.0, the AD_ID permission is declared in the SDK's AndroidManifest.xml to comply with Google Play Services requirements for Android 13."
 table_of_contents: false
+x-zendesk:
+  id: 7569900844689
+  url: https://support.appsflyer.com/hc/en-us/articles/7569900844689-Bulletin-The-Android-SDK-adds-the-AD-ID-permission
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 46
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-07-12T08:57:45Z'
+  edited_at: '2023-08-28T09:44:20Z'
 ---
 **At a glance:** Starting with AppsFlyer Android SDK V6.8.0, the AD_ID permission is declared in the SDK's AndroidManifest.xml.
 

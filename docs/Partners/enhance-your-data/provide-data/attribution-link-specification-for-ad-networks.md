@@ -1,6 +1,26 @@
 ---
 title: "Attribution link specification for ad networks"
 excerpt: "Learn how ad networks integrate with AppsFlyer by specifying and structuring their attribution links to notify AppsFlyer of user ad engagements."
+x-zendesk:
+  id: 4412938154513
+  url: https://support.appsflyer.com/hc/en-us/articles/4412938154513-Attribution-link-specification-for-ad-networks
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Provide data
+  section_id: 6551209900817
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-yael-sharabi, Ad Networks, Data Management]
+  labels: [Ad Networks, Partners, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-12-06T10:31:00Z'
+  edited_at: '2024-09-22T11:01:40Z'
 ---
 **At a glance:** Ad networks integrating with AppsFlyer specify their attribution link according to this article.
 

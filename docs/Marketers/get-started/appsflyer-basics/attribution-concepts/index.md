@@ -2,6 +2,17 @@
 title: "Attribution concepts"
 excerpt: "Understand the AppsFlyer attribution model, terms, dashboards, and A/B testing."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551394235409
+  url: https://support.appsflyer.com/hc/en-us/sections/6551394235409-Attribution-concepts
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6551113099153
+  position: 0
+  sorting: manual
+  created_at: '2022-06-02T11:41:58Z'
 ---
 <Cards>
   <Card title="AppsFlyer attribution model" href="/docs/appsflyer-attribution-model" icon="fa-solid fa-diagram-project">

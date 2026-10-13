@@ -2,6 +2,17 @@
 title: "Attribution scenarios"
 excerpt: "Learn how to measure uninstalls, multi-store Android apps, view-through engagements, and other advanced attribution scenarios."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551328497041
+  url: https://support.appsflyer.com/hc/en-us/sections/6551328497041-Attribution-scenarios
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6551113099153
+  position: 0
+  sorting: manual
+  created_at: '2022-06-02T11:39:50Z'
 ---
 Measure uninstalls, apps in multiple stores, impressions, affiliates, and more
 

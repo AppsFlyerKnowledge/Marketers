@@ -1,6 +1,26 @@
 ---
 title: "OneSignal integration with AppsFlyer"
 excerpt: "Learn how to integrate OneSignal with AppsFlyer to send user attribution data and trigger push notifications based on install campaigns."
+x-zendesk:
+  id: 360015926437
+  url: https://support.appsflyer.com/hc/en-us/articles/360015926437-OneSignal-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 23
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-11-29T08:11:41Z'
+  edited_at: '2026-08-14T16:22:59Z'
 ---
 OneSignal is the market-leading push notification and in-app messaging provider, supporting over 1 million developers and marketers with a best-of-breed engagement platform.
 

@@ -1,6 +1,26 @@
 ---
 title: "Kahuna integration with AppsFlyer"
 excerpt: "Learn how to configure the AppsFlyer integration with Kahuna to share user attribution data and install events."
+x-zendesk:
+  id: 212561966
+  url: https://support.appsflyer.com/hc/en-us/articles/212561966-Kahuna-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 14
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
+  labels: [kahuna, Advertisers, Ad Networks, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-09-14T11:26:59Z'
+  edited_at: '2026-06-16T11:44:01Z'
 ---
 **At a glance:** Kahuna, an AppsFlyer integrated partner, dedicated to empowering businesses to grow and thrive in the mobile era. We enable a new level of authentic engagement between brands and their customers wherever they are — the web, email, mobile, social channels — through personalized communication at scale. Powered by big data and machine learning, we help create delightful experiences for every customer with the perfect message, delivered on the right channel, at just the right time.
 

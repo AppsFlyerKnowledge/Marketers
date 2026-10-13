@@ -1,6 +1,26 @@
 ---
 title: "Measure assisted installs"
 excerpt: "Measure the broader impact of media sources that engaged your users and assisted before the last touch."
+x-zendesk:
+  id: 207040506
+  url: https://support.appsflyer.com/hc/en-us/articles/207040506-Measure-assisted-installs
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Attribution concepts
+  section_id: 6551394235409
+  position: 17
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-moran-davida, Marketers, Mobile Attribution, Agencies]
+  labels: [Attribution, installs, Assisted, multi-touch, reporting, assisted intalls, Advertisers, Agencies, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2015-12-24T10:21:25Z'
+  edited_at: '2026-05-25T14:01:59Z'
 ---
 **At a glance:** Measure the broader impact of media sources that engaged your users and assisted before the last touch.
 

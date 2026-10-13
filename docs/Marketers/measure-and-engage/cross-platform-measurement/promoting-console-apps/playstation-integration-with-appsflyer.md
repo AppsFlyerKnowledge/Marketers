@@ -1,6 +1,26 @@
 ---
 title: "PlayStation integration with AppsFlyer"
 excerpt: "Integrate your PlayStation app with AppsFlyer via S2S API to receive attribution and event data for your campaigns."
+x-zendesk:
+  id: 10342860530961
+  url: https://support.appsflyer.com/hc/en-us/articles/10342860530961-PlayStation-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Promoting Console apps
+  section_id: 15329052471057
+  position: 9
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roi-tamir, Marketers, PC & Console Attribution]
+  labels: [CTV, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-11-03T15:12:14Z'
+  edited_at: '2026-09-15T07:20:35Z'
 ---
 Learn how to integrate your PlayStation app with AppsFlyer and how to measure ads that run on PlayStation.
 

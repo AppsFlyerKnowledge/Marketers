@@ -1,6 +1,26 @@
 ---
 title: "GMP use case of traffic measurement from 3rd parties in CMP360"
 excerpt: "Learn how to buy traffic from third-party media sources in CM360 and measure mobile app conversions originating from this source both in AppsFlyer and CM360."
+x-zendesk:
+  id: 360018228758
+  url: https://support.appsflyer.com/hc/en-us/articles/360018228758-GMP-use-case-of-traffic-measurement-from-3rd-parties-in-CMP360
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Google Marketing Platform (GMP)
+  section_id: 6551212604305
+  position: 1
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-03-03T12:42:31Z'
+  edited_at: '2026-10-06T13:41:38Z'
 ---
 **At a glance**: Buy traffic from third-party media sources in CM360 and measure mobile app conversions originating from this source both in AppsFlyer (attributed to the third-party media source) and CM360.
 

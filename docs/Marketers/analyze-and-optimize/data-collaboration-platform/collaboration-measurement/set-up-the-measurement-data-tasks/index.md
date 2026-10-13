@@ -2,6 +2,17 @@
 title: "Set up the measurement data tasks"
 excerpt: "Learn how to configure campaigns, engagements, conversions, media partners, and lookback windows tasks."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 38035061674769
+  url: https://support.appsflyer.com/hc/en-us/sections/38035061674769-Set-up-the-measurement-data-tasks
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 38034865098641
+  position: 0
+  sorting: manual
+  created_at: '2025-08-12T14:57:07Z'
 ---
 Set up the campaigns, engagements, conversions, media partners, and lookback windows tasks.
 

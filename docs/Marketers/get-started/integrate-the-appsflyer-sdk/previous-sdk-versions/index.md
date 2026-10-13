@@ -2,6 +2,17 @@
 title: "Previous SDK versions"
 excerpt: "Access upgrade instructions and version control policies for deprecated AppsFlyer SDKs."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551300280977
+  url: https://support.appsflyer.com/hc/en-us/sections/6551300280977-Previous-SDK-versions
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6551164458257
+  position: 8
+  sorting: manual
+  created_at: '2022-06-02T11:37:47Z'
 ---
 Upgrade instructions for deprecated SDKs
 

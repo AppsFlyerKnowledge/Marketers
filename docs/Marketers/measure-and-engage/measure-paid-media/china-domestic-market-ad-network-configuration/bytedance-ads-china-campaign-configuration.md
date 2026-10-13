@@ -1,6 +1,26 @@
 ---
 title: "ByteDance Ads China—campaign configuration"
 excerpt: "Learn how to configure mobile attribution, view-through tracking, cost API, and ad revenue integration for ByteDance Ads China (Ocean Engine) in AppsFlyer."
+x-zendesk:
+  id: 115003019403
+  url: https://support.appsflyer.com/hc/en-us/articles/115003019403-ByteDance-Ads-China-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: China domestic market ad network configuration
+  section_id: 6552066355601
+  position: 36
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [bytedance, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2017-06-18T07:05:42Z'
+  edited_at: '2026-09-07T07:24:30Z'
 ---
 **At a glance:** ByteDance Ads China (Ocean Engine), an AppsFlyer integrated partner, is an Internet technology company operating several machine learning-enabled content platforms.
 

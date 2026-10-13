@@ -1,6 +1,26 @@
 ---
 title: "Self-reporting networks (SRNs)"
 excerpt: "Learn about self-reporting networks (SRNs)—attribution, deep linking, iOS implications, and FAQ."
+x-zendesk:
+  id: 360001546905
+  url: https://support.appsflyer.com/hc/en-us/articles/360001546905-Self-reporting-networks-SRNs
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Media source configuration
+  section_id: 6551067072785
+  position: 7
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution, Agencies, Ad Networks]
+  labels: [Facebook, Advertisers, Agencies, Ad Networks, srn, Self-reporting, networks, SRN, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2018-10-22T05:21:45Z'
+  edited_at: '2026-06-11T08:42:59Z'
 ---
 **At a glance:** Learn about self-reporting networks (SRNs)—attribution, deep linking, iOS implications, and FAQ.
 

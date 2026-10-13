@@ -1,6 +1,26 @@
 ---
 title: "OneLink onboarding guide"
 excerpt: "Use OneLink for powerful, customized user redirection, deep linking, and attribution from your campaigns across all devices and platforms."
+x-zendesk:
+  id: 27699299657617
+  url: https://support.appsflyer.com/hc/en-us/articles/27699299657617-OneLink-onboarding-guide
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Deep linking using OneLink
+  section_id: 6551203111057
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-asaf-mashiah, Marketers, Smart Banners and Scripts]
+  labels: [Marketers, set up]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-08-21T11:48:39Z'
+  edited_at: '2026-05-13T07:07:16Z'
 ---
 At a glance: Use OneLink for powerful, customized user redirection, deep linking, and attribution from your campaigns, regardless of user device, operating system, channel, or platform, for maximum conversion.
 

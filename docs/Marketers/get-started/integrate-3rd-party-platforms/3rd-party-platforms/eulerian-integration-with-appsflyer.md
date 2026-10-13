@@ -1,6 +1,26 @@
 ---
 title: "Eulerian integration with AppsFlyer"
 excerpt: "Learn how to set up the Eulerian integration with AppsFlyer to centralize, analyze, and optimize your e-marketing operations in real-time."
+x-zendesk:
+  id: 360001521405
+  url: https://support.appsflyer.com/hc/en-us/articles/360001521405-Eulerian-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 9
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
+  labels: [Advertisers, Ad Networks, Eulerian, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2018-10-02T08:41:24Z'
+  edited_at: '2026-06-16T09:54:27Z'
 ---
 At a glance: Eulerian, an AppsFlyer integrated partner, is focusing on the analysis and real-time optimization of e-marketing operations. Based on an exhaustive data collection system, Eulerian marketing suite provides a combination of marketing web attribution and data management solutions. This technology enables users to centralize, analyze, manage and activate data in real-time.
 

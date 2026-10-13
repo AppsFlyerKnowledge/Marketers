@@ -1,6 +1,26 @@
 ---
 title: "Using the Partner Assistant Chatbot"
 excerpt: "Learn how to contact AppsFlyer support for partners using the Partner Assistant Chatbot to troubleshoot issues, open support tickets, or get product guidance."
+x-zendesk:
+  id: 26191324656145
+  url: https://support.appsflyer.com/hc/en-us/articles/26191324656145-Using-the-Partner-Assistant-Chatbot
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Ad network onboarding
+  section_id: 6551058566033
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Mobile Attribution, Ad Networks]
+  labels: [Ad Networks, Partners]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-06-25T11:23:27Z'
+  edited_at: '2026-09-08T06:54:37Z'
 ---
 **At a glance:** Contact AppsFlyer support for partners through the Partner Assistant Chatbot for troubleshooting issues, opening a support ticket, or product guidance.
 

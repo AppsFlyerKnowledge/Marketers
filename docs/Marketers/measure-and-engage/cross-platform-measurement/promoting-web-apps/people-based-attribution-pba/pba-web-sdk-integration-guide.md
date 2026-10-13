@@ -1,6 +1,26 @@
 ---
 title: "PBA Web SDK integration guide"
 excerpt: "Integrate AppsFlyer into websites using the Web SDK to record and measure visits, events, conversions, and revenue."
+x-zendesk:
+  id: 360001610038
+  url: https://support.appsflyer.com/hc/en-us/articles/360001610038-PBA-Web-SDK-integration-guide
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: People Based Attribution (PBA)
+  section_id: 43560588808721
+  position: 7
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-gil-or, Marketers, Cross-Platform Measurement]
+  labels: [Developers, Marketers, Loc In Prog, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-05-17T09:05:30Z'
+  edited_at: '2026-08-14T16:22:54Z'
 ---
 Integrate AppsFlyer into websites using the Web SDK to record and measure visits, events, conversions, and revenue.
 

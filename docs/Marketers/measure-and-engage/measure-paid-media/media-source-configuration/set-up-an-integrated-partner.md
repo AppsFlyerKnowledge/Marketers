@@ -1,6 +1,26 @@
 ---
 title: "Set up an integrated partner"
 excerpt: "Enable attribution measurement, send postbacks to partners, and enable other integration features by setting up the partner connection with AppsFlyer."
+x-zendesk:
+  id: 4410395957521
+  url: https://support.appsflyer.com/hc/en-us/articles/4410395957521-Set-up-an-integrated-partner
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Media source configuration
+  section_id: 6551067072785
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Agencies]
+  labels: [Advertisers, Agencies, Marketers, Loc Published]
+  promoted: true
+  comments_disabled: true
+  created_at: '2021-11-08T08:02:46Z'
+  edited_at: '2026-08-31T11:29:22Z'
 ---
 **At a glance:** Enable attribution measurement, send postbacks to partners, and enable other integration features by setting up the partner connection with AppsFlyer.
 

@@ -1,6 +1,26 @@
 ---
 title: "UC Toutiao Ads campaign configuration"
 excerpt: "Learn how to configure and activate the UC Toutiao Ads integration in AppsFlyer, set up attribution links, and create conversions."
+x-zendesk:
+  id: 115004843026
+  url: https://support.appsflyer.com/hc/en-us/articles/115004843026-UC-Toutiao-Ads-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: China domestic market ad network configuration
+  section_id: 6552066355601
+  position: 27
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Advertisers, UC Toutiao, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2017-09-25T05:41:49Z'
+  edited_at: '2026-09-15T10:39:33Z'
 ---
 **At a glance:** UC Toutiao Ads, an AppsFlyer ad network integrated partner, is one of China's leading news aggregator apps.
 

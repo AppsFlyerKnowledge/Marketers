@@ -1,6 +1,26 @@
 ---
 title: "SKAN CV schema API for advertisers"
 excerpt: "View your current SKAdNetwork (SKAN) conversion value (CV) schema as configured in AppsFlyer Conversion Studio."
+x-zendesk:
+  id: 8610329713553
+  url: https://support.appsflyer.com/hc/en-us/articles/8610329713553-SKAN-CV-schema-API-for-advertisers
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: SKAN solution
+  section_id: 6552135379985
+  position: 11
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
+  labels: [Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-08-24T12:59:10Z'
+  edited_at: '2024-01-11T10:37:57Z'
 ---
 ## SKAN conversion value schema API
 

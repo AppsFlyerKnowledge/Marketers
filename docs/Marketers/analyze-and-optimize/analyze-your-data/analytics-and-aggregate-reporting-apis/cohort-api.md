@@ -1,6 +1,26 @@
 ---
 title: "Cohort API"
 excerpt: "The Cohort API provides advertisers with a programmatic way to retrieve cohorted campaign performance data from the AppsFlyer platform."
+x-zendesk:
+  id: 360004799057
+  url: https://support.appsflyer.com/hc/en-us/articles/360004799057-Cohort-API
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Analytics and aggregate reporting/APIs
+  section_id: 6550976670225
+  position: 6
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
+  labels: [API, Advertisers, Partners, Developer, Premium, Gray, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-01-14T07:04:32Z'
+  edited_at: '2026-05-04T15:23:53Z'
 ---
 **At a glance:** Cohort API provides advertisers a programmatic way to get Cohort data. Use the API to integrate Cohort data into BI and marketing automation systems.
 

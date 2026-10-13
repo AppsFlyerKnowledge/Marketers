@@ -1,6 +1,26 @@
 ---
 title: "Offerslook integration with AppsFlyer for ad networks"
 excerpt: "Learn how ad networks using Offerslook can integrate with AppsFlyer to receive install attribution data and configure attribution links and postbacks."
+x-zendesk:
+  id: 209074606
+  url: https://support.appsflyer.com/hc/en-us/articles/209074606-Offerslook-integration-with-AppsFlyer-for-ad-networks
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Platforms for ad networks
+  section_id: 6551055575185
+  position: 6
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
+  labels: [Offerslook, Advertisers, Ad Networks, Partners]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-05-31T08:47:36Z'
+  edited_at: '2024-12-23T15:19:45Z'
 ---
 **At a glance:** Learn how ad networks that use Offerslook can integrate with AppsFlyer and receive install attribution data.
 

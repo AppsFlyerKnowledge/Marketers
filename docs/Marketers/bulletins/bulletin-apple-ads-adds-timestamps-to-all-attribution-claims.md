@@ -2,6 +2,26 @@
 title: "Bulletin: Apple Ads adds timestamps to all attribution claims"
 excerpt: "Apple's AdServices API now includes engagement timestamps for all iOS attribution claims, improving lookback window accuracy, while ad groups with age or gender targeting will return false payloads."
 table_of_contents: false
+x-zendesk:
+  id: 50216486847249
+  url: https://support.appsflyer.com/hc/en-us/articles/50216486847249-Bulletin-Apple-Ads-adds-timestamps-to-all-attribution-claims
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: []
+  labels: [apple ads]
+  promoted: false
+  comments_disabled: true
+  created_at: '2026-08-26T09:02:50Z'
+  edited_at: '2026-08-26T15:46:17Z'
 ---
 | Section | Details |
 | --- | --- |

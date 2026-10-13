@@ -1,6 +1,26 @@
 ---
 title: "For iOS and Android: The SDK integration wizard"
 excerpt: "Learn how to use the AppsFlyer SDK integration wizard to automatically generate and test your SDK integration code for iOS and Android."
+x-zendesk:
+  id: 24073235369617
+  url: https://support.appsflyer.com/hc/en-us/articles/24073235369617-For-iOS-and-Android-The-SDK-integration-wizard
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: SDK integration planning
+  section_id: 6551182964369
+  position: 3
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2024-04-10T12:17:00Z'
+  edited_at: '2026-08-13T12:48:39Z'
 ---
 Let our [SDK integration wizard](https://dj.dev.appsflyer.com/?sourceos=android&utm_source=kb&utm_medium=sdk-int-wizard-orvw) guide the app developer through the SDK integration process. The app developer simply provides some credentials and customization choices, and the wizard generates code snippets to be copied and pasted into the project.
 

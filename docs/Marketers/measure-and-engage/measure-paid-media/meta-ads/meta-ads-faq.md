@@ -1,6 +1,26 @@
 ---
 title: "Meta ads FAQ"
 excerpt: "Find answers to frequently asked questions about using Meta ads, cost data, SDK integration, and attribution in AppsFlyer."
+x-zendesk:
+  id: 4410472805649
+  url: https://support.appsflyer.com/hc/en-us/articles/4410472805649-Meta-ads-FAQ
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Meta ads
+  section_id: 6551109855761
+  position: 5
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution, Agencies]
+  labels: [Facebook, Advertisers, Agencies, facebook, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-11-09T10:04:49Z'
+  edited_at: '2026-05-06T12:58:42Z'
 ---
 **At a glance:** Find answers to frequently asked questions about using Meta ads in AppsFlyer.
 

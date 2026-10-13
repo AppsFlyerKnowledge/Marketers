@@ -1,6 +1,26 @@
 ---
 title: "App list API for app owners"
 excerpt: "Retrieve active and pending apps associated with your AppsFlyer account using the App List API."
+x-zendesk:
+  id: 360011999877
+  url: https://support.appsflyer.com/hc/en-us/articles/360011999877-App-list-API-for-app-owners
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Manage your apps
+  section_id: 6551015977105
+  position: 4
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials]
+  labels: [Advertisers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-08-17T18:07:10Z'
+  edited_at: '2026-05-05T06:57:58Z'
 ---
 **At a glance:** Retrieve active and pending apps associated with your AppsFlyer account.
 

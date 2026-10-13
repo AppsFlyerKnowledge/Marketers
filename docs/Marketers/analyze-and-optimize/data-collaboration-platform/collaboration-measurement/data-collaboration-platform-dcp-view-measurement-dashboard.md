@@ -1,6 +1,26 @@
 ---
 title: "Data Collaboration Platform (DCP) - View measurement dashboard"
 excerpt: "Analyze performance and trends over time of your collaborative campaigns using visualizations and table views."
+x-zendesk:
+  id: 34052274677905
+  url: https://support.appsflyer.com/hc/en-us/articles/34052274677905-Data-Collaboration-Platform-DCP-View-measurement-dashboard
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Collaboration measurement
+  section_id: 38034865098641
+  position: 5
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-yael-sharabi, Marketers, Data Management]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-04-03T11:06:11Z'
+  edited_at: '2026-05-27T08:48:05Z'
 ---
 Use the measurement dashboard to view and analyze campaign performance. It contains performance KPIs, over-time trends, impressions and clicks, revenue, and other metrics.
 

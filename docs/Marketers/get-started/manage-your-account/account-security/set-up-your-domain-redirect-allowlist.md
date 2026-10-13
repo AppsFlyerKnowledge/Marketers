@@ -1,6 +1,26 @@
 ---
 title: "Set up your domain redirect allowlist"
 excerpt: "Learn how to configure a domain redirect allowlist in AppsFlyer to ensure users are only redirected to verified, trustworthy domains."
+x-zendesk:
+  id: 25068636064529
+  url: https://support.appsflyer.com/hc/en-us/articles/25068636064529-Set-up-your-domain-redirect-allowlist
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Account security
+  section_id: 6551173202065
+  position: 4
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials]
+  labels: [Marketers, Loc Published]
+  promoted: false
+  comments_disabled: false
+  created_at: '2024-05-15T11:31:00Z'
+  edited_at: '2026-05-14T12:00:22Z'
 ---
 **At a glance:** Set up a domain redirect allowlist to ensure users are redirected to verified, trustworthy domains, protecting their data and safeguarding your brand integrity.
 

@@ -1,6 +1,26 @@
 ---
 title: "PBA website attribution URL best practices"
 excerpt: "Learn the best practices for structuring website attribution URLs to achieve optimal campaign granularity and accurate reporting in AppsFlyer."
+x-zendesk:
+  id: 6313062676497
+  url: https://support.appsflyer.com/hc/en-us/articles/6313062676497-PBA-website-attribution-URL-best-practices
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: People Based Attribution (PBA)
+  section_id: 43560588808721
+  position: 12
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, Marketers, Cross-Platform Measurement]
+  labels: [Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-05-23T05:29:27Z'
+  edited_at: '2026-05-05T06:53:16Z'
 ---
 Best practices to attribute your website attribution campaigns with the best campaign granularity available.
 

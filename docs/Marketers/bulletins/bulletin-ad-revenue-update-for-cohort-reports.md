@@ -2,6 +2,26 @@
 title: "Bulletin: Ad revenue update for cohort reports"
 excerpt: "Ad revenue calculations in Cohort reports will be fully aligned with LTV reports starting August 3, 2022, affecting customers with non-UTC timezone settings."
 table_of_contents: false
+x-zendesk:
+  id: 7610260326033
+  url: https://support.appsflyer.com/hc/en-us/articles/7610260326033-Bulletin-Ad-revenue-update-for-cohort-reports
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 44
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-michael-talapov, Marketers, ROI360]
+  labels: [Cohort, Cohort Report, ad revenue, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-07-13T14:30:51Z'
+  edited_at: '2026-08-18T09:13:20Z'
 ---
 | | |
 | --- | --- |

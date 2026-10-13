@@ -1,6 +1,26 @@
 ---
 title: "Incrementality for UA Guide"
 excerpt: "Run an Incrementality experiment to understand the true causal lift and impact of your User Acquisition campaigns."
+x-zendesk:
+  id: 41021758795025
+  url: https://support.appsflyer.com/hc/en-us/articles/41021758795025-Incrementality-for-UA-Guide
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Incrementality for UA
+  section_id: 40761623209873
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-niv-klein, Marketers, Incrementality]
+  labels: [Premium, Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-11-18T06:58:45Z'
+  edited_at: '2026-07-30T09:04:57Z'
 ---
 **At a glance:** Run an Incrementality experiment to understand the true impact of your User Acquisition (UA) campaigns.
 

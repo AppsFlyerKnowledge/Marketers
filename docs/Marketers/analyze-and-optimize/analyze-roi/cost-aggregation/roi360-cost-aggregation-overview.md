@@ -1,6 +1,26 @@
 ---
 title: "ROI360 cost aggregation overview"
 excerpt: "Learn about methods for advertisers to aggregate and view marketing cost data, including API, Cost Import, and attribution link methods."
+x-zendesk:
+  id: 207040526
+  url: https://support.appsflyer.com/hc/en-us/articles/207040526-ROI360-cost-aggregation-overview
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Cost aggregation
+  section_id: 6551029483281
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-maytav-avnat, Marketers, Agencies, ROI360]
+  labels: [Advertisers, Agencies, Premium, Premium Feature, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2015-12-24T10:45:16Z'
+  edited_at: '2026-10-05T06:57:44Z'
 ---
 **At a glance:** Learn about methods for advertisers to aggregate and view marketing cost data.
 

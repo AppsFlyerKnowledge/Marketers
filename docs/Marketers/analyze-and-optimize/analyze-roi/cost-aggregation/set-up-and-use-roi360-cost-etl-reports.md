@@ -1,6 +1,26 @@
 ---
 title: "Set up and use ROI360 cost ETL reports"
 excerpt: "Learn how to configure and use AppsFlyer ROI360 Cost ETL reports to deliver granular campaign cost data directly to your cloud service."
+x-zendesk:
+  id: 360008849238
+  url: https://support.appsflyer.com/hc/en-us/articles/360008849238-Set-up-and-use-ROI360-cost-ETL-reports
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Cost aggregation
+  section_id: 6551029483281
+  position: 2
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-maytav-avnat, Marketers, ROI360]
+  labels: [Campaign, eCPI, clicks, Impressions, ROI, cost, Advertisers, Premium, Premium Feature, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-05-17T15:36:41Z'
+  edited_at: '2026-08-13T15:58:03Z'
 ---
 **At a glance:** Cost ETL, part of AppsFlyer ROI360, provides advertisers with campaign cost data having the best granularity available per media source. Data, updated up to 4 times daily, is delivered to your cloud service ready for loading into advertiser BI systems.
 

@@ -1,6 +1,26 @@
 ---
 title: "Resolve AppsFlyer App stores discrepancies"
 excerpt: "Understand the leading causes of attribution discrepancies between AppsFlyer and app stores, and learn how to minimize them."
+x-zendesk:
+  id: 207040726
+  url: https://support.appsflyer.com/hc/en-us/articles/207040726-Resolve-AppsFlyer-App-stores-discrepancies
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Attribution concepts
+  section_id: 6551394235409
+  position: 14
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-moran-davida, Marketers, Mobile Attribution]
+  labels: [Google Play, AppsFlyer, iTunes, installs, Discrepancies, App Stre, Compare, Account, Advertisers, app store, appstore, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2015-12-24T12:52:53Z'
+  edited_at: '2025-04-05T12:49:42Z'
 ---
 Find the leading causes of attribution discrepancies between AppsFlyer and app stores, as well as tips to minimize these discrepancies.
 

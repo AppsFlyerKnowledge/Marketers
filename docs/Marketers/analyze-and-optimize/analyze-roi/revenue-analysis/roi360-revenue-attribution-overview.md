@@ -1,6 +1,26 @@
 ---
 title: "ROI360 - revenue attribution overview"
 excerpt: "Learn about the different products and features available for advertisers to aggregate and view revenue data to get a clear picture of ROI and ROAS."
+x-zendesk:
+  id: 360001546009
+  url: https://support.appsflyer.com/hc/en-us/articles/360001546009-ROI360-revenue-attribution-overview
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Revenue analysis
+  section_id: 6551069075089
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-michael-talapov, Marketers, ROI360]
+  labels: [Advertisers, Developers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2018-11-12T07:56:29Z'
+  edited_at: '2026-05-26T10:58:30Z'
 ---
 Revenue data helps give you a clear and complete picture of ROI and ROAS. Learn about the different products and features available for advertisers to aggregate and view revenue data.
 

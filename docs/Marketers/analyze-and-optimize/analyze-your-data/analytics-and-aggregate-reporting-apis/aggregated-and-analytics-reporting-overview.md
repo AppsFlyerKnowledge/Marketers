@@ -1,6 +1,26 @@
 ---
 title: "Aggregated and analytics reporting overview"
 excerpt: "A comprehensive guide and comparison of the aggregated and analytics attribution reports, tools, and APIs available in AppsFlyer."
+x-zendesk:
+  id: 360005437257
+  url: https://support.appsflyer.com/hc/en-us/articles/360005437257-Aggregated-and-analytics-reporting-overview
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Analytics and aggregate reporting/APIs
+  section_id: 6550976670225
+  position: 0
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics, Agencies, Ad Networks]
+  labels: [Agencies, Ad Networks, Marketers]
+  promoted: true
+  comments_disabled: true
+  created_at: '2020-02-04T09:38:14Z'
+  edited_at: '2026-09-07T09:56:56Z'
 ---
 Description and comparison of aggregated and analytics attribution reports, tools, and APIs available.
 

@@ -1,6 +1,26 @@
 ---
 title: "Audiences - Create better audiences with user attribute data"
 excerpt: "Enrich your ability to segment users into relevant groups by adding your data about their characteristics into Audiences."
+x-zendesk:
+  id: 360009775517
+  url: https://support.appsflyer.com/hc/en-us/articles/360009775517-Audiences-Create-better-audiences-with-user-attribute-data
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Audiences
+  section_id: 6551336428945
+  position: 8
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-neama-benhabib, Marketers, Audience Segmentation]
+  labels: [Advertisers, Premium, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-06-11T06:13:55Z'
+  edited_at: '2026-10-05T06:49:12Z'
 ---
 **At a glance:** Enrich your ability to segment users into relevant groups by adding your data about their characteristics into Audiences.
 

@@ -1,6 +1,26 @@
 ---
 title: "Bulletin: New Cohort and Retention dashboard"
 excerpt: "AppsFlyer has redesigned and improved the Cohort dashboard, integrating retention data and simplifying metric selection."
+x-zendesk:
+  id: 21334347923729
+  url: https://support.appsflyer.com/hc/en-us/articles/21334347923729-Bulletin-New-Cohort-and-Retention-dashboard
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 25
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
+  labels: [Cohort, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-01-01T09:21:41Z'
+  edited_at: '2024-01-02T00:01:00Z'
 ---
 |     |     |
 | --- | --- |

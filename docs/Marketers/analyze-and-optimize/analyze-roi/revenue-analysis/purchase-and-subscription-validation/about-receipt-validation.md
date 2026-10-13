@@ -1,6 +1,26 @@
 ---
 title: "About Receipt validation"
 excerpt: "Understand how Receipt validation measures and verifies revenue from in-app purchases and subscriptions with the App Store and Play Store."
+x-zendesk:
+  id: 42136725767569
+  url: https://support.appsflyer.com/hc/en-us/articles/42136725767569-About-Receipt-validation
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Purchase and subscription validation
+  section_id: 42227328788241
+  position: 1
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-michael-talapov, Marketers, ROI360]
+  labels: []
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-12-21T14:32:24Z'
+  edited_at: '2026-08-13T14:26:38Z'
 ---
 Advertisers can use Receipt validation to validate and measure in-app purchases and subscriptions from the Play Store and the App Store.
 

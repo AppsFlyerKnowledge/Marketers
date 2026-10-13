@@ -2,6 +2,26 @@
 title: "Attributing app installs to non-mobile ads from Meta ads"
 excerpt: "Learn how to attribute mobile app installs back to non-mobile Meta ads campaigns to understand the full impact of your marketing efforts."
 table_of_contents: false
+x-zendesk:
+  id: 115001460566
+  url: https://support.appsflyer.com/hc/en-us/articles/115001460566-Attributing-app-installs-to-non-mobile-ads-from-Meta-ads
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Meta ads
+  section_id: 6551109855761
+  position: 8
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Facebook, App Installs, Advertisers, Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2017-03-19T07:12:45Z'
+  edited_at: '2023-03-23T15:19:31Z'
 ---
 Advertisers create ads on Meta ads to serve different objectives, including brand awareness, website conversions, and more. However, the influence of seeing or clicking these ads may indirectly lead to a mobile app install.
 

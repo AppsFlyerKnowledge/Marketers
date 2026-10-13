@@ -1,6 +1,26 @@
 ---
 title: "Luna Labs integration with AppsFlyer"
 excerpt: "Learn how to set up and configure the Luna Labs integration with AppsFlyer to manage and optimize playables and video ads."
+x-zendesk:
+  id: 360019465017
+  url: https://support.appsflyer.com/hc/en-us/articles/360019465017-Luna-Labs-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 18
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Agencies]
+  labels: [postbacks, integrated partner, Advertisers, Agencies, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-04-21T15:51:20Z'
+  edited_at: '2026-06-16T09:38:55Z'
 ---
 **At a glance:** Luna Labs is an end-to-end platform that allows its customers to create, manage, and optimize playables and video ads.
 

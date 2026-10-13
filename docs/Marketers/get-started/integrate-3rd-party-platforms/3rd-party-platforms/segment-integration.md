@@ -1,6 +1,26 @@
 ---
 title: "Segment integration"
 excerpt: "Learn how to integrate Segment with AppsFlyer to route your analytics data and optimize your mobile attribution."
+x-zendesk:
+  id: 210041606
+  url: https://support.appsflyer.com/hc/en-us/articles/210041606-Segment-integration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 26
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Integration, segment IO, Advertisers, Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-06-30T07:54:38Z'
+  edited_at: '2025-07-08T07:14:01Z'
 ---
 At a glance: Send your Segment analytics data to AppsFlyer.
 

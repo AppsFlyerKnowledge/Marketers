@@ -1,6 +1,26 @@
 ---
 title: "Discrepancies between AppsFlyer and third-party platforms"
 excerpt: "Learn about the reasons for differences in attribution and postback restrictions between AppsFlyer and third-party platforms."
+x-zendesk:
+  id: 19384888063249
+  url: https://support.appsflyer.com/hc/en-us/articles/19384888063249-Discrepancies-between-AppsFlyer-and-third-party-platforms
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Integrate 3rd-party platforms
+  section_id: 6551084534545
+  position: 0
+  owner: Shelley Criveano
+  owner_email: shelley.criveano@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-10-16T08:59:17Z'
+  edited_at: '2026-08-14T16:14:52Z'
 ---
 Learn about the reasons for differences in attribution between AppsFlyer and third-party platforms.
 

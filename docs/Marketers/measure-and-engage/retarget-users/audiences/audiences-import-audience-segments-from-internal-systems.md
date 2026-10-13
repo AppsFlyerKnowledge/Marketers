@@ -1,6 +1,26 @@
 ---
 title: "Audiences - Import audience segments from internal systems"
 excerpt: "Import predefined audience segments from your internal systems to AppsFlyer Audiences to connect and maintain them with your advertising partners."
+x-zendesk:
+  id: 360013291857
+  url: https://support.appsflyer.com/hc/en-us/articles/360013291857-Audiences-Import-audience-segments-from-internal-systems
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Audiences
+  section_id: 6551336428945
+  position: 5
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-neama-benhabib, Marketers, Audience Segmentation]
+  labels: [Developers, Premium, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-09-15T10:45:43Z'
+  edited_at: '2026-10-05T06:46:48Z'
 ---
 **At a glance:** Import predefined audience segments from your internal systems (such as BI and CRM) to AppsFlyer Audiences, allowing you to use Audiences to connect and maintain these segments with your advertising partners.
 

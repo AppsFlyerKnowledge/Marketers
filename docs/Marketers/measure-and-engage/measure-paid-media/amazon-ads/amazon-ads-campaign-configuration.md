@@ -1,6 +1,26 @@
 ---
 title: "Amazon Ads campaign configuration"
 excerpt: "Configure Amazon Ads with AppsFlyer to measure click and view-based attribution for TV, tablet, and mobile devices."
+x-zendesk:
+  id: 11904659502737
+  url: https://support.appsflyer.com/hc/en-us/articles/11904659502737-Amazon-Ads-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Amazon Ads
+  section_id: 28703975923729
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2023-01-04T10:14:20Z'
+  edited_at: '2026-09-09T13:03:19Z'
 ---
 At a glance: Amazon Ads (amazondsp_int) is an AppsFlyer [SRN](/docs/self-reporting-networks-srns) integrated partner, providing app owners the ability to measure click and view-based attribution with AppsFlyer for TV, tablet, and mobile devices.
 

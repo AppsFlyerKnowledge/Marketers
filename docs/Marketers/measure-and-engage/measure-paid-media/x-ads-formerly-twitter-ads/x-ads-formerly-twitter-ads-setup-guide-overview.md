@@ -1,6 +1,26 @@
 ---
 title: "X Ads (formerly Twitter Ads) setup guide—overview"
 excerpt: "Learn the background of integrating your X Ads account with AppsFlyer, including mobile app promotion, user privacy policies, and SKAdNetwork interoperation."
+x-zendesk:
+  id: 4410464316049
+  url: https://support.appsflyer.com/hc/en-us/articles/4410464316049-X-Ads-formerly-Twitter-Ads-setup-guide-overview
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: X Ads (formerly Twitter Ads)
+  section_id: 6551370375569
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-11-09T09:31:36Z'
+  edited_at: '2023-11-23T12:16:22Z'
 ---
 <Cards>
   <Card title="Mobile app promotion on X Ads" href="#mobile-app-promotion-on-x-ads" icon="fa-solid fa-bullhorn" />

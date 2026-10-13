@@ -2,6 +2,17 @@
 title: "Meta campaign management partners"
 excerpt: "Learn how to configure and send postbacks to Meta campaign management partners to optimize your Meta ads campaigns."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551188365457
+  url: https://support.appsflyer.com/hc/en-us/sections/6551188365457-Meta-campaign-management-partners
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550990672401
+  position: 10
+  sorting: manual
+  created_at: '2022-06-02T11:31:45Z'
 ---
 Send postbacks to Meta campaign management partners to optimize your Meta ads campaigns
 

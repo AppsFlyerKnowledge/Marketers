@@ -1,6 +1,26 @@
 ---
 title: "Apple Ads integration setup"
 excerpt: "Learn how to set up Apple Ads integration in AppsFlyer, configure agencies and marketing partners, and resolve reporting discrepancies."
+x-zendesk:
+  id: 213747963
+  url: https://support.appsflyer.com/hc/en-us/articles/213747963-Apple-Ads-integration-setup
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Apple Ads
+  section_id: 6551310453393
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [cost, Advertisers, apple search ads, asa, ASA, apple ads, apple search advanced, apple search ads campaign group, apple keywords, apple searchads, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-08-31T09:04:38Z'
+  edited_at: '2026-08-27T08:16:05Z'
 ---
 Apple Ads, an AppsFlyer SRN (Self-Reporting Network) partner, helps users find your app in the App Store using keywords.
 

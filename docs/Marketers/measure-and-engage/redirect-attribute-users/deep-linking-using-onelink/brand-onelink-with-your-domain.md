@@ -1,6 +1,26 @@
 ---
 title: "Brand OneLink with your domain"
 excerpt: "Learn how to brand your OneLink attribution links with your own domain to improve campaign performance and increase brand exposure."
+x-zendesk:
+  id: 360002329137
+  url: https://support.appsflyer.com/hc/en-us/articles/360002329137-Brand-OneLink-with-your-domain
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Deep linking using OneLink
+  section_id: 6551203111057
+  position: 11
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-asaf-mashiah, Marketers, OneLink]
+  labels: [Marketers, cname]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-08-26T09:00:09Z'
+  edited_at: '2026-08-14T16:22:56Z'
 ---
 Advertisers using OneLink links can brand them with their own domain. This improves campaign performance and increases brand exposure.
 

@@ -1,6 +1,26 @@
 ---
 title: "AppsFlyer Android SDK release notes"
 excerpt: "Check out the SDK release notes for a quick overview of the latest changes to the Android SDK."
+x-zendesk:
+  id: 115001256006
+  url: https://support.appsflyer.com/hc/en-us/articles/115001256006-AppsFlyer-Android-SDK-release-notes
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Android platform
+  section_id: 6551190827921
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [Advertisers, Release Notes, Developers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: false
+  created_at: '2017-03-09T20:17:19Z'
+  edited_at: '2026-09-09T15:39:15Z'
 ---
 Check out the SDK release notes for a quick overview of the latest changes to the Android SDK. Developers looking for more comprehensive details should review [the Android Release Notes on the Dev Hub](https://dev.appsflyer.com/hc/docs/android-release-notes).
 

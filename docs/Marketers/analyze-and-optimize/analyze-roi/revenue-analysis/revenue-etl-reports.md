@@ -1,6 +1,26 @@
 ---
 title: "Revenue ETL reports"
 excerpt: "Learn about ROI360 revenue reports, their sources, how they are generated, when they are available, and how you can access them."
+x-zendesk:
+  id: 16464765619985
+  url: https://support.appsflyer.com/hc/en-us/articles/16464765619985-Revenue-ETL-reports
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Revenue analysis
+  section_id: 6551069075089
+  position: 4
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-michael-talapov, Marketers, ROI360]
+  labels: [Marketers, revenue, etl, revenueetl, revenue etl, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-06-25T16:57:02Z'
+  edited_at: '2026-05-14T15:39:31Z'
 ---
 With ROI360 Revenue ETL, your revenue data is sent via Data Locker to cloud storage for loading into your BI systems.
 

@@ -2,6 +2,17 @@
 title: "SKAN solution"
 excerpt: "Explore AppsFlyer's comprehensive SKAN solution, including Conversion Studio, ATT implications, and iOS attribution guides."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6552135379985
+  url: https://support.appsflyer.com/hc/en-us/sections/6552135379985-SKAN-solution
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550990672401
+  position: 4
+  sorting: manual
+  created_at: '2022-06-02T12:10:00Z'
 ---
 All about iOS attribution: our SKAN solution, Conversion Studio, ATT, and LAT
 

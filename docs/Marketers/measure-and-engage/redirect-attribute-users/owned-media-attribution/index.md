@@ -2,6 +2,17 @@
 title: "Owned media attribution"
 excerpt: "Learn how to measure owned-media user journeys including user invites, cross-promotion, SMS, QR codes, and push notifications."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551214397585
+  url: https://support.appsflyer.com/hc/en-us/sections/6551214397585-Owned-media-attribution
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6551169161745
+  position: 3
+  sorting: manual
+  created_at: '2022-06-02T11:34:13Z'
 ---
 Measure owned-media user journeys: user invites, cross-promotion, SMS, and more
 

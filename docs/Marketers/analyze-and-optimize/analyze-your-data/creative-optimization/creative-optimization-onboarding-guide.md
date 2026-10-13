@@ -1,6 +1,26 @@
 ---
 title: "Creative Optimization—onboarding guide"
 excerpt: "Follow this onboarding guide to set up partner integrations, explore dashboards, and configure ETL reports for Creative Optimization."
+x-zendesk:
+  id: 27849428801809
+  url: https://support.appsflyer.com/hc/en-us/articles/27849428801809-Creative-Optimization-onboarding-guide
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Creative Optimization
+  section_id: 4419063475217
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-omer-katzburg, Marketers, Creative Optimization]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-08-27T09:21:03Z'
+  edited_at: '2024-11-10T15:25:29Z'
 ---
 **At a glance**: Follow the onboarding instructions in this article to get Creative Optimization up and running.
 

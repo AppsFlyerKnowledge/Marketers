@@ -1,6 +1,26 @@
 ---
 title: "Bulletin: Meta ads breakdown by channel update"
 excerpt: "Learn about Meta's per-ad-account opt-in requirement for the impression device breakdown and how to ensure your channel-level cost data remains complete."
+x-zendesk:
+  id: 49465306965393
+  url: https://support.appsflyer.com/hc/en-us/articles/49465306965393-Bulletin-Meta-ads-breakdown-by-channel-update
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: []
+  promoted: false
+  comments_disabled: true
+  created_at: '2026-08-04T08:33:09Z'
+  edited_at: '2026-08-04T10:27:25Z'
 ---
 | Section | Details |
 | --- | --- |

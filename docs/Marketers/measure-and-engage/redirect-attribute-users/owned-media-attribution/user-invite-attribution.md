@@ -1,6 +1,26 @@
 ---
 title: "User invite attribution"
 excerpt: "Attribute and record new installs when existing users refer others to use your apps."
+x-zendesk:
+  id: 115004480866
+  url: https://support.appsflyer.com/hc/en-us/articles/115004480866-User-invite-attribution
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Owned media attribution
+  section_id: 6551214397585
+  position: 1
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-asaf-mashiah, Marketers, Text-to-App]
+  labels: [OneLink, Advertisers, User invite, Developers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2017-08-30T12:13:45Z'
+  edited_at: '2026-06-30T10:40:48Z'
 ---
 ![Invite_Attribution_new.png](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)
 

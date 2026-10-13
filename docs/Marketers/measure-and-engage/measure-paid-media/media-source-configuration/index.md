@@ -2,6 +2,17 @@
 title: "Media source configuration"
 excerpt: "Learn how to set up integrated partners, configure attribution links, and troubleshoot postbacks for your mobile campaigns."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551067072785
+  url: https://support.appsflyer.com/hc/en-us/sections/6551067072785-Media-source-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550990672401
+  position: 2
+  sorting: manual
+  created_at: '2022-06-02T11:25:54Z'
 ---
 Attribution link structure and setup guides for working with integrated partners
 

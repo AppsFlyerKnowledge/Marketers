@@ -1,6 +1,26 @@
 ---
 title: "Getting started—onboarding guide for analytics partners"
 excerpt: "Learn how to set up your analytics partner integration with AppsFlyer, including account registration, postback endpoint configuration, and account conversion."
+x-zendesk:
+  id: 34444156204689
+  url: https://support.appsflyer.com/hc/en-us/articles/34444156204689-Getting-started-onboarding-guide-for-analytics-partners
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Analytics partner onboarding
+  section_id: 34732438397841
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Partners]
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-04-16T13:54:22Z'
+  edited_at: '2025-04-27T09:25:20Z'
 ---
 At a glance: Set up your analytics partner integration with AppsFlyer, including configuration of postback templates. This article outlines the steps, timelines, and dependencies involved in the onboarding process.
 

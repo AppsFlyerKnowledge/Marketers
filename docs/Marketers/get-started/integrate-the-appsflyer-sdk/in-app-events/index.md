@@ -2,6 +2,17 @@
 title: "In-app events"
 excerpt: "Explore in-app event fields, Customer User IDs, and recommended in-app events for every vertical."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551285343761
+  url: https://support.appsflyer.com/hc/en-us/sections/6551285343761-In-app-events
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6551164458257
+  position: 6
+  sorting: manual
+  created_at: '2022-06-02T11:36:31Z'
 ---
 In-app event fields, Customer User IDs, and in-app events for every vertical
 

@@ -1,6 +1,26 @@
 ---
 title: "InMobi integration with AppsFlyer"
 excerpt: "Learn how to set up the InMobi integration with AppsFlyer to record click-based mobile attribution, cost, retargeting, and view-through attribution."
+x-zendesk:
+  id: 207033896
+  url: https://support.appsflyer.com/hc/en-us/articles/207033896-InMobi-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (G-Q)
+  section_id: 6552006535953
+  position: 4
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Campaign, SDK, Configure, InMobi, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2014-11-20T10:29:22Z'
+  edited_at: '2026-06-16T12:04:51Z'
 ---
 **At a glance:** InMobi, an AppsFlyer integrated ad network partner, enables consumers to discover new products and services through contextual and curated recommendations on mobile devices. In addition to click-based mobile attribution, Inmobi also offers cost, retargeting and view-through attribution, which you can record with AppsFlyer.
 

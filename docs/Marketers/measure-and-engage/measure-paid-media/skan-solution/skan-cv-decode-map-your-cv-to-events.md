@@ -1,6 +1,26 @@
 ---
 title: "SKAN CV decode (map your CV to events)"
 excerpt: "Learn how AppsFlyer decodes and transforms your custom SKAdNetwork conversion values into events for reporting and dashboards."
+x-zendesk:
+  id: 360014696297
+  url: https://support.appsflyer.com/hc/en-us/articles/360014696297-SKAN-CV-decode-map-your-CV-to-events
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: SKAN solution
+  section_id: 6552135379985
+  position: 5
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
+  labels: [Advertisers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-10-26T20:31:40Z'
+  edited_at: '2025-04-11T00:01:03Z'
 ---
 **At a glance:** AppsFlyer decodes and transforms the conversion value set by you into events. The events are used to populate the SKAN dashboard, raw data, and postbacks to partners.
 

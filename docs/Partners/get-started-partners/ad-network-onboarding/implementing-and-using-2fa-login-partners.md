@@ -1,6 +1,26 @@
 ---
 title: "Implementing and using 2FA login"
 excerpt: "Learn how to set up, use, and reset two-factor authentication (2FA) using Google or Microsoft Authenticator to secure your AppsFlyer account."
+x-zendesk:
+  id: 41585422141585
+  url: https://support.appsflyer.com/hc/en-us/articles/41585422141585-Implementing-and-using-2FA-login
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Ad network onboarding
+  section_id: 6551058566033
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: []
+  promoted: false
+  comments_disabled: true
+  created_at: '2025-12-04T09:21:41Z'
+  edited_at: '2026-08-09T07:02:53Z'
 ---
 **At a glance:** Two-factor authentication (2FA) is used to add an extra layer of security to the login process. Login credentials for account users are supplemented by Google or Microsoft Authenticator.
 

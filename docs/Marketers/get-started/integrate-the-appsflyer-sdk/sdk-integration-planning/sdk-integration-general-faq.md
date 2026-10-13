@@ -1,6 +1,26 @@
 ---
 title: "SDK integration general FAQ"
 excerpt: "Find answers to common questions about integrating, updating, and measuring performance with the AppsFlyer SDK."
+x-zendesk:
+  id: 207033546
+  url: https://support.appsflyer.com/hc/en-us/articles/207033546-SDK-integration-general-FAQ
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: SDK integration planning
+  section_id: 6551182964369
+  position: 6
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [Advertisers, Developers, Marketers, Loc In Prog, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2015-01-18T11:13:24Z'
+  edited_at: '2026-08-13T12:52:29Z'
 ---
 The AppsFlyer SDK lets you safely advertise your app, attribute, deep-link, and collect behavioral information of your mobile users. You can set up and start working with any ad network and/or platform in a manner of minutes—not weeks or months!
 

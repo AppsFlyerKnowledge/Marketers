@@ -1,6 +1,26 @@
 ---
 title: "Fill out Google safety section form"
 excerpt: "This guide provides information to assist you in answering the Google Play Data safety section questionnaire in relation to what AppsFlyer processes on your behalf."
+x-zendesk:
+  id: 4417197430289
+  url: https://support.appsflyer.com/hc/en-us/articles/4417197430289-Fill-out-Google-safety-section-form
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Preserve user privacy
+  section_id: 6551440878097
+  position: 4
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [Google Play, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: false
+  created_at: '2022-01-19T15:00:21Z'
+  edited_at: '2025-06-03T07:48:01Z'
 ---
 As of April 2022, app developers are required to complete the Google Play Data safety section form and publish a link to a privacy policy, even if they don’t collect any of the data types specified by Google. This page is intended to provide information to assist you in answering the Google Safety Section Questionnaire, only in relation to what AppsFlyer processes on behalf of customers.
 

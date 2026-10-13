@@ -1,6 +1,26 @@
 ---
 title: "[Beta] Fraud protection studio"
 excerpt: "Fraud protection studio (FPS) provides greater control over how fraud detection is applied, allowing you to choose whether fraud detection data is blocked and reported or tagged."
+x-zendesk:
+  id: 30754984040977
+  url: https://support.appsflyer.com/hc/en-us/articles/30754984040977--Beta-Fraud-protection-studio
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Protect your traffic
+  section_id: 6551015912465
+  position: 2
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-yanai, Marketers, Protect360]
+  labels: [Marketers, Beta feature]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-12-08T06:38:30Z'
+  edited_at: '2026-08-19T10:37:41Z'
 ---
 **At a glance:** Fraud protection studio (FPS) provides greater control over how fraud detection is applied than usual methods. With FPS, you can choose whether fraud detection data is blocked and reported as fraud or tagged, empowering tailored fraud management.
 

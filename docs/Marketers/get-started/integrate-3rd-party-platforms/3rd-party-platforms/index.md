@@ -2,6 +2,17 @@
 title: "3rd-party platforms"
 excerpt: "Integrate tech partners and analytics platforms, such as Segment, mParticle, Amplitude, MixPanel, and Braze with AppsFlyer."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551199962257
+  url: https://support.appsflyer.com/hc/en-us/sections/6551199962257-3rd-party-platforms
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6551084534545
+  position: 0
+  sorting: title
+  created_at: '2022-06-02T11:36:08Z'
 ---
 <Cards>
   <Card title="Airship integration with AppsFlyer" href="/docs/airship-integration-with-appsflyer" icon="fa-solid fa-puzzle-piece">

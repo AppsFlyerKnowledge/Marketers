@@ -1,6 +1,26 @@
 ---
 title: "Compare ROI360 ad revenue data with partner data"
 excerpt: "Learn how and when to compare AppsFlyer ROI360 ad revenue data with mediation and user acquisition partner reports."
+x-zendesk:
+  id: 19287636823953
+  url: https://support.appsflyer.com/hc/en-us/articles/19287636823953-Compare-ROI360-ad-revenue-data-with-partner-data
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Revenue analysis
+  section_id: 6551069075089
+  position: 6
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-michael-talapov, Marketers, ROI360]
+  labels: [ad revenue, Marketers, ROI360]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-10-11T17:40:51Z'
+  edited_at: '2024-12-10T09:48:46Z'
 ---
 **At a glance:** Compare AppsFlyer ROI360 ad revenue data with mediation and user acquisition partner data.
 

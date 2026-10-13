@@ -2,6 +2,17 @@
 title: "Google Ads"
 excerpt: "Learn how to attribute Google Ads campaigns, set up integrations for advertisers and agencies, and configure cost and ad revenue tracking."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551205645457
+  url: https://support.appsflyer.com/hc/en-us/sections/6551205645457-Google-Ads
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550990672401
+  position: 7
+  sorting: manual
+  created_at: '2022-06-02T11:33:05Z'
 ---
 Attribute Google Ads campaigns and work with Google Marketing Partners
 

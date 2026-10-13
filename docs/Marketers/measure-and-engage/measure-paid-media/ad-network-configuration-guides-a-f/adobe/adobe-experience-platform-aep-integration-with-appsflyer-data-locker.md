@@ -1,6 +1,26 @@
 ---
 title: "Adobe Experience Platform (AEP) integration with AppsFlyer Data Locker"
 excerpt: "Set up an integrated solution with Adobe Experience Platform (AEP) to send raw-level event data from AppsFlyer Data Locker to the Adobe data lake."
+x-zendesk:
+  id: 13856826626321
+  url: https://support.appsflyer.com/hc/en-us/articles/13856826626321-Adobe-Experience-Platform-AEP-integration-with-AppsFlyer-Data-Locker
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Adobe
+  section_id: 6551419728657
+  position: 1
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-rona-einat, Marketers, Data Locker]
+  labels: [Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-03-19T06:54:23Z'
+  edited_at: '2023-10-26T12:33:46Z'
 ---
 The Data Locker—AEP integration enables you to use AppsFlyer data within the Adobe Experience Platform. The integration uses the out-of-the-Box (OOTB) component, backed by the real-time customer data platform (RTCDP). In order to upload AppsFlyer data into Adobe Experience Platform (AEP), customers should first configure a Data Locker bucket (GCS and AWS) connection and then configure AEP to load the data from the bucket into an existing or new dataset unit.
 

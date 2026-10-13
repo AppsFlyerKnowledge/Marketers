@@ -1,6 +1,26 @@
 ---
 title: "Windows SDK integration for developers"
 excerpt: "Learn how to integrate the AppsFlyer SDK into your Windows apps and games to measure installs, in-app events, and media sources."
+x-zendesk:
+  id: 207032026
+  url: https://support.appsflyer.com/hc/en-us/articles/207032026-Windows-SDK-integration-for-developers
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Windows platform
+  section_id: 6551223206417
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [SDK, Integration, Windows Phone, In-App, windows universal apps, windows 10, Advertisers, Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2015-05-07T12:17:52Z'
+  edited_at: '2026-05-25T10:09:27Z'
 ---
 **At a glance:** Add AppsFlyer to Windows apps and games to measure app installs, in-app events, media sources, and more.
 

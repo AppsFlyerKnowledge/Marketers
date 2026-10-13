@@ -2,6 +2,17 @@
 title: "Rejected traffic"
 excerpt: "Access and understand data regarding traffic blocked by fraud protection and validation rules."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551666000273
+  url: https://support.appsflyer.com/hc/en-us/sections/6551666000273-Rejected-traffic
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  parent_section_id: 6551515305873
+  position: 0
+  sorting: manual
+  created_at: '2022-06-02T11:52:36Z'
 ---
 Receive data about traffic blocked by fraud protection
 

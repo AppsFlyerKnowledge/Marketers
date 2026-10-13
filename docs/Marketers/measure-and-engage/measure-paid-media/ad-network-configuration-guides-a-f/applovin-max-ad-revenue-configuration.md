@@ -1,6 +1,26 @@
 ---
 title: "Applovin MAX ad revenue configuration"
 excerpt: "Learn how to configure Applovin MAX ad revenue integration with AppsFlyer to receive device-level and aggregate ad monetization data."
+x-zendesk:
+  id: 360004707378
+  url: https://support.appsflyer.com/hc/en-us/articles/360004707378-Applovin-MAX-ad-revenue-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  position: 9
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-michael-talapov, Marketers, ROI360, Ad Networks]
+  labels: [Ad Network, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-01-09T10:53:21Z'
+  edited_at: '2026-06-16T09:35:28Z'
 ---
 **At a glance:** Applovin MAX, an AppsFlyer integrated partner, provides app owners with ad revenue-generating solutions.
 

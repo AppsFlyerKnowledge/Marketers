@@ -1,6 +1,26 @@
 ---
 title: "CTV, PC, and console data via Data Locker"
 excerpt: "Access cross-platform reports for CTV, PC, and console platforms, including impressions, clicks, installs, in-app events, and sessions via Data Locker."
+x-zendesk:
+  id: 18170499230609
+  url: https://support.appsflyer.com/hc/en-us/articles/18170499230609-CTV-PC-and-console-data-via-Data-Locker
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Data Locker
+  section_id: 6550945728657
+  position: 7
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roi-tamir, Marketers, CTV Attribution]
+  labels: [Data Locker, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-08-30T14:12:24Z'
+  edited_at: '2025-11-18T08:02:17Z'
 ---
 Cross-platform (CTV, PC, and console platforms) reports available via AppsFlyer.
 

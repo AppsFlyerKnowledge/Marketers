@@ -1,6 +1,26 @@
 ---
 title: "Vidaa integration with AppsFlyer"
 excerpt: "Integrate your Vidaa Connected TV (CTV) app with AppsFlyer to receive attribution and event data for your campaigns on Vidaa."
+x-zendesk:
+  id: 10400222972433
+  url: https://support.appsflyer.com/hc/en-us/articles/10400222972433-Vidaa-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Promoting CTV apps
+  section_id: 15328952633489
+  position: 8
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roi-tamir, Marketers, CTV Attribution]
+  labels: [CTV, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-11-06T08:13:09Z'
+  edited_at: '2025-10-30T13:20:27Z'
 ---
 ## About Vidaa CTV attribution
 

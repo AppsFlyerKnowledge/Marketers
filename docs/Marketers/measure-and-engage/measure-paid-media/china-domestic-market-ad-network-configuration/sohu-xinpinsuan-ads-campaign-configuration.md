@@ -1,6 +1,26 @@
 ---
 title: "Sohu XinPinSuan Ads campaign configuration"
 excerpt: "Learn how to configure the integration, attribution links, and permissions for Sohu XinPinSuan Ads in AppsFlyer."
+x-zendesk:
+  id: 360001953697
+  url: https://support.appsflyer.com/hc/en-us/articles/360001953697-Sohu-XinPinSuan-Ads-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: China domestic market ad network configuration
+  section_id: 6552066355601
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-07-05T08:57:46Z'
+  edited_at: '2026-09-15T10:28:17Z'
 ---
 **At a glance:** Sohu XinPinSuan Ads is an AppsFlyer ad network integrated partner.
 

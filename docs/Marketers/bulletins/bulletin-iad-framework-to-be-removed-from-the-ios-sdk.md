@@ -2,6 +2,26 @@
 title: "Bulletin: iAd framework to be removed from the iOS SDK"
 excerpt: "Important update regarding the removal of the deprecated iAd framework from the AppsFlyer iOS SDK to comply with Apple's future requirements."
 table_of_contents: false
+x-zendesk:
+  id: 19329934807569
+  url: https://support.appsflyer.com/hc/en-us/articles/19329934807569-Bulletin-iAd-framework-to-be-removed-from-the-iOS-SDK
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 31
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [Developers, Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2023-10-13T10:20:29Z'
+  edited_at: '2024-01-07T07:33:43Z'
 ---
 | | |
 | --- | --- |

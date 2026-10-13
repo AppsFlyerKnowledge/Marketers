@@ -1,6 +1,26 @@
 ---
 title: "Google Ads Web—Integration for PC and console apps"
 excerpt: "Learn how to set up Google Ads Web campaigns to promote your PC and console apps, configure partner integration in AppsFlyer, and track web-to-app attributions."
+x-zendesk:
+  id: 21768823915665
+  url: https://support.appsflyer.com/hc/en-us/articles/21768823915665-Google-Ads-Web-Integration-for-PC-and-console-apps
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Google Ads
+  section_id: 6551205645457
+  position: 3
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roi-tamir, Marketers, PC & Console Attribution]
+  labels: [google ads configuration, google ads, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-01-18T11:04:33Z'
+  edited_at: '2026-09-15T09:40:50Z'
 ---
 **At a glance:** Use Google Ads web campaigns to promote your apps on PC and console platforms and enable attribution. AppsFlyer supports Google web-based campaigns using cross-platform landing pages or direct attribution links.
 

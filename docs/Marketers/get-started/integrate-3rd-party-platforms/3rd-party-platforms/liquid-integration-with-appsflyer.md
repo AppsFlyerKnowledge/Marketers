@@ -1,6 +1,26 @@
 ---
 title: "Liquid integration with AppsFlyer"
 excerpt: "Learn how to set up the Liquid integration with AppsFlyer to automate your campaigns and processes using their intelligent rules engine."
+x-zendesk:
+  id: 207040626
+  url: https://support.appsflyer.com/hc/en-us/articles/207040626-Liquid-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 16
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
+  labels: [Liquid, attribution data, integrated partner, Advertisers, Ad Networks, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2015-12-24T11:36:06Z'
+  edited_at: '2026-06-16T09:40:28Z'
 ---
 **At a glance:** Liquid, an AppsFlyer integrated partner, automates your campaigns and processes with no need to call your IT. Their intelligent rules engine acts based on user behavior and advanced analytics.
 

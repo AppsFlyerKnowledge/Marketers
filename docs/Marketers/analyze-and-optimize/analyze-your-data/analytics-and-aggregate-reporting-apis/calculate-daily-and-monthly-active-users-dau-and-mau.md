@@ -1,6 +1,26 @@
 ---
 title: "Calculate daily and monthly active users (DAU and MAU)"
 excerpt: "Learn how to calculate Daily and Monthly active users using SQL queries on Data Locker raw data tables."
+x-zendesk:
+  id: 39071744864657
+  url: https://support.appsflyer.com/hc/en-us/articles/39071744864657-Calculate-daily-and-monthly-active-users-DAU-and-MAU
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Analytics and aggregate reporting/APIs
+  section_id: 6550976670225
+  position: 0
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
+  labels: []
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-09-15T15:49:21Z'
+  edited_at: '2025-10-23T07:50:52Z'
 ---
 Daily Active Users (DAU) and Monthly Active Users (MAU) are key metrics for understanding app engagement and overall user behavior. They provide valuable insights into your active user base, including user stickiness, campaign performance, and growth trends over time.
 

@@ -1,6 +1,26 @@
 ---
 title: "Server-to-server events API for mobile (S2S-mobile)"
 excerpt: "Send events from your servers to AppsFlyer to measure mobile events that occur outside the app."
+x-zendesk:
+  id: 207034486
+  url: https://support.appsflyer.com/hc/en-us/articles/207034486-Server-to-server-events-API-for-mobile-S2S-mobile
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: In-app events
+  section_id: 6551285343761
+  position: 4
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [iOS, Android, API, In-App, S2S, HTTP API, appsflyer_id, Developers, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2014-05-21T17:47:21Z'
+  edited_at: '2026-08-14T16:22:42Z'
 ---
 <Image src="https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png" alt="S2S_us-en.png" />
 

@@ -2,6 +2,26 @@
 title: "Bulletin: [Closed Beta] Protect360 Pre-released detection (Billing API)"
 excerpt: "Learn about the Protect360 pre-released detection feature in the billing API, which credits detected fraud back to your package plan."
 table_of_contents: false
+x-zendesk:
+  id: 27286254350481
+  url: https://support.appsflyer.com/hc/en-us/articles/27286254350481-Bulletin-Closed-Beta-Protect360-Pre-released-detection-Billing-API
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 64
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-yanai, Marketers, Protect360]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-08-05T16:11:54Z'
+  edited_at: '2026-05-04T09:19:39Z'
 ---
 | **What's new** | Protect360 has added the ability to reflect the detection of logics which are not yet in production. The data of this additional detection is deducted from your package (to Appsflyer). This is becasue it reflects non-legitimate conversions which should not be consumed in the package. |
 | --- | --- |

@@ -2,6 +2,17 @@
 title: "Other platforms"
 excerpt: "Integrate specialized plugins and platforms, such as Unity, React, and Native with AppsFlyer."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551244207121
+  url: https://support.appsflyer.com/hc/en-us/sections/6551244207121-Other-platforms
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6551164458257
+  position: 4
+  sorting: manual
+  created_at: '2022-06-02T11:34:27Z'
 ---
 <Cards>
   <Card title="React Native plugin overview" href="/docs/react-native-plugin-overview" icon="fa-solid fa-code">

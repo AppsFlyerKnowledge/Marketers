@@ -1,6 +1,26 @@
 ---
 title: "PBA raw data reports"
 excerpt: "PBA raw data reports are available via Data Locker to help you analyze user journeys and actions across your website and mobile app."
+x-zendesk:
+  id: 360001917778
+  url: https://support.appsflyer.com/hc/en-us/articles/360001917778-PBA-raw-data-reports
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: People Based Attribution (PBA)
+  section_id: 43560588808721
+  position: 13
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, Marketers, Cross-Platform Measurement]
+  labels: [Data Locker, People Based Attribution, Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2019-07-01T07:53:57Z'
+  edited_at: '2025-08-01T11:01:02Z'
 ---
 **At a glance**: PBA raw data reports are available via Data Locker.
 

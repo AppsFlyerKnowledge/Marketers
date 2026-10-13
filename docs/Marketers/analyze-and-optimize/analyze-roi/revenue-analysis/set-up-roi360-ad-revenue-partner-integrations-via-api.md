@@ -1,6 +1,26 @@
 ---
 title: "Set up ROI360 ad revenue partner integrations via API"
 excerpt: "Configure and manage your AppsFlyer ad revenue partner integrations at the account or app level using the API."
+x-zendesk:
+  id: 9901416616465
+  url: https://support.appsflyer.com/hc/en-us/articles/9901416616465-Set-up-ROI360-ad-revenue-partner-integrations-via-API
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Revenue analysis
+  section_id: 6551069075089
+  position: 7
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-michael-talapov, Marketers, ROI360]
+  labels: [ad revenue, Premium, Marketers, ROI360]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-10-16T14:53:47Z'
+  edited_at: '2025-04-05T11:17:41Z'
 ---
 **At a glance:** Configure ad revenue partner integrations for your AppsFlyer account or individual apps via API.
 

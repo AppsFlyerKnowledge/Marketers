@@ -1,6 +1,26 @@
 ---
 title: "[Beta] User-based cross-platform re-engagement attribution"
 excerpt: "Learn how cross-platform re-engagement attribution credits the media sources that bring existing users back to your product across platforms."
+x-zendesk:
+  id: 45444294953361
+  url: https://support.appsflyer.com/hc/en-us/articles/45444294953361--Beta-User-based-cross-platform-re-engagement-attribution
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Attribution concepts
+  section_id: 6551394235409
+  position: 4
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-moran-davida, Marketers, Cross-Platform Measurement]
+  labels: []
+  promoted: false
+  comments_disabled: true
+  created_at: '2026-04-05T12:40:10Z'
+  edited_at: '2026-04-27T13:56:06Z'
 ---
 **At a glance:** Learn how cross-platform re-engagement attribution credits the media sources that bring existing users back to your product across platforms.
 

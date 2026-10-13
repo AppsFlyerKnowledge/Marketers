@@ -1,6 +1,26 @@
 ---
 title: "WebEngage integration with AppsFlyer"
 excerpt: "Learn how to set up and configure the WebEngage integration with AppsFlyer to send install and in-app event postbacks."
+x-zendesk:
+  id: 7898288493841
+  url: https://support.appsflyer.com/hc/en-us/articles/7898288493841-WebEngage-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  position: 31
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-07-25T13:44:42Z'
+  edited_at: '2026-06-16T09:54:49Z'
 ---
 WebEngage, an AppsFlyer integrated partner, is an Intelligent Marketing Cloud built for the mobile-first world.
 

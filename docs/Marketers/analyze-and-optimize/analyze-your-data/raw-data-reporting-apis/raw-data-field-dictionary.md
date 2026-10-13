@@ -1,6 +1,26 @@
 ---
 title: "Raw data field dictionary"
 excerpt: "The raw data field dictionary describes the contents, formats, and availability of raw data fields in AppsFlyer reports."
+x-zendesk:
+  id: 208387843
+  url: https://support.appsflyer.com/hc/en-us/articles/208387843-Raw-data-field-dictionary
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Raw data reporting/APIs
+  section_id: 6550930711057
+  position: 1
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-rona-einat, Marketers, Raw Reports]
+  labels: [raw reports, facebook rawdata, facebook raw data, Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-03-10T14:37:44Z'
+  edited_at: '2026-10-05T08:49:04Z'
 ---
 The data field dictionary (raw data specification) describes field contents. It should be used to help you understand what fields mean, how they are formatted, and when they are available.
 

@@ -2,6 +2,17 @@
 title: "Pinterest"
 excerpt: "Learn how to set up Pinterest and its partners for AppsFlyer attribution across mobile and website integrations."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6551388216337
+  url: https://support.appsflyer.com/hc/en-us/sections/6551388216337-Pinterest
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550990672401
+  position: 11
+  sorting: manual
+  created_at: '2022-06-02T11:41:29Z'
 ---
 Set up Pinterest and its partners for AppsFlyer attribution
 

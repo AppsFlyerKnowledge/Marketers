@@ -1,6 +1,26 @@
 ---
 title: "Protect360 dashboard"
 excerpt: "The Protect360 dashboard provides insights about fraudulent traffic and installs blocked due to the application of validation rules."
+x-zendesk:
+  id: 360011793077
+  url: https://support.appsflyer.com/hc/en-us/articles/360011793077-Protect360-dashboard
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Protect your traffic
+  section_id: 6551015912465
+  position: 6
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11085
+  content_tags: [pm-roy-yanai, Marketers, Protect360]
+  labels: [dashboard, Advertisers, Protect360, protect 360, '360', P360, Premium, Marketers, Localize]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-08-11T09:58:07Z'
+  edited_at: '2026-05-07T00:01:09Z'
 ---
 **At a glance:** The Protect360 dashboard provides insights about fraudulent traffic and installs blocked due to the application of validation rules.
 

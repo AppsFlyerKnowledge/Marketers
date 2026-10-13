@@ -1,6 +1,26 @@
 ---
 title: "Send OpenDSR API requests"
 excerpt: "Implement the OpenDSR API to comply with global data protection laws and manage user data requests."
+x-zendesk:
+  id: 11332840660625
+  url: https://support.appsflyer.com/hc/en-us/articles/11332840660625-Send-OpenDSR-API-requests
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Preserve user privacy
+  section_id: 6551440878097
+  position: 0
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials]
+  labels: [Advertisers, GDPR, Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2022-12-12T09:14:00Z'
+  edited_at: '2026-10-01T15:42:01Z'
 ---
 This article is for the use of AppsFlyer clients, often referred to as Advertisers or App Owners, using the Platform to record app use and attribution. App Owners implement OpenDSR (Data Subject Request) API to comply with applicable data protection laws like GDPR (Europe), CCPA (California), LGPD (Brazil), PDPA (Thailand), and PIPA (Korea).
 

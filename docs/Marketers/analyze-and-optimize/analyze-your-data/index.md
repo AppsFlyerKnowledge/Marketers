@@ -2,6 +2,17 @@
 title: "Analyze your data"
 excerpt: "Discover how to use dashboards, reports, and data delivery tools to analyze your AppsFlyer data."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6550901627921
+  url: https://support.appsflyer.com/hc/en-us/sections/6550901627921-Analyze-your-data
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550913619473
+  position: 1
+  sorting: manual
+  created_at: '2022-06-02T11:20:19Z'
 ---
 Use our dashboards, reports, and other data delivery tools
 

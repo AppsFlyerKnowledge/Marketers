@@ -1,6 +1,26 @@
 ---
 title: "Glispa campaign configuration"
 excerpt: "Configure Glispa integration in AppsFlyer to enable mobile attribution, cost recording, view-through attribution, and postback settings."
+x-zendesk:
+  id: 209912983
+  url: https://support.appsflyer.com/hc/en-us/articles/209912983-Glispa-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (G-Q)
+  section_id: 6552006535953
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Glispa, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-04-07T12:53:20Z'
+  edited_at: '2026-09-09T13:03:44Z'
 ---
 **At a glance:** Glispa, an AppsFlyer integrated ad network partner, creates solutions that make it simple for agencies and brands to connect with target audiences and for publishers to monetize their apps. In addition to click-based mobile attribution, Glispa offers cost and view-through attribution, which you can record with AppsFlyer.
 

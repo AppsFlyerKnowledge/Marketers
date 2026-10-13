@@ -1,6 +1,26 @@
 ---
 title: "QR-to-app conversion"
 excerpt: "Convert desktop, TV, CTV, or offline users into mobile app users by using QR codes generated with OneLink."
+x-zendesk:
+  id: 360015119718
+  url: https://support.appsflyer.com/hc/en-us/articles/360015119718-QR-to-app-conversion
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Owned media attribution
+  section_id: 6551214397585
+  position: 2
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-asaf-mashiah, Marketers, Smart Banners and Scripts]
+  labels: [OneLink, Advertisers, owned media, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-11-04T09:49:23Z'
+  edited_at: '2026-02-24T15:52:52Z'
 ---
 **At a glance:** Convert desktop, TV, CTV, or offline users, into mobile app users by using QR codes generated with OneLink.
 

@@ -2,6 +2,26 @@
 title: "Bulletin: Push API Update: Changes to “Message Fields” Selection Behavior"
 excerpt: "Important update regarding changes to the AppsFlyer Push API configuration setting for selecting all fields, effective December 30, 2025."
 table_of_contents: false
+x-zendesk:
+  id: 41785747996689
+  url: https://support.appsflyer.com/hc/en-us/articles/41785747996689-Bulletin-Push-API-Update-Changes-to-Message-Fields-Selection-Behavior
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 0
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Raw Reports]
+  labels: []
+  promoted: false
+  comments_disabled: false
+  created_at: '2025-12-10T11:38:33Z'
+  edited_at: '2025-12-10T11:41:45Z'
 ---
 The behavior of the Push API configuration setting `selected_fields = "ALL FIELDS"` changes. This setting will no longer act as a future-proof selector. It will only apply to the message fields that exist at the moment the configuration is saved. Any new fields added later will not be included automatically. This change increases schema transparency, gives customers better control of their data pipelines, and prevents unplanned field expansion.
 

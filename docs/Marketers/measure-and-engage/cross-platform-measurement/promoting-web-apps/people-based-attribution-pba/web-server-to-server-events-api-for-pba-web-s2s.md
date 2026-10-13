@@ -1,6 +1,26 @@
 ---
 title: "Web Server-to-server events API for PBA (Web-S2S)"
 excerpt: "Use the Web Server-to-Server (Web-S2S) events API to report events and conversions to PBA that aren't reported by the Web SDK."
+x-zendesk:
+  id: 360006997298
+  url: https://support.appsflyer.com/hc/en-us/articles/360006997298-Web-Server-to-server-events-API-for-PBA-Web-S2S
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: People Based Attribution (PBA)
+  section_id: 43560588808721
+  position: 8
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, Marketers, Cross-Platform Measurement]
+  labels: [SDK, Developers, pba, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2020-03-23T23:59:00Z'
+  edited_at: '2025-08-20T09:36:30Z'
 ---
 The Web-S2S API for People-Based Attribution complements the [Web SDK](/docs/pba-web-sdk-integration-guide) allowing marketers to report events occurring on their websites but outside the scope of the Web SDK. For example, a visitor to the website (a web user), triggers an online payment event, processed by backend systems. After processing, the backend, using the S2S API, reports the event to AppsFlyer.
 

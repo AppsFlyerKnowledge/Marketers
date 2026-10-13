@@ -1,6 +1,26 @@
 ---
 title: "Using the Customer Assistant Chatbot"
 excerpt: "Learn how to contact AppsFlyer support through the Customer Assistant Chatbot to troubleshoot issues, get product guidance, or open support tickets."
+x-zendesk:
+  id: 23583984402193
+  url: https://support.appsflyer.com/hc/en-us/articles/23583984402193-Using-the-Customer-Assistant-Chatbot
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Marketer onboarding
+  section_id: 6550866490129
+  position: 3
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Marketers, Platform essentials]
+  labels: [Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2024-03-24T14:36:24Z'
+  edited_at: '2026-08-31T07:51:13Z'
 ---
 At a glance: Contact AppsFlyer support through the Customer Assistant Chatbot for assistance with troubleshooting issues or product guidance. The chatbot also helps you open tickets to the correct team where necessary.
 

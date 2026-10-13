@@ -1,6 +1,26 @@
 ---
 title: "Understand OneLink short vs. long URLs"
 excerpt: "Understand the difference between OneLink short and long URLs, and how to create long URLs outside of AppsFlyer."
+x-zendesk:
+  id: 360017132597
+  url: https://support.appsflyer.com/hc/en-us/articles/360017132597-Understand-OneLink-short-vs-long-URLs
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Deep linking using OneLink
+  section_id: 6551203111057
+  position: 12
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-asaf-mashiah, Marketers, QR-to-App]
+  labels: [Marketers, parameters]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-01-26T09:39:19Z'
+  edited_at: '2026-08-17T13:50:28Z'
 ---
 **At a glance:** Understand the difference between OneLink short and long URLs, and how to create long URLs outside of AppsFlyer.
 

@@ -1,6 +1,26 @@
 ---
 title: "Getting started—onboarding guide for ad networks"
 excerpt: "Complete integration with AppsFlyer by setting up and testing your attribution link and postback integrations."
+x-zendesk:
+  id: 360001300998
+  url: https://support.appsflyer.com/hc/en-us/articles/360001300998-Getting-started-onboarding-guide-for-ad-networks
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Ad network onboarding
+  section_id: 6551058566033
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
+  labels: [Ad Network, Advertisers, Ad Networks, Partners, Localize]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-03-28T08:41:59Z'
+  edited_at: '2025-11-13T10:20:40Z'
 ---
 **At a glance:** Complete integration with AppsFlyer by setting up and testing your attribution link and postback integrations. Understand the steps, timelines, and dependencies of the process.
 

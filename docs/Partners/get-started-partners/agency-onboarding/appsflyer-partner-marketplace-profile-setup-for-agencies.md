@@ -1,6 +1,26 @@
 ---
 title: "AppsFlyer Partner Marketplace profile setup for agencies"
 excerpt: "Learn how to create and configure your agency profile page in the AppsFlyer Partner Marketplace to showcase your services and attract potential advertisers."
+x-zendesk:
+  id: 21231679419793
+  url: https://support.appsflyer.com/hc/en-us/articles/21231679419793-AppsFlyer-Partner-Marketplace-profile-setup-for-agencies
+  locale: en-us
+  category: Partners
+  category_id: 6550456653457
+  section: Agency onboarding
+  section_id: 6551110223889
+  position: 3
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roy-negri, Platform essentials, Agencies]
+  labels: [Agencies, Partners]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-12-27T07:05:59Z'
+  edited_at: '2024-01-30T12:01:55Z'
 ---
 At a glance: Create your agency profile page in the Partner Marketplace with information about your company, its services, and solutions.
 

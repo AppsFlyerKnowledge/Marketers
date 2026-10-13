@@ -1,6 +1,26 @@
 ---
 title: "Xbox integration with AppsFlyer"
 excerpt: "Integrate your Xbox app with AppsFlyer via S2S API to receive attribution and event data for your campaigns on Xbox."
+x-zendesk:
+  id: 14504812967057
+  url: https://support.appsflyer.com/hc/en-us/articles/14504812967057-Xbox-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Promoting Console apps
+  section_id: 15329052471057
+  position: 13
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-roi-tamir, Marketers, PC & Console Attribution]
+  labels: [Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-04-13T08:28:00Z'
+  edited_at: '2024-05-07T09:10:17Z'
 ---
 At a glance: Integrate your Xbox app with AppsFlyer to receive attribution and event data for your campaigns on Xbox.
 

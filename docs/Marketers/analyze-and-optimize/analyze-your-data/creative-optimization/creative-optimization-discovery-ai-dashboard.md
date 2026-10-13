@@ -1,6 +1,26 @@
 ---
 title: "Creative Optimization Discovery AI dashboard"
 excerpt: "Analyze the performance of your creatives, scenes, and elements using the AI-powered Creative Optimization Discovery AI dashboard to produce data-driven, winning assets."
+x-zendesk:
+  id: 18565941422993
+  url: https://support.appsflyer.com/hc/en-us/articles/18565941422993-Creative-Optimization-Discovery-AI-dashboard
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Creative Optimization
+  section_id: 4419063475217
+  position: 3
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-omer-katzburg, Marketers, Creative Optimization]
+  labels: [Premium, Marketers, Design team, Loc In Prog]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-09-14T14:10:49Z'
+  edited_at: '2026-05-31T10:35:58Z'
 ---
 **At a glance:** Use the Creative Optimization Discovery AI dashboard to analyze the performance of your creatives and the scenes and elements they're built from, to produce and maintain data-driven, winning creatives.
 

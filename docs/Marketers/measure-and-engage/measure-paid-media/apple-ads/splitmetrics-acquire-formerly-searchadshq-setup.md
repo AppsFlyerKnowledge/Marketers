@@ -1,6 +1,26 @@
 ---
 title: "SplitMetrics Acquire (formerly SearchAdsHQ) setup"
 excerpt: "Optimize Apple Ads campaigns by using SplitMetrics Acquire to send postbacks from AppsFlyer."
+x-zendesk:
+  id: 360002249257
+  url: https://support.appsflyer.com/hc/en-us/articles/360002249257-SplitMetrics-Acquire-formerly-SearchAdsHQ-setup
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Apple Ads
+  section_id: 6551310453393
+  position: 4
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-08-15T08:21:04Z'
+  edited_at: '2026-09-15T10:52:56Z'
 ---
 **At a glance:** Optimize Apple Ads campaigns by using SplitMetrics Acquire. When configured, AppsFlyer sends postbacks to SplitMetrics Acquire.
 

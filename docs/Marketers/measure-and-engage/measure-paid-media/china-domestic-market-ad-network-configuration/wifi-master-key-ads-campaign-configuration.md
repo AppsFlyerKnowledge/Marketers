@@ -1,6 +1,26 @@
 ---
 title: "WiFi Master Key Ads campaign configuration"
 excerpt: "Learn how to configure and activate the WiFi Master Key Ads integration in AppsFlyer, including setting up postbacks, attribution links, and permissions."
+x-zendesk:
+  id: 360001954137
+  url: https://support.appsflyer.com/hc/en-us/articles/360001954137-WiFi-Master-Key-Ads-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: China domestic market ad network configuration
+  section_id: 6552066355601
+  position: 0
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-07-05T09:27:19Z'
+  edited_at: '2026-09-15T10:33:17Z'
 ---
 **At a glance:** WiFi Master Key Ads is an AppsFlyer ad network integrated partner.
 

@@ -1,6 +1,26 @@
 ---
 title: "ClickZoot campaign configuration"
 excerpt: "Learn how to configure the ClickZoot integration in AppsFlyer, including setting up attribution links, postbacks, and partner permissions."
+x-zendesk:
+  id: 208278016
+  url: https://support.appsflyer.com/hc/en-us/articles/208278016-ClickZoot-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  position: 19
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [clickzoot, Advertisers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2016-04-04T15:44:00Z'
+  edited_at: '2026-07-23T13:14:22Z'
 ---
 At a glance: Clickzoot, an AppsFlyer ad network integrated partner, provides solutions for mobile, lead generation, email marketing, and data optimization.
 

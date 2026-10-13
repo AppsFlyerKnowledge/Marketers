@@ -1,6 +1,26 @@
 ---
 title: "Snapchat—Create web campaigns for website apps"
 excerpt: "Set up a Snapchat Web Ads integration for your website app to send web conversion signals to Snapchat via the Conversions API."
+x-zendesk:
+  id: 46196482479249
+  url: https://support.appsflyer.com/hc/en-us/articles/46196482479249-Snapchat-Create-web-campaigns-for-website-apps
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Snap (Snapchat)
+  section_id: 6551316540945
+  position: 1
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: []
+  promoted: false
+  comments_disabled: false
+  created_at: '2026-04-29T09:02:24Z'
+  edited_at: '2026-08-30T15:29:58Z'
 ---
 AppsFlyer supports integration with Snapchat Web Ads (`snapweb_int`) for website app campaigns, letting you report attribution and conversion data directly through Snapchat's Conversions API. Snapchat can then use this data to optimize ad targeting, measure performance, and build custom audiences. 
 

@@ -2,6 +2,26 @@
 title: "Bulletin: Unspecified engagement type"
 excerpt: "To standardize reporting when engagement type is missing or mismatched, AppsFlyer is introducing default values in raw data reports and dashboards starting December 9, 2024."
 table_of_contents: false
+x-zendesk:
+  id: 30795194720785
+  url: https://support.appsflyer.com/hc/en-us/articles/30795194720785-Bulletin-Unspecified-engagement-type
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 6
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-moran-davida, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: false
+  created_at: '2024-12-09T15:17:50Z'
+  edited_at: '2025-02-05T10:02:08Z'
 ---
 | What’s new? | To standardize reporting when `engagement_type` is missing or mismatched, we are introducing `click_unspecified` or `impression_unspecified` as the default values in raw data reports and dashboards. |
 | --- | --- |

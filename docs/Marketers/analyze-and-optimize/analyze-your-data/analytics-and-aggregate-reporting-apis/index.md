@@ -2,6 +2,17 @@
 title: "Analytics and aggregate reporting/APIs"
 excerpt: "Access analytics data via APIs, Cohort, SKAN, Pivot, and Ad Revenue Monetization."
 table_of_contents: false
+x-zendesk:
+  type: section
+  id: 6550976670225
+  url: https://support.appsflyer.com/hc/en-us/sections/6550976670225-Analytics-and-aggregate-reporting-APIs
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  parent_section_id: 6550901627921
+  position: 1
+  sorting: manual
+  created_at: '2022-06-02T11:21:37Z'
 ---
 <Cards>
   <Card title="Aggregated and analytics reporting overview" href="/docs/aggregated-and-analytics-reporting-overview" icon="fa-solid fa-chart-column">

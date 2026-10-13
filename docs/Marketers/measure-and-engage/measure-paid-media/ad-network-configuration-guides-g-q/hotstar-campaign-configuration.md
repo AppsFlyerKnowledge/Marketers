@@ -1,6 +1,26 @@
 ---
 title: "Hotstar campaign configuration"
 excerpt: "Learn how to integrate and configure your Hotstar campaigns in AppsFlyer, including setting up attribution links, postbacks, and permissions."
+x-zendesk:
+  id: 360004428658
+  url: https://support.appsflyer.com/hc/en-us/articles/360004428658-Hotstar-campaign-configuration
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Ad network configuration guides (G-Q)
+  section_id: 6552006535953
+  position: 2
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
+  labels: [Campaign, configuration, integrated partner, Advertisers, hotstar, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-12-19T09:52:42Z'
+  edited_at: '2026-09-09T13:40:16Z'
 ---
 **At a glance:** Hotstar, an AppsFlyer integrated partner, is a major ad-supported streaming service in India.
 

@@ -2,6 +2,26 @@
 title: "Bulletin: Snapchat has become an Advanced SRN"
 excerpt: "Snapchat has transitioned to an Advanced Self-Reporting Network (SRN), enabling probabilistic attribution without IDFA and introducing raw data restrictions for view-through conversions."
 table_of_contents: false
+x-zendesk:
+  id: 17798585594641
+  url: https://support.appsflyer.com/hc/en-us/articles/17798585594641-Bulletin-Snapchat-has-become-an-Advanced-SRN
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Bulletins
+  section_id: 6551161473041
+  position: 34
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2023-08-15T13:39:35Z'
+  edited_at: '2023-10-26T17:07:09Z'
 ---
 | | |
 | --- | --- |

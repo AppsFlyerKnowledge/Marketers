@@ -1,6 +1,26 @@
 ---
 title: "Partner activation/deactivation"
 excerpt: "Learn how to activate or deactivate partner integrations in AppsFlyer, allowing or denying them from getting your data and performing actions."
+x-zendesk:
+  id: 360000844778
+  url: https://support.appsflyer.com/hc/en-us/articles/360000844778-Partner-activation-deactivation
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Media source configuration
+  section_id: 6551067072785
+  position: 2
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Agencies, Ad Networks]
+  labels: [Advertisers, Agencies, Ad Networks, Marketers, Loc Published]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-01-29T08:53:31Z'
+  edited_at: '2026-09-09T13:25:57Z'
 ---
 At a glance: Activate or deactivate partner integrations, allowing or denying them from getting your data and performing actions.
 

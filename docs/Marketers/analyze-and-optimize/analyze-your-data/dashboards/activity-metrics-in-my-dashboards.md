@@ -1,6 +1,26 @@
 ---
 title: "Activity metrics in My Dashboards"
 excerpt: "Learn how to use Activity metrics in My Dashboards to assess app performance, analyze revenue, and monitor user engagement trends."
+x-zendesk:
+  id: 38874924986001
+  url: https://support.appsflyer.com/hc/en-us/articles/38874924986001-Activity-metrics-in-My-Dashboards
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Dashboards
+  section_id: 6550925337873
+  position: 2
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-maya-kahane, Marketers, Marketing Analytics, Ad Networks]
+  labels: [Ad Networks, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2025-09-09T10:46:09Z'
+  edited_at: '2026-08-06T06:38:18Z'
 ---
 Use Activity metrics in [My Dashboards](/docs/my-dashboards) to quickly assess app performance, spot engagement trends, analyze revenue, and detect issues early, across any date range, with improved accuracy and flexibility.
 

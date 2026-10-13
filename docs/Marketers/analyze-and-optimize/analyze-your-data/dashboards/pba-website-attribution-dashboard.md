@@ -1,6 +1,26 @@
 ---
 title: "PBA Website Attribution dashboard"
 excerpt: "Measure the impact of marketing efforts driving website traffic, including visits, conversion events, and ad-level performance metrics."
+x-zendesk:
+  id: 360000654377
+  url: https://support.appsflyer.com/hc/en-us/articles/360000654377-PBA-Website-Attribution-dashboard
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Dashboards
+  section_id: 6550925337873
+  position: 16
+  owner: Elliot Lachman
+  owner_email: elliot.lachman@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-gil-or, Marketers, Cross-Platform Measurement]
+  labels: [Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2018-12-09T07:49:24Z'
+  edited_at: '2024-04-15T18:13:50Z'
 ---
 At a glance: Measure the impact of marketing efforts to drive effective website traffic. Which media sources, types, and channels are responsible for visits, conversion events and ad-level metrics are available.
 

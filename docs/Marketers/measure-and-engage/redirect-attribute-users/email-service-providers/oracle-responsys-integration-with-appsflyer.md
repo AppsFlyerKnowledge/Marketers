@@ -1,6 +1,26 @@
 ---
 title: "Oracle Responsys integration with AppsFlyer"
 excerpt: "Learn how to integrate Oracle Responsys with AppsFlyer to enable deep linking and click recording via Universal Links and App Links."
+x-zendesk:
+  id: 360003798297
+  url: https://support.appsflyer.com/hc/en-us/articles/360003798297-Oracle-Responsys-integration-with-AppsFlyer
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: Email service providers
+  section_id: 6551247620881
+  position: 7
+  owner: Ilana Wolf
+  owner_email: ilana.wolf@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-asaf-mashiah, Marketers, OneLink]
+  labels: [Oracle Responsys, Advertisers, Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2019-11-20T09:26:13Z'
+  edited_at: '2026-08-14T16:22:53Z'
 ---
 Oracle Responsys, an email delivery and analytics platform, embeds AppsFlyer OneLink within emails. Email recipients who click the link are deep linked into your app.
 

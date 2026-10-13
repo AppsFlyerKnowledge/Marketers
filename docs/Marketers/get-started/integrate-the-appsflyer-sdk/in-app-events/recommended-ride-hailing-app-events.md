@@ -1,6 +1,26 @@
 ---
 title: "Recommended ride-hailing app events"
 excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your ride-hailing app."
+x-zendesk:
+  id: 360019651957
+  url: https://support.appsflyer.com/hc/en-us/articles/360019651957-Recommended-ride-hailing-app-events
+  locale: en-us
+  category: Marketers
+  category_id: 6550444307985
+  section: In-app events
+  section_id: 6551285343761
+  position: 14
+  owner: Dori Frost
+  owner_email: dori.frost@appsflyer.com
+  visibility: Everyone / Public (no restriction)
+  user_segment_id: null
+  permission_group_id: 11065
+  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
+  labels: [Advertisers, Developers, Marketers]
+  promoted: false
+  comments_disabled: true
+  created_at: '2021-04-29T08:42:34Z'
+  edited_at: '2023-12-04T11:56:22Z'
 ---
 **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your ride-hailing app.
 
