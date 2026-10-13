@@ -12,6 +12,8 @@ Integrate AppsFlyer with leading email service providers (ESPs)
   <Card title="Set up your ESP integration with AppsFlyer" href="/docs/set-up-your-esp-integration-with-appsflyer" icon="fa-solid fa-envelope">
     Step-by-step instructions to configure your ESP integration.
   </Card>
+  <Card title="Adobe ESP integration with AppsFlyer" href="/docs/adobe-esp-integration-with-appsflyer" icon="fa-solid fa-envelope">
+  </Card>
   <Card title="Bloomreach integration with AppsFlyer" href="/docs/bloomreach-integration-with-appsflyer" icon="fa-solid fa-puzzle-piece">
     Connect Bloomreach with AppsFlyer for seamless email attribution.
   </Card>

@@ -65,7 +65,7 @@ Below we explain two methods of A/B testing using:
 
 **Analysis:**
 
-* Compare KPIs (for example, install conversion rate, ROI, ARPU, loyal user rate) of the campaigns in the [Overview dashboard page](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv).
+* Compare KPIs (for example, install conversion rate, ROI, ARPU, loyal user rate) of the campaigns in the Overview dashboard page.
 
 ### Method 2: A/B testing across multiple media sources
 

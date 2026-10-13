@@ -6,30 +6,19 @@ excerpt: "Learn how to configure and set up the Meiyou Ads integration in AppsFl
 
 ## Setting Up Meiyou Ads
 
-The setup is done from the **Active Integrations** page, but to find new partners you must first go to the [marketplace](/docs/partner-integrations).
+**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 
-> 📘 **Note**
->
-> Before setting up an integration, make sure you [contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
+**To set up a new integration:**
 
-
-**To activate the integration:**
-
-1. In AppsFlyer, from the side menu, select**Collaborate**> **Partner Marketplace**.
-2. Search for the partner and select it.
-3. Click **Set up integration**.
-4. Select the app for the integration. You’re directed to the integration setup page.
-5. In the **Integration** tab, turn **Activate partner** on.
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+2. Select the relevant app.
+3. Search for the partner and select **Integrate**.
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   **Important note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+5. Complete the configuration using the relevant tabs, as described below.
 
 Meiyou Ads configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
-
-For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
-
-> 📘 **Tip**
->
-> * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
-> * All the rest of the steps are either descriptive or **optional**
-
 
 ## Integration Tab
 
@@ -42,7 +31,7 @@ For more details about partner activation please click [here](/docs/partner-acti
 
 Meiyou Ads connects with AppsFlyer via a unique **Key**. If you don't already have the Key, you must obtain it from Meiyou Ads to continue with the integration.
 
-![mceclip3.png](https://files.readme.io/d7e4af4a1c5eb2bf6592dabfe35a649a5839e86c11b39a690fd70cffc22d0d7e-360003350057.png)
+![mceclip3.png](https://files.readme.io/451f74c0a6b45926f89a3f2a5d04b6ef240184c4862b576bee0d0a2b7a832f30-50900150950417.png)
 
 **Enable View-Through attribution**
 
@@ -50,7 +39,7 @@ Toggle this to ON if you want to attribute view-through installs from Meiyou Ads
 
 ### Default Postbacks
 
-![mceclip2.png](https://files.readme.io/1b170ec4c5a36efc7e3c27ebe0bfd470062a3ffb847fce45b4c95993bc106b22-21594016866449.png)
+![mceclip2.png](https://files.readme.io/b416ec9bd2d01f627fd34972234affae668cefd03a31e6df4ace616a1a1137a3-50900150954001.png)
 
 ### In-app events settings
 
@@ -60,14 +49,12 @@ In this section you can map your AppsFlyer events with Meiyou Ads via postbacks.
 
 Meiyou Ads connects with AppsFlyer via a unique Key. If you don't already have the Key, you must obtain it from Meiyou Ads to continue with the integration.
 
-![mceclip1.png](https://files.readme.io/78d4b75a3f036bf6272a966853edc9c5a663aa4bc4d720647e038b2170ceb0d6-360003350017.png)
+![mceclip1.png](https://files.readme.io/32b1c68531c7aa752514f9b1c13c4438cddef2e93d2ca04ab287d46acecda15e-50900150956305.png)
 
 1. Set the Meiyou Ads Key here
 2. Toggle In-App Event Postbacks to ON
 3. Click **Add Event** to add an SDK Event to the list
 4. Fill in the following parameters:
-
-
 
 | Parameter Name | Description |
 | --- | --- |
@@ -75,13 +62,11 @@ Meiyou Ads connects with AppsFlyer via a unique Key. If you don't already have t
 | **Partner Event Identifier** | The unique name or ID of each event as defined on Meiyou Ads side.  <br />Obtain the corresponding Event ID from Meiyou Ads and set in the text field. |
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
-
-
 ## Attribution Link Tab
 
 In this tab, you can create the attribution links you want to send to Meiyou Ads for attributing Meiyou Ads campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
-![mceclip2.png](https://files.readme.io/ec568338d3ad12ec8fa5b26876ebfa7e5775ec99996c5ba3aa0eefc1e4ab2ee0-360003350037.png)
+![mceclip2.png](https://files.readme.io/3a9b086aa1a76dc64289a512eec56885d108dce5c2778580fc0b2962f00c8a95-50900150957201.png)
 
 This tab is divided into different sections:
 
@@ -102,9 +87,9 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/ff0610dc0792f1eaad880fa2e3bfeff7f24621b4200ca9d37aa3d3b70397fd99-21593988240785.png)
+![attribution-link-parameters.png](https://files.readme.io/35882c82ab722ed52ab93542dc07d79e0e9ff58a14dad692405bc431b082f28c-50900198462481.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about **[AppsFlyer's Attribution Link Structure and Parameters](/docs/about-link-structure-and-parameters).**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
 
 ### Click-Through Attribution
 
@@ -114,7 +99,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the [click lookback window here](/docs/set-up-lookback-windows).
 
-![netease-click-through.png](https://files.readme.io/d4a1bf70ff8e0c569dc1d721502edacb5c2276772eb8a9c1715a82cf7c0a1f03-21594016891921.png)
+![netease-click-through.png](https://files.readme.io/4686c36edcb524d9ca7f8f6c995f3d0447455f150d22308aee6650cee85ecd6e-50900150960017.png)
 
 ### Click Attribution Link
 
@@ -130,7 +115,7 @@ You can customize this value to 1-23 hours or 1-7 days.
 
 More details about the [view-through attribution here](/docs/set-up-lookback-windows).
 
-[![](https://support.appsflyer.com/hc/article_attachments/21593988258961)](https://support.appsflyer.com/hc/article_attachments/21593988258961)
+[![](https://files.readme.io/bb595db7be55acee05af3d25264263c66986ea066a3d5eb40f07dd3735a54532-50900198466577.png)](https://support.appsflyer.com/hc/article_attachments/50900198466577)
 
 ### Impressions attribution link
 
@@ -148,7 +133,7 @@ Ad Revenue is not supported in the integration with this partner.
 
 In this tab, you can select the permissions to grant Meiyou Ads, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Meiyou Ads, the permissions tab is active and you can grant control to Meiyou Ads.
 
-![rtb_house-permissions-new.png](https://files.readme.io/fe398d0f52fdc414d90beb306f4a0b1fc16180119a196ff970c30cd101997d6a-21594021840401.png)
+![rtb_house-permissions-new.png](https://files.readme.io/01af9850fcb765e33303b6d1a3c792aa459e71dea907d418fcbd60d93135b8c5-50900198468113.png)
 
 ### Ad Network Permissions
 

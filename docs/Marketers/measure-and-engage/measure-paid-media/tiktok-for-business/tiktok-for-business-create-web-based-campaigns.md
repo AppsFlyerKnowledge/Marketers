@@ -12,7 +12,6 @@ AppsFlyer supports integration with TikTok Ads (`tiktokweb_int`) for User Acquis
 >
 > At present, the integration with TikTok Web does not support sending re-engagement postbacks to CAPI.
 
-
 ### Prerequisites
 
 Before activating the TikTok Web integration, make sure you have a business account in [TikTok Ads Manager](https://getstarted.tiktok.com/grow-your-business-gb?lang=en&attr_source=google&attr_source=google&attr_medium=search-br-ad&attr_medium=search-br-ad&attr_adgroup_id=155057567247&attr_adgroup_id=155057567247&attr_term=tiktok%20ads%20manager&attr_term=tiktok%20ads%20manager&no_parent_redirect=1&no_parent_redirect=1&creative=%7BGenZCopy%7D&matchtype=e&gad_source=1&gad_campaignid=20368896948&gbraid=0AAAAACeGRgRdqveOjiUJwxN0-j9g7VjPg&gclid=Cj0KCQjwmYzIBhC6ARIsAHA3IkTKsL0d1xAZLIO_9GIkDDIJR-jZs9jDGVa1hTDbsLzcxZl2j6p7ITcaAhf1EALw_wcB).
@@ -39,15 +38,14 @@ Start by activating the TikTok Web integration and setting the postbacks AppsFly
 
 To activate the TikTok Web Ads integration:
 
-1. In AppsFlyer, from the side menu, open **Collaborate** > **Partner Marketplace**.
-2. Search for **TikTok Web** (or `tiktokweb_int`) and select it.
-3. Click **Set up integration**. You’re directed to the **Active Integrations** setup page.
-4. In the **Integration** tab, turn on **Activate Partner**. The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner.
-5. Turn off **Advanced Privacy**(if you are setting an iOS app integration).
-6. **Advanced Matching data sharing:** Turn on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with TikTok, if these fields are included in the event information sent to AppsFlyer. For more information, see: [Advanced Matching Data Sharing](/docs/advanced-matching-data-sharing).
-7. **Pixel ID:**Enter the Pixel ID. You can generate it or retrieve it from your TikTok ads Manager, by following the instructions detailed [HERE](https://business-api.tiktok.com/portal/docs?id=1771100865818625).
-8. **Access token:**Enter the access token. To generate it or retrieve it, follow [these instructions](https://business-api.tiktok.com/portal/docs?id=1771100865818625)
-9. **Limit TikTok ads use of users’ personal information (CCPA):**Turn on this toggle to enable compliance with [data protection laws](/docs/send-opendsr-api-requests).
+1. In AppsFlyer, from the side menu, open **Collaborate** > **Partner Integrations** > **Partner Marketplace**.
+2. Search for **TikTok Web** (or `tiktokweb_int`) and select it. You’re directed to the setup page.
+3. In the **Integration** tab, turn on **Activate Partner**. The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner.
+4. Turn off **Advanced Privacy**(if you are setting an iOS app integration).
+5. **Advanced Matching data sharing:** Turn on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with TikTok, if these fields are included in the event information sent to AppsFlyer. For more information, see: [Advanced Matching Data Sharing](/docs/advanced-matching-data-sharing).
+6. **Pixel ID:** Enter the Pixel ID. You can generate it or retrieve it from your TikTok ads Manager, by following the instructions detailed [HERE](https://business-api.tiktok.com/portal/docs?id=1771100865818625).
+7. **Access token:** Enter the access token. To generate it or retrieve it, follow [these instructions](https://business-api.tiktok.com/portal/docs?id=1771100865818625)
+8. **Limit TikTok ads use of users’ personal information (CCPA):** Turn on this toggle to enable compliance with [data protection laws](/docs/send-opendsr-api-requests).
 
    CALLSTART::Note::
 
@@ -112,7 +110,6 @@ You can choose any pre-defined INAPP event sent from Appsflyer as your campaign 
 >
 > If you want to ensure that your web-to-app-triggered conversion events are sent via the TikTok Events API, skip [these steps](/docs/tiktok-for-business-advanced-srn-integration-setup#measuring-app-activity-for-nonapp-campaigns) when creating the campaign; otherwise, TikTok will claim those conversions through the SRN API, which can cause reporting and optimization misalignments.
 
-
 ### 2. Set destination URL
 
 1. Under **Destination,**in the **Website URL**field**,** enter the URL that serves as the destination for your ad. The URL should be for one of the following:
@@ -143,8 +140,6 @@ You can choose any pre-defined INAPP event sent from Appsflyer as your campaign 
 | [`af_ad`](/docs/about-link-structure-and-parameters#af_ad) | **\_\_cid\_name\_\_** |
 | [`af_ad_id`](/docs/about-link-structure-and-parameters#af_ad_id) | **\_\_cid\_\_** |
 
-
-
    ***** To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
 
    An example of the resulting URL should be:
@@ -169,8 +164,6 @@ You can choose any pre-defined INAPP event sent from Appsflyer as your campaign 
 | Other parameters | [See all parameters](/docs/ctv-pc-and-console-platform-direct-attribution-links#attribution-link-parameters) |
 | URL structure | `https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}?af_media_source={media_source}&af_campaign_id={campaign_id}&af_r={app_store_url}` |
 
-
-
    Map the following AppsFlyer parameters to their TikTok counterparts:
 
    
@@ -184,8 +177,6 @@ You can choose any pre-defined INAPP event sent from Appsflyer as your campaign 
 | [`af_adset_id`](/docs/about-link-structure-and-parameters#af_adset_id) | **\_\_aid\_\_** |
 | [`af_ad`](/docs/about-link-structure-and-parameters#af_ad) | **\_\_cid\_name\_\_** |
 | [`af_ad_id`](/docs/about-link-structure-and-parameters#af_ad_id) | **\_\_cid\_\_** |
-
-
 
    ***** To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
 
@@ -209,7 +200,7 @@ You can choose any pre-defined INAPP event sent from Appsflyer as your campaign 
 
 ### End-to-end data flow
 
-[![](https://support.appsflyer.com/hc/article_attachments/40497655655825)](https://support.appsflyer.com/hc/article_attachments/40497655655825)
+[![](https://files.readme.io/67a7404cfef4b6629dc300f68addcbd66cbd4a4a50ffb702be48f7c7df1831e1-40497655655825.png)](https://support.appsflyer.com/hc/article_attachments/40497655655825)
 
 1. The TikTok ad URL includes the  `pid=tiktokweb_int` parameter. When the user clicks on the ad, an `ttclid` parameter is automatically appended to the clicked URL.
 2. The User is redirected to the URL destination - a landing page containing a Smart Script.

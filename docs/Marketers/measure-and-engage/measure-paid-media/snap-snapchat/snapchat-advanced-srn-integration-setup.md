@@ -26,82 +26,98 @@ An Advanced SRN integration means that all [dual-consented](/docs/appsflyer-know
 
 <Accordion title="Integration tab">
 
-
 The integration supports click and impression attribution, cost, and audiences.
-Activate partner
-On the first visit here, you must turn on Activate Partner to enable setup.`<br/>`For more details about partner activation, see `[`Partner activation and deactivation](/docs/partner-activation-deactivation).
-Enable attribution
-Enable Activate Partner to allow attribution to Snapchat.
-`![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)`General settings
-Snap App ID
 
-In your Snap Business Manager, go to Apps, and copy the Snap App ID (read Snapchat's guide on `[`how to generate a Snap App ID](https://businesshelp.snapchat.com/en-US/a/snap-app-id)).
-Paste the ID in the Snap App ID field in AppsFlyer.
+#### Activate partner
 
-`![snapchat-app-id.png](https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png)`In case the app is promoted by an agency:
+On the **first visit** here, you must turn on **Activate Partner** to enable setup.  
+For more details about partner activation, see [Partner activation and deactivation](/docs/partner-activation-deactivation).
 
-Snap App ID can be added by the advertiser only.
-If the agency is under the same organization as you on Snapchat ad platform, use only one Snap App ID.
-If the agency is under a different organization on Snapchat ad platform, request from them to provide their Snap App ID for this app, and enter it in this field. Multiple IDs can be entered. Press Enter after each ID.
+**Enable attribution**
 
-Advanced Privacy
-The Advanced Privacy (AP) toggle controls which events AppsFlyer sends to Snapchat. This setting is also referred to as Advanced Conversions on the Snapchat side.
+Enable **Activate Partner** to allow attribution to Snapchat.
 
+![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
 
-Advanced Privacy OFF: AppsFlyer sends all installs, re-engagements, and in-app events to Snapchat for attribution, including events for users who have not made their IDFA (identifier for advertisers) available.`<br/>`Important: To use Snapchat's `[`unified attribution solution](https://businesshelp.snapchat.com/s/article/unified-attribution?language=en_US), you must turn off the Advanced Privacy toggle.
+#### General settings
 
-Advanced Privacy ON: AppsFlyer sends only installs, re-engagements, and in-app events for users who have made their IDFA available.
+**Snap App ID**
 
+1. In your Snap Business Manager, go to Apps, and copy the Snap App ID (read Snapchat's guide on [how to generate a Snap App ID](https://businesshelp.snapchat.com/en-US/a/snap-app-id)).
+2. Paste the ID in the Snap App ID field in AppsFlyer.
+
+![snapchat-app-id.png](https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png)
+
+**In case the app is promoted by an agency**:
+
+* Snap App ID can be added by the advertiser only.
+* If the agency is under the same organization as you on Snapchat ad platform, use only one Snap App ID.
+* If the agency is under a different organization on Snapchat ad platform, request from them to provide their Snap App ID for this app, and enter it in this field. Multiple IDs can be entered. Press Enter after each ID.
+
+#### Advanced Privacy
+
+The **Advanced Privacy** (AP) toggle controls which events AppsFlyer sends to Snapchat. This setting is also referred to as **Advanced Conversions** on the Snapchat side.
+
+* **Advanced Privacy OFF**: AppsFlyer sends all installs, re-engagements, and in-app events to Snapchat for attribution, including events for users who have not made their IDFA (identifier for advertisers) available.  
+  **Important:** To use Snapchat's [unified attribution solution](https://businesshelp.snapchat.com/s/article/unified-attribution?language=en_US), you must turn off the Advanced Privacy toggle.
+* **Advanced Privacy ON**: AppsFlyer sends only installs, re-engagements, and in-app events for users who have made their IDFA available.
 
 Agencies can't turn on Advanced Privacy, even when granted permission by the advertiser. This setting is limited to the advertiser only.
 
-Advanced Matching data sharing
-When Advanced Matching data sharing is turned on, Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, are shared with Snapchat if these fields are included in the event information sent to AppsFlyer. For more information, see: `[`Advanced Matching Data Sharing](/docs/advanced-matching-data-sharing).
-Install attribution
+#### Advanced Matching data sharing
+
+When **Advanced Matching data sharing** is turned on, Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, are shared with Snapchat if these fields are included in the event information sent to AppsFlyer. For more information, see: [Advanced Matching Data Sharing](/docs/advanced-matching-data-sharing).
+
+#### Install attribution
+
 Set the different attribution windows to attribute new installs (first launches) of users who viewed, clicked, or engaged with your ad. Note that only installs within the lookback window may be attributed to Snapchat.
-Note: Attribution for reinstalls (any install that isn't the initial setup on the device) isn't supported.
-Set the Install click-through lookback window to either 1-23 hours or 1-30 days. Note: Snapchat recommends aligning with them by setting the Install click-through lookback window to 7 days.
+
+**Note:** Attribution for reinstalls (any install that isn't the initial setup on the device) isn't supported.
+
+1. Set the **Install click-through lookback window** to either 1-23 hours or 1-30 days. **Note:** Snapchat recommends aligning with them by setting the Install click-through lookback window to 7 days.
 
 Setting the click-through lookback window also determines the lookback windows for engaged views and engaged clicks.
 
-``[Optional] Turn on Install view-through attribution and set the lookback windows:
-Install view-through lookback window between 1-24 hours. Note: Snapchat recommends aligning with them by setting the Install view-through lookback window to 1 day.
+2. [Optional] Turn on **Install view-through attribution** and set the lookback windows:
+   * **Install view-through lookback window** between 1-24 hours. **Note:** Snapchat recommends aligning with them by setting the Install view-through lookback window to 1 day.
 
-Re-engagement attribution
+#### Re-engagement attribution
+
 Set the different attribution windows to attribute re-engagements of your existing users who viewed, clicked, or engaged with your ad. Note that only re-engagements within the lookback window may be attributed to Snapchat.
-Set the Re-engagement click-through lookback window to either 1-23 hours or 1-30 days. Note: Snapchat recommends aligning with them by setting the Re-engagement click-through lookback window to 7 days.
+
+1. Set the **Re-engagement click-through lookback window** to either 1-23 hours or 1-30 days. **Note:** Snapchat recommends aligning with them by setting the Re-engagement click-through lookback window to 7 days.
 
 Setting the re-engagement click-through lookback window also determines the re-engagement lookback windows for engaged views and engaged clicks.
 
+2. [Optional] Turn on **Re-engagement view-through attribution** and set the lookback windows:
+   * **Re-engagement view-through lookback window** between 1-24 hours. **Note:** Snapchat recommends aligning with them by setting the Re-engagement view-through lookback window to 1 day.
+3. Set the **Re-engagement window** to either 1-23 hours, 1-90 days, or **Lifetime**.
 
-[Optional] Turn on Re-engagement view-through attribution and set the lookback windows:
-Re-engagement view-through lookback window between 1-24 hours. Note: Snapchat recommends aligning with them by setting the Re-engagement view-through lookback window to 1 day.
+#### Ignore active users for retargeting
 
-Set the Re-engagement window to either 1-23 hours, 1-90 days, or Lifetime.
+Set a window timeframe to [ignore re-engagements and re-attributions](/docs/set-retargeting-inactivity-window#inactivity-period) of users who launched your app. This means their activity during the window timeframe isn't recorded in AppsFlyer.
 
-Ignore active users for retargeting
-Set a window timeframe to `[`ignore re-engagements and re-attributions](/docs/set-retargeting-inactivity-window#inactivity-period) of users who launched your app. This means their activity during the window timeframe isn't recorded in AppsFlyer.
+Re-engagement and re-attribution conversions of users who were **dormant** in the set timeframe **are recorded**.
 
-Re-engagement and re-attribution conversions of users who were dormant in the set timeframe are recorded.
+1. Turn on **Ignore active users for retargeting**.
+2. Set the Inactivity window.
 
-Turn on Ignore active users for retargeting.
-Set the Inactivity window.
+#### In-app event postbacks
 
-In-app event postbacks
 Map AppsFlyer events with the partner via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant by target validation rules).
-`[![mceclip0.png](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)`](https://support.appsflyer.com/hc/article_attachments/23458868914577)
-To configure in-app event postbacks:
 
-Set the Partner ID (if required).
-Enable In-app event postback.
+[![mceclip0.png](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)](https://support.appsflyer.com/hc/article_attachments/23458868914577)
 
-Set the In-app event postback window, if required (read more about `[`in-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).
-If available, select whether to send events automatically or manually. Learn more about `[`sending all events as they are](/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped).
-Click Add event to add an SDK or server-to-server event to the list.
-Complete the parameters required.
-[Optional] Click `![conditional-iae-postbacks-icon.png](https://files.readme.io/6524810d15f08b4b85deab9c2cbfb8fd7880126b3c3180e3ecf4ead5f1f0a9ae-17798909160465.png)` to set conditions for sending certain in-app events to the partner.`<br/>`Learn more about `[`conditional in-app events postbacks](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks).
+**To configure in-app event postbacks:**
 
-
+1. Set the **Partner ID** (if required).
+2. Enable **In-app event postback.**
+3. Set the **In-app event postback window**, if required (read more about [in-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).
+4. If available, select whether to send events automatically or manually. Learn more about [sending all events as they are](/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped).
+5. Click **Add event** to add an SDK or server-to-server event to the list.
+6. Complete the parameters required.
+7. [Optional] Click ![conditional-iae-postbacks-icon.png](https://files.readme.io/6524810d15f08b4b85deab9c2cbfb8fd7880126b3c3180e3ecf4ead5f1f0a9ae-17798909160465.png) to set conditions for sending certain in-app events to the partner.  
+   Learn more about [conditional in-app events postbacks](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks).
 
 | Parameter name | Description |
 | --- | --- |
@@ -111,56 +127,57 @@ Complete the parameters required.
 | **including** | * **No data (default)**: send only the event itself without the event value.<br />* **Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).<br />* **Values without revenue**: send all the parameters **excluding** the revenue value. |
 
 </Accordion>
-<Accordion title="Attribution link tab">
 
+<Accordion title="Attribution link tab">
 
 Attribution links are not available for Snapchat.
 
 For all SRNs, such as Facebook, Apple Ads, Google Ads, and Snapchat, this tab is not functional, as they do not use external attribution links.
 
 </Accordion>
-<Accordion title="Cost tab">
 
+<Accordion title="Cost tab">
 
 The cost integration provides the following aggregated data:
 
-Cost data for your campaigns, adsets, ads, and channel levels. See the `[`ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features.`<br/>`Note: Cost data requires an `[`ROI360](/docs/roi360-cost-aggregation-overview?query=xpend) subscription.
-Data on clicks and impressions.
+* Cost data for your campaigns, adsets, ads, and channel levels. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features.  
+  **Note:** Cost data requires an [ROI360](/docs/roi360-cost-aggregation-overview?query=xpend) subscription.
+* Data on clicks and impressions.
 
-To enable the cost API:
-Follow `[`these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
+**To enable the cost API**:
+
+* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
 
 <Accordion title="Cost data sync status">
 
-`[`View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 </Accordion>
 
 <Accordion title="Stop Snapchat cost sync">
 
+**To stop getting Snapchat cost and to delete a connected Snapchat account:**
 
-To stop getting Snapchat cost and to delete a connected Snapchat account:
-``
-`[`In the actions column, hover over an account, click Delete connection](/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab).`<br/>`Once deleted, AppsFlyer stops getting the cost. Deleting the connection does not impact historical data.
+* [In the actions column, hover over an account, click **Delete connection**](/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab).  
+  Once deleted, AppsFlyer stops getting the cost. Deleting the connection does not impact historical data.
+
+</Accordion>
+
+* Make sure your campaign setup in Snapchat is for either an iOS or Android app, not both. If the campaign is for both apps, AppsFlyer can't break down the cost per app, and the cost does not display in AppsFlyer.
+* To avoid discrepancies in cost data, set the same timezone in both app settings and your Snapchat advertising account.
+* Once you set Snap's cost, do not change the name of any active campaign, ad set, or single ad, as it may cause serious discrepancies or missing cost data.
 
 </Accordion>
 
-
-
-Make sure your campaign setup in Snapchat is for either an iOS or Android app, not both. If the campaign is for both apps, AppsFlyer can't break down the cost per app, and the cost does not display in AppsFlyer.
-To avoid discrepancies in cost data, set the same timezone in both app settings and your Snapchat advertising account.
-Once you set Snap's cost, do not change the name of any active campaign, ad set, or single ad, as it may cause serious discrepancies or missing cost data.
-
-</Accordion>
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
 <Accordion title="Permissions tab">
 
-
-Select which `[`permissions to grant](/docs/set-up-an-integrated-partner#permissions-tab) Snapchat to access your data and perform various actions.
+Select which [permissions to grant](/docs/set-up-an-integrated-partner#permissions-tab) Snapchat to access your data and perform various actions.
 
 When the integration is deactivated while the Permissions toggle is still turned on, permissions remain granted.
 
@@ -196,7 +213,7 @@ client://home?pid=snapchat\_int&c=TEST&is\_retargeting=true
 1. Go to **Drive traffic to app** opportunity type.
 2. Add the Deeplink URI:  
      
-   [![](https://support.appsflyer.com/hc/article_attachments/360001717778)](https://support.appsflyer.com/hc/article_attachments/360001717778)
+   [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://support.appsflyer.com/hc/article_attachments/360001717778)
 
 ### Deferred deep linking with Snapchat
 
@@ -238,6 +255,7 @@ Snapchat account IDs mustn't be shared between the advertiser and the agency. If
   * Attributed touch time (reported as date only - "dd/mm/yyyy")
   * Campaign name and ID (Starting Dec 15, 2025)
   * Ad set name and ID (Starting Dec 15, 2025)
+* Starting October 6, 2026, `snapchat_int` view-through attribution data is limited (restricted) in raw data only in some cases. The logic of the event restrictions is managed by Snapchat.
 
 ## Snapchat data retention
 

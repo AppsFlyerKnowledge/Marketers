@@ -2,14 +2,11 @@
 title: "[Closed beta] Validation Rules API"
 excerpt: "Automate the creation and management of Validation Rules at scale with the programmatic Validation Rules API."
 ---
-![beta feature.png](https://support.appsflyer.com/hc/article_attachments/48792160710545)
-
-**At a glance:** Automate the creation and management of Validation Rules at scale. The Validation Rules API lets technical teams programmatically create, update, patch, and delete rules, going beyond the UI's value limits and cutting out manual rule management overhead.
+Automate the creation and management of Validation Rules at scale. The Validation Rules API lets technical teams programmatically create, update, patch, and delete rules, going beyond the UI's value limits and cutting out manual rule management overhead.
 
 > 📘 **Note**
 >
 > The Validation Rules API is available to Protect360 customers. It's currently in closed beta, and access is limited and enabled per account. Contact your Customer Success Manager (CSM) to request access.
-
 
 ## About the Validation Rules API
 
@@ -22,7 +19,7 @@ The Validation Rules API removes both constraints. It gives technical teams full
 
 Rules created via the API are flagged as API-managed and appear as read-only in the AppsFlyer UI. Existing UI-created rules aren't affected. UI-managed and API-managed rules coexist in the same account.
 
-### Is this for you?
+<Accordion title="Is this for you?">
 
 The Validation Rules API is built for specific use cases. It's not meant to replace the UI for every customer. Consider the API if:
 
@@ -32,7 +29,9 @@ The Validation Rules API is built for specific use cases. It's not meant to repl
 
 If you manage a small number of rules that rarely change, the Validation Rules UI remains the simplest way to manage them.
 
-### Access and eligibility
+</Accordion>
+
+<Accordion title="Access and eligibility">
 
 The Validation Rules API is available to Protect360 customers. It's currently in closed beta, and access is enabled per account.
 
@@ -40,9 +39,11 @@ The Validation Rules API is available to Protect360 customers. It's currently in
 * Controlled by a feature flag. Contact your Customer Success Manager (CSM) to request access and activation.
 * Large rules (up to 300,000 values) require additional special enablement beyond standard API access. Contact your CSM to activate them.
 
+</Accordion>
+
 ## How it works
 
-### Authenticate
+<Accordion title="Authenticate">
 
 The API uses Bearer token (JWT) authentication.
 
@@ -54,10 +55,9 @@ The API uses Bearer token (JWT) authentication.
 >
 > API access must be enabled per account before a token will work. Contact your CSM to activate it.
 
+</Accordion>
 
-### What you can do
-
-
+<Accordion title="What you can do">
 
 | Action | Description |
 | --- | --- |
@@ -69,9 +69,9 @@ The API uses Bearer token (JWT) authentication.
 | Delete a rule | Remove a rule permanently. |
 | Patch a rule | Add, remove, or replace values for a single dimension without rewriting the full rule. |
 
-
-
 The patch endpoint is especially useful for high-frequency updates. You update only what changed, not the entire rule. This works well for workflows like daily fraud-source blocklist updates.
+
+</Accordion>
 
 ## Scope and supported configurations
 
@@ -89,17 +89,13 @@ The Validation Rules API currently supports a defined subset of what's available
   * Block attribution and correct to the last valid media source.
   * Block attribution and mark installs as invalid. These won't appear in the Protect360 dashboard.
 
-### Rule size and limits
-
-
+<Accordion title="Rule size and limits">
 
 |  | Standard rule | Large rule |
 | --- | --- | --- |
 | Total values across all conditions | Up to 17,000 | Up to 300,000 |
 | Requires special enablement | Yes | Yes |
 | Max rules per account | 100 | Up to 5 |
-
-
 
 Additional limits:
 
@@ -109,11 +105,11 @@ Additional limits:
 
 Exceeding any limit returns an error identifying which limit was breached.
 
-### Accessing blocked traffic data
+</Accordion>
+
+<Accordion title="Accessing blocked traffic data">
 
 Traffic blocked by API-managed rules is reported identically to traffic blocked by UI-created rules.
-
-
 
 | Report | Location |
 | --- | --- |
@@ -121,63 +117,80 @@ Traffic blocked by API-managed rules is reported identically to traffic blocked 
 | Data Locker | Protect360 reports > blocked\_installs report |
 | Pull API | Raw data export |
 
+</Accordion>
 
-
-### Technical documentation
+<Accordion title="Technical documentation">
 
 For full technical details, including endpoint references, request and response schemas, and error codes, see the [Validation Rules API reference](https://dev.appsflyer.com/hc/reference/updaterule).
 
-### Traits and limitations
+</Accordion>
 
-
+<Accordion title="Traits and limitations">
 
 | Trait | Description |
 | --- | --- |
 | Event support | Install events only. In-app events aren't supported in this version. |
 | Logic | Only AND logic is supported between dimensions. OR isn't supported. |
 | UI interaction | Rules created via the API appear as read-only in the UI. Edit them using the API. |
-| UI-created rules | Not accessible or editable via the API. |
 | Call size | 2MB per API call (approximately 50,000 values). Larger updates must be split across multiple calls. |
 
-
+</Accordion>
 
 ## FAQ
 
-### Who can use the Validation Rules API?
+<Accordion title="Who can use the Validation Rules API?">
 
 The Validation Rules API is available to Protect360 customers. It's currently in closed beta, and access is enabled per account. Contact your CSM to request access.
 
-### Do API-managed rules appear in the UI?
+</Accordion>
+
+<Accordion title="Do API-managed rules appear in the UI?">
 
 Yes. Rules created via the API are visible in the AppsFlyer UI, but they're flagged as API-managed and appear as read-only.
 
-### Can I manage some rules via the API and others via the UI?
+</Accordion>
+
+<Accordion title="Can I manage some rules via the API and others via the UI?">
 
 Yes. API-managed and UI-created rules coexist in the same account. API-managed rules appear as read-only in the UI. UI-created rules aren't accessible via the API.
 
-### Can I edit an API-managed rule in the UI?
+</Accordion>
+
+<Accordion title="Can I edit an API-managed rule in the UI?">
 
 No, the rule appears as read-only. You must use the API to update it instead.
 
-### What's the difference between Update and Patch?
+</Accordion>
+
+<Accordion title="What's the difference between Update and Patch?">
 
 Update overwrites the full rule. Patch updates a single dimension only, adding, removing, or replacing values without rewriting the entire rule. Use Patch for frequent, targeted updates.
 
-### What happens if I exceed a limit?
+</Accordion>
+
+<Accordion title="What happens if I exceed a limit?">
 
 The API returns an error identifying which limit was breached. Split large updates across multiple API calls to stay within the 2MB per call limit.
 
-### How many rules can I have?
+</Accordion>
+
+<Accordion title="How many rules can I have?">
 
 Up to 100 standard rules per account and up to 5 large rules per account. Both standard and large rules require special enablement. Contact your CSM to activate them.
 
-### Is OR logic supported?
+</Accordion>
+
+<Accordion title="Is OR logic supported?">
 
 No. Only AND logic is supported between dimensions.
 
-### What event types are supported?
+</Accordion>
+
+<Accordion title="What event types are supported?">
 
 Install events only. In-app events aren't supported in this version.
+
+</Accordion>
 
 > 📘 **See also**
 >

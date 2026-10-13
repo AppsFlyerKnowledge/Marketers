@@ -8,7 +8,6 @@ excerpt: "Strengthen fraud protection for your Android app with the Advanced Sec
 >
 > The Advanced Security Protect360 Module beta is available to all Protect360 customers. To join, contact your CSM.
 
-
 ## What is SDK spoofing?
 
 SDK spoofing is an advanced fraud tactic where attackers send fake install and in-app event requests directly to AppsFlyer servers—without installing or running the app on a real device. The app SDK isn’t hacked or modified. Instead, fraudsters mimic the network requests a real app would send, making the activity look legitimate.
@@ -25,11 +24,25 @@ This solution is especially valuable for apps facing discrepancies between app s
 
 The module is triggered after the first app launch (logged by the SDK) but before the install is attributed. To use the Advanced Security Module, you must be using the Android SDK v6.15.2 or later.
 
+## Prerequisites
+
+Before you begin, make sure you have the following:
+
+* **Android SDK v6.15.2 or later** integrated in your app.
+* **An API V2 token** — required for Maven repository authentication when your developer integrates the Security Module dependency. See [Managing AppsFlyer tokens](/docs/managing-appsflyer-tokens#h_01HG64DMW7PYRXBMZN00EQN991) for how to retrieve or generate one.
+* **All certificate hashes (SHA-256)** for every certificate used to sign your app (debug and release). See [Generating a SHA256 fingerprint](https://dev.appsflyer.com/hc/docs/android-security-plugin#generating-a-sha256-fingerprint).
+
+> 📘 **Important!**
+>
+> If your account has already reached the two-token limit for API V2 tokens, you do not need to request a new one, an existing API V2 token can be reused for this integration. Contact your CSM if you have questions about token allocation.
+>
+> For the full technical integration steps, see the [Android security plugin developer guide](https://dev.appsflyer.com/hc/docs/android-security-plugin).
+
 ## Set the Advanced Security Module
 
 Set up the Advanced Security Module to validate that in-app traffic is coming from your signed app builds and to detect (and optionally block) spoofed traffic.
 
-### Configure the Advanced Security Module
+<Accordion title="Configure the Advanced Security Module">
 
 #### **Step 1: Open and select an app**
 
@@ -63,8 +76,9 @@ Note: Ask your developer for all the [certificate hashes](https://dev.appsflyer.
 >
 > After you build, the detection mode is set to **Tagged** by default. In this mode, AppsFlyer flags suspicious traffic but doesn't block it. After the secured version is live, switch to **Implemented** mode to block spoofed traffic. For more information about the Tagged and Implemented modes, see [FPS Modes](/docs/beta-fraud-protection-studio#fps-modes).
 
+</Accordion>
 
-### Maintaining and updating the configuration
+<Accordion title="Maintaining and updating the configuration">
 
 Fraud techniques change over time, and malicious actors may attempt to reverse-engineer detection logic. Regular maintenance ensures continued effectiveness.
 
@@ -93,6 +107,8 @@ You can:
 * Update certificates immediately after signing changes
 * Reassess configuration periodically to stay ahead of emerging fraud methods
 
+</Accordion>
+
 ## **Data visibility**
 
 The advanced security module detection is reflected in two places:
@@ -100,7 +116,7 @@ The advanced security module detection is reflected in two places:
 * Protect360 dashboard
 * Fraud Protection Studio
 
-### Protect360 dashboard
+<Accordion title="Protect360 dashboard">
 
 The advanced security module detection can be found under the **Attribution Spoofing** section.
 
@@ -115,9 +131,11 @@ Data is broken up into two KPIs and a graph.
 
 * **Attribution spoofing trend**: Reflection of the advanced security module detection over time. This graph reflects the high-level status of the spoofing detection on the app/s level.
 
-![](https://support.appsflyer.com/hc/article_attachments/39145854862353)
+![](https://files.readme.io/2f9e63d283850d3b1150dfcefff3c3cd47383cb58c4194dbbec3296da807fcb9-39145854862353.png)
 
-### Fraud Protection Studio (FPS)
+</Accordion>
+
+<Accordion title="Fraud Protection Studio (FPS)">
 
 The Advanced Security Module can be found in the Fraud Protection Studio page.
 
@@ -132,7 +150,7 @@ To access the Advanced Security Module:
 
 #### The Advanced Security Module page
 
-![](https://support.appsflyer.com/hc/article_attachments/39145848945681)
+![](https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png)
 
 The Advanced Security Module page is broken into three sections.
 
@@ -158,7 +176,9 @@ Insights help you understand the breakdown of the chart. The three types of insi
 * **All traffic is tagged** - App versions that are 100% tagged may not have been added to the exclusion list. Please check the app versions exclusion list with your CSM and consider adding the relevant app versions.
 * **High rate of tagged detections** - One or more app versions are showing more than 20% advanced security module detections in tagged mode. It is highly recommended to contact your CSM to switch to implemented detection mode for the best results.
 
-### FAQ
+</Accordion>
+
+<Accordion title="FAQ">
 
 #### What is Advanced Security?
 
@@ -191,3 +211,5 @@ No. Advanced Security is currently available for Android apps only and is offere
 #### How do I know Advanced Security is working?
 
 Detection results are visible in the Protect360 dashboard and Fraud Protection Studio, where you can track spoofed traffic that is tagged or blocked and review trends over time.
+
+</Accordion>

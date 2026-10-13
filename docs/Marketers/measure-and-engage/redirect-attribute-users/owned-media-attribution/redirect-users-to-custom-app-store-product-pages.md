@@ -18,11 +18,11 @@ Data regarding the custom store product pages is available in the AppsFlyer dash
 
 ### Dashboard
 
-Aggregate data for App Store custom product pages is available in the [Overview dashboard](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv). For Google Play custom store listings, availability is coming soon.
+Aggregate data for App Store custom product pages is available in the Overview dashboard. For Google Play custom store listings, availability is coming soon.
 
 **To view the data**:
 
-* In the [Overview dashboard](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv#view-types), add the **Store product page** grouping dimension.
+* In the Overview dashboard, add the **Store product page** grouping dimension.
 
 Custom store product page displays in the dashboard charts and tables.
 

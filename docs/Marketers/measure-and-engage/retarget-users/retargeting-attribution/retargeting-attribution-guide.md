@@ -122,14 +122,14 @@ The following settings are required depending on the scenario.
 
 ### Retargeting dashboard
 
-The [Overview dashboard](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv) contains retargeting metrics as well as user acquisition metrics. The metrics are LTV-based and relate to users who engage with a retargeting campaign.
+The Overview dashboard contains retargeting metrics as well as user acquisition metrics. The metrics are LTV-based and relate to users who engage with a retargeting campaign.
 
 **To view retargeting data**:
 
 1. From the side menu, select **Analyze** > **Overview**.
 2. Click **View type**, then select **Retargeting**.  
    Retargeting data displays.  
-   **Note**: You can also view retargeting data in the unified view. See [Dashboard view types](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv#view-types).
+   **Note**: You can also view retargeting data in the unified view. See Dashboard view types.
 
 ### Retargeting attribution links
 

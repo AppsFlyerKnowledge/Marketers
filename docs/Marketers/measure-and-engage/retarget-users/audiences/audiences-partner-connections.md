@@ -18,8 +18,6 @@ A partner connection enables you to easily and continuously send your audiences 
 
 **Note:** A maximum of 50 partner connections per audience is recommended.
 
-
-
 | Partner |  | Connection requirements | Supported identifiers |
 | --- | --- | --- | --- |
 | 530 Broadway Media | ![](https://cdn.appsflyer.com/marketplace/static/logo/broadway89.png) | API key | * IDFA<br />* GAID |
@@ -39,7 +37,7 @@ A partner connection enables you to easily and continuously send your audiences 
 | Adsgalaxy | ![](https://cdn.appsflyer.com/marketplace/static/logo/nhmtgvm.png?v=1) | API key | * IDFA<br />* GAID |
 | ADSJOY | ![](https://cdn.appsflyer.com/marketplace/static/logo/adsjoy.png?v=1) | API key | * IDFA<br />* GAID |
 | AdTiming | ![](https://cdn.appsflyer.com/marketplace/static/logo/adtiming.png?v=1) | API key | * IDFA<br />* GAID |
-| Advolt | ![Advolt.jpg](https://support.appsflyer.com/hc/article_attachments/31237653514129) | API key | * IDFA<br />* GAID |
+| Advolt | ![Advolt.jpg](https://files.readme.io/78f1eb00caacd45ec85aa24eecf48ad5bc18fa7b1d28fc6d2a4342b9f5f14f7d-31237653514129.jpg) | API key | * IDFA<br />* GAID |
 | Affinity | ![](https://cdn.appsflyer.com/marketplace/static/logo/affinity.png) | API key | * IDFA<br />* GAID |
 | Affle | ![](https://cdn.appsflyer.com/marketplace/static/logo/affle.png) | API key | * IDFA<br />* GAID |
 | Amazon S3 | ![](https://cdn.appsflyer.com/marketplace/static/logo/AmazonS3.png) | Connection instructions for [Amazon S3](/docs/audiences-partner-connections#amazon-s3) | * IDFA<br />* GAID<br />* IMEI<br />* OAID<br />* IDFV<br />* CUID<br />* Email (hashed)<br />* Phone (hashed) |
@@ -61,17 +59,17 @@ A partner connection enables you to easily and continuously send your audiences 
 | Bigabid | ![](https://cdn.appsflyer.com/marketplace/static/logo/bigabid.png) | API key | * IDFA<br />* GAID<br />* IDFV |
 | Bigo Ads | ![](https://cdn.appsflyer.com/marketplace/static/logo/bigoads.png?v=1) | Log in to Bigo Ads to authenticate | * IDFA<br />* GAID |
 | Bluemediagroup | ![](https://cdn.appsflyer.com/marketplace/static/logo/bluemediagroup.png?v=1) | API key | * IDFA<br />* GAID |
-| Braze | ![Braze logo Nov 2023.jpg](https://support.appsflyer.com/hc/article_attachments/31237648110737) | Connection instructions for [Braze](/docs/audiences-partner-connections#braze) | * Braze external user ID |
+| Braze | ![Braze logo Nov 2023.jpg](https://files.readme.io/c84c2459ec87a3c3fef83e573ff4d43e45df8604223d53aaa989ad410d372d54-31237648110737.jpg) | Connection instructions for [Braze](/docs/audiences-partner-connections#braze) | * Braze external user ID |
 | c2c\_audience | ![](https://cdn.appsflyer.com/marketplace/static/logo/click2commission.png) | API key | * IDFA<br />* GAID |
 | Cecom | ![](https://cdn.appsflyer.com/marketplace/static/logo/cecom.png?v=1) | API key | * IDFA<br />* GAID |
-| Cherryonly | ![cherryonl4f (1).png](https://support.appsflyer.com/hc/article_attachments/35884799991185) | API key | * IDFA<br />* GAID |
+| Cherryonly | ![cherryonl4f (1).png](https://files.readme.io/ad4e693ada777a79cbcadc668a67c03272547e0641d3312349392a9ea34ffe64-35884799991185.png) | API key | * IDFA<br />* GAID |
 | Chartboost | ![](https://cdn.appsflyer.com/marketplace/static/logo/chartboost.png?v=1) | API key | * IDFA<br />* GAID |
 | Codomeads | ![](https://cdn.appsflyer.com/marketplace/static/logo/codomeadsfd.png) | API key | * IDFA<br />* GAID |
 | Collectcent | ![](https://cdn.appsflyer.com/marketplace/static/logo/collectcent.png) | API key | * IDFA<br />* GAID |
 | CRED | ![](https://cdn.appsflyer.com/marketplace/static/logo/cred.png) | API key | * IDFA<br />* GAID |
 | Criteo | ![](https://cdn.appsflyer.com/marketplace/static/logo/criteo.png) | Connection instructions for [Criteo](/docs/audiences-partner-connections#criteo) | * IDFA<br />* GAID<br />* Email (hashed) |
 | CRONBID | ![](https://cdn.appsflyer.com/marketplace/static/logo/cronbid.png?v=1) | API key | * IDFA<br />* GAID |
-| Daangn | ![danggeunmx8 (1).png](https://support.appsflyer.com/hc/article_attachments/34192650411665) | API key | * IDFA<br />* GAID |
+| Daangn | ![danggeunmx8 (1).png](https://files.readme.io/97d8be9cdb9f4f82efdd6ccf735c5a6f195f4d10868d107c6b29bfbe99880cbb-34192650411665.png) | API key | * IDFA<br />* GAID |
 | Dataseat | ![](https://cdn.appsflyer.com/marketplace/static/logo/dataseat.png?v=1) | API key | * IDFA<br />* GAID |
 | Dealsnprice | ![](https://cdn.appsflyer.com/marketplace/static/logo/dealsnprice.png?v=1) | API key | * IDFA<br />* GAID |
 | DemandScale | ![](https://cdn.appsflyer.com/marketplace/static/logo/siftco.png?v=1) | API key | * IDFA<br />* GAID |
@@ -85,7 +83,7 @@ A partner connection enables you to easily and continuously send your audiences 
 | Galaxyx | ![](https://cdn.appsflyer.com/marketplace/static/logo/galaxyxtech.png) | API key | * IDFA<br />* GAID |
 | Gameappzone | ![](https://cdn.appsflyer.com/marketplace/static/logo/gameappzo45i.png) | API key | * IDFA<br />* GAID |
 | Gamelight | ![](https://cdn.appsflyer.com/marketplace/static/logo/thespotlight.png) | API key | * IDFA<br />* GAID |
-| Glance | ![Screen_Shot_2022-08-02_at_10.26.22.png](https://support.appsflyer.com/hc/article_attachments/31237648111633) | API key | * IDFA<br />* GAID |
+| Glance | ![Screen_Shot_2022-08-02_at_10.26.22.png](https://files.readme.io/32870ef5ab9e2714b7cae55d87c843b7a39116c1b2c020b869b2595fcb256635-31237648111633.png) | API key | * IDFA<br />* GAID |
 | Google Ads<br /><br />**Check with your CSM or [hello@appsflyer.com](mailto:hello@appsflyer.com) to determine if your account is eligible for Google Ads integration with Audiences. | ![](https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png) | Connection instructions for [Google Ads](/docs/audiences-partner-connections#google-ads) | * IDFA<br />* GAID<br />* Email (hashed)<br />* Phone (hashed) |
 | Gotripmobi | ![](https://cdn.appsflyer.com/marketplace/static/logo/gotripmob06.png?v=1) | API key | * IDFA<br />* GAID |
 | Gravite | ![](https://cdn.appsflyer.com/marketplace/static/logo/gravite1xj.png%0A?v=1) | API key | * IDFA<br />* GAID |
@@ -106,13 +104,13 @@ A partner connection enables you to easily and continuously send your audiences 
 | Jampp | ![](https://cdn.appsflyer.com/marketplace/static/logo/jampp.png) | Client ID, Client secret, App ID | * IDFA<br />* GAID |
 | JioAds | ![](https://cdn.appsflyer.com/marketplace/static/logo/jioads.png) | API key | * IDFA<br />* GAID |
 | Join Ship Tech Limited | ![](https://cdn.appsflyer.com/marketplace/static/logo/joinship.png) | API key | * IDFA<br />* GAID |
-| Kakao | ![Kakao_Logo_Primary_Screen_V1.0.png](https://support.appsflyer.com/hc/article_attachments/37842576339729) | Connection instructions for [Kakao](/docs/audiences-partner-connections#Kakao) | * IDFA<br />* GAID |
+| Kakao | ![Kakao_Logo_Primary_Screen_V1.0.png](https://files.readme.io/62df88fab5301c8c6d0fc31b94456a79ea73c5195f37332ddd144e1259c9f9f4-37842576339729.png) | Connection instructions for [Kakao](/docs/audiences-partner-connections#Kakao) | * IDFA<br />* GAID |
 | kakoads | ![](https://cdn.appsflyer.com/marketplace/static/logo/kakoads.png) | API key | * IDFA<br />* GAID |
 | KashKick | ![](https://cdn.appsflyer.com/marketplace/static/logo/kashkick.png) | API key | * IDFA<br />* GAID |
 | Kaden | ![](https://cdn.appsflyer.com/marketplace/static/logo/kaden.png?v=1) | API key | * IDFA<br />* GAID |
 | Kayzen | ![](https://cdn.appsflyer.com/marketplace/static/logo/dataliftretargeting.png) | API key | * IDFA<br />* GAID |
 | Kidult Media | ![](https://cdn.appsflyer.com/marketplace/static/logo/kidult.png) | API key | * IDFA<br />* GAID |
-| Kwai for business | ![Kwai_for_business_2.jpg](https://support.appsflyer.com/hc/article_attachments/31237648112913) | API key | * IDFA<br />* GAID |
+| Kwai for business | ![Kwai_for_business_2.jpg](https://files.readme.io/0dece6ec834ff75ad53aae0932c873e9bb85ed9c42acdf5c84a896b7f50bccbc-31237648112913.jpg) | API key | * IDFA<br />* GAID |
 | Leanplum | ![](https://cdn.appsflyer.com/marketplace/static/logo/leanplum.png?v=1) | Connection instructions for [Leanplum](/docs/audiences-partner-connections#leanplum) | * CUID |
 | learnshapwm |  | API key | * IDFA<br />* GAID |
 | Lemmonet | ![](https://cdn.appsflyer.com/marketplace/static/logo/lemmonet.png) | API key | * IDFA<br />* GAID |
@@ -120,14 +118,15 @@ A partner connection enables you to easily and continuously send your audiences 
 | Lifestreet | ![](https://cdn.appsflyer.com/marketplace/static/logo/lifestreet.png) | API key | * IDFA<br />* GAID |
 | Liftoff | ![](https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png) | API key | * IDFA<br />* GAID |
 | LinkedBro | ![](https://cdn.appsflyer.com/marketplace/static/logo/digmobiteqp.png) | API key | * IDFA<br />* GAID |
+| LoopMe | ![](https://cdn.appsflyer.com/marketplace/static/logo/loopme.png) | API key | * IDFA<br />* GAID |
 | Loopyapac | ![](https://cdn.appsflyer.com/marketplace/static/logo/loopyapac6d.png) | API key | * IDFA<br />* GAID |
-| Manage  <br />(acquired by Criteo) | ![manage_logo.png](https://support.appsflyer.com/hc/article_attachments/31237653520145) | API key | * IDFA<br />* GAID |
+| Manage  <br />(acquired by Criteo) | ![manage_logo.png](https://files.readme.io/0855ecfbf1c026fdedddbedeff95c4b3cbf3663d7cf1e224b6c3e92d35bb1705-31237653520145.png) | API key | * IDFA<br />* GAID |
 | Moiads | ![](https://cdn.appsflyer.com/marketplace/static/logo/moiads.png) | API key | * IDFA<br />* GAID |
 | mDSP | ![](https://cdn.appsflyer.com/marketplace/static/logo/mdsp.png) | Organization ID | * IDFA<br />* GAID |
 | MediaSmart | ![](https://cdn.appsflyer.com/marketplace/static/logo/mediasmart.png) | Organization ID | * IDFA<br />* GAID |
 | Mediasurfer | ![](https://cdn.appsflyer.com/marketplace/static/logo/mediasurfer.png) | API key | * IDFA<br />* GAID |
 | MinoAds | ![](https://cdn.appsflyer.com/marketplace/static/logo/minoads.png) | API key | * IDFA<br />* GAID |
-| mInsights  <br />(GroupM) | ![m_insights_blue.png](https://support.appsflyer.com/hc/article_attachments/31237653520913) | Access key ID, Secret access key, path | * IDFA<br />* GAID |
+| mInsights  <br />(GroupM) | ![m_insights_blue.png](https://files.readme.io/0ae9dd57d9692987ce3a6ebd09d9c09c1bd41e3cfe5846dbe8e0e09f83384ebe-31237653520913.png) | Access key ID, Secret access key, path | * IDFA<br />* GAID |
 | Mintegral | ![](https://cdn.appsflyer.com/marketplace/static/logo/mintegral.png) | API key, App ID | * IDFA<br />* GAID |
 | Mistplay | ![](https://cdn.appsflyer.com/marketplace/static/logo/mistplay.png) | API key | * IDFA<br />* GAID |
 | Mobadbid | ![](https://cdn.appsflyer.com/marketplace/static/logo/mobadbid68.png) | API key | * IDFA<br />* GAID |
@@ -139,11 +138,12 @@ A partner connection enables you to easily and continuously send your audiences 
 | Mobvista | ![](https://cdn.appsflyer.com/marketplace/static/logo/mobvista.png) | Advertiser ID, API key | * IDFA<br />* GAID |
 | MobWonder | ![](https://cdn.appsflyer.com/marketplace/static/logo/mobwonder.png?v=1) | API key | * IDFA<br />* GAID |
 | MobYoung | ![](https://cdn.appsflyer.com/marketplace/static/logo/mobyoung.png?v=1) | API key | * IDFA<br />* GAID |
-| MoEngage | ![moengage_logo.png](https://support.appsflyer.com/hc/article_attachments/31237648114833) | Connection instructions for [MoEngage](/docs/audiences-partner-connections#moengage) | * CUID |
+| Modify | ![](https://cdn.appsflyer.com/marketplace/static/logo/modify.png?v=1) | API key | * IDFA<br />* GAID |
+| MoEngage | ![moengage_logo.png](https://files.readme.io/a1557a6521ad6c94d5972a08f540a40cc4ec53137eabe3b1848c3696ec7a9c5f-31237648114833.png) | Connection instructions for [MoEngage](/docs/audiences-partner-connections#moengage) | * CUID |
 | Moloco | ![](https://cdn.appsflyer.com/marketplace/static/logo/moloco.png) | API key<br /><br />**Note:** This is a dedicated API Key for the AppsFlyer Audiences integration. Get it from your Moloco representative. | * IDFA<br />* GAID |
 | MoPub Acquire | ![](https://cdn.appsflyer.com/marketplace/static/logo/crossinstall.png) | API key | * IDFA<br />* GAID |
 | MovableAD | ![](https://cdn.appsflyer.com/marketplace/static/logo/movable.png) | API key | * IDFA<br />* GAID |
-| NAVER | ![Naver_Logotype.svg.png](https://support.appsflyer.com/hc/article_attachments/33356334901905) | API key | * IDFA<br />* GAID |
+| NAVER | ![Naver_Logotype.svg.png](https://files.readme.io/d236f0f4e89b68c3b4d6c085674cd2c98e397358f5e29f0f4de72b88fe3d1b12-33356334901905.png) | API key | * IDFA<br />* GAID |
 | Novabeyond | ![](https://cdn.appsflyer.com/marketplace/static/logo/novabeyond.png) | API key | * IDFA<br />* GAID |
 | Olimob | ![](https://cdn.appsflyer.com/marketplace/static/logo/olimob.png) | API key | * IDFA<br />* GAID |
 | Opera Mobile | ![](https://cdn.appsflyer.com/marketplace/static/logo/operamobile.png) | API key | * IDFA<br />* GAID |
@@ -154,6 +154,7 @@ A partner connection enables you to easily and continuously send your audiences 
 | Petal Ads | ![](https://cdn.appsflyer.com/marketplace/static/logo/huaweiadsglobal.png?v=1) | Phone/email/login ID, password, Huawei ad account | * IDFA<br />* GAID |
 | Pinterest | ![](https://cdn.appsflyer.com/marketplace/static/logo/pinterest.png) | API key | * IDFA<br />* GAID<br />* Email (hashed)<br />* Phone (hashed) |
 | Premiumstraffic | ![](https://cdn.appsflyer.com/marketplace/static/logo/premiumstraffic.png) | API key | * IDFA<br />* GAID |
+| Prime Insights Group, LLC | ![](https://cdn.appsflyer.com/marketplace/static/logo/primeis.png) | API key | * IDFA<br />* GAID |
 | Pulsedrived | ![](https://cdn.appsflyer.com/marketplace/static/logo/pulsedrivqw.png) | API key | * IDFA<br />* GAID |
 | Pushwoosh | ![](https://cdn.appsflyer.com/marketplace/static/logo/pushwoosh.png) | API key | * IDFA<br />* GAID |
 | Radian | ![](https://cdn.appsflyer.com/marketplace/static/logo/radianl5.png) | API key | * IDFA<br />* GAID |
@@ -192,7 +193,7 @@ A partner connection enables you to easily and continuously send your audiences 
 | Twinkleads | ![](https://cdn.appsflyer.com/marketplace/static/logo/twinkleads.png) | API key | * IDFA<br />* GAID |
 | Tyrads | ![](https://cdn.appsflyer.com/marketplace/static/logo/tyradscpl.png) | API key | * IDFA<br />* GAID |
 | Unico Tech Limited | ![](https://cdn.appsflyer.com/marketplace/static/logo/unico.png) | API key | * IDFA<br />* GAID |
-| Unicorn DSP | ![Unicorndsp.jpg](https://support.appsflyer.com/hc/article_attachments/31237653524113) | API key | * IDFA<br />* GAID |
+| Unicorn DSP | ![Unicorndsp.jpg](https://files.readme.io/4f5917f0e15a37b1767aab744633e326e9cceefcb7cb3cd40fc1f8e0718f77cc-31237653524113.jpg) | API key | * IDFA<br />* GAID |
 | Uplivo | ![](https://cdn.appsflyer.com/marketplace/static/logo/uplivo2wj.png) | API key | * IDFA<br />* GAID |
 | Upsflyer | ![](https://cdn.appsflyer.com/marketplace/static/logo/upsflyer.png?v=1?) | API key | * IDFA<br />* GAID |
 | Upyield | ![](https://cdn.appsflyer.com/marketplace/static/logo/upyield.png?v=1?) | API key | * IDFA<br />* GAID |
@@ -203,12 +204,12 @@ A partner connection enables you to easily and continuously send your audiences 
 | Vivo | ![](https://cdn.appsflyer.com/marketplace/static/logo/vivoglobal.png) | API key | * IDFA<br />* GAID |
 | Vizury | ![](https://cdn.appsflyer.com/marketplace/static/logo/revx.png) | API key | * IDFA<br />* GAID |
 | VK Ads | ![](https://cdn.appsflyer.com/marketplace/static/logo/mail.ru.png) | Connection instructions for [VK Ads](/docs/audiences-partner-connections#mytarget) | * IDFA<br />* GAID |
-| Vserv | ![Vserv.jpg](https://support.appsflyer.com/hc/article_attachments/31237653525137) | API key | * IDFA<br />* GAID |
+| Vserv | ![Vserv.jpg](https://files.readme.io/6984558eed14f4137907b8ef8b4064dd415ed28dce3d0451279bc2a304cc00b4-31237653525137.jpg) | API key | * IDFA<br />* GAID |
 | VYBS | ![](https://cdn.appsflyer.com/marketplace/static/logo/vybsafl.png) | API key | * IDFA<br />* GAID |
 | Whistle Feed | ![](https://cdn.appsflyer.com/marketplace/static/logo/wvaluemarjqg.png) | API key | * IDFA<br />* GAID |
 | Wider Planet | ![](https://cdn.appsflyer.com/marketplace/static/logo/widerplanet.png) | API key | * IDFA<br />* GAID |
 | WingsApps | ![](https://cdn.appsflyer.com/marketplace/static/logo/wingsapps.png?v=1) | API key | * IDFA<br />* GAID |
-| X Ads (formerly Twitter Ads) | ![x logo.png](https://support.appsflyer.com/hc/article_attachments/44611769729809) | Connection instructions for [X Ads](/docs/audiences-partner-connections#x-formerly-twitter) | * IDFA<br />* GAID<br />* Email (hashed)<br />* Phone (hashed) |
+| X Ads (formerly Twitter Ads) | ![x logo.png](https://files.readme.io/be1e5b0210a1d7d8aaef398b8a3a6e41ddfb6d66c4e360df6294c309fa507fec-44611769729809.png) | Connection instructions for [X Ads](/docs/audiences-partner-connections#x-formerly-twitter) | * IDFA<br />* GAID<br />* Email (hashed)<br />* Phone (hashed) |
 | Xapads | ![](https://cdn.appsflyer.com/marketplace/static/logo/xapads.png?v=1) | API key | * IDFA<br />* GAID |
 | Xiaomi Ads | ![](https://cdn.appsflyer.com/marketplace/static/logo/xiaomiglobal.png?v=1) | API key | * IDFA<br />* GAID |
 | Xtend | ![](https://cdn.appsflyer.com/marketplace/static/logo/xtendbw.png?v=1) | API key | * IDFA<br />* GAID |
@@ -222,11 +223,9 @@ A partner connection enables you to easily and continuously send your audiences 
 | Zoneads | ![](https://cdn.appsflyer.com/marketplace/static/logo/zoneads.png) | API key | * IDFA<br />* GAID |
 | Zoomd DSP | ![](https://cdn.appsflyer.com/marketplace/static/logo/zoomd.png) | API key | * IDFA<br />* GAID |
 
-
 > 📘 **We love working with new Audiences partners!**
 >
 > If the partner you're looking for doesn't appear in the list above, feel free to contact your CSM. They will be happy to check with the partner to see what options are available.
-
 
 ### Adobe Audience Manager (AAM)
 
@@ -238,7 +237,7 @@ AppsFlyer creates and syncs **Traits** with your selected **Data Source** in AAM
 2. Go to **Manage Data** > **Data Sources**.
 3. On the **Data Sources** page, create a new **Data Source**.
 
-   [![](https://support.appsflyer.com/hc/article_attachments/31237653528593)](https://support.appsflyer.com/hc/article_attachments/31237653528593)
+   [![](https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg)](https://support.appsflyer.com/hc/article_attachments/31237653528593)
 4. Complete the form as follows:
    * Set ID Type to **Device Advertising ID**.
    * In the inbound data source settings, enable **Customer ID**.
@@ -248,13 +247,13 @@ AppsFlyer creates and syncs **Traits** with your selected **Data Source** in AAM
 7. In the left-hand menu, go to **Administration** > **Groups**.
 8. Go to the **Permissions** tab.
 
-   [![](https://support.appsflyer.com/hc/article_attachments/31237648132753)](https://support.appsflyer.com/hc/article_attachments/31237648132753)
+   [![](https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png)](https://support.appsflyer.com/hc/article_attachments/31237648132753)
 9. Create a new group.
 10. Select the Data Source you created.
 11. Click **Save Object**.
 12. Go to **Admin** > **Users**.
 
-    [![](https://support.appsflyer.com/hc/article_attachments/31237648134801)](https://support.appsflyer.com/hc/article_attachments/31237648134801)
+    [![](https://files.readme.io/9167247d30e2aee69c891969e7aa56bbe2095cc8a7dd4bf3896cd563a00cac71-31237648134801.png)](https://support.appsflyer.com/hc/article_attachments/31237648134801)
 13. Create a new user for use by AppsFlyer Audiences and complete the mandatory fields as needed.
 14. In **Assigned Groups**, select the group you previously created.
 15. Record the **Email** and **Password** of the user created.
@@ -324,17 +323,17 @@ Creating an S3 integration allows AppsFlyer to send the audience device IDs dire
 15. Click **Create policy**.
 16. In your AWS console, go to **Access management** > **Roles**.
 
-    [![](https://support.appsflyer.com/hc/article_attachments/31237648138513)](https://support.appsflyer.com/hc/article_attachments/31237648138513)
+    [![](https://files.readme.io/85a4a81b5ebd131b6b3a20ca6ee136a0d10556363cff2deab96397ec889db141-31237648138513.png)](https://support.appsflyer.com/hc/article_attachments/31237648138513)
 17. Click **Create role.**
 18. Select **Another AWS account** to provide cross-account access between your AWS account and the AppsFlyer AWS account.
 
-    [![](https://support.appsflyer.com/hc/article_attachments/31237653535761)](https://support.appsflyer.com/hc/article_attachments/31237653535761)
+    [![](https://files.readme.io/1f8db2c84d1cbde4a88fd6d7dace3eb5cb65f8fc9608b0ec568921a2b7c85759-31237653535761.png)](https://support.appsflyer.com/hc/article_attachments/31237653535761)
 19. Enter **Account ID.** This is the Account ID that you already copied from the AppsFlyer dashboard.
 20. Select **Require external ID**. This is the external ID that you already copied from the AppsFlyer dashboard.
 21. When prompted to select a policy from the existing policies in your AWS account, choose the policy previously created.
 22. Click the name of the newly created role to open its properties window.
 
-    [![](https://support.appsflyer.com/hc/article_attachments/31237648139793)](https://support.appsflyer.com/hc/article_attachments/31237648139793)
+    [![](https://files.readme.io/9b61cf2c8ec3efd9f6548e1ee6b6ca945dd1160901516f93cd16ac3544d3aade-31237648139793.png)](https://support.appsflyer.com/hc/article_attachments/31237648139793)
 23. Record the **Role ARN**.
 24. In the AppsFlyer S3 integration window, enter the ARN and bucket name in the appropriate fields
 
@@ -376,7 +375,6 @@ Creating an S3 integration allows AppsFlyer to send the audience device IDs dire
 > [[AppsFlyerLib shared] setPartnerDataWithPartnerId:@"braze_int"
 > partnerInfo:brazeInfo];
 > ```
-
 
 #### USING THE CUID FIELD
 
@@ -437,7 +435,7 @@ Your role in Facebook Business Manager must be either Admin or Advertiser includ
 7. Select the required **Ad Account**.  
    The Facebook permissions page opens.
 8. Follow the instructions in the Facebook user interface.
-9. If you edit the settings, you must Enable **Manage your ads.**This is the default setting.
+9. If you edit the settings, you must Enable **Manage your ads.** This is the default setting.
 10. To close the Facebook user interface, click **Done.**
 11. Click **Save**.  
     Once the integration process is complete and an audience is uploaded, it's available in your **Facebook Custom Audiences** dashboard.
@@ -455,15 +453,11 @@ To enable AppsFlyer to send Audiences to Google Ads the following actions must b
   * **Supports**: Universal App Campaigns for Engagement (UACe)
   * **Doesn't support**:  Universal App Campaigns (UAC)
 
-
-
 | Action # | Description | Performed by |
 | --- | --- | --- |
 | 1 | * Connect audiences to your Google Ads account.<br />* Prerequisite: Google Ads sign-in credentials. | Account user or Admin |
-| 2 | Sign (approve) the AppsFlyer Google Customer Match terms in the Audiences page in the AppsFlyer platform | ![AppsFlyerAdmin_us-en.png](https://support.appsflyer.com/hc/article_attachments/31237648142481) |
+| 2 | Sign (approve) the AppsFlyer Google Customer Match terms in the Audiences page in the AppsFlyer platform | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/bd265e6ea240b059bfd1e6df6108005016181c0998f98f3c438f33c7aa62f486-31237648142481.png) |
 | 3 | Reach out to Google Ads, request that they enable your Google Ads account to use [Customer Match.](https://support.google.com/google-ads/answer/6379332?hl=en) | Account user |
-
-
 
 **To connect an audience to Google Ads:**
 
@@ -471,7 +465,7 @@ To enable AppsFlyer to send Audiences to Google Ads the following actions must b
 2. Go to the **Connect** tab.
 3. Click **+ Partner connection.**
 4. Enter a connection name.
-5. Select **Google Ads.**If the Google Ads icon does not display, reach out to your CSM or [hello@appsflyer.com](mailto:hello@appsflyer.com) and request that they enable your Audiences to use Google Adwords.
+5. Select **Google Ads.** If the Google Ads icon does not display, reach out to your CSM or [hello@appsflyer.com](mailto:hello@appsflyer.com) and request that they enable your Audiences to use Google Adwords.
 6. Click **Sign in to Google Ads.**  
    The **Sign in with Google window** opens**.**
 7. Complete the Google sign-in and confirm your choices in Google Ads.   
@@ -533,7 +527,6 @@ To enable AppsFlyer to send Audiences to Google Ads the following actions must b
 > * You must [send AppsFlyer a Customer User ID (CUID)](/docs/customer-user-id-field-cuid) for each user.
 > * The CUID must equal the user's **Leanplum User ID.**
 
-
 **To create a partner connection to Leanplum:**
 
 1. In your Leanplum account, navigate to **Partner Integrations > AppsFlyer.** Under **Audiences,** generate a new **Secret.**
@@ -562,14 +555,13 @@ Within up to 30 minutes, the audience and the users in it will be populated in y
 > * You must [send AppsFlyer a Customer User ID (CUID)](/docs/customer-user-id-field-cuid) for each user.
 > * The CUID must equal the user's **MoEngage User ID.**
 
-
 **To create a partner connection to MoEngage:**
 
 1. Login to your MoEngage dashboard and navigate to **Settings > APIs > General Settings.**
 2. From the **Data API Settings** section, copy these keys to use when configuring the connection in AppsFlyer Audiences:
 
-   * **Data API ID** (![A.png](https://support.appsflyer.com/hc/article_attachments/31237653543313) in the image below)
-   * **Data API Key** (![B.png](https://support.appsflyer.com/hc/article_attachments/31237653544337) in the image below)
+   * **Data API ID** (![A.png](https://files.readme.io/66b5bb0c4ea35f232f65dbc8dcbdfd6a91c12cf94915b19d33dae44834127058-31237653543313.png) in the image below)
+   * **Data API Key** (![B.png](https://files.readme.io/f63914d3fefb55b627559c6e4c7d7cdef89239c0376a14c25c713a0a76dbad1b-31237653544337.png) in the image below)
 
    [![moengage_dashboard.png](https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png)](https://support.appsflyer.com/hc/article_attachments/31237653545617)
 3. In the address bar of your web browser, check the URL of your MoEngage dashboard to obtain the number of your **MoEngage Data Center:**
@@ -619,7 +611,6 @@ AppsFlyer uploads a CSV file of Device IDs to your public Slack channel.
 >
 > Snapchat deducts unfamiliar Device IDs, which potentially results in smaller audience sizes.
 
-
 ### Tapjoy
 
 **To connect an audience to Tapjoy:**
@@ -627,7 +618,7 @@ AppsFlyer uploads a CSV file of Device IDs to your public Slack channel.
 1. Get your **Partner ID** from your Tapjoy Account Manager.
 2. Get your **Publisher Reporting API Key** from the Tapjoy **App Settings** page.
 
-   [![](https://support.appsflyer.com/hc/article_attachments/31237653547665)](https://support.appsflyer.com/hc/article_attachments/31237653547665)
+   [![](https://files.readme.io/4aee504ce72061784c47b5bb84ac7e2bf73bf7c7dcb5b78ef83fb11e807a366a-31237653547665.png)](https://support.appsflyer.com/hc/article_attachments/31237653547665)
 3. In AppsFlyer, go to **Audiences**. Select an audience, and go to the **Connect** tab.
 4. Click **+ Partner connection**.
 5. Enter a **Connection** name.

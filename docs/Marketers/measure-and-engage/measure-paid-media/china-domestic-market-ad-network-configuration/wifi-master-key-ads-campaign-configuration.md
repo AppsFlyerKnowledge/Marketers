@@ -2,44 +2,29 @@
 title: "WiFi Master Key Ads campaign configuration"
 excerpt: "Learn how to configure and activate the WiFi Master Key Ads integration in AppsFlyer, including setting up postbacks, attribution links, and permissions."
 ---
-At a glance: WiFi Master Key Ads is an AppsFlyer ad network integrated partner.
+**At a glance:** WiFi Master Key Ads is an AppsFlyer ad network integrated partner.
 
 ## Setting Up WiFi Master Key Ads
 
-The setup is done from the **Active Integrations** page, but to find new partners you must first go to the [marketplace](/docs/partner-integrations).
+**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 
-> 📘 Note
->
-> Before setting up an integration, make sure you [contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
+**To set up a new integration:**
 
-**To activate the integration:**
-
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Marketplace**.
-2. Search for the partner and select it.
-3. Click **Set up integration**. You’re directed to the integration setup page.
-4. In the **Integration** tab, turn on **Activate partner**.
-
-> 📘 Note
->
-> The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner.
-
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+2. Select the relevant app.
+3. Search for the partner and select **Integrate**.
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   **Important note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below.
 
 WiFi Master Key Ads configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
-
-For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
-
-> 👍 Tip
->
-> - The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
-> - All the rest of the steps are either descriptive or **optional**
 
 ## **Integration Tab**
 
 ### Activate Partner
 
-On the **first visit** here, you will need to toggle below. ON the _**Activate Partner**_ button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.
-
+On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 
 ### General settings
@@ -48,11 +33,11 @@ For more details about partner activation please click [here](/docs/partner-acti
 
 WiFi Master Key Ads connects with AppsFlyer via a unique clientid and secretkey. If you don't already have the clientid and secretkey, you must obtain it from WiFi Master Key Ads to continue with the integration.
 
-<Image src="https://files.readme.io/0cf16d517e6df0089e9ce6d742ed68b66b2c0dceff656d21c2719355d5e22033-360003355597.png" alt="mceclip2.png" />
+![mceclip2.png](https://files.readme.io/8b486a98e25837a0d64e0a27e9b3aa7b66b426e8bad3fbae07b7436b91351db5-50900288875153.png)
 
 ### Default Postbacks
 
-<Image src="https://files.readme.io/8f4e31507914f121b0622476c05edbab69948e5174d9fa87c8e890afea96a482-21594071343889.png" alt="mceclip2.png" />
+![mceclip2.png](https://files.readme.io/588a3705302d9f7090fd3c3f0c1a2cbe9e0f2979cd459730881f037a651c087d-50900269522961.png)
 
 ### In-app events settings
 
@@ -62,7 +47,7 @@ In this section you can map your AppsFlyer events with WiFi Master Key Ads via p
 
 WiFi Master Key Ads connects with AppsFlyer via a unique clientid and secretkey. If you don't already have the clientid and secretkey, you must obtain it from WiFi Master Key Ads to continue with the integration.
 
-<Image src="https://files.readme.io/749be186e563f6138ad21e674f4e0cfa74944f49d959621a8cd4a23b437cf196-360003355617.png" alt="mceclip3.png" />
+![mceclip3.png](https://files.readme.io/035ce248d6876cf31870abc49e949fc887f6bef08efd6e132e43b8c74e3aaf45-50900269524881.png)
 
 1. Set the WiFi Master Key Ads clientid and secretkey here
 2. Toggle In-App Event Postbacks to ON
@@ -71,9 +56,9 @@ WiFi Master Key Ads connects with AppsFlyer via a unique clientid and secretkey.
 
 | Parameter Name | Description |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.<br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on WiFi Master Key Ads side.<br />Obtain the corresponding Event ID from WiFi Master Key Ads and set in the text field. |
-| **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af_revenue** parameter.<br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
+| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
+| **Partner Event Identifier** | The unique name or ID of each event as defined on WiFi Master Key Ads side.  <br />Obtain the corresponding Event ID from WiFi Master Key Ads and set in the text field. |
+| **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
 ## Attribution Link Tab
 
@@ -87,35 +72,30 @@ In this section, select which parameters you want to add to the attribution link
 
 Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
 
-- **Campaign** - add it to compare different campaigns running with WiFi Master Key Ads.
+* **Campaign** - add it to compare different campaigns running with WiFi Master Key Ads.  
+  **Attribution link parameter:** c
+* **Adset** - set ad set names to compare different ad sets within specific WiFi Master Key Ads campaigns.  
+  **Attribution link parameter:** af\_adset
+* **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific WiFi Master Key Ads campaigns.  
+  **Attribution link parameter:** af\_ad
+* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub site ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations.  
+  **Attribution link parameters:** af\_siteid and af\_sub\_siteid
+* **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
+  **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-**Attribution link parameter:** c
-- **Adset** - set ad set names to compare different ad sets within specific WiFi Master Key Ads campaigns.
+![attribution-link-parameters.png](https://files.readme.io/f1d4c61deaf9226c51d21cf359fe5f250dda1b9c9f7d6e7de635919e45c8d57c-50900269526033.png)
 
-**Attribution link parameter:** af_adset
-- **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific WiFi Master Key Ads campaigns.
-
-**Attribution link parameter:** af_ad
-- **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub site ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations.
-
-**Attribution link parameters:** af_siteid and af_sub_siteid
-- **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.
-
-**Attribution link parameters:** af_sub1, af_sub2, af_sub3, af_sub4, af_sub5
-
-<Image src="https://files.readme.io/5064601618d15b208ba22a63c8825863c48067e221a5ba42bc92bc57dc043885-21594046837393.png" alt="attribution-link-parameters.png" />
-
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about **[AppsFlyer's Attribution Link Structure and Parameters](/docs/about-link-structure-and-parameters).**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
 
 ### Click-Through Attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to WiFi Master Key Ads.
 
-**Attribution link parameter:** af_click_lookback
+**Attribution link parameter:** af\_click\_lookback
 
 More details about the [click lookback window here](/docs/set-up-lookback-windows).
 
-<Image src="https://files.readme.io/35a8d0c32d7bcad3bb191114a9fee096838e38ceb89fc24a5dedede23480b18a-21594046847505.png" alt="netease-click-through.png" />
+![netease-click-through.png](https://files.readme.io/04ee2b418a6a639e846db8422720900b9c735612d98345201ffda31ffaa00c8e-50900269527057.png)
 
 ### Click Attribution Link
 
@@ -133,15 +113,15 @@ Ad Revenue is not supported in the integration with this partner.
 
 In this tab, you can select the permissions to grant WiFi Master Key Ads, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for WiFi Master Key Ads, the permissions tab is active and you can grant control to WiFi Master Key Ads.
 
-<Image src="https://files.readme.io/64ce1f8648952fce055f7eba21b4d43d471681b9ed3ab20d1fd03ac7d592a020-21594071383441.png" alt="rtb_house-permissions-new.png" />
+![rtb_house-permissions-new.png](https://files.readme.io/cb1764505f3d9770ad17525179f1740cbbdeca371a1e82655c76093327bd826c-50900288881809.png)
 
 ### Ad Network Permissions
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
 
-- _**Allow to configure integration**_ - permit the partner to setup the integration tab (except in-app event postbacks)
-- _**Allow to configure in-app event postbacks**_ - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-- _**Allow access to your retention report**_ - only to the partner's own retention data
-- _**Allow access to your Protect360 dashboard**_ - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Allow to configure integration*** - permit the partner to setup the integration tab (except in-app event postbacks)
+* ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
+* ***Allow access to your retention report*** - only to the partner's own retention data
+* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).

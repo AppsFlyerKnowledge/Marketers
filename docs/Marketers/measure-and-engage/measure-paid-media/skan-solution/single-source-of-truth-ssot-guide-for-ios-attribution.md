@@ -40,7 +40,7 @@ The Single Source of Truth view available via the Overview dashboard provides a 
 - Cost- and revenue-related metrics, that depend on the install metric, including eCPI, ARPU, and ROAS, are calculated correctly.
 - Organic metrics adjusted after accounting for misattributed installs.
 
-This section highlights the differences and unique features of the SSOT view. It assumes that you are familiar with the [Overview dashboard](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv).
+This section highlights the differences and unique features of the SSOT view. It assumes that you are familiar with the Overview dashboard.
 
 ### Turn on Single Source of Truth view
 
@@ -241,9 +241,6 @@ Formula to calculate example metrics:
 | SKAN postback delay | When SKAN postbacks arrive with significant delay, for example from Google API, which can take up to 15 days, data for later days (like D7) may initially appear lower than earlier days (like D2). This delay can affect the accuracy of the SSOT model. For this reason, we recommend waiting at least 15 days after the install date for the data to fully populate before evaluating model accuracy. |
 
 <Cards>
-  <Card title="Overview dashboard" href="/docs/overview-dashboard-user-acquisition-and-retargeting-ltv" icon="fa-solid fa-users">
-    Learn more about the Overview dashboard user acquisition and retargeting metrics.
-  </Card>
   <Card title="SKAN solution guide" href="/docs/skadnetwork-skan-solution-guide" icon="fa-solid fa-lock">
     Read the comprehensive guide to AppsFlyer's SKAdNetwork solution.
   </Card>

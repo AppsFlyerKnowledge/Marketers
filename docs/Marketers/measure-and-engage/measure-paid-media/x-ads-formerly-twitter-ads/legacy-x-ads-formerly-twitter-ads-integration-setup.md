@@ -14,50 +14,31 @@ excerpt: "Integrate your X Ads account with AppsFlyer to display attribution dat
 
 > 📘 **Before you begin**
 >
-> Make sure you've
-> [added a payment method](https://business.twitter.com/en/help/account-setup/billing-basics.html)
-> to your X Ads account. Otherwise, you won't be able to activate
-> the partner integration in AppsFlyer.
+> Make sure you've [added a payment method](https://business.twitter.com/en/help/account-setup/billing-basics.html) to your X Ads account. Otherwise, you won't be able to activate the partner integration in AppsFlyer.
 
-
-1. Log in to your X Ads Account at
-   [ads.twitter.com](https://ads.twitter.com)  
-   If you're not automatically directed to the Ads page,
-   click the Ads button at the top-left corner.
+1. Log in to your X Ads Account at [ads.twitter.com](https://ads.twitter.com)  
+   If you're not automatically directed to the Ads page, click the Ads button at the top-left corner.
 2. When prompted to select either a **Simple (NEW)** or **Advanced** campaign, select **Advanced**.
-3. Under **Campaign objective**, select **App Installs** or **App re-engagements**, then click **Next**.  
+3. Under **Campaign objective**, select **App Installs** or **App re-engagements**, then click **Next**.
 
    ![twitter-campaign-objective.png](https://files.readme.io/44e5aca3895fc5aefa22f91542b9c23f9798b246ac8086e97a3994244fc2c5a8-36433415100561.png)
 4. Choose your app, then click the **mobile measurement partner** link.
-5. On the **Conversion tracking**page, click **Go to AppsFlyer**.   
+5. On the **Conversion tracking**page, click **Go to AppsFlyer**. 
 
    ![twitter-mmp-selection.png](https://files.readme.io/718bc93d2fcf606a8c165aed70364659ba23b74891b22775c5522ee9e4c7901a-36433422307345.png)
-6. A notification displays informing you that you're about to
-   leave X Ads to go to the AppsFlyer website. Click
-   **Go to AppsFlyer** and log in to your Dashboard.  
+6. A notification displays informing you that you're about to leave X Ads to go to the AppsFlyer website. Click **Go to AppsFlyer** and log in to your Dashboard.
 
    ![twitter-go-to-appsflyer.png](https://files.readme.io/bca10eea5032a495fd38c996d0aa4a9f2db8a285211e6cf0860dd6f21bcfa670-36433422307601.png)
-7. In AppsFlyer, from the side menu, select
-   **Collaboration** >
-   **Active Integrations.**
+7. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations > Marketplace** tab**.**
 8. Search for **X Ads** and select it.
-9. In the **Integration** tab,
-   accept the X Ads Terms and Conditions for Mobile App Conversion
-   Recording (MACT), then click **Save integration**.
-10. Turn on **Activate partner**, and
-    click **Log in with X Ads**.
-11. Authorize AppsFlyer to use your X Ads account by clicking
-    **Authorize app**.   
+9. In the **Integration** tab, accept the X Ads Terms and Conditions for Mobile App Conversion Recording (MACT), then click **Save integration**.
+10. Turn on **Activate partner**, and click **Log in with X Ads**.
+11. Authorize AppsFlyer to use your X Ads account by clicking **Authorize app**.
 
     [![](https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png)](https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png)
-12. Turn on **Activate Partner** again to display
-    the **Integration** tab settings and enable
-    attribution.  
-    **Note:** The toggle must stay on (activated) for as long as you work with the partner. Learn
-    more about
-    [partner activation.](/docs/partner-activation-deactivation)
-13. Select your X Ads accounts to activate them, then click
-    **Save & Close**.  
+12. Turn on **Activate Partner** again to display the **Integration** tab settings and enable attribution.  
+    **Note:** The toggle must stay on (activated) for as long as you work with the partner. Learn more about [partner activation.](/docs/partner-activation-deactivation)
+13. Select your X Ads accounts to activate them, then click **Save & Close**.
 
     ![twitter_account_name.png](https://files.readme.io/d74e9b3edd08c4ca3396b95ae20e20db99bcbe1a220318403bd6c9d6f9600282-36433415108497.png)
 
@@ -98,7 +79,6 @@ For retargeting campaigns on X Ads, AppsFlyer supports **Re-engagement** measu
 > 📘 **Important!**
 >
 > Ensure Retargeting is enabled for the app on the App Settings page. For details, click [here](/docs/app-settings#reengagement-attribution).
-
 
 #### Re-engagement click-through lookback window
 
@@ -142,7 +122,6 @@ In this section, you can map your AppsFlyer events with your partners via postba
 | **for users from** | Select the sending option for the event:<br /><br />CALLSTART::Note::<br /><br />#### Note<br /><br />For X Ads to receive agency-attributed postbacks, you must select **All media sources, including organic**. Otherwise, X Ads won't receive such postbacks.<br /><br />CALLEND::<br /><br />* **This partner only**: send postbacks only when this event is attributed to this partner.<br />* **All media sources, including organic**: send postbacks for events attributed to any partner and organic events. |
 | **including** | * **No data (default)**: send only the event itself without the event value.<br />* **Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).<br />* **Values without revenue**: send all the parameters **excluding** the revenue value. |
 
-
 5. [Optional] Click ![conditional-iae-postbacks-icon.png](https://files.readme.io/9649c58fb3f46bbb89605e274623e80fbae8d31417694961f0035b7b50276aa9-36433422313105.png) to set conditions for sending certain in-app events to the partner.  
    Learn more about [conditional in-app event postbacks](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks).
 
@@ -153,7 +132,6 @@ X Ads does not use attribution links for attribution.
 > 📘 **Note**
 >
 > For all [self-reporting networks (SRNs)](/docs/self-reporting-networks-srns), such as Meta ads, Apple Ads, Google Ads, X Ads, etc., this tab is not functional since they don't use external attribution links.
-
 
 ## Cost tab
 
@@ -203,14 +181,10 @@ Learn about [granting agency permissions](/docs/set-up-an-integrated-partner#age
 
 ## Traits and limitations
 
-
-
 | Trait | Remarks |
 | --- | --- |
 | Pre-roll attribution unsupported | X Ads doesn’t support MMP attribution for Pre-roll campaigns. |
 | Names | The dashboard shows IDs instead of names for **line item names** (ad set names) and **post names** (ad names). This is because AppsFlyer receives from X Ads only the IDs for these elements and not their names. |
 | Cost | For X Ads, cost data for SKAN-only campaigns (campaigns that only have SKAN installs and no "regular" installs) isn't available to agencies. The cost integration must be set up by the advertiser. And the data can only be viewed by the advertiser. |
-
-
 
 Traits and limitations

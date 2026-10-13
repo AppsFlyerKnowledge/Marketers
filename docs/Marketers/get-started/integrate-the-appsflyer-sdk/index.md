@@ -15,6 +15,8 @@ Plan your SDK integration, in-app events, and data delivery options
   <Card title="iOS platform" href="/docs/ios-platform" icon="fa-solid fa-mobile">
     Integrate the AppsFlyer SDK into your iOS applications.
   </Card>
+  <Card title="Web platform" href="/docs/web-platform" icon="fa-solid fa-globe">
+  </Card>
   <Card title="Other platforms" href="/docs/other-platforms" icon="fa-solid fa-file-lines">
     SDK integration guides for Unity, React Native, Flutter, and other hybrid platforms.
   </Card>

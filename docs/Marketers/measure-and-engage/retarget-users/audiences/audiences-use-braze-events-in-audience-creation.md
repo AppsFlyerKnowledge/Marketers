@@ -4,65 +4,66 @@ excerpt: "Learn how to set up an incoming connection between Braze and AppsFlyer
 ---
 Send Braze message engagement events to AppsFlyer Audiences and use them to add precision to your audience definitions.
 
-By setting up an incoming connection between your Braze account and AppsFlyer Audiences, you bring your Braze message engagement event data into Audiences. You can then use this data in rulesets when defining audiences.
+By setting up an incoming connection between your Braze account and AppsFlyer Audiences, you bring your Braze message engagement event data into Audiences. You can then use this data in [rulesets](/docs/audiences-guide#h_01HBQMA61ANB4K0TCJ4WBHMV8D) when defining audiences.
 
 **Prerequisites**
 
-- Both the Braze and AppsFlyer SDKs must be integrated into your app.
-- You must subscribe to the **Currents** feature in Braze.
+* Both the Braze and AppsFlyer SDKs must be integrated into your app.
+* You must subscribe to the **Currents** feature in Braze.
 
 ## Set up the Braze incoming connection
 
 There are 3 main steps for setting up the Braze incoming connection:
 
-1. [Set up the AppsFlyer SDK](#set-up-the-appsflyer-sdk)
-2. [Create an incoming connection in AppsFlyer](#create-an-incoming-braze-connection-in-appsflyer)
-3. [Create a Current in Braze](#create-a-current-in-braze)
+1. [Set up the AppsFlyer SDK](/docs/audiences-use-braze-events-in-audience-creation#set-up-the-appsflyer-sdk)
+2. [Create an incoming connection in AppsFlyer](/docs/audiences-use-braze-events-in-audience-creation#create-an-incoming-braze-connection-in-appsflyer)
+3. [Create a Current in Braze](/docs/audiences-use-braze-events-in-audience-creation#create-a-current-in-braze)
 
-### Set up the AppsFlyer SDK
+<Accordion title="Set up the AppsFlyer SDK">
 
 To create an incoming connection from Braze, the AppsFlyer SDK in your apps must be configured to pass each user's **Braze External ID** to AppsFlyer. You can do this using either:
 
-- Braze External ID parameter
-- CUID field
+* Braze External ID parameter
+* CUID field
 
 #### **Using a Braze External ID parameter**
 
 You can configure a dedicated parameter to pass the Braze External ID to AppsFlyer using the `setPartnerData` function of the AppsFlyer SDK. Usage examples follow:
 
-<Tabs>
-<Tab title="Android">
+<Accordion title="Android">
 
-```java
-JavaMap<String, Object> brazeData = new HashMap<>();
+```
+Map<String, Object> brazeData = new HashMap<>();
 brazeData.put("external_user_id", "some-braze-external-id-value");
 AppsFlyerLib.getInstance().setPartnerData("braze_int", brazeData);
 ```
 
-</Tab>
-<Tab title="iOS">
+</Accordion>
 
-```objectivec
-Objective-CNSDictionary *brazeInfo = @{
-"external_user_id":@"some-braze-external-id-value"
+<Accordion title="iOS">
+
+```
+NSDictionary *brazeInfo = @{
+@"external_user_id":@"some-braze-external-id-value"
 };
-[[AppsFlyerLib shared] setPartnerDataWithPartnerId:@"braze_int"\
+[[AppsFlyerLib shared] setPartnerDataWithPartnerId:@"braze_int"
 partnerInfo:brazeInfo];
 ```
 
-</Tab>
-</Tabs>
+</Accordion>
 
 #### **Using the CUID field**
 
 There is no need to configure a dedicated parameter for the Braze External ID if:
 
-- You have configured the SDK to send AppsFlyer a [CUID](/docs/customer-user-id-field-cuid) for each user
-- The CUID has the same value as the Braze External ID
+* You have configured the SDK to send AppsFlyer a [CUID](/docs/customer-user-id-field-cuid) for each user
+* The CUID has the same value as the Braze External ID
 
 In this case, you can simply select the **CUID option** as the SDK parameter when [creating your incoming Braze connection](/docs/audiences-use-braze-events-in-audience-creation#create-an-incoming-braze-connection-in-appsflyer).
 
-### Create an incoming Braze connection in AppsFlyer
+</Accordion>
+
+<Accordion title="Create an incoming Braze connection in AppsFlyer">
 
 **Follow these steps to create an incoming connection in AppsFlyer:**
 
@@ -70,19 +71,20 @@ In this case, you can simply select the **CUID option** as the SDK parameter whe
 2. In the Audiences page, go to **Connections > Incoming** **tab**.
 3. Click the **New incoming connection** button.
 4. Select Braze from the list of available partners.
-5. Click the **Save** button to create the connection.
-
-The **Connection credentials** dialog opens.
+5. Click the **Save** button to create the connection.  
+   The **Connection credentials** dialog opens.
 6. Copy the connection credentials to use when setting up the connection to AppsFlyer Audiences in the Braze platform:
-   - Access key ID
-   - Secret access key
-   - Bucket name
-   - Folder path
+   * Access key ID
+   * Secret access key
+   * Bucket name
+   * Folder path
 7. Select the SDK parameter you are using to send the Braze External ID:
-   - Braze External ID
-   - CUID
+   * Braze External ID
+   * CUID
 
-### Create a Current in Braze
+</Accordion>
+
+<Accordion title="Create a Current in Braze">
 
 **Follow these steps to create a Current in Braze:**
 
@@ -98,35 +100,35 @@ The **Connection credentials** dialog opens.
    2. Enter the credentials you copied from AppsFlyer in the appropriate fields.
    3. Keep the **Enable Encryption** option unchecked.
 7. Under **General Settings**, keep **Include events from anonymous users** checked.
-8. In the **Message Engagement Events** section, select the events you want Braze to send to AppsFlyer. See the list of supported events [below](#supported-events).
+8. In the **Message Engagement Events** section, select the events you want Braze to send to AppsFlyer. See the list of supported events [below](/docs/audiences-use-braze-events-in-audience-creation#supported-events).
 9. In the Customer Behavior and User Events section, keep the **Track Customer Behavior and User Events** option turned off.
 10. Click the **Launch Current** button to save the configuration and start sending Braze message engagement events to Audiences.
 
-#### Supported events
+#### supported events
 
 **Supported Braze events**
 
-- Subscription Group State Change
-- Email Click
-- Email Open
-- Email Send
-- Email Delivery
-- Email Mark as Spam
-- Email Unsubscribe
-- Email Bounce
-- Email Soft Bounce
-- Push Open
-- Push Send
-- Push Bounce
-- iOS Foreground Push
-- SMS/MMS Send
+* Subscription Group State Change
+* Email Click
+* Email Open
+* Email Send
+* Email Delivery
+* Email Mark as Spam
+* Email Unsubscribe
+* Email Bounce
+* Email Soft Bounce
+* Push Open
+* Push Send
+* Push Bounce
+* iOS Foreground Push
+* SMS/MMS Send
+
+</Accordion>
 
 ## Using Braze data in Audiences
 
-Once the Braze incoming connection is set up, the engagement events you've defined will appear as options in the [ruleset filters](/docs/audiences-use-braze-events-in-audience-creation/%20/docs/audiences-guide#all-about-rulesets) for defining audiences.
+Once the Braze incoming connection is set up, the engagement events you've defined will appear as options in the [ruleset filters](/docs/audiences-guide#h_01HBQMA61AEKT6N97SJBW4B01C) for defining audiences.
 
 ![audiences_braze_ruleset.png](https://files.readme.io/766a5ec25de3cf82c1411ce25864a5c8ce6c77ac338c20699e61be1c45ae3d98-33375723752337.png)
 
-> 📘 Note
->
-> It takes approximately 24 hours for the Braze message engagement events to be available in AppsFlyer after you launch the current in Braze.
+**Note:** It takes approximately 24 hours for the Braze message engagement events to be available in AppsFlyer after you launch the current in Braze.

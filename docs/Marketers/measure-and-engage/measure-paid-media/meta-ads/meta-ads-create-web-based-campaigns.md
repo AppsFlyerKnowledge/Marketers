@@ -12,7 +12,6 @@ AppsFlyer supports integration with Meta Ads (`metaweb_int`) for User Acquisitio
 >
 > At present, the integration with Meta Web does not support sending re-engagement postbacks to CAPI.
 
-
 ### Prerequisites
 
 Before activating the Meta Ads integration, make sure that you have a [business account in Meta Business Manager](https://www.facebook.com/business/help/1710077379203657?id=180505742745347).
@@ -38,20 +37,19 @@ Start with activating the Meta Ads integration and setting the postbacks AppsFly
 
 To activate the Meta Web Ads integration:
 
-1. In AppsFlyer, from the side menu, go to **Collaborate** > **Partner Marketplace**.
-2. Search for **Meta Web** and select it.
-3. Click **Set up integration**. You're directed to the **Active Integrations** setup page.
-4. In the **Integration** tab, turn on **Activate Partner**. **Note:**The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner.
-5. Turn off **Advanced Privacy**(if you are setting an iOS app integration).
-6. **Advanced Matching data sharing:** Turn on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, hashed last name, and Facebook login ID, with Meta, if these fields are included in the event information sent to AppsFlyer. For more information, see: [Advanced Matching Data Sharing](/docs/advanced-matching-data-sharing).
-7. Fill in the **Pixel ID** field. You can retrieve the pixel ID from your Meta ads Manager:
+1. In AppsFlyer, from the side menu, go to **Collaborate** > **Partner Integrations** > **Partner Marketplace**.
+2. Search for **Meta Web** and select it. You're directed to the setup page.
+3. In the **Integration** tab, turn on **Activate Partner**. **Note:** The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner.
+4. Turn off **Advanced Privacy**(if you are setting an iOS app integration).
+5. **Advanced Matching data sharing:** Turn on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, hashed last name, and Facebook login ID, with Meta, if these fields are included in the event information sent to AppsFlyer. For more information, see: [Advanced Matching Data Sharing](/docs/advanced-matching-data-sharing).
+6. Fill in the **Pixel ID** field. You can retrieve the pixel ID from your Meta ads Manager:
    1. From the[Ads manager](https://www.facebook.com/ads/manager) side menu, go down to **All tools** > **Events Manager**. **Note:** Make sure you have the correct business selected from the drop-down on the top right.
    2. From the **Events Manager** side menu, select **Data sources**. You'll see a list of your pixels. If you don't have a pixel for the selected business, you can create one through the same view.
    3. Copy the pixel ID showing under the pixel name.  
       and paste it into the  
       **Pixel ID** field in AppsFlyer.
-8. Fill the **Access Token** field. To retrieve the access token, follow [these instructions](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token)
-9. Turn on **Limit Meta Ads' use of users' personal information (CCPA)** to enable compliance with [data protection laws](/docs/send-opendsr-api-requests). **Note:** Complying with CCPA privacy regulations limits the data coming from Meta Ads users based in California.
+7. Fill the **Access Token** field. To retrieve the access token, follow [these instructions](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token)
+8. Turn on **Limit Meta Ads' use of users' personal information (CCPA)** to enable compliance with [data protection laws](/docs/send-opendsr-api-requests). **Note:** Complying with CCPA privacy regulations limits the data coming from Meta Ads users based in California.
 
 ### 2. Enable view-through attribution
 
@@ -61,7 +59,7 @@ When a user clicks a Meta Web ad and lands on a [Smart Script](#set-up-smart-scr
 
 **To enable Meta Web view-through attribution:**
 
-1. In AppsFlyer, from the sidebar, open **Active Integrations** > **Meta web ads**.
+1. In AppsFlyer, from the sidebar, open **Collaborate** > **Partner Integrations > Active Integrations** > **Meta web ads**.
 2. In the **Integration** tab, scroll to the **Install attribution** section.
 3. Turn on **Install view-through attribution**.
 4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see [Enable equal priority for cross-platform impressions](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions)**.**
@@ -102,7 +100,6 @@ To set in-app events postbacks perform the following:
 >
 > If you are sending S2S events to `metaweb_int`, the S2S payload must include the `ua` (User Agent) and `ip` (IP address) parameters. These values are required for Meta CAPI campaign optimization. AppsFlyer includes them automatically for SDK events. For S2S events, advertisers must send them explicitly. See [Server-to-server events API for mobile](/docs/server-to-server-events-api-for-mobile-s2s-mobile).
 
-
 ## Set up AppsFlyer integration in Meta Ads
 
 Perform the next steps in Meta Ads Manager.
@@ -110,7 +107,7 @@ Perform the next steps in Meta Ads Manager.
 ### 1. Set the campaign type, objective, and goals
 
 1. Log in to Meta Ads and create a campaign.
-2. In **Campaign objective** select one of the following: [![](https://support.appsflyer.com/hc/article_attachments/25646834955921)](https://support.appsflyer.com/hc/article_attachments/25646834955921)
+2. In **Campaign objective** select one of the following: [![](https://files.readme.io/a0cdd42ddf3bc69106de5137e5c842468178bd1dcd76805ea77ead750ba1e9bb-25646834955921.png)](https://support.appsflyer.com/hc/article_attachments/25646834955921)
    * **Sales**: This lets Meta optimize towards a specific event (your main KPI).
    * **Traffic**: This lets Meta optimize towards ad clicks. This should only be used if you don't have other KPIs or if the volume of other KPI events is too low.
 3. [Optional] If you want to add a custom objective to the above options perform the following:
@@ -124,7 +121,7 @@ Perform the next steps in Meta Ads Manager.
       To learn more about the Meta Campaign objectives, see the [Meta documentation](https://www.facebook.com/business/help/175683976191028).
 
       CALLEND::
-4. In **Conversion location** select **Website**. [![](https://support.appsflyer.com/hc/article_attachments/25646834954257)](https://support.appsflyer.com/hc/article_attachments/25646834954257)
+4. In **Conversion location** select **Website**. [![](https://files.readme.io/32e4dcb4ced7e2011728ed709069b78cffffc4090f09a33c729a2b2e7e882e8b-25646834954257.png)](https://support.appsflyer.com/hc/article_attachments/25646834954257)
 5. In **Pixel** enter the same pixel ID you entered for `metaweb_int` in the AppsFlyer Partner Marketplace. To learn more about the Meta Pixel, see the [Meta documentation](https://www.facebook.com/business/help/742478679120153) (a login is required).
 6. Click **Next**.
 
@@ -132,7 +129,7 @@ Perform the next steps in Meta Ads Manager.
 
 1. Under **Destination,** in the **Website URL** field**,** enter the URL that serves as the destination for your ad. The URL should be for one of the following:
 
-   [![](https://support.appsflyer.com/hc/article_attachments/25646834955537)](https://support.appsflyer.com/hc/article_attachments/25646834955537)
+   [![](https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png)](https://support.appsflyer.com/hc/article_attachments/25646834955537)
 
    * **Web landing page:** Using a landing page is recommended when:
 
@@ -171,8 +168,6 @@ Perform the next steps in Meta Ads Manager.
 | [`af_ad`](/docs/about-link-structure-and-parameters#af_ad) | `{{ad.name}}` |
 | [`af_ad_id`](/docs/about-link-structure-and-parameters#af_ad_id) | `{{ad.id}}` |
 
-
-
      An example of the resulting URL should be:
 
      ```
@@ -185,8 +180,6 @@ Perform the next steps in Meta Ads Manager.
      
 
 <table><thead><tr><th colspan="2">Attribution link structure</th></tr></thead><tbody><tr><td>Base URL</td><td>engagements.appsflyer.com/v1.0/c2s/click/app/</td></tr><tr><td>Mandatory path parameters</td><td><ul><li>platform<br/>Example: steam</li><li>app_id<br/>Example: 123456</li></ul></td></tr><tr><td>Mandatory query parameters</td><td><ul><li>af_media_source</li><li>af_campaign_id</li><li>af_r</li></ul></td></tr><tr><td>Other parameters</td><td><a href="/docs/ctv-pc-and-console-platform-direct-attribution-links#attribution-link-parameters">See all parameters</a></td></tr><tr><td>URL structure</td><td><code>https://engagements.appsflyer.com/v1.0/c2s/click/app/`{platform}/{app_id}?af_media_source={media_source}&amp;af_campaign_id={campaign_id}&amp;af_r={app_store_url}`</code></td></tr></tbody></table>
-
-
 
      Map the following AppsFlyer parameters to their Meta counterparts:
 
@@ -202,8 +195,6 @@ Perform the next steps in Meta Ads Manager.
 | [`af_adset_id`](/docs/about-link-structure-and-parameters#af_adset_id) | `{{adset.id}}` |
 | [`af_ad`](/docs/about-link-structure-and-parameters#af_ad) | `{{ad.name}}` |
 | [`af_ad_id`](/docs/about-link-structure-and-parameters#af_ad_id) | `{{ad.id}}` |
-
-
 
      An example of cross-platform URL:
 
@@ -228,17 +219,15 @@ Perform the next steps in Meta Ads Manager.
 >
 > For a comprehensive guide on the AF link parameters, see [Attribution link parameters](/docs/about-link-structure-and-parameters#attribution-link-parameters).
 
-
 ### 3. Select tracked events
 
 Use the Tracking section to select the conversion events promoted by your ad (setting up of the events is done via the [Event Manager](https://www.facebook.com/business/help/898185560232180?id=1205376682832142)).
 
-[![](https://support.appsflyer.com/hc/article_attachments/25646834958481)](https://support.appsflyer.com/hc/article_attachments/25646834958481)
+[![](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)](https://support.appsflyer.com/hc/article_attachments/25646834958481)
 
 > 📘 **Important!**
 >
 > Make sure not to choose **App Events,** otherwise Meta will claim those conversions using the SRN API, which can cause reporting and optimization misalignments.
-
 
 ## Create a landing page with OneLink Smart Script
 
@@ -246,7 +235,7 @@ Use the Tracking section to select the conversion events promoted by your ad (se
 
 ### End-to-end data flow
 
-[![](https://support.appsflyer.com/hc/article_attachments/25646834953105)](https://support.appsflyer.com/hc/article_attachments/25646834953105)
+[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://support.appsflyer.com/hc/article_attachments/25646834953105)
 
 1. The Meta ad URL includes the the `pid=metaweb_int` parameter. When the user clicks on the ad an `fbclid` parameter is automatically appended to the clicked URL.
 2. The User is redirected to the URL destination - a landing page containing a Smart Script.
@@ -366,8 +355,6 @@ All Meta web-to-app attributions appear under `Facebook Ads` in the Overview and
 * **Postback reports** show `metaweb_int` as the original media source to which the postback was sent.
 
 ## Traits and Limitations
-
-
 
 | Trait | Remarks |
 | --- | --- |

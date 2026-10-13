@@ -12,7 +12,6 @@ AppsFlyer supports integration with Snapchat Ads (`snapweb_int`) for User Acquis
 >
 > At present, the integration with Snapchat Web does not support sending re-engagement postbacks to CAPI.
 
-
 ### Prerequisites
 
 Before activating the Snapchat Web integration, make sure you have a business account in œœœœ.
@@ -39,14 +38,14 @@ Start by activating the Snapchat Ads web integration. Then configure the postbac
 
 To activate the Snapchat Ads web integration:
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Marketplace**.
+1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Partner Marketplace**.
 2. Search for **Snapchat Web** and select it.
 3. Click **Set up integration**. You’re directed to the **Active Integrations** setup page.
 4. In the **Integration** tab, turn on **Activate Partner**. The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner.
 5. Turn off **Advanced Privacy**(if you are setting an iOS app integration).
 6. **Advanced Matching data sharing:** Turn on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with Snapchat, if these fields are included in the event information sent to AppsFlyer. For more information, see: [Advanced Matching Data Sharing](/docs/advanced-matching-data-sharing).
-7. **Pixel ID:**Enter the Pixel ID. You can generate it or retrieve it from your Snapchat Ads Manager by following the instructions detailed in the [Snapchat Ads official documentation](https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US)
-8. **Access token:**Enter the access token. To generate it or retrieve it, follow the [instructions in the Snapchat Ads official documentation](https://developers.snap.com/api/marketing-api/Conversions-API/GetStarted)
+7. **Pixel ID:** Enter the Pixel ID. You can generate it or retrieve it from your Snapchat Ads Manager by following the instructions detailed in the [Snapchat Ads official documentation](https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US)
+8. **Access token:** Enter the access token. To generate it or retrieve it, follow the [instructions in the Snapchat Ads official documentation](https://developers.snap.com/api/marketing-api/Conversions-API/GetStarted)
 
 ### 2. Enable view-through attribution
 
@@ -103,7 +102,6 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
 >
 > Make sure that you do not choose **App Events;**otherwise, Snapchat will claim those conversions using the SRN API, which can lead to misalignments in reporting and optimization.
 
-
 ### 2. Set destination URL
 
 1. Under **Destination,**in the **Website URL**field**,** enter the URL that serves as the destination for your ad. The URL should be for one of the following:
@@ -135,8 +133,6 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
 | [`af_ad_id`](/docs/about-link-structure-and-parameters#af_ad_id) | `{{ad.id}}`* |
 | [`af_channel`](/docs/raw-data-field-dictionary#attribution::1d1e08b5) | `{{site\_source\_name}}` |
 
-
-
      An example of the resulting URL should be:
 
      ```
@@ -157,8 +153,6 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
 | Other parameters | [See all parameters](/docs/ctv-pc-and-console-platform-direct-attribution-links#attribution-link-parameters) |
 | URL structure | `https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}?af_media_source={media_source}&af_campaign_id={campaign_id}&af_r={app_store_url}` |
 
-
-
   Map the following AppsFlyer parameters to their Snapchat counterparts:
 
   
@@ -173,8 +167,6 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
 | [`af_ad`](/docs/about-link-structure-and-parameters#af_ad) | `{{creative.name }}` |
 | [`af_ad_id`](/docs/about-link-structure-and-parameters#af_ad_id) | `{{ad.id}}`* |
 | [`af_channel`](/docs/raw-data-field-dictionary#attribution::1d1e08b5) | `{{site\_source\_name}}` |
-
-
 
   ***** To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
 
@@ -203,7 +195,7 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
 
 ### End-to-end data flow
 
-[![](https://support.appsflyer.com/hc/article_attachments/41364969285521)](https://support.appsflyer.com/hc/article_attachments/41364969285521)
+[![](https://files.readme.io/215e3d98b36cacd37fd74480cb007ee1d395a4d5d0653318af7d6c71f35d8f31-41364969285521.png)](https://support.appsflyer.com/hc/article_attachments/41364969285521)
 
 1. The Snapchat ad URL includes the `pid=snapweb_int` parameter. When the user clicks on the ad, an `ScCid` parameter is automatically appended to the clicked URL.
 2. The User is redirected to the URL destination - a landing page containing a Smart Script.
@@ -330,8 +322,6 @@ All Snapchat web-to-app attributions appear under `snapchat_int` in the Overvi
 * **Postback reports** show `snapweb_int` as the original media source to which the postback was sent.
 
 ## Traits and Limitations
-
-
 
 | Trait | Remarks |
 | --- | --- |

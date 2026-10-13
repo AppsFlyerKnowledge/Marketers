@@ -20,7 +20,7 @@ See the table that follows for:
 
 - Descriptions of the marketing funnel stages and conversion rates
 - Where the metrics are available, marked as:
-  - **AppsFlyer**: [Overview dashboard](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv) and [aggregate reports and analytics](/docs/aggregated-and-analytics-reporting-overview)
+  - **AppsFlyer**: Overview dashboard and [aggregate reports and analytics](/docs/aggregated-and-analytics-reporting-overview)
   - **App store**: The data is available only from the app store
 - How advertisers can use the metrics to improve their marketing results
 

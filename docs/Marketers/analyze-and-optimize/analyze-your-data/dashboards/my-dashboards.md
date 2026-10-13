@@ -36,14 +36,14 @@ The My Dashboards user interface is designed for interactive dashboard building.
 
 1. In AppsFlyer, from the side menu, go to **My Dashboards** and click **+** (Create new dashboard).
    * Alternatively, in the top-right of the dashboard, click **New** > **+ Create new**.  
-     [![](https://support.appsflyer.com/hc/article_attachments/31801845437073)](https://support.appsflyer.com/hc/article_attachments/31801845437073)
+     [![](https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png)](https://support.appsflyer.com/hc/article_attachments/31801845437073)
 2. Enter a name for your dashboard, select the apps you want included, and click **Save**.
 3. Click **+ New widget** and select the type of widget you want to add (table, KPI, line, bar, column, or donut).
 4. Configure the widget by adding the metric(s) and group by dimension(s) you want and click **Apply**.
 5. In the top-right of the dashboard, click **Save**.  
-   [![](https://support.appsflyer.com/hc/article_attachments/31801845441937)](https://support.appsflyer.com/hc/article_attachments/31801845441937)
+   [![](https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png)](https://support.appsflyer.com/hc/article_attachments/31801845441937)
 6. In the top-right of the dashboard, click the **Share** button, select whether to keep your dashboard private or share it with other team members, and click **Done**.  
-   [![](https://support.appsflyer.com/hc/article_attachments/31801801156241)](https://support.appsflyer.com/hc/article_attachments/31801801156241)
+   [![](https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png)](https://support.appsflyer.com/hc/article_attachments/31801801156241)
 
 ### Add a widget to your dashboard
 
@@ -89,7 +89,7 @@ The My Dashboards user interface is designed for interactive dashboard building.
 
 ### Add custom dimensions to your dashboard
 
-<Embed title="My Dashboards" typeOfEmbed="youtube" url="https://www.youtube.com/embed/NiySU8z12qU" providerUrl="https://www.youtube.com" />
+<Embed title="My Dashboards" typeOfEmbed="youtube" url="https://[www.youtube.com/embed/NiySU8z12qU](https://www.youtube.com/embed/NiySU8z12qU)" providerUrl="https://[www.youtube.com" />
 
 Custom dimensions let you define your own ways to group and view data across My Dashboards. Use them to turn existing dimensions into meaningful business categories, so you can analyze performance according to the structure of your business.
 
@@ -103,19 +103,13 @@ Custom dimensions help you:
 
 #### Suggested custom dimensions
 
-
-
 | **Suggested dimension** | **Description** |
 | --- | --- |
 | Campaign Objective | Classify campaigns by optimization objective to compare performance side by side. |
 | Regions | Map individual geos into business regions to analyze geo performance. |
 | Paid vs. Owned data | Group media sources into high-level categories to compare paid, organic, and owned media performance. |
 
-
-
 #### Example use cases
-
-
 
 | **Use case** | **Description** |
 | --- | --- |
@@ -123,8 +117,6 @@ Custom dimensions help you:
 | Group media sources by UA manager | Create a custom dimension based on Media source to group different media sources by team members. For example, group Google and Meta campaigns under Kevin, and TikTok and Instagram campaigns under Natasha. |
 | Compare geo tiers | Group countries by business priority or revenue potential to compare performance across tiers. |
 | Analyze product or business line performance | Create a custom dimension based on Campaign to group campaigns by the product or service they promote. This helps you see which product drives the most installs or revenue when campaigns for multiple products run across different networks. |
-
-
 
 ### **Procedures**
 
@@ -135,7 +127,7 @@ To create a custom dimension:
 1. In AppsFlyer, go to **My Dashboards**.
 2. Open the custom dimensions entry point:
    * From the dashboard menu, click the **Menu** icon > **Custom dimensions**.  
-     ![](https://support.appsflyer.com/hc/article_attachments/47097227614481)
+     ![](https://files.readme.io/9dc64c842f35fb65978f6687fbd9f6a9ea03c7f1b689eb35b3eecfbf696ff3b0-47097227614481.png)
    * Or, in widget settings, in the **Group by** or **Filters** field, click **Create custom dimension**.
 3. Click **New dimension**.
 4. Select the base dimension:
@@ -158,7 +150,7 @@ To edit or delete a custom dimension from the custom dimensions area:
 
 1. In AppsFlyer, go to **My Dashboards**.
 2. Click the **Menu** icon > **Custom dimensions**.  
-   ![](https://support.appsflyer.com/hc/article_attachments/47097241547793)
+   ![](https://files.readme.io/6368f5ba2dcd0d9db622a5502f6f1ba120c506725f82fb522947fdf9652218b8-47097241547793.png)
 3. Select the custom dimension.
 4. Do one of the following:
    * To edit the custom dimension, update the settings and click **Save**.
@@ -172,7 +164,7 @@ To edit a custom dimension from widget settings:
 4. In **Group by**, open the dimension selector.
 5. Hover over the custom dimension.
 6. Click the **Edit** icon.  
-   ![](https://support.appsflyer.com/hc/article_attachments/47097241548433)
+   ![](https://files.readme.io/89f253d8545855cf12411f66ee81c8abe51d49c65823bcb1b7de52bcee74af75-47097241548433.png)
 7. Update the custom dimension.
 8. Click **Save**.
 
@@ -187,19 +179,16 @@ To use a custom dimension in a widget:
 3. Open the widget settings.
 4. To group data by a custom dimension, select the custom dimension in **Group by**.
 5. To filter data by a custom dimension, select the custom dimension in **Filters**.  
-   ![](https://support.appsflyer.com/hc/article_attachments/47097241548945)
+   ![](https://files.readme.io/1bcd074f316d91eb956e689e45d1199978a9dee57d266019dfb5bb5bfb02a578-47097241548945.png)
 6. Click **Apply**.
 
 Click **Save**.
 
 ### Traits and limitations
 
-
-
 | **Trait** | col b |
 | --- | --- |
 | Availability | Custom dimensions are available to advertiser and agency accounts. They aren't available to ad network users. |
-| Supported metrics | Custom dimensions support LTV metrics only. |
 | Source dimensions | Custom dimensions can be based on the following dimensions: Campaign, Media source, Channel, and Geo. |
 | Custom metrics | Custom metrics aren't supported. |
 | Custom dimensions | Up to 30 custom dimensions can be created. |
@@ -212,8 +201,7 @@ Click **Save**.
 | None group | If no matching values are found for the custom dimension, data is grouped under **None**. |
 | Rule priority | If data matches more than 1 value, AppsFlyer applies the first matching value based on the value order. |
 | Case sensitivity | Rules aren't case-sensitive. Uppercase and lowercase letters are treated the same. |
-
-
+| Data freshness | Real-time data isn't available. |
 
 ### Order table data by metric
 
@@ -235,8 +223,6 @@ Some metrics don't support ordering. Ordering isn't currently supported for:
 
 The following table explains key differences between SKAN data and AppsFlyer attribution data. Use this information to understand how SKAN affects the metrics available in My Dashboards.
 
-
-
 | Difference | AppsFlyer | SKAN |
 | --- | --- | --- |
 | Platform | All | iOS |
@@ -247,13 +233,9 @@ The following table explains key differences between SKAN data and AppsFlyer att
 | Web-to-app | Available | Available for SKAN 4 attribution |
 | Currency | App-specific currency | USD |
 
-
-
 You can explore a wide range of **SKAdNetwork (SKAN) metrics** directly in My Dashboards, allowing you to view most of your **iOS performance (SKAN, Classic, and SSOT)** all in one place. Advanced users who need longer post-install windows or null CV data can still use [**SKAN Overview**](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer) for deeper insights.
 
 #### Available SKAN metrics
-
-
 
 | Catagory | Metric name | Formula / notes | Period |
 | --- | --- | --- | --- |
@@ -271,8 +253,6 @@ You can explore a wide range of **SKAdNetwork (SKAN) metrics** directly in My Da
 | In-App Events | Conversion Rate | SKAN event Unique Users / SKAN Attributions | D1-D2 |
 | In-App Events | CPA | SKAN event Unique Users / Cost | D1-D2 |
 | In-App Events | Revenue | SKAN event Revenue | D1-D2 |
-
-
 
 #### Supported dimensions
 
@@ -321,7 +301,7 @@ From the top menu bar, you can select the Product line, View type, Date range, a
 
 The current view types are **Unified** and **User Acquisition**.
 
-![](https://support.appsflyer.com/hc/article_attachments/42050399326737)
+![](https://files.readme.io/84478f6f3b8a92436a4297bcd71effb890a1c1fb4c38a1b79c8845d7e91c17b2-42050399326737.png)
 
 #### Widgets
 
@@ -350,7 +330,6 @@ All the metrics found in the [My Dashboards](/docs/my-dashboards#metrics) can be
 >
 > Data is available from November 1, 2025, or the date you create your Product Line and opt in to cross-platform attribution.
 
-
 They are:
 
 * **Platform** - the platform the app is running on such as Android, iOS, Samsung, LG, Roku, etc.
@@ -370,16 +349,12 @@ Here's what to keep in mind when analyzing web data in this dashboard:
 
 #### **Limitations**
 
-
-
 | Name | Description |
 | --- | --- |
 | Cohort aggregation | Cohort aggregation is limited to daily. |
 | Retargeting and re-engagement | Starting May 1st, 2026, cross-platform cohorts can also be based on the user's re-engagement date, the date of a new conversion attributed to the user after their initial acquisition.<br /><br />This is in addition to the existing cohort based on the user's acquisition date (the first time AppsFlyer records their CUID within the Product Line). |
 | Data availability | Data is available from November 1, 2025 or the date you create your Product Line and opt in to cross-platform attribution. |
 | Data freshness | Daily. Data can take up to 8 hours after midnight UTC to be available. |
-
-
 
 ### View dashboard
 
@@ -388,7 +363,7 @@ Here's what to keep in mind when analyzing web data in this dashboard:
 1. In AppsFlyer, from the side menu, go to **My Dashboards**.
 2. Select a dashboard to view from the list of pinned and recently viewed dashboards.
 3. If the dashboard view you want isn't in the list of pinned and recently viewed dashboards, at the top of the dashboard that's currently showing, select the one you want to view from the dropdown.  
-   [![](https://support.appsflyer.com/hc/article_attachments/25379509854737)](https://support.appsflyer.com/hc/article_attachments/25379509854737)
+   [![](https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png)](https://support.appsflyer.com/hc/article_attachments/25379509854737)
 4. Select the apps, view type, date range, and display filters.  
    [![image (3).png](https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png)](https://support.appsflyer.com/hc/article_attachments/23901452545681)
 
@@ -399,10 +374,10 @@ My Dashboards preferences are global settings that apply to the whole Dashboard.
 To set My Dashboards preferences:
 
 1. In AppsFlyer, go to **My Dashboards**.
-2. Click the three dots ![](https://support.appsflyer.com/hc/article_attachments/46312758928785) next to **Create new**.
+2. Click the three dots ![](https://files.readme.io/2e083cda3a0ec69461d3cc520e2d7b7c4189561af5585e15d7f6f9bd06f18f2a-46312758928785.png) next to **Create new**.
 3. Select **Preferences**.
 
-   ![](https://support.appsflyer.com/hc/article_attachments/46312758929297)
+   ![](https://files.readme.io/3424f7a57774d9d7425335ba85c725eb30373c883dfcb6abe873938f83e3694e-46312758929297.png)
 
 #### Theme
 
@@ -434,11 +409,7 @@ The metrics available for widgets (tables, KPIs, and charts) are described in th
 >
 > <Embed title="My Dashboards" typeOfEmbed="youtube" url="https://www.youtube.com/embed/Rnuxb85PRmk?si=4yFRETz_9ACHQbKE" providerUrl="https://www.youtube.com" />
 
-
-
 <table><colgroup><col/><col/></colgroup><thead><tr><th>Metric</th><th>Description</th></tr></thead><tbody><tr><td>Clicks</td><td>Number of click engagements. This metric includes all click engagement types, including engaged_click, click_unspecified, and click_to_app.</td></tr><tr><td>Impressions</td><td>Number of impression engagements. This metric includes all impression engagement types, including view, engaged_view, impression_unspecified, and listening.</td></tr><tr><td>IPM</td><td><p>Attributions Per Mille measures the number of attributions per 1,000 impressions. Formula: (Attribution * 1000) / Impressions<br/><br/><strong>Note: </strong></p><ul><li>IPM is calculated based on all types of attributions. This includes installs, re-attributions, and re-engagements. To calculate it only based on Installs:<ul><li>In the <a href="/docs/my-dashboards#add-widget">widget settings</a>, add the filter <a href="/docs/my-dashboards#group-by-dimensions">Attribution type = Installs</a></li><li>In the dashboard filters panel, set <a href="/docs/my-dashboards#view-dashboard">View type = UA</a></li></ul></li><li>IPM in a KPI widget includes Organic installs. To exclude organic attributions:<ul><li>In the <a href="/docs/my-dashboards#add-widget">widget settings</a>, add the filter <a href="/docs/my-dashboards#group-by-dimensions">Source = Non-organic</a></li><li>In the dashboard filters panel, add the filter <a href="/docs/my-dashboards#view-dashboard">Source = Non-organic</a></li></ul></li></ul></td></tr><tr><td>Cost</td><td>Campaign cost reported to AppsFlyer via click and/or API.</td></tr><tr><td>Click-to-install rate (%)</td><td>Click-to-install conversion rate. The rate excludes installs with no available click data Formula: Attributions / Clicks * 100</td></tr><tr><td>CTR</td><td>Click-through rate. Formula: Clicks / Impressions</td></tr><tr><td>Attributions</td><td><ul><li>Number of installs, re-engagements, and re-attributions.</li><li>For SKAN, the number of installs and redownloads.</li><li>For cross-platform attribution methods, the user acquisition metric represents the count of distinct customer user IDs (CUIDs) whose first acquisition falls within the selected date range, deduplicated across platforms.</li></ul></td></tr><tr><td>Assisted installs</td><td>Engagements that led to installs eventually attributed to other media sources or campaigns. Example: A user clicks 2 ads. The install is attributed to the last touchpoint; earlier touchpoints get an assisted install.</td></tr><tr><td>eCPI</td><td>Average effective cost per install (attribution). Formula: Cost / Attributions</td></tr><tr><td>CPM</td><td>Cost per mille (1000 impressions). Formula: (Cost / Impressions) * 1000</td></tr><tr><td>CPC</td><td>Cost per click. Formula: Cost / Clicks</td></tr><tr><td>Total revenue</td><td>In-app purchase, subscription, and ad revenue reported to AppsFlyer.</td></tr><tr><td>Active Users</td><td><p>The number of users who opened the app at least once within the chosen time range. </p><p>If daily time granularity is selected, it's DAU. If monthly is selected, it's MAU. For information about querying raw data reports for DAU and MAU, see: <a href="/docs/calculate-daily-and-monthly-active-users-dau-and-mau">Calculate daily and monthly active users (DAU and MAU)</a>.</p></td></tr><tr><td>Active Users last 31 days</td><td><p>Monthly active users (the number of unique users who opened the app at least once) during the past 31 days (not calendar month). Only available when viewing in UTC timezone.</p><p><strong>Note</strong>: Active Users last 31 days must be applied with a Date grouping</p></td></tr><tr><td>DAU/MAU</td><td><p>DAU/MAU measures the rate of user stickiness. Formula: Daily active users / Active users in the last 31 days. Only available when viewing in UTC timezone.</p><p><strong>Note</strong>: DAU/MAU must be applied with a Date grouping</p></td></tr><tr><td>ARPU</td><td>Average revenue per user. Formula: Revenue / Unique users (users = attributions).</td></tr><tr><td>ROI</td><td>Return on investment. Formula: (Revenue - Cost) / Cost * 100</td></tr><tr><td>ROAS</td><td>Return on ad spend. Formula: Revenue / Cost * 100</td></tr><tr><td>Gross profit</td><td>Gross profit. Formula: Revenue - Cost</td></tr><tr><td>Net revenue</td><td>Net revenue for the selected period, aggregated from the af_net_revenue event parameter. For apps using ROI360 store revenue, this is gross revenue minus app store fees and taxes (Net = Gross - store fees - taxes); apps that send af_net_revenue themselves define the calculation.</td></tr><tr><td>Net ARPU</td><td>Average net revenue per user. Formula: Net revenue / Unique users (users = attributions).</td></tr><tr><td>Net ROI</td><td>Return on investment, based on net revenue. Formula: (Net revenue - Cost) / Cost * 100</td></tr><tr><td>Net ROAS</td><td>Return on ad spend, based on net revenue. Formula: Net revenue / Cost * 100</td></tr><tr><td>Net profit</td><td>Net profit. Formula: Net revenue - Cost</td></tr><tr><td>Sessions</td><td>Number of times the app is launched, brought to the device foreground, or other method set by the developer.</td></tr><tr><td>Average sessions</td><td>Number of times per attribution that the app is launched, brought to the device foreground, or other method set by the developer. Formula: Sessions / Attributions</td></tr><tr><td>Retention rate (%)</td><td>On-day percentage of unique users with a session. Formula: On day number of unique users with a session / Conversions * 100</td></tr><tr><td>Uninstalls rate (%)</td><td><ul><li>Percentage of uninstalls per attribution.  Formula: Uninstalls / Attributions * 100</li><li>Based on installs attributed via classic attribution method only.</li></ul></td></tr><tr><td>Uninstalls</td><td><ul><li>Number of app users who install the app and subsequently uninstall (delete) the app.</li></ul></td></tr><tr><td>View-throughs</td><td>Number of attributions after users view an ad (VTA).</td></tr><tr><td>Click-throughs</td><td>Number of attributions after users click on an ad (CTA)</td></tr><tr><td>Platform activations (cross-platform)</td><td>Platform activations count total new platform groups whose cross-platform attribution occurred in the selected date range, summed across users. For each CUID, each platform group is counted at most once.</td></tr><tr><td>Cross-platform</td><td>cross-platform metrics that report unique users use Customer User ID (CUID) when available, and fall back to AppsFlyer ID when CUID is missing. User acquisitions and Platform activations always count distinct CUIDs only.<br/> </td></tr><tr><td colspan="2"><strong>Event metrics</strong></td></tr><tr><td>Event name</td><td><p>The name of the in-app event to show in a widget.</p><p><strong>Note</strong>: Event names are case-sensitive. Therefore, make sure the event name you select in the dashboard exactly matches the letter casing of the event sent to AppsFlyer. For example, if your app sends "AF_purchase", you can't select "af_purchase" as the letter casing doesn't match.</p></td></tr><tr><td>Unique users</td><td>Number of unique users (attributions) who perform the event.</td></tr><tr><td>Conversion rate (%)</td><td>Percentage of unique users (attributions) who perform the event. Formula: Event unique users / Attributions x 100</td></tr><tr><td>Revenue</td><td><ul><li>Revenue generated by this specific event.</li><li>For SKAN, based on configuration in SKAN Conversion Studio.</li></ul></td></tr><tr><td>eCPA</td><td>Effective cost per action (event). Formula: Cost / Event unique users</td></tr><tr><td>Count</td><td><ul><li>Number of times this event was performed.</li><li>For SKAN, based on configuration in SKAN Conversion Studio.</li></ul></td></tr><tr><td>Average count</td><td>Average number of times this event was performed per attribution. Formula: Event count / Attributions</td></tr><tr><td>Average revenue</td><td>Average revenue from this event per attribution. Formula: Event revenue / Attributions</td></tr><tr><td colspan="2"><strong>Web app metrics</strong></td></tr><tr><td>First Visits</td><td>Number of first-time visits to a web app. Counted as rows where conversion_name = first_visit. Available for web apps only.</td></tr><tr><td>Re-visits</td><td>Number of non-organic returning visits to a web app. Counted as rows where conversion_name = revisit. Available for web apps only.</td></tr><tr><td>User Acquisitions</td><td>Available for Cross-platform attribution or web apps. For web apps, User Acquisitions reflects First Visits unless a User Acquisition Event is configured. For mobile apps, User Acquisitions equals Installs. When viewing multiple apps together, User Acquisitions = Installs + First Visits (or the custom web event configured by the client).</td></tr></tbody></table>
-
-
 
 **Net vs. gross revenue metrics**
 
@@ -448,8 +419,6 @@ Standard revenue metrics (Revenue, ROAS, ROI, ARPU, Gross profit) use gross reve
 
 A period is the timeframe you want a particular metric to measure. Period options are described in the following table.
 
-
-
 | Period | Description |
 | --- | --- |
 | Actual | User activity within the selected date range, regardless of when the app was installed. |
@@ -457,8 +426,6 @@ A period is the timeframe you want a particular metric to measure. Period option
 | D1 and D2 | For **SKAN data** only. Includes installs and in-app events occurring within the first and second day (D1 and D2) after install. Data is modeled using AppsFlyer's null conversion value (CV) modeling. |
 | D0-D180 | Value of users during particular cohort days post-install. D0 is the day of install. |
 | D2 and D7 | For SSOT and SKAN, you can see the value of users on Day 2 and Day 7 post-install. |
-
-
 
 ### Calculation
 
@@ -471,16 +438,12 @@ For cohort data, you can select from the following calculation options:
 
 The attribution method determines which data contribute to a metric. Meaning, the metric will display data for attributions that were attributed via your selected attribution method. There are 3 attribution methods to select from:
 
-
-
 | Attribution method | Description |
 | --- | --- |
 | Single Source of Truth (SSOT) | * Combines Classic and SKAN attributions to provide unified data for all platforms and campaigns.<br />* Select if you:<br />  * Have data from SKAN as well as any other attribution methods.<br />  * Want accurate, deduplicated data.<br />  * Want enriched and modeled data.<br /><br />**Note**: If you select SSOT for iOS apps, you must have SSOT configured in SKAN Conversion Studio. Otherwise, incorrect data may display. |
 | Classic attribution | * Real-time and granular attribution.<br />* Select if you:<br />  * Have data for apps on Android, CTV, PC, and console platforms.<br />  * Have iOS data that doesn't rely on SKAN.<br />  * Run retargeting campaigns.<br />  * Want full LTV data.<br />  * Want retention and session metrics.<br />  * [Learn more about AppsFlyer attribution methods](/docs/appsflyer-attribution-model) |
 | SKAN | * Attribution data for iOS campaigns with SKAN data.<br />* Select if you know you only have SKAN data. This applies if you:<br />  * Only have an iOS app that doesn't implement the ATT prompt to collect IDFA.<br />  * Don't run any owned-media campaigns.<br />  * Run campaigns only using SRNs. |
 | Cross-platform | * Unifies user interactions across devices and platforms using a single Customer User ID (CUID).<br />* Enables analysis at the user level, not the device level.<br />* Includes metrics such as User acquisitions, Platform activations, and Revenue Day 30 by Platform group.<br />* Requires opting in to Cross-platform attribution and configuring apps under the same product line. |
-
-
 
 ### Filter and group by dimensions
 
@@ -489,8 +452,6 @@ The dimensions available to filter and group metrics by are described in the fol
 **Note**: Filters are available at both the dashboard level and individual widget level. Filters at the widget level also take into account filters set at the dashboard level. If there's a conflict, data doesn't display.
 
 Custom dimensions can also be used to group and filter widget data. Custom dimensions are created from existing dimensions and appear in widget settings after they're saved.
-
-
 
 | **Suggested dimension** | **Description** |
 | --- | --- |
@@ -501,8 +462,6 @@ Custom dimensions can also be used to group and filter widget data. Custom dimen
 0
 
 #### SSOT supported dimension metrics.
-
-
 
 | **Suggested dimension** | **Description** |
 | --- | --- |
@@ -519,8 +478,6 @@ See below which groupings are supported for each metric set.
 
 #### Installs, Re-attributions, Re-engagements
 
-
-
 | **Suggested dimension** | **Description** |
 | --- | --- |
 | Campaign Objective | Classify campaigns by optimization objective to compare performance side by side. |
@@ -530,8 +487,6 @@ See below which groupings are supported for each metric set.
 2
 
 #### Cost, impressions, clicks, CTR, Click-to-install rate, IPM, eCPI
-
-
 
 | **Suggested dimension** | **Description** |
 | --- | --- |
@@ -543,8 +498,6 @@ See below which groupings are supported for each metric set.
 
 #### Click Through, View Through
 
-
-
 | **Suggested dimension** | **Description** |
 | --- | --- |
 | Campaign Objective | Classify campaigns by optimization objective to compare performance side by side. |
@@ -554,8 +507,6 @@ See below which groupings are supported for each metric set.
 4
 
 #### Total revenue, ROAS, ROI, ARPU, gross-profit, Sessions
-
-
 
 | **Suggested dimension** | **Description** |
 | --- | --- |
@@ -569,8 +520,6 @@ Net revenue, Net ROAS, Net ROI, Net ARPU, and Net profit support the same breakd
 
 #### Total revenue, ROAS, ROI, ARPU, gross-profit, Sessions, Retention rate
 
-
-
 | **Suggested dimension** | **Description** |
 | --- | --- |
 | Campaign Objective | Classify campaigns by optimization objective to compare performance side by side. |
@@ -583,8 +532,6 @@ Note: Retention rate is available only for cohort-based metrics.
 
 #### In-app events: Unique users, Count, Revenue, eCPI, Conversion rate, Average count
 
-
-
 | **Suggested dimension** | **Description** |
 | --- | --- |
 | Campaign Objective | Classify campaigns by optimization objective to compare performance side by side. |
@@ -594,8 +541,6 @@ Note: Retention rate is available only for cohort-based metrics.
 7
 
 #### Active users
-
-
 
 | **Suggested dimension** | **Description** |
 | --- | --- |
@@ -607,8 +552,6 @@ Note: Retention rate is available only for cohort-based metrics.
 
 #### Active users last 31 days
 
-
-
 | **Suggested dimension** | **Description** |
 | --- | --- |
 | Campaign Objective | Classify campaigns by optimization objective to compare performance side by side. |
@@ -618,8 +561,6 @@ Note: Retention rate is available only for cohort-based metrics.
 9
 
 #### DAU/MAU
-
-
 
 | **Use case** | **Description** |
 | --- | --- |
@@ -632,8 +573,6 @@ Note: Retention rate is available only for cohort-based metrics.
 
 #### Uninstalls
 
-
-
 | **Use case** | **Description** |
 | --- | --- |
 | Measure retargeting campaigns by campaign objective | Group retargeting campaigns by objective, such as churn prevention, reactivation, or upsell, and compare performance in My Dashboards. |
@@ -645,8 +584,6 @@ Note: Retention rate is available only for cohort-based metrics.
 
 #### Assisted installs
 
-
-
 | **Use case** | **Description** |
 | --- | --- |
 | Measure retargeting campaigns by campaign objective | Group retargeting campaigns by objective, such as churn prevention, reactivation, or upsell, and compare performance in My Dashboards. |
@@ -657,8 +594,6 @@ Note: Retention rate is available only for cohort-based metrics.
 2
 
 #### SKAN duplicates
-
-
 
 | **Use case** | **Description** |
 | --- | --- |
@@ -672,8 +607,6 @@ Note: Retention rate is available only for cohort-based metrics.
 #### First Visits, Re-visits
 
 First Visits and Re-visits aren't supported for any period, time breakdown, or attribution method when grouping or filtering by the following dimensions.
-
-
 
 | **Use case** | **Description** |
 | --- | --- |
@@ -745,7 +678,7 @@ To use a stacked area chart:
 
 <Embed title="My Dashboards" typeOfEmbed="youtube" url="https://www.youtube.com/embed/QN34vDC8gtY?si=0IWgOX2oZ0Gmphid" providerUrl="https://www.youtube.com" />
 
-[![](https://support.appsflyer.com/hc/article_attachments/31830577334417)](https://support.appsflyer.com/hc/article_attachments/31830577334417)
+[![](https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png)](https://support.appsflyer.com/hc/article_attachments/31830577334417)
 
 For bar, column, line, and combo charts, you can add multiple metrics.
 
@@ -767,7 +700,7 @@ You can also manually assign each metric to either the left or right Y axis. For
 
 ### Compare to
 
-![Compare-Animated Image (Large) (1).gif](https://support.appsflyer.com/hc/article_attachments/29064704463761)
+![Compare-Animated Image (Large) (1).gif](https://files.readme.io/456530b09e6914ea4eb90658aee27408fad5bc3a208f9a4a68a99fbf0f823f13-29064704463761.gif)
 
 The "Compare to" feature is available in line charts. It allows you visualize and identify trends, changes, patterns, or anomalies by displaying the selected data and its historical counterpart side by side for easy comparison.
 
@@ -889,8 +822,6 @@ Events that arrive between **00:00–02:00 UTC** can be displayed with the **pre
 
 ##### Example: Event date differences between UTC and UTC-8
 
-
-
 | **Use case** | **Description** |
 | --- | --- |
 | Measure retargeting campaigns by campaign objective | Group retargeting campaigns by objective, such as churn prevention, reactivation, or upsell, and compare performance in My Dashboards. |
@@ -934,8 +865,6 @@ My Dashboards replaces the legacy Events, Overview, and Activity dashboards. Use
 After **June 30, 2026**, the legacy Events, Overview, and Activity dashboards will no longer be accessible.
 
 #### Match legacy dashboards to My Dashboards
-
-
 
 | **Use case** | **Description** |
 | --- | --- |
@@ -1009,8 +938,6 @@ Based on the permissions granted, ad networks can view:
 Advertisers manage agency and ad network access in the **Permissions tab** in the [Active integration](/docs/set-up-an-integrated-partner#permissions-tab) page.
 
 ### Traits and limitations
-
-
 
 | **Use case** | **Description** |
 | --- | --- |

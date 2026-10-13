@@ -6,30 +6,19 @@ excerpt: "Learn how to configure the 360 Ads integrated partner settings in Apps
 
 ## Setting Up 360 Ads
 
-The setup is done from the **Active Integrations** page, but to find new partners you must first go to the [marketplace](/docs/partner-integrations).
+**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 
-> 📘 **Note**
->
-> Before setting up an integration, make sure you [contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
+**To set up a new integration:**
 
-
-**To activate the integration:**
-
-1. In AppsFlyer, from the side menu, select**Collaborate**> **Partner Marketplace**.
-2. Search for the partner and select it.
-3. Click **Set up integration**.
-4. Select the app for the integration. You’re directed to the integration setup page.
-5. In the **Integration** tab, turn **Activate partner** on.
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+2. Select the relevant app.
+3. Search for the partner and select **Integrate**.
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   **Important note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+5. Complete the configuration using the relevant tabs, as described below.
 
 360 Ads configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
-
-For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
-
-> 📘 **Tip**
->
-> * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
-> * All the rest of the steps are either descriptive or **optional**
-
 
 ## Integration Tab
 
@@ -46,7 +35,7 @@ Toggle this to ON if you want to attribute view-through installs from 360 Ads. T
 
 ### Default Postbacks
 
-![mceclip2.png](https://files.readme.io/d779fc38f15be9d764e7ab7883ec27d1fb048c6f3cc9ccdd9b3ae8da285dd59b-21593980554257.png)
+![mceclip2.png](https://files.readme.io/76d061e04c962477f32b23236b52b56c2b1533375073b0fc57894fad39f0c924-50900375406993.png)
 
 ### In-app events settings
 
@@ -56,22 +45,18 @@ In this section you can map your AppsFlyer events with 360 Ads via postbacks.
 
 360 Ads connects with AppsFlyer via a unique Key and Secret. If you don't already have the Key and Secret, you must obtain it from 360 Ads to continue with the integration.
 
-![mceclip2.png](https://files.readme.io/b1b665c7864d2a972ea975add2d3735ce42e5376c7d4cffb39429b9e9c52dcf0-360003450098.png)
+![mceclip2.png](https://files.readme.io/0d52eb93f8cba6ec283cdf844cc6fa891499884de0c93689653f4d356078dd85-50900375408017.png)
 
 1. Set the 360 Ads Key and Secret here
 2. Toggle In-App Event Postbacks to ON
 3. Click **Add Event** to add an SDK Event to the list
 4. Fill in the following parameters:
 
-
-
 | Parameter Name | Description |
 | --- | --- |
 | **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
 | **Partner Event Identifier** | The unique name or ID of each event as defined on 360 Ads side.  <br />Obtain the corresponding Event ID from 360 Ads and set in the text field. |
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
-
-
 
 ## Attribution Link Tab
 
@@ -96,9 +81,9 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/03dc3e610125c0e4490108dcb218069edb6621e3092d29ff74915ab3a6ce27b0-21593958770833.png)
+![attribution-link-parameters.png](https://files.readme.io/823a4ad48f073aa1b45e7a3fc966073711b9a3dd8c8e8196c705e2236d7f93a5-50900375410065.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about **[AppsFlyer's Attribution Link Structure and Parameters](/docs/about-link-structure-and-parameters).**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
 
 ### Click-Through Attribution
 
@@ -108,7 +93,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the [click lookback window here](/docs/set-up-lookback-windows).
 
-![netease-click-through.png](https://files.readme.io/2bb30de564b5faffef594b1e0ac5ab4c82ffa1e270a17a99abe6e15ec333fb41-21593958786449.png)
+![netease-click-through.png](https://files.readme.io/3ad5a42060b78fcd3d5d7f94766ad1a5180696f67425e92abafbfd83bf331965-50900375410321.png)
 
 ### Attribution Link
 
@@ -124,7 +109,7 @@ You can customize this value to 1-23 hours or 1-7 days.
 
 More details about the [view-through attribution here](/docs/set-up-lookback-windows).
 
-[![](https://support.appsflyer.com/hc/article_attachments/21593958808593)](https://support.appsflyer.com/hc/article_attachments/21593958808593)
+[![](https://files.readme.io/fd01a3f2373e2946f2926ea732431bfb4f10e3d861e2ad4a8a5ae6dcb288cbc1-50900397422097.png)](https://support.appsflyer.com/hc/article_attachments/50900397422097)
 
 ### Impressions attribution link
 
@@ -142,7 +127,7 @@ Ad Revenue is not supported in the integration with this partner.
 
 In this tab, you can select the permissions to grant 360 Ads, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for 360 Ads, the permissions tab is active and you can grant control to 360 Ads.
 
-![rtb_house-permissions-new.png](https://files.readme.io/0241afe621784cb6614fd649e956e1d7e518e386769c1df6a53fb31be8dcc96d-21593958818065.png)
+![rtb_house-permissions-new.png](https://files.readme.io/ad21dc33e731bb96aa04093868e7b89c146d2351baebb09b7bba172b9886b04b-50900375415825.png)
 
 ### Ad Network Permissions
 

@@ -16,18 +16,22 @@ All identifiers must be hashed with SHA-256 before reaching AppsFlyer, either on
 
 Advanced-Matching Data Sharing is available for the following networks:
 
-| Partner | Partner ID (PID) |
-| --- | --- |
-| Google | googleads\_int |
-| Meta | facebook\_int, metaweb\_int |
-| Moloco | moloco\_int |
-| OpenAI | openai\_int |
-| Pinterest | pinterest\_int |
-| Snapchat | snapchat\_int, snapweb\_int |
-| TikTok | tiktokglobal\_int, tiktokweb\_int |
-| Reddit | reddit\_int |
-| Rokt | roktv2\_int |
-| Roku | rokuads\_int |
+| Partner | Partner ID (PID) | Supported Advanced Matching fields |
+| --- | --- | --- |
+| Google | googleads\_int | Hashed Email, Hashed Phone Number |
+| Meta | facebook\_int | Hashed Email, Hashed Phone Number, Hashed First Name, Hashed Last Name |
+| Meta | metweb\_int | Hashed Email, Hashed Phone Number, Hashed First Name, Hashed Last Name, FB Login ID |
+| Moloco | moloco\_int | Hashed Email, Hashed Phone Number, Hashed First Name, Hashed Last Name |
+| ChatGpt Ads | openai\_int | Hashed Email, Hashed Phone Number, Hashed First Name, Hashed Last Name |
+| Pinterest | pinterest\_int | Hashed Email, Hashed Phone Number, Hashed First Name, Hashed Last Name |
+| Snapchat | snapchat\_int | Hashed Email, Hashed Phone Number |
+| Snapchat | snapweb\_int | Hashed Email, Hashed Phone Number, Hashed First Name, Hashed Last Name |
+| TikTok | tiktokglobal\_int | Hashed Email, Hashed Phone Number, Hashed First Name, Hashed Last Name |
+| TikTok | tiktokweb\_int | Hashed Email, Hashed Phone Number, Hashed First Name, Hashed Last Name |
+| Reddit | reddit\_int | Hashed Email, Hashed Phone Number |
+| Rokt | roktv2\_int | Hashed Email, Hashed Phone Number, Hashed First Name, Hashed Last Name |
+| Roku | rokuads\_int | Hashed Email, Hashed Phone Number |
+| Smadex | smadex\_int | Hashed Email, Hashed Phone Number, Hashed First Name, Hashed Last Name |
 
 ## The end-to-end flow
 
@@ -45,8 +49,7 @@ Hashed identifiers are only forwarded to partners where Advanced-Matching Data S
 
 Hashed identifiers reach AppsFlyer via two methods: the SDK or the server-to-server (S2S) API. In both cases, only properly hashed values are accepted. The tabs below describe each method.
 
-<Tabs>
-<Tab title="SDK">
+<Accordion title="SDK">
 
 SDK V7.0.1 introduces a method for passing raw identifiers to the AppsFlyer Android and iOS SDKs. The SDK normalizes and hashes the input before sending it to AppsFlyer:
 
@@ -62,9 +65,9 @@ Android and iOS support is available starting with SDK V7.0.1.
 
 For implementation details, see the [Android SDK integration guide](https://dev.appsflyer.com/hc/docs/android-sdk) and [iOS SDK integration guide](https://dev.appsflyer.com/hc/docs/ios-sdk).
 
-</Tab>
+</Accordion>
 
-<Tab title="S2S API">
+<Accordion title="S2S APIs">
 
 When sending events via the S2S in-app events API, identifiers must be normalized and hashed on the server before submission. The API accepts the following fields:
 
@@ -83,17 +86,16 @@ Every field in this table (except fb\_login\_id) is validated against the SHA-25
 
 Networks match events by comparing the hash that AppsFlyer forwards to their own stored hash of the user's phone number. Because the same number normalized in a different format produces a different hash, both sides must hash from the same format to get a match. Because networks normalize phone numbers differently and AppsFlyer receives already-hashed values, both versions must be sent to cover all supported partners.
 
-- `phone_number_hashed`: for Meta and Snapchat. Normalization format before hashing: `16501234567`
-- `phone_number_e164_hashed`: for Google and TikTok. Normalization format before hashing: `+16501234567`
+* `phone_number_hashed`: for Meta and Snapchat. Normalization format before hashing: `16501234567`
+* `phone_number_e164_hashed`: for Google and TikTok. Normalization format before hashing: `+16501234567`
 
-</Tab>
-</Tabs>
+</Accordion>
 
 ## Normalize and hash identifiers
 
 Normalize the raw value exactly as described below, then hash using SHA-256 and send the lowercase hex digest.
 
-### Email (email\_hashed)
+<Accordion title="Email (email_hashed)">
 
 Normalize and hash the email address as follows:
 
@@ -105,7 +107,9 @@ Normalize and hash the email address as follows:
 
 `User@Example.COM` → `user@example.com` → SHA-256 hash
 
-### Phone number, digits only (phone\_number\_hashed)
+</Accordion>
+
+<Accordion title="Phone number, digits only (phone_number_hashed)">
 
 Use this for Meta, Reddit, Pinterest, and Snapchat. Normalize and hash the phone number as follows:
 
@@ -117,7 +121,9 @@ Use this for Meta, Reddit, Pinterest, and Snapchat. Normalize and hash the phone
 
 `+1 (650) 123-4567` → `16501234567` → SHA-256 hash
 
-### Phone number, E.164 (phone\_number\_e164\_hashed)
+</Accordion>
+
+<Accordion title="Phone number, E.164 (phone_number_e164_hashed)">
 
 Use this for Google, TikTok, and Roku. Normalize and hash the phone number as follows:
 
@@ -130,7 +136,9 @@ Use this for Google, TikTok, and Roku. Normalize and hash the phone number as fo
 
 `+1 (650) 123-4567` → `+16501234567` → SHA-256 hash
 
-### First name (first\_name\_hashed) and last name (last\_name\_hashed)
+</Accordion>
+
+<Accordion title="First name (first_name_hashed) and last name (last_name_hashed)">
 
 Normalize and hash the name as follows:
 
@@ -138,9 +146,13 @@ Normalize and hash the name as follows:
 2. Convert to lowercase.
 3. Hash with SHA-256.
 
-### Facebook login ID (fb\_login\_id)
+</Accordion>
+
+<Accordion title="Facebook login ID (fb_login_id)">
 
 Send the raw Facebook login ID as provided by the Facebook Login SDK. This field is not hashed.
+
+</Accordion>
 
 ## Turn on Advanced-Matching Data Sharing
 
@@ -161,9 +173,9 @@ Turning off Advanced-Matching Data Sharing immediately stops hashed data sharing
 
 When Advanced-Matching Data Sharing is enabled for a partner, AppsFlyer begins forwarding hashed user identifiers to that network along with event data. Before turning it on, confirm the following:
 
-- A lawful basis exists (under applicable privacy laws, such as the General Data Protection Regulation (GDPR) or the California Consumer Privacy Act (CCPA)) to share this data with the partner.
-- Your privacy policy has been updated and, where required, user consent has been obtained.
-- Your data-sharing practices align with the partner's terms.
+* A lawful basis exists (under applicable privacy laws, such as the General Data Protection Regulation (GDPR) or the California Consumer Privacy Act (CCPA)) to share this data with the partner.
+* Your privacy policy has been updated and, where required, user consent has been obtained.
+* Your data-sharing practices align with the partner's terms.
 
 AppsFlyer does not process or store plain-text Personally Identifiable Information (PII). All identifier fields are validated at ingestion: values that don't conform to the SHA-256 format are dropped and never forwarded to any partner.
 
@@ -195,6 +207,6 @@ Most partners don't use hashed email or hashed phone for install, re-engagement,
 
 <Accordion title="Does AppsFlyer ever receive plain-text user identifiers?">
 
-No. Identifiers are always hashed before they reach AppsFlyer, whether on-device via the SDK or server-side via the S2S API. AppsFlyer only accepts hashed values.
+No. As explained in the "Important!" callout near the top of this article, identifiers are always hashed before they reach AppsFlyer, whether on-device via the SDK or server-side via the S2S API. AppsFlyer only accepts hashed values.
 
 </Accordion>

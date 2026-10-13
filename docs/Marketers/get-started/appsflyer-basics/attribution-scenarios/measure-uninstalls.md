@@ -220,7 +220,7 @@ The success message displays.
 
 ## Testing uninstall measurement
 
-Once the implementation procedures are complete, you can install and then uninstall the app to test that uninstalls are recorded correctly. Uninstalls and uninstall rates are displayed on the [Overview dashboard](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv#rowlevel-metrics).
+Once the implementation procedures are complete, you can install and then uninstall the app to test that uninstalls are recorded correctly. Uninstalls and uninstall rates are displayed on the Overview dashboard.
 
 <Tabs>
 <Tab title="Android">

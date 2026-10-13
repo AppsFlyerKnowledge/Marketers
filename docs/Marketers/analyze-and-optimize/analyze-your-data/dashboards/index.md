@@ -18,9 +18,6 @@ Set up your AppsFlyer dashboards to get the most from your data (including PBA)
   <Card title="[Beta] Set up custom metrics in My Dashboards" href="/docs/beta-set-up-custom-metrics-in-my-dashboards" icon="fa-solid fa-gauge-high">
     Configure and track custom metrics tailored to your business goals.
   </Card>
-  <Card title="Overview dashboard—user acquisition and retargeting LTV" href="/docs/overview-dashboard-user-acquisition-and-retargeting-ltv" icon="fa-solid fa-users">
-    Analyze user acquisition performance and retargeting lifetime value.
-  </Card>
   <Card title="Cohort and retention dashboard" href="/docs/cohort-and-retention-dashboard" icon="fa-solid fa-gauge-high">
     Measure user retention and analyze cohort behavior over time.
   </Card>

@@ -18,6 +18,7 @@ On WeChat, do the following:
 
 1. Fill in and verify Tencent key
 2. Choose the conversion type from the list:
+
    * Install
    * Register
    * Purchase
@@ -26,11 +27,11 @@ On WeChat, do the following:
    Please note that WeChat allows only one conversion target per app.
 3. Enter AppsFlyer’s [click attribution URL](#attribution-link-tab)
 
-![wechat-configuration.png](https://files.readme.io/2324f9735242ac12930db514627cc1b5ec8f48ae3e66ae3fcd467e2d5b22432f-360003067997.png)
+![wechat-configuration.png](https://files.readme.io/228ee10ef3dc113ae8af8de0f283b144206db1857f6d1f9169355f294155b8f8-50900431174033.png)
 
 Once you have entered this info, confirm it by clicking the highlighted button. In the next step, you receive the *encrypt \_key* and the *sign\_key*:
 
-![wechat-keys.png](https://files.readme.io/2c4602b8dba26bc399228133dfa2bdaa70fec0af5b4d38b4e4b6881f11b52f3e-360003156558.png)
+![wechat-keys.png](https://files.readme.io/cd7a2406ae9981eaabb4089813c9a1b847f0e6f750b9c0c0a0ac5e726dfe44be-50900431177361.png)
 
 Copy the keys and use them when you configure the campaign on AppsFlyer.
 
@@ -44,31 +45,19 @@ If you’re not allowed to create a conversion target, you can see on WeChat a t
 
 ## Setting up wechat on AppsFlyer
 
-The setup is done from the **Active Integrations** page, but to find new partners you must first go to the [marketplace](/docs/partner-integrations).
+**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 
-> 📘 **Note**
->
-> Before setting up an integration, make sure you [contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
+**To set up a new integration:**
 
-
-**To activate the integration:**
-
-1. In AppsFlyer, from the side menu, select**Collaborate**> **Partner Marketplace**.
-2. Search for the partner and select it.
-3. Click **Set up integration**. You’re directed to the integration setup page.
-4. In the **Integration** tab, turn on **Activate partner**.  
-   **Note:** The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner.
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+2. Select the relevant app.
+3. Search for the partner and select **Integrate**.
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   **Important note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below.
 
 WeChat's configuration window includes 4 tabs: Integration, Attribution link, Data enrichment and Permissions. Click on the items below to read about the tabs setup.
-
-For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
-
-> 📘 **Tip**
->
-> * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
-> * All the rest of the steps are either descriptive or **optional**
-
 
 ## Integration tab
 
@@ -83,7 +72,6 @@ For more details about partner activation please click [here](/docs/partner-acti
 >
 > As an ALL-Installs network, Wechat prefers to receive postbacks for all new installs of your app from ANY source, including organic. It is recommended to select **Events attributed to any partner** to send all install postbacks to WeChat.
 
-
 ### General settings
 
 **Partner ID**
@@ -96,13 +84,13 @@ Wechat connects with AppsFlyer via three unique parameters:
 
 If you don't already have the Sign ID, WeChat App ID and Encrypt Key you must obtain it from WeChat to continue with the integration.
 
-![wechat-integration-general-settings.png](https://files.readme.io/dd42aa487d65300a222f7d3ae3258a6a08a9de7849e3122dd14562f54d444523-360002069485.png)
+![wechat-integration-general-settings.png](https://files.readme.io/f1e0675a26116b628629b07616a7b9b86e8413ee36d7504f415207cb1590cb82-50900431178001.png)
 
 ### Default postbacks
 
 AppsFlyer can send automatic postbacks to WeChat following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
-![wechat-default-postbacks.png](https://files.readme.io/6828f26f84b6a83a9e8ca89637f0b2e2495980553664889b2fa39d994b04a5e9-360002069505.png)
+![wechat-default-postbacks.png](https://files.readme.io/1a2703b97a71bf82bcc77f5393459bc94b5443b83a4c4965d2624eda0e9f166f-50900402778129.png)
 
 Select **Only events** **attributed to this partner** for events coming only from users attributed to Wechat.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to WeChat.
@@ -111,7 +99,7 @@ Select **Events attributed to any partner or organic** to have your entire user 
 
 In this section you can map your AppsFlyer events with WeChat via postbacks.
 
-![wechat_in_app_event_postbacks.png](https://files.readme.io/6507e3ab34a6ae7953c876315847c8e60a14b7dde530e02f8e35577e4f4b2f93-360002683537.png)
+![wechat_in_app_event_postbacks.png](https://files.readme.io/cd6234df4809b27044e361ad8835d4ae92100c491e0aa7c8f003336cdf2ad49d-50900431180561.png)
 
 1. Enter the Encrypt Key again.
 2. Enter the Sign ID
@@ -123,15 +111,11 @@ In this section you can map your AppsFlyer events with WeChat via postbacks.
 6. Click **Add Event** to add an SDK Event to the list
 7. Complete the following parameters:
 
-
-
 | Parameter Name | Description |
 | --- | --- |
 | **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
 | **Partner Event Identifier** | The unique name or ID of each event as defined on WeChat's side.  <br />Obtain the corresponding Event ID from Wechat and set in the text field. |
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
-
-
 
 ## Attribution link tab
 
@@ -156,9 +140,9 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/bfbd4543d46c65999b8930497775c89e26e1c36d82a74cf822003d1d4d4ed90b-360002968938.png)
+![attribution-link-parameters.png](https://files.readme.io/28112ce5f9706ffc07d69b233f2b6b4756fda36cb4e8438ab6c9cd03e3a39c59-50900431181841.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about **[AppsFlyer's Attribution Link Structure and Parameters](/docs/about-link-structure-and-parameters).**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
 
 ### Click-through attribution
 
@@ -168,7 +152,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the [click lookback window here](/docs/set-up-lookback-windows).
 
-[![](https://support.appsflyer.com/hc/article_attachments/360002069525)](https://support.appsflyer.com/hc/article_attachments/360002069525)
+[![](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)](https://support.appsflyer.com/hc/article_attachments/50900402782737)
 
 ### Click attribution link
 

@@ -8,23 +8,17 @@ excerpt: "Learn how to configure Tencent AMS campaigns in AppsFlyer, including i
 
 ## Setting up Tencent AMS
 
-The setup is done from the **Active Integrations** page, but to find new partners you must first go to the [marketplace](/docs/partner-integrations).
+**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 
-> 📘 **Note**
->
-> Before setting up an integration, make sure you [contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
+**To set up a new integration:**
 
-
-**To activate the integration:**
-
-1. In AppsFlyer, from the side menu, select**Collaborate**> **Partner Marketplace**.
-2. Search for the partner and select it.
-3. Click **Set up integration**. You’re directed to the integration setup page.
-4. In the **Integration** tab, turn on **Activate partner**.  
-   **Note:** The toggle must stay on [(activated)](/docs/partner-activation-deactivation) for as long as you work with the partner.
-5. Complete the configuration using the relevant tabs, as described below.
-
-Learn more about [partner configuration window header.](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page)
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+2. Select the relevant app.
+3. Search for the partner and select **Integrate**.
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
 ### Integration tab
 
@@ -44,7 +38,6 @@ The Integration tab is divided into different sections as described below. To in
 > * If you're not sure how to obtain or refresh the token, reach out to your Tencent AMS account manager for guidance.
 >
 > **Agency-managed traffic:** If your traffic is promoted by an agency, **the agency must also fill in and maintain the token on their side**.
-
 
 #### Enable View-Through attribution
 
@@ -74,7 +67,6 @@ In this section, you can configure in-app event postbacks that are sent to Tence
 | **Partner event identifier** | The unique name or ID of each event as defined on the partner's side. Select the most suitable pre-defined event for your SDK event. |
 | **Sending option** | Select the sending option for the event:  <br />**This partner only** for events coming **only** from users attributed to Tencent AMS.  <br />**All sources, including organic** to have your entire user base available to be reported to the partner. |
 | **Send event data** | * **No values & no revenue:** sends only the event itself without the event value.<br />* **Values & no revenue:** sends all the parameters excluding the revenue value.<br />* **Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event). |
-
 
 5. Click **Save Integration**.
 

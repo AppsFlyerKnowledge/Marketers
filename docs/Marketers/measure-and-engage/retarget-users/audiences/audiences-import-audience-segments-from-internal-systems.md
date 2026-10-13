@@ -31,7 +31,6 @@ Consider the following examples:
 > 2. Connect the audience to the partners with which you want to run campaigns.
 > 3. Set up campaigns with the relevant partners to target these users accordingly.
 
-
 ## Audiences import V2.0
 
 This article describes concepts and procedures related to the new Audiences import feature V2.0 (with options for importing by CSV and API).
@@ -59,7 +58,6 @@ When you import an audience, you designate it as one of two types, which determi
 > * Only an admin can designate a new imported audience as an as-is audience.
 > * When importing an audience with CUID as the identifier, the CUID association must have been received by AppsFlyer on the install (not just on post-install events) for complete association with the relevant devices and successful enrichment with device identifiers (i.e., GAID, IDFA). [Learn more](/docs/customer-user-id-field-cuid#setting-the-cuid)
 
-
 ## Audience import procedures
 
 Import an audience either by uploading a CSV file or using the Import Audience API.
@@ -74,9 +72,15 @@ Prepare a CSV file, with the following specifications:
 * A header row with the name of the identifier in each column (all lowercase)
 * No blank rows
 * Maximum number of rows: 1 million
-* If you prepare the file using Excel, save it as a **CSV (Comma delimited) (*.csv)** file, as shown in the following image: ![CSV.jpg](https://files.readme.io/863505596fd525ff0750f05db70413e9aaee51beb208bd0fbc8ab718ad4e4576-32897281151633.jpg)
+* If you prepare the file using Excel, save it as a **CSV (Comma delimited) (*.csv)** file, as shown in the fol following image:
+
+![CSV.jpg](https://files.readme.io/863505596fd525ff0750f05db70413e9aaee51beb208bd0fbc8ab718ad4e4576-32897281151633.jpg)
 
 #### identifier hash
+
+> 📘 **Note**
+>
+> This CSV format is for importing audience segments. If you're importing user attribute data instead, see [Create better audiences with user attribute data](/docs/audiences-create-better-audiences-with-user-attribute-data), which uses a different CSV format with no header row.
 
 **Columns and identifiers**
 
@@ -104,14 +108,10 @@ Prepare a CSV file, with the following specifications:
   * For iOS audiences: **app\_id** + one of: **idfv** OR **cuid** OR **braze\_id** OR **amplitude\_id**
 * In compliance with Google's enforcement of the [Digital Markets Act (DMA)](/docs/audiences-user-identifier-policy#eu-digital-markets-act) on March 6, 2024, when importing an “as is” audience, two additional AppsFlyer consent columns will need to be added. These are:
 
-
-
 | AppsFlyer consent columns | Google field | Values | Field explained |
 | --- | --- | --- | --- |
 | ad\_personalization\_enabled | ad\_personalization | true/false | Did the user give Google consent to use their data for personalized advertising? |
 | ad\_user\_data\_enabled | ad\_user\_data | true/false | Did the user give consent to send their user data to Google? |
-
-
 
 If the consent fields are not filled in with values, they will be sent to Google as “Unspecified”, and will not likely be included in the audience on Google's side. Filling in these fields ensures maximum inclusion of users from the [European Economic Area (EEA)](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)) in your Google audiences.
 
@@ -165,8 +165,6 @@ Your audience has been updated using the CSV file. Note, however, that the revis
 
 ### Error messages
 
-
-
 | Message | Cause | What to Do |
 | --- | --- | --- |
 | There's a problem with the device list | One or multiple issues with the device list | Please check that the CSV file:<br /><br />* is populated with devices and GAID/IDFA identifiers in the correct format<br />* contains the required identifiers<br />* contains a header row, with the headers in the correct format<br />* has no blank rows<br />* app\_id is populated with the correct app you use for Audiences |
@@ -174,8 +172,6 @@ Your audience has been updated using the CSV file. Note, however, that the revis
 | We couldn’t understand one or more of your device IDs. | * The CSV format is incorrect<br />* The file you uploaded is not a CSV file<br />* The CSV file was edited and saved by a program other than a valid CSV editor (i.e. Microsoft Excel)<br />* One or more device IDs is in the wrong format | * Make sure that the CSV is in the required format.<br />* Make sure that all device IDs are in the correct format.<br />* If you used Excel, save the file as a CSV file described above. |
 | Cannot use import v1 while applying user account policy on audience. | You have uploaded a CSV file for a [standard audience](/docs/audiences-import-audience-segments-from-internal-systems#imported-audience-types) using the V1.0 import structure. Standard audiences must be uploaded using a CSV in the V2.0 structure. | Edit the CSV file you are uploading to use the format, columns, and identifiers described above. |
 | We just had a temporary connection problem and couldn’t upload your file. You can try again now. | Possible network error | Try uploading the CSV file again. |
-
-
 
 ### Use the Import Audience API
 
@@ -225,8 +221,6 @@ The Import Audience API is used to either add or remove devices from an audience
 
 ### Response codes
 
-
-
 | Code | Message | Description |
 | --- | --- | --- |
 | 200 | The request was successful | Audience successfully imported |
@@ -240,8 +234,6 @@ The Import Audience API is used to either add or remove devices from an audience
 | 403 | Forbidden | Unauthorized request: Incorrect or missing import key |
 | 429 | Too many requests | Requests are limited to 350 per minute |
 | 500 | Could not parse request | Invalid request body format (not the expected JSON structure or not a JSON)<br /><br />See the sample request above |
-
-
 
 **API limitations**
 

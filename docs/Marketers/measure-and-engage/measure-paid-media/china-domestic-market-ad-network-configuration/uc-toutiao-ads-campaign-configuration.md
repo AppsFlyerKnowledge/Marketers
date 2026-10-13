@@ -6,31 +6,19 @@ excerpt: "Learn how to configure and activate the UC Toutiao Ads integration in 
 
 ## Setting up UC Toutiao
 
-Note
+**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 
-> 📘 **Note**
->
-> Before setting up the integration, make sure to [contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
+**To set up a new integration:**
 
-
-**To activate the integration:**
-
-1. In AppsFlyer, from the side menu, select**Collaborate**> **Partner Marketplace**.
-2. Search for the partner and select it.
-3. Click **Set up integration**. You’re directed to the integration setup page.
-4. In the **Integration** tab, turn on **Activate partner**.  
-   **Note:** The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner.
-5. Complete the configuration using the relevant tabs, as described below.
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+2. Select the relevant app.
+3. Search for the partner and select **Integrate**.
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
 UC Toutiao's configuration window includes 2 active tabs: Integration and Attribution link.
-
-For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
-
-> 📘 **Tip**
->
-> * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
-> * All the rest of the steps are either descriptive or **optional**
-
 
 ## Integration tab
 
@@ -49,7 +37,7 @@ By default, UC Toutiao receives postbacks only for new install events attributed
 
 In this section, you can map your AppsFlyer events with UC Toutiao via postbacks.
 
-[![](https://support.appsflyer.com/hc/article_attachments/21594057898769)](https://support.appsflyer.com/hc/article_attachments/21594057898769)
+[![](https://files.readme.io/ae230875cb4d08e7b58249a9bf61a1fcabe2893b1a338c01bdc57b2043deda55-21594057898769.png)](https://support.appsflyer.com/hc/article_attachments/21594057898769)
 
 1. Set the UC Toutiao network ID again here
 2. Toggle In-App Event Postbacks to ON
@@ -59,15 +47,11 @@ In this section, you can map your AppsFlyer events with UC Toutiao via postbacks
 4. Click **Add Event** to add an SDK Event to the list
 5. Complete the following parameters:
 
-
-
 | Parameter Name | Description |
 | --- | --- |
 | **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
 | **Partner Event Identifier** | The unique name or ID of each event as defined on UC Toutiao's side.  <br />Obtain the corresponding Event ID from UC Toutiao and set in the text field. |
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
-
-
 
 ## Attribution link tab
 

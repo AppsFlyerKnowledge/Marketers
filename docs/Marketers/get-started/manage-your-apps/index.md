@@ -9,6 +9,8 @@ Define your apps in AppsFlyer and manage app settings
   <Card title="Adding an app to AppsFlyer" href="/docs/adding-an-app-to-appsflyer" icon="fa-solid fa-mobile-screen-button">
     Learn how to add and register a new app in your AppsFlyer account.
   </Card>
+  <Card title="Apply settings to multiple apps at once" href="/docs/apply-settings-to-multiple-apps-at-once" icon="fa-solid fa-sliders">
+  </Card>
   <Card title="App Settings" href="/docs/app-settings" icon="fa-solid fa-mobile-screen-button">
     Configure and manage your general app settings and preferences.
   </Card>

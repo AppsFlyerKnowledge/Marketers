@@ -30,10 +30,9 @@ To set up cross-platform attribution using cross-platform impression URLs, confi
 >
 > Make sure to enable the partner integration by performing the steps below for all targeted apps that you selected in the OneLink template (see the [section above](#step-1-create-or-edit-a%C2%A0onelink-template%C2%A0for-crossplatform-attribution)). If the integration is disabled for one of the targeted apps,  cross-platform attribution will not occur.
 
-
 ### Step 1: Select the targeted app of the partner integration
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations**
+1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations**
 2. Select the integrated partner.
 3. In the **Integration** tab, from the **App** drop-down box, select the targeted app.
 
@@ -48,10 +47,10 @@ For links to be used by integrated partners, enable view-through attribution.
 
 To Create an [attribution link](/docs/set-up-an-integrated-partner#attribution-link-tab) (cross-platform impression URL) for integrated networks
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations** and select the integrated partner.
+1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations** and select the integrated partner.
 2. In the **Attribution link** tab, when creating a [OneLink link](/docs/set-up-an-integrated-partner#attribution-link-tab), select Use OneLink.
 3. In the **Select OneLink template** list, select the [OneLink template you created for cross-platform](#step-1-create-or-edit-a%C2%A0onelink-template%C2%A0for-crossplatform-attribution) attribution.
-4. Scroll down to **View-through attribution**.[![](https://support.appsflyer.com/hc/article_attachments/12602245845649)](https://support.appsflyer.com/hc/article_attachments/12602245845649)
+4. Scroll down to **View-through attribution**.[![](https://files.readme.io/0db03066a7f7c14c68d36a019d9791dfea44e6df3e8f5bdb6f5e4b71d5e78a08-12602245845649.png)](https://support.appsflyer.com/hc/article_attachments/12602245845649)
 5. Turn on **Cross-platform attribution**. This adds the `af_xplatform=true` parameter to the impression attribution link and gives the link cross-platform attribution capabilities. Without this parameter, the URL functions as a regular impression URL that can't attribute multiple installs to the same impression.
 6. Set the **Cross-platform view-through attribution lookback window**. This adds the `af_xplatform_vt_lookback` parameter to the impression attribution link and indicates the number of hours (up to 72) following the impression during which the app install can be attributed to the impression.
 7. Add any additional attribution parameters as needed. Use naming conventions that identify your cross-platform app campaign. [Learn more](/docs/about-link-structure-and-parameters) about the parameters you can add for additional data and metrics. Sample link:
@@ -64,7 +63,6 @@ To Create an [attribution link](/docs/set-up-an-integrated-partner#attribution-
 > 📘 **Important!**
 >
 > For owned media and non-integrated partners add parameters as needed.  [Learn more](/docs/about-link-structure-and-parameters) about the parameters you can add for additional data and metrics.
-
 
 ### Advanced: Equal priority setting (optional)
 
@@ -79,10 +77,7 @@ You can optionally assign **equal priority** to clicks and impressions in cross-
 >
 > Enabling equal priority may cause AppsFlyer to prioritize its own attribution over other sources. Use this setting with caution and only if it aligns with your overall attribution strategy.
 
-
 ## Traits and limitations
-
-
 
 | Trait | Remarks |
 | --- | --- |
@@ -96,13 +91,9 @@ You can optionally assign **equal priority** to clicks and impressions in cross-
 | Cross-platform attribution links in mobile devices | When a cross-platform attribution link is viewed on a mobile device, attribution is determined by the standard mobile probabilistic modeling logic, not by the cross-platform attribution flow designed for [CTV](/docs/ctv-pc-and-console-platform-attribution-concepts#tv-screens), PC, and consoles. Consequently, mobile impressions will not be eligible for the [equal priority](#step-3-enable-equal-priority-for-crossplatform-impressions), [extended lookback window](#attribution-window), or [household attribution](#household-attribution) that is available for genuine cross-platform impressions. |
 | Agency permissions | Agencies cannot toggle “Cross-platform equal attribution priority” on their end. This configuration is directly copied from the advertiser’s settings for the specific ad network. |
 
-
-
 ## Discrepancies
 
 AppsFlyer and tvScientific differ in their attribution models. This may cause discrepancies between the tvScientific and AppsFlyer dashboards. See the reasons for discrepancies in the table below:
-
-
 
 | Cause | tvScientific | AppsFlyer |
 | --- | --- | --- |
@@ -110,8 +101,6 @@ AppsFlyer and tvScientific differ in their attribution models. This may cause di
 | Lookback window | Up to 30 days | Up to 72 hours |
 | Retargeting | Attribution of both new users (installs) and returning users (re-engagements) | Attribution of new users (installs) only |
 | Cost assignment | Cost is assigned to the impression regardless of the operating system | Cost is assigned to the impression on separate systems for iOS and Android |
-
-
 
 ## FAQ
 

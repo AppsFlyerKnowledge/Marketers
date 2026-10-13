@@ -108,7 +108,7 @@ Certain steps may be mandatory to meet your business goals.
 
 | Step | Owner | Additional resources |
 | --- | --- | --- |
-| Optimize user acquisition campaigns by recording revenue | Product manager/  <br />Developers | * [In-app purchase validations](/docs/legacy-receipt-validation-for-in-app-purchases)<br />* [Ad monetization](/docs/roi360-guide-ad-revenue-attribution)<br />* [User subscriptions](/docs/legacy-subscription-attribution-overview) |
+| Optimize user acquisition campaigns by recording revenue | Product manager/  <br />Developers | * [In-app purchase validations](/docs/legacy-receipt-validation-for-in-app-purchases)<br />* [Ad monetization](/docs/roi360-guide-ad-revenue-attribution)<br />* User subscriptions |
 | Learn about methods to aggregate and view marketing cost data | Product manager | [ROI360—cost aggregation overview](/docs/roi360-cost-aggregation-overview) |
 | Set up other [3rd-party platforms](/docs/3rd-party-platforms) your app works with | Product manager/  <br />Developers | * [mParticle](/docs/mparticle-integration-with-appsflyer)<br />* [Segment](/docs/segment-integration)<br />* [Mixpanel](/docs/mixpanel-integration-with-appsflyer)<br />* [Amplitude](/docs/amplitude-integration-with-appsflyer)<br />* [Adobe Analytics](/docs/adobe-analytics-integration-with-appsflyer) (Omniture)<br />* [Braze](/docs/braze-formerly-appboy-integration-with-appsflyer) |
 | Check out these AppsFlyer premium features that can save you time and money. | Product manager | * [Audiences](/docs/audiences-guide)<br />* [Pivot table](/docs/pivot-table-user-metrics)<br />* [Data Locker](/docs/data-locker-for-marketers) |
@@ -128,7 +128,7 @@ Recommended for all AppsFlyer users:
 
 | Step | Time |
 | --- | --- |
-| Get to know the [AppsFlyer overview dashboard](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv) | 15 mins |
+| Get to know the AppsFlyer overview dashboard | 15 mins |
 | Explore the difference between [Lifetime Value (LTV) data and activity](/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports) data in AppsFlyer (solving the mystery of why the in-app events summary differs between the Overview and Activity dashboards) | 15 mins |
 | Understand the AppsFlyer [attribution model](/docs/appsflyer-attribution-model) | 30 mins |
 | Learn about [aggregate reporting tools and analytics](/docs/aggregated-and-analytics-reporting-overview) | 30 mins |

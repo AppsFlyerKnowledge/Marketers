@@ -21,11 +21,7 @@ The solution provides:
 
 The information in this article is relevant for advertisers that are integrated with the partners specified in the following table:
 
-
-
 <table><thead><tr><th rowspan="2">Partner</th><th rowspan="2">PID</th><th colspan="2">Preload referrer campaign options <a href="/docs/set-up-appsflyer-preload-referrer-attribution#preload-referrer-options"><span>Learn more</span></a></th></tr><tr><th>Preload</th><th>Click to download</th></tr></thead><tbody><tr><td><a href="#samsung-preload-referrer">Samsung</a></td><td>samsung_int</td><td><span><strong>✓</strong></span></td><td> </td></tr><tr><td>Digital Turbine On Device</td><td>digitalturbine_int</td><td><span><strong>✓</strong></span></td><td>Coming soon</td></tr><tr><td>Aura from Unity</td><td>aura_int</td><td><span><strong>✓</strong></span></td><td>Coming soon</td></tr><tr><td>Appnext</td><td>appnext_int</td><td><span><strong>✓</strong></span></td><td>Coming soon</td></tr><tr><td>Glance<br/> </td><td>glance_int</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr></tbody></table>
-
-
 
 ## Preload referrer options
 
@@ -33,20 +29,16 @@ Referrers can be used to attribute installs by preload or by click-to-download. 
 
 AppsFlyer gives the highest priority to preload attribution. This means that if a user engages with other campaigns before opening the app for the first time, the preload campaign is still awarded the attribution. Other engagements are regarded as assisted installs. **Note**: You can enable equal priority for preload engagements. This gives deterministic clicks the same attribution priority as preload engagements for the entire preload lookback window, so attribution to the preload campaign can be superseded by another ad engagement.
 
-
-
 | Referrer option | Description | UA installs raw data match type |
 | --- | --- | --- |
 | Preload | * The app is preloaded at the factory or is preloaded the first time the device is activated. Alternatively, a wizard prompts users to download the app when the device is first activated.<br />* A preload event, equivalent to a click, is reported to AppsFlyer when the device is turned on for the first time.<br />* Attribution occurs when the user opens the app for the first time.<br />* The preload event has the highest attribution priority (unless equal attribution priority is turned on). | `preload_rfr` |
 | Click to download | * App installation takes place later in the device lifecycle, via push notifications, partner alternative stores, etc.<br />* When the user engages with an ad or with a push message, the app is automatically downloaded and installed on the device without redirecting to an app store.<br />* Attribution is awarded using the AppsFlyer last-click win rules. | `af_referrer` |
 
-
-
 ## View preload attribution data
 
 Preload/click to download engagement campaign performance data is available as follows:
 
-* **Overview dashboard:**Engagements count as clicks in aggregate reports and dashboards. They are aggregated at the preload partner (media source) and campaign levels.
+* **Overview dashboard:** Engagements count as clicks in aggregate reports and dashboards. They are aggregated at the preload partner (media source) and campaign levels.
 * **Raw data:** Engagements are available in the clicks reports available only via Data Locker. They're found in the original URL field and can be identified in the af\_engagement\_type parameter as either preload or click\_to\_download. For installs, see the table in the previous section to see how the match type displays in raw data.
 
 ## Set up preload referrer attribution
@@ -58,10 +50,10 @@ Preload/click to download engagement campaign performance data is available as f
 
 **To set up preload referrer attribution**:
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations**.
+1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations**.
 2. Select the preload partner.
 3. In the **Integration** tab, turn on **Preload attribution**.  
-   [![](https://support.appsflyer.com/hc/article_attachments/15585078780433)](https://support.appsflyer.com/hc/article_attachments/15585078780433)
+   [![](https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png)](https://support.appsflyer.com/hc/article_attachments/15585078780433)
 4. Set the **Preload lookback window** duration. Range: 1-180 days.
 5. [Optional] Turn on **Preload equal attribution priority**.  
    This gives deterministic clicks the same attribution priority as preload attribution, meaning that if a deterministic click is registered between the preload referrer engagement and install, the click gets the attribution under the standard last-touch attribution logic, instead of being superseded by the preload referrer.
@@ -79,8 +71,6 @@ To set up Samsung preload referrer attribution, see the [general instructions fo
 ### Traits and limitations
 
 The traits specific to Samsung preload referrer are as follows:
-
-
 
 | Trait | Remarks |
 | --- | --- |

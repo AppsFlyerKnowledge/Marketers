@@ -23,138 +23,123 @@ To start attributing Google Ads campaigns with AppsFlyer, follow these steps:
 
 <Accordion title="Step 1: Verify ICM prerequisites">
 
-
 Make sure the requirements below are met to support Google PMOD install claims on iOS via AppsFlyer. This is necessary for enabling Google’s On-Device Measurement (ODM). No SDK update is needed for Android.
 
-
-`[`Update AppsFlyer’s iOS SDK](https://dev.appsflyer.com/hc/docs/install-ios-sdk) to v6.17.9 or higher (no additional SDK configuration is required).
-For Google SDK update, one of the following:
-
-Google’s Firebase iOS SDK v11.14.0 or higher. For more information, see `[`the Google documentation](https://github.com/firebase/firebase-ios-sdk/releases). OR
-
-
-Google ODM standalone SDK. For more information, see `[`the Firebase documentation.](https://support.google.com/google-ads/answer/16384720)
-
-``Make sure that `[`IDFV](/docs/appsflyer-knowledge-base-glossary#idfv) is sent to AppsFlyer with every app open or in-App event.
-``Make sure the IP address is sent to AppsFlyer with every app open event. When IP masking is configured for the app, ICM might not work.
+1. [Update AppsFlyer’s iOS SDK](https://dev.appsflyer.com/hc/docs/install-ios-sdk) to **v6.17.9 or higher** (no additional SDK configuration is required).
+2. For Google SDK update, one of the following:
+   * **Google’s Firebase iOS** SDK **v11.14.0 or higher.** For more information, see [the Google documentation](https://github.com/firebase/firebase-ios-sdk/releases). **OR**
+   * **Google ODM standalone** SDK**.** For more information, see [the Firebase documentation.](https://support.google.com/google-ads/answer/16384720)
+3. Make sure that [IDFV](/docs/appsflyer-knowledge-base-glossary#idfv) is sent to AppsFlyer with every app open or in-App event.
+4. Make sure the IP address is sent to AppsFlyer with every app open event. When IP masking is configured for the app, ICM might not work.
 
 </Accordion>
 
 <Accordion title="Step 2: Create the Google Ads Link ID (mandatory)">
 
+Creating a link ID requires **Google administrative access** to the account. Follow the steps below or[the Google documentation](https://support.google.com/google-ads/answer/7365001?hl=en).
 
-Creating a link ID requires Google administrative access to the account. Follow the steps below or`[` ](/docs/google-ads-adwords-integration-setup-for-advertisers#step-1-create-the-google-ads-link-id-mandatory)`[`the Google documentation](https://support.google.com/google-ads/answer/7365001?hl=en).
-
-Log in to your Google Ads admin account.
-From the top menu, click Tools and settings.
-Under the Setup menu, select Data manager and click + Connect Product.
-In the Data sources search bar, type "Third-party app analytics", select it, and click Continue.
-Click Create link ID.
-Select AppsFlyer as your app analytics provider.
-Select the platform, Android or iOS.
-Find your app and select it.
-Click Create link ID.
+1. Log in to your Google Ads admin account.
+2. From the top menu, click **Tools and settings**.
+3. Under the **Setup** menu, select **Data manager** and click **+ Connect Product**.
+4. In the **Data sources** search bar, type "Third-party app analytics", select it, and click **Continue**.
+5. Click **Create link ID**.
+6. Select **AppsFlyer** as your app analytics provider.
+7. Select the platform, Android or iOS.
+8. Find your app and select it.
+9. Click **Create link ID**.
 
 </Accordion>
 
 <Accordion title="Step 3: Set up Google Ads on AppsFlyer (mandatory)">
 
+**(Any member in AppsFlyer's account)**
 
-(Any member in AppsFlyer's account)
+1. In AppsFlyer, from the side menu, select**Collaborate**>**Partner Integrations > Marketplace** tab.
+2. Search for **Google Ads**.
+3. Click I**ntegrate**. You’re directed to the integration setup page.
+4. From the **Integration** tab, turn on **Activate partner**.  
+   **Note:** The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner[.](/docs/partner-activation-deactivation)
+5. Paste the **Link ID** you copied in the previous step.
+6. Decide whether or not to turn on [**Non EU users**](/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users).
 
-In AppsFlyer, from the side menu, select Collaborate &gt; Partner Marketplace.
-Search for Google Ads and select it.
-Click Set up integration. You’re directed to the integration setup page.
-From the Integration tab, turn on Activate partner.`<br/>`Note: The toggle must stay on (`[`activated](/docs/partner-activation-deactivation)) for as long as you work with the partner`[`.](/docs/partner-activation-deactivation)
+   ![non eu usrs.png](https://files.readme.io/f77a449ffaf508b8fe27b4ead44aa511354572dd4ecf82509a2157ca2f08edfa-30759261958673.png)
+7. Turn **Advanced data sharing** ONorOFF**.** When ON Google Ads receives postbacks and events with device-level identifiers for all devices, including devices that have not made their Advertising ID  (IDFA or Google advertising ID)  available.
 
-Paste the Link ID you copied in the previous step.
+   Furthermore, when **Advanced Data Sharing** is ON, AppsFlyer attributes these events. When OFF, only postbacks and events from devices with an IDFA are sent and attributed.
+8. Configuring **Install attribution**:
+   1. Set the **Install click-through lookback window**.  
+      Select the lookback window units (hours or days) and set the slider to the desired value. We recommend setting the lookback window to 30 days to match with Google Ads.
+   2. [Optional] If you run pre-registration campaigns for Android apps, set the **Pre-registration campaign lookback window** (default is 90 days). This slider determines the lookback window for attributing installs to pre-registration campaigns.
+   3. Enable **Install view-through attribution.**
+   4. Select the lookback window units (hours or days) and set the slider to the desired value. We recommend setting the view-through lookback window to 1 day to match with Google Ads.  
+      **Note:** Google doesn't send claims for iOS app impressions. The install view-through attribution toggle and the lookback window slider are no longer relevant for iOS apps.
 
-Decide whether or not to turn on `[`Non EU users](/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users).
-`![non eu usrs.png](https://files.readme.io/f77a449ffaf508b8fe27b4ead44aa511354572dd4ecf82509a2157ca2f08edfa-30759261958673.png)`
+      ![](https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png)
+9. The **Reinstall attribution** toggle is turned on by default for new integrations. Reinstall attribution lets you measure users who reinstall your app during their re-attribution window.
 
+   No separate lookback window configuration is needed, as reinstall attribution uses the values from your install attribution settings. For more information, see [Measure reinstalls](/docs/measure-reinstalls).
 
-Turn Advanced data sharing ON or OFF. When ON Google Ads receives postbacks and events with device-level identifiers for all devices, including devices that have not made their Advertising ID  (IDFA or Google advertising ID)  available.
-Furthermore, when Advanced Data Sharing is ON, AppsFlyer attributes these events. When OFF, only postbacks and events from devices with an IDFA are sent and attributed.
+   CALLSTART::Note::
 
-Configuring Install attribution:
-Set the Install click-through lookback window.`<br/>`Select the lookback window units (hours or days) and set the slider to the desired value. We recommend setting the lookback window to 30 days to match with Google Ads.
-[Optional] If you run pre-registration campaigns for Android apps, set the Pre-registration campaign lookback window (default is 90 days). This slider determines the lookback window for attributing installs to pre-registration campaigns.
-Enable Install view-through attribution.
+   #### Important!
 
+   A reinstall conversion data is **presented as a session\_start** on Google Ads dashboard. In AppsFlyer, it is attributed and seen as a re-attribution.
 
-Select the lookback window units (hours or days) and set the slider to the desired value. We recommend setting the view-through lookback window to 1 day to match with Google Ads.`<br/>`Note: Google doesn't send claims for iOS app impressions. The install view-through attribution toggle and the lookback window slider are no longer relevant for iOS apps.
-`![](https://support.appsflyer.com/hc/article_attachments/30759221879825)`
+   CALLEND::
+10. Configure **Re-engagement attribution**:
+    1. [Enable retargeting in App Settings](/docs/app-settings#reengagement-attribution).
+    2. Enable re-engagement attribution in Google Ads integration settings
+    3. Set the **Re-engagement click-through lookback window**, which is the period of time, starting from an ad click, during which the app must be launched for the click to be recorded as a re-engagement. Select a lookback window in hours or days and set the slider to the desired value.
+    4. Enable **Re-engagement view-through attribution**.  
+       **Note:** Google doesn't send claims for iOS app impressions. The re-engagement view-through attribution toggle and the lookback window slider are no longer relevant for iOS apps.
+    5. Set the **Re-engagement view-through lookback window**, which is the period of time, starting from an ad impression, during which the app must be launched for the impression to be recorded as a re-engagement. Select a lookback window in hours or days and set the slider to the desired value.
+    6. Set the **Re-engagement window**. This is the period when the user's in-app events are attributed to the retargeting media source, following either a click or an impression. You can set the value in days (1-90), hours (up to 23), or even lifetime. The default is 30 days.
 
+       ![](https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png)
+11. If you have a [Google Ads iOS app asset](https://support.google.com/google-ads/answer/2402582?hl=en) (formerly known as app extension):  
+    To get attributions from the ad link, go to the [**Attribution link**](/docs/set-up-an-integrated-partner#attribution-link-tab) tab, create an AppsFlyer single-platform attribution link, and insert it into the Google Ads app asset.  
+    **Note:** Make sure to add a static campaign name (mandatory).
 
-The Reinstall attribution toggle is turned on by default for new integrations. Reinstall attribution lets you measure users who reinstall your app during their re-attribution window. 
-No separate lookback window configuration is needed, as reinstall attribution uses the values from your install attribution settings. For more information, see `[`Measure reinstalls](/docs/measure-reinstalls).`<br/>` 
+    ![](https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png)
+12. Go to the **Cost** tab.
+13. Turn on **Get cost, clicks and impressions data**.
+14. Click the **Connect Google Ads** button, and log into your Google account to get all your Google Ads campaign costs on AppsFlyer. [More details here](/docs/google-ads-adwords-cost-and-ad-revenue).
+15. Click **Save**.
 
-> 📘 **Note**
+> 📘 **Stop!**
 >
-> Important!
-> A reinstall conversion data is presented as a session_start on Google Ads dashboard. In AppsFlyer, it is attributed and seen as a re-attribution.
-
-Configure Re-engagement attribution:
-
-`[`Enable retargeting in App Settings](/docs/app-settings#reengagement-attribution).
-Enable re-engagement attribution in Google Ads integration settings
-Set the Re-engagement click-through lookback window, which is the period of time, starting from an ad click, during which the app must be launched for the click to be recorded as a re-engagement. Select a lookback window in hours or days and set the slider to the desired value.
-Enable Re-engagement view-through attribution.`<br/>`Note: Google doesn't send claims for iOS app impressions. The re-engagement view-through attribution toggle and the lookback window slider are no longer relevant for iOS apps.
-Set the Re-engagement view-through lookback window, which is the period of time, starting from an ad impression, during which the app must be launched for the impression to be recorded as a re-engagement. Select a lookback window in hours or days and set the slider to the desired value.
-
-Set the Re-engagement window. This is the period when the user's in-app events are attributed to the retargeting media source, following either a click or an impression. You can set the value in days (1-90), hours (up to 23), or even lifetime. The default is 30 days.
-`![](https://support.appsflyer.com/hc/article_attachments/30759261966225)`
-
-
-If you have a `[`Google Ads iOS app asset](https://support.google.com/google-ads/answer/2402582?hl=en) (formerly known as app extension):`<br/>`To get attributions from the ad link, go to the `[`Attribution link](/docs/set-up-an-integrated-partner#attribution-link-tab) tab, create an AppsFlyer single-platform attribution link, and insert it into the Google Ads app asset.`<br/>`Note: Make sure to add a static campaign name (mandatory).
-`![](https://support.appsflyer.com/hc/article_attachments/30759221884561)`
-
-Go to the Cost tab.
-Turn on Get cost, clicks and impressions data.
-Click the Connect Google Ads button, and log into your Google account to get all your Google Ads campaign costs on AppsFlyer. `[`More details here](/docs/google-ads-adwords-cost-and-ad-revenue).
-Click Save.
-
-> 📘 **Note**
->
-> Stop!
-> 
-> To view AppsFlyer attributions for installs and re-engagements in Google Ads, make sure to import the following AppsFlyer events:
-> "First open" (for installs)
-> "Session start" (for re-engagements)
-> 
-> 
-> You MUST go through `[`step 4](#h_01HACTC1H5GV04KFM29NCCK8J2) to see Google Ads installs in AppsFlyer. If you also need to map your in-app events to Google Ads, go through `[`step 5](#h_01HACTC1H50DDS3WCZ9DCHKN0P) first.
-> 
+> * To view AppsFlyer attributions for installs and re-engagements in Google Ads, make sure to import the following AppsFlyer events:
+>   * "First open" (for installs)
+>   * "Session start" (for re-engagements)
+> * You MUST go through [step 4](#h_01HACTC1H5GV04KFM29NCCK8J2) to see Google Ads installs in AppsFlyer. If you also need to map your in-app events to Google Ads, go through [step 5](#h_01HACTC1H50DDS3WCZ9DCHKN0P) first.
 
 </Accordion>
 
 <Accordion title="Step 4: Import your app conversions (mandatory)">
 
-
-
-> 📘 **Note**
+> 📘 **Important!**
 >
-> Important!
-> For Google Ads to register your new conversions, you must launch your app and perform your mapped in-app events at least once. To test iOS apps, you must collect IDFA to see the event. It may take up to 6 hours until the event conversions are added to the queue. Once they are added you can import them, and the new conversions change status from “No recent conversion” to “recording conversion".
+> For Google Ads to register your new conversions, you must**launch your app and perform your mapped in-app events** at least once. To test iOS apps, you must collect IDFA to see the event. It may take up to 6 hours until the event conversions are added to the queue. Once they are added you can import them, and the new conversions change status from “No recent conversion” to “recording conversion".
 
-This step requires Google administrative access to the account to create a link ID.
-Follow the steps described in the `[`Google Ads Help documentation](https://support.google.com/google-ads/answer/7382633?sjid=11699141105296914680-EU). Take note of the following:
+This step requires **Google administrative access** to the account to create a link ID.
 
-Set the first_open event as a conversion event for all your apps (required for install measurement).
-Set the session_start event as a conversion event if you plan to measure re-engagements with Google.
+Follow the steps described in the [Google Ads Help documentation](https://support.google.com/google-ads/answer/7382633?sjid=11699141105296914680-EU). Take note of the following:
 
-Repeat this process for each in-app event you want to measure with Google.
+* Set the **first\_open** event as a conversion event for all your apps (required for install measurement).
+* Set the **session\_start** event as a conversion event if you plan to measure re-engagements with Google.
+* Repeat this process for each in-app event you want to measure with Google.
 
-> 📘 **Note**
->
-> Note
-> If the Partner Event identifier in Google Ads has been changed or is labeled as CUSTOM, while the corresponding event name has been modified in AppsFlyer, you will need to re-import the data.
+  CALLSTART::Note::
 
-After finishing the process, you can see your third-party conversion events on the Conversions &gt; Summary page. If an event doesn't appear in the list, or it has been removed from the Google Ads conversion list
-Click View all conversion actions. The Status filter appears.
-Click Status and select All to see all events, including disabled and removed events.
+  #### Note
 
-Make sure your "include in conversions" setup is aligned with your campaign goals in Google Ads. For more information, consult with your Google representative or refer to the `[`Google documentation on conversion settings](https://support.google.com/google-ads/answer/4677036?hl=en&amp;co=ADWORDS.IsAWNCustomer=false).
+  If the Partner Event identifier in Google Ads has been changed or is labeled as CUSTOM, while the corresponding event name has been modified in AppsFlyer, you will need to re-import the data.
+
+  CALLEND::
+* After finishing the process, you can see your third-party conversion events on the **Conversions** > **Summary** page. If an event doesn't appear in the list, or it has been removed from the Google Ads conversion list
+  1. Click **View all conversion actions**. The **Status** filter appears.
+  2. Click **Status** and select **All** to see all events, including disabled and removed events.
+* Make sure your "include in conversions" setup is aligned with your campaign goals in Google Ads. For more information, consult with your Google representative or refer to the [Google documentation on conversion settings](https://support.google.com/google-ads/answer/4677036?hl=en&co=ADWORDS.IsAWNCustomer=false).
 
 Congratulations! You're now measuring Google Ads mobile campaigns with AppsFlyer!
 
@@ -162,26 +147,25 @@ Congratulations! You're now measuring Google Ads mobile campaigns with AppsFlyer
 
 <Accordion title="Step 5: Map your in-app events (recommended)">
 
+**(Any member attached to the AppsFlyer's account)**
 
-(Any member attached to the AppsFlyer's account)
-`![In-app_event_postbacks_en-us.png](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)`
+![In-app_event_postbacks_en-us.png](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)
 
-Go to the Integration tab and scroll down to the In-app event postbacks section.
+1. Go to the **Integration** tab and scroll down to the **In-app event postbacks** section.
 
-> 📘 **Note**
->
-> Note
-> When enabling the Google Ads in-app events mapping for an app for the first time:
-> 
-> The af_app_opened event is automatically defined and mapped to session_start (if not, add it manually).
-> Under for users from, you must select All media sources, including organic for each event to enable Google Ads to receive these events. After the integration was set successfully, you are able to change this selection for any event.
-> 
+   CALLSTART::Note::
 
-Turn on In-app event postbacks.
-Click Add event to add an SDK or server-to-server event to the list.
+   #### Note
 
-Complete the following parameters:
+   When enabling the Google Ads in-app events mapping for an app **for the first time:**
 
+   * The **af\_app\_opened** event is automatically defined and mapped to **session\_start** (if not, add it manually).
+   * Under **for users from**, you must select **All media sources, including organic** for each event to enable Google Ads to receive these events. After the integration was set successfully, you are able to change this selection for any event.CALLEND::
+2. Turn on **In-app event postbacks**.
+3. Click **Add event** to add an SDK or server-to-server event to the list.
+4. Complete the following parameters:
+
+   
 
 | Parameter Name | Description |
 | --- | --- |
@@ -190,11 +174,11 @@ Complete the following parameters:
 | **for users from** | Select the sending option for the event:<br /><br />* **This partner only**: Send postbacks only when this event is attributed to Google Ads.<br />* **All media sources, including organic**: Send postbacks for events attributed to any partner and organic events. |
 | **including** | * **No data (default)**: Send only the event itself without the event value.<br />* **Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).<br />* **Values without revenue**: Send all the parameters **excluding** the revenue value. |
 
-Click Save integration.
-After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner.
-From the top-left corner, under the partner name, click the app name to open the list of apps.
-Select a different app from the drop-down list.
-Repeat the integration steps for the selected app.
+5. Click **Save integration**.
+6. After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner.
+   1. From the top-left corner, under the partner name, click the app name to open the list of apps.
+   2. Select a different app from the drop-down list.
+   3. Repeat the integration steps for the selected app.
 
 </Accordion>
 
@@ -285,12 +269,7 @@ The following table describes the parameter mapping between Google Ads and AppsF
 
 Google Ads doesn't send the `Channel(af_channel)` parameter. AppsFlyer determines how to populate this parameter for campaign types received from Google Ads, according to the following rules:
 
-| Campaign type **AND** Network type logic: | | `Channel` parameter | Example |
-| --- | --- | --- | --- |
-| campaign\_type | network\_type |
-| `ACI`, `ACE`, `ACPRE`, `Shopping`, or `Hotel` | All network types | `campaign_type_network_type` | channel = `ACI_Search` |
-| **Not:**  `ACI`, `ACE`, `ACPRE`, `Shopping`, or `Hotel` | `Display` | `network_subtype` | channel = `mGDN` |
-| **Not:**  `ACI`, `ACE`, `ACPRE`, `Shopping`, or `Hotel` | **Not:**  `Display` | `network_type` | channel = `Search` |
+<table><thead><tr><th colspan="2">Campaign type <strong>AND</strong> Network type logic:</th><th rowspan="2"><kbd>Channel</kbd> parameter</th><th rowspan="2">Example</th></tr><tr><th>campaign_type</th><th>network_type</th></tr></thead><tbody><tr><td><kbd>ACI</kbd>, <kbd>ACE</kbd>, <kbd>ACPRE</kbd>, <kbd>Shopping</kbd>, or <kbd>Hotel</kbd></td><td>All network types</td><td><kbd>campaign_type_network_type</kbd></td><td>channel = <kbd>ACI_Search</kbd></td></tr><tr><td><p><strong>Not:</strong></p><p><kbd>ACI</kbd>, <kbd>ACE</kbd>, <kbd>ACPRE</kbd>, <kbd>Shopping</kbd>, or <kbd>Hotel</kbd></p></td><td><kbd>Display</kbd></td><td><kbd>network_subtype</kbd></td><td>channel = <kbd>mGDN</kbd></td></tr><tr><td><p><strong>Not:</strong></p><p><kbd>ACI</kbd>, <kbd>ACE</kbd>, <kbd>ACPRE</kbd>, <kbd>Shopping</kbd>, or <kbd>Hotel</kbd></p></td><td><p><strong>Not:</strong></p><p><kbd>Display</kbd></p></td><td><kbd>network_type</kbd></td><td>channel = <kbd>Search</kbd></td></tr></tbody></table>
 
 For more information on what ad types are available in Google's response, see the [Google request and response specifications](https://developers.google.com/app-conversion-tracking/api/request-response-specs).
 

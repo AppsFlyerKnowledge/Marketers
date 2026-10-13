@@ -15,7 +15,7 @@ excerpt: "Learn how integrated partners can use the AppsFlyer dashboard and repo
 
 ## Overview dashboard
 
-Campaign performance metrics and charts are available in the [Overview dashboard](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv). This dashboard contains different view types for UA and retargeting campaigns.
+Campaign performance metrics and charts are available in the Overview dashboard. This dashboard contains different view types for UA and retargeting campaigns.
 
 ## Report access
 

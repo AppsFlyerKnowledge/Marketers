@@ -8,7 +8,6 @@ excerpt: "Learn how to set up Google Ads Web campaigns to promote your PC and co
 >
 > This article focuses on web campaigns that promote PC or Console apps. If you want to create web campaigns that promote mobile apps, see [Google Ads (AdWords) - Create web-based campaigns](/docs/google-ads-adwords-create-web-based-campaigns).
 
-
 ## Overview
 
 This article contains information and steps on how to set up and use Google Ads Web for PC and console apps with AppsFlyer. This includes:
@@ -30,9 +29,9 @@ Before activating the Google Ads Web integration, make sure you have:
 
 **To activate the partner integration:**
 
-1. In AppsFlyer, from the side menu, go to **Collaborate** > **Partner Marketplace**.
-2. Search for **Google Ads Web** and select it.
-3. Click **Set up integration**. You’re directed to the **Active Integrations** setup page.
+1. In AppsFlyer, from the side menu, go to **Collaborate** > **Partner Integrations > Marketplace** tab.
+2. Search for **Google Ads Web** and select it or click **Integrate**.
+3. You’re directed to the setup page.
 4. In the **Integration** tab, turn on **Activate partner**.  
    **Note:** The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner.
 5. Complete the configuration using the relevant tabs, as described in the next section.
@@ -56,7 +55,6 @@ To configure the integration, you must first turn on the **Activate partner** to
 > 📘 **Note**
 >
 > The **Missing token** error message will stop appearing once you’ll sign in with Google and allow AppsFlyer to fetch the token in the step below. If the error persists after you sign in, [verify that your token has the required permissions](/docs/google-ads-adwords-create-web-based-campaigns#access-token-permissions).
-
 
 1. **First open conversion ID**: Enter the ID of the `First open` conversion action you set in Google Ads. To find the ID:
    1. Go to the Google Ads platform and open the **Details tab** of the **First open** conversion action page.
@@ -103,13 +101,12 @@ Configure mapping of in-app event postbacks sent to Google Ads Web. These events
 
 | Parameter name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br /><br />* Click **Add item**, enter the event name, and click ![check.png](https://support.appsflyer.com/hc/article_attachments/21884077142033). |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br /><br />* Click **Add item**, enter the event name, and click ![check.png](https://files.readme.io/e35a3abe980b27d52189e5d75abac298090f85030adf7bbb56590efcee82f172-21884077142033.png). |
 | **mapped to partner event** | The Conversion Action ID of each event, as is defined on the partner's side.<br /><br />1. In Google Ads **Conversion Goals** page, click the conversion action you created.<br />2. In the Conversion Action **Details** page, copy the **Conversion Action ID** from the URL parameter `ctId=`.<br />3. Go back to AppsFlyer and paste it. For example if `ctid=123456789`, paste `123456789`. |
 | **for users from** | **This partner only:** In-app event postbacks are sent only for events attributed to this partner—meaning, the user who performed it came from this partner. |
 | **including** | **Values and revenue:** All event parameters, including the revenue value (if exists in the event), are sent in the postback. |
 
-
-3. [Optional] Click the **Add condition**![conditional-iae-postbacks-icon.png](https://support.appsflyer.com/hc/article_attachments/21884084481041) icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
+3. [Optional] Click the **Add condition**![conditional-iae-postbacks-icon.png](https://files.readme.io/80bb94ed7b843ce7a543390d831ddb09b161236f8aede0b053a32fc676524e5f-21884084481041.png) icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
 4. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).
 5. Click **Save integration**.
 6. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
@@ -121,18 +118,14 @@ Configure mapping of in-app event postbacks sent to Google Ads Web. These events
 
 Generating an attribution link in the AppsFlyer UI isn't currently available. However, you can either use a cross-platform landing page with SmartScript or create a direct attribution link for your app (see table below).
 
-
-
 | Option | Actions | Who's involved |
 | --- | --- | --- |
 | Cross-platform landing page | **Recommended**: For when your campaign promotes an app that's also available on multiple platforms, like Epic and Steam.<br /><br />[Learn about cross-platform landing pages](/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page)<br /><br />[Learn how to set up a cross-platform landing page](/docs/cross-platform-landing-pages-with-smart-script)<br /><br />* Make sure all relevant URL parameters (that are later captured by the Smart Script) are appended to the ad URL<br />* Make sure the script takes the GCLID from the incoming URL and adds it to the generated link. Meaning, map the outgoing GCLID URL param `gclid` to the incoming URL param `gclid`. **Note**! To display in AppsFlyer raw data reports, the incoming `gclid` param must also mapped to one of the outgoing params  `af_sub[1-5]`. | Marketer (may require developer assistance) |
 | Direct attribution link | If you don't use a cross-platform landing page, because you only have 1 app on 1 platform, you can create direct attribution links to place behind ads.<br /><br />[Learn how to create direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links)<br /><br />* Make sure the following parameters are included in your link:<br />  * af\_media\_source<br />  * af\_campaign\_id<br />  * af\_r  <br />    **Note**: The [Google click identifier (GCLID)](https://support.google.com/google-ads/answer/9744275?hl=en) parameter is automatically added by Google Ads to any outgoing click if you are using [auto-tagging](https://support.google.com/google-ads/answer/3095550?hl=en). If auto-tagging is deactivated in your Google Ads account, add `gclid={gclid}` to the Google Ads tracking template URL.<br />* For af\_camapign\_id, af\_adset\_id and af\_ad\_id parameters, you can use Google’s [value track parameters](https://support.google.com/google-ads/answer/6305348) (dynamic URL parameter) macros. All other parameters should be set manually.<br />* Don't include the af\_dp parameter.<br /><br />**Template to use for most platforms (Epic, Steam, Xbox, PlayStation, etc.)**:<br /><br />`https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}? af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=ACTUAL_CAMPAIGN_NAME&af_adset=ACTUAL_ADGROUP_NAME&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**Sample link leading to Steam**: `https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=campaign1&af_adset=adgroup1&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**Template to use for Google PC and Mac apps ONLY**:<br /><br />`https://app.appsflyer.com/{app_id}?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=ACTUAL_CAMPAIGN_NAME&af_adset=ACTUAL_ADGROUP_NAME&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**Sample link leading to Google PC**: `https://app.appsflyer.com/123456?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=campaign1&af_adset=adgroup1&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}` | Marketer |
 
-
 > 📘 **Tip**
 >
 > To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
-
 
 ## Set up campaigns in Google Ads Web for PC and console apps
 
@@ -152,16 +145,16 @@ The instructions for setting up campaigns to redirect users to either of these o
 1. Set up a cross-platform landing page as described in the [attribution link section](/docs/google-ads-web-integration-for-pc-and-console-apps#attribution-link-tab).
 2. Log in to Google Ads and create a new campaign.
 3. Select the campaign objective.  
-   [![](https://support.appsflyer.com/hc/article_attachments/21939144104337)](https://support.appsflyer.com/hc/article_attachments/21939144104337)
+   [![](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)](https://support.appsflyer.com/hc/article_attachments/21939144104337)
    * All objectives are applicable, except "App promotion" (which can only be used for mobile app campaigns).
    * We recommend setting the "Sales" campaign objective for optimization based on specific in-app events.
 4. Select the conversion goals.  
-   [![](https://support.appsflyer.com/hc/article_attachments/21939173772177)](https://support.appsflyer.com/hc/article_attachments/21939173772177)
+   [![](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)](https://support.appsflyer.com/hc/article_attachments/21939173772177)
    * By default, you see the predefined account-level campaign goals. You can keep those, or remove ones that aren't relevant for your campaign.
    * If you don’t see the goal you want, [add the conversion action and conversion goal](/docs/google-ads-web-integration-for-pc-and-console-apps#creating-conversion-actions-and-goals).
    * You can also edit your predefined goals in the Conversions page.
 5. Select the campaign type.  
-   [![](https://support.appsflyer.com/hc/article_attachments/21939144113937)](https://support.appsflyer.com/hc/article_attachments/21939144113937)
+   [![](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)](https://support.appsflyer.com/hc/article_attachments/21939144113937)
    * All campaign types are applicable, except "Shopping" which requires a product catalog and is limited to verified domains.
 6. Enter the cross-platform landing page URL as Google's final URL.
 
@@ -172,16 +165,16 @@ The instructions for setting up campaigns to redirect users to either of these o
 1. Set up a direct attribution link as described in the [attribution link section](/docs/google-ads-web-integration-for-pc-and-console-apps#attribution-link-tab).
 2. Log in to Google Ads and create a new campaign.
 3. Select the campaign objective.  
-   [![](https://support.appsflyer.com/hc/article_attachments/21939144104337)](https://support.appsflyer.com/hc/article_attachments/21939144104337)
+   [![](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)](https://support.appsflyer.com/hc/article_attachments/21939144104337)
    * All objectives are applicable, except "App promotion" (which can only be used for mobile app campaigns).
    * We recommend setting the "Sales" campaign objective for optimization based on specific in-app events.
 4. Select the conversion goals.  
-   [![](https://support.appsflyer.com/hc/article_attachments/21939173772177)](https://support.appsflyer.com/hc/article_attachments/21939173772177)
+   [![](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)](https://support.appsflyer.com/hc/article_attachments/21939173772177)
    * By default, you see the predefined account-level campaign goals. You can keep those, or remove ones that aren't relevant for your campaign.
    * If you don’t see the goal you want, [add the conversion action and conversion goal](/docs/google-ads-web-integration-for-pc-and-console-apps#creating-conversion-actions-and-goals).
    * You can also edit your predefined goals in the Conversions page.
 5. Select the campaign type.  
-   [![](https://support.appsflyer.com/hc/article_attachments/21939144113937)](https://support.appsflyer.com/hc/article_attachments/21939144113937)
+   [![](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)](https://support.appsflyer.com/hc/article_attachments/21939144113937)
    * All campaign types are applicable, except "Shopping" which requires a product catalog and is limited to verified domains.
 6. Enter the link to be used as Google's final URL.
    * This must be the final web location you want to redirect your users to. It can be any web URL including a web landing page or store URL. For example: `https://store.steampowered.com/app/{appid}/{myapp}/`.
@@ -210,7 +203,7 @@ In Google Ads, you can either select from the predefined list of conversion acti
    If **Manual import using API or uploads** is not available:
 
    1. Select **CRM, files, or other data sources** > **Track conversions from clicks.**
-   2. In **Data source** select **Skip this step and set up data source later.**CALLEND::
+   2. In **Data source** select **Skip this step and set up data source later.** CALLEND::
 5. Click **Continue**.  
    A form displays.
 6. Fill out the form and click **Create and continue** to finish creating your conversion tracker.
@@ -238,8 +231,6 @@ All Google web-to-app attributions appear under `googleadwords_int` in the Overv
 * **Postback reports** show `googleads_int` as the original media source to which the postback was sent.
 
 ## Traits and limitations
-
-
 
 | Trait | Description |
 | --- | --- |

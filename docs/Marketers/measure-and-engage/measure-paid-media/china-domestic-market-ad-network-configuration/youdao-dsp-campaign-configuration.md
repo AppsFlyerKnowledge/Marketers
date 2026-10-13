@@ -6,28 +6,19 @@ excerpt: "Learn how to set up and configure your mobile attribution campaigns wi
 
 ## Setting Up Youdao DSP
 
-The setup is done from the **Active Integrations** page, but to find new partners you must first go to the [marketplace](/docs/partner-integrations).
+**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 
-> 📘 Note
->
-> Before setting up an integration, make sure you [contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
+**To set up a new integration:**
 
-**To activate the integration:**
-
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Marketplace**.
-2. Search for the partner and select it.
-3. Click **Set up integration**.
-4. Select the app for the integration. You’re directed to the integration setup page.
-5. In the **Integration** tab, turn **Activate partner** on.
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+2. Select the relevant app.
+3. Search for the partner and select **Integrate**.
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   **Important note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+5. Complete the configuration using the relevant tabs, as described below.
 
 Youdao DSP's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
-
-For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
-
-> 👍 Tip
->
-> - The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
-> - All the rest of the steps are either descriptive or **optional**
 
 ## Integration Tab
 
@@ -35,13 +26,12 @@ The integration with Youdao DSP only supports the install event in the default p
 
 ### Activate Partner
 
-On the **first visit** here, you will need to toggle below. ON the _**Activate Partner**_ button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.
-
+On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 
 ### Default Postbacks
 
-<Image src="https://files.readme.io/25195e81f0cda6b626f31719eb11a1859d71d9ae5ebed5ecced2bf76d68364db-21594095727633.png" alt="mceclip2.png" />
+![mceclip2.png](https://files.readme.io/8e104f89182a421579a067a4904a0d6ddc7ae4fbae7da6a9a8e0c800ccc42e99-50900269840529.png)
 
 ## Attribution Link Tab
 
@@ -55,25 +45,20 @@ In this section, select which parameters you want to add to the attribution link
 
 Adding parameters to the attribution link here enables you to later perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here.
 
-- **Campaign** - add it to compare different campaigns running with Youdao DSP.
-
+* **Campaign** - add it to compare different campaigns running with Youdao DSP.  
   **Attribution link parameter:** c
-- **Adset** - set ad set names to compare different ad sets within specific Youdao DSP campaigns.
-
+* **Adset** - set ad set names to compare different ad sets within specific Youdao DSP campaigns.  
   **Attribution link parameter:** af\_adset
-- **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns Youdao DSP.
-
+* **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns Youdao DSP.  
   **Attribution link parameter:** af\_ad
-- **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub site ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations.
-
+* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub site ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations.  
   **Attribution link parameters:** af\_siteid and af\_sub\_siteid
-- **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.
-
+* **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-<Image src="https://files.readme.io/42feb31c65728c4a032f3642efa13d9b1777a2474c3cda253ef2bcea981269ab-21594079368081.png" alt="attribution-link-parameters.png" />
+![attribution-link-parameters.png](https://files.readme.io/132e20e29758b2865ee315e2b185c0689622f2b9e0a01c223253a83bf9ad6ceb-50900241322385.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about **[AppsFlyer's Attribution Link Structure and Parameters](/docs/about-link-structure-and-parameters).**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
 
 ### Click-Through Attribution
 
@@ -83,7 +68,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the [click lookback window here](/docs/set-up-lookback-windows).
 
-<Image src="https://files.readme.io/acf6c03da27561a76a0e16295248641120bbe790bab8b9866cc869f8534b99f4-21594079376529.png" alt="netease-click-through.png" />
+![netease-click-through.png](https://files.readme.io/6b45720763d086c8e2bfc18b7551eabf66b9ec06a7d93d051fa7b3bd67acad07-50900241323025.png)
 
 ### Attribution Link
 
@@ -101,15 +86,15 @@ Ad Revenue is not supported in the integration with this partner.
 
 In this tab, you can select the permissions to grant Youdao DSP, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Youdao DSP, the permissions tab is active and you can grant control to Youdao DSP.
 
-<Image src="https://files.readme.io/f6bf67f1a99cd8dfcd3ae3e6f0c70b6aba72df8ce64d7b5c8733d85dbc0cfcce-21594079386257.png" alt="rtb_house-permissions-new.png" />
+![rtb_house-permissions-new.png](https://files.readme.io/0bad858445c3ecf36204fa24c35f532fb47949cda104ed4535444736962cb1ab-50900269845649.png)
 
 ### Ad Network Permissions
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
 
-- _**Allow to configure integration**_ - permit the partner to setup the integration tab (except in-app event postbacks)
-- _**Allow to configure in-app event postbacks**_ - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-- _**Allow access to your retention report**_ - only to the partner's own retention data
-- _**Allow access to your Protect360 dashboard**_ - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* ***Allow to configure integration*** - permit the partner to setup the integration tab (except in-app event postbacks)
+* ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
+* ***Allow access to your retention report*** - only to the partner's own retention data
+* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).

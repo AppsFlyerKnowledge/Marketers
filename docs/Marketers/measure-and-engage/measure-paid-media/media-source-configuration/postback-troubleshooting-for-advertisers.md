@@ -16,7 +16,7 @@ When the [**Activate partner**](/docs/partner-activation-deactivation) toggle is
 
 **To activate the integration:**
 
-1. In AppsFlyer, from the side menu, select**Collaborate**> **Active Integrations.**
+1. In AppsFlyer, from the side menu, select**Collaborate**> **c**
 2. Click the Manage integration icon of the partner.
 3. From the **Integration** tab, turn on the **Activate partner** toggle.
 
@@ -30,7 +30,7 @@ The [**In-app event postbacks**](/docs/in-app-event-postback-configuration) togg
 
 **To turn on In-app event postbacks:**
 
-1. In AppsFlyer, from the side menu, select**Collaborate**> **Active Integrations.**
+1. In AppsFlyer, from the side menu, select**Collaborate**> **Partner Integrations** > **Active Integrations.**
 2. Click the Manage integration icon of the partner.
 3. From the **Integration** tab, scroll down to the **In-app events postbacks** toggle and turn it on.
 
@@ -46,7 +46,7 @@ Check that the event is included in the list of in-app events that were configur
 
 [![list_of_in_app_events.png](https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png)](https://support.appsflyer.com/hc/article_attachments/14979245450641)
 
-1. In AppsFlyer, from the side menu, select**Collaborate**> **Active Integrations.**
+1. In AppsFlyer, from the side menu, select**Collaborate**> **Partner Integrations** > **Active Integrations.**
 2. Click the Manage integration icon of the partner.
 3. From the **Integration** tab scroll down to **In-app event postbacks** and see if the event name appears.
 

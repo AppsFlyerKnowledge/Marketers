@@ -15,7 +15,7 @@ Each user’s permissions are defined along 3 primary dimensions:
 * **Data access** by media source and geo
   * Important! Certain AppsFlyer dashboards and features are unavailable to users with limited data access (to media sources and geos). These dashboards and features are [listed here](#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
 
-Permissions within each of these dimensions are assigned independently. In other words, you may assign a user a **role** with broad functional capabilities but allow them to exercise those capabilities only within a narrowly-defined set of **apps, media sources, and geos.**The only exception is the [Admin role](#admin%E2%80%94a-special-role), as discussed below, which has access to all capabilities, apps, media sources, and geos.
+Permissions within each of these dimensions are assigned independently. In other words, you may assign a user a **role** with broad functional capabilities but allow them to exercise those capabilities only within a narrowly-defined set of **apps, media sources, and geos.** The only exception is the [Admin role](#admin%E2%80%94a-special-role), as discussed below, which has access to all capabilities, apps, media sources, and geos.
 
 Admins can [add users to multiple accounts](#multiple-accounts) so they can easily switch between accounts.
 
@@ -107,7 +107,6 @@ Set user access levels for media sources and geos. Decide whether to grant acces
 >
 > Users with limited access to media source or geos are unable to access certain [dashboards and features](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
 
-
 #### Media sources
 
 By default, the setting **All** allows access to all media sources within the account. This includes those that will be added in the future. Selecting specific media sources doesn't include access to future media sources.
@@ -116,7 +115,6 @@ By default, the setting **All** allows access to all media sources within the ac
 >
 > * Users with limited media source access are unable to access certain [dashboards and features](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
 > * Admin and security roles have unrestricted access to all media sources. This can't be changed.
-
 
 **Media source types:**
 
@@ -159,7 +157,6 @@ Once the user is created, you can see them in the user table with an envelope ic
 >
 > If the user didn’t receive the invitation or if the link has expired, you can [resend the invitation](/docs/user-management#resending-a-user-invitation).
 
-
 ### Add users to multiple accounts
 
 Users can be added to multiple accounts and assigned to different roles in each account. This helps users work in different accounts without the need to re-enter credentials.
@@ -167,6 +164,10 @@ Users can be added to multiple accounts and assigned to different roles in each 
 #### Log in to multiple accounts
 
 Users can log in to multiple accounts using all login methods: credentials (username and password), [2FA](/docs/implementing-and-using-2fa-login), and [SSO](/docs/set-up-sso-authentication-with-your-identity-provider-idp).
+
+> 📘 **Note**
+>
+> When switching between accounts (not during initial login), users must also enter a 6-digit verification code sent to their email, regardless of which login method they used to sign in. [See this article for more information on how to switch accounts](/docs/welcome-to-appsflyer#h_01H9G1MP3ZYYQCCE6J8Q8GCAWG).
 
 #### Supported accounts and users
 
@@ -210,7 +211,6 @@ Multi-user editing is an efficient way to change the account permissions of seve
 >
 > You can't assign users to the Admin role using multi-user editing.
 
-
 **To edit multiple users:**
 
 1. On the **Users** tab, select the checkboxes of the user or users you want to edit.
@@ -245,7 +245,6 @@ Multi-user editing is an efficient way to change the account permissions of seve
 >    * Use the search box to find Alice, then individually edit her user to give her access to the Astounding app.
 >    * Repeat these steps for Bill and Charlie to give them access to Beautiful and Charming, respectively.
 
-
 ### Delete users
 
 Multiple users can be deleted from the account in bulk.
@@ -254,7 +253,6 @@ Multiple users can be deleted from the account in bulk.
 >
 > * The [account owner](/docs/user-management#account-owner) can't be deleted
 > * Deleting users is irreversible
-
 
 **To delete users:**
 
@@ -303,7 +301,6 @@ AppsFlyer is configured with many predefined roles:
 > **Question:** Can I keep Bill in the Team manager role but also give him the ability to access the My plan and Payments pages? Can I take away his ability to manage OneLink templates?
 >
 > **Answer:** No. As long as Bill stays in the Team manager role, you cannot give him the ability to access the My Plan and Payments pages. Nor can you remove his ability to manage OneLink templates. Of course, you can assign Bill to a different predefined role, and his capabilities will change to those defined by that role. Or, you can create a custom role for Bill that changes his capabilities according to your needs.
-
 
 ### Admin
 
@@ -386,7 +383,6 @@ Through the [Get roles API](https://dev.appsflyer.com/hc/reference/get_roles), y
 >
 > Any changes you make to a custom role are automatically applied to **all existing users** in that role.
 
-
 ### Delete custom roles
 
 **To delete a custom role:**
@@ -424,7 +420,6 @@ Temp roles were designed specifically to allow seamless transition from our prio
 > * If you move Diana from Temp role 1 to the Accounting role, she can’t later be moved back to Temp role 1.
 > * If Diana was the last user in Temp role 1 when you moved her to the Accounting role, Temp role 1 will no longer appear in your account.
 
-
 ### Dashboard and feature availability for users with limited media source/geo access
 
 The following AppsFlyer dashboards are **not available** to users whose access is limited to specific media sources and geos:
@@ -454,7 +449,6 @@ When you grant a user access to a specific agency **and** a specific media sourc
 >
 > You give a user access to Agency B and Media Source A. Agency B manages app installs coming from several media sources, including Media Source A. This user sees only the installs from Media Source A that Agency B manages — not Agency B's data from other media sources, and not Media Source A's data managed by other agencies.
 
-
 ### Change the account owner
 
 Because all Admins have essentially the same permissions as the account owner, changing the account owner is not usually necessary. But if you find that you must change the account owner, follow these steps to do so.
@@ -462,7 +456,6 @@ Because all Admins have essentially the same permissions as the account owner, c
 > 📘 **Important!**
 >
 > Changing the account owner must be completed manually according to the steps below. It can't be done from the **User management** page.
-
 
 #### #1–Assign a team member the Admin role
 
@@ -480,15 +473,11 @@ A user with an Admin role must send an email request to AppsFlyer **from the ema
 
 Include the following information in your request:
 
-
-
 | To: | Your AppsFlyer CSM or hello@appsflyer.com |
 | --- | --- |
 | CC: | Email of new account owner |
 | Subject: | Request to change the account owner for `{account name}` |
 | Body: | Short message including the name and title of the new account owner |
-
-
 
 Use this sample email as a reference:
 

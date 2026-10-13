@@ -41,24 +41,23 @@ If one of your team members also has an X Ads Account, this means they have a di
 Say your team member is Jenny and her handle is @jenny. Your handle is @nivi and is the handle that is connected to AppsFlyer. In order for her X Ads Account to appear in the AppsFlyer account, **she needs to give your handle access as account administrator to her X Ads Account**. Jenny needs to give access to Nivi to her X Ads Account and not that other way around. When she does so, AppsFlyer looks at Nivi's handle, and sees all the ad accounts that it is associated with, Jenny's included.
 
 1. Jenny signs into [ads.twitter.com](http://ads.twitter.com/)
-2. She clicks on **Account** and then chooses **Edit access to account**  
+2. She clicks on **Account** and then chooses **Edit access to account**
 
-   ![twitter_assign_account2.PNG](https://files.readme.io/8f855b986293235aef97ae20729f8f17b857c495a5d3a67b74d7acd46db5f1de-4416810336785.png)
+   ![twitter_assign_account2.PNG](https://files.readme.io/cd2aa0b7a700fd0eee8754ac850adb99cc22b1c42d0d94f18d31ca71901ff31f-50903273809937.png)
 3. Jenny then gives @nivi access to her X Ads Account as or Account administrator  
      
-   [![twitter_edit_access_to_account.png](https://files.readme.io/93cee24a4b77c48d47444c5992cffb40f082beda46bdb96e9f22eef5ae8d9269-4416810307601.png)](https://support.appsflyer.com/hc/article_attachments/21402367511313)
+   [![twitter_edit_access_to_account.png](https://files.readme.io/93cee24a4b77c48d47444c5992cffb40f082beda46bdb96e9f22eef5ae8d9269-4416810307601.png)](https://support.appsflyer.com/hc/article_attachments/360002514658/twitter_edit_access_to_account.png)
 4. Jenny logs into the AppsFlyer account and goes to Active Integrations >> X Ads option
 5. At this stage, she can see her X Ads Account also listed.
-6. She can now see her X Ads account and configure the integration. The account admin can see all connected X Ads accounts.  
-     
+6. She can now see her X Ads account and configure the integration. The account admin can see all connected X Ads accounts.
 
    Jenny's view:
 
-   ![jennys_ads_account.png](https://files.readme.io/bdc44413697cd16a378e7125de09107a7ed8f6565e4f6d17704b9768d08ee386-4416824257041.png)
+   ![jennys_ads_account.png](https://files.readme.io/73e3ca9be6090bfd47acb675e4faa634721d9aa75f5ebb8cf736fd56dd9e336b-50903273813137.png)
 
    Account admin view:
 
-   ![jennys_ads_account__1_.png](https://files.readme.io/16a613e773a3825702708426f536603b617f78f635ef766365ef9cce5b9c5587-4416833416337.png)
+   ![jennys_ads_account__1_.png](https://files.readme.io/d744c0e2de60011a0395a407607ec90f4fac04f76787b430cf1a74eda2342e66-50903273813649.png)
 
 ### Any special instructions for agencies?
 
@@ -68,7 +67,6 @@ When an agency creates a new X Ads campaign, the campaign name must start with t
 > 📘 **Note**
 >
 > To establish the connection between AppsFlyer and X Ads, the advertiser MUST configure X Ads permissions allowing agencies to run X Ads traffic.
-
 
 For more details go [here](/docs/about-agency-accounts#srn-configurations).
 
@@ -84,7 +82,7 @@ If your app was subscribed to another attribution provider in the past, which wa
 
 Alternatively, the following error may also appear:  
   
- [![](https://support.appsflyer.com/hc/article_attachments/21402353721361)](https://support.appsflyer.com/hc/article_attachments/21402353721361)
+[![](https://support.appsflyer.com/hc/article_attachments/360001502209/X%20Ads_error_2.png)](https://support.appsflyer.com/hc/article_attachments/360001502209/X%20Ads_error_2.png)
 
 **Error: Error has occurred while saving X Ads configuration. Some accounts failed to update: XX Multiple provider ids to same (appid, conversionType) for event appid2872.**
 
@@ -139,7 +137,7 @@ Your X Ads account needs to be an active Ad Account to receive attribution data 
 **To solve this issue:**
 
 1. Log out of X Ads.
-2. In AppsFlyer, from the side menu, select **Collaboration** > **Active Integrations.**
+2. In AppsFlyer, from the side menu, select **Collaborate > Partner Integrations >** **Active Integrations.**
 3. Search for X Ads and select it. The partner setup window opens.
 4. In the **Integration** tab, click on **Activate partner**.
 5. Click on **Login with X Ads**,  
@@ -152,8 +150,6 @@ Although we work closely with X Ads, discrepancies might appear between the X Ad
 
 These are the common reasons for such discrepancies that advertisers should be aware of:
 
-
-
 | Cause | X Ads | AppsFlyer |
 | --- | --- | --- |
 | **Attribution window** | X Ads allows its users to configure the attribution window and supports both click-through and view-through attributions. By default - 14 days click-through and 1 day view-through. | If you have not configured the AppsFlyer attribution lookback window for X Ads with the same values as in X Ads, discrepancies may occur. |
@@ -163,7 +159,6 @@ These are the common reasons for such discrepancies that advertisers should be a
 | **Attribution touch type** | X Ads attribution is based on their own clicks and impressions. | AppsFlyer gives priority to click-through attribution over view-through attribution. If X Ads counts an impression and AppsFlyer is aware of an additional click within the click-through attribution window, the click from another source is attributed on AppsFlyer's dashboard. On X Ads, the impression is attributed and is presented on their dashboard. |
 | **X Ads data sharing settings** | X Ads allows its users to NOT [share their personal data with third parties](https://twitter.com/settings/account/personalization). This data includes ads they interact with.<br /><br />The stats on X Ads dashboard reflect all engagements, including the users who have opted out from sharing the data. | AppsFlyer shows the aggregate data of these X Ads users, but does not report their user-level raw data (more [details](/docs/x-ads-formerly-twitter-ads-setup-guide-overview#twitter-user-privacy)). |
 | **X Ads re-engagement logic** | X Ads counts unique users. If a user re-engages more than once as a result of the same campaign, X Ads shows these engagements as one conversion. | AppsFlyer counts each re-engagement instance, and therefore, in a similar case, shows these engagements as multiple conversions. |
-
 
 > 📘 **Note**
 >

@@ -20,15 +20,15 @@ The steps required to set up a link are described in detail in the section that 
 
 ## Create a OneLink link
 
-
-
 | **Who's involved**<br /><br />* Only a marketer is required to create OneLink links with an experience that redirects users to app stores, web URL, or, once the template is set up to open the app with Android App Links and iOS Universal Links, into the home page of the app.<br />* To add deep linking and deferred deep linking functionality to links, both a marketer and Android/iOS developers are required. |
 | --- |
 | **Prerequisites**<br /><br />* An AppsFlyer account with at least one app.<br />* A [OneLink template](/docs/create-a-onelink-template) on which to base your links.<br />* For attribution: [The AppsFlyer SDK already installed](/docs/integrate-the-appsflyer-sdk) in each of your mobile apps.<br />  * If the SDK is not yet installed in your apps, it is still possible to create a working redirection link, but it will not be possible to measure installs in your dashboard, deep link, or deferred deep link. |
 | **Time required**<br /><br />30 minutes for most links, but approximately 3 hours for links that require deep linking or deferred deep linking functionality. |
 | **Outcome**<br /><br />* A link that sends users to the correct app store, web page, or into the app based on their device, and gives them exactly the experience you want them to have. |
 
+**Create OneLink links from your AI tool**
 
+You can also create OneLink links by describing them in plain language in an AI tool connected to the [AppsFlyer MCP](/docs/beta-appsflyer-mcp "/docs/beta-appsflyer-mcp")[.](/docs/beta-appsflyer-mcp) For example: "Create a link for our Black Friday email newsletter that opens the sale page in the app." The AI maps your request to the right parameters, shows you the link details, and creates the link only after you approve. Links are created under an existing OneLink template. [Learn more](/docs/beta-appsflyer-mcp#h_01JY3VJEQMRDFAFTKZMPZ90RHP)
 
 **To create a OneLink link with a specific user experience:**
 
@@ -58,7 +58,6 @@ The steps required to set up a link are described in detail in the section that 
 | Email-to-app | If you're using an ESP, follow the [ESP integration instructions](/docs/email-service-provider-esp-integration-guide). |
 | App-to-app | You can create dynamic links that work across multiple apps via [cross-promotion](/docs/cross-promotion-attribution-for-marketers). |
 | Referral-to-app | * [Social media preview](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-media-preview-og-tags)<br />* [Social app landing page](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page)<br />* You can dynamically create referral-to-app links via the SDK in your app via [user invite integration](/docs/user-invite-attribution). |
-
 
 10. Click **Next**.
 11. [Optional] In **Deep linking and redirection**, complete [deep linking/deferred deep linking setup](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking). Skip this section if this link isn't intended for deep linking.
@@ -151,7 +150,6 @@ These OG tags may automatically be taken from the web URL or app store you are r
 > * You can add the OG tag parameters to your link outside the AppsFlyer UI.
 > * If you add separate OG tags for X (formerly Twitter), they will override the regular AppsFlyer preview.
 
-
 ### Social app landing page
 
 > 📘 **Important!**
@@ -160,7 +158,6 @@ These OG tags may automatically be taken from the web URL or app store you are r
 >
 > * As Meta now [supports universal links](/docs/meta-ads-faq#are-ios-universal-links-and-android-app-links-supported-in-meta-ads), a social app landing page is no longer required for Meta paid ads that support universal links.
 > * A social app landing page is needed for owned posts (non paid ads).
-
 
 Social media apps may break the smooth experience of existing users using Universal Links. This can be overcome by:
 
@@ -195,7 +192,6 @@ When the user engages with the CTA button in the landing page:
 >
 > The social app landing page only supports OneLink short URL.
 
-
 #### **To use the social app landing page:**
 
 1. Configure the landing page as described in the following section.
@@ -210,7 +206,7 @@ Attribution is determined based on your attribution settings.
 1. In your custom link setup, go to the **Social-to-app** section.
 2. In the **Social app landing page** section, click **Create social app landing page**.  
    A window to choose a landing page template opens.  
-   [![](https://support.appsflyer.com/hc/article_attachments/30151216576657)](https://support.appsflyer.com/hc/article_attachments/30151216576657)
+   [![](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)](https://support.appsflyer.com/hc/article_attachments/30151216576657)
 3. To choose a landing page template, hover over the selected template and click **Create**. **Tip**: Hover over the 🛈 icon of a template to see in which cases it should be used. Clustered Poster and ShowAndTell are recommended for Instagram.
 4. Customize all the elements in the landing page creative. To do so, select elements by name or click on them on the preview image.    
    **Tip**: Save your texts in case you replace the creative template.
@@ -228,12 +224,11 @@ Attribution is determined based on your attribution settings.
 | * Trapeze<br />* Carousel<br />* ShowAndTell | 300 KB | 1:1 |
 | * Flyer<br />* Poster<br />* Blurry poster<br />* Clustered poster | 300 KB | 9:16 (vertical) |
 
-
    4. If one or more of the images isn't an exact URL, an error will display, and you will not be able to review the creative.  
-      [![](https://support.appsflyer.com/hc/article_attachments/30151216583697)](https://support.appsflyer.com/hc/article_attachments/30151216583697)
+      [![](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)](https://support.appsflyer.com/hc/article_attachments/30151216583697)
 6. To review the landing page creative, click **Review**.  
    If changes are needed, click **Back to editor**.  
-   [![](https://support.appsflyer.com/hc/article_attachments/30151216593169)](https://support.appsflyer.com/hc/article_attachments/30151216593169)
+   [![](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)](https://support.appsflyer.com/hc/article_attachments/30151216593169)
 7. To save your landing page, click **Done**.  
    **Important**: New/updated landing page creatives only apply after generating/updating the custom link.
 8. [Optional] To edit your landing page, click **Edit social app landing page**.
@@ -247,7 +242,6 @@ Deferred deep linking means you give new users a similar deep linking experience
 > 📘 **Note**
 >
 > Setting up deep linking and deferred deep linking requires your Android and iOS developers.
-
 
 **To set up deep linking and deferred deep linking to direct users to a specific experience in the app:**
 
@@ -293,7 +287,6 @@ Deferred deep linking means you give new users a similar deep linking experience
 >
 > Once parameters and dynamic values are implemented by the developers, the marketer can use OneLink API to automatically generate thousands of custom links. [Learn more](/docs/use-onelink-api-to-create-links-in-large-scale-campaigns)
 
-
 ### Redirection
 
 **To send new users to a landing page, instead of to the app store**:
@@ -332,7 +325,7 @@ You can test whether your link works to redirect:
 3. Send the short or long URL to your phone. You can either:
    * Scan the QR code with your phone camera or QR scanner app.
    * Email or WhatsApp yourself the link, and open it on your phone.  
-     **Note:**Do not paste into iOS notes, or directly into a mobile browser. Often, the mobile operating system intentionally will not open the app in this context.
+     **Note:** Do not paste into iOS notes, or directly into a mobile browser. Often, the mobile operating system intentionally will not open the app in this context.
 4. Click the link on your mobile device.  
    Depending on your platform, it should take you to the app store or landing page.  
    **Note**: A real click on a mobile device is needed. Javascript or 301/302 redirects can't trigger Universal Links and Android App Links. Even basic redirections fail with these methods on some browsers.
@@ -357,7 +350,7 @@ Link not working as expected? Check out the [OneLink FAQ and troubleshooting gui
 5. Send the short or long URL to your phone. You can either:
    * Scan the QR code with your phone camera or QR scanner app.
    * Email or WhatsApp yourself the link, and open it on your phone.  
-     **Note:**Do not paste into iOS notes, or directly into a mobile browser. Often, the mobile operating system intentionally will not open the app in this context.
+     **Note:** Do not paste into iOS notes, or directly into a mobile browser. Often, the mobile operating system intentionally will not open the app in this context.
 6. Click the link on your mobile device.
    * The app should open to its home screen.
    * If you implemented deep linking, the app should open to the content you specified in the link parameters.
@@ -375,7 +368,7 @@ Custom impression links enable you to:
 * Measure the [impressions to clicks conversion rates](/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates::74b1530a) of the ads you display.
 * Receive attribution for impressions.
 
-**Prerequisites:**A working OneLink long URL. Short URLs are not supported.
+**Prerequisites:** A working OneLink long URL. Short URLs are not supported.
 
 **Who is involved:**
 
@@ -451,7 +444,7 @@ The flow of the App Clip-based DDL solution is as follows:
 6. The App Clip opens and provides the user with the experience decided by the app marketer and developer.
 7. If the App Clip includes a flow to direct users to the full app, the users are sent to the App Store to download the full app. Upon app launch, they get the user experience defined by the developer.
 
-**Prerequisites:**AppsFlyer SDK V6.4.0+
+**Prerequisites:** AppsFlyer SDK V6.4.0+
 
 **To set up the App Clip-based DDL solution**:
 
@@ -530,8 +523,6 @@ To solve this, Mark sends users an SMS containing a short URL powered by OneLink
 * If they don't have the app yet, they are directed to the appropriate app store or landing page, based on their device. And then, once they download and open the app, they are taken straight to the fruit page.
 
 ### Traits and limitations
-
-
 
 | Trait | Remarks |
 | --- | --- |

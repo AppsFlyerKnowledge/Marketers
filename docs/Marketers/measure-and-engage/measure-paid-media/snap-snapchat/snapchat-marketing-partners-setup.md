@@ -2,7 +2,7 @@
 title: "Snapchat marketing partners setup"
 excerpt: "Learn how to integrate with Snapchat marketing partners to measure your campaigns and configure postbacks in AppsFlyer."
 ---
-At a glance: Integrate with Snapchat marketing partners to measure campaigns you run with them. When configured, AppsFlyer sends postbacks to the configured Snapchat marketing partner.
+**At a glance:** Integrate with Snapchat marketing partners to measure campaigns you run with them. When configured, AppsFlyer sends postbacks to the configured Snapchat marketing partner.
 
 ## Setting up a Snapchat Marketing Partner
 
@@ -11,11 +11,11 @@ Follow the steps below to configure your campaigns with any one of Snapchat Mark
 * Activate [Snapchat attribution](/docs/snapchat-advanced-srn-integration-setup).
 * In the Snapchat **Business Manager** dashboard, copy the **Snap Account ID** highlighted below in green.
 
-![snapchat-dashboard.png](https://files.readme.io/4d943f14633d51b7c43408616e8e771c45c8555400efb1e6c74eb5fbfd696084-4417687661841.png)
+  ![snapchat-dashboard.png](https://files.readme.io/a0942bd27528d4a837edc6eb5d11338bf0622ddc42e382231a8f210aedad1424-50902448760337.png)
 
 Once you have activated Snapchat and obtained the Snap Account ID, configure the Marketing Partner:
 
-1. In AppsFlyer, from the side menu, select **Collaboration** > **Active Integrations.**
+1. In AppsFlyer, from the side menu, select **Collaboration** > **Partner Integrations** > **Active Integrations.**
 2. In the search box, enter the name of the specific partner, or 'Snapchat' to see the full list of Snapchat marketing partners.
 3. Click the logo of the required partner to open the configuration window.
 4. Enable **Activate partner**.
@@ -24,27 +24,22 @@ Once you have activated Snapchat and obtained the Snap Account ID, configure the
 
 ### Default postbacks
 
-AppsFlyer can send automatic install and re-engagement postbacks to partners. Use this section to define the **source of the users** that allow sending these postbacks. In some cases the source of users is predefined and cannot be changed:
+AppsFlyer can send automatic install and re-engagement postbacks to partners. Use this section to define the **source of the users** that allow sending these postbacks. In some cases the source of users is predefined and cannot be changed:
 
-![remerge2.png](https://files.readme.io/115d04a76ff27deb4bc470c91f6fead6894886c7f4b983c39ecf42d54d09d12b-4417687705617.png)
+![remerge2.png](https://files.readme.io/4f3f52b3610b3e3bcf0adc6e963f1f2c39cdb0b2de27569c890844aac477b3d0-50902448761873.png)
 
-Select **Only events attributed to this partner** for events coming only from users attributed to this partner.
-
-Select **Events attributed to any partner or organic** to have your entire user base available to be reported to this partner.
+Select **Only events attributed to this partner** for events coming only from users attributed to this partner.  
+Select **Events attributed to any partner or organic** to have your entire user base available to be reported to this partner.
 
 ### In-app events
 
 1. To send in-app event postbacks to the Snapchat marketing partner you're configuring, toggle the In-App Events Postback to **ON**.
 2. Individually add the in-app events (SDK events) you want to send to the partner and [map them as required.](/docs/in-app-event-postback-configuration#event-mapping)
 
-> ❗️ Important!
+> 📘 **Important!**
 >
 > Disabling attribution for Snapchat prevents sending postbacks to Snapchat Marketing Partners.
 
-### See also
-
-<Cards>
-  <Card title="Snapchat and AppsFlyer SKAdNetwork interoperation" href="/docs/skan-interoperation-with-snapchat" icon="fa-solid fa-lock">
-    Learn about the interoperation between Snapchat and AppsFlyer for SKAdNetwork.
-  </Card>
-</Cards>
+> 📘 **See also**
+>
+> * [Snapchat and AppsFlyer SKAdNetwork interoperation](/docs/skan-interoperation-with-snapchat)

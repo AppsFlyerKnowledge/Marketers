@@ -12,7 +12,7 @@ Attribute Google Ads campaigns and work with Google Marketing Partners
   <Card title="Google Ads (AdWords)—Create web campaigns for website apps" href="/docs/google-ads-adwords-create-web-campaigns-for-website-apps" icon="fa-solid fa-bullhorn">
     Learn how to create and attribute web campaigns for website apps.
   </Card>
-  <Card title="Google Ads (AdWords)—Create web-based campaigns" href="/docs/google-ads-adwords-create-web-based-campaigns" icon="fa-solid fa-bullhorn">
+  <Card title="Google Ads (AdWords)—Create web-based campaigns for mobile apps" href="/docs/google-ads-adwords-create-web-based-campaigns" icon="fa-solid fa-bullhorn">
     Configure web-based campaigns for your Google Ads integration.
   </Card>
   <Card title="Google Ads Web—Integration for PC and console apps" href="/docs/google-ads-web-integration-for-pc-and-console-apps" icon="fa-solid fa-bullhorn">

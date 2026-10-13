@@ -65,4 +65,4 @@ Explore additional options available for the selected app:
 
 ### Go to an app's Overview dashboard
 
-- Click an app row or card to access the [Overview dashboard](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv) of the app.
+- Click an app row or card to access the Overview dashboard of the app.

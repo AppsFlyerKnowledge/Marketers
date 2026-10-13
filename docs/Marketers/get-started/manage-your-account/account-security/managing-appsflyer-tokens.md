@@ -6,12 +6,11 @@ excerpt: "Learn how to manage AppsFlyer API and server-to-server tokens to secur
 
 > 📘 **Important!**
 >
-> ![AppsFlyerAdmin_us-en.png](https://support.appsflyer.com/hc/article_attachments/32934372878481)
+> ![AppsFlyerAdmin_us-en.png](https://files.readme.io/8597603fc60e16b6ee5048c90e6293bf42c4acf8b63d553d6f77c34ab7945d02-32934372878481.png)
 >
 > * Only admins can view and manage tokens. Account users have no access to the Tokens page.
 > * Keep your tokens safe, as they enable access to your data. Don't publish tokens in public code repositories.
 > * It's recommended to replace tokens every 180 days.
-
 
 ## About AppsFlyer tokens
 
@@ -27,13 +26,11 @@ Tokens are used to enable users to access data via AppsFlyer API and S2S calls. 
 ## Reaching the Tokens page
 
 1. From the top bar, open the account menu (email address dropdown) > **Security center.**
-2. In the **AppsFlyer API tokens** section, click **Manage your AppsFlyer API tokens.**The current tokens are displayed.
+2. In the **AppsFlyer API tokens** section, click **Manage your AppsFlyer API tokens.** The current tokens are displayed.
 
 ## Token types
 
 There are various types of tokens for different purposes. By default, an API token is generated for each new account (API token V2). Admins can create a maximum of two tokens for each type, as detailed in the table below.
-
-
 
 | Token type | Intended use |
 | --- | --- |
@@ -42,7 +39,9 @@ There are various types of tokens for different purposes. By default, an API tok
 | S2S token | Used for sending data using server-to-server calls. |
 | MCP token | Used to authenticate third-party or self-hosted systems with the AppsFlyer MCP. |
 
-
+> 📘 **Note**
+>
+> If you're integrating a feature that requires a dedicated API V2 token (e.g., the [Advanced Security Module](/docs/beta-advanced-security-protect360-module)) and you've already reached the two-token limit, you can repurpose an existing API V2 token rather than requesting a new one — the same token can serve multiple use cases.
 
 ## Manage your tokens
 
@@ -70,15 +69,13 @@ As an admin, you can manage multiple tokens: create, rename, and remove tokens. 
 >   * Use the token only after its status changes to **Active**.
 > * Make sure to implement the new token in your systems.
 
-
 ### Delete a token
 
-> 📘 **Caution**
+> 📘 **Warning**
 >
 > * Deleting a token could cause failure to systems depending on it.
 > * When deleting a token, it's removed from the Tokens page, and all calls from the previous token are rejected.
 > * If you wish to replace a token, make sure to first create a new token, implement it, and only after it becomes available, meaning it's not in "Pending" status, you can delete the old token.
-
 
 1. From the [**Tokens** page](#reaching-the-tokens-page), click the delete icon of the token you want to delete.
 2. You must confirm deleting the token by typing "Delete token".
@@ -89,8 +86,6 @@ As an admin, you can manage multiple tokens: create, rename, and remove tokens. 
 Use cases for advertisers and ad networks using the API V2 token:
 
 ### Advertiser
-
-
 
 | API V2 token |
 | --- |
@@ -105,12 +100,9 @@ Use cases for advertisers and ad networks using the API V2 token:
 | [OpenDSR API](/docs/send-opendsr-api-requests) |
 | [Master API](/docs/master-api-user-acquisition-metrics-via-api) |
 | [Import audience API](/docs/audiences-import-audience-segments-from-internal-systems#imported-audience-management-api) |
-
-
+| [Advanced Security Module integration (Android)](/docs/beta-advanced-security-protect360-module) |
 
 ### Ad network
-
-
 
 | API V2 token |
 | --- |
@@ -119,36 +111,26 @@ Use cases for advertisers and ad networks using the API V2 token:
 | [Protect360 reports for integrated partners](/docs/protect360-for-integrated-partners#protect360-ad-network-reporting-api) |
 | [InCost](/docs/incost-api-for-ad-networks) |
 
-
-
 ## Applications of the S2S token
 
 Use cases for advertisers and advertisers using the S2S token:
 
 ### Advertiser
 
-
-
 | S2S token |
 | --- |
 | [Mobile in-app events S2S API](/docs/server-to-server-events-api-for-mobile-s2s-mobile) |
 | [Web events S2S API](/docs/server-to-server-s2s-api-for-web-performance-measurement) |
 
-
-
 ### Ad network
-
-
 
 | S2S token |
 | --- |
 | [AppsFlyer preload referrer attribution](/docs/set-up-appsflyer-preload-referrer-attribution) |
 
-
 > 📘 **Note**
 >
 > For most ad networks, S2S token generation is no longer self-serve. As a result, admins won’t see the option to generate an S2S token in the UI. Self-serve token generation is available only for specific managed partners.
-
 
 ## Applications for the OneLink token
 

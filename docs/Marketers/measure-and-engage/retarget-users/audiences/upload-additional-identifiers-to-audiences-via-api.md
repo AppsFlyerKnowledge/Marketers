@@ -39,162 +39,163 @@ The request must include an HTTP header containing your account's [AppsFlyer V2.
 
 **API request URL**
 
-`
-https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/\{app-id\}
-`
+```
+https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{app-id}
+```
 
 | Parameter | Description | Mandatory |
 | --- | --- | --- |
-| `\{app-id\}` | App ID of the app from which the identifiers were collected (as it appears in the AppsFlyer dashboard) | Yes |
+| `{app-id}` | App ID of the app from which the identifiers were collected (as it appears in the AppsFlyer dashboard) | Yes |
 
 **API request body**
 
-`
-\{
+```
+{
   "key_type": "<key_type>",
   "action": "add",
   "data": [
-    \{
+    {
       "key_value": "<key_value>",
-      "identifiers": \{
+      "identifiers": {
         "hashed_emails": [
           "<hashed_email_value>",
           "<hashed_email_value>"
         ],
         "phone_number_sha256": "<phone_number_sha256_value>",
         "phone_number_e164_sha256": "<phone_number_e164_sha256_value>"
-      \}
-    \},
-    \{
+      }
+    },
+    {
       "key_value": "<key_value>",
-      "identifiers": \{
+      "identifiers": {
         "hashed_emails": [
           "<hashed_email_value>",
           "<hashed_email_value>"
         ],
         "phone_number_sha256": "<phone_number_sha256_value>",
         "phone_number_e164_sha256": "<phone_number_e164_sha256_value>"
-      \}
-    \}
+      }
+    }
   ]
-\}
-`
+}
+```
 
 | Parameter | Description | Mandatory |
 | --- | --- | --- |
-| `\{key\_type\}` | The identifier used as the unique value to represent the user in each data row of the request.<br /><br />The value specified here applies to every row in the request.<br /><br />Possible values:<br /><br />* idfa<br />* gaid<br />* idfv<br />* customer\_user\_id<br />* imei<br />* oaid | Yes |
-| `\{action\}` | "add" | No<br /><br />Default value: "add" |
-| `\{key\_value\}` | Valid identifier value for the key\_type specified | Yes |
-| `\{identifiers\} | Object containing the names and values of the identifiers to add:<br /><br />* \{hashed\_emails\}<br />* \{phone\_number\_sha256\}<br />* \{phone\_number\_e164\_sha256\}` | Yes<br /><br />* Must include a value for at least 1 of these 3 identifiers |
-| `\{hashed\_emails\}` | An array of up to 2 hashed email addresses<br /><br />Format:<br /><br />* Lowercase<br />* No white spaces<br />* SHA256 hashed<br /><br />Example value before hashing: name@domain.com | No |
-| `\{phone\_number\_sha256\}` | Phone number (see note below)<br /><br />Format:<br /><br />* No symbols, letters, or leading zeroes<br />* Include country code<br />* SHA256 hashed<br /><br />Example value before hashing:<br /><br />442070313000 | No |
-| `\{phone\_number\_e164\_sha256\}` | Phone number in E164 format (see note below)<br /><br />Format<br /><br />* E164 phone number<br />* SHA256 hashed<br /><br />Example value before hashing:<br /><br />+442070313000 | No |
+| `{key\_type}` | The identifier used as the unique value to represent the user in each data row of the request.<br /><br />The value specified here applies to every row in the request.<br /><br />Possible values:<br /><br />* idfa<br />* gaid<br />* idfv<br />* customer\_user\_id<br />* imei<br />* oaid | Yes |
+| `{action}` | "add" | No<br /><br />Default value: "add" |
+| `{key\_value}` | Valid identifier value for the key\_type specified | Yes |
+| \{identifiers\} | Object containing the names and values of the identifiers to add:<br /><br />* \{hashed\_emails\}<br />* \{phone\_number\_sha256\}<br />* \{phone\_number\_e164\_sha256\} | Yes<br /><br />* Must include a value for at least 1 of these 3 identifiers |
+| `{hashed\_emails}` | An array of up to 2 hashed email addresses<br /><br />Format:<br /><br />* Lowercase<br />* No white spaces<br />* SHA256 hashed<br /><br />Example value before hashing: name@domain.com | No |
+| `{phone\_number\_sha256}` | Phone number (see note below)<br /><br />Format:<br /><br />* No symbols, letters, or leading zeroes<br />* Include country code<br />* SHA256 hashed<br /><br />Example value before hashing:<br /><br />442070313000 | No |
+| `{phone\_number\_e164\_sha256}` | Phone number in E164 format (see note below)<br /><br />Format<br /><br />* E164 phone number<br />* SHA256 hashed<br /><br />Example value before hashing:<br /><br />+442070313000 | No |
 
-> 📘 **Note**
+> 📘 **Notes**
 >
-> Different advertising partners support different phone number formats. So, if you choose to add a phone number, sending both identifiers is recommended: *phone\_number\_sha256* and *phone\_number\_e164\_sha256*.
+> * Different advertising partners support different phone number formats. So, if you choose to add a phone number, sending both identifiers is recommended: *phone\_number\_sha256* and *phone\_number\_e164\_sha256*.
+> * `customer_user_id` is the same identifier referred to elsewhere in this section as CUID (Customer User ID). When `key_type` is `customer_user_id`, use the account's CUID value as the `key_value`. See [Audiences user identifier policy](/docs/audiences-user-identifier-policy) for more on this and other supported identifiers.
 
 **Restrictions**
 
 The following restrictions apply to the **Add/modify identifiers** request:
 
 * Previously existing values (if any) will be overwritten by values sent in the request.
-* The `\{data\}` object can include a maximum of 4,000 rows (key\_values) per request.
+* The `{data}` object can include a maximum of 4,000 rows (key\_values) per request.
 
 **Sample request to add identifiers**
 
-`
+```
 HTTP PUT
 body:
-\{
+{
   "key_type": "idfv",
   "action": "add",
   "data": [
-    \{
+    {
       "key_value": "CDDA802e-AAAA-BBBB-CCCC-DDDDDDDDDDDD",
-      "identifiers": \{
+      "identifiers": {
         "hashed_emails": [
           "34d31be18022626de6b311d6a76e791176d2691b6eef406f524d8f56364c187a",
           "d8c2aec999baad2464e521873ee4465caaf7ff6db8c8b4a25b09ca07694e4dee"
         ],
         "phone_number_sha256": "6c91c4c640f6ef0162833260db4f13dec0df2b683092f4dba7e874bef1acea37",
         "phone_number_e164_sha256": "f3d7e96c73fb0de1b66acfce541d7af758fbd4f3fa3af0ea4e10110000d3625e"
-      \}
-    \}
+      }
+    }
   ]
-\}
-`
+}
+```
 
 ### Remove identifiers (PUT)
 
 **API request URL**
 
-`
-https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/\{app-id\}
-`
+```
+https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{app-id}
+```
 
 | Parameter | Description | Mandatory |
 | --- | --- | --- |
-| `\{app-id\}` | App ID of the app from which the identifiers were collected (as it appears in the AppsFlyer dashboard) | Yes |
+| `{app-id}` | App ID of the app from which the identifiers were collected (as it appears in the AppsFlyer dashboard) | Yes |
 
 **API request body**
 
-`
-\{
+```
+{
   "key_type": "<key_type>",
   "action": "remove",
   "data": [
-    \{
+    {
       "key_value": "<key_value>",
       "identifiers": [
         "hashed_emails",
         "phone_number_sha256",
         "phone_number_e164_sha256"
       ]
-    \},
-    \{
+    },
+    {
       "key_value": "<key_value>",
       "identifiers": [
         "hashed_emails",
         "phone_number_sha256",
         "phone_number_e164_sha256"
       ]
-    \}
+    }
   ]
-\}
-`
+}
+```
 
 | Parameter | Description | Mandatory |
 | --- | --- | --- |
-| `\{key\_type\}` | The identifier used as the unique value to represent the user in each data row of the request.<br /><br />The value specified here applies to every row in the request.<br /><br />Possible values:<br /><br />* idfa<br />* gaid<br />* idfv<br />* customer\_user\_id<br />* imei<br />* oaid | Yes |
-| `\{key\_value\}` | Valid identifier value for the key\_type specified | Yes |
-| `\{action\}` | "remove" | No<br /><br />Default value: "add" |
-| `\{identifiers\} | An array containing the names of the identifiers for which values should be deleted:<br /><br />* \{hashed\_emails\}<br />* \{phone\_number\_sha256\}<br />* \{phone\_number\_e164\_sha256\}` | Yes<br /><br />* Must include at least 1 of these 3 identifiers |
+| `{key\_type}` | The identifier used as the unique value to represent the user in each data row of the request.<br /><br />The value specified here applies to every row in the request.<br /><br />Possible values:<br /><br />* idfa<br />* gaid<br />* idfv<br />* customer\_user\_id<br />* imei<br />* oaid | Yes |
+| `{key\_value}` | Valid identifier value for the key\_type specified | Yes |
+| `{action}` | "remove" | No<br /><br />Default value: "add" |
+| \{identifiers\} | An array containing the names of the identifiers for which values should be deleted:<br /><br />* \{hashed\_emails\}<br />* \{phone\_number\_sha256\}<br />* \{phone\_number\_e164\_sha256\} | Yes<br /><br />* Must include at least 1 of these 3 identifiers |
 
 **Restrictions**
 
-The `\{data\}` object can include a maximum of 4,000 rows (key\_values) per request.
+The `{data}` object can include a maximum of 4,000 rows (key\_values) per request.
 
 **Sample request to remove identifiers**
 
-`
+```
 HTTP PUT
 body:
-\{
+{
   "key_type": "gaid",
   "action": "remove",
   "data": [
-    \{
+    {
       "key_value": "cdda802e-aaaa-bbbb-cccc-dddddddddddd",
       "identifiers": [
         "hashed_emails",
         "phone_number_sha256",
         "phone_number_e164_sha256"
       ]
-    \}
+    }
   ]
-\}
-`
+}
+```
 
 ### Responses
 
@@ -205,47 +206,47 @@ body:
 | 400 | Request must have ‘data’ with at least 1 element | Data list can not be empty. |
 | 400 | Request ‘data’ should not exceed the size of 4000 in a single request | Data list can include a maximum of 4,000 rows. |
 | 400 | Request data has too many invalid ‘data’ elements | More than 10% of the data to modify is not valid according to the specification. |
-| 404 | AppsFlyer - Page Not Found | Check that:<br /><br />* The `\{app-id\}` as specified in the API request URL is correct.<br />* The HTTP header contains the correct [AppsFlyer V2.0 API token](/docs/managing-appsflyer-tokens). Your account admin can obtain this token from the AppsFlyer dashboard. |
+| 404 | AppsFlyer - Page Not Found | Check that:<br /><br />* The `{app-id}` as specified in the API request URL is correct.<br />* The HTTP header contains the correct [AppsFlyer V2.0 API token](/docs/managing-appsflyer-tokens). Your account admin can obtain this token from the AppsFlyer dashboard. |
 
 **Response examples**
 
-`
-\{
+```
+{
 "message": "Accepted for processing",
 "received": 1000,"invalid": 2,
 "trace-id": "698ed323-c787-45b5-b792-463c67c94064"
-\}
-`
+}
+```
 
-`
-\{
+```
+{
 "error": "Request body must have a valid key_type",
 "trace-id": "18a5f685-ea4d-4ca9-beab-a542a3786d12"
-\}
-`
+}
+```
 
-`
-\{
+```
+{
 "error": "Request must have 'data' with at least 1 element",
 "trace-id": "c155a7fa-b573-4efe-9bfb-5ae7de40e7fd"
-\}
-`
+}
+```
 
-`
-\{
+```
+{
 "error": "Request 'data' should not exceeds the size of 4000 in a single request”,
 "trace-id": "b325a7fa-b573-4efe-9bfb-5ae7de40e72c"
-\}
-`
+}
+```
 
-`
-\{
+```
+{
 "error": "Request data has too many invalid 'data' elements",
 "valid": 2,
 "invalid": 30,
 "trace-id": "33551c1d-5682-405e-a959-c8729ca74735"
-\}
-`
+}
+```
 
 ### Rate limitations
 

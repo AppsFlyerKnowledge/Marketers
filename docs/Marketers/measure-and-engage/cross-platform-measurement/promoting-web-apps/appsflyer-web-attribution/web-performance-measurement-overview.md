@@ -2,7 +2,7 @@
 title: "Web Performance Measurement - Overview"
 excerpt: "Web Performance Measurement enables you to identify which media sources and campaigns drive users to your website and measure how those visits influence downstream actions over time."
 ---
-At a glance: Web Performance Measurement enables you to identify which media sources and campaigns drive users to your website and measure how those visits influence downstream actions over time. It enables you to capture and attribute user interactions end-to-end, supporting both user acquisition (first-time visitors) and re-engagement, from the initial visit through lifetime value measurement.
+**At a glance:** Web Performance Measurement enables you to identify which media sources and campaigns drive users to your website and measure how those visits influence downstream actions over time. It enables you to capture and attribute user interactions end-to-end, supporting both user acquisition (first-time visitors) and re-engagement, from the initial visit through lifetime value measurement.
 
 ## About Web Performance Measurement
 
@@ -12,23 +12,23 @@ A web visit represents both a browsing activity and an ad engagement that occurr
 
 The purpose of this article is to outline the end-to-end Web Performance Measurement process, explaining how user interactions are captured, identified, and measured from the initial website visit through to lifetime value. This process enables the engine to support both user acquisition, for identifying and attributing first-time visitors, and retargeting or re-engagement, for measuring the impact of campaigns specifically aimed at returning users.
 
-> 📘 If you use People-Based Attribution (PBA)
->
-> If you currently use [People-Based Attribution (PBA)](/docs/people-based-attribution-pba), consider switching to Web Performance Measurement for more granular attribution and additional signals.
+#### If you use People-Based Attribution (PBA)
+
+If you currently use [People-Based Attribution (PBA)](/docs/people-based-attribution-pba), consider switching to Web Performance Measurement for more granular attribution and additional signals.
 
 ### The Web Performance Measurement flow
 
 The Web Performance Measurement flow follows a structured sequence of steps that transforms raw site visits into actionable marketing insights.
 
-1. [Data collection](/docs/web-performance-measurement-overview#1-data-collection): The system captures user interaction data through either the Web SDK (Pixel) or a Server-to-Server (S2S) API.
-2. [Visit recording](/docs/web-performance-measurement-overview#2-visit-recording) : Captures the user’s arrival on the website and logs a visit event, even when the traffic source is not yet known.
-3. [Media source resolution](/docs/web-performance-measurement-overview#3-media-source-resolution) : Identifies the media source by parsing URL parameters in a defined priority order.
-4. [The 30-minute identity delay](/docs/web-performance-measurement-overview#4-the-30minute-identity-delay): Delays attribution decision for 30 minutes to allow for identity resolution via user login.
-5. [Stitching and identity resolution](/docs/web-performance-measurement-overview#5-stitching-and-identity-resolution): Links the current session to a persistent Customer User ID (CUID) or a browser cookie.
-6. [User acquisition event](/docs/web-performance-measurement-overview#6-user-acquisition-ua-event): Records the acquisition-defining event (for example, `first_visit` or a custom acquisition event) within the UA lookback window.
-7. [Pre-acquisition period](/docs/web-performance-measurement-overview#7-preacquisition-period): Attributes intermediate events that occur between the first visit and the UA event.
-8. [Re-engagement and re-acquisition](/docs/web-performance-measurement-overview#8-reengagement-and-reacquisition): Attributes returning users (revisits) based on inactivity windows and determine whether the return is a re-engagement or re-acquisition.
-9. [LTV measurement](/docs/web-performance-measurement-overview#9-ltv-measurement): Attributes ongoing events and revenue to measure the user’s lifetime value, governed by the Attribution Window.
+1. [Data collection](#1-data-collection): The system captures user interaction data through either the Web SDK (Pixel) or a Server-to-Server (S2S) API.
+2. [Visit recording](#2-visit-recording)[:](/docs/web-performance-measurement-overview#2-visit-recording) Captures the user’s arrival on the website and logs a visit event, even when the traffic source is not yet known.
+3. [Media source resolution](#3-media-source-resolution)**:** Identifies the media source by parsing URL parameters in a defined priority order.
+4. [The 30-minute identity delay](#4-the-30minute-identity-delay): Delays attribution decision for 30 minutes to allow for identity resolution via user login.
+5. [Stitching and identity resolution](#5-stitching-and-identity-resolution): Links the current session to a persistent Customer User ID (CUID) or a browser cookie.
+6. [User acquisition event](#6-user-acquisition-ua-event): Records the acquisition-defining event (for example, `first_visit` or a custom acquisition event) within the UA lookback window.
+7. [Pre-acquisition period](#7-preacquisition-period): Attributes intermediate events that occur between the first visit and the UA event.
+8. [Re-engagement and re-acquisition](#8-reengagement-and-reacquisition): Attributes returning users (revisits) based on inactivity windows and determine whether the return is a re-engagement or re-acquisition.
+9. [LTV measurement](#9-ltv-measurement): Attributes ongoing events and revenue to measure the user’s lifetime value, governed by the Attribution Window.
 
 ## The Web Performance Measurement process - step by step
 
@@ -73,15 +73,15 @@ With the source identified and the 30-minute delay complete, the system moves to
 
 ### 6. User acquisition event
 
-Once the user's identity is resolved, the engine looks for the specific action that defines them as acquired. The industry standard is the `first_visit`, but this often represents a weak signal—a user might click an ad accidentally or bounce immediately. By setting a custom acquisition event, such as registration or purchase, you ensure that long-term value (LTV) is attributed to the marketing source that drove a meaningful action, not just a curiosity click.
+Once the user's identity is resolved, the engine looks for the specific action that defines them as acquired. The industry standard is the`first_visit`, but this often represents a weak signal—a user might click an ad accidentally or bounce immediately. By setting a custom acquisition event, such as registration or purchase, you ensure that long-term value (LTV) is attributed to the marketing source that drove a meaningful action, not just a curiosity click.
 
 When a user acquisition event occurs, the attribution engine searches backwards for a period equal to the **Lookback window (user acquisition)** to find a non-organic visit to attribute to. This setting defines the maximum time allowed between a user's visit and the completion of the UA event (Default: 30 days). If no non-organic touchpoint is found within this lookback period, the UA event is considered organic and not attributed. You can set the custom event Lookback window duration when you add your web app to AppsFlyer, see [Lookback window (user acquisition)](/docs/configure-web-performance-measurement-settings#lookback-window-user-acquisition).
 
-Depending on the business model, different events can be defined as the user acquisition trigger, for example:
+Depending on the business model, different events can be defined as the user acquisition trigger, for example
 
-* **Registration completed event (e.g., a banking app)**: The acquisition event is triggered only when the sign-up flow is successfully completed.
-* **First order event (e.g., a food delivery app)**: Browsing or adding items does not count; the event fires only after a successful transaction.
-* **Subscription-activated event (e.g., a streaming or SaaS app)**: The acquisition event is recorded when the subscription is confirmed, not on trial start or app install.
+* **Registration completed event (e.g., a banking app)**. The acquisition event is triggered only when the sign-up flow is successfully completed.
+* **First order event (e.g., a food delivery app)**. Browsing or adding items does not count; the event fires only after a successful transaction.
+* **Subscription-activated event (e.g., a streaming or SaaS app)**. The acquisition event is recorded when the subscription is confirmed, not on trial start or app install.
 
 For more information about setting a user acquisition event, see [User acquisition settings](/docs/configure-web-performance-measurement-settings#user-acquisition-settings).
 
@@ -97,7 +97,7 @@ Once a user is acquired, they may return to the site later. A re-engagement (rev
 
 While *re-engagement* focuses on existing users, a return can also be classified as a *re-acquisition* if the user has been inactive for an extended period. To be eligible for re-acquisition, the user must first cross the **Inactivity Window** (default: 90 days), which defines the period of inactivity required to consider them "churned." Once this window has passed, if the user returns, the engine records a new user acquisition event rather than a standard revisit.
 
-For more information, see [Re-engagement settings](/docs/configure-web-performance-measurement-settings#reengagement-settings) and [Re-acquisition settings](/docs/configure-web-performance-measurement-settings#reacquisition-settings)
+For more information, see [Re-engagement settings](/docs/configure-web-performance-measurement-settings#h_01KGPJ1ZMXXJJNCBB52CHY95Z2) and [Re-acquisition settings](/docs/configure-web-performance-measurement-settings#h_01KGPJMJDX83SBA77A7BSRZ87V)
 
 ### 9. LTV measurement
 

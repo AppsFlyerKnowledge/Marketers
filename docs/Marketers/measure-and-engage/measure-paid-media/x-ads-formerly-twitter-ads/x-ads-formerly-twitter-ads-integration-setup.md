@@ -2,6 +2,8 @@
 title: "X Ads (formerly Twitter Ads) integration setup"
 excerpt: "Integrate your X Ads account with AppsFlyer to display attribution data of X Ads campaigns."
 ---
+**At a glance:** Integrate your X Ads account with AppsFlyer to display attribution data of X Ads campaigns.
+
 ## Overview
 
 X Ads is an Advanced Self-Reporting Network (SRN), enabling AppsFlyer to support campaign measurement for X Ads campaigns through its range of privacy-preserving measurement methods.
@@ -11,44 +13,41 @@ X Ads is an Advanced Self-Reporting Network (SRN), enabling AppsFlyer to support
 **The AppsFlyer attribution flow for X Ads is as follows:**
 
 1. AppsFlyer receives all engagement data from X Ads via server-to-server (S2S) integration and attributes the engagements as follows:
-   - If both the install event and the engagement include a mobile advertiser ID (MAID), AppsFlyer performs deterministic ID matching.
-   - If either the install or the engagement is missing an advertising ID, probabilistic modeling is used for attribution, unless the customer has otherwise configured it.
+   * If both the install event and the engagement include a mobile advertiser ID (MAID), AppsFlyer performs deterministic ID matching.
+   * If either the install or the engagement is missing an advertising ID, probabilistic modeling is used for attribution, unless the customer has otherwise configured it.
 2. All install postbacks are sent to X Ads through the customer's integration, regardless of whether the install is attributed to X Ads.
 3. When an advertiser ID is unavailable, and [Advanced Privacy (AP)](/docs/advanced-privacy-guide-postback-macros-for-ad-networks) is active, certain fields in postbacks sent to X Ads will be restricted. The restricted fields are:
-   - X Ads engagement ID
-   - Hashed device ID
-   - IP address
-   - User Agent
 
-![_- visual selection.png](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)
+   * X Ads engagement ID
+   * Hashed device ID
+   * IP address
+   * User Agent
+
+   [![_- visual selection.png](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)](https://support.appsflyer.com/hc/article_attachments/36433399199249)
 
 ## Connecting your X Ads account to AppsFlyer
 
-> 📘 Note
+> 📘 **Note**
 >
 > Before you begin, make sure you've added a payment method to your X Ads account. Otherwise, you won't be able to activate the partner integration in AppsFlyer.
 
-01. Log in to your X Ads Account at [X Ads.](https://business.x.com/en/advertising)
+1. Log in to your X Ads Account at [X Ads.](https://business.x.com/en/advertising)  
+   If you're not automatically directed to the Ads page, click the Ads button at the top-left corner.
+2. When prompted to select either a **Simple (NEW)** or **Advanced** campaign, select **Advanced**.
+3. Under **Campaign objective**, select **App Installs** or **App re-engagements**, then click **Next**.
 
-    If you're not automatically directed to the Ads page, click the Ads button at the top-left corner.
-02. When prompted to select either a **Simple (NEW)** or **Advanced** campaign, select **Advanced**.
-03. Under **Campaign objective**, select **App Installs** or **App re-engagements**, then click **Next**.
+   ![X-Ads-campaign-objective.png](https://files.readme.io/d91bd357dea4878f098086a573191f64c2d1a38af8a6a809c6de7c468e04e043-6148255768337.png)
+4. Choose your app, then click the **mobile measurement partner** link.
+5. On the **Conversion tracking**page, click **Go to AppsFlyer**.
 
-    ![X-Ads-campaign-objective.png](https://files.readme.io/d91bd357dea4878f098086a573191f64c2d1a38af8a6a809c6de7c468e04e043-6148255768337.png)
-
-04. Choose your app, then click the **mobile measurement partner** link.
-05. On the **Conversion tracking** page, click **Go to AppsFlyer**.
-
-    ![X-Ads-mmp-selection.png](https://files.readme.io/ebe8e97971c01e0d87c694d2ca1fcc996abf608309d96badcbcda2713ab80d3e-6148393350033.png)
-
-06. A notification displays informing you that you're about to leave X Ads to go to the AppsFlyer website. Click **Go to AppsFlyer** and log in to your Dashboard.
-07. In AppsFlyer, from the side menu, select **Collaboration** > **Active Integrations.**
-08. Search for **X Ads** and select it.
-09. In the **Integration** tab, accept the X Ads Terms and Conditions for Mobile App Conversion Recording (MACT), then click **Save integration**.
-10. Turn on **Activate partner**, and click **Log in with X Ads**.
+   ![X-Ads-mmp-selection.png](https://files.readme.io/ebe8e97971c01e0d87c694d2ca1fcc996abf608309d96badcbcda2713ab80d3e-6148393350033.png)
+6. A notification displays informing you that you're about to leave X Ads to go to the AppsFlyer website. Click **Go to AppsFlyer** and log in to your Dashboard.
+7. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations > Marketplace** tab**.**
+8. Search for **X Ads** and select it.
+9. In the **Integration** tab, accept the X Ads Terms and Conditions for Mobile App Conversion Recording (MACT), then click **Save integration**.
+10. Turn on **Activate partner**, and click **Log in with X Ads**.
 11. Authorize AppsFlyer to use your X Ads account by clicking **Authorize app**.
-12. Turn on **Activate Partner** again to display the **Integration** tab settings and enable attribution.
-
+12. Turn on **Activate Partner** again to display the **Integration** tab settings and enable attribution.  
     **Note:** The toggle must stay on (activated) for as long as you work with the partner. Learn more about [partner activation.](/docs/partner-activation-deactivation)
 13. Select your X Ads accounts to activate them, then click **Save & Close**.
 
@@ -70,17 +69,16 @@ Select the accounts to enable attribution.
 
 ### Advanced Privacy
 
-For iOS apps only: The **Advanced Privacy (AP)** toggle lets you control the level of user data shared with X Ads via postbacks. This setting complies with iOS 14.5+ privacy requirements.
-
+For iOS apps only: The **Advanced Privacy (AP)** toggle lets you control the level of user data shared with X Ads via postbacks. This setting complies with iOS 14.5+ privacy requirements.  
 When AP toggle is ON:
 
-- Postbacks follow the [Advanced Privacy template](/docs/advanced-privacy-guide-postback-macros-for-ad-networks).
-- Only [aggregated and anonymous data](/docs/apply-aggregated-advanced-privacy-framework) is shared. No device-level identifiers are included.
+* Postbacks follow the [Advanced Privacy template](/docs/advanced-privacy-guide-postback-macros-for-ad-networks).
+* Only [aggregated and anonymous data](/docs/apply-aggregated-advanced-privacy-framework) is shared. No device-level identifiers are included.
 
-> 📘 Note
+> 📘 **Note**
 >
-> - The Advanced Privacy toggle is **on by default** when activating the X Ads integration.
-> - According to X Ads, keeping Advanced Privacy **ON** may result in **under-reporting** of campaign events and limit performance optimization on X Ads.
+> * The Advanced Privacy toggle is **on by default** when activating the X Ads integration.
+> * According to X Ads, keeping Advanced Privacy **ON** may result in **under-reporting** of campaign events and limit performance optimization on X Ads.
 
 ### Click-through attribution
 
@@ -94,7 +92,7 @@ You can customize this value to 1-23 hours or 1-30 days. We recommend setting th
 
 This slider allows you to set the **maximum time from impression to the install**. Only installs (first launches) that take place within this lookback window, following an ad impression, are attributed to X Ads, providing there was no other relevant ad click.
 
-You can customize this value to 1-23 hours or 1-7 days. We recommend setting the View-through lookback window to 1 day, to align with X Ads.
+You can customize this value to 1-23 hours or 1-7 days. We recommend setting the View-through lookback window to 1 day, to align with X Ads.
 
 ![X-Ads_msc_new_7.png](https://files.readme.io/4f64c994b0cffec692ab99345e539caa4ef07b8f4a439851f18af3aada6ab473-4411049638033.png)
 
@@ -106,9 +104,9 @@ No separate lookback window configuration is needed, as reinstall attribution us
 
 ### Re-engagement settings
 
-For retargeting campaigns on X Ads, AppsFlyer supports **Re-engagement** measurement only. That is an engagement with a retargeting campaign by a user who already has the app installed at the time of engagement.
+For retargeting campaigns on X Ads, AppsFlyer supports **Re-engagement** measurement only. That is an engagement with a retargeting campaign by a user who already has the app installed at the time of engagement.
 
-> ❗️ Important!
+> 📘 **Important!**
 >
 > Ensure Retargeting is enabled for the app on the App Settings page. For details, click [here](/docs/app-settings#reengagement-attribution).
 
@@ -144,31 +142,32 @@ Set an inactivity window period to prevent recording retargeting conversions for
 
 In this section, you can map your AppsFlyer events with your partners via postbacks.
 
-![In-app_event_postbacks_en-us.png](https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png)
+[![In-app_event_postbacks_en-us.png](https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png)](https://support.appsflyer.com/hc/article_attachments/7900234463121)
 
 **To configure in-app event postbacks:**
 
 1. Set the **Partner ID** (if required).
-2. Enable **In-app event postback.**
-3. Click **Add event** to add an SDK or server-to-server event to the list.
+2. Enable **In-app event postback.**
+3. Click **Add event** to add an SDK or server-to-server event to the list.
 4. Complete the parameters required according to the table below.
+
+   
 
 | Parameter | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<br />   - Make sure to activate the event on a device with a non-organic installation and recheck.<br />   - Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.  <br />**Tip**: Don't see the event you are looking for?<br /><br />* Make sure to activate the event on a device with a non-organic installation and recheck.<br />* Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
 | **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Select the most suitable pre-defined AppsFlyer event from the drop-down box. |
-| **for users from** | Select the sending option for the event:<br />#### Note<br />For X Ads to receive agency-attributed postbacks, you must select **All media sources, including organic**. Otherwise, X Ads won't receive such postbacks. <br />   - **This partner only**: send postbacks only when this event is attributed to this partner.<br />   - **All media sources, including organic**: send postbacks for events attributed to any partner and organic events. |
-| **including** | - **No data (default)**: send only the event itself without the event value.<br />   - **Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).<br />   - **Values without revenue**: send all the parameters **excluding** the revenue value. |
+| **for users from** | Select the sending option for the event:<br /><br />CALLSTART::Note::<br /><br />#### Note<br /><br />For X Ads to receive agency-attributed postbacks, you must select **All media sources, including organic**. Otherwise, X Ads won't receive such postbacks.<br /><br />CALLEND::<br /><br />* **This partner only**: send postbacks only when this event is attributed to this partner.<br />* **All media sources, including organic**: send postbacks for events attributed to any partner and organic events. |
+| **including** | * **No data (default)**: send only the event itself without the event value.<br />* **Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).<br />* **Values without revenue**: send all the parameters **excluding** the revenue value. |
 
-5. [Optional] Click ![conditional-iae-postbacks-icon.png](https://files.readme.io/d84715dd43041f10684d42e4fe56fd4f76aa4c38fbf9df227c8f8f5610c4f859-19616850611857.png) to set conditions for sending certain in-app events to the partner.
-
-Learn more about [conditional in-app event postbacks](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks).
+5. [Optional] Click ![conditional-iae-postbacks-icon.png](https://files.readme.io/d84715dd43041f10684d42e4fe56fd4f76aa4c38fbf9df227c8f8f5610c4f859-19616850611857.png) to set conditions for sending certain in-app events to the partner.  
+   Learn more about [conditional in-app event postbacks](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks).
 
 ## Attribution link tab
 
 X Ads does not use attribution links for attribution.
 
-> 📘 Note
+> 📘 **Note**
 >
 > For all [self-reporting networks (SRNs)](/docs/self-reporting-networks-srns), such as Meta ads, Apple Ads, Google Ads, X Ads, etc., this tab is not functional since they don't use external attribution links.
 
@@ -176,14 +175,13 @@ X Ads does not use attribution links for attribution.
 
 The cost integration provides the following aggregated data:
 
-- Cost data for your campaigns, adsets, ads, channel, and geo/countries. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features.
-
-**Note:** Cost data requires an [ROI360](/docs/roi360-cost-aggregation-overview) subscription.
-- Data on clicks, impressions, and enriched data (keywords, campaign names, and adset).
+* Cost data for your campaigns, adsets, ads, channel, and geo/countries. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features.  
+  **Note:** Cost data requires an [ROI360](/docs/roi360-cost-aggregation-overview?query=xpend) subscription.
+* Data on clicks, impressions, and enriched data (keywords, campaign names, and adset).
 
 **To enable the cost API**:
 
-- Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
+* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
 
 [View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
@@ -199,13 +197,13 @@ Use these toggles to give the ad network permissions to handle its own configura
 
 ### Ad network permissions
 
-- **Allow to configure integration** - permit the partner to set up the integration tab (except in-app event postbacks)
-- **Allow to configure in-app event postbacks** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
-- **Allow access to your retention report** - only to the partner's own retention data
-- **Allow access to your aggregate loyal user data** - only to the partner's own loyal user data
-- **Allow access to your aggregate in-app event data** - only to the partner's own in-app event data
-- **Allow access to your aggregate revenue data** - only to the revenue data attributed to the partner
-- **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* **Allow to configure integration** - permit the partner to set up the integration tab (except in-app event postbacks)
+* **Allow to configure in-app event postbacks** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
+* **Allow access to your retention report** - only to the partner's own retention data
+* **Allow access to your aggregate loyal user data** - only to the partner's own loyal user data
+* **Allow access to your aggregate in-app event data** - only to the partner's own in-app event data
+* **Allow access to your aggregate revenue data** - only to the revenue data attributed to the partner
+* **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting [ad network permissions.](/docs/set-up-an-integrated-partner#permissions-tab)
 
@@ -228,9 +226,9 @@ For example, even if the ad destination is a **web landing page**, app installs 
 To measure app activity from X non-app campaigns and gain valuable insights into user behavior, follow these steps in X Ads Manager:
 
 1. Go to the campaign creation form in X Ads Manager.
-2. In the **Delivery** section, turn on **App Conversions** measurement to enable tracking of installs and in-app conversions resulting from the campaign. See more details in the [X Ads documentation](https://business.x.com/en/help/campaign-setup/create-an-app-installs-campaign/mobile-app-measurement-and-attribution) (under _"Measuring app conversions on non-app objectives"_).
+2. In the **Delivery** section, turn on **App Conversions** measurement to enable tracking of installs and in-app conversions resulting from the campaign. See more details in the [X Ads documentation](https://business.x.com/en/help/campaign-setup/create-an-app-installs-campaign/mobile-app-measurement-and-attribution) (under *"Measuring app conversions on non-app objectives"*).
 
-> ❗️ Important!
+> 📘 **Important!**
 >
 > This functionality is currently **supported only on Android**.
 
@@ -240,20 +238,20 @@ X Ads sends SKAdNetwork postback data via a dedicated API. SKAN data from X Ads 
 
 X Ads enriches SKAN postbacks with the following data fields:
 
-- Campaign name
-- Campaign ID
-- Adset name
-- Adset ID
+* Campaign name
+* Campaign ID
+* Adset name
+* Adset ID
 
 ### X Ads user privacy
 
 X Ads advertisers and users can control how they share information with advertisers and business partners:
 
-- Beginning **July 31, 2021**, advertisers who are **not enrolled** in the X Ads Advanced Mobile Measurement (AMM) program will no longer receive X Ads MACT user-level data. As a result, **all X Ads data will be restricted** in AppsFlyer’s raw data tools. [Learn more about X Ads data restrictions.](/docs/about-raw-data-identifier-restrictions#x-ads-formerly-twitter)
-- If the advertiser is in the AMM program and the user has acknowledged the privacy notice, **no raw data restrictions will apply**.
-- Regardless of AMM status, if the user is in the EU and has agreed to share data with business partners, **no raw data restrictions will apply**.
-- If the user is in the EU and has **not** agreed to share data with business partners, **raw data restrictions will apply**.
-- Aggregate attribution data reflects correctly in AppsFlyer and is not impacted by the X Ads policy.
+* Beginning **July 31, 2021**, advertisers who are **not enrolled** in the X Ads Advanced Mobile Measurement (AMM) program will no longer receive X Ads MACT user-level data. As a result, **all X Ads data will be restricted** in AppsFlyer’s raw data tools. [Learn more about X Ads data restrictions.](/docs/about-raw-data-identifier-restrictions#x-ads-formerly-twitter)
+* If the advertiser is in the AMM program and the user has acknowledged the privacy notice, **no raw data restrictions will apply**.
+* Regardless of AMM status, if the user is in the EU and has agreed to share data with business partners, **no raw data restrictions will apply**.
+* If the user is in the EU and has **not** agreed to share data with business partners, **raw data restrictions will apply**.
+* Aggregate attribution data reflects correctly in AppsFlyer and is not impacted by the X Ads policy.
 
 Through the AMM Program, advertisers may receive more complete user-level data by granting X Ads the right to perform an audit. This audit ensures that X Ads data is used exclusively for measurement purposes, consistent with industry standards and data protection laws.
 
@@ -263,14 +261,14 @@ Through the AMM Program, advertisers may receive more complete user-level data b
 
 The following fields in the Advanced SRN integration for X Ads **replace** their legacy counterparts across the AppsFlyer dashboard, aggregated reports, and event-level raw data.
 
-| **AppsFlyer’s**<br />**Data Column** | **Legacy SRN** | Advanced SRN |
+| **AppsFlyer’s**  <br />**Data Column** | **Legacy SRN** | Advanced SRN |
 | --- | --- | --- |
 | **PID** | Twitter | Twitter |
 | **Campaign Name** | Campaign Name | Campaign name |
-| **Campaign ID** | Campaign ID<br />(base36: different X's dashboard, e.g. 21I3V9) | Campaign ID<br />(base10: same as X's dashboard, e.g. 123456789) |
-| **Adset Name** | Line Item ID<br />(base36: different X's dashboard, e.g. 21I3V9) | Line Item Name |
-| **Adset ID** | Line Item ID<br />(base36: different X's dashboard, e.g. 21I3V9) | Line Item ID<br />(base10: same as X's dashboard, e.g. 123456789) |
-| **Ad Name** | Tweet ID | Ad Name<br />(if available) |
+| **Campaign ID** | Campaign ID  <br />(base36: different X's dashboard, e.g. 21I3V9) | Campaign ID  <br />(base10: same as X's dashboard, e.g. 123456789) |
+| **Adset Name** | Line Item ID  <br />(base36: different X's dashboard, e.g. 21I3V9) | Line Item Name |
+| **Adset ID** | Line Item ID  <br />(base36: different X's dashboard, e.g. 21I3V9) | Line Item ID  <br />(base10: same as X's dashboard, e.g. 123456789) |
+| **Ad Name** | Tweet ID | Ad Name  <br />(if available) |
 | **Ad ID** | Tweet ID | Tweet ID |
 | **Match Type** | srn | id\_matching / probabilistic |
 

@@ -63,9 +63,9 @@ The different units on which a plan can be based:
 
 | Unit | Description | Learn more |
 | --- | --- | --- |
-| Non-organic installs (NOI) | New app installs attributed to a media source | - [Overview dashboard](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv)<br />- [Billing for iOS apps](/docs/account-management-plans-payments-and-billing#conversion-measurement-options-for-ios-app-billing) |
-| Re-engagements | Existing users engaging in a retargeting campaign, which leads to app launches | [Overview dashboard](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv) |
-| Re-attributions | Former users engaging in a retargeting campaign, which leads to new app installs and app launches | [Overview dashboard](/docs/overview-dashboard-user-acquisition-and-retargeting-ltv) |
+| Non-organic installs (NOI) | New app installs attributed to a media source | - Overview dashboard<br />- [Billing for iOS apps](/docs/account-management-plans-payments-and-billing#conversion-measurement-options-for-ios-app-billing) |
+| Re-engagements | Existing users engaging in a retargeting campaign, which leads to app launches | Overview dashboard |
+| Re-attributions | Former users engaging in a retargeting campaign, which leads to new app installs and app launches | Overview dashboard |
 | Monthly active users (MAU) | The number of unique users who opened the app during the invoice month | [Activity dashboard metrics](/docs/activity-dashboard#metric-definitions) |
 | In-app events | Any action performed by a user in your app following the install. For example, login, tutorial completed, purchase, and achieved game level. | [Rich in-app events guide](/docs/in-app-events-overview) |
 | Non-direct web conversions<br />(for PBA packages) | Any user action on your website that:<br />- You've defined it as a conversion<br />- It was attributed as a referred visit (originating from a web campaign) | [People-Based Attribution (PBA)](/docs/people-based-attribution-pba-overview) |

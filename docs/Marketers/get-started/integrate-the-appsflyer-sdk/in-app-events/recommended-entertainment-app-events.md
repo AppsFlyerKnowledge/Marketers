@@ -116,7 +116,7 @@ Subscription is at the core of streaming services. This event can help you:
 * When the user successfully subscribes
 * When a subscription is renewed
 
-See our [Subscription attribution—Overview](/docs/legacy-subscription-attribution-overview) for more information.
+See our Subscription attribution—Overview for more information.
 
 **Event parameters**
 

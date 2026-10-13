@@ -47,7 +47,6 @@ Asset types supported by the Creative Optimization dashboard include:
 > * The “Creative similarity” feature is not yet available for
 >   carousel ads.
 
-
 ### Matching creatives
 
 Creative Optimization has the unique ability to identify which assets are the same, across multiple channels and campaigns, regardless of naming conventions or IDs. This is done by AI and computer vision algorithms that match properties such as visual context, sound, and pixels. Additionally:
@@ -77,7 +76,6 @@ Meta Advantage+ (dynamic creatives), and Google Universal App Campaigns (UAC) ca
 > Down funnel metrics, such as Revenue and ROAS, are calculated based on this ratio as well.
 >
 > ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
-
 
 ## Using the dashboard
 
@@ -119,21 +117,15 @@ Creative data in the dashboards is presented in 3 separate view types: Unified, 
 
 With an AppsFlyer ROI360 subscription, cost data displayed in the Creative Optimization dashboards comes from ROI360, which consolidates and processes cost data from your ad network partners, and adds additional cost-based metrics. Without this subscription, cost data comes from your integrated media partners’ own reporting. We recommend an ROI360 subscription to access the most comprehensive and current cost data. The table below explains the Creative Optimization differences with and without ROI360.
 
-
-
 | With ROI360 | Without ROI360 |
 | --- | --- |
 | * [Has data as reported via any ROI360 method](/docs/roi360-guide-cost-and-revenue-data#cost-tools).<br />* [Has all the ROI360 cost-reporting capabilities](/docs/roi360-guide-cost-and-revenue-data#cost-tools).<br />* Creative ETL includes cost data (requires an ROI360 Advanced subscription). | * Cost data, as reported directly by your integrated partners, is limited to Creative Optimization dashboards, not Creative ETL. |
-
-
 
 Learn more about [ROI360](/docs/roi360-guide-cost-and-revenue-data).
 
 ### Standard metrics and dimensions
 
 Standard metrics/dimensions available in the dashboards include:
-
-
 
 | Metric/dimension | Description |
 | --- | --- |
@@ -156,13 +148,9 @@ Standard metrics/dimensions available in the dashboards include:
 | Unique users (D0, D1, D3, D7, D14, D30, D60, D90) | Cohorted unique users that engaged with your app up to, and including, the specified day from the install |
 | Retention (D0, D1, D3, D7, D14, D30, D60, D90) | Cohorted rate (%) of users who continue to use your service or product over a predetermined period<br /><br />**Note:** The data is aligned with the AppsFlyer Cohort dashboard. |
 
-
-
 ### Unique metrics and dimensions
 
 Unique metrics/dimensions available in the dashboards include:
-
-
 
 | Metric/dimension | Description |
 | --- | --- |
@@ -177,8 +165,6 @@ Unique metrics/dimensions available in the dashboards include:
 | Month | Breakdown of performance by month |
 | Week | Breakdown of performance by week |
 | End cards | This refers to an ad that may display at the end of video ads, and which usually contains basic information about the promoted app. The ability to group creatives by end cards gives additional insights for the optimization of creatives, such as comparing the same end card with different videos to identify the best combination. You can view creatives by the following end card data:<br /><br />* End card name<br />* End card ID<br />* End card duration<br />* End card resolution<br />* End card orientation<br />* End card type<br /><br />**Notes:**<br /><br />* * End card data is available for the following partners: AppLovin, IronSource, Moloco, UnityAds, Snapchat, and YouAppi.<br />  * Currently, only ironSource, Unity Ads, and Snapchat provide the unique end card names. For all other partners, the end card names will appear identical to the creative names in the dashboards. |
-
-
 
 ### Custom metrics
 
@@ -196,7 +182,7 @@ Create custom metrics to measure the performance of your creatives exactly how y
      * *Metrics* include impressions, clicks, installs, CTR, CVR, CPM, IPM, Cost, eCPI, Reattributions, Reengagements, Revenue, ROAS, Retention, Unique users, Appearances, partner metrics
      * Combine with various *Operators, Numbers,* and/or *In-app events*
      * Specific in-app events are selected from the dropdown menu. For each in-app event, you can add any metrics per the event separately to get highly specific insights, for example, af\_purchase revenue + af\_login count.  
-       ![](https://support.appsflyer.com/hc/article_attachments/30129836915729)
+       ![](https://files.readme.io/2b8bdaa8c1fb47c7e78b59e7e24f37aa3248800c7a3ed5cc821c2e11622a93fe-30129836915729.png)
 3. Click **Save**.  
    Your new custom metric is created and will display in the filter bar and table settings with "Custom" next to it.
 
@@ -210,14 +196,14 @@ Custom metrics can also be edited or deleted.
 **To edit:**
 
 1. Click the **Edit existing custom metric** dropdown (on the **Custom metrics** form) and select the one you wish to edit.  
-   ![](https://support.appsflyer.com/hc/article_attachments/30129836916369)
+   ![](https://files.readme.io/b792e08152482bed11ea8ce5ea5795c3df961c257d07397b5b4d787f40a8ea2e-30129836916369.png)
 2. Make any changes you wish, then click **Save**.  
    **Note:** You can also click **Save as**to save it as a new custom metric.
 
 **To delete:**
 
 * After selecting the custom metric you wish to delete from the dropdown, click the delete icon.  
-  ![](https://support.appsflyer.com/hc/article_attachments/30129810517393)
+  ![](https://files.readme.io/8370c5bfec23ef2ac15e266e98be357e496aef51fa14ca5b4c853b0b38910a10-30129810517393.png)
 
 ### Partner dimensions and metrics
 
@@ -294,7 +280,6 @@ Add a new [partner integration](/docs/creative-optimization-partner-integrations
 >
 > We recommend entering the partner metrics credentials when setting up a new partner integration. However, it's not mandatory. You can save the integration and add the credentials at a later time. But please note that we pull 90 days of partner data from the time the partner integration is created, so not entering the partner metric credentials may result in missing data.
 
-
 ### Save and share views
 
 After selecting your filters, you can save your selections for quick and easy access to the info you want to see in the dashboards so there's no need to reselect the filters each time you log in. The saved view applies to both the Creative Optimization Overview and Discovery dashboards. You can save a dashboard view as private or shared. Shared views are visible to other account users. Additionally, you can share dashboard views with others via the share URL.
@@ -306,7 +291,7 @@ After selecting your filters, you can save your selections for quick and easy ac
 **To save a private dashboard view (only visible to you):**
 
 1. At the top of the dashboard that's currently showing, click the dropdown icon, make sure the menu has the private icon selected, and then click **+ Save as new private dashboard.**  
-   ![](https://support.appsflyer.com/hc/article_attachments/25381406386065)
+   ![](https://files.readme.io/c1ed2ac6917fa105641f054623ad87a562f4b80042379301c8736bffaa57a22e-25381406386065.png)
 2. Enter a dashboard name and click **Save**.
 3. Use the menu icons to edit and delete dashboard views, change the share settings from private to shared, or star a view, marking it as the default view to display upon login.
 
@@ -315,7 +300,7 @@ After selecting your filters, you can save your selections for quick and easy ac
 **To save a shared dashboard view (visible to other account users):**
 
 1. At the top of the dashboard that's currently showing, click the dropdown icon, make sure the menu has the shared icon selected, and then click **+ Save as new shared dashboard.**  
-   **![](https://support.appsflyer.com/hc/article_attachments/25381406390033)**
+   **![](https://files.readme.io/d4a7f206d49ddea230883ee6e119caab119164fa3bee9d0c3f02d487c9cf8a36-25381406390033.png)**
 2. Enter a dashboard name and click **Save**.  
    The view is saved and appears in the list of dashboard views for all other account users.
 3. Use the menu icons to edit and delete dashboard views, change the share settings from shared to private, or star a view, marking it as the default view to display upon login.
@@ -435,11 +420,9 @@ This is useful for marketing and creative teams whose creatives are named intent
 
 ### Traits and limitations
 
-
-
 | Trait | Remarks |
 | --- | --- |
 | Data source | The source of performance data in the Creative Optimization dashboards (aside from Partner metrics) comes from the AppsFlyer attribution model. **Note**: There are inherent differences in the attribution models used by the various advertising platforms and players in the mobile advertising ecosystem, which can explain reporting discrepancies between them. |
 | Multiple assets | For creatives that include multiple assets, only one asset is displayed (usually the video when applicable). |
-| Data freshness | The Creative Optimization Overview and Discovery dashboards are updated once daily at UTC + 10 (all creative data from the last 90 days are updated). This means that the daily update time will vary depending on your geographic location. To determine what time that is for you, use the calculation **0 UTC + 10 + your local time zone**.<br /><br />**Some examples:**  <br />New York: 0 UTC + 10 - 5 = 5:00  <br />Berlin: 0 UTC + 10 + 1 = 11:00  <br />Shanghai: 0 UTC + 10 + 8 = 18:00<br /><br />**Note**: There may be some discrepancies between Creative Optimization and the AppsFlyer Overview dashboard due to data freshness (data is updated once a day in Creative Optimization vs. real-time in Overview). |
+| Data freshness | The Creative Optimization Overview and Discovery dashboards update once daily at 10:00 UTC (refreshing creative data from the last 90 days).<br /><br />Depending on your time zone, the daily update occurs at:<br /><br />* New York: 5:00 AM EST / 6:00 AM EDT<br />* Berlin: 11:00 AM CET / 12:00 PM CEST<br />* Shanghai: 6:00 PM CST<br /><br />For other locations, convert 10:00 UTC to your local time zone.<br /><br />**Note:** Data in Creative Optimization updates once a day, whereas the main AppsFlyer Overview dashboard updates in real time, which may cause temporary discrepancies. |
 | Currency | All monetary metrics in Creative Optimization are in USD. |
