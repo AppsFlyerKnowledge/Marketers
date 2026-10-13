@@ -33,7 +33,7 @@ For more details about partner activation please click [here](/docs/partner-acti
 
 **Enable View-Through attribution**
 
-[![appl013.png](https://files.readme.io/513c24cf8bcf72d8efc3324411a1bea1fd45e8c7cb721c7f1144463fa030492c-50706625495953.png)](https://support.appsflyer.com/hc/article_attachments/50706625495953)
+[![appl013.png](https://files.readme.io/513c24cf8bcf72d8efc3324411a1bea1fd45e8c7cb721c7f1144463fa030492c-50706625495953.png)](https://files.readme.io/513c24cf8bcf72d8efc3324411a1bea1fd45e8c7cb721c7f1144463fa030492c-50706625495953.png)
 
 Toggle this to ON if you want to attribute view-through installs from Glispa. The view-through lookback slider is available on the attribution link tab (described below).
 
@@ -97,7 +97,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the [click lookback window here](/docs/set-up-lookback-windows).
 
-[![](https://support.appsflyer.com/hc/article_attachments/50706581523217)](https://support.appsflyer.com/hc/article_attachments/50706581523217)
+[![](https://files.readme.io/72e192640be302ffede694bc264f1ce5746022242bfa441b29f835605a07004d-50706581523217.png)](https://files.readme.io/72e192640be302ffede694bc264f1ce5746022242bfa441b29f835605a07004d-50706581523217.png)
 
 ### Click attribution link
 

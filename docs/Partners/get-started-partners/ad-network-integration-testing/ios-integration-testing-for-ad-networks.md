@@ -70,7 +70,7 @@ Complete the prerequisites before beginning to execute the test procedure.
 6. Tap **Allow**.  
    The **Install Data** page displays.
 
-   [![PartnerIntegrationInstallData.png](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)](https://support.appsflyer.com/hc/article_attachments/360015093657)
+   [![PartnerIntegrationInstallData.png](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
 7. Tap **ATT Status**.  
    The **Authorized** status displays.
 8. Validate the attribution using the following parameters. If the validation fails, see [Troubleshooting](/docs/ios-integration-testing-for-ad-networks#troubleshooting).
@@ -80,7 +80,7 @@ Complete the prerequisites before beginning to execute the test procedure.
    3. `media_source`: your ad network
 9. Tap **In-App Event Tests.**
 
-   [![AppPurchase.png](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)](https://support.appsflyer.com/hc/article_attachments/360015251478)
+   [![AppPurchase.png](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)
 10. Tap **Purchase Event.**  
     The Purchase Event confirmation displays.
 11. Verify that:
@@ -118,7 +118,7 @@ Complete the prerequisites before beginning to execute the test procedure.
    ![AppDialogue_us-en.png](https://files.readme.io/73eb2816ccb3b231646e1cf2d8697e1dfbd4714bf2b0b08532db78d359157da1-360015254318.png)
 6. Tap **Ask App not to Track.**The **Install Data** page displays.
 
-   [![PartnerIntegrationInstallData.png](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)](https://support.appsflyer.com/hc/article_attachments/360015093657)
+   [![PartnerIntegrationInstallData.png](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
 7. Tap **ATT Status**.  
    The **Denied** status displays.
 8. Validate the attribution using the parameters listed. If validation fails, see [Troubleshooting](/docs/ios-integration-testing-for-ad-networks#troubleshooting).
@@ -128,7 +128,7 @@ Complete the prerequisites before beginning to execute the test procedure.
    3. `media_source`: your ad network
 9. Tap **In-App Event Tests.**
 
-   [![AppPurchase.png](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)](https://support.appsflyer.com/hc/article_attachments/360015251478)
+   [![AppPurchase.png](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)](https://files.readme.io/d4458cd562afa693d28827a23152a038a208142360488111bc62ca55a378bc4d-360015251478.png)
 10. Tap **Purchase Event.**
 11. Verify that:
     1. You received install and purchase postbacks.
@@ -154,7 +154,7 @@ The Partner Integrations app is available in the App Store. The app sends instal
 
 When the app is opened for the first time, the iOS **request to track** dialogue displays, followed by the **Install Data** page displaying the conversion data recorded in the AppsFlyer platform. Test in-app events are triggered in the user interface.
 
-[![PartnerIntegrationInstallData.png](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)](https://support.appsflyer.com/hc/article_attachments/360015093657)
+[![PartnerIntegrationInstallData.png](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)](https://files.readme.io/50c601ba330631ce96abcc7fd5b765b16858216eb503df2b0573f1420b58641d-360015093657.png)
 
 The following functions are available:
 

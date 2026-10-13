@@ -83,9 +83,9 @@ In this section you can map your AppsFlyer events with InMobi via postbacks.
 
 ## Attribution link tab
 
-In this tab, you can create the attribution links you want to send to Inmobi for attributing Inmobi's campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links. [![](https://support.appsflyer.com/hc/article_attachments/360002187398)](https://support.appsflyer.com/hc/article_attachments/360002187398)
+In this tab, you can create the attribution links you want to send to Inmobi for attributing Inmobi's campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links. [![](https://files.readme.io/1f198f652bc960ea8d20c58d4bf704b8aff1361d105d9ed72c52c070eb88d2ce-360002187398.png)](https://files.readme.io/1f198f652bc960ea8d20c58d4bf704b8aff1361d105d9ed72c52c070eb88d2ce-360002187398.png)
 
-[![](https://support.appsflyer.com/hc/article_attachments/360001866409)](https://support.appsflyer.com/hc/article_attachments/360001866409)
+[![](https://files.readme.io/03371cdc64826e77cee3bd0adb90280aa59ebddd34ec85d8946ae9646ce86ce8-360001866409.png)](https://files.readme.io/03371cdc64826e77cee3bd0adb90280aa59ebddd34ec85d8946ae9646ce86ce8-360001866409.png)
 
 This tab is divided into different sections:
 
@@ -106,7 +106,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-[![](https://support.appsflyer.com/hc/article_attachments/360002234165)](https://support.appsflyer.com/hc/article_attachments/360002234165)
+[![](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
 
@@ -153,7 +153,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the [click lookback window here](/docs/set-up-lookback-windows).
 
-[![](https://support.appsflyer.com/hc/article_attachments/360002254509)](https://support.appsflyer.com/hc/article_attachments/360002254509)
+[![](https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png)](https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png)
 
 ### Click attribution link
 
@@ -169,7 +169,7 @@ You can customize this value to 1-23 hours or 1-7 days.
 
 More details about the [view-through attribution here](/docs/set-up-lookback-windows).
 
-[![](https://support.appsflyer.com/hc/article_attachments/360002234185)](https://support.appsflyer.com/hc/article_attachments/360002234185)
+[![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
 
 ### Impressions attribution link
 

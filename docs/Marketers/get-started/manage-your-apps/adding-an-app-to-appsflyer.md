@@ -123,7 +123,7 @@ Use this option for the following platforms:
 
 **Full URL:** The full URL of the website for which you want to measure traffic. This is the website on which you have implemented (or will implement) the [PBA Web SDK](/docs/onboarding-guide-to-people-based-attribution#2).
 
-[![URL_diagram](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)](https://support.appsflyer.com/hc/article_attachments/33198323426961)
+[![URL_diagram](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)
 
 Include –
 
@@ -263,7 +263,7 @@ Each legacy **Web Dev Key can be reused for only one** new Web app.
   * From the [Roku Developer Dashboard](https://developer.roku.com/developer), click on the name of the channel you are adding to AppsFlyer. This opens the Roku Preview & Publish page for the channel.
   * The number at the end of the URL page is the Channel ID:
 
-    ![](https://support.appsflyer.com/hc/article_attachments/33198275490577)
+    ![](https://files.readme.io/89f6513eee03558a9dc8e465fe67953780074477fc0fe20675b721d8116671af-33198275490577.png)
 
 ### Amazon Vega OS
 
@@ -298,7 +298,7 @@ Note: To access your unique app store web page, add the bundle ID to the URL "[h
 
 For example, if your bundle ID is "G15147002586", the URL of your page will be "[https://www.samsung.com/us/appstore/app/G15147002586/](https://www.samsung.com/us/appstore/app/G15147002586/) ". The developer URL, bundle ID, and app store ID are then displayed in the metadata on that page.
 
-![](https://support.appsflyer.com/hc/article_attachments/33198275491729)
+![](https://files.readme.io/ee4b192abab24e064013a4a034bda38fb3ed49497ae333e327e1b78dd05d5349-33198275491729.png)
 
 #### LG WebOS
 
@@ -341,7 +341,7 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 **App ID:**The Meta Quest app ID, as it appears at the end of the Meta app store URL from which the app is downloaded. Includes 3-50 characters from: `A-Z` `a-z0-9._-`.
 
-![](https://support.appsflyer.com/hc/article_attachments/33198323442449)
+![](https://files.readme.io/1938b3f89b866ebdd3452367d7410c423ce57372544a801ca3d1b409f3bff541-33198323442449.png)
 
 #### Nintendo Switch
 
@@ -357,7 +357,7 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 **App ID:** The Xbox app ID, as it appears at the end of the Xbox store URL from which the app is downloaded. Includes 12 letters and digits only (`A-Z` `a-z0-9`).
 
-![](https://support.appsflyer.com/hc/article_attachments/33198275505041)
+![](https://files.readme.io/c33ffcb35d4488b9340cfa8b475097eab7b79bfeaf94e8cf8ce6478dda07d341-33198275505041.png)
 
 **Note:** App ID is case-sensitive.
 
@@ -367,7 +367,7 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 **App ID:** The Epic Games app ID, as it appears in the store from which the app is downloaded. Includes 3-50 characters from: `A-Z` `a-z0-9._-`.
 
-![](https://support.appsflyer.com/hc/article_attachments/33198275508497)
+![](https://files.readme.io/81d1f043c8a7ef5e367a62d564f8c6241c6057445363b21286e3f72ad4210cf6-33198275508497.png)
 
 #### Native PC
 
@@ -377,7 +377,7 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 ### Enter additional information (not applicable to web apps):
 
-![](https://support.appsflyer.com/hc/article_attachments/33198323448081)
+![](https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png)
 
 #### **Select currency**
 

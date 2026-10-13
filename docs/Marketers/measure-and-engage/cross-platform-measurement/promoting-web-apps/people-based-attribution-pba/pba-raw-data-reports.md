@@ -105,7 +105,7 @@ Raw data fields are populated in part from data originating in the mobile app us
 * PBA reports are written Daily to the Data Locker in h=23 folder for events occurring on a given day.
 * Data can't be written retroactively.
 
-**![AppsFlyerAdmin_us-en.png](https://support.appsflyer.com/hc/article_attachments/21591689590161) To enable PBA reports an account admin must set up Data Locker:**
+**![AppsFlyerAdmin_us-en.png](https://files.readme.io/23a82846b437ddc93e848a70648a9c217777d43162c5ac6a5ff3fd9c586578c1-21591689590161.png) To enable PBA reports an account admin must set up Data Locker:**
 
 1. In AppsFlyer, from the side menu, select **Report** > **Data Locker**.
 2. Select all the reports in the People-Based Attribution section.

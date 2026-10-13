@@ -4,7 +4,7 @@ excerpt: "Measure the quality of your users throughout their user journey by rec
 ---
 **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your entertainment app.
 
-## ![InApp_Events_streaming.png](https://support.appsflyer.com/hc/article_attachments/20659453813905) Entertainment
+## ![InApp_Events_streaming.png](https://files.readme.io/27f2f38b0ce7d242580c60edeff730079a3801f98ff0d7cb8a605380ed11071f-20659453813905.png) Entertainment
 
 With the growing requirement by users for on-demand content, the entertainment applications market has become very competitive. The typical events that we suggest recording are user subscriptions, streaming content, and downloading and saving content.
 
@@ -30,7 +30,7 @@ These events are also relevant for entertainment apps that run on the following 
 > For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
 
 
-[![Flowchart_for_recommended_events entertainment_app_user_journey](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)](https://support.appsflyer.com/hc/article_attachments/360020063177)
+[![Flowchart_for_recommended_events entertainment_app_user_journey](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)
 
 ## Recommended structures for predefined events
 

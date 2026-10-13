@@ -33,7 +33,7 @@ OneLink API is a premium feature that lets you turn any owned channel into a dir
 1. Generate the [OneLink API token](/docs/managing-appsflyer-tokens#token-types) (Admin permissions needed).
 2. [Create a OneLink template](/docs/create-a-onelink-template#procedures).
 3. Copy the Template ID.   
-   [![](https://support.appsflyer.com/hc/article_attachments/360019487418)](https://support.appsflyer.com/hc/article_attachments/360019487418)
+   [![](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)
 4. Share the template ID and API token with the developer and have them follow these [instructions](https://dev.appsflyer.com/hc/reference/onelinkapi_v2_overview).
 
 ## **Dashboard**

@@ -14,7 +14,7 @@ excerpt: "Learn how to set up and manage your attribution links, default postbac
   * Allowlist AppsFlyer server [IP addresses](/docs/appsflyer-server-ip-address-ranges-allowlisting) in your firewalls and security systems to ensure communication with your endpoints
   * TLS versions: TLS 1.1, TLS 1.2+ with the [ciphers listed.](/docs/appsflyer-https-ssl-encryption-policy-support#outgoing-messages-appsflyer-as-client)
   * Ports: 80, 443
-* ![AppsFlyerAdmin_us-en.png](https://support.appsflyer.com/hc/article_attachments/18271759619089) Only Admin users can access and manage this section.
+* ![AppsFlyerAdmin_us-en.png](https://files.readme.io/047d2ffa8bd5258c09f60c6f560162b285c4e9742d98b1158952a26d988ce763-18271759619089.png) Only Admin users can access and manage this section.
 
 ## Accessing Integration management
 

@@ -4,7 +4,7 @@ excerpt: "Measure the quality of your users throughout their user journey by rec
 ---
 **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your telecommunication app.
 
-## ![telecommunications_icon.png](https://support.appsflyer.com/hc/article_attachments/20659194885393) Telecommunication
+## ![telecommunications_icon.png](https://files.readme.io/42f1aac3b825957d9d0584d83480c441b9d53665cc6cf1a6b8cd1803bb9b6121-20659194885393.png) Telecommunication
 
 Telecommunication apps enable users to purchase and manage cell phone plans, data plans, and so on. The typical events that we suggest recording include purchases, top-ups, and subscriptions.
 
@@ -24,7 +24,7 @@ Recording these events can help you determine:
 > For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
 
 
-[![Flowchart_for_recommended_events_telecommunication_app_user_journey](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)](https://support.appsflyer.com/hc/article_attachments/4404604045457)
+[![Flowchart_for_recommended_events_telecommunication_app_user_journey](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)
 
 ## Recommended structures for predefined events
 

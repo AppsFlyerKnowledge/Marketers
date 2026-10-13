@@ -18,7 +18,7 @@ Find [here](/docs/in-app-events-event-structure) the list of **rich in-app event
 
 Learn more about [mapping events on Meta](/docs/meta-ads-integration-setup#inapp-event-mapping).
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/ea80246ce8005c4150c70790aefb26aa6a73b5b5ae0eb07f90dcad8b50f2f1a8-37750374219153.png)](https://support.appsflyer.com/hc/article_attachments/37750374219153)
+[![In-app_event_postbacks_en-us.png](https://files.readme.io/ea80246ce8005c4150c70790aefb26aa6a73b5b5ae0eb07f90dcad8b50f2f1a8-37750374219153.png)](https://files.readme.io/ea80246ce8005c4150c70790aefb26aa6a73b5b5ae0eb07f90dcad8b50f2f1a8-37750374219153.png)
 
 Note that there's no predefined event for sending uninstalls to Meta ads. To send uninstalls, use a [custom event](/docs/meta-ads-in-app-event-mapping#custom-inapp-events-mapping).
 
@@ -64,7 +64,7 @@ The event name and the event value (including the event parameters) configured i
 
 Note that you are able to [use these events to optimize your campaigns](https://www.facebook.com/business/help/2308889442692949?id=1716638325041491).
 
-[![](https://support.appsflyer.com/hc/article_attachments/37750368969233)](https://support.appsflyer.com/hc/article_attachments/37750368969233)
+[![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
 
 ### Automatic parameter mapping with the custom event
 

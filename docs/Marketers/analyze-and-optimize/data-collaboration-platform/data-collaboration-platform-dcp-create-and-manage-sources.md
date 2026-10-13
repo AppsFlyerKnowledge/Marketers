@@ -263,7 +263,7 @@ source_name1/
 
 Example of how folder structure should look after uploading a complete snapshot of the source files for 2 days (and programmatically creating date/version/data folders and \_SUCCESS files), your bucket/folder structure might look something like this:
 
-[![Snapshot example bucket.png](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)](https://support.appsflyer.com/hc/article_attachments/38096860329233)
+[![Snapshot example bucket.png](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)
 
 #### 
 
@@ -640,7 +640,7 @@ The DCR key folder is generally created manually using the interface of your sel
 
 * Click the 3-dot (actions) menu on the upper right and select **DCR key**.
 
-[![DCR key.png](https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png)](https://support.appsflyer.com/hc/article_attachments/24740007159825)
+[![DCR key.png](https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png)](https://files.readme.io/3a15c67e4683e9d6c748cfb3fe7d95be9fa44e47d82a7615abadb90575f1fce1-24740007159825.png)
 
 After creating the DCR key folder, your bucket/folder structure would look something like this:
 

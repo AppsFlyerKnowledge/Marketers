@@ -62,7 +62,7 @@ The path to the report consists of the following folder hierarchy:
 
 ### DL Report folder hierarchy
 
-[![](https://support.appsflyer.com/hc/article_attachments/39751330744209)](https://support.appsflyer.com/hc/article_attachments/39751330744209)
+[![](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)
 
 ## BI Developer considerations
 

@@ -54,13 +54,13 @@ To create a custom report, follow these steps:
 
 1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
 2. On the **Data Collaboration Platform** page, select the relevant collaboration.
-3. On the measurement dashboard, click ![](https://support.appsflyer.com/hc/article_attachments/34061156892177) **C![]() reate report.**
-4. In the dialog that appears click ![](https://support.appsflyer.com/hc/article_attachments/34061156893457) **Customize**.
+3. On the measurement dashboard, click ![](https://files.readme.io/ed483d2c2b845f1274b3cf84887ea15e0b0384a5f1cf3a5148b1fb8458cd6ec9-34061156892177.png) **C![]() reate report.**
+4. In the dialog that appears click ![](https://files.readme.io/317ded6d0dbe6b0acfee8d3b8c7898dbab1c9b7ae621802fa867f2a6069f5d79-34061156893457.png) **Customize**.
 5. On the **New report** page, perform the listed steps.
 
 ### 2. Set the report type
 
-Under the **Report type** step, select ![](https://support.appsflyer.com/hc/article_attachments/34061156898449)  **Commerce media measurement,** then, click **Next.**
+Under the **Report type** step, select ![](https://files.readme.io/c94890451d831a5a3f1f12b6f42c1c86de1453c175c40cc450e915f6f1f128ad-34061156898449.png)  **Commerce media measurement,** then, click **Next.**
 
 ### 3. Set the report scope
 

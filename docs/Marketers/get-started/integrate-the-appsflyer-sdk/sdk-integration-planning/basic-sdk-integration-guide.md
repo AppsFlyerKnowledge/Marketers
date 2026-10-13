@@ -15,7 +15,7 @@ Before your developer can install and integrate the SDK, you must retrieve the d
 1. In AppsFlyer, from the side menu, select **Settings** > **App Settings** > **Dev Key Management**.
 2. Copy your dev key, and send it to your mobile developer.
 
-   ![](https://support.appsflyer.com/hc/article_attachments/30603573703057)
+   ![](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)
 
 #### Provide the Dev key to your developer
 
@@ -236,7 +236,7 @@ Don't call waitForATTUserAuthorization if you don't intend to invoke the ATT p
 
 waitForATTUserAuthorization enables you to configure how long the SDK should defer and wait for ATT status before sending data to the AppsFlyer servers.
  
-`![](https://support.appsflyer.com/hc/article_attachments/30603573710993)`
+`![](https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png)`
  
 When a user launches the app, ATT status is notDetermined. During the waitForATTUserAuthorization timeout, the SDK queues the launch event and consecutive in-app events in-memory, similar to the way in which `[`offline events are recorded](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#offline-in-app-events):
 

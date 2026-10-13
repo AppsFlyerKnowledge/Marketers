@@ -30,7 +30,7 @@ To integrate Meta ads with AppsFlyer, first, create a [Facebook App ID](https://
 2. Click the required app.
 3. Click the App ID at the top left of the screen to copy it.
 
-   [![](https://support.appsflyer.com/hc/article_attachments/30354101851793)](https://support.appsflyer.com/hc/article_attachments/30354101851793)
+   [![](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)
 
 AppsFlyer attributes data per App ID. The same Facebook App ID can be used for [both your Android and iOS apps](https://developers.facebook.com/docs/app-ads/app-setup/). Note that for iOS 14+, Meta ads limits ad accounts to nine accounts per app.
 
@@ -66,7 +66,7 @@ Starting June 17, 2025, Meta has re-enabled **Advanced Mobile Measurement (AMM)*
    **Note:** The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner.
 5. Under **General settings**:
 
-   [![](https://support.appsflyer.com/hc/article_attachments/30354101883281)](https://support.appsflyer.com/hc/article_attachments/30354101883281)
+   [![](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)
 
    * Paste your [Facebook app ID](#create-and-retreive-facebook-app-id) in the **Facebook App ID** field.
    * Paste the install referrer [decryption key from Meta ads](/docs/meta-ads-integration-setup#encrypted-data-from-google-play-referrer-api-or-meta-install-referrer).
@@ -76,7 +76,7 @@ Starting June 17, 2025, Meta has re-enabled **Advanced Mobile Measurement (AMM)*
 
 ### [Optional] Configure recommended settings
 
-[![](https://support.appsflyer.com/hc/article_attachments/30354145601681)](https://support.appsflyer.com/hc/article_attachments/30354145601681)
+[![](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)
 
 * To match with the click-through lookback window of Meta ads, set it to 7 days.  
   (Note that [there are some specific cases where the default is different](https://www.facebook.com/business/help/395050428485124?id=428636648170202).)
@@ -147,7 +147,7 @@ Broad targeting is required for receiving view-through install data. The support
 * Location: Country groups and countries are supported. **Note:** For more targeted locations (such as cities or zip codes), campaigns utilizing inclusion targeting with these need to be set as relaxed.
 * Detailed Targeting: Interest segments, behaviors, and advanced demographics are set as relaxed.
 * Custom Audiences: Set as relaxed.
-* For "relaxed", the "Advantage detailed targeting" box for ad campaigns must be selected: [![](https://support.appsflyer.com/hc/article_attachments/30354145604369)](https://support.appsflyer.com/hc/article_attachments/30354145604369)
+* For "relaxed", the "Advantage detailed targeting" box for ad campaigns must be selected: [![](https://files.readme.io/58ad1f360c324a4e53290f2aa6bc18e30efea0a08f37012342f2811bbb022c6a-30354145604369.png)](https://files.readme.io/58ad1f360c324a4e53290f2aa6bc18e30efea0a08f37012342f2811bbb022c6a-30354145604369.png)
 
 #### Encrypted data from Google Play Referrer API or Meta install referrer
 
@@ -164,20 +164,20 @@ Note that if the key is not provided or was deleted, there are some cases in whi
 1. Log in to your Meta developer portal.
 2. Navigate to **My Apps** in the upper right-hand corner.
 3. Select the app for which you would like to access your decryption key.
-4. Navigate to **Settings** > **Basic** on the left-hand side of the page. [![](https://support.appsflyer.com/hc/article_attachments/30354101891985)](https://support.appsflyer.com/hc/article_attachments/30354101891985)
+4. Navigate to **Settings** > **Basic** on the left-hand side of the page. [![](https://files.readme.io/253be6d4cd2a75cc2c038c5b14ed3df067612c46bea174475adba3d196f25789-30354101891985.png)](https://files.readme.io/253be6d4cd2a75cc2c038c5b14ed3df067612c46bea174475adba3d196f25789-30354101891985.png)
 5. Scroll down to the Android section, and you will see your decryption key labeled Install Referrer decryption key underneath the Package Names field. Note: This is the same section in which you configured your package name and the Google Play Store.
 
 **To set the decryption key in AppsFlyer:**
 
 1. [Mandatory] Verify that AppsFlyer SDK V5.4+ is adopted in your app. Don't rely on earlier versions.
 2. In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations**.
-3. Select **Meta ads**. [![](https://support.appsflyer.com/hc/article_attachments/30354101883281)](https://support.appsflyer.com/hc/article_attachments/30354101883281)
+3. Select **Meta ads**. [![](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)
 4. In the **Integration** tab, paste the key in the |**Install Referrer Decryption Key**. This needs to be done only once per app.
 5. Click **Save integration**.
 
 ### Cost, clicks, and impressions
 
-[![meta_cost_tab.png](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)](https://support.appsflyer.com/hc/article_attachments/30354101895185)
+[![meta_cost_tab.png](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)
 
 This integration provides aggregated data on cost, clicks, and impressions for your campaigns, adsets, ads, and geos/countries. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features.
 
@@ -210,7 +210,7 @@ Learn more about enriching your data with[cost, clicks, and impressions data](/d
 
 ### In-app event mapping
 
-[![meta_iae_postbacks.png](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)](https://support.appsflyer.com/hc/article_attachments/30354145614865)
+[![meta_iae_postbacks.png](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)
 
 **To map in-app events:**
 
@@ -253,13 +253,13 @@ AppsFlyer retargeting attribution for Meta ads lets advertisers attribute an exi
 3. Set the **Re-engagement click-through lookback window**.  
    The re-engagement lookback window is the period of time, starting from an ad click, during which the app must be launched for the click to be recorded as a re-engagement.  
    Select the lookback window units (hours or days), and set the slider to the desired value.  
-   [![](https://support.appsflyer.com/hc/article_attachments/30354101904785)](https://support.appsflyer.com/hc/article_attachments/30354101904785)
+   [![](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)
 4. Enable **Re-engagement view-through attribution**.
-5. Set the **Re-engagement view-through lookback window** slider to the desired value (up to 24 hours). This is the period of time starting from an ad impression, during which the app must be launched for the impression to be recorded as a re-engagement.[![](https://support.appsflyer.com/hc/article_attachments/30354145625873)](https://support.appsflyer.com/hc/article_attachments/30354145625873)
+5. Set the **Re-engagement view-through lookback window** slider to the desired value (up to 24 hours). This is the period of time starting from an ad impression, during which the app must be launched for the impression to be recorded as a re-engagement.[![](https://files.readme.io/82028408b7475e6ad5bcd35f2d597b7f5344b9eca432157559265cf73bdb952c-30354145625873.png)](https://files.readme.io/82028408b7475e6ad5bcd35f2d597b7f5344b9eca432157559265cf73bdb952c-30354145625873.png)
 6. Set the **Re-engagement window**.  
    This is the period when the user's in-app events are attributed to the retargeting media source as the primary source.  
    You can set the value in days (1-90), hours (up to 23), or even lifetime. The default is 30 days.  
-   [![](https://support.appsflyer.com/hc/article_attachments/30354101914385)](https://support.appsflyer.com/hc/article_attachments/30354101914385)
+   [![](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)
 
 Learn more about [AppsFlyer retargeting attribution](/docs/retargeting-attribution-guide).
 
@@ -331,7 +331,7 @@ Learn more about [data protection laws](/docs/send-opendsr-api-requests).
 
 ### Ad revenue recording
 
-[![](https://support.appsflyer.com/hc/article_attachments/30354101917201)](https://support.appsflyer.com/hc/article_attachments/30354101917201)
+[![](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)
 
 If your app uses Meta Audience Network Ad Revenue for ad monetization, you can record your revenues from Meta ads on AppsFlyer. This, with or without in-app purchase revenue data, gives you a **complete picture of your user revenues**.
 
@@ -383,7 +383,7 @@ Note - you can also use [Facebook's Graph API](https://developers.facebook.com/t
 
 The app must be defined on Meta ads as **Live** rather than **In development** for attribution to work.
 
-[![](https://support.appsflyer.com/hc/article_attachments/30354101922577)](https://support.appsflyer.com/hc/article_attachments/30354101922577)
+[![](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)
 
 ### Wrong type of Meta ads campaign
 
@@ -399,11 +399,11 @@ When setting up the Meta ads app install campaign, you can select the app from a
 
 Correct set-up - attribution works.
 
-[![](https://support.appsflyer.com/hc/article_attachments/30354101926033)](https://support.appsflyer.com/hc/article_attachments/30354101926033)
+[![](https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png)](https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png)
 
 Incorrect set-up - attribution fails.
 
-[![](https://support.appsflyer.com/hc/article_attachments/30354145644561)](https://support.appsflyer.com/hc/article_attachments/30354145644561)
+[![](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)
 
 ### iOS 14 updates relating to Meta ads
 

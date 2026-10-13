@@ -4,7 +4,7 @@ excerpt: "The Cohort and retention dashboard groups app users by acquisition dat
 ---
 **At a glance:** The Cohort and retention dashboard (also referred to as simply "Cohort") groups app users by acquisition date. Perform performance analysis across user life cycles (LTV). Use the dashboard to gain insights as to how campaign differences alter campaign metrics.
 
-[![cohort main (2).png](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)](https://support.appsflyer.com/hc/article_attachments/32127933337873)
+[![cohort main (2).png](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)
 
 ## Cohort and retention dashboard
 
@@ -109,7 +109,7 @@ There are 3 cohort view types:
 * **User acquisition:** Performance data from installs (reinstalls excluded unless [specially enabled](/docs/measure-reinstalls#attributed-to-the-first-install))
 * **Retargeting: P**erformance data from re-attributions or re-engagements
 
-[![OV.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://support.appsflyer.com/hc/article_attachments/32127949500305)
+[![OV.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
 
 ### Trend types
 
@@ -133,7 +133,7 @@ There are 2 cohort trend types:
 
 In this example, the same raw data is used to generate the two cohort trend types. The raw data table contains attribution events related to different users A, B, C, and D. The users engage with an ad, install the app, and post-conversion make one or more purchases. Cohort day 0 is the install day.
 
-[![CohortExample_en-us1.png](https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png)](https://support.appsflyer.com/hc/article_attachments/32127949500817)
+[![CohortExample_en-us1.png](https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png)](https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg)
 
 ### Partial data vs. complete data
 
@@ -227,17 +227,17 @@ Use the partial/complete data control to select the data display mode:
 
 **Chart: Cumulative revenue per user**
 
-[![Screenshot 2023-10-31 at 16.56.31.png](https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png)](https://support.appsflyer.com/hc/article_attachments/32127949501201)
+[![Screenshot 2023-10-31 at 16.56.31.png](https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png)](https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png)
 
 **Table: Revenue per day**
 
-[![cohort use case 2.2.png](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)](https://support.appsflyer.com/hc/article_attachments/32127949501969)
+[![cohort use case 2.2.png](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)
 
 #### In-app event conversion
 
-An advertiser defines the in-app event af\_purchase. The cohort table displays the percentage of app users in the cohort who made a purchase. We can see on day 10 for instance that 36.27% of the cohort users attributed to the Facebook Ads media source performed a purchase[.](https://support.appsflyer.com/hc/article_attachments/32127949502481)
+An advertiser defines the in-app event af\_purchase. The cohort table displays the percentage of app users in the cohort who made a purchase. We can see on day 10 for instance that 36.27% of the cohort users attributed to the Facebook Ads media source performed a purchase[.](https://files.readme.io/e365c6b930d765d97155b1fd4384a608cb7eb0339b2b61e4598ee2d5d17d3249-32127949502481.png)
 
-[![cohort use case 3.png](https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png)](https://support.appsflyer.com/hc/article_attachments/32127933347089)
+[![cohort use case 3.png](https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png)](https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png)
 
 ### FAQ
 
@@ -247,7 +247,7 @@ An advertiser defines the in-app event af\_purchase. The cohort table displays t
 | --- | --- |
 | Can I view Apple Search Ads [keyword Cost and ROI](/docs/apple-ads-integration-setup#analyze-keyword-cost)? | Yes, you can.  <br />Apple Search Ads provides us with the cost for each keyword per day broken down by Campaign/Adset/Ad. **Note:**Breakdown by geo is not available. |
 | For a given media source, why does the same campaign name display more than once? | * If you use the same campaign name with campaigns having different campaign IDs then the name displays more than once.<br />* You should allocate campaign IDs unique names<br />* When changing campaign names, data is aligned to the last name used. |
-| Can I view organic users? | Organic users, by default, are included in Cohort reports.<br /><br />**To limit the Cohort report to organic users only:**<br /><br />1. In the **Cohort dashboard**, click the **Edit cohort** button.<br />2. In the Cohort setup window set **Filter by** > **Media source** is **Organic**: [![cohort_setup_filtered_by_media_source_is_organic.png](https://files.readme.io/ba95397eac2b66a365a2aabb2f56587e78624be5ecd06dd6c0463e19dfe9e26a-32127949503889.png)](https://support.appsflyer.com/hc/article_attachments/32127949503889)<br />3. Click **Apply changes** |
+| Can I view organic users? | Organic users, by default, are included in Cohort reports.<br /><br />**To limit the Cohort report to organic users only:**<br /><br />1. In the **Cohort dashboard**, click the **Edit cohort** button.<br />2. In the Cohort setup window set **Filter by** > **Media source** is **Organic**: [![cohort_setup_filtered_by_media_source_is_organic.png](https://files.readme.io/ba95397eac2b66a365a2aabb2f56587e78624be5ecd06dd6c0463e19dfe9e26a-32127949503889.png)](https://files.readme.io/ba95397eac2b66a365a2aabb2f56587e78624be5ecd06dd6c0463e19dfe9e26a-32127949503889.png)<br />3. Click **Apply changes** |
 | Can I see data from deleted installs? | Deleted installs, such as installs from SRNs that were deleted due to data retention policies or GDPR deleted installs, can not be seen in the cohort dashboard.<br /><br />For more information [click here.](/docs/user-level-data-retention#partner-data-retention-periods) |
 | Can I compare data for daily view to data in weekly or monthly views? | It’s not easy to compare data from a daily granularity to a weekly or monthly granularity, because the cohort LTVs don't align.<br /><br />When viewing cohorts in daily granularity, **Day 0** displays data for the day of the installs. Day 1 is the day after the install, Day 2 is 2 days post-install, etc.<br /><br />When viewing cohorts in weekly granularity, data displays for all installs made in the **entire Week 0**. Week 1 is the week after the install, Week 2 is 2 weeks post-install, etc.<br /><br />When viewing cohorts in monthly granularity, data displays for all installs made in the **entire Month 0**. Month 1 is the month after the install, Month 2 is 2 months post-install, etc.<br /><br />This means the LTV timelines don’t align. For example, if you look at data for January 9-15: If you use daily granularity, **Day 0** contains data for the first day of all **installs made January 9-15.** And **Day 6** contains data for the first 6 days post-install of all installs made **January 9-15**. Meanwhile, in **weekly granularity**, **Week 0** contains data for the **entire period** for all installs **made January 9-15**. So for installs on **January 9**, the data is like **Day 6**. But for installs on **January 15**, it’s like **Day 0**. |
 | Why is there a decrease in the cumulative revenue from between cohort periods? | Usually, cumulative revenue increases with each cohort period, for example, D2 is higher than D1. However, sometimes it actually decreases because of negative revenue, for example, from return events. You can verify this by checking the on day (hour/day/week/month) data to see whether there's negative revenue for a specific cohort period. |

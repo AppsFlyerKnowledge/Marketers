@@ -85,7 +85,7 @@ The charts available depend on the selected measurement type.
 
 | Chart metric | Remarks |
 | --- | --- |
-| User acquisition trend | Dimensions available:<br />- Organic<br />- Non-organic<br />[![SKAdNetwork_Dashboard_AppsFlyer2_us-en.png](https://files.readme.io/462439e87f6cd29d4ddc20698cc5ff37901d3619eefecce1fb03d6f58e17ee39-SKAdNetwork_Dashboard_AppsFlyer2_us-en.png)](https://support.appsflyer.com/hc/article_attachments/360010359738) |
+| User acquisition trend | Dimensions available:<br />- Organic<br />- Non-organic<br />[![SKAdNetwork_Dashboard_AppsFlyer2_us-en.png](https://files.readme.io/462439e87f6cd29d4ddc20698cc5ff37901d3619eefecce1fb03d6f58e17ee39-SKAdNetwork_Dashboard_AppsFlyer2_us-en.png)](https://files.readme.io/e30781379f0acb50d73e18e6c59ff76f8c91fa4cda6b92064310050555f826a3-360010359738.png) |
 | Touch to conversion | Views available:<br />- Touchpoint dimensions:<br />  - Impressions<br />  - Clicks<br />- Click-to-install rate<br />![SKAdNetwork_Dashboard_AppsFlyer3_us-en.png](https://files.readme.io/3e134f9411b356c8879dad8185b1762e6e039ed277da60fa9f67af351d8ab76d-360010368497.png) |
 | Installs per day grouped by advertising hierarchy element | Elements available: Media source, Campaign, Site ID, Adset, Ad,Version ![SKAdNetwork_Dashboard_AppsFlyer4_us-en.png](https://files.readme.io/a9b80aaeb0f34a3054bfb97bb72ff2ab549ff88ae4f6af43bf1c5e1ab604d3d3-360010368537.png) |
 | Metric breakdown by advertising hierarchy elements | Elements available: Media source, Campaign, Site ID, Adset, Ad, Version<br />![SKAdNetwork_Dashboard_AppsFlyer5_us-en.png](https://files.readme.io/f201592b110b3137329f7ad3c48c53e20639fb664383d76ceba2a347e969f6e4-360010368657.png) |

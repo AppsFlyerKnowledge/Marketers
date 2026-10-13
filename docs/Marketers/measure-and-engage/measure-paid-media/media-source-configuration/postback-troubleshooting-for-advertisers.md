@@ -44,7 +44,7 @@ The event could be configured in a way that certain postbacks aren't sent.
 
 Check that the event is included in the list of in-app events that were configured. If it’s not defined, a postback isn't sent.
 
-[![list_of_in_app_events.png](https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png)](https://support.appsflyer.com/hc/article_attachments/14979245450641)
+[![list_of_in_app_events.png](https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png)](https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png)
 
 1. In AppsFlyer, from the side menu, select**Collaborate**> **Partner Integrations** > **Active Integrations.**
 2. Click the Manage integration icon of the partner.
@@ -54,19 +54,19 @@ Check that the event is included in the list of in-app events that were configur
 
 Check that the [event mapping](/docs/in-app-event-postback-configuration#event-mapping) is correct. Make sure **AppsFlyer event** (the name of the event as received by AppsFlyer from your mobile app or via S2S) matches the **mapped to partner name** (the exact event name used by the partner).
 
-[![in_app_event_postback_mapping_2.png](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)](https://support.appsflyer.com/hc/article_attachments/14979366291857)
+[![in_app_event_postback_mapping_2.png](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)
 
 ### The event is configured correctly but with a condition
 
 If a condition is defined for the event, the postback is sent according to the condition. Check if there's a condition that limits postback sending.
 
-[![in_app_event_condition__1_.png](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)](https://support.appsflyer.com/hc/article_attachments/14979535388433)
+[![in_app_event_condition__1_.png](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)
 
 ### The event is configured to send postbacks only to the attributed partner
 
 Check to see if the in-app event configuration is set to send postbacks to [**This partner only** or to **All media sources, including organic**](/docs/in-app-event-postback-configuration#options-for-sending-postbacks). If it's set to **This partner only**, only the attributed partner gets the postback.
 
-[![in_app_event_sending_options.png](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)](https://support.appsflyer.com/hc/article_attachments/14979359951761)
+[![in_app_event_sending_options.png](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)
 
 ### The event occurred outside of the configuration window
 
@@ -107,7 +107,7 @@ In some cases, although AppsFlyer sends postbacks to a partner, they aren't show
 1. In AppsFlyer, from the side menu, select**Reports**> **Raw Data Export.**
 2. View the relevant report under **Postbacks** (Installs, In-app events, Retargeting conversions, In-app events retargeting).
 
-[![postback_reports.JPG](https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png)](https://support.appsflyer.com/hc/article_attachments/14981466637457)
+[![postback_reports.JPG](https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png)](https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png)
 
 ### The event didn't occur or wasn't sent to AppsFlyer
 

@@ -106,7 +106,7 @@ You can customize this value to 1-23 hours or 1-7 days.
 
 More details about the [view-through attribution here](/docs/set-up-lookback-windows).
 
-[![](https://files.readme.io/7010eb3bfd9dda24550753ee8ef89b72462c2b762cfd1315a741a7e109b69128-50900503192209.png)](https://support.appsflyer.com/hc/article_attachments/50900503192209)
+[![](https://files.readme.io/7010eb3bfd9dda24550753ee8ef89b72462c2b762cfd1315a741a7e109b69128-50900503192209.png)](https://files.readme.io/7010eb3bfd9dda24550753ee8ef89b72462c2b762cfd1315a741a7e109b69128-50900503192209.png)
 
 ### Impressions attribution link
 

@@ -50,11 +50,11 @@ The first step in setting up a generic AppsFlyer event publisher endpoint is to 
 
 To do this, log into your UBX account and navigate to the **Endpoints** tab
 
-![](https://support.appsflyer.com/hc/en-us/article_attachments/205128323/IBM1.png)
+![](https://files.readme.io/8c0833f890c5e2ed2df1c0a8904e1764b341a82f3381c0a1a3fb6effe4f76673-205128323.png)
 
 Next, click **Register new endpoint**
 
-![](https://support.appsflyer.com/hc/en-us/article_attachments/205053206/ibm_2.png)
+![](https://files.readme.io/23c8d4a88eda765fce1b42f9eb2e74b1325160e6d0602dc65a8ab05488598b9e-205053206.png)
 
 Next, select **AppsFlyer** and click **Next**.
 
@@ -84,7 +84,7 @@ Click **Save.**
 
 ### In-app event settings
 
-[![](https://support.appsflyer.com/hc/article_attachments/360002219429)](https://support.appsflyer.com/hc/article_attachments/360002219429)
+[![](https://files.readme.io/c945ee3c04f49076e54c9966389506aea441406e01daa49d737a86da9f5bd2bc-360002219429.png)](https://files.readme.io/c945ee3c04f49076e54c9966389506aea441406e01daa49d737a86da9f5bd2bc-360002219429.png)
 
 In this section you can map your AppsFlyer events with IBM via postbacks.
 

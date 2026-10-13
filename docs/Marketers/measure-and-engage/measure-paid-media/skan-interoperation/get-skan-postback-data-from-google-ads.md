@@ -59,7 +59,7 @@ If the Google account is associated with multiple apps, log in once, and all app
 AppsFlyer pulls data for all the AppsFlyer iOS apps that your Google account is associated with, irrespective of the app's activate partner setting. 
 
 Follow the instructions in the user interface.
-In some cases, you might be prompted to give AppsFlyer permission to Manage your AdWords campaigns.  If so, you must enable the permission. Don't worry, we won't make changes to your campaign settings. `[![GoogleManageAdWords.png](https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png)`](https://support.appsflyer.com/hc/article_attachments/4405185007121)
+In some cases, you might be prompted to give AppsFlyer permission to Manage your AdWords campaigns.  If so, you must enable the permission. Don't worry, we won't make changes to your campaign settings. `[![GoogleManageAdWords.png](https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png)`](https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png)
 
 Verify that the account status, waiting for sync displays.`<br/>`This message persists until we get data from Google Ads (maximum 24 hours.)
 Wait until after 02:00 UTC of the next day, then verify that the status changes to active.`<br/>`Data in the SKAN dashboard updates daily by 08:00 UTC. Note! As described in the considerations section, Google can update data 45 days retroactively. 

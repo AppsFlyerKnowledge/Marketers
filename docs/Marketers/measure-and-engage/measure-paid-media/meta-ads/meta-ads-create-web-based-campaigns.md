@@ -107,7 +107,7 @@ Perform the next steps in Meta Ads Manager.
 ### 1. Set the campaign type, objective, and goals
 
 1. Log in to Meta Ads and create a campaign.
-2. In **Campaign objective** select one of the following: [![](https://files.readme.io/a0cdd42ddf3bc69106de5137e5c842468178bd1dcd76805ea77ead750ba1e9bb-25646834955921.png)](https://support.appsflyer.com/hc/article_attachments/25646834955921)
+2. In **Campaign objective** select one of the following: [![](https://files.readme.io/a0cdd42ddf3bc69106de5137e5c842468178bd1dcd76805ea77ead750ba1e9bb-25646834955921.png)](https://files.readme.io/a0cdd42ddf3bc69106de5137e5c842468178bd1dcd76805ea77ead750ba1e9bb-25646834955921.png)
    * **Sales**: This lets Meta optimize towards a specific event (your main KPI).
    * **Traffic**: This lets Meta optimize towards ad clicks. This should only be used if you don't have other KPIs or if the volume of other KPI events is too low.
 3. [Optional] If you want to add a custom objective to the above options perform the following:
@@ -121,7 +121,7 @@ Perform the next steps in Meta Ads Manager.
       To learn more about the Meta Campaign objectives, see the [Meta documentation](https://www.facebook.com/business/help/175683976191028).
 
       CALLEND::
-4. In **Conversion location** select **Website**. [![](https://files.readme.io/32e4dcb4ced7e2011728ed709069b78cffffc4090f09a33c729a2b2e7e882e8b-25646834954257.png)](https://support.appsflyer.com/hc/article_attachments/25646834954257)
+4. In **Conversion location** select **Website**. [![](https://files.readme.io/32e4dcb4ced7e2011728ed709069b78cffffc4090f09a33c729a2b2e7e882e8b-25646834954257.png)](https://files.readme.io/32e4dcb4ced7e2011728ed709069b78cffffc4090f09a33c729a2b2e7e882e8b-25646834954257.png)
 5. In **Pixel** enter the same pixel ID you entered for `metaweb_int` in the AppsFlyer Partner Marketplace. To learn more about the Meta Pixel, see the [Meta documentation](https://www.facebook.com/business/help/742478679120153) (a login is required).
 6. Click **Next**.
 
@@ -129,7 +129,7 @@ Perform the next steps in Meta Ads Manager.
 
 1. Under **Destination,** in the **Website URL** field**,** enter the URL that serves as the destination for your ad. The URL should be for one of the following:
 
-   [![](https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png)](https://support.appsflyer.com/hc/article_attachments/25646834955537)
+   [![](https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png)](https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png)
 
    * **Web landing page:** Using a landing page is recommended when:
 
@@ -150,7 +150,7 @@ Perform the next steps in Meta Ads Manager.
 2. Click **Build a URL parameter** to add the URL parameters to the URL (whether it is a landing page URL or an AF attribution link).
 3. Under **Custom parameters**, click **Add parameter**
 
-   [![4.png](https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png)](https://support.appsflyer.com/hc/article_attachments/25722672143633)
+   [![4.png](https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png)](https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png)
 4. Map the AppsFlyer parameters to their Meta values.
 
    * If your destination URL is **a landing page, a OneLink attribution link, or a single platform attribution link**, map the following AF parameters to their Meta counterparts: 
@@ -223,7 +223,7 @@ Perform the next steps in Meta Ads Manager.
 
 Use the Tracking section to select the conversion events promoted by your ad (setting up of the events is done via the [Event Manager](https://www.facebook.com/business/help/898185560232180?id=1205376682832142)).
 
-[![](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)](https://support.appsflyer.com/hc/article_attachments/25646834958481)
+[![](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)
 
 > 📘 **Important!**
 >
@@ -235,7 +235,7 @@ Use the Tracking section to select the conversion events promoted by your ad (se
 
 ### End-to-end data flow
 
-[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://support.appsflyer.com/hc/article_attachments/25646834953105)
+[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
 
 1. The Meta ad URL includes the the `pid=metaweb_int` parameter. When the user clicks on the ad an `fbclid` parameter is automatically appended to the clicked URL.
 2. The User is redirected to the URL destination - a landing page containing a Smart Script.

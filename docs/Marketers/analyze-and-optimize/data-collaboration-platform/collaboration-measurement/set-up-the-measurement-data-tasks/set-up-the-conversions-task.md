@@ -150,7 +150,7 @@ To map the conversion custom source fields, follow these steps
    If the campaign is combined withan Off-site campaign, and you map a field (for example, Event ID) that's already mapped in an off-site channel, you'll be prompted with an **Override field?** message. Click **Yes, continue** to confirm and apply the mapping across channels.
 
    CALLEND::
-4. Click **Save**. The **`{source name}` source created** message is displayed.[![](https://support.appsflyer.com/hc/article_attachments/38345272613265)](https://support.appsflyer.com/hc/article_attachments/38345272613265)
+4. Click **Save**. The **`{source name}` source created** message is displayed.[![](https://files.readme.io/7741040e43860b110ad1ffa63a55dc08c51cf595717c2fde28f8e7501a1fddfc-38345272613265.png)](https://files.readme.io/7741040e43860b110ad1ffa63a55dc08c51cf595717c2fde28f8e7501a1fddfc-38345272613265.png)
 
 ### Map off-site conversion source fields
 

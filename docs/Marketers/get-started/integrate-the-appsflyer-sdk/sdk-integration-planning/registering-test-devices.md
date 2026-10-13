@@ -54,39 +54,39 @@ Download and install the app using the QR code (Google Play store) or one of the
 <Accordion title="Android">
 
 ``
-`[``![kb_qr_code.png](https://files.readme.io/e9b6e2c498b76b5d673d750b4721b2b428603d9e8fdc941ebb6e106274b93bba-49173115688593.png)`](https://support.appsflyer.com/hc/article_attachments/49173115688593)
+`[``![kb_qr_code.png](https://files.readme.io/e9b6e2c498b76b5d673d750b4721b2b428603d9e8fdc941ebb6e106274b93bba-49173115688593.png)`](https://files.readme.io/e9b6e2c498b76b5d673d750b4721b2b428603d9e8fdc941ebb6e106274b93bba-49173115688593.png)
 Links: `[`Google Play](https://play.google.com/store/apps/details?id=com.appsflyer.android.deviceid&amp;hl=en) and `[`Out-of-market store](https://apkpure.com/my-device-id-by-appsflyer/com.appsflyer.android.deviceid)
 
 </Accordion>
 <Accordion title="iOS">
 
-```[``![kb_qr_code.png](https://files.readme.io/e9b6e2c498b76b5d673d750b4721b2b428603d9e8fdc941ebb6e106274b93bba-49173115688593.png)`](https://support.appsflyer.com/hc/article_attachments/49173115688593)
+```[``![kb_qr_code.png](https://files.readme.io/e9b6e2c498b76b5d673d750b4721b2b428603d9e8fdc941ebb6e106274b93bba-49173115688593.png)`](https://files.readme.io/e9b6e2c498b76b5d673d750b4721b2b428603d9e8fdc941ebb6e106274b93bba-49173115688593.png)
 
 </Accordion>
 <Accordion title="Windows">
 
-```[``![](https://support.appsflyer.com/hc/article_attachments/31773660950673)`](https://support.appsflyer.com/hc/article_attachments/31773660950673)
+```[``![](https://files.readme.io/6e60bf0e69c0055c5946d111a0a5a2a04dddb268ba777b52097ab0650327d280-31773660950673.png)`](https://files.readme.io/6e60bf0e69c0055c5946d111a0a5a2a04dddb268ba777b52097ab0650327d280-31773660950673.png)
 
 </Accordion>
 
-``On an iOS 14.5+ device, if you want to allow IDFA collection, tap Allow when the ATT prompt displays. `[``![](https://support.appsflyer.com/hc/article_attachments/31773660957329)`](https://support.appsflyer.com/hc/article_attachments/31773660957329)
+``On an iOS 14.5+ device, if you want to allow IDFA collection, tap Allow when the ATT prompt displays. `[``![](https://files.readme.io/3be1b8f24bf558d022c45913b393cf8c8011639354d8b11d9c591e58024f1c8d-31773660957329.png)`](https://files.readme.io/3be1b8f24bf558d022c45913b393cf8c8011639354d8b11d9c591e58024f1c8d-31773660957329.png)
 
 ``
 On the Android/iOS/Windows screen, tap Register to register the device:
 ``
 <Accordion title="Android">
 
-```[``![](https://support.appsflyer.com/hc/article_attachments/31773630607889)`](https://support.appsflyer.com/hc/article_attachments/31773630607889)
+```[``![](https://files.readme.io/b6deed582cc87925576b893fb8f021e4aa254c15a99ec532fd456e146769a125-31773630607889.png)`](https://files.readme.io/b6deed582cc87925576b893fb8f021e4aa254c15a99ec532fd456e146769a125-31773630607889.png)
 
 </Accordion>
 <Accordion title="iOS">
 
-```[``![](https://support.appsflyer.com/hc/article_attachments/31773660968081)`](https://support.appsflyer.com/hc/article_attachments/31773660968081)
+```[``![](https://files.readme.io/f06f609433b8ce483e5281cc2a0d062ab71a150318d7892879f3defb706f5429-31773660968081.png)`](https://files.readme.io/f06f609433b8ce483e5281cc2a0d062ab71a150318d7892879f3defb706f5429-31773660968081.png)
 
 </Accordion>
 <Accordion title="Windows">
 
-```[``![](https://support.appsflyer.com/hc/article_attachments/31773660972817)`](https://support.appsflyer.com/hc/article_attachments/31773660972817)
+```[``![](https://files.readme.io/6bbfb8680a3f6ea507a7d011d3140fbcc11173f4ef091f7c5f7c3cc863598ab8-31773660972817.jpg)`](https://files.readme.io/6bbfb8680a3f6ea507a7d011d3140fbcc11173f4ef091f7c5f7c3cc863598ab8-31773660972817.jpg)
 
 </Accordion>
 
@@ -103,7 +103,7 @@ Account users can manually register a device:
 ``Select Test devices.
 ``
 Click + Add device.
-`[``![](https://support.appsflyer.com/hc/article_attachments/31773630618769)`](https://support.appsflyer.com/hc/article_attachments/31773630618769)
+`[``![](https://files.readme.io/e28ef06002e423d4cf7863d4c7fd2b269a0ede5c4b996a50cee25ffbedfcd9d1-31773630618769.png)`](https://files.readme.io/e28ef06002e423d4cf7863d4c7fd2b269a0ede5c4b996a50cee25ffbedfcd9d1-31773630618769.png)
 
 ``Complete the following:``
 ``
@@ -172,7 +172,7 @@ To delete a device from the list:
 
 The flow chart below illustrates the potential courses of action when registering your iOS test devices.
 
-[![](https://support.appsflyer.com/hc/article_attachments/31773630621585)](https://support.appsflyer.com/hc/article_attachments/31773630621585)
+[![](https://files.readme.io/214818cd73ebc8cd5d3479d27e3074fec55ec7f9e3d4702b17f3c8811270f54e-31773630621585.png)](https://files.readme.io/214818cd73ebc8cd5d3479d27e3074fec55ec7f9e3d4702b17f3c8811270f54e-31773630621585.png)
 
 Select among the following options when registering your iOS test device:
 <Accordion title="Register your test device with IDFA">

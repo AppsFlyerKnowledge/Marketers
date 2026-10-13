@@ -61,7 +61,7 @@ Conversion Studio provides you with maximum flexibility to make every possible v
 
 **Principles**
 
-* **![Admin.png](https://support.appsflyer.com/hc/article_attachments/4405725144977) Admin only:** Only an admin can save Conversion Studio settings. Account users can view the settings.
+* **![Admin.png](https://files.readme.io/74a71649d541921d2b61425323cc4cf5b669cd4d5665294d0813a3e9230bd11d-4405725144977.png) Admin only:** Only an admin can save Conversion Studio settings. Account users can view the settings.
 * At any given time, only one mode is active.
 * For a given mode, AppsFlyer maps the combinations defined by your settings to CVs. You can [view and download the mapping table](/docs/skan-conversion-studio#view-cv-mapping).
 * In the app, AppsFlyer sets the CV after each measurable user action using the measurement mode active when a user launches the app for the first time.
@@ -118,7 +118,7 @@ To manually set SKAN 4, experiment with different options. As you make changes, 
 
 **Note: If you’re upgrading to SKAN 4 from a previous SKAN mode, your current schema mapping is carried over for fine measurements and AppsFlyer automatically maps the coarse values for you. And if you’re new to SKAN, AppsFlyer provides an initial default mapping.**
 
-**![AppsFlyerAdmin_us-en.png](https://support.appsflyer.com/hc/article_attachments/16281491712785) To manually set conversion values in Conversion Studio using SKAN 4 mode:**
+**![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) To manually set conversion values in Conversion Studio using SKAN 4 mode:**
 
 1. In the AppsFlyer dashboard, go to **Settings** > **SKAN Conversion Studio.**
 2. Click options **(⋮)** to display the options menu and make sure **SKAN measurement** is turned on. **Note**! If off, the SDK does not call iOS SKAN functions like *registerAppForAdNetworkAttribution*, *updateConversionValue.*
@@ -159,7 +159,7 @@ To set Custom, experiment with different options. As you make changes, the **Con
 
 Note: By default, AppsFlyer displays SKAN 4 on the Conversion Studio. To revert to a previous mode, click options **(⋮)** to display the options menu and select Revert to the previous SKAN version.
 
-**![AppsFlyerAdmin_us-en.png](https://support.appsflyer.com/hc/article_attachments/16281491712785) To manually set conversion values in Conversion Studio using Custom mode:**
+**![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) To manually set conversion values in Conversion Studio using Custom mode:**
 
 1. In the AppsFlyer dashboard, go to **Settings** > **SKAN Conversion Studio.**
 2. Click options **(⋮)** to display the options menu and make sure **SKAN measurement** is turned on. **Note**! If off, the SDK does not call iOS SKAN functions like *registerAppForAdNetworkAttribution*, *updateConversionValue.*
@@ -200,7 +200,7 @@ As you make changes to the mode settings, the **Conversion-value capacity** summ
 * Fixed mode measurement is for a 24-hour activity window starting with the first app open.
 * If you want to send events using S2S, you must explicitly enable [SKAN S2S](/docs/skan-conversion-studio#report-events-by-servertoserver-api)
 
-**![AppsFlyerAdmin_us-en.png](https://support.appsflyer.com/hc/article_attachments/16281491712785) To manually set conversion values in Conversion Studio using a fixed mode:**
+**![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) To manually set conversion values in Conversion Studio using a fixed mode:**
 
 1. In the AppsFlyer dashboard, go to **Settings** > **SKAN Conversion Studio.**
 2. Click options **(⋮)** to display the options menu and:
@@ -295,7 +295,7 @@ Priority is best explained in the [detailed example](/docs/skan-conversion-studi
 3. If necessary, click **Delete**, to remove the current settings.
 4. Click **+ Add measurement**. Select **Priority**.   
    Priority 1 displays.  
-   [![Priority1.png](https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png)](https://support.appsflyer.com/hc/article_attachments/4756458366865)
+   [![Priority1.png](https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png)](https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png)
 5. Select a measurement component from:
    * Revenue
    * In-app event

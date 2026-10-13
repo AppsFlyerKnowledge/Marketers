@@ -62,8 +62,8 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 | Section | Description |
 | --- | --- |
 | Apps | Select 1 or more apps to include in the pivot. |
-| Dimensions | [![](https://support.appsflyer.com/hc/article_attachments/360002246845)](https://support.appsflyer.com/hc/article_attachments/360002246845)<br /><br />Use dimensions to group, structure, and sort your pivot reports.<br /><br />**To select dimensions**:<br /><br />1. Click **Dimensions.**<br />2. Select a dimension, then drag it to a section. Dimensions have the following impact on the Pivot:<br />   * **Rows**: Dimensions placed in rows determine the group-by hierarchy.<br />   * **Columns**: Dimensions placed in columns multiply the entire table result according to the dimension values. |
-| KPIs | [![](https://support.appsflyer.com/hc/article_attachments/360000640109)](https://support.appsflyer.com/hc/article_attachments/360000640109)<br /><br />KPIs are grouped according to type as follows:<br /><br />* LTV<br />* [Activity](/docs/activity-dashboard#specifications-and-limitations)<br />* Retention: Retention day, Retention rate. **Note**: Scroll-down in the retention section to select Retention rates and Protect360 (for accounts that have Protect360 enabled.)<br />* [About the metrics.](/docs/master-api-user-acquisition-metrics-via-api#kpis)<br /><br />Most times, place KPIs in the value section. If needed, KPIs can be used as a dimension.<br /><br />Drag and drop the KPI to the relevant section. |
+| Dimensions | [![](https://files.readme.io/9b0fda106b5de3401a71ceaeb45bac5cc4215b164e263a1422bf6097a9320553-360002246845.png)](https://files.readme.io/9b0fda106b5de3401a71ceaeb45bac5cc4215b164e263a1422bf6097a9320553-360002246845.png)<br /><br />Use dimensions to group, structure, and sort your pivot reports.<br /><br />**To select dimensions**:<br /><br />1. Click **Dimensions.**<br />2. Select a dimension, then drag it to a section. Dimensions have the following impact on the Pivot:<br />   * **Rows**: Dimensions placed in rows determine the group-by hierarchy.<br />   * **Columns**: Dimensions placed in columns multiply the entire table result according to the dimension values. |
+| KPIs | [![](https://files.readme.io/6b210b1bdc38ee96ef8b73dcacbac3389b914aaef76a680604e41d4becbad807-360000640109.png)](https://files.readme.io/6b210b1bdc38ee96ef8b73dcacbac3389b914aaef76a680604e41d4becbad807-360000640109.png)<br /><br />KPIs are grouped according to type as follows:<br /><br />* LTV<br />* [Activity](/docs/activity-dashboard#specifications-and-limitations)<br />* Retention: Retention day, Retention rate. **Note**: Scroll-down in the retention section to select Retention rates and Protect360 (for accounts that have Protect360 enabled.)<br />* [About the metrics.](/docs/master-api-user-acquisition-metrics-via-api#kpis)<br /><br />Most times, place KPIs in the value section. If needed, KPIs can be used as a dimension.<br /><br />Drag and drop the KPI to the relevant section. |
 | Values | For each KPI, set the calculation method by selecting an operator:<br /><br />* Sum<br />* Count<br />* Max<br />* Min<br />* Rate<br />* Average |
 | Filters | Place the required filters in the filters section. Configure how filters are set:<br /><br />* Text<br />* Multi-select |
 
@@ -71,7 +71,7 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 
 ### View a pivot report
 
-[![](https://support.appsflyer.com/hc/article_attachments/360002246865)](https://support.appsflyer.com/hc/article_attachments/360002246865)
+[![](https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png)](https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png)
 
 **To view a pivot report**:
 
@@ -84,7 +84,7 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 | --- | --- |
 | (1) Selected dimensions | The first column holds the dimensions selected for the groupings of the report. The dimensions are grouped according to the order in the pivot edit page. In the example above, the primary dimension is the app name, followed by the media source, and ending with the install date. |
 | (2) Metrics | The rest of the columns are the KPIs selected as **Values** in the pivot edit page. In the example above, the first KPI is impressions, followed by clicks, installs, etc. |
-| (3) Filters | The filters set for the report in the pivot edit page appear here. You can type your filtering string or select multiple items with the drop-down boxes.<br /><br />[**![](https://support.appsflyer.com/hc/article_attachments/115004149786)**](https://support.appsflyer.com/hc/article_attachments/115004149786) |
+| (3) Filters | The filters set for the report in the pivot edit page appear here. You can type your filtering string or select multiple items with the drop-down boxes.<br /><br />[**![](https://files.readme.io/e7f16a6e848b8e9f6942615dd14257b3c0e358cefabbdcfe86c498612fcaae26-115004149786.png)**](https://files.readme.io/e7f16a6e848b8e9f6942615dd14257b3c0e358cefabbdcfe86c498612fcaae26-115004149786.png) |
 | (4) Date selected | Use the Date Selector to refine your search to specific dates. Select your own custom date range or use one of the preset date range buttons. |
 | (5) Actions | You can access the same actions per pivot report as available in the [pivot reports list](/docs/pivot-table-user-metrics#view-a-pivot-report). |
 

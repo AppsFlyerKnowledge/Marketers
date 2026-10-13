@@ -4,7 +4,7 @@ excerpt: "Plan your migration from Adjust to AppsFlyer to avoid double charges, 
 ---
 **At a glance:** Plan your migration from Adjust to AppsFlyer. Understand how to avoid double charges, data duplication, and data loss during the migration period.
 
-![](https://support.appsflyer.com/hc/article_attachments/30633481029137)
+![](https://files.readme.io/cc012894dd05255c0b7fa448b1c95d925d556ddb43dc461086bb71e9279da90d-30633481029137.png)
 
 ## About migrating to AppsFlyer
 
@@ -16,7 +16,7 @@ When considering migration, you might want to compare AppsFlyer and Adjust attri
 
 ## Tasks
 
-[![](https://support.appsflyer.com/hc/article_attachments/30642410251793)](https://support.appsflyer.com/hc/article_attachments/30642410251793) The following table describes the main steps needed for migration. To see a precise breakdown of the general tasks, as well as to record your progress, download [this spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vQqbJIkE7kD87uSm7MH7zfkPN1VLuBaeotTEHAID2pYFVWM_LuQIA2AE2-8fVnXH-DrbXUQCs2iaiDe/pub?output=xlsx).
+[![](https://files.readme.io/7deffffc032dce24c30b5b73ae09c083a227ac6f4ec13be224bb7f7fb5b7042f-30642410251793.png)](https://files.readme.io/7deffffc032dce24c30b5b73ae09c083a227ac6f4ec13be224bb7f7fb5b7042f-30642410251793.png) The following table describes the main steps needed for migration. To see a precise breakdown of the general tasks, as well as to record your progress, download [this spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vQqbJIkE7kD87uSm7MH7zfkPN1VLuBaeotTEHAID2pYFVWM_LuQIA2AE2-8fVnXH-DrbXUQCs2iaiDe/pub?output=xlsx).
 
 You can work on these tasks simultaneously, meaning the marketers, developers, and data engineers can, for the most part, work on their assigned tasks concurrently. Note that we recommend you:
 
@@ -231,8 +231,8 @@ Devices migrated to AppsFlyer with this method are recorded (but do not display)
 
 | Option | Columns | When to use | Example |
 | --- | --- | --- | --- |
-| 1 | App ID + IDFA/GAID/IDFV | * If all your Android users have GAID identifiers.<br />* iOS only users | [![device_migration_file_option_1.png](https://files.readme.io/278f509a6078439feaddee429ebdd59b6098fa9a7ca1803da0f1520019cd1006-30563700100497.png)](https://support.appsflyer.com/hc/article_attachments/30563700100497) |
-| 2 | App ID + Device ID + Device ID type | * If some of your Android users have only IMEI or Android ID, but not GAID (out-of-store markets, Android versions below 4.4.2).<br />* Android ID needs to have a hexadecimal format.<br /><br />**Note**:<br /><br />* Use the exact strings for the **ID type** column: advertiserId (also supports amazon\_aid), idfa, idfv, android\_id, imei.<br />* If you use android\_id or imei, and later AppsFlyer receives a better identifier, a new attribution may be recorded. | [![device_migration_file_option_2.png](https://files.readme.io/40459c68eecf4e402178c2a5b93fe94d8ae2f2dd9ccebc376387a60734612fa3-30563700109969.png)](https://support.appsflyer.com/hc/article_attachments/30563700109969) |
+| 1 | App ID + IDFA/GAID/IDFV | * If all your Android users have GAID identifiers.<br />* iOS only users | [![device_migration_file_option_1.png](https://files.readme.io/278f509a6078439feaddee429ebdd59b6098fa9a7ca1803da0f1520019cd1006-30563700100497.png)](https://files.readme.io/278f509a6078439feaddee429ebdd59b6098fa9a7ca1803da0f1520019cd1006-30563700100497.png) |
+| 2 | App ID + Device ID + Device ID type | * If some of your Android users have only IMEI or Android ID, but not GAID (out-of-store markets, Android versions below 4.4.2).<br />* Android ID needs to have a hexadecimal format.<br /><br />**Note**:<br /><br />* Use the exact strings for the **ID type** column: advertiserId (also supports amazon\_aid), idfa, idfv, android\_id, imei.<br />* If you use android\_id or imei, and later AppsFlyer receives a better identifier, a new attribution may be recorded. | [![device_migration_file_option_2.png](https://files.readme.io/40459c68eecf4e402178c2a5b93fe94d8ae2f2dd9ccebc376387a60734612fa3-30563700109969.png)](https://files.readme.io/40459c68eecf4e402178c2a5b93fe94d8ae2f2dd9ccebc376387a60734612fa3-30563700109969.png) |
 
 
 

@@ -11,7 +11,7 @@ table_of_contents: false
 
 Some integrations are fully automated and can be managed directly through the [Self-serve integration management platform for ad networks](/docs/self-serve-integration-management-for-ad-networks), enabling greater efficiency and faster implementation.
 
-For integrations that are not yet automated, requests to change your settings must be submitted via the [partner assistant widget](https://support.appsflyer.com/hc/article_attachments/33715331288593). **To submit a request:**
+For integrations that are not yet automated, requests to change your settings must be submitted via the [partner assistant widget](https://files.readme.io/addb1c20a1a76a7726cc88fb87764c3884d0c09d9190ed36a4971beceb7a5cf1-33715331288593.gif). **To submit a request:**
 
 1. From the top right of any AppsFlyer page, click the Help icon.
 2. Select the following sequence of options in the widget:  

@@ -89,7 +89,7 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 
    You can find the Google Ads Customer ID by clicking on the arrow in the top left corner and thereby opening the Navigation Panel.
 
-   [![](https://files.readme.io/5cc63138208e0ba55a59b4c2514dff373e45a25f50d92f9e6d8316356d078ed3-50897658839185.png)](https://support.appsflyer.com/hc/article_attachments/50897658839185)
+   [![](https://files.readme.io/5cc63138208e0ba55a59b4c2514dff373e45a25f50d92f9e6d8316356d078ed3-50897658839185.png)](https://files.readme.io/5cc63138208e0ba55a59b4c2514dff373e45a25f50d92f9e6d8316356d078ed3-50897658839185.png)
 4. To measure running retargeting campaigns on Google Ads, ask the advertiser to activate **Google Ads Retargeting**. Once done, you can configure the **Re-Engagement Window**.
 
    ![gads-agency-retargeting.png](https://files.readme.io/42008f063585b0a1dff553b8391b9dca48c2a3657786c263459c717cc94b5b19-50897658842385.png)
@@ -109,11 +109,11 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 1. Click the **In-App Events** tab.
 
 2. Select to either send In-App Events from Only Google Ads Installs or from All In-App Events to Google Ads.  
-[![](https://files.readme.io/c2d22406f549db47de21beb54b7f9c8f94419702d0f78f46b2dbf0785e2ba94a-50897694609297.png)](https://support.appsflyer.com/hc/article_attachments/50897694609297)
+[![](https://files.readme.io/c2d22406f549db47de21beb54b7f9c8f94419702d0f78f46b2dbf0785e2ba94a-50897694609297.png)](https://files.readme.io/c2d22406f549db47de21beb54b7f9c8f94419702d0f78f46b2dbf0785e2ba94a-50897694609297.png)
 
 3. Map all In-App Events you want to send to Google Ads, with the pre-defined Google Ads events.
 
-[![](https://files.readme.io/036b4f1cef8fa9b537b3aeaaab3f4072a099f94b3a8bbc539838d7898185a1ad-50897694610065.png)](https://support.appsflyer.com/hc/article_attachments/50897694610065)
+[![](https://files.readme.io/036b4f1cef8fa9b537b3aeaaab3f4072a099f94b3a8bbc539838d7898185a1ad-50897694610065.png)](https://files.readme.io/036b4f1cef8fa9b537b3aeaaab3f4072a099f94b3a8bbc539838d7898185a1ad-50897694610065.png)
 
 4. Click ***Save***.
 
@@ -138,11 +138,11 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 > For Google Ads to register your new conversions, you must**launch your app and perform your mapped in-app events** at least once. To test iOS apps, you must collect IDFA to see the event. It may take up to 6 hours until the event conversions are added to the queue. Once they are added you can import them, and the new conversions change status from “No recent conversion” to “recording conversion".
 
 1. Return to your Google Ads account (**Overview** page and go to **TOOLS AND SETTINGS** > **Measurement** > **Conversions**.  
-   [![conversions_overview_en-us__1_.png](https://files.readme.io/8e4217e0fc2d9696b9aaee3e247ce38fbd5bafd70f05101b31b4ab8de524b3cb-50897694610833.png)](https://support.appsflyer.com/hc/article_attachments/50897694610833)
+   [![conversions_overview_en-us__1_.png](https://files.readme.io/8e4217e0fc2d9696b9aaee3e247ce38fbd5bafd70f05101b31b4ab8de524b3cb-50897694610833.png)](https://files.readme.io/8e4217e0fc2d9696b9aaee3e247ce38fbd5bafd70f05101b31b4ab8de524b3cb-50897694610833.png)
 2. Click **+ New conversion action**.   
-   [![New_conversion_action_en-us__2_.png](https://files.readme.io/e4140f9a279c53bed9f0b576cc006bccd30fe737ea791ade47cd4d42c3e2074b-50897694612113.png)](https://support.appsflyer.com/hc/article_attachments/50897694612113)
+   [![New_conversion_action_en-us__2_.png](https://files.readme.io/e4140f9a279c53bed9f0b576cc006bccd30fe737ea791ade47cd4d42c3e2074b-50897694612113.png)](https://files.readme.io/e4140f9a279c53bed9f0b576cc006bccd30fe737ea791ade47cd4d42c3e2074b-50897694612113.png)
 3. Select **App** from the list of conversion types, then select **Third-party app analytics**, and click **Continue**.  
-   [![select_app_en-us__3_.png](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)](https://support.appsflyer.com/hc/article_attachments/50897658853137)
+   [![select_app_en-us__3_.png](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)
 4. Check the box next to **first\_open** of all your apps, and for each event you’d like to import.
 
    CALLSTART::Note::
@@ -154,11 +154,11 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
    CALLEND::
 
    Click **Import and Continue**, then click **Done**.   
-   [![select_events_to_import_en-us__4_.png](https://files.readme.io/efe5458d26e6085aa0c228b98f63d37ef932e672e83ebc9050437b3b1259eea1-50897658853905.png)](https://support.appsflyer.com/hc/article_attachments/50897658853905)
+   [![select_events_to_import_en-us__4_.png](https://files.readme.io/efe5458d26e6085aa0c228b98f63d37ef932e672e83ebc9050437b3b1259eea1-50897658853905.png)](https://files.readme.io/efe5458d26e6085aa0c228b98f63d37ef932e672e83ebc9050437b3b1259eea1-50897658853905.png)
 5. You can now see your third-party conversion events on the **Conversions** > **Summary** page. If an event doesn't appear in the list or it has been removed from the Google Ads conversion list, click **View all conversion actions**. The **Status** filter appears.   
-   [![conversions_summary_en-us__5_.png](https://files.readme.io/406121cc793f06d778192f8c8b191d7db0f11f91614cc4cf411a940ea176cd95-50897694614801.png)](https://support.appsflyer.com/hc/article_attachments/50897694614801)
+   [![conversions_summary_en-us__5_.png](https://files.readme.io/406121cc793f06d778192f8c8b191d7db0f11f91614cc4cf411a940ea176cd95-50897694614801.png)](https://files.readme.io/406121cc793f06d778192f8c8b191d7db0f11f91614cc4cf411a940ea176cd95-50897694614801.png)
 6. Click **Status** and select **All** to see all events, including disabled and removed events.  
-   [![conversion_action_status__6_.png](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)](https://support.appsflyer.com/hc/article_attachments/50897694615313)
+   [![conversion_action_status__6_.png](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)
 7. Congratulations! You're now measuring Google Ads mobile campaigns with AppsFlyer!
 
 > 📘 **Note**

@@ -70,7 +70,7 @@ Log in to your SFMC account, and go to the Email Studio view
 Click on the Admin tab
 
 In the side menu, click on deep linking. In this view, you can configure new deep link integration with your app, or modify existing ones.
-`![[ALT TEXT NEEDED: describe the SFMC deep linking configuration screen]](https://support.appsflyer.com/hc/article_attachments/50431735587345)`
+`![[ALT TEXT NEEDED: describe the SFMC deep linking configuration screen]](https://files.readme.io/4b7e68abb76163329ab5d487425c4dfe3ee903bb3360893c9b59f40f73486858-50431735587345.png)`
 
 
 To create a new configuration, click the Create button and enter your AppID. The AppID value is a combination of your Apple developer team ID and the Bundle ID. Both of these values can be retrieved from your Apple Developer account.
@@ -81,7 +81,7 @@ To create a new configuration, click the Create button and enter your AppID. The
 > 
 >  Example
 > Given the Team ID prefix 5UABCDFGH and the Bundle ID com.your.app, the following value should be entered:`<br/>`5UABCDFGH.com.your.app
-> `![[ALT TEXT NEEDED: describe the SFMC deep linking configuration screen shown here]](https://support.appsflyer.com/hc/article_attachments/50431735587985)`
+> `![[ALT TEXT NEEDED: describe the SFMC deep linking configuration screen shown here]](https://files.readme.io/4f5500c6f538b2b8e00db0bae1bcac240fc49b30419f4f4a8b07fb0bd3cf8f4a-50431735587985.png)`
 
 
 Your set up of universal links and deep linking is completed once SFMC sets up the Apple App Site Association (AASA) file. This process may take a few hours. You can see your generated file using the following URL:
@@ -102,7 +102,7 @@ After configuring your click-recording domain to support Universal Links as desc
 
 
 Associate the click-recording domain in Xcode:
-`![[ALT TEXT NEEDED: describe the Xcode associated domains screen]](https://support.appsflyer.com/hc/article_attachments/50431735589009)`
+`![[ALT TEXT NEEDED: describe the Xcode associated domains screen]](https://files.readme.io/02bee3d75c32d494d80719b2718ddf4648440bcb3ebcb2132799e44e38852629-50431735589009.png)`
 
 
 Provide the click-recording domain to the SDK API setResolveDeepLinkURLs. This API needs to be called before SDK initialization. For more information, see the SDK documentation on `[`resolving deep link URLs](/docs/sdk-integration-overview).
@@ -164,7 +164,7 @@ Complete the steps in the "`[`Set up Standard SFMC email deep linking](#h_01M1EK
 
 
 Create a separate attribution link for each campaign.
-`![[ALT TEXT NEEDED: currently the filename SFMC-AF-app1-en_us.png; describe the OneLink app screen shown]](https://support.appsflyer.com/hc/article_attachments/50431735591185)`To create a OneLink link:
+`![[ALT TEXT NEEDED: currently the filename SFMC-AF-app1-en_us.png; describe the OneLink app screen shown]](https://files.readme.io/21d7961d03e822dd2a4ccb426dc7b5c85c3700f81a9530bc8950a67e3f1d6237-50431735591185.png)`To create a OneLink link:
 
 In Salesforce, open the AppsFlyer OneLink app.
 Click Add OneLink.
@@ -192,14 +192,14 @@ In Salesforce Email Studio, create a new template or email.
 Click the Edit icon, the Content tab, then select Blocks.
 
 Scroll down to find AppsFlyer Button CB or AppsFlyer Image CB.
-`![[ALT TEXT NEEDED: currently the filename sf_email_edit_onelink_new.PNG; describe the Content Blocks panel shown]](https://support.appsflyer.com/hc/article_attachments/50431751706641)`
+`![[ALT TEXT NEEDED: currently the filename sf_email_edit_onelink_new.PNG; describe the Content Blocks panel shown]](https://files.readme.io/565a80933451dbdb1606b20f8d71964019a36f14ffd0b0ba295649a96b056cf0-50431751706641.png)`
 
 Drag the image/button into the body of the email.
 Click the image/button to edit.
 In the Title field, name the image/button.
 
 Select a OneLink link.
-`![[ALT TEXT NEEDED: describe the OneLink link selector shown]](https://support.appsflyer.com/hc/article_attachments/50431751707665)`
+`![[ALT TEXT NEEDED: describe the OneLink link selector shown]](https://files.readme.io/1d22268b5ced4d753cb6812decdccd960e92d9d8156213f76fc67db98b52c9c7-50431751707665.png)`
 
 Save the email and send it.
 

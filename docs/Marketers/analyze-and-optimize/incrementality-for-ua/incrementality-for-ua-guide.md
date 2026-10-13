@@ -263,7 +263,7 @@ You can see the experiment results on the experiment dashboard.
 
 #### A tour of the dashboard
 
-[**![New Incrementality dashboard.png](https://files.readme.io/721bab22a6a2f936b99abde0cbf37b38b9b569434bb13eb5e691628d864910ac-small-41021731859729.png)**](https://support.appsflyer.com/hc/article_attachments/41021731859729)
+[**![New Incrementality dashboard.png](https://files.readme.io/721bab22a6a2f936b99abde0cbf37b38b9b569434bb13eb5e691628d864910ac-small-41021731859729.png)**](https://files.readme.io/721bab22a6a2f936b99abde0cbf37b38b9b569434bb13eb5e691628d864910ac-small-41021731859729.png)
 
 **The top of the dashboard displays 2 visual graphs:**
 
@@ -289,7 +289,7 @@ The bottom of the dashboard is the **Cumulative incremental installs** graph whi
 * All selected campaigns will share the same holdout regions.
 * Incrementality insights will be presented at the cell level, and not at the individual campaign level.
 
-[![Channel level experiments dashboard cropped narrower.png](https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png)](https://support.appsflyer.com/hc/article_attachments/46014061198353)
+[![Channel level experiments dashboard cropped narrower.png](https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png)](https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png)
 
 ## Manage
 
@@ -392,7 +392,7 @@ You can view and manage all your experiments in one place.
 
 In **Incrementality for UA**, click the **Experiments** tab.
 
-[![Experiments table.png](https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png)](https://support.appsflyer.com/hc/article_attachments/41021758787089)
+[![Experiments table.png](https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png)](https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png)
 
 For each experiment, you can see the:
 
@@ -413,7 +413,7 @@ For each experiment, you can see the:
 * **Ready** - Design was reviewed and found eligible
 * **Unavailable** - Design was reviewed and wasn't found eligible
 
-Hover on the experiment to access the![action menu.png](https://support.appsflyer.com/hc/article_attachments/41021731867793) actions icon.
+Hover on the experiment to access the![action menu.png](https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png) actions icon.
 
 ![Experiments menu.png](https://files.readme.io/5e25e2b4b7f9651ad6a510916b9ee2b2a45d4064a0801a24baa6e3d62bde81a0-41021731868049.png)
 
@@ -427,7 +427,7 @@ From here you can:
 
 **To extend an experiment:**
 
-From the experiment, click the![action menu.png](https://support.appsflyer.com/hc/article_attachments/41021731867793) actions icon (on the upper-right) and select **Extend experiment duration**.
+From the experiment, click the![action menu.png](https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png) actions icon (on the upper-right) and select **Extend experiment duration**.
 
 ![Extend experiment.png](https://files.readme.io/191463618d7bcdba2210e71bf38719c8d5af9951a5282a98cc1e3bc87a7e853b-41021731869329.png)
 

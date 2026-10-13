@@ -25,7 +25,7 @@ Admins can [add users to multiple accounts](#multiple-accounts) so they can easi
 
 * From the top bar, open the account menu (email address dropdown) > **User management**.
 
-[![user-management-page.jpg](https://files.readme.io/0ca6dd472b6f50bfde693bba9c131ce9454dc1df90e3a0fb029e2e05b2330db4-31780969019665.jpg)](https://support.appsflyer.com/hc/article_attachments/31780969019665)
+[![user-management-page.jpg](https://files.readme.io/0ca6dd472b6f50bfde693bba9c131ce9454dc1df90e3a0fb029e2e05b2330db4-31780969019665.jpg)](https://files.readme.io/0ca6dd472b6f50bfde693bba9c131ce9454dc1df90e3a0fb029e2e05b2330db4-31780969019665.jpg)
 
 ### Users tab
 

@@ -46,7 +46,7 @@ The following describes the flow for users when Universal Links fail to open the
 **If the app is not installed:**
 
 1. Safari error message dialog displays: "Safari cannot open the page because the address is invalid”  
-   [![](https://support.appsflyer.com/hc/article_attachments/360016139237)](https://support.appsflyer.com/hc/article_attachments/360016139237)
+   [![](https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg)](https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg)
 2. User clicks **OK** to dismiss the dialog, briefly sees a landing page load in the background, and then within 1 second, is automatically redirected to the App Store, or as per the af\_ios\_url param.
 
 **If the app is installed:**
@@ -54,18 +54,18 @@ The following describes the flow for users when Universal Links fail to open the
 * If the link does not contain `af_force_deeplink=true`, user is redirected to the App Store, or as per the af\_ios\_url param.
 * If the link contains `af_force_deeplink=true`:
   1. Safari dialog displays.  
-     [![](https://support.appsflyer.com/hc/article_attachments/360016209978)](https://support.appsflyer.com/hc/article_attachments/360016209978)
+     [![](https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg)](https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg)
   2. If the user clicks **Open**, the app opens.
   3. If the user clicks **Cancel:**
      * If the af\_ios\_url param is set, the user is redirected accordingly.
      * If the af\_ios\_url param is not set, the Safari error message dialog displays over a landing page in the background which says "Safari cannot open the page because the address is invalid”.  
-       [![](https://support.appsflyer.com/hc/article_attachments/360016139237)](https://support.appsflyer.com/hc/article_attachments/360016139237)
+       [![](https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg)](https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg)
   4. User clicks **OK** and see a landing page with a call to action (CTA).
   5. User clicks the CTA and a dialog displays.  
-     [![](https://support.appsflyer.com/hc/article_attachments/360016209978)](https://support.appsflyer.com/hc/article_attachments/360016209978)
+     [![](https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg)](https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg)
   6. If the user clicks **Open**, the app opens.
   7. If the user clicks **Cancel**, a dialog displays.  
-     [![](https://support.appsflyer.com/hc/article_attachments/360016210038)](https://support.appsflyer.com/hc/article_attachments/360016210038)
+     [![](https://files.readme.io/dd3aa8492bdf1883246bd740118e1b8d2f075a77a164e3ad55843f7c4d44d2b9-360016210038.jpg)](https://files.readme.io/dd3aa8492bdf1883246bd740118e1b8d2f075a77a164e3ad55843f7c4d44d2b9-360016210038.jpg)
   8. If the user clicks **OK**, they are redirected to the App Store.
   9. If the user clicks **Cancel**, they remain on the landing page.
 
@@ -84,15 +84,15 @@ The following describes the flow for users when Universal Links fail to open the
 **If the app is not installed:**
 
 1. If there is no social media app configured, or after the user clicks the CTA on the SALP, a dialog displays over a landing page in the background.  
-   [![](https://support.appsflyer.com/hc/article_attachments/360016599277)](https://support.appsflyer.com/hc/article_attachments/360016599277)
+   [![](https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg)](https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg)
 2. Click Open App. One of the following results can occur:
    * If the `af_ios_url` param is set, the user is redirected accordingly.
    * If the `af_ios_url` param is not set and if `af_force_deeplink=true` is not on the link the user is redirected accordingly.
    * If the af\_ios\_url param is not set, and If `af_force_deeplink=true` is on the link, the dialog displays again over the landing page in the background.  
-     [![](https://support.appsflyer.com/hc/article_attachments/360016599277)](https://support.appsflyer.com/hc/article_attachments/360016599277)
+     [![](https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg)](https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg)
 3. If the user clicks **Open**, they are sent to the App Store.
 4. If the user clicks **Close**, the landing page in the background displays.  
-   [![](https://support.appsflyer.com/hc/article_attachments/360016668478)](https://support.appsflyer.com/hc/article_attachments/360016668478)
+   [![](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)
 5. User clicks the App Store badge and is redirected to the App Store.
 
 #### **Flowchart**

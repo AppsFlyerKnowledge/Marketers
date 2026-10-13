@@ -36,7 +36,7 @@ The user scenario is depicted in the figure that follows. The user:
 * engages with a retargeting campaign run by a media source
 * reinstalls the app
 
-[![re-attribution_1_en-us.png](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)](https://support.appsflyer.com/hc/article_attachments/10298371408017)
+[![re-attribution_1_en-us.png](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)
 
 | Scenario | Inactivity threshold | User inactivity period | Result |
 | --- | --- | --- | --- |
@@ -51,7 +51,7 @@ The user scenario is depicted in the figure that follows. The user:
 * is inactive for several days
 * subsequently engages with a retargeting campaign. run by a media source, and launches the app
 
-[![Re-engagement_scenarios_en-us.png](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)](https://support.appsflyer.com/hc/article_attachments/10124778806929)
+[![Re-engagement_scenarios_en-us.png](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)
 
 | Scenario | Media source A inactivity threshold | User inactivity period | Result |
 | --- | --- | --- | --- |
@@ -72,7 +72,7 @@ SRNs that support inactivity periods have this feature set up on their Integrati
 4. Set **Inactivity window.** (1-30 days.)
 5. Click **Save integration.**
 
-[![Inactivity_window_SRN.png](https://files.readme.io/a3a6dfb2270790a28b71581264c924ba1e4146d4975f64d3cee43a9e0ff3f172-36539146170897.png)](https://support.appsflyer.com/hc/article_attachments/36539146170897)
+[![Inactivity_window_SRN.png](https://files.readme.io/a3a6dfb2270790a28b71581264c924ba1e4146d4975f64d3cee43a9e0ff3f172-36539146170897.png)](https://files.readme.io/a3a6dfb2270790a28b71581264c924ba1e4146d4975f64d3cee43a9e0ff3f172-36539146170897.png)
 
 ### Non-SRN (click ad networks)
 
@@ -84,7 +84,7 @@ SRNs that support inactivity periods have this feature set up on their Integrati
 4. Set **Inactivity window.** (1-30 days.)  
    The **Inactivity period** parameter `af_inactivity_window`is added to the attribution link, for example, "&af\_inactivity\_window=7d". If the feature is disabled, it's not on the attribution link.
 
-[![](https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png)](https://support.appsflyer.com/hc/article_attachments/36538331525521)
+[![](https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png)](https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png)
 
 ### Agencies
 

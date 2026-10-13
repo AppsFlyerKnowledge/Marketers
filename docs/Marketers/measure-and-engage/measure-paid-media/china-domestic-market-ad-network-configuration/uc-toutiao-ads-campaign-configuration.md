@@ -37,7 +37,7 @@ By default, UC Toutiao receives postbacks only for new install events attributed
 
 In this section, you can map your AppsFlyer events with UC Toutiao via postbacks.
 
-[![](https://files.readme.io/ae230875cb4d08e7b58249a9bf61a1fcabe2893b1a338c01bdc57b2043deda55-21594057898769.png)](https://support.appsflyer.com/hc/article_attachments/21594057898769)
+[![](https://files.readme.io/ae230875cb4d08e7b58249a9bf61a1fcabe2893b1a338c01bdc57b2043deda55-21594057898769.png)](https://files.readme.io/ae230875cb4d08e7b58249a9bf61a1fcabe2893b1a338c01bdc57b2043deda55-21594057898769.png)
 
 1. Set the UC Toutiao network ID again here
 2. Toggle In-App Event Postbacks to ON
@@ -57,7 +57,7 @@ In this section, you can map your AppsFlyer events with UC Toutiao via postbacks
 
 In this tab, you can create the attribution links you want to send to UC Toutiao for attributing UC Toutiao's campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
-[![UC_Toutiao_attribution_link_tab.png](https://files.readme.io/d8e96914bb9bc703fc7540cd8abc82b745a96066493240952720c2c82d7d21d0-360002880397.png)](https://support.appsflyer.com/hc/article_attachments/360002880397)
+[![UC_Toutiao_attribution_link_tab.png](https://files.readme.io/d8e96914bb9bc703fc7540cd8abc82b745a96066493240952720c2c82d7d21d0-360002880397.png)](https://files.readme.io/d8e96914bb9bc703fc7540cd8abc82b745a96066493240952720c2c82d7d21d0-360002880397.png)
 
 This tab is divided into different sections:
 

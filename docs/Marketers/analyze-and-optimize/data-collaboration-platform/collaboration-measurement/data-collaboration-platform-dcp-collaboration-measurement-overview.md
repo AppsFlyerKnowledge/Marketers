@@ -245,7 +245,7 @@ This flow outlines how AppsFlyer’s Data Collaboration Platform (DCP) processes
 
 The DCP off-site and on-site attribution flow deduplicates, attributes, enriches, and joins all conversion data to produce a single, unified performance dataset.
 
-[![Notion 2025-08-25 16.10.35.png](https://files.readme.io/1552e0c84bf4ca98ef0fd9f96096f68bbf1a1f846f3fcc995e1aa0afe065a651-38422017654929.png)](https://support.appsflyer.com/hc/article_attachments/38422017654929)
+[![Notion 2025-08-25 16.10.35.png](https://files.readme.io/1552e0c84bf4ca98ef0fd9f96096f68bbf1a1f846f3fcc995e1aa0afe065a651-38422017654929.png)](https://files.readme.io/1552e0c84bf4ca98ef0fd9f96096f68bbf1a1f846f3fcc995e1aa0afe065a651-38422017654929.png)
 
 ### 1. On-site and off-site record processing is performed
 

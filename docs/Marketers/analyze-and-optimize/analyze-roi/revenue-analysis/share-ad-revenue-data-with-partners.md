@@ -78,18 +78,18 @@ You can configure ad revenue postbacks for ad networks. This means that ad netwo
 | Ad network | Event to map af\_ad\_revenue to | Screenshot |
 | --- | --- | --- |
 | Google Ads | ad\_impression | ![Google Ads ad_impression event mapping](https://files.readme.io/883dd04563027d722e7e8e76a50f813c8a955db827cbb92e94cdc650ab7b234d-50421403523601.png) |
-| Unity Ads | ad\_revenue | [![](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png)](https://support.appsflyer.com/hc/article_attachments/24100803652369) |
+| Unity Ads | ad\_revenue | [![](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png)](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png) |
 | Moloco | No mapping needed |  |
 | Mintegral | No mapping needed |  |
 | Smadex | No mapping needed |  |
 | Mistplay | No mapping needed |  |
-| Meta Ads | fb\_mobile\_purchase, for iOS apps  <br />or  <br />Adimpression, for Android apps  <br />[Meta Ads in-app event mapping guide](/docs/meta-ads-in-app-event-mapping#mapping-ad-revenue-data-for-campaign-optimization). | [![revenue-mapping-meta2.jpg](https://files.readme.io/9ec143cbcb622dec2aa0081812e41c0c7586b3583f4da7e57d71dffcb2d68a79-29375912802193.jpg)](https://support.appsflyer.com/hc/article_attachments/29375912802193) |
-| TikTok For Business - Advanced SRN | ImpressionLevelAdRevenue | [![](https://files.readme.io/8beed93895ac3e9d52049bea06b89388e8f32ca12d404c3461a3dcc493aed26f-24100803659665.png)](https://support.appsflyer.com/hc/article_attachments/24100803659665) |
-| Aura from Unity | ad\_revenue | [![](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png)](https://support.appsflyer.com/hc/article_attachments/24100803652369) |
-| Digital Turbine | ad\_revenue | [![](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png)](https://support.appsflyer.com/hc/article_attachments/24100803652369) |
-| SingleTap by Digital Turbine | ad\_revenue | [![](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png)](https://support.appsflyer.com/hc/article_attachments/24100803652369) |
-| Persona.ly RTB | ad-revenue | [![](https://files.readme.io/bc924575f7cc5f4c7fafe3683ae51dcbf3240b9bc4cf22f9d6916cef7a9877f9-24658308681873.png)](https://support.appsflyer.com/hc/article_attachments/24658308681873) |
-| Bigo | ad\_watch | [![](https://files.readme.io/cd3015a60f623ac1d7c563c2b541dfe487006b7babf9b51050f209b70c4a41a4-24658241206929.png)](https://support.appsflyer.com/hc/article_attachments/24658241206929) |
+| Meta Ads | fb\_mobile\_purchase, for iOS apps  <br />or  <br />Adimpression, for Android apps  <br />[Meta Ads in-app event mapping guide](/docs/meta-ads-in-app-event-mapping#mapping-ad-revenue-data-for-campaign-optimization). | [![revenue-mapping-meta2.jpg](https://files.readme.io/9ec143cbcb622dec2aa0081812e41c0c7586b3583f4da7e57d71dffcb2d68a79-29375912802193.jpg)](https://files.readme.io/9ec143cbcb622dec2aa0081812e41c0c7586b3583f4da7e57d71dffcb2d68a79-29375912802193.jpg) |
+| TikTok For Business - Advanced SRN | ImpressionLevelAdRevenue | [![](https://files.readme.io/8beed93895ac3e9d52049bea06b89388e8f32ca12d404c3461a3dcc493aed26f-24100803659665.png)](https://files.readme.io/8beed93895ac3e9d52049bea06b89388e8f32ca12d404c3461a3dcc493aed26f-24100803659665.png) |
+| Aura from Unity | ad\_revenue | [![](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png)](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png) |
+| Digital Turbine | ad\_revenue | [![](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png)](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png) |
+| SingleTap by Digital Turbine | ad\_revenue | [![](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png)](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png) |
+| Persona.ly RTB | ad-revenue | [![](https://files.readme.io/bc924575f7cc5f4c7fafe3683ae51dcbf3240b9bc4cf22f9d6916cef7a9877f9-24658308681873.png)](https://files.readme.io/bc924575f7cc5f4c7fafe3683ae51dcbf3240b9bc4cf22f9d6916cef7a9877f9-24658308681873.png) |
+| Bigo | ad\_watch | [![](https://files.readme.io/cd3015a60f623ac1d7c563c2b541dfe487006b7babf9b51050f209b70c4a41a4-24658241206929.png)](https://files.readme.io/cd3015a60f623ac1d7c563c2b541dfe487006b7babf9b51050f209b70c4a41a4-24658241206929.png) |
 | Appier | No mapping needed |  |
 | Bidease | No mapping needed |  |
 | MAF | No mapping needed |  |

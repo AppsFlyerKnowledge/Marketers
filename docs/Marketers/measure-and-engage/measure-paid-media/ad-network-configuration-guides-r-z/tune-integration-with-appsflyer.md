@@ -67,7 +67,7 @@ Verify  AppsFlyer mobile SDK versions:
 
 ### Step 2: Set up the attribution link
 
-1. Go to the Attribution link tab and copy only the link parameters under **Click attribution link** as highlighted below.[![](https://support.appsflyer.com/hc/article_attachments/4406164987537)](https://support.appsflyer.com/hc/article_attachments/4406164987537)
+1. Go to the Attribution link tab and copy only the link parameters under **Click attribution link** as highlighted below.[![](https://files.readme.io/51bb21c2fe4bd82965f30909fe5ed4ae6c5b906972789b143755982ea8b73f6e-4406164987537.png)](https://files.readme.io/51bb21c2fe4bd82965f30909fe5ed4ae6c5b906972789b143755982ea8b73f6e-4406164987537.png)
 2. Add the copied parameters to your branded link.
 
    CALLSTART::Note::

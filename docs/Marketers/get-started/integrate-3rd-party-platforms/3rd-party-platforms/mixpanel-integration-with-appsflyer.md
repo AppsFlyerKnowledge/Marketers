@@ -67,7 +67,7 @@ The Integration tab is divided into different sections as described below.
 
 AppsFlyer can send automatic postbacks to Mixpanel following user installs, including installs and re-engagements. Re-engagements occur when a user that already has the app installed, opens the app after a click through a campaign. Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default%20postbacks).
 
-[![](https://support.appsflyer.com/hc/article_attachments/36693858465809)](https://support.appsflyer.com/hc/article_attachments/36693858465809)
+[![](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)
 
 ### In-app events settings
 
@@ -174,6 +174,6 @@ The following shows an example of the integration steps:
 
 The screenshots below are a Funnel report to see the conversion from install through the value event, broken down by the Media Source. Additionally, the time to convert for each Media Source can be seen.
 
-[![](https://support.appsflyer.com/hc/article_attachments/9646475113361)](https://support.appsflyer.com/hc/article_attachments/9646475113361)
+[![](https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png)](https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png)
 
-[![](https://support.appsflyer.com/hc/article_attachments/9646475229841)](https://support.appsflyer.com/hc/article_attachments/9646475229841)
+[![](https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png)](https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png)

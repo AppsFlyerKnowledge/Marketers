@@ -16,7 +16,7 @@ To use Master API, you define the data that you want to view (similar to the imp
 
 **To use Master API**:
 
-1. ![AppsFlyerAdmin_us-en.png](https://support.appsflyer.com/hc/article_attachments/16574754168721) Get the [API token](/docs/managing-appsflyer-tokens). An admin needs to retrieve the token.
+1. ![AppsFlyerAdmin_us-en.png](https://files.readme.io/11471b4014e8a4805ff15397166298cd02b4df7707bacb62c936f1513dbe34a5-16574754168721.png) Get the [API token](/docs/managing-appsflyer-tokens). An admin needs to retrieve the token.
 2. Give your developer the API token to be used in the authentication header.
 3. Give your developers the parameters to input when they make the API call, as described in the sections that follow. The parameters determine what the report focuses on, how it's organized, and provide a reporting timeframe.
 4. Tell your developer to follow their [Master API instructions](https://dev.appsflyer.com/hc/reference/overview-9) in the developer hub.

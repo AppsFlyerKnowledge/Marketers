@@ -83,17 +83,17 @@ Minimum requirements - Airship SDK - Version 13.1.0 and above.
    1. Login to your Airship account at: [go.airship.com](http://go.urbanairship.com/)
    2. On the left menu, go to **Settings >** **APIs &****Integrations** and click **Airship API**.
 
-      ![airship-appkey-en_us.png](https://support.appsflyer.com/hc/article_attachments/360017666917)
+      ![airship-appkey-en_us.png](https://files.readme.io/c33611035d8dcadb73e41a3787690726608bddde55edbc38f34990c03948985d-360017666917.png)
    3. Copy the App Key.
    4. In AppsFlyer, paste the App Key in the App Key field.
 3. Get the Token from Airship:
    1. Login to your Airship account at: [go.airship.com](http://go.urbanairship.com/)
    2. On the left menu, go to **Settings >** **APIs &****Integrations** and click **Tokens**.
 
-      ![airship-token-creation-1.png](https://support.appsflyer.com/hc/article_attachments/360017480697)
+      ![airship-token-creation-1.png](https://files.readme.io/b0c22d9844dbc93f7dd158a75916eca98404474a65be0c1528f83e6e4ac7b210-360017480697.png)
    3. Click **Create Token**.
 
-      ![airship-token-creation-2.png](https://support.appsflyer.com/hc/article_attachments/360017549138)
+      ![airship-token-creation-2.png](https://files.readme.io/656f6f5a6eebe3ccd1a786f6abec62739633e4150722fec41bc1fbdea78f8275-360017549138.png)
    4. Enter token name and select the role.
    5. Click **Create token**.
    6. In AppsFlyer, paste the Token in the **Token Authentication** field.
@@ -102,7 +102,7 @@ Minimum requirements - Airship SDK - Version 13.1.0 and above.
 
 AppsFlyer can send automatic postbacks to Airship following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
-![urban_airship_msc_new_3.png](https://support.appsflyer.com/hc/article_attachments/360001900305)
+![urban_airship_msc_new_3.png](https://files.readme.io/394dd47ff26742092f3012e333f137d706f41bc85cd6875013d792ce7f36b01d-360001900305.png)
 
 Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to Airship.
 

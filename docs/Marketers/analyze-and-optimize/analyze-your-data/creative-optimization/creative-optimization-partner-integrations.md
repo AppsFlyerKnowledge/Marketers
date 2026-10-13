@@ -545,5 +545,5 @@ You can grant your agencies access to view their own creative performance data i
 Once certain partner integrations are set up, their account-level credentials can't be changed (this doesn't apply to Meta ads, Google Ads, TikTok, and AppLovin). If you need to update credentials for a partner:
 
 1. On the **Creative integrations** page, select the expander to the left of the partner, to open the partner connections.
-2. Click the  ![3 dots icon.png](https://support.appsflyer.com/hc/article_attachments/22469580700177)  menu icon to the right of the connection, then click **Delete integration**. ![partner-integration-side-menu.png](https://files.readme.io/43ba588af05ffb8dafa165cf5d760010d36bd8b6409f6f9f4ef131d695989ed2-18565371542033.png)
+2. Click the  ![3 dots icon.png](https://files.readme.io/a43c9bec16ef919203a2535aee8aa1f284fb3db7851d5e61245163fe2d8b08cb-22469580700177.png)  menu icon to the right of the connection, then click **Delete integration**. ![partner-integration-side-menu.png](https://files.readme.io/43ba588af05ffb8dafa165cf5d760010d36bd8b6409f6f9f4ef131d695989ed2-18565371542033.png)
 3. Create a new integration for the partner with the updated credentials.

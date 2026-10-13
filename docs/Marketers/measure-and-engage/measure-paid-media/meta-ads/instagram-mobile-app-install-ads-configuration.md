@@ -23,7 +23,7 @@ Meta documentation can be found [here](https://developers.facebook.com/docs/mark
 3. Configure Meta ads under the Active Integrations Configuration by adding your Facebook App ID.
 4. If you do not have a Facebook App ID, create one [here](https://developers.facebook.com/apps).
 
-[![facebook_app_id.png](https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png)](https://support.appsflyer.com/hc/article_attachments/360002280605)
+[![facebook_app_id.png](https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png)](https://files.readme.io/4141ee358e80c69521e134fb686e7d0b872c1f4def1033db511d5a9e206dab61-360002280605.png)
 
 ## Instagram landing page for deep linking
 

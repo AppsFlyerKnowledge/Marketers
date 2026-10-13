@@ -127,7 +127,7 @@ Helping advertisers identify the best (and worst) performing media sources for t
 
 > 📘 **Example**
 >
-> [![](https://support.appsflyer.com/hc/article_attachments/360002829938)](https://support.appsflyer.com/hc/article_attachments/360002829938)
+> [![](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)
 >
 > * 1 and 2 are different ads on the same media source. Compare a single KPI for them, for example, retention day 4 rate, to A/B test creatives, targeting, or ad placement.
 > * 2 and 3 are ads on different media sources. If the creatives and targeting of the ads are identical, comparing a single KPI enables A/B testing the media source.

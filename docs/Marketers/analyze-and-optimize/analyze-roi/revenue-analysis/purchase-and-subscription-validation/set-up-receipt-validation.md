@@ -78,19 +78,19 @@ To set iOS credentials, follow these steps:
 
 1. In App Store Connect, go to **Users and Access**.
 
-   [![](https://support.appsflyer.com/hc/article_attachments/42144939159313)](https://support.appsflyer.com/hc/article_attachments/42144939159313)
+   [![](https://files.readme.io/e47db4ee7ea526c9d0154614a1685d4553257e203de86144a9ba34616c5a9f9d-42144939159313.png)](https://files.readme.io/e47db4ee7ea526c9d0154614a1685d4553257e203de86144a9ba34616c5a9f9d-42144939159313.png)
 2. Go to **Users and Access**> **Integrations**, and from the **Keys**list, select **In-App Purchase**.
 
-   [![](https://support.appsflyer.com/hc/article_attachments/42144939163025)](https://support.appsflyer.com/hc/article_attachments/42144939163025)
+   [![](https://files.readme.io/f29bb10190a7dff35bddf0b1736202b439a9238925187eaef4247565f00f8805-42144939163025.png)](https://files.readme.io/f29bb10190a7dff35bddf0b1736202b439a9238925187eaef4247565f00f8805-42144939163025.png)
 3. Click **+** to generate a new In-App Purchase key.
 
-   [![](https://support.appsflyer.com/hc/article_attachments/42144939165073)](https://support.appsflyer.com/hc/article_attachments/42144939165073)
+   [![](https://files.readme.io/0495e6793159e14fb1b27169665493cd0b8950228ebb859e3442f1024be58222-42144939165073.png)](https://files.readme.io/0495e6793159e14fb1b27169665493cd0b8950228ebb859e3442f1024be58222-42144939165073.png)
 4. Enter a name for your API key.
 5. Click **Generate**.
 6. Click **Download In-App Purchase Key**next to the key you just generated to download it. **Note**: You can only download the key once.
 7. Copy the **Key ID** of the key you just generated and paste it into the AppsFlyer purchases & subscriptions setting for **Key ID**.
 
-   [![](https://support.appsflyer.com/hc/article_attachments/42144939166097)](https://support.appsflyer.com/hc/article_attachments/42144939166097)
+   [![](https://files.readme.io/50532c20938f84526077f747300a874af51b691fac803368a9d2327aa64a6c48-42144939166097.png)](https://files.readme.io/50532c20938f84526077f747300a874af51b691fac803368a9d2327aa64a6c48-42144939166097.png)
 8. Copy the **Issuer ID**. **Note**: If the **Issuer ID** is not displayed at the top of the page, create an App Store Connect API key (with any access level). After that, the Issuer ID appears at the top of the page for the In-App Purchase key.
 
    [![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)
@@ -98,7 +98,7 @@ To set iOS credentials, follow these steps:
 ### 1.2 Set the App Store Connect key
 
 1. Enable Receipt validation. #enable-receipt-validation
-2. Under the **App Store Connect keys** step, click [![](https://support.appsflyer.com/hc/article_attachments/42138428770705)](https://support.appsflyer.com/hc/article_attachments/42138428770705)  **Upload** in the **In-App Purchase key**field to upload the p8 file.
+2. Under the **App Store Connect keys** step, click [![](https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png)](https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png)  **Upload** in the **In-App Purchase key**field to upload the p8 file.
 3. In the section titled **App Store Connect keys**, paste the values you copied from App Store Connect.
 
    * **Key ID**
@@ -125,7 +125,7 @@ In step 1, obtain the following credentials from *Google Play* and *Google Cl
 2. Link the account to your Google Cloud project. For instructions, see this [Google help topic](https://developers.google.com/android-publisher/getting_started#linking).
 3. Enable the Google Play Developer API. For instructions, see [this Google help topic](https://developers.google.com/android-publisher/getting_started#enable).
 
-   [![](https://support.appsflyer.com/hc/article_attachments/42144934507665)](https://support.appsflyer.com/hc/article_attachments/42144934507665)
+   [![](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)
 
 ### 1.2 Configure your service account in the Google Cloud platform
 
@@ -135,25 +135,25 @@ In step 1, obtain the following credentials from *Google Play* and *Google Cl
 
 1. Create or locate the **service account**:
 
-   1. Go to the **Service Accounts** section in the Google Cloud platform and click **CREATE SERVICE ACCOUNT**.[![](https://support.appsflyer.com/hc/article_attachments/42144939169937)](https://support.appsflyer.com/hc/article_attachments/42144939169937)
-   2. Complete the service account details.[![](https://support.appsflyer.com/hc/article_attachments/42144934512785)](https://support.appsflyer.com/hc/article_attachments/42144934512785)
-   3. Copy the email address.[![](https://support.appsflyer.com/hc/article_attachments/42144934515473)](https://support.appsflyer.com/hc/article_attachments/42144934515473)
-   4. Click **Create and continue**.[![](https://support.appsflyer.com/hc/article_attachments/42144939175313)](https://support.appsflyer.com/hc/article_attachments/42144939175313)
-   5. In the **Grant this service account access to the project**step, select the **Pub/Sub** subscriber role.[![](https://support.appsflyer.com/hc/article_attachments/42144934522769)](https://support.appsflyer.com/hc/article_attachments/42144934522769)
+   1. Go to the **Service Accounts** section in the Google Cloud platform and click **CREATE SERVICE ACCOUNT**.[![](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)
+   2. Complete the service account details.[![](https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png)](https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png)
+   3. Copy the email address.[![](https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png)](https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png)
+   4. Click **Create and continue**.[![](https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png)](https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png)
+   5. In the **Grant this service account access to the project**step, select the **Pub/Sub** subscriber role.[![](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)
    6. Click **Continue**> **Done**.
 
-      [![](https://support.appsflyer.com/hc/article_attachments/42144934524049)](https://support.appsflyer.com/hc/article_attachments/42144934524049)
+      [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
 2. Download the service account private key:
 
    1. In the Google Cloud platform, go to the **Service accounts** section, find the account you want (the one you just created) in the list, and click the **More actions** icon.
-   2. Click **Manage keys**.[![](https://support.appsflyer.com/hc/article_attachments/42144934526353)](https://support.appsflyer.com/hc/article_attachments/42144934526353)
+   2. Click **Manage keys**.[![](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)
    3. Click **Add key** > **Create new key**.
 
-      [![](https://support.appsflyer.com/hc/article_attachments/42144939182097)](https://support.appsflyer.com/hc/article_attachments/42144939182097)
-   4. In the **Create private key** popup, under **Key type**, select **JSON**, and click **Create**.[![](https://support.appsflyer.com/hc/article_attachments/42144939185297)](https://support.appsflyer.com/hc/article_attachments/42144939185297)
+      [![](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)
+   4. In the **Create private key** popup, under **Key type**, select **JSON**, and click **Create**.[![](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)
    5. Click **Create**. The private key JSON file is downloaded.
 
-      [![](https://support.appsflyer.com/hc/article_attachments/42144934528529)](https://support.appsflyer.com/hc/article_attachments/42144934528529)
+      [![](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)
    6. Save the JSON key file, which you will upload to AppsFlyer later. **Note**! You must save the key. it can't be retrieved later. If you don't save it, you must create an entirely new key.
 
 ### 1.3 Set API access permissions in Google Play Console
@@ -166,23 +166,23 @@ In step 1, obtain the following credentials from *Google Play* and *Google Cl
 
 1. In the Google Play Console, go to **Users and permissions**, find the service account you created, and click **Invite new users**.
 
-   [![](https://support.appsflyer.com/hc/article_attachments/42144939189265)](https://support.appsflyer.com/hc/article_attachments/42144939189265)
+   [![](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)
 2. Enter the **Email address** that you copied when you configured your service account in step 1.2.1.3.
 
-   [![](https://support.appsflyer.com/hc/article_attachments/42144934531217)](https://support.appsflyer.com/hc/article_attachments/42144934531217)
+   [![](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)
 3. In the **Permissions** section, go to the **Account permissions** tab, and select both:
 
    * View financial data, orders, and cancellation survey responses.
-   * Manage orders and subscriptions.[![](https://support.appsflyer.com/hc/article_attachments/42144939195409)](https://support.appsflyer.com/hc/article_attachments/42144939195409)
+   * Manage orders and subscriptions.[![](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)
 4. On the **App permissions** tab, click **Add app,**then select your app. Add multiple apps if needed.
 
-   [![](https://support.appsflyer.com/hc/article_attachments/42144934538641)](https://support.appsflyer.com/hc/article_attachments/42144934538641)
+   [![](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)
 5. Click **Invite user**.
 
-   [![](https://support.appsflyer.com/hc/article_attachments/42144934539537)](https://support.appsflyer.com/hc/article_attachments/42144934539537)
+   [![](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)
 6. In the confirmation popup, click **Send invite**.
 
-   [![](https://support.appsflyer.com/hc/article_attachments/42144934540433)](https://support.appsflyer.com/hc/article_attachments/42144934540433)
+   [![](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)
 
 ### 1.4 Upload the service account private key to AppsFlyer
 
@@ -193,7 +193,7 @@ Upload and validate the Google JSON key you downloaded in [step 1.2](#12-config
 **To upload the service account private key to AppsFlyer, follow these steps**:
 
 1. [Activate Receipt validation](/docs/about-receipt-validation#enable-receipt-validation)[.](/docs/about-receipt-validation#enable-receipt-validation)
-2. Under the **Service Account Key and Permissions** step, in the **Upload Google JSON key**field, click [![](https://support.appsflyer.com/hc/article_attachments/42138428770705)](https://support.appsflyer.com/hc/article_attachments/42138428770705)  **Upload**.
+2. Under the **Service Account Key and Permissions** step, in the **Upload Google JSON key**field, click [![](https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png)](https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png)  **Upload**.
 3. Upload the JSON file you downloaded in [step 1.2](#12-configure-your-service-account-in-the-google-cloud-platform).
 4. Click **Validate key**.**Note:**
 
@@ -240,7 +240,7 @@ In a sandbox environment:
 
 ### Test in-app purchase and subscription revenue
 
-[![](https://support.appsflyer.com/hc/article_attachments/42138012409105)](https://support.appsflyer.com/hc/article_attachments/42138012409105)
+[![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
 
 **To test in-app purchase and subscription revenue**:
 
@@ -281,7 +281,7 @@ Before the developers release the new app version, make sure that:
 * The in-app events you want to capture as an [in-app purchase or subscription](/docs/about-receipt-validation#inapp-purchase-events-and-parameters-for-receipt-validation) aren't blocked by any of the validation rules you have configured in AppsFlyer.
 * Your developers have all sandbox flags set to `false`.
 
-[![](https://support.appsflyer.com/hc/article_attachments/42138012409105)](https://support.appsflyer.com/hc/article_attachments/42138012409105)
+[![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
 
 Once the app with the validateAndLog SDK API is released, [in-app purchase and subscription events](/docs/about-receipt-validation#inapp-purchase-events-and-parameters-for-receipt-validation) are generated and made available across all AppsFlyer dashboards, as well as in aggregated and raw data reports.
 

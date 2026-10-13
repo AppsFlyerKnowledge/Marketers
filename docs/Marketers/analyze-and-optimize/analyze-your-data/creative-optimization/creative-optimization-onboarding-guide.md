@@ -4,7 +4,7 @@ excerpt: "Follow this onboarding guide to set up partner integrations, explore d
 ---
 **At a glance**: Follow the onboarding instructions in this article to get Creative Optimization up and running.
 
-![](https://support.appsflyer.com/hc/article_attachments/28076554608017)
+![](https://files.readme.io/3fdbee06c41fdcbcadf50fead49a3d3e29e1f56794e3a32a95a28989004024bf-28076554608017.png)
 
 ## About Creative Optimization
 

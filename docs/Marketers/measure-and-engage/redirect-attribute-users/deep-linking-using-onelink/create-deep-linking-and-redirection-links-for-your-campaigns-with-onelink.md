@@ -206,7 +206,7 @@ Attribution is determined based on your attribution settings.
 1. In your custom link setup, go to the **Social-to-app** section.
 2. In the **Social app landing page** section, click **Create social app landing page**.  
    A window to choose a landing page template opens.  
-   [![](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)](https://support.appsflyer.com/hc/article_attachments/30151216576657)
+   [![](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)
 3. To choose a landing page template, hover over the selected template and click **Create**. **Tip**: Hover over the 🛈 icon of a template to see in which cases it should be used. Clustered Poster and ShowAndTell are recommended for Instagram.
 4. Customize all the elements in the landing page creative. To do so, select elements by name or click on them on the preview image.    
    **Tip**: Save your texts in case you replace the creative template.
@@ -225,10 +225,10 @@ Attribution is determined based on your attribution settings.
 | * Flyer<br />* Poster<br />* Blurry poster<br />* Clustered poster | 300 KB | 9:16 (vertical) |
 
    4. If one or more of the images isn't an exact URL, an error will display, and you will not be able to review the creative.  
-      [![](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)](https://support.appsflyer.com/hc/article_attachments/30151216583697)
+      [![](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)
 6. To review the landing page creative, click **Review**.  
    If changes are needed, click **Back to editor**.  
-   [![](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)](https://support.appsflyer.com/hc/article_attachments/30151216593169)
+   [![](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)
 7. To save your landing page, click **Done**.  
    **Important**: New/updated landing page creatives only apply after generating/updating the custom link.
 8. [Optional] To edit your landing page, click **Edit social app landing page**.

@@ -4,7 +4,7 @@ excerpt: "Measure the quality of your users throughout their user journey by rec
 ---
 **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your ride-hailing app.
 
-## ![InApp_Events_ride.png](https://support.appsflyer.com/hc/article_attachments/20659532208401) Ride-hailing
+## ![InApp_Events_ride.png](https://files.readme.io/3901cfcc0cc821cc9c93edbe806bc2d570698be366b76b3710cb60e9aa190d91-20659532208401.png) Ride-hailing
 
 Ride-hailing has become very popular recently, especially in urban areas where most residents don't own a car. The typical events that we suggest recording are ride requests and bookings.
 
@@ -24,7 +24,7 @@ Recording events can help you determine:
 > For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
 
 
-[![Flowchart_for_recommended_events_ride_hailing_app_user_journey](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)](https://support.appsflyer.com/hc/article_attachments/4402678863377)
+[![Flowchart_for_recommended_events_ride_hailing_app_user_journey](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)
 
 ## Recommended structures for predefined events
 

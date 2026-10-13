@@ -135,7 +135,7 @@ In this tab, you can select the permissions to grant Petal Ads Global. Note that
 
 **Note：**On the Petal Ads Global dashboard, the conversion data(eg. Install/Activations) has 2 data sources, the one is AppsFlyer the other one is HMS. When you want to compare the data, such as install, between AppsFlyer and Petal Ads Global dashboard, please select the 'Activations’ instead of 'Activations(HMS)' on the Huawei dashboard.
 
-[![](https://support.appsflyer.com/hc/article_attachments/360015414918)](https://support.appsflyer.com/hc/article_attachments/360015414918)
+[![](https://files.readme.io/fd2878d20c78ebc87d8536225882c8613396178b920c570677edc668dabb810e-360015414918.png)](https://files.readme.io/fd2878d20c78ebc87d8536225882c8613396178b920c570677edc668dabb810e-360015414918.png)
 
 #### Data reporting on Petal Ads Global and FAQs of data discrepancy
 

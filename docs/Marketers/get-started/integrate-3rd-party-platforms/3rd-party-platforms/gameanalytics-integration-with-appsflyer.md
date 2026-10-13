@@ -56,7 +56,7 @@ Select **Events attributed to any partner or organic** to send postbacks for any
 
 ### In-app event settings
 
-[![](https://support.appsflyer.com/hc/article_attachments/360002219789)](https://support.appsflyer.com/hc/article_attachments/360002219789)
+[![](https://files.readme.io/64dd102e95aacda70cb8c0cde471c5c31d6b744543089a2d00a1ab1640fbb1c3-360002219789.png)](https://files.readme.io/64dd102e95aacda70cb8c0cde471c5c31d6b744543089a2d00a1ab1640fbb1c3-360002219789.png)
 
 In this section you can map your AppsFlyer events with Game Analytics via postbacks.
 

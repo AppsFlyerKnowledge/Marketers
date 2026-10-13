@@ -21,7 +21,7 @@ You can record installs, updates, and sessions (by following the mandatory steps
 
 The Windows Universal SDK is installed via the NuGet Package Manager. To install the AppsFlyer Windows SDK via Nuget:
 
-[![](https://support.appsflyer.com/hc/article_attachments/21241904425489)](https://support.appsflyer.com/hc/article_attachments/21241904425489)
+[![](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)
 
 1. Right-click the project file.
 2. Click ***Manage NuGet Packages***.
@@ -35,11 +35,11 @@ If you choose to not use the NuGet package you can embed the AppsFlyer SDK into 
 2. Copy the AppsFlyerLib.winmd into your project.
 3. In Visual Studio, click ***Add Reference*** on the Universal Windows Platform project.
 
-[![](https://support.appsflyer.com/hc/article_attachments/21241888352273)](https://support.appsflyer.com/hc/article_attachments/21241888352273)
+[![](https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png)](https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png)
 
 * Locate AppsFlyerLib.winmd and add it.
 
-[![](https://support.appsflyer.com/hc/article_attachments/21241904443153)](https://support.appsflyer.com/hc/article_attachments/21241904443153)
+[![](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)
 
 > 📘 **Important!**
 >

@@ -4,7 +4,7 @@ excerpt: "Learn how AppsFlyer determines the media source motivating a user to i
 ---
 **At a glance:** AppsFlyer determines the media source motivating a user to install or re-engage with an app and attributes the user action to that source using the AppsFlyer attribution model.
 
-[![](https://support.appsflyer.com/hc/article_attachments/31937603228177)](https://support.appsflyer.com/hc/article_attachments/31937603228177)
+[![](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)
 
 ## What is attribution?
 
@@ -50,7 +50,7 @@ AppsFlyer uses a number of attribution methods, listed in the table that follows
 
 Upon a new install, if there is more than one valid engagement, **AppsFlyer prioritizes clicks over impressions, and deterministic over probabilistic methods**. The attribution methods are utilized according to the priorities shown in the chart.
 
-[![watefall.png](https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png)](https://support.appsflyer.com/hc/article_attachments/37555863998865)
+[![watefall.png](https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png)](https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png)
 
 Find below detailed descriptions of AppsFlyer attribution models.
 

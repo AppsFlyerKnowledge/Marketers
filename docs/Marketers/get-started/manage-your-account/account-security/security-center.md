@@ -19,7 +19,7 @@ The **Security Center** provides you with an at-a-glance overview of your AppsFl
 | [AppsFlyer tokens](/docs/managing-appsflyer-tokens) | Use AppsFlyer tokens to authenticate your API and S2S calls. Manage the tokens and replace them periodically to ensure maximum security |
 | [Audit log](/docs/audit-log) | Review account activity to identify unauthorized access: logins, user management actions, and API calls. |
 
-[![new-security-center.jpg](https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg)](https://support.appsflyer.com/hc/article_attachments/51409516770705)
+[![new-security-center.jpg](https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg)](https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg)
 
 **To access the Security Center:**
 

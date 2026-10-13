@@ -21,7 +21,7 @@ To be able to send postbacks to SearchAds.com, you should first enable attributi
 
 Before you start configuring SearchAds.com in AppsFlyer, obtain your **api\_key** and your **Apple Ads campaign group ID**.
 
-* For api\_key, go to your SearchAds.com dashboard, click **Integrations** > **AppsFlyer**. In the popup that opens, copy the ID. [![SearchAds.com API key](https://files.readme.io/1acc061c44fe616a4485b576251d1ad64cb05607f4727bbd21b0bf6871720b40-4402869972241.png)](https://support.appsflyer.com/hc/article_attachments/4402869972241)
+* For api\_key, go to your SearchAds.com dashboard, click **Integrations** > **AppsFlyer**. In the popup that opens, copy the ID. [![SearchAds.com API key](https://files.readme.io/1acc061c44fe616a4485b576251d1ad64cb05607f4727bbd21b0bf6871720b40-4402869972241.png)](https://files.readme.io/1acc061c44fe616a4485b576251d1ad64cb05607f4727bbd21b0bf6871720b40-4402869972241.png)
 * For Apple Ads Campaign Group ID: In your **Apple Ads dashboard,** get the Apple Ads Campaign Group ID for the relevant campaign group:
 
   ![apple-search-ads-campaign-group-id.png](https://files.readme.io/dbc7f9d2474a2126a2277db279b7d2fa815770c55138e0d42c71eecb36d5abcc-4402898560017.png)

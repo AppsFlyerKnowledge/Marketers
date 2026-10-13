@@ -328,7 +328,7 @@ Smart Script displays a QR code on your web page, instead of a button with a lin
 >
 > **Outgoing QR code**:
 >
-> ![](https://support.appsflyer.com/hc/article_attachments/42045454923153)
+> ![](https://files.readme.io/2f06149c901d8a97c2a544b8196e9afecbe3b3748ed8419a39c2dc5e3afa61ba-42045454923153.png)
 
 ### Impressions
 

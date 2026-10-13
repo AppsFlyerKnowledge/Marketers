@@ -12,7 +12,7 @@ excerpt: "Start measuring the campaigns of your clients by setting up an Agency 
 
 Before you proceed, it’s essential to understand how AppsFlyer’s attribution works. This section explains what happens along the way from the first click or impression to the attribution of an install or an event — and beyond.
 
-[![ua-agency-flow.png](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)](https://support.appsflyer.com/hc/article_attachments/360004474817)
+[![ua-agency-flow.png](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)](https://files.readme.io/09b001f7b5395ffa9c6e7f5abf4e7df5919fd9964ea17fa2934579f513fdb615-360004474817.png)
 
 1. A marketer or an agency on behalf of the marketer configures a campaign with a certain ad network, using AppsFlyer attribution links.
 2. A user clicks on one of their ads – for example, a banner or an offer link.

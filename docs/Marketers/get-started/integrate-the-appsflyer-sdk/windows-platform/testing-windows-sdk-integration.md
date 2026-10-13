@@ -21,7 +21,7 @@ excerpt: "Learn how to test your Windows app integration with AppsFlyer, includi
 * In-app events
 * Deep linking
 
-[![](https://support.appsflyer.com/hc/article_attachments/115011326025/iOS_Testing.png)](https://support.appsflyer.com/hc/article_attachments/115011326025/iOS_Testing.png)
+[![](https://files.readme.io/7b2af46dc66530db91c31466b08121673f067ea9188d5bbf7e5f4a4137cbc6e4-115011326025.png)](https://files.readme.io/7b2af46dc66530db91c31466b08121673f067ea9188d5bbf7e5f4a4137cbc6e4-115011326025.png)
 
 ## Testing non-organic install
 

@@ -4,7 +4,7 @@ excerpt: "Measure the quality of your users throughout their user journey by rec
 ---
 **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your eWallet app.
 
-## ![InApp_Events_eWallet.png](https://support.appsflyer.com/hc/article_attachments/4402543191825) eWallet
+## ![InApp_Events_eWallet.png](https://files.readme.io/4d2ed4994bbe8e8eca7009b8ec8f5dbf22a626421a7a1efb213ddb4a12c7b487-4402543191825.png) eWallet
 
 eWallet apps enable users to make digital payments or purchases from their devices. The typical events that we suggest recording include adding funds, viewing content, selecting merchants, viewing promotions, and completing transactions.
 
@@ -24,7 +24,7 @@ Recording these events can help you determine:
 > For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
 
 
-[![Flowchart_for_recommended_events e-Wallet_app_user_journey](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)](https://support.appsflyer.com/hc/article_attachments/4404610923409)
+[![Flowchart_for_recommended_events e-Wallet_app_user_journey](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)
 
 ## Recommended structures for predefined events
 

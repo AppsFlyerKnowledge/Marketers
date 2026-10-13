@@ -23,7 +23,7 @@ X Ads is an Advanced Self-Reporting Network (SRN), enabling AppsFlyer to support
    * IP address
    * User Agent
 
-   [![_- visual selection.png](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)](https://support.appsflyer.com/hc/article_attachments/36433399199249)
+   [![_- visual selection.png](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)
 
 ## Connecting your X Ads account to AppsFlyer
 
@@ -142,7 +142,7 @@ Set an inactivity window period to prevent recording retargeting conversions for
 
 In this section, you can map your AppsFlyer events with your partners via postbacks.
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png)](https://support.appsflyer.com/hc/article_attachments/7900234463121)
+[![In-app_event_postbacks_en-us.png](https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png)](https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png)
 
 **To configure in-app event postbacks:**
 

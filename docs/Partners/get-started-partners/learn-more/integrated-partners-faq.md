@@ -22,7 +22,7 @@ Once the form is filled out, we will let you know the next steps.
 
 Take a look at the required update [here](/docs/integration-requests-for-partners) and follow the instructions provided.
 
-If your update isn't listed, contact AppsFlyer using the [partner assistant widget](https://support.appsflyer.com/hc/article_attachments/42824303168657), include your integration PID, and describe your request.
+If your update isn't listed, contact AppsFlyer using the [partner assistant widget](https://files.readme.io/abd47a9d733ee12aaeef473b3e243f2063034bae8919dc671e4a85e97edb0ab8-42824303168657.gif), include your integration PID, and describe your request.
 
 ### How do I change the login email of the account?
 

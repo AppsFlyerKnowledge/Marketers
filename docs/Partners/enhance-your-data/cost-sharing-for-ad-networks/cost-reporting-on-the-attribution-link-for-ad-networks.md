@@ -8,7 +8,7 @@ Advertisers use the AppsFlyer dashboard as their source of truth for all budget 
 
 Advertisers often check their top-performing partners using sort by ROI. Those that have no cost data always appear at the bottom of the list.
 
-![](https://support.appsflyer.com/hc/en-us/article_attachments/115002046163/Cost_Sharing_1.png)
+![](https://files.readme.io/ce5b7a7c4af1c016f4f8b2ad72c96c36456a73513e0ba19b8049e1e6fd286ef6-115002046163.png)
 
 ## How to share cost
 
@@ -36,7 +36,7 @@ If you prefer not to reveal the actual cost value in the attribution URL, you ca
 
 Steps for encryption:
 
-1. Request your **network encryption key** from your PSE team using the [partner assistant widget](https://support.appsflyer.com/hc/article_attachments/34951742603025).
+1. Request your **network encryption key** from your PSE team using the [partner assistant widget](https://files.readme.io/fdc0cc0d6ff35e06535dc5cc94b4aed0901a94031a4306fa29f744d4521086d7-34951742603025.gif).
 2. Use the AES encryption method (shown below) to encrypt the required 4 values (**network key, cost value, cost model, and cost currency**)
 3. Append the generated encryption value to your AppsFlyer attribution URL in the **af\_enc\_data=** parameter.
 

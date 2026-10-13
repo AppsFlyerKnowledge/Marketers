@@ -152,7 +152,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the [click lookback window here](/docs/set-up-lookback-windows).
 
-[![](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)](https://support.appsflyer.com/hc/article_attachments/50900402782737)
+[![](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)
 
 ### Click attribution link
 

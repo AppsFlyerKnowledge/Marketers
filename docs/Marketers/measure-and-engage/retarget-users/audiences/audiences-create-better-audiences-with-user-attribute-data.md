@@ -4,7 +4,7 @@ excerpt: "Enrich your ability to segment users into relevant groups by adding yo
 ---
 **At a glance:** Enrich your ability to segment users into relevant groups by adding your data about their characteristics into Audiences.
 
-[![UserAttributionNavigationXL3_us-en.png](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)](https://support.appsflyer.com/hc/article_attachments/33375683032465)
+[![UserAttributionNavigationXL3_us-en.png](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)
 
 ## About user attributes
 
@@ -50,7 +50,7 @@ In Audiences, create user attributes (favorite sport and game score). This gives
 
 User attributes act as filters in Audiences rulesets. This example uses criteria (favorite sport and game score) set by the marketer.
 
-[![UserAttributedExample.jpg](https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg)](https://support.appsflyer.com/hc/article_attachments/33375704836625)
+[![UserAttributedExample.jpg](https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg)](https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg)
 
 ## Implement user attributes
 
@@ -97,7 +97,7 @@ To manage app-level attributes, an account user must have app permission.
 
 To manage user attributes, go to **Audiences** > **User attributes** tab.
 
-[![AudiencesUserAttributes_us-en.png](https://files.readme.io/6baee58e9cd9b2b39bc8facf0af72abe71a4bd1cd2f844f49467fbaeb7252cd7-33375704844049.png)](https://support.appsflyer.com/hc/article_attachments/33375704844049)
+[![AudiencesUserAttributes_us-en.png](https://files.readme.io/6baee58e9cd9b2b39bc8facf0af72abe71a4bd1cd2f844f49467fbaeb7252cd7-33375704844049.png)](https://files.readme.io/6baee58e9cd9b2b39bc8facf0af72abe71a4bd1cd2f844f49467fbaeb7252cd7-33375704844049.png)
 
 | Function | Description |
 | --- | --- |

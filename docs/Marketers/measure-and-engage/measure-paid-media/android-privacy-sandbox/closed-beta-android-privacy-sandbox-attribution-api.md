@@ -4,7 +4,7 @@ excerpt: "A privacy-preserving mechanism designed to measure the effectiveness o
 ---
 **At a glance:** A privacy-preserving mechanism designed to measure the effectiveness of ad campaigns without relying on user identifiers. Managed on-device, with last-touch attribution. No user data is exchanged between ad networks, which preserves user privacy.
 
-[![53090 Android Privacy Sandbox image for KB (1).png](https://files.readme.io/6d9489a792351c33ed0c5f9669fe8bf998c04c8ab665c016aea4c859cec65fe2-26337856151441.png)](https://support.appsflyer.com/hc/article_attachments/26337856151441)
+[![53090 Android Privacy Sandbox image for KB (1).png](https://files.readme.io/6d9489a792351c33ed0c5f9669fe8bf998c04c8ab665c016aea4c859cec65fe2-26337856151441.png)](https://files.readme.io/6d9489a792351c33ed0c5f9669fe8bf998c04c8ab665c016aea4c859cec65fe2-26337856151441.png)
 
 ## Introduction
 
@@ -39,7 +39,7 @@ An ad tech must register both attribution sources and triggers to receive postba
 
 ### Principles and flows
 
-[![53090 Android Privacy Sandbox image for KB (1).png](https://files.readme.io/f10d82d0bb685cf8b329c3b3be14ad546531588b876938b41e3b9650b1080cac-26552356197649.png)](https://support.appsflyer.com/hc/article_attachments/26552356197649)
+[![53090 Android Privacy Sandbox image for KB (1).png](https://files.readme.io/f10d82d0bb685cf8b329c3b3be14ad546531588b876938b41e3b9650b1080cac-26552356197649.png)](https://files.readme.io/f10d82d0bb685cf8b329c3b3be14ad546531588b876938b41e3b9650b1080cac-26552356197649.png)
 
 To overcome the functional and structural limitations of the Sandbox attribution infrastructure, the AppsFlyer Sandbox attribution solution takes into consideration the characteristics in the table that follows
 

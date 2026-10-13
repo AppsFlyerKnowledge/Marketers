@@ -49,6 +49,6 @@ excerpt: "Understand the difference between OneLink short and long URLs, and how
 
 1. In AppsFlyer, go to **OneLink custom links**.  
    The list of OneLinks displays.  
-   [![](https://support.appsflyer.com/hc/article_attachments/360016243798)](https://support.appsflyer.com/hc/article_attachments/360016243798)
+   [![](https://files.readme.io/53bd68c390389e48eb55802418c601e7523ab7d816d21c1ae672ed55d7ade365-360016243798.jpg)](https://files.readme.io/53bd68c390389e48eb55802418c601e7523ab7d816d21c1ae672ed55d7ade365-360016243798.jpg)
 2. Go to the link for which you want the long URL, and in the **Actions** column, click **Get URL**.  
    The long URL displays.

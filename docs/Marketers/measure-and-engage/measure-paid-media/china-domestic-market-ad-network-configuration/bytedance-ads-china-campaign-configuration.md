@@ -48,7 +48,7 @@ General Settings
 
 **Enable View-Through attribution**
 
-[![](https://support.appsflyer.com/hc/article_attachments/50612201111697)](https://support.appsflyer.com/hc/article_attachments/50612201111697)
+[![](https://files.readme.io/3340b894428079e37c238cd78883669abd53cd6895165c5f9b5ea90d27d570c9-50612201111697.png)](https://files.readme.io/3340b894428079e37c238cd78883669abd53cd6895165c5f9b5ea90d27d570c9-50612201111697.png)
 
 Toggle this to **ON** if you want to attribute view-through installs from ByteDance Ads China. The view-through lookback slider is available on the attribution link tab (described below).
 

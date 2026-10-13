@@ -64,7 +64,7 @@ The table that follows lists the cardinality limits per day, per app.
 
 ### Exceeded\_Campaign\_Limit
 
-**[![](https://support.appsflyer.com/hc/article_attachments/115016680246)](https://support.appsflyer.com/hc/article_attachments/115016680246)**
+**[![](https://files.readme.io/6b96713b7a7ef6dc781fdd6d8b61507788bf79b452cfe2a3aa6fd80d7be71e0b-115016680246.png)](https://files.readme.io/6b96713b7a7ef6dc781fdd6d8b61507788bf79b452cfe2a3aa6fd80d7be71e0b-115016680246.png)**
 
 * Up to 3000 unique campaign names per day are available.
   * On a day campaign information from the 3001st campaign and above is grouped in the **Exceeded\_Campaign\_Limit** source.

@@ -65,7 +65,7 @@ For more Retargeting Attribution information, click [here](/docs/retargeting-att
 
 In-app events performed by a user after a reinstall are either attributed organic, attributed non-organic, or unattributed organic, depending on the **Post Reinstall Events attribution** state (see flow chart below). An example of an in-app event is a user who reinstalls an app and then makes an in-app purchase.
 
-[![](https://support.appsflyer.com/hc/article_attachments/10485524792337)](https://support.appsflyer.com/hc/article_attachments/10485524792337)
+[![](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)
 
 ### Post-reinstall events attribution state
 

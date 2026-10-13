@@ -153,7 +153,7 @@ By default, dimension names are displayed in your report exactly as they are nam
 **To customize dimension display names:**
 
 1. In the **Report dimensions** list, hover over the name of the dimension whose display name you want to edit.
-2. Click the edit button ![edit_button.png](https://support.appsflyer.com/hc/article_attachments/10753875375377) that displays to the right of the dimension.
+2. Click the edit button ![edit_button.png](https://files.readme.io/4c3822661beac49fad247c7f5958a535e46031238e975a5323a5550722c89c8a-10753875375377.png) that displays to the right of the dimension.
 3. Change the name to the dimension display name to be used in your report (up to 50 characters).
 4. Click **OK** to save the display name, or **X** to cancel it.
 
@@ -262,7 +262,7 @@ By default, metric names are displayed in your report exactly as they are named 
 **To customize metric display names:**
 
 1. In the **Report metrics** list, hover over the name of the metric whose display name you want to edit.
-2. Click the edit button ![edit_button.png](https://support.appsflyer.com/hc/article_attachments/10753875375377) that displays to the right of the metric.
+2. Click the edit button ![edit_button.png](https://files.readme.io/4c3822661beac49fad247c7f5958a535e46031238e975a5323a5550722c89c8a-10753875375377.png) that displays to the right of the metric.
 3. Change the name to the metric display name to be used in your report (up to 50 characters).
 4. Click **OK** to save the display name, or **X** to cancel it.
 
@@ -289,7 +289,7 @@ The DCR delivers reports to your selected cloud services using [AppsFlyer Data 
    * If there are no connections defined in your account:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
      * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-outbound) to create the connection.
-   * If you have existing connections but want to use a new one, click the ![dcr_new_connection_data_locker_button.png](https://support.appsflyer.com/hc/article_attachments/14995870859281) button:
+   * If you have existing connections but want to use a new one, click the ![dcr_new_connection_data_locker_button.png](https://files.readme.io/9850a4b8ea4f40f6320903c545c51add7b90207538a27c83a3b02a41197ba567-14995870859281.png) button:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
      * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-outbound) to create the connection.
    * After creating the connection, return to the DCR tab in your browser and select the newly created connection from the list of Data Locker connections.

@@ -12,7 +12,7 @@ AppsFlyer Partner Marketplace is where advertisers can find new ad networks, age
 
 | Full Partner profile | Partner profile with partial information |
 | --- | --- |
-| [![partner-full-details.png](https://files.readme.io/439cfb2013a3d154fbe7f602f9e2cd1012570bb9684a7bacba034c7286bea6ca-21537838013201.png)](https://support.appsflyer.com/hc/article_attachments/21537838013201) | [![partial partner profile 3](https://files.readme.io/6e7b2e7c7febf0ce3f315aab7d5de0b12d228cc54c8c88ac0e714832dac5e318-21537838036625.png)](https://support.appsflyer.com/hc/article_attachments/21537838036625) |
+| [![partner-full-details.png](https://files.readme.io/439cfb2013a3d154fbe7f602f9e2cd1012570bb9684a7bacba034c7286bea6ca-21537838013201.png)](https://files.readme.io/439cfb2013a3d154fbe7f602f9e2cd1012570bb9684a7bacba034c7286bea6ca-21537838013201.png) | [![partial partner profile 3](https://files.readme.io/6e7b2e7c7febf0ce3f315aab7d5de0b12d228cc54c8c88ac0e714832dac5e318-21537838036625.png)](https://files.readme.io/6e7b2e7c7febf0ce3f315aab7d5de0b12d228cc54c8c88ac0e714832dac5e318-21537838036625.png) |
 
 
 
@@ -69,7 +69,7 @@ Provide information about your services. Select all possible options that applyâ
 * **Supported platforms:** Select all the platforms you support.
 * **Compliance standards:** Select the relevant compliance standards to which you adhere.
 
-![](https://support.appsflyer.com/hc/article_attachments/21120473538321)
+![](https://files.readme.io/f1b09efb8d30971a57eccbd22bec78ead2021ee230fa34f19c643d29247dc01f-21120473538321.png)
 
 ### Sales
 

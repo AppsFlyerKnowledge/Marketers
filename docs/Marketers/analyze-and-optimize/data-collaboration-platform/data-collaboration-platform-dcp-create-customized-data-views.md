@@ -241,7 +241,7 @@ You can modify the data view description or the labels used in the description.
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
 2. From the **Sources** tab, click the source name. The associated data views are shown.
-3. Hover over the data view to modify, and click [![edit-subdomain.png](https://support.appsflyer.com/hc/article_attachments/30296682398481)](/docs/data-collaboration-platform-dcp-create-customized-data-views#share-a-data-view) (the Edit icon) at the end of the row.
+3. Hover over the data view to modify, and click [![edit-subdomain.png](https://files.readme.io/0bb6f6e4caf3a363cb85ca96016485ee4dd378ed1af461f0c5295d83509db515-30296682398481.png)](/docs/data-collaboration-platform-dcp-create-customized-data-views#share-a-data-view) (the Edit icon) at the end of the row.
 4. Edit the description or the labels applied.
 
 ### Delete a data view

@@ -38,7 +38,7 @@ For more details about partner activation please click [here](/docs/set-up-an-in
 
 Liquid connects with AppsFlyer via a unique API Token. If you don't already have it, you must obtain it from Liquid to continue with the integration or follow the instructions below.
 
-[![](https://support.appsflyer.com/hc/article_attachments/360002201405)](https://support.appsflyer.com/hc/article_attachments/360002201405)
+[![](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)
 
 ### Obtaining the API token
 

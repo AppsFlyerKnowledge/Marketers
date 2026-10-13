@@ -46,4 +46,4 @@ See the example that follows.
 > * Ad revenue data is reported under Day 0.
 >   * In the Activity dashboard, Data Locker (h=23 folder), and raw data reports, the ad display time is also available.
 >
-> [![](https://support.appsflyer.com/hc/article_attachments/360010993537/Ad_revenue_display_timeline_3_en-us.jpg)](https://support.appsflyer.com/hc/article_attachments/360010993537/Ad_revenue_display_timeline_3_en-us.jpg)
+> [![](https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg)](https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg)

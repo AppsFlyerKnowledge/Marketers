@@ -104,8 +104,8 @@ For details on Dynamic Event Mapping for In-app Events, click [here](/docs/dynam
 3. Add these events into the AppsFlyer attribution link.  
    You must have one event ID per "&goalid\_x" value.  
    Replace the "x" with a different goalid number. For this example we have used &goalid\_1=275 and &goalid\_2=276
-4. Add these to the AppsFlyer attribution link in the **General** page after you edit the offer. [![](https://support.appsflyer.com/hc/article_attachments/360002535645)](https://support.appsflyer.com/hc/article_attachments/360002535645)
+4. Add these to the AppsFlyer attribution link in the **General** page after you edit the offer. [![](https://files.readme.io/2c8e34fb91800fefac0da3c9285579833cdb17366234529001683ae008fba851-360002535645.png)](https://files.readme.io/2c8e34fb91800fefac0da3c9285579833cdb17366234529001683ae008fba851-360002535645.png)
 5. Add the &goalid\_1=275&goalid\_2=276 to the AppsFlyer attribution link, click save.  
-   It should look like this when you are done (your event IDs might be different): [![](https://support.appsflyer.com/hc/article_attachments/360002539489)](https://support.appsflyer.com/hc/article_attachments/360002539489)
+   It should look like this when you are done (your event IDs might be different): [![](https://files.readme.io/9c62bc03423febe5e990bb230c5a5c3023dba723b7c8877ead5d3328a24ee3bb-360002539489.png)](https://files.readme.io/9c62bc03423febe5e990bb230c5a5c3023dba723b7c8877ead5d3328a24ee3bb-360002539489.png)
 6. Ask the advertiser to map those events in AppsFlyer, For details of Dynamic Event Mapping for In-App Events.
 7. Pull event postback from Everflow and send it to AppsFlyer, make sure you are mapping the right goalid macros to the corresponding events on the advertiser's side.

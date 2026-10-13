@@ -48,7 +48,7 @@ QR codes can be created either:
 
 ### Customize QR code
 
-![OnelinkQRFinal__1_.gif](https://support.appsflyer.com/hc/article_attachments/11941291055505)
+![OnelinkQRFinal__1_.gif](https://files.readme.io/b1ad71a95057994fa0e2d4afbc1e75a99c468696ec90be419e38de664df86659-11941291055505.gif)
 
 You can customize the QR codes generated via OneLink by:
 
@@ -101,7 +101,7 @@ The following are tips to maximize QR-to-app conversions.
   * Consider adding instructions on how to scan the QR code.
 * Already using OneLink? In your *other* custom OneLinks, being used in emails, etc., add an **af\_web\_dp** parameter with the value being the URL to the page containing the QR code. This sends desktop users clicking the link to a webpage instead of the app store.
 
-  [![](https://support.appsflyer.com/hc/article_attachments/360012661797)](https://support.appsflyer.com/hc/article_attachments/360012661797)
+  [![](https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg)](https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg)
 
 ## FAQ
 

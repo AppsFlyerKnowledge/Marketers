@@ -72,7 +72,7 @@ Once this configuration is saved, AppsFlyer sends the following data to Winclap 
 
 In this section, you can map which in-app events to send to Winclap Analytics using postbacks:
 
-[![winclap analytics - in-app event postback configuration](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)](https://support.appsflyer.com/hc/article_attachments/50896714404369)
+[![winclap analytics - in-app event postback configuration](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)
 
 1. Switch the ***In-App Event Postbacks*** toggle to ON.
 2. Set the ***In-app event postback window***, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).

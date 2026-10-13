@@ -9,5 +9,5 @@ table_of_contents: false
 
 | **Issue date** | From May 5, 2021 |
 | --- | --- |
-| **Error** | When you try to sign in to Apple Ads for AppsFlyer [cost integration](/docs/apple-ads-integration-setup#cost-tab), the following error message may display:<br /><br />[![](https://support.appsflyer.com/hc/article_attachments/360019847618)](https://support.appsflyer.com/hc/article_attachments/360019847618) |
+| **Error** | When you try to sign in to Apple Ads for AppsFlyer [cost integration](/docs/apple-ads-integration-setup#cost-tab), the following error message may display:<br /><br />[![](https://files.readme.io/cb6b1d144ff755dec1545110e77d0a3a68aa4d8fe84d832648bf43e1962387f3-360019847618.jpg)](https://files.readme.io/cb6b1d144ff755dec1545110e77d0a3a68aa4d8fe84d832648bf43e1962387f3-360019847618.jpg) |
 | **Solution** | 1. Close all of your open browsers.<br />2. Relaunch the AppsFlyer dashboard.<br />3. Try to [enable Apple Ads cost integration](/docs/apple-ads-integration-setup#cost-tab) again. |

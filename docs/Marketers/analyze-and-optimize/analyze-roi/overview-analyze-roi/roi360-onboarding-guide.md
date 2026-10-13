@@ -4,7 +4,7 @@ excerpt: "Follow the onboarding instructions in this guide to get ROI360 for cos
 ---
 **At a glance**: Follow the onboarding instructions in this article to get ROI360 for cost and revenue data up and running.
 
-![](https://support.appsflyer.com/hc/article_attachments/26137252926097)
+![](https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png)
 
 ## About ROI360
 
@@ -16,7 +16,7 @@ Follow the onboarding instructions below to get the ROI360 tools for cost, ad re
 
 ### Cost onboarding
 
-![](https://support.appsflyer.com/hc/article_attachments/26137252929681)
+![](https://files.readme.io/0e7102766b3b7cdba3f301ca89c51edf8e4bd2ec88e09bc912ce3c1436c43fcb-26137252929681.png)
 
 With the ROI360 cost solution, you'll get detailed cost and ROI insights, updated multiple times daily. This enables you to effectively manage campaign cost and view budget allocations across various media sources (ad networks), campaigns, and geos, whether you use ad networks, owned media, or agencies.
 
@@ -40,7 +40,7 @@ After completing the cost onboarding, you'll be able to:
 
 ### Ad revenue onboarding
 
-![](https://support.appsflyer.com/hc/article_attachments/26137252932369)
+![](https://files.readme.io/877e4abddd466bbe7dfa31f7fffb2f17fe3e6419f3bf6345e9d619253126b0e6-26137252932369.png)
 
 With the ROI360 ad revenue solution, you'll receive valuable, granular ad revenue data updated multiple times daily.
 
@@ -64,7 +64,7 @@ After completing the ad revenue onboarding, including connecting to the mediatio
 
 ### In-app purchase and subscription revenue onboarding
 
-![](https://support.appsflyer.com/hc/article_attachments/26137252934545)
+![](https://files.readme.io/811c90ec42465994455fe42be8400b4ebb94ab6d1a5703bc9a77251aba95ed3b-26137252934545.png)
 
 With the ROI360 revenue solution, you gain proactive control over your revenue streams.
 

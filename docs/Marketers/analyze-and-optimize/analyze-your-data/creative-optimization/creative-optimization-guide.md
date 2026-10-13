@@ -4,7 +4,7 @@ excerpt: "Creative Optimization enables you to pull all creative asset data from
 ---
 **At a glance:** Creative Optimization enables you to pull all creative asset data from all your campaigns into a single platform, so you can analyze their performance, discover which creatives work best, and make better data-driven decisions. Data is LTV, meaning the metrics are for conversions that occurred from creatives during the selected date range.
 
-[![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://support.appsflyer.com/hc/article_attachments/21362497825169)
+[![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
 
 ## About Creative Optimization
 
@@ -81,13 +81,13 @@ Meta Advantage+ (dynamic creatives), and Google Universal App Campaigns (UAC) ca
 
 This section provides a comprehensive overview of the main dashboard: How to use filters, the various metrics and dimensions available to get the creative data you're looking for, and how to save and share dashboard views.
 
-[![Filter bar and metrics -Default view.jpg](https://files.readme.io/b68e65ff2cdd2ad2fe0805eb1c2792904af69504d104b6f6ae8a524124272a48-21363121543185.jpg)](https://support.appsflyer.com/hc/article_attachments/21363121543185)
+[![Filter bar and metrics -Default view.jpg](https://files.readme.io/b68e65ff2cdd2ad2fe0805eb1c2792904af69504d104b6f6ae8a524124272a48-21363121543185.jpg)](https://files.readme.io/b68e65ff2cdd2ad2fe0805eb1c2792904af69504d104b6f6ae8a524124272a48-21363121543185.jpg)
 
 ### Filter bar
 
 The first step in setting up your dashboards is selecting your filtering options. All filters are applied to both the Creative Optimization Overview and Discovery dashboards.
 
-[![filter_bar.jpg](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)](https://support.appsflyer.com/hc/article_attachments/18564730224913)
+[![filter_bar.jpg](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)
 
 **To select dashboard filters**:
 
@@ -111,7 +111,7 @@ Creative data in the dashboards is presented in 3 separate view types: Unified, 
 * **User Acquisition** - Displays creative data associated with UA ads/adsets only.
 * **Retargeting** - Displays creative data associated with retargeting ads/adsets only. Cost data is available here as well.
 
-[![View_types.jpg](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)](https://support.appsflyer.com/hc/article_attachments/18564727261585)
+[![View_types.jpg](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)
 
 ### Creative Optimization + ROI360
 
@@ -355,7 +355,7 @@ The data will be available in about 30 minutes.
 
 Here's an example of a custom dimensions CSV file (that you download from the dashboard). Each column heading (in row 1) is the name of a custom dimension (for example: “Theme” or "Variant"). You can add additional dimensions or change the existing ones. You can also add or change the tags (for example: “3 Moves" or "DarkPalette").
 
-[![Screen_Shot_2022-08-08_at_16.25.23.png](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)](https://support.appsflyer.com/hc/article_attachments/18564702296977)
+[![Screen_Shot_2022-08-08_at_16.25.23.png](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)
 
 ### Custom dimension traits and limitations
 

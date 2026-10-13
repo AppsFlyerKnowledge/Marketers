@@ -4,7 +4,7 @@ excerpt: "Measure user quality and track the remote learning journey by recordin
 ---
 **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your online education app.
 
-## ![education.png](https://support.appsflyer.com/hc/article_attachments/20659493109393) Online education
+## ![education.png](https://files.readme.io/fb036c8f3b0cb4cc06a5284c26089bbb361273ab628bc5b740692bc49e7a2c40-20659493109393.png) Online education
 
 Online education apps enable users to learn remotely. The typical events that we recommend recording include registration, tutorials and courses completed, and certificates received.
 
@@ -24,7 +24,7 @@ Recording events can help you determine:
 > For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
 
 
-[![Flowchart_for_recommended_events_online_education_app_user_journey](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)](https://support.appsflyer.com/hc/article_attachments/360020170478)
+[![Flowchart_for_recommended_events_online_education_app_user_journey](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)
 
 ## Recommended structures for predefined events
 

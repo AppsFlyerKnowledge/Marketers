@@ -104,7 +104,7 @@ Set the duration of the **Re-engagement window** (the period when the user's in-
 
 In this section, you can map your AppsFlyer events with your partners via postbacks.
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)](https://support.appsflyer.com/hc/article_attachments/36433415113361)
+[![In-app_event_postbacks_en-us.png](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)
 
 **To configure in-app event postbacks:**
 

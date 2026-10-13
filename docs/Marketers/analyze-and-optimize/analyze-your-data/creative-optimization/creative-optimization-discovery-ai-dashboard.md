@@ -4,7 +4,7 @@ excerpt: "Analyze the performance of your creatives, scenes, and elements using 
 ---
 **At a glance:** Use the Creative Optimization Discovery AI dashboard to analyze the performance of your creatives and the scenes and elements they're built from, to produce and maintain data-driven, winning creatives.
 
-[![Main Discovery image.jpg](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)](https://support.appsflyer.com/hc/article_attachments/21378527705489)
+[![Main Discovery image.jpg](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)
 
 ## About the Creative Optimization Discovery AI dashboard
 
@@ -232,7 +232,7 @@ Powered by AI, video creatives are automatically broken down into scenes and dis
 
 **Note**: The tiles displayed are based on the main Creative filter selections. Additionally, metrics the tiles display and the sorting method used to display tiles can be customized. See settings and sorting.
 
-![](https://support.appsflyer.com/hc/article_attachments/31976798170641)
+![](https://files.readme.io/edb5818baa14df7b8260d75c0e60ee1d1bc2cfe2d6564511dd58a423eb7d9d08-31976798170641.png)
 
 
 

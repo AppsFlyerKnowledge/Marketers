@@ -116,7 +116,7 @@ One of the major advantages of In-app event reports is that they allow you to ex
 
 **To extract dimensions from the event\_value field for use in DCR reports:**
 
-1. In the **Dimensions from sources** list, click the ![extract_dimension_button.png](https://support.appsflyer.com/hc/article_attachments/10754426767761) button.
+1. In the **Dimensions from sources** list, click the ![extract_dimension_button.png](https://files.readme.io/c238da4a1d2a15fe2249070747fa6247db63ab4129b1c72804b84550675214f3-10754426767761.png) button.
 
    The **Extract field from event\_value** window opens.
 2. In the **Report field** box, enter the name of the extracted dimension as you would like it to appear in your report.
@@ -132,7 +132,7 @@ One of the major advantages of In-app event reports is that they allow you to ex
 **To edit extracted dimensions:**
 
 1. In either the **Dimensions from sources** or the **Report dimensions** list, hover over the name of the dimension you want to edit.
-2. Click the ![more_options_button.png](https://support.appsflyer.com/hc/article_attachments/10755347815441) button that displays to the right of the dimension.
+2. Click the ![more_options_button.png](https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png) button that displays to the right of the dimension.
 3. Select **Edit extracted field.**
 4. Make changes to the **Report field** name and/or parameter mapping as necessary.
 5. Click **Save** to save your changes.
@@ -140,7 +140,7 @@ One of the major advantages of In-app event reports is that they allow you to ex
 **To delete extracted dimensions:**
 
 1. In either the **Dimensions from sources** or the **Report dimensions** list, hover over the name of the dimension you want to delete.
-2. Click the ![more_options_button.png](https://support.appsflyer.com/hc/article_attachments/10755347815441) button that displays to the right of the dimension.
+2. Click the ![more_options_button.png](https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png) button that displays to the right of the dimension.
 3. Select **Delete field.**
    * **Caution!** If you delete an extracted field from the **Report dimensions** list, it will delete the definition of the extracted field. If you wish to remove the field from the report while preserving its definition, select the field and use the **Remove** button instead.
 
@@ -168,7 +168,7 @@ By default, dimension names are displayed in your report exactly as they are nam
 **To customize dimension display names:**
 
 1. In the **Report dimensions** list, hover over the name of the dimension whose display name you want to edit.
-2. Click the edit button ![edit_button.png](https://support.appsflyer.com/hc/article_attachments/10754262613649) that displays to the right of the dimension.
+2. Click the edit button ![edit_button.png](https://files.readme.io/f4ef4722724c776ce4034ab07492a4ac80825f6f15350911c1cbb51ac4843092-10754262613649.png) that displays to the right of the dimension.
 3. Change the name to the dimension display name to be used in your report (up to 50 characters).
 4. Click **OK** to save the display name, or **X** to cancel it.
 
@@ -266,7 +266,7 @@ Just as you can for [report dimensions](/docs/data-clean-room-creating-in-app-ev
 
 **To extract dimensions from the event\_value field for use in DCR reports:**
 
-1. In the **Metrics from sources** list, click the ![extract_metric_button.png](https://support.appsflyer.com/hc/article_attachments/10755235273233) button.
+1. In the **Metrics from sources** list, click the ![extract_metric_button.png](https://files.readme.io/93ca5970968816d452331df4ce5ff4cfb678cbb24f65eb99fe01bd3bb3016959-10755235273233.png) button.
 
    The **Extract field from event\_value** window opens.
 2. In the **Report field** box, enter the name of the extracted metric as you would like it to appear in your report.
@@ -282,7 +282,7 @@ Just as you can for [report dimensions](/docs/data-clean-room-creating-in-app-ev
 **To edit extracted metrics:**
 
 1. In either the **Metrics from sources** or the **Report metrics** list, hover over the name of the metric you want to edit.
-2. Click the ![more_options_button.png](https://support.appsflyer.com/hc/article_attachments/10755347815441) button that displays to the right of the metric.
+2. Click the ![more_options_button.png](https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png) button that displays to the right of the metric.
 3. Select **Edit extracted field.**
 4. Make changes to the **Report field** name and/or parameter mapping as necessary.
 5. Click **Save** to save your changes.
@@ -290,7 +290,7 @@ Just as you can for [report dimensions](/docs/data-clean-room-creating-in-app-ev
 **To delete extracted metrics:**
 
 1. In either the **Metrics from sources** or the **Report metrics** list, hover over the name of the metric you want to delete.
-2. Click the ![more_options_button.png](https://support.appsflyer.com/hc/article_attachments/10755347815441) button that displays to the right of the metric.
+2. Click the ![more_options_button.png](https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png) button that displays to the right of the metric.
 3. Select **Delete field.**
    * **Caution!** If you delete an extracted field from the **Report metrics** list, it will delete the definition of the extracted field. If you wish to remove the field from the report while preserving its definition, select the field and use the **Remove** button instead.
 
@@ -313,7 +313,7 @@ By default, metric names are displayed in your report exactly as they are named 
 **To customize metric display names:**
 
 1. In the **Report metrics** list, hover over the name of the metric whose display name you want to edit.
-2. Click the edit button ![edit_button.png](https://support.appsflyer.com/hc/article_attachments/10754262613649) that displays to the right of the metric.
+2. Click the edit button ![edit_button.png](https://files.readme.io/f4ef4722724c776ce4034ab07492a4ac80825f6f15350911c1cbb51ac4843092-10754262613649.png) that displays to the right of the metric.
 3. Change the name to the metric display name to be used in your report (up to 50 characters).
 4. Click **OK** to save the display name, or **X** to cancel it.
 
@@ -364,7 +364,7 @@ The DCR delivers reports to your selected cloud services using [AppsFlyer Data 
    * If there are no connections defined in your account:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
      * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-outbound) to create the connection.
-   * If you have existing connections but want to use a new one, click the ![dcr_new_connection_data_locker_button.png](https://support.appsflyer.com/hc/article_attachments/16684568466961) button:
+   * If you have existing connections but want to use a new one, click the ![dcr_new_connection_data_locker_button.png](https://files.readme.io/21fda59ab30e85ab4ba8b4b5920c901e8bcdedadad393a2205bb34e839f9c8db-16684568466961.png) button:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
      * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-outbound) to create the connection.
    * After creating the connection, return to the DCR tab in your browser and select the newly created connection from the list of Data Locker connections.

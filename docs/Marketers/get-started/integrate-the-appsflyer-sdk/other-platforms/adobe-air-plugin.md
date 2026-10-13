@@ -49,7 +49,7 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 >
 > As a result, you should see your Manifest like this:
 >
-> [![](https://support.appsflyer.com/hc/article_attachments/360010932998/aa_manifest.png)](https://support.appsflyer.com/hc/article_attachments/360010932998/aa_manifest.png)
+> [![](https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png)](https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png)
 >
 > **Important:**Due to some limitations in the [ADT](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fd9.html), after the APK is built, it is missing some important files.
 >
@@ -76,7 +76,7 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 >
 >    See sample screenshot that follows.
 >
->    [![](https://support.appsflyer.com/hc/article_attachments/360010933018/apk_tool.png)](https://support.appsflyer.com/hc/article_attachments/360010933018/apk_tool.png)
+>    [![](https://files.readme.io/6bacbb55e5b1a7739034db8cc03313459ad6d048313a51ef6bf1e07500165cc0-360010933018.png)](https://files.readme.io/6bacbb55e5b1a7739034db8cc03313459ad6d048313a51ef6bf1e07500165cc0-360010933018.png)
 > 5. Build the APK.back (will appear under `app_name/dist` folder).
 >    `apktool b app`
 > 6. Sign the APK.

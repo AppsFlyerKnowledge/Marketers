@@ -5,7 +5,7 @@ table_of_contents: false
 ---
 **At a glance:** Integrate AppsFlyer into games developed in Unreal Engine to measure app installs, in-app events, media sources, and more.
 
-![256px-Unreal_Engine_4_logo_and_wordmark.svg.png](https://support.appsflyer.com/hc/article_attachments/360002792757/256px-Unreal_Engine_4_logo_and_wordmark.svg.png)
+![256px-Unreal_Engine_4_logo_and_wordmark.svg.png](https://files.readme.io/8ea048105520f976b4e3080f5c8ec44a4d955977a7731fe16114225bd34e9e5e-360002792757.png)
 
 The Unreal Engine lets you develop state-of-art mobile games that your users will never forget and will keep coming for more.
 

@@ -33,13 +33,13 @@ For more details about partner activation please click [here](/docs/partner-act
 
 At the top of the Integration tab, there's a note saying that Unity Ads requires sending them the device ID for every install—this is done automatically, no need to do anything on your end.
 
-[![Unity_msc_new_2.png](https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png)](https://support.appsflyer.com/hc/article_attachments/360002583918)
+[![Unity_msc_new_2.png](https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png)](https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png)
 
 **Unity Ads Game ID**
 
 Unity Ads requires connecting with AppsFlyer via a unique game ID. If you don't know yours, you can obtain it directly from Unity Ads or you can find it, after uploading the game, under **Apps** > **Campaigns**, as shown in the screenshot below.
 
-[![](https://support.appsflyer.com/hc/article_attachments/8109147574673)](https://support.appsflyer.com/hc/article_attachments/8109147574673)
+[![](https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png)](https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png)
 
 The Unity Ads Platform maps one app to a single Unity Ads Game ID, per account level (advertisers and agencies will have different Game IDs for the same app). Multiple accounts on the Unity Ads Platform can't run the same app with different Game IDs.
 
@@ -67,7 +67,7 @@ Send automatic postbacks to Unity Ads following user installs. Use this section 
 
 Map AppsFlyer events with the partner via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant with target validation rules).
 
-[![](https://support.appsflyer.com/hc/article_attachments/7975565240337)](https://support.appsflyer.com/hc/article_attachments/7975565240337)
+[![](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)
 
 #### To configure in-app event postbacks
 

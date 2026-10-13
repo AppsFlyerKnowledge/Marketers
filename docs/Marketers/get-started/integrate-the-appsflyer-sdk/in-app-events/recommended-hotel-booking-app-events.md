@@ -4,7 +4,7 @@ excerpt: "Measure the quality of your users throughout their user journey by rec
 ---
 **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your hotel booking app.
 
-## ![InApp_Events_hotel.png](https://support.appsflyer.com/hc/article_attachments/20659548553745) Hotel booking
+## ![InApp_Events_hotel.png](https://files.readme.io/ffc23cc65b6b6cfe99c12e988cca3df6667058b7e3a672db3639472a17602546-20659548553745.png) Hotel booking
 
 Hotel booking apps allow travelers to easily book hotels while choosing from the best offers. The typical events that we suggest recording are search, purchase, travel booking, and add to wishlist.
 
@@ -25,7 +25,7 @@ You can attribute preferences such as hotel score, season, country, and the numb
 > For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
 
 
-[![Flowchart_for_recommended_events_hotel_booking_app_user_journey](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)](https://support.appsflyer.com/hc/article_attachments/4402679204241)
+[![Flowchart_for_recommended_events_hotel_booking_app_user_journey](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)
 
 ## Recommended structures for predefined events
 

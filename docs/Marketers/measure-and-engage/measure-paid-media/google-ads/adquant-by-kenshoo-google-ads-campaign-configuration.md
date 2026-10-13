@@ -27,7 +27,7 @@ In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations**
 
 6. From your **Google Ads** account, copy the Customer ID (without hyphens) from the top left-hand corner and paste it to the AppsFlyer **Ads Customer ID** parameter as shown in the screenshots below.
 
-[![](https://support.appsflyer.com/hc/article_attachments/21414640108689)](https://support.appsflyer.com/hc/article_attachments/21414640108689)
+[![](https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png)](https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png)
 
 7. Enter the **Action Identifier**, **Disable\_Country\_Sending** (provided by Adquant) and the **Google Ads Customer ID** number in the appropriate fields.
 

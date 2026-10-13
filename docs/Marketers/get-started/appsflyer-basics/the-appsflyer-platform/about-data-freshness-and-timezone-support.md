@@ -60,7 +60,7 @@ Some reports and pull-down lists are processed once a day, this is referred to a
 
 **Eastern hemisphere and UTC time zone**:
 
-![[NEEDS DESCRIPTIVE ALT TEXT — CONFIRM]: diagram of daily-processing wait times for Eastern hemisphere time zones](https://support.appsflyer.com/hc/article_attachments/8272818122769)
+![[NEEDS DESCRIPTIVE ALT TEXT — CONFIRM]: diagram of daily-processing wait times for Eastern hemisphere time zones](https://files.readme.io/cbea9d910695b39f59b342da6f56fa51df76afc910c4eea60f6dd49fbee2a0d6-8272818122769.png)
 
 * Up to 11 hours can pass from the time the day ends (local time) until processing begins. For example:
   * Beijing (UTC+8): Need to wait eight hours before processing begins
@@ -70,7 +70,7 @@ Some reports and pull-down lists are processed once a day, this is referred to a
 
 **Western hemisphere:**
 
-![[NEEDS DESCRIPTIVE ALT TEXT — CONFIRM]: diagram of daily-processing wait times for Western hemisphere time zones](https://support.appsflyer.com/hc/article_attachments/8272698121489)
+![[NEEDS DESCRIPTIVE ALT TEXT — CONFIRM]: diagram of daily-processing wait times for Western hemisphere time zones](https://files.readme.io/ac5e3046b3f55916bb73732801c7e0bdef714cc45b89b6c4d70bbc2009cd64c8-8272698121489.png)
 
 * Up to 23 hours can pass from the time the day ends until processing begins. For example:
   * Los Angeles (UTC -8): Need to wait 16 hours before processing begins

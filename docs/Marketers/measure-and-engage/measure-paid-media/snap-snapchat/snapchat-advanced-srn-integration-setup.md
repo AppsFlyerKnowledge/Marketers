@@ -106,7 +106,7 @@ Re-engagement and re-attribution conversions of users who were **dormant** in th
 
 Map AppsFlyer events with the partner via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant by target validation rules).
 
-[![mceclip0.png](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)](https://support.appsflyer.com/hc/article_attachments/23458868914577)
+[![mceclip0.png](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)
 
 **To configure in-app event postbacks:**
 
@@ -213,7 +213,7 @@ client://home?pid=snapchat\_int&c=TEST&is\_retargeting=true
 1. Go to **Drive traffic to app** opportunity type.
 2. Add the Deeplink URI:  
      
-   [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://support.appsflyer.com/hc/article_attachments/360001717778)
+   [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
 
 ### Deferred deep linking with Snapchat
 

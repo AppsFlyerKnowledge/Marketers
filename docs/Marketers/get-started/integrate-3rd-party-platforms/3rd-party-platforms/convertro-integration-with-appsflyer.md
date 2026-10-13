@@ -42,7 +42,7 @@ For more details about partner activation, click [here](/docs/partner-activation
 
 Convertro connects with AppsFlyer via a unique Page URL, Site ID, and Client Name. If you don't already have them, you must obtain them from Convertro to continue with the integration or follow the instructions below.
 
-[![](https://support.appsflyer.com/hc/article_attachments/360002220189)](https://support.appsflyer.com/hc/article_attachments/360002220189)
+[![](https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png)](https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png)
 
 ### Obtaining the "Client Name, Page URL & Site ID" From the Convertro Platform
 
@@ -50,15 +50,15 @@ To obtain the Client Name, Page URL, and Site ID, login to the Convertro dashboa
 
 **Page URL:**
 
-[![](https://support.appsflyer.com/hc/en-us/article_attachments/204790263/Convertro4.png)](https://support.appsflyer.com/hc/en-us/article_attachments/204790263/Convertro4.png)
+[![](https://files.readme.io/f20c2e45146f0874d94dc84c4f61658e15274970f348896a40b2806d3fe540c9-204790263.png)](https://files.readme.io/f20c2e45146f0874d94dc84c4f61658e15274970f348896a40b2806d3fe540c9-204790263.png)
 
 **Site ID:**
 
-[![](https://support.appsflyer.com/hc/en-us/article_attachments/204790283/Convertro5.png)](https://support.appsflyer.com/hc/en-us/article_attachments/204790283/Convertro5.png)
+[![](https://files.readme.io/b60897bea0b640cb393bceecb57c14370b2ba074818160af0a25a53c7a8ce26b-204790283.png)](https://files.readme.io/b60897bea0b640cb393bceecb57c14370b2ba074818160af0a25a53c7a8ce26b-204790283.png)
 
 **Client Name:**
 
-![](https://support.appsflyer.com/hc/en-us/article_attachments/204595606/Convertro3.png)
+![](https://files.readme.io/2e5342006bdfff9e3b3c1dffdaed3e9d83ec2fe4c465b7918023a359776cee91-204595606.png)
 
 ### Default postbacks
 
@@ -72,7 +72,7 @@ Click **Save.**
 
 ### In-app event settings
 
-[![](https://support.appsflyer.com/hc/article_attachments/360002200405)](https://support.appsflyer.com/hc/article_attachments/360002200405)
+[![](https://files.readme.io/5c1d6841c7f8397d797964790c1f200d60a6ab81fe67eb2162b2a5e7c73462d3-360002200405.png)](https://files.readme.io/5c1d6841c7f8397d797964790c1f200d60a6ab81fe67eb2162b2a5e7c73462d3-360002200405.png)
 
 In this section, you can map your AppsFlyer events with Convertro via postbacks.
 

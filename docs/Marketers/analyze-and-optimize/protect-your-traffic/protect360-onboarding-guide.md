@@ -46,7 +46,7 @@ Understanding these differences and available options is key to making informed 
 >
 > You can switch ([Admin only](/docs/user-management)) between **Implemented** and **Tagged** modes anytime to match your evolving business objectives. [Learn more here](/docs/beta-fraud-protection-studio#key-concepts).
 
-![](https://support.appsflyer.com/hc/article_attachments/35506628777105)
+![](https://files.readme.io/70bf87550e949fed4898270f731424e948a24f7cf2cff39e81ba44473af94189-35506628777105.png)
 
 Tip: At this stage, when your team is getting familiar with Protect360, we strongly recommend visiting the [**App detection evaluation**](/docs/beta-fraud-protection-studio#app-detection-evaluation) card within the Fraud Protection Studio to test and understand these settings on the app level.
 
@@ -54,7 +54,7 @@ Tip: At this stage, when your team is getting familiar with Protect360, we stron
 
 You can export Protect360 data in three ways: [Raw Data Report](/docs/protect360-raw-data-reports#about-protect360-raw-data-reports), [Pull API](/docs/protect360-raw-data-reports#pull-api), or [Data Locker](/docs/protect360-raw-data-reports#data-locker). Whichever way you choose, it is important to configure your data connections properly to ensure accurate fraud data reporting and effective analysis.
 
-![](https://support.appsflyer.com/hc/article_attachments/35506660373393)
+![](https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png)
 
 > 📘 **Important!**
 >
@@ -88,7 +88,7 @@ To display hijacked installs properly in your BI:
 > * Tagged post attribution in-app events
 
 
-![](https://support.appsflyer.com/hc/article_attachments/35506628785169)
+![](https://files.readme.io/70d33b5c4359f839da8d46c4b07baf277148fc4d5c6ebc7a3e8b2d600bd7c5fc-35506628785169.png)
 
 #### **Pull API**
 
@@ -131,7 +131,7 @@ Contact your Customer Success Manager or Account Manager to learn more about bes
 
 The [Protect360 dashboard](/docs/protect360-dashboard) provides a visual overview of your fraud data, allowing you to investigate further and better understand fraud detection and its impact on your activities.
 
-![](https://support.appsflyer.com/hc/article_attachments/35506628785809)
+![](https://files.readme.io/4717e1f00d832a9808ac6469d89bf3a87f6701afb24a47f3b4393e4e393111ee-35506628785809.png)
 
 ### Optimization (weeks 3–5)
 

@@ -24,7 +24,7 @@ To view the Protect360 dashboard, in AppsFlyer, go to **Optimize** > **Protect3
 
 **Filter and groupings window**
 
-[![p360_filters_2.png](https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png)](https://support.appsflyer.com/hc/article_attachments/4408431325969)
+[![p360_filters_2.png](https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png)](https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png)
 
 The following filtering and grouping options are available:
 
@@ -71,7 +71,7 @@ For each KPI, there is a percentage value. This value shows how the presented KP
 
 **Identified fraudulent attributions**
 
-[![](https://support.appsflyer.com/hc/article_attachments/4408437121297)](https://support.appsflyer.com/hc/article_attachments/4408437121297)
+[![](https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png)](https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png)
 
 Total identified fraud metrics display the amounts of:
 
@@ -80,31 +80,31 @@ Total identified fraud metrics display the amounts of:
 
 **Blocked in-app events**
 
-[![](https://support.appsflyer.com/hc/article_attachments/4403139249809)](https://support.appsflyer.com/hc/article_attachments/4403139249809)
+[![](https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png)](https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png)
 
 Blocked in-app events metrics display the amount of in-app events blocked by AppsFlyer. The events may have been blocked due to belonging to blocked installs, or due to being marked as suspicious post-attribution events.
 
 **Total of tagged attributions**
 
-[![](https://support.appsflyer.com/hc/article_attachments/32184720638097)](https://support.appsflyer.com/hc/article_attachments/32184720638097)
+[![](https://files.readme.io/49e705c39b88c243af92c88e33d1939d1ec54b6a83e94724bdef702c9442a6a6-32184720638097.png)](https://files.readme.io/49e705c39b88c243af92c88e33d1939d1ec54b6a83e94724bdef702c9442a6a6-32184720638097.png)
 
 Tagged attributions metrics display the number of installs that were recognized as fraud but have been marked by the user as tagged and not blocked. this does not include in-app events.
 
 **Total of tagged in-app events**
 
-[![](https://support.appsflyer.com/hc/article_attachments/32637238112145)](https://support.appsflyer.com/hc/article_attachments/32184720638097)
+[![](https://files.readme.io/79650837a722efdc3bea39664f0d5eb774ac6acbfb15e5f64d9a56f7c03b21fe-32637238112145.png)](https://files.readme.io/49e705c39b88c243af92c88e33d1939d1ec54b6a83e94724bdef702c9442a6a6-32184720638097.png)
 
 Tagged in-app events metrics display the number of installs that were recognized as fraud but have been marked by the user as tagged and not blocked.
 
 **Identified compromised installs**
 
-![](https://support.appsflyer.com/hc/article_attachments/41459847283729)
+![](https://files.readme.io/60fdba97e9eb920e26ac2667431b760a7dee62b53396196403d68326bff6c3cc-41459847283729.png)
 
 Installs where the device was detected by AppsFlyer attribution logic as being flooded with inauthentic engagements.
 
 **Average engagement per install**
 
-![](https://support.appsflyer.com/hc/article_attachments/41459862819857)
+![](https://files.readme.io/edb695ad30e16e403d953fd0fad274d5733ca4e2dc411baad7bbe4179cfcd0b0-41459862819857.png)
 
  Average engagement per install shows the average number of engagements associated with the install.
 
@@ -179,7 +179,7 @@ The **Identified fraud breakdown** table displays the following data:
 
 The table is presented in a general overview format, as shown in the image that follows.
 
-[![p360_main_table.png](https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png)](https://support.appsflyer.com/hc/article_attachments/4408431449745)
+[![p360_main_table.png](https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png)](https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png)
 
 The dynamic table structure:
 
@@ -187,7 +187,7 @@ The dynamic table structure:
   If you make any changes to the table, make sure to click the **Save** button afterward.
 * Is per user, so every account user with access to Protect360 can personally customize their own table structure. See [more table options](/docs/protect360-dashboard#additional-table-options).
 
-[![edit_table.jpg](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)](https://support.appsflyer.com/hc/article_attachments/360011641617)
+[![edit_table.jpg](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)
 
 #### Content of the identified fraud breakdown table
 
@@ -283,7 +283,7 @@ Dashboard features are described in the sections that follow.
 
 ### In-app events—headline metrics
 
-[![](https://support.appsflyer.com/hc/article_attachments/360012501757)](https://support.appsflyer.com/hc/article_attachments/360012501757)
+[![](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)
 
 The headline metrics enable you to see:
 
@@ -322,7 +322,7 @@ The **In-app event fraud breakdown** table displays the following data:
 
 The table is presented in a general overview format, as shown in the image that follows.
 
-[![IAE_fraud_table.jpg](https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg)](https://support.appsflyer.com/hc/article_attachments/360012839758)
+[![IAE_fraud_table.jpg](https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg)](https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg)
 
 The dynamic table structure:
 
@@ -330,7 +330,7 @@ The dynamic table structure:
   If you make any changes to the table, make sure to click the **Save** button afterward.
 * Is per user, so every account user with access to Protect360 can personally customize their own table structure. See [more table options](/docs/protect360-dashboard#installs%E2%80%94table).
 
-[![iae_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://support.appsflyer.com/hc/article_attachments/360012839778)
+[![iae_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)
 
 #### Content of the in-app event fraud breakdown table
 
@@ -377,17 +377,17 @@ Payable events are IAEs that have a cost. Once enabled and configured, the In-ap
 **To enable Payable events in the In-app activity dashboard**:
 
 * In the **Filter by** section of the In-app activities dashboard, enable Payable events.  
-  [![](https://support.appsflyer.com/hc/article_attachments/360012576718)](https://support.appsflyer.com/hc/article_attachments/360012576718)
+  [![](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)
 
 **To configure payable events**:
 
 1. In the In-app activities dashboard, click **Configure payable events**.
 
-   [![](https://support.appsflyer.com/hc/article_attachments/360012505217)](https://support.appsflyer.com/hc/article_attachments/360012505217)
+   [![](https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg)](https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg)
 
    The Configure payable events popup displays.
 
-   [![](https://support.appsflyer.com/hc/article_attachments/360012580938)](https://support.appsflyer.com/hc/article_attachments/360012580938)
+   [![](https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg)](https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg)
 2. [Optional] If you configuring a new payable event, click **Add new**.
 3. Based on which payable IAEs you want to display in the dashboard, select the following from the drop-down menus:
    * Apps

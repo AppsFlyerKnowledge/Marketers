@@ -48,7 +48,7 @@ Click **Save.**
 
 ### In-app event settings
 
-[![](https://support.appsflyer.com/hc/article_attachments/360002201165)](https://support.appsflyer.com/hc/article_attachments/360002201165)
+[![](https://files.readme.io/97da1d47ab9bfa3855d18dcd60f3a263b8a631c477b354dc32486170b7708e96-360002201165.png)](https://files.readme.io/97da1d47ab9bfa3855d18dcd60f3a263b8a631c477b354dc32486170b7708e96-360002201165.png)
 
 In this section, you can map your AppsFlyer events with Spoteffects via postbacks.
 

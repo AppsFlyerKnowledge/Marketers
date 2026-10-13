@@ -238,7 +238,7 @@ Ad revenue is not available for The Trade Desk.
 
 In this tab, you can select the permissions to grant The Trade Desk, whether they act as an ad network, agency, or even both. Note that even if attribution is disabled for The Trade Desk, the permissions tab can be active and you can grant control to The Trade Desk.
 
-![](https://support.appsflyer.com/hc/article_attachments/50612307452817)
+![](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
 

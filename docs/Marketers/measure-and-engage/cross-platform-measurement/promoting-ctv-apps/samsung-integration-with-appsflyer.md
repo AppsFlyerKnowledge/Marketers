@@ -17,7 +17,7 @@ The Samsung API integration supports:
 
 ### Samsung attribution flow
 
-![[CONFIRM: Diagram of the Samsung CTV attribution flow, showing install, session, and in-app event data moving from the Samsung app to AppsFlyer via the S2S API or SDK]](https://support.appsflyer.com/hc/article_attachments/7215151128209)
+![[CONFIRM: Diagram of the Samsung CTV attribution flow, showing install, session, and in-app event data moving from the Samsung app to AppsFlyer via the S2S API or SDK]](https://files.readme.io/a1031878e8aced81da5762d06ae0163770cd73b9a7c91224ea7665aa142d2ce8-7215151128209.png)
 
 ## Integration procedures
 

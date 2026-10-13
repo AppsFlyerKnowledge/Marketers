@@ -17,7 +17,7 @@ excerpt: "Learn about self-reporting networks (SRNs)—attribution, deep linking
 | [Meta ads](/docs/meta-ads-integration-setup) | ![](https://cdn.appsflyer.com/marketplace/static/logo/facebook.png?v=1) |
 | [Roku](/docs/roku-integration-with-appsflyer) | ![roku.png](https://files.readme.io/4909a45e611700e5c2a69f94710226e65e10faf620e3a7939a2c038bea1736ca-33565070184337.png) |
 | [Snapchat—Advanced SRN](/docs/snapchat-advanced-srn-integration-setup) | ![snapchat_logo.png](https://files.readme.io/c9b62d55d5c1497011d7411a21dca6f1668308bbe2806ab238b71742c421b182-32259457816209.png) |
-| Tencent Social Ads | ![blobid0.jpg](https://support.appsflyer.com/hc/article_attachments/32259428896017) |
+| Tencent Social Ads | ![blobid0.jpg](https://files.readme.io/6d6e9661c9d81f80ffeedfdf4850a84f3cc183faa49a514d1d3bb116641738da-32259428896017.jpg) |
 | [TikTok for Business—Advanced SRN](/docs/tiktok-for-business-advanced-srn-integration-setup) | ![TTFB_logo__4C_horizontal_black.png](https://files.readme.io/caa8c9e02b161eea10740cb79f26d04d3324e87b9cfd929281374d2d7936ef2e-32259428903953.png) |
 | [X Ads](/docs/x-ads-formerly-twitter-ads-setup-guide-overview) | ![X Ads logo.png](https://files.readme.io/be88359054dba353a15beeafc13d590f5296a721b206be3f768fa606592249e6-32259428909841.png) |
 | [Yahoo (Oath: Ad Platforms / Yahoo Gemini)](/docs/yahoo-integration-setup) | ![verizonmedia.png](https://files.readme.io/36291ff556d07a5dbf2ae8ff693ea33d21dae9e0518a94b251202634a24049cf-32259428916369.png) |
@@ -196,7 +196,7 @@ AppsFlyer data analysts checked Meta ads **user acquisition** campaigns during a
 * In 5% of campaigns, at least 40% were existing app users.
 * **Conclusion: In SRN user-acquisition campaigns, 1 in 10 targeted users is already an existing user.**
 
-[![mistargeted_users.png](https://files.readme.io/0cc402a1637148cf154188286d4939af73ad83fdaecfd813eb1ae7e17ce5830f-32259428927505.png)](https://support.appsflyer.com/hc/article_attachments/32259428927505)
+[![mistargeted_users.png](https://files.readme.io/0cc402a1637148cf154188286d4939af73ad83fdaecfd813eb1ae7e17ce5830f-32259428927505.png)](https://files.readme.io/0cc402a1637148cf154188286d4939af73ad83fdaecfd813eb1ae7e17ce5830f-32259428927505.png)
 
 #### Solving the mistargeting problem
 

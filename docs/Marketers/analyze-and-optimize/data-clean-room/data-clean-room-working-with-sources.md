@@ -135,7 +135,7 @@ To specify the data source location:
 
 Select the `[`connection](/docs/data-clean-room-setting-up-cloud-services#overview) in which the source will be (or has been) created.
 If there are no connections defined in your account, the New connection dialog will open, prompting you to create one. Follow `[`these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-inbound) to create it.
-If you have existing connections but want to use a new one, click the `![dcr_new_connection_button.png](https://support.appsflyer.com/hc/article_attachments/14989643499153)` button to open the New connection dialog. Follow `[`these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-inbound) to create it.
+If you have existing connections but want to use a new one, click the `![dcr_new_connection_button.png](https://files.readme.io/0a6766bcb5deef0b2264b372592b82485cc59b11e454cdcbd4a1718de4df951d-14989643499153.png)` button to open the New connection dialog. Follow `[`these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-inbound) to create it.
 
 Continue with the relevant instructions below based on where the data for your source is located.
 
@@ -196,7 +196,7 @@ Metric: Numeric data you have collected with respect to an app user (examples mi
 Loading source fields
 Load source fields using the relevant instructions below:
 Data warehouse sources
-To load fields from a data source located in a data warehouse (BigQuery or Snowflake), click the  `![dcr_load_fields_from_source.png](https://support.appsflyer.com/hc/article_attachments/14986195290897)` button.
+To load fields from a data source located in a data warehouse (BigQuery or Snowflake), click the  `![dcr_load_fields_from_source.png](https://files.readme.io/667761e044a45e9a63bf904ada0ba07917014b5b446379213742510278b5a2dd-14986195290897.png)` button.
 
 
 Important!
@@ -219,7 +219,7 @@ To upload your prototype source file, follow the instructions in the relevant ta
 <Accordion title="Local file">
 
 
-In the Source structure section, click the `![DCR_load_fields_from_file.png](https://support.appsflyer.com/hc/article_attachments/11240944795025)` button.
+In the Source structure section, click the `![DCR_load_fields_from_file.png](https://files.readme.io/544a069a05fd1afed0b4d9935ccea11dafae6afc78c09491b27809dd52daa373-11240944795025.png)` button.
 In the window that opens, select Upload a local file.
 
 Specify the CSV or GZIP file you want to upload, then click OK.
@@ -231,7 +231,7 @@ Specify the CSV or GZIP file you want to upload, then click OK.
 
 To load the file from its connection and allow AppsFlyer to create the source folder structure:
 
-In the Source structure section, click the `![DCR_load_fields_from_file.png](https://support.appsflyer.com/hc/article_attachments/11240944795025)` button.
+In the Source structure section, click the `![DCR_load_fields_from_file.png](https://files.readme.io/544a069a05fd1afed0b4d9935ccea11dafae6afc78c09491b27809dd52daa373-11240944795025.png)` button.
 In the window that opens, select Load from connection.
 
 Click the Generate folders link.AppsFlyer automatically creates the required folder structure and source folder (on the connection you specified, with the source folder name you specified).
@@ -246,7 +246,7 @@ Once the file has finished uploading, click OK.
 
 To upload the source file from a structure you created manually:
 
-In the Source structure section, click the `![DCR_load_fields_from_file.png](https://support.appsflyer.com/hc/article_attachments/11240944795025)` button.
+In the Source structure section, click the `![DCR_load_fields_from_file.png](https://files.readme.io/544a069a05fd1afed0b4d9935ccea11dafae6afc78c09491b27809dd52daa373-11240944795025.png)` button.
 In the window that opens, select Load from connection.
 
 
@@ -282,7 +282,7 @@ If you decide to use additional fields from this source after saving it, you can
 
 To save the source:
 
-[Optional] Click `![DCR_test_source.png](https://support.appsflyer.com/hc/article_attachments/11240865384849)` to check for errors in the format or validity of the source fields.
+[Optional] Click `![DCR_test_source.png](https://files.readme.io/c8d2bb2e7062d062a2ed7ddb84472c5acd02fc93b178b2299515b2374a3ad3e3-11240865384849.png)` to check for errors in the format or validity of the source fields.
 
 Click Save to save the source.
 The source is created and a confirmation message is displayed.
@@ -371,7 +371,7 @@ To edit the source name:
 Go to the Sources tab of the Data Clean Room.
 
 In the list of sources, hover over the row of the source you want to edit.
-Click the edit button `![edit_button.png](https://support.appsflyer.com/hc/article_attachments/5366594803473)` that displays on the right side of the row.
+Click the edit button `![edit_button.png](https://files.readme.io/aeb81045ac5e49107cfb1e6cb0b49d5184ea1d70a20e3c58f684bc44f6e25c66-5366594803473.png)` that displays on the right side of the row.
 On the Edit source page, edit the name of the source.
 Click the Save button to save the source with the new name or Cancel to undo your changes.
 
@@ -384,7 +384,7 @@ To edit the source structure:
 Go to the Sources tab of the Data Clean Room.
 
 In the list of sources, hover over the row of the source you want to edit.
-Click the edit button `![edit_button.png](https://support.appsflyer.com/hc/article_attachments/5366594803473)` that displays on the right side of the row.
+Click the edit button `![edit_button.png](https://files.readme.io/aeb81045ac5e49107cfb1e6cb0b49d5184ea1d70a20e3c58f684bc44f6e25c66-5366594803473.png)` that displays on the right side of the row.
 On the Edit source page, the fields that were previously categorized as`[` identifiers, dimensions, or metrics](/docs/data-clean-room-working-with-sources#3-define-the-source-structure) will display in the relevant category lists on the right side of the screen.
 You can move a previously categorized field to a different category without reloading fields from the source file. To do this:
 First, select it in the relevant category list and use the Remove button to return it to the Available fields list.
@@ -413,7 +413,7 @@ Newly added or categorized fields are not automatically included in existing rep
 Go to the Sources tab of the Data Clean Room.
 
 In the list of sources, hover over the row of the source you want to delete.
-Click the delete button `![delete_button.png](https://support.appsflyer.com/hc/article_attachments/5367408938513)` that displays on the right side of the row.
+Click the delete button `![delete_button.png](https://files.readme.io/dbdbc085f6b7b5c2143c14494d1694fad5a3902ed57f8b34ded2144260164716-5367408938513.png)` that displays on the right side of the row.
 In the dialog, confirm that you want to delete the source.You cannot delete a source that is being used by a report. If this is the case, a message will list the reports in which the source is being used. In order to delete the source, you can either:
 Delete the reports in which it is being used; or
 Remove the source fields from the definitions of the reports in which they are used.

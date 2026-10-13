@@ -4,7 +4,7 @@ excerpt: "Learn how AppsFlyer attributes in-app events and sessions to both user
 ---
 **At a glance:** To evaluate performance during the retargeting campaign's re-engagement window, in-app events and sessions are double-attributed to the user acquisition (UA) and retargeting media sources.
 
-![](https://support.appsflyer.com/hc/article_attachments/9479192551825)
+![](https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png)
 
 ## Overview
 
@@ -42,7 +42,7 @@ To clarify further, the table that follows contains a scenario of how in-app eve
 
 Some dashboards and cohort reports contain multiple view options being unified, user acquisition, and retargeting. These view types employ similar logic to that employed in raw data.
 
-![](https://support.appsflyer.com/hc/article_attachments/9479237101329)
+![](https://files.readme.io/65d467b9b8c4a24036eac000808113ed794f88fc547994498d48e829d26afda3-9479237101329.png)
 
 #### Data filtering by view type using the conversion\_type field
 

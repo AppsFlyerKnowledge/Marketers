@@ -33,10 +33,10 @@ A OneLink template:
 
 1. In AppsFlyer, from the side menu, select **Engage** > **OneLink management**.  
    The OneLink suite is an account-level feature, which lets you create OneLink templates and their custom links for all your apps.  
-   [![](https://support.appsflyer.com/hc/article_attachments/4406696125713)](https://support.appsflyer.com/hc/article_attachments/4406696125713) **Note**: If you don't have any templates created, an onboarding wizard opens. Follow the directions in the wizard and disregard the rest of this procedure.
+   [![](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png)](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png) **Note**: If you don't have any templates created, an onboarding wizard opens. Follow the directions in the wizard and disregard the rest of this procedure.
 2. Click the menu icon > **Add OneLink template**.  
    The OneLink template setup page opens.  
-   [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://support.appsflyer.com/hc/article_attachments/360009665478)
+   [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
 3. In the **OneLink template name** field, enter a name.
 
    CALLSTART::Note::
@@ -115,7 +115,7 @@ For the best user experience, security, and device coverage, we recommend enabli
 1. In AppsFlyer, from the side menu, select **Engage** > **OneLink management**.
 2. Select the OneLink template you want to edit.
 3. Click the menu icon (**⋮**), then click **Edit OneLink template**.
-4. Scroll down to **When app is installed**. [![](https://support.appsflyer.com/hc/article_attachments/18363965490833)](https://support.appsflyer.com/hc/article_attachments/18363965490833)
+4. Scroll down to **When app is installed**. [![](https://files.readme.io/c0e8e5364f0b184f33d72e33f28df131d5a8bb6c377dc74f0ec190bcc6e63e75-18363965490833.png)](https://files.readme.io/c0e8e5364f0b184f33d72e33f28df131d5a8bb6c377dc74f0ec190bcc6e63e75-18363965490833.png)
 5. Follow the instructions for iOS, Android, and fallback setup:
 
    iOS Universal Links Android App Links URI scheme
@@ -129,7 +129,7 @@ For the best user experience, security, and device coverage, we recommend enabli
       * Tell them to follow [these instructions](https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#procedures-for-ios-universal-links).
       * The developer returns to you with the Team ID (also called Apple App ID Prefix, for example, PF23MIWNTW).
       * If the app is not yet published, the developer must also give you the Bundle Identifier (for example, com.myapp.something).  
-        [![](https://support.appsflyer.com/hc/article_attachments/18363965493521)](https://support.appsflyer.com/hc/article_attachments/18363965493521)
+        [![](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)
    2. In the OneLink template page click **Change to launch the app using Universal Links**.
    3. In the new window, select **Launch the app using Universal Links**.
    4. In the **Team ID** field, enter the team ID provided by the developer.
@@ -190,7 +190,7 @@ For the best user experience, security, and device coverage, we recommend enabli
 
 ### Customize QR codes
 
-![OnelinkQRFinal__1_.gif](https://support.appsflyer.com/hc/article_attachments/11902870808081)
+![OnelinkQRFinal__1_.gif](https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif)
 
 You can customize the QR codes generated via OneLink by:
 

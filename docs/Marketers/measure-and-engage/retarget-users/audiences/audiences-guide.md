@@ -206,7 +206,7 @@ Use the toggle that splits the audience among partners and a control group to ef
 1. In the AppsFlyer left-side panel, go to **Engage** > **Audiences**.
 2. In the **Audiences** tab, select the audience.
 3. Go to the **Connect** tab.  
-   [![audience_split_1200px.png](https://files.readme.io/1a9decaea5f77ec36c111a132c12733cfa44bb1e87c6515e71843e6c7fcabfee-46335667595281.png)](https://support.appsflyer.com/hc/article_attachments/46335667595281) The current settings display:
+   [![audience_split_1200px.png](https://files.readme.io/1a9decaea5f77ec36c111a132c12733cfa44bb1e87c6515e71843e6c7fcabfee-46335667595281.png)](https://files.readme.io/1a9decaea5f77ec36c111a132c12733cfa44bb1e87c6515e71843e6c7fcabfee-46335667595281.png) The current settings display:
    * The top, right-side pane displays estimated total audience and upload sizes (for all partners)
    * The bottom, right-side presents a visualization of:
      * Estimated upload size for each partner
@@ -385,7 +385,7 @@ This section describes the features and campaign metrics that appear on the dash
 
 ### Audiences dashboard
 
-[![new_dashboard_image_doctored.jpg](https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg)](https://support.appsflyer.com/hc/article_attachments/46335625092369)
+[![new_dashboard_image_doctored.jpg](https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg)](https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg)
 
 
 
@@ -429,7 +429,7 @@ The **Campaign metrics** section of the Audiences dashboard displays data for ca
 
 The initial **Campaign metrics** view displays summary campaign data for each audience:
 
-[![campaign_metrics_summary_view.jpg](https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg)](https://support.appsflyer.com/hc/article_attachments/46335625093009)
+[![campaign_metrics_summary_view.jpg](https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg)](https://files.readme.io/3b3c1878471a1b77cb7e4296b966302873caa6313f8779b99f4f3687c36bfa5d-46335625093009.png)
 
 
 
@@ -450,7 +450,7 @@ From the summary view, click on the ![show_detailed_view_icon.png](https://files
 
 The detailed view displays data broken down by supported partner and campaign:
 
-[![campaign_metrics_detailed_view.jpg](https://files.readme.io/cee8910e07bdf6707feeda39dd5e480b19b27fad801dd99d501c2c1ceb4bb49d-46335667634193.jpg)](https://support.appsflyer.com/hc/article_attachments/46335625094417)
+[![campaign_metrics_detailed_view.jpg](https://files.readme.io/cee8910e07bdf6707feeda39dd5e480b19b27fad801dd99d501c2c1ceb4bb49d-46335667634193.jpg)](https://files.readme.io/44b5b71c5832a27785a3f8919a05ed9456e02e3f59ee822b021cd3f08089609f-46335625094417.png)
 
 If the selected audience was used to target more than one app, use the drop-down list ![pin_A.png](https://files.readme.io/dcf60cd17a1135e63f6443728c3d713d9cacd6af0e1c010c226d1a092770c40b-46335667636113.png) to filter the data by app.
 

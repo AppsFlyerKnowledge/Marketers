@@ -20,7 +20,7 @@ A single template supports your app across multiple platforms (meaning one templ
 
 1. Create or edit a [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template-with-redirection-logic-for-new-app-users) for cross-platform attribution.
 2. In the **Cross-platform attribution** section, click the **edit button ->** **Enable cross-platform attribution**
-3. From the relevant platform drop-downs, select the relevant app. **Note**: Each app can only be added to one OneLink template with cross-platform attribution enabled. [![Cross-platform attribution.png](https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png)](https://support.appsflyer.com/hc/article_attachments/24170762165521)
+3. From the relevant platform drop-downs, select the relevant app. **Note**: Each app can only be added to one OneLink template with cross-platform attribution enabled. [![Cross-platform attribution.png](https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png)](https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png)
 
 ## Set up cross-platform partner integration
 
@@ -50,7 +50,7 @@ To Create an [attribution link](/docs/set-up-an-integrated-partner#attribution-
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations** and select the integrated partner.
 2. In the **Attribution link** tab, when creating a [OneLink link](/docs/set-up-an-integrated-partner#attribution-link-tab), select Use OneLink.
 3. In the **Select OneLink template** list, select the [OneLink template you created for cross-platform](#step-1-create-or-edit-a%C2%A0onelink-template%C2%A0for-crossplatform-attribution) attribution.
-4. Scroll down to **View-through attribution**.[![](https://files.readme.io/0db03066a7f7c14c68d36a019d9791dfea44e6df3e8f5bdb6f5e4b71d5e78a08-12602245845649.png)](https://support.appsflyer.com/hc/article_attachments/12602245845649)
+4. Scroll down to **View-through attribution**.[![](https://files.readme.io/0db03066a7f7c14c68d36a019d9791dfea44e6df3e8f5bdb6f5e4b71d5e78a08-12602245845649.png)](https://files.readme.io/0db03066a7f7c14c68d36a019d9791dfea44e6df3e8f5bdb6f5e4b71d5e78a08-12602245845649.png)
 5. Turn on **Cross-platform attribution**. This adds the `af_xplatform=true` parameter to the impression attribution link and gives the link cross-platform attribution capabilities. Without this parameter, the URL functions as a regular impression URL that can't attribute multiple installs to the same impression.
 6. Set the **Cross-platform view-through attribution lookback window**. This adds the `af_xplatform_vt_lookback` parameter to the impression attribution link and indicates the number of hours (up to 72) following the impression during which the app install can be attributed to the impression.
 7. Add any additional attribution parameters as needed. Use naming conventions that identify your cross-platform app campaign. [Learn more](/docs/about-link-structure-and-parameters) about the parameters you can add for additional data and metrics. Sample link:

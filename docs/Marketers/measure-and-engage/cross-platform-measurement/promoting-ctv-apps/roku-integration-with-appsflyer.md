@@ -14,7 +14,7 @@ Roku is a unique ad network that has ad inventory across both Connected TV (CTV)
 
 ### Roku attribution flow
 
-[![54525 inline.jpg](https://files.readme.io/5634ed65702e1d4c90250a7f7b4448c225d5f769936b2a120ddbac1a76752c09-39534517801617.jpg)](https://support.appsflyer.com/hc/article_attachments/4431541172241)
+[![54525 inline.jpg](https://files.readme.io/5634ed65702e1d4c90250a7f7b4448c225d5f769936b2a120ddbac1a76752c09-39534517801617.jpg)](https://files.readme.io/51ab9ce816986134ed118ac7b8dd94336fff53d6a00daf5332eef2934c0048d8-4431541172241.png)
 
 ## Setting up Roku Ads integration for advertisers
 
@@ -157,7 +157,7 @@ Agencies working on behalf of advertisers can turn on the Roku Ads integration a
 
 **To set up Roku Ads for agencies:**
 
-1. In AppsFlyer, from the sidebar, open ![collaborate.png](https://support.appsflyer.com/hc/article_attachments/37844129188753) **Collaborate** > **Partner Integrations**.
+1. In AppsFlyer, from the sidebar, open ![collaborate.png](https://files.readme.io/70400e32ef967b981aabd47faf97880368585fdf52ad29c0d4c2d4c31751e6a3-37844129188753.png) **Collaborate** > **Partner Integrations**.
 2. Find **Roku Ads (rokuads\_int)** and select it.
 3. Enter your agency **Roku Ads Account ID**. This identifies agency traffic and distinguishes it from the advertiser's.
 4. Click **Save Integration**.

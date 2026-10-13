@@ -62,13 +62,13 @@ If neither is available, no postback is sent.
 
 Click on your name at the top right of the screen and select **App Settings**
 
-![](https://support.appsflyer.com/hc/en-us/article_attachments/206117303/Leanplum_1.png)
+![](https://files.readme.io/fcb9bb4fab1eec1db130904c2c4856529f58582bd8c9c04f08200ed82c0fcb80-206117303.png)
 
 Select an app and click **Keys & Settings**
 
-[![](https://support.appsflyer.com/hc/en-us/article_attachments/206117323/Leanplum_2.png)](https://support.appsflyer.com/hc/en-us/article_attachments/206117323/Leanplum_2.png)
+[![](https://files.readme.io/5608bddb2c31b1569e3d2e262946e239f3e637e5ac5d95bc24a03c3ff0d8d763-206117323.png)](https://files.readme.io/5608bddb2c31b1569e3d2e262946e239f3e637e5ac5d95bc24a03c3ff0d8d763-206117323.png)
 
-![](https://support.appsflyer.com/hc/en-us/article_attachments/206117343/Leanplum_3.png)
+![](https://files.readme.io/cd638732b197f03c6194b8bae7b8f726a6e4c16661702fdad48054a35ce333e5-206117343.png)
 
 ### Default postbacks
 
@@ -100,6 +100,6 @@ Permissions are not available for Leanplum.
 
 Once you have set up the integration between Leanplum and Appsflyer, you can access the information by utilizing Leanplum’s targeting and segmentation menu:
 
-[![](https://support.appsflyer.com/hc/en-us/article_attachments/206117523/Leanplum_4.png)](https://support.appsflyer.com/hc/en-us/article_attachments/206117523/Leanplum_4.png)
+[![](https://files.readme.io/5685cfe357930bd57611365d7f47fff1608a8e7c345110070763af26374e01bc-206117523.png)](https://files.readme.io/5685cfe357930bd57611365d7f47fff1608a8e7c345110070763af26374e01bc-206117523.png)
 
 This menu is available in the Analytics, Messages, A/B Tests, and Users sections of the Leanplum platform. You can filter by, group by, and cohort by this data in Analytics, filter by this data in the Users section, and target by this data in Analytics and A/B Tests.

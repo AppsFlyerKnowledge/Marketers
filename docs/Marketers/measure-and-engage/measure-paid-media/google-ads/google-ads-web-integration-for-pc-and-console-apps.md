@@ -145,16 +145,16 @@ The instructions for setting up campaigns to redirect users to either of these o
 1. Set up a cross-platform landing page as described in the [attribution link section](/docs/google-ads-web-integration-for-pc-and-console-apps#attribution-link-tab).
 2. Log in to Google Ads and create a new campaign.
 3. Select the campaign objective.  
-   [![](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)](https://support.appsflyer.com/hc/article_attachments/21939144104337)
+   [![](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)
    * All objectives are applicable, except "App promotion" (which can only be used for mobile app campaigns).
    * We recommend setting the "Sales" campaign objective for optimization based on specific in-app events.
 4. Select the conversion goals.  
-   [![](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)](https://support.appsflyer.com/hc/article_attachments/21939173772177)
+   [![](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)
    * By default, you see the predefined account-level campaign goals. You can keep those, or remove ones that aren't relevant for your campaign.
    * If you don’t see the goal you want, [add the conversion action and conversion goal](/docs/google-ads-web-integration-for-pc-and-console-apps#creating-conversion-actions-and-goals).
    * You can also edit your predefined goals in the Conversions page.
 5. Select the campaign type.  
-   [![](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)](https://support.appsflyer.com/hc/article_attachments/21939144113937)
+   [![](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)
    * All campaign types are applicable, except "Shopping" which requires a product catalog and is limited to verified domains.
 6. Enter the cross-platform landing page URL as Google's final URL.
 
@@ -165,16 +165,16 @@ The instructions for setting up campaigns to redirect users to either of these o
 1. Set up a direct attribution link as described in the [attribution link section](/docs/google-ads-web-integration-for-pc-and-console-apps#attribution-link-tab).
 2. Log in to Google Ads and create a new campaign.
 3. Select the campaign objective.  
-   [![](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)](https://support.appsflyer.com/hc/article_attachments/21939144104337)
+   [![](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)
    * All objectives are applicable, except "App promotion" (which can only be used for mobile app campaigns).
    * We recommend setting the "Sales" campaign objective for optimization based on specific in-app events.
 4. Select the conversion goals.  
-   [![](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)](https://support.appsflyer.com/hc/article_attachments/21939173772177)
+   [![](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)
    * By default, you see the predefined account-level campaign goals. You can keep those, or remove ones that aren't relevant for your campaign.
    * If you don’t see the goal you want, [add the conversion action and conversion goal](/docs/google-ads-web-integration-for-pc-and-console-apps#creating-conversion-actions-and-goals).
    * You can also edit your predefined goals in the Conversions page.
 5. Select the campaign type.  
-   [![](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)](https://support.appsflyer.com/hc/article_attachments/21939144113937)
+   [![](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)
    * All campaign types are applicable, except "Shopping" which requires a product catalog and is limited to verified domains.
 6. Enter the link to be used as Google's final URL.
    * This must be the final web location you want to redirect your users to. It can be any web URL including a web landing page or store URL. For example: `https://store.steampowered.com/app/{appid}/{myapp}/`.

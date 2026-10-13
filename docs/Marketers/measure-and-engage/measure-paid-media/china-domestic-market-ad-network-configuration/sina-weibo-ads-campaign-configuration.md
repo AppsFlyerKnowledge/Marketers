@@ -62,7 +62,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-[![](https://files.readme.io/d3efcf846c2f75515e714e3ae8a7a15000dd76093702f82bc0d8bfb04a3a8aee-360002299609.png)](https://support.appsflyer.com/hc/article_attachments/360002299609)
+[![](https://files.readme.io/d3efcf846c2f75515e714e3ae8a7a15000dd76093702f82bc0d8bfb04a3a8aee-360002299609.png)](https://files.readme.io/d3efcf846c2f75515e714e3ae8a7a15000dd76093702f82bc0d8bfb04a3a8aee-360002299609.png)
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. More information about[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
 
@@ -114,7 +114,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the [click lookback window here](/docs/set-up-lookback-windows).
 
-[![sina weibo clickthrough settings](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)](https://support.appsflyer.com/hc/article_attachments/360002715417)
+[![sina weibo clickthrough settings](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)
 
 ### Click attribution link
 
@@ -152,11 +152,11 @@ Login to Sina Weibo Ads, using this link: [https://ad.weibo.com/](https://ad.wei
 
 Go to the **Tools** page to upload your apps in the Apps Management section:
 
-[![](https://files.readme.io/56d413ce75a2a3b4ca78a6928f60b9898bbd892d43d370197189da66ef9b078b-360000449769.png)](https://support.appsflyer.com/hc/article_attachments/360000449769)
+[![](https://files.readme.io/56d413ce75a2a3b4ca78a6928f60b9898bbd892d43d370197189da66ef9b078b-360000449769.png)](https://files.readme.io/56d413ce75a2a3b4ca78a6928f60b9898bbd892d43d370197189da66ef9b078b-360000449769.png)
 
 Click to add new apps:
 
-[![](https://files.readme.io/2c372745a5fe9b05325731e29e24f0b5097a43664e9a28e288d0b9300aecee8e-360000441885.png)](https://support.appsflyer.com/hc/article_attachments/360000441885)
+[![](https://files.readme.io/2c372745a5fe9b05325731e29e24f0b5097a43664e9a28e288d0b9300aecee8e-360000441885.png)](https://files.readme.io/2c372745a5fe9b05325731e29e24f0b5097a43664e9a28e288d0b9300aecee8e-360000441885.png)
 
 Android: Enter the APK download page (end with .apk) or upload the APK document.
 
@@ -166,21 +166,21 @@ iOS: Enter the iTunes link.
 
 Go to the **Promotions** page and Create New Ad Series
 
-[![](https://files.readme.io/eaf980c1adc0b134265162c114f66b1bf049a80336116db76d353ee5113a9ae5-360000449909.png)](https://support.appsflyer.com/hc/article_attachments/360000449909)
+[![](https://files.readme.io/eaf980c1adc0b134265162c114f66b1bf049a80336116db76d353ee5113a9ae5-360000449909.png)](https://files.readme.io/eaf980c1adc0b134265162c114f66b1bf049a80336116db76d353ee5113a9ae5-360000449909.png)
 
 If you want to acquire new users for your app, select **Increase App Installs** ad type, as shown below:
 
-[![](https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png)](https://support.appsflyer.com/hc/article_attachments/360000442105)
+[![](https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png)](https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png)
 
 ### Setup ad series
 
 Select the app you want to promote:
 
-[![](https://files.readme.io/cf9697b09d8d8b5416b8029cb20c2137eda24d9616bf2db2e1e45a3ec150fcf3-360000450049.png)](https://support.appsflyer.com/hc/article_attachments/360000450049)
+[![](https://files.readme.io/cf9697b09d8d8b5416b8029cb20c2137eda24d9616bf2db2e1e45a3ec150fcf3-360000450049.png)](https://files.readme.io/cf9697b09d8d8b5416b8029cb20c2137eda24d9616bf2db2e1e45a3ec150fcf3-360000450049.png)
 
 Set the audience features, budget, and promotion periods:
 
-[![](https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png)](https://support.appsflyer.com/hc/article_attachments/360000442205)
+[![](https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png)](https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png)
 
 ### Uploading ad creatives and set the attribution link
 
@@ -193,7 +193,7 @@ Weibo provides four ad formats to promote App installs:
 
 All of the ad formats support AppsFlyer Attribution.
 
-[![](https://files.readme.io/5404349a21a783509e6de074826ace0db0d66248853f229ad444fabec95b8311-360000450369.png)](https://support.appsflyer.com/hc/article_attachments/360000450369)
+[![](https://files.readme.io/5404349a21a783509e6de074826ace0db0d66248853f229ad444fabec95b8311-360000450369.png)](https://files.readme.io/5404349a21a783509e6de074826ace0db0d66248853f229ad444fabec95b8311-360000450369.png)
 
 Enter the AppsFlyer attribution link
 
@@ -204,7 +204,7 @@ Enter the AppsFlyer attribution link
 > 	&clickid=`{IMP}&md5_idfa={idfa_MD5}&md5_imei={imei_MD5}`&redirect=false
 > ```
 
-[![](https://files.readme.io/27113a1303fea22bde74527c7103bfbda8e8fd7755c44a52508a02368e0a6407-360000442725.png)](https://support.appsflyer.com/hc/article_attachments/360000442725)
+[![](https://files.readme.io/27113a1303fea22bde74527c7103bfbda8e8fd7755c44a52508a02368e0a6407-360000442725.png)](https://files.readme.io/27113a1303fea22bde74527c7103bfbda8e8fd7755c44a52508a02368e0a6407-360000442725.png)
 
 Complete any additional settings and publish the ad.
 

@@ -349,10 +349,10 @@ Head over to your AppsFlyer account and open the dashboard for the app that you 
    ![choose_media_source.png](https://files.readme.io/6d9ac04a23b97e12c1103e1d8dd7976949485777a89b2545e2704803b486829e-360002655629.png)
 2. In the ***Breakdown By Campaign*** graph, you can see that the install that is attributed to "my media source" comes from a Pre-install campaign:  
      
-    [![](https://support.appsflyer.com/hc/article_attachments/360002653405)](https://support.appsflyer.com/hc/article_attachments/360002653405)  
+    [![](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)  
    You can also verify that the install is attributed correctly by viewing the ***Aggregated Performance Report***. In it, you can see the media source and campaign. See the screenshot below where "My Media Source" is the media source and the campaign is Pre-install:  
      
-    [![](https://support.appsflyer.com/hc/article_attachments/360002653425)](https://support.appsflyer.com/hc/article_attachments/360002653425)
+    [![](https://files.readme.io/d02e89d215e864ad8e96fff97c9dd279d906486ed2036ed27dc5e229ff8935b3-360002653425.png)](https://files.readme.io/d02e89d215e864ad8e96fff97c9dd279d906486ed2036ed27dc5e229ff8935b3-360002653425.png)
 3. Repeat the process for all manufacturers or media sources that you collaborate with for pre-install campaigns.
 
 ## Special cases

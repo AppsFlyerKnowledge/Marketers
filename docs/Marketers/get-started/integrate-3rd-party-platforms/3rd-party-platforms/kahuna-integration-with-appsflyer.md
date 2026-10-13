@@ -66,7 +66,7 @@ For more details about partner activation please click [here](/docs/partner-acti
 
 **Kahuna Secret Key, Staging and Production**
 
-Kahuna connects with AppsFlyer via a unique Secret Key. If you don't already have it, you must obtain it from Kahuna to continue with the integration or follow the steps below. [![](https://support.appsflyer.com/hc/article_attachments/360002216249)](https://support.appsflyer.com/hc/article_attachments/360002216249)
+Kahuna connects with AppsFlyer via a unique Secret Key. If you don't already have it, you must obtain it from Kahuna to continue with the integration or follow the steps below. [![](https://files.readme.io/941ce1b787ab4c34a502f254f7ec3ec8da356a05c99625f5e60e54b0da1f06b6-360002216249.png)](https://files.readme.io/941ce1b787ab4c34a502f254f7ec3ec8da356a05c99625f5e60e54b0da1f06b6-360002216249.png)
 
 ### Obtaining the kahuna secret key
 
@@ -74,11 +74,11 @@ Kahuna connects with AppsFlyer via a unique Secret Key. If you don't already hav
 
 2. Click the user icon and Select **Settings** on the right-hand corner of dashboard menu
 
-[![](https://support.appsflyer.com/hc/en-us/article_attachments/207206166/Kahuna_1.png)](https://support.appsflyer.com/hc/en-us/article_attachments/207206166/Kahuna_1.png)
+[![](https://files.readme.io/4962454c4dd428c69e90d4ebcfa20304dc0ea57c7d58a1368c9a9369ba3e563a-207206166.png)](https://files.readme.io/4962454c4dd428c69e90d4ebcfa20304dc0ea57c7d58a1368c9a9369ba3e563a-207206166.png)
 
 3. Copy the Kahuna secret key:
 
-[![](https://support.appsflyer.com/hc/en-us/article_attachments/207229823/Kahuna_2.png)](https://support.appsflyer.com/hc/en-us/article_attachments/207229823/Kahuna_2.png)
+[![](https://files.readme.io/73d24826e6c55636dafbc22766910fea12fbe7a58c49079c800d5056be45352a-207229823.png)](https://files.readme.io/73d24826e6c55636dafbc22766910fea12fbe7a58c49079c800d5056be45352a-207229823.png)
 
 4. Select **APIs & Integrations**– on this page you can find the parameters:
 
@@ -125,15 +125,15 @@ Permissions are not available for Kahuna.
 
 The install events can be viewed as Newbies in Kahuna's main dashboard.
 
-[![](https://support.appsflyer.com/hc/en-us/article_attachments/207230483/Kahuna_5.png)](https://support.appsflyer.com/hc/en-us/article_attachments/207230483/Kahuna_5.png)
+[![](https://files.readme.io/ebbb7f265e37ead80dd77a9956b9629ce07eeb2fcc9b283ad7b6cc927fe10758-207230483.png)](https://files.readme.io/ebbb7f265e37ead80dd77a9956b9629ce07eeb2fcc9b283ad7b6cc927fe10758-207230483.png)
 
 You can search for a specific user or go to “Top People” in your left side navigation.
 
-[![](https://support.appsflyer.com/hc/en-us/article_attachments/207230503/Kahuna_6.png)](https://support.appsflyer.com/hc/en-us/article_attachments/207230503/Kahuna_6.png)
+[![](https://files.readme.io/ea6ae8494f600bb8a9b9b0af3e36a976e65d72b64052da3e7399f9a9b0c9458c-207230503.png)](https://files.readme.io/ea6ae8494f600bb8a9b9b0af3e36a976e65d72b64052da3e7399f9a9b0c9458c-207230503.png)
 
 Selecting one of the users opens the Mini Profile where you can see the install event “af\_install” in the Top Events section:
 
-[![](https://support.appsflyer.com/hc/en-us/article_attachments/207230563/Kahuna_7.png)](https://support.appsflyer.com/hc/en-us/article_attachments/207230563/Kahuna_7.png)
+[![](https://files.readme.io/3e0a99f178cc1a9ab18886a576b4ba56878fecb6dbd0866926730fb32b65bc59-207230563.png)](https://files.readme.io/3e0a99f178cc1a9ab18886a576b4ba56878fecb6dbd0866926730fb32b65bc59-207230563.png)
 
 ## Testing with sandbox
 
@@ -141,7 +141,7 @@ If you haven’t released your app to the app store yet and want to test the int
 
 1. Make sure you enter “s” in the Staging Textbox when configuring Kahuna within AppsFlyer
 
-[![](https://support.appsflyer.com/hc/article_attachments/360002217229)](https://support.appsflyer.com/hc/article_attachments/360002217229)
+[![](https://files.readme.io/b69fc390ed7f1303ee8ba6dd1345d2c76b5b4c22b4b0b6ec0957a108d709247b-360002217229.png)](https://files.readme.io/b69fc390ed7f1303ee8ba6dd1345d2c76b5b4c22b4b0b6ec0957a108d709247b-360002217229.png)
 
 2. Make sure you have added the code to your App to integrate AppsFlyer and Kahuna SDKs as described in the above sections
 
@@ -155,10 +155,10 @@ If you haven’t released your app to the app store yet and want to test the int
 
 7. Go to that URL, you may see this:
 
-[![](https://support.appsflyer.com/hc/en-us/article_attachments/207230963/Kahuna_9.png)](https://support.appsflyer.com/hc/en-us/article_attachments/207230963/Kahuna_9.png)
+[![](https://files.readme.io/8b16b6d84f0244db3510e4376bf5fc51b6a737e13df89da82e951e1bda90711a-207230963.png)](https://files.readme.io/8b16b6d84f0244db3510e4376bf5fc51b6a737e13df89da82e951e1bda90711a-207230963.png)
 
 8. Install the App on your device
 
 9. Go to Kahuna’s dashboard and search for the user (you can enable Kahuna debugging and look at the logs to get the Kahuna unique device ID for that user.. “dev\_id”... or if your app requires log-in and you pass credentials to Kahuna, then you can search by that credential also). Once you find the user, you should see an “af\_install” event for that user.
 
-[![](https://support.appsflyer.com/hc/en-us/article_attachments/207207606/Kahuna_10.png)](https://support.appsflyer.com/hc/en-us/article_attachments/207207606/Kahuna_10.png)
+[![](https://files.readme.io/b365a27e7638a6a87e6a5b46a67d329956f6a678b234bd1fd802acaeeceaaeb2-207207606.png)](https://files.readme.io/b365a27e7638a6a87e6a5b46a67d329956f6a678b234bd1fd802acaeeceaaeb2-207207606.png)

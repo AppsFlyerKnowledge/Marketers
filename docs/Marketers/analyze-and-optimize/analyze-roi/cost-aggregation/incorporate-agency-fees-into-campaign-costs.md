@@ -23,7 +23,7 @@ See the sections that follow for instructions for the view, add, edit, and delet
 
 ### View rule list
 
-**![AppsFlyerAdmin_us-en.png](https://support.appsflyer.com/hc/article_attachments/4408750662545) To view all the agency fee rules created in your account**:
+**![AppsFlyerAdmin_us-en.png](https://files.readme.io/90ad4b15e0e27f2043e3e6dc1dfaf0581add5e5df2122f95b235728fb140fa5c-4408750662545.png) To view all the agency fee rules created in your account**:
 
 1. In AppsFlyer, from the side menu, select **Settings** > **Cost Control.**  
    The Cost Control screen displays the list of agency rules. Rules are categorized into the following possible statuses:
@@ -37,7 +37,7 @@ See the sections that follow for instructions for the view, add, edit, and delet
 
 The rule builder user interface is designed for interactive rule building. **Tip!** Familiarize and experiment with the rule builder before reviewing this article in detail.
 
-**![AppsFlyerAdmin_us-en.png](https://support.appsflyer.com/hc/article_attachments/4408750662545) To add a new rule**:
+**![AppsFlyerAdmin_us-en.png](https://files.readme.io/90ad4b15e0e27f2043e3e6dc1dfaf0581add5e5df2122f95b235728fb140fa5c-4408750662545.png) To add a new rule**:
 
 1. In AppsFlyer, from the side menu, select **Settings** > **Cost Control.**
 2. Click **+** **Add Agency fees rule**.  
@@ -69,7 +69,7 @@ When you edit or delete a rule, previously calculated data (up to 90 days in the
 * For an edited rule, the total cost reflects the updated agency percentage fee.
 * For a deleted rule, the agency fee is removed from the total cost.
 
-**![AppsFlyerAdmin_us-en.png](https://support.appsflyer.com/hc/article_attachments/4408750662545) To edit, duplicate, or delete a rule**:
+**![AppsFlyerAdmin_us-en.png](https://files.readme.io/90ad4b15e0e27f2043e3e6dc1dfaf0581add5e5df2122f95b235728fb140fa5c-4408750662545.png) To edit, duplicate, or delete a rule**:
 
 1. In the [rule list](/docs/incorporate-agency-fees-into-campaign-costs#view-rule-list), hover over the rule you want to edit, duplicate, or delete.
 2. Click **Menu** ⋮ on the right side.

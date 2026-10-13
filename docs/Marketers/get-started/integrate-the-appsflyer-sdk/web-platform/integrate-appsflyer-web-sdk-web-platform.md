@@ -579,7 +579,7 @@ GTM Custom Templates are not supported for Advanced SDK Verification, because th
 
 After installation, verify that the SDK sends requests by checking network requests in your browser's developer tools.
 
-[![DevTools screenshot](https://files.readme.io/7af40a6fee8bbcd59d204c5bbac888587d97e1ae76278919391e2809fe91b9ff-50896206357009.png)](https://support.appsflyer.com/hc/article_attachments/50896206357009)
+[![DevTools screenshot](https://files.readme.io/7af40a6fee8bbcd59d204c5bbac888587d97e1ae76278919391e2809fe91b9ff-50896206357009.png)](https://files.readme.io/7af40a6fee8bbcd59d204c5bbac888587d97e1ae76278919391e2809fe91b9ff-50896206357009.png)
 
 **To make sure the SDK is working, follow these steps:**
 
@@ -956,10 +956,10 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
    ```
 3. Add a new tag for attributing subscriptions after the thank-you page loads.
 
-   [![Adding a new GTM tag for the CUID conversion event](https://files.readme.io/a8c40e8045dc824c96ca0704471b42465ffacd75b37a926f7ec3a7253095a7c4-50896206358417.png)](https://support.appsflyer.com/hc/article_attachments/50896206358417)
+   [![Adding a new GTM tag for the CUID conversion event](https://files.readme.io/a8c40e8045dc824c96ca0704471b42465ffacd75b37a926f7ec3a7253095a7c4-50896206358417.png)](https://files.readme.io/a8c40e8045dc824c96ca0704471b42465ffacd75b37a926f7ec3a7253095a7c4-50896206358417.png)
 4. Give the tag a distinct name and select the **Custom HTML** tag type option.
 
-   [![Naming the tag and selecting the Custom HTML tag type in GTM](https://files.readme.io/fddcd6db6025b5e50b69c2071134f7d587bb277d57f7a284d579b5655a16e738-50896216533393.jpg)](https://support.appsflyer.com/hc/article_attachments/50896216533393)
+   [![Naming the tag and selecting the Custom HTML tag type in GTM](https://files.readme.io/fddcd6db6025b5e50b69c2071134f7d587bb277d57f7a284d579b5655a16e738-50896216533393.jpg)](https://files.readme.io/fddcd6db6025b5e50b69c2071134f7d587bb277d57f7a284d579b5655a16e738-50896216533393.jpg)
 
    ```
    <script>
@@ -974,10 +974,10 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
    ```
 5. Expand **Advanced Settings** and then **Tag Sequencing** below the text area, and make sure it is set up to fire the conversion after the tag is executed.
 
-   [![Configuring GTM Tag Sequencing for the conversion tag](https://files.readme.io/88fccc39b7c2851729f51296a103c24cbf1a6e948891d28d0c1a12bd3edd1a1c-50896216536209.png)](https://support.appsflyer.com/hc/article_attachments/50896216536209)
+   [![Configuring GTM Tag Sequencing for the conversion tag](https://files.readme.io/88fccc39b7c2851729f51296a103c24cbf1a6e948891d28d0c1a12bd3edd1a1c-50896216536209.png)](https://files.readme.io/88fccc39b7c2851729f51296a103c24cbf1a6e948891d28d0c1a12bd3edd1a1c-50896216536209.png)
 6. Set a trigger for the conversion tag to indicate when the conversion tag should be fired (in the example below, it is fired on "Thank you" page load).
 
-   [![Setting the GTM trigger to fire the conversion tag on Thank You page load](https://files.readme.io/8e3a166c9dcb95066eb4fe3937c2a339a4874cff3870add68f3c3eecfbfd867e-50896206361233.png)](https://support.appsflyer.com/hc/article_attachments/50896206361233)
+   [![Setting the GTM trigger to fire the conversion tag on Thank You page load](https://files.readme.io/8e3a166c9dcb95066eb4fe3937c2a339a4874cff3870add68f3c3eecfbfd867e-50896206361233.png)](https://files.readme.io/8e3a166c9dcb95066eb4fe3937c2a339a4874cff3870add68f3c3eecfbfd867e-50896206361233.png)
 
 </Accordion>
 

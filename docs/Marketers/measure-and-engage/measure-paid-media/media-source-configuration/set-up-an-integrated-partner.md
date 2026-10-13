@@ -16,7 +16,7 @@ Partners, media sources, and third-party platforms integrate with AppsFlyer by A
 
 The image below contains the different partner types that form the attribution ecosystem.
 
-[![Ecosystem.jpg](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)](https://support.appsflyer.com/hc/article_attachments/4411031173265)
+[![Ecosystem.jpg](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)
 
 **Related reading**: [AppsFlyer Performance Index](https://www.appsflyer.com/performance-index/) ranks mobile media sources by category and region.
 
@@ -170,7 +170,7 @@ Generate and save attribution links for the use of click (non-SRN) ad networks, 
 
 #### Attribution link parameters
 
-[![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://support.appsflyer.com/hc/article_attachments/4414306787601)
+[![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
 
 Adding parameters to the attribution link enables you to perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here. When saving the attribution link, all the parameters configured in this tab are saved.
 
@@ -223,7 +223,7 @@ Learn more about the [click lookback window](/docs/set-up-lookback-windows).
 
 **Click attribution link**
 
-[![click-through-attribution-link_en-us.png](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)](https://support.appsflyer.com/hc/article_attachments/4411038599953)
+[![click-through-attribution-link_en-us.png](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)
 
 This is the attribution link that contains all the set up information you have set for it. You can save the link for future reference by clicking **Save attribution link**.
 
@@ -246,7 +246,7 @@ Learn more about [view-through attribution](/docs/set-up-lookback-windows).
 
 **Impressions attribution link**
 
-[![impressions-attribution-link_en-us.png](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)](https://support.appsflyer.com/hc/article_attachments/4411047429265)
+[![impressions-attribution-link_en-us.png](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)
 
 The impression attribution link contains similar attribution data to the click recording link (besides the different lookback window). You can save the link for future reference by clicking **Save attribution link**.
 
