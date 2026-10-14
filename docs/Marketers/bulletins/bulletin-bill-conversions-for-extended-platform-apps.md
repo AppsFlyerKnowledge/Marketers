@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: Bill conversions for extended platform apps"
+title: 'Bulletin: Bill conversions for extended platform apps'
+metadata:
+  keywords:
+    - Marketers
+    - Cross-Platform Measurement
 table_of_contents: false
 x-zendesk:
-  id: 42720965896721
-  url: https://support.appsflyer.com/hc/en-us/articles/42720965896721-Bulletin-Bill-conversions-for-extended-platform-apps
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roi-tamir, Marketers, Cross-Platform Measurement]
-  labels: []
-  promoted: false
-  comments_disabled: true
   created_at: '2026-01-11T07:07:19Z'
   edited_at: '2026-10-14T09:40:34Z'
+  id: 42720965896721
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/42720965896721-Bulletin-Bill-conversions-for-extended-platform-apps
 ---
 | **What's new** | Starting February 1, 2026, non-organic installs from extended platform apps (for example, CTV, PC, and console) are included in billable conversions, according to your existing conversion-based commercial terms. |
 | --- | --- |

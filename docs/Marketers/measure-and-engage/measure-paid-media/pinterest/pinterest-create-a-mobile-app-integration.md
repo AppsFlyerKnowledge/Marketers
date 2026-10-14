@@ -1,26 +1,27 @@
 ---
-title: "Pinterest—Create a mobile app integration"
-excerpt: "Pinterest, an AppsFlyer integrated partner, is one of the top contributors of traffic for bloggers and brands. Pinterest offers both click-based and view-through mobile attribution. In addition, Pinterest also offers click-based retargeting which you can record with AppsFlyer."
+title: Pinterest—Create a mobile app integration
+excerpt: >-
+  Pinterest, an AppsFlyer integrated partner, is one of the top contributors of
+  traffic for bloggers and brands. Pinterest offers both click-based and
+  view-through mobile attribution. In addition, Pinterest also offers
+  click-based retargeting which you can record with AppsFlyer.
+metadata:
+  keywords:
+    - Pinterest
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 216912786
-  url: https://support.appsflyer.com/hc/en-us/articles/216912786-Pinterest-Create-a-mobile-app-integration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Pinterest
-  section_id: 6551388216337
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Pinterest, Advertisers, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-11-09T12:51:03Z'
   edited_at: '2026-09-09T13:05:01Z'
+  id: 216912786
+  locale: en-us
+  section: Pinterest
+  section_id: 6551388216337
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/216912786-Pinterest-Create-a-mobile-app-integration
 ---
 > 📘 **Note**
 >

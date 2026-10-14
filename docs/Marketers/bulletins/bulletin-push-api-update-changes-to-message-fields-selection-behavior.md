@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: Push API Update: Changes to “Message Fields” Selection Behavior"
+title: 'Bulletin: Push API Update: Changes to “Message Fields” Selection Behavior'
+metadata:
+  keywords:
+    - Marketers
+    - Raw Reports
 table_of_contents: false
 x-zendesk:
-  id: 41785747996689
-  url: https://support.appsflyer.com/hc/en-us/articles/41785747996689-Bulletin-Push-API-Update-Changes-to-Message-Fields-Selection-Behavior
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Raw Reports]
-  labels: []
-  promoted: false
-  comments_disabled: false
   created_at: '2025-12-10T11:38:33Z'
   edited_at: '2025-12-10T11:41:45Z'
+  id: 41785747996689
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/41785747996689-Bulletin-Push-API-Update-Changes-to-Message-Fields-Selection-Behavior
 ---
 | Section | Details |
 | --- | --- |

@@ -1,26 +1,29 @@
 ---
-title: "Registering test devices"
-excerpt: "When performing attribution tests, register your test device to make sure each install is recorded as a new install. A registered test device prevents installs from being recorded as reinstalls."
+title: Registering test devices
+excerpt: >-
+  When performing attribution tests, register your test device to make sure each
+  install is recorded as a new install. A registered test device prevents
+  installs from being recorded as reinstalls.
+metadata:
+  keywords:
+    - whitelisting
+    - Testing
+    - device
+    - Advertisers
+    - Agencies
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 207031996
-  url: https://support.appsflyer.com/hc/en-us/articles/207031996-Registering-test-devices
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: SDK integration planning
-  section_id: 6551182964369
-  position: 5
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution, Agencies]
-  labels: [whitelisting, Testing, device, Advertisers, Agencies, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2015-03-10T08:19:35Z'
   edited_at: '2026-08-28T10:04:49Z'
+  id: 207031996
+  locale: en-us
+  section: SDK integration planning
+  section_id: 6551182964369
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207031996-Registering-test-devices
 ---
 ## Why register a test device
 

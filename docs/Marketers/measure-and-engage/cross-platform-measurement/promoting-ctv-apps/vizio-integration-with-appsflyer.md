@@ -1,26 +1,25 @@
 ---
-title: "Vizio integration with AppsFlyer"
-excerpt: "Integrate your Vizio Connected TV (CTV) app (channel) with AppsFlyer to receive attribution and event data for your campaigns on Vizio."
+title: Vizio integration with AppsFlyer
+excerpt: >-
+  Integrate your Vizio Connected TV (CTV) app (channel) with AppsFlyer to
+  receive attribution and event data for your campaigns on Vizio.
+metadata:
+  keywords:
+    - Developers
+    - CTV
+    - Marketers
+    - CTV Attribution
 x-zendesk:
-  id: 5045234293777
-  url: https://support.appsflyer.com/hc/en-us/articles/5045234293777-Vizio-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Promoting CTV apps
-  section_id: 15328952633489
-  position: 5
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roi-tamir, Marketers, CTV Attribution]
-  labels: [Developers, CTV, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-03-27T15:48:04Z'
   edited_at: '2024-05-07T09:27:49Z'
+  id: 5045234293777
+  locale: en-us
+  section: Promoting CTV apps
+  section_id: 15328952633489
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/5045234293777-Vizio-integration-with-AppsFlyer
 ---
 ## About Vizio CTV attribution
 

@@ -1,18 +1,19 @@
 ---
-title: "Android privacy sandbox"
-excerpt: "All about Android Privacy Sandbox: Topics, Protected App Signals API, Attribution API, and Protected Audiences API"
+title: Android privacy sandbox
+excerpt: >-
+  All about Android Privacy Sandbox: Topics, Protected App Signals API,
+  Attribution API, and Protected Audiences API
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 25467093087761
-  url: https://support.appsflyer.com/hc/en-us/sections/25467093087761-Android-privacy-sandbox
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550990672401
-  position: 0
-  sorting: manual
   created_at: '2024-05-29T08:17:12Z'
+  id: 25467093087761
+  locale: en-us
+  parent_section_id: 6550990672401
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/25467093087761-Android-privacy-sandbox
 ---
 All about Android Privacy Sandbox:
 Topics, Protected App Signals API, Attribution API, and Protected Audiences API

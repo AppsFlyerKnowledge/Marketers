@@ -1,25 +1,28 @@
 ---
-title: "[Deprecated] Mobile landing page attribution script"
+title: '[Deprecated] Mobile landing page attribution script'
+deprecated: true
+metadata:
+  keywords:
+    - Landing Page
+    - Facebook
+    - Adwords
+    - Advertisers
+    - Agencies
+    - GCLID
+    - Developers
+    - Marketers
+    - Smart Banners and Scripts
 x-zendesk:
-  id: 360016643258
-  url: https://support.appsflyer.com/hc/en-us/articles/360016643258--Deprecated-Mobile-landing-page-attribution-script
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Web-to-app attribution
-  section_id: 6551240476177
-  position: 8
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, Agencies, Smart Banners and Scripts]
-  labels: [Landing Page, Facebook, Adwords, Advertisers, Agencies, GCLID, Developers, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-12-16T17:28:55Z'
   edited_at: '2023-04-02T15:41:35Z'
+  id: 360016643258
+  locale: en-us
+  section: Web-to-app attribution
+  section_id: 6551240476177
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360016643258--Deprecated-Mobile-landing-page-attribution-script
 ---
 **At a glance:** This script is deprecated as of December 17, 2020, and is replaced by the [OneLink Smart Script](/docs/onelink-smart-script-overview). This version continues to work, but will not be updated or changed. The script generates URLs that are embedded behind a button on your mobile website and redirects visitors to download your app. The URLs also support install attribution and deep linking.
 

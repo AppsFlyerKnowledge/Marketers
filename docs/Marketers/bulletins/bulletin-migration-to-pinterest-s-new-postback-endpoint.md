@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: Migration to Pinterest’s New Postback Endpoint"
+title: 'Bulletin: Migration to Pinterest’s New Postback Endpoint'
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 37418019002641
-  url: https://support.appsflyer.com/hc/en-us/articles/37418019002641-Bulletin-Migration-to-Pinterest-s-New-Postback-Endpoint
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2025-07-23T07:26:53Z'
   edited_at: '2026-09-01T10:34:33Z'
+  id: 37418019002641
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/37418019002641-Bulletin-Migration-to-Pinterest-s-New-Postback-Endpoint
 ---
 | Section | Details |
 | --- | --- |

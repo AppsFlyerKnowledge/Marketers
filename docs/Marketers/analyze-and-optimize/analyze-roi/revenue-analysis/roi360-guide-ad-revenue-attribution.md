@@ -1,26 +1,27 @@
 ---
-title: "ROI360 guide - ad revenue attribution"
-excerpt: "Attribute ad revenue to complete the LTV (lifetime value) performance view."
+title: ROI360 guide - ad revenue attribution
+excerpt: Attribute ad revenue to complete the LTV (lifetime value) performance view.
+metadata:
+  keywords:
+    - ad revenue
+    - ad monetization
+    - monetization
+    - Advertisers
+    - adrevenue
+    - Premium
+    - Marketers
+    - ROI360
 x-zendesk:
-  id: 217490046
-  url: https://support.appsflyer.com/hc/en-us/articles/217490046-ROI360-guide-ad-revenue-attribution
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Revenue analysis
-  section_id: 6551069075089
-  position: 1
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-michael-talapov, Marketers, ROI360]
-  labels: [ad revenue, ad monetization, monetization, Advertisers, adrevenue, Premium, Marketers, Loc In Prog, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-12-12T10:53:27Z'
   edited_at: '2026-09-06T10:09:17Z'
+  id: 217490046
+  locale: en-us
+  section: Revenue analysis
+  section_id: 6551069075089
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/217490046-ROI360-guide-ad-revenue-attribution
 ---
 ![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
 

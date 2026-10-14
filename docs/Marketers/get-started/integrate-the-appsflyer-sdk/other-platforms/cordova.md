@@ -1,27 +1,30 @@
 ---
-title: "Cordova"
-excerpt: "Integrate AppsFlyer into your Cordova apps to measure installs, in-app events, media sources, and more."
+title: Cordova
+excerpt: >-
+  Integrate AppsFlyer into your Cordova apps to measure installs, in-app events,
+  media sources, and more.
+metadata:
+  keywords:
+    - PhoneGap
+    - SDK
+    - github
+    - cordova
+    - Advertisers
+    - crdova
+    - Developers
+    - Marketers
+    - Web Attribution
 table_of_contents: false
 x-zendesk:
-  id: 207032196
-  url: https://support.appsflyer.com/hc/en-us/articles/207032196-Cordova
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Other platforms
-  section_id: 6551244207121
-  position: 15
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Web Attribution]
-  labels: [PhoneGap, SDK, github, cordova, Advertisers, crdova, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2013-12-09T11:17:12Z'
   edited_at: '2023-11-16T15:17:28Z'
+  id: 207032196
+  locale: en-us
+  section: Other platforms
+  section_id: 6551244207121
+  url: https://support.appsflyer.com/hc/en-us/articles/207032196-Cordova
 ---
 > 📘 **Important!**
 >

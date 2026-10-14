@@ -1,26 +1,62 @@
 ---
-title: "About link structure and parameters"
-excerpt: "Learn about the AppsFlyer attribution link structure and parameters."
+title: About link structure and parameters
+excerpt: Learn about the AppsFlyer attribution link structure and parameters.
+metadata:
+  keywords:
+    - pid
+    - Marketers
+    - af_
+    - af
+    - c
+    - af_mp
+    - clickid
+    - af_siteid
+    - af_sub_siteid
+    - af_c_id
+    - af_adset_id
+    - af_ad_type
+    - af_viewthrough
+    - af_cost_model
+    - af_cost_value
+    - af_web_dp
+    - af_ref
+    - af_ip
+    - af_os_version
+    - deep_link_sub
+    - deep_link_value
+    - af_og_title
+    - af_og_description
+    - af_og_image
+    - af_prt
+    - af_adset
+    - af_ad
+    - af_ad_id
+    - af_channel
+    - af_keywords
+    - af_cost_currency
+    - af_sub
+    - af_r
+    - af_dp
+    - af_force_deeplink
+    - is_incentivized
+    - af_param_forwarding
+    - af_partner_account_id
+    - af_ua
+    - af_os
+    - af_model
+    - af_media_type
+    - Mobile Attribution
 x-zendesk:
-  id: 207447163
-  url: https://support.appsflyer.com/hc/en-us/articles/207447163-About-link-structure-and-parameters
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Attribution concepts
-  section_id: 6551394235409
-  position: 1
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-moran-davida, Marketers, Mobile Attribution]
-  labels: [pid, Marketers, af_, af, c, af_mp, clickid, af_siteid, af_sub_siteid, af_c_id, af_adset_id, af_ad_type, af_viewthrough, af_cost_model, af_cost_value, af_web_dp, af_ref, af_ip, af_os_version, deep_link_sub, deep_link_value, af_og_title, af_og_description, af_og_image, af_prt, af_adset, af_ad, af_ad_id, af_channel, af_keywords, af_cost_currency, af_sub, af_r, af_dp, af_force_deeplink, is_incentivized, af_param_forwarding, af_partner_account_id, af_ua, af_os, af_model, af_media_type]
-  promoted: true
-  comments_disabled: true
   created_at: '2015-12-24T11:50:00Z'
   edited_at: '2026-08-13T10:48:12Z'
+  id: 207447163
+  locale: en-us
+  section: Attribution concepts
+  section_id: 6551394235409
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207447163-About-link-structure-and-parameters
 ---
 ## Overview
 

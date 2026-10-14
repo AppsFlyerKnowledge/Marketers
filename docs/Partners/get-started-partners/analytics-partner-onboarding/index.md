@@ -1,17 +1,16 @@
 ---
-title: "Analytics partner onboarding"
+title: Analytics partner onboarding
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 34732438397841
-  url: https://support.appsflyer.com/hc/en-us/sections/34732438397841-Analytics-partner-onboarding
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  parent_section_id: 6550863656977
-  position: 0
-  sorting: manual
   created_at: '2025-04-27T09:18:19Z'
+  id: 34732438397841
+  locale: en-us
+  parent_section_id: 6550863656977
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/34732438397841-Analytics-partner-onboarding
 ---
 This section contains resources and guides for analytics partners onboarding with AppsFlyer.
 

@@ -1,26 +1,26 @@
 ---
-title: "Appcharge integration with AppsFlyer"
-excerpt: "Appcharge, an integrated AppsFlyer partner, is a gaming commerce technology provider that specializes in processing payments outside traditional app store ecosystems. Through its integration with AppsFlyer, Appcharge can automatically send web store purchase and refund data to AppsFlyer, enabling a more complete view of return on ad spend (ROAS) and lifetime value (LTV)."
+title: Appcharge integration with AppsFlyer
+excerpt: >-
+  Appcharge, an integrated AppsFlyer partner, is a gaming commerce technology
+  provider that specializes in processing payments outside traditional app store
+  ecosystems. Through its integration with AppsFlyer, Appcharge can
+  automatically send web store purchase and refund data to AppsFlyer, enabling a
+  more complete view of return on ad spend (ROAS) and lifetime value (LTV).
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 36292113943825
-  url: https://support.appsflyer.com/hc/en-us/articles/36292113943825-Appcharge-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: 3rd-party platforms
-  section_id: 6551199962257
-  position: 1
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2025-06-17T13:21:47Z'
   edited_at: '2026-07-07T09:58:17Z'
+  id: 36292113943825
+  locale: en-us
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/36292113943825-Appcharge-integration-with-AppsFlyer
 ---
 ## About Appcharge
 

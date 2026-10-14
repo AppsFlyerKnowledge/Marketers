@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: Include future apps with Protect360 validation rules"
+title: 'Bulletin: Include future apps with Protect360 validation rules'
+metadata:
+  keywords:
+    - Protect360
+    - Marketers
 table_of_contents: false
 x-zendesk:
-  id: 27288616008977
-  url: https://support.appsflyer.com/hc/en-us/articles/27288616008977-Bulletin-Include-future-apps-with-Protect360-validation-rules
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 13
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-yanai, Marketers, Protect360]
-  labels: [Protect360, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-08-05T17:47:04Z'
   edited_at: '2024-09-22T08:14:49Z'
+  id: 27288616008977
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/27288616008977-Bulletin-Include-future-apps-with-Protect360-validation-rules
 ---
 | **What's new** | You can now include future apps when creating validation rules. |
 | --- | --- |

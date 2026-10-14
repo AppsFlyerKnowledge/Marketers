@@ -1,26 +1,23 @@
 ---
-title: "Data Collaboration Platform (DCP) - View measurement reports"
-excerpt: "Customize your measurement reports by setting report fields, aggregation levels, schedules, and cloud connections."
+title: Data Collaboration Platform (DCP) - View measurement reports
+excerpt: >-
+  Customize your measurement reports by setting report fields, aggregation
+  levels, schedules, and cloud connections.
+metadata:
+  keywords:
+    - Marketers
+    - Data Clean Room
 x-zendesk:
-  id: 34060852331153
-  url: https://support.appsflyer.com/hc/en-us/articles/34060852331153-Data-Collaboration-Platform-DCP-View-measurement-reports
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Collaboration measurement
-  section_id: 38034865098641
-  position: 6
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-yael-sharabi, Marketers, Data Clean Room]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2025-04-03T14:39:29Z'
   edited_at: '2025-04-07T10:16:21Z'
+  id: 34060852331153
+  locale: en-us
+  section: Collaboration measurement
+  section_id: 38034865098641
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/34060852331153-Data-Collaboration-Platform-DCP-View-measurement-reports
 ---
 Data Collaboration Platform (DCP) measurement reports provide top-level metrics such as clicks, impressions, and ROAS per campaign. They may also include additional metrics and dimensions based on granted access.
 

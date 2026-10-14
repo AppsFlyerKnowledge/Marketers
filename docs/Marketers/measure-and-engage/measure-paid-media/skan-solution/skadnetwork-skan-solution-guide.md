@@ -1,26 +1,24 @@
 ---
-title: "SKAdNetwork (SKAN) solution guide"
-excerpt: "Attributing app installs using SKAN."
+title: SKAdNetwork (SKAN) solution guide
+excerpt: Attributing app installs using SKAN.
+metadata:
+  keywords:
+    - Advertisers
+    - Ad Networks
+    - SKAD
+    - Marketers
+    - SKAdNetwork (SKAN)
 x-zendesk:
-  id: 360011420698
-  url: https://support.appsflyer.com/hc/en-us/articles/360011420698-SKAdNetwork-SKAN-solution-guide
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: SKAN solution
-  section_id: 6552135379985
-  position: 0
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN), Ad Networks]
-  labels: [Advertisers, Ad Networks, SKAD, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-07-25T21:19:42Z'
   edited_at: '2026-06-11T08:38:51Z'
+  id: 360011420698
+  locale: en-us
+  section: SKAN solution
+  section_id: 6552135379985
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360011420698-SKAdNetwork-SKAN-solution-guide
 ---
 ![5754](https://files.readme.io/a970d7b0e8da300ded2138f941bf2e891f32d396c8500292534992a4b4449d71-30757780264337.png)
 

@@ -1,18 +1,19 @@
 ---
-title: "Media source configuration"
-excerpt: "Attribution link structure and setup guides for working with integrated partners"
+title: Media source configuration
+excerpt: >-
+  Attribution link structure and setup guides for working with integrated
+  partners
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551067072785
-  url: https://support.appsflyer.com/hc/en-us/sections/6551067072785-Media-source-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550990672401
-  position: 2
-  sorting: manual
   created_at: '2022-06-02T11:25:54Z'
+  id: 6551067072785
+  locale: en-us
+  parent_section_id: 6550990672401
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551067072785-Media-source-configuration
 ---
 Attribution link structure and setup guides for working with integrated partners
 

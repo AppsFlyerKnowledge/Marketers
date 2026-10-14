@@ -1,26 +1,28 @@
 ---
-title: "Upload additional identifiers to Audiences via API"
-excerpt: "Use the Audiences Additional Identifiers API to bulk upload user identifiers from your internal systems (such as BI and CRM) to AppsFlyer Audiences, enabling broader audience communication to relevant partners based on these identifiers."
+title: Upload additional identifiers to Audiences via API
+excerpt: >-
+  Use the Audiences Additional Identifiers API to bulk upload user identifiers
+  from your internal systems (such as BI and CRM) to AppsFlyer Audiences,
+  enabling broader audience communication to relevant partners based on these
+  identifiers.
+metadata:
+  keywords:
+    - Advertisers
+    - Developers
+    - Premium Feature
+    - Marketers
+    - Audience Segmentation
 x-zendesk:
-  id: 4411552670993
-  url: https://support.appsflyer.com/hc/en-us/articles/4411552670993-Upload-additional-identifiers-to-Audiences-via-API
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Audiences
-  section_id: 6551336428945
-  position: 7
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-neama-benhabib, Marketers, Audience Segmentation]
-  labels: [Advertisers, Developers, Premium Feature, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-11-22T14:05:51Z'
   edited_at: '2026-10-05T06:59:12Z'
+  id: 4411552670993
+  locale: en-us
+  section: Audiences
+  section_id: 6551336428945
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4411552670993-Upload-additional-identifiers-to-Audiences-via-API
 ---
 ## About the API
 

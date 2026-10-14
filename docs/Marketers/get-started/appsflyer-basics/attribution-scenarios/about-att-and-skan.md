@@ -1,25 +1,23 @@
 ---
-title: "About ATT and SKAN"
+title: About ATT and SKAN
+metadata:
+  keywords:
+    - Advertisers
+    - Agencies
+    - Ad Networks
+    - Marketers
+    - SKAdNetwork (SKAN)
 x-zendesk:
-  id: 360011890298
-  url: https://support.appsflyer.com/hc/en-us/articles/360011890298-About-ATT-and-SKAN
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Attribution scenarios
-  section_id: 6551328497041
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, Agencies, SKAdNetwork (SKAN), Ad Networks]
-  labels: [Advertisers, Agencies, Ad Networks, Marketers, Loc Published]
-  promoted: true
-  comments_disabled: true
   created_at: '2020-08-11T09:19:23Z'
   edited_at: '2026-06-11T08:40:04Z'
+  id: 360011890298
+  locale: en-us
+  section: Attribution scenarios
+  section_id: 6551328497041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360011890298-About-ATT-and-SKAN
 ---
 **At a glance**: Starting iOS 14.5, Apple requires that you implement and comply with the terms of [AppTrackingTransparency](https://developer.apple.com/documentation/apptrackingtransparency) (ATT). ATT means that *if your app collects data about end-users and shares it with other companies for purposes of tracking across apps and websites,* you must use the ATT consent prompt and get user consent in both the publisher and advertiser app. If you don't track, there is no need to display the prompt.
 

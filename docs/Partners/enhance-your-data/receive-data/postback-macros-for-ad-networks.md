@@ -1,26 +1,29 @@
 ---
-title: "Postback macros for ad networks"
-excerpt: "As an ad network, you can define the content and endpoints of postbacks sent to you as part of your integration with AppsFlyer. Postbacks relate to app user engagement like installs, in-app events, re-engagements, and so on."
+title: Postback macros for ad networks
+excerpt: >-
+  As an ad network, you can define the content and endpoints of postbacks sent
+  to you as part of your integration with AppsFlyer. Postbacks relate to app
+  user engagement like installs, in-app events, re-engagements, and so on.
+metadata:
+  keywords:
+    - postbacks
+    - Advertisers
+    - Ad Networks
+    - macros
+    - Partners
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 207273946
-  url: https://support.appsflyer.com/hc/en-us/articles/207273946-Postback-macros-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Receive data
-  section_id: 6551235995281
-  position: 1
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [postbacks, Advertisers, Ad Networks, macros, Partners]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-01-11T14:41:40Z'
   edited_at: '2025-12-22T10:42:52Z'
+  id: 207273946
+  locale: en-us
+  section: Receive data
+  section_id: 6551235995281
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207273946-Postback-macros-for-ad-networks
 ---
 Related integrated partner postback guides:
 

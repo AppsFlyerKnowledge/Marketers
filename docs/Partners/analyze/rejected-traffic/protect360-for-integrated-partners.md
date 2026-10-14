@@ -1,26 +1,25 @@
 ---
-title: "Protect360 for integrated partners"
-excerpt: "Integrated partners (ad networks and agencies) can view fraud related to their traffic identified and blocked by the ProtectLITE and Protect360 engines, as well as the customer’s manually-defined validation rules."
+title: Protect360 for integrated partners
+excerpt: >-
+  Integrated partners (ad networks and agencies) can view fraud related to their
+  traffic identified and blocked by the ProtectLITE and Protect360 engines, as
+  well as the customer’s manually-defined validation rules.
+metadata:
+  keywords:
+    - Protect360
+    - Ad Networks
+    - Partners
 x-zendesk:
-  id: 115004745523
-  url: https://support.appsflyer.com/hc/en-us/articles/115004745523-Protect360-for-integrated-partners
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Rejected traffic
-  section_id: 6551666000273
-  position: 8
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-yanai, Protect360, Ad Networks]
-  labels: [Protect360, Ad Networks, Partners, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-09-19T08:27:29Z'
   edited_at: '2026-05-25T07:54:54Z'
+  id: 115004745523
+  locale: en-us
+  section: Rejected traffic
+  section_id: 6551666000273
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115004745523-Protect360-for-integrated-partners
 ---
 ## Overview
 

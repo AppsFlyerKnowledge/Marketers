@@ -1,26 +1,25 @@
 ---
-title: "Google Ads (AdWords)—Create web campaigns for website apps"
-excerpt: "Set up a Google Ads integration for your website app to send web conversion signals to Google via the Offline Conversion API (OCI)."
+title: Google Ads (AdWords)—Create web campaigns for website apps
+excerpt: >-
+  Set up a Google Ads integration for your website app to send web conversion
+  signals to Google via the Offline Conversion API (OCI).
+metadata:
+  keywords:
+    - Advertisers
+    - Agencies
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 45498975339537
-  url: https://support.appsflyer.com/hc/en-us/articles/45498975339537-Google-Ads-AdWords-Create-web-campaigns-for-website-apps
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Google Ads
-  section_id: 6551205645457
-  position: 1
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution, Agencies]
-  labels: [Advertisers, Agencies]
-  promoted: false
-  comments_disabled: true
   created_at: '2026-04-07T12:46:10Z'
   edited_at: '2026-08-03T08:34:41Z'
+  id: 45498975339537
+  locale: en-us
+  section: Google Ads
+  section_id: 6551205645457
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/45498975339537-Google-Ads-AdWords-Create-web-campaigns-for-website-apps
 ---
 ## Overview
 

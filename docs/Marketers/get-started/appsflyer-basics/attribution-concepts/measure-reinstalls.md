@@ -1,26 +1,26 @@
 ---
-title: "Measure reinstalls"
-excerpt: "A reinstall occurs when a user installs an app, uninstalls it, and then reinstalls it. Reinstalls result in one of the following attribution types: non-organic reinstall, organic reinstall, or re-attribution (retargeting). Reinstalls help avoid multiple charges for users that uninstall and install again."
+title: Measure reinstalls
+excerpt: >-
+  A reinstall occurs when a user installs an app, uninstalls it, and then
+  reinstalls it. Reinstalls result in one of the following attribution types:
+  non-organic reinstall, organic reinstall, or re-attribution (retargeting).
+  Reinstalls help avoid multiple charges for users that uninstall and install
+  again.
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 10164066030737
-  url: https://support.appsflyer.com/hc/en-us/articles/10164066030737-Measure-reinstalls
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Attribution concepts
-  section_id: 6551394235409
-  position: 13
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-moran-davida, Marketers, Mobile Attribution]
-  labels: [Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-10-27T07:37:21Z'
   edited_at: '2026-05-20T07:33:11Z'
+  id: 10164066030737
+  locale: en-us
+  section: Attribution concepts
+  section_id: 6551394235409
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/10164066030737-Measure-reinstalls
 ---
 ## What is a reinstall
 

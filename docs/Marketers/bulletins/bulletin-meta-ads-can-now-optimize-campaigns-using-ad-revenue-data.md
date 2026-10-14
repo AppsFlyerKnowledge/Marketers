@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: Meta ads can now optimize campaigns using ad revenue data"
+title: 'Bulletin: Meta ads can now optimize campaigns using ad revenue data'
+metadata:
+  keywords:
+    - Marketers
+    - ROI360
 table_of_contents: false
 x-zendesk:
-  id: 29376794104209
-  url: https://support.appsflyer.com/hc/en-us/articles/29376794104209-Bulletin-Meta-ads-can-now-optimize-campaigns-using-ad-revenue-data
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 8
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-michael-talapov, Marketers, ROI360]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-10-21T09:02:43Z'
   edited_at: '2025-01-13T08:06:56Z'
+  id: 29376794104209
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/29376794104209-Bulletin-Meta-ads-can-now-optimize-campaigns-using-ad-revenue-data
 ---
 | <span id="whats-new"></span>What's new | Meta ads can now optimize your Android App promotion campaigns using the ad revenue postback event **AdImpression**. |
 | --- | --- |

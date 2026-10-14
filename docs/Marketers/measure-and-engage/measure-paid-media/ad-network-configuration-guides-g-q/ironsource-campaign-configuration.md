@@ -1,26 +1,28 @@
 ---
-title: "ironSource campaign configuration"
-excerpt: "ironSource, an AppsFlyer integrated partner, builds monetization, engagement, analytics, and discovery tools for app developers, device manufacturers, mobile carriers, and advertisers. In addition to click-based mobile attribution, ironSource also offers cost, ad revenue, retargeting and view-through attribution, which you can record with AppsFlyer."
+title: ironSource campaign configuration
+excerpt: >-
+  ironSource, an AppsFlyer integrated partner, builds monetization, engagement,
+  analytics, and discovery tools for app developers, device manufacturers,
+  mobile carriers, and advertisers. In addition to click-based mobile
+  attribution, ironSource also offers cost, ad revenue, retargeting and
+  view-through attribution, which you can record with AppsFlyer.
+metadata:
+  keywords:
+    - Supersonic
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 208005096
-  url: https://support.appsflyer.com/hc/en-us/articles/208005096-ironSource-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (G-Q)
-  section_id: 6552006535953
-  position: 5
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Supersonic, Advertisers, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-03-06T10:47:23Z'
   edited_at: '2026-08-14T00:01:08Z'
+  id: 208005096
+  locale: en-us
+  section: Ad network configuration guides (G-Q)
+  section_id: 6552006535953
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/208005096-ironSource-campaign-configuration
 ---
 ![](https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1%0A%0A)
 

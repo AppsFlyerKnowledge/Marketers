@@ -1,26 +1,25 @@
 ---
-title: "Medialyzer integration with AppsFlyer"
-excerpt: "Medialyzer, an AppsFlyer integrated partner, develops and markets the software as a service solution. The solution allows media planners to optimize their TV campaigns for online businesses based on immediately generated visits and conversions per TV ad airing."
+title: Medialyzer integration with AppsFlyer
+excerpt: >-
+  Medialyzer, an AppsFlyer integrated partner, develops and markets the software
+  as a service solution. The solution allows media planners to optimize their TV
+  campaigns for online businesses based on immediately generated visits and
+  conversions per TV ad airing.
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 14963611180689
-  url: https://support.appsflyer.com/hc/en-us/articles/14963611180689-Medialyzer-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: 3rd-party platforms
-  section_id: 6551199962257
-  position: 19
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2023-05-01T11:43:34Z'
   edited_at: '2026-06-16T09:51:58Z'
+  id: 14963611180689
+  locale: en-us
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/14963611180689-Medialyzer-integration-with-AppsFlyer
 ---
 > 📘 **Important!**
 >

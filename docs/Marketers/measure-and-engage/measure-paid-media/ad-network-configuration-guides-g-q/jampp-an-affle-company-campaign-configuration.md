@@ -1,26 +1,27 @@
 ---
-title: "Jampp, an Affle company campaign configuration"
-excerpt: "Jampp, an Affle company and AppsFlyer integrated partner, provides a performance marketing platform for acquiring and retargeting app customers. In addition to click-based mobile attribution, Jampp also offers cost, retargeting and view-through attribution, which you can record with AppsFlyer."
+title: Jampp, an Affle company campaign configuration
+excerpt: >-
+  Jampp, an Affle company and AppsFlyer integrated partner, provides a
+  performance marketing platform for acquiring and retargeting app customers. In
+  addition to click-based mobile attribution, Jampp also offers cost,
+  retargeting and view-through attribution, which you can record with AppsFlyer.
+metadata:
+  keywords:
+    - Advertisers
+    - Jampp
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 115000151226
-  url: https://support.appsflyer.com/hc/en-us/articles/115000151226-Jampp-an-Affle-company-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (G-Q)
-  section_id: 6552006535953
-  position: 6
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Advertisers, Jampp, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-12-29T12:49:55Z'
   edited_at: '2026-09-09T10:34:57Z'
+  id: 115000151226
+  locale: en-us
+  section: Ad network configuration guides (G-Q)
+  section_id: 6552006535953
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115000151226-Jampp-an-Affle-company-campaign-configuration
 ---
 ![](https://cdn.appsflyer.com/marketplace/static/logo/jampp.png)
 

@@ -1,26 +1,25 @@
 ---
-title: "WakeApp campaign configuration"
-excerpt: "WakeApp, an AppsFlyer ad network integrated partner, is a global company specializing in mobile marketing."
+title: WakeApp campaign configuration
+excerpt: >-
+  WakeApp, an AppsFlyer ad network integrated partner, is a global company
+  specializing in mobile marketing.
+metadata:
+  keywords:
+    - Advertisers
+    - WakeApp
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 211506443
-  url: https://support.appsflyer.com/hc/en-us/articles/211506443-WakeApp-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (R-Z)
-  section_id: 6552025468305
-  position: 21
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Advertisers, WakeApp, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-06-30T12:39:52Z'
   edited_at: '2026-09-07T07:24:59Z'
+  id: 211506443
+  locale: en-us
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/211506443-WakeApp-campaign-configuration
 ---
 To configure your campaigns with Wakeapp, follow the steps below.
 

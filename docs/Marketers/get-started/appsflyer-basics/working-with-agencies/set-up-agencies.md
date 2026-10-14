@@ -1,27 +1,23 @@
 ---
-title: "Set up agencies"
-excerpt: "Get started working with agencies in AppsFlyer: all the details in this video!"
+title: Set up agencies
+excerpt: 'Get started working with agencies in AppsFlyer: all the details in this video!'
+metadata:
+  keywords:
+    - Advertisers
+    - Marketers
+    - Platform essentials
+    - Agencies
 table_of_contents: false
 x-zendesk:
-  id: 360004013198
-  url: https://support.appsflyer.com/hc/en-us/articles/360004013198-Set-up-agencies
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Working with agencies
-  section_id: 6551289835025
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies]
-  labels: [Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2019-12-02T14:01:53Z'
   edited_at: '2025-12-14T14:20:57Z'
+  id: 360004013198
+  locale: en-us
+  section: Working with agencies
+  section_id: 6551289835025
+  url: https://support.appsflyer.com/hc/en-us/articles/360004013198-Set-up-agencies
 ---
 Watch the video below to learn:
 

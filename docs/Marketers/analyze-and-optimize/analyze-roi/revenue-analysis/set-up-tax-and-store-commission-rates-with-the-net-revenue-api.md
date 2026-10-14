@@ -1,26 +1,28 @@
 ---
-title: "Set up tax and store commission rates with the Net Revenue API"
-excerpt: "Configure how AppsFlyer calculates net revenue for in-app purchases and subscriptions by using the Net Revenue API to customize store commission rates and tax rules per app. This ensures that your reports accurately reflect actual earnings, including cases with non-standard commission fees or specific tax rules."
+title: Set up tax and store commission rates with the Net Revenue API
+excerpt: >-
+  Configure how AppsFlyer calculates net revenue for in-app purchases and
+  subscriptions by using the Net Revenue API to customize store commission rates
+  and tax rules per app. This ensures that your reports accurately reflect
+  actual earnings, including cases with non-standard commission fees or specific
+  tax rules.
+metadata:
+  keywords:
+    - Revenue
+    - Premium
+    - Marketers
+    - ROI360
 x-zendesk:
-  id: 30468586765841
-  url: https://support.appsflyer.com/hc/en-us/articles/30468586765841-Set-up-tax-and-store-commission-rates-with-the-Net-Revenue-API
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Revenue analysis
-  section_id: 6551069075089
-  position: 2
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-michael-talapov, Marketers, ROI360]
-  labels: [Revenue, Premium, Marketers, ROI360]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-11-28T13:57:14Z'
   edited_at: '2026-08-12T09:02:34Z'
+  id: 30468586765841
+  locale: en-us
+  section: Revenue analysis
+  section_id: 6551069075089
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/30468586765841-Set-up-tax-and-store-commission-rates-with-the-Net-Revenue-API
 ---
 The ROI360 store revenue product calculates the net revenue of in-app purchases and subscriptions by automatically deducting store commission and tax from gross revenue. The default configuration reflects standard commission fees and tax rules applied by the App Store and Google Play. If your store commission differs or if you operate in a country with special tax treatment, use the Net Revenue API to override the default configuration.
 

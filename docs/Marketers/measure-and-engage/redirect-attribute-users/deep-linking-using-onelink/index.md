@@ -1,18 +1,17 @@
 ---
-title: "Deep linking using OneLink"
-excerpt: "Convert and deep link your owned media users with OneLink"
+title: Deep linking using OneLink
+excerpt: Convert and deep link your owned media users with OneLink
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551203111057
-  url: https://support.appsflyer.com/hc/en-us/sections/6551203111057-Deep-linking-using-OneLink
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6551169161745
-  position: 0
-  sorting: manual
   created_at: '2022-06-02T11:32:24Z'
+  id: 6551203111057
+  locale: en-us
+  parent_section_id: 6551169161745
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551203111057-Deep-linking-using-OneLink
 ---
 Convert and deep link your owned media users with OneLink
 

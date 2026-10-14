@@ -1,26 +1,25 @@
 ---
-title: "Audiences - Use your Amplitude cohorts as audiences"
-excerpt: "Leverage your first-party data by syncing your Amplitude cohorts to AppsFlyer as imported audiences."
+title: Audiences - Use your Amplitude cohorts as audiences
+excerpt: >-
+  Leverage your first-party data by syncing your Amplitude cohorts to AppsFlyer
+  as imported audiences.
+metadata:
+  keywords:
+    - Audiences
+    - Premium
+    - Marketers
+    - Audience Segmentation
 x-zendesk:
-  id: 4470658876817
-  url: https://support.appsflyer.com/hc/en-us/articles/4470658876817-Audiences-Use-your-Amplitude-cohorts-as-audiences
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Audiences
-  section_id: 6551336428945
-  position: 10
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-neama-benhabib, Marketers, Audience Segmentation]
-  labels: [Audiences, Premium, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-02-23T14:27:13Z'
   edited_at: '2025-03-18T08:53:05Z'
+  id: 4470658876817
+  locale: en-us
+  section: Audiences
+  section_id: 6551336428945
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4470658876817-Audiences-Use-your-Amplitude-cohorts-as-audiences
 ---
 ## About the Amplitude integration
 

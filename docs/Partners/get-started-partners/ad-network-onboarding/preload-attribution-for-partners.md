@@ -1,26 +1,25 @@
 ---
-title: "Preload attribution for partners"
-excerpt: "Attribute mobile app installs to campaigns that preload the app at the Original Equipment Manufacturer (OEM) or when the device is first turned on by the user."
+title: Preload attribution for partners
+excerpt: >-
+  Attribute mobile app installs to campaigns that preload the app at the
+  Original Equipment Manufacturer (OEM) or when the device is first turned on by
+  the user.
+metadata:
+  keywords:
+    - Partners
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 15321350340241
-  url: https://support.appsflyer.com/hc/en-us/articles/15321350340241-Preload-attribution-for-partners
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Ad network onboarding
-  section_id: 6551058566033
-  position: 7
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-alina-koifman, Marketers, Mobile Attribution]
-  labels: [Partners, Loc In Prog]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-05-15T09:45:55Z'
   edited_at: '2024-02-25T06:31:03Z'
+  id: 15321350340241
+  locale: en-us
+  section: Ad network onboarding
+  section_id: 6551058566033
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/15321350340241-Preload-attribution-for-partners
 ---
 ## Overview
 

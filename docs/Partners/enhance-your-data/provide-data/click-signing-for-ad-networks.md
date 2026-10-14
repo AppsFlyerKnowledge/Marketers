@@ -1,26 +1,28 @@
 ---
-title: "Click signing for ad networks"
-excerpt: "Add signature validation to clicks to avoid fraud liabilities and so fraudulent clicks aren't attributed to your ad network."
+title: Click signing for ad networks
+excerpt: >-
+  Add signature validation to clicks to avoid fraud liabilities and so
+  fraudulent clicks aren't attributed to your ad network.
+metadata:
+  keywords:
+    - Ad Network
+    - Advertisers
+    - Protect360
+    - Ad Networks
+    - Partners
+    - Marketers
+    - Data Management
 x-zendesk:
-  id: 360017831497
-  url: https://support.appsflyer.com/hc/en-us/articles/360017831497-Click-signing-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Provide data
-  section_id: 6551209900817
-  position: 4
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-yael-sharabi, Marketers, Ad Networks, Data Management]
-  labels: [Ad Network, Advertisers, Protect360, Ad Networks, Partners, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-02-22T09:33:52Z'
   edited_at: '2024-11-17T09:37:22Z'
+  id: 360017831497
+  locale: en-us
+  section: Provide data
+  section_id: 6551209900817
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360017831497-Click-signing-for-ad-networks
 ---
 ## About click signing
 

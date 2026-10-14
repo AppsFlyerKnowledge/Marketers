@@ -1,26 +1,24 @@
 ---
-title: "Redirect app users to a website"
-excerpt: "Redirect app users to a web URL or social media page by using a URL generated with OneLink."
+title: Redirect app users to a website
+excerpt: >-
+  Redirect app users to a web URL or social media page by using a URL generated
+  with OneLink.
+metadata:
+  keywords:
+    - OneLink
+    - Marketers
+    - Social-to-App
 x-zendesk:
-  id: 4460838224273
-  url: https://support.appsflyer.com/hc/en-us/articles/4460838224273-Redirect-app-users-to-a-website
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Owned media attribution
-  section_id: 6551214397585
-  position: 4
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, Social-to-App]
-  labels: [OneLink, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-02-22T11:45:43Z'
   edited_at: '2024-12-09T09:17:42Z'
+  id: 4460838224273
+  locale: en-us
+  section: Owned media attribution
+  section_id: 6551214397585
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4460838224273-Redirect-app-users-to-a-website
 ---
 ## Redirect app users to a web URL
 

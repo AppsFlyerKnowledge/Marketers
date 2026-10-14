@@ -1,25 +1,23 @@
 ---
-title: "Attributing iOS Safari App Banners"
+title: Attributing iOS Safari App Banners
+metadata:
+  keywords:
+    - iOS Safari
+    - Smart App Banner
+    - Advertisers
+    - Marketers
+    - Smart Banners and Scripts
 x-zendesk:
-  id: 115000171743
-  url: https://support.appsflyer.com/hc/en-us/articles/115000171743-Attributing-iOS-Safari-App-Banners
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Owned media attribution
-  section_id: 6551214397585
-  position: 5
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, Smart Banners and Scripts]
-  labels: [iOS Safari, Smart App Banner, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-01-02T15:08:07Z'
   edited_at: '2023-07-24T11:58:04Z'
+  id: 115000171743
+  locale: en-us
+  section: Owned media attribution
+  section_id: 6551214397585
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115000171743-Attributing-iOS-Safari-App-Banners
 ---
 **At a glance:** Safari implements an [App Banner](http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html) feature providing a standardized way to promote apps in the Apple App Store. **This is not related to the recommended AppsFlyer  [Smart Banner](/docs/smart-banners-mobile-web-to-app-for-marketers) solution.**
 

@@ -1,26 +1,21 @@
 ---
-title: "Notifications"
-excerpt: "Manage critical AppsFlyer account notifications from the platform."
+title: Notifications
+excerpt: Manage critical AppsFlyer account notifications from the platform.
+metadata:
+  keywords:
+    - Advertisers
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 33732395637905
-  url: https://support.appsflyer.com/hc/en-us/articles/33732395637905-Notifications
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: The AppsFlyer platform
-  section_id: 6551361489297
-  position: 0
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials]
-  labels: [Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2025-03-24T10:10:37Z'
   edited_at: '2026-01-25T14:51:04Z'
+  id: 33732395637905
+  locale: en-us
+  section: The AppsFlyer platform
+  section_id: 6551361489297
+  url: https://support.appsflyer.com/hc/en-us/articles/33732395637905-Notifications
 ---
 You can select to receive notifications from AppsFlyer when certain events occur in your account. In your **notification preferences**, you can opt in or out of receiving these notifications.
 

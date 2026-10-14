@@ -1,26 +1,22 @@
 ---
-title: "Using PBA dashboards"
-excerpt: "Get the most out of our PBA dashboard features."
+title: Using PBA dashboards
+excerpt: Get the most out of our PBA dashboard features.
+metadata:
+  keywords:
+    - pba
+    - Marketers
+    - Cross-Platform Measurement
 x-zendesk:
-  id: 360007630318
-  url: https://support.appsflyer.com/hc/en-us/articles/360007630318-Using-PBA-dashboards
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Dashboards
-  section_id: 6550925337873
-  position: 15
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, Cross-Platform Measurement]
-  labels: [pba, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-04-21T04:53:54Z'
   edited_at: '2024-02-01T14:21:50Z'
+  id: 360007630318
+  locale: en-us
+  section: Dashboards
+  section_id: 6550925337873
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360007630318-Using-PBA-dashboards
 ---
 ![AppsFlyer-People-Based-Attribution_us-en.png](https://files.readme.io/d2178dfedb2f67420e66626adbd72dd96ba9edc39fcb0be08648b01656fd2d4b-360010094118.png)
 

@@ -1,26 +1,21 @@
 ---
-title: "Account login and password reset"
-excerpt: "Log in to AppsFlyer, add multiple accounts, and reset user passwords."
+title: Account login and password reset
+excerpt: Log in to AppsFlyer, add multiple accounts, and reset user passwords.
+metadata:
+  keywords:
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 33114514624273
-  url: https://support.appsflyer.com/hc/en-us/articles/33114514624273-Account-login-and-password-reset
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Account management
-  section_id: 6551191075473
-  position: 0
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2025-03-03T09:04:23Z'
   edited_at: '2026-03-19T12:17:06Z'
+  id: 33114514624273
+  locale: en-us
+  section: Account management
+  section_id: 6551191075473
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/33114514624273-Account-login-and-password-reset
 ---
 ## Log in instructions
 

@@ -1,26 +1,24 @@
 ---
-title: "Data Collaboration Platform (DCP) - Create customized data views"
-excerpt: "Create customized subsets of your existing source data with no SQL or technical expertise needed. Data views let you modify, refine, and summarize the data, so you can share only what's relevant with collaborators."
+title: Data Collaboration Platform (DCP) - Create customized data views
+excerpt: >-
+  Create customized subsets of your existing source data with no SQL or
+  technical expertise needed. Data views let you modify, refine, and summarize
+  the data, so you can share only what's relevant with collaborators.
+metadata:
+  keywords:
+    - Marketers
+    - Data Clean Room
 x-zendesk:
-  id: 30296051098897
-  url: https://support.appsflyer.com/hc/en-us/articles/30296051098897-Data-Collaboration-Platform-DCP-Create-customized-data-views
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Collaboration Platform
-  section_id: 26230608274065
-  position: 6
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-yael-sharabi, Marketers, Data Clean Room]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2024-11-22T12:57:55Z'
   edited_at: '2026-06-18T14:18:48Z'
+  id: 30296051098897
+  locale: en-us
+  section: Data Collaboration Platform
+  section_id: 26230608274065
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/30296051098897-Data-Collaboration-Platform-DCP-Create-customized-data-views
 ---
 ## About data views
 

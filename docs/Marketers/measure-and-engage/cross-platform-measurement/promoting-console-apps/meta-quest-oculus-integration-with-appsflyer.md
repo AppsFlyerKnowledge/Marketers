@@ -1,26 +1,24 @@
 ---
-title: "Meta Quest (Oculus) integration with AppsFlyer"
-excerpt: "Integrate your Meta Quest (Oculus) app with AppsFlyer to receive attribution and event data for your campaigns on Meta Quest (Oculus)."
+title: Meta Quest (Oculus) integration with AppsFlyer
+excerpt: >-
+  Integrate your Meta Quest (Oculus) app with AppsFlyer to receive attribution
+  and event data for your campaigns on Meta Quest (Oculus).
+metadata:
+  keywords:
+    - CTV
+    - Marketers
+    - PC & Console Attribution
 x-zendesk:
-  id: 11241398279569
-  url: https://support.appsflyer.com/hc/en-us/articles/11241398279569-Meta-Quest-Oculus-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Promoting Console apps
-  section_id: 15329052471057
-  position: 12
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roi-tamir, Marketers, PC & Console Attribution]
-  labels: [CTV, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-12-08T10:10:00Z'
   edited_at: '2026-10-05T07:01:20Z'
+  id: 11241398279569
+  locale: en-us
+  section: Promoting Console apps
+  section_id: 15329052471057
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/11241398279569-Meta-Quest-Oculus-integration-with-AppsFlyer
 ---
 ## About Meta Quest (Oculus) attribution
 

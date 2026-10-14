@@ -1,26 +1,23 @@
 ---
-title: "TikTok for Business—Web integration setup for PC and console apps"
-excerpt: "Learn how to integrate TikTok Web for PC and console apps with AppsFlyer and set up campaigns in TikTok Web."
+title: TikTok for Business—Web integration setup for PC and console apps
+excerpt: >-
+  Learn how to integrate TikTok Web for PC and console apps with AppsFlyer and
+  set up campaigns in TikTok Web.
+metadata:
+  keywords:
+    - Marketers
+    - PC & Console Attribution
 x-zendesk:
-  id: 40500157955601
-  url: https://support.appsflyer.com/hc/en-us/articles/40500157955601-TikTok-for-Business-Web-integration-setup-for-PC-and-console-apps
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: TikTok for Business
-  section_id: 12192554266385
-  position: 3
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roi-tamir, Marketers, PC & Console Attribution]
-  labels: []
-  promoted: false
-  comments_disabled: false
   created_at: '2025-10-31T13:58:16Z'
   edited_at: '2026-09-15T09:26:02Z'
+  id: 40500157955601
+  locale: en-us
+  section: TikTok for Business
+  section_id: 12192554266385
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/40500157955601-TikTok-for-Business-Web-integration-setup-for-PC-and-console-apps
 ---
 > 📘 **Warning**
 >

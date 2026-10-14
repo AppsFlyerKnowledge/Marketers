@@ -1,26 +1,28 @@
 ---
-title: "View aggregated cost data for attribution links"
-excerpt: "Viewing aggregated cost data for each ad click as reported by ad networks on the attribution link."
+title: View aggregated cost data for attribution links
+excerpt: >-
+  Viewing aggregated cost data for each ad click as reported by ad networks on
+  the attribution link.
+metadata:
+  keywords:
+    - eCPI
+    - clicks
+    - ROI
+    - Advertisers
+    - Agencies
+    - Marketers
+    - ROI360
 x-zendesk:
-  id: 360008981698
-  url: https://support.appsflyer.com/hc/en-us/articles/360008981698-View-aggregated-cost-data-for-attribution-links
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Cost aggregation
-  section_id: 6551029483281
-  position: 7
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-maytav-avnat, Marketers, Agencies, ROI360]
-  labels: [eCPI, clicks, ROI, Advertisers, Agencies, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-05-20T10:50:58Z'
   edited_at: '2025-04-05T11:07:35Z'
+  id: 360008981698
+  locale: en-us
+  section: Cost aggregation
+  section_id: 6551029483281
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360008981698-View-aggregated-cost-data-for-attribution-links
 ---
 ## Basic cost reporting
 

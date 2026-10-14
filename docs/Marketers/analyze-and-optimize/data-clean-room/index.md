@@ -1,18 +1,19 @@
 ---
-title: "Data Clean Room"
-excerpt: "Leverage data from your AppsFlyer account to obtain privacy-preserving insights"
+title: Data Clean Room
+excerpt: >-
+  Leverage data from your AppsFlyer account to obtain privacy-preserving
+  insights
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 4591191779217
-  url: https://support.appsflyer.com/hc/en-us/sections/4591191779217-Data-Clean-Room
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550913619473
-  position: 4
-  sorting: manual
   created_at: '2022-03-06T08:24:43Z'
+  id: 4591191779217
+  locale: en-us
+  parent_section_id: 6550913619473
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/4591191779217-Data-Clean-Room
 ---
 Leverage data from your AppsFlyer account to obtain privacy-preserving insights
 

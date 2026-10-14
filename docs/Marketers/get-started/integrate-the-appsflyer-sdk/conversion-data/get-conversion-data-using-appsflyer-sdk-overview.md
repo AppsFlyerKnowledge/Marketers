@@ -1,26 +1,24 @@
 ---
-title: "Get conversion data using AppsFlyer SDK–Overview"
-excerpt: "Use conversion data to identify various conversion scenarios, customize user experience, and more."
+title: Get conversion data using AppsFlyer SDK–Overview
+excerpt: >-
+  Use conversion data to identify various conversion scenarios, customize user
+  experience, and more.
+metadata:
+  keywords:
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 4410481069969
-  url: https://support.appsflyer.com/hc/en-us/articles/4410481069969-Get-conversion-data-using-AppsFlyer-SDK-Overview
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Conversion data
-  section_id: 6551287787537
-  position: 2
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Developers, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-11-09T10:06:52Z'
   edited_at: '2025-11-09T07:54:23Z'
+  id: 4410481069969
+  locale: en-us
+  section: Conversion data
+  section_id: 6551287787537
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4410481069969-Get-conversion-data-using-AppsFlyer-SDK-Overview
 ---
 Use conversion data to:
 

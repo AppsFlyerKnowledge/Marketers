@@ -1,26 +1,28 @@
 ---
-title: "Creative Optimization guide"
-excerpt: "Creative Optimization enables you to pull all creative asset data from all your campaigns into a single platform, so you can analyze their performance, discover which creatives work best, and make better data-driven decisions. Data is LTV, meaning the metrics are for conversions that occurred from creatives during the selected date range."
+title: Creative Optimization guide
+excerpt: >-
+  Creative Optimization enables you to pull all creative asset data from all
+  your campaigns into a single platform, so you can analyze their performance,
+  discover which creatives work best, and make better data-driven decisions.
+  Data is LTV, meaning the metrics are for conversions that occurred from
+  creatives during the selected date range.
+metadata:
+  keywords:
+    - Premium
+    - Marketers
+    - Design team
+    - Creative Optimization
 x-zendesk:
-  id: 18564718580625
-  url: https://support.appsflyer.com/hc/en-us/articles/18564718580625-Creative-Optimization-guide
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Creative Optimization
-  section_id: 4419063475217
-  position: 1
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-omer-katzburg, Marketers, Creative Optimization]
-  labels: [Premium, Marketers, Design team, Loc Published]
-  promoted: false
-  comments_disabled: false
   created_at: '2023-09-14T13:32:13Z'
   edited_at: '2026-09-23T08:06:40Z'
+  id: 18564718580625
+  locale: en-us
+  section: Creative Optimization
+  section_id: 4419063475217
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/18564718580625-Creative-Optimization-guide
 ---
 [![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
 

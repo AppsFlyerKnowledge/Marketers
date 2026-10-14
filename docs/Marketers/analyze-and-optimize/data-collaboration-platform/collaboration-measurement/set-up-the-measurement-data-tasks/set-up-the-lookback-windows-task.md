@@ -1,26 +1,23 @@
 ---
-title: "Set up the Lookback windows task"
-excerpt: "Set attribution windows for on-site and off-site campaigns to determine how far back user engagements can be matched to conversions."
+title: Set up the Lookback windows task
+excerpt: >-
+  Set attribution windows for on-site and off-site campaigns to determine how
+  far back user engagements can be matched to conversions.
+metadata:
+  keywords:
+    - Marketers
+    - Data Clean Room
 x-zendesk:
-  id: 38191154658193
-  url: https://support.appsflyer.com/hc/en-us/articles/38191154658193-Set-up-the-Lookback-windows-task
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Set up the measurement data tasks
-  section_id: 38035061674769
-  position: 4
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-yael-sharabi, Marketers, Data Clean Room]
-  labels: []
-  promoted: false
-  comments_disabled: false
   created_at: '2025-08-18T11:38:51Z'
   edited_at: '2025-08-26T00:01:05Z'
+  id: 38191154658193
+  locale: en-us
+  section: Set up the measurement data tasks
+  section_id: 38035061674769
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/38191154658193-Set-up-the-Lookback-windows-task
 ---
 ## Set Lookback Windows
 

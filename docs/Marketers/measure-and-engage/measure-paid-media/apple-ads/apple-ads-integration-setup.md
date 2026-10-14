@@ -1,26 +1,32 @@
 ---
-title: "Apple Ads integration setup"
-excerpt: "Apple Ads, an AppsFlyer SRN (Self-Reporting Network) partner, helps users find your app in the App Store using keywords."
+title: Apple Ads integration setup
+excerpt: >-
+  Apple Ads, an AppsFlyer SRN (Self-Reporting Network) partner, helps users find
+  your app in the App Store using keywords.
+metadata:
+  keywords:
+    - cost
+    - Advertisers
+    - apple search ads
+    - asa
+    - apple ads
+    - apple search advanced
+    - apple search ads campaign group
+    - apple keywords
+    - apple searchads
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 213747963
-  url: https://support.appsflyer.com/hc/en-us/articles/213747963-Apple-Ads-integration-setup
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Apple Ads
-  section_id: 6551310453393
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [cost, Advertisers, apple search ads, asa, ASA, apple ads, apple search advanced, apple search ads campaign group, apple keywords, apple searchads, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-08-31T09:04:38Z'
   edited_at: '2026-08-27T08:16:05Z'
+  id: 213747963
+  locale: en-us
+  section: Apple Ads
+  section_id: 6551310453393
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/213747963-Apple-Ads-integration-setup
 ---
 ![medium_originaljpeg_apple_ads_logo_blk_highres_720 (1) (1).jpg](https://files.readme.io/f89d1a5ec1a1de2ec2dfdec7465465fc2be73e0cf41ddd6be8b2e3f62de3c9e8-47598828154001.jpg)
 

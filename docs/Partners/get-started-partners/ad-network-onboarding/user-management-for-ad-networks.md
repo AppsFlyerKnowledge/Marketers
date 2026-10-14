@@ -1,26 +1,26 @@
 ---
-title: "User management for ad networks"
-excerpt: "Create and manage your ad network account's AppsFlyer users, and assign them a role defining which features they can access."
+title: User management for ad networks
+excerpt: >-
+  Create and manage your ad network account's AppsFlyer users, and assign them a
+  role defining which features they can access.
+metadata:
+  keywords:
+    - Advertisers
+    - Ad Networks
+    - Partners
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 4414238502289
-  url: https://support.appsflyer.com/hc/en-us/articles/4414238502289-User-management-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Ad network onboarding
-  section_id: 6551058566033
-  position: 2
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [Advertisers, Ad Networks, Partners, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-12-19T11:16:28Z'
   edited_at: '2025-12-31T08:41:51Z'
+  id: 4414238502289
+  locale: en-us
+  section: Ad network onboarding
+  section_id: 6551058566033
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4414238502289-User-management-for-ad-networks
 ---
 ## Background
 

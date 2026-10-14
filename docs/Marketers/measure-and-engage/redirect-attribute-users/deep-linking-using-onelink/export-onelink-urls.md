@@ -1,26 +1,23 @@
 ---
-title: "Export OneLink URLs"
-excerpt: "Download all OneLink URLs created in the AppsFlyer user interface."
+title: Export OneLink URLs
+excerpt: Download all OneLink URLs created in the AppsFlyer user interface.
+metadata:
+  keywords:
+    - export
+    - Marketers
+    - download
+    - Link Management
 x-zendesk:
-  id: 4416027813905
-  url: https://support.appsflyer.com/hc/en-us/articles/4416027813905-Export-OneLink-URLs
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Deep linking using OneLink
-  section_id: 6551203111057
-  position: 6
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, Link Management]
-  labels: [export, Marketers, download]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-01-09T11:58:46Z'
   edited_at: '2026-10-01T13:43:04Z'
+  id: 4416027813905
+  locale: en-us
+  section: Deep linking using OneLink
+  section_id: 6551203111057
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4416027813905-Export-OneLink-URLs
 ---
 ## Export OneLink URLs
 

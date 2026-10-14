@@ -1,26 +1,24 @@
 ---
-title: "Attribution discrepancies between TikTok for Business and AppsFlyer"
-excerpt: "Learn about the differences in attribution models between TikTok for Business and AppsFlyer."
+title: Attribution discrepancies between TikTok for Business and AppsFlyer
+excerpt: >-
+  Learn about the differences in attribution models between TikTok for Business
+  and AppsFlyer.
+metadata:
+  keywords:
+    - Agencies
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 19733501619473
-  url: https://support.appsflyer.com/hc/en-us/articles/19733501619473-Attribution-discrepancies-between-TikTok-for-Business-and-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: TikTok for Business
-  section_id: 12192554266385
-  position: 4
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution, Agencies]
-  labels: [Agencies, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-10-30T07:45:29Z'
   edited_at: '2024-05-01T00:00:56Z'
+  id: 19733501619473
+  locale: en-us
+  section: TikTok for Business
+  section_id: 12192554266385
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/19733501619473-Attribution-discrepancies-between-TikTok-for-Business-and-AppsFlyer
 ---
 ## Overview
 

@@ -1,26 +1,25 @@
 ---
-title: "TikTok for Business—Advanced SRN integration setup"
-excerpt: "TikTok for Business (tiktokglobal_int) is an advanced Self-Reporting Network (SRN) providing app owners the ability to measure click and view-based mobile attribution with AppsFlyer. This includes app installs coming from app and non-mobile TikTok campaigns."
+title: TikTok for Business—Advanced SRN integration setup
+excerpt: >-
+  TikTok for Business (tiktokglobal_int) is an advanced Self-Reporting Network
+  (SRN) providing app owners the ability to measure click and view-based mobile
+  attribution with AppsFlyer. This includes app installs coming from app and
+  non-mobile TikTok campaigns.
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 6722785184913
-  url: https://support.appsflyer.com/hc/en-us/articles/6722785184913-TikTok-for-Business-Advanced-SRN-integration-setup
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: TikTok for Business
-  section_id: 12192554266385
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-06-09T16:49:57Z'
   edited_at: '2026-09-09T10:24:24Z'
+  id: 6722785184913
+  locale: en-us
+  section: TikTok for Business
+  section_id: 12192554266385
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/6722785184913-TikTok-for-Business-Advanced-SRN-integration-setup
 ---
 On January 30, 2023, the new TikTok for Business (Advanced SRN) integration `tiktokglobal_int` was added. The [Legacy] TikTok for Business integration `bytedanceglobal_int` was gradually phased out and officially deprecated on March 20, 2024. TikTok handles the transition, and they will notify you when you can delete the old integration. To avoid any data loss, make sure to keep both integrations live during the transition phase. Learn more in the [bulletin](/docs/bulletin-tiktok-for-business-advanced-srn).
 

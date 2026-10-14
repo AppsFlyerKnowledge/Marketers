@@ -1,26 +1,27 @@
 ---
-title: "Audiences user identifier policy"
-excerpt: "Configure your user identifier policy to exercise account-level control over the identifiers you send to advertising partners via Audiences."
+title: Audiences user identifier policy
+excerpt: >-
+  Configure your user identifier policy to exercise account-level control over
+  the identifiers you send to advertising partners via Audiences.
+metadata:
+  keywords:
+    - IDFA
+    - Audiences
+    - Advertisers
+    - Premium Feature
+    - Marketers
+    - Audience Segmentation
 x-zendesk:
-  id: 360016791118
-  url: https://support.appsflyer.com/hc/en-us/articles/360016791118-Audiences-user-identifier-policy
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Audiences
-  section_id: 6551336428945
-  position: 3
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-neama-benhabib, Marketers, Audience Segmentation]
-  labels: [IDFA, Audiences, Advertisers, Premium Feature, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-12-23T15:39:55Z'
   edited_at: '2026-04-19T12:45:31Z'
+  id: 360016791118
+  locale: en-us
+  section: Audiences
+  section_id: 6551336428945
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360016791118-Audiences-user-identifier-policy
 ---
 ## About
 

@@ -1,26 +1,26 @@
 ---
-title: "[Closed beta] Use AI Predictive Audiences to reach high-intent users"
-excerpt: "Predictive Audiences uses AI to create an audience of users most likely to take a key action, such as purchasing, so you can reach high-intent users, reduce wasted spend, and maximize campaign impact."
+title: '[Closed beta] Use AI Predictive Audiences to reach high-intent users'
+excerpt: >-
+  Predictive Audiences uses AI to create an audience of users most likely to
+  take a key action, such as purchasing, so you can reach high-intent users,
+  reduce wasted spend, and maximize campaign impact.
+metadata:
+  keywords:
+    - Premium
+    - Beta
+    - Marketers
+    - Audience Segmentation
 x-zendesk:
-  id: 45762246838801
-  url: https://support.appsflyer.com/hc/en-us/articles/45762246838801--Closed-beta-Use-AI-Predictive-Audiences-to-reach-high-intent-users
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Audiences
-  section_id: 6551336428945
-  position: 2
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-neama-benhabib, Marketers, Audience Segmentation]
-  labels: [Premium, Beta, Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2026-04-15T09:20:36Z'
   edited_at: '2026-04-27T10:30:56Z'
+  id: 45762246838801
+  locale: en-us
+  section: Audiences
+  section_id: 6551336428945
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/45762246838801--Closed-beta-Use-AI-Predictive-Audiences-to-reach-high-intent-users
 ---
 <Embed title="[Closed beta] Use AI Predictive Audiences to reach high-intent users" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LuEJrfARo5g" providerUrl="https://www.youtube.com" />
 

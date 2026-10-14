@@ -1,26 +1,24 @@
 ---
-title: "Rockerbox integration with AppsFlyer"
-excerpt: "Learn how to automatically share data from AppsFlyer to Rockerbox, a marketing and analytics platform for mobile and web apps."
+title: Rockerbox integration with AppsFlyer
+excerpt: >-
+  Learn how to automatically share data from AppsFlyer to Rockerbox, a marketing
+  and analytics platform for mobile and web apps.
+metadata:
+  keywords:
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360015760757
-  url: https://support.appsflyer.com/hc/en-us/articles/360015760757-Rockerbox-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: 3rd-party platforms
-  section_id: 6551199962257
-  position: 24
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-11-23T14:55:00Z'
   edited_at: '2026-06-16T09:41:31Z'
+  id: 360015760757
+  locale: en-us
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360015760757-Rockerbox-integration-with-AppsFlyer
 ---
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png)
 

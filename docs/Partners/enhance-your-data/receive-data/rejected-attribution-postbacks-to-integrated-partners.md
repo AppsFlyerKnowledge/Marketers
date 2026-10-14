@@ -1,26 +1,25 @@
 ---
-title: "Rejected attribution postbacks to integrated partners"
-excerpt: "Integrated partners get postbacks of rejected installs and in-app events due to fraud or non-compliance with validation rules."
+title: Rejected attribution postbacks to integrated partners
+excerpt: >-
+  Integrated partners get postbacks of rejected installs and in-app events due
+  to fraud or non-compliance with validation rules.
+metadata:
+  keywords:
+    - fraud
+    - Ad Networks
+    - Partners
+    - Mobile Attribution
 x-zendesk:
-  id: 115004744123
-  url: https://support.appsflyer.com/hc/en-us/articles/115004744123-Rejected-attribution-postbacks-to-integrated-partners
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Receive data
-  section_id: 6551235995281
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Mobile Attribution, Ad Networks]
-  labels: [fraud, Ad Networks, Partners, Loc In Prog]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-09-19T07:03:47Z'
   edited_at: '2024-08-13T10:50:27Z'
+  id: 115004744123
+  locale: en-us
+  section: Receive data
+  section_id: 6551235995281
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115004744123-Rejected-attribution-postbacks-to-integrated-partners
 ---
 ## Rejected attribution postbacks relating to fraud and validation rules
 

@@ -1,26 +1,24 @@
 ---
-title: "Campaign name changes"
-excerpt: "Change the names of campaigns without creating duplicate data displays."
+title: Campaign name changes
+excerpt: Change the names of campaigns without creating duplicate data displays.
+metadata:
+  keywords:
+    - Aggregated Data
+    - Agencies
+    - Ad Networks
+    - Marketers
+    - Marketing Analytics
 x-zendesk:
-  id: 14038324952465
-  url: https://support.appsflyer.com/hc/en-us/articles/14038324952465-Campaign-name-changes
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Analytics and aggregate reporting/APIs
-  section_id: 6550976670225
-  position: 4
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics, Agencies, Ad Networks]
-  labels: [Aggregated Data, Agencies, Ad Networks, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-03-26T10:56:19Z'
   edited_at: '2024-04-24T14:48:53Z'
+  id: 14038324952465
+  locale: en-us
+  section: Analytics and aggregate reporting/APIs
+  section_id: 6550976670225
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/14038324952465-Campaign-name-changes
 ---
 ## Campaign name changes
 

@@ -1,26 +1,29 @@
 ---
-title: "RTB House campaign configuration"
-excerpt: "RTB House, an AppsFlyer ad network integrated partner, provides retargeting technology for e-commerce and gaming companies. RTB House has developed its own retargeting solution, based on deep learning algorithms, for purchasing online ads in the Real-Time Bidding model. In addition to click-based mobile attribution, RTB House offers retargeting attribution, which can be recorded with AppsFlyer."
+title: RTB House campaign configuration
+excerpt: >-
+  RTB House, an AppsFlyer ad network integrated partner, provides retargeting
+  technology for e-commerce and gaming companies. RTB House has developed its
+  own retargeting solution, based on deep learning algorithms, for purchasing
+  online ads in the Real-Time Bidding model. In addition to click-based mobile
+  attribution, RTB House offers retargeting attribution, which can be recorded
+  with AppsFlyer.
+metadata:
+  keywords:
+    - Advertisers
+    - RTB
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360001274325
-  url: https://support.appsflyer.com/hc/en-us/articles/360001274325-RTB-House-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (R-Z)
-  section_id: 6552025468305
-  position: 4
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Advertisers, RTB, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-07-05T08:30:48Z'
   edited_at: '2026-06-16T12:15:23Z'
+  id: 360001274325
+  locale: en-us
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360001274325-RTB-House-campaign-configuration
 ---
 ## Setting up RTB House
 

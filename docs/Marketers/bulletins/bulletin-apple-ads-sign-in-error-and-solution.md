@@ -1,27 +1,25 @@
 ---
-title: "Bulletin: Apple Ads sign-in error and solution"
-excerpt: "Solve the sign-in error that displays during Apple Ads cost integration."
+title: 'Bulletin: Apple Ads sign-in error and solution'
+excerpt: Solve the sign-in error that displays during Apple Ads cost integration.
+metadata:
+  keywords:
+    - Apple Search Ads
+    - Advertisers
+    - ASA
+    - Marketers
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 360019957558
-  url: https://support.appsflyer.com/hc/en-us/articles/360019957558-Bulletin-Apple-Ads-sign-in-error-and-solution
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 56
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Apple Search Ads, Advertisers, ASA, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-05-05T07:23:13Z'
   edited_at: '2026-06-11T08:36:34Z'
+  id: 360019957558
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360019957558-Bulletin-Apple-Ads-sign-in-error-and-solution
 ---
 | **Issue date** | From May 5, 2021 |
 | --- | --- |

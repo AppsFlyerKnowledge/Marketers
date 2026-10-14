@@ -1,25 +1,25 @@
 ---
-title: "Data Locker for marketers"
+title: Data Locker for marketers
+metadata:
+  keywords:
+    - Reports
+    - Data Locker
+    - Advertisers
+    - Raw Data
+    - Developers
+    - Premium
+    - Marketers
 x-zendesk:
-  id: 360000877538
-  url: https://support.appsflyer.com/hc/en-us/articles/360000877538-Data-Locker-for-marketers
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Locker
-  section_id: 6550945728657
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-rona-einat, Marketers, Data Locker]
-  labels: [Reports, Data Locker, Advertisers, Raw Data, Developers, Premium, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2019-02-03T12:20:08Z'
   edited_at: '2026-08-05T08:25:22Z'
+  id: 360000877538
+  locale: en-us
+  section: Data Locker
+  section_id: 6550945728657
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360000877538-Data-Locker-for-marketers
 ---
 **At a glance:** Data Locker sends your report data to cloud storage for loading into your BI systems. You can select between different storage destinations: An AppsFlyer-owned bucket in AWS, or storage owned by you in AWS, GCS, Yandex, BigQuery, and Snowflake. Data Locker supports [multiple destinations](/docs/data-locker-for-marketers#multipleconnections-principles-more-than-one-destination). That means you can send all data to multiple destinations, segregate data by destination, or a combination of both.
 

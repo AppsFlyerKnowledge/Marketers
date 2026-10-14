@@ -1,26 +1,24 @@
 ---
-title: "Integrated partners—FAQ"
-excerpt: "FAQ and integration troubleshooting for integrated partners."
+title: Integrated partners—FAQ
+excerpt: FAQ and integration troubleshooting for integrated partners.
+metadata:
+  keywords:
+    - Advertisers
+    - Ad Networks
+    - Partners
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 4406549295249
-  url: https://support.appsflyer.com/hc/en-us/articles/4406549295249-Integrated-partners-FAQ
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Learn more
-  section_id: 6551121200017
-  position: 2
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [Advertisers, Ad Networks, Partners, Localize]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-09-02T09:33:34Z'
   edited_at: '2026-01-14T08:33:02Z'
+  id: 4406549295249
+  locale: en-us
+  section: Learn more
+  section_id: 6551121200017
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4406549295249-Integrated-partners-FAQ
 ---
 ## Account and dashboard
 

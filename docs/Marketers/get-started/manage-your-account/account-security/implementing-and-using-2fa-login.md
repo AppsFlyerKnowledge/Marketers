@@ -1,26 +1,27 @@
 ---
-title: "Implementing and using 2FA login"
-excerpt: "Use two-factor authentication (2FA) to add an extra layer of security to the login process. Login credentials for account users are supplemented by Google or Microsoft Authenticator or SMS verification."
+title: Implementing and using 2FA login
+excerpt: >-
+  Use two-factor authentication (2FA) to add an extra layer of security to the
+  login process. Login credentials for account users are supplemented by Google
+  or Microsoft Authenticator or SMS verification.
+metadata:
+  keywords:
+    - Advertisers
+    - Agencies
+    - Ad Networks
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 360010178037
-  url: https://support.appsflyer.com/hc/en-us/articles/360010178037-Implementing-and-using-2FA-login
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Account security
-  section_id: 6551173202065
-  position: 1
-  owner: Judi Levy
-  owner_email: judi.levy@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies, Ad Networks]
-  labels: [Advertisers, Agencies, Ad Networks, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-06-22T10:25:26Z'
   edited_at: '2026-05-25T07:53:34Z'
+  id: 360010178037
+  locale: en-us
+  section: Account security
+  section_id: 6551173202065
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360010178037-Implementing-and-using-2FA-login
 ---
 ## Highlights
 

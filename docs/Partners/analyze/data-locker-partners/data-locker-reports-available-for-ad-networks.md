@@ -1,26 +1,26 @@
 ---
-title: "Data Locker—reports available for ad networks"
-excerpt: "Reports listed are available to ad networks via Data Locker. Advertisers must give the ad network explicit permission."
+title: Data Locker—reports available for ad networks
+excerpt: >-
+  Reports listed are available to ad networks via Data Locker. Advertisers must
+  give the ad network explicit permission.
+metadata:
+  keywords:
+    - Advertisers
+    - Ad Networks
+    - Partners
+    - Marketers
+    - Data Locker
 x-zendesk:
-  id: 4542778150545
-  url: https://support.appsflyer.com/hc/en-us/articles/4542778150545-Data-Locker-reports-available-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Data Locker
-  section_id: 6551591547409
-  position: 1
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-rona-einat, Marketers, Data Locker, Ad Networks]
-  labels: [Advertisers, Ad Networks, Partners]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-03-02T08:51:14Z'
   edited_at: '2025-03-25T11:15:41Z'
+  id: 4542778150545
+  locale: en-us
+  section: Data Locker
+  section_id: 6551591547409
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4542778150545-Data-Locker-reports-available-for-ad-networks
 ---
 ## Reports available for ad networks
 

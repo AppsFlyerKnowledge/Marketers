@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: AppsFlyer and Google attribution solution [Open BETA]"
+title: 'Bulletin: AppsFlyer and Google attribution solution [Open BETA]'
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 37857301293457
-  url: https://support.appsflyer.com/hc/en-us/articles/37857301293457-Bulletin-AppsFlyer-and-Google-attribution-solution-Open-BETA
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: []
-  promoted: false
-  comments_disabled: false
   created_at: '2025-08-06T13:24:32Z'
   edited_at: '2026-08-05T06:01:40Z'
+  id: 37857301293457
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/37857301293457-Bulletin-AppsFlyer-and-Google-attribution-solution-Open-BETA
 ---
 <Embed title="YouTube video player" typeOfEmbed="youtube" url="https://www.youtube.com/embed/VilMr6T0Yd0?si=p7FezQwuKkBtwkaB" providerUrl="https://www.youtube.com" />
 

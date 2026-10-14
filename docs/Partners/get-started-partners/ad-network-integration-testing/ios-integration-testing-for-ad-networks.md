@@ -1,26 +1,24 @@
 ---
-title: "iOS integration testing for ad networks"
-excerpt: "Test your AppsFlyer iOS integration using the AppsFlyer Partner Integrations app to trigger regular and Advanced Privacy postbacks."
+title: iOS integration testing for ad networks
+excerpt: >-
+  Test your AppsFlyer iOS integration using the AppsFlyer Partner Integrations
+  app to trigger regular and Advanced Privacy postbacks.
+metadata:
+  keywords:
+    - Ad Networks
+    - Partners
+    - Mobile Attribution
 x-zendesk:
-  id: 360016588278
-  url: https://support.appsflyer.com/hc/en-us/articles/360016588278-iOS-integration-testing-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Ad network integration testing
-  section_id: 6551070667537
-  position: 14
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Mobile Attribution, Ad Networks]
-  labels: [Ad Networks, Partners]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-12-16T11:39:36Z'
   edited_at: '2023-12-28T12:30:40Z'
+  id: 360016588278
+  locale: en-us
+  section: Ad network integration testing
+  section_id: 6551070667537
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360016588278-iOS-integration-testing-for-ad-networks
 ---
 ## iOS integration testing
 

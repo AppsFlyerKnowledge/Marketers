@@ -1,26 +1,21 @@
 ---
-title: "Onboarding guide to People-Based Attribution"
-excerpt: "PBA setup checklist"
+title: Onboarding guide to People-Based Attribution
+excerpt: PBA setup checklist
+metadata:
+  keywords:
+    - Marketers
+    - Cross-Platform Measurement
 x-zendesk:
-  id: 360013821097
-  url: https://support.appsflyer.com/hc/en-us/articles/360013821097-Onboarding-guide-to-People-Based-Attribution
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: People Based Attribution (PBA)
-  section_id: 43560588808721
-  position: 1
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, Cross-Platform Measurement]
-  labels: [Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-10-01T08:00:26Z'
   edited_at: '2024-08-11T06:45:49Z'
+  id: 360013821097
+  locale: en-us
+  section: People Based Attribution (PBA)
+  section_id: 43560588808721
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360013821097-Onboarding-guide-to-People-Based-Attribution
 ---
 ## Setting up PBA
 

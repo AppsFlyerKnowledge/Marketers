@@ -1,25 +1,24 @@
 ---
-title: "[Legacy] OneLink Smart Script V1 setup"
+title: '[Legacy] OneLink Smart Script V1 setup'
+deprecated: true
+metadata:
+  keywords:
+    - OneLink
+    - Advertisers
+    - Developers
+    - Marketers
+    - Smart Banners and Scripts
 x-zendesk:
-  id: 4415354290321
-  url: https://support.appsflyer.com/hc/en-us/articles/4415354290321--Legacy-OneLink-Smart-Script-V1-setup
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Web-to-app attribution
-  section_id: 6551240476177
-  position: 7
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, Smart Banners and Scripts]
-  labels: [OneLink, Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2022-01-02T17:00:19Z'
   edited_at: '2024-06-13T09:47:15Z'
+  id: 4415354290321
+  locale: en-us
+  section: Web-to-app attribution
+  section_id: 6551240476177
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4415354290321--Legacy-OneLink-Smart-Script-V1-setup
 ---
 **At a glance:** Set up OneLink Smart Script to convert and attribute your mobile website visitors, coming from any source, into mobile app users. **Note**: Although not mandatory, consider migrating to [OneLink Smart Script V2](/docs/set-up-smart-script-to-convert-web-visitors).
 

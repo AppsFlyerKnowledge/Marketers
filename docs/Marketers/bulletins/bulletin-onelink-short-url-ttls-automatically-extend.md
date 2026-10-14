@@ -1,26 +1,26 @@
 ---
-title: "Bulletin: OneLink short URL TTLs automatically extend"
+title: 'Bulletin: OneLink short URL TTLs automatically extend'
+metadata:
+  keywords:
+    - OneLink
+    - User invite
+    - OneLink API
+    - Developers
+    - Marketers
+    - bulk upload
+    - Link Management
 table_of_contents: false
 x-zendesk:
-  id: 4667188714001
-  url: https://support.appsflyer.com/hc/en-us/articles/4667188714001-Bulletin-OneLink-short-URL-TTLs-automatically-extend
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 48
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, Link Management]
-  labels: [OneLink, User invite, OneLink API, Developers, Marketers, bulk upload, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-03-10T11:17:11Z'
   edited_at: '2024-05-14T13:02:59Z'
+  id: 4667188714001
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4667188714001-Bulletin-OneLink-short-URL-TTLs-automatically-extend
 ---
 | **What's new** | The default time to live (TTL) for OneLink short URLs created via bulk upload, SDK (user invite), and OneLink API is extended each time the link is clicked:<ul><li>Bulk upload: 365 days</li><li>SDK user invite: 60 days</li><li>OneLink API: 31 days</li></ul> |
 | --- | --- |

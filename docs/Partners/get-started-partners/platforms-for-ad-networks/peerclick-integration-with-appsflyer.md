@@ -1,26 +1,27 @@
 ---
-title: "PeerClick integration with AppsFlyer"
-excerpt: "Ad networks that use PeerClick can benefit from the AppsFlyer Probabilistic modeling solution to receive attribution data about installs and in-app events."
+title: PeerClick integration with AppsFlyer
+excerpt: >-
+  Ad networks that use PeerClick can benefit from the AppsFlyer Probabilistic
+  modeling solution to receive attribution data about installs and in-app
+  events.
+metadata:
+  keywords:
+    - Advertisers
+    - Ad Networks
+    - Partners
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 21479841979793
-  url: https://support.appsflyer.com/hc/en-us/articles/21479841979793-PeerClick-integration-with-AppsFlyer
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Platforms for ad networks
-  section_id: 6551055575185
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [Advertisers, Ad Networks, Partners, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-01-07T08:27:18Z'
   edited_at: '2024-12-23T14:57:46Z'
+  id: 21479841979793
+  locale: en-us
+  section: Platforms for ad networks
+  section_id: 6551055575185
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/21479841979793-PeerClick-integration-with-AppsFlyer
 ---
 ## Starting the integration
 

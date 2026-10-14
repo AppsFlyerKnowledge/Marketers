@@ -1,26 +1,29 @@
 ---
-title: "Protect360 raw data reports"
-excerpt: "Raw data reports describe installs and in-app events blocked by the Protect360 engine, as well as from manually added Validation Rules."
+title: Protect360 raw data reports
+excerpt: >-
+  Raw data reports describe installs and in-app events blocked by the Protect360
+  engine, as well as from manually added Validation Rules.
+metadata:
+  keywords:
+    - Advertisers
+    - Protect360
+    - protect
+    - protect 360
+    - '360'
+    - Raw Data
+    - Premium
+    - Marketers
 x-zendesk:
-  id: 360015179337
-  url: https://support.appsflyer.com/hc/en-us/articles/360015179337-Protect360-raw-data-reports
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Protect your traffic
-  section_id: 6551015912465
-  position: 8
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 27439133508369
-  content_tags: [pm-roy-yanai, Marketers, Protect360]
-  labels: [Advertisers, Protect360, protect, protect 360, '360', Raw Data, Premium, Marketers, Localize]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-11-09T13:03:45Z'
   edited_at: '2026-03-28T14:03:09Z'
+  id: 360015179337
+  locale: en-us
+  section: Protect your traffic
+  section_id: 6551015912465
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360015179337-Protect360-raw-data-reports
 ---
 ## About Protect360 raw data reports
 

@@ -1,26 +1,25 @@
 ---
-title: "Recommended eCommerce app events"
-excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your eCommerce app."
+title: Recommended eCommerce app events
+excerpt: >-
+  Measure the quality of your users throughout their user journey by recording
+  these suggested in-app events for your eCommerce app.
+metadata:
+  keywords:
+    - Advertisers
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360019347957
-  url: https://support.appsflyer.com/hc/en-us/articles/360019347957-Recommended-eCommerce-app-events
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: In-app events
-  section_id: 6551285343761
-  position: 9
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-04-19T06:32:18Z'
   edited_at: '2025-12-02T11:55:23Z'
+  id: 360019347957
+  locale: en-us
+  section: In-app events
+  section_id: 6551285343761
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360019347957-Recommended-eCommerce-app-events
 ---
 ## ![InApp_Events_ecommerce.png](https://files.readme.io/c6497d250c22c7de5c13f01278ac72d8b3117bc60712ba3fe40ad24efcdc4947-360019350097.png) eCommerce
 

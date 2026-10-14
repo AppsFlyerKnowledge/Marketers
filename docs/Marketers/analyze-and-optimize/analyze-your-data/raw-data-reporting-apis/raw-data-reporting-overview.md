@@ -1,26 +1,33 @@
 ---
-title: "Raw data reporting overview"
-excerpt: "Row-level data (aka raw data) describes events relating to users like installs, in-app events, website visits, Protect360 blocked installs, ad revenue generated, and user-associated postbacks sent to partners. Raw data reports are available via download, API, and Data Locker."
+title: Raw data reporting overview
+excerpt: >-
+  Row-level data (aka raw data) describes events relating to users like
+  installs, in-app events, website visits, Protect360 blocked installs, ad
+  revenue generated, and user-associated postbacks sent to partners. Raw data
+  reports are available via download, API, and Data Locker.
+metadata:
+  keywords:
+    - LTV
+    - raw data
+    - uninstalls
+    - AFI
+    - Advertisers
+    - Agencies
+    - Premium Feature
+    - Gray
+    - Marketers
+    - Raw Reports
 x-zendesk:
-  id: 209680773
-  url: https://support.appsflyer.com/hc/en-us/articles/209680773-Raw-data-reporting-overview
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Raw data reporting/APIs
-  section_id: 6550930711057
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-rona-einat, Marketers, Agencies, Raw Reports]
-  labels: [LTV, raw data, uninstalls, AFI, Advertisers, Agencies, Premium Feature, Gray, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-03-21T08:32:06Z'
   edited_at: '2026-08-11T08:38:12Z'
+  id: 209680773
+  locale: en-us
+  section: Raw data reporting/APIs
+  section_id: 6550930711057
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/209680773-Raw-data-reporting-overview
 ---
 ## Raw data reporting—tools and reports
 

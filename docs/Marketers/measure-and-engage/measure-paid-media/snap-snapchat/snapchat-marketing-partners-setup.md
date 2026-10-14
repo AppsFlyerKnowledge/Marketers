@@ -1,26 +1,25 @@
 ---
-title: "Snapchat marketing partners setup"
-excerpt: "Integrate with Snapchat marketing partners to measure campaigns you run with them. When configured, AppsFlyer sends postbacks to the configured Snapchat marketing partner."
+title: Snapchat marketing partners setup
+excerpt: >-
+  Integrate with Snapchat marketing partners to measure campaigns you run with
+  them. When configured, AppsFlyer sends postbacks to the configured Snapchat
+  marketing partner.
+metadata:
+  keywords:
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 4417694142481
-  url: https://support.appsflyer.com/hc/en-us/articles/4417694142481-Snapchat-marketing-partners-setup
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Snap (Snapchat)
-  section_id: 6551316540945
-  position: 4
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-01-24T08:47:31Z'
   edited_at: '2026-09-15T11:22:07Z'
+  id: 4417694142481
+  locale: en-us
+  section: Snap (Snapchat)
+  section_id: 6551316540945
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4417694142481-Snapchat-marketing-partners-setup
 ---
 ## Setting up a Snapchat Marketing Partner
 

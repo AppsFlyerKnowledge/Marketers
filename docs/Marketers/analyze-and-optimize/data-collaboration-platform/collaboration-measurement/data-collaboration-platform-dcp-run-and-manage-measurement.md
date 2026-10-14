@@ -1,26 +1,25 @@
 ---
-title: "Data collaboration platform (DCP) - Run and manage measurement"
-excerpt: "After you configure on-site or off-site measurement, run it as either a live measurement or a historical measurement. Choose the mode that best matches your goal: measure performance continuously or validate results for a defined period."
+title: Data collaboration platform (DCP) - Run and manage measurement
+excerpt: >-
+  After you configure on-site or off-site measurement, run it as either a live
+  measurement or a historical measurement. Choose the mode that best matches
+  your goal: measure performance continuously or validate results for a defined
+  period.
+metadata:
+  keywords:
+    - Marketers
+    - Data Management
 x-zendesk:
-  id: 44427723216017
-  url: https://support.appsflyer.com/hc/en-us/articles/44427723216017-Data-collaboration-platform-DCP-Run-and-manage-measurement
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Collaboration measurement
-  section_id: 38034865098641
-  position: 4
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-yael-sharabi, Marketers, Data Management]
-  labels: []
-  promoted: false
-  comments_disabled: true
   created_at: '2026-03-04T10:59:23Z'
   edited_at: '2026-03-15T17:18:01Z'
+  id: 44427723216017
+  locale: en-us
+  section: Collaboration measurement
+  section_id: 38034865098641
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/44427723216017-Data-collaboration-platform-DCP-Run-and-manage-measurement
 ---
 ## About the measurement run modes
 

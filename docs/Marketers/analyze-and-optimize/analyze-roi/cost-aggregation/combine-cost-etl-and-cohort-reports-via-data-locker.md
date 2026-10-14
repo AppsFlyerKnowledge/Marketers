@@ -1,26 +1,24 @@
 ---
-title: "Combine Cost ETL and cohort reports via Data Locker"
-excerpt: "Combine Cost ETL and cohort reports via Data Locker (regular and advanced aggregated) to get the full picture of your marketing campaigns with the best available freshness, accuracy, and granularity."
+title: Combine Cost ETL and cohort reports via Data Locker
+excerpt: >-
+  Combine Cost ETL and cohort reports via Data Locker (regular and advanced
+  aggregated) to get the full picture of your marketing campaigns with the best
+  available freshness, accuracy, and granularity.
+metadata:
+  keywords:
+    - Marketers
+    - Marketing Analytics
 x-zendesk:
-  id: 27494360719505
-  url: https://support.appsflyer.com/hc/en-us/articles/27494360719505-Combine-Cost-ETL-and-cohort-reports-via-Data-Locker
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Cost aggregation
-  section_id: 6551029483281
-  position: 3
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
-  labels: [Marketers, Loc Published]
-  promoted: false
-  comments_disabled: false
   created_at: '2024-08-13T11:05:26Z'
   edited_at: '2026-08-13T16:01:09Z'
+  id: 27494360719505
+  locale: en-us
+  section: Cost aggregation
+  section_id: 6551029483281
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/27494360719505-Combine-Cost-ETL-and-cohort-reports-via-Data-Locker
 ---
 ![](https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png)
 

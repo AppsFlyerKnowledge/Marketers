@@ -1,26 +1,26 @@
 ---
-title: "Cost-sharing options for ad networks"
-excerpt: "Compare cost-sharing methods available to AppsFlyer ad network partners."
+title: Cost-sharing options for ad networks
+excerpt: Compare cost-sharing methods available to AppsFlyer ad network partners.
+metadata:
+  keywords:
+    - clicks
+    - Partner
+    - cost
+    - Ad Networks
+    - Partners
+    - ad spend
+    - ROI360
 x-zendesk:
-  id: 360012893658
-  url: https://support.appsflyer.com/hc/en-us/articles/360012893658-Cost-sharing-options-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Cost sharing for ad networks
-  section_id: 6551141756177
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-maytav-avnat, ROI360, Ad Networks]
-  labels: [clicks, Partner, cost, Ad Networks, Partners, ad spend, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-09-07T13:50:24Z'
   edited_at: '2024-05-22T12:07:38Z'
+  id: 360012893658
+  locale: en-us
+  section: Cost sharing for ad networks
+  section_id: 6551141756177
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360012893658-Cost-sharing-options-for-ad-networks
 ---
 ## Sharing cost with AppsFlyer and advertisers
 

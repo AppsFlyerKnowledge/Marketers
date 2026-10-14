@@ -1,26 +1,26 @@
 ---
-title: "Measure podcast-based campaigns"
-excerpt: "Overcome the attribution challenge of mobile app advertising on podcasts by using one of several AppsFlyer solutions."
+title: Measure podcast-based campaigns
+excerpt: >-
+  Overcome the attribution challenge of mobile app advertising on podcasts by
+  using one of several AppsFlyer solutions.
+metadata:
+  keywords:
+    - Advertisers
+    - Agencies
+    - audio
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360004494318
-  url: https://support.appsflyer.com/hc/en-us/articles/360004494318-Measure-podcast-based-campaigns
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Attribution scenarios
-  section_id: 6551328497041
-  position: 6
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-moran-davida, Marketers, Mobile Attribution, Agencies]
-  labels: [Advertisers, Agencies, audio, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2019-12-22T15:49:12Z'
   edited_at: '2026-06-11T10:00:09Z'
+  id: 360004494318
+  locale: en-us
+  section: Attribution scenarios
+  section_id: 6551328497041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360004494318-Measure-podcast-based-campaigns
 ---
 ## Podcast attribution methods
 

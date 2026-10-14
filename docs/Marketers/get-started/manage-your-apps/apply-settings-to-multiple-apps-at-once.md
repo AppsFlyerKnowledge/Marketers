@@ -1,28 +1,29 @@
 ---
 title: Apply settings to multiple apps at once
-excerpt: "Apply the same setting change to multiple apps at once instead of repeating it for each app individually."
-hidden: false
+excerpt: >-
+  Apply the same setting change to multiple apps at once instead of repeating it
+  for each app individually.
 deprecated: false
+hidden: false
+metadata:
+  keywords:
+    - App Settings
+    - Advertisers
+    - Agencies
+    - Developers
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 50696362899089
-  url: https://support.appsflyer.com/hc/en-us/articles/50696362899089-Apply-settings-to-multiple-apps-at-once
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Manage your apps
-  section_id: 6551015977105
-  position: 0
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [Marketers, Platform essentials, Agencies, pm-guy-riesenberg]
-  labels: [App Settings, Advertisers, Agencies, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2026-09-09T09:10:13Z'
   edited_at: '2026-09-23T10:38:40Z'
+  id: 50696362899089
+  locale: en-us
+  section: Manage your apps
+  section_id: 6551015977105
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/50696362899089-Apply-settings-to-multiple-apps-at-once
 ---
 ## About bulk app settings
 

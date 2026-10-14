@@ -1,27 +1,24 @@
 ---
-title: "Configure AppsFlyer SSO in OneLogin"
-excerpt: "Configure the SSO process using OneLogin as an identity provider (IdP)."
+title: Configure AppsFlyer SSO in OneLogin
+excerpt: Configure the SSO process using OneLogin as an identity provider (IdP).
+metadata:
+  keywords:
+    - Agencies
+    - Ad Networks
+    - Marketers
+    - Platform essentials
 table_of_contents: false
 x-zendesk:
-  id: 15044997313041
-  url: https://support.appsflyer.com/hc/en-us/articles/15044997313041-Configure-AppsFlyer-SSO-in-OneLogin
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: SSO authentication
-  section_id: 20162151531793
-  position: 4
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies, Ad Networks]
-  labels: [Agencies, Ad Networks, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-05-04T07:41:06Z'
   edited_at: '2024-07-09T11:52:33Z'
+  id: 15044997313041
+  locale: en-us
+  section: SSO authentication
+  section_id: 20162151531793
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/15044997313041-Configure-AppsFlyer-SSO-in-OneLogin
 ---
 The first stage in configuring the AppsFlyer SSO process is done on the OneLogin platform. Follow the steps below:
 

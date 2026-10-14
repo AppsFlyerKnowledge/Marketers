@@ -1,26 +1,29 @@
 ---
-title: "Apply privacy-preserving SDK methods"
-excerpt: "Preserve the privacy of your users with one or more of the methods available through the AppsFlyer SDK."
+title: Apply privacy-preserving SDK methods
+excerpt: >-
+  Preserve the privacy of your users with one or more of the methods available
+  through the AppsFlyer SDK.
+metadata:
+  keywords:
+    - Advertisers
+    - coppa
+    - opt-out
+    - opt out
+    - consent management
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360001422989
-  url: https://support.appsflyer.com/hc/en-us/articles/360001422989-Apply-privacy-preserving-SDK-methods
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Preserve user privacy
-  section_id: 6551440878097
-  position: 2
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Advertisers, coppa, opt-out, opt out, consent management, Developers, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-08-20T11:14:36Z'
   edited_at: '2026-08-14T16:22:41Z'
+  id: 360001422989
+  locale: en-us
+  section: Preserve user privacy
+  section_id: 6551440878097
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360001422989-Apply-privacy-preserving-SDK-methods
 ---
 **Note**
 

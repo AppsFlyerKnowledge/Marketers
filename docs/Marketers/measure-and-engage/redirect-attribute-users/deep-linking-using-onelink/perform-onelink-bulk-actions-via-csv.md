@@ -1,26 +1,24 @@
 ---
-title: "Perform OneLink bulk actions via CSV"
-excerpt: "The OneLink Bulk Links page allows you to create and manage OneLink custom shortlinks in bulk."
+title: Perform OneLink bulk actions via CSV
+excerpt: >-
+  The OneLink Bulk Links page allows you to create and manage OneLink custom
+  shortlinks in bulk.
+metadata:
+  keywords:
+    - Marketers
+    - bulk
+    - QR-to-App
 x-zendesk:
-  id: 14511403892369
-  url: https://support.appsflyer.com/hc/en-us/articles/14511403892369-Perform-OneLink-bulk-actions-via-CSV
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Deep linking using OneLink
-  section_id: 6551203111057
-  position: 9
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, QR-to-App]
-  labels: [Marketers, bulk]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-04-13T11:31:43Z'
   edited_at: '2026-08-18T00:01:06Z'
+  id: 14511403892369
+  locale: en-us
+  section: Deep linking using OneLink
+  section_id: 6551203111057
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/14511403892369-Perform-OneLink-bulk-actions-via-CSV
 ---
 You can create, view, and edit links generated in bulk. These links are organized into a convenient collection format, allowing you to perform batch actions on the whole collection, such as adding new links, downloading them, and generating QR code image files.
 

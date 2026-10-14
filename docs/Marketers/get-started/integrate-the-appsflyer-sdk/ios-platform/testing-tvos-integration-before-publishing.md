@@ -1,26 +1,27 @@
 ---
-title: "Testing tvOS integration before publishing"
-excerpt: "Simulate a non-organic install from your AppleTV device using the tvOS Test App."
+title: Testing tvOS integration before publishing
+excerpt: >-
+  Simulate a non-organic install from your AppleTV device using the tvOS Test
+  App.
+metadata:
+  keywords:
+    - Testing
+    - tvos
+    - Advertisers
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 211758923
-  url: https://support.appsflyer.com/hc/en-us/articles/211758923-Testing-tvOS-integration-before-publishing
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: iOS platform
-  section_id: 6551263106577
-  position: 6
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Testing, tvos, Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-07-12T09:49:14Z'
   edited_at: '2023-02-15T13:15:03Z'
+  id: 211758923
+  locale: en-us
+  section: iOS platform
+  section_id: 6551263106577
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/211758923-Testing-tvOS-integration-before-publishing
 ---
 ## Overview
 

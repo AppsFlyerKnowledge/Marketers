@@ -1,26 +1,25 @@
 ---
-title: "Recommended flight booking app events"
-excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your flight booking app ."
+title: Recommended flight booking app events
+excerpt: >-
+  Measure the quality of your users throughout their user journey by recording
+  these suggested in-app events for your flight booking app .
+metadata:
+  keywords:
+    - Advertisers
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360019670857
-  url: https://support.appsflyer.com/hc/en-us/articles/360019670857--Recommended-flight-booking-app-events
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: In-app events
-  section_id: 6551285343761
-  position: 15
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-04-29T13:07:29Z'
   edited_at: '2023-12-04T11:56:41Z'
+  id: 360019670857
+  locale: en-us
+  section: In-app events
+  section_id: 6551285343761
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360019670857--Recommended-flight-booking-app-events
 ---
 ## ![InApp_Events_flight.png](https://files.readme.io/7a09c4a641dd5e797bffc41a6e66b20efe5660721f37abac3dd12ac83688b37b-20659533911697.png) Flight booking
 

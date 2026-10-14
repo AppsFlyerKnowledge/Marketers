@@ -1,26 +1,28 @@
 ---
-title: "Set up cross-platform links for multi-device campaigns"
-excerpt: "How to promote, attribute, and measure app installs on platforms to ad views on other platforms. For example, mobile app installs to ads viewed on CTV devices, game console app installs to ads viewed on mobile or desktops (web), and CTV app installs to ads viewed on mobile or desktop (web)."
+title: Set up cross-platform links for multi-device campaigns
+excerpt: >-
+  How to promote, attribute, and measure app installs on platforms to ad views
+  on other platforms. For example, mobile app installs to ads viewed on CTV
+  devices, game console app installs to ads viewed on mobile or desktops (web),
+  and CTV app installs to ads viewed on mobile or desktop (web).
+metadata:
+  keywords:
+    - Attribution
+    - Advertisers
+    - CTV
+    - Marketers
+    - Cross-Platform Measurement
 x-zendesk:
-  id: 6966260647185
-  url: https://support.appsflyer.com/hc/en-us/articles/6966260647185-Set-up-cross-platform-links-for-multi-device-campaigns
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Overview
-  section_id: 15323084579345
-  position: 1
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-moran-davida, Marketers, Cross-Platform Measurement]
-  labels: [Attribution, Advertisers, CTV, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-06-19T07:02:43Z'
   edited_at: '2026-09-15T11:16:51Z'
+  id: 6966260647185
+  locale: en-us
+  section: Overview
+  section_id: 15323084579345
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/6966260647185-Set-up-cross-platform-links-for-multi-device-campaigns
 ---
 ## Overview
 

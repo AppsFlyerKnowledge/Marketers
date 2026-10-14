@@ -1,18 +1,17 @@
 ---
-title: "Retargeting attribution"
-excerpt: "Understand retargeting attribution with our specialized guides"
+title: Retargeting attribution
+excerpt: Understand retargeting attribution with our specialized guides
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551326229265
-  url: https://support.appsflyer.com/hc/en-us/sections/6551326229265-Retargeting-attribution
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6551296371217
-  position: 2
-  sorting: manual
   created_at: '2022-06-02T11:38:47Z'
+  id: 6551326229265
+  locale: en-us
+  parent_section_id: 6551296371217
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551326229265-Retargeting-attribution
 ---
 Understand retargeting attribution with our specialized guides
 

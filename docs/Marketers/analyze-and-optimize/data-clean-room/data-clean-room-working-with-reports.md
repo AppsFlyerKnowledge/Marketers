@@ -1,26 +1,22 @@
 ---
-title: "Data Clean Room—Working with reports"
-excerpt: "Work with the reports you have set up in the Data Clean Room (DCR)."
+title: Data Clean Room—Working with reports
+excerpt: Work with the reports you have set up in the Data Clean Room (DCR).
+metadata:
+  keywords:
+    - Premium
+    - Marketers
+    - Data Clean Room
 x-zendesk:
-  id: 5415945483921
-  url: https://support.appsflyer.com/hc/en-us/articles/5415945483921-Data-Clean-Room-Working-with-reports
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Clean Room
-  section_id: 4591191779217
-  position: 7
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-inbar-agassi, Marketers, Data Clean Room]
-  labels: [Premium, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-04-12T12:49:39Z'
   edited_at: '2024-03-06T07:59:14Z'
+  id: 5415945483921
+  locale: en-us
+  section: Data Clean Room
+  section_id: 4591191779217
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/5415945483921-Data-Clean-Room-Working-with-reports
 ---
 ## Introduction
 

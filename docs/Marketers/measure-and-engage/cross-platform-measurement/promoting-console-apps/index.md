@@ -1,18 +1,17 @@
 ---
-title: "Promoting Console apps"
-excerpt: "How to promote and measure attribution of your Console apps from anywhere"
+title: Promoting Console apps
+excerpt: How to promote and measure attribution of your Console apps from anywhere
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 15329052471057
-  url: https://support.appsflyer.com/hc/en-us/sections/15329052471057-Promoting-Console-apps
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 15323134852497
-  position: 2
-  sorting: manual
   created_at: '2023-05-15T13:15:28Z'
+  id: 15329052471057
+  locale: en-us
+  parent_section_id: 15323134852497
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/15329052471057-Promoting-Console-apps
 ---
 How to promote and measure attribution of your Console apps from anywhere
 

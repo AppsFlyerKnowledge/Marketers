@@ -1,26 +1,26 @@
 ---
-title: "SKAN aggregated performance report API"
-excerpt: "SKAN performance enriched with additional data points. Similar to the data in the SKAdNetwork dashboard. Aggregate using either the install date or postback arrival date."
+title: SKAN aggregated performance report API
+excerpt: >-
+  SKAN performance enriched with additional data points. Similar to the data in
+  the SKAdNetwork dashboard. Aggregate using either the install date or postback
+  arrival date.
+metadata:
+  keywords:
+    - Advertisers
+    - SKAD
+    - Marketers
+    - SKAdNetwork (SKAN)
 x-zendesk:
-  id: 360014104157
-  url: https://support.appsflyer.com/hc/en-us/articles/360014104157-SKAN-aggregated-performance-report-API
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: SKAN solution
-  section_id: 6552135379985
-  position: 12
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
-  labels: [Advertisers, SKAD, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-10-08T09:45:03Z'
   edited_at: '2024-02-08T08:56:21Z'
+  id: 360014104157
+  locale: en-us
+  section: SKAN solution
+  section_id: 6552135379985
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360014104157-SKAN-aggregated-performance-report-API
 ---
 ## SKAN aggregated performance report API
 

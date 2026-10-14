@@ -1,26 +1,23 @@
 ---
-title: "Texting desktop users a link to your mobile app"
-excerpt: "Convert desktop users to mobile app users using SMS vendors and OneLink."
+title: Texting desktop users a link to your mobile app
+excerpt: Convert desktop users to mobile app users using SMS vendors and OneLink.
+metadata:
+  keywords:
+    - Advertisers
+    - Developers
+    - Marketers
+    - QR-to-App
 x-zendesk:
-  id: 360003799658
-  url: https://support.appsflyer.com/hc/en-us/articles/360003799658-Texting-desktop-users-a-link-to-your-mobile-app
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Owned media attribution
-  section_id: 6551214397585
-  position: 3
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, QR-to-App]
-  labels: [Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2019-11-21T09:13:52Z'
   edited_at: '2026-05-05T06:54:49Z'
+  id: 360003799658
+  locale: en-us
+  section: Owned media attribution
+  section_id: 6551214397585
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360003799658-Texting-desktop-users-a-link-to-your-mobile-app
 ---
 ![text-me-the-app-web-form.png](https://files.readme.io/d28b843ab7528138b4d85b147b8d613efde740d354238227b0f123030fa3a1de-360004940018.png)
 

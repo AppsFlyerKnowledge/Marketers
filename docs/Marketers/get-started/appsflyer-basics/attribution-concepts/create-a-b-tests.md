@@ -1,26 +1,24 @@
 ---
-title: "Create A/B tests"
-excerpt: "Use AppsFlyer to A/B test media sources, campaigns, creatives, targeting, and ad placement."
+title: Create A/B tests
+excerpt: >-
+  Use AppsFlyer to A/B test media sources, campaigns, creatives, targeting, and
+  ad placement.
+metadata:
+  keywords:
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360001523657
-  url: https://support.appsflyer.com/hc/en-us/articles/360001523657-Create-A-B-tests
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Attribution concepts
-  section_id: 6551394235409
-  position: 19
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-moran-davida, Marketers, Mobile Attribution]
-  labels: [Advertisers, Marketers, Loc In Prog]
-  promoted: false
-  comments_disabled: true
   created_at: '2019-05-07T09:17:43Z'
   edited_at: '2026-07-27T15:46:37Z'
+  id: 360001523657
+  locale: en-us
+  section: Attribution concepts
+  section_id: 6551394235409
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360001523657-Create-A-B-tests
 ---
 ![AB_TESTING.jpg](https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg)
 

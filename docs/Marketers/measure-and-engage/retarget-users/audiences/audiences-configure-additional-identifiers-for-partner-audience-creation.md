@@ -1,26 +1,27 @@
 ---
-title: "Audiences - Configure additional identifiers for partner audience creation"
-excerpt: "Configure additional user identifiers for sending custom audiences to advertising partners."
+title: Audiences - Configure additional identifiers for partner audience creation
+excerpt: >-
+  Configure additional user identifiers for sending custom audiences to
+  advertising partners.
+metadata:
+  keywords:
+    - Audiences
+    - Advertisers
+    - Developers
+    - Premium Feature
+    - Marketers
+    - Audience Segmentation
 x-zendesk:
-  id: 360017807278
-  url: https://support.appsflyer.com/hc/en-us/articles/360017807278-Audiences-Configure-additional-identifiers-for-partner-audience-creation
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Audiences
-  section_id: 6551336428945
-  position: 6
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-neama-benhabib, Marketers, Audience Segmentation]
-  labels: [Audiences, Advertisers, Developers, Premium Feature, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-02-14T16:23:45Z'
   edited_at: '2026-08-14T00:01:08Z'
+  id: 360017807278
+  locale: en-us
+  section: Audiences
+  section_id: 6551336428945
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360017807278-Audiences-Configure-additional-identifiers-for-partner-audience-creation
 ---
 ## About additional identifiers
 

@@ -1,26 +1,23 @@
 ---
-title: "Purchase and subscription validation - Overview"
-excerpt: "Understand how AppsFlyer validates purchases and subscriptions, and compare the two available solutions: Receipt validation and ROI360 store revenue."
+title: Purchase and subscription validation - Overview
+excerpt: >-
+  Understand how AppsFlyer validates purchases and subscriptions, and compare
+  the two available solutions: Receipt validation and ROI360 store revenue.
+metadata:
+  keywords:
+    - Marketers
+    - ROI360
 x-zendesk:
-  id: 42120228484241
-  url: https://support.appsflyer.com/hc/en-us/articles/42120228484241-Purchase-and-subscription-validation-Overview
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Purchase and subscription validation
-  section_id: 42227328788241
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-michael-talapov, Marketers, ROI360]
-  labels: []
-  promoted: false
-  comments_disabled: false
   created_at: '2025-12-20T16:30:47Z'
   edited_at: '2026-09-27T07:21:00Z'
+  id: 42120228484241
+  locale: en-us
+  section: Purchase and subscription validation
+  section_id: 42227328788241
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/42120228484241-Purchase-and-subscription-validation-Overview
 ---
 ## About purchase and subscription validation
 

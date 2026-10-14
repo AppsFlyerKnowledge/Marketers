@@ -1,18 +1,18 @@
 ---
-title: "Learn more"
-excerpt: "Find important information and answers to your questions about working with AppsFlyer"
+title: Learn more
+excerpt: >-
+  Find important information and answers to your questions about working with
+  AppsFlyer
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551121200017
-  url: https://support.appsflyer.com/hc/en-us/sections/6551121200017-Learn-more
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  parent_section_id: 6550863656977
-  position: 5
-  sorting: manual
   created_at: '2022-06-02T11:28:55Z'
+  id: 6551121200017
+  locale: en-us
+  parent_section_id: 6550863656977
+  type: section
+  url: https://support.appsflyer.com/hc/en-us/sections/6551121200017-Learn-more
 ---
 <Cards>
   <Card title="Integrated partners—FAQ" href="/docs/integrated-partners-faq" icon="fa-solid fa-circle-question">

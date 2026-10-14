@@ -1,26 +1,24 @@
 ---
-title: "Measure view-through engagements"
-excerpt: "A user who views an ad (impression) and subsequently installs the app, is attributed by view-through attribution."
+title: Measure view-through engagements
+excerpt: >-
+  A user who views an ad (impression) and subsequently installs the app, is
+  attributed by view-through attribution.
+metadata:
+  keywords:
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 210084473
-  url: https://support.appsflyer.com/hc/en-us/articles/210084473-Measure-view-through-engagements
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Attribution scenarios
-  section_id: 6551328497041
-  position: 5
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-moran-davida, Marketers, Mobile Attribution]
-  labels: [Advertisers, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-04-20T07:38:24Z'
   edited_at: '2026-05-05T15:20:54Z'
+  id: 210084473
+  locale: en-us
+  section: Attribution scenarios
+  section_id: 6551328497041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/210084473-Measure-view-through-engagements
 ---
 ## Overview
 

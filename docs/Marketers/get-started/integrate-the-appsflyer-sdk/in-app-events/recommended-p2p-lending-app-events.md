@@ -1,26 +1,25 @@
 ---
-title: "Recommended P2P lending app events"
-excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your peer-to-peer (P2P) lending app."
+title: Recommended P2P lending app events
+excerpt: >-
+  Measure the quality of your users throughout their user journey by recording
+  these suggested in-app events for your peer-to-peer (P2P) lending app.
+metadata:
+  keywords:
+    - Advertisers
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360019614017
-  url: https://support.appsflyer.com/hc/en-us/articles/360019614017-Recommended-P2P-lending-app-events
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: In-app events
-  section_id: 6551285343761
-  position: 12
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-04-28T09:01:59Z'
   edited_at: '2023-12-04T11:55:49Z'
+  id: 360019614017
+  locale: en-us
+  section: In-app events
+  section_id: 6551285343761
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360019614017-Recommended-P2P-lending-app-events
 ---
 ## ![InApp_Events_lending.png](https://files.readme.io/e3465ee913a65a215f1c224db20d4f1fd61fd0bf488b798073c94b4e8387d252-20659507679889.png) P2P lending
 

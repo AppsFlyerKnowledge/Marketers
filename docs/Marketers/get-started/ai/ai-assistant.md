@@ -7,35 +7,27 @@ excerpt: >-
   tables and charts, either by asking questions directly in the AI Assistant or
   by using Analyze with AI from My Dashboards to investigate specific charts in
   context.
+metadata:
+  keywords:
+    - Advertisers
+    - AI Assistant
+    - Marketers
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
-  comments_disabled: true
-  content_tags:
-    - pm-eden-locker
-    - AI Assistant
-    - Marketers
   created_at: '2025-08-26T08:30:32Z'
   edited_at: '2026-10-04T07:37:17Z'
   id: 38423389662609
-  labels:
-    - Advertisers
   locale: en-us
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  permission_group_id: 11065
-  position: 0
-  promoted: false
   section: AI
   section_id: 36348470056081
   url: https://support.appsflyer.com/hc/en-us/articles/38423389662609-AI-Assistant
-  visibility: Everyone / Public (no restriction)
 ---
-<Embed title="" typeOfEmbed="youtube" url="https://www.youtube-nocookie.com/embed/F9PDfKmoUEo" providerUrl="https://www.youtube-nocookie.com" />
+<Embed title="AI Assistant" typeOfEmbed="youtube" url="https://www.youtube.com/embed/F9PDfKmoUEo" providerUrl="https://www.youtube.com" />
 
 ## **About AI Assistant**
 
-The AI Assistant is your self-service analytics and guidance companion, built to help you uncover insights and make smarter decisions with AppsFlyer. Use it side by side with your dashboard data to quickly explore and understand your marketing performance.&#x20;
+The AI Assistant is your self-service analytics and guidance companion, built to help you uncover insights and make smarter decisions with AppsFlyer. Use it side by side with your dashboard data to quickly explore and understand your marketing performance.
 
 ![Animated demo of the AI Assistant chat window in AppsFlyer](https://files.readme.io/faf2113de852c5c8d3f66a41c1267a2c69b8704e05280ed4683374a569b0ba74-38726194531729.gif)
 
@@ -46,55 +38,59 @@ Ask the AI Assistant plain-language questions to get:
 * **Data-related answers**: performance insights, campaign trends, top and low performers, and more, drawing on My Dashboards metrics and dimensions as well as AppsFlyer's growing set of connected data sources.
 * **How-to guidance**: platform navigation, feature explanations, and setup help based on AppsFlyer's documentation.
 * **Platform management, without switching screens**: check app settings, SDK integration status, audit OneLink templates and links, and review the health of your cost and ad revenue integrations, all from the chat.
-* **Agent Hub run analysis**: ask questions about a completed Agent Hub run, right from where you're reviewing it. See [Agent Hub overview \[Beta\]](/docs/beta-agent-hub-overview#analyze-activity-with-ai-assistant) to learn more.
+* **Agent Hub run analysis**: ask questions about a completed Agent Hub run, right from where you're reviewing it. See [Agent Hub overview [Beta]](/docs/beta-agent-hub-overview#analyze-activity-with-ai-assistant) to learn more.
 
 Responses can appear as text, tables, or charts, depending on what best fits your question.
 
 ## **Where to open it**
 
 <Accordion title="How to use the AI assistant">
-  1. Click the sparkle AI star ![ai\_star.png](https://files.readme.io/a370eeda521facc1222f69ce55c18be9b9d38f9153eb0c7f0ca0b52ea7c6d6d3-38724328822033.png) in the navigation bar to open the chat window.
-  2. Ask a question. These can be:
-     1. Picked from the suggested questions
-     2. Type your own question. These can be:
-        1. Data-related questions.
-        2. How-to questions.
-  3. View the responses in text, table, or charts.
-  4. Use the follow-up suggestions to refine your analysis or question.
 
-  <Callout icon="📘" theme="info">
-    ### **Tip!**
+1. Click the sparkle AI star ![ai_star.png](https://files.readme.io/a370eeda521facc1222f69ce55c18be9b9d38f9153eb0c7f0ca0b52ea7c6d6d3-38724328822033.png) in the navigation bar to open the chat window.
+2. Ask a question. These can be:
+   1. Picked from the suggested questions
+   2. Type your own question. These can be:
+      1. Data-related questions.
+      2. How-to questions.
+3. View the responses in text, table, or charts.
+4. Use the follow-up suggestions to refine your analysis or question.
 
-    The AI assistant will respond differently depending on which page you ask the question on.
+> 📘 **Tip!**
+>
+> The AI assistant will respond differently depending on which page you ask the question on.
+>
+> * When using the chat in **My dashboards**, responses will be shown according to the selected apps unless you tell the AI otherwise.
+> * In any other page, the answer will be provided based on the first app in the account, unless you tell the AI otherwise.
+> * Up to 20 apps can be analyzed at a time.
 
-    * When using the chat in **My dashboards**, responses will be shown according to the selected apps unless you tell the AI otherwise.
-    * In any other page, the answer will be provided based on the first app in the account, unless you tell the AI otherwise.
-    * Up to 20 apps can be analyzed at a time.
-  </Callout>
+### Other features
 
-  ### Other features
+* The chat can be resized by clicking on the **expand** button.
+* Use the **Copy** button to save responses if needed.
+* Start a new conversation by clicking on the right side icon.
 
-  * The chat can be resized by clicking on the **expand** button.
-  * Use the **Copy** button to save responses if needed.
-  * Start a new conversation by clicking on the right side icon.
 </Accordion>
 
 <Accordion title="How to use Analyze with AI">
-  From any chart in My Dashboards
 
-  1. Hover over a widget.
-  2. Click the Analyze with AI ![ai\_star.png](https://files.readme.io/a370eeda521facc1222f69ce55c18be9b9d38f9153eb0c7f0ca0b52ea7c6d6d3-38724328822033.png) button.
-  3. Choose a predefined question (summary, trend explanation, comparison, etc.) or type your own.
-  4. The AI Assistant sidebar opens with the answer and suggested follow-up questions.
-  5. Continue the conversation to explore specific segments, metrics, or time ranges in more detail.
+From any chart in My Dashboards
+
+1. Hover over a widget.
+2. Click the Analyze with AI ![ai_star.png](https://files.readme.io/a370eeda521facc1222f69ce55c18be9b9d38f9153eb0c7f0ca0b52ea7c6d6d3-38724328822033.png) button.
+3. Choose a predefined question (summary, trend explanation, comparison, etc.) or type your own.
+4. The AI Assistant sidebar opens with the answer and suggested follow-up questions.
+5. Continue the conversation to explore specific segments, metrics, or time ranges in more detail.
+
 </Accordion>
 
 <Accordion title="How to use AI Assistant in Agent Hub">
-  From a completed run in Agent Hub
 
-  1. Go to the Activity tab in Agent Hub.
-  2. Click **Analyze activity** on a completed run.
-  3. Ask your question. The AI Assistant opens with context from that run already loaded.
+From a completed run in Agent Hub
+
+1. Go to the Activity tab in Agent Hub.
+2. Click **Analyze activity** on a completed run.
+3. Ask your question. The AI Assistant opens with context from that run already loaded.
+
 </Accordion>
 
 ## **Conversation History**
@@ -104,7 +100,7 @@ The AI Assistant keeps a history of your conversations so you can pick up where 
 **Where to find it:** Click the history icon next to the close (X) button on the AI Assistant chat window. This opens your conversation history as a side panel alongside the chat.
 
 * Conversations from the last 30 days, listed newest to oldest.
-* Each conversation is timestamped — current conversation, or the full date and time (e.g., _Feb 10, 3:15 PM_) for older conversations.
+* Each conversation is timestamped — current conversation, or the full date and time (e.g., *Feb 10, 3:15 PM*) for older conversations.
 * Conversations older than 30 days are automatically removed from your history, unless pinned.
 * Search within past conversations is available by conversation name.
 
@@ -124,61 +120,74 @@ The AI Assistant keeps a history of your conversations so you can pick up where 
 ## **Other information**
 
 <Accordion title="Permissions & admin controls">
-  * You must have access to the AppsFlyer platform and at least one app in your account.
-  * **Admin permissions** are needed to enable or disable the AI Assistant, from Account management (via the account menu in the top bar).
 
-  When disabled, the AI Assistant is unavailable to all users on the account.
+* You must have access to the AppsFlyer platform and at least one app in your account.
+* **Admin permissions** are needed to enable or disable the AI Assistant, from Account management (via the account menu in the top bar).
+
+When disabled, the AI Assistant is unavailable to all users on the account.
+
 </Accordion>
 
 <Accordion title="Data and knowledge sources">
-  The AI Assistant is powered by OpenAI's large language models, combined with AppsFlyer's own data sets to keep answers accurate and relevant to your account.
 
-  The AI Assistant draws on several AppsFlyer data sets to generate its answers:
+The AI Assistant is powered by OpenAI's large language models, combined with AppsFlyer's own data sets to keep answers accurate and relevant to your account.
 
-  * **Knowledge Base and Developer Hub**: combined with your account-level information to provide accurate, relevant answers to how-to and setup questions.
-  * **AppsFlyer's platform data and tools**: the same dimensions and metrics available in My Dashboards, plus a growing set of MCP tools that connect the AI Assistant directly to live account data and platform actions, including My Apps and OneLink management, and analytics measurement. Learn more in [AppsFlyer MCP \[Beta\]](/docs/beta-appsflyer-mcp).
+The AI Assistant draws on several AppsFlyer data sets to generate its answers:
 
-  Any account, user, or app information used to generate answers is restricted and used only according to your permissions.
+* **Knowledge Base and Developer Hub**: combined with your account-level information to provide accurate, relevant answers to how-to and setup questions.
+* **AppsFlyer's platform data and tools**: the same dimensions and metrics available in My Dashboards, plus a growing set of MCP tools that connect the AI Assistant directly to live account data and platform actions, including My Apps and OneLink management, and analytics measurement. Learn more in [AppsFlyer MCP [Beta]](/docs/beta-appsflyer-mcp).
+
+Any account, user, or app information used to generate answers is restricted and used only according to your permissions.
+
 </Accordion>
 
 <Accordion title="Feedback">
-  Your feedback helps us improve the AI Assistant. If a response is unclear, incomplete, or incorrect:
 
-  * Use the thumbs up/down options, or add a custom comment.
-  * Continue the conversation directly in chat to refine the answer.
+Your feedback helps us improve the AI Assistant. If a response is unclear, incomplete, or incorrect:
+
+* Use the thumbs up/down options, or add a custom comment.
+* Continue the conversation directly in chat to refine the answer.
+
 </Accordion>
 
 <Accordion title="Limitations">
-  These limitations apply to both the AI Assistant and Analyze with AI:
 
-  | Name            | Description                                                                                                   |
-  | --------------- | ------------------------------------------------------------------------------------------------------------- |
-  | Question limits | Questions are limited to 500 characters.                                                                      |
-  | Data use        | Only data for your account and selected apps are used. No industry benchmarks or cross-account data are used. |
-  | Sessions        | Sessions expire after 4 hours of inactivity or if you manually choose to start a new conversation.            |
-  | Access          | Only displays results for data and apps that the user has access to.                                          |
-  | Unsupported     | No recommendations, anomaly detection, predictive analytics, or predictions at this stage.                    |
-  | App scope       | Up to 20 apps can be analyzed at a time.                                                                      |
+These limitations apply to both the AI Assistant and Analyze with AI:
 
-  These additional limitations apply to Analyze with AI only:
+| Name | Description |
+| --- | --- |
+| Question limits | Questions are limited to 500 characters. |
+| Data use | Only data for your account and selected apps are used. No industry benchmarks or cross-account data are used. |
+| Sessions | Sessions expire after 4 hours of inactivity or if you manually choose to start a new conversation. |
+| Access | Only displays results for data and apps that the user has access to. |
+| Unsupported | No recommendations, anomaly detection, predictive analytics, or predictions at this stage. |
+| App scope | Up to 20 apps can be analyzed at a time. |
 
-  | Name                           | Description                                     |
-  | ------------------------------ | ----------------------------------------------- |
-  | Custom metrics                 | Custom metrics are not supported.               |
-  | Weekly and Monthly granularity | Weekly or monthly granularity is not supported. |
+These additional limitations apply to Analyze with AI only:
+
+| Name | Description |
+| --- | --- |
+| Custom metrics | Custom metrics are not supported. |
+| Weekly and Monthly granularity | Weekly or monthly granularity is not supported. |
+
 </Accordion>
 
 <Accordion title="Opt-out">
-  Admins can toggle the AI Assistant on or off via the **Account & Profile**.<br />Once enabled, the AI Assistant appears as a sparkle AI star icon on all platform pages.
 
-  To turn on or off the AI Assistant:
+Admins can toggle the AI Assistant on or off via the **Account & Profile**.  
+Once enabled, the AI Assistant appears as a sparkle AI star icon on all platform pages.
 
-  1. From the top bar, open the account menu (email address dropdown) > **Account & Profile.**
-  2. In the **AI Assistant activation** section, turn on or off the AI assistant.
+To turn on or off the AI Assistant:
+
+1. From the top bar, open the account menu (email address dropdown) > **Account & Profile.**
+2. In the **AI Assistant activation** section, turn on or off the AI assistant.
+
 </Accordion>
 
 <Accordion title="Privacy/security">
-  _AppsFlyer AI can make mistakes. AI answers are based on your account's aggregated data. Your data is never stored or used to train AI models._
+
+*AppsFlyer AI can make mistakes. AI answers are based on your account's aggregated data. Your data is never stored or used to train AI models.*
+
 </Accordion>
 
-<div data-zendesk-anchors="h_01K3JQZ60KZ1FFE56BJ8VE6H33=about-ai-assistant h_01K3JQZWVFBRAQJJSA4JE4G9MS=what-you-can-do h_01K3JQZWVKJC9M6WTMD99BVHF3=where-to-open-it h_01K4A6BP6WXBFRH4BX53CDFSB9=tip h_01K4A7VTJF5KD1MDFTPJD515WE=other-features h_01KC3F9H3IYBC7E8F0A1B2C3D4=conversation-history h_01K3JQZWVTFZH26J2C14D1RCTM=other-information"></div>
+<div data-zendesk-anchors="h_01K3JQZ60KZ1FFE56BJ8VE6H33=about-ai-assistant h_01K3JQZWVFBRAQJJSA4JE4G9MS=what-you-can-do h_01K3JQZWVKJC9M6WTMD99BVHF3=where-to-open-it h_01K4A6BP6WXBFRH4BX53CDFSB9=tip h_01K4A7VTJF5KD1MDFTPJD515WE=other-features h_01KC3F9H3IYBC7E8F0A1B2C3D4=conversation-history h_01K3JQZWVTFZH26J2C14D1RCTM=other-information" />

@@ -1,26 +1,30 @@
 ---
-title: "Mixpanel integration with AppsFlyer"
-excerpt: "Learn how to automatically share data from AppsFlyer to Mixpanel, a product analytics platform."
+title: Mixpanel integration with AppsFlyer
+excerpt: >-
+  Learn how to automatically share data from AppsFlyer to Mixpanel, a product
+  analytics platform.
+metadata:
+  keywords:
+    - Attribution
+    - Mixpanel
+    - SDK
+    - integrated partner
+    - Advertisers
+    - Ad Networks
+    - facebook mixpabel
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 207447103
-  url: https://support.appsflyer.com/hc/en-us/articles/207447103-Mixpanel-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: 3rd-party platforms
-  section_id: 6551199962257
-  position: 20
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [Attribution, Mixpanel, SDK, integrated partner, Advertisers, Ad Networks, facebook mixpabel, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2015-12-24T11:33:01Z'
   edited_at: '2026-06-16T11:45:26Z'
+  id: 207447103
+  locale: en-us
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207447103-Mixpanel-integration-with-AppsFlyer
 ---
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mixpanel.png)
 

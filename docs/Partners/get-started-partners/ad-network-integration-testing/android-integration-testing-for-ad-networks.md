@@ -1,26 +1,24 @@
 ---
-title: "Android integration testing for ad networks"
-excerpt: "Test your AppsFlyer Android integration using the AppsFlyer Partner Integrations app to trigger postbacks."
+title: Android integration testing for ad networks
+excerpt: >-
+  Test your AppsFlyer Android integration using the AppsFlyer Partner
+  Integrations app to trigger postbacks.
+metadata:
+  keywords:
+    - Ad Networks
+    - Partners
+    - Mobile Attribution
 x-zendesk:
-  id: 4412945443857
-  url: https://support.appsflyer.com/hc/en-us/articles/4412945443857-Android-integration-testing-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Ad network integration testing
-  section_id: 6551070667537
-  position: 13
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Mobile Attribution, Ad Networks]
-  labels: [Ad Networks, Partners]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-12-06T10:35:58Z'
   edited_at: '2024-01-04T10:46:04Z'
+  id: 4412945443857
+  locale: en-us
+  section: Ad network integration testing
+  section_id: 6551070667537
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4412945443857-Android-integration-testing-for-ad-networks
 ---
 ## Android integration testing
 

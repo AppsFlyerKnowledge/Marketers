@@ -1,26 +1,24 @@
 ---
-title: "Google Play Games on PC integration with AppsFlyer"
-excerpt: "Integrate your Google Play Games on PC/Android game or app with AppsFlyer to measure the performance of campaigns marketing these apps."
+title: Google Play Games on PC integration with AppsFlyer
+excerpt: >-
+  Integrate your Google Play Games on PC/Android game or app with AppsFlyer to
+  measure the performance of campaigns marketing these apps.
+metadata:
+  keywords:
+    - Marketers
+    - cross-platform
+    - PC & Console Attribution
 x-zendesk:
-  id: 18315431772817
-  url: https://support.appsflyer.com/hc/en-us/articles/18315431772817-Google-Play-Games-on-PC-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Promoting Desktop apps
-  section_id: 15329004312593
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roi-tamir, Marketers, PC & Console Attribution]
-  labels: [Marketers, cross-platform, Loc In Prog]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-09-05T13:06:17Z'
   edited_at: '2024-08-29T15:14:48Z'
+  id: 18315431772817
+  locale: en-us
+  section: Promoting Desktop apps
+  section_id: 15329004312593
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/18315431772817-Google-Play-Games-on-PC-integration-with-AppsFlyer
 ---
 ## About Google Play Games for PC attribution
 

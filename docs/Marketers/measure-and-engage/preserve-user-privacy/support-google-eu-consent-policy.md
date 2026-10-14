@@ -1,26 +1,25 @@
 ---
-title: "Support Google EU consent policy"
-excerpt: "AppsFlyer is helping marketers comply with the Digital Markets Act (DMA) and improve the value of their ads in Google. Find answers to frequently asked questions about compliance with the DMA and optimizing ad value."
+title: Support Google EU consent policy
+excerpt: >-
+  AppsFlyer is helping marketers comply with the Digital Markets Act (DMA) and
+  improve the value of their ads in Google. Find answers to frequently asked
+  questions about compliance with the DMA and optimizing ad value.
+metadata:
+  keywords:
+    - Agencies
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 22310731147153
-  url: https://support.appsflyer.com/hc/en-us/articles/22310731147153-Support-Google-EU-consent-policy
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Preserve user privacy
-  section_id: 6551440878097
-  position: 0
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution, Agencies]
-  labels: [Agencies, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-02-07T07:28:17Z'
   edited_at: '2026-08-14T10:58:57Z'
+  id: 22310731147153
+  locale: en-us
+  section: Preserve user privacy
+  section_id: 6551440878097
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/22310731147153-Support-Google-EU-consent-policy
 ---
 ## Overview
 

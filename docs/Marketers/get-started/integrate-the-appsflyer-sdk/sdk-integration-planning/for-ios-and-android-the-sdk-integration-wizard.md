@@ -1,26 +1,21 @@
 ---
-title: "For iOS and Android: The SDK integration wizard"
-excerpt: "Create and test your SDK integration code automatically."
+title: 'For iOS and Android: The SDK integration wizard'
+excerpt: Create and test your SDK integration code automatically.
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 24073235369617
-  url: https://support.appsflyer.com/hc/en-us/articles/24073235369617-For-iOS-and-Android-The-SDK-integration-wizard
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: SDK integration planning
-  section_id: 6551182964369
-  position: 3
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2024-04-10T12:17:00Z'
   edited_at: '2026-08-13T12:48:39Z'
+  id: 24073235369617
+  locale: en-us
+  section: SDK integration planning
+  section_id: 6551182964369
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/24073235369617-For-iOS-and-Android-The-SDK-integration-wizard
 ---
 ## About the SDK integration wizard
 

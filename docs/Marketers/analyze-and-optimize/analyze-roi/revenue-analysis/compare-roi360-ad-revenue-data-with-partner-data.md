@@ -1,27 +1,25 @@
 ---
-title: "Compare ROI360 ad revenue data with partner data"
-excerpt: "Compare AppsFlyer ROI360 ad revenue data with mediation and user acquisition partner data."
+title: Compare ROI360 ad revenue data with partner data
+excerpt: >-
+  Compare AppsFlyer ROI360 ad revenue data with mediation and user acquisition
+  partner data.
+metadata:
+  keywords:
+    - ad revenue
+    - Marketers
+    - ROI360
 table_of_contents: false
 x-zendesk:
-  id: 19287636823953
-  url: https://support.appsflyer.com/hc/en-us/articles/19287636823953-Compare-ROI360-ad-revenue-data-with-partner-data
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Revenue analysis
-  section_id: 6551069075089
-  position: 6
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-michael-talapov, Marketers, ROI360]
-  labels: [ad revenue, Marketers, ROI360]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-10-11T17:40:51Z'
   edited_at: '2024-12-10T09:48:46Z'
+  id: 19287636823953
+  locale: en-us
+  section: Revenue analysis
+  section_id: 6551069075089
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/19287636823953-Compare-ROI360-ad-revenue-data-with-partner-data
 ---
 Data needs to be received and processed before it becomes available in dashboards and reports. The time it takes for data to become available depends on the ROI360 package you have, as well as partner integration type, data freshness, and report type.
 

@@ -1,26 +1,26 @@
 ---
-title: "Why is my app still pending?"
-excerpt: "Follow the status of apps pending publishing to app stores from the AppsFlyer dashboard."
+title: Why is my app still pending?
+excerpt: >-
+  Follow the status of apps pending publishing to app stores from the AppsFlyer
+  dashboard.
+metadata:
+  keywords:
+    - Google Play
+    - App Store
+    - Advertisers
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 360001533885
-  url: https://support.appsflyer.com/hc/en-us/articles/360001533885-Why-is-my-app-still-pending
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Manage your apps
-  section_id: 6551015977105
-  position: 6
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials]
-  labels: [Google Play, App Store, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-10-14T07:22:04Z'
   edited_at: '2024-01-11T12:45:23Z'
+  id: 360001533885
+  locale: en-us
+  section: Manage your apps
+  section_id: 6551015977105
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360001533885-Why-is-my-app-still-pending
 ---
 When you [add your new app](/docs/adding-an-app-to-appsflyer) to the AppsFlyer dashboard, you first choose whether the app is pending or already in the market.
 

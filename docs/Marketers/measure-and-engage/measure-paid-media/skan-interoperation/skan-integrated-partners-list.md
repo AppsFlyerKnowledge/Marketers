@@ -1,26 +1,24 @@
 ---
-title: "SKAN integrated partners list"
-excerpt: "Lists of ad network partners having SKAN integration with AppsFlyer, Ad network Apple SKAdNewtork IDs."
+title: SKAN integrated partners list
+excerpt: >-
+  Lists of ad network partners having SKAN integration with AppsFlyer, Ad
+  network Apple SKAdNewtork IDs.
+metadata:
+  keywords:
+    - Advertisers
+    - Marketers
+    - SKAdNetwork (SKAN)
 x-zendesk:
-  id: 360012640377
-  url: https://support.appsflyer.com/hc/en-us/articles/360012640377-SKAN-integrated-partners-list
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: SKAN interoperation
-  section_id: 6552115163153
-  position: 0
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
-  labels: [Advertisers, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-09-01T20:45:57Z'
   edited_at: '2026-04-28T09:55:09Z'
+  id: 360012640377
+  locale: en-us
+  section: SKAN interoperation
+  section_id: 6552115163153
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360012640377-SKAN-integrated-partners-list
 ---
 ## AppsFlyer SKAN partners
 

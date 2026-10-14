@@ -1,26 +1,30 @@
 ---
-title: "iTunes App Analytics integration with AppsFlyer"
-excerpt: "View attribution data in iTunes Connect by integrating iTunes App Analytics with AppsFlyer."
+title: iTunes App Analytics integration with AppsFlyer
+excerpt: >-
+  View attribution data in iTunes Connect by integrating iTunes App Analytics
+  with AppsFlyer.
+metadata:
+  keywords:
+    - iTunes
+    - Analytics
+    - App Store
+    - Integrated
+    - integrated partner
+    - Advertisers
+    - Ad Networks
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 207040606
-  url: https://support.appsflyer.com/hc/en-us/articles/207040606-iTunes-App-Analytics-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: 3rd-party platforms
-  section_id: 6551199962257
-  position: 13
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [iTunes, Analytics, App Store, Integrated, integrated partner, Advertisers, Ad Networks, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2015-12-24T11:31:49Z'
   edited_at: '2023-11-30T09:31:14Z'
+  id: 207040606
+  locale: en-us
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207040606-iTunes-App-Analytics-integration-with-AppsFlyer
 ---
 ## Enabling the integration
 

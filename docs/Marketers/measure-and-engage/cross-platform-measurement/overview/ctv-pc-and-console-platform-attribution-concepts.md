@@ -1,26 +1,28 @@
 ---
-title: "CTV, PC, and console platform attribution concepts"
-excerpt: "Learn about how attribution works for CTV, PC, and console platforms to allow AppsFlyer to receive attribution and event data for your campaigns on these cross-platform devices."
+title: CTV, PC, and console platform attribution concepts
+excerpt: >-
+  Learn about how attribution works for CTV, PC, and console platforms to allow
+  AppsFlyer to receive attribution and event data for your campaigns on these
+  cross-platform devices.
+metadata:
+  keywords:
+    - Attribution
+    - Advertisers
+    - Developers
+    - CTV
+    - Marketers
+    - CTV Attribution
 x-zendesk:
-  id: 4404083608849
-  url: https://support.appsflyer.com/hc/en-us/articles/4404083608849-CTV-PC-and-console-platform-attribution-concepts
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Overview
-  section_id: 15323084579345
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roi-tamir, Marketers, CTV Attribution]
-  labels: [Attribution, Advertisers, Developers, CTV, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-07-15T11:30:45Z'
   edited_at: '2026-10-14T12:13:28Z'
+  id: 4404083608849
+  locale: en-us
+  section: Overview
+  section_id: 15323084579345
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4404083608849-CTV-PC-and-console-platform-attribution-concepts
 ---
 ![Diagram of AppsFlyer's cross-platform attribution solution for CTV, PC, and console](https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png)
 

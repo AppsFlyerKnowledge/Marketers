@@ -1,18 +1,16 @@
 ---
-title: "Google Ads"
-excerpt: "Attribute Google Ads campaigns and work with Google Marketing Partners"
+title: Google Ads
+excerpt: Attribute Google Ads campaigns and work with Google Marketing Partners
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551205645457
-  url: https://support.appsflyer.com/hc/en-us/sections/6551205645457-Google-Ads
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550990672401
-  position: 7
-  sorting: manual
   created_at: '2022-06-02T11:33:05Z'
+  id: 6551205645457
+  locale: en-us
+  parent_section_id: 6550990672401
+  type: section
+  url: https://support.appsflyer.com/hc/en-us/sections/6551205645457-Google-Ads
 ---
 Attribute Google Ads campaigns and work with Google Marketing Partners
 

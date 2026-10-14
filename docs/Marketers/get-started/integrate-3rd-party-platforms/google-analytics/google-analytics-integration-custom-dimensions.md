@@ -1,26 +1,23 @@
 ---
-title: "Google Analytics integration—Custom dimensions"
-excerpt: "Set up the integration with Google Analytics using custom dimensions."
+title: Google Analytics integration—Custom dimensions
+excerpt: Set up the integration with Google Analytics using custom dimensions.
+metadata:
+  keywords:
+    - Analytics
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 4413033740817
-  url: https://support.appsflyer.com/hc/en-us/articles/4413033740817-Google-Analytics-integration-Custom-dimensions
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Google Analytics
-  section_id: 6551226043793
-  position: 2
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Analytics, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-12-07T13:34:54Z'
   edited_at: '2026-08-14T16:22:39Z'
+  id: 4413033740817
+  locale: en-us
+  section: Google Analytics
+  section_id: 6551226043793
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4413033740817-Google-Analytics-integration-Custom-dimensions
 ---
 ## Custom dimensions on Google Analytics
 

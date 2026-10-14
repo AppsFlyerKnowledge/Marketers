@@ -1,25 +1,22 @@
 ---
-title: "SKAN raw data reports"
+title: SKAN raw data reports
+metadata:
+  keywords:
+    - Advertisers
+    - Premium Feature
+    - Marketers
+    - SKAdNetwork (SKAN)
 x-zendesk:
-  id: 360014261518
-  url: https://support.appsflyer.com/hc/en-us/articles/360014261518-SKAN-raw-data-reports
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: SKAN solution
-  section_id: 6552135379985
-  position: 5
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
-  labels: [Advertisers, Premium Feature, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-10-08T20:54:55Z'
   edited_at: '2024-12-05T17:23:46Z'
+  id: 360014261518
+  locale: en-us
+  section: SKAN solution
+  section_id: 6552135379985
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360014261518-SKAN-raw-data-reports
 ---
 **At a glance:** SKAN raw data reports contain row-level data generated after translating and decoding postbacks received by AppsFlyer from iOS, as well as raw SKAN postbacks. Data is available via [Data Locker](/docs/data-locker-for-marketers) and [Push API](/docs/push-api-streaming-raw-data). If your subscription plan includes raw data, there is no need for a Data Locker subscription.
 

@@ -1,26 +1,25 @@
 ---
-title: "Closed Beta: Protect360 Explore insights with Val anti-fraud assistant"
-excerpt: "Val is a preemptive anti-fraud assistant in Protect360 that provides weekly insights to help highlight trends, recommend actions, and improve fraud protection. By surfacing actionable intelligence, Val transforms fraud detection from reactive to proactive."
+title: 'Closed Beta: Protect360 Explore insights with Val anti-fraud assistant'
+excerpt: >-
+  Val is a preemptive anti-fraud assistant in Protect360 that provides weekly
+  insights to help highlight trends, recommend actions, and improve fraud
+  protection. By surfacing actionable intelligence, Val transforms fraud
+  detection from reactive to proactive.
+metadata:
+  keywords:
+    - Marketers
+    - Protect360
 x-zendesk:
-  id: 36467082193553
-  url: https://support.appsflyer.com/hc/en-us/articles/36467082193553-Closed-Beta-Protect360-Explore-insights-with-Val-anti-fraud-assistant
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Protect your traffic
-  section_id: 6551015912465
-  position: 0
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-yanai, Marketers, Protect360]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2025-06-23T14:26:18Z'
   edited_at: '2025-07-28T11:12:52Z'
+  id: 36467082193553
+  locale: en-us
+  section: Protect your traffic
+  section_id: 6551015912465
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/36467082193553-Closed-Beta-Protect360-Explore-insights-with-Val-anti-fraud-assistant
 ---
 ## About Val anti-fraud assistant
 

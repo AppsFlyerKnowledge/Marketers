@@ -1,26 +1,24 @@
 ---
-title: "Custom dimensions"
-excerpt: "Define your own dimensions and use them to group and view data in the Overview dashboard."
+title: Custom dimensions
+excerpt: >-
+  Define your own dimensions and use them to group and view data in the Overview
+  dashboard.
+metadata:
+  keywords:
+    - dashboard
+    - Marketers
+    - Marketing Analytics
 x-zendesk:
-  id: 15920604187921
-  url: https://support.appsflyer.com/hc/en-us/articles/15920604187921-Custom-dimensions
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Dashboards
-  section_id: 6550925337873
-  position: 8
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
-  labels: [dashboard, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-06-06T09:28:20Z'
   edited_at: '2025-01-01T11:17:18Z'
+  id: 15920604187921
+  locale: en-us
+  section: Dashboards
+  section_id: 6550925337873
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/15920604187921-Custom-dimensions
 ---
 ![](https://fast.wistia.com/embed/medias/tvcdofnwjo/swatch)
 

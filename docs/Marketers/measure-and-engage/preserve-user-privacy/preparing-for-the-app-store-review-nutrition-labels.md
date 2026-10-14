@@ -1,26 +1,32 @@
 ---
-title: "Preparing for the App Store review—nutrition labels"
-excerpt: "Starting iOS 14 A pp developers must provide the App Store information related to their Privacy Practices when they submit an app. The App Store publishes the practices in the format of a nutrition label."
+title: Preparing for the App Store review—nutrition labels
+excerpt: >-
+  Starting iOS 14 A pp developers must provide the App Store information related
+  to their Privacy Practices when they submit an app. The App Store publishes
+  the practices in the format of a nutrition label.
+metadata:
+  keywords:
+    - iOS
+    - iTunes
+    - Apple
+    - IDFA
+    - Guidelines
+    - IFA
+    - Ad Tracking
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 207032086
-  url: https://support.appsflyer.com/hc/en-us/articles/207032086-Preparing-for-the-App-Store-review-nutrition-labels
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Preserve user privacy
-  section_id: 6551440878097
-  position: 5
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [iOS, iTunes, Apple, IDFA, Guidelines, IFA, Ad Tracking, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2014-04-12T13:28:26Z'
   edited_at: '2023-11-02T10:49:58Z'
+  id: 207032086
+  locale: en-us
+  section: Preserve user privacy
+  section_id: 6551440878097
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207032086-Preparing-for-the-App-Store-review-nutrition-labels
 ---
 **A word from our lawyers:***Nothing stated here is legal advice. It is provided for your information and convenience. You should work closely with legal and other professional advisors to determine exactly how Apple policies apply to you.*
 

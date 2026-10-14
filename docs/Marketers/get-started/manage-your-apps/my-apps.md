@@ -1,26 +1,22 @@
 ---
-title: "My Apps"
-excerpt: "View all your apps in AppsFlyer, search and filter them, pin your preferred apps, and perform specific actions for each app."
+title: My Apps
+excerpt: >-
+  View all your apps in AppsFlyer, search and filter them, pin your preferred
+  apps, and perform specific actions for each app.
+metadata:
+  keywords:
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 27438234288529
-  url: https://support.appsflyer.com/hc/en-us/articles/27438234288529-My-Apps
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Manage your apps
-  section_id: 6551015977105
-  position: 0
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials]
-  labels: [Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-08-11T12:26:13Z'
   edited_at: '2024-09-13T06:57:52Z'
+  id: 27438234288529
+  locale: en-us
+  section: Manage your apps
+  section_id: 6551015977105
+  url: https://support.appsflyer.com/hc/en-us/articles/27438234288529-My-Apps
 ---
 ## Overview
 

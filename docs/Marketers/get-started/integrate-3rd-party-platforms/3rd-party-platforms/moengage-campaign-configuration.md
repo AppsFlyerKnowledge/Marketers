@@ -1,26 +1,26 @@
 ---
-title: "MoEngage campaign configuration"
-excerpt: "MoEngage, a third-party customer engagement platform integrated with AppsFlyer, is an agentic customer engagement platform built for the mobile-first world."
+title: MoEngage campaign configuration
+excerpt: >-
+  MoEngage, a third-party customer engagement platform integrated with
+  AppsFlyer, is an agentic customer engagement platform built for the
+  mobile-first world.
+metadata:
+  keywords:
+    - MoEngage
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 115003139643
-  url: https://support.appsflyer.com/hc/en-us/articles/115003139643-MoEngage-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: 3rd-party platforms
-  section_id: 6551199962257
-  position: 21
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [MoEngage, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-06-25T07:50:18Z'
   edited_at: '2026-07-07T09:25:09Z'
+  id: 115003139643
+  locale: en-us
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115003139643-MoEngage-campaign-configuration
 ---
 > 📘 **Important!**
 >

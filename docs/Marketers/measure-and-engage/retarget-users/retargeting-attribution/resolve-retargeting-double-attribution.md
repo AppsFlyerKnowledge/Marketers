@@ -1,26 +1,26 @@
 ---
-title: "Resolve retargeting double attribution"
-excerpt: "To evaluate performance during the retargeting campaign's re-engagement window, in-app events and sessions are double-attributed to the user acquisition (UA) and retargeting media sources."
+title: Resolve retargeting double attribution
+excerpt: >-
+  To evaluate performance during the retargeting campaign's re-engagement
+  window, in-app events and sessions are double-attributed to the user
+  acquisition (UA) and retargeting media sources.
+metadata:
+  keywords:
+    - Advertisers
+    - Ad Networks
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360016371077
-  url: https://support.appsflyer.com/hc/en-us/articles/360016371077-Resolve-retargeting-double-attribution
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Retargeting attribution
-  section_id: 6551326229265
-  position: 1
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-moran-davida, Marketers, Mobile Attribution, Ad Networks]
-  labels: [Advertisers, Ad Networks, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-12-13T07:35:18Z'
   edited_at: '2025-06-03T07:43:50Z'
+  id: 360016371077
+  locale: en-us
+  section: Retargeting attribution
+  section_id: 6551326229265
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360016371077-Resolve-retargeting-double-attribution
 ---
 ![](https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png)
 

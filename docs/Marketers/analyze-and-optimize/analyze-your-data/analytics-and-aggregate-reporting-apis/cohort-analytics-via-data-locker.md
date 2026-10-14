@@ -1,26 +1,28 @@
 ---
-title: "Cohort analytics via Data Locker"
-excerpt: "Cohort analytics in Data Locker contains aggregated data of all elements in the advertising hierarchy. Reports contain data of users attributing in the previous 365 days. This report is available to advertisers who have raw data or Cohort API, or both as part of their subscription. It means that a Data Locker subscription isn't required for this report."
+title: Cohort analytics via Data Locker
+excerpt: >-
+  Cohort analytics in Data Locker contains aggregated data of all elements in
+  the advertising hierarchy. Reports contain data of users attributing in the
+  previous 365 days. This report is available to advertisers who have raw data
+  or Cohort API, or both as part of their subscription. It means that a Data
+  Locker subscription isn't required for this report.
+metadata:
+  keywords:
+    - Advertisers
+    - Premium Feature
+    - Marketers
+    - Marketing Analytics
 x-zendesk:
-  id: 4408945472529
-  url: https://support.appsflyer.com/hc/en-us/articles/4408945472529-Cohort-analytics-via-Data-Locker
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Analytics and aggregate reporting/APIs
-  section_id: 6550976670225
-  position: 2
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
-  labels: [Advertisers, Premium Feature, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-10-14T08:46:00Z'
   edited_at: '2025-03-10T14:46:25Z'
+  id: 4408945472529
+  locale: en-us
+  section: Analytics and aggregate reporting/APIs
+  section_id: 6550976670225
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4408945472529-Cohort-analytics-via-Data-Locker
 ---
 ## Cohort analytics in Data Locker
 

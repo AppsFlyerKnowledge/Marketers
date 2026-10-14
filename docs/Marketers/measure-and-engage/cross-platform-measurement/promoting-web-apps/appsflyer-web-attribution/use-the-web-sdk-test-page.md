@@ -1,26 +1,25 @@
 ---
-title: "Use the Web SDK Test page"
-excerpt: "Use the Web SDK Test page to validate the Web SDK installation and event recording in real time. Run it when you first integrate the SDK and whenever you add or change an event."
+title: Use the Web SDK Test page
+excerpt: >-
+  Use the Web SDK Test page to validate the Web SDK installation and event
+  recording in real time. Run it when you first integrate the SDK and whenever
+  you add or change an event.
+metadata:
+  keywords:
+    - SDK Test
+    - Web Attribution
+    - Web Attribution SDK
 x-zendesk:
-  id: 50118956978577
-  url: https://support.appsflyer.com/hc/en-us/articles/50118956978577-Use-the-Web-SDK-Test-page
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: AppsFlyer Web Attribution
-  section_id: 43560690387729
-  position: 5
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: []
-  labels: [SDK Test, Web Attribution, Web Attribution SDK]
-  promoted: false
-  comments_disabled: true
   created_at: '2026-08-23T16:04:12Z'
   edited_at: '2026-08-24T06:28:48Z'
+  id: 50118956978577
+  locale: en-us
+  section: AppsFlyer Web Attribution
+  section_id: 43560690387729
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/50118956978577-Use-the-Web-SDK-Test-page
 ---
 ## Overview
 

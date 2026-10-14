@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: Supporting the new Amazon DSP EU consent policy"
+title: 'Bulletin: Supporting the new Amazon DSP EU consent policy'
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 45664244736529
-  url: https://support.appsflyer.com/hc/en-us/articles/45664244736529-Bulletin-Supporting-the-new-Amazon-DSP-EU-consent-policy
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: []
-  promoted: false
-  comments_disabled: false
   created_at: '2026-04-12T09:11:36Z'
   edited_at: '2026-05-12T16:05:37Z'
+  id: 45664244736529
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/45664244736529-Bulletin-Supporting-the-new-Amazon-DSP-EU-consent-policy
 ---
 | Section | Details |
 | --- | --- |

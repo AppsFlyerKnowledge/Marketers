@@ -1,26 +1,23 @@
 ---
-title: "Migrate from Adjust to AppsFlyer"
-excerpt: "Plan your migration from Adjust to AppsFlyer. Understand how to avoid double charges, data duplication, and data loss during the migration period."
+title: Migrate from Adjust to AppsFlyer
+excerpt: >-
+  Plan your migration from Adjust to AppsFlyer. Understand how to avoid double
+  charges, data duplication, and data loss during the migration period.
+metadata:
+  keywords:
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 30563700129297
-  url: https://support.appsflyer.com/hc/en-us/articles/30563700129297-Migrate-from-Adjust-to-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Marketer onboarding
-  section_id: 6550866490129
-  position: 2
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-12-02T10:01:48Z'
   edited_at: '2024-12-05T10:13:18Z'
+  id: 30563700129297
+  locale: en-us
+  section: Marketer onboarding
+  section_id: 6550866490129
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/30563700129297-Migrate-from-Adjust-to-AppsFlyer
 ---
 ![](https://files.readme.io/cc012894dd05255c0b7fa448b1c95d925d556ddb43dc461086bb71e9279da90d-30633481029137.png)
 

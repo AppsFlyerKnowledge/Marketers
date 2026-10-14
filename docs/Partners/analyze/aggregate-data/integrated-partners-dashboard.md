@@ -1,26 +1,26 @@
 ---
-title: "Integrated partners dashboard"
-excerpt: "Integrated partners use the dashboard and reports to view and analyze campaign traffic attributed to you."
+title: Integrated partners dashboard
+excerpt: >-
+  Integrated partners use the dashboard and reports to view and analyze campaign
+  traffic attributed to you.
+metadata:
+  keywords:
+    - partner login
+    - partner dashboard
+    - Ad Networks
+    - Partners
+    - Mobile Attribution
 x-zendesk:
-  id: 212955423
-  url: https://support.appsflyer.com/hc/en-us/articles/212955423-Integrated-partners-dashboard
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Aggregate data
-  section_id: 6551715006353
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Mobile Attribution, Ad Networks]
-  labels: [partner login, partner dashboard, Ad Networks, Partners]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-08-08T08:11:38Z'
   edited_at: '2023-10-11T12:54:23Z'
+  id: 212955423
+  locale: en-us
+  section: Aggregate data
+  section_id: 6551715006353
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/212955423-Integrated-partners-dashboard
 ---
 ## Using the AppsFlyer dashboard
 

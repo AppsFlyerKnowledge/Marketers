@@ -1,26 +1,26 @@
 ---
-title: "Meta Ads—Create web campaigns for website apps"
-excerpt: "Set up a Meta Ads integration for your website app to send web conversion signals to Meta via the Conversions API (CAPI), so Meta can optimize ad targeting and measure campaign performance."
+title: Meta Ads—Create web campaigns for website apps
+excerpt: >-
+  Set up a Meta Ads integration for your website app to send web conversion
+  signals to Meta via the Conversions API (CAPI), so Meta can optimize ad
+  targeting and measure campaign performance.
+metadata:
+  keywords:
+    - Web Attribution
+    - Web Attribution SDK
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 46172666260241
-  url: https://support.appsflyer.com/hc/en-us/articles/46172666260241-Meta-Ads-Create-web-campaigns-for-website-apps
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Meta ads
-  section_id: 6551109855761
-  position: 1
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Web Attribution, Web Attribution SDK, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2026-04-28T14:18:14Z'
   edited_at: '2026-08-30T15:18:44Z'
+  id: 46172666260241
+  locale: en-us
+  section: Meta ads
+  section_id: 6551109855761
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/46172666260241-Meta-Ads-Create-web-campaigns-for-website-apps
 ---
 ## Overview
 

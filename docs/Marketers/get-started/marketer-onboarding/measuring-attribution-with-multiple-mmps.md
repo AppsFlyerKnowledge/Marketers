@@ -1,26 +1,24 @@
 ---
-title: "Measuring attribution with multiple MMPs"
-excerpt: "See which media sources are able to measure attribution when working with multiple MMPs simultaneously so you can compare attribution results between AppsFlyer and your other MMP."
+title: Measuring attribution with multiple MMPs
+excerpt: >-
+  See which media sources are able to measure attribution when working with
+  multiple MMPs simultaneously so you can compare attribution results between
+  AppsFlyer and your other MMP.
+metadata:
+  keywords:
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 17316973509393
-  url: https://support.appsflyer.com/hc/en-us/articles/17316973509393-Measuring-attribution-with-multiple-MMPs
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Marketer onboarding
-  section_id: 6550866490129
-  position: 5
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-07-27T08:29:19Z'
   edited_at: '2024-03-04T15:00:00Z'
+  id: 17316973509393
+  locale: en-us
+  section: Marketer onboarding
+  section_id: 6550866490129
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/17316973509393-Measuring-attribution-with-multiple-MMPs
 ---
 ## Overview
 

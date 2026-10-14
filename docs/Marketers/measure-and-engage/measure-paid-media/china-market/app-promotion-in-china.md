@@ -1,27 +1,26 @@
 ---
-title: "App promotion in China"
-excerpt: "Promote your app in the Chinese market."
+title: App promotion in China
+excerpt: Promote your app in the Chinese market.
+metadata:
+  keywords:
+    - Advertisers
+    - China
+    - App Promotion
+    - Ad Networks
+    - Marketers
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 115004656946
-  url: https://support.appsflyer.com/hc/en-us/articles/115004656946-App-promotion-in-China
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: China market
-  section_id: 6552042145425
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [Advertisers, China, App Promotion, Ad Networks, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-09-12T07:49:03Z'
   edited_at: '2022-10-31T12:56:12Z'
+  id: 115004656946
+  locale: en-us
+  section: China market
+  section_id: 6552042145425
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115004656946-App-promotion-in-China
 ---
 [**China Internet Report**](https://www.scmp.com/china-internet-report) 2020 presented by SCMP with an overview of the Chinese market
 

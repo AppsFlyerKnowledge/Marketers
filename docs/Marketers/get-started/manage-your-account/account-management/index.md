@@ -1,18 +1,17 @@
 ---
-title: "Account management"
-excerpt: "User management, billing, quotas, and how to get support from AppsFlyer"
+title: Account management
+excerpt: User management, billing, quotas, and how to get support from AppsFlyer
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551191075473
-  url: https://support.appsflyer.com/hc/en-us/sections/6551191075473-Account-management
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6551054625937
-  position: 0
-  sorting: manual
   created_at: '2022-06-02T11:32:24Z'
+  id: 6551191075473
+  locale: en-us
+  parent_section_id: 6551054625937
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551191075473-Account-management
 ---
 User management, billing, quotas, and how to get support from AppsFlyer
 

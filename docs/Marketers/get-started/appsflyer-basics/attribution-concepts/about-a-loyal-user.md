@@ -1,26 +1,26 @@
 ---
-title: "About a loyal user"
-excerpt: "Learn what defines a loyal user in AppsFlyer, and how you can customize it."
+title: About a loyal user
+excerpt: Learn what defines a loyal user in AppsFlyer, and how you can customize it.
+metadata:
+  keywords:
+    - In-App
+    - Loyal
+    - Loyal User
+    - trigger
+    - Advertisers
+    - Agencies
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 207447003
-  url: https://support.appsflyer.com/hc/en-us/articles/207447003-About-a-loyal-user
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Attribution concepts
-  section_id: 6551394235409
-  position: 23
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-moran-davida, Marketers, Mobile Attribution, Agencies]
-  labels: [In-App, Loyal, Loyal User, trigger, Advertisers, Agencies, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2015-12-24T10:15:54Z'
   edited_at: '2025-04-05T12:55:02Z'
+  id: 207447003
+  locale: en-us
+  section: Attribution concepts
+  section_id: 6551394235409
+  url: https://support.appsflyer.com/hc/en-us/articles/207447003-About-a-loyal-user
 ---
 ## What is a loyal user?
 

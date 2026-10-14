@@ -1,26 +1,24 @@
 ---
-title: "OneLink troubleshooting and FAQ"
-excerpt: "Quickly find solutions for testing and debugging OneLink custom link redirection/behavior issues."
+title: OneLink troubleshooting and FAQ
+excerpt: >-
+  Quickly find solutions for testing and debugging OneLink custom link
+  redirection/behavior issues.
+metadata:
+  keywords:
+    - faq
+    - Marketers
+    - OneLink
 x-zendesk:
-  id: 360014821438
-  url: https://support.appsflyer.com/hc/en-us/articles/360014821438-OneLink-troubleshooting-and-FAQ
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Deep linking using OneLink
-  section_id: 6551203111057
-  position: 7
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, OneLink]
-  labels: [faq, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-10-27T11:26:30Z'
   edited_at: '2026-09-14T13:45:26Z'
+  id: 360014821438
+  locale: en-us
+  section: Deep linking using OneLink
+  section_id: 6551203111057
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360014821438-OneLink-troubleshooting-and-FAQ
 ---
 ## OneLink troubleshooting guide
 

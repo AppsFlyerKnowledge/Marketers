@@ -1,26 +1,27 @@
 ---
-title: "Chartboost campaign configuration"
-excerpt: "Chartboost, an AppsFlyer ad network integrated partner, is one of the largest mobile games-only ad platforms to increase revenue. In addition to click-based mobile attribution, Chartboost also offers cost, ad revenue, and view-through attribution, which you can record with AppsFlyer."
+title: Chartboost campaign configuration
+excerpt: >-
+  Chartboost, an AppsFlyer ad network integrated partner, is one of the largest
+  mobile games-only ad platforms to increase revenue. In addition to click-based
+  mobile attribution, Chartboost also offers cost, ad revenue, and view-through
+  attribution, which you can record with AppsFlyer.
+metadata:
+  keywords:
+    - Chartboost
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 209731553
-  url: https://support.appsflyer.com/hc/en-us/articles/209731553-Chartboost-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (A-F)
-  section_id: 6551990971793
-  position: 17
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Chartboost, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-03-28T08:01:01Z'
   edited_at: '2026-09-09T12:35:22Z'
+  id: 209731553
+  locale: en-us
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/209731553-Chartboost-campaign-configuration
 ---
 > 📘 **Note**
 >

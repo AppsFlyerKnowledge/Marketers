@@ -1,26 +1,25 @@
 ---
-title: "Data availability windows"
-excerpt: "Data availability depends on the report type and the defined availability window."
+title: Data availability windows
+excerpt: >-
+  Data availability depends on the report type and the defined availability
+  window.
+metadata:
+  keywords:
+    - Advertisers
+    - Premium Feature
+    - Marketers
+    - Raw Reports
 x-zendesk:
-  id: 4415473374865
-  url: https://support.appsflyer.com/hc/en-us/articles/4415473374865-Data-availability-windows
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Raw data reporting/APIs
-  section_id: 6550930711057
-  position: 2
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-rona-einat, Marketers, Raw Reports]
-  labels: [Advertisers, Premium Feature, Marketers, Loc In Prog]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-01-04T03:33:13Z'
   edited_at: '2026-07-15T08:18:16Z'
+  id: 4415473374865
+  locale: en-us
+  section: Raw data reporting/APIs
+  section_id: 6550930711057
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4415473374865-Data-availability-windows
 ---
 ## Data availability windows
 

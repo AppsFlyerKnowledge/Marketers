@@ -1,26 +1,28 @@
 ---
-title: "Dashboard - Cost and ad Revenue Status"
-excerpt: "Advertisers and agencies can check the status of cost and ad revenue integrations."
+title: Dashboard - Cost and ad Revenue Status
+excerpt: >-
+  Advertisers and agencies can check the status of cost and ad revenue
+  integrations.
+metadata:
+  keywords:
+    - ad revenue
+    - cost
+    - Advertisers
+    - Agencies
+    - Xpend
+    - Marketers
+    - ROI360
 x-zendesk:
-  id: 360016789458
-  url: https://support.appsflyer.com/hc/en-us/articles/360016789458-Dashboard-Cost-and-ad-Revenue-Status
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Cost aggregation
-  section_id: 6551029483281
-  position: 6
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-michael-talapov, Marketers, Agencies, ROI360]
-  labels: [ad revenue, cost, Advertisers, Agencies, Xpend, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-12-23T12:52:57Z'
   edited_at: '2026-08-13T16:29:42Z'
+  id: 360016789458
+  locale: en-us
+  section: Cost aggregation
+  section_id: 6551029483281
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360016789458-Dashboard-Cost-and-ad-Revenue-Status
 ---
 ## Cost and Ad Revenue integration status
 

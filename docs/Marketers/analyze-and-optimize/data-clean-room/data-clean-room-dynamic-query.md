@@ -1,26 +1,25 @@
 ---
-title: "Data Clean Room—Dynamic Query"
-excerpt: "Run custom DCR queries in real time on your attribution data in the AppsFlyer system, your custom sources, or a combination. Preview the results of your queries or download the full results."
+title: Data Clean Room—Dynamic Query
+excerpt: >-
+  Run custom DCR queries in real time on your attribution data in the AppsFlyer
+  system, your custom sources, or a combination. Preview the results of your
+  queries or download the full results.
+metadata:
+  keywords:
+    - Premium
+    - Marketers
+    - Data Clean Room
 x-zendesk:
-  id: 18704719821329
-  url: https://support.appsflyer.com/hc/en-us/articles/18704719821329-Data-Clean-Room-Dynamic-Query
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Clean Room
-  section_id: 4591191779217
-  position: 10
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-inbar-agassi, Marketers, Data Clean Room]
-  labels: [Premium, Marketers, Loc In Prog]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-09-20T10:05:34Z'
   edited_at: '2024-12-11T09:29:24Z'
+  id: 18704719821329
+  locale: en-us
+  section: Data Clean Room
+  section_id: 4591191779217
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/18704719821329-Data-Clean-Room-Dynamic-Query
 ---
 ## Overview
 

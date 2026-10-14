@@ -1,26 +1,23 @@
 ---
-title: "Android app promotion in China"
-excerpt: "Best practices to promote your Android app in the Chinese market."
+title: Android app promotion in China
+excerpt: Best practices to promote your Android app in the Chinese market.
+metadata:
+  keywords:
+    - Advertisers
+    - Ad Networks
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 115004639203
-  url: https://support.appsflyer.com/hc/en-us/articles/115004639203-Android-app-promotion-in-China
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: China market
-  section_id: 6552042145425
-  position: 2
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [Advertisers, Ad Networks, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-09-12T08:13:46Z'
   edited_at: '2023-02-15T13:15:04Z'
+  id: 115004639203
+  locale: en-us
+  section: China market
+  section_id: 6552042145425
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115004639203-Android-app-promotion-in-China
 ---
 ## Android apps in China
 

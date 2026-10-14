@@ -1,26 +1,25 @@
 ---
-title: "SKAN recommendations"
-excerpt: "Use SKAN recommendations to optimize your conversion value settings and receive more accurate post-install activity measurements ."
+title: SKAN recommendations
+excerpt: >-
+  Use SKAN recommendations to optimize your conversion value settings and
+  receive more accurate post-install activity measurements .
+metadata:
+  keywords:
+    - Marketers
+    - SKAN
+    - SKAdNetwork
+    - SKAdNetwork (SKAN)
 x-zendesk:
-  id: 7078169815057
-  url: https://support.appsflyer.com/hc/en-us/articles/7078169815057-SKAN-recommendations
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: SKAN solution
-  section_id: 6552135379985
-  position: 4
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
-  labels: [Marketers, SKAN, SKAdNetwork]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-06-23T07:56:50Z'
   edited_at: '2024-06-24T07:29:56Z'
+  id: 7078169815057
+  locale: en-us
+  section: SKAN solution
+  section_id: 6552135379985
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/7078169815057-SKAN-recommendations
 ---
 ## Overview
 

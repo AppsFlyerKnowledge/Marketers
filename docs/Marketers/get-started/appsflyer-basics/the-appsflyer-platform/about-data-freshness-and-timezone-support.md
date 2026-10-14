@@ -1,26 +1,32 @@
 ---
-title: "About data freshness and timezone support"
-excerpt: "Data freshness is the period of time between event occurrence and data availability in the platform."
+title: About data freshness and timezone support
+excerpt: >-
+  Data freshness is the period of time between event occurrence and data
+  availability in the platform.
+metadata:
+  keywords:
+    - Reports
+    - Advertisers
+    - Agencies
+    - Ad Networks
+    - timezone
+    - data freshness
+    - data
+    - Developers
+    - Gray
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 360000310629
-  url: https://support.appsflyer.com/hc/en-us/articles/360000310629-About-data-freshness-and-timezone-support
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: The AppsFlyer platform
-  section_id: 6551361489297
-  position: 3
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies, Ad Networks]
-  labels: [Reports, Advertisers, Agencies, Ad Networks, timezone, data freshness, data, Developers, Gray, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-02-19T15:57:01Z'
   edited_at: '2026-09-16T08:20:40Z'
+  id: 360000310629
+  locale: en-us
+  section: The AppsFlyer platform
+  section_id: 6551361489297
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360000310629-About-data-freshness-and-timezone-support
 ---
 **Time zones**
 

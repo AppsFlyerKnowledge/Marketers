@@ -1,25 +1,20 @@
 ---
-title: "Bulletin: Unity Ads cost API integration update"
+title: 'Bulletin: Unity Ads cost API integration update'
+metadata:
+  keywords:
+    - Marketers
+    - ROI360
 x-zendesk:
-  id: 26078530790289
-  url: https://support.appsflyer.com/hc/en-us/articles/26078530790289-Bulletin-Unity-Ads-cost-API-integration-update
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 16
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-maytav-avnat, Marketers, ROI360]
-  labels: [Marketers, Localize, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-06-20T14:43:15Z'
   edited_at: '2024-08-08T08:32:27Z'
+  id: 26078530790289
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/26078530790289-Bulletin-Unity-Ads-cost-API-integration-update
 ---
 | **What's new** | AppsFlyer has an API integration with Unity that allows us to get cost data. The API is being updated soon. Therefore, you need to update your integration to continue getting Unity cost data. |
 | --- | --- |

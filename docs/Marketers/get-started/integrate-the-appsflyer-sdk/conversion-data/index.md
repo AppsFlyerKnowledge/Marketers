@@ -1,18 +1,17 @@
 ---
-title: "Conversion data"
-excerpt: "Conversion data payloads and scenarios for user acquisition and retargeting"
+title: Conversion data
+excerpt: Conversion data payloads and scenarios for user acquisition and retargeting
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551287787537
-  url: https://support.appsflyer.com/hc/en-us/sections/6551287787537-Conversion-data
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6551164458257
-  position: 7
-  sorting: manual
   created_at: '2022-06-02T11:37:15Z'
+  id: 6551287787537
+  locale: en-us
+  parent_section_id: 6551164458257
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551287787537-Conversion-data
 ---
 Conversion data payloads and scenarios for user acquisition and retargeting
 

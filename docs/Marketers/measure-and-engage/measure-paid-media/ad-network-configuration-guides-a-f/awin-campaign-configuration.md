@@ -1,26 +1,24 @@
 ---
-title: "Awin campaign configuration"
-excerpt: "Awin (affiliatewindow_int) is an integrated partner that allows advertisers to run UA and retargeting campaigns. Awin's marketing platform helps connect merchants (advertisers) with affiliates (publishers)."
+title: Awin campaign configuration
+excerpt: >-
+  Awin (affiliatewindow_int) is an integrated partner that allows advertisers to
+  run UA and retargeting campaigns. Awin's marketing platform helps connect
+  merchants (advertisers) with affiliates (publishers).
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 18532554968849
-  url: https://support.appsflyer.com/hc/en-us/articles/18532554968849-Awin-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (A-F)
-  section_id: 6551990971793
-  position: 14
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-09-13T11:50:38Z'
   edited_at: '2026-09-09T12:39:48Z'
+  id: 18532554968849
+  locale: en-us
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/18532554968849-Awin-campaign-configuration
 ---
 ![awin icon.png](https://files.readme.io/2a7f22084586fec820c0bfab7f3a256259c43d37f14d6fed8e8db3d2e9905947-18533392495377.png)
 

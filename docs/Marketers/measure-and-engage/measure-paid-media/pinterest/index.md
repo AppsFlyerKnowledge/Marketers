@@ -1,18 +1,16 @@
 ---
-title: "Pinterest"
-excerpt: "Set up Pinterest and its partners for AppsFlyer attribution"
+title: Pinterest
+excerpt: Set up Pinterest and its partners for AppsFlyer attribution
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551388216337
-  url: https://support.appsflyer.com/hc/en-us/sections/6551388216337-Pinterest
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550990672401
-  position: 11
-  sorting: manual
   created_at: '2022-06-02T11:41:29Z'
+  id: 6551388216337
+  locale: en-us
+  parent_section_id: 6550990672401
+  type: section
+  url: https://support.appsflyer.com/hc/en-us/sections/6551388216337-Pinterest
 ---
 Set up Pinterest and its partners for AppsFlyer attribution
 

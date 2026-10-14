@@ -1,26 +1,26 @@
 ---
-title: "X Ads (formerly Twitter Ads) paid vs. organic installs"
-excerpt: "Learn the difference between organic and paid installs coming through X Ads."
+title: X Ads (formerly Twitter Ads) paid vs. organic installs
+excerpt: Learn the difference between organic and paid installs coming through X Ads.
+metadata:
+  keywords:
+    - Attribution
+    - installs
+    - organic
+    - Twitter Paid
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 207033756
-  url: https://support.appsflyer.com/hc/en-us/articles/207033756-X-Ads-formerly-Twitter-Ads-paid-vs-organic-installs
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: X Ads (formerly Twitter Ads)
-  section_id: 6551370375569
-  position: 3
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Attribution, installs, organic, Twitter Paid, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2014-10-13T16:23:19Z'
   edited_at: '2023-11-30T14:02:53Z'
+  id: 207033756
+  locale: en-us
+  section: X Ads (formerly Twitter Ads)
+  section_id: 6551370375569
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207033756-X-Ads-formerly-Twitter-Ads-paid-vs-organic-installs
 ---
 ## Paid installation
 

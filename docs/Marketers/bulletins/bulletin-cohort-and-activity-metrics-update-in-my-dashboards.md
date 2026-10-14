@@ -1,26 +1,22 @@
 ---
-title: "Bulletin: Cohort and Activity metrics update in My Dashboards"
+title: 'Bulletin: Cohort and Activity metrics update in My Dashboards'
+metadata:
+  keywords:
+    - Partners
+    - Marketers
+    - Marketing Analytics
 table_of_contents: false
 x-zendesk:
-  id: 45887523041425
-  url: https://support.appsflyer.com/hc/en-us/articles/45887523041425-Bulletin-Cohort-and-Activity-metrics-update-in-My-Dashboards
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 0
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-maya-kahane, Marketers, Marketing Analytics]
-  labels: [Partners, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2026-04-19T14:38:57Z'
   edited_at: '2026-10-14T09:45:16Z'
+  id: 45887523041425
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/45887523041425-Bulletin-Cohort-and-Activity-metrics-update-in-My-Dashboards
 ---
 | **What’s new?** | Starting **July 2026**, Cohort and Activity metrics in **My Dashboards** are moving to upgraded data infrastructure designed to support **AI-ready data**. These changes will roll out gradually to clients throughout **July - August 2026**.<br /><br />As part of this gradual rollout, you may notice changes to some metric values, historical data availability, and segmentation options.<br /><br />This update introduces new view types and metrics for Activity data, improves Unique User accuracy in Cohort data, and expands historical data and segmentation options across both Cohort and Activity. |
 | --- | --- |

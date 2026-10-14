@@ -1,26 +1,28 @@
 ---
-title: "Cohort and retention dashboard"
-excerpt: "The Cohort and retention dashboard (also referred to as simply \"Cohort\") groups app users by acquisition date. Perform performance analysis across user life cycles (LTV). Use the dashboard to gain insights as to how campaign differences alter campaign metrics."
+title: Cohort and retention dashboard
+excerpt: >-
+  The Cohort and retention dashboard (also referred to as simply "Cohort")
+  groups app users by acquisition date. Perform performance analysis across user
+  life cycles (LTV). Use the dashboard to gain insights as to how campaign
+  differences alter campaign metrics.
+metadata:
+  keywords:
+    - Cohort
+    - Cohort Report
+    - Advertisers
+    - Marketers
+    - Marketing Analytics
 x-zendesk:
-  id: 207040496
-  url: https://support.appsflyer.com/hc/en-us/articles/207040496-Cohort-and-retention-dashboard
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Dashboards
-  section_id: 6550925337873
-  position: 5
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
-  labels: [Cohort, Cohort Report, Advertisers, Marketers, Loc In Prog]
-  promoted: false
-  comments_disabled: true
   created_at: '2015-12-24T10:20:01Z'
   edited_at: '2026-06-03T07:45:58Z'
+  id: 207040496
+  locale: en-us
+  section: Dashboards
+  section_id: 6550925337873
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207040496-Cohort-and-retention-dashboard
 ---
 [![cohort main (2).png](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)
 

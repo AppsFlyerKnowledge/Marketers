@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: Engagement types"
+title: 'Bulletin: Engagement types'
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 20161875390865
-  url: https://support.appsflyer.com/hc/en-us/articles/20161875390865-Bulletin-Engagement-types
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 28
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-moran-davida, Marketers, Mobile Attribution]
-  labels: [Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-11-15T10:50:04Z'
   edited_at: '2026-08-13T13:34:31Z'
+  id: 20161875390865
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/20161875390865-Bulletin-Engagement-types
 ---
 | Section | Description |
 | --- | --- |

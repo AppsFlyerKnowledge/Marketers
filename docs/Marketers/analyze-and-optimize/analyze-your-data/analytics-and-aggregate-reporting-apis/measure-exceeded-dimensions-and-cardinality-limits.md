@@ -1,26 +1,31 @@
 ---
-title: "Measure exceeded dimensions and cardinality limits"
-excerpt: "Why some aggregate data dimensions display as exceeded and how to prevent reaching cardinality limits."
+title: Measure exceeded dimensions and cardinality limits
+excerpt: >-
+  Why some aggregate data dimensions display as exceeded and how to prevent
+  reaching cardinality limits.
+metadata:
+  keywords:
+    - performance reports
+    - Advertisers
+    - exceeded
+    - reports
+    - faq
+    - Agencies
+    - Exceeded_Events_Limit
+    - Exceeded Events Limit
+    - Marketers
+    - Marketing Analytics
 x-zendesk:
-  id: 115005099063
-  url: https://support.appsflyer.com/hc/en-us/articles/115005099063-Measure-exceeded-dimensions-and-cardinality-limits
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Analytics and aggregate reporting/APIs
-  section_id: 6550976670225
-  position: 20
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics, Agencies]
-  labels: [performance reports, Advertisers, exceeded, reports, faq, Agencies, Exceeded_Events_Limit, Exceeded Events Limit, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-10-08T15:20:55Z'
   edited_at: '2025-04-05T12:54:30Z'
+  id: 115005099063
+  locale: en-us
+  section: Analytics and aggregate reporting/APIs
+  section_id: 6550976670225
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115005099063-Measure-exceeded-dimensions-and-cardinality-limits
 ---
 ## What are exceeded dimensions?
 

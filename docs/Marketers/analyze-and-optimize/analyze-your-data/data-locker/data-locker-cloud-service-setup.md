@@ -1,26 +1,24 @@
 ---
-title: "Data Locker—cloud service setup"
-excerpt: "Set up your cloud service to receive data from Data Locker: GCS, AWS, BigQuery, or Snowflake."
+title: Data Locker—cloud service setup
+excerpt: >-
+  Set up your cloud service to receive data from Data Locker: GCS, AWS,
+  BigQuery, or Snowflake.
+metadata:
+  keywords:
+    - Advertisers
+    - Marketers
+    - Data Locker
 x-zendesk:
-  id: 360017603577
-  url: https://support.appsflyer.com/hc/en-us/articles/360017603577-Data-Locker-cloud-service-setup
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Locker
-  section_id: 6550945728657
-  position: 4
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-rona-einat, Marketers, Data Locker]
-  labels: [Advertisers, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-02-10T17:35:25Z'
   edited_at: '2026-07-31T09:41:02Z'
+  id: 360017603577
+  locale: en-us
+  section: Data Locker
+  section_id: 6550945728657
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360017603577-Data-Locker-cloud-service-setup
 ---
 Data Locker enables you to stream data to your selected and owned storage solution, whether it is a bucket or a data warehouse. Set up your cloud service using one of the following procedures.
 

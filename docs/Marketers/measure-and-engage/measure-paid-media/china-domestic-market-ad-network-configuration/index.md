@@ -1,18 +1,17 @@
 ---
-title: "China domestic market ad network configuration"
-excerpt: "Set up selected domestic China ad networks for AppsFlyer attribution"
+title: China domestic market ad network configuration
+excerpt: Set up selected domestic China ad networks for AppsFlyer attribution
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6552066355601
-  url: https://support.appsflyer.com/hc/en-us/sections/6552066355601-China-domestic-market-ad-network-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550990672401
-  position: 19
-  sorting: title
   created_at: '2022-06-02T12:07:20Z'
+  id: 6552066355601
+  locale: en-us
+  parent_section_id: 6550990672401
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6552066355601-China-domestic-market-ad-network-configuration
 ---
 <Cards>
   <Card title="360 Ads campaign configuration" href="/docs/360-ads-campaign-configuration" icon="fa-solid fa-bullhorn">

@@ -1,26 +1,25 @@
 ---
-title: "Measure uninstalls"
-excerpt: "Measure the uninstall rate for your app and determine which sources (media sources, campaigns, ad creatives, and geo) bring quality users."
+title: Measure uninstalls
+excerpt: >-
+  Measure the uninstall rate for your app and determine which sources (media
+  sources, campaigns, ad creatives, and geo) bring quality users.
+metadata:
+  keywords:
+    - Advertisers
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 4408933557137
-  url: https://support.appsflyer.com/hc/en-us/articles/4408933557137-Measure-uninstalls
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Attribution scenarios
-  section_id: 6551328497041
-  position: 4
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-alina-koifman, Marketers, Mobile Attribution]
-  labels: [Advertisers, Developers, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-10-14T08:03:47Z'
   edited_at: '2026-08-14T15:06:29Z'
+  id: 4408933557137
+  locale: en-us
+  section: Attribution scenarios
+  section_id: 6551328497041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4408933557137-Measure-uninstalls
 ---
 ## Overview
 

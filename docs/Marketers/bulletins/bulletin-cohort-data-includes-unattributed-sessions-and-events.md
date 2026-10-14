@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: Cohort data includes unattributed sessions and events"
+title: 'Bulletin: Cohort data includes unattributed sessions and events'
+metadata:
+  keywords:
+    - Marketers
+    - Marketing Analytics
 table_of_contents: false
 x-zendesk:
-  id: 22973553145361
-  url: https://support.appsflyer.com/hc/en-us/articles/22973553145361-Bulletin-Cohort-data-includes-unattributed-sessions-and-events
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 22
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 27439133508369
-  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
-  labels: [Marketers, Loc In Prog, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-02-29T12:49:36Z'
   edited_at: '2024-06-03T14:16:24Z'
+  id: 22973553145361
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/22973553145361-Bulletin-Cohort-data-includes-unattributed-sessions-and-events
 ---
 | **What's new** | [Unattributed sessions and events](/docs/measure-reinstalls#inapp-events-and-how-they-are-attributed) appear in the Cohort dashboard and reports. |
 | --- | --- |

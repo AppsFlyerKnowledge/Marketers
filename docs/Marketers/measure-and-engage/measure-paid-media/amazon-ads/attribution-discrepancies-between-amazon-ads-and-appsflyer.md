@@ -1,26 +1,23 @@
 ---
-title: "Attribution discrepancies between Amazon Ads and AppsFlyer"
-excerpt: "Learn about the differences in attribution models between Amazon Ads and AppsFlyer."
+title: Attribution discrepancies between Amazon Ads and AppsFlyer
+excerpt: >-
+  Learn about the differences in attribution models between Amazon Ads and
+  AppsFlyer.
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 28461159218449
-  url: https://support.appsflyer.com/hc/en-us/articles/28461159218449-Attribution-discrepancies-between-Amazon-Ads-and-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Amazon Ads
-  section_id: 28703975923729
-  position: 1
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-09-18T04:28:03Z'
   edited_at: '2026-08-27T06:51:52Z'
+  id: 28461159218449
+  locale: en-us
+  section: Amazon Ads
+  section_id: 28703975923729
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/28461159218449-Attribution-discrepancies-between-Amazon-Ads-and-AppsFlyer
 ---
 ## Overview
 

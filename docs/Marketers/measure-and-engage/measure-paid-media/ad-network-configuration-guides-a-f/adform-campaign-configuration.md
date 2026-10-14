@@ -1,26 +1,28 @@
 ---
-title: "Adform campaign configuration"
-excerpt: "Adform, an AppsFlyer ad network integrated partner, provides open and transparent technologies that connect advertisers and agencies with publishers to enable digital advertising across all devices. In addition to click-based mobile attribution, Adform also offers view-through attribution, which you can record with AppsFlyer."
+title: Adform campaign configuration
+excerpt: >-
+  Adform, an AppsFlyer ad network integrated partner, provides open and
+  transparent technologies that connect advertisers and agencies with publishers
+  to enable digital advertising across all devices. In addition to click-based
+  mobile attribution, Adform also offers view-through attribution, which you can
+  record with AppsFlyer.
+metadata:
+  keywords:
+    - adform
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 208641516
-  url: https://support.appsflyer.com/hc/en-us/articles/208641516-Adform-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (A-F)
-  section_id: 6551990971793
-  position: 3
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [adform, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-05-01T07:23:12Z'
   edited_at: '2026-06-16T12:03:12Z'
+  id: 208641516
+  locale: en-us
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/208641516-Adform-campaign-configuration
 ---
 ## Setting up Adform
 

@@ -1,26 +1,28 @@
 ---
-title: "Affise integration with AppsFlyer"
-excerpt: "Ad networks that use Affise can utilize the AppsFlyer probabilistic modeling solution to receive attribution data about installs and in-app events."
+title: Affise integration with AppsFlyer
+excerpt: >-
+  Ad networks that use Affise can utilize the AppsFlyer probabilistic modeling
+  solution to receive attribution data about installs and in-app events.
+metadata:
+  keywords:
+    - Integration
+    - affise
+    - Advertisers
+    - Ad Networks
+    - Partners
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 208537116
-  url: https://support.appsflyer.com/hc/en-us/articles/208537116-Affise-integration-with-AppsFlyer
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Platforms for ad networks
-  section_id: 6551055575185
-  position: 13
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [Integration, affise, Advertisers, Ad Networks, Partners]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-04-19T12:08:58Z'
   edited_at: '2024-12-23T15:05:34Z'
+  id: 208537116
+  locale: en-us
+  section: Platforms for ad networks
+  section_id: 6551055575185
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/208537116-Affise-integration-with-AppsFlyer
 ---
 To start the integration you must send AppsFlyer both the attribution link and the postback for reporting purposes.
 

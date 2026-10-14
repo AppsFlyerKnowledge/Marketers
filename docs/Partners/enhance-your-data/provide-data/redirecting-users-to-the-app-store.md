@@ -1,26 +1,25 @@
 ---
-title: "Redirecting users to the app store"
-excerpt: "Learn about the options for redirecting users to the app store after an ad is served, and how to send engagement data to AppsFlyer."
+title: "Redirecting users\_to the app store"
+excerpt: >-
+  Learn about the options for redirecting users to the app store after an ad is
+  served, and how to send engagement data to AppsFlyer.
+metadata:
+  keywords:
+    - clicks
+    - Ad Networks
+    - Partners
+    - Data Management
 x-zendesk:
-  id: 360000807629
-  url: https://support.appsflyer.com/hc/en-us/articles/360000807629-Redirecting-users-to-the-app-store
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Provide data
-  section_id: 6551209900817
-  position: 3
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-yael-sharabi, Ad Networks, Data Management]
-  labels: [clicks, Ad Networks, Partners, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-04-30T08:08:25Z'
   edited_at: '2026-04-06T09:23:23Z'
+  id: 360000807629
+  locale: en-us
+  section: Provide data
+  section_id: 6551209900817
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360000807629-Redirecting-users-to-the-app-store
 ---
 ## Overview
 

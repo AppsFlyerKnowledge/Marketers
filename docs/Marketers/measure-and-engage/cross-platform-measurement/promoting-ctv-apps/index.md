@@ -1,18 +1,17 @@
 ---
-title: "Promoting CTV apps"
-excerpt: "How to promote and measure attribution of your CTV apps from anywhere"
+title: Promoting CTV apps
+excerpt: How to promote and measure attribution of your CTV apps from anywhere
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 15328952633489
-  url: https://support.appsflyer.com/hc/en-us/sections/15328952633489-Promoting-CTV-apps
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 15323134852497
-  position: 1
-  sorting: manual
   created_at: '2023-05-15T13:12:48Z'
+  id: 15328952633489
+  locale: en-us
+  parent_section_id: 15323134852497
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/15328952633489-Promoting-CTV-apps
 ---
 How to promote and measure attribution of your CTV apps from anywhere
 

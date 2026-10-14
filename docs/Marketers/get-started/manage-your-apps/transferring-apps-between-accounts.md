@@ -1,26 +1,30 @@
 ---
-title: "Transferring apps between accounts"
-excerpt: "Transfer apps between AppsFlyer accounts by following the steps described in this article (for admins of both the sender and receiver accounts)."
+title: Transferring apps between accounts
+excerpt: >-
+  Transfer apps between AppsFlyer accounts by following the steps described in
+  this article (for admins of both the sender and receiver accounts).
+metadata:
+  keywords:
+    - Account
+    - Advertisers
+    - Agencies
+    - moving apps
+    - move app
+    - app transfer
+    - transferring apps
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 360001336005
-  url: https://support.appsflyer.com/hc/en-us/articles/360001336005-Transferring-apps-between-accounts
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Manage your apps
-  section_id: 6551015977105
-  position: 3
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies]
-  labels: [Account, Advertisers, Agencies, moving apps, move app, app transfer, transferring apps, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-07-24T07:56:37Z'
   edited_at: '2026-09-22T10:53:22Z'
+  id: 360001336005
+  locale: en-us
+  section: Manage your apps
+  section_id: 6551015977105
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360001336005-Transferring-apps-between-accounts
 ---
 ![App transfer process animation showing the transfer wizard steps](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
 

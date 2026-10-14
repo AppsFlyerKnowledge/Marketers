@@ -1,26 +1,17 @@
 ---
-title: "Bulletin: Activity data update in Master API and Pivot"
+title: 'Bulletin: Activity data update in Master API and Pivot'
 table_of_contents: false
 x-zendesk:
-  id: 49896622875537
-  url: https://support.appsflyer.com/hc/en-us/articles/49896622875537-Bulletin-Activity-data-update-in-Master-API-and-Pivot
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 0
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: []
-  labels: []
-  promoted: false
-  comments_disabled: true
   created_at: '2026-08-17T07:26:26Z'
   edited_at: '2026-09-17T11:36:13Z'
+  id: 49896622875537
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/49896622875537-Bulletin-Activity-data-update-in-Master-API-and-Pivot
 ---
 | Section | Details |
 | --- | --- |

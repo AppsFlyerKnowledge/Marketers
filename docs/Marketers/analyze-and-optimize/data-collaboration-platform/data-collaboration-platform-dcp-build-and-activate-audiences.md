@@ -1,26 +1,24 @@
 ---
-title: "Data Collaboration Platform (DCP) - Build and activate audiences"
-excerpt: "Build high-value audiences in DCP collaborations using shared data and activate them on media partner sites or cloud services for maximum campaign impact."
+title: Data Collaboration Platform (DCP) - Build and activate audiences
+excerpt: >-
+  Build high-value audiences in DCP collaborations using shared data and
+  activate them on media partner sites or cloud services for maximum campaign
+  impact.
+metadata:
+  keywords:
+    - Marketers
+    - Data Clean Room
 x-zendesk:
-  id: 24522739719057
-  url: https://support.appsflyer.com/hc/en-us/articles/24522739719057-Data-Collaboration-Platform-DCP-Build-and-activate-audiences
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Collaboration Platform
-  section_id: 26230608274065
-  position: 9
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-yael-sharabi, Marketers, Data Clean Room]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-04-25T12:55:13Z'
   edited_at: '2026-07-28T11:30:35Z'
+  id: 24522739719057
+  locale: en-us
+  section: Data Collaboration Platform
+  section_id: 26230608274065
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/24522739719057-Data-Collaboration-Platform-DCP-Build-and-activate-audiences
 ---
 ## About DCP audiences
 

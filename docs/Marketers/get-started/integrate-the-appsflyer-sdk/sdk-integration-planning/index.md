@@ -1,18 +1,17 @@
 ---
-title: "SDK integration planning"
-excerpt: "Our step-by-step guide for integrating the SDK from planning to testing"
+title: SDK integration planning
+excerpt: Our step-by-step guide for integrating the SDK from planning to testing
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551182964369
-  url: https://support.appsflyer.com/hc/en-us/sections/6551182964369-SDK-integration-planning
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6551164458257
-  position: 0
-  sorting: manual
   created_at: '2022-06-02T11:31:41Z'
+  id: 6551182964369
+  locale: en-us
+  parent_section_id: 6551164458257
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551182964369-SDK-integration-planning
 ---
 Our step-by-step guide for integrating the SDK from planning to testing
 

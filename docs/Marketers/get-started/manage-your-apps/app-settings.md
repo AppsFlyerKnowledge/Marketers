@@ -1,26 +1,26 @@
 ---
-title: "App Settings"
-excerpt: "Learn about the settings that impact the attribution and analytics of your app across all media sources."
+title: App Settings
+excerpt: >-
+  Learn about the settings that impact the attribution and analytics of your app
+  across all media sources.
+metadata:
+  keywords:
+    - App Settings
+    - Advertisers
+    - Agencies
+    - Developers
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 211719806
-  url: https://support.appsflyer.com/hc/en-us/articles/211719806-App-Settings
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Manage your apps
-  section_id: 6551015977105
-  position: 1
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [Marketers, Platform essentials, Agencies, pm-guy-riesenberg]
-  labels: [App Settings, Advertisers, Agencies, Developers, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-08-16T07:50:37Z'
   edited_at: '2026-10-12T15:24:47Z'
+  id: 211719806
+  locale: en-us
+  section: Manage your apps
+  section_id: 6551015977105
+  url: https://support.appsflyer.com/hc/en-us/articles/211719806-App-Settings
 ---
 ## App Settings
 

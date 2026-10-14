@@ -1,18 +1,16 @@
 ---
-title: "Get started"
+title: Get started
 deprecated: false
 hidden: false
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6550863656977
-  url: https://support.appsflyer.com/hc/en-us/sections/6550863656977-Get-started
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  position: 0
-  sorting: manual
   created_at: '2022-06-02T11:18:24Z'
+  id: 6550863656977
+  locale: en-us
+  type: section
+  url: https://support.appsflyer.com/hc/en-us/sections/6550863656977-Get-started
 ---
 <Cards columns={2}>
   <Card title="Analytics partner onboarding" href="/docs/analytics-partner-onboarding" icon="fa-solid fa-rocket">

@@ -1,26 +1,29 @@
 ---
-title: "deltaDNA integration with AppsFlyer"
-excerpt: "deltaDNA, an AppsFlyer integrated partner, is the leading real-time analytics and marketing platform for mobile gaming. The combination of market-leading deep data functionality, ultra-high performance and a flexible, open environment allows users to maximize engagement and lifetime value through player segmentation, predictive modeling and real-time targeted interventions."
+title: deltaDNA integration with AppsFlyer
+excerpt: >-
+  deltaDNA, an AppsFlyer integrated partner, is the leading real-time analytics
+  and marketing platform for mobile gaming. The combination of market-leading
+  deep data functionality, ultra-high performance and a flexible, open
+  environment allows users to maximize engagement and lifetime value through
+  player segmentation, predictive modeling and real-time targeted interventions.
+metadata:
+  keywords:
+    - deltaDNA
+    - Advertisers
+    - Ad Networks
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 212247706
-  url: https://support.appsflyer.com/hc/en-us/articles/212247706-deltaDNA-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: 3rd-party platforms
-  section_id: 6551199962257
-  position: 8
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [deltaDNA, Advertisers, Ad Networks, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-09-04T06:41:51Z'
   edited_at: '2026-09-09T13:22:45Z'
+  id: 212247706
+  locale: en-us
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/212247706-deltaDNA-integration-with-AppsFlyer
 ---
 **Important!**
 

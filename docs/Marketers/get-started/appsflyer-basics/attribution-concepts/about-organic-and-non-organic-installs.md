@@ -1,26 +1,24 @@
 ---
-title: "About organic and non-organic installs"
-excerpt: "Understand the difference between organic and non-organic installs."
+title: About organic and non-organic installs
+excerpt: Understand the difference between organic and non-organic installs.
+metadata:
+  keywords:
+    - Advertisers
+    - Agencies
+    - Ad Networks
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 115005995229
-  url: https://support.appsflyer.com/hc/en-us/articles/115005995229-About-organic-and-non-organic-installs
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Attribution concepts
-  section_id: 6551394235409
-  position: 15
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-moran-davida, Marketers, Mobile Attribution, Agencies, Ad Networks]
-  labels: [Advertisers, Agencies, Ad Networks, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-01-11T09:31:52Z'
   edited_at: '2025-04-05T12:50:39Z'
+  id: 115005995229
+  locale: en-us
+  section: Attribution concepts
+  section_id: 6551394235409
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115005995229-About-organic-and-non-organic-installs
 ---
 ![6453OrganicvsNon-organic.jpg](https://files.readme.io/b456433d858a146187429d0a40c200327af685490ea003cd5130f40ad798c7a4-360018880878.jpg)
 

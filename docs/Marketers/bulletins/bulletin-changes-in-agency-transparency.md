@@ -1,26 +1,25 @@
 ---
-title: "Bulletin: Changes in agency transparency"
+title: 'Bulletin: Changes in agency transparency'
+metadata:
+  keywords:
+    - Partner
+    - partner account
+    - Agencies
+    - Partners
+    - Marketers
+    - Platform essentials
 table_of_contents: false
 x-zendesk:
-  id: 16065571938961
-  url: https://support.appsflyer.com/hc/en-us/articles/16065571938961-Bulletin-Changes-in-agency-transparency
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 35
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies]
-  labels: [Partner, partner account, Agencies, Partners, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-06-11T12:30:46Z'
   edited_at: '2023-12-28T12:16:47Z'
+  id: 16065571938961
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/16065571938961-Bulletin-Changes-in-agency-transparency
 ---
 | **What's new** | As the industry shifts towards a more transparent ecosystem, AppsFlyer supports transparency between advertisers and agencies.<br /><br />As of August 14, 2023, the app-level [agency transparency](/docs/getting-started-agency-onboarding#transparency) toggle is permanently turned on by default. This is relevant for new agencies joining AppsFlyer and for existing agencies with new advertiser access permissions. |
 | --- | --- |

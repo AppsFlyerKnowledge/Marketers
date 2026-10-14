@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: Consolidated Web+App reporting for Meta Ads and Google Ads"
+title: 'Bulletin: Consolidated Web+App reporting for Meta Ads and Google Ads'
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 39686956300433
-  url: https://support.appsflyer.com/hc/en-us/articles/39686956300433-Bulletin-Consolidated-Web-App-reporting-for-Meta-Ads-and-Google-Ads
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: []
-  promoted: false
-  comments_disabled: false
   created_at: '2025-10-05T12:17:10Z'
   edited_at: '2025-10-23T11:50:56Z'
+  id: 39686956300433
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/39686956300433-Bulletin-Consolidated-Web-App-reporting-for-Meta-Ads-and-Google-Ads
 ---
 | Section | Details |
 | --- | --- |

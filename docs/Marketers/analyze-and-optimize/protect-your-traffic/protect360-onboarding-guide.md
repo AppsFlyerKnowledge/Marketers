@@ -1,26 +1,24 @@
 ---
-title: "Protect360 onboarding guide"
-excerpt: "Quickly and effectively safeguard your marketing investments by following this step-by-step onboarding guide to maximize your Protect360 value within just 6 weeks."
+title: Protect360 onboarding guide
+excerpt: >-
+  Quickly and effectively safeguard your marketing investments by following this
+  step-by-step onboarding guide to maximize your Protect360 value within just 6
+  weeks.
+metadata:
+  keywords:
+    - Marketers
+    - Protect360
 x-zendesk:
-  id: 34554022072209
-  url: https://support.appsflyer.com/hc/en-us/articles/34554022072209-Protect360-onboarding-guide
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Protect your traffic
-  section_id: 6551015912465
-  position: 1
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-yanai, Marketers, Protect360]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2025-04-21T09:58:52Z'
   edited_at: '2026-01-08T11:54:02Z'
+  id: 34554022072209
+  locale: en-us
+  section: Protect your traffic
+  section_id: 6551015912465
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/34554022072209-Protect360-onboarding-guide
 ---
 ## **Onboarding timeline and what to expect?**
 

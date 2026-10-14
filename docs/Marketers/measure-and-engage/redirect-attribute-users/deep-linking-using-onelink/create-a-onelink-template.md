@@ -1,26 +1,25 @@
 ---
-title: "Create a OneLink template"
-excerpt: "Create a template to form the basis of the redirection logic for all OneLink links that you create for your various marketing campaigns. A template is required for creating links and end-user experiences."
+title: Create a OneLink template
+excerpt: >-
+  Create a template to form the basis of the redirection logic for all OneLink
+  links that you create for your various marketing campaigns. A template is
+  required for creating links and end-user experiences.
+metadata:
+  keywords:
+    - template
+    - Marketers
+    - Link Management
 x-zendesk:
-  id: 207032246
-  url: https://support.appsflyer.com/hc/en-us/articles/207032246-Create-a-OneLink-template
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Deep linking using OneLink
-  section_id: 6551203111057
-  position: 4
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, Link Management]
-  labels: [template, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2014-11-03T12:35:49Z'
   edited_at: '2026-08-31T12:47:56Z'
+  id: 207032246
+  locale: en-us
+  section: Deep linking using OneLink
+  section_id: 6551203111057
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207032246-Create-a-OneLink-template
 ---
 ## OneLink templates
 

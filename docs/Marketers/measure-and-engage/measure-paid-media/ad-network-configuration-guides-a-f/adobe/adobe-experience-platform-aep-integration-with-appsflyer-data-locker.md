@@ -1,26 +1,26 @@
 ---
-title: "Adobe Experience Platform (AEP) integration with AppsFlyer Data Locker"
-excerpt: "Set up an integrated solution with Adobe Experience Platform (AEP) to send raw-level event data to the Adobe data lake. AEP is the data layer for all customers centralizing data in Adobe, a customer data platform that captures customer journeys provides and lets you analyze them."
+title: Adobe Experience Platform (AEP) integration with AppsFlyer Data Locker
+excerpt: >-
+  Set up an integrated solution with Adobe Experience Platform (AEP) to send
+  raw-level event data to the Adobe data lake. AEP is the data layer for all
+  customers centralizing data in Adobe, a customer data platform that captures
+  customer journeys provides and lets you analyze them.
+metadata:
+  keywords:
+    - Advertisers
+    - Marketers
+    - Data Locker
 x-zendesk:
-  id: 13856826626321
-  url: https://support.appsflyer.com/hc/en-us/articles/13856826626321-Adobe-Experience-Platform-AEP-integration-with-AppsFlyer-Data-Locker
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Adobe
-  section_id: 6551419728657
-  position: 1
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-rona-einat, Marketers, Data Locker]
-  labels: [Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-03-19T06:54:23Z'
   edited_at: '2023-10-26T12:33:46Z'
+  id: 13856826626321
+  locale: en-us
+  section: Adobe
+  section_id: 6551419728657
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/13856826626321-Adobe-Experience-Platform-AEP-integration-with-AppsFlyer-Data-Locker
 ---
 ## Overview
 

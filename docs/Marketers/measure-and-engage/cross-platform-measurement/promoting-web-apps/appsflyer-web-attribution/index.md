@@ -1,17 +1,16 @@
 ---
-title: "AppsFlyer Web Attribution"
+title: AppsFlyer Web Attribution
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 43560690387729
-  url: https://support.appsflyer.com/hc/en-us/sections/43560690387729-AppsFlyer-Web-Attribution
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 15329056926353
-  position: 0
-  sorting: manual
   created_at: '2026-02-05T16:16:49Z'
+  id: 43560690387729
+  locale: en-us
+  parent_section_id: 15329056926353
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/43560690387729-AppsFlyer-Web-Attribution
 ---
 This section provides resources and guides for setting up and managing AppsFlyer Web Attribution and Web Performance Measurement.
 

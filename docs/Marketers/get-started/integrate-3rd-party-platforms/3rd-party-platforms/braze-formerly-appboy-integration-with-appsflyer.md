@@ -1,26 +1,29 @@
 ---
-title: "Braze (formerly Appboy) integration with AppsFlyer"
-excerpt: "Braze, an AppsFlyer integrated partner, offers a lifecycle engagement platform for marketing, growth, and engagement teams. The platform enables marketers to connect human-to-human, at scale, with their customers, driving deep engagement and ROI. The center of our platform is the holistic user profile, which provides a single view of the customer."
+title: Braze (formerly Appboy) integration with AppsFlyer
+excerpt: >-
+  Braze, an AppsFlyer integrated partner, offers a lifecycle engagement platform
+  for marketing, growth, and engagement teams. The platform enables marketers to
+  connect human-to-human, at scale, with their customers, driving deep
+  engagement and ROI. The center of our platform is the holistic user profile,
+  which provides a single view of the customer.
+metadata:
+  keywords:
+    - Appboy
+    - Advertisers
+    - Ad Networks
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 115001603343
-  url: https://support.appsflyer.com/hc/en-us/articles/115001603343-Braze-formerly-Appboy-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: 3rd-party platforms
-  section_id: 6551199962257
-  position: 5
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [Appboy, Advertisers, Ad Networks, Marketers, Localize, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-03-30T08:39:03Z'
   edited_at: '2026-08-14T15:06:14Z'
+  id: 115001603343
+  locale: en-us
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115001603343-Braze-formerly-Appboy-integration-with-AppsFlyer
 ---
 Learn more at [braze.com](https://www.braze.com/).
 

@@ -1,26 +1,28 @@
 ---
-title: "Cheetah Mobile campaign configuration"
-excerpt: "Cheetah Mobile, an AppsFlyer ad network integrated partner, aims to provide leading apps for mobile users worldwide and connect users with personalized content on the mobile platform. In addition to click-based mobile attribution, Cheetah Mobile also offers cost and view-through attribution, which you can record with AppsFlyer."
+title: Cheetah Mobile campaign configuration
+excerpt: >-
+  Cheetah Mobile, an AppsFlyer ad network integrated partner, aims to provide
+  leading apps for mobile users worldwide and connect users with personalized
+  content on the mobile platform. In addition to click-based mobile attribution,
+  Cheetah Mobile also offers cost and view-through attribution, which you can
+  record with AppsFlyer.
+metadata:
+  keywords:
+    - cheetah mobile
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 209731703
-  url: https://support.appsflyer.com/hc/en-us/articles/209731703-Cheetah-Mobile-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (A-F)
-  section_id: 6551990971793
-  position: 18
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [cheetah mobile, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-03-28T10:23:35Z'
   edited_at: '2026-09-09T13:12:18Z'
+  id: 209731703
+  locale: en-us
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/209731703-Cheetah-Mobile-campaign-configuration
 ---
 ## Setting up Cheetah Mobile
 

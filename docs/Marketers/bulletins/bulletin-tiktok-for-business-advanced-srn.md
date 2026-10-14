@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: TikTok for Business—advanced SRN"
+title: 'Bulletin: TikTok for Business—advanced SRN'
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 7925111265041
-  url: https://support.appsflyer.com/hc/en-us/articles/7925111265041-Bulletin-TikTok-for-Business-advanced-SRN
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 42
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-07-26T12:27:56Z'
   edited_at: '2025-09-09T06:46:47Z'
+  id: 7925111265041
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/7925111265041-Bulletin-TikTok-for-Business-advanced-SRN
 ---
 > 📘 **Note**
 >

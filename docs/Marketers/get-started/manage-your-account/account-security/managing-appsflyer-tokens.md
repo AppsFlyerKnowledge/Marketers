@@ -1,26 +1,28 @@
 ---
-title: "Managing AppsFlyer tokens"
-excerpt: "Tokens enhance data security. They enable users to access data via the AppsFlyer APIs or receive event data using server-to-server calls. Admins can manage multiple tokens while maintaining data continuity. This includes creating, renaming, and removing API and server-to-server tokens as necessary."
+title: Managing AppsFlyer tokens
+excerpt: >-
+  Tokens enhance data security. They enable users to access data via the
+  AppsFlyer APIs or receive event data using server-to-server calls. Admins can
+  manage multiple tokens while maintaining data continuity. This includes
+  creating, renaming, and removing API and server-to-server tokens as necessary.
+metadata:
+  keywords:
+    - Advertisers
+    - Agencies
+    - Ad Networks
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 360004562377
-  url: https://support.appsflyer.com/hc/en-us/articles/360004562377-Managing-AppsFlyer-tokens
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Account security
-  section_id: 6551173202065
-  position: 2
-  owner: Gray Goldstein
-  owner_email: gray.goldstein@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies, Ad Networks]
-  labels: [Advertisers, Agencies, Ad Networks, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-01-01T09:50:22Z'
   edited_at: '2026-09-23T09:06:11Z'
+  id: 360004562377
+  locale: en-us
+  section: Account security
+  section_id: 6551173202065
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360004562377-Managing-AppsFlyer-tokens
 ---
 > 📘 **Important!**
 >

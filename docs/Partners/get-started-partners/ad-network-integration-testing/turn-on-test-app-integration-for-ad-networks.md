@@ -1,26 +1,24 @@
 ---
-title: "Turn on test app integration for ad networks"
-excerpt: "Ad networks performing integration testing must turn on app integration (activation)."
+title: Turn on test app integration for ad networks
+excerpt: >-
+  Ad networks performing integration testing must turn on app integration
+  (activation).
+metadata:
+  keywords:
+    - Ad Networks
+    - Partners
+    - Mobile Attribution
 x-zendesk:
-  id: 360020713538
-  url: https://support.appsflyer.com/hc/en-us/articles/360020713538-Turn-on-test-app-integration-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Ad network integration testing
-  section_id: 6551070667537
-  position: 12
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Mobile Attribution, Ad Networks]
-  labels: [Ad Networks, Partners]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-05-22T15:56:20Z'
   edited_at: '2026-09-09T13:49:26Z'
+  id: 360020713538
+  locale: en-us
+  section: Ad network integration testing
+  section_id: 6551070667537
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360020713538-Turn-on-test-app-integration-for-ad-networks
 ---
 ## Test apps for ad networks (iOS and Android)
 

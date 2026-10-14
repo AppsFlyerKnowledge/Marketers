@@ -1,18 +1,17 @@
 ---
-title: "Promoting Desktop apps"
-excerpt: "How to promote and measure attribution of your Desktop apps from anywhere"
+title: Promoting Desktop apps
+excerpt: How to promote and measure attribution of your Desktop apps from anywhere
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 15329004312593
-  url: https://support.appsflyer.com/hc/en-us/sections/15329004312593-Promoting-Desktop-apps
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 15323134852497
-  position: 3
-  sorting: manual
   created_at: '2023-05-15T13:14:40Z'
+  id: 15329004312593
+  locale: en-us
+  parent_section_id: 15323134852497
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/15329004312593-Promoting-Desktop-apps
 ---
 How to promote and measure attribution of your Desktop apps from anywhere
 

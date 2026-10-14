@@ -1,26 +1,25 @@
 ---
-title: "Steam integration with AppsFlyer"
-excerpt: "Integrate your Steam game/app with AppsFlyer to receive attribution and event data for your Steam campaigns. The Steam integration supports attribution and in-app event recording for Steam apps on a user's Steam device."
+title: Steam integration with AppsFlyer
+excerpt: >-
+  Integrate your Steam game/app with AppsFlyer to receive attribution and event
+  data for your Steam campaigns. The Steam integration supports attribution and
+  in-app event recording for Steam apps on a user's Steam device.
+metadata:
+  keywords:
+    - CTV
+    - Marketers
+    - PC & Console Attribution
 x-zendesk:
-  id: 11241130508433
-  url: https://support.appsflyer.com/hc/en-us/articles/11241130508433-Steam-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Promoting Desktop apps
-  section_id: 15329004312593
-  position: 10
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roi-tamir, Marketers, PC & Console Attribution]
-  labels: [CTV, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-12-08T10:02:09Z'
   edited_at: '2026-10-05T06:59:19Z'
+  id: 11241130508433
+  locale: en-us
+  section: Promoting Desktop apps
+  section_id: 15329004312593
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/11241130508433-Steam-integration-with-AppsFlyer
 ---
 ## About Steam attribution
 

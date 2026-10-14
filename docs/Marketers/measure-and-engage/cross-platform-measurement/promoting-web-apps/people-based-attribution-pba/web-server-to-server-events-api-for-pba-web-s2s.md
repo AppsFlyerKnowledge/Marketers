@@ -1,26 +1,26 @@
 ---
-title: "Web Server-to-server events API for PBA (Web-S2S)"
-excerpt: "Use the Web Server-to-Server (Web-S2S) events API to report events and conversions to PBA that aren't reported by the Web SDK."
+title: Web Server-to-server events API for PBA (Web-S2S)
+excerpt: >-
+  Use the Web Server-to-Server (Web-S2S) events API to report events and
+  conversions to PBA that aren't reported by the Web SDK.
+metadata:
+  keywords:
+    - SDK
+    - Developers
+    - pba
+    - Marketers
+    - Cross-Platform Measurement
 x-zendesk:
-  id: 360006997298
-  url: https://support.appsflyer.com/hc/en-us/articles/360006997298-Web-Server-to-server-events-API-for-PBA-Web-S2S
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: People Based Attribution (PBA)
-  section_id: 43560588808721
-  position: 8
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, Cross-Platform Measurement]
-  labels: [SDK, Developers, pba, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-03-23T23:59:00Z'
   edited_at: '2025-08-20T09:36:30Z'
+  id: 360006997298
+  locale: en-us
+  section: People Based Attribution (PBA)
+  section_id: 43560588808721
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360006997298-Web-Server-to-server-events-API-for-PBA-Web-S2S
 ---
 [![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/4694c3141c85a0dc62a29a3ace7b1986fa4cf7140cc5cdc532553b66dc100ff9-360007753757.jpg)](https://files.readme.io/4694c3141c85a0dc62a29a3ace7b1986fa4cf7140cc5cdc532553b66dc100ff9-360007753757.jpg)
 

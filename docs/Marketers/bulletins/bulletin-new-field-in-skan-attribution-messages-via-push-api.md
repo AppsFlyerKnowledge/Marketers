@@ -1,26 +1,23 @@
 ---
-title: "Bulletin: New field in SKAN attribution messages via Push API"
+title: 'Bulletin: New field in SKAN attribution messages via Push API'
+metadata:
+  keywords:
+    - Developers
+    - SKAD
+    - Marketers
+    - SKAdNetwork (SKAN)
 table_of_contents: false
 x-zendesk:
-  id: 5203225179153
-  url: https://support.appsflyer.com/hc/en-us/articles/5203225179153-Bulletin-New-field-in-SKAN-attribution-messages-via-Push-API
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 51
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
-  labels: [Developers, SKAD, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-04-03T09:15:05Z'
   edited_at: '2023-11-26T12:49:36Z'
+  id: 5203225179153
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/5203225179153-Bulletin-New-field-in-SKAN-attribution-messages-via-Push-API
 ---
 | **Bulletin date** | April 3, 2022 |
 | --- | --- |

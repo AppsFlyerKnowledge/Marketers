@@ -1,18 +1,16 @@
 ---
-title: "Provide data"
-excerpt: "Send engagement data to AppsFlyer for attribution"
+title: Provide data
+excerpt: Send engagement data to AppsFlyer for attribution
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551209900817
-  url: https://support.appsflyer.com/hc/en-us/sections/6551209900817-Provide-data
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  parent_section_id: 6551110127761
-  position: 0
-  sorting: manual
   created_at: '2022-06-02T11:32:58Z'
+  id: 6551209900817
+  locale: en-us
+  parent_section_id: 6551110127761
+  type: section
+  url: https://support.appsflyer.com/hc/en-us/sections/6551209900817-Provide-data
 ---
 Send engagement data to AppsFlyer for attribution
 

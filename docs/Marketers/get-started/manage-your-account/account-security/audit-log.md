@@ -1,26 +1,26 @@
 ---
-title: "Audit log"
-excerpt: "Identify and protect against unauthorized access to your AppsFlyer account using the Audit log. View and download a summary of security-related activity in your account."
+title: Audit log
+excerpt: >-
+  Identify and protect against unauthorized access to your AppsFlyer account
+  using the Audit log. View and download a summary of security-related activity
+  in your account.
+metadata:
+  keywords:
+    - Advertisers
+    - Agencies
+    - Ad Networks
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 360007971697
-  url: https://support.appsflyer.com/hc/en-us/articles/360007971697-Audit-log
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Account security
-  section_id: 6551173202065
-  position: 5
-  owner: Judi Levy
-  owner_email: judi.levy@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies, Ad Networks]
-  labels: [Advertisers, Agencies, Ad Networks, Marketers, Localize, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-05-05T14:18:09Z'
   edited_at: '2024-09-15T05:36:12Z'
+  id: 360007971697
+  locale: en-us
+  section: Account security
+  section_id: 6551173202065
+  url: https://support.appsflyer.com/hc/en-us/articles/360007971697-Audit-log
 ---
 ## Overview
 

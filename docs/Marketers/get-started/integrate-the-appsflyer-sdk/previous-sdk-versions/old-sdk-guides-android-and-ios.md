@@ -1,26 +1,25 @@
 ---
-title: "Old SDK guides - Android and iOS"
-excerpt: "Find the SDK integration guides of AppsFlyer SDKs from 2016 and onwards, in PDF form."
+title: Old SDK guides - Android and iOS
+excerpt: >-
+  Find the SDK integration guides of AppsFlyer SDKs from 2016 and onwards, in
+  PDF form.
+metadata:
+  keywords:
+    - Advertisers
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360000699617
-  url: https://support.appsflyer.com/hc/en-us/articles/360000699617-Old-SDK-guides-Android-and-iOS
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Previous SDK versions
-  section_id: 6551300280977
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-12-16T11:22:29Z'
   edited_at: '2023-12-18T00:00:56Z'
+  id: 360000699617
+  locale: en-us
+  section: Previous SDK versions
+  section_id: 6551300280977
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360000699617-Old-SDK-guides-Android-and-iOS
 ---
 ## Overview
 

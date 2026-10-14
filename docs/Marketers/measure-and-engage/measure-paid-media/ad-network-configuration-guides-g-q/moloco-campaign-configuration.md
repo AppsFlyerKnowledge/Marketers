@@ -1,26 +1,26 @@
 ---
-title: "MOLOCO campaign configuration"
-excerpt: "MOLOCO, an AppsFlyer integrated partner, turns user data into ad performance, enabling mobile businesses to execute marketing and advertising monetization programs."
+title: MOLOCO campaign configuration
+excerpt: >-
+  MOLOCO, an AppsFlyer integrated partner, turns user data into ad performance,
+  enabling mobile businesses to execute marketing and advertising monetization
+  programs.
+metadata:
+  keywords:
+    - Advertisers
+    - Moloco
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360000691978
-  url: https://support.appsflyer.com/hc/en-us/articles/360000691978-MOLOCO-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (G-Q)
-  section_id: 6552006535953
-  position: 14
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Advertisers, Moloco, Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2018-12-16T07:37:12Z'
   edited_at: '2026-07-27T09:44:04Z'
+  id: 360000691978
+  locale: en-us
+  section: Ad network configuration guides (G-Q)
+  section_id: 6552006535953
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360000691978-MOLOCO-campaign-configuration
 ---
 ![](https://cdn.appsflyer.com/marketplace/static/logo/moloco.png?v=1%0A)
 

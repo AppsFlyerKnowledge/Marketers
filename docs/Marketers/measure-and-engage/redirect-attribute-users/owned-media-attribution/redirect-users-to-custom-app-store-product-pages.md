@@ -1,26 +1,26 @@
 ---
-title: "Redirect users to custom app store product pages"
-excerpt: "Redirect users to your app's custom store listings in Google Play or custom product pages in the App Store. Use AppsFlyer data about the custom store pages to optimize your campaigns."
+title: Redirect users to custom app store product pages
+excerpt: >-
+  Redirect users to your app's custom store listings in Google Play or custom
+  product pages in the App Store. Use AppsFlyer data about the custom store
+  pages to optimize your campaigns.
+metadata:
+  keywords:
+    - Advertisers
+    - Agencies
+    - Marketers
+    - OneLink
 x-zendesk:
-  id: 4406217556625
-  url: https://support.appsflyer.com/hc/en-us/articles/4406217556625-Redirect-users-to-custom-app-store-product-pages
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Owned media attribution
-  section_id: 6551214397585
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, Agencies, OneLink]
-  labels: [Advertisers, Agencies, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-08-26T07:25:53Z'
   edited_at: '2025-01-15T14:38:48Z'
+  id: 4406217556625
+  locale: en-us
+  section: Owned media attribution
+  section_id: 6551214397585
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4406217556625-Redirect-users-to-custom-app-store-product-pages
 ---
 ## Overview
 

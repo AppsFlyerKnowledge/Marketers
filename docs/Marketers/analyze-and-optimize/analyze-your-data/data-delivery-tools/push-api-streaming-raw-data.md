@@ -1,26 +1,27 @@
 ---
-title: "Push API streaming raw data"
-excerpt: "Stream raw data attribution events to your server-side endpoints."
+title: Push API streaming raw data
+excerpt: Stream raw data attribution events to your server-side endpoints.
+metadata:
+  keywords:
+    - Push API
+    - Real-time
+    - Installation and Conversion
+    - Advertisers
+    - Developers
+    - Premium
+    - Marketers
+    - Raw Reports
 x-zendesk:
-  id: 207034356
-  url: https://support.appsflyer.com/hc/en-us/articles/207034356-Push-API-streaming-raw-data
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data delivery tools
-  section_id: 6550995484561
-  position: 6
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Raw Reports]
-  labels: [Push API, Real-time, Installation and Conversion, Advertisers, Developers, Premium, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2013-04-24T15:19:42Z'
   edited_at: '2026-08-13T16:57:14Z'
+  id: 207034356
+  locale: en-us
+  section: Data delivery tools
+  section_id: 6550995484561
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207034356-Push-API-streaming-raw-data
 ---
 ![6970_Push_API_image.png](https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png)
 

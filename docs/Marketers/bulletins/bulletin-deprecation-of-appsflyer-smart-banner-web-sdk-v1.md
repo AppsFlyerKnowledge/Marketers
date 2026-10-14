@@ -1,27 +1,22 @@
 ---
-title: "Bulletin: Deprecation of AppsFlyer Smart Banner web SDK v1"
-excerpt: "As of Nov. 8th, 2023, AppsFlyer Smart Banner web SDK v1 is deprecated."
+title: 'Bulletin: Deprecation of AppsFlyer Smart Banner web SDK v1'
+excerpt: As of Nov. 8th, 2023, AppsFlyer Smart Banner web SDK v1 is deprecated.
+metadata:
+  keywords:
+    - Marketers
+    - Smart Banners and Scripts
 table_of_contents: false
 x-zendesk:
-  id: 15983689552273
-  url: https://support.appsflyer.com/hc/en-us/articles/15983689552273-Bulletin-Deprecation-of-AppsFlyer-Smart-Banner-web-SDK-v1
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 36
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, Smart Banners and Scripts]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2023-06-08T07:03:22Z'
   edited_at: '2026-06-09T11:37:39Z'
+  id: 15983689552273
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/15983689552273-Bulletin-Deprecation-of-AppsFlyer-Smart-Banner-web-SDK-v1
 ---
 | **What's changing** | AppsFlyer Smart Banner web SDK v1 was deprecated on Nov. 8th, 2023. To show Smart Banners on your website you need to upgrade to v2. |
 | --- | --- |

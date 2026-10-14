@@ -1,26 +1,28 @@
 ---
-title: "Manage data access permissions"
-excerpt: "The ability to access data and features in AppsFlyer depends on team member account type, individual team member permissions, and account permissions."
+title: Manage data access permissions
+excerpt: >-
+  The ability to access data and features in AppsFlyer depends on team member
+  account type, individual team member permissions, and account permissions.
+metadata:
+  keywords:
+    - permissions
+    - Advertisers
+    - Agencies
+    - Ad Networks
+    - network permissions
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 115005972889
-  url: https://support.appsflyer.com/hc/en-us/articles/115005972889-Manage-data-access-permissions
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: The AppsFlyer platform
-  section_id: 6551361489297
-  position: 2
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies, Ad Networks]
-  labels: [permissions, Advertisers, Agencies, Ad Networks, network permissions, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-01-08T11:33:39Z'
   edited_at: '2025-11-26T09:07:05Z'
+  id: 115005972889
+  locale: en-us
+  section: The AppsFlyer platform
+  section_id: 6551361489297
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115005972889-Manage-data-access-permissions
 ---
 ## Access to data by account type
 

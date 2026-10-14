@@ -1,27 +1,23 @@
 ---
-title: "SKAN CV schema API for ad networks"
-excerpt: "See the SKAN CV schema as mapped by the advertiser."
+title: SKAN CV schema API for ad networks
+excerpt: See the SKAN CV schema as mapped by the advertiser.
+metadata:
+  keywords:
+    - Partners
+    - Marketers
+    - SKAdNetwork (SKAN)
 table_of_contents: false
 x-zendesk:
-  id: 11705009866001
-  url: https://support.appsflyer.com/hc/en-us/articles/11705009866001-SKAN-CV-schema-API-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: End-user privacy
-  section_id: 6551186412689
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
-  labels: [Partners]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-12-26T15:03:54Z'
   edited_at: '2023-03-05T13:50:47Z'
+  id: 11705009866001
+  locale: en-us
+  section: End-user privacy
+  section_id: 6551186412689
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/11705009866001-SKAN-CV-schema-API-for-ad-networks
 ---
 ## SKAN CV schema API for ad networks
 

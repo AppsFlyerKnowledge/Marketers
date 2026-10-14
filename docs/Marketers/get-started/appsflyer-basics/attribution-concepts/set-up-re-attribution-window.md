@@ -1,26 +1,30 @@
 ---
-title: "Set up re-attribution window"
-excerpt: "Learn about re-attribution window, during which reinstalls are not attributed as new installs."
+title: Set up re-attribution window
+excerpt: >-
+  Learn about re-attribution window, during which reinstalls are not attributed
+  as new installs.
+metadata:
+  keywords:
+    - Retargeting
+    - Re-Attribution
+    - reattribution
+    - Advertisers
+    - Ad Networks
+    - re-attribution window
+    - reattribution window
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 115002587066
-  url: https://support.appsflyer.com/hc/en-us/articles/115002587066-Set-up-re-attribution-window
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Attribution concepts
-  section_id: 6551394235409
-  position: 12
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-moran-davida, Marketers, Mobile Attribution, Ad Networks]
-  labels: [Retargeting, Re-Attribution, retargeting, reattribution, re-attribution, Advertisers, Ad Networks, re-attribution window, reattribution window, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-05-23T08:55:35Z'
   edited_at: '2025-04-17T09:39:55Z'
+  id: 115002587066
+  locale: en-us
+  section: Attribution concepts
+  section_id: 6551394235409
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115002587066-Set-up-re-attribution-window
 ---
 ## Re-attribution window
 

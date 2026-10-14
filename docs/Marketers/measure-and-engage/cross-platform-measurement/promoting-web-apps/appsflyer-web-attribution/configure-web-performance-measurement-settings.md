@@ -1,26 +1,26 @@
 ---
-title: "Configure Web Performance Measurement settings"
-excerpt: "Configure your web attribution settings to control how AppsFlyer attributes website visits, conversions, and user activity to marketing campaigns. Settings include attribution windows, user acquisition events, re-engagement rules, and domain exclusions."
+title: Configure Web Performance Measurement settings
+excerpt: >-
+  Configure your web attribution settings to control how AppsFlyer attributes
+  website visits, conversions, and user activity to marketing campaigns.
+  Settings include attribution windows, user acquisition events, re-engagement
+  rules, and domain exclusions.
+metadata:
+  keywords:
+    - Web Attribution
+    - Web Attribution SDK
+    - Marketers
 x-zendesk:
-  id: 43541863890961
-  url: https://support.appsflyer.com/hc/en-us/articles/43541863890961-Configure-Web-Performance-Measurement-settings
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: AppsFlyer Web Attribution
-  section_id: 43560690387729
-  position: 3
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, Web Attribution]
-  labels: [Web Attribution, Web Attribution SDK, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2026-02-05T08:47:53Z'
   edited_at: '2026-08-03T08:33:38Z'
+  id: 43541863890961
+  locale: en-us
+  section: AppsFlyer Web Attribution
+  section_id: 43560690387729
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/43541863890961-Configure-Web-Performance-Measurement-settings
 ---
 ## Overview
 

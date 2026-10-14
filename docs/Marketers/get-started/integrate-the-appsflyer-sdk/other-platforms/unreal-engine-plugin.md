@@ -1,27 +1,29 @@
 ---
-title: "Unreal Engine plugin"
-excerpt: "Integrate AppsFlyer into games developed in Unreal Engine to measure app installs, in-app events, media sources, and more."
+title: Unreal Engine plugin
+excerpt: >-
+  Integrate AppsFlyer into games developed in Unreal Engine to measure app
+  installs, in-app events, media sources, and more.
+metadata:
+  keywords:
+    - Plugin
+    - SDK
+    - Unreal Engine
+    - Unreal
+    - Developers
+    - Marketers
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 360001604157
-  url: https://support.appsflyer.com/hc/en-us/articles/360001604157--Unreal-Engine-plugin
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Other platforms
-  section_id: 6551244207121
-  position: 10
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Plugin, SDK, Unreal Engine, Unreal, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2019-05-19T09:52:46Z'
   edited_at: '2026-08-18T09:11:09Z'
+  id: 360001604157
+  locale: en-us
+  section: Other platforms
+  section_id: 6551244207121
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360001604157--Unreal-Engine-plugin
 ---
 ![256px-Unreal_Engine_4_logo_and_wordmark.svg.png](https://files.readme.io/8ea048105520f976b4e3080f5c8ec44a4d955977a7731fe16114225bd34e9e5e-360002792757.png)
 

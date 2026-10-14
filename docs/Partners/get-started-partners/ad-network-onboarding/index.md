@@ -1,18 +1,17 @@
 ---
-title: "Ad network onboarding"
-excerpt: "Integration with AppsFlyer for ad networks"
+title: Ad network onboarding
+excerpt: Integration with AppsFlyer for ad networks
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551058566033
-  url: https://support.appsflyer.com/hc/en-us/sections/6551058566033-Ad-network-onboarding
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  parent_section_id: 6550863656977
-  position: 0
-  sorting: manual
   created_at: '2022-06-02T11:25:56Z'
+  id: 6551058566033
+  locale: en-us
+  parent_section_id: 6550863656977
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551058566033-Ad-network-onboarding
 ---
 Integration with AppsFlyer for ad networks
 

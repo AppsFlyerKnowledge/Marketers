@@ -1,26 +1,26 @@
 ---
-title: "AppsFlyer server IP address ranges (allowlisting)"
-excerpt: "AppsFlyer IP addresses used for outgoing API requests."
+title: AppsFlyer server IP address ranges (allowlisting)
+excerpt: AppsFlyer IP addresses used for outgoing API requests.
+metadata:
+  keywords:
+    - whitelisting
+    - AppsFlyer
+    - IPs
+    - Advertisers
+    - Ad Networks
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 207447093
-  url: https://support.appsflyer.com/hc/en-us/articles/207447093-AppsFlyer-server-IP-address-ranges-allowlisting
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Account security
-  section_id: 6551173202065
-  position: 6
-  owner: Gray Goldstein
-  owner_email: gray.goldstein@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials, Ad Networks]
-  labels: [whitelisting, AppsFlyer, IPs, Advertisers, Ad Networks, Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2015-12-24T11:30:11Z'
   edited_at: '2023-07-12T00:00:57Z'
+  id: 207447093
+  locale: en-us
+  section: Account security
+  section_id: 6551173202065
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207447093-AppsFlyer-server-IP-address-ranges-allowlisting
 ---
 ## AppsFlyer server IP address ranges
 

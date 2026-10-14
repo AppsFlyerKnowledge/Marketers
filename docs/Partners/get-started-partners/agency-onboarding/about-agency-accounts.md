@@ -1,26 +1,33 @@
 ---
-title: "About agency accounts"
-excerpt: "Make the most of your AppsFlyer Agency account with advanced configuration."
+title: About agency accounts
+excerpt: Make the most of your AppsFlyer Agency account with advanced configuration.
+metadata:
+  keywords:
+    - In-App Events
+    - Agency Account
+    - ROI
+    - Agency
+    - FMP
+    - Advertisers
+    - Agencies
+    - Listed Agency
+    - all installs
+    - all launches
+    - Partners
+    - agency sign up
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 207034106
-  url: https://support.appsflyer.com/hc/en-us/articles/207034106-About-agency-accounts
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Agency onboarding
-  section_id: 6551110223889
-  position: 1
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies]
-  labels: [In-App Events, Agency Account, ROI, Agency, FMP, Advertisers, Agencies, Listed Agency, all installs, all launches, Partners, agency sign up, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2013-12-08T10:02:42Z'
   edited_at: '2026-05-26T11:24:00Z'
+  id: 207034106
+  locale: en-us
+  section: Agency onboarding
+  section_id: 6551110223889
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207034106-About-agency-accounts
 ---
 ## About agency accounts
 

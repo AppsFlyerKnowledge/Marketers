@@ -1,26 +1,26 @@
 ---
-title: "LG integration with AppsFlyer"
-excerpt: "Integrate your LG Connected TV (CTV) app with AppsFlyer to receive attribution and event data for your campaigns on LG."
+title: LG integration with AppsFlyer
+excerpt: >-
+  Integrate your LG Connected TV (CTV) app with AppsFlyer to receive attribution
+  and event data for your campaigns on LG.
+metadata:
+  keywords:
+    - Advertisers
+    - Developers
+    - CTV
+    - Marketers
+    - CTV Attribution
 x-zendesk:
-  id: 7341725624081
-  url: https://support.appsflyer.com/hc/en-us/articles/7341725624081-LG-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Promoting CTV apps
-  section_id: 15328952633489
-  position: 7
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roi-tamir, Marketers, CTV Attribution]
-  labels: [Advertisers, Developers, CTV, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-07-03T10:31:42Z'
   edited_at: '2026-05-04T09:28:51Z'
+  id: 7341725624081
+  locale: en-us
+  section: Promoting CTV apps
+  section_id: 15328952633489
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/7341725624081-LG-integration-with-AppsFlyer
 ---
 ## About LG CTV attribution
 

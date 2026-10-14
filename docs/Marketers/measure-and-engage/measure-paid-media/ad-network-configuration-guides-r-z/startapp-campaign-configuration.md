@@ -1,26 +1,28 @@
 ---
-title: "StartApp campaign configuration"
-excerpt: "StartApp, an AppsFlyer ad network integrated partner, is an insight-driven mobile tech company that enables its partners to deliver the world's most fulfilling mobile experiences for their users. In addition to click-based mobile attribution, StartApp offers cost, retargeting, and view-through attribution, which can be recorded with AppsFlyer."
+title: StartApp campaign configuration
+excerpt: >-
+  StartApp, an AppsFlyer ad network integrated partner, is an insight-driven
+  mobile tech company that enables its partners to deliver the world's most
+  fulfilling mobile experiences for their users. In addition to click-based
+  mobile attribution, StartApp offers cost, retargeting, and view-through
+  attribution, which can be recorded with AppsFlyer.
+metadata:
+  keywords:
+    - StartApp
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 210042746
-  url: https://support.appsflyer.com/hc/en-us/articles/210042746-StartApp-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (R-Z)
-  section_id: 6552025468305
-  position: 5
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [StartApp, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-06-30T10:55:10Z'
   edited_at: '2026-09-07T07:26:10Z'
+  id: 210042746
+  locale: en-us
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/210042746-StartApp-campaign-configuration
 ---
 To configure your campaigns with StartApp, follow the steps below.
 

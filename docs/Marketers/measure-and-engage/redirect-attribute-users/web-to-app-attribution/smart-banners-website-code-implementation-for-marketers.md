@@ -1,26 +1,28 @@
 ---
-title: "Smart Banners website code implementation for marketers"
-excerpt: "Add the Smart Banners code to your website to convert your website visitors into mobile app users."
+title: Smart Banners website code implementation for marketers
+excerpt: >-
+  Add the Smart Banners code to your website to convert your website visitors
+  into mobile app users.
+metadata:
+  keywords:
+    - OneLink
+    - Advertisers
+    - Developer
+    - Developers
+    - Smart Banner
+    - Marketers
+    - Smart Banners and Scripts
 x-zendesk:
-  id: 4416119954705
-  url: https://support.appsflyer.com/hc/en-us/articles/4416119954705-Smart-Banners-website-code-implementation-for-marketers
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Web-to-app attribution
-  section_id: 6551240476177
-  position: 2
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, Smart Banners and Scripts]
-  labels: [OneLink, Advertisers, Developer, Developers, Smart Banner, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: false
   created_at: '2022-01-10T11:25:54Z'
   edited_at: '2024-04-25T07:23:35Z'
+  id: 4416119954705
+  locale: en-us
+  section: Web-to-app attribution
+  section_id: 6551240476177
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4416119954705-Smart-Banners-website-code-implementation-for-marketers
 ---
 > 📘 **Note**
 >

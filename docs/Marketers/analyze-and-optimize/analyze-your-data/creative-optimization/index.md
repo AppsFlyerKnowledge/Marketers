@@ -1,18 +1,19 @@
 ---
-title: "Creative Optimization"
-excerpt: "Analyze your creative performance to gain critical insights before planning, selecting, or producing your next batch of creatives"
+title: Creative Optimization
+excerpt: >-
+  Analyze your creative performance to gain critical insights before planning,
+  selecting, or producing your next batch of creatives
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 4419063475217
-  url: https://support.appsflyer.com/hc/en-us/sections/4419063475217-Creative-Optimization
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550901627921
-  position: 5
-  sorting: manual
   created_at: '2022-01-30T14:12:26Z'
+  id: 4419063475217
+  locale: en-us
+  parent_section_id: 6550901627921
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/4419063475217-Creative-Optimization
 ---
 <Cards>
   <Card title="Creative Optimization—onboarding guide" href="/docs/creative-optimization-onboarding-guide" icon="fa-solid fa-rocket">

@@ -1,26 +1,24 @@
 ---
-title: "Data Clean Room—Data enrichment through tech partner integrations"
-excerpt: "Enrich your data and enhance your Data Clean Room (DCR) reports with data from our integrated tech partners."
+title: Data Clean Room—Data enrichment through tech partner integrations
+excerpt: >-
+  Enrich your data and enhance your Data Clean Room (DCR) reports with data from
+  our integrated tech partners.
+metadata:
+  keywords:
+    - Premium
+    - Marketers
+    - Data Clean Room
 x-zendesk:
-  id: 14035927509137
-  url: https://support.appsflyer.com/hc/en-us/articles/14035927509137-Data-Clean-Room-Data-enrichment-through-tech-partner-integrations
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Clean Room
-  section_id: 4591191779217
-  position: 11
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-inbar-agassi, Marketers, Data Clean Room]
-  labels: [Premium, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-03-26T08:07:17Z'
   edited_at: '2026-05-31T11:54:51Z'
+  id: 14035927509137
+  locale: en-us
+  section: Data Clean Room
+  section_id: 4591191779217
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/14035927509137-Data-Clean-Room-Data-enrichment-through-tech-partner-integrations
 ---
 ![beta feature](https://files.readme.io/d57432ddeb4d168760f9acd97f4287473658a8528edc1114ecee8ee2f8e9c9b2-16484830033425.png)
 

@@ -1,17 +1,16 @@
 ---
-title: "Measure paid media"
-excerpt: "Set up paid media sources and SKAdNetwork for attribution measurement"
+title: Measure paid media
+excerpt: Set up paid media sources and SKAdNetwork for attribution measurement
 x-zendesk:
-  type: section
-  id: 6550990672401
-  url: https://support.appsflyer.com/hc/en-us/sections/6550990672401-Measure-paid-media
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6551006275729
-  position: 0
-  sorting: manual
   created_at: '2022-06-02T11:24:31Z'
+  id: 6550990672401
+  locale: en-us
+  parent_section_id: 6551006275729
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6550990672401-Measure-paid-media
 ---
 <Cards>
   <Card title="Android privacy sandbox" href="/docs/android-privacy-sandbox" icon="fa-solid fa-user-shield">

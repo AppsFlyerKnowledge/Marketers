@@ -1,26 +1,26 @@
 ---
-title: "Postback retries"
-excerpt: "Learn how postback retries work in AppsFlyer and how integrated partners can configure their postback mechanisms."
+title: Postback retries
+excerpt: >-
+  Learn how postback retries work in AppsFlyer and how integrated partners can
+  configure their postback mechanisms.
+metadata:
+  keywords:
+    - Advertisers
+    - Ad Networks
+    - Partners
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360001376085
-  url: https://support.appsflyer.com/hc/en-us/articles/360001376085-Postback-retries
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Receive data
-  section_id: 6551235995281
-  position: 2
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [Advertisers, Ad Networks, Partners]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-08-06T04:59:54Z'
   edited_at: '2023-02-15T13:15:04Z'
+  id: 360001376085
+  locale: en-us
+  section: Receive data
+  section_id: 6551235995281
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360001376085-Postback-retries
 ---
 ## Introduction
 

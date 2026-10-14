@@ -1,26 +1,23 @@
 ---
-title: "Aggregated data export page"
-excerpt: "Download lifetime value (LTV) aggregate reports filtered by attribution date and media source."
+title: Aggregated data export page
+excerpt: >-
+  Download lifetime value (LTV) aggregate reports filtered by attribution date
+  and media source.
+metadata:
+  keywords:
+    - Marketers
+    - Raw Reports
 x-zendesk:
-  id: 360008614078
-  url: https://support.appsflyer.com/hc/en-us/articles/360008614078-Aggregated-data-export-page
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data delivery tools
-  section_id: 6550995484561
-  position: 1
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-rona-einat, Marketers, Raw Reports]
-  labels: [Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-05-11T22:27:16Z'
   edited_at: '2024-01-04T10:34:54Z'
+  id: 360008614078
+  locale: en-us
+  section: Data delivery tools
+  section_id: 6550995484561
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360008614078-Aggregated-data-export-page
 ---
 ## Aggregate data reports
 

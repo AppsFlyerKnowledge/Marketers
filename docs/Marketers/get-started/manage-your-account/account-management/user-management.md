@@ -1,26 +1,24 @@
 ---
-title: "User management"
-excerpt: "Create and manage your account's AppsFlyer users, and assign them permissions to access features, apps, and data."
+title: User management
+excerpt: >-
+  Create and manage your account's AppsFlyer users, and assign them permissions
+  to access features, apps, and data.
+metadata:
+  keywords:
+    - Advertisers
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 4409128270481
-  url: https://support.appsflyer.com/hc/en-us/articles/4409128270481-User-management
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Account management
-  section_id: 6551191075473
-  position: 1
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-roy-negri, Marketers, Platform essentials]
-  labels: [Advertisers, Marketers, Localize, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-10-17T11:54:49Z'
   edited_at: '2026-09-20T12:12:52Z'
+  id: 4409128270481
+  locale: en-us
+  section: Account management
+  section_id: 6551191075473
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4409128270481-User-management
 ---
 ## Overview
 

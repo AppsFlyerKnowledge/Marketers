@@ -1,27 +1,22 @@
 ---
-title: "Finding the Apple bundle ID"
-excerpt: "Find the Apple bundle ID and use it as needed."
+title: Finding the Apple bundle ID
+excerpt: Find the Apple bundle ID and use it as needed.
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 360013555718
-  url: https://support.appsflyer.com/hc/en-us/articles/360013555718-Finding-the-Apple-bundle-ID
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: iOS platform
-  section_id: 6551263106577
-  position: 4
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-09-21T09:03:32Z'
   edited_at: '2026-08-18T09:08:36Z'
+  id: 360013555718
+  locale: en-us
+  section: iOS platform
+  section_id: 6551263106577
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360013555718-Finding-the-Apple-bundle-ID
 ---
 The Apple bundle ID is a unique identifier associated with iOS apps.
 

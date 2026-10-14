@@ -1,26 +1,22 @@
 ---
-title: "X Ads (formerly Twitter Ads) setup guide—overview"
-excerpt: "Learn the background of integrating your X Ads account with AppsFlyer."
+title: X Ads (formerly Twitter Ads) setup guide—overview
+excerpt: Learn the background of integrating your X Ads account with AppsFlyer.
+metadata:
+  keywords:
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 4410464316049
-  url: https://support.appsflyer.com/hc/en-us/articles/4410464316049-X-Ads-formerly-Twitter-Ads-setup-guide-overview
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: X Ads (formerly Twitter Ads)
-  section_id: 6551370375569
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-11-09T09:31:36Z'
   edited_at: '2023-11-23T12:16:22Z'
+  id: 4410464316049
+  locale: en-us
+  section: X Ads (formerly Twitter Ads)
+  section_id: 6551370375569
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4410464316049-X-Ads-formerly-Twitter-Ads-setup-guide-overview
 ---
 ![X Ads logo.png](https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png)
 

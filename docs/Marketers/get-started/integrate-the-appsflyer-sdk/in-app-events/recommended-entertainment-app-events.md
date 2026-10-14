@@ -1,26 +1,25 @@
 ---
-title: "Recommended entertainment app events"
-excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your entertainment app."
+title: Recommended entertainment app events
+excerpt: >-
+  Measure the quality of your users throughout their user journey by recording
+  these suggested in-app events for your entertainment app.
+metadata:
+  keywords:
+    - Advertisers
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360019699898
-  url: https://support.appsflyer.com/hc/en-us/articles/360019699898-Recommended-entertainment-app-events
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: In-app events
-  section_id: 6551285343761
-  position: 10
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-04-25T10:44:33Z'
   edited_at: '2026-02-25T13:59:20Z'
+  id: 360019699898
+  locale: en-us
+  section: In-app events
+  section_id: 6551285343761
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360019699898-Recommended-entertainment-app-events
 ---
 ## ![InApp_Events_streaming.png](https://files.readme.io/27f2f38b0ce7d242580c60edeff730079a3801f98ff0d7cb8a605380ed11071f-20659453813905.png) Entertainment
 

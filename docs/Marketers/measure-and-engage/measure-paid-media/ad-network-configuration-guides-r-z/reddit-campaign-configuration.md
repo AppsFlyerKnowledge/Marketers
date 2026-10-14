@@ -1,26 +1,27 @@
 ---
-title: "Reddit campaign configuration"
-excerpt: "Reddit, an AppsFlyer ad network integrated partner, is home to 430 million highly engaged monthly users who can’t be found anywhere else."
+title: Reddit campaign configuration
+excerpt: >-
+  Reddit, an AppsFlyer ad network integrated partner, is home to 430 million
+  highly engaged monthly users who can’t be found anywhere else.
+metadata:
+  keywords:
+    - integrated partner
+    - Advertisers
+    - Agencies
+    - reddit
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360011016138
-  url: https://support.appsflyer.com/hc/en-us/articles/360011016138-Reddit-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (R-Z)
-  section_id: 6552025468305
-  position: 2
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Agencies]
-  labels: [integrated partner, Advertisers, Agencies, reddit, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-07-09T09:50:46Z'
   edited_at: '2026-09-09T13:07:27Z'
+  id: 360011016138
+  locale: en-us
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360011016138-Reddit-campaign-configuration
 ---
 ## Setting up Reddit
 

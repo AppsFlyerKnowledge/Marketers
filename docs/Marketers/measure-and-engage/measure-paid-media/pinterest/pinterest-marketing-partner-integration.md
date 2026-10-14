@@ -1,27 +1,27 @@
 ---
-title: "Pinterest Marketing Partner Integration"
-excerpt: "Enable Pinterest Marketing Partners (PMPs) to receive install data for users attributed to Pinterest."
+title: Pinterest Marketing Partner Integration
+excerpt: >-
+  Enable Pinterest Marketing Partners (PMPs) to receive install data for users
+  attributed to Pinterest.
+metadata:
+  keywords:
+    - Pinterest
+    - PMP
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 217408966
-  url: https://support.appsflyer.com/hc/en-us/articles/217408966-Pinterest-Marketing-Partner-Integration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Pinterest
-  section_id: 6551388216337
-  position: 1
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Pinterest, PMP, Advertisers, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-12-08T16:05:33Z'
   edited_at: '2026-08-14T16:22:39Z'
+  id: 217408966
+  locale: en-us
+  section: Pinterest
+  section_id: 6551388216337
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/217408966-Pinterest-Marketing-Partner-Integration
 ---
 Every PMP must be an official PMP and must also be approved by AppsFlyer on the back-end.
 

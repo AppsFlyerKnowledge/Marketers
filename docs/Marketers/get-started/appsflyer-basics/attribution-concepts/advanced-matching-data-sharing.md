@@ -1,26 +1,24 @@
 ---
-title: "Advanced-Matching Data Sharing"
-excerpt: "Advanced-Matching Data Sharing enables hashed user identifiers, such as email and phone number, to be forwarded from AppsFlyer to selected ad networks, allowing partners to attribute events to ad engagements without a device ID."
+title: Advanced-Matching Data Sharing
+excerpt: >-
+  Advanced-Matching Data Sharing enables hashed user identifiers, such as email
+  and phone number, to be forwarded from AppsFlyer to selected ad networks,
+  allowing partners to attribute events to ad engagements without a device ID.
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 47876839961489
-  url: https://support.appsflyer.com/hc/en-us/articles/47876839961489-Advanced-Matching-Data-Sharing
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Attribution concepts
-  section_id: 6551394235409
-  position: 5
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: []
-  promoted: false
-  comments_disabled: false
   created_at: '2026-06-18T14:23:54Z'
   edited_at: '2026-10-11T11:53:49Z'
+  id: 47876839961489
+  locale: en-us
+  section: Attribution concepts
+  section_id: 6551394235409
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/47876839961489-Advanced-Matching-Data-Sharing
 ---
 ## About Advanced-Matching Data Sharing
 

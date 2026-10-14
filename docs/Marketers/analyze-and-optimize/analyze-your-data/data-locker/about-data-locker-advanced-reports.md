@@ -1,28 +1,27 @@
 ---
-title: "About Data Locker Advanced Reports"
-excerpt: "Advanced Reports deliver consolidated, typed, and consistently named event-level data across mobile, web, and connected TV (CTV) platforms in a single report, so you can spend less time preparing data and more time using it."
+title: About Data Locker Advanced Reports
+excerpt: >-
+  Advanced Reports deliver consolidated, typed, and consistently named
+  event-level data across mobile, web, and connected TV (CTV) platforms in a
+  single report, so you can spend less time preparing data and more time using
+  it.
+metadata:
+  keywords:
+    - Marketers
+    - Data Locker
 x-zendesk:
-  id: 45424430660497
-  url: https://support.appsflyer.com/hc/en-us/articles/45424430660497-About-Data-Locker-Advanced-Reports
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Locker
-  section_id: 6550945728657
-  position: 2
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-rona-einat, Marketers, Data Locker]
-  labels: []
-  promoted: false
-  comments_disabled: false
   created_at: '2026-04-04T10:49:27Z'
   edited_at: '2026-09-03T15:20:32Z'
+  id: 45424430660497
+  locale: en-us
+  section: Data Locker
+  section_id: 6550945728657
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/45424430660497-About-Data-Locker-Advanced-Reports
 ---
-<Embed title="About Data Locker Advanced Reports" typeOfEmbed="youtube" url="https://www.youtube-nocookie.com/embed/0Myz1hxZJH0" providerUrl="https://www.youtube-nocookie.com" />
+<Embed title="About Data Locker Advanced Reports" typeOfEmbed="youtube" url="https://www.youtube.com/embed/0Myz1hxZJH0" providerUrl="https://www.youtube.com" />
 
 ## About Advanced Reports
 

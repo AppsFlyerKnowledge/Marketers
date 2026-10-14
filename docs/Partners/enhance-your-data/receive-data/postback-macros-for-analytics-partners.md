@@ -1,26 +1,26 @@
 ---
-title: "Postback macros for analytics partners"
-excerpt: "Use macros as part of the postbacks sent to analytics partners to get relevant attribution data."
+title: Postback macros for analytics partners
+excerpt: >-
+  Use macros as part of the postbacks sent to analytics partners to get relevant
+  attribution data.
+metadata:
+  keywords:
+    - Advertisers
+    - Ad Networks
+    - Partners
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360016751637
-  url: https://support.appsflyer.com/hc/en-us/articles/360016751637-Postback-macros-for-analytics-partners
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Receive data
-  section_id: 6551235995281
-  position: 3
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [Advertisers, Ad Networks, Partners]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-01-04T04:44:40Z'
   edited_at: '2026-08-14T16:22:42Z'
+  id: 360016751637
+  locale: en-us
+  section: Receive data
+  section_id: 6551235995281
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360016751637-Postback-macros-for-analytics-partners
 ---
 ## Postbacks for analytics partners
 

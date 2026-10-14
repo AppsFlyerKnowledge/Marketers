@@ -1,26 +1,27 @@
 ---
-title: "Audiences guide"
-excerpt: "Increase the efficiency of your user acquisition and remarketing campaigns by using AppsFlyer Audiences to build and connect audience segments to your partner networks."
+title: Audiences guide
+excerpt: >-
+  Increase the efficiency of your user acquisition and remarketing campaigns by
+  using AppsFlyer Audiences to build and connect audience segments to your
+  partner networks.
+metadata:
+  keywords:
+    - Audiences
+    - Advertisers
+    - Premium
+    - Premium Feature
+    - Marketers
+    - Audience Segmentation
 x-zendesk:
-  id: 115002689186
-  url: https://support.appsflyer.com/hc/en-us/articles/115002689186-Audiences-guide
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Audiences
-  section_id: 6551336428945
-  position: 1
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-neama-benhabib, Marketers, Audience Segmentation]
-  labels: [Audiences, Advertisers, Premium, Premium Feature, Marketers, Loc Published]
-  promoted: true
-  comments_disabled: true
   created_at: '2017-05-30T07:21:22Z'
   edited_at: '2026-05-31T10:25:39Z'
+  id: 115002689186
+  locale: en-us
+  section: Audiences
+  section_id: 6551336428945
+  url: https://support.appsflyer.com/hc/en-us/articles/115002689186-Audiences-guide
 ---
 ![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
 

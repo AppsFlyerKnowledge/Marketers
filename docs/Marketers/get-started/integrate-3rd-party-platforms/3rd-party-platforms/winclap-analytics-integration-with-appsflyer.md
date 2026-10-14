@@ -1,26 +1,23 @@
 ---
-title: "Winclap Analytics integration with AppsFlyer"
-excerpt: "Winclap Analytics, an AppsFlyer integrated partner, uses AppsFlyer attribution data for BI and post-attribution analytics."
+title: Winclap Analytics integration with AppsFlyer
+excerpt: >-
+  Winclap Analytics, an AppsFlyer integrated partner, uses AppsFlyer attribution
+  data for BI and post-attribution analytics.
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360002403537
-  url: https://support.appsflyer.com/hc/en-us/articles/360002403537-Winclap-Analytics-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: 3rd-party platforms
-  section_id: 6551199962257
-  position: 32
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2019-09-04T11:07:12Z'
   edited_at: '2026-09-15T09:17:18Z'
+  id: 360002403537
+  locale: en-us
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360002403537-Winclap-Analytics-integration-with-AppsFlyer
 ---
 > 📘 **Important!**
 >

@@ -1,26 +1,24 @@
 ---
-title: "User management for agencies"
-excerpt: "Create and manage your agency account's AppsFlyer users, and assign them permissions to access features and apps."
+title: User management for agencies
+excerpt: >-
+  Create and manage your agency account's AppsFlyer users, and assign them
+  permissions to access features and apps.
+metadata:
+  keywords:
+    - Agencies
+    - Partners
+    - Platform essentials
 x-zendesk:
-  id: 4414231896337
-  url: https://support.appsflyer.com/hc/en-us/articles/4414231896337-User-management-for-agencies
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Agency onboarding
-  section_id: 6551110223889
-  position: 2
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Platform essentials, Agencies]
-  labels: [Agencies, Partners, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-12-19T11:18:09Z'
   edited_at: '2024-01-04T11:08:46Z'
+  id: 4414231896337
+  locale: en-us
+  section: Agency onboarding
+  section_id: 6551110223889
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4414231896337-User-management-for-agencies
 ---
 ## User roles and access permissions
 

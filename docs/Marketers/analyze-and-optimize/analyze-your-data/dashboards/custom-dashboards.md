@@ -1,26 +1,24 @@
 ---
-title: "Custom dashboards"
-excerpt: "Build your own customized dashboards inside AppsFlyer. You can easily select, name, and position the data in your own customized reports."
+title: Custom dashboards
+excerpt: >-
+  Build your own customized dashboards inside AppsFlyer. You can easily select,
+  name, and position the data in your own customized reports.
+metadata:
+  keywords:
+    - custom dashboard
+    - Advertisers
+    - Marketers
+    - Marketing Analytics
 x-zendesk:
-  id: 212750286
-  url: https://support.appsflyer.com/hc/en-us/articles/212750286-Custom-dashboards
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Dashboards
-  section_id: 6550925337873
-  position: 14
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-shani-elkabetz, Marketers, Marketing Analytics]
-  labels: [custom dashboard, Advertisers, Marketers, Localize]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-09-15T11:06:24Z'
   edited_at: '2026-03-18T09:05:20Z'
+  id: 212750286
+  locale: en-us
+  section: Dashboards
+  section_id: 6550925337873
+  url: https://support.appsflyer.com/hc/en-us/articles/212750286-Custom-dashboards
 ---
 [![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
 

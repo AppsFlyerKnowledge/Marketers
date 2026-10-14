@@ -1,25 +1,29 @@
 ---
-title: "[Legacy] Receipt validation for in-app purchases"
+title: '[Legacy] Receipt validation for in-app purchases'
+deprecated: true
+metadata:
+  keywords:
+    - iOS
+    - Android
+    - Receipt
+    - Validation
+    - Receipt Validation
+    - SDK
+    - Advertisers
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 207032106
-  url: https://support.appsflyer.com/hc/en-us/articles/207032106--Legacy-Receipt-validation-for-in-app-purchases
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: In-app events
-  section_id: 6551285343761
-  position: 6
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [iOS, Android, Receipt, Validation, Receipt Validation, SDK, Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2015-02-26T10:30:58Z'
   edited_at: '2025-12-28T12:17:51Z'
+  id: 207032106
+  locale: en-us
+  section: In-app events
+  section_id: 6551285343761
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207032106--Legacy-Receipt-validation-for-in-app-purchases
 ---
 > 📘 **Important!**
 >

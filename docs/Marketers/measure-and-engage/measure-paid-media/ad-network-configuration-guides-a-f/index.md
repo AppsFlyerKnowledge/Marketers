@@ -1,17 +1,16 @@
 ---
-title: "Ad network configuration guides (A-F)"
-excerpt: "Set up selected ad networks for AppsFlyer attribution"
+title: Ad network configuration guides (A-F)
+excerpt: Set up selected ad networks for AppsFlyer attribution
 x-zendesk:
-  type: section
-  id: 6551990971793
-  url: https://support.appsflyer.com/hc/en-us/sections/6551990971793-Ad-network-configuration-guides-A-F
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550990672401
-  position: 15
-  sorting: manual
   created_at: '2022-06-02T12:04:41Z'
+  id: 6551990971793
+  locale: en-us
+  parent_section_id: 6550990672401
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551990971793-Ad-network-configuration-guides-A-F
 ---
 ### [Adobe](/docs/adobe)
 

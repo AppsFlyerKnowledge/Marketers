@@ -1,25 +1,28 @@
 ---
-title: "AppsFlyer factory preinstall using manifest (Android)"
+title: AppsFlyer factory preinstall using manifest (Android)
+metadata:
+  keywords:
+    - Android
+    - Pre-Install
+    - Attribution
+    - Metrics
+    - Advertisers
+    - Agencies
+    - af_pre_install_name
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 207032166
-  url: https://support.appsflyer.com/hc/en-us/articles/207032166-AppsFlyer-factory-preinstall-using-manifest-Android
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Android platform
-  section_id: 6551190827921
-  position: 3
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution, Agencies]
-  labels: [Android, Pre-Install, Attribution, Metrics, Advertisers, Agencies, af_pre_install_name, Developers, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2014-10-13T11:14:04Z'
   edited_at: '2024-07-30T14:37:09Z'
+  id: 207032166
+  locale: en-us
+  section: Android platform
+  section_id: 6551190827921
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207032166-AppsFlyer-factory-preinstall-using-manifest-Android
 ---
 **At a glance:** Attribute app installs to device manufacturers for apps added to devices before leaving the factory. **Note**: See [all other preload attribution methods](/docs/appsflyer-attribution-model#preload-campaigns).
 

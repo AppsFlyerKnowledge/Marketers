@@ -1,26 +1,25 @@
 ---
-title: "In-app event generator"
-excerpt: "Automatically create the app code (native Android and iOS, Unity) for sending in-app events by defining the event names and content according to your business needs."
+title: In-app event generator
+excerpt: >-
+  Automatically create the app code (native Android and iOS, Unity) for sending
+  in-app events by defining the event names and content according to your
+  business needs.
+metadata:
+  keywords:
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 10457123447953
-  url: https://support.appsflyer.com/hc/en-us/articles/10457123447953-In-app-event-generator
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: In-app events
-  section_id: 6551285343761
-  position: 3
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Developers, Marketers]
-  promoted: true
-  comments_disabled: true
   created_at: '2022-11-08T12:47:30Z'
   edited_at: '2023-11-02T10:46:46Z'
+  id: 10457123447953
+  locale: en-us
+  section: In-app events
+  section_id: 6551285343761
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/10457123447953-In-app-event-generator
 ---
 ## Introduction
 

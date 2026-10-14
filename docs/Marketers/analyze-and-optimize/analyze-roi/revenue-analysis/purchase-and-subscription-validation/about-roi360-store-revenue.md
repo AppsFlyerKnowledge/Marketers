@@ -1,26 +1,24 @@
 ---
 title: About ROI360 store revenue
-excerpt: "Use ROI360 store revenue to validate in-app purchases and subscriptions, prevent duplicates, and calculate net revenue."
+excerpt: >-
+  Use ROI360 store revenue to validate in-app purchases and subscriptions,
+  prevent duplicates, and calculate net revenue.
+metadata:
+  keywords:
+    - Premium
+    - Marketers
+    - ROI360
 x-zendesk:
-  id: 42138855425297
-  url: https://support.appsflyer.com/hc/en-us/articles/42138855425297-About-ROI360-store-revenue
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Purchase and subscription validation
-  section_id: 42227328788241
-  position: 3
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-michael-talapov, Marketers, ROI360]
-  labels: [Premium]
-  promoted: false
-  comments_disabled: false
   created_at: '2025-12-21T16:34:39Z'
   edited_at: '2026-10-05T09:07:40Z'
+  id: 42138855425297
+  locale: en-us
+  section: Purchase and subscription validation
+  section_id: 42227328788241
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/42138855425297-About-ROI360-store-revenue
 ---
 > 📘 **Important!**
 >

@@ -1,26 +1,25 @@
 ---
-title: "TikTok for Business—Create web campaigns for website apps"
-excerpt: "Set up a TikTok Web Ads integration for your website app to send web conversion signals to TikTok via the Events API."
+title: TikTok for Business—Create web campaigns for website apps
+excerpt: >-
+  Set up a TikTok Web Ads integration for your website app to send web
+  conversion signals to TikTok via the Events API.
+metadata:
+  keywords:
+    - Web Attribution
+    - Web Attribution SDK
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 46191822292113
-  url: https://support.appsflyer.com/hc/en-us/articles/46191822292113-TikTok-for-Business-Create-web-campaigns-for-website-apps
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: TikTok for Business
-  section_id: 12192554266385
-  position: 1
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Web Attribution, Web Attribution SDK, Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2026-04-29T07:09:07Z'
   edited_at: '2026-08-30T15:27:34Z'
+  id: 46191822292113
+  locale: en-us
+  section: TikTok for Business
+  section_id: 12192554266385
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/46191822292113-TikTok-for-Business-Create-web-campaigns-for-website-apps
 ---
 ## Overview
 

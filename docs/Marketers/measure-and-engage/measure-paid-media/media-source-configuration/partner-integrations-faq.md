@@ -1,26 +1,24 @@
 ---
-title: "Partner Integrations—FAQ"
-excerpt: "Find answers to frequently asked questions about AppsFlyer Partner Integrations."
+title: Partner Integrations—FAQ
+excerpt: >-
+  Find answers to frequently asked questions about AppsFlyer Partner
+  Integrations.
+metadata:
+  keywords:
+    - Marketers
+    - marketplace
+    - Mobile Attribution
 x-zendesk:
-  id: 11189057923601
-  url: https://support.appsflyer.com/hc/en-us/articles/11189057923601-Partner-Integrations-FAQ
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Media source configuration
-  section_id: 6551067072785
-  position: 6
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Marketers, marketplace, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-12-06T14:20:35Z'
   edited_at: '2026-04-15T11:28:11Z'
+  id: 11189057923601
+  locale: en-us
+  section: Media source configuration
+  section_id: 6551067072785
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/11189057923601-Partner-Integrations-FAQ
 ---
 ## Use Partner Integrations
 

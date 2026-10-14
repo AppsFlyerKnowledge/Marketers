@@ -1,26 +1,26 @@
 ---
-title: "Cost reporting on the attribution link for ad networks"
-excerpt: "Ad networks can report cost every time an ad is clicked."
+title: Cost reporting on the attribution link for ad networks
+excerpt: Ad networks can report cost every time an ad is clicked.
+metadata:
+  keywords:
+    - cost sharing
+    - cost
+    - Agencies
+    - Ad Networks
+    - Partners
+    - Marketers
+    - ROI360
 x-zendesk:
-  id: 115000748446
-  url: https://support.appsflyer.com/hc/en-us/articles/115000748446-Cost-reporting-on-the-attribution-link-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Cost sharing for ad networks
-  section_id: 6551141756177
-  position: 4
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-maytav-avnat, Marketers, ROI360, Ad Networks]
-  labels: [cost sharing, cost, Agencies, Ad Networks, Partners, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-02-12T14:54:50Z'
   edited_at: '2026-06-22T10:03:59Z'
+  id: 115000748446
+  locale: en-us
+  section: Cost sharing for ad networks
+  section_id: 6551141756177
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115000748446-Cost-reporting-on-the-attribution-link-for-ad-networks
 ---
 Advertisers use the AppsFlyer dashboard as their source of truth for all budget allocation decisions, making it easy to see where to invest. For networks wanting to be visible in that process, sharing cost data with AppsFlyer is an absolute must.
 

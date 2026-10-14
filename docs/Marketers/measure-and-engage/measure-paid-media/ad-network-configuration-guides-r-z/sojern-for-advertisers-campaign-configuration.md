@@ -1,26 +1,25 @@
 ---
-title: "Sojern for Advertisers campaign configuration"
-excerpt: "Sojern for Advertisers, an AppsFlyer ad network integrated partner, specializes in programmatic buying for the travel market."
+title: Sojern for Advertisers campaign configuration
+excerpt: >-
+  Sojern for Advertisers, an AppsFlyer ad network integrated partner,
+  specializes in programmatic buying for the travel market.
+metadata:
+  keywords:
+    - Advertisers
+    - Sojern
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360001378265
-  url: https://support.appsflyer.com/hc/en-us/articles/360001378265-Sojern-for-Advertisers-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (R-Z)
-  section_id: 6552025468305
-  position: 7
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Advertisers, Sojern, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-08-07T08:59:30Z'
   edited_at: '2026-09-09T13:01:28Z'
+  id: 360001378265
+  locale: en-us
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360001378265-Sojern-for-Advertisers-campaign-configuration
 ---
 To configure your campaigns with Sojern for Advertisers, follow the steps below.
 

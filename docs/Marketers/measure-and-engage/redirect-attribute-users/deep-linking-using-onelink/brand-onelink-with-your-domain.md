@@ -1,26 +1,24 @@
 ---
-title: "Brand OneLink with your domain"
-excerpt: "Advertisers using OneLink links can brand them with their own domain. This improves campaign performance and increases brand exposure."
+title: Brand OneLink with your domain
+excerpt: >-
+  Advertisers using OneLink links can brand them with their own domain. This
+  improves campaign performance and increases brand exposure.
+metadata:
+  keywords:
+    - Marketers
+    - cname
+    - OneLink
 x-zendesk:
-  id: 360002329137
-  url: https://support.appsflyer.com/hc/en-us/articles/360002329137-Brand-OneLink-with-your-domain
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Deep linking using OneLink
-  section_id: 6551203111057
-  position: 11
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, OneLink]
-  labels: [Marketers, cname]
-  promoted: false
-  comments_disabled: true
   created_at: '2019-08-26T09:00:09Z'
   edited_at: '2026-08-14T16:22:56Z'
+  id: 360002329137
+  locale: en-us
+  section: Deep linking using OneLink
+  section_id: 6551203111057
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360002329137-Brand-OneLink-with-your-domain
 ---
 ![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
 

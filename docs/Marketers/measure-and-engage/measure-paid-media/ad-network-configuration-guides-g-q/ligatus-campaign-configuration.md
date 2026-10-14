@@ -1,26 +1,28 @@
 ---
-title: "Ligatus campaign configuration"
-excerpt: "Ligatus, an AppsFlyer ad network integrated partner, leads Native Advertising Solutions for Publishers, Advertisers, and Programmatic buyers offering high-quality and high-performance results. In addition to click-based mobile attribution, Ligatus also offers cost, ad revenue, retargeting, and view-through attribution, which you can record with AppsFlyer."
+title: Ligatus campaign configuration
+excerpt: >-
+  Ligatus, an AppsFlyer ad network integrated partner, leads Native Advertising
+  Solutions for Publishers, Advertisers, and Programmatic buyers offering
+  high-quality and high-performance results. In addition to click-based mobile
+  attribution, Ligatus also offers cost, ad revenue, retargeting, and
+  view-through attribution, which you can record with AppsFlyer.
+metadata:
+  keywords:
+    - Ligatus
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 211189743
-  url: https://support.appsflyer.com/hc/en-us/articles/211189743-Ligatus-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (G-Q)
-  section_id: 6552006535953
-  position: 9
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Ligatus, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-06-20T12:47:01Z'
   edited_at: '2026-06-16T11:41:41Z'
+  id: 211189743
+  locale: en-us
+  section: Ad network configuration guides (G-Q)
+  section_id: 6552006535953
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/211189743-Ligatus-campaign-configuration
 ---
 ![](https://cdn.appsflyer.com/marketplace/static/logo/ligatus.png)
 

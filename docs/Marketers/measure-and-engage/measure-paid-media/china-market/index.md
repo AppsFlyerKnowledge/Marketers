@@ -1,18 +1,16 @@
 ---
-title: "China market"
-excerpt: "Promote Android and iOS apps in China from elsewhere in the world"
+title: China market
+excerpt: Promote Android and iOS apps in China from elsewhere in the world
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6552042145425
-  url: https://support.appsflyer.com/hc/en-us/sections/6552042145425-China-market
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550990672401
-  position: 18
-  sorting: manual
   created_at: '2022-06-02T12:06:53Z'
+  id: 6552042145425
+  locale: en-us
+  parent_section_id: 6550990672401
+  type: section
+  url: https://support.appsflyer.com/hc/en-us/sections/6552042145425-China-market
 ---
 Promote Android and iOS apps in China from elsewhere in the world
 

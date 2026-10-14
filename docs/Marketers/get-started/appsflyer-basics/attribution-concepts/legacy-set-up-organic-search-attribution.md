@@ -1,25 +1,26 @@
 ---
-title: "[Legacy] Set up organic search attribution"
+title: '[Legacy] Set up organic search attribution'
+deprecated: true
+metadata:
+  keywords:
+    - Android
+    - organic
+    - keyword
+    - search
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 210195193
-  url: https://support.appsflyer.com/hc/en-us/articles/210195193--Legacy-Set-up-organic-search-attribution
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Attribution concepts
-  section_id: 6551394235409
-  position: 24
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-moran-davida, Marketers, Mobile Attribution]
-  labels: [Android, organic, keyword, search, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-04-28T06:35:08Z'
   edited_at: '2025-04-05T12:55:18Z'
+  id: 210195193
+  locale: en-us
+  section: Attribution concepts
+  section_id: 6551394235409
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/210195193--Legacy-Set-up-organic-search-attribution
 ---
 **At a glance:** Get detailed organic search attribution data so you can optimize organic conversions. [See our updated organic search attribution method](/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution).
 

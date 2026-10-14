@@ -1,25 +1,23 @@
 ---
-title: "Bulletin: Ad revenue reporting change"
+title: 'Bulletin: Ad revenue reporting change'
+metadata:
+  keywords:
+    - ad revenue
+    - Agencies
+    - data freshness
+    - Marketers
+    - ROI360
 x-zendesk:
-  id: 360007980057
-  url: https://support.appsflyer.com/hc/en-us/articles/360007980057-Bulletin-Ad-revenue-reporting-change
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 62
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-michael-talapov, Marketers, Agencies, ROI360]
-  labels: [ad revenue, Agencies, data freshness, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-05-05T15:30:21Z'
   edited_at: '2023-02-15T13:15:06Z'
+  id: 360007980057
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360007980057-Bulletin-Ad-revenue-reporting-change
 ---
 * **What's changing**: The date of Ad revenue data (user-level and aggregate-level) in the platform is the day of the ad display event itself (the day the ad revenue occurs), instead of the day after. Meaning if an ad displays on Monday, the revenue displays under Monday. This gives advertisers a more accurate and actionable understanding of their ad revenue data.
 * **Who is impacted**: App owners, agencies

@@ -1,27 +1,24 @@
 ---
-title: "Bulletin: The Android SDK adds the AD_ID permission"
-excerpt: "Starting with AppsFlyer Android SDK V6.8.0, the AD_ID permission is declared in the SDK's AndroidManifest.xml."
+title: 'Bulletin: The Android SDK adds the AD_ID permission'
+excerpt: >-
+  Starting with AppsFlyer Android SDK V6.8.0, the AD_ID permission is declared
+  in the SDK's AndroidManifest.xml.
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 7569900844689
-  url: https://support.appsflyer.com/hc/en-us/articles/7569900844689-Bulletin-The-Android-SDK-adds-the-AD-ID-permission
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 46
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-07-12T08:57:45Z'
   edited_at: '2023-08-28T09:44:20Z'
+  id: 7569900844689
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/7569900844689-Bulletin-The-Android-SDK-adds-the-AD-ID-permission
 ---
 | **Background** | In early 2022, Google announced a change to the behavior of Google Play Services and fetching of the Android Advertising ID.<br /><br />According to the [announcement](https://support.google.com/googleplay/android-developer/answer/6048248?hl=en), apps targeting Android 13 (API 33) and above will have to declare a Google Play services normal permission in their manifest file in order to get access to the device’s Advertising ID.<br /><br />The permission is granted to the app at install time and does not trigger any user interaction. |
 | --- | --- |

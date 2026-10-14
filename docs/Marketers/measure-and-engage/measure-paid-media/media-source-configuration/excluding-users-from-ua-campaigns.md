@@ -1,26 +1,26 @@
 ---
-title: "Excluding users from UA campaigns"
-excerpt: "Exclude existing users from user acquisition (UA) campaigns to obtain more installs with the same budget and improve ROAS."
+title: Excluding users from UA campaigns
+excerpt: >-
+  Exclude existing users from user acquisition (UA) campaigns to obtain more
+  installs with the same budget and improve ROAS.
+metadata:
+  keywords:
+    - Advertisers
+    - Agencies
+    - Ad Networks
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360007949158
-  url: https://support.appsflyer.com/hc/en-us/articles/360007949158-Excluding-users-from-UA-campaigns
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Media source configuration
-  section_id: 6551067072785
-  position: 9
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Agencies, Ad Networks]
-  labels: [Advertisers, Agencies, Ad Networks, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-05-03T10:11:31Z'
   edited_at: '2023-02-15T13:15:06Z'
+  id: 360007949158
+  locale: en-us
+  section: Media source configuration
+  section_id: 6551067072785
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360007949158-Excluding-users-from-UA-campaigns
 ---
 ## Issues and consequences
 

@@ -1,26 +1,28 @@
 ---
-title: "Adquant by Kenshoo Apple Ads marketing partner—campaign configuration"
-excerpt: "Optimize Apple Ads campaigns by using Adquant by Kenshoo. When configured, AppsFlyer sends postbacks to Adquant."
+title: Adquant by Kenshoo Apple Ads marketing partner—campaign configuration
+excerpt: >-
+  Optimize Apple Ads campaigns by using Adquant by Kenshoo. When configured,
+  AppsFlyer sends postbacks to Adquant.
+metadata:
+  keywords:
+    - kenshoo
+    - Advertisers
+    - apple search ads
+    - Agencies
+    - adquant
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360001491269
-  url: https://support.appsflyer.com/hc/en-us/articles/360001491269-Adquant-by-Kenshoo-Apple-Ads-marketing-partner-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Apple Ads
-  section_id: 6551310453393
-  position: 1
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution, Agencies]
-  labels: [kenshoo, Advertisers, apple search ads, Agencies, adquant, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-09-20T07:53:06Z'
   edited_at: '2026-09-15T10:57:30Z'
+  id: 360001491269
+  locale: en-us
+  section: Apple Ads
+  section_id: 6551310453393
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360001491269-Adquant-by-Kenshoo-Apple-Ads-marketing-partner-campaign-configuration
 ---
 ## Enabling sending postbacks to Adquant (Apple Ads marketing partner)
 

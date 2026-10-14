@@ -1,26 +1,23 @@
 ---
-title: "End-user events cross-platform report in Data Locker"
-excerpt: "The Cross-platform end-user events report measures complete user journeys, conversions, and LTV across platforms and devices"
+title: End-user events cross-platform report in Data Locker
+excerpt: >-
+  The Cross-platform end-user events report measures complete user journeys,
+  conversions, and LTV across platforms and devices
+metadata:
+  keywords:
+    - Marketers
+    - Cross-Platform Measurement
 x-zendesk:
-  id: 39748676204817
-  url: https://support.appsflyer.com/hc/en-us/articles/39748676204817-End-user-events-cross-platform-report-in-Data-Locker
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Cross platform reports
-  section_id: 50467263168657
-  position: 6
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-moran-davida, Marketers, Cross-Platform Measurement]
-  labels: []
-  promoted: false
-  comments_disabled: true
   created_at: '2025-10-07T10:37:56Z'
   edited_at: '2026-09-03T09:06:58Z'
+  id: 39748676204817
+  locale: en-us
+  section: Cross platform reports
+  section_id: 50467263168657
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/39748676204817-End-user-events-cross-platform-report-in-Data-Locker
 ---
 The Cross-platform end-user events report is a raw data report that provides event-level logs of sessions and in-app events for each user, linked across platforms using your Customer User ID (CUID). Each event includes the cross-platform attribution result, enabling you to analyze complete user journeys.
 

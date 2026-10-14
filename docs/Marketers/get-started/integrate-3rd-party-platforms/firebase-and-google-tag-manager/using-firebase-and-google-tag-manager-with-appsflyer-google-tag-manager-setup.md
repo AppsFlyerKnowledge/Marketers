@@ -1,26 +1,24 @@
 ---
-title: "Using Firebase and Google Tag Manager with AppsFlyer—Google Tag Manager setup"
-excerpt: "Instructions for setting up event sending reported via Firebase SDK to AppsFlyer in Google Tag Manager."
+title: Using Firebase and Google Tag Manager with AppsFlyer—Google Tag Manager setup
+excerpt: >-
+  Instructions for setting up event sending reported via Firebase SDK to
+  AppsFlyer in Google Tag Manager.
+metadata:
+  keywords:
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 4410481509393
-  url: https://support.appsflyer.com/hc/en-us/articles/4410481509393-Using-Firebase-and-Google-Tag-Manager-with-AppsFlyer-Google-Tag-Manager-setup
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Firebase and Google Tag Manager
-  section_id: 6551267006225
-  position: 5
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Developers, Marketers, Loc In Prog, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-11-09T10:28:45Z'
   edited_at: '2026-08-14T16:22:49Z'
+  id: 4410481509393
+  locale: en-us
+  section: Firebase and Google Tag Manager
+  section_id: 6551267006225
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4410481509393-Using-Firebase-and-Google-Tag-Manager-with-AppsFlyer-Google-Tag-Manager-setup
 ---
 ## Google Tag Manager setup
 

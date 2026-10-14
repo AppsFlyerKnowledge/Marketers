@@ -1,26 +1,25 @@
 ---
-title: "[Beta] SKAN interoperation with Amazon"
-excerpt: "SKAN interoperability enables Amazon to share SKAN postbacks with AppsFlyer and enables AppsFlyer to share your conversion value measurement mapping with Amazon."
+title: '[Beta] SKAN interoperation with Amazon'
+excerpt: >-
+  SKAN interoperability enables Amazon to share SKAN postbacks with AppsFlyer
+  and enables AppsFlyer to share your conversion value measurement mapping with
+  Amazon.
+metadata:
+  keywords:
+    - Marketers
+    - Beta feature
+    - SKAdNetwork (SKAN)
 x-zendesk:
-  id: 27548444974353
-  url: https://support.appsflyer.com/hc/en-us/articles/27548444974353--Beta-SKAN-interoperation-with-Amazon
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: SKAN interoperation
-  section_id: 6552115163153
-  position: 0
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
-  labels: [Marketers, Beta feature]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-08-15T09:36:46Z'
   edited_at: '2026-09-08T06:52:18Z'
+  id: 27548444974353
+  locale: en-us
+  section: SKAN interoperation
+  section_id: 6552115163153
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/27548444974353--Beta-SKAN-interoperation-with-Amazon
 ---
 > 📘 **Note**
 >

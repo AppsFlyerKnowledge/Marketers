@@ -1,18 +1,17 @@
 ---
-title: "SSO authentication"
-excerpt: "Configure the SSO process using your IdP"
+title: SSO authentication
+excerpt: Configure the SSO process using your IdP
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 20162151531793
-  url: https://support.appsflyer.com/hc/en-us/sections/20162151531793-SSO-authentication
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6551173202065
-  position: 0
-  sorting: manual
   created_at: '2023-11-15T10:58:25Z'
+  id: 20162151531793
+  locale: en-us
+  parent_section_id: 6551173202065
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/20162151531793-SSO-authentication
 ---
 Configure the SSO process using your IdP
 

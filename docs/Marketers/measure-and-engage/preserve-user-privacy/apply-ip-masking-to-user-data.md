@@ -1,26 +1,25 @@
 ---
-title: "Apply IP masking to user data"
-excerpt: "How to mask app user IP addresses in AppsFlyer raw data reports and in postbacks sent to partners."
+title: Apply IP masking to user data
+excerpt: >-
+  How to mask app user IP addresses in AppsFlyer raw data reports and in
+  postbacks sent to partners.
+metadata:
+  keywords:
+    - IP masking
+    - Advertisers
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 208879066
-  url: https://support.appsflyer.com/hc/en-us/articles/208879066-Apply-IP-masking-to-user-data
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Preserve user privacy
-  section_id: 6551440878097
-  position: 8
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials]
-  labels: [IP masking, Advertisers, Marketers, Loc In Prog]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-05-23T12:59:55Z'
   edited_at: '2025-06-03T07:49:17Z'
+  id: 208879066
+  locale: en-us
+  section: Preserve user privacy
+  section_id: 6551440878097
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/208879066-Apply-IP-masking-to-user-data
 ---
 ## IP masking
 

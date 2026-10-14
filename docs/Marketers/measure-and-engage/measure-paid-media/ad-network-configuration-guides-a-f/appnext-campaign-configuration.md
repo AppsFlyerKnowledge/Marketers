@@ -1,26 +1,27 @@
 ---
-title: "Appnext campaign configuration"
-excerpt: "Appnext, an AppsFlyer ad network integrated partner, uses technology and data solutions for premium mobile monetization, app marketing, and re-engagement. In addition to click-based mobile attribution, Appnext also offers cost, retargeting and view-through attribution, which you can record with AppsFlyer."
+title: Appnext campaign configuration
+excerpt: >-
+  Appnext, an AppsFlyer ad network integrated partner, uses technology and data
+  solutions for premium mobile monetization, app marketing, and re-engagement.
+  In addition to click-based mobile attribution, Appnext also offers cost,
+  retargeting and view-through attribution, which you can record with AppsFlyer.
+metadata:
+  keywords:
+    - Advertisers
+    - appnext
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360001407109
-  url: https://support.appsflyer.com/hc/en-us/articles/360001407109-Appnext-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (A-F)
-  section_id: 6551990971793
-  position: 10
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Advertisers, appnext, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-08-20T07:46:36Z'
   edited_at: '2026-09-09T12:42:49Z'
+  id: 360001407109
+  locale: en-us
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360001407109-Appnext-campaign-configuration
 ---
 ## Setting up Appnext
 

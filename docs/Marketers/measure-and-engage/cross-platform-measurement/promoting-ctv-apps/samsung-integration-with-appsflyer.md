@@ -1,26 +1,26 @@
 ---
-title: "Samsung integration with AppsFlyer"
-excerpt: "Integrate your Samsung Connected TV (CTV) app with AppsFlyer to receive attribution and event data for your campaigns on Samsung."
+title: Samsung integration with AppsFlyer
+excerpt: >-
+  Integrate your Samsung Connected TV (CTV) app with AppsFlyer to receive
+  attribution and event data for your campaigns on Samsung.
+metadata:
+  keywords:
+    - Advertisers
+    - Developers
+    - CTV
+    - Marketers
+    - CTV Attribution
 x-zendesk:
-  id: 5860544738065
-  url: https://support.appsflyer.com/hc/en-us/articles/5860544738065-Samsung-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Promoting CTV apps
-  section_id: 15328952633489
-  position: 6
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roi-tamir, Marketers, CTV Attribution]
-  labels: [Advertisers, Developers, CTV, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-05-03T09:19:48Z'
   edited_at: '2026-10-05T07:00:31Z'
+  id: 5860544738065
+  locale: en-us
+  section: Promoting CTV apps
+  section_id: 15328952633489
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/5860544738065-Samsung-integration-with-AppsFlyer
 ---
 ## About Samsung CTV attribution
 

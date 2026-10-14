@@ -1,26 +1,26 @@
 ---
-title: "Recording multiple agency/MCC Google Ads accounts"
-excerpt: "Set up recording for different Google Ads accounts so traffic gets attributed correctly."
+title: Recording multiple agency/MCC Google Ads accounts
+excerpt: >-
+  Set up recording for different Google Ads accounts so traffic gets attributed
+  correctly.
+metadata:
+  keywords:
+    - Advertisers
+    - Multiple Agencies
+    - MCC
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 115004970386
-  url: https://support.appsflyer.com/hc/en-us/articles/115004970386-Recording-multiple-agency-MCC-Google-Ads-accounts
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Google Ads
-  section_id: 6551205645457
-  position: 9
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Advertisers, Multiple Agencies, MCC, Marketers, Localize]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-09-28T11:11:04Z'
   edited_at: '2023-03-12T12:50:37Z'
+  id: 115004970386
+  locale: en-us
+  section: Google Ads
+  section_id: 6551205645457
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115004970386-Recording-multiple-agency-MCC-Google-Ads-accounts
 ---
 ## Introduction
 

@@ -1,18 +1,17 @@
 ---
-title: "Email service providers"
-excerpt: "Integrate AppsFlyer with leading email service providers (ESPs)"
+title: Email service providers
+excerpt: Integrate AppsFlyer with leading email service providers (ESPs)
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551247620881
-  url: https://support.appsflyer.com/hc/en-us/sections/6551247620881-Email-service-providers
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6551169161745
-  position: 5
-  sorting: manual
   created_at: '2022-06-02T11:35:28Z'
+  id: 6551247620881
+  locale: en-us
+  parent_section_id: 6551169161745
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551247620881-Email-service-providers
 ---
 Integrate AppsFlyer with leading email service providers (ESPs)
 

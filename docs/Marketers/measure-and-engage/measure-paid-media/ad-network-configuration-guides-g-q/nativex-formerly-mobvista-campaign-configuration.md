@@ -1,26 +1,28 @@
 ---
-title: "Nativex (formerly Mobvista) campaign configuration"
-excerpt: "Nativex, an AppsFlyer integrated partner, is a mobile marketing platform providing user acquisition, analytics, and monetization solutions to worldwide mobile developers and brands. In addition to click-based mobile attribution, Nativex also offers cost and view-through attribution, which you can record with AppsFlyer."
+title: Nativex (formerly Mobvista) campaign configuration
+excerpt: >-
+  Nativex, an AppsFlyer integrated partner, is a mobile marketing platform
+  providing user acquisition, analytics, and monetization solutions to worldwide
+  mobile developers and brands. In addition to click-based mobile attribution,
+  Nativex also offers cost and view-through attribution, which you can record
+  with AppsFlyer.
+metadata:
+  keywords:
+    - mobvista
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 208209476
-  url: https://support.appsflyer.com/hc/en-us/articles/208209476-Nativex-formerly-Mobvista-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (G-Q)
-  section_id: 6552006535953
-  position: 17
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [mobvista, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-03-28T09:15:13Z'
   edited_at: '2026-08-13T08:31:46Z'
+  id: 208209476
+  locale: en-us
+  section: Ad network configuration guides (G-Q)
+  section_id: 6552006535953
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/208209476-Nativex-formerly-Mobvista-campaign-configuration
 ---
 ![nativex.png](https://files.readme.io/840450215d38dc171452049ce1e9ce8c5f289e489fcb985a8d7ecb745fd11ede-49783409596049.png)
 

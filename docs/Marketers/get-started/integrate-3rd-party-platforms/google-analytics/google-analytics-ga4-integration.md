@@ -1,25 +1,20 @@
 ---
-title: "Google Analytics (GA4) integration"
+title: Google Analytics (GA4) integration
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 25707682812561
-  url: https://support.appsflyer.com/hc/en-us/articles/25707682812561-Google-Analytics-GA4-integration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Google Analytics
-  section_id: 6551226043793
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Marketers, Loc Published]
-  promoted: false
-  comments_disabled: false
   created_at: '2024-06-06T15:26:00Z'
   edited_at: '2026-09-27T12:24:13Z'
+  id: 25707682812561
+  locale: en-us
+  section: Google Analytics
+  section_id: 6551226043793
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/25707682812561-Google-Analytics-GA4-integration
 ---
 AppsFlyer integration with Google Analytics (GA4) enables advertisers to send attribution data and selected in-app events from AppsFlyer to GA4. This integration works with iOS and Android apps that already have the [Google Analytics for Firebase SDK](https://firebase.google.com/docs/analytics) implemented.
 

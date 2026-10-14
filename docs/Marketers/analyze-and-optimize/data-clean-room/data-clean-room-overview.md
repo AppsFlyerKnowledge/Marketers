@@ -1,26 +1,25 @@
 ---
-title: "Data Clean Room—Overview"
-excerpt: "Enrich your user-level data by matching it with AppsFlyer user-level attribution data to create aggregated reports and obtain insights that leverage the value of the combined data."
+title: Data Clean Room—Overview
+excerpt: >-
+  Enrich your user-level data by matching it with AppsFlyer user-level
+  attribution data to create aggregated reports and obtain insights that
+  leverage the value of the combined data.
+metadata:
+  keywords:
+    - Premium
+    - Marketers
+    - Data Clean Room
 x-zendesk:
-  id: 4626852381713
-  url: https://support.appsflyer.com/hc/en-us/articles/4626852381713-Data-Clean-Room-Overview
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Clean Room
-  section_id: 4591191779217
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-inbar-agassi, Marketers, Data Clean Room]
-  labels: [Premium, Marketers, Loc Published]
-  promoted: true
-  comments_disabled: true
   created_at: '2022-03-08T14:47:36Z'
   edited_at: '2024-09-04T08:33:29Z'
+  id: 4626852381713
+  locale: en-us
+  section: Data Clean Room
+  section_id: 4591191779217
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4626852381713-Data-Clean-Room-Overview
 ---
 **![privacy_cloud_logo.png](https://files.readme.io/5862beb63a4b22f68fc230f89c3faa260a15ab40e1defa70c59604d5a81e759d-5583061038225.png)**
 

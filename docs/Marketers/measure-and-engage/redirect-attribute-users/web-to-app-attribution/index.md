@@ -1,18 +1,17 @@
 ---
-title: "Web-to-app attribution"
-excerpt: "Convert and attribute mobile website visitors with our attribution solutions"
+title: Web-to-app attribution
+excerpt: Convert and attribute mobile website visitors with our attribution solutions
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551240476177
-  url: https://support.appsflyer.com/hc/en-us/sections/6551240476177-Web-to-app-attribution
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6551169161745
-  position: 1
-  sorting: manual
   created_at: '2022-06-02T11:32:59Z'
+  id: 6551240476177
+  locale: en-us
+  parent_section_id: 6551169161745
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551240476177-Web-to-app-attribution
 ---
 <Cards>
   <Card title="Convert your mobile web visitors to app users" href="/docs/convert-your-mobile-web-visitors-to-app-users" icon="fa-solid fa-globe">

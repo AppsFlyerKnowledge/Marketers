@@ -1,26 +1,26 @@
 ---
-title: "CleverTap integration with AppsFlyer"
-excerpt: "CleverTap is a modern, integrated retention cloud that empowers digital consumer brands to increase customer retention and lifetime value."
+title: CleverTap integration with AppsFlyer
+excerpt: >-
+  CleverTap is a modern, integrated retention cloud that empowers digital
+  consumer brands to increase customer retention and lifetime value.
+metadata:
+  keywords:
+    - Advertisers
+    - Ad Networks
+    - Clevertap
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360001299165
-  url: https://support.appsflyer.com/hc/en-us/articles/360001299165-CleverTap-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: 3rd-party platforms
-  section_id: 6551199962257
-  position: 6
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [Advertisers, Ad Networks, Clevertap, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-07-12T06:26:58Z'
   edited_at: '2026-06-16T11:23:22Z'
+  id: 360001299165
+  locale: en-us
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360001299165-CleverTap-integration-with-AppsFlyer
 ---
 ![clevertap-logo.png](https://files.readme.io/ee01a7da1ae0c77758e279c47f2f588d90fdb7f52dce51161fce3891cc5fd498-4405112002833.png)
 

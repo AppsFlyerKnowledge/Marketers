@@ -1,26 +1,22 @@
 ---
-title: "Bulletin: New Cohort and Retention dashboard"
+title: 'Bulletin: New Cohort and Retention dashboard'
+metadata:
+  keywords:
+    - Cohort
+    - Marketers
+    - Marketing Analytics
 table_of_contents: false
 x-zendesk:
-  id: 21334347923729
-  url: https://support.appsflyer.com/hc/en-us/articles/21334347923729-Bulletin-New-Cohort-and-Retention-dashboard
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 25
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
-  labels: [Cohort, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-01-01T09:21:41Z'
   edited_at: '2024-01-02T00:01:00Z'
+  id: 21334347923729
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/21334347923729-Bulletin-New-Cohort-and-Retention-dashboard
 ---
 | **What's new** | The [cohort dashboard](/docs/cohort-and-retention-dashboard) has been redesigned and improved. It also now includes retention data. |
 | --- | --- |

@@ -1,18 +1,17 @@
 ---
-title: "Manage your apps"
-excerpt: "Define your apps in AppsFlyer and manage app settings"
+title: Manage your apps
+excerpt: Define your apps in AppsFlyer and manage app settings
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551015977105
-  url: https://support.appsflyer.com/hc/en-us/sections/6551015977105-Manage-your-apps
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550753145745
-  position: 2
-  sorting: manual
   created_at: '2022-06-02T11:27:15Z'
+  id: 6551015977105
+  locale: en-us
+  parent_section_id: 6550753145745
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551015977105-Manage-your-apps
 ---
 Define your apps in AppsFlyer and manage app settings
 

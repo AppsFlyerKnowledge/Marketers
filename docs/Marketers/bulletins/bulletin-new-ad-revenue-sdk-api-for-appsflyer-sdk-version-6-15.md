@@ -1,26 +1,22 @@
 ---
-title: "Bulletin: New ad revenue SDK API for AppsFlyer SDK version 6.15+"
+title: 'Bulletin: New ad revenue SDK API for AppsFlyer SDK version 6.15+'
+metadata:
+  keywords:
+    - Premium Feature
+    - Marketers
+    - ROI360
 table_of_contents: false
 x-zendesk:
-  id: 26956998859153
-  url: https://support.appsflyer.com/hc/en-us/articles/26956998859153-Bulletin-New-ad-revenue-SDK-API-for-AppsFlyer-SDK-version-6-15
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 17
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-michael-talapov, Marketers, ROI360]
-  labels: [Premium Feature, Marketers, Loc In Prog]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-07-24T08:59:01Z'
   edited_at: '2024-08-02T14:32:42Z'
+  id: 26956998859153
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/26956998859153-Bulletin-New-ad-revenue-SDK-API-for-AppsFlyer-SDK-version-6-15
 ---
 | **What's new** | Impression-level ad revenue is now available using the AdRevenue SDK API instead of via the ad revenue SDK connector. |
 | --- | --- |

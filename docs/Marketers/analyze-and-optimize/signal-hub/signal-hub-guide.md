@@ -1,28 +1,27 @@
 ---
-title: "Signal Hub guide"
-excerpt: "The AppsFlyer Signal Hub enables marketers to create privacy-safe audiences with real-world purchase signals and activate them instantly across major media platforms."
+title: Signal Hub guide
+excerpt: >-
+  The AppsFlyer Signal Hub enables marketers to create privacy-safe audiences
+  with real-world purchase signals and activate them instantly across major
+  media platforms.
+metadata:
+  keywords:
+    - Premium
+    - Marketers
+    - Signal Hub
 x-zendesk:
-  id: 39096485642001
-  url: https://support.appsflyer.com/hc/en-us/articles/39096485642001-Signal-Hub-guide
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Signal Hub
-  section_id: 41021664993425
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gilad-katan, Marketers, Signal Hub]
-  labels: [Premium, Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2025-09-16T10:56:07Z'
   edited_at: '2026-08-19T09:03:23Z'
+  id: 39096485642001
+  locale: en-us
+  section: Signal Hub
+  section_id: 41021664993425
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/39096485642001-Signal-Hub-guide
 ---
-<Embed title="Signal Hub guide" typeOfEmbed="youtube" url="https://www.youtube-nocookie.com/embed/B71XCosnTXo" providerUrl="https://www.youtube-nocookie.com" />
+<Embed title="Signal Hub guide" typeOfEmbed="youtube" url="https://www.youtube.com/embed/B71XCosnTXo" providerUrl="https://www.youtube.com" />
 
 ## About Signal Hub
 

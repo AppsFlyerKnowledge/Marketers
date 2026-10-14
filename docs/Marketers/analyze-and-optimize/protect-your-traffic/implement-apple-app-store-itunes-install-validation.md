@@ -1,26 +1,30 @@
 ---
-title: "Implement Apple App Store (itunes) install validation"
-excerpt: "Prevent attribution of fraudulent activities by using the Apple install validation service for any iOS install (both organic and non-organic)."
+title: Implement Apple App Store (itunes) install validation
+excerpt: >-
+  Prevent attribution of fraudulent activities by using the Apple install
+  validation service for any iOS install (both organic and non-organic).
+metadata:
+  keywords:
+    - Validation
+    - iTunes
+    - Apple
+    - Store Install
+    - Advertisers
+    - app store
+    - appstore
+    - Marketers
+    - Protect360
 x-zendesk:
-  id: 115003285626
-  url: https://support.appsflyer.com/hc/en-us/articles/115003285626-Implement-Apple-App-Store-itunes-install-validation
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Protect your traffic
-  section_id: 6551015912465
-  position: 11
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-yanai, Marketers, Protect360]
-  labels: [Validation, iTunes, Apple, Store Install, Advertisers, app store, appstore, Marketers, Loc In Prog]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-07-02T08:36:31Z'
   edited_at: '2025-06-03T07:57:06Z'
+  id: 115003285626
+  locale: en-us
+  section: Protect your traffic
+  section_id: 6551015912465
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115003285626-Implement-Apple-App-Store-itunes-install-validation
 ---
 ## Receipt validation flow
 

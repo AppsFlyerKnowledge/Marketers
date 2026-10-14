@@ -1,26 +1,22 @@
 ---
-title: "Google Ads (AdWords)—Re-engagement"
-excerpt: "Measure Google Ads retargeting campaigns."
+title: Google Ads (AdWords)—Re-engagement
+excerpt: Measure Google Ads retargeting campaigns.
+metadata:
+  keywords:
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 4417296925073
-  url: https://support.appsflyer.com/hc/en-us/articles/4417296925073-Google-Ads-AdWords-Re-engagement
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Google Ads
-  section_id: 6551205645457
-  position: 6
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-01-20T09:55:51Z'
   edited_at: '2025-11-11T09:05:50Z'
+  id: 4417296925073
+  locale: en-us
+  section: Google Ads
+  section_id: 6551205645457
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4417296925073-Google-Ads-AdWords-Re-engagement
 ---
 ## Google Ads retargeting campaigns
 

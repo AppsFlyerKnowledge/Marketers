@@ -1,26 +1,28 @@
 ---
-title: "PBA brand bundles and settings"
-excerpt: "Brand bundles consolidate the attribution, events, visits, and revenue of brand-related apps and websites. Use the brand bundle settings page to mark conversion events, integrate with Google Ads, and more."
+title: PBA brand bundles and settings
+excerpt: >-
+  Brand bundles consolidate the attribution, events, visits, and revenue of
+  brand-related apps and websites. Use the brand bundle settings page to mark
+  conversion events, integrate with Google Ads, and more.
+metadata:
+  keywords:
+    - Advertisers
+    - Bundles
+    - Web Attribution
+    - Developers
+    - Marketers
+    - Cross-Platform Measurement
 x-zendesk:
-  id: 360000646498
-  url: https://support.appsflyer.com/hc/en-us/articles/360000646498-PBA-brand-bundles-and-settings
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: People Based Attribution (PBA)
-  section_id: 43560588808721
-  position: 2
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, Cross-Platform Measurement]
-  labels: [Advertisers, Bundles, Web Attribution, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-12-09T11:42:52Z'
   edited_at: '2025-05-08T09:17:30Z'
+  id: 360000646498
+  locale: en-us
+  section: People Based Attribution (PBA)
+  section_id: 43560588808721
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360000646498-PBA-brand-bundles-and-settings
 ---
 ![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
 

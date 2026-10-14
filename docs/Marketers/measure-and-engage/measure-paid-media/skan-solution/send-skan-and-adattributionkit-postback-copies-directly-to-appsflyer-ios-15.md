@@ -1,26 +1,27 @@
 ---
-title: "Send SKAN and AdAttributionKit postback copies directly to AppsFlyer (iOS 15+)"
-excerpt: "Starting iOS 15, configure your app to send postback copies to AppsFlyer in addition to sending them to ad networks. Doing so enables AppsFlyer to validate the conversion value (CV) and verify postback integrity. Configure AppsFlyer Push API to forward postback copies to an additional selected endpoint."
+title: Send SKAN and AdAttributionKit postback copies directly to AppsFlyer (iOS 15+)
+excerpt: >-
+  Starting iOS 15, configure your app to send postback copies to AppsFlyer in
+  addition to sending them to ad networks. Doing so enables AppsFlyer to
+  validate the conversion value (CV) and verify postback integrity. Configure
+  AppsFlyer Push API to forward postback copies to an additional selected
+  endpoint.
+metadata:
+  keywords:
+    - Advertisers
+    - Marketers
+    - SKAdNetwork (SKAN)
 x-zendesk:
-  id: 4402320969617
-  url: https://support.appsflyer.com/hc/en-us/articles/4402320969617-Send-SKAN-and-AdAttributionKit-postback-copies-directly-to-AppsFlyer-iOS-15
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: SKAN solution
-  section_id: 6552135379985
-  position: 6
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
-  labels: [Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-06-08T12:09:25Z'
   edited_at: '2025-12-31T09:07:08Z'
+  id: 4402320969617
+  locale: en-us
+  section: SKAN solution
+  section_id: 6552135379985
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4402320969617-Send-SKAN-and-AdAttributionKit-postback-copies-directly-to-AppsFlyer-iOS-15
 ---
 > 📘 **Note**
 >

@@ -1,26 +1,25 @@
 ---
-title: "Recommended finance and banking app events"
-excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your finance and banking app ."
+title: Recommended finance and banking app events
+excerpt: >-
+  Measure the quality of your users throughout their user journey by recording
+  these suggested in-app events for your finance and banking app .
+metadata:
+  keywords:
+    - Advertisers
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360019598337
-  url: https://support.appsflyer.com/hc/en-us/articles/360019598337-Recommended-finance-and-banking-app-events
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: In-app events
-  section_id: 6551285343761
-  position: 11
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-04-27T12:58:44Z'
   edited_at: '2024-09-23T12:46:21Z'
+  id: 360019598337
+  locale: en-us
+  section: In-app events
+  section_id: 6551285343761
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360019598337-Recommended-finance-and-banking-app-events
 ---
 ## ![banking.png](https://files.readme.io/260638f807a43f42c6ff99bb72b8d4113b2df09436b9322a820888ad3f8a01ae-20659476893969.png) Finance and banking
 

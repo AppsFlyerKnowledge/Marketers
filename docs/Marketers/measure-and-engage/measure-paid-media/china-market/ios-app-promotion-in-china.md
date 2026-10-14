@@ -1,26 +1,26 @@
 ---
-title: "iOS app promotion in China"
-excerpt: "Learn about marketing your iOS apps in China."
+title: iOS app promotion in China
+excerpt: Learn about marketing your iOS apps in China.
+metadata:
+  keywords:
+    - iOS
+    - Advertisers
+    - China
+    - App Promotion
+    - Ad Networks
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 115004641383
-  url: https://support.appsflyer.com/hc/en-us/articles/115004641383-iOS-app-promotion-in-China
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: China market
-  section_id: 6552042145425
-  position: 3
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [iOS, Advertisers, China, App Promotion, Ad Networks, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-09-12T11:30:06Z'
   edited_at: '2023-02-15T13:15:09Z'
+  id: 115004641383
+  locale: en-us
+  section: China market
+  section_id: 6552042145425
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115004641383-iOS-app-promotion-in-China
 ---
 ## Apple in China
 

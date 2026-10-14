@@ -1,26 +1,25 @@
 ---
-title: "Report generation quotas (rate limitations)"
-excerpt: "A quota (rate limitation) mechanism limits the number of reports that can be generated per day by both Pull API and the data export pages."
+title: Report generation quotas (rate limitations)
+excerpt: >-
+  A quota (rate limitation) mechanism limits the number of reports that can be
+  generated per day by both Pull API and the data export pages.
+metadata:
+  keywords:
+    - Advertisers
+    - Developers
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 207034366
-  url: https://support.appsflyer.com/hc/en-us/articles/207034366-Report-generation-quotas-rate-limitations
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Account management
-  section_id: 6551191075473
-  position: 4
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials]
-  labels: [Advertisers, Developers, Marketers, Loc In Prog]
-  promoted: false
-  comments_disabled: true
   created_at: '2014-05-01T12:55:30Z'
   edited_at: '2026-10-14T09:37:22Z'
+  id: 207034366
+  locale: en-us
+  section: Account management
+  section_id: 6551191075473
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207034366-Report-generation-quotas-rate-limitations
 ---
 ## Rate limits for reports
 

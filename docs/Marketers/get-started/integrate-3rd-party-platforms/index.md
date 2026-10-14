@@ -1,17 +1,16 @@
 ---
-title: "Integrate 3rd-party platforms"
-excerpt: "Integrate 3rd-party platforms with AppsFlyer"
+title: Integrate 3rd-party platforms
+excerpt: Integrate 3rd-party platforms with AppsFlyer
 x-zendesk:
-  type: section
-  id: 6551084534545
-  url: https://support.appsflyer.com/hc/en-us/sections/6551084534545-Integrate-3rd-party-platforms
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550753145745
-  position: 4
-  sorting: manual
   created_at: '2022-06-02T11:27:48Z'
+  id: 6551084534545
+  locale: en-us
+  parent_section_id: 6550753145745
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551084534545-Integrate-3rd-party-platforms
 ---
 Integrate 3rd-party platforms with AppsFlyer
 

@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: New conditions for Protect360 validation rules"
+title: 'Bulletin: New conditions for Protect360 validation rules'
+metadata:
+  keywords:
+    - Marketers
+    - Protect360
 table_of_contents: false
 x-zendesk:
-  id: 27310438572177
-  url: https://support.appsflyer.com/hc/en-us/articles/27310438572177-Bulletin-New-conditions-for-Protect360-validation-rules
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 12
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-yanai, Marketers, Protect360]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-08-06T12:43:52Z'
   edited_at: '2026-05-25T07:55:25Z'
+  id: 27310438572177
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/27310438572177-Bulletin-New-conditions-for-Protect360-validation-rules
 ---
 | **What's new** | Two new conditions - **currency** and **revenue** have been added to the Protect360 validation rules. |
 | --- | --- |

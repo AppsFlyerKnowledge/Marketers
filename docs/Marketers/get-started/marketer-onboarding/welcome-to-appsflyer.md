@@ -1,26 +1,27 @@
 ---
-title: "Welcome to AppsFlyer"
-excerpt: "Learn what mobile advertising attribution is and how AppsFlyer helps marketers pinpoint their targeting, optimize their ad spend, and boost ROI."
+title: Welcome to AppsFlyer
+excerpt: >-
+  Learn what mobile advertising attribution is and how AppsFlyer helps marketers
+  pinpoint their targeting, optimize their ad spend, and boost ROI.
+metadata:
+  keywords:
+    - Advertisers
+    - Agencies
+    - branch
+    - Developers
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 212017846
-  url: https://support.appsflyer.com/hc/en-us/articles/212017846-Welcome-to-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Marketer onboarding
-  section_id: 6550866490129
-  position: 0
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies]
-  labels: [Advertisers, Agencies, branch, Developers, Marketers, Loc Published]
-  promoted: true
-  comments_disabled: true
   created_at: '2016-08-23T11:55:41Z'
   edited_at: '2026-09-20T12:08:48Z'
+  id: 212017846
+  locale: en-us
+  section: Marketer onboarding
+  section_id: 6550866490129
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/212017846-Welcome-to-AppsFlyer
 ---
 ## What is app attribution?
 

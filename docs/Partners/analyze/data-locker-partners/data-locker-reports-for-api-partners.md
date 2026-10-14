@@ -1,26 +1,27 @@
 ---
-title: "Data Locker reports for API partners"
-excerpt: "Reports listed in this article are available to you (API partners) in your Data Locker. Before we can share the data with you, the advertiser (app owner) must grant you data access as detailed in this article."
+title: Data Locker reports for API partners
+excerpt: >-
+  Reports listed in this article are available to you (API partners) in your
+  Data Locker. Before we can share the data with you, the advertiser (app owner)
+  must grant you data access as detailed in this article.
+metadata:
+  keywords:
+    - Advertisers
+    - Partners
+    - marketing partners
+    - Marketers
+    - Data Locker
 x-zendesk:
-  id: 12000718524561
-  url: https://support.appsflyer.com/hc/en-us/articles/12000718524561-Data-Locker-reports-for-API-partners
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Data Locker
-  section_id: 6551591547409
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-rona-einat, Marketers, Data Locker]
-  labels: [Advertisers, Partners, marketing partners]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-01-08T11:32:00Z'
   edited_at: '2026-03-10T08:28:05Z'
+  id: 12000718524561
+  locale: en-us
+  section: Data Locker
+  section_id: 6551591547409
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/12000718524561-Data-Locker-reports-for-API-partners
 ---
 ## Data Locker reports for API partners
 

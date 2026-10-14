@@ -1,26 +1,24 @@
 ---
-title: "Set up your list of authorized agencies"
-excerpt: "Manage which agencies you authorize to run campaigns through your network integration."
+title: Set up your list of authorized agencies
+excerpt: >-
+  Manage which agencies you authorize to run campaigns through your network
+  integration.
+metadata:
+  keywords:
+    - Partners
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 25774607860113
-  url: https://support.appsflyer.com/hc/en-us/articles/25774607860113-Set-up-your-list-of-authorized-agencies
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Ad network onboarding
-  section_id: 6551058566033
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Partners, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-06-09T19:29:56Z'
   edited_at: '2024-08-12T13:37:50Z'
+  id: 25774607860113
+  locale: en-us
+  section: Ad network onboarding
+  section_id: 6551058566033
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/25774607860113-Set-up-your-list-of-authorized-agencies
 ---
 ## Overview
 

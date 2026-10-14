@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: Link tracking Privacy (LTP) is coming with iOS17"
+title: 'Bulletin: Link tracking Privacy (LTP) is coming with iOS17'
+metadata:
+  keywords:
+    - Marketers
+    - Smart Banners and Scripts
 table_of_contents: false
 x-zendesk:
-  id: 18730398273553
-  url: https://support.appsflyer.com/hc/en-us/articles/18730398273553-Bulletin-Link-tracking-Privacy-LTP-is-coming-with-iOS17
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 32
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, Smart Banners and Scripts]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2023-09-21T08:37:39Z'
   edited_at: '2023-09-21T12:11:54Z'
+  id: 18730398273553
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/18730398273553-Bulletin-Link-tracking-Privacy-LTP-is-coming-with-iOS17
 ---
 | **What's new** | iOS17 will detect and remove parameters identified as tracking parameters from links users share in built-in applications: Mail, Messages, and Safari's Private Browsing mode.<br /><br />We performed internal testing to see how LTP affects OneLink. Our findings suggest that none of AppsFlyer parameters were removed. These are the results of our tests:<br /><br />**<span id="h_01HAVEDAEFTDVGS1SXBD7NEJFE"></span>The following parameters are removed by LTP**<ul><li>`gclid` - Google ads / Analytics ID</li></ul><ul><li>`fbclid` - Facebook advertising ID</li></ul>**<span id="h_01HAVEDAEFN7XEPK3TNCSZRAMW"></span>The following parameters are untouched by LTP**<ul><li>UTM parameters</li></ul>**<span id="h_01HAVEDAEFMGD1SFYRJNXE9JBE"></span>AppsFlyer attribution parameters:**<ul><li>`pid`</li></ul><ul><li>`c`</li></ul><ul><li>`Is_regtargeting`</li></ul><ul><li>`af_channel`</li></ul><ul><li>`af_adset`</li></ul><ul><li>`af_ad`</li></ul><ul><li>`af_sub1-10`</li></ul><ul><li>`af_inactivity_window`</li></ul><ul><li>`af_click_lookback`</li></ul><ul><li>`af_cost_value`</li></ul><ul><li>`af_cost_currency`</li></ul>**<span id="h_01HAVEDAEFEFZ1ZCPAZ05C3AWW"></span>AppsFlyer redirection parameters**<ul><li>`af_dp`</li></ul><ul><li>`deep_link_value`</li></ul><ul><li>`af_deep_link_sub1-10`</li></ul><ul><li>`af_web_dp`</li></ul><ul><li>`af_ios_url`</li></ul><ul><li>`af_android_url`</li></ul><ul><li>`af_xp`</li></ul> |
 | --- | --- |

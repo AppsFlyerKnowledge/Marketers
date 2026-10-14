@@ -1,26 +1,28 @@
 ---
-title: "In-app events—Event structure"
-excerpt: "View the list of predefined event names and event parameters to record post-install in-app events (such as login, register, or in-app purchase)."
+title: In-app events—Event structure
+excerpt: >-
+  View the list of predefined event names and event parameters to record
+  post-install in-app events (such as login, register, or in-app purchase).
+metadata:
+  keywords:
+    - iOS
+    - Android
+    - In-App Events
+    - In-App
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 4410481112081
-  url: https://support.appsflyer.com/hc/en-us/articles/4410481112081-In-app-events-Event-structure
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: In-app events
-  section_id: 6551285343761
-  position: 2
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 27439133508369
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [iOS, Android, In-App Events, In-App, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-11-09T10:09:16Z'
   edited_at: '2026-08-12T09:04:04Z'
+  id: 4410481112081
+  locale: en-us
+  section: In-app events
+  section_id: 6551285343761
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4410481112081-In-app-events-Event-structure
 ---
 ## Overview
 

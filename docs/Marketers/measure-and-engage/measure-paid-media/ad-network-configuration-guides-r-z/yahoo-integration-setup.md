@@ -1,26 +1,30 @@
 ---
-title: "Yahoo integration setup"
-excerpt: "Yahoo, an AppsFlyer ad network integrated partner, offers search and native advertising in one advertising platform. In addition to click-based mobile attribution, Yahoo offers cost and view-through attribution, which can be recorded with AppsFlyer."
+title: Yahoo integration setup
+excerpt: >-
+  Yahoo, an AppsFlyer ad network integrated partner, offers search and native
+  advertising in one advertising platform. In addition to click-based mobile
+  attribution, Yahoo offers cost and view-through attribution, which can be
+  recorded with AppsFlyer.
+metadata:
+  keywords:
+    - Advertisers
+    - yahoo
+    - gemini
+    - Oath
+    - verizon media
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 212067546
-  url: https://support.appsflyer.com/hc/en-us/articles/212067546-Yahoo-integration-setup
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (R-Z)
-  section_id: 6552025468305
-  position: 24
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Advertisers, yahoo, gemini, Oath, verizon media, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-08-25T13:09:48Z'
   edited_at: '2026-09-09T12:41:37Z'
+  id: 212067546
+  locale: en-us
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/212067546-Yahoo-integration-setup
 ---
 ## Setting up Yahoo
 

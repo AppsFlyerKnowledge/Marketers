@@ -1,26 +1,23 @@
 ---
-title: "Movable Ink integration with AppsFlyer"
-excerpt: "Set up an integration with Movable Ink to create unique AI-powered user journeys in your marketing campaigns and in-app content."
+title: Movable Ink integration with AppsFlyer
+excerpt: >-
+  Set up an integration with Movable Ink to create unique AI-powered user
+  journeys in your marketing campaigns and in-app content.
+metadata:
+  keywords:
+    - Marketers
+    - OneLink
 x-zendesk:
-  id: 28109258392977
-  url: https://support.appsflyer.com/hc/en-us/articles/28109258392977-Movable-Ink-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Email service providers
-  section_id: 6551247620881
-  position: 6
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, OneLink]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2024-09-05T11:55:13Z'
   edited_at: '2025-11-12T14:40:50Z'
+  id: 28109258392977
+  locale: en-us
+  section: Email service providers
+  section_id: 6551247620881
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/28109258392977-Movable-Ink-integration-with-AppsFlyer
 ---
 ## ![53374 Movable Ink KB image.png](https://files.readme.io/0f1a5d3d6b60cccdb8be113c9fd4f3603c7c3ed0ad8573a153709391d29b2c3b-28624891792401.png)
 

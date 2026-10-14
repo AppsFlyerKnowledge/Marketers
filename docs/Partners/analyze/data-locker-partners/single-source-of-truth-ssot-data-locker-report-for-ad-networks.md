@@ -1,26 +1,28 @@
 ---
-title: "Single Source of Truth (SSOT) Data Locker report for ad networks"
-excerpt: "The Single Source of Truth (SSOT) report in Data Locker offers a unified and accurate overview of app campaign performances by merging data from various attribution methods, such as ID matching and SKAN. It provides a way to load data into your BI systems to get the highest accuracy of data."
+title: Single Source of Truth (SSOT) Data Locker report for ad networks
+excerpt: >-
+  The Single Source of Truth (SSOT) report in Data Locker offers a unified and
+  accurate overview of app campaign performances by merging data from various
+  attribution methods, such as ID matching and SKAN. It provides a way to load
+  data into your BI systems to get the highest accuracy of data.
+metadata:
+  keywords:
+    - Advertisers
+    - Ad Networks
+    - Partners
+    - Marketers
+    - SKAdNetwork (SKAN)
 x-zendesk:
-  id: 27168206416017
-  url: https://support.appsflyer.com/hc/en-us/articles/27168206416017-Single-Source-of-Truth-SSOT-Data-Locker-report-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Data Locker
-  section_id: 6551591547409
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN), Ad Networks]
-  labels: [Advertisers, Ad Networks, Partners, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-07-31T19:51:34Z'
   edited_at: '2025-04-17T08:51:20Z'
+  id: 27168206416017
+  locale: en-us
+  section: Data Locker
+  section_id: 6551591547409
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/27168206416017-Single-Source-of-Truth-SSOT-Data-Locker-report-for-ad-networks
 ---
 > 📘 **Note**
 >

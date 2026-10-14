@@ -1,26 +1,26 @@
 ---
-title: "People-Based Attribution vs. Google Analytics"
-excerpt: "The differences between People-based Attribution (PBA) and Google Analytics"
+title: People-Based Attribution vs. Google Analytics
+excerpt: The differences between People-based Attribution (PBA) and Google Analytics
+metadata:
+  keywords:
+    - Google Analytics
+    - People Based Analysis
+    - People Based Attribution
+    - People Based Attribution SDK
+    - Developers
+    - Marketers
+    - Cross-Platform Measurement
 x-zendesk:
-  id: 360001305617
-  url: https://support.appsflyer.com/hc/en-us/articles/360001305617-People-Based-Attribution-vs-Google-Analytics
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: People Based Attribution (PBA)
-  section_id: 43560588808721
-  position: 15
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-gil-or, Marketers, Cross-Platform Measurement]
-  labels: [Google Analytics, People Based Analysis, People Based Attribution, People Based Attribution SDK, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2019-03-28T07:22:04Z'
   edited_at: '2023-02-15T13:15:05Z'
+  id: 360001305617
+  locale: en-us
+  section: People Based Attribution (PBA)
+  section_id: 43560588808721
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360001305617-People-Based-Attribution-vs-Google-Analytics
 ---
 ## PBA compared to Google Analytics
 

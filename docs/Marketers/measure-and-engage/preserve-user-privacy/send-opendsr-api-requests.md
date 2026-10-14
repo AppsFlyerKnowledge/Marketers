@@ -1,26 +1,29 @@
 ---
-title: "Send OpenDSR API requests"
-excerpt: "This article is for the use of AppsFlyer clients, often referred to as Advertisers or App Owners, using the Platform to record app use and attribution. App Owners implement OpenDSR (Data Subject Request) API to comply with applicable data protection laws like GDPR (Europe), CCPA (California), LGPD (Brazil), PDPA (Thailand), and PIPA (Korea)."
+title: Send OpenDSR API requests
+excerpt: >-
+  This article is for the use of AppsFlyer clients, often referred to as
+  Advertisers or App Owners, using the Platform to record app use and
+  attribution. App Owners implement OpenDSR (Data Subject Request) API to comply
+  with applicable data protection laws like GDPR (Europe), CCPA (California),
+  LGPD (Brazil), PDPA (Thailand), and PIPA (Korea).
+metadata:
+  keywords:
+    - Advertisers
+    - GDPR
+    - Developers
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 11332840660625
-  url: https://support.appsflyer.com/hc/en-us/articles/11332840660625-Send-OpenDSR-API-requests
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Preserve user privacy
-  section_id: 6551440878097
-  position: 0
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials]
-  labels: [Advertisers, GDPR, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-12-12T09:14:00Z'
   edited_at: '2026-10-01T15:42:01Z'
+  id: 11332840660625
+  locale: en-us
+  section: Preserve user privacy
+  section_id: 6551440878097
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/11332840660625-Send-OpenDSR-API-requests
 ---
 **A word from our lawyers:** *Nothing stated here is legal advice. It is provided for your information and convenience. You should work closely with legal and other professional advisors to determine exactly how GDPR, CCPA, or any other laws may or may not apply to you.* The privacy relationship between you and AppsFlyer is governed by the [AppsFlyer Services Privacy Policy](https://www.appsflyer.com/services-privacy-policy). For any questions relating to this Services Privacy Policy or to contact our data protection officer please send us a mail to [privacy@appsflyer.com](mailto:privacy@appsflyer.com). For the purposes of Article 27 of the General Data Protection Regulation, the representative within the EU of AppsFlyer is AppsFlyer Germany GmbH, Schönhauser Allee 180, 10119 Berlin, Germany (contact [privacy@appsflyer.com](mailto:privacy@appsflyer.com); +49-30-166373500).
 

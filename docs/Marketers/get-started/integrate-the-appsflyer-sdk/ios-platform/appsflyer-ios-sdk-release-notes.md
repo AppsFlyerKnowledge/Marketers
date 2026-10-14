@@ -1,25 +1,23 @@
 ---
-title: "AppsFlyer iOS SDK release notes"
+title: AppsFlyer iOS SDK release notes
+metadata:
+  keywords:
+    - Advertisers
+    - Release Notes
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 115001224823
-  url: https://support.appsflyer.com/hc/en-us/articles/115001224823-AppsFlyer-iOS-SDK-release-notes
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: iOS platform
-  section_id: 6551263106577
-  position: 1
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Advertisers, Release Notes, Developers, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: false
   created_at: '2017-03-09T19:49:54Z'
   edited_at: '2026-10-14T12:47:44Z'
+  id: 115001224823
+  locale: en-us
+  section: iOS platform
+  section_id: 6551263106577
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115001224823-AppsFlyer-iOS-SDK-release-notes
 ---
 **At a glance:** The SDK release notes provide a quick overview of the latest changes to the iOS SDK. Developers looking for more comprehensive details should review [the iOS Release Notes on the Dev Hub](https://dev.appsflyer.com/hc/docs/ios-release-notes).
 

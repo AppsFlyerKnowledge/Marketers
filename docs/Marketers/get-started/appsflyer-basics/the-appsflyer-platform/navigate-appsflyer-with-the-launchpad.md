@@ -1,26 +1,27 @@
 ---
-title: "Navigate AppsFlyer with the launchpad"
-excerpt: "Use Launchpad (Ctrl+K or Cmd+K) to quickly navigate to a page on the dashboard."
+title: Navigate AppsFlyer with the launchpad
+excerpt: >-
+  Use Launchpad (Ctrl+K or Cmd+K) to quickly navigate to a page on the
+  dashboard.
+metadata:
+  keywords:
+    - Advertisers
+    - Launchpad
+    - Launch
+    - Agencies
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 115003602866
-  url: https://support.appsflyer.com/hc/en-us/articles/115003602866-Navigate-AppsFlyer-with-the-launchpad
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: The AppsFlyer platform
-  section_id: 6551361489297
-  position: 7
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies]
-  labels: [Advertisers, Launchpad, Launch, Agencies, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-07-18T12:10:02Z'
   edited_at: '2025-04-05T13:17:41Z'
+  id: 115003602866
+  locale: en-us
+  section: The AppsFlyer platform
+  section_id: 6551361489297
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115003602866-Navigate-AppsFlyer-with-the-launchpad
 ---
 **At a glance:** At a glance: Use Launchpad (Ctrl+K or Cmd+K) to quickly navigate to a page on the dashboard.
 

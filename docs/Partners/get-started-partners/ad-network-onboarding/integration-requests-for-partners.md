@@ -1,27 +1,32 @@
 ---
-title: "Integration requests for partners"
-excerpt: "Request changes to your existing AppsFlyer integration settings, including postbacks, attribution URLs, and much more."
+title: Integration requests for partners
+excerpt: >-
+  Request changes to your existing AppsFlyer integration settings, including
+  postbacks, attribution URLs, and much more.
+metadata:
+  keywords:
+    - postbacks
+    - integrated partner
+    - view-through attribution
+    - Advertisers
+    - Ad Networks
+    - Partners
+    - SKAD
+    - Advanced Privacy
+    - Marketers
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 360017189177
-  url: https://support.appsflyer.com/hc/en-us/articles/360017189177-Integration-requests-for-partners
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Ad network onboarding
-  section_id: 6551058566033
-  position: 6
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [postbacks, integrated partner, view-through attribution, Advertisers, Ad Networks, Partners, SKAD, Advanced Privacy]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-01-28T12:40:43Z'
   edited_at: '2026-10-04T07:23:53Z'
+  id: 360017189177
+  locale: en-us
+  section: Ad network onboarding
+  section_id: 6551058566033
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360017189177-Integration-requests-for-partners
 ---
 > 📘 **Important!**
 >

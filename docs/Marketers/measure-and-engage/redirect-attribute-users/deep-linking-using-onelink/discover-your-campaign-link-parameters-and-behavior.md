@@ -1,26 +1,24 @@
 ---
-title: "Discover your campaign link parameters and behavior"
-excerpt: "Discover the parameters included in your AppsFlyer campaign links and understand the expected user experience and link behavior."
+title: Discover your campaign link parameters and behavior
+excerpt: >-
+  Discover the parameters included in your AppsFlyer campaign links and
+  understand the expected user experience and link behavior.
+metadata:
+  keywords:
+    - Marketers
+    - discover
+    - Social-to-App
 x-zendesk:
-  id: 16678138044689
-  url: https://support.appsflyer.com/hc/en-us/articles/16678138044689-Discover-your-campaign-link-parameters-and-behavior
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Deep linking using OneLink
-  section_id: 6551203111057
-  position: 10
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, Social-to-App]
-  labels: [Marketers, discover]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-07-03T11:56:14Z'
   edited_at: '2025-04-20T10:38:06Z'
+  id: 16678138044689
+  locale: en-us
+  section: Deep linking using OneLink
+  section_id: 6551203111057
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/16678138044689-Discover-your-campaign-link-parameters-and-behavior
 ---
 ## About Link Discovery
 

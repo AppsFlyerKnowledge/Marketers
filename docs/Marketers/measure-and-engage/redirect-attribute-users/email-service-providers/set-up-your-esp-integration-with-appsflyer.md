@@ -1,26 +1,25 @@
 ---
-title: "Set up your ESP integration with AppsFlyer"
-excerpt: "Set up an ESP integration with AppsFlyer to enable seamless and secure deep linking in your email campaigns for better user engagement and conversion rates."
+title: Set up your ESP integration with AppsFlyer
+excerpt: >-
+  Set up an ESP integration with AppsFlyer to enable seamless and secure deep
+  linking in your email campaigns for better user engagement and conversion
+  rates.
+metadata:
+  keywords:
+    - Premium
+    - Marketers
+    - OneLink
 x-zendesk:
-  id: 26967438815377
-  url: https://support.appsflyer.com/hc/en-us/articles/26967438815377-Set-up-your-ESP-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Email service providers
-  section_id: 6551247620881
-  position: 1
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, OneLink]
-  labels: [Premium, Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2024-07-24T14:10:54Z'
   edited_at: '2025-10-26T12:13:13Z'
+  id: 26967438815377
+  locale: en-us
+  section: Email service providers
+  section_id: 6551247620881
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/26967438815377-Set-up-your-ESP-integration-with-AppsFlyer
 ---
 ## ![ESP final main KB image.png](https://files.readme.io/f14a193bb8d303adb93c01b33dcafba9053359fd92a187378cd324544a94dc88-27434531852049.png)
 

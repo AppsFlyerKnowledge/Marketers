@@ -1,26 +1,23 @@
 ---
-title: "Meta Ads—Web integration setup for PC and console apps"
-excerpt: "Learn how to integrate Meta Web for PC and console apps with AppsFlyer and set up campaigns in Meta Web."
+title: Meta Ads—Web integration setup for PC and console apps
+excerpt: >-
+  Learn how to integrate Meta Web for PC and console apps with AppsFlyer and set
+  up campaigns in Meta Web.
+metadata:
+  keywords:
+    - Marketers
+    - PC & Console Attribution
 x-zendesk:
-  id: 18704273772689
-  url: https://support.appsflyer.com/hc/en-us/articles/18704273772689-Meta-Ads-Web-integration-setup-for-PC-and-console-apps
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Meta ads
-  section_id: 6551109855761
-  position: 2
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roi-tamir, Marketers, PC & Console Attribution]
-  labels: [Marketers, Loc In Prog, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-09-20T09:54:52Z'
   edited_at: '2026-09-15T09:42:21Z'
+  id: 18704273772689
+  locale: en-us
+  section: Meta ads
+  section_id: 6551109855761
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/18704273772689-Meta-Ads-Web-integration-setup-for-PC-and-console-apps
 ---
 > 📘 **Important!**
 >

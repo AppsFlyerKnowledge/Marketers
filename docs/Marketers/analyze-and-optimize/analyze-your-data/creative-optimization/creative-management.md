@@ -1,26 +1,26 @@
 ---
-title: "Creative Management"
-excerpt: "Creative Management helps you centralize, review, and launch creatives faster. Use it to sync creatives from your creative storage, understand creative activity status across media sources, easily find relevant creatives, and upload them directly to supported media source campaigns."
+title: Creative Management
+excerpt: >-
+  Creative Management helps you centralize, review, and launch creatives faster.
+  Use it to sync creatives from your creative storage, understand creative
+  activity status across media sources, easily find relevant creatives, and
+  upload them directly to supported media source campaigns.
+metadata:
+  keywords:
+    - Premium
+    - Marketers
+    - Creative Optimization
 x-zendesk:
-  id: 39137008313105
-  url: https://support.appsflyer.com/hc/en-us/articles/39137008313105-Creative-Management
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Creative Optimization
-  section_id: 4419063475217
-  position: 5
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-omer-katzburg, Marketers, Creative Optimization]
-  labels: [Premium, Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2025-09-17T12:01:55Z'
   edited_at: '2026-10-07T11:34:33Z'
+  id: 39137008313105
+  locale: en-us
+  section: Creative Optimization
+  section_id: 4419063475217
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/39137008313105-Creative-Management
 ---
 ## About Creative Management
 

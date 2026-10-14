@@ -1,26 +1,29 @@
 ---
-title: "DataLift campaign configuration"
-excerpt: "DataLift, an AppsFlyer ad network integrated partner, enables app marketers to programmatically access all major mobile ad inventory worldwide and control their campaigns through a single proprietary technology platform, providing advanced data integration and extended targeting and audience management capabilities. In addition to click-based mobile attribution, DataLift also offers retargeting, which you can record with AppsFlyer."
+title: DataLift campaign configuration
+excerpt: >-
+  DataLift, an AppsFlyer ad network integrated partner, enables app marketers to
+  programmatically access all major mobile ad inventory worldwide and control
+  their campaigns through a single proprietary technology platform, providing
+  advanced data integration and extended targeting and audience management
+  capabilities. In addition to click-based mobile attribution, DataLift also
+  offers retargeting, which you can record with AppsFlyer.
+metadata:
+  keywords:
+    - Datalift Retargeting
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 217752383
-  url: https://support.appsflyer.com/hc/en-us/articles/217752383-DataLift-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (A-F)
-  section_id: 6551990971793
-  position: 22
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Datalift Retargeting, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-11-09T14:57:24Z'
   edited_at: '2026-09-09T10:34:05Z'
+  id: 217752383
+  locale: en-us
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/217752383-DataLift-campaign-configuration
 ---
 ## Setting up DataLift
 

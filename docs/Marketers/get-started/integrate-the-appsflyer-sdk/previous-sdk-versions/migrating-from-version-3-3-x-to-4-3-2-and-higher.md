@@ -1,27 +1,24 @@
 ---
-title: "Migrating from Version 3.3.X to 4.3.2 and Higher"
-excerpt: "Considerations for migrating versions of the AppsFlyer Android SDK."
+title: Migrating from Version 3.3.X to 4.3.2 and Higher
+excerpt: Considerations for migrating versions of the AppsFlyer Android SDK.
+metadata:
+  keywords:
+    - Advertisers
+    - Developers
+    - Marketers
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 207606796
-  url: https://support.appsflyer.com/hc/en-us/articles/207606796-Migrating-from-Version-3-3-X-to-4-3-2-and-Higher
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Previous SDK versions
-  section_id: 6551300280977
-  position: 2
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-02-03T10:37:42Z'
   edited_at: '2026-08-18T09:07:24Z'
+  id: 207606796
+  locale: en-us
+  section: Previous SDK versions
+  section_id: 6551300280977
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207606796-Migrating-from-Version-3-3-X-to-4-3-2-and-Higher
 ---
 Major changes have been made to the Android SDK integration.
 

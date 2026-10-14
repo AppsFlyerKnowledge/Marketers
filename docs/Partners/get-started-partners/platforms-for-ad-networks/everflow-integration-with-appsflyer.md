@@ -1,26 +1,25 @@
 ---
-title: "Everflow integration with AppsFlyer"
-excerpt: "Everflow is an AppsFlyer integrated partner. AppsFlyer sends attribution data to Everflow for installs and in-app events."
+title: Everflow integration with AppsFlyer
+excerpt: >-
+  Everflow is an AppsFlyer integrated partner. AppsFlyer sends attribution data
+  to Everflow for installs and in-app events.
+metadata:
+  keywords:
+    - everflow
+    - Ad Networks
+    - Partners
+    - Mobile Attribution
 x-zendesk:
-  id: 115005709185
-  url: https://support.appsflyer.com/hc/en-us/articles/115005709185-Everflow-integration-with-AppsFlyer
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Platforms for ad networks
-  section_id: 6551055575185
-  position: 3
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Mobile Attribution, Ad Networks]
-  labels: [everflow, Ad Networks, Partners]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-11-21T07:36:24Z'
   edited_at: '2026-04-19T12:54:10Z'
+  id: 115005709185
+  locale: en-us
+  section: Platforms for ad networks
+  section_id: 6551055575185
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115005709185-Everflow-integration-with-AppsFlyer
 ---
 ## Initiating the integration with AppsFlyer
 

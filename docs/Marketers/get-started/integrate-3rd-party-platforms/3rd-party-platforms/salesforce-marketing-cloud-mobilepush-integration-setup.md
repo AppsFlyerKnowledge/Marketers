@@ -1,26 +1,23 @@
 ---
-title: "Salesforce Marketing Cloud MobilePush integration setup"
-excerpt: "Salesforce Marketing Cloud MobilePush, an AppsFlyer integrated partner, is a user engagement platform for marketing, growth, and engagement teams."
+title: Salesforce Marketing Cloud MobilePush integration setup
+excerpt: >-
+  Salesforce Marketing Cloud MobilePush, an AppsFlyer integrated partner, is a
+  user engagement platform for marketing, growth, and engagement teams.
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 10590769196817
-  url: https://support.appsflyer.com/hc/en-us/articles/10590769196817-Salesforce-Marketing-Cloud-MobilePush-integration-setup
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: 3rd-party platforms
-  section_id: 6551199962257
-  position: 25
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-11-14T06:37:05Z'
   edited_at: '2023-09-10T07:54:37Z'
+  id: 10590769196817
+  locale: en-us
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/10590769196817-Salesforce-Marketing-Cloud-MobilePush-integration-setup
 ---
 ## Overview
 

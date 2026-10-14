@@ -1,18 +1,17 @@
 ---
-title: "Android platform"
-excerpt: "Android SDK release notes and other Android platform-related topics"
+title: Android platform
+excerpt: Android SDK release notes and other Android platform-related topics
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551190827921
-  url: https://support.appsflyer.com/hc/en-us/sections/6551190827921-Android-platform
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6551164458257
-  position: 1
-  sorting: manual
   created_at: '2022-06-02T11:32:20Z'
+  id: 6551190827921
+  locale: en-us
+  parent_section_id: 6551164458257
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551190827921-Android-platform
 ---
 Android SDK release notes and other Android platform-related topics
 

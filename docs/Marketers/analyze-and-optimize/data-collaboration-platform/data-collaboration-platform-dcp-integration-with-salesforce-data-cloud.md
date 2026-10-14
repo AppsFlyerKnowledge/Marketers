@@ -1,26 +1,24 @@
 ---
-title: "Data Collaboration Platform (DCP) - Integration with Salesforce Data Cloud"
-excerpt: "The Salesforce Data Cloud integration allows you to bring your first-party data to the AppsFlyer Data Collaboration Platform with a click of a button."
+title: Data Collaboration Platform (DCP) - Integration with Salesforce Data Cloud
+excerpt: >-
+  The Salesforce Data Cloud integration allows you to bring your first-party
+  data to the AppsFlyer Data Collaboration Platform with a click of a button.
+metadata:
+  keywords:
+    - Premium
+    - Marketers
+    - Data Clean Room
 x-zendesk:
-  id: 22977208909969
-  url: https://support.appsflyer.com/hc/en-us/articles/22977208909969-Data-Collaboration-Platform-DCP-Integration-with-Salesforce-Data-Cloud
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Collaboration Platform
-  section_id: 26230608274065
-  position: 11
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-yael-sharabi, Marketers, Data Clean Room]
-  labels: [Premium, Marketers, Loc In Prog]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-02-29T14:30:51Z'
   edited_at: '2025-02-03T13:14:45Z'
+  id: 22977208909969
+  locale: en-us
+  section: Data Collaboration Platform
+  section_id: 26230608274065
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/22977208909969-Data-Collaboration-Platform-DCP-Integration-with-Salesforce-Data-Cloud
 ---
 > 📘 **Before you begin**
 >

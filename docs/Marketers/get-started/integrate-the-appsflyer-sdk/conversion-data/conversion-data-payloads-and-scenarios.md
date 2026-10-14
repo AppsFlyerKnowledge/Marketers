@@ -1,26 +1,30 @@
 ---
-title: "Conversion data payloads and scenarios"
-excerpt: "Use conversion data to identify various conversion scenarios, customize user experience, and more."
+title: Conversion data payloads and scenarios
+excerpt: >-
+  Use conversion data to identify various conversion scenarios, customize user
+  experience, and more.
+metadata:
+  keywords:
+    - Conversion
+    - Retargeting
+    - Installs
+    - Re-attribution
+    - Re-engagement
+    - Developers
+    - SRN
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360000726098
-  url: https://support.appsflyer.com/hc/en-us/articles/360000726098-Conversion-data-payloads-and-scenarios
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Conversion data
-  section_id: 6551287787537
-  position: 5
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Conversion, Retargeting, Installs, Re-attribution, Re-engagement, Developers, SRN, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-12-31T13:05:33Z'
   edited_at: '2026-08-14T16:22:50Z'
+  id: 360000726098
+  locale: en-us
+  section: Conversion data
+  section_id: 6551287787537
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360000726098-Conversion-data-payloads-and-scenarios
 ---
 ## Overview
 

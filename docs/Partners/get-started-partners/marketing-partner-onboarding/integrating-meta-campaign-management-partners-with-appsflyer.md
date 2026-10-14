@@ -1,26 +1,34 @@
 ---
-title: "Integrating Meta campaign management partners with AppsFlyer"
-excerpt: "Learn what data types Meta campaign management partners can receive from AppsFlyer."
+title: Integrating Meta campaign management partners with AppsFlyer
+excerpt: >-
+  Learn what data types Meta campaign management partners can receive from
+  AppsFlyer.
+metadata:
+  keywords:
+    - Callbacks
+    - Integration
+    - Facebook
+    - Partner
+    - In-App
+    - partner account
+    - User Level
+    - Data policy
+    - FMP
+    - Partners
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 207034146
-  url: https://support.appsflyer.com/hc/en-us/articles/207034146-Integrating-Meta-campaign-management-partners-with-AppsFlyer
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Marketing partner onboarding
-  section_id: 6551118224657
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Callbacks, Integration, Facebook, Partner, In-App, partner account, User Level, Data policy, FMP, Partners, Developers]
-  promoted: false
-  comments_disabled: true
   created_at: '2015-03-29T12:38:26Z'
   edited_at: '2023-05-05T15:41:46Z'
+  id: 207034146
+  locale: en-us
+  section: Marketing partner onboarding
+  section_id: 6551118224657
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207034146-Integrating-Meta-campaign-management-partners-with-AppsFlyer
 ---
 ## Install postbacks
 

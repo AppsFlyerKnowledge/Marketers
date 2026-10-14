@@ -1,26 +1,22 @@
 ---
-title: "Pull API raw data"
-excerpt: "Use this API to get raw data reports in CSV files."
+title: Pull API raw data
+excerpt: Use this API to get raw data reports in CSV files.
+metadata:
+  keywords:
+    - Premium
+    - Marketers
+    - Raw Reports
 x-zendesk:
-  id: 360007530258
-  url: https://support.appsflyer.com/hc/en-us/articles/360007530258-Pull-API-raw-data
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data delivery tools
-  section_id: 6550995484561
-  position: 5
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-rona-einat, Marketers, Raw Reports]
-  labels: [Premium, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-04-14T18:24:00Z'
   edited_at: '2026-03-12T12:19:12Z'
+  id: 360007530258
+  locale: en-us
+  section: Data delivery tools
+  section_id: 6550995484561
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360007530258-Pull-API-raw-data
 ---
 [![PullAPIRaw_us-en.png](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)
 

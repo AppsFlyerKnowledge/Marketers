@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: DMA support in Raw data reports"
+title: 'Bulletin: DMA support in Raw data reports'
+metadata:
+  keywords:
+    - Marketers
+    - Raw Reports
 table_of_contents: false
 x-zendesk:
-  id: 25485269115793
-  url: https://support.appsflyer.com/hc/en-us/articles/25485269115793-Bulletin-DMA-support-in-Raw-data-reports
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 20
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-rona-einat, Marketers, Raw Reports]
-  labels: [Marketers, Loc Published]
-  promoted: false
-  comments_disabled: false
   created_at: '2024-05-29T16:52:12Z'
   edited_at: '2024-09-11T11:28:36Z'
+  id: 25485269115793
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/25485269115793-Bulletin-DMA-support-in-Raw-data-reports
 ---
 | **What's new** | The following DMA consent fields are being added to raw data tools in AppsFlyer:<ul><li>**gdpr\_applies:** Indicates whether the user falls under DMA jurisdiction (true) or not (false).</li><li>**ad\_user\_data\_enabled**: Indicates whether the user has consented to allow Google to use their user-level data for measurement and personalized advertising (true), or not (false).</li><li>**ad\_personalization\_enabled**: Indicates whether the user has consented to allow Google to use their user-level data for personal ads (true), or not (false).</li><li>**raw\_consent\_data**: Returns a JSON object with the full raw consent data as sent from the advertiser to AppsFlyer. The information sent in this object is then used to populate the three fields above.<ul><li>This field is not available in Raw data export and Pull API</li></ul></li></ul> |
 | --- | --- |

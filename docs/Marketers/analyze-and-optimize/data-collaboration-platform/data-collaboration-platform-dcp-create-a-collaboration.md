@@ -1,26 +1,23 @@
 ---
-title: "Data Collaboration Platform (DCP) - Create a collaboration"
-excerpt: "Collaborations enable commerce media networks and brands to leverage combined data to create new ad revenue streams and achieve maximum campaign results."
+title: Data Collaboration Platform (DCP) - Create a collaboration
+excerpt: >-
+  Collaborations enable commerce media networks and brands to leverage combined
+  data to create new ad revenue streams and achieve maximum campaign results.
+metadata:
+  keywords:
+    - Marketers
+    - Data Clean Room
 x-zendesk:
-  id: 32192739295377
-  url: https://support.appsflyer.com/hc/en-us/articles/32192739295377-Data-Collaboration-Platform-DCP-Create-a-collaboration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Collaboration Platform
-  section_id: 26230608274065
-  position: 7
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-yael-sharabi, Marketers, Data Clean Room]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2025-01-28T14:17:59Z'
   edited_at: '2026-02-16T09:48:48Z'
+  id: 32192739295377
+  locale: en-us
+  section: Data Collaboration Platform
+  section_id: 26230608274065
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/32192739295377-Data-Collaboration-Platform-DCP-Create-a-collaboration
 ---
 ## About collaborations
 

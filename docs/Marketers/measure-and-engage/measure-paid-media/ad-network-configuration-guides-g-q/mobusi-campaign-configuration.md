@@ -1,26 +1,25 @@
 ---
-title: "Mobusi campaign configuration"
-excerpt: "Mobusi, an AppsFlyer integrated partner, is a mobile user acquisition and marketing services company with expertise in performance advertising."
+title: Mobusi campaign configuration
+excerpt: >-
+  Mobusi, an AppsFlyer integrated partner, is a mobile user acquisition and
+  marketing services company with expertise in performance advertising.
+metadata:
+  keywords:
+    - Advertisers
+    - Mobusi
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 217909583
-  url: https://support.appsflyer.com/hc/en-us/articles/217909583-Mobusi-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (G-Q)
-  section_id: 6552006535953
-  position: 13
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Advertisers, Mobusi, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-11-14T09:59:36Z'
   edited_at: '2026-09-09T13:09:26Z'
+  id: 217909583
+  locale: en-us
+  section: Ad network configuration guides (G-Q)
+  section_id: 6552006535953
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/217909583-Mobusi-campaign-configuration
 ---
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mobusi.png?v=1)
 

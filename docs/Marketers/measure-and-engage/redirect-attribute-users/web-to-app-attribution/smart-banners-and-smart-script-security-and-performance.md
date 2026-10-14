@@ -1,26 +1,23 @@
 ---
-title: "Smart Banners and Smart Script security and performance"
-excerpt: "Discover how AppsFlyer proactively addresses your security concerns regarding Smart Banners and Smart Script."
+title: Smart Banners and Smart Script security and performance
+excerpt: >-
+  Discover how AppsFlyer proactively addresses your security concerns regarding
+  Smart Banners and Smart Script.
+metadata:
+  keywords:
+    - Marketers
+    - Smart Banners and Scripts
 x-zendesk:
-  id: 22082177372561
-  url: https://support.appsflyer.com/hc/en-us/articles/22082177372561-Smart-Banners-and-Smart-Script-security-and-performance
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Web-to-app attribution
-  section_id: 6551240476177
-  position: 4
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, Smart Banners and Scripts]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2024-01-30T14:54:37Z'
   edited_at: '2026-05-31T11:57:28Z'
+  id: 22082177372561
+  locale: en-us
+  section: Web-to-app attribution
+  section_id: 6551240476177
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/22082177372561-Smart-Banners-and-Smart-Script-security-and-performance
 ---
 In this Q&A, we discuss common queries about smart banners and smart script integration, focusing on their impact on security and site speed.
 

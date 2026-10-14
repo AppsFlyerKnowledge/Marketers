@@ -1,26 +1,26 @@
 ---
-title: "Implement validation rules to prevent fraud"
-excerpt: "Validation rules add a custom layer of protection against incorrectly targeted campaigns and fraud. The rules enable app owners to control which installs and in-app event attributions get blocked, or attributed to the last valid source."
+title: Implement validation rules to prevent fraud
+excerpt: >-
+  Validation rules add a custom layer of protection against incorrectly targeted
+  campaigns and fraud. The rules enable app owners to control which installs and
+  in-app event attributions get blocked, or attributed to the last valid source.
+metadata:
+  keywords:
+    - Advertisers
+    - validation rule
+    - Marketers
+    - Protect360
 x-zendesk:
-  id: 115004703926
-  url: https://support.appsflyer.com/hc/en-us/articles/115004703926-Implement-validation-rules-to-prevent-fraud
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Protect your traffic
-  section_id: 6551015912465
-  position: 9
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 27439133508369
-  content_tags: [pm-roy-yanai, Marketers, Protect360]
-  labels: [Advertisers, validation rule, Marketers, Localize, Loc In Prog, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-09-14T14:43:46Z'
   edited_at: '2026-09-09T07:57:33Z'
+  id: 115004703926
+  locale: en-us
+  section: Protect your traffic
+  section_id: 6551015912465
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115004703926-Implement-validation-rules-to-prevent-fraud
 ---
 ![5906_animation-750x330__1_.gif](https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif)
 

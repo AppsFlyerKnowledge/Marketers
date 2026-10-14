@@ -1,17 +1,16 @@
 ---
-title: "Collaboration measurement"
-excerpt: "Number of articles"
+title: Collaboration measurement
+excerpt: Number of articles
 x-zendesk:
-  type: section
-  id: 38034865098641
-  url: https://support.appsflyer.com/hc/en-us/sections/38034865098641-Collaboration-measurement
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 26230608274065
-  position: 0
-  sorting: manual
   created_at: '2025-08-12T14:51:18Z'
+  id: 38034865098641
+  locale: en-us
+  parent_section_id: 26230608274065
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/38034865098641-Collaboration-measurement
 ---
 This section covers collaboration measurement on the Data Collaboration Platform (DCP). Select a guide below to get started with setting up, configuring, and analyzing your measurement data tasks.
 

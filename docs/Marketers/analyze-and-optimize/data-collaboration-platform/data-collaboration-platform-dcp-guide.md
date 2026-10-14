@@ -1,26 +1,26 @@
 ---
-title: "Data Collaboration Platform (DCP) guide"
-excerpt: "The AppsFlyer Data Collaboration Platform provides a seamless, privacy-centric solution for commerce media networks and collaborating brands to leverage their combined data to achieve maximum campaign results and create powerful new ad revenue streams."
+title: Data Collaboration Platform (DCP) guide
+excerpt: >-
+  The AppsFlyer Data Collaboration Platform provides a seamless, privacy-centric
+  solution for commerce media networks and collaborating brands to leverage
+  their combined data to achieve maximum campaign results and create powerful
+  new ad revenue streams.
+metadata:
+  keywords:
+    - Premium
+    - Marketers
+    - Data Clean Room
 x-zendesk:
-  id: 26183285566353
-  url: https://support.appsflyer.com/hc/en-us/articles/26183285566353-Data-Collaboration-Platform-DCP-guide
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Collaboration Platform
-  section_id: 26230608274065
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-yael-sharabi, Marketers, Data Clean Room]
-  labels: [Premium, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-06-25T07:41:51Z'
   edited_at: '2025-12-18T10:57:39Z'
+  id: 26183285566353
+  locale: en-us
+  section: Data Collaboration Platform
+  section_id: 26230608274065
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/26183285566353-Data-Collaboration-Platform-DCP-guide
 ---
 ![53877 Need KB image for a new DCP KB (1) - Blurred.png](https://files.readme.io/09539acd55618af4f99fb3a1118c7ba7ed9273ecabf7d80b007f95ca236d82b9-38491408127633.png)
 

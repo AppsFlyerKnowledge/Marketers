@@ -1,26 +1,29 @@
 ---
-title: "TVSquared (formerly Wywy) campaign configuration"
-excerpt: "TVSquared (formerly WyWy), an AppsFlyer ad network integrated partner, enables the entire digital organization - marketers, product managers, and data scientists - to run the business based on data. TVSquared creates an integrated view of consumers across devices, providing tools to optimize the user experience in real-time."
+title: TVSquared (formerly Wywy) campaign configuration
+excerpt: >-
+  TVSquared (formerly WyWy), an AppsFlyer ad network integrated partner, enables
+  the entire digital organization - marketers, product managers, and data
+  scientists - to run the business based on data. TVSquared creates an
+  integrated view of consumers across devices, providing tools to optimize the
+  user experience in real-time.
+metadata:
+  keywords:
+    - Advertisers
+    - TV Squareed
+    - Wywy
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 213836263
-  url: https://support.appsflyer.com/hc/en-us/articles/213836263-TVSquared-formerly-Wywy-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (R-Z)
-  section_id: 6552025468305
-  position: 15
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Advertisers, TV Squareed, Wywy, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-09-06T08:58:47Z'
   edited_at: '2026-06-16T09:45:39Z'
+  id: 213836263
+  locale: en-us
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/213836263-TVSquared-formerly-Wywy-campaign-configuration
 ---
 ## Setting up TVSquared
 

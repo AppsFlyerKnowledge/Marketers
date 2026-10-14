@@ -1,27 +1,24 @@
 ---
-title: "Postback troubleshooting for ad networks"
-excerpt: "If you have problems receiving postbacks, review the following solutions."
+title: Postback troubleshooting for ad networks
+excerpt: If you have problems receiving postbacks, review the following solutions.
+metadata:
+  keywords:
+    - Postback
+    - Ad Networks
+    - Partners
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 7466104144145
-  url: https://support.appsflyer.com/hc/en-us/articles/7466104144145-Postback-troubleshooting-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Receive data
-  section_id: 6551235995281
-  position: 4
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Mobile Attribution, Ad Networks]
-  labels: [Postback, Ad Networks, Partners, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-07-07T15:16:00Z'
   edited_at: '2026-01-13T10:25:26Z'
+  id: 7466104144145
+  locale: en-us
+  section: Receive data
+  section_id: 6551235995281
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/7466104144145-Postback-troubleshooting-for-ad-networks
 ---
 | **Problem** | **Solution** |
 | --- | --- |

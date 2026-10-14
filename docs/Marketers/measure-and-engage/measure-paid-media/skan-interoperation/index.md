@@ -1,18 +1,17 @@
 ---
-title: "SKAN interoperation"
-excerpt: "Set up SKAN integrated partners for AppsFlyer SKAN attribution"
+title: SKAN interoperation
+excerpt: Set up SKAN integrated partners for AppsFlyer SKAN attribution
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6552115163153
-  url: https://support.appsflyer.com/hc/en-us/sections/6552115163153-SKAN-interoperation
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550990672401
-  position: 3
-  sorting: manual
   created_at: '2022-06-02T12:10:41Z'
+  id: 6552115163153
+  locale: en-us
+  parent_section_id: 6550990672401
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6552115163153-SKAN-interoperation
 ---
 <Cards>
   <Card title="[Beta] SKAN interoperation with Amazon" href="/docs/beta-skan-interoperation-with-amazon" icon="fa-solid fa-lock">

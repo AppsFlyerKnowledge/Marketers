@@ -1,26 +1,25 @@
 ---
-title: "Cost Import for ad networks"
-excerpt: "Learn how ad networks can report the advertiser's campaign costs directly to AppsFlyer via CSV files."
+title: Cost Import for ad networks
+excerpt: >-
+  Learn how ad networks can report the advertiser's campaign costs directly to
+  AppsFlyer via CSV files.
+metadata:
+  keywords:
+    - Ad Networks
+    - Partners
+    - Gray
+    - ROI360
 x-zendesk:
-  id: 360002868097
-  url: https://support.appsflyer.com/hc/en-us/articles/360002868097-Cost-Import-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Cost sharing for ad networks
-  section_id: 6551141756177
-  position: 1
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-maytav-avnat, ROI360, Ad Networks]
-  labels: [Ad Networks, Partners, Gray, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2019-10-20T06:03:13Z'
   edited_at: '2025-09-10T14:33:39Z'
+  id: 360002868097
+  locale: en-us
+  section: Cost sharing for ad networks
+  section_id: 6551141756177
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360002868097-Cost-Import-for-ad-networks
 ---
 ## Cost Import for ad networks
 

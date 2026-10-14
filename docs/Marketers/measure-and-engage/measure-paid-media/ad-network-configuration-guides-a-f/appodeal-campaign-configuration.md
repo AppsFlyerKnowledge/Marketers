@@ -1,26 +1,27 @@
 ---
-title: "Appodeal campaign configuration"
-excerpt: "Appodeal, an AppsFlyer integrated partner, provides app owners with click attribution and an all-in-one ad monetization solution. Ad revenue is reported with user-level granularity."
+title: Appodeal campaign configuration
+excerpt: >-
+  Appodeal, an AppsFlyer integrated partner, provides app owners with click
+  attribution and an all-in-one ad monetization solution. Ad revenue is reported
+  with user-level granularity.
+metadata:
+  keywords:
+    - ad revenue
+    - cost
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360004404977
-  url: https://support.appsflyer.com/hc/en-us/articles/360004404977-Appodeal-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (A-F)
-  section_id: 6551990971793
-  position: 11
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [ad revenue, cost, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2019-12-17T19:36:02Z'
   edited_at: '2026-06-16T09:48:54Z'
+  id: 360004404977
+  locale: en-us
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360004404977-Appodeal-campaign-configuration
 ---
 ## Setting up Appodeal integration
 

@@ -1,26 +1,24 @@
 ---
-title: "Data Collaboration Platform (DCP) - Enrich sources with ID5"
-excerpt: "Enrich your first-party data with ID5 identifiers to unify fragmented user data and improve match rates with activation partners, resulting in larger audiences."
+title: Data Collaboration Platform (DCP) - Enrich sources with ID5
+excerpt: >-
+  Enrich your first-party data with ID5 identifiers to unify fragmented user
+  data and improve match rates with activation partners, resulting in larger
+  audiences.
+metadata:
+  keywords:
+    - Marketers
+    - Audience Activation
 x-zendesk:
-  id: 42626850533137
-  url: https://support.appsflyer.com/hc/en-us/articles/42626850533137-Data-Collaboration-Platform-DCP-Enrich-sources-with-ID5
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Collaboration Platform
-  section_id: 26230608274065
-  position: 10
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-yael-sharabi, Marketers, Audience Activation]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2026-01-08T07:53:48Z'
   edited_at: '2026-01-15T11:49:48Z'
+  id: 42626850533137
+  locale: en-us
+  section: Data Collaboration Platform
+  section_id: 26230608274065
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/42626850533137-Data-Collaboration-Platform-DCP-Enrich-sources-with-ID5
 ---
 ## About ID5 enrichment
 

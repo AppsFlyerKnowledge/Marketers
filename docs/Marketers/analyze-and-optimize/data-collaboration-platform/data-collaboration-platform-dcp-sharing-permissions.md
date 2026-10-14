@@ -1,26 +1,23 @@
 ---
-title: "Data Collaboration Platform (DCP) sharing permissions"
-excerpt: "Define the DCP collaboration permissions that determine how your collaborator can use your shared data."
+title: Data Collaboration Platform (DCP) sharing permissions
+excerpt: >-
+  Define the DCP collaboration permissions that determine how your collaborator
+  can use your shared data.
+metadata:
+  keywords:
+    - Marketers
+    - Audience Activation
 x-zendesk:
-  id: 42009477902353
-  url: https://support.appsflyer.com/hc/en-us/articles/42009477902353-Data-Collaboration-Platform-DCP-sharing-permissions
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Collaboration Platform
-  section_id: 26230608274065
-  position: 8
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-yael-sharabi, Marketers, Audience Activation]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2025-12-17T10:36:33Z'
   edited_at: '2026-05-19T12:27:23Z'
+  id: 42009477902353
+  locale: en-us
+  section: Data Collaboration Platform
+  section_id: 26230608274065
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/42009477902353-Data-Collaboration-Platform-DCP-sharing-permissions
 ---
 This article describes the permissions available when sharing data in a Data Collaboration Platform (DCP) collaboration. Sharing permissions are defined by the **Collaboration policy** you set when [creating a collaboration](/docs/data-collaboration-platform-dcp-create-a-collaboration) and specify what collaborators can do with your data and which resources or activation partners they can use. In addition to this default policy, custom data permissions can also be set per source. The Collaboration policy defines the:
 

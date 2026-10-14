@@ -1,26 +1,25 @@
 ---
-title: "Apple App Clips integration guide"
-excerpt: "App Clips lets users with iOS 14 or later quickly access and experience your app. AppsFlyer enables App Clip attribution, and redirects users who can't use App Clips (for example, Android users) as needed."
+title: Apple App Clips integration guide
+excerpt: >-
+  App Clips lets users with iOS 14 or later quickly access and experience your
+  app. AppsFlyer enables App Clip attribution, and redirects users who can't use
+  App Clips (for example, Android users) as needed.
+metadata:
+  keywords:
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360014262358
-  url: https://support.appsflyer.com/hc/en-us/articles/360014262358-Apple-App-Clips-integration-guide
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: iOS platform
-  section_id: 6551263106577
-  position: 3
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Developers, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-10-09T00:42:10Z'
   edited_at: '2024-08-05T15:24:14Z'
+  id: 360014262358
+  locale: en-us
+  section: iOS platform
+  section_id: 6551263106577
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360014262358-Apple-App-Clips-integration-guide
 ---
 ![app_clip_flow_3.png](https://files.readme.io/1a5ec7a6b8a061955742d8e79ba78fa0262c0609e1e801decc92300d6c24a774-360012832058.png)
 

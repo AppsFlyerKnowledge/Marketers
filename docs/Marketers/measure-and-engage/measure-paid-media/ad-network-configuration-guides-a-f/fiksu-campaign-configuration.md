@@ -1,26 +1,32 @@
 ---
-title: "Fiksu campaign configuration"
-excerpt: "Fiksu, an AppsFlyer ad network integrated partner, lets performance-driven marketers target and engage specific audiences that are most likely to spend time and money in their app. In addition to click-based mobile attribution, Fiksu also offers view-through attribution, which you can record with AppsFlyer."
+title: Fiksu campaign configuration
+excerpt: >-
+  Fiksu, an AppsFlyer ad network integrated partner, lets performance-driven
+  marketers target and engage specific audiences that are most likely to spend
+  time and money in their app. In addition to click-based mobile attribution,
+  Fiksu also offers view-through attribution, which you can record with
+  AppsFlyer.
+metadata:
+  keywords:
+    - Campaign
+    - SDK
+    - Media Source Configuration
+    - Configure
+    - Fiksu
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 207033936
-  url: https://support.appsflyer.com/hc/en-us/articles/207033936-Fiksu-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (A-F)
-  section_id: 6551990971793
-  position: 24
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Campaign, SDK, Media Source Configuration, Configure, Fiksu, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2015-03-08T13:07:42Z'
   edited_at: '2026-09-09T13:11:43Z'
+  id: 207033936
+  locale: en-us
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207033936-Fiksu-campaign-configuration
 ---
 ## Setting up Fiksu
 

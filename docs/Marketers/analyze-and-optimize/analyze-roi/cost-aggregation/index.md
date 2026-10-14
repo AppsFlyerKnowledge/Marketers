@@ -1,18 +1,17 @@
 ---
-title: "Cost aggregation"
-excerpt: "Get reliable aggregate ad spend data with ROI360"
+title: Cost aggregation
+excerpt: Get reliable aggregate ad spend data with ROI360
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551029483281
-  url: https://support.appsflyer.com/hc/en-us/sections/6551029483281-Cost-aggregation
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6551026275217
-  position: 0
-  sorting: manual
   created_at: '2022-06-02T11:25:50Z'
+  id: 6551029483281
+  locale: en-us
+  parent_section_id: 6551026275217
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551029483281-Cost-aggregation
 ---
 Get reliable aggregate ad spend data with ROI360
 

@@ -1,18 +1,17 @@
 ---
-title: "The AppsFlyer platform"
-excerpt: "The ins-and-outs of the platform, notifications, data access, APIs, and more"
+title: The AppsFlyer platform
+excerpt: The ins-and-outs of the platform, notifications, data access, APIs, and more
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551361489297
-  url: https://support.appsflyer.com/hc/en-us/sections/6551361489297-The-AppsFlyer-platform
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6551113099153
-  position: 0
-  sorting: manual
   created_at: '2022-06-02T11:39:12Z'
+  id: 6551361489297
+  locale: en-us
+  parent_section_id: 6551113099153
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551361489297-The-AppsFlyer-platform
 ---
 The ins-and-outs of the platform, notifications, data access, APIs, and more
 

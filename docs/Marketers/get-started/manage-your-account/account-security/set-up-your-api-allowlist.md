@@ -1,26 +1,28 @@
 ---
-title: "Set up your API allowlist"
-excerpt: "Protect your AppsFlyer account by defining an API allowlist."
+title: Set up your API allowlist
+excerpt: Protect your AppsFlyer account by defining an API allowlist.
+metadata:
+  keywords:
+    - OneLink
+    - API Policy
+    - fraud
+    - Advertisers
+    - Agencies
+    - API access
+    - attribution link
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 4406016140817
-  url: https://support.appsflyer.com/hc/en-us/articles/4406016140817-Set-up-your-API-allowlist
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Account security
-  section_id: 6551173202065
-  position: 3
-  owner: Judi Levy
-  owner_email: judi.levy@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies]
-  labels: [OneLink, API Policy, fraud, Advertisers, Agencies, API access, attribution link, Marketers, Loc In Prog]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-08-22T13:50:14Z'
   edited_at: '2024-06-27T05:53:26Z'
+  id: 4406016140817
+  locale: en-us
+  section: Account security
+  section_id: 6551173202065
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4406016140817-Set-up-your-API-allowlist
 ---
 ## [![API allowlist](https://files.readme.io/05f8c46f81b679e2881bf72255ae835a70d1cb3be1ea862b90053c2c259f25b6-4423224122385.png)](https://files.readme.io/05f8c46f81b679e2881bf72255ae835a70d1cb3be1ea862b90053c2c259f25b6-4423224122385.png)
 

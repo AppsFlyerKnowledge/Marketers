@@ -1,26 +1,29 @@
 ---
-title: "Smart Banners—mobile web-to-app (for marketers)"
-excerpt: "Convert your website visitors into mobile app users with Smart Banners."
+title: Smart Banners—mobile web-to-app (for marketers)
+excerpt: Convert your website visitors into mobile app users with Smart Banners.
+metadata:
+  keywords:
+    - Landing Page
+    - Advertisers
+    - Web Attribution
+    - Developers
+    - Smart Banner
+    - sb
+    - Marketers
+    - Banner
+    - Banners
+    - Smart Banners and Scripts
 x-zendesk:
-  id: 360000764837
-  url: https://support.appsflyer.com/hc/en-us/articles/360000764837-Smart-Banners-mobile-web-to-app-for-marketers
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Web-to-app attribution
-  section_id: 6551240476177
-  position: 1
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, Smart Banners and Scripts]
-  labels: [Landing Page, Advertisers, Web Attribution, Developers, Smart Banner, sb, Marketers, Banner, Banners, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2019-01-14T12:33:07Z'
   edited_at: '2026-02-23T14:37:29Z'
+  id: 360000764837
+  locale: en-us
+  section: Web-to-app attribution
+  section_id: 6551240476177
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360000764837-Smart-Banners-mobile-web-to-app-for-marketers
 ---
 [![](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)
 

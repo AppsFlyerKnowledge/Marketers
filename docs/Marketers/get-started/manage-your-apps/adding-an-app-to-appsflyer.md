@@ -1,26 +1,29 @@
 ---
-title: "Adding an app to AppsFlyer"
-excerpt: "Learn how to add your app to AppsFlyer so you can get attribution data on installs and in-app events, and analyze the data using the different tools on AppsFlyer."
+title: Adding an app to AppsFlyer
+excerpt: >-
+  Learn how to add your app to AppsFlyer so you can get attribution data on
+  installs and in-app events, and analyze the data using the different tools on
+  AppsFlyer.
+metadata:
+  keywords:
+    - Add App
+    - adding an app
+    - Advertisers
+    - could not add app
+    - security reasons
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 207377436
-  url: https://support.appsflyer.com/hc/en-us/articles/207377436-Adding-an-app-to-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Manage your apps
-  section_id: 6551015977105
-  position: 0
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-roy-negri, Marketers, Platform essentials]
-  labels: [Add App, adding an app, Advertisers, could not add app, security reasons, Marketers, Localize]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-01-20T08:57:00Z'
   edited_at: '2026-08-03T09:05:58Z'
+  id: 207377436
+  locale: en-us
+  section: Manage your apps
+  section_id: 6551015977105
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207377436-Adding-an-app-to-AppsFlyer
 ---
 ## Overview
 

@@ -1,17 +1,16 @@
 ---
-title: "Account security"
-excerpt: "Securely connect your account users and BI systems with AppsFlyer services"
+title: Account security
+excerpt: Securely connect your account users and BI systems with AppsFlyer services
 x-zendesk:
-  type: section
-  id: 6551173202065
-  url: https://support.appsflyer.com/hc/en-us/sections/6551173202065-Account-security
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6551054625937
-  position: 1
-  sorting: manual
   created_at: '2022-06-02T11:33:05Z'
+  id: 6551173202065
+  locale: en-us
+  parent_section_id: 6551054625937
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551173202065-Account-security
 ---
 Securely connect your account users and BI systems with AppsFlyer services
 

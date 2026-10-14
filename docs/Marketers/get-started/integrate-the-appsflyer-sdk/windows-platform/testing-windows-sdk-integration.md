@@ -1,26 +1,26 @@
 ---
-title: "Testing Windows SDK integration"
-excerpt: "Test your Windows app integration with AppsFlyer."
+title: Testing Windows SDK integration
+excerpt: Test your Windows app integration with AppsFlyer.
+metadata:
+  keywords:
+    - Testing
+    - Windows
+    - SDK
+    - Advertisers
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 217924503
-  url: https://support.appsflyer.com/hc/en-us/articles/217924503-Testing-Windows-SDK-integration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Windows platform
-  section_id: 6551223206417
-  position: 2
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Testing, Windows, SDK, Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-11-15T12:35:48Z'
   edited_at: '2023-02-15T13:15:01Z'
+  id: 217924503
+  locale: en-us
+  section: Windows platform
+  section_id: 6551223206417
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/217924503-Testing-Windows-SDK-integration
 ---
 * Currently, there is no way of testing with Windows Referrer other than to upload the app to the Windows App Store.
 * When testing with Windows Referrer, you must be familiar with the following restrictions:

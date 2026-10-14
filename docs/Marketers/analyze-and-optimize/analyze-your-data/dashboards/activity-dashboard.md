@@ -1,26 +1,24 @@
 ---
-title: "Activity dashboard"
-excerpt: "See app activity, engagement, and in-app metrics during a given period. Current day metrics update in real-time."
+title: Activity dashboard
+excerpt: >-
+  See app activity, engagement, and in-app metrics during a given period.
+  Current day metrics update in real-time.
+metadata:
+  keywords:
+    - activity report
+    - Advertisers
+    - Marketers
+    - Marketing Analytics
 x-zendesk:
-  id: 207602503
-  url: https://support.appsflyer.com/hc/en-us/articles/207602503-Activity-dashboard
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Dashboards
-  section_id: 6550925337873
-  position: 9
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
-  labels: [activity report, Advertisers, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-01-12T15:50:15Z'
   edited_at: '2025-11-24T09:07:15Z'
+  id: 207602503
+  locale: en-us
+  section: Dashboards
+  section_id: 6550925337873
+  url: https://support.appsflyer.com/hc/en-us/articles/207602503-Activity-dashboard
 ---
 ![ActivityDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
 

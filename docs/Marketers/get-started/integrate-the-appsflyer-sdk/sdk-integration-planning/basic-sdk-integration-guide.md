@@ -1,26 +1,32 @@
 ---
-title: "Basic SDK integration guide"
-excerpt: "Work with your mobile or CTV app developer to integrate and install the SDK into Android or iOS apps. Once basic integration tasks are complete, your app is ready for install attribution and in-app event measurement."
+title: Basic SDK integration guide
+excerpt: >-
+  Work with your mobile or CTV app developer to integrate and install the SDK
+  into Android or iOS apps. Once basic integration tasks are complete, your app
+  is ready for install attribution and in-app event measurement.
+metadata:
+  keywords:
+    - sdk
+    - iOS
+    - Android
+    - Integration
+    - Advertisers
+    - appuid
+    - anonymous
+    - kakao
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 207032066
-  url: https://support.appsflyer.com/hc/en-us/articles/207032066-Basic-SDK-integration-guide
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: SDK integration planning
-  section_id: 6551182964369
-  position: 1
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [sdk, iOS, Android, SDK, Integration, Advertisers, appuid, anonymous, kakao, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2013-08-22T16:09:08Z'
   edited_at: '2026-08-13T12:39:14Z'
+  id: 207032066
+  locale: en-us
+  section: SDK integration planning
+  section_id: 6551182964369
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207032066-Basic-SDK-integration-guide
 ---
 ## **Implementing the dev key in your app**
 

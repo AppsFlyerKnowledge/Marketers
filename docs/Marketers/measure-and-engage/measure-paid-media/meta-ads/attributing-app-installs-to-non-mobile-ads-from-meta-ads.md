@@ -1,27 +1,26 @@
 ---
-title: "Attributing app installs to non-mobile ads from Meta ads"
-excerpt: "Attribute installs coming from non-mobile Meta ads campaigns."
+title: Attributing app installs to non-mobile ads from Meta ads
+excerpt: Attribute installs coming from non-mobile Meta ads campaigns.
+metadata:
+  keywords:
+    - Facebook
+    - App Installs
+    - Advertisers
+    - Developers
+    - Marketers
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 115001460566
-  url: https://support.appsflyer.com/hc/en-us/articles/115001460566-Attributing-app-installs-to-non-mobile-ads-from-Meta-ads
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Meta ads
-  section_id: 6551109855761
-  position: 8
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Facebook, App Installs, Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-03-19T07:12:45Z'
   edited_at: '2023-03-23T15:19:31Z'
+  id: 115001460566
+  locale: en-us
+  section: Meta ads
+  section_id: 6551109855761
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115001460566-Attributing-app-installs-to-non-mobile-ads-from-Meta-ads
 ---
 ## Attributing mobile app installs
 

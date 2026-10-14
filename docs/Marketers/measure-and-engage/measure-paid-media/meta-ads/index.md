@@ -1,18 +1,16 @@
 ---
-title: "Meta ads"
-excerpt: "All about the Meta ads integration"
+title: Meta ads
+excerpt: All about the Meta ads integration
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551109855761
-  url: https://support.appsflyer.com/hc/en-us/sections/6551109855761-Meta-ads
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550990672401
-  position: 9
-  sorting: manual
   created_at: '2022-06-02T11:27:42Z'
+  id: 6551109855761
+  locale: en-us
+  parent_section_id: 6550990672401
+  type: section
+  url: https://support.appsflyer.com/hc/en-us/sections/6551109855761-Meta-ads
 ---
 All about the Meta ads integration
 

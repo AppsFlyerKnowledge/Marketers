@@ -1,28 +1,22 @@
 ---
 title: 'Bulletin: Digital Turbine migration to unified AppsFlyer integration'
-hidden: false
 deprecated: false
+hidden: false
+metadata:
+  keywords:
+    - Marketers
 table_of_contents: false
 x-zendesk:
-  id: 50419778565521
-  url: https://support.appsflyer.com/hc/en-us/articles/50419778565521-Bulletin-Digital-Turbine-migration-to-unified-AppsFlyer-integration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: []
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2026-09-01T10:27:56Z'
   edited_at: '2026-09-30T09:03:00Z'
+  id: 50419778565521
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/50419778565521-Bulletin-Digital-Turbine-migration-to-unified-AppsFlyer-integration
 ---
 | **Section** | **Details** |
 | --- | --- |

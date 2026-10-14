@@ -1,26 +1,23 @@
 ---
-title: "Data collaboration platform (DCP) - Prepare collaboration measurement"
-excerpt: "Learn how to create measurement data sources, and how to provide access to them in a way that can be digested by the attribution job."
+title: Data collaboration platform (DCP) - Prepare collaboration measurement
+excerpt: >-
+  Learn how to create measurement data sources, and how to provide access to
+  them in a way that can be digested by the attribution job.
+metadata:
+  keywords:
+    - Marketers
+    - Data Management
 x-zendesk:
-  id: 32144170371985
-  url: https://support.appsflyer.com/hc/en-us/articles/32144170371985-Data-collaboration-platform-DCP-Prepare-collaboration-measurement
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Collaboration measurement
-  section_id: 38034865098641
-  position: 2
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-yael-sharabi, Marketers, Data Management]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2025-01-27T08:47:05Z'
   edited_at: '2026-06-22T07:25:10Z'
+  id: 32144170371985
+  locale: en-us
+  section: Collaboration measurement
+  section_id: 38034865098641
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/32144170371985-Data-collaboration-platform-DCP-Prepare-collaboration-measurement
 ---
 ## Overview
 

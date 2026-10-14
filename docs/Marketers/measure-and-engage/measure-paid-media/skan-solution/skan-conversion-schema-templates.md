@@ -1,26 +1,25 @@
 ---
-title: "SKAN conversion schema templates"
-excerpt: "SKAN conversion schema templates are ready-to-use templates. Simplifying the SKAN setup by offering templates based on a combination of industry and specific app data, offering industry insights and best practices. SKAN conversion schema templates can be found in the Conversion Studio."
+title: SKAN conversion schema templates
+excerpt: >-
+  SKAN conversion schema templates are ready-to-use templates. Simplifying the
+  SKAN setup by offering templates based on a combination of industry and
+  specific app data, offering industry insights and best practices. SKAN
+  conversion schema templates can be found in the Conversion Studio.
+metadata:
+  keywords:
+    - Marketers
+    - SKAdNetwork (SKAN)
 x-zendesk:
-  id: 28968432692241
-  url: https://support.appsflyer.com/hc/en-us/articles/28968432692241-SKAN-conversion-schema-templates
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: SKAN solution
-  section_id: 6552135379985
-  position: 0
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-10-06T09:58:43Z'
   edited_at: '2024-11-05T06:20:24Z'
+  id: 28968432692241
+  locale: en-us
+  section: SKAN solution
+  section_id: 6552135379985
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/28968432692241-SKAN-conversion-schema-templates
 ---
 ## Key benefits
 

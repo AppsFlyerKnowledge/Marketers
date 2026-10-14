@@ -1,26 +1,23 @@
 ---
-title: "Data Collaboration Platform (DCP) - Add connections"
-excerpt: "Set up DCP connections to connect your data sources, enrich your data, and export audiences to cloud storage and media partners."
+title: Data Collaboration Platform (DCP) - Add connections
+excerpt: >-
+  Set up DCP connections to connect your data sources, enrich your data, and
+  export audiences to cloud storage and media partners.
+metadata:
+  keywords:
+    - Marketers
+    - Data Clean Room
 x-zendesk:
-  id: 24603890457617
-  url: https://support.appsflyer.com/hc/en-us/articles/24603890457617-Data-Collaboration-Platform-DCP-Add-connections
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Collaboration Platform
-  section_id: 26230608274065
-  position: 2
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-yael-sharabi, Marketers, Data Clean Room]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-04-28T13:26:59Z'
   edited_at: '2026-07-27T13:03:23Z'
+  id: 24603890457617
+  locale: en-us
+  section: Data Collaboration Platform
+  section_id: 26230608274065
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/24603890457617-Data-Collaboration-Platform-DCP-Add-connections
 ---
 ## About DCP connections
 

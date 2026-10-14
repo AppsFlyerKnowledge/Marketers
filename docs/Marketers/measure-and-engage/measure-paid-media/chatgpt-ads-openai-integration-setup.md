@@ -1,26 +1,23 @@
 ---
-title: "ChatGPT Ads (OpenAI) integration setup"
-excerpt: "ChatGPT Ads, an AppsFlyer integrated partner, is OpenAI's advertising platform. Set up the integration to measure and attribute mobile app installs, in-app events, and website conversions driven by your ChatGPT Ads campaigns."
+title: ChatGPT Ads (OpenAI) integration setup
+excerpt: >-
+  ChatGPT Ads, an AppsFlyer integrated partner, is OpenAI's advertising
+  platform. Set up the integration to measure and attribute mobile app installs,
+  in-app events, and website conversions driven by your ChatGPT Ads campaigns.
+metadata:
+  keywords:
+    - Marketers
 x-zendesk:
-  id: 48439655791249
-  url: https://support.appsflyer.com/hc/en-us/articles/48439655791249-ChatGPT-Ads-OpenAI-integration-setup
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Measure paid media
-  section_id: 6550990672401
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: []
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2026-07-05T13:42:23Z'
   edited_at: '2026-10-06T13:31:52Z'
+  id: 48439655791249
+  locale: en-us
+  section: Measure paid media
+  section_id: 6550990672401
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/48439655791249-ChatGPT-Ads-OpenAI-integration-setup
 ---
 ## About the integration with ChatGPT Ads
 

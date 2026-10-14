@@ -1,26 +1,34 @@
 ---
-title: "Account management—plans, payments, and billing"
-excerpt: "Learn about AppsFlyer plans and premium add-on features. See how plan usage and invoices are calculated. Manage your account."
+title: Account management—plans, payments, and billing
+excerpt: >-
+  Learn about AppsFlyer plans and premium add-on features. See how plan usage
+  and invoices are calculated. Manage your account.
+metadata:
+  keywords:
+    - Advertisers
+    - My plan
+    - Invoices
+    - Payment
+    - Finance
+    - Billing
+    - Plan
+    - welcome
+    - zero
+    - growth
+    - enterprise
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 115000136303
-  url: https://support.appsflyer.com/hc/en-us/articles/115000136303-Account-management-plans-payments-and-billing
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Account management
-  section_id: 6551191075473
-  position: 0
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials]
-  labels: [Advertisers, My plan, Invoices, Payment, Finance, Billing, Plan, welcome, zero, growth, enterprise, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-12-26T07:52:27Z'
   edited_at: '2026-07-08T09:48:21Z'
+  id: 115000136303
+  locale: en-us
+  section: Account management
+  section_id: 6551191075473
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115000136303-Account-management-plans-payments-and-billing
 ---
 ## AppsFlyer plans and usage
 

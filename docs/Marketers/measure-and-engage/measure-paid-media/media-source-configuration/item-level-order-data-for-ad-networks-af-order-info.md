@@ -1,26 +1,24 @@
 ---
-title: "Item-level order data for ad networks (af_order_info)"
-excerpt: "Send item-level order data to AppsFlyer with the af_order_info parameter. It supports two consistent formats for single or multi-item purchases. AppsFlyer automatically maps it to the structure each ad network requires."
+title: Item-level order data for ad networks (af_order_info)
+excerpt: >-
+  Send item-level order data to AppsFlyer with the af_order_info parameter. It
+  supports two consistent formats for single or multi-item purchases. AppsFlyer
+  automatically maps it to the structure each ad network requires.
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 50185623016721
-  url: https://support.appsflyer.com/hc/en-us/articles/50185623016721-Item-level-order-data-for-ad-networks-af-order-info
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Media source configuration
-  section_id: 6551067072785
-  position: 4
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [Marketers, Mobile Attribution]
-  labels: []
-  promoted: false
-  comments_disabled: true
   created_at: '2026-08-25T12:25:01Z'
   edited_at: '2026-09-22T14:00:28Z'
+  id: 50185623016721
+  locale: en-us
+  section: Media source configuration
+  section_id: 6551067072785
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/50185623016721-Item-level-order-data-for-ad-networks-af-order-info
 ---
 ## Why item-level data matters
 

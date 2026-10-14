@@ -1,26 +1,24 @@
 ---
-title: "Snapchat integration discrepancies"
-excerpt: "Learn about the different discrepancies between Snapchat and AppsFlyer dashboards and reposts."
+title: Snapchat integration discrepancies
+excerpt: >-
+  Learn about the different discrepancies between Snapchat and AppsFlyer
+  dashboards and reposts.
+metadata:
+  keywords:
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 4417686973841
-  url: https://support.appsflyer.com/hc/en-us/articles/4417686973841-Snapchat-integration-discrepancies
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Snap (Snapchat)
-  section_id: 6551316540945
-  position: 5
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-01-24T08:57:20Z'
   edited_at: '2023-11-02T10:20:16Z'
+  id: 4417686973841
+  locale: en-us
+  section: Snap (Snapchat)
+  section_id: 6551316540945
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4417686973841-Snapchat-integration-discrepancies
 ---
 In certain instances, advertisers can see fewer installs on AppsFlyer dashboard than on the Snapchat Ads Manager dashboard. Sometimes, the discrepancy can be addressed by making changes to the settings in the AppsFlyer dashboard or Snapchat Ads Manager (e.g timezone settings, attribution windows etc.). However, a discrepancy between the two dashboards is expected. Advertisers should rely on the AppsFlyer dashboard as the source of truth when evaluating CPI and performance.
 

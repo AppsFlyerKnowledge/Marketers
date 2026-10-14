@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: New AI layer added to Protect360 sub reasons"
+title: 'Bulletin: New AI layer added to Protect360 sub reasons'
+metadata:
+  keywords:
+    - Protect360
+    - Marketers
 table_of_contents: false
 x-zendesk:
-  id: 27250541538705
-  url: https://support.appsflyer.com/hc/en-us/articles/27250541538705-Bulletin-New-AI-layer-added-to-Protect360-sub-reasons
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 15
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-yanai, Marketers, Protect360]
-  labels: [Protect360, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-08-04T08:57:34Z'
   edited_at: '2024-08-05T17:41:35Z'
+  id: 27250541538705
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/27250541538705-Bulletin-New-AI-layer-added-to-Protect360-sub-reasons
 ---
 | **What's new** | To protect your data, ensure its security, and reduce fraud, we have added an AI model to enhance detection capabilities for identifying fraudulent devices and installation activities. |
 | --- | --- |

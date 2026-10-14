@@ -1,18 +1,17 @@
 ---
-title: "Integrate the AppsFlyer SDK"
-excerpt: "Plan your SDK integration, in-app events, and data delivery options"
+title: Integrate the AppsFlyer SDK
+excerpt: Plan your SDK integration, in-app events, and data delivery options
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551164458257
-  url: https://support.appsflyer.com/hc/en-us/sections/6551164458257-Integrate-the-AppsFlyer-SDK
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550753145745
-  position: 3
-  sorting: manual
   created_at: '2022-06-02T11:31:10Z'
+  id: 6551164458257
+  locale: en-us
+  parent_section_id: 6550753145745
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551164458257-Integrate-the-AppsFlyer-SDK
 ---
 Plan your SDK integration, in-app events, and data delivery options
 

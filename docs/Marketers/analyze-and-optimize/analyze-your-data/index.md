@@ -1,18 +1,17 @@
 ---
-title: "Analyze your data"
-excerpt: "Use our dashboards, reports, and other data delivery tools"
+title: Analyze your data
+excerpt: Use our dashboards, reports, and other data delivery tools
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6550901627921
-  url: https://support.appsflyer.com/hc/en-us/sections/6550901627921-Analyze-your-data
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550913619473
-  position: 1
-  sorting: manual
   created_at: '2022-06-02T11:20:19Z'
+  id: 6550901627921
+  locale: en-us
+  parent_section_id: 6550913619473
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6550901627921-Analyze-your-data
 ---
 Use our dashboards, reports, and other data delivery tools
 

@@ -1,26 +1,24 @@
 ---
-title: "Implementing and using 2FA login"
-excerpt: "Two-factor authentication (2FA) is used to add an extra layer of security to the login process. Login credentials for account users are supplemented by Google or Microsoft Authenticator."
+title: Implementing and using 2FA login
+excerpt: >-
+  Two-factor authentication (2FA) is used to add an extra layer of security to
+  the login process. Login credentials for account users are supplemented by
+  Google or Microsoft Authenticator.
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 41585422141585
-  url: https://support.appsflyer.com/hc/en-us/articles/41585422141585-Implementing-and-using-2FA-login
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Ad network onboarding
-  section_id: 6551058566033
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: []
-  promoted: false
-  comments_disabled: true
   created_at: '2025-12-04T09:21:41Z'
   edited_at: '2026-08-09T07:02:53Z'
+  id: 41585422141585
+  locale: en-us
+  section: Ad network onboarding
+  section_id: 6551058566033
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/41585422141585-Implementing-and-using-2FA-login
 ---
 ## Intro
 
@@ -77,7 +75,7 @@ x-zendesk:
 
 <Accordion title="Reset a user's 2FA">
 
-<Embed title="Implementing and using 2FA login" typeOfEmbed="youtube" url="https://www.youtube-nocookie.com/embed/15sYaqz89ys" providerUrl="https://www.youtube-nocookie.com" />
+<Embed title="Implementing and using 2FA login" typeOfEmbed="youtube" url="https://www.youtube.com/embed/15sYaqz89ys" providerUrl="https://www.youtube.com" />
 
 To reset your 2FA, contact your Admin. The admin should follow these steps:
 

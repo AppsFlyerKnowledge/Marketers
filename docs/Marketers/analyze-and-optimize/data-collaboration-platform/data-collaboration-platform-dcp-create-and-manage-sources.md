@@ -1,26 +1,23 @@
 ---
-title: "Data Collaboration Platform (DCP) - Create and manage sources"
-excerpt: "Create and manage sources to securely share your first-party data with other collaborators."
+title: Data Collaboration Platform (DCP) - Create and manage sources
+excerpt: >-
+  Create and manage sources to securely share your first-party data with other
+  collaborators.
+metadata:
+  keywords:
+    - Marketers
+    - Audience Activation
 x-zendesk:
-  id: 24740010687249
-  url: https://support.appsflyer.com/hc/en-us/articles/24740010687249-Data-Collaboration-Platform-DCP-Create-and-manage-sources
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Collaboration Platform
-  section_id: 26230608274065
-  position: 5
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-yael-sharabi, Marketers, Audience Activation]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-05-02T13:56:27Z'
   edited_at: '2026-09-22T08:22:34Z'
+  id: 24740010687249
+  locale: en-us
+  section: Data Collaboration Platform
+  section_id: 26230608274065
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/24740010687249-Data-Collaboration-Platform-DCP-Create-and-manage-sources
 ---
 ## About DCP sources
 

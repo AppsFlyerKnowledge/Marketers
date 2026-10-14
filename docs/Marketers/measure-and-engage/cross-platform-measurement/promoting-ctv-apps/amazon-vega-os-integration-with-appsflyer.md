@@ -1,26 +1,23 @@
 ---
-title: "Amazon Vega OS integration with AppsFlyer"
-excerpt: "Integrate your Amazon Vega OS Connected TV (CTV) app with AppsFlyer to receive attribution and event data for your campaigns on Amazon Vega OS."
+title: Amazon Vega OS integration with AppsFlyer
+excerpt: >-
+  Integrate your Amazon Vega OS Connected TV (CTV) app with AppsFlyer to receive
+  attribution and event data for your campaigns on Amazon Vega OS.
+metadata:
+  keywords:
+    - Marketers
+    - CTV Attribution
 x-zendesk:
-  id: 42971481283601
-  url: https://support.appsflyer.com/hc/en-us/articles/42971481283601-Amazon-Vega-OS-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Promoting CTV apps
-  section_id: 15328952633489
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roi-tamir, Marketers, CTV Attribution]
-  labels: []
-  promoted: false
-  comments_disabled: false
   created_at: '2026-01-19T07:36:38Z'
   edited_at: '2026-02-23T11:15:01Z'
+  id: 42971481283601
+  locale: en-us
+  section: Promoting CTV apps
+  section_id: 15328952633489
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/42971481283601-Amazon-Vega-OS-integration-with-AppsFlyer
 ---
 ## **About Amazon Vega OS CTV attribution**
 

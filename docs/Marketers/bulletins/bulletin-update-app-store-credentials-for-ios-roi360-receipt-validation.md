@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: Update App Store credentials for iOS ROI360 receipt validation"
+title: 'Bulletin: Update App Store credentials for iOS ROI360 receipt validation'
+metadata:
+  keywords:
+    - Marketers
+    - ROI360
 table_of_contents: false
 x-zendesk:
-  id: 27880822483985
-  url: https://support.appsflyer.com/hc/en-us/articles/27880822483985-Bulletin-Update-App-Store-credentials-for-iOS-ROI360-receipt-validation
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 3
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-michael-talapov, Marketers, ROI360]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2024-08-28T09:24:00Z'
   edited_at: '2026-10-14T08:08:41Z'
+  id: 27880822483985
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/27880822483985-Bulletin-Update-App-Store-credentials-for-iOS-ROI360-receipt-validation
 ---
 | Section | Details |
 | --- | --- |

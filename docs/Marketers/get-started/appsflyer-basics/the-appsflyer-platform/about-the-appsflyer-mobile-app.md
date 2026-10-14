@@ -1,26 +1,26 @@
 ---
-title: "About the AppsFlyer mobile app"
-excerpt: "Use the AppsFlyer mobile app to review your mobile attribution and marketing analytics right from your phone."
+title: About the AppsFlyer mobile app
+excerpt: >-
+  Use the AppsFlyer mobile app to review your mobile attribution and marketing
+  analytics right from your phone.
+metadata:
+  keywords:
+    - Appsflyer
+    - Mobile app
+    - Advertisers
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 115003020863
-  url: https://support.appsflyer.com/hc/en-us/articles/115003020863-About-the-AppsFlyer-mobile-app
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: The AppsFlyer platform
-  section_id: 6551361489297
-  position: 5
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-negri, Marketers, Platform essentials]
-  labels: [Appsflyer, Mobile app, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-06-18T11:47:28Z'
   edited_at: '2026-05-15T19:33:16Z'
+  id: 115003020863
+  locale: en-us
+  section: The AppsFlyer platform
+  section_id: 6551361489297
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115003020863-About-the-AppsFlyer-mobile-app
 ---
 | [![Google_Play_Store.png](https://files.readme.io/d3e90dff6b5b007164d1ee1449cf3b9b39f52b6b710034137b4ab7640ce2dc57-360001467125.png)](https://play.google.com/store/apps/details?id=com.appsflyer.analytics) | [![ios_App_Store.png](https://files.readme.io/516cd93b8a642bdf290e774936457c774e61f2493d3508a050c18c62378d2e7b-360001467145.png)](https://go.onelink.me/RJn0/support) |
 | --- | --- |

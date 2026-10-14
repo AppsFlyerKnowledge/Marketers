@@ -1,26 +1,23 @@
 ---
-title: "Pinterest—Create a website app integration"
-excerpt: "Set up a Pinterest integration for your website app to send web conversion events to Pinterest for campaign optimization and reporting."
+title: Pinterest—Create a website app integration
+excerpt: >-
+  Set up a Pinterest integration for your website app to send web conversion
+  events to Pinterest for campaign optimization and reporting.
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 47721580892433
-  url: https://support.appsflyer.com/hc/en-us/articles/47721580892433-Pinterest-Create-a-website-app-integration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Pinterest
-  section_id: 6551388216337
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2026-06-14T13:07:07Z'
   edited_at: '2026-08-30T15:36:14Z'
+  id: 47721580892433
+  locale: en-us
+  section: Pinterest
+  section_id: 6551388216337
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/47721580892433-Pinterest-Create-a-website-app-integration
 ---
 ## **Set up integration**
 

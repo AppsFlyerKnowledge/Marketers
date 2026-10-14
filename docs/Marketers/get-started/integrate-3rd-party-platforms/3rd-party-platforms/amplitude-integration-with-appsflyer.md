@@ -1,26 +1,28 @@
 ---
-title: "Amplitude integration with AppsFlyer"
-excerpt: "Integrate AppsFlyer with Amplitude to share user attribution data and event analytics for better insights into user engagement, retention, and revenue. Choose between two integration versions, V1 or V2 , depending on your use case and analytics needs."
+title: Amplitude integration with AppsFlyer
+excerpt: >-
+  Integrate AppsFlyer with Amplitude to share user attribution data and event
+  analytics for better insights into user engagement, retention, and revenue.
+  Choose between two integration versions, V1 or V2 , depending on your use case
+  and analytics needs.
+metadata:
+  keywords:
+    - Advertisers
+    - Ad Networks
+    - Amplitude
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 211200306
-  url: https://support.appsflyer.com/hc/en-us/articles/211200306-Amplitude-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: 3rd-party platforms
-  section_id: 6551199962257
-  position: 3
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [Advertisers, Ad Networks, Amplitude, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-08-02T05:18:03Z'
   edited_at: '2026-09-09T13:59:07Z'
+  id: 211200306
+  locale: en-us
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/211200306-Amplitude-integration-with-AppsFlyer
 ---
 ## About the integration
 

@@ -1,18 +1,18 @@
 ---
-title: "Dashboards"
-excerpt: "Set up your AppsFlyer dashboards to get the most from your data (including PBA)"
+title: Dashboards
+excerpt: >-
+  Set up your AppsFlyer dashboards to get the most from your data (including
+  PBA)
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6550925337873
-  url: https://support.appsflyer.com/hc/en-us/sections/6550925337873-Dashboards
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550901627921
-  position: 0
-  sorting: manual
   created_at: '2022-06-02T11:21:04Z'
+  id: 6550925337873
+  locale: en-us
+  parent_section_id: 6550901627921
+  type: section
+  url: https://support.appsflyer.com/hc/en-us/sections/6550925337873-Dashboards
 ---
 Set up your AppsFlyer dashboards to get the most from your data (including PBA)
 

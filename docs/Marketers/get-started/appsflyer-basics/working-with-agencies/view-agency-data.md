@@ -1,26 +1,26 @@
 ---
-title: "View agency data"
-excerpt: "Learn about agency data to understand its impact on how your data is presented in AppsFlyer."
+title: View agency data
+excerpt: >-
+  Learn about agency data to understand its impact on how your data is presented
+  in AppsFlyer.
+metadata:
+  keywords:
+    - Transparency
+    - Advertisers
+    - Agencies
+    - Marketers
+    - Platform essentials
 x-zendesk:
-  id: 115003294203
-  url: https://support.appsflyer.com/hc/en-us/articles/115003294203-View-agency-data
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Working with agencies
-  section_id: 6551289835025
-  position: 1
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-roy-negri, Marketers, Platform essentials, Agencies]
-  labels: [Transparency, Advertisers, Agencies, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-07-04T11:04:11Z'
   edited_at: '2025-04-05T13:18:28Z'
+  id: 115003294203
+  locale: en-us
+  section: Working with agencies
+  section_id: 6551289835025
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115003294203-View-agency-data
 ---
 ## About agency data
 

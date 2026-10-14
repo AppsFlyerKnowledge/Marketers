@@ -1,26 +1,26 @@
 ---
-title: "Basic fraud detection and insights​ with ProtectLITE dashboard and reporting"
-excerpt: "ProtectLITE provides insights about fraudulent installs blocked by our basic, free protection engine, and installs blocked due to the application of validation rules."
+title: Basic fraud detection and insights​ with ProtectLITE dashboard and reporting
+excerpt: >-
+  ProtectLITE provides insights about fraudulent installs blocked by our basic,
+  free protection engine, and installs blocked due to the application of
+  validation rules.
+metadata:
+  keywords:
+    - Advertisers
+    - Protect360
+    - Marketers
+    - Protect360 / Fraud protection
 x-zendesk:
-  id: 360017223058
-  url: https://support.appsflyer.com/hc/en-us/articles/360017223058-Basic-fraud-detection-and-insights-with-ProtectLITE-dashboard-and-reporting
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Protect your traffic
-  section_id: 6551015912465
-  position: 7
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roy-yanai, Marketers, Protect360 / Fraud protection]
-  labels: [Advertisers, Protect360, Marketers, Loc In Prog]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-01-25T09:47:02Z'
   edited_at: '2025-06-03T07:54:47Z'
+  id: 360017223058
+  locale: en-us
+  section: Protect your traffic
+  section_id: 6551015912465
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360017223058-Basic-fraud-detection-and-insights-with-ProtectLITE-dashboard-and-reporting
 ---
 ## ProtectLITE
 

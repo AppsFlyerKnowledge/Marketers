@@ -1,25 +1,20 @@
 ---
-title: "[Closed beta] Sandbox Data Locker report for ad networks"
+title: '[Closed beta] Sandbox Data Locker report for ad networks'
+metadata:
+  keywords:
+    - Marketers
+    - Data Locker
 x-zendesk:
-  id: 28637170445073
-  url: https://support.appsflyer.com/hc/en-us/articles/28637170445073--Closed-beta-Sandbox-Data-Locker-report-for-ad-networks
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Android privacy sandbox
-  section_id: 25467093087761
-  position: 3
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-rona-einat, Marketers, Data Locker]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-09-24T14:41:32Z'
   edited_at: '2024-12-12T12:34:53Z'
+  id: 28637170445073
+  locale: en-us
+  section: Android privacy sandbox
+  section_id: 25467093087761
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/28637170445073--Closed-beta-Sandbox-Data-Locker-report-for-ad-networks
 ---
 At a glance: Sandbox raw data reports contain aggregated data generated after translating and decoding reports received by AppsFlyer from Android Privacy Sandbox Attribution API. Data is available via [Data Locker](/docs/data-locker-partners).
 

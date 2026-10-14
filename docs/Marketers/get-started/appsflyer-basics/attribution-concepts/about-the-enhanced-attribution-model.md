@@ -1,26 +1,24 @@
 ---
-title: "About the Enhanced attribution model"
-excerpt: "The Enhanced attribution model improves attribution accuracy by attributing only eligible clicks and impressions when click and impression flooding is detected on the device."
+title: About the Enhanced attribution model
+excerpt: >-
+  The Enhanced attribution model improves attribution accuracy by attributing
+  only eligible clicks and impressions when click and impression flooding is
+  detected on the device.
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 41442782045073
-  url: https://support.appsflyer.com/hc/en-us/articles/41442782045073-About-the-Enhanced-attribution-model
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Attribution concepts
-  section_id: 6551394235409
-  position: 16
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-moran-davida, Marketers, Mobile Attribution]
-  labels: []
-  promoted: false
-  comments_disabled: false
   created_at: '2025-11-30T11:53:35Z'
   edited_at: '2026-03-19T12:25:22Z'
+  id: 41442782045073
+  locale: en-us
+  section: Attribution concepts
+  section_id: 6551394235409
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/41442782045073-About-the-Enhanced-attribution-model
 ---
 ## What is the Enhanced attribution model?
 

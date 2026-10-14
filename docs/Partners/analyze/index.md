@@ -1,18 +1,16 @@
 ---
-title: "Analyze"
+title: Analyze
 deprecated: false
 hidden: false
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551515305873
-  url: https://support.appsflyer.com/hc/en-us/sections/6551515305873-Analyze
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  position: 2
-  sorting: manual
   created_at: '2022-06-02T11:47:30Z'
+  id: 6551515305873
+  locale: en-us
+  type: section
+  url: https://support.appsflyer.com/hc/en-us/sections/6551515305873-Analyze
 ---
 <Cards columns={2}>
   <Card title="Aggregate data" href="/docs/aggregate-data" icon="fa-solid fa-file-lines">

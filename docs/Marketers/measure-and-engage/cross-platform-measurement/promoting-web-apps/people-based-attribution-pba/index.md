@@ -1,17 +1,16 @@
 ---
-title: "People Based Attribution (PBA)"
+title: People Based Attribution (PBA)
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 43560588808721
-  url: https://support.appsflyer.com/hc/en-us/sections/43560588808721-People-Based-Attribution-PBA
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 15329056926353
-  position: 0
-  sorting: manual
   created_at: '2026-02-05T16:13:56Z'
+  id: 43560588808721
+  locale: en-us
+  parent_section_id: 15329056926353
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/43560588808721-People-Based-Attribution-PBA
 ---
 People-Based Attribution (PBA) allows you to attribute campaigns across web and app platforms to understand the complete customer journey.
 

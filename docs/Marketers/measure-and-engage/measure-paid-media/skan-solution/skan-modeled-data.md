@@ -1,26 +1,23 @@
 ---
-title: "SKAN modeled data"
-excerpt: "AppsFlyer models aggregate data that basic SKAdNetwork reporting is unable to provide."
+title: SKAN modeled data
+excerpt: >-
+  AppsFlyer models aggregate data that basic SKAdNetwork reporting is unable to
+  provide.
+metadata:
+  keywords:
+    - Marketers
+    - SKAdNetwork (SKAN)
 x-zendesk:
-  id: 7086372479505
-  url: https://support.appsflyer.com/hc/en-us/articles/7086372479505-SKAN-modeled-data
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: SKAN solution
-  section_id: 6552135379985
-  position: 3
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, SKAdNetwork (SKAN)]
-  labels: [Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-06-23T12:02:02Z'
   edited_at: '2025-06-11T17:36:46Z'
+  id: 7086372479505
+  locale: en-us
+  section: SKAN solution
+  section_id: 6552135379985
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/7086372479505-SKAN-modeled-data
 ---
 ## Overview
 

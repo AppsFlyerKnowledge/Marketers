@@ -1,26 +1,27 @@
 ---
-title: "Apply Aggregated Advanced Privacy framework"
-excerpt: "Advertisers use the Aggregated Advanced Privacy (AAP) framework to control which attribution data is made available to partners and ad networks via the AppsFlyer platform."
+title: Apply Aggregated Advanced Privacy framework
+excerpt: >-
+  Advertisers use the Aggregated Advanced Privacy (AAP) framework to control
+  which attribution data is made available to partners and ad networks via the
+  AppsFlyer platform.
+metadata:
+  keywords:
+    - Advertisers
+    - Agencies
+    - Ad Networks
+    - Marketers
+    - SKAdNetwork (SKAN)
 x-zendesk:
-  id: 360018515798
-  url: https://support.appsflyer.com/hc/en-us/articles/360018515798-Apply-Aggregated-Advanced-Privacy-framework
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Preserve user privacy
-  section_id: 6551440878097
-  position: 1
-  owner: Elliot Lachman
-  owner_email: elliot.lachman@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-gil-or, Marketers, Agencies, SKAdNetwork (SKAN), Ad Networks]
-  labels: [Advertisers, Agencies, Ad Networks, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-03-15T11:32:31Z'
   edited_at: '2026-06-11T10:21:55Z'
+  id: 360018515798
+  locale: en-us
+  section: Preserve user privacy
+  section_id: 6551440878097
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360018515798-Apply-Aggregated-Advanced-Privacy-framework
 ---
 ## Aggregated Advanced Privacy (AAP) framework
 

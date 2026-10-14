@@ -1,26 +1,25 @@
 ---
-title: "Zenna campaign configuration"
-excerpt: "Zenna, an AppsFlyer integrated ad network partner, provides a performance-based user acquisition solution solely for mobile games."
+title: Zenna campaign configuration
+excerpt: >-
+  Zenna, an AppsFlyer integrated ad network partner, provides a
+  performance-based user acquisition solution solely for mobile games.
+metadata:
+  keywords:
+    - Advertisers
+    - Zenna
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 115005277446
-  url: https://support.appsflyer.com/hc/en-us/articles/115005277446-Zenna-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (R-Z)
-  section_id: 6552025468305
-  position: 28
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Advertisers, Zenna, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-10-23T06:52:44Z'
   edited_at: '2026-09-09T13:01:57Z'
+  id: 115005277446
+  locale: en-us
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115005277446-Zenna-campaign-configuration
 ---
 ## Setting up Zenna
 

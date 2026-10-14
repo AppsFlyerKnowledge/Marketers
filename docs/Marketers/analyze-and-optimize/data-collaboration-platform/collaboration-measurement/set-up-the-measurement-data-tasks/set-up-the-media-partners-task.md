@@ -1,26 +1,21 @@
 ---
-title: "Set up the Media partners task"
-excerpt: "Learn how to configure media partners for off-site campaigns."
+title: Set up the Media partners task
+excerpt: Learn how to configure media partners for off-site campaigns.
+metadata:
+  keywords:
+    - Marketers
+    - Data Management
 x-zendesk:
-  id: 38191067035153
-  url: https://support.appsflyer.com/hc/en-us/articles/38191067035153-Set-up-the-Media-partners-task
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Set up the measurement data tasks
-  section_id: 38035061674769
-  position: 3
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-yael-sharabi, Marketers, Data Management]
-  labels: []
-  promoted: false
-  comments_disabled: false
   created_at: '2025-08-18T11:36:01Z'
   edited_at: '2025-08-26T00:01:05Z'
+  id: 38191067035153
+  locale: en-us
+  section: Set up the measurement data tasks
+  section_id: 38035061674769
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/38191067035153-Set-up-the-Media-partners-task
 ---
 Before you can share eligible conversions with your [off-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns) media partners and receive aggregated performance data in response, you must first connect DCP to the media account that activates the campaign. This connection tells AppsFlyer how to send the conversion data to the media partner.
 

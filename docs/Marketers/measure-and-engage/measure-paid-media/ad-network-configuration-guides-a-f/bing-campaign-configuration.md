@@ -1,26 +1,26 @@
 ---
-title: "Bing campaign configuration"
-excerpt: "Bing, an AppsFlyer ad network integrated partner, is one of the world's leading search engines. You can manage user acquisition campaigns through Bing and attribute them with AppsFlyer."
+title: Bing campaign configuration
+excerpt: >-
+  Bing, an AppsFlyer ad network integrated partner, is one of the world's
+  leading search engines. You can manage user acquisition campaigns through Bing
+  and attribute them with AppsFlyer.
+metadata:
+  keywords:
+    - Advertisers
+    - Bing
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360000985718
-  url: https://support.appsflyer.com/hc/en-us/articles/360000985718-Bing-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (A-F)
-  section_id: 6551990971793
-  position: 16
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Advertisers, Bing, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2019-02-17T11:13:20Z'
   edited_at: '2026-06-16T09:37:37Z'
+  id: 360000985718
+  locale: en-us
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360000985718-Bing-campaign-configuration
 ---
 > 📘 **Note**
 >

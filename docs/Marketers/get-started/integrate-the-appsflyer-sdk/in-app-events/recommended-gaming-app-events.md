@@ -1,26 +1,25 @@
 ---
-title: "Recommended gaming app events"
-excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your gaming app."
+title: Recommended gaming app events
+excerpt: >-
+  Measure the quality of your users throughout their user journey by recording
+  these suggested in-app events for your gaming app.
+metadata:
+  keywords:
+    - Advertisers
+    - Developers
+    - Marketers
+    - PC & Console Attribution
 x-zendesk:
-  id: 360018941117
-  url: https://support.appsflyer.com/hc/en-us/articles/360018941117-Recommended-gaming-app-events
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: In-app events
-  section_id: 6551285343761
-  position: 8
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-roi-tamir, Marketers, PC & Console Attribution]
-  labels: [Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-04-06T14:46:54Z'
   edited_at: '2026-02-25T13:58:31Z'
+  id: 360018941117
+  locale: en-us
+  section: In-app events
+  section_id: 6551285343761
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360018941117-Recommended-gaming-app-events
 ---
 ## ![InApp_Events_games.png](https://files.readme.io/ee2d46ddf11a6a6cacc95399ffd778d6613ecdd905d237cd971073e095cada5b-20659444711953.png) Gaming
 

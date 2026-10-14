@@ -1,18 +1,17 @@
 ---
-title: "Cost sharing for ad networks"
-excerpt: "Refine customer data by providing cost information"
+title: Cost sharing for ad networks
+excerpt: Refine customer data by providing cost information
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551141756177
-  url: https://support.appsflyer.com/hc/en-us/sections/6551141756177-Cost-sharing-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  parent_section_id: 6551110127761
-  position: 0
-  sorting: manual
   created_at: '2022-06-02T11:30:22Z'
+  id: 6551141756177
+  locale: en-us
+  parent_section_id: 6551110127761
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551141756177-Cost-sharing-for-ad-networks
 ---
 Refine customer data by providing cost information
 

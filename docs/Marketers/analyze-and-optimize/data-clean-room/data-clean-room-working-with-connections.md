@@ -1,26 +1,24 @@
 ---
-title: "Data Clean Room—Working with connections"
-excerpt: "Connect your cloud services to the Data Clean Room in order to upload data and receive reports."
+title: Data Clean Room—Working with connections
+excerpt: >-
+  Connect your cloud services to the Data Clean Room in order to upload data and
+  receive reports.
+metadata:
+  keywords:
+    - Premium
+    - Marketers
+    - Data Clean Room
 x-zendesk:
-  id: 13886278812817
-  url: https://support.appsflyer.com/hc/en-us/articles/13886278812817-Data-Clean-Room-Working-with-connections
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Data Clean Room
-  section_id: 4591191779217
-  position: 5
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-inbar-agassi, Marketers, Data Clean Room]
-  labels: [Premium, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2023-03-20T13:18:17Z'
   edited_at: '2024-09-04T08:35:26Z'
+  id: 13886278812817
+  locale: en-us
+  section: Data Clean Room
+  section_id: 4591191779217
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/13886278812817-Data-Clean-Room-Working-with-connections
 ---
 ## Overview
 

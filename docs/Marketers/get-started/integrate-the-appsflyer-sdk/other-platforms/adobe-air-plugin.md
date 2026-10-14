@@ -1,26 +1,28 @@
 ---
-title: "Adobe AIR plugin"
-excerpt: "Integrate AppsFlyer SDK into iOS/Android apps developed with Adobe AIR development platform to measure installs, in-app events, media sources, and more."
+title: Adobe AIR plugin
+excerpt: >-
+  Integrate AppsFlyer SDK into iOS/Android apps developed with Adobe AIR
+  development platform to measure installs, in-app events, media sources, and
+  more.
+metadata:
+  keywords:
+    - github
+    - Adobe
+    - Air
+    - Advertisers
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 207032226
-  url: https://support.appsflyer.com/hc/en-us/articles/207032226-Adobe-AIR-plugin
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Other platforms
-  section_id: 6551244207121
-  position: 14
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [github, Adobe, Air, Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2013-12-09T11:32:45Z'
   edited_at: '2023-02-15T13:15:03Z'
+  id: 207032226
+  locale: en-us
+  section: Other platforms
+  section_id: 6551244207121
+  url: https://support.appsflyer.com/hc/en-us/articles/207032226-Adobe-AIR-plugin
 ---
 ## Plugin information
 

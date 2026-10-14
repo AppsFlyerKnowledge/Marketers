@@ -1,17 +1,16 @@
 ---
-title: "Cross platform reports"
+title: Cross platform reports
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 50467263168657
-  url: https://support.appsflyer.com/hc/en-us/sections/50467263168657-Cross-platform-reports
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6551947798801
-  position: 1
-  sorting: manual
   created_at: '2026-09-02T13:05:45Z'
+  id: 50467263168657
+  locale: en-us
+  parent_section_id: 6551947798801
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/50467263168657-Cross-platform-reports
 ---
 These reports provide insights into cross-platform user journeys and event data.
 

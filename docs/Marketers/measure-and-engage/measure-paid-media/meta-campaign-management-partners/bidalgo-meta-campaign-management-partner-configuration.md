@@ -1,26 +1,29 @@
 ---
-title: "Bidalgo (Meta campaign management partner) configuration"
-excerpt: "Bidalgo, an AppsFlyer integrated partner (formerly known as Facebook Marketing Partners), is a leading provider of artificial intelligence solutions to help app marketers scale their growth."
+title: Bidalgo (Meta campaign management partner) configuration
+excerpt: >-
+  Bidalgo, an AppsFlyer integrated partner (formerly known as Facebook Marketing
+  Partners), is a leading provider of artificial intelligence solutions to help
+  app marketers scale their growth.
+metadata:
+  keywords:
+    - Facebook
+    - FMP
+    - Advertisers
+    - Bidalgo
+    - facebook marketing partner
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 218002103
-  url: https://support.appsflyer.com/hc/en-us/articles/218002103-Bidalgo-Meta-campaign-management-partner-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Meta campaign management partners
-  section_id: 6551188365457
-  position: 8
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [Facebook, FMP, Advertisers, facebook, Bidalgo, facebook marketing partner, Facebook Marketing Partner, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-11-20T07:49:34Z'
   edited_at: '2026-06-16T09:31:52Z'
+  id: 218002103
+  locale: en-us
+  section: Meta campaign management partners
+  section_id: 6551188365457
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/218002103-Bidalgo-Meta-campaign-management-partner-configuration
 ---
 ## Setting up Bidalgo
 

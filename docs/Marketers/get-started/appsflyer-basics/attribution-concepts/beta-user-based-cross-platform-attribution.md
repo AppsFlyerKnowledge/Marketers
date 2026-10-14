@@ -1,26 +1,23 @@
 ---
-title: "[Beta] User-based cross-platform attribution"
-excerpt: "Learn what cross-platform user-based attribution is, how it operates, and how to set it in AppsFlyer."
+title: '[Beta] User-based cross-platform attribution'
+excerpt: >-
+  Learn what cross-platform user-based attribution is, how it operates, and how
+  to set it in AppsFlyer.
+metadata:
+  keywords:
+    - Marketers
+    - Cross-Platform Measurement
 x-zendesk:
-  id: 39104189339793
-  url: https://support.appsflyer.com/hc/en-us/articles/39104189339793--Beta-User-based-cross-platform-attribution
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Attribution concepts
-  section_id: 6551394235409
-  position: 3
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-moran-davida, Marketers, Cross-Platform Measurement]
-  labels: []
-  promoted: false
-  comments_disabled: false
   created_at: '2025-09-16T13:58:09Z'
   edited_at: '2026-08-12T11:16:09Z'
+  id: 39104189339793
+  locale: en-us
+  section: Attribution concepts
+  section_id: 6551394235409
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/39104189339793--Beta-User-based-cross-platform-attribution
 ---
 ## What is user-based attribution?
 

@@ -1,26 +1,25 @@
 ---
-title: "Vserv campaign configuration"
-excerpt: "Vserv, an AppsFlyer ad network integrated partner, is one of the leading authentic data platforms for mobile marketing in India and Southeast Asia."
+title: Vserv campaign configuration
+excerpt: >-
+  Vserv, an AppsFlyer ad network integrated partner, is one of the leading
+  authentic data platforms for mobile marketing in India and Southeast Asia.
+metadata:
+  keywords:
+    - Vserv
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 208277106
-  url: https://support.appsflyer.com/hc/en-us/articles/208277106-Vserv-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (R-Z)
-  section_id: 6552025468305
-  position: 19
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Vserv, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-04-04T14:16:31Z'
   edited_at: '2026-09-09T13:15:51Z'
+  id: 208277106
+  locale: en-us
+  section: Ad network configuration guides (R-Z)
+  section_id: 6552025468305
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/208277106-Vserv-campaign-configuration
 ---
 ## Setting up Vserv
 

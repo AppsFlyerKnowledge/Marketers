@@ -1,26 +1,24 @@
 ---
-title: "Bulletin: Smart Banners support multiple media sources for attribution"
+title: 'Bulletin: Smart Banners support multiple media sources for attribution'
+metadata:
+  keywords:
+    - OneLink
+    - Advertisers
+    - smart banners
+    - Marketers
+    - Smart Banners and Scripts
 table_of_contents: false
 x-zendesk:
-  id: 4406100924689
-  url: https://support.appsflyer.com/hc/en-us/articles/4406100924689-Bulletin-Smart-Banners-support-multiple-media-sources-for-attribution
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 52
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, Smart Banners and Scripts]
-  labels: [OneLink, Advertisers, smart banners, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-08-24T07:01:05Z'
   edited_at: '2024-01-27T12:04:03Z'
+  id: 4406100924689
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4406100924689-Bulletin-Smart-Banners-support-multiple-media-sources-for-attribution
 ---
 | **What's new** | Smart Banner settings allow you to choose multiple media source types for attribution. They are no longer limited to one type of web-to-app URL. |
 | --- | --- |

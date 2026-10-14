@@ -1,26 +1,25 @@
 ---
-title: "Recommended online education app events"
-excerpt: "Measure the quality of your users throughout their user journey by recording these suggested in-app events for your online education app."
+title: Recommended online education app events
+excerpt: >-
+  Measure the quality of your users throughout their user journey by recording
+  these suggested in-app events for your online education app.
+metadata:
+  keywords:
+    - Advertisers
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360019794378
-  url: https://support.appsflyer.com/hc/en-us/articles/360019794378-Recommended-online-education-app-events
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: In-app events
-  section_id: 6551285343761
-  position: 13
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-04-28T12:35:57Z'
   edited_at: '2026-05-04T09:28:56Z'
+  id: 360019794378
+  locale: en-us
+  section: In-app events
+  section_id: 6551285343761
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360019794378-Recommended-online-education-app-events
 ---
 ## ![education.png](https://files.readme.io/fb036c8f3b0cb4cc06a5284c26089bbb361273ab628bc5b740692bc49e7a2c40-20659493109393.png) Online education
 

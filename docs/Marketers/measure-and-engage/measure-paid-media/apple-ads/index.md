@@ -1,18 +1,16 @@
 ---
-title: "Apple Ads"
-excerpt: "Set up Apple Ads and its partners for AppsFlyer attribution"
+title: Apple Ads
+excerpt: Set up Apple Ads and its partners for AppsFlyer attribution
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551310453393
-  url: https://support.appsflyer.com/hc/en-us/sections/6551310453393-Apple-Ads
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550990672401
-  position: 6
-  sorting: manual
   created_at: '2022-06-02T11:37:59Z'
+  id: 6551310453393
+  locale: en-us
+  parent_section_id: 6550990672401
+  type: section
+  url: https://support.appsflyer.com/hc/en-us/sections/6551310453393-Apple-Ads
 ---
 <Cards>
   <Card title="Apple Ads integration setup" href="/docs/apple-ads-integration-setup" icon="fa-solid fa-bullhorn">

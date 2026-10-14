@@ -1,26 +1,26 @@
 ---
-title: "Google Ads postback partners—Configuration"
-excerpt: "Enable Google Ads postback partners to help run your Google Ads campaigns."
+title: Google Ads postback partners—Configuration
+excerpt: Enable Google Ads postback partners to help run your Google Ads campaigns.
+metadata:
+  keywords:
+    - postbacks
+    - Integration
+    - Advertisers
+    - Agencies
+    - google ads
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 4411047077905
-  url: https://support.appsflyer.com/hc/en-us/articles/4411047077905-Google-Ads-postback-partners-Configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Google Ads
-  section_id: 6551205645457
-  position: 8
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Agencies]
-  labels: [postbacks, Integration, Advertisers, Agencies, google ads, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-11-16T09:36:56Z'
   edited_at: '2024-07-18T07:44:23Z'
+  id: 4411047077905
+  locale: en-us
+  section: Google Ads
+  section_id: 6551205645457
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/4411047077905-Google-Ads-postback-partners-Configuration
 ---
 Some partners (for example, Bidalgo, Adquant), referred to as **Google Ads postback partners**, are similar to agencies. They help their advertiser clients run Google Ads campaigns, but require getting postbacks for Google Ads conversions.
 

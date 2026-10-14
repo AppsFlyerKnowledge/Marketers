@@ -1,26 +1,27 @@
 ---
-title: "User-level data retention"
-excerpt: "Retention and user-level (raw data) use policies are determined by AppsFlyer, relevant laws, and SRNs (\" Partners \") terms of use."
+title: User-level data retention
+excerpt: >-
+  Retention and user-level (raw data) use policies are determined by AppsFlyer,
+  relevant laws, and SRNs (" Partners ") terms of use.
+metadata:
+  keywords:
+    - Advertisers
+    - Agencies
+    - Ad Networks
+    - SRN
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360006091197
-  url: https://support.appsflyer.com/hc/en-us/articles/360006091197-User-level-data-retention
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Media source configuration
-  section_id: 6551067072785
-  position: 8
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Agencies, Ad Networks]
-  labels: [Advertisers, Agencies, Ad Networks, SRN, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-02-23T15:35:57Z'
   edited_at: '2026-09-01T11:14:24Z'
+  id: 360006091197
+  locale: en-us
+  section: Media source configuration
+  section_id: 6551067072785
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360006091197-User-level-data-retention
 ---
 > 📘 **Caution**
 >

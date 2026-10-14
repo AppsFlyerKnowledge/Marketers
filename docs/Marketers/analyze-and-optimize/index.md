@@ -1,18 +1,17 @@
 ---
-title: "Analyze & Optimize"
+title: Analyze & Optimize
 deprecated: false
 hidden: false
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6550913619473
-  url: https://support.appsflyer.com/hc/en-us/sections/6550913619473-Analyze-Optimize
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  position: 2
-  sorting: manual
   created_at: '2022-06-02T11:19:26Z'
+  id: 6550913619473
+  locale: en-us
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6550913619473-Analyze-Optimize
 ---
 <Cards columns={2}>
   <Card title="Incrementality for UA" href="/docs/incrementality-for-ua" icon="fa-solid fa-flask">

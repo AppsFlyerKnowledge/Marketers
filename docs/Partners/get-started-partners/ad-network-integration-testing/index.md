@@ -1,18 +1,17 @@
 ---
-title: "Ad network integration testing"
-excerpt: "Make sure your integration is configured correctly"
+title: Ad network integration testing
+excerpt: Make sure your integration is configured correctly
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551070667537
-  url: https://support.appsflyer.com/hc/en-us/sections/6551070667537-Ad-network-integration-testing
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  parent_section_id: 6550863656977
-  position: 1
-  sorting: manual
   created_at: '2022-06-02T11:26:36Z'
+  id: 6551070667537
+  locale: en-us
+  parent_section_id: 6550863656977
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551070667537-Ad-network-integration-testing
 ---
 Make sure your integration is configured correctly
 

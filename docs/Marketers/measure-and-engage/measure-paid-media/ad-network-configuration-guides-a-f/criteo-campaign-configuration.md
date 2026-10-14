@@ -1,26 +1,27 @@
 ---
-title: "Criteo campaign configuration"
-excerpt: "Criteo, an AppsFlyer ad network integrated partner, drives growth through machine-learning technology, data and performance at scale, and measurable ROI for its clients. In addition to click-based mobile attribution, Criteo also offers retargeting attribution, which you can record with AppsFlyer."
+title: Criteo campaign configuration
+excerpt: >-
+  Criteo, an AppsFlyer ad network integrated partner, drives growth through
+  machine-learning technology, data and performance at scale, and measurable ROI
+  for its clients. In addition to click-based mobile attribution, Criteo also
+  offers retargeting attribution, which you can record with AppsFlyer.
+metadata:
+  keywords:
+    - Criteo
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360000601785
-  url: https://support.appsflyer.com/hc/en-us/articles/360000601785-Criteo-campaign-configuration
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Ad network configuration guides (A-F)
-  section_id: 6551990971793
-  position: 20
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Criteo, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2018-03-27T06:56:54Z'
   edited_at: '2026-09-09T13:00:13Z'
+  id: 360000601785
+  locale: en-us
+  section: Ad network configuration guides (A-F)
+  section_id: 6551990971793
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360000601785-Criteo-campaign-configuration
 ---
 ## Setting up Criteo
 

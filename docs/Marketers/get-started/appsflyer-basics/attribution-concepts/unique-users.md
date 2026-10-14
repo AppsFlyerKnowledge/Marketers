@@ -1,26 +1,22 @@
 ---
-title: "Unique users"
-excerpt: "Learn how unique users are counted and used in metrics in AppsFlyer dashboards and reports."
+title: Unique users
+excerpt: >-
+  Learn how unique users are counted and used in metrics in AppsFlyer dashboards
+  and reports.
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 27435981457553
-  url: https://support.appsflyer.com/hc/en-us/articles/27435981457553-Unique-users
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Attribution concepts
-  section_id: 6551394235409
-  position: 6
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-moran-davida, Marketers, Mobile Attribution]
-  labels: [Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2024-08-11T09:52:33Z'
   edited_at: '2026-06-03T07:43:47Z'
+  id: 27435981457553
+  locale: en-us
+  section: Attribution concepts
+  section_id: 6551394235409
+  url: https://support.appsflyer.com/hc/en-us/articles/27435981457553-Unique-users
 ---
 ## About unique users
 

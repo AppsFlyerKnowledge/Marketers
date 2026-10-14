@@ -1,18 +1,17 @@
 ---
-title: "TikTok for Business"
-excerpt: "Set up TikTok for Business for AppsFlyer attribution"
+title: TikTok for Business
+excerpt: Set up TikTok for Business for AppsFlyer attribution
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 12192554266385
-  url: https://support.appsflyer.com/hc/en-us/sections/12192554266385-TikTok-for-Business
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550990672401
-  position: 13
-  sorting: manual
   created_at: '2023-01-15T18:59:27Z'
+  id: 12192554266385
+  locale: en-us
+  parent_section_id: 6550990672401
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/12192554266385-TikTok-for-Business
 ---
 Set up TikTok for Business for AppsFlyer attribution
 

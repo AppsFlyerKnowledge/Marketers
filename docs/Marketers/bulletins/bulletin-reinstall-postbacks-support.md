@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: Reinstall postbacks support"
+title: 'Bulletin: Reinstall postbacks support'
+metadata:
+  keywords:
+    - Marketers
+    - Mobile Attribution
 table_of_contents: false
 x-zendesk:
-  id: 37325372238481
-  url: https://support.appsflyer.com/hc/en-us/articles/37325372238481-Bulletin-Reinstall-postbacks-support
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: false
   created_at: '2025-07-20T08:37:33Z'
   edited_at: '2026-06-28T16:13:43Z'
+  id: 37325372238481
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/37325372238481-Bulletin-Reinstall-postbacks-support
 ---
 | Section | Details |
 | --- | --- |

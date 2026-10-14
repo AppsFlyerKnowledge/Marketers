@@ -1,26 +1,33 @@
 ---
-title: "Airship integration with AppsFlyer"
-excerpt: "Airship, an AppsFlyer integrated partner, provides the world’s leading mobile engagement platform, helping thousands of businesses of all sizes form a direct and lasting connection with their customers. With Airship, companies gain total control of their mobile footprint — apps, wallets, and user-level data — to deliver experiences that get noticed and drive action across mobile or any other customer touch-point."
+title: Airship integration with AppsFlyer
+excerpt: >-
+  Airship, an AppsFlyer integrated partner, provides the world’s leading mobile
+  engagement platform, helping thousands of businesses of all sizes form a
+  direct and lasting connection with their customers. With Airship, companies
+  gain total control of their mobile footprint — apps, wallets, and user-level
+  data — to deliver experiences that get noticed and drive action across mobile
+  or any other customer touch-point.
+metadata:
+  keywords:
+    - Attribution
+    - SDK
+    - Configure
+    - urban airship
+    - Advertisers
+    - Ad Networks
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 207033976
-  url: https://support.appsflyer.com/hc/en-us/articles/207033976-Airship-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: 3rd-party platforms
-  section_id: 6551199962257
-  position: 0
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [Attribution, SDK, Configure, urban airship, Advertisers, Ad Networks, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2015-12-16T11:31:38Z'
   edited_at: '2026-06-16T11:22:40Z'
+  id: 207033976
+  locale: en-us
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207033976-Airship-integration-with-AppsFlyer
 ---
 > 📘 **Important!**
 >

@@ -1,18 +1,16 @@
 ---
-title: "Data Locker"
-excerpt: "Receive advertiser attribution data in your cloud storage"
+title: Data Locker
+excerpt: Receive advertiser attribution data in your cloud storage
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551591547409
-  url: https://support.appsflyer.com/hc/en-us/sections/6551591547409-Data-Locker
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  parent_section_id: 6551515305873
-  position: 0
-  sorting: manual
   created_at: '2022-06-02T11:49:37Z'
+  id: 6551591547409
+  locale: en-us
+  parent_section_id: 6551515305873
+  type: section
+  url: https://support.appsflyer.com/hc/en-us/sections/6551591547409-Data-Locker
 ---
 Receive advertiser attribution data in your cloud storage
 

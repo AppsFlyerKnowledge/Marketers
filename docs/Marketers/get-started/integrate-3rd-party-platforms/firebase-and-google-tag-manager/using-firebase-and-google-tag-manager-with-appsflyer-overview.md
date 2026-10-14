@@ -1,26 +1,30 @@
 ---
-title: "Using Firebase and Google Tag Manager with AppsFlyer—Overview"
-excerpt: "About sending events reported via Firebase SDK to AppsFlyer using Google Tag Manager."
+title: Using Firebase and Google Tag Manager with AppsFlyer—Overview
+excerpt: >-
+  About sending events reported via Firebase SDK to AppsFlyer using Google Tag
+  Manager.
+metadata:
+  keywords:
+    - GTM
+    - Google Tag Manager
+    - firebase
+    - Advertisers
+    - datalayer
+    - data layer
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 210353513
-  url: https://support.appsflyer.com/hc/en-us/articles/210353513-Using-Firebase-and-Google-Tag-Manager-with-AppsFlyer-Overview
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Firebase and Google Tag Manager
-  section_id: 6551267006225
-  position: 3
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [GTM, Google Tag Manager, firebase, Advertisers, datalayer, data layer, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-05-13T19:42:23Z'
   edited_at: '2023-11-02T10:37:24Z'
+  id: 210353513
+  locale: en-us
+  section: Firebase and Google Tag Manager
+  section_id: 6551267006225
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/210353513-Using-Firebase-and-Google-Tag-Manager-with-AppsFlyer-Overview
 ---
 ![gtm.png](https://files.readme.io/fbb4e0f83baf6f5f7f8dc83e02986ca011f5cb919b9870768da1606798211dcc-360002517245.png)
 

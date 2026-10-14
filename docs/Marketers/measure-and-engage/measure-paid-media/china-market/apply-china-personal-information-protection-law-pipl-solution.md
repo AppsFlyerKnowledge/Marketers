@@ -1,26 +1,22 @@
 ---
-title: "Apply China Personal Information Protection Law (PIPL) solution"
-excerpt: "Improve flexibility while measuring with AppsFlyer and complying with PIPL."
+title: Apply China Personal Information Protection Law (PIPL) solution
+excerpt: Improve flexibility while measuring with AppsFlyer and complying with PIPL.
+metadata:
+  keywords:
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 6031419375377
-  url: https://support.appsflyer.com/hc/en-us/articles/6031419375377-Apply-China-Personal-Information-Protection-Law-PIPL-solution
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: China market
-  section_id: 6552042145425
-  position: 1
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution]
-  labels: [Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-05-10T08:59:00Z'
   edited_at: '2025-08-11T12:06:31Z'
+  id: 6031419375377
+  locale: en-us
+  section: China market
+  section_id: 6552042145425
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/6031419375377-Apply-China-Personal-Information-Protection-Law-PIPL-solution
 ---
 ## Background
 

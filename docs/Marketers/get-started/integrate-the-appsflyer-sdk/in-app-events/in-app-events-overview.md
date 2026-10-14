@@ -1,26 +1,33 @@
 ---
-title: "In-app events—Overview"
-excerpt: "Record post-install in-app events (such as login, register, or in-app purchase) attributed to media sources and campaigns."
+title: In-app events—Overview
+excerpt: >-
+  Record post-install in-app events (such as login, register, or in-app
+  purchase) attributed to media sources and campaigns.
+metadata:
+  keywords:
+    - ios
+    - Rich
+    - In-App
+    - android
+    - Advertisers
+    - In app events
+    - Marketers
+    - inapp events
+    - attribution
+    - inapp
+    - inapp events attribution
+    - Mobile Attribution
 x-zendesk:
-  id: 115005544169
-  url: https://support.appsflyer.com/hc/en-us/articles/115005544169-In-app-events-Overview
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: In-app events
-  section_id: 6551285343761
-  position: 1
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11085
-  content_tags: [pm-guy-sarfatty, Marketers, Mobile Attribution]
-  labels: [ios, Rich, In-App, android, Advertisers, In app events, Marketers, inapp events, attribution, inapp, inapp events attribution]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-11-02T08:12:51Z'
   edited_at: '2026-10-07T08:30:43Z'
+  id: 115005544169
+  locale: en-us
+  section: In-app events
+  section_id: 6551285343761
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115005544169-In-app-events-Overview
 ---
 ## Why record in-app events?
 

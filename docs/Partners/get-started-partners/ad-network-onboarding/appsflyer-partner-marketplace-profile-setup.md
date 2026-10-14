@@ -1,26 +1,27 @@
 ---
-title: "AppsFlyer Partner Marketplace profile setup"
-excerpt: "Create a robust Partner Marketplace profile page with information about your company and its services and solutions."
+title: AppsFlyer Partner Marketplace profile setup
+excerpt: >-
+  Create a robust Partner Marketplace profile page with information about your
+  company and its services and solutions.
+metadata:
+  keywords:
+    - partner account
+    - partner dashboard
+    - Ad Networks
+    - Partners
+    - marketplace
+    - Mobile Attribution
 x-zendesk:
-  id: 5688918701073
-  url: https://support.appsflyer.com/hc/en-us/articles/5688918701073-AppsFlyer-Partner-Marketplace-profile-setup
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Ad network onboarding
-  section_id: 6551058566033
-  position: 4
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Mobile Attribution, Ad Networks]
-  labels: [partner account, partner dashboard, Ad Networks, Partners, marketplace]
-  promoted: false
-  comments_disabled: true
   created_at: '2022-04-25T14:41:12Z'
   edited_at: '2024-01-09T13:05:11Z'
+  id: 5688918701073
+  locale: en-us
+  section: Ad network onboarding
+  section_id: 6551058566033
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/5688918701073-AppsFlyer-Partner-Marketplace-profile-setup
 ---
 ## Overview
 

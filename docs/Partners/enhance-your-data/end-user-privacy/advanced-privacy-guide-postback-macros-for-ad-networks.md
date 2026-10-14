@@ -1,26 +1,29 @@
 ---
-title: "Advanced Privacy guide & postback macros for ad networks"
-excerpt: "Data sharing with partners when Advanced Privacy is enabled. Instructions for ad networks on setting up Advanced Privacy postbacks. Note! This article is not related to either SKAdNetwork postbacks nor is it intended for use by advertisers."
+title: Advanced Privacy guide & postback macros for ad networks
+excerpt: >-
+  Data sharing with partners when Advanced Privacy is enabled. Instructions for
+  ad networks on setting up Advanced Privacy postbacks. Note! This article is
+  not related to either SKAdNetwork postbacks nor is it intended for use by
+  advertisers.
+metadata:
+  keywords:
+    - Ad Networks
+    - Partners
+    - ios14
+    - SKAD
+    - Advanced Privacy
+    - Mobile Attribution
 x-zendesk:
-  id: 360011316197
-  url: https://support.appsflyer.com/hc/en-us/articles/360011316197-Advanced-Privacy-guide-postback-macros-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: End-user privacy
-  section_id: 6551186412689
-  position: 2
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Mobile Attribution, Ad Networks]
-  labels: [Ad Networks, Partners, ios14, SKAD, Advanced Privacy]
-  promoted: false
-  comments_disabled: true
   created_at: '2020-07-27T07:09:37Z'
   edited_at: '2026-04-19T14:49:32Z'
+  id: 360011316197
+  locale: en-us
+  section: End-user privacy
+  section_id: 6551186412689
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360011316197-Advanced-Privacy-guide-postback-macros-for-ad-networks
 ---
 > 📘 **Advanced Privacy for Ad Networks news**
 >

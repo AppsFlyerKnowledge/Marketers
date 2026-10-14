@@ -1,26 +1,27 @@
 ---
-title: "Google Ads (AdWords)—Integration setup for agencies"
-excerpt: "Setting up Google Ads integration with AppsFlyer — as an agency."
+title: Google Ads (AdWords)—Integration setup for agencies
+excerpt: Setting up Google Ads integration with AppsFlyer — as an agency.
+metadata:
+  keywords:
+    - Google
+    - AdWords
+    - Advertisers
+    - Agencies
+    - (AdWords)
+    - google ads
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 115003669983
-  url: https://support.appsflyer.com/hc/en-us/articles/115003669983-Google-Ads-AdWords-Integration-setup-for-agencies
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Google Ads
-  section_id: 6551205645457
-  position: 4
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution, Agencies]
-  labels: [Google, AdWords, Advertisers, Agencies, agencies, adwords, (AdWords), google ads, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2017-07-23T11:26:20Z'
   edited_at: '2026-09-15T09:37:15Z'
+  id: 115003669983
+  locale: en-us
+  section: Google Ads
+  section_id: 6551205645457
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/115003669983-Google-Ads-AdWords-Integration-setup-for-agencies
 ---
 Both advertisers and agencies must actively configure the system. The following video shows the steps required by both the advertiser and agency to enable the agency to measure and attribute mobile traffic to the advertiser's app using Google Ads.
 

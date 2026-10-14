@@ -1,26 +1,28 @@
 ---
-title: "TUNE (formerly, HasOffers) integration with AppsFlyer"
-excerpt: "Learn how ad networks that use TUNE (formerly HasOffers) to manage affiliate marketing campaigns can integrate with AppsFlyer and receive attribution data about installs and in-app events."
+title: TUNE (formerly, HasOffers) integration with AppsFlyer
+excerpt: >-
+  Learn how ad networks that use TUNE (formerly HasOffers) to manage affiliate
+  marketing campaigns can integrate with AppsFlyer and receive attribution data
+  about installs and in-app events.
+metadata:
+  keywords:
+    - Advertisers
+    - Ad Networks
+    - Partners
+    - Tune
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 207034806
-  url: https://support.appsflyer.com/hc/en-us/articles/207034806-TUNE-formerly-HasOffers-integration-with-AppsFlyer
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Platforms for ad networks
-  section_id: 6551055575185
-  position: 7
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Marketers, Mobile Attribution, Ad Networks]
-  labels: [Advertisers, Ad Networks, Partners, Tune]
-  promoted: false
-  comments_disabled: true
   created_at: '2015-12-22T14:55:13Z'
   edited_at: '2024-12-23T15:20:29Z'
+  id: 207034806
+  locale: en-us
+  section: Platforms for ad networks
+  section_id: 6551055575185
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/207034806-TUNE-formerly-HasOffers-integration-with-AppsFlyer
 ---
 **To initiate the integration, prepare, and send the following information to AppsFlyer:**
 

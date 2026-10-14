@@ -1,26 +1,23 @@
 ---
-title: "Self-serve integration management for ad networks"
-excerpt: "Set up and manage your integration from the AppsFlyer dashboard."
+title: Self-serve integration management for ad networks
+excerpt: Set up and manage your integration from the AppsFlyer dashboard.
+metadata:
+  keywords:
+    - postbacks
+    - Ad Networks
+    - Partners
+    - Mobile Attribution
 x-zendesk:
-  id: 360018512658
-  url: https://support.appsflyer.com/hc/en-us/articles/360018512658-Self-serve-integration-management-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  section: Ad network onboarding
-  section_id: 6551058566033
-  position: 3
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-ravid-naori, Mobile Attribution, Ad Networks]
-  labels: [postbacks, Ad Networks, Partners, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2021-03-15T10:03:41Z'
   edited_at: '2026-08-13T00:01:05Z'
+  id: 360018512658
+  locale: en-us
+  section: Ad network onboarding
+  section_id: 6551058566033
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360018512658-Self-serve-integration-management-for-ad-networks
 ---
 <Embed title="Self-serve integration management for ad networks" typeOfEmbed="wistia" url="https://fast.wistia.com/embed/iframe/9kvwrhnzjo" providerUrl="https://fast.wistia.com" />
 

@@ -1,26 +1,32 @@
 ---
-title: "Import cost data"
-excerpt: "Cost Import, part of AppsFlyer ROI360, allows advertisers to get full and accurate coverage of their marketing cost by importing CSV files via upload or email."
+title: Import cost data
+excerpt: >-
+  Cost Import, part of AppsFlyer ROI360, allows advertisers to get full and
+  accurate coverage of their marketing cost by importing CSV files via upload or
+  email.
+metadata:
+  keywords:
+    - Ad Network
+    - Agency
+    - Advertisers
+    - Agencies
+    - Premium
+    - Premium Feature
+    - Xpend
+    - Marketers
+    - ROI360
+    - Ad Networks
 x-zendesk:
-  id: 360002516838
-  url: https://support.appsflyer.com/hc/en-us/articles/360002516838-Import-cost-data
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Cost aggregation
-  section_id: 6551029483281
-  position: 4
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-maytav-avnat, Marketers, Agencies, ROI360, Ad Networks]
-  labels: [Ad Network, Agency, Advertisers, Agencies, Premium, Premium Feature, Xpend, Marketers, Loc Published]
-  promoted: false
-  comments_disabled: true
   created_at: '2019-09-15T15:53:44Z'
   edited_at: '2026-08-05T10:36:56Z'
+  id: 360002516838
+  locale: en-us
+  section: Cost aggregation
+  section_id: 6551029483281
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360002516838-Import-cost-data
 ---
 ## Overview
 

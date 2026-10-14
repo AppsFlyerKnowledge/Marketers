@@ -1,26 +1,26 @@
 ---
-title: "Measure attribution in the Chinese domestic market"
-excerpt: "Attribution of Android devices without GAID by using OAID or IMEI. Best practice for viewing attribution data in AppsFlyer."
+title: Measure attribution in the Chinese domestic market
+excerpt: >-
+  Attribution of Android devices without GAID by using OAID or IMEI. Best
+  practice for viewing attribution data in AppsFlyer.
+metadata:
+  keywords:
+    - Advertisers
+    - China
+    - Developers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 360002049858
-  url: https://support.appsflyer.com/hc/en-us/articles/360002049858-Measure-attribution-in-the-Chinese-domestic-market
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Attribution scenarios
-  section_id: 6551328497041
-  position: 2
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-moran-davida, Marketers, Mobile Attribution]
-  labels: [Advertisers, China, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2019-07-17T12:33:29Z'
   edited_at: '2025-04-05T12:56:57Z'
+  id: 360002049858
+  locale: en-us
+  section: Attribution scenarios
+  section_id: 6551328497041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360002049858-Measure-attribution-in-the-Chinese-domestic-market
 ---
 ## Attribution Android apps in the Chinese domestic market
 

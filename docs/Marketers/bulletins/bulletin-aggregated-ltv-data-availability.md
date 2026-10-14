@@ -1,26 +1,21 @@
 ---
-title: "Bulletin: Aggregated LTV data availability"
+title: 'Bulletin: Aggregated LTV data availability'
+metadata:
+  keywords:
+    - Marketers
+    - Marketing Analytics
 table_of_contents: false
 x-zendesk:
-  id: 43193300429201
-  url: https://support.appsflyer.com/hc/en-us/articles/43193300429201-Bulletin-Aggregated-LTV-data-availability
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Bulletins
-  section_id: 6551161473041
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-nohar-avigal, Marketers, Marketing Analytics]
-  labels: [Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2026-01-26T07:35:14Z'
   edited_at: '2026-01-27T00:01:08Z'
+  id: 43193300429201
+  locale: en-us
+  section: Bulletins
+  section_id: 6551161473041
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/43193300429201-Bulletin-Aggregated-LTV-data-availability
 ---
 | **What's new** | Starting April 1, 2026, LTV aggregated data (including clicks,impressions and installs) will be retained for 25 months (2 years + 1 month) instead of 5 years. |
 | --- | --- |

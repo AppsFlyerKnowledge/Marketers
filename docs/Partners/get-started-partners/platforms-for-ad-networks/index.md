@@ -1,18 +1,17 @@
 ---
-title: "Platforms for ad networks"
-excerpt: "Integration with AppsFlyer for ad networks using specific technology platforms"
+title: Platforms for ad networks
+excerpt: Integration with AppsFlyer for ad networks using specific technology platforms
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 6551055575185
-  url: https://support.appsflyer.com/hc/en-us/sections/6551055575185-Platforms-for-ad-networks
-  locale: en-us
   category: Partners
   category_id: 6550456653457
-  parent_section_id: 6550863656977
-  position: 2
-  sorting: manual
   created_at: '2022-06-02T11:27:04Z'
+  id: 6551055575185
+  locale: en-us
+  parent_section_id: 6550863656977
+  type: section
+  url: >-
+    https://support.appsflyer.com/hc/en-us/sections/6551055575185-Platforms-for-ad-networks
 ---
 Integration with AppsFlyer for ad networks using specific technology platforms
 

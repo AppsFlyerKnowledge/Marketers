@@ -1,26 +1,29 @@
 ---
-title: "Snapchat—Advanced SRN integration setup"
-excerpt: "Learn how to set up the integration between AppsFlyer and Snapchat to enable attribution measurement. Snapchat is an advanced SRN (Self-Reporting Network)."
+title: Snapchat—Advanced SRN integration setup
+excerpt: >-
+  Learn how to set up the integration between AppsFlyer and Snapchat to enable
+  attribution measurement. Snapchat is an advanced SRN (Self-Reporting Network).
+metadata:
+  keywords:
+    - configuration
+    - snapchat measurement partner
+    - snapchat
+    - measurement
+    - snapchat measurement analytics
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
 x-zendesk:
-  id: 211011983
-  url: https://support.appsflyer.com/hc/en-us/articles/211011983-Snapchat-Advanced-SRN-integration-setup
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Snap (Snapchat)
-  section_id: 6551316540945
-  position: 0
-  owner: Dori Frost
-  owner_email: dori.frost@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-shay-maoz, Marketers, Mobile Attribution]
-  labels: [configuration, snapchat measurement partner, snapchat, measurement, snapchat measurement analytics, Advertisers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2016-06-13T12:28:59Z'
   edited_at: '2026-10-07T11:44:22Z'
+  id: 211011983
+  locale: en-us
+  section: Snap (Snapchat)
+  section_id: 6551316540945
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/211011983-Snapchat-Advanced-SRN-integration-setup
 ---
 ![](https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1)
 

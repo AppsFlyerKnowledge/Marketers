@@ -1,26 +1,27 @@
 ---
-title: "Oracle Responsys integration with AppsFlyer"
-excerpt: "Oracle Responsys, an email delivery and analytics platform, embeds AppsFlyer OneLink within emails. Email recipients who click the link are deep linked into your app."
+title: Oracle Responsys integration with AppsFlyer
+excerpt: >-
+  Oracle Responsys, an email delivery and analytics platform, embeds AppsFlyer
+  OneLink within emails. Email recipients who click the link are deep linked
+  into your app.
+metadata:
+  keywords:
+    - Oracle Responsys
+    - Advertisers
+    - Developers
+    - Marketers
+    - OneLink
 x-zendesk:
-  id: 360003798297
-  url: https://support.appsflyer.com/hc/en-us/articles/360003798297-Oracle-Responsys-integration-with-AppsFlyer
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  section: Email service providers
-  section_id: 6551247620881
-  position: 7
-  owner: Ilana Wolf
-  owner_email: ilana.wolf@appsflyer.com
-  visibility: Everyone / Public (no restriction)
-  user_segment_id: null
-  permission_group_id: 11065
-  content_tags: [pm-asaf-mashiah, Marketers, OneLink]
-  labels: [Oracle Responsys, Advertisers, Developers, Marketers]
-  promoted: false
-  comments_disabled: true
   created_at: '2019-11-20T09:26:13Z'
   edited_at: '2026-08-14T16:22:53Z'
+  id: 360003798297
+  locale: en-us
+  section: Email service providers
+  section_id: 6551247620881
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360003798297-Oracle-Responsys-integration-with-AppsFlyer
 ---
 ![oracle-responsys-af-logo.png](https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png)
 

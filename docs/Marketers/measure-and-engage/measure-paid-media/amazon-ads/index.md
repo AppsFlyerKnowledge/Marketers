@@ -1,18 +1,16 @@
 ---
-title: "Amazon Ads"
-excerpt: "Set up Amazon Ads for AppsFlyer attribution"
+title: Amazon Ads
+excerpt: Set up Amazon Ads for AppsFlyer attribution
 table_of_contents: false
 x-zendesk:
-  type: section
-  id: 28703975923729
-  url: https://support.appsflyer.com/hc/en-us/sections/28703975923729-Amazon-Ads
-  locale: en-us
   category: Marketers
   category_id: 6550444307985
-  parent_section_id: 6550990672401
-  position: 5
-  sorting: manual
   created_at: '2024-09-26T16:09:57Z'
+  id: 28703975923729
+  locale: en-us
+  parent_section_id: 6550990672401
+  type: section
+  url: https://support.appsflyer.com/hc/en-us/sections/28703975923729-Amazon-Ads
 ---
 Set up Amazon Ads for AppsFlyer attribution
 
