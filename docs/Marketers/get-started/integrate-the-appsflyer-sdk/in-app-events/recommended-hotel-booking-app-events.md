@@ -35,13 +35,12 @@ You can attribute preferences such as hotel score, season, country, and the numb
 
 > 📘 **Important!**
 >
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
+> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=hotel_booking). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
 > * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=hotel_booking&view=code) for iOS, Android, and Unity developers.
 > * Detailed instructions for your developer can be found in the  **[AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).**
 >
 > For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
-
 
 [![Flowchart_for_recommended_events_hotel_booking_app_user_journey](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)
 
@@ -49,7 +48,9 @@ You can attribute preferences such as hotel score, season, country, and the numb
 
 The following section provides a list of event structures that are typical to the hotel booking vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Complete registration (af\_complete\_registration)
+<div id="complete-registration-af_complete_registration" />
+
+<Accordion title="Complete registration (af_complete_registration)">
 
 **Purpose**
 
@@ -61,15 +62,15 @@ When the user completes the signup process
 
 Event parameters
 
-
-
 | Field name | Description | Example value |
 | --- | --- | --- |
 | af\_registration\_method | Type of signup method | email, Facebook |
 
+</Accordion>
 
+<div id="login-af_login" />
 
-### Login (af\_login)
+<Accordion title="Login (af_login)">
 
 **Purpose**
 
@@ -83,7 +84,11 @@ When the user successfully logs in
 
 Can be sent without any additional parameters
 
-### Search (af\_search)
+</Accordion>
+
+<div id="search-af_search" />
+
+<Accordion title="Search (af_search)">
 
 **Purpose**
 
@@ -95,8 +100,6 @@ When the user performs a search
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_date\_a | Check-in date | 2018/07/26 |
@@ -106,9 +109,11 @@ When the user performs a search
 | af\_num\_adults | Number of guests | 2 |
 | af\_num\_children | Number of children | 0 |
 
+</Accordion>
 
+<div id="content-view-af_content_view" />
 
-### Content view (af\_content\_view)
+<Accordion title="Content view (af_content_view)">
 
 **Purpose**
 
@@ -126,8 +131,6 @@ When the user is viewing a property
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_price | List price of the hotel | 674 |
@@ -143,9 +146,11 @@ When the user is viewing a property
 | af\_preferred\_star\_ratings | Preferred hotel star rating | 5 |
 | af\_preferred\_neighborhoods | Area in which the hotel is located | Centro |
 
+</Accordion>
 
+<div id="add-to-wishlist-af_add_to_wishlist" />
 
-### Add to wishlist (af\_add\_to\_wishlist)
+<Accordion title="Add to wishlist (af_add_to_wishlist)">
 
 **Purpose**
 
@@ -156,8 +161,6 @@ Record which hotels and destinations users are interested in booking. When you k
 When a user adds a listing to their wish list
 
 **Event parameters**
-
-
 
 | Name | Description | Example value |
 | --- | --- | --- |
@@ -177,9 +180,11 @@ When a user adds a listing to their wish list
 | af\_coupon\_code | Promo code or loyalty reward points | SUM2018 |
 | property\_type | Type of property | Hotel |
 
+</Accordion>
 
+<div id="initiated-checkout-af_initiated_checkout" />
 
-### Initiated checkout (af\_initiated\_checkout)
+<Accordion title="Initiated checkout (af_initiated_checkout)">
 
 **Purpose**
 
@@ -194,8 +199,6 @@ When the user adds their credit card information or connects their eWallet
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_price | List price of the hotel | 674 |
@@ -214,9 +217,11 @@ When the user adds their credit card information or connects their eWallet
 | af\_coupon\_code | Promo code or loyalty reward points | SUM2018 |
 | property\_type | Type of property | Hotel |
 
+</Accordion>
 
+<div id="purchase-af_purchase" />
 
-### Purchase (af\_purchase)
+<Accordion title="Purchase (af_purchase)">
 
 **Purpose**
 
@@ -232,11 +237,9 @@ When the user lands on the thank you page after a successful purchase
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Estimated revenue from the purchase | 1205.99 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Estimated revenue from the purchase | 1205.99 |
 | af\_price | Overall purchase sum | 4000 |
 | af\_content\_id | Item ID | 121 |
 | af\_content\_type | Item category | hotel |
@@ -245,9 +248,11 @@ When the user lands on the thank you page after a successful purchase
 | af\_order\_id | ID of the order that is generated after the purchase | X123ABC |
 | af\_receipt\_id | Order ID,  required for CRITEO and Google Ad Words retargeting integration | X123ABC |
 
+</Accordion>
 
+<div id="travel-booking-af_travel_booking" />
 
-### Travel booking (af\_travel\_booking)
+<Accordion title="Travel booking (af_travel_booking)">
 
 **Purpose**
 
@@ -264,11 +269,9 @@ When the user reaches the thank you page after booking a hotel
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Revenue from booking | 647.95 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Revenue from booking | 647.95 |
 | af\_currency | Currency code | GBP |
 | af\_price | List price of the hotel | 674 |
 | af\_content\_id | ID of the hotel | ODIRNH |
@@ -287,13 +290,13 @@ When the user reaches the thank you page after booking a hotel
 | property\_type | Type of property | Hotel |
 | new\_booking | User's first booking | true |
 
-
+</Accordion>
 
 ## Recommended structures for custom events
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### First purchase (first\_purchase)
+<Accordion title="First purchase (first_purchase)">
 
 **Purpose**
 
@@ -309,11 +312,9 @@ When the user completes their first purchase
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Revenue from purchase | 1205.95 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Revenue from purchase | 1205.95 |
 | af\_price | Overall purchase sum | 4000 |
 | af\_content\_id | Item ID | 121, 262 |
 | af\_content\_type | Item category | hotel |
@@ -321,3 +322,5 @@ When the user completes their first purchase
 | af\_quantity | Quantity of items in the cart | 1 |
 | af\_order\_id | ID of the order that is generated after purchase | X123ABC |
 | af\_receipt\_id | Order ID, required for CRITEO and Google AdWords retargeting integration | X123ABC |
+
+</Accordion>

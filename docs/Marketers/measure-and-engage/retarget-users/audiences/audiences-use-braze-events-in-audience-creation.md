@@ -22,7 +22,7 @@ x-zendesk:
   created_at: '2021-11-17T09:55:26Z'
   edited_at: '2026-10-04T12:09:19Z'
 ---
-By setting up an incoming connection between your Braze account and AppsFlyer Audiences, you bring your Braze message engagement event data into Audiences. You can then use this data in [rulesets](/docs/audiences-guide#h_01HBQMA61ANB4K0TCJ4WBHMV8D) when defining audiences.
+By setting up an incoming connection between your Braze account and AppsFlyer Audiences, you bring your Braze message engagement event data into Audiences. You can then use this data in [rulesets](/docs/audiences-guide#all-about-rulesets) when defining audiences.
 
 **Prerequisites**
 

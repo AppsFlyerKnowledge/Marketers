@@ -38,7 +38,7 @@ x-zendesk:
 
 Baidu App Ads configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
 
@@ -55,7 +55,9 @@ The Integration with Baidu Baitong Ads supports only the install event for Defau
 
 ![baidu-baitong-default-postback.png](https://files.readme.io/c464429db3eae2dac9fbc13df1a56090ef587cd386ed8214eabd21dac653a622-50900467293713.png)
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 In this tab, you can create the attribution links you want to send to Baidu App Ads (Baitong) for attributing Baidu App Ads (Baitong) campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
@@ -78,7 +80,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information, see[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information, see[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
 
 ### Click-through attribution
 
@@ -94,15 +96,21 @@ This is the attribution link that contains all the setup information you have se
 
 Cost tab
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant RTB House, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for RTB House, the permissions tab is active and you can grant control to RTB House.
 
@@ -115,7 +123,9 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow access to your retention report*** - only to the partner's own retention data
 * ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
 * ***Allow access to your aggregate in-app events data** -*only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*****a** - only to the revenue data attributed to the partner
+* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+
+</Accordion>

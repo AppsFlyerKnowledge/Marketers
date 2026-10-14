@@ -42,8 +42,6 @@ AppsFlyer integration with Outbrain supports click attribution.
 
 If necessary, make additional settings changes according to the campaigns and postbacks you run with the partner.
 
-
-
 | Settings tab | Remarks |
 | --- | --- |
 | **Integration** | Configure additional [integration](/docs/set-up-an-integrated-partner#attribution-link-tab) settings as required. |
@@ -51,8 +49,6 @@ If necessary, make additional settings changes according to the campaigns and po
 | **Cost** | Not available for this partner |
 | **Ad revenue** | Not available for this partner |
 | **Permissions** | Set ad network [permissions](/docs/set-up-an-integrated-partner#permissions-tab) as required. |
-
-
 
 **Edit existing integration:**
 

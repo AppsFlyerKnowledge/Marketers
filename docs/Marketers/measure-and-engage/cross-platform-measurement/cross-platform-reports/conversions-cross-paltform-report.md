@@ -36,9 +36,9 @@ The report sample includes all the report fields and their values. For the defin
 
 The report contains three groups of fields:
 
-- **Cross-platform conversion fields:** media source, campaign, ad, geo, device, CUID, conversion type, revenue, cross-platform conversion timestamp, and related identifiers.
-- **Assist fields (1, 2, and 3):** for each of the three assist positions, the corresponding media source, campaign, ad set, ad, agency, channel, engagement type and subtype, site ID, and event time. These fields use the `<field>__assist_1`, `<field>__assist_2`, and `<field>__assist_3` naming convention.
-- **Enrichment fields:** support user-level lifetime value (LTV) and event-level analysis. For example, join these fields with a user's conversion records to build a per-user LTV view across platforms.
+* **Cross-platform conversion fields:** media source, campaign, ad, geo, device, CUID, conversion type, revenue, cross-platform conversion timestamp, and related identifiers.
+* **Assist fields (1, 2, and 3):** for each of the three assist positions, the corresponding media source, campaign, ad set, ad, agency, channel, engagement type and subtype, site ID, and event time. These fields use the `<field>__assist_1`, `<field>__assist_2`, and `<field>__assist_3` naming convention.
+* **Enrichment fields:** support user-level lifetime value (LTV) and event-level analysis. For example, join these fields with a user's conversion records to build a per-user LTV view across platforms.
 
 ## Report data freshness
 
@@ -57,16 +57,16 @@ There is typically a short delay between an event's actual occurrence and its en
 | 2025-10-01 | 5:00 | 9:00 | 4:00-6:00 | 5:00-6:00 |
 | 2025-10-01 | 6:00 | 9:00 | 5:00-7:00 | 6:00-7:00 |
 
-> 📘 Good to know
->
-> - The batch does not process events from the last hour before the run, to leave enough time to enrich events with their related CUID. In the example above, the 8:00 AM batch processes events that entered the database between 3:00 and 7:00. Events that entered the database between 7:00 and 8:00 are not processed in that run.
-> - The report becomes available an hour after the batch run, because an internal process updates the batch during that hour. In the example above, the 8:00 AM batch is available at 9:00 AM.
+A few notes on this example:
+
+* The batch does not process events from the last hour before the run, to leave enough time to enrich events with their related CUID. In the example above, the 8:00 AM batch processes events that entered the database between 3:00 and 7:00. Events that entered the database between 7:00 and 8:00 are not processed in that run.
+* The report becomes available an hour after the batch run, because an internal process updates the batch during that hour. In the example above, the 8:00 AM batch is available at 9:00 AM.
 
 ## Subscribe to the report
 
 To subscribe to the report:
 
-1. In AppsFlyer, from the side menu, select **Export** \> **Data Locker**.
+1. In AppsFlyer, from the side menu, select **Export** > **Data Locker**.
 2. In the **Data Locker content** pane, scroll down to the **Advanced reports** section.
 3. Select **Conversions cross-platform**.
 
@@ -74,7 +74,7 @@ To subscribe to the report:
 
 The path to the report consists of the following folder hierarchy:
 
-```plaintext
+```
 <bucket-name>/<DataLocker connection name>/t=conversions_user_level_cross_platform/dt=<yyyy-mm-dd>/h=<hour>/
 ```
 
@@ -82,8 +82,8 @@ The path to the report consists of the following folder hierarchy:
 
 Keep the following in mind when connecting your database or dashboard to this report:
 
-- Each report's hourly version contains unique conversion records. Make sure you pull all reports hourly or daily.
-- Assist fields (`__assist_1`, `__assist_2`, `__assist_3`) reflect the assisting engagements behind each conversion, based on the underlying conversion data. Use them to reconstruct the touchpoint sequence that led to each conversion.
-- The report provides revenue in three currencies: `revenue_usd` (normalized), `revenue_value_original` (the currency of the reporting event, see `revenue_currency_original`), and `revenue_value_customer` (your preferred currency, see `currency_customer`). Use whichever matches your reporting needs.
-- This report does not include cost fields (cost, clicks, impressions). Extract them from the [cost ETL report](/docs/set-up-and-use-roi360-cost-etl-reports) instead.
-- The report provides all app data in a single file. Use the App ID field to segregate data per app, or set Data Locker to segregate by app. We recommend using the [unified segregation type](/docs/data-locker-for-marketers#app-segregation).
+* Each report's hourly version contains unique conversion records. Make sure you pull all reports hourly or daily.
+* Assist fields (`__assist_1`, `__assist_2`, `__assist_3`) reflect the assisting engagements behind each conversion, based on the underlying conversion data. Use them to reconstruct the touchpoint sequence that led to each conversion.
+* The report provides revenue in three currencies: `revenue_usd` (normalized), `revenue_value_original` (the currency of the reporting event, see `revenue_currency_original`), and `revenue_value_customer` (your preferred currency, see `currency_customer`). Use whichever matches your reporting needs.
+* This report does not include cost fields (cost, clicks, impressions). Extract them from the [cost ETL report](/docs/set-up-and-use-roi360-cost-etl-reports) instead.
+* The report provides all app data in a single file. Use the App ID field to segregate data per app, or set Data Locker to segregate by app. We recommend using the [unified segregation type](/docs/data-locker-for-marketers#app-segregation).

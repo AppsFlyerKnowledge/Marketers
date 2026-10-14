@@ -47,7 +47,6 @@ There are also [raw data reports](/docs/protect360-reports-for-ad-networks) avai
 >
 > If only the agency is integrated and granted permissions, the ad network does not have access to the data.
 
-
 ### Dashboard view
 
 **Prerequisites**: Permission from the advertiser to access ProtectLITE and Protect360. 
@@ -95,17 +94,13 @@ Learn more about [Protect360 raw data reports](/docs/protect360-raw-data-reports
 
 #### Protect360 API reports
 
-
-
 | Report | Data freshness | Description |
 | --- | --- | --- |
 | Post-attribution in-app events fraud | Daily 10:00 UTC | * In-app events performed by installs identified as fraudulent.<br />* Any other in-app event judged as fraudulent irrespective of the install.<br /><br />The report can be optionally filtered by in-app event type as described in the parameters table that follows.<br /><br />Report topic: `fraud-post-inapps` |
-| Post-attribution installs | Daily 10:00 UTC | * Installs identified as fraudulent post-attribution.<br />* The report can be optionally filtered by the detection date as described in the section that follows.<br /><br />Report topic: detection |
+| Post-attribution installs | Daily 10:00 UTC | <ul><li>Installs identified as fraudulent post-attribution.</li><li>The report can be optionally filtered by the detection date as described in the section that follows.</li></ul>Report topic: detection |
 | Installs | Real-time | Blocked installs with the block reason<br /><br />Report topic: blocked\_installs\_report |
 | In-app event | Real-time | In-app events performed by blocked users<br /><br />Report topic: `blocked_in-app_events_report` |
 | Clicks | Real-time | Clicks performed by blocked users<br /><br />Report topic: `blocked_clicks_report` |
-
-
 
 #### **Procedure for ad networks to get Protect360 reports by download**
 
@@ -122,7 +117,7 @@ Learn more about [Protect360 raw data reports](/docs/protect360-raw-data-reports
 
 ### Curl examples
 
-### Installs (blocked\_installs\_report)
+<Accordion title="Installs (blocked_installs_report)">
 
 Replace the app\_id, from, to, and token placeholders.
 
@@ -131,7 +126,9 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 -H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \
 ```
 
-### Post-attribution installs (detection)
+</Accordion>
+
+<Accordion title="Post-attribution installs (detection)">
 
 Replace the app id, from, to, and token placeholders.
 
@@ -140,7 +137,9 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 -H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \
 ```
 
-### In-app event (blocked\_in\_app\_events\_report)
+</Accordion>
+
+<Accordion title="In-app event (blocked_in_app_events_report)">
 
 Replace the app id, from, to, and token placeholders.
 
@@ -149,7 +148,9 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 -H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \
 ```
 
-### Post-attribution in-app events fraud (fraud\_post\_inapps)
+</Accordion>
+
+<Accordion title="Post-attribution in-app events fraud (fraud_post_inapps)">
 
 Replace the app id, from, to, and token placeholders.
 
@@ -158,7 +159,9 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 -H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \
 ```
 
-### Clicks (blocked-clicks\_report)
+</Accordion>
+
+<Accordion title="Clicks (blocked-clicks_report)">
 
 Replace the app id, from, to, and token placeholders.
 
@@ -167,60 +170,58 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 -H 'Authorization: Bearer {V2.0 api token placeholder. Note: The token has more than 700 characters.}' \
 ```
 
+</Accordion>
+
 ### Protect360 ad network API reference guide
 
-### API basics
+<Accordion title="API basics">
 
 Protect360 ad network API basics:
-
-
 
 | Path | `https://hq1.appsflyer.com/api/adnets-data/v1/export/report_topic/app/app_id` |
 | --- | --- |
 | Method | GET |
-| Path parameters (mandatory) | * `app_id`:<br />  * The app identifier, as found in the AppsFlyer dashboard. Insert it precisely as it displays in the dashboard.<br />  * Make sure to prefix iOS apps with **id.**<br />* `report_topic`**:** |
+| Path parameters (mandatory) | * `app_id`:<br />  * The app identifier, as found in the AppsFlyer dashboard. Insert it precisely as it displays in the dashboard.<br />  * Make sure to prefix iOS apps with **id.**<br />* `report_topic`: |
 | Accepted content types | `application/json` |
-| Authorization | * Bearer token in the request header.<br />* ![AppsFlyerAdmin_us-en.png](https://files.readme.io/5708713f5adc7560748b16d2df4a439163e1310fc7d32f2e5ca786d176cbc8d3-44928678665617.png)Ask the admin to get the V2.0 token from the [tokens](/docs/managing-appsflyer-tokens) page. This token is about 700 characters in length. |
+| Authorization | <ul><li>Bearer token in the request header.</li><li>![AppsFlyerAdmin_us-en.png](https://files.readme.io/5708713f5adc7560748b16d2df4a439163e1310fc7d32f2e5ca786d176cbc8d3-44928678665617.png)Ask the admin to get the V2.0 token from the [tokens](/docs/managing-appsflyer-tokens) page. This token is about 700 characters in length.</li></ul> |
 | Rate limitation | [Rate limitations](/docs/report-generation-quotas-rate-limitations) |
-| Date range limitation | * Earliest date supported: 90 days before the current data<br />* 31 days out of the previous 90 days |
+| Date range limitation | <ul><li>Earliest date supported: 90 days before the current data</li><li>31 days out of the previous 90 days</li></ul> |
 | Row limitations | 200K rows |
-| Report characteristics | * Timezone: UTC<br />* Currency: USD |
+| Report characteristics | <ul><li>Timezone: UTC</li><li>Currency: USD</li></ul> |
 
+</Accordion>
 
+<div id="api-parameters" />
 
-### API parameters
+<Accordion title="API parameters">
 
 Protect360 API parameters:
-
-
 
 | Parameter | Description | Format | Mandatory |
 | --- | --- | --- | --- |
 | app\_id | App ID as it displays in AppsFlyer | String | Yes |
-| from | Start of the date range:<br /><br />* For installs, this is the install date.<br />* For in-app events, this is the date of the event. | YYYY-MM-DD | Yes |
-| to | End of the date range:<br /><br />* For installs, this is the install date.<br />* For in-app events, this is the date of the event. | YYYY-MM-DD | Yes |
+| from | Start of the date range:<ul><li>For installs, this is the install date.</li><li>For in-app events, this is the date of the event.</li></ul> | YYYY-MM-DD | Yes |
+| to | End of the date range:<ul><li>For installs, this is the install date.</li><li>For in-app events, this is the date of the event.</li></ul> | YYYY-MM-DD | Yes |
 | event\_name | [Optional for Post-attribution in-app events fraud]<br /><br />Filter events by in-app event. Limit the report to specific events. One or more events can be included.<br /><br />Example usage: `&event_name=af_purchase,af_login` | String | No |
 | detect-from | [Optional for Post-attribution installs]<br /><br />Start of the fraud detection date range. (Default is from.) | YYYY-MM-DD | No |
 | detect-to | [Optional for Post-attribution installs]<br /><br />End of the fraud detection date range. (Default is to.) | YYYY-MM-DD | No |
 
+</Accordion>
 
-
-### Protect360 API HTTP return codes
+<Accordion title="Protect360 API HTTP return codes">
 
 Error codes and solutions:
-
-
 
 | Status | Code | Symptom/message | Solution |
 | --- | --- | --- | --- |
 | OK | 200 | Empty CSV file | `addtional_fields`used more than once in the URI |
 | OK | 200 | Empty CSV file | Ensure that both from and to dates have the format yyyy-mm-dd |
 | OK | 200 | AppsFlyer HTML login page returns | There is no token in the Bearer token header |
-| Bad request | 400 | Bad request | * Date range limitation.<br />  * The earliest date allowed is 90 days prior to the current day<br />  * Period can't exceed 60 days for installs and 90 days for in-app reports |
+| Bad request | 400 | Bad request | <ul><li>Date range limitation.<ul><li>The earliest date allowed is 90 days prior to the current day</li><li>Period can't exceed 60 days for installs and 90 days for in-app reports</li></ul></li></ul> |
 | Unauthorized | 401 | Unauthorized | A token was found, but it is not valid. Check that you have the current V2.0 token for your account. Ask the admin to retrieve the current token from the dashboard. |
-| Not found | 404 |  | * The endpoint specified is incorrect<br />* Ensure that the app ID is correct<br />* You are not authorized to access the app |
+| Not found | 404 |  | <ul><li>The endpoint specified is incorrect</li><li>Ensure that the app ID is correct</li><li>You are not authorized to access the app</li></ul> |
 
-
+</Accordion>
 
 ## Impression capping
 
@@ -238,11 +239,11 @@ Impression capping thresholds:
 * Cannot be changed or stopped. Protect360 is finely tuned and accurate in its fraud detection and the algorithm can’t be manually adjusted or turned off.
 * Can be avoided by stopping campaigns and publishers with anomalous activity.
 
-### FAQ
+<div id="faq" />
+
+<Accordion title="FAQ">
 
 Impressions capping FAQ:
-
-
 
 | **Q: What is the network threshold?**<br /><br />**A**: Details of the capping mechanism are protected to prevent attempts at circumvention. That said, the threshold is only reached if there is an extreme volume of impressions fired, beyond the possibility of human behavior. Looking at the day’s impression, install volumes will give you a clear idea of whether there is a flood issue stemming from one or more publishers. |
 | --- |
@@ -254,7 +255,7 @@ Impressions capping FAQ:
 | **Q: What can we do if we expect a significant increase in traffic and impression volume (for example, due to new campaigns)? What can be done to avoid being blocked?**<br /><br />**A: The algorithm is dynamic and updated on an hourly basis, to take into consideration different trends. It is sophisticated enough to handle spikes and is not triggered by normal activity fluctuations, including sudden and significant increases in volume. That said, partners can use their impression data and reports to identify suspicious sources and stop those campaigns.** |
 | **Q: How can we check for problematic traffic and improve campaign performance?**<br /><br />**A: Partners can use their impression data and reports to identify suspicious sources and stop those campaigns. Partners can also see blocked impression data in the Protect360/ProtectLITE dashboard under the dedicated columns, as long as they have received the required permission from the advertiser to view fraud data in the dashboard.** |
 
-
+</Accordion>
 
 ### Click signing
 

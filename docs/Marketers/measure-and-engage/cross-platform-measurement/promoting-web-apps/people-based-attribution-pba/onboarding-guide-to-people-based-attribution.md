@@ -26,39 +26,28 @@ x-zendesk:
 
 Setting up PBA consists of several action items described here and listed in the table that follows.
 
-- Contact your AppsFlyer CSM or sales rep to enable PBA.
-- Group brand digital properties into a brand bundle.
-- Integrate the web SDK into your website and the mobile SDK into your app.
-- AppsFlyer collects and attributes the data.  - Data is collected from several different sources.
-  - Recorded data is divided into touchpoints and events.
-  - Events are attributed to the last non-direct web visit in the previous 30 days.
-  - Advertisers can designate some events as conversion events. For example, purchases. Conversion events are analyzed in the dashboards.
-  - Raw data is used to perform custom data analyses.
-- Analyze customer journeys to optimize campaigns.
+* Contact your AppsFlyer CSM or sales rep to enable PBA.
+* Group brand digital properties into a brand bundle.
+* Integrate the web SDK into your website and the mobile SDK into your app.
+* AppsFlyer collects and attributes the data.
+  * Data is collected from several different sources.
+  * Recorded data is divided into touchpoints and events.
+  * Events are attributed to the last non-direct web visit in the previous 30 days.
+  * Advertisers can designate some events as conversion events. For example, purchases. Conversion events are analyzed in the dashboards.
+  * Raw data is used to perform custom data analyses.
+* Analyze customer journeys to optimize campaigns.
 
 ### PBA set-up steps
 
 Before beginning, contact your AppsFlyer CSM or sales rep to enable PBA. Then begin setup. Setup tasks are detailed in the table. Download this [spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vQkYW2k1VUFugYLZ7Xv5esBL4kxfoNXMw0wyfRvoNGHdgiyZS5K5BE4seR2bjocK5HAArj97nlqF4By/pub?output=xlsx) to record your progress.
 
-> 👍 Best practice
->
-> Implement [CUID](/docs/customer-user-id-field-cuid) in the app and on your website. AppsFlyer will receive the CUID when a user registers or logs on.
+**Best practice:** Implement [CUID](/docs/customer-user-id-field-cuid) in the app and on your website. AppsFlyer will receive the CUID when a user registers or logs on.
 
-|  | Responsibility | Actions | Remarks |
-| --- | --- | --- | --- |
-| 1 | Advertiser | - [Add a web app](/docs/adding-an-app-to-appsflyer) to your AppsFlyer account. The web app specifies the URL of the website for which you want to measure traffic and it is used to prevent [self-attribution](/docs/pba-media-source-attribution-rules).<br />- [Set up brand bundles](/docs/pba-brand-bundles-and-settings); they combine a brand's digital properties (mobile apps and a web app).<br />- Specify additional [excluded domains](/docs/pba-brand-bundles-and-settings#domain-exclusion). | - Analyses and reports are aggregated within the brand. |
-| 2 | Webmaster | - Install the [Web SDK](/docs/pba-web-sdk-integration-guide) on the website defined by the web app. <br />- Configure the web SDK to: <br /> - Record visits<br /> - Record events<br /> - Set [CUID](/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid)<br /> - Test implementation with the [SDK test tool](/docs/test-pba-web-sdk-integration) | - SDK records visits and events.<br />- Integration is fully supported through Google Tag Manager (GTM), Adobe, or Tealium.<br />- **Mandatory:** Call SetCustomerUserID() immediately after a user registers or logs on. If you don't have a CUID, discuss alternatives with your CSM. |
-| 3 | Advertiser | Ensure that the webmaster used the [SDK test tool](/docs/test-pba-web-sdk-integration) to verify that the website the SDK is configured to:<br />- Record visits<br />- Record events<br />- Set the CUID | Advertiser! Don't proceed until this step is complete. |
-| 4 | Developer & Advertiser | [Optional] [Web server-to-server](/docs/web-server-to-server-events-api-for-pba-web-s2s) API | Reports web-related events like automatic subscription renewal |
-| 5 | Advertiser | - Mark conversion events:<br /> - [Web events](/docs/pba-brand-bundles-and-settings#web-event-settings)<br /> - [Optional] [Mobile in-app events](/docs/pba-brand-bundles-and-settings#inapp-event-settings). | - Wait for daily\* processing to complete before doing so. |
-| 6 | Advertiser | Begin to use the dashboards | - [Website Attribution](/docs/pba-website-attribution-dashboard)<br />- [Web-Assisted Installs](/docs/pba-web-assisted-installs) |
-| 7 | Advertiser | [Set up Data Locker](/docs/pba-raw-data-reports#setting-up-pba-reports-in-data-locker) | Provides access to PBA raw-data reports including touchpoints, standard and conversion events, and specialized reports for Web-Assisted Installs. |
-| 8 | Advertiser | [Optional]<br />Begin to use [raw data](/docs/pba-raw-data-reports) | Data is available after daily\* processing. |
-| \* Due to processing, data is available 10 hours after midnight UTC on the day of the event. Meaning Monday's events are available Tuesday 10:00 UTC. | | | |
+<table><thead><tr><th> </th><th>Responsibility</th><th>Actions</th><th>Remarks</th></tr></thead><tbody><tr><td><p> 1</p></td><td><p>Advertiser </p></td><td><ul><li><span><a href="./adding-an-app-to-appsflyer">Add a web app</a> to your AppsFlyer account. The web app specifies the URL of the website for which you want to measure traffic and </span>it is used to prevent <a href="./pba-media-source-attribution-rules">self-attribution</a>.</li><li><span><a href="./pba-brand-bundles-and-settings">Set up brand bundles</a>; they combine a brand's digital properties (mobile apps and a web app).</span> </li><li>Specify additional <a href="./pba-brand-bundles-and-settings#domain-exclusion">excluded domains</a>.</li></ul></td><td><ul><li><span>Analyses and reports are aggregated within the brand.</span></li></ul></td></tr><tr><td><span id="2"></span><p> 2</p></td><td> Webmaster </td><td><ul><li>Install the <a href="./pba-web-sdk-integration-guide">Web SDK</a> on the website defined by the web app. </li><li>Configure the web SDK to: <ul><li>Record visits</li><li>Record events</li><li><mark> Set <a href="./pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid">CUID</a> </mark></li><li>Test implementation with the <a href="./test-pba-web-sdk-integration">SDK test tool</a></li></ul></li></ul></td><td><ul><li><span>SDK records visits and events.</span></li><li><span>Integration is fully supported through Google Tag Manager (GTM), Adobe, or Tealium.</span></li><li><strong> Mandatory: </strong> Call SetCustomerUserID() immediately after a user registers or logs on. If you don't have a CUID, discuss alternatives with your CSM. </li></ul></td></tr><tr><td><p>3</p></td><td><p>Advertiser</p></td><td><p>Ensure that the webmaster used the <a href="./test-pba-web-sdk-integration">SDK test tool</a> to verify that the website the SDK is configured to:</p><ul><li>Record visits</li><li>Record events</li><li>Set the CUID</li></ul></td><td><p><mark> Advertiser! Don't proceed until this step is complete.  </mark></p></td></tr><tr><td><p>4 </p></td><td><p>Developer &amp; Advertiser</p></td><td><p>[Optional] <a href="./web-server-to-server-events-api-for-pba-web-s2s">Web server-to-server</a> API</p></td><td>Reports web-related events like automatic subscription renewal</td></tr><tr><td><p>5</p></td><td><p>Advertiser</p></td><td><ul><li><span>Mark </span>conversion events:<ul><li><span><a href="./pba-brand-bundles-and-settings#web-event-settings">Web events</a></span></li><li><span>[Optional] <a href="./pba-brand-bundles-and-settings#inapp-event-settings">Mobile in-app events</a>.</span></li></ul></li></ul></td><td><ul><li><span>Wait for daily\* processing to complete before doing so.</span></li></ul></td></tr><tr><td><p> 6</p></td><td><p>Advertiser</p></td><td><p>Begin to use the dashboards</p></td><td><ul><li><a href="./pba-website-attribution-dashboard">Website Attribution</a></li><li><a href="./pba-web-assisted-installs">Web-Assisted Installs</a></li></ul></td></tr><tr><td><p> 7</p></td><td>Advertiser</td><td><a href="./pba-raw-data-reports#setting-up-pba-reports-in-data-locker">Set up Data Locker</a></td><td><p>Provides access to PBA raw-data reports including touchpoints, standard and conversion events, and specialized reports for Web-Assisted Installs.</p></td></tr><tr><td><p>8</p></td><td><p>Advertiser</p></td><td><p>[Optional]<br/>Begin to use <a href="./pba-raw-data-reports">raw data</a></p></td><td><p>Data is available after daily\* processing.</p></td></tr><tr><td colspan="4">\* Due to processing, data is available 10 hours after midnight UTC on the day of the event. Meaning Monday's events are available Tuesday 10:00 UTC. </td></tr></tbody></table>
 
 ## PBA data-acquisition via SDK/API
 
 |  | Web platform | Mobile (app) platform |
 | --- | --- | --- |
-| SDK | [Web](/docs/pba-web-sdk-integration-guide)<br />- JavaScript tag SDK installed on the website<br />- Reports website visits, and web events | [Mobile](/docs/integrate-the-appsflyer-sdk)<br />- App SDK integrated into iOS, Android, Unity, etc. <br />- Reports app installs and user actions occurring in the app |
-| Server-to-server API | [Web server-to-server](/docs/web-server-to-server-events-api-for-pba-web-s2s)<br />- Reports events occurring in backend servers (not the web)<br />- Example: subscription renewal | [Mobile server-to-server](/docs/server-to-server-events-api-for-mobile-s2s-mobile)<br />- Reports events occurring in backend servers (not the app)<br />- Example: subscription renewal |
+| SDK | [Web](/docs/pba-web-sdk-integration-guide)<ul><li>JavaScript tag SDK installed on the website</li><li>Reports website visits, and web events</li></ul> | [Mobile](/docs/integrate-the-appsflyer-sdk)<ul><li>App SDK integrated into iOS, Android, Unity, etc.</li><li>Reports app installs and user actions occurring in the app</li></ul> |
+| Server-to-server API | [Web server-to-server](/docs/web-server-to-server-events-api-for-pba-web-s2s)<ul><li>Reports events occurring in backend servers (not the web)</li><li>Example: subscription renewal</li></ul> | [Mobile server-to-server](/docs/server-to-server-events-api-for-mobile-s2s-mobile)<ul><li>Reports events occurring in backend servers (not the app)</li><li>Example: subscription renewal</li></ul> |

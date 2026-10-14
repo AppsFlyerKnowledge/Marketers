@@ -24,9 +24,7 @@ x-zendesk:
 ---
 ## Setting up Adquant
 
-> 📘 Prerequisite
->
-> An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 
 **New integration:**
 
@@ -48,8 +46,8 @@ Learn more about [partner integrations](/docs/set-up-an-integrated-partner).
 2. Set the configuration according to the guidelines [here](/docs/meta-ads-in-app-event-mapping#predefined-event-mapping).
 3. Click **Save**.
 
-![](https://files.readme.io/b1f38694b090db5e48ed27956684faee39004deae8b86aa532a206aacbd21c38-14238400542353.png)
+[![meta_campaign_management_partner_settings.png](https://files.readme.io/b1f38694b090db5e48ed27956684faee39004deae8b86aa532a206aacbd21c38-14238400542353.png)](https://files.readme.io/0c2f25de2211ff01c5d3a7086c1865edd902afbf648388fa636979032e75ad16-360002515305.png)
 
 ## Configuring on Adquant
 
-When you configure your campaigns on Kenshoo the campaign name must begin with " **adquant_**".
+When you configure your campaigns on Kenshoo the campaign name must begin with "**adquant\_**".

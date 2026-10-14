@@ -49,7 +49,7 @@ With Creative Optimization, you can:
 
 This section provides information about the creative assets we measure.
 
-### Supported asset types
+<Accordion title="Supported asset types">
 
 Asset types supported by the Creative Optimization dashboard include:
 
@@ -65,14 +65,18 @@ Asset types supported by the Creative Optimization dashboard include:
 > * The “Creative similarity” feature is not yet available for
 >   carousel ads.
 
-### Matching creatives
+</Accordion>
+
+<Accordion title="Matching creatives">
 
 Creative Optimization has the unique ability to identify which assets are the same, across multiple channels and campaigns, regardless of naming conventions or IDs. This is done by AI and computer vision algorithms that match properties such as visual context, sound, and pixels. Additionally:
 
 * The matched creatives must have the same aspect ratio, such as portrait, landscape, or square.
 * Videos with different durations are considered different creatives.
 
-### Measuring creatives with multiple assets
+</Accordion>
+
+<Accordion title="Measuring creatives with multiple assets">
 
 **How does Creative Optimization measure an ad creative with multiple assets?**
 
@@ -95,13 +99,17 @@ Meta Advantage+ (dynamic creatives), and Google Universal App Campaigns (UAC) ca
 >
 > ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
 
+</Accordion>
+
 ## Using the dashboard
 
 This section provides a comprehensive overview of the main dashboard: How to use filters, the various metrics and dimensions available to get the creative data you're looking for, and how to save and share dashboard views.
 
 [![Filter bar and metrics -Default view.jpg](https://files.readme.io/b68e65ff2cdd2ad2fe0805eb1c2792904af69504d104b6f6ae8a524124272a48-21363121543185.jpg)](https://files.readme.io/b68e65ff2cdd2ad2fe0805eb1c2792904af69504d104b6f6ae8a524124272a48-21363121543185.jpg)
 
-### Filter bar
+<div id="filter-bar" />
+
+<Accordion title="Filter bar">
 
 The first step in setting up your dashboards is selecting your filtering options. All filters are applied to both the Creative Optimization Overview and Discovery dashboards.
 
@@ -121,7 +129,11 @@ The first step in setting up your dashboards is selecting your filtering options
 
 In addition to [standard metrics and dimensions](/docs/creative-optimization-guide#standard-metrics-and-dimensions), the Creative Optimization dashboard offers various [unique metrics and dimensions.](#01H7SZ8RA222QS1AXDKT49DEK3)
 
-### View type
+</Accordion>
+
+<div id="01H7SZ8RA1RT91HKKD0R93T2TA" />
+
+<Accordion title="View type">
 
 Creative data in the dashboards is presented in 3 separate view types: Unified, User Acquisition (UA), and Retargeting:
 
@@ -131,17 +143,25 @@ Creative data in the dashboards is presented in 3 separate view types: Unified, 
 
 [![View_types.jpg](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)
 
-### Creative Optimization + ROI360
+</Accordion>
+
+<div id="creative-optimization-roi360" />
+
+<Accordion title="Creative Optimization + ROI360">
 
 With an AppsFlyer ROI360 subscription, cost data displayed in the Creative Optimization dashboards comes from ROI360, which consolidates and processes cost data from your ad network partners, and adds additional cost-based metrics. Without this subscription, cost data comes from your integrated media partners’ own reporting. We recommend an ROI360 subscription to access the most comprehensive and current cost data. The table below explains the Creative Optimization differences with and without ROI360.
 
 | With ROI360 | Without ROI360 |
 | --- | --- |
-| * [Has data as reported via any ROI360 method](/docs/roi360-guide-cost-and-revenue-data#cost-tools).<br />* [Has all the ROI360 cost-reporting capabilities](/docs/roi360-guide-cost-and-revenue-data#cost-tools).<br />* Creative ETL includes cost data (requires an ROI360 Advanced subscription). | * Cost data, as reported directly by your integrated partners, is limited to Creative Optimization dashboards, not Creative ETL. |
+| <ul><li>[Has data as reported via any ROI360 method](/docs/roi360-guide-cost-and-revenue-data#cost-tools).</li><li>[Has all the ROI360 cost-reporting capabilities](/docs/roi360-guide-cost-and-revenue-data#cost-tools).</li><li>Creative ETL includes cost data (requires an ROI360 Advanced subscription).</li></ul> | <ul><li>Cost data, as reported directly by your integrated partners, is limited to Creative Optimization dashboards, not Creative ETL.</li></ul> |
 
 Learn more about [ROI360](/docs/roi360-guide-cost-and-revenue-data).
 
-### Standard metrics and dimensions
+</Accordion>
+
+<div id="standard-metrics-and-dimensions" />
+
+<Accordion title="Standard metrics and dimensions">
 
 Standard metrics/dimensions available in the dashboards include:
 
@@ -149,7 +169,7 @@ Standard metrics/dimensions available in the dashboards include:
 | --- | --- |
 | Impressions | Number of creative views |
 | Clicks | Number of clicks on ads with the creative |
-| Conversions | * Installs - Number of unique users who install the app<br />* Re-engagements - Number of unique users who open the app after interacting with a retargeting campaign<br />* Re-attributions - Number of unique users who reinstall the app after interacting with a retargeting campaign |
+| Conversions | <ul><li>Installs - Number of unique users who install the app</li><li>Re-engagements - Number of unique users who open the app after interacting with a retargeting campaign</li><li>Re-attributions - Number of unique users who reinstall the app after interacting with a retargeting campaign</li></ul> |
 | Cost | Creative cost |
 | CTR (Click through rate) | Rate (%) of users who have clicked an ad in relation to the number of total views. Formula: Clicks/impressions *100 |
 | CVR (Conversion rate) | Rate (%) of users completing the journey from click to attribution (installs, re-engagements, and re-attributions). Formula: Conversions / Clicks *100 |
@@ -159,14 +179,20 @@ Standard metrics/dimensions available in the dashboards include:
 | Platform | Refers to the OS (i.e. Android) |
 | Channel | Segmentation of traffic within media sources  <br />(i.e. YouTube for Google, Instagram for Meta ads etc.) |
 | Geo | Country/location |
-| IDs | * Creative<br />* Ad<br />* Adset<br />* Campaign |
+| IDs | <ul><li>Creative</li><li>Ad</li><li>Adset</li><li>Campaign</li></ul> |
 | Agency | Displays creative data from selected agencies |
 | Revenue (D0, D1, D3, D7, D14, D30, D60, D90) | Cohorted revenue reported to AppsFlyer |
 | ROAS (D0, D1, D3, D7, D14, D30, D60, D90) | Cohorted Return On Ad Spend (%). Calculates the revenue generated per unit of ad spend. Formula: Revenue / Cost * 100 |
 | Unique users (D0, D1, D3, D7, D14, D30, D60, D90) | Cohorted unique users that engaged with your app up to, and including, the specified day from the install |
 | Retention (D0, D1, D3, D7, D14, D30, D60, D90) | Cohorted rate (%) of users who continue to use your service or product over a predetermined period<br /><br />**Note:** The data is aligned with the AppsFlyer Cohort dashboard. |
 
-### Unique metrics and dimensions
+</Accordion>
+
+<div id="unique-metrics-and-dimensions" />
+
+<div id="01H7SZ8RA222QS1AXDKT49DEK3" />
+
+<Accordion title="Unique metrics and dimensions">
 
 Unique metrics/dimensions available in the dashboards include:
 
@@ -182,9 +208,13 @@ Unique metrics/dimensions available in the dashboards include:
 | Orientation | Orientation of a creative asset such as portrait, square, or landscape |
 | Month | Breakdown of performance by month |
 | Week | Breakdown of performance by week |
-| End cards | This refers to an ad that may display at the end of video ads, and which usually contains basic information about the promoted app. The ability to group creatives by end cards gives additional insights for the optimization of creatives, such as comparing the same end card with different videos to identify the best combination. You can view creatives by the following end card data:<br /><br />* End card name<br />* End card ID<br />* End card duration<br />* End card resolution<br />* End card orientation<br />* End card type<br /><br />**Notes:**<br /><br />* * End card data is available for the following partners: AppLovin, IronSource, Moloco, UnityAds, Snapchat, and YouAppi.<br />  * Currently, only ironSource, Unity Ads, and Snapchat provide the unique end card names. For all other partners, the end card names will appear identical to the creative names in the dashboards. |
+| End cards | This refers to an ad that may display at the end of video ads, and which usually contains basic information about the promoted app. The ability to group creatives by end cards gives additional insights for the optimization of creatives, such as comparing the same end card with different videos to identify the best combination. You can view creatives by the following end card data:<ul><li>End card name</li><li>End card ID</li><li>End card duration</li><li>End card resolution</li><li>End card orientation</li><li>End card type</li></ul>**Notes:**<ul><li>End card data is available for the following partners: AppLovin, IronSource, Moloco, UnityAds, Snapchat, and YouAppi.<ul><li>Currently, only ironSource, Unity Ads, and Snapchat provide the unique end card names. For all other partners, the end card names will appear identical to the creative names in the dashboards.</li></ul></li></ul> |
 
-### Custom metrics
+</Accordion>
+
+<div id="custom-metrics" />
+
+<Accordion title="Custom metrics">
 
 Create custom metrics to measure the performance of your creatives exactly how you like.
 
@@ -223,7 +253,11 @@ Custom metrics can also be edited or deleted.
 * After selecting the custom metric you wish to delete from the dropdown, click the delete icon.  
   ![](https://files.readme.io/8370c5bfec23ef2ac15e266e98be357e496aef51fa14ca5b4c853b0b38910a10-30129810517393.png)
 
-### Partner dimensions and metrics
+</Accordion>
+
+<div id="partner-dimensions-and-metrics" />
+
+<Accordion title="Partner dimensions and metrics">
 
 Partner metrics is performance data that comes directly from integrated media partners (and not from AppsFlyer attribution data). Metrics vary by partner and can include impressions, clicks, conversions, cost, and video play % metrics. The metrics can be selected in the filters, viewed throughout the dashboard and reports, and added to the table.
 
@@ -243,14 +277,16 @@ Add a new [partner integration](/docs/creative-optimization-partner-integrations
 
 **Special instructions and considerations:**
 
-#### AppLovin metrics
+<Accordion title="AppLovin metrics">
 
 **Note:**
 
 * Due to a restriction on the AppLovin API, only up to 45 days of historical data is available. AppsFlyer is typically able to display up to 90 days of historical data, however, because of the AppLovin restriction, only 45 days of AppLovin data is available.
 * AppsFlyer Creative data is aligned with the AppLovin probabilistic report (not the billable report).
 
-#### Google Ads metrics
+</Accordion>
+
+<Accordion title="Google Ads metrics">
 
 **Note:**
 
@@ -258,14 +294,18 @@ Add a new [partner integration](/docs/creative-optimization-partner-integrations
 * There will be differences between Google and AppsFlyer for all metrics. This is due to the fact that Google partner metrics are based on the Google asset view report while AppsFlyer data is aligned to the Google ad group view. These reports are not aligned with each other in terms of performance, for example, the total number of asset impressions under a specific ad group won't be equal to the total impressions that the ad group reports.
 * There are differences between the Creative product and Google AdWords platform; when comparing the asset view between the Google platform and AppsFlyer there may be slight differences due to: 1. Time zones (Creative is UTC+0). 2. Data freshness rate (the difference between event occurrence and data availability in the platform).
 
-#### Meta Ads metrics
+</Accordion>
+
+<Accordion title="Meta Ads metrics">
 
 **Note:**
 
 * There will be differences in the number of installs reported by Meta Ads and AppsFlyer due to different attribution logic.
 * Meta doesn't report installs on the asset level for iOS, so it's not available in Creative.
 
-#### Unity Ads metrics
+</Accordion>
+
+<Accordion title="Unity Ads metrics">
 
 **To get partner metrics from Unity Ads:**
 
@@ -298,7 +338,13 @@ Add a new [partner integration](/docs/creative-optimization-partner-integrations
 >
 > We recommend entering the partner metrics credentials when setting up a new partner integration. However, it's not mandatory. You can save the integration and add the credentials at a later time. But please note that we pull 90 days of partner data from the time the partner integration is created, so not entering the partner metric credentials may result in missing data.
 
-### Save and share views
+</Accordion>
+
+</Accordion>
+
+<div id="save-and-share-views" />
+
+<Accordion title="Save and share views">
 
 After selecting your filters, you can save your selections for quick and easy access to the info you want to see in the dashboards so there's no need to reselect the filters each time you log in. The saved view applies to both the Creative Optimization Overview and Discovery dashboards. You can save a dashboard view as private or shared. Shared views are visible to other account users. Additionally, you can share dashboard views with others via the share URL.
 
@@ -331,15 +377,17 @@ After selecting your filters, you can save your selections for quick and easy ac
   ![Copy_page_URL_with_cursor.jpg](https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg)  
   **Note**: View URLs can be shared even for private dashboards. When the private dashboard URL is opened, the report name that displays is "Unsaved Report".
 
+</Accordion>
+
 ## Custom tags
 
 Group and analyze your creatives based on tags that you upload or by the unique identifiers that are stored in file names. This section describes the different ways of creating custom tags, which appear as dimensions you can select in the filters and view throughout the dashboards.
 
-### Custom tags via CSV
+<Accordion title="Custom tags via CSV">
 
 You can add custom dimensions to the dashboard. These custom dimensions and the associated tagged creatives are added via CSV file and aligned with the current creatives used in the various campaigns. Use this feature to view, organize, sort, and filter creatives by any custom dimensions and tags you wish.
 
-### Create and manage custom dimensions
+<Accordion title="Create and manage custom dimensions">
 
 The process of creating and managing custom dimensions includes the following 3 actions:
 
@@ -369,13 +417,19 @@ Make the desired additions or changes to the file, then save it, and upload it b
 
 The data will be available in about 30 minutes.
 
-### Example CSV
+</Accordion>
+
+<Accordion title="Example CSV">
 
 Here's an example of a custom dimensions CSV file (that you download from the dashboard). Each column heading (in row 1) is the name of a custom dimension (for example: “Theme” or "Variant"). You can add additional dimensions or change the existing ones. You can also add or change the tags (for example: “3 Moves" or "DarkPalette").
 
 [![Screen_Shot_2022-08-08_at_16.25.23.png](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)
 
-### Custom dimension traits and limitations
+</Accordion>
+
+<div id="traits-and-limitations" />
+
+<Accordion title="Custom dimension traits and limitations">
 
 * Custom dimensions appear with a “Custom” tag in the filters and table.
 
@@ -388,13 +442,17 @@ Here's an example of a custom dimensions CSV file (that you download from the da
 * Each creative can have one tag per dimension. For example, if "Color" is the custom dimension, the tag can only be one color, such as red.
 * When creating or editing the custom dimensions, make sure not to change the creative\_id to avoid overwrites and discrepancies.
 
-### Name convention tags
+</Accordion>
+
+</Accordion>
+
+<Accordion title="Name convention tags">
 
 You can create custom tags based on your creative asset naming conventions. These custom tags will appear as dimensions you can select in the filters and view throughout the dashboard.
 
 This is useful for marketing and creative teams whose creatives are named intentionally, with unique identifiers built into the names. These creatives can automatically be tagged by the built-in identifiers, and grouped for analysis and optimization purposes.
 
-### Create and edit name convention tags
+<Accordion title="Create and edit name convention tags">
 
 **To create name convention tags:**
 
@@ -429,18 +487,26 @@ This is useful for marketing and creative teams whose creatives are named intent
 2. Click the  ![Delete icon.jpg](https://files.readme.io/a4bb54fefcdd474edbb897dc334b8219c36273fd5e4f45a03e1b39091856e137-18564742905873.jpg)  icon which appears when you hover to the right of your selection.  
    **Note:** The associated custom tags will no longer apply to your creatives. It may take a few hours for the change to take effect.
 
-### Name tag traits and limitations
+<Accordion title="Name tag traits and limitations">
 
 * You can create up to 10 different name convention types (and the associated custom tags).
 * If custom tags that have been uploaded via CSV file conflict with the name convention tags you've created, the uploaded CSV tags will take precedence and only those tags will apply.
 
+</Accordion>
+
+</Accordion>
+
+</Accordion>
+
 ## Additional information
 
-### Traits and limitations
+<Accordion title="Traits and limitations">
 
 | Trait | Remarks |
 | --- | --- |
 | Data source | The source of performance data in the Creative Optimization dashboards (aside from Partner metrics) comes from the AppsFlyer attribution model. **Note**: There are inherent differences in the attribution models used by the various advertising platforms and players in the mobile advertising ecosystem, which can explain reporting discrepancies between them. |
 | Multiple assets | For creatives that include multiple assets, only one asset is displayed (usually the video when applicable). |
-| Data freshness | The Creative Optimization Overview and Discovery dashboards update once daily at 10:00 UTC (refreshing creative data from the last 90 days).<br /><br />Depending on your time zone, the daily update occurs at:<br /><br />* New York: 5:00 AM EST / 6:00 AM EDT<br />* Berlin: 11:00 AM CET / 12:00 PM CEST<br />* Shanghai: 6:00 PM CST<br /><br />For other locations, convert 10:00 UTC to your local time zone.<br /><br />**Note:** Data in Creative Optimization updates once a day, whereas the main AppsFlyer Overview dashboard updates in real time, which may cause temporary discrepancies. |
+| Data freshness | The Creative Optimization Overview and Discovery dashboards update once daily at 10:00 UTC (refreshing creative data from the last 90 days).<br /><br />Depending on your time zone, the daily update occurs at:<ul><li>New York: 5:00 AM EST / 6:00 AM EDT</li><li>Berlin: 11:00 AM CET / 12:00 PM CEST</li><li>Shanghai: 6:00 PM CST</li></ul>For other locations, convert 10:00 UTC to your local time zone.<br /><br />**Note:** Data in Creative Optimization updates once a day, whereas the main AppsFlyer Overview dashboard updates in real time, which may cause temporary discrepancies. |
 | Currency | All monetary metrics in Creative Optimization are in USD. |
+
+</Accordion>

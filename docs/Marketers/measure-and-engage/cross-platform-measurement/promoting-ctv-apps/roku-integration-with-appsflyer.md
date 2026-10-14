@@ -50,7 +50,7 @@ Roku is a unique ad network that has ad inventory across both Connected TV (CTV)
 
 **Note:** There are some differences between iOS, Android, and Roku app settings.
 
-### Integration tab
+<Accordion title="Integration tab">
 
 #### General settings
 
@@ -97,16 +97,12 @@ Map AppsFlyer in-app events to Roku Ads events, sent via postbacks:
 1. Turn on **In-app event postbacks**.
 2. Click **Add event** to add an SDK or server-to-server event to the list. The following table describes the fields to complete:
 
-
-
 | Parameter name | Description |
 | --- | --- |
 | **AppsFlyer event** | Name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events. |
 | **Mapped to partner event** | Select from Roku’s pre-defined event list. See [suggested mapping](/docs/in-app-events-event-structure#predefined-event-names) of Appsflyer events to Roku Ads events.  <br />**Note:** Roku does not support sending custom events. |
-| **For users from** | * **This partner only** (default): Send postbacks only when this event is attributed to this partner.   <br />  Or<br />* **All media sources including organic:** Send postbacks for events attributed to any partner, as well as organic events. |
-| **Including** | * **No values & no revenue** (default): Send only the event itself without any event values.<br />* **Values & no revenue:** Send all the parameters excluding the revenue value.<br />* **Values & revenue:** Send all the event parameters, including the revenue value (if it exists in the event). |
-
-
+| **For users from** | <ul><li>**This partner only** (default): Send postbacks only when this event is attributed to this partner.<br />Or</li><li>**All media sources including organic:** Send postbacks for events attributed to any partner, as well as organic events.</li></ul> |
+| **Including** | <ul><li>**No values & no revenue** (default): Send only the event itself without any event values.</li><li>**Values & no revenue:** Send all the parameters excluding the revenue value.</li><li>**Values & revenue:** Send all the event parameters, including the revenue value (if it exists in the event).</li></ul> |
 
 * [Optional] Click the **Add condition** icon to set conditions for an event.
 * Click **Save integration**.
@@ -115,19 +111,27 @@ Map AppsFlyer in-app events to Roku Ads events, sent via postbacks:
   2. Select another app from the list.
   3. Repeat the setup for the selected app.
 
-### Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Attribution links aren't relevant for SRNs or Advanced SRNs.
 
-### Cost tab (for cost, clicks, and impressions)
+</Accordion>
+
+<Accordion title="Cost tab (for cost, clicks, and impressions)">
 
 Cost integration is not available for Roku Ads at this phase.
 
-### Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad revenue is not available for Roku Ads.
 
-### Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 In this tab, you can choose which permissions to grant Roku Ads—regardless of whether they act as an ad network, an agency, or both. Even if attribution is disabled for Roku Ads, the Permissions tab remains active, and you can still grant them access.
 
@@ -144,10 +148,7 @@ After enabling permissions for Roku Ads, you can add team members and assign the
 > * When you give Roku Ads permissions to configure the integration and change in-app event postbacks, you allow them to potentially access all attribution events, including organic and non-organic traffic from all media sources.
 > * Changes that Roku Ads makes override the current configuration, even if you (the advertiser) set them.
 
-
 #### Types of permissions advertisers can grant to Roku Ads
-
-
 
 | Permission | Capability granted |
 | --- | --- |
@@ -160,9 +161,9 @@ After enabling permissions for Roku Ads, you can add team members and assign the
 | View validation rules | Allow the partner to view your validation rule details. |
 | Access aggregate revenue data | Allow access to ad revenue data for UA optimization. |
 | Use Cost Import | Allow the partner to upload cost data using Cost Import. |
-| Access Protect360 dashboard & raw data | * Raw data access is available only if your subscription includes Protect360, Validation Rules, or Raw Data.<br />* Grants access to the Protect360 dashboard, including ProtectLITE.<br />* **Note:** ProtectLITE includes dashboard access but does not provide raw data access. |
+| Access Protect360 dashboard & raw data | <ul><li>Raw data access is available only if your subscription includes Protect360, Validation Rules, or Raw Data.</li><li>Grants access to the Protect360 dashboard, including ProtectLITE.</li><li>**Note:** ProtectLITE includes dashboard access but does not provide raw data access.</li></ul> |
 
-
+</Accordion>
 
 ## Setting up Roku Ads integration for agencies
 

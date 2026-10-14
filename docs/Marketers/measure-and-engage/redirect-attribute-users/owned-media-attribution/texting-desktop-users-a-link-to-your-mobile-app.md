@@ -32,9 +32,9 @@ To help them do so and for better user experience, you can text them a direct li
 
 This way, they don't have to open the app store on their mobile, find your app, and install it. When you save users time and effort, they are more likely to convert and install your mobile app.
 
-> 📘 Note
+> 📘 **Note**
 >
-> We offer another solution for desktop-to-web conversion that simply requires you to post a QR code (generated from your OneLink) to your desktop site.
+> We offer another solution for [desktop-to-web conversion](/docs/qr-to-app-conversion) that simply requires you to post a QR code (generated from your OneLink) to your desktop site.
 
 ## Requirements
 
@@ -54,13 +54,13 @@ Create an account with any SMS provider. Then, you can send links to your mobile
 
 See the list that follows for some popular providers that support a variety of programming languages and have comprehensive APIs for various use cases:
 
-- [Twilio](https://www.twilio.com/docs/sms/send-messages)
-- [bandwidth](https://dev.bandwidth.com/messaging/about.html)
-- [AWS SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-mobile-phone-number-as-subscriber.html)
-- [Braze](https://www.braze.com/docs/user_guide/message_building_by_channel/sms/create/)
-- [Airship](https://www.airship.com/platform/channels/sms/)
-- [Swrve](https://docs.swrve.com/user-documentation/campaigns/campaign-channels/intro-to-sms/)
-- [Mixpanel](https://help.mixpanel.com/hc/en-us/articles/115004730066-Send-SMS-Messages-From-Mixpanel)
+* [Twilio](https://www.twilio.com/docs/sms/send-messages)
+* [bandwidth](https://dev.bandwidth.com/messaging/about.html)
+* [AWS SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-mobile-phone-number-as-subscriber.html)
+* [Braze](https://www.braze.com/docs/user_guide/message_building_by_channel/sms/create/)
+* [Airship](https://www.airship.com/platform/channels/sms/)
+* [Swrve](https://docs.swrve.com/user-documentation/campaigns/campaign-channels/intro-to-sms/)
+* [Mixpanel](https://help.mixpanel.com/hc/en-us/articles/115004730066-Send-SMS-Messages-From-Mixpanel)
 
 ### A backend environment to communicate with the SMS provider
 
@@ -78,8 +78,8 @@ This section describes the flow of texting users a link to the app. It also expl
 
 Create a multi-platform OneLink to put in the SMS. When you create the link, you have the option to define the media source and campaign. We suggest that you set the media source and campaign as follows:
 
-- media source: website
-- campaign: text-me-the-app
+* media source: website
+* campaign: text-me-the-app
 
 When sending OneLink in SMS, it's best to use the short link version of the OneLink.
 
@@ -101,13 +101,13 @@ Refer to your SMS provider API and documentation to learn how to create the logi
 
 ## How Attribution works when sending a link to the app
 
-There's no way to include the advertising ID when texting desktop users a link to the app. Therefore, AppsFlyer resorts to [attribution using Probabilistic modeling](/docs/appsflyer-attribution-model#probabilistic-modeling).
+ There's no way to include the advertising ID when texting desktop users a link to the app. Therefore, AppsFlyer resorts to [attribution using Probabilistic modeling](/docs/appsflyer-attribution-model#probabilistic-modeling).
 
 AppsFlyer [limits the lookback window](/docs/set-up-lookback-windows#probabilistic-modeling-lookback-window) for Probabilistic modeling clicks to maintain accuracy. The limits are:
 
-- iOS: up to 24 hours
-- Android (Google Play): up to one hour
-- Android (out-of-store): up to 24 hours
+* iOS: up to 24 hours
+* Android (Google Play): up to one hour
+* Android (out-of-store): up to 24 hours
 
 Encourage your users to install as close as possible to the click so that AppsFlyer can accurately attribute the install to the texted link. You can do so by offering coupons, discounts, or game credits.
 

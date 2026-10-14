@@ -78,7 +78,6 @@ See [user journey raw data.](/docs/raw-data-reporting-overview#user-journey-repo
 > **Agency considerations**
 > Several major ad networks [restrict sharing their data with 3rd party platforms](/docs/user-level-data-retention), including agencies. Therefore, assisted installs do not appear in the agency dashboard for these networks.
 
-
 In raw data reports, data on the contributing networks is broken down into separate fields for **Contributors 1–3**.
 
 ### Total candidates field

@@ -38,29 +38,21 @@ The headline metrics display the total number of app installs relative to the nu
 
 Consider the use-case scenarios, in the table that follows, to Web-Assisted Installs analysis.
 
-
-
 | Install type | Journey to install | Considerations |
 | --- | --- | --- |
-| Total installs | All installs engaging—at some point—with a web media source. | * What is the contribution of web marketing relative to all app installs?<br />* How are web marketing efforts distributed between media sources and channels?<br />* What is the contribution, if any, of Smart Banners? |
-| Organic installs | App installs without engaging a mobile media source. | * What portion, if any, of organic installs are driven purely by web traffic?<br />* Which are the dominant media channels?<br />* What is the proportion between paid, owned, and earned media types? |
-| Non-organic installs | User journeys begin on the web. The app is installed later after engaging with a mobile campaign. | * What volume of non-organic installs is influenced by the web?<br />* What web media channels and types influence non-organic installs?<br />* Do your paid mobile media sources overlap with web media sources? |
-
-
+| Total installs | All installs engaging—at some point—with a web media source. | <ul><li>What is the contribution of web marketing relative to all app installs?</li><li>How are web marketing efforts distributed between media sources and channels?</li><li>What is the contribution, if any, of Smart Banners?</li></ul> |
+| Organic installs | App installs without engaging a mobile media source. | <ul><li>What portion, if any, of organic installs are driven purely by web traffic?</li><li>Which are the dominant media channels?</li><li>What is the proportion between paid, owned, and earned media types?</li></ul> |
+| Non-organic installs | User journeys begin on the web. The app is installed later after engaging with a mobile campaign. | <ul><li>What volume of non-organic installs is influenced by the web?</li><li>What web media channels and types influence non-organic installs?</li><li>Do your paid mobile media sources overlap with web media sources?</li></ul> |
 
 ## Web-Assisted Installs dashboard
 
 **To go to the Web-Assisted Installs dashboard:**
 
-
-
 | Option 1 | Option 2 |
 | --- | --- |
-| 1. In AppsFlyer, from the top menu, select **My Apps** *>* **View brand bundles**<br />2. Click PBA dashboard.<br />3. Go to the **Web-Assisted Installs** tab. | 1. In AppsFlyer, from the side menu, select **Analyze** > **People-based Attribution.**<br />2. Go to the **Web-Assisted Installs** tab. |
+| <ol><li>In AppsFlyer, from the top menu, select **My Apps** *>* **View brand bundles**</li><li>Click PBA dashboard.</li><li>Go to the **Web-Assisted Installs** tab.</li></ol> | <ol><li>In AppsFlyer, from the side menu, select **Analyze** > **People-based Attribution.**</li><li>Go to the **Web-Assisted Installs** tab.</li></ol> |
 
-
-
-### Website assisted installs and reinstalls
+<Accordion title="Website assisted installs and reinstalls">
 
 ![30day_us-en.png](https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png)
 
@@ -68,22 +60,24 @@ Installs are considered to have been influenced by a website if they occur withi
 
 For information about data freshness, see [PBA daily](/docs/about-data-freshness-and-timezone-support#pba-daily).
 
-### Dashboard features
+</Accordion>
+
+<Accordion title="Dashboard features">
 
 Use dashboard features to:
 
 * Understand and optimize the impact of web traffic campaigns on your app installs.
 * Enhance collaboration between non-organic app install campaigns and web marketing.
 
-
-
 | Feature | Description |
 | --- | --- |
-| Date picker & filters | ![Headfilter_us-en.jpg](https://files.readme.io/f86fd4671a8b2013bb2635f8553ba1bcb55bdade079da7ffbe1c5db55c29a832-360009607497.jpg)<br /><br />* Set a date range; it will include app installs during that time.<br />* Filtered data includes the most recent web visit before install.<br />* Learn about [setting filters and groupings.](/docs/using-pba-dashboards) |
-| Filters | Filter installs using the web visit, app install, or both using the media source filter. You can set multiple instances of the media source filter.<br /><br />![WebAssistMediaSource.jpg](https://files.readme.io/601e7ebf05da3a01f6d210ebd7fad9b2cc0e38bfe244457b84908e7cca07f2bf-360019757857.jpg)<br /><br />Example: Set the web visit media source filter to Google Search.<br /><br />**To set the media source filter to Google Search:**<br /><br />1. Add + filter type **Media Source**.<br />2. Select **Conversion**.<br />3. Select **Google Search**. |
-| Headline metrics | The headline metrics display the number of app installs by attribution source (organic or non-organic).<br /><br />Metrics are broken down by:<br /><br />* Organic: Installs occurring without engaging with a paid mobile media source.<br />* Non-organic: Installs occurring after engaging with a paid mobile media source. |
-| Web media channel | [![W2Amediachannel_us-en.jpg](https://files.readme.io/bb7417b789c5d12dc663794027098343cea3e9f1941dd3bc355c634ca1621518-360009607557.jpg)](https://files.readme.io/bb7417b789c5d12dc663794027098343cea3e9f1941dd3bc355c634ca1621518-360009607557.jpg)<br /><br />* Indicates web [media channel](/docs/pba-media-source-attribution-rules#media-source-channel) contributions that drove installs.<br />* Apply filters to evaluate the impact of different media channels. |
+| Date picker & filters | ![Headfilter_us-en.jpg](https://files.readme.io/f86fd4671a8b2013bb2635f8553ba1bcb55bdade079da7ffbe1c5db55c29a832-360009607497.jpg)<ul><li>Set a date range; it will include app installs during that time.</li><li>Filtered data includes the most recent web visit before install.</li><li>Learn about [setting filters and groupings.](/docs/using-pba-dashboards)</li></ul> |
+| Filters | Filter installs using the web visit, app install, or both using the media source filter. You can set multiple instances of the media source filter.<br /><br />![WebAssistMediaSource.jpg](https://files.readme.io/601e7ebf05da3a01f6d210ebd7fad9b2cc0e38bfe244457b84908e7cca07f2bf-360019757857.jpg)<br /><br />Example: Set the web visit media source filter to Google Search.<br /><br />**To set the media source filter to Google Search:**<ol><li>Add + filter type **Media Source**.</li><li>Select **Conversion**.</li><li>Select **Google Search**.</li></ol> |
+| Headline metrics | The headline metrics display the number of app installs by attribution source (organic or non-organic).<br /><br />Metrics are broken down by:<ul><li>Organic: Installs occurring without engaging with a paid mobile media source.</li><li>Non-organic: Installs occurring after engaging with a paid mobile media source.</li></ul> |
+| Web media channel | [![W2Amediachannel_us-en.jpg](https://files.readme.io/bb7417b789c5d12dc663794027098343cea3e9f1941dd3bc355c634ca1621518-360009607557.jpg)](https://files.readme.io/bb7417b789c5d12dc663794027098343cea3e9f1941dd3bc355c634ca1621518-360009607557.jpg)<ul><li>Indicates web [media channel](/docs/pba-media-source-attribution-rules#media-source-channel) contributions that drove installs.</li><li>Apply filters to evaluate the impact of different media channels.</li></ul> |
 | Web media source | [![W2Amediasource.jpg](https://files.readme.io/fd623e449a9c47a7cf933c2c760ce98917497db138975082fd677bb0e7d89aa9-360009607577.jpg)](https://files.readme.io/fd623e449a9c47a7cf933c2c760ce98917497db138975082fd677bb0e7d89aa9-360009607577.jpg)<br /><br />Indicates web media source contributions that drove users to install the app. |
 | Web-Assisted Installs over time | [![W2Atable.jpg](https://files.readme.io/0b649fb448027a4597140fd86b90f59af76b5a0618d41c8acee35f54152f32f7-360009706658.jpg)](https://files.readme.io/0b649fb448027a4597140fd86b90f59af76b5a0618d41c8acee35f54152f32f7-360009706658.jpg)<br /><br />Select a view—media source or media channel—to view web activity over time. |
-| Installs table | [![WebsiteAttributionTable_us-en.png](https://files.readme.io/be34ee2977015735fd2d83560e2f5559e5fe96c1b74dd99864124af54cc345f1-4402586301585.png)](https://files.readme.io/be34ee2977015735fd2d83560e2f5559e5fe96c1b74dd99864124af54cc345f1-4402586301585.png)<br /><br />* The table indicates the interaction between the web and mobile media sources.<br />* Metrics, available as a combination of web/mobile media sources, indicate the position of the web media source:<br />  * **Installs:** Number indicates installs whose web media source is considered the last non-direct web visit.<br />  * Select a media source, web or mobile, to drill down to the campaign level. |
+| Installs table | [![WebsiteAttributionTable_us-en.png](https://files.readme.io/be34ee2977015735fd2d83560e2f5559e5fe96c1b74dd99864124af54cc345f1-4402586301585.png)](https://files.readme.io/be34ee2977015735fd2d83560e2f5559e5fe96c1b74dd99864124af54cc345f1-4402586301585.png)<ul><li>The table indicates the interaction between the web and mobile media sources.</li><li>Metrics, available as a combination of web/mobile media sources, indicate the position of the web media source:<ul><li>**Installs:** Number indicates installs whose web media source is considered the last non-direct web visit.</li><li>Select a media source, web or mobile, to drill down to the campaign level.</li></ul></li></ul> |
 | Export CSV | Click **Export CSV** to export the Installs table. |
+
+</Accordion>

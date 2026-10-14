@@ -38,11 +38,9 @@ Learn more about [mapping events on Meta](/docs/meta-ads-integration-setup#inapp
 
 [![In-app_event_postbacks_en-us.png](https://files.readme.io/ea80246ce8005c4150c70790aefb26aa6a73b5b5ae0eb07f90dcad8b50f2f1a8-37750374219153.png)](https://files.readme.io/ea80246ce8005c4150c70790aefb26aa6a73b5b5ae0eb07f90dcad8b50f2f1a8-37750374219153.png)
 
-Note that there's no predefined event for sending uninstalls to Meta ads. To send uninstalls, use a [custom event](/docs/meta-ads-in-app-event-mapping#custom-inapp-events-mapping).
+Note that there's no predefined event for sending uninstalls to Meta ads. To send uninstalls, use a [custom event](/docs/meta-ads-in-app-event-mapping#custom-in-app-events-mapping).
 
 Below is the list of other predefined Meta events that don't have additional parameters:
-
-
 
 | Meta event identifier | Description | Recommended AppsFlyer SDK name |
 | --- | --- | --- |
@@ -54,17 +52,11 @@ Below is the list of other predefined Meta events that don't have additional par
 | CustomizeProduct | The customization of products through a configuration tool or other application your business owns. | af\_customize\_product |
 | `Adimpression`—for Android  <br />`Fb_mobile_purchase`—for iOS | Optimizes ad revenue on the Meta ads platform. [See details below](#mapping-ad-revenue-data-for-campaign-optimization). | af\_ad\_revenue |
 
-
-
 ### Mapping ad revenue data for campaign optimization
 
 Meta ads can optimize your campaigns based on your ad revenue data. This is done by mapping the af\_ad\_revenue event to the following Meta ads event:
 
-
-
 <table><colgroup><col/><col/><col/><col/></colgroup><thead><tr><th><strong>Event name in AppsFlyer</strong></th><th><strong>Platform </strong></th><th><strong>Mapped to partner event</strong></th><th><strong>Meta ads optimization based on:</strong></th></tr></thead><tbody><tr><td rowspan="2"><br/>af_ad_revenue</td><td>Android</td><td>Adimpression</td><td>Specific ad revenue</td></tr><tr><td>iOS</td><td>fb_mobile_purchase</td><td>In-app purchases</td></tr></tbody></table>
-
-
 
 #### Availability limitations
 
@@ -96,10 +88,7 @@ Through the AppsFlyer deep integration with Meta, many of the AppsFlyer standard
 >
 > For events mapped to CUSTOM, **af\_price** is always mapped to **fb\_price**, and **af\_revenue** to **\_valueToSum**.
 
-
 The following table details all the AppsFlyer event parameters, which when mapped through the CUSTOM event to Meta, are automatically mapped to Meta parameters.
-
-
 
 | AppsFlyer Parameter | Meta Parameter |
 | --- | --- |
@@ -146,15 +135,11 @@ The following table details all the AppsFlyer event parameters, which when mappe
 | af\_travel\_start | fb\_travel\_start |
 | af\_user\_score | fb\_user\_score |
 
-
-
 #### Predefined events automatic mapping to the `_valueToSum` parameter
 
 For predefined events, the Meta parameter `_valueToSum` is mapped either to the `af_price` or to the `af_revenue` parameters.
 
 The following table details this mapping for all predefined Meta events with the `_valueToSum` parameter:
-
-
 
 | **Meta event** | **\_valueToSum mapped to** |
 | --- | --- |
@@ -173,8 +158,6 @@ The following table details this mapping for all predefined Meta events with the
 | fb\_mobile\_content\_view | af\_price |
 | StartTrial | af\_price |
 | Subscribe | af\_revenue |
-
-
 
 ### Send complex in-app events to Meta ads
 
@@ -203,13 +186,11 @@ If you do include `af_content_list`, do not also include `af_content_id` in the 
 > }
 > ```
 
-
 This format works for both Meta and TikTok. TikTok also reads `id` values from the `af_content` field, so a single payload is sufficient when postbacking to both networks.
 
 > 📘 **Important!**
 >
 > If the `af_content` parameter exceeds 1,000 characters, AppsFlyer may send the event to Meta without the `fb_content` parameter. If `af_content_list` is also absent in that scenario, Meta receives no product identification data. Keep `af_content` under 1,000 characters for events that include many items.
-
 
 For more details about structuring complex in-app events, see the [In-app events: Overview](/docs/in-app-events-overview#what-are-complex-inapp-events-and-how-do-i-set-them-up) article.
 

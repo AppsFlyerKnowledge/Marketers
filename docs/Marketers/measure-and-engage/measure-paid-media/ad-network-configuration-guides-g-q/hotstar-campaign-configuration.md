@@ -45,7 +45,7 @@ an account, contact the partner to open one before setting up the integration.
    more about
    [partner integrations.](/docs/set-up-an-integrated-partner)
 
-### Integration tab
+<Accordion title="Integration tab">
 
 Connect to Hotstar by activating and setting parameters in the integration tab.
 
@@ -61,44 +61,34 @@ Connect to Hotstar by activating and setting parameters in the integration tab.
    * Sending option: **Only events attributed to this partner** can be sent to Hotstar.
    * Click **Add event** to add an SDK event to the list. Complete the parameters as described in the following table.
 
-
-
 | Setting name | Description |
 | --- | --- |
-| SDK event name | Event name received by AppsFlyer from:<br /><br />* SDK integrated into the app<br />* Server-to-server events<br /><br />**Tip:** If a needed event isn't in the list, perform a non-organic installation on a device, then check again. |
+| SDK event name | Event name received by AppsFlyer from:<ul><li>SDK integrated into the app</li><li>Server-to-server events</li></ul>**Tip:** If a needed event isn't in the list, perform a non-organic installation on a device, then check again. |
 | Partner event identifier | Unique event name or ID as defined by Hotstar. Get from Hotstar event ID corresponding to your SDK event and insert it in the text field. |
 | Send revenue | [Default] **Not enabled:** Send all the in-app parameters to Hotstar, except for the revenue parameter (`af_revenue`).<br /><br />**Enabled**: Send all the in-app parameters including, when available, the revenue amount. |
 
+</Accordion>
 
-
-### Attribution link tab
+<Accordion title="Attribution link tab">
 
 Generate click and impression attribution links to be used by Hotstar. The following table explains the difference between click link and impression link, as well as the relevance of lookback windows.
-
-
 
 | Attribution link type | Link activation | Lookback window |
 | --- | --- | --- |
 | Click | A lead clicks on an ad served by Hotstar | The **click-through** lookback window is the **maximum time from click to install**.<br /><br />Hotstar gets an attribution if a lead clicks and installs an app before the lookback window expires.<br /><br />**Parameter name**: `af_click_lookback`  <br />**Default value**: 7 days  <br />**Range:** 1-23 hours or 1-30 days |
 | Impression | A lead views an ad (for at least 1 second) served by Hotstar | The **view-through** lookback window is the **maximum time from impression to install**.<br /><br />Hotstar gets an attribution if a lead views (impression) an app and then installs before the lookback window expires. This applies if there are no other relevant ad clicks.<br /><br />**Parameter name**: `af_viewthrough_lookback`  <br />**Default value**: 1 day  <br />**Range:** 1-23 hours or 1-7 days |
 
-
-
 Learn more about[link structure and parameters](/docs/about-link-structure-and-parameters).
 
 **Typical link parameters:**
-
-
 
 | Parameter | Parameter name | Description |
 | --- | --- | --- |
 | Campaign | c | Name of the campaign |
 | Ad set | af\_adset | Name of the ad set. Use to differentiate between ad sets within a campaign |
 | Ad name | af\_ad | Name of the specific ad. Use to differentiate between creatives within an ad set |
-| Site ID | af\_siteid  <br />af\_sub\_siteid | Publisher ID used to attribute installs to specific publishers.<br /><br />**Good practice!** If there are many publishers,<br /><br />* Limit the number of site IDs in use.<br />* Use the subsite ID parameter to avoid [exceeding the site ID limit](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit). |
-| Subscriber parameters | af\_sub1 up to af\_sub5 | Use to insert values:<br /><br />* Parameters are parsed and included in the raw data report.<br />* Use them to perform data aggregation or filtering. |
-
-
+| Site ID | af\_siteid  <br />af\_sub\_siteid | Publisher ID used to attribute installs to specific publishers.<br /><br />**Good practice!** If there are many publishers,<ul><li>Limit the number of site IDs in use.</li><li>Use the subsite ID parameter to avoid [exceeding the site ID limit](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit).</li></ul> |
+| Subscriber parameters | af\_sub1 up to af\_sub5 | Use to insert values:<ul><li>Parameters are parsed and included in the raw data report.</li><li>Use them to perform data aggregation or filtering.</li></ul> |
 
 **To generate the attribution links**:
 
@@ -109,15 +99,21 @@ Learn more about[link structure and parameters](/docs/about-link-structure-and-p
 5. Copy the click and impression attribution links to use in your Hotstar campaigns.  
    **Note**: AppsFlyer does not save partner links.
 
-### Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost attribution is not available for this partner.
 
-### Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad revenue attribution is not available for this partner.
 
-### Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 You can give Hotstar permission to view information or configure changes in the integration. The type of permission varies according to the business relationship (ad network/ad agency) you have with Hotstar.
 
@@ -137,3 +133,5 @@ You can give Hotstar permission to view information or configure changes in the 
    * **Allow access to your aggregate revenue data** - only to the revenue data attributed to the partner
    * **Allow spend ingestion** - is at the app level.
    * **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser.
+
+</Accordion>

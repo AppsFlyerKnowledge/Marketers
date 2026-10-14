@@ -39,7 +39,6 @@ OneLink API is a premium feature that lets you turn any owned channel into a dir
 >
 > A global travel app generates millions of contextual short links daily across CRM, email, and QR experiences. Using OneLink API v2.0, their automation platform builds per-user deep links that respect locale, loyalty tier, and specific in-app destinations — while maintaining governance and consistent measurement across all markets.
 
-
 ## Get started
 
 **To get started using OneLink API, follow the steps below:**
@@ -49,7 +48,7 @@ OneLink API is a premium feature that lets you turn any owned channel into a dir
 **To set up OneLink API:**
 
 1. Generate the [OneLink API token](/docs/managing-appsflyer-tokens#token-types) (Admin permissions needed).
-2. [Create a OneLink template](/docs/create-a-onelink-template#procedures).
+2. [Create a OneLink template](/docs/create-a-onelink-template#create-a-onelink-template).
 3. Copy the Template ID.   
    [![](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)
 4. Share the template ID and API token with the developer and have them follow these [instructions](https://dev.appsflyer.com/hc/reference/onelinkapi_v2_overview).
@@ -66,41 +65,46 @@ In AppsFlyer, from the side menu, select **Engage** > **OneLink API**.
 
 The following use cases highlight common ways to use OneLink API to create seamless, contextual journeys into your app.
 
-### Cross-platform journeys (CTV, desktop, web-to-app)
+<Accordion title="Cross-platform journeys (CTV, desktop, web-to-app)">
 
 Generate short-lived or per-session links that help users move seamlessly across devices. Common examples include QR codes on TV spots or “scan to continue” flows on desktop that take users directly to the correct in-app step.
 
 **Value:** Seamless continuity and improved conversion across devices.
 
-### CRM-powered channels (SMS, email, WhatsApp)
+</Accordion>
+
+<Accordion title="CRM-powered channels (SMS, email, WhatsApp)">
 
 Create per-user, personalized short links at send-time for high-intent messages such as price-drop alerts, waitlists, win-backs, bill reminders, or magic sign-in flows.
 
 **Value:** Personalization at scale with consistent attribution.
 
-### Offline and QR-based engagement
+</Accordion>
+
+<Accordion title="Offline and QR-based engagement">
 
 Produce scannable links for in-store materials, receipts, packaging, or event signage. You can update destination settings without reprinting physical assets.
 
 **Value:** Dynamic routing and offline attribution without reprinting physical assets.
 
-### Referral and advocate sharing
+</Accordion>
+
+<Accordion title="Referral and advocate sharing">
 
 Enable shareable short links for influencer, creator, or customer referral programs with customizable parameters and attribution-ready routing.
 
 **Value:** Scalable measurement and accurate attribution for referrals.
 
+</Accordion>
+
 ## **Traits and limitations**
 
 This section lists some of the key OneLink API traits and limitations. See a [complete and detailed list](https://dev.appsflyer.com/hc/reference/onelinkapi_v2_overview).
 
-
-
 | Trait | Remarks |
 | --- | --- |
-| API quota limit | * The limit for using the OneLink API to create, edit, or delete OneLink links is 7.5 million requests per month (UTC timezone), per account.<br />* POST, PUT, and DELETE requests count towards this limit. GET requests and GET QR requests do not count toward the quota.<br />* All requests made after exceeding this quota are not served; the API call receives status code 429 with the message "Monthly quota exceeded".<br />* You can check how much of the quota is used/remaining by either:  <br />  • Visiting the OneLink API page in the AppsFlyer platform to view usage history from the past 4 months, or  <br />  • Using the GET quota API to retrieve your current quota status.  <br />  You can also use the [GET quota API](https://dev.appsflyer.com/hc/reference/get-onelink-v2-link-quota) to trigger internal alerts when your usage nears your defined threshold. |
-| Link visibility | * Links created via the API do not appear in the list of OneLink custom links in the AppsFlyer dashboard.<br /><br />  **Best practice:** Save API-created links to a local table, so you can access the links for any future purpose. |
-
+| API quota limit | <ul><li>The limit for using the OneLink API to create, edit, or delete OneLink links is 7.5 million requests per month (UTC timezone), per account.</li><li>POST, PUT, and DELETE requests count towards this limit. GET requests and GET QR requests do not count toward the quota.</li><li>All requests made after exceeding this quota are not served; the API call receives status code 429 with the message "Monthly quota exceeded".</li><li>You can check how much of the quota is used/remaining by either:<br />• Visiting the OneLink API page in the AppsFlyer platform to view usage history from the past 4 months, or<br />• Using the GET quota API to retrieve your current quota status.<br />You can also use the [GET quota API](https://dev.appsflyer.com/hc/reference/get-onelink-v2-link-quota) to trigger internal alerts when your usage nears your defined threshold.</li></ul> |
+| Link visibility | <ul><li>Links created via the API do not appear in the list of OneLink custom links in the AppsFlyer dashboard.</li></ul>**Best practice:** Save API-created links to a local table, so you can access the links for any future purpose. |
 
 > 📘 **Note**
 >

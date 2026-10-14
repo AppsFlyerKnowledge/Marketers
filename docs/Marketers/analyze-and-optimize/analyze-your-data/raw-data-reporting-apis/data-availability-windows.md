@@ -22,14 +22,11 @@ x-zendesk:
   created_at: '2022-01-04T03:33:13Z'
   edited_at: '2026-07-15T08:18:16Z'
 ---
-> 📘 Difference between availability and retention
->
-> The terms **availability window** and **data retention** mean different things. [Data retention](https://www.appsflyer.com/legal/services-privacy-policy/) relates to the period we keep raw data on our servers and is of longer duration than the availability window.
+## Data availability windows
 
-> 📘 Good to know
->
-> * The window duration depends on your subscription package.
-> * The article doesn't apply to [Data Locker](/docs/data-locker-for-marketers).
+* The terms **availability window** and **data retention** mean different things. [Data retention](https://www.appsflyer.com/legal/services-privacy-policy/) relates to the period we keep raw data on our servers and is of longer duration than the availability window.
+* The window duration depends on your subscription package.
+* The article doesn't apply to [Data Locker](/docs/data-locker-for-marketers).
 
 ### Raw data availability window
 
@@ -48,8 +45,6 @@ An availability window limits data provided by Pull API and the Aggregated Data 
 | --- | --- |
 | Aggregated reports | 25 months (2 years + 1 month), [starting with the first app install](/docs/bulletin-aggregated-ltv-data-availability) |
 
-<Cards>
-  <Card title="Report generation quotas" href="/docs/report-generation-quotas-rate-limitations" icon="fa-solid fa-chart-column">
-    View the report generation quotas and limits for your account.
-  </Card>
-</Cards>
+> 📘 **See also**
+>
+> * [Report generation quotas](/docs/report-generation-quotas-rate-limitations)

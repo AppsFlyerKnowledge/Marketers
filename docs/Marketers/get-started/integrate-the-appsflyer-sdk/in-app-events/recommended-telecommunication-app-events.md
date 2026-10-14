@@ -34,13 +34,12 @@ Recording these events can help you determine:
 
 > 📘 **Important!**
 >
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
+> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=telecommunication). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
 > * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=telecommunication&view=code) for iOS, Android, and Unity developers.
 > * Detailed instructions for your developer can be found in the  **[AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).**
 >
 > For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
-
 
 [![Flowchart_for_recommended_events_telecommunication_app_user_journey](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)
 
@@ -48,7 +47,9 @@ Recording these events can help you determine:
 
 The following section provides a list of event structures that are typical to the telecommunication vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs
 
-### Login (af\_login)
+<div id="login-af_login" />
+
+<Accordion title="Login (af_login)">
 
 **Purpose**
 
@@ -62,7 +63,11 @@ Whenever the user successfully logs in
 
 Can be sent without any additional parameters
 
-### Complete registration (af\_complete\_registration)
+</Accordion>
+
+<div id="complete-registration-af_complete_registration" />
+
+<Accordion title="Complete registration (af_complete_registration)">
 
 **Purpose**
 
@@ -74,15 +79,13 @@ When the user completes the signup process
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_registration\_method | Type of signup method | email, Facebook |
 
+</Accordion>
 
-
-### Content view (af\_content\_view)
+<Accordion title="Content view (af_content_view)">
 
 **Purpose**
 
@@ -98,8 +101,6 @@ When the user views a specific product details page
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_price | Product price | 200 |
@@ -107,9 +108,9 @@ When the user views a specific product details page
 | af\_content\_type | Product category | Internet packages |
 | af\_currency | Currency in the product details page | THB, USD |
 
+</Accordion>
 
-
-### List view (af\_list\_view)
+<Accordion title="List view (af_list_view)">
 
 **Purpose**
 
@@ -121,16 +122,16 @@ When the user views a specific list
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_content\_type | Type of list | Related, recommended, new arrivals |
 | af\_content\_list | List of content IDs from the category | 001, 092 |
 
+</Accordion>
 
+<div id="purchase-af_purchase" />
 
-### Purchase (af\_purchase)
+<Accordion title="Purchase (af_purchase)">
 
 **Purpose**
 
@@ -146,23 +147,21 @@ When the user lands on the thank you page after a successful purchase
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Estimated revenue from the purchase | 2050.50 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Estimated revenue from the purchase | 2050.50 |
 | af\_currency | Currency code | THB |
 | af\_content\_type | Name of the package bought | 5G |
 | af\_order\_id | Order ID | 9277 |
 | payment\_method\_type | Type of payment method | credit card, local payment |
 
-
+</Accordion>
 
 ## Recommended structures for custom events
 
 The following section provides an event structure that includes a custom event name and the suggested event parameter to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Select package (select\_package)
+<Accordion title="Select package (select_package)">
 
 **Purpose**
 
@@ -174,16 +173,14 @@ When the user selects a package but has not completed the payment
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | price | Price of the subscription | 50000 |
 | af\_content\_type | Type of content the user selected | Data 5 GB |
 
+</Accordion>
 
-
-### Top-up success (top\_up\_success)
+<Accordion title="Top-up success (top_up_success)">
 
 **Purpose**
 
@@ -195,17 +192,15 @@ When the user completes the top-up
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Amount of the top-up | 2050.50 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Amount of the top-up | 2050.50 |
 | top\_up\_id | ID of the top-up | 397 |
 | payment\_method\_type | Type of payment method | credit card, local payment |
 
+</Accordion>
 
-
-### Top-up unsuccessful (top\_up\_unsuccessful)
+<Accordion title="Top-up unsuccessful (top_up_unsuccessful)">
 
 **Purpose**
 
@@ -217,15 +212,13 @@ When the user tries to top up but the action fails
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | error\_reason | Reason for the top-up failure | exceeded\_daily\_limit |
 
+</Accordion>
 
-
-### Subscription complete (subscription\_complete)
+<Accordion title="Subscription complete (subscription_complete)">
 
 **Purpose**
 
@@ -242,9 +235,9 @@ Recording this event can help you:
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | subscription\_type | Type of subscription | Monthly 30 GB |
-| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Amount of the subscription | 555.50 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Amount of the subscription | 555.50 |
+
+</Accordion>

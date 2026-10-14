@@ -38,10 +38,12 @@ Integration means that:
 * Postbacks of the format required by you are sent to your endpoints.
 * You can access AppsFlyer features like click signing, Protect360, Data Locker, and so on.
 
-### If you need help
+<Accordion title="If you need help">
 
 * Look at the partner [FAQ](/docs/integrated-partners-faq)
 * Consult the [Integration change requests](/docs/integration-requests-for-partners) article
+
+</Accordion>
 
 Consider:
 
@@ -58,17 +60,11 @@ Consider:
 
 ### Part 1: Integration and testing
 
-
-
-<table><thead><tr><th>Action</th><th>Minutes required</th></tr></thead><tbody><tr><td>Wait for your registration approval email inviting you to complete the mandatory integration steps.</td><td>--</td></tr><tr><td colspan="2"><strong>Mandatory integration steps</strong> </td></tr><tr><td><a href="./self-serve-integration-management-for-ad-networks#attribution-link">Specify your attribution link</a>: Attribution links are URLs with macros. These macros are populated by you with actual values and sent to AppsFlyer each time a user clicks on a link. <br/>Note! If you use a performance network platform supported by AppsFlyer, you must consider the platform-specific instructions provided. See <a href="./platforms-for-ad-networks">Performance network guides.</a></td><td>60</td></tr><tr><td><a href="./self-serve-integration-management-for-ad-networks#default-postback">Specify postback macros</a>: Postbacks are URLs containing macros populated by AppsFlyer and sent to your servers in real-time after each conversion.</td><td>60</td></tr><tr><td>Log in to the <a href="https://hq1.appsflyer.com/auth/login">AppsFlyer dashboard</a> using the credentials provided. </td><td> </td></tr><tr><td><p>Upload your company logo. Your logo must have the format 200 X 50 transparent PNG. </p><ol><li>In AppsFlyer, in the menu bar, select your email address &gt; <strong>Partner Setup</strong>. </li><li>On the <strong>Profile</strong> tab, upload your company logo. </li><li>Click <strong>Save</strong>.</li></ol></td><td>5</td></tr><tr><td><p>Test the integration using AppsFlyer test apps:</p><ul><li><a href="./android-integration-testing-for-ad-networks">Android</a></li><li><a href="./ios-integration-testing-for-ad-networks">iOS</a></li></ul></td><td>10</td></tr><tr><td colspan="2"><strong>Optional integration steps</strong></td></tr><tr><td>[iOS] If your advertisers require AppsFlyer Aggregated Advanced Privacy, complete <a href="./self-serve-integration-management-for-ad-networks#advanced-privacy-and-skan-postbacks">Advanced Privacy</a> integration.</td><td>60</td></tr><tr><td>[iOS] If you run SKAdNetwork campaigns, complete<a href="./self-serve-integration-management-for-ad-networks#advanced-privacy-and-skan-postbacks"> SKAdNetwork integration.</a></td><td>60</td></tr><tr><td><h4><strong>Authorized agencies</strong></h4><p>Create and manage a list of agencies you approve to run campaigns through your network integration. This is done by entering their agency ID (af_prt) in the <a href="./set-up-your-list-of-authorized-agencies"><strong>Authorized agencies</strong></a> section of the Security center. To obtain the agency ID, the agency must contact you and provide it.</p></td><td>2</td></tr><tr><td colspan="2"><p><strong>Optional features and considerations</strong><br/> </p><p>Consider implementing integrations and options based on advertiser requirements.</p></td></tr><tr><td>To make sure that fraudulent clicks aren't sent using your partner identifier, implement <a href="./click-signing-for-ad-networks">click signing.</a></td><td>60+</td></tr><tr><td>For advertisers that implement Protect360 or validation rules, add <a href="./postback-macros-for-ad-networks#macros%E2%80%94installs-inapp-events-and-rejected-events">rejected attribution postbacks</a>.</td><td>15</td></tr><tr><td>Send cost to AppsFlyer by API. See <a href="./incost-api-for-ad-networks">InCost API</a>.</td><td>60+</td></tr><tr><td><a href="./retargeting-attribution-guide">Retargeting integration</a>.</td><td>15</td></tr><tr><td><a href="./measure-view-through-engagements">View-through attribution integration</a>.</td><td>15</td></tr></tbody></table>
-
-
+<table><thead><tr><th>Action</th><th>Minutes required</th></tr></thead><tbody><tr><td>Wait for your registration approval email inviting you to complete the mandatory integration steps.</td><td>--</td></tr><tr><td colspan="2"><strong>Mandatory integration steps</strong> </td></tr><tr><td><a href="./self-serve-integration-management-for-ad-networks#attribution-link">Specify your attribution link</a>: Attribution links are URLs with macros. These macros are populated by you with actual values and sent to AppsFlyer each time a user clicks on a link. <br/>Note! If you use a performance network platform supported by AppsFlyer, you must consider the platform-specific instructions provided. See <a href="./platforms-for-ad-networks">Performance network guides.</a></td><td>60</td></tr><tr><td><a href="./self-serve-integration-management-for-ad-networks#default-postback">Specify postback macros</a>: Postbacks are URLs containing macros populated by AppsFlyer and sent to your servers in real-time after each conversion.</td><td>60</td></tr><tr><td>Log in to the <a href="https://hq1.appsflyer.com/auth/login">AppsFlyer dashboard</a> using the credentials provided. </td><td> </td></tr><tr><td><p>Upload your company logo. Your logo must have the format 200 X 50 transparent PNG. </p><ol><li>In AppsFlyer, in the menu bar, select your email address &gt; <strong>Partner Setup</strong>. </li><li>On the <strong>Profile</strong> tab, upload your company logo. </li><li>Click <strong>Save</strong>.</li></ol></td><td>5</td></tr><tr><td><p>Test the integration using AppsFlyer test apps:</p><ul><li><a href="./android-integration-testing-for-ad-networks">Android</a></li><li><a href="./ios-integration-testing-for-ad-networks">iOS</a></li></ul></td><td>10</td></tr><tr><td colspan="2"><strong>Optional integration steps</strong></td></tr><tr><td>[iOS] If your advertisers require AppsFlyer Aggregated Advanced Privacy, complete <a href="./self-serve-integration-management-for-ad-networks#advanced-privacy-and-skan-postbacks">Advanced Privacy</a> integration.</td><td>60</td></tr><tr><td>[iOS] If you run SKAdNetwork campaigns, complete<a href="./self-serve-integration-management-for-ad-networks#advanced-privacy-and-skan-postbacks"> SKAdNetwork integration.</a></td><td>60</td></tr><tr><td><h4><strong>Authorized agencies</strong></h4><p>Create and manage a list of agencies you approve to run campaigns through your network integration. This is done by entering their agency ID (af_prt) in the <a href="./set-up-your-list-of-authorized-agencies"><strong>Authorized agencies</strong></a> section of the Security center. To obtain the agency ID, the agency must contact you and provide it.</p></td><td>2</td></tr><tr><td colspan="2"><p><strong>Optional features and considerations</strong><br/> </p><p>Consider implementing integrations and options based on advertiser requirements.</p></td></tr><tr><td>To make sure that fraudulent clicks aren't sent using your partner identifier, implement <a href="./click-signing-for-ad-networks">click signing.</a></td><td>60+</td></tr><tr><td>For advertisers that implement Protect360 or validation rules, add <a href="./postback-macros-for-ad-networks#macrosinstalls-in-app-events-and-rejected-events">rejected attribution postbacks</a>.</td><td>15</td></tr><tr><td>Send cost to AppsFlyer by API. See <a href="./incost-api-for-ad-networks">InCost API</a>.</td><td>60+</td></tr><tr><td><a href="./retargeting-attribution-guide">Retargeting integration</a>.</td><td>15</td></tr><tr><td><a href="./measure-view-through-engagements">View-through attribution integration</a>.</td><td>15</td></tr></tbody></table>
 
 ### Part 2: Test using advertiser apps
 
 In this part, you'll be testing your integration using an app that belongs to an advertiser. As such, you must contact the advertiser and ask them to complete some of the steps in this part. In this part, regard references to advertisers can also mean agencies if they are acting on behalf of an advertiser.
-
-
 
 | Performed by | Action | Minutes required |
 | --- | --- | --- |
@@ -78,11 +74,7 @@ In this part, you'll be testing your integration using an app that belongs to an
 | Advertiser (admin) | [Register your test devices](/docs/registering-test-devices). Ask the advertiser to do this on your behalf. | 3 |
 | Ad networks | [Test the integration using advertiser apps.](/docs/test-marketer-campaign-integration-with-the-ad-network) | 60 |
 
-
-
 ### Part 3: AppsFlyer dashboard and reporting options
-
-
 
 | Option |
 | --- |
@@ -90,15 +82,11 @@ In this part, you'll be testing your integration using an app that belongs to an
 | Get aggregated performance data via cloud storage with [Data Locker](/docs/data-locker-for-partners) for ad networks. |
 | Get Protect360 [raw data.](/docs/raw-data-export-page) |
 
-
-
 ## Integration validation period
 
 To ensure the integrity of the AppsFlyer ecosystem and protect internal systems from invalid traffic, all new ad network integrations undergo a validation period. During this period, AppsFlyer thoroughly verifies the traffic and evaluates its quality before making the integration available to other advertisers in the [Marketplace](/docs/partner-integrations). Ad network integrations that don’t meet high-quality traffic criteria will face removal.
 
 ### Validation period—FAQ
-
-
 
 | **Question** | **Answer** |
 | --- | --- |

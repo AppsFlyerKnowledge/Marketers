@@ -26,22 +26,20 @@ x-zendesk:
 >
 > ROI360 store revenue is available only to customers on the ROI360 premium plan. To check your plan or upgrade, contact your Customer Success Manager (CSM).
 
-
 ## Overview
 
 > 📘 **Note**
 >
 > For more information about ROI360, including how it works and how to enable it in AppsFlyer, see [About ROI360 Store revenue](/docs/about-roi360-store-revenue).
 
-
 To set up ROI360 Store Revenue, complete the following steps in order:
 
 1. Set up store credentials (iOS and Android):
-   * [iOS**:**](#step-1-ios-set-up-app-store-connect-keys) Configure App Store Connect keys (In-App Purchase key, Key ID, and Issuer ID) in AppsFlyer.
-   * [Android](#step-1-android-set-up-service-account-key-and-permissions)**:** Configure a Google Cloud service account, set the required permissions in Google Play Console, and upload the service account JSON key to AppsFlyer.
+   * [iOS:](#step-1-ios-set-up-app-store-connect-keys) Configure App Store Connect keys (In-App Purchase key, Key ID, and Issuer ID) in AppsFlyer.
+   * [Android](#step-1-android-set-up-service-account-key-and-permissions): Configure a Google Cloud service account, set the required permissions in Google Play Console, and upload the service account JSON key to AppsFlyer.
 2. Configure server notifications (iOS and Android):
-   * [iOS](#step-2-ios-set-up-app-store-server-notifications)**:** Set up App Store Server Notifications, either by sending notifications directly to AppsFlyer (recommended) or by forwarding them from your own endpoint, and validate the integration.
-   * [Android](#step-2-android-set-up-google-play-server-notifications)**:** Set up Google Play real-time developer notifications (RTDN), either by allowing Google Play to send notifications directly to AppsFlyer (recommended) or by forwarding them via Pub/Sub.
+   * [iOS](#step-2-ios-set-up-app-store-server-notifications): Set up App Store Server Notifications, either by sending notifications directly to AppsFlyer (recommended) or by forwarding them from your own endpoint, and validate the integration.
+   * [Android](#step-2-android-set-up-google-play-server-notifications): Set up Google Play real-time developer notifications (RTDN), either by allowing Google Play to send notifications directly to AppsFlyer (recommended) or by forwarding them via Pub/Sub.
 3. [Implement the SDK Connector](#step-3-implement-sdk-connector): Prepare developers to integrate the AppsFlyer Purchase SDK Connector.
 4. [Verify SDK implementation](#step-4-verify-sdk-implementation): Test sandbox in-app purchases and subscriptions on both platforms to confirm that SDK events and server notifications are correctly received and processed by AppsFlyer.
 5. [Verify and update settings](#step-5-verify-and-update-settings): Review and confirm the statuses of purchase validation, refund handling, subscription measurement, and store integration to ensure accurate, ongoing revenue attribution across platforms.
@@ -59,7 +57,7 @@ In step 1, obtain the following credentials from App Store Connect and input the
 
 Setting the credentials involves steps performed in both App Store Connect and AppsFlyer. During setup, keep both the App Store Connect and AppsFlyer tabs open.
 
-### 1.1 Create the App Store Connect keys
+<Accordion title="1.1 Create the App Store Connect keys">
 
 To set iOS credentials,follow these step:
 
@@ -82,9 +80,11 @@ To set iOS credentials,follow these step:
 
    [![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)
 
-### 1.2 Set the App Store Connect key in AppsFlyer
+</Accordion>
 
-1. [Enable ROI360 Store revenue](/docs/about-roi360-store-revenue#enable-roi360-store-revenue).
+<Accordion title="1.2 Set the App Store Connect key in AppsFlyer">
+
+1. [Enable ROI360 Store revenue](/docs/about-roi360-store-revenue#activate-roi360-store-revenue).
 2. Under the **App Store Connect keys** step, click [![](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png)](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png) **Upload** in the **In-App Purchase key**field to upload the p8 file.
 3. In the section titled **App Store Connect keys**, paste the values you copied from App Store Connect.
 
@@ -93,6 +93,8 @@ To set iOS credentials,follow these step:
    * **Issuer ID**
 4. Click **Validate keys** to ensure the keys you entered are correct. **Note: The Validate key** may not work if your app has not yet been published in the App Store.
 5. click **Save and next**
+
+</Accordion>
 
 ## Step 1 (Android): Set up service account key and permissions
 
@@ -103,7 +105,7 @@ In step 1, you can obtain the following credentials from App Store Connect and i
 * Setting up in-app purchase and subscription revenue measurement involves steps performed in the [Google Cloud Platform](https://cloud.google.com/), [Google Play Console](https://play.google.com/console/), and the [AppsFlyer UI](https://hq1.appsflyer.com/auth/login). We recommend keeping tabs on all three places open throughout the setup.
 * Setting up in the AppsFlyer UI requires admin permissions.
 
-### 1.1. Link your Google Play Developer Account to your Google Cloud Project
+<Accordion title="1.1. Link your Google Play Developer Account to your Google Cloud Project">
 
 **Prerequisites**: Access to Google Play Console and Google Cloud Project.
 
@@ -115,7 +117,11 @@ In step 1, you can obtain the following credentials from App Store Connect and i
 
    [![](https://files.readme.io/f30f2ed9081b4ad0a5455e5592838cb70a47c49767b69eaaaa73011a60bc4b8d-42158637503633.png)](https://files.readme.io/f30f2ed9081b4ad0a5455e5592838cb70a47c49767b69eaaaa73011a60bc4b8d-42158637503633.png)
 
-### 1.2. Configure your Service Account in the Google Cloud Platform
+</Accordion>
+
+<div id="12-configure-your-service-account-in-the-google-cloud-platform" />
+
+<Accordion title="1.2. Configure your Service Account in the Google Cloud Platform">
 
 **Prerequisites**: Access to Google Cloud Platform.
 
@@ -156,7 +162,9 @@ In step 1, you can obtain the following credentials from App Store Connect and i
       [![](https://files.readme.io/1a577ef4d159c73ff76a6a79a45a7909a3f9ee422abc5990482b3b45e308d666-42158637525649.png)](https://files.readme.io/1a577ef4d159c73ff76a6a79a45a7909a3f9ee422abc5990482b3b45e308d666-42158637525649.png)
    6. Save the JSON key file, which will be uploaded to AppsFlyer later. **Note**! You must save the key; it can't be retrieved later. If you don't save it, you will have to create an entirely new key
 
-### 1.3. Set API access permissions in Google Play Console
+</Accordion>
+
+<Accordion title="1.3. Set API access permissions in Google Play Console">
 
 **Prerequisites**: Access to Google Play Console.
 
@@ -174,7 +182,7 @@ In step 1, you can obtain the following credentials from App Store Connect and i
 
    * View financial data, orders, and cancellation survey responses.
    * Manage orders and subscriptions.[![](https://files.readme.io/41c44a10091b60e7ad356d864dd26bf313c8ed9ebfc91a4599be71a510c9f26b-42158637529105.png)](https://files.readme.io/41c44a10091b60e7ad356d864dd26bf313c8ed9ebfc91a4599be71a510c9f26b-42158637529105.png)
-4. On the **App permissions** tab, click **Add app,**then select your app. Add multiple apps if needed.
+4. On the **App permissions** tab, click **Add app,** then select your app. Add multiple apps if needed.
 
    [![](https://files.readme.io/51457fad5fab7516d5e8d89867796795fbb4b938f723bcaf62b86b33ef3ce096-42158637538961.png)](https://files.readme.io/51457fad5fab7516d5e8d89867796795fbb4b938f723bcaf62b86b33ef3ce096-42158637538961.png)
 5. Click **Invite user.**
@@ -184,7 +192,9 @@ In step 1, you can obtain the following credentials from App Store Connect and i
 
    [![](https://files.readme.io/7e643e577d3134dcf352eeeafc26cacbcb8dcee718892f2ca14132fa593c1015-42158608083729.png)](https://files.readme.io/7e643e577d3134dcf352eeeafc26cacbcb8dcee718892f2ca14132fa593c1015-42158608083729.png)
 
-### 1.4. Upload the Service Account Private Key to AppsFlyer
+</Accordion>
+
+<Accordion title="1.4. Upload the Service Account Private Key to AppsFlyer">
 
 Upload and validate the Google JSON key you downloaded in [step 1.2](#12-configure-your-service-account-in-the-google-cloud-platform).
 
@@ -192,13 +202,15 @@ Upload and validate the Google JSON key you downloaded in [step 1.2](#12-config
 
 **To upload the Service Account Private Key to AppsFlyer, follow these steps**:
 
-1. [Enable ROI360 Store revenue](/docs/about-roi360-store-revenue#enable-roi360-store-revenue).
+1. [Enable ROI360 Store revenue](/docs/about-roi360-store-revenue#activate-roi360-store-revenue).
 2. Under the **Service Account Key and Permissions** step, in the **Upload Google JSON key**field, click [![](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png)](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png)  **(Upload icon).**
 3. Upload the JSON file you downloaded in [step 1.2](#12-configure-your-service-account-in-the-google-cloud-platform).
-4. Click **Validate Key.****Note:**
+4. Click **Validate Key.Note:**
    * After setting service account credentials and permissions, it can take up to 24 hours to be able to use them. This may cause you to receive errors when trying to validate the key or perform a validation test.
    * To work around the 24-hour wait time, in the Google Play Console, navigate to any application, then go to **Monetize** > **Products** > **Subscriptions/In-app products**, and make a change. For example, edit the description of your product and save it. This should instantly update the account credentials and permissions. You can then undo the changes.
 5. Click **Save and Next**.
+
+</Accordion>
 
 ## Step 2 (iOS): Set up App Store server notifications
 
@@ -223,7 +235,7 @@ To use this option, complete steps [2.1](#21-copy-the-appsflyer-server-notificat
 
 If you prefer to keep your existing endpoint as the primary destination, configure your server to forward App Store server notifications to AppsFlyer.
 
-To use this option, skip steps 2.1, 2.2 and complete steps [2.3](#23-[optional]-forward-notifications-from-your-endpoint-to-appsflyer) and [2.4](#24-test-the-server-notifications-integration)
+To use this option, skip steps 2.1, 2.2 and complete steps [2.3](#23--optional--forward-notifications-from-your-endpoint-to-appsflyer) and [2.4](#24-test-the-server-notifications-integration)
 
 > 📘 **Note**
 >
@@ -234,16 +246,21 @@ To use this option, skip steps 2.1, 2.2 and complete steps [2.3](#23-[optional]-
 > * **Option 1:** Keep AppsFlyer as the primary endpoint and enable forwarding (step 2.1). AppsFlyer forwards a copy of all notifications to your endpoint in real time, unchanged from how Apple sent them, including the types AppsFlyer does not process.
 > * **Option 2:** Keep your own endpoint as the primary destination, so your server receives and handles all notification types directly, and forward purchase and subscription notifications to AppsFlyer.
 
+<div id="21-copy-the-appsflyer-server-notifications-endpoint" />
 
-### 2.1 Copy the AppsFlyer server notifications endpoint
+<Accordion title="2.1 Copy the AppsFlyer server notifications endpoint">
 
 To copy the AppsFlyer server notifications endpoint, follow these steps:
 
-1. **In AppsFlyer,**inthe **App Store server notifications** step, copy the AppsFlyer server notifications endpoint.
+1. **In AppsFlyer,** inthe **App Store server notifications** step, copy the AppsFlyer server notifications endpoint.
 2. If you previously had another App Store server notifications endpoint and want AppsFlyer to forward notifications to it, select **Forward a copy of notifications to your server (relevant for option 1 only).**
 3. Enter your notification forwarding endpoint in the displayed text box.
 
-### 2.2 Send notifications directly to AppsFlyer
+</Accordion>
+
+<div id="22-send-notifications-directly-to-appsflyer" />
+
+<Accordion title="2.2 Send notifications directly to AppsFlyer">
 
 To send notifications directly to AppsFlyer, set up AppsFlyer as the primary App Store server notifications endpoint.
 
@@ -260,7 +277,11 @@ To send notifications directly to AppsFlyer, set up AppsFlyer as the primary App
 
    [![](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)
 
-### 2.3 [Optional] Forward notifications from your endpoint to AppsFlyer
+</Accordion>
+
+<div id="23--optional--forward-notifications-from-your-endpoint-to-appsflyer" />
+
+<Accordion title="2.3 [Optional] Forward notifications from your endpoint to AppsFlyer">
 
 Use this step only if you want to keep your endpoint as the primary destination for App Store server notifications, instead of sending notifications directly to AppsFlyer.
 
@@ -286,7 +307,11 @@ To forward server notifications from your endpoint to AppsFlyer, follow these st
 8. Click **Save**.
 9. Configure your backend to forward Apple server notifications to the AppsFlyer notification endpoint URL. The requests must match the App Store payload exactly as received from Apple, see[Apple format requirements](https://developer.apple.com/documentation/appstoreserverapi/signedpayload#discussion).
 
-### 2.4 Test the server notifications integration
+</Accordion>
+
+<div id="24-test-the-server-notifications-integration" />
+
+<Accordion title="2.4 Test the server notifications integration">
 
 To confirm that AppsFlyer is receiving App Store server notifications correctly, or if you recently configured the endpoint and no server notifications have arrived yet:
 
@@ -296,29 +321,30 @@ To confirm that AppsFlyer is receiving App Store server notifications correctly,
    * A confirmation of whether valid notifications were received.
    * A status message indicating that no notifications were found.
 
-   CALLSTART::Note::
+   > 📘 **Note**
+   >
+   > Apple may take a few seconds to send the test message.
 
-   #### Note
-
-   Apple may take a few seconds to send the test message.
-
-   CALLEND::
 
    * If the status remains invalid, wait a few moments and try again.
    * After the test succeeds, or when you are ready to continue, click **Save and next**.
+
+</Accordion>
 
 ## Step 2 (Android): Set up Google Play server notifications
 
 To receive in-app purchase and subscription revenue data from Google Play, select between the following options:
 
 * (Recommended) Google Play sends the notifications directly to AppsFlyer. With this option, no notification copies can be forwarded to your endpoint. If you'd like to select this option, you can see [Send Google Play notifications directly to AppsFlyer](#21-send-google-play-notifications-directly-to-appsflyer).
-* Google Play sends the notifications to you first, which are then forwarded to AppsFlyer. If you choose this option, see [Forward Google Play notifications to AppsFlyer.](#22-[optional]-forward-google-play-notifications-to-appsflyer)
+* Google Play sends the notifications to you first, which are then forwarded to AppsFlyer. If you choose this option, see [Forward Google Play notifications to AppsFlyer.](#22--optional--forward-google-play-notifications-to-appsflyer)
 
 **Prerequisites**: Access to Google Play Console and AppsFlyer UI.
 
-### 2.1 Send Google Play notifications directly to AppsFlyer
+<div id="21-send-google-play-notifications-directly-to-appsflyer" />
 
-1. In AppsFlyer, on step 2**, Set up Google Play server notifications**, select **Allow AppsFlyer topic to get RTDN messages directly from Google**.
+<Accordion title="2.1 Send Google Play notifications directly to AppsFlyer">
+
+1. In AppsFlyer, on step 2,**Set up Google Play server notifications**, select **Allow AppsFlyer topic to get RTDN messages directly from Google**.
 2. Copy the AppsFlyer topic to the clipboard.
 3. In **Google Play Console** > **Home**, select to view your app. The dashboard opens.
 
@@ -334,7 +360,11 @@ To receive in-app purchase and subscription revenue data from Google Play, selec
    [![](https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png)](https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png)
 7. Click **Save Changes**. It can take time (sometimes even 24 hours) for this to take effect. Therefore, wait before testing.
 
-### 2.2 [Optional] Forward Google Play notifications to AppsFlyer
+</Accordion>
+
+<div id="22--optional--forward-google-play-notifications-to-appsflyer" />
+
+<Accordion title="2.2 [Optional] Forward Google Play notifications to AppsFlyer">
 
 **Note**: This step is only for when you didn’t choose the recommended method to receive in-app purchase and subscription revenue data from Google Play by sending notifications directly to AppsFlyer. If you completed the steps for the recommended method to create a topic where AppsFlyer directly receives the RTDN notifications from Google Play, skip this step.
 
@@ -389,7 +419,9 @@ If you want to set AppsFlyer as a subscriber to your existing PUB/SUB topic, con
     [![](https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png)](https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png)
 18. Click **Save changes**. It can take time (sometimes even 24 hours) for this to take effect. Therefore, wait before testing.
 
-### 2.3 Send a test notification from Google Play Console
+</Accordion>
+
+<Accordion title="2.3 Send a test notification from Google Play Console">
 
 To verify that Google Play real-time developer notifications (RTDN) are correctly received by AppsFlyer, send a test notification from Google Play Console:
 
@@ -400,7 +432,7 @@ To verify that Google Play real-time developer notifications (RTDN) are correctl
 3. In the left menu, navigate to **Monetise with Play** → **Monetisation setup**.
 4. Go to the Google Play Console.
 
-### 2.4 Confirm notification delivery in AppsFlyer
+<Accordion title="2.4 Confirm notification delivery in AppsFlyer">
 
 1. When the test succeeds, or when you're ready to proceed, click **Save and next**.
 2. Result: AppsFlyer displays whether any notifications were received in the last 7 days.
@@ -408,6 +440,10 @@ To verify that Google Play real-time developer notifications (RTDN) are correctl
    * If none were received, the interface indicates that no notifications were found in the last 7 days.
    * If no status appears, review your Pub/Sub configuration and resend the test notification.
 3. In the **Google Play Server Notifications** step, click **Test integration**.
+
+</Accordion>
+
+</Accordion>
 
 ## Step 3: Implement SDK Connector
 
@@ -428,28 +464,26 @@ This message provides all the information your developers need to complete the i
 >
 > The connector uses automatic transaction detection. As an alternative, you can implement the `validateAndLog` SDK method to manually log each transaction. This method does not support all features available with the connector. For details on both SDK integration options, see [the DevHub documentation](https://dev.appsflyer.com/hc/docs/purchase-and-subscription-validation).
 
-
 ## Step 4: Verify SDK implementation
 
 Test the in-app purchase and subscription revenue integration in a sandbox environment to confirm that the SDK connector is correctly integrated and that server notifications are properly configured and received by AppsFlyer.
 
-### Test SDK implementation
+<Accordion title="Test SDK implementation">
 
 To check whether AppsFlyer has received valid purchase and subscription event payloads from your app in the last 7 days, perform these steps:
 
 1. In the **Verify SDK implementation** step, click **Test SDK implementation**.
 2. Review the results, including the timestamp of the most recent payload received by AppsFlyer.
 
-   CALLSTART::Note::
+   > 📘 **Note**
+   >
+   > This test only confirms that requests are reaching AppsFlyer and does not verify the completeness or correctness of the data.
 
-   #### Note
-
-   This test only confirms that requests are reaching AppsFlyer and does not verify the completeness or correctness of the data.
-
-   CALLEND::
 3. To fully validate the implementation, continue with the testing steps below.
 
-### Sandbox events and parameters
+</Accordion>
+
+<Accordion title="Sandbox events and parameters">
 
 * The SDK connector generates events only for the initial sandbox transaction:
   * In-app purchase: `af_purchase_sandbox_sdk`
@@ -477,7 +511,9 @@ Ensure that every sandbox purchase event includes:
 * `af_validated` **= true**. If `false` go back and verify the store key.
 * `af_validation_type` **=** `receipt_validation`.
 
-### Test in-app purchase and subscription revenue
+</Accordion>
+
+<Accordion title="Test in-app purchase and subscription revenue">
 
 **Prerequisites**:
 
@@ -500,11 +536,13 @@ Ensure that every sandbox purchase event includes:
    * A revenue value of 0 (so as not to skew real AppsFlyer reports).
    * An `af_sandbox_revenue` parameter that includes the revenue value of the purchased product, ensuring the correct revenue is reported.
 
+</Accordion>
+
 ## Step 5: Verify and update settings
 
 After you have completed configuring the settings above and saved the last step, you are redirected to the active configuration view, where you can verify or update the following settings:
 
-1. Make sure that the **Verify purchases with the App Store** toggle is turned on**.**
+1. Make sure that the **Verify purchases with the App Store** toggle is turned on.
 2. Check the following options under **Purchases**:
    * **Prevent duplicate purchases for clean data**: Avoids recording transactions that have already been reported.
    * **Automatically measure refunds, cancellations, and negative revenue**: Measures refund-related events and logs them as negative revenue.

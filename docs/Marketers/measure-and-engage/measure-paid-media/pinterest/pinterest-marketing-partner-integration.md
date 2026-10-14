@@ -25,14 +25,13 @@ x-zendesk:
 ---
 Every PMP must be an official PMP and must also be approved by AppsFlyer on the back-end.
 
-For AppsFlyer to send a postback to the PMP the `af_mp=` parameter with the AppsFlyer account name as a value must be added to the attribution link.
+For AppsFlyer to send a postback to the PMP the af\_mp= parameter with the AppsFlyer account name as a value must be added to the attribution link.
 
 **Example**
 
-<Tabs>
-<Tab title="Android">
+<Accordion title="Android">
 
-```http
+```
 https://app.appsflyer.com/com.king.candycrushsaga?pid=pinterest_int&clickid={click_id}
 &af_adset={ad_group_name}&af_adset_id={ad_group_id}&af_ad={creative_name}&af_ad_id=
 {creative_id}&af_siteid={publisher}&c={campaign_name}&af_c_id={campaign_id}&af_ad=
@@ -40,10 +39,11 @@ https://app.appsflyer.com/com.king.candycrushsaga?pid=pinterest_int&clickid={cli
 {limit_ad_tracking}&appid={app_id}&timestamp={click_timestamp}&af_mp=bidalgo
 ```
 
-</Tab>
-<Tab title="iOS">
+</Accordion>
 
-```http
+<Accordion title="iOS">
+
+```
 https://app.appsflyer.com/id340954503?pid=pinterest_int&clickid={click_id}
 &af_adset={ad_group_name}&af_adset_id={ad_group_id}&af_ad={creative_name}&af_ad_id=
 {creative_id}&af_siteid={publisher}&c={campaign_name}&af_c_id={campaign_id}&af_ad=
@@ -51,10 +51,9 @@ https://app.appsflyer.com/id340954503?pid=pinterest_int&clickid={click_id}
 {limit_ad_tracking}&appid={app_id}&timestamp={click_timestamp}&af_mp=bidalgo
 ```
 
-</Tab>
-</Tabs>
+</Accordion>
 
 Supported PMP partners include:
 
-- Bidalgo
-- Bidsaas (Bidalgo)
+* Bidalgo
+* Bidsaas (Bidalgo)

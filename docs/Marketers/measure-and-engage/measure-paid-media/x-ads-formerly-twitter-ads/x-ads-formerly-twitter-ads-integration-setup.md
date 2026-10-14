@@ -60,7 +60,7 @@ X Ads is an Advanced Self-Reporting Network (SRN), enabling AppsFlyer to support
 
    ![X-Ads-mmp-selection.png](https://files.readme.io/ebe8e97971c01e0d87c694d2ca1fcc996abf608309d96badcbcda2713ab80d3e-6148393350033.png)
 6. A notification displays informing you that you're about to leave X Ads to go to the AppsFlyer website. Click **Go to AppsFlyer** and log in to your Dashboard.
-7. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations > Marketplace** tab**.**
+7. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations > Marketplace** tab.
 8. Search for **X Ads** and select it.
 9. In the **Integration** tab, accept the X Ads Terms and Conditions for Mobile App Conversion Recording (MACT), then click **Save integration**.
 10. Turn on **Activate partner**, and click **Log in with X Ads**.
@@ -73,7 +73,7 @@ X Ads is an Advanced Self-Reporting Network (SRN), enabling AppsFlyer to support
 
 For a detailed description of the partner configuration page Header, click [here](/docs/set-up-an-integrated-partner).
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The **Integration Tab** is divided into different sections, as described below. [Partner must be activated](/docs/partner-activation-deactivation) on the first visit to enable its setup.
 
@@ -169,19 +169,19 @@ In this section, you can map your AppsFlyer events with your partners via postba
 3. Click **Add event** to add an SDK or server-to-server event to the list.
 4. Complete the parameters required according to the table below.
 
-   
-
 | Parameter | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.  <br />**Tip**: Don't see the event you are looking for?<br /><br />* Make sure to activate the event on a device with a non-organic installation and recheck.<br />* Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
 | **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Select the most suitable pre-defined AppsFlyer event from the drop-down box. |
-| **for users from** | Select the sending option for the event:<br /><br />CALLSTART::Note::<br /><br />#### Note<br /><br />For X Ads to receive agency-attributed postbacks, you must select **All media sources, including organic**. Otherwise, X Ads won't receive such postbacks.<br /><br />CALLEND::<br /><br />* **This partner only**: send postbacks only when this event is attributed to this partner.<br />* **All media sources, including organic**: send postbacks for events attributed to any partner and organic events. |
-| **including** | * **No data (default)**: send only the event itself without the event value.<br />* **Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).<br />* **Values without revenue**: send all the parameters **excluding** the revenue value. |
+| **for users from** | Select the sending option for the event:<br /><br /><br /><br />**Note**<br />For X Ads to receive agency-attributed postbacks, you must select **All media sources, including organic**. Otherwise, X Ads won't receive such postbacks.<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources, including organic**: send postbacks for events attributed to any partner and organic events.</li></ul> |
+| **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
 
 5. [Optional] Click ![conditional-iae-postbacks-icon.png](https://files.readme.io/d84715dd43041f10684d42e4fe56fd4f76aa4c38fbf9df227c8f8f5610c4f859-19616850611857.png) to set conditions for sending certain in-app events to the partner.  
-   Learn more about [conditional in-app event postbacks](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks).
+   Learn more about [conditional in-app event postbacks](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks).
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 X Ads does not use attribution links for attribution.
 
@@ -189,7 +189,9 @@ X Ads does not use attribution links for attribution.
 >
 > For all [self-reporting networks (SRNs)](/docs/self-reporting-networks-srns), such as Meta ads, Apple Ads, Google Ads, X Ads, etc., this tab is not functional since they don't use external attribution links.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 The cost integration provides the following aggregated data:
 
@@ -203,11 +205,15 @@ The cost integration provides the following aggregated data:
 
 [View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad revenue isn't available for X- Ads.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant X Ads, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for X Ads, the permissions tab is active and you can grant control to X Ads.
 
@@ -229,13 +235,17 @@ Learn more about granting [ad network permissions.](/docs/set-up-an-integrated-p
 
 Learn about [granting agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
+</Accordion>
+
 ## X-Ads features
 
-### Mobile app promotion on X Ads
+<Accordion title="Mobile app promotion on X Ads">
 
 X Ads Mobile App Promotion is a method to promote apps on X Ads. It enables advertisers to promote their mobile apps with great App card design driving installs, app engagement, and deep linking. App users can easily install and engage with apps directly from the X Ads timeline.
 
-### Web-to-App: Measuring app activity for non-app campaigns (Android only)
+</Accordion>
+
+<Accordion title="Web-to-App: Measuring app activity for non-app campaigns (Android only)">
 
 AppsFlyer's integration with X Ads enables measurement of app activity—including installs, re-engagements, and in-app events—for **non-app campaigns** on Android.
 
@@ -250,7 +260,9 @@ To measure app activity from X non-app campaigns and gain valuable insights into
 >
 > This functionality is currently **supported only on Android**.
 
-### X Ads and AppsFlyer SKAN interoperation
+</Accordion>
+
+<Accordion title="X Ads and AppsFlyer SKAN interoperation">
 
 X Ads sends SKAdNetwork postback data via a dedicated API. SKAN data from X Ads will be displayed in the [SKAN dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer).
 
@@ -261,7 +273,9 @@ X Ads enriches SKAN postbacks with the following data fields:
 * Adset name
 * Adset ID
 
-### X Ads user privacy
+</Accordion>
+
+<Accordion title="X Ads user privacy">
 
 X Ads advertisers and users can control how they share information with advertisers and business partners:
 
@@ -274,6 +288,8 @@ X Ads advertisers and users can control how they share information with advertis
 Through the AMM Program, advertisers may receive more complete user-level data by granting X Ads the right to perform an audit. This audit ensures that X Ads data is used exclusively for measurement purposes, consistent with industry standards and data protection laws.
 
 [See more about the AMM program in the FAQ section](https://business.x.com/en/help/campaign-setup/create-an-app-installs-campaign/mobile-app-measurement-and-attribution). For detailed guidance, contact your X Ads Account Manager.
+
+</Accordion>
 
 ## Advanced SRN parameter names
 

@@ -26,14 +26,12 @@ x-zendesk:
 
 Connections determine how DCP ingests your data and exports your audiences. After [setting up your cloud services](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services), connect them to DCP using the **Manage connections** modal. The following connection types are available:
 
-* [**Source connections**](#h_01KXX80P913HRREW60M6S316PP)**:** for ingesting your first-party data into DCP from cloud storage or a data warehouse.
-* [**Cloud storage connections**](#h_01KXX80P91F8TG9FR1XQ7QVNCY)**:** for exporting your audiences to your Amazon S3 or Google Cloud Storage (GCS) buckets.
-* [**Media partner connections**](#h_01KXX80P91BMB45ETZQSKWJWZB)**:** for sending your audiences to advertising platforms for activation.
-* [**Data & Identity connections**](#h_01KXX80P91PS35EG5P5YJB9EHC)**:** for unifying fragmented user data to improve match rates and expand partner-side audiences.
+* [**Source connections**](#h_01KXX80P913HRREW60M6S316PP): for ingesting your first-party data into DCP from cloud storage or a data warehouse.
+* [**Cloud storage connections**](#h_01KXX80P91F8TG9FR1XQ7QVNCY): for exporting your audiences to your Amazon S3 or Google Cloud Storage (GCS) buckets.
+* [**Media partner connections**](#h_01KXX80P91BMB45ETZQSKWJWZB): for sending your audiences to advertising platforms for activation.
+* [**Data & Identity connections**](#h_01KXX80P91PS35EG5P5YJB9EHC): for unifying fragmented user data to improve match rates and expand partner-side audiences.
 
 DCP supports different cloud services for different connection directions. Use the table below to see which services you can use for each connection type:
-
-
 
 | Cloud service | Source (inbound) | Cloud storage export (outbound) |
 | --- | --- | --- |
@@ -43,11 +41,11 @@ DCP supports different cloud services for different connection directions. Use t
 | Snowflake | ✓ | - |
 | Salesforce Cloud/CRM | ✓ | - |
 
-
-
 For Amazon S3 and Google Cloud Storage, a single connection serves as both a source (inbound) and a cloud storage export (outbound) destination. Creating a source connection to S3 or GCS automatically creates a matching cloud storage (export) connection, and vice versa.
 
-### Create source connections
+<div id="h_01KXX80P913HRREW60M6S316PP" />
+
+<Accordion title="Create source connections">
 
 Create source connections to bring first-party data into DCP.
 
@@ -57,14 +55,13 @@ Create source connections to bring first-party data into DCP.
 2. Click **Manage connections** in the top-right corner.
 3. Go to the **Source** tab and click **+ New connection**.  
    ![2026-07-27_13-30-46.png](https://files.readme.io/dec879432c0b9d6ba4eeec2c175dfce145c99652ccabb02d37f3434627f9310f-49189748198289.png)
-4. Continue with the [Cloud service connections for source data instructions](#source-cloud-service-connections) below.
+4. Continue with the [Cloud service connections for source data instructions](#cloud-service-connections-for-source-data) below.
 
 You can also create a source connection directly when setting up a source. See [Create and manage sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources) for instructions.
 
 > 📘 **Note**
 >
 > Creating an incoming Source connection to Amazon S3 or GCS automatically creates a matching outgoing Cloud storage connection (and vice versa). Deleting Amazon S3 or GCS connection also automatically deletes the other. Since it's really one underlying connection, removing it from either tab removes it everywhere it's used.
-
 
 #### Cloud service connections for source data
 
@@ -80,7 +77,6 @@ Source connections are for connecting your data sources securely to DCP. From th
 >
 > Look for the ID labeled **Locator**. This is **not** the same ID used to create outbound Snowflake connections.
 
-
 **Amazon S3 and GCS:** In the **New connection** dialog, enter the name of the [bucket you created](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#cloud-storage-buckets-inbound) for the exclusive use of the AppsFlyer Data Clean Room (DCR).
 
 **Salesforce Cloud/CRM:** See [how to set up a Salesforce connection](/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud).
@@ -89,13 +85,19 @@ Source connections are for connecting your data sources securely to DCP. From th
 
 Local file system connections let you upload data files directly from your computer into DCP. This option is typically used for testing only and isn't recommended for ongoing or large-scale data ingestion.
 
-### Set up a local file connection
+<Accordion title="Set up a local file connection">
 
 A local file connection is used to test the platform using a sample file. It lets you get familiar with DCP functionality before starting to share data. Keep in mind that it isn't recommended for sharing data, has a data retention limit of 14 days, and doesn't support automation processes.
 
-A local file connection can be [set up during source creation](/docs/data-collaboration-platform-dcp-create-and-manage-sources#local-file-system).
+A local file connection can be [set up during source creation](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-location-as-local-files).
 
-### Create cloud storage connections
+</Accordion>
+
+</Accordion>
+
+<div id="h_01KXX80P91F8TG9FR1XQ7QVNCY" />
+
+<Accordion title="Create cloud storage connections">
 
 Cloud storage connections let you automatically export your DCP audiences to your Amazon S3 or Google Cloud Storage (GCS) bucket after each audience update.
 
@@ -115,7 +117,7 @@ Cloud storage connections let you automatically export your DCP audiences to you
 
 You can also create a cloud storage connection directly from the audience builder. See [Build and activate audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences) for instructions.
 
-### Understand the export path
+<Accordion title="Understand the export path">
 
 Each time an audience is exported, DCP writes it to your bucket using a fixed, predictable path:
 
@@ -132,8 +134,6 @@ s3://af-dcr-example-bucket/dcp-output/audiences/8f3a1c02-44b1-4e9a-9c7d-2b6e1a0f
   └── _SUCCESS
 ```
 
-
-
 | Path segment | What it means |
 | --- | --- |
 |  | Your connected S3 or GCS bucket. |
@@ -145,11 +145,9 @@ s3://af-dcr-example-bucket/dcp-output/audiences/8f3a1c02-44b1-4e9a-9c7d-2b6e1a0f
 | part-NNNNN--c000.csv | One of the output files for this delivery — see File format and splitting below. |
 | \_SUCCESS | An empty marker file written once the export finishes writing all part files. |
 
-
 > 📘 **Note**
 >
 > This folder structure is created and managed automatically. Don't rename or restructure it manually — any automated process reading these files should be built to follow this path pattern, and should wait for \_SUCCESS to appear before processing the part files, to avoid reading a partial delivery.
-
 
 **File format and splitting**
 
@@ -167,7 +165,13 @@ b7e2c9a1f4d6e8b0a2c4d6e8f0a1b3c5d7e9f1a3b5c7d9e0f2a4b6c8d0e2f4a6,hashed_email
 c1d3e5f7a9b1c3d5e7f9a1b3c5d7e9f1a3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d3,hashed_phone_number_without_plus_sha256
 ```
 
-### Create media partner connections
+</Accordion>
+
+</Accordion>
+
+<div id="h_01KXX80P91BMB45ETZQSKWJWZB" />
+
+<Accordion title="Create media partner connections">
 
 Outbound media partner connections let you securely connect your DCP audiences to supported media partners, so you can activate tailored campaigns on their platforms. Media partners are the main destination for audience activation. Learn how to [set up specific media partner connections](/docs/data-collaboration-platform-dcp-media-partner-connections).
 
@@ -184,7 +188,13 @@ Outbound media partner connections let you securely connect your DCP audiences t
 
 You can also create a media partner connection directly from the audience builder. See [Build and activate audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences) for instructions.
 
-### Create Data & Identity connections
+</Accordion>
+
+<div id="h_01KXX80P91PS35EG5P5YJB9EHC" />
+
+<div id="create-data-identity-connections" />
+
+<Accordion title="Create Data & Identity connections">
 
 Data & Identity connections unify fragmented user data to improve match rates with activation partners. This enables larger partner-side audiences and more impact from your campaigns.
 
@@ -199,3 +209,5 @@ Data & Identity connections unify fragmented user data to improve match rates wi
 > * [DCP - Media partner connections](/docs/data-collaboration-platform-dcp-media-partner-connections)
 > * [DCP - Enrich sources with ID5](/docs/data-collaboration-platform-dcp-enrich-sources-with-id5)
 > * [Data Collaboration Platform (DCP) guide](/docs/data-collaboration-platform-dcp-guide)
+
+</Accordion>

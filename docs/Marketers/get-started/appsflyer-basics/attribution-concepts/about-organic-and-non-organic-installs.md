@@ -22,14 +22,14 @@ x-zendesk:
   created_at: '2018-01-11T09:31:52Z'
   edited_at: '2025-04-05T12:50:39Z'
 ---
-![6453OrganicvsNon-organic.jpg](https://files.readme.io/673290940d44db8acbc5ade68e7c7bc2da45e5786b62885a012720ab26a2e7e2-6453OrganicvsNon-organic.jpg)
+![6453OrganicvsNon-organic.jpg](https://files.readme.io/b456433d858a146187429d0a40c200327af685490ea003cd5130f40ad798c7a4-360018880878.jpg)
 
 Non-organic users are attributed to the media source motivating the install or engagement. In the case of organic users, there is no media source identified with install or engagement.
 
 ## Organic vs. non-organic
 
-| Organic installs<br />Not attributed to media sources | Non-organic installs (NOI)<br />Attributed to media sources |
+| Organic installs  <br />Not attributed to media sources | Non-organic installs (NOI)  <br />Attributed to media sources |
 | --- | --- |
-| **Not attributed** has no media source | **Attributed** to a media source |
-| **No attribution** due to the following:<br />- App was installed without using an attribution link. For example, when the user downloads the app from your site or the app store without engaging with an ad first.<br />- Click and app launch couldn't be matched. For example, when data is not available due to privacy policy, or install was attributed by a different MMP first. | **Attribution** of an install or launch due to any of the following:<br />- Use of an AppsFlyer attribution link<br />- Click and launch are matched by AppsFlyer<br />- Claimed by an SRN |
-| | **Attribution info:**<br />- Uses *last-click attribution*: Last ad interaction gets credit for the app install or action.<br />- Only one media source is credited per install.<br />- Learn more about [AppsFlyer attribution](/docs/appsflyer-attribution-model). |
+| **Not attributed** has no media source | **Attributed** to a media source |
+| **No attribution** due to the following:<ul><li>App was installed without using an attribution link. For example, when the user downloads the app from your site or the app store without engaging with an ad first.</li><li>Click and app launch couldn't be matched. For example, when data is not available due to privacy policy, or install was attributed by a different MMP first.</li></ul> | **Attribution** of an install or launch due to any of the following:<ul><li>Use of an AppsFlyer attribution link</li><li>Click and launch are matched by AppsFlyer</li><li>Claimed by an SRN</li></ul> |
+|  | **Attribution info:**<ul><li>Uses *last-click attribution*: Last ad interaction gets credit for the app install or action.</li><li>Only one media source is credited per install.</li><li>Learn more about [AppsFlyer attribution](/docs/appsflyer-attribution-model).</li></ul> |

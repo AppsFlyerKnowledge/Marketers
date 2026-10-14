@@ -26,9 +26,9 @@ x-zendesk:
 
 OneSignal delivers 8 billion messages every day across the globe. Powered by superior architecture and an easy-to-use platform, the OneSignal delivers messages faster, more efficiently, and at a greater scale than any other solution in the world. Learn more at [onesignal.com](https://onesignal.com/?utm_medium=partner&utm_source=appsflyer)
 
-> ❗️ Important!
->
-> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+**Important!**
+
+[Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up OneSignal
 
@@ -42,136 +42,121 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
 
 1. Make sure that the SDK version you use is 2.3.1.18 and above.
 2. Insert the following lines of code in your app's code - [after OneSignal SDK was launched](https://documentation.onesignal.com/docs/android-sdk-setup) and before the initialization code for AppsFlyer SDK.
+   * For Android devices using OneSignal SDK version 3.x.x:
 
-<Tabs>
-<Tab title="Android (SDK 3.x.x)">
+     ```
+     OSPermissionSubscriptionState status = OneSignal.getPermissionSubscriptionState();
 
-```java
-AutoOSPermissionSubscriptionState status = OneSignal.getPermissionSubscriptionState();
+               String deviceId = status.getSubscriptionStatus().getUserId();
 
-          String deviceId = status.getSubscriptionStatus().getUserId();
+                 customData.put("onesignalCustomerId", deviceId);
+     ```
+   * For Unity SDK:
 
-            customData.put("onesignalCustomerId", deviceId);
-```
+     ```javascript
+     var status = OneSignal.GetPermissionSubscriptionState();
 
-</Tab>
-<Tab title="Unity SDK">
+               String deviceId = status.subscriptionStatus.userId;
 
-```csharp
-Autovar status = OneSignal.GetPermissionSubscriptionState();
+                 customData.put("onesignalCustomerId", deviceId);
+     ```
+   * For Android devices using OneSignal Native SDK version 4+:
 
-          String deviceId = status.subscriptionStatus.userId;
+     ```
+     OSDeviceState device = OneSignal.getDeviceState();
 
-            customData.put("onesignalCustomerId", deviceId);
-```
+               String deviceId = device.getUserId();
 
-</Tab>
-<Tab title="Android (Native SDK 4+)">
-
-```java
-AutoOSDeviceState device = OneSignal.getDeviceState();
-
-          String deviceId = device.getUserId();
-
-            customData.put("onesignalCustomerId", deviceId);
-```
-
-</Tab>
-</Tabs>
+                 customData.put("onesignalCustomerId", deviceId);
+     ```
 
 **To set up the AppsFlyer iOS SDK:**
 
 1. Make sure that the SDK version you use is 2.3.1.18 and above.
 2. Insert the following lines of code in your app's code - [after OneSignal SDK was launched](https://documentation.onesignal.com/docs/android-sdk-setup) and before the initialization code for AppsFlyer SDK.
+   * For iOS devices using OneSignal SDK version 2.x.x:
 
-<Tabs>
-<Tab title="iOS (SDK 2.x.x) - Swift">
+     <Accordion title="Swift">
 
-```swift
-Autolet status: OSPermissionSubscriptionState = OneSignal.getPermissionSubscriptionState()
-if let deviceId = status.subscriptionStatus.userId{
-    customData.put("onesignalCustomerId", deviceId);
-```
+     ```javascript
+     let status: OSPermissionSubscriptionState = OneSignal.getPermissionSubscriptionState()
+     if let deviceId = status.subscriptionStatus.userId{
+         customData.put("onesignalCustomerId", deviceId);
+     ```
 
-</Tab>
-<Tab title="iOS (SDK 2.x.x) - Objective-C">
+     </Accordion>
 
-```objectivec
-AutoOSPermissionSubscriptionState* status = [OneSignal getPermissionSubscriptionState];
-NSDictionary* CustomDataMap = [[NSDictionary alloc] initWithObjectsAndKeys:status.subscriptionStatus.userId, @"onesignalCustomerId", nil];
-[[AppsFlyerLib shared] setAdditionalData:CustomDataMap];
-```
+     <Accordion title="Objective-C">
 
-</Tab>
-<Tab title="iOS (Native SDK 3+) - Swift">
+     ```
+     OSPermissionSubscriptionState* status = [OneSignal getPermissionSubscriptionState];
+     NSDictionary* CustomDataMap = [[NSDictionary alloc] initWithObjectsAndKeys:status.subscriptionStatus.userId, @"onesignalCustomerId", nil];
+     [[AppsFlyerLib shared] setAdditionalData:CustomDataMap];
+     ```
 
-```swift
-Autoif let deviceState = OneSignal.getDeviceState() {
-    let deviceId = deviceState.userId
-    customData.put("onesignalCustomerId", deviceId);
-```
+     </Accordion>
 
-</Tab>
-<Tab title="iOS (Native SDK 3+) - Objective-C">
+   * For iOS devices using OneSignal Native SDK version 3+:
 
-```objectivec
-AutoOSDeviceState *deviceState = [OneSignal getDeviceState];
-NSString *deviceId = deviceState.userId;
-NSDictionary* CustomDataMap = [[NSDictionary alloc] initWithObjectsAndKeys:deviceId, @"onesignalCustomerId", nil];
-[[AppsFlyerLib shared] setAdditionalData:CustomDataMap];
-```
+     <Accordion title="Swift">
 
-</Tab>
-</Tabs>
+     ```
+     if let deviceState = OneSignal.getDeviceState() {
+         let deviceId = deviceState.userId
+         customData.put("onesignalCustomerId", deviceId);
+     ```
 
-> 📘 Prerequisite
->
-> An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+     </Accordion>
+
+     <Accordion title="Objective-C">
+
+     ```
+     OSDeviceState *deviceState = [OneSignal getDeviceState];
+     NSString *deviceId = deviceState.userId;
+     NSDictionary* CustomDataMap = [[NSDictionary alloc] initWithObjectsAndKeys:deviceId, @"onesignalCustomerId", nil];
+     [[AppsFlyerLib shared] setAdditionalData:CustomDataMap];
+     ```
+
+     </Accordion>
+
+**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 
 **To set up a new integration:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
-
-( **To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.
-
-> 📘 Note
->
-> The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below:
 
-### Integration tab
+<Accordion title="Integration tab">
 
 ![onesignal-integration-tab.png](https://files.readme.io/95ec88041360d492367ed383aa3242bebe1cd5c5abcff8fba64e7888f0a9c052-360017329277.png)
 
 The Integration Tab is divided into different sections as described below.
 
-#### Activate partner
+### Activate partner
 
-Must be enabled for as long as you work with the partner.
+Must be enabled for as long as you work with the partner.  
+Learn more about [partner activation](/docs/partner-activation-deactivation#activate-a-partner-integration).
 
-Learn more about [partner activation](/docs/partner-activation-deactivation#activating-a-partner).
+### General settings
 
-#### General settings
+#### OneSignal AppID
 
-##### OneSignal AppID
-
-To connect your OneSignal account with AppsFlyer, enter your app ID in **OneSignal AppID** field.
-
+To connect your OneSignal account with AppsFlyer, enter your app ID in **OneSignal AppID** field.  
 Your OneSignal app ID is available in the OneSignal platform under **Settings** > **Keys & IDs**.
 
 ![onesignal-app-id-en_us.png](https://files.readme.io/2801bce8ea7ef4be731d8429bd0408f432d4b5600fbd359e989b0013da56b93e-360015238678.png)
 
-#### Default postbacks
+### Default postbacks
 
 ![onesignal-default-postbacks_en-us.png](https://files.readme.io/07e40365685543a318be8a16c9ea83638634d4a60333338eca0f76d140f84bef-360014377697.png)
 
-AppsFlyer can send automatic postbacks to OneSignal following user installs. Use this section to define the source of the users that the postbacks are sent to for each event.
-
-Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default%20postbacks).
+AppsFlyer can send automatic postbacks to OneSignal following user installs. Use this section to define the source of the users that the postbacks are sent to for each event.  
+Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default-postbacks).
 
 **To send postbacks for any user that downloads the app to OneSignal**, select **All media sources, including organic**.
 
@@ -181,26 +166,36 @@ Although all events are sent by AppsFlyer, organic installs are not counted by O
 
 Once you have saved the configuration, AppsFlyer sends the following data to OneSignal for every organic and non-organic install:
 
-- Media source
-- Campaign name
-- Device ID
-- Ad ID
+* Media source
+* Campaign name
+* Device ID
+* Ad ID
 
-### Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Attribution Links are not available for this partner.
 
-### Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not applicable in the integration with this partner.
 
-### Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not applicable in the integration with this partner.
 
-### Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions are not available for this partner.
+
+</Accordion>
 
 ## View user attribution data in OneSignal
 

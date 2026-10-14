@@ -28,7 +28,7 @@ For web attribution, the landing page load (**web visit**) is the user’s first
 
 This process, known as **traffic source resolution**, identifies and resolves media source and campaign information from URL parameters. AppsFlyer captures and prioritizes these parameters to determine the initial traffic source context for a visit.
 
-Traffic source resolution is a **pre-attribution process**. The resolved parameters may be overridden later during [the attribution process](/docs/web-performance-measurement-overview#the-appsflyer-web-attribution-flow).
+Traffic source resolution is a **pre-attribution process**. The resolved parameters may be overridden later during [the attribution process](/docs/web-performance-measurement-overview#the-web-performance-measurement-flow).
 
 The role of traffic source resolution does not end with the visit. Its outcome provides the traffic-source context that the attribution process later uses to attribute subsequent web events, including the user-acquisition event.
 

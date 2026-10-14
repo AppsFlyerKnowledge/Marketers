@@ -53,7 +53,9 @@ The request must include an HTTP header containing your account's [AppsFlyer V2.
 
 ## API Specifications and sample code
 
-### Add/modify identifiers (PUT)
+<div id="addmodify-identifiers-put" />
+
+<Accordion title="Add/modify identifiers (PUT)">
 
 **API request URL**
 
@@ -103,7 +105,7 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 | `{key_type}` | The identifier used as the unique value to represent the user in each data row of the request.<br /><br />The value specified here applies to every row in the request.<br /><br />Possible values:<br /><br />* idfa<br />* gaid<br />* idfv<br />* customer\_user\_id<br />* imei<br />* oaid | Yes |
 | `{action}` | "add" | No<br /><br />Default value: "add" |
 | `{key_value}` | Valid identifier value for the key\_type specified | Yes |
-| \{identifiers\} | Object containing the names and values of the identifiers to add:<br /><br />* \{hashed\_emails\}<br />* \{phone\_number\_sha256\}<br />* \{phone\_number\_e164\_sha256\} | Yes<br /><br />* Must include a value for at least 1 of these 3 identifiers |
+| \{identifiers\} | Object containing the names and values of the identifiers to add:<ul><li>\{hashed\_emails\}</li><li>\{phone\_number\_sha256\}</li><li>\{phone\_number\_e164\_sha256\}</li></ul> | Yes<ul><li>Must include a value for at least 1 of these 3 identifiers</li></ul> |
 | `{hashed_emails}` | An array of up to 2 hashed email addresses<br /><br />Format:<br /><br />* Lowercase<br />* No white spaces<br />* SHA256 hashed<br /><br />Example value before hashing: name@domain.com | No |
 | `{phone_number_sha256}` | Phone number (see note below)<br /><br />Format:<br /><br />* No symbols, letters, or leading zeroes<br />* Include country code<br />* SHA256 hashed<br /><br />Example value before hashing:<br /><br />442070313000 | No |
 | `{phone_number_e164_sha256}` | Phone number in E164 format (see note below)<br /><br />Format<br /><br />* E164 phone number<br />* SHA256 hashed<br /><br />Example value before hashing:<br /><br />+442070313000 | No |
@@ -144,7 +146,11 @@ body:
 }
 ```
 
-### Remove identifiers (PUT)
+</Accordion>
+
+<div id="remove-identifiers-delete" />
+
+<Accordion title="Remove identifiers (PUT)">
 
 **API request URL**
 
@@ -188,7 +194,7 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 | `{key_type}` | The identifier used as the unique value to represent the user in each data row of the request.<br /><br />The value specified here applies to every row in the request.<br /><br />Possible values:<br /><br />* idfa<br />* gaid<br />* idfv<br />* customer\_user\_id<br />* imei<br />* oaid | Yes |
 | `{key_value}` | Valid identifier value for the key\_type specified | Yes |
 | `{action}` | "remove" | No<br /><br />Default value: "add" |
-| \{identifiers\} | An array containing the names of the identifiers for which values should be deleted:<br /><br />* \{hashed\_emails\}<br />* \{phone\_number\_sha256\}<br />* \{phone\_number\_e164\_sha256\} | Yes<br /><br />* Must include at least 1 of these 3 identifiers |
+| \{identifiers\} | An array containing the names of the identifiers for which values should be deleted:<ul><li>\{hashed\_emails\}</li><li>\{phone\_number\_sha256\}</li><li>\{phone\_number\_e164\_sha256\}</li></ul> | Yes<ul><li>Must include at least 1 of these 3 identifiers</li></ul> |
 
 **Restrictions**
 
@@ -215,12 +221,14 @@ body:
 }
 ```
 
-### Responses
+</Accordion>
+
+<Accordion title="Responses">
 
 | Code | Message | Description |
 | --- | --- | --- |
 | 202 | Accepted for processing | Request will be applied during the next processing window. |
-| 400 | Request body must have a valid key\_type | The following key\_types are supported:<br /><br />* idfa<br />* gaid<br />* idfv<br />* customer\_user\_id<br />* imei<br />* oaid |
+| 400 | Request body must have a valid key\_type | The following key\_types are supported:<ul><li>idfa</li><li>gaid</li><li>idfv</li><li>customer\_user\_id</li><li>imei</li><li>oaid</li></ul> |
 | 400 | Request must have ‘data’ with at least 1 element | Data list can not be empty. |
 | 400 | Request ‘data’ should not exceed the size of 4000 in a single request | Data list can include a maximum of 4,000 rows. |
 | 400 | Request data has too many invalid ‘data’ elements | More than 10% of the data to modify is not valid according to the specification. |
@@ -266,7 +274,11 @@ body:
 }
 ```
 
-### Rate limitations
+</Accordion>
+
+<Accordion title="Rate limitations">
 
 * 5 requests per second
 * 350 requests per minute
+
+</Accordion>

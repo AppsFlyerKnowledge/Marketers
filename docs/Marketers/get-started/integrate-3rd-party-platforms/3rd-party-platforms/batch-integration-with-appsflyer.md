@@ -24,9 +24,9 @@ x-zendesk:
 ---
 Batch allows advertisers to maximize user engagement while offering a personalized user experience. The Batch advanced user engagement platform lets you communicate with your smartphone users in a more personalized way, reduce your churn and boost your app ROI. AppsFlyer and Batch combined can help the advertiser to further customize user experience and engagement based on user journey. This means that the advertiser can send specific in-app messages and push notifications based on attribution data such as media source and campaign. Integrating Batch and AppsFlyer is simple and straightforward.
 
-> ❗️ Important
->
-> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+**Important!**
+
+[Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Integrating Batch and AppsFlyer
 
@@ -36,15 +36,14 @@ In order for Batch to be able to match data from AppsFlyer with its own data, th
 
 It's important that you put a real Customer User ID, and not a placeholder value. A real Customer User ID is a user ID that you use to identify your customers in your own systems.
 
-<Tabs>
-<Tab title="Android">
+<Accordion title="Android">
 
 #### Batch
 
 Set Customer User ID in Batch SDK.
 
-```java
-JavaBatch.User.editor()
+```
+Batch.User.editor()
     .setIdentifier("user@example.com")
     .save();
 ```
@@ -53,21 +52,22 @@ JavaBatch.User.editor()
 
 Set Customer User ID in AppsFlyer SDK.
 
-```java
-JavaAppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
+```
+AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 ```
 
-</Tab>
-<Tab title="iOS">
+</Accordion>
 
-**Objective C**
+<Accordion title="iOS">
+
+<Accordion title="Objective C">
 
 #### Batch
 
 Set Customer User ID in Batch SDK.
 
-```objectivec
-Objective-CBatchUserDataEditor *editor = [BatchUser editor];
+```
+BatchUserDataEditor *editor = [BatchUser editor];
 [editor setIdentifier:@"user@example.com"];
 [editor save];
 ```
@@ -76,18 +76,20 @@ Objective-CBatchUserDataEditor *editor = [BatchUser editor];
 
 Set Customer User ID in AppsFlyer SDK.
 
-```objectivec
-Objective-C[AppsFlyerTracker sharedTracker].customerUserID = @"user@example.com";
+```
+[AppsFlyerTracker sharedTracker].customerUserID = @"user@example.com";
 ```
 
-**Swift**
+</Accordion>
+
+<Accordion title="Swift">
 
 #### Batch
 
 Set Customer User ID in Batch SDK.
 
-```swift
-Swiftlet editor = BatchUser.editor()
+```javascript
+let editor = BatchUser.editor()
 editor.setIdentifier("user@example.com")
 editor.save()
 ```
@@ -96,12 +98,13 @@ editor.save()
 
 Set Customer User ID in AppsFlyer SDK.
 
-```swift
-SwiftAppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
+```
+AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 ```
 
-</Tab>
-</Tabs>
+</Accordion>
+
+</Accordion>
 
 ### Setting Up Batch
 
@@ -109,60 +112,64 @@ SwiftAppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 
 **To set up a new integration:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
-
-( **To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.
-
-> 📘 Note
->
-> The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below.
 
 The Batch configuration only requires the **Integration** tab. The other four tabs are inactive as they are not required in this integration.
 
-#### Integration tab
+<Accordion title="Integration tab">
 
-##### Activate Partner
+### Activate Partner
 
-On the **first visit** here, you will need to toggle ON the **Activate Partner** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.
-
+On the **first visit** here, you will need to toggle ON the **Activate Partner** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 
-##### General Settings
+### General Settings
 
-Before you can set up the integration with Batch, make sure to obtain your **Batch Rest API Key** and **Batch API Key**. If not sure, [contact Batch](mailto:hello@batch.com) for more information.
+Before you can set up the integration with Batch, make sure to obtain your **Batch Rest API Key** and **Batch API Key**. If not sure, [contact Batch](mailto:hello@batch.com) for more information.  
 
 Once you obtain the two keys, enter each in the relevant field. Under **General Settings**, put your **Batch Rest API Key** in the **BATCH\_REST\_API\_KEY** field and your **Batch API Key** in the **BATCH\_API\_KEY** field.
 
-<Image src="https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png" alt="batch-general-settings-keys.png" />
+![batch-general-settings-keys.png](https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png)
 
-##### Default Postbacks
+### Default Postbacks
 
-Under **Default Postbacks**, in the **Sending Option** drop-down list, select **Events attributed to any partner or organic**.
+Under **Default Postbacks**, in the **Sending Option** drop-down list, select **Events attributed to any partner or organic***.*
 
-<Image src="https://files.readme.io/e3e84f990d7f05c94fb69195a7e57caeffcd1ca35a5fb0148fc6a81ab9816673-360001778958.png" alt="batch-default-postbacks.png" />
+![batch-default-postbacks.png](https://files.readme.io/e3e84f990d7f05c94fb69195a7e57caeffcd1ca35a5fb0148fc6a81ab9816673-360001778958.png)
 
 Click **Save** in the bottom right-hand corner of the screen.
 
-#### Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Attribution Links are not available for Batch.
 
-#### Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
-#### Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-#### Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions are not available for Batch.
+
+</Accordion>
 
 ## Viewing AppsFlyer data in the Batch dashboard
 
@@ -170,4 +177,4 @@ Once AppsFlyer starts sending install postbacks to Batch, you can view the data 
 
 You can see the data in the **Userbase** tab of your Batch dashboard.
 
-<Image src="https://files.readme.io/b0277dc43b81630d5b260273b208a5ab9b62e13c7caca08e8b631d73c8de3b2a-small-360001694717.png" alt="Userbase.png" />
+![Userbase.png](https://files.readme.io/b0277dc43b81630d5b260273b208a5ab9b62e13c7caca08e8b631d73c8de3b2a-small-360001694717.png)

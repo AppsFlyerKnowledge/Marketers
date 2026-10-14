@@ -60,16 +60,12 @@ Below we explain two methods of A/B testing using:
 * A single media source
 * Multiple media sources
 
-
-
 | Method | Pros | Cons |
 | --- | --- | --- |
-| A/B testing with a single media source | * Quick setup<br />* Easy to test install conversion rate | * Results may only apply to users of the specific media source<br />* May take longer to test |
-| A/B testing across multiple media sources | * Fast results<br />* Results apply to users from all media sources | * Need to update attribution links in multiple places |
+| A/B testing with a single media source | <ul><li>Quick setup</li><li>Easy to test install conversion rate</li></ul> | <ul><li>Results may only apply to users of the specific media source</li><li>May take longer to test</li></ul> |
+| A/B testing across multiple media sources | <ul><li>Fast results</li><li>Results apply to users from all media sources</li></ul> | <ul><li>Need to update attribution links in multiple places</li></ul> |
 
-
-
-### Method 1: A/B testing with a single media source
+<Accordion title="Method 1: A/B testing with a single media source">
 
 **Setup**:
 
@@ -85,7 +81,9 @@ Below we explain two methods of A/B testing using:
 
 * Compare KPIs (for example, install conversion rate, ROI, ARPU, loyal user rate) of the campaigns in the Overview dashboard page.
 
-### Method 2: A/B testing across multiple media sources
+</Accordion>
+
+<Accordion title="Method 2: A/B testing across multiple media sources">
 
 **Setup**:
 
@@ -98,6 +96,8 @@ Below we explain two methods of A/B testing using:
 
 1. Download the installation or in-app events raw data reports. Use your selected subscriber parameter column to filter and sort your data.
 2. Compare the performance of creatives with either of the 2 stored values.
+
+</Accordion>
 
 ## A/B testing ad placement on mobile web
 
@@ -149,7 +149,6 @@ Helping advertisers identify the best (and worst) performing media sources for t
 >
 > * 1 and 2 are different ads on the same media source. Compare a single KPI for them, for example, retention day 4 rate, to A/B test creatives, targeting, or ad placement.
 > * 2 and 3 are ads on different media sources. If the creatives and targeting of the ads are identical, comparing a single KPI enables A/B testing the media source.
-
 
 ### Using audiences split for easy A/B testing of media sources
 

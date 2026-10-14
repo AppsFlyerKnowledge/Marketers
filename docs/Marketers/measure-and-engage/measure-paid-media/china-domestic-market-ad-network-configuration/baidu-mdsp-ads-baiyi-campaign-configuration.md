@@ -24,12 +24,12 @@ x-zendesk:
 ---
 ## Setting up Baidu mDSO Ads (Baiyi)
 
-1. In AppsFlyer, from the side menu, select**Collaborate****> Partner Integrations** > **Partner Marketplace**.
+1. In AppsFlyer, from the side menu, select**Collaborate> Partner Integrations** > **Partner Marketplace**.
 2. Search for the partner and select it. You’re directed to the integration setup page.
 
 The Baidu mDSP Ads (Baiyi) configuration window includes 2 active tabs: Integration and Attribution link. Click on the items below to read about the tabs setup.
 
-## Integration tab
+<Accordion title="Integration tab">
 
 ### Activate partner
 
@@ -58,7 +58,9 @@ In this section, you can map your AppsFlyer events with Baidu mDSP Ads (Baiyi) v
 | **Partner Event Identifier** | The unique name or ID of each event as defined on Baidu mDSP Ads (Baiyi) 's side.  <br />Obtain the corresponding Event ID from Baidu mDSP Ads (Baiyi) and set in the text field. |
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 In this tab, you can create the attribution links you want to send to Baidu mDSP Ads (Baiyi) for attributing Baidu mDSP Ads (Baiyi)'s campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
@@ -81,7 +83,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
 
 ### Click-through attribution
 
@@ -97,17 +99,25 @@ More details about the [click lookback window here](/docs/set-up-lookback-window
 
 This is the attribution link that contains all the setup information you have set for it. Send it to Baidu mDSP Ads (Baiyi) to be activated when leads click on a corresponding ad.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost integration is not available for Baidu mDSP Ads (Baiyi).
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad revenue integration is not available for Baidu mDSP Ads (Baiyi).
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions configuration is not available for Baidu mDSP Ads (Baiyi).
+
+</Accordion>
 
 ## Create conversion rule at Baidu mDSP ads
 

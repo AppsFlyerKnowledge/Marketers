@@ -60,13 +60,13 @@ Steps for encryption:
 
 Sample attribution link with encrypted value pass:
 
-https://app.appsflyer.com/id554782625?pid=mediasource\_int&c=campaignName&idfa=ABCDEFGH-ABCD-ABCD-ABCD-A12345678910&af\_siteid=12345**&af\_enc\_data=DvVvQRow%2F2N0LiQGZh0wvwucFygbll9IwAMSN%2B%2BDQxo%3D**
+https://app.appsflyer.com/id554782625?pid=mediasource_int&c=campaignName&idfa=ABCDEFGH-ABCD-ABCD-ABCD-A12345678910&af_siteid=12345 **&af\_enc\_data=DvVvQRow%2F2N0LiQGZh0wvwucFygbll9IwAMSN%2B%2BDQxo%3D**
 
 **Note:** Only ad networks that perform the cost encryption integration with AppsFlyer can actually send encrypted cost data with their clients' attribution links.
 
 ## AES encryption process
 
-To accomplish the encryption, partners must use the [**AES algorithm**](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard), with an [**ECB block mode**](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_.28ECB.29), using [**PKCS5 padding**](https://en.wikipedia.org/wiki/Padding_(cryptography) #PKCS7). Then they must [**Base-64 encode**](https://en.wikipedia.org/wiki/Base64) the encrypted data, and finally, [**URL-encode**](https://en.wikipedia.org/wiki/Percent-encoding) the result.
+To accomplish the encryption, partners must use the [**AES algorithm**](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard), with an [**ECB block mode**](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_.28ECB.29), using [**PKCS5 padding**](https://en.wikipedia.org/wiki/Padding_(cryptography)#PKCS7). Then they must [**Base-64 encode**](https://en.wikipedia.org/wiki/Base64) the encrypted data, and finally, [**URL-encode**](https://en.wikipedia.org/wiki/Percent-encoding) the result.
 
 Networks can use any tech stack to accomplish this. See examples below for PHP, Java, and Python:
 

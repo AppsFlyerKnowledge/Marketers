@@ -24,7 +24,7 @@ x-zendesk:
 ---
 ## AppsFlyer dashboards
 
-![OverviewBasic.png](https://files.readme.io/58185f6682891435b05110cc9f7ecfa3204226fef526366f4aab9fbda76b2d8c-OverviewBasic.png)
+![OverviewBasic.png](https://files.readme.io/ff5e0fc20694b5f0233af9ea347fc11ae9587b29c542cda8dc2ed8daf334834a-11178012063377.png)
 
 The primary dashboard is the Overview dashboard. This contains the lifetime value (LTV) performance of user acquisition (UA) and retargeting campaigns.
 

@@ -28,73 +28,59 @@ x-zendesk:
 
 #### Overview
 
-- Prepare a CSV file containing the ad spend details as follows:
-  - Date of spend
-  - App ID (multiple apps allowed per file if the apps belong to the same owner)
-  - Media source (one per file allowed)
-  - Campaign name
-  - Spend amount
-  - [Optional] Geo
-  - [Optional] Currency (default USD)
-- Submit the file to AppsFlyer by email/file upload using the ad network account in AppsFlyer.
-
-> 📘 Important
->
-> Before you submit files for the first time, the advertiser must grant you, the ad network, Cost Import permission. This needs to be done once for each app and is a very brief process.
->
-> Once a file is uploaded, it can't be reverted.
-
-- Monitor and check that no errors were found in the file.
+* Prepare a CSV file containing the ad spend details as follows:
+  * Date of spend
+  * App ID (multiple apps allowed per file if the apps belong to the same owner)
+  * Media source (one per file allowed)
+  * Campaign name
+  * Spend amount
+  * [Optional] Geo
+  * [Optional] Currency (default USD)
+* Submit the file to AppsFlyer by email/file upload using the ad network account in AppsFlyer.   
+  **Note:**
+  * Before you submit files for the first time, the advertiser must grant you, the ad network, Cost Import permission. This needs to be done once for each app and is a very brief process.
+  * Once a file is uploaded, it can't be reverted.
+* Monitor and check that no errors were found in the file.
 
 ### Submitting ad spend files for ad networks
 
-- Use either the upload or email method to ingest ad spend files.
-- 👍 Best practice
-  
-  Initially, use the upload method as it is easier to resolve CSV formatting issues.
-- Ad Networks cannot import agency cost data; only advertisers can.
+* Use either the upload or email method to ingest ad spend files.
+* [Best practice] Initially, use the upload method as it is easier to resolve CSV formatting issues.
+* Ad Networks cannot import agency cost data; only advertisers can.
 
-<Tabs>
-<Tab title="Submission by file upload">
+#### Submission by file upload
 
 **To submit Cost Import files by upload:**
 
-1. [For each app that you work with you need to do this once] [Ask the advertiser to grant you Cost Import permission](/docs/import-cost-data#cost-import-permissions-for-ad-networks).
+1. [For each app that you work with you need to do this once] [Ask the advertiser to grant you Cost Import permission](/docs/import-cost-data#cost-import-permissions-for-ad-networks).
 2. [Prepare the CSV file using this format and schema](/docs/import-cost-data#prepare-csv-file-with-cost-data).
 3. Click here to [log in to your AppsFlyer ad network account.](https://hq1.appsflyer.com/auth/login)
 4. [Upload and ingest the file](/docs/import-cost-data#upload-file).
 5. In the AppsFlyer dashboard, monitor the ingestion:
-   - [Status](/docs/import-cost-data#cost-import-dashboard)
-   - [Matched rows](/docs/import-cost-data#matched-rows)
-   - [Cost Import actions](/docs/import-cost-data#cost-import-dashboard)
-6. Additional procedures:
-   - [Overwrite previous ingestion](/docs/import-cost-data#cost-import-dashboard)
-   - [Revert (cancel)](/docs/import-cost-data#cost-import-dashboard)
 
-</Tab>
-<Tab title="Submission by email">
+   * [Status](/docs/import-cost-data#cost-import-dashboard)
+   * [Matched rows](/docs/import-cost-data#matched-rows)
+   * [Cost Import actions](/docs/import-cost-data#cost-import-dashboard)
+6. Additional procedures:
+   * [Overwrite previous ingestion](/docs/import-cost-data#cost-import-dashboard)
+   * [Revert (cancel)](/docs/import-cost-data#cost-import-dashboard)
+
+#### Submission by email
 
 **To submit Cost Imports files by email:**
 
 1. [For each app that you work with you need to do this once] [Ask the advertiser to grant you Cost Import permission](/docs/import-cost-data#cost-import-permissions-for-ad-networks).
 2. [Prepare the CSV file using this format and schema](/docs/import-cost-data#prepare-csv-file-with-cost-data).
 3. If you don't have an Cost Import token (you'll need it when you email the file):
-   - Click here to [log in to your AppsFlyer ad network account](https://hq1.appsflyer.com/auth/login).
-   - [Get an Ad Spend token.](/docs/import-cost-data#token-for-email-import) Note: The same token is used for all advertisers.
-4. Submit file by [Email](/docs/import-cost-data#email-file)
-5. AppsFlyer emails a status report; it notes if the ingest was successful or if issues were found. 
-
-> 📘 Note
->
-> If the status mail was not received see [the Cost import dashboard](/docs/import-cost-data#cost-import-dashboard).
-
+   * Click here to [log in to your AppsFlyer ad network account](https://hq1.appsflyer.com/auth/login).
+   * [Get an Ad Spend token.](/docs/import-cost-data#token-for-email-import) Note: The same token is used for all advertisers.
+4. Submit file by [Email](/docs/import-cost-data#email-file)
+5. AppsFlyer emails a status report; it notes if the ingest was successful or if issues were found. **Note**: If the status mail was not received see [the Cost import dashboard](/docs/import-cost-data#cost-import-dashboard).
 6. In the AppsFlyer dashboard monitor the ingestion:
-   - [Status](/docs/import-cost-data#cost-import-dashboard)
-   - [Matched rows](/docs/import-cost-data#matched-rows)
-   - [Cost Import actions](/docs/import-cost-data#cost-import-dashboard)
-7. Additional procedures:
-   - [Overwrite previous ingestion](/docs/import-cost-data#cost-import-dashboard)
-   - [Revert (cancel)](/docs/import-cost-data#cost-import-dashboard)
 
-</Tab>
-</Tabs>
+   * [Status](/docs/import-cost-data#cost-import-dashboard)
+   * [Matched rows](/docs/import-cost-data#matched-rows)
+   * [Cost Import actions](/docs/import-cost-data#cost-import-dashboard)
+7. Additional procedures:
+   * [Overwrite previous ingestion](/docs/import-cost-data#cost-import-dashboard)
+   * [Revert (cancel)](/docs/import-cost-data#cost-import-dashboard)

@@ -39,7 +39,9 @@ Agency rules help advertisers:
 
 See the sections that follow for instructions for the view, add, edit, and delete rules. All procedures require AppsFlyer admin privileges.
 
-### View rule list
+<div id="view-rule-list" />
+
+<Accordion title="View rule list">
 
 **![AppsFlyerAdmin_us-en.png](https://files.readme.io/90ad4b15e0e27f2043e3e6dc1dfaf0581add5e5df2122f95b235728fb140fa5c-4408750662545.png) To view all the agency fee rules created in your account**:
 
@@ -51,7 +53,9 @@ See the sections that follow for instructions for the view, add, edit, and delet
    * **Failed:** The rule is failing to calculate for technical reasons.
 2. Filter the rules in the list using the filter options: Partner, App, and Media source.
 
-### Add rule
+</Accordion>
+
+<Accordion title="Add rule">
 
 The rule builder user interface is designed for interactive rule building. **Tip!** Familiarize and experiment with the rule builder before reviewing this article in detail.
 
@@ -77,8 +81,9 @@ The rule builder user interface is designed for interactive rule building. **Ti
 > * A mandatory field is not populated. To resolve, ensure that all the mandatory fields are populated.
 > * The rule logic conflicts with an existing rule. To resolve, change the app, or media source.
 
+</Accordion>
 
-### Edit, duplicate, or delete a rule
+<Accordion title="Edit, duplicate, or delete a rule">
 
 **Considerations:**
 
@@ -97,10 +102,9 @@ When you edit or delete a rule, previously calculated data (up to 90 days in the
 >
 > The agency and start date of a rule cannot be edited after the rule is created. If you need to change them, delete your old configuration, and create a new rule.
 
+</Accordion>
 
-## Traits and limitations
-
-
+<Accordion title="Traits and limitations">
 
 | Trait | Remarks |
 | --- | --- |
@@ -109,6 +113,6 @@ When you edit or delete a rule, previously calculated data (up to 90 days in the
 | Historical data | Rules can be created and impact data up to 90 days in the past. |
 | Rule processing frequency | New agency fee rules are processed every **4 hours**. This means that a rule may take up to **4 hours** to apply. |
 
-
-
 Traits and limitations
+
+</Accordion>

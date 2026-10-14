@@ -22,11 +22,13 @@ x-zendesk:
   created_at: '2025-09-15T15:49:21Z'
   edited_at: '2025-10-23T07:50:52Z'
 ---
+## Overview
+
 Daily Active Users (DAU) and Monthly Active Users (MAU) are key metrics for understanding app engagement and overall user behavior. They provide valuable insights into your active user base, including user stickiness, campaign performance, and growth trends over time.
 
 This article explains how to calculate DAU and MAU using queries on two **Premium** Data Locker raw data tables that represent user acquisition and retargeting traffic: the `sessions` and `sessions_retargeting` tables.
 
-> 📘 Note
+> 📘 **Note**
 >
 > Starting February 2025, the Activity dashboard in AppsFlyer shows Unified (UA & Retargeting) data by default. You may notice a minor delta between raw data and dashboard numbers due to [approved algorithmic adjustments](/docs/activity-metrics-in-my-dashboards#specifications-and-limitations).
 
@@ -40,8 +42,7 @@ For apps not using this mode, we recommend applying `count(distinct appsflyer_id
 
 Calculate the total number of unique users per day using the queries below.
 
-<Tabs>
-<Tab title="User Acquisition (UA)">
+<Accordion title="Query for DAU – User Acquisition (UA)">
 
 Select active UA users for a specified day.
 
@@ -52,15 +53,16 @@ WITH sessions_cleaned AS (
         COALESCE(advertising_id, appsflyer_id) AS user_id
     FROM sessions
     WHERE app_id = 'your.app.id.here'                      -- Replace with your app ID
-		    AND SUBSTR(event_time, 1, 10) = 'YYYY-MM-DD'       -- Target date
+		    AND SUBSTR(event_time, 1, 10) = 'YYYY-MM-DD'       -- Target date                 
 )
 
 SELECT COUNT(DISTINCT user_id) AS dau_ua
 FROM sessions_cleaned;
 ```
 
-</Tab>
-<Tab title="Retargeting">
+</Accordion>
+
+<Accordion title="Query for DAU – Retargeting">
 
 Select active retargeting users for a specified day.
 
@@ -71,18 +73,25 @@ WITH sessions_retargeting_cleaned AS (
         COALESCE(advertising_id, appsflyer_id) AS user_id
     FROM sessions_retargeting
     WHERE app_id = 'your.app.id.here'                      -- Replace with your app ID
-		    AND SUBSTR(event_time, 1, 10) = 'YYYY-MM-DD'   -- Target date
+		    AND SUBSTR(event_time, 1, 10) = 'YYYY-MM-DD'   -- Target date                 
 )
 SELECT COUNT(DISTINCT user_id) AS dau_retargeting
 FROM sessions_retargeting_cleaned;
 ```
 
-</Tab>
-<Tab title="Unified (UA & Retargeting)">
+</Accordion>
+
+<Accordion title="Query for DAU – Unified (UA & Retargeting)">
 
 Select active UA and retargeting users for a specified day.
 
-To get complete active user coverage, you must **union** the `sessions` and `sessions_retargeting` tables. Make sure the fields are aligned — typically by `app_id`, `event_time`, `advertising_id` and `appsflyer_id`. If needed, normalize the schema so that both tables have consistent column names.
+To get complete active user coverage, you must **union**
+the `sessions` and `sessions_retargeting`
+tables. Make sure the fields are aligned — typically by
+`app_id`, `event_time`,
+`advertising_id` and `appsflyer_id`. If
+needed, normalize the schema so that both tables have consistent
+column names.
 
 ```sql
 WITH ua_sessions AS (
@@ -91,11 +100,11 @@ WITH ua_sessions AS (
         COALESCE(advertising_id, appsflyer_id) AS user_id
     FROM sessions
     WHERE app_id = 'your.app.id.here'                 -- Replace with your app ID
-      AND SUBSTR(event_time, 1, 10) = 'YYYY-MM-DD'    -- Target date
+      AND SUBSTR(event_time, 1, 10) = 'YYYY-MM-DD'    -- Target date           
       AND is_primary_attribution = TRUE
 ),
 
-retargeting_sessions AS ( 
+retargeting_sessions AS (
     SELECT DISTINCT
         app_id,
         COALESCE(advertising_id, appsflyer_id) AS user_id
@@ -114,10 +123,9 @@ SELECT COUNT(DISTINCT user_id) AS dau_unified
 FROM all_sessions;
 ```
 
-</Tab>
-</Tabs>
+</Accordion>
 
-## Calculate Monthly Active Users (MAU)
+## **Calculate Monthly Active Users (MAU)**
 
 AppsFlyer dashboards present MAU in two ways:
 
@@ -126,8 +134,7 @@ AppsFlyer dashboards present MAU in two ways:
 
 The queries below demonstrate how to calculate the first type of MAU. To calculate calendar month MAU instead, simply adjust the date range to match the desired month.
 
-<Tabs>
-<Tab title="User Acquisition (UA)">
+<Accordion title="Query for MAU – User Acquisition (UA)">
 
 Select active UA users for a specified month.
 
@@ -138,14 +145,15 @@ WITH sessions_cleaned AS (
         COALESCE(advertising_id, appsflyer_id) AS user_id
     FROM sessions
     WHERE app_id = 'your.app.id.here'  -- Replace with your app ID
-			AND DATE_DIFF('day', TRY_CAST(SUBSTR(event_time, 1, 10) AS DATE), DATE('YYYY-MM-DD')) <= 31  -- Replace with target end date
+			AND DATE_DIFF('day', TRY_CAST(SUBSTR(event_time, 1, 10) AS DATE), DATE('YYYY-MM-DD')) <= 31  -- Replace with target end date 
 )
 SELECT COUNT(DISTINCT user_id) AS mau_ua
 FROM sessions_cleaned;
 ```
 
-</Tab>
-<Tab title="Retargeting">
+</Accordion>
+
+<Accordion title="Query for MAU – Retargeting">
 
 Select active retargeting users for a specified month.
 
@@ -156,19 +164,26 @@ WITH sessions_cleaned AS (
         COALESCE(advertising_id, appsflyer_id) AS user_id
     FROM sessions_retargeting
     WHERE app_id = 'your.app.id.here'  -- Replace with your app ID
-			AND DATE_DIFF('day', TRY_CAST(SUBSTR(event_time, 1, 10) AS DATE), DATE('YYYY-MM-DD')) <= 31  -- Replace with target end date
+			AND DATE_DIFF('day', TRY_CAST(SUBSTR(event_time, 1, 10) AS DATE), DATE('YYYY-MM-DD')) <= 31  -- Replace with target end date 
 )
 
 SELECT COUNT(DISTINCT user_id) AS mau_retargeting
 FROM sessions_cleaned;
 ```
 
-</Tab>
-<Tab title="Unified (UA & Retargeting)">
+</Accordion>
+
+<Accordion title="Query for MAU – Unified (UA & Retargeting)">
 
 Select active UA and retargeting users for a specified month.
 
-To get complete active user coverage, you must **union** the `sessions` and `sessions_retargeting` tables. Make sure the fields are aligned — typically by `app_id`, `event_time`, `advertising_id` and `appsflyer_id`. If needed, normalize the schema so that both tables have consistent column names.
+To get complete active user coverage, you must **union**
+the `sessions` and `sessions_retargeting`
+tables. Make sure the fields are aligned — typically by
+`app_id`, `event_time`,
+`advertising_id` and `appsflyer_id`. If
+needed, normalize the schema so that both tables have consistent
+column names.
 
 ```sql
 WITH ua_sessions AS (
@@ -177,7 +192,7 @@ WITH ua_sessions AS (
         COALESCE(advertising_id, appsflyer_id) AS user_id
     FROM sessions
     WHERE app_id = 'your.app.id.here'                        -- Replace with your app ID
-      AND DATE_DIFF('day', TRY_CAST(SUBSTR(event_time, 1, 10) AS DATE), DATE('YYYY-MM-DD')) <= 31  -- Replace with target end date
+      AND DATE_DIFF('day', TRY_CAST(SUBSTR(event_time, 1, 10) AS DATE), DATE('YYYY-MM-DD')) <= 31  -- Replace with target end date        
       AND is_primary_attribution = TRUE
 ),
 
@@ -186,7 +201,7 @@ retargeting_sessions AS (
         app_id,
         COALESCE(advertising_id, appsflyer_id) AS user_id
     FROM sessions_retargeting
-    WHERE app_id = 'your.app.id.here'                        -- Same app
+    WHERE app_id = 'your.app.id.here'                        -- Same app 
       AND DATE_DIFF('day', TRY_CAST(SUBSTR(event_time, 1, 10) AS DATE), DATE('YYYY-MM-DD')) <= 31  -- Replace with target end date
 ),
 
@@ -200,5 +215,4 @@ SELECT COUNT(DISTINCT user_id) AS mau_unified
 FROM all_sessions;
 ```
 
-</Tab>
-</Tabs>
+</Accordion>

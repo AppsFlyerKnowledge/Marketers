@@ -41,7 +41,7 @@ If you haven't configured Creative Optimization yet, you can find instructions o
 
 ## Procedures—Using the Discovery AI dashboard
 
-### Set up the dashboard
+<Accordion title="Set up the dashboard">
 
 **To set up the Discovery AI dashboard to view data about specific creatives**:
 
@@ -50,8 +50,8 @@ If you haven't configured Creative Optimization yet, you can find instructions o
 3. Use the search bar or the preset [quick queries](/docs/creative-optimization-discovery-ai-dashboard#quick-queries), to find specific creatives, or specific elements, texts, etc. that appear within creatives.
 4. [Coming soon] Use the Discovery AI search to find specific creatives, or specific elements, texts, etc. that appear within creatives. [Learn more about Discovery AI search](/docs/creative-optimization-discovery-ai-dashboard#discovery-ai-search).
    1. Write a search term/element description in the search bar and click **Enter**.
-   2. [Optional] Click **Save as Smart tag** to add your search term to the smart tag list for future use. See the [Smart tags section](/docs/creative-optimization-discovery-ai-dashboard#[coming-soon]-smart-tags) for more information.
-5. [Coming soon] If you already have Smart tags saved, use them to find specific creatives, or specific elements, texts, etc. that appear within creatives. [Learn more about Smart tags](/docs/creative-optimization-discovery-ai-dashboard#[coming-soon]-smart-tags).
+   2. [Optional] Click **Save as Smart tag** to add your search term to the smart tag list for future use. See the [Smart tags section](/docs/creative-optimization-discovery-ai-dashboard#coming-soon--smart-tags) for more information.
+5. [Coming soon] If you already have Smart tags saved, use them to find specific creatives, or specific elements, texts, etc. that appear within creatives. [Learn more about Smart tags](/docs/creative-optimization-discovery-ai-dashboard#coming-soon--smart-tags).
    1. Click the specific tag/query you want (multiple queries can be selected) and the gallery will be filtered according to your selections.
    2. [Optional] Click **Compare** to compare the group performance of up to 4 Smart tags/queries side by side.
 6. View the discovery card gallery of all the creatives, elements, scenes, or texts that match your filters and search settings.
@@ -60,7 +60,9 @@ If you haven't configured Creative Optimization yet, you can find instructions o
       ![Sort by new.jpg](https://files.readme.io/8a8d5a0f13226bc854ae54f389f7a1e5a838f0bcf8b9af758a6a7e9efceb502e-24289989225105.jpg)
 7. Click on a specific card to drill down deeper and get additional performance data and insights.
 
-### Set discovery card metrics
+</Accordion>
+
+<Accordion title="Set discovery card metrics">
 
 You can customize which metrics you see on the Discovery tiles.
 
@@ -93,9 +95,13 @@ You can customize which metrics you see on the Discovery tiles.
 
 See an in-depth [list](/docs/creative-optimization-guide#standard-metrics-and-dimensions) of metric definitions.
 
+</Accordion>
+
 ## Concepts
 
-### AI search
+<div id="discovery-ai-search" />
+
+<Accordion title="AI search">
 
 The AI-powered search bar lets you analyze how specific creative elements impact performance, from a single word to full visual concepts and storylines.
 
@@ -182,12 +188,15 @@ Combining attributes helps isolate clearer creative patterns and reduces noise i
 >   * Performance metrics, such as IPM, CTR, or retention
 >   * Creative names or IDs
 
+</Accordion>
 
-### Smart tags
+<div id="coming-soon--smart-tags" />
+
+<Accordion title="Smart tags">
 
 Smart tags are saved searches that you can refer back to whenever you need. Perhaps even more importantly, they tag all creatives with the name and search term, so you can use these Smart tags as group by dimensions for your creatives in the Overview dashboard. For example, if you create Smart tags called "Gameplay scenes" and "Animated scenes" in the Creative Optimization Overview dashboard you can group data by Smart Tags and get separate data rows for Gameplay scenes and Animated scenes.
 
-**Note:** The top-level Creative Optimization [filter](/docs/creative-optimization-guide#creative-dashboard) is the primary one. Smart tags filter those results further. This means that the top-level filter will override Smart tags in case of conflicting requests.
+**Note:** The top-level Creative Optimization [filter](/docs/creative-optimization-guide#using-the-dashboard) is the primary one. Smart tags filter those results further. This means that the top-level filter will override Smart tags in case of conflicting requests.
 
 **Example common queries you can use to create Smart tags:**
 
@@ -198,7 +207,11 @@ Smart tags are saved searches that you can refer back to whenever you need. Perh
 * Creatives that contain actual gameplay in the first 5 seconds
 * And more
 
-### Quick queries
+</Accordion>
+
+<div id="quick-queries" />
+
+<Accordion title="Quick queries">
 
 There are preset quick queries that you can use for searching creatives, scenes, elements, and texts. The presets are based on commonly-searched terms, and include:
 
@@ -220,17 +233,19 @@ There are preset quick queries that you can use for searching creatives, scenes,
 * End cards
 * And more
 
-### Discovery tabs
+</Accordion>
+
+<div id="discovery-tabs" />
+
+<Accordion title="Discovery tabs">
 
 Explore performance data for creatives and the scenes, elements, and texts that make up those creatives.
 
-### Creatives
+<Accordion title="Creatives">
 
 See a gallery of all your creatives, along with their performance data. The tiles displayed are based on the main Creative filter selections. Additionally, metrics the tiles display and the sorting method used to display tiles can be customized. See settings and sorting.
 
 ![creatives.png](https://files.readme.io/7775033e2f4aecec125779c4ec430280746bb369f01470ffe2a0cb2b017af6c2-28667948956817.png)
-
-
 
 |  | Dimension/metric | Description |
 | --- | --- | --- |
@@ -242,9 +257,9 @@ See a gallery of all your creatives, along with their performance data. The tile
 | 6 | Find similar | Displays creatives that are similar.<br /><br />By default, the results are sorted by relevance. |
 | 7 | Fullscreen | Plays video in fullscreen. |
 
+</Accordion>
 
-
-### Scenes
+<Accordion title="Scenes">
 
 Powered by AI, video creatives are automatically broken down into scenes and displayed along with their performance data—without any manual process. Scene performance data is taken from the creative it comes from. If the same scene appears in more than one video, the data is an aggregate of all the creatives it appears in. The data is available in the dashboard about 24 hours after [partner integration](/docs/creative-optimization-partner-integrations). This feature is **available with Creative Optimization Advanced and Premium subscription plans only.**
 
@@ -252,28 +267,24 @@ Powered by AI, video creatives are automatically broken down into scenes and dis
 
 ![](https://files.readme.io/edb5818baa14df7b8260d75c0e60ee1d1bc2cfe2d6564511dd58a423eb7d9d08-31976798170641.png)
 
-
-
 |  | Dimension/metric | Description |
 | --- | --- | --- |
 | 1 | Preview | Clicking here will play a video preview. |
 | 2 | Appears in | The number of unique creatives the scene appears in. |
 | 3 | Media source | A list of media sources the creative appears on. |
 | 4 | Metrics | Up to 5 performance metrics. For example, Cost, Clicks, Impressions, CTR, IPM, etc. |
-| 5 | Investigate | Tabs let you choose between Appearances and Similarities:<br /><br />* Appearances:<br />  * Displays the number of creatives this scene appears in.<br />  * By default, the results are sorted by relevance.<br />  * You can play the creatives, and see where in the creative the scene displays and what the volume % is (the percentage of the creative in which the scene displays).<br />* Similarities:<br />  * Displays scenes that are similar.<br />  * By default, the results are sorted by relevance. |
+| 5 | Investigate | Tabs let you choose between Appearances and Similarities:<ul><li>Appearances:<ul><li>Displays the number of creatives this scene appears in.</li><li>By default, the results are sorted by relevance.</li><li>You can play the creatives, and see where in the creative the scene displays and what the volume % is (the percentage of the creative in which the scene displays).</li></ul></li><li>Similarities:<ul><li>Displays scenes that are similar.</li><li>By default, the results are sorted by relevance.</li></ul></li></ul> |
 | 6 | Fullscreen | Plays video in fullscreen. |
 
+</Accordion>
 
-
-### Elements
+<Accordion title="Elements">
 
 Our fully automated AI algorithms further break down video creatives into significant elements (basic visual components) which are identified and displayed to enable the most granular analysis. The performance data is taken from the creative it comes from. If the same element appears in more than one creative, the data is an aggregate of all the creatives it appears in. The data is available in the dashboard about 24 hours after [partner integration](/docs/creative-optimization-partner-integrations). This feature **is available with Creative Optimization Advanced and Premium subscription plans only.**
 
 **Note**: The tiles displayed are based on the main Creative filter selections. Additionally, metrics the tiles display and the sorting method used to display tiles can be customized. See settings and sorting.
 
 ![elements.png](https://files.readme.io/2aeef499e182ad517438fe48ec887f83aa0fec3dc68f1f899e7b75cbd41eac0c-28667955914001.png)
-
-
 
 |  | Dimension/metric | Description |
 | --- | --- | --- |
@@ -283,9 +294,9 @@ Our fully automated AI algorithms further break down video creatives into signif
 | 4 | Find similar | Displays elements that are similar.<br /><br />Results are sorted by relevance. |
 | 5 | Fullscreen | Plays video in fullscreen. |
 
+</Accordion>
 
-
-### Texts
+<Accordion title="Texts">
 
 Our fully automated AI algorithms break down video creatives into significant text strings that occur throughout the video. These are identified and displayed to enable the most granular analysis. The performance data is taken from the creative it comes from. If the same text string appears in more than one creative, the data is an aggregate of all the creatives it appears in. The data is available in the dashboard about 24 hours after [partner integration](/docs/creative-optimization-partner-integrations). This feature **is available with Creative Optimization Advanced and Premium subscription plans only.**
 
@@ -293,20 +304,20 @@ Our fully automated AI algorithms break down video creatives into significant te
 
 ![creative text card.png](https://files.readme.io/e23edaf46914252401c4254ef50b77f223b0dd633578ad1b99aac6e9a13b5e75-29068468758289.png)
 
-
-
 |  | Dimension/metric | Description |
 | --- | --- | --- |
 | 1 | Text | The text string in the creatives you want data about. For example, in the screenshot above, this refers to the text string "car racing" that is written in creatives. |
 | 2 | Appears in | The number of unique creatives the text appears in. |
 | 3 | Media source | A list of media sources the creative appears on. |
 | 4 | Metrics | Up to 5 performance metrics. For example, Cost, Clicks, Impressions, CTR, IPM, etc. |
-| 5 | Investigate | * Displays appearances: The number of creatives this text appears in.<br />* By default, the results are sorted by relevance.<br />* You can play the creatives, and see where in the creative the text displays and what the volume % is (the percentage of the creative in which the text displays). |
+| 5 | Investigate | <ul><li>Displays appearances: The number of creatives this text appears in.</li><li>By default, the results are sorted by relevance.</li><li>You can play the creatives, and see where in the creative the text displays and what the volume % is (the percentage of the creative in which the text displays).</li></ul> |
 | 6 | Fullscreen | Shows the text in fullscreen. |
 
+</Accordion>
 
+</Accordion>
 
-### Discovery card drilldown
+<Accordion title="Discovery card drilldown">
 
 Discovery card drilldown lets you probe deeper and find:
 
@@ -326,12 +337,14 @@ You can also switch to the **Similarities** tab, where you can get a list of all
 
 For creatives and elements, you can open the **Similarities** tab by clicking **Find similar** on a specific discovery card.
 
+</Accordion>
+
 ## Additional information
 
-### Traits and limitations
-
-
+<Accordion title="Traits and limitations">
 
 | Trait | Remarks |
 | --- | --- |
-| Language | In search and discovery cards, the below languages are supported:<br /><br />* English (en)<br />* Spanish (es)<br />* French (fr)<br />* German (de)<br />* Italian (it)<br />* Portuguese (pt)<br />* Dutch (nl)<br />* Turkish (tr)<br />* Romanian (ro)<br />* Swedish (sv)<br />* Korean (ko)<br />* Japanese (ja)<br />* Chinese (zh)<br />* Norwegian (no)<br />* Danish (da)<br />* Icelandic (is)<br />* Finnish (fi)<br />* Polish (pl)<br />* Czech (cs)<br />* Slovak (sk)<br />* Hungarian (hu)<br />* Indonesian (id) |
+| Language | In search and discovery cards, the below languages are supported:<ul><li>English (en)</li><li>Spanish (es)</li><li>French (fr)</li><li>German (de)</li><li>Italian (it)</li><li>Portuguese (pt)</li><li>Dutch (nl)</li><li>Turkish (tr)</li><li>Romanian (ro)</li><li>Swedish (sv)</li><li>Korean (ko)</li><li>Japanese (ja)</li><li>Chinese (zh)</li><li>Norwegian (no)</li><li>Danish (da)</li><li>Icelandic (is)</li><li>Finnish (fi)</li><li>Polish (pl)</li><li>Czech (cs)</li><li>Slovak (sk)</li><li>Hungarian (hu)</li><li>Indonesian (id)</li></ul> |
+
+</Accordion>

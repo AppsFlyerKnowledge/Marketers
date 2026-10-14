@@ -76,13 +76,13 @@ When included in a postback, macros are replaced with user-relevant data. For ex
 | pid | AF | Ad network that the install or in-app event is attributed to | Yes |  |
 | af\_ad | Link | Ad Name ([see more](/docs/about-link-structure-and-parameters#levels-of-data-granularity)) provided by the advertiser/publisher | Yes | Yes |
 | af\_ad\_id | Link | Provided by the advertiser/publisher | Yes | Yes |
-| af\_adset | Link | * Provided by the advertiser/publisher.<br />* Adset is an intermediate level in the hierarchy between Campaign and Ad. [See more](/docs/about-link-structure-and-parameters#levels-of-data-granularity) | Yes | Yes |
+| af\_adset | Link | <ul><li>Provided by the advertiser/publisher.</li><li>Adset is an intermediate level in the hierarchy between Campaign and Ad. [See more](/docs/about-link-structure-and-parameters#levels-of-data-granularity)</li></ul> | Yes | Yes |
 | af\_adset\_id | Link | Provided by the advertiser/publisher | Yes | Yes |
 | c | Link | Provided by the advertiser/publisher. Campaign names that exceed 100 characters in length are displayed on the dashboard as "c\_name\_exceeded\_max\_length" | Yes | Yes |
 | af\_c\_id | Link | Provided by the advertiser/publisher | Yes | Yes |
-| af\_siteid | Link | * Unique ID that identifies the publisher that displays the ad. [Learn more](/docs/about-link-structure-and-parameters#site-id-parameter) | Yes | Yes |
-| af\_subsite\_id | Link | * Ad sub-network/Publisher ID.<br />* If in addition to the main publisher (site ID), there is a sub-publisher, or you want to include additional info, such as ad type/placement within the app, like banner, interstitial, video, etc. use af\_sub\_siteid. For example: af\_sub\_siteid =ABCD\_4567 | Yes | Yes |
-| af\_ad\_type | Link | Use the following naming convention:<br /><br />* **text:** an ad unit containing only text, for example a search result<br />* **banner:** a basic format that appears at the top or bottom of the device screen<br />* **interstitial:** a full-page ad that appears during breaks in the current experience<br />* **video:** a standard video, that is non-rewarded<br />* **rewarded\_video:** an ad unit offering in-app rewards in exchange for watching a video<br />* **playable:** an ad unit containing an interactive preview of the app experience<br />* **sponsored\_content:** a link included in a piece of sponsored content, like an advertorial article<br />* **audio:** an audio ad | Yes | Yes |
+| af\_siteid | Link | <ul><li>Unique ID that identifies the publisher that displays the ad. [Learn more](/docs/about-link-structure-and-parameters#site-id-parameter)</li></ul> | Yes | Yes |
+| af\_subsite\_id | Link | <ul><li>Ad sub-network/Publisher ID.</li><li>If in addition to the main publisher (site ID), there is a sub-publisher, or you want to include additional info, such as ad type/placement within the app, like banner, interstitial, video, etc. use af\_sub\_siteid. For example: af\_sub\_siteid =ABCD\_4567</li></ul> | Yes | Yes |
+| af\_ad\_type | Link | Use the following naming convention:<ul><li>**text:** an ad unit containing only text, for example a search result</li><li>**banner:** a basic format that appears at the top or bottom of the device screen</li><li>**interstitial:** a full-page ad that appears during breaks in the current experience</li><li>**video:** a standard video, that is non-rewarded</li><li>**rewarded\_video:** an ad unit offering in-app rewards in exchange for watching a video</li><li>**playable:** an ad unit containing an interactive preview of the app experience</li><li>**sponsored\_content:** a link included in a piece of sponsored content, like an advertorial article</li><li>**audio:** an audio ad</li></ul> | Yes | Yes |
 
 ## In-app event only macros
 
@@ -107,30 +107,38 @@ To decode or encode a postback use [an encoding web service](https://www.urldeco
 ## Sample postbacks
 
 ### General install postback examples
+
 <Accordion title="Android">
 
-``
-```[`http://YourCompanyDomain.com?pid=(media](http://YourCompanyDomain.com?&amp;pid=(media)_source)&amp;advertising_id=(advertiserId)&amp;android_id=(android-id)&amp;install_time=(install-unix-ts)
+```
+http://YourCompanyDomain.com?pid=(media_source)&advertising_id=(advertiserId)&android_id=(android-id)&install_time=(install-unix-ts)
+```
 
 </Accordion>
+
 <Accordion title="iOS">
 
-``
-``http://YourCompanyDomain.com?`[`pid=(media](http://YourCompanyDomain.com?&amp;pid=(media) source)&amp;device_ip=(ip)&amp;idfa=(idfa)&amp;install_time=(install-unix-ts)
+```
+http://YourCompanyDomain.com?pid=(media source)&device_ip=(ip)&idfa=(idfa)&install_time=(install-unix-ts)
+```
 
 </Accordion>
 
 ### General in-app event postback examples
+
 <Accordion title="Android">
 
-``
-``http://YourCompanyDomain.com?`[`pid=(media](http://YourCompanyDomain.com?&amp;pid=(media)_source)&amp;device_ip=(ip)&amp;advertising_id=(advertiserId)&amp;android_id=(android-id)&amp;install_time=(install-unix-ts)&amp;event_name=(event-name)&amp;currency=(currency)&amp;json=(event-value)
+```
+http://YourCompanyDomain.com?pid=(media_source)&device_ip=(ip)&advertising_id=(advertiserId)&android_id=(android-id)&install_time=(install-unix-ts)&event_name=(event-name)&currency=(currency)&json=(event-value)
+```
 
 </Accordion>
+
 <Accordion title="iOS">
 
-``
-``http://YourCompanyDomain.com?`[`pid=(media](http://YourCompanyDomain.com?&amp;pid=(media)_source)&amp;device_ip=(ip)&amp;idfa=(idfa)&amp;install_time=(install-unix-ts)&amp;event_name=(event-name)&amp;currency=(currency)&amp;json=(event-value)
+```
+http://YourCompanyDomain.com?pid=(media_source)&device_ip=(ip)&idfa=(idfa)&install_time=(install-unix-ts)&event_name=(event-name)&currency=(currency)&json=(event-value)
+```
 
 </Accordion>
 
@@ -141,7 +149,7 @@ To decode or encode a postback use [an encoding web service](https://www.urldeco
 * Event Name: af\_revenue
 * Event Revenue: 120.00
 * Event Currency: USD
-* Event Value: `{"af\_quantity":1,"af\_revenue":"120","af\_currency":"USD","af\_content\_id":"1107","af\_content\_type":"default\_type"}`
+* Event Value: `{"af_quantity":1,"af_revenue":"120","af_currency":"USD","af_content_id":"1107","af_content_type":"default_type"}`
 
 **Postback:**
 

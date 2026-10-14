@@ -39,7 +39,6 @@ Pre-install campaigns can also be a collaboration with 3rd party media sources, 
 >
 > AppsFlyer counts an install once an app launches for the first time. Therefore, the number of displayed pre-installs is the number of users launching your app, and not the number of devices that have the app pre-installed on.
 
-
 ### Benefits of recording installs from pre-install campaigns
 
 By attributing pre-install campaigns you can measure the:
@@ -67,12 +66,9 @@ Pre-installs appear in the AppsFlyer dashboard under the attributed media source
 > * Match\_type for factory preinstall campaigns is displayed as `preload_conf` in raw data reports.
 > * AppsFlyer displays in dashboards the ad network that drove the preload and ad networks that contributed to the first app launch. Learn more about [preload campaigns](/docs/appsflyer-attribution-model#preload-campaigns).
 
-
 ## Setup
 
 Select from one of the following methods to measure pre-install campaigns.
-
-
 
 | Method Name | Requires Multiple APKs? | Guarantees Pre-install Attribution? | Requires Action from Media Source or Manufacturer? |
 | --- | --- | --- | --- |
@@ -81,9 +77,9 @@ Select from one of the following methods to measure pre-install campaigns.
 | Name in Manifest File | Yes | No | No |
 | Path Way | No | No | Yes |
 
+<div id="system-properties-method-recommended" />
 
-
-### System properties method (recommended)
+<Accordion title="System properties method (recommended)">
 
 Use SDK version `V4.0+`.
 
@@ -120,7 +116,6 @@ com.appsflyer.sampleapp={"pid":"huawei", "c":"special_campaign","af_adset":"some
 > * In the JSON configuration, if the `c` parameter is not present then the campaign name is set to "Pre-install"
 > * If the JSON is malformed, the passed string is treated as the Media Source name
 
-
 Once you have the pre\_install.appsflyer file, give it to the media source or manufacturer together with the APK.
 
 #### Manufacturer
@@ -131,8 +126,7 @@ The manufacturer then edits the system properties file in order to point to the 
 
 > 📘 **Note**
 >
-> Root permissions are required for this step. Root permissions are also required when testing preinstall configuration. See the [Testing section](/docs/appsflyer-factory-preinstall-using-manifest-android#testing-preinstall-configuration) for more details.
-
+> Root permissions are required for this step. Root permissions are also required when testing preinstall configuration. See the [Testing section](/docs/appsflyer-factory-preinstall-using-manifest-android#testing-pre-install-configuration) for more details.
 
 **Adding a Key-Value Pair to Android System Properties:**
 
@@ -163,7 +157,11 @@ This method ensures attribution to preinstall campaigns and media sources. Even 
 
 Some responsibility is transferred over to the media source or manufacturer. The developers need to be sure that the manufacturer or media source takes the necessary steps. Moreover, this method might be a little harder for the app developer to test.
 
-### SDK API method
+</Accordion>
+
+<div id="sdk-api-method" />
+
+<Accordion title="SDK API method">
 
 The SDK API method provides a native way to specify the manufacturer or media source name to which the pre-install is attributed.
 
@@ -185,14 +183,11 @@ AppsFlyerLib.getInstance().setPreinstallAttribution(android.os.Build.MANUFACTURE
 AppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplicationContext());
 ```
 
-  
 > 📘 **Note**
 >
 > * The media source parameter is mandatory.
 > * The `android.os.Build.MANUFACTURER` property holds the manufacturer name as configured by the operating system. Using this property doesn't guarantee that you get the manufacturer name in the same format across devices from that manufacturer. Make sure that this property holds the manufacturer name as expected.
 > * The `campaign` and `siteId` parameters are optional but are required by the `setPreinstallAttribution` method. If you don't want to specify `campaign` and `siteId`, pass null in both.
-
-  
 
 #### Advantages
 
@@ -220,8 +215,9 @@ In some cases, the install might not be attributed to the pre-install media sour
 > * You know that apps are pre-installed on devices of a given manufacturer and model. These devices are also running with a given carrier.
 > * When the app launches, you can check for these conditions when the app launches. If these conditions are met, the install is recorded as pre-install. Since the logic also exists in the Play Store APK, the install is recorded as Pre Install even if the user updates the app before launching it.
 
+</Accordion>
 
-### Name in manifest file method
+<Accordion title="Name in manifest file method">
 
 The name in the manifest method requires you to add a metadata tag to the app's manifest file. You need to repeat this step for every media source or manufacturer that you collaborate with.
 
@@ -249,12 +245,13 @@ In some cases, the install might not be attributed to the pre-install media sour
 * A user with a new device updates the pre-installed app directly from Google Play without first launching it, the install is considered organic.
 * A user with a new device installs the app from Google Play after clicking an ad, the install is attributed to the media source that serves the ad.
 
-### Pathway method
+</Accordion>
+
+<Accordion title="Pathway method">
 
 > 📘 **Note**
 >
 > Supported by SDK version 4.5.0 or later.
-
 
 This method requires both the developer and the manufacturer to perform some actions on their end.
 
@@ -263,7 +260,6 @@ This method requires both the developer and the manufacturer to perform some act
 The pathway method allows you to specify a path to a file that holds the name of the media source or manufacturer. There are three steps that you need to complete:
 
 1. Create a file that contains a key-value pair. The file should be called ***pre\_install.appsflyer***. In the file, specify the key-value pair in the format of `<PACKAGE_NAME>`=`<MEDIA_SOURCE>` For example, `com.appsflyer.sampleapp=my_media_source`.  
-     
 
    #### Passing additional pre-install parameters
 
@@ -273,16 +269,14 @@ The pathway method allows you to specify a path to a file that holds the name of
    com.appsflyer.sampleapp={"pid":"huawei", "c":"special_campaign","af_adset":"some_adset"}
    ```
 
-   CALLSTART::Note::
-
-   #### Important!
+   <br /><br />**Note**<br />#### Important!
 
    It's important to note the following behaviors when using this option:
 
    1. It sets "Pre-install" as af\_channel
    2. If pid is not present in the JSON, the Media Source appears as "None".
    3. In the JSON configuration, if c is not present then the campaign name is set to "Pre-install"
-   4. If the JSON is malformed, the passed string is treated as the Media Source nameCALLEND::
+   4. If the JSON is malformed, the passed string is treated as the Media Source name
 
    Once you have the pre\_install.appsflyer file, give it to the media source or manufacturer together with the APK.
 2. Talk to the media source or manufacturer and agree with them on a path where they put the file. The recommended path is "/data/local/tmp/pre\_install.appsflyer".
@@ -317,7 +311,6 @@ Some manufacturers prefer to put the file in a non-default path. In such case yo
 >
 > Although non-default paths are allowed, we recommend implementing the [System Properties method](/docs/appsflyer-factory-preinstall-using-manifest-android#system-properties-method-recommended) instead.
 
-
 #### Disadvantages
 
 You need to maintain separate ***pre\_install.appsflyer*** files for different media sources or manufacturers.
@@ -328,6 +321,8 @@ If a **non-default path** is used, the install might not be attributed to the pr
 
 * A user with a new device updates the pre-installed app directly from Google Play without first launching it, the install is considered organic.
 * A user with a new device installs the app from Google Play after clicking an ad, the install is attributed to the media source that serves the ad.
+
+</Accordion>
 
 ## Testing pre-install configuration
 
@@ -342,13 +337,11 @@ This section demonstrates how to test and verify your pre-install configuration.
 > AppsFlyerLib.getInstance().setDebugLog(true);
 > ```
 
-
-### Verifying the configuration in the app
+<Accordion title="Verifying the configuration in the app">
 
 > 📘 **Tip**
 >
 > To avoid caching issues and for best results, it is recommended that you clean the project before building it. In Android Studio, click on ***Build*** in the context menu and choose ***Clean Project***.
-
 
 Build your application in Android Studio and install it on the test device. Once the application launches, open the Logcat in Android studio and filter by "AppsFlyer". You should see the attributed install with all the details. See the screenshots below for illustration:
 
@@ -356,27 +349,30 @@ Build your application in Android Studio and install it on the test device. Once
 
 ![pre_install_logcat_2.png](https://files.readme.io/ce57427b0fb286e632d416378bb65f98370122e6d026ecba99e602524b8351d6-360002655609.png)
 
-### Verifying the configuration in the AppsFlyer dashboard
+</Accordion>
+
+<Accordion title="Verifying the configuration in the AppsFlyer dashboard">
 
 If the configuration is successful, a non-organic install that is attributed to a manufacturer or media source appears in the dashboard. The install event is also listed under the "Pre-install" campaign.
 
 Head over to your AppsFlyer account and open the dashboard for the app that you are testing. Follow the steps below:
 
 1. In the overview page, filter by media sources and choose the media source:  
-     
 
    ![choose_media_source.png](https://files.readme.io/6d9ac04a23b97e12c1103e1d8dd7976949485777a89b2545e2704803b486829e-360002655629.png)
 2. In the ***Breakdown By Campaign*** graph, you can see that the install that is attributed to "my media source" comes from a Pre-install campaign:  
-     
+
     [![](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)  
    You can also verify that the install is attributed correctly by viewing the ***Aggregated Performance Report***. In it, you can see the media source and campaign. See the screenshot below where "My Media Source" is the media source and the campaign is Pre-install:  
-     
+
     [![](https://files.readme.io/d02e89d215e864ad8e96fff97c9dd279d906486ed2036ed27dc5e229ff8935b3-360002653425.png)](https://files.readme.io/d02e89d215e864ad8e96fff97c9dd279d906486ed2036ed27dc5e229ff8935b3-360002653425.png)
 3. Repeat the process for all manufacturers or media sources that you collaborate with for pre-install campaigns.
 
+</Accordion>
+
 ## Special cases
 
-### Multiple pre-install apps on the same device
+<Accordion title="Multiple pre-install apps on the same device">
 
 If you have campaigns for several apps that are installed on the same device, you can measure attribution using each of the four methods:
 
@@ -390,15 +386,19 @@ If you have campaigns for several apps that are installed on the same device, yo
   com.game.king=market_name
   ```
 
-### Sending install postbacks
+</Accordion>
+
+<Accordion title="Sending install postbacks">
 
 If the media source or manufacturer that you collaborate with is an [AppsFlyer partner](/docs/set-up-an-integrated-partner#your-integrated-partners), you can enable postbacks for installs.
 
 To do so, make sure that the media source name is equivalent to the media source pid as it is configured by AppsFlyer.
 
-For example, if you are collaborating with market\_name, its pid is market\_name\_int. You can see the pid by examining the [attribution link of an integrated partner](/docs/set-up-an-integrated-partner#clickthrough-attribution).
+For example, if you are collaborating with market\_name, its pid is market\_name\_int. You can see the pid by examining the [attribution link of an integrated partner](/docs/set-up-an-integrated-partner#click-through-attribution).
 
-### Agencies
+</Accordion>
+
+<Accordion title="Agencies">
 
 Currently, agencies cannot be attributed with pre-installs.
 
@@ -408,3 +408,5 @@ If the af\_prt (parameter for agency name) is a part of the pre-install data, an
 * The client can access the full user-level data.
 * The user is NOT attributed to the agency.
 * The agency can't access the user-level data.
+
+</Accordion>

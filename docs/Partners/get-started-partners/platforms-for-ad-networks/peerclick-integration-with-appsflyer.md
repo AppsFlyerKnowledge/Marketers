@@ -44,14 +44,14 @@ Below you can find the base attribution link with a detailed explanation per eac
 | &clickid= | `{clickid}` | Unique transaction ID of the user session - **Required** |
 | &af\_siteid= | `{trafficsource.id}` | ID of the traffic source - **Optional** |
 
-> 📘 Note
+> 📘 **Note**
 >
 > * For the complete AppsFlyer parameter list, [click here](/docs/about-link-structure-and-parameters)
 > * For the complete PeerClick list, [click here](https://help-center.peerclick.com/en/)
 
 ### Complete attribution link template
 
-```http
+```
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={trafficsource.id}
 ```
 
@@ -59,7 +59,7 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_s
 
 **Global Install Postback:**
 
-```http
+```
 https://pstb.gopeerclick.com/postback?userid={peerclick_userid}&cid={clickid}
 ```
 
@@ -72,6 +72,5 @@ https://pstb.gopeerclick.com/postback?userid={peerclick_userid}&cid={clickid}
 
 ### AppsFlyer's in-app event dashboard
 
-![Voluum_msc_new_1.png](https://files.readme.io/ecad61ab31de52e88c483daeaa05cd223ece998f3d8c22ae400c68fc2b7537f2-21479841978001.png)
-
+![Voluum_msc_new_1.png](https://files.readme.io/ecad61ab31de52e88c483daeaa05cd223ece998f3d8c22ae400c68fc2b7537f2-21479841978001.png)  
 Additional attribution information can be added to the postback by request such as Country Code, Advertising ID, IDFA, etc.

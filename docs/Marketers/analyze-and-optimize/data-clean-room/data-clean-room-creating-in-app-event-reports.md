@@ -28,7 +28,7 @@ x-zendesk:
 
 **Note:** These steps are divided into tabs for ease of reading. All steps must be completed in order to create the report. *(Certain steps, as indicated, are not relevant for reports that don't use custom sources.)*
 
-### Perform preliminary steps
+<Accordion title="Perform preliminary steps">
 
 1. Go to the **Reports** tab of the **DCR.**
 2. Click the **+ New report** button.
@@ -46,7 +46,9 @@ x-zendesk:
        * spaces
        * all other symbols or special characters
 
-### Select sources
+</Accordion>
+
+<Accordion title="Select sources">
 
 Specify the source data to be used for the report:
 
@@ -57,14 +59,11 @@ Specify the source data to be used for the report:
 * **Events:** Select one or more in-app events to include in the report.
   * The available events include all in-app events **from the selected apps** that have been configured to report data to AppsFlyer via the SDK or the server-to-server API (S2S).
 * **Source types:** Select one or more types of in-app event data:
-  
 
-| Installs | In-app events related to install attributions<br /><br />* An install is recorded when a user downloads, installs, and launches a mobile app. |
+| Installs | In-app events related to install attributions<ul><li>An install is recorded when a user downloads, installs, and launches a mobile app.</li></ul> |
 | --- | --- |
-| Re-engagements | In-app events related to re-engagements<br /><br />* A re-engagement is recorded when an inactive user of a specific app engages with a retargeting campaign for the app and subsequently launches it. |
-| Reattributions | In-app events related to re-attributions<br /><br />* A re-attribution is recorded when a former user of a specific app (who had uninstalled it) engages with a retargeting campaign for the app and subsequently reinstalls it. |
-
-
+| Re-engagements | In-app events related to re-engagements<ul><li>A re-engagement is recorded when an inactive user of a specific app engages with a retargeting campaign for the app and subsequently launches it.</li></ul> |
+| Reattributions | In-app events related to re-attributions<ul><li>A re-attribution is recorded when a former user of a specific app (who had uninstalled it) engages with a retargeting campaign for the app and subsequently reinstalls it.</li></ul> |
 
 #### **Data sources**
 
@@ -75,9 +74,13 @@ Specify the source data to be used for the report:
    * If your report **doesn't** use custom sources, skip to **[Select dimensions](/docs/data-clean-room-creating-in-app-event-reports#select-dimensions),** then continue with the steps in all remaining tabs.
    * If your report **does** use custom sources, continue with the steps in the [**Join sources**](#join-sources-only-for-reports-containing-custom-sources) tab (immediately following) and all remaining tabs.
 
+</Accordion>
+
 The following step is relevant **only for reports that use custom sources.**
 
-### Join sources (only for reports containing custom sources)
+<div id="join-sources-only-for-reports-containing-custom-sources" />
+
+<Accordion title="Join sources (only for reports containing custom sources)">
 
 In order to match data among sources, each of the **custom** sources used in the report must include an [identifier](/docs/data-clean-room-setting-up-cloud-services) mapped to a **key identifier** in the in-app event data.
 
@@ -96,7 +99,6 @@ You can map to either of these in-app event data identifiers as **key identifier
 > 📘 **Important!**
 >
 > Not all media sources permit matching using CUID. It is highly recommended to use AppsFlyer ID.
-
 
 #### **Mapping schemes (direct/indirect)**
 
@@ -117,10 +119,13 @@ If the report includes more than one custom source, only one of them needs to be
 >
 > **✓** This mapping scheme works to match data among all the sources since each custom source is mapped either directly or indirectly to the in-app event key identifier **af\_id.**
 
+</Accordion>
 
 The remaining tabs are relevant for **all in-app event reports,** whether or not they include custom sources.
 
-### Select dimensions
+<div id="select-dimensions" />
+
+<Accordion title="Select dimensions">
 
 Recall that user-level data cannot be reported by the DCR. Instead, it provides you with the decision-making insights you need by aggregating (or grouping) the data by the dimensions you choose.
 
@@ -139,7 +144,7 @@ One of the major advantages of In-app event reports is that they allow you to ex
    The **Extract field from event\_value** window opens.
 2. In the **Report field** box, enter the name of the extracted dimension as you would like it to appear in your report.
 3. From the **Event\_value parameter** list, select the in-app event parameter that should be mapped by default to the report field (dimension) you defined in step 2.
-   * The available parameters include those that have been configured in the **selected in-app events** **in the selected apps****.**
+   * The available parameters include those that have been configured in the **selected in-app events** **in the selected apps.**
 4. It may be that the default mapping differs by app and/or event. If this is the case:
    1. Click the **Add exception** button
    2. Select the app and event for which the report field should be mapped differently.
@@ -256,7 +261,6 @@ However, instead of removing or hiding the data from the report completely, the 
 >
 > * *See below for an advanced option you can use to apply regrouping to custom source dimensions as well.*
 
-
 #### **[Optional] Managing dimension priority**
 
 By default, in-app event dimensions are eliminated in reverse order from the order in which they appear in the **Report dimensions** list. However, you can modify the default sequence and/or apply regrouping to selected custom source dimensions (if applicable) in order to preserve the dimensions most important to you.
@@ -274,7 +278,9 @@ By default, in-app event dimensions are eliminated in reverse order from the ord
 4. Click **OK** to save your changes.
    * The **Report dimensions** list on the main screen remains in its original order, but the revised order has been saved. (Click again on the **Manage dimension priority** button if you wish to review or edit your selection.)
 
-### Select metrics
+</Accordion>
+
+<Accordion title="Select metrics">
 
 Metrics are the numeric data you have collected with respect to an app user (examples might include revenue, number of app opens, LTV, etc.) and can be any numeric data field from your sources that you have categorized as a metric.
 
@@ -289,7 +295,7 @@ Just as you can for [report dimensions](/docs/data-clean-room-creating-in-app-ev
    The **Extract field from event\_value** window opens.
 2. In the **Report field** box, enter the name of the extracted metric as you would like it to appear in your report.
 3. From the **Event\_value parameter** list, select the in-app event parameter that should be mapped by default to the report field (metric) you defined in step 2.
-   * The available parameters include those that have been configured in the **selected in-app events** **in the selected apps****.**
+   * The available parameters include those that have been configured in the **selected in-app events** **in the selected apps.**
 4. It may be that the default mapping differs by app and/or event. If this is the case:
    1. Click the **Add exception** button
    2. Select the app and event for which the report field should be mapped differently.
@@ -348,7 +354,11 @@ By default, each row of the report ends with a column containing a count of the 
 2. To remove an identifier, select it from the **Distinct count identifiers** list and use the **Remove** button to return it to the **Identifiers from sources** list.
 3. Repeat this process until you have added each identifier you want counted in the report.
 
-### Configure report settings and save the report
+</Accordion>
+
+<div id="configure-report-settings-and-save-the-report" />
+
+<Accordion title="Configure report settings and save the report">
 
 #### **Schedule (only for reports without custom sources)**
 
@@ -365,10 +375,9 @@ Reports without custom sources are run according to the schedule you define.
 >
 > * For sources located in **data warehouses** (BigQuery and Snowflake), the DCR recognizes that a new version of a source has been created when it detects a new value in [the `v` column of the source table](/docs/data-clean-room-working-with-sources#table-columns).
 >   * **Important!** To ensure the completeness of your report, be sure to populate the source table with a complete set of data whenever the column value is changed.
-> * For sources located in **cloud storage buckets** (Amazon S3 and GCS), the DCR recognizes that a new version of a source has been created when it detects that a [new version of a source file has been uploaded](/docs/data-clean-room-working-with-sources#uploading-source-files-to-trigger-report-processing) along with its accompanying \_SUCCESS file.
+> * For sources located in **cloud storage buckets** (Amazon S3 and GCS), the DCR recognizes that a new version of a source has been created when it detects that a [new version of a source file has been uploaded](/docs/data-clean-room-working-with-sources#updating-sources-to-trigger-report-processing) along with its accompanying \_SUCCESS file.
 >
 > AppsFlyer continually scans for new versions of sources for the **current date and 2 days prior.**
-
 
 #### **Report destination**
 
@@ -381,17 +390,21 @@ The DCR delivers reports to your selected cloud services using [AppsFlyer Data 
 1. Select from the list of Data Locker connections available in your AppsFlyer account.
    * If there are no connections defined in your account:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-outbound) to create the connection.
+     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-1) to create the connection.
    * If you have existing connections but want to use a new one, click the ![dcr_new_connection_data_locker_button.png](https://files.readme.io/21fda59ab30e85ab4ba8b4b5920c901e8bcdedadad393a2205bb34e839f9c8db-16684568466961.png) button:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-outbound) to create the connection.
+     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-1) to create the connection.
    * After creating the connection, return to the DCR tab in your browser and select the newly created connection from the list of Data Locker connections.
 2. Click **Save** to save the report.
 3. The new report is now displayed in the **Reports** tab of the **Data Clean Room.**
 
+</Accordion>
+
 ## Reference
 
-### Default in-app event dimensions
+<div id="default-inapp-event-dimensions" />
+
+<Accordion title="Default in-app event dimensions">
 
 In addition to dimensions extracted from **event\_value** and dimensions from your custom sources (if applicable), the following in-app event dimensions can be used to group reports:
 
@@ -425,9 +438,13 @@ In addition to dimensions extracted from **event\_value** and dimensions from yo
 * platform
 * site\_id
 
-### Default in-app event metrics
+</Accordion>
+
+<Accordion title="Default in-app event metrics">
 
 In addition to metrics extracted from **event\_value** and metrics from your custom sources (if applicable), the following in-app event metrics can be included in reports:
 
 * event\_revenue
 * event\_revenue\_u\_s\_d
+
+</Accordion>

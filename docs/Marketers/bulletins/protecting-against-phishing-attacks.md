@@ -27,7 +27,7 @@ At AppsFlyer, we are committed to maintaining the security and integrity of our 
 
 ## **Official AppsFlyer domain**
 
-The only official AppsFlyer domain is: [https://www.appsflyer.com](https://www.appsflyer.com/)
+The only official AppsFlyer domain is: [https://www.appsflyer.com](https://www.appsflyer.com)
 
 Any other domain is not affiliated with AppsFlyer and may be used as part of a phishing scheme. Users are strongly advised to exercise caution when accessing websites or clicking on links purporting to represent AppsFlyer.
 
@@ -41,14 +41,14 @@ Phishing attempts can be highly sophisticated. The following guidelines can assi
 
 Phishing websites often use URLs that are intentionally misleading, including:
 
-- Minor misspellings (e.g., appsflyerr.com)
-- Similar-looking or hyphenated variants (e.g., appflyer-login.com)
+* Minor misspellings (e.g., appsflyerr.com)
+* Similar-looking or hyphenated variants (e.g., appflyer-login.com)
 
 Before interacting with a link, hover over it to preview the destination and ensure it aligns with the legitimate domain.
 
 2. Confirm Website Authenticity
 
-Always confirm that you are accessing AppsFlyer services through the official domain: [https://www.appsflyer.com](https://www.appsflyer.com/). Bookmarking the official site can help prevent unintentional navigation to illegitimate domains.
+Always confirm that you are accessing AppsFlyer services through the official domain:[https://www.appsflyer.com](https://www.appsflyer.com). Bookmarking the official site can help prevent unintentional navigation to illegitimate domains.
 
 3. Check Domain Registration
 
@@ -56,31 +56,30 @@ If you encounter an unfamiliar domain, services such as WHOIS can be used to rev
 
 4. Unusual Requests
 
-If you encounter unusual requests for information, actions or upfront fees be very wary and avoid collaborating with such requests. It is recommended that you first check online to see if such request fits with known common scams so you can avoid them.
+If you encounter unusual requests for information, actions or upfront fees be very wary and avoid collaborating with such requests. It is recommended that you first check online to see if such request fits with known common scams so you can avoid them. 
 
 5. Communication via Messaging Apps
 
-If you encounter requests to communicate via messaging apps, such as WhatsApp, Telegram etc. you should view such requests as very suspicious and avoid such requests.
+If you encounter requests to communicate via messaging apps, such as WhatsApp, Telegram etc. you should view such requests as very suspicious and avoid such requests. 
 
 ## **Be aware of employment scams**
 
-A recent common scam is an employment scam in which scammers pretend to be employers or recruiters in order to trick people into giving personal information, paying for fake job offers, or other forms of financial exploitation.
-
+A recent common scam is an employment scam in which scammers pretend to  be employers or recruiters in order to trick people into giving personal information, paying for fake job offers, or other forms of financial exploitation.   
 Therefore, you should be aware of the following warning signs:
 
-- Unsolicited Job Offers: Receiving a job offer without applying for the position is a common red flag.
-- Request for Upfront Fees: Legitimate employers never ask for money to process applications, training, for the work or equipment.
-- Vague Job Descriptions: Scammers often provide unclear or overly broad job descriptions.
-- Requests for Personal Information: Legitimate employers do not ask for sensitive personal information (like Social Security numbers or bank account details) early in the hiring process.
+* Unsolicited Job Offers: Receiving a job offer without applying for the position is a common red flag.
+* Request for Upfront Fees: Legitimate employers never ask for money to process applications, training, for the work or equipment.
+* Vague Job Descriptions: Scammers often provide unclear or overly broad job descriptions.
+* Requests for Personal Information: Legitimate employers do not ask for sensitive personal information (like Social Security numbers or bank account details) early in the hiring process.
 
 ## **Reporting suspicious activity**
 
 If you receive a communication or encounter a website that appears to be affiliated with AppsFlyer but does not use the official domain, please proceed as follows:
 
-- Do not engage with or respond to the communication.
-- Avoid clicking on any links or downloading attachments.
-- Document the incident by capturing a screenshot or saving the message.
-- Report the activity promptly to our security team at: security@appsflyer.com.
+* Do not engage with or respond to the communication.
+* Avoid clicking on any links or downloading attachments.
+* Document the incident by capturing a screenshot or saving the message.
+* Report the activity promptly to our security team at: security@appsflyer.com.
 
 Your proactive reporting enables us to respond swiftly and helps protect the wider community.
 
@@ -88,8 +87,8 @@ Your proactive reporting enables us to respond swiftly and helps protect the wid
 
 To further safeguard your digital interactions, we recommend the following best practices:
 
-- Utilize strong, unique passwords for all accounts and consider using a reputable password manager.
-- Enable two-factor authentication (2FA) wherever possible.
-- Regularly update your software, operating systems, and web browsers.
-- Remain cautious of unsolicited requests for personal or financial information, regardless of how credible the source may appear.
-- Do not transfer or pay any fees for “work” offered.
+* Utilize strong, unique passwords for all accounts and consider using a reputable password manager.
+* Enable two-factor authentication (2FA) wherever possible.
+* Regularly update your software, operating systems, and web browsers.
+* Remain cautious of unsolicited requests for personal or financial information, regardless of how credible the source may appear.
+* Do not transfer or pay any fees for “work” offered.

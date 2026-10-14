@@ -22,7 +22,7 @@ x-zendesk:
   created_at: '2022-10-18T19:06:54Z'
   edited_at: '2026-05-03T13:55:35Z'
 ---
-<Embed title="Partners Integration I Product tour" typeOfEmbed="youtube" url="https://www.youtube.com/embed/gADoRdje5z8" />
+<Embed title="Partner Integrations" typeOfEmbed="youtube" url="https://www.youtube.com/embed/gADoRdje5z8" providerUrl="https://www.youtube.com" />
 
 ## About partner integrations
 
@@ -34,8 +34,8 @@ Use Partner Integrations to discover, manage, and activate partners.
 
 The **Partner Integrations** page includes two tabs:
 
-- **Active integrations:** View and manage your active partner integrations.
-- **Marketplace:** Browse or search for partners that match your needs.
+* **Active integrations:** View and manage your active partner integrations.
+* **Marketplace:** Browse or search for partners that match your needs.
 
 **To get started:**
 
@@ -55,16 +55,23 @@ From this view, you can switch between apps, search for a specific partner, and 
 
 The **Active integrations** tab allows you to:
 
-- View and manage active partner integrations for the selected app.
-- Search an active integration by partner name.
-- See the total number of active integrations displayed as a badge on the tab.
-- Filter integrations by partner type and quality scores.
-- Select a partner card or click **Manage integration** to navigate to the integration setup page.
+* View and manage active partner integrations for the selected app.
+* Search an active integration by partner name.
+* See the total number of active integrations displayed as a badge on the tab.
+* Filter integrations by partner type and quality scores.
+* Select a partner card or click **Manage integration** to navigate to the integration setup page.
 
-> 📘 Note
+> 📘 **Note**
 >
-> - The active integrations shown on the Active integrations tab vary according to the currently selected app. You can see which partners are connected to other apps by clicking the app selector (top left) and choosing a different app.
-> - The number of active integrations for the selected app is shown on the tab.
+> * The active integrations shown on the Active integrations tab vary
+>   according
+>   to the currently selected app. You can see which partners are connected
+>   to
+>   other apps by clicking the app selector (top left) and choosing a
+>   different
+>   app.
+> * The number of active integrations for the selected app is shown on
+>   the tab.
 
 ### What you can do from the Active integrations tab
 
@@ -73,7 +80,7 @@ The **Active integrations** tab allows you to:
 | Go to the Marketplace tab | Click the **Marketplace** tab to explore new partners, where you can find all partners integrated with AppsFlyer. |
 | Manage the integration | Click a partner card or **Manage integration** to view and manage the partner integration setup page. |
 | Search within your active integrations | Enter a partner name in the search bar to find an active partner for the currently selected app. |
-| Change apps | The list of active partner integrations depends on the currently selected app. To see [active partners](/docs/partner-activation-deactivation#active-partners) for a different app:<br />1. Click the app selector to open the list of your apps.<br />2. Select another app. |
+| Change apps | The list of active partner integrations depends on the currently selected app. To see [active partners](/docs/partner-activation-deactivation#active-partners) for a different app:<ol><li>Click the app selector to open the list of your apps.</li><li>Select another app.</li></ol> |
 | See the partner page | Click the **About** icon on a partner card to view the partner page. |
 
 ## Discover partners
@@ -88,14 +95,14 @@ From this view, you can browse or search for partners and select **Integrate** t
 
 Browse partner cards for basic information about each partner:
 
-- **Active status indication** (appears for active integrations)
-- **Quality badges** (for partners who meet quality criteria)
-- **Partner type** (for example: Ad network, Agency, Tech partner)
-- **App integrations** (the number of active app integrations the partner has)
-- **About** (opens the partner page)
-- **Integrate / Manage integration** (starts setup or opens the integration configuration)
+* **Active status indication** (appears for active integrations)
+* **Quality badges** (for partners who meet quality criteria)
+* **Partner type** (for example: Ad network, Agency, Tech partner)
+* **App integrations** (the number of active app integrations the partner has)
+* **About** (opens the partner page)
+* **Integrate / Manage integration** (starts setup or opens the integration configuration)
 
-<Image src="https://files.readme.io/5e26c6bb7ac760b1c8996d43d2451ae61324c71da5d7522372e1255ee7e55ad6-45767176962577.png" alt="partner card.png" />
+![partner card.png](https://files.readme.io/5e26c6bb7ac760b1c8996d43d2451ae61324c71da5d7522372e1255ee7e55ad6-45767176962577.png)
 
 ### Filter the list of partners
 
@@ -103,7 +110,7 @@ Use the filters at the top of the page to find partners relevant to your search.
 
 | Filter | Description |
 | --- | --- |
-| Partner type | Browse partners by type:<br />- Ad networks<br />- Agencies<br />- Tech partner |
+| Partner type | Browse partners by type:<ul><li>Ad networks</li><li>Agencies</li><li>Tech partner</li></ul> |
 | Target region | Filter partners by activity in the selected regions. |
 | Target geo | Filter partners whose main activity is in the selected geos. |
 | High Quality Traffic | When selected, shows only partners with a low-fraud-rate badge (based on traffic from the last month). |
@@ -113,66 +120,66 @@ Use the filters at the top of the page to find partners relevant to your search.
 
 Use the search bar to find specific partners.
 
-<Image src="https://files.readme.io/6590e14e35e75bef7450489ec5ff06d1cabc0671a82043e4fb5fb467c67d2b8a-45767176965393.png" alt="serach for partners.png" />
+![serach for partners.png](https://files.readme.io/6590e14e35e75bef7450489ec5ff06d1cabc0671a82043e4fb5fb467c67d2b8a-45767176965393.png)
 
 When using the search bar in the Marketplace tab:
 
-- You can search for partners by their name or PID.
-- The **Manage integration** icon appears for existing partners and leads to the configuration page for your currently selected app.
-- A green dot next to the partner logo indicates the integration is active.
-- You can also search for active integrations in the **Active integrations** tab.
+* You can search for partners by their name or PID.
+* The **Manage integration** icon appears for existing partners and leads to the configuration page for your currently selected app.
+* A green dot next to the partner logo indicates the integration is active.
+* You can also search for active integrations in the **Active integrations** tab.
 
 ## Learn about partners
 
-You can learn more about each partner and connect with them on their partner page. Click the **About** button on a [partner card](/docs/partner-integrations#h_01KGHNPTWCZ76VYXHX4VE1QXJ1) to open the partner page.
+You can learn more about each partner and connect with them on their partner page. Click the **About** button on a [partner card](#partner-cards) to open the partner page.
 
-<Image src="https://files.readme.io/1a648003c740f1783e53b6b91e5f78501af0a5e05c17f6963a161bd31d0b2c3d-small-45767176966033.png" alt="new cropped partner image.png" />
+![new cropped partner image.png](https://files.readme.io/1a648003c740f1783e53b6b91e5f78501af0a5e05c17f6963a161bd31d0b2c3d-small-45767176966033.png)
 
 ### What you can do from the partner page
 
-- [Contact the partner](/docs/partner-integrations#h_01KGHNPTWCS7QX89XKTY917J24)
-- [Set up a new integration](/docs/partner-integrations#h_01KGHNPTWCN2X3XVXKE1MXJRA6)
-- [Manage an active integration](/docs/partner-integrations#h_01KGHNPTWBQ88VKS2A90GVS64T)
+* [Contact the partner](#contact-the-partner)
+* [Set up a new integration](#integrate-with-a-new-partner)
+* [Manage an active integration](#manage-active-integrations)
 
 ### What you can see on the partner page
 
 When partners meet quality criteria, the following badges can appear:
 
-- **Performance Index**: Leads to the partner ranking table (shown only if the partner appeared in the latest Performance Index).
-- **High-quality traffic**: Indicates traffic from recent months with a very low fraud rate.
+* **Performance Index**: Leads to the partner ranking table (shown only if the partner appeared in the latest Performance Index).
+* **High-quality traffic**: Indicates traffic from recent months with a very low fraud rate.
 
 Additional partner details include:
 
-- **App integrations:** The number of active app integrations the partner has with recorded traffic for the past 30 days.
-- **Supported features:** AppsFlyer integration features that the partner supports.
-- **Partner details:** Information the partner provided, such as services, capabilities, and terms of service.
+* **App integrations:** The number of active app integrations the partner has with recorded traffic for the past 30 days.
+* **Supported features:** AppsFlyer integration features that the partner supports.
+* **Partner details:** Information the partner provided, such as services, capabilities, and terms of service.
 
 ## Contact the partner
 
 AppsFlyer can help you connect with a partner by sending them an introductory email on your behalf. You can review the email text before sending.
 
 1. From the partner page, click **Introduce me**.
-2. _[Optional]_ Hover over **See full email text** to preview the full message.
+2. *[Optional]* Hover over **See full email text** to preview the full message.
 3. Click **Send quick introduction**.
 
-> 📘 Note
+> 📘 **Note**
 >
-> - The **Introduce me** button appears only if the partner provided relevant contact details.
-> - Some partners prefer to be reached via their landing page. In this case, the **Contact partner** button appears instead of **Introduce me**.
+> * The **Introduce me** button appears only if the partner provided relevant contact details.
+> * Some partners prefer to be reached via their landing page. In this case, the **Contact partner** button appears instead of **Introduce me**.
 
 ## Integrate with a new partner
 
-After [discovering new partners](/docs/partner-integrations#h_01KGHNPTWC4A6142DEM5C6MQ7G) and learning about their activity, you can set up the integration. Once your apps are connected to partners, you’ll start seeing non-organic data on your dashboards.
+After [discovering new partners](#discover-partners) and learning about their activity, you can set up the integration. Once your apps are connected to partners, you’ll start seeing non-organic data on your dashboards.
 
-> 📘 Note
+> 📘 **Note**
 >
 > Before setting up an integration, make sure you contact the partner and open an account with them.
-
-To set up an integration with a new partner:
-
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations**.
-2. Search for the partner and select it. Click the partner card or the **Integrate** button to open the integration setup page.
-3. Turn on **Activate partner** and [set up the rest of the integration sections](/docs/set-up-an-integrated-partner).
+>
+> To set up an integration with a new partner:
+>
+> 1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations**.
+> 2. Search for the partner and select it. Click the partner card or the **Integrate** button to open the integration setup page.
+> 3. Turn on **Activate partner** and [set up the rest of the integration sections](/docs/set-up-an-integrated-partner).
 
 ## Invite new partners to AppsFlyer
 
@@ -182,17 +189,16 @@ If the ad network you're working with isn't integrated with AppsFlyer yet, you c
 
 Before new ad network integrations can be added to the Marketplace, they undergo a validation period during which AppsFlyer assesses their traffic quality. Integrations failing to meet quality standards post-validation will be removed from the platform.
 
-> 📘 Note
+> 📘 **Note**
 >
-> - Only [admins](/docs/user-management#invite-new-partners-to-appsflyer) can invite new partners via the invite link.
-> - This option is available for customers in Growth and Enterprise plans.
+> * Only [admins](/docs/user-management#invite-new-partners-to-appsflyer) can invite new partners via the invite link.
+> * This option is available for customers in Growth and Enterprise plans.
 
 **To invite a new partner to integrate with AppsFlyer:**
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations**.
-2. From the top-right corner of the Partner Marketplace page, click the letter icon.
-
-<Image src="https://files.readme.io/f0208f3f19f7102ba8174eea064f88db1fe14732334fe58ced0b0a373ce3f1c8-45767201404433.png" alt="invite new partner.png" />
+2. From the top-right corner of the Partner Marketplace page, click the letter icon.  
+   ![invite new partner.png](https://files.readme.io/f0208f3f19f7102ba8174eea064f88db1fe14732334fe58ced0b0a373ce3f1c8-45767201404433.png)
 3. Enter the partner's name and relevant email address.
 
 The partner will receive an email with a registration link to start the signup process.

@@ -36,17 +36,13 @@ The following table lists the tasks required to integrate your Google Play Games
 
 | Task | Actions | Who's involved |
 | --- | --- | --- |
-| App setup | - [Create an AppsFlyer account](https://www.appsflyer.com/get-started/)<br />- [Add account users with appropriate permissions](/docs/user-management)<br />- [Add your Android app in AppsFlyer](/docs/adding-an-app-to-appsflyer) | Marketer |
+| App setup | <ul><li>[Create an AppsFlyer account](https://www.appsflyer.com/get-started/)</li><li>[Add account users with appropriate permissions](/docs/user-management)</li><li>[Add your Android app in AppsFlyer](/docs/adding-an-app-to-appsflyer)</li></ul> | Marketer |
 | SDK integration with your app | Integrate the [AppsFlyer Android SDK](https://dev.appsflyer.com/hc/docs/android-sdk). | App developer |
-| Cross-platform landing page setup | **Recommended**: Across-platform landing page running the AppsFlyer Smart Script lets you perform web-to-app attribution. It's most recommended when your campaign promotes an app that's also available on other platforms, like Epic and Steam.<br />[Learn about cross-platform landing pages](/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page)<br />[Learn how to set up a cross-platform landing page](/docs/cross-platform-landing-pages-with-smart-script) | Marketer (may require developer assistance) |
-| Link setup | If you don't use a cross-platform landing page, you can create direct attribution links to place behind ads. Marketing campaigns for Google Play Games apps use links similar to the attribution links created in AppsFlyer for mobile apps.<br />[Learn how to create links](/docs/about-link-structure-and-parameters) | Marketer |
-| Report setup/view data | AppsFlyer dashboards and reports for Google Play Games apps are similar to those available for mobile apps.<br />[Learn more about AppsFlyer dashboards and reports](/docs/analyze-your-data) | Marketer/Data engineer |
+| Cross-platform landing page setup | **Recommended**: A cross-platform landing page running the AppsFlyer Smart Script lets you perform web-to-app attribution. It's most recommended when your campaign promotes an app that's also available on other platforms, like Epic and Steam.<br /><br />[Learn about cross-platform landing pages](/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page)<br /><br />[Learn how to set up a cross-platform landing page](/docs/cross-platform-landing-pages-with-smart-script) | Marketer (may require developer assistance) |
+| Link setup | If you don't use a cross-platform landing page, you can create direct attribution links to place behind ads. Marketing campaigns for Google Play Games apps use links similar to the attribution links created in AppsFlyer for mobile apps.<br /><br />[Learn how to create links](/docs/about-link-structure-and-parameters) | Marketer |
+| Report setup/view data | AppsFlyer dashboards and reports for Google Play Games apps are similar to those available for mobile apps.<br /><br />[Learn more about AppsFlyer dashboards and reports](/docs/analyze-your-data) | Marketer/Data engineer |
 
-<Cards>
-  <Card title="CTV, PC, and console platform concepts" href="/docs/ctv-pc-and-console-platform-attribution-concepts" icon="fa-solid fa-diagram-project">
-    Learn about Connected TV, PC, and console platform attribution concepts.
-  </Card>
-  <Card title="Google Ads Web integration for PC and console apps" href="/docs/google-ads-web-integration-for-pc-and-console-apps" icon="fa-solid fa-bullhorn">
-    Learn how to integrate Google Ads Web for PC and console applications.
-  </Card>
-</Cards>
+> 📘 **See also**
+>
+> * [CTV, PC, and console platform concepts](/docs/ctv-pc-and-console-platform-attribution-concepts)
+> * [Google Ads Web integration for PC and console apps](/docs/google-ads-web-integration-for-pc-and-console-apps)

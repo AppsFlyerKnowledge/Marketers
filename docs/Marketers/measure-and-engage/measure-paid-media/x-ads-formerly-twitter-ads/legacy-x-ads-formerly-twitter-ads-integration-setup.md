@@ -24,11 +24,13 @@ x-zendesk:
 ---
 ## Connecting your X Ads account to AppsFlyer
 
-**Watch**
+<Accordion title="Watch">
 
 ![](https://fast.wistia.com/embed/medias/a65pnqoyxw/swatch)
 
-**Read**
+</Accordion>
+
+<Accordion title="Read">
 
 > 📘 **Before you begin**
 >
@@ -47,7 +49,7 @@ x-zendesk:
 6. A notification displays informing you that you're about to leave X Ads to go to the AppsFlyer website. Click **Go to AppsFlyer** and log in to your Dashboard.
 
    ![twitter-go-to-appsflyer.png](https://files.readme.io/bca10eea5032a495fd38c996d0aa4a9f2db8a285211e6cf0860dd6f21bcfa670-36433422307601.png)
-7. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations > Marketplace** tab**.**
+7. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations > Marketplace** tab.
 8. Search for **X Ads** and select it.
 9. In the **Integration** tab, accept the X Ads Terms and Conditions for Mobile App Conversion Recording (MACT), then click **Save integration**.
 10. Turn on **Activate partner**, and click **Log in with X Ads**.
@@ -60,11 +62,13 @@ x-zendesk:
 
     ![twitter_account_name.png](https://files.readme.io/d74e9b3edd08c4ca3396b95ae20e20db99bcbe1a220318403bd6c9d6f9600282-36433415108497.png)
 
+</Accordion>
+
 ## X Ads attribution setup
 
 For a detailed description of the partner configuration page Header, click [here](/docs/set-up-an-integrated-partner).
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The **Integration Tab** is divided into different sections, as described below. [Partner must be activated](/docs/partner-activation-deactivation) on the first visit to enable its setup.
 
@@ -131,19 +135,19 @@ In this section, you can map your AppsFlyer events with your partners via postba
 3. Click **Add event** to add an SDK or server-to-server event to the list.
 4. Complete the parameters required according to the table below.
 
-   
-
 | Parameter | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.  <br />**Tip**: Don't see the event you are looking for?<br /><br />* Make sure to activate the event on a device with a non-organic installation and recheck.<br />* Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible [mapping configurations](/docs/in-app-event-postback-configuration#event-mapping):<br /><br />* **Text field:** Get the corresponding event ID from the partner.<br />* **Drop-down box:** Select the most suitable pre-defined AppsFlyer event.<br />* **As is**: Send the events as they are, without name mapping. |
-| **for users from** | Select the sending option for the event:<br /><br />CALLSTART::Note::<br /><br />#### Note<br /><br />For X Ads to receive agency-attributed postbacks, you must select **All media sources, including organic**. Otherwise, X Ads won't receive such postbacks.<br /><br />CALLEND::<br /><br />* **This partner only**: send postbacks only when this event is attributed to this partner.<br />* **All media sources, including organic**: send postbacks for events attributed to any partner and organic events. |
-| **including** | * **No data (default)**: send only the event itself without the event value.<br />* **Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).<br />* **Values without revenue**: send all the parameters **excluding** the revenue value. |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
+| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible [mapping configurations](/docs/in-app-event-postback-configuration#event-mapping):<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
+| **for users from** | Select the sending option for the event:<br /><br /><br /><br />**Note**<br />For X Ads to receive agency-attributed postbacks, you must select **All media sources, including organic**. Otherwise, X Ads won't receive such postbacks.<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources, including organic**: send postbacks for events attributed to any partner and organic events.</li></ul> |
+| **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
 
 5. [Optional] Click ![conditional-iae-postbacks-icon.png](https://files.readme.io/9649c58fb3f46bbb89605e274623e80fbae8d31417694961f0035b7b50276aa9-36433422313105.png) to set conditions for sending certain in-app events to the partner.  
-   Learn more about [conditional in-app event postbacks](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks).
+   Learn more about [conditional in-app event postbacks](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks).
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 X Ads does not use attribution links for attribution.
 
@@ -151,7 +155,9 @@ X Ads does not use attribution links for attribution.
 >
 > For all [self-reporting networks (SRNs)](/docs/self-reporting-networks-srns), such as Meta ads, Apple Ads, Google Ads, X Ads, etc., this tab is not functional since they don't use external attribution links.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 The cost integration provides the following aggregated data:
 
@@ -165,11 +171,15 @@ The cost integration provides the following aggregated data:
 
 [View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad revenue is not currently available for X-Ads.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant X Ads, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for X Ads, the permissions tab is active and you can grant control to X Ads.
 
@@ -191,13 +201,17 @@ Learn more about granting [ad network permissions.](/docs/set-up-an-integrated-p
 
 Learn about [granting agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
+</Accordion>
+
 ## Advanced X Ads setup video
 
-**Watch**
+<Accordion title="Watch">
 
 ![](https://fast.wistia.com/embed/medias/3ypfld8enr/swatch)
 
-## Traits and limitations
+</Accordion>
+
+<Accordion title="Traits and limitations">
 
 | Trait | Remarks |
 | --- | --- |
@@ -206,3 +220,5 @@ Learn about [granting agency permissions](/docs/set-up-an-integrated-partner#age
 | Cost | For X Ads, cost data for SKAN-only campaigns (campaigns that only have SKAN installs and no "regular" installs) isn't available to agencies. The cost integration must be set up by the advertiser. And the data can only be viewed by the advertiser. |
 
 Traits and limitations
+
+</Accordion>

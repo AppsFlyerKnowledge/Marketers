@@ -30,6 +30,4 @@ To enable the integration simply send the iTunes Provider ID to your AppsFlyer A
 
 ![itunes-connect-app-analytics2.png](https://files.readme.io/7ae2c205b45a9084752a85c4bec93cb052f0e288a1dbee97c1eb5e51cd66d730-11523234132753.png)
 
-> 🚧 Known Limitation
->
-> The integration only works with networks that redirect their clicks through AppsFlyer. SRNs (for example, Meta ads, X Ads, Google Ads, etc.) are currently not supported.
+**Known Limitation:** The integration only works with networks that redirect their clicks through AppsFlyer. SRNs (for example, Meta ads, X Ads, Google Ads, etc.) are currently not supported.

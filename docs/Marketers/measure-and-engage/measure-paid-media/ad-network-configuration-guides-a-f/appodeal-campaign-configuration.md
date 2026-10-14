@@ -40,7 +40,7 @@ AppsFlyer integration with Appodeal supports click attribution and [user-level a
    Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below:
 
-### Integration
+<Accordion title="Integration">
 
 Configure this section if Appodeal provides ad network advertising services.
 
@@ -49,9 +49,11 @@ Configure this section if Appodeal provides ad network advertising services.
 1. Enable **Activate Partner.**
 2. Click **Save Integration**.
 
-### Attribution link
+</Accordion>
 
-Generate click attribution links (for use by Appodeal) via this tab. [More about link structure and parameters](/docs/about-link-structure-and-parameters)**.**
+<Accordion title="Attribution link">
+
+Generate click attribution links (for use by Appodeal) via this tab. [More about link structure and parameters](/docs/about-link-structure-and-parameters).
 
 **To generate an attribution link**:
 
@@ -63,33 +65,29 @@ Generate click attribution links (for use by Appodeal) via this tab. [More about
 
 **Attribution link and lookback window**
 
-
-
 | Attribution link type | Link activation | Lookback window |
 | --- | --- | --- |
 | Click | A user clicks on an ad served by the ad network | **The Click-through lookback** window is preset; it is the **maximum allowed time from click to install**.<br /><br />Example: An install (first launch) made after the click—but before the expiry of the lookback window—is attributed to Appodeal.<br /><br />**Parameter name**: `af_click_lookback`  <br />**Default value**: 7 days  <br />**Range:** 1-23 hours or 1-30 days |
 
-
-
 **Typical link parameters**
-
-
 
 | Parameter | Parameter name | Description |
 | --- | --- | --- |
 | Campaign | c | Name of the campaign |
 | Adset | af\_adset | Use to differentiate add sets. |
 | Ad name | af\_ad | Use to differentiate between creatives within the add set. |
-| Site ID | af\_siteid  <br />af\_subsiteid | Use to attribute installs to specific publishers.<br /><br />**Good practice!** If there are multiple publishers,<br /><br />* Limit the number of site IDs in use<br />* Use the subsite ID parameter to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitation |
-| Subscriber parameters | af\_sub1, af\_sub2, af\_sub3, af\_sub4, and af\_sub5 | Use to insert values.<br /><br />* Parameters are parsed and included in the raw data report.<br />* Use them to perform data aggregation or filtering |
+| Site ID | af\_siteid  <br />af\_subsiteid | Use to attribute installs to specific publishers.<br /><br />**Good practice!** If there are multiple publishers,<ul><li>Limit the number of site IDs in use</li><li>Use the subsite ID parameter to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitation</li></ul> |
+| Subscriber parameters | af\_sub1, af\_sub2, af\_sub3, af\_sub4, and af\_sub5 | Use to insert values.<ul><li>Parameters are parsed and included in the raw data report.</li><li>Use them to perform data aggregation or filtering</li></ul> |
 
+</Accordion>
 
-
-### Cost
+<Accordion title="Cost">
 
 Appodeal sends CPI cost data via the attribution link.
 
-### Ad revenue
+</Accordion>
+
+<Accordion title="Ad revenue">
 
 * Appodeal provides ad revenue mediation with [user-level granularity](/docs/roi360-guide-ad-revenue-attribution#ad-revenue-raw-data)
 * Learn more about [AppsFlyer ad revenue attribution](/docs/roi360-guide-ad-revenue-attribution)
@@ -98,6 +96,10 @@ Appodeal sends CPI cost data via the attribution link.
 
 * Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
 
-### Permissions
+</Accordion>
+
+<Accordion title="Permissions">
 
 No permissions need to be set for Appodeal.
+
+</Accordion>

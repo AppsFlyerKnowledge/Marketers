@@ -32,14 +32,16 @@ Before the Engagements task can be set up, the collaboration owner needs to assi
 
 In the context of on-site and combined campaigns, all engagement events originate from the collaborator’s owned properties—such as their app, website, or in-store systems. These engagement events are typically collected using the AppsFlyer SDK or submitted via custom data sources and are attributed solely to on-site user activity.
 
-### 1. Prepare engagement data
+<Accordion title="1. Prepare engagement data">
 
 Before you set up the custom engagement source in DCP, you can provide engagement data in one of two ways:
 
 * **Custom source file:** Create an engagement source file and upload it to your cloud service. For more information, see [Prepare custom source files for engagements](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme).
 * **AppsFlyer SDK:** Integrate the AppsFlyer SDK into your app to automatically send in-app engagement events to DCP. For more information, see [Prepare in-app events for engagements](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-engagement-inapp-events).
 
-### 2. Open engagement settings
+</Accordion>
+
+<Accordion title="2. Open engagement settings">
 
 The **Measurement settings** page is where you configure, as part of the collaboration measurement setup, how engagements are collected and attributed.
 
@@ -51,14 +53,14 @@ To open the **Measurement settings** page, follow these steps:
    * If the link is grayed out, set up the collaboration's [data sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources) and [audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences).
 4. On the **Measurement Setting** page, click the **Engagements** pane to open the **Engagements** dialog.
 
-   CALLSTART::Note::
-
-   #### Note
+   <br /><br />**Note**<br />#### Note
 
    * If the **Engagements** dialog is locked, it means that the Engagements task has been assigned to your collaborator and that you cannot view its content. If you are the collaboration owner, you can unlock it by reassigning the task to yourself. However, any previous settings will be deleted, and the task will be reset.
-   * If the **Engagements** pane is grayed out, ask the collaboration ownerto assign you the Engagements task.CALLEND::
+   * If the **Engagements** pane is grayed out, ask the collaboration ownerto assign you the Engagements task.
 
-### 3. Set data provision method
+</Accordion>
+
+<Accordion title="3. Set data provision method">
 
 Engagement data is provided to DCP either via in-app events, custom source, or both:
 
@@ -78,7 +80,9 @@ To set up the engagement provision method in DCP, follow these steps:
      2. In the **New engagement source** dialog, enter the engagement source's name in the **Source name** field according to the [requirements and guidelines](/docs/data-collaboration-platform-dcp-create-and-manage-sources#requirements-and-guidelines).
 3. Click **Next**.
 
-### 4. Set source location
+</Accordion>
+
+<Accordion title="4. Set source location">
 
 If a custom source is used to provide engagement events to DCP, set the details that enable DCP to access it in your cloud service.
 
@@ -89,18 +93,19 @@ If a custom source is used to provide engagement events to DCP, set the details 
    * [BigQuery](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-bigquery)
    * [Snowflake](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-snowflake)
    * [Amazon S3 and GCS](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-cloud-storage-buckets)
-   * [Local file system](/docs/data-collaboration-platform-dcp-create-and-manage-sources#local-file-system)
+   * [Local file system](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-location-as-local-files)
 3. Select how new data should be handled. For more information, see: [Set source sync method](/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method).
 4. Click **Next**.
 
-### 5. Map engagement source fields
+</Accordion>
+
+<Accordion title="5. Map engagement source fields">
 
 If a custom source is used to provide engagement events to DCP, map your custom engagement source fields to their corresponding DCP fields.
 
 > 📘 **Note**
 >
 > The **DCP conversion events database** stores all the conversion events of the current collaboration under a unitary scheme, including conversion events originating from **in-app events** or **off-site campaigns** (if you’re running a combined on-site off-site campaign).
-
 
 **Load engagement source fields**
 
@@ -109,7 +114,7 @@ If the engagement source fields are not already loaded, you might have to load t
 To load engagement source fields, follow these steps:
 
 1. In the **Map source fields** step, click **Load fields from source**.
-2. For information about how to manually load fields, see: [Load your source fields](/docs/data-collaboration-platform-dcp-create-and-manage-sources#load-the-source-fields).
+2. For information about how to manually load fields, see: [Load your source fields](/docs/data-collaboration-platform-dcp-create-and-manage-sources#1-load-your-source-fields).
 
 **Auto-map engagement fields**
 
@@ -123,7 +128,9 @@ If the engagement source fields are loaded, you can map them to the DCP fields.
 
 To map the engagement custom source fields, follow these steps
 
-1. If you are setting a combined **On-site and Off-site campaign**, in the **Map source fields** step, expand the **Data for on-site attribution;** else**,** skip to the step below.
+1. If you are setting a combined **On-site and Off-site campaign**, in the **Map source fields** step, expand the **Data for on-site attribution;** else, skip to the step below.
 2. Map all required fields under **Required**.
 3. (Optional) Expand **Optional enrichment data** to map additional fields.
 4. Click **Save**. The **`{source name}` source created** message is displayed.[![](https://files.readme.io/670c7ca42d066bf2d874785108d84318387e393512973d2fff5056ab3f5a45cd-38381396764817.png)](https://files.readme.io/670c7ca42d066bf2d874785108d84318387e393512973d2fff5056ab3f5a45cd-38381396764817.png)
+
+</Accordion>

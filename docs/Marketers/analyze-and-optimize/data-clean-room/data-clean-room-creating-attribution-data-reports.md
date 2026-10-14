@@ -28,7 +28,7 @@ x-zendesk:
 
 **Note:** These steps are divided into tabs for ease of reading. All steps must be completed in order to create the report.
 
-### Perform preliminary steps
+<Accordion title="Perform preliminary steps">
 
 1. Go to the **Reports** tab of the **DCR.**
 2. Click the **+ New report** button.
@@ -46,7 +46,9 @@ x-zendesk:
        * spaces
        * all other symbols or special characters
 
-### Select sources
+</Accordion>
+
+<Accordion title="Select sources">
 
 Specify the data to be used for the report:
 
@@ -57,11 +59,10 @@ Specify the data to be used for the report:
 
 | Installs | An install is recorded when a user downloads, installs, and launches a mobile app. |
 | --- | --- |
-| Re-installs | A re-install is recorded when a user installs an app, then uninstalls and re-installs it during the re-attribution window.<br /><br />* **Note:** The length of the re-attribution window is set in Settings > App Settings. |
+| Re-installs | A re-install is recorded when a user installs an app, then uninstalls and re-installs it during the re-attribution window.<ul><li>**Note:** The length of the re-attribution window is set in Settings > App Settings.</li></ul> |
 | Re-engagements | A re-engagement is recorded when an inactive user of a specific app engages with a retargeting campaign for the app and subsequently launches it. |
 | Re-attributions | A re-attribution is recorded when a former user of a specific app (who had uninstalled it) engages with a retargeting campaign for the app and subsequently reinstalls it. |
-| Organic installs | Organic installs are those not attributed to a specific media source.<br /><br />* **Note:** Including organic installs in your report can significantly increase the number of scanned rows. |
-
+| Organic installs | Organic installs are those not attributed to a specific media source.<ul><li>**Note:** Including organic installs in your report can significantly increase the number of scanned rows.</li></ul> |
 
 * **Timeframe:** Select the number of days of historical data you want the DCR to search for attribution events matching your custom source events (from 1 to 180 days).
 
@@ -69,7 +70,9 @@ Specify the data to be used for the report:
 
 When defining report structure, you can choose to use data from any of the [custom sources you have set up](/docs/data-clean-room-working-with-sources).
 
-### Join sources
+</Accordion>
+
+<Accordion title="Join sources">
 
 To match data among sources, each of the **custom** sources used in the report must include an [identifier](/docs/data-clean-room-setting-up-cloud-services) mapped to a **key identifier** in the attribution data.
 
@@ -86,7 +89,6 @@ You can map to either of these attribution data identifiers as **key identifiers
 > 📘 **Important!**
 >
 > Not all media sources permit matching using CUID. It is highly recommended to use AppsFlyer ID.
-
 
 #### **Mapping schemes (direct/indirect)**
 
@@ -107,13 +109,13 @@ If the report uses more than one custom source, only one of them needs to be map
 >
 > **✓** This mapping scheme works to match data among all the sources since each custom source is mapped either directly or indirectly to the attribution data key identifier **af\_id.**
 
+</Accordion>
 
-### Determine treatment of multiple matching events
+<Accordion title="Determine treatment of multiple matching events">
 
 > 📘 **Note**
 >
-> If the attribution types selected for this report **include only installs and/or organic installs,** this section is irrelevant. Skip to [**Select dimensions**](/docs/data-clean-room-creating-attribution-data-reports#select-dimensions)**.**
-
+> If the attribution types selected for this report **include only installs and/or organic installs,** this section is irrelevant. Skip to [**Select dimensions**](/docs/data-clean-room-creating-attribution-data-reports#select-dimensions).
 
 If the attribution types you select for your report include **re-installs,** **re-engagements, or re-attributions,** it's possible that the attribution data will include more than one event during the selected timeframe with the same key identifier. When this is the case, you must instruct the DCR which matching events it should include in the report.
 
@@ -141,8 +143,11 @@ Make this selection based on the event you consider to be most relevant to the i
 >
 > In case of record duplicates, DCR deduplicates records with the same `appsflyer_id`, selecting the latest event based on `event_time`.
 
+</Accordion>
 
-### Select dimensions
+<div id="select-dimensions" />
+
+<Accordion title="Select dimensions">
 
 Recall that user-level data cannot be reported by the DCR. Instead, it provides you with the decision-making insights you need by aggregating (or grouping) the data by the dimensions you choose.
 
@@ -241,7 +246,6 @@ However, instead of removing or hiding the data from the report completely, the 
 >
 > * *See below for an advanced option you can use to apply regrouping to custom source dimensions as well.*
 
-
 #### **[Optional] Managing dimension priority**
 
 By default, attribution data dimensions are eliminated in reverse order from the order in which they appear in the **Report dimensions** list. However, you can modify the default sequence and/or apply regrouping to selected custom source dimensions in order to preserve the dimensions most important to you.
@@ -259,7 +263,9 @@ By default, attribution data dimensions are eliminated in reverse order from the
 4. Click **OK** to save your changes.
    * The **Report dimensions** list on the main screen remains in its original order, but the revised order has been saved. (Click again on the **Manage dimension priority** button if you wish to review or edit your selection.)
 
-### Select metrics
+</Accordion>
+
+<Accordion title="Select metrics">
 
 Metrics are the numeric data you have collected with respect to an app user (examples might include revenue, number of app opens, LTV, etc.) and can be any **numeric** data field from your sources that you have categorized as a metric.
 
@@ -295,7 +301,11 @@ By default, each row of the report ends with a column containing a count of the 
 2. To remove an identifier, select it from the **Distinct count identifiers** list and use the **Remove** button to return it to the **Identifiers from sources** list.
 3. Repeat this process until you have added each identifier you want counted in the report.
 
-### Set the report destination and save the report
+</Accordion>
+
+<div id="set-the-report-destination-and-save-the-report" />
+
+<Accordion title="Set the report destination and save the report">
 
 The DCR delivers reports to your selected cloud services using [AppsFlyer Data Locker](/docs/data-locker-for-marketers). Therefore, specifying the report destination involves selecting or creating a Data Locker connection.
 
@@ -306,13 +316,15 @@ The DCR delivers reports to your selected cloud services using [AppsFlyer Data 
 1. Select from the list of Data Locker connections available in your AppsFlyer account.
    * If there are no connections defined in your account:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-outbound) to create the connection.
+     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-1) to create the connection.
    * If you have existing connections but want to use a new one, click the ![dcr_new_connection_data_locker_button.png](https://files.readme.io/9850a4b8ea4f40f6320903c545c51add7b90207538a27c83a3b02a41197ba567-14995870859281.png) button:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-outbound) to create the connection.
+     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-1) to create the connection.
    * After creating the connection, return to the DCR tab in your browser and select the newly created connection from the list of Data Locker connections.
 2. Click **Save** to save the report.
 3. The new report is now displayed in the **Reports** tab of the **Data Clean Room.**
+
+</Accordion>
 
 ## When does the report run?
 
@@ -320,13 +332,15 @@ Once you have created and saved a report, the report runs whenever new versions 
 
 * For sources located in **data warehouses** (BigQuery and Snowflake), the DCR recognizes that a new version of a source has been created when it detects a new value in [the `v` column of the source table](/docs/data-clean-room-working-with-sources#table-columns).
   * **Important!** Whenever the column value changes, be sure to populate the source table with a complete set of data to ensure the completeness of your report.
-* The DCR recognizes that a new version of a source has been created when it detects that a [new version of a source file has been uploaded](/docs/data-clean-room-working-with-sources#uploading-source-files-to-trigger-report-processing) to a connected cloud account, along with its accompanying \_SUCCESS file.
+* The DCR recognizes that a new version of a source has been created when it detects that a [new version of a source file has been uploaded](/docs/data-clean-room-working-with-sources#updating-sources-to-trigger-report-processing) to a connected cloud account, along with its accompanying \_SUCCESS file.
 
 AppsFlyer continually scans for new versions of sources for the **current date and 2 days prior.**
 
 ## Reference
 
-### Available attribution data dimensions
+<div id="available-attribution-data-dimensions" />
+
+<Accordion title="Available attribution data dimensions">
 
 In addition to dimensions from your custom sources, the following attribution data dimensions can be used to group reports:
 
@@ -379,3 +393,5 @@ In addition to dimensions from your custom sources, the following attribution da
 * site\_id
 
 ¹ *For re-engagements and re-attributions, reports will show these fields as empty.*
+
+</Accordion>

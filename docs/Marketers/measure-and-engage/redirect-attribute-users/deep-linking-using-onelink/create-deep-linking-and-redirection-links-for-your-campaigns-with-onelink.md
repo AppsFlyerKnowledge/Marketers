@@ -38,11 +38,11 @@ The steps required to set up a link are described in detail in the section that 
 
 ## Create a OneLink link
 
-| **Who's involved**<br /><br />* Only a marketer is required to create OneLink links with an experience that redirects users to app stores, web URL, or, once the template is set up to open the app with Android App Links and iOS Universal Links, into the home page of the app.<br />* To add deep linking and deferred deep linking functionality to links, both a marketer and Android/iOS developers are required. |
+| **Who's involved**<ul><li>Only a marketer is required to create OneLink links with an experience that redirects users to app stores, web URL, or, once the template is set up to open the app with Android App Links and iOS Universal Links, into the home page of the app.</li><li>To add deep linking and deferred deep linking functionality to links, both a marketer and Android/iOS developers are required.</li></ul> |
 | --- |
-| **Prerequisites**<br /><br />* An AppsFlyer account with at least one app.<br />* A [OneLink template](/docs/create-a-onelink-template) on which to base your links.<br />* For attribution: [The AppsFlyer SDK already installed](/docs/integrate-the-appsflyer-sdk) in each of your mobile apps.<br />  * If the SDK is not yet installed in your apps, it is still possible to create a working redirection link, but it will not be possible to measure installs in your dashboard, deep link, or deferred deep link. |
+| **Prerequisites**<ul><li>An AppsFlyer account with at least one app.</li><li>A [OneLink template](/docs/create-a-onelink-template) on which to base your links.</li><li>For attribution: [The AppsFlyer SDK already installed](/docs/integrate-the-appsflyer-sdk) in each of your mobile apps.<ul><li>If the SDK is not yet installed in your apps, it is still possible to create a working redirection link, but it will not be possible to measure installs in your dashboard, deep link, or deferred deep link.</li></ul></li></ul> |
 | **Time required**<br /><br />30 minutes for most links, but approximately 3 hours for links that require deep linking or deferred deep linking functionality. |
-| **Outcome**<br /><br />* A link that sends users to the correct app store, web page, or into the app based on their device, and gives them exactly the experience you want them to have. |
+| **Outcome**<ul><li>A link that sends users to the correct app store, web page, or into the app based on their device, and gives them exactly the experience you want them to have.</li></ul> |
 
 **Create OneLink links from your AI tool**
 
@@ -56,13 +56,10 @@ You can also create OneLink links by describing them in plain language in an AI 
 4. Select the [experience](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#experiences) you want to create for your users.
 5. Select a media source or enter a custom media source. This is the media source under which data displays in AppsFlyer. The media source is included in your link as the `pid` parameter value.
 
-   CALLSTART::Note::
+   > 📘 **Note**
+   >
+   > AppsFlyer blocks attribution links that use reserved [SRN](/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer) names as PID values in owned media sources, such as email and SMS. This restriction does not apply to ASRNs.
 
-   #### Note
-
-   AppsFlyer blocks attribution links that use reserved [SRN](/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer) names as PID values in owned media sources, such as email and SMS. This restriction does not apply to ASRNs.
-
-   CALLEND::
 6. Click **Next**.
 7. Complete [General settings](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings).
 8. Click **Next**.
@@ -72,10 +69,10 @@ You can also create OneLink links by describing them in plain language in an AI 
 
 | Experience | Procedure options |
 | --- | --- |
-| * Social-to-app<br />* Text-to-app<br />* Referral to app<br />* Custom link | * [Social media preview](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-media-preview-og-tags)<br />* [Social app landing page](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page) |
+| <ul><li>Social-to-app</li><li>Text-to-app</li><li>Referral to app</li><li>Custom link</li></ul> | <ul><li>[Social media preview](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-media-preview-og-tags)</li><li>[Social app landing page](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page)</li></ul> |
 | Email-to-app | If you're using an ESP, follow the [ESP integration instructions](/docs/email-service-provider-esp-integration-guide). |
 | App-to-app | You can create dynamic links that work across multiple apps via [cross-promotion](/docs/cross-promotion-attribution-for-marketers). |
-| Referral-to-app | * [Social media preview](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-media-preview-og-tags)<br />* [Social app landing page](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page)<br />* You can dynamically create referral-to-app links via the SDK in your app via [user invite integration](/docs/user-invite-attribution). |
+| Referral-to-app | <ul><li>[Social media preview](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-media-preview-og-tags)</li><li>[Social app landing page](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page)</li><li>You can dynamically create referral-to-app links via the SDK in your app via [user invite integration](/docs/user-invite-attribution).</li></ul> |
 
 10. Click **Next**.
 11. [Optional] In **Deep linking and redirection**, complete [deep linking/deferred deep linking setup](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking). Skip this section if this link isn't intended for deep linking.
@@ -85,7 +82,9 @@ You can also create OneLink links by describing them in plain language in an AI 
 15. Click **Generate link**.
 16. Make sure your [domain redirect allowlist](/docs/set-up-your-domain-redirect-allowlist) is updated with all domains you want to redirect users to.
 
-### Experiences
+<div id="experiences" />
+
+<Accordion title="Experiences">
 
 You can create links for the following user experiences:
 
@@ -97,7 +96,11 @@ You can create links for the following user experiences:
 * **Referral-to-app**: Create user invite links that allow users or influencers to invite others to your app or share specific in-app content, for example, an article.
 * **Custom link**: For user journeys that don't fit one of the experiences mentioned above, you can create a OneLink custom link. Then, no matter where your users come from, whether via desktop or mobile, online or offline, owned or paid media, you can easily send them to the right place.
 
-### General settings
+</Accordion>
+
+<div id="general-settings" />
+
+<Accordion title="General settings">
 
 General settings is a section of the OneLink link creation process that applies to all experiences.
 
@@ -111,13 +114,10 @@ General settings is a section of the OneLink link creation process that applies 
 
    Existing users that click on non-retargeting links (UA) also launch the app, and have the same user experience. However, their re-engagements are recorded as regular sessions, which means it's impossible to measure the success of the owned media campaign.
 
-   CALLSTART::Note::
+   > 📘 **Important!**
+   >
+   > For retargeting to work, you also need to enable retargeting for the app.
 
-   #### Important!
-
-   For retargeting to work, you also need to enable retargeting for the app.
-
-   CALLEND::
 4. [Optional] Turn on **Ignore active users for retargeting** and select the inactivity window.  
    This adds the parameter af\_inactivity\_window=[number of days] to your link, and all users active during the period are ignored for retargeting.
 5. Set the re-engagement window to determine the time period following the re-engagement, where the user's in-app events are attributed to the retargeting media source.
@@ -125,7 +125,7 @@ General settings is a section of the OneLink link creation process that applies 
    * The re-engagement window is added to the link in the af\_reengagement\_window parameter.
 6. [Optional] In the **Link branding** subsection:
    * Select a different domain to reflect your brand. [Learn more](/docs/brand-onelink-with-your-domain)
-   * Edit the URL ID to highlight the campaign offering. The URL ID must be maximum 50 characters and can be a combination of letters and numbers. By default, it is 8 characters.
+   * <span id="url-id"></span>Edit the URL ID to highlight the campaign offering. The URL ID must be maximum 50 characters and can be a combination of letters and numbers. By default, it is 8 characters.
 
 #### Enable retargeting for the app
 
@@ -137,7 +137,11 @@ If Retargeting was never enabled for the app, you need to do it once. [Learn mo
 2. In the **Attribution** section, enable **Re-engagement attribution**.
 3. Click **Save settings**.
 
-### Social media preview - OG tags
+</Accordion>
+
+<div id="social-media-preview-og-tags" />
+
+<Accordion title="Social media preview - OG tags">
 
 When a link is shared, open graph (OG) tags are used to generate a preview with a title, description, and image.
 
@@ -156,7 +160,7 @@ These OG tags may automatically be taken from the web URL or app store you are r
    * To change the favicon, go to your [template settings](/docs/create-a-onelink-template#set-a-favicon-for-link-previews).
    * If no favicon is shown, none has been configured on the template yet. You can still use Custom preview without a favicon.
 
-**To add OG tag parameters to your link**(if it was not created in the OneLink UI)**:**
+**To add OG tag parameters to your link**(if it was not created in the OneLink UI):
 
 * Add the following required parameters:
   * af\_og\_title (up to 40 characters)
@@ -168,7 +172,11 @@ These OG tags may automatically be taken from the web URL or app store you are r
 > * You can add the OG tag parameters to your link outside the AppsFlyer UI.
 > * If you add separate OG tags for X (formerly Twitter), they will override the regular AppsFlyer preview.
 
-### Social app landing page
+</Accordion>
+
+<div id="social-app-landing-page" />
+
+<Accordion title="Social app landing page">
 
 > 📘 **Important!**
 >
@@ -234,13 +242,11 @@ Attribution is determined based on your attribution settings.
       **Note**: webp format isn't supported.
    3. The recommendations for the images are:
 
-      
-
 | Template image type | Maximum image file size | Image ratio |
 | --- | --- | --- |
 | Collection | 300 KB | 16:9 (horizontal) |
-| * Trapeze<br />* Carousel<br />* ShowAndTell | 300 KB | 1:1 |
-| * Flyer<br />* Poster<br />* Blurry poster<br />* Clustered poster | 300 KB | 9:16 (vertical) |
+| <ul><li>Trapeze</li><li>Carousel</li><li>ShowAndTell</li></ul> | 300 KB | 1:1 |
+| <ul><li>Flyer</li><li>Poster</li><li>Blurry poster</li><li>Clustered poster</li></ul> | 300 KB | 9:16 (vertical) |
 
    4. If one or more of the images isn't an exact URL, an error will display, and you will not be able to review the creative.  
       [![](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)
@@ -251,7 +257,11 @@ Attribution is determined based on your attribution settings.
    **Important**: New/updated landing page creatives only apply after generating/updating the custom link.
 8. [Optional] To edit your landing page, click **Edit social app landing page**.
 
-### Deep linking and deferred deep linking
+</Accordion>
+
+<div id="deep-linking-and-deferred-deep-linking" />
+
+<Accordion title="Deep linking and deferred deep linking">
 
 Deep linking means you retarget your existing app users and send them directly into a specific experience (for example, a specific page) within your app, without being directed to the app store or app home page first. These users are attributed using retargeting attribution.
 
@@ -272,23 +282,20 @@ Deferred deep linking means you give new users a similar deep linking experience
        * Click lookback window can be up to 15 minutes.
      * **Note**: Customers already using OneLink for deep linking may be using the legacy methods for [Android](https://dev.appsflyer.com/hc/docs/dl_android_gcd_legacy) and [iOS](https://dev.appsflyer.com/hc/docs/dl_ios_gcd_legacy), instead of UDL.
 
-       CALLSTART::Note::
+       > 📘 **Tips**
+       >
+       > The **deep\_link\_value** can be based on a product SKU, social media post ID, URL path, or any other value.
+       >
+       > It is important to work with your developers to come up with the best long-term system for the **deep\_link\_value** and any other parameters or values. This will minimize additional app updates. Speak to your developer about the use of dynamic values, to generate many different deep links that go to different content within the app, **without needing to change the app code every time.**
+       >
+       > For example, the **deep\_link\_value** of a fruit type was chosen and the developers made the values dynamic. This means you can enter any fruit without the need for further work by your dev team.
+       >
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=apples``...`
+       >
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=bananas``...`
+       >
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=peaches``...`
 
-       #### Tips
-
-       The **deep\_link\_value** can be based on a product SKU, social media post ID, URL path, or any other value.
-
-       It is important to work with your developers to come up with the best long-term system for the **deep\_link\_value** and any other parameters or values. This will minimize additional app updates. Speak to your developer about the use of dynamic values, to generate many different deep links that go to different content within the app, **without needing to change the app code every time.**
-
-       For example, the **deep\_link\_value** of a fruit type was chosen and the developers made the values dynamic. This means you can enter any fruit without the need for further work by your dev team.
-
-       `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=apples``...`
-
-       `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=bananas``...`
-
-       `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=peaches``...`
-
-       CALLEND::
 2. After receiving confirmation from the developers that the app behaves according to the selected parameters and values, in the **Deep linking and redirection** section of the link setup page, enter the **Deep link value** according to what you decided with the developers.
 3. [Optional] If your deep linking requires more than one in-app experience (for example, you want to direct users to a product, and separately offer them a discount), you can add an **Additional deep link value** (that uses the parameter deep\_link\_sub1) to the deep linking data payload. You can add further deep link parameters  (deep\_link\_sub2-10) in the **Additional parameters** section.
    1. Contact your iOS and Android developers to plan the values.
@@ -305,7 +312,11 @@ Deferred deep linking means you give new users a similar deep linking experience
 >
 > Once parameters and dynamic values are implemented by the developers, the marketer can use OneLink API to automatically generate thousands of custom links. [Learn more](/docs/use-onelink-api-to-create-links-in-large-scale-campaigns)
 
-### Redirection
+</Accordion>
+
+<div id="redirection" />
+
+<Accordion title="Redirection">
 
 **To send new users to a landing page, instead of to the app store**:
 
@@ -314,7 +325,11 @@ Deferred deep linking means you give new users a similar deep linking experience
    **Note!** If your OneLink template already has a set value for a custom URL, these custom link URLs override it.
 2. You can also send new users to [custom store product pages](/docs/redirect-users-to-custom-app-store-product-pages).
 
-### Additional parameters
+</Accordion>
+
+<div id="additional-parameters" />
+
+<Accordion title="Additional parameters">
 
 You may want to add additional parameters to your link, such as Campaign, Ad set name, Ad name, Channel, your own custom parameters, or 1-5 [subscriber parameters](/docs/about-link-structure-and-parameters#what-are-subscriber-parameters-good-for). This enables a more granular analysis of your marketing efforts. Read more about [additional attribution parameters](/docs/about-link-structure-and-parameters).
 
@@ -325,7 +340,11 @@ You can also add additional deep linking parameters (deep\_link\_sub2-10).
 1. In the **Additional parameters** section of the link setup, click **Add parameter**.
 2. Select the parameter to add or enter a custom parameter.
 
-### Testing
+</Accordion>
+
+<div id="testing" />
+
+<Accordion title="Testing">
 
 You can test whether your link works to redirect:
 
@@ -377,13 +396,17 @@ Link not working as expected? Check out the [OneLink FAQ and troubleshooting gui
 
 Link not working as expected? Check out the [OneLink FAQ and troubleshooting guide.](/docs/onelink-troubleshooting-and-faq)
 
+</Accordion>
+
 ## Additional procedures
 
-### Create a custom impression URL
+<div id="create-a-custom-impression-url" />
+
+<Accordion title="Create a custom impression URL">
 
 Custom impression links enable you to:
 
-* Measure the [impressions to clicks conversion rates](/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates::74b1530a) of the ads you display.
+* Measure the [impressions to clicks conversion rates](/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1) of the ads you display.
 * Receive attribution for impressions.
 
 **Prerequisites:** A working OneLink long URL. Short URLs are not supported.
@@ -395,7 +418,7 @@ Marketer and web developer
 **To create impression URLs for measuring impressions only:**
 
 1. In AppsFlyer, from the side menu, select **Engage** > **OneLink Management**.
-2. Hover over the Options menu**,** of the link you want to test and click **Get URL**.
+2. Hover over the Options menu, of the link you want to test and click **Get URL**.
 3. Copy the OneLink long URL for editing.  
    Example: `https://subdomain.onelink.me/j7rN?pid=email&c=Spring`
 4. Replace the subdomain (or the entire Branded Domain, if you're using one) with 'impressions'.    
@@ -419,7 +442,9 @@ Full impression URL example:
 https://impressions.onelink.me/j7rN?pid=email&c=Spring&af_viewthrough_lookback=1d
 ```
 
-### Deep linking post-event
+</Accordion>
+
+<Accordion title="Deep linking post-event">
 
 You may want to deep link users into specific activities or pages only after an event, for example:
 
@@ -432,7 +457,9 @@ You may want to deep link users into specific activities or pages only after an 
 
 Ask your developers to follow their instructions for deep linking users post-event for [Android](https://dev.appsflyer.com/hc/docs/dl_android_dl_post_event) and [iOS](https://dev.appsflyer.com/hc/docs/dl_ios_dl_post_event).
 
-### Deferred deep linking with iOS Private Relay
+</Accordion>
+
+<Accordion title="Deferred deep linking with iOS Private Relay">
 
 With the launch of iOS 15, Apple provides iCloud+ users with a feature called [Private Relay](https://www.macworld.com/article/348965/icloud-plus-private-relay-safari-vpn-ip-address-encryption-privacy.html), which gives them the option to encrypt their web-browsing traffic and hide their exact location, IP address, and the contents of their browsing traffic. If users opt-in to Private Relay, this could interfere with attribution and deferred deep linking. Meaning, once a new user without the app goes to the App Store, and installs and launches the app, Private Relay could prevent them from being sent to a specific page in the app.
 
@@ -441,7 +468,7 @@ To make sure that deferred deep linking (DDL) continues to work as expected, you
 * **[Recommended] App Clip-based solution**: Create an App Clip that gives you user attribution data, and directs users to a customized App Clip experience similar to the one you want DDL to achieve. The app clip can also include a flow to direct users from your App Clip to your full app.
 * **Clipboard-based solution**: Create a web landing page that copies the deferred deep linking data from the URL and correctly redirects the user to the app. **Note**: This solution does not help with attribution.
 
-### App Clip-based solution
+<Accordion title="App Clip-based solution">
 
 This solution combines OneLink short URLs with the App Clips technology available on iOS, and allows you to send users to specific flows in your product without the need to install the full app. The OneLink short URL gives you user attribution data, and directs users to a customized App Clip experience similar to the one you want DDL to achieve. The app clip can also include a flow to direct users from your App Clip to your full app. **Note**: If users reinstall the full app from the App Clip-based solution, it may be reported in AppsFlyer as an organic install. 
 
@@ -474,7 +501,9 @@ The flow of the App Clip-based DDL solution is as follows:
 5. In App Store Connect, go to the **App Clip Experience** section, scroll down to **App URLs**, and enter either your OneLink template URL (domain + template ID. For example: `yourbrand.onelink.me/GrbZ`), or a specific OneLink custom link short URL.  
    **Note**: If you enter a OneLink custom link, the App Clip-based solution will only work for users tapping that specific link; other links created based off the OneLink template will not work.
 
-### Clipboard-based solution
+</Accordion>
+
+<Accordion title="Clipboard-based solution">
 
 #### **Flow**
 
@@ -512,9 +541,13 @@ The copy/paste landing page DDL solution requires:
 2. Add the `af_cp_lp=true` parameter to your links.   
    You can do so by adding a custom parameter in the AppsFlyer OneLink custom link UI or simply append the parameter to any of your links.
 
+</Accordion>
+
+</Accordion>
+
 ## Additional information
 
-### Examples
+<Accordion title="Examples">
 
 **Basic example**
 
@@ -540,21 +573,27 @@ To solve this, Mark sends users an SMS containing a short URL powered by OneLink
 * If they already have the app installed, they are taken straight to the relevant fruit page.
 * If they don't have the app yet, they are directed to the appropriate app store or landing page, based on their device. And then, once they download and open the app, they are taken straight to the fruit page.
 
-### Traits and limitations
+</Accordion>
+
+<div id="traits-and-limitations" />
+
+<Accordion title="Traits and limitations">
 
 | Trait | Remarks |
 | --- | --- |
-| OneLink characters | * Total URL length must not exceed 2000 characters<br />* Link name and media source: must not exceed 150 characters<br />* Short URL ID must not exceed 50 characters<br />* See additional redirection parameter [traits and limitations](/docs/about-link-structure-and-parameters#special-characters). |
+| OneLink characters | <ul><li>Total URL length must not exceed 2000 characters</li><li>Link name and media source: must not exceed 150 characters</li><li>Short URL ID must not exceed 50 characters</li><li>See additional redirection parameter [traits and limitations](/docs/about-link-structure-and-parameters#special-characters).</li></ul> |
 | Maximum links | The maximum number of OneLink links you can create in AppsFlyer is 120,000 per account. |
 | Posting OneLink URLs in web pages | Using `target="_blank"`in the HTML href tag does not result in redirection to Google Play or App Store. If the OneLink URL is placed inside an html **a** tag with the **target="\_blank"** attribute, it opens a blank page in Chrome on Android and iOS. This affects OneLink functionality. Make sure that the **a** tag doesn't include the target attribute. |
 | Agencies | Agencies can't use OneLink templates or links. They're for custom/owned media sources only. |
 | Ad networks | Ad networks can't use OneLink templates or links. They're for custom/owned media sources only. |
-| Social media preview image | * If the image type is not supported by the social media platform, it doesn't display.<br />* For WhatsApp, the image can't exceed 300 KB. |
+| Social media preview image | <ul><li>If the image type is not supported by the social media platform, it doesn't display.</li><li>For WhatsApp, the image can't exceed 300 KB.</li></ul> |
 | Desktop | When you set the OneLink URL or template to redirect desktop users to a different URL, the web URL is added to the link in the `af_web_dp` parameter. When the link contains `af_web_dp`, AppsFlyer does not register a click when it comes from a desktop. |
 | af\_enc\_data | Not supported in impression URLs. |
-| Android social apps WebView | Due to recent changes in various Android social apps, some deep linking and store redirection flows in the internal browser view (WebView) were broken.<br /><br />**Android App links**<br /><br />Android App links are currently not supported when clicked from within the Facebook in-app browser. Using a URI scheme on links in this flow works as before.<br /><br />**Store redirection**<br /><br />To accommodate the changes and re-enable store redirection, we had to introduce additional user interaction for the following Android social apps:<br /><br />* Facebook versions above v420<br />* Instagram<br />* Facebook Messenger<br />* Snapchat<br /><br />The new user flow requires users of the above apps to click on an additional landing page button to trigger the redirection to the Google Play Store and other third-party stores.<br /><br />This button is added automatically, requiring no action.<br /><br />**Notes:**<br /><br />* Facebook versions 420 and below work as before, with no additional user interaction.<br />* Facebook App Links (using URI scheme) in Facebook posts work as before with no additional user interaction.<br />* Facebook App Links in Instagram chat work as before with no additional user interaction.<br />* In a deep linking flow, when the app is not installed, there is a known limitation: an error pop-up message. This message does not affect the flow; the user is still redirected to the store as expected. |
+| <span id="android-social-apps-webview-deep-linking-redirection"></span>Android social apps WebView | Due to recent changes in various Android social apps, some deep linking and store redirection flows in the internal browser view (WebView) were broken.<br /><br />**Android App links**<br /><br />Android App links are currently not supported when clicked from within the Facebook in-app browser. Using a URI scheme on links in this flow works as before.<br /><br />**Store redirection**<br /><br />To accommodate the changes and re-enable store redirection, we had to introduce additional user interaction for the following Android social apps:<ul><li>Facebook versions above v420</li><li>Instagram</li><li>Facebook Messenger</li><li>Snapchat</li></ul>The new user flow requires users of the above apps to click on an additional landing page button to trigger the redirection to the Google Play Store and other third-party stores.<br /><br />This button is added automatically, requiring no action.<br /><br />**Notes:**<ul><li>Facebook versions 420 and below work as before, with no additional user interaction.</li><li>Facebook App Links (using URI scheme) in Facebook posts work as before with no additional user interaction.</li><li>Facebook App Links in Instagram chat work as before with no additional user interaction.</li><li>In a deep linking flow, when the app is not installed, there is a known limitation: an error pop-up message. This message does not affect the flow; the user is still redirected to the store as expected.</li></ul> |
 | OneLink link previews | **Description**  <br />OneLink link previews sometimes fail to display correctly on Facebook and LinkedIn. The issue arises when the destination website does not recognize the `AppsFlyerBot-Previewer/1.0` user-agent string in the preview request as coming from a robot (or crawler). In such cases, the website fails to respond with the appropriate OG-tagged preview content.<br /><br />**Solution**  <br />You can configure your landing page to treat pages with the `AppsFlyerBot-Previewer/1.0` user-agent header string as coming from a robot by [updating your website robot.txt file](https://moz.com/learn/seo/robotstxt).<br /><br />The preview robot also checks every link's redirect parameters against your redirect allowlist. When a parameter points to a domain that isn't in the list, the robot ignores the URL, so the preview stays blank or generic. Make sure every landing-page domain you expect to preview is added to your redirect allowlist. |
 | Android Naver Blog app | Deep linking is not supported on Android Naver Blog app. Users will be taken to Google Play or to the web redirection as defined on the link. |
-| Chrome browser on iOS | Due to a change in Chrome iOS, whenever a user clicks a OneLink link which contains a URI scheme link (af\_dp parameter) in Chrome on iOS, a pop-up is displayed, prompting users to confirm opening the app or redirecting to the App Store. |
-| Telegram WebView | Probabilistic modeling attribution doesn't work for user engagement in Telegram WebView (Telegram browser). The reason is because WebView doesn't include device models and OS versions in its engagement requests. |
+| <span id="chrome-browser-on-ios"></span>Chrome browser on iOS | Due to a change in Chrome iOS, whenever a user clicks a OneLink link which contains a URI scheme link (af\_dp parameter) in Chrome on iOS, a pop-up is displayed, prompting users to confirm opening the app or redirecting to the App Store. |
+| <span id="telegram-webview"></span>Telegram WebView | Probabilistic modeling attribution doesn't work for user engagement in Telegram WebView (Telegram browser). The reason is because WebView doesn't include device models and OS versions in its engagement requests. |
 | Xiaomi Browser | Probabilistic modeling attribution doesn't work for user engagement in Xiaomi Browser. |
+
+</Accordion>

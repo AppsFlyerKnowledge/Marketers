@@ -23,7 +23,7 @@ x-zendesk:
   created_at: '2013-12-09T11:17:12Z'
   edited_at: '2023-11-16T15:17:28Z'
 ---
-> 🚧 Important!
+> 📘 **Important!**
 >
 > On March 1st, 2020, AppsFlyer deprecated old SDK versions. To learn about which versions have been deprecated, how it affects you, and how to update to the latest SDK version, click [here](/docs/sdk-integration-overview#about-the-sdk).
 

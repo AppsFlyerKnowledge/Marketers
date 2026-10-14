@@ -23,7 +23,6 @@ x-zendesk:
   created_at: '2022-10-25T10:00:14Z'
   edited_at: '2022-10-25T11:10:49Z'
 ---
-| | |
-| --- | --- |
 | **What's changing** | As of Oct. 31, 2022, AppsFlyer SDK versions 5.0x or below, for Android and iOS, are deprecated. Apps that have these SDKs will continue to work, but no data will be collected in AppsFlyer for these apps. |
-| **What you must know** | - If your apps contain SDK V5.0.x or older you MUST integrate the latest SDK versions to continue collecting measurement data, use deep linking, get fraud protection, and more.<br />- Visit [here](/docs/sdk-integration-overview) to see what new information and features the updated AppsFlyer SDKs can supply you. |
+| --- | --- |
+| **What you must know** | <ul><li>If your apps contain SDK V5.0.x or older you MUST integrate the latest SDK versions to continue collecting measurement data, use deep linking, get fraud protection, and more.</li><li>Visit [here](/docs/sdk-integration-overview) to see what new information and features the updated AppsFlyer SDKs can supply you.</li></ul> |

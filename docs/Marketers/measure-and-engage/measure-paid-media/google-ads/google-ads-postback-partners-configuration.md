@@ -30,7 +30,6 @@ These Google Ads Postback Partners (GAPPs) can also collect postbacks for Google
 >
 > Google Ads Postback Partners are **NOT** attributed with installs or events in AppsFlyer.
 
-
 The advertiser needs an active Google Ads account [set up](/docs/google-ads-adwords-integration-setup-for-advertisers) in AppsFlyer, and also to set up the specific GAPP in AppsFlyer to enable sending postbacks to it.
 
 Other GAPPs integrated with AppsFlyer: Blackbox, Appreciate, Marin Software, Miramedia, Mpbisummer, Protonads, Springrain.
@@ -44,7 +43,6 @@ Other GAPPs integrated with AppsFlyer: Blackbox, Appreciate, Marin Software, Mir
 > 📘 **Tip**
 >
 > Enter "Google Ads" in the search box and press Enter to receive the list of GAPPs.
-
 
 3. Click on the required GAPP to open its integration setup.
 
@@ -66,10 +64,9 @@ Other GAPPs integrated with AppsFlyer: Blackbox, Appreciate, Marin Software, Mir
 >   ![zds_Agency_multiple.png](https://files.readme.io/36112b9a08ca1e6a2150523e1ec39eda5c28a4be826e9f776f5dbd7b1d0c5378-21414553418897.png)
 > * To work with multiple GAPPs, the campaigns for each GAPP should be run from separate google accounts. If you switch from one GAPP to another, make sure to disable the first GAPPs setup in AppsFlyer.
 
-
 ## Google Ads postback partners use cases
 
-### Use case 1 - Advertiser postbacks only
+<Accordion title="Use case 1 - Advertiser postbacks only">
 
 An advertiser is running Google Ads campaigns and wants the traffic from its Google Ads accounts to be sent to GAPP X.
 
@@ -78,7 +75,9 @@ An advertiser is running Google Ads campaigns and wants the traffic from its Goo
 
 The advertiser must enter all its CIDs (Ads Account IDs) in the GAPP X - Google Ads configuration.
 
-### Use case 2 - Active agency, with advertiser postbacks only
+</Accordion>
+
+<Accordion title="Use case 2 - Active agency, with advertiser postbacks only">
 
 An advertiser and an agency are both running Google Ads campaigns, the advertiser wants only its traffic to be sent to GAPP X.
 
@@ -88,7 +87,9 @@ An advertiser and an agency are both running Google Ads campaigns, the advertise
 
 The advertiser must enter ONLY its CIDs in the GAPP X - Google Ads configuration.
 
-### Use case 3 - Active advertiser, with agency postbacks only
+</Accordion>
+
+<Accordion title="Use case 3 - Active advertiser, with agency postbacks only">
 
 An advertiser and agency are running Google Ads campaigns, the agency wants only its traffic to be sent to GAPP X.
 
@@ -98,7 +99,9 @@ An advertiser and agency are running Google Ads campaigns, the agency wants only
 
 The agency must enter ONLY their CIDs in the GAPP X - Google Ads configuration
 
-### Use case 4 - Advertiser & agency postbacks
+</Accordion>
+
+<Accordion title="Use case 4 - Advertiser & agency postbacks">
 
 An advertiser and agency are running Google Ads campaigns, both the advertiser and agency want their traffic to be sent to GAPP X.
 
@@ -108,6 +111,8 @@ An advertiser and agency are running Google Ads campaigns, both the advertiser a
 4. Agency [configures](/docs/google-ads-postback-partners-configuration#google-ads-postback-partner-setup) GAPP X - Google Ads for their CIDs
 
 Notice that these must be different CIDs between the advertiser and agency.
+
+</Accordion>
 
 ## Available parameters for GAPPs
 

@@ -36,7 +36,7 @@ Based on:
 
 ## Installation and implementation
 
-### Installation
+<Accordion title="Installation">
 
 Download the [AppsFlyerAIRExtension.ane](https://github.com/AppsFlyerSDK/AdobeAirExtension-AppsFlyer/blob/master/bin/AppsFlyerAIRExtension.ane "AppsFlyerAIRExtension.ane") file from the bin folder Add the ANE to your project and make sure the IDE is marked to package it.
 
@@ -114,8 +114,9 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 >    ```
 > 9. Your apk `zipalign_app_name.apk` is ready to use!
 
+</Accordion>
 
-### Implementation
+<Accordion title="Implementation">
 
 Import the AppsFlyer Extension into your project:
 
@@ -148,7 +149,9 @@ Initialize session logging (automatically log app launches and background-to-for
 appsFlyer.start("DevKey", "iOSAppID");
 ```
 
-### Deep linking
+</Accordion>
+
+<Accordion title="Deep linking">
 
 In order to receive the relevant AppsFlyer information from the deep link used:
 
@@ -166,7 +169,9 @@ In order to receive the relevant AppsFlyer information from the deep link used:
    }
    ```
 
-### Deferred deep linking
+</Accordion>
+
+<Accordion title="Deferred deep linking">
 
 In order to receive the conversion data for the current install:
 
@@ -184,7 +189,9 @@ In order to receive the conversion data for the current install:
    }
    ```
 
-### IMEI and Android ID collection (Android only)
+</Accordion>
+
+<Accordion title="IMEI and Android ID collection (Android only)">
 
 **Important**! Apps with Google play services should avoid IMEI collection as this is in violation of the Google Play policy.
 
@@ -218,11 +225,11 @@ appsFlyer.setCollectAndroidID(bool);
 appsFlyer.setAndroidIdData("AndroidIDString");
 ```
 
+</Accordion>
+
 ## API reference
 
-### API methods
-
-
+<Accordion title="API methods">
 
 | Name | Description | Signature/example |
 | --- | --- | --- |
@@ -233,3 +240,5 @@ appsFlyer.setAndroidIdData("AndroidIDString");
 | setCurrency | Set the currency for logging revenue events, for example, USD. | ```<br />appsFlyer.setCurrency("USD");<br />``` |
 | stop | Used when you want want to shut down all SDK logging due to legal and privacy compliance. Once this API is invoked, our SDK no longer communicates with our servers. | ```<br />appsFlyer.stop();<br />``` |
 | setDebug | Enable/disable AppsFlyer debug logs.<br /><br />**Important:** Do not release the app to app stores with debug logs enabled. | ```<br />appsFlyer.setDebug(bool);<br />``` |
+
+</Accordion>

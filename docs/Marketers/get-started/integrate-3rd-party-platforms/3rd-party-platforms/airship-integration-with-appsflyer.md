@@ -26,7 +26,6 @@ x-zendesk:
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
-
 ## Setting up Airship
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -41,7 +40,7 @@ x-zendesk:
    Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below:
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration tab is divided into different sections as described below.
 
@@ -72,13 +71,10 @@ Minimum requirements - Airship SDK - Version 13.1.0 and above.
 
    This parameter is sent with every postback and enables the identification of each user. To perform this you must insert the following strings to your app code:
 
-   CALLSTART::Note::
+   > 📘 **Important Note**
+   >
+   > Make sure the lines of code are inserted in the correct place – after Airship SDK is launched and before the start method is called on iOS or Android.
 
-   #### Important Note
-
-   Make sure the lines of code are inserted in the correct place – after Airship SDK is launched and before the start method is called on iOS or Android.
-
-   CALLEND::
 
    AndroidiOS
 
@@ -99,14 +95,14 @@ Minimum requirements - Airship SDK - Version 13.1.0 and above.
    ```
 2. Get the App Key from Airship:
    1. Login to your Airship account at: [go.airship.com](http://go.urbanairship.com/)
-   2. On the left menu, go to **Settings >** **APIs &****Integrations** and click **Airship API**.
+   2. On the left menu, go to **Settings >** **APIs &Integrations** and click **Airship API**.
 
       ![airship-appkey-en_us.png](https://files.readme.io/c33611035d8dcadb73e41a3787690726608bddde55edbc38f34990c03948985d-360017666917.png)
    3. Copy the App Key.
    4. In AppsFlyer, paste the App Key in the App Key field.
 3. Get the Token from Airship:
    1. Login to your Airship account at: [go.airship.com](http://go.urbanairship.com/)
-   2. On the left menu, go to **Settings >** **APIs &****Integrations** and click **Tokens**.
+   2. On the left menu, go to **Settings >** **APIs &Integrations** and click **Tokens**.
 
       ![airship-token-creation-1.png](https://files.readme.io/b0c22d9844dbc93f7dd158a75916eca98404474a65be0c1528f83e6e4ac7b210-360017480697.png)
    3. Click **Create Token**.
@@ -130,21 +126,31 @@ Once you have saved the configuration, AppsFlyer sends the following data to Air
 * Media Source
 * Campaign name
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Attribution Links are not available for Airship.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions are not available for Airship.
+
+</Accordion>
 
 ## Set up and manage the attribution data in Airship console
 

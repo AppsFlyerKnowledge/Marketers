@@ -22,7 +22,7 @@ x-zendesk:
   created_at: '2026-04-04T10:49:27Z'
   edited_at: '2026-09-03T15:20:32Z'
 ---
-<Embed title="Date Locker Advanced Reports I Product tour" typeOfEmbed="youtube" url="https://www.youtube.com/embed/0Myz1hxZJH0" />
+<Embed title="About Data Locker Advanced Reports" typeOfEmbed="youtube" url="https://www.youtube-nocookie.com/embed/0Myz1hxZJH0" providerUrl="https://www.youtube-nocookie.com" />
 
 ## About Advanced Reports
 
@@ -32,24 +32,24 @@ The sections below cover how Advanced Reports consolidate data by product, arriv
 
 Advanced Reports organize event-level raw data around data products.
 
-- Each report covers one full data product, so there are no fragmented files to stitch together.
-- Data from mobile, web, and CTV lives in a single file with a shared schema.
+* Each report covers one full data product, so there are no fragmented files to stitch together.
+* Data from mobile, web, and CTV lives in a single file with a shared schema.
 
 ### Data that is ready to use
 
 Legacy reports returned all fields as plain strings with inconsistent naming, requiring teams to cast types, rename fields, and reconcile schemas before analysis could proceed. Advanced Reports ship with the foundational preparation already done:
 
-- **Typed fields:** integers, booleans, timestamps, and enums, instead of plain strings.
-- **Unified schema:** consistent, validated structure across all data products.
-- **Self-explanatory field names:** consistently named and self-explanatory across all reports, making data easier to work with directly in BI (business intelligence) tools, analyst workflows, and AI-powered applications.
+* **Typed fields:** integers, booleans, timestamps, and enums, instead of plain strings.
+* **Unified schema:** consistent, validated structure across all data products.
+* **Self-explanatory field names:** consistently named and self-explanatory across all reports, making data easier to work with directly in BI (business intelligence) tools, analyst workflows, and AI-powered applications.
 
 ### Precise control over what you receive
 
 Advanced Reports let you tailor each report to your exact needs without any post-processing:
 
-- **Schema customization:** add or remove fields to match your downstream requirements.
-- **Report-level filters:** scope data to a specific platform, conversion type, country, or event.
-- **Pre-built templates:** start instantly with field and filter configurations designed for common use cases.
+* **Schema customization:** add or remove fields to match your downstream requirements.
+* **Report-level filters:** scope data to a specific platform, conversion type, country, or event.
+* **Pre-built templates:** start instantly with field and filter configurations designed for common use cases.
 
 ## Advanced Reports vs. legacy reports
 
@@ -69,42 +69,52 @@ The table below highlights the key differences between Advanced Reports and lega
 
 Each report corresponds to a data product, a curated, structured dataset representing a specific domain of your marketing data, such as conversions, engagements, or user events. The following reports are available today.
 
-### Engagements
+<Accordion title="Engagements">
 
 The Engagements report consolidates mobile click and impression data across user acquisition and retargeting activities. It gives you a unified view of user interactions with your ads, supporting in-depth analysis of top-of-funnel performance, creative and channel evaluation, and cost and reach optimization at the engagement level.
 
-- **Platforms:** Mobile
-- **Data freshness:** 1–3 hours
-- **Report Fields:** [Download the report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vQcBDMTizVe22HrquKhPhPyprLa8k9_GptkfMNOl7-ai2dtiBp_D8gXTcgdUHlZpndAZjUqEzY-eqeR/pub?output=csv)
+* **Platforms:** Mobile
+* **Data freshness:** 1–3 hours
+* **Report Fields:** [Download the report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vQcBDMTizVe22HrquKhPhPyprLa8k9_GptkfMNOl7-ai2dtiBp_D8gXTcgdUHlZpndAZjUqEzY-eqeR/pub?output=csv)
 
-### Conversions
+</Accordion>
+
+<Accordion title="Conversions">
 
 The Conversions report provides a complete view of all app installations, including organic and non-organic sources across mobile, web, and CTV. By centralizing conversion data, you can perform comprehensive growth analysis using a single, streamlined dataset and precisely measure and optimize marketing performance.
 
-- **Platforms:** Mobile, Web, CTV
-- **Data freshness:** 1–3 hours
-- **Report Fields:** [Download the report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmF8gMIBuWzS3aw7M8TSzuxS3MYNC0m1RZzPAND-1jP3MjDcRUZmvggoaZRDAKb5uI1R77sufCLQeU/pub?output=csv)
+* **Platforms:** Mobile, Web, CTV
+* **Data freshness:** 1–3 hours
+* **Report Fields:** [Download the report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmF8gMIBuWzS3aw7M8TSzuxS3MYNC0m1RZzPAND-1jP3MjDcRUZmvggoaZRDAKb5uI1R77sufCLQeU/pub?output=csv)
 
-### End-user events
+</Accordion>
+
+<Accordion title="End-user events">
 
 The End-user events report captures detailed in-app event data, including sessions, purchases, registrations, and level completions, across mobile, web, and CTV platforms. Each event is enriched with full attribution context, enabling you to analyze user behavior, retention, and lifetime value with complete attribution traceability.
 
-- **Platforms:** Mobile, Web, CTV
-- **Data freshness:** 1–3 hours
-- **Report Fields:** [Download the report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vRm4xYgov7i-xClroQR0eS5vtQvtOavmo-V9zWiGmZMOIyBmIl0swmfj34tYgVinIC7uZp0dyPXD8wI/pub?output=csv)
+* **Platforms:** Mobile, Web, CTV
+* **Data freshness:** 1–3 hours
+* **Report Fields:** [Download the report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vRm4xYgov7i-xClroQR0eS5vtQvtOavmo-V9zWiGmZMOIyBmIl0swmfj34tYgVinIC7uZp0dyPXD8wI/pub?output=csv)
 
-### End user events cross-platform
+</Accordion>
+
+<Accordion title="End user events cross-platform">
 
 The End user events cross-platform report extends the end-user events report to support cross-platform use cases. See the [End-user events cross-platform report](/docs/end-user-events-cross-platform-report-in-data-locker) for more information.
 
-- **Platforms:** Mobile, Web, CTV
+* **Platforms:** Mobile, Web, CTV
 
-### Conversions cross-platform
+</Accordion>
+
+<Accordion title="Conversions cross-platform">
 
 The cross-platform conversions-with-assists report shows the complete user journey behind each cross-platform conversion, including the full assisting engagement chain, not just the last touchpoint. See the [Conversions cross-platform report](/docs/conversions-cross-paltform-report) for more information.
 
-- **Data freshness:** 4 hours
-- **Report Fields:** [Download the report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vRTFg6HXtHNYwegAjMysjybPbRk4IO8uflwvbGvR_xb11BcCrCWQ7i3xZD_Y2iiYSsx_MjTPN0E_Bmk/pub?gid=670907846&single=true&output=csv)
+* **Data freshness:** 4 hours
+* **Report Fields:** [Download the report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vRTFg6HXtHNYwegAjMysjybPbRk4IO8uflwvbGvR_xb11BcCrCWQ7i3xZD_Y2iiYSsx_MjTPN0E_Bmk/pub?gid=670907846&single=true&output=csv)
+
+</Accordion>
 
 ## Report templates
 

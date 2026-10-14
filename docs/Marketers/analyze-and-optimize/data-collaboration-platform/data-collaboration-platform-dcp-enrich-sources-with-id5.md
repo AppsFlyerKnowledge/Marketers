@@ -28,16 +28,16 @@ AppsFlyer’s Data Collaboration Platform integrates with ID5, a leading identit
 
 **ID5 enrichment helps you:**
 
-- Increase match rates between your first-party data and media partners or collaborators
-- Maximize target audience size
-- Bridge identifiers such as HEM, MAID, and IP + timestamp into a unified identity
-- Future-proof your activation as third-party cookies phase out
+* Increase match rates between your first-party data and media partners or collaborators
+* Maximize target audience size
+* Bridge identifiers such as HEM, MAID, and IP + timestamp into a unified identity
+* Future-proof your activation as third-party cookies phase out
 
 **Common use cases include:**
 
-- **Brand first-party data enrichment** - A brand uploads its first-party data source to DCP and enriches it with ID5 IDs using their ID5 connection.
-- **Retailer-brand collaboration** - A retailer collaborates with a brand and shares access to their ID5 subscription. Within the secure collaboration scope, the brand enriches its customer data using the retailer’s ID5 connection, improving match rates without requiring its own direct ID5 account.
-- **Partner activation** - Enriched sources can be sent to supported activation partners to increase match rates, meaning more users from your data can be matched and included in the audiences on the partner side.
+* **Brand first-party data enrichment** - A brand uploads its first-party data source to DCP and enriches it with ID5 IDs using their ID5 connection.
+* **Retailer-brand collaboration** - A retailer collaborates with a brand and shares access to their ID5 subscription. Within the secure collaboration scope, the brand enriches its customer data using the retailer’s ID5 connection, improving match rates without requiring its own direct ID5 account.
+* **Partner activation** - Enriched sources can be sent to supported activation partners to increase match rates, meaning more users from your data can be matched and included in the audiences on the partner side.
 
 ## How ID5 works
 
@@ -56,33 +56,32 @@ This section describes how to create an ID5 connection in DCP and use it for enr
 
 **Prerequisites:**
 
-- An AppsFlyer account with DCP permissions
-- An ID5 token (provided by your ID5 account manager)
-- A source containing at least one of the supported identifiers: HEM, MAID, or IP + timestamp
+* An AppsFlyer account with DCP permissions
+* An ID5 token (provided by your ID5 account manager)
+* A source containing at least one of the supported identifiers: HEM, MAID, or IP + timestamp
 
-### Create an ID5 connection
+<Accordion title="Create an ID5 connection">
 
 To use ID5 enrichment, first create a **Data & Identity** connection in DCP.
 
 1. Access the Data Collaboration Platform by clicking **Collaborate** > **Data Clean Room**, in the AppsFlyer side menu.
 
-<Image src="https://files.readme.io/85fe4d0302563dbf8f887f3b394634c8f41491f236848cf10f257f19c001cb07-42729168895121.png" alt="Click Data Clean Room.png" />
-
-2. Go to **Manage connections**(on the upper-right).
+   ![Click Data Clean Room.png](https://files.readme.io/85fe4d0302563dbf8f887f3b394634c8f41491f236848cf10f257f19c001cb07-42729168895121.png)
+2. Go to **Manage connections** (on the upper-right).
 3. Under the **Data & Identity** tab, select **+ New connection**.
 
-<Image src="https://files.readme.io/815ec20e84d85da413dfe9c9358b54d772461e1eeb3dff3ff7c5c31ced1088ac-42729247721873.png" alt="+New connection.png" />
-
+   **![+New connection.png](https://files.readme.io/815ec20e84d85da413dfe9c9358b54d772461e1eeb3dff3ff7c5c31ced1088ac-42729247721873.png)**
 4. Select **ID5.**
 
-<Image src="https://files.readme.io/a0c53243318fa7eed48ac5886ff5f3272bec0e6fd83a41117d53473757ab16d7-42729260095633.png" alt="Select ID5.png" />
-
+   **![Select ID5.png](https://files.readme.io/a0c53243318fa7eed48ac5886ff5f3272bec0e6fd83a41117d53473757ab16d7-42729260095633.png)**
 5. Enter your ID5 token (if relevant).
 6. Click **Save**.
 
 Once saved, the connection becomes available for your sources and collaborations (subject to permissions).
 
-### Enrich a source with ID5
+</Accordion>
+
+<Accordion title="Enrich a source with ID5">
 
 You can enrich your sources using the S2S flow.
 
@@ -92,16 +91,14 @@ You can enrich your sources using the S2S flow.
 2. Go to the **Sources** tab and hover over the relevant source.
 3. From the action menu, select **Enrich**.
 
-<Image src="https://files.readme.io/51c3f33da62d84ec9214e178e3bbaef15d6a03a32827ad393166db0dcd9a70fd-42729376739473.png" alt="Enrich.png" />
-
+   ![Enrich.png](https://files.readme.io/51c3f33da62d84ec9214e178e3bbaef15d6a03a32827ad393166db0dcd9a70fd-42729376739473.png)
 4. Click **Start enrichment**.
-5. After the enrichment flow is done, you will have a new source that is connected to the original source with the addition of ID5 IDs.
+5. After the enrichment flow is done, you will have a new source that is connected to the original source with the addition of ID5 IDs.  
+   **Note:** If the original source is ever deleted, the new source will also be deleted.
 
-> 📘 Note
->
-> If the original source is ever deleted, the new source will also be deleted.
+</Accordion>
 
-### Grant ID5 permissions in a collaboration
+<Accordion title="Grant ID5 permissions in a collaboration">
 
 Collaboration owners can allow collaborators to use an ID5 connection in a collaboration (subject to the commercial agreement with ID5).
 
@@ -111,23 +108,21 @@ Collaboration owners can allow collaborators to use an ID5 connection in a colla
 2. In the **Collaborations** tab, open an existing collaboration or [create a new one](/docs/data-collaboration-platform-dcp-create-a-collaboration).
 3. Click **Collaboration with “your collaborator”.**
 
-<Image src="https://files.readme.io/25d707c47bed9f5f60cd1ba521c4b48f41afbb0e36949f0ffa35cecf9a932ddc-42838633495313.png" alt="Update collaboration policy.png" />
-
+   **![Update collaboration policy.png](https://files.readme.io/25d707c47bed9f5f60cd1ba521c4b48f41afbb0e36949f0ffa35cecf9a932ddc-42838633495313.png)**
 4. Click **Edit collaboration policy**.
 
-<Image src="https://files.readme.io/07aab2a3165d26779e94f62eb8487893bc725dfa3ad4c406de576480e2ed6c13-42838633497489.png" alt="Click Edit collaboration policy.png" />
-
+   ![Click Edit collaboration policy.png](https://files.readme.io/07aab2a3165d26779e94f62eb8487893bc725dfa3ad4c406de576480e2ed6c13-42838633497489.png)
 5. Click **Access permissions**.
 
-<Image src="https://files.readme.io/b239775d71e1fa1dcc23537e73e35b80bff0184c9ee2aa213f644d90251284f3-42838633499281.png" alt="Click Access permissions.png" />
-
+   **![Click Access permissions.png](https://files.readme.io/b239775d71e1fa1dcc23537e73e35b80bff0184c9ee2aa213f644d90251284f3-42838633499281.png)**
 6. Enable **ID5 connection**.
 
-<Image src="https://files.readme.io/f2831ec4f775b51ef419da33444198de6aabfde3b27d83cc9af623eaed4a865c-42789059643793.png" alt="ID5 permissions.png" />
-
+   ![ID5 permissions.png](https://files.readme.io/f2831ec4f775b51ef419da33444198de6aabfde3b27d83cc9af623eaed4a865c-42789059643793.png)
 7. Click **Save**.
 
 Collaborators can then associate their own sources with the collaboration and enrich them using the partner’s ID5 connection.
+
+</Accordion>
 
 ## Traits and limitations
 
@@ -135,7 +130,7 @@ This section outlines some key traits and limitations.
 
 | Trait / Limitation | Description |
 | --- | --- |
-| First enrichment and daily updates | The first enrichment run begins immediately and typically completes within several hours.<br />After the initial run, enrichment continues daily at a fixed processing time, ensuring fresh identity mappings.<br />You can pause enrichment at any time to stop daily updates. |
+| First enrichment and daily updates | The first enrichment run begins immediately and typically completes within several hours.<br /><br />After the initial run, enrichment continues daily at a fixed processing time, ensuring fresh identity mappings.<br /><br />You can pause enrichment at any time to stop daily updates. |
 | Source dependency | If the original source is deleted, the enriched source is automatically deleted. |
 | Activation scope | In a collaboration, an advertiser can use enriched data for activation but cannot download or query it. |
 | Status restrictions | You can enrich only sources in **Active** status. |

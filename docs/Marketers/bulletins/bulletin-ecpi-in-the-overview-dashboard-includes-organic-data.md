@@ -22,9 +22,8 @@ x-zendesk:
   created_at: '2024-03-10T10:06:52Z'
   edited_at: '2024-03-21T12:32:14Z'
 ---
-| | |
-| --- | --- |
 | **What's new** | eCPI in the Overview dashboard now includes organic data. |
+| --- | --- |
 | **Effective date** | March 20, 2024 |
 | **Where** | Overview dashboard |
-| **What you should know** | - Until the effective date, organic data wasn't included in the eCPI metric; only non-organic data.<br />- From the effective date, organic data is included in eCPI.<br />- This may cause a drop in the eCPI reported in the Overview dashboard. |
+| **What you should know** | <ul><li>Until the effective date, organic data wasn't included in the eCPI metric; only non-organic data.</li><li>From the effective date, organic data is included in eCPI.</li><li>This may cause a drop in the eCPI reported in the Overview dashboard.</li></ul> |

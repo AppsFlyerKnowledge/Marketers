@@ -28,10 +28,10 @@ Reference in this article to SDK V6.
 
 The AppsFlyer iOS SDK V6:
 
-- Allows app owners and developers to prepare for iOS 14 release.
-- Give you the option to ask users for permission to collect IDFA.
-- Provides app attribution and event reporting functionality to iOS mobile apps.
-- Includes significant API method changes from previous versions.
+* Allows app owners and developers to prepare for iOS 14 release.
+* Give you the option to ask users for permission to collect IDFA.
+* Provides app attribution and event reporting functionality to iOS mobile apps.
+* Includes significant API method changes from previous versions.
 
 For full information about the SDK V6, and to integrate it into a new app that does not have an earlier version of the AppsFlyer SDK, read our [iOS SDK integration guide for marketers](/docs/sdk-integration-overview).
 
@@ -39,20 +39,21 @@ For full information about the SDK V6, and to integrate it into a new app that d
 
 To update to iOS SDK V6, complete the procedures (1-5) that follow.
 
-### 1. Update SDK version
+<Accordion title="1. Update SDK version">
 
 Download and add the [SDK V6](https://dev.appsflyer.com/hc/docs/install-ios-sdk) to your Xcode.
 
-### 2. Implement SDK V6
+</Accordion>
+
+<Accordion title="2. Implement SDK V6">
 
 **Add the following code to the SDK initialization**:
 
-<Tabs>
-<Tab title="Objective-C">
+<Accordion title="Objective-C">
 
 In AppDelegate.h, do the following:
 
-```objectivec
+```
 #import "AppDelegate.h"
 #import <AppsFlyerLib/AppsFlyerLib.h>
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
@@ -60,7 +61,7 @@ In AppDelegate.h, do the following:
 @interface AppDelegate ()
 @end
 @implementation AppDelegate
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL) application:(UIApplication *) application didFinishLaunchingWithOptions:(NSDictionary *) launchOptions {
     // 1 - Get AppsFlyer preferences from .plist file
     NSString *path = [[NSBundle mainBundle] pathForResource:@"afdevkey_donotpush" ofType:@".plist"];
     NSDictionary* properties = [NSDictionary dictionaryWithContentsOfFile:path];
@@ -87,33 +88,33 @@ In AppDelegate.h, do the following:
     return YES;
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
+- (void) applicationDidBecomeActive:(UIApplication *) application {
     [[AppsFlyerLib shared] start];
 }
 
 // Deep linking
 // Open URI-scheme for iOS 9 and above
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *) options {
+- (BOOL) application:(UIApplication *) application openURL:(NSURL *) url options:(NSDictionary *) options {
     [[AppsFlyerLib shared] handleOpenUrl:url options:options];
     return YES;
 }
 // Open URI-scheme for iOS 8 and below
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString*)sourceApplication annotation:(id)annotation {
+- (BOOL) application:(UIApplication *) application openURL:(NSURL *) url sourceApplication:(NSString*) sourceApplication annotation:(id) annotation {
     [[AppsFlyerLib shared] handleOpenURL:url sourceApplication:sourceApplication withAnnotation:annotation];
     return YES;
 }
 // Open Universal Links
-- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler {
+- (BOOL) application:(UIApplication *) application continueUserActivity:(NSUserActivity *) userActivity restorationHandler:(void (^) (NSArray * _Nullable)) restorationHandler {
     [[AppsFlyerLib shared] continueUserActivity:userActivity restorationHandler:restorationHandler];
     return YES;
 }
 // Report Push Notification attribution data for re-engagements
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+- (void) application:(UIApplication *) application didReceiveRemoteNotification:(NSDictionary *) userInfo fetchCompletionHandler:(void (^) (UIBackgroundFetchResult)) completionHandler {
     [[AppsFlyerLib shared] handlePushNotification:userInfo];
 }
 // AppsFlyerLib implementation
 //Handle Conversion Data (Deferred Deep Link)
--(void)onConversionDataSuccess:(NSDictionary*) installData {
+-(void) onConversionDataSuccess:(NSDictionary*) installData {
     id status = [installData objectForKey:@"af_status"];
     if([status isEqualToString:@"Non-organic"]) {
         id sourceID = [installData objectForKey:@"media_source"];
@@ -123,24 +124,24 @@ In AppDelegate.h, do the following:
         NSLog(@"This is an organic install.");
     }
 }
--(void)onConversionDataFail:(NSError *) error {
+-(void) onConversionDataFail:(NSError *) error {
     NSLog(@"%@",error);
 }
 //Handle Direct Deep Link
 - (void) onAppOpenAttribution:(NSDictionary*) attributionData {
     NSLog(@"%@",attributionData);
 }
-- (void) onAppOpenAttributionFailure:(NSError *)error {
+- (void) onAppOpenAttributionFailure:(NSError *) error {
     NSLog(@"%@",error);
 }
 // support for scene delegate
 #pragma mark - UISceneSession lifecycle
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options API_AVAILABLE(ios(13)){
+- (UISceneConfiguration *) application:(UIApplication *) application configurationForConnectingSceneSession:(UISceneSession *) connectingSceneSession options:(UISceneConnectionOptions *) options API_AVAILABLE(ios(13)){
     // Called when a new scene session is being created.
     // Use this method to select a configuration to create the new scene with.
     return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
 }
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet *)sceneSessions  API_AVAILABLE(ios(13.0)){
+- (void) application:(UIApplication *) application didDiscardSceneSessions:(NSSet *) sceneSessions  API_AVAILABLE(ios(13.0)){
     // Called when the user discards a scene session.
     // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
@@ -148,12 +149,13 @@ In AppDelegate.h, do the following:
 @end
 ```
 
-</Tab>
-<Tab title="Swift">
+</Accordion>
+
+<Accordion title="Swift">
 
 In AppDelegate.swift, add the following:
 
-```swift
+```
 import UIKit
 import AppTrackingTransparency
 import AppsFlyerLib
@@ -229,7 +231,7 @@ extension AppDelegate: AppsFlyerLibDelegate {
                 if let sourceID = data["media_source"],
                     let campaign = data["campaign"] {
                     print("This is a Non-Organic install. Media source: \(sourceID)  Campaign: \(campaign)")
-                } 
+                }
             } else {
                 print("This is an organic install.")
             }
@@ -258,10 +260,11 @@ extension AppDelegate: AppsFlyerLibDelegate {
 }
 ```
 
-</Tab>
-</Tabs>
+</Accordion>
 
-### 3. Support for SKAdNetwork attribution
+</Accordion>
+
+<Accordion title="3. Support for SKAdNetwork attribution">
 
 [SKAdNetwork](https://developer.apple.com/documentation/storekit/skadnetwork/configuring_the_participating_apps) is a class used by iOS that validates advertiser-driven app installations. The app install validation process involves the source app and the advertised app.
 
@@ -271,14 +274,16 @@ For configuring the advertised app, the AppsFlyer [SKAdNetwork Solution](/docs/s
 
 To use the [SKAdNetwork Solution](/docs/skadnetwork-skan-solution-guide):
 
-- The developer does nothing.
-- AppsFlyer SDK automatically calls the necessary SKAdNetwork APIs, meaning `registerAppForAdNetworkAttribution()` and `updateConversionValue()`. The developer must not call them.
-- Don't allow other SDKs to call SKAdNet APIs. Doing so can delay iOS in sending the postback to AppsFlyer and change the conversion value which we use to populate the SKAdNetwork dashboard with user quality measurement data as configured by the marketer in the dashboard.
-- The marketer needs to configure SKAdNetwork measurement [in AppsFlyer](/docs/skadnetwork-skan-solution-guide).
+* The developer does nothing.
+* AppsFlyer SDK automatically calls the necessary SKAdNetwork APIs, meaning `registerAppForAdNetworkAttribution()` and `updateConversionValue()`. The developer must not call them.
+* Don't allow other SDKs to call SKAdNet APIs. Doing so can delay iOS in sending the postback to AppsFlyer and change the conversion value which we use to populate the SKAdNetwork dashboard with user quality measurement data as configured by the marketer in the dashboard.
+* The marketer needs to configure SKAdNetwork measurement [in AppsFlyer](/docs/skadnetwork-skan-solution-guide).
 
 There is no other action or registration process required by either the developer or the marketer in the App Store.
 
-### 4. Change APIs
+</Accordion>
+
+<Accordion title="4. Change APIs">
 
 The AppsFlyer iOS SDK V6 has some API name changes. See the following table to change the API names from the earlier SDK versions to the current names.
 
@@ -296,11 +301,15 @@ The AppsFlyer iOS SDK V6 has some API name changes. See the following table to c
 | deviceTrackingDisabled/deviceLoggingDisabled | anonymizeUser |
 | sharedTracker (Objective C) | shared |
 
-### 5. Ensure push notification integration
+</Accordion>
+
+<Accordion title="5. Ensure push notification integration">
 
 The following is required if push notification integration is already implemented.
 
 Follow the [push notification instructions](/docs/measuring-push-notification-re-engagement-campaigns) to ensure you have push notifications integrated using the handlePushNotificationData method.
+
+</Accordion>
 
 ## Plugins
 
@@ -312,8 +321,8 @@ The AppsFlyer Unity V6 plugin helps app owners and developers support iOS 14, pr
 
 To update your plugin from an earlier version, see our guides on updating to the Unity plugin V6:
 
-- [From Unity plugin V4](https://github.com/AppsFlyerSDK/appsflyer-unity-plugin/blob/master/README.md#--migration) (requires removal of the old plugin)
-- [From Unity plugin V5](https://github.com/AppsFlyerSDK/appsflyer-unity-plugin/blob/master/README.md#--migration) (requires an update of the Unity package)
+* [From Unity plugin V4](https://github.com/AppsFlyerSDK/appsflyer-unity-plugin/blob/master/README.md#--migration) (requires removal of the old plugin)
+* [From Unity plugin V5](https://github.com/AppsFlyerSDK/appsflyer-unity-plugin/blob/master/README.md#--migration) (requires an update of the Unity package)
 
 </Accordion>
 

@@ -28,19 +28,19 @@ x-zendesk:
 
 The Appcharge integration helps you:
 
-- Attribute and measure e-commerce performance
-- Ensure that the LTV is being reported from web store purchases
-- Attribute web store purchases to marketing campaigns
-- Maintain consistency with your mobile campaign data
+* Attribute and measure e-commerce performance
+* Ensure that the LTV is being reported from web store purchases
+* Attribute web store purchases to marketing campaigns
+* Maintain consistency with your mobile campaign data
 
 This guide walks you through setting up the Appcharge integration.
 
 ## Set up the integration
 
-> 📘 Prerequisites
->
-> * You have an active Appcharge account. If not, then please contact the partner (Appcharge) and open an account with them before setting up the integration.
-> * Your AppsFlyer account includes the necessary permissions to configure partner integrations.
+**Prerequisites:**
+
+* You have an active Appcharge account. If not, then please contact the partner (Appcharge) and open an account with them before setting up the integration.
+* Your AppsFlyer account includes the necessary permissions to configure partner integrations.
 
 **To set up a new integration:**
 
@@ -54,66 +54,100 @@ This guide walks you through setting up the Appcharge integration.
 
 In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations** tab, search for the partner, and make your changes.
 
-### Integration tab
+<Accordion title="Integration tab">
 
 #### Activate partner
 
-On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with Appcharge. Learn more about [partner activation](/docs/partner-activation-deactivation).
+On your first visit, you'll need to turn on the
+**Activate partner** toggle to set up the integration.
+The toggle must remain on for as long as you work with Appcharge.
+Learn
+more about
+[partner activation](/docs/partner-activation-deactivation).
 
 #### Advanced Privacy
 
-For iOS apps, the [Advance Privacy](/docs/apply-aggregated-advanced-privacy-framework) toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the [Aggregated Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework) toggle is turned on in the App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked by default.
+For iOS apps, the
+[Advance Privacy](/docs/apply-aggregated-advanced-privacy-framework)
+toggle appears. When turned on, it limits the sharing of user
+identifiers
+with the partner. Note that when the
+[Aggregated Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework) toggle
+is turned on in the App Settings,
+**Advanced Privacy (for iOS 14.5+ and later)** is
+turned on and locked by default.
 
 #### Default postbacks
 
-AppsFlyer sends default postbacks to Appcharge following user installs. Use this section to [define these postbacks](/docs/set-up-an-integrated-partner#default%20postbacks).
+AppsFlyer sends default postbacks to Appcharge following user
+installs.
+Use this section to
+[define these postbacks](/docs/set-up-an-integrated-partner#default-postbacks).
 
-- **Off:** Install postbacks aren't sent to Appcharge.
+* **Off:** Install postbacks aren't sent to Appcharge.  
+  **Note:** Appcharge's integration with AppsFlyer
+  doesn't
+  require sending install postbacks. Therefore, it's recommended
+  to set it to Off.
+* **All media sources, including organic:** Install
+  postbacks are sent for events attributed to any partner and
+  for
+  organic events.
 
-> 📘 Note
->
-> Appcharge's integration with AppsFlyer doesn't require sending install postbacks. Therefore, it's recommended to set it to Off.
-
-- **All media sources, including organic:** Install postbacks are sent for events attributed to any partner and for organic events.
-
-<Image src="https://files.readme.io/390cbd75195ddcfa3f17cd9d569befda9f8b9b0f7040b53f420bb6fa1bc668d0-36292113918225.png" alt="default_postbacks.png" />
+![default_postbacks.png](https://files.readme.io/390cbd75195ddcfa3f17cd9d569befda9f8b9b0f7040b53f420bb6fa1bc668d0-36292113918225.png)
 
 #### In-app event postbacks
 
-In this section, you can map your AppsFlyer events with your partners via postbacks.
+In this section, you can map your AppsFlyer events with your
+partners
+via postbacks.
 
-<Image src="https://files.readme.io/290c39c3503ac884196024851d58e70e6aff8ead5d9e32013e64964624bb8670-36292139269521.jpg" alt="xsolla-af-login-3.jpg" />
+![xsolla-af-login-3.jpg](https://files.readme.io/290c39c3503ac884196024851d58e70e6aff8ead5d9e32013e64964624bb8670-36292139269521.jpg)
 
 1. Turn on **In-app event postbacks**.
-2. Click **Add event** to add an SDK or server-to-server event to the list.
-3. Complete the parameters.
+2. Click **Add event** to add an SDK
+   or server-to-server event
+   to the list.
+3. Complete the following parameters:
 4. Click **Save Integration**.
 
-### Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Attribution links aren't available for Appcharge.
 
-### Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data isn't supported in the integration with Appcharge.
 
-### Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad revenue data isn't supported in the integration with Appcharge.
 
-### Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions aren't available for Appcharge.
+
+</Accordion>
 
 ## Identify Appcharge events in AppsFlyer
 
 Appcharge sends AppsFlyer two kinds of mobile in-app events:
 
-- `ac_af_purchase` - When a user successfully completes a purchase
-- `ac_af_refund` - When a refund is completed
+* `ac_af_purchase` - When a user successfully completes a purchase
+* `ac_af_refund` - When a refund is completed
 
-### Traits and limitations
+<Accordion title="Traits and limitations">
 
 PC / Console support - the AppsFlyer integration with Appcharge does not support PC / Console Apps.
+
+</Accordion>
 
 Learn more about [partner integrations](/docs/set-up-an-integrated-partner).

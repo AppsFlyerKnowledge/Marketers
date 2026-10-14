@@ -98,7 +98,7 @@ Follow the steps below to set up and deploy an agent.
 3. On the agent you want to set up and deploy, click **Deploy**.
 4. On the following page, configure the required agent settings.
 5. Add your email address or connect your Slack workspace if relevant.
-   1. Make sure that the Slack channel has been set up. [See prerequisites](#h_01KQF8YAEDQW52YMK3W4FE2KE1).
+   1. Make sure that the Slack channel has been set up. [See prerequisites](#prerequisites-and-permissions).
 6. Select a run schedule (currently based on UTC; additional time zones will be added soon).
 7. Click **Deploy Agent**.
 
@@ -192,7 +192,9 @@ Keep the following in mind when using the **Activity** tab and **Analyze activit
 
 Agent Hub includes two kinds of agents: Custom Agent, which you configure yourself for a job you define, and ready-to-use agents you deploy as they are.
 
-### [Closed beta] Custom Agent
+<div id="h_01M3PDTFQDFQNMHTWKP23JV1A8" />
+
+<Accordion title="[Closed beta] Custom Agent">
 
 While ready-to-use agents in Agent Hub carry out specific, predefined tasks, Custom Agent executes a job you tailor to your specific requirements. Write the task in plain language, pick the app, review the plan the agent drafts, and choose how and when you want results delivered. The agent then does the work end to end, on demand or on a schedule, and sends you the output.
 
@@ -243,7 +245,7 @@ Schedules run in UTC.
 
 The agent appears under **My Agents**. The card shows the latest run status. Completed runs are in **Activity**, filterable by app and agent name.
 
-### What data Custom Agent works on
+<Accordion title="What data Custom Agent works on">
 
 Custom Agent has two data sources, event-level and aggregated data, and picks between them based on the task; you don't need to specify. For some tasks, the agent uses both sources in a single run. In those rare cases, the same metric can show slightly different values across the two parts of a run. To understand which source the agent used during a run, explore the agent's reasoning using the **Analyze activity** feature.
 
@@ -283,7 +285,9 @@ Aggregated data is in USD and your account currency. Cohorted aggregated data ha
 >
 > Discrepancies can occur between raw event figures and dashboard data. Event-level figures (raw data) and aggregated (dashboard) figures won't always match; small gaps between the two are expected. Aggregated figures should match My Dashboards for the same app and dates.
 
-### Write a good task
+</Accordion>
+
+<Accordion title="Write a good task">
 
 The plan the agent drafts is only as good as the brief. Include as much of this as applies:
 
@@ -296,11 +300,13 @@ The plan the agent drafts is only as good as the brief. Include as much of this 
 
 See **Prerequisites and permissions** above for setup details.
 
-### Review and refine a run
+</Accordion>
 
-Completed runs appear in **Activity** with the same content sent to Slack or email. From a run, you can copy the output, give a thumbs up or down, add written feedback, and open [Analyze activity](#h_01KQF6P3EMCX0HQKPVQ89S9VGF) to ask AI Assistant how the agent got to its result.
+<Accordion title="Review and refine a run">
 
-If a run comes back empty or off-target, read the reasoning before changing the task. In [Analyze activity](#h_01KQF6P3EMCX0HQKPVQ89S9VGF), ask what data the agent used, why it reached that result, and what to change in the plan. Rewriting the task blind usually produces a different wrong answer. Then edit the plan or task and run the agent again.
+Completed runs appear in **Activity** with the same content sent to Slack or email. From a run, you can copy the output, give a thumbs up or down, add written feedback, and open [Analyze activity](#analyze-activity-with-ai-assistant) to ask AI Assistant how the agent got to its result.
+
+If a run comes back empty or off-target, read the reasoning before changing the task. In [Analyze activity](#analyze-activity-with-ai-assistant), ask what data the agent used, why it reached that result, and what to change in the plan. Rewriting the task blind usually produces a different wrong answer. Then edit the plan or task and run the agent again.
 
 If the reasoning also comes back empty, you might have requested data that doesn't yet exist. See **Limitations** above, revise the prompt, and try again.
 
@@ -308,24 +314,32 @@ If the reasoning also comes back empty, you might have requested data that doesn
 >
 > You can't return to your original prompt once you save and deploy an agent. You can only edit the approved agent plan.
 
-See [Agent Hub page](#h_01KQF6P3ED1KB47THJP8J3KAE5) and [Analyze activity with AI Assistant](#h_01KQF6P3EMCX0HQKPVQ89S9VGF) above for more detail.
+See [Agent Hub page](#agent-hub-page) and [Analyze activity with AI Assistant](#analyze-activity-with-ai-assistant) above for more detail.
 
-### Manage a Custom Agent
+</Accordion>
+
+<Accordion title="Manage a Custom Agent">
 
 From the agent card under **My Agents**, you can run the agent now, edit its configuration (name, delivery, schedule), or delete it.
 
 Deleting an agent also deletes its history, including outputs and reasoning. This action can't be undone.
 
-### Good to know
+</Accordion>
+
+<Accordion title="Good to know">
 
 * One app per agent. Create a separate agent for each app.
 * Activity keeps runs from the last 30 days.
 
-### Ready-to-use agents
+</Accordion>
+
+</Accordion>
+
+<Accordion title="Ready-to-use agents">
 
 Ready-to-use agents are ready to deploy as they are: pick one, configure it, and let it run on your data. The table below lists what each agent does at a glance. Expand a section for the full detail before you deploy.
 
-### Spot Creative Opportunities
+<Accordion title="Spot Creative Opportunities">
 
 **Job:** Finds the creatives that are performing best for you and tells you where they aren't running yet. The agent evaluates creative performance across all your partners over the past 30 days, ranks the winners, and then checks each partner to see which of those winners are missing. You get a list of concrete placements to add, with the numbers behind each.
 
@@ -335,7 +349,9 @@ Ready-to-use agents are ready to deploy as they are: pick one, configure it, and
 
 **Cadence:** Configurable via the standard schedule options or on demand.
 
-### Build Performance Snapshots
+</Accordion>
+
+<Accordion title="Build Performance Snapshots">
 
 **Job:** Write the performance update you'd
 otherwise assemble by hand for managers and stakeholders. The agent reads
@@ -367,7 +383,9 @@ AI-generated view, found under **My Dashboards** >
 **AI generated**. It's overwritten with fresh data on each
 run, and is deleted after 30 days unless you save it.
 
-### Deep Research Analysis
+</Accordion>
+
+<Accordion title="Deep Research Analysis">
 
 **Job:** Runs a weekly investigation into
 what changed and why. Every Monday, the agent compares
@@ -390,7 +408,9 @@ Slack or email.
 
 **Cadence:** Weekly, on Mondays or on demand.
 
-### Detect Performance Anomalies
+</Accordion>
+
+<Accordion title="Detect Performance Anomalies">
 
 **Job:** Watches your key KPIs every day
 and tells you when something moves that shouldn't have.
@@ -411,7 +431,9 @@ email. No alert on quiet days. [CONFIRM]
 **Cadence:** Configurable via the standard
 schedule options or on demand.
 
-### Detect Configuration Issues
+</Accordion>
+
+<Accordion title="Detect Configuration Issues">
 
 **Job:** Audits your measurement setup and
 alerts you to gaps that quietly degrade data quality.
@@ -431,7 +453,9 @@ Delivered to Slack or email.
 **Cadence:** Configurable via the standard
 schedule options or on demand.
 
-### Monitor App Releases
+</Accordion>
+
+<Accordion title="Monitor App Releases">
 
 **Job:** Keeps you informed about your own
 app's releases without waiting on the dev team. The agent
@@ -453,7 +477,9 @@ changes. Delivered to Slack or email.
 **Cadence:** Configurable via the standard
 schedule options or on demand.
 
-### Optimize Anti-Fraud Strategy (Protect360)
+</Accordion>
+
+<Accordion title="Optimize Anti-Fraud Strategy (Protect360)">
 
 **Job:** Looks for early signs of fraud
 in your traffic and tells you what to do about it. The
@@ -469,7 +495,9 @@ inside the Protect360 dashboard.
 
 **Cadence:** Weekly, on Mondays, or on demand.
 
-### Web health check
+</Accordion>
+
+<Accordion title="Web health check">
 
 **Job:** Audits how your web app collects
 events and attributes conversions to marketing sources.
@@ -491,6 +519,10 @@ on impact.
 
 **Cadence:** Configurable via the standard
 schedule options or on demand.
+
+</Accordion>
+
+</Accordion>
 
 ## FAQ
 

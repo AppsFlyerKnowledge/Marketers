@@ -24,11 +24,11 @@ x-zendesk:
 ---
 Customers should work closely with legal and other professional advisors to determine exactly how Google policies apply to them and should adapt their responses in line with their specific configurations and uses.
 
-> 📘 Disclaimer
->
-> The information contained in this article is intended to assist in answering the Google Safety Section Questionnaire in relation **only** to what AppsFlyer processes on behalf of customers.
->
-> It is provided for information and convenience purposes only. Customers should work closely with legal and other professional advisors to determine exactly how Google policies apply to them and should adapt their responses in line with their specific configurations and uses.
+#### **Disclaimer**
+
+The information contained in this article is intended to assist in answering the Google Safety Section Questionnaire in relation **only** to what AppsFlyer processes on behalf of customers.
+
+It is provided for information and convenience purposes only. Customers should work closely with legal and other professional advisors to determine exactly how Google policies apply to them and should adapt their responses in line with their specific configurations and uses.
 
 ## Introduction
 
@@ -44,9 +44,9 @@ All app developers will be required to complete the safety section questionnaire
 
 Google has published a form (questionnaire) that app developers will be required to complete. The questionnaire includes the following sections:
 
-- Data collection and security
-- Data types
-- Data usage and handling
+* Data collection and security
+* Data types
+* Data usage and handling
 
 App developers will need to first assess their data collection and handling practices before responding to the questionnaire.
 
@@ -62,7 +62,7 @@ In this section, you will be asked a few general yes/no questions:
 2. Is all of the user data collected by your app encrypted in transit?
 3. Do you provide a way for users to request that their data be deleted?
 
-With respect to your use of AppsFlyer, AppsFlyer encrypts all data in transit that is transmitted through the SDK. AppsFlyer also provides customers with the ability to delete specific end-user data through its OpenGDPR framework. For the data types collected, see the table in the Data types section.
+With respect to your use of AppsFlyer, AppsFlyer encrypts all data in transit that is transmitted through the SDK. AppsFlyer also provides customers with the ability to delete specific end-user data through its OpenGDPR framework. For the data types collected, see the table in the [Data types](/docs/fill-out-google-safety-section-form#data-types) section.
 
 ### Data types
 
@@ -75,33 +75,33 @@ In this section, you will be asked to select the data types collected and respon
 
 The following table assumes AppsFlyer software default configurations. App developers are responsible for ensuring that they adapt accordingly in line with their specific configurations and uses.
 
-“Collected” means data transmitted off of the device by any means (for example, webview, or SDK).  An exception is if end-to-end encryption is used making the data unreadable to anyone.
+“Collected” means data transmitted off of the device by any means (for example, webview, or SDK).  An exception is if end-to-end encryption is used making the data unreadable to anyone.
 
 | Data type | AppsFlyer default data collection | Notes |
 | --- | --- | --- |
-| Location Info<br />- Approximate Location<br />- Precise Location | See notes -> | Precise Location: No<br />Approximate Location: Yes, the IP address is received and mapped to a region/city level. |
-| Personal Info<br />- Name<br />- Email Address<br />- Personal identifiers (account ID, number, or name)<br />- Address<br />- Phone Number<br />- Race and ethnicity<br />- Political or religious beliefs<br />- Sexual orientation or gender identity<br />- Other personal info | See notes -> | Personal info should not be collected, and AppsFlyer restricts the collection of such personal data like name and address. However, if app developers have configured to transmit hashed emails or hashed phone numbers or they have configured a customer user account ID (CUID) they will need to respond accordingly. |
-| Financial Info<br />- Credit card, debit card, or bank account number<br />- Purchase history<br />- Credit info<br />- Other financial info | No<br />Optional<br />No<br />No | Financial information such as credit cards and credit information should not be collected.<br />If you are measuring in-app purchases (purchase history) you should respond **Yes** |
-| Health and Fitness<br />- Health information<br />- Fitness information | No | Should not be collected |
-| Messages<br />- Emails<br />- SMS or MMS messages<br />- Other in-app messages | No | Should not be collected |
-| Photos or Videos<br />- Photos<br />- Videos | No | Should not be collected |
-| Audio Files<br />- Voice or sound recordings<br />- Music files<br />- Other audio files | No | Should not be collected |
-| Calendar<br />- Calendar events | No | Should not be collected |
-| App activity<br />- Pageviews and taps in-app<br />- In-app search history<br />- Installed apps<br />- Other user-generated content<br />- Other actions | See notes -> | AppsFlyer by default measures app launches which may be deemed page views or other actions.<br />Furthermore, if you configure your app to measure specific in-app events you should respond Yes in accordance with your configurations. |
+| Location Info<ul><li>Approximate Location</li><li>Precise Location</li></ul> | See notes -> | Precise Location: No<br /><br />Approximate Location: Yes, the IP address is received and mapped to a region/city level. |
+| Personal Info<ul><li>Name</li><li>Email Address</li><li>Personal identifiers (account ID, number, or name)</li><li>Address</li><li>Phone Number</li><li>Race and ethnicity</li><li>Political or religious beliefs</li><li>Sexual orientation or gender identity</li><li>Other personal info</li></ul> | See notes -> | Personal info should not be collected, and AppsFlyer restricts the collection of such personal data like name and address. However, if app developers have configured to transmit hashed emails or hashed phone numbers or they have configured a customer user account ID (CUID) they will need to respond accordingly. |
+| Financial Info<ul><li>Credit card, debit card, or bank account number</li><li>Purchase history</li><li>Credit info</li><li>Other financial info</li></ul> | No  <br />  <br />Optional<br /><br />No  <br />No | Financial information such as credit cards and credit information should not be collected.<br /><br />If you are measuring in-app purchases (purchase history) you should respond **Yes** |
+| Health and Fitness<ul><li>Health information</li><li>Fitness information</li></ul> | No | Should not be collected |
+| Messages<ul><li>Emails</li><li>SMS or MMS messages</li><li>Other in-app messages</li></ul> | No | Should not be collected |
+| Photos or Videos<ul><li>Photos</li><li>Videos</li></ul> | No | Should not be collected |
+| Audio Files<ul><li>Voice or sound recordings</li><li>Music files</li><li>Other audio files</li></ul> | No | Should not be collected |
+| Calendar<ul><li>Calendar events</li></ul> | No | Should not be collected |
+| App activity<ul><li>Pageviews and taps in-app</li><li>In-app search history</li><li>Installed apps</li><li>Other user-generated content</li><li>Other actions</li></ul> | See notes -> | AppsFlyer by default measures app launches which may be deemed page views or other actions.<br /><br />Furthermore, if you configure your app to measure specific in-app events you should respond Yes in accordance with your configurations. |
 | Web browsing | No | Should not be collected |
-| App info and performance<br />- Crash logs<br />- Diagnostics<br />- Other app performance data | No<br />Yes<br />Yes | Launch time or battery levels may be received for fraud detection purposes |
-| Device or other identifiers<br />- Device or other identifiers (for example, IMEI, MAC, and Ad ID) | See notes -> | The AppsFlyer Android SDK, by default collect the Google Advertiser Identifier (GAID). <br />You can disable the collection of the Advertising ID in the SDK by [revoking AD_ID permission](https://dev.appsflyer.com/hc/docs/install-android-sdk#revoking-the-ad_id-permission) and by calling [setDisableAdvertisingIdentifiers](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib). |
+| App info and performance<ul><li>Crash logs</li><li>Diagnostics</li><li>Other app performance data</li></ul> | No<br /><br />Yes<br /><br />Yes | Launch time or battery levels may be received for fraud detection purposes |
+| Device or other identifiers<ul><li>Device or other identifiers (for example, IMEI, MAC, and Ad ID)</li></ul> | See notes -> | The AppsFlyer Android SDK, by default collect the Google Advertiser Identifier (GAID).   <br />You can disable the collection of the Advertising ID in the SDK by [revoking AD\_ID permission](https://dev.appsflyer.com/hc/docs/install-android-sdk#revoking-the-ad_id-permission) and by calling [setDisableAdvertisingIdentifiers](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib). |
 
 “Shared” means the transfer of data to a third party (whether off or on the device).
 
 Exceptions include the following:
 
-- Transfers to service providers that process the data on your behalf and per your instructions
-- Transfers required for legal purposes (for example, in response to a government request)
-- End-user action or based on a prominent in-app disclosure and consent
-- Anonymous data
+* Transfers to service providers that process the data on your behalf and per your instructions
+* Transfers required for legal purposes (for example, in response to a government request)
+* End-user action or based on a prominent in-app disclosure and consent
+* Anonymous data
 
-It is important to note that while AppsFlyer acts solely as a service provider on your behalf and per your instructions if you are sharing data with third-party networks (for example, through postbacks, SRN’s, and audiences ) this would be deemed sharing.  Therefore, each app developer will need to assess his configurations and partner integrations and respond accordingly.
+It is important to note that while AppsFlyer acts solely as a service provider on your behalf and per your instructions if you are sharing data with third-party networks (for example, through postbacks, SRN’s, and audiences ) this would be deemed sharing.  Therefore, each app developer will need to assess his configurations and partner integrations and respond accordingly.
 
 ## Ephemeral processing
 
@@ -125,11 +125,9 @@ Google has provided a list of purposes from which app developers must choose as 
 | Personalization | Select if you use the data for any type of product personalization |
 | Account management | Select if you use the data for the setup and management of user accounts |
 
-<Cards>
-  <Card title="Preparing for Google Play's new safety section" href="https://android-developers.googleblog.com/2021/07/new-google-play-safety-section.html" icon="fa-solid fa-sack-dollar">
-    Read the official Android developers blog post about the safety section.
-  </Card>
-  <Card title="Provide information for Google Play's Data safety section" href="https://support.google.com/googleplay/android-developer/answer/10787469" icon="fa-solid fa-sack-dollar">
-    Review Google's developer support guide on completing the form.
-  </Card>
-</Cards>
+> 📘 **See also**
+>
+> To learn more about preparing for the Google Play safety section and how to complete the required form, read these articles:
+>
+> * [Preparing for Google Play's new safety section](https://android-developers.googleblog.com/2021/07/new-google-play-safety-section.html)
+> * [Provide information for Google Play's Data safety section](https://support.google.com/googleplay/android-developer/answer/10787469)

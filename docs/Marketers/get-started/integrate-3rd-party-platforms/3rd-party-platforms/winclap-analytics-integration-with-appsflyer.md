@@ -46,7 +46,7 @@ The setup is done from the **Active Integrations** page, but to find the partner
 
 Winclap Analytics configuration makes use of the ***Integration*** tab only.
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
 
@@ -93,20 +93,18 @@ In this section, you can map which in-app events to send to Winclap Analytics us
 [![winclap analytics - in-app event postback configuration](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)
 
 1. Switch the ***In-App Event Postbacks*** toggle to ON.
-2. Set the ***In-app event postback window***, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).
+2. Set the ***In-app event postback window***, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
 3. Click ***Add Event*** to add an SDK Event to the list.
 4. Complete the following parameters:
-
-   
 
 | Parameter Name | Description |
 | --- | --- |
 | **SDK event name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip**: Don't see the event you are looking for? Type in its SDK Event Name, click **Create custom**, and map normally. Read more about [custom event mapping](/docs/in-app-event-postback-configuration#custom-events). |
 | **Partner event identifier** | The unique name or ID of each event as defined by Winclap.  <br />Get from Winclap the corresponding ID for each of the events you want to report to them, and enter in this field. |
 | **Sending option** | Select the sending option for the event:  <br />**This partner only** for events coming **only** from users attributed to this partner  <br />**All media sources, including organic** to have your entire user base available to be reported to the partner |
-| **Send event data** | * **No values & no revenue:** sends only the event itself without the event value.<br />* **Values & no revenue:** sends all the parameters excluding the revenue value.<br />* **Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event). |
+| **Send event data** | <ul><li>**No values & no revenue:** sends only the event itself without the event value.</li><li>**Values & no revenue:** sends all the parameters excluding the revenue value.</li><li>**Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).</li></ul> |
 
-5. Click ***Save*****.**
+5. Click ***Save*.**
 
 Once this configuration is saved, AppsFlyer sends the following data to Winclap Analytics for each non-organic event:
 
@@ -131,18 +129,28 @@ Once this configuration is saved, AppsFlyer sends the following data to Winclap 
 * App name
 * Install time
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Attribution Links are not available for Winclap Analytics.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions are not available for Winclap Analytics.
+
+</Accordion>

@@ -36,11 +36,10 @@ Follow [this guide from Segment](https://segment.com/docs/destinations/appsflyer
 
 To integrate Segment with AppsFlyer, follow these steps:
 
-- [Configure your Segment dashboard](https://segment.com/docs/destinations/appsflyer/#getting-started) to connect to AppsFlyer
-- Implement [the Segment Wrapper SDK](/docs/segment-integration#how-does-the-sdk-wrapper-work) in your app:
-
-  - [Native iOS](https://github.com/segment-integrations/analytics-swift-appsflyer)
-  - [Native Android](https://github.com/segment-integrations/analytics-kotlin-appsflyer)
+* [Configure your Segment dashboard](https://segment.com/docs/destinations/appsflyer/#getting-started) to connect to AppsFlyer
+* Implement [the Segment Wrapper SDK](/docs/segment-integration#how-does-the-sdk-wrapper-work) in your app:
+  * [Native iOS](https://github.com/segment-integrations/analytics-swift-appsflyer)
+  * [Native Android](https://github.com/segment-integrations/analytics-kotlin-appsflyer)
 
 </Accordion>
 
@@ -50,6 +49,8 @@ You only need to add the Segment SDK wrapper. When you add the Segment SDK wrapp
 
 </Accordion>
 
+<div id="how-does-the-sdk-wrapper-work" />
+
 <Accordion title="How does the SDK wrapper work?">
 
 The Segment SDK wrapper connects Segment SDK and the AppsFlyer SDK.
@@ -58,11 +59,11 @@ When you use the Segment SDK wrapper to call Segment's methods for recording ins
 
 This saves you time and effort and requires less coding.
 
-> 🚧 Warning
+> 📘 **Warning**
 >
-> **DO NOT USE** methods from both the Segment SDK wrapper and the AppsFlyer SDK. Doing so could lead to errors and data discrepancies.
+> Warning - **DO NOT USE** methods from both the Segment SDK wrapper and the AppsFlyer SDK. Doing so could lead to errors and data discrepancies.
 >
-> **Use only methods from the Segment SDK wrapper.**
+> **Use only methods from the Segment SDK wrapper.**
 
 </Accordion>
 
@@ -72,12 +73,14 @@ No, there is no change in functionality. All functions in the AppsFlyer SDK are 
 
 </Accordion>
 
+<div id="i-dont-see-inapp-event-data-in-the-appsflyer-dashboard" />
+
 <Accordion title="I don't see in-app event data in the AppsFlyer dashboard">
 
-- Make sure to follow the instructions for implementing the track method in Segment SDK wrapper:
-  - [Android](https://github.com/AppsFlyerSDK/AppsFlyer-Segment-Integration#adding_events)
-  - [iOS](https://github.com/AppsFlyerSDK/segment-appsflyer-ios/blob/master/examples/SwiftPodsSample/SwiftPodsSample/ViewController.swift)
-- Make sure to [specify your dev key](https://segment.com/docs/destinations/appsflyer/#getting-started) when integrating AppsFlyer in Segment's dashboard.
+* Make sure to follow the instructions for implementing the track method in Segment SDK wrapper:
+  * [Android](https://github.com/AppsFlyerSDK/AppsFlyer-Segment-Integration#adding_events)
+  * [iOS](https://github.com/AppsFlyerSDK/segment-appsflyer-ios/blob/master/examples/SwiftPodsSample/SwiftPodsSample/ViewController.swift)
+* Make sure to [specify your dev key](https://segment.com/docs/destinations/appsflyer/#getting-started) when integrating AppsFlyer in Segment's dashboard.
 
 </Accordion>
 
@@ -91,7 +94,7 @@ Make sure that to only use the Segment SDK Wrapper Do not combine the Segment SD
 
 <Accordion title="I'm getting a validation error when testing events in Segment">
 
-When you test events using the _**Event Tester**_ in the _**Destination**_ page, you might get an error: _**Validation Error AppsFlyer Device ID ('integrations.AppsFlyer.appsFlyerId') is required to send server to server events**_.
+When you test events using the ***Event Tester*** in the ***Destination*** page, you might get an error: ***Validation Error AppsFlyer Device ID ('integrations.AppsFlyer.appsFlyerId') is required to send server to server events***.
 
 This error doesn't mean that there is an issue with the integration between Segment and AppsFlyer. The Event Tester allows you to test sending server-to-server from Segment to AppsFlyer. Any event that is sent using server-to-server requires the AppsFlyerID which is why the event tester throws the error.
 

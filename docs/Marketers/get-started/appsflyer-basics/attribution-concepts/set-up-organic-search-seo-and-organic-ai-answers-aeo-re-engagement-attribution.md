@@ -24,13 +24,13 @@ x-zendesk:
 ---
 ## Overview
 
-Organic search (SEO) and Organic AI answers (AEO) re-engagement attribution is an attribution solution that allows AppsFlyer customers to attribute re-engagements (meaning mobile app opens of users who already have your app installed) to various organic search engines and AI answer engines.
+Organic search (SEO) and Organic AI answers (AEO re-engagement attribution is an attribution solution that allows AppsFlyer customers to attribute re-engagements (meaning mobile app opens of users who already have your app installed) to various organic search engines and AI answer engines.
 
 Having access to this unique data is very useful to SEO (search engine optimization) and AEO (answer engine optimization) teams, and provides invaluable feedback on their SEO and AEO efforts.
 
 ### Flow
 
-<Image src="https://files.readme.io/4b33060cfa30a4e2786c4a3a213ca41223ae276d63c97ab7c2cb5a997a4b010c-16540659217809.png" alt="Diagram showing the organic search attribution flow, from a user clicking a search result to the app opening or the user landing on a web page" />
+![Diagram showing the organic search attribution flow, from a user clicking a search result to the app opening or the user landing on a web page](https://files.readme.io/4b33060cfa30a4e2786c4a3a213ca41223ae276d63c97ab7c2cb5a997a4b010c-16540659217809.png)
 
 The organic search attribution flow works as follows:
 
@@ -43,70 +43,74 @@ The organic search attribution flow works as follows:
 
 **Prerequisites**:
 
-- AppsFlyer Android SDK V6.12.1
-- AppsFlyer iOS SDK V6.12.1
+* AppsFlyer Android SDK V6.12.1
+* AppsFlyer iOS SDK V6.12.1
 
 **To set up organic search attribution**:
 
 1. Tell your developers to enable app opening by following the instructions for [Android App Links](https://dev.appsflyer.com/hc/docs/dl_android_init_setup#app-opening-methods) and [iOS Universal Links](https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#app-opening-methods) (using the app's top-level domain).
-2. In AppsFlyer, from the side menu, select **Settings** \> [App Settings](/docs/app-settings), and turn on:
-   - **SEO (organic search) and AEO mobile app re-engagement attribution.**
-   - **Re-engagement attribution**.
+2. In AppsFlyer, from the side menu, select **Settings** > [App Settings](/docs/app-settings), and turn on:
+   * **SEO (organic search) and AEO mobile app re-engagement attribution.**
+   * **Re-engagement attribution**.
 
-> 🚧 A note for your developer
->
-> performOnDeepLinking forcefully consumes and resolves the deep linking URL when invoked. This will prevent the SEO attribution feature from functioning properly and will result in attribution not being reported to the correct SEO media source.
+**A note for your developer**
+
+performOnDeepLinking forcefully consumes and resolves the deep linking URL when invoked. This will prevent the SEO attribution feature from functioning properly and will result in attribution not being reported to the correct SEO media source.
 
 ## Data availability
 
 Data is available as follows:
 
-- In aggregate data in dashboards and reports, the `media_source` field indicates which search engine the user arrived from. Example: `google_organic_seo`.
-- In raw data reports:
-  - `media_source` field indicates which search engine the user arrived from. Example: `google_organic_seo`.
-  - `http_referrer` field includes the base URL of the search results page, from which the user was sent to the app or mobile landing page.
-  - `channel` field has value `seo` for organic search engine traffic, or `aeo` for AI answer engine traffic.
+* In aggregate data in dashboards and reports, the `media_source` field indicates which search engine the user arrived from. Example: `google_organic_seo`.
+* In raw data reports:
+  * `media_source` field indicates which search engine the user arrived from. Example: `google_organic_seo`.
+  * `http_referrer` field includes the base URL of the search results page, from which the user was sent to the app or mobile landing page.
+  * `channel` field has value `seo` for organic search engine traffic, or `aeo` for AI answer engine traffic.
 
 ## Additional information
 
-### List of supported search engines
+<Accordion title="List of supported search engines">
 
 Organic search attribution supports the following search engines:
 
-- Google
-- Bing
-- Yahoo
-- Ask
-- DuckDuckGo
-- Yandex
-- Naver
-- Daum
-- Baidu
-- Ecosia
-- Coccoc
-- Sogou
-- Yahoo Japan
+* Google
+* Bing
+* Yahoo
+* Ask
+* DuckDuckGo
+* Yandex
+* Naver
+* Daum
+* Baidu
+* Ecosia
+* Coccoc
+* Sogou
+* Yahoo Japan
 
 For other search engines, use the legacy organic search attribution solution (requires developer input).
 
-In dashboards and data reports, search engines display as `<search engine>_organic_seo`. For example: `google_organic_seo`.
+In dashboards and data reports, search engines display as `<search engine>`\_organic\_seo. For example: google\_organic\_seo.
 
-### List of supported AI answer engines
+</Accordion>
+
+<Accordion title="List of supported AI answer engines">
 
 Organic search attribution also supports the following AI answer engines:
 
-- ChatGPT
-- Claude
-- Perplexity
-- Manus
-- Copilot
-- Gemini
-- Grok
-- Deepseek
+* ChatGPT
+* Claude
+* Perplexity
+* Manus
+* Copilot
+* Gemini
+* Grok
+* Deepseek
 
-In dashboards and data reports, AI answer engines display as `<AI engine>_organic_aeo`. For example: `chatgpt_organic_aeo`.
+In dashboards and data reports, AI answer engines display as `<AI engine>`\_organic\_aeo. For example: chatgpt\_organic\_aeo.
 
-### FAQ
+</Accordion>
+
+<Accordion title="FAQ">
 
 <Accordion title="Does organic SEO attribution incur an additional fee?">
 
@@ -144,18 +148,22 @@ Yes, you can see from which page users who installed your app arrived at your we
 
 Smart Script does this by:
 
-- Collecting the page's URL domain, referred to as the web referrer
-- Creating a relevant `pid` (later displayed as the media source) based on the user's specific origin
-- Mapping it to a parameter key of your choosing, such as `af_sub1`, in the outgoing URL
+* Collecting the page's URL domain, referred to as the web referrer
+* Creating a relevant `pid` (later displayed as the media source) based on the user's specific origin
+* Mapping it to a parameter key of your choosing, such as `af_sub1`, in the outgoing URL
 
 To learn how to set up Smart Script to collect the web referrer, see [OneLink Smart Script V2 setup guide](/docs/set-up-smart-script-to-convert-web-visitors#h_01M1BK4M22YAQ6YX4RZXRKZF7C).
 
 </Accordion>
 
-### Traits and limitations
+</Accordion>
+
+<Accordion title="Traits and limitations">
 
 | Trait | Description |
 | --- | --- |
-| Browsers | Organic search attribution isn't supported by:<br />- Firefox on Android<br />- Any browser except for Safari on iOS. |
+| Browsers | Organic search attribution isn't supported by:<ul><li>Firefox on Android</li><li>Any browser except for Safari on iOS.</li></ul> |
 | SwiftUI apps (iOS) | Organic search attribution is not supported for iOS apps built with SwiftUI. |
-| Reengagement window | Organic search has a fixed reengagement window of 30 days. The window size cannot be modified. For more information, see [Retargeting attribution guide](/docs/retargeting-attribution-guide#inclusion-windows). |
+| Reengagement window | Organic search has a fixed reengagement window of 30 days. The window size cannot be modified. For more information, see [Retargeting attribution guide](/docs/retargeting-attribution-guide#inclusion-windows). |
+
+</Accordion>

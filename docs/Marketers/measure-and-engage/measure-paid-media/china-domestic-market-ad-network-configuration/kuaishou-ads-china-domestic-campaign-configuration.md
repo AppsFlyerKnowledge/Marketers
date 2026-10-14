@@ -38,7 +38,7 @@ x-zendesk:
 
 Kuaishou's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
-## Integration tab
+<Accordion title="Integration tab">
 
 ### Activate Partner
 
@@ -65,22 +65,30 @@ In this section, you can map your AppsFlyer events with Kuaishou via postbacks.
 | **Partner Event Identifier** | The unique name or ID of each event as defined on iQIYI Ads side.  <br />Obtain the corresponding Event ID from iQIYI Ads and set in the text field. |
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
 [Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
 
-**To generate an attribution link,**follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant Kuaishou, whether the partner acts as an ad network, an agency, or even both. Note that even if attribution is disabled for Kuaishou, the permissions tab is active and you can grant control to Kuaishou.
 
@@ -96,3 +104,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+
+</Accordion>

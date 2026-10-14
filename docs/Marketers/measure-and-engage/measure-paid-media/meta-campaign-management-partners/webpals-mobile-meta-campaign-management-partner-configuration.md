@@ -22,41 +22,29 @@ x-zendesk:
   created_at: '2016-12-26T08:34:10Z'
   edited_at: '2026-06-16T09:34:16Z'
 ---
-<Cards>
-  <Card title="Setting up Webpals mobile" href="#setting-up-webpals-mobile" icon="fa-solid fa-sliders" />
-  <Card title="Configuring on Webpals mobile" href="#configuring-on-webpals-mobile" icon="fa-solid fa-puzzle-piece" />
-</Cards>
-
 ## Setting up Webpals mobile
 
-> 📘 Prerequisite
->
-> An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 
 **To set up a new integration:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
-
-( **To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.
-
-> ❗️ Important note
->
-> The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   **Important note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below.
 
 ### In-app events
 
-1. To send in-app event postbacks to Webpals mobile—Meta campaign management partner, enter **Facebook pixel\_id** under _**In-App Events Settings**_.
+1. To send in-app event postbacks to Webpals mobile—Meta campaign management partner, enter **Facebook pixel\_id**under ***In-App Events Settings***.
 2. Turn on **In-app event postbacks**.
 3. Set the configuration according to the guidelines [here](/docs/meta-ads-in-app-event-mapping#predefined-event-mapping).
 4. Click **Save**.
 
-<Image src="https://files.readme.io/fdf34ada3d2b6dc645b07d0c1064020011c83baa863191299448e514dfe88e0a-14238447553297.png" alt="meta_campaign_management_partner_settings_2.png" />
+![meta_campaign_management_partner_settings_2.png](https://files.readme.io/fdf34ada3d2b6dc645b07d0c1064020011c83baa863191299448e514dfe88e0a-14238447553297.png)
 
 ## Configuring on Webpals mobile
 
-When you configure your campaigns on Webpals mobile the campaign name must begin with " **webpalsmobile\_**".
+When you configure your campaigns on Webpals mobile the campaign name must begin with "**webpalsmobile\_**".

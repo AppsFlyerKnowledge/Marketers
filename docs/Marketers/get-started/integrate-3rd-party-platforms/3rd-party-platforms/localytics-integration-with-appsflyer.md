@@ -26,7 +26,6 @@ x-zendesk:
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
-
 ## Setting up Localytics
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -45,7 +44,7 @@ The Localytics configuration window includes 4 tabs: **Integration, Attribution 
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
 
@@ -91,21 +90,31 @@ Once you have completed the configuration, AppsFlyer sends the following data to
 
 Click **Save.**
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Attribution Links are not available for Localytics.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions are not available for Localytics.
+
+</Accordion>
 
 ## Viewing the attribution data in the Localytics console
 

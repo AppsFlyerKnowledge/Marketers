@@ -26,7 +26,9 @@ Data Collaboration Platform (DCP) measurement reports provide top-level metrics 
 
 Reports are sent directly to your connected cloud storage or data warehouse. You can receive reports in either a predefined format or customize them to include the specific metrics and dimensions you need.
 
-## What are dimensions and metrics?
+<div id="what-are-dimensions-and-metrics" />
+
+<Accordion title="What are dimensions and metrics?">
 
 The collaboration measurement report is an aggregated report that summarizes data by grouping and combining individual records. It provides high-level insights rather than raw, user-level data.
 
@@ -55,6 +57,8 @@ Dimensions and metrics can be either basic fields or calculated fields.
 * **Basic fields:** Basic fields contain raw data from sources or in-app events.
 * **Calculated fields:** Calculated fields use basic fields to compute values using defined functions.
 
+</Accordion>
+
 ## Create a predefined report
 
 To generate a predefined report, follow these steps:
@@ -68,7 +72,7 @@ To generate a predefined report, follow these steps:
 
 To create a custom report, follow these steps:
 
-### 1. Open the New report page
+<Accordion title="1. Open the New report page">
 
 1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
 2. On the **Data Collaboration Platform** page, select the relevant collaboration.
@@ -76,11 +80,15 @@ To create a custom report, follow these steps:
 4. In the dialog that appears click ![](https://files.readme.io/317ded6d0dbe6b0acfee8d3b8c7898dbab1c9b7ae621802fa867f2a6069f5d79-34061156893457.png) **Customize**.
 5. On the **New report** page, perform the listed steps.
 
-### 2. Set the report type
+</Accordion>
+
+<Accordion title="2. Set the report type">
 
 Under the **Report type** step, select ![](https://files.readme.io/c94890451d831a5a3f1f12b6f42c1c86de1453c175c40cc450e915f6f1f128ad-34061156898449.png)  **Commerce media measurement,** then, click **Next.**
 
-### 3. Set the report scope
+</Accordion>
+
+<Accordion title="3. Set the report scope">
 
 Under the **Filters and data sources** step:
 
@@ -100,7 +108,9 @@ Under the **Filters and data sources** step:
 3. In the **Timeframe** slider, set the report’s span in days (1-180). Only attributed conversion events occurring within the selected span will appear in the report. The span is calculated backward from the report’s day.
 4. Click **Next**.
 
-### 4. Set the report dimensions and metrics
+</Accordion>
+
+<Accordion title="4. Set the report dimensions and metrics">
 
 If you want to customize the report you can select your report [dimensions and metrics](#what-are-dimensions-and-metrics). For a comprehensive list of the report fields see [the report scheme](#report-scheme) in this article.
 
@@ -117,6 +127,8 @@ To set the report dimensions and metrics, follow these steps:
    * **Count distinct**: The metric value is the number of unique values for a given field across the events grouped in the report record. For example, If the selected metric is count-distinct of `sku` and a grouped record includes 10 events containing 4 different SKUs, the metric value will be **4**.
 5. To change the display name of the field, hover over the field and click **Edit display name.**
 
+<Accordion title="">
+
 #### Create calculated field
 
 Calculated fields contain values calculated from basic values using a specified function.
@@ -130,7 +142,6 @@ To create or edit a calculated field perform the following:
    1. In the **Field** box enter the name of the field.
    2. In the **Set function** list, choose the function used to calculate the new value.
 3. Set the function according to the table below:
-   
 
 | **Function** | **Description** | **Example Calculation** | **Example Description** |
 | --- | --- | --- | --- |
@@ -147,9 +158,11 @@ To create or edit a calculated field perform the following:
 | `SUBSTRING` | Substring of a string from index `start` to `end` | `SUBSTRING(Campaign_ID, 0, 5)` | Extracts the first 5 characters of the campaign ID. |
 | `SUBTRACT` | Subtraction of two numbers | `Budget_Allocated - Budget_Spent` | Calculates the remaining budget for the campaign. |
 
+</Accordion>
 
+</Accordion>
 
-### 5. Manage dimension priority
+<Accordion title="5. Manage dimension priority">
 
 Dimension groups with very few user-level events may conflict with data privacy regulations.
 
@@ -170,7 +183,9 @@ By default, dimensions are removed in reverse order of their position in the **R
 4. Click **Next** to save your changes.
    * The **Report dimensions** list on the main screen remains in its original order, but the revised order has been saved. (Click again on the **Manage dimension priority** button to review or edit your selection.)
 
-### 6. Set the report schedule and destination
+</Accordion>
+
+<Accordion title="6. Set the report schedule and destination">
 
 DCP delivers reports to your selected cloud services using [AppsFlyer Data Locker](/docs/data-locker-for-marketers). Therefore, specifying the report destination involves selecting or creating a Data Locker connection.
 
@@ -181,22 +196,22 @@ DCP delivers reports to your selected cloud services using [AppsFlyer Data Lock
 3. Under the **Destination** section, select from the list of Data Locker connections available in your AppsFlyer account.
    * If there are no connections defined in your account:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-outbound) to create the connection.
+     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-1) to create the connection.
    * If you have existing connections but want to use a new one, click **+ New connection in Data Locker**:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-outbound) to create the connection.
+     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-1) to create the connection.
      * After creating the connection, return to the DCP tab in your browser and select the newly created connection from the list of Data Locker connections.
 4. To receive report status notifications via API, turn on **Report status notifications,** and in the API endpoint box, enter your API URL.
 5. Click **Save** to save the report.
-6. The new report is now displayed in the **Reports** tab**.**
+6. The new report is now displayed in the **Reports** tab.
+
+</Accordion>
 
 ## Report scheme
 
 The report is comprised of the following dimensions and metrics categorized as calculated fields and attribution fields:
 
-### Calculated fields
-
-
+<Accordion title="Calculated fields">
 
 | **Field** | **Description** |
 | --- | --- |
@@ -207,11 +222,9 @@ The report is comprised of the following dimensions and metrics categorized as c
 | `total_revenue` | Total revenue generated across all events. |
 |  |  |
 
+</Accordion>
 
-
-### Attribution fields
-
-
+<Accordion title="Attribution fields">
 
 | **Field** | **Description** |
 | --- | --- |
@@ -242,13 +255,13 @@ The report is comprised of the following dimensions and metrics categorized as c
 | `sku_revenue` | Revenue associated with a specific SKU. |
 | `state` | User’s state based on IP location. |
 
+</Accordion>
 
-
-### Scheme fields
-
-
+<Accordion title="Scheme fields">
 
 | **Field** | **Description** | **Onsite Availability** | **Offsite availability** |
 | --- | --- | --- | --- |
 | conversions | Number or conversions | TRUE | FALSE |
 | Count\_AFID | Total number of unique users | TRUE | TRUE |
+
+</Accordion>

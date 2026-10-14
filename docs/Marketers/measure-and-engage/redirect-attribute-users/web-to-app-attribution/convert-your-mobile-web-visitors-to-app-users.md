@@ -30,7 +30,7 @@ x-zendesk:
 
 Using web-to-app campaigns helps you:
 
-* Convert mobile web visitors into app users. [See also web-assisted installs.](/docs/convert-your-mobile-web-visitors-to-app-users#webassisted-installs)
+* Convert mobile web visitors into app users. [See also web-assisted installs.](/docs/convert-your-mobile-web-visitors-to-app-users#web-assisted-installs)
 * Use web or landing pages to increase your users’ understanding of your product/service before they download the app.
 * Find your best- and least- converting web/landing pages.
 * Build more specific offerings to retarget your mobile web users, who are also your app users.
@@ -63,19 +63,15 @@ The following table compares the two solutions so that you can choose and implem
 
 #### Smart Banner vs OneLink Smart Script
 
-
-
 | Characteristic | Smart Banners | OneLink Smart Script |
 | --- | --- | --- |
-| Media sources supported | All media sources supported:<br /><br />* Incoming links with pid or UTM params (including SRNs)<br />* Organic visitors | All media sources supported:<br /><br />* Incoming links (including SRNs)<br />* Organic visitors |
+| Media sources supported | All media sources supported:<ul><li>Incoming links with pid or UTM params (including SRNs)</li><li>Organic visitors</li></ul> | All media sources supported:<ul><li>Incoming links (including SRNs)</li><li>Organic visitors</li></ul> |
 | Change attribution link parameters | Fast change in AppsFlyer dashboard/wizard access. | Requires developer implementation in the script, but is totally flexible. |
 | Desktop users | Not supported | Supported |
 | Marketer setup | Uses wizard to set up Smart Banners. | Decides parameters and values to be set on the incoming and outgoing URLs (default values are supplied). |
-| Developer setup | * Integrates web SDK.<br />* Alternatively, can be [implemented by the marketer](/docs/smart-banners-website-code-implementation-for-marketers). | * [Implements the script](https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator) that creates the outgoing URL.<br />* Alternatively, can be implemented by the marketer via a [tag manager](/docs/set-up-smart-script-to-convert-web-visitors#set-up-onelink-smart-script). |
+| Developer setup | <ul><li>Integrates web SDK.</li><li>Alternatively, can be [implemented by the marketer](/docs/smart-banners-website-code-implementation-for-marketers).</li></ul> | <ul><li>[Implements the script](https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator) that creates the outgoing URL.</li><li>Alternatively, can be implemented by the marketer via a [tag manager](/docs/set-up-smart-script-to-convert-web-visitors#set-up-onelink-smart-script).</li></ul> |
 | Ongoing campaign setup | For click ad networks, set up web campaign-to-app link. | Follow the instructions per media source type. |
 | Availability | Available with a paid subscription plan. | Available with a paid subscription plan. |
-
-
 
 **Note:** Smart Banners and OneLink Smart Script are available only with eligible paid [subscription plans](/docs/account-management-plans-payments-and-billing#appsflyer-plans). Feature access depends on your AppsFlyer plan.
 
@@ -85,15 +81,11 @@ Web-Assisted Installs occur when users download your app, but not necessarily be
 
 #### Web-to-app solutions vs. Web-Assisted Installs
 
-
-
 | Characteristic | Mobile web-to-app solutions | Web-Assisted Installs (PBA) |
 | --- | --- | --- |
 | Purpose | Gives you tools to run campaigns designed to directly convert web visitors into app users, while attributing the media source responsible for the web visit. | See a breakdown of installs preceded by web visits. |
 | Flows | Direct flow from web to app download. | Direct, deferred, or disjointed flows. Installs can be predated by a web visit (up to 30 days). |
 | User devices | Same device | Same or cross-device |
-
-
 
 | Trait | Remarks |
 | --- | --- |

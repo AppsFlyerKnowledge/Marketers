@@ -26,7 +26,6 @@ x-zendesk:
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
-
 ## Setting up Liquid
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -41,7 +40,7 @@ x-zendesk:
    Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below.
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
 
@@ -83,18 +82,28 @@ Once this configuration is saved, AppsFlyer begins sending the following data to
 * Media Source
 * Campaign name
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Attribution Links are not available for Liquid.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions are not available for Liquid.
+
+</Accordion>

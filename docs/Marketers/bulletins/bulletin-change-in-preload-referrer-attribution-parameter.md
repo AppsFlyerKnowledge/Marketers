@@ -22,8 +22,7 @@ x-zendesk:
   created_at: '2023-11-15T10:47:47Z'
   edited_at: '2023-12-11T10:31:24Z'
 ---
-| | |
+| **What's new** | The preload referrer attribution parameter of new installs and in-app events and sessions attributed to new installs recorded after the effective date will be reported differently.<br /><br />Below are the changes to the preload referrer attribution parameter:<ul><li>**attributed\_touch\_type** will be **download** (instead of preload or click\_to\_download)<ul><li>e**ngagement\_type** will be **preload** (for preload\_rfr match type) or **click\_to\_download** (for af\_referrer match type)</li></ul></li></ul>In-app events and sessions attributed to installs before the effective date will keep the existing behavior:<ul><li>**attributed\_touch\_type** will be **preload** or **click\_to\_download**<ul><li>**engagement\_type** will be **empty**</li></ul></li></ul> |
 | --- | --- |
-| **What's new** | The preload referrer attribution parameter of new installs and in-app events and sessions attributed to new installs recorded after the effective date will be reported differently. <br />Below are the changes to the preload referrer attribution parameter:<br />- **attributed\_touch\_type** will be **download** (instead of preload or click\_to\_download)<br />- e **ngagement\_type** will be **preload** (for preload\_rfr match type) or **click\_to\_download** (for af\_referrer match type)<br />In-app events and sessions attributed to installs before the effective date will keep the existing behavior:<br />- **attributed\_touch\_type** will be **preload** or **click\_to\_download**<br />- **engagement\_type** will be **empty** |
 | **Effective date** | January 17, 2024 |
-| **What this impacts** | - Advertisers and agencies, using [AppsFlyer preload referrer attribution](/docs/set-up-appsflyer-preload-referrer-attribution)<br />- Where is it changing: raw data reports and dashboards |
+| **What this impacts** | <ul><li>Advertisers and agencies, using [AppsFlyer preload referrer attribution](/docs/set-up-appsflyer-preload-referrer-attribution)</li><li>Where is it changing: raw data reports and dashboards</li></ul> |

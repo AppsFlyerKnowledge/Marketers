@@ -26,7 +26,9 @@ x-zendesk:
 
 Follow these steps to enable AppsFlyer campaign measurement.
 
-### Step 1: Define conversion events in TTD
+<div id="step-1-define-conversion-events-in-ttd" />
+
+<Accordion title="Step 1: Define conversion events in TTD">
 
 1. On the left menu of your TTD advertiser page, click **DATA**.
 2. From the top menu, click **Add App Data**.
@@ -49,7 +51,9 @@ Follow these steps to enable AppsFlyer campaign measurement.
      * Make sure to select the correct source before clicking **CREATE APP DATA**. You can't change your conversion credit source during a campaign.
 4. Click **CREATE APP DATA**.
 
-### Step 2: Define conversion events in AppsFlyer
+</Accordion>
+
+<Accordion title="Step 2: Define conversion events in AppsFlyer">
 
 For AppsFlyer to define conversion events and enable you to send event postbacks to TTD, you must first [integrate TTD with AppsFlyer](/docs/the-trade-desk-campaign-configuration#integrating-ttd-with-appsflyer) and set up the following configurations:
 
@@ -57,7 +61,9 @@ For AppsFlyer to define conversion events and enable you to send event postbacks
 * Attribution link
 * Permissions
 
-### Step 3: Map defined conversion events from AppsFlyer
+</Accordion>
+
+<Accordion title="Step 3: Map defined conversion events from AppsFlyer">
 
 1. From the TTD left menu, click **CAMPAIGNS**.
 2. Scroll down to **Campaigns** and select a campaign from the list.
@@ -69,7 +75,9 @@ For AppsFlyer to define conversion events and enable you to send event postbacks
    * If you chose AppsFlyer in [Step 1](/docs/the-trade-desk-campaign-configuration#step-1-define-conversion-events-in-ttd), select here **None**.
 7. Click **SAVE**.
 
-### Step 4: Add click and impression trackers to campaign creatives
+</Accordion>
+
+<Accordion title="Step 4: Add click and impression trackers to campaign creatives">
 
 In this step, you'll add the click and impression trackers that were created in AppsFlyer to each of the creatives in TTD.
 
@@ -81,6 +89,8 @@ In this step, you'll add the click and impression trackers that were created in 
 6. Click **SAVE CHANGES**.
 7. Repeat this step for each of the creatives associated with the campaign.
 
+</Accordion>
+
 > 📘 **Note**
 >
 > If you've chosen for conversions to be attributed by TTD (in [Step 1](/docs/the-trade-desk-campaign-configuration#step-1-define-conversion-events-in-ttd)), you can edit the attribution windows:
@@ -91,7 +101,6 @@ In this step, you'll add the click and impression trackers that were created in 
 >    * **De-duplication Windows:** The number of conversions you can see in a certain period of time.
 >    * **Campaign Attribution Windows:** The period of time from ad exposure to the conversion.
 > 4. Click **SAVE**.
-
 
 ## Integrating TTD with AppsFlyer
 
@@ -111,7 +120,7 @@ TTD configuration window includes three active tabs: Integration, Attribution li
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
-### Integration tab
+<Accordion title="Integration tab">
 
 #### Activate partner
 
@@ -147,7 +156,6 @@ Send automatic postbacks to The Trade Desk following user installs and re-engage
 >
 > As an all-installs network, The Trade Desk prefers to receive postbacks for all new installs of your app from any source, and they recommend selecting **All media sources including organic** to send all install postbacks to The Trade Desk.
 
-
 #### In-app events settings
 
 Map AppsFlyer events with TTD via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant with target validation rules).
@@ -158,24 +166,24 @@ Map AppsFlyer events with TTD via postbacks. If postback sending is enabled, thi
 
 1. Enter the **advertiserid** and **Tracker\_ID**.
 2. Enable **In-app event postbacks**.
-3. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).
+3. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
 4. If available, select whether to send events automatically or manually. Learn more about [sending all events as they are](/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped).
 5. Click **Add event** to add an SDK or server-to-server event to the list.
 6. Complete the parameters required.
 7. [Optional] Click![conditional-iae-postbacks-icon.png](https://files.readme.io/8b8da8198a5180447eacaab4a3dd101d82149a8d7aa926e3b896847a18eb76f9-50612291007377.png) to set conditions for sending certain in-app events to TTD.  
-   Learn more about [conditional in-app event postbacks](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks).
-
-
+   Learn more about [conditional in-app event postbacks](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks).
 
 | Parameter Name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.  <br />**Tip**: Don't see the event you are looking for?<br /><br />* Make sure to activate the event on a device with a non-organic installation and recheck.<br />* Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
-| **for users from** | Select the sending option for the event:<br /><br />* **This partner only**: send postbacks only when this event is attributed to this partner.<br />* **All media sources including organic**: send postbacks for events attributed to any partner, as well as organic events. |
-| **including** | * **No data (default)**: send only the event itself without the event value.<br />* **Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).<br />* **Values without revenue**: send all the parameters **excluding** the revenue value. |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
+| **for users from** | Select the sending option for the event:<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources including organic**: send postbacks for events attributed to any partner, as well as organic events.</li></ul> |
+| **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
 
+</Accordion>
 
+<div id="h_01HH2DHQWY7X522JKKC4A45BHN" />
 
-### Attribution link tab
+<Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to TTD for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or [OneLink](/docs/onelink-guide).
 
@@ -189,8 +197,6 @@ Select which parameters you want to add to the attribution link.
 
 #### Default parameters
 
-
-
 | Name | Description | Parameter |
 | --- | --- | --- |
 | Site ID | Set your site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the subsite ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations. | af\_siteid |
@@ -199,22 +205,16 @@ Select which parameters you want to add to the attribution link.
 | Adset ID | Add your adset ID to compare the performance of all your ads per adset. | af\_adset |
 | Ad ID | Add your ad ID. | af\_ad\_id |
 
-
-
 You can add more parameters for the attribution link. Learn more about [setting up the attribution link](/docs/set-up-an-integrated-partner#attribution-link-tab) and about attribution link [structure and parameters](/docs/about-link-structure-and-parameters).
 
 #### Parameters for measuring CTV
 
 You can have CTV traffic measured with AppsFlyer by adding the following parameters and values:
 
-
-
 | Parameter | Value | Comments |
 | --- | --- | --- |
 | redirect | false |  |
 | af\_xplatform\_vt\_lookback | 1h-72h | Any value between 1-72 hours can be entered |
-
-
 
 #### Click-through attribution
 
@@ -244,15 +244,21 @@ Learn more about [view-through attribution](/docs/set-up-lookback-windows).
 
 **View-through attribution link:** Contains all the parameters you included in the attribution link setup. You can copy the link and send it to the partner to be activated when your leads click a corresponding ad.
 
-### Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost integration is not available for The Trade Desk.
 
-### Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad revenue is not available for The Trade Desk.
 
-### Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant The Trade Desk, whether they act as an ad network, agency, or even both. Note that even if attribution is disabled for The Trade Desk, the permissions tab can be active and you can grant control to The Trade Desk.
 
@@ -271,3 +277,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 * **Allow access to your Protect360 dashboard:** Only for TTD's own Protect360 data, and providing you have this feature enabled
 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+
+</Accordion>

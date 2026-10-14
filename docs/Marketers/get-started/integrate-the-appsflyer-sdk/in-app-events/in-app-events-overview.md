@@ -84,7 +84,7 @@ You can use `af_price` as a monetary parameter that is not counted as revenue (s
 
 The `af_net_revenue` parameter provides an optional, additional way to report revenue when you want to apply your own logic to the revenue amount, for example, revenue after app store fees, tax deductions, gross margin, or service fees.
 
-`af_net_revenue` **does not replace** `af_revenue`**.** Keep sending `af_revenue` as usual and add `af_net_revenue` alongside it when you want net reporting.
+`af_net_revenue` **does not replace** `af_revenue`. Keep sending `af_revenue` as usual and add `af_net_revenue` alongside it when you want net reporting.
 
 * Currency follows `af_currency` (default USD), similar to `af_revenue`.
 * Since there is no predefined SDK constant for `af_net_revenue`, you must send it as a custom parameter with the key `af_net_revenue`.
@@ -179,7 +179,7 @@ There are several ways to send in-app events to AppsFlyer:
 
 * [**AppsFlyer SDK:**](/docs/sdk-integration-overview) This is the most common way to send events. You can send in-app events that record user actions in the app using the AppsFlyer in-app events API at the SDK level.
 * [**Server-to-server (S2S) API:**](/docs/server-to-server-events-api-for-mobile-s2s-mobile) Use the server-to-server (S2S) API to send events that occur outside the mobile app, directly to AppsFlyer. For example, if you have a user who is active on both web and mobile interfaces, you can record events from both sources and attribute them to the same user in AppsFlyer. It can be either an in-app event or other events, such as website events, call-center events, or purchases in your brick-and-mortar store.
-* [**Receipt validation**](/docs/purchase-and-subscription-validation-overview)**:** This is a secure mechanism where the payment platform, for example, Apple and Google, validate that the in-app purchase took place as reported. Validating purchases is the primary tool to prevent fraudulent revenue events. It also helps you see what the real revenue is, and filters out incomplete in-app purchases.
+* [**Receipt validation**](/docs/purchase-and-subscription-validation-overview): This is a secure mechanism where the payment platform, for example, Apple and Google, validate that the in-app purchase took place as reported. Validating purchases is the primary tool to prevent fraudulent revenue events. It also helps you see what the real revenue is, and filters out incomplete in-app purchases.
 * [**Hybrid apps:**](/docs/in-app-events-for-hybrid-apps) These apps combine native views and HTML content and can also record in-app events. However, because the SDK can only send events from the native side, developers have to forward all event data to native code.
 
 ## Setting up in-app events
@@ -257,7 +257,7 @@ You can view your in-app event data in these locations:
 
 > 📘 **Note**
 >
-> In-app event parameter values are available exclusively in [raw-data in-app event reports](/docs/raw-data-reporting-overview#inapp-events). They are not displayed in the Overview, Event, or Activity dashboards, nor in Aggregate data reports.
+> In-app event parameter values are available exclusively in [raw-data in-app event reports](/docs/raw-data-reporting-overview#in-app-events). They are not displayed in the Overview, Event, or Activity dashboards, nor in Aggregate data reports.
 
 </Accordion>
 
@@ -267,9 +267,9 @@ Keep in mind the following when defining event names and parameters in the app:
 
 * For data consistency in raw-data reporting, we recommend defining and using the same in-app event names and structures across all platforms.
 * Use a minimal number of events to make it easier to compare the quality of users coming from different sources.
-* **It is important that you ensure the privacy of your users.** **Don't populate in-app event values with restricted data that can directly identify them**. **For example, email address, name, identity number, and in some locations postal code. For more information about restricted data, read the** [**services privacy policy**](https://www.appsflyer.com/legal/services-privacy-policy/)**.**
+* **It is important that you ensure the privacy of your users.** **Don't populate in-app event values with restricted data that can directly identify them**. **For example, email address, name, identity number, and in some locations postal code. For more information about restricted data, read the** [**services privacy policy**](https://www.appsflyer.com/legal/services-privacy-policy/).
 * Note that AppsFlyer includes the IP address of devices during [engagements](https://www.appsflyer.com/services-privacy-policy/#engagementinformation). In some jurisdictions or use scenarios, the IP address can be regarded as personally identifiable information (PII). We use the IP address to derive the broad geographic location (city, district level) of the device but not the specific address. If needed, you can select to [mask IP addresses](/docs/apply-ip-masking-to-user-data) so that they don't appear in raw data reports.
-* In-app events are the only source of revenue data in AppsFlyer. You can attach a specific revenue value to each event, and view it on your app's dashboard. Learn more about the [monetizing parameters](/docs/in-app-events-overview#revenue-events). ![revenue_data.png](https://files.readme.io/9ada01568583ef5eb7d39ca09b2ae9dd68afb9415859574f35c477cf46d6272c-46334666577425.png)
+* In-app events are the only source of revenue data in AppsFlyer. You can attach a specific revenue value to each event, and view it on your app's dashboard. Learn more about the [monetizing parameters](/docs/in-app-events-overview#revenue-in-in-app-events). ![revenue_data.png](https://files.readme.io/9ada01568583ef5eb7d39ca09b2ae9dd68afb9415859574f35c477cf46d6272c-46334666577425.png)
 
 </Accordion>
 
@@ -280,7 +280,7 @@ Keep in mind the following when defining event names and parameters in the app:
 * We recommend using only lower-case alpha-numeric characters (a-z and 0-9) for your in-app event names. Event names are case-sensitive, meaning that af\_purchase and af\_PURCHASE are two different events in the raw data. However, in aggregate reports and dashboards (for example, Overview or Events), only lowercase letters are permitted, and therefore, they can be displayed as a single event.
 * There is a cardinality limit of 300 unique events per day. [Learn more](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_events_limit)
 * Unique users are only counted for the first 100 events after they install the app.
-* Event names cannot begin with these characters: **"** **= + -**
+* Event names cannot begin with these characters: **" = + -**
 * Event values should not contain the **+** character, except in encoded URLs or encoded as per [ASCII](https://www.w3schools.com/tags/ref_urlencode.ASP).
 * Event names cannot contain empty spaces. You can use underlined spaces (low dashes) before or after the name of the event.
 * Event values should not exceed 2,000 characters to avoid being shortened in raw data reports. However, if the event originates from the SDK, it is recommended to keep it under 1,000 characters to make sure that the payload is not truncated when sent in the HTTP request.
@@ -295,9 +295,9 @@ The following section includes various FAQ about in-app events.
 
 <Accordion title="How do I use the revenue parameter?">
 
-You can send revenue values with any parameter name and event. However, to register the revenue (including [negative revenue](/docs/in-app-events-overview#revenue-events)) in the AppsFlyer raw and aggregated data, you must use the `af_revenue` parameter. Always use it with in-app events that represent actual revenue generation in your business logic.
+You can send revenue values with any parameter name and event. However, to register the revenue (including [negative revenue](/docs/in-app-events-overview#revenue-in-in-app-events)) in the AppsFlyer raw and aggregated data, you must use the `af_revenue` parameter. Always use it with in-app events that represent actual revenue generation in your business logic.
 
-`af_currency` represents the currency that is stated in `af_revenue` (or `af_price`). If `af_currency` is missing from the event's parameters, AppsFlyer sends it with the default value "USD". For more information about the `af_revenue` parameter, see the [Revenue Attribution guide](/docs/in-app-events-overview#revenue-events).
+`af_currency` represents the currency that is stated in `af_revenue` (or `af_price`). If `af_currency` is missing from the event's parameters, AppsFlyer sends it with the default value "USD". For more information about the `af_revenue` parameter, see the [Revenue Attribution guide](/docs/in-app-events-overview#revenue-in-in-app-events).
 
 If you also want to report revenue with your own logic applied, for example, after fees and taxes, send `af_net_revenue` as a custom parameter alongside `af_revenue`. `af_net_revenue` does not replace `af_revenue`. For more information, see [Net revenue](#net-revenue).
 

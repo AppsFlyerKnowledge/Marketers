@@ -34,10 +34,10 @@ The AppsFlyer platform supports SSO verification using the SAML2.0 protocol. By 
 
 AppsFlyer provides an encryption certificate to encrypt data and sign the SSO request. You can choose which certificate to use:
 
-- **AppsFlyer-signed certificate:** An AppsFlyer certificate created from the [AppsFlyer metadata URL](https://hq1.appsflyer.com/auth/sso-metadata)
-- **CA-signed certificate:** An AppsFlyer certificate **signed by Amazon**.
+* **AppsFlyer-signed certificate:** An AppsFlyer certificate created from the [AppsFlyer metadata URL](https://hq1.appsflyer.com/auth/sso-metadata)
+* **CA-signed certificate:** An AppsFlyer certificate **signed by Amazon**.
 
-> 📘 Note
+> 📘 **Note**
 >
 > AppsFlyer does not support negative serial numbers in the certificate.
 
@@ -47,8 +47,8 @@ AppsFlyer provides an encryption certificate to encrypt data and sign the SSO re
 
 Only one security login method can be used at a time, either SSO or 2FA.
 
-- **To activate the 2FA method when SSO is active:** First deactivate SSO, then activate 2FA
-- **To activate the SSO method when 2FA is active:** First deactivate 2FA, then activate SSO
+* **To activate the 2FA method when SSO is active:** First deactivate SSO, then activate 2FA
+* **To activate the SSO method when 2FA is active:** First deactivate 2FA, then activate SSO
 
 </Accordion>
 
@@ -68,7 +68,7 @@ A test environment isn’t required. Follow the steps in Step 3 to test the SSO 
 
 AppsFlyer will alert you via the platform when your AppsFlyer SSO certificate is about to expire. Follow these steps to implement the new AppsFlyer certificate:
 
-1. [Create a new certificate file with the updated encryption key](/docs/sso-authentication-overview-and-faq#how-to-create-the-appsflyer-certificate-file).
+1. [Create a new certificate file with the updated encryption key](#how-to-create-the-appsflyer-certificate-file).
 2. Go to your IdP and implement the new AppsFlyer certificate.
 3. After implementation, return to the **Single sign-on (SSO)** section, click **Confirm certificate implementation**, and confirm you've updated the latest AppsFlyer certificate.
 
@@ -78,7 +78,7 @@ AppsFlyer will alert you via the platform when your AppsFlyer SSO certificate is
 
 Once the **Force SSO login** option is selected and the configuration is saved, this option becomes disabled. To revert and have **Force SSO login** enabled, you'll need to re-configure [step 2](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer) of the SSO process from the beginning.
 
-> 📘 Note
+> 📘 **Note**
 >
 > Keeping **Force SSO login** selected is the recommended method for enforcing a more secure login. It means users trying to log in are authenticated by the IdP and can't log in with their username and password.
 

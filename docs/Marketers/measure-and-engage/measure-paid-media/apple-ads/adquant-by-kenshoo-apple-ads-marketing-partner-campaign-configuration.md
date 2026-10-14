@@ -47,7 +47,7 @@ Both advertisers and agencies can enable Attribution for Apple Ads.
    ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
 3. **In AppsFlyer, configure Adquant:**
    1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations.**
-   2. Search for Adquant by Kenshoo Apple Ads marketing partner***.***  
+   2. Search for Adquant by Kenshoo Apple Ads marketing partner.  
       The list of marketing partners is displayed.
    3. Select Adquant by Kenshoo Apple Ads marketing partner.
    4. Turn on **Activate Partner**.
@@ -73,9 +73,9 @@ The displayed postbacks are sent automatically when the partner is activated.
 
 | Parameter name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.  <br />**Tip**: Don't see the event you're looking for?<br /><br />* Make sure to activate the event on a device with a non-organic installation, and recheck.<br />* Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. [Possible mapping configurations](/docs/in-app-event-postback-configuration#mapping-methods) are:<br /><br />* **Text field:** Get the corresponding event ID from the partner.<br />* **Drop-down box:** Select the most suitable pre-defined partner event.<br />* **As is**: Send the events as they are, without mapping the event name. |
-| **for users from** | Select the sending option for the event:<br /><br />* **This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner.<br />* **All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, when the user who performed it came from any media source. |
-| **including** | Select [which event data](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks) to share with the partner in the postback:<br /><br />* **No values & no revenue**: Send just the event itself without any parameters (values or revenue).<br />* **Values & no revenue**: Send all the parameters **excluding** the revenue value.<br />* **Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event). |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you're looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation, and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
+| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. [Possible mapping configurations](/docs/in-app-event-postback-configuration#mapping-methods) are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined partner event.</li><li>**As is**: Send the events as they are, without mapping the event name.</li></ul> |
+| **for users from** | Select the sending option for the event:<ul><li>**This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner.</li><li>**All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, when the user who performed it came from any media source.</li></ul> |
+| **including** | Select [which event data](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks) to share with the partner in the postback:<ul><li>**No values & no revenue**: Send just the event itself without any parameters (values or revenue).</li><li>**Values & no revenue**: Send all the parameters **excluding** the revenue value.</li><li>**Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li></ul> |
 
 5. Click **Save Integration**.

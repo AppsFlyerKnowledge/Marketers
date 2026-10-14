@@ -42,7 +42,6 @@ In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations**
 >
 > The Google Ads Customer ID must be entered **without** hyphens.
 
-
 6. From your **Google Ads** account, copy the Customer ID (without hyphens) from the top left-hand corner and paste it into the AppsFlyer **Ads Customer ID** parameter as shown in the following screenshots.
 
 [![](https://files.readme.io/50acdf0bc73854fd8c599cd89ffa168816cd9a0fc3b38bc794bd6f3d20807968-360002379489.png)](https://files.readme.io/50acdf0bc73854fd8c599cd89ffa168816cd9a0fc3b38bc794bd6f3d20807968-360002379489.png)

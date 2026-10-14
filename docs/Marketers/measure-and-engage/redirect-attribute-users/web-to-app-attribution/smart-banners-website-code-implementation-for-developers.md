@@ -22,9 +22,9 @@ x-zendesk:
   created_at: '2021-11-09T09:33:43Z'
   edited_at: '2023-12-18T12:29:45Z'
 ---
-> 🚧 Deprecated
+> 📘 **Note**
 >
 > The original article appearing in the URL is deprecated.
-
-- Go to the [Dev Hub](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2) to learn about smart banners website code implementation for developers
-- Go to [here](/docs/smart-banners-website-code-implementation-for-marketers) to learn about smart banners website code implementation for marketers.
+>
+> * Go to the [Dev Hub](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2) to learn about smart banners website code implementation for developers
+> * Go to [here](/docs/smart-banners-website-code-implementation-for-marketers) to learn about smart banners website code implementation for marketers.

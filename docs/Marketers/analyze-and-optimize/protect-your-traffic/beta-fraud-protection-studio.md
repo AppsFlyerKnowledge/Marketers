@@ -34,12 +34,13 @@ This status enables advertisers to detect fraud without automatically implementi
 
 > 📘 **Important!**
 >
-> Only the Admin, Marketing lead, Team manager, and Security [permissions roles](/docs/user-management#more-about-roles) are able to access the Fraud protection Studio.
-
+> Only the Admin, Marketing lead, Team manager, and Security [permissions roles](/docs/user-management#manage-roles) are able to access the Fraud protection Studio.
 
 ## How the fraud protection studio works
 
-### Key concepts
+<div id="key-concepts" />
+
+<Accordion title="Key concepts">
 
 #### FPS modes
 
@@ -68,7 +69,6 @@ FPS has two modes, **implemented** and **tagged**. Advertisers can switch betwee
 >
 > In tagged mode, all fraud detections that are tagged but remain valid are considered valid according to the client configuration, and as such, we won’t credit back to the consumption plan
 
-
 #### Where is tagged detection reflected?
 
 Tagged detections aren't reflected in fraud reports. Tagged detections are available in regular attribution reports and the Protect360 dashboard as follows:
@@ -88,9 +88,11 @@ Tagged detections aren't reflected in fraud reports. Tagged detections are avail
 * Overtime trend of “Detection Status” (2)
 * Identified fraud by “Tag type”, “Tag reason,” “Tag Sub Reason” (3)
 
+</Accordion>
+
 ## How to use fraud protection studio
 
-### General
+<Accordion title="General">
 
 FPS is a configuration page allowing you to specify when you want detections to be [implemented or tagged](/docs/beta-fraud-protection-studio#fps-modes). The platform helps define tagging requirements by providing:
 
@@ -106,11 +108,15 @@ To get started:
    * [Click flood](/docs/beta-fraud-protection-studio#click-flood-detection)
    * [New releases](/docs/beta-fraud-protection-studio#new-releases)
 
-### Click flood detection
+</Accordion>
+
+<div id="click-flood-detection" />
+
+<Accordion title="Click flood detection">
 
 FPS makes managing click flood detection simple and customizable. Allowing tagging of click flood detections on the app level (all partners) and showing tagged click flood detection data in dedicated reports.
 
-On the click flood card page you can [see and adjust the detection status](/docs/beta-fraud-protection-studio#adjust-detection-status) between implemented and tagged, and view the [current detection status](/docs/beta-fraud-protection-studio#analyze-click-flood-by-media-source) data.
+On the click flood card page you can [see and adjust the detection status](/docs/beta-fraud-protection-studio#how-to-access-click-flood) between implemented and tagged, and view the [current detection status](/docs/beta-fraud-protection-studio#analyze-click-flood-by-media-source) data.
 
 Download the Click flood report data sample
 
@@ -118,7 +124,6 @@ Download the Click flood report data sample
 >
 > * When tagged detection is selected they are reported in raw data reports, meaning, not in fraud reports.
 > * Tagging the click flood is on the app level and will prevent blocking or post-attribution implementation. Therefore, by tagging it, you are exposed to abuse on your non-organic and organic installs.
-
 
 #### How to access Click Flood
 
@@ -137,7 +142,7 @@ The click flood page is broken into two sections:
 
 #### Detection Status
 
-* [Detection status](/docs/beta-fraud-protection-studio#adjust-detection-status) - Allows you to choose the [detection](/docs/beta-fraud-protection-studio#fps-modes) mode. you can choose between **implemented** and **tagged**
+* [Detection status](/docs/beta-fraud-protection-studio#how-to-access-click-flood) - Allows you to choose the [detection](/docs/beta-fraud-protection-studio#fps-modes) mode. you can choose between **implemented** and **tagged**
 * [Current detection status](/docs/beta-fraud-protection-studio#current-detection-status) - Shows how enabling Click Flood would have affected your installs and relative events based on the last 7 days prior to last week. This section is further broken up into:
   * Current detection widget
   * Click Flood detection breakdown widget
@@ -179,7 +184,11 @@ Shows the detected click Flood installs broken down by media source.
 
 Note: for a more detailed report, click the **Export** button to download the detection metrics as a CSV file for offline analysis.
 
-### New releases
+</Accordion>
+
+<div id="new-releases" />
+
+<Accordion title="New releases">
 
 With New Releases, you can evaluate the impact of new fraud detection updates before implementation. By default, each new fraud detection package starts in tagged mode, giving you time and control to evaluate its impact.
 
@@ -188,7 +197,6 @@ Download the New Release report data sample
 > 📘 **Note**
 >
 > A detection package is one or multiple detection updates that are grouped and released together.
-
 
 #### How this works
 
@@ -226,7 +234,6 @@ Future Releases allow you to set the number of days you want future detection pa
 > * This only affects future packages. Detection packages that are currently in effect will not get delayed or changed.
 > * Selecting 0 days from the dropdown box is equivalent to selecting [Implement now](/docs/beta-fraud-protection-studio#to-implement-the-current-package-if-in-tagged-status), and overrides the the [Future Release](/docs/beta-fraud-protection-studio#how-to-set-the-tagged-mode-time-period-for-future-packages) settings for this package.
 
-
 #### How to evaluate and implement current active packages
 
 The New Current Release section allows you to see:
@@ -249,21 +256,23 @@ The New Current Release section allows you to see:
 >
 > This overrides the [Future Release](/docs/beta-fraud-protection-studio#how-to-set-the-tagged-mode-time-period-for-future-packages) settings for this package.
 
+</Accordion>
 
-### App detection evaluation
+<div id="app-detection-evaluation" />
+
+<Accordion title="App detection evaluation">
 
 The App Detection Evaluation Card allows you to change a detection’s status based on your business objectives. Decisions made here are applied at the app level and affect all of the advertiser’s partners.
 
 Tagging a detection on the App Detection Evaluation Card impacts all Protect360 logic. However, detections triggered by your defined validation rules are not affected. These detections remain in Implemented status unless you manually deactivate the corresponding validation rule.
 
-On the App detection evaluation page you can [see and adjust the detection status](/docs/beta-fraud-protection-studio#adjust-detection-status) between implemented and tagged, and view the [current detection status](/docs/beta-fraud-protection-studio#analyze-click-flood-by-media-source) data.
+On the App detection evaluation page you can [see and adjust the detection status](/docs/beta-fraud-protection-studio#how-to-access-click-flood) between implemented and tagged, and view the [current detection status](/docs/beta-fraud-protection-studio#analyze-click-flood-by-media-source) data.
 
 > 📘 **Important!**
 >
 > * When tagged detection is selected, they are reported in raw data reports, meaning not in fraud reports.
 > * Tagging the app detection evaluation is on the app level and will prevent blocking or post-attribution implementation of Protect360 logics. Therefore, by tagging it, you are exposed to abuse on your non-organic and organic installs.
 > * Any validation rule defined and activated will always remain in implemented mode. To pause the implementation of any validation rules, go to the validation rules page and deactivate it there.
-
 
 #### **How to access App detection evaluation**
 
@@ -276,7 +285,7 @@ On the App detection evaluation page you can [see and adjust the detection statu
 
 The app detection evaluation page is broken into two sections.
 
-* [Detection status](/docs/beta-fraud-protection-studio#adjust-detection-status) - Allows you to choose the [detection](/docs/beta-fraud-protection-studio#fps-modes) mode. you can choose between implemented and tagged.
+* [Detection status](/docs/beta-fraud-protection-studio#how-to-access-click-flood) - Allows you to choose the [detection](/docs/beta-fraud-protection-studio#fps-modes) mode. you can choose between implemented and tagged.
 * [Current detection status](/docs/beta-fraud-protection-studio#current-detection-status) - Shows the current detection affecting your installs and relative events based on the last 7 days prior to last week. This section is further broken up into:
   * **Protect360 logics**   
     Implemented detection mode:
@@ -286,10 +295,10 @@ The app detection evaluation page is broken into two sections.
     * **Tagged rate** - the rate represents (*the amount of logic tagged by the app detection evaluation tagging*) divided by (*the app’s total attributions*)
   * **Total installs**
   * **Total detections**
-  * **Implemented detection** - Used to assist you before making the decision to change the [detection status](/docs/beta-fraud-protection-studio#adjust-detection-status) from implementation to tagging
+  * **Implemented detection** - Used to assist you before making the decision to change the [detection status](/docs/beta-fraud-protection-studio#how-to-access-click-flood) from implementation to tagging
     * Protect360 logics - This shows how much of the detection is by Protect360 logics. When changing to tagged - this is the expected amount of detection which will be converted to tagged detection
     * Validation rules—This shows how much of the detection is based on validation rules you have defined and activated. If you change the detection mode to tagging, validation rules-based detection will remain in the implemented mode.
-  * **Tagged detections** - Used to assist before making the decision to change the [detection status](/docs/beta-fraud-protection-studio#adjust-detection-status) from tagging to implementation. You will have a reflection of all the tagging reasons to reflect the expected outcome before changing the detection status from tagged to implemented 
+  * **Tagged detections** - Used to assist before making the decision to change the [detection status](/docs/beta-fraud-protection-studio#how-to-access-click-flood) from tagging to implementation. You will have a reflection of all the tagging reasons to reflect the expected outcome before changing the detection status from tagged to implemented 
     * App level - This KPI allows you to understand how much of the tagged is due to tagging made by the app detection evaluation card. The number reflected in this KPI is the expected increase if you implement the detection status.
     * Other tagging - You can tag the detection in multiple capabilities (cards) in the fraud protection studio.
 
@@ -300,7 +309,9 @@ The detection status allows you to choose the [detection](/docs/beta-fraud-prote
 1. In the app detection evaluation page, choose the [detection mode](/docs/beta-fraud-protection-studio#fps-modes).
 2. Click the Save button at the bottom of the page.
 
-### Re-engagement hijacking detection
+</Accordion>
+
+<Accordion title="Re-engagement hijacking detection">
 
 The Re-engagement hijacking detection in Protect360 expands the standard fraud detection coverage specifically for re-engagement activities. This detection enhances your control over fraud management.
 
@@ -323,10 +334,10 @@ By default, this detection is released in [tagged mode](/docs/beta-fraud-protect
 
 The Re-engagement hijacking page is broken into two sections.
 
-* [Detection status](/docs/beta-fraud-protection-studio#adjust-detection-status) - Allows you to choose the [detection](/docs/beta-fraud-protection-studio#fps-modes) mode. You can choose between implemented and tagged
+* [Detection status](/docs/beta-fraud-protection-studio#how-to-access-click-flood) - Allows you to choose the [detection](/docs/beta-fraud-protection-studio#fps-modes) mode. You can choose between implemented and tagged
 * [Current detection status](/docs/beta-fraud-protection-studio#current-detection-status) - Shows how enabling Re-engagement hijacking would have affected your installs and relative events based on the last 14 days (excluding the current day).  
   **Note:** Since Re-engagement Hijacking Detection operates post-attribution, data from the last 7 days may be partial and continue to update retroactively.  
-    
+
   This section is further broken up into:
   * Re-engagement hijacking detection widget
     * Detections - the number of detections by the re-engagement hijacking logic alone
@@ -339,7 +350,9 @@ The Re-engagement hijacking page is broken into two sections.
 
 ![](https://files.readme.io/bab73f39f3792401dd8795a78c64d88c26d075cdb7d693a5871bba668495f8d1-35682380370321.png)
 
-### In-app based detection
+</Accordion>
+
+<Accordion title="In-app based detection">
 
 In-app based detection deterministically marks installs as fraud in post-attribution by analyzing in-app behavioral anomalies. It identifies sophisticated fraud schemes such as bots that mimic real engagement but display unusual event flows and timing patterns after install.
 
@@ -354,9 +367,9 @@ In-app based detection deterministically marks installs as fraud in post-attribu
 
 The in-app base detection page is broken into two sections.
 
-* [Detection status](/docs/beta-fraud-protection-studio#adjust-detection-status) - Allows you to choose the [detection](/docs/beta-fraud-protection-studio#fps-modes) mode. You can choose between implemented and tagged.
+* [Detection status](/docs/beta-fraud-protection-studio#how-to-access-click-flood) - Allows you to choose the [detection](/docs/beta-fraud-protection-studio#fps-modes) mode. You can choose between implemented and tagged.
 * [Current detection status](/docs/beta-fraud-protection-studio#current-detection-status) - Shows how enabling In-app Based Detection would have affected your installs based on the last 14 days (excluding the current day).   
-    
+
   Note: Since In-app based detection operates post-attribution, data from the last 7 days may be partial and continue to update retroactively.
 
 This section is further broken up into:
@@ -373,7 +386,9 @@ This section is further broken up into:
 
 ![](https://files.readme.io/63eedf0c4aa28471d4044a8896e349612fb9d8e9f06aed6b1efbaa825330d150-36947287654033.png)
 
-### Advanced Security Module data
+</Accordion>
+
+<Accordion title="Advanced Security Module data">
 
 Review Advanced Security Module detections of install candidate cyberattacks in real time, for Android apps. This helps make sure only verified traffic reaches your app.
 
@@ -400,18 +415,21 @@ Detections are shown as one of the following:
 >
 > For full setup, requirements, and detailed reporting, see [[Beta] Advanced Security Protect360 Module](/docs/beta-advanced-security-protect360-module).
 
+</Accordion>
 
 ## FAQs
 
-### Can I configure tagged detection for partners or media sources?
+<Accordion title="Can I configure tagged detection for partners or media sources?">
 
 This depends on the detection type. For example, partner tagging is unavailable for hijacking detection to prevent biased detection.
 
-### What happens when the tagging period ends?
+<Accordion title="What happens when the tagging period ends?">
 
 At the end of the evaluation period, tagged detection automatically converts to implemented mode.
 
-### Where can I see tagged installs?
+</Accordion>
+
+<Accordion title="Where can I see tagged installs?">
 
 Tagged data is available in the following reports in **Raw data reports**:
 
@@ -431,26 +449,42 @@ The following tagged report is also available in **Data Locker**:
 * Tagged in-app events
   * Real-time
 
-### Can tagged detection be adjusted for app-specific settings?
+</Accordion>
+
+<Accordion title="Can tagged detection be adjusted for app-specific settings?">
 
 Yes, click flood tagging is configurable at the app level.
 
-### Can I see tagged in-app events?
+</Accordion>
+
+<Accordion title="Can I see tagged in-app events?">
 
 Yes. In-app events that are connected to a tagged install by the same AppsFlyer ID will also be tagged.
 
-### Who can change, set up, or view FPS?
+</Accordion>
+
+<Accordion title="Who can change, set up, or view FPS?">
 
 Only the admin can change the set up of FPS. FPS is visible according to the [permissions page](/docs/manage-data-access-permissions).
 
-### Are tagged installs credited back to the consumption plan?
+</Accordion>
+
+<Accordion title="Are tagged installs credited back to the consumption plan?">
 
 No. tagged detection will not be credited back to the consumption plan.
 
-### Are tagged installs considered as fraud?
+</Accordion>
+
+<Accordion title="Are tagged installs considered as fraud?">
 
 Tagged installs are detected by Protect360. However, they are tagged per the customer configuration. Therefore, both in the Overview and in the Protect360 dashboards they will be reflected under the attributed metrics.
 
-### Can I see how many installs are tagged only by the click flood tagging?
+</Accordion>
+
+<Accordion title="Can I see how many installs are tagged only by the click flood tagging?">
 
 Yes. This data is available in the new dedicated reports on the export page and on the Protect360 Dashboard.
+
+</Accordion>
+
+</Accordion>

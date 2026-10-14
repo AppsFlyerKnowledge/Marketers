@@ -34,7 +34,7 @@ x-zendesk:
 * **Campaign optimization:**
   * The conversion value in the postback is encoded.
   * AppsFlyer enables ad networks to translate the conversion value of each postback, ensuring ad networks can optimize their campaigns based on the decoded value per app.
-* **No need for direct integration with each advertiser—**SKAN postbacks are sent only to the ad network and advertisers can consume the data using any of the following:
+* **No need for direct integration with each advertiser—** SKAN postbacks are sent only to the ad network and advertisers can consume the data using any of the following:
   * Individual integration with each ad network. A solution that is not scalable, neither for ad networks nor for advertisers.
   * A single integration with AppsFlyer. Scalable for both the advertiser and the ad network.
 * **Increase your prominence in AppsFlyer:**
@@ -74,7 +74,7 @@ Upon receipt of a SKAN postback, AppsFlyer performs the following:
 * Send decoded postbacks to the ad network.
 * Make attribution data available to advertisers via dashboards and reports.
 
-### Enrich and forward
+<Accordion title="Enrich and forward">
 
 Using this method, ad networks forward each postback received from the device to AppsFlyer.
 
@@ -98,33 +98,27 @@ Using this method, ad networks forward each postback received from the device to
 
 #### SKAN enriched postback protocol
 
-
-
 | Endpoint | `https://skadpostbacks.appsflyer.com/api/postbacks` |
 | --- | --- |
 | HTTP method | POST |
 | Accepted content types | `application/json` |
 | Return codes | 200 OK: Postback received has a valid format.<br /><br />400: Bad request: Malformed JSON, empty, JSON, missing mandatory fields. |
 
-
-
 #### SKAN enriched postback JSON parameters
-
-
 
 | Parameter | Format | Description | Source |
 | --- | --- | --- | --- |
 | version | String | SKAdNetwork version<br /><br />Example: `"version":"2.0"` | SKAN postback |
 | ad-network-id | String | Ad network ID<br /><br />Example: `"ad-network-id":" abc123defg.SKAdnetwork"` | SKAN postback |
 | ad-network-name | String | * Name of the ad network<br />* Example: `ad_network_name=your_network` | Ad network |
-| ad-network-country-code | String | * The user location (geo) as derived by the ad network.<br />* Populate using [ISO 3166 (alpha-2)](https://www.iso.org/iso-3166-country-codes.html) codes.<br />* Example: CN, ZA<br />* Ad networks often derive geo according to a given campaign's target region.<br />* AppsFlyer uses the country code to populate geo-related fields in reports and dashboards. | Ad network |
+| ad-network-country-code | String | <ul><li>The user location (geo) as derived by the ad network.</li><li>Populate using [ISO 3166 (alpha-2)](https://www.iso.org/iso-3166-country-codes.html) codes.</li><li>Example: CN, ZA</li><li>Ad networks often derive geo according to a given campaign's target region.</li><li>AppsFlyer uses the country code to populate geo-related fields in reports and dashboards.</li></ul> | Ad network |
 | campaign-id | Integer | * Only for SKAN 3 and below<br />* SKAdNetwork campaign ID<br />* Example: `"campaign-id":23` | SKAN postback |
 | transaction-id | String | SKAdNetwork postback transaction ID | SKAN postback |
 | app-id | Integer | * Target app ID as it appears in AppsFlyer. Always has the prefix id.<br />* Example:`app_id=id123456789` | SKAN postback |
 | attribution-signature | String | Attribution signature | SKAN postback |
 | redownload | Boolean | When redownload = true, it means the user downloaded the app from the app store again. | SKAN postback |
-| source-app-id | Integer | * Source App ID (publisher)<br />* For SKAN 4, available only in the first postback, for tier 3. See [Apple documentation](https://developer.apple.com/documentation/storekit/skadnetwork/receiving_postbacks_in_multiple_conversion_windows) | SKAN postback |
-| conversion-value | Integer | AppsFlyer SDK sets the conversion value according to advertiser settings.<br /><br />**Notes**!<br /><br />* iOS due to iOS privacy-preserving thresholds may not populate the parameter in the postback and the value will be null.<br />* Null and 0 have different meanings:<br />  * Null: iOS withheld the conversion value<br />  * 0: The user installed the app but didn't perform any measured actions. | SKAN postback |
+| source-app-id | Integer | <ul><li>Source App ID (publisher)</li><li>For SKAN 4, available only in the first postback, for tier 3. See [Apple documentation](https://developer.apple.com/documentation/storekit/skadnetwork/receiving_postbacks_in_multiple_conversion_windows)</li></ul> | SKAN postback |
+| conversion-value | Integer | AppsFlyer SDK sets the conversion value according to advertiser settings.<br /><br />**Notes**!<ul><li>iOS due to iOS privacy-preserving thresholds may not populate the parameter in the postback and the value will be null.</li><li>Null and 0 have different meanings:<ul><li>Null: iOS withheld the conversion value</li><li>0: The user installed the app but didn't perform any measured actions.</li></ul></li></ul> | SKAN postback |
 | ad-network-campaign-id | String | To enable a common language between ad networks, advertisers, and AppsFlyer, you must provide your campaign-id. | Ad network |
 | ad-network-campaign-name | String | Ad network campaign name associated with the ad network campaign ID. This name displays in dashboards and reports. | Ad network |
 | ad-network-adset-id | String | Ad network adset ID | Ad network |
@@ -133,17 +127,15 @@ Using this method, ad networks forward each postback received from the device to
 | ad-network-ad-id | String | Ad network ad ID | Ad network |
 | ip | String | * The IP address of the device sending the postback.<br />* iPv4 and IPv6 addresses supported.<br />* Example: `"ip":"198.51.100.1"` | Ad network |
 | timestamp | String | * Time the ad network received the SKAN postback. A 10-digit epoch UNIX timestamp. [Optional] 13-digit epoch timestamp permitted.<br />* Example: August 4, 2020, 07:25 UTC translates to `"timestamp": "1596525944"` | Ad network |
-| fidelity-type | Integer | * Differentiate between [ad presentation](https://developer.apple.com/documentation/storekit/SKAdnetwork/receiving_ad_attributions) options that affect attribution. Indicated using the values 0 and1 as follows:<br />  * View-though ads (0)<br />  * Storekit-rendered ads (1)<br />* Mandatory field starting SKAN V2.2 | SKAN postback (V2.2+) |
-| did-win | Boolean | * Used to distinguish between campaigns [contributing or attributed](https://developer.apple.com/documentation/storekit/SKAdnetwork/SKAdnetwork_release_notes/SKAdnetwork_version_3_0_release_notes) with the install.<br />* If true, the campaign is attributed for bringing the install.<br />* If false, the campaign is recognized as contributing to the install | SKAN postback (V3.0+) |
+| fidelity-type | Integer | <ul><li>Differentiate between [ad presentation](https://developer.apple.com/documentation/storekit/SKAdnetwork/receiving_ad_attributions) options that affect attribution. Indicated using the values 0 and1 as follows:<ul><li>View-though ads (0)</li><li>Storekit-rendered ads (1)</li></ul></li><li>Mandatory field starting SKAN V2.2</li></ul> | SKAN postback (V2.2+) |
+| did-win | Boolean | <ul><li>Used to distinguish between campaigns [contributing or attributed](https://developer.apple.com/documentation/storekit/SKAdnetwork/SKAdnetwork_release_notes/SKAdnetwork_version_3_0_release_notes) with the install.</li><li>If true, the campaign is attributed for bringing the install.</li><li>If false, the campaign is recognized as contributing to the install</li></ul> | SKAN postback (V3.0+) |
 | ad-network-source-app-id | String | Populate with the *publisher ID* that you associate with the app publishing the ad. This is usually the ID you allocated to the publisher, and not the ID generated by Apple. | Ad network |
 | postback-sequence-index | Integer | * Only for SKAN 4+<br />* Value represents the sequence number (SKAN window), either`0`,`1`, or`2`. | SKAN 4.0 postback (iOS 16.2) |
 | coarse-conversion-value | String | * Only for SKAN 4+<br />* Value can be`low`,`medium`, or`high`.<br />* For the first postback, only available for tier 1. For the second and third postbacks, available for tiers 1-3. See [Apple documentation](https://developer.apple.com/documentation/storekit/skadnetwork/receiving_postbacks_in_multiple_conversion_windows) | SKAN 4.0 postback (iOS 16.2) |
 | source-identifier | String | * Only for SKAN 4+<br />* Replaces `campaign-id`<br />* Value can be up to 4 digits.<br />* For the first postback, up to 4 digits are available for tiers 2-3 and 2 digits are available for tiers 0-1. For the second and third postbacks, 2 digits are available for tiers 1-3. For tier 0, there isn't a postback. See [Apple documentation](https://developer.apple.com/documentation/storekit/skadnetwork/receiving_postbacks_in_multiple_conversion_windows) | SKAN 4.0 postback (iOS 16.2) |
 | source-domain | String | * Only for SKAN 4+<br />* Value represents the source of attributable web ads. Example: `example.com`<br />* Available in web ads only, in the first postback, for tier 3. See [Apple documentation](https://developer.apple.com/documentation/storekit/skadnetwork/receiving_postbacks_in_multiple_conversion_windows) | SKAN 4.0 postback (iOS 16.2) |
-| creative | String | * Only relevant for SKAN 4+<br />* Available when you use additional digits in the source\_identifier for additional campaign granularity. | Ad network |
-| channel | String | * Only relevant for SKAN 4+<br />* Available when you use additional digits in the source\_identifier for additional campaign granularity. | Ad network |
-
-
+| creative | String | <ul><li>Only relevant for SKAN 4+</li><li>Available when you use additional digits in the source\_identifier for additional campaign granularity.</li></ul> | Ad network |
+| channel | String | <ul><li>Only relevant for SKAN 4+</li><li>Available when you use additional digits in the source\_identifier for additional campaign granularity.</li></ul> | Ad network |
 
 #### **Curl example—enriched SKAN 3 postback**
 
@@ -213,7 +205,9 @@ curl --location --request POST 'https://skadpostbacks.appsflyer.com/api/postback
   }'
 ```
 
-### Redirect
+</Accordion>
+
+<Accordion title="Redirect">
 
 ![Redirect_us-en__2_.png](https://files.readme.io/17d4a668cde784a2f823e702e04fc75a2bbbdb483e44d9d10edfad03d865bbb7-360012352758.png)
 
@@ -239,8 +233,6 @@ https://skadredirect.appsflyer.com/api/redirects?
 
 #### Query params for campaign details (not mandatory)
 
-
-
 | Query param | Description |
 | --- | --- |
 | ad-network-name | * Name of the ad network<br />* Example:`ad_network_name=your_network` |
@@ -250,14 +242,14 @@ https://skadredirect.appsflyer.com/api/redirects?
 | ad-network-adset-name | Ad set name |
 | ad-network-ad-id | Ad ID |
 | ad-network-ad-name | Ad name |
-| ad-network-country-code | * The user location (geo) derived by the ad network.<br />* Populate using [ISO 3166 (alpha-2)](https://www.iso.org/iso-3166-country-codes.html) codes.<br />* Example: CN, ZA<br />* Ad networks often derive geo according to a given campaign's target region.<br />* AppsFlyer uses the country code to populate geo-related fields in reports and dashboards. |
+| ad-network-country-code | <ul><li>The user location (geo) derived by the ad network.</li><li>Populate using [ISO 3166 (alpha-2)](https://www.iso.org/iso-3166-country-codes.html) codes.</li><li>Example: CN, ZA</li><li>Ad networks often derive geo according to a given campaign's target region.</li><li>AppsFlyer uses the country code to populate geo-related fields in reports and dashboards.</li></ul> |
 | ad-network-source-app-id | Populate with the *publisher ID* that you associate with the app publishing the ad. This is usually the ID you allocated to the publisher, and not the ID generated by Apple. |
 | ip | * The IP address of the device sending the postback.<br />* iPv4 and IPv6 addresses supported.<br />* Example:`"ip":"198.51.100.1"` |
 | timestamp | * Time the ad network received the SKAN postback. A 10-digit epoch UNIX timestamp. [Optional] 13-digit epoch timestamp permitted.<br />* Example: August 4, 2020, 07:25 UTC translates to`"timestamp": "1596525944"` |
-| creative | * Only relevant for SKAN 4+<br />* Available when you use additional digits in the source\_identifier for additional campaign granularity. |
-| channel | * Only relevant for SKAN 4+<br />* Available when you use additional digits in the source\_identifier for additional campaign granularity. |
+| creative | <ul><li>Only relevant for SKAN 4+</li><li>Available when you use additional digits in the source\_identifier for additional campaign granularity.</li></ul> |
+| channel | <ul><li>Only relevant for SKAN 4+</li><li>Available when you use additional digits in the source\_identifier for additional campaign granularity.</li></ul> |
 
-
+</Accordion>
 
 ## Receive data from AppsFlyer
 
@@ -266,22 +258,22 @@ Prior to receiving your first postback, take into consideration the following:
 * Ad networks must define the postback end-point and template (reach out to your AppsFlyer Partner Development Manager using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif), to ensure this is in place).
 * AppsFlyer sends SKAN postbacks using the same mechanism as with the existing postbacks sent to you.
 
-### Principles
+<Accordion title="Principles">
 
 * For each postback sent from the ad network to AppsFlyer, AppsFlyer sends:
   * One install postback. Redownloads are signaled by the redownload parameter.
   * Zero to several in-app event postbacks. The exact number depends on the translation of the conversion value. See [simulated postbacks.](/docs/skan-integration-guide-for-ad-networks#simulated-postbacks)
 * When you consume postbacks, the same install or event can be attributed by more than one AppsFlyer attribution solution. Use the *attribution\_source* parameter to differentiate between postback types.
 
-### Postback macros available to ad network partners
+</Accordion>
 
+<Accordion title="Postback macros available to ad network partners">
 
+<table><thead><tr><th>Postback macro (name)</th><th>Description</th><th>Format and example</th><th>Relevant to in-app events only</th></tr></thead><tbody><tr><td>site_id</td><td>The app publishing the ad (source app ID)</td><td>String: 876534</td><td> </td></tr><tr><td>install_time</td><td>Estimated by AppsFlyer based on the <em>updateConversion</em> window. Provided as a 10-digit UNIX epoch timestamp or as a human-readable timestamp</td><td><ul><li>String: 1596119460 </li><li>Translates to July 30, 2020, 14:31 UTC.</li></ul></td><td> </td></tr><tr><td>skadnetwork_ad_network_time</td><td>Time the postback was received by the ad network from the iOS device. Reported by the ad network. Provided as a 10-digit UNIX epoch timestamp or as a human-readable timestamp</td><td><ul><li>String: 1596119460 </li><li>Translates to July 30, 2020, 14:31 UTC</li></ul></td><td> </td></tr><tr><td><br/>skadnetwork_received_time</td><td>Time AppsFlyer received the postback from the ad network. Provided as a 10-digit UNIX epoch timestamp or as a human-readable timestamp</td><td><ul><li>String: 1596119460 </li><li>Translates to July 30, 2020, 14:31 UTC</li></ul></td><td> </td></tr><tr><td>event_name</td><td><p>Event name </p><ul><li>af_skadnetwork_revenue</li><li>af_login</li><li>af_skadnetwork_revenue</li><li>or as set by the advertiser </li></ul></td><td><p>String: af_skadnetwork_revenue, abc123</p></td><td>Yes</td></tr><tr><td>revenue</td><td>Revenue amount using the specified currency code</td><td>Number: 5, 20, 0.4</td><td>Yes</td></tr><tr><td>currency</td><td>Currency code being the app-specific currency set by the advertiser</td><td>String: EUR, USD, ZAR</td><td>Yes</td></tr><tr><td>attribution_source</td><td><p>The source of the attribution data:</p><p>SKAdNetwork: SKAdNetwork</p></td><td>String: SKAdNetwork</td><td> </td></tr><tr><td>app_id</td><td>App ID (advertiser app)</td><td>String: ID123456790</td><td> </td></tr><tr><td>country</td><td>Install geo (country) determined by the ad network</td><td>String: US, UK, ZA </td><td> </td></tr><tr><td>campaign</td><td>Campaign name populated using a<em>d-network-campaign-name</em> sent in the postback from the ad network</td><td>String: UA_US_23+</td><td> </td></tr><tr><td>campaign_id</td><td>Ad network Campaign ID populated using <em>ad network-campaign-id</em> sent in the postback from the ad network. <strong>Note</strong>: For SKAN 4, this value is always null.</td><td>String: 3456745</td><td> </td></tr><tr><td>redownload</td><td><p>Possible values: true, false</p><p>When redownload = true, it means the user downloaded the app from the app store again</p></td><td>Boolean: true, false</td><td> </td></tr><tr><td><p>skadnetwork_ambiguous_event</p><p>(deprecated with SKAN 4+)</p></td><td><p>Events received during the first 72-hours after an advertiser changes the SKAN settings in the dashboard. Due to the various timers employed by SKAN AppsFlyer can't map the event accurately.</p><ul><li>Not available in SKAN 4 and onwards</li></ul></td><td>Boolean: true, false</td><td> </td></tr><tr><td>skadnetwork_campaign_id</td><td>SKAN campaign ID as provided by the original SKAN postback</td><td>56, 23</td><td> </td></tr><tr><td>af_skadnetwork_nonce</td><td>A unique random identifier enabling partners to identify duplicate postbacks</td><td> </td><td> </td></tr><tr><td>event_id</td><td>Name/ID of the corresponding event in the ad network platform</td><td> </td><td>Yes</td></tr><tr><td>transaction_id</td><td><p>SKAN postback transaction ID</p><p><strong>Note</strong>: The advertiser must explicitly allow us to share the transaction_id with you. Ask the advertiser to do so in the <a href="./set-up-an-integrated-partner#integration-tab"><strong>Integration</strong></a> tab.</p></td><td> </td><td> </td></tr><tr><td>ad_network_adset_id</td><td>Added to the iOS postback by the ad network</td><td>String</td><td> </td></tr><tr><td>ad_network_adset_name</td><td>Added to the iOS postback by the ad network</td><td>String</td><td> </td></tr><tr><td>ad_network_ad_name</td><td>Added to the iOS postback by the ad network</td><td>String</td><td> </td></tr><tr><td>ad_network_ad_id</td><td>Added to the iOS postback by the ad network</td><td>String</td><td> </td></tr><tr><td>SKAN_min_event_counter</td><td>See note (1)</td><td>Integer</td><td>Yes</td></tr><tr><td>SKAN_max_event_counter</td><td>See note (1)</td><td>Integer</td><td>Yes</td></tr><tr><td>SKAN_min_time_post-install</td><td>See note (2)</td><td>Integer</td><td>Yes</td></tr><tr><td>SKAN_max_time_post-install</td><td>See note (2)</td><td>Integer</td><td>Yes</td></tr><tr><td>SKAN_min_event_revenue</td><td>See note (3)</td><td>Real number</td><td>Yes</td></tr><tr><td>SKAN_max_event_revenue</td><td>See note (3)</td><td>Real number </td><td>Yes</td></tr><tr><td>fidelity-type</td><td><p>Differentiate between <a href="https://developer.apple.com/documentation/storekit/SKAdnetwork/receiving_ad_attributions">ad presentation</a> options that affect attribution. Indicated using the values 0 and1 as follows: </p><ul><li>View-though ads (0)</li><li>Storekit-rendered ads (1)</li></ul></td><td>Integer</td><td> </td></tr><tr><td>skad_af_attribution_flag</td><td>Used to indicate if the user was attributed by AppsFlyer using the <a href="./single-source-of-truth-ssot-guide-for-ios-attribution#attribution-flag-field">Single Source of Truth mechanism</a>. </td><td>Boolean</td><td> </td></tr><tr><td>skad_postback_sequence_index</td><td><ul><li>Value represents the SKAN window, either<code>0</code>,<code>1</code>, or<code>2</code>.</li><li>For SKAN 3 the value is<code>0</code></li></ul></td><td>Integer</td><td> </td></tr><tr><td>skad_coarse_conversion_value</td><td><ul><li>Value can be<code>low</code>,<code>medium</code>, or<code>high</code>.</li><li>For SKAN 3 the value is<code>null</code>.</li></ul></td><td>String</td><td> </td></tr><tr><td>skad_source_identifier</td><td><ul><li>Value can be up to 4 digits.</li><li>For SKAN 3 the value is<code>null</code>. </li></ul></td><td>String</td><td> </td></tr><tr><td>skad_source_domain</td><td><ul><li>Value represents the source of attributable web ads.</li><li>For SKAN 3 the value is<code>null</code>.</li></ul></td><td>String</td><td> </td></tr><tr><td>ad_network_creative</td><td><ul><li>Value is based on data enrichment received from the ad network.</li><li>For SKAN 3 the value is <code>null</code>.</li></ul></td><td>String</td><td> </td></tr><tr><td>ad_network_channel</td><td><ul><li>Only relevant for SKAN 4+</li><li>Available when you use additional digits in the <span>source_identifier</span> for additional campaign granularity.</li></ul></td><td>String</td><td> </td></tr><tr><td colspan="4"><p>Notes:</p><ol><li><strong>Event occurrences</strong>: The number of event occurrences is calculated using the following formula:<br/><code>[round up (SKAN_min_event_counter+SKAN_max_event_counter) / 2]</code><br/>Note! The value must be rounded up to the nearest integer.</li></ol><ul><li>Example:<ul><li>A. If min=0 and max=1 the number of events is 1.</li><li>B. If min=0 and max =10 the number of events is 5.</li></ul></li><li><strong>Determine install time</strong>: For advertisers implementing custom conversion, AppsFlyer calculates install time as the postback arrival time - 48h - average (min_time_post_install + max_time_post_install). Ad networks don't need to make use of these macros.  </li><li><strong>Determine revenue</strong>: AppsFlyer uses these values to determine the revenue of an event by calculating the average of min and max. Ad networks don't need to make use of these macros. </li></ul></td></tr></tbody></table>
 
-<table><thead><tr><th>Postback macro (name)</th><th>Description</th><th>Format and example</th><th>Relevant to in-app events only</th></tr></thead><tbody><tr><td>site_id</td><td>The app publishing the ad (source app ID)</td><td>String: 876534</td><td> </td></tr><tr><td>install_time</td><td>Estimated by AppsFlyer based on the <em>updateConversion</em> window. Provided as a 10-digit UNIX epoch timestamp or as a human-readable timestamp</td><td><ul><li>String: 1596119460 </li><li>Translates to July 30, 2020, 14:31 UTC.</li></ul></td><td> </td></tr><tr><td>skadnetwork_ad_network_time</td><td>Time the postback was received by the ad network from the iOS device. Reported by the ad network. Provided as a 10-digit UNIX epoch timestamp or as a human-readable timestamp</td><td><ul><li>String: 1596119460 </li><li>Translates to July 30, 2020, 14:31 UTC</li></ul><p><br/><br/> </p></td><td> </td></tr><tr><td><br/>skadnetwork_received_time</td><td>Time AppsFlyer received the postback from the ad network. Provided as a 10-digit UNIX epoch timestamp or as a human-readable timestamp</td><td><p> </p><ul><li>String: 1596119460 </li><li>Translates to July 30, 2020, 14:31 UTC</li></ul></td><td> </td></tr><tr><td>event_name</td><td><p>Event name </p><ul><li>af_skadnetwork_revenue</li><li>af_login</li><li>af_skadnetwork_revenue</li><li>or as set by the advertiser </li></ul></td><td><p>String: af_skadnetwork_revenue, abc123</p><p> </p></td><td>Yes</td></tr><tr><td>revenue</td><td>Revenue amount using the specified currency code</td><td>Number: 5, 20, 0.4</td><td>Yes</td></tr><tr><td>currency</td><td>Currency code being the app-specific currency set by the advertiser</td><td>String: EUR, USD, ZAR</td><td>Yes</td></tr><tr><td>attribution_source</td><td><p>The source of the attribution data:</p><p>SKAdNetwork: SKAdNetwork</p></td><td>String: SKAdNetwork</td><td> </td></tr><tr><td>app_id</td><td>App ID (advertiser app)</td><td>String: ID123456790</td><td> </td></tr><tr><td>country</td><td>Install geo (country) determined by the ad network</td><td>String: US, UK, ZA </td><td> </td></tr><tr><td>campaign</td><td>Campaign name populated using a<em>d-network-campaign-name</em> sent in the postback from the ad network</td><td>String: UA_US_23+</td><td> </td></tr><tr><td>campaign_id</td><td>Ad network Campaign ID populated using <em>ad network-campaign-id</em> sent in the postback from the ad network. <strong>Note</strong>: For SKAN 4, this value is always null.</td><td>String: 3456745</td><td> </td></tr><tr><td>redownload</td><td><p>Possible values: true, false</p><p>When redownload = true, it means the user downloaded the app from the app store again</p></td><td>Boolean: true, false</td><td> </td></tr><tr><td><p>skadnetwork_ambiguous_event</p><p>(deprecated with SKAN 4+)</p></td><td><p>Events received during the first 72-hours after an advertiser changes the SKAN settings in the dashboard. Due to the various timers employed by SKAN AppsFlyer can't map the event accurately.</p><ul><li>Not available in SKAN 4 and onwards</li></ul></td><td>Boolean: true, false</td><td> </td></tr><tr><td>skadnetwork_campaign_id</td><td>SKAN campaign ID as provided by the original SKAN postback</td><td>56, 23</td><td> </td></tr><tr><td>af_skadnetwork_nonce</td><td>A unique random identifier enabling partners to identify duplicate postbacks</td><td> </td><td> </td></tr><tr><td>event_id</td><td>Name/ID of the corresponding event in the ad network platform</td><td> </td><td>Yes</td></tr><tr><td>transaction_id</td><td><p>SKAN postback transaction ID</p><p><strong>Note</strong>: The advertiser must explicitly allow us to share the transaction_id with you. Ask the advertiser to do so in the <a href="./set-up-an-integrated-partner#integration-tab"><strong>Integration</strong></a> tab.</p></td><td> </td><td> </td></tr><tr><td>ad_network_adset_id</td><td>Added to the iOS postback by the ad network</td><td>String</td><td> </td></tr><tr><td>ad_network_adset_name</td><td>Added to the iOS postback by the ad network</td><td>String</td><td> </td></tr><tr><td>ad_network_ad_name</td><td>Added to the iOS postback by the ad network</td><td>String</td><td> </td></tr><tr><td>ad_network_ad_id</td><td>Added to the iOS postback by the ad network</td><td>String</td><td> </td></tr><tr><td>SKAN_min_event_counter</td><td>See note (1)</td><td>Integer</td><td>Yes</td></tr><tr><td>SKAN_max_event_counter</td><td>See note (1)</td><td>Integer</td><td>Yes</td></tr><tr><td>SKAN_min_time_post-install</td><td>See note (2)</td><td>Integer</td><td>Yes</td></tr><tr><td>SKAN_max_time_post-install</td><td>See note (2)</td><td>Integer</td><td>Yes</td></tr><tr><td>SKAN_min_event_revenue</td><td>See note (3)</td><td>Real number</td><td>Yes</td></tr><tr><td>SKAN_max_event_revenue</td><td>See note (3)</td><td>Real number </td><td>Yes</td></tr><tr><td>fidelity-type</td><td><p>Differentiate between <a href="https://developer.apple.com/documentation/storekit/SKAdnetwork/receiving_ad_attributions">ad presentation</a> options that affect attribution. Indicated using the values 0 and1 as follows: </p><ul><li>View-though ads (0)</li><li>Storekit-rendered ads (1)</li></ul></td><td>Integer</td><td> </td></tr><tr><td>skad_af_attribution_flag</td><td>Used to indicate if the user was attributed by AppsFlyer using the <a href="./single-source-of-truth-ssot-guide-for-ios-attribution#attribution-flag-field">Single Source of Truth mechanism</a>. </td><td>Boolean</td><td> </td></tr><tr><td>skad_postback_sequence_index</td><td><ul><li>Value represents the SKAN window, either<code>0</code>,<code>1</code>, or<code>2</code>.</li><li>For SKAN 3 the value is<code>0</code></li></ul></td><td>Integer</td><td> </td></tr><tr><td>skad_coarse_conversion_value</td><td><ul><li>Value can be<code>low</code>,<code>medium</code>, or<code>high</code>.</li><li>For SKAN 3 the value is<code>null</code>.</li></ul></td><td>String</td><td> </td></tr><tr><td>skad_source_identifier</td><td><ul><li>Value can be up to 4 digits.</li><li>For SKAN 3 the value is<code>null</code>. </li></ul></td><td>String</td><td> </td></tr><tr><td>skad_source_domain</td><td><ul><li>Value represents the source of attributable web ads.</li><li>For SKAN 3 the value is<code>null</code>.</li></ul></td><td>String</td><td> </td></tr><tr><td>ad_network_creative</td><td><ul><li>Value is based on data enrichment received from the ad network.</li><li>For SKAN 3 the value is <code>null</code>.</li></ul></td><td>String</td><td> </td></tr><tr><td>ad_network_channel</td><td><ul><li>Only relevant for SKAN 4+</li><li>Available when you use additional digits in the <span>source_identifier</span> for additional campaign granularity.</li></ul></td><td>String</td><td> </td></tr><tr><td colspan="4"><p>Notes:</p><ol><li><strong>Event occurrences</strong>: The number of event occurrences is calculated using the following formula:<br/><code>[round up (SKAN_min_event_counter+SKAN_max_event_counter) / 2]</code><br/>Note! The value must be rounded up to the nearest integer.</li></ol><ul><li>Example:<ul><li>A. If min=0 and max=1 the number of events is 1.</li><li>B. If min=0 and max =10 the number of events is 5.</li></ul></li><li><strong>Determine install time</strong>: For advertisers implementing custom conversion, AppsFlyer calculates install time as the postback arrival time - 48h - average (min_time_post_install + max_time_post_install). Ad networks don't need to make use of these macros.  </li><li><strong>Determine revenue</strong>: AppsFlyer uses these values to determine the revenue of an event by calculating the average of min and max. Ad networks don't need to make use of these macros. </li></ul></td></tr></tbody></table>
+</Accordion>
 
-
-
-### SKAN postback examples
+<Accordion title="SKAN postback examples">
 
 **Example of an install SKAN postback sent by AppsFlyer**
 
@@ -309,6 +301,8 @@ http://YourCompanyDomain.com/event?site_id=(publisher-id)&install_time=(timestam
 &af_SKAN_nonce=(uuid)
 ```
 
+</Accordion>
+
 ## Integration testing
 
 To validate the integration with AppsFlyer, use either or both of the following methods.
@@ -328,13 +322,11 @@ To validate the integration with AppsFlyer, use either or both of the following 
 * Contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif) and request integration with simulation apps.
 * Specify IDs of the apps from the list in the [following section](/docs/skan-integration-guide-for-ad-networks#simulated-postbacks).
 
-### Real environment
+<Accordion title="Real environment">
 
 Using this method, the ad network sends AppsFlyer actual SKAN postbacks from live apps.
 
 #### Testing integration
-
-
 
 | Responsibility | Action |
 | --- | --- |
@@ -343,70 +335,62 @@ Using this method, the ad network sends AppsFlyer actual SKAN postbacks from liv
 | Ad network | Send app SKAN postbacks to AppsFlyer, using one of the methods described in this article. |
 | AppsFlyer | Send decoded postbacks to the ad network in accordance with the conversion value mapping set by the advertiser. |
 
-
-
 #### Test criteria
-
-
 
 | Responsibility | Action |
 | --- | --- |
 | Ad network | Notify AppsFlyer as to the quantity of SKAN postbacks sent during a specified period for the agreed mutual customer. |
 | AppsFlyer | Verify the count of postbacks received versus the count sent by the ad network. |
-| AppsFlyer | Share with the ad network the count of postbacks sent to the network for a given app broken down by type:<br /><br />* Install/redownload postbacks<br />* In-app postbacks.<br /><br />Note: If you use the same endpoint for probabilistic postbacks, ensure that you filter using *attribution\_source=skadnetwork* to distinguish SKAN Network postbacks from other postbacks. |
+| AppsFlyer | Share with the ad network the count of postbacks sent to the network for a given app broken down by type:<ul><li>Install/redownload postbacks</li><li>In-app postbacks.</li></ul>Note: If you use the same endpoint for probabilistic postbacks, ensure that you filter using *attribution\_source=skadnetwork* to distinguish SKAN Network postbacks from other postbacks. |
 
+</Accordion>
 
+<div id="simulated-postbacks" />
 
-### Simulated postbacks
+<Accordion title="Simulated postbacks">
 
 * Using this method, the ad network sends AppsFlyer preprepared postbacks to AppsFlyer test apps, as detailed in the table below. AppsFlyer replies with decoded postbacks to the ad network.
 * Each test app has a different conversion value mapping, as detailed in the table.
 
-
-
 | App ID | Conversion mode | Instructions |
 | --- | --- | --- |
-| id888707085 | Revenue, in $1 units<br /><br />Expected results: | 1. In the **Integration** tab, enable i**n-app events postbacks**.<br />2. Select event name *af\_SKAN\_revenue* and map to your event identifier.<br />3. Save configuration.<br />4. In a postback, send conversion value = 7.<br />5. AppsFlyer responds with:<br />   * Install postback<br />   * af\_SKAN\_revenue postback with value of $7 |
-| id888707086 | Conversion, including the in-app events:<br /><br />* af\_level\_complete<br />* af\_login<br />* af\_SKAN\_revenue<br />* af\_register<br />* af\_subscription<br />* af\_custom\_event | 1. In the **Integration** tab, enable i**n-app events postbacks**.<br />2. Select each of the in-app events listed and map it to your event identifier.<br />3. Save configuration.<br />4. In a postback, send conversion value = 63.<br />5. AppsFlyer responds with:<br />   * Install postback<br />   * af\_level\_complete postback<br />   * af\_login postback<br />   * af\_SKAN\_revenue postback<br />   * af\_register postback<br />   * af\_subscription postback<br />   * af\_custom\_event postback |
-| id888707087 | Engagement, measured using af\_skad\_revenue event | 1. In the **Integration** tab, enable i**n-app events postbacks**.<br />2. Map the event name *af\_skad\_revenue* and to your event identifier.<br />3. **Save** configuration.<br />4. In a postback, send conversion value = 3.<br />5. AppsFlyer responds with:<br />   * Install postback<br />   * 3 postbacks of af\_skad\_revenue event |
-
-
+| id888707085 | Revenue, in $1 units<br /><br />Expected results: | <ol><li>In the **Integration** tab, enable i**n-app events postbacks**.</li><li>Select event name *af\_SKAN\_revenue* and map to your event identifier.</li><li>Save configuration.</li><li>In a postback, send conversion value = 7.</li><li>AppsFlyer responds with:<ul><li>Install postback</li><li>af\_SKAN\_revenue postback with value of $7</li></ul></li></ol> |
+| id888707086 | Conversion, including the in-app events:<ul><li>af\_level\_complete</li><li>af\_login</li><li>af\_SKAN\_revenue</li><li>af\_register</li><li>af\_subscription</li><li>af\_custom\_event</li></ul> | <ol><li>In the **Integration** tab, enable i**n-app events postbacks**.</li><li>Select each of the in-app events listed and map it to your event identifier.</li><li>Save configuration.</li><li>In a postback, send conversion value = 63.</li><li>AppsFlyer responds with:<ul><li>Install postback</li><li>af\_level\_complete postback</li><li>af\_login postback</li><li>af\_SKAN\_revenue postback</li><li>af\_register postback</li><li>af\_subscription postback</li><li>af\_custom\_event postback</li></ul></li></ol> |
+| id888707087 | Engagement, measured using af\_skad\_revenue event | <ol><li>In the **Integration** tab, enable i**n-app events postbacks**.</li><li>Map the event name *af\_skad\_revenue* and to your event identifier.</li><li>**Save** configuration.</li><li>In a postback, send conversion value = 3.</li><li>AppsFlyer responds with:<ul><li>Install postback</li><li>3 postbacks of af\_skad\_revenue event</li></ul></li></ol> |
 
 #### Integration steps
-
-
 
 | Responsibility | Action |
 | --- | --- |
 | Ad network | Configure your SKAN network ID (provided by Apple) and SKAN postback template on the [postback management platform](/docs/self-serve-integration-management-for-ad-networks). For queries and assistance, contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif). |
-| Ad network | 1. [Activate the test apps](/docs/turn-on-test-app-integration-for-ad-networks).<br />2. For each app complete the instructions column in the previous table.<br />3. Send simulated postbacks, using the test apps listed in the preceding table. Considerations when sending simulated postbacks:<br />   * Set the app\_id and conversion value as listed in the preceding table.<br />   * Since Ad networks can't generate Apple compatible signatures, the simulated postbacks don't have to include the signature fields. AppsFlyer will not verify them for simulated postbacks.<br />   * Ad networks send the postback using either the POST or REDIRECT approach. |
+| Ad network | <ol><li>[Activate the test apps](/docs/turn-on-test-app-integration-for-ad-networks).</li><li>For each app complete the instructions column in the previous table.</li><li>Send simulated postbacks, using the test apps listed in the preceding table. Considerations when sending simulated postbacks:<ul><li>Set the app\_id and conversion value as listed in the preceding table.</li><li>Since Ad networks can't generate Apple compatible signatures, the simulated postbacks don't have to include the signature fields. AppsFlyer will not verify them for simulated postbacks.</li><li>Ad networks send the postback using either the POST or REDIRECT approach.</li></ul></li></ol> |
 | AppsFlyer | Responds with the decoded postbacks to the endpoint designated by the ad network during integration |
 
-
-
 #### Test criteria
-
-
 
 | Responsibility | Action |
 | --- | --- |
 | AppsFlyer | Process the postback and sends postbacks to the ad network. |
-| Ad network | * Ad network receives and decodes the translated postbacks.<br />* In-app postbacks sent by AppsFlyer match the expected flows. For example, conversion value 3 for app ID888707087, the ad network receives 3 postbacks of *af\_SKAN\_revenue* event. |
+| Ad network | <ul><li>Ad network receives and decodes the translated postbacks.</li><li>In-app postbacks sent by AppsFlyer match the expected flows. For example, conversion value 3 for app ID888707087, the ad network receives 3 postbacks of *af\_SKAN\_revenue* event.</li></ul> |
 
-
+</Accordion>
 
 ## Clarifications
 
 Clarifications relating to mandatory fields, enrichment, certification, and more.
 
-### FAQ
+<Accordion title="FAQ">
 
+| Questions and answers about postbacks |
+| --- |
+| **Are the enrichment fields mandatory?**<br /><br />For the present, we will process the postback even if it is missing one or more of the following enrichment parameters. Consider that the information is required for the following reasons:<ul><li>**Ad network campaign ID**: If we have cost integration with you then this is reported using your campaign ID.</li><li>**Ad network campaign name**: Many advertisers relate to the campaign name and not the campaign number.</li><li>**IP address**: Required for geo resolution.</li><li>**Timestamp**: Assists us to attribute the install to the correct date.</li></ul> |
+| **Can we send either our campaign ID, or our campaign name, but not both?**<br /><br />See the previous answer. Consider populating both ID and name with the same value. |
+| **We are using** ***Enrich and Forward.*** **Can we add key-value pairs that are not in the AppsFlyer specification?**<br /><br />Yes, you can. We will process the postback and disregard the extra information provided that the attribution signature is valid |
+| **Are the SKAN postback templates distinct from the existing postback templates?**<br /><br />Yes. The flow and structure differ. |
+| **Will we receive a SKAN postback and a probabilistic/deterministic modeling postback related to the same install, meaning duplicate reporting of the same install?**<br /><br />Yes. For each case, we record an install attributed to you, irrespective of method, we will send you a postback.<br /><br />Use *attribution\_source* to differentiate SKAN postbacks. |
+| **Are we required to process the postback from AppsFlyer?**<br /><br />No. Consider, that best practice is to optimize campaigns according to user-quality reported via the postback. |
+| **Are we expected to call AppsFlyer attribution links or is it sufficient to send the postback with the SKAN payload and enriched data?**<br /><br />It is sufficient to send us the SKAN payload and enriched data. |
+| **What is required for us to be certified in the AppsFlyer dashboard as a SKAN integrated partner?**<ul><li>Complete integration using one of the methods listed in this article</li><li>Send us postbacks of apps using AppsFlyer as their attribution partner</li></ul> |
+| **How does the limit of 100 SKAN campaign IDs impact me**?<br /><br />The 1-100 limit relates to the way you sign and number your campaigns in Apple. It means that at any time, you can have 100 simultaneous unique campaigns. We allow you to enrich the postback with your actual campaign name and ID. Meaning you map the SKAN campaign ID to your actual campaign IDs in use at the time the postback is received. Doing so means that the 100 ID limit does not restrict the number of campaigns that you measure in AppsFlyer provided of course that you don't have more than 100 simultaneous campaigns for a given app. |
 
-
-| Endpoint | `https://skadpostbacks.appsflyer.com/api/postbacks` |
-| --- | --- |
-| HTTP method | POST |
-| Accepted content types | `application/json` |
-| Return codes | 200 OK: Postback received has a valid format.<br /><br />400: Bad request: Malformed JSON, empty, JSON, missing mandatory fields. |
-
-0
+</Accordion>

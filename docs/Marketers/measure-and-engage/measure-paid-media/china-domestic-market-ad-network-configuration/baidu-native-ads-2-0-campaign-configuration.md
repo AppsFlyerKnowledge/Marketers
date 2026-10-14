@@ -38,7 +38,7 @@ x-zendesk:
 
 Baidu Native Ads 2.0's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
-## Integration Tab
+<Accordion title="Integration Tab">
 
 ### Activate Partner
 
@@ -71,7 +71,9 @@ In this section you can map your AppsFlyer events with Baidu Native Ads 2.0 via 
 | **Partner Event Identifier** | The unique name or ID of each event as defined on Baidu Native Ads 2.0's side.  <br />Obtain the corresponding Event ID from Baidu Native Ads 2.0 and set in the text field. |
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
-## Attribution Link Tab
+</Accordion>
+
+<Accordion title="Attribution Link Tab">
 
 In this tab, you can create the attribution links you want to send to Baidu Native Ads 2.0 for attributing Baidu Native Ads 2.0's campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
@@ -96,7 +98,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 ![attribution-link-parameters.png](https://files.readme.io/54878d2467201f98d9228e3b7f3028ec6d5a054102534443e256bd7c955f8741-50899846628625.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. Learn more about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. Learn more about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
 
 ### Click-Through Attribution
 
@@ -112,14 +114,26 @@ More details about the [click lookback window here](/docs/set-up-lookback-window
 
 This is the attribution link that contains all the setup information you have set for it. Send it to Baidu Native Ads 2.0 to be activated when leads click on a corresponding ad.
 
-## Cost Tab
+</Accordion>
+
+<Accordion title="Cost Tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad Revenue Tab
+</Accordion>
+
+<Accordion title="Ad Revenue Tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions Tab
+</Accordion>
+
+<Accordion title="Permissions Tab">
+
+<Accordion title="">
 
 Permissions are not supported in the integration with this partner.
+
+</Accordion>
+
+</Accordion>

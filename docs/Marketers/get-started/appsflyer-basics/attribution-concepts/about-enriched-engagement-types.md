@@ -41,73 +41,65 @@ The following is the list of the enriched engagement types:
 | preload | The app is preloaded by the OEM at the factory or by the provider the first time the device is activated. Alternatively, a wizard prompts users to download the app when the device is first activated. |
 | click\_to\_download | When the user engages with an ad, the app is automatically downloaded and installed on the device without redirecting to an app store. |
 | click\_to\_app | An ad click, QR code scan, deep link, or any other click that redirects the user to the app or to the relevant app store to download the app. |
-| engaged\_click | A click that keeps the user in the same context, engaging with the ad, and does NOT direct that user to the app store or to launch the app. |
-| engaged\_view | An engaged view occurs when a meaningful view takes place within skippable videos, rewarded videos, or StoreKit-rendered ads. For example, when a user watches a skippable video ad for at least 5 seconds after the skip option appears. |
+| <span id="engaged_click"></span>engaged\_click | A click that keeps the user in the same context, engaging with the ad, and does NOT direct that user to the app store or to launch the app. |
+| <span id="engaged_view"></span>engaged\_view | An engaged view occurs when a meaningful view takes place within skippable videos, rewarded videos, or StoreKit-rendered ads. For example, when a user watches a skippable video ad for at least 5 seconds after the skip option appears. |
 | view | An ad view is when an ad is rendered, and an impression takes place. |
 | listening | Listening is when a user listens to an audio ad, such as a podcast ad. |
 
-## EET Attribution priority and lookback window
+## **EET Attribution priority and lookback window**
 
 The Enriched Engagement Types framework does not impact the engagement type attribution priority. Hence, introducing EET is not expected to affect your install and conversion rate.
 
-The table below specifies the [attribution priority](/docs/appsflyer-attribution-model#attribution-waterfall) and [lookback window](/docs/set-up-lookback-windows#lookback-windows) of each engagement type:
+The table below specifies the [attribution priority](/docs/appsflyer-attribution-model#attribution-method-priorities-attribution-waterfall) and [lookback window](/docs/set-up-lookback-windows#lookback-windows) of each engagement type:
 
-| Engagement | Engagement type | Attribution priority\* | Lookback window\*\* |
-| --- | --- | --- | --- |
-| Download | preload | 1 | 1h-180d \| default: 90d |
-| click\_to\_download | 2 | 1h-30d \| default: 7d |
-| Click | click\_to\_app | 2 | 1h-30d \| default: 7d |
-| engaged\_click | 2 | 1h-7d \| default: 2d |
-| Impression | engaged\_view | 2 | 1h-7d \| default: 2d |
-| view | 3 | 1h-24h \| default: 24h |
-| listening | 3 | 1h-24h \| default: 24h |
+<table><thead><tr><th>Engagement</th><th>Engagement type</th><th>Attribution priority\*</th><th>Lookback window\*\*</th></tr></thead><tbody><tr><td rowspan="2">Download</td><td>preload</td><td>1</td><td>1h-180d | default: 90d</td></tr><tr><td>click_to_download</td><td>2</td><td>1h-30d | default: 7d</td></tr><tr><td rowspan="2">Click</td><td>click_to_app</td><td>2</td><td>1h-30d | default: 7d</td></tr><tr><td>engaged_click</td><td>2</td><td>1h-7d | default: 2d </td></tr><tr><td rowspan="3">Impression</td><td>engaged_view</td><td>2</td><td>1h-7d | default: 2d</td></tr><tr><td>view</td><td>3</td><td>1h-24h | default: 24h</td></tr><tr><td>listening</td><td>3</td><td>1h-24h | default: 24h</td></tr></tbody></table>
 
-\*When an engagement type isn’t reported, the default priority is set (2 for clicks, 3 for impressions).
+*When an engagement type isn’t reported, the default priority is set (2 for clicks, 3 for impressions).
 
-\*\*Lookback windows for `engaged_click` and `engaged_view` can only be set for non-SRN networks. For SRNs, `engaged_click` and `engaged_view` share the same lookback window as clicks and are, therefore, set by the **Install Click-Through Attribution Lookback** sliders.
+**Lookback windows for `engaged_click` and `engaged_view` can only be set for non-SRN networks. For SRNs, `engaged_click` and `engaged_view` share the same lookback window as clicks and are, therefore, set by the **Install Click-Through Attribution Lookback** sliders.
 
 ## Which networks can report engaged views and engaged clicks?
 
-The table below lists networks that are qualified by AppsFlyer to report `engaged_clicks` and `engaged_views`. Networks wishing to join this list should contact AppsFlyer support.
+The table below lists networks that are qualified by AppsFlyer to report `engaged_clicks` and `engaged_views`.  Networks wishing to join this list should contact AppsFlyer support.
 
 | **Ad Network** | **Engaged views** | **Engaged clicks** |
 | --- | --- | --- |
-| facebook\_int | Yes | |
-| googleadwords\_int | Yes | |
-| tiktokglobal\_int **\*** | Yes | Yes |
+| facebook\_int | Yes |  |
+| googleadwords\_int | Yes |  |
+| tiktokglobal\_int* | Yes | Yes |
 | twitter\_int | Yes | Yes |
 | snapchat\_int | Yes | Yes |
 | bytedanceglobal\_int | Yes | Yes |
 | aarki\_int | Yes | Yes |
-| adjoe\_int | | Yes |
+| adjoe\_int |  | Yes |
 | appier\_int | Yes | Yes |
-| appnext\_int | Yes | |
+| appnext\_int | Yes |  |
 | bidease\_int | Yes | Yes |
 | bigabid\_int | Yes | Yes |
 | inmobidsp\_int | Yes | Yes |
-| ironsource\_int | Yes | |
-| lap\_int | Yes | |
+| ironsource\_int | Yes |  |
+| lap\_int | Yes |  |
 | liftoff\_int | Yes | Yes |
 | mdsp\_int | Yes | Yes |
 | mintegral\_int | Yes | Yes |
-| onedigitalturbine\_int | Yes | |
+| onedigitalturbine\_int | Yes |  |
 | personalyrtb\_int | Yes | Yes |
-| pinterest\_int | Yes | |
+| pinterest\_int | Yes |  |
 | remerge\_int | Yes | Yes |
 | revx\_int | Yes | Yes |
 | rtbhouse\_int | Yes | Yes |
 | smadex\_int | Yes | Yes |
 | trademob\_int | Yes | Yes |
 | unityads\_int | Yes | Yes |
-| vungle\_int | Yes | |
-| yahoojapan\_int | Yes | |
+| vungle\_int | Yes |  |
+| yahoojapan\_int | Yes |  |
 | yandexdirect\_int | Yes | Yes |
 | youappi\_int | Yes | Yes |
 | jampp\_int | Yes | Yes |
 
-**\*** TikTok supports the enriched engagement type, but their engaged views are currently not properly reflected in reporting. AppsFlyer is working with TikTok to resolve this issue.
+***** TikTok supports the enriched engagement type, but their engaged views are currently not properly reflected in reporting. AppsFlyer is working with TikTok to resolve this issue.
 
-> 📘 Note
+> 📘 **Note**
 >
 > **Not all the listed eligible networks actually support engaged clicks and engaged views**. To find out if a particular eligible network supports `engaged_clicks` and `engaged_views` in practice. refer to the raw data report containing engagements reported by the network and see if the `engagement_type` parameter is populated with the above values.
 
@@ -115,17 +107,17 @@ The table below lists networks that are qualified by AppsFlyer to report `engage
 
 **To set the lookback windows for engaged clicks and engaged views:**
 
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations**.
+1. In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations**.
 2. Select the integrated partner.
 3. Set the lookback windows for the engaged view-through and click-through attribution.
 
-> 📘 Note
->
-> Engaged-click and engaged-view lookback windows are always set in the partner **Integration tab**, in contrast to view-through and click-through lookback windows, which can be set on the attribution links.
->
-> For SRNs, setting the click-through lookback window also determines the engaged click and engaged view lookback windows.
+   > 📘 **Note**
+   >
+   > Engaged-click and engaged-view lookback windows are always set in the partner **Integration tab**, in contrast to view-through and click-through lookback windows, which can be set on the attribution links.
+   >
+   > For SRNs, setting the click-through lookback window also determines the engaged click and engaged view lookback windows.
 
-4. Click **Save integration**.
+4. Click **Save integration**.
 
 ## View and analyze EET data
 
@@ -133,26 +125,26 @@ The table below lists networks that are qualified by AppsFlyer to report `engage
 
 `engagement_type` will be reported in raw data reports whenever reported by the ad network. It will also be available for contributors' data.
 
-> 📘 Note
+> 📘 **Note**
 >
 > Engaged views are always included in raw data reports, even when view-through attribution is turned off.
->
-> When there are no clicks recorded, such as in cases of preload or deep links, AppsFlyer will set the relevant value (preload or `click_to_app` for deep links) within the `engagement_type` field in the raw data reports.
->
-> The below scenarios will result in the `engagement_type` field in the raw data reports receiving the values `click_unspecified` and `impression_unspecified`.
->
-> - When there is a mismatch between the engagement (click/impression) and the engagement type.
-> - When `af_engagement_type` is not sent or sent with an empty value.
->
-> In order to see the engagement type in raw data reports, advertisers need to select these fields in the relevant raw data product (engagement type and contributors engagement type are not selected by default).
+
+When there are no clicks recorded, such as in cases of preload or deep links, AppsFlyer will set the relevant value (preload or `click_to_app` for deep links) within the `engagement_type` field in the raw data reports.
+
+The below scenarios will result in the `engagement_type` field in the raw data reports receiving the values `click_unspecified` and `impression_unspecified`.
+
+* When there is a mismatch between the engagement (click/impression) and the engagement type.
+* When `af_engagement_type` is not sent or sent with an empty value.
+
+In order to see the engagement type in raw data reports, advertisers need to select these fields in the relevant raw data product (engagement type and contributors engagement type are not selected by default).
 
 ### Dashboards
 
 Engagement type dimension is added in the dashboards.
 
-<Image src="https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png" alt="eet-dashboard.png" />
+[![eet-dashboard.png](https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png)](https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png)
 
-> 📘 Note
+> 📘 **Note**
 >
 > Engaged views are always visible in the dashboard, even when view-through attribution is turned off.
 
@@ -190,5 +182,5 @@ Engaged views are measured and reported even if the **view-through** toggles are
 
 | Trait | Remarks |
 | --- | --- |
-| Cross-platform engaged view support | Enhanced Engagement Types are not yet supported in cross-platform use cases. Even when `engaged_view` is sent in the impression URL, partners and advertisers will see `view` in the attribution data. |
+| Cross-platform engaged view support | Enhanced Engagement Types  are not yet supported in cross-platform use cases. Even when `engaged_view` is sent in the impression URL, partners and advertisers will see `view` in the attribution data. |
 | Owned media support | Owned media is currently not supported. Links used in owned media must not include the `af_engagement_type` parameter. |

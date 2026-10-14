@@ -22,20 +22,11 @@ x-zendesk:
   created_at: '2020-11-23T14:55:00Z'
   edited_at: '2026-06-16T09:41:31Z'
 ---
-<Cards>
-  <Card title="Setting up Rockerbox" href="#setting-up-rockerbox" icon="fa-solid fa-sliders" />
-  <Card title="Integration tab" href="#integration-tab" icon="fa-solid fa-puzzle-piece" />
-  <Card title="Attribution link tab" href="#attribution-link-tab" icon="fa-solid fa-link" />
-  <Card title="Cost tab" href="#cost-tab" icon="fa-solid fa-coins" />
-  <Card title="Ad revenue tab" href="#ad-revenue-tab" icon="fa-solid fa-sack-dollar" />
-  <Card title="Permissions tab" href="#permissions-tab" icon="fa-solid fa-user-gear" />
-</Cards>
+![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png)
 
-![rockerbox-logo_en-us.png](https://files.readme.io/d21ed29ebfff58b6ce129b1767a7ce4e5dd0a90aab217b1d41aac5ca90e34003-rockerbox.png)
-
-> ❗️ Important!
+> 📘 **Important!**
 >
-> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Rockerbox
 
@@ -43,40 +34,33 @@ x-zendesk:
 
 **To set up a new integration:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
-
-( **To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.
-
-> 📘 Note
->
-> The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below.
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
 
 ### Activate partner
 
-This toggle must be enabled for as long as you work with the partner.
-
-Learn more about [partner activation](/docs/partner-activation-deactivation#activating-a-partner).
+This toggle must be enabled for as long as you work with the partner.  
+Learn more about [partner activation](/docs/partner-activation-deactivation#activate-a-partner-integration).
 
 ### General settings
 
 **Rockerbox Account ID**
 
-**To connect your Rockerbox account with AppsFlyer,** enter your account ID in **Rockerbox account ID**.
-
+**To connect your Rockerbox account with AppsFlyer,** enter your account ID in **Rockerbox account ID**.   
 Your Rockerbox account ID is available in the Rockerbox platform under **Settings** > **Account** > **General**.
 
 ### Default postbacks
 
-AppsFlyer can send automatic postbacks to Rockerbox following user installs. Use this section to define the source of the users the postbacks are sent to for each event. Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default%20postbacks).
+AppsFlyer can send automatic postbacks to Rockerbox following user installs. Use this section to define the source of the users the postbacks are sent to for each event. Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default-postbacks).
 
 To send postbacks for any user that downloads the app to Rockerbox, select **All media sources, including organic**.
 
@@ -89,27 +73,37 @@ In this section, you map AppsFlyer events with the partner via postbacks. Learn 
 **To configure in-app events postbacks:**
 
 1. Enter the **Rockerbox Account ID**.
-2. Enable **In-app event postback.**
-3. Click **Add Event** to add an SDK Event to the list.
+2. Enable **In-app event postback.**
+3. Click **Add Event** to add an SDK Event to the list.
 4. Select the **SDK event name** from the dropdown menu.
-5. Select the required option from the Send revenue dropdown menu:
-   - **No values & no revenue:** sends only the event itself without the event value.
-   - **Values & no revenue:** sends all the parameters excluding the revenue value.
-   - **Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).
+5. Select the required option from the Send revenue dropdown menu:
+   * **No values & no revenue:** sends only the event itself without the event value.
+   * **Values & no revenue:** sends all the parameters excluding the revenue value.
+   * **Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).
 6. To complete the integration configuration, click **Save Integration**.
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Attribution Links are not available for this partner.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not applicable in the integration with this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not applicable in the integration with this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions are not available for this partner.
+
+</Accordion>

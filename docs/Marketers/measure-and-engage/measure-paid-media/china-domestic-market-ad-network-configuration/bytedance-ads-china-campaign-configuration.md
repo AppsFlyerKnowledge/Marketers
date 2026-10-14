@@ -26,7 +26,6 @@ x-zendesk:
 >
 > If you want to promote your Android Apps with ByteDance Ads China, you are required to send your OAID to AppsFlyer SDK according to the instructions in the [AppsFlyer SDK Integration - Android](/docs/sdk-integration-overview). Google Play service is blocked in China, OAID is the most popular Android Device ID for ad attribution.
 
-
 In addition to click-based mobile attribution, ByteDance Ads China also offers view-through attribution, which you can record with AppsFlyer.
 
 To configure your campaigns with ByteDance Ads China, follow the steps below.
@@ -49,11 +48,10 @@ Tip
 
 > 📘 **Note**
 >
-> * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners.
+> * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners.
 > * All the rest of the steps are either descriptive or **optional**.
 
-
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
 
@@ -87,23 +85,21 @@ In this section, you can map your AppsFlyer events with ByteDance Ads China via 
 3. Click **Add Event** to add an SDK Event to the list.
 4. Complete the following parameters:
 
-
-
 | Parameter Name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.  <br />**Tip**: Don't see the event you are looking for?<br /><br />* Make sure to activate the event on a device with a non-organic installation and recheck.<br />* Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<br /><br />* **Text field:** Get the corresponding event ID from the partner.<br />* **Drop-down box:** Select the most suitable pre-defined AppsFlyer event.<br />* **As is**: Send the events as they are, without mapping the event name. |
-| **for users from** | Select the sending option for the event:<br /><br />* **This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner.<br />* **All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, the user who performed it came from any media source. |
-| **including** | Select which event data to share with the partner in the postback:<br /><br />* **No values & no revenue**: Send just the event itself without any parameters (values or revenue).<br />* **Values & no revenue**: Send all the parameters **excluding** the revenue value.<br />* **Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event). |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
+| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without mapping the event name.</li></ul> |
+| **for users from** | Select the sending option for the event:<ul><li>**This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner.</li><li>**All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, the user who performed it came from any media source.</li></ul> |
+| **including** | Select which event data to share with the partner in the postback:<ul><li>**No values & no revenue**: Send just the event itself without any parameters (values or revenue).</li><li>**Values & no revenue**: Send all the parameters **excluding** the revenue value.</li><li>**Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li></ul> |
 
+</Accordion>
 
-
-## Attribution link tab
+<Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
-[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters)**.**
+[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
 
-**To generate an attribution link,**follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 ### Click attribution link
 
@@ -133,29 +129,29 @@ In the Monitoring link part, enter AppsFlyer click attribution link and/or impre
 
 Go to **New Ad** >> **Set Budget and Bid** select the conversion you created for this app.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. Note that AppsFlyer doesn't support the ad-level cost data for ByteDance, except for campaigns running on the v1.0 ByteDance system.
 
 ### API dimensions supported
 
-
-
 | Geo | Media source | Campaign | Adset | Ad | Other |
 | --- | --- | --- | --- | --- | --- |
 | Yes | - | Yes | Yes | No<br /><br />(Ads are only supported for v1.0 ByteDance campaigns) | - |
 
-
-
 **To enable ByteDance Ads China cost API**:
 
-1. In the integrated partner Cost tab, enable ***Get****Cost****Data***.
+1. In the integrated partner Cost tab, enable ***GetCostData***.
 2. Log in to ByteDance Ads China.
-3. Click ***Save****Cost***.
+3. Click ***SaveCost***.
    * You have successfully completed the procedure. API is active. AppsFlyer collects data from the partner 6 times a day, on average once every four hours.
    * The cost tab shows the status of your cost integration and the last time AppsFlyer managed to pull matching cost data.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 This section is relevant if you are acting as a publisher, displaying ads of the partner to your users. As such, you would certainly like to measure the engagement of your users acquired from different sources, to find the most profitable sources for you.
 
@@ -163,7 +159,9 @@ This section is relevant if you are acting as a publisher, displaying ads of the
 
 * Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant ByteDance Ads China, whether the partner acts as an ad network, agency, or both. Note that even if attribution is disabled for ByteDance Ads China, the permissions tab is active and you can grant control to ByteDance Ads China.
 
@@ -176,7 +174,9 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow access to your retention report*** - only to the partner's own retention data
 * ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
 * ***Allow access to your aggregate in-app events data** -*only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*****a** - only to the revenue data attributed to the partner
+* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+
+</Accordion>

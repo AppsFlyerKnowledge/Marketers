@@ -36,7 +36,7 @@ Starting with [Android 10 (API  level 29)](https://developer.android.com/traini
 
 To overcome this, an alternative to GAID, is OAID. OAID (available starting late 2019) is being promoted by Chinese device manufacturers, for example, [Huawei](https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/3030304).
 
-See[AppsFlyer SDK Integration - Android](/docs/measure-attribution-in-the-chinese-domestic-market)**.**
+See[AppsFlyer SDK Integration - Android](/docs/measure-attribution-in-the-chinese-domestic-market).
 
 ### Attribution solutions for the Chinese market
 
@@ -52,7 +52,7 @@ Meanwhile, many Android installs are generated from APK download links in mobile
 
 AppsFlyer provides three main solutions to attribute Android App installs in China market, use the method most relevant to your needs.
 
-### Local android app store that supports ad attribution
+<Accordion title="Local android app store that supports ad attribution">
 
 **Solution:** Android out-of-store app with attribution Link
 
@@ -64,7 +64,9 @@ By using this method, you can attribute both organic install and non-organic ins
 
 **Preparation:** How to attribute out-of-store apps, click [here](/docs/set-up-multi-store-android-attribution).
 
-### Ad network
+</Accordion>
+
+<Accordion title="Ad network">
 
 **Solution:** APK Download Link / APK + Attribution Link
 
@@ -76,7 +78,9 @@ It is easy and fast to launch ad campaigns. It is also convenient to check the p
 
 **Preparation:** Set up one Android out-of-store app, and generate different attribution links for different ad networks. To learn how to attribute out-of-store apps, click [here](/docs/set-up-multi-store-android-attribution).
 
-### Android app store that does not support ad attribution
+</Accordion>
+
+<Accordion title="Android app store that does not support ad attribution">
 
 **Solution:** Android out-of-store app
 
@@ -86,6 +90,8 @@ It is easy and fast to launch ad campaigns. It is also convenient to check the p
 
 **Preparation:** how to attribute out-of-store apps, click [here](/docs/set-up-multi-store-android-attribution).
 
+</Accordion>
+
 If you are promoting your apps with more than one of the solutions mentioned above and you want to check the data of all your China campaigns int the same dashboard view, you can use [Custom Dashboard](/docs/custom-dashboards).
 
 ## Integrated media sources
@@ -93,8 +99,6 @@ If you are promoting your apps with more than one of the solutions mentioned abo
 [Configuration guides](/docs/china-domestic-market-ad-network-configuration)
 
 Integrated media sources in China:
-
-
 
 | Media source name | Chinese name | PID | Logo |
 | --- | --- | --- | --- |

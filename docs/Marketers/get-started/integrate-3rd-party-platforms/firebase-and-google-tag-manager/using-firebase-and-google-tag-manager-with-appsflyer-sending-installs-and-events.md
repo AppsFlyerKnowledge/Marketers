@@ -28,7 +28,7 @@ This section discusses how to set up and create events in the app with Google Ta
 
 When the event is sent, GTM checks to see if there is a tag that is configured to process this event with the help of the event trigger. The event trigger is set to fire the tag whenever a specific event is sent. If a specific event is sent and it has a corresponding trigger, the tag is fired. When the tag is fired, Google Tag Manager collects all the data in the event. Such data includes the AppsFlyer ID,  event name, and event parameters. After collecting all the data, Google Tag Manager sends the event to AppsFlyer.
 
-### Creating event variables for revenue and price
+<Accordion title="Creating event variables for revenue and price">
 
 #### Android
 
@@ -87,7 +87,9 @@ Objective C Swift
    AppsFlyerTracker.shared().appleAppID
    ```
 
-### Adding events in the app
+</Accordion>
+
+<Accordion title="Adding events in the app">
 
 The first step is to configure the event in the app. The event is sent using Firebase Event Logging In the event you specify the AppsFlyer ID, event name, and event parameters. The AppsFlyer ID is retrieved from the variable that is created in the [setup step](/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup#google-tag-manager-setup).
 
@@ -141,7 +143,7 @@ Objective-C Swift
    ```
    NSString *id_prefix = @"id";  
    NSString *apple_app_id = [id_prefix stringByAppendingString:[AppsFlyerTracker sharedTracker].appleAppID];  
-     
+
    [FIRAnalytics logEventWithName:@"af_purchase"
          parameters:@{
           @"apple_app_id": apple_app_id,
@@ -162,6 +164,8 @@ Objective-C Swift
           "af_price": 375
        ]);
    ```
+
+</Accordion>
 
 ## Sending install events to Firebase
 

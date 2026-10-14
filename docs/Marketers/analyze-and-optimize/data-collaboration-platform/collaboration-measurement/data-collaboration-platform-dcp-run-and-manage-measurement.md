@@ -24,7 +24,7 @@ x-zendesk:
 ---
 ## About the measurement run modes
 
-After you’ve [configured the on-site or off-site measurement](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-onsite-campaign-measurement), you’re ready to choose how to run the measurement.
+After you’ve [configured the on-site or off-site measurement](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-on-site-and-off-site-campaign-measurement), you’re ready to choose how to run the measurement.
 
 You have two run modes available:
 
@@ -33,8 +33,6 @@ You have two run modes available:
 
 ### Live vs. historical measurements
 
-
-
 | Topic | Historical measurement | Live measurement |
 | --- | --- | --- |
 | When it runs | **On-demand** (manual) execution | **Automated** daily execution |
@@ -42,8 +40,6 @@ You have two run modes available:
 | Supported source types | [Append](/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method) and [Overwrite (snapshot)](/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method) | [Append-type custom sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method) |
 | Time frame selection | Select a **start and end date** (from available data) | Select a **start date only** (the platform calculates the historical time frame on activation and continues accumulating data) |
 | How many per measurement | Multiple | One |
-
-
 
 ### Choose the measurement you need
 
@@ -65,19 +61,17 @@ Use the guidance below to decide which measurement fits your goal.
 
 ## Run a live measurement
 
-**Before you begin:**  [Configure the on-site or off-site measurement campaign in the Measurement settings page](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-onsite-campaign-measurement).
+**Before you begin:**  [Configure the on-site or off-site measurement campaign in the Measurement settings page](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-on-site-and-off-site-campaign-measurement).
 
 1. In the **Measurement settings** page, click **Run now**.
 
    If **Run now** is disabled, your measurement tasks are incomplete. Complete all required setup tasks to run the measurement.
 2. In the **Prepare to run** dialog, select **Live dashboard**.
 
-   CALLSTART::Note::
-
-   #### Note
+   <br /><br />**Note**<br />#### Note
 
    * If the measurement uses [Overwrite](/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method) sources, only the **Historical dashboard** is available. **Live dashboard** requires **Append-type** sources (or AppsFlyer SDK in-app events) to refresh automatically.
-   * Only **one live measurement** can run at a time in a collaboration. If you start a new live measurement while another one is already running, you’ll be prompted to pause the existing one.CALLEND::
+   * Only **one live measurement** can run at a time in a collaboration. If you start a new live measurement while another one is already running, you’ll be prompted to pause the existing one.
 3. Rename the dashboard or keep the default name.
 4. Select the **measurement start date**. The default is today’s date, but you can select a past date from the date picker. (You can only select dates that exist in your data sources.)
 5. Click **Start** to begin the live measurement. You’ll be redirected to the collaboration measurement page.
@@ -85,7 +79,7 @@ Use the guidance below to decide which measurement fits your goal.
 
 ## Run a historical measurement
 
-**Before you begin:**  [Configure the on-site or off-site measurement campaign in the Measurement settings page](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-onsite-campaign-measurement).
+**Before you begin:**  [Configure the on-site or off-site measurement campaign in the Measurement settings page](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-on-site-and-off-site-campaign-measurement).
 
 1. In **Measurement settings**, click **Run now**.  
    If **Run now** is disabled, your measurement tasks are incomplete. Complete all required setup tasks to run the measurement.
@@ -105,14 +99,14 @@ After you set up and run your measurement, manage it from the measurement panel 
 
 [![](https://files.readme.io/f1ff9677dcae50df83fe32a8c54925c52ea91f5a2f7f133bc6bce3041fe0341d-44437720904209.png)](https://files.readme.io/f1ff9677dcae50df83fe32a8c54925c52ea91f5a2f7f133bc6bce3041fe0341d-44437720904209.png)
 
+<Accordion title="Pause or restart live measurement">
+
 #### Legend
 
 * **A** - The measurement panel
 * **B** - The selected measurement
 * **C** - The Shared toggle
 * **D** - The options menu.
-
-### Pause or restart live measurement
 
 1. Open the collaboration measurement page.
 2. Select the **Live dashboard** from the measurement panel ([A](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#the-collaboration-measurement-page)).
@@ -121,7 +115,9 @@ After you set up and run your measurement, manage it from the measurement panel 
    * To **pause** live attribution, turn off **Activate measurement**, then confirm in the **Pause measurement?** dialog.
    * To **restart** live attribution, turn on **Activate measurement**.
 
-### Change measurement start and end dates
+</Accordion>
+
+<Accordion title="Change measurement start and end dates">
 
 You can change:
 
@@ -137,7 +133,9 @@ To change the measurement start and end dates, follow these steps:
 5. Click the start or end date.
 6. Select the new date from the date picker.
 
-### Re-run a historical measurement
+</Accordion>
+
+<Accordion title="Re-run a historical measurement">
 
 Re-running a historical measurement recalculates attribution using the latest data. The current results are replaced with the new results.
 
@@ -147,7 +145,9 @@ Re-running a historical measurement recalculates attribution using the latest da
 4. In the prompt message, click **Re-run**.
 5. On the collaboration measurement page, after the automatic validation checks complete successfully, click **Run now**.
 
-### Duplicate a live or historical measurement
+</Accordion>
+
+<Accordion title="Duplicate a live or historical measurement">
 
 Duplicating creates a new measurement based on an existing setup. You can update the settings and run it as a new measurement.
 
@@ -156,7 +156,9 @@ Duplicating creates a new measurement based on an existing setup. You can update
 3. Open the options menu ([D](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#the-collaboration-measurement-page)) and click **Duplicate**.
 4. In the duplicated **Measurement settings** page, customize the measurement to your needs.
 
-### Share a dashboard
+</Accordion>
+
+<Accordion title="Share a dashboard">
 
 You can share a dashboard with your collaborators by turning on the **Shared** toggle. When **Shared** is ON, the dashboard (and its measurement results) is available to other users in the collaboration.
 
@@ -177,3 +179,5 @@ To share a dashboard:
 1. Open the collaboration measurement page and select the **dashboard** you want to share from the measurement panel ([A](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#the-collaboration-measurement-page)).
 2. Turn on **Shared** ([C](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#the-collaboration-measurement-page)). The dashboard will be available in your collaborator measurement page.
 3. Turn off **Shared** to stop sharing. When sharing is turned off, only you (and users with the right permissions) can access the dashboard.
+
+</Accordion>

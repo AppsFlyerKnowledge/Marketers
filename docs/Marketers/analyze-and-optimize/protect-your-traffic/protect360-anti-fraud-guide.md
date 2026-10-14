@@ -32,7 +32,7 @@ x-zendesk:
 * Uses a layered approach of real-time fraud blocking and post-attribution fraud identification
 * Does not impact the app user experience. In case of fraud attempts involving real users, app installs complete normally, and only attribution recording is affected.
 
-### Real-time blocking
+<Accordion title="Real-time blocking">
 
 * In real-time, before attribution, the install is identified as coming from a fraudulent media source and is blocked from attribution.
 * Subsequent in-app events from the same user are blocked.
@@ -42,7 +42,11 @@ x-zendesk:
 
 [About blocked events](/docs/protect360-raw-data-reports)
 
-### Post-attribution detection
+</Accordion>
+
+<div id="postattribution-detection" />
+
+<Accordion title="Post-attribution detection">
 
 * Fraud identified after attribution is referred to as post-attribution fraud. Post-attribution fraud can be identified on the day of the install, and up to 7 days after (8 days total).
 * Once attributed, an install can't be erased. For this reason, post-attribution fraud is handled differently to that of real-time fraud.
@@ -67,15 +71,15 @@ Examples of post-attribution fraud:
 * A new form of fraud found
 * Installs which turn out to be fraudulent only after anomaly detection algorithms collect enough statistical data about the installs of any publisher
 
-### Common fraud issues and solutions
+</Accordion>
+
+<Accordion title="Common fraud issues and solutions">
 
 When AppsFlyer identifies fraud, **the attribution** **event**associated with the fraud is blocked. This eliminates fraudster gains and motivation. **Note**: The app install itself takes place and is not blocked. This means the app user can use the app and generate revenue for the advertiser.
 
 Blocked fraud clicks, installs, and in-app events are found in[Protect360 fraud raw data reports](/docs/protect360-raw-data-reports).
 
 The following table describes some fraud types and how Protect360 handles them.
-
-
 
 | Fraud type | Description | AppsFlyer solution |
 | --- | --- | --- |
@@ -84,29 +88,27 @@ The following table describes some fraud types and how Protect360 handles them.
 | [**Click hijacking**](https://www.appsflyer.com/mobile-fraud-glossary/click-hijacking/) | Malware identifies an install attribution link click and instantly sends another click that credits them if it is attributed. | Blocks attributed clicks occurring very fast after other clicks for the same app on the same device. |
 | [**Click flooding**](https://www.appsflyer.com/mobile-fraud-glossary/click-flooding/) | Mobile fraud where large numbers of fraudulent clicks are sent, with the purpose of delivering the last-click prior to installs. | Blocks attributed clicks from site IDs with a low conversion rate and long CTIT. |
 | **Behavioral anomalies** | Mobile fraud where the fraudster generates an inconsistent and abnormal post-install activity. | Our unique scale allows us to track and understand behavioral engagement patterns on multiple levels - such as by app, region, media source, and publisher. Non-human behavioral patterns are identified in near real-time and blocked at the source. |
-| **IP denylists** | Fraudsters usually operate from [click farms](https://www.appsflyer.com/mobile-fraud-glossary/click-farms/), which may be identified by their IP addresses for long periods of time. | * IP addresses suspected of fraud are denylisted on a daily basis based on up to date data received from third party global provider [Digital Element](http://www.digitalelement.com/).<br />* IP denylist protection is enabled for all apps. |
-| **SDK authentication** | Fraudsters send fake SDK messages to simulate valuable user actions. | * A proprietary hashing protocol is used to encrypt messages between SDKs and web services, preventing fraudsters from mimicking the messages.<br />* SDK authentication protection is enabled for all apps. |
+| <span id="ip-denylists"></span>**IP denylists** | Fraudsters usually operate from [click farms](https://www.appsflyer.com/mobile-fraud-glossary/click-farms/), which may be identified by their IP addresses for long periods of time. | <ul><li>IP addresses suspected of fraud are denylisted on a daily basis based on up to date data received from third party global provider [Digital Element](http://www.digitalelement.com/).</li><li>IP denylist protection is enabled for all apps.</li></ul> |
+| **SDK authentication** | Fraudsters send fake SDK messages to simulate valuable user actions. | <ul><li>A proprietary hashing protocol is used to encrypt messages between SDKs and web services, preventing fraudsters from mimicking the messages.</li><li>SDK authentication protection is enabled for all apps.</li></ul> |
 | **Store validations** | Fraudsters send fake SDK messages to simulate installs or in-app purchases so they can claim high CPA fees. [Apple store validations](/docs/implement-apple-app-store-itunes-install-validation). | Enables [install validation](https://www.appsflyer.com/mobile-fraud-glossary/install-validation/) on iTunes and in-app purchase validation for both iTunes and Google Play, of any install or in-app purchase that has taken place to prevent attribution of fraudulent activities. |
-
-
 
 **Note**: The exact time values cited above, are withheld to protect our clients.
 
 Additional blocking reasons are explained in the [raw data article](/docs/protect360-raw-data-reports).
 
+</Accordion>
+
 The table below outlines the various types of fraudulent installs and in-app events, and what happens when the Protect360 engine blocks them in real-time, or detects them post-attribution.
 
-
-
-<table><thead><tr><th>Fraud type</th><th>Detection time</th><th>What happens to install</th><th>What happens to in-app event</th></tr></thead><tbody><tr><td rowspan="2"><span>Fake install</span></td><td><span>Real-time</span></td><td><span>Blocked in real-time</span></td><td><span>Blocked in real-time</span></td></tr><tr><td><span>Post-attribution</span></td><td><span>Marked in the Post-Attribution Installs report</span></td><td><ul><li><span>In-app events that occurred before fraud detection, will be marked in the Post-Attribution In-App Events report.</span></li><li><span>After detection: blocked in real-time</span></li></ul></td></tr><tr><td rowspan="2"><span>Install attribution hijacking</span></td><td><span>Real-time</span></td><td><ul><li><span>Blocked in real-time</span></li><li><span>Attribution is corrected to the last valid source</span></li></ul></td><td><ul><li><span>Is not shown in raw reports and is only visible on the dashboard</span></li><li><span>Attributed to the same valid source as the install</span></li></ul></td></tr><tr><td><span>Post-attribution</span></td><td><span>Marked in the Post-Attribution Installs report</span></td><td><ul><li><span>In-app events that occurred before fraud detection, will be marked in the Post-Attribution In-App Events report.</span></li><li><p>After fraud detection: marked in the Post-Attribution In-App Events report up to 30 days from the install.*</p><p>*In-app events are corrected to the last valid media source for 30 days from the install. Events occurring after 30 days are not corrected.</p></li></ul></td></tr><tr><td rowspan="2"><span>Fraudulent in-app event</span></td><td><span>Real-time</span></td><td>-</td><td><span>Blocked in real-time</span></td></tr><tr><td><span>Post-attribution</span></td><td>-</td><td><span>Marked in the Post-Attribution In-App Events report</span></td></tr></tbody></table>
-
-
+<table><thead><tr><th>Fraud type</th><th>Detection time</th><th>What happens to install</th><th>What happens to in-app event</th></tr></thead><tbody><tr><td rowspan="2"><span>Fake install</span></td><td><span>Real-time</span></td><td><span>Blocked in real-time</span></td><td><span>Blocked in real-time</span></td></tr><tr><td><span>Post-attribution</span></td><td><span>Marked in the Post-Attribution Installs report</span></td><td><ul><li><span>In-app events that occurred before fraud detection, will be marked in the Post-Attribution In-App Events report.</span></li><li><span>After detection: blocked in real-time</span></li></ul></td></tr><tr><td rowspan="2"><span>Install attribution hijacking</span></td><td><span>Real-time</span></td><td><ul><li><span>Blocked in real-time</span></li><li><span>Attribution is corrected to the last valid source</span></li></ul></td><td><ul><li><span>Is not shown in raw reports and is only visible on the dashboard</span></li><li><span>Attributed to the same valid source as the install</span></li></ul></td></tr><tr><td><span>Post-attribution</span></td><td><span>Marked in the Post-Attribution Installs report</span></td><td><ul><li><span>In-app events that occurred before fraud detection, will be marked in the Post-Attribution In-App Events report.</span></li><li><p>After fraud detection: marked in the Post-Attribution In-App Events report up to 30 days from the install.\*</p><p>\*In-app events are corrected to the last valid media source for 30 days from the install. Events occurring after 30 days are not corrected.</p></li></ul></td></tr><tr><td rowspan="2"><span>Fraudulent in-app event</span></td><td><span>Real-time</span></td><td>-</td><td><span>Blocked in real-time</span></td></tr><tr><td><span>Post-attribution</span></td><td>-</td><td><span>Marked in the Post-Attribution In-App Events report</span></td></tr></tbody></table>
 
 Protect360 fraud detection and outcomes
 
 ## Using Protect360
 
-### Dashboard
+<div id="dashboard" />
+
+<Accordion title="Dashboard">
 
 The [Protect360 dashboard](/docs/protect360-dashboard) displays aggregate fraud data and provides insights relating to fraudulent traffic.
 
@@ -116,7 +118,11 @@ Dashboard views:
 
 **In-app events**: [Activity-based](/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports) insights about fraudulent in-app events, blocked in real-time, and identified post-attribution. You can drill down to further examine the fraud events by using the filtering and grouping options.
 
-### Raw data
+</Accordion>
+
+<div id="raw-data" />
+
+<Accordion title="Raw data">
 
 [Raw data](/docs/protect360-raw-data-reports) about fraud is available via Pull API, Export Data, and [Data Locker (a premium feature)](/docs/data-locker-for-marketers).
 
@@ -131,11 +137,17 @@ Raw data reports are divided as follows:
 
 * Advertisers use these reports to reconcile ad network accounts, for optimization, and to adjust attribution dashboards for post-attribution fraud.
 
-### Validation rules
+</Accordion>
+
+<Accordion title="Validation rules">
 
 [Validation Rules](/docs/implement-validation-rules-to-prevent-fraud) enable app owners to set conditions to block certain installs, block attribution (and ensure that installs are attributed to the most recent valid media source), or block in-app events.
 
-### Fraud reconciliation with ad networks
+</Accordion>
+
+<div id="fraud-reconciliation-with-ad-networks" />
+
+<Accordion title="Fraud reconciliation with ad networks">
 
 With Protect360, advertisers get raw data regarding fraudulent installs and in-app events that ad networks may not have recorded as fraud.
 
@@ -157,71 +169,67 @@ You can also use Protect360 data to reconcile with ad networks and receive full 
 * Share the fraud raw-data with the network for reconciliation and optimization of their traffic.
 * It's possible to create a raw data report which includes just the valid IAEs, but excludes post-attribution fraudulent events. To do this, you need to download the monthly ***Attributed UA in-app events*** report and exclude all entries from the ***Post-attribution in-app events*** report.
 
+</Accordion>
+
 ## Traits and limitations
 
-### Traits and limitations
-
-
+<Accordion title="Traits and limitations">
 
 | Trait | Remarks |
 | --- | --- |
 | Advertiser access | All account users. |
-| Ad network access | * Protect360 dashboard and raw data access require [advertiser permission.](/docs/set-up-an-integrated-partner#ad-network-permissions)<br />* Advertiser must have the ad network as an integrated partner. |
+| Ad network access | <ul><li>Protect360 dashboard and raw data access require [advertiser permission.](/docs/set-up-an-integrated-partner#ad-network-permissions)</li><li>Advertiser must have the ad network as an integrated partner.</li></ul> |
 | Agency access | Protect360 dashboard and raw data access require [advertiser permission.](/docs/set-up-an-integrated-partner#ad-network-permissions) |
 | Agency transparency | Transparent agency: Can see specific media sources<br /><br />Non-transparent agency: Cannot see specific media sources |
-| App-specific time zone | * App-specific time zone is used in the dashboard, provided all apps are set to the same time zone.<br />* If apps are not set to the same time zone, then the dashboard defaults to UTC. |
-| Data freshness | * Protect360 dashboard: Updated [Daily](/docs/about-data-freshness-and-timezone-support#eod).   <br />  The most recent update time displays below the date range filter in the Dashboard.<br />* Reports:<br />  * Blocked installs and in-app events: Update continuously in near real-time.<br />  * Post-attribution: [Daily](/docs/about-data-freshness-and-timezone-support#eod) using UTC. |
+| App-specific time zone | <ul><li>App-specific time zone is used in the dashboard, provided all apps are set to the same time zone.</li><li>If apps are not set to the same time zone, then the dashboard defaults to UTC.</li></ul> |
+| Data freshness | <ul><li>Protect360 dashboard: Updated [Daily](/docs/about-data-freshness-and-timezone-support#eod).<br />The most recent update time displays below the date range filter in the Dashboard.</li><li>Reports:<ul><li>Blocked installs and in-app events: Update continuously in near real-time.</li><li>Post-attribution: [Daily](/docs/about-data-freshness-and-timezone-support#eod) using UTC.</li></ul></li></ul> |
 | Re-installs | Fraud data for re-installs is only available in raw data. Therefore, there may be discrepancies between the overall numbers in the dashboard and raw data reports. |
-| Retargeting | * For installs identified as fraud, the attributed touch-type breakdown between installs, re-attributions, and re-engagements is displayed.<br />* For in-app events:<br />  * The in-app event (CPA) dashboard displays fraudulent events from UA installs, but not from retargeting.<br />  * Fraudulent events from re-attributions that are identified in real-time, can be viewed in raw data reports. Fraudulent events from re-engagements can't be identified.<br />  * Fraudulent events from retargeting can't be identified post-attribution. |
-| Limitations | * Tables limited to maximum 20,000 rows.<br />* If you query for a larger data set, some media sources might be excluded. To overcome this limitation, we recommend the following:<br />  * Query for a smaller dataset - smaller date range, specific apps, and specific media sources<br />  * Export Protect360 [raw data reports](/docs/protect360-raw-data-reports)<br />  * Export Protect360 Aggregated Advanced Detection Reports [through Pull API](/docs/pull-api-aggregate-data) |
-
-
+| Retargeting | <ul><li>For installs identified as fraud, the attributed touch-type breakdown between installs, re-attributions, and re-engagements is displayed.</li><li>For in-app events:<ul><li>The in-app event (CPA) dashboard displays fraudulent events from UA installs, but not from retargeting.</li><li>Fraudulent events from re-attributions that are identified in real-time, can be viewed in raw data reports. Fraudulent events from re-engagements can't be identified.</li><li>Fraudulent events from retargeting can't be identified post-attribution.</li></ul></li></ul> |
+| Limitations | <ul><li>Tables limited to maximum 20,000 rows.</li><li>If you query for a larger data set, some media sources might be excluded. To overcome this limitation, we recommend the following:<ul><li>Query for a smaller dataset - smaller date range, specific apps, and specific media sources</li><li>Export Protect360 [raw data reports](/docs/protect360-raw-data-reports)</li><li>Export Protect360 Aggregated Advanced Detection Reports [through Pull API](/docs/pull-api-aggregate-data)</li></ul></li></ul> |
 
 Traits and limitations
 
+</Accordion>
+
 ## FAQ and tips
 
-### FAQ
+<div id="faq" />
 
-
+<Accordion title="FAQ">
 
 | **Does Protect360 work against fraud coming from custom attribution links?**<br /><br />Definitely! Protect360 detects and blocks fraud coming from custom attribution links, in addition to ad networks. That means you are also protected if you have campaigns of owned media, such as with influencers, email and SMS campaigns, website banners and landing pages, viral posts on social media, Push notifications, or even QR codes. |
 | --- |
-| **What's new in Protect360 V2 compared with V1?**<br /><br />1. There are 3 main changes in the P360 V2.0:  <br />   Post-Attribution fraud - wherever we present blocked installs, we also show Post-Attribution fraud installs. Post-Attribution is also available as a raw data report.<br />2. Anomaly Insights - A new section called “Anomaly Insights” was added, in which advertisers can analyze anomalies via visualization tools. It's replacing the 2 charts on the old “Advanced Detection” tab.<br />3. Centralization of all the fraud data - the “advanced detection” tab was removed and instead we present all the information in 1 tab. |
+| **What's new in Protect360 V2 compared with V1?**<ol><li>There are 3 main changes in the P360 V2.0:<br />Post-Attribution fraud - wherever we present blocked installs, we also show Post-Attribution fraud installs. Post-Attribution is also available as a raw data report.</li><li>Anomaly Insights - A new section called “Anomaly Insights” was added, in which advertisers can analyze anomalies via visualization tools. It's replacing the 2 charts on the old “Advanced Detection” tab.</li><li>Centralization of all the fraud data - the “advanced detection” tab was removed and instead we present all the information in 1 tab.</li></ol> |
 | **Why isn't the post-attribution raw data available in the Export Data page?**<br /><br />Post-attribution reports are on the account level per media source, in order to make the reconciliation process easier. The **Export Data** page is on the single app level, and still contains the Blocked fraud data on the app level for backward compatibility. |
-| **Does post-attribution data update retroactively?**<br /><br />* **Installs** - install data on the overview page and all other reports outside Protect360 dashboard does not update retroactively.<br />* **In-app events** - once the post-attribution protection layer identifies an install as fake, following in-app events coming from this install are being blocked. Previous in-app events do not update retroactively. |
+| **Does post-attribution data update retroactively?**<ul><li>**Installs** - install data on the overview page and all other reports outside Protect360 dashboard does not update retroactively.</li><li>**In-app events** - once the post-attribution protection layer identifies an install as fake, following in-app events coming from this install are being blocked. Previous in-app events do not update retroactively.</li></ul> |
 | **Why does the data look different when selecting specific/different networks in Anomaly insights?**<br /><br />When you look at CTIT anomalies and select AF\_Baseline as a benchmark, you may see Network A's anomalies. Then, if, for example, you select Network A as a benchmark, you will see other networks' anomalies, but not Network A.<br /><br />This outcome is actually what you should expect. When the trusted AppsFlyer baseline is used, networks with abnormal rates of CTIT display. When the anomalous network is used as the baseline, its installs aren't included as anomalies anymore, but installs from other networks may be considered anomalous relative to it. |
-| **Is abnormal organic traffic actually fraudulent?**<br /><br />It's possible that abnormal spikes in organic traffic are actually fraudulent. In general, if you see organic traffic in AppsFlyer, which you have reasons to believe is actually fraudulent, it could be one of the 3 following cases:<br /><br />* **Failed attribution fraud:** Fraudster's clicks failed to receive attribution, e.g., click flooding with the last click taking place beyond the click lookback window.<br />* **Non-attribution fraud:** User performs fraud, that is not related to attribution, e.g. using fraud to collect items in strategy games.<br />* **SDK integration issues:** Check that your in-app events are sent correctly, i.e. at the right time in the flow and with correct event parameter values. |
-
-
+| **Is abnormal organic traffic actually fraudulent?**<br /><br />It's possible that abnormal spikes in organic traffic are actually fraudulent. In general, if you see organic traffic in AppsFlyer, which you have reasons to believe is actually fraudulent, it could be one of the 3 following cases:<ul><li>**Failed attribution fraud:** Fraudster's clicks failed to receive attribution, e.g., click flooding with the last click taking place beyond the click lookback window.</li><li>**Non-attribution fraud:** User performs fraud, that is not related to attribution, e.g. using fraud to collect items in strategy games.</li><li>**SDK integration issues:** Check that your in-app events are sent correctly, i.e. at the right time in the flow and with correct event parameter values.</li></ul> |
 
 FAQ
 
-### Benchmarks and tips
+</Accordion>
 
+<Accordion title="Benchmarks and tips">
 
-
-| **Detecting new devices fraud**<br /><br />Fraudsters may mask their devices by frequently resetting the main IDs of their devices, i.e. IDFA for iOS and GAID for Android.<br /><br />Fortunately, AppsFlyer identifies over 98% of mobile devices globally.<br /><br />Therefore, a high percentage of unknown new devices is a strong indication of fraud by click farms, unless intentionally targeting new devices.<br /><br />**Detecting new devices:**<br /><br />1. In Protect360 go to the ***Identified fraud breakdown*** table.<br />2. Scroll right to the ***Device farm indicators - new devices*** columns.<br />3. Click on the ***Installs %*** column name to sort the table in descending order of new device ratio.<br />4. New device fraud indicators:<br /><br />* * Sources with a high percentage of **new** devices. **Note**: As the number of installs rises, lower percentages can also be considered as fraud (since the overall amount is large).<br />  * When the source loyal user ratio is compared with the overall loyal user ratio, a relatively low percentage is a strong indication of fraud.<br /><br />**Note**: Campaigns of [pre-installed apps](/docs/appsflyer-factory-preinstall-using-manifest-android) usually have extremely high rates of new devices, as these may be among the very first apps that users launch when activating their new devices. Therefore, for pre-installed apps, new device fraud is unlikely, even with high new devices rates. |
+| **Detecting new devices fraud**<br /><br />Fraudsters may mask their devices by frequently resetting the main IDs of their devices, i.e. IDFA for iOS and GAID for Android.<br /><br />Fortunately, AppsFlyer identifies over 98% of mobile devices globally.<br /><br />Therefore, a high percentage of unknown new devices is a strong indication of fraud by click farms, unless intentionally targeting new devices.<br /><br />**Detecting new devices:**<ol><li>In Protect360 go to the ***Identified fraud breakdown*** table.</li><li>Scroll right to the ***Device farm indicators - new devices*** columns.</li><li>Click on the ***Installs %*** column name to sort the table in descending order of new device ratio.</li><li>New device fraud indicators:</li></ol><ul><li>Sources with a high percentage of **new** devices. **Note**: As the number of installs rises, lower percentages can also be considered as fraud (since the overall amount is large).<ul><li>When the source loyal user ratio is compared with the overall loyal user ratio, a relatively low percentage is a strong indication of fraud.</li></ul></li></ul>**Note**: Campaigns of [pre-installed apps](/docs/appsflyer-factory-preinstall-using-manifest-android) usually have extremely high rates of new devices, as these may be among the very first apps that users launch when activating their new devices. Therefore, for pre-installed apps, new device fraud is unlikely, even with high new devices rates. |
 | --- |
-| **Detecting LAT fraud**<br /><br />LAT (Limited Ad Tracking) users select to opt-out of exposing their device ID, IDFA or GAID, to advertisers. Approximately 15% of iOS users and 10% of Android users take this choice.<br /><br />Similar to the new device ranking, LAT users may be legitimate users. However, a high percentage of them could indicate fraudulent activity.<br /><br />**Detecting LAT:**<br /><br />1. In Protect360 go to the ***Identified fraud breakdown*** table.<br />2. Scroll right to the ***Device farm indicators - LAT devices*** columns.<br />3. Click on the ***Installs %*** column name to sort the table in descending order of LAT device ratio.<br />4. LAT devices fraud indicators:<br /><br />* Sources with a high percentage of **LAT** devices. **Note**: As the number of installs rises, lower percentages can also be considered as fraud (since the overall amount is large).<br />* When the source loyal user ratio is compared with the overall loyal user ratio, a relatively low percentage is a strong indication of fraud. |
-| **Detecting click flooding fraud**<br /><br />1. Using click flooding, fraudsters send millions of clicks with real device IDs, hoping to register as the last click for real users. Sources with this type of fraud have **very low conversion rates, but high-quality users**, since these are real users.<br /><br />   **Detecting click flooding:**<br /><br />   1. In Protect360 go to the ***Identified fraud breakdown*** table.<br />   2. Scroll right to the ***Click flooding indicators*** columns.<br />   3. Click on the ***Conversion rate*** column name to sort the table in ascending order of conversion rate.<br />   4. Click flooding fraud benchmarks:<br />   * Normal ***Conversion Rates*** are between 0.5% to 35%.  <br />     Suspect sources whose conversion rates are abnormally low, or that **have 25% or less of the average conversion rate** of the app. You can find this KPI in the Aggregated performance report table in the dashboard overview page.<br />   * For borderline sources, compare the ***Assists %*** with the average assists ratio. You can see the normal assists ratio in the assists widget, in the dashboard overview page.  <br />     Sources whose assists ratio is **50% higher than the average** assists ratio of the app are considered suspicious.  <br />     Note that the more sources are used by an app, the higher are its Contribution rates. |
-| **Detecting click flooding with CTIT indicators**<br /><br />Another indication of click flooding is the **even distribution of CTIT**.  <br />Usually, around 70% of normal installs take place within 1 hour of the ad engagement.  <br />With click flooding, there's no connection between the fake engagement and the actual install. This leads to much more than 30% of fraud installs, which have longer than a 1 hour CTIT.<br /><br />**Detecting click flooding CTIT indications:**<br /><br />1. In Protect360 go to the ***Identified fraud breakdown*** table.<br />2. Scroll right to the ***Click flooding indicators*** ***- CTIT*** columns.<br />3. Click flooding CTIT benchmarks:<br /><br />* Normally, ***Over 60 minutes*** values should be around 30%. Suspect sources who have more than 50% with this metric.<br />* Normally, ***Over 5 hours*** values should be around 20%. Suspect sources who have more than 40% with this metric.<br /><br />Use the ***Anomaly insights*** [page](/docs/protect360-dashboard#anomalies-dashboard) to investigate sources with suspicious CTIT. |
-
-
+| **Detecting LAT fraud**<br /><br />LAT (Limited Ad Tracking) users select to opt-out of exposing their device ID, IDFA or GAID, to advertisers. Approximately 15% of iOS users and 10% of Android users take this choice.<br /><br />Similar to the new device ranking, LAT users may be legitimate users. However, a high percentage of them could indicate fraudulent activity.<br /><br />**Detecting LAT:**<ol><li>In Protect360 go to the ***Identified fraud breakdown*** table.</li><li>Scroll right to the ***Device farm indicators - LAT devices*** columns.</li><li>Click on the ***Installs %*** column name to sort the table in descending order of LAT device ratio.</li><li>LAT devices fraud indicators:</li></ol><ul><li>Sources with a high percentage of **LAT** devices. **Note**: As the number of installs rises, lower percentages can also be considered as fraud (since the overall amount is large).</li><li>When the source loyal user ratio is compared with the overall loyal user ratio, a relatively low percentage is a strong indication of fraud.</li></ul> |
+| **Detecting click flooding fraud**<ol><li>Using click flooding, fraudsters send millions of clicks with real device IDs, hoping to register as the last click for real users. Sources with this type of fraud have **very low conversion rates, but high-quality users**, since these are real users.</li></ol>**Detecting click flooding:**<ol><li>In Protect360 go to the ***Identified fraud breakdown*** table.</li><li>Scroll right to the ***Click flooding indicators*** columns.</li><li>Click on the ***Conversion rate*** column name to sort the table in ascending order of conversion rate.</li><li>Click flooding fraud benchmarks:</li></ol><ul><li>Normal ***Conversion Rates*** are between 0.5% to 35%.<br />Suspect sources whose conversion rates are abnormally low, or that **have 25% or less of the average conversion rate** of the app. You can find this KPI in the Aggregated performance report table in the dashboard overview page.</li><li>For borderline sources, compare the ***Assists %*** with the average assists ratio. You can see the normal assists ratio in the assists widget, in the dashboard overview page.<br />Sources whose assists ratio is **50% higher than the average** assists ratio of the app are considered suspicious.<br />Note that the more sources are used by an app, the higher are its Contribution rates.</li></ul> |
+| **Detecting click flooding with CTIT indicators**<br /><br />Another indication of click flooding is the **even distribution of CTIT**.<br />Usually, around 70% of normal installs take place within 1 hour of the ad engagement.<br />With click flooding, there's no connection between the fake engagement and the actual install. This leads to much more than 30% of fraud installs, which have longer than a 1 hour CTIT.<br /><br />**Detecting click flooding CTIT indications:**<ol><li>In Protect360 go to the ***Identified fraud breakdown*** table.</li><li>Scroll right to the ***Click flooding indicators*** ***- CTIT*** columns.</li><li>Click flooding CTIT benchmarks:</li></ol><ul><li>Normally, ***Over 60 minutes*** values should be around 30%. Suspect sources who have more than 50% with this metric.</li><li>Normally, ***Over 5 hours*** values should be around 20%. Suspect sources who have more than 40% with this metric.</li></ul>Use the ***Anomaly insights*** [page](/docs/protect360-dashboard#anomalies-dashboard) to investigate sources with suspicious CTIT. |
 
 Benchmarks and tips
 
-### Advanced anti-fraud tips
+</Accordion>
 
-
+<Accordion title="Advanced anti-fraud tips">
 
 | **Number of installs**<br /><br />Filtering by the number of installs per checked source is important for detecting the biggest fraud sources. Additionally, a lower number of installs may not be mathematically significant. Note:<br /><br />**Note**: Sources with less than 30 installs, or even 50, are not significant enough to draw conclusions from. Expand the date range or other search criteria to get more significant results. |
 | --- |
 | **Change loyal user definition**<br /><br />The default definition for Loyal users is 3 or more launches of the app. It is an important KPI for user engagement, but unfortunately, many fraudsters know it and use it to fake high rates of loyal users, thus avoiding suspicion. Avoid being conned by creating and selecting a better, more elaborate loyal user definition.<br /><br />Analyze your app user quality KPIs such as register, tutorial completion, purchase, multiple sessions. Within the app code send a new **loyal user** in-app event if a user performs ALL the list of KPIs.<br /><br />After the first non-organic **loyal user** event is sent, go to **App Settings** and select it to indicate loyal users for your app. Expect general loyal user rates to slightly drop and then drastically drop for fraudulent sources. |
 
-
-
 Advanced anti-fraud tips
+
+</Accordion>
 
 > 📘 **Tip**
 >

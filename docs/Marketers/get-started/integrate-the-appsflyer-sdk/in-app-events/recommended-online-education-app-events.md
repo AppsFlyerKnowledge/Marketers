@@ -34,13 +34,12 @@ Recording events can help you determine:
 
 > 📘 **Important!**
 >
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
+> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=online_education). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
 > * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=online_education&view=code) for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the [**AppsFlyer developer hub**](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions)**.**
+> * Detailed instructions for your developer can be found in the [**AppsFlyer developer hub**](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).
 >
 > For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
-
 
 [![Flowchart_for_recommended_events_online_education_app_user_journey](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)
 
@@ -48,7 +47,9 @@ Recording events can help you determine:
 
 The following section provides a list of event structures that are typical to the online education vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Login (af\_login)
+<div id="login-af_login" />
+
+<Accordion title="Login (af_login)">
 
 **Purpose**
 
@@ -62,7 +63,11 @@ Whenever the user successfully logs in
 
 Can be sent without any additional parameters
 
-### Complete registration (af\_complete\_registration)
+</Accordion>
+
+<div id="complete-registration-af_complete_registration" />
+
+<Accordion title="Complete registration (af_complete_registration)">
 
 **Purpose**
 
@@ -74,15 +79,13 @@ When the user completes the signup process
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_registration\_method | Type of signup method | email, facebook |
 
+</Accordion>
 
-
-### Tutorial completion (af\_tutorial\_completion)
+<Accordion title="Tutorial completion (af_tutorial_completion)">
 
 **Purpose**
 
@@ -99,17 +102,17 @@ Recording this event can help you determine:
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_success | Whether or not the user completed the tutorial | yes |
 | af\_tutorial\_id | ID of the tutorial | 3 |
 | af\_content | Name of the tutorial | algebra |
 
+</Accordion>
 
+<div id="purchase-af_purchase" />
 
-### Purchase (af\_purchase)
+<Accordion title="Purchase (af_purchase)">
 
 **Purpose**
 
@@ -127,23 +130,21 @@ When the user lands on the thank you page after a successful purchase
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Estimated revenue from the purchase | 250.99 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Estimated revenue from the purchase | 250.99 |
 | af\_currency | Currency code | USD |
 | af\_content\_id | ID of the item | 001, 092 |
 | order\_id | Order ID | 9277 |
 | af\_receipt\_id | Receipt ID | 9277 |
 
-
+</Accordion>
 
 ## Recommended structures for custom events
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Complete exercise (complete\_excercise)
+<Accordion title="Complete exercise (complete_excercise)">
 
 **Purpose**
 
@@ -155,16 +156,14 @@ When the user completes an exercise
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | course\_name | Name of the course | algebra |
 | exercise\_name | Name of the exercise | 2 |
 
+</Accordion>
 
-
-### Course completed (course\_completed)
+<Accordion title="Course completed (course_completed)">
 
 **Purpose**
 
@@ -176,16 +175,14 @@ When the user completes a course
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | course\_name | Name of the course | algebra |
 | course\_completed | Whether the course was completed | yes |
 
+</Accordion>
 
-
-### Certificate issued (certificate\_issued)
+<Accordion title="Certificate issued (certificate_issued)">
 
 **Purpose**
 
@@ -197,9 +194,9 @@ When the user is issued a certificate
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | course\_name | Name of the course | algebra |
 | certificate\_received | Whether the certificate was issued | yes |
+
+</Accordion>

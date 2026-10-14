@@ -43,7 +43,7 @@ NativeX's configuration window includes 4 active tabs: Integration, Attribution 
 * The General Settings step in the Integration tab is **mandatory** for all partners
 * All the rest of the steps are either descriptive or **optional**
 
-## Integration tab
+<Accordion title="Integration tab">
 
 ### Activate partners
 
@@ -78,17 +78,15 @@ In this section, you can map your AppsFlyer events with NativeX via postbacks.
 4. Click **Add Event** to add an SDK Event to the list
 5. Complete the following parameters:
 
-
-
 | Parameter Name | Description |
 | --- | --- |
 | **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
 | **Partner Event Identifier** | The unique name or ID of each event as defined on NativeX's side.  <br />Obtain the corresponding Event ID from NativeX and set in the text field. |
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
+</Accordion>
 
-
-## Attribution link tab
+<Accordion title="Attribution link tab">
 
 In this tab, you can create the attribution links you want to send to NativeX for attributing NativeX's campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
@@ -111,7 +109,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
 
 ### Click-through attribution
 
@@ -139,15 +137,21 @@ More details about the [view-through attribution here](/docs/set-up-lookback-win
 
 The impression attribution link contains similar attribution data to the click recording link (besides the different lookback window). Send it to NativeX to be activated when a corresponding ad is watched, usually for 1 second or more.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 NativeX automatically sends encrypted CPI cost data on the attribution link for all installs.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue data is not supported by NativeX.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant NativeX, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for NativeX, the permissions tab is active and you can grant control to NativeX.
 
@@ -160,7 +164,9 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow access to your retention report*** - only to the partner's own retention data
 * ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
 * ***Allow access to your aggregate in-app events data** -*only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*****a** - only to the revenue data attributed to the partner
+* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+
+</Accordion>

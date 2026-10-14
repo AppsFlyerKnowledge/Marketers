@@ -40,29 +40,35 @@ The Single Source of Truth report:
 * **Load data into your BI systems:** SSOT provides an efficient and accurate way to build your internal BI systems using aggregated data. This includes attributions, in-app events, and revenue data, covering all dimensions and metrics. By loading this data into your BI systems, you can enhance your campaign performance and optimization processes while maintaining user privacy.
 * **Best granularity**: SSOT offers the highest level of granularity possible, even when modeling data gaps inherent in SKAN. This detailed data helps in making precise and informed decisions.
 
-## Setting up Data Locker
+<Accordion title="Setting up Data Locker">
 
 To enable Single Source of Truth or SSOT reports, complete one of the following procedures.
 
 | Do you currently get data via Data Locker? | Procedure |
 | --- | --- |
-| Yes | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/06f3ff8ccacda390fa259853b93e8b0e4ad01a692272f945fd71ca913e445bbb-30159015098129.png)To add the reports to Data Locker:<br /><br />1. In AppsFlyer, from the side menu, select **Export > Data Locker**.<br />2. Select all the reports you want to get.<br />3. Click **Save configuration**.   <br />   The reports will be available the next day. |
-| No | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/06f3ff8ccacda390fa259853b93e8b0e4ad01a692272f945fd71ca913e445bbb-30159015098129.png)**To set up Data Locker**:<br /><br />1. Complete the first-time Data Locker ([advertiser](/docs/data-locker-for-marketers#set-up-data-locker) \| [partner](/docs/data-locker-for-partners)) setup.<br />2. Add the reports to Data Locker:<br />   1. In AppsFlyer, from the side menu, select **Export > Data Locker**.<br />   2. Select all the reports you want to get.<br />   3. Click **Save configuration**.   <br />      The reports will be available the next day. |
+| Yes | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/06f3ff8ccacda390fa259853b93e8b0e4ad01a692272f945fd71ca913e445bbb-30159015098129.png)To add the reports to Data Locker:<ol><li>In AppsFlyer, from the side menu, select **Export > Data Locker**.</li><li>Select all the reports you want to get.</li><li>Click **Save configuration**.<br />The reports will be available the next day.</li></ol> |
+| No | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/06f3ff8ccacda390fa259853b93e8b0e4ad01a692272f945fd71ca913e445bbb-30159015098129.png)**To set up Data Locker**:<ol><li>Complete the first-time Data Locker ([advertiser](/docs/data-locker-for-marketers#set-up-data-locker) \| [partner](/docs/data-locker-for-partners)) setup.</li><li>Add the reports to Data Locker:<ol><li>In AppsFlyer, from the side menu, select **Export > Data Locker**.</li><li>Select all the reports you want to get.</li><li>Click **Save configuration**.<br />The reports will be available the next day.</li></ol></li></ol> |
 
-### SSOT report facts
+</Accordion>
+
+<Accordion title="SSOT report facts">
 
 | Name | Description |
 | --- | --- |
-| Reports available | The following reports are available:<br /><br />* User acquisition: attributes conversions to user acquisition channels. This includes post-install activity occurring during re-engagement windows.<br />* Retargeting: attributes conversions to retargeting channels for events occurring:<br />  * As a result of re-attributions<br />  * During a re-engagement window<br />* Unified: attributes conversions to the last touch channel, according to the AppsFlyer [double attribution](/docs/resolve-retargeting-double-attribution) rules. This means that post-install activity occurring during re-engagements displays under the retargeting media source and not under the UA media source. |
+| Reports available | The following reports are available:<ul><li>User acquisition: attributes conversions to user acquisition channels. This includes post-install activity occurring during re-engagement windows.</li><li>Retargeting: attributes conversions to retargeting channels for events occurring:<ul><li>As a result of re-attributions</li><li>During a re-engagement window</li></ul></li><li>Unified: attributes conversions to the last touch channel, according to the AppsFlyer [double attribution](/docs/resolve-retargeting-double-attribution) rules. This means that post-install activity occurring during re-engagements displays under the retargeting media source and not under the UA media source.</li></ul> |
 | Reporting period | The report provides cohort revenue metrics up to 30 days post-install (D7, D14, D21, D30). Note: Only revenue metrics are supported beyond D7. |
 | Directory structure | The directory structure is organized by install date. Each install date folder includes multiple versions created daily. Each version reflects the updated cumulative data for this install date. This means you should only process the latest available report version. [Learn more](/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#directory-structure) |
 | Report structure | The schema of the report (the dimensions and metrics included) is fixed and can't be modified. |
 | Timezone | UTC |
-| Data freshness | * Daily.<br />* Metrics are calculated using data available at midnight UTC, which is the end of the day.<br />* SLA: New reports are available in Data Locker by 16:00 UTC. A new version is created for the last 15 install dates each day. [See more](/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#report-folder-hierarchy) |
+| Data freshness | <ul><li>Daily.</li><li>Metrics are calculated using data available at midnight UTC, which is the end of the day.</li><li>SLA: New reports are available in Data Locker by 16:00 UTC. A new version is created for the last 15 install dates each day. [See more](/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#report-folder-hierarchy)</li></ul> |
+
+</Accordion>
 
 ## Directory structure
 
-### Report folder hierarchy
+<div id="report-folder-hierarchy" />
+
+<Accordion title="Report folder hierarchy">
 
 * The primary folders are organized by the report type. Possible
   values:
@@ -88,11 +94,15 @@ Each install date is limited to up to 31 versions. After 31 days,
 all metrics are fully fixed and completed.
 [Learn more](/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#partial-data).
 
-### Directory and filename structure
+</Accordion>
+
+<Accordion title="Directory and filename structure">
 
 The path to the report consists of the following format:
 
-``/t=/install\_date=``/version=/``
+`<bucket-name>`/t=&lt;ssot\_unified OR ssot\_retargeting OR
+ssot\_user\_acquisition>/install\_date=`<yyyy-mm-dd>`/version=&lt;unix
+timestamp>/`<parquet file number>`
 
 Example folder hierarchy in advertiser bucket:
 
@@ -133,6 +143,8 @@ Legend:
   action occurred.
 * version: Unix timestamp indicating when the version was created.
 
+</Accordion>
+
 ## Report structure
 
 The report is comprised of dimensions and metrics.
@@ -141,7 +153,7 @@ The metrics covers data of attributions, revenue, and the unique users performin
 
 [Download sample report](https://docs.google.com/spreadsheets/d/1e32M7XW7Lr7s7LTZUKO4EGwm4VrbbfwT/pub?output=xlsx)
 
-### Field formats
+<Accordion title="Field formats">
 
 | Format name | Description |
 | --- | --- |
@@ -153,24 +165,15 @@ The metrics covers data of attributions, revenue, and the unique users performin
 | Integer | Integer |
 | Float | Real floating number that can have a decimal point and values after the decimal point. |
 
-### Dimensions
+</Accordion>
 
-| Field name | Description | Format |
-| --- | --- | --- |
-| af\_ad\_id | Ad identifier. Campaign hierarchy. | string |
-| af\_ad | Ad name. | string |
-| af\_adset\_id | Ad-set identifier. Campaign hierarchy. | string |
-| af\_adset | Ad-set name. | string |
-| app\_id | App ID (advertiser app) with prefix ID. | string |
-| attribution\_method | The mechanism used for attributing the event. Examples of such mechanisms include AppsFlyer methods, SKAdNetwork (SKAN), and organic. | string |
-| attributed\_touch\_type | Possible values: click impression, null. | string |
-| campaign | Campaign name reported by the ad network to AppsFlyer. | string |
-| af\_c\_id | Campaign identifier. | string |
-| days\_post\_attribution | The number of days elapsed since the conversion date (not the specific conversion timestamp). Tip! Use this to calculate retention and KPI days. | int |
-| event\_name | Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app.   | event\_name | What did the user do | | --- | --- | | af\_conversion | User converted. Use conversion\_type to identify if it is an install, re-download, re-attribution. or re-engagement. | | Advertiser defined in-app event | Performed an in-app event in the app | | af\_ssot\_organic | Used to aggregate organic revenue from all events.  Note:af\_ssot\_organic is a system-generated event that aggregates all organic revenue data for apps using the SKAN Overall revenue measurement schema. This event appears when granular revenue by specific in-app events isn’t available due to SKAN limitations. It ensures that total organic revenue is still visible, even when attributed events can't be individually reported. | |
-stringgeoThe ISO country code. Derived from the user IP address in AppsFlyer classic attribution methods, while in SKAN the data is either enriched from ad-networks or modeled.stringinstall_dateThe installation date of the app. <br/><br/>SKAN: Estimated by AppsFlyer based on the postback arrival time. <br/><br/>AppsFlyer attribution methods: <br/>• User acquisition: First launch after install <br/>• Retargeting: First launch after re-engagement or re-attribution <br/><br/>Note: install_date is available as a column only for data warehouse connections, such as BigQuery and Snowflake.stringis_primary_attributionUA: TrueRetargeting: During a re-engagement window, we attribute to both the original media source (before the re-engagement) and to the re-engagement media source. While the event is within the re-engagement window. The original media source will be FALSE (not primary attribution). The re-engagement media source will be TRUE.boolmedia_sourceAd network attributed to an event.stringselected_currency3-letter currency code (USD, EUR) set by you in the app settings. Format ISO-4217. This is the same currency used to display revenue in SSOT user interface.stringconversion_typePossible values:<br/>Install: User downloads and opens an app for the first time.<br/>Re-attribution: User reinstalls and is attributed to a new campaign.<br/>Re-download (SKAN): User installs the app again after uninstalling.<br/>Re-engagement: Re-engagement: User reopens the app after interacting with a retargeting ad.string
+<Accordion title="Dimensions">
 
-### Metrics
+<table><thead><tr><th>Field name</th><th>Description</th><th>Format</th></tr></thead><tbody><tr><td>af_ad_id</td><td>Ad identifier. Campaign hierarchy.</td><td>string</td></tr><tr><td>af_ad</td><td>Ad name.</td><td>string</td></tr><tr><td>af_adset_id</td><td>Ad-set identifier. Campaign hierarchy.</td><td>string</td></tr><tr><td>af_adset</td><td>Ad-set name.</td><td>string</td></tr><tr><td>app_id</td><td>App ID (advertiser app) with prefix ID.</td><td>string</td></tr><tr><td>attribution_method</td><td>The mechanism used for attributing the event. Examples of such mechanisms include AppsFlyer methods, SKAdNetwork (SKAN), and organic.</td><td>string</td></tr><tr><td>attributed_touch_type</td><td>Possible values: click impression, null.</td><td>string</td></tr><tr><td>campaign</td><td>Campaign name reported by the ad network to AppsFlyer.</td><td>string</td></tr><tr><td>af_c_id</td><td>Campaign identifier.</td><td>string</td></tr><tr><td>days_post_attribution</td><td>The number of days elapsed since the conversion date (not the specific conversion timestamp).<br/>Tip! Use this to calculate retention and KPI days.</td><td>int</td></tr><tr><td>event_name</td><td><p>Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app.</p><figure><table><colgroup><col/><col/></colgroup><thead><tr><th>event_name</th><th>What did the user do</th></tr></thead><tbody><tr><td>af_conversion</td><td>User converted. Use conversion_type to identify if it is an install, re-download, re-attribution. or re-engagement.</td></tr><tr><td>Advertiser defined in-app event</td><td>Performed an in-app event in the app</td></tr><tr><td>af_ssot_organic</td><td>Used to aggregate organic revenue from all events.<br/><br/>Note:af_ssot_organic is a system-generated event that aggregates all organic revenue data for apps using the SKAN Overall revenue measurement schema. This event appears when granular revenue by specific in-app events isn’t available due to SKAN limitations. It ensures that total organic revenue is still visible, even when attributed events can't be individually reported.</td></tr></tbody></table></figure></td><td>string</td></tr><tr><td>geo</td><td>The ISO country code. Derived from the user IP address in AppsFlyer classic attribution methods, while in SKAN the data is either enriched from ad-networks or modeled.</td><td>string</td></tr><tr><td>install_date</td><td>The installation date of the app. <br/><br/>SKAN: Estimated by AppsFlyer based on the postback arrival time. <br/><br/>AppsFlyer attribution methods: <br/>• User acquisition: First launch after install <br/>• Retargeting: First launch after re-engagement or re-attribution <br/><br/>Note: <code>install_date</code> is available as a column only for data warehouse connections, such as BigQuery and Snowflake.</td><td>string</td></tr><tr><td>is_primary_attribution</td><td><p>UA: True</p><p>Retargeting: During a re-engagement window, we attribute to both the original media source (before the re-engagement) and to the re-engagement media source. While the event is within the re-engagement window. The original media source will be FALSE (not primary attribution). The re-engagement media source will be TRUE.</p></td><td>bool</td></tr><tr><td>media_source</td><td>Ad network attributed to an event.</td><td>string</td></tr><tr><td>selected_currency</td><td>3-letter currency code (USD, EUR) set by you in the app settings. Format ISO-4217. This is the same currency used to display revenue in SSOT user interface.</td><td>string</td></tr><tr><td>conversion_type</td><td>Possible values:<br/>Install: User downloads and opens an app for the first time.<br/>Re-attribution: User reinstalls and is attributed to a new campaign.<br/>Re-download (SKAN): User installs the app again after uninstalling.<br/>Re-engagement: Re-engagement: User reopens the app after interacting with a retargeting ad.</td><td>string</td></tr></tbody></table>
+
+</Accordion>
+
+<Accordion title="Metrics">
 
 | chosen dl name | Description | Format |
 | --- | --- | --- |
@@ -180,7 +183,9 @@ stringgeoThe ISO country code. Derived from the user IP address in AppsFlyer cla
 | uninstalls\_count | Number of app users installing the app who subsequently uninstall (delete) the app (relevant for User Acquisition only) | long |
 | unique\_users | The number of distinct users performing an event. Values are cumulative.  <br />Example: For event\_name=purchase with days\_post\_attribution=2, the value reflects unique users who made purchases within two days post-install (not only on the second day). | int |
 
-### Modeled data
+</Accordion>
+
+<Accordion title="Modeled data">
 
 AppsFlyer models data that basic SKAdNetwork reporting cannot provide.
 
@@ -195,7 +200,11 @@ Geo Data: SKAN limits data granularity, often making geo data unavailable. In su
 * In the **first version**, **organic geo may be** `null` because the modeled geo distribution may not be available yet.
 * In **subsequent versions**, organic geo may populate after additional SKAN postbacks are processed and the modeled geo distribution becomes available.
 
-### Partial data
+</Accordion>
+
+<div id="partial-data" />
+
+<Accordion title="Partial data">
 
 When analyzing recent install days, metrics for extended post-install periods (e.g., 7 days) might not be fully matured. In such cases, the metrics will still be available but will reflect partial data.
 
@@ -220,13 +229,15 @@ Examples (assuming an install date of January 1st):
 
 Note: The same logic applies to SKAN data for days 14, 21, and 30. This means that day[X] metrics (where [X] can be 7, 14, 21, or 30) becomes available only after [X] days have passed since the installation date.
 
+</Accordion>
+
 ## BI developer considerations
 
 **Scope of data in the report:**
 
 The reports contain data on user acquisition installs, retargeting re-attributions (re-downloads in SKAN), and re-engagements, along with their related in-app events.
 
-### Loading reports
+<Accordion title="Loading reports">
 
 You can load unified, user acquisition, and retargeting reports separately or together into your BI system. If you load them together and want to filter views on your own:
 
@@ -238,7 +249,9 @@ You can load unified, user acquisition, and retargeting reports separately or to
 * Use conversion\_type=install, re-engagement, or re-attribution (re-downloads in SKAN).
 * Refer to [Double attribution of retargeting events](/docs/resolve-retargeting-double-attribution) for more details
 
-### Days post-attribution
+</Accordion>
+
+<Accordion title="Days post-attribution">
 
 > 📘 **Important!**
 >
@@ -251,7 +264,9 @@ You can load unified, user acquisition, and retargeting reports separately or to
 
 An example of a common mistake is to apply a simplified logic that sums the revenue column for a specific set of dimensions. This approach results in incorrect numbers because some revenue data is counted twice (once for days\_post\_install=2 and again for days\_post\_install=7). This example is also relevant when analyzing unique users for specific in-app events.
 
-### Tips
+</Accordion>
+
+<Accordion title="Tips">
 
 * Latest Version: Always retrieve the highest version number available for each install date, as it represents the most recent data. The version number is in Unix timestamp format, so the highest value indicates the latest version. This ensures your analysis uses the most accurate and up-to-date information.
 * Revenue calculation: Revenue in USD is calculated using the exchange rate on the event day.
@@ -263,11 +278,13 @@ An example of a common mistake is to apply a simplified logic that sums the reve
 * Data Segregation: All app data is provided in a single file. Use the App ID field to segregate data per app, or set Data Locker to segregate by app.
 * Pre-attribution data such as cost, clicks, and impressions, should be taken from the cost ETL report.
 
-### Example use cases
+</Accordion>
+
+<Accordion title="Example use cases">
 
 The following are examples of some popular, practical applications of the data that BI developers can extract via Data Locker. Each example is illustrated by an SQL statement and a sample Excel visual.
 
-### Calculating total attributions per campaign
+<Accordion title="Calculating total attributions per campaign">
 
 In this query, we:
 
@@ -283,7 +300,9 @@ WHERE event_name = 'af_conversion'
 GROUP BY install_date;
 ```
 
-### Calculating conversions (installs & re-downloads) to compare with dashboard installs
+</Accordion>
+
+<Accordion title="Calculating conversions (installs & re-downloads) to compare with dashboard installs">
 
 In this query, we:
 
@@ -303,7 +322,9 @@ GROUP BY install_date, conversion_type;
 
 Note: When comparing Data Locker data with dashboard installs, include both install and re-download conversion types. The dashboard install metric includes both new installs and SKAN re-downloads. In separate SSOT Data Locker reports, the user acquisition report includes conversion\_type=install, and SKAN re-downloads are available in the retargeting report. To compare separate reports with dashboard installs, fetch both the user acquisition and retargeting reports.
 
-### Calculating retargeting conversions per geo
+</Accordion>
+
+<Accordion title="Calculating retargeting conversions per geo">
 
 In this query, we:
 
@@ -320,7 +341,9 @@ WHERE event_name = 'af_conversion'
 GROUP BY install_date, conversion_type, geo;
 ```
 
-### Calculating installs by attribution method per media source
+</Accordion>
+
+<Accordion title="Calculating installs by attribution method per media source">
 
 In this query, we:
 
@@ -337,7 +360,9 @@ WHERE event_name = 'af_conversion'
 GROUP BY install_date, attribution_method, media_source;
 ```
 
-### Calculating cumulative revenue of 30 days post-install for Facebook per ad-set
+</Accordion>
+
+<Accordion title="Calculating cumulative revenue of 30 days post-install for Facebook per ad-set">
 
 In this query, we measure the accumulated revenue within a 30-day period post-install for ads served on Facebook.
 
@@ -352,7 +377,9 @@ WHERE media_source = 'facebook'
 GROUP BY install_date, af_adset;
 ```
 
-### Calculating cumulative revenue for selected post-install periods
+</Accordion>
+
+<Accordion title="Calculating cumulative revenue for selected post-install periods">
 
 In this query, we:
 
@@ -368,7 +395,9 @@ WHERE app_id = 'YOUR_APP'
 GROUP BY install_date;
 ```
 
-### Calculating revenue from a specific in-app event (purchase) per media source
+</Accordion>
+
+<Accordion title="Calculating revenue from a specific in-app event (purchase) per media source">
 
 In this query, we:
 
@@ -384,7 +413,9 @@ WHERE event_name = 'af_purchase'  -- Change to your specific event
 GROUP BY install_date, media_source;
 ```
 
-### Calculating in-app event conversion rate for 2 days post-installs
+</Accordion>
+
+<Accordion title="Calculating in-app event conversion rate for 2 days post-installs">
 
 In this query, we calculate the conversion rate of a specific in-app event (such as 'af\_complete\_tutorial') in relation to all installations.
 
@@ -401,7 +432,9 @@ WHERE conversion_type = 'install'
 GROUP BY install_date;
 ```
 
-### Calculating ARPU for 7 days and 2 days post-install per campaign ID
+</Accordion>
+
+<Accordion title="Calculating ARPU for 7 days and 2 days post-install per campaign ID">
 
 In this query, we:
 
@@ -422,7 +455,9 @@ WHERE conversion_type = 'install'
 GROUP BY install_date, af_c_id;
 ```
 
-### Calculating Amount of Duplicates per Media Source In this query
+</Accordion>
+
+<Accordion title="Calculating Amount of Duplicates per Media Source In this query">
 
 In this query, we count the total number of duplicated user attributions by media source and install date, to highlight media channels that may have higher duplication in user attribution.
 
@@ -441,7 +476,7 @@ WHERE app_id = 'YOUR_APP'
 GROUP BY install_date, media_source;
 ```
 
-### Non-organic D7 revenue
+<Accordion title="Non-organic D7 revenue">
 
 Returns the total Day 7 revenue for non-organic installs (`AF Model` + `SKAN`), grouped by install date.
 
@@ -455,7 +490,9 @@ WHERE attribution_method IN ('AF Model','SKAN')
 GROUP BY install_date;
 ```
 
-### Organic D7 revenue
+</Accordion>
+
+<Accordion title="Organic D7 revenue">
 
 Returns the total Day 7 revenue for organic installs, grouped by install date.  
 You can use either query below—both return the same result.
@@ -484,24 +521,30 @@ WHERE event_name = 'af_ssot_organic'
 GROUP BY install_date;
 ```
 
-### Traits and limitations
+</Accordion>
+
+</Accordion>
+
+</Accordion>
+
+<Accordion title="Traits and limitations">
 
 | Name | Description |
 | --- | --- |
-| Cost data | * Cost data is not available. [Cost ETL](/docs/set-up-and-use-roi360-cost-etl-reports) can be used instead.<br />* To add the cost to the SSOT report, merge the Cost ETL data using the **Campaign ID** dimension. |
+| Cost data | <ul><li>Cost data is not available. [Cost ETL](/docs/set-up-and-use-roi360-cost-etl-reports) can be used instead.</li><li>To add the cost to the SSOT report, merge the Cost ETL data using the **Campaign ID** dimension.</li></ul> |
 | Report availability per day | Only installation days where the SSOT toggle was turned on at the end of the day will have an SSOT report for that day |
-| Two days post-install metrics | * For SKAN 4 in Conversion Studio: Data is for 2 days post-install.<br />* For SKAN 3 in Conversion Studio: Data is based on the defined SKAN activity window.  <br />  Example: If the activity window is 24 hours, events occurring within this window (even on Day X+1) are counted. |
+| Two days post-install metrics | <ul><li>For SKAN 4 in Conversion Studio: Data is for 2 days post-install.</li><li>For SKAN 3 in Conversion Studio: Data is based on the defined SKAN activity window.<br />Example: If the activity window is 24 hours, events occurring within this window (even on Day X+1) are counted.</li></ul> |
 | In-app events availability | Available only for events that occurred during the Window 1 period. |
 | SKAN redownload breakdown | Available. In the SSOT dashboard, this breakdown is unavailable and both installs and redownloads are included in the installs metric. |
 | SKAN Conversion Studio configuration changes | Changing the SKAN Conversion Studio configuration may cause inaccuracies in SSOT data for approximately 96 hours, as postbacks from installs encoded with the previous schema still arrive. |
 | Timezone | App-specific timezone is not available. |
-| Organic data | * Available for 30 days (D7-D30) post-install metrics. |
+| Organic data | <ul><li>Available for 30 days (D7-D30) post-install metrics.</li></ul> |
 | Days post-conversion (install, re-attribution, re-engagement) data | Revenue metrics available for D7, D14, D21, D30. D14-D30 are delivered only via the SSOT Data Locker report. |
 | Agency transparency | Supported. X Ads and Meta ads data is always transparent. |
 | Campaign name changes | Not supported. Use campaign ID for grouping and filtering if campaign names were changed. |
-| Ad networks | * Can access SSOT DataLocker reports to see data attributed to their media source if:<br />  * The advertiser has SSOT turned on in Conversion Studio.<br />  * The ad network is running SKAN campaigns.<br />  * The ad network has the required [permissions](/docs/set-up-an-integrated-partner#permissions-tab) from the advertiser to access aggregate data. |
+| Ad networks | <ul><li>Can access SSOT DataLocker reports to see data attributed to their media source if:<ul><li>The advertiser has SSOT turned on in Conversion Studio.</li><li>The ad network is running SKAN campaigns.</li><li>The ad network has the required [permissions](/docs/set-up-an-integrated-partner#permissions-tab) from the advertiser to access aggregate data.</li></ul></li></ul> |
 | Agency access | Not available. Agency users can view SSOT data in the SSOT dashboard. |
-| D7 metrics | * D7 metrics for organic traffic are available starting February 16, 2025.<br />* May be missing or less than D2 metrics if:<br />  * The date range includes dates for which 8 days haven't passed.<br />  * Modeled data isn't available (e.g., fewer than 14 days of revenue data). [Learn more](/docs/skan-modeled-data#revenue-ltv).<br />  * SKAN Conversion Studio configuration changed in the past 14 days.<br />  * There are fewer than 10 installs for a given date. |
+| D7 metrics | <ul><li>D7 metrics for organic traffic are available starting February 16, 2025.</li><li>May be missing or less than D2 metrics if:<ul><li>The date range includes dates for which 8 days haven't passed.</li><li>Modeled data isn't available (e.g., fewer than 14 days of revenue data). [Learn more](/docs/skan-modeled-data#revenue-ltv).</li><li>SKAN Conversion Studio configuration changed in the past 14 days.</li><li>There are fewer than 10 installs for a given date.</li></ul></li></ul> |
 | Predefined event name | Since the event name ‘af\_conversion’ is used to indicate different types of conversions, apps that have an event specifically named ‘af\_conversion’ will see their original event renamed to ‘af\_conversion\_event’. |
 | Local currency difference | As the SSOT dashboard and SSOT DataLocker report are not calculated simultaneously, minor discrepancies may occur when comparing revenue in local currency on the dashboard to the selected currency in the report. This is due to the slightly different currency rates used at the times the data were calculated. |
 | SKAN D7 partial data | As SKAN D7 data is modeled and the initial version is ready 7 days post-install, when analyzing D7 metrics for days within the last 7 days, the D7 data will be partial. For records where the attribution method is SKAN, the D7 metrics will be lower than the D2 metrics. |
@@ -509,3 +552,5 @@ GROUP BY install_date;
 | Ad revenue data freshness | Ad revenue data has a delay of one day.<br /><br />For example, a report created on the morning of July 3 will include ad revenue data up to and including July 1. |
 | Event metrics | Only revenue metrics are supported beyond D7. |
 | SSOT Dashboard | The dashboard only shows D2 and D7 revenue. Long-term revenue cohorts (Day 14/21/30 ) are currently available only in the SSOT Data Locker export. |
+
+</Accordion>

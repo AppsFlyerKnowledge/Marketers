@@ -26,12 +26,12 @@ x-zendesk:
 
 AppsFlyer receives engagement data (clicks and impressions) for attribution in a number of ways:
 
-- The user **clicks** the ad and gets [redirected to AppsFlyer](#users-redirected-via-appsflyer), and then to the app store.
-- The user **clicks or views** the ad and is [directly sent to the app store](#users-sent-directly-by-the-ad-network), while the **attribution link is sent to AppsFlyer from the server**.
+* The user **clicks** the ad and gets [redirected to AppsFlyer](#users-redirected-via-appsflyer), and then to the app store.
+* The user **clicks or views** the ad and is [directly sent to the app store](#users-sent-directly-by-the-ad-network), while the **attribution link is sent to AppsFlyer from the server**.
 
 In both cases, the regular [attribution link structure and parameters](/docs/about-link-structure-and-parameters) are used.
 
-> 📘 Note
+> 📘 **Note**
 >
 > For SRNs, data is received via specialized APIs
 
@@ -64,5 +64,5 @@ Ad networks can only report clicks and impressions to AppsFlyer **directly from 
 
 To prevent loss of attributions and revenue for the ad network, clicks and impressions must be sent to AppsFlyer in real-time:
 
-- **Impression URLs** must be reported once an ad is served
-- **Click URLs** must be reported once a user clicks the ad
+* **Impression URLs** must be reported once an ad is served
+* **Click URLs** must be reported once a user clicks the ad

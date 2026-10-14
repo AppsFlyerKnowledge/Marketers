@@ -24,27 +24,11 @@ x-zendesk:
 ---
 ## Reports available via Data Locker for advertisers
 
-| Data type | Report group | Data Locker subscription required |
-| --- | --- | --- |
-| Raw | User journey—raw data | Yes (2) |
-| Raw | Protect360 | Yes |
-| Raw | People-Based Attribution (PBA) | No |
-| Raw | Incrementality | No |
-| Raw | SKAN | No (1) |
-| Raw | Revenue | Ad revenue single version report requires a Data Locker subscription.<br />All other reports require a ROI360 Advanced package subscription. |
-| Raw | CTV, PC, and console apps | Yes |
-| Aggregated | Cohort analytics | No (1) |
-| Advanced aggregated | Cohort analytics | No (3) |
-| Aggregated | Creative Optimization | No (1)<br />Requires a Creative Optimization Premium subscription plan. |
-| Aggregated | SSOT | No (1) |
+<table><colgroup><col/><col/><col/></colgroup><thead><tr><th>Data type</th><th>Report group</th><th>Data Locker subscription required</th></tr></thead><tbody><tr><td>Raw</td><td>User journey—raw data</td><td>Yes (2)</td></tr><tr><td>Raw</td><td>Protect360</td><td>Yes</td></tr><tr><td>Raw</td><td>People-Based Attribution (PBA) </td><td>No </td></tr><tr><td>Raw</td><td>Incrementality</td><td>No </td></tr><tr><td>Raw</td><td>SKAN</td><td>No (1)</td></tr><tr><td>Raw</td><td>Revenue</td><td><p>Ad revenue single version report requires a Data Locker subscription.</p><p>All other reports require a ROI360 Advanced package subscription.</p></td></tr><tr><td>Raw</td><td>CTV, PC, and console apps</td><td>Yes</td></tr><tr><td>Aggregated</td><td>Cohort analytics</td><td>No (1)</td></tr><tr><td>Advanced aggregated</td><td>Cohort analytics</td><td>No (3)</td></tr><tr><td>Aggregated</td><td>Creative Optimization</td><td><p>No (1)</p><p>Requires a Creative Optimization Premium subscription plan.</p></td></tr><tr><td>Aggregated</td><td>SSOT</td><td>No (1)</td></tr><tr><td colspan="3"><p>(1) If you don't have a Data Locker subscription, you must provide <a href="./data-locker-for-marketers#storage-options">storage owned by you</a>.</p><p>(2) Except for Cross-platform engagements.</p><p>(3) Available with Data Locker subscription or with analytics API suite.</p></td></tr></tbody></table>
 
-> 📘 Note
->
-> (1) If you don't have a Data Locker subscription, you must provide [storage owned by you](/docs/data-locker-for-marketers#storage-options).
-> (2) Except for Cross-platform engagements.
-> (3) Available with Data Locker subscription or with analytics API suite.
+<div id="data-freshness-explanations" />
 
-### Data freshness
+<Accordion title="Data freshness">
 
 Data Locker report availability varies by report type. Depending on the report, data is delivered using an hourly, daily, or versioned freshness model. For more information on how these freshness intervals map to the Data Locker folder hierarchy, see [Folder structure](/docs/data-locker-for-marketers/live_preview/01KKER5X9ZVJNR5RWJ08ZN1P8Y#folder-structure).
 
@@ -54,9 +38,13 @@ Data Locker report availability varies by report type. Depending on the report, 
 | Daily | Reports that are generated once per day rather than updated continuously throughout the day. | [Uninstall report](/docs/measure-uninstalls) |
 | Versioned | Reports in which the same day's data can be published multiple times as newer or more complete data becomes available, with the latest version being the most accurate. | [Attributed ad revenue report](/docs/revenue-etl-reports#ad-revenue-versioned) |
 
+</Accordion>
+
 ## Raw data reports
 
-### User journey
+<div id="user-journey" />
+
+<Accordion title="User journey">
 
 For a description of the report types, see [user journey reports](/docs/raw-data-reporting-overview).
 
@@ -81,7 +69,11 @@ For a description of the report types, see [user journey reports](/docs/raw-data
 | Reinstalls | Organic reinstalls | 1-3 hours | Organic |  |
 | User acquisition | Cross-platform engagements | Hourly | Both | **✓** |
 
-### Protect360
+</Accordion>
+
+<div id="protect360" />
+
+<Accordion title="Protect360">
 
 See [about Protect360 reports](/docs/protect360-raw-data-reports)
 
@@ -90,9 +82,11 @@ See [about Protect360 reports](/docs/protect360-raw-data-reports)
 | Blocked installs | 1-3 hours |
 | Blocked in-app events | 1-3 hours |
 | Blocked clicks | 1-3 hours |
-| Post-attribution installs | Daily<br />Each day's report contains post-attribution installs reported on the previous day. For example, the report for data generated on Monday is in the Tuesday report. |
+| Post-attribution installs | Daily<br /><br />Each day's report contains post-attribution installs reported on the previous day. For example, the report for data generated on Monday is in the Tuesday report. |
 
-### People-Based Attribution
+</Accordion>
+
+<Accordion title="People-Based Attribution">
 
 **Data freshness**
 
@@ -100,8 +94,8 @@ Daily available 10-12 hours after the end of the previous day UTC. For example, 
 
 **Considerations**
 
-- The data of all PBA brand bundles in the account is always provided without considering the app filter.
-- Data segregation by app isn't available.
+* The data of all PBA brand bundles in the account is always provided without considering the app filter.
+* Data segregation by app isn't available.
 
 | Report type (topic) |
 | --- |
@@ -110,18 +104,22 @@ Daily available 10-12 hours after the end of the previous day UTC. For example, 
 | [Website-assisted installs](/docs/pba-raw-data-reports#websiteassisted-installs::7e12586d) |
 | [Conversion Paths](/docs/pba-raw-data-reports#conversion-paths) |
 
-### Incrementality
+</Accordion>
+
+<Accordion title="Incrementality">
 
 See [Incrementality reports](/docs/incrementality-for-remarketing-overview#available-reports)
 
-### SKAN
+</Accordion>
+
+<Accordion title="SKAN">
 
 About [SKAN raw data reports](/docs/skan-raw-data-reports)
 
 **Data freshness**
 
-- Data is available on the day following the day the postback is received by AppsFlyer or the data reported to AppsFlyer by API
-- Data is contained in the h=23 folder of the date the data is received by AppsFlyer. Example: If the postback was received on Monday, it is processed after the end of the day. Processing is completed, by 12:00 UTC Tuesday, the data is made available in the Monday h=23 folder.
+* Data is available on the day following the day the postback is received by AppsFlyer or the data reported to AppsFlyer by API
+* Data is contained in the h=23 folder of the date the data is received by AppsFlyer. Example: If the postback was received on Monday, it is processed after the end of the day. Processing is completed, by 12:00 UTC Tuesday, the data is made available in the Monday h=23 folder.
 
 | Report type (topic) |
 | --- |
@@ -132,23 +130,28 @@ About [SKAN raw data reports](/docs/skan-raw-data-reports)
 | In-app events |
 | SRN advertising dimensions |
 
-### Revenue
+</Accordion>
+
+<Accordion title="Revenue">
 
 See [Revenue ETL Data Locker reports](/docs/revenue-etl-reports)
 
 See [ad revenue raw data](/docs/roi360-guide-ad-revenue-attribution#ad-revenue-raw-data)
 
-### CTV, PC, and console platform data
+</Accordion>
+
+<Accordion title="CTV, PC, and console platform data">
 
 See [CTV, PC, and console platform data via Data Locker](/docs/ctv-pc-and-console-data-via-data-locker)
 
+</Accordion>
+
 ## Advanced raw data reports (Beta)
 
-Advanced Reports introduce a new generation of raw data reports designed to provide structured, validated, and **AI-ready datasets**. They enable the ingestion and analysis of the **entire user journey, from the first engagement to conversion and post-install activity, using just three reports**.
+Advanced Reports introduce a new generation of raw data reports designed to provide structured, validated, and **AI-ready datasets**. They enable the ingestion and analysis of the **entire user journey, from the first engagement to conversion and post-install activity, using just three reports**.  
+Built with **typed fields**, **refined field naming**, and a consistent schema across all datasets, these reports ensure clarity, accuracy, and ease of use. The unified structure simplifies joins between datasets, **reduces ETL and downstream processing complexity**, and delivers data that supports advanced analytics and gives you the flexibility to work with your data however you need. For more information, see [About Data Locker Advanced Reports](/docs/about-data-locker-advanced-reports).
 
-Built with **typed fields**, **refined field naming**, and a consistent schema across all datasets, these reports ensure clarity, accuracy, and ease of use. The unified structure simplifies joins between datasets, **reduces ETL and downstream processing complexity**, and delivers data that supports advanced analytics and gives you the flexibility to work with your data however you need. For more information, see [About Data Locker Advanced Reports](/docs/about-data-locker-advanced-reports).
-
-### Raw engagements report
+<Accordion title="Raw engagements report">
 
 The Raw engagements report consolidates click and impression data across user acquisition and retargeting activities from both mobile and connected TV (CTV) platforms. By providing a unified view of user interactions with your ads, this report enables in-depth analysis of top-of-funnel performance and helps marketers identify which creatives and channels drive meaningful engagement. It also supports cost and reach optimization at the engagement level, providing a solid foundation for evaluating marketing exposure and traffic quality. For more information, see [Raw engagements report](/docs/about-data-locker-advanced-reports#engagements) in About Data Locker Advanced Reports.
 
@@ -156,7 +159,9 @@ The Raw engagements report consolidates click and impression data across user ac
 | --- | --- | --- | --- |
 | User acquisition and retargeting | Clicks and impressions | 1–3 hours | ✅ |
 
-### Conversion report
+</Accordion>
+
+<Accordion title="Conversion report">
 
 The Conversions report provides a comprehensive view of all app installations, including organic and non-organic sources across mobile and connected TV (CTV) platforms. By centralizing conversion data, marketers can perform comprehensive growth analysis using a single, streamlined dataset. Use this report to precisely measure and optimize marketing performance. For more information, see [Conversion report](/docs/about-data-locker-advanced-reports#conversions) in About Data Locker Advanced Reports.
 
@@ -164,26 +169,30 @@ The Conversions report provides a comprehensive view of all app installations, i
 | --- | --- | --- | --- |
 | User acquisition and retargeting | Conversions | 1–3 hours | ✅ |
 
-> 📘 Note
+> 📘 **Note**
 >
-> - Reinstalls are not included in this report.
-> - For extended platform apps, including CTV, PC, and console, retargeting conversion events are not included.
+> * Reinstalls are not included in this report.
+> * For extended platform apps, including CTV, PC, and console, retargeting conversion events are not included.
 
-### End-user events report
+</Accordion>
 
-The End User Events report captures detailed in-app event data, including sessions, purchases, registrations, and level completions, across mobile and CTV platforms. Each event is enriched with a full attribution context, enabling detailed analysis of user behavior, retention, and lifetime value while ensuring complete attribution traceability. For more information, see [End-user events report](/docs/data-locker-advertiser-reports#enduser-events) in About Data Locker Advanced Reports.
+<Accordion title="End-user events report">
+
+The End User Events report captures detailed in-app event data, including sessions, purchases, registrations, and level completions, across mobile and CTV platforms. Each event is enriched with a full attribution context, enabling detailed analysis of user behavior, retention, and lifetime value while ensuring complete attribution traceability. For more information, see [End-user events report](#enduser-events) in About Data Locker Advanced Reports.
 
 | Category | Report type (topic) | Data freshness | Unique to Data Locker |
 | --- | --- | --- | --- |
 | User acquisition and retargeting | End user events | 1–3 hours | ✅ |
 
-> 📘 Note
+> 📘 **Note**
 >
 > For extended platform apps, including CTV, PC, and console, retargeting end-user events are not included.
 
+</Accordion>
+
 ## Aggregated reports
 
-### Cohort analytics
+<Accordion title="Cohort analytics">
 
 **Data freshness**
 
@@ -195,10 +204,16 @@ The reports are typically available by 12:00 UTC in the folder of the preceding 
 | [Cohort user acquisition](/docs/cohort-analytics-via-data-locker) |
 | [Cohort retargeting](/docs/cohort-analytics-via-data-locker) |
 
-### Advanced aggregated reports
+</Accordion>
+
+<Accordion title="Advanced aggregated reports">
 
 Advanced aggregated reports in Data Locker contain aggregated data with optimal data freshness, accuracy, granularity, and unlimited volume. [Learn more](/docs/advanced-aggregated-reports-in-data-locker)
 
-### Creative Optimization ETL
+</Accordion>
+
+<Accordion title="Creative Optimization ETL">
 
 Creative Optimization ETL reports equip your data analysts with all the information they need for creative performance analysis. Full asset-level performance reporting is provided, including all key performance indicators (KPIs), upper and lower funnel KPIs, attribution data, and creative asset data. [Learn more](/docs/creative-optimization-etl-reporting)
+
+</Accordion>

@@ -44,7 +44,7 @@ This section describes how to set up your Adobe ESP integration with AppsFlyer.
 
 Before you begin setting up your Adobe ESP integration with AppsFlyer, you'll need to have an account with Adobe. The following items will be required from them:
 
-* A new **click-tracking domain (**described in [Step 1.](/docs/adobe-esp-integration-with-appsflyer#af-accordion-1))
+* A new **click-tracking domain** (described in [Step 1.](/docs/adobe-esp-integration-with-appsflyer#af-accordion-1))
 * The **ESP endpoint**: The endpoint is provided to you by the ESP so you can route your clicks to its servers. Example of the ESP endpoint structure: esp.endpoint.com.
 
 **To set up the integration, follow these steps:**
@@ -65,7 +65,7 @@ It consists of a subdomain and your main domain, such as mail.yourbrand.com. Dif
 
 <Accordion title="Step 2. Use a OneLink template for your email campaign">
 
-Create a [OneLink template](/docs/create-a-onelink-template#procedures) and configure Universal Links/App Links under "When app is installed". This template will be used later to create OneLink links for your email campaigns.
+Create a [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template) and configure Universal Links/App Links under "When app is installed". This template will be used later to create OneLink links for your email campaigns.
 
 *If you already have an existing OneLink template configured that enables Universal Links/App Links, you can use it.
 
@@ -142,9 +142,9 @@ For the **unsubscribe link,** there is no need to perform additional steps beyon
 
 Have your developer make the following configurations to your app:
 
-* [Configure your app to support associated domains](#h_01J3W8XR5QS227XNCD453RWYZ9)
-* [Configure your app to support deep linking](#h_01J3W8Y7FMSWPG7MFF6FMSXFM3)
-* [Configure your app to handle Weblinks and Application links](#h_01J3W8ZMHSXQGJPQEVR62Q28X9)
+* [Configure your app to support associated domains](#configure-your-app-to-support-associated-domains)
+* [Configure your app to support deep linking](#configure-your-app-to-support-deep-linking)
+* [Configure your app to handle Weblinks and Application links](#configure-your-app-to-handle-weblinks-and-application-links)
 
 #### **Configure your app to support associated domains**
 

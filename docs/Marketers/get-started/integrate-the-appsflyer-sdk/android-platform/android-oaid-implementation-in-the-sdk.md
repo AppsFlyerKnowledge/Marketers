@@ -38,45 +38,50 @@ The integration of OAID consists of 3 steps:
 2. Integrating the AppsFlyer OAID plugin module.
 3. Integrating the AppsFlyer SDK.
 
-> 📘 Note
->
-> - For apps that are intended to be used in China, the MSA SDK must be used.
-> - For apps that are intended to be used globally on Huawei devices, the Huawei HMS library should be used.
+**Note**:
 
-### MSA SDK
+* For apps that are intended to be used in China, the MSA SDK must be used.
+* For apps that are intended to be used globally on Huawei devices, the Huawei HMS library should be used.
+
+<div id="msa-sdk" />
+
+<Accordion title="MSA SDK">
 
 **To integrate and use the MSA SDK**:
 
 1. Follow the instructions on the [MSA website](http://www.msa-alliance.cn/col.jsp?id=120) to register your app.
-   - Registering allows you to download the SDK.
-   - As part of the registration process, you receive a certificate file that needs to be added into the app.
+   * Registering allows you to download the SDK.
+   * As part of the registration process, you receive a certificate file that needs to be added into the app.
 2. Tell your developers to follow their [integration instructions](https://dev.appsflyer.com/hc/docs/oaid#msa-sdk-integration).
 
-### Huawei HMS SDK
+</Accordion>
+
+<Accordion title="Huawei HMS SDK">
 
 **To integrate and use the Huawei HMS SDK**:
 
-- Tell your developers to follow their [integration instructions](https://dev.appsflyer.com/hc/docs/oaid#huawei-hms-sdk-integration).
+* Tell your developers to follow their [integration instructions](https://dev.appsflyer.com/hc/docs/oaid#huawei-hms-sdk-integration).
+
+</Accordion>
 
 ## Additional information
 
-### Opting out of OAID collection
+<div id="opting-out-of-oaid-collection" />
+
+<Accordion title="Opting out of OAID collection">
 
 Once the OAID integration is complete, the SDK attempts to collect OAID automatically. If you want to prevent the collection of OAID for certain users, tell the developer to use of the following:
 
-<Tabs>
-<Tab title="Android">
+Android Unity
 
 [setCollectOAID(false) API](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectoaid) or [setDisableAdvertisingIdentifiers](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisableadvertisingidentifiers)
 
-</Tab>
-<Tab title="Unity">
-
 [setCollectOAID(false) API](https://dev.appsflyer.com/hc/docs/api#setcollectoaid) or [setDisableAdvertisingIdentifiers](https://dev.appsflyer.com/hc/docs/api#setdisableadvertisingidentifiers)
 
-</Tab>
-</Tabs>
-
-### Setting OAID manually
+<Accordion title="Setting OAID manually">
 
 If your app already collects OAID, you can skip the AppsFlyer OAID plugin integration and simply set the OAID value into the AppsFlyer SDK manually, using the [setOaidData API](https://dev.appsflyer.com/hc/docs/oaid#setting-oaid-manually).
+
+</Accordion>
+
+</Accordion>

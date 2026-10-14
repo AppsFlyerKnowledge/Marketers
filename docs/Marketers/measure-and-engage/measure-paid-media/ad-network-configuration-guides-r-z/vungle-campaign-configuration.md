@@ -47,11 +47,10 @@ an account, contact the partner to open one before setting up the integration.
 
 > 📘 **Tip**
 >
-> * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
+> * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
-
-### Integration tab
+<Accordion title="Integration tab">
 
 The Integration tab is divided into different sections as described below.
 
@@ -62,7 +61,6 @@ Connect to Vungle by activating and setting parameters in the integration tab. V
 > 📘 **Note**
 >
 > As an all-installs network, Vungle prefers to receive postbacks for all new installs of your app from any source, and they recommend selecting **All media sources, including organic** to send all install postbacks to Vungle.
-
 
 **To configure the integration**:
 
@@ -80,24 +78,24 @@ Connect to Vungle by activating and setting parameters in the integration tab. V
    * Select a ***Sending Option***.
    * Click ***Add event*** to add an SDK event to the list. Complete the parameters as described in the following table.
 
-
-
 | Parameter Name | Description |
 | --- | --- |
-| **SDK event name** | Event name received by AppsFlyer from:<br /><br />* SDK integrated in the app<br />* Server-to-server events<br /><br />**Tip:** If a needed event isn’t on the list, perform a non-organic installation on a device, then check again. |
+| **SDK event name** | Event name received by AppsFlyer from:<ul><li>SDK integrated in the app</li><li>Server-to-server events</li></ul>**Tip:** If a needed event isn’t on the list, perform a non-organic installation on a device, then check again. |
 | **Partner event identifier** | Unique event name or ID as defined by Vungle.<br /><br />Get from Vungleevent ID corresponding to your SDK event and insert it in the text field. |
 | **Send revenue** | [Default] **Not enabled:** sends all the in-app parameters to Vungle, except for the revenue parameter (`af_revenue`).<br /><br />**Enabled**: sends all the in-app parameters including, when available, the revenue amount. |
 
+</Accordion>
 
-
-### Attribution link tab
+<Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
 [Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).  
 
 **To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
-### Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
@@ -107,7 +105,9 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 [View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
-### Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 This section is relevant if you are acting as a publisher, displaying ads of the partner to your users. As such, you would certainly like to measure the engagement of your users acquired from different sources, to find the most profitable sources for you.
 
@@ -115,7 +115,9 @@ This section is relevant if you are acting as a publisher, displaying ads of the
 
 * Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
 
-### Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 You can give Vungle permission to view information or configure changes in the integration. The type of permission varies according to the business relationship (ad network/ad agency) you have with Vungle.
 
@@ -128,8 +130,6 @@ You can give Vungle permission to view information or configure changes in the i
 1. Enable ***Ad network permissions***.
 2. Give Vungle team members access to one or more of the following:
 
-
-
 | **Allow to configure integration** | Set up the integration tab (except in-app event postbacks). |
 | --- | --- |
 | Allow to configure in-app event postbacks | Set up in-app event postbacks that are mapped to Integration tab. |
@@ -139,8 +139,6 @@ You can give Vungle permission to view information or configure changes in the i
 | Allow access to your aggregate revenue data | Revenue data attributed to the partner. |
 | Allow spend ingestion |  |
 | Allow access to your Protect360 dashboard | [If enabled] Partner’s Protect360 data |
-
-
 
 Learn more about giving [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
@@ -153,14 +151,12 @@ You can allow Vungle to configure your app as an agency.
 1. Enable ***Agency*** **permissions**.
 2. Give Vungle agency access to one or more of the following:
 
-
-
 | **Allow access to your Protect360 dashboard** | [If enabled for your account] Agency’s Protect360 data |
 | --- | --- |
 | **Allow access to your retention and cohort reports** | Agency’s retention and cohort data |
 | **Allow access to aggregate organic data** | Agency’s aggregate organic data |
 | **Allow to configure in-app event postbacks** | Set up in-app event postbacks that are mapped to the integration tab. |
 
-
-
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
+
+</Accordion>

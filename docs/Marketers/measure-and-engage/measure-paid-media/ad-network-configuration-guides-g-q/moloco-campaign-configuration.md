@@ -44,11 +44,10 @@ For a detailed description of the Partner Configuration Window Header, click [he
 
 > 📘 **Tip**
 >
-> * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
+> * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
-
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
 
@@ -60,7 +59,6 @@ For more details about partner activation, please click [here](/docs/partner-act
 > 📘 **Note**
 >
 > As an all-install network, MOLOCO prefers to receive postbacks for all new installs of your app from any source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to MOLOCO.
-
 
 ### General settings
 
@@ -86,29 +84,29 @@ In this section you can map your AppsFlyer events with MOLOCO via postbacks.
 3. Click **Add Event** to add an SDK Event to the list.
 4. Complete the following parameters:
 
-
-
 | Parameter Name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.  <br />**Tip**: Don't see the event you are looking for?<br /><br />* Make sure to activate the event on a device with a non-organic installation and recheck.<br />* Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<br /><br />* **Text field:** Get the corresponding event ID from the partner.<br />* **Drop-down box:** Select the most suitable pre-defined AppsFlyer event.<br />* **As is**: Send the events as they are, without name mapping. |
-| **for users from** | Select the sending option for the event:<br /><br />* **This partner only**: send postbacks only when this event is attributed to this partner.<br />* **All media sources, including organic**: send postbacks for events attributed to any partner, as well as organic events. According to Unity Ads, this option is recommended. |
-| **including** | * **No data (default)**: send only the event itself without the event value.<br />* **Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event). According to Unity Ads, this option is recommended.<br />* **Values without revenue**: send all the parameters **excluding** the revenue value. |
-
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
+| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
+| **for users from** | Select the sending option for the event:<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources, including organic**: send postbacks for events attributed to any partner, as well as organic events. According to Unity Ads, this option is recommended.</li></ul> |
+| **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event). According to Unity Ads, this option is recommended.</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
 
 > 📘 **Note**
 >
 > You can send [ad revenue postbacks](/docs/roi360-guide-ad-revenue-attribution#ad-revenue-event-postbacks-for-ad-networks) to MOLOCO using the`af_ad_revenue` event so they can optimize campaigns.
 
+</Accordion>
 
-## Attribution link tab
+<Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
 [Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
 
-**To generate an attribution link,**follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
@@ -120,11 +118,15 @@ Yesterday's data is available from Moloco at approximately 4 AM (depending on th
 
 [View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue integration is not available for this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant MOLOCO, whether the partner acts as an ad network, agency, or both. Note that even if attribution is disabled for MOLOCO, the permissions tab is active and you can grant control to MOLOCO.
 
@@ -138,3 +140,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 * **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+
+</Accordion>

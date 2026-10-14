@@ -47,14 +47,10 @@ To clarify further, the table that follows contains a scenario of how in-app eve
 
 #### Attribution relative to the re-engagement window
 
-
-
 | Media source | Before re-engagement | During re-engagement | After re-engagement |
 | --- | --- | --- | --- |
 | User acquisition | Primary<br /><br />is\_primary\_attribution: True<br /><br />conversion\_type: install<br /><br />(is\_retargeting: False) | Secondary<br /><br />is\_primary\_attribution: False<br /><br />conversion\_type: re-engagement<br /><br />(is\_retargeting: False) | Primary<br /><br />is\_primary\_attribution: True<br /><br />conversion\_type: install<br /><br />(is\_retargeting: False) |
 | Retargeting | N/A | Primary<br /><br />is\_primary\_attribution: True<br /><br />conversion\_type: re-engagement<br /><br />(is\_retargeting: True) | N/A |
-
-
 
 ## Support for dashboard view types
 
@@ -64,11 +60,7 @@ Some dashboards and cohort reports contain multiple view options being unified, 
 
 #### Data filtering by view type using the conversion\_type field
 
-
-
 <table><thead><tr><th>View type</th><th>conversion_type</th><th>is_primary</th><th>Attribution</th></tr></thead><tbody><tr><td rowspan="2">User acquisition</td><td>install</td><td>True or False</td><td>UA events attributed to the UA media source</td></tr><tr><td>re-engagement</td><td>False</td><td>Retargeting events attributed to the UA media source.</td></tr><tr><td>Retargeting</td><td>re-engagement or re-attribution</td><td>True</td><td>Retargeting events attributed to the retargeting media source</td></tr><tr><td>Unified</td><td>install or re-engagement</td><td>True</td><td>All events attributed to the last touch media source</td></tr></tbody></table>
-
-
 
 ## How do I identify double-attributed retargeting events in user acquisition in-app reports?
 

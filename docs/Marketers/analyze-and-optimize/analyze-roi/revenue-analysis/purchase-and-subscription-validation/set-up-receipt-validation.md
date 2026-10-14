@@ -26,9 +26,7 @@ x-zendesk:
 
 The legacy Receipt validation will be shut down on **September 7, 2026**, see [Bulletin: Legacy Receipt validation is deprecated](/docs/bulletin-legacy-receipt-validation-is-deprecated). If your app uses the legacy Receipt validation, migrate to the new one by performing the setup steps below. Before you start, review the key differences and prepare the migration.
 
-### What's new in Receipt validation
-
-
+<Accordion title="What's new in Receipt validation">
 
 | Area | Legacy | New Receipt validation |
 | --- | --- | --- |
@@ -43,9 +41,9 @@ The legacy Receipt validation will be shut down on **September 7, 2026**, see [B
 | SDK availability | Removed from AppsFlyer SDK v7.0.0+ | Available from Android v6.17.5, iOS v6.17.8, and plugins v6.17.8 onward |
 | Validated purchase event recording | Supported until September 7, 2026 | Ongoing |
 
+</Accordion>
 
-
-### Prepare the migration
+<Accordion title="Prepare the migration">
 
 Before starting the migration, review the following considerations:
 
@@ -54,11 +52,15 @@ Before starting the migration, review the following considerations:
 * **Inform your UA partners about the revenue change.** Ad networks that used to ingest non-gross revenue from the `af_purchase` postback will see different values after migration.
 * **Plan your app release timeline.** After September 7, 2026, users on app versions built with SDK versions earlier than Android v6.17.5 or iOS v6.17.8 will stop generating validated `af_purchase` events. Ship your new app version with enough lead time to reach the majority of your user base before the sunset.
 
-### Switch to ROI360 Store Revenue
+</Accordion>
+
+<Accordion title="Switch to ROI360 Store Revenue">
 
 Switching to ROI360 Store Revenue does not require an SDK change, since both products use the same `validateAndLogInAppPurchase` (v2) method. Adding the Purchase Connector for automatic purchase detection is optional.
 
 For more information and setup instructions, see [Set up ROI360 store revenue](/docs/set-up-roi360-store-revenue).
+
+</Accordion>
 
 ## Overview
 
@@ -66,12 +68,11 @@ For more information and setup instructions, see [Set up ROI360 store revenue](/
 >
 > For more information about Receipt validation, including how it works and how to enable it in AppsFlyer, see [About Receipt validation](/docs/about-receipt-validation).
 
-
 To set up Receipt validation, complete the following steps in order:
 
 1. Set up store credentials (iOS and Android)
-   * [iOS](#step-1-ios-set-up-app-store-connect-keys)**:** Configure App Store Connect keys (In-App Purchase key, Key ID, and Issuer ID) in AppsFlyer to enable Receipt validation.
-   * [Android](#step-1-android-set-up-service-account-key-and-permissions)**:** Configure a Google Cloud service account, set the required permissions in Google Play Console, and upload the service account JSON key to AppsFlyer.
+   * [iOS](#step-1-ios-set-up-app-store-connect-keys): Configure App Store Connect keys (In-App Purchase key, Key ID, and Issuer ID) in AppsFlyer to enable Receipt validation.
+   * [Android](#step-1-android-set-up-service-account-key-and-permissions): Configure a Google Cloud service account, set the required permissions in Google Play Console, and upload the service account JSON key to AppsFlyer.
 2. [Implement the validateAndLog SDK API](#step-2-implement-sdk): Prepare developers to integrate the AppsFlyer `validateAndLog` SDK API and configure the sandbox environment for testing.
 3. [Test validateAndLog SDK API implementation](#step-3-verify-sdk-implementation): Perform sandbox test purchases and subscriptions on iOS and Android to verify that Receipt validation events are generated and correctly recorded by AppsFlyer.
 4. [Verify and update settings](#step-4-verify-and-update-settings): Confirm that the product type is set to Receipt validation and review store key and SDK integration statuses to ensure accurate, ongoing revenue measurement.
@@ -90,7 +91,7 @@ In step 1, obtain the following credentials from *App Store Connect* and enter
 * Setting the credentials involves steps performed in both App Store Connect and AppsFlyer. During setup, keep both the App Store Connect and AppsFlyer tabs open.
 * Your iOS app requires StoreKit v1or v2, which provides the framework for handling in-app purchases and subscriptions.
 
-### 1.1 Create the App Store Connect keys
+<Accordion title="1.1 Create the App Store Connect keys">
 
 To set iOS credentials, follow these steps:
 
@@ -113,7 +114,9 @@ To set iOS credentials, follow these steps:
 
    [![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)
 
-### 1.2 Set the App Store Connect key
+</Accordion>
+
+<Accordion title="1.2 Set the App Store Connect key">
 
 1. Enable Receipt validation. #enable-receipt-validation
 2. Under the **App Store Connect keys** step, click [![](https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png)](https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png)  **Upload** in the **In-App Purchase key**field to upload the p8 file.
@@ -124,6 +127,8 @@ To set iOS credentials, follow these steps:
 4. Click **Validate keys** to ensure the keys you entered are correct. **Note**: The **Validate keys** action may not work if your app has not yet been published in the App Store.
 5. Click **Save and Next**.
 
+</Accordion>
+
 ## Step 1 (Android). Set up service account key and permissions
 
 In step 1, obtain the following credentials from *Google Play* and *Google Cloud* and enter them on the **Revenue Settings** page in the AppsFlyer platform.
@@ -133,7 +138,7 @@ In step 1, obtain the following credentials from *Google Play* and *Google Cl
 * Setting up in-app purchase and subscription revenue measurement involves steps performed in the [Google Cloud Platform](https://cloud.google.com/), [Google Play Console,](https://play.google.com/console/) and the [AppsFlyer UI](https://hq1.appsflyer.com/auth/login). We recommend keeping tabs on all three places open throughout the setup.
 * Setup in the AppsFlyer UI requires admin permissions.
 
-### 1.1 Link your Google Play Developer account to your Google Cloud project
+<Accordion title="1.1 Link your Google Play Developer account to your Google Cloud project">
 
 **Prerequisites**: Access to Google Play Console and a Google Cloud project.
 
@@ -145,7 +150,11 @@ In step 1, obtain the following credentials from *Google Play* and *Google Cl
 
    [![](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)
 
-### 1.2 Configure your service account in the Google Cloud platform
+</Accordion>
+
+<div id="12-configure-your-service-account-in-the-google-cloud-platform" />
+
+<Accordion title="1.2 Configure your service account in the Google Cloud platform">
 
 **Prerequisites**: Access to Google Cloud platform.
 
@@ -174,7 +183,9 @@ In step 1, obtain the following credentials from *Google Play* and *Google Cl
       [![](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)
    6. Save the JSON key file, which you will upload to AppsFlyer later. **Note**! You must save the key. it can't be retrieved later. If you don't save it, you must create an entirely new key.
 
-### 1.3 Set API access permissions in Google Play Console
+</Accordion>
+
+<Accordion title="1.3 Set API access permissions in Google Play Console">
 
 **Prerequisites**: Access to Google Play Console.
 
@@ -192,7 +203,7 @@ In step 1, obtain the following credentials from *Google Play* and *Google Cl
 
    * View financial data, orders, and cancellation survey responses.
    * Manage orders and subscriptions.[![](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)
-4. On the **App permissions** tab, click **Add app,**then select your app. Add multiple apps if needed.
+4. On the **App permissions** tab, click **Add app,** then select your app. Add multiple apps if needed.
 
    [![](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)
 5. Click **Invite user**.
@@ -202,7 +213,9 @@ In step 1, obtain the following credentials from *Google Play* and *Google Cl
 
    [![](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)
 
-### 1.4 Upload the service account private key to AppsFlyer
+</Accordion>
+
+<Accordion title="1.4 Upload the service account private key to AppsFlyer">
 
 Upload and validate the Google JSON key you downloaded in [step 1.2](#12-configure-your-service-account-in-the-google-cloud-platform).
 
@@ -210,14 +223,16 @@ Upload and validate the Google JSON key you downloaded in [step 1.2](#12-config
 
 **To upload the service account private key to AppsFlyer, follow these steps**:
 
-1. [Activate Receipt validation](/docs/about-receipt-validation#enable-receipt-validation)[.](/docs/about-receipt-validation#enable-receipt-validation)
+1. [Activate Receipt validation](/docs/about-receipt-validation#activate-receipt-validation)[.](/docs/about-receipt-validation#activate-receipt-validation)
 2. Under the **Service Account Key and Permissions** step, in the **Upload Google JSON key**field, click [![](https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png)](https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png)  **Upload**.
 3. Upload the JSON file you downloaded in [step 1.2](#12-configure-your-service-account-in-the-google-cloud-platform).
-4. Click **Validate key**.**Note:**
+4. Click **Validate key.Note:**
 
    * After setting service account credentials and permissions, it can take up to 24 hours to be able to use them. This may cause you to receive errors when trying to validate the key or perform a validation test.
    * To work around the 24-hour wait time, in the Google Play Console, navigate to any application, then go to **Monetize** > **Products** > **Subscriptions/In-app products**, and make a change. For example, edit the description of your product and save it. This usually updates the account credentials and permissions immediately. You can then undo the changes.
 5. Click **Next**. The **SDK implementation** step is opened.
+
+</Accordion>
 
 ## Step 2. Implement SDK
 
@@ -240,7 +255,7 @@ To implement the validateAndLog SDK API, follow these steps:
 
 Test the in-app purchase and subscription revenue integration in a sandbox environment to confirm that the SDK connector is correctly integrated and that server notifications are properly configured and received by AppsFlyer.
 
-### Test SDK implementation
+<Accordion title="Test SDK implementation">
 
 To check whether AppsFlyer has received valid `validateAndLog` payloads from your app in the last 7 days, perform these steps:
 
@@ -248,15 +263,19 @@ To check whether AppsFlyer has received valid `validateAndLog` payloads from you
 2. Review the results, including the timestamp of the most recent payload received by AppsFlyer. Note that this check only confirms that requests are reaching AppsFlyer and does not verify data completeness or correctness.
 3. To fully validate the implementation, continue with the testing steps below.
 
-### Sandbox environment considerations
+</Accordion>
+
+<Accordion title="Sandbox environment considerations">
 
 In a sandbox environment:
 
-* Only initial purchase events cause the validateAndLog SDK API to produce an event that is recorded by AppsFlyer. An in-app purchase event is called `af_purchase_sandbox_sdk`. A subscription event is called `af_ars_sandbox_sdk`**.**
+* Only initial purchase events cause the validateAndLog SDK API to produce an event that is recorded by AppsFlyer. An in-app purchase event is called `af_purchase_sandbox_sdk`. A subscription event is called `af_ars_sandbox_sdk`.
 * Sandbox events have a revenue of 0.
 * For Android, tests performed by License Testers result in sandbox events even if the sandbox environment in the SDK isn't configured.
 
-### Test in-app purchase and subscription revenue
+</Accordion>
+
+<Accordion title="Test in-app purchase and subscription revenue">
 
 [![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
 
@@ -279,12 +298,14 @@ In a sandbox environment:
    * An `af_validated` parameter is `true`. If `af_validated` is `false` - get back to step 2 above and validate the key provided from the store
    * An `af_validation_type` parameter is `receipt_validation`.
 
+</Accordion>
+
 ## Step 4. Verify and update settings
 
 After you have completed configuring the settings above and saved the above steps, you are redirected to the active configuration view, where you can verify or update the following settings:
 
 1. Verify that the **Product type** is **Receipt validation**
-2. Make sure that **Verify purchases with the App Store** is turned on**.**
+2. Make sure that **Verify purchases with the App Store** is turned on.
 3. Verify or update the following settings:
 
    * The **App Store key** setup
@@ -296,11 +317,11 @@ With everything from the previous steps configured and the AppsFlyer validateAnd
 
 Before the developers release the new app version, make sure that:
 
-* The in-app events you want to capture as an [in-app purchase or subscription](/docs/about-receipt-validation#inapp-purchase-events-and-parameters-for-receipt-validation) aren't blocked by any of the validation rules you have configured in AppsFlyer.
+* The in-app events you want to capture as an [in-app purchase or subscription](/docs/about-receipt-validation#in-app-purchase-events-and-parameters-for-receipt-validation) aren't blocked by any of the validation rules you have configured in AppsFlyer.
 * Your developers have all sandbox flags set to `false`.
 
 [![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
 
-Once the app with the validateAndLog SDK API is released, [in-app purchase and subscription events](/docs/about-receipt-validation#inapp-purchase-events-and-parameters-for-receipt-validation) are generated and made available across all AppsFlyer dashboards, as well as in aggregated and raw data reports.
+Once the app with the validateAndLog SDK API is released, [in-app purchase and subscription events](/docs/about-receipt-validation#in-app-purchase-events-and-parameters-for-receipt-validation) are generated and made available across all AppsFlyer dashboards, as well as in aggregated and raw data reports.
 
 Events are only generated for users who have updated to a version of the app that includes the validateAndLog SDK API. As a result, a discrepancy between the revenue data from the app and the store data is expected until the updated app version is fully adopted.

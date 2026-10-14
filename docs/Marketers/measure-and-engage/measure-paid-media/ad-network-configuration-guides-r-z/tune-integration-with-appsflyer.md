@@ -38,17 +38,13 @@ AppsFlyer integration with TUNE supports click attribution.
 4. In the **Integration** tab, turn on the **Activate partner** toggle. Keep it on as long as you work with Tune.
 5. Configure remaining tabs as needed below.
 
-
-
 | Settings tab | Remarks |
 | --- | --- |
-| **Integration** | Configure additional [integration](/docs/set-up-an-integrated-partner) settings as required.<br /><br />The Custom\_TUNE\_tracking\_domain field is used to build your specific endpoint URL. For example, if you enter "**greatapp**", your endpoint URL will be:  <br />https://**greatapp**.go2cloud.org/aff\_Isr?<br /><br />Use the same name for in-app events custom tracking domain. |
+| **Integration** | Configure additional [integration](/docs/set-up-an-integrated-partner) settings as required.<br /><br />The Custom\_TUNE\_tracking\_domain field is used to build your specific endpoint URL. For example, if you enter "**greatapp**", your endpoint URL will be:  <br />https://greatapp.go2cloud.org/aff_Isr?<br /><br />Use the same name for in-app events custom tracking domain. |
 | **Attribution link** | Generate [attribution links.](/docs/set-up-an-integrated-partner#attribution-link-tab) |
 | **Cost** | Get [cost data](/docs/set-up-an-integrated-partner#cost-tab). |
 | **Ad revenue** | Not available for this partner |
 | **Permissions** | Set ad network [permissions](/docs/set-up-an-integrated-partner#permissions-tab) as required. |
-
-
 
 **To edit an existing integration:**
 
@@ -67,7 +63,7 @@ Verify  AppsFlyer mobile SDK versions:
 
 ### Step 1: Configure links for your campaigns
 
-* Create a [OneLink template](/docs/create-a-onelink-template#procedures) for your email campaigns.
+* Create a [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template) for your email campaigns.
 * [Create a Branded link.](/docs/brand-onelink-with-your-domain)  
   When requested to add a CNAME to your domain, use `yourdomain.esplinks.appsflyer.com`, instead of the URL offered in the Branded Link creation page.  
   **Example:**
@@ -87,11 +83,8 @@ Verify  AppsFlyer mobile SDK versions:
 1. Go to the Attribution link tab and copy only the link parameters under **Click attribution link** as highlighted below.[![](https://files.readme.io/51bb21c2fe4bd82965f30909fe5ed4ae6c5b906972789b143755982ea8b73f6e-4406164987537.png)](https://files.readme.io/51bb21c2fe4bd82965f30909fe5ed4ae6c5b906972789b143755982ea8b73f6e-4406164987537.png)
 2. Add the copied parameters to your branded link.
 
-   CALLSTART::Note::
+   > 📘 **Example:**
+   >
+   > ![TUNE-link-example2-en_us.png](https://files.readme.io/58f38eb0bb724b66d0c958454651e0950a54f6fd990220f2ac24f93ca89ba344-small-4410086650769.png)
 
-   #### **Example:**
-
-   ![TUNE-link-example2-en_us.png](https://files.readme.io/58f38eb0bb724b66d0c958454651e0950a54f6fd990220f2ac24f93ca89ba344-small-4410086650769.png)
-
-   CALLEND::
 3. To complete the setup, go to the [Managing Mobile Offers with AppsFlyer guide](https://support.tune.com/hc/en-us/articles/1500008336641-Managing-Mobile-Offers-with-Appsflyer) in TUNE's help center, scroll down to Universal Links via OneLink and follow the instructions.

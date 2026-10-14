@@ -27,21 +27,25 @@ At a glance: Sandbox raw data reports contain aggregated data generated after tr
 
 Principles:
 
-- **Data is provided by:**  - [**Data Locker**](/docs/data-locker-for-partners)    - If you aren't currently using Data Locker, an admin user must configure Data Locker and enable the sandbox reports. To do so, go to **Reports** \> **Data Locker**. Select the Sandbox attribution reports.
-    - **Data freshness rate**: Data is contained in the h=23 folder of the date the aggregated report is received by AppsFlyer. Example: If the report was received on Monday, it is processed after the end of the next day. Processing is completed by 10:00 AM UTC Wednesday, and the data is written to the Monday h=23 folder.
-    - **Timezone**: UTC
-    - **Metrics**: Metrics are incremental. As an example, on DT = 20-06-2024 we received 10 installs for install date = 18-06-2024 and a few days later we received another 5 installs for the same install date (18-06-2024) then the event count column will mention 5 additional installs.
-    - **Permissions**: The report is only available to ad networks. Ad networks will be able to access specific app data only if the app owner has given permission to [get app data](/docs/aggregated-campaign-performance-report-for-ad-networks#permission-to-get-aggregated-performance-data).
+* **Data is provided by:**
+  * [**Data Locker**](/docs/data-locker-for-partners)
+    * If you aren't currently using Data Locker, an admin user must configure Data Locker and enable the sandbox reports. To do so, go to **Reports** > **Data Locker**. Select the Sandbox attribution reports.
+    * **Data freshness rate**: Data is contained in the h=23 folder of the date the aggregated report is received by AppsFlyer. Example: If the report was received on Monday, it is processed after the end of the next day. Processing is completed by 10:00 AM UTC Wednesday, and the data is written to the Monday h=23 folder.
+    * **Timezone**: UTC
+    * **Metrics**: Metrics are incremental. As an example, on DT = 20-06-2024 we received 10 installs for install date = 18-06-2024 and a few days later we received another 5 installs for the same install date (18-06-2024) then the event count column will mention 5 additional installs.
+    * **Permissions**: The report is only available to ad networks. Ad networks will be able to access specific app data only if the app owner has given permission to [get app data](/docs/aggregated-campaign-performance-report-for-ad-networks#permission-to-get-aggregated-performance-data).
 
 ## Sandbox raw data report format and content
 
-### Raw data report types
+<Accordion title="Raw data report types">
 
 | Report type | Topic Name | Report name | Description |
 | --- | --- | --- | --- |
 | Decoded aggregated report | sandbox\_attribution\_ad\_network\_performance | Sandbox attribution ad network aggregated performance |  |
 
-### Raw data field format types
+</Accordion>
+
+<Accordion title="Raw data field format types">
 
 #### Field formats
 
@@ -50,12 +54,14 @@ Principles:
 | String [n] | The maximum length of the string. We don't usually enforce field length limitations on receipt of the data, but data may be truncated thereafter. |
 | Time string | String having the format, `yyyy-mm-dd hh:mm:ss`. For example, `2019-09-17 00:09:25` |
 | Enum [n] | Enum fields can only contain specific values. For example, Cost currency has 3 characters and can contain only currency codes as specified. |
-| Timestamp | 10-digit UNIX timestamp. Example:<br />August 4, 2020, 07:25 UTC translates to `"timestamp": "1596525944"` |
+| Timestamp | 10-digit UNIX timestamp. Example:<br /><br />August 4, 2020, 07:25 UTC translates to `"timestamp": "1596525944"` |
 | Boolean | The value of the field can be either `TRUE` or `FALSE` |
 | Integer | Integer |
 | Float | Real floating number that can have a decimal point and values after the decimal point. |
 
-### Report structure
+</Accordion>
+
+<Accordion title="Report structure">
 
 | Field name | Description | Format | Dimension or metric |
 | --- | --- | --- | --- |
@@ -78,9 +84,15 @@ Principles:
 | event\_count | count of the total aggregated results | Long | Metric |
 | revenue\_usd |  | Decimal | Metric |
 
+</Accordion>
+
+<Accordion title="">
+
+</Accordion>
+
 ## Additional information
 
-### Traits and limitations
+<Accordion title="Traits and limitations">
 
 | Trait | Remarks |
 | --- | --- |
@@ -89,4 +101,6 @@ Principles:
 | Currency | USD |
 | Organic data | Not available |
 | Non-organic data | Based on Sandbox attribution |
-| Data freshness | [Daily](/docs/closed-beta-sandbox-data-locker-report-for-ad-networks#skan-raw-data-reports) |
+| Data freshness | [Daily](/docs/closed-beta-sandbox-data-locker-report-for-ad-networks#sandbox-raw-data-reports-for-ad-networks) |
+
+</Accordion>

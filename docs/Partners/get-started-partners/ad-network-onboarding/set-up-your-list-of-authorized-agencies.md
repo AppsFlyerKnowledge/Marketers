@@ -28,17 +28,17 @@ To prevent unauthorized use of your network, all agencies running campaigns thro
 
 As of July 31, 2024, only traffic from agencies authorized by the ad networks will be recorded and measured in AppsFlyer. Unauthorized traffic will result in a 403 (Forbidden) response from AppsFlyer.
 
-> 📘 Note
+> 📘 **Note**
 >
 > * This doesn't apply to agencies working with [SRNs](/docs/self-reporting-networks-srns)
 > * Only admins have access to this page
 > * The list of authorized agencies can include up to 200 agencies
 
-![authorized-agencies-5.jpg](https://files.readme.io/10012bde55cffa967f2e581420a9c32b7ce8b9cb120e203ba230bf7f271b0d9a-25977984018833.jpg)
+[![authorized-agencies-5.jpg](https://files.readme.io/10012bde55cffa967f2e581420a9c32b7ce8b9cb120e203ba230bf7f271b0d9a-25977984018833.jpg)](https://files.readme.io/10012bde55cffa967f2e581420a9c32b7ce8b9cb120e203ba230bf7f271b0d9a-25977984018833.jpg)
 
 ## Manage authorized agencies
 
-From the **Authorized agencies** page, you can add agencies, view the existing list of agencies you've approved to run campaigns on your network, and delete agencies you don't approve. The page includes two sections:
+From the **Authorized agencies** page, you can add agencies, view the existing list of agencies you've approved to run campaigns on your network, and delete agencies you don't approve. The page includes two sections:
 
 * Left pane: Add new agencies
 * Right pane:
@@ -48,7 +48,7 @@ From the **Authorized agencies** page, you can add agencies, view the existing l
 **To access the Authorized agencies page:**
 
 1. From the top bar, open the account menu (email address dropdown) > **Security center.**
-2. In the **Authorized agencies** section, click **Manage authorized agencies**.
+2. In the **Authorized agencies** section, click **Manage authorized agencies**.
 
 ### Add an agency to the list
 
@@ -57,12 +57,12 @@ From the **Authorized agencies** page, you can add agencies, view the existing l
 3. [Optional] Repeat steps 1-2 for adding more agencies.
 4. Click **Save list**.
 
-> 📘 Note
+> 📘 **Note**
 >
-> Make sure to enter a valid agency ID. For example (af_prt=) `my_agency_123`
+> Make sure to enter a valid agency ID. For example (af\_prt=) `my_agency_123`
 
 ### Delete an agency from the list
 
-1. From the right pane of the **Authorized agencies** page, hover over the agency you want to delete and click the dustbin icon.
+1. From the right pane of the **Authorized agencies** page, hover over the agency you want to delete and click the dustbin icon.
 2. Confirm the deletion. An indication confirms the successful deletion of the agency.
 3. [Optional] Repeat steps 1-2 for deleting more agencies.

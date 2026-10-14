@@ -29,8 +29,8 @@ x-zendesk:
 
 ## Changing the loyal user definition
 
-You can define a loyal user per app by specifying an in-app event trigger. To change the loyal-user event trigger, see [App settings](/docs/app-settings).
+You can define a loyal user per app by specifying an in-app event trigger. To change the loyal-user event trigger, see [App settings](/docs/app-settings).
 
-> 👍 Example
+> 📘 **Example**
 >
 > Users who perform registration or in-app purchases can be more indicative of being loyal users than the default 3 session definition.

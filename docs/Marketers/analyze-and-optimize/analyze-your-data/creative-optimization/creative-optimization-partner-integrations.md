@@ -39,12 +39,11 @@ Once a partner integration is added:
 >
 > To see AppsFlyer cost data (such as ROAS), an [ROI360 subscription](/docs/roi360-cost-aggregation-overview) is required.
 
-
 ## Media partner integrations
 
 This section describes how to set up integrations with each partner.
 
-### Adikteev
+<Accordion title="Adikteev">
 
 **Prerequisites:**
 
@@ -63,12 +62,14 @@ This section describes how to set up integrations with each partner.
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Adikteev**.
 4. Select the apps that you are promoting.
-5. Enter the email and password**.**
+5. Enter the email and password.
 6. Click **Save**.
 
 **Note:** Adikteev is also known as Trademob (trademob\_int).
 
-### Adjoe
+</Accordion>
+
+<Accordion title="Adjoe">
 
 **Prerequisite:**
 
@@ -85,10 +86,12 @@ This section describes how to set up integrations with each partner.
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Adjoe GmbH**.
 4. Select the apps that you are promoting.
-5. Enter the token**.**
+5. Enter the token.
 6. Click **Save**.
 
-### AppLovin
+</Accordion>
+
+<Accordion title="AppLovin">
 
 **Prerequisites:**
 
@@ -113,8 +116,9 @@ This section describes how to set up integrations with each partner.
 >
 > AppLovin's asset-level reporting API only returns data for the previous day. It doesn't support historical lookback. Because of this, when you activate the integration, AppsFlyer can only start collecting asset-level data from the activation date forward. As a result, full data coverage builds up gradually and is typically complete within 30 days of activation.
 
+</Accordion>
 
-### Google Ads
+<Accordion title="Google Ads">
 
 **Prerequisites:**
 
@@ -134,13 +138,15 @@ This section describes how to set up integrations with each partner.
 2. Click **+** **New integration**.
 3. Click the **Partner** list and select **Google Ads (AdWords)**.
 4. Select the apps that you are promoting.
-5. Click **Log in to Google**. The **Sign in with Google window**opens**.**
+5. Click **Log in to Google**. The **Sign in with Google window**opens.
 6. Complete the Google sign-in and provide your permissions. Note that in order for AppsFlyer to pull complete data, it is recommended that you have full permissions.
 7. Click **Save**.
 
 **Note:** We support UAC campaign (ACi, ACe, and ACpre) ad types only. The data of unsupported ad types will be available in Creative Optimization on the ad level only (not the creative level).
 
-### ironSource
+</Accordion>
+
+<Accordion title="ironSource">
 
 **Prerequisites:**
 
@@ -159,12 +165,14 @@ This section describes how to set up integrations with each partner.
 2. Click **+ New integration**.
 3. In the **Partner** list, select **ironSource**.
 4. Select the apps that you are promoting.
-5. Enter the Secret key and Refresh token**.**
+5. Enter the Secret key and Refresh token.
 6. Click **Save**.
 
 **Note:** Certain ad types aren’t supported, which means that their data in Creative Optimization is available on the ad level only (not the creative level). Unsupported ad types include Offerwall ads.
 
-### Liftoff
+</Accordion>
+
+<Accordion title="Liftoff">
 
 **To add an integration:**
 
@@ -178,7 +186,9 @@ This section describes how to set up integrations with each partner.
 5. Contact your Liftoff CSM to get your Liftoff reporting API username and password.
 6. Click **Save**.
 
-### Meta Ads
+</Accordion>
+
+<Accordion title="Meta Ads">
 
 **Prerequisites:**
 
@@ -203,7 +213,9 @@ This section describes how to set up integrations with each partner.
 * Because Meta Flexible Ads provide only one asset for reporting, only performance data associated with the best-performing asset (of an ad) is shown.
 * Certain ad types aren’t supported, which means that their data in Creative Optimization is available on the ad level only (not the creative level). Unsupported ad types include: Catalog/DPA.
 
-### Mintegral
+</Accordion>
+
+<Accordion title="Mintegral">
 
 **Prerequisites:**
 
@@ -224,7 +236,9 @@ This section describes how to set up integrations with each partner.
 5. Enter the **API key** and **Secret key.**
 6. Click **Save**.
 
-### Moloco
+</Accordion>
+
+<Accordion title="Moloco">
 
 **Prerequisites:**
 
@@ -246,7 +260,9 @@ This section describes how to set up integrations with each partner.
 
 * Certain ad types aren’t supported, which means that their data in Creative Optimization is available on the ad level only (not the creative level). Unsupported ad types include CTV ads.
 
-### Persona.ly
+</Accordion>
+
+<Accordion title="Persona.ly">
 
 **Prerequisites:**
 
@@ -262,7 +278,9 @@ This section describes how to set up integrations with each partner.
 5. Enter the Persona.ly **API key** (get it from your Persona.ly account).
 6. Click **Save**.
 
-### Reddit
+</Accordion>
+
+<Accordion title="Reddit">
 
 **Prerequisites:**
 
@@ -281,7 +299,9 @@ This section describes how to set up integrations with each partner.
 6. Complete the sign-in and provide your permissions. **Note**: For AppsFlyer to pull complete data, we recommend that you have full permissions.
 7. Click **Save**.
 
-### Remerge
+</Accordion>
+
+<Accordion title="Remerge">
 
 **Prerequisites:**
 
@@ -297,10 +317,12 @@ This section describes how to set up integrations with each partner.
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Remerge**.
 4. Select the apps that you are promoting.
-5. Enter the email and password**.**
+5. Enter the email and password.
 6. Click **Save**.
 
-### RevX
+</Accordion>
+
+<Accordion title="RevX">
 
 **Prerequisites:**
 
@@ -316,7 +338,9 @@ This section describes how to set up integrations with each partner.
 5. Enter the RevX **API key** (Contact your RevX account manager directly to get your API key).
 6. Click **Save**.
 
-### Smadex
+</Accordion>
+
+<Accordion title="Smadex">
 
 **Prerequisites:**
 
@@ -332,10 +356,12 @@ This section describes how to set up integrations with each partner.
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Smadex**.
 4. Select the apps that you are promoting.
-5. Enter the required credentials**.**
+5. Enter the required credentials.
 6. Click **Save**.
 
-### Snapchat
+</Accordion>
+
+<Accordion title="Snapchat">
 
 **Prerequisites:** Ad account permissions for the relevant apps you want to integrate. **Note**: The integration with Snapchat is per user, which means that multiple users can have active integrations simultaneously.
 
@@ -348,13 +374,15 @@ This section describes how to set up integrations with each partner.
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Snapchat**.
 4. Select the apps that you are promoting.
-5. Click **Log in with Snapchat**. The**window** opens**.**
+5. Click **Log in with Snapchat**. The**window** opens.
 6. Complete the sign-in and provide your permissions. Note that in order for AppsFlyer to pull complete data, it is recommended that you have full permissions.
 7. Click **Save**.
 
 **Note:** Certain ad types aren’t supported, which means that their data in Creative Optimization is available on the ad level only (not the creative level). Unsupported ad types include Collection Ads.
 
-### TikTok
+</Accordion>
+
+<Accordion title="TikTok">
 
 **Prerequisites:**
 
@@ -370,7 +398,7 @@ This section describes how to set up integrations with each partner.
 2. Click **+ New integration**.
 3. In the **Partner** list, select **TikTok**.
 4. Select the apps that you are promoting.
-5. Click **Log in with TikTok**. The**window** opens**.**
+5. Click **Log in with TikTok**. The**window** opens.
 6. Complete the sign-in and provide your permissions. Note that in order for AppsFlyer to pull complete data, it is recommended that you have full permissions.
 7. Click **Save**.
 
@@ -383,8 +411,11 @@ This section describes how to set up integrations with each partner.
 >   * To pull all the required data, the one who connects TikTok SRN must have the relevant permissions (an ad account admin is recommended).
 > * Certain ad types aren’t supported, which means that their data in Creative Optimization is available on the ad level only (not the creative level). Unsupported ad types include Collections Ads and Shopping Ads.
 
+</Accordion>
 
-### Unity Ads
+<div id="unity-ads" />
+
+<Accordion title="Unity Ads">
 
 **Prerequisites:**
 
@@ -451,11 +482,13 @@ This section describes how to set up integrations with each partner.
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Unity Ads**.
 4. Select the apps that you are promoting.
-5. Enter the key ID, secret key, and organization core ID**.**
+5. Enter the key ID, secret key, and organization core ID.
 6. Enter the [Partner metrics](/docs/creative-optimization-guide#partner-metrics::e592ecd3) information to also get metrics as reported by Unity Ads (optional).
 7. Click **Save**.
 
-### X Ads (formerly Twitter Ads)
+</Accordion>
+
+<Accordion title="X Ads (formerly Twitter Ads)">
 
 **Prerequisites:**
 
@@ -474,7 +507,9 @@ This section describes how to set up integrations with each partner.
 6. Complete the sign-in and provide your permissions. **Note**: For AppsFlyer to pull complete data, we recommend that you have full permissions.
 7. Click **Save**.
 
-### YouAppi
+</Accordion>
+
+<Accordion title="YouAppi">
 
 **Prerequisite:**
 
@@ -492,29 +527,31 @@ YouAppi credentials for integration :
 2. Click **+ New integration**.
 3. In the **Partner** list, select **YouAppi**.
 4. Select the apps that you are promoting.
-5. Enter the token**.**
+5. Enter the token.
 6. Click **Save**.
+
+</Accordion>
 
 ## Additional information
 
-### Creative Integrations dashboard
+<Accordion title="Creative Integrations dashboard">
 
 The Creative Integrations dashboard is where you can add new media partner integrations. To add a new integration, follow the [specific instructions per partner](/docs/creative-optimization-partner-integrations#media-partner-integrations).
 
 Once added, the dashboard displays the status of all your current integrations, with the following columns:
-
-
 
 | Column | Description |
 | --- | --- |
 | Partner | The name of the integrated partner, for example, Meta Ads or ironsource\_int. Expand the partner column to see all the different connections for the partner. For example, each user might have their own connection. |
 | App | The list of apps per integrated partner and specific user connection. |
 | Integration update | The date when the partner integration settings were last updated. |
-| Coverage status | The amount of creative performance data from the partner integration available in Creative Optimization dashboards and reports:<br /><br />* **Low**: All apps included in this integration are missing data.<br />* **Partial**: Some apps included in this integration are missing data.<br />* **High**: All apps included in this integration have data.<br />* **In progress**: Wait up to 24 hours for a status update.<br />* **No data**: No data from this partner for the past 30 days.<br /><br />Click the status to see the coverage status breakdown by app. The per-app status means different things depending on whether you’re an ROI360 subscriber or not.<br /><br />**Non-ROI360 subscriber:**<br /><br />* **High**: App has a lot of data available. Meaning the creatives pulled cover more than 85% of the total app installs (as reported by AppsFlyer) in the last 30 days.<br />* **Low**: App is missing data. Meaning the creatives pulled cover less than 85% of the total app installs (as reported by AppsFlyer) in the last 30 days.<br /><br />**ROI360 subscriber:**<br /><br />* **High**: Creatives pulled cover more than 85% of the cost as measured by AppsFlyer ROI360 in the last 30 days.<br />* **Low**: Creatives pulled cover less than 85% of the cost as measured by AppsFlyer ROI360 in the last 30 days.  <br />  **Example**:<br />  * AppsFlyer gets data for media source "Network A" with a total ad spend of $100.<br />  * Creative 1 had $85 ad spend and Creative 2 had $15.<br />  * If AppsFlyer pulls Creative 1 data, that covers 85% of cost, so it's "high" coverage.<br />  * If AppsFlyer pulls only Creative 2 data, that covers just 15% of cost, so it's "low" coverage.<br /><br />**For both ROI360 and non-ROI360 subscribers:**<br /><br />* **In progress**: Wait up to 24 hours for a status update.<br />* **Low data**: Make sure the partner is correctly integrated, following the [partner-specific instructions](/docs/creative-optimization-partner-integrations#media-partner-integrations).<br />* **No data**: No data from this app for the past 30 days.<br />  * Make sure your general AppsFlyer setup is complete and working (not specifically for Creative).<br />  * Make sure that your app is active and there is traffic.  <br />    If the integration is managed by an agency, make sure the integration is correct, following the [agency instructions](/docs/creative-optimization-partner-integrations#agencies). |
+| Coverage status | The amount of creative performance data from the partner integration available in Creative Optimization dashboards and reports:<ul><li>**Low**: All apps included in this integration are missing data.</li><li>**Partial**: Some apps included in this integration are missing data.</li><li>**High**: All apps included in this integration have data.</li><li>**In progress**: Wait up to 24 hours for a status update.</li><li>**No data**: No data from this partner for the past 30 days.</li></ul>Click the status to see the coverage status breakdown by app. The per-app status means different things depending on whether you’re an ROI360 subscriber or not.<br /><br />**Non-ROI360 subscriber:**<ul><li>**High**: App has a lot of data available. Meaning the creatives pulled cover more than 85% of the total app installs (as reported by AppsFlyer) in the last 30 days.</li><li>**Low**: App is missing data. Meaning the creatives pulled cover less than 85% of the total app installs (as reported by AppsFlyer) in the last 30 days.</li></ul>**ROI360 subscriber:**<ul><li>**High**: Creatives pulled cover more than 85% of the cost as measured by AppsFlyer ROI360 in the last 30 days.</li><li>**Low**: Creatives pulled cover less than 85% of the cost as measured by AppsFlyer ROI360 in the last 30 days.<br />**Example**:<ul><li>AppsFlyer gets data for media source "Network A" with a total ad spend of $100.</li><li>Creative 1 had $85 ad spend and Creative 2 had $15.</li><li>If AppsFlyer pulls Creative 1 data, that covers 85% of cost, so it's "high" coverage.</li><li>If AppsFlyer pulls only Creative 2 data, that covers just 15% of cost, so it's "low" coverage.</li></ul></li></ul>**For both ROI360 and non-ROI360 subscribers:**<ul><li>**In progress**: Wait up to 24 hours for a status update.</li><li>**Low data**: Make sure the partner is correctly integrated, following the [partner-specific instructions](/docs/creative-optimization-partner-integrations#media-partner-integrations).</li><li>**No data**: No data from this app for the past 30 days.<ul><li>Make sure your general AppsFlyer setup is complete and working (not specifically for Creative).</li><li>Make sure that your app is active and there is traffic.<br />If the integration is managed by an agency, make sure the integration is correct, following the [agency instructions](/docs/creative-optimization-partner-integrations#agencies).</li></ul></li></ul> |
 
+</Accordion>
 
+<div id="agencies" />
 
-### Agency integrations
+<Accordion title="Agency integrations">
 
 #### Add an agency integration
 
@@ -528,7 +565,7 @@ You can integrate with your agency partners to pull their data into the Creative
      ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
 2. Click **+** N**ew integration**.
 3. After selecting the Partner and Apps in the partner integration window, click the **Advanced settings: Agency** dropdown, and select the relevant agency.  
-     
+
    ![Creative agencies.png](https://files.readme.io/74f0dc492bc530278687becdd0061e9c06081653b69ed525f237b97a9568e413-38395601553169.png)
 4. Click **Save**.  
    The agency integration is added.
@@ -546,7 +583,7 @@ You can grant your agencies access to view their own creative performance data i
 **To enable access:**
 
 1. From the AppsFlyer side menu, click **Collaborate** > **Partner Marketplace**  
-     
+
    **![From Collaborate click Partner Marketplace.png](https://files.readme.io/96485cefae79412a680915810c16b23619f73d9109212bfc45d1c0d42c2e529a-39258887136785.png)**
 2. Search for the relevant partner agency from the search bar at the top of the page, then click on the partner.
 
@@ -555,13 +592,17 @@ You can grant your agencies access to view their own creative performance data i
 
    ![Agency permissions.png](https://files.readme.io/b307601f9b41800a146c664bdd9f6d24a5398be9022801505419aebb0741162c-39258856594705.png)
 4. Then enable **Access Creative Optimization dashboard**  
-     
+
    The agency will now have access to see your shared creatives in their dashboard. For agencies that haven't yet set up an AppsFlyer agency account and would like to, they can learn more [here.](/docs/getting-started-agency-onboarding)
 
-### Update credentials
+</Accordion>
+
+<Accordion title="Update credentials">
 
 Once certain partner integrations are set up, their account-level credentials can't be changed (this doesn't apply to Meta ads, Google Ads, TikTok, and AppLovin). If you need to update credentials for a partner:
 
 1. On the **Creative integrations** page, select the expander to the left of the partner, to open the partner connections.
 2. Click the  ![3 dots icon.png](https://files.readme.io/a43c9bec16ef919203a2535aee8aa1f284fb3db7851d5e61245163fe2d8b08cb-22469580700177.png)  menu icon to the right of the connection, then click **Delete integration**. ![partner-integration-side-menu.png](https://files.readme.io/43ba588af05ffb8dafa165cf5d760010d36bd8b6409f6f9f4ef131d695989ed2-18565371542033.png)
 3. Create a new integration for the partner with the updated credentials.
+
+</Accordion>

@@ -28,7 +28,7 @@ To start the integration you must send AppsFlyer both the attribution link and t
 
 Below you can find the base attribution link with a detailed explanation per each parameter:
 
-```http
+```
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={pid}&af_c_id={offerid}
 ```
 
@@ -44,7 +44,7 @@ For a complete AppsFlyer parameter list [click here](/docs/about-link-structure-
 
 ## Complete attribution link template
 
-```http
+```
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_siteid={pid}
 ```
 
@@ -52,36 +52,29 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={clickid}&af_s
 
 The following are examples of Install and In-App Event Postbacks:
 
-<Tabs>
-<Tab title="iOS Install">
+### Global install postback iOS
 
-```http
+```
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&ios_idfa={idfa}
 ```
 
-</Tab>
-<Tab title="Android Install">
+### Global install postback Android
 
-```http
+```
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&android_id={android_id}
 ```
 
-</Tab>
-<Tab title="iOS In-App Event">
+### Global in-app event postback iOS
 
-```http
+```
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&ios_idfa={idfa}&goal={event-name}
 ```
 
-</Tab>
-<Tab title="Android In-App Event">
+### Global in-app event postback Android
 
-```http
+```
 https://domain.com/postback?clickid={clickid}&action_id={eventtime}&android_id={android_id}&goal={event-name}
 ```
-
-</Tab>
-</Tabs>
 
 Domain.com is the network ID (domain) name provided by Affise.
 

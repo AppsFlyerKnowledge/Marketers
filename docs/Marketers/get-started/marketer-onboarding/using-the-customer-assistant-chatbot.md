@@ -28,15 +28,14 @@ The Customer Assistant Chatbot directs your issues to the appropriate team, cove
 
 **To reach the Customer Assistant Chatbot:**
 
-1. From the top menu bar, select **Help** > **Contact our team**. The Customer Assistant Chatbot opens.
+1. From the top menu bar, select **Help** > **Contact our team**. The Customer Assistant Chatbot opens.
 
-![contact-your-team2.jpg](https://files.readme.io/3738e987c1710a12429cea8c9c679fa8bbc12bde1cfecbbeaf8d34f028c511b3-50372534621457.jpg)
-
+   ![contact-your-team2.jpg](https://files.readme.io/3738e987c1710a12429cea8c9c679fa8bbc12bde1cfecbbeaf8d34f028c511b3-50372534621457.jpg)
 2. Select the **Ticket Type** from the list item and fill in all information.
 
-![Bildschirmfoto 2026-08-26 um 12.17.34.png](https://files.readme.io/a80a1a1e74d8acf01d32a931581925cf0b787a17782791e58e5634779ed7207e-50372534624529.png)
+   ![Bildschirmfoto 2026-08-26 um 12.17.34.png](https://files.readme.io/a80a1a1e74d8acf01d32a931581925cf0b787a17782791e58e5634779ed7207e-50372534624529.png)
 
-3. Click **Submit**
+   3. Click **Submit**
 
 ## Viewing support tickets
 

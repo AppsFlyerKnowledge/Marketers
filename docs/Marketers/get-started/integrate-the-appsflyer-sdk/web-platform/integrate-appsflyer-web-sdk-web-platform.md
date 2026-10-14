@@ -32,13 +32,13 @@ The Web SDK lets you record how visitors interact with your website and sends th
 
  Follow the steps below to complete your Web SDK integration from installation through validation and privacy controls.
 
-1. [Obtain your keys.](#step-1-obtain-your-keys) Obtain the Web SDK ID (also known as Web Dev Key).
-2. [Select a code snippet.](#step-2-select-a-code-snippet) Choose the snippet that matches your integration type and security requirements.
-3. [Deploy the Web SDK.](#step-3-deploy-the-snippet) Deploy the SDK using a native snippet, Google Tag Manager, or Adobe Launch Tag Manager.
-4. [Make sure the SDK is working.](#2-make-sure-the-sdk-is-working) Validate that the SDK sends requests by checking network calls in the browser developer tools.
-5. [Set and record events.](#3-set-and-record-events) Define and send custom events on page load or user interaction using native JavaScript or Google Tag Manager.
-6. [Set the customer user ID.](#4-set-customer-user-id) Set a persistent CUID to unify web activity with other platforms.
-7. [Manage privacy.](#5-manage-privacy) Control measurement opt-in or opt-out, and configure security and data filtering (Content Security Policy and query-parameter discarding).
+1. [Obtain your keys.](#1-obtain-your-keys) Obtain the Web SDK ID (also known as Web Dev Key).
+2. [Select a code snippet.](#2-select-a-code-snippet) Choose the snippet that matches your integration type and security requirements.
+3. [Deploy the Web SDK.](#3-deploy-the-snippet) Deploy the SDK using a native snippet, Google Tag Manager, or Adobe Launch Tag Manager.
+4. [Make sure the SDK is working.](#4-make-sure-the-sdk-is-working) Validate that the SDK sends requests by checking network calls in the browser developer tools.
+5. [Set and record events.](#5-set-and-record-events) Define and send custom events on page load or user interaction using native JavaScript or Google Tag Manager.
+6. [Set the customer user ID.](#6-set-customer-user-id) Set a persistent CUID to unify web activity with other platforms.
+7. [Manage privacy.](#7-manage-privacy) Control measurement opt-in or opt-out, and configure security and data filtering (Content Security Policy and query-parameter discarding).
 8. [Web SDK cookies reference.](#web-sdk-cookies-reference) Review the cookies the Web SDK sets or uses, including purpose, lifespan, and scope.
 
 #### Integrate the SDK with an AI coding agent
@@ -359,7 +359,7 @@ Do not implement anything beyond the AppsFlyer Web SDK integration described her
 
 Choose the snippet that matches your integration type and security requirements. Two options are available:
 
-* [Standard Web SDK](#standard): The standard integration.
+* [Standard Web SDK](#standard-web-sdk): The standard integration.
 * [Advanced SDK Verification](#advanced-sdk-verification): An enhanced integration that adds supply-chain protection for the Web SDK. Use this to add an extra layer of security against CDN compromise, DNS hijacking, and man-in-the-middle attacks.
 
 If you are transitioning from the Standard Web SDK to Advanced SDK Verification, replace your existing snippet with the new one. Do not add the new snippet on top of the existing one.

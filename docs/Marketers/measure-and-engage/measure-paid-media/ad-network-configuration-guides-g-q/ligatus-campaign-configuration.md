@@ -42,11 +42,10 @@ Ligatus's configuration window includes 2 active tabs: Integration and Attributi
 
 > 📘 **Tip**
 >
-> * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners.
+> * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners.
 > * All the rest of the steps are either descriptive or **optional**
 
-
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration tab is divided into different sections as described below.
 
@@ -61,7 +60,9 @@ send automatic postbacks to Ligatus following user installs and re-engagements. 
 
 Select **Only events attributed to this partner** for events coming only from users attributed to Ligatus.
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 In this tab, you can create the attribution links you want to send to Ligatus for attributing Ligatus's campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
@@ -84,7 +85,7 @@ Adding parameters to the attribution link here enables you to perform thorough d
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
 
 ### Click-through attribution
 
@@ -98,14 +99,22 @@ More details about the [click lookback window here](/docs/set-up-lookback-window
 
 This is the attribution link that contains all the setup information you have set for it. Send it to Ligatus to be activated when leads click on a corresponding ad.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permission configuration is not available for Ligatus.
+
+</Accordion>

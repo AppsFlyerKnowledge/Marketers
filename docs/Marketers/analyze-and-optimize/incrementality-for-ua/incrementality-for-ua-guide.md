@@ -52,7 +52,7 @@ Incrementality for UA provides the insights you need to understand the true incr
 
 This section explains how Incrementality for UA experiments are structured, how to work with them, and how they generate reliable, causal insights into campaign performance.
 
-### Understanding geo experimentation
+<Accordion title="Understanding geo experimentation">
 
 Incrementality for UA uses geo-based experimentation to measure true campaign impact in a scientifically rigorous way. Instead of segmenting users, we segment geographic areas into statistically similar exposed and holdout regions. These regions are selected based on size and historical app behavior. Ads run only in the exposed regions, while the holdout regions receive no exposure. By comparing the behavior of the two groups during the holdout period, we can measure the actual causal effect — not just correlation.
 
@@ -84,7 +84,9 @@ At the heart of our geo-experimentation is Time-Based Regression (TBR). TBR is u
 * Marketing lift:
   * The marketing lift is the cumulative effect that quantifies the incremental results driven by marketing activity compared to what would have been expected without it.
 
-### Use cases
+</Accordion>
+
+<Accordion title="Use cases">
 
 Incrementality for UA helps you solve key growth challenges by revealing the true business impact of your campaigns. Below are some common use cases where geo-based incrementality testing adds critical value.
 
@@ -99,7 +101,9 @@ Incrementality for UA helps you solve key growth challenges by revealing the tru
 5. **Reallocate spend from saturated to scalable markets**  
    **Challenge:** Mature markets show diminishing returns and rising acquisition costs, but attribution data doesn't clarify if you're reaching new users. **Solution:** Geo-lift tests show whether campaigns in these markets are still incremental. If not, shift budget to untapped or undervalued regions with higher potential.
 
-### Selecting what to measure
+</Accordion>
+
+<Accordion title="Selecting what to measure">
 
 This section discusses the best campaigns to select for your experiments. Here are a few things to consider:
 
@@ -108,7 +112,11 @@ This section discusses the best campaigns to select for your experiments. Here a
 * **Exploration:** Incrementality is an amazing tool when testing something new, such as entering a new market or launching a new channel.
 * **Having a clear hypothesis or test question:** Like any other scientific experiment, spending some time on phrasing your main question will contribute to the effectiveness and actionability of your Incrementality experiment. For example, do you expect one channel to be more incremental than the other? How will it affect your marketing strategy if your hypothesis is proved or disproved?
 
-### Understanding experiment results and using the insights
+</Accordion>
+
+<div id="h_01JZQ4Q1C0Z3M002TWYKB8SS3M" />
+
+<Accordion title="Understanding experiment results and using the insights">
 
 **Key experiment KPI outputs include:**
 
@@ -117,7 +125,7 @@ This section discusses the best campaigns to select for your experiments. Here a
 * **Cost per incremental install** / **Cost per incremental event:** The average cost of each incremental conversion, based on the campaign's ad spend.
 * **Incrementality factor:** The ratio between incremental installs or events (as measured by the experiment) to the classic attribution installs or events (as measured in AppsFlyer's classic attribution).
 
-See the full list of experiment KPIs in the [dashboard section.](#h_01JZJ70K0QTGZ2V3T1TJ1VG08H)
+See the full list of experiment KPIs in the [dashboard section.](#a-tour-of-the-dashboard)
 
 To make Incrementality insights actionable, AppsFlyer provides both the Lift % and campaign-level Incrementality KPIs for effective marketing decisions.
 
@@ -165,7 +173,9 @@ When used together, the two models provide a holistic view of marketing performa
 * * Re-evaluate bids and optimization goals in accordance with cost per incremental conversion and incremental return on ad spend.
   * Implement this factor in similar campaigns to inform future marketing decisions. For example, if your video campaigns consistently show a ~90% incrementality factor for app installs when measured in incrementality experiments, you can treat classic attribution app installs for similar campaigns as 10% lower when making marketing decisions (i.e., each 100 classic attribution installs are in fact closer to 90 installs).
 
-### Pausing or extending experiments
+</Accordion>
+
+<Accordion title="Pausing or extending experiments">
 
 **Consider pausing experiments (before the default 30 days) if:**
 
@@ -177,6 +187,8 @@ When used together, the two models provide a holistic view of marketing performa
 * Campaign volume was lower than expected and is anticipated to increase beyond the minimum requirement of daily incremental conversions.
 * The conversion window for the measured event is exceptionally long, requiring additional time for users to convert.
 
+</Accordion>
+
 ## Get started
 
 To get started with Incrementality for UA, follow the steps below:
@@ -187,7 +199,7 @@ To get started with Incrementality for UA, follow the steps below:
 * The [AppsFlyer SDK](/docs/basic-sdk-integration-guide) installed in your mobile apps.
 * Your app must have at least 120 days of install data.
 
-### Step 1. Create the experiment
+<Accordion title="Step 1. Create the experiment">
 
 The first step is creating the experiment.
 
@@ -206,22 +218,16 @@ The first step is creating the experiment.
       After you submit, AppsFlyer reviews your geo design — this usually takes just a few minutes. Your geo design will either be ready to use, or unavailable:
 
       * **Ready** — Your geo design is approved and ready to use. You can proceed with the experiment.
-      * **Unavailable** — The geo design doesn't currently meet the requirements for a valid experiment, based on the data available for the selected app, country, and metric combination. You can try resubmitting after 30 days, as eligibility may change as your app collects more data.CALLSTART::Note::
-
-      #### Note
+      * **Unavailable** — The geo design doesn't currently meet the requirements for a valid experiment, based on the data available for the selected app, country, and metric combination. You can try resubmitting after 30 days, as eligibility may change as your app collects more data.<br /><br />**Note**<br />#### Note
 
       If geo design rules exist for the selected app and country, they're automatically applied when the geo design is calculated. See [Geo design policy](#h_01_geo-design-policy) to learn more.
 
-      CALLEND::
-      CALLSTART::Note::
+      > 📘 **Note**
+      >
+      > Each country has a certain number of **cells** available for your experiment. A cell consists of an exposed and holdout group pair that are structured to be similar to each other and to the entire country. You can use multiple cells in one experiment for a head-to-head comparison of different campaigns across media sources, or use them individually in separate experiments.
+      >
+      > The number of available cells per country depends on the country's geographic size, population distribution, and app activity levels—factors that affect the ability to create statistically valid exposed/holdout pairs. Countries with more granular, active regions support more cells, enabling more experimentation.
 
-      #### Note
-
-      Each country has a certain number of **cells** available for your experiment. A cell consists of an exposed and holdout group pair that are structured to be similar to each other and to the entire country. You can use multiple cells in one experiment for a head-to-head comparison of different campaigns across media sources, or use them individually in separate experiments.
-
-      The number of available cells per country depends on the country's geographic size, population distribution, and app activity levels—factors that affect the ability to create statistically valid exposed/holdout pairs. Countries with more granular, active regions support more cells, enabling more experimentation.
-
-      CALLEND::
       * **Select app** - Select the relevant app for the experiment.
       * **Select country** - Then, select the country where you want to run the experiment. Click **Next**.
       * Select the **Main metric** you want to measure. This can be installs or an in-app event.
@@ -230,7 +236,7 @@ The first step is creating the experiment.
 * You'll need to select a **Media source** connection for each experiment cell. This is the media source where your campaign runs. If there are no connections, you can [create a new connection.](#h_01HBB6EJ8T4RRKJY632180KZWM)
 * Then select the relevant campaigns to measure in the experiment.  
   Incrementality experiments can be set to measure individual campaigns (for example, "How is the Google campaign performing vs. the Meta campaign") or the entire media source by selecting multiple campaigns within a single experiment cell (for example, "How is Google performing vs. Meta?").  
-    
+
   Choose between:  
   **Campaign level:** to measure the impact of a single campaign within a media source  
   **Channel level:** to measure the joint impact of multiple campaigns within a media source
@@ -249,24 +255,23 @@ The first step is creating the experiment.
 
   **Tip:** Choose a campaign that regularly meets or exceeds this minimum to ensure reliable, statistically valid results.
 * You can add additional experiment cells if you want. To add: Click **+ Experiment cell** and select the relevant connection and campaign. A cell consists of an exposed and holdout group pair that are structured to be similar to each other and to the entire country. You can use multiple cells in one experiment for a head-to-head comparison of different campaigns across media sources.  
-    
+
   After setting up the cells, click **Next**.
 
 4. **Review summary** - Check that the experiment summary looks good, then click **Launch experiment**.  
    The experiment begins. Initial results will display within 24 hours.
 
-   CALLSTART::Note::
+   > 📘 **Note**
+   >
+   > Once the experiment is over, the connected campaigns will return to their previous geo-targeting settings. This ensures campaign continuity and consistency and lets you resume UA activities without needing to reconfigure targeting manually.
+   >
+   > **Example**  
+   > Let's say you ran an experiment in the United States using three designated exposed cities. During the experiment, your campaign was restricted to only those cities. When the experiment ends, the campaign will automatically resume its original targeting—such as "United States (all locations)"—as it was configured before the experiment began.
 
-   #### Note
 
-   Once the experiment is over, the connected campaigns will return to their previous geo-targeting settings. This ensures campaign continuity and consistency and lets you resume UA activities without needing to reconfigure targeting manually.
+</Accordion>
 
-   **Example**  
-   Let's say you ran an experiment in the United States using three designated exposed cities. During the experiment, your campaign was restricted to only those cities. When the experiment ends, the campaign will automatically resume its original targeting—such as "United States (all locations)"—as it was configured before the experiment began.
-
-   CALLEND::
-
-### Step 2. Analyze the results and gain insights
+<Accordion title="Step 2. Analyze the results and gain insights">
 
 You can see the experiment results on the experiment dashboard.
 
@@ -288,7 +293,7 @@ You can see the experiment results on the experiment dashboard.
 * The **Lift: Exposed vs. holdout regions** graph - Shows the incremental lift per experiment cell.
 * The **Experiment timeline: Exposed vs. holdout regions** graph - Shows a side-by-side comparison of incremental installs per day of the experiment date range, per cell.
 
-The middle section of the dashboard displays the **Experiment KPIs** by campaign cell, media source, and campaign**:**
+The middle section of the dashboard displays the **Experiment KPIs** by campaign cell, media source, and campaign:
 
 * **Classic attribution installs -** The number of installs the campaign contributed, as measured by classic attribution.
 * **Incrementality installs -** The number of installs the campaign contributed, as measured by the experiment.
@@ -297,7 +302,7 @@ The middle section of the dashboard displays the **Experiment KPIs** by campaign
 * **Incrementality cost per install -** The average cost of every incremental install, based on the campaign's ad spend.
 * **Lift** - How many more installs occurred because of your campaign, compared to what would have happened without it. Calculated as: Lift (%) = (actual performance in exposed group (excluded regions) - predicted performance in exposed group) / predicted performance in exposed group * 100 * -1.
 * **Confidence** - The level of statistical confidence that the lift is greater than zero.  
-    
+
   For guidance on how to read the results, see [Understanding experiment results and using the insights.](#h_01JZQ4Q1C0Z3M002TWYKB8SS3M)
 
 The bottom of the dashboard is the **Cumulative incremental installs** graph which shows the cumulative incremental installs per cell.
@@ -309,11 +314,15 @@ The bottom of the dashboard is the **Cumulative incremental installs** graph whi
 
 [![Channel level experiments dashboard cropped narrower.png](https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png)](https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png)
 
+</Accordion>
+
 ## Manage
 
 This section explains how to manage your connections, geo design policy, and experiments.
 
-### Connections
+<div id="h_01HBB6EJ8T4RRKJY632180KZWM" />
+
+<Accordion title="Connections">
 
 Connections refer to the integration between Incrementality for UA and your media partners. They make it possible to link campaigns and run experiments with connected platforms.
 
@@ -328,7 +337,11 @@ Connections refer to the integration between Incrementality for UA and your medi
    ![Add connection.png](https://files.readme.io/c9eab02131220cd28683a717745bff852da28847a4164fa27b5be4780cd98018-41021731866897.png)
 4. Enter your credentials to log in and create the connection.
 
-### Geo design policy
+</Accordion>
+
+<div id="h_01_geo-design-policy" />
+
+<Accordion title="Geo design policy">
 
 The geo design policy lets you define geographic experiment design rules at the account level. Rules are set per app and country, and are automatically applied to all geo designs calculated after the rule is saved.
 
@@ -338,15 +351,11 @@ Use geo design rules to accommodate legal restrictions, protect high-value marke
 
 Three rule types are available:
 
-
-
 | Rule type | What it does | Example use case |
 | --- | --- | --- |
 | **Don't holdout** | These regions are never placed in holdout groups, but can still be in exposed groups. Your campaigns in these regions are never paused or interrupted by the experiment. | A top-performing market that must stay active at all times. |
 | **Don't target** | These regions are excluded from campaign targeting entirely. They won't appear in exposed or holdout groups. | A market where advertising is legally restricted. |
-| **Exclude from analysis** | These regions will stay in the campaign targeting to maintain normal advertising activity, but won’t be included in exposed or holdout groups. | * Regions running parallel geo-lift tests that could skew results.<br />* Regions running parallel geo-lift tests or expected local marketing efforts that could skew results. |
-
-
+| **Exclude from analysis** | These regions will stay in the campaign targeting to maintain normal advertising activity, but won’t be included in exposed or holdout groups. | <ul><li>Regions running parallel geo-lift tests that could skew results.</li><li>Regions running parallel geo-lift tests or expected local marketing efforts that could skew results.</li></ul> |
 
 #### Set up a geo design rule
 
@@ -376,7 +385,6 @@ The rule is now active and will be applied to all geo designs calculated for the
 >
 > Deleting a rule doesn't affect active experiments. If there were previous rules (or no rules), that is what remains in effect for any experiment already running. Deleting a rule only removes it from future geo designs/experiments.
 
-
 #### View geo design rules in an experiment
 
 Once a geo design is approved and you're setting up your experiment, you'll see a region breakdown section (marked **Rules apply**) showing:
@@ -391,8 +399,6 @@ In the experiment report, you can view the full geo breakdown by selecting **Geo
 
 Keep the following in mind when working with geo design rules:
 
-
-
 | Trait | Description |
 | --- | --- |
 | Scope | Rules apply per app and country combination. |
@@ -400,9 +406,9 @@ Keep the following in mind when working with geo design rules:
 | Rule persistence | Rules remain active until deleted. |
 | Retroactivity | Rules apply only to geo designs calculated after the rule was saved. Active experiments are not affected. |
 
+</Accordion>
 
-
-### Experiments
+<Accordion title="Experiments">
 
 You can view and manage all your experiments in one place.
 
@@ -419,7 +425,7 @@ For each experiment, you can see the:
 * **Country** - sortable
 * **Media source**
 * **Dates** - The experiment date range
-* [**Status**](#h_01K9VPG89HGV9BK8W94WC7WH8Q) - You can see the number of days left in the experiment or when it's completed.
+* [**Status**](#status-column) - You can see the number of days left in the experiment or when it's completed.
 * **Lift**
 
 #### **Status column**
@@ -441,7 +447,9 @@ From here you can:
 * Extend experiment duration
 * Stop experiment
 
-### Extend experiment
+</Accordion>
+
+<Accordion title="Extend experiment">
 
 **To extend an experiment:**
 
@@ -451,7 +459,9 @@ From the experiment, click the![action menu.png](https://files.readme.io/0f35ebb
 
 This will extend the experiment by an additional 14 days.
 
-### Stop experiment
+</Accordion>
+
+<Accordion title="Stop experiment">
 
 **To stop an experiment:**
 
@@ -459,13 +469,13 @@ From the experiment, click the ⠇actions icon (on the upper-right) and select *
 
 ![Stop experiment.png](https://files.readme.io/2622bca9bafa7894d4ca967f13d6626eb3cd53554720d134d8092ebb0d561740-41021731870609.png)
 
+</Accordion>
+
 ## Traits and limitations
 
 This section outlines some key traits and limitations of Incrementality for UA.
 
-### Key traits and limitations
-
-
+<Accordion title="Key traits and limitations">
 
 | Trait | Description |
 | --- | --- |
@@ -473,3 +483,5 @@ This section outlines some key traits and limitations of Incrementality for UA.
 | Supported campaign geo-targeting | Incrementality for UA supports campaigns that target a single, entire country. Campaigns that target multiple countries or specific regions within a country (for example, states or cities) aren't supported. |
 | Historical app engagement data | The app must have at least 120 days of install and/or in-app event data available. |
 | Minimum monthly non-organic installs | Each measured app must generate at least 10,000 non-organic installs per month to run a valid experiment. |
+
+</Accordion>

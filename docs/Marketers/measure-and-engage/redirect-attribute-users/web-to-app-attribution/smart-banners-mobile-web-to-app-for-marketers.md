@@ -103,7 +103,9 @@ Complete the following procedures to set up a Smart Banner that:
 * Directs users from your mobile site, via a Smart Banner, to the correct app store or app page based on their device.
 * Attributes the click/install to your owned media source using OneLink.
 
-### 1. Website workplace setup
+<div id="1-website-workplace-setup" />
+
+<Accordion title="1. Website workplace setup">
 
 #### Prepare your mobile site to display Smart Banners for the first time
 
@@ -132,7 +134,9 @@ Complete the following procedures to set up a Smart Banner that:
 8. [optional] Copy **Web key**. (This key already exists as part of the code snippet.)
 9. Click **Continue**.
 
-### 2. Banner group setup
+</Accordion>
+
+<Accordion title="2. Banner group setup">
 
 Banner groups contain one or more banners. Here you can:
 
@@ -157,12 +161,12 @@ Banner groups contain one or more banners. Here you can:
 6. Select the OneLink template for the banner group.
 7. [optional] Set **URI scheme** for the banner group as a fallback for Universal Links and Android App Links users. This is rarely needed as, by default, the value is taken from the OneLink template. Set this for the banner group only if you need a different value than the one in the template.
 8. Set the primary and fallback **Attributed sources** to be attributed with new installs coming from this banner group.   
-     
+
    **Note on click ID forwarding:** FBCLID, GCLID, WBRAID, GBRAID, ttclid, twclid, and ScCid are automatically forwarded to the outgoing URL if available on the incoming URL. For the Google click IDs, if the “keyword” parameter is also found, it puts the keyword value in the outgoing URL as the value of af\_keywords.
 
    Use the following table to pick the best option for the custom link:
 
-   
+<div id="param-table" />
 
 | Option | When to select | Comments |
 | --- | --- | --- |
@@ -174,20 +178,18 @@ Banner groups contain one or more banners. Here you can:
 9. [Recommended] Set the default attribution parameter **Channel name** to attribute all installs coming from the Smart Banner to the specified channel. This enables you to aggregate information from multiple media sources under the same channel in the **Cohort report**, **Overview dashboard**, **Retention report**, and more.
 10. [Optional] Turn on **Retargeting** if you plan to use the banner group to record re-engagements performed by users clicking on the banner. To learn more on Retargeting see the [Retargeting attribution guide](/docs/retargeting-attribution-guide).
 
-    CALLSTART::Note::
-
-    #### ***Important***
+    <br /><br />**Note**<br />#### ***Important***
 
     For retargeting to work, you also need to:
 
-    * [Enable retargeting for the app](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#enable-retargeting-for-the-app) CALLEND::
+    * [Enable retargeting for the app](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#enable-retargeting-for-the-app)
 
     Existing users who click on OneLink-powered non-retargeting banner links (UA) also launch the app and have the same user experience. However, their re-engagements are recorded as regular sessions, which means it's impossible to measure the success of the owned media campaign.
 11. [Optional] Turn on **Ignore active users for retargeting** and select the inactivity window. This adds the parameter af\_inactivity\_window=[number of days] to your smart banner group links, and all users active during the period are ignored for retargeting.
 12. Set the re-engagement window to determine the time period following the re-engagement, where the user's in-app events are attributed to the retargeting media source.
     * You can set the value in days (1-90), hours (up to 23), or even lifetime.
     * The re-engagement window is added to the link in the af\_reengagement\_window parameter.
-13. [Optional] Set the **Dismissal behavior**, that is, the minimum time allowed between a user dismissal of one banner in the group, until the same banner may be displayed again to the user. Select from one of the following:
+13. <span id="dismissal-behaviour"></span>[Optional] Set the **Dismissal behavior**, that is, the minimum time allowed between a user dismissal of one banner in the group, until the same banner may be displayed again to the user. Select from one of the following:
     * By time: 1 hour, 1 day, or 1 week.
     * Next session: meaning the session that takes place in a different tab or window, after the user closes the banner.
     * Never: the banner is not shown again. **Note**:
@@ -207,7 +209,7 @@ Banner groups contain one or more banners. Here you can:
     * [Default] **Show on all pages** of the website. **Note**: We recommend defining at least one banner group for all pages as a fallback.
     * **Show on specific pages**: Specify what the page or URL should or should not contain in order to display banners.
       * You can choose either:
-        * **Specific page**: Specify the host and/or path of the page on which to display the banner. Any queries entered will be disregarded. Example: **http://www.example.com/path**?query
+        * **Specific page**: Specify the host and/or path of the page on which to display the banner. Any queries entered will be disregarded. Example: http://www.example.com/path?query
         * **URL path and query**: Enter the path and/or query that determines whether or not the banner displays. Example: path?query. **Note**: Don’t enter an entire URL, such as http://www.example.com/path?query. Only enter the path and/or query.
 
 * Up to 15 conditions can be added using and/or.
@@ -242,7 +244,11 @@ Banner groups contain one or more banners. Here you can:
 
 The Targeting & behavior panel shows you the settings you configured for that banner group. To edit these settings click on the edit icon.
 
-### 3. Banner setup
+</Accordion>
+
+<div id="3-banner-setup" />
+
+<Accordion title="3. Banner setup">
 
 **To create a banner in a banner group:**
 
@@ -268,8 +274,6 @@ The Targeting & behavior panel shows you the settings you configured for that ba
       * Device transparency
       * For images, use one of the following file types: jpeg, jpg, png. **Note**: webp format is not supported.  The recommendations for the images are:
 
-        
-
 | Template type | Maximum image file size | Image ratio | Image height | Image width |
 | --- | --- | --- | --- | --- |
 | Minimal | 300 KB | 3:1 (width x height) | 70 px | Adjusted to fit device |
@@ -291,7 +295,11 @@ The Targeting & behavior panel shows you the settings you configured for that ba
 >
 > For tips and tricks, see our [Smart Banners cheat sheet](https://drive.google.com/file/d/1mr6g3uNwlLw6UQ_WgtQZprJMhauw7Xi3/view?usp=sharing).
 
-### 4. Testing
+</Accordion>
+
+<div id="4-testing" />
+
+<Accordion title="4. Testing">
 
 Once the creative is ready, it's time to put it to the test **before** setting it live and activating it for your users.
 
@@ -303,6 +311,8 @@ Once the creative is ready, it's time to put it to the test **before** setting
 2. Click **Generate**.
 3. Copy the generated link and send it to your test device, or scan the QR code with the test device. **The link or QR should redirect you to the web page and display a banner with the creative.**
 4. Click **Edit Creative** to return to the creative configuration, or click **Done** to save the creative.
+
+</Accordion>
 
 ## View banner performance
 
@@ -328,7 +338,7 @@ Banner performance data includes:
 * Data displayed is per banner and OneLink template. This means that if your banner and OneLink template are configured for more than one app (for example, both an Android and iOS app), the performance data that displays is for more than one app.
 * CVR may be higher than expected, sometimes even above 100%, as both view-through attributions and click-through attributions are counted.
 
-### Performance page
+<Accordion title="Performance page">
 
 The performance page lets you view and compare the performance data of all your Smart Banners, up to the past 90 days.
 
@@ -338,7 +348,9 @@ The performance page lets you view and compare the performance data of all your 
 2. Select the date range for which you want to view performance. The default date range is the last 7 days.
 3. [Optional] Turn on **Show only currently active banners**. If turned on, data for banners that are paused or aren't currently active don't display, even if they were active during the selected date range. The performance data displays for the selected date range.
 
-### Performance cards
+</Accordion>
+
+<Accordion title="Performance cards">
 
 You can view performance data for the past 7 days for any given banner.
 
@@ -348,9 +360,13 @@ You can view performance data for the past 7 days for any given banner.
 2. Select the website workplace and banner group you want to view performance for.
 3. Hover over any of the banners in the banner group. The performance data displays for the past week
 
+</Accordion>
+
 ## Additional information
 
-### Banner group display logic
+<div id="banner-group-display-logic" />
+
+<Accordion title="Banner group display logic">
 
 AppsFlyer takes the following into consideration when determining if/what Smart Banner to display:
 
@@ -365,17 +381,25 @@ If the answer to both questions is yes, meaning there are rules, and the user qu
 | Multiple banner groups with identical rules | AppsFlyer evenly splits the display of all active banners in all your banner groups between all eligible users. | There are 2 banner groups (A and B), each with 3 banners (for a total of 6 banners). 1/6 of eligible users see each banner. |
 | Multiple banner groups with multiple rules | AppsFlyer evenly splits the display of all active banners *from the banner group with rules that most specifically describes and match the users*. If the banner groups are equally specific in different ways, banners from all these banner groups display. | • Example 1: There are 2 banner groups, A and B. Banner group A is set to show worldwide, and Banner group B is set to show in Japan. Banner group B is more specific, so only the banners from that group display to users in Japan. If the group has no active banners, nothing displays.<br /><br />• Example 2: There are 2 banner groups, A and B. Banner group A is set to show worldwide, and Banner group B is set to show everywhere except Ukraine. Banner group B is more specific, so only the banners from that group display to worldwide users (except users in Ukraine). If Banner group B has no active banners, nothing displays. Banner group A displays in Ukraine.<br /><br />• Example 3: There are 2 banner groups, A and B. Banner group A is set to show in Japan, and Banner group B is set to show in April. Both banner groups are equally specific, but in different ways. Therefore, in Japan, in April, banners from both banner groups display, as neither banner group has priority over the other. |
 
-### A/B testing banner performance
+</Accordion>
+
+<div id="ab-testing-banner-performance" />
+
+<Accordion title="A/B testing banner performance">
 
 You can A/B test banners by comparing their performance in the performance dashboard. For additional attribution-related data, it's recommended to add the `af_adset` , `af_ad` or other attribution parameters (except `pid`, `c`, and `channel`) with a unique value for each banner creative or banner group. Use those parameters to compare each banner group's performance when viewing data in AppsFlyer dashboards and reports.
 
+</Accordion>
+
 ## FAQ
 
-### Why does my banner not display?
+<Accordion title="Why does my banner not display?">
 
 This is due to the frequency cap set in your banner group. Frequency capping determines how many times the banner is shown to a unique user. For example, if frequency capping is set to three, and a user visits the site four times, the user sees the banner on the first 3 visits but not on the fourth and onward. Frequency capping can be disabled. Select a frequency capping value or disable frequency capping.
 
-### Can I use my own font for my banner?
+</Accordion>
+
+<Accordion title="Can I use my own font for my banner?">
 
 Yes. you can set your own font used on your website for your banner using the [instructions on the developer hub](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#control-smart-banner-font).
 
@@ -385,14 +409,18 @@ Yes. you can set your own font used on your website for your banner using the [i
 * After implementing, [test your creative banner](/docs/smart-banners-mobile-web-to-app-for-marketers#4-testing).
 * If the font doesn't display correctly, resave your banner in the [creative editor](/docs/smart-banners-mobile-web-to-app-for-marketers#3-banner-setup).
 
-### Can I add parameters to the URL of my Smart Banners?
+</Accordion>
+
+<Accordion title="Can I add parameters to the URL of my Smart Banners?">
 
 Yes, by invoking the following two functions in your smart script:
 
 * [showBanner](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner)
 * [updateParams](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#updateparams)
 
-### Do Smart Banners support deep linking?
+</Accordion>
+
+<Accordion title="Do Smart Banners support deep linking?">
 
 Yes. To do so, add the [deep\_link\_value parameter](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking) in one of the following ways:
 
@@ -402,19 +430,27 @@ Yes. To do so, add the [deep\_link\_value parameter](/docs/create-deep-linking-a
 
 Make sure your developer implements the desired behavior of the deep\_link\_value.
 
-### Can Smart Banners show different content based on whether or not users have the app installed?
+</Accordion>
+
+<Accordion title="Can Smart Banners show different content based on whether or not users have the app installed?">
 
 No. If you don't know whether or not users have the app, we recommend you make your call to action applicable to both. For example: "Go to the app" or "open the app."
 
-### Do original incoming URL parameters remain available for the Smart Banner URL when users navigate away from, and then return to, the banner's landing page?
+</Accordion>
+
+<Accordion title="Do original incoming URL parameters remain available for the Smart Banner URL when users navigate away from, and then return to, the banner's landing page?">
 
 Yes. If the original incoming URL contains a utm\_source or pid parameter, the original URL is saved for the duration of the browsing session and the parameters are applied to the outgoing banner URL.
 
-### Can I set my banners to display on my mobile site but not on my wrapper/hybrid app?
+</Accordion>
+
+<Accordion title="Can I set my banners to display on my mobile site but not on my wrapper/hybrid app?">
 
 Yes. To do so, when you implement Smart Banners in a wrapper/hybrid app and load the banner page from the app (and not from a web browser), don't use the [showBanner](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner%20target=) function, as this displays the banner in the app. Alternatively, use the [hideBanner](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#hidebanner) function.
 
-### Do Smart Banners support web accessibility?
+</Accordion>
+
+<Accordion title="Do Smart Banners support web accessibility?">
 
 We are committed to ensuring that all of your users, including those with disabilities, can fully access and engage with Smart Banners.
 
@@ -424,16 +460,20 @@ However, determining the relevant accessibility requirements for your own intend
 
 Please note that various changes to the Smart Banner might impact its compatibility with the relevant accessibility requirements, including for example, by editing the colors and size of internal banner elements.
 
-### If a smart banner is deleted from a banner group, will the data associated with that banner group also be removed?
+</Accordion>
+
+<Accordion title="If a smart banner is deleted from a banner group, will the data associated with that banner group also be removed?">
 
 No. Attribution data is not deleted if a smart banner is deleted.
+
+</Accordion>
 
 ## Troubleshooting & traits and limitations
 
 | Trait | Remarks |
 | --- | --- |
 | Banner display split | AppsFlyer evenly splits the display of active banners to users. It’s not possible to select which specific banners to display more or less. For example, if there are 2 banners in a group, they each display to 50% of users. It can't be changed to a 70%-30% split. |
-| Custom parameters | • The following special characters are not allowed in custom parameters: ;, *, !, @, #, ?, $, ^, :, &, ~, `, =, +, ’, >, &lt;, / • If you define a parameter using one of these special characters, the parameter is not saved. |
+| Custom parameters | • The following special characters are not allowed in custom parameters: ;, *, !, @, #, ?, $, ^, :, &, ~, \`, =, +, ’, >, &lt;, / • If you define a parameter using one of these special characters, the parameter is not saved. |
 | Name change | Banner group names and banner names can be changed. Performance data isn't affected and carries over. |
 | Number of button closes | Data is available as of February 17, 2026. Data is retained for 90 days. |
 | Specific page | When you set up your banner group to display banners on a specific page, the banner rule applies only to the host/path you enter. If there is not a perfect match (for example, if your site page has additional strings not included in the rule setup), the rule doesn't apply. |

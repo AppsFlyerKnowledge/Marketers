@@ -28,11 +28,11 @@ AppsFlyer APIs use secured protocols.
 
 These protocols support:
 
-- Outgoing messages, where AppsFlyer acts as a client
+* Outgoing messages, where AppsFlyer acts as a client
 
 The AppsFlyer SSL Security profile supports the following SSL protocols:
 
-- TLS V1.2+
+* TLS V1.2+
 
 AppsFlyer supports different ciphers for outgoing messages, as detailed below.
 
@@ -42,21 +42,20 @@ For app owners, AppsFlyer acts as a client when sending out push messages.
 
 Supported SSL ciphers for Push API:
 
-| Supported SSL Ciphers |
+| TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_CBC\_SHA |
 | --- |
-| TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA |
-| TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA |
-| TLS_RSA_WITH_AES_128_CBC_SHA |
-| TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA |
-| TLS_ECDH_RSA_WITH_AES_128_CBC_SHA |
-| TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 |
-| TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 |
-| TLS_RSA_WITH_AES_128_GCM_SHA256 |
-| TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256 |
-| TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256 |
-| TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA |
-| TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA |
-| SSL_RSA_WITH_3DES_EDE_CBC_SHA |
-| TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA |
-| TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA |
-| TLS_EMPTY_RENEGOTIATION_INFO_SCSV |
+| TLS\_ECDHE\_RSA\_WITH\_AES\_128\_CBC\_SHA |
+| TLS\_RSA\_WITH\_AES\_128\_CBC\_SHA |
+| TLS\_ECDH\_ECDSA\_WITH\_AES\_128\_CBC\_SHA |
+| TLS\_ECDH\_RSA\_WITH\_AES\_128\_CBC\_SHA |
+| TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_GCM\_SHA256 |
+| TLS\_ECDHE\_RSA\_WITH\_AES\_128\_GCM\_SHA256 |
+| TLS\_RSA\_WITH\_AES\_128\_GCM\_SHA256 |
+| TLS\_ECDH\_ECDSA\_WITH\_AES\_128\_GCM\_SHA256 |
+| TLS\_ECDH\_RSA\_WITH\_AES\_128\_GCM\_SHA256 |
+| TLS\_ECDHE\_ECDSA\_WITH\_3DES\_EDE\_CBC\_SHA |
+| TLS\_ECDHE\_RSA\_WITH\_3DES\_EDE\_CBC\_SHA |
+| SSL\_RSA\_WITH\_3DES\_EDE\_CBC\_SHA |
+| TLS\_ECDH\_ECDSA\_WITH\_3DES\_EDE\_CBC\_SHA |
+| TLS\_ECDH\_RSA\_WITH\_3DES\_EDE\_CBC\_SHA |
+| TLS\_EMPTY\_RENEGOTIATION\_INFO\_SCSV |

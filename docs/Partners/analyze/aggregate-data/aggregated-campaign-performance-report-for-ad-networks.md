@@ -36,19 +36,19 @@ Starting iOS 14.5, and advertiser adoption of Aggregated Advanced Privacy (AAP),
 
 Metrics are provided with the best granularity possible using the dimensions reported and have the following performance metrics:
 
-- Revenue
-- Number of times a given event is performed
-- Number of unique users performing an event
-- [Example report](https://docs.google.com/spreadsheets/d/e/2PACX-1vS89RlkFIss7uARroJcOcX1rU6gUmZ2ySYwfTprg9GaA2BYnvDPVqWmOicea1wrBnNuGgEuLPwzL_ac/pub?gid=0&single=true&output=csv)
+* Revenue
+* Number of times a given event is performed
+* Number of unique users performing an event
+* [Example report](https://docs.google.com/spreadsheets/d/e/2PACX-1vS89RlkFIss7uARroJcOcX1rU6gUmZ2ySYwfTprg9GaA2BYnvDPVqWmOicea1wrBnNuGgEuLPwzL_ac/pub?gid=0&single=true&output=csv)
 
 **How do you get the report?**
 
-- Provided via Data Locker for Partners. The report updates [Daily UTC time](/docs/about-data-freshness-and-timezone-support#daily).
-- Before we start sharing the data with you, the advertisers must [grant permissions](/docs/aggregated-campaign-performance-report-for-ad-networks#permission-to-get-aggregated-performance-data) in the dashboard.
+* Provided via Data Locker for Partners. The report updates [Daily UTC time](/docs/about-data-freshness-and-timezone-support#daily-processing).
+* Before we start sharing the data with you, the advertisers must [grant permissions](/docs/aggregated-campaign-performance-report-for-ad-networks#permission-to-get-aggregated-performance-data) in the dashboard.
 
 ## About the report
 
-### Report structure
+<Accordion title="Report structure">
 
 #### Dimensions
 
@@ -56,12 +56,17 @@ Metrics are provided with the best granularity possible using the dimensions rep
 | --- | --- |
 | app\_id |  |
 | media\_source |  |
-| conversion\_type | - Possible values: install, re-engagement, re-attribution<br />- Equivalent postback macro: is\_retargeting |
+| conversion\_type | <ul><li>Possible values: install, re-engagement, re-attribution</li><li>Equivalent postback macro: is\_retargeting</li></ul> |
 | attributed\_touch\_type | Possible values: click, impressions, pre-install, unknown, tv, null |
-| days\_post\_attribution | The number of days elapsed since the attribution event.<br />The maximum number of days is 180. <br />Tip! Use this to calculate retention and KPI days. |
-| event\_date | The date the event occurred.<br />Format: yyyy-mm-dd |
+| days\_post\_attribution | The number of days elapsed since the attribution event.  <br />The maximum number of days is 180.<br /><br />Tip! Use this to calculate retention and KPI days. |
+| event\_date | The date the event occurred.<br /><br />Format: yyyy-mm-dd |
 | conversion\_date | Format: yyyy-mm-dd |
-| event\_name | Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app. |
+| event\_name | Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app.<table><thead><tr><th>event\_name</th><th>What did the user do</th></tr></thead><tbody><tr><td>af\_conversion</td><td>User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution.</td></tr><tr><td>af\_sessions</td><td>Opened the app</td></tr><tr><td>af\_uninstall</td><td>Uninstalled the app</td></tr><tr><td>Advertiser defined in-app event</td><td>Performed an in-app event in the app. In-app event names aren't mapped to partner event names.</td></tr></tbody></table> |
+| event\_name | What did the user do |
+| af\_conversion | User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution. |
+| af\_sessions | Opened the app |
+| af\_uninstall | Uninstalled the app |
+| Advertiser defined in-app event | Performed an in-app event in the app. In-app event names aren't mapped to partner event names. |
 | campaign | Campaign hierarchy |
 | campaign\_id | Campaign hierarchy |
 | adset | Campaign hierarchy |
@@ -74,14 +79,7 @@ Metrics are provided with the best granularity possible using the dimensions rep
 | country\_code | Derived from the user IP address |
 | agency | If blank, there is no agency associated |
 | Keywords | [Available starting April 27, 2022] Word(s) used in the user's online search. As reported by the ad network |
-| Keyword ID | [Available starting April 27, 2022] Keyword ID returned by the ad network. |
-
-| event\_name | What did the user do |
-| --- | --- |
-| af\_conversion | User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution. |
-| af\_sessions | Opened the app |
-| af\_uninstall | Uninstalled the app |
-| Advertiser defined in-app event | Performed an in-app event in the app. In-app event names aren't mapped to partner event names. |
+| Keyword ID | [Available starting April 27, 2022] Keyword ID returned by the ad network. |
 
 #### Metrics
 
@@ -91,7 +89,9 @@ Metrics are provided with the best granularity possible using the dimensions rep
 | Revenue | revenue\_usd | Cumulative revenue in USD. For example, $100.00 is reflected as 100. |
 | event\_count | event\_count | Number of event occurrences |
 
-### BI developer considerations
+</Accordion>
+
+<Accordion title="BI developer considerations">
 
 **Scope of data in the report**
 
@@ -101,52 +101,60 @@ In your data consumption process, you must use logic to split the data between c
 
 **Field-level considerations**
 
-- Use post-attribution days to enable easy calculation of retention metrics.
-- Calculating unique users using campaign name and campaign ID dimensions: If you can disregard campaign name granularity, you can sum unique count on campaign ID and the metrics are correct.
-- You can aggregate the data using the campaign hierarchy fields.
-- In-app events use the advertiser event name and aren't mapped to your event names. Ask the advertiser to provide you with the mappings or view them in the dashboard. [Partner in-app event mapping](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration).
-- Revenue is in USD is calculated using the exchange rate on the event day.
-- Ad revenue events are included where available but update with a lag of up to 5 days.
+* Use post-attribution days to enable easy calculation of retention metrics.
+* Calculating unique users using campaign name and campaign ID dimensions: If you can disregard campaign name granularity, you can sum unique count on campaign ID and the metrics are correct.
+* You can aggregate the data using the campaign hierarchy fields.
+* In-app events use the advertiser event name and aren't mapped to your event names. Ask the advertiser to provide you with the mappings or view them in the dashboard. [Partner in-app event mapping](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration).
+* Revenue is in USD is calculated using the exchange rate on the event day.
+* Ad revenue events are included where available but update with a lag of up to 5 days.
 
 **General considerations**
 
-- Data freshness: Daily, starting 08:00 UTC. Data is written to the Data Locker h=23 folder.
-- Data available is user journey attribution data attributed by AppsFlyer. Meaning, SKAdNetwork reported by iOS postbacks isn't included in this data set.
-- Data is contained in files that contain multiple apps. Use the app\_id field to identify the app.
-- If you don't get data for a given app, verify that the advertiser has granted you the necessary permissions.
+* Data freshness: Daily, starting 08:00 UTC. Data is written to the Data Locker h=23 folder.
+* Data available is user journey attribution data attributed by AppsFlyer. Meaning, SKAdNetwork reported by iOS postbacks isn't included in this data set.
+* Data is contained in files that contain multiple apps. Use the app\_id field to identify the app.
+* If you don't get data for a given app, verify that the advertiser has granted you the necessary permissions.
 
-### Retention report considerations
+</Accordion>
+
+<Accordion title="Retention report considerations">
 
 To create retention metrics, for example, retention day-7, do so by setting filters on the following fields:
 
-- days\_post\_install=7
-- event\_name=af\_session
-- conversion\_type as required
-- To prevent the inclusion of [duplicate retargeting events](/docs/resolve-retargeting-double-attribution), select is\_primary\_attribution=true or use conversion\_type to limit the data set to installs.
-- Group by: campaign and other dimensions as needed.
-- Sum: unique\_users\_count
+* days\_post\_install=7
+* event\_name=af\_session
+* conversion\_type as required
+* To prevent the inclusion of [duplicate retargeting events](/docs/resolve-retargeting-double-attribution), select is\_primary\_attribution=true or use conversion\_type to limit the data set to installs.
+* Group by: campaign and other dimensions as needed.
+* Sum: unique\_users\_count
 
 By adding or removing dimensions you can get metrics with different granularity.
+
+</Accordion>
 
 ## Permissions
 
 You (the ad network), must ask the advertiser to grant you the permissions listed here. The advertiser must perform this procedure once per app.
 
-### Permission to get aggregated performance data
+<div id="permission-to-get-aggregated-performance-data" />
+
+<Accordion title="Permission to get aggregated performance data">
 
 Ad networks appointed (activated) by agencies: The agency can't grant permission. The agency must ask the advertiser to grant the permissions for them.
 
 **To allow the ad network to get aggregated performance data:**
 
-1. In AppsFlyer, from the side menu, select **Collaborate** \> **Integrated partners** .
+1. In AppsFlyer, from the side menu, select **Collaborate** > **Integrated partners***.*
 2. Search for the partner and select it.
-3. Click **Set up integration**. You’re directed to the integration setup page.
+3. Click **Set up integration**. You’re directed to the integration setup page.
 4. Verify that **Activate partner** is on. If not, data isn't shared.
 5. Go to the **Permissions** tab.
 6. Turn on the following ad network permissions:
-   - **Access aggregate conversions data**.
-   - **Access aggregate in-app events data**.
-   - **Access aggregate revenue data**.
+   * **Access aggregate conversions data**.
+   * **Access aggregate in-app events data**.
+   * **Access aggregate revenue data**.
 7. Click **Save Permissions**.
 8. Notify the ad network that you have granted the permissions.
 9. If you have multiple apps, repeat the procedure for each app integrated with the partner.
+
+</Accordion>

@@ -26,11 +26,11 @@ x-zendesk:
 
 ## About cross-promotion
 
-Cross-promotion campaigns are one of the best ways to promote your existing apps or guide your users to new apps launched by your company. These types of campaigns can result in higher conversion and retention rates compared with most other sources of traffic. Since cross-promotion is advertising on owned media, you can use [device ID matching](/docs/cross-promotion-attribution-for-marketers#attributing-crosspromotion) to deterministically attribute new installs. Cross-promotion attribution is available for all accounts, regardless of your AppsFlyer plan.
+Cross-promotion campaigns are one of the best ways to promote your existing apps or guide your users to new apps launched by your company. These types of campaigns can result in higher conversion and retention rates compared with most other sources of traffic. Since cross-promotion is advertising on owned media, you can use [device ID matching](/docs/cross-promotion-attribution-for-marketers#attributing-cross-promotion) to deterministically attribute new installs. Cross-promotion attribution is available for all accounts, regardless of your AppsFlyer plan.
 
-The following image shows the promoted app's dashboard with a breakdown of metrics for campaigns running on owned media ( **af\_cross\_promotion**) and other media sources. You can see that the number of installs and conversion rate for the cross-promotion campaign are much higher than those for the other media sources.
+The following image shows the promoted app's dashboard with a breakdown of metrics for campaigns running on owned media (**af\_cross\_promotion**) and other media sources. You can see that the number of installs and conversion rate for the cross-promotion campaign are much higher than those for the other media sources.
 
-![CrossPromo_mediaSource](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)
+[![CrossPromo_mediaSource](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)
 
 ### How does cross-promotion work?
 
@@ -39,19 +39,14 @@ The following image shows the promoted app's dashboard with a breakdown of metri
 3. The user clicks on the ad.
 4. The SDK records the click and redirects the user to the promoted app's page on the app store. The click recorded by the SDK already includes the device advertising ID.
 5. Once the promoted app is installed and launched, the [AppsFlyer dashboard](/docs/cross-promotion-attribution-for-marketers#promoted-app-dashboard) shows the newly acquired user under the media source **af\_cross\_promotion**.
-
-   * To change the media source value, your developer needs to add a custom parameter called `pid` with the value you want.
-   > 📘 Note
-   >
-   > For Android, this only works for SDK V6.4.2+.
+   * To change the media source value, your developer needs to add a custom parameter called `pid` with the value you want. **Note**: For Android, this only works for SDK V6.4.2+.
    * The app driving the install, the source app, appears as a **Site ID** of this media source.
-6. The SDK generates an in-app event automatically.
-
-The event name for Android is `af_cross_promotion` and for iOS it's `af_cross_promotion_clicked`.
+6. The SDK generates an in-app event automatically.  
+   The event name for Android is `af_cross_promotion` and for iOS it's `af_cross_promotion_clicked`.
 
 ## Attributing cross-promotion
 
-AppsFlyer allows you to use device ID matching as the attribution method for recording and attributing installs that originate from your cross-promotion campaigns. You can attribute both impressions and clicks, enabling you to calculate the [click-through rate](/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates::74b1530a) or installs/impressions ratio.
+AppsFlyer allows you to use device ID matching as the attribution method for recording and attributing installs that originate from your cross-promotion campaigns. You can attribute both impressions and clicks, enabling you to calculate the [click-through rate](/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1) or installs/impressions ratio.
 
 The device identifier used for matching depends on the following:
 
@@ -89,24 +84,24 @@ The promoted app's dashboard enables you to determine which source apps send the
 
 1. Go to **Overview**.
 2. Select the **af\_cross\_promotion** media source (or your custom media source).
-3. Group by **Site ID** to view the list of source apps. ![CrossPromo_SiteID](https://files.readme.io/e057085e90a4a8e56e6769a0af332785488d7757cb5430418e8db6b3cfa67210-4404613179025.png)
+3. Group by **Site ID** to view the list of source apps.[![CrossPromo_SiteID](https://files.readme.io/e057085e90a4a8e56e6769a0af332785488d7757cb5430418e8db6b3cfa67210-4404613179025.png)](https://files.readme.io/e057085e90a4a8e56e6769a0af332785488d7757cb5430418e8db6b3cfa67210-4404613179025.png)
 
 #### Analysis
 
 Viewing the installs, clicks, impressions, and conversion rate data from several existing apps all serving ads for the same promoted app enables you to perform affinity analysis. The source apps (Site IDs) with the best conversion rates have the best affinity with the promoted app, and their users are most likely to install it. Based on these insights, you can optimize your cross-promotion campaigns accordingly.
 
-#### Example
-
-You are a marketer of gaming apps for PlayIt Gaming International. You have a number of successful apps, including Bowling (com.playit.bowling) and Golfing (com.playit.golfing). You have just launched a new app called Billiards. You decide to run cross-promotion tests to see how many users actually click on the Billiards ad in one of the existing apps. The campaign runs well on Bowling, with a conversion rate of 7.92%, so you decide to advertise on Golfing as well.
-
-When you check the dashboard you see that the conversion rate for Golfing,18.22%, is much higher than the rate for Bowling, which allows you to determine that there is a greater affinity between Golfing and the promoted app, BIlliards.
-
-![CrossPromo_conversionRate](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)
-
-Based on these insights, you could optimize your campaign as follows:
-
-* Run a full-scale cross-promotion campaign on Golfing.
-* Start to [attribute impressions](/docs/measure-view-through-engagements#viewthrough-attribution-flow) in addition to clicks. Since you initially set up your campaign to measure only clicks, installs from users that see the ad without clicking and then install later are counted as organic installs instead of non-organic. This means you don't yet have a complete picture of the campaign performance for each source app.
+> 📘 **Example**
+>
+> You are a marketer of gaming apps for PlayIt Gaming International. You have a number of successful apps, including Bowling (com.playit.bowling) and Golfing (com.playit.golfing). You have just launched a new app called Billiards. You decide to run cross-promotion tests to see how many users actually click on the Billiards ad in one of the existing apps. The campaign runs well on Bowling, with a conversion rate of 7.92%, so you decide to advertise on Golfing as well.
+>
+> When you check the dashboard you see that the conversion rate for Golfing,18.22%, is much higher than the rate for Bowling, which allows you to determine that there is a greater affinity between Golfing and the promoted app, BIlliards.
+>
+> [![CrossPromo_conversionRate](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)
+>
+> Based on these insights, you could optimize your campaign as follows:
+>
+> * Run a full-scale cross-promotion campaign on Golfing.
+> * Start to [attribute impressions](/docs/measure-view-through-engagements#view-through-attribution-flow) in addition to clicks. Since you initially set up your campaign to measure only clicks, installs from users that see the ad without clicking and then install later are counted as organic installs instead of non-organic. This means you don't yet have a complete picture of the campaign performance for each source app.
 
 ### Custom dashboard
 
@@ -114,12 +109,12 @@ The promoted app's dashboard is great for getting a picture of which source apps
 
 A [custom dashboard](/docs/custom-dashboards) allows you to view information from several promoted apps in one place, including cross-promotion traffic. In addition, a custom dashboard is a quick and easy way to share data with account users.
 
-#### Example
-
-You are a marketer for eCommerce Apps, Ltd., and you have a highly successful app called Shoes. You are now launching 3 new apps, Accessories, Jackets and Coats, and Sport Shoes. You decide to run a cross-promotion campaign in the Shoe app to see which of your new apps it does the best job of promoting.
-
-You divide your user base into 3 segments. Each time a user launches the Shoe app, 1 out of 3 possible ads is displayed: 1 for Accessories, 1 for Jackets and Coats, and 1 for Sport Shoes.
-
-To view metrics for all 3 promoted apps in one place, you create a custom dashboard. In the following image, you can see that Sport Shoes has a 20.23% conversion rate, meaning that Shoes has a much greater affinity with Sport Shoes than with the other 2 apps it is promoting.
-
-![CrossPromo_customWidget](https://files.readme.io/9363a68994956bc19115f6f9babb9acb0c7d4fe75478683b2a45720987486956-4404613319953.png)
+> 📘 **Example**
+>
+> You are a marketer for eCommerce Apps, Ltd., and you have a highly successful app called Shoes. You are now launching 3 new apps, Accessories, Jackets and Coats, and Sport Shoes. You decide to run a cross-promotion campaign in the Shoe app to see which of your new apps it does the best job of promoting.
+>
+> You divide your user base into 3 segments. Each time a user launches the Shoe app, 1 out of 3 possible ads is displayed: 1 for Accessories, 1 for Jackets and Coats, and 1 for Sport Shoes.
+>
+> To view metrics for all 3 promoted apps in one place, you create a custom dashboard. In the following image, you can see that Sport Shoes has a 20.23% conversion rate, meaning that Shoes has a much greater affinity with Sport Shoes than with the other 2 apps it is promoting.
+>
+> ![CrossPromo_customWidget](https://files.readme.io/9363a68994956bc19115f6f9babb9acb0c7d4fe75478683b2a45720987486956-4404613319953.png)

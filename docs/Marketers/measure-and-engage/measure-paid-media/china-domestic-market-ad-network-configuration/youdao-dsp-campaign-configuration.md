@@ -38,7 +38,7 @@ x-zendesk:
 
 Youdao DSP's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
-## Integration Tab
+<Accordion title="Integration Tab">
 
 The integration with Youdao DSP only supports the install event in the default postback.
 
@@ -51,7 +51,9 @@ For more details about partner activation please click [here](/docs/partner-acti
 
 ![mceclip2.png](https://files.readme.io/8e104f89182a421579a067a4904a0d6ddc7ae4fbae7da6a9a8e0c800ccc42e99-50900269840529.png)
 
-## Attribution Link Tab
+</Accordion>
+
+<Accordion title="Attribution Link Tab">
 
 In this tab, you can create the attribution links you want to send to Youdao DSP for attributing Youdao DSP's campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
@@ -76,7 +78,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 ![attribution-link-parameters.png](https://files.readme.io/132e20e29758b2865ee315e2b185c0689622f2b9e0a01c223253a83bf9ad6ceb-50900241322385.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
 
 ### Click-Through Attribution
 
@@ -92,15 +94,21 @@ More details about the [click lookback window here](/docs/set-up-lookback-window
 
 This is the attribution link that contains all the setup information you have set for it. Send it to Youdao DSP to be activated when leads click on a corresponding ad.
 
-## Cost Tab
+</Accordion>
+
+<Accordion title="Cost Tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad Revenue Tab
+</Accordion>
+
+<Accordion title="Ad Revenue Tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions Tab
+</Accordion>
+
+<Accordion title="Permissions Tab">
 
 In this tab, you can select the permissions to grant Youdao DSP, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Youdao DSP, the permissions tab is active and you can grant control to Youdao DSP.
 
@@ -116,3 +124,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+
+</Accordion>

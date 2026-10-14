@@ -68,34 +68,33 @@ Google Ads (AdWords) revenue integration is deprecated as of November 30, 2020. 
 
 <Accordion title="FAQ">
 
+**Q.** Why can't I see my cost data?
 
-Q. Why can't I see my cost data?
-A. There are several possible reasons why you don't see the data:
+**A.** There are several possible reasons why you don't see the data:
 
-When logging in, it is important to verify the right Google account is used.`<br/>`If you log in using the wrong Google account, no cost is pulled or displayed. In such a situation, you must remove the app from Google apps permissions and login with the correct account. To do so, follow these steps:
-Click on the following URL: `[`https://myaccount.google.com/permissions](https://myaccount.google.com/permissions)
+* When logging in, it is important to verify the right Google account is used.  
+  If you log in using the wrong Google account, no cost is pulled or displayed. In such a situation, you must remove the app from Google apps permissions and login with the correct account. To do so, follow these steps:
+  1. Click on the following URL: [https://myaccount.google.com/permissions](https://myaccount.google.com/permissions)
+  2. Remove AppsFlyer Cost on Google and login again.
+* In some cases, the agency cost integration is turned on but doesn't pull cost because the agency user who logged in doesn't have access to the correct Google ads customer ID. This results in the advertiser seeing incomplete cost data.
 
-Remove AppsFlyer Cost on Google and login again.
+  Make sure the agency user who logs into the Cost tab has access to the Google ads customer ID set up in the Integration tab.
 
+  ![](https://files.readme.io/2d17b3dad78e02c76253f30db0c15c18eb837b531becabc07ccad274258c2c61-49938966132753.png)
+* Using spaces or special characters in iOS Search or Android Landing Page campaigns may cause issues with matching cost data to click data and leading to missing cost reporting.
+* When an agency disables a cost integration after cost is already collected, but the advertiser still has an active cost integration, the data is associated with the advertiser only from the day the agency disables the integration.
 
-In some cases, the agency cost integration is turned on but doesn't pull cost because the agency user who logged in doesn't have access to the correct Google ads customer ID. This results in the advertiser seeing incomplete cost data.
-Make sure the agency user who logs into the Cost tab has access to the Google ads customer ID set up in the Integration tab.
-`![](https://files.readme.io/2d17b3dad78e02c76253f30db0c15c18eb837b531becabc07ccad274258c2c61-49938966132753.png)`
+**Q.** Where is my geo-based click data?
 
-Using spaces or special characters in iOS Search or Android Landing Page campaigns may cause issues with matching cost data to click data and leading to missing cost reporting.
-When an agency disables a cost integration after cost is already collected, but the advertiser still has an active cost integration, the data is associated with the advertiser only from the day the agency disables the integration.
-
-Q. Where is my geo-based click data?
-A. In some cases, AppsFlyer receives partial Geo clicks data from Google. When this occurs AppsFlyer completes the missing clicks information from other Google sources, which lack the Geo data. Therefore, when grouping by Geo, the total number of clicks from Google's campaigns, may not match with the same number with another grouping dimension.
+**A.** In some cases, AppsFlyer receives partial Geo clicks data from Google. When this occurs AppsFlyer completes the missing clicks information from other Google sources, which lack the Geo data. Therefore, when grouping by Geo, the total number of clicks from Google's campaigns, may not match with the same number with another grouping dimension.
 
 </Accordion>
-<Accordion title="Traits and limitations">
 
-``
+<Accordion title="Traits and limitations">
 
 | Trait | Remarks |
 | --- | --- |
-| Inactive and active campaigns | The Google integration supports cost data (cost, clicks, and impressions) for **inactive campaigns** (campaigns for which no installs or conversions were recorded in AppsFlyer) in the following cases:<br /><br />* App campaigns for installs (ACI campaign type)<br />* App campaigns for engagements (ACE campaign type)<br />* App campaigns for pre-registrations (ACPRE campaign type)<br /><br />For those app campaigns, AppsFlyer breaks down cost data by channel aligned to the attribution data. For example, ACI\_Display, ACI\_Youtube, ACI\_Search.<br /><br />For non-ACI and non-ACE campaigns, AppsFlyer reports cost data (cost, clicks, and impressions) for **active campaigns** only, meaning at least one conversion or install is recorded in AppsFlyer. Cost data is reported for the 7 day-window of the conversion/install. |
+| Inactive and active campaigns | The Google integration supports cost data (cost, clicks, and impressions) for **inactive campaigns** (campaigns for which no installs or conversions were recorded in AppsFlyer) in the following cases:<ul><li>App campaigns for installs (ACI campaign type)</li><li>App campaigns for engagements (ACE campaign type)</li><li>App campaigns for pre-registrations (ACPRE campaign type)</li></ul>For those app campaigns, AppsFlyer breaks down cost data by channel aligned to the attribution data. For example, ACI\_Display, ACI\_Youtube, ACI\_Search.<br /><br />For non-ACI and non-ACE campaigns, AppsFlyer reports cost data (cost, clicks, and impressions) for **active campaigns** only, meaning at least one conversion or install is recorded in AppsFlyer. Cost data is reported for the 7 day-window of the conversion/install. |
 | Performance Max campaigns | Performance Max campaigns don't support cost data breakdown by country/geo. |
 
 </Accordion>

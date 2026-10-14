@@ -30,37 +30,34 @@ When working with agencies, you can view the traffic they generated in AppsFlyer
 
 **To view agency traffic in raw data reports:**
 
-1. In AppsFlyer, from the side menu, select **Report**>**Raw Data Export.**
+1. In AppsFlyer, from the side menu, select **Report** > **Raw Data Export.**
 2. Click **Create report**.
 3. Select a report that includes media source attribution.
 4. Click **Create**.
 
 **To view aggregated data reports:**
 
-1. In AppsFlyer, from the side menu, select **Report**> **Aggregated Data Export**.
+1. In AppsFlyer, from the side menu, select **Report** > **Aggregated Data Export**.
 2. Download a report that includes media source attribution.
 
 ### Viewing agency traffic in the Overview dashboard
 
 **To see traffic from agencies:**
 
-1. In AppsFlyer, from the side menu, select **Analyze** \> **Overview**.
+1. In AppsFlyer, from the side menu, select **Analyze** > **Overview**.
 2. Select the **Agency** filter. The list of agencies you work with is displayed.
-3. Select the agencies whose traffic you want to view.
+3. Select the agencies whose traffic you want to view.  
+   The dashboard displays media sources used by agencies.
 
-The dashboard displays media sources used by agencies.
-
-> 📘 Note
->
-> Using the **Group By** filter, you can group the data by agency too. Selecting multiple agencies in the agency filter and grouping by agency, you can compare in your dashboard the performance of the different agencies with whom you are running campaigns.
+**Note**: Using the **Group By** filter, you can group the data by agency too. Selecting multiple agencies in the agency filter and grouping by agency, you can compare in your dashboard the performance of the different agencies with whom you are running campaigns.
 
 ### Viewing agency traffic in the Retention dashboard
 
 **To see traffic from agencies:**
 
-1. In AppsFlyer, from the side menu, select **Analyze** \> **Retention**.
+1. In AppsFlyer, from the side menu, select **Analyze** > **Retention**.
 2. Select the **Agency** filter.
 
 The **Group By** filter allows you to group data by agency and media source to reflect the agency traffic.
 
-![transparent-agency-retention.png](https://files.readme.io/8137dbf39a8de019a85028fd98898086318072383c9477f75e988bd0bdf43d53-32354172434449.png)
+[![transparent-agency-retention.png](https://files.readme.io/8137dbf39a8de019a85028fd98898086318072383c9477f75e988bd0bdf43d53-32354172434449.png)](https://files.readme.io/8137dbf39a8de019a85028fd98898086318072383c9477f75e988bd0bdf43d53-32354172434449.png)

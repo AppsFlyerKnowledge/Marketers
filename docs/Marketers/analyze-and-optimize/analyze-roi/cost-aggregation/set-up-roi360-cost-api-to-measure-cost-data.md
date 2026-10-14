@@ -45,8 +45,8 @@ To set up a dedicated cost connection with a media source for an individual app,
 2. Click **Manage integration**.
 3. Open the integrated partner **Cost** tab.
 4. Turn on **Get Cost Data**. The requirements for connecting to the partner are displayed.
-5. Configure and authenticate the cost integration to the partner. The authentication method depends on the media source. [See Cost integration methods](#h_01K3DGA6SK18MHM5FR6ZDR8Y2G) below.
-6. If the partner's cost configuration has **Site ID mapping**, select the required site ID configuration from the dropdown. See [Site ID mapping](#h_01K3DGA6SKDTTPY8Q1JBTCTY7H) below.
+5. Configure and authenticate the cost integration to the partner. The authentication method depends on the media source. [See Cost integration methods](#cost-integration-methods) below.
+6. If the partner's cost configuration has **Site ID mapping**, select the required site ID configuration from the dropdown. See [Site ID mapping](#site-id-mapping) below.
 7. Click **Save Cost**.
    * Cost data will start showing on your dashboards within 5-6 hours.
    * AppsFlyer collects data from the partner 6 times a day, on average, once every four hours.
@@ -62,7 +62,7 @@ To enable the cost integration on the account level, follow these steps:
 
 1. In AppsFlyer, from the side menu, open **Settings** > **ROI360** > **Cost settings.**
 2. Select the media source to retrieve cost data, then click **Next**.
-3. Configure and authenticate the cost integration to the media source. The authentication method depends on the media source. See [Cost integration methods](#h_01K3DGA6SK18MHM5FR6ZDR8Y2G) below.
+3. Configure and authenticate the cost integration to the media source. The authentication method depends on the media source. See [Cost integration methods](#cost-integration-methods) below.
 4. Enter (or customize) the cost integration name.
 5. Select the apps to include in this cost integration.
 6. Click **Save integration**.
@@ -80,7 +80,7 @@ The method for enabling cost integration depends on the media source's integrati
 
 * **Login**: Click **Log in to `<media source>`** to open the media source login window. Then follow the media source's login prompts.
 * **Credentials**: Enter media source-specific parameter values, for example, **API Key**.
-* **None:** No connection configuration is required other than turning on **Get Cost Data** like was instructed [above](#h_01K3DGA6SJB0R7G9EKH1G76R8K).
+* **None:** No connection configuration is required other than turning on **Get Cost Data** like was instructed [above](#enable-cost-api).
 
 To learn what method a particular media source uses, you can see the **Integration method** column in the [media source cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api).
 
@@ -148,7 +148,7 @@ The operational status of cost integrations is available as follows:
 
 * [Cost (and ad revenue) integration status dashboard](/docs/dashboard-cost-and-ad-revenue-status): Centralized list of media sources for which cost integration is enabled for one or more apps housed in your account.
 * Integrated partners: Status available in the context of an individual app.
-* Cost settings**:** The **Cost settings** page allows you to view the cost API status at both the account and app levels. For more information, see the "[View the media source aggregate cost integration status"](#h_01K3DGA6SKBPXEY18VJBCBNCJS) below.
+* Cost settings: The **Cost settings** page allows you to view the cost API status at both the account and app levels. For more information, see the "[View the media source aggregate cost integration status"](#h_01K3DGA6SKBPXEY18VJBCBNCJS) below.
 
 <Accordion title="View the media source cost integration status (Cost tab)">
 
@@ -256,6 +256,6 @@ Additional media sources are available through InCost ad networks. To get the fu
 | --- | --- |
 | Agencies | Agencies can't use Cost settings to perform cost integrations across multiple apps simultaneously. |
 | Future apps automatically inherit the cost settings feature in Account-level Cost settings | Currently not supported |
-| Cost data behavior when the advertiser and agency connect to the same ad network | If both an **advertiser and an agency connect to cost integration** for the same ad network account (for example, Google Ads), cost data is pulled from the **account that receives attribution**.  <br />  <br />**Example scenario:**<br /><br />* The advertiser connects to cost integration using the advertiser credentials<br />* The agency connects cost integration using agency credentials<br />* Attribution assigned to the agency account.<br /><br />**Result:**<br /><br />* ROI360 pulls **cost data from the agency connection**.<br />* The **advertiser connection** shows as No Data. |
+| Cost data behavior when the advertiser and agency connect to the same ad network | If both an **advertiser and an agency connect to cost integration** for the same ad network account (for example, Google Ads), cost data is pulled from the **account that receives attribution**.<br /><br />**Example scenario:**<ul><li>The advertiser connects to cost integration using the advertiser credentials</li><li>The agency connects cost integration using agency credentials</li><li>Attribution assigned to the agency account.</li></ul>**Result:**<ul><li>ROI360 pulls **cost data from the agency connection**.</li><li>The **advertiser connection** shows as No Data.</li></ul> |
 | Google cost integration automatic disconnection | Cost integrations that show a **No Data** or **Invalid credentials** status for more than 365 consecutive days are automatically disconnected. This applies to Google integrations only. |
 | TikTok advertiser ID list configuration | Configure the advertiser ID list at the account level using only advertiser IDs connected to the TikTok user in the ad network.<br /><br />Advertiser IDs added to the list that are not aligned with the user in the ad network do not return cost data. |

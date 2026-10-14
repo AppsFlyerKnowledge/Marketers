@@ -31,8 +31,6 @@ Specific information about reports, reporting tools, and reporting APIs:
 
 #### Interfaces for advertisers
 
-
-
 | Arena | API name | ![af_premium.png](https://files.readme.io/ad0c279c48242ea25529f1bc386ee2c747bcd332f5fb1eb2fc26dd378a257f6e-4403570953105.png)<br /><br />Premium feature | Description | Authentication  <br />token/key | Interface type |
 | --- | --- | --- | --- | --- | --- |
 | Mobile attribution | [Server-to-server events](/docs/server-to-server-events-api-for-mobile-s2s-mobile) | No | Record in-app events that occur outside a mobile app | [SDK dev key](/docs/app-settings#sdk-authentication-dev-key) | REST API |

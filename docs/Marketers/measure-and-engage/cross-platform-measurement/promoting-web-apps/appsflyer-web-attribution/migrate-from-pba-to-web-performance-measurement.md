@@ -28,11 +28,11 @@ Web measurement matters more than ever. The website is where many of your users 
 
 AppsFlyer is bringing web measurement up to the same standard as mobile. People-Based Attribution (PBA), the legacy web product, is being replaced by Web Performance Measurement, built on top of AppsFlyer core attribution engine and unified data model. Web Performance Measurement matches everything PBA does today and adds:
 
-- **One source of truth**, web and mobile app measurement in one place, with cost aggregation, optimization postbacks, and creative optimization together.
-- **Better budget decisions**, flexible attribution that matches your business logic, so you double down on the campaigns that actually work.
-- **Improved ROAS**, enriched optimization postbacks to your ad networks, and a full server-side setup that measures more conversions, so networks can optimize using better signals.
-- **True cross-platform ROI**, measure every user journey across web, app, and any platform.
-- **Simple, unified reporting**, one dashboard, and one set of data reports for every platform, refreshed hourly.
+* **One source of truth**, web and mobile app measurement in one place, with cost aggregation, optimization postbacks, and creative optimization together.
+* **Better budget decisions**, flexible attribution that matches your business logic, so you double down on the campaigns that actually work.
+* **Improved ROAS**, enriched optimization postbacks to your ad networks, and a full server-side setup that measures more conversions, so networks can optimize using better signals.
+* **True cross-platform ROI**, measure every user journey across web, app, and any platform.
+* **Simple, unified reporting**, one dashboard, and one set of data reports for every platform, refreshed hourly.
 
 You don't need to replace your Web SDK. Web Performance Measurement uses the same SDK, with no code changes to your website. The effort involved in the rest of the switch varies, depending on how you currently receive your data, through the dashboard, Data Locker, or the Server-to-server (S2S) API.
 
@@ -44,42 +44,24 @@ This section compares PBA and Web Performance Measurement in two ways: overall c
 
 The table below compares PBA and Web Performance Measurement capabilities across data, reporting, and attribution.
 
-| Capability | Description | PBA | Web Performance Measurement |
-| :--- | :--- | :--- | :--- |
-| **Data** | | | |
-| Data freshness | How quickly is data available for reporting | **✗** Daily | **✓** Hourly reports, approximately 2 hours of data freshness |
-| Data model | Schema alignment with mobile attribution data | **✗** Different from mobile | **✓** Aligned with mobile, easy to join, and analyze |
-| **Reporting** | | | |
-| Activity dashboard | Dashboard based on event time | **✓** Supported | **✓** Supported |
-| Cohort dashboard | Analyze performance by acquisition cohort over time | **✗** Not supported | **✓** Supported |
-| Data Locker raw data | Access to raw attribution data via Data Locker export | **✓** Supported | **✓** Supported |
-| Ad-level granularity | Report breakdown from the campaign down to the ad level | **✗** Dashboard only, not in raw data | **✓** Full campaign granularity on both the dashboard and raw data |
-| Cross-platform LTV | Stitch web and mobile user journeys into unified LTV | **✗** Not supported | **✓** Supported |
-| **Cost and signals** | | | |
-| Web cost | Ingest and report on ad spend for web campaigns | **✗** Not supported | **✓** Supported |
-| Optimization postbacks | Send optimization signals back to ad networks | **✗** Not supported | **✓** Supported |
-| **Implementation** | | | |
-| Web SDK (Pixel) | Client-side SDK for measuring web visits and events | **✓** Supported | **✓** Same SDK, no code changes required |
-| S2S support | Full server-side measurement for visits and events | **✗** Events only | **✓** Events and visits. Supports a full server-side implementation. |
-| **Attribution engine** | | | |
-| Attribution windows | Configurable lookback, attribution, re-engagement, and inactivity windows | **✗** Click lookback window only | **✓** 5 configurable windows (full control) |
-| Custom UA event | Define what event counts as a User Acquisition (UA) event beyond the first visit | **✗** First visit only | **✓** Any custom event (for example, sign-up, purchase) |
-| UA vs. retargeting | Separate credit for new acquisition vs. re-engagement | **✗** No UA concept, events attributed to last touch | **✓** Dedicated UA and retargeting views with dual attribution credit |
+<table><tbody><tr><td>Capability</td><td>Description</td><td>PBA</td><td>Web Performance Measurement</td></tr><tr><td colspan="4"><strong>Data</strong></td></tr><tr><td>Data freshness</td><td>How quickly is data available for reporting</td><td><span><strong>✗</strong></span> Daily</td><td><span><strong>✓</strong></span> Hourly reports, approximately 2 hours of data freshness</td></tr><tr><td>Data model</td><td>Schema alignment with mobile attribution data</td><td><span><strong>✗</strong></span> Different from mobile</td><td><span><strong>✓</strong></span> Aligned with mobile, easy to join, and analyze</td></tr><tr><td colspan="4"><strong>Reporting</strong></td></tr><tr><td>Activity dashboard</td><td>Dashboard based on event time</td><td><span><strong>✓</strong></span> Supported</td><td><span><strong>✓</strong></span> Supported</td></tr><tr><td>Cohort dashboard</td><td>Analyze performance by acquisition cohort over time</td><td><span><strong>✗</strong></span> Not supported</td><td><span><strong>✓</strong></span> Supported</td></tr><tr><td>Data Locker raw data</td><td>Access to raw attribution data via Data Locker export</td><td><span><strong>✓</strong></span> Supported</td><td><span><strong>✓</strong></span> Supported</td></tr><tr><td>Ad-level granularity</td><td>Report breakdown from the campaign down to the ad level</td><td><span><strong>✗</strong></span> Dashboard only, not in raw data</td><td><span><strong>✓</strong></span> Full campaign granularity on both the dashboard and raw data</td></tr><tr><td>Cross-platform LTV</td><td>Stitch web and mobile user journeys into unified LTV</td><td><span><strong>✗</strong></span> Not supported</td><td><span><strong>✓</strong></span> Supported</td></tr><tr><td colspan="4"><strong>Cost and signals</strong></td></tr><tr><td>Web cost</td><td>Ingest and report on ad spend for web campaigns</td><td><span><strong>✗</strong></span> Not supported</td><td><span><strong>✓</strong></span> Supported</td></tr><tr><td>Optimization postbacks</td><td>Send optimization signals back to ad networks</td><td><span><strong>✗</strong></span> Not supported</td><td><span><strong>✓</strong></span> Supported</td></tr><tr><td colspan="4"><strong>Implementation</strong></td></tr><tr><td>Web SDK (Pixel)</td><td>Client-side SDK for measuring web visits and events</td><td><span><strong>✓</strong></span> Supported</td><td><span><strong>✓</strong></span> Same SDK, no code changes required</td></tr><tr><td>S2S support</td><td>Full server-side measurement for visits and events</td><td><span><strong>✗</strong></span> Events only</td><td><span><strong>✓</strong></span> Events and visits. Supports a full server-side implementation.</td></tr><tr><td colspan="4"><strong>Attribution engine</strong></td></tr><tr><td>Attribution windows</td><td>Configurable lookback, attribution, re-engagement, and inactivity windows</td><td><span><strong>✗</strong></span> Click lookback window only</td><td><span><strong>✓</strong></span> 5 configurable windows (full control)</td></tr><tr><td>Custom UA event</td><td>Define what event counts as a User Acquisition (UA) event beyond the first visit</td><td><span><strong>✗</strong></span> First visit only</td><td><span><strong>✓</strong></span> Any custom event (for example, sign-up, purchase)</td></tr><tr><td>UA vs. retargeting</td><td>Separate credit for new acquisition vs. re-engagement</td><td><span><strong>✗</strong></span> No UA concept, events attributed to last touch</td><td><span><strong>✓</strong></span> Dedicated UA and retargeting views with dual attribution credit</td></tr></tbody></table>
 
 ### Traffic source resolution, PBA vs. Web Performance Measurement
 
 If media source, channel, or campaign values differ from what PBA reported, here's why. Both use the same underlying approach: they resolve the media source from URL parameters and the referrer at the web visit by walking a priority list until the first match wins. But several rules changed, and those changes move the values you see in reporting, based on [PBA media source attribution rules](/docs/pba-media-source-attribution-rules) and [About traffic source resolution](/docs/about-traffic-source-resolution).
 
-Media source values renamed
+<Accordion title="Media source values renamed">
 
 | Trigger | PBA value | New value |
-| :--- | :--- | :--- |
+| --- | --- | --- |
 | Google display/video (utm\_source=Google + utm\_medium= cpm / display/banner/video/listing) | `doubleclick_int` | `dv360_int` |
 | Twitter via UTM (twitter + cpc) | X Ads | Twitter |
 
 Web Performance Measurement also remaps more PID values to display names, for example, `iossearchads_int` to Apple Search Ads, `metweb_int` to Facebook Ads, `twitterweb_int` to Twitter, `tiktokweb_int` to `tiktokglobal_int`, `snapweb_int` to `snapchat_int`. Reports built on the old raw values need to expect the new ones.
 
-Click ID coverage expanded, and dclid dropped
+</Accordion>
+
+<Accordion title="Click ID coverage expanded, and dclid dropped">
 
 PBA resolved three click IDs: `gclid` to `googleadwords_int`, `dclid` to `doubleclick_int`, and `msclkid` to `bingsearch_int`.
 
@@ -87,21 +69,27 @@ Web Performance Measurement resolves many more, `gclid`/`wbraid`/`gbraid` to `go
 
 Two behavior changes: dclid is no longer used for resolution on its own (PBA resolved it to doubleclick\_int), and fbclid is explicitly not used.
 
-UTM custom rules expanded
+</Accordion>
 
-The custom `utm_source` \+ `utm_medium` mapping is broader in Web Performance Measurement: it includes more medium synonyms (paid, paid\_search, paid-search, etc.) and added coverage for TikTok, Snapchat, and Pinterest beyond PBA's narrow single-medium rules. Where no custom rule matches, both fall back to the raw `utm_source` value.
+<Accordion title="UTM custom rules expanded">
 
-Channel
+The custom `utm_source` + `utm_medium` mapping is broader in Web Performance Measurement: it includes more medium synonyms (paid, paid\_search, paid-search, etc.) and added coverage for TikTok, Snapchat, and Pinterest beyond PBA's narrow single-medium rules. Where no custom rule matches, both fall back to the raw `utm_source` value.
+
+</Accordion>
+
+<Accordion title="Channel">
 
 Channel **values** also change format, from PBA's Direct / Organic search / Social media / Email / Ad / Referral / Other to the new DIRECT / ORGANIC\_SEARCH / SOCIAL\_MEDIA / EMAIL / AD / REFERRAL / OTHER. Filters and groupings keyed on the old labels need updating.
+
+</Accordion>
 
 ## Migrate to Web Performance Measurement
 
 Migration has one required step for everyone. After that, perform the steps that apply to your PBA setup.
 
-> 🚧 Expect differences in the numbers
->
-> PBA's numbers won't exactly match those you'll get after the migration. The attribution logic in Web Performance Measurement is more advanced and more flexible. PBA applied its own media source attribution rules; Web Performance Measurement uses improved traffic source resolution. See "Traffic source resolution, PBA vs. Web Performance Measurement" below, for what values to expect. Session recording logic itself is unchanged; a session still runs for 30 minutes of activity, the market standard.
+**Expect differences in the numbers (everyone)**
+
+PBA's numbers won't exactly match those you'll get after the migration. The attribution logic in Web Performance Measurement is more advanced and more flexible. PBA applied its own media source attribution rules; Web Performance Measurement uses improved traffic source resolution. See "Traffic source resolution, PBA vs. Web Performance Measurement" below, for what values to expect. Session recording logic itself is unchanged; a session still runs for 30 minutes of activity, the market standard.
 
 ### Step 1. Create a web app (required, everyone)
 
@@ -112,7 +100,7 @@ Migration has one required step for everyone. After that, perform the steps that
 
 Migrate to the new S2S API:
 
-1. Review [PBA Web-S2S to new S2S API migration](/docs/migrate-from-pba-to-web-performance-measurement#pba-web-s2s-to-new-s2s-api-migration) for what's different from your current PBA S2S integration, endpoints, authentication, and payload fields.
+1. Review [PBA Web-S2S to new S2S API migration](#pba-web-s2s-to-new-s2s-api-migration) for what's different from your current PBA S2S integration, endpoints, authentication, and payload fields.
 2. Set up the [new S2S API](/docs/server-to-server-s2s-api-for-web-performance-measurement) for Web Performance Measurement.
 3. Update your server-side integration to send to the new endpoints.
 
@@ -121,7 +109,7 @@ Migrate to the new S2S API:
 Move to the new Data Locker reports. The End User Events report replaces [PBA's Website visits and Website events reports](/docs/pba-raw-data-reports).
 
 1. Confirm you have Data Locker. If you don't, you'll need to add it to your account or purchase it.
-2. Review [Raw data field mapping](/docs/migrate-from-pba-to-web-performance-measurement#raw-data-field-mapping) for the full field-level mapping, renamed, redefined, or deprecated fields.
+2. Review [Raw data field mapping](#raw-data-field-mapping) for the full field-level mapping, renamed, redefined, or deprecated fields.
 3. Enable the new report using [Export AppsFlyer Web Attribution report data from Data Locker](/docs/export-web-performance-measurement-report-data-from-data-locker).
 4. Point your BI/ETL to the new report location and fields. This applies whether your events arrive via SDK or S2S; both land in the same raw report.
 
@@ -133,11 +121,11 @@ Move to the new Data Locker reports. The End User Events report replaces [PBA's 
 ## Capabilities being discontinued
 
 | Capability | What changes | Details |
-| :--- | :--- | :--- |
+| --- | --- | --- |
 | Conversion path | Already deprecated. | N/A |
-| Web-assisted installs (credit to a web campaign that helped drive a later mobile install) | No dedicated "web-assisted installs" view. | Web-to-app journeys are measured with Smart Script and Smart Banner. The cross-platform report provides a similar, though not identical, analysis. Like PBA, it's based on the Customer User Identifier (CUID):<br />- Web campaigns that assisted an install previously reported as organic now appear as non-organic user acquisition. These aren't assists; the web campaign is the acquisition source.<br />- Web campaigns that assisted a non-organic install: the web campaign serves as user acquisition, and the mobile install serves as cross-platform retargeting. |
+| Web-assisted installs (credit to a web campaign that helped drive a later mobile install) | No dedicated "web-assisted installs" view. | Web-to-app journeys are measured with Smart Script and Smart Banner. The cross-platform report provides a similar, though not identical, analysis. Like PBA, it's based on the Customer User Identifier (CUID):<ul><li>Web campaigns that assisted an install previously reported as organic now appear as non-organic user acquisition. These aren't assists; the web campaign is the acquisition source.</li><li>Web campaigns that assisted a non-organic install: the web campaign serves as user acquisition, and the mobile install serves as cross-platform retargeting.</li></ul> |
 | Backward recalculation | No backward recalculation beyond the default 30-minute delay. | Attribution is finalized after a 30-minute delay, giving users time to identify themselves during that window. |
-| Raw data fields | Mobile-related fields are deprecated for the web. Some fields are renamed, and some values change. | See [Raw data field mapping](/docs/migrate-from-pba-to-web-performance-measurement#raw-data-field-mapping) for the full field mapping. |
+| Raw data fields | Mobile-related fields are deprecated for the web. Some fields are renamed, and some values change. | See [Raw data field mapping](#raw-data-field-mapping) for the full field mapping. |
 | Late S2S events | Events that arrive later than 30 minutes after the end of the UTC day in which they occurred are still accepted, but their event time is replaced with the time AppsFlyer received them. | Send events in real time, preferably within 30 minutes of the event occurring, rather than batching them into a single daily upload. Accurate attribution depends on receiving events close to when they happen. This aligns the web with the existing mobile behavior. |
 
 ## Raw data field mapping
@@ -146,13 +134,13 @@ If you already consume PBA's Website visits and Website events raw data reports,
 
 Raw data for any platform and cross-platform reporting are available only through Data Locker. See step 3 or step 4 above if you don't have Data Locker yet.
 
-- **Unchanged**, same field name and data.
-- **Renamed**, same data, new column name.
-- **Redefined**, same or similar name, but the data or value format changes (needs care before reuse).
-- **Deprecated**, no equivalent in the new report.
+* **Unchanged**, same field name and data.
+* **Renamed**, same data, new column name.
+* **Redefined**, same or similar name, but the data or value format changes (needs care before reuse).
+* **Deprecated**, no equivalent in the new report.
 
 | Field name | Description | Status | New field/note |
-| :--- | :--- | :--- | :--- |
+| --- | --- | --- | --- |
 | `advertising_id` | Advertising ID (GAID) | Deprecated | Mobile/device advertising ID, stitched cross-platform in PBA. Cross-platform LTV and user journey reports are CUID-based and don't use this field. |
 | `af_web_id` | Cookie ID sent from the web SDK | Renamed | `appsflyer_id_value`, same web cookie. |
 | `amazon_aid` | Amazon Fire TV advertising ID | Deprecated | Mobile/device ID, not relevant for web. |
@@ -198,12 +186,12 @@ Raw data for any platform and cross-platform reporting are available only throug
 | `region` | Resolved using the IP address ("NA") | Renamed | `continent`, continent code, for example, "NA". |
 | `state` | Resolved using the IP address | Unchanged | `state`. |
 
-> 📘 Ready-to-use coding-agent prompt for Data Locker ETL migration
->
-> To make this transition easier, we've prepared a ready-to-use prompt for your AI coding agent (Claude Code, Cursor, or similar). Give the agent access to your existing ETL code and paste the prompt below; it contains the full field mapping and every behavioral difference. It will guide the agent to learn your current pipeline and rebuild it for the new report.
+<Accordion title="Ready-to-use coding-agent prompt for Data Locker ETL migration">
 
-```auto
-AutoYou are migrating an ETL pipeline from AppsFlyer's legacy PBA Data Locker raw-data reports (Website visits + Website events) to AppsFlyer's Web Performance Measurement Data Locker report (End User Events). Everything you need is in this prompt: the structural changes, the complete field-by-field mapping, and the validation steps. Do not guess anything beyond what is written here; if something is ambiguous, ask me.
+To make this transition easier, we've prepared a ready-to-use prompt for your AI coding agent (Claude Code, Cursor, or similar). Give the agent access to your existing ETL code and paste the prompt below; it contains the full field mapping and every behavioral difference. It will guide the agent to learn your current pipeline and rebuild it for the new report.
+
+```
+You are migrating an ETL pipeline from AppsFlyer's legacy PBA Data Locker raw-data reports (Website visits + Website events) to AppsFlyer's Web Performance Measurement Data Locker report (End User Events). Everything you need is in this prompt: the structural changes, the complete field-by-field mapping, and the validation steps. Do not guess anything beyond what is written here; if something is ambiguous, ask me.
 
 ## Step 1: Learn the current pipeline
 
@@ -304,14 +292,16 @@ Scan the codebase for any filter, CASE, join key, or dashboard grouping keyed on
 4. Produce a short migration report: what was mapped, what was dropped, what changed in values, and any open items for the business owner.
 ```
 
+</Accordion>
+
 ## PBA Web-S2S to new S2S API migration
 
 If you report events to PBA through the [Web Server-to-server events API (Web-S2S)](/docs/web-server-to-server-events-api-for-pba-web-s2s), move to the [new S2S API](/docs/server-to-server-s2s-api-for-web-performance-measurement). The new API supports both visits and events, so your website can run fully server-side; PBA's S2S accepts only events.
 
-Endpoints and authentication
+<Accordion title="Endpoints and authentication">
 
-| | PBA Web-S2S | New S2S API |
-| :--- | :--- | :--- |
+|  | PBA Web-S2S | New S2S API |
+| --- | --- | --- |
 | Base URL | `https://webs2s.appsflyer.com` | `https://events.appsflyer.com` |
 | Event call | `POST /v1/{bundleId}/event` | `POST /v2.0/s2s/inapps/app/web/{appId}` |
 | Visit call | Not available (visits came from the Web SDK only) | `POST /v2.0/s2s/visits/app/web/{appId}` |
@@ -321,10 +311,12 @@ Endpoints and authentication
 | Content type | `application/json` | `application/json` |
 | Success response | 200 OK | 202 Accepted |
 
-Payload field mapping
+</Accordion>
+
+<Accordion title="Payload field mapping">
 
 | PBA Web-S2S field | New S2S field | Note |
-| :--- | :--- | :--- |
+| --- | --- | --- |
 | `customerUserId` | `user_id.customer_user_id` | Now nested in the `user_id` object. |
 | `afUserId` | `user_id.appsflyer_id` | Now nested in the `user_id` object. Send at least one of `customer_user_id` or `appsflyer_id`; send both whenever the user is identified. |
 | `webDevKey` | N/A | Removed from the body. Authentication moved to the Authorization header; the app is identified by `appId` in the path. |
@@ -341,18 +333,22 @@ Payload field mapping
 | N/A | `customer_dedup_id` | New. Deduplicates against the same event arriving from another source (for example, the Web SDK). |
 | N/A | `email_hashed`, `phone_number_hashed`, `phone_number_e164_hashed`, `first_name_hashed`, `last_name_hashed` | New. SHA256 (64-char lowercase hex) of normalized values, for identity enrichment. |
 
-### S2S API notes
+</Accordion>
 
-- **Visits are now server-side.** PBA's S2S only accepted events; visits had to come from the Web SDK. The new /visits endpoint lets the website run fully server-side.
-- **No more setcuid call.** PBA required the Web SDK, so a separate call was needed to tie a CUID to a web user. The new API carries identity inline on every request, so that step is dropped.
-- **Late data window.** Send events and visits in real time, preferably within 30 minutes of the event occurring, rather than batching them into a single daily upload. Data that arrives later than 30 minutes after the end of the UTC day in which the event occurred is still accepted, but its event time is replaced with the time AppsFlyer received it.
+<Accordion title="S2S API notes">
 
-> 📘 S2S service migration: ready-to-use coding-agent prompt
->
-> If you report events through the PBA Server-to-server API, we've prepared a ready-to-use prompt for your AI coding agent (Claude Code, Cursor, or similar). Give the agent access to the service that sends events to AppsFlyer and paste the prompt below; it contains the full endpoint and payload mapping. It will guide the agent to learn your current implementation and build the updated one.
+* **Visits are now server-side.** PBA's S2S only accepted events; visits had to come from the Web SDK. The new /visits endpoint lets the website run fully server-side.
+* **No more setcuid call.** PBA required the Web SDK, so a separate call was needed to tie a CUID to a web user. The new API carries identity inline on every request, so that step is dropped.
+* **Late data window.** Send events and visits in real time, preferably within 30 minutes of the event occurring, rather than batching them into a single daily upload. Data that arrives later than 30 minutes after the end of the UTC day in which the event occurred is still accepted, but its event time is replaced with the time AppsFlyer received it.
 
-```auto
-AutoYou are migrating a server-side integration from AppsFlyer's legacy PBA Web S2S events API (webs2s.appsflyer.com) to AppsFlyer's new S2S API for Web Performance Measurement (events.appsflyer.com). Everything you need is in this prompt: endpoints, authentication, the complete payload mapping, and the behavior changes. Do not guess anything beyond what is written here; if something is ambiguous, ask me.
+</Accordion>
+
+<Accordion title="S2S service migration: ready-to-use coding-agent prompt">
+
+If you report events through the PBA Server-to-server API, we've prepared a ready-to-use prompt for your AI coding agent (Claude Code, Cursor, or similar). Give the agent access to the service that sends events to AppsFlyer and paste the prompt below; it contains the full endpoint and payload mapping. It will guide the agent to learn your current implementation and build the updated one.
+
+```
+You are migrating a server-side integration from AppsFlyer's legacy PBA Web S2S events API (webs2s.appsflyer.com) to AppsFlyer's new S2S API for Web Performance Measurement (events.appsflyer.com). Everything you need is in this prompt: endpoints, authentication, the complete payload mapping, and the behavior changes. Do not guess anything beyond what is written here; if something is ambiguous, ask me.
 
 ## Step 0: Ask me these questions before touching code
 
@@ -429,3 +425,5 @@ Present this inventory to me and wait for my confirmation before proceeding.
 3. Confirm event names comply with the new constraints (1-64 chars, no @ = + -).
 4. If running in parallel with the old service, compare event volumes between old and new for a few days before cutover, then decommission the old calls including setcuid.
 ```
+
+</Accordion>

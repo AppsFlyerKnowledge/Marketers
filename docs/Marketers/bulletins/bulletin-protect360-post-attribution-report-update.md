@@ -25,9 +25,8 @@ x-zendesk:
 | **What's new** | Protect360 post-attribution reports display the valid contributor (media source) for hijacked installs and in-app events. Meaning, the contributor that should have originally received attribution. |
 | --- | --- |
 | **Effective Date** | November 23, 2020 |
-| **Where** | Protect360 post-attribution raw data reports via:<br /><br />* Export data (download) raw data reports<br />* Pull API raw data reports |
-| **What** | * Until now, post-attribution reports did not display the valid contributor media source. The **contributor[1-3]** and **organic** fields displayed contributing media sources, but do not let you know which of them warranted attribution.<br />* Starting from November 23, 2020, the **rejected\_reason\_value** field value displays either **contributor[1-3]** or **organic**.<br />  * In Data Locker, this is the **validation\_reason\_value**.<br />* Advertisers can check the **contributor[1-3]** fields to see what the attributed media source should be and use this information for reconciliation.<br />  * If the contributor fields are not displayed in your report, they are available to be added from the **Export data** page. |
-
+| **Where** | Protect360 post-attribution raw data reports via:<ul><li>Export data (download) raw data reports</li><li>Pull API raw data reports</li></ul> |
+| **What** | <ul><li>Until now, post-attribution reports did not display the valid contributor media source. The **contributor[1-3]** and **organic** fields displayed contributing media sources, but do not let you know which of them warranted attribution.</li><li>Starting from November 23, 2020, the **rejected\_reason\_value** field value displays either **contributor[1-3]** or **organic**.<ul><li>In Data Locker, this is the **validation\_reason\_value**.</li></ul></li><li>Advertisers can check the **contributor[1-3]** fields to see what the attributed media source should be and use this information for reconciliation.<ul><li>If the contributor fields are not displayed in your report, they are available to be added from the **Export data** page.</li></ul></li></ul> |
 
 > 📘 **See also**
 >

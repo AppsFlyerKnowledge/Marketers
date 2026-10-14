@@ -50,7 +50,7 @@ In this part of the setup, you can also set up postbacks to TikTok Web via the T
 
 The integration with TikTok Web only supports sending postbacks for installs and in-app events.
 
-### Integration tab
+<Accordion title="Integration tab">
 
 The **Integration** tab comprises several sections, as described below.
 
@@ -64,13 +64,10 @@ To configure the integration, you must first turn on the **Activate partner**to
 * **Access token:** Enter the access token. To generate it or retrieve it, follow [these instructions](https://business-api.tiktok.com/portal/docs?id=1771100865818625)
 * **Limit TikTok Ads’ use of users’ personal information (CCPA):** Turn on this toggle to enable compliance with [data protection laws](/docs/send-opendsr-api-requests).
 
-  CALLSTART::Note::
+  > 📘 **Note**
+  >
+  > Complying with CCPA privacy regulations limits the data coming from TikTok Ads users based in California or other sensitive states in the US.
 
-  #### Note
-
-  Complying with CCPA privacy regulations limits the data coming from TikTok Ads users based in California or other sensitive states in the US.
-
-  CALLEND::
 
 #### Enable view-through attribution
 
@@ -83,7 +80,7 @@ To enable view-through attribution:
 1. In AppsFlyer, from the sidebar, open **Collaborate** > **Partner Integrations** > **Active Integrations** > **TikTok web ads**.
 2. In the **Integration** tab, scroll to the **Install attribution** section.
 3. Turn on **Install view-through attribution**.
-4. **[optional]**Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see [Enable equal priority for cross-platform impressions](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions)**.**
+4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see [Enable equal priority for cross-platform impressions](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions).
 5. Open the **Attribution link** tab.
 6. Scroll to the **View-through attribution** section and set the **view-through lookback window** (up to 24 hours).
 7. Click **Save integration** to apply your settings.
@@ -99,24 +96,24 @@ Configure mapping of in-app event postbacks sent to TikTok Web. These events can
 1. Turn on **In-app event postbacks**.
 2. Click **Add event** to add an SDK or server-to-server event to the list. The following table describes the fields to complete:
 
-   
-
 | **Parameter name** | **Description** |
 | --- | --- |
-| AppsFlyer event | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br /><br />* Click Add item, enter the event name, and click. |
-| mapped to partner event | The unique name or ID of each event, as defined on the partner's side.<br /><br />* Select from the dropdown box the most suitable pre-defined partner event |
+| AppsFlyer event | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<ul><li>Click Add item, enter the event name, and click.</li></ul> |
+| mapped to partner event | The unique name or ID of each event, as defined on the partner's side.<ul><li>Select from the dropdown box the most suitable pre-defined partner event</li></ul> |
 | for users from | This partner only: In-app event postbacks are sent only for events attributed to this partner—meaning, the user who performed it came from this partner. |
 | including | Values and revenue: All event parameters, including the revenue value (if exists in the event), are sent in the postback. |
 
-3. [Optional] Click the **Add condition** icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
-4. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).
+3. [Optional] Click the **Add condition** icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks) for an event.
+4. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
 5. Click **Save integration**.
 6. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
    1. From the top-left corner, under the partner name, click the app name to open the list of apps.
    2. Select a different app from the drop-down list.
    3. Repeat the integration steps for the selected app.
 
-### Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Generating an attribution link in the AppsFlyer UI isn't currently available. However, you can either use a cross-platform landing page with SmartScript or create a direct attribution link for your app (see table below).
 
@@ -129,17 +126,25 @@ Generating an attribution link in the AppsFlyer UI isn't currently available. Ho
 >
 > To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
 
-### Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost isn't available for TikTok Web.
 
-### Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad revenue isn't available for TikTok Web.
 
-### Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Currently, permissions aren't granted to TikTok Web.
+
+</Accordion>
 
 ## Setting up campaigns in TikTok Web for PC and console apps
 

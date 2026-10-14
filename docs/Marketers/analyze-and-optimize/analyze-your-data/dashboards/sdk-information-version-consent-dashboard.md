@@ -35,11 +35,9 @@ Data in the dashboard is derived from the af\_open (session) event and isn't rel
 2. Set the activity date range.   
    The metrics displayed are described in the sections that follow.
 
-### SDK information (iOS and Android)
+<Accordion title="SDK information (iOS and Android)">
 
 The following shows the version metrics available for iOS and Android apps using the most recent app open (launch) date
-
-
 
 | Users by | Example |
 | --- | --- |
@@ -48,9 +46,9 @@ The following shows the version metrics available for iOS and Android apps using
 | Operating system version | [![UsersByOsVersion.png](https://files.readme.io/d56f8b43155bb226adaa1a276e00634fe721a01b74b5114d273ae66e74034dd9-4402589093521.png)](https://files.readme.io/d56f8b43155bb226adaa1a276e00634fe721a01b74b5114d273ae66e74034dd9-4402589093521.png) |
 | Device type | [![UsersByDevice.png](https://files.readme.io/2f320f91d6a5a9f4bca0e3715cd33dfff2ac971af29e961592b4494bafe721f0-4402595560977.png)](https://files.readme.io/2f320f91d6a5a9f4bca0e3715cd33dfff2ac971af29e961592b4494bafe721f0-4402595560977.png) |
 
+</Accordion>
 
-
-### iOS and ATT metrics
+<Accordion title="iOS and ATT metrics">
 
 The iOS version your users adopt can make a difference into what sort of data is available. For example, if users have iOS 16.1+, SKAN 4 data is potentially available.
 
@@ -69,11 +67,11 @@ The [ATT status](/docs/att-implications-ios-14-and-deprecation-of-lat) is set by
 
 #### ATT and iOS adoption metrics for iOS apps
 
-
-
 | Chart | Example and remarks |
 | --- | --- |
 | ATT status of app opens | [![AttStatusByDate.png](https://files.readme.io/8e41e1602125903267e91a71b49305d43ca018aec77a2a991d0af08cb396825a-4402691807377.png)](https://files.readme.io/8e41e1602125903267e91a71b49305d43ca018aec77a2a991d0af08cb396825a-4402691807377.png)<br /><br />Relates to users having iOS 14+ who open the app on a given date. This means that the metrics display the user's ATT status on the given date. |
 | Consent by app version | [![ATTAppVersion.png](https://files.readme.io/1f19917998f142180d0fdfb5448c90b280b2d6536844c63ce630d3656719f656-4402589092113.png)](https://files.readme.io/1f19917998f142180d0fdfb5448c90b280b2d6536844c63ce630d3656719f656-4402589092113.png) |
 | Consent trend | [![ConsentTrend.png](https://files.readme.io/bae0c55c603e83b87fa50ba6d16c628443d565417c1aceee4536a5b96dd9435e-4402589093265.png)](https://files.readme.io/bae0c55c603e83b87fa50ba6d16c628443d565417c1aceee4536a5b96dd9435e-4402589093265.png) |
 | iOS 16.1 user adoption rate | [![iso_user_adoption_rate.png](https://files.readme.io/2a29749fd968354f9836595cf20f07954be1aedce97df140d1d14452eb7306b3-15478514320529.png)](https://files.readme.io/2a29749fd968354f9836595cf20f07954be1aedce97df140d1d14452eb7306b3-15478514320529.png) |
+
+</Accordion>

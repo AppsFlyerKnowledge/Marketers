@@ -75,14 +75,11 @@ Advertisers find both types of data useful but for different purposes. For this 
 >
 > ![ltv_data.jpg](https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg)
 
-
 ### AppsFlyer dashboards and reports—LTV or activity?
 
 The dashboards enable marketers to optimize their non-organic traffic. Most of the dashboards are LTV-based, as marketers typically measure performance on an LTV basis. All aggregated data reports are LTV-based, and all raw data reports are activity-based.
 
 The following table shows which dashboards and reports are LTV and which are activity.
-
-
 
 | Data source | Data type |
 | --- | --- |
@@ -103,13 +100,11 @@ The following table shows which dashboards and reports are LTV and which are act
 | Master API—campaign performance KPIs | Both |
 | Pivot table | Both |
 
-
-
 ## Compare data between different dashboards and reports
 
 The following sections explain how you can compare data between different dashboards and reports while effectively mitigating and troubleshooting the reasons why you might see differences or discrepancies in the data.
 
-### Compare LTV and activity data in AppsFlyer
+<Accordion title="Compare LTV and activity data in AppsFlyer">
 
 When comparing AppsFlyer data, consider that when comparing LTV data and activity data, there are 2 differences to consider:
 
@@ -132,7 +127,9 @@ To compare the two types of data correctly we need to neutralize the differences
 2. **Set the current day as the last day of the date range** (difference 2 solved).  
    This ensures the LTV data does not include events performed after the date range that belong to installs that happened within the date range.
 
-### Compare different AppsFlyer aggregated data dashboards and reports
+</Accordion>
+
+<Accordion title="Compare different AppsFlyer aggregated data dashboards and reports">
 
 When comparing data between different AppsFlyer aggregated data dashboards and reports, LTV vs, activity may be the reason for discrepancies.
 
@@ -140,7 +137,9 @@ If you're aggregating data by geo, another reason for discrepancies could be tha
 
 However, consider that there may be other reasons as well. [See the aggregated reporting method comparison for more information](/docs/aggregated-and-analytics-reporting-overview#toolapi-comparison)
 
-### Compare AppsFlyer data with external data
+</Accordion>
+
+<Accordion title="Compare AppsFlyer data with external data">
 
 The vast majority of data sources, including Google and Apple, display activity data, that aren't LTV data. Therefore, to compare data from external sources with AppsFlyer data, you would usually use AppsFlyer activity data available in the raw data reports.
 
@@ -157,7 +156,9 @@ There may also be other reasons for discrepancies between AppsFlyer data and ext
 * [App store discrepancies](/docs/resolve-appsflyer-app-stores-discrepancies)
 * [Third-party platform discrepancies](/docs/discrepancies-between-appsflyer-and-third-party-platforms)
 
-### Compare in-app event raw data with the Activity view
+</Accordion>
+
+<Accordion title="Compare in-app event raw data with the Activity view">
 
 In-app events appear in both the LTV and Activity view in the dashboard. However, each employs a different counting logic.  
 When reconciling event counts with raw data, always compare them against the Activity dashboard or the Activity view in My Dashboards, as these views represent event occurrences on the day they occurred.
@@ -186,3 +187,5 @@ Apply this filter before aggregating the UA reports so that only the primary att
 3. **Aggregate the event totals.**  
    Sum the events across the filtered sets.
 4. **Compare the aggregated total** with the event count displayed in the **Activity dashboard**.
+
+</Accordion>

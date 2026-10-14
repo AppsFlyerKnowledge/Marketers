@@ -25,8 +25,6 @@ x-zendesk:
 | [![Google_Play_Store.png](https://files.readme.io/d3e90dff6b5b007164d1ee1449cf3b9b39f52b6b710034137b4ab7640ce2dc57-360001467125.png)](https://play.google.com/store/apps/details?id=com.appsflyer.analytics) | [![ios_App_Store.png](https://files.readme.io/516cd93b8a642bdf290e774936457c774e61f2493d3508a050c18c62378d2e7b-360001467145.png)](https://go.onelink.me/RJn0/support) |
 | --- | --- |
 
-
-
 ## The AppsFlyer Mobile App
 
 ### Log in

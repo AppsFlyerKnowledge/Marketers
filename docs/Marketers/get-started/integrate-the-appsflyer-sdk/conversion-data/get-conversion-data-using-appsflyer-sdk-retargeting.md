@@ -34,7 +34,7 @@ When a user is re-attributed through an SRN, the conversion data payload doesn't
 
 What this means is that there is no way to determine, on the SDK level, if an install comes from a retargeting campaign.
 
-Setting the campaign name such that it indicates retargeting **is not a foolproof method**. See [examples to learn more](#examples-of-mixed-user-acquisition-and-reattribution).
+Setting the campaign name such that it indicates retargeting **is not a foolproof method**. See [examples to learn more](#examples-of-mixed-user-acquisition-and-re-attribution).
 
 ## Re-attribution with regular ad networks
 
@@ -216,7 +216,7 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 ```
 // short OneLink
   https://dhba.onelink.me/2rAD/71ba577e
-  
+
   //long OneLink
   https://dhba.onelink.me/2rAD?pid=media_source_name&c=campaign_name
   &is_retargeting=true&af_dp=superapp%3A%2F%2deeplink-activity
@@ -277,7 +277,7 @@ are as follows:
 ```
 // short OneLink
   https://dhba.onelink.me/2rAD/71ba577e
-  
+
   //long OneLink
   https://dhba.onelink.me/2rAD?pid=media_source_name&c=campaign_name
   &is_retargeting=true
@@ -380,7 +380,7 @@ Another reason to use the short version of OneLink is the conversion data struct
 ## Alternative conversion data sources
 
 * Push API offers a detailed conversion payload that indicates re-attribution or re-engagement. Push API payloads include a field called `re_targeting_conversion_type`. This field indicates the type of conversion, either re-attribution or re-engagement. To learn more, see our [Push API guide](/docs/push-api-streaming-raw-data).
-* Raw Data Reports also contain indicators for the type of conversion. In the raw data report for retargeting conversions, there is a column called ***Event Name***. The value in this column is either ***re-engagemen*****t** or ***re-attribution*** according to the type of conversion.
+* Raw Data Reports also contain indicators for the type of conversion. In the raw data report for retargeting conversions, there is a column called ***Event Name***. The value in this column is either ***re-engagemen*t** or ***re-attribution*** according to the type of conversion.
 
 ## Examples of mixed user acquisition and re-attribution
 

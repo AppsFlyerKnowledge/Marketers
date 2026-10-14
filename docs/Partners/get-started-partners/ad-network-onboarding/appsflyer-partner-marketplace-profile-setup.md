@@ -26,13 +26,9 @@ x-zendesk:
 
 AppsFlyer Partner Marketplace is where advertisers can find new ad networks, agencies, and other platforms to work with. Create your profile and provide as much information as possible for them to see in the marketplace and make educated choices.
 
-
-
 | Full Partner profile | Partner profile with partial information |
 | --- | --- |
 | [![partner-full-details.png](https://files.readme.io/439cfb2013a3d154fbe7f602f9e2cd1012570bb9684a7bacba034c7286bea6ca-21537838013201.png)](https://files.readme.io/439cfb2013a3d154fbe7f602f9e2cd1012570bb9684a7bacba034c7286bea6ca-21537838013201.png) | [![partial partner profile 3](https://files.readme.io/6e7b2e7c7febf0ce3f315aab7d5de0b12d228cc54c8c88ac0e714832dac5e318-21537838036625.png)](https://files.readme.io/6e7b2e7c7febf0ce3f315aab7d5de0b12d228cc54c8c88ac0e714832dac5e318-21537838036625.png) |
-
-
 
 **To add or edit your company details:**
 
@@ -46,7 +42,6 @@ AppsFlyer Partner Marketplace is where advertisers can find new ad networks, age
 > You can see a preview of your currently saved draft:
 >
 > * From the bottom-right, click **Preview draft**.
-
 
 ## General
 

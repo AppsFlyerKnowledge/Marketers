@@ -46,28 +46,32 @@ To set up cross-platform attribution using cross-platform impression URLs, confi
 
 > 📘 **Important!**
 >
-> Make sure to enable the partner integration by performing the steps below for all targeted apps that you selected in the OneLink template (see the [section above](#step-1-create-or-edit-a%C2%A0onelink-template%C2%A0for-crossplatform-attribution)). If the integration is disabled for one of the targeted apps,  cross-platform attribution will not occur.
+> Make sure to enable the partner integration by performing the steps below for all targeted apps that you selected in the OneLink template (see the [section above](#create-a-onelink-templatefor-cross-platform-attribution)). If the integration is disabled for one of the targeted apps,  cross-platform attribution will not occur.
 
-### Step 1: Select the targeted app of the partner integration
+<Accordion title="Step 1: Select the targeted app of the partner integration">
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations**
 2. Select the integrated partner.
 3. In the **Integration** tab, from the **App** drop-down box, select the targeted app.
 
-### Step 2: Enable view-through attribution
+</Accordion>
+
+<Accordion title="Step 2: Enable view-through attribution">
 
 For links to be used by integrated partners, enable view-through attribution.
 
 1. In the **Integration** tab, turn on **Install view-through attribution**.
 2. Click **Save integration**.
 
-### Step 3: Create an attribution link (cross-platform impression URL)
+</Accordion>
+
+<Accordion title="Step 3: Create an attribution link (cross-platform impression URL)">
 
 To Create an [attribution link](/docs/set-up-an-integrated-partner#attribution-link-tab) (cross-platform impression URL) for integrated networks
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations** and select the integrated partner.
 2. In the **Attribution link** tab, when creating a [OneLink link](/docs/set-up-an-integrated-partner#attribution-link-tab), select Use OneLink.
-3. In the **Select OneLink template** list, select the [OneLink template you created for cross-platform](#step-1-create-or-edit-a%C2%A0onelink-template%C2%A0for-crossplatform-attribution) attribution.
+3. In the **Select OneLink template** list, select the [OneLink template you created for cross-platform](#create-a-onelink-templatefor-cross-platform-attribution) attribution.
 4. Scroll down to **View-through attribution**.[![](https://files.readme.io/0db03066a7f7c14c68d36a019d9791dfea44e6df3e8f5bdb6f5e4b71d5e78a08-12602245845649.png)](https://files.readme.io/0db03066a7f7c14c68d36a019d9791dfea44e6df3e8f5bdb6f5e4b71d5e78a08-12602245845649.png)
 5. Turn on **Cross-platform attribution**. This adds the `af_xplatform=true` parameter to the impression attribution link and gives the link cross-platform attribution capabilities. Without this parameter, the URL functions as a regular impression URL that can't attribute multiple installs to the same impression.
 6. Set the **Cross-platform view-through attribution lookback window**. This adds the `af_xplatform_vt_lookback` parameter to the impression attribution link and indicates the number of hours (up to 72) following the impression during which the app install can be attributed to the impression.
@@ -82,9 +86,11 @@ To Create an [attribution link](/docs/set-up-an-integrated-partner#attribution-
 >
 > For owned media and non-integrated partners add parameters as needed.  [Learn more](/docs/about-link-structure-and-parameters) about the parameters you can add for additional data and metrics.
 
-### Advanced: Equal priority setting (optional)
+</Accordion>
 
-You can optionally assign **equal priority** to clicks and impressions in cross-platform attribution. This advanced setting lets AppsFlyer treat impressions (for example, in CTV or consoles) as having the same attribution priority as clicks. For more information, see [Attribution method priorities](/docs/appsflyer-attribution-model#attribution-waterfall).
+<Accordion title="Advanced: Equal priority setting (optional)">
+
+You can optionally assign **equal priority** to clicks and impressions in cross-platform attribution. This advanced setting lets AppsFlyer treat impressions (for example, in CTV or consoles) as having the same attribution priority as clicks. For more information, see [Attribution method priorities](/docs/appsflyer-attribution-model#attribution-method-priorities-attribution-waterfall).
 
 **To enable equal priority:**
 
@@ -95,15 +101,17 @@ You can optionally assign **equal priority** to clicks and impressions in cross-
 >
 > Enabling equal priority may cause AppsFlyer to prioritize its own attribution over other sources. Use this setting with caution and only if it aligns with your overall attribution strategy.
 
+</Accordion>
+
 ## Traits and limitations
 
 | Trait | Remarks |
 | --- | --- |
-| Attribution window | Between 1-72 hours, depending on the lookback window parameter `af_xplatform_vt_lookback`(default is 24 hours). |
-| Retargeting | * Re-attribution: Supported for cross-platform-to-mobile. Not for other platforms.<br />* Re-engagement: Not supported |
+| <span id="attribution-window"></span>Attribution window | Between 1-72 hours, depending on the lookback window parameter `af_xplatform_vt_lookback`(default is 24 hours). |
+| Retargeting | <ul><li>Re-attribution: Supported for cross-platform-to-mobile. Not for other platforms.</li><li>Re-engagement: Not supported</li></ul> |
 | Attribution method | View-through attribution using probabilistic modeling |
-| Household attribution | Supported. Meaning multiple installs within the same household can be attributed to the same cross-platform ad impression. |
-| Reporting | * Cross-platform installs are available in regular AppsFlyer dashboards and reports:<br />  * Aggregate data [dashboards](/docs/getting-started-with-appsflyer-dashboards) and [reports](/docs/aggregated-and-analytics-reporting-overview)<br />  * Raw data [reports](/docs/raw-data-reporting-overview)<br />* Cross-platform impressions don't display in app-level dashboards. However, they are available in the [Cross-platform engagements report](/docs/data-locker-advertiser-reports#user-journey) via Data Locker.<br />* Make sure you use parameter naming conventions that easily identify your cross-platform campaign. |
+| <span id="household-attribution"></span>Household attribution | Supported. Meaning multiple installs within the same household can be attributed to the same cross-platform ad impression. |
+| Reporting | <ul><li>Cross-platform installs are available in regular AppsFlyer dashboards and reports:<ul><li>Aggregate data [dashboards](/docs/getting-started-with-appsflyer-dashboards) and [reports](/docs/aggregated-and-analytics-reporting-overview)</li><li>Raw data [reports](/docs/raw-data-reporting-overview)</li></ul></li><li>Cross-platform impressions don't display in app-level dashboards. However, they are available in the [Cross-platform engagements report](/docs/data-locker-advertiser-reports#user-journey) via Data Locker.</li><li>Make sure you use parameter naming conventions that easily identify your cross-platform campaign.</li></ul> |
 | IP masking | IP masking for cross-platform engagements is not supported since it is an app-level trait. If `ip_masking` is configured, the install won't be attributed to the cross-platform engagement. |
 | CTV-to mobile | CTV-to-mobile attribution flows are available only to [integrated partners](/docs/set-up-cross-platform-links-for-multi-device-campaigns#list-of-ad-networks) who have the authorization to conduct cross-platform campaigns. |
 | Cross-platform attribution links in mobile devices | When a cross-platform attribution link is viewed on a mobile device, attribution is determined by the standard mobile probabilistic modeling logic, not by the cross-platform attribution flow designed for [CTV](/docs/ctv-pc-and-console-platform-attribution-concepts#tv-screens), PC, and consoles. Consequently, mobile impressions will not be eligible for the [equal priority](#step-3-enable-equal-priority-for-crossplatform-impressions), [extended lookback window](#attribution-window), or [household attribution](#household-attribution) that is available for genuine cross-platform impressions. |
@@ -122,10 +130,14 @@ AppsFlyer and tvScientific differ in their attribution models. This may cause di
 
 ## FAQ
 
-### Does Enable view-through attribution via probabilistic modeling need to be turned on?
+<Accordion title="Does Enable view-through attribution via probabilistic modeling need to be turned on?">
 
 No. The Enable view-through attribution via probabilistic modeling toggle in your app settings doesn't need to be turned on for cross-platform view-through attribution to work.
 
-### Why don’t I see impressions for my cross-platform campaigns in the dashboard?
+</Accordion>
+
+<Accordion title="Why don’t I see impressions for my cross-platform campaigns in the dashboard?">
 
 Cross-platform impressions don’t appear in app-level dashboards. This is because one CTV impression can lead to multiple conversions across different apps, and there’s no accurate way to allocate impressions to each app. You can access impression data in the [Cross-platform engagements report in Data Locker](/docs/ctv-pc-and-console-data-via-data-locker#report-types-and-availability).
+
+</Accordion>

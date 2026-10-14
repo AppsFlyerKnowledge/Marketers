@@ -47,7 +47,7 @@ The module is triggered after the first app launch (logged by the SDK) but befor
 Before you begin, make sure you have the following:
 
 * **Android SDK v6.15.2 or later** integrated in your app.
-* **An API V2 token** — required for Maven repository authentication when your developer integrates the Security Module dependency. See [Managing AppsFlyer tokens](/docs/managing-appsflyer-tokens#h_01HG64DMW7PYRXBMZN00EQN991) for how to retrieve or generate one.
+* **An API V2 token** — required for Maven repository authentication when your developer integrates the Security Module dependency. See [Managing AppsFlyer tokens](/docs/managing-appsflyer-tokens#applications-of-the-api-v2-token) for how to retrieve or generate one.
 * **All certificate hashes (SHA-256)** for every certificate used to sign your app (debug and release). See [Generating a SHA256 fingerprint](https://dev.appsflyer.com/hc/docs/android-security-plugin#generating-a-sha256-fingerprint).
 
 > 📘 **Important!**

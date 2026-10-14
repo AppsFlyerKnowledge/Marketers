@@ -28,16 +28,16 @@ x-zendesk:
 
 By integrating Tealium with AppsFlyer, mobile customers can leverage the AppsFlyer mobile attribution SDK and send attribution conversion data directly to their Tealium AudienceStream profile.
 
-> 🚧 Important!
+> 📘 **Important!**
 >
-> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Tealium
 
 You can choose one of the following ways to integrate Tealium with AppsFlyer:
 
-- Client-side integration
-- Server-side integration
+* Client-side integration
+* Server-side integration
 
 ### Client-side integration
 
@@ -45,7 +45,7 @@ Use remote commands for iOS and Android libraries, allowing native code to be tr
 
 **To integrate Tealium using client-side integration:**
 
-- Follow the [remote command integration guide](https://docs.tealium.com/platforms/remote-commands/integrations/appsflyer/)
+* Follow the [remote command integration guide](https://docs.tealium.com/platforms/remote-commands/integrations/appsflyer/)
 
 ### Server-side integration
 
@@ -53,4 +53,4 @@ Set up the AppsFlyer App Events connector in your Customer Data Hub account to t
 
 **To integrate Tealium using server-side integration:**
 
-- Follow the [AppsFlyer App Events connector guide](https://docs.tealium.com/server-side-connectors/appsflyer-app-events-connector/)
+* Follow the [AppsFlyer App Events connector guide](https://docs.tealium.com/server-side-connectors/appsflyer-app-events-connector/)

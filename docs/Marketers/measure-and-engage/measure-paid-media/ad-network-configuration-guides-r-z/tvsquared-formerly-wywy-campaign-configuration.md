@@ -24,75 +24,74 @@ x-zendesk:
 ---
 ## Setting up TVSquared
 
-> 📘 Prerequisite
->
-> An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 
 **To set up a new integration:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
-
-( **To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.
-
-> 📘 Note
->
-> The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below.
 
-> 📘 Note
->
-> For TVSquared you need to complete the Integration tab. The remaining tabs are not applicable to TVSquared.
+**Note:** For TVSquared you need to complete the Integration tab. The remaining tabs are not applicable to TVSquared.
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
 
 ### Activate partner
 
-1. Enable _**Activate Partner**_.
-
-The Integrations parameters display.
-
-For more details about partner activation please click [here](/docs/partner-activation-deactivation).
+1. Enable ***Activate Partner***.  
+   The Integrations parameters display.  
+   For more details about partner activation please click [here](/docs/partner-activation-deactivation).
 2. Complete the General Setting fields:
-   - _**SITEID**_: Fill in the SITEID you obtained from TVSquared.
-   - _**COLLECTORID**_: Fill in the COLLECTORID obtained from TVSquared.
+   * ***SITEID***: Fill in the SITEID you obtained from TVSquared.
+   * ***COLLECTORID***: Fill in the COLLECTORID obtained from TVSquared.
 3. **Default Postbacks**: AppsFlyer sends postbacks to TVSquared after the user installs/re-engagement. Select the Sending Option for which the partner will get postbacks:
-   - **Events attributed to any partner or organic**:All installs, irrespective of source, are reported to TVSquared
-   - **Off**
+   * **Events attributed to any partner or organic**:All installs, irrespective of source, are reported to TVSquared
+   * **Off**
 4. Complete in-app events settings fields:
 
-- _**SITEID**_: Fill in the SITEID you obtained from TVSquared.
-- _**COLLECTORID**_: Fill in the COLLECTORID obtained from TVSquared.
-- **customerid:** (optional) You can leave this field blank.
-- (optional) Enable _**In-App Events Postback**_: Map your in-app events with TVSquared using postbacks. Configure the parameters as follows:
-  - Click Add Event to add an SDK event to the list and complete the parameters.
-- Click **Save integration.**
+* ***SITEID***: Fill in the SITEID you obtained from TVSquared.
+* ***COLLECTORID***: Fill in the COLLECTORID obtained from TVSquared.
+* **customerid:** (optional) You can leave this field blank.
+* (optional) Enable ***In-App Events Postback***: Map your in-app events with TVSquared using postbacks. Configure the parameters as follows:
+  * Click Add Event to add an SDK event to the list and complete the parameters.
+* Click **Save integration.**
 
-#### Note
+> 📘 **Note**
+>
+> According to both Meta ads and X Ads terms and conditions, AppsFlyer can't share user-level data with any 3rd party. Therefore, all Meta ads and X Ads installs are sent to TVSquared as organic.
+>
+> For details on sharing data with 3rd parties, click [here](/docs/user-level-data-retention).
 
-According to both Meta ads and X Ads terms and conditions, AppsFlyer can't share user-level data with any 3rd party. Therefore, all Meta ads and X Ads installs are sent to TVSquared as organic.
+</Accordion>
 
-For details on sharing data with 3rd parties, click [here](/docs/user-level-data-retention).
-
-## Attribution link tab
+<Accordion title="Attribution link tab">
 
 Attribution Links are not available for TVSquared.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions are not available for TVSquared.
+
+</Accordion>

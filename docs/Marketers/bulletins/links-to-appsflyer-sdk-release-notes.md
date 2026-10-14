@@ -23,11 +23,5 @@ x-zendesk:
   created_at: '2019-10-28T10:09:34Z'
   edited_at: '2026-08-18T09:13:34Z'
 ---
-<Cards>
-  <Card title="iOS Release Notes" href="/docs/appsflyer-ios-sdk-release-notes" icon="fa-solid fa-bullhorn">
-    View the latest updates, features, and fixes for the AppsFlyer iOS SDK.
-  </Card>
-  <Card title="Android Release Notes" href="/docs/appsflyer-android-sdk-release-notes" icon="fa-solid fa-bullhorn">
-    View the latest updates, features, and fixes for the AppsFlyer Android SDK.
-  </Card>
-</Cards>
+* [iOS](/docs/appsflyer-ios-sdk-release-notes)
+* [Android](/docs/appsflyer-android-sdk-release-notes)

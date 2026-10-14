@@ -28,17 +28,17 @@ The Standalone Deep Linking Suite is built for teams that need **reliable, scala
 
 It is available in three subscription plans:
 
-- Standard
-- Advanced
-- Premium
+* Standard
+* Advanced
+* Premium
 
 ### What’s included
 
 All Standalone Deep Linking Suite plans support core owned media use cases, including:
 
-- **Deep linking and deferred deep linking** to route users to the right in-app destination
-- **Cross-platform redirection and fallback behavior** when the app isn’t installed
-- **Self-serve link creation and management** in the AppsFlyer UI
+* **Deep linking and deferred deep linking** to route users to the right in-app destination
+* **Cross-platform redirection and fallback behavior** when the app isn’t installed
+* **Self-serve link creation and management** in the AppsFlyer UI
 
 The plans differ mainly by scale, link management capabilities, and access to advanced features such as branded domains, bulk link creation, Smart Banners, OneLink API, ESP integration, and Data Locker.
 
@@ -67,11 +67,9 @@ The plans differ mainly by scale, link management capabilities, and access to ad
 | UI raw data export | **x** | **✓** | **✓** |
 | Customer Success Manager | **x** | **✓** | **✓** |
 
-#### Notes
-
-> 📘 Important
+> 📘 **Notes**
 >
-> - The Standalone Deep Linking Suite is intended for owned media use cases only. Paid media attribution partner integrations aren’t included in these plans.
-> - Most OneLink features require a paid [AppsFlyer subscription plan](/docs/account-management-plans-payments-and-billing#appsflyer-plans).
-> - If your subscription plan is canceled, most OneLink features will no longer be available, and relevant end-user flows may be negatively affected.
-> - Deferred deep linking is not supported for Zero plan subscriptions.
+> * The Standalone Deep Linking Suite is intended for owned media use cases only. Paid media attribution partner integrations aren’t included in these plans.
+> * Most OneLink features require a paid [AppsFlyer subscription plan](/docs/account-management-plans-payments-and-billing#appsflyer-plans).
+> * If your subscription plan is canceled, most OneLink features will no longer be available, and relevant end-user flows may be negatively affected.
+> * Deferred deep linking is not supported for Zero plan subscriptions.

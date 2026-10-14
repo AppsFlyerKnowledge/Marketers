@@ -37,8 +37,9 @@ Before running retargeting campaigns, review the re-engagement rules and example
 >
 > Want to know more about retargeting? Check out this short, informative [course on the AppsFlyer Learning Portal](https://elevate.appsflyer.com/pages/142/remarketing).
 
+<div id="reengagement-rules-and-windows" />
 
-### Re-engagement rules and windows
+<Accordion title="Re-engagement rules and windows">
 
 * Retargeting attribution rules determine if an event is a retargeting event and attributed to the retargeting media source.
 * Similar to user acquisition attribution campaigns, SRN retargeting re-engagements are reported by API and those of non-SRNs by attribution link.
@@ -57,35 +58,25 @@ The tables that follow contain reference information related to windows related 
 
 #### Inclusion windows
 
-
-
 | Window type | Description |
 | --- | --- |
-| View-through | The maximum duration from the time the user views an ad until they open an app.<br /><br />**Where configured:** Attribution link<br /><br />**Duration**:<br /><br />* Default: 1 day<br />* Range: 1-23 hours/1-7 days |
-| Click lookback | The maximum duration from the time a user clicks on an ad until they open an app.<br /><br />**Where configured**: Attribution link<br /><br />**Duration** :<br /><br />* Default: 7 days<br />* Range: 1-23 hours/1-30 days<br /><br />**SRN remarks:** Check with the SRN what their specific lookback window policy is. |
-| Re-engagement | Consider the following in regards to the re-engagement window:<br /><br />* The window begins when the user opens the app for the first time after engaging with the retargeting media source.<br />* In-app events are [double attributed](/docs/resolve-retargeting-double-attribution) to the retargeting and user acquisition media sources for the duration of the window<br />* Window duration is determined by the app setting or by the SRN.<br />* If the user engages with another retargeting campaign during the re-engagement window, that is not blocked by an exclusion window, the current re-engagement window ends immediately and a new re-engagement window begins.<br />* In the context of a re-attribution: The **attribution window** duration is unlimited in time (similar to installs). However, this window ends in the case of a new install, reinstall, or due to data retention limitations.<br /><br />**Where set:** Attribution link<br /><br />* Default: 30 days<br />* Range: 1-23 hour/1-90 days/lifetime<br /><br />**SRN remarks**: Configurable for SRNs<br /><br />If you change the window setting, the change impacts re-engagements going forward. It has no impact on existing re-engagements. |
-
-
+| View-through | The maximum duration from the time the user views an ad until they open an app.<br /><br />**Where configured:** Attribution link<br /><br />**Duration**:<ul><li>Default: 1 day</li><li>Range: 1-23 hours/1-7 days</li></ul> |
+| Click lookback | The maximum duration from the time a user clicks on an ad until they open an app.<br /><br />**Where configured**: Attribution link<br /><br />**Duration** :<ul><li>Default: 7 days</li><li>Range: 1-23 hours/1-30 days</li></ul>**SRN remarks:** Check with the SRN what their specific lookback window policy is. |
+| Re-engagement | Consider the following in regards to the re-engagement window:<ul><li>The window begins when the user opens the app for the first time after engaging with the retargeting media source.</li><li>In-app events are [double attributed](/docs/resolve-retargeting-double-attribution) to the retargeting and user acquisition media sources for the duration of the window</li><li>Window duration is determined by the app setting or by the SRN.</li><li>If the user engages with another retargeting campaign during the re-engagement window, that is not blocked by an exclusion window, the current re-engagement window ends immediately and a new re-engagement window begins.</li><li>In the context of a re-attribution: The **attribution window** duration is unlimited in time (similar to installs). However, this window ends in the case of a new install, reinstall, or due to data retention limitations.</li></ul>**Where set:** Attribution link<ul><li>Default: 30 days</li><li>Range: 1-23 hour/1-90 days/lifetime</li></ul>**SRN remarks**: Configurable for SRNs<br /><br />If you change the window setting, the change impacts re-engagements going forward. It has no impact on existing re-engagements. |
 
 #### Exclusion windows
 
-
-
 | Window type | Description |
 | --- | --- |
-| Minimum time between re-engagement conversions | Don't record a re-engagement during the exclusion window.<br /><br />**Minimum time between re-engagement conversions**<br /><br />* On re-engagement, a window during which in-app events are attributed to both the retargeting (primary) and UA (non-primary) campaigns is opened.<br />* This enables the measurement of retargeting campaign performance.<br />* If another network or campaign brings a re-engagement during this window:<br />  * [Default] the existing re-engagement window is closed, another re-engagement recorded, and subsequent in-app events are attributed to the most recent re-engagement.<br />  * To prevent this,set the Minimum time between re-engagement conversions. In this case, only after the minimum elapsed time can a further re-engagement be recorded.<br />* This setting has no impact in cases where the re-engagement window is shorter than the duration of this setting. Example: If the re-engagement window is 1 day, and this setting is 4 days then this setting has no impact whatsoever.<br />* These settings do not affect the duration between install and re-engagement.<br /><br />**Where set**: App settings page<br /><br />**Duration**:<br /><br />* Default: None<br />* Range: 1-23 hours/1-30 days |
-| [Minimum inactivity period](/docs/set-retargeting-inactivity-window) | Don't record a re-engagement or re-attribution during the exclusion window.<br /><br />**Where set:** Integrated partners settings page in the Integration tab.<br /><br />**Duration**:<br /><br />* Default: None<br />* 0-30 days<br /><br />**SRN remarks**: Consider that SRNs usually have their own inactivity period rules. If your setting differs from that of the SRN this can cause discrepancies. |
+| Minimum time between re-engagement conversions | Don't record a re-engagement during the exclusion window.<br /><br />**Minimum time between re-engagement conversions**<ul><li>On re-engagement, a window during which in-app events are attributed to both the retargeting (primary) and UA (non-primary) campaigns is opened.</li><li>This enables the measurement of retargeting campaign performance.</li><li>If another network or campaign brings a re-engagement during this window:<ul><li>[Default] the existing re-engagement window is closed, another re-engagement recorded, and subsequent in-app events are attributed to the most recent re-engagement.</li><li>To prevent this,set the Minimum time between re-engagement conversions. In this case, only after the minimum elapsed time can a further re-engagement be recorded.</li></ul></li><li>This setting has no impact in cases where the re-engagement window is shorter than the duration of this setting. Example: If the re-engagement window is 1 day, and this setting is 4 days then this setting has no impact whatsoever.</li><li>These settings do not affect the duration between install and re-engagement.</li></ul>**Where set**: App settings page<br /><br />**Duration**:<ul><li>Default: None</li><li>Range: 1-23 hours/1-30 days</li></ul> |
+| [Minimum inactivity period](/docs/set-retargeting-inactivity-window) | Don't record a re-engagement or re-attribution during the exclusion window.<br /><br />**Where set:** Integrated partners settings page in the Integration tab.<br /><br />**Duration**:<ul><li>Default: None</li><li>0-30 days</li></ul>**SRN remarks**: Consider that SRNs usually have their own inactivity period rules. If your setting differs from that of the SRN this can cause discrepancies. |
 | [Re-attribution](/docs/set-up-re-attribution-window) | The re-attribution window impacts re-attributions but not re-engagements.<br /><br />Users reinstalling during the re-attribution window after engaging with a retargeting campaign are attributed to the retargeting media sources. Related reading: [Reinstalls](/docs/appsflyer-attribution-model#reinstalls)<br /><br />**Where set:** App settings |
-
-
 
 #### **Example flow implementing the rules**
 
 ![](https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png)
 
 Re-engagement rules checklist for click-through and view-through attribution:
-
-
 
 | Rule | Rule |
 | --- | --- |
@@ -95,32 +86,28 @@ Re-engagement rules checklist for click-through and view-through attribution:
 | D | In the case of in-app events, they take place during the re-engagement window. |
 | E | The period between the previous re-engagement is greater than the minimum time between re-engagements. |
 
+</Accordion>
 
+<Accordion title="Example retargeting scenarios">
 
-### Example retargeting scenarios
-
-
-
-| **Scenario 1: Purchases before, during, and after the re-engagement window**<br /><br />User journey:<br /><br />* Engage with an ad from network Z, install the app, and make a purchase (A).<br />* Engage with a retargeting ad from network Y, open the app, and make a purchase (B).<br />* Make a purchase (C).<br /><br />![](https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png)<br /><br />P/S column: Primary or Secondary described in [double attribution of retargeting events](/docs/resolve-retargeting-double-attribution) |
+| **Scenario 1: Purchases before, during, and after the re-engagement window**<br /><br />User journey:<ul><li>Engage with an ad from network Z, install the app, and make a purchase (A).</li><li>Engage with a retargeting ad from network Y, open the app, and make a purchase (B).</li><li>Make a purchase (C).</li></ul>![](https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png)<br /><br />P/S column: Primary or Secondary described in [double attribution of retargeting events](/docs/resolve-retargeting-double-attribution) |
 | --- |
-| **Scenario 2: Multiple conversions during the re-engagement attribution window**<br /><br />User journey:<br /><br />* Engage with an ad from network Z, install the app, and make a purchase (A).<br />* Engage with a retargeting ad from network Y, open the app, and make a purchase (B).<br />* Make a purchase (C).<br /><br />![](https://files.readme.io/bf57f8a9597bd56a89bb3f1be3700195e1b153b548cb11ee3d37c65d5382e711-33563474530321.png)<br /><br />P/S column: Primary or Secondary described in [double attribution of retargeting events](/docs/resolve-retargeting-double-attribution) |
+| **Scenario 2: Multiple conversions during the re-engagement attribution window**<br /><br />User journey:<ul><li>Engage with an ad from network Z, install the app, and make a purchase (A).</li><li>Engage with a retargeting ad from network Y, open the app, and make a purchase (B).</li><li>Make a purchase (C).</li></ul>![](https://files.readme.io/bf57f8a9597bd56a89bb3f1be3700195e1b153b548cb11ee3d37c65d5382e711-33563474530321.png)<br /><br />P/S column: Primary or Secondary described in [double attribution of retargeting events](/docs/resolve-retargeting-double-attribution) |
 
-
+</Accordion>
 
 ## Retargeting operations
 
-### Retargeting settings
+<div id="retargeting-settings" />
+
+<Accordion title="Retargeting settings">
 
 The following settings are required depending on the scenario.
 
-
-
 | Conversion type | SRN | Non-SRN |
 | --- | --- | --- |
-| Re-engagement | 1. In AppsFlyer, from the side menu, select **Settings** > **App settings**.<br />2. Verify that **Re-engagement attribution** is on.<br />3. Per SRN:<br />4. From the side menu, select **Collaborate** > **Active integrations**, and select the SRN.<br />5. Turn on **Re-engagement attribution**. | 1. In AppsFlyer, from the side menu, select **Settings** > **App settings**.<br />2. Verify that **Re-engagement attribution**is on.<br />3. Per non-SRN: Append the retargeting parameter to attribution links as detailed in this section |
-| Re-attribution | 1. From the side menu, select **Collaborate** > **Active integrations**, and<br />2. Turn on **Reinstall attribution**. | 1. No explicit settings are required.<br />2. Append the retargeting parameter to attribution links as detailed in this section. |
-
-
+| Re-engagement | <ol><li>In AppsFlyer, from the side menu, select **Settings** > **App settings**.</li><li>Verify that **Re-engagement attribution** is on.</li><li>Per SRN:</li><li>From the side menu, select **Collaborate** > **Active integrations**, and select the SRN.</li><li>Turn on **Re-engagement attribution**.</li></ol> | <ol><li>In AppsFlyer, from the side menu, select **Settings** > **App settings**.</li><li>Verify that **Re-engagement attribution**is on.</li><li>Per non-SRN: Append the retargeting parameter to attribution links as detailed in this section</li></ol> |
+| Re-attribution | <ol><li>From the side menu, select **Collaborate** > **Active integrations**, and</li><li>Turn on **Reinstall attribution**.</li></ol> | <ol><li>No explicit settings are required.</li><li>Append the retargeting parameter to attribution links as detailed in this section.</li></ol> |
 
 #### **Non-SRN settings**
 
@@ -138,7 +125,11 @@ The following settings are required depending on the scenario.
 5. Copy the URL generated and give it to the ad network to use with your retargeting campaign.  
    **Note**: The URL does not persist and can't be saved.
 
-### Retargeting dashboard
+</Accordion>
+
+<div id="retargeting-dashboard" />
+
+<Accordion title="Retargeting dashboard">
 
 The Overview dashboard contains retargeting metrics as well as user acquisition metrics. The metrics are LTV-based and relate to users who engage with a retargeting campaign.
 
@@ -149,7 +140,11 @@ The Overview dashboard contains retargeting metrics as well as user acquisition 
    Retargeting data displays.  
    **Note**: You can also view retargeting data in the unified view. See Dashboard view types.
 
-### Retargeting attribution links
+</Accordion>
+
+<div id="retargeting-attribution-links" />
+
+<Accordion title="Retargeting attribution links">
 
 * Retargeting links are similar to regular user acquisition links.
 * Create them for:
@@ -158,17 +153,13 @@ The Overview dashboard contains retargeting metrics as well as user acquisition 
 
 Retargeting attribution link parameters
 
-
-
 | Parameter | Descriptions | Required |
 | --- | --- | --- |
 | `is_retargeting` | Set to: `is_retargeting=true` | Yes |
 | Advertising ID | Where possible send an advertising ID like IDFA, OAID, IDFV, and so on. [Probabilistic Modeling limitations for iOS apps.](/docs/appsflyer-attribution-model#probabilistic-modeling) | No |
-| Retargeting click lookback-window | * The retargeting [click lookback window](/docs/set-up-lookback-windows) works like that of user acquisition campaigns.<br />* It defines the maximum period that can elapse between a user clicking on an ad until the user is attributed.<br />* The lookback window is set using the using `&af_click_lookback` parameter.<br />* The default setting is 7 days.<br /><br />CALLSTART::Note::<br /><br />#### Example<br /><br />To set a 14-day click-through lookback window, add the following to the retargeting campaign's attribution link: `&af_click_lookback=14d`<br /><br />CALLEND:: | No |
-| Retargeting view-through lookback timer | * The retargeting [view-through lookback window](/docs/set-up-lookback-windows) works like that of user acquisition campaigns.<br />* It defines the maximum period that can elapse after a user views an ad until the user is attributed.<br />* The default is 1 day.<br />* The lookback window is set using<br /><br />`af_viewthrough_lookback={time}`<br /><br />CALLSTART::Note::<br /><br />#### Example<br /><br />To set a 5-hour view-through lookback window, add the following to the retargeting campaign's attribution link: `&af_viewthrough_lookback=5h`<br /><br />CALLEND:: | No |
-| Re-engagement window | * The **re-engagement window** can be set in the attribution link user interface. This sets the **af\_reengagement\_window** parameter on to the attribution link. The parameter can be added manually.<br />* The default is 30 days.<br />* The following re-engagement window values are available:<br />* Hours:1- 23 hours<br />* Days: 1-90 days<br />* Lifetime: Persists until the user either uninstall or performs another re-engagement, for example, af\_reengagement\_window=lifetime<br /><br />For example, **af\_reengagement\_window=60d** means that events reported within 60 days of the re-engagement are attributed to the retargeting media source. | No |
-
-
+| Retargeting click lookback-window | * The retargeting [click lookback window](/docs/set-up-lookback-windows) works like that of user acquisition campaigns.<br />* It defines the maximum period that can elapse between a user clicking on an ad until the user is attributed.<br />* The lookback window is set using the using `&af_click_lookback` parameter.<br />* The default setting is 7 days.<br /><br /><br /><br />**Example**<br />To set a 14-day click-through lookback window, add the following to the retargeting campaign's attribution link: `&af_click_lookback=14d`<br /><br /> | No |
+| Retargeting view-through lookback timer | * The retargeting [view-through lookback window](/docs/set-up-lookback-windows) works like that of user acquisition campaigns.<br />* It defines the maximum period that can elapse after a user views an ad until the user is attributed.<br />* The default is 1 day.<br />* The lookback window is set using<br /><br />`af_viewthrough_lookback={time}`<br /><br /><br /><br />**Example**<br />To set a 5-hour view-through lookback window, add the following to the retargeting campaign's attribution link: `&af_viewthrough_lookback=5h`<br /><br /> | No |
+| Re-engagement window | <ul><li>The **re-engagement window** can be set in the attribution link user interface. This sets the **af\_reengagement\_window** parameter on to the attribution link. The parameter can be added manually.</li><li>The default is 30 days.</li><li>The following re-engagement window values are available:</li><li>Hours:1- 23 hours</li><li>Days: 1-90 days</li><li>Lifetime: Persists until the user either uninstall or performs another re-engagement, for example, af\_reengagement\_window=lifetime</li></ul>For example, **af\_reengagement\_window=60d** means that events reported within 60 days of the re-engagement are attributed to the retargeting media source. | No |
 
 #### Retargeting view-through lookback period
 
@@ -178,7 +169,11 @@ clickid={clickid}&af_siteid={publisher}&idfa={device_id_raw}&sha1_idfa={device_i
 &af_sub1={creative_name}&is_retargeting=true&af_reengagement_window=60d
 ```
 
-### Retargeting reports and raw data
+</Accordion>
+
+<div id="retargeting-reports-and-raw-data" />
+
+<Accordion title="Retargeting reports and raw data">
 
 * Retargeting reports, similar to the UA [aggregate](/docs/aggregated-and-analytics-reporting-overview) and [raw data](/docs/raw-data-reporting-overview) reports, are available using the reporting tools.
 * Retargeting in-app events and sessions are [double attributed.](/docs/resolve-retargeting-double-attribution)
@@ -190,30 +185,28 @@ clickid={clickid}&af_siteid={publisher}&idfa={device_id_raw}&sha1_idfa={device_i
 
 Interpretation of raw data reports in the context of retargeting
 
-
-
 | Column | **Description** |
 | --- | --- |
-| Event name | * Field population depends on the report type.<br />* In-app event reports: The in-app event name.<br />* Retargeting conversion reports: re-engagement or re-attribution. **Note**! In the case of Data Locker values are as follows:<br />  * install means re-attribution<br />  * retargeting means re-engagement |
-| Attributed touch type | Engagement type:<br /><br />* Click<br />* Impression |
+| Event name | <ul><li>Field population depends on the report type.</li><li>In-app event reports: The in-app event name.</li><li>Retargeting conversion reports: re-engagement or re-attribution. **Note**! In the case of Data Locker values are as follows:<ul><li>install means re-attribution</li><li>retargeting means re-engagement</li></ul></li></ul> |
+| Attributed touch type | Engagement type:<ul><li>Click</li><li>Impression</li></ul> |
 | Attributed touch time | Retargeting engagement time |
 | Install time | The first app launch after the re-engagement or re-attribution. |
 | Event time | The time the event occurred |
-| AppsFlyer ID | * Re-attributions: A new AppsFlyer ID<br />* Re-engagement: Remains unchanged |
+| AppsFlyer ID | <ul><li>Re-attributions: A new AppsFlyer ID</li><li>Re-engagement: Remains unchanged</li></ul> |
 | Is retargeting | TRUE for retargeting conversions and events |
 | Is primary attribution | TRUE for retargeting conversions and events |
-| Retargeting conversion type | * Re-engagement<br />* Re-attribution |
-| Conversion type | The type of conversion:<br /><br />* Install<br />* Reinstall (1)<br />* Re-engagement<br />* Unknown (2)<br /><br />(1) If conversion\_type= reinstall and campaign\_type=retargeting is equivalent to retargeting\_conversion\_type=re-attribution<br /><br />(2) In-app events/sessions not attributed to any media source. |
-| Campaign type | The source bringing the user:<br /><br />* UA<br />* Organic<br />* Retargeting<br />* Unknown |
+| Retargeting conversion type | <ul><li>Re-engagement</li><li>Re-attribution</li></ul> |
+| Conversion type | The type of conversion:<ul><li>Install</li><li>Reinstall (1)</li><li>Re-engagement</li><li>Unknown (2)</li></ul>(1) If conversion\_type= reinstall and campaign\_type=retargeting is equivalent to retargeting\_conversion\_type=re-attribution<br /><br />(2) In-app events/sessions not attributed to any media source. |
+| Campaign type | The source bringing the user:<ul><li>UA</li><li>Organic</li><li>Retargeting</li><li>Unknown</li></ul> |
 | Attribution lookback | Retargeting click-through lookback window |
-| Original URL | Contains one of the following:<br /><br />* Retargeting link<br />* Deep linking data<br />* Empty for SRNs |
+| Original URL | Contains one of the following:<ul><li>Retargeting link</li><li>Deep linking data</li><li>Empty for SRNs</li></ul> |
 | Contributor fields | Unavailable for re-engagements |
 
-
+</Accordion>
 
 ## Additional information
 
-### App requirements
+<Accordion title="App requirements">
 
 To run retargeting campaigns the app must meet the following minimum requirements.
 
@@ -223,20 +216,22 @@ To run retargeting campaigns the app must meet the following minimum requirement
 * Android:
   * If the deep link opens an activity other than the main activity, see the [SDK Integration](/docs/basic-sdk-integration-guide#deep-linking) article (attribution links section).
 
-### Retargeting limitations
+</Accordion>
+
+<Accordion title="Retargeting limitations">
 
 * Starting February 17, 2021, retargeting supports Probabilistic Modeling.
 * Campaign cost data for retargeting is available in Overview and Cohort dashboards and reports in the unified view.
 
-### FAQ
+</Accordion>
 
+<Accordion title="FAQ">
 
-
-| **What constitutes retargeting clicks?**<br /><br />* Retargeting clicks include retargeted users engaging with an AppsFlyer attribution link.<br />* Clicks from SRNs or from [push notifications](/docs/measuring-push-notification-re-engagement-campaigns) are not included in the count.<br />* Some clicks result in new installs which are attributed as user acquisition. This happens when non-users, or past users after the expiry of the [re-attribution window](/docs/set-up-re-attribution-window), engage with a retargeting link and install.<br />* If a retargeting click leads to an app open via Universal Links or Android App Links, but the re-engagement is not counted due to reasons such as inactivity windows, the click will not be measured. |
+| **What constitutes retargeting clicks?**<ul><li>Retargeting clicks include retargeted users engaging with an AppsFlyer attribution link.</li><li>Clicks from SRNs or from [push notifications](/docs/measuring-push-notification-re-engagement-campaigns) are not included in the count.</li><li>Some clicks result in new installs which are attributed as user acquisition. This happens when non-users, or past users after the expiry of the [re-attribution window](/docs/set-up-re-attribution-window), engage with a retargeting link and install.</li><li>If a retargeting click leads to an app open via Universal Links or Android App Links, but the re-engagement is not counted due to reasons such as inactivity windows, the click will not be measured.</li></ul> |
 | --- |
-| **When is the attributed touch time identical to the install time?**<br /><br />* When users of universal links, or Android app links, perform deep linking, they are directed into the app without going through AppsFlyer first.<br />* When the app launches and the SDK reports a new re-engagement, AppsFlyer reproduces the click data using the same timestamp of the launch. This makes engagement and launch time identical. |
+| **When is the attributed touch time identical to the install time?**<ul><li>When users of universal links, or Android app links, perform deep linking, they are directed into the app without going through AppsFlyer first.</li><li>When the app launches and the SDK reports a new re-engagement, AppsFlyer reproduces the click data using the same timestamp of the launch. This makes engagement and launch time identical.</li></ul> |
 
-
+</Accordion>
 
 > 📘 **See also**
 >

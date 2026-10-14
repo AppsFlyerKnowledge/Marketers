@@ -24,7 +24,6 @@ x-zendesk:
 ---
 <Embed title="Getting started—agency onboarding" typeOfEmbed="wistia" url="https://fast.wistia.com/embed/iframe/54qzpj1lm7" providerUrl="https://fast.wistia.com" />
 
-## 
 
 ## AppsFlyer attribution model
 
@@ -39,7 +38,7 @@ Before you proceed, it’s essential to understand how AppsFlyer’s attribution
 5. The user installs the app and opens it for the first time. The AppsFlyer SDK inside the app calls our servers with the information about the device that the app is installed on.
 6. We match this data to our click database using our [Attribution methods](/docs/appsflyer-attribution-model).
 7. If we find a match, we attribute the install to the click. If not, we attribute the install to an organic download.
-8. Once the install is attributed, we show it on marketer and agency dashboards and reports ([except Meta ads and X Ads](/docs/about-agency-accounts#selfreporting-ad-networks)).
+8. Once the install is attributed, we show it on marketer and agency dashboards and reports ([except Meta ads and X Ads](/docs/about-agency-accounts#self-reporting-ad-networks)).
 9. Then, we send a postback with the conversion details to the ad network, who can use this information for further optimization.
 
 ## Agency role in mobile attribution chain
@@ -99,13 +98,10 @@ When you get permission from a marketer:
 * You can grant permission for ad networks and their team members to view
   basic information about the app.  
 
-  CALLSTART::Note::
+  > 📘 **Note**
+  >
+  > The agency gains control over the main toggle for ad network permissions and the individual permissions nested under it. Both the agency and the advertiser can change these settings, and the most recent change by either party determines the current state.
 
-  #### Note
-
-  The agency gains control over the main toggle for ad network permissions and the individual permissions nested under it. Both the agency and the advertiser can change these settings, and the most recent change by either party determines the current state.
-
-  CALLEND::
 
 Additional permissions include access to the Cohort report, the Protect360 dashboard, and aggregate organic data. See a [description of the different ad network permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
@@ -149,7 +145,7 @@ Click the links above to read network guides and specific instructions for agenc
 
 ### Non-SRNs
 
-Most ad networks need attribution links that are placed behind an ad. Read more about running campaigns with them [here](/docs/about-agency-accounts#nonsrns).
+Most ad networks need attribution links that are placed behind an ad. Read more about running campaigns with them [here](/docs/about-agency-accounts#non-srns).
 
 ### Sandbox attribution agency campaigns
 
@@ -171,7 +167,6 @@ For example, if your af\_prt is AgencyX, your campaign name may look like this:
 >
 > * Agency campaigns in Sandbox attribution are also transparent and the identity of the ad network running the campaign is not masked from the marketer.
 
-
 ### SKAdNetwork agency campaigns
 
 SKAdNetwork infrastructure, part of iOS by Apple, lets marketers measure campaign success without IDFA or advertising ID. Although Apple doesn't include agencies as part of the SKAdNetwork attribution process, and AppsFlyer can't attribute agencies directly, AppsFlyer still has the ability to provide attribution data for agency campaigns running on SKAdNetworks.
@@ -192,7 +187,6 @@ For example, if your af\_prt is AgencyX, your campaign name may look like this:
 >
 > * Agency campaigns in SKAdNetwork are also transparent and the identity of the ad network running the campaign is not masked from the marketer. Consider that starting iOS 15, the marketer (app owner) can [opt-in to directly receive a copy of the postback.](https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks)
 > * Make sure the marketer activates the ad network **Partner activation** setting in the Integration tab. Failure to do so will prevent AppsFlyer from sharing decoded postback data with networks, impacting their ability to use it for reporting and optimization. This is in addition to the Partner activation setting that you can access in the user interface.
-
 
 #### Access to SKAN Conversion Studio
 

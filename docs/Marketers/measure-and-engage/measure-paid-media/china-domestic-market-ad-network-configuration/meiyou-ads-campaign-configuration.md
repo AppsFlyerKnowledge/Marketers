@@ -38,7 +38,7 @@ x-zendesk:
 
 Meiyou Ads configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
-## Integration Tab
+<Accordion title="Integration Tab">
 
 ### Activate Partner
 
@@ -80,7 +80,9 @@ Meiyou Ads connects with AppsFlyer via a unique Key. If you don't already have t
 | **Partner Event Identifier** | The unique name or ID of each event as defined on Meiyou Ads side.  <br />Obtain the corresponding Event ID from Meiyou Ads and set in the text field. |
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
-## Attribution Link Tab
+</Accordion>
+
+<Accordion title="Attribution Link Tab">
 
 In this tab, you can create the attribution links you want to send to Meiyou Ads for attributing Meiyou Ads campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
@@ -107,7 +109,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 ![attribution-link-parameters.png](https://files.readme.io/35882c82ab722ed52ab93542dc07d79e0e9ff58a14dad692405bc431b082f28c-50900198462481.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
 
 ### Click-Through Attribution
 
@@ -122,6 +124,8 @@ More details about the [click lookback window here](/docs/set-up-lookback-window
 ### Click Attribution Link
 
 This is the attribution link that contains all the setup information you have set for it. Send it to Meiyou Ads to be activated when leads click on a corresponding ad.
+
+<Accordion title="">
 
 ### View-through attribution lookback window
 
@@ -139,15 +143,23 @@ More details about the [view-through attribution here](/docs/set-up-lookback-win
 
 The impression attribution link contains similar attribution data to the click recording link (besides the different lookback window). Send it to Meiyou Ads to be activated when a corresponding ad is watched, usually for 1 second or more.
 
-## Cost Tab
+</Accordion>
+
+</Accordion>
+
+<Accordion title="Cost Tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad Revenue Tab
+</Accordion>
+
+<Accordion title="Ad Revenue Tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions Tab
+</Accordion>
+
+<Accordion title="Permissions Tab">
 
 In this tab, you can select the permissions to grant Meiyou Ads, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Meiyou Ads, the permissions tab is active and you can grant control to Meiyou Ads.
 
@@ -163,3 +175,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+
+</Accordion>

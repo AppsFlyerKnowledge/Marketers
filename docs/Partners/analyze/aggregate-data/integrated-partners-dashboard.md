@@ -53,7 +53,6 @@ To view report data:
 > * * Request from the advertiser to provide you in-app event raw data reports
 >   * Add `(event-value)` [macro to the postback URL](/docs/postback-macros-for-ad-networks)
 
-
 ### Using Postback reports
 
 You can use the Installation and In-app event [postback reports](/docs/raw-data-reporting-overview#postbacks) to find 'missing' actions., i.e. when the advertiser's raw data shows user actions that were not recorded in the ad network.
@@ -71,7 +70,7 @@ Click **Active Integrations** on the left side of the window to view the current
 
 Ad network can view the configuration on its dashboard only when it is set up by the advertiser. 
 
-Agencies can configure ad network setup upon getting relevant permission from the advertiser. Note that **when****the configuration is made by an agency, the ad network sees it as inactive**.
+Agencies can configure ad network setup upon getting relevant permission from the advertiser. Note that **whenthe configuration is made by an agency, the ad network sees it as inactive**.
 
 ## Permissions
 
@@ -112,7 +111,6 @@ When the advertiser gives permission for the ad network to configure their attri
 >
 > * Any changes made to the configuration overwrite the current configuration irrespective of whether it is set by the advertiser or the ad network.
 > * Agencies can add ad network team members to the configuration, but only app owners can provide permissions to ad networks.
-
 
 Once your client has granted you permission to the integration parameter configurations, you are able to access it from the left side of the main dashboard and select **Active Integrations.**
 

@@ -89,7 +89,6 @@ When you select **Site ID**, the data displayed is based on your filter selectio
 >
 > Site\_id data is available as of 16 May 2016 and onwards.
 
-
 ![](https://files.readme.io/7f1dcfa333e63c16a44be5ce04a7ecbe7bf1f656a2edb6bb719cb55ea4dd50b1-206156066.png)
 
 You are further presented with a breakdown of the data based on Site ID.
@@ -111,7 +110,6 @@ The filter options expand:
 > 📘 **Note**
 >
 > Once you select a Campaign/Channel but no Media Source, a warning notification is displayed indicating that you must select a media source first.
-
 
 ![](https://files.readme.io/d082084e0be1ec0e47525d55b07518249a5ff6d3ded9bf13dbd7ff7f56d6cc5c-206066866.png)
 

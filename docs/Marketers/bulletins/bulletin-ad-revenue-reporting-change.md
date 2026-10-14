@@ -27,8 +27,6 @@ x-zendesk:
 
 #### Ad revenue reporting change
 
-
-
 | Reporting method | Effective date (date change occurs) | Publication date (date of announcement) |
 | --- | --- | --- |
 | Cohort reports | May 13, 2020 | May 7, 2020 |
@@ -37,8 +35,6 @@ x-zendesk:
 | Activity dashboard | June 17, 2020 | June 14, 2020 |
 | Data Locker (h=23 folder) | August 3, 2020 | August 3, 2020 |
 | Pull API (for aggregate data) | September 1, 2020 | August 31, 2020 |
-
-
 
 ### Before the change
 

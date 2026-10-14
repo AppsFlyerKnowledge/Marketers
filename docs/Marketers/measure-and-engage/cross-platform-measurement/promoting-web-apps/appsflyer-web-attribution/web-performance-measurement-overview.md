@@ -40,7 +40,7 @@ The Web Performance Measurement flow follows a structured sequence of steps that
 
 1. [Data collection](#1-data-collection): The system captures user interaction data through either the Web SDK (Pixel) or a Server-to-Server (S2S) API.
 2. [Visit recording](#2-visit-recording)[:](/docs/web-performance-measurement-overview#2-visit-recording) Captures the user’s arrival on the website and logs a visit event, even when the traffic source is not yet known.
-3. [Media source resolution](#3-media-source-resolution)**:** Identifies the media source by parsing URL parameters in a defined priority order.
+3. [Media source resolution](#3-media-source-resolution): Identifies the media source by parsing URL parameters in a defined priority order.
 4. [The 30-minute identity delay](#4-the-30minute-identity-delay): Delays attribution decision for 30 minutes to allow for identity resolution via user login.
 5. [Stitching and identity resolution](#5-stitching-and-identity-resolution): Links the current session to a persistent Customer User ID (CUID) or a browser cookie.
 6. [User acquisition event](#6-user-acquisition-ua-event): Records the acquisition-defining event (for example, `first_visit` or a custom acquisition event) within the UA lookback window.
@@ -52,14 +52,20 @@ The Web Performance Measurement flow follows a structured sequence of steps that
 
 The following sections explain each step in detail.
 
-### 1. Data collection
+<div id="1-data-collection" />
+
+<Accordion title="1. Data collection">
 
 Once the user arrives at the landing page, AppsFlyer must capture that interaction through an integrated listener.
 
 * **Web SDK (Pixel)**: A client-side snippet [implemented directly on the website or via Google Tag Manager (GTM)](/docs/integrate-appsflyer-web-sdk).
 * **Server-to-Server (S2S) API**: A robust server-side integration that helps bypass browser measurement prevention and ad blockers while allowing you to enrich data before it reaches AppsFlyer. The S2S integration can be done directly from a customer server or via Google Tag Manager Server Side.
 
-### 2. Visit recording
+</Accordion>
+
+<div id="2-visit-recording" />
+
+<Accordion title="2. Visit recording">
 
 After the session data is collected, the system determines whether to create a first visit record. This record serves as a preprocessing layer that captures raw user activity before the actual media source resolution and attribution. Not every session is recorded as a visit.
 
@@ -67,7 +73,11 @@ AppsFlyer records a visit when someone lands on your site under a new session or
 
 For more information, see [Visit recording](/docs/about-traffic-source-resolution#step-1-visit-recording).
 
-### 3. Media source resolution
+</Accordion>
+
+<div id="3-media-source-resolution" />
+
+<Accordion title="3. Media source resolution">
 
 After the data is collected and the visit is recorded, the engine evaluates it in a defined priority order. This waterfall supports both AppsFlyer-specific and market-standard parameters, so customers **don’t need to change their existing attribution links during migration**. The first matching signal in the waterfall is used to determine the visit origin.
 
@@ -78,18 +88,30 @@ After the data is collected and the visit is recorded, the engine evaluates it i
 
 For more information, see [Media source resolution](/docs/about-traffic-source-resolution#step-2-media-source-resolution).
 
-### 4. The 30-minute identity delay
+</Accordion>
+
+<div id="4-the-30minute-identity-delay" />
+
+<Accordion title="4. The 30-minute identity delay">
 
 Because most users log in within 30 minutes of a visit, AppsFlyer intentionally delays attribution decisions by that same amount of time. This delay prevents "Organic" misclassification by allowing the system to capture the CUID and correctly link returning users with expired cookies to their original source.
 
-### 5. Stitching and identity resolution
+</Accordion>
+
+<div id="5-stitching-and-identity-resolution" />
+
+<Accordion title="5. Stitching and identity resolution">
 
 With the source identified and the 30-minute delay complete, the system moves to "stitching" the user's fragmented sessions into a single journey.
 
 * **CUID Stitching**: If a Customer User ID (e.g. a hashed email) is captured, the engine links the session to the user's cross-device history.
 * **Cookie fallback**: If no CUID is available, the system falls back to browser cookies, though they are less stable and device-specific.
 
-### 6. User acquisition event
+</Accordion>
+
+<div id="6-user-acquisition-ua-event" />
+
+<Accordion title="6. User acquisition event">
 
 Once the user's identity is resolved, the engine looks for the specific action that defines them as acquired. The industry standard is the`first_visit`, but this often represents a weak signal—a user might click an ad accidentally or bounce immediately. By setting a custom acquisition event, such as registration or purchase, you ensure that long-term value (LTV) is attributed to the marketing source that drove a meaningful action, not just a curiosity click.
 
@@ -103,24 +125,38 @@ Depending on the business model, different events can be defined as the user acq
 
 For more information about setting a user acquisition event, see [User acquisition settings](/docs/configure-web-performance-measurement-settings#user-acquisition-settings).
 
-### 7. Pre-acquisition period
+</Accordion>
+
+<div id="7-preacquisition-period" />
+
+<Accordion title="7. Pre-acquisition period">
 
 After the system resolves the user’s identity but before they’re acquired, there can be a gap in the journey called the pre-acquisition period. This is relevant only if you define a custom user acquisition (UA) event instead of using the default `first_visit`. In this period, users can take meaningful actions, such as adding items to cart, browsing products, or engaging with content, before they complete the event that officially acquires them, such as registration or a first purchase.
 
 AppsFlyer collects and attributes these pre-acquisition events to the marketing source and flags them in reporting as pre-acquisition. The key difference between pre-acquisition and post-acquisition attribution is the attribution window. During the pre-acquisition period, the attribution window is shorter and matches the UA event lookback window, because these events occur before the UA event that defines the user as acquired. After the custom UA event is triggered and the user is acquired, the attribution window extends to measure lifetime value (LTV), giving long-term credit to the marketing source that acquired the user.
 
-### 8. Re-engagement and re-acquisition
+</Accordion>
+
+<div id="8-reengagement-and-reacquisition" />
+
+<Accordion title="8. Re-engagement and re-acquisition">
 
 Once a user is acquired, they may return to the site later. A re-engagement (revisit) attribution is triggered when a returning user clicks an ad and visits your site.
 
 While *re-engagement* focuses on existing users, a return can also be classified as a *re-acquisition* if the user has been inactive for an extended period. To be eligible for re-acquisition, the user must first cross the **Inactivity Window** (default: 90 days), which defines the period of inactivity required to consider them "churned." Once this window has passed, if the user returns, the engine records a new user acquisition event rather than a standard revisit.
 
-For more information, see [Re-engagement settings](/docs/configure-web-performance-measurement-settings#h_01KGPJ1ZMXXJJNCBB52CHY95Z2) and [Re-acquisition settings](/docs/configure-web-performance-measurement-settings#h_01KGPJMJDX83SBA77A7BSRZ87V)
+For more information, see [Re-engagement settings](/docs/configure-web-performance-measurement-settings#re-engagement-settings) and [Re-acquisition settings](/docs/configure-web-performance-measurement-settings#re-acquisition-settings)
 
-### 9. LTV measurement
+</Accordion>
+
+<div id="9-ltv-measurement" />
+
+<Accordion title="9. LTV measurement">
 
 Whether the user was brought in by an initial acquisition campaign or a subsequent retargeting effort, the final goal is to measure their total value over time. Once a user is successfully attributed to a source, the system measures their ongoing activity to calculate Lifetime Value (LTV).
 
 This measurement is governed by the **Attribution Window**, which is set to "Forever" by default. This ensures that every subsequent action—such as repeat purchases or subscription renewals—is credited back to the original marketing source that drove the user to the site. By capturing this long-term data, you can move beyond simple conversion counts and determine the true Return on Ad Spend (ROAS) for your campaigns.
 
 For more information about setting the **Attribution window**, see the [Attribution window](/docs/configure-web-performance-measurement-settings#attribution-window).
+
+</Accordion>

@@ -59,9 +59,9 @@ DSR details the mandatory rights of the Data Subject, with which the Data Contro
 
 | **Request type**<br /><br />**(Right)** | **GDPR definition** | Processing of the request by AppsFlyer |
 | --- | --- | --- |
-| **Access** | * If requested, App Users have the right to know if, why, and for how long the App Owner will process their data.<br />* If data is shared with third parties, like AppsFlyer, App Users have the right to know who those third parties are.<br />* The right to know what categories of data are being processed.<br />* If there is automated processing, that has a significant effect on them. | The App Owners receive a copy of the App Users' processed personal data. |
+| **Access** | <ul><li>If requested, App Users have the right to know if, why, and for how long the App Owner will process their data.</li><li>If data is shared with third parties, like AppsFlyer, App Users have the right to know who those third parties are.</li><li>The right to know what categories of data are being processed.</li><li>If there is automated processing, that has a significant effect on them.</li></ul> | The App Owners receive a copy of the App Users' processed personal data. |
 | **Portability** | The App User needs to receive all of their personal data in a structured, commonly used, and machine-readable format, such as a CSV file. | The App Owner receives a copy of the App User's processed personal data. |
-| **Rectification** | Allows App Users to correct their data if they see it is inaccurate or untruthful. App Owners are required to erase or correct inaccurate or incomplete data. | * AppsFlyer deletes the App User's data recorded prior to the date of the *rectification* request.<br />* Data received thereafter is recorded by AppsFlyer. |
+| **Rectification** | Allows App Users to correct their data if they see it is inaccurate or untruthful. App Owners are required to erase or correct inaccurate or incomplete data. | <ul><li>AppsFlyer deletes the App User's data recorded prior to the date of the *rectification* request.</li><li>Data received thereafter is recorded by AppsFlyer.</li></ul> |
 | **Erasure** | The right of erasure requires App Owners to remove personal data within 10 days of receiving the request. | The data is deleted |
 
 ## AppsFlyer GDPR Requests API
@@ -104,7 +104,7 @@ A GDPR Request API can be submitted via HTTP POST to the following endpoint:
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests
 ```
 
-For the API authorization, use the same V2 API token as for Pull API. An admin user can [retrieve the token](/docs/managing-appsflyer-tokens#retrieving-api-tokens) from the API token page in the dashboard. Add the token into the request header as follows: `'Authorization': 'Bearer %AuthTokenV2%'`
+For the API authorization, use the same V2 API token as for Pull API. An admin user can [retrieve the token](/docs/managing-appsflyer-tokens#retrieve-tokens) from the API token page in the dashboard. Add the token into the request header as follows: `'Authorization': 'Bearer %AuthTokenV2%'`
 
 #### Parameters
 
@@ -115,12 +115,12 @@ For the API authorization, use the same V2 API token as for Pull API. An admin u
 | Object type | **Mandatory** | **Description** |
 | --- | --- | --- |
 | identity\_type | Yes | * The identity type in string format for `android`, `ios`, `web`, `windowsphone` platforms are any of the following:<br />  * ios\_advertising\_id<br />  * android\_advertising\_id<br />  * fire\_advertising\_id<br />  * microsoft\_advertising\_id<br />  * appsflyer\_id<br />  * customer\_user\_id (CUID)<br /><br />* For `CTV`, `PC`, and `Console`platforms only the following:<br />  * appsflyer\_id<br />  * customer\_user\_id (CUID)<br /><br />* Example: `android_advertising_id`<br /><br />**Important!**<br /><br />To use CUID through the OpenDSR API, you must send the CUID with `idfa` / `appsflyer_id` inside in-app events using `event_name`: `Login - Complete` or `Registration - Account created` |
-| identity\_value | Yes | * Format: String<br />* Example: "a7551968-d5d6-44b2-9831-815ac9017798" |
+| identity\_value | Yes | <ul><li>Format: String</li><li>Example: "a7551968-d5d6-44b2-9831-815ac9017798"</li></ul> |
 | identity\_format | Yes | * The method used to encode the identity\_value: `raw` is the only supported:<br />* Example: "raw" |
 
 #### Example: GDPR erasure request
 
-**Example of an erasure request for** `android`**,** `ios`**,** `web`**,** `windowsphone` **platforms:**
+**Example of an erasure request for** `android`, `ios`, `web`, `windowsphone` **platforms:**
 
 ```bash
 curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests' \
@@ -147,7 +147,7 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_re
 }'
 ```
 
-**Example of an erasure request for**`CTV`**,** `PC`**, and** `Console` **platforms:**
+**Example of an erasure request for**`CTV`, `PC`**, and** `Console` **platforms:**
 
 ```bash
 curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests' \

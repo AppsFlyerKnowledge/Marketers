@@ -30,7 +30,6 @@ The integration between AppsFlyer and Mixpanel enables you to import the Acquisi
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
-
 ## Setting up Mixpanel
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -45,7 +44,7 @@ The integration between AppsFlyer and Mixpanel enables you to import the Acquisi
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration tab is divided into different sections as described below.
 
@@ -72,18 +71,15 @@ The Integration tab is divided into different sections as described below.
 * **Events:** Turn on to send install data to the Mixpanel Events endpoint.
 * **People:** Turn on this to send install data to the Mixpanel People endpoint.
 
-  CALLSTART::Note::
+  > 📘 **Note**
+  >
+  > For install postbacks to be sent to Mixpanel, at least one of the two endpoints, **Events** or **People**, must be turned on.
 
-  #### Note
-
-  For install postbacks to be sent to Mixpanel, at least one of the two endpoints, **Events** or **People**, must be turned on.
-
-  CALLEND::
 * **Advanced Data Sharing:** Enable this to send additional information to Mixpanel: c (campaign), network (pid), impression\_based (is-impression).
 
 ### Default postbacks
 
-AppsFlyer can send automatic postbacks to Mixpanel following user installs, including installs and re-engagements. Re-engagements occur when a user that already has the app installed, opens the app after a click through a campaign. Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default%20postbacks).
+AppsFlyer can send automatic postbacks to Mixpanel following user installs, including installs and re-engagements. Re-engagements occur when a user that already has the app installed, opens the app after a click through a campaign. Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default-postbacks).
 
 [![](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)
 
@@ -96,7 +92,6 @@ In this section, you map AppsFlyer events with Mixpanel via postbacks.
 > 📘 **Note**
 >
 > Mixpanel captures in-app events using their own SDK. The only event that can be sent to Mixpanel that is not captured by them is af\_uninstall.
-
 
 Learn more about [in-app event postbacks](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration).
 
@@ -124,21 +119,31 @@ Once you have saved the integration, AppsFlyer sends the following data to Mixpa
 
 **Note**: CUID isn't sent in uninstall postbacks.
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Attribution Links are not available for this partner.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions are not available for this partner.
+
+</Accordion>
 
 ## Integrating with Mixpanel when using a login mechanism
 
@@ -186,7 +191,6 @@ The following shows an example of the integration steps:
 > 📘 **Note**
 >
 > If you are not using any registration process inside your application, implement steps 1-3 as described above.
-
 
 ## Viewing AppsFlyer data in Mixpanel
 

@@ -26,7 +26,6 @@ x-zendesk:
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
-
 ## Setting up Convertro
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -45,7 +44,7 @@ The Convertro configuration window uses only the **Integration** tab.
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
 
@@ -102,15 +101,11 @@ In this section, you can map your AppsFlyer events with Convertro via postbacks.
 4. Click **Add Event** to add an SDK Event to the list.
 5. Complete the following parameters:
 
-
-
 | Parameter Name | Description |
 | --- | --- |
 | **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
 | **Partner Event Identifier** | The unique name or ID of each event as defined on Convertro's side.  <br />Obtain the corresponding Event ID from Convertro and set in the text field. |
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
-
-
 
 Click **Save**.
 
@@ -125,18 +120,28 @@ Once this configuration is saved, AppsFlyer begins sending the following data to
 * User Agent
 * Customer User ID (optional, if configured)
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Attribution Links are not available for Convertro.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions are not available for Convertro.
+
+</Accordion>

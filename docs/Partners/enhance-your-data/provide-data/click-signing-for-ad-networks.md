@@ -68,7 +68,6 @@ The following chart outlines the flow from initial development and basic tests t
 >
 > Make sure any URL encoding of special characters or spaces in your link occurs before the click signature is generated. Generating the signature first results in verification failure.
 
-
 ## Creating a click signature
 
 To create a click signature you must:
@@ -80,11 +79,9 @@ To create a click signature you must:
 
 The following list of attributes is supported for click and engagement signing.
 
-
-
 | Order | Parameter | Mandatory | Notes |
 | --- | --- | --- | --- |
-| 1 | link\_domain | Yes | The domain from the click URL For example:<br /><br />* app.appsflyer.com<br />* myapp.onelink.me<br />* click.mycustomdomain.com |
+| 1 | link\_domain | Yes | The domain from the click URL For example:<ul><li>app.appsflyer.com</li><li>myapp.onelink.me</li><li>click.mycustomdomain.com</li></ul> |
 | 2 | link\_path | Yes | The path of the click URL not including a leading backslash.  <br />**app-id** for single platform links or **template-id** for OneLink |
 | 3 | pid | Yes |  |
 | 4 | af\_prt | No |  |
@@ -102,8 +99,6 @@ The following list of attributes is supported for click and engagement signing.
 | 16 | fire\_advertising\_id | No |  |
 | 17 | idfa | No |  |
 | 18 | idfv | No |  |
-
-
 
 ### Attribute and JSON rules
 
@@ -143,7 +138,7 @@ The following list of attributes is supported for click and engagement signing.
 
 ### Signature example
 
-### Building a signature example
+<Accordion title="Building a signature example">
 
 Example OneLink (multi-platform) click URL:
 
@@ -181,9 +176,11 @@ https://yourbrand.onelink.me/qsWL?pid=mediasource_int&advertising_id=12345678-12
 &signature_v2=WIfCmfLAPSsVrBTqCqfihMeLCnbE4dIAlhHF84WsiWA
 ```
 
+</Accordion>
+
 ### Code examples
 
-### signing-supported-params.json
+<Accordion title="signing-supported-params.json">
 
 ```json
 [
@@ -206,7 +203,9 @@ https://yourbrand.onelink.me/qsWL?pid=mediasource_int&advertising_id=12345678-12
 ]
 ```
 
-### signature-example.go
+</Accordion>
+
+<Accordion title="signature-example.go">
 
 ```
 package main
@@ -353,45 +352,41 @@ func main() {
 }
 ```
 
+</Accordion>
+
 ## Click signature APIs
 
 AppsFlyer provides APIs that allow ad networks to manage and test the click signing process. See the list of APIs in the table below, and the sections that follow with information necessary for using the API. 
 
 #### Click signature APIs
 
-
-
 | API method | Remarks |
 | --- | --- |
 | [Generate secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-post) | Generate secret keys to be used in the signature. |
 | [Revoke secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-delete) | Cancel compromised secret keys. |
 | [Test](https://dev.appsflyer.com/hc/reference/click-signing-test-post) | Send single clicks for testing the signature. |
-| [Configure mode](https://dev.appsflyer.com/hc/reference/click-signing-config-update-put) | Configure mode of click signing mode: <br /><br />* **disabled** (default): No click signature validation is done.<br />* **report-only** (testing mode): AppsFlyer validates click signatures, but doesn't block clicks with invalid signatures. The ad network can use the **R****eport API** to get statistics on successful/failing clicks. Use this to test click signing without impacting production and real traffic.<br />* **enabled:** AppsFlyer blocks clicks with invalid or missing signatures. |
-| [Configure circuit breaker](https://dev.appsflyer.com/hc/reference/click-signing-config-circuit-breaker-put) | Configure the mode of the circuit breaker that protects the ad network from having too many blocked clicks:<br /><br />* **enabled** (default): If the Protect360 system detects that too many clicks are marked as invalid, then in order to protect the ad network from having potentially incorrectly blocked clicks:<br />  * Configure mode API changes to report-only.<br />  * And email alert is sent to the ad network to verify the click signing API is correctly set up.<br />* **disabled**: Protect360 continues to block all clicks marked as invalid, even when the block percentage is unusually high. |
+| [Configure mode](https://dev.appsflyer.com/hc/reference/click-signing-config-update-put) | Configure mode of click signing mode:<ul><li>**disabled** (default): No click signature validation is done.</li><li>**report-only** (testing mode): AppsFlyer validates click signatures, but doesn't block clicks with invalid signatures. The ad network can use the **Report API** to get statistics on successful/failing clicks. Use this to test click signing without impacting production and real traffic.</li><li>**enabled:** AppsFlyer blocks clicks with invalid or missing signatures.</li></ul> |
+| [Configure circuit breaker](https://dev.appsflyer.com/hc/reference/click-signing-config-circuit-breaker-put) | Configure the mode of the circuit breaker that protects the ad network from having too many blocked clicks:<ul><li>**enabled** (default): If the Protect360 system detects that too many clicks are marked as invalid, then in order to protect the ad network from having potentially incorrectly blocked clicks:<ul><li>Configure mode API changes to report-only.</li><li>And email alert is sent to the ad network to verify the click signing API is correctly set up.</li></ul></li><li>**disabled**: Protect360 continues to block all clicks marked as invalid, even when the block percentage is unusually high.</li></ul> |
 | [Get configuration](https://dev.appsflyer.com/hc/reference/click-signing-config-get) | Get the mode and IDs of active secret keys. |
 | [Report](https://dev.appsflyer.com/hc/reference/click-signing-report-get) | Get the last 3 days statistics on successful and failing clicks when the system is in **report-only** or **enabled** mode. Use this to test click signing without impacting production and real traffic. |
 | [Exclude app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add) | Configure app IDs to be excluded from click signing. |
 | [Remove excluded app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete) | Configure app IDs to be included in click signing after being excluded. |
 
-
-
 ## Legacy versions
 
 These versions should not be used and are listed for reference only
 
-### V1 - Legacy
+<Accordion title="V1 - Legacy">
 
 ### Generate secret key method
 
-#### Generate secret key basics
+<Accordion title="Generate secret key basics">
 
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span><code>https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=&lt;ttlHours&gt;</code></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Secret key returns in a JSON</td></tr><tr><td> </td><td>Request limit</td><td>Maximum of 2 active secret keys at a time</td></tr></tbody></table>
 
+</Accordion>
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=&lt;ttlHours&gt;</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Secret key returns in a JSON</td></tr><tr><td> </td><td>Request limit</td><td>Maximum of 2 active secret keys at a time</td></tr></tbody></table>
-
-
-
-#### API request
+<Accordion title="API request">
 
 **Method**
 
@@ -401,17 +396,13 @@ POST https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=<ttlHours>
 
 #### Parameters
 
-
-
 | Parameter | Description |
 | --- | --- |
-| ttlHours | * Time to live for the secret key, in hours, from 1-1440 hours.<br />* Default is 36 hours. |
+| ttlHours | <ul><li>Time to live for the secret key, in hours, from 1-1440 hours.</li><li>Default is 36 hours.</li></ul> |
 
+</Accordion>
 
-
-#### JSON response
-
-
+<Accordion title="JSON response">
 
 | **Key** | **Description** |
 | --- | --- |
@@ -419,9 +410,9 @@ POST https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=<ttlHours>
 | secret key | The secret key for the click signature |
 | expiration | Epoch time in milliseconds |
 
+</Accordion>
 
-
-#### Generate secret key curl example and response
+<Accordion title="Generate secret key curl example and response">
 
 **Curl request**
 
@@ -440,30 +431,28 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 }
 ```
 
-#### HTTP response codes
+</Accordion>
+
+<Accordion title="HTTP response codes">
 
 #### Response codes
-
-
 
 | Code | Message | Remarks |
 | --- | --- | --- |
 | 200 | OK |  |
 | 401 | Not authorized | Invalid or missing authorization header |
 
-
+</Accordion>
 
 ### Revoke secret key method
 
-#### Revoke secrete key basics
+<Accordion title="Revoke secrete key basics">
 
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>DELETE</code></td></tr><tr><td>Path</td><td><span><code>https://hq1.appsflyer.com/api/p360-click-signing/secret/&lt;secret-id&gt;</code></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Empty</td></tr></tbody></table>
 
+</Accordion>
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>DELETE</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/secret/&lt;secret-id&gt;</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Empty</td></tr></tbody></table>
-
-
-
-#### API request
+<Accordion title="API request">
 
 **Method**
 
@@ -473,15 +462,13 @@ DELETE https://hq1.appsflyer.com/api/p360-click-signing/secret/<secret-id>
 
 #### Parameters
 
-
-
 | Parameter | Description |
 | --- | --- |
 | secret-id | The ID of the secret key to be revoked |
 
+</Accordion>
 
-
-#### Generate secret key curl example and response
+<Accordion title="Generate secret key curl example and response">
 
 **Curl request**
 
@@ -490,49 +477,28 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
 
-#### HTTP response codes
+</Accordion>
+
+<Accordion title="HTTP response codes">
 
 #### Response codes
-
-
 
 | Code | Message | Remarks |
 | --- | --- | --- |
 | 200 | OK |  |
 | 401 | Not authorized | Invalid or missing authorization header |
 
-
+</Accordion>
 
 ### Test method
 
-#### Test basics
+<Accordion title="Test basics">
 
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/test</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Returns in a JSON</td></tr></tbody></table>
 
+</Accordion>
 
-| Order | Parameter | Mandatory | Notes |
-| --- | --- | --- | --- |
-| 1 | link\_domain | Yes | The domain from the click URL For example:<br /><br />* app.appsflyer.com<br />* myapp.onelink.me<br />* click.mycustomdomain.com |
-| 2 | link\_path | Yes | The path of the click URL not including a leading backslash.  <br />**app-id** for single platform links or **template-id** for OneLink |
-| 3 | pid | Yes |  |
-| 4 | af\_prt | No |  |
-| 5 | af\_siteid | Yes |  |
-| 6 | clickid | Yes | A one-time unique identifier of the click |
-| 7 | expires | Yes | click expiration |
-| 8 | af\_engagement\_type | No |  |
-| 9 | af\_click\_lookback | No |  |
-| 10 | af\_viewthrough\_lookback | No |  |
-| 11 | af\_reengagement\_window | No |  |
-| 12 | is\_retargeting | No |  |
-| 13 | af\_ip | No |  |
-| 14 | advertising\_id | No |  |
-| 15 | oaid | No |  |
-| 16 | fire\_advertising\_id | No |  |
-| 17 | idfa | No |  |
-| 18 | idfv | No |  |
-
-0
-
-#### API request
+<Accordion title="API request">
 
 **Method**
 
@@ -542,59 +508,22 @@ POST https://hq1.appsflyer.com/api/p360-click-signing/test
 
 #### Parameters
 
+| Parameter | Description |
+| --- | --- |
+| url | The click URL (including signature) to test |
 
+</Accordion>
 
-| Order | Parameter | Mandatory | Notes |
-| --- | --- | --- | --- |
-| 1 | link\_domain | Yes | The domain from the click URL For example:<br /><br />* app.appsflyer.com<br />* myapp.onelink.me<br />* click.mycustomdomain.com |
-| 2 | link\_path | Yes | The path of the click URL not including a leading backslash.  <br />**app-id** for single platform links or **template-id** for OneLink |
-| 3 | pid | Yes |  |
-| 4 | af\_prt | No |  |
-| 5 | af\_siteid | Yes |  |
-| 6 | clickid | Yes | A one-time unique identifier of the click |
-| 7 | expires | Yes | click expiration |
-| 8 | af\_engagement\_type | No |  |
-| 9 | af\_click\_lookback | No |  |
-| 10 | af\_viewthrough\_lookback | No |  |
-| 11 | af\_reengagement\_window | No |  |
-| 12 | is\_retargeting | No |  |
-| 13 | af\_ip | No |  |
-| 14 | advertising\_id | No |  |
-| 15 | oaid | No |  |
-| 16 | fire\_advertising\_id | No |  |
-| 17 | idfa | No |  |
-| 18 | idfv | No |  |
+<Accordion title="JSON response">
 
-1
+| **Key** | **Description** |
+| --- | --- |
+| test-status | Either Passed or Failed |
+| message | Reason for the test failure. For example:<ul><li>Missing signature</li><li>Invalid signature</li><li>Expired</li></ul> |
 
-#### JSON response
+</Accordion>
 
-
-
-| Order | Parameter | Mandatory | Notes |
-| --- | --- | --- | --- |
-| 1 | link\_domain | Yes | The domain from the click URL For example:<br /><br />* app.appsflyer.com<br />* myapp.onelink.me<br />* click.mycustomdomain.com |
-| 2 | link\_path | Yes | The path of the click URL not including a leading backslash.  <br />**app-id** for single platform links or **template-id** for OneLink |
-| 3 | pid | Yes |  |
-| 4 | af\_prt | No |  |
-| 5 | af\_siteid | Yes |  |
-| 6 | clickid | Yes | A one-time unique identifier of the click |
-| 7 | expires | Yes | click expiration |
-| 8 | af\_engagement\_type | No |  |
-| 9 | af\_click\_lookback | No |  |
-| 10 | af\_viewthrough\_lookback | No |  |
-| 11 | af\_reengagement\_window | No |  |
-| 12 | is\_retargeting | No |  |
-| 13 | af\_ip | No |  |
-| 14 | advertising\_id | No |  |
-| 15 | oaid | No |  |
-| 16 | fire\_advertising\_id | No |  |
-| 17 | idfa | No |  |
-| 18 | idfv | No |  |
-
-2
-
-#### Test curl example and response
+<Accordion title="Test curl example and response">
 
 **Curl request**
 
@@ -616,65 +545,28 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 }
 ```
 
-#### HTTP response codes
+</Accordion>
+
+<Accordion title="HTTP response codes">
 
 #### Response codes
 
+| Code | Message | Remarks |
+| --- | --- | --- |
+| 200 | OK |  |
+| 401 | Not authorized | Invalid or missing authorization header |
 
-
-| Order | Parameter | Mandatory | Notes |
-| --- | --- | --- | --- |
-| 1 | link\_domain | Yes | The domain from the click URL For example:<br /><br />* app.appsflyer.com<br />* myapp.onelink.me<br />* click.mycustomdomain.com |
-| 2 | link\_path | Yes | The path of the click URL not including a leading backslash.  <br />**app-id** for single platform links or **template-id** for OneLink |
-| 3 | pid | Yes |  |
-| 4 | af\_prt | No |  |
-| 5 | af\_siteid | Yes |  |
-| 6 | clickid | Yes | A one-time unique identifier of the click |
-| 7 | expires | Yes | click expiration |
-| 8 | af\_engagement\_type | No |  |
-| 9 | af\_click\_lookback | No |  |
-| 10 | af\_viewthrough\_lookback | No |  |
-| 11 | af\_reengagement\_window | No |  |
-| 12 | is\_retargeting | No |  |
-| 13 | af\_ip | No |  |
-| 14 | advertising\_id | No |  |
-| 15 | oaid | No |  |
-| 16 | fire\_advertising\_id | No |  |
-| 17 | idfa | No |  |
-| 18 | idfv | No |  |
-
-3
+</Accordion>
 
 ### Configure mode method
 
-#### Configure mode basics
+<Accordion title="Configure mode basics">
 
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config/</span><span><span><strong>mode/&lt;mode&gt;</strong></span></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Returns in a JSON</td></tr></tbody></table>
 
+</Accordion>
 
-| Order | Parameter | Mandatory | Notes |
-| --- | --- | --- | --- |
-| 1 | link\_domain | Yes | The domain from the click URL For example:<br /><br />* app.appsflyer.com<br />* myapp.onelink.me<br />* click.mycustomdomain.com |
-| 2 | link\_path | Yes | The path of the click URL not including a leading backslash.  <br />**app-id** for single platform links or **template-id** for OneLink |
-| 3 | pid | Yes |  |
-| 4 | af\_prt | No |  |
-| 5 | af\_siteid | Yes |  |
-| 6 | clickid | Yes | A one-time unique identifier of the click |
-| 7 | expires | Yes | click expiration |
-| 8 | af\_engagement\_type | No |  |
-| 9 | af\_click\_lookback | No |  |
-| 10 | af\_viewthrough\_lookback | No |  |
-| 11 | af\_reengagement\_window | No |  |
-| 12 | is\_retargeting | No |  |
-| 13 | af\_ip | No |  |
-| 14 | advertising\_id | No |  |
-| 15 | oaid | No |  |
-| 16 | fire\_advertising\_id | No |  |
-| 17 | idfa | No |  |
-| 18 | idfv | No |  |
-
-4
-
-#### API request
+<Accordion title="API request">
 
 **Method**
 
@@ -684,32 +576,13 @@ POST https://hq1.appsflyer.com/api/p360-click-signing/config/mode/<mode>
 
 #### Parameters
 
+| Parameter | Description |
+| --- | --- |
+| mode | Options:<ul><li>enabled<br />**Note!** Only set the mode to "enabled" after you run in report-only mode for few hours and check your reports to ensure the configuration is correct and that all clicks passed signature validation.</li><li>disabled</li><li>report-only</li></ul> |
 
+</Accordion>
 
-| Order | Parameter | Mandatory | Notes |
-| --- | --- | --- | --- |
-| 1 | link\_domain | Yes | The domain from the click URL For example:<br /><br />* app.appsflyer.com<br />* myapp.onelink.me<br />* click.mycustomdomain.com |
-| 2 | link\_path | Yes | The path of the click URL not including a leading backslash.  <br />**app-id** for single platform links or **template-id** for OneLink |
-| 3 | pid | Yes |  |
-| 4 | af\_prt | No |  |
-| 5 | af\_siteid | Yes |  |
-| 6 | clickid | Yes | A one-time unique identifier of the click |
-| 7 | expires | Yes | click expiration |
-| 8 | af\_engagement\_type | No |  |
-| 9 | af\_click\_lookback | No |  |
-| 10 | af\_viewthrough\_lookback | No |  |
-| 11 | af\_reengagement\_window | No |  |
-| 12 | is\_retargeting | No |  |
-| 13 | af\_ip | No |  |
-| 14 | advertising\_id | No |  |
-| 15 | oaid | No |  |
-| 16 | fire\_advertising\_id | No |  |
-| 17 | idfa | No |  |
-| 18 | idfv | No |  |
-
-5
-
-#### Configure mode curl example
+<Accordion title="Configure mode curl example">
 
 **Curl request**
 
@@ -718,65 +591,29 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
 
-#### HTTP response codes
+</Accordion>
+
+<Accordion title="HTTP response codes">
 
 #### Response codes
 
+| Code | Message | Remarks |
+| --- | --- | --- |
+| 200 | OK |  |
+| 400 | Bad request | Invalid mode |
+| 401 | Not authorized | Invalid or missing authorization header |
 
-
-| Order | Parameter | Mandatory | Notes |
-| --- | --- | --- | --- |
-| 1 | link\_domain | Yes | The domain from the click URL For example:<br /><br />* app.appsflyer.com<br />* myapp.onelink.me<br />* click.mycustomdomain.com |
-| 2 | link\_path | Yes | The path of the click URL not including a leading backslash.  <br />**app-id** for single platform links or **template-id** for OneLink |
-| 3 | pid | Yes |  |
-| 4 | af\_prt | No |  |
-| 5 | af\_siteid | Yes |  |
-| 6 | clickid | Yes | A one-time unique identifier of the click |
-| 7 | expires | Yes | click expiration |
-| 8 | af\_engagement\_type | No |  |
-| 9 | af\_click\_lookback | No |  |
-| 10 | af\_viewthrough\_lookback | No |  |
-| 11 | af\_reengagement\_window | No |  |
-| 12 | is\_retargeting | No |  |
-| 13 | af\_ip | No |  |
-| 14 | advertising\_id | No |  |
-| 15 | oaid | No |  |
-| 16 | fire\_advertising\_id | No |  |
-| 17 | idfa | No |  |
-| 18 | idfv | No |  |
-
-6
+</Accordion>
 
 ### Configure circuit breaker method
 
-#### Configure circuit breaker basics
+<Accordion title="Configure circuit breaker basics">
 
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td><span>HTTP status</span></td></tr></tbody></table>
 
+</Accordion>
 
-| Order | Parameter | Mandatory | Notes |
-| --- | --- | --- | --- |
-| 1 | link\_domain | Yes | The domain from the click URL For example:<br /><br />* app.appsflyer.com<br />* myapp.onelink.me<br />* click.mycustomdomain.com |
-| 2 | link\_path | Yes | The path of the click URL not including a leading backslash.  <br />**app-id** for single platform links or **template-id** for OneLink |
-| 3 | pid | Yes |  |
-| 4 | af\_prt | No |  |
-| 5 | af\_siteid | Yes |  |
-| 6 | clickid | Yes | A one-time unique identifier of the click |
-| 7 | expires | Yes | click expiration |
-| 8 | af\_engagement\_type | No |  |
-| 9 | af\_click\_lookback | No |  |
-| 10 | af\_viewthrough\_lookback | No |  |
-| 11 | af\_reengagement\_window | No |  |
-| 12 | is\_retargeting | No |  |
-| 13 | af\_ip | No |  |
-| 14 | advertising\_id | No |  |
-| 15 | oaid | No |  |
-| 16 | fire\_advertising\_id | No |  |
-| 17 | idfa | No |  |
-| 18 | idfv | No |  |
-
-7
-
-#### API request
+<Accordion title="API request">
 
 **Method**
 
@@ -786,32 +623,13 @@ POST https://hq1.appsflyer.com/p360-click-signing/config/circuit-breaker
 
 #### Request body JSON
 
+| Parameter | Description |
+| --- | --- |
+| status | <ul><li>enabled</li><li>disabled</li></ul> |
 
+</Accordion>
 
-| Order | Parameter | Mandatory | Notes |
-| --- | --- | --- | --- |
-| 1 | link\_domain | Yes | The domain from the click URL For example:<br /><br />* app.appsflyer.com<br />* myapp.onelink.me<br />* click.mycustomdomain.com |
-| 2 | link\_path | Yes | The path of the click URL not including a leading backslash.  <br />**app-id** for single platform links or **template-id** for OneLink |
-| 3 | pid | Yes |  |
-| 4 | af\_prt | No |  |
-| 5 | af\_siteid | Yes |  |
-| 6 | clickid | Yes | A one-time unique identifier of the click |
-| 7 | expires | Yes | click expiration |
-| 8 | af\_engagement\_type | No |  |
-| 9 | af\_click\_lookback | No |  |
-| 10 | af\_viewthrough\_lookback | No |  |
-| 11 | af\_reengagement\_window | No |  |
-| 12 | is\_retargeting | No |  |
-| 13 | af\_ip | No |  |
-| 14 | advertising\_id | No |  |
-| 15 | oaid | No |  |
-| 16 | fire\_advertising\_id | No |  |
-| 17 | idfa | No |  |
-| 18 | idfv | No |  |
-
-8
-
-#### Configure circuit breaker curl example and response
+<Accordion title="Configure circuit breaker curl example and response">
 
 **Curl request**
 
@@ -823,56 +641,29 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 }'
 ```
 
-#### HTTP response codes
+</Accordion>
+
+<Accordion title="HTTP response codes">
 
 #### Response codes
 
+| Code | Message | Remarks |
+| --- | --- | --- |
+| 200 | OK |  |
+| 400 | Bad request | Invalid status |
+| 401 | Not authorized | Invalid or missing authorization header |
 
-
-| Order | Parameter | Mandatory | Notes |
-| --- | --- | --- | --- |
-| 1 | link\_domain | Yes | The domain from the click URL For example:<br /><br />* app.appsflyer.com<br />* myapp.onelink.me<br />* click.mycustomdomain.com |
-| 2 | link\_path | Yes | The path of the click URL not including a leading backslash.  <br />**app-id** for single platform links or **template-id** for OneLink |
-| 3 | pid | Yes |  |
-| 4 | af\_prt | No |  |
-| 5 | af\_siteid | Yes |  |
-| 6 | clickid | Yes | A one-time unique identifier of the click |
-| 7 | expires | Yes | click expiration |
-| 8 | af\_engagement\_type | No |  |
-| 9 | af\_click\_lookback | No |  |
-| 10 | af\_viewthrough\_lookback | No |  |
-| 11 | af\_reengagement\_window | No |  |
-| 12 | is\_retargeting | No |  |
-| 13 | af\_ip | No |  |
-| 14 | advertising\_id | No |  |
-| 15 | oaid | No |  |
-| 16 | fire\_advertising\_id | No |  |
-| 17 | idfa | No |  |
-| 18 | idfv | No |  |
-
-9
+</Accordion>
 
 ### Get configuration method
 
-#### Get configuration basics
+<Accordion title="Get configuration basics">
 
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>GET</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Returns in a JSON</td></tr></tbody></table>
 
+</Accordion>
 
-| API method | Remarks |
-| --- | --- |
-| [Generate secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-post) | Generate secret keys to be used in the signature. |
-| [Revoke secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-delete) | Cancel compromised secret keys. |
-| [Test](https://dev.appsflyer.com/hc/reference/click-signing-test-post) | Send single clicks for testing the signature. |
-| [Configure mode](https://dev.appsflyer.com/hc/reference/click-signing-config-update-put) | Configure mode of click signing mode: <br /><br />* **disabled** (default): No click signature validation is done.<br />* **report-only** (testing mode): AppsFlyer validates click signatures, but doesn't block clicks with invalid signatures. The ad network can use the **R****eport API** to get statistics on successful/failing clicks. Use this to test click signing without impacting production and real traffic.<br />* **enabled:** AppsFlyer blocks clicks with invalid or missing signatures. |
-| [Configure circuit breaker](https://dev.appsflyer.com/hc/reference/click-signing-config-circuit-breaker-put) | Configure the mode of the circuit breaker that protects the ad network from having too many blocked clicks:<br /><br />* **enabled** (default): If the Protect360 system detects that too many clicks are marked as invalid, then in order to protect the ad network from having potentially incorrectly blocked clicks:<br />  * Configure mode API changes to report-only.<br />  * And email alert is sent to the ad network to verify the click signing API is correctly set up.<br />* **disabled**: Protect360 continues to block all clicks marked as invalid, even when the block percentage is unusually high. |
-| [Get configuration](https://dev.appsflyer.com/hc/reference/click-signing-config-get) | Get the mode and IDs of active secret keys. |
-| [Report](https://dev.appsflyer.com/hc/reference/click-signing-report-get) | Get the last 3 days statistics on successful and failing clicks when the system is in **report-only** or **enabled** mode. Use this to test click signing without impacting production and real traffic. |
-| [Exclude app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add) | Configure app IDs to be excluded from click signing. |
-| [Remove excluded app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete) | Configure app IDs to be included in click signing after being excluded. |
-
-0
-
-#### API request
+<Accordion title="API request">
 
 **Method**
 
@@ -880,25 +671,20 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 GET https://hq1.appsflyer.com/api/p360-click-signing/config
 ```
 
-#### JSON response
+</Accordion>
 
+<Accordion title="JSON response">
 
-
-| API method | Remarks |
+| **Key** | **Description** |
 | --- | --- |
-| [Generate secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-post) | Generate secret keys to be used in the signature. |
-| [Revoke secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-delete) | Cancel compromised secret keys. |
-| [Test](https://dev.appsflyer.com/hc/reference/click-signing-test-post) | Send single clicks for testing the signature. |
-| [Configure mode](https://dev.appsflyer.com/hc/reference/click-signing-config-update-put) | Configure mode of click signing mode: <br /><br />* **disabled** (default): No click signature validation is done.<br />* **report-only** (testing mode): AppsFlyer validates click signatures, but doesn't block clicks with invalid signatures. The ad network can use the **R****eport API** to get statistics on successful/failing clicks. Use this to test click signing without impacting production and real traffic.<br />* **enabled:** AppsFlyer blocks clicks with invalid or missing signatures. |
-| [Configure circuit breaker](https://dev.appsflyer.com/hc/reference/click-signing-config-circuit-breaker-put) | Configure the mode of the circuit breaker that protects the ad network from having too many blocked clicks:<br /><br />* **enabled** (default): If the Protect360 system detects that too many clicks are marked as invalid, then in order to protect the ad network from having potentially incorrectly blocked clicks:<br />  * Configure mode API changes to report-only.<br />  * And email alert is sent to the ad network to verify the click signing API is correctly set up.<br />* **disabled**: Protect360 continues to block all clicks marked as invalid, even when the block percentage is unusually high. |
-| [Get configuration](https://dev.appsflyer.com/hc/reference/click-signing-config-get) | Get the mode and IDs of active secret keys. |
-| [Report](https://dev.appsflyer.com/hc/reference/click-signing-report-get) | Get the last 3 days statistics on successful and failing clicks when the system is in **report-only** or **enabled** mode. Use this to test click signing without impacting production and real traffic. |
-| [Exclude app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add) | Configure app IDs to be excluded from click signing. |
-| [Remove excluded app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete) | Configure app IDs to be included in click signing after being excluded. |
+| mode | One of:<ul><li>enabled</li><li>disabled</li><li>report-only</li></ul> |
+| circuit-breaker-config | A JSON object containing **status**, one of:<ul><li>enabled</li><li>disabled</li></ul> |
+| active-key-ids | A JSON array holding active keys:<ul><li>**secret-key-id**: Randomly-generated ID of the secret key</li><li>**expiration**: Epoch time in milliseconds of the secret key</li></ul> |
+| excluded-app-ids | A JSON array with excluded app-ids |
 
-1
+</Accordion>
 
-#### Get configuration curl example and response
+<Accordion title="Get configuration curl example and response">
 
 **Curl request**
 
@@ -925,47 +711,28 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 }
 ```
 
-#### HTTP response codes
+</Accordion>
+
+<Accordion title="HTTP response codes">
 
 #### Response codes
 
+| Code | Message | Remarks |
+| --- | --- | --- |
+| 200 | OK |  |
+| 401 | Not authorized | Invalid or missing authorization header |
 
-
-| API method | Remarks |
-| --- | --- |
-| [Generate secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-post) | Generate secret keys to be used in the signature. |
-| [Revoke secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-delete) | Cancel compromised secret keys. |
-| [Test](https://dev.appsflyer.com/hc/reference/click-signing-test-post) | Send single clicks for testing the signature. |
-| [Configure mode](https://dev.appsflyer.com/hc/reference/click-signing-config-update-put) | Configure mode of click signing mode: <br /><br />* **disabled** (default): No click signature validation is done.<br />* **report-only** (testing mode): AppsFlyer validates click signatures, but doesn't block clicks with invalid signatures. The ad network can use the **R****eport API** to get statistics on successful/failing clicks. Use this to test click signing without impacting production and real traffic.<br />* **enabled:** AppsFlyer blocks clicks with invalid or missing signatures. |
-| [Configure circuit breaker](https://dev.appsflyer.com/hc/reference/click-signing-config-circuit-breaker-put) | Configure the mode of the circuit breaker that protects the ad network from having too many blocked clicks:<br /><br />* **enabled** (default): If the Protect360 system detects that too many clicks are marked as invalid, then in order to protect the ad network from having potentially incorrectly blocked clicks:<br />  * Configure mode API changes to report-only.<br />  * And email alert is sent to the ad network to verify the click signing API is correctly set up.<br />* **disabled**: Protect360 continues to block all clicks marked as invalid, even when the block percentage is unusually high. |
-| [Get configuration](https://dev.appsflyer.com/hc/reference/click-signing-config-get) | Get the mode and IDs of active secret keys. |
-| [Report](https://dev.appsflyer.com/hc/reference/click-signing-report-get) | Get the last 3 days statistics on successful and failing clicks when the system is in **report-only** or **enabled** mode. Use this to test click signing without impacting production and real traffic. |
-| [Exclude app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add) | Configure app IDs to be excluded from click signing. |
-| [Remove excluded app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete) | Configure app IDs to be included in click signing after being excluded. |
-
-2
+</Accordion>
 
 ### Report method
 
-#### Report basics
+<Accordion title="Report basics">
 
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>GET</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/report</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Returns in a CSV</td></tr></tbody></table>
 
+</Accordion>
 
-| API method | Remarks |
-| --- | --- |
-| [Generate secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-post) | Generate secret keys to be used in the signature. |
-| [Revoke secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-delete) | Cancel compromised secret keys. |
-| [Test](https://dev.appsflyer.com/hc/reference/click-signing-test-post) | Send single clicks for testing the signature. |
-| [Configure mode](https://dev.appsflyer.com/hc/reference/click-signing-config-update-put) | Configure mode of click signing mode: <br /><br />* **disabled** (default): No click signature validation is done.<br />* **report-only** (testing mode): AppsFlyer validates click signatures, but doesn't block clicks with invalid signatures. The ad network can use the **R****eport API** to get statistics on successful/failing clicks. Use this to test click signing without impacting production and real traffic.<br />* **enabled:** AppsFlyer blocks clicks with invalid or missing signatures. |
-| [Configure circuit breaker](https://dev.appsflyer.com/hc/reference/click-signing-config-circuit-breaker-put) | Configure the mode of the circuit breaker that protects the ad network from having too many blocked clicks:<br /><br />* **enabled** (default): If the Protect360 system detects that too many clicks are marked as invalid, then in order to protect the ad network from having potentially incorrectly blocked clicks:<br />  * Configure mode API changes to report-only.<br />  * And email alert is sent to the ad network to verify the click signing API is correctly set up.<br />* **disabled**: Protect360 continues to block all clicks marked as invalid, even when the block percentage is unusually high. |
-| [Get configuration](https://dev.appsflyer.com/hc/reference/click-signing-config-get) | Get the mode and IDs of active secret keys. |
-| [Report](https://dev.appsflyer.com/hc/reference/click-signing-report-get) | Get the last 3 days statistics on successful and failing clicks when the system is in **report-only** or **enabled** mode. Use this to test click signing without impacting production and real traffic. |
-| [Exclude app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add) | Configure app IDs to be excluded from click signing. |
-| [Remove excluded app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete) | Configure app IDs to be included in click signing after being excluded. |
-
-3
-
-#### API request
+<Accordion title="API request">
 
 **Method**
 
@@ -975,41 +742,25 @@ GET https://hq1.appsflyer.com/api/p360-click-signing/report
 
 #### Parameters
 
+<table><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>start-date</td><td>Start date and time for the report. Format: yyyy-mm-ddThh</td></tr><tr><td>end-date</td><td><span>End date and time for the report. Format: yyyy-mm-ddThh</span></td></tr><tr><td colspan="2"><span>The API requires either <strong>both</strong> start-date and end-date or <strong>neither</strong> of them. If start/end date are not provided, the report shows results for the past 24 hours.</span></td></tr></tbody></table>
 
+</Accordion>
 
-| API method | Remarks |
+<Accordion title="CSV response">
+
+| **Column** | **Description** |
 | --- | --- |
-| [Generate secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-post) | Generate secret keys to be used in the signature. |
-| [Revoke secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-delete) | Cancel compromised secret keys. |
-| [Test](https://dev.appsflyer.com/hc/reference/click-signing-test-post) | Send single clicks for testing the signature. |
-| [Configure mode](https://dev.appsflyer.com/hc/reference/click-signing-config-update-put) | Configure mode of click signing mode: <br /><br />* **disabled** (default): No click signature validation is done.<br />* **report-only** (testing mode): AppsFlyer validates click signatures, but doesn't block clicks with invalid signatures. The ad network can use the **R****eport API** to get statistics on successful/failing clicks. Use this to test click signing without impacting production and real traffic.<br />* **enabled:** AppsFlyer blocks clicks with invalid or missing signatures. |
-| [Configure circuit breaker](https://dev.appsflyer.com/hc/reference/click-signing-config-circuit-breaker-put) | Configure the mode of the circuit breaker that protects the ad network from having too many blocked clicks:<br /><br />* **enabled** (default): If the Protect360 system detects that too many clicks are marked as invalid, then in order to protect the ad network from having potentially incorrectly blocked clicks:<br />  * Configure mode API changes to report-only.<br />  * And email alert is sent to the ad network to verify the click signing API is correctly set up.<br />* **disabled**: Protect360 continues to block all clicks marked as invalid, even when the block percentage is unusually high. |
-| [Get configuration](https://dev.appsflyer.com/hc/reference/click-signing-config-get) | Get the mode and IDs of active secret keys. |
-| [Report](https://dev.appsflyer.com/hc/reference/click-signing-report-get) | Get the last 3 days statistics on successful and failing clicks when the system is in **report-only** or **enabled** mode. Use this to test click signing without impacting production and real traffic. |
-| [Exclude app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add) | Configure app IDs to be excluded from click signing. |
-| [Remove excluded app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete) | Configure app IDs to be included in click signing after being excluded. |
+| time | Date and time of the clicks. Format yyyy-mm-ddThh |
+| total\_clicks | Total number of clicks during the reporting period |
+| valid\_clicks | Number of valid clicks during the reporting period |
+| missing\_signature | Number of clicks missing signatures during the reporting period |
+| expired\_clicks | Number of expired clicks during the reporting period |
+| invalid\_signature | Number of clicks with invalid signatured during the reporting period |
+| no\_active\_secrets | Number of clicks rejected because there are no active secret keys in the system (usually when the system is in report-only mode) |
 
-4
+</Accordion>
 
-#### CSV response
-
-
-
-| API method | Remarks |
-| --- | --- |
-| [Generate secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-post) | Generate secret keys to be used in the signature. |
-| [Revoke secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-delete) | Cancel compromised secret keys. |
-| [Test](https://dev.appsflyer.com/hc/reference/click-signing-test-post) | Send single clicks for testing the signature. |
-| [Configure mode](https://dev.appsflyer.com/hc/reference/click-signing-config-update-put) | Configure mode of click signing mode: <br /><br />* **disabled** (default): No click signature validation is done.<br />* **report-only** (testing mode): AppsFlyer validates click signatures, but doesn't block clicks with invalid signatures. The ad network can use the **R****eport API** to get statistics on successful/failing clicks. Use this to test click signing without impacting production and real traffic.<br />* **enabled:** AppsFlyer blocks clicks with invalid or missing signatures. |
-| [Configure circuit breaker](https://dev.appsflyer.com/hc/reference/click-signing-config-circuit-breaker-put) | Configure the mode of the circuit breaker that protects the ad network from having too many blocked clicks:<br /><br />* **enabled** (default): If the Protect360 system detects that too many clicks are marked as invalid, then in order to protect the ad network from having potentially incorrectly blocked clicks:<br />  * Configure mode API changes to report-only.<br />  * And email alert is sent to the ad network to verify the click signing API is correctly set up.<br />* **disabled**: Protect360 continues to block all clicks marked as invalid, even when the block percentage is unusually high. |
-| [Get configuration](https://dev.appsflyer.com/hc/reference/click-signing-config-get) | Get the mode and IDs of active secret keys. |
-| [Report](https://dev.appsflyer.com/hc/reference/click-signing-report-get) | Get the last 3 days statistics on successful and failing clicks when the system is in **report-only** or **enabled** mode. Use this to test click signing without impacting production and real traffic. |
-| [Exclude app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add) | Configure app IDs to be excluded from click signing. |
-| [Remove excluded app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete) | Configure app IDs to be included in click signing after being excluded. |
-
-5
-
-#### Test curl example and response
+<Accordion title="Test curl example and response">
 
 **Curl request**
 
@@ -1020,63 +771,37 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/p360-click-signing/
 
 **CSV response**
 
+| **time** | **total\_clicks** | **valid\_clicks** | **missing\_signature** | **expired\_clicks** | **invalid\_signature** | **no\_active\_signatures** |
+| --- | --- | --- | --- | --- | --- | --- |
+| 2021-01-17T07 | 928082156 | 928082156 | 0 | 0 | 0 | 0 |
+| 2021-01-17T08 | 923796132 | 923796132 | 0 | 0 | 0 | 0 |
+| 2021-01-17T09 | 917541373 | 917541373 | 0 | 0 | 0 | 0 |
+| 2021-01-17T10 | 909977064 | 909977064 | 0 | 0 | 0 | 0 |
+| 2021-01-17T11 | 965104299 | 965104299 | 0 | 0 | 0 | 0 |
+| 2021-01-17T12 | 975134824 | 975134824 | 0 | 0 | 0 | 0 |
 
+</Accordion>
 
-| API method | Remarks |
-| --- | --- |
-| [Generate secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-post) | Generate secret keys to be used in the signature. |
-| [Revoke secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-delete) | Cancel compromised secret keys. |
-| [Test](https://dev.appsflyer.com/hc/reference/click-signing-test-post) | Send single clicks for testing the signature. |
-| [Configure mode](https://dev.appsflyer.com/hc/reference/click-signing-config-update-put) | Configure mode of click signing mode: <br /><br />* **disabled** (default): No click signature validation is done.<br />* **report-only** (testing mode): AppsFlyer validates click signatures, but doesn't block clicks with invalid signatures. The ad network can use the **R****eport API** to get statistics on successful/failing clicks. Use this to test click signing without impacting production and real traffic.<br />* **enabled:** AppsFlyer blocks clicks with invalid or missing signatures. |
-| [Configure circuit breaker](https://dev.appsflyer.com/hc/reference/click-signing-config-circuit-breaker-put) | Configure the mode of the circuit breaker that protects the ad network from having too many blocked clicks:<br /><br />* **enabled** (default): If the Protect360 system detects that too many clicks are marked as invalid, then in order to protect the ad network from having potentially incorrectly blocked clicks:<br />  * Configure mode API changes to report-only.<br />  * And email alert is sent to the ad network to verify the click signing API is correctly set up.<br />* **disabled**: Protect360 continues to block all clicks marked as invalid, even when the block percentage is unusually high. |
-| [Get configuration](https://dev.appsflyer.com/hc/reference/click-signing-config-get) | Get the mode and IDs of active secret keys. |
-| [Report](https://dev.appsflyer.com/hc/reference/click-signing-report-get) | Get the last 3 days statistics on successful and failing clicks when the system is in **report-only** or **enabled** mode. Use this to test click signing without impacting production and real traffic. |
-| [Exclude app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add) | Configure app IDs to be excluded from click signing. |
-| [Remove excluded app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete) | Configure app IDs to be included in click signing after being excluded. |
-
-6
-
-#### HTTP response codes
+<Accordion title="HTTP response codes">
 
 #### Response codes
 
+| Code | Message | Remarks |
+| --- | --- | --- |
+| 200 | OK |  |
+| 401 | Not authorized | Invalid or missing authorization header |
 
-
-| API method | Remarks |
-| --- | --- |
-| [Generate secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-post) | Generate secret keys to be used in the signature. |
-| [Revoke secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-delete) | Cancel compromised secret keys. |
-| [Test](https://dev.appsflyer.com/hc/reference/click-signing-test-post) | Send single clicks for testing the signature. |
-| [Configure mode](https://dev.appsflyer.com/hc/reference/click-signing-config-update-put) | Configure mode of click signing mode: <br /><br />* **disabled** (default): No click signature validation is done.<br />* **report-only** (testing mode): AppsFlyer validates click signatures, but doesn't block clicks with invalid signatures. The ad network can use the **R****eport API** to get statistics on successful/failing clicks. Use this to test click signing without impacting production and real traffic.<br />* **enabled:** AppsFlyer blocks clicks with invalid or missing signatures. |
-| [Configure circuit breaker](https://dev.appsflyer.com/hc/reference/click-signing-config-circuit-breaker-put) | Configure the mode of the circuit breaker that protects the ad network from having too many blocked clicks:<br /><br />* **enabled** (default): If the Protect360 system detects that too many clicks are marked as invalid, then in order to protect the ad network from having potentially incorrectly blocked clicks:<br />  * Configure mode API changes to report-only.<br />  * And email alert is sent to the ad network to verify the click signing API is correctly set up.<br />* **disabled**: Protect360 continues to block all clicks marked as invalid, even when the block percentage is unusually high. |
-| [Get configuration](https://dev.appsflyer.com/hc/reference/click-signing-config-get) | Get the mode and IDs of active secret keys. |
-| [Report](https://dev.appsflyer.com/hc/reference/click-signing-report-get) | Get the last 3 days statistics on successful and failing clicks when the system is in **report-only** or **enabled** mode. Use this to test click signing without impacting production and real traffic. |
-| [Exclude app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add) | Configure app IDs to be excluded from click signing. |
-| [Remove excluded app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete) | Configure app IDs to be included in click signing after being excluded. |
-
-7
+</Accordion>
 
 ### Exclude app method
 
-#### Exclude app method basics
+<Accordion title="Exclude app method basics">
 
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config/</span><span><span><strong>excluded-app/&lt;app-id&gt;</strong></span></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Empty</td></tr></tbody></table>
 
+</Accordion>
 
-| API method | Remarks |
-| --- | --- |
-| [Generate secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-post) | Generate secret keys to be used in the signature. |
-| [Revoke secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-delete) | Cancel compromised secret keys. |
-| [Test](https://dev.appsflyer.com/hc/reference/click-signing-test-post) | Send single clicks for testing the signature. |
-| [Configure mode](https://dev.appsflyer.com/hc/reference/click-signing-config-update-put) | Configure mode of click signing mode: <br /><br />* **disabled** (default): No click signature validation is done.<br />* **report-only** (testing mode): AppsFlyer validates click signatures, but doesn't block clicks with invalid signatures. The ad network can use the **R****eport API** to get statistics on successful/failing clicks. Use this to test click signing without impacting production and real traffic.<br />* **enabled:** AppsFlyer blocks clicks with invalid or missing signatures. |
-| [Configure circuit breaker](https://dev.appsflyer.com/hc/reference/click-signing-config-circuit-breaker-put) | Configure the mode of the circuit breaker that protects the ad network from having too many blocked clicks:<br /><br />* **enabled** (default): If the Protect360 system detects that too many clicks are marked as invalid, then in order to protect the ad network from having potentially incorrectly blocked clicks:<br />  * Configure mode API changes to report-only.<br />  * And email alert is sent to the ad network to verify the click signing API is correctly set up.<br />* **disabled**: Protect360 continues to block all clicks marked as invalid, even when the block percentage is unusually high. |
-| [Get configuration](https://dev.appsflyer.com/hc/reference/click-signing-config-get) | Get the mode and IDs of active secret keys. |
-| [Report](https://dev.appsflyer.com/hc/reference/click-signing-report-get) | Get the last 3 days statistics on successful and failing clicks when the system is in **report-only** or **enabled** mode. Use this to test click signing without impacting production and real traffic. |
-| [Exclude app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add) | Configure app IDs to be excluded from click signing. |
-| [Remove excluded app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete) | Configure app IDs to be included in click signing after being excluded. |
-
-8
-
-#### API request
+<Accordion title="API request">
 
 **Method**
 
@@ -1086,23 +811,13 @@ POST https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app-i
 
 #### Parameters
 
-
-
-| API method | Remarks |
+| Parameter | Description |
 | --- | --- |
-| [Generate secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-post) | Generate secret keys to be used in the signature. |
-| [Revoke secret key](https://dev.appsflyer.com/hc/reference/click-signing-secret-delete) | Cancel compromised secret keys. |
-| [Test](https://dev.appsflyer.com/hc/reference/click-signing-test-post) | Send single clicks for testing the signature. |
-| [Configure mode](https://dev.appsflyer.com/hc/reference/click-signing-config-update-put) | Configure mode of click signing mode: <br /><br />* **disabled** (default): No click signature validation is done.<br />* **report-only** (testing mode): AppsFlyer validates click signatures, but doesn't block clicks with invalid signatures. The ad network can use the **R****eport API** to get statistics on successful/failing clicks. Use this to test click signing without impacting production and real traffic.<br />* **enabled:** AppsFlyer blocks clicks with invalid or missing signatures. |
-| [Configure circuit breaker](https://dev.appsflyer.com/hc/reference/click-signing-config-circuit-breaker-put) | Configure the mode of the circuit breaker that protects the ad network from having too many blocked clicks:<br /><br />* **enabled** (default): If the Protect360 system detects that too many clicks are marked as invalid, then in order to protect the ad network from having potentially incorrectly blocked clicks:<br />  * Configure mode API changes to report-only.<br />  * And email alert is sent to the ad network to verify the click signing API is correctly set up.<br />* **disabled**: Protect360 continues to block all clicks marked as invalid, even when the block percentage is unusually high. |
-| [Get configuration](https://dev.appsflyer.com/hc/reference/click-signing-config-get) | Get the mode and IDs of active secret keys. |
-| [Report](https://dev.appsflyer.com/hc/reference/click-signing-report-get) | Get the last 3 days statistics on successful and failing clicks when the system is in **report-only** or **enabled** mode. Use this to test click signing without impacting production and real traffic. |
-| [Exclude app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add) | Configure app IDs to be excluded from click signing. |
-| [Remove excluded app](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-delete) | Configure app IDs to be included in click signing after being excluded. |
+| app-id | Application ID to be excluded from click signing validation |
 
-9
+</Accordion>
 
-#### Exclude app curl example
+<Accordion title="Exclude app curl example">
 
 **Curl request**
 
@@ -1111,27 +826,28 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/p360-click-signing
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
 
-#### HTTP response codes
+</Accordion>
+
+<Accordion title="HTTP response codes">
 
 #### Response codes
 
+| Code | Message | Remarks |
+| --- | --- | --- |
+| 200 | OK |  |
+| 401 | Not authorized | Invalid or missing authorization header |
 
-
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=&lt;ttlHours&gt;</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Secret key returns in a JSON</td></tr><tr><td> </td><td>Request limit</td><td>Maximum of 2 active secret keys at a time</td></tr></tbody></table>
-
-0
+</Accordion>
 
 ### Remove excluded app method
 
-#### Remove excluded app method basics
+<Accordion title="Remove excluded app method basics">
 
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>DELETE</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/config/</span><span><span><strong>excluded-app/&lt;app-id&gt;</strong></span></span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Empty</td></tr></tbody></table>
 
+</Accordion>
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=&lt;ttlHours&gt;</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Secret key returns in a JSON</td></tr><tr><td> </td><td>Request limit</td><td>Maximum of 2 active secret keys at a time</td></tr></tbody></table>
-
-1
-
-#### API request
+<Accordion title="API request">
 
 **Method**
 
@@ -1141,13 +857,13 @@ DELETE https://hq1.appsflyer.com/api/p360-click-signing/config/excluded-app/<app
 
 #### Parameters
 
+| Parameter | Description |
+| --- | --- |
+| app-id | Application ID to be removed from the list of apps excluded from click signing validation |
 
+</Accordion>
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=&lt;ttlHours&gt;</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Secret key returns in a JSON</td></tr><tr><td> </td><td>Request limit</td><td>Maximum of 2 active secret keys at a time</td></tr></tbody></table>
-
-2
-
-#### Remove excluded app curl example
+<Accordion title="Remove excluded app curl example">
 
 **Curl request**
 
@@ -1156,17 +872,20 @@ curl --location --request DELETE 'https://hq1.appsflyer.com/api/p360-click-signi
 -H 'Authorization: Bearer {API V2.0 token available to the admin in the dashboard.}'
 ```
 
-#### HTTP response codes
+</Accordion>
+
+<Accordion title="HTTP response codes">
 
 #### Response codes
 
+| Code | Message | Remarks |
+| --- | --- | --- |
+| 200 | OK |  |
+| 401 | Not authorized | Invalid or missing authorization header |
 
+</Accordion>
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=&lt;ttlHours&gt;</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Secret key returns in a JSON</td></tr><tr><td> </td><td>Request limit</td><td>Maximum of 2 active secret keys at a time</td></tr></tbody></table>
-
-3
-
-## Code sample
+<Accordion title="Code sample">
 
 ```
 package sign;
@@ -1185,7 +904,6 @@ String clickUrl = "https://app.appsflyer.com/com.app.id?pid=adnetwork_int&c=my_c
 String secretKey = "secret_key"; 
 int ttlMinutes = 5;
 
-
 //add expiration to the click URL
 long expiration = System.currentTimeMillis() + (60000L * ttlMinutes);
 clickUrl += "&expires="+expiration;
@@ -1203,9 +921,13 @@ Base64.getUrlEncoder().withoutPadding().encodeToString(mac.doFinal(clickUrl.getB
 String signedClickUrl = clickUrl + "&signature=" + generatedSignature;
 ```
 
+</Accordion>
+
+</Accordion>
+
 ## Additional information
 
-### Troubleshooting
+<Accordion title="Troubleshooting">
 
 AppsFlyer stops click signature validation and reverts to the report-only mode when more than 90% of clicks in an hour fail signature validation.
 
@@ -1221,18 +943,25 @@ This is to protect your business from a potential technical issue and allows you
   2. Fix the click signing process on your side.
   3. Check the results in the [click signing report](/docs/click-signing-for-ad-networks#report-method) and re-enable click-signing validation when you see that clicks are being validated as expected.
 
-### FAQ
+</Accordion>
 
+<Accordion title="FAQ">
 
+| **Q: How can we test click signing without impacting production?**<br /><br />**A**: There are two ways to test click signing:<ol><li>Use the [test API](/docs/click-signing-for-ad-networks#test-method). This method is useful during the development phase, to test the signatures of single clicks.</li><li>Use report-only mode. Report-only mode verifies the signatures on the production clicks and shows you what would be blocked, but doesn't block invalid clicks. Therefore, you can test that click signing works without impacting real traffic.</li></ol> |
+| --- |
+| **Q: What is the difference between an API token and a secret-key?**<br /><br />**A**: **API token**: Is used to authorize and run the click signing API. There is only one per ad network. The [AppsFlyer API V2.0 token](/docs/managing-appsflyer-tokens) must be obtained from the admin<br /><br />**Secret key**: Is used to generate the signature. Use the [generate secret key method](/docs/click-signing-for-ad-networks#generate-secret-key-method) to create secret keys. The ad network is responsible for generating new secret keys. See the [traits section](/docs/click-signing-for-ad-networks#traits) for more information. |
+| **Q: Can we apply click signing to only certain campaigns?**<br /><br />**A**: No. Click signing is applied to all clicks from an ad network. You can exclude certain apps from click signing, but you can’t exclude only certain campaigns. |
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=&lt;ttlHours&gt;</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Secret key returns in a JSON</td></tr><tr><td> </td><td>Request limit</td><td>Maximum of 2 active secret keys at a time</td></tr></tbody></table>
+</Accordion>
 
-4
+<div id="traits" />
 
-### Traits
+<Accordion title="Traits">
 
+| Trait | Description |
+| --- | --- |
+| Click signature | The signature must occur on the ad network servers. |
+| Secret key | <ul><li>Ad networks can have a maximum of two secret keys active simultaneously.</li><li>Each secret key has an expiration.</li><li>Clicks signed with expired secret keys are rejected.</li></ul> |
+| Report API | Updated statistics of click validity are aggregated on an hourly basis. |
 
-
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>POST</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/p360-click-signing/secret?ttlHours=&lt;ttlHours&gt;</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>The admin gets the token in the dashboard as follows:  <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a> </li></ul></td></tr><tr><td>Response</td><td>Results</td><td>Secret key returns in a JSON</td></tr><tr><td> </td><td>Request limit</td><td>Maximum of 2 active secret keys at a time</td></tr></tbody></table>
-
-5
+</Accordion>

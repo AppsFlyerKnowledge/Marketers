@@ -40,13 +40,12 @@ These events are also relevant for entertainment apps that run on the following 
 
 > 📘 **Important!**
 >
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
+> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=entertainment). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
 > * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=entertainment&view=code) for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the [**AppsFlyer developer hub**](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions)**.**
+> * Detailed instructions for your developer can be found in the [**AppsFlyer developer hub**](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).
 >
 > For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
-
 
 [![Flowchart_for_recommended_events entertainment_app_user_journey](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)
 
@@ -54,7 +53,9 @@ These events are also relevant for entertainment apps that run on the following 
 
 The following section provides a list of event structures that are typical to the entertainment vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Complete registration (af\_complete\_registration)
+<div id="complete-registration-af_complete_registration" />
+
+<Accordion title="Complete registration (af_complete_registration)">
 
 **Purpose**
 
@@ -66,15 +67,15 @@ When the user completes the signup process
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_registration\_method | Method the user chooses to sign up with | Facebook, Google, email |
 
+</Accordion>
 
+<div id="login-af_login" />
 
-### Login (af\_login)
+<Accordion title="Login (af_login)">
 
 **Purpose**
 
@@ -88,7 +89,11 @@ When the user successfully logs in
 
 Can be sent without any additional parameters
 
-### Start trial (af\_start\_trial)
+</Accordion>
+
+<div id="start-trial-af_start_trial" />
+
+<Accordion title="Start trial (af_start_trial)">
 
 **Purpose**
 
@@ -106,20 +111,20 @@ When the user opts-in and activates the trial period
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | trial\_method | Method to activate the trial | Free with a new phone, free with a carrier, promotion, coupon code |
 | trial\_method\_identifier | Identifier of the trial method | Name of carrier, for example, **Vodafone**<br /><br />Name of the partner, for example, **Meta ads**<br /><br />Coupon code, for example, **TRA123** |
 
-
 > 📘 **Note**
 >
 > If you are mapping this event to the Meta ads StartTrial event, and want to associate revenue, use the af\_price parameter instead of the af\_revenue parameter.
 
+</Accordion>
 
-### Subscription (af\_subscribe)
+<div id="subscription-af_subscribe" />
+
+<Accordion title="Subscription (af_subscribe)">
 
 **Purpose**
 
@@ -138,25 +143,23 @@ See our Subscription attribution—Overview for more information.
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | new\_subscription | Whether the subscription is new or renewed | true / false |
 | af\_coupon\_code | Coupon code, if one is used during the subscription | 3MonthsSubscription |
 | coupon\_code\_value | How much the coupon deducts from the initial price | 10% |
-| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Revenue associated with the subscription | 5.95 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Revenue associated with the subscription | 5.95 |
 | af\_currency | Currency of the payment for the subscription | USD |
 | subscription\_method | Payment method used in the subscription | credit card, e-wallet, PayPal |
 | expiration\_date | Expiration date of the subscription | 2018/07/18 |
 
-
+</Accordion>
 
 ## Recommended structures for custom events
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Media play (media\_play)
+<Accordion title="Media play (media_play)">
 
 **Purpose**
 
@@ -174,8 +177,6 @@ After a predefined number, for example, 2 minutes, of streamed content.
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_content\_type | Type of content that is streamed | tv show, music |
@@ -184,9 +185,9 @@ After a predefined number, for example, 2 minutes, of streamed content.
 | media\_duration | Total duration of the media, for example, the total length of a video. | 5 |
 | language | Language of the content | en-us, fr, es |
 
+</Accordion>
 
-
-### Media minutes (media\_minutes)
+<Accordion title="Media minutes (media_minutes)">
 
 **Purpose**
 
@@ -204,8 +205,6 @@ One of the following:
 
 **Event parameters**
 
-
-
 | Name | Description | Example  value |
 | --- | --- | --- |
 | minutes\_consumed | Number of minutes the user engaged with the media. For example, the total length of a video might be 5 minutes, but a user might only watch 3 minutes. | 3 |
@@ -215,9 +214,9 @@ One of the following:
 | media\_duration | Total duration of the media, for example, the total length of a video. | 5 |
 | language | Language of the content | en-us, fr, es |
 
+</Accordion>
 
-
-### Media downloaded (media\_downloaded)
+<Accordion title="Media downloaded (media_downloaded)">
 
 **Purpose**
 
@@ -229,8 +228,6 @@ When a user starts downloading media
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_content\_type | Type of content | tv show, music |
@@ -239,9 +236,9 @@ When a user starts downloading media
 | media\_duration | Total duration of the media, for example, the total length of a video. | 5 |
 | language | Language of the content | en-us, fr, es |
 
+</Accordion>
 
-
-### Media saved (media\_saved)
+<Accordion title="Media saved (media_saved)">
 
 **Purpose**
 
@@ -253,8 +250,6 @@ Whenever media is saved on the user's device
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_content\_type | Type of content | tv show, music |
@@ -262,3 +257,5 @@ Whenever media is saved on the user's device
 | af\_content | Title of the content, for example, the song name or the title and episode of a tv show | Title of content |
 | media\_duration | Total duration of the media, for example, the total length of a video. | 5 |
 | language | Language of the content | en-us, fr, es |
+
+</Accordion>

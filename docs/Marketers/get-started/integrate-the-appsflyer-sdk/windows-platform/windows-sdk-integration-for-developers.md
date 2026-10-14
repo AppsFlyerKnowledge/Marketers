@@ -34,7 +34,6 @@ You can record installs, updates, and sessions (by following the mandatory steps
 >
 > The AppsFlyer Windows SDK is compatible with all [Universal Windows Platform](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide) (UWP) devices, including Windows mobile phones, PC, HoloLens, and Surface hub.
 
-
 ## 1. Integration steps
 
 The Windows Universal SDK is installed via the NuGet Package Manager. To install the AppsFlyer Windows SDK via Nuget:
@@ -65,7 +64,6 @@ If you choose to not use the NuGet package you can embed the AppsFlyer SDK into 
 >
 > * In Visual Studio, right-click References and select NuGet Package Newtonsoft.json and add it.
 > * Allow Internet access in the app manifest, or use Visual Studio in the Capabilities tab.
-
 
 ## 2. SDK initialization & installation event (minimum requirement for attributing)
 
@@ -125,7 +123,6 @@ public void TrackEvent(string eventName, IDictionary<string, Object> eventValues
 >       eventValues.Add(AppsFlyerLib.AFInAppEventParameterName.CURRENCY, "USD");
 >       tracker.TrackEvent(AppsFlyerLib.AFInAppEventType.ADD_TO_CART, eventValues);
 > ```
-
 
 ### Recording events asynchronously
 

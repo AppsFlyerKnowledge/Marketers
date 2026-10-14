@@ -202,7 +202,7 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 
 > 📘 **Tip**
 >
-> You can also configure your in-app event postbacks to send net revenue in place of gross revenue in the standard revenue (monetary**)** parameter. To get access to this configuration, contact your Customer Success Manager (CSM).
+> You can also configure your in-app event postbacks to send net revenue in place of gross revenue in the standard revenue (monetary) parameter. To get access to this configuration, contact your Customer Success Manager (CSM).
 
 **Example**
 
@@ -337,7 +337,7 @@ Marketers can allow ad networks to map the events on their own. To do so, a mark
 
 ![Allow to configure in-app event postbacks permission toggle for an ad network](https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png)
 
-Once the ad network has received the permissions, it can map the events by following the instructions in the[Type Event ID Into Text Field](#h_01HBZCRNKG4EF9MSY696SD5VQ9).
+Once the ad network has received the permissions, it can map the events by following the instructions in the[Type Event ID Into Text Field](#mapping-methods).
 
 ## Event mapping by agencies
 

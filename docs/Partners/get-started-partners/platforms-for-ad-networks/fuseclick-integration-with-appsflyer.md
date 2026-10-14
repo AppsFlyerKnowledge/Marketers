@@ -26,7 +26,7 @@ x-zendesk:
 
 Below you can find the base attribution link with a detailed explanation per each parameter:
 
-```http
+```
 https://app.appsflyer.com/app_id?pid=mediaName_int&c={campaign}
 ```
 
@@ -50,7 +50,7 @@ For complete FuseClick macro list [click here](https://support.fuseclick.com/doc
 
 Complete Attribution Link Template:
 
-```http
+```
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={TID}&af_siteid={ADV_SID}
 ```
 
@@ -58,7 +58,7 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={TID}&af_sitei
 
 Global Install Postback:
 
-```html
+```
 https://tracking.zadsmobile.com/pb?tid={TID}
 ```
 
@@ -66,5 +66,5 @@ Additional attribution information can be added to the postback by request such 
 
 ## Finalizing your registration
 
-- If you have an integration with AppsFlyer, contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
-- If you don't have an integration with AppsFlyer, complete the ad Partners Registration application [here](https://www.appsflyer.com/partners-registration/).
+* If you have an integration with AppsFlyer, contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
+* If you don't have an integration with AppsFlyer, complete the ad Partners Registration application [here](https://www.appsflyer.com/partners-registration/).

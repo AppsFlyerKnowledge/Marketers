@@ -23,22 +23,12 @@ x-zendesk:
   created_at: '2016-09-01T09:36:27Z'
   edited_at: '2025-04-05T12:52:44Z'
 ---
-A media source is an entity that displays ads. The AppsFlyer platform enables attribution recording from different types of media sources.
+A media source is an entity that displays ads. The AppsFlyer platform enables attribution recording from different types of media sources.
 
 | Type of media source | Description |
 | --- | --- |
-| [Self-reporting network (SRN)](/docs/self-reporting-networks-srns) | - Provide attribution confirmation and details via an API between AppsFlyer and the network<br />- Examples: Meta ads, Google, Apple Search Ads |
-| Non-SRN | - Provide attribution information contained in a click URL.  <br />- Also known as [attribution-link network](/docs/set-up-an-integrated-partner) or ad network.<br />- Examples: Unity Ads, Tapjoy, Applovin |
-| Owned media | - Owned media use [OneLink links](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink) for campaigns.<br />- Examples: Email, SMS, social networks, landing pages, QR codes, and so on. |
+| [Self-reporting network (SRN)](/docs/self-reporting-networks-srns) | <ul><li>Provide attribution confirmation and details via an API between AppsFlyer and the network</li><li>Examples: Meta ads, Google, Apple Search Ads</li></ul> |
+| Non-SRN | <ul><li>Provide attribution information contained in a click URL.</li><li>Also known as [attribution-link network](/docs/set-up-an-integrated-partner) or ad network.</li><li>Examples: Unity Ads, Tapjoy, Applovin</li></ul> |
+| Owned media | <ul><li>Owned media use [OneLink links](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink) for campaigns.</li><li>Examples: Email, SMS, social networks, landing pages, QR codes, and so on.</li></ul> |
 
-<Cards>
-  <Card title="Cross-promotion attribution" href="/docs/cross-promotion-attribution-for-marketers" icon="fa-solid fa-diagram-project">
-    Learn about attributing users who are cross-promoted from one of your apps to another.
-  </Card>
-  <Card title="User invite attribution" href="/docs/user-invite-attribution" icon="fa-solid fa-diagram-project">
-    Understand how to attribute new installs generated from existing user invitations.
-  </Card>
-  <Card title="Smart Banners" href="/docs/smart-banners-mobile-web-to-app-for-marketers" icon="fa-solid fa-globe">
-    Discover how to convert web visitors into mobile app users using Smart Banners.
-  </Card>
-</Cards>
+See also: [cross-promotion attribution](/docs/cross-promotion-attribution-for-marketers), [user invite attribution](/docs/user-invite-attribution), and [Smart Banners](/docs/smart-banners-mobile-web-to-app-for-marketers)

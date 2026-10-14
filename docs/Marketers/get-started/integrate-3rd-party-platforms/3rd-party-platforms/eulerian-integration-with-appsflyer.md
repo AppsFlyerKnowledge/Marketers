@@ -22,7 +22,7 @@ x-zendesk:
   created_at: '2018-10-02T08:41:24Z'
   edited_at: '2026-06-16T09:54:27Z'
 ---
-> ❗️ Important!
+> 📘 **Important!**
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
@@ -32,31 +32,25 @@ x-zendesk:
 
 **To set up a new integration:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
-
-( **To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.
-
-> 📘 Note
->
-> The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below.
 
 Eulerian's configuration window includes 4 tabs: **Integration, Attribution link, Data Enrichment**, and **Permissions**. Click on the items below to read about the tab setup.
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/user-level-data-retention).
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
 
 ### Activate partner
 
-On the **first visit** here, you will need to toggle ON the _**Activate Partner**_ button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.
-
+On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation, click [here](/docs/partner-activation-deactivation).
 
 ### General settings
@@ -69,8 +63,8 @@ Eulerian connects with AppsFlyer via a unique Host ID. If you don't already have
 
 Perform the following steps, as required:
 
-- Enter the **HostID**
-- Toggle **Enable** to send all installs to Eurlerian
+* Enter the **HostID**
+* Toggle **Enable** to send all installs to Eurlerian
 
 ### Default postbacks
 
@@ -88,36 +82,44 @@ In this section you can map your AppsFlyer events with Eulerian via postbacks.
 
 1. Enter the HostID again.
 2. Toggle In-App Event Postbacks to ON
-3. Select the Sending Option for all SDK-defined events.
-
-**- Only events attributed to this partner** for events coming **only** from users attributed to this partner
-
-**- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
+3. Select the Sending Option for all SDK-defined events.  
+   **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
+   **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
 4. Click **Add Event** to add an SDK Event to the list
 5. Complete the following parameters:
 
 | Parameter Name | Description |
 | --- | --- |
-| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.<br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner Event Identifier** | The unique name or ID of each event as defined on Eulerian's side.<br />Obtain the corresponding Event ID from Eulerian and set in the text field. |
-| **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af_revenue** parameter.<br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
+| **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
+| **Partner Event Identifier** | The unique name or ID of each event as defined on Eulerian's side.  <br />Obtain the corresponding Event ID from Eulerian and set in the text field. |
+| **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
 6. Click **Save**.
 
 Once saved, AppsFlyer begins sending data to Eulerian for every organic and non-organic install.
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Attribution Links are not available for Eulerian.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost is not supported in the integration with Eulerian.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with Eulerian.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions are not available for Eulerian.
+
+</Accordion>

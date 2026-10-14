@@ -78,7 +78,7 @@ The install postback includes only the touchpoint details (media source, campaig
 
 <Accordion title="3. Set default postbacks">
 
-AppsFlyer can send automatic postbacks to GA4 following user installs, including both installs and re-engagements (including re-attributions). Re-engagements occur when a user who already has the app installed opens it after clicking a campaign link. Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default%20postbacks).
+AppsFlyer can send automatic postbacks to GA4 following user installs, including both installs and re-engagements (including re-attributions). Re-engagements occur when a user who already has the app installed opens it after clicking a campaign link. Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default-postbacks).
 
 </Accordion>
 
@@ -94,16 +94,14 @@ In the **Integration** tab, map AppsFlyer in-app events to Google Analytics (GA4
 1. Turn on **In-app event postbacks**.
 2. Click **Add event** to add an SDK event to the list. The following table describes the fields to complete:
 
-   
-
 | Parameter name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received from the AppsFlyer SDK integrated into your app.<br /><br />**Tip**: Don't see the event you are looking for?<br /><br />* Make sure to activate the event on a device with a non-organic installation, and recheck.<br />* Type it in **AppsFlyer event**, then click **Create custom**.<br /><br />Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<br /><br />* **Text field:** Get the corresponding event ID from the partner.<br />* **Drop-down box:** Select the most suitable pre-defined AppsFlyer event.<br />* **As is**: Send the events as they are, without name mapping. |
-| **for users from** | Select the sending option for the event:<br /><br />* **All media sources including organic**: Send postbacks for events attributed to any partner, as well as organic events. |
-| **including** | * **No data (default)**: Send only the event itself without any event values.<br />* **Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).<br />* **Values without revenue**: Send all the parameters **excluding** the revenue value. |
+| **AppsFlyer event** | The name of the event, as received from the AppsFlyer SDK integrated into your app.<br /><br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation, and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**.</li></ul>Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
+| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
+| **for users from** | Select the sending option for the event:<ul><li>**All media sources including organic**: Send postbacks for events attributed to any partner, as well as organic events.</li></ul> |
+| **including** | <ul><li>**No data (default)**: Send only the event itself without any event values.</li><li>**Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: Send all the parameters **excluding** the revenue value.</li></ul> |
 
-3. [Optional] Click the **Add condition** icon (![condition-2.png](https://files.readme.io/959329be2b1286507b5c87b033785e91ab135592ae37cf3200539400832490c0-25709762755857.png)) to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
+3. [Optional] Click the **Add condition** icon (![condition-2.png](https://files.readme.io/959329be2b1286507b5c87b033785e91ab135592ae37cf3200539400832490c0-25709762755857.png)) to [set conditions](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks) for an event.
 4. Click **Save integration**.
 5. Send the event postback mapping
 
@@ -118,7 +116,7 @@ After you have set up the in-app event mapping, send your developer a table wher
 
 **Important!**
 
-Don’t use any of the [Google reserved events](#h_01HZQ4ABBN6ZEB7RJQMFS0AB73) as names for custom Google Analytics events.
+Don’t use any of the [Google reserved events](#reserved-google-event-names) as names for custom Google Analytics events.
 
 * **AF event parameters (MANDATORY):** Predefined AppsFlyer event parameters that must be included in the event postback sent to Google Analytics.
 

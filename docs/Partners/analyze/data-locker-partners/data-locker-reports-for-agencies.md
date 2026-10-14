@@ -26,10 +26,10 @@ x-zendesk:
 
 The following data-sharing principles apply:
 
-- **Non-organic data:** Must be attributed to you. We use the af_prt field to determine the traffic attributed to you.
-- **Organic data**: Requires explicit advertiser permission.
-- **Data Locker**: A subscription is not required for advertisers.
-- [Coming soon] Non-organic data attributed to other partners.
+* **Non-organic data:** Must be attributed to you. We use the af\_prt field to determine the traffic attributed to you.
+* **Organic data**: Requires explicit advertiser permission.
+* **Data Locker**: A subscription is not required for advertisers.
+* [Coming soon] Non-organic data attributed to other partners.
 
 ### Permissions required per report (granted by the advertiser)
 
@@ -38,16 +38,11 @@ The permissions required per report are listed in the table that follows. You, t
 **To grant permission to an agency by an advertiser:**
 
 1. This procedure must be performed by an advertiser team member having the necessary permissions.
-2. In AppsFlyer, go to **Collaborate** > **Integration Partners**.
+2. In AppsFlyer, go to **Collaborate** > **Integration Partners**.
 3. Select the integration partner (agency).
 4. Go to the **Permissions** tab.
 5. Grant data access permissions using the table that follows as a guide. You must grant the permissions according to your data sharing policies.
 
 #### Reports available to agencies
 
-| Report type (topic) | Permissions required (granted by the advertiser) | Data freshness\* |
-| --- | --- | --- |
-| [Cohort unified](/docs/cohort-analytics-via-data-locker) | - Access retention and cohort report<br />- Access aggregate organic data<br />- [Coming soon] Attributed to other partners | Daily |
-| [Cohort user acquisition](/docs/cohort-analytics-via-data-locker) | - Access retention and cohort report<br />- Access aggregate organic data<br />- [Coming soon] Attributed to other partners | Daily |
-| [Cohort retargeting](/docs/cohort-analytics-via-data-locker) | - Access retention and cohort report<br />- Access aggregate organic data<br />- [Coming soon] Attributed to other partners | Daily |
-| **Key to abbreviations**<br />**Daily**:<br />- Reports are streamed to the h=23 folder.<br />- These reports are typically available by 09:00-12:00 UTC in the h=23 folder of the preceding day.<br />- For example, the report for data generated on Monday is in the Monday h=23 folder.<br />- The data is available on Tuesday:  - For aggregated campaign performance: After 10:00 UTC.<br />  - For ad revenue signals: After 21:00 UTC.<br />  - For blocked clicks & impressions, and failed click signatures: After 07:00 UTC. |
+<table><thead><tr><th><span>Report type (topic)</span></th><th>Permissions required (granted by the advertiser)</th><th><span>Data freshness\*</span></th></tr></thead><tbody><tr><td><a href="./cohort-analytics-via-data-locker">Cohort unified</a></td><td><ul><li>Access retention and cohort report</li><li>Access aggregate organic data</li><li>[Coming soon] Attributed to other partners</li></ul></td><td>Daily </td></tr><tr><td><a href="./cohort-analytics-via-data-locker">Cohort user acquisition</a></td><td><ul><li>Access retention and cohort report</li><li>Access aggregate organic data</li><li>[Coming soon] Attributed to other partners</li></ul></td><td>Daily</td></tr><tr><td><a href="./cohort-analytics-via-data-locker">Cohort retargeting</a></td><td><ul><li>Access retention and cohort report</li><li>Access aggregate organic data</li><li>[Coming soon] Attributed to other partners</li></ul></td><td>Daily </td></tr><tr><td colspan="3"><p><strong><span>Key to abbreviations</span></strong></p><p><strong><span>Daily</span></strong><span>:</span></p><ul><li><span>Reports are streamed to the h=23 folder.</span></li><li><span>These reports are typically available by 09:00-12:00 UTC in the h=23 folder of the preceding day.</span></li><li><span>For example, the report for data generated on Monday is in the Monday h=23 folder.</span></li><li><span>The data is available on Tuesday:</span><ul><li><span>For aggregated campaign performance: After 10:00 UTC.</span></li><li><span>For ad revenue signals: After 21:00 UTC.</span></li><li><span>For blocked clicks &amp; impressions, and failed click signatures: After 07:00 UTC.</span></li></ul></li></ul></td></tr></tbody></table>

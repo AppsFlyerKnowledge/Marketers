@@ -22,19 +22,19 @@ x-zendesk:
   created_at: '2021-05-01T10:41:05Z'
   edited_at: '2023-12-04T11:47:58Z'
 ---
-## ![Healthcare](https://files.readme.io/bb4bb46d842d1f2d08da548724e7d69910b0a050302fcdbd1500a8ebef325516-20659200427281.png) Healthcare
+## ![5669_Healthcare_icon_3.png](https://files.readme.io/bb4bb46d842d1f2d08da548724e7d69910b0a050302fcdbd1500a8ebef325516-20659200427281.png) Healthcare
 
 Healthcare apps enable users to perform tasks such as purchasing health insurance, making appointments, and receiving medical advice. The typical events that are recorded include logins, registrations, and other general events with no personal or health information.
 
-> ❗️ Important!
+> 📘 **Important!**
 >
 > * **A note from our lawyers**: Health data is considered "Restricted Data" and is considered a special category of data in many jurisdictions. As such, customers are prohibited from sending AppsFlyer any such data.
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
-> * To streamline the implementation process, use our [In-app event generator](https://evgen.appsflyer.com/?vertical=healthcare). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
+> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
+> * To streamline the implementation process, use our [In-app event generator](https://evgen.appsflyer.com/?vertical=healthcare). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
 > * For each recommended event included in this article, there are [code samples](https://evgen.appsflyer.com/?vertical=healthcare&view=code) for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the [AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).
-
-For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
+> * Detailed instructions for your developer can be found in the  [AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).
+>
+> For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
 
 ![In_appEvents_UserJourneys_-_Copy_of_Healthcare__1_.png](https://files.readme.io/54174e697c8dfe2d0d388c19fdd5fa0fbf9703c0155b9c250b40b5d0bcf19698-8232949117073.png)
 
@@ -42,7 +42,9 @@ For more information about recording in-app events, see the [In-app events guide
 
 The following section provides a list of event structures that are typical to the healthcare vertical. Each structure includes a predefined event name and the sample event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Login (af\_login)
+<div id="login-af_login" />
+
+<Accordion title="Login (af_login)">
 
 **Purpose**
 
@@ -56,7 +58,11 @@ Whenever the user successfully logs in
 
 Can be sent without any additional parameters
 
-### Complete registration (af\_complete\_registration)
+</Accordion>
+
+<div id="complete-registration-af_complete_registration" />
+
+<Accordion title="Complete registration (af_complete_registration)">
 
 **Purpose**
 
@@ -72,15 +78,19 @@ When the user completes the signup process
 | --- | --- | --- |
 | af\_registration\_method | Type of signup method | email, Facebook |
 
-### Add to cart (af\_add\_to\_cart)
+</Accordion>
+
+<div id="add-to-cart-af_add_to_cart" />
+
+<Accordion title="Add to cart (af_add_to_cart)">
 
 **Purpose**
 
 Record when a user adds a product to their cart. This event can help you determine:
 
-- How many products on average buyers add in one purchase
-- How much time passes between adding two different products
-- How many buyers abandon their cart
+* How many products on average buyers add in one purchase
+* How much time passes between adding two different products
+* How many buyers abandon their cart
 
 **Trigger**
 
@@ -93,15 +103,19 @@ When the user adds a product to the cart
 | af\_quantity | Amount ordered | 1 |
 | af\_price | Price of the product | 10 |
 
-### Purchase (af\_purchase)
+</Accordion>
+
+<div id="purchase-af_purchase" />
+
+<Accordion title="Purchase (af_purchase)">
 
 **Purpose**
 
 Record in-app purchases made by users. This event can help you:
 
-- Determine the LTV of your users and the ROI of your campaigns across ad networks and ad agencies
-- Determine what offers are most popular with your users
-- Cross-reference campaigns with purchased items in order to optimize campaign targeting
+* Determine the LTV of your users and the ROI of your campaigns across ad networks and ad agencies
+* Determine what offers are most popular with your users
+* Cross-reference campaigns with purchased items in order to optimize campaign targeting
 
 **Trigger**
 
@@ -111,16 +125,18 @@ When the user lands on the thank you page after a successful purchase
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Revenue from the purchase | 50.55 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Revenue from the purchase | 50.55 |
 | af\_currency | Currency code | USD |
 | af\_order\_id | Order ID | 9277 |
 | payment\_method\_type | Payment method used | credit card, local |
+
+</Accordion>
 
 ## Recommended structures for custom events
 
 The following section provides the event structure including the custom event name and sample event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Top-up success (top\_up\_success)
+<Accordion title="Top-up success (top_up_success)">
 
 **Purpose**
 
@@ -134,6 +150,8 @@ When the user completes the top-up
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Amount of the top-up | 2000.55 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Amount of the top-up | 2000.55 |
 | top\_up\_id | ID of the top-up | 397 |
 | payment\_method\_type | Payment method used | credit card, local payment |
+
+</Accordion>

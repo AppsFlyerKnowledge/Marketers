@@ -44,11 +44,10 @@ For a detailed description of the Partner Configuration Window Header, click [he
 
 > 📘 **Tip**
 >
-> * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
+> * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
-
-## Integration tab
+<Accordion title="Integration tab">
 
 ### Activate partner
 
@@ -63,23 +62,30 @@ Send automatic postbacks to Quora following user installs.
 >
 > The option **Only events attributed to this partner** is the only option with Quora and is selected by default.
 
+</Accordion>
 
-## Attribution link tab
+<Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
 [Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
 
-**To generate an attribution link,**follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost integration is not available for this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue integration is not available for this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant Quora, whether the partner acts as an ad network, agency, or both. Note that even if attribution is disabled for Quora, the permissions tab is active and you can grant control to Quora.
 
@@ -92,7 +98,9 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow access to your retention report*** - only to the partner's own retention data
 * ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
 * ***Allow access to your aggregate in-app events data** -*only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*****a** - only to the revenue data attributed to the partner
+* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+
+</Accordion>

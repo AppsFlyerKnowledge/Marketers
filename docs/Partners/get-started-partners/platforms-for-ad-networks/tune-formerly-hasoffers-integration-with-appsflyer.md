@@ -22,10 +22,10 @@ x-zendesk:
   created_at: '2015-12-22T14:55:13Z'
   edited_at: '2024-12-23T15:20:29Z'
 ---
-To initiate the integration, prepare, and send the following information to AppsFlyer:
+**To initiate the integration, prepare, and send the following information to AppsFlyer:**
 
-1. Your [attribution link](#create-attribution-link)
-2. Your [postbacks](#create-install-and-in-app-event-postbacks) (for installs and in-app events)
+1. Your [attribution link](/docs/tune-formerly-hasoffers-integration-with-appsflyer#create-attribution-link)
+2. Your [postbacks](/docs/tune-formerly-hasoffers-integration-with-appsflyer#create-install-and-in-app-event-postbacks) (for installs and in-app events)
 
 ## Create attribution link
 
@@ -42,7 +42,11 @@ See the following AppsFlyers base attribution link with a detailed explanation p
 
 ### Example attribution link after adding TUNE macros
 
-```http
+```
+ 
+```
+
+```
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=
 {transaction_id}&af_siteid={affiliate_id}&af_c_id={offer_id}&af_ad_id={offer_file_id}&idfa=
 {ios_ifa}&advertiser_id={google_aid}&af_sub5={offer_id}
@@ -67,13 +71,21 @@ Read more about [TUNE global postback URLs](http://help.tune.com/hasoffers/globa
 
 #### Global install postback:
 
-```http
+```
+ 
+```
+
+```
 https://NETWORK_ID.go2cloud.org/aff_lsr?offer_id={af_c_id}&transaction_id={clickid}
 ```
 
 #### In-app event postback:
 
-```http
+```
+ 
+```
+
+```
 https://NETWORK_ID.go2cloud.org/aff_goal?a=lsr&goal_id={goal_id}&transaction_id={clickid}
 ```
 

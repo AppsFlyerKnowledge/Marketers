@@ -48,13 +48,13 @@ Before activating the Google Ads integration for web campaigns, make sure you ha
 
 This article contains information and steps to set up a web campaign in Google Ads for Mobile, PC, and console apps with AppsFlyer. The setup involves defining the integration between Google Ads and AppsFlyer and setting the campaign attribution links.
 
-* [Set up Google Ads integration in AppsFlyer](#h_01J1MPPMW3WTD63M686BHZNKDX) (Required)
-* [Set up Google Ads integration in Google Ads](#h_01J1MPPMW4AQNQEKBN1VSPM4X7) (Required)
+* [Set up Google Ads integration in AppsFlyer](#create-a-google-ads-integration-in-appsflyer) (Required)
+* [Set up Google Ads integration in Google Ads](#create-a-web-campaign-in-google-ads) (Required)
 
 After setting up the attribution links in step one through the Google Ads and AppsFlyer integration, step two focuses on creating the landing page. Here, OneLink Smart Script or Smart Banners will use the attribution links to generate call-to-action buttons, directing users to the app stores.
 
-* [Create a landing page with OneLink Smart Script](#h_01J1MPPMW4P7Q18JN7JS9ZXR23) (Optional)
-* [Create a landing page with OneLink Smart Banners](#h_01J1MPPMW4CW8JMJK26PTEY74W) (Optional)
+* [Create a landing page with OneLink Smart Script](#create-a-landing-page-with-onelink-smart-script) (Optional)
+* [Create a landing page with OneLink Smart Banners](#create-a-landing-page-with-onelink-smart-banners) (Optional)
 
 ## Create a Google Ads integration in AppsFlyer
 
@@ -98,7 +98,7 @@ When available, AppsFlyer includes the `gclid` in the postback to Google.
 1. In AppsFlyer, from the sidebar, open **Collaborate** > **Partner Integrations > Active Integrations** > **Google Ads Web**
 2. In the **Integration** tab, scroll to the **Install attribution** section.
 3. Turn on **Install view-through attribution**.
-4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see [Enable equal priority for cross-platform impressions](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions)**.**
+4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see [Enable equal priority for cross-platform impressions](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions).
 5. Open the **Attribution** tab.
 6. Scroll to the **View-through attribution** section and set the preferred **view-through lookback window** (up to 24 hours).
 7. Click **Save integration** to apply the changes.
@@ -125,10 +125,10 @@ To turn on Advanced Matching data sharing:
 Installs are currently the only events that trigger automatic default postbacks to Google Ads for Web via the OCI API. For other event types, you can create custom postbacks by mapping AppsFlyer events to Google Ads conversion action IDs (“Conversion action” is the term Google Ads uses for attribution events.) Consult Google Ads Manager to learn about the Google Ads Web event you need to map to AppsFlyer events.
 
 1. Turn on **In-app event postbacks**.
-2. If required, set the In-app event postback window (read more about in-app event postback window configuration in general in [this article](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).
+2. If required, set the In-app event postback window (read more about in-app event postback window configuration in general in [this article](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
 3. Click **Add event** to add an SDK or server-to-server event to the list.
 4. In the **AppsFlyer event**column, select the event name from the drop-down box. AppsFlyer receives the event's name from the SDK integrated into your app or server-to-server events.
-5. In the **mapped to partner event** column**,**you must map the AppsFlyer event to a corresponding Google conversion action ID. Before you can do that, you need to set up the required Google conversion actions in Google Ads. To learn how to set conversion actions in Google Ads, see [create custom conversion actions.](#h_01J1MPPMW4KMSXAR903P534X65)
+5. In the **mapped to partner event** column,you must map the AppsFlyer event to a corresponding Google conversion action ID. Before you can do that, you need to set up the required Google conversion actions in Google Ads. To learn how to set conversion actions in Google Ads, see [create custom conversion actions.](#h_01J1MPPMW4KMSXAR903P534X65)
 
    **To find the conversion action ID in Google Ads:**
 
@@ -140,7 +140,7 @@ Installs are currently the only events that trigger automatic default postbacks 
    6. Paste it into the **mapped to partner event** column. For example, if `ctid=123456789`, paste `123456789`.
 6. In the **For Users From** column, select **This Partner Only** or **All media sources, including organic**. **Note:** unattributed events will be sent only if [Advanced Matching Data Sharing](/docs/advanced-matching-data-sharing) is turned ON and they include a hashed email or phone number.
 7. In the **including** column, select whether all event parameters, including the revenue value (if it exists in the event), are sent in the postback.
-8. [Optional] Click the **Add condition** icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
+8. [Optional] Click the **Add condition** icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks) for an event.
 9. Click **Save integration**.
 10. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
     1. From the top-left corner, click the app name under the partner name to open the list of apps.
@@ -156,9 +156,9 @@ Before creating a OneLink attribution link for your Google Ads campaign, you nee
 The instructions below focus on creating a OneLink template for Google web campaigns with Smart Script. For a comprehensive guide on how to set up OneLink templates, see the How to create OneLink templates section of the OneLink templates article.
 
 1. Under the **Redirection** section of the **New template** or **Edit template** page, configure the following settings:
-   * **When app isn’t installed**> **Redirect to**: Select your preferred option. The redirection value you set here is overridden by the `{lpurl}` value of the redirection parameters ( [`af_android_url`](/docs/about-link-structure-and-parameters#af_android_url), [`af_ios_url`](/docs/about-link-structure-and-parameters#af_ios_url) ) you place in the Google Tracking Template; see [Set the Tracking Template URL](#h_01J1MPPMW44596CZVKF9MGDTMP).
+   * **When app isn’t installed**> **Redirect to**: Select your preferred option. The redirection value you set here is overridden by the `{lpurl}` value of the redirection parameters ( [`af_android_url`](/docs/about-link-structure-and-parameters#af_android_url), [`af_ios_url`](/docs/about-link-structure-and-parameters#af_ios_url) ) you place in the Google Tracking Template; see [Set the Tracking Template URL](#set-the-tracking-template-url).
    * **When app is installed**: Make sure **not** to set up Universal Links, URI scheme, or All Links for launching the app because Google does not allow any redirection apart from the redirection to the Final URL.
-   * **When link is clicked on desktop web page** > **Redirect to**: Select your preferred option. The redirection value you set here is overridden by the `{lpurl}` value of the redirection parameters ([`af_web_dp`](/docs/about-link-structure-and-parameters#af_web_dp)) you place in the Google Tracking Template, see [Set the Tracking Template URL](#h_01J1MPPMW44596CZVKF9MGDTMP).
+   * **When link is clicked on desktop web page** > **Redirect to**: Select your preferred option. The redirection value you set here is overridden by the `{lpurl}` value of the redirection parameters ([`af_web_dp`](/docs/about-link-structure-and-parameters#af_web_dp)) you place in the Google Tracking Template, see [Set the Tracking Template URL](#set-the-tracking-template-url).
 2. Click **Create template**.
 
 </Accordion>
@@ -242,7 +242,7 @@ Google [defines the Final URL](https://support.google.com/google-ads/answer/6080
 The Final URL can't be an AppsFlyer URL (OneLink or a single platform attribution URL), as this may cause your campaign to be rejected. Only use a direct web address with no redirects, such as a web page URL, the Google Play store URL, or the App Store URL.
 
 1. This must be the final web location to which you want to redirect your users. It can be either:
-   * **A landing page URL** pointing to a page that prompts the user to click a CTA button to download the app from Google Play, App Store, or any other app store. The landing page includes Smart Script or Smart Banners, which automatically generate the CTA button URLs. To learn [how to create the landing page with Smart Script](#h_01J1MPPMW4P7Q18JN7JS9ZXR23) or [Smart Banners](#h_01J1MPPMW4CW8JMJK26PTEY74W).
+   * **A landing page URL** pointing to a page that prompts the user to click a CTA button to download the app from Google Play, App Store, or any other app store. The landing page includes Smart Script or Smart Banners, which automatically generate the CTA button URLs. To learn [how to create the landing page with Smart Script](#create-a-landing-page-with-onelink-smart-script) or [Smart Banners](#create-a-landing-page-with-onelink-smart-banners).
 
      You can add AF attribution parameters to the Final URL and map them to Google ValueTrack parameters, for example, `af_c_id={campaignid}`. Once the Google ad is clicked and the landing page is loaded, Smart Script or Smart Banners can copy the parameters to the landing page's outgoing URL. To learn about the available ValueTrack parameters, see the [Google documentation](https://support.google.com/google-ads/answer/6305348?sjid=9660882197247124000-EU#zippy=%2Cfinal-url-tracking-template-or-custom-parameter).
 
@@ -393,7 +393,7 @@ For non-cross-platform landing pages, the marketer is typically responsible for 
 
 To set up your Smart Script for Google web campaigns, perform the following steps:
 
-1. Enable your OneLink template for cross-platform attribution; see [Create or edit a OneLink template for cross-platform attribution](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-1-create-or-edit-a%C2%A0onelink-template%C2%A0for-crossplatform-attribution).
+1. Enable your OneLink template for cross-platform attribution; see [Create or edit a OneLink template for cross-platform attribution](/docs/set-up-cross-platform-links-for-multi-device-campaigns#create-a-onelink-templatefor-cross-platform-attribution).
 2. Make sure all relevant URL parameters are appended to the incoming URL. To review the parameters appended to the incoming URL, open Google Ads and check the URL parameters set as part of creating the Final URL or Tracking Template URL; see: [Set the campaign URLs](#h_01J1MPPMW44NGXN55SFD16Z4HE).
 3. Decide for each incoming parameter the outgoing parameter to which it will be mapped. For example, `af_site_id` in the incoming URL will be mapped to `af_site_id` in the outgoing URL.
 4. Decide the default value for the mandatory outgoing parameters that cannot be empty.
@@ -499,7 +499,7 @@ The Smart Script or Smart Banners outgoing URL must include either `gclid`, `wbr
 | Trait | Remarks |
 | --- | --- |
 | Dashboard | Attribution data for Google web-based campaigns on iOS is viewed and analyzed in the AppsFlyer Classic Dashboard. In most cases, the SKAN Dashboard is not relevant for web-to-app campaigns. |
-| Re-engagement attribution | Users may observe installs attributed to `googleads_int` and re-engagements attributed to `googleadwords_int`, even though both are driven by the same campaign. This behavior is expected and does not indicate a technical issue.   <br />  <br />It typically occurs when a `googleadwords_int` SRN integration is active alongside, allowing it to claim re-engagements from the same Google Ads web2app campaign. |
+| Re-engagement attribution | Users may observe installs attributed to `googleads_int` and re-engagements attributed to `googleadwords_int`, even though both are driven by the same campaign. This behavior is expected and does not indicate a technical issue.   <br />  <br />It typically occurs when a`googleadwords_int` SRN integration is active alongside, allowing it to claim re-engagements from the same Google Ads web2app campaign. |
 | Cost, clicks, and impressions data | Cost, clicks, and impressions data for Google Ads Web (`googleads_int`) is supported through the Google Ads integration (`googleadwords_int`).<br /><br />* To get the data make sure to connect the ad network account to the main PID (`googleadwords_int`):<br />  * ROI360 subscribers: in the **Cost Settings** page,<br />  * ROI360 non-subscribers: in the **Active Integration** page (**Cost** tab).<br />* To view cost, clicks, and impressions data for Google Ads Web campaigns, make sure the campaign ID ([af\_c\_id](/docs/about-link-structure-and-parameters#af_c_id)) is included in the attribution link.<br />* The attribution link must include the full campaign hierarchy to view cost,  clicks, and impressions data tied to attribution at the most granular level. |
 | Tracking template URLs | Tracking template URLs must comply with the limitations below. Failing to do so will result in a broken link.<br /><br />* Links must not contain any duplicate parameters.<br />* Links must not include invalid parameters such as:<br />  * Parameters without values, broken parameters, or parameters that cannot be parsed. This includes parameters without values such as `key=` or `key`. For example: `pid=googleads_int&key&c=campaign` or `pid=googleads_int&key=&c=campaign`<br />  * Missing values in one of the ValueTrack parameters, for example `{placement}`. To avoid missing values make sure that Google Ads populates them by defining the tracking template correctly in Google Ads.<br />* If you have entered values for any parameters under the **Campaign URL option** in your Google Ads campaign setup, these must match the parameter values in the tracking template. If they do not match, please remove them from the tracking template to make sure it complies with the policy update. |
 | Unexpected SRN attribution | In some cases, installs from Google Ads web-based campaigns may be attributed to `googleadwords_int` via SRN (self-reporting network), even in web-based campaigns. This occurs when Google claims the install. AppsFlyer attributes the install accordingly when Google makes the claim. This behavior is expected and may become more common as Google expands support for web campaign install attribution. |

@@ -51,7 +51,7 @@ x-zendesk:
 
 **To create a OneLink long URL outside the AppsFlyer UI:**
 
-1. Create a [OneLink template](/docs/create-a-onelink-template#procedures).
+1. Create a [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template).
 2. Record the OneLink base URL, meaning the OneLink template domain + template ID.  
    Example:
    * OneLink template domain: `yourbrand.onelink.me`

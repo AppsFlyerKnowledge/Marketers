@@ -48,7 +48,9 @@ Implementing custom CV decode requires uploading a CSV file containing your CV m
   * You can map the in-app events to ad network in-app events.
   * This is also true for Meta ads integration, subject to Meta-specific rules detailed in the next section.
 
-### Decode mapping scenario rules
+<div id="decode-mapping-scenario-rules" />
+
+<Accordion title="Decode mapping scenario rules">
 
 Consider:
 
@@ -76,33 +78,33 @@ If you integrate with Meta ads, adhere to the following rules:
 
 | conversion\_  <br />value | event\_  <br />name | event\_  <br />value | min\_revenue<br /><br />(not -inclusive) | max\_revenue (inclusive) | event\_  <br />counter | hours\_from\_  <br />install |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | af\_purchase | `\{abc\}` | 0 | 3 | 1 | 24 |
-| 2 | af\_purchase | `\{def\}` | 3 | 10 | 3 | 36 |
+| 1 | af\_purchase | `{abc}` | 0 | 3 | 1 | 24 |
+| 2 | af\_purchase | `{def}` | 3 | 10 | 3 | 36 |
 | 21 | event\_a |  |  |  | 1 | 24 |
 | 21 | event\_b |  |  |  | 3 | 24 |
-| 21 | event\_c | `\{xyz\}` |  |  | 2 | 24 |
+| 21 | event\_c | `{xyz}` |  |  | 2 | 24 |
 | 21 | event\_d |  |  |  | 1 | 24 |
 | 21 | event\_e |  |  |  | 1 | 24 |
 | 21 | event\_f |  |  |  | 1 | 24 |
 | 21 | event\_g |  |  |  | 1 | 24 |
 | 62 | af\_purchase | \{fgh) | 10 | 17 | 2 | 72 |
-| 62 | event\_a | `\{klm\}` |  |  | 3 | 72 |
+| 62 | event\_a | `{klm}` |  |  | 3 | 72 |
 
 ### Example A: Fine conversion value 1
 
 | event\_name | skad\_revenue | min\_ revenue | max\_revenue | event\_value |
 | --- | --- | --- | --- | --- |
 | install |  |  |  |  |
-| af\_purchase | 1.5 | 0 | 3 | `\{abc\}` |
+| af\_purchase | 1.5 | 0 | 3 | `{abc}` |
 
 ### Example B: Fine conversion value 2
 
 | event\_name | skad\_revenue | min\_revenue | max\_revenue | event\_value |
 | --- | --- | --- | --- | --- |
 | install |  |  |  |  |
-| af\_purchase | 6.5 | 3 | 10 | `\{def\}` |
-| af\_purchase | 6.5 | 3 | 10 | `\{def\}` |
-| af\_purchase | 6.5 | 3 | 10 | `\{def\}` |
+| af\_purchase | 6.5 | 3 | 10 | `{def}` |
+| af\_purchase | 6.5 | 3 | 10 | `{def}` |
+| af\_purchase | 6.5 | 3 | 10 | `{def}` |
 
 ### Example C: Fine conversion value 21
 
@@ -113,8 +115,8 @@ If you integrate with Meta ads, adhere to the following rules:
 | event\_b |  |  |  |  |
 | event\_b |  |  |  |  |
 | event\_b |  |  |  |  |
-| event\_c |  |  |  | `\{xyz\}` |
-| event\_c |  |  |  | `\{xyz\}` |
+| event\_c |  |  |  | `{xyz}` |
+| event\_c |  |  |  | `{xyz}` |
 | event\_d |  |  |  |  |
 | event\_e |  |  |  |  |
 | event\_f |  |  |  |  |
@@ -125,13 +127,15 @@ If you integrate with Meta ads, adhere to the following rules:
 | event\_name | skad\_revenue | min\_revenue | max\_revenue | event\_value |
 | --- | --- | --- | --- | --- |
 | install |  |  |  |  |
-| af\_purchase | 13.5 | 10 | 17 | `\{fgh\}` |
-| af\_purchase | 13.5 | 10 | 17 | `\{fgh\}` |
-| event\_a |  |  |  | `\{klm\}` |
-| event\_a |  |  |  | `\{klm\}` |
-| event\_a |  |  |  | `\{klm\}` |
+| af\_purchase | 13.5 | 10 | 17 | `{fgh}` |
+| af\_purchase | 13.5 | 10 | 17 | `{fgh}` |
+| event\_a |  |  |  | `{klm}` |
+| event\_a |  |  |  | `{klm}` |
+| event\_a |  |  |  | `{klm}` |
 
-### SSOT support for Decode mode
+</Accordion>
+
+<Accordion title="SSOT support for Decode mode">
 
 #### Overview
 
@@ -167,7 +171,9 @@ Decode mode customers can now access SSOT (Single Source of Truth) attribution, 
 * Re-query every 10 seconds (up to 5 times) to account for attribution delay.
 * Alternatively, query once at least 25 seconds after install to ensure accuracy.
 
-### Decode csv file specification
+</Accordion>
+
+<Accordion title="Decode csv file specification">
 
 Conversion values are mapped to one or more in-app events.
 
@@ -182,23 +188,25 @@ Conversion values are mapped to one or more in-app events.
 
 | Column | Mandatory value | Content | Details |
 | --- | --- | --- | --- |
-| conversion\_value | Yes, for:<br /><br />* SKAN 3 and below<br />* SKAN 4 where postback\_sequence\_index is 0 | Integer value 1–63 | The same fine conversion value can be listed more than once. See the examples for further explanation. |
-| coarse\_conversion\_value | Relevant only for SKAN 4 | String:<br /><br />* low<br />* medium<br />* high | The same coarse conversion value can be listed more than once. |
+| conversion\_value | Yes, for:<ul><li>SKAN 3 and below</li><li>SKAN 4 where postback\_sequence\_index is 0</li></ul> | Integer value 1–63 | The same fine conversion value can be listed more than once. See the examples for further explanation. |
+| coarse\_conversion\_value | Relevant only for SKAN 4 | String:<ul><li>low</li><li>medium</li><li>high</li></ul> | The same coarse conversion value can be listed more than once. |
 | event\_name | Yes | String | In-app event. It does not have to be an event that already exists in AppsFlyer.<br /><br />Note! In-app event names are case-sensitive.<br /><br />[Best practice]: Event name for revenue af\_skad\_revenue. |
 | event\_value | No | String | String set by the developer containing data to be decoded by the advertiser in their systems. Typically this is in the format of a JSON. |
-| min\_revenue | No | Integer or  floating | Use the min\_revenue and max\_revenue to set a revenue range in USD.<br /><br />* If you don't want to associate revenue with a conversion value, set min\_revenue and max\_revenue to blank.<br />* The value set in min\_revenue is not inclusive. Meaning greater than 0. Similar to 0.0001<br />* The value set in max\_value is inclusive.<br />* Example: If min\_revenue is 0 and max\_revenue is 4, this means the range is 0.0001-4<br />* max\_revenue must be greater than min\_revenue<br /><br />**Note!** If you generate the file using Excel, before saving, change the column format to comma and not currency to avoid Excel embedding a $ symbol in the CSV file. |
+| min\_revenue | No | Integer or  floating | Use the min\_revenue and max\_revenue to set a revenue range in USD.<ul><li>If you don't want to associate revenue with a conversion value, set min\_revenue and max\_revenue to blank.</li><li>The value set in min\_revenue is not inclusive. Meaning greater than 0. Similar to 0.0001</li><li>The value set in max\_value is inclusive.</li><li>Example: If min\_revenue is 0 and max\_revenue is 4, this means the range is 0.0001-4</li><li>max\_revenue must be greater than min\_revenue</li></ul>**Note!** If you generate the file using Excel, before saving, change the column format to comma and not currency to avoid Excel embedding a $ symbol in the CSV file. |
 | max\_revenue | No |  | If you populate min\_revenue: max\_revenue must have a value greater than 0.<br /><br />See min\_revenue for the explanation. |
 | event\_revenue\_usd | No |  | Deprecated starting June 7, 2021. Use min\_revenue and max\_revenue |
-| event\_counter | Yes | Integer | * Number of times the event is duplicated on decoding. Typically it represents the number of times the user performed a given action.<br />* Minimum value 1.<br /><br />Example: If the user performed a given event 5 times, then 5 events are generated.<br /><br />Considerations: If you send revenue, the total USD amount reported is multiplied by the value in event\_counter. Meaning if min\_revenue = 0, max\_revenue = 3, and event\_counter = 4 the total revenue reported 1.5 X 4 = 6.<br /><br />See the examples. |
-| hours\_from\_install | Yes | Integer | * Hours elapsed since the install<br />* Minimum value: 1<br />* Maximum value: 1512 (63 days)<br />* The value for all rows of a given conversion\_value must be identical. Meaning different values for different conversion values is permitted.<br /><br />AppsFlyer uses this to derive and set the install date as follows:<br /><br />* If the postbacks are SKAN V4, the install date formula is: Install date = postback arrival time - [accumulated window length] - [average postback delay].<br />  * Postback 1: install date = postback arrival time - 48h - 36h<br />* If the postbacks are SKAN V3, the install date formula is: Install date = postback arrival time - 36 hours - [average last-active range]. <br />  * The default [average last-active range] is 12 hours.<br />  * For a conversion value of 0, the average last-active range is set to 0. |
-| postback\_sequence\_index | Yes, but only relevant for SKAN 4 | Integer:<br /><br />* 0<br />* 1<br />* 2 | For fine value, only the value of 0 can be received. |
+| event\_counter | Yes | Integer | <ul><li>Number of times the event is duplicated on decoding. Typically it represents the number of times the user performed a given action.</li><li>Minimum value 1.</li></ul>Example: If the user performed a given event 5 times, then 5 events are generated.<br /><br />Considerations: If you send revenue, the total USD amount reported is multiplied by the value in event\_counter. Meaning if min\_revenue = 0, max\_revenue = 3, and event\_counter = 4 the total revenue reported 1.5 X 4 = 6.<br /><br />See the examples. |
+| hours\_from\_install | Yes | Integer | <ul><li>Hours elapsed since the install</li><li>Minimum value: 1</li><li>Maximum value: 1512 (63 days)</li><li>The value for all rows of a given conversion\_value must be identical. Meaning different values for different conversion values is permitted.</li></ul>AppsFlyer uses this to derive and set the install date as follows:<ul><li>If the postbacks are SKAN V4, the install date formula is: Install date = postback arrival time - [accumulated window length] - [average postback delay].<ul><li>Postback 1: install date = postback arrival time - 48h - 36h</li></ul></li><li>If the postbacks are SKAN V3, the install date formula is: Install date = postback arrival time - 36 hours - [average last-active range].<ul><li>The default [average last-active range] is 12 hours.</li><li>For a conversion value of 0, the average last-active range is set to 0.</li></ul></li></ul> |
+| postback\_sequence\_index | Yes, but only relevant for SKAN 4 | Integer:<ul><li>0</li><li>1</li><li>2</li></ul> | For fine value, only the value of 0 can be received. |
 
-### Upload conversion value schema file
+</Accordion>
+
+<Accordion title="Upload conversion value schema file">
 
 **Before you begin**:
 
 * Prepare the conversion value schema CSV file.
-* If you integrate with Meta ads and measure revenue, verify that your schema complies with [rules relating to Meta.](/docs/skan-cv-decode-map-your-cv-to-events#facebookspecific-rules) If you don't, Meta ads can't interpret the schema.
+* If you integrate with Meta ads and measure revenue, verify that your schema complies with [rules relating to Meta.](/docs/skan-cv-decode-map-your-cv-to-events#meta-specific-rules) If you don't, Meta ads can't interpret the schema.
 
 **To enable SKAN measurement using decode measurement:**
 
@@ -214,13 +222,17 @@ Conversion values are mapped to one or more in-app events.
    Note: For the next 48-72 hours, data in the dashboard is ambiguous. Meaning due to iOS timer issues, we can't be sure if the decode mapping matches the encode mapping used by you.
 8. Ensure that you have mapped your in-app events to those used by partners so that they can consume postbacks correctly.
 
+</Accordion>
+
 ## Troubleshooting the CSV upload errors file
 
-### Upload error messages
+<Accordion title="Upload error messages">
 
 One or more values in the file don't match the required format: The file format was changed starting June 7, 2021. Verify that your file format matches the example in this article.
 
-### Using Excel to format the event\_revenue\_usd column
+</Accordion>
+
+<Accordion title="Using Excel to format the event_revenue_usd column">
 
 When using Excel/Google sheets to create a CSV file, the event\_revenue\_usd column must be formatted correctly before saving the file as a CSV file.
 
@@ -248,7 +260,11 @@ You can correct this by formatting the cells in Excel.
 3. Click **OK**.  
    The cells are formatted correctly.
 
-### Visual inspection of the CSV file without Excel
+</Accordion>
+
+<div id="visual-inspection-of-the-csv-file-without-excel" />
+
+<Accordion title="Visual inspection of the CSV file without Excel">
 
 To examine the content of the CSV file, use an editor to view the file.
 
@@ -268,7 +284,9 @@ Using an editor, examine the CSV file. Pay special attention to the following:
 
   ![mceclip1.png](https://files.readme.io/160d89f313b98a83ad6b214de8fd02a290fb1c26563b6dd3c6f0a8a7a93ef3d1-34255690324881.png)
 
-### CSV files generated by Excel don't have commas as delimiters
+</Accordion>
+
+<Accordion title="CSV files generated by Excel don't have commas as delimiters">
 
 If Excel creates CSV file with a semi-colon ";" or other characters as a delimiter but not a comma:
 
@@ -276,3 +294,5 @@ If Excel creates CSV file with a semi-colon ";" or other characters as a delimit
 * This issue is particularly prevalent when German is selected in the regional settings.
 * The solution differs depending on your computer operating system (macOS or Windows).
 * To resolve this issue, search for the latest guidance from [Microsoft](https://support.office.com/en-us/article/import-or-export-text-txt-or-csv-files-5250ac4c-663c-47ce-937b-339e391393ba#ID0EAAFAAA=Office_2016-2010) or other forums to revolve. Use the following search terms: *Operating system (macOS or Windows) Excel change delimiter for CSV files.*
+
+</Accordion>

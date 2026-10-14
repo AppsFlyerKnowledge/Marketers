@@ -36,13 +36,15 @@ AppsFlyer supports agency configurations with Google Ads. It is essential that t
 
 To start agency attribution of Google Ads campaigns with AppsFlyer, follow these steps:
 
-**Watch**
+<Accordion title="Watch">
 
 ![](https://fast.wistia.com/embed/medias/fzihkki0qd/swatch)
 
-**Read**
+</Accordion>
 
-### Advertiser pre-step: enabling the agency access to Google Ads
+<Accordion title="Read">
+
+<Accordion title="Advertiser pre-step: enabling the agency access to Google Ads">
 
 **Prerequisites:**
 
@@ -79,7 +81,9 @@ For more details on sharing your Google Ads Link ID, click [here](https://suppo
 
 ![Google_Ag_6.png](https://files.readme.io/b205e5b2771a128846b22d653998da09f8d600b6b60efb6ca1e90042ffba5ee7-50897694593041.png)
 
-### Agency step 1: accepting the Link ID
+</Accordion>
+
+<Accordion title="Agency step 1: accepting the Link ID">
 
 On the Google Ads Words dashboard, the Agency receives an Invite and must accept the link.
 
@@ -89,7 +93,9 @@ The Agency can see the link status is now Active.
 
 ![Google_ag_8.png](https://files.readme.io/e44b590d4720accfde2ac95b97b18250ba2aab07f12651749592d4ad5aa8c947-50897658832017.png)
 
-### Agency step 2: setting up Google Ads on AppsFlyer
+</Accordion>
+
+<Accordion title="Agency step 2: setting up Google Ads on AppsFlyer">
 
 An Agency can set up multiple Google Ads Customer IDs, if required.
 
@@ -120,9 +126,11 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 7. ***Reinstall attribution***:
    * To enable reinstall attribution, switch it on.
    * No need to enable view-through attribution or configure lookback windows for reinstall attribution, as the values are taken from install attribution settings.
-8. Click ***Save & Close*****.**
+8. Click ***Save & Close*.**
 
-### Agency step 3: mapping your in-app events
+</Accordion>
+
+<Accordion title="Agency step 3: mapping your in-app events">
 
 1. Click the **In-App Events** tab.
 
@@ -147,9 +155,11 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 > * If an agency works with an MCC account and the app is promoted via several MCC sub-accounts all sub-accounts must be configured in the **Google Ads Customer ID**field (as seen on above screenshot).
 >   In such a case there is no need to configure the customer id of the MCC account.
 
-### Agency step 4: Measure your app conversions (mandatory)
+</Accordion>
 
-**(****Google Ads** **admin only)**
+<Accordion title="Agency step 4: Measure your app conversions (mandatory)">
+
+**(Google Ads** **admin only)**
 
 > 📘 **Important!**
 >
@@ -163,13 +173,10 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
    [![select_app_en-us__3_.png](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)
 4. Check the box next to **first\_open** of all your apps, and for each event you’d like to import.
 
-   CALLSTART::Note::
+   > 📘 **Note**
+   >
+   > You need to re-import if the **Partner Event identifier** in Google Ads is changed or if it's CUSTOM and the corresponding event name has changed in AppsFlyer.
 
-   #### Note
-
-   You need to re-import if the **Partner Event identifier** in Google Ads is changed or if it's CUSTOM and the corresponding event name has changed in AppsFlyer.
-
-   CALLEND::
 
    Click **Import and Continue**, then click **Done**.   
    [![select_events_to_import_en-us__4_.png](https://files.readme.io/efe5458d26e6085aa0c228b98f63d37ef932e672e83ebc9050437b3b1259eea1-50897658853905.png)](https://files.readme.io/efe5458d26e6085aa0c228b98f63d37ef932e672e83ebc9050437b3b1259eea1-50897658853905.png)
@@ -182,6 +189,10 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 > 📘 **Note**
 >
 > Please ensure your "include in conversions" setup is aligned with your campaign goals in Google Ads. For more information, consult with your Google representative or refer to the Google documentation [here](https://support.google.com/google-ads/answer/4677036?hl=en&co=ADWORDS.IsAWNCustomer=false).
+
+</Accordion>
+
+</Accordion>
 
 To watch the video "Setting-Up Google Ads Attribution for Advertisers" [click here](/docs/google-ads-adwords-integration-setup-for-advertisers#configuring-google-ads-attribution-for-advertisers).
 

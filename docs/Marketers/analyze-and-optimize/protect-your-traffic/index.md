@@ -38,7 +38,7 @@ Set up Protect360 Validation Rules and alerts to protect your traffic from fraud
   <Card title="Protect360 dashboard" href="/docs/protect360-dashboard" icon="fa-solid fa-shield-halved">
     The Protect360 dashboard provides insights about fraudulent traffic and installs blocked due to the application of validation rules.
   </Card>
-  <Card title="Basic fraud detection and insights with ProtectLITE dashboard and reporting" href="/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting" icon="fa-solid fa-shield-halved">
+  <Card title="Basic fraud detection and insights​ with ProtectLITE dashboard and reporting" href="/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting" icon="fa-solid fa-shield-halved">
     ProtectLITE provides insights about fraudulent installs blocked by our basic, free protection engine, and installs blocked due to the application of validation rules.
   </Card>
   <Card title="Protect360 raw data reports" href="/docs/protect360-raw-data-reports" icon="fa-solid fa-shield-halved">

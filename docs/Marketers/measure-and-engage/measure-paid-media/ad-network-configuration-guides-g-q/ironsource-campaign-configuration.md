@@ -42,13 +42,12 @@ x-zendesk:
 >
 > As an all-installs network, ironSource prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to ironSource.
 
-
 ironSource's configuration window includes 5 tabs: Integration, Attribution link, Cost, Ad Revenue, and Permissions. Click on the items below to read about the tabs setup.
 
 * The General Settings step in the Integration tab is **mandatory** for all partners
 * All the rest of the steps are either descriptive or **optional**
 
-## Integration tab
+<Accordion title="Integration tab">
 
 ### Activate partners
 
@@ -66,7 +65,6 @@ For iOS apps only, when **Share SKAN transaction ID** is turned on, you're allow
 > 📘 **Note**
 >
 > For SKAN interoperation with AppsFlyer, contact your ironSource account manager to [enable sending SKAN data to MMPs](https://developers.is.com/ironsource-mobile/general/universal-skan-reporting/#step-1).
-
 
 ### General settings
 
@@ -99,7 +97,6 @@ Select **Events attributed to any partner, or organic** to have your entire user
 >
 > As an all-installs network, ironSource prefers to receive postbacks for all new installs of your app from any source, including organic. To do so, select **Events attributed to any partner, or organic** to send all install postbacks to ironSource.
 
-
 ### In-app event postbacks
 
 Configure mapping of in-app events with ironSource events, sent via postbacks:
@@ -107,17 +104,14 @@ Configure mapping of in-app events with ironSource events, sent via postbacks:
 1. Turn on **In-app event postbacks**.
 2. Click **Add event** to add an SDK or server-to-server event to the list. The following table describes the fields to complete:
 
-   
-
 | Parameter name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.  <br />**Tip**: Don't see the event you are looking for?<br /><br />* Make sure to activate the event on a device with a non-organic installation, and recheck.<br />* Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<br /><br />* **Text field:** Get the corresponding event ID from the partner.<br />* **Drop-down box:** Select the most suitable pre-defined AppsFlyer event.<br />* **As is**: Send the events as they are, without name mapping. |
-| **for users from** | Select the sending option for the event:<br /><br />* **This partner only**: Send postbacks only when this event is attributed to this partner.<br />* **All media sources including organic**: Send postbacks for events attributed to any partner, as well as organic events. |
-| **including** | * **No data (default)**: Send only the event itself without any event values.<br />* **Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).<br />* **Values without revenue**: Send all the parameters **excluding** the revenue value. |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation, and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
+| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
+| **for users from** | Select the sending option for the event:<ul><li>**This partner only**: Send postbacks only when this event is attributed to this partner.</li><li>**All media sources including organic**: Send postbacks for events attributed to any partner, as well as organic events.</li></ul> |
+| **including** | <ul><li>**No data (default)**: Send only the event itself without any event values.</li><li>**Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: Send all the parameters **excluding** the revenue value.</li></ul> |
 
-
-3. [Optional] Click the **Add condition**![conditional-iae-postbacks-icon.png](https://files.readme.io/a97c5e34c264ddfa9f94b894520f849a3e59b42be14839ee37c71a5b6cc5ebd7-17612766801425.png) icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
+3. [Optional] Click the **Add condition**![conditional-iae-postbacks-icon.png](https://files.readme.io/a97c5e34c264ddfa9f94b894520f849a3e59b42be14839ee37c71a5b6cc5ebd7-17612766801425.png) icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks) for an event.
 4. Click **Save integration**.
 5. [Optional]After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
    1. From the top-left corner, under the partner name, click the app name to open the list of apps.
@@ -131,15 +125,18 @@ Configure mapping of in-app events with ironSource events, sent via postbacks:
 >   * **Event name:** af\_ad\_revenue
 >   * **Mapped to:** adRevenue
 
+<div id="attribution-link-tab" />
 
-## Attribution link tab
+<Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
-[More about attribution link structure and parameters](/docs/about-link-structure-and-parameters)**.**
+[More about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
 
-**To generate an attribution link,**follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
@@ -149,7 +146,11 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 [View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
-## Ad revenue tab
+</Accordion>
+
+<div id="ad-revenue-tab" />
+
+<Accordion title="Ad revenue tab">
 
 If you display ads in the app sent by Unity LevelPlay mediation (formerly ironSource) or by the ironSource monetization network, this section is relevant.
 
@@ -166,7 +167,9 @@ Learn more about [ad revenue attribution](/docs/roi360-guide-ad-revenue-attribut
 
 * Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant ironSource, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for ironSource, the permissions tab is active and you can grant control to ironSource.
 
@@ -194,3 +197,7 @@ Use these toggles to give the agency permissions to handle its own configuration
 * **Allow to configure in-app event postbacks** - permit the agency to setup in-app event postbacks mapping to itself on the integration tab
 
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
+
+</Accordion>
+
+</Accordion>

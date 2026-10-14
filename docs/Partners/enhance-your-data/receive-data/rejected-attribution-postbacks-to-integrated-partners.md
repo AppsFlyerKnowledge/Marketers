@@ -26,21 +26,20 @@ x-zendesk:
 
 **Terminology**:
 
-- **Fraud events:** install and in-app events blocked by Protect360
-- **Non-compliant events**: installs and in-app events that don't comply with validation rules
-- **Rejected events**: Fraud events and non-compliant validation rule events
-- **Attribution corrected install:** A hijacked install identified and blocked, whose attribution is subsequently corrected and attributed to the genuine media source.
+* **Fraud events:** install and in-app events blocked by Protect360
+* **Non-compliant events**: installs and in-app events that don't comply with validation rules
+* **Rejected events**: Fraud events and non-compliant validation rule events
+* **Attribution corrected install:** A hijacked install identified and blocked, whose attribution is subsequently corrected and attributed to the genuine media source.
 
 **Postbacks**
 
-- Integrated partners get rejected event postbacks in real-time.
-- There are no fraud event postbacks for in-app events of attribution corrected installs.
-- Rejected event postbacks are sent to the endpoint specified by the partner for both install and rejected event postbacks, with additional parameters being:
-
-  - Block reason
-  - Reject sub-reason
-  - Is-rejected
-  - Reject reason value (when available). For example: `reject_reason=site_blacklist&reject_reason_value="1123456"&is_rejected=1`
+* Integrated partners get rejected event postbacks in real-time.
+* There are no fraud event postbacks for in-app events of attribution corrected installs.
+* Rejected event postbacks are sent to the endpoint specified by the partner for both install and rejected event postbacks, with additional parameters being:  
+  * Block reason
+  * Reject sub-reason
+  * Is-rejected
+  * Reject reason value (when available). For example: `reject_reason=site_blacklist&reject_reason_value="1123456"&is_rejected=1`
 
 The following table lists the reject reason, reject reason value, and an explanation of the reject reason:
 
@@ -67,15 +66,12 @@ The following table lists the reject reason, reject reason value, and an explana
 | validation\_inapps | invalid\_event\_value | Based on requested or manually defined validation rule |
 | validation\_inapps | Rule name/s | Based on manually-defined rules |
 
-> ❗️ Important!
+> 📘 **Important!**
 >
-> To be able to distinguish between postbacks for legitimate events and rejected postbacks, you must configure the [rejected postback macros](/docs/postback-macros-for-ad-networks#macros%E2%80%94installs-inapp-events-and-rejected-events).
->
-> To enable rejected postbacks for Advance Privacy you must first append the following parameters to the [Default postback](/docs/self-serve-integration-management-for-ad-networks#default-postback):
->
-> - `is-rejected`
-> - `blocked-reason`
-> - `blocked-sub-reason`
-> - `blocked-reason-value`
->
-> When the parameters above are added to both the Default postback and the Advanced Privacy postback, rejected install/in-app event postbacks are enabled.
+> * To be able to distinguish between postbacks for legitimate events and rejected postbacks, you must configure the [rejected postback macros](/docs/postback-macros-for-ad-networks#macrosinstalls-in-app-events-and-rejected-events).
+> * To enable rejected postbacks for Advance Privacy you must first append the following parameters to the [Default postback](/docs/self-serve-integration-management-for-ad-networks#default-postback):
+>   * `is-rejected`
+>   * `blocked-reason`
+>   * `blocked-sub-reason`
+>   * `blocked-reason-value`
+> * When the parameters above are added to both the Default postback and the Advanced Privacy postback, rejected install/in-app event postbacks are enabled.

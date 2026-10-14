@@ -28,7 +28,7 @@ You can select to receive notifications from AppsFlyer when certain events occur
 
 ### To access notifications
 
-* From the top bar, open the account menu (email address dropdown) > **N****otifications.**
+* From the top bar, open the account menu (email address dropdown) > **Notifications.**
 * From the bell icon within the platform > **Setting icon.**
 
 ### Configuring notifications
@@ -37,7 +37,7 @@ To opt in to receive a notification, turn it on from the list of available notif
 
 To stop receiving it, turn it off.
 
-Note: Some notifications are available only via email. The Email-only Notification tab contains these [notification](/docs/notifications#emailonly-notifications) settings. 
+Note: Some notifications are available only via email. The Email-only Notification tab contains these [notification](/docs/notifications#email-only-notifications) settings. 
 
 ## What notifications can I receive?
 
@@ -63,7 +63,7 @@ To opt in to a particular notification, it must be:
 
 If you have opted in to receive a particular notification, you will receive a notification when the trigger event for that notification occurs, but **only when** that trigger event is applicable to **apps and media sources** to which you have permissions.
 
-### Example
+<Accordion title="Example">
 
 Consider the following scenario:
 
@@ -81,17 +81,25 @@ Result:
 * You **won't** receive notifications when there are TikTok configuration changes for App C.
 * You **will** receive notifications when there are Google Ads configuration changes for App C.
 
+</Accordion>
+
 ## Where will I receive notifications?
 
 Notifications can be received via the [bell](/docs/notifications#bell-notification) icon, [email](/docs/notifications#email-notification), or [Slack](/docs/notifications#slack-notification) integration. 
 
-### Bell notification
+<div id="bell-notification" />
+
+<Accordion title="Bell notification">
 
 The bell icon notification can be found in the top bar to the left of your account menu (email address dropdown).
 
-Clicking on the gear icon takes you to the [notification preferences](/docs/notifications#accessing-email-notifications).
+Clicking on the gear icon takes you to the [notification preferences](/docs/notifications#accessing-and-configuring-notification-preferences).
 
-### Email notification
+</Accordion>
+
+<div id="email-notification" />
+
+<Accordion title="Email notification">
 
 Email notifications are sent to the email address associated with your AppsFlyer account.
 
@@ -101,16 +109,13 @@ Some notifications are available only via email. These notification settings can
 >
 > All AppsFlyer notification emails are sent from [notifications@appsflyer.com](mailto:notifications@appsflyer.com)
 
-
 #### Email-only notifications
 
 The following table lists available **email-only notifications** and the events that trigger them:
 
-
-
 | Notification | Trigger event |
 | --- | --- |
-| Integrated partner configuration changes | * A new integrated partner is activated<br />* An existing integrated partner is deactivated<br />* A change is made to the settings of an existing integrated partner |
+| Integrated partner configuration changes | <ul><li>A new integrated partner is activated</li><li>An existing integrated partner is deactivated</li><li>A change is made to the settings of an existing integrated partner</li></ul> |
 | Push API failures | 5% or more of an app's Push API messages fail within a 12-hour period |
 | Audiences connection failures | There are audience partner connection failures that require your attention |
 | Ad revenue suspended integrations | An ad revenue integration is suspended after having a warning status for more than 30 days |
@@ -118,9 +123,11 @@ The following table lists available **email-only notifications** and the events 
 | Integrated partner cost configuration changes | A team member changes cost integration settings |
 | SKAN connection failures | There is an issue with your Google Ads or Meta SKAN integration with AppsFlyer that requires your attention. You may need to delete the current integration and log in again. |
 
+</Accordion>
 
+<div id="slack-notification" />
 
-### Slack notification
+<Accordion title="Slack notification">
 
 **Set up Slack notifications**
 
@@ -143,3 +150,5 @@ To set up Slack notifications, Slack first has to be connected:
       2. The Slack admin **must** perform all the steps above. In the meantime:
       3. The Slack connector goes into a pending status.
       4. When your Slack admin approves the connection, click **Connect** to start the integration and go from pending to connected.
+
+</Accordion>

@@ -28,10 +28,10 @@ x-zendesk:
 
 To make it easier for you to evaluate the partner without going to the partner page for more details, you can see the following information on [partner cards](/docs/partner-integrations#partner-cards):
 
-- Quality badges (for partners who meet quality criteria): [**Performance Index**](https://www.appsflyer.com/resources/reports/performance-index/) and **High-quality traffic**—indicating a low-fraud rate
-- The partner’s top three supported capabilities
-- Type of media platform
-- Integration status (when [Active](/docs/partner-activation-deactivation))
+* Quality badges (for partners who meet quality criteria): [**Performance Index**](https://www.appsflyer.com/resources/reports/performance-index/) and **High-quality traffic**—indicating a low-fraud rate
+* The partner’s top three supported capabilities
+* Type of media platform
+* Integration status (when [Active](/docs/partner-activation-deactivation?query=activate))
 
 </Accordion>
 

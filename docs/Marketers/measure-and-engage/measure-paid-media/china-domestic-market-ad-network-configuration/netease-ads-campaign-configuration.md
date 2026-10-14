@@ -38,7 +38,7 @@ x-zendesk:
 
 Netease's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The integration with Netease Ads only supports the install event in the default postback.
 
@@ -51,7 +51,9 @@ For more details about partner activation please click [here](/docs/partner-acti
 
 ![netease-default-postback.png](https://files.readme.io/0b1db2d0f9e772ad7459c8d28d46cf92bb26501da47b9e5f2f3dd4951a469470-50900350199825.png)
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 In this tab, you can create the attribution links you want to send to Netease for attributing Netease's campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
@@ -76,7 +78,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 ![attribution-link-parameters.png](https://files.readme.io/b2428974592c91df3f99e5ce00d801f4c1c16f44ec0cac62a43d3f65672450d5-50900350201489.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
 
 ### Click-through attribution
 
@@ -92,15 +94,21 @@ More details about the [click lookback window here](/docs/set-up-lookback-window
 
 This is the attribution link that contains all the setup information you have set for it. Send it to Netease to be activated when leads click on a corresponding ad.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant RTB House, whether the partner acts as an ad network, agency, or both. Note that even if attribution is disabled for RTB House, the permissions tab is active and you can grant control to RTB House.
 
@@ -115,7 +123,9 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow access to your retention report*** - only to the partner's own retention data
 * ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
 * ***Allow access to your aggregate in-app events data** -*only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*****a** - only to the revenue data attributed to the partner
+* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+
+</Accordion>

@@ -44,7 +44,7 @@ To extract and share Adobe Experience Cloud ID:
 1. [Update the application and extract the Marketing Cloud Visitor ID](https://experienceleague.adobe.com/en/docs/id-service/using/id-service-api/methods/getmcvid) using the Adobe SDK method right after the Adobe SDK is initialized.
 2. Use one of the following AppsFlyer SDK methods to set the Adobe Marketing Cloud Visitor ID:
 
-### setAdditionalData
+<Accordion title="setAdditionalData">
 
 Android iOS Unity
 
@@ -83,7 +83,9 @@ CustomDataMap.Add("marketingCloudID", "ADOBE_VISITOR_ID");
 AppsFlyer.setAdditionalData(CustomDataMap);
 ```
 
-### setCustomerUserId
+</Accordion>
+
+<Accordion title="setCustomerUserId">
 
 Android iOS
 
@@ -107,6 +109,8 @@ Swift
 let customerUserID = AppsFlyerLib.shared().customerUserIDp
 ```
 
+</Accordion>
+
 ### Step 2: Configure Adobe analytics in AppsFlyer
 
 **Prerequisite:** Before setting up the integration, make sure to [pass the Adobe Marketing Cloud Visitor ID to the AppsFlyer SDK](/docs/adobe-analytics-integration-with-appsflyer#step-1-share-adobe-experience-cloud-id-ecid-marketing-cloud-id-or-visitor-id-with-appsflyer).
@@ -119,7 +123,7 @@ let customerUserID = AppsFlyerLib.shared().customerUserIDp
 3. Click **Integrate**. You’re directed to the integration setup page.
 4. In the **Integration** tab, select the app for the integration and turn **Activate partner** on.  
    **Note:** The toggle must be on [(activated)](/docs/partner-activation-deactivation) for as long as you work with the partner.
-5. Configure the default postbacks sent to Adobe Analytics. AppsFlyer can send automatic postbacks for both installs and re-engagements (including re-attributions). Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default%20postbacks).
+5. Configure the default postbacks sent to Adobe Analytics. AppsFlyer can send automatic postbacks for both installs and re-engagements (including re-attributions). Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default-postbacks).
 6. From the **Adobe Analytics SDK**, as part of the **ADBMobileConfig.XML** file, copy the **Report\_Suite\_ID** (highlighted in blue) and the **Adobe\_Analytic\_server\_URL** (highlighted in green) and paste them into the respective fields in the Adobe Analytics integration page in AppsFlyer.
 
    ![](https://files.readme.io/fb46a40178b88dc8f8fb0f9bcce5aa289fc27c2dbf52d1e67783c7b764729f0f-360001063605.png)

@@ -88,7 +88,6 @@ x-zendesk:
     Learn what defines a loyal user in AppsFlyer, and how you can customize it.
   </Card>
   <Card title="[Legacy] Set up organic search attribution" href="/docs/legacy-set-up-organic-search-attribution" icon="fa-solid fa-diagram-project">
-    Get detailed organic search attribution data so you can optimize organic conversions. See our updated organic search attribution method .
   </Card>
   <Card title="Evaluate Keyword data" href="/docs/evaluate-keyword-data" icon="fa-solid fa-file-lines">
     Get detailed keyword data that lets you see which search terms are most popular, so you can optimize organic conversions.

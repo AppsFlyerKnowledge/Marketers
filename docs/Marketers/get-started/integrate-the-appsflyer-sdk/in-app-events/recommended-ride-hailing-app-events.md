@@ -34,13 +34,12 @@ Recording events can help you determine:
 
 > 📘 **Important!**
 >
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
+> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=ride_hailing). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
 > * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=ride_hailing&view=code) for iOS, Android, and Unity developers.
 > * Detailed instructions for your developer can be found in the  **[AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).**
 >
 > For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
-
 
 [![Flowchart_for_recommended_events_ride_hailing_app_user_journey](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)
 
@@ -48,7 +47,9 @@ Recording events can help you determine:
 
 The following section provides a list of event structures that are typical to the ride-hailing vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Complete registration (af\_complete\_registration)
+<div id="complete-registration-af_complete_registration" />
+
+<Accordion title="Complete registration (af_complete_registration)">
 
 **Purpose**
 
@@ -64,16 +65,14 @@ When the user completes the signup process
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_registration\_method | Platform or method through which the user signs up | Facebook |
 | country\_code | Country code (phone code) | 66 |
 
+</Accordion>
 
-
-### Login (af\_login)
+<Accordion title="Login (af_login)">
 
 **Purpose**
 
@@ -87,7 +86,11 @@ When the user successfully logs in
 
 Can be sent without any additional parameters
 
-### Add payment info (af\_add\_payment\_info)
+</Accordion>
+
+<div id="add-payment-info-af_add_payment_info" />
+
+<Accordion title="Add payment info (af_add_payment_info)">
 
 **Purpose**
 
@@ -103,17 +106,17 @@ When the user successfully adds payment info to their account
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_success | Whether the payment method is successful | true |
 | credit\_card\_type | Credit card type (optional) | Visa, Mastercard |
 | payment\_method\_type | Type of payment method | credit card, eWallet |
 
+</Accordion>
 
+<div id="spent-credits-af_spent_credits" />
 
-### Spent credits (af\_spent\_credits)
+<Accordion title="Spent credits (af_spent_credits)">
 
 **Purpose**
 
@@ -130,8 +133,6 @@ When a passenger spends credits
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_content | Type of voucher or discount | Single movie ticket |
@@ -139,13 +140,13 @@ When a passenger spends credits
 | credits\_remaining | How many credits left in the account | 2090 |
 | invoice\_id | ID of the invoice that is created for spending credits | KO215123SD |
 
-
+</Accordion>
 
 ## Recommended structures for custom events
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Ride booking requested (ride\_booking\_requested)
+<Accordion title="Ride booking requested (ride_booking_requested)">
 
 **Purpose**
 
@@ -164,8 +165,6 @@ When the passenger created a ride-booking request
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_price | Quoted price for the ride | 22.4 |
@@ -180,9 +179,9 @@ When the passenger created a ride-booking request
 | af\_country | Country where the ride is booked | Singapore |
 | order\_id | Order ID | 135790 |
 
+</Accordion>
 
-
-### Ride booking confirmed (ride\_booking\_confirmed)
+<Accordion title="Ride booking confirmed (ride_booking_confirmed)">
 
 **Purpose**
 
@@ -200,8 +199,6 @@ When the booking is accepted by a driver
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_price | Quoted price for the ride | 22.4 |
@@ -217,9 +214,9 @@ When the booking is accepted by a driver
 | af\_country | Country where the ride is booked | Singapore |
 | af\_order\_id | Order ID | 135790 |
 
+</Accordion>
 
-
-### Ride booking canceled (ride\_booking\_canceled)
+<Accordion title="Ride booking canceled (ride_booking_canceled)">
 
 **Purpose**
 
@@ -235,8 +232,6 @@ This event can help you:
 When the booking is canceled
 
 **Event parameters**
-
-
 
 | Name | Description | Example value |
 | --- | --- | --- |
@@ -255,9 +250,11 @@ When the booking is canceled
 | order\_id | Order ID | 135790 |
 | canceled\_by | Whether the ride is canceled by the passenger or driver | Passenger |
 
+</Accordion>
 
+<div id="ride-booking-completed-ride_booking_completed" />
 
-### Ride booking completed (ride\_booking\_completed)
+<Accordion title="Ride booking completed (ride_booking_completed)">
 
 **Purpose**
 
@@ -275,8 +272,6 @@ When the journey is complete
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_price | Quoted price for the ride | 22.4 |
@@ -292,3 +287,5 @@ When the journey is complete
 | af\_country | Country where the ride is booked | Singapore |
 | order\_id | Order ID | 135790 |
 | credits\_earned | Credits that the passenger earned for completing a ride | 248 |
+
+</Accordion>

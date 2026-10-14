@@ -37,24 +37,18 @@ For each scenario, you can test installs and in-app events. In regards to in-app
 
 #### Test scenario combinations
 
-
-
 | Scenario | Advanced Privacy setting | ATT setting in the app | Postback type sent |
 | --- | --- | --- | --- |
 | A | Off | Allow | Regular |
 | B | On | Ask app not to track | Advanced Privacy |
 
-
-
 ## Testing
 
 Complete the prerequisites and then perform the test procedures in the sections that follow. The test sections each contain a table you can use to record your test results.
 
-### Prerequisites
+<Accordion title="Prerequisites">
 
 Complete the prerequisites before beginning to execute the test procedure.
-
-
 
 | Prerequisites |
 | --- |
@@ -66,9 +60,9 @@ Complete the prerequisites before beginning to execute the test procedure.
 | [Prepare attribution link](/docs/ios-integration-testing-for-ad-networks#attribution-link) |
 | Test using a device running iOS 14.5+ |
 
+</Accordion>
 
-
-### Test—Advanced Privacy off
+<Accordion title="Test—Advanced Privacy off">
 
 **To trigger postbacks:**
 
@@ -108,16 +102,14 @@ Complete the prerequisites before beginning to execute the test procedure.
 
 #### Advanced Privacy off—Test results
 
-
-
 | Postback | Time you triggered the event | Expected postback type | Actual postback received (pass/fail) | Postback validation (pass/fail) |
 | --- | --- | --- | --- | --- |
 | Install |  | Regular |  |  |
 | In-app event: Purchase |  | Regular |  |  |
 
+</Accordion>
 
-
-### Test—Advanced Privacy on
+<Accordion title="Test—Advanced Privacy on">
 
 **To trigger postbacks:**
 
@@ -155,18 +147,16 @@ Complete the prerequisites before beginning to execute the test procedure.
 
 #### Advanced Privacy on—Test results
 
-
-
 | Postback | Time you triggered the event | Expected postback type | Actual postback received (pass/fail) | Postback validation (pass/fail) |
 | --- | --- | --- | --- | --- |
 | Install |  | Advanced Privacy |  |  |
 | In-app event: Purchase |  | Advanced Privacy |  |  |
 
-
+</Accordion>
 
 ## Supplementary information and procedures
 
-### About the Partner Integrations test app
+<Accordion title="About the Partner Integrations test app">
 
 The Partner Integrations app is available in the App Store. The app sends install and in-app events to the AppsFlyer platform.
 
@@ -179,7 +169,11 @@ The following functions are available:
 * **In-App Event Tests**Send `purchase`,`login`, and `registration` and in-app events. By mapping the app in-app event names to your event names, postbacks are populated using your event names.
 * **ATT Status**Returns the current ATT status reported by iOS as **Authorized** or **Denied**. The ATT status depends on user agreement to track in the ATT consent dialogue and the device **Allow Apps to Request to Track** setting.
 
-### Attribution link
+</Accordion>
+
+<div id="attribution-link" />
+
+<Accordion title="Attribution link">
 
 Prepare an attribution link in the AppsFlyer dashboard, using one of the following methods:
 
@@ -192,12 +186,10 @@ Prepare an attribution link in the AppsFlyer dashboard, using one of the followi
 2. Select **id1543229303**.
 3. From the side menu, select **Collaborate** > **Active Integrations** > select your ad network > **Attribution link** tab.
 4. In the Attribution link tab, set the parameters listed. You can add additional parameters if required.
-   
 
 | Parameter | Example value | Remark |
 | --- | --- | --- |
 | Campaign | c-test-2020-12-20 | Set a value that is identifiable in your postbacks |
-
 
 5. Copy the resulting link for later use.
 
@@ -207,7 +199,11 @@ Prepare an attribution link in the AppsFlyer dashboard, using one of the followi
 https://app.appsflyer.com/id1543229303?pid=pitestap_int&c=c-test-2020-12-20
 ```
 
-### Set Advanced Privacy
+</Accordion>
+
+<div id="set-advanced-privacy" />
+
+<Accordion title="Set Advanced Privacy">
 
 ![AdvancedPrivacyOff.png](https://files.readme.io/ef845ea74cbaa0d3214e61c6e2229fd4b9026d0e221b19fecb9e3486e9b795eb-360014980157.png)
 
@@ -219,19 +215,27 @@ https://app.appsflyer.com/id1543229303?pid=pitestap_int&c=c-test-2020-12-20
 4. Set **Enable Advanced Privacy** to the appropriate setting for each test scenario.
 5. Click **Save Integration**.
 
-### Test app integrated in your account
+</Accordion>
+
+<div id="test-app-integrated-in-your-account" />
+
+<Accordion title="Test app integrated in your account">
 
 **To verify that the test app is available in your account:**
 
 1. In AppsFlyer, go to **My Apps**.
 2. Verify that the app **Partner Integrations id1543229303** displays under Available Apps. If this is not the case, contact your Partner Development Manager.
 
-### Troubleshooting
+</Accordion>
 
+<div id="troubleshooting" />
 
+<Accordion title="Troubleshooting">
 
 | Symptom | Cause/corrective action |
 | --- | --- |
 | The install time is not the current time | The app wasn't deleted before the install.<br /><br />Delete the app and repeat the procedure. |
 | The media source is not your media source | Verify that you have set the correct **pid** value on the attribution link. Verify that you are using the correct attribution link |
 | af\_status is Organic | Check that the device iOS version is in accordance with that stated in the prerequisites.<br /><br />Check the format of the attribution link, especially the value of **pid**. |
+
+</Accordion>

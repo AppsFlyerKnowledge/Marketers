@@ -42,7 +42,7 @@ x-zendesk:
 
 Update setting tabs content as required: Ad revenue.
 
-### Ad revenue
+<Accordion title="Ad revenue">
 
 Applovin MAX provides ad revenue mediation with aggregate data at the device level.
 
@@ -51,10 +51,11 @@ Applovin MAX provides ad revenue mediation with aggregate data at the device lev
 > * Ad revenue for the Fire OS platform isn't reported in AppsFlyer.
 > * Learn more about [ad revenue attribution](/docs/roi360-guide-ad-revenue-attribution) (ad monetization).
 
-
 **To enable the ad revenue API**:
 
 * Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
+
+</Accordion>
 
 ### Best practice
 

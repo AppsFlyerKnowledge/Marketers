@@ -47,11 +47,10 @@ an account, contact the partner to open one before setting up the integration.
 
 > 📘 **Tip**
 >
-> * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
+> * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
-
-## Integration tab
+<Accordion title="Integration tab">
 
 ### Activate partner
 
@@ -72,7 +71,6 @@ In this section, you can map your AppsFlyer events with Ibotta via postbacks.
 >
 > For a simple and quick integration, select **Send all events excluding their revenue value** or **Send all events including their revenue value**
 
-
 1. Toggle In-App Event Postbacks to ON
 2. Select the Sending Option for all SDK-defined events.  
    **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
@@ -80,17 +78,15 @@ In this section, you can map your AppsFlyer events with Ibotta via postbacks.
 3. Click **Add Event** to add an SDK Event to the list
 4. Complete the following parameters:
 
-
-
 | Parameter Name | Description |
 | --- | --- |
 | **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated with your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
 | **Partner Event Identifier** | The unique name or ID of each event as defined on Ibotta's side.  <br />Obtain the corresponding Event ID from Ibotta and set it in the text field. |
 | **Send Revenue** | **When unchecked** - Send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - Send all the parameters including the revenue value (if it exists in the event). |
 
+</Accordion>
 
-
-## Attribution link tab
+<Accordion title="Attribution link tab">
 
 In this tab, you can create the attribution links you want to send to Ibotta for attributing Ibotta's campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
@@ -127,15 +123,21 @@ More details about the [click lookback window here](/docs/set-up-lookback-window
 
 This is the attribution link that contains all the setup information you have set for it. Send it to Ibotta to be activated when leads click on a corresponding ad.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost integration is not available for this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad revenue integration is not available for this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant Ibotta, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Ibotta, the permissions tab is active and you can grant control to Ibotta.
 
@@ -152,3 +154,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+
+</Accordion>

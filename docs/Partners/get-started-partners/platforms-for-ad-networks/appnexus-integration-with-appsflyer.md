@@ -57,7 +57,7 @@ For the complete AppNexus macro list [click here](https://wiki.appnexus.com/disp
 
 ### Complete attribution link template:
 
-```http
+```
 https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=${SSP_DATA}&af_siteid=${PUBLISHER_ID}
 ```
 
@@ -65,7 +65,7 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid=${SSP_DATA}&af
 
 Global Install Postback:
 
-```http
+```
 https://sspx-router.adnxs.net/sspx?id={ID}&sspdata={clickid}
 ```
 
@@ -73,7 +73,7 @@ https://sspx-router.adnxs.net/sspx?id={ID}&sspdata={clickid}
 
 ### AppsFlyer install dashboard
 
-<Image src="https://files.readme.io/6371116640c40b312b89cd39a2e5d9e08e34c1fb66c762412dc7aa30937a2156-appnexus-pixelid.png" alt="appnexus-pixelid.png" />
+[![appnexus-pixelid.png](https://files.readme.io/0f14632fc7421fbbb26f90c13cc37afad58e4e217f4bcebd931cddb7576c5113-360018728918.png)](https://files.readme.io/29832948c523c79327b1592dbf30ab4a1227cf5f7281cf7f09cee7450aff0170-360002326469.png)
 
 Additional attribution information can be added to the postback by request such as Country Code, Advertising ID, IDFA, and so on.
 

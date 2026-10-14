@@ -38,8 +38,6 @@ Local ad networks direct the audience to the Apple app store to download the App
 
 In the table that follows is the list of integrated ad networks that operate in the Chinese domestic market. You can click [here](/docs/china-domestic-market-ad-network-configuration) to check the configuration guides for media sources below respectively.
 
-
-
 | Media Source Name | Chinese Name | PID | Logo |
 | --- | --- | --- | --- |
 | Tencent Ads | 腾讯广告 | tencent\_int | ![ac1.png](https://files.readme.io/68f25ee4e8656ca36ea7ca48b2de7278f709fd93cb06f0db57b31afd27a65c57-115015067906.png) |

@@ -329,7 +329,7 @@ Authorization: Bearer {s2s-token}
 Content-Type: application/json
 ```
 
-Get your S2S API key from the AppsFlyer token management page (see [Authentication](#h_01KP13TF67MHPEQ5J3H69RTQH5)). In the path, use the web app ID (for example, `website-www.your_domain`), not the **Web SDK ID** UUID on the app settings page.
+Get your S2S API key from the AppsFlyer token management page (see [Authentication](#authentication)). In the path, use the web app ID (for example, `website-www.your_domain`), not the **Web SDK ID** UUID on the app settings page.
 
 </Accordion>
 
@@ -355,7 +355,7 @@ Build the JSON body for each mapped event with these fields:
 
 <Accordion title="Two Rules that make attribution work">
 
-1. Keep the Web SDK running on the marketing site: it records the visits, and Segment carries the events. As explained in the introduction to this section, a user needs a visit before an event or the event gets attributed as organic. If you want a fully server-side setup instead, with no Web SDK at all, follow [Set up a fully server-side integration](#h_01KZS2SFULLSVR01).
+1. Keep the Web SDK running on the marketing site: it records the visits, and Segment carries the events. As explained in the introduction to this section, a user needs a visit before an event or the event gets attributed as organic. If you want a fully server-side setup instead, with no Web SDK at all, follow [Set up a fully server-side integration](#set-up-a-fully-server-side-integration).
 2. Every call also needs the right identifiers: send the same `appsflyer_id` or `customer_user_id` combination described in [Send the right identifiers on each call](#af-accordion-11).
 
 </Accordion>

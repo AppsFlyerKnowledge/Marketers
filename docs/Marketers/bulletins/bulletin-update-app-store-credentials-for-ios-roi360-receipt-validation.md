@@ -1,5 +1,6 @@
 ---
 title: "Bulletin: Update App Store credentials for iOS ROI360 receipt validation"
+table_of_contents: false
 x-zendesk:
   id: 27880822483985
   url: https://support.appsflyer.com/hc/en-us/articles/27880822483985-Bulletin-Update-App-Store-credentials-for-iOS-ROI360-receipt-validation
@@ -25,11 +26,11 @@ x-zendesk:
 | --- | --- |
 | **Update date** | 02/04/2025 |
 | **What you need to know** | This change affects apps using ROI360 for iOS in-app purchase and subscription revenue validation.  <br />By upgrading to the new iOS validation flow, you’ll benefit from:<br /><br />* Enhanced real-time validation with the Apple Store using new Apple endpoints.<br />* No changes to in-app event structure or parameters.<br />* Updated validation result responses in the AppsFlyer Purchase SDK Connector, including a new `store_status` code for failed validations.<br />* No changes to your SDK implementation are required.<br /><br />**Note:** StoreKit 2-based receipt validation is only supported with the new App Store credentials. Make sure to complete the update if your app uses StoreKit 2 to ensure continued validation.<br /><br />Apple may sunset the old API at any time, so we strongly recommend updating your credentials to stay ahead of any potential disruptions. |
-| **What you need to do** | To complete the setup:<br /><br />1. Generate In-App Purchase Key from App Store Connect.<br />2. Upload the new key in the Revenue Settings section of the AppsFlyer platform.<br /><br />If your app is using Apple Server Notifications Version 1, you must switch to Version 2 before updating your credentials. You’ll see a message in the Revenue Settings page if this applies to your app as prerequisite.<br /><br />Follow the detailed instructions below:<br /><br />* [Update the App Store credentials for ROI360 iOS receipt validation](#get-ios-credentials)<br />* [Set up Version 2 of Apple Server Notifications](#send-app-store-notifications-directly-to-appsflyer) |
+| **What you need to do** | To complete the setup:<ol><li>Generate In-App Purchase Key from App Store Connect.</li><li>Upload the new key in the Revenue Settings section of the AppsFlyer platform.</li></ol>If your app is using Apple Server Notifications Version 1, you must switch to Version 2 before updating your credentials. You’ll see a message in the Revenue Settings page if this applies to your app as prerequisite.<br /><br />Follow the detailed instructions below:<ul><li>[Update the App Store credentials for ROI360 iOS receipt validation](#get-ios-credentials)</li><li>[Set up Version 2 of Apple Server Notifications](#send-app-store-notifications-directly-to-appsflyer)</li></ul> |
 
+<div id="send-app-store-notifications-directly-to-appsflyer" />
 
-
-### Set up version 2 of Apple Server Notifications
+<Accordion title="Set up version 2 of Apple Server Notifications">
 
 If your app previously used Apple Server Notifications Version 1, you must switch to Version 2 in App Store Connect before updating your validation credentials. (If this applies to your app, you’ll see a message on the **Revenue settings** page.)
 
@@ -47,7 +48,11 @@ If your app previously used Apple Server Notifications Version 1, you must switc
 6. Under the **App Store Server Notifications** section, click **Edit** for the **Sandbox Server URL**.
 7. Repeat the steps 3-5.
 
-### Update the App Store credentials for ROI360 receipt validation
+</Accordion>
+
+<div id="get-ios-credentials" />
+
+<Accordion title="Update the App Store credentials for ROI360 receipt validation">
 
 The required credentials for the iOS In-App Purchase API integration are:
 
@@ -80,3 +85,5 @@ The required credentials for the iOS In-App Purchase API integration are:
     ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)
 13. In the AppsFlyer purchases and subscriptions settings, click **Validate keys** to ensure the keys you entered are correct.
 14. Click **Update keys**. Once the keys are updated, your app will be fully transitioned to Apple’s new iOS validation flow.
+
+</Accordion>

@@ -54,15 +54,11 @@ The attribution link consists of the AppsFlyer base attribution link and additio
 
 See below the AppsFlyer base attribution link with a detailed explanation per macro:
 
-
-
 | AppsFlyer Base URL | Description |
 | --- | --- |
 | https://app.appsflyer.com/`{app_id}`? | AppsFlyer end point<br /><br />app\_ id= Application unique ID – represents the ID of the app being promoted |
 | pid= | Media source name concatenated with \_int to identify integrated networks. Example: mediaName\_int |
 | c= | Campaign name |
-
-
 
 Set out below is a complete attribution link once you have added the additional Everflow macros:
 
@@ -77,7 +73,6 @@ https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={transaction_i
 > * For campaign cost models other than CPI, please update the **&af\_cost\_model=** parameter to the appropriate model. Example:  CPA, CPC
 > * If you are an existing AppsFlyer partner and currently migrating to Everflow from a different platform, make sure to add `&af_additional_postback=1` to your attribution links.
 
-
 For the complete list of AppsFlyer parameters click [here](/docs/postback-macros-for-ad-networks).
 
 For the complete list of Everflow’s macros click [here](https://help.everflow.io/support/solutions/articles/22000176119-parameters-and-macros).
@@ -89,7 +84,6 @@ For the complete list of Everflow’s macros click [here](https://help.everflow.
 > * See below for an explanation of how to format install and in-app event postbacks for the Everflow platform.
 > * You must send AppsFlyer your custom Everflow domain in place of  [everflow\_domain\_placeholder] in the below postbacks.
 > * NID is the Network ID provided by Everflow.
-
 
 ## Global install postback
 

@@ -38,7 +38,7 @@ x-zendesk:
 
 The Sina Weibo Ads configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
-## Integration tab
+<Accordion title="Integration tab">
 
 This section is used for connecting the partner with AppsFlyer. Relevant messages for the advertiser regarding the specific partner also appear here.
 
@@ -57,7 +57,11 @@ The option "**Only events attributed to this partner**" for partner attributed u
 
 Click **Save**.
 
-## Attribution link tab
+</Accordion>
+
+<div id="attribution-link-tab" />
+
+<Accordion title="Attribution link tab">
 
 In this tab, you can create the attribution links you want to send to Sina Weibo Ads for attributing the Sina Weibo Ads campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
@@ -82,7 +86,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 [![](https://files.readme.io/d3efcf846c2f75515e714e3ae8a7a15000dd76093702f82bc0d8bfb04a3a8aee-360002299609.png)](https://files.readme.io/d3efcf846c2f75515e714e3ae8a7a15000dd76093702f82bc0d8bfb04a3a8aee-360002299609.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. More information about[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. More information about[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
 
 ### Retargeting settings
 
@@ -138,15 +142,21 @@ More details about the [click lookback window here](/docs/set-up-lookback-window
 
 This is the attribution link that contains all the setup information you have set for it. Send it to Sina Weibo Ads to be activated when leads click on a corresponding ad.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost integration is not available for Sina Weibo Ads.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue data is not supported by this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant to the partner, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for the partner, the permissions tab is active and you can grant control to the partner.
 
@@ -159,10 +169,12 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow access to your retention report*** - only to the partner's own retention data
 * ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
 * ***Allow access to your aggregate in-app events data** -*only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*****a** - only to the revenue data attributed to the partner
+* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+
+</Accordion>
 
 ## Setting AppsFlyer attribution on Weibo ads dashboard
 
@@ -243,44 +255,34 @@ On the ad level, set up the deep link and AppsFlyer attribution link:
 
    ![sina-weibo-retargeting-deeplink.png](https://files.readme.io/dc5666893ff99dcb808a15aa2e41396b359617e2f6271f246a10893d4b05eebe-360002715557.png)
 
-   CALLSTART::Note::
+   > 📘 **Example**
+   >
+   > ```
+   > myapp://products/page1&pid=sinaweibo_int&is_retargeting=true
+   > ```
 
-   #### Example
-
-   ```
-   myapp://products/page1&pid=sinaweibo_int&is_retargeting=true
-   ```
-
-   CALLEND::
 2. Copy the attribution link from AppsFlyer dashboard with all the required parameters and paste it into the attribution link box:
 
    ![sina-weibo-retargeting-links.png](https://files.readme.io/edd0861728e19a0bc0e23641161c2365cf5c41eeccaa801bd4e8c3392215fe83-360002799598.png)
 
-   CALLSTART::Note::
+   > 📘 **Example**
+   >
+   > ```
+   > https://app.appsflyer.com/com.mycompany.myapp?pid=sinaweibo_int&c=test&clickid={IMP}
+   > &md5_idfa={idfa_MD5}&md5_imei={imei_MD5}&redirect=false&is_retargeting=true
+   > ```
 
-   #### Example
-
-   ```
-   https://app.appsflyer.com/com.mycompany.myapp?pid=sinaweibo_int&c=test&clickid={IMP}
-   &md5_idfa={idfa_MD5}&md5_imei={imei_MD5}&redirect=false&is_retargeting=true
-   ```
-
-   CALLEND::
-   CALLSTART::Note::
-
-   #### Note
-
-   Note that all following parameters should be included in both the deep link and the attribution link and be identical in both links:
-
-   * `&pid=sinaweibo_int` — partner ID parameter that identifies Sina Weibo as media source
-   * `&c=campaign_name` — parameter that identifies a specific campaign
-   * `&is_retargeting=true` — parameter that identifies an ad as a part of a retargeting campaign
-
-   If you use deferred deep linking, include the following parameters as well:
-
-   * `&af_adset=adset_name`
-   * `&af_ad=ad_name`
-
-   Read more about [AppsFlyer's Attribution Link Structure and Parameters](/docs/about-link-structure-and-parameters) and Sina Weibo's [attribution links](#attribution-link-tab).
-
-   CALLEND::
+   > 📘 **Note**
+   >
+   > Note that all following parameters should be included in both the deep link and the attribution link and be identical in both links:
+   >
+   > * `&pid=sinaweibo_int` — partner ID parameter that identifies Sina Weibo as media source
+   > * `&c=campaign_name` — parameter that identifies a specific campaign
+   > * `&is_retargeting=true` — parameter that identifies an ad as a part of a retargeting campaign
+   >
+   > If you use deferred deep linking, include the following parameters as well:
+   >
+   > * `&af_adset=adset_name`
+   > * `&af_ad=ad_name`
+   >
+   > Read more about [AppsFlyer's Attribution Link Structure and Parameters](/docs/about-link-structure-and-parameters) and Sina Weibo's [attribution links](#attribution-link-tab).

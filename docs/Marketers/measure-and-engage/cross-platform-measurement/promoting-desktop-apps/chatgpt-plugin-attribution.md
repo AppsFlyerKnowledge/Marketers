@@ -34,7 +34,7 @@ You can read about ChatGPT plugins and join the waitlist [here](https://openai.c
 
 ### How do marketers use ChatGPT plugins?
 
-OpenAI still has ChatGPT plugins in Beta, and very few companies have actually implemented them so far. However, the possibilities for marketers are almost endless.
+OpenAI still has ChatGPT plugins in Beta, and very few companies have actually implemented them so far. However, the possibilities for marketers are almost endless.  
 
 AppsFlyer enables marketers to measure the usage and LTV of users on those “apps” across multiple platforms side by side, for a truly holistic view of users.
 

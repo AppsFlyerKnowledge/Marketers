@@ -34,7 +34,7 @@ The following table lists restrictions per media source for conversions, clicks,
 >
 > Aggregated attribution and analytics data are available without limitations. However, all postbacks and device-level reports are subject to the limitations outlined below.
 >
-> [Postback restrictions on third-party platforms](/docs/discrepancies-between-appsflyer-and-third-party-platforms#postback-restrictions):
+> [Postback restrictions on third-party platforms](/docs/discrepancies-between-appsflyer-and-third-party-platforms#postback-restrictions-on-third-party-platforms):
 >
 > * The restrictions described in the table below apply to the events included in postbacks sent to third-party platforms, such as analytics and marketing platforms.
 > * Further postback restrictions may apply for other events.
@@ -42,15 +42,15 @@ The following table lists restrictions per media source for conversions, clicks,
 | Media source | Attribution type restriction |
 | --- | --- |
 | Amazon Ads | Raw data from Amazon Ads is restricted on the AppsFlyer platform. As a result, the media source is reported as "restricted" and campaign details are null.<br /><br />As with any SRN (Self-Reporting Network), clicks and impressions from Amazon aren't included in raw data reports. |
-| Discord | Raw data from Discord is restricted on the AppsFlyer platform.<br /><br />The following restrictions apply to view-through and click-through attribution:<br /><br />* original\_url: restricted<br />* click\_id: restricted<br /><br />Clicks and impressions from Discord aren't included in raw data reports. |
-| Meta Ads | The following restrictions apply to Meta Ads raw data:<br /><br />* By default, Meta Ads does not allow the distribution of device-level data with unrestricted attribution information. However, if you accept the Meta Advanced Mobile Measurement (AMM) Terms, you can access device-level attribution data for Meta Ads without restriction. See [Enable Meta ads device-level data](/docs/meta-ads-integration-setup#enable-meta-ads-device-level-data).<br />* Data from the AEM deep link solution (iOS), as well as data from the Google Play Install Referrer and the Meta Install Referrer (Android), is available in device-level reports.<br />* Data from the Google Play Install Referrer and the Meta Install Referrer can only appear in install reports.<br />* Data from the AEM deep link solution (iOS) can only appear in re-engagement reports.<br /><br />Clicks and impressions from Meta Ads aren't included in raw data reports. |
+| Discord | Raw data from Discord is restricted on the AppsFlyer platform.<br /><br />The following restrictions apply to view-through and click-through attribution:<ul><li>original\_url: restricted</li><li>click\_id: restricted</li></ul>Clicks and impressions from Discord aren't included in raw data reports. |
+| <span id="meta-ads"></span>Meta Ads | The following restrictions apply to Meta Ads raw data:<ul><li>By default, Meta Ads does not allow the distribution of device-level data with unrestricted attribution information. However, if you accept the Meta Advanced Mobile Measurement (AMM) Terms, you can access device-level attribution data for Meta Ads without restriction. See [Enable Meta ads device-level data](/docs/meta-ads-integration-setup#enable-meta-ads-device-level-data).</li><li>Data from the AEM deep link solution (iOS), as well as data from the Google Play Install Referrer and the Meta Install Referrer (Android), is available in device-level reports.</li><li>Data from the Google Play Install Referrer and the Meta Install Referrer can only appear in install reports.</li><li>Data from the AEM deep link solution (iOS) can only appear in re-engagement reports.</li></ul>Clicks and impressions from Meta Ads aren't included in raw data reports. |
 | Pinterest | Click-through and view-through attribution data is restricted.<br /><br />Clicks and impressions from Pinterest aren't included in raw data reports. |
 | Reddit | Clicks and impressions from Reddit aren't included in raw data reports.<br /><br />**Reminder:** Data received about a Reddit campaign is subject to [Reddit Business Tool Terms](https://business.reddithelp.com/s/article/Reddit-Business-Tool-Terms), and includes, among other restrictions, a prohibition on using Reddit data to create profiles of any users. |
 | Samsung DSP | Starting October 17, 2023:<br /><br />Samsung view-through and click-through attribution is limited. The following are included in raw data delivery tools:<br /><br />* Media source (samsungdsp\_int)<br />* Attributed touch type (impression/click)<br />* Attributed touch time is available<br />* Campaign details are available<br /><br />Clicks and impressions from Samsung aren't included in raw data reports.<br /><br />Starting August 30, 2025:<br /><br />Samsung EMEA view-through and click-through attribution is limited, for engagements received with `af_data_restriction=attribution` on the URL. The following are included in raw data delivery tools:<br /><br />* Media source: reported as restricted<br />* Attributed touch type (impression/click)<br />* Attributed touch time is available<br />* Campaign details are available<br /><br />Clicks and impressions from Samsung aren't included in raw data reports. |
-| Snapchat | The following restrictions apply to Snapchat raw data:<br /><br />* Starting March 1, 2023, Snapchat uninstalls aren't included in the raw data reports.<br />* View-through attribution device-level data is limited in some cases. The logic of the raw data restrictions is managed on the Snapchat side, per event, and is communicated to AppsFlyer via the integration.<br />* When the event has raw data restrictions, the following are **not** restricted in raw data delivery tools:<br /><br />  * Media source (snapchat\_int)<br />  * Channel<br />  * Attributed touch type (impression)<br />  * Attributed touch time (reported as date only, "dd/mm/yyyy")<br />  * Campaign name and ID (starting December 15, 2025)<br />  * Ad set name and ID (starting December 15, 2025)<br />* The above restrictions do not apply to engaged views.<br /><br />Clicks and impressions from Snapchat aren't included in raw data reports. |
+| Snapchat | The following restrictions apply to Snapchat raw data:<ul><li>Starting March 1, 2023, Snapchat uninstalls aren't included in the raw data reports.</li><li>View-through attribution device-level data is limited in some cases. The logic of the raw data restrictions is managed on the Snapchat side, per event, and is communicated to AppsFlyer via the integration.</li><li>When the event has raw data restrictions, the following are **not** restricted in raw data delivery tools:</li></ul><ul><li>Media source (snapchat\_int)</li><li>Channel</li><li>Attributed touch type (impression)</li><li>Attributed touch time (reported as date only, "dd/mm/yyyy")</li><li>Campaign name and ID (starting December 15, 2025)</li><li>Ad set name and ID (starting December 15, 2025)</li></ul><ul><li>The above restrictions do not apply to engaged views.</li></ul>Clicks and impressions from Snapchat aren't included in raw data reports. |
 | TikTok for Business | Until May 19, 2026, the following restrictions applied to view-through attribution:<br /><br />* Media source was reported as `tiktokglobal_int`<br />* Channel was reported as TikTok / Pangle<br />* Attributed touch type was reported as impression<br />* Attributed touch time was reported as date only ("dd/mm/yyyy")<br />* Campaign, ad set, and ad information were reported as "restricted"<br /><br />As of May 19, 2026, the following raw data tools were updated: Pull API, Data Locker, and the Raw Data Export page.<br /><br />As of June 25, 2026, the following raw data tools were updated: Push API and the Get conversion data (GCD) API.<br /><br />The changes are:<br /><br />* Only the `original_url` field is restricted (empty)<br />* All other attribution fields are fully supported<br /><br />The above restrictions don't apply to engaged views.<br /><br />Clicks and impressions raw data reports via Data Locker from `tiktokglobal_int` are restricted. |
-| Uber | The following restrictions apply to view-through and click-through attribution:<br /><br />* Media source (uber\_int): available<br />* Campaign details: available<br /><br />Clicks and impressions from Uber aren't included in raw data reports. |
-| X Ads (formerly Twitter) | In some cases, based on user choices in X Ads, raw data may be restricted on the AppsFlyer platform.<br /><br />**Until July 15, 2025:** Attributed events from X Ads didn't appear at all in raw data reports.<br /><br />**As of July 15, 2025:** Attributed events are included in raw data reports, with the following restrictions:<br /><br />* Media source (twitter): available<br />* Campaign details: reported as *restricted*<br />* Channel (Twitter): available<br />* Attributed touch type: available<br />* Attributed touch time: reported as date only (`dd/mm/yyyy`)<br /><br />Clicks and impressions from X Ads aren't included in raw data reports.<br /><br />Access to unrestricted raw data depends on participation in X Ads' **Advanced Mobile Measurement (AMM) program** and on end-user privacy settings:<br /><br />* AMM not enabled: all clicks and impressions are sent with `af_data_restriction=attribution`. All resulting events are restricted.<br />* AMM enabled:<br />  * EU users: events are restricted if data sharing with business partners is not granted.<br />  * Users who did not agree to share data: events are restricted (`af_data_restriction=attribution`).<br />  * Users who agreed to share data with business partners: events are not restricted (`af_data_restriction=none`).<br /><br />For more information, see the [X Ads setup guide, user privacy section](/docs/x-ads-formerly-twitter-ads-setup-guide-overview#twitter-user-privacy). |
+| Uber | The following restrictions apply to view-through and click-through attribution:<ul><li>Media source (uber\_int): available</li><li>Campaign details: available</li></ul>Clicks and impressions from Uber aren't included in raw data reports. |
+| <span id="x-ads-formerly-twitter"></span>X Ads (formerly Twitter) | In some cases, based on user choices in X Ads, raw data may be restricted on the AppsFlyer platform.<br /><br />**Until July 15, 2025:** Attributed events from X Ads didn't appear at all in raw data reports.<br /><br />**As of July 15, 2025:** Attributed events are included in raw data reports, with the following restrictions:<br /><br />* Media source (twitter): available<br />* Campaign details: reported as *restricted*<br />* Channel (Twitter): available<br />* Attributed touch type: available<br />* Attributed touch time: reported as date only (`dd/mm/yyyy`)<br /><br />Clicks and impressions from X Ads aren't included in raw data reports.<br /><br />Access to unrestricted raw data depends on participation in X Ads' **Advanced Mobile Measurement (AMM) program** and on end-user privacy settings:<br /><br />* AMM not enabled: all clicks and impressions are sent with `af_data_restriction=attribution`. All resulting events are restricted.<br />* AMM enabled:<br />  * EU users: events are restricted if data sharing with business partners is not granted.<br />  * Users who did not agree to share data: events are restricted (`af_data_restriction=attribution`).<br />  * Users who agreed to share data with business partners: events are not restricted (`af_data_restriction=none`).<br /><br />For more information, see the [X Ads setup guide, user privacy section](/docs/x-ads-formerly-twitter-ads-setup-guide-overview#x-ads-user-privacy). |
 
 ### Raw data context
 
@@ -58,8 +58,8 @@ Field-level restriction of raw data depends on the context of the data, as liste
 
 | Restriction type | Reports impacted |
 | --- | --- |
-| [Restricted media source](/docs/about-raw-data-identifier-restrictions#media-source-restrictions): Where the user came from | * Attribution: Installs, retargeting conversions, and uninstalls<br />* In-app events, sessions<br />* Protect360 reports |
-| Fully restricted | * Clicks<br />* Impressions<br />* Blocked clicks (Protect360) |
+| [Restricted media source](/docs/about-raw-data-identifier-restrictions#media-source-restrictions): Where the user came from | <ul><li>Attribution: Installs, retargeting conversions, and uninstalls</li><li>In-app events, sessions</li><li>Protect360 reports</li></ul> |
+| Fully restricted | <ul><li>Clicks</li><li>Impressions</li><li>Blocked clicks (Protect360)</li></ul> |
 
 ### Delivery of raw data
 
@@ -72,7 +72,9 @@ User-level attribution data in AppsFlyer is available using the following raw da
 * Postbacks to networks
 * [Get conversion data (GCD) API](https://dev.appsflyer.com/hc/docs/conversion-data) in the context of the client-side user-level data API
 
-### Unavailable attribution fields
+<div id="unavailable-attribution-fields" />
+
+<Accordion title="Unavailable attribution fields">
 
 The following fields are unavailable when the media source is restricted:
 
@@ -108,7 +110,11 @@ The following fields are unavailable when the media source is restricted:
 | Re-engagement window | af\_reengagement\_window |
 | Store product page | store\_product\_page |
 
-### Identifier restriction
+</Accordion>
+
+<div id="identifier-restriction" />
+
+<Accordion title="Identifier restriction">
 
 When identifier restriction applies, the fields listed in the table that follows are the only fields available in the raw data reports.
 
@@ -150,34 +156,48 @@ When identifier restriction applies, the fields listed in the table that follows
 | platform |
 | is\_paid\_media |
 
+</Accordion>
+
 ## FAQ
 
-#### What events are restricted?
+<Accordion title="What events are restricted?">
 
 Restricted events, as detailed in the [table above](/docs/about-raw-data-identifier-restrictions#media-source-restrictions), may include conversions (installs, re-engagements, and re-attributions) and associated in-app events to which the restricting ad network is attributed.
 
-#### How does the restricted media source impact raw data reports?
+</Accordion>
+
+<Accordion title="How does the restricted media source impact raw data reports?">
 
 * The *media source* field is populated with *restricted*.
 * The attribution fields listed in this article are either empty or populated with *null*.
 
 **Report example:** Installs [restricted raw data](https://docs.google.com/spreadsheets/d/e/2PACX-1vScXJznEex0WwdCy78Bm8LtrhbCk1jNy14O_t7etrq5ab5v4CIEiInfFD4B1EsZCE-_w-dVRAxl_cu4/pub?output=csv) in a CSV file. Other raw data reports are populated in a similar manner.
 
-#### How does the restricted media source impact postbacks sent to partners?
+</Accordion>
+
+<Accordion title="How does the restricted media source impact postbacks sent to partners?">
 
 Postbacks sent to partners don't include attribution fields.
 
-#### How do restricted events impact postbacks to third-party platforms?
+</Accordion>
+
+<Accordion title="How do restricted events impact postbacks to third-party platforms?">
 
 Postbacks for attributed ad networks listed in the [table above](#media-source-restrictions) aren't sent to third-party platforms.
 
-#### Do non-restricted events impact postbacks to third-party platforms?
+</Accordion>
 
-For events sent to third-party platforms such as analytics and marketing platforms, see the [postback restrictions on third-party platforms](/docs/discrepancies-between-appsflyer-and-third-party-platforms#postback-restrictions). In some cases, postbacks for non-restricted events don't include the media source. This means attribution is credited as organic.
+<Accordion title="Do non-restricted events impact postbacks to third-party platforms?">
 
-#### What about the data of assists that form part of the attribution?
+For events sent to third-party platforms such as analytics and marketing platforms, see the [postback restrictions on third-party platforms](/docs/discrepancies-between-appsflyer-and-third-party-platforms#postback-restrictions-on-third-party-platforms). In some cases, postbacks for non-restricted events don't include the media source. This means attribution is credited as organic.
+
+</Accordion>
+
+<Accordion title="What about the data of assists that form part of the attribution?">
 
 Data related to assists is regarded as attribution data and isn't available.
+
+</Accordion>
 
 > 📘 **See also**
 >

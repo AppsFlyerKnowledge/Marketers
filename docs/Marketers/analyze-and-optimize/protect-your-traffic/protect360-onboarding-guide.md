@@ -35,7 +35,7 @@ This guide outlines a phased onboarding approach of 6 weeks:
 
 Protect360 is an advanced fraud protection solution designed to detect, prevent, and respond to ad fraud. Powered by AI and with real-time detection, it helps block fraud, reduce wasted spending, and protect your marketing from threats such as click injection, fake installs, and bots. It enables precise control and full transparency through features like validation rules and Fraud Protection Studio.
 
-### Setup (weeks 1–3)
+<Accordion title="Setup (weeks 1–3)">
 
 In this step, the focus is to send in-app data to AppsFlyer, set up the basic settings for Fraud Protection, and align your BI terms with AppsFlyer.
 
@@ -49,7 +49,6 @@ There are two ways to send in-app events data to AppsFlyer: SDK and Server-to-Se
 > 📘 **Note**
 >
 > If unsure which one you use, confirm with your development or marketing operations teams
-
 
 #### **Fraud Protection Studio settings**
 
@@ -78,7 +77,6 @@ You can export Protect360 data in three ways: [Raw Data Report](/docs/protect360
 >
 > In order to get the full value of Protect360, export the [Post-attribution report](/docs/protect360-raw-data-reports#postattribution-reports) every 8th of every month, so you can reconsolidate with partners.
 
-
 #### **How to display hijacked installs correctly in your BI**
 
 For greater alignment and granularity of fraud protection data within your systems, you may u**se Raw Data Reports, Pull APIs, or Data Locker to properly view hijacked installs within your BI.**
@@ -104,7 +102,6 @@ To display hijacked installs properly in your BI:
 > * Tagged post attribution installs
 > * Tagged in-app events
 > * Tagged post attribution in-app events
-
 
 ![](https://files.readme.io/70d33b5c4359f839da8d46c4b07baf277148fc4d5c6ebc7a3e8b2d600bd7c5fc-35506628785169.png)
 
@@ -144,14 +141,15 @@ Contact your Customer Success Manager or Account Manager to learn more about bes
 >
 > For the rules to be as effective as possible, it’s recommended to review your UA / marketing / media buying strategy and assess which types of installs or app events match your efforts, to allow or block per your needs. For example, if you do not promote your app in country (GEO) X, you can create a rule to automatically block any such activity arriving from GEO X. You can create multiple rules to align protection to your marketing strategy.
 
-
 #### **Working with dashboards**
 
 The [Protect360 dashboard](/docs/protect360-dashboard) provides a visual overview of your fraud data, allowing you to investigate further and better understand fraud detection and its impact on your activities.
 
 ![](https://files.readme.io/4717e1f00d832a9808ac6469d89bf3a87f6701afb24a47f3b4393e4e393111ee-35506628785809.png)
 
-### Optimization (weeks 3–5)
+</Accordion>
+
+<Accordion title="Optimization (weeks 3–5)">
 
 #### **Campaign optimization**
 
@@ -174,8 +172,9 @@ Review your [Fraud Protection Studio settings](/docs/protect360-onboarding-guide
 >
 > **Tagged** installs are a subset of valid. Switch to **implemented** mode to block in real-time according to the Protect360 detection
 
+</Accordion>
 
-### Reconciliation (weeks 5–6)
+<Accordion title="Reconciliation (weeks 5–6)">
 
 #### **Fraud data reconciliation**
 
@@ -185,7 +184,9 @@ This critical step helps ensure that you and your partners are aligned on campai
 
 Download your [post-attribution data](/docs/protect360-anti-fraud-guide#postattribution-detection) and collaborate closely with your ad partners to cross-reference fraud metrics. This reconciliation helps identify discrepancies, resolve disputes proactively, and build transparency. Find out how to reconcile fraud data with ad partners [here](/docs/protect360-anti-fraud-guide#fraud-reconciliation-with-ad-networks).
 
-### Advanced protection setup (week 6+) [optional]
+</Accordion>
+
+<Accordion title="Advanced protection setup (week 6+) [optional]">
 
 #### **Advanced Security Module**
 
@@ -194,3 +195,5 @@ Available exclusively for Protect360 clients, the Advanced Security Module is de
 By filtering out unauthorized signals at the source, it helps reduce app store discrepancies, strengthens attribution accuracy, and protects your data from sophisticated cyber fraud.
 
 Reach out to your CSM or send an email to `<hello@appsflyer.com>`
+
+</Accordion>

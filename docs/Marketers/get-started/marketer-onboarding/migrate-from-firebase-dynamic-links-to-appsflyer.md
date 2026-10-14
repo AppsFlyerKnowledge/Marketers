@@ -43,30 +43,36 @@ Before you begin, you'll need your:
 * Dynamic Links from Firebase
 * App developer
 
-### Step 1. Create an AppsFlyer account
+<Accordion title="Step 1. Create an AppsFlyer account">
 
 * [Create an AppsFlyer account](https://www.appsflyer.com/get-started/).
 * [Add account users with appropriate permissions](/docs/user-management).
 
-### Step 2. Add your app
+</Accordion>
+
+<Accordion title="Step 2. Add your app">
 
 * [Add your app](/docs/adding-an-app-to-appsflyer) in AppsFlyer.
 * [Optional] Change the default 90-day [re-attribution window](/docs/set-up-re-attribution-window) to align with your definition of active users.
 
 ![add](https://files.readme.io/7f7bab2277d0f45434618d28714c727ccbb9e414192b765dd22551bcbd5b0a37-16950840602769.png)
 
-### Step 3. Create a OneLink template (app developer collaboration)
+</Accordion>
 
-**You and your app developer are both needed for this step*****.***
+<Accordion title="Step 3. Create a OneLink template (app developer collaboration)">
+
+**You and your app developer are both needed for this step*.***
 
 A OneLink template is required for creating links and end-user experiences. It forms the basis of the redirection logic for all OneLink links you create for your various marketing campaigns.
 
-* [Create a OneLink template](/docs/create-a-onelink-template#procedures)
+* [Create a OneLink template](/docs/create-a-onelink-template#create-a-onelink-template)
   * You must either be an AppsFlyer admin user or have [permissions to add/edit OneLink templates](/docs/user-management)
 
-### Step 4. Set up the AppsFlyer SDK (app developer task)
+</Accordion>
 
-**Your app developer is needed for this step*****.***
+<Accordion title="Step 4. Set up the AppsFlyer SDK (app developer task)">
+
+**Your app developer is needed for this step*.***
 
 The AppsFlyer SDK integrated into the app is the link between the app and the AppsFlyer platform. It provides:
 
@@ -84,13 +90,10 @@ Integrate AppsFlyer SDK in your app using the steps below.
 3. Handle Firebase's SDK.  
    You can switch exclusively to AppsFlyer, or run both SDKs simultaneously for a few weeks. View a breakdown of these options in the table below.
 
-   
-
 | Option | What happens after  <br />updated app version release | Impact |
 | --- | --- | --- |
-| Remove Firebase's SDK (recommended) | Only AppsFlyer records new installs and updating users.  <br />Firebase still shows events performed by users, until the users update their app too. | * Fast transition<br />* No double attribution<br />* Allows you to see if you have any lingering app versions with the Firebase SDK still on them |
-| Keep Firebase's SDK for a transition period | AppsFlyer and Firebase attribute new installs and report events. At a later date, remove the Firebase SDK. | * Data validation is possible. Meaning, you can compare data from AppsFlyer and Firebase<br />* Double attribution, which may cause double charges with ad networks<br />* Higher workload |
-
+| Remove Firebase's SDK (recommended) | Only AppsFlyer records new installs and updating users.  <br />Firebase still shows events performed by users, until the users update their app too. | <ul><li>Fast transition</li><li>No double attribution</li><li>Allows you to see if you have any lingering app versions with the Firebase SDK still on them</li></ul> |
+| Keep Firebase's SDK for a transition period | AppsFlyer and Firebase attribute new installs and report events. At a later date, remove the Firebase SDK. | <ul><li>Data validation is possible. Meaning, you can compare data from AppsFlyer and Firebase</li><li>Double attribution, which may cause double charges with ad networks</li><li>Higher workload</li></ul> |
 
 4. After all other tasks in the scope of work are completed, update the app version with AppsFlyer SDK to the market. New users are attributed by AppsFlyer.   
    **Note**:
@@ -98,9 +101,11 @@ Integrate AppsFlyer SDK in your app using the steps below.
    * Your Android app may exist on unofficial APK sites, even if you don't know it (search the web for your app's package name to find out). APK sites take some time to update to the latest version, so they may bring organic users, which install old versions without AppsFlyer SDK.
    * App update rollouts in the app stores can take a couple of days to fully complete. Users installing during this phase may still get the previous version.
 
-### Step 5. Understand parameter mapping (app developer task)
+</Accordion>
 
-**Your app developer is needed for this step*****.***
+<Accordion title="Step 5. Understand parameter mapping (app developer task)">
+
+**Your app developer is needed for this step*.***
 
 Understand how Firebase Dynamic Links parameters map to AppsFlyer's corresponding parameters.
 
@@ -114,13 +119,11 @@ Use this table as a reference for all the parameters you currently use when you 
 >
 > If a Firebase parameter isn't listed, it is because AppsFlyer covers this in the OneLink template setup without you needing to put a parameter in your links.
 
+<table><thead><tr><th>Grouping</th><th>Firebase</th><th>AppsFlyer</th><th>Description</th></tr></thead><tbody><tr><td>Mobile parameters</td><td>link</td><td><ul><li>af_dp</li><li>deep_link_value</li></ul></td><td><ul><li><strong>af_dp</strong> - URI scheme used as a fallback method to launch iOS and Android apps.</li><li><strong>deep_link_value</strong> - Value name for the specific in-app content that users will be directed to.</li></ul></td></tr><tr><td><br/>Android parameters</td><td>afl</td><td>af_android_url</td><td>Allows redirection of Android users to a customized web page (the domain must be in the <a href="./set-up-your-domain-redirect-allowlist">redirect allowlist</a>)</td></tr><tr><td rowspan="2">iOS parameters<br/><br/> </td><td>ifl</td><td>af_ios_url</td><td>Allows redirection of iOS users to a customized web page (the domain must be in the <a href="./set-up-your-domain-redirect-allowlist">redirect allowlist</a>)</td></tr><tr><td>efr</td><td>af_force_deeplink</td><td>Used to force an iOS app to open using the af_dp URI scheme. Without this, the app won't open using the URI scheme</td></tr><tr><td>Other platform URL</td><td>ofl</td><td>af_web_dp</td><td>Allows redirection of desktop users to a customized web page</td></tr><tr><td rowspan="3"><br/>Social tags<br/><br/> </td><td>st</td><td>af_og_title</td><td>Used to customize the title of shared content on Social media</td></tr><tr><td>sd</td><td>af_og_description</td><td>Used to customize the description of shared content on social media</td></tr><tr><td>si</td><td>af_og_image</td><td>Used to customize the image of shared content on social media</td></tr><tr><td rowspan="5"><p>Analytic parameters <br/><br/><br/><br/> </p></td><td>utm_source</td><td>pid</td><td>Media Source</td></tr><tr><td>utm_medium</td><td>af_channel</td><td>Identifies the media source channels where your ads are distributed</td></tr><tr><td>utm_campaign</td><td>c</td><td>Campaign name</td></tr><tr><td>utm_term</td><td>af_keywords</td><td>Keywords list for text-targeted campaigns</td></tr><tr><td>utm_content</td><td>af_adset</td><td>Collection of ads associated with a campaign</td></tr></tbody></table>
 
+</Accordion>
 
-<table><thead><tr><th>Grouping</th><th>Firebase</th><th>AppsFlyer</th><th>Description</th></tr></thead><tbody><tr><td>Mobile parameters</td><td>link</td><td><ul><li>af_dp</li><li>deep_link_value</li></ul></td><td><ul><li><strong>af_dp</strong> - URI scheme used as a fallback method to launch iOS and Android apps.</li><li><strong>deep_link_value</strong> - Value name for the specific in-app content that users will be directed to.</li></ul></td></tr><tr><td><br/>Android parameters</td><td>afl</td><td>af_android_url</td><td>Allows redirection of Android users to a customized web page (the domain must be in the <a href="./set-up-your-domain-redirect-allowlist">redirect allowlist</a>)</td></tr><tr><td rowspan="2">iOS parameters<br/><br/> </td><td>ifl</td><td>af_ios_url</td><td>Allows redirection of iOS users to a customized web page (the domain must be in the <a href="./set-up-your-domain-redirect-allowlist">redirect allowlist</a>)</td></tr><tr><td>efr</td><td>af_force_deeplink</td><td>Used to force an iOS app to open using the af_dp URI scheme. Without this, the app won't open using the URI scheme</td></tr><tr><td>Other platform URL</td><td>ofl</td><td>af_web_dp</td><td>Allows redirection of desktop users to a customized web page</td></tr><tr><td rowspan="3"><br/>Social tags<br/><br/> </td><td>st</td><td>af_og_title</td><td>Used to customize the title of shared content on Social media</td></tr><tr><td>sd</td><td>af_og_description</td><td>Used to customize the description of shared content on social media</td></tr><tr><td>si</td><td>af_og_image</td><td>Used to customize the image of shared content on social media</td></tr><tr><td rowspan="5"><p> </p><p> </p><p>Analytic parameters <br/><br/><br/><br/> </p></td><td>utm_source</td><td>pid</td><td>Media Source</td></tr><tr><td>utm_medium</td><td>af_channel</td><td>Identifies the media source channels where your ads are distributed</td></tr><tr><td>utm_campaign</td><td>c</td><td>Campaign name</td></tr><tr><td>utm_term</td><td>af_keywords</td><td>Keywords list for text-targeted campaigns</td></tr><tr><td>utm_content</td><td>af_adset</td><td>Collection of ads associated with a campaign</td></tr></tbody></table>
-
-
-
-### Step 6. Create OneLink links with mapped parameters
+<Accordion title="Step 6. Create OneLink links with mapped parameters">
 
 Using your mapped parameters, you can create OneLink links from your OneLink template.
 
@@ -128,19 +131,17 @@ Links can be created [in bulk](/docs/perform-onelink-bulk-actions-via-csv) via C
 
 Use the following table to determine which method best works for your use.
 
-
-
 | Firebase | AppsFlyer | Use it if | Notes |
 | --- | --- | --- | --- |
 | Firebase console | [OneLink Management page](/docs/onelink-guide) | You would like to create OneLink links one by one. In this way, you can utilize the full OneLink features and possibilities |  |
-| Dynamic Link Builder API | [SDK](/docs/user-invite-attribution) | You would like to create in-app programmatically generated links for uses such as user invites and referrals | * Requires iOS or Android developer |
-| Firebase REST API | [OneLink API](/docs/use-onelink-api-to-create-links-in-large-scale-campaigns) | You would like to create links programmatically outside the mobile app | * Requires a developer<br />* Not available on the free plan |
+| Dynamic Link Builder API | [SDK](/docs/user-invite-attribution) | You would like to create in-app programmatically generated links for uses such as user invites and referrals | <ul><li>Requires iOS or Android developer</li></ul> |
+| Firebase REST API | [OneLink API](/docs/use-onelink-api-to-create-links-in-large-scale-campaigns) | You would like to create links programmatically outside the mobile app | <ul><li>Requires a developer</li><li>Not available on the free plan</li></ul> |
 | Manual link construction | [Long links](/docs/understand-onelink-short-vs-long-urls) | You would like to manually construct the link with its query parameters. Use if you don't require short links For example if the link will be behind a button or a banner |  |
-|  | [Bulk Links](/docs/perform-onelink-bulk-actions-via-csv) | You would like to migrate all your Firebase dynamic links in bulk to AppsFlyer.<br /><br />This is recommended to quickly move over all your links without any errors | * Requires a pre-step of [mapping the link parameter keys and values according to the corresponding Firebase parameters](/docs/migrate-from-firebase-dynamic-links-to-appsflyer#map-parameters)<br />* Not available on the free plan. |
+|  | [Bulk Links](/docs/perform-onelink-bulk-actions-via-csv) | You would like to migrate all your Firebase dynamic links in bulk to AppsFlyer.<br /><br />This is recommended to quickly move over all your links without any errors | <ul><li>Requires a pre-step of [mapping the link parameter keys and values according to the corresponding Firebase parameters](/docs/migrate-from-firebase-dynamic-links-to-appsflyer#map-parameters)</li><li>Not available on the free plan.</li></ul> |
 |  | [Smart Banner](/docs/smart-banners-mobile-web-to-app-for-marketers) | you would like to create banners on mobile websites that deep link to your app |  |
 |  | [Smart Script](/docs/set-up-smart-script-to-convert-web-visitors) | If you would like to construct a long link dynamically in a web page for a web-to-app experience |  |
 
-
+</Accordion>
 
 > 📘 **See also**
 >

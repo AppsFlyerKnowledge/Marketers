@@ -50,12 +50,11 @@ This guide regards the hybrid scenario. Learn how to bridge the gap between the 
 >
 > [![](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)
 
-
 ### Recording in-app events in hybrid apps
 
 In this guide we provide two methods for recording in-app events in hybrid apps:
 
-* **[Recommended]** [**JavaScript interface**](/docs/in-app-events-for-hybrid-apps#JavaScript-interface): Uses the native JavaScript interface in order to establish communication between the HTML or Web View and the native code. This way you can send in-app event-related data from the web view to the native code. Once the native code obtains the data, it sends it to AppsFlyer using the SDK.
+* **[Recommended]** [**JavaScript interface**](/docs/in-app-events-for-hybrid-apps#javascript-interface): Uses the native JavaScript interface in order to establish communication between the HTML or Web View and the native code. This way you can send in-app event-related data from the web view to the native code. Once the native code obtains the data, it sends it to AppsFlyer using the SDK.
 * [**URL loading**](/docs/in-app-events-for-hybrid-apps#url-loading): In this method, the native code listens to URL loading events. You can set the native code to listen to loading events of specific URLs and extract data from the URL parameters. The data is then passed to the SDK.
 
 ## JavaScript interface
@@ -77,7 +76,7 @@ The implementation consists of the following steps:
 1. HTML code for webview or web page
 2. Native code implementation for webview
 
-### Android
+<Accordion title="Android">
 
 #### HTML code for Android
 
@@ -150,7 +149,7 @@ public class MainJsInterface {
  MainJsInterface(Context c) {
   mContext = c;
  }
- 
+
  //Set Customer User ID
  @JavaScriptInterface
  public void setCustomerUserId(String customerUserId){
@@ -193,7 +192,9 @@ the
 `recordEvent` method that we define in MainJsInterface
 class.
 
-### iOS
+</Accordion>
+
+<Accordion title="iOS">
 
 #### HTML code for iOS
 
@@ -241,7 +242,6 @@ When passing event value, keep the following in mind:
 > 📘 **Note**
 >
 > The HTML code is for both Objective C and Swift.
-
 
 #### Objective c
 
@@ -363,6 +363,8 @@ the
 incoming message, it passes it on to the `recordEvent`
 method which parses the values and calls the AppsFlyer SDK
 `logEvent` method.
+
+</Accordion>
 
 ## URL loading
 

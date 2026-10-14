@@ -34,15 +34,15 @@ Nutrition Labels provide information about an apps' privacy practices in an easy
 
 ## What is in the AppsFlyer Privacy Manifest?
 
-> ❗️ Important!
+> 📘 **Important!**
 >
 > In addition to the AppsFlyer SDK, you will have to determine your own data collection, Required Reason API, and usage in your app or other SDKs and report that information in the Nutrition Labels
 
 AppsFlyer SDK 6.14.0 includes the AppsFlyer Privacy Manifest. This includes:
 
-- [Data usage](/docs/implement-privacy-manifest-in-your-app#h_01HQ03P71BG159MCE3VQY4GTMH)
-- [Required Reason APIs](/docs/implement-privacy-manifest-in-your-app#h_01HQ03NV880VHFTXQDE8R6ZRZH)
-- [Tracking domains](/docs/implement-privacy-manifest-in-your-app#h_01HQ03NV88SJPYKBM66S7X6GP8)
+* [Data usage](#data-usage)
+* [Required Reason APIs](#required-reason-apis)
+* [Tracking domains](#tracking-domains)
 
 ### Data usage
 
@@ -52,7 +52,7 @@ App developers can then use Xcode to create a privacy report, summarizing the in
 
 Following are the Data Types collected by the AppsFlyer SDK, that are included in the Privacy Manifest:
 
-> 📘 Note
+> 📘 **Note**
 >
 > The following assumes AppsFlyer software default configurations. App developers are responsible for ensuring that they adapt their own manifest accordingly in line with their specific configurations and uses of the AppsFlyer SDK.
 
@@ -65,30 +65,27 @@ Following are the Data Types collected by the AppsFlyer SDK, that are included i
 
 Apple provided a list of APIs that require reasoning for their use. Apps and SDKs that use these APIs should detail them in the Required Reson API section of the Privacy Manifest. These APIs are divided into categories based on their functionality and the information they provide according to [Apple’s list of topics.](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api?language=objc) These are the APIs that are included in the AppsFlyer SDK version 6.14.0 Privacy Manifest:
 
-- [File Timestamp APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393)
-- [User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401)
+* [File Timestamp APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393)
+* [User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401)
 
 To clarify the usage of Required Reason APIs, app developers will be required to declare the API category and specify the reasons for using the API. Below are the AppsFlyer APIs and their usage.
 
-<Tabs>
-<Tab title="SDK version 6.14.0 and above">
+<Accordion title="SDK version 6.14.0 and above">
 
 | API Category | API Category Type | Reason | Comments |
 | --- | --- | --- | --- |
 | [File Timestamp APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393) | NSPrivacyAccessedAPICategoryFileTimestamp | C617.1 | The SDK is using the [NSFileCreationDate](https://developer.apple.com/documentation/foundation/nsfilecreationdate?language=objc) and [NSFileModificationDate](https://developer.apple.com/documentation/foundation/nsfilemodificationdate?language=objc) APIs to determine the app installation date and the app update date. |
-| [User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401) | NSPrivacyAccessedAPICategoryUserDefaults | CA92.1 | The SDK stores data that is needed for its operation. For example - maintaining how many times the app was launched. |
+| [User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401) | NSPrivacyAccessedAPICategoryUserDefaults | CA92.1<br /><br />notionvc: 8aa85ca2-5648-4caa-9cac-b5b5df9ac883 | The SDK stores data that is needed for its operation. For example - maintaining how many times the app was launched. |
 
-</Tab>
-<Tab title="SDK versions 6.13.x and earlier">
+</Accordion>
+
+<Accordion title="SDK versions 6.13.x and earlier">
 
 | API Category | API Category Type | Reason | Comments |
 | --- | --- | --- | --- |
 | [File Timestamp APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393) | NSPrivacyAccessedAPICategoryFileTimestamp | C617.1 | The SDK is using the [NSFileCreationDate](https://developer.apple.com/documentation/foundation/nsfilecreationdate?language=objc) and [NSFileModificationDate](https://developer.apple.com/documentation/foundation/nsfilemodificationdate?language=objc) APIs to determine the app installation date and the app update date. |
 | [System boot time APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278394) | NSPrivacyAccessedAPICategorySystemBootTime | 35F9.1 | Measure SDK performance (time it took to execute a request etc.) |
-| [User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401) | NSPrivacyAccessedAPICategoryUserDefaults | CA92.1 | The SDK stores data that is needed for its operation. For example - maintaining how many times the app was launched. |
-
-</Tab>
-</Tabs>
+| [User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401) | NSPrivacyAccessedAPICategoryUserDefaults | CA92.1<br /><br />notionvc: 8aa85ca2-5648-4caa-9cac-b5b5df9ac883 | The SDK stores data that is needed for its operation. For example - maintaining how many times the app was launched. |
 
 For your convenience, you can copy the following code snippet which includes the Required Reasons above, and paste it within your PrivacyInfo.xcprivacy file.
 
@@ -121,6 +118,8 @@ For your convenience, you can copy the following code snippet which includes the
     </dict>
 </array>
 ```
+
+</Accordion>
 
 ### Tracking Domains
 

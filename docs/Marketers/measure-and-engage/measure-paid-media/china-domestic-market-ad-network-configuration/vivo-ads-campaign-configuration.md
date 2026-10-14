@@ -38,7 +38,7 @@ x-zendesk:
 
 vivo Ads configuration window includes 2 active tabs: Integration and Attribution link. Click the items below to read about the tabs setup.
 
-## Integration Tab
+<Accordion title="Integration Tab">
 
 The integration with vivo Ads only supports the install event in the default postback.
 
@@ -55,7 +55,9 @@ Toggle this to ON if you want to attribute view-through installs from vivo Ads. 
 
 ![mceclip2.png](https://files.readme.io/4d6fca06a4e11a8748064bce6510abe8594ef1fb68d1876ba5cd486073adf469-50900339194129.png)
 
-## Attribution Link Tab
+</Accordion>
+
+<Accordion title="Attribution Link Tab">
 
 In this tab, you can create the attribution links you want to send to vivo Ads for attributing vivo Ads campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
@@ -80,7 +82,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 ![attribution-link-parameters.png](https://files.readme.io/5f158d1a7edc30276168a271a48373b2444af4207865f8dc874e95f1c9772ce4-50900334031889.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
 
 ### Click-through Attribution
 
@@ -112,14 +114,22 @@ More details about the [view-through attribution here](/docs/set-up-lookback-win
 
 The impression attribution link contains similar attribution data to the click recording link (besides the different lookback window). Send it to vivo Ads to be activated when a corresponding ad is watched, usually for 1 second or more.
 
-## Cost Tab
+</Accordion>
+
+<Accordion title="Cost Tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad Revenue Tab
+</Accordion>
+
+<Accordion title="Ad Revenue Tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions Tab
+</Accordion>
+
+<Accordion title="Permissions Tab">
 
 Permissions are not supported in the integration with this partner.
+
+</Accordion>

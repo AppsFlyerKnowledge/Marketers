@@ -36,11 +36,10 @@ To maximize the score, ad networks must overcome the data gaps they have.
 
 1. Log into your account.
 2. Open the dashboard for any app you manage.
-3. Click **Active Integrations** in the left sidebar.
+3. Click **Active Integrations** in the left sidebar.  
+   The score indicator is shown under your network name.
 
-The score indicator is shown under your network name.
-
-<Image src="https://files.readme.io/8db94ad0cf5cb16ae6787606eb78d02c32a4e7ea5f06483960eb46251231709f-integrated-partners-data-richness.png" alt="integrated-partners-data-richness.png" />
+   ![integrated-partners-data-richness.png](https://files.readme.io/ee68f4ba63ef4e27292ed6b857e2cd05e4d83f8ba65a80655d1bf8b63df94f5f-360009360018.png)
 
 Advertisers can see the data richness score (low, medium, or high) for each ad network that has an integration with AppsFlyer.
 
@@ -50,30 +49,30 @@ To see the score in each data category included in the score, hover above the in
 
 In order to receive a high score, the following parameters should be provided by an ad network on all clicks and views:
 
-- Campaign data:
-  - Campaign ID
-  - Campaign name
-- Ad data:
-  - Adset ID
-  - Adset name
-  - Ad ID
-  - Ad name
-  - Ad type
-- Publisher data
-  - Site ID
-  - Subsite ID
-  - Channel
+* Campaign data:
+  * Campaign ID
+  * Campaign name
+* Ad data:  
+  * Adset ID
+  * Adset name
+  * Ad ID
+  * Ad name
+  * Ad type
+* Publisher data
+  * Site ID
+  * Subsite ID
+  * Channel
 
 ### Data threshold
 
-- The score is calculated weekly and can rise or drop depending on the completeness of the parameters listed above.
-- There is a minimum amount of conversions (installs, reattributions, reengagements) required for the score to be calculated. If the network has fewer conversions than the minimum within a given week, on the following week the score indicator will be disabled and no data categories will be shown.
+* The score is calculated weekly and can rise or drop depending on the completeness of the parameters listed above.
+* There is a minimum amount of conversions (installs, reattributions, reengagements) required for the score to be calculated. If the network has fewer conversions than the minimum within a given week, on the following week the score indicator will be disabled and no data categories will be shown.
 
 ## Next steps
 
 To add more parameters, and improve your integration and visibility in the AppsFlyer platform,
 
 1. Check which parameters your integration is missing.
-   - [Read about attribution link templates](/docs/getting-started-onboarding-guide-for-ad-networks#part-1-integration-and-testing)
-   - [Check the full list of parameters available for use](/docs/about-link-structure-and-parameters#attribution-link-parameters)
+   * [Read about attribution link templates](/docs/getting-started-onboarding-guide-for-ad-networks#part-1-integration-and-testing)
+   * [Check the full list of parameters available for use](/docs/about-link-structure-and-parameters#attribution-link-parameters)
 2. Contact your PDM to update the link template or get more information.

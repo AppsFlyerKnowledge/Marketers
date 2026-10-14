@@ -26,7 +26,7 @@ Send engagement data to AppsFlyer for attribution
   <Card title="Enriched Engagement Types guide for ad networks" href="/docs/enriched-engagement-types-guide-for-ad-networks" icon="fa-solid fa-handshake">
     Learn how to create Enriched Engagement Types (EET) attribution links to reflect users’ full spectrum of engagement and achieve accurate and effective campaign optimization.
   </Card>
-  <Card title="Redirecting users to the app store" href="/docs/redirecting-users-to-the-app-store" icon="fa-solid fa-link">
+  <Card title="Redirecting users to the app store" href="/docs/redirecting-users-to-the-app-store" icon="fa-solid fa-link">
     Learn about the options for redirecting users to the app store after an ad is served, and how to send engagement data to AppsFlyer.
   </Card>
   <Card title="Click signing for ad networks" href="/docs/click-signing-for-ad-networks" icon="fa-solid fa-handshake">

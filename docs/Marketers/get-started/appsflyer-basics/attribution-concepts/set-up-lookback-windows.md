@@ -37,20 +37,7 @@ By setting attribution lookback windows per media source, AppsFlyer attributes a
 
 #### Configurable lookback windows per attribution type
 
-| **Attribution type** | **Attribution method** | **Lookback window** | |
-| --- | --- | --- | --- |
-| **Range** | **Default** |
-| Click-through  (All media sources) | Referrer, ID matching | 1-30 Days OR 1-23 Hours | 7 days |
-| Probabilistic modeling (mobile) | [Adaptive](/docs/appsflyer-attribution-model#probabilistic-modeling) | Up to 24 hours |
-| Probabilistic modeling (CTV, PC and Console - single platform links) | Up to 7 days. (Set in the `af_lookback_window` link parameter.) | 7 days |
-| Engaged click-through  (Selected non-SRN [media sources](/docs/about-enriched-engagement-types#allowed-networks)*) | ID matching | 1-7 days or 1-23 hours | 2 days |
-| Probabilistic modeling (mobile) | [Adaptive](/docs/appsflyer-attribution-model#probabilistic-modeling) | Up to 24 hours |
-| Engaged view-through  (Selected non-SRN [media sources](/docs/about-enriched-engagement-types#allowed-networks)*) | ID matching | 1-7 days or 1-23 hours | 2 days |
-| Probabilistic modeling (mobile) | [Adaptive](/docs/appsflyer-attribution-model#probabilistic-modeling) | Up to 24 hours |
-| View-through  (Selected [media sources](/docs/measure-view-through-engagements#view-vta-partner-list)) | ID matching | 1-24 hours  [Until Dec 15, 2021, the upper bound was 7 days] | 24 hours |
-| Probabilistic modeling (mobile) | [Adaptive](/docs/appsflyer-attribution-model#probabilistic-modeling) | Up to 24 hours |
-| Probabilistic modeling (CTV, PC and Console - single platform links) | Up to 7 days. (Set in the `af_lookback_window` link parameter.) | 24 hours |
-| Probabilistic modeling (CTV, PC and Console - [cross-platform OneLink attribution links](/docs/set-up-cross-platform-links-for-multi-device-campaigns#traits-and-limitations)) | Up to 72 hours. (Set in the `af_xplatform_vt_lookback` link parameter.) | 24 hours |
+<table><thead><tr><th rowspan="2"><p><strong>Attribution type</strong></p></th><th rowspan="2"><p><strong>Attribution method</strong></p></th><th colspan="2"><strong>Lookback window </strong></th></tr><tr><th><strong>Range</strong></th><th><strong>Default</strong></th></tr></thead><tbody><tr><td rowspan="3"><p>Click-through</p><p>(All media sources)</p></td><td>Referrer, ID matching</td><td>1-30 Days OR<br/>1-23 Hours</td><td>7 days</td></tr><tr><td>Probabilistic modeling (mobile)</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling">Adaptive</a></td><td>Up to 24 hours</td></tr><tr><td>Probabilistic modeling (CTV, PC and Console - single platform links)</td><td>Up to 7 days. (Set in the <code>af_lookback_window</code> link parameter.)</td><td>7 days</td></tr><tr><td rowspan="2"><p>Engaged click-through</p><p>(Selected non-SRN <a href="./about-enriched-engagement-types#which-networks-can-report-engaged-views-and-engaged-clicks">media sources</a>\*)</p></td><td>ID matching</td><td>1-7 days or 1-23 hours</td><td>2 days</td></tr><tr><td>Probabilistic modeling (mobile)</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling">Adaptive</a></td><td>Up to 24 hours</td></tr><tr><td rowspan="2"><p>Engaged view-through</p><p>(Selected non-SRN <a href="./about-enriched-engagement-types#which-networks-can-report-engaged-views-and-engaged-clicks">media sources</a>\*)</p></td><td>ID matching</td><td>1-7 days or 1-23 hours</td><td>2 days</td></tr><tr><td>Probabilistic modeling (mobile)</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling">Adaptive</a></td><td>Up to 24 hours</td></tr><tr><td rowspan="4"><p>View-through</p><p>(Selected <a href="./measure-view-through-engagements#view-vta-partner-list">media sources</a>)</p></td><td>ID matching</td><td><p>1-24 hours</p><p>[Until Dec 15, 2021, the upper bound was 7 days]</p></td><td>24 hours</td></tr><tr><td>Probabilistic modeling (mobile)</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling">Adaptive</a></td><td>Up to 24 hours</td></tr><tr><td>Probabilistic modeling (CTV, PC and Console - single platform links)</td><td>Up to 7 days. (Set in the <code>af_lookback_window</code> link parameter.)</td><td>24 hours</td></tr><tr><td>Probabilistic modeling (CTV, PC and Console - <a href="./set-up-cross-platform-links-for-multi-device-campaigns#traits-and-limitations">cross-platform OneLink attribution links</a>)</td><td>Up to 72 hours. (Set in the <code>af_xplatform_vt_lookback</code> link parameter.)</td><td>24 hours</td></tr></tbody></table>
 
 *Lookback windows for `engaged_click` and `engaged_view` can only be set for non-SRN networks. For SRNs, `engaged_click` and `engaged_view` parameters share the same lookback window as clicks and are, therefore, set by the **Install Click-Through Attribution Lookback** sliders.
 
@@ -142,23 +129,31 @@ In fact, almost 62% of users who launch the app, do so within 15 minutes of enga
 
 Below is a list of possible scenarios and examples of lookback window usage.
 
-### SRN discrepancy: SRN lookback longer than AppsFlyer
+<Accordion title="SRN discrepancy: SRN lookback longer than AppsFlyer">
 
 You set a campaign on X Ads and configure the click-through lookback window to 7 days. X Ads, on the other hand, has a default lookback window of 14 days.
 
 [![srn-discrepancy-srn-lookback-larger-than-appsflyer.png](https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png)](https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png)
 
-### SRN lookback smaller than AppsFlyer
+</Accordion>
+
+<Accordion title="SRN lookback smaller than AppsFlyer">
 
 You set a campaign on X Ads and configure the click-through lookback window to 28 days. X Ads, on the other hand, has a default lookback window of 14 days.
 
 [![srn-lookback-smaller-than-appsflyer.png](https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png)](https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png)
 
-### Attribution link without a lookback window parameter
+</Accordion>
+
+<Accordion title="Attribution link without a lookback window parameter">
 
 It is possible to have an attribution link that doesn't have a lookback window parameter. In such cases, AppsFlyer defaults to a 7-day lookback window for clicks, and a 1-day lookback window for impressions.
 
-### Lookback in hours for flash campaigns
+</Accordion>
+
+<div id="lookback-in-hours-for-flash-campaigns" />
+
+<Accordion title="Lookback in hours for flash campaigns">
 
 Flash campaigns are campaigns whose intention is to prompt users to install the app as quickly as possible and within a short promotion window.
 
@@ -167,6 +162,8 @@ An eCommerce app called SuperShopping runs a flash campaign. In this campaign, a
 Johnny, SuperShopping's lead marketer, creates an attribution Link and sets the lookback window to 1 hour. This way Johnny knows how many users respond to the campaign.
 
 In addition, the app's developer can identify the users that come from this flash campaign and deliver the promotions that the campaign advertises.
+
+</Accordion>
 
 > 📘 **Tip**
 >

@@ -26,8 +26,6 @@ x-zendesk:
 
 Upon conversion, AppsFlyer can return the following parameters:
 
-
-
 | Parameter Name | Parameter Name Convention |
 | --- | --- |
 | Campaign Name | `{campaign_name}` |
@@ -43,28 +41,22 @@ Upon conversion, AppsFlyer can return the following parameters:
 | Channel (Instagram, Meta Audience Network, Facebook, Messenger) | `{af_channel}` |
 | Geo | `{user_country}` |
 
-
 > 📘 **Example**
 >
-> http://mcmp\_postbackURL.........&mcmp\_ADset\_name =`{adset_name}`
-
+> http://mcmp_postbackURL.........&mcmp_ADset_name =`{adset_name}`
 
 ## In-app event postbacks
 
 Upon In-app events, AppsFlyer can return the following parameters (in addition to the above):
-
-
 
 | Parameter Name | Parameter Name Convention |
 | --- | --- |
 | Event Name* | `{event_name}` |
 | Event Value | `{event_value}` |
 
-
 > 📘 **Example**
 >
-> http://FMP\_postbackURL.........&eventname=`{event_name}`
-
+> http://FMP_postbackURL.........&eventname=`{event_name}`
 
 * The Meta campaign management partner can choose to receive the in-app event name as the advertiser configured it in AppsFlyer's SDK or to have the advertiser fill in a free text field per event.
 

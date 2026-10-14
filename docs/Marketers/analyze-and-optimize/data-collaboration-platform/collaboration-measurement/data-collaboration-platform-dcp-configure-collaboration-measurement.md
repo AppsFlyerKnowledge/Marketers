@@ -26,54 +26,56 @@ x-zendesk:
 
 After [preparing the conversion, engagement, and campaign-mapping](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement) data, you can configure DCP to use them for measurement and attribution:
 
-1. [**Define campaign type**](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#select-campaign-type-onsite-offsite-or-both) – Choose on-site, off-site, or combined. This determines how DCP processes your data and sets the required configuration tasks.
-2. [**Assign tasks**](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#assign-configuration-task) – The owner assigns each configuration task to the collaborator with access to the relevant data.
-3. [**Configure tasks**](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-onsite-campaign-measurement) – Collaborators configure conversions, engagements, and campaign mapping. This includes setting up on-site and off-site campaigns so all data is connected, mapped, and ready for attribution.
+1. [**Define campaign type**](#select-campaign-type-on-site-off-site-or-both) – Choose on-site, off-site, or combined. This determines how DCP processes your data and sets the required configuration tasks.
+2. [**Assign tasks**](#assign-configuration-task) – The owner assigns each configuration task to the collaborator with access to the relevant data.
+3. [**Configure tasks**](#configure-on-site-and-off-site-campaign-measurement) – Collaborators configure conversions, engagements, and campaign mapping. This includes setting up on-site and off-site campaigns so all data is connected, mapped, and ready for attribution.
 4. [**Run and manage measurements**](/docs/data-collaboration-platform-dcp-run-and-manage-measurement) - Run measurements live or historical, duplicate them, re-run them, or change their scope.
 
 ## Start the measurement setup
 
 To start the measurement setup, follow these steps:
 
-1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
+1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
 2. On the **Data Collaboration Platform** page, select the collaboration you want to set.
 3. In the Collaboration page, perform **one** of the following steps:
    * If this is the first measurement set up in your collaboration, click **Set up measurement.** The **Create measurement** page is displayed.
    * If you already have a measurement set in your collaboration, click the plus sign in the measurement selection panel. The **Create measurement** page is displayed.
 
-![start-measurement.png](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)
+[![start-measurement.png](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)
 
 ## Select campaign type: on-site, off-site, or both
 
-Because on-site and off-site campaign types differ by where the conversion occurs and how attribution is handled, the collaboration owner must specify the campaign type before configuring collaboration measurement. For more information, see: [On-site vs. Off-site campaign measurement](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaign-measurement).
+Because on-site and off-site campaign types differ by where the conversion occurs and how attribution is handled, the collaboration owner must specify the campaign type before configuring collaboration measurement. For more information, see:[On-site vs. Off-site campaign measurement](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaign-measurement).
 
 To select the campaign type, follow these steps:
 
-1. [Start the measurement setup](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#open-measurement-settings).
-2. On the **Create Measurement** page, choose ![on-site icon.png](https://files.readme.io/c9ff0bb1e2c31527ee38a9403a6180e3ecd4c3ad105935fb59ed14c2474f6039-32148924980113.png)**On-site,** ![off-site icon.png](https://files.readme.io/6de5841985237de221c74d427ad06f719572000aafe8077c7cef64e53ee8caf5-32156666763921.png) **Off-site**, or both. Continue to **one** of the following:
-   * [Configure on-site campaign](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-onsite-campaign-measurement),
-   * [Configure off-site campaign](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-offsite-campaign-measurement),
-   * [Configure a combined on-site and off-site campaign](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-combined-onsite-and-offsite-campaign-measurement).
+1. [Start the measurement setup](#start-the-measurement-setup).
+2. On the **Create Measurement** page, choose  ![on-site icon.png](https://files.readme.io/c9ff0bb1e2c31527ee38a9403a6180e3ecd4c3ad105935fb59ed14c2474f6039-32148924980113.png) **On-site, ![off-site icon.png](https://files.readme.io/6de5841985237de221c74d427ad06f719572000aafe8077c7cef64e53ee8caf5-32156666763921.png) Off-site**, or both. Continue to **one** of the following:
+   * [Configure on-site campaign](#configure-on-site-and-off-site-campaign-measurement),
+   * [Configure off-site campaign](#configure-offsite-campaign-measurement),
+   * [Configure a combined on-site and off-site campaign](#configure-combined-onsite-and-offsite-campaign-measurement).
 
 ## Assign configuration task
 
-The Measurement settings page includes five key tasks: conversion, engagement, campaign mapping, media partners, and lookback window configuration.
+The Measurement settings page includes five key tasks: conversion, engagement, campaign mapping,  media partners, and lookback window configuration.
 
 The DCP account owner can assign tasks to collaborators to ensure data privacy and reflect the split in responsibilities. For example, one collaborator may handle engagement data while the other handles conversions. Collaborators only have access to the tasks assigned.
 
-### Assign a configuration task to a collaborator
+<Accordion title="Assign a configuration task to a collaborator">
 
 To assign any of the above tasks, follow the steps below:
 
-1. [Open measurement settings](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#open-measurement-settings).
-2. In each of the four tasks above, from the **Assignee** list, select the collaborator who will handle the task.
+1. [Open measurement settings](#start-the-measurement-setup).
+2. In each of the four tasks above, from the **Assignee** list, select the collaborator who will handle the task.
    * **Conversions task:** Assign to the collaborator whose platform hosts conversions.
    * **Campaigns task:** Assign to the collaborator whose platform hosts conversions.
    * **Engagements task:** Assign to the collaborator where user engagement occurs.
    * **Media partners task:** Assign to the collaborator whose media partner account is used for off-site campaigns
    * **Lookback windows task**– Automatically assigned to the collaboration owner. You may optionally assign the other collaborator.
 
-### Remove the configuration task assignment from a collaborator
+</Accordion>
+
+<Accordion title="Remove the configuration task assignment from a collaborator">
 
 In some cases, it may be necessary to revoke a configuration task assignment from a collaborator. When the collaboration owner removes an assignment, the following occurs:
 
@@ -83,46 +85,52 @@ In some cases, it may be necessary to revoke a configuration task assignment fro
 
 To remove a configuration task assignment, follow the steps below:
 
-1. Go to collaboration measurement, see Open measurement settings.
-2. In the relevant configuration step, from the **Assignee** list, remove the assigned collaborator.
+1. Go to collaboration measurement, see Open measurement settings.
+2. In the relevant configuration step, from the **Assignee** list, remove the assigned collaborator.
+
+</Accordion>
 
 ## Configure on-site and off-site campaign measurement
 
 Configure the campaign measurement setup in Measurement settings. Use the steps below based on whether your measurement is on-site, off-site, or a combined on-site and off-site setup.
 
-<Tabs>
-<Tab title="On-site campaign measurement">
+<Accordion title="Configure on-site campaign measurement">
 
 To set up an [on-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-campaigns), follow these steps:
 
-1. [Start the measurement setup](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#open-measurement-settings).
+1. [Start the measurement setup](#start-the-measurement-setup).
 2. [Set up the campaigns task](/docs/set-up-the-campaigns-task)
 3. [Set up the conversions task](/docs/set-up-the-conversions-task)
 4. [Set up the engagements task](/docs/set-up-the-engagements-task)
 5. [Set up the lookback windows task](/docs/set-up-the-lookback-windows-task)
 
-</Tab>
-<Tab title="Off-site campaign measurement">
+</Accordion>
 
-To set up an [off-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#off-site-campaigns), follow these steps:
+<div id="configure-offsite-campaign-measurement" />
 
-1. [Start the measurement setup](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#open-measurement-settings).
+<Accordion title="Configure off-site campaign measurement">
+
+To set up an [off-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns), follow these steps:
+
+1. [Start the measurement setup](#start-the-measurement-setup).
 2. [Set up the campaigns task](/docs/set-up-the-campaigns-task)
 3. [Set up the conversions task](/docs/set-up-the-conversions-task)
 4. [Set up the media partners task](/docs/set-up-the-media-partners-task)
 5. [Set up the lookback windows task](/docs/set-up-the-lookback-windows-task)
 
-</Tab>
-<Tab title="Combined campaign measurement">
+</Accordion>
 
-To set up a [combined on-site and off-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-and-off-site-campaigns), follow these steps:
+<div id="configure-combined-onsite-and-offsite-campaign-measurement" />
 
-1. [Start the measurement setup](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#open-measurement-settings).
+<Accordion title="Configure combined on-site and off-site campaign measurement">
+
+To set up a [combined on-site and off-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns), follow these steps:
+
+1. [Start the measurement setup](#start-the-measurement-setup).
 2. [Set up the campaigns task](/docs/set-up-the-campaigns-task)
 3. [Set up the conversions task](/docs/set-up-the-conversions-task)
 4. [Set up the engagements task](/docs/set-up-the-engagements-task)
 5. [Set up the media partners task](/docs/set-up-the-media-partners-task)
 6. [Set up the lookback windows task](/docs/set-up-the-lookback-windows-task)
 
-</Tab>
-</Tabs>
+</Accordion>

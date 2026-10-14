@@ -73,9 +73,9 @@ When a Series of Events rule blocks an install or in-app event, the details are 
 
 | Report | Key fields |
 | --- | --- |
-| Post-attribution installs | * Fraud reason = validation bots<br />* Fraud sub reason = validation rules pa<br />* Blocked reason value = rule name |
-| Post-attribution in-app events | * fraud\_reason = validation bots<br />* fraud\_sub\_reason = validation rules pa |
-| Blocked in-app events | * Blocked Reason = validation bots<br />* Blocked sub reason = validation rules pa<br />* Blocked Reason Value = rule name |
+| Post-attribution installs | <ul><li>Fraud reason = validation bots</li><li>Fraud sub reason = validation rules pa</li><li>Blocked reason value = rule name</li></ul> |
+| Post-attribution in-app events | <ul><li>fraud\_reason = validation bots</li><li>fraud\_sub\_reason = validation rules pa</li></ul> |
+| Blocked in-app events | <ul><li>Blocked Reason = validation bots</li><li>Blocked sub reason = validation rules pa</li><li>Blocked Reason Value = rule name</li></ul> |
 
 ## Examples
 

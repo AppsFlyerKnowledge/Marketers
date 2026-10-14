@@ -49,11 +49,10 @@ Set up the Audiences-Amplitude integration from within the Amplitude platform.
 | Field | Description |
 | --- | --- |
 | Name | Enter a name for the destination.<br /><br />If you will be creating more than one AppsFlyer destination in a single Amplitude project (for example, if you have more than one app in the project), be sure to create a name you will be able to easily identify later. |
-| AppsFlyer API Token V2.0 | **To retrieve the AppsFlyer API token, follow these steps in AppsFlyer:**  <br /><br />1. From the top menu bar, access the user menu (email address drop-down in the top right corner).<br />2. Select **Security center.**<br />3. In the **AppsFlyer API tokens** section, click **Manage your AppsFlyer API tokens.**<br />4. Copy the **V2.0** token. |
+| AppsFlyer API Token V2.0 | **To retrieve the AppsFlyer API token, follow these steps in AppsFlyer:**<ol><li>From the top menu bar, access the user menu (email address drop-down in the top right corner).</li><li>Select **Security center.**</li><li>In the **AppsFlyer API tokens** section, click **Manage your AppsFlyer API tokens.**</li><li>Copy the **V2.0** token.</li></ol> |
 | AppsFlyer App ID | Enter the App ID of the app for this destination as it appears in the AppsFlyer dashboard:<br /><br />![amplitude_app_id_from_appsflyer_dashboard.png](https://files.readme.io/2e7da9a20f0c4b59e58f51823dd9753ecc36b77e84622821cb3cb65e4f7b2743-33375708378385.png) |
 | Platform | Select the app platform (iOS or Android). |
-| Identifier | Instruct AppsFlyer how to connect your Amplitude data to your AppsFlyer data by selecting an Amplitude User Property on the left and the AppsFlyer key to map it to on the right. The AppsFlyer key you select must be one of the following:<br /><br />* **For iOS audiences:** iOS Advertiser ID, Amplitude User ID, or AppsFlyer Customer User ID<br />* **For Android audiences:** Google Advertiser ID, Amplitude User ID, or AppsFlyer Customer User ID |
-
+| Identifier | Instruct AppsFlyer how to connect your Amplitude data to your AppsFlyer data by selecting an Amplitude User Property on the left and the AppsFlyer key to map it to on the right. The AppsFlyer key you select must be one of the following:<ul><li>**For iOS audiences:** iOS Advertiser ID, Amplitude User ID, or AppsFlyer Customer User ID</li><li>**For Android audiences:** Google Advertiser ID, Amplitude User ID, or AppsFlyer Customer User ID</li></ul> |
 
 4. Click **Save** to save the new AppsFlyer destination.
 

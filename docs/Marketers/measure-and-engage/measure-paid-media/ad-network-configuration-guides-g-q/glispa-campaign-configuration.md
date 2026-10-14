@@ -38,7 +38,7 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
 
@@ -73,16 +73,14 @@ In this section you can map which of your AppsFlyer events to send to Glispa via
 3. Click **Add Event** to add an SDK Event to the list
 4. Complete the following parameters:
 
-
-
 | Parameter Name | Description |
 | --- | --- |
 | **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated with your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
 | **Send Revenue** | **When unchecked** - send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - send all the parameters including the revenue value (if it exists in the event). |
 
+</Accordion>
 
-
-## Attribution link tab
+<Accordion title="Attribution link tab">
 
 In this tab, you can create the attribution links you want to send to Glispa for attributing Glispa's campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
@@ -105,7 +103,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
 
 ### Click-through attribution
 
@@ -135,15 +133,21 @@ More details about the [view-through attribution here](/docs/set-up-lookback-win
 
 The impression attribution link contains similar attribution data to the click recording link (besides the different lookback window). Send it to Glispa to be activated when a corresponding ad is watched, usually for 1 second or more.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Glispa Media CPI automatically sends encrypted CPI cost data on the attribution link for all installs.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Use these toggles to give Glispa permissions to handle its own configuration for your app:
 
@@ -154,7 +158,7 @@ Use these toggles to give Glispa permissions to handle its own configuration for
 * ***Allow access to your retention report*** - only to the partner's own retention data
 * ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
 * ***Allow access to your aggregate in-app events data** -*only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*****a** - only to the revenue data attributed to the partner
+* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
@@ -169,3 +173,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 * ***Allow to configure in-app event postbacks*** - permit the agency to setup in-app event postbacks mapping to itself on the integration tab
 
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
+
+</Accordion>

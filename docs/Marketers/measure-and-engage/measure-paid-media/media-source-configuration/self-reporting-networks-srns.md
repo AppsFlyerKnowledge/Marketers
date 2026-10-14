@@ -24,8 +24,6 @@ x-zendesk:
 ---
 ## SRNs integrated with AppsFlyer
 
-
-
 | **SRN** | **Logo** |
 | --- | --- |
 | [Amazon Ads](/docs/amazon-ads-campaign-configuration) | ![amazon-ads-logo.png](https://files.readme.io/da898ff008f7fe6f9a6f845f7c170746c36bd88293632555c2a2c3db13b47414-32259457808145.png) |
@@ -40,8 +38,6 @@ x-zendesk:
 | [X Ads](/docs/x-ads-formerly-twitter-ads-setup-guide-overview) | ![X Ads logo.png](https://files.readme.io/be88359054dba353a15beeafc13d590f5296a721b206be3f768fa606592249e6-32259428909841.png) |
 | [Yahoo (Oath: Ad Platforms / Yahoo Gemini)](/docs/yahoo-integration-setup) | ![verizonmedia.png](https://files.readme.io/36291ff556d07a5dbf2ae8ff693ea33d21dae9e0518a94b251202634a24049cf-32259428916369.png) |
 | [Yahoo! Search Ads](/docs/yahoo-japan-search-ads-campaign-configuration) | ![](https://cdn.appsflyer.com/marketplace/static/logo/yahoojapansearch.png) |
-
-
 
 **Note:** SRNs have [user-level data use and retention restrictions.](/docs/user-level-data-retention)
 
@@ -66,7 +62,7 @@ After AppsFlyer performs the attribution, the customer sends in-app postbacks to
 
 ### How does attribution work with Advanced SRNs?
 
-Advanced SRNs support the same attribution methods as standard SRNs. In addition, advanced SRNs support measurement through the [Aggregated Advanced Privacy](/docs/appsflyer-knowledge-base-glossary#aggregated-advancedprivacy) framework. Depending on the network, this may include attribution based on advertising ID where dual consent has been obtained, or campaign measurement modeling based on click and impression data.
+Advanced SRNs support the same attribution methods as standard SRNs. In addition, advanced SRNs support measurement through the [Aggregated Advanced Privacy](/docs/appsflyer-knowledge-base-glossary#aggregated-advanced-privacy) framework. Depending on the network, this may include attribution based on advertising ID where dual consent has been obtained, or campaign measurement modeling based on click and impression data.
 
 ### Install attribution
 
@@ -82,7 +78,7 @@ When an app is first launched:
 
 #### Install attribution examples
 
-### Example A: Assisted attribution
+<Accordion title="Example A: Assisted attribution">
 
 ![SRN_1.png](https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png)
 
@@ -96,7 +92,9 @@ When an app is first launched:
 
 AppsFlyer gives advertisers assist data (unattributed engagements that occur before an install). This lets advertisers customize their multi-touch or fractional attribution models. For more information, see [Assisted installs explained](/docs/measure-assisted-installs).
 
-### Example B: Last click attribution
+</Accordion>
+
+<Accordion title="Example B: Last click attribution">
 
 ![SRN_2.png](https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png)
 
@@ -105,6 +103,8 @@ AppsFlyer gives advertisers assist data (unattributed engagements that occur bef
 **Network C** uses standard attribution integration.
 
 **AppsFlyer** attributes the install to Network C as they had the last click.
+
+</Accordion>
 
 ### Attribution windows
 
@@ -124,7 +124,7 @@ For users to open your app when the link is clicked, you just need to set up App
 
 So how can you deep link your users and get the relevant data from SRNs?
 
-### Direct deep linking
+<Accordion title="Direct deep linking">
 
 When a user device performs deep linking, direct deep linking with SRNs is done without calling the AppsFlyer deep linking method. In the example below, existing users clicking an ad are redirected to the activity directly using Facebook's methods, while new users get the same experience using AppsFlyer's conversion data. Learn how [Meta ads uses OneLink for deep linking](/docs/meta-ads-faq#who-needs-facebooks-sdk)
 
@@ -137,8 +137,11 @@ When a user device performs deep linking, direct deep linking with SRNs is done 
 > 2. If true, get the value of the ad group parameter.
 > 3. If the value contains the word "bonus", send the user to the "bonus" activity.
 
+</Accordion>
 
-### Deferred deep linking
+<div id="deferred-deep-linking" />
+
+<Accordion title="Deferred deep linking">
 
 In contrast to deep linking, deferred deep linking with SRNs is possible using the AppsFlyer GCD API.  AppsFlyer receives the conversion data and makes it available to the app on the first launch. Using the conversion data, new users who install after clicking on a deep linking/retargeting campaign on an SRN can be redirected within the app upon launch.
 
@@ -146,11 +149,15 @@ Deferred deep linking is supported for Google Ads, Meta (provided that the FB SD
 
 However, with other SRNs, the regular AppsFlyer deep linking parameters aren't present as part of the deep link data. To use this data within the app, the developer needs to employ further logic based on available parameters, such as campaign, ad set, or single ad names.
 
+</Accordion>
+
 ## iOS implications
 
 Most SRNs support SKAdNetwork and have the necessary integration with AppsFlyer.
 
-### iOS 14.5 SRN attribution
+<div id="ios-145-srn-attribution" />
+
+<Accordion title="iOS 14.5 SRN attribution">
 
 Starting iOS 14.5, when users give ATT consent in both the advertiser and publisher apps ([dual consent](/docs/appsflyer-knowledge-base-glossary#dual-consent)), SRN installs, which are recorded in the [SKAdNetwork dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer), are also shown in the traditional dashboards.
 
@@ -160,8 +167,9 @@ Starting iOS 14.5, when users give ATT consent in both the advertiser and publis
 > * The [SKAdNetwork dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer) updates with a lag of 48-72 hours after installs.
 > * Installs brought by Apple Ads (ASA) aren't attributed in the SKAdNetwork dashboard.
 
+</Accordion>
 
-### Sending event postbacks to SRNs
+<Accordion title="Sending event postbacks to SRNs">
 
 SRNs receiving event postbacks rely on the device ID being included in the postback. This enables SRNs to self-attribute reported user actions. Many iOS 14 users are non-consenting, meaning they don't allow access to their device ID (IDFA). In this case, you should expect:
 
@@ -173,10 +181,11 @@ SRNs receiving event postbacks rely on the device ID being included in the postb
 > * If an advertising ID is not available, postbacks for installs, app opens, or in-app events are not sent to SRNs. [However, in some cases, limited postbacks may still be sent to SRNs even when an advertiser ID is unavailable](/docs/self-reporting-networks-srns#does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid)[.](/docs/self-reporting-networks-srns#does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid)
 > * Click ad networks are not affected, as they use their own transaction IDs rather than device IDs to self-attribute event postback information.
 
+</Accordion>
 
 ## FAQ
 
-### How does retargeting work with SRNs?
+<Accordion title="How does retargeting work with SRNs?">
 
 Retargeting clicks from non-SRNs are easily identifiable by the existence of the `is_retargeting=true` parameter in the retargeting attribution link.  
 With SRNs, there is no similar indication. Instead, to enable attributing re-engagements from SRNs, AppsFlyer uses another logic:
@@ -188,7 +197,11 @@ With SRNs, there is no similar indication. Instead, to enable attributing re-eng
   * If the SRN responds back with engagement details, AppsFlyer validates the engagement is within the lookback window and beyond the minimum time between re-engagements.
   * Validated engagements are recorded as re-engagements and attributed to the SRN.
 
-### What is SRN mistargeting?
+</Accordion>
+
+<div id="what-is-srn-mistargeting" />
+
+<Accordion title="What is SRN mistargeting?">
 
 SRN campaigns should target a specific audience, but this doesn't always happen: Non-users in user-acquisition campaigns and existing users in retargeting campaigns.
 
@@ -229,21 +242,31 @@ AppsFlyer data analysts checked Meta ads **user acquisition** campaigns during a
 
 AppsFlyer research shows that solving mistargeting can have a dramatic impact on your marketing and user acquisition efforts.
 
-### Why is the Original URL field empty in raw data reports?
+</Accordion>
+
+<Accordion title="Why is the Original URL field empty in raw data reports?">
 
 Click is performed in the SRN environment but without an AppsFlyer attribution link. Therefore, the click's associated Original URL data is not available to AppsFlyer.
 
-### Dashboard doesn't show SRN clicks and impressions
+</Accordion>
+
+<Accordion title="Dashboard doesn't show SRN clicks and impressions">
 
 Click is performed in the SRN environment but without an AppsFlyer attribution link. Therefore, some SRNs don't give click and impression data to AppsFlyer.
 
 [Meta Ads](/docs/meta-ads-integration-setup#cost-clicks-and-impressions) and [Google](/docs/google-ads-adwords-cost-and-ad-revenue) provide aggregated data to AppsFlyer.
 
-### Can agencies configure SRN campaigns?
+</Accordion>
 
-Yes, [see here about SRN configuration by Agencies](/docs/about-agency-accounts#selfreporting-ad-networks).
+<Accordion title="Can agencies configure SRN campaigns?">
 
-### Can postbacks be sent when the advertising ID is not available?
+Yes, [see here about SRN configuration by Agencies](/docs/about-agency-accounts#self-reporting-ad-networks).
+
+</Accordion>
+
+<div id="does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid" />
+
+<Accordion title="Can postbacks be sent when the advertising ID is not available?">
 
 When advertising IDs contain an empty string (“”) or show the value ‘00000000-0000-0000-0000-000000000000’ (zeroed IDFAs),  postbacks for installs, app opens, or in-app events are not sent, except for the following scenarios:
 
@@ -256,6 +279,10 @@ When advertising IDs contain an empty string (“”) or show the value ‘00000
 
 **Google Click ID (**`gclid` **parameter):** A parameter passed in the URL with ad clicks, that identifies the campaign and other click attributes that are associated with the ad. This is used for ad tracking and campaign attribution.
 
-### Are clicks and impressions from SRNs available in raw data reports?
+</Accordion>
+
+<Accordion title="Are clicks and impressions from SRNs available in raw data reports?">
 
 No, clicks and impressions from SRNs are not shared in raw data reports. While SRN data is used for attribution, raw clicks and impressions are not included in reports. This applies to all SRNs, including TikTok, Snap, Meta, and Google.
+
+</Accordion>

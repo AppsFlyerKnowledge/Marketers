@@ -28,22 +28,24 @@ P2P lending is a way for individuals and businesses to lend and borrow money fro
 
 The data that you gather from event recording can highlight trustworthy borrowers and offer them better interest rates. Similarly, you can see who the most active lenders are and offer them lower fees. In addition, once you know what type of loans are most popular with your users, you can launch marketing campaigns that target these audiences.
 
-> 📘 Important!
+> 📘 **Important!**
 >
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
+> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=p2p_lending). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
 > * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=p2p_lending&view=code) for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the **[AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).**
+> * Detailed instructions for your developer can be found in the  **[AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).**
+>
+> For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
 
-For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
-
-![Flowchart_for_recommended_events P2P_lending_app_user_journey](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)
+[![Flowchart_for_recommended_events P2P_lending_app_user_journey](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)
 
 ## Recommended structures for predefined events
 
 The following section provides a list of event structures that are typical to the P2P lending vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Complete registration (af\_complete\_registration)
+<div id="complete-registration-af_complete_registration" />
+
+<Accordion title="Complete registration (af_complete_registration)">
 
 **Purpose**
 
@@ -59,7 +61,9 @@ When the user's registration is approved
 | --- | --- | --- |
 | af\_registration\_method | Type of signup method | email, Facebook |
 
-### Login (af\_login)
+</Accordion>
+
+<Accordion title="Login (af_login)">
 
 **Purpose**
 
@@ -73,11 +77,13 @@ When the user successfully logs in
 
 Can be sent without any additional parameters
 
+</Accordion>
+
 ## Recommended structures for custom events
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Registration submitted (registration\_submitted)
+<Accordion title="Registration submitted (registration_submitted)">
 
 **Purpose**
 
@@ -96,7 +102,9 @@ After the user submits a request to register
 | --- | --- | --- |
 | af\_registration\_method | Type of signup method | Email, Facebook |
 
-### Fill loan form (fill\_loan\_form\_\<FORM\_NAME\>)
+</Accordion>
+
+<Accordion title="Fill loan form (fill_loan_form_&lt;FORM_NAME>)">
 
 **Purpose**
 
@@ -112,11 +120,11 @@ When a borrower submits a form
 
 Can be sent without any additional parameters
 
-> 📘 Note
+> 📘 **Note**
 >
 > It is highly recommended that you associate loans with lenders. To do so, make sure to set the Customer User ID. [Setting the Customer User ID](/docs/customer-user-id-field-cuid) is your way to match lenders with users of your app as they appear in AppsFlyer. By setting the Customer User ID you make sure that any event is sent with the Customer User ID.
 
-### Submit loan application (submit\_loan\_application)
+<Accordion title="Submit loan application (submit_loan_application)">
 
 **Purpose**
 
@@ -138,7 +146,9 @@ When the user successfully submits a loan application
 | loan\_amount | Amount requested | 1000 |
 | loan\_type | Loan period | 3 months |
 
-### Loan form (loan\_form)
+</Accordion>
+
+<Accordion title="Loan form (loan_form)">
 
 **Purpose**
 
@@ -156,7 +166,9 @@ When the borrower successfully submits a loan application
 | loan\_amount | Amount requested | 1000 |
 | loan\_type | Loan period | 3 months |
 
-### Submit credit check (submit\_credit\_check)
+</Accordion>
+
+<Accordion title="Submit credit check (submit_credit_check)">
 
 **Purpose**
 
@@ -174,7 +186,9 @@ After the lender receives a request for a loan
 | loan\_amount | Amount requested | 1000 |
 | loan\_type | Loan period | 3 months |
 
-### Loan accepted (loan\_accepted)
+</Accordion>
+
+<Accordion title="Loan accepted (loan_accepted)">
 
 **Purpose**
 
@@ -196,7 +210,9 @@ When a loan is accepted
 | loan\_amount | Amount requested | 1000 |
 | loan\_type | Loan period | 3 months |
 
-### Loan rejected (loan\_rejected)
+</Accordion>
+
+<Accordion title="Loan rejected (loan_rejected)">
 
 **Purpose**
 
@@ -212,7 +228,9 @@ When a lender rejects a loan
 | --- | --- | --- |
 | loan\_id | ID of the loan | 1735102 |
 
-### Payment (payment)
+</Accordion>
+
+<Accordion title="Payment (payment)">
 
 **Purpose**
 
@@ -230,7 +248,9 @@ When a borrower makes a payment on their loan
 | payment\_amount | Amount paid | 100 |
 | payment\_id | ID of the payment | AE12SF |
 
-### Payment completed (payment\_completed)
+</Accordion>
+
+<Accordion title="Payment completed (payment_completed)">
 
 **Purpose**
 
@@ -246,7 +266,9 @@ When a loan is fully paid back
 | --- | --- | --- |
 | loan\_id | ID of the loan | 1735102 |
 
-### Payment received (payment\_received)
+</Accordion>
+
+<Accordion title="Payment received (payment_received)">
 
 **Purpose**
 
@@ -263,3 +285,7 @@ When a borrower makes a payment on their loan
 | loan\_id | ID of the loan | 1735102 |
 | payment\_amount | Amount paid | 100 |
 | payment\_id | ID of the payment | AE12SF |
+
+</Accordion>
+
+</Accordion>

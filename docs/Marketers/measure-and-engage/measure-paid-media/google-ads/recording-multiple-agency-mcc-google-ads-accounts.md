@@ -32,7 +32,6 @@ This article covers these cases, from measuring agencies to using MCCs and also 
 >
 > The following applies **only**to clients using the Google Ads new API.
 
-
 For details on agency account configuration on Google Ads [click here](/docs/google-ads-adwords-integration-setup-for-agencies).
 
 ## Important definitions
@@ -42,7 +41,6 @@ For details on agency account configuration on Google Ads [click here](/docs/goo
 > 📘 **Note**
 >
 > Android and iOS versions of the same app require different link IDs.
-
 
 * **Customer ID** – **unique identifier of a Google Ads account**.  
   Every account can advertise multiple link IDs, for example, for all the apps of the company. When linking agency accounts with existing apps on AppsFlyer’s dashboard, you can define up to 10 customer IDs.
@@ -74,7 +72,6 @@ The app owner can share any link ID with any other account, identified by its cu
 >
 > AppsFlyer recommends sharing the Link ID from the advertiser’s main account to the other accounts, rather than directly generating link IDs in those accounts. This is the fastest option, and also enables easy detachment between the advertiser and the agencies once the mutual work is completed.
 
-
 ## MCC
 
 Agencies or large advertisers, who manage multiple Google Ads accounts, often use an MCC (My Client Center), which enables viewing all their accounts in a single location.
@@ -102,7 +99,6 @@ Big advertisers working with multiple agencies may use an MCC of MCCs account. S
 > * [Working with managed accounts](https://support.google.com/google-ads/topic/7554359?hl=en&ref_topic=6031997)
 >
 > For questions regarding account structures and recommendations, consult with your Google representative.
-
 
 ## Opening a Google Ads campaign
 

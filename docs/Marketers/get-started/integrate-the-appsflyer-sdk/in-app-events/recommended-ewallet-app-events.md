@@ -34,13 +34,12 @@ Recording these events can help you determine:
 
 > 📘 **Important!**
 >
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
+> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=ewallet). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
 > * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=ewallet&view=code) for iOS, Android, and Unity developers.
 > * Detailed instructions for your developer can be found in the  **[AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).**
 >
 > For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
-
 
 [![Flowchart_for_recommended_events e-Wallet_app_user_journey](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)
 
@@ -48,7 +47,7 @@ Recording these events can help you determine:
 
 The following section provides a list of event structures that are typical to the eWallet vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Complete registration (af\_complete\_registration)
+<Accordion title="Complete registration (af_complete_registration)">
 
 **Purpose**
 
@@ -60,15 +59,13 @@ When the user completes the signup process
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_registration\_method | Type of signup method | Email, Facebook, Google |
 
+</Accordion>
 
-
-### Login (af\_login)
+<Accordion title="Login (af_login)">
 
 **Purpose**
 
@@ -82,7 +79,9 @@ When the user successfully logs in
 
 Can be sent without any additional parameters
 
-### Content view (af\_content\_view)
+</Accordion>
+
+<Accordion title="Content view (af_content_view)">
 
 **Purpose**
 
@@ -97,20 +96,18 @@ When the user views a specific item or category content
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | item | Type of item | cinema ticket |
 | merchant\_name | Name of merchant | cineplex |
 
-
+</Accordion>
 
 ## Recommended structures for custom events
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Wallet complete top-up (wallet\_complete\_topup)
+<Accordion title="Wallet complete top-up (wallet_complete_topup)">
 
 **Purpose**
 
@@ -122,16 +119,14 @@ When the user completes the top-up from their bank or credit card to the eWallet
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | top\_up\_amount | Amount of payment | 100 |
 | top\_up\_method | Type of payment method | bank transfer |
 
+</Accordion>
 
-
-### Payment transaction completed (payment\_transaction\_completed)
+<Accordion title="Payment transaction completed ( payment_transaction_completed )">
 
 **Purpose**
 
@@ -146,17 +141,15 @@ When the transaction of a specific purchase is completed
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | item | Item paid for | prepaid card reload |
 | quantity | Amount paid | 1 |
 | transaction\_amount | Amount of the transaction | 50 |
 
+</Accordion>
 
-
-### Bill payment success (bill\_payment\_success)
+<Accordion title="Bill payment success (bill_payment_success)">
 
 **Purpose**
 
@@ -168,17 +161,15 @@ When the user is using eWallet to make payments, such as bills, or credit card s
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | merchant\_name | Name of merchant | Electricity provider |
 | payment\_amount | Amount paid | 100 |
 | category | Type of service | Electricity |
 
+</Accordion>
 
-
-### Promo (promo)
+<Accordion title="Promo (promo)">
 
 **Purpose**
 
@@ -193,15 +184,13 @@ When the user selects the promotion available within the app
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | promo\_type | Type of promotion being offered | 30% off |
 
+</Accordion>
 
-
-### Voucher redeem (voucher\_redeem)
+<Accordion title="Voucher redeem (voucher_redeem)">
 
 **Purpose**
 
@@ -216,16 +205,14 @@ When a user promotion code is redeemed
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | voucher\_ID | ID of the voucher | 1735103 |
 | merchant\_name | Name of merchant | cineplex |
 
+</Accordion>
 
-
-### Select merchant (select\_merchant)
+<Accordion title="Select merchant ( select_merchant )">
 
 **Purpose**
 
@@ -237,8 +224,6 @@ When the user selects a merchant from the list of available merchants
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | merchant\_name | Name of merchant | cineplex |
@@ -246,9 +231,9 @@ When the user selects a merchant from the list of available merchants
 | amount | Currency used by the advertiser | USD |
 | merchant\_ID | Specific ID attached to a business that tells the payment processing systems involved in a transaction where to send which funds | 123456 |
 
+</Accordion>
 
-
-### Scan barcode success (scan\_barcode\_success)
+<Accordion title="Scan barcode success ( scan_barcode_success )">
 
 **Purpose**
 
@@ -263,9 +248,9 @@ When the user scans the QR code from each merchant that they visited using the e
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | merchant\_name | Name of merchant | cineplex |
 | merchant\_ID | Specific ID attached to a business that tells the payment processing systems involved in a transaction where to send which funds | 123456 |
+
+</Accordion>

@@ -42,11 +42,10 @@ Inmobi's configuration window includes 4 active tabs: **Integration, Attribution
 
 > 📘 **Tip**
 >
-> * The [General Settings](/docs/set-up-an-integrated-partner#d-general%20settings) step in the Integration tab is **mandatory** for all partners
+> * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
-
-## Integration tab
+<Accordion title="Integration tab">
 
 ### Activate partners
 
@@ -56,7 +55,6 @@ For more details about partner activation please click [here](/docs/partner-acti
 > 📘 **Note**
 >
 > As an ALL-Installs network, Inmobi prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to InMobi.
-
 
 ### General settings
 
@@ -89,17 +87,15 @@ In this section you can map your AppsFlyer events with InMobi via postbacks.
 4. Click **Add Event** to add an SDK Event to the list.
 5. Fill in the following parameters:
 
-
-
 | Parameter Name | Description |
 | --- | --- |
 | **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
 | **Partner Event Identifier** | The unique name or ID of each event, as defined on InMobi's side.  <br />Obtain the corresponding Event ID from InMobi and set in the text field. |
 | **Send Revenue** | **When unchecked** - Send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - Send all the parameters including the revenue value (if it exists in the event). |
 
+</Accordion>
 
-
-## Attribution link tab
+<Accordion title="Attribution link tab">
 
 In this tab, you can create the attribution links you want to send to Inmobi for attributing Inmobi's campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links. [![](https://files.readme.io/1f198f652bc960ea8d20c58d4bf704b8aff1361d105d9ed72c52c070eb88d2ce-360002187398.png)](https://files.readme.io/1f198f652bc960ea8d20c58d4bf704b8aff1361d105d9ed72c52c070eb88d2ce-360002187398.png)
 
@@ -126,7 +122,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 [![](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
 
 ### Retargeting settings
 
@@ -193,7 +189,9 @@ More details about the [view-through attribution here](/docs/set-up-lookback-win
 
 The impression attribution link contains similar attribution data to the click recording link (besides the different lookback window). Send it to InMobi to be activated when a corresponding ad is watched, usually for 1 second or more.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
@@ -203,14 +201,20 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 [View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue data is not supported by this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Select which [permissions to grant](/docs/set-up-an-integrated-partner#permissions-tab) InMobi to access your data and perform various actions.
 
 > 📘 **Note**
 >
 > When the integration is [deactivated](/docs/partner-activation-deactivation) while the Permissions toggle is still turned on, permissions remain granted.
+
+</Accordion>

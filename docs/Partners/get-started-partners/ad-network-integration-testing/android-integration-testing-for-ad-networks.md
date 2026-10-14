@@ -39,11 +39,9 @@ For each scenario, you can test installs and in-app events. For in-app events, y
 
 Complete the prerequisites and then perform the test procedures in the sections that follow. The test sections each contain a table you can use to record your test results.
 
-### Prerequisites
+<Accordion title="Prerequisites">
 
 Complete the prerequisites before beginning to execute the test procedure.
-
-
 
 | Prerequisites |
 | --- |
@@ -55,9 +53,11 @@ Complete the prerequisites before beginning to execute the test procedure.
 | Test in-app event attribution using an Android device |
 | Test retargeting attribution using an Android device |
 
+</Accordion>
 
+<div id="test-install-attribution" />
 
-### Test install attribution
+<Accordion title="Test install attribution">
 
 **To trigger postbacks:**
 
@@ -77,9 +77,11 @@ Complete the prerequisites before beginning to execute the test procedure.
    2. The event name is mapped correctly (if you mapped in-app events).
    3. You are able to ingest the postback.
 
+</Accordion>
+
 ## Supplementary information and procedures
 
-### About the Partner Integrations test app
+<Accordion title="About the Partner Integrations test app">
 
 The Partner Integrations app is available in Google Play. The app sends install and in-app events to the AppsFlyer platform.
 
@@ -89,7 +91,9 @@ The following functions are available:
 
 * **In-App Event Tests**Send `purchase`,`login`, and `registration` and in-app events. By mapping the app in-app event names to your event names, postbacks are populated using your event names.
 
-### Attribution link
+</Accordion>
+
+<Accordion title="Attribution link">
 
 Prepare an attribution link in the AppsFlyer dashboard, using one of the following methods:
 
@@ -102,13 +106,11 @@ Prepare an attribution link in the AppsFlyer dashboard, using one of the followi
 2. Select **adNetworkTest**.
 3. In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations** > select your ad network > **Attribution link** tab.
 4. In the Attribution link tab, set the parameters listed. You can add additional parameters if required. Link to attribution linkd
-   
 
 | Parameter | Example value | Remark |
 | --- | --- | --- |
 | Campaign | c-test-2020-12-20 | Set a value that is identifiable in your postbacks |
 | PID | pitestap |  |
-
 
 5. Copy the resulting link for later use.
 
@@ -118,16 +120,18 @@ Prepare an attribution link in the AppsFlyer dashboard, using one of the followi
 https://app.appsflyer.com/com.appsflyer.adNetworkTest?pid=pitestap_int&c=c-test-2020-12-20
 ```
 
-### Test app integrated in your account
+</Accordion>
+
+<Accordion title="Test app integrated in your account">
 
 **To verify that the test app is available in your account:**
 
 1. In AppsFlyer, from the top menu, go to **My Apps**.
 2. Verify that the app **Partner Integrations adNewtorkTest** displays under Available Apps. If this is not the case, contact your Partner Development Manager.
 
-### Troubleshooting
+</Accordion>
 
-
+<Accordion title="Troubleshooting">
 
 | Symptom | Cause/corrective action |
 | --- | --- |
@@ -135,9 +139,9 @@ https://app.appsflyer.com/com.appsflyer.adNetworkTest?pid=pitestap_int&c=c-test-
 | The media source is not your media source | Verify that you have set the correct **pid** value on the attribution link. Verify that you are using the correct attribution link |
 | af\_status is Organic | Check the format of the attribution link, especially the value of **pid**. |
 
+</Accordion>
 
-
-### Test retargeting attribution
+<Accordion title="Test retargeting attribution">
 
 You can also test retargeting attribution. The process is almost the same except for one parameter that you add to the attribution link.
 
@@ -156,7 +160,9 @@ Access your AppsFlyer dashboard and click on **Re-targeting** in the left-side m
 
 [![com_appsflyer_adNetworkTest-retargeting.png](https://files.readme.io/e46789b004be2f4fc15f095ba11a0f3f5d03abb1240e54e4b534285e3e4efd8d-21266228899601.png)](https://files.readme.io/e46789b004be2f4fc15f095ba11a0f3f5d03abb1240e54e4b534285e3e4efd8d-21266228899601.png)
 
-### Test view-through attribution
+</Accordion>
+
+<Accordion title="Test view-through attribution">
 
 1. In AppsFlyer, go to **My Apps**.
 2. Select **adNetworkTest**.
@@ -195,7 +201,9 @@ Once you install and launch the app, you can see the results in your AppsFlyer d
 
 Allow up to 30 minutes for the install to appear in the app dashboard.
 
-### Raw data export
+</Accordion>
+
+<Accordion title="Raw data export">
 
 Data related to apps whose install is attributed to your ad network can be exported in CSV format.
 
@@ -213,7 +221,9 @@ The data includes the following:
 3. Select a report.  
    The report downloads within a few minutes.
 
-### Verify postback data
+</Accordion>
+
+<Accordion title="Verify postback data">
 
 Every install generates a postback that is sent to your servers. To verify the postback URL, its structure, and the parameters that are appended to it, export the **Installation postbacks** report.
 
@@ -224,3 +234,5 @@ Review the data in that column to verify the following:
 * The URL endpoint is the correct one
 * The parameters appended to the URL correspond to those appended to the AppsFlyer attribution link
 * The **Postback Error Message** column is empty
+
+</Accordion>

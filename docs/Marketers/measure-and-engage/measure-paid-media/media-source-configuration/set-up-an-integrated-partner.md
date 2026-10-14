@@ -30,15 +30,15 @@ Partners, media sources, and third-party platforms integrate with AppsFlyer by A
 * Some ad networks have dedicated articles.
 * Before setting up the configuration, contact the partner and open an account with them.
 
-### Partner types in the ecosystem
+<div id="partner-types-in-the-ecosystem" />
+
+<Accordion title="Partner types in the ecosystem">
 
 The image below contains the different partner types that form the attribution ecosystem.
 
 [![Ecosystem.jpg](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)
 
 **Related reading**: [AppsFlyer Performance Index](https://www.appsflyer.com/performance-index/) ranks mobile media sources by category and region.
-
-
 
 | Partner type | Description |
 | --- | --- |
@@ -49,9 +49,11 @@ The image below contains the different partner types that form the attribution e
 | Third-party platforms | Provide BI-related services like analytics and marketing automation platforms. |
 | Fraud detection | External third-party anti-fraud systems which are not part of the AppsFlyer Protect360 anti-fraud solution. |
 
+</Accordion>
 
+<div id="partners-in-the-marketplace" />
 
-### Partners in Partner Integrations
+<Accordion title="Partners in Partner Integrations">
 
 All partners, media sources, and other platforms integrated with AppsFlyer are found on the Partner Integrations page. You can find both your [active and inactive](/docs/partner-activation-deactivation) partners, and search for new partners to connect with.
 
@@ -63,7 +65,11 @@ All partners, media sources, and other platforms integrated with AppsFlyer are f
 
 If the partner you're working with isn't yet integrated with AppsFlyer, you can [send them an invitation link](/docs/partner-integrations#invite-new-partners-to-appsflyer).
 
-### Your active integrated partners
+</Accordion>
+
+<div id="your-integrated-partners" />
+
+<Accordion title="Your active integrated partners">
 
 The Active Integrations tab in Partner Integrations shows all your [active](/docs/partner-activation-deactivation) integrated partners. From this tab, you can learn about the partner and manage the integration.
 
@@ -71,12 +77,15 @@ The Active Integrations tab in Partner Integrations shows all your [active](/doc
 >
 > The list of partners shown on the **Active integrations** tab varies according to the selected app. You can see which partners are connected to other apps by clicking the app from the top-left corner and selecting a different app.
 
-
 **To see all your active partners:**
 
 * In AppsFlyer, from the side menu, select**Collaborate**> **Partner Integrations >** **Active integrations** tab.
 
-### About the partner configuration page
+</Accordion>
+
+<div id="about-the-integrated-partner-page" />
+
+<Accordion title="About the partner configuration page">
 
 The page is structured as follows:
 
@@ -94,11 +103,9 @@ The page is structured as follows:
 
 #### Applicable settings tabs per partner type
 
-
-
 <table><thead><tr><th> </th><th colspan="2">Settings tab</th><th> </th></tr><tr><th>Partner type</th><th>Integration </th><th>Permissions</th><th>Remarks</th></tr></thead><tbody><tr><td>Media source</td><td>Y</td><td>Y</td><td><p><strong>Additional tabs available</strong>: Cost, ad revenue, attribution link</p><p>Includes ad networks, affiliate networks, direct publishers, programmatic advertising, China domestic ad networks, and retargeting Networks.<br/>For SRNs the attribution link tab is non-applicable.</p></td></tr><tr><td>Agency </td><td>N</td><td>Y</td><td>Stand-alone agencies that don't function as ad networks</td></tr><tr><td>Third-party platform</td><td>Y</td><td>N</td><td>Analytics or marketing automation platforms</td></tr><tr><td>Marketing partner </td><td>Y</td><td>N</td><td> </td></tr></tbody></table>
 
-
+</Accordion>
 
 ## Set up a partner (non-SRN)
 
@@ -106,17 +113,17 @@ The page is structured as follows:
 >
 > When enabling a partner integration, certain data, including personal information (e.g., Advertising ID, IP address), will, by default, be shared with them by you. Please ensure you have the appropriate legal basis and rights to share this data. You can limit data sharing with a partner by following the instructions provided in the [Aggregated Advanced Privacy framework](/docs/apply-aggregated-advanced-privacy-framework) and [Privacy preserving methods in the SDK](/docs/apply-privacy-preserving-sdk-methods) articles.
 
-
 **To access the settings and configure your campaigns with the partner:**
 
 Search for and select your partner, [from Partner Integrations.](/docs/set-up-an-integrated-partner#partners-in-the-marketplace)
 
 > 📘 **Note**
 >
-> The [General settings](#d-general%20settings) step in the **Integration** tab is mandatory for all partners. You must also complete the **Attribution link** tab for non-SRN ad networks. The remaining tabs are optional.
+> The [General settings](#d-general-settings) step in the **Integration** tab is mandatory for all partners. You must also complete the **Attribution link** tab for non-SRN ad networks. The remaining tabs are optional.
 
+<div id="integration-tab" />
 
-### Integration tab
+<Accordion title="Integration tab">
 
 Partner integrations differ in their requirements and can contain a subset of all possible options described in this section. There are some differences between iOS and Android settings.
 
@@ -128,36 +135,36 @@ Complete the sections as required.
 
 The following table includes different sections of the integration page. Some sections are available to all, others are specific per integration.
 
-
-
 | Section | Description |
 | --- | --- |
-| Activate partner | Before sharing attribution links with a partner, you must enable **Activate partner** and complete the remaining sections of the Integration tab.<br /><br />* Don't use **Activate partner** to pause or turn off campaign attribution<br />* Disabling partner integration **can cause irreversible damage to active campaigns**.<br />* Learn more about [partner activation](/docs/partner-activation-deactivation) and the impact of deactivating a partner.<br /><br />**To activate an integrated partner**:<br /><br />1. In AppsFlyer, from the side menu, select**Collaborate**> **Partner Integrations**.<br />2. Search for and select the partner. You're directed to the partner configuration page.<br />3. Turn on [**Activate partner**](/docs/partner-activation-deactivation)**.**<br />4. Click **Save Integration.**<br />5. [Optional] To allow the partner to [view the data attributed to them](/docs/manage-data-access-permissions), make sure to turn [Ad network permissions](/docs/set-up-an-integrated-partner#ad-network-permissions) in the [Permissions](/docs/set-up-an-integrated-partner#permissions-tab) tab. |
-| Advanced Privacy | For iOS apps only:  <br />When**Advanced Privacy (for iOS 14.5+ and later)** is turned on, you can [control what data to share](/docs/apply-aggregated-advanced-privacy-framework) with the partner via postbacks and reports. This limits the sharing of user identifiers with the partner. Note that when [Aggregated Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework) toggle is turned on in App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked. |
-| Transaction ID | For iOS apps only:  <br />When **Share SKAN transaction ID** is turned on, you're [sharing the transaction ID of SKAdNetwork postbacks](/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners) with the partner. By doing so, the partner could decode your SKAdNetwork Conversion Values. |
-| General settings | **Partner ID—Credentials**  <br />Some partners require credentials for AppsFlyer to integrate with them. Partners refer to this ID as app ID, account ID, user ID, or network ID. If this field displays, get the ID from the partner dashboard and enter it in the field. |
+| <span id="a-activate-partner"></span>Activate partner | Before sharing attribution links with a partner, you must enable **Activate partner** and complete the remaining sections of the Integration tab.<ul><li>Don't use **Activate partner** to pause or turn off campaign attribution</li><li>Disabling partner integration **can cause irreversible damage to active campaigns**.</li><li>Learn more about [partner activation](/docs/partner-activation-deactivation) and the impact of deactivating a partner.</li></ul>**To activate an integrated partner**:<ol><li>In AppsFlyer, from the side menu, select**Collaborate**> **Partner Integrations**.</li><li>Search for and select the partner. You're directed to the partner configuration page.</li><li>Turn on [**Activate partner**](/docs/partner-activation-deactivation).</li><li>Click **Save Integration.**</li><li>[Optional] To allow the partner to [view the data attributed to them](/docs/manage-data-access-permissions), make sure to turn [Ad network permissions](/docs/set-up-an-integrated-partner#ad-network-permissions) in the [Permissions](/docs/set-up-an-integrated-partner#permissions-tab) tab.</li></ol> |
+| <span id="b-advanced-privacy"></span>Advanced Privacy | For iOS apps only:  <br />When**Advanced Privacy (for iOS 14.5+ and later)** is turned on, you can [control what data to share](/docs/apply-aggregated-advanced-privacy-framework) with the partner via postbacks and reports. This limits the sharing of user identifiers with the partner. Note that when [Aggregated Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework) toggle is turned on in App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked. |
+| <span id="c-transaction-id"></span>Transaction ID | For iOS apps only:  <br />When **Share SKAN transaction ID** is turned on, you're [sharing the transaction ID of SKAdNetwork postbacks](/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners) with the partner. By doing so, the partner could decode your SKAdNetwork Conversion Values. |
+| <span id="d-general-settings"></span>General settings | **Partner ID—Credentials**  <br />Some partners require credentials for AppsFlyer to integrate with them. Partners refer to this ID as app ID, account ID, user ID, or network ID. If this field displays, get the ID from the partner dashboard and enter it in the field. |
 | Non EU Users | Decide whether or not to turn on [**Non EU users**](/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users). |
-| Install attribution | Set attribution windows to attribute new installs (first launches) of users who viewed or clicked your ad. The attribution lookback window is the maximum time from a click or a view of your ad to the install for which installs may be attributed to the partner.<br /><br />* **Install click-through lookback window:** Set the maximum time after a click-to-app that an install can be attributed to the click.<br /><br />**Install view-through attribution: Turn on to start attributing new installs by users who viewed your ad but didn't click it.**<br /><br />* **Install view-through lookback window:** Set the maximum time after a view-to-app that an install can be attributed to the view.<br /><br />[Learn more about lookback windows](/docs/set-up-lookback-windows). |
-| Re-engagement attribution | Turn on and set the lookback windows to start attributing re-engagements of your existing users. For non-SRNs, this setting is available either in the Integration tab or in the [attribution link](/docs/set-up-an-integrated-partner#retargeting-settings) tab.<br /><br />* **Re-engagement click-through lookback window:** Set the maximum time after a click-to-app that the app launch can be attributed to the click as a re-engagement.<br /><br />**Re-engagement view-through attribution:** Turn on to start attributing re-engagements of your existing users who viewed your ad but didn't click it.<br /><br />* **Re-engagement view-through lookback window:** Set the maximum time after a view-to-app that an app launch can be attributed to the view as a re-engagement.<br /><br />[Learn more about lookback windows](/docs/set-up-lookback-windows). |
+| <span id="e-install-attribution"></span>Install attribution | Set attribution windows to attribute new installs (first launches) of users who viewed or clicked your ad. The attribution lookback window is the maximum time from a click or a view of your ad to the install for which installs may be attributed to the partner.<ul><li>**Install click-through lookback window:** Set the maximum time after a click-to-app that an install can be attributed to the click.</li></ul>**Install view-through attribution: Turn on to start attributing new installs by users who viewed your ad but didn't click it.**<ul><li>**Install view-through lookback window:** Set the maximum time after a view-to-app that an install can be attributed to the view.</li></ul>[Learn more about lookback windows](/docs/set-up-lookback-windows). |
+| Re-engagement attribution | Turn on and set the lookback windows to start attributing re-engagements of your existing users. For non-SRNs, this setting is available either in the Integration tab or in the [attribution link](/docs/set-up-an-integrated-partner#retargeting-settings) tab.<ul><li>**Re-engagement click-through lookback window:** Set the maximum time after a click-to-app that the app launch can be attributed to the click as a re-engagement.</li></ul>**Re-engagement view-through attribution:** Turn on to start attributing re-engagements of your existing users who viewed your ad but didn't click it.<ul><li>**Re-engagement view-through lookback window:** Set the maximum time after a view-to-app that an app launch can be attributed to the view as a re-engagement.</li></ul>[Learn more about lookback windows](/docs/set-up-lookback-windows). |
 | Re-engagement window | Set the time window during which in-app events are primarily attributed to the re-engagement conversion. [Learn more](/docs/retargeting-attribution-guide#setup-reengagement-window). |
-| Ignore active users for retargeting | Set an inactivity window period to prevent recording retargeting conversions for active users within the specified time frame. See more about the [Retargeting inactivity period](/docs/set-retargeting-inactivity-window).<br /><br />**For** [**SRNs**](/docs/self-reporting-networks-srns)**:**<br /><br />1. From the Integration tab, turn on **Re-engagement attribution**.<br />2. Turn on **Ignore active users for retargeting**.<br />3. Set the **Inactivity window**.<br /><br />**For non-SRNs:**<br /><br />1. From the Attribution link tab, turn on **Retargeting settings**.<br />2. Turn on **Ignore active users for retargeting**.<br />3. Set the **Inactivity window**. |
+| Ignore active users for retargeting | Set an inactivity window period to prevent recording retargeting conversions for active users within the specified time frame. See more about the [Retargeting inactivity period](/docs/set-retargeting-inactivity-window).<br /><br />**For** [**SRNs**](/docs/self-reporting-networks-srns):<ol><li>From the Integration tab, turn on **Re-engagement attribution**.</li><li>Turn on **Ignore active users for retargeting**.</li><li>Set the **Inactivity window**.</li></ol>**For non-SRNs:**<ol><li>From the Attribution link tab, turn on **Retargeting settings**.</li><li>Turn on **Ignore active users for retargeting**.</li><li>Set the **Inactivity window**.</li></ol> |
 | Cross-platform attribution | When **Cross-platform equal attribution priority** is turned on, cross-platform impressions during the selected time frame have equal priority for attribution. |
 | Preload attribution | When **Preload attribution** is turned on, installs are attributed to [preload campaigns](/docs/measure-preload-campaigns-with-google-play-install). Set the **Preload lookback window** to determine how long after device activation a preload install can be attributed to the partner. |
 | Preload equal attribution priority | When **Preload equal attribution priority** is turned on, preload engagement during the selected lookback window has equal [attribution priority](/docs/appsflyer-attribution-model#attribution-methods) as deterministic clicks. |
 | Advanced Data Sharing | When **Advanced Data Sharing** is turned on, additional data is shared with the partner via the attribution link.  <br />**Note:** This sharing option is different from the [Meta ads AEM Advanced data sharing](/docs/meta-ads-aggregate-event-measurement-aem-for-ios#aem-data-sharing). |
-| Default postbacks | When the partner integration is turned on, default postbacks are sent to partners relating to user actions occurring before the app launch, such as installs, rejected installs, and re-engagements.<br /><br />CALLSTART::Note::<br /><br />#### Note<br /><br />* Rejected events are in-app events blocked by [Protect360](/docs/protect360-anti-fraud-guide) or events found to be non-compliant by target validation. In the case of rejected events, confirm with the partner that they have enabled reject event integration with AppsFlyer.<br />* Tech partners can receive Default postbacks for installs and re-engagements. In some cases, they can also receive in-app event postbacks.<br /><br />CALLEND::<br /><br />**To configure default postbacks for the partner**, define the source of users for sending postbacks:<br /><br />* **This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner.  <br />  **Note:** In the following cases, default postbacks are always defined as **This partner only**:<br />  * Rejected installs<br />  * Agencies (with [permissions](/docs/set-up-an-integrated-partner#agency-permissions))<br />* **All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, the user who performed it came from any media source.<br />* **Off**: Don't send default postbacks to this partner. |
-| [In-app event postbacks](/docs/in-app-event-postback-configuration) | [Map](/docs/in-app-event-postback-configuration#event-mapping) AppsFlyer events with the partner's events via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant with target validation rules).<br /><br />**To configure in-app event postbacks:**<br /><br />1. Set the **Partner ID** (if required).<br />2. Enable **In-app event postbacks**.<br />3. Set the **In-app event postback window**, if required (read more about [in-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).<br />4. Click **Add event** to add an SDK or server-to-server event to the list.<br />5. Complete the required parameters according to the [mapping method](/docs/in-app-event-postback-configuration#mapping-methods).<br />6. [Optional] Click![conditional-iae-postbacks-icon.png](https://files.readme.io/e2543cb26e0cc02f4840040721376ae88a4015a24ac1fc271264e3965560c1f9-4413022777105.png)to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for sending certain in-app events to the partner.<br /><br />\| Parameter name \| Description \|<br />\| --- \| --- \|<br />\| **AppsFlyer event** \| The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events. **Tip**: Don't see the event you're looking for?   * Make sure to activate the event on a device with a non-organic installation, and recheck. * Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) \|<br />\| **mapped to partner event** \| The unique name or ID of each event, as defined on the partner's side. [Possible mapping configurations](/docs/in-app-event-postback-configuration#mapping-methods) are:   * **Text field:** Get the corresponding event ID from the partner. * **Drop-down box:** Select the most suitable pre-defined partner event. * **As is**: Send the events as they are, without mapping the event name. \|<br />\| **for users from** \| Select the sending option for the event:   * **This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner. * **All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, when the user who performed it came from any media source. \|<br />\| **including** \| Select [which event data](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks) to share with the partner in the postback:   * **No values & no revenue**: Send just the event itself without any parameters (values or revenue). * **Values & no revenue**: Send all the parameters **excluding** the revenue value. * **Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event). \|<br /><br /> Remarks:<br /><br />* Events mapped in the Integration tab for a specific partner are applicable both for standard and [SKAN postbacks](/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners).<br />* Postbacks are sent to partners in real-time.<br />* The AppsFlyer event name can either be selected or typed in.  <br />  Typed values are permitted to have underlined spaces (low dashes) before or after the name of the event. Use underlined spaces only if the event name being sent from AppsFlyer has the same underlined spaces.<br />* **Important:** Event names are case-sensitive. To avoid discrepancies, make sure you use the correct event name for all media sources and app versions.<br />* If the **In-app event postbacks** section doesn't exist in the **Integration** tab, it means that the partner has not yet set up in-app event recording with AppsFlyer in its preliminary configuration. The partner can contact AppsFlyer using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif) to finish the integration.<br />* To prevent advertisers from sharing too much information with third-party platforms unintentionally, we have removed the **Send all events (excludes uninstalls, sessions, and af\_ad\_revenue)** option for third-party platforms, as of March 2019. Third-party platforms configured before this, still retain this setup option.<br /><br />Related reading:<br /><br />* [In-app event postback](/docs/in-app-event-postback-configuration) configuration<br />* [Ad revenue event postback](/docs/share-ad-revenue-data-with-partners#ad-revenue-event-postbacks-for-ad-networks) configuration |
+| <span id="default-postbacks"></span>Default postbacks | When the partner integration is turned on, default postbacks are sent to partners relating to user actions occurring before the app launch, such as installs, rejected installs, and re-engagements.<br /><br /><br /><br />**Note**<ul><li>Rejected events are in-app events blocked by [Protect360](/docs/protect360-anti-fraud-guide) or events found to be non-compliant by target validation. In the case of rejected events, confirm with the partner that they have enabled reject event integration with AppsFlyer.</li><li>Tech partners can receive Default postbacks for installs and re-engagements. In some cases, they can also receive in-app event postbacks.</li></ul>**To configure default postbacks for the partner**, define the source of users for sending postbacks:<ul><li>**This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner.<br />**Note:** In the following cases, default postbacks are always defined as **This partner only**:<ul><li>Rejected installs</li><li>Agencies (with [permissions](/docs/set-up-an-integrated-partner#agency-permissions))</li></ul></li><li>**All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, the user who performed it came from any media source.</li><li>**Off**: Don't send default postbacks to this partner.</li></ul> |
+| <span id="g-in-app-event-postback-configuration"></span>[In-app event postbacks](/docs/in-app-event-postback-configuration) | [Map](/docs/in-app-event-postback-configuration#event-mapping) AppsFlyer events with the partner's events via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant with target validation rules).<br /><br />**To configure in-app event postbacks:**<ol><li>Set the **Partner ID** (if required).</li><li>Enable **In-app event postbacks**.</li><li>Set the **In-app event postback window**, if required (read more about [in-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).</li><li>Click **Add event** to add an SDK or server-to-server event to the list.</li><li>Complete the required parameters according to the [mapping method](/docs/in-app-event-postback-configuration#mapping-methods).</li><li>[Optional] Click![conditional-iae-postbacks-icon.png](https://files.readme.io/e2543cb26e0cc02f4840040721376ae88a4015a24ac1fc271264e3965560c1f9-4413022777105.png)to [set conditions](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks) for sending certain in-app events to the partner.</li></ol><table><thead><tr><th>Parameter name</th><th>Description</th></tr></thead><tbody><tr><td>**AppsFlyer event**</td><td>The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events. **Tip**: Don't see the event you're looking for?   \* Make sure to activate the event on a device with a non-organic installation, and recheck. \* Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</td></tr><tr><td>**mapped to partner event**</td><td>The unique name or ID of each event, as defined on the partner's side. [Possible mapping configurations](/docs/in-app-event-postback-configuration#mapping-methods) are:   \* **Text field:** Get the corresponding event ID from the partner. \* **Drop-down box:** Select the most suitable pre-defined partner event. \* **As is**: Send the events as they are, without mapping the event name.</td></tr><tr><td>**for users from**</td><td>Select the sending option for the event:   \* **This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner. \* **All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, when the user who performed it came from any media source.</td></tr><tr><td>**including**</td><td>Select [which event data](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks) to share with the partner in the postback:   \* **No values & no revenue**: Send just the event itself without any parameters (values or revenue). \* **Values & no revenue**: Send all the parameters **excluding** the revenue value. \* **Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</td></tr></tbody></table><br />Remarks:<ul><li>Events mapped in the Integration tab for a specific partner are applicable both for standard and [SKAN postbacks](/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners).</li><li>Postbacks are sent to partners in real-time.</li><li>The AppsFlyer event name can either be selected or typed in.<br />Typed values are permitted to have underlined spaces (low dashes) before or after the name of the event. Use underlined spaces only if the event name being sent from AppsFlyer has the same underlined spaces.</li><li>**Important:** Event names are case-sensitive. To avoid discrepancies, make sure you use the correct event name for all media sources and app versions.</li><li>If the **In-app event postbacks** section doesn't exist in the **Integration** tab, it means that the partner has not yet set up in-app event recording with AppsFlyer in its preliminary configuration. The partner can contact AppsFlyer using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif) to finish the integration.</li><li>To prevent advertisers from sharing too much information with third-party platforms unintentionally, we have removed the **Send all events (excludes uninstalls, sessions, and af\_ad\_revenue)** option for third-party platforms, as of March 2019. Third-party platforms configured before this, still retain this setup option.</li></ul>Related reading:<ul><li>[In-app event postback](/docs/in-app-event-postback-configuration) configuration</li><li>[Ad revenue event postback](/docs/share-ad-revenue-data-with-partners#ad-revenue-event-postbacks-for-ad-networks) configuration</li></ul> |
 | Parameter name | Description |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.  <br />**Tip**: Don't see the event you're looking for?<br /><br />* Make sure to activate the event on a device with a non-organic installation, and recheck.<br />* Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. [Possible mapping configurations](/docs/in-app-event-postback-configuration#mapping-methods) are:<br /><br />* **Text field:** Get the corresponding event ID from the partner.<br />* **Drop-down box:** Select the most suitable pre-defined partner event.<br />* **As is**: Send the events as they are, without mapping the event name. |
-| **for users from** | Select the sending option for the event:<br /><br />* **This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner.<br />* **All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, when the user who performed it came from any media source. |
-| **including** | Select [which event data](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks) to share with the partner in the postback:<br /><br />* **No values & no revenue**: Send just the event itself without any parameters (values or revenue).<br />* **Values & no revenue**: Send all the parameters **excluding** the revenue value.<br />* **Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event). |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you're looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation, and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
+| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. [Possible mapping configurations](/docs/in-app-event-postback-configuration#mapping-methods) are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined partner event.</li><li>**As is**: Send the events as they are, without mapping the event name.</li></ul> |
+| **for users from** | Select the sending option for the event:<ul><li>**This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner.</li><li>**All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, when the user who performed it came from any media source.</li></ul> |
+| **including** | Select [which event data](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks) to share with the partner in the postback:<ul><li>**No values & no revenue**: Send just the event itself without any parameters (values or revenue).</li><li>**Values & no revenue**: Send all the parameters **excluding** the revenue value.</li><li>**Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li></ul> |
 | Save integration | Click **Save Integration** after making the changes. |
-| Connect more apps (optional) | After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner.<br /><br />1. From the top-left corner, under the partner name, click the app name to open the list of apps.<br />2. Select a different app from the drop-down list.<br />3. Repeat the integration steps for the selected app. |
+| Connect more apps (optional) | After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner.<ol><li>From the top-left corner, under the partner name, click the app name to open the list of apps.</li><li>Select a different app from the drop-down list.</li><li>Repeat the integration steps for the selected app.</li></ol> |
 
+</Accordion>
 
+<div id="attribution-link-tab" />
 
-### Attribution link tab
+<Accordion title="Attribution link tab">
 
 Generate and save attribution links for the use of click (non-SRN) ad networks, and send the attribution link to the partner to attribute specific campaigns, ad sets, or single ads.
 
@@ -183,7 +190,7 @@ Generate and save attribution links for the use of click (non-SRN) ad networks, 
    1. Select which OneLink template you want to use to open the app (and potentially deep link).
    2. [Optional] Enter the **Deep link value**.
    3. [Optional] Enter the **Additional deep link value**.
-3. Add parameters for [Android](/docs/about-link-structure-and-parameters#androidspecific-parameters) and [iOS](/docs/about-link-structure-and-parameters#iosspecific-parameters), as needed.
+3. Add parameters for [Android](/docs/about-link-structure-and-parameters#android-specific-parameters) and [iOS](/docs/about-link-structure-and-parameters#ios-specific-parameters), as needed.
 4. [Optional] Select additional attribution parameters.
 
 #### Attribution link parameters
@@ -196,17 +203,13 @@ Select which parameters you want to add to the attribution link.
 
 #### Attribution link parameters
 
-
-
 | Name | Description | Attribution link parameter |
 | --- | --- | --- |
 | Campaign | **Required parameter.**  <br />Compare different campaigns running with the media source. | c |
 | Adset | Compare different ad sets within specific campaigns of the media source. | af\_adset |
 | Ad Name | Compare different creatives within specific ad sets within specific campaigns of the media source. | af\_ad |
-| Site ID and Sub Site ID | **Required parameter.**<br /><br />Set Site ID to attribute installs to specific publishers.<br /><br />The site ID must be passed to AppsFlyer in the attribution link because it:<br /><br />* Provides clarity and transparency about the publisher<br />* Is used by AppsFlyer to identify and eliminate fraudulent publishers, and other traffic clusters.<br /><br />Note that a missing Site ID won't affect attribution. Learn more about the [Site ID parameter](/docs/about-link-structure-and-parameters#site-id-parameter).<br /><br />If there are many publishers, we advise limiting the number of used site IDs and using the subsite ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations. | af\_siteid and af\_sub\_siteid |
+| Site ID and Sub Site ID | **Required parameter.**<br /><br />Set Site ID to attribute installs to specific publishers.<br /><br />The site ID must be passed to AppsFlyer in the attribution link because it:<ul><li>Provides clarity and transparency about the publisher</li><li>Is used by AppsFlyer to identify and eliminate fraudulent publishers, and other traffic clusters.</li></ul>Note that a missing Site ID won't affect attribution. Learn more about the [Site ID parameter](/docs/about-link-structure-and-parameters#site-id-parameter).<br /><br />If there are many publishers, we advise limiting the number of used site IDs and using the subsite ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations. | af\_siteid and af\_sub\_siteid |
 | Subscriber Parameters | Use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering. | af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5 |
-
-
 
 You can add other parameters to the attribution link by typing it in a new parameter box. You can use all [AppsFlyer available URL parameters.](/docs/about-link-structure-and-parameters) Note that only URI scheme and OneLink parameters are encoded on the attribution link.
 
@@ -277,7 +280,11 @@ Click Save attribution link and then copy the generated link.
 
 Send it to the partner to be activated when a corresponding ad is watched, usually for 1 second or more.
 
-### Cost tab
+</Accordion>
+
+<div id="cost-tab" />
+
+<Accordion title="Cost tab">
 
 * Cost data is reported by your integrated partners on the click or by Cost API.
 * The best practice is to implement Cost API (ROI360 subscription required).
@@ -286,7 +293,6 @@ Send it to the partner to be activated when a corresponding ad is watched, usual
 > 📘 **Note**
 >
 > If an advertiser uses an agency to run their campaigns, the agency, and not the advertiser, should integrate with the relevant partners. Otherwise, if both the advertiser and agency integrate with a partner using the same credentials for the same app, cost data is duplicated.
-
 
 #### Enabling cost data by API
 
@@ -298,7 +304,9 @@ Send it to the partner to be activated when a corresponding ad is watched, usual
 
 [View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
-### Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 If you act as a publisher displaying ads in your app, the ad revenue function enables you to attribute ad revenue to the media source that brought the user. [About ad revenue attribution.](/docs/roi360-guide-ad-revenue-attribution)
 
@@ -308,8 +316,6 @@ If you act as a publisher displaying ads in your app, the ad revenue function en
 2. Follow the appropriate method in the [ad revenue integration guide.](/docs/roi360-guide-ad-revenue-attribution#implementation)
 
 #### Ad revenue API status messages
-
-
 
 | Status | Remarks/action required |
 | --- | --- |
@@ -322,9 +328,11 @@ If you act as a publisher displaying ads in your app, the ad revenue function en
 | Data is being processed and will be available soon. | We are currently processing the data received from the partner. The data will be available in the dashboards and reports. |
 | Data was never successfully pulled | If this status persists for a further hour contact AppsFlyer support. |
 
+</Accordion>
 
+<div id="permissions-tab" />
 
-### Permissions tab
+<Accordion title="Permissions tab">
 
 Grant ad networks and agencies specific permissions to access your data and perform various actions.
 
@@ -341,7 +349,6 @@ Turning on **Ad network permissions** allows the ad network access to your dashb
 >
 > Any access permissions are restricted to data owned by the ad network.
 
-
 **To grant permissions to an ad network and their team members:**
 
 1. Turn on **Ad network permissions**.
@@ -352,23 +359,19 @@ Turning on **Ad network permissions** allows the ad network access to your dashb
    **Note:** Ad network team members are managed directly by the ad network. If you want a specific team member to have access, please contact your ad network. [Learn more](/docs/user-management-for-ad-networks#creating-a-user)
 2. Select additional permissions to grant to the ad network:
 
-   
-
 | **Permission** | **Capability granted** |
 | --- | --- |
-| Configure integration | The ad network can change parameters in the integration tab, except for configuring in-app event postbacks. |
-| Configure in-app event postbacks | The ad network can configure in-app event postbacks. This means they can create, define (map), and change postback settings.<br /><br />**Caution**! When both this permission and **Configure integration** are enabled simultaneously, the ad network has access to all events. This includes organic traffic and non-organic traffic from all media sources. |
-| Access retention and cohort reports | The ad network can access retention/cohort data created by the users brought by the ad network only. |
-| Access aggregate loyal users data | The ad network can access its own [loyal users](/docs/about-a-loyal-user) metric. |
-| Access aggregate conversions data | The ad network can access their aggregate conversion events metric reports. This includes installs, re-engagements, re-installs, and re-attributions. Example: [Aggregated campaign performance for ad networks report](/docs/aggregated-campaign-performance-report-for-ad-networks). |
-| Access aggregate in-app events data | The ad network can:<br /><br />* Access in-app event data aggregate reports. The access includes all in-app events data of the selected app, including Protect360 in-app events data. This means they can access not just the events mapped in the postback configuration.<br />* Access ad monetization data aggregate reports,  which may include ad monetization events from other media sources. |
+| <span id="configure-integration"></span>Configure integration | The ad network can change parameters in the integration tab, except for configuring in-app event postbacks. |
+| <span id="configure-inapp-event-postbacks"></span>Configure in-app event postbacks | The ad network can configure in-app event postbacks. This means they can create, define (map), and change postback settings.<br /><br />**Caution**! When both this permission and **Configure integration** are enabled simultaneously, the ad network has access to all events. This includes organic traffic and non-organic traffic from all media sources. |
+| <span id="access-retention-report"></span>Access retention and cohort reports | The ad network can access retention/cohort data created by the users brought by the ad network only. |
+| <span id="access-aggregate-loyal-users-data"></span>Access aggregate loyal users data | The ad network can access its own [loyal users](/docs/about-a-loyal-user) metric. |
+| <span id="access-aggregate-conversions-data"></span>Access aggregate conversions data | The ad network can access their aggregate conversion events metric reports. This includes installs, re-engagements, re-installs, and re-attributions. Example: [Aggregated campaign performance for ad networks report](/docs/aggregated-campaign-performance-report-for-ad-networks). |
+| Access aggregate in-app events data | The ad network can:<ul><li>Access in-app event data aggregate reports. The access includes all in-app events data of the selected app, including Protect360 in-app events data. This means they can access not just the events mapped in the postback configuration.</li><li>Access ad monetization data aggregate reports,  which may include ad monetization events from other media sources.</li></ul> |
 | View validation rules | The ad network can view [validation rule](/docs/implement-validation-rules-to-prevent-fraud) details. |
 | Access aggregate revenue data | The ad network can access aggregate reports of in-app and ad revenue data attributed to users brought by the ad network. **Note:** This permission doesn't directly identify the ad revenue partner. However, if you've set the monetization event name to include the partner name, you may inadvertently disclose the identity of the monetization network. |
-| Use ad spend ingestion | The ad network can:<br /><br />* Access the [Ad Spend Ingestion](/docs/import-cost-data) window. This window displays only the apps they have permissions for.<br />* Send ad spend files for ingestion. |
-| Access Protect360 dashboard & raw data | The ad network can:<br /><br />* Access their Protect360 dashboard (including [ProtectLITE](/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting)).<br />* Access Protect360, Validation Rules, and raw data if they are part of the subscription plan. ProtectLITE doesn't include access to raw data.<br /><br />**Note:** When you have a [Protect360](/docs/protect360-anti-fraud-guide) subscription, the ad network can see the full dashboard. Without a Protect360 subscription, they can see the lite dashboard. |
-| Access ad revenue raw data | The ad network can access their [ad revenue data to use for UA optimization](/docs/ad-revenue-signals-for-ua-ad-networks).   <br />**Note:** This permission is only available for apps with an [ROI360](/docs/roi360-cost-aggregation-overview?query=xpend) subscription. |
-
-
+| <span id="use-ad-spend-ingestion"></span>Use ad spend ingestion | The ad network can:<ul><li>Access the [Ad Spend Ingestion](/docs/import-cost-data) window. This window displays only the apps they have permissions for.</li><li>Send ad spend files for ingestion.</li></ul> |
+| <span id="access-protect360-dashboard-raw-data"></span>Access Protect360 dashboard & raw data | The ad network can:<ul><li>Access their Protect360 dashboard (including [ProtectLITE](/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting)).</li><li>Access Protect360, Validation Rules, and raw data if they are part of the subscription plan. ProtectLITE doesn't include access to raw data.</li></ul>**Note:** When you have a [Protect360](/docs/protect360-anti-fraud-guide) subscription, the ad network can see the full dashboard. Without a Protect360 subscription, they can see the lite dashboard. |
+| <span id="access-ad-revenue-raw-data"></span>Access ad revenue raw data | The ad network can access their [ad revenue data to use for UA optimization](/docs/ad-revenue-signals-for-ua-ad-networks).   <br />**Note:** This permission is only available for apps with an [ROI360](/docs/roi360-cost-aggregation-overview?query=xpend) subscription. |
 
 #### Agency permissions
 
@@ -387,7 +390,6 @@ Read all about [what agencies can do](/docs/getting-started-agency-onboarding#wh
 >
 > **Note:** If the advertiser deactivates the partner without first turning off these settings, the agencies may continue to use these attribution capabilities.
 
-
 **Caution:** Agency installs occurring while the control is disabled are not attributed to the agency and don't show up on the agency's dashboard and data. Learn more about [agency activation](/docs/partner-activation-deactivation#agency-permissions).
 
 **To grant permissions to an agency:**
@@ -395,22 +397,20 @@ Read all about [what agencies can do](/docs/getting-started-agency-onboarding#wh
 1. Turn on **Agency permissions**.
 2. Select the permissions to grant to the agency:
 
-   
-
 | **Permission** | **Capability granted** |
 | --- | --- |
 | Change Advanced Privacy configuration | The agency can change an ad network's[Advanced Privacy data sharing](/docs/apply-aggregated-advanced-privacy-framework) setting.   <br />**Note:** This permission isn't applicable to TikTok for Business and Snapchat. For these integrations, the Advanced Privacy setting is grayed out, reflecting the advertiser's setting. |
-| Access retention and cohort reports | The agency can access retention/cohort data created by the users brought by the agency only. |
+| <span id="access-retention-and-cohort-reports"></span>Access retention and cohort reports | The agency can access retention/cohort data created by the users brought by the agency only. |
 | Access aggregate organic data | The agency can access aggregate organic data |
 | View validation rules | The agency can view validation rule details. |
-| Add validation rules | The agency can add and edit validation rules. Available when **View validation rules** is turned on.   <br />**Note**: Agencies can't edit rules created by advertisers. |
-| Access raw-data reports | The agency can access raw data reports for traffic attributed to the agency. Advertisers can't limit events an agency can view in the reports. |
-| Access Protect360 dashboard & raw data | The agency can:<br /><br />* Access your Protect360 aggregate dashboard<br />* Access Protect360, Validation Rules, and raw data if they are part of the subscription plan<br /><br />**Note:** For advertisers that work with ad networks through an agency, in order for both the ad network and agency to access data, the advertiser must integrate both the agency and ad network in AppsFlyer and grant them both permission to access data. If only the agency is integrated and granted permission, the ad network does not have access to the data. |
-| Configure in-app event postbacks | The agency can configure in-app event postbacks of specific events you select:<br /><br />* **Add event:** From the drop-down menu, select events you approve granting the agency permission.<br /><br />The following options apply to the events you selected:<br /><br />* **Send events revenue:** When turned on, the agency can configure sending events including their monetary value.<br />* **Sending option:**<br />  * **This partner only:** When selected, the agency can configure sending postbacks only for events attributed to their own brought traffic<br />  * **All media sources, including organic:** When selected, the agency can configure sending postbacks for events attributed to all other media sources, agencies, and organic users. |
-
-
+| <span id="add-validation-rules"></span>Add validation rules | The agency can add and edit validation rules. Available when **View validation rules** is turned on.   <br />**Note**: Agencies can't edit rules created by advertisers. |
+| <span id="access-rawdata-reports"></span>Access raw-data reports | The agency can access raw data reports for traffic attributed to the agency. Advertisers can't limit events an agency can view in the reports. |
+| <span id="access-protect360-dashboard-raw-data::dd9829fd"></span>Access Protect360 dashboard & raw data | The agency can:<ul><li>Access your Protect360 aggregate dashboard</li><li>Access Protect360, Validation Rules, and raw data if they are part of the subscription plan</li></ul>**Note:** For advertisers that work with ad networks through an agency, in order for both the ad network and agency to access data, the advertiser must integrate both the agency and ad network in AppsFlyer and grant them both permission to access data. If only the agency is integrated and granted permission, the ad network does not have access to the data. |
+| <span id="configure-inapp-event-postbacks::8743ba60"></span>Configure in-app event postbacks | The agency can configure in-app event postbacks of specific events you select:<ul><li>**Add event:** From the drop-down menu, select events you approve granting the agency permission.</li></ul>The following options apply to the events you selected:<ul><li>**Send events revenue:** When turned on, the agency can configure sending events including their monetary value.</li><li>**Sending option:**<ul><li>**This partner only:** When selected, the agency can configure sending postbacks only for events attributed to their own brought traffic</li><li>**All media sources, including organic:** When selected, the agency can configure sending postbacks for events attributed to all other media sources, agencies, and organic users.</li></ul></li></ul> |
 
 Learn more about [working with agencies](/docs/about-agency-accounts#agency-access-to-marketer-data).
+
+</Accordion>
 
 ## Test the integration
 
@@ -420,8 +420,7 @@ After completing the partner integration, and before you start running campaigns
 >
 > Before testing the integration, make sure to first [test the app for basic SDK integration,](/docs/testing-the-sdk-integration-for-marketers) including organic and non-organic installs.
 
-
-### Test the attribution link for non-SRNs
+<Accordion title="Test the attribution link for non-SRNs">
 
 Non-SRN ad networks, which consist of 99.5% of integrated ad networks, use AppsFlyer attribution links. Similarly, owned media attribution is performed by using AppsFlyer [OneLink links](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink).
 
@@ -438,7 +437,9 @@ Since correct attribution depends on the parameters of the attribution links, te
 7. Drill down to the campaign level (by selecting the partner in the **Media source filter** on the top of the overview page) to check the install appears under the correct campaign name.
 8. If necessary, continue to drill down and check the ad set and single ad levels too.
 
-### Test the SRN integration
+</Accordion>
+
+<Accordion title="Test the SRN integration">
 
 SRNs such as Meta ads, Apple Ads, and Google Ads don't rely on external attribution links for attribution purposes. Instead, SRNs receive queries from AppsFlyer, attribute themselves, and return the answer. Therefore, it isn't feasible to test the integration separately from the network's system as with regular ad networks. You must separately test the integration with each SRN you work with.
 
@@ -452,7 +453,9 @@ SRNs such as Meta ads, Apple Ads, and Google Ads don't rely on external attribut
 
 If all is well you can start running new high-budget campaigns with the partner. It is sufficient to test integration once per SRN partner. Meaning, there's no need to test on a per campaign basis.
 
-### Test the raw data
+</Accordion>
+
+<Accordion title="Test the raw data">
 
 If your subscription plan with AppsFlyer includes access to raw data, you should test raw data.
 
@@ -468,3 +471,5 @@ If your subscription plan with AppsFlyer includes access to raw data, you should
 > Some ad networks require special actions to enable the collection of raw user-level data.
 >
 > If you see a new install on the dashboard but don't see it in the raw data, consult the specific Help Center guide for the ad network, for example - [X Ads](/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies#do-you-make-twitters-raw-data-available-to-agencies).
+
+</Accordion>

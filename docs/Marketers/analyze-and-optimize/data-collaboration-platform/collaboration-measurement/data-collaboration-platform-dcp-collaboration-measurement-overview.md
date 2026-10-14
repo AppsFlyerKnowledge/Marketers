@@ -26,13 +26,13 @@ x-zendesk:
 
 The DCP measurement model attributes conversion events to engagement events occurring in a collaboration context. This process requires data from three key data sources: conversions, engagements, and campaign mapping. Each source plays a critical role in the attribution flow.
 
-### Conversions
+<div id="conversions" />
+
+<Accordion title="Conversions">
 
 Conversion data contains details about user actions such as purchases and their associated Stock Keeping Units (SKUs) or Consumer Packaged Goods (CPGs). Each conversion instance represents a single conversion event, capturing details such as the SKU, user ID, and event time.
 
 **Conversion parameters example**
-
-
 
 | **Field** | **Value** |
 | --- | --- |
@@ -44,17 +44,17 @@ Conversion data contains details about user actions such as purchases and their 
 | `sku_revenue` | 6.94 |
 | `sku_quantity` | 1 |
 
-
-
 AppsFlyer provides access to app conversions through integration with your app using the AppsFlyer SDK or via custom data sources provided by the collaborators. Web and in-store conversion events can also be provided using custom data sources.
 
-### Engagements
+</Accordion>
+
+<div id="engagements" />
+
+<Accordion title="Engagements">
 
 The engagement source contains details about user interactions with ads, such as clicks or impressions. Each instance represents an engagement event and includes attributes such as the campaign ID, media source, and touch type (e.g., click or impression).
 
 **Engagement parameters example**
-
-
 
 | **Field** | **Value** |
 | --- | --- |
@@ -65,19 +65,19 @@ The engagement source contains details about user interactions with ads, such as
 | `attributed_touch_type` | impression |
 | `event_name` | start\_game |
 
-
-
 To access engagement data, in [on-site campaigns](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#onsite-and-offsite-campaign-measurement), you can either set up new in-app events with attribution data in the `event_value` parameter using the AppsFlyer SDK or share the data through a custom source.
 
 In [off-site campaigns, engagement data is received from a third party](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#onsite-and-offsite-campaign-measurement) and not via in-app events or a custom source.
 
-### Campaign mapping
+</Accordion>
+
+<div id="campaign-mapping" />
+
+<Accordion title="Campaign mapping">
 
 The campaign mapping source enables us to determine the engagement that triggered each conversion. A campaign mapping record links conversion events to engagement events by pairing SKUs or CPGs with campaign IDs. Using this mapping, DCP links a conversion event that includes a given SKU to an engagement event containing the corresponding campaign ID.
 
 **Campaign mapping parameters example**
-
-
 
 | **Field** | **Value** |
 | --- | --- |
@@ -87,40 +87,46 @@ The campaign mapping source enables us to determine the engagement that triggere
 | `campaign_name` | off\_season\_25\_1 |
 | `conversion_targets` | 8711327621978, 8711327622289, 8711327623057 |
 
-
-
 The campaign mapping information is provided to AppsFlyer as a custom data source.
+
+</Accordion>
 
 ## On-site vs. Off-site campaigns
 
 DCP measures campaigns differently based on where they run — either on a collaborator’s owned site (on-site) or on the media partner platform (off-site). These differences affect how audiences are reached, how data is collected, and how attribution is performed.
 
-### Off-site campaigns
+<Accordion title="Off-site campaigns">
 
 Off-site campaigns involve user engagements on third-party platforms (such as Meta or Google), with conversions occurring within the collaborator’s owned properties and attributed to those off-site engagements.
 
 * **Example:** A brand runs a Facebook ad targeted at the CMN’s segmented customer data. When users see the ad in Facebook and click it, they are taken to the CMN’s product page.
 * **Attribution:** DCP shares conversion events with the third party, which performs its own attribution; DCP then retrieves aggregated results via the third party’s reporting API.
 
-### On-site campaigns
+</Accordion>
+
+<Accordion title="On-site campaigns">
 
 On-site campaigns involve user engagements and conversions that occur within a collaborator’s owned properties (such as their app or website), with conversions attributed to on-site engagements.
 
 * **Example:** A brand promotes a product on a Commerce Media Network website. The audience includes past shoppers of the CMN platform, segmented by parameters like category interest or purchase history. When users see and click the campaign banner, they are taken to the product detail page on the same site.
 * **Attribution:** DCP directly attributes conversions to on-site campaigns using first-party engagement data from the collaborator’s website or app.
 
-### Combined on-site and off-site campaigns
+<Accordion title="Combined on-site and off-site campaigns">
 
 Combined campaigns involve user engagements that occur both on-site and off-site, with conversions occurring within the collaborator’s owned properties and attributed to engagements from either source using unified measurement and deduplication.
 
 * **Example:** A brand promotes a product on the CMN’s website and also runs Facebook ads targeting the CMN’s customers. Engagements and conversions from both the on-site campaign and the Facebook campaign are captured, deduplicated, and measured together.
 * **Attribution:** DCP consolidates conversion data from both on-site and off-site channels into a shared attribution table, applying deduplication logic and presenting unified metrics per campaign and SKU.
 
+</Accordion>
+
+</Accordion>
+
 ## The DCP measurement process
 
 The DCP measurement process defines how conversion records from SDK in-app events and custom source files are validated, normalized, and matched to campaign engagements across [on-site and off-site campaigns](https://www.notion.so/Collaboration-measurement-Overview-255b7b13af5f80fa83d2dc77e337c960?pvs=21).
 
-### On-site measurement flow
+<Accordion title="On-site measurement flow">
 
 The DCP On-site measurement flow process in-app events and custom source records collected from the CMN or advertiser’s mobile app or website. DCP attributes these conversions internally using AppsFlyer’s attribution logic.
 
@@ -192,7 +198,9 @@ The final output includes:
 * DCP aggregates attributed conversions to create insights, including total conversions.
 * Conversion records ready for analytics dashboards and exports
 
-### Off-site measurement flow
+</Accordion>
+
+<Accordion title="Off-site measurement flow">
 
 **Off-site conversion events** are supplied by collaborators through **custom source files** and must include the necessary identifiers for attribution, such as Google click ID (`gclid`) or Facebook click ID (`fbclid`). These events are shared with the external platforms like Google and Meta, which match the data against their campaign records and return **enriched metadata**, including campaign, adset, and creative identifiers.
 
@@ -254,7 +262,9 @@ The final output includes:
 * DCP aggregates attributed conversions to create insights, including total conversions.
 * Conversion records are ready for analytics dashboards and exports
 
-### Combined on-site and off-site measurement flow
+</Accordion>
+
+<Accordion title="Combined on-site and off-site measurement flow">
 
 This flow outlines how AppsFlyer’s Data Collaboration Platform (DCP) processes conversion data from multiple sources, including:
 
@@ -305,6 +315,8 @@ DCP merges these Off-site conversions with On-site conversions into a final data
 * Attributed to a single source: Google, Meta, or CMN
 * Enriched with campaign metadata
 * Ready for dashboards, exports, and performance analytics
+
+</Accordion>
 
 ## Set up collaboration measurement in four steps
 

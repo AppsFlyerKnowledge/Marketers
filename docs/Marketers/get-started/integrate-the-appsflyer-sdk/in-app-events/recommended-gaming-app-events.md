@@ -43,13 +43,12 @@ These events are also relevant for gaming apps that run on the following platfor
 
 > 📘 **Important!**
 >
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
+> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=gaming). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
 > * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=gaming&view=code) for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the [**AppsFlyer developer hub**](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions)**.**
+> * Detailed instructions for your developer can be found in the [**AppsFlyer developer hub**](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).
 >
 > For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
-
 
 [![Flowchart_for_recommended_events gaming_app_user_journey](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)
 
@@ -57,7 +56,9 @@ These events are also relevant for gaming apps that run on the following platfor
 
 The following section provides a list of event structures that are typical to the gaming vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Login (af\_login)
+<div id="login-af_login" />
+
+<Accordion title="Login (af_login)">
 
 **Purpose**
 
@@ -71,7 +72,11 @@ Whenever the user successfully logs in
 
 Can be sent without any additional parameters
 
-### Complete registration (af\_complete\_registration)
+</Accordion>
+
+<div id="complete-registration-af_complete_registration" />
+
+<Accordion title="Complete registration (af_complete_registration)">
 
 **Purpose**
 
@@ -83,15 +88,15 @@ When the user completes the signup process
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_registration\_method | Type of signup method | email, Facebook |
 
+</Accordion>
 
+<div id="purchase-af_purchase" />
 
-### Purchase (af\_purchase)
+<Accordion title="Purchase (af_purchase)">
 
 **Purpose**
 
@@ -109,20 +114,20 @@ When the user lands on the thank you page after a successful purchase
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Estimated revenue from the purchase | 199.99 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Estimated revenue from the purchase | 199.99 |
 | af\_currency | Currency code | THB, USD |
 | af\_quantity | Number of items purchased | 2 |
 | af\_content\_id | Item ID | 001, 092 |
 | af\_order\_id | Order ID | 9277 |
 | af\_receipt\_id | Receipt ID | 9277 |
 
+</Accordion>
 
+<div id="level-achieved-af_level_achieved" />
 
-### Level achieved (af\_level\_achieved)
+<Accordion title="Level achieved (af_level_achieved)">
 
 **Purpose**
 
@@ -138,16 +143,16 @@ When the user lands on the level completion page
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_level | Level the user achieved | 3 |
 | af\_score | Score associated with user's achievement | 500 |
 
+</Accordion>
 
+<div id="tutorial-completion-af_tutorial_completion" />
 
-### Tutorial completion (af\_tutorial\_completion)
+<Accordion title="Tutorial completion (af_tutorial_completion)">
 
 **Purpose**
 
@@ -163,17 +168,17 @@ Tutorials provide your users with guidance on how to use the app. Recording this
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_success | Whether the user completed the tutorial | true |
 | af\_tutorial\_id | Tutorial ID | 3 |
 | af\_content | Tutorial name | Getting started |
 
+</Accordion>
 
+<div id="share-af_share" />
 
-### Share (af\_share)
+<Accordion title="Share (af_share)">
 
 **Purpose**
 
@@ -185,16 +190,16 @@ When a user successfully posts a share on social media
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_description | Reason for sharing on social media, for example, a new high score or leveling up | New high score, Level up, Game won |
 | platform | Platform used to post shares | Facebook, WhatsApp, email |
 
+</Accordion>
 
+<div id="invite-af_invite" />
 
-### Invite (af\_invite)
+<Accordion title="Invite (af_invite)">
 
 **Purpose**
 
@@ -206,19 +211,17 @@ When the user successfully invited a friend to download and install the app
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | af\_description | Context of invitation | Try this app |
 
-
+</Accordion>
 
 ## Recommended structures for custom events
 
 The following section provides an event structure that includes a custom event name and the suggested event parameter to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Bonus claimed (bonus\_claimed)
+<Accordion title="Bonus claimed (bonus_claimed)">
 
 **Purpose**
 
@@ -230,8 +233,8 @@ When the user claims a bonus and it gets updated to their account
 
 **Event parameters**
 
-
-
 | Name | Description | Example value |
 | --- | --- | --- |
 | bonus\_type | Type of bonus user claims | Coins |
+
+</Accordion>

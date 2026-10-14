@@ -28,26 +28,26 @@ Flight booking apps allow travelers to easily book flights while choosing from t
 
 Recording events can help you:
 
-- Learn about popular destinations
-- Analyze seasonal trends
-- Learn about popular airlines that users prefer to travel with
+* Learn about popular destinations
+* Analyze seasonal trends
+* Learn about popular airlines that users prefer to travel with
 
-> 📘 Important!
+> 📘 **Important!**
 >
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-inapp-events) for marketers about implementing in-app events.
+> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
 > * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=flight_booking). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
 > * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=flight_booking&view=code) for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the **[AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).**
+> * Detailed instructions for your developer can be found in the  **[AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).**
+>
+> For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
 
-For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
-
-![Flowchart_for_recommended_events flight_booking_app_user_journey](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)
+[![Flowchart_for_recommended_events flight_booking_app_user_journey](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)
 
 ## Recommended structures for predefined events
 
 The following section provides a list of event structures that are typical to the flight booking vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### Complete registration (af\_complete\_registration)
+<Accordion title="Complete registration (af_complete_registration)">
 
 **Purpose**
 
@@ -63,7 +63,9 @@ Event parameters
 | --- | --- | --- |
 | af\_registration\_method | Type of signup method | email, Facebook |
 
-### Login (af\_login)
+</Accordion>
+
+<Accordion title="Login (af_login)">
 
 **Purpose**
 
@@ -77,15 +79,19 @@ When the user successfully logs in
 
 Can be sent without any additional parameters
 
-### Travel booking (af\_travel\_booking)
+</Accordion>
+
+<div id="travel-booking-af_travel_booking" />
+
+<Accordion title="Travel booking (af_travel_booking)">
 
 **Purpose**
 
 The ability to book flights is the core function of the app. This event can help you determine:
 
-- Popular destinations
-- Popular airlines
-- Seasonal trends
+* Popular destinations
+* Popular airlines
+* Seasonal trends
 
 **Trigger**
 
@@ -95,7 +101,7 @@ When the user lands on the thank you page after successfully booking a flight
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Revenue associated with booking | 647.99 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Revenue associated with booking | 647.99 |
 | af\_currency | Currency code | SGD |
 | af\_price | Price | 674 |
 | af\_content\_id | ID of the flight offer | ODIRNH |
@@ -107,14 +113,18 @@ When the user lands on the thank you page after successfully booking a flight
 | af\_class | Class the flight is booked to | economy |
 | purchase\_method | Method used for the purchase | credit card |
 
-### Content view (af\_content\_view)
+</Accordion>
+
+<div id="content-view-af_content_view" />
+
+<Accordion title="Content view (af_content_view)">
 
 **Purpose**
 
 This event can help you determine:
 
-- What flight offers users find most appealing
-- Whether search results are relevant to search queries
+* What flight offers users find most appealing
+* Whether search results are relevant to search queries
 
 **Trigger**
 
@@ -129,16 +139,20 @@ When a user clicks a search result
 | af\_destination\_a | First destination | BKK |
 | af\_destination\_b | Second destination (if applicable) | SYD |
 
-### Search (af\_search)
+</Accordion>
+
+<div id="search-af_search" />
+
+<Accordion title="Search (af_search)">
 
 **Purpose**
 
 Flight booking apps let users search for flights and deals. One way of gaining insights into user preferences is to record the search parameters. This event can help you:
 
-- Learn what users are looking for
-- Understand which destinations are most popular
-- See how many users travel with kids
-- See what time of the year users prefer or plan to travel
+* Learn what users are looking for
+* Understand which destinations are most popular
+* See how many users travel with kids
+* See what time of the year users prefer or plan to travel
 
 **Trigger**
 
@@ -156,7 +170,11 @@ After the user fills in the search form and clicks the search button
 | af\_num\_infants | Number of infants that are traveling | 0 |
 | af\_num\_adults | Number of  adults that are traveling | 1 |
 
-### Add payment info (af\_add\_payment\_info)
+</Accordion>
+
+<div id="add-payment-info-af_add_payment_info" />
+
+<Accordion title="Add payment info (af_add_payment_info)">
 
 **Purpose**
 
@@ -172,15 +190,19 @@ When a user clicks on the book a flight button
 | --- | --- | --- |
 | af\_success | Whether adding payment method is successful | true |
 
-### Purchase (af\_purchase)
+</Accordion>
+
+<div id="purchase-af_purchase" />
+
+<Accordion title="Purchase (af_purchase)">
 
 **Purpose**
 
 Learn about purchase trends in your flight booking app. This event can help you:
 
-- Determine the LTV of your users and the ROI of your campaigns across ad networks and ad agencies
-- Determine what offers are most popular with your users
-- Cross-reference campaigns with purchased items in order to optimize campaign targeting
+* Determine the LTV of your users and the ROI of your campaigns across ad networks and ad agencies
+* Determine what offers are most popular with your users
+* Cross-reference campaigns with purchased items in order to optimize campaign targeting
 
 **Trigger**
 
@@ -190,7 +212,7 @@ When the user lands on the thank you page after a successful purchase
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Estimated revenue from the purchase | 1205.99 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Estimated revenue from the purchase | 1205.99 |
 | af\_price | Overall purchase sum | 4000 |
 | af\_content\_id | Item ID | 121 |
 | af\_content\_type | Item category | flight |
@@ -199,19 +221,21 @@ When the user lands on the thank you page after a successful purchase
 | af\_order\_id | ID of the order that is generated after the purchase | X123ABC |
 | af\_receipt\_id | Order ID, required for CRITEO and Google Ad Words retargeting integration | X123ABC |
 
+</Accordion>
+
 ## Recommended structures for custom events
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
-### First purchase (first\_purchase)
+<Accordion title="First purchase (first_purchase)">
 
 **Purpose**
 
 Same as the [Purchase](/docs/recommended-flight-booking-app-events#purchase-af_purchase) event. In addition, this event can help you determine:
 
-- How long it takes a new buyer to purchase
-- What flights first-time buyers prefer to purchase
-- The average price and revenue of first-time purchases
+* How long it takes a new buyer to purchase
+* What flights first-time buyers prefer to purchase
+* The average price and revenue of first-time purchases
 
 **Trigger**
 
@@ -221,7 +245,7 @@ When the user completes their first purchase
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-events) | Revenue from purchase | 1205.99 |
+| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Revenue from purchase | 1205.99 |
 | af\_price | Overall purchase sum | 4000 |
 | af\_content\_id | Item ID | 121, 262 |
 | af\_content\_type | Item category | flight |
@@ -229,3 +253,5 @@ When the user completes their first purchase
 | af\_quantity | Quantity of items in the cart | 1 |
 | af\_order\_id | ID of the order that is generated after purchase | X123ABC |
 | af\_receipt\_id | Order ID, required for CRITEO and Google AdWords retargeting integration | X123ABC |
+
+</Accordion>

@@ -40,32 +40,26 @@ x-zendesk:
 
 #### Data types collected
 
-
-
 | **Data type** | **AppsFlyer data collection** | **Remarks** |
 | --- | --- | --- |
-| **Contact information**<br /><br />* Name<br />* Email address (including hashed)<br />* Phone number (including hashed)<br />* Physical address<br />* Other user contact info | No | Contact information should not be collected. However, if you have configured your app to transmit hashed emails or hashed phone numbers, respond accordingly in the App Store questionnaire. |
+| **Contact information**<ul><li>Name</li><li>Email address (including hashed)</li><li>Phone number (including hashed)</li><li>Physical address</li><li>Other user contact info</li></ul> | No | Contact information should not be collected. However, if you have configured your app to transmit hashed emails or hashed phone numbers, respond accordingly in the App Store questionnaire. |
 | **Fitness** | No | Don't collect |
-| **Financial info**<br /><br />* Payment info<br />* Credit info<br />* Other financial info | No | Don't collect |
-| **Location info**<br /><br />* Precise location<br />* Coarse location | See remarks | * Precise location: No<br />* Coarse location: Yes. The IP address is collected and mapped to a coarse geographic location. |
+| **Financial info**<ul><li>Payment info</li><li>Credit info</li><li>Other financial info</li></ul> | No | Don't collect |
+| **Location info**<ul><li>Precise location</li><li>Coarse location</li></ul> | See remarks | <ul><li>Precise location: No</li><li>Coarse location: Yes. The IP address is collected and mapped to a coarse geographic location.</li></ul> |
 | **Sensitive info** | No | Don't collect |
 | **Contacts** | No | Don't collect |
-| **User content**<br /><br />* Emails or text messages<br />* Photos or videos<br />* Audio data | No | Don't collect |
+| **User content**<ul><li>Emails or text messages</li><li>Photos or videos</li><li>Audio data</li></ul> | No | Don't collect |
 | **Browsing history** | No | Don't collect |
 | **Search history** | No | Don't collect |
-| **Identifiers**<br /><br />* User ID<br />* Device ID (IDFA) | Optional | * User ID: App developers may set and transmit user ID (CUID)<br />* Device ID: The Advertising ID (IDFA) is collected only when accessible. |
-| **Purchases**<br /><br />* Purchase history | Optional | App developers can choose to configure certain in-app purchase events to measure. |
-| **Usage data**<br /><br />* Product interaction<br />* Advertising data<br />* Other usage data | * Yes<br />* Optional<br />* No | * Product interactions: App launches are measured, as well as any other user interaction configured by the app developer.<br />* Advertising data: is received if the app developer uses the AppsFlyer ad revenue module. |
-| **Diagnostics data**<br /><br />* Crash data<br />* Performance data<br />* Other diagnostics data | * No<br />* Yes<br />* No | Launch time and/or battery levels may be received for fraud detection. |
-| **Other data**<br /><br />  <br /><br />* Other data types<br />* IDFV | Yes | * Technical device information (for example, OS, device type, language, screen size, etc.) or network information (for example, IP address, HTTP user agent) is received by AppsFlyer.<br />* AppsFlyer applies an install ID to each app install called the AF ID.<br />* IDFV is collected |
-
-
+| **Identifiers**<ul><li>User ID</li><li>Device ID (IDFA)</li></ul> | Optional | <ul><li>User ID: App developers may set and transmit user ID (CUID)</li><li>Device ID: The Advertising ID (IDFA) is collected only when accessible.</li></ul> |
+| **Purchases**<ul><li>Purchase history</li></ul> | Optional | App developers can choose to configure certain in-app purchase events to measure. |
+| **Usage data**<ul><li>Product interaction</li><li>Advertising data</li><li>Other usage data</li></ul> | <ul><li>Yes</li><li>Optional</li><li>No</li></ul> | <ul><li>Product interactions: App launches are measured, as well as any other user interaction configured by the app developer.</li><li>Advertising data: is received if the app developer uses the AppsFlyer ad revenue module.</li></ul> |
+| **Diagnostics data**<ul><li>Crash data</li><li>Performance data</li><li>Other diagnostics data</li></ul> | <ul><li>No</li><li>Yes</li><li>No</li></ul> | Launch time and/or battery levels may be received for fraud detection. |
+| **Other data**<ul><li>Other data types</li><li>IDFV</li></ul> | Yes | <ul><li>Technical device information (for example, OS, device type, language, screen size, etc.) or network information (for example, IP address, HTTP user agent) is received by AppsFlyer.</li><li>AppsFlyer applies an install ID to each app install called the AF ID.</li><li>IDFV is collected</li></ul> |
 
 ### Data use purposes
 
 Apple has a list of purposes from which app developers must choose, as detailed in the table that follows. You must identify the relevant purposes for each data type related to your specific use.
-
-
 
 | Data purpose | Selection based on how data from AppsFlyer will be used |
 | --- | --- |
@@ -75,8 +69,6 @@ Apple has a list of purposes from which app developers must choose, as detailed 
 | Product personalization | Select if you use data for any product personalization. |
 | App functionality | Yes |
 | Other purposes | Select if you use the data for any purpose not otherwise stated. |
-
-
 
 ### Data linked to an identity
 

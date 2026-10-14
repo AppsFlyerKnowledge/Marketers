@@ -22,15 +22,17 @@ x-zendesk:
   created_at: '2026-04-29T07:09:07Z'
   edited_at: '2026-08-30T15:27:34Z'
 ---
+## Overview
+
 AppsFlyer supports integration with TikTok Web Ads (`tiktokweb_int`) for website app campaigns, letting you report attribution and conversion data directly through TikTok's Events API. TikTok can then use this data to optimize ad targeting, measure performance, and build custom audiences.
 
 Here's how it works: when a user clicks a TikTok ad and lands on your website, and then completes a website event (for example, a purchase or sign-up), AppsFlyer sends the conversion signal to TikTok via the Events API. TikTok uses this data to optimize ad targeting and measure campaign performance.
 
-> 👍 See also
+> 📘 **See also**
 >
-> [Web Performance Measurement - Overview](/docs/web-performance-measurement-overview)
+> * [Web Performance Measurement - Overview](/docs/web-performance-measurement-overview)
 
-> ❗️ Important!
+> 📘 **Important!**
 >
 > At present, the integration does not support sending re-engagement postbacks via the Events API.
 
@@ -38,21 +40,21 @@ Here's how it works: when a user clicks a TikTok ad and lands on your website, a
 
 Before activating the TikTok Web Ads integration for your website app, make sure you have:
 
-- A website app set up in AppsFlyer
-- A business account in [TikTok Ads Manager](https://getstarted.tiktok.com/grow-your-business-gb)
+* A website app set up in AppsFlyer
+* A business account in [TikTok Ads Manager](https://getstarted.tiktok.com/grow-your-business-gb)
 
 ### How to set up TikTok Web Ads for your website app
 
 The setup involves defining the integration between TikTok Web Ads and AppsFlyer, and configuring the campaign in TikTok Ads Manager. It includes the following parts:
 
-- [Part 1: Set up TikTok Web Ads integration in AppsFlyer](/docs/tiktok-for-business-create-web-campaigns-for-website-apps#part-1-set-up-tiktok-ads-integration-in-appsflyer) (Required)
-- [Part 2: Set up AppsFlyer integration in TikTok Web Ads](/docs/tiktok-for-business-create-web-campaigns-for-website-apps#part-2-set-up-appsflyer-integration-in-tiktok-ads) (Required)
+* [Part 1: Set up TikTok Web Ads integration in AppsFlyer](#part-1-set-up-tiktok-web-ads-integration-in-appsflyer) (Required)
+* [Part 2: Set up AppsFlyer integration in TikTok Web Ads](#part-2-set-up-appsflyer-integration-in-tiktok-web-ads) (Required)
 
 ## Part 1: Set up TikTok Web Ads integration in AppsFlyer
 
 Start by activating the TikTok Web Ads integration and setting the postbacks AppsFlyer sends to the Events API.
 
-### 1. Activate the TikTok Web Ads integration
+<Accordion title="1. Activate the TikTok Web Ads integration">
 
 To activate the TikTok Web Ads integration:
 
@@ -64,66 +66,102 @@ To activate the TikTok Web Ads integration:
 6. **Access token:** Enter the access token. To generate or retrieve it, follow the same [TikTok documentation](https://business-api.tiktok.com/portal/docs?id=1771100865818625).
 7. **Limit TikTok Web Ads' use of users' personal information (CCPA):** Turn on this toggle to enable compliance with [data protection laws](/docs/send-opendsr-api-requests).
 
-> 📘 Note
+> 📘 **Note**
 >
 > Enabling CCPA compliance limits the data coming from TikTok Web Ads users based in California or other sensitive states in the US.
 
-### 2. Set in-app event postbacks
+</Accordion>
+
+<Accordion title="2. Set in-app event postbacks">
 
 You can define which web conversion events AppsFlyer sends to TikTok Ads by mapping AppsFlyer events to TikTok Web Ads events. These postbacks can be viewed in TikTok Ads Manager, and TikTok uses the mapped events for campaign optimization and reporting.
 
 To set in-app event postbacks:
 
-01. Turn on **In-app event postbacks**.
+1. Turn on **In-app event postbacks**.
+2. If required, set the in-app event postback window. Read more
+   about in-app event postback window configuration in
+   [In-app event postback configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window).
+3. Click **Add event** to add an event to the list.
+4. In the **AppsFlyer event** column, select the
+   event
+   name from the drop-down list. AppsFlyer receives the event
+   name
+   either from the Web SDK integrated on your website or from
+   server-to-server
+   (S2S) events you send to AppsFlyer.
+5. In the **mapped to partner event** column, select
+   the most suitable pre-defined partner event.
+6. In the **For Users From** column, select the
+   appropriate
+   option:
+   * **This partner only**, to send events
+     attributed
+     to TikTok Web Ads only.
+   * **All media sources, including organic**,
+     to send all events regardless of attribution source.
+7. In the **including** column, select whether
+   events
+   will be sent with their revenue values. See
+   [Data to include in the postbacks](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks).
+   <br /><br />**Note**<br />#### Note
 
-02. If required, set the in-app event postback window. Read more about in-app event postback window configuration in [In-app event postback configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window).
+   * If you are setting a purchase event, set the
+     **including** column to
+     **Values and revenue**. Selecting any other
+     option will cause the postback to fail.
+   * Currently, only the purchase event can be set to include
+     revenue.
+8. [Optional] Click the **Add condition** icon
+   to
+   [set conditions](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks)
+   for an event.
+9. Click **Save integration**.
 
-03. Click **Add event** to add an event to the list.
+If you also run the TikTok Pixel on your website, send
+the same event ID
+to both AppsFlyer and TikTok so AppsFlyer can deduplicate
+the events:
 
-04. In the **AppsFlyer event** column, select the event name from the drop-down list. AppsFlyer receives the event name either from the Web SDK integrated on your website or from server-to-server (S2S) events you send to AppsFlyer.
+* Include `af_customer_event_id` in the
+  event payload you
+  send to AppsFlyer, inside `eventValue`
+  for the Web SDK
+  or `event_value` for the S2S (server-to-server)
+  API.
+* Send the same value in the corresponding Pixel event.
 
-05. In the **mapped to partner event** column, select the most suitable pre-defined partner event.
+AppsFlyer forwards this value to TikTok as the event
+ID. TikTok then uses
+it to deduplicate the server-side event it receives from
+AppsFlyer against
+the Pixel event, so AppsFlyer counts the conversion once.
 
-06. In the **For Users From** column, select the appropriate option:
-    - **This partner only**, to send events attributed to TikTok Web Ads only.
-    - **All media sources, including organic**, to send all events regardless of attribution source.
+If you don't send `af_customer_event_id`,
+AppsFlyer generates
+an event ID automatically. This ID won't match your Pixel
+events.
 
-07. In the **including** column, select whether events will be sent with their revenue values. See [Data to include in the postbacks](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks).
+For more information, see
+[[Beta] Integrate AppsFlyer Web SDK](/docs/integrate-appsflyer-web-sdk).
 
-    > 📘 Note
-    >
-    > - If you are setting a purchase event, set the **including** column to **Values and revenue**. Selecting any other option will cause the postback to fail.
-    > - Currently, only the purchase event can be set to include revenue.
-
-08. [Optional] Click the **Add condition** icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
-
-09. Click **Save integration**.
-
-If you also run the TikTok Pixel on your website, send the same event ID to both AppsFlyer and TikTok so AppsFlyer can deduplicate the events:
-
-- Include `af_customer_event_id` in the event payload you send to AppsFlyer, inside `eventValue` for the Web SDK or `event_value` for the S2S (server-to-server) API.
-- Send the same value in the corresponding Pixel event.
-
-AppsFlyer forwards this value to TikTok as the event ID. TikTok then uses it to deduplicate the server-side event it receives from AppsFlyer against the Pixel event, so AppsFlyer counts the conversion once.
-
-If you don't send `af_customer_event_id`, AppsFlyer generates an event ID automatically. This ID won't match your Pixel events.
-
-For more information, see [[Beta] Integrate AppsFlyer Web SDK](/docs/integrate-appsflyer-web-sdk).
+</Accordion>
 
 ## Part 2: Set up AppsFlyer integration in TikTok Web Ads
 
 Complete the following steps in TikTok Ads Manager.
 
-### 1. Set the campaign type, objective, and goals
+<Accordion title="1. Set the campaign type, objective, and goals">
 
 You can choose any pre-defined in-app event sent from AppsFlyer as your campaign goal. Select a campaign objective that aligns with your website conversion goals, for example, driving traffic to your website or optimizing for on-site conversions.
 
-### 2. Set destination URL
+</Accordion>
+
+<Accordion title="2. Set destination URL">
 
 1. Under **Destination**, in the **Website URL** field, enter the URL of your website, which is the page where users land after clicking your ad.
 
-**Website URL** is the primary destination option. Users click the ad and land directly on your website to complete conversion events.
-
+   **Website URL** is the primary destination option. Users click the ad and land directly on your website to complete conversion events.
 2. **[Alternative] AF attribution link (OneLink):** If you want to redirect users to the mobile app with a fallback to the website, you can use an AF attribution link (OneLink) as the destination URL instead.
 3. Click **Build a URL parameter** to add the URL parameters to the destination URL.
 4. Under **Custom parameters**, click **Add parameter**.
@@ -139,21 +177,25 @@ You can choose any pre-defined in-app event sent from AppsFlyer as your campaign
 | `af_ad` | `__cid_name__` |
 | `af_ad_id` | `__cid__` |
 
-> 📘 Note
->
-> To simplify campaign analysis, include the campaign type (web or mobile) as a prefix or suffix in the campaign name, for example, `campaign-name_web`.
+   > 📘 **Note**
+   >
+   > To simplify campaign analysis, include the campaign type (web or mobile) as a prefix or suffix in the campaign name, for example, `campaign-name_web`.
 
-For best practices on URL parameter configuration and traffic source resolution, see [About traffic source resolution](/docs/about-traffic-source-resolution).
 
-An example of the resulting URL:
+   For best practices on URL parameter configuration and traffic source resolution, see [About traffic source resolution](/docs/about-traffic-source-resolution).
 
-```auto
-https://www.example.com?pid=tiktokweb_int&c=__campaign_name__&af_c_id=__campaign_id__&af_adset=__aid_name__&af_adset_id=__aid__&af_ad=__cid_name__&af_ad_id=__cid__
-```
+   An example of the resulting URL:
 
-> 📘 Note
->
-> TikTok automatically adds `ttclid={{ttclid}}` to the destination URL when the ad is clicked.
+   ```
+   https://www.example.com?pid=tiktokweb_int&c=__campaign_name__&af_c_id=__campaign_id__&af_adset=__aid_name__&af_adset_id=__aid__&af_ad=__cid_name__&af_ad_id=__cid__
+   ```
+
+   > 📘 **Note**
+   >
+   > TikTok automatically adds `ttclid={{ttclid}}` to the destination URL when the ad is clicked.
+
+
+</Accordion>
 
 ## View web attribution data
 

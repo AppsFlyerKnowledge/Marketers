@@ -24,10 +24,8 @@ x-zendesk:
 | **What's new** | AppsFlyer has an API integration with Unity that allows us to get cost data. The API is being updated soon. Therefore, you need to update your integration to continue getting Unity cost data. |
 | --- | --- |
 | **Update date** | August 6, 2024 |
-| **What you need to know** | * Unity is introducing a new cost API integration.<br />* The old cost API integration is able to get cost data until its sunset date of October 1, 2024. |
-| **What you need to do** | You must update your credentials for the new Unity cost API integration to continue getting cost data after October 1, 2024.<br /><br />The credentials required are:<br /><br />* Organization Core ID<br />* Service Account Secret Key<br />* Service Account Key ID<br /><br />Follow our instructions in the following sections to update the Unity cost integration in AppsFlyer. The integration has 2 steps:<br /><br />1. [Get the new Unity credentials](/docs/bulletin-unity-ads-cost-api-integration-update#get-unity-credentials).<br />2. [Update the Unity cost API integration by entering the credentials in AppsFlyer.](/docs/bulletin-unity-ads-cost-api-integration-update#set-up-unity-cost-api-integration-in-appsflyer) |
-
-
+| **What you need to know** | <ul><li>Unity is introducing a new cost API integration.</li><li>The old cost API integration is able to get cost data until its sunset date of October 1, 2024.</li></ul> |
+| **What you need to do** | You must update your credentials for the new Unity cost API integration to continue getting cost data after October 1, 2024.<br /><br />The credentials required are:<ul><li>Organization Core ID</li><li>Service Account Secret Key</li><li>Service Account Key ID</li></ul>Follow our instructions in the following sections to update the Unity cost integration in AppsFlyer. The integration has 2 steps:<ol><li>[Get the new Unity credentials](/docs/bulletin-unity-ads-cost-api-integration-update#get-unity-credentials).</li><li>[Update the Unity cost API integration by entering the credentials in AppsFlyer.](/docs/bulletin-unity-ads-cost-api-integration-update#set-up-unity-cost-api-integration-in-appsflyer)</li></ol> |
 
 ## Unity cost API integration procedures
 
@@ -38,7 +36,9 @@ Integrating the Unity cost API requires 2 steps:
 
 The steps are described in the following sections.
 
-### Get Unity credentials
+<div id="get-unity-credentials" />
+
+<Accordion title="Get Unity credentials">
 
 The required credentials for the Unity cost API integration are:
 
@@ -70,7 +70,11 @@ The required credentials for the Unity cost API integration are:
 9. Under **Edit roles in organization**, set **Growth** to **Advertise Stats API MMP Viewer**.  
     [![](https://files.readme.io/f1243cb65978d2f96d148ceb34b528ca005091c38dbed95368923047b3cfbfd1-26136957386513.png)](https://files.readme.io/f1243cb65978d2f96d148ceb34b528ca005091c38dbed95368923047b3cfbfd1-26136957386513.png)
 
-### Update Unity cost API integration in AppsFlyer
+</Accordion>
+
+<div id="set-up-unity-cost-api-integration-in-appsflyer" />
+
+<Accordion title="Update Unity cost API integration in AppsFlyer">
 
 **To update the Unity cost API in AppsFlyer**:
 
@@ -84,3 +88,5 @@ The required credentials for the Unity cost API integration are:
    * The API is active. AppsFlyer collects data from the partner 6 times a day, on average once every four hours.
 
 [Learn more about connecting cost integrations](/docs/set-up-roi360-cost-api-to-measure-cost-data)
+
+</Accordion>

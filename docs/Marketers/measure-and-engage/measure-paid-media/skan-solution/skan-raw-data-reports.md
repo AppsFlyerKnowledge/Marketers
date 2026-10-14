@@ -27,193 +27,82 @@ x-zendesk:
 
 Principles:
 
-- **Data is provided by:**
-  - **Data Locker**
-    > 📘 Note
-    >
-    > Available to accounts having a raw data subscription. Meaning, there is no need for a Data Locker subscription. If you aren't currently using Data Locker, an admin user must configure Data Locker and enable the SKAN reports. To do so, go to **Reports** > **Data Locker**. Select the SKAN reports.
-    - **Data freshness rate**: Daily. Data is contained in the h=23 folder of the date the postback is received by AppsFlyer.
-  - **Push API**
-    - Data freshness: See [Push API for SKAN data](/docs/push-api-streaming-raw-data).
-- **Install date**: Is derived from the postback arrival time by AppsFlyer as follows:
-  - If the postbacks are SKAN V4, the install date formula is: Install date = postback arrival time - [accumulated window length] - [average postback delay].
-    - Postback 1: install date = postback arrival time - 48h - 36h
-    - Postback 2: install date = postback arrival time - 168h - 84h
-    - Postback 3: install date = postback arrival time - 840h - 84h
-  - If the postbacks are SKAN V3, the install date formula is: Install date = postback arrival time - 36 hours - [average last-active range]. 
-    - The default [average last-active range] is 12 hours.
-    - For a conversion value of 0, the average last-active range is set to 0.
-  - Google estimates the install time on its own and AppsFlyer uses that install time.
-    > 📘 Note
-    >
-    > It can take up to 45 days for Google to report installs. [Learn more](/docs/get-skan-postback-data-from-google-ads#get-skan-postback-data-from-google-ads)
+* **Data is provided by:**
+  * **Data Locker**
+    * **Note**! Available to accounts having a raw data subscription. Meaning, there is no need for a Data Locker subscription. If you aren't currently using Data Locker, an admin user must configure Data Locker and enable the SKAN reports. To do so, go to **Reports** > **Data Locker**. Select the SKAN reports.
+    * **Data freshness rate**: Daily. Data is contained in the h=23 folder of the date the postback is received by AppsFlyer.
+  * **Push API**
+    * Data freshness: See [Push API for SKAN data](/docs/push-api-streaming-raw-data).
+* **Install date**: Is derived from the postback arrival time by AppsFlyer as follows:
+  * If the postbacks are SKAN V4, the install date formula is: Install date = postback arrival time - [accumulated window length] - [average postback delay].
+    * Postback 1: install date = postback arrival time - 48h - 36h
+    * Postback 2: install date = postback arrival time - 168h - 84h
+    * Postback 3: install date = postback arrival time - 840h - 84h
+  * If the postbacks are SKAN V3, the install date formula is: Install date = postback arrival time - 36 hours - [average last-active range]. 
+    * The default [average last-active range] is 12 hours.
+    * For a conversion value of 0, the average last-active range is set to 0.
+  * Google estimates the install time on its own and AppsFlyer uses that install time. **Note**: It can take up to 45 days for Google to report installs. [Learn more](/docs/get-skan-postback-data-from-google-ads#get-skan-postback-data-from-google-ads)
 
 Report types available are:
 
-- **Device postback**: 1 device postback per install or redownload received from the iOS device.
-- **SKAN raw data**:
-  - AppsFlyer decodes and translates the device postback into raw data records.
-  - Each postback generates an install or redownload record and in-app event records.
-  - The number of in-app event records depends on the conversion value (CV) as follows:
-    - CV = 0, blank, or null: No in-app records are generated.
-    - CV range:
-      - 1-63: For SKAN 3, and SKAN 4 window 1 fine value, this is the number of in-app records, depending on your measurement settings.
-      - Low, medium, or high: For SKAN 4 coarse values, this is the number of in-app records, depending on your measurement settings.
+* **Device postback**: 1 device postback per install or redownload received from the iOS device.
+* **SKAN raw data**:
+  * AppsFlyer decodes and translates the device postback into raw data records.
+  * Each postback generates an install or redownload record and in-app event records.
+  * The number of in-app event records depends on the conversion value (CV) as follows:
+    * CV = 0, blank, or null: No in-app records are generated.
+    * CV range:
+      * 1-63: For SKAN 3, and SKAN 4 window 1 fine value, this is the number of in-app records, depending on your measurement settings.
+      * Low, medium, or high: For SKAN 4 coarse values, this is the number of in-app records, depending on your measurement settings.
 
 **Why are some fields empty?** This occurs for any of the following reasons:
 
-- Non-mandatory enrichment fields like campaign_name, ad_network_campaign_id, ip that the ad network did not provide.
-- Apple withheld the data due to Apple threshold policies. Fields like source_app_id, skad_campaign_id, skad_conversion_value.
+* Non-mandatory enrichment fields like campaign\_name, ad\_network\_campaign\_id, ip that the ad network did not provide.
+* Apple withheld the data due to Apple threshold policies. Fields like source\_app\_id, skad\_campaign\_id, skad\_conversion\_value.
 
 ## SKAN raw data report format and content
 
-### Raw data report types
+<div id="raw-data-report-types" />
 
-| Report type | Report name | Description |
-| --- | --- | --- |
-| Postback | Postbacks | Postbacks sent by iOS to the ad network. The postback, after enrichment by the ad network, is forwarded to AppsFlyer. [Download postbacks example](https://docs.google.com/spreadsheets/d/e/2PACX-1vRfFFmj1YV1c73Wbar2VOiKWml6VmsyFvQuydXTPUOO4zXVKmwtw6nup9vKNtNwou2z8IqNpcF4yP6c/pub?gid=1225544365&single=true&output=csv) (CSV).<br />Note: Postbacks aren't included when did_win=false.<br />**Topic name in Data Locker**: skad_postbacks |
-| Postback | Postbacks copy (direct from Apple) | Postbacks sent directly by iOS to AppsFlyer.<br />Available starting iOS 15+ and requires the advertiser to configure the app to [send the winning postback](/docs/send-skan-and-adattributionkit-postback-copies-directly-to-appsflyer-ios-15) to AppsFlyer. [Download postbacks copy example](https://docs.google.com/spreadsheets/d/e/2PACX-1vSu0c3gYoIHe2k6_M3cngSFzc-txQvEN38X7Ig7qhXYPg8uBUzyyPqlSwDMugvZS_tUrFjtY8AGYKrh/pub?gid=1225544365&single=true&output=csv) (CSV).<br />Note: This topic contains only winning postbacks. <br />**Topic name in Data Locker**: skad_postbacks_copy |
-| Decoded event | Installs | **First-time app installs**<br />SKAN reported _redownload=false_. Meaning, this is the first time the user, represented by the Apple ID, downloaded the app.<br />[Download installs example](https://docs.google.com/spreadsheets/d/e/2PACX-1vS4rNJAio8Ub2cffUEiYhzdavVfXaJAD6OpjhRBjVpGQsAlibOWCkZpfLl29n1OCDBZ2eToO4_gOvbl/pub?gid=1472391837&single=true&output=csv) (CSV).<br />**Topic name in Data Locker**: skad_installs |
-| Decoded event | Redownloads | **App installs that are not first-time installs**<br />SKAN reported _redownload=true_. Meaning, this is not the first time the user, represented by the Apple ID, downloaded the app. This report has the same structure as installs.<br />**Topic name in Data Locker**: skad_redownloads |
-| Decoded event | In-app events | **In-app events**<br /><br />Starting July 21, 2021, there are changes to how we provide in-app event raw data as detailed in the tables.<br /><br />The number of in-app event records depends on your measurement settings.<br /><br />[Download in-app events example](https://docs.google.com/spreadsheets/d/e/2PACX-1vRwhxOmZwTkOr9uNFN0d4Rk2jFpipONoB8KzIZI5Tw12IvoLirj07QUdI9RJoL9rZYFSN1PvT-W6vP0/pub?gid=1454741057&single=true&output=csv) (CSV).<br /><br />**Topic name in Data Locker**: skad_inapps |
+<Accordion title="Raw data report types">
 
-Valid for iOS postbacks received starting July 21, 2021:
+<table><thead><tr><th>Report type</th><th>Report name</th><th>Description</th></tr></thead><tbody><tr><td>Postback</td><td>Postbacks</td><td><p>Postbacks sent by iOS to the ad network. The postback, after enrichment by the ad network, is forwarded to AppsFlyer. <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfFFmj1YV1c73Wbar2VOiKWml6VmsyFvQuydXTPUOO4zXVKmwtw6nup9vKNtNwou2z8IqNpcF4yP6c/pub?gid=1225544365&amp;single=true&amp;output=csv">Download postbacks example</a> (CSV).</p><p>Note: Postbacks aren't included when did_win=false.</p><p><strong>Topic name in Data Locker</strong>: skad_postbacks</p></td></tr><tr><td><span id="postback::315d5a62"></span>Postback</td><td>Postbacks copy (direct from Apple)</td><td><div><p>Postbacks sent directly by iOS to AppsFlyer.</p><p>Available starting iOS 15+ and requires the advertiser to configure the app to <a href="./send-skan-and-adattributionkit-postback-copies-directly-to-appsflyer-ios-15">send the winning postback</a> to AppsFlyer. <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSu0c3gYoIHe2k6_M3cngSFzc-txQvEN38X7Ig7qhXYPg8uBUzyyPqlSwDMugvZS_tUrFjtY8AGYKrh/pub?gid=1225544365&amp;single=true&amp;output=csv">Download postbacks copy example</a> (CSV).</p><p>Note: This topic contains only winning postbacks. </p></div><div><p><strong>Topic name in Data Locker</strong>: skad_postbacks_copy</p></div></td></tr><tr><td>Decoded event</td><td>Installs</td><td><p><strong>First-time app installs</strong></p><p>SKAN reported <em>redownload=false</em>. Meaning, this is the first time the user, represented by the Apple ID, downloaded the app.<br/><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS4rNJAio8Ub2cffUEiYhzdavVfXaJAD6OpjhRBjVpGQsAlibOWCkZpfLl29n1OCDBZ2eToO4_gOvbl/pub?gid=1472391837&amp;single=true&amp;output=csv">Download installs example</a> (CSV).</p><p><strong>Topic name in Data Locker</strong>: skad_installs</p></td></tr><tr><td>Decoded event</td><td>Redownloads</td><td><p><strong>App installs that are not first-time installs</strong></p><p>SKAN reported <em>redownload=true</em>. Meaning, this is not the first time the user, represented by the Apple ID, downloaded the app. This report has the same structure as installs.</p><p><strong>Topic name in Data Locker</strong>: skad_redownloads</p></td></tr><tr><td>Decoded event</td><td>In-app events</td><td><p><strong>In-app events</strong></p><p>Starting July 21, 2021, there are changes to how we provide in-app event raw data as detailed in the tables. </p><p>The number of in-app event records depends on your measurement settings. </p><p><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRwhxOmZwTkOr9uNFN0d4Rk2jFpipONoB8KzIZI5Tw12IvoLirj07QUdI9RJoL9rZYFSN1PvT-W6vP0/pub?gid=1454741057&amp;single=true&amp;output=csv">Download in-app events example</a> (CSV).</p><p><strong>Topic name in Data Locker</strong>: skad_inapps</p><p>Valid for iOS postbacks received starting July 21, 2021:</p><figure><table><thead><tr><th>Measurement type</th><th>Description</th></tr></thead><tbody><tr><td>Revenue</td><td><ul><li>Revenue of a given user. If revenue &gt; 0, a record containing the skad_revenue and event_name fields.</li><li>The fields min_revenue and max_revenue are populated with your custom conversion range values.  </li></ul></td></tr><tr><td>In-app conversion and funnel events</td><td><ul><li>A record for each unique conversion event performed. The event_name field is populated accordingly. If no events are performed, there is no record.</li><li>Conversion events have min_event_counter = 0 and max_event_counter = 1. </li></ul></td></tr><tr><td>In-app engagement </td><td>To determine the number of times a user performed a given in-app event use the formula<code>[round up (min_event_counter + max_event_counter) / 2]</code></td></tr></tbody></table></figure><p>Valid for iOS postbacks received until July 20, 2021:</p><figure><table><thead><tr><th>Measurement type</th><th>Number of records</th><th>Description</th></tr></thead><tbody><tr><td>Revenue</td><td>0-1</td><td>If revenue &gt; 0, a record containing the skad_revenue and event_name fields.</td></tr><tr><td>Conversion </td><td>0-6</td><td>A record for each unique conversion event performed. The event_name field is populated accordingly. If no events are performed, there is no record.</td></tr><tr><td>Engagement</td><td>0-63</td><td>The number of records represents the number of times the user performed the engagement event. If the user does not engage, there are no engagement records.</td></tr><tr><td>Custom</td><td>0-unlimited</td><td>According to your custom conversion schema. </td></tr></tbody></table></figure></td></tr><tr><td>Decoded event</td><td>SRN advertising dimensions </td><td><ul><li>Report contains Meta ads events with campaign, adset, and ad granularity. Each row in the report can be either an install or in-app event.</li><li>Adset and ad granularity isn't included in SKAN postbacks from Meta ads. This data is unique to this report, and doesn't display in the SKAN dashboard, Performance API, and other SKAN Data Locker reports.</li><li>Report is schemaless. Data Locker field selection options don’t apply.</li><li>Best practice: Don't combine or compare data from this report with other SKAN reports, as there may be discrepancies between this report, which uses data decoded by the SRN, and other reports, which use data decoded by AppsFlyer. These discrepancies can be due to time zone differences, SRN schema differences, or incorrectly mapped in-app events-to-CV in the SRN integration.</li><li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTZjIpqZJxHY9WpIdf9OeDCVQYzM_fLmrpB1oAt3S-MbJTKueOJODwwl6Pz3M0SCAbCFIdMlshOayrw/pub?output=xlsx">Download SRN advertising dimensions example</a> (CSV).</li></ul><strong>Topic name in Data Locker</strong>: skad_srn_advertising_dimensions</td></tr></tbody></table>
 
-| Measurement type | Description |
-| --- | --- |
-| Revenue | - Revenue of a given user. If revenue > 0, a record containing the skad_revenue and event_name fields.<br />- The fields min_revenue and max_revenue are populated with your custom conversion range values. |
-| In-app conversion and funnel events | - A record for each unique conversion event performed. The event_name field is populated accordingly. If no events are performed, there is no record.<br />- Conversion events have min_event_counter = 0 and max_event_counter = 1. |
-| In-app engagement | To determine the number of times a user performed a given in-app event use the formula `[round up (min_event_counter + max_event_counter) / 2]` |
+</Accordion>
 
-Valid for iOS postbacks received until July 20, 2021:
-
-| Measurement type | Number of records | Description |
-| --- | --- | --- |
-| Revenue | 0-1 | If revenue > 0, a record containing the skad_revenue and event_name fields. |
-| Conversion | 0-6 | A record for each unique conversion event performed. The event_name field is populated accordingly. If no events are performed, there is no record. |
-| Engagement | 0-63 | The number of records represents the number of times the user performed the engagement event. If the user does not engage, there are no engagement records. |
-| Custom | 0-unlimited | According to your custom conversion schema. |
-| Decoded event | SRN advertising dimensions | - Report contains Meta ads events with campaign, adset, and ad granularity. Each row in the report can be either an install or in-app event.<br />- Adset and ad granularity isn't included in SKAN postbacks from Meta ads. This data is unique to this report, and doesn't display in the SKAN dashboard, Performance API, and other SKAN Data Locker reports.<br />- Report is schemaless. Data Locker field selection options don’t apply.<br />- Best practice: Don't combine or compare data from this report with other SKAN reports, as there may be discrepancies between this report, which uses data decoded by the SRN, and other reports, which use data decoded by AppsFlyer. These discrepancies can be due to time zone differences, SRN schema differences, or incorrectly mapped in-app events-to-CV in the SRN integration.<br />- [Download SRN advertising dimensions example](https://docs.google.com/spreadsheets/d/e/2PACX-1vTZjIpqZJxHY9WpIdf9OeDCVQYzM_fLmrpB1oAt3S-MbJTKueOJODwwl6Pz3M0SCAbCFIdMlshOayrw/pub?output=xlsx) (CSV).<br />**Topic name in Data Locker**: skad_srn_advertising_dimensions |
-
-### Raw data field format types
+<Accordion title="Raw data field format types">
 
 #### Field formats
 
 | Format name | Description |
 | --- | --- |
 | String [n] | The maximum length of the string. We don't usually enforce field length limitations on receipt of the data, but data may be truncated thereafter. |
-| Time string | String having the format, `yyyy-mm-dd hh:mm:ss`. For example, `2019-09-17 00:09:25` |
+| Time string | String having the format, `yyyy-mm-dd hh:mm:ss`. For example, `2019-09-17 00:09:25` |
 | Enum [n] | Enum fields can only contain specific values. For example, Cost currency has 3 characters and can contain only currency codes as specified. |
-| Timestamp | 10-digit UNIX timestamp. Example:<br />August 4, 2020, 07:25 UTC translates to `"timestamp": "1596525944"` |
-| Boolean | The value of the field can be either `TRUE` or `FALSE` |
+| Timestamp | 10-digit UNIX timestamp. Example:<br /><br />August 4, 2020, 07:25 UTC translates to `"timestamp": "1596525944"` |
+| Boolean | The value of the field can be either `TRUE` or `FALSE` |
 | Integer | Integer |
 | Float | Real floating number that can have a decimal point and values after the decimal point. |
 
-### Fields available in postback and postback copy reports
+</Accordion>
 
-| Field name | Source or iOS SKAN starting version | Description | Format | Available in postbacks copy |
-| --- | --- | --- | --- | --- |
-| ad_network_campaign_id | Ad network | Campaign ID reported by the ad network to AppsFlyer | String | No |
-| ad_network_campaign<br />_name | Ad network | Campaign name reported by the ad network to AppsFlyer. | String | No |
-| ad_network_timestamp | Ad network | Time the ad network received the postback.<br />In the case of Google Ads, the time is derived from the last-click time reported by Google. | Timestamp | No |
-| app_id | AppsFlyer | App ID (advertiser app) with prefix ID. | String | Yes |
-| city | AppsFlyer | Starting August 30, 2021, always null | String | No |
-| country_code | Ad network |  | String | No |
-| dma |  | Starting August 30, 2021, always null | String | No |
-| postal_code |  | Starting August 30, 2021, always null | String | No |
-| region | AppsFlyer | According to the country_code reported | String | No |
-| skad_ad_network_id | 1.0 | Some SRNs don't share their ID, and the field is left blank. For example, X Ads. | String | Yes |
-| skad_attribution_signature | 1.0 |  | String | Yes |
-| skad_campaign_id | 1.0 | Campaign ID used to publish the ad. Range 0-100 | String | Yes |
-| skad_conversion_value | 2.0 | Conversion value reported by iOS. Range 0-63.<br />If null, iOS didn't populate the field\*\* | Integer | Yes |
-| skad_redownload | 2.0 | If true, app was redownloaded | Boolean | Yes |
-| skad_source_app_id | 2.0 | Site ID. The app publishing the ad. This field is identical to source_app_id.<br />Field population depends on privacy thresholds\*\* | String | Yes |
-| skad_transaction_id | 1.0 |  | String | Yes |
-| skad_version | 2.0 |  | String | Yes |
-| timestamp | Ad network | Time that AppsFlyer received the SKAN postback. | Timestring | Yes |
-| ad_network_name | Ad network | Ad network name reported by the ad network to AppsFlyer. <br />- If this field is blank, the ad network didn't (couldn't) populate it.<br />- You can resolve the ad network name using skad_ad_network_id. Use this [table](/docs/skan-integrated-partners-list#apple-skadnetwork-ids-of-ad-networks) to do so. | String | No |
-| ip |  | IP address in the HTTP message of the iOS device sending the postback.<br />This field is populated if the ad network provides us with the address.<br />Note! The SDK isn't involved in getting the address. | String | No |
-| skad_app_id | 1.0 |  | String | No |
-| source_app_id | AppsFlyer | Site ID. The app publishing the ad. This field is identical to skad_source_app_id | String | No |
-| ad_network_adset_id | Ad network |  | String | No |
-| ad_network_adset_name | Ad network |  | String | No |
-| ad_network_ad_name | Ad network |  | String | No |
-| ad_network_ad_id | Ad network |  | String | No |
-| did_win | 3.0 (iOS 14.6) | Used to distinguish between campaigns [contributing or attributed](https://developer.apple.com/documentation/storekit/skadnetwork/skadnetwork_release_notes/skadnetwork_version_3_0_release_notes) with the install. <br />- If true, the campaign is attributed for bringing the install.<br />- If false, the campaign is recognized as contributing to the install, but it isn't included in any SKAN dashboards or reports.<br />- If null, iOS didn't populate the field due to a [legacy iOS or SKAdNetwork version](https://developer.apple.com/documentation/storekit/skadnetwork/skadnetwork_release_notes/skadnetwork_version_3_0_release_notes). | Boolean | Yes |
-| fidelity_type | 2.2 (iOS 14.5) | Differentiate between [ad presentation](https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions) options that affect attribution. Indicated using the values 0 and1 as follows: <br />- View-though ads (0)<br />- StoreKit-rendered ads (1)<br />Disregard the field value if the SKAN version is before 2.2 | Integer | Yes |
-| ad_network_source_app_id | Ad network | Publisher app ID reported by the ad network. Use to help reconcile cost; reported by the ad network. The publisher app gives the basis for this data. | String | No |
-| ad_network_channel | Ad network |  | String | No |
-| af_prt | Ad network |  | String | No |
-| skad_postback_sequence_index | 4.0 (iOS 16.2) | - Value represents the SKAN window, either `0`, `1`, or `2`.<br />- For SKAN 3 the value is `0` | Integer | Yes |
-| skad_coarse_conversion_value | 4.0 (iOS 16.2) | - Value can be `low`, `medium`, or `high`.<br />- For SKAN 3 the value is `null`. | String | Yes |
-| skad_source_identifier | 4.0 (iOS 16.2) | - Value can be up to 4 digits.<br />- For SKAN 3 the value is `null`. | String | Yes |
-| skad_source_domain | 4.0 (iOS 16.2) | - Value represents the source of attributable web ads.<br />- For SKAN 3 the value is `null`. | String | Yes |
-| ad_network_creative | Ad network | - Value is based on data enrichment received from the ad network.<br />- For SKAN 3 the value is `null`. | String | No |
-| \*\* Apple determines if the field is populated using a privacy-threshold mechanism | | | | |
+<Accordion title="Fields available in postback and postback copy reports">
 
-### Fields available in decoded event reports
+<table><thead><tr><th>Field name</th><th>Source or iOS SKAN starting version</th><th>Description</th><th>Format</th><th>Available in postbacks copy </th></tr></thead><tbody><tr><td>ad_network_campaign_id</td><td>Ad network</td><td>Campaign ID reported by the ad network to AppsFlyer</td><td>String</td><td>No</td></tr><tr><td><p>ad_network_campaign</p><p>_name</p></td><td>Ad network</td><td><p>Campaign name reported by the ad network to AppsFlyer.</p></td><td>String</td><td>No</td></tr><tr><td>ad_network_timestamp</td><td>Ad network</td><td><p>Time the ad network received the postback.</p><p>In the case of Google Ads, the time is derived from the last-click time reported by Google.</p></td><td>Timestamp</td><td>No</td></tr><tr><td>app_id</td><td>AppsFlyer</td><td>App ID (advertiser app) with prefix ID.</td><td>String</td><td>Yes</td></tr><tr><td>city</td><td>AppsFlyer</td><td>Starting August 30, 2021, always null </td><td>String</td><td>No</td></tr><tr><td>country_code</td><td>Ad network</td><td> </td><td>String</td><td>No</td></tr><tr><td>dma</td><td> </td><td>Starting August 30, 2021, always null </td><td>String</td><td>No</td></tr><tr><td>postal_code</td><td> </td><td>Starting August 30, 2021, always null  </td><td>String</td><td>No</td></tr><tr><td>region</td><td>AppsFlyer</td><td>According to the country_code reported</td><td>String</td><td>No</td></tr><tr><td>skad_ad_network_id</td><td>1.0 </td><td>Some SRNs don't share their ID, and the field is left blank. For example, X Ads. </td><td>String</td><td>Yes </td></tr><tr><td>skad_attribution_signature</td><td>1.0</td><td> </td><td>String</td><td>Yes</td></tr><tr><td>skad_campaign_id</td><td>1.0</td><td>Campaign ID used to publish the ad. Range 0-100</td><td>String</td><td>Yes</td></tr><tr><td>skad_conversion_value</td><td>2.0 </td><td><p>Conversion value reported by iOS. Range 0-63.</p><p>If null, iOS didn't populate the field\*\* </p></td><td>Integer</td><td>Yes</td></tr><tr><td>skad_redownload</td><td>2.0</td><td>If true, app was redownloaded</td><td>Boolean</td><td>Yes</td></tr><tr><td>skad_source_app_id</td><td>2.0</td><td><p>Site ID. The app publishing the ad. This field is identical to source_app_id.</p><p>Field population depends on privacy thresholds\*\*</p></td><td>String</td><td>Yes</td></tr><tr><td>skad_transaction_id</td><td>1.0</td><td> </td><td>String</td><td>Yes</td></tr><tr><td>skad_version</td><td>2.0</td><td> </td><td>String</td><td>Yes</td></tr><tr><td>timestamp</td><td>Ad network</td><td>Time that AppsFlyer received the SKAN postback. </td><td>Timestring</td><td>Yes</td></tr><tr><td>ad_network_name</td><td>Ad network</td><td>Ad network name reported by the ad network to AppsFlyer. <ul><li>If this field is blank, the ad network didn't (couldn't) populate it.</li><li>You can resolve the ad network name using skad_ad_network_id. Use this <a href="./skan-integrated-partners-list#apple-skadnetwork-ids-of-ad-networks">table</a> to do so. </li></ul></td><td>String</td><td>No</td></tr><tr><td>ip</td><td> </td><td><p>IP address in the HTTP message of the iOS device sending the postback.</p><p>This field is populated if the ad network provides us with the address.</p><p>Note! The SDK isn't involved in getting the address.</p></td><td>String</td><td>No</td></tr><tr><td>skad_app_id</td><td>1.0</td><td> </td><td>String</td><td>No</td></tr><tr><td>source_app_id</td><td>AppsFlyer</td><td>Site ID. The app publishing the ad. This field is identical to skad_source_app_id</td><td>String</td><td>No</td></tr><tr><td>ad_network_adset_id</td><td>Ad network</td><td> </td><td>String</td><td>No</td></tr><tr><td>ad_network_adset_name</td><td>Ad network</td><td> </td><td>String</td><td>No</td></tr><tr><td>ad_network_ad_name</td><td>Ad network</td><td> </td><td>String</td><td>No</td></tr><tr><td>ad_network_ad_id</td><td>Ad network</td><td> </td><td>String</td><td>No</td></tr><tr><td>did_win</td><td>3.0 (iOS 14.6)</td><td>Used to distinguish between campaigns <a href="https://developer.apple.com/documentation/storekit/skadnetwork/skadnetwork_release_notes/skadnetwork_version_3_0_release_notes">contributing or attributed</a> with the install. <ul><li>If true, the campaign is attributed for bringing the install.</li><li>If false, the campaign is recognized as contributing to the install, but it isn't included in any SKAN dashboards or reports.</li><li>If null, iOS didn't populate the field due to a <a href="https://developer.apple.com/documentation/storekit/skadnetwork/skadnetwork_release_notes/skadnetwork_version_3_0_release_notes">legacy iOS or SKAdNetwork version</a>.</li></ul></td><td>Boolean</td><td>Yes</td></tr><tr><td>fidelity_type</td><td>2.2 (iOS 14.5)</td><td><p>Differentiate between <a href="https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions">ad presentation</a> options that affect attribution. Indicated using the values 0 and1 as follows: </p><ul><li>View-though ads (0)</li><li>StoreKit-rendered ads (1)</li></ul><p>Disregard the field value if the SKAN version is before 2.2</p></td><td>Integer</td><td>Yes</td></tr><tr><td>ad_network_source_app_id</td><td>Ad network</td><td><span>Publisher app ID reported by the ad network. Use to help reconcile cost; reported by the ad network. The publisher app gives the basis for this data. </span></td><td>String</td><td>No</td></tr><tr><td>ad_network_channel</td><td>Ad network</td><td> </td><td>String</td><td>No</td></tr><tr><td>af_prt</td><td>Ad network</td><td> </td><td>String</td><td>No</td></tr><tr><td>skad_postback_sequence_index</td><td>4.0 (iOS 16.2)</td><td><ul><li>Value represents the SKAN window, either<code>0</code>,<code>1</code>, or<code>2</code>.</li><li>For SKAN 3 the value is<code>0</code></li></ul></td><td>Integer</td><td>Yes</td></tr><tr><td>skad_coarse_conversion_value</td><td><p>4.0 (iOS 16.2)</p></td><td><ul><li>Value can be<code>low</code>,<code>medium</code>, or<code>high</code>.</li><li>For SKAN 3 the value is<code>null</code>.</li></ul></td><td>String</td><td>Yes</td></tr><tr><td>skad_source_identifier</td><td>4.0 (iOS 16.2)</td><td><ul><li>Value can be up to 4 digits.</li><li>For SKAN 3 the value is<code>null</code>. </li></ul></td><td>String</td><td>Yes</td></tr><tr><td>skad_source_domain</td><td>4.0 (iOS 16.2)</td><td><ul><li>Value represents the source of attributable web ads.</li><li>For SKAN 3 the value is<code>null</code>.</li></ul></td><td>String</td><td>Yes</td></tr><tr><td>ad_network_creative</td><td>Ad network</td><td><ul><li>Value is based on data enrichment received from the ad network.</li><li>For SKAN 3 the value is <code>null</code>.</li></ul></td><td>String</td><td>No</td></tr><tr><td colspan="4">\*\* Apple determines if the field is populated using a privacy-threshold mechanism </td><td> </td></tr></tbody></table>
 
-| Field name | Source | Description | Format | Included in SRN advertising dimensions report |
-| --- | --- | --- | --- | --- |
-| ad_network_campaign_id | Ad network | Campaign ID reported by the ad network to AppsFlyer | String | Yes |
-| ad_network_campaign<br />_name | Ad network | Campaign name reported by the ad network to AppsFlyer | String | Yes |
-| ad_network_timestamp | Ad network | Time the postback was received by the ad network<br />In the case of Google Ads, this field isn't populated. | Timestamp<br />(time string for SRN advertising dimensions report) | Yes |
-| app_id | iOS | The app ID (advertiser app) | String | Yes |
-| city |  | Starting August 30, 2021, always null | String | No |
-| country_code | Ad network |  | String | No |
-| dma |  | Starting August 30, 2021, always null | String | No |
-| event_name | AppsFlyer | In-app event name as configured in AppsFlyer.<br />For the SRN 
-___report, this is the in-app event name as configured in Meta ads. | String | Yes |
-| event_uuid | AppsFlyer | A unique random identifier enabling partners to identify duplicate postbacks | String | No |
-| install_date | iOS | Estimated by AppsFlyer based on the postback arrival time. | Time string | No |
-| install_type | iOS | New installs | String | No |
-| ip | iOS | The IP address in the HTTP message of the iOS device sending the postback.<br />This field is populated if the ad network provides us with the address.<br />Note! The SDK isn't involved in getting the address. | String | No |
-| media_source | iOS | Ad network attributed using AppsFlyer network names | String | Yes |
-| postal_code |  | Starting August 30, 2021, always null | String | No |
-| region | AppsFlyer | Determined according to the country_code | String | No |
-| skad_ad_network_id | iOS | ID of the ad network to whom the postback was sent | String | No |
-| skad_ambiguous_event (deprecated with SKAN 4+) | AppsFlyer | If true, the iOS postback was received during the first 72-hours after an advertiser changed the SKAN settings in the dashboard. Due to the various timers employed by SKAN, AppsFlyer can't map the event accurately.<br />- Not available in SKAN 4 and onwards | Boolean | No |
-| skad_attribution_signature | iOS |  | String | No |
-| skad_campaign_id | iOS | Campaign ID used to publish the ad. Range 0-100 | Integer | No |
-| skad_conversion_value | iOS | Conversion value reported by iOS. Range 0-63.<br />If null, iOS didn't populate the field\*\* | Integer | No |
-| skad_mode | AppsFlyer | The conversion measurement mode used to decode the iOS postback. Options:<br />- custom_decode<br />- revenue<br />- events<br />- skan4<br />- custom_encode<br />- engagement | String | No |
-| skad_redownload | iOS | If true, the app was redownloaded | Boolean | No |
-| skad_revenue | iOS | Event revenue amount in USD. | Float | No |
-| skad_source_app_id | iOS | Site ID - the app publishing the ad.<br />Field population depends on privacy thresholds\*\* | String | No |
-| skad_transaction_id | iOS | - | String | No |
-| skad_version | iOS | - | String | No |
-| timestamp | iOS | Time that AppsFlyer received the SKAN postback.<br />For Google Ads and Meta ads, this is the time AppsFlyer gets the data from the Google and Meta ads API, respectively. | Timestamp<br />(time string for SRN advertising dimensions report) | Yes |
-| event_value | S2S | Default value: null<br />Contains a string set by apps implementing custom decode.<br />Advertisers consume this in their systems. AppsFlyer doesn't make use of it. | String (JSON) | No |
-| ad_network_adset_id | Ad network |  | String | Yes |
-| ad_network_adset_name | Ad network |  | String | Yes |
-| ad_network_ad_name | Ad network |  | String | Yes |
-| ad_network_ad_id | Ad network |  | String | Yes |
-| skad_did_win (1) | 3.0 (iOS 14.6) | Used to distinguish between campaigns [contributing or attributed](https://developer.apple.com/documentation/storekit/skadnetwork/skadnetwork_release_notes/skadnetwork_version_3_0_release_notes) with the install. <br />- If true, the campaign is attributed for bringing the install.<br />- If false, the campaign is recognized as contributing to the install, but it isn't included in any SKAN dashboards or reports.<br />- If null, iOS didn't populate the field due to a [legacy iOS or SKAdNetwork version](https://developer.apple.com/documentation/storekit/skadnetwork/skadnetwork_release_notes/skadnetwork_version_3_0_release_notes). | Boolean | No |
-| skad_fidelity_type (1) | 2.2 (iOS 14.5) | Differentiate between [ad presentation](https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions) options that affect attribution. Indicated using the values 0 and1 as follows: <br />- View-though ads (0)<br />- StoreKit-rendered ads (1)<br />Disregard the field value if the SKAN version is before 2.2 | Integer | Yes |
-| ad_network_source_app_id (1) | Ad network | Publisher app ID reported by the ad network. Use to help reconcile cost; reported by the ad network. The basis for this data is provided by the publisher app. | String | No |
-| ad_network_channel (1) | Ad network |  | String | No |
-| af_prt (1) | Ad network |  | String | No |
-| min_revenue | AppsFlyer | See note (4) | Real number | No |
-| max_revenue | AppsFlyer | See note (4) | Real number | No |
-| event_revenue | AppsFlyer | Formula: [sum of values for the specific event in USD]/[The number of events that happened on a specific day] | Float | Yes |
-| min_event_counter | AppsFlyer | Use to calculate the number of times a user performs an event. See note (3) | Integer | No |
-| max_event_counter | AppsFlyer | See note (3) | Integer | No |
-| min_time_post_install | AppsFlyer | See note (5) | Integer | No |
-| max_time_post_install | AppsFlyer | See note (5) | Integer | No |
-| af_attribution_flag | AppsFlyer | When the Single Source of Truth (SSOT) mechanism is on: If true, the install was attributed by both AppsFlyer and SKAN. If false, the install wasn't attributed by AppsFlyer. If the skad_conversion_value is null, the flag is either true or false (based on [modeling](/docs/skan-modeled-data#null-conversion-values)). | Boolean | No |
-| measurement_window | AppsFlyer | Duration of the activity window. Default 24h. | Integer | No |
-| interval | AppsFlyer | Activity window intervals. | Integer | No |
-| user_agent | AppsFlyer | Device user agent | String | No |
-| skad_postback_sequence_index | 4.0 (iOS 16.2) | - Value represents the SKAN window, either `0`, `1`, or `2`.<br />- For SKAN 3 the value is `0` | Integer | Yes |
-| skad_coarse_conversion_value | 4.0 (iOS 16.2) | - Value can be `low`, `medium`, or `high`.<br />- For SKAN 3 the value is `null`. | String | Yes |
-| skad_source_identifier | 4.0 (iOS 16.2) | - Value can be up to 4 digits.<br />- For SKAN 3 the value is `null`. | String | Yes |
-| skad_source_domain | 4.0 (iOS 16.2) | - Value represents the source of attributable web ads.<br />- For SKAN 3 the value is `null`. | String | Yes |
-| ad_network_creative | Ad network | - Value is based on data enrichment received from the ad network.<br />- For SKAN 3 the value is `null`. | String | No |
-| \*\* Apple determines if the field is populated using a privacy threshold mechanism<br />(1) Starting June 2, 2021, the field is added to reports but won't necessarily be populated.<br />(3) To determine the number of times a user performs a given in-app event use the formula: `[round up (min_event_counter + max_event_counter) / 2]` . Note! You must round up the nearest integer.<br />Example:<br />A. If min = 0 and max = 1 the average is 0.5; rounding up returns a result of 1.<br />B. If min = 5 and max = 10, the average is 7.5; rounding up returns a result of 8.<br />(4) Revenue is always provided in the field `skad_revenue`. If you use SKAN 4 or [Custom mode](/docs/skan-conversion-studio), the bucket range associated with the event and used to calculate skad_revenue is described by min_revenue and max_revenue.<br />(5)<br />- In Custom conversion: AppsFlyer calculates install time as the postback arrival time - 36h - average (min_time_post_install + max_time_post_install). However, if CV=0 then average (min_time_post_install + max_time_post_install) is regarded as 0. <br />- In Decode conversion: The min_time_post_install is one hour less than that set in max_time_post_install which is equal to [hours_from_install](/docs/skan-cv-decode-map-your-cv-to-events#decode-csv-file-specification) set by you in your Decode conversion mapping. | | | | |
+</Accordion>
+
+<div id="fields-available-in-decoded-event-reports" />
+
+<Accordion title="Fields available in decoded event reports">
+
+<table><thead><tr><th>Field name</th><th>Source</th><th>Description</th><th>Format</th><th>Included in SRN advertising dimensions report</th></tr></thead><tbody><tr><td>ad_network_campaign_id</td><td>Ad network</td><td>Campaign ID reported by the ad network to AppsFlyer</td><td>String</td><td>Yes</td></tr><tr><td>ad_network_campaign<br/>_name</td><td>Ad network</td><td>Campaign name reported by the ad network to AppsFlyer</td><td>String</td><td>Yes</td></tr><tr><td>ad_network_timestamp</td><td>Ad network</td><td><p>Time the postback was received by the ad network</p><p>In the case of Google Ads, this field isn't populated. </p></td><td><p>Timestamp</p><p>(time string for SRN advertising dimensions report)</p></td><td>Yes</td></tr><tr><td>app_id</td><td>iOS</td><td>The app ID (advertiser app)</td><td>String</td><td>Yes</td></tr><tr><td>city</td><td> </td><td>Starting August 30, 2021, always null </td><td>String</td><td>No</td></tr><tr><td>country_code</td><td>Ad network</td><td> </td><td>String</td><td>No</td></tr><tr><td>dma</td><td> </td><td>Starting August 30, 2021, always null </td><td>String</td><td>No</td></tr><tr><td>event_name</td><td>AppsFlyer</td><td><p>In-app event name as configured in AppsFlyer.</p><p>For the SRN ___report, this is the in-app event name as configured in Meta ads.</p></td><td>String</td><td>Yes</td></tr><tr><td>event_uuid</td><td>AppsFlyer</td><td>A unique random identifier enabling partners to identify duplicate postbacks</td><td>String</td><td>No</td></tr><tr><td>install_date</td><td>iOS</td><td>Estimated by AppsFlyer based on the postback arrival time.</td><td>Time string</td><td>No</td></tr><tr><td>install_type</td><td>iOS</td><td>New installs</td><td>String</td><td>No</td></tr><tr><td>ip</td><td>iOS</td><td><p>The IP address in the HTTP message of the iOS device sending the postback.</p><p>This field is populated if the ad network provides us with the address.</p><p>Note! The SDK isn't involved in getting the address. </p></td><td>String</td><td>No</td></tr><tr><td>media_source</td><td>iOS</td><td>Ad network attributed using AppsFlyer network names</td><td>String</td><td>Yes</td></tr><tr><td>postal_code</td><td> </td><td>Starting August 30, 2021, always null </td><td>String</td><td>No</td></tr><tr><td>region</td><td>AppsFlyer</td><td>Determined according to the country_code</td><td>String</td><td>No</td></tr><tr><td>skad_ad_network_id</td><td>iOS</td><td>ID of the ad network to whom the postback was sent</td><td>String</td><td>No</td></tr><tr><td>skad_ambiguous_event (deprecated with SKAN 4+)</td><td>AppsFlyer</td><td>If true, the iOS postback was received during the first 72-hours after an advertiser changed the SKAN settings in the dashboard. Due to the various timers employed by SKAN, AppsFlyer can't map the event accurately.<ul><li>Not available in SKAN 4 and onwards</li></ul></td><td>Boolean</td><td>No</td></tr><tr><td>skad_attribution_signature</td><td>iOS</td><td> </td><td>String</td><td>No</td></tr><tr><td>skad_campaign_id</td><td>iOS</td><td>Campaign ID used to publish the ad. Range 0-100</td><td>Integer</td><td>No</td></tr><tr><td>skad_conversion_value</td><td>iOS</td><td><p>Conversion value reported by iOS. Range 0-63.</p><p>If null, iOS didn't populate the field\*\*</p></td><td>Integer</td><td>No</td></tr><tr><td>skad_mode</td><td>AppsFlyer</td><td>The conversion measurement mode used to decode the iOS postback. Options:<ul><li>custom_decode</li><li>revenue</li><li>events</li><li>skan4</li><li>custom_encode</li><li>engagement</li></ul></td><td>String</td><td>No</td></tr><tr><td>skad_redownload</td><td>iOS</td><td>If true, the app was redownloaded</td><td>Boolean</td><td>No</td></tr><tr><td>skad_revenue</td><td>iOS</td><td>Event revenue amount in USD.</td><td>Float</td><td>No</td></tr><tr><td>skad_source_app_id</td><td>iOS</td><td><p>Site ID - the app publishing the ad.</p><p>Field population depends on privacy thresholds\*\*</p></td><td>String</td><td>No</td></tr><tr><td>skad_transaction_id</td><td>iOS</td><td>-</td><td>String</td><td>No</td></tr><tr><td>skad_version</td><td>iOS</td><td>-</td><td>String</td><td>No</td></tr><tr><td>timestamp</td><td>iOS</td><td><p>Time that AppsFlyer received the SKAN postback.</p><p>For Google Ads and Meta ads, this is the time AppsFlyer gets the data from the Google and Meta ads API, respectively.</p></td><td><p>Timestamp</p><p>(time string for SRN advertising dimensions report)</p></td><td>Yes</td></tr><tr><td>event_value</td><td>S2S</td><td><p>Default value: null</p><p>Contains a string set by apps implementing custom decode.</p><p>Advertisers consume this in their systems. AppsFlyer doesn't make use of it. </p></td><td>String (JSON)</td><td>No</td></tr><tr><td>ad_network_adset_id</td><td>Ad network</td><td> </td><td>String</td><td>Yes</td></tr><tr><td>ad_network_adset_name</td><td>Ad network</td><td> </td><td>String</td><td>Yes</td></tr><tr><td>ad_network_ad_name</td><td>Ad network</td><td> </td><td>String</td><td>Yes</td></tr><tr><td>ad_network_ad_id</td><td>Ad network</td><td> </td><td>String</td><td>Yes</td></tr><tr><td>skad_did_win (1)</td><td>3.0 (iOS 14.6)</td><td>Used to distinguish between campaigns <a href="https://developer.apple.com/documentation/storekit/skadnetwork/skadnetwork_release_notes/skadnetwork_version_3_0_release_notes">contributing or attributed</a> with the install. <ul><li>If true, the campaign is attributed for bringing the install.</li><li>If false, the campaign is recognized as contributing to the install, but it isn't included in any SKAN dashboards or reports.</li><li>If null, iOS didn't populate the field due to a <a href="https://developer.apple.com/documentation/storekit/skadnetwork/skadnetwork_release_notes/skadnetwork_version_3_0_release_notes">legacy iOS or SKAdNetwork version</a>.</li></ul></td><td>Boolean</td><td>No</td></tr><tr><td>skad_fidelity_type (1)</td><td>2.2 (iOS 14.5)</td><td><p>Differentiate between <a href="https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions">ad presentation</a> options that affect attribution. Indicated using the values 0 and1 as follows: </p><ul><li>View-though ads (0)</li><li>StoreKit-rendered ads (1)</li></ul><p>Disregard the field value if the SKAN version is before 2.2</p></td><td>Integer</td><td>Yes</td></tr><tr><td>ad_network_source_app_id (1)</td><td>Ad network</td><td><span>Publisher app ID reported by the ad network. Use to help reconcile cost; reported by the ad network. The basis for this data is provided by the publisher app.</span></td><td>String</td><td>No</td></tr><tr><td>ad_network_channel (1)</td><td>Ad network</td><td> </td><td>String</td><td>No</td></tr><tr><td>af_prt (1)</td><td>Ad network</td><td> </td><td>String</td><td>No</td></tr><tr><td>min_revenue </td><td>AppsFlyer</td><td>See note (4)</td><td>Real number</td><td>No</td></tr><tr><td>max_revenue </td><td>AppsFlyer</td><td>See note (4)</td><td>Real number</td><td>No</td></tr><tr><td>event_revenue</td><td>AppsFlyer</td><td>Formula: [sum of values for the specific event in USD]/[The number of events that happened on a specific day]</td><td>Float</td><td>Yes</td></tr><tr><td>min_event_counter</td><td>AppsFlyer</td><td>Use to calculate the number of times a user performs an event. See note (3)</td><td>Integer</td><td>No</td></tr><tr><td>max_event_counter</td><td>AppsFlyer</td><td>See note (3)</td><td>Integer</td><td>No</td></tr><tr><td>min_time_post_install</td><td>AppsFlyer</td><td>See note (5)</td><td>Integer</td><td>No</td></tr><tr><td>max_time_post_install</td><td>AppsFlyer</td><td>See note (5)</td><td>Integer</td><td>No</td></tr><tr><td>af_attribution_flag</td><td>AppsFlyer</td><td>When the Single Source of Truth (SSOT) mechanism is on: If true, the install was attributed by both AppsFlyer and SKAN. If false, the install wasn't attributed by AppsFlyer. If the skad_conversion_value is null, the flag is either true or false (based on <a href="./skan-modeled-data#null-conversion-values">modeling</a>).</td><td>Boolean</td><td>No</td></tr><tr><td>measurement_window</td><td>AppsFlyer</td><td>Duration of the activity window. Default 24h. </td><td>Integer</td><td>No</td></tr><tr><td>interval</td><td>AppsFlyer</td><td>Activity window intervals. </td><td>Integer</td><td>No</td></tr><tr><td>user_agent</td><td>AppsFlyer</td><td>Device user agent</td><td>String</td><td>No</td></tr><tr><td>skad_postback_sequence_index</td><td>4.0 (iOS 16.2)</td><td><ul><li>Value represents the SKAN window, either<code>0</code>,<code>1</code>, or<code>2</code>.</li><li>For SKAN 3 the value is<code>0</code></li></ul></td><td>Integer</td><td>Yes</td></tr><tr><td>skad_coarse_conversion_value</td><td><p>4.0 (iOS 16.2)</p></td><td><ul><li>Value can be<code>low</code>,<code>medium</code>, or<code>high</code>.</li><li>For SKAN 3 the value is<code>null</code>.</li></ul></td><td>String</td><td>Yes</td></tr><tr><td>skad_source_identifier</td><td>4.0 (iOS 16.2)</td><td><ul><li>Value can be up to 4 digits.</li><li>For SKAN 3 the value is<code>null</code>. </li></ul></td><td>String</td><td>Yes</td></tr><tr><td>skad_source_domain</td><td>4.0 (iOS 16.2)</td><td><ul><li>Value represents the source of attributable web ads.</li><li>For SKAN 3 the value is<code>null</code>.</li></ul></td><td>String</td><td>Yes</td></tr><tr><td>ad_network_creative</td><td>Ad network</td><td><ul><li>Value is based on data enrichment received from the ad network.</li><li>For SKAN 3 the value is <code>null</code>.</li></ul></td><td>String</td><td>No</td></tr><tr><td colspan="4"><p>\*\* Apple determines if the field is populated using a privacy threshold mechanism</p><p>(1) Starting June 2, 2021, the field is added to reports but won't necessarily be populated.</p><p>(3) To determine the number of times a user performs a given in-app event use the formula: <code>[round up (min_event_counter + max_event_counter) / 2]</code> . Note! <mark> You must round up the nearest integer.</mark><br/>Example:<br/>A. If min = 0 and max = 1 the average is 0.5; rounding up returns a result of 1.<br/>B. If min = 5 and max = 10, the average is 7.5; rounding up returns a result of 8.</p><p>(4) Revenue is always provided in the field <code>skad_revenue</code>. If you use SKAN 4 or <a href="./skan-conversion-studio">Custom mode</a>, the bucket range associated with the event and used to calculate skad_revenue is described by min_revenue and max_revenue.</p><p>(5)</p><ul><li>In Custom conversion: AppsFlyer calculates install time as the postback arrival time - 36h - average (min_time_post_install + max_time_post_install). However, if CV=0 then average (min_time_post_install + max_time_post_install) is regarded as 0. </li><li>In Decode conversion: The min_time_post_install is one hour less than that set in max_time_post_install which is equal to <a href="./skan-cv-decode-map-your-cv-to-events#decode-csv-file-specification">hours_from_install</a> set by you in your Decode conversion mapping. </li></ul></td><td> </td></tr></tbody></table>
+
+</Accordion>
 
 ## Additional information
 
-### Traits and limitations
+<Accordion title="Traits and limitations">
 
 | Trait | Remarks |
 | --- | --- |
@@ -228,8 +117,8 @@ ___report, this is the in-app event name as configured in Meta ads. | String | Y
 | Historical data | Limited to the Data Locker availability window. |
 | Account user access | Available. According to account permissions |
 
-<Cards>
-  <Card title="Available SKAN reports (SKAN solution guide)" href="/docs/skadnetwork-skan-solution-guide#reporting-options" icon="fa-solid fa-lock">
-    Learn more about the reporting options available for SKAN.
-  </Card>
-</Cards>
+</Accordion>
+
+> 📘 **See also**
+>
+> * [Available SKAN reports (SKAN solution guide)](/docs/skadnetwork-skan-solution-guide#reporting-options)

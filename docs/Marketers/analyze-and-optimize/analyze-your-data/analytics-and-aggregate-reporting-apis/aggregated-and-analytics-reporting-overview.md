@@ -32,27 +32,19 @@ The tools detailed in this article relate to data that can be exported from the 
 
 <Accordion title="Reporting method comparison">
 
-
 The following table describes the different reporting methods and dashboards to get aggregate data.
-`[`Download the table as a CSV file](https://docs.google.com/spreadsheets/d/e/2PACX-1vSICicxcvD0996RT59fTLDJvdGUKxqPqr47f5SMD8BmsbZtrWIoxRxJEo7tAXTBBmnIbiH097VtK6L9/pub?output=xlsx) to see additional fields that explain various specs and limitations to help you compare and contrast the different reporting methods.
+
+[**Download the table as a CSV file**](https://docs.google.com/spreadsheets/d/e/2PACX-1vSICicxcvD0996RT59fTLDJvdGUKxqPqr47f5SMD8BmsbZtrWIoxRxJEo7tAXTBBmnIbiH097VtK6L9/pub?output=xlsx) **to see additional fields that explain various specs and limitations to help you compare and contrast the different reporting methods.**
+
 The additional spec fields in the downloadable CSV file include:
 
-
-`[`Data freshness](/docs/about-data-freshness-and-timezone-support): The period of time between the event occurrence and data becoming available via the reporting method.
-
-`[`LTV/activity](/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports): Whether data is LTV or activity.
-
-`[`Retargeting](/docs/retargeting-attribution-guide): Whether retargeting (re-engagement and re-attribution) data is displayed.
-
-`[`Re-install events attribution to first install](/docs/measure-reinstalls#attributed-to-the-first-install): Whether events after a reinstall can be attributed to the original install.
-
-`[`Timezone](/docs/about-data-freshness-and-timezone-support#date-and-timezone-principles): What timezone (UTC or app-selected) is used to display data.
-
-`[`Unattributed events](/docs/measure-reinstalls#unattributed-organic-inapps): Whether events that aren't attributed after a re-install are displayed.
-
-`[`Campaign name changes](/docs/campaign-name-changes?): Whether you can change campaign names without creating duplicate displays.
-
-
+* [Data freshness](/docs/about-data-freshness-and-timezone-support): The period of time between the event occurrence and data becoming available via the reporting method.
+* [LTV/activity](/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports): Whether data is LTV or activity.
+* [Retargeting](/docs/retargeting-attribution-guide): Whether retargeting (re-engagement and re-attribution) data is displayed.
+* [Re-install events attribution to first install](/docs/measure-reinstalls#attributed-to-the-first-install): Whether events after a reinstall can be attributed to the original install.
+* [Timezone](/docs/about-data-freshness-and-timezone-support#date-and-timezone-principles): What timezone (UTC or app-selected) is used to display data.
+* [Unattributed events](/docs/measure-reinstalls#unattributed-organic-inapps): Whether events that aren't attributed after a re-install are displayed.
+* [Campaign name changes](/docs/campaign-name-changes?): Whether you can change campaign names without creating duplicate displays.
 
 | Reporting method | Description |
 | --- | --- |
@@ -76,9 +68,7 @@ The additional spec fields in the downloadable CSV file include:
 
 <Accordion title="Cohort data delivery methods">
 
-
-Cohort is available via a number of different delivery methods: `[`Cohort dashboard](/docs/cohort-and-retention-dashboard), `[`Cohort API](/docs/cohort-api), and `[`Cohort analytics via Data Locker](/docs/cohort-analytics-via-data-locker). The table that follows lists the differences.
-
+Cohort is available via a number of different delivery methods: [Cohort dashboard](/docs/cohort-and-retention-dashboard), [Cohort API](/docs/cohort-api), and [Cohort analytics via Data Locker](/docs/cohort-analytics-via-data-locker). The table that follows lists the differences.
 
 | Characteristic | Cohort analytics in Data Locker | Advanced aggregated reports in Data Locker | Cohort Dashboard | Cohort API |
 | --- | --- | --- | --- | --- |
@@ -106,66 +96,29 @@ They are [Lifetime value (LTV)](/docs/troubleshooting-discrepancies-in-appsflyer
 
 <Accordion title="UA LTV aggregate data reports containing non-organic and organic users">
 
+<table><thead><tr><th>Report name</th><th>Grouped by</th></tr></thead><tbody><tr><td>Partners (media sources)</td><td>Agency, media source, campaign</td></tr><tr><td>Partners by date</td><td>Date, agency, media source, campaign</td></tr><tr><td>Daily activity</td><td>Date, agency, media source, campaign</td></tr><tr><td>Geo</td><td>Country, agency, media source, campaign</td></tr><tr><td>Geo by date</td><td>Date, country, agency, media source, campaign</td></tr><tr><td>View-through attribution (VTA) KPIs</td><td><a href="./pull-api-aggregate-data">VTA reports are available by Pull API</a></td></tr><tr><td colspan="2"><strong>Note</strong>: If Meta ads is the <em>media source</em> selected then additional columns are included: Adgroup ID, Adgroup name, Adset ID, Adset name</td></tr></tbody></table>
 
+Date fields in the CSV files have the format yyyy-mm-dd. When you open a CSV file in Excel, date fields are formatted using your computer's date and time settings. Be sure to select the appropriate date display in [Excel.](https://support.office.com/en-us/article/format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e#ID0EAACAAA=Windows)
 
+#### Examples of aggregate reports
 
-| Report name | Grouped by |
-| --- | --- |
-| Partners (media sources) | Agency, media source, campaign |
-| Partners by date | Date, agency, media source, campaign |
-| Daily activity | Date, agency, media source, campaign |
-| Geo | Country, agency, media source, campaign |
-| Geo by date | Date, country, agency, media source, campaign |
-| View-through attribution (VTA) KPIs | [VTA reports are available by Pull API](/docs/pull-api-aggregate-data) |
-| **Note**: If Meta ads is the *media source* selected then additional columns are included: Adgroup ID, Adgroup name, Adset ID, Adset name | |
+[Report examples in a spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmzRons779Dk5QWVoPsOF8E7yJLwNPB1IF87shZr6rcMJLjszlSNIbAMVcdeQLysr8Bc4QAby5QB4u/pub?output=xlsx)
 
-Date fields in the CSV files have the format yyyy-mm-dd. When you open a CSV file in Excel, date fields are formatted using your computer's date and time settings. Be sure to select the appropriate date display in `[`Excel.](https://support.office.com/en-us/article/format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e#ID0EAACAAA=Windows)
-Examples of aggregate reports
-`[`Report examples in a spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmzRons779Dk5QWVoPsOF8E7yJLwNPB1IF87shZr6rcMJLjszlSNIbAMVcdeQLysr8Bc4QAby5QB4u/pub?output=xlsx)
-Fields in UA aggregate reports
+#### Fields in UA aggregate reports
 
-
-| Field | Description | Report name | | | | |
-| --- | --- | --- | --- | --- | --- | --- |
-| Partner (media source) | Partner by date | Daily | Geo | Geo by date |
-| Country | Install country |  |  |  | ✓ | ✓ |
-| Date | Attribution date |  | ✓ |  |  | ✓ |
-| Agency/PMD (af\_prt) | Agency/partner name | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Media Source (pid) | Media source bringing the user (pid=media source) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Campaign | Campaign name (c= campaign name) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Campaign ID | Meta campaign ID | Meta ads only | Meta ads only | Meta ads only | Meta ads only | Meta ads only |
-| Adgroup ID | Meta ad group ID or Ad ID | Meta ads only | Meta ads only | Meta ads only | Meta ads only | Meta ads only |
-| Adgroup Name | Meta ad group | Meta ads only | Meta ads only | Meta ads only | Meta ads only | Meta ads only |
-| Adset ID | Meta adset ID | Meta ads only | Meta ads only | Meta ads only | Meta ads only | Meta ads only |
-| Adset Name | Meta adset name | Meta ads only | Meta ads only | Meta ads only | Meta ads only | Meta ads only |
-| ARPU | Average revenue per user | ✓ | ✓ |  | ✓ | ✓ |
-| Average eCPI | Average eCPI |  | ✓ |  |  |  |
-| Clicks | Number of clicks | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Conversion Rate | Number of installs/number of clicks | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CTR | Click-through rate |  | ✓ | ✓ |  |  |
-| `\{your event name\}(Unique users) | Number of unique users who performed the event | ✓ | ✓ |  | ✓ | ✓ |
-| \{your event name\} (Event counter) | Event counter | ✓ | ✓ |  | ✓ | ✓ |
-| \{your event name\}` (Sales in XXX) | Event sales in XXX where XXX is the app-selected currency | ✓ | ✓ |  | ✓ | ✓ |
-| Impressions | Number of impressions | ✓ | ✓ |  | ✓ | ✓ |
-| Installs | Number of installs | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Loyal Users | [default] User who opens the app more than 3 times | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Loyal Users/Installs | Loyal users rate | ✓ | ✓ |  |  |  |
-| ROI | Return on investment | ✓ | ✓ |  |  |  |
-| Sessions | * Number of non-organic app opens * Organic and non-organic sessions are available in Cohort analytics | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Total Cost | - | ✓ | ✓ |  |  |  |
-| Total revenue | Total revenue generated from the media source and campaign | ✓ | ✓ |  | ✓ | ✓ |
-| **Note:** Columns showing "Meta ads only" are included when selecting Meta ads as the only media source. | | | | | | |
+<table><thead><tr><th rowspan="2">Field</th><th rowspan="2">Description</th><th colspan="5">Report name</th></tr><tr><th>Partner (media source)</th><th>Partner by date</th><th>Daily</th><th>Geo</th><th>Geo by date</th></tr></thead><tbody><tr><td>Country</td><td>Install country</td><td></td><td></td><td></td><td>✓</td><td>✓</td></tr><tr><td>Date</td><td>Attribution date</td><td></td><td>✓</td><td></td><td></td><td>✓</td></tr><tr><td>Agency/PMD (af_prt)</td><td>Agency/partner name</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Media Source (pid)</td><td>Media source bringing the user (pid=media source)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Campaign</td><td>Campaign name (c= campaign name)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Campaign ID</td><td>Meta campaign ID</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td></tr><tr><td>Adgroup ID</td><td>Meta ad group ID or Ad ID</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td></tr><tr><td>Adgroup Name</td><td>Meta ad group</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td></tr><tr><td>Adset ID</td><td>Meta adset ID</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td></tr><tr><td>Adset Name</td><td>Meta adset name</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td><td>Meta ads only</td></tr><tr><td>ARPU</td><td>Average revenue per user</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td>Average eCPI</td><td>Average eCPI</td><td></td><td>✓</td><td></td><td></td><td></td></tr><tr><td>Clicks</td><td>Number of clicks</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Conversion Rate</td><td>Number of installs/number of clicks</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>CTR</td><td>Click-through rate</td><td></td><td>✓</td><td>✓</td><td></td><td></td></tr><tr><td>`{your event name}(Unique users)</td><td>Number of unique users who performed the event</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td>{your event name} (Event counter)</td><td>Event counter</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td>{your event name}` (Sales in XXX)</td><td>Event sales in XXX where XXX is the app-selected currency</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td>Impressions</td><td>Number of impressions</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td>Installs</td><td>Number of installs</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Loyal Users</td><td>[default] User who opens the app more than 3 times</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Loyal Users/Installs</td><td>Loyal users rate</td><td>✓</td><td>✓</td><td></td><td></td><td></td></tr><tr><td>ROI</td><td>Return on investment</td><td>✓</td><td>✓</td><td></td><td></td><td></td></tr><tr><td>Sessions</td><td><ul><li>Number of non-organic app opens</li><li>Organic and non-organic sessions are available in Cohort analytics</li></ul></td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Total Cost</td><td>-</td><td>✓</td><td>✓</td><td></td><td></td><td></td></tr><tr><td>Total revenue</td><td>Total revenue generated from the media source and campaign</td><td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr><tr><td colspan="7"><strong>Note:</strong> Columns showing "Meta ads only" are included when selecting Meta ads as the only media source.</td></tr></tbody></table>
 
 </Accordion>
 
 <Accordion title="Retargeting aggregate data reports">
 
+Retargeting reports consist of users who engaged with a [retargeting campaign](/docs/retargeting-attribution-guide#retargeting-reports-and-raw-data) and performed a re-engagement or re-attribution.
 
-Retargeting reports consist of users who engaged with a `[`retargeting campaign](/docs/retargeting-attribution-guide#retargeting-reports-and-raw-data) and performed a re-engagement or re-attribution.
 In retargeting reports, there is no distinction between organic and non-organic users.
-To get retargeting reports via Pull API, append the &amp;reattr=true parameter to performance reports URIs.
-Aggregate LTV retargeting reports
 
+To get retargeting reports via Pull API, append the *&reattr=true* parameter to performance reports URIs.
+
+#### Aggregate LTV retargeting reports
 
 | Report name | Grouped by |
 | --- | --- |
@@ -175,8 +128,7 @@ Aggregate LTV retargeting reports
 | Country | Country, agency, media source, campaign |
 | Country by date | Date, country, agency, media source, campaign |
 
-Aggregate LTV retargeting reports
-
+#### Aggregate LTV retargeting reports
 
 | Field | Description | Partners | Daily | Partners by date | Geo by date | Geo |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -204,17 +156,21 @@ Aggregate LTV retargeting reports
 
 <Accordion title="SKAdNetwork">
 
-`[`SKAdNetwork aggregate reports](/docs/skadnetwork-skan-solution-guide#reporting-options)
+[SKAdNetwork aggregate reports](/docs/skadnetwork-skan-solution-guide#reporting-options)
 
 </Accordion>
+
 <Accordion title="Protect360—blocked fraud">
 
+![Protect360 blocked fraud report example](https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png)
 
-`![Protect360 blocked fraud report example](https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png)`Blocked fraud aggregate reports provide details of events blocked by `[`Protect360](/docs/protect360-anti-fraud-guide).
+Blocked fraud aggregate reports provide details of events blocked by [Protect360](/docs/protect360-anti-fraud-guide).
+
 The reports are available via Pull API. These reports aren't available via the Export Data page.
-The date range relates to the install date.
-Aggregate Protect360 reports available via Pull API
 
+The date range relates to the install date.
+
+#### Aggregate Protect360 reports available via Pull API
 
 | Report name |
 | --- |
@@ -224,7 +180,7 @@ Aggregate Protect360 reports available via Pull API
 | Geo by date |
 | Partner's campaign report |
 
-Limitation: The blocking reason Bots displays even in cases where the reason should be app version or missing customer user id.
+**Limitation:** The blocking reason **Bots** displays even in cases where the reason should be **app version** or **missing customer user id**.
 
 </Accordion>
 

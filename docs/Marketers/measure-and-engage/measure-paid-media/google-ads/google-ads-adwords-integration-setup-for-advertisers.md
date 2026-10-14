@@ -46,7 +46,7 @@ Make sure the requirements below are met to support Google PMOD install claims o
 1. [Update AppsFlyer’s iOS SDK](https://dev.appsflyer.com/hc/docs/install-ios-sdk) to **v6.17.9 or higher** (no additional SDK configuration is required).
 2. For Google SDK update, one of the following:
    * **Google’s Firebase iOS** SDK **v11.14.0 or higher.** For more information, see [the Google documentation](https://github.com/firebase/firebase-ios-sdk/releases). **OR**
-   * **Google ODM standalone** SDK**.** For more information, see [the Firebase documentation.](https://support.google.com/google-ads/answer/16384720)
+   * **Google ODM standalone** SDK. For more information, see [the Firebase documentation.](https://support.google.com/google-ads/answer/16384720)
 3. Make sure that [IDFV](/docs/appsflyer-knowledge-base-glossary#idfv) is sent to AppsFlyer with every app open or in-App event.
 4. Make sure the IP address is sent to AppsFlyer with every app open event. When IP masking is configured for the app, ICM might not work.
 
@@ -81,7 +81,7 @@ Creating a link ID requires **Google administrative access** to the account. Fol
 6. Decide whether or not to turn on [**Non EU users**](/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users).
 
    ![non eu usrs.png](https://files.readme.io/f77a449ffaf508b8fe27b4ead44aa511354572dd4ecf82509a2157ca2f08edfa-30759261958673.png)
-7. Turn **Advanced data sharing** ONorOFF**.** When ON Google Ads receives postbacks and events with device-level identifiers for all devices, including devices that have not made their Advertising ID  (IDFA or Google advertising ID)  available.
+7. Turn **Advanced data sharing** ONorOFF. When ON Google Ads receives postbacks and events with device-level identifiers for all devices, including devices that have not made their Advertising ID  (IDFA or Google advertising ID)  available.
 
    Furthermore, when **Advanced Data Sharing** is ON, AppsFlyer attributes these events. When OFF, only postbacks and events from devices with an IDFA are sent and attributed.
 8. Configuring **Install attribution**:
@@ -97,13 +97,10 @@ Creating a link ID requires **Google administrative access** to the account. Fol
 
    No separate lookback window configuration is needed, as reinstall attribution uses the values from your install attribution settings. For more information, see [Measure reinstalls](/docs/measure-reinstalls).
 
-   CALLSTART::Note::
+   > 📘 **Important!**
+   >
+   > A reinstall conversion data is **presented as a session\_start** on Google Ads dashboard. In AppsFlyer, it is attributed and seen as a re-attribution.
 
-   #### Important!
-
-   A reinstall conversion data is **presented as a session\_start** on Google Ads dashboard. In AppsFlyer, it is attributed and seen as a re-attribution.
-
-   CALLEND::
 10. Configure **Re-engagement attribution**:
     1. [Enable retargeting in App Settings](/docs/app-settings#reengagement-attribution).
     2. Enable re-engagement attribution in Google Ads integration settings
@@ -147,13 +144,10 @@ Follow the steps described in the [Google Ads Help documentation](https://suppor
 * Set the **session\_start** event as a conversion event if you plan to measure re-engagements with Google.
 * Repeat this process for each in-app event you want to measure with Google.
 
-  CALLSTART::Note::
+  > 📘 **Note**
+  >
+  > If the Partner Event identifier in Google Ads has been changed or is labeled as CUSTOM, while the corresponding event name has been modified in AppsFlyer, you will need to re-import the data.
 
-  #### Note
-
-  If the Partner Event identifier in Google Ads has been changed or is labeled as CUSTOM, while the corresponding event name has been modified in AppsFlyer, you will need to re-import the data.
-
-  CALLEND::
 * After finishing the process, you can see your third-party conversion events on the **Conversions** > **Summary** page. If an event doesn't appear in the list, or it has been removed from the Google Ads conversion list
   1. Click **View all conversion actions**. The **Status** filter appears.
   2. Click **Status** and select **All** to see all events, including disabled and removed events.
@@ -171,26 +165,22 @@ Congratulations! You're now measuring Google Ads mobile campaigns with AppsFlyer
 
 1. Go to the **Integration** tab and scroll down to the **In-app event postbacks** section.
 
-   CALLSTART::Note::
-
-   #### Note
+   <br /><br />**Note**<br />#### Note
 
    When enabling the Google Ads in-app events mapping for an app **for the first time:**
 
    * The **af\_app\_opened** event is automatically defined and mapped to **session\_start** (if not, add it manually).
-   * Under **for users from**, you must select **All media sources, including organic** for each event to enable Google Ads to receive these events. After the integration was set successfully, you are able to change this selection for any event.CALLEND::
+   * Under **for users from**, you must select **All media sources, including organic** for each event to enable Google Ads to receive these events. After the integration was set successfully, you are able to change this selection for any event.
 2. Turn on **In-app event postbacks**.
 3. Click **Add event** to add an SDK or server-to-server event to the list.
 4. Complete the following parameters:
 
-   
-
 | Parameter Name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.  <br />**Tip**: Don't see the event you are looking for?<br /><br />* Make sure to activate the event on a device with a non-organic installation and recheck.<br />* Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
 | **mapped to partner event** | The unique name or ID of each event, as defined in Google Ads. Select the most suitable pre-defined AppsFlyer event from the drop-down box. |
-| **for users from** | Select the sending option for the event:<br /><br />* **This partner only**: Send postbacks only when this event is attributed to Google Ads.<br />* **All media sources, including organic**: Send postbacks for events attributed to any partner and organic events. |
-| **including** | * **No data (default)**: Send only the event itself without the event value.<br />* **Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).<br />* **Values without revenue**: Send all the parameters **excluding** the revenue value. |
+| **for users from** | Select the sending option for the event:<ul><li>**This partner only**: Send postbacks only when this event is attributed to Google Ads.</li><li>**All media sources, including organic**: Send postbacks for events attributed to any partner and organic events.</li></ul> |
+| **including** | <ul><li>**No data (default)**: Send only the event itself without the event value.</li><li>**Values and revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: Send all the parameters **excluding** the revenue value.</li></ul> |
 
 5. Click **Save integration**.
 6. After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner.
@@ -260,7 +250,7 @@ When a potential user clicks on a feed, they are redirected to the app page. Aft
 
 **To enable deferred deep linking with Google Ads:**
 
-1. Make sure to use [GCD](/docs/conversion-data-payloads-and-scenarios#reattribution-with-deferred-deep-linking) to receive the `af_dp` parameter in the AppsFlyer SDK.
+1. Make sure to use [GCD](/docs/conversion-data-payloads-and-scenarios#re-attribution-with-deferred-deep-linking) to receive the `af_dp` parameter in the AppsFlyer SDK.
 2. In Google, [set up feeds](https://support.google.com/google-ads/answer/9958973?hl=en&ref_topic=10011599) or [set ad group level deferred deep linking](https://support.google.com/google-ads/answer/12373847?).
 3. In AppsFlyer, Go to **Configuration** > **Active Integrations**. Select **Google Ads (Adwords)**.
 4. In the **Integration** tab, turn on **Deferred deep linking with Google Ads.**
@@ -272,7 +262,7 @@ The following table describes the parameter mapping between Google Ads and AppsF
 
 | **Network type** | **Search** | **Display** | **YouTube** |
 | --- | --- | --- | --- |
-| Channel (`af_channel`) | See table below, [How to populate the `Channel` parameter](/docs/google-ads-adwords-integration-setup-for-advertisers#how-to-populate-the-channel-parameter) |  |  |
+| Channel (`af_channel`) | See table below, [How to populate the `Channel` parameter](/docs/google-ads-adwords-integration-setup-for-advertisers#populate-the-channel-parameter) |  |  |
 | Campaign (`c`) | Yes | Yes | Yes |
 | Campaign ID (`af_c_id`) | Yes | Yes | Yes |
 | Adset (`af_adset`)  <br />Populated by the `ad_group_name` parameter.  <br />If this parameter is null, AF populates `af_adset` with `ad_group_id`. | Yes | Yes | Yes |
@@ -359,8 +349,8 @@ When advertising with Google Ads without the Firebase SDK implemented, the follo
 | Limitation | Details |
 | --- | --- |
 | Attribution scope | Supported for **installs and re-attribution only**; does **not** support re-engagements. |
-| Claim data included | Google claims include(in most cases):<br /><br />* **Campaign name**<br />* **Campaign ID**<br />* **Ad group (Adset) name**<br />* **Ad group (Adset) ID**<br /><br />Does not include **ad information.** |
-| Channel field | No network type or subtype provided; the **Channel** field will contain a partial value: `ACI_`  <br />For more information about “Channel” logic, see [How to populate the `Channel` parameter](/docs/google-ads-adwords-integration-setup-for-advertisers#how-to-populate-the-channel-parameter). |
+| Claim data included | Google claims include(in most cases):<ul><li>**Campaign name**</li><li>**Campaign ID**</li><li>**Ad group (Adset) name**</li><li>**Ad group (Adset) ID**</li></ul>Does not include **ad information.** |
+| Channel field | No network type or subtype provided; the **Channel** field will contain a partial value: `ACI_`  <br />For more information about “Channel” logic, see [How to populate the `Channel` parameter](/docs/google-ads-adwords-integration-setup-for-advertisers#populate-the-channel-parameter). |
 | iOS ODM regional support | **Not supported** in the EU, UK, and Switzerland |
 | Aggregated Advance Privacy (AAP) | When the  [AAP](/docs/apply-aggregated-advanced-privacy-framework) (Aggregated Advanced Privacy) toggle is turned **ON** in the iOS app settings, Google-attributed data in the raw data reports is shown as restricted. To view Google non-consented data, make sure the AAP toggle is **OFF**. |
 | Attributed touch time | Google probabilistic claims timestamp is rounded to 15-minute intervals (00:00, 00:15, 00:30, etc.) |

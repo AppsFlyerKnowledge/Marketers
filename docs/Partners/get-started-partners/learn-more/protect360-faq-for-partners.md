@@ -32,10 +32,8 @@ Once the capping mechanism is triggered, Protect360 blocks the ad network’s im
 
 A network can avoid surpassing the threshold by stopping campaigns and publishers with unusually high volumes of ad engagements that do not show any impact on performance results.
 
-We recommend taking a look at these articles:
-
-[Impression capping](/docs/protect360-for-integrated-partners#impression-and-click-capping)
-
+We recommend taking a look at these articles:  
+[Impression capping](/docs/protect360-for-integrated-partners#impression-capping)  
 [Capping FAQ](/docs/protect360-for-integrated-partners#faq)
 
 </Accordion>
@@ -44,9 +42,7 @@ We recommend taking a look at these articles:
 
 Our click-flood algorithms run at various intervals over the course of the day, and whenever the threshold is crossed, based on internal parameters and logic, the publisher’s ad engagements will be ineligible for attribution.
 
-> 📘 Note
->
-> Some of our click flood algorithms work across apps, implying that anomalies originating from identical fraudulent sources would be recognized for other advertised apps as well.
+**Please note:** Some of our click flood algorithms work across apps, implying that anomalies originating from identical fraudulent sources would be recognized for other advertised apps as well.
 
 We recommend reading: [What is click flooding?](https://www.appsflyer.com/glossary/click-flooding/)
 
@@ -56,7 +52,7 @@ We recommend reading: [What is click flooding?](https://www.appsflyer.com/glossa
 
 <Accordion title="Why was my test install rejected from attribution?">
 
-AppsFlyer’s anti-fraud detection applies different methodologies across various protection layers, such as single installs and install clusters. Clusters are being reviewed in various aggregations: by publisher, media source, app, and so on. The fraudulent activity is examined using various statistical algorithms and machine learning algorithms that consider each cluster as a whole. Thus, if a cluster is found fraudulent with high statistical significance, all installs in that cluster are considered fraudulent. It's a well-known fraudster tactic to mix some legitimate installs into high volumes of fraudulent activity in the hope that the fraud will be “diluted” enough to avoid triggering blocking mechanisms.
+AppsFlyer’s anti-fraud detection applies different methodologies across various protection layers, such as single installs and install clusters. Clusters are being reviewed in various aggregations: by publisher, media source, app, and so on. The fraudulent activity is examined using various statistical algorithms and machine learning algorithms that consider each cluster as a whole. Thus, if a cluster is found fraudulent with high statistical significance, all installs in that cluster are considered fraudulent. It's a well-known fraudster tactic to mix some legitimate installs into high volumes of fraudulent activity in the hope that the fraud will be “diluted” enough to avoid triggering blocking mechanisms.
 
 By default, all incoming installs are considered as LIVE traffic - hence to ensure your test install isn't categorized under the Protect360 algorithms, you would need to follow the steps mentioned in [this article](/docs/registering-test-devices) to register your device as a test device before performing a test.
 
@@ -76,10 +72,8 @@ We recommend reading about [Protect360 blocked reasons](/docs/protect360-raw-dat
 
 You can view the results of our detection efforts using the Protect360 dashboard and raw data reports, subject to access granted by the respective advertiser.
 
-We recommend taking a look at these articles:
-
-[Protect360 Dashboard](/docs/protect360-dashboard)
-
+We recommend taking a look at these articles:  
+[Protect360 Dashboard](/docs/protect360-dashboard)  
 [Protect360 Raw Data](/docs/protect360-raw-data-reports#getting-raw-data-reports)
 
 </Accordion>
@@ -98,7 +92,7 @@ Real-time detection before attribution and post-attribution detection both belon
 
 Compared to real-time detection, post-attribution detection relies more on data pointers collected after the install, during which, if anomalies are observed, Protect360 will record anomalous activities and display them under the post-attribution category.
 
-Considering the above, certain detection methods (timestamp_anomalies, behavioral_anomalies, etc.) are more likely to be detected in the post-attribution stage rather than in real time, since the data is inconclusive on the level of an individual install but gains significance when examined for its distribution in statistical analysis.
+Considering the above, certain detection methods (timestamp\_anomalies, behavioral\_anomalies, etc.) are more likely to be detected in the post-attribution stage rather than in real time, since the data is inconclusive on the level of an individual install but gains significance when examined for its distribution in statistical analysis.
 
 Learn more about [post-attribution detection](/docs/protect360-anti-fraud-guide#postattribution-detection).
 

@@ -39,12 +39,12 @@ See below AppsFlyers base attribution link with a detailed explanation per macro
 
 | AppsFlyer Parameter | FOCUUS Macros | Description |
 | --- | --- | --- |
-| **clickid** | **`{tid}`** | **Request ID of each user session** \- **Required** |
+| **clickid** | **`{tid}`** | **Request ID of each user session** - **Required** |
 | af\_siteid | `{publisher_id}` | ID of the Affiliate promoting the offer - Optional |
 
 For a complete list of AppsFlyer parameters, [click here](/docs/about-link-structure-and-parameters#attribution-link-parameters).
 
-FOCUUS allows an unlimited number of macros, and you can name them as you wish, [click here](http://support.focuus.com/knowledgebase/articles/827379-traffic-source-template-tokens-macros "Link: http://support.focuus.com/knowledgebase/articles/827379-traffic-source-template-tokens-macros").
+FOCUUS allows an unlimited number of macros, and you can name them as you wish, [click](/docs/about-link-structure-and-parameters#attribution-link-parameters) [here](http://support.focuus.com/knowledgebase/articles/827379-traffic-source-template-tokens-macros "Link: http://support.focuus.com/knowledgebase/articles/827379-traffic-source-template-tokens-macros").
 
 ### Complete attribution link template
 
@@ -58,10 +58,9 @@ To create your install and in-app event postbacks at **FOCUUS**
 
 1. Create a [new event](http://support.focuus.com/knowledgebase/articles/827775-events "Link: http://support.focuus.com/knowledgebase/articles/827775-events") (Install and any other in-app events).
 2. [Generate pixel](http://support.focuus.com/knowledgebase/articles/827766-s2s-integration) (postback) for implementation.
-3. Copy the postback URL that appears in the box labeled [Server2Server Pixel](http://support.focuus.com/knowledgebase/articles/827766-s2s-integration "Link: http://support.focuus.com/knowledgebase/articles/827766-s2s-integration") **.**
-4. Replace the TRANSACTION\_ID with AppsFleyr macro - “ **clickid**”
-
-https://pixel.focuusing.com/event.php?type=imp& **tid=`{clickid}`**
+3. Copy the postback URL that appears in the box labeled [Server2Server Pixel](http://support.focuus.com/knowledgebase/articles/827766-s2s-integration "Link: http://support.focuus.com/knowledgebase/articles/827766-s2s-integration").
+4. Replace the TRANSACTION\_ID with AppsFleyr macro - “**clickid**”  
+   https://pixel.focuusing.com/event.php?type=imp&tid=`{clickid}`**
 
 **Optional Postback Parameters**
 
@@ -71,6 +70,6 @@ https://pixel.focuusing.com/event.php?type=imp& **tid=`{clickid}`**
 
 **Event name (Install, Registration, etc.) appears by default on the generated pixel. for example:**
 
-* https://traffic.focuusing.com/ **install**?tid=`{TRANSACTION_ID}`
-* https://traffic.focuusing.com/ **conversion**?tid=`{TRANSACTION_ID}`
-* https://traffic.focuusing.com/ **ftd**?tid=`{TRANSACTION_ID}`
+* https://traffic.focuusing.com/install?tid=`{TRANSACTION_ID}`
+* https://traffic.focuusing.com/conversion?tid=`{TRANSACTION_ID}`
+* https://traffic.focuusing.com/ftd?tid=`{TRANSACTION_ID}`

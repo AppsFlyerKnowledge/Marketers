@@ -58,30 +58,35 @@ AppsFlyer evaluates URL parameters independently for each reporting field (such 
 
 Web Performance Measurement checks the priority order for each field individually. If a parameter from the higher-priority PID class is not present for a specific attribute, the system automatically falls back to the corresponding parameter in the UTM class to determine the correct value for that field.
 
-<Tabs>
-<Tab title="Scenario A: PID class only">
+<Accordion title="Scenario A. URL with PID class only (AppsFlyer reporting)">
 
 Use the PID class when AppsFlyer reporting is your primary goal.
 
-```auto
+#### Example
+
+```
 www.website.com?pid=facebook_int&c={{campaign.name}}&af_c_id={{campaign.id}}
 ```
 
 **Result**: AppsFlyer identifies the media source using `pid` and the campaign using `c`.
 
-</Tab>
-<Tab title="Scenario B: UTM class only">
+</Accordion>
+
+<Accordion title="Scenario B. URL with UTM class only (fallback)">
 
 If `pid` is missing, AppsFlyer falls back to the UTM class.
 
-```auto
-www.website.com?utm_source=facebook&utm_medium=paidsocial&utm_campaign={{campaign.name}}
+#### Example
+
+```
+ www.website.com?utm_source=facebook&utm_medium=paidsocial&utm_campaign={{campaign.name}}
 ```
 
 **Result**: AppsFlyer identifies the media source using `utm_source` and the campaign using `utm_campaign`.
 
-</Tab>
-<Tab title="Scenario C: Both PID and UTM classes">
+</Accordion>
+
+<Accordion title="Scenario C. URL with both PID and UTM classes">
 
 AppsFlyer allows you to include parameters from different classes (e.g., PID and UTM) within the same URL. This is useful when you need to support AppsFlyer attribution alongside other analytics tools, such as Google Analytics or internal measurement systems.
 
@@ -89,7 +94,7 @@ AppsFlyer processes attribution fields, such as Media Source and Campaign, indep
 
 #### Example 1: Overlapping parameters
 
-```auto
+```
 www.website.com?pid=facebook_ads&c=summer_sale&utm_source=facebook&utm_campaign=seasonal_promo
 ```
 
@@ -99,7 +104,7 @@ www.website.com?pid=facebook_ads&c=summer_sale&utm_source=facebook&utm_campaign=
 
 #### Example 2: Mixed parameter classes
 
-```auto
+```
 www.website.com?utm_source=facebook&c=summer_sale
 ```
 
@@ -107,20 +112,19 @@ www.website.com?utm_source=facebook&c=summer_sale
 * **Campaign:** AppsFlyer detects `c`. Since no UTM class equivalent (`utm_campaign`) is present, it records `summer_sale` from the PID class.
 * **Result:** AppsFlyer successfully attributes the event using values from both classes because each field is resolved independently.
 
-</Tab>
-</Tabs>
+</Accordion>
 
 ## Other Best Practices
 
-### Keep parameter values in a consistent case
+<Accordion title="Keep parameter values in a consistent case">
 
 Parameter values are **case-sensitive**. For example, `utm_source=channel1` and `utm_source=CHANNEL1` are treated as **different media sources**.
 
-> 👍 Best practice
->
-> Define a casing convention (lowercase is common) and apply it across all URLs.
+Best practice: Define a casing convention (lowercase is common) and apply it across all URLs.
 
-### Use question marks only once
+</Accordion>
+
+<Accordion title="Use question marks only once">
 
 Rules:
 
@@ -136,8 +140,12 @@ Incorrect:
 * `www.website.com??parameters`
 * `www.website.com?parameter1?parameter2`
 
-### Don’t use anchor signs (#)
+</Accordion>
+
+<Accordion title="Don’t use anchor signs (#)">
 
 Don’t use anchor signs (`#`) in the URL.
 
 Why: parameters after `#` may not load and may not be recorded by the web SDK.
+
+</Accordion>

@@ -28,7 +28,7 @@ Purchase and subscription validation is essential for ensuring the accuracy and 
 
 AppsFlyer offers two solutions that validate and measure in-app purchases and subscription revenue: Receipt validation and ROI360 store revenue.
 
-The article provides a high-level introduction to each solution and [a feature comparison](#h_01KCY9DHB7RJ89GB5CM29T2AK5) to help you determine which option is right for your app.
+The article provides a high-level introduction to each solution and [a feature comparison](#compare-receipt-validation-and-roi360-store-revenue) to help you determine which option is right for your app.
 
 ## The two solutions for purchase and subscription validation
 

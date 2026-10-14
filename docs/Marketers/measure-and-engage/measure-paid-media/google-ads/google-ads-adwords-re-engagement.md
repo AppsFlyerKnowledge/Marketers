@@ -22,14 +22,15 @@ x-zendesk:
   created_at: '2022-01-20T09:55:51Z'
   edited_at: '2025-11-11T09:05:50Z'
 ---
-With AppsFlyer, you can measure the results of **Google Ads App Campaigns for Engagement**.
+## Google Ads retargeting campaigns
 
-In AppsFlyer, such campaigns are called [Retargeting](/docs/retargeting-attribution-guide) campaigns. AppsFlyer supports getting cost, click and impression data for retargeting campaigns. This integration allows you to view and measure your ad spend on Google Ads, and then calculate eCPI and ROI of your Google Ads campaigns.
+With AppsFlyer, you can measure the results of **Google Ads App Campaigns for Engagement**.  
+In AppsFlyer, such campaigns are called [Retargeting](/docs/retargeting-attribution-guide) campaigns. AppsFlyer supports getting cost, click and impression data for retargeting campaigns. This integration allows you to view and measure your ad spend on Google Ads, and then calculate eCPI and ROI of your Google Ads campaigns.
 
 Retargeting campaigns target users who have installed your app in the past.
 
-- Retargeting engagements by users, who still have your app installed, are called **Re-engagements**. These usually result in deep linking users.
-- Retargeting engagements by users, who don't have your app installed, are called **Re-installs** or **Re-attributions**.
+* Retargeting engagements by users, who still have your app installed, are called **Re-engagements**. These usually result in deep linking users.
+* Retargeting engagements by users, who don't have your app installed, are called **Re-installs** or **Re-attributions**.
 
 For more information, see [Google Ads for engagement support documentation](https://support.google.com/google-ads/answer/9234180).
 
@@ -39,19 +40,23 @@ Before you begin, review [Google’s instructions for how to share a link with o
 
 To measure Google Ads App Campaigns for Engagement, follow these three steps:
 
-### Enabling retargeting in app settings
+<Accordion title="Enabling retargeting in app settings">
 
 To enable retargeting campaigns of any media source, you need to enable it on the app level. If this is the first retargeting campaign for your app, do the following:
 
-1. In AppsFlyer, from the side menu, select **Settings** > **App Settings**.
+1. In AppsFlyer, from the side menu, select**Settings**>**App Settings**.
 2. Scroll all the way down.
 3. Turn on **Re-engagement attribution**.
 
-### Enable Google Ads retargeting in AppsFlyer
+</Accordion>
 
-- Follow the [instructions](/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory) for setting up Google Ads in AppsFlyer.
+<Accordion title="Enable Google Ads retargeting in AppsFlyer">
 
-### Importing session start conversions in Google Ads
+* Follow the [instructions](/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory) for setting up Google Ads in AppsFlyer.
+
+</Accordion>
+
+<Accordion title="Importing session start conversions in Google Ads">
 
 To record conversions for re-engagement campaigns **in Google Ads**, you need to import the event session\_start in Google Ads.
 
@@ -59,46 +64,47 @@ This event appears in Google Ads if at least one user launches the app after you
 
 To learn how to import conversions in Google Ads, see [here](/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory).
 
-> 📘 Note
+> 📘 **Note**
 >
 > Unlike all other events, session\_start can be claimed by Google Ads API, even if you don't import session\_start into Google Ads from AppsFlyer.
->
 > However, in that case, these conversions would still be attributed in AppsFlyer. This **creates a substantial discrepancy between your data in AppsFlyer and in Google Ads**. Furthermore, this **prevents Google Ads from optimizing** your campaign user targeting.
 
-### Setting up deep linking for app campaigns for engagement
+</Accordion>
+
+<Accordion title="Setting up deep linking for app campaigns for engagement">
 
 Google App Campaigns for Engagement require you to [use deep links for re-engagement campaigns](https://support.google.com/google-ads/answer/6310747?hl=en&ref_topic=3121770). Third-party deep linking solutions cannot be used due to a domain mismatch. This includes AppsFlyer’s OneLink. Use your own [internally-developed App Links, Universal Links or custom URI schemas](https://support.google.com/google-ads/answer/6046977?hl=en).
 
 There is no need to add any additional parameters to the deep link (is\_retargeting=true and pid=adwords are not required).
 
+</Accordion>
+
 ## Dynamic remarketing and shopping campaigns
 
 Dynamic remarketing for apps and shopping campaigns is supported in AppsFlyer. The AppsFlyer platform treats them just like any other re-engagement campaign.
 
-- To learn about Dynamic remarketing for apps, click [here](https://support.google.com/adwords/answer/7538938).
-- To learn about Shopping campaigns, click [here](https://support.google.com/google-ads/answer/2454022?hl=en).
-- To learn more about Google Ads for Engagement click [here](https://support.google.com/google-ads/answer/9234180).
+* To learn about Dynamic remarketing for apps, click [here](https://support.google.com/adwords/answer/7538938).
+* To learn about Shopping campaigns, click [here](https://support.google.com/google-ads/answer/2454022?hl=en).
+* To learn more about Google Ads for Engagement click [here](https://support.google.com/google-ads/answer/9234180).
 
 ### Support for non-app campaigns (Demand Gen and SEM)
 
 AppsFlyer only supports re-engagement measurement for Google’s non-app campaigns, including:
 
-- Demand Gen campaigns
-- Search Engine Marketing (SEM) campaigns
+* Demand Gen campaigns
+* Search Engine Marketing (SEM) campaigns
 
 These campaigns work **out of the box** with AppsFlyer and do not require:
 
-- Parallel tracking
-- Smart Script implementation
+* Parallel tracking
+* Smart Script implementation
 
 **Limitations:**
 
-- **Installs** from Demand Gen or SEM campaigns are not attributed on any platform.
+* **Installs** from Demand Gen or SEM campaigns are not attributed on any platform.
 
 **Opt-out:** Google does not currently support opting in or out of non-app campaign measurement (unlike platforms such as TikTok or Meta).
 
-<Cards>
-  <Card title="Google Ads SKAdNetwork interoperability with AppsFlyer" href="/docs/get-skan-postback-data-from-google-ads" icon="fa-solid fa-lock">
-    For iOS 14-related considerations, see Google Ads SKAdNetwork interoperability with AppsFlyer.
-  </Card>
-</Cards>
+> 📘 **See also**
+>
+> * For iOS 14-related considerations, see [Google Ads SKAdNetwork interoperability with AppsFlyer](/docs/get-skan-postback-data-from-google-ads).

@@ -51,14 +51,12 @@ Completion of attribution link configuration is mandatory
 
    * **Parameter name**: AppsFlyer parameter screen name.
    * **Your macro**: add the macro that populates the parameters with values.
-   * **Include**: check the box to include the parameter in the linkCALLSTART::Note::
-
-   #### Important!
+   * **Include**: check the box to include the parameter in the link<br /><br />**Note**<br />#### Important!
 
    * Add campaign and ad-related parameters to provide more robust data about campaign performance.
    * **Site ID** is a mandatory parameter
    * Advertisers use this link as a basis for the integration of a specific app and can add additional parameters to it.
-   * App ID, Lookback window duration, and your Partner ID are added to the link automatically and you don't need to add them to this template.CALLEND::
+   * App ID, Lookback window duration, and your Partner ID are added to the link automatically and you don't need to add them to this template.
 2. **[Optional]** Add custom parameters that are not provided by AppsFlyer.
 3. Use the link preview to verify that everything is correct.
 4. Click **Save**.
@@ -84,17 +82,15 @@ Postbacks are URLs containing macros populated by AppsFlyer and sent to your ser
 
    [Full list of postback macros](/docs/postback-macros-for-ad-networks)
 
-   CALLSTART::Note::
+   <br /><br />**Note**<br />#### Important!
 
-   #### Important!
-
-   * To be able to distinguish between postbacks for legitimate events and rejected postbacks,  configure the [rejected postback macros](/docs/postback-macros-for-ad-networks#macros%E2%80%94installs-inapp-events-and-rejected-events).
+   * To be able to distinguish between postbacks for legitimate events and rejected postbacks,  configure the [rejected postback macros](/docs/postback-macros-for-ad-networks#macrosinstalls-in-app-events-and-rejected-events).
    * To enable rejected install/in-app event postbacks, append the following parameters to your default postback template:
      * `is-rejected`
      * `blocked-reason`
      * `blocked-sub-reason`
      * `blocked-reason-value`  
-       **Note:** If the Advanced Privacy postback is enabled, append the parameters above to the Advanced Privacy template as well.CALLEND::
+       **Note:** If the Advanced Privacy postback is enabled, append the parameters above to the Advanced Privacy template as well.
 3. [Optional] **Custom parameters:** Configure your own parameters to include in the postback.
 4. Use the postback template preview to verify that everything is correct.
 5. Click **Save**.
@@ -127,9 +123,7 @@ Advanced Privacy and SKAN postbacks can be configured only after the attribution
 
    List of [Advanced Privacy postback macros](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification)
 
-   CALLSTART::Note::
-
-   #### Important!
+   <br /><br />**Note**<br />#### Important!
 
    * To enable rejected install/in-app event postbacks, append the following parameters to your default postback template:
      * `is-rejected`
@@ -137,7 +131,7 @@ Advanced Privacy and SKAN postbacks can be configured only after the attribution
      * `blocked-sub-reason`
      * `blocked-reason-value`
    * To enable rejected postbacks for Advance Privacy you must first append the parameters above to the [Default postback](/docs/self-serve-integration-management-for-ad-networks#default-postback)
-   * When the parameters above are added to both the Default postback and the Advanced Privacy postback (if enabled), rejected install/in-app event postbacks are enabled.CALLEND::
+   * When the parameters above are added to both the Default postback and the Advanced Privacy postback (if enabled), rejected install/in-app event postbacks are enabled.
 6. [Optional] **Custom parameters:** Configure your own parameters to include in the postback.
 7. Use the postback template preview to verify that everything is correct.
 8. Click **Save**.  

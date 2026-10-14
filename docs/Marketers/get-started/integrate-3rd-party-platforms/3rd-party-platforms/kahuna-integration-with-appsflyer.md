@@ -26,7 +26,6 @@ x-zendesk:
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
-
 Follow the instructions below to configure the integration with Kahuna:
 
 1. Minimum requirements - AppsFlyer SDK:
@@ -39,7 +38,6 @@ Follow the instructions below to configure the integration with Kahuna:
 > 📘 **Important Note**
 >
 > Make sure the lines of code are inserted at the correct place – after Kahuna SDK was launched and before the appsflyer.sendtracking (Android) / trackAppLaunch (iOS) methods are called.
-
 
 For AndroidFor iOS
 
@@ -71,7 +69,7 @@ NSString *kahunaDeviceID = [Kahuna getKahunaDeviceId];
 
 The Kahuna configuration window uses only the ***Integration*** tab.
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
 
@@ -123,21 +121,31 @@ Once you have saved the configuration, AppsFlyer sends the following data to Kah
 * Country code
 * OS Version
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Attribution Links are not available for Kahuna.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions are not available for Kahuna.
+
+</Accordion>
 
 ## View user attribution data in Kahuna
 

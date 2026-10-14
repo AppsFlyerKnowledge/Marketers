@@ -49,8 +49,8 @@ AppsFlyer gives the highest priority to preload attribution. This means that if 
 
 | Referrer option | Description | UA installs raw data match type |
 | --- | --- | --- |
-| Preload | * The app is preloaded at the factory or is preloaded the first time the device is activated. Alternatively, a wizard prompts users to download the app when the device is first activated.<br />* A preload event, equivalent to a click, is reported to AppsFlyer when the device is turned on for the first time.<br />* Attribution occurs when the user opens the app for the first time.<br />* The preload event has the highest attribution priority (unless equal attribution priority is turned on). | `preload_rfr` |
-| Click to download | * App installation takes place later in the device lifecycle, via push notifications, partner alternative stores, etc.<br />* When the user engages with an ad or with a push message, the app is automatically downloaded and installed on the device without redirecting to an app store.<br />* Attribution is awarded using the AppsFlyer last-click win rules. | `af_referrer` |
+| Preload | <ul><li>The app is preloaded at the factory or is preloaded the first time the device is activated. Alternatively, a wizard prompts users to download the app when the device is first activated.</li><li>A preload event, equivalent to a click, is reported to AppsFlyer when the device is turned on for the first time.</li><li>Attribution occurs when the user opens the app for the first time.</li><li>The preload event has the highest attribution priority (unless equal attribution priority is turned on).</li></ul> | `preload_rfr` |
+| Click to download | <ul><li>App installation takes place later in the device lifecycle, via push notifications, partner alternative stores, etc.</li><li>When the user engages with an ad or with a push message, the app is automatically downloaded and installed on the device without redirecting to an app store.</li><li>Attribution is awarded using the AppsFlyer last-click win rules.</li></ul> | `af_referrer` |
 
 ## View preload attribution data
 

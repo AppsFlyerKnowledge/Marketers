@@ -54,7 +54,6 @@ As it follows from this flow, we use attribution links to get information from y
 >
 > If you use third-party performance marketing tools such as TUNE, CAKE, or Affise, see [platform-specific instructions](/docs/platforms-for-ad-networks).
 
-
 ### Attribution link template
 
 The attribution link (the link behind the banner/offer) can look like this:
@@ -76,8 +75,6 @@ Link structure explanation:
 Regard the parameters listed in the table that follows as the recommended minimum. We support a larger set of parameters. You should share with us as much information on the click as you collect. See the [list of attribution link parameters](/docs/about-link-structure-and-parameters#attribution-link-parameters).
 
 #### Recommended minimum attribution link parameters
-
-
 
 | Parameter | Description |
 | --- | --- |

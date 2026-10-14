@@ -30,7 +30,7 @@ This section provides the base attribution link and related parameter descriptio
 
 ### Base attribution link URL
 
-```http
+```
 https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={click_id}&af_siteid={publishedr_id}
 &af_c_id={camp_id}
 ```
@@ -39,69 +39,64 @@ https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={click_id}&af_si
 | --- | --- | --- |
 | https://app.appsflyer.com | Base URL | AppsFlyer endpoint |
 | app\_id | Application ID | Dynamic value that differs for each app |
-| pid= | Media source name | **\_int** identifies an **integrated** network |
+| pid= | Media source name | **\_int** identifies an **integrated** network |
 | c= | Campaign name | Name given by the advertiser |
 
 ### Attribution link parameters
 
-> 📘 Note
+> 📘 **Note**
 >
 > The attribution links in the following table are **mandatory**.
-
-See complete parameter lists for:
-
-- [AppsFlyer](/docs/about-link-structure-and-parameters)
-- [Trackier](https://trackier.com/support/kb/tracking-macros/)
+>
+> See complete parameter lists for:
+>
+> * [AppsFlyer](/docs/about-link-structure-and-parameters)
+> * [Trackier](https://trackier.com/support/kb/tracking-macros/)
 
 | AppsFlyer parameter | Trackier macro | Description |
 | --- | --- | --- |
 | &clickid= | `{click_id}` | Request the ID for each user session |
-| &af\_siteid= | `{publisher_id}` | ID of the affiliate promoting an offer |
-| &af\_c\_id= | `{camp_id}` | Offer ID |
+| ⁡\_siteid= | `{publisher_id}` | ID of the affiliate promoting an offer |
+| ⁡\_c\_id= | `{camp_id}` | Offer ID |
 
 ## Postback URLs for install and in-app events
 
 This section provides examples of postback URLs and parameters for install and in-app events.
 
-<Tabs>
-<Tab title="iOS">
+### **iOS** postback URLs
 
 #### Global install postback
 
-```http
+```
 https://yourdomain.com/acquisition?click_id={clickid}&security_token=xxxxxxxxxxxxxxx&idfa={idfa}
 ```
 
 #### Global in-app event postback
 
-```http
+```
 https://yourdomain.com/acquisition?click_id={clickid}&security_token=xxxxxxxxxxxxxxx&idfa={idfa}&goal_value={event-name}
 ```
 
-</Tab>
-<Tab title="Android">
+### **Android** postback URLs
 
 #### Global install postback
 
-```http
+```
 https://yourdomain.com/acquisition?click_id={clickid}&security_token=xxxxxxxxxxxxxxx&gaid={android_id}
 ```
 
 #### Global in-app event postback
 
-```http
+```
 https://yourdomain.com/acquisition?click_id={click_id}&security_token=xxxxxxxxxxxxxxx&gaid={android_id}&goal_value={event-name}
 ```
-
-</Tab>
-</Tabs>
 
 ### Postback parameters
 
 | AppsFlyer Base URL | Description |
 | --- | --- |
-| yourdomain.com | - Network ID (domain) name<br />- Provided by Trackier |
-| event-name | - In-app event name<br />- Defined by the advertiser |
+| yourdomain.com | <ul><li>Network ID (domain) name</li><li>Provided by Trackier</li></ul> |
+| event-name | <ul><li>In-app event name</li><li>Defined by the advertiser</li></ul> |
 | security\_token | Provided by Trackier |
 | Country code, advertising ID, IDFA, etc. | [Optional] Attribution information that can be added to a postback |
 

@@ -28,42 +28,43 @@ The AppsFlyer [Data Collaboration Platform (DCP)](/docs/data-collaboration-platf
 
 This article outlines:
 
-- The kinds of data the DCP can process (transactional, user-level, or a combination)
-- How to structure data to maximize match rates between collaborators, and for optimal matching by activation partners
-- Which data structures are recommended and which aren't
-- How to handle multi-value identifiers when using CSV files
+* The kinds of data the DCP can process (transactional, user-level, or a combination)
+* How to structure data to maximize match rates between collaborators, and for optimal matching by activation partners
+* Which data structures are recommended and which aren't
+* How to handle multi-value identifiers when using CSV files
 
 ## Understand data types
 
 Most sources used in collaborations involve one or both of the following data types:
 
-- **User-level (identity) data**  - **Goal:** Represent each user and the identifiers used for matching
-  - **Recommended structure:** One row per user
-- **Transactional (event) data**  - **Goal:** Represent user actions (purchases, visits, transactions)
-  - **Typical structure:** Multiple rows per user (because a user can have many transactions)
+* **User-level (identity) data**
+  * **Goal:** Represent each user and the identifiers used for matching
+  * **Recommended structure:** One row per user
+* **Transactional (event) data**
+  * **Goal:** Represent user actions (purchases, visits, transactions)
+  * **Typical structure:** Multiple rows per user (because a user can have many transactions)
 
 ## Data structuring guidelines
 
 This section outlines DCP data structuring guidelines and best practices.
 
-### Recommended data structures
+<Accordion title="Recommended data structures">
 
 **To structure your source data for optimal ingestion and maximum outcomes in DCP:**
 
-1. Ensure it [meets source data formatting requirements](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-format).
-2. For best results, **structure identity data as one row per user and include all available identifiers for that user.** See [Recommended identifier structures](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#h_01KFXB0KEF59QCYET0R8XNH84D).
-   - If users have multiple email addresses or phone numbers, use array-based formats (such as Parquet, BigQuery, or Snowflake).
+1. Ensure it [meets source data formatting requirements](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-data-requirements).
+2. For best results, **structure identity data as one row per user and include all available identifiers for that user.** See [Recommended identifier structures](#recommended-identifier-structures).
+   * If users have multiple email addresses or phone numbers, use array-based formats (such as Parquet, BigQuery, or Snowflake).
 3. Check that [hashing guidelines](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#appendix-e-hashed-data-formatting-guidelines-by-media-partner) are followed.
 4. For transactional datasets (and other data types where applicable), **use the DCP Data View tool** to create a business-oriented, privacy-safe subset of your data optimized for collaboration, and share it instead of raw tables. [Why Data Views are recommended](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#appendix-c-why-dataviews-matter-and-recommended).
 
-While other structures can be used, they may not be ideally suited for getting the most out of DCP. See [Data structures that aren't recommended](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#h_01KFZJ2PK92Y5HHFC2D1H8AD9B).
+While other structures can be used, they may not be ideally suited for getting the most out of DCP. See [Data structures that aren't recommended](#h_01KFZJ2PK92Y5HHFC2D1H8AD9B).
 
 #### Recommended identifier structures
 
 To maximize match rates, it's recommended to send user-level identity data as a single row per user whenever possible and to include all available identifiers in a structure that accurately reflects how users are represented.
 
-<Tabs>
-<Tab title="Option 1: One row per user, one value per identifier type">
+**Option 1: One row per user, one value per identifier type**
 
 **Simple and effective.**
 
@@ -79,25 +80,23 @@ Use this when each user has at most one hashed email address, one hashed phone n
 
 **Why this is recommended**
 
-- Simplest to prepare and ingest
-- Easy to validate and troubleshoot
-- Strong matching performance when identifiers are complete and consistent (for matching with collaborator datasets and activation media partner matching)
+* Simplest to prepare and ingest
+* Easy to validate and troubleshoot
+* Strong matching performance when identifiers are complete and consistent (for matching with collaborator datasets and activation media partner matching)
 
 **Best fit**
 
-- Great for CSV-based uploads
-- Also works well in Parquet / BigQuery / Snowflake
+* Great for CSV-based uploads
+* Also works well in Parquet / BigQuery / Snowflake
 
-</Tab>
-
-<Tab title="Option 2: Arrays (lists) of identifiers for multi-value fields">
+**Option 2: Arrays (lists) of identifiers for multi-value fields**
 
 **Best for accuracy when users have multiple emails and phones.**
 
 Use this when a user can have multiple values of the same identifier type, such as:
 
-- Multiple hashed emails
-- Multiple hashed phones
+* Multiple hashed emails
+* Multiple hashed phones
 
 This structure should be represented as **native arrays**.
 
@@ -111,66 +110,69 @@ This structure should be represented as **native arrays**.
 
 **Why this is preferred**
 
-- Reflects how identity data is often stored internally
-- No need to guess how many “email columns” might be needed
-- Avoids ongoing schema changes
-- Maximizes matching potential (for collaborator datasets and for activation media partner matching) by allowing multiple identifiers per user
+* Reflects how identity data is often stored internally
+* No need to guess how many “email columns” might be needed
+* Avoids ongoing schema changes
+* Maximizes matching potential (for collaborator datasets and for activation media partner matching) by allowing multiple identifiers per user
 
 **Best fit**
 
-- Parquet (S3/GCS)
-- BigQuery
-- Snowflake
+* Parquet (S3/GCS)
+* BigQuery
+* Snowflake
 
-</Tab>
-</Tabs>
+</Accordion>
 
-### Practical checklist for data structuring
+<Accordion title="Practical checklist for data structuring">
 
 #### Identity (user-level) dataset checklist
 
-- One row represents one user.
-- Include all available identifiers (hashed email, hashed phone, MAID, and so on).
-- If multiple values exist (for example, multiple emails), use native arrays where possible.
-- Avoid lists in cells, avoid “email\_1/email\_2/email\_3,” and avoid multi-row identity structures.
+* One row represents one user.
+* Include all available identifiers (hashed email, hashed phone, MAID, and so on).
+* If multiple values exist (for example, multiple emails), use native arrays where possible.
+* Avoid lists in cells, avoid “email\_1/email\_2/email\_3,” and avoid multi-row identity structures.
 
 #### Transactional (events) dataset checklist
 
-- Keep event/transaction rows as-is. See [Transactional data examples](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#h_01KFX6XSJYGYFF052EM8NHNMYQ)
-- Use [Data Views](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#h_01KFX6XSJYF4V3ZTX8X07J0FGS) to create collaboration-ready user-level summaries when appropriate.
+* Keep event/transaction rows as-is. See [Transactional data examples](#h_01KFX6XSJYGYFF052EM8NHNMYQ)
+* Use [Data Views](#h_01KFX6XSJYF4V3ZTX8X07J0FGS) to create collaboration-ready user-level summaries when appropriate.
 
 #### Data Views checklist
 
-- Build business-oriented [Data Views](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#h_01KFX6XSJYF4V3ZTX8X07J0FGS) (audience-ready, summarized, standardized).
-- Share Data Views instead of raw sensitive tables whenever possible.
-- Minimize shared fields to only what’s needed (for privacy and business protection).
-- Consider aggregations to reduce access to sensitive data and improve efficiency.
+* Build business-oriented [Data Views](#h_01KFX6XSJYF4V3ZTX8X07J0FGS) (audience-ready, summarized, standardized).
+* Share Data Views instead of raw sensitive tables whenever possible.
+* Minimize shared fields to only what’s needed (for privacy and business protection).
+* Consider aggregations to reduce access to sensitive data and improve efficiency.
 
-### Supported ingestion cloud services and formats
+</Accordion>
+
+<Accordion title="Supported ingestion cloud services and formats">
 
 The DCP supports ingestion through multiple cloud services, such as:
 
-- AWS S3
-- GCS (Google Cloud Storage)
-- BigQuery
-- Snowflake
+* AWS S3
+* GCS (Google Cloud Storage)
+* BigQuery
+* Snowflake
 
 #### Format guidance
 
-- Use **CSV (comma-separated)** when each user has **one value per identifier type** (one email, one phone, and so on).
-- When users can have **multiple values** of the same identifier type (for example, multiple hashed emails), prefer **array-capable formats**:
-  - Parquet (common in big data)
-  - BigQuery (arrays are built-in)
-  - Snowflake (arrays are built-in)
+* Use **CSV (comma-separated)** when each user has **one value per identifier type** (one email, one phone, and so on).
+* When users can have **multiple values** of the same identifier type (for example, multiple hashed emails), prefer **array-capable formats**:
+  * Parquet (common in big data)
+  * BigQuery (arrays are built-in)
+  * Snowflake (arrays are built-in)
 
-> 📘 Note
->
-> “Arrays” just means “a list of values.”
-> Parquet and arrays in BigQuery/Snowflake are standard, and most data teams can support this naturally.
+**Notes:**
 
-See [Connector-specific example assets (AWS S3, GCS, BigQuery, Snowflake).](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#h_01KFX6XSJYZNCTGD5CNSKN5KF7)
+* “Arrays” just means “a list of values.”
+* Parquet and arrays in BigQuery/Snowflake are standard, and most data teams can support this naturally.
 
-### Data structures that aren't recommended
+See [Connector-specific example assets (AWS S3, GCS, BigQuery, Snowflake).](#h_01KFX6XSJYZNCTGD5CNSKN5KF7)
+
+<div id="h_01KFZJ2PK92Y5HHFC2D1H8AD9B" />
+
+<Accordion title="Data structures that aren't recommended">
 
 Certain types of data structuring are ideally suited for ingestion into DCP, and others are not. The following is a list of data structures that **are not recommended**:
 
@@ -187,8 +189,8 @@ Examples like “primary/secondary/third email” are discouraged.
 
 **Why to avoid**
 
-- The number of values per user is unpredictable
-- Leads to column proliferation and schema maintenance issues
+* The number of values per user is unpredictable
+* Leads to column proliferation and schema maintenance issues
 
 #### Avoid: “Lists inside a single cell” (free text)
 
@@ -202,9 +204,9 @@ Even if it looks convenient, it’s error-prone.
 
 **Why to avoid**
 
-- Not a true array type
-- Formatting/escaping issues are common
-- Small inconsistencies can break ingestion
+* Not a true array type
+* Formatting/escaping issues are common
+* Small inconsistencies can break ingestion
 
 #### Avoid: Multiple rows per user for identifiers (when your goal is a user identity table)
 
@@ -219,19 +221,23 @@ Don’t split identity data across rows when you can keep one row per user.
 
 **Why to avoid**
 
-- Requires extra processing to reconstruct users
-- Higher risk of duplicates and inconsistencies
-- Less efficient at scale
+* Requires extra processing to reconstruct users
+* Higher risk of duplicates and inconsistencies
+* Less efficient at scale
 
-> 📘 Note
->
-> Multiple rows per user are normal for transactional tables, but not ideal for the identity (user-level) table used for matching.
+**Note:** Multiple rows per user are normal for transactional tables, but not ideal for the identity (user-level) table used for matching.
+
+</Accordion>
+
+</Accordion>
 
 ## Additional information
 
 This section provides additional, in-depth information on relevant topics.
 
-### Transactional data examples
+<div id="h_01KFX6XSJYGYFF052EM8NHNMYQ" />
+
+<Accordion title="Transactional data examples">
 
 Transactional/event data may have multiple rows per user:
 
@@ -243,10 +249,14 @@ Transactional/event data may have multiple rows per user:
 
 **Recommended**
 
-- Ingest transactional data in its natural structure
-- Use the Data View tool to produce a collaboration-ready user-level view (for example, spend in last 30 days, category affinity, recency/frequency summaries)
+* Ingest transactional data in its natural structure
+* Use the Data View tool to produce a collaboration-ready user-level view (for example, spend in last 30 days, category affinity, recency/frequency summaries)
 
-### Connector-specific example assets (AWS S3, GCS, BigQuery, Snowflake)
+</Accordion>
+
+<div id="h_01KFX6XSJYZNCTGD5CNSKN5KF7" />
+
+<Accordion title="Connector-specific example assets (AWS S3, GCS, BigQuery, Snowflake)">
 
 ### What does “array/list of identifiers” mean?
 
@@ -257,7 +267,7 @@ Sometimes a single user can have more than one email or phone (for example, a pe
 | u\_0001 | [a1b2 · c3d4 · e5f6] |
 | u\_0002 | [z9y8 · x7w6] |
 
-### 1\. AWS S3 and GCS connector (Parquet)
+### 1. AWS S3 and GCS connector (Parquet)
 
 **What the identity sample should contain (schema)**
 
@@ -270,7 +280,7 @@ Sometimes a single user can have more than one email or phone (for example, a pe
 
 Parquet supports lists natively, which is why it’s recommended when users have multiple emails/phones.
 
-### 2\. BigQuery connector (table preview and schema screenshot)
+### 2. BigQuery connector (table preview and schema screenshot)
 
 **Example identity schema (BigQuery)**
 
@@ -283,7 +293,7 @@ Parquet supports lists natively, which is why it’s recommended when users have
 
 Arrays are native in BigQuery (REPEATED fields). This is the recommended approach when multiple emails/phones exist.
 
-### 3\. Snowflake connector (table preview and schema screenshot)
+### 3. Snowflake connector (table preview and schema screenshot)
 
 **Example identity schema (Snowflake)**
 
@@ -296,53 +306,61 @@ Arrays are native in BigQuery (REPEATED fields). This is the recommended approac
 
 Snowflake supports list-like fields (arrays). This is preferred over creating email\_1/email\_2/email\_3 columns.
 
-### Why Data Views are recommended
+</Accordion>
+
+<div id="appendix-c-why-dataviews-matter-and-recommended" />
+
+<div id="h_01KFX6XSJYF4V3ZTX8X07J0FGS" />
+
+<Accordion title="Why Data Views are recommended">
 
 [Data views](/docs/data-collaboration-platform-dcp-create-customized-data-views) are customized subsets of your existing data sources that you can create without changing the original dataset. They let you perform functions that modify, refine, and summarize the data so you can share only what’s relevant in collaborations, keeping the data you share clear and focused, and all other data private and secure. Use Data Views in collaborations because they:
 
 #### Are business-oriented and easier to collaborate with
 
-- Data Views let you present the data in a clean, business-friendly structure (for example, “Customer Identity View”, “Eligible Audience View”, “Purchase Summary View”) rather than raw logs or complex transactional schemas.
-- They help standardize definitions (for example, “active customer”, “total spend last 30 days”) so both sides are aligned and using the same logic.
+* Data Views let you present the data in a clean, business-friendly structure (for example, “Customer Identity View”, “Eligible Audience View”, “Purchase Summary View”) rather than raw logs or complex transactional schemas.
+* They help standardize definitions (for example, “active customer”, “total spend last 30 days”) so both sides are aligned and using the same logic.
 
 #### Are more privacy-safe by design
 
-- Data Views support data minimization: you can share only the fields and rows needed for the collaboration, instead of exposing full raw datasets.
-- They reduce privacy risk by allowing you to:
-  - Exclude unnecessary attributes
-  - Limit granularity (for example, share aggregated metrics instead of line-level transactions)
-  - Share only the identifiers needed for matching (and not additional sensitive columns)
+* Data Views support data minimization: you can share only the fields and rows needed for the collaboration, instead of exposing full raw datasets.
+* They reduce privacy risk by allowing you to:
+  * Exclude unnecessary attributes
+  * Limit granularity (for example, share aggregated metrics instead of line-level transactions)
+  * Share only the identifiers needed for matching (and not additional sensitive columns)
 
 #### Protect sensitive business data
 
-- Raw transactional tables can contain highly sensitive business signals (for example, detailed purchase behavior, pricing patterns, merchant relationships, internal IDs).
-- Data Views let you share only what’s required for the collaboration:
-  - Example: share category-level aggregates instead of item-level details
-  - Example: share spend buckets or summary metrics instead of exact line items
-- This reduces the risk of unintentionally revealing competitive or proprietary information.
+* Raw transactional tables can contain highly sensitive business signals (for example, detailed purchase behavior, pricing patterns, merchant relationships, internal IDs).
+* Data Views let you share only what’s required for the collaboration:
+  * Example: share category-level aggregates instead of item-level details
+  * Example: share spend buckets or summary metrics instead of exact line items
+* This reduces the risk of unintentionally revealing competitive or proprietary information.
 
 #### Can make your data more cost-effective and performant
 
 Data Views can be structured to be lighter and more efficient, which often reduces:
 
-- Data scanned
-- Processing time
-- Compute costs
+* Data scanned
+* Processing time
+* Compute costs
 
 Pre-structuring a collaboration-ready view (especially aggregated views) may make collaboration faster and more operationally predictable.
 
-### Multiple IDs/keys upload and matching behavior by platform
+</Accordion>
+
+<Accordion title="Multiple IDs/keys upload and matching behavior by platform">
 
 **DCP identifiers upload**
 
 | Partner/Platform | Supported Identifier Types | Upload Mode | Upload Behavior | Identifier Priority (for single-type partners) |
 | --- | --- | --- | --- | --- |
 | Meta | Email, Phone, IDFA, GAID, Android ID, First Name, Last Name, DOB, City, State, Zip, Country | All supported types | Uploads all supported identifier types | N/A - uploads all |
-| Google | Email, Phone, IDFA, GAID, Android ID, Customer ID | Single type | Uploads one identifier type per audience | 1\. Email 2. Phone 3. Mobile IDs 4. Customer ID |
+| Google | Email, Phone, IDFA, GAID, Android ID, Customer ID | Single type | Uploads one identifier type per audience | 1. Email 2. Phone 3. Mobile IDs 4. Customer ID |
 | TikTok | Email, Phone, IDFA, GAID, Android ID | All supported types | Uploads all supported identifier types | N/A - uploads all |
-| Pinterest | Email, Phone, IDFA, GAID | Single type | Uploads one identifier type per audience | 1\. Email 2. Phone 3. Mobile IDs |
+| Pinterest | Email, Phone, IDFA, GAID | Single type | Uploads one identifier type per audience | 1. Email 2. Phone 3. Mobile IDs |
 | Infillion | Email, Phone, IDFA, GAID, MM-UUID | All supported types | Uploads all supported types grouped into up to 3 files | N/A - uploads all |
-| TheTradeDesk | Email, Phone | Single type | Uploads one identifier type per audience | 1\. Email 2. Phone |
+| TheTradeDesk | Email, Phone | Single type | Uploads one identifier type per audience | 1. Email 2. Phone |
 | AppsFlyer Data Locker | All available identifiers | All types combined | Delivers all identifiers in a single combined file | N/A - delivers all |
 
 | Platform | Can you send multiple IDs per user? | Can they match on any of them? | Can they combine multiple IDs? | Matching model (practical) | Notes |
@@ -356,37 +374,46 @@ Pre-structuring a collaboration-ready view (especially aggregated views) may mak
 
 **Takeaways for activation planning**
 
-- **Meta and TikTok**  - Send everything you have
-  - True “any-ID” behavior
-  - Best platforms for identity-rich clean room activation
-- **Google**  - Send multiple IDs for coverage
-  - Do not expect cross-ID reinforcement
-  - Email/phone dominance is real
-- **TTD and Infillion**  - Matching quality depends more on identity graph participation
-  - UID2 / OmniID coverage matters more than raw identifier count
-- **Pinterest**  - Behaves closer to Google than Meta
-  - Limited upside beyond email + MAID
+* **Meta and TikTok**
+  * Send everything you have
+  * True “any-ID” behavior
+  * Best platforms for identity-rich clean room activation
+* **Google**
+  * Send multiple IDs for coverage
+  * Do not expect cross-ID reinforcement
+  * Email/phone dominance is real
+* **TTD and Infillion**
+  * Matching quality depends more on identity graph participation
+  * UID2 / OmniID coverage matters more than raw identifier count
+* **Pinterest**
+  * Behaves closer to Google than Meta
+  * Limited upside beyond email + MAID
 
 **TL;DR**
 
-- Only Meta and TikTok do “any-of-them” matching natively
-- Google is deterministic but single-ID resolved
-- Open web platforms match via identity graphs, not raw IDs
+* Only Meta and TikTok do “any-of-them” matching natively
+* Google is deterministic but single-ID resolved
+* Open web platforms match via identity graphs, not raw IDs
 
-### Hashed data formatting guidelines by media partner
+</Accordion>
 
-**Universal normalization rules:**
+<div id="appendix-e-hashed-data-formatting-guidelines-by-media-partner" />
 
+<Accordion title="Hashed data formatting guidelines by media partner">
+
+**Universal normalization rules:**  
 Before hashing any data, almost all platforms require the following normalization steps to ensure matching accuracy:
 
-- **Text:** Convert to lowercase and trim all leading/trailing whitespace.
-- **Phone:** Convert to E.164 format (e.g., +15551234567)
-- **Hashing:** SHA-256 is the industry standard, though some platforms accept MD5 or SHA-1.
+* **Text:** Convert to lowercase and trim all leading/trailing whitespace.
+* **Phone:** Convert to E.164 format (e.g., +15551234567)
+* **Hashing:** SHA-256 is the industry standard, though some platforms accept MD5 or SHA-1.
 
 | Media Partner | Email Guidelines | Phone Number Guidelines | Mobile ID (MAID) Guidelines | Specific Platform Nuances & Matching Logic | Relevant Reference |
 | --- | --- | --- | --- | --- | --- |
 | Google Ads / DV360 | Format: Lowercase, trim whitespace. Include domain. Gmail Rule: For @gmail.com / @googlemail.com, remove periods (.) before the "@" and suffixes after (+). Hashing: SHA-256 (Hex encoded). | Format: E.164 (e.g., +16505551212). Must include country code. Hashing: SHA-256. | Format: IDFA (iOS) or GAID (Android). Hashing: Do not hash. | Matching Priority: Deterministic and prioritized (1. Email, 2. Phone, 3. Mobile IDs). It does not combine multiple IDs to form a match (single-ID resolution). DV360 PAIR: DV360 also supports the PAIR protocol for secure publisher-advertiser reconciliation. | [Get started with Customer Match (Google Ads API)](https://developers.google.com/google-ads/api/docs/remarketing/audience-segments/customer-match/get-started) |
-| Meta (Facebook/ Instagram) | Format: Lowercase, trim whitespace. Hashing: SHA-256 required.<br />**Note:** Meta doesn't remove dots from email addresses as part of its hashing normalization. Only lowercase + whitespace trimming should be applied before hashing for Meta. Sending a dot-stripped hashed email ("Hashed email (no dots)" in DCP source mapping) won't match Meta's own hash and will result in reduced match rates for email-domain users. This identifier variant is intended for partners that do require dot-removal (e.g., Google Ads) and should not be used for Meta/Facebook activations. | Format: Remove symbols, letters, and leading zeros. Include country code (e.g., 16505551212). Hashing: SHA-256. | Format: IDFA or GAID. Hashing: Do not hash. Lowercase, keep hyphens. | Matching Logic: Uses "any-of-them" logic; combines multiple IDs (Email, Phone, MAID, etc.) to resolve a user, providing strong cross-ID reinforcement.<br />CAPI: Requires unhashed client\_ip\_address and client\_user\_agent for browser matching. | [Customer Information Parameters - Conversions API](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/customer-information-parameters/) |
-| TikTok | Format: Lowercase, remove all spaces. Hashing: SHA-256. | Format: E.164 (+[country code][number]). Also accepts without +. Hashing: SHA-256. | Format: GAID (Android) or IDFA (iOS). Case: All upper or all lower. Hashing: SHA-256 or MD5. | Matching Logic: Similar to Meta, uses "any-of-them" deterministic matching logic where any single valid ID is sufficient.<br />Audience Size: Requires a minimum of 1,000 matched users to activate a Custom Audience. | [How to create a Custom Audience with a customer file](https://ads.tiktok.com/help/article/how-to-create-a-custom-audience-with-a-customer-file) |
-| The Trade Desk (UID2) | Format: Same "Gmail Rule" as Google (remove dots/plus). Encoding: Base64-encode the raw bytes (result is 44 chars). | Format: E.164. Hashing: SHA-256. Encoding: Base64-encode the raw bytes. | Format: AAID (lowercase) / IDFA (uppercase). Hashing: SHA-256, MD5, or SHA-1. | Matching Logic: Deterministic via identity graph. Matching depends on graph participation rather than raw ID coverage.<br />Critical Nuance: You must base64-encode the raw bytes of the hash. Encoding the hex string will fail. |  |
+| Meta (Facebook/ Instagram) | Format: Lowercase, trim whitespace. Hashing: SHA-256 required.<br /><br />**Note:** Meta doesn't remove dots from email addresses as part of its hashing normalization. Only lowercase + whitespace trimming should be applied before hashing for Meta. Sending a dot-stripped hashed email ("Hashed email (no dots)" in DCP source mapping) won't match Meta's own hash and will result in reduced match rates for email-domain users. This identifier variant is intended for partners that do require dot-removal (e.g., Google Ads) and should not be used for Meta/Facebook activations. | Format: Remove symbols, letters, and leading zeros. Include country code (e.g., 16505551212). Hashing: SHA-256. | Format: IDFA or GAID. Hashing: Do not hash. Lowercase, keep hyphens. | Matching Logic: Uses "any-of-them" logic; combines multiple IDs (Email, Phone, MAID, etc.) to resolve a user, providing strong cross-ID reinforcement.<br /><br />CAPI: Requires unhashed client\_ip\_address and client\_user\_agent for browser matching. | [Customer Information Parameters - Conversions API](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/customer-information-parameters/) |
+| TikTok | Format: Lowercase, remove all spaces. Hashing: SHA-256. | Format: E.164 (+[country code][number]). Also accepts without +. Hashing: SHA-256. | Format: GAID (Android) or IDFA (iOS). Case: All upper or all lower. Hashing: SHA-256 or MD5. | Matching Logic: Similar to Meta, uses "any-of-them" deterministic matching logic where any single valid ID is sufficient.<br /><br />Audience Size: Requires a minimum of 1,000 matched users to activate a Custom Audience. | [How to create a Custom Audience with a customer file](https://ads.tiktok.com/help/article/how-to-create-a-custom-audience-with-a-customer-file) |
+| The Trade Desk (UID2) | Format: Same "Gmail Rule" as Google (remove dots/plus). Encoding: Base64-encode the raw bytes (result is 44 chars). | Format: E.164. Hashing: SHA-256. Encoding: Base64-encode the raw bytes. | Format: AAID (lowercase) / IDFA (uppercase). Hashing: SHA-256, MD5, or SHA-1. | Matching Logic: Deterministic via identity graph. Matching depends on graph participation rather than raw ID coverage.<br /><br />Critical Nuance: You must base64-encode the raw bytes of the hash. Encoding the hex string will fail. |  |
 | Pinterest | Format: Must include "@". Hashing: SHA-256, MD5, or SHA-1. | Format: E.164. Remove special characters (spaces, hyphens). Hashing: SHA-256, MD5, or SHA-1. | Format: IDFA or GAID. Hashing: SHA-256, MD5, or SHA-1. | Matching Logic: "ID-Centric." Matching is primarily driven by Email and MAID. There is "limited upside" to providing other IDs as cross-ID reinforcement is weak compared to Meta. Upload Behavior: Uploads one identifier type per audience. | DCP Data Ingestion and Structuring Guidelines |
+
+</Accordion>

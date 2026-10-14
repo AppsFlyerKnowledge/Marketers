@@ -36,14 +36,13 @@ x-zendesk:
 >
 > X (Twitter) does not support URI schemes. We recommend using a social app landing page with Universal Link setup to avoid app-launching issues.
 
-
 ### Scenarios flowchart
 
 ![flowchartdoctored.png](https://files.readme.io/5917ad4d8a01010db16eb16dd4c9a5beca02e80797ec9d47999772a8d4433401-41284711408529.png)
 
 ## Use cases
 
-### Browsers that can use URI schemes by default
+<Accordion title="Browsers that can use URI schemes by default">
 
 Sometimes, Universal Links fail to open the app, either because the app does not exist, or the link does not have Universal Links configured. In those cases, the following browsers/platforms can use URI schemes as a fallback method to open the app by default:
 
@@ -57,7 +56,9 @@ Sometimes, Universal Links fail to open the app, either because the app does not
 
 ![use case flowchart.png](https://files.readme.io/9b68ccc634b55d72a9be8f8b07d9744214a10b2f14f11bf97416fcb377b28963-41284872656401.png)
 
-### Safari
+</Accordion>
+
+<Accordion title="Safari">
 
 The following describes the flow for users when Universal Links fail to open the app, and the link contains `af_dp` (that carries the URI scheme as the value).
 
@@ -91,7 +92,9 @@ The following describes the flow for users when Universal Links fail to open the
 
 ![Copy_of_Ios_fall_back_-_safari.png](https://files.readme.io/5e50eb558b23a849f02e1ffe5df3181ad7c8d9514f5813fbffcfa6160493de81-360016515318.png)
 
-### Facebook post—unpaid
+</Accordion>
+
+<Accordion title="Facebook post—unpaid">
 
 The following describes the flow for users when Universal Links fail to open the app, and the link contains `af_dp` (that carries the URI scheme as the value).
 
@@ -116,3 +119,5 @@ The following describes the flow for users when Universal Links fail to open the
 #### **Flowchart**
 
 ![diagram-X.png](https://files.readme.io/0c8040d27bbf34fdf1374b4b40a8239b6af7b6c7719db9666f36dd2829bc3217-small-17710399441553.png)
+
+</Accordion>

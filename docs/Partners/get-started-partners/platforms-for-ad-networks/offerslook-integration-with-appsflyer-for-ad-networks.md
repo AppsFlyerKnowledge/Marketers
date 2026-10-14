@@ -26,15 +26,14 @@ To initiate integration, send to AppsFlyer:
 
 1. Your Attribution Link
 
-```http
-https://networkname.offerstrack.net/index.php?offer_id={offer_id}&aff_id={aff_id}
-```
+   ```
+   https://networkname.offerstrack.net/index.php?offer_id={offer_id}&aff_id={aff_id}
+   ```
+2. Your Postback (for installs)  
 
-2. Your Postback (for installs)
-
-```http
-https://networkname.offerstrack.net/advBack.php?click_id={click_id}&adv_id={adv_id}
-```
+   ```
+   https://networkname.offerstrack.net/advBack.php?click_id={click_id}&adv_id={adv_id}
+   ```
 
 ## Creating your Attribution Link
 
@@ -51,8 +50,16 @@ See below AppsFlyer’s base attribution link with a detailed explanation per ma
 
 See below for an example of an attribution Link once you have added additional Offerslook macros:
 
-```http
-https://app.appsflyer.com/com.appsflyer?pid=mediaName_int&clickid={click_id}&af_siteid={aff_id}&advertising_id={ga_id}&idfa={idfa}
+```
+  https://app.appsflyer.com/com.
+  
+  appsflyer?pid=mediaName_int&
+  
+  clickid={click_id}&af_siteid={
+  
+  aff_id}&advertising_id={ga_id}
+  
+  &idfa={idfa}
 ```
 
 For a complete list of AppsFlyer parameters, click [here](/docs/about-link-structure-and-parameters).
@@ -74,7 +81,7 @@ The new set of macros adds a number of additional parameters in a clear, standar
 
 | **Macro Name** | **Description** | **Offerslook** |
 | --- | --- | --- |
-| af\_c\_id | Campaign ID - provided by the advertiser | `{adv_sub1}<br />{adv_sub2}<br />{adv_sub3}` |
+| af\_c\_id | Campaign ID - provided by the advertiser | `{adv_sub1}<br /><br />{adv_sub2}<br /><br />{adv_sub3}` |
 | af\_adset | Adset name - provided by the advertiser. Adset is an intermediate level in the hierarchy between **Campaign** and **Ad**. |  |
 | af\_adset\_id | Adset ID |  |
 | af\_ad | Ad name |  |

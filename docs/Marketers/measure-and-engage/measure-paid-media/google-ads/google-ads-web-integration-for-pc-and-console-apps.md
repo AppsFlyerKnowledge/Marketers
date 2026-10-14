@@ -32,7 +32,7 @@ This article contains information and steps on how to set up and use Google Ads 
 
 * [Activate the partner integration in AppsFlyer](/docs/google-ads-web-integration-for-pc-and-console-apps#activate-partner).
 * [Set up Google Ads Web in AppsFlyer](/docs/google-ads-web-integration-for-pc-and-console-apps#setting-up-Googleadsweb-in-appsflyer).
-* [Set up campaigns in Google Ads for PC and console apps](/docs/google-ads-web-integration-for-pc-and-console-apps#setting-up-campaigns-in-meta-web-for-pc-and-console-apps).
+* [Set up campaigns in Google Ads for PC and console apps](/docs/google-ads-web-integration-for-pc-and-console-apps#set-up-campaigns-in-google-ads-web-for-pc-and-console-apps).
 
 ### Prerequisites
 
@@ -60,7 +60,7 @@ In this part of the setup, you can also set up postbacks to Google Ads. The Goog
 
 The integration with Google Ads Web only supports sending postbacks for installs and in-app events.
 
-### Integration tab
+<Accordion title="Integration tab">
 
 The **Integration** tab includes a number of sections, as described below.
 
@@ -99,7 +99,7 @@ When available, AppsFlyer includes the `gclid` in the postback to Google.
 1. In AppsFlyer, from the sidebar, open **Active Integrations** > **Google Ads Web**.
 2. In the **Integration** tab, scroll to the **Install attribution** section.
 3. Turn on **Install view-through attribution**.
-4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see [Enable equal priority for cross-platform impressions](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions)**.**
+4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see [Enable equal priority for cross-platform impressions](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions).
 5. Open the **Attribution** tab.
 6. Scroll to the **View-through attribution** section and set the preferred **view-through lookback window** (up to 24 hours).
 7. Click **Save integration** to apply the changes.
@@ -115,24 +115,26 @@ Configure mapping of in-app event postbacks sent to Google Ads Web. These events
 1. Turn on **In-app event postbacks**.
 2. Click **Add event** to add an SDK or server-to-server event to the list. The following table describes the fields to complete:
 
-   
-
 | Parameter name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br /><br />* Click **Add item**, enter the event name, and click ![check.png](https://files.readme.io/e35a3abe980b27d52189e5d75abac298090f85030adf7bbb56590efcee82f172-21884077142033.png). |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<ul><li>Click **Add item**, enter the event name, and click ![check.png](https://files.readme.io/e35a3abe980b27d52189e5d75abac298090f85030adf7bbb56590efcee82f172-21884077142033.png).</li></ul> |
 | **mapped to partner event** | The Conversion Action ID of each event, as is defined on the partner's side.<br /><br />1. In Google Ads **Conversion Goals** page, click the conversion action you created.<br />2. In the Conversion Action **Details** page, copy the **Conversion Action ID** from the URL parameter `ctId=`.<br />3. Go back to AppsFlyer and paste it. For example if `ctid=123456789`, paste `123456789`. |
 | **for users from** | **This partner only:** In-app event postbacks are sent only for events attributed to this partner—meaning, the user who performed it came from this partner. |
 | **including** | **Values and revenue:** All event parameters, including the revenue value (if exists in the event), are sent in the postback. |
 
-3. [Optional] Click the **Add condition**![conditional-iae-postbacks-icon.png](https://files.readme.io/80bb94ed7b843ce7a543390d831ddb09b161236f8aede0b053a32fc676524e5f-21884084481041.png) icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
-4. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).
+3. [Optional] Click the **Add condition**![conditional-iae-postbacks-icon.png](https://files.readme.io/80bb94ed7b843ce7a543390d831ddb09b161236f8aede0b053a32fc676524e5f-21884084481041.png) icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks) for an event.
+4. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
 5. Click **Save integration**.
 6. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
    1. From the top-left corner, under the partner name, click the app name to open the list of apps.
    2. Select a different app from the drop-down list.
    3. Repeat the integration steps for the selected app.
 
-### Attribution link tab
+</Accordion>
+
+<div id="attribution-link-tab" />
+
+<Accordion title="Attribution link tab">
 
 Generating an attribution link in the AppsFlyer UI isn't currently available. However, you can either use a cross-platform landing page with SmartScript or create a direct attribution link for your app (see table below).
 
@@ -145,6 +147,8 @@ Generating an attribution link in the AppsFlyer UI isn't currently available. Ho
 >
 > To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
 
+</Accordion>
+
 ## Set up campaigns in Google Ads Web for PC and console apps
 
 When you set up a new campaign, you can either direct users to a:
@@ -156,7 +160,7 @@ The instructions for setting up campaigns to redirect users to either of these o
 
 **Note**: During campaign setup, you may want to configure your own conversion actions and goals. Instructions on how to do this are also detailed in the sections that follow.
 
-### Campaigns that redirect to a cross-platform landing page
+<Accordion title="Campaigns that redirect to a cross-platform landing page">
 
 **To set up a campaign that redirects users to a cross-platform landing page**:
 
@@ -176,7 +180,9 @@ The instructions for setting up campaigns to redirect users to either of these o
    * All campaign types are applicable, except "Shopping" which requires a product catalog and is limited to verified domains.
 6. Enter the cross-platform landing page URL as Google's final URL.
 
-### Campaigns that redirect to a single app store
+</Accordion>
+
+<Accordion title="Campaigns that redirect to a single app store">
 
 **To set up a campaign that redirects users to a single platform and app store**:
 
@@ -201,7 +207,11 @@ The instructions for setting up campaigns to redirect users to either of these o
    * For parallel tracking to function as intended, the final URL must be placed in the `{lpurl}` ValueTrack parameter in Google’s Tracking Template URL as specified by Google.
    * Don't include the af\_dp parameter.
 
-### Create conversion actions and goals
+</Accordion>
+
+<div id="creating-conversion-actions-and-goals" />
+
+<Accordion title="Create conversion actions and goals">
 
 In Google Ads, you can either select from the predefined list of conversion actions and goals or create your own.
 
@@ -214,14 +224,12 @@ In Google Ads, you can either select from the predefined list of conversion acti
 3. Select **Conversions offline** as your conversion actions data source.
 4. Select **Import** from the list of conversion types, then select **Manual import using API or uploads** > **Track conversions from clicks**.
 
-   CALLSTART::Note::
-
-   #### Note
+   <br /><br />**Note**<br />#### Note
 
    If **Manual import using API or uploads** is not available:
 
    1. Select **CRM, files, or other data sources** > **Track conversions from clicks.**
-   2. In **Data source** select **Skip this step and set up data source later.** CALLEND::
+   2. In **Data source** select **Skip this step and set up data source later.**
 5. Click **Continue**.  
    A form displays.
 6. Fill out the form and click **Create and continue** to finish creating your conversion tracker.
@@ -232,6 +240,8 @@ In Google Ads, you can either select from the predefined list of conversion acti
    2. In the Conversion Action **Details** page, copy the **Conversion Action ID** from the URL parameter `ctId=` and paste it.
 9. Click **Create and continue**.
 10. Click **Finish**.
+
+</Accordion>
 
 ## View web-to-app attribution data (from November 2, 2025)
 

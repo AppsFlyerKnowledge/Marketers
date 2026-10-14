@@ -45,10 +45,7 @@ The report sample includes all the report fields and their values. For the defin
 >
 > There is typically a short delay between an event's actual happening and its entry into the database. The report uses the database entry time to ensure accurate and consistent hourly grouping.
 
-
 ### Example of the 8:00 AM batch run
-
-
 
 | Date | Report version | Report available at | The report includes events happening between | The report include events that entered the database between |
 | --- | --- | --- | --- | --- |
@@ -56,8 +53,6 @@ The report sample includes all the report fields and their values. For the defin
 | 2025-10-01 | 4:00 | 9:00 | 3:00-5:00 | 4:00-5:00 |
 | 2025-10-01 | 5:00 | 9:00 | 4:00-6:00 | 5:00-6:00 |
 | 2025-10-01 | 6:00 | 9:00 | 5:00-7:00 | 6:00-7:00 |
-
-
 
 Notes for the above example:
 
@@ -93,7 +88,7 @@ The path to the report consists of the following folder hierarchy:
 
 The following are examples of some popular, practical applications of the data that BI developers can extract via Data Locker. Each example is illustrated by an SQL statement
 
-#### Calculating total User Acquisitions
+<Accordion title="Calculating total User Acquisitions">
 
 Count the number of new unique users per media source and campaign.
 
@@ -116,7 +111,9 @@ GROUP BY install_date
 	,campaign_name
 ```
 
-#### Calculating total platform activations
+</Accordion>
+
+<Accordion title="Calculating total platform activations">
 
 Sum the number of total new platforms, groups, media sources, and campaigns brought per user.
 
@@ -162,7 +159,9 @@ GROUP BY install_date
 	,campaign_name
 ```
 
-#### Calculating total revenue
+</Accordion>
+
+<Accordion title="Calculating total revenue">
 
 Sum the total revenue per media source and campaign.
 
@@ -183,3 +182,5 @@ GROUP BY install_date
 	,media_source
 	,campaign_name;
 ```
+
+</Accordion>

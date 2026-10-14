@@ -22,11 +22,13 @@ x-zendesk:
   created_at: '2026-04-12T14:19:36Z'
   edited_at: '2026-05-24T13:27:09Z'
 ---
+## At a glance
+
 ## About partner connections
 
-[Data Collaboration Platform (DCP)](/docs/data-collaboration-platform-dcp-guide) partner connections enable you to securely connect your DCP audiences to supported media partners, so you can activate tailored campaigns on their platforms. Once a partner is connected to an audience, DCP delivers the audience based on the configured refresh and activation flow, using the latest available source data and [permissions](/docs/data-collaboration-platform-dcp-create-and-manage-sources#permissions).
+[Data Collaboration Platform (DCP)](/docs/data-collaboration-platform-dcp-guide) partner connections enable you to securely connect your DCP audiences to supported media partners, so you can activate tailored campaigns on their platforms. Once a partner is connected to an audience, DCP delivers the audience based on the configured refresh and activation flow, using the latest available source data and [permissions](/docs/data-collaboration-platform-dcp-create-and-manage-sources#sharing-permissions).
 
-> 📘 Note
+> 📘 **Note**
 >
 > * The audience is delivered for activation as a list of user identifiers. Each delivery represents a full audience snapshot at the time of export.
 > * Audience refreshes are not continuous or in real-time. Instead, they are triggered according to the defined policy, which is cadence-based and checks whether the source data has been updated. Each refresh generates and sends the audience list to the selected destinations.
@@ -35,15 +37,12 @@ x-zendesk:
 
 This section lists the media partner connections supported by DCP, along with each partner’s setup requirements, permissions, supported campaign types, and any additional requirements or limitations.
 
-<Tabs>
-<Tab title="Google Ads">
+<Accordion title="Google Ads">
 
-**Media partner platform:**
-
+**Media partner platform:**  
 Google Ads
 
-**Media partner name in DCP:**
-
+**Media partner name in DCP:**  
 Google Ads
 
 **Media partner’s connection setup and account permissions requirements:**
@@ -56,37 +55,28 @@ Google Ads
 
 **How it works:**
 
-A Standard/Admin user must enable the integration during setup.
-
+A Standard/Admin user must enable the integration during setup.   
 After that, the DCP uploads audiences automatically via the Partner Link.
 
-**Official resources:**
-
+**Official resources:**  
 [Google Ads Customer Match help](https://support.google.com/google-ads/answer/10589050)
 
 **Supported campaign types:**
 
-* **Search**
-
-Use Customer Match lists in Observation or Targeting mode to adjust bids or refine targeting for search queries.
-* **Display**
-
-Target or exclude audiences directly across the Google Display Network using Customer Match lists.
-* **Video (YouTube)**
-
-Use audiences for targeting ads on YouTube (in-stream, in-feed, Shorts).
-* **Shopping**
-
-Apply audiences in Observation mode to optimize bids for users on Shopping campaigns.
-* **Performance Max (PMax)**
-
-Use Customer Match lists as audience signals to guide Google’s automation (not strict targeting).
-* **Demand Gen**
-
-Use Customer Match lists for direct audience targeting across YouTube, Discover, and Gmail.
-* **App Campaigns**
-
-App Campaigns for installs (ACi) use uploaded audiences only as optimization signals, while re-engagement campaigns (ACe) support deterministic targeting and are the primary method for audience activation.
+* **Search**  
+  Use Customer Match lists in Observation or Targeting mode to adjust bids or refine targeting for search queries.
+* **Display**  
+  Target or exclude audiences directly across the Google Display Network using Customer Match lists.
+* **Video (YouTube)**  
+  Use audiences for targeting ads on YouTube (in-stream, in-feed, Shorts).
+* **Shopping**  
+  Apply audiences in Observation mode to optimize bids for users on Shopping campaigns.
+* **Performance Max (PMax)**  
+  Use Customer Match lists as audience signals to guide Google’s automation (not strict targeting).
+* **Demand Gen**  
+  Use Customer Match lists for direct audience targeting across YouTube, Discover, and Gmail.
+* **App Campaigns**   
+  App Campaigns for installs (ACi) use uploaded audiences only as optimization signals, while re-engagement campaigns (ACe) support deterministic targeting and are the primary method for audience activation.
 
 #### App campaigns (ACi & ACe) guidelines
 
@@ -94,22 +84,16 @@ Google App campaigns (formerly known as Universal App Campaign - UAC) behave dif
 
 **App Campaigns for Installs (ACi)**
 
-Designed for acquiring new users at scale.
-
-Customer Match audiences **cannot be used for direct targeting.**
-
-Uploaded audiences are used **only as signals** to improve Google’s machine learning and optimization.
-
-Activation is **fully automated by Google AI**, with no control over audience inclusion/exclusion.
-
+Designed for acquiring new users at scale.  
+Customer Match audiences **cannot be used for direct targeting.**  
+Uploaded audiences are used **only as signals** to improve Google’s machine learning and optimization.  
+Activation is **fully automated by Google AI**, with no control over audience inclusion/exclusion.  
 Requires sufficient account history (e.g., conversion data and spend) to be eligible.
 
 **App Campaigns for Engagement (ACe)**
 
-Designed for **re-engaging existing users.**
-
-Customer Match audiences support **deterministic targeting.**
-
+Designed for **re-engaging existing users.**  
+Customer Match audiences support **deterministic targeting.**  
 Advertisers can:
 
 * Retarget specific user segments (e.g., churned users, purchasers)
@@ -117,10 +101,10 @@ Advertisers can:
 
 Audience lists from DCP are used as primary targeting criteria, similar to other platforms.
 
-#### Notes
-
-* Use ACi when your goal is scale and user acquisition (audiences = signals only).
-* Use ACe when your goal is re-engagement and precise audience targeting (audiences = direct targeting).
+> 📘 **Notes**
+>
+> * Use ACi when your goal is scale and user acquisition (audiences = signals only).
+> * Use ACe when your goal is re-engagement and precise audience targeting (audiences = direct targeting).
 
 **Connection expiration:**
 
@@ -139,16 +123,14 @@ Audience lists from DCP are used as primary targeting criteria, similar to other
 * Customer Match lists require a minimum of 1,000 active, matched users before they can be used to serve ads.
 * EU Consent (DMA): You must add that for users in the European Economic Area (EEA), passing explicit, granted consent signals (ad\_user\_data and ad\_personalization) is strictly required to use Customer Match. If consent is denied or missing, the user will not be processed.
 
-</Tab>
+</Accordion>
 
-<Tab title="DV360">
+<Accordion title="DV360">
 
-**Media partner platform:**
-
+**Media partner platform:**  
 Google DV360 (Display & Video 360)
 
-**Media partner name in DCP:**
-
+**Media partner name in DCP:**  
 DV360
 
 **Media partner’s connection setup and account permissions requirements:**
@@ -161,12 +143,10 @@ DV360
 
 **How it works:**
 
-The appropriate DV360 access permissions are needed to enable the integration during setup.
-
+The appropriate DV360 access permissions are needed to enable the integration during setup.  
 After that, the DCP uploads audiences automatically via the Partner Link.
 
-**Official resources:**
-
+**Official resources:**  
 [Display & Video 360 audience help](https://support.google.com/displayvideo/answer/9134175?hl=en)
 
 **Supported campaign types:**
@@ -193,16 +173,14 @@ After that, the DCP uploads audiences automatically via the Partner Link.
 * Customer Match lists require a minimum of 1,000 active, matched users before they can be used to serve ads.
 * EU Consent (DMA): You must add that for users in the European Economic Area (EEA), passing explicit, granted consent signals (ad\_user\_data and ad\_personalization) is strictly required to use Customer Match. If consent is denied or missing, the user will not be processed.
 
-</Tab>
+</Accordion>
 
-<Tab title="Meta Ads">
+<Accordion title="Meta Ads">
 
-**Media partner platform:**
-
+**Media partner platform:**  
 Meta Ads Manager (Facebook / Instagram)
 
-**Media partner name in DCP:**
-
+**Media partner name in DCP:**  
 Meta Ads
 
 **Media partner’s connection setup and account permissions requirements:**
@@ -227,14 +205,13 @@ The same user authenticating the DCP connection must have accepted these terms, 
 
 **How it works:**
 
-You need the required permissions during setup to connect the DCP.
+You need the required permissions during setup to connect the DCP.  
 
 After setup is complete:
 
 * The DCP can upload and refresh audiences automatically.
 
-**Official resources:**
-
+**Official resources:**  
 [Meta Business help](https://www.facebook.com/business/help/1143109949216644/)
 
 **Supported campaign types:**
@@ -259,25 +236,21 @@ DCP audiences (Custom Audiences) can be used for direct targeting across all Met
 * Recommended operational validation: every 60–90 days
 * Recommended audience refresh: daily for conversion/lifecycle campaigns; every 3–7 days acceptable for awareness campaigns
 
-</Tab>
+</Accordion>
 
-<Tab title="TikTok">
+<Accordion title="TikTok">
 
-**Media partner platform:**
-
+**Media partner platform:**  
 TikTok Ads Manager
 
-**Media partner name in DCP:**
-
+**Media partner name in DCP:**  
 TikTok
 
 **Media partner’s connection setup and account permissions requirements:**
 
-TikTok Ads Manager account.
-
-Approved and active advertiser account.
-
-Admin access to the advertiser.
+TikTok Ads Manager account.  
+Approved and active advertiser account.  
+Admin access to the advertiser.  
 
 Active TikTok Ads account (Ads Manager)
 
@@ -290,15 +263,14 @@ Active TikTok Ads account (Ads Manager)
 
 **How it works:**
 
-An Admin or Standard user is required during setup to authorize and connect the DCP.
+An Admin or Standard user is required during setup to authorize and connect the DCP.  
 
 After setup is complete:
 
 * The DCP can upload and refresh audiences automatically
 * Audience activation happens directly within TikTok Ads using those uploaded audiences
 
-**Official resources:**
-
+**Official resources:**  
 [TikTok Business Center partner access help](https://ads.tiktok.com/help/article/invite-partners-into-tiktok-business-center?lang=en)
 
 **Supported campaign types:**
@@ -327,24 +299,20 @@ DCP audiences (Custom Audiences) can be used for direct targeting across all Tik
 
 * Minimum Audience Size: A Custom Audience requires a strict minimum of 1,000 total matched users before it can be applied to an ad group
 
-</Tab>
+</Accordion>
 
-<Tab title="Pinterest">
+<Accordion title="Pinterest">
 
-**Media partner platform:**
-
+**Media partner platform:**  
 Pinterest Ads Manager
 
-**Media partner name in DCP:**
-
+**Media partner name in DCP:**  
 Pinterest
 
 **Media partner’s connection setup and account permissions requirements:**
 
-* Active Pinterest Business account
-
-Ads Manager account linked to the business
-
+* Active Pinterest Business account  
+  Ads Manager account linked to the business
 * **User access:**
   * Admin or Analyst (with audience permissions) access to the ad account
 * **Audience permissions:**
@@ -354,14 +322,13 @@ Ads Manager account linked to the business
 
 **How it works:**
 
-An Admin or (or sufficient) user is required during setup to connect the DCP and grant permissions.
+An Admin or (or sufficient) user is required during setup to connect the DCP and grant permissions.  
 
 After setup is complete:
 
 * The DCP can upload and refresh audiences automatically
 
-**Official resources:**
-
+**Official resources:**  
 [Pinterest audience targeting help](https://help.pinterest.com/en/business/article/audience-targeting)
 
 **Supported campaign types:**
@@ -384,16 +351,14 @@ DCP audiences (Customer Lists) can be used for direct targeting across all Pinte
 * Recommended operational reconnect validation: every 60–90 days
 * Recommended audience refresh: every 1–7 days, depending on campaign type
 
-</Tab>
+</Accordion>
 
-<Tab title="The Trade Desk">
+<Accordion title="The Trade Desk">
 
-**Media partner platform:**
-
+**Media partner platform:**  
 The Trade Desk (TTD)
 
-**Media partner name in DCP:**
-
+**Media partner name in DCP:**  
 The Trade Desk
 
 **Media partner’s connection setup and account permissions requirements:**
@@ -407,13 +372,10 @@ The Trade Desk
   * Account must allow data onboarding / audience ingestion from external partners (such as DCPs)
 * **Partner authorization:**
   * The partner (DCP) must be approved and linked as a data provider in TTD
-* **API credentials (required)**
-
-Required for API-based audience upload and activation:
-
-* Generate from the “First Party Data Credentials” section in TTD (or request them from your TTD account admin):
-  * Advertiser ID
-  * Advertiser Secret Key
+* **API credentials (required)** Required for API-based audience upload and activation:
+  * Generate from the “First Party Data Credentials” section in TTD (or request them from your TTD account admin):
+    * Advertiser ID
+    * Advertiser Secret Key
 
 **How it works:**
 
@@ -428,8 +390,7 @@ After setup is complete:
 * The DCP uploads audiences via API credentials + partner configuration
 * Audiences are available as first-party data segments in TTD
 
-**Official resources:**
-
+**Official resources:**  
 [The Trade Desk platform](https://www.thetradedesk.com/)
 
 **Supported campaign types:**
@@ -452,20 +413,21 @@ DCP audiences in The Trade Desk are used for direct targeting across all campaig
 
 * Recommended audience refresh: daily or weekly, depending on activation use case and segment volatility
 
-</Tab>
-</Tabs>
+</Accordion>
 
 ## Create a partner connection
 
 You can set up partner connections as part of the audience-builder flow or separately.
 
-### Setup as part of the audience-builder flow
+<Accordion title="Setup as part of the audience-builder flow">
 
 **To create a media partner connection as part of the audience-builder flow:**
 
 Follow the instructions detailed [here](/docs/data-collaboration-platform-dcp-build-and-activate-audiences#step-3-connect-and-export).
 
-### Separate setup
+</Accordion>
+
+<Accordion title="Separate setup">
 
 **To create a connection outside the audience-builder flow:**
 
@@ -474,9 +436,10 @@ Follow the instructions detailed [here](/docs/data-collaboration-platform-dcp-bu
 3. Click **New connection**. If you already have existing cloud connections in your account, you'll see them all under **Partner**.
 4. From the **New media partner connection** dialog, select the relevant media partner.
 
-<Image src="https://files.readme.io/1c50a570d4eb495c3d77ee8e572b14a577e39adad65e41fe20eb3b014cce8989-46196842129425.png" alt="New media partner connection" />
-
+   ![New media partner connection.png](https://files.readme.io/1c50a570d4eb495c3d77ee8e572b14a577e39adad65e41fe20eb3b014cce8989-46196842129425.png)
 5. Enter a connection name.
 6. Log in to the media partner account with your credentials, and follow their instructions to enable AppsFlyer access.
 7. Click **Select account ID** and select the relevant account for this connection.
 8. Click **Save**. The new connection is added to the list of partners.
+
+</Accordion>

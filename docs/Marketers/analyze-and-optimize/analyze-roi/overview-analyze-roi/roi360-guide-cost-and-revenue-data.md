@@ -34,34 +34,18 @@ With the combined cost and revenue insights, you get the complete picture of you
 
 Previously known as Xpend, the ROI360 cost tools aggregate and report cost data. The full suite of cost tools and features is outlined in the table that follows. Click the links to learn more about each feature.
 
-| Tool | Description |
-| --- | --- |
-| [Attributed cost](/docs/roi360-cost-aggregation-overview) | Cost data tied to attribution, clicks, and impressions at the most granular level available.<br />This includes access to more than 80 API integrations, enabling you to easily connect to global or local ad networks. |
-| [File import](/docs/import-cost-data) | Cost Import to record cost data not received via API. |
-| [Agency fees](/docs/incorporate-agency-fees-into-campaign-costs) | Agency fee calculations included in your cost. |
-| [Cost ETL\*](/docs/set-up-and-use-roi360-cost-etl-reports) | Delivers campaign cost data, updated 4 times daily, to your AWS S3 or GCS bucket ready for loading into advertiser BI systems. |
-| \* Available with ROI360 advanced package | |
+<table><thead><tr><th>Tool</th><th>Description</th></tr></thead><tbody><tr><td><a href="./roi360-cost-aggregation-overview">Attributed cost</a></td><td><p><span>Cost data tied to attribution, clicks, and impressions at the most granular level available.</span></p><p><span>This includes access to more than 80 API integrations, enabling you to easily connect to global or local ad networks.</span></p></td></tr><tr><td><a href="./import-cost-data">File import</a></td><td><span>Cost Import to record cost data not received via API.</span></td></tr><tr><td><a href="./incorporate-agency-fees-into-campaign-costs">Agency fees</a></td><td><span>Agency fee calculations included in your cost.</span></td></tr><tr><td><a href="./set-up-and-use-roi360-cost-etl-reports">Cost ETL\*</a></td><td>Delivers campaign cost data, updated 4 times daily, to your AWS S3 or GCS bucket ready for loading into advertiser BI systems.</td></tr><tr><td colspan="2">\* Available with ROI360 advanced package</td></tr></tbody></table>
 
-> 📘 Note
->
-> You can also aggregate [cost data reported on the attribution link](/docs/view-aggregated-cost-data-for-attribution-links) without ROI360. However, this method is only for the CPI cost model, not for other models, such as CPA, CPC, and CPM.
+**Note**: You can also aggregate [cost data reported on the attribution link](/docs/view-aggregated-cost-data-for-attribution-links) without ROI360. However, this method is only for the CPI cost model, not for other models, such as CPA, CPC, and CPM.
 
 ### Revenue tools
 
 The ROI360 revenue tools aggregate and report revenue data, taking into account in-app purchases, subscriptions, and ad revenue. Taxes and app store commissions are also included in revenue metrics. The full suite of revenue tools and features is outlined in the table that follows. Click the links to learn more about each feature.
 
-| Tool | Description |
-| --- | --- |
-| [In-app purchases](/docs/purchase-and-subscription-validation-overview) | Automatic reporting of validated in-app purchases, including data for follow-up transactions such as refunds or cancellations. |
-| [Subscription revenue](/docs/purchase-and-subscription-validation-overview) | Automatic reporting of subscriptions, including changes, cancellations, and family sharing. |
-| [Ad revenue](/docs/roi360-guide-ad-revenue-attribution) | Access to more than 20 ad revenue partners that connect via API or SDK that provide superior accuracy and data freshness. |
-| [Revenue ETL](/docs/revenue-etl-reports)\* | Delivers revenue data to your AWS S3 or GCS bucket ready for loading into advertiser BI systems. |
-| \* Available with ROI360 advanced package | |
+<table><thead><tr><th>Tool</th><th>Description</th></tr></thead><tbody><tr><td><a href="./purchase-and-subscription-validation-overview">In-app purchases</a></td><td><span>Automatic reporting of validated in-app purchases, including data for follow-up transactions such as refunds or cancellations.</span></td></tr><tr><td><a href="./purchase-and-subscription-validation-overview">Subscription revenue</a></td><td><span>Automatic reporting of subscriptions, including changes, cancellations, and family sharing.</span></td></tr><tr><td><a href="./roi360-guide-ad-revenue-attribution">Ad revenue</a></td><td>Access to more than 20 ad revenue partners that connect via API or SDK that provide superior accuracy and data freshness.</td></tr><tr><td><a href="./revenue-etl-reports">Revenue ETL</a>\*</td><td>Delivers revenue data to your AWS S3 or GCS bucket ready for loading into advertiser BI systems.</td></tr><tr><td colspan="2">\* Available with ROI360 advanced package</td></tr></tbody></table>
 
-> 📘 Note
->
-> There are also some basic revenue measurement tools that aren't included in ROI360. Unlike the tools included in ROI360, these tools require a substantial amount of configuration by your developers:
->
-> * [In-app purchase receipt validation](/docs/about-receipt-validation)
-> * [Subscription revenue measurement](/docs/purchase-and-subscription-validation-overview)
-> * [Revenue recording via customized in-app events](/docs/roi360-revenue-attribution-overview)
+**Note**: There are also some basic revenue measurement tools that aren't included in ROI360. Unlike the tools included in ROI360, these tools require a substantial amount of configuration by your developers:
+
+* [In-app purchase receipt validation](/docs/about-receipt-validation)
+* [Subscription revenue measurement](/docs/purchase-and-subscription-validation-overview)
+* [Revenue recording via customized in-app events](/docs/roi360-revenue-attribution-overview)

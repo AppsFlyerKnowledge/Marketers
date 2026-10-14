@@ -80,7 +80,9 @@ When you import an audience, you designate it as one of two types, which determi
 
 Import an audience either by uploading a CSV file or using the Import Audience API.
 
-### Import a CSV file
+<div id="import-a-csv-file" />
+
+<Accordion title="Import a CSV file">
 
 Prepare a CSV file, with the following specifications:
 
@@ -119,7 +121,7 @@ Prepare a CSV file, with the following specifications:
   * phone\_e164
   * braze\_id
   * amplitude\_id  
-      
+
     **Note:** Additional identifiers such as emails and phone must either be in the encrypted sha256 format or left blank.
 * Required identifiers:
   * For Android audiences: **app\_id** + one of: **gaid** OR **oaid** OR **imei** OR **cuid** OR **braze\_id** OR **amplitude\_id**
@@ -185,13 +187,17 @@ Your audience has been updated using the CSV file. Note, however, that the revis
 
 | Message | Cause | What to Do |
 | --- | --- | --- |
-| There's a problem with the device list | One or multiple issues with the device list | Please check that the CSV file:<br /><br />* is populated with devices and GAID/IDFA identifiers in the correct format<br />* contains the required identifiers<br />* contains a header row, with the headers in the correct format<br />* has no blank rows<br />* app\_id is populated with the correct app you use for Audiences |
+| There's a problem with the device list | One or multiple issues with the device list | Please check that the CSV file:<ul><li>is populated with devices and GAID/IDFA identifiers in the correct format</li><li>contains the required identifiers</li><li>contains a header row, with the headers in the correct format</li><li>has no blank rows</li><li>app\_id is populated with the correct app you use for Audiences</li></ul> |
 | Seems like your device list is empty. Add some device IDs to it and try again | The CSV file is empty | Make sure that the CSV contains at least one device ID. |
-| We couldn’t understand one or more of your device IDs. | * The CSV format is incorrect<br />* The file you uploaded is not a CSV file<br />* The CSV file was edited and saved by a program other than a valid CSV editor (i.e. Microsoft Excel)<br />* One or more device IDs is in the wrong format | * Make sure that the CSV is in the required format.<br />* Make sure that all device IDs are in the correct format.<br />* If you used Excel, save the file as a CSV file described above. |
+| We couldn’t understand one or more of your device IDs. | <ul><li>The CSV format is incorrect</li><li>The file you uploaded is not a CSV file</li><li>The CSV file was edited and saved by a program other than a valid CSV editor (i.e. Microsoft Excel)</li><li>One or more device IDs is in the wrong format</li></ul> | <ul><li>Make sure that the CSV is in the required format.</li><li>Make sure that all device IDs are in the correct format.</li><li>If you used Excel, save the file as a CSV file described above.</li></ul> |
 | Cannot use import v1 while applying user account policy on audience. | You have uploaded a CSV file for a [standard audience](/docs/audiences-import-audience-segments-from-internal-systems#imported-audience-types) using the V1.0 import structure. Standard audiences must be uploaded using a CSV in the V2.0 structure. | Edit the CSV file you are uploading to use the format, columns, and identifiers described above. |
 | We just had a temporary connection problem and couldn’t upload your file. You can try again now. | Possible network error | Try uploading the CSV file again. |
 
-### Use the Import Audience API
+</Accordion>
+
+<div id="use-the-import-audience-api" />
+
+<Accordion title="Use the Import Audience API">
 
 The Import Audience API is used to either add or remove devices from an audience.
 
@@ -211,7 +217,7 @@ The Import Audience API is used to either add or remove devices from an audience
    The Import page is displayed.
 8. In the **Import using API** section, keep the default of **Add new devices/users** (since this is a new audience).
 9. Copy the API request URL from the [Import a new audience API](https://dev.appsflyer.com/hc/reference/audience-import-post) page (the API token is already included).
-10. Then copy and paste the API request body**.**
+10. Then copy and paste the API request body.
 11. Click **Done**.  
     The **Connect** tab is displayed.
 12. **(Optional)** Follow the instructions for [connecting an audience to partners](/docs/audiences-guide#connect-an-audience-to-media-partners).
@@ -243,8 +249,8 @@ The Import Audience API is used to either add or remove devices from an audience
 | --- | --- | --- |
 | 200 | The request was successful | Audience successfully imported |
 | 400 | Invalid audience platform, this audience is already configured for Android/iOS. To use a different platform, please create a new audience in the UI | The platform specified in the request body doesn't match the platform specified when creating the audience |
-| 400 | X or more of your rows do not contain an app id. You must attach an app id to each row. | Each row must contain an **app\_id**<br /><br />* **Note:** app\_id is not required for an [as-is audience](/docs/audiences-import-audience-segments-from-internal-systems#imported-audience-types) that is imported using the V1.0 legacy import feature. |
-| 400 | X or more of your rows does not contain a valid unique identifier | All or some rows do not contain at least one of the following identifiers in a valid format:<br /><br />* For Android audiences: **gaid** OR **oaid** OR **imei** OR **cuid** OR **braze\_id** OR **amplitude\_id**<br />* For iOS audiences: **idfv** OR **cuid** OR **braze\_id** OR **amplitude\_id** |
+| 400 | X or more of your rows do not contain an app id. You must attach an app id to each row. | Each row must contain an **app\_id**<ul><li>**Note:** app\_id is not required for an [as-is audience](/docs/audiences-import-audience-segments-from-internal-systems#imported-audience-types) that is imported using the V1.0 legacy import feature.</li></ul> |
+| 400 | X or more of your rows does not contain a valid unique identifier | All or some rows do not contain at least one of the following identifiers in a valid format:<ul><li>For Android audiences: **gaid** OR **oaid** OR **imei** OR **cuid** OR **braze\_id** OR **amplitude\_id**</li><li>For iOS audiences: **idfv** OR **cuid** OR **braze\_id** OR **amplitude\_id**</li></ul> |
 | 400 | Cannot process more than Y devices per request (n devices counted in this request) | The request body contains a list of more than 10,000 device IDs |
 | 400 | Device list cannot be empty | The request body contains an empty list of devices<br /><br />You must provide at least one device ID per request |
 | 400 | We couldn’t understand one or more of your device IDs | All or some device IDs are not in a valid format |
@@ -260,6 +266,12 @@ The Import Audience API is used to either add or remove devices from an audience
 * You can send up to 10,000 device IDs per request.
 * You can send up to 350 requests per minute.
 
-### Imported Audience Management API
+</Accordion>
+
+<div id="imported-audience-management-api" />
+
+<Accordion title="Imported Audience Management API">
 
 The [Imported Audience Management API](https://dev.appsflyer.com/hc/reference/overview-2) allows advertisers to create and configure imported audiences, connect imported audiences to partners, upload imported audiences to partners, and more.
+
+</Accordion>

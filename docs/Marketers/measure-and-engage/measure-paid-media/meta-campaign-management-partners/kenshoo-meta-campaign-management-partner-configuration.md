@@ -24,22 +24,16 @@ x-zendesk:
 ---
 ## Setting up Kenshoo
 
-> 📘 Prerequisite
->
-> An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 
 **To set up a new integration:**
 
-1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
-
-( **To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
-4. In the **Integration** tab, turn on the **Activate partner** toggle.
-
-> ❗️ Important note
->
-> The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   **Important note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below.
 
 ### In-app events
@@ -58,4 +52,4 @@ Learn more about [partner integrations](/docs/set-up-an-integrated-partner).
 
 ## Configuring on Kenshoo
 
-When you configure your campaigns on Kenshoo the campaign name must begin with " **kenshoo\_**".
+When you configure your campaigns on Kenshoo the campaign name must begin with "**kenshoo\_**".

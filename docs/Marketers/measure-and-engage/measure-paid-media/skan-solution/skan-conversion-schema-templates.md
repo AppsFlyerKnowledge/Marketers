@@ -24,8 +24,8 @@ x-zendesk:
 ---
 ## Key benefits
 
-- These templates streamline the SKAN set up by enabling the creation of a conversion schema in just a few clicks.
-- By utilizing industry best practices and insights, marketers can refine their schema and increase confidence in its effectiveness by using templates based on industry data combined with app-specific data.
+* These templates streamline the SKAN set up by enabling the creation of a conversion schema in just a few clicks.
+* By utilizing industry best practices and insights, marketers can refine their schema and increase confidence in its effectiveness by using templates based on industry data combined with app-specific data.
 
 ## How to get started
 
@@ -34,19 +34,13 @@ x-zendesk:
 3. The template window will open
 4. Select from the list of industries and verticals on the left-hand side
 5. The right-hand side of the screen displays how the suggested conversion schema looks
-1. Use the **SKAN 4 mode** toggle to turn on or off SKAN 4 support
-
-   > 📘 Note
-   >
-   > With SKAN 4, three activity windows are suggested, along with coarse conversion values for the first window. With it off, only fine conversion values for the first window are suggested.
-2. Use the ? icons next to each measurement to see an explanation of why that event or measurement was suggested, along with benchmark information
-6. Click **Select & customize**
-
-> 📘 Note
->
-   > This will not save your settings yet
+   1. Use the **SKAN 4 mode** toggle to turn on or off SKAN 4 support  
+      **Note:** With SKAN 4, three activity windows are suggested, along with coarse conversion values for the first window. With it off, only fine conversion values for the first window are suggested.
+   2. Use the ? icons next to each measurement to see an explanation of why that event or measurement was suggested, along with benchmark information
+6. Click **Select & customize**  
+   **Note:** This will not save your settings yet
 7. You will be redirected to the **Conversion Studio** edit page
-1. Use the Conversion Studio’s [standard features and tools](/docs/skan-conversion-studio#measurement-components) to customize the template according to your app’s needs
+   1. Use the Conversion Studio’s [standard features and tools](/docs/skan-conversion-studio#measurement-components) to customize the template according to your app’s needs
 
 ## What Are SKAN conversion schema templates?
 
@@ -54,11 +48,12 @@ SKAN conversion templates suggest mappings of conversion values for meaningful u
 
 ### Template structure
 
-- **Strategy**: This defines whether to focus on in-app events, revenue measurement, or a combination of both. The strategy is pre-defined but can be customized in the Conversion Studio edit page.
-- **SKAN Version**: Indicates which version of SKAN is supported, either SKAN4 or earlier versions. By default, SKAN 4 is supported. If SKAN 4 is turned off, coarse conversion value measurements are disabled, and the Conversion Studio switches to "custom" mode.
-- **Measurements**: The template suggests specific post-install activities to measure. This includes specific events or revenue ranges, as well as the use of features like Funnel and Single Source of Truth (SSOT), which is suggested by default.  - The suggested measurements can be customized in the Conversion Studio edit page.
-  - Pre-selected events are tailored for each template.
-  - Revenue ranges are customized based on app-specific data using advanced revenue recommendation models  When there isn't enough historical data, industry data is used to make suggestions.
+* **Strategy**: This defines whether to focus on in-app events, revenue measurement, or a combination of both. The strategy is pre-defined but can be customized in the Conversion Studio edit page.
+* **SKAN Version**: Indicates which version of SKAN is supported, either SKAN4 or earlier versions. By default, SKAN 4 is supported. If SKAN 4 is turned off, coarse conversion value measurements are disabled, and the Conversion Studio switches to "custom" mode.
+* **Measurements**: The template suggests specific post-install activities to measure. This includes specific events or revenue ranges, as well as the use of features like Funnel and Single Source of Truth (SSOT), which is suggested by default.
+  * The suggested measurements can be customized in the Conversion Studio edit page.
+  * Pre-selected events are tailored for each template.
+  * Revenue ranges are customized based on app-specific data using advanced revenue recommendation models  When there isn't enough historical data, industry data is used to make suggestions.
 
 ## What is SKAN conversion schema?
 
@@ -66,8 +61,7 @@ The SKAN conversion schema defines the measurement setup for the SKAdNetwork (SK
 
 ## What are these templates based on?
 
-The templates are based on a data-driven analysis of conversion schemas by vertical, along with qualitative research and insights from industry experts. Some of the suggestions are based on app-specific data, as outlined below.
-
+The templates are based on a data-driven analysis of conversion schemas by vertical, along with qualitative research and insights from industry experts. Some of the suggestions are based on app-specific data, as outlined below.  
 The key steps of the template creation process:
 
 1. **Sampled leading apps**: We identified sample apps for quantitative analysis. Using internal and external datasets, we classified apps into vertical hierarchies. For each sub-vertical, we analyzed dozens of leading apps and ranked them by the volume of SKAN traffic they generated.

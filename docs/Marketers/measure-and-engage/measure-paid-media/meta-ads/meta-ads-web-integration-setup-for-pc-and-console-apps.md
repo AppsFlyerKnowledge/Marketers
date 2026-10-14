@@ -31,7 +31,7 @@ x-zendesk:
 This article contains information and steps on how to set up and use Meta Web for PC and console apps with AppsFlyer. This includes:
 
 * [Activating the partner integration in AppsFlyer](#activate-partner).
-* [Setting up Meta Web in AppsFlyer](#setting-up-metaweb-in-appsflyer).
+* [Setting up Meta Web in AppsFlyer](#setting-up-meta-web-in-appsflyer).
 * [Setting up campaigns in Meta for PC and console apps](/docs/meta-ads-web-integration-setup-for-pc-and-console-apps#setting-up-campaigns-in-meta-web-for-pc-and-console-apps).
 
 ### Prerequisite
@@ -55,7 +55,7 @@ In this part of the setup, you can also set up postbacks to Meta Web. The Meta W
 
 The integration with Meta Web only supports sending postbacks for installs and in-app events.
 
-### Integration tab
+<Accordion title="Integration tab">
 
 The **Integration** tab includes a number of sections, as described below.
 
@@ -86,7 +86,7 @@ When a user clicks a Meta Web ad and lands on a [Smart Script](/docs/meta-ads-cr
 1. In AppsFlyer, from the sidebar, open **Active Integrations** > **Meta web ads**.
 2. In the **Integration** tab, scroll to the **Install attribution** section.
 3. Turn on **Install view-through attribution**.
-4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see [Enable equal priority for cross-platform impressions](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions)**.**
+4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see [Enable equal priority for cross-platform impressions](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions).
 5. Open the **Attribution link** tab.
 6. Scroll to the **View-through attribution** section and set the **view-through lookback window** (up to 24 hours).
 7. Click **Save integration** to apply your settings.
@@ -105,24 +105,24 @@ Configure mapping of in-app event postbacks sent to Meta Web. These events can b
 1. Turn on **In-app event postbacks**.
 2. Click **Add event** to add an SDK or server-to-server event to the list. The following table describes the fields to complete:
 
-   
-
 | Parameter name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br /><br />* Click **Add item**, enter the event name, and click ![check.png](https://files.readme.io/66d595d0ac8a01489ce810bbd3865fca2556342086dc6b20f26fa3d7b7e3afc2-19124971382289.png). |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side.<br /><br />* Select from the dropdown box the most suitable pre-defined partner event or select CUSTOM. |
-| **for users from** | * **This Partner Only** to ensure that in-app event postbacks are sent exclusively for events performed by users who originated from this partner.<br />* **All media sources, including organic,** are to ensure that in-app event postbacks are sent for events performed by users who originated from this partner, other partners, or from organic sources. |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<ul><li>Click **Add item**, enter the event name, and click ![check.png](https://files.readme.io/66d595d0ac8a01489ce810bbd3865fca2556342086dc6b20f26fa3d7b7e3afc2-19124971382289.png).</li></ul> |
+| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side.<ul><li>Select from the dropdown box the most suitable pre-defined partner event or select CUSTOM.</li></ul> |
+| **for users from** | <ul><li>**This Partner Only** to ensure that in-app event postbacks are sent exclusively for events performed by users who originated from this partner.</li><li>**All media sources, including organic,** are to ensure that in-app event postbacks are sent for events performed by users who originated from this partner, other partners, or from organic sources.</li></ul> |
 | **including** | **Values and revenue:** All event parameters, including the revenue value (if exists in the event), are sent in the postback. |
 
-3. [Optional] Click the **Add condition**![conditional-iae-postbacks-icon.png](https://files.readme.io/16d37e5cdb84468be45960c7927ad721fd5ba0ca67f4bdcd0d71c4bb551db85f-18704290233873.png) icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
-4. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).
+3. [Optional] Click the **Add condition**![conditional-iae-postbacks-icon.png](https://files.readme.io/16d37e5cdb84468be45960c7927ad721fd5ba0ca67f4bdcd0d71c4bb551db85f-18704290233873.png) icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks) for an event.
+4. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
 5. Click **Save integration**.
 6. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
    1. From the top-left corner, under the partner name, click the app name to open the list of apps.
    2. Select a different app from the drop-down list.
    3. Repeat the integration steps for the selected app.
 
-### Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Generating an attribution link in the AppsFlyer UI isn't currently available. However, you can either use a cross-platform landing page with SmartScript or create a direct attribution link for your app (see table below).
 
@@ -131,17 +131,25 @@ Generating an attribution link in the AppsFlyer UI isn't currently available. Ho
 | Cross-platform landing page | **Recommended**: For when your campaign promotes an app that's also available on multiple platforms, like Epic and Steam.<br /><br />[Learn about cross-platform landing pages](/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page)<br /><br />[Learn how to set up a cross-platform landing page](/docs/cross-platform-landing-pages-with-smart-script)<br /><br />* Make sure all relevant URL parameters (that are later captured by the Smart Script) are appended to the ad URL<br />* Make sure the script takes FBCLID from the incoming URL and adds it to the generated link. Meaning, map the outgoing FBCLID URL param `fbclid` to the incoming URL param `fbclid`. **Note**! To display in AppsFlyer raw data reports, the incoming `fbclid` param must also mapped to one of the outgoing params  `af_sub[1-5]`.<br />* Optional: Use Meta’s dynamic URL macros instead of hard-coding the values manually. [Learn more](https://www.facebook.com/business/help/2360940870872492) | Marketer (may require developer assistance) |
 | Direct attribution link | If you don't use a cross-platform landing page, because you only have 1 app on 1 platform, you can create direct attribution links to place behind ads.<br /><br />[Learn how to create direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links)<br /><br />* Make sure the mandatory parameters are included in your link:<br />  * af\_media\_source<br />  * af\_campaign\_id<br />  * af\_r<br /><br />Template to use for Meta Web ad link:<br /><br />`https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}?af_media_source=metaweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}&af_r={encoded landing page and URL params}`<br /><br />Sample link of a Meta Web ad link leading to Steam: `https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=metaweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello`<br /><br />**Note**: The template includes some dynamic URL parameters supported by Meta. If you prefer, you can replace them with real values manually. [Learn more about Meta dynamic URL parameters](https://www.facebook.com/business/help/2360940870872492) | Marketer |
 
-### Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost isn't available for Meta Web.
 
-### Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad revenue isn't available for Meta Web.
 
-### Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Currently, permissions aren't granted to Meta Web.
+
+</Accordion>
 
 ## Setting up campaigns in Meta Web for PC and console apps
 

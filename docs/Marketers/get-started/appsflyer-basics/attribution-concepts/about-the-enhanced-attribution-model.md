@@ -22,6 +22,8 @@ x-zendesk:
   created_at: '2025-11-30T11:53:35Z'
   edited_at: '2026-03-19T12:25:22Z'
 ---
+## What is the Enhanced attribution model?
+
 The Enhanced attribution model combats engagement flooding by only considering signals that reflect real user engagement for attribution. When AppsFlyer detects engagement patterns that indicate flooding, AppsFlyer considers eligible clicks and impressions only. As a result, attribution is based on the last eligible click, which is not necessarily the most recent click.
 
 The model works continuously in the background and applies to all relevant traffic without requiring any action from advertisers or partners.
@@ -30,17 +32,17 @@ The model works continuously in the background and applies to all relevant traff
 
 Enhanced attribution model helps advertisers, ad networks, and partners in the following ways:
 
-- **Advertisers**
-  - Increases attribution accuracy across both acquisition and retargeting flows.
-  - Enables confident scaling in high-growth channels without compromising attribution quality.
-  - Improves spend protection by basing decisions on more reliable attribution data.
-  - Helps identify and prioritize high-value channels and partners.
+* Advertisers
+  * Increases attribution accuracy across both acquisition and retargeting flows.
+  * Enables confident scaling in high-growth channels without compromising attribution quality.
+  * Improves spend protection by basing decisions on more reliable attribution data.
+  * Helps identify and prioritize high-value channels and partners.
 
-- **Ad networks and partners**
-  - Ensure attribution is based on real user activity.
-  - Improve the accuracy of reporting and optimization decisions.
-  - Maintain consistent and fair attribution competition.
-  - Reduce the effect of artificially increased engagement volumes.
+* Ad networks and partners
+  * Ensure attribution is based on real user activity.
+  * Improve the accuracy of reporting and optimization decisions.
+  * Maintain consistent and fair attribution competition.
+  * Reduce the effect of artificially increased engagement volumes.
 
 ## How the Enhanced attribution model works
 
@@ -59,15 +61,13 @@ You can view Enhanced attribution data in the following channels:
 
 This metric can indicate potential engagement flooding and helps advertisers understand engagement volume and source patterns. It does not represent the number of devices or users.
 
-> 📘 Note
+> 📘 **Note**
 >
 > The metric can also be greater than zero for organic installs, as organic engagements may still enter the attribution competition prior to validation.
 
 ### Protect360 dashboards and reports
 
-- Average engagements per compromised and non-compromised installs
-- Attribution trends segmented by compromised and non-compromised installs
+* Average engagements per compromised and non-compromised installs
+* Attribution trends segmented by compromised and non-compromised installs
 
-> 📘 Note
->
-> Compromised data starts to appear in the Protect360 dashboard only after an app is added to Enhanced attribution. However, compromised and non-compromised data can still be shown for historical timeframes from before the app was added to the feature.
+**Note:** Compromised data starts to appear in the Protect360 dashboard only after an app is added to Enhanced attribution. However, compromised and non-compromised data can still be shown for historical timeframes from before the app was added to the feature.

@@ -30,7 +30,6 @@ The platform is trusted by more than 40,000 game developers worldwide, from indi
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
-
 ## Setting up GameAnalytics
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -47,7 +46,7 @@ The platform is trusted by more than 40,000 game developers worldwide, from indi
 
 The Game Analytics configuration window uses only the ***Integration*** tab.
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
 
@@ -86,15 +85,11 @@ In this section you can map your AppsFlyer events with Game Analytics via postba
 4. Click **Add Event** to add an SDK Event to the list
 5. Complete the following parameters:
 
-
-
 | Parameter Name | Description |
 | --- | --- |
 | **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated with your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
 | **Partner Event Identifier** | The unique name or ID of each event as defined on Game Analytics's side.  <br />Obtain the corresponding Event ID from Game Analytics and set it in the text field. |
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
-
-
 
 Click **Save**.
 
@@ -104,18 +99,28 @@ Once this configuration is saved, AppsFlyer begins sending the following data to
 * Media Source
 * Campaign name
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Attribution Links are not available for Game Analytics.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions are not available for Game Analytics.
+
+</Accordion>

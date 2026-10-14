@@ -35,7 +35,6 @@ Brands operate in an ecosystem encompassing both web and mobile properties. As a
 > * The web app entity was added to AppsFlyer on February 9, 2022. Prior to that date, you entered the brand bundle domain as a separate setting when creating a brand bundle. Now, you first create a web app that defines the domain, then include that web app when creating a bundle.
 > * If you had existing brand bundles on February 9, 2022, you will see that you now have a web app on the **My apps** page corresponding to each of those bundles. **Rest assured!** Your web traffic is being attributed just as it was before, and there have been no other changes to PBA dashboards or raw data reports.
 
-
 **Brand bundle basics:**
 
 * A brand bundle contains exactly 1 web app *(required)* and 1 or more mobile apps *(optional).*
@@ -55,20 +54,18 @@ Access the **Brand Bundles** page to manage brand bundles and their settings:
 
 To add, delete, or manage brand bundles, select one of these options from the **Brand Bundles** page:
 
-
-
 | Option | Details |
 | --- | --- |
 | Add a brand bundle | Opens the **Create bundle** page  <br />Follow the [instructions below](/docs/pba-brand-bundles-and-settings#add-brand-bundle) to create a new bundle. |
 | PBA dashboard | Opens the brand dashboard |
 | Brand bundle ID | Copies brand bundle ID to the clipboard |
 | Web dev key | Copies the web dev key to the clipboard |
-| Select an existing bundle to update brand bundle settings and options | Options available:<br /><br />* Mark events as conversion events:<br />  * [Web event settings](/docs/pba-brand-bundles-and-settings#web-event-settings)<br />  * [In-app event settings](/docs/pba-brand-bundles-and-settings#inapp-event-settings)<br />* [Domain exclusion](/docs/pba-brand-bundles-and-settings#domain-exclusion)<br />* [Google Ads integration](/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba) |
+| Select an existing bundle to update brand bundle settings and options | Options available:<ul><li>Mark events as conversion events:<ul><li>[Web event settings](/docs/pba-brand-bundles-and-settings#web-event-settings)</li><li>[In-app event settings](/docs/pba-brand-bundles-and-settings#inapp-event-settings)</li></ul></li><li>[Domain exclusion](/docs/pba-brand-bundles-and-settings#domain-exclusion)</li><li>[Google Ads integration](/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba)</li></ul> |
 | Delete icon | [Deletes the selected brand bundle](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle) (after you confirm your decision to do so) |
 
+<div id="add-brand-bundle" />
 
-
-### Add brand bundle
+<Accordion title="Add brand bundle">
 
 Before proceeding, make sure that all the apps you want to include in the bundle have been added to your account. Once a brand bundle has been created, the apps it includes can not be changed without [deleting the bundle](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle) and recreating it.
 
@@ -93,8 +90,11 @@ Before proceeding, make sure that all the apps you want to include in the bundle
 > * The web app selected for inclusion in the bundle does not point to a valid URL.
 > * The web app and an Android mobile app selected for inclusion in the bundle have the same app ID.
 
+</Accordion>
 
-### Web event settings
+<div id="web-event-settings" />
+
+<Accordion title="Web event settings">
 
 There are two types of web events: **standard** and **conversion**. To focus and prioritize your optimization efforts, set some events as conversion events.
 
@@ -111,7 +111,11 @@ There are two types of web events: **standard** and **conversion**. To focus and
 3. Turn on **Mark as conversion event**as required.
 4. Click **Update bundle.**
 
-### In-app event settings
+</Accordion>
+
+<div id="inapp-event-settings" />
+
+<Accordion title="In-app event settings">
 
 In-app events having revenue are marked as conversion events [Default]. **Note!** If you change the default events, you must explicitly mark in-app revenue events yourself.
 
@@ -123,23 +127,23 @@ In-app events having revenue are marked as conversion events [Default]. **Note!*
 3. Turn on **Mark as conversion event**as required.
 4. Click **Update bundle.**
 
-### Domain exclusion
+</Accordion>
+
+<div id="domain-exclusion" />
+
+<Accordion title="Domain exclusion">
 
 A domain exclusion mechanism, part of [PBA media source rules,](/docs/pba-media-source-attribution-rules) is implemented to prevent:
 
 * Self-attribution: In other words, AppsFlyer will not attribute events to the website defined in the web app itself and to domains you specify are associated with that website.
 * Attributing or recording events associated with domains that aren't part of your brand but participate in the user flow (for example, payment gateways).
 
-
-
 | Domain type | Description | Impact of exclusion |
 | --- | --- | --- |
 | Primary | The domain of the **web app** included in the brand bundle. This includes sub-domains.<br /><br />For example, if your domain is mydomain.co.za then subdomains like a.mydomain.co.za, b.mydomain.co.za are excluded automatically. <br /><br />The domain of a web app cannot be changed without [deleting](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle) and recreating the web app. (This also means deleting the bundle in which the web app is included). | No self-attribution |
 | Internal | List other domains forming part of your brand, for example, mydomain.com, mydomain.in, mydomain.co.ng, abc.com | No self-attribution |
 | External (listed by you) | Domains used by your website directly, but not part of the brand. These include payment gateways, payment processing sites, etc. | [Visits are disregarded](/docs/pba-media-source-attribution-rules#visit-recognition-rules) |
-| External (listed by AppsFlyer) | Domains listed by AppsFlyer and always excluded.<br /><br />* PayPal<br />* Stripe<br />* Adyen<br /><br />The list of automatic domains cannot be edited. | [Visits are disregarded](/docs/pba-media-source-attribution-rules#visit-recognition-rules) |
-
-
+| External (listed by AppsFlyer) | Domains listed by AppsFlyer and always excluded.<ul><li>PayPal</li><li>Stripe</li><li>Adyen</li></ul>The list of automatic domains cannot be edited. | [Visits are disregarded](/docs/pba-media-source-attribution-rules#visit-recognition-rules) |
 
 **To exclude internal or external domains:**
 
@@ -152,23 +156,33 @@ A domain exclusion mechanism, part of [PBA media source rules,](/docs/pba-media-
 6. Click **Add domain.**  
    It takes one hour for the exclusion to take effect.
 
+</Accordion>
+
 ## FAQ
 
-### Can I include the same app in more than one bundle?
+<Accordion title="Can I include the same app in more than one bundle?">
 
 **No.** Once an app is added to a bundle, it can't be added to another bundle.
 
-### Can I add or remove apps after creating a bundle?
+</Accordion>
+
+<Accordion title="Can I add or remove apps after creating a bundle?">
 
 **No.** Once a bundle has been created, the apps included in it cannot change.
 
 **Why?** Each app has its own data, and AppsFlyer uses this data to analyze the user journey across platforms (web and app). If an app changed, this would involve a different set of data that is not compatible with the previous data.
 
-### How do I add or remove (delete) apps from a bundle?
+</Accordion>
+
+<Accordion title="How do I add or remove (delete) apps from a bundle?">
 
 To change the bundle in which an app is included, delete the original bundle and create a new one that includes the app.
 
-### What happens if I delete a bundle?
+</Accordion>
+
+<div id="what-happens-if-i-delete-a-bundle" />
+
+<Accordion title="What happens if I delete a bundle?">
 
 #### faqs what happens if i delete a bundle
 
@@ -179,14 +193,20 @@ If you delete a bundle:
 
   **Why?** A new bundle uses a different web dev key so, even if it includes the same apps, the original bundle is not restored.
 
-### Why are certain apps not available for me to add to a bundle?
+</Accordion>
+
+<Accordion title="Why are certain apps not available for me to add to a bundle?">
 
 * **Admins:** If you can't select an app when creating a bundle, be sure the app has been added to your AppsFlyer account and is not included in another bundle.
 * **Other account users:** Check with an account admin to ensure you have the required role and permissions to access to the apps you are trying to add.
 
-### Why do I get the "We couldn't find that Page" error when I try to view or create a brand bundle?
+</Accordion>
+
+<Accordion title="Why do I get the 'We couldn't find that Page' error when I try to view or create a brand bundle?">
 
 You probably didn’t subscribe to PBA. Please contact your CSM or [hello@appsflyer.com](mailto:hello@appsflyer.com) to upgrade your package.
+
+</Accordion>
 
 > 📘 **See also**
 >

@@ -26,7 +26,7 @@ x-zendesk:
 
 ## Integrating Google Ads campaign data in PBA
 
-Connect your Google Ads account (1 or more) to your brand bundle**.** Google Ads campaign data improves dashboard analytics capabilities and further enriches raw data reports.
+Connect your Google Ads account (1 or more) to your brand bundle. Google Ads campaign data improves dashboard analytics capabilities and further enriches raw data reports.
 
 * If the **gclid** is present on a web visit URL, PBA gets the following data from Google using GCLID. Note! The GCLID solution is not officially supported by Google Ads, which may deprecate the parameter in the future.
 * The integration enriches the following fields. Field availability depends on the PBA dashboard and raw data reports.
@@ -63,8 +63,6 @@ On the Google Ads integration page, the following actions are available:
 * Enable/disable the connection
 
 ### PBA—Google Ads status messages
-
-
 
 | Status | Meaning | Remarks/action required |
 | --- | --- | --- |

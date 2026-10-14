@@ -38,14 +38,13 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
 
 > 📘 **Note**
 >
 > As an ALL-Installs network, LINE prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to LINE. This can only be performed by the account owner.
-
 
 ### Activate partner
 
@@ -70,7 +69,6 @@ You can connect multiple Line Ads accounts and apps to AppsFlyer by manually add
 >
 > Parameters existing in both the attribution link and under the **General settings** lead to conflicts. To avoid this, see the **Parameter priority logic** described below before adding parameters to the attribution link.
 
-
 **Parameter priority logic**
 
 * When both parameter types, account ID and app ID (line\_ad\_account\_id, line\_ad\_app\_id), are included in the attribution link, any corresponding ID set in the General settings gets overridden.
@@ -89,7 +87,6 @@ You can connect multiple Line Ads accounts and apps to AppsFlyer by manually add
 > ```
 > https://app.appsflyer.com/id123456789?pid=example_int;...line_ad_account_id=A123456789123&line_ad_app_id=1234567891234&...;redirect=false
 > ```
-
 
 ### Default postbacks
 
@@ -112,15 +109,11 @@ In this section you can map your AppsFlyer events with LINE Ads Platform via pos
 6. Click ***Add Event***to add additional Event Names.
 7. Complete the following parameters:
 
-
-
 | Parameter Name | Description |
 | --- | --- |
 | **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated with your app or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
 | **Partner Event Identifier** | The unique name or ID of each event as defined on LINE Ads Platform's side.  <br />Obtain the corresponding Event ID from LINE Ads Platform and set it in the text field. |
 | **Send Revenue** | **When unchecked** - Send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - Send all the parameters including the revenue value (if it exists in the event). |
-
-
 
 ### Custom in-app events mapping
 
@@ -128,23 +121,33 @@ AppsFlyer allows you to map any custom in-app event to send to LINE, by using th
 
 The event name and the event value (including the event parameters) configured in the SDK are forwarded to LINE, as is.
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
-[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters)**.**
+[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
 
-**To generate an attribution link,**follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 [Follow these instructions](https://lineforbusiness.com/th-en/service/line-ads/manual) to activate the attribution link in LINE Ads Platform.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not supported by this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported by this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 No permission configurations are available for LINE Ads Platform.
+
+</Accordion>

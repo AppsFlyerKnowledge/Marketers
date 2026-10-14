@@ -41,20 +41,18 @@ You can work on these tasks simultaneously, meaning the marketers, developers, a
 * Complete all of the tasks before releasing your updated app with the AppsFlyer SDK.
 * Pause existing marketing campaigns before performing the device ID migration.
 
-
-
 <table><thead><tr><th>Step</th><th>Who's involved</th><th>Estimated time</th><th>Remarks</th></tr></thead><tbody><tr><td>1. Create an AppsFlyer account</td><td>Marketer/AppsFlyer dashboard user</td><td>2 hours</td><td> </td></tr><tr><td>2. Add the app in AppsFlyer</td><td>Marketer/AppsFlyer dashboard user</td><td>2 hours</td><td> </td></tr><tr><td>3. Integrate the SDK</td><td>App developers</td><td>1 day + 1 week of testing and iterating</td><td><ul><li><strong>Recommended</strong>: Integrate the AppsFlyer SDK in a pre-production app for testing.</li><li>Production app must be updated in app stores after all other tasks are completed.</li></ul></td></tr><tr><td>4. Migrate devices (optional)</td><td>Data engineer</td><td>1-2 weeks</td><td rowspan="2"><ul><li>Consider pausing existing campaigns before migration, and resuming them after app version is updated. </li><li>Consider repeating device migration on the final migration date to ensure complete coverage. </li></ul></td></tr><tr><td>5. Migrate campaigns</td><td>Marketer/UA manager</td><td>1-3 days for each media source</td></tr><tr><td>6. Set up data reporting</td><td>Data engineer</td><td>3-6 weeks</td><td> </td></tr></tbody></table>
 
-
-
-### Step 1. Create an AppsFlyer account
+<Accordion title="Step 1. Create an AppsFlyer account">
 
 **To create an AppsFlyer account**:
 
 1. [Create an AppsFlyer account](https://www.appsflyer.com/get-started/).
 2. [Add account users with appropriate permissions](/docs/user-management).
 
-### Step 2. Add your app
+</Accordion>
+
+<Accordion title="Step 2. Add your app">
 
 **To add your app in AppsFlyer**:
 
@@ -62,7 +60,9 @@ You can work on these tasks simultaneously, meaning the marketers, developers, a
 2. [Optional] Change the default 90-day [re-attribution window](/docs/set-up-re-attribution-window) to align with your definition of active users.
 3. As part of the app onboarding wizard in AppsFlyer, prepare and send an email to your developer with instructions and tasks for SDK integration and in-app event mapping.
 
-### Step 3. Integrate the SDK
+</Accordion>
+
+<Accordion title="Step 3. Integrate the SDK">
 
 The AppsFlyer SDK integrated into the app is the link between the app and the AppsFlyer platform. It reports app installs, app opens, in-app events, and so on.
 
@@ -79,9 +79,8 @@ The AppsFlyer SDK integrated into the app is the link between the app and the Ap
 
 | Option | What happens after  <br />updated app version release | Impact |
 | --- | --- | --- |
-| Remove the Adjust SDK (recommended) | Only AppsFlyer records new installs and updating users.  <br />Adjust still shows events performed by users, until the users update their app too. | * Fast transition.<br />* No double attribution. |
-| Keep the Adjust SDK for a transition period | AppsFlyer and Adjust attribute new installs and report events. At a later date, remove the Adjust SDK. | * Data validation is possible. Meaning, you can compare data from AppsFlyer and Adjust.<br />* Double attribution, which may cause double charges with ad networks. See example below.<br />* Higher workload. |
-
+| Remove the Adjust SDK (recommended) | Only AppsFlyer records new installs and updating users.  <br />Adjust still shows events performed by users, until the users update their app too. | <ul><li>Fast transition.</li><li>No double attribution.</li></ul> |
+| Keep the Adjust SDK for a transition period | AppsFlyer and Adjust attribute new installs and report events. At a later date, remove the Adjust SDK. | <ul><li>Data validation is possible. Meaning, you can compare data from AppsFlyer and Adjust.</li><li>Double attribution, which may cause double charges with ad networks. See example below.</li><li>Higher workload.</li></ul> |
 
 4. After all other tasks in this migration article are completed, release the app version with the AppsFlyer SDK to the market. New users are attributed by AppsFlyer.   
    **Note**:
@@ -89,7 +88,9 @@ The AppsFlyer SDK integrated into the app is the link between the app and the Ap
    * Your Android app may exist in unofficial APK sites, even if you don't know it (search the web for your app's package name to find out). APK sites take some time to update to the latest version, so they may bring organic users, which install old versions without AppsFlyer SDK.
    * App update rollouts in the app stores can take a couple of days to fully complete. Users installing during this phase may still get the previous version.
 
-### Step 4. Migrate devices—optional
+</Accordion>
+
+<Accordion title="Step 4. Migrate devices — optional">
 
 Device migration is the process of uploading a list of your existing user device IDs (IDFA, IDFV, GAID) into AppsFlyer. (If you don't have all the device IDs needed, you can contact your CSM to help guide you through the migration process using CUID.) You should perform this process before releasing the new app version, which will include the AppsFlyer SDK. There are two options when migrating devices, [attributed](/docs/migrate-from-adjust-to-appsflyer#attributed-migration) or [non-attributed migration](/docs/migrate-from-adjust-to-appsflyer#nonattributed-migration).
 
@@ -100,7 +101,6 @@ Device migration solves data issues associated with existing app users who downl
 > * A new user clicks on an ad on the Facebook app and installs your app on June 15.
 > * On June 24 the user updates the app to the version with the AppsFlyer SDK, and launches. For AppsFlyer, this is a new user, that needs to be attributed in real time.
 > * AppsFlyer queries Meta ads with the user device ID. Because the user is still within the Meta ads 28-day lookback window, Meta ads self-attributes the user. This causes a double charge to the app owner for the same user.
-
 
 Once you migrate devices, data reflects in AppsFlyer as follows:
 
@@ -114,7 +114,6 @@ Once you migrate devices, data reflects in AppsFlyer as follows:
 >
 > If the app is not opened within 180 days from the migration date, all of the migrated device data is deleted. Consequently, if the app is opened after the 180-day period, a new install will be recorded.
 
-
 **To migrate devices:**
 
 1. Decide which user population to migrate. You can migrate all existing users (which may prevent you from getting accurate re-attribution data from AppsFlyer), or users that only recently installed your app (which may lead to double charges of somewhat older users).  
@@ -125,7 +124,9 @@ Once you migrate devices, data reflects in AppsFlyer as follows:
 4. Send your AppsFlyer CSM the CSV.  
    Your CSM will migrate the device IDs to AppsFlyer.
 
-### Step 5. Migrate campaigns
+</Accordion>
+
+<Accordion title="Step 5. Migrate campaigns">
 
 Switch existing marketing campaigns to AppsFlyer to enable AppsFlyer attribution, and avoid duplicate charges and the loss of attribution data.
 
@@ -145,7 +146,6 @@ SRNs reply to Mobile Measurement Partners (MMPs) when queried about engagements 
 >
 > * SRNs can run multiple MMPs (except Meta ads and Twitter).
 > * Meta ads cannot de-duplicate in-app events.
-
 
 #### Non-SRN ad networks
 
@@ -182,7 +182,9 @@ For SKAdNetwork (SKAN) attribution, you can only have one SDK update the convers
 
 [Learn about setting up the SKAN conversion value in AppsFlyer.](/docs/skan-conversion-studio)
 
-### Step 6. Set up data reporting
+</Accordion>
+
+<Accordion title="Step 6. Set up data reporting">
 
 You can get [raw](/docs/raw-data-reporting-apis) and [aggregate](/docs/analytics-and-aggregate-reporting-apis) report data from AppsFlyer using a number of methods. Familiarize yourself with the methods and set up the ones that are relevant to you.
 
@@ -200,29 +202,29 @@ Before migration, your systems store your attribution data from Adjust according
 
 * Contact your AppsFlyer CSM for help in quickly adapting/migrating your report data structures from Adjust to AppsFlyer.
 
+</Accordion>
+
 ## Additional information
 
-### Attributed migration
+<div id="attributed-migration" />
+
+<Accordion title="Attributed migration">
 
 Devices migrated to AppsFlyer with this method have their in-app events, and sessions recorded and displayed according to the media source reported by the previous attribution vendor, and according to the ad networks' data retention policies.
 
 #### Attributed device migration CSV structure
 
-
-
 | Column  <br />name | Description | Mand-atory | Examples |
 | --- | --- | --- | --- |
-| app\_id | App ID as it appears in AppsFlyer dashboard | Yes | * Android: com.great.app1<br />* iOS: id123456789 |
-| platform | Device platform: ios or android | Yes | * ios<br />* android |
-| device\_id | * Android: gaid or android\_id<br />* iOS: IDFV (recommended, if available) or IDFA<br />* Do not duplicate the same combination of device ID and app ID in multiple rows. If duplication occurs, the last occurrence in the file is used. | Yes | * **gaid** (lower case): 9c9a82fb-d5de-4cd1-90c3-527441c11828<br />* **android\_id** (lower case): f35aea8908254891<br />* **IDFV** (upper case): A7328D98-A973-402A-8B87-D22A8611F2AF<br />* **IDFA** (upper case): 9876F1SS-2983-3855-27RR-2R626772VFNB |
-| id\_type | * Android:advertiserId (also supports amazon\_aid)j, android\_id<br />* iOS:idfa or idfv<br />* Currently, other identifiers, OAID, IMEI are not supported.   <br />  Use non-attributed migration for Android users, which are not from Google Play. | Yes | * advertiserId<br />* android\_id<br />* idfa<br />* idfv |
+| app\_id | App ID as it appears in AppsFlyer dashboard | Yes | <ul><li>Android: com.great.app1</li><li>iOS: id123456789</li></ul> |
+| platform | Device platform: ios or android | Yes | <ul><li>ios</li><li>android</li></ul> |
+| device\_id | <ul><li>Android: gaid or android\_id</li><li>iOS: IDFV (recommended, if available) or IDFA</li><li>Do not duplicate the same combination of device ID and app ID in multiple rows. If duplication occurs, the last occurrence in the file is used.</li></ul> | Yes | <ul><li>**gaid** (lower case): 9c9a82fb-d5de-4cd1-90c3-527441c11828</li><li>**android\_id** (lower case): f35aea8908254891</li><li>**IDFV** (upper case): A7328D98-A973-402A-8B87-D22A8611F2AF</li><li>**IDFA** (upper case): 9876F1SS-2983-3855-27RR-2R626772VFNB</li></ul> |
+| id\_type | <ul><li>Android:advertiserId (also supports amazon\_aid)j, android\_id</li><li>iOS:idfa or idfv</li><li>Currently, other identifiers, OAID, IMEI are not supported.<br />Use non-attributed migration for Android users, which are not from Google Play.</li></ul> | Yes | <ul><li>advertiserId</li><li>android\_id</li><li>idfa</li><li>idfv</li></ul> |
 | install\_time | The original app install time with the [ISO 8601](http://joda-time.sourceforge.net/cal_iso.html) UTC format:  <br />**yyyy-mm-ddTHH:MM:SS.SSS** | No | 2018-01-22T08:45:33.412 |
-| media\_source | * Either:<br />  * AppsFlyer partner ID<br />  * Custom media source (cannot be a partner ID).<br />* To get the list of partner IDs as required by AppsFlyer:<br />  * [Enable all relevant integrated partners.](/docs/set-up-an-integrated-partner)<br />  * Run the [Get active integrations API](https://dev.appsflyer.com/hc/reference/get_v1-integrations) for a list of all active integrations.<br />  * Use the **media\_source\_name** from the API as the **media\_source** value in the CSV.<br />  * Exceptions:<br />    * For Apple Search Ads use **Apple Search Ads**.<br />    * For Twitter, use **twitter**.<br />* Format: Values are case-sensitive | Yes | Non-organic: facebook\_int, googleadwords\_int<br /><br />Organic: organic |
-| integrated\_partner | * Indicates whether the media source is an integrated partner or not. Meaning organic or custom media source.<br />* Format: Values are case sensitive | Yes | * yes<br />* no (if media\_source is custom) |
+| media\_source | <ul><li>Either:<ul><li>AppsFlyer partner ID</li><li>Custom media source (cannot be a partner ID).</li></ul></li><li>To get the list of partner IDs as required by AppsFlyer:<ul><li>[Enable all relevant integrated partners.](/docs/set-up-an-integrated-partner)</li><li>Run the [Get active integrations API](https://dev.appsflyer.com/hc/reference/get_v1-integrations) for a list of all active integrations.</li><li>Use the **media\_source\_name** from the API as the **media\_source** value in the CSV.</li><li>Exceptions:<ul><li>For Apple Search Ads use **Apple Search Ads**.</li><li>For Twitter, use **twitter**.</li></ul></li></ul></li><li>Format: Values are case-sensitive</li></ul> | Yes | Non-organic: facebook\_int, googleadwords\_int<br /><br />Organic: organic |
+| integrated\_partner | <ul><li>Indicates whether the media source is an integrated partner or not. Meaning organic or custom media source.</li><li>Format: Values are case sensitive</li></ul> | Yes | <ul><li>yes</li><li>no (if media\_source is custom)</li></ul> |
 | campaign | For more granular attribution details, supply the original campaign name.<br /><br />Format: String | No |  |
 | campaign\_id | For more granular attribution details, supply the original campaign id.<br /><br />Format: String no spaces permitted | No |  |
-
-
 
 **CSV file rules:**
 
@@ -239,20 +241,20 @@ Devices migrated to AppsFlyer with this method have their in-app events, and ses
 
 [See sample CSV](https://docs.google.com/spreadsheets/d/e/2PACX-1vQPvcJ3zXjsB5Zrn8vqD_-QXFPjguDU9Y8_LfK6-2eOgdlDltmFdGoM-94Ouw-D327oMp9p0ZbFFawF/pub?gid=0&single=true&output=csv)
 
-### Non-attributed migration
+</Accordion>
+
+<div id="nonattributed-migration" />
+
+<Accordion title="Non-attributed migration">
 
 Devices migrated to AppsFlyer with this method are recorded (but do not display) as organic users. Their in-app events and sessions are also recorded and displayed as organic.
 
 #### Non-attributed device migration CSV file structure
 
-
-
 | Option | Columns | When to use | Example |
 | --- | --- | --- | --- |
-| 1 | App ID + IDFA/GAID/IDFV | * If all your Android users have GAID identifiers.<br />* iOS only users | [![device_migration_file_option_1.png](https://files.readme.io/278f509a6078439feaddee429ebdd59b6098fa9a7ca1803da0f1520019cd1006-30563700100497.png)](https://files.readme.io/278f509a6078439feaddee429ebdd59b6098fa9a7ca1803da0f1520019cd1006-30563700100497.png) |
-| 2 | App ID + Device ID + Device ID type | * If some of your Android users have only IMEI or Android ID, but not GAID (out-of-store markets, Android versions below 4.4.2).<br />* Android ID needs to have a hexadecimal format.<br /><br />**Note**:<br /><br />* Use the exact strings for the **ID type** column: advertiserId (also supports amazon\_aid), idfa, idfv, android\_id, imei.<br />* If you use android\_id or imei, and later AppsFlyer receives a better identifier, a new attribution may be recorded. | [![device_migration_file_option_2.png](https://files.readme.io/40459c68eecf4e402178c2a5b93fe94d8ae2f2dd9ccebc376387a60734612fa3-30563700109969.png)](https://files.readme.io/40459c68eecf4e402178c2a5b93fe94d8ae2f2dd9ccebc376387a60734612fa3-30563700109969.png) |
-
-
+| 1 | App ID + IDFA/GAID/IDFV | <ul><li>If all your Android users have GAID identifiers.</li><li>iOS only users</li></ul> | [![device_migration_file_option_1.png](https://files.readme.io/278f509a6078439feaddee429ebdd59b6098fa9a7ca1803da0f1520019cd1006-30563700100497.png)](https://files.readme.io/278f509a6078439feaddee429ebdd59b6098fa9a7ca1803da0f1520019cd1006-30563700100497.png) |
+| 2 | App ID + Device ID + Device ID type | <ul><li>If some of your Android users have only IMEI or Android ID, but not GAID (out-of-store markets, Android versions below 4.4.2).</li><li>Android ID needs to have a hexadecimal format.</li></ul>**Note**:<ul><li>Use the exact strings for the **ID type** column: advertiserId (also supports amazon\_aid), idfa, idfv, android\_id, imei.</li><li>If you use android\_id or imei, and later AppsFlyer receives a better identifier, a new attribution may be recorded.</li></ul> | [![device_migration_file_option_2.png](https://files.readme.io/40459c68eecf4e402178c2a5b93fe94d8ae2f2dd9ccebc376387a60734612fa3-30563700109969.png)](https://files.readme.io/40459c68eecf4e402178c2a5b93fe94d8ae2f2dd9ccebc376387a60734612fa3-30563700109969.png) |
 
 **CSV file rules:**
 
@@ -267,3 +269,5 @@ Devices migrated to AppsFlyer with this method are recorded (but do not display)
 * Up to 25 million rows permitted.
 
 [See sample CSV](https://docs.google.com/spreadsheets/d/e/2PACX-1vQPvcJ3zXjsB5Zrn8vqD_-QXFPjguDU9Y8_LfK6-2eOgdlDltmFdGoM-94Ouw-D327oMp9p0ZbFFawF/pub?gid=935533759&single=true&output=csv)
+
+</Accordion>

@@ -32,7 +32,7 @@ Follow the onboarding instructions below to get the ROI360 tools for cost, ad re
 
 **Tip**! To onboard quickly, prioritize one app and complete all steps to get ROI360 operational. You can focus on cost, ad revenue, or in-app purchase and subscription revenue, but ensure you finish onboarding for one app first.
 
-### Cost onboarding
+<Accordion title="Cost onboarding">
 
 ![](https://files.readme.io/0e7102766b3b7cdba3f301ca89c51edf8e4bd2ec88e09bc912ce3c1436c43fcb-26137252929681.png)
 
@@ -45,18 +45,16 @@ After completing the cost onboarding, you'll be able to:
 * For ROI360 Advanced users, stream detailed cost data to your BI system up to 4 times a day.
 * Manage agency fees and precisely measure overall campaign costs for financial oversight and transparency.
 
-
-
 | Task | Purpose | Actions required | Who's involved |
 | --- | --- | --- | --- |
 | Connect cost API integrations for all ad networks you work with. | Get cost data from every source tied to attribution at the most granular level. | [Enable Cost API](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api) for each ad network in the AppsFlyer UI. **Note**: Before integrating, you need to get the credentials/login info for each ad network. | Marketer |
 | Set up Cost ETL reports. (Available to ROI360 Advanced subscribers) | View campaign cost data with the best granularity available per media source, updated up to 4 times per day. | Set up Cost ETL reports for [AWS S3](/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl-for-aws-s3) or [GCS](/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl-for-gcs). | Marketer/BI developer |
-| Upload cost data via Cost Import. | Get cost data:<br /><br />* For ad networks that don’t report cost via API or click.<br />* When you use OneLink links to advertise via influencers, etc.<br />* When you need to correct cost data. | Upload or email cost data files using [Cost Import](/docs/import-cost-data). | Marketer |
+| Upload cost data via Cost Import. | Get cost data:<ul><li>For ad networks that don’t report cost via API or click.</li><li>When you use OneLink links to advertise via influencers, etc.</li><li>When you need to correct cost data.</li></ul> | Upload or email cost data files using [Cost Import](/docs/import-cost-data). | Marketer |
 | Configure agency fees. | If you use agencies, get the total campaign cost, including the percentage fees agencies charge for traffic. | Create [agency fee rules](/docs/incorporate-agency-fees-into-campaign-costs) for each agency you work with. | Marketer |
 
+</Accordion>
 
-
-### Ad revenue onboarding
+<Accordion title="Ad revenue onboarding">
 
 ![](https://files.readme.io/877e4abddd466bbe7dfa31f7fffb2f17fe3e6419f3bf6345e9d619253126b0e6-26137252932369.png)
 
@@ -68,19 +66,17 @@ After completing the ad revenue onboarding, including connecting to the mediatio
 * Stream data to your BI system with granularity and freshness according to your needs.
 * Enhance campaign performance by having UA networks optimize based ad revenue metrics.
 
-
-
 | Task | Purpose | Actions required | Who's involved |
 | --- | --- | --- | --- |
 | Decide your ad revenue attribution integration type. | Understand the benefits of each integration type and decide which one best suits your business requirements. | Learn about the different [ad revenue integration types](/docs/roi360-guide-ad-revenue-attribution#integration-types-for-ad-revenue-attribution) and choose 1. | Marketer |
 | Connect to all ad revenue mediation and monetization networks you work with. | Get ad revenue data from your mediation or monetization networks. | [Connect ad revenue integrations](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners) in the AppsFlyer UI. | Marketer |
-| Implement the impression-level ad revenue SDK API. | * Relevant for SDK-level integration types.<br />* Get ad revenue data with near-real-time data freshness. | 1. Integrate the [ROI360 AppsFlyer ad revenue SDK API](/docs/integrate-the-roi360-ad-revenue-sdk-api).<br />2. To see ad revenue data in the SKAN dashboard, turn on [SKAdNetwork server-to-server support](/docs/skan-conversion-studio#report-events-by-servertoserver-api). | Developer/Marketer |
-| Share ad revenue data with UA partners. | UA ad networks can use the ad revenue data to optimize their UA campaigns. | 1. Learn about the 2 [methods to share ad revenue data with UA partners](/docs/share-ad-revenue-data-with-partners#about-sharing-ad-revenue-data-with-ua-partners).<br />2. [Implement the method](/docs/share-ad-revenue-data-with-partners#procedures) you choose. | Marketer |
+| Implement the impression-level ad revenue SDK API. | <ul><li>Relevant for SDK-level integration types.</li><li>Get ad revenue data with near-real-time data freshness.</li></ul> | <ol><li>Integrate the [ROI360 AppsFlyer ad revenue SDK API](/docs/integrate-the-roi360-ad-revenue-sdk-api).</li><li>To see ad revenue data in the SKAN dashboard, turn on [SKAdNetwork server-to-server support](/docs/skan-conversion-studio#report-events-by-servertoserver-api).</li></ol> | Developer/Marketer |
+| Share ad revenue data with UA partners. | UA ad networks can use the ad revenue data to optimize their UA campaigns. | <ol><li>Learn about the 2 [methods to share ad revenue data with UA partners](/docs/share-ad-revenue-data-with-partners#about-sharing-ad-revenue-data-with-partners).</li><li>[Implement the method](/docs/share-ad-revenue-data-with-partners#procedures) you choose.</li></ol> | Marketer |
 | Set up Revenue ETL reports. (Available to ROI360 Advanced subscribers) | Stream and view ad revenue data in your BI with the best granularity available updated multiple times per day. | Set up [ad revenue ETL reports](/docs/revenue-etl-reports). | Marketer/BI developer |
 
+</Accordion>
 
-
-### In-app purchase and subscription revenue onboarding
+<Accordion title="In-app purchase and subscription revenue onboarding">
 
 ![](https://files.readme.io/811c90ec42465994455fe42be8400b4ebb94ab6d1a5703bc9a77251aba95ed3b-26137252934545.png)
 
@@ -92,9 +88,9 @@ After completing the revenue onboarding, including setting up store notification
 * Enjoy seamless, accurate revenue reporting with no further developer efforts required; ROI360 will handle recording all in-app revenue events for you.
 * Get accurate revenue measurements to effectively manage strategic growth initiatives across your portfolio.
 
-
-
 | Task | Purpose | Actions required | Who's involved |
 | --- | --- | --- | --- |
-| Implement the ROI360 in-app purchase and subscription revenue solution. | Automatically validate and measure revenue from in-app purchases, auto-renewable subscriptions, and related events that come through either the App Store (iOS) or Google Play (Android). | Follow [these instructions](/docs/purchase-and-subscription-validation-overview) to:<br /><br />1. Set up integration with Google Play.<br />2. Set up integration with iOS App Store.<br />3. Integrate the AppsFlyer purchase SDK connector.<br />4. Test in-app purchase and subscription revenue measurement.<br />5. Release the app versions with the SDK connector. | Developer/Marketer |
+| Implement the ROI360 in-app purchase and subscription revenue solution. | Automatically validate and measure revenue from in-app purchases, auto-renewable subscriptions, and related events that come through either the App Store (iOS) or Google Play (Android). | Follow [these instructions](/docs/purchase-and-subscription-validation-overview) to:<ol><li>Set up integration with Google Play.</li><li>Set up integration with iOS App Store.</li><li>Integrate the AppsFlyer purchase SDK connector.</li><li>Test in-app purchase and subscription revenue measurement.</li><li>Release the app versions with the SDK connector.</li></ol> | Developer/Marketer |
 | Set up Revenue ETL reports. (Available to ROI360 Advanced subscribers) | Stream and view revenue data in your BI with the best granularity available updated multiple times per day. | Set up[revenue ETL reports](/docs/revenue-etl-reports). | Marketer/BI developer |
+
+</Accordion>

@@ -38,7 +38,7 @@ To configure your campaigns with Unity Ads, follow the steps below.
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
-## Integration tab
+<Accordion title="Integration tab">
 
 ### Activate partners
 
@@ -80,7 +80,6 @@ Send automatic postbacks to Unity Ads following user installs. Use this section 
 >
 > As an all-installs network, Unity Ads prefers to receive postbacks for all new installs of your app from any source, and they recommended selecting **All media sources including organic** to send all install postbacks to Unity Ads.
 
-
 ### In-app events settings
 
 Map AppsFlyer events with the partner via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant with target validation rules).
@@ -91,19 +90,16 @@ Map AppsFlyer events with the partner via postbacks. If postback sending is enab
 
 1. Enter the **game\_id**. Make sure the game\_id is correct and is the same as used for install attribution.
 2. Turn on **In-app event postbacks**.
-3. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).
+3. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
 4. Click **Add event** to add an SDK or server-to-server event to the list.
 5. Complete the following parameters:
 
-
-
 | Parameter Name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.  <br />**Tip**: Don't see the event you are looking for?<br /><br />* Make sure to activate the event on a device with a non-organic installation and recheck.<br />* Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events) |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<br /><br />* **Text field:** Get the corresponding event ID from the partner.<br />* **Drop-down box:** Select the most suitable pre-defined AppsFlyer event.<br />* **As is**: Send the events as they are, without name mapping. |
-| **for users from** | Select the sending option for the event:<br /><br />* **This partner only**: send postbacks only when this event is attributed to this partner.<br />* **All media sources, including organic**: send postbacks for events attributed to any partner, as well as organic events. According to Unity Ads, this option is recommended. |
-| **including** | * **No data (default)**: send only the event itself without the event value.<br />* **Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event). According to Unity Ads, this option is recommended.<br />* **Values without revenue**: send all the parameters **excluding** the revenue value. |
-
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
+| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
+| **for users from** | Select the sending option for the event:<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources, including organic**: send postbacks for events attributed to any partner, as well as organic events. According to Unity Ads, this option is recommended.</li></ul> |
+| **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event). According to Unity Ads, this option is recommended.</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
 
 > 📘 **Important!**
 >
@@ -116,19 +112,20 @@ Map AppsFlyer events with the partner via postbacks. If postback sending is enab
 > * **Event name:** af\_ad\_revenue
 > * **Mapped to:** ad\_revenue
 
-
-## Attribution link tab
+<Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
-[More about attribution link structure and parameters](/docs/about-link-structure-and-parameters)**.**
+[More about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
 
-**To generate an attribution link,**follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 **Notes:**
 
 * When the target audience of an Android app includes children, Unity sends zeroed-out advertising IDs.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost on the attribution link isn't supported. AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. 
 
@@ -145,7 +142,9 @@ Cost on the attribution link isn't supported. AppsFlyer gets cost details by API
 
 [View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 This section is relevant if you are acting as a publisher, displaying ads of the partner to your users. As such, you would certainly like to measure the engagement of your users acquired from different sources, to find the most profitable sources for you.
 
@@ -153,7 +152,13 @@ This section is relevant if you are acting as a publisher, displaying ads of the
 
 * Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant Unity Ads to perform certain actions. Note that even if attribution is disabled for Unity Ads, the permissions tab is active and you can grant Unity Ads permissions.  
 Learn more about [the permissions you can grant](/docs/set-up-an-integrated-partner#permissions-tab).
+
+</Accordion>
+
+</Accordion>

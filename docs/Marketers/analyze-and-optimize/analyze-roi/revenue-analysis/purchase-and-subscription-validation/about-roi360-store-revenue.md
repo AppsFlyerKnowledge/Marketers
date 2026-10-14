@@ -30,9 +30,9 @@ ROI360 store revenue is AppsFlyer’s premium solution for complete and accurate
 
 | Feature | Details |
 | --- | --- |
-| Revenue measurement scope | * Revenue from all in-app purchases of products and subscriptions managed through App Store Connect (iOS) and Google Play Console (Android)<br />* Refunds<br />* Pending and deferred transaction revenue (Android)<br />* Subscription-related events that occur both inside and outside the app<br />* Net revenue, which accounts for store commissions and taxes |
+| Revenue measurement scope | <ul><li>Revenue from all in-app purchases of products and subscriptions managed through App Store Connect (iOS) and Google Play Console (Android)</li><li>Refunds</li><li>Pending and deferred transaction revenue (Android)</li><li>Subscription-related events that occur both inside and outside the app</li><li>Net revenue, which accounts for store commissions and taxes</li></ul> |
 | Revenue validation and accuracy | The solution prevents duplicate transactions from being recorded. On iOS, this also includes preventing duplication caused by Family Sharing. ROI360 store revenue can also forward Apple App Store transaction data directly to advertisers. |
-| Data sources | * AppsFlyer purchase SDK connector for Android and iOS<br />* App Store server notifications<br />* Google Play Real-Time Developer Notifications (RTDN) |
+| Data sources | <ul><li>AppsFlyer purchase SDK connector for Android and iOS</li><li>App Store server notifications</li><li>Google Play Real-Time Developer Notifications (RTDN)</li></ul> |
 | Reporting and data availability | Revenue data is available in AppsFlyer dashboards and reports and can also be shared with partners through postbacks. |
 
 > 📘 **Warning**
@@ -75,7 +75,9 @@ The following sections provide additional details about key aspects of ROI360 in
 > To send additional custom parameters with your in-app events, configure a **custom data source** in the [Purchase SDK Connector](https://dev.appsflyer.com/hc/docs/purchase-connector). This allows you to enrich purchase and subscription events with your own business logic or metadata.
 > These parameters will be available in the raw data report's `custom_data` field.
 
-### IAP-related events and parameters
+<div id="iaprelated-events-and-parameters" />
+
+<Accordion title="IAP-related events and parameters">
 
 The following sections display the IAP-related events that AppsFlyer measures and the parameters recorded for each event. For an explanation of the included parameters, see the [event parameter dictionary](#parameter-dictionary).
 
@@ -86,7 +88,7 @@ The following sections display the IAP-related events that AppsFlyer measures an
 * Sent to partners via postbacks.
 * Supported in SKAN Conversion Studio.
 
-#### Purchase (af\_purchase)
+<Accordion title="Purchase (af_purchase)">
 
 **Description**
 
@@ -119,7 +121,9 @@ Recorded when a user makes a purchase.
 * af\_net\_revenue\_postal\_code
 * af\_net\_revenue\_factors
 
-#### Purchase free (af\_purchase\_free)
+</Accordion>
+
+<Accordion title="Purchase free (af_purchase_free)">
 
 **Description**
 
@@ -152,7 +156,9 @@ Recorded when a user makes a purchase that has no revenue amount. All revenue pa
 * af\_net\_revenue\_postal\_code
 * af\_net\_revenue\_factors
 
-#### Purchase canceled (af\_purchase\_canceled)
+</Accordion>
+
+<Accordion title="Purchase canceled (af_purchase_canceled)">
 
 **Description**
 
@@ -176,7 +182,9 @@ Recorded when a user cancels a purchase.
 * af\_store
 * af\_environment
 
-#### Purchase pending (af\_purchase\_pending)
+</Accordion>
+
+<Accordion title="Purchase pending (af_purchase_pending)">
 
 **Description**
 
@@ -200,7 +208,9 @@ Recorded when a user makes a purchase but the payment isn't yet processed.
 * af\_store
 * af\_environment
 
-#### Refund (af\_purchase\_refund)
+</Accordion>
+
+<Accordion title="Refund (af_purchase_refund)">
 
 **Description**
 
@@ -237,7 +247,9 @@ Recorded when a purchase is refunded.
 * af\_net\_revenue\_subdivision
 * af\_net\_revenue\_postal\_code
 
-#### Test purchase (af\_purchase\_sandbox\_sdk)
+</Accordion>
+
+<Accordion title="Test purchase (af_purchase_sandbox_sdk)">
 
 **Description**
 
@@ -261,7 +273,9 @@ Recorded when testing a purchase recorded via SDK in sandbox environment.
 * af\_net
 * af\_sandbox\_revenue
 
-#### Test purchase (af\_purchase\_sandbox\_s2s)
+</Accordion>
+
+<Accordion title="Test purchase (af_purchase_sandbox_s2s)">
 
 **Description**
 
@@ -285,7 +299,13 @@ Recorded when testing a purchase reported via S2S in a sandbox environment.
 * af\_net
 * af\_sandbox\_revenue
 
-### Subscription-related events and parameters
+</Accordion>
+
+</Accordion>
+
+<div id="subscriptionrelated-events-and-parameters" />
+
+<Accordion title="Subscription-related events and parameters">
 
 The following sections display the subscription-related events that AppsFlyer measures, and the parameters that are recorded for each event. See the [event parameter dictionary](#parameter-dictionary) for an explanation of the included parameters.
 
@@ -298,7 +318,7 @@ All generated events:
 
 **Note:** Depending on the user device platform, some parameters aren't always populated for an in-app event.
 
-#### Trial started (af\_ars\_trial\_started)
+<Accordion title="Trial started (af_ars_trial_started)">
 
 **Description**
 
@@ -325,7 +345,9 @@ Recorded when a subscriber begins a trial period.
 * af\_environment
 * af\_period\_type
 
-#### Trial canceled (af\_ars\_trial\_canceled)
+</Accordion>
+
+<Accordion title="Trial canceled (af_ars_trial_canceled)">
 
 **Description**
 
@@ -352,7 +374,9 @@ Recorded when a subscriber cancels the automatic renewal of the subscription dur
 * af\_environment
 * af\_period\_type
 
-#### Trial churned (af\_ars\_trial\_churned)
+</Accordion>
+
+<Accordion title="Trial churned (af_ars_trial_churned)">
 
 **Description**
 
@@ -380,7 +404,9 @@ Recorded when a subscriber churns following a trial period. This happens after a
 * af\_period\_type
 * af\_reason
 
-#### Trial converted (af\_ars\_trial\_converted)
+</Accordion>
+
+<Accordion title="Trial converted (af_ars_trial_converted)">
 
 **Description**
 
@@ -420,7 +446,9 @@ Recorded when a fully priced renewal starts, following a trial period.
 * af\_net\_revenue\_subdivision
 * af\_net\_revenue\_postal\_code
 
-#### Subscription started (af\_ars\_subscription\_started)
+</Accordion>
+
+<Accordion title="Subscription started (af_ars_subscription_started)">
 
 **Description**
 
@@ -466,7 +494,9 @@ Recorded when a discounted or a fully priced subscription starts.
 * af\_net\_revenue\_subdivision
 * af\_net\_revenue\_postal\_code
 
-#### Subscription canceled (af\_ars\_subscription\_canceled)
+</Accordion>
+
+<Accordion title="Subscription canceled (af_ars_subscription_canceled)">
 
 **Description**
 
@@ -493,7 +523,9 @@ Recorded when an auto-renewal subscription is canceled in the middle of a billin
 * af\_environment
 * af\_period\_type
 
-#### Subscription paused (af\_ars\_subscription\_paused) - Android only
+</Accordion>
+
+<Accordion title="Subscription paused (af_ars_subscription_paused) - Android only">
 
 **Description**
 
@@ -519,7 +551,9 @@ Recorded when a user pauses an active subscription.
 * af\_environment
 * af\_period\_type
 
-#### Subscription resumed (af\_ars\_subscription\_resumed)
+</Accordion>
+
+<Accordion title="Subscription resumed (af_ars_subscription_resumed)">
 
 **Description**
 
@@ -554,7 +588,9 @@ Recorded when a fully priced subscription is resumed following a churned or refu
 * af\_net\_revenue
 * af\_net\_revenue\_factors
 
-#### Subscription churned (af\_ars\_subscription\_churned)
+</Accordion>
+
+<Accordion title="Subscription churned (af_ars_subscription_churned)">
 
 **Description**
 
@@ -582,7 +618,9 @@ Recorded when a subscriber churns. This usually happens after auto-renewal cance
 * af\_period\_type
 * af\_reason
 
-#### Subscription refunded (af\_ars\_subscription\_refunded)
+</Accordion>
+
+<Accordion title="Subscription refunded (af_ars_subscription_refunded)">
 
 **Description**
 
@@ -625,7 +663,9 @@ Recorded when a subscriber is issued a refund.
 * af\_net\_revenue\_subdivision
 * af\_net\_revenue\_postal\_code
 
-#### Subscription billing grace (af\_ars\_subscription\_billing\_grace)
+</Accordion>
+
+<Accordion title="Subscription billing grace (af_ars_subscription_billing_grace)">
 
 **Description**
 
@@ -652,7 +692,9 @@ Recorded when a subscription renewal fails due to a billing issue and the subscr
 * af\_environment
 * af\_period\_type
 
-#### Subscription renewed (af\_ars\_subscription\_renewed)
+</Accordion>
+
+<Accordion title="Subscription renewed (af_ars_subscription_renewed)">
 
 **Description**
 
@@ -687,7 +729,9 @@ Recorded when an auto-renewal subscription takes place.
 * af\_net\_revenue
 * af\_net\_revenue\_factors
 
-#### Subscription changed (af\_ars\_subscription\_xgraded)
+</Accordion>
+
+<Accordion title="Subscription changed (af_ars_subscription_xgraded)">
 
 **Description**
 
@@ -722,7 +766,9 @@ Recorded when a subscriber upgrades, downgrades, or cross-grades to a different 
 * af\_net\_revenue
 * af\_net\_revenue\_factors
 
-#### Existing subscriber (af\_ars\_existing\_subscriber)
+</Accordion>
+
+<Accordion title="Existing subscriber (af_ars_existing_subscriber)">
 
 **Description**
 
@@ -752,7 +798,9 @@ Recorded when the SDK connector is notified about a subscriber in the middle of 
 * af\_cuids
 * af\_validated
 
-#### Test purchase (af\_ars\_sandbox\_sdk)
+</Accordion>
+
+<Accordion title="Test purchase (af_ars_sandbox_sdk)">
 
 **Description**
 
@@ -786,7 +834,9 @@ Recorded when testing a purchase recorded via SDK in sandbox environment.
 * af\_net
 * af\_sandbox\_revenue
 
-#### Test purchase (af\_ars\_sandbox\_s2s)
+</Accordion>
+
+<Accordion title="Test purchase (af_ars_sandbox_s2s)">
 
 **Description**
 
@@ -820,7 +870,13 @@ Recorded when testing a purchase reported via S2S in a sandbox environment.
 * af\_net
 * af\_sandbox\_revenue
 
-### Parameter dictionary
+</Accordion>
+
+</Accordion>
+
+<div id="parameter-dictionary" />
+
+<Accordion title="Parameter dictionary">
 
 Parameters for IAP and subscription events display in raw data reports either as their own columns or populated as part of the **Event value**.
 
@@ -844,38 +900,42 @@ The following table describes the raw data parameters available in ARS and VIAP 
 | Parameter | Remarks | Product |
 | --- | --- | --- |
 | af\_cancelation\_date\_ms | Date of the cancelation | IAP |
-| af\_cuids | * In the context of ARS, this parameter contains an array with all CUIDs.<br />* The array of CUIDs displays irrespective of the device IDs. Thus, the same CUIDs can display for more than one device ID. | Subscription |
-| af\_discount\_id | The offer ID presented to the user during the initial purchase. The ID is populated only when there is a discount code. | * IAP<br />* Subscription |
-| af\_discount\_type | The discount type redeemed by the user. Possible values:<br /><br />* IOS<br />  * introductory<br />  * promotional<br />  * offer\_codes<br />  * win\_back<br />* Android<br />  * intro price<br />  * one\_time\_code<br />  * vanity\_code | Subscription |
-| af\_environment | The environment from which data is received, either production or sandbox. | * IAP<br />* Subscription |
+| af\_cuids | <ul><li>In the context of ARS, this parameter contains an array with all CUIDs.</li><li>The array of CUIDs displays irrespective of the device IDs. Thus, the same CUIDs can display for more than one device ID.</li></ul> | Subscription |
+| af\_discount\_id | The offer ID presented to the user during the initial purchase. The ID is populated only when there is a discount code. | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_discount\_type | The discount type redeemed by the user. Possible values:<ul><li>IOS<ul><li>introductory</li><li>promotional</li><li>offer\_codes</li><li>win\_back</li></ul></li><li>Android<ul><li>intro price</li><li>one\_time\_code</li><li>vanity\_code</li></ul></li></ul> | Subscription |
+| af\_environment | The environment from which data is received, either production or sandbox. | <ul><li>IAP</li><li>Subscription</li></ul> |
 | af\_expires\_date\_ms | The expiration date of the current subscription billing cycle | Subscription |
-| af\_net\_revenue | Net revenue calculated based on all factored reasons. See af\_net\_revenue\_factors. | * IAP<br />* Subscription |
-| af\_net\_revenue\_country | * [Two-letter ISO country code](https://www.nationsonline.org/oneworld/country_code_list.htm) for which the tax is applied.<br />* Example: CA<br />* Note: For United Kingdom, the code implemented is UK, not GB. | * IAP<br />* Subscription |
-| af\_net\_revenue\_factors | * An array representing all factored reasons that produce the reported af\_net\_revenue amount.<br />* Example value: store\_commission | * IAP<br />* Subscription |
-| af\_net\_revenue\_postal\_code | * String of letters and/or numbers<br />* Example: L4J8E3 | * IAP<br />* Subscription |
-| af\_net\_revenue\_subdivision | * For some countries, there can be an additional state or subdivision. This is handled according to [ISO 3166-2 subdivision codes](https://service.unece.org/trade/locode/2023-1%20SubdivisionCodes.htm).<br />* Includes the country code and subdivision code.<br />* Example: US-CA | * IAP<br />* Subscription |
-| af\_net\_revenue\_tax\_exclusive | * Boolean parameter, either true or false.<br />* False means tax is included in the overall revenue.<br />* True means tax is in addition to the overall stated revenue. | * IAP<br />* Subscription |
-| af\_net\_revenue\_tax\_name | * Name appearing in the customer invoice that describes the specific type of tax.<br />* Example: Sales, VAT, GST | * IAP<br />* Subscription |
-| af\_net\_revenue\_tax\_rate | * Number up to 4 decimal places representing the tax percentage collected.<br />* Example: 7.25 | * IAP<br />* Subscription |
-| af\_offer\_id | * The offer ID applied to the transaction, when relevant (for example, discounted or promotional offers).<br />* Android only | * IAP<br />* Subscription |
-| af\_order\_id | * The order ID for the transaction<br />* Android only | * IAP<br />* Subscription |
-| af\_original\_transaction\_id | * The original transaction ID<br />* iOS only | * IAP<br />* Subscription |
-| af\_original\_transaction\_id | * The original ID of the transaction<br />* iOS only | * IAP<br />* Subscription |
-| af\_period\_type | * Subscription or trial period type.<br />* Possible values:<br />  * trial<br />  * intro<br />  * normal | Subscription |
-| af\_product\_id | The subscription product ID | * IAP<br />* Subscription |
-| af\_purchase\_date\_ms | The purchase date for the reported product ID in-app event | * IAP<br />* Subscription |
-| af\_purchase\_option\_id | * The purchase option ID associated with the transaction.<br />* Android only | IAP |
-| af\_purchase\_option\_type | The purchase option type of the transaction. Possible values (Android):<br /><br />* buy<br />* rent | IAP |
-| af\_purchase\_state | Possible values:<br /><br />* Purchased<br />* Canceled<br />* Pending | IAP |
-| af\_purchase\_token | * The purchase token for the transaction<br />* Android only | * IAP<br />* Subscription |
-| af\_reason | [content unchanged] | * IAP<br />* Subscription |
-| af\_refunded\_transaction\_ids | * An array of all refunded transaction IDs<br />* iOS only | * IAP<br />* Subscription |
-| af\_store | The app store the subscription product was purchased from | * IAP<br />* Subscription |
+| af\_net\_revenue | Net revenue calculated based on all factored reasons. See af\_net\_revenue\_factors. | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_net\_revenue\_country | <ul><li>[Two-letter ISO country code](https://www.nationsonline.org/oneworld/country_code_list.htm) for which the tax is applied.</li><li>Example: CA</li><li>Note: For United Kingdom, the code implemented is UK, not GB.</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_net\_revenue\_factors | <ul><li>An array representing all factored reasons that produce the reported af\_net\_revenue amount.</li><li>Example value: store\_commission</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_net\_revenue\_postal\_code | <ul><li>String of letters and/or numbers</li><li>Example: L4J8E3</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_net\_revenue\_subdivision | <ul><li>For some countries, there can be an additional state or subdivision. This is handled according to [ISO 3166-2 subdivision codes](https://service.unece.org/trade/locode/2023-1%20SubdivisionCodes.htm).</li><li>Includes the country code and subdivision code.</li><li>Example: US-CA</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_net\_revenue\_tax\_exclusive | <ul><li>Boolean parameter, either true or false.</li><li>False means tax is included in the overall revenue.</li><li>True means tax is in addition to the overall stated revenue.</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_net\_revenue\_tax\_name | <ul><li>Name appearing in the customer invoice that describes the specific type of tax.</li><li>Example: Sales, VAT, GST</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_net\_revenue\_tax\_rate | <ul><li>Number up to 4 decimal places representing the tax percentage collected.</li><li>Example: 7.25</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_offer\_id | <ul><li>The offer ID applied to the transaction, when relevant (for example, discounted or promotional offers).</li><li>Android only</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_order\_id | <ul><li>The order ID for the transaction</li><li>Android only</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_original\_transaction\_id | <ul><li>The original transaction ID</li><li>iOS only</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_original\_transaction\_id | <ul><li>The original ID of the transaction</li><li>iOS only</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_period\_type | <ul><li>Subscription or trial period type.</li><li>Possible values:<ul><li>trial</li><li>intro</li><li>normal</li></ul></li></ul> | Subscription |
+| af\_product\_id | The subscription product ID | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_purchase\_date\_ms | The purchase date for the reported product ID in-app event | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_purchase\_option\_id | <ul><li>The purchase option ID associated with the transaction.</li><li>Android only</li></ul> | IAP |
+| af\_purchase\_option\_type | The purchase option type of the transaction. Possible values (Android):<ul><li>buy</li><li>rent</li></ul> | IAP |
+| af\_purchase\_state | Possible values:<ul><li>Purchased</li><li>Canceled</li><li>Pending</li></ul> | IAP |
+| af\_purchase\_token | <ul><li>The purchase token for the transaction</li><li>Android only</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_reason | [content unchanged] | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_refunded\_transaction\_ids | <ul><li>An array of all refunded transaction IDs</li><li>iOS only</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_store | The app store the subscription product was purchased from | <ul><li>IAP</li><li>Subscription</li></ul> |
 | af\_subscription\_ownership\_type | FAMILY\_SHARED means the user has access via family sharing. PURCHASED means the paying user made the purchase. | Subscription |
-| af\_transaction\_id | * The ID of the transaction<br />* iOS only | * IAP<br />* Subscription |
-| store\_commission | * The calculated percentage of commission the store gets from the purchased product.<br />* Displayed as a decimal.<br />* Example: 30 | * IAP<br />* Subscription |
+| af\_transaction\_id | <ul><li>The ID of the transaction</li><li>iOS only</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
+| store\_commission | <ul><li>The calculated percentage of commission the store gets from the purchased product.</li><li>Displayed as a decimal.</li><li>Example: 30</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
 
-### Net revenue
+</Accordion>
+
+<div id="true-revenue" />
+
+<Accordion title="Net revenue">
 
 Net revenue is a business logic layer built to serve the ROI360 Store revenue solution. It automatically calculates the net revenue value for each incoming transaction in real time and includes it in reports.
 
@@ -920,13 +980,17 @@ When viewing net revenue in reports, the following parameters contain the net re
 | `af_net_revenue` | * Store commission<br />* Tax |
 | `af_net_revenue_factors` | * Store commission<br />* Tax |
 
-### Troubleshooting and discrepancies
+</Accordion>
+
+<Accordion title="Troubleshooting and discrepancies">
 
 | Symptom | Explanation / Solution |
 | --- | --- |
 | AppsFlyer shows fewer in-app purchase and subscription events than the actual app stores. | In AppsFlyer, events are generated only for users who have updated to an app version that includes the SDK connector. Meanwhile, the app stores log every event, regardless of the user's app version. As a result, until the updated app version is fully adopted, a discrepancy between the app's revenue data and the store's data is expected. |
 
-### Traits and limitations
+</Accordion>
+
+<Accordion title="Traits and limitations">
 
 | Specification | Product | Remarks |
 | --- | --- | --- |
@@ -934,12 +998,14 @@ When viewing net revenue in reports, the following parameters contain the net re
 | Subscription pending  <br />transactions (Android) | Subscription revenue | Not supported |
 | New subscriptions | Subscription revenue | Only recorded via the AppsFlyer purchase SDK |
 | Price change | Subscription revenue | If subscription revenue doesn't receive an SDK-generated notification with the new product price, it continues to report the previous product price as revenue. Once the new product price is received from the purchase SDK, it is recorded. |
-| Gross revenue | * IAP<br />* Subscription revenue | Supported |
-| Net revenue | * IAP<br />* Subscription revenue | Supported in raw data and in My Dashboards (as the Net metrics) |
+| Gross revenue | <ul><li>IAP</li><li>Subscription revenue</li></ul> | Supported |
+| Net revenue | <ul><li>IAP</li><li>Subscription revenue</li></ul> | Supported in raw data and in My Dashboards (as the Net metrics) |
 | Refunds | IAP | Can be reported until 180 days after the original purchase. |
-| Deduplication | * IAP<br />* Subscription revenue | Supported for transactions reported up to 180 days after the event date. |
-| SDK strict mode | * IAP<br />* Subscription revenue | ROI360 subscriptions and IAP are supported under SDK strict mode from the:<br /><br />* AppsFlyer iOS purchase SDK connector V6.13.0<br />* Unity purchase SDK connector V2.0.1 |
-| Currency | * IAP<br />* Subscription revenue | Revenue is reported in the original currency (using the event\_revenue parameter) and in USD (using the event\_revenue\_usd parameter). |
-| Data freshness | * IAP<br />* Subscription revenue | * Transaction-level store revenue report: Hourly<br />* Device-level store revenue report: Every 8 hours |
-| StoreKit 2 | * IAP<br />* Subscription revenue | * StoreKit 2 is supported starting with Purchase SDK Connector version 6.16.2.<br />* Make sure your app uses the updated App Store credentials described [here](/docs/bulletin-update-app-store-credentials-for-ios-roi360-receipt-validation). |
-| Google one-time products | IAP | * Supported purchase options: Buy and Rent<br />* Pre-order: Not supported |
+| Deduplication | <ul><li>IAP</li><li>Subscription revenue</li></ul> | Supported for transactions reported up to 180 days after the event date. |
+| SDK strict mode | <ul><li>IAP</li><li>Subscription revenue</li></ul> | ROI360 subscriptions and IAP are supported under SDK strict mode from the:<ul><li>AppsFlyer iOS purchase SDK connector V6.13.0</li><li>Unity purchase SDK connector V2.0.1</li></ul> |
+| Currency | <ul><li>IAP</li><li>Subscription revenue</li></ul> | Revenue is reported in the original currency (using the event\_revenue parameter) and in USD (using the event\_revenue\_usd parameter). |
+| Data freshness | <ul><li>IAP</li><li>Subscription revenue</li></ul> | <ul><li>Transaction-level store revenue report: Hourly</li><li>Device-level store revenue report: Every 8 hours</li></ul> |
+| StoreKit 2 | <ul><li>IAP</li><li>Subscription revenue</li></ul> | <ul><li>StoreKit 2 is supported starting with Purchase SDK Connector version 6.16.2.</li><li>Make sure your app uses the updated App Store credentials described [here](/docs/bulletin-update-app-store-credentials-for-ios-roi360-receipt-validation).</li></ul> |
+| Google one-time products | IAP | <ul><li>Supported purchase options: Buy and Rent</li><li>Pre-order: Not supported</li></ul> |
+
+</Accordion>

@@ -32,16 +32,12 @@ Cross-platform re-engagement attribution adds a layer to this model. Instead of 
 
 Here is how the two models relate to each other:
 
-
-
 |  | Cross-platform user-acquisition attribution | Cross-platform re-engagement attribution |
 | --- | --- | --- |
 | **What it measures** | First conversion and all subsequent activity | Re-activation of existing users after inactivity |
 | **Credit goes to** | Original acquisition source | Re-engaging media source (for example, Meta) |
 | **Scope** | All events within the inactivity restoration window | Events within the re-engagement window only |
 | **Setup** | Configured at the product line level | Opt-in, configured on top of the user acquisition setup at the product line level |
-
-
 
 Re-engagement attribution works alongside user acquisition, so you can see both the source that first acquired a user and the source that brought them back in the same reporting view.
 
@@ -58,7 +54,7 @@ For an in-app event to be attributed to a re-engaging media source, all of the f
 
 The following examples show the same user journey twice: first without cross-platform re-engagement, then with re-engagement opted in. Comparing the two illustrates exactly how re-engagement changes attribution.
 
-### User journey without re-engagement
+<Accordion title="User journey without re-engagement">
 
 Consider a user journey across three platforms. A Google ad drives users to install a mobile app, where they sign up using a customer user ID. Later, a Meta ad drives the same user to visit the web platform, where they sign in with the same customer user ID. After signing in, the user makes two purchases on mobile: $100 and $50.
 
@@ -66,16 +62,14 @@ Consider a user journey across three platforms. A Google ad drives users to inst
 
 Because re-engagement is not enabled in this scenario, all activity is attributed to Google Ads, the original acquisition source. The $100 and $50 purchases, as well as both platform activations (mobile and web), are credited to Google. Meta receives no credit within cross-platform attribution, even though its ad drove the Web install.
 
-
-
 | Media source | Total attributions | User acquisition | Re-engagements | Platform activations | Mobile | Web | LTV |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Google | 1 | 1 | 0 | 2 | 1 | 1 | $150 |
 | Meta | 0 | 0 | 0 | 0 | 0 | 0 | $0 |
 
+</Accordion>
 
-
-### User journey with re-engagement
+<Accordion title="User journey with re-engagement">
 
 The user journey is identical to the one above. The difference is that the product line has opted in to re-engagement.
 
@@ -85,14 +79,12 @@ In this case, the retargeting inactivity window determines whether the Meta-driv
 
 Once Meta is credited with the re-engagement, the re-engagement window opens. Any in-app events that occur within this window are attributed to Meta. In this example, the $100 purchase falls within the re-engagement window and is attributed to Meta. The $50 purchase falls outside the re-engagement window and is attributed back to Google.
 
-
-
 | Media source | Total attributions | User acquisition | Re-engagements | Platform activations | Mobile | Web | LTV |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Google | 1 | 1 | 0 | 1 | 1 | 0 | $50 |
 | Meta | 1 | 0 | 1 | 1 | 0 | 1 | $100 |
 
-
+</Accordion>
 
 ## Set up cross-platform re-engagement attribution
 

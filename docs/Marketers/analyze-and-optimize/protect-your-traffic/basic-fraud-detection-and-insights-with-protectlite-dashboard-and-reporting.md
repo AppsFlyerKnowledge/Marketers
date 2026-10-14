@@ -44,7 +44,7 @@ To view the ProtectLITE dashboard, in AppsFlyer, go to **Protect360**.
 
 Dashboard features are described in the sections that follow.
 
-### Filters and groupings
+<Accordion title="Filters and groupings">
 
 **Filter and groupings window**
 
@@ -69,7 +69,9 @@ The following filtering and grouping options are available:
   * **Geo**: compare the handled fraud from all countries.
   * **Media source + Geo** (available in the In-app events dashboard): compare the handled fraud from each of the media sources used by your apps associated with the relevant countries.
 
-### Installs—headline metrics
+</Accordion>
+
+<Accordion title="Installs—headline metrics">
 
 The headline metrics enable you to see:
 
@@ -108,13 +110,17 @@ The suspected overall threat level:
 * Is an estimate of the fraud that would be blocked by Protect360, if you had a subscription.
 * Gives you a good idea of whether you should upgrade to Protect360 to receive more advanced anti-fraud protection.
 
-### Installs—chart
+</Accordion>
+
+<Accordion title="Installs—chart">
 
 #### Fraud trend over time chart
 
 The chart displays the number of installs per day blocked by ProtectLITE and Validation Rules, for the time period selected in the date filter.
 
-### Installs—table
+</Accordion>
+
+<Accordion title="Installs—table">
 
 #### Identified fraud breakdown
 
@@ -136,14 +142,12 @@ The dynamic table structure lets you:
 
 #### Content of the identified fraud breakdown table
 
-
-
 | Table column | Description |
 | --- | --- |
-| Groupings | * [Default] The table and dashboard are grouped by Media source.<br />* When selecting a specific media source, the grouping is automatically by both Media source and Site ID.<br />* Optional groupings include Campaign, GEO, Channel, agency, and combinations thereof.<br />* If you select a grouping with dimensions that only apply to non-organic traffic, the table displays N/A for the organic media source. |
+| Groupings | <ul><li>[Default] The table and dashboard are grouped by Media source.</li><li>When selecting a specific media source, the grouping is automatically by both Media source and Site ID.</li><li>Optional groupings include Campaign, GEO, Channel, agency, and combinations thereof.</li><li>If you select a grouping with dimensions that only apply to non-organic traffic, the table displays N/A for the organic media source.</li></ul> |
 | **Installs** | **Headline breakdown of installs blocked due to fraud and Validation Rules** |
-| Total (A) | * Total installs = All app installs including fraudulent installs and installs identified via Validation Rules.<br />* Regular installs are available per media source (non-organic) in the Overview dashboard. |
-| Identified installs (B) | * Total number of installs identified and blocked in real-time<br />* Organic blocked installs are not shown in the dashboard. To see organic blocked installs, use raw data reports.<br />* [Default] The table is sorted in descending order using this KPI. |
+| Total (A) | <ul><li>Total installs = All app installs including fraudulent installs and installs identified via Validation Rules.</li><li>Regular installs are available per media source (non-organic) in the Overview dashboard.</li></ul> |
+| Identified installs (B) | <ul><li>Total number of installs identified and blocked in real-time</li><li>Organic blocked installs are not shown in the dashboard. To see organic blocked installs, use raw data reports.</li><li>[Default] The table is sorted in descending order using this KPI.</li></ul> |
 | **Identified installs %**(B/A) | Identified installs / Total installs |
 | **Identified post-attribution (C)** | Requires Protect360 |
 | **Identified post-attribution % (C/A)** | Requires Protect360 |
@@ -163,15 +167,15 @@ The dynamic table structure lets you:
 | Total | Total number of legitimate and fraudulent impressions received from the source |
 | Blocked | Impressions blocked due to fraud |
 
+</Accordion>
 
-
-## Traits and limitations
-
-
+<Accordion title="Traits and limitations">
 
 | Trait | Remarks |
 | --- | --- |
 | Advertiser access | All account users. |
-| Ad network access | * ProtectLITE dashboard and raw data access require [advertiser permission.](/docs/set-up-an-integrated-partner#ad-network-permissions)<br />* Advertiser must have the ad network as an integrated partner. |
+| Ad network access | <ul><li>ProtectLITE dashboard and raw data access require [advertiser permission.](/docs/set-up-an-integrated-partner#ad-network-permissions)</li><li>Advertiser must have the ad network as an integrated partner.</li></ul> |
 | Agency access | ProtectLITE dashboard and raw data access require [advertiser permission.](/docs/set-up-an-integrated-partner#ad-network-permissions) |
 | Agency transparency | Transparent agency: Can see specific media sources<br /><br />Non-transparent agency: Cannot see specific media sources |
+
+</Accordion>

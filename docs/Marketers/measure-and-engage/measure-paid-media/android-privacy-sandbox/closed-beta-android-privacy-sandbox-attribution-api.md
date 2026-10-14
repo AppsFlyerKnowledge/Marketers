@@ -55,67 +55,57 @@ An ad tech must register both attribution sources and triggers to receive postba
 
 ## AppsFlyer Sandbox attribution solution
 
-### Principles and flows
+<Accordion title="Principles and flows">
 
 [![53090 Android Privacy Sandbox image for KB (1).png](https://files.readme.io/f10d82d0bb685cf8b329c3b3be14ad546531588b876938b41e3b9650b1080cac-26552356197649.png)](https://files.readme.io/f10d82d0bb685cf8b329c3b3be14ad546531588b876938b41e3b9650b1080cac-26552356197649.png)
 
 To overcome the functional and structural limitations of the Sandbox attribution infrastructure, the AppsFlyer Sandbox attribution solution takes into consideration the characteristics in the table that follows
 
-
-
 | Characteristic | Description |
 | --- | --- |
-| Data integration | * AppsFlyer integrates with multiple ad networks and provides Sandbox attribution results.<br />* Advertisers don't need to integrate with each ad network individually —a complex and tedious task. |
-| Data enrichment | * Enriches Sandbox attribution data with other data points to provide complete ROI analysis. For example, the campaign name provided by the ad network, and so on.<br />* Data points include impressions, clicks, cost, and more. |
-| Data delivery | Enriched Sandbox attribution data is available using the following:<br /><br />* [Sandbox Overview dashboard](/docs/special-access-android-privacy-sandbox-attribution-api-dashboard-by-appsflyer-cl) |
-| Seamless integration | * No coding is required. The app requires<br />  * AppsFlyer [V6.13.1 SDK](/docs/sdk-integration-overview) or above for installs.<br />  * [V6.16.0 SDK](/docs/sdk-integration-overview) or above for [revenue](/docs/special-access-android-privacy-sandbox-attribution-api-dashboard-by-appsflyer-cl#table-metrics).<br />  * [V6.16.1 SDK](/docs/sdk-integration-overview) or above for predefined in-app event measurement.<br />* Includes support for expected changes by Google in the Sandbox attribution infrastructure. |
+| Data integration | <ul><li>AppsFlyer integrates with multiple ad networks and provides Sandbox attribution results.</li><li>Advertisers don't need to integrate with each ad network individually —a complex and tedious task.</li></ul> |
+| Data enrichment | <ul><li>Enriches Sandbox attribution data with other data points to provide complete ROI analysis. For example, the campaign name provided by the ad network, and so on.</li><li>Data points include impressions, clicks, cost, and more.</li></ul> |
+| Data delivery | Enriched Sandbox attribution data is available using the following:<ul><li>[Sandbox Overview dashboard](/docs/special-access-android-privacy-sandbox-attribution-api-dashboard-by-appsflyer-cl)</li></ul> |
+| Seamless integration | <ul><li>No coding is required. The app requires<ul><li>AppsFlyer [V6.13.1 SDK](/docs/sdk-integration-overview) or above for installs.</li><li>[V6.16.0 SDK](/docs/sdk-integration-overview) or above for [revenue](/docs/special-access-android-privacy-sandbox-attribution-api-dashboard-by-appsflyer-cl#table-metrics).</li><li>[V6.16.1 SDK](/docs/sdk-integration-overview) or above for predefined in-app event measurement.</li></ul></li><li>Includes support for expected changes by Google in the Sandbox attribution infrastructure.</li></ul> |
 | Agility | Advertisers can change measurement configurations as needed in the dashboard |
 
-
+</Accordion>
 
 ## Additional Privacy Sandbox attribution information
 
-### Reporting options
+<Accordion title="Reporting options">
 
 Sandbox attribution reports don't contain user-level identifiers.
-
-
 
 | Report name | Type | Enriched by AppsFlyer | Delivery method | Premium feature |
 | --- | --- | --- | --- | --- |
 | Sandbox overview dashboard | Aggregated | Yes | Dashboard | No |
 
-
-
-### Sandbox attribution solution implementation checklist
-
-
+<Accordion title="Sandbox attribution solution implementation checklist">
 
 | No | Action | Description | Responsibility |
 | --- | --- | --- | --- |
-| 1 | Prepare the app | Migrate the app to AppsFlyer [V6.13.1 SDK](/docs/sdk-integration-overview) or above.  <br />Note: SDK [V6.16.0](/docs/sdk-integration-overview) or above is needed for [revenue](/docs/special-access-android-privacy-sandbox-attribution-api-dashboard-by-appsflyer-cl#table-metrics), and [V6.16.1 SDK](/docs/sdk-integration-overview) or above for predefined in-app event measurement.<br /><br />* No change to app logic or to app code is required.<br />* The AppsFlyer Sandbox attribution solution relies on in-app events to register the triggers. Send in-app events in the usual manner. No Sandbox attribution solution-specific testing is required.<br />* Submit the app to the Google Play Store<br />* No Sandbox attribution registration or process is required in the app store. | Developer |
+| 1 | Prepare the app | Migrate the app to AppsFlyer [V6.13.1 SDK](/docs/sdk-integration-overview) or above.<br />Note: SDK [V6.16.0](/docs/sdk-integration-overview) or above is needed for [revenue](/docs/special-access-android-privacy-sandbox-attribution-api-dashboard-by-appsflyer-cl#table-metrics), and [V6.16.1 SDK](/docs/sdk-integration-overview) or above for predefined in-app event measurement.<ul><li>No change to app logic or to app code is required.</li><li>The AppsFlyer Sandbox attribution solution relies on in-app events to register the triggers. Send in-app events in the usual manner. No Sandbox attribution solution-specific testing is required.</li><li>Submit the app to the Google Play Store</li><li>No Sandbox attribution registration or process is required in the app store.</li></ul> | Developer |
 | 2 | Partner integration | Ad network partners must integrate with AppsFlyer using Sandbox attribution integration. See here a list of Sandbox attribution integrated partners.<br /><br />Decide if you want to allow partners to redirect the triggers to the ad network partner. See more details [here](/docs/closed-beta-android-privacy-sandbox-attribution-api#redirecting-triggers-to-ad-networks). | Marketer |
 
+</Accordion>
 
-
-### Troubleshooting guide
-
-
+<Accordion title="Troubleshooting guide">
 
 | Symptom | Description |
 | --- | --- |
-| The dashboard doesn't contain any installs | 1. Verify that your SDK version is [V6.13.1](/docs/sdk-integration-overview) or above.   <br />   Note: SDK [V6.16.0](/docs/sdk-integration-overview) or above is needed for [revenue](/docs/special-access-android-privacy-sandbox-attribution-api-dashboard-by-appsflyer-cl#table-metrics), and [V6.16.1 SDK](/docs/sdk-integration-overview) or above for predefined in-app event measurement.<br /><br />* To do so, go to Integration > SDK Information > Users by SDK version.<br /><br />2. If you use SDK plugins, verify that you implement a version that supports AppsFlyer Sandbox attribution.<br />3. Verify that your ad network partners are integrated with the AppsFlyer Sandbox attribution solution. |
+| The dashboard doesn't contain any installs | <ol><li>Verify that your SDK version is [V6.13.1](/docs/sdk-integration-overview) or above.<br />Note: SDK [V6.16.0](/docs/sdk-integration-overview) or above is needed for [revenue](/docs/special-access-android-privacy-sandbox-attribution-api-dashboard-by-appsflyer-cl#table-metrics), and [V6.16.1 SDK](/docs/sdk-integration-overview) or above for predefined in-app event measurement.</li></ol><ul><li>To do so, go to Integration > SDK Information > Users by SDK version.</li></ul><ol><li>If you use SDK plugins, verify that you implement a version that supports AppsFlyer Sandbox attribution.</li><li>Verify that your ad network partners are integrated with the AppsFlyer Sandbox attribution solution.</li></ol> |
 
+</Accordion>
 
-
-### Timing from app install until dashboard and reports update
+<Accordion title="Timing from app install until dashboard and reports update">
 
 Sandbox aggregatable reports received on a given day are processed at the end of the next day—UTC starting at 00:01. The data is available 8 hours later. In other words, it takes around 32-56 hours to process the data, with an average delay of 44 hours.  
 **For example,** a report received on Monday is processed and ready on Wednesday. The dashboard will be updated by Wednesday 08:00 UTC.
 
-### Traits and limitations
+</Accordion>
 
-
+<Accordion title="Traits and limitations">
 
 | Traits | Remarks |
 | --- | --- |
@@ -129,9 +119,11 @@ Sandbox aggregatable reports received on a given day are processed at the end of
 | Historical data | Depends on the time the ad network is integrated with AppsFlyer. Earliest date is August 19th, 2024 |
 | User access | Account users must have the [necessary permissions](/docs/user-management) |
 
+</Accordion>
 
+<div id="redirecting-triggers-to-ad-networks" />
 
-### Redirecting triggers to ad networks
+<Accordion title="Redirecting triggers to ad networks">
 
 Within the Privacy Sandbox, each individual ad network has the capability to view the last-touch attribution flow within its network. This means that an ad network can attribute conversions (such as app installs) to the last ad interaction that occurred within their network.  
 However, this capability is different when comparing it to the broader attribution provided by AppsFlyer within Sandbox:  
@@ -140,12 +132,14 @@ AppsFlyer can encompass multiple ad networks and provide a holistic view across 
 Example Scenario: A user sees and clicks on an ad from Unity Ads on Day 1, then clicks on an ad from TikTok on Day 2, and finally installs the app on Day 3.
 
 Ad network's last-touch attribution: Unity Ads and TikTok can each see if their ad was the last touch before the conversion within their own network. Both Tiktok and Unity will receive winning reports for their own ads under Sandbox attribution.  
-  
+
 AppsFlyer last touch attribution: AppsFlyer can view the entire user journey across both Unity Ads and TikTok, identifying that the user interacted with both ads before converting. AppsFlyer can attribute the conversion to TikTok as it was the last touch.  
 If you want to allow the ad network to view the last touch attribution flow within its network you will need to provide written consent to your AppsFlyer rep so we can then redirect those triggers to the ad network. Please reach out to your AppsFlyer rep for more details.  
 In the future, we will add such a capability within the AppsFlyer platform to avoid the need for manual written consent.
 
-### Comparing Sandbox attribution results to AppsFlyer attribution results
+</Accordion>
+
+<Accordion title="Comparing Sandbox attribution results to AppsFlyer attribution results">
 
 It is not possible to properly compare the Sandbox results to AppsFlyer attribution results for the following reasons:
 
@@ -155,6 +149,10 @@ It is not possible to properly compare the Sandbox results to AppsFlyer attribut
    Day 3: User installs App  
    In the regular AppsFlyer flow, TikTok - being the last touch point, will win the attribution. However, with Sandbox, assuming TikTok is still not integrated with Sandbox, Unity Ads will win the attribution.
 2. Sandbox attribution results can also contain "noise". Which is the addition of random data to user-related information to protect individual privacy. This technique is used to obscure specific details about user actions, making it more difficult to measure or identify individual users while still allowing for the aggregation and analysis of overall trends and patterns.
+
+</Accordion>
+
+</Accordion>
 
 > 📘 **See also**
 >

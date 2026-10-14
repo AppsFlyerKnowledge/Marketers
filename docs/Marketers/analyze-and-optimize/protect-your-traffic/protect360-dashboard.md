@@ -38,7 +38,7 @@ The Protect360 dashboard:
 
 To view the Protect360 dashboard, in AppsFlyer, go to **Optimize** > **Protect360.**
 
-### Filters and groupings
+<Accordion title="Filters and groupings">
 
 **Filter and groupings window**
 
@@ -68,13 +68,15 @@ The following filtering and grouping options are available:
   * **Media source + Attribution type**: Compare the identified fraud from each of your media sources, associated with the selected attribution type (installs, re-attributions, and/or re-engagements)
   * **Geo**: compare the identified fraud from all countries
 
+</Accordion>
+
 ## Installs dashboard
 
 The installs dashboard displays LTV-based data, meaning data relating to installs, re-attributions, and re-engagements that occurred during your selected date range.
 
 Dashboard features are described in the sections that follow.
 
-### Installs—headline metrics
+<Accordion title="Installs—headline metrics">
 
 The headline metrics enable you to see:
 
@@ -126,7 +128,9 @@ Installs where the device was detected by AppsFlyer attribution logic as being f
 
  Average engagement per install shows the average number of engagements associated with the install.
 
-### Installs—charts
+</Accordion>
+
+<Accordion title="Installs—charts">
 
 #### Identified fraud trend chart
 
@@ -161,7 +165,7 @@ You can:
 The identified fraud chart displays the types of fraud you experience, by percentage. Fraud breakdown can be by:
 
 * Block reason
-* [Blocked sub-reason](/docs/protect360-raw-data-reports#install-level-fake-install-block-reasons)
+* [Blocked sub-reason](/docs/protect360-raw-data-reports#install-level-fake-install-block-sub-reasons)
 * Tag type
 * Tag reason
 * Tag sub reason
@@ -185,7 +189,11 @@ AppsFlyer’s new **Affiliate Attribution Model** solves the click-flooding prob
 
 Compromised installs are installs where the device was detected by AppsFlyer attribution logic as being flooded with inauthentic engagements. This indicates the device was under heavy flooding manipulation, specifically referring to instances where installs are manipulated
 
-### Installs—table
+</Accordion>
+
+<div id="installs-table" />
+
+<Accordion title="Installs—table">
 
 #### Identified fraud breakdown
 
@@ -209,14 +217,12 @@ The dynamic table structure:
 
 #### Content of the identified fraud breakdown table
 
-
-
 | Table Column | Description |
 | --- | --- |
-| Groupings | * [Default] The table and dashboard are grouped by Media source.<br />* When selecting a specific media source, the grouping is automatically by both Media source and Site ID.<br />* Optional groupings include Campaign, GEO, Channel, Agency, Agency + Media Source, and combinations thereof.<br />* If you select a grouping with dimensions that only apply to non-organic traffic, the table displays N/A for the organic media source. |
+| Groupings | <ul><li>[Default] The table and dashboard are grouped by Media source.</li><li>When selecting a specific media source, the grouping is automatically by both Media source and Site ID.</li><li>Optional groupings include Campaign, GEO, Channel, Agency, Agency + Media Source, and combinations thereof.</li><li>If you select a grouping with dimensions that only apply to non-organic traffic, the table displays N/A for the organic media source.</li></ul> |
 | **Attributions** | **Headline breakdown of blocked and post-attribution fraudulent installs.** |
-| Total (A) | * Total installs = Regular (non-fraudulent) installs + blocked installs<br />* Regular installs are available per media source (non-organic) in the Overview dashboard. |
-| Blocked (B) | * Total number of blocked installs.<br />* [Default] The table is sorted in descending order using this KPI. |
+| Total (A) | <ul><li>Total installs = Regular (non-fraudulent) installs + blocked installs</li><li>Regular installs are available per media source (non-organic) in the Overview dashboard.</li></ul> |
+| Blocked (B) | <ul><li>Total number of blocked installs.</li><li>[Default] The table is sorted in descending order using this KPI.</li></ul> |
 | Blocked % (B/A) | Blocked installs / Total installs |
 | Post-attribution (C) | Installs identified as fraud post-attribution. |
 | Post-attribution % (C/A) | Post-attribution installs / Total number of installs |
@@ -270,8 +276,6 @@ The dynamic table structure:
 | CTIT > Over 60 minutes | Installs, re-attributions, and re-engagements where the time between the click and first app launch is more than 60 minutes. The calculation only includes installs whose CTIT is under 25 hours (and not all installs). Typically, around 30% of first app launches occur more than 60 minutes after download. |
 | CTIT > Over 5 hours | Installs, re-attributions, and re-engagements where the time between the click and first app launch is more than 5 hours. The calculation only includes installs whose CTIT is under 25 hours (and not all installs). Typically, around 20% of first app launches occur more than 5 hours after download. |
 
-
-
 #### Additional table options
 
 * Click **Export CSV** to download the table to your desktop in CSV format
@@ -280,18 +284,16 @@ The dynamic table structure:
   * Add or remove the columns described above
   * Add or remove any of your app's **recently blocked in-app events**. For each added in-app event the following columns are displayed:
 
-
-
 | Table Column | Description |
 | --- | --- |
 | Events Counter (Total) | Number of the specific event's blocked occurrences |
 | Unique Users | Number of unique users getting the specific event blocked |
 
-
-
 Note that uncommon rates of either of these KPIs don't necessarily indicate fraud, as many events get blocked due to fraudulent post-attribution installs.
 
 The in-app event data in the CPI dashboard is LTV-based, meaning it is all the in-app events associated with installs that occurred during the specified date range.
+
+</Accordion>
 
 ## In-app events dashboard
 
@@ -299,7 +301,7 @@ The in-app events dashboard displays activity-based data, meaning data relating 
 
 Dashboard features are described in the sections that follow.
 
-### In-app events—headline metrics
+<Accordion title="In-app events—headline metrics">
 
 [![](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)
 
@@ -310,7 +312,9 @@ The headline metrics enable you to see:
   * Based on the payable events you have configured.
 * Total number of identified fraudulent IAEs
 
-### In-app events—charts
+</Accordion>
+
+<Accordion title="In-app events—charts">
 
 #### **Fraud trend over time chart**
 
@@ -330,7 +334,9 @@ The top in-app event fraud by media source list contains: 
   * **Post-attribution**: Fraudulent events identified post-attribution
   * **Non-fraud**
 
-### In-app events—table
+</Accordion>
+
+<Accordion title="In-app events—table">
 
 The **In-app event fraud breakdown** table displays the following data:
 
@@ -346,20 +352,18 @@ The dynamic table structure:
 
 * Lets you click the table settings button to add or remove columns to the table.  
   If you make any changes to the table, make sure to click the **Save** button afterward.
-* Is per user, so every account user with access to Protect360 can personally customize their own table structure. See [more table options](/docs/protect360-dashboard#installs%E2%80%94table).
+* Is per user, so every account user with access to Protect360 can personally customize their own table structure. See [more table options](/docs/protect360-dashboard#installs-table).
 
 [![iae_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)
 
 #### Content of the in-app event fraud breakdown table
 
-
-
 | Table Column | Description |
 | --- | --- |
-| Groupings | * [Default] The table and dashboard are grouped by Media source.<br />* When selecting a specific media source, the grouping is automatically by both Media source and Site ID.<br />* Optional groupings include Campaign, GEO, Channel, Agency, Agency + Media Source, and combinations thereof. |
+| Groupings | <ul><li>[Default] The table and dashboard are grouped by Media source.</li><li>When selecting a specific media source, the grouping is automatically by both Media source and Site ID.</li><li>Optional groupings include Campaign, GEO, Channel, Agency, Agency + Media Source, and combinations thereof.</li></ul> |
 | **In-app events** | **Headline breakdown of blocked and post-attribution fraudulent IAEs.** |
-| Total IAE (A) | * Total IAE = Regular (non-fraudulent) IAEs + blocked IAEs + IAEs identified as fraud post-attribution.<br />* Regular IAEs are available per media source (non-organic) in the Overview dashboard. |
-| Total fraudulent IAE (B) | * Total number of blocked IAEs + IAEs identified as fraud post-attribution.<br />* [Default] The table is sorted in descending order using this KPI. |
+| Total IAE (A) | <ul><li>Total IAE = Regular (non-fraudulent) IAEs + blocked IAEs + IAEs identified as fraud post-attribution.</li><li>Regular IAEs are available per media source (non-organic) in the Overview dashboard.</li></ul> |
+| Total fraudulent IAE (B) | <ul><li>Total number of blocked IAEs + IAEs identified as fraud post-attribution.</li><li>[Default] The table is sorted in descending order using this KPI.</li></ul> |
 | Fraudulent events % (B/A) | Fraudulent IAEs/Total IAEs |
 | **Fake IAE real-time blocks** | **Fraudulent IAEs blocked in real-time.** |
 | Fake IAE | Fake IAE identified as fraud and blocked in real-time. |
@@ -377,8 +381,6 @@ The dynamic table structure:
 | Corrected to organic | Hijacked installs with the last non-fraudulent source being organic. |
 | Corrected to non-organic source | Hijacked installs with the last non-fraudulent source being a non-organic media source. |
 
-
-
 #### Additional table options
 
 * Click **Export CSV** to download the table to your desktop in CSV format
@@ -388,7 +390,11 @@ The dynamic table structure:
 
 The amount of events shown is activity-based, and not LTV based, meaning it's the exact number of event blocks during the specified date range.
 
-### Payable events
+</Accordion>
+
+<div id="payable-events" />
+
+<Accordion title="Payable events">
 
 Payable events are IAEs that have a cost. Once enabled and configured, the In-app activity dashboard only displays data related to payable events.
 
@@ -416,18 +422,18 @@ Payable events are IAEs that have a cost. Once enabled and configured, the In-ap
 5. Click **Save.**
 6. Click **Close.**
 
-## Traits and limitations
+</Accordion>
 
-
+<Accordion title="Traits and limitations">
 
 | Trait | Remarks |
 | --- | --- |
-| Retargeting | * The installs (CPI) dashboard can display the attributed touch-type breakdown between installs, re-attributions, and re-engagements.<br />* The in-app event (CPA) dashboard displays fraudulent events from UA installs, but not from retargeting. **Note**: Fraudulent events from re-attributions that are identified in real-time, can be viewed in raw data reports. |
+| Retargeting | <ul><li>The installs (CPI) dashboard can display the attributed touch-type breakdown between installs, re-attributions, and re-engagements.</li><li>The in-app event (CPA) dashboard displays fraudulent events from UA installs, but not from retargeting. **Note**: Fraudulent events from re-attributions that are identified in real-time, can be viewed in raw data reports.</li></ul> |
 | Historical data | Data is available from the start of the Protect360 subscription |
-| Data freshness | Updated daily.<br /><br />* Installs (CPI) at 16:00 UTC<br />* In-app events (CPA) at 21:00 UTC |
+| Data freshness | Updated daily.<ul><li>Installs (CPI) at 16:00 UTC</li><li>In-app events (CPA) at 21:00 UTC</li></ul> |
 | Media source not available | If a media source is not available in the filter it can be due to all of its traffic being blocked.<br /><br />In order to filter based on the media source, you can use its link from the identified fraud breakdown table |
 
-
+</Accordion>
 
 > 📘 **See also**
 >

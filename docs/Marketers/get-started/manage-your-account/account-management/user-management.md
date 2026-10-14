@@ -33,7 +33,7 @@ Each user’s permissions are defined along 3 primary dimensions:
 * **Data access** by media source and geo
   * Important! Certain AppsFlyer dashboards and features are unavailable to users with limited data access (to media sources and geos). These dashboards and features are [listed here](#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
 
-Permissions within each of these dimensions are assigned independently. In other words, you may assign a user a **role** with broad functional capabilities but allow them to exercise those capabilities only within a narrowly-defined set of **apps, media sources, and geos.** The only exception is the [Admin role](#admin%E2%80%94a-special-role), as discussed below, which has access to all capabilities, apps, media sources, and geos.
+Permissions within each of these dimensions are assigned independently. In other words, you may assign a user a **role** with broad functional capabilities but allow them to exercise those capabilities only within a narrowly-defined set of **apps, media sources, and geos.** The only exception is the [Admin role](#admin), as discussed below, which has access to all capabilities, apps, media sources, and geos.
 
 Admins can [add users to multiple accounts](#multiple-accounts) so they can easily switch between accounts.
 
@@ -45,7 +45,7 @@ Admins can [add users to multiple accounts](#multiple-accounts) so they can easi
 
 [![user-management-page.jpg](https://files.readme.io/0ca6dd472b6f50bfde693bba9c131ce9454dc1df90e3a0fb029e2e05b2330db4-31780969019665.jpg)](https://files.readme.io/0ca6dd472b6f50bfde693bba9c131ce9454dc1df90e3a0fb029e2e05b2330db4-31780969019665.jpg)
 
-### Users tab
+<Accordion title="Users tab">
 
 The **Users** tab displays a table of all existing users in your account. This is the starting point for creating, managing, and deleting users.
 
@@ -57,21 +57,27 @@ Tips for navigating the Users tab:
   * To clear the filter, select **None** in the filter dropdown list.
 * Click the **Last login** column heading to sort users by the date they last logged in to AppsFlyer.
   * **Tip:** Use this feature to easily identify and [delete](#deleting-users) inactive users, keep your account secure from unauthorized logins.
-* Use the checkboxes to select and [edit multiple users](#multiuser-editing) at the same time.
+* Use the checkboxes to select and [edit multiple users](#multi-user-editing) at the same time.
 * Admins only: Click the download icon ![download_icon.png](https://files.readme.io/fba5d56ceb7f6b3dc3191e5ec33c85ccbba0f7dc409ad0390de238c12b479b61-31780969029777.png) in the upper-right corner of the page to download the full user table as a CSV file.
   * The downloaded file includes the same columns as the table in the **Users** tab.
 
-### Roles tab
+</Accordion>
+
+<div id="roles-tab" />
+
+<Accordion title="Roles tab">
 
 The **Roles** tab displays a list of all roles defined in your account, including:
 
 * [Predefined roles](#predefined-roles)
-* [Custom roles](#managing-custom-roles) you have created
+* [Custom roles](#manage-custom-roles) you have created
 * Any [temp roles](#temp-roles) currently assigned to users
 
 Next to each role, you can see the number of users currently assigned to that role.
 
 Click on the name of any role in the left panel to display the full details of the role’s capabilities.
+
+</Accordion>
 
 Explore below the available actions to effectively manage your users and their roles.
 
@@ -79,7 +85,9 @@ Explore below the available actions to effectively manage your users and their r
 
 Admins can create new users, add them to multiple accounts, edit their details such as roles and access they have to apps and data, and delete users. Some of these actions can be done [in bulk using a dedicated API](#manage-users-in-bulk-via-api).
 
-### Create users
+<div id="creating-users" />
+
+<Accordion title="Create users">
 
 <Embed title="User management" typeOfEmbed="youtube" url="https://www.youtube.com/embed/wLCXP5dFrKg" providerUrl="https://www.youtube.com" />
 
@@ -95,15 +103,13 @@ The page for creating or editing a user includes a number of sections. Make sure
 
    * Can include letters, numbers, apostrophes ('), ampersands (&), dollar signs ($), hash symbols (#), hyphens (-), underscores (\_), and periods (.)
    * Two consecutive periods (..) and other special characters are not allowed.
-   * Must end with a valid email domain.CALLSTART::Note::
-
-   #### Important!
+   * Must end with a valid email domain.<br /><br />**Note**<br />#### Important!
 
    A user’s email address is what identifies them in the AppsFlyer platform, meaning:
 
    * It can't later be changed without deleting and recreating the user.
    * It must be a valid email address at which the user can receive emails.
-   * It can't be associated with another user in any AppsFlyer account, [except for users in multiple accounts](#multiple-accounts). If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](/docs/user-management#troubleshooting-can%E2%80%99t-create-this-user) to resolve this issue.CALLEND::
+   * It can't be associated with another user in any AppsFlyer account, [except for users in multiple accounts](#multiple-accounts). If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](/docs/user-management#troubleshooting-can-t-create-this-user) to resolve this issue.
 4. [Optional] Select the user’s department.
 
 #### Role
@@ -175,7 +181,11 @@ Once the user is created, you can see them in the user table with an envelope ic
 >
 > If the user didn’t receive the invitation or if the link has expired, you can [resend the invitation](/docs/user-management#resending-a-user-invitation).
 
-### Add users to multiple accounts
+</Accordion>
+
+<div id="multiple-accounts" />
+
+<Accordion title="Add users to multiple accounts">
 
 Users can be added to multiple accounts and assigned to different roles in each account. This helps users work in different accounts without the need to re-enter credentials.
 
@@ -185,7 +195,7 @@ Users can log in to multiple accounts using all login methods: credentials (user
 
 > 📘 **Note**
 >
-> When switching between accounts (not during initial login), users must also enter a 6-digit verification code sent to their email, regardless of which login method they used to sign in. [See this article for more information on how to switch accounts](/docs/welcome-to-appsflyer#h_01H9G1MP3ZYYQCCE6J8Q8GCAWG).
+> When switching between accounts (not during initial login), users must also enter a 6-digit verification code sent to their email, regardless of which login method they used to sign in. [See this article for more information on how to switch accounts](/docs/welcome-to-appsflyer#switch-between-accounts).
 
 #### Supported accounts and users
 
@@ -207,7 +217,9 @@ Advertiser accounts support having the same user in multiple accounts. With the 
 4. Enter the required details, select the role for the user in this account, and click **Save**.
 5. Repeat steps 1-4 to add the users to other accounts.
 
-### Edit users
+</Accordion>
+
+<Accordion title="Edit users">
 
 Users can be edited either one at a time or in groups.
 
@@ -263,7 +275,11 @@ Multi-user editing is an efficient way to change the account permissions of seve
 >    * Use the search box to find Alice, then individually edit her user to give her access to the Astounding app.
 >    * Repeat these steps for Bill and Charlie to give them access to Beautiful and Charming, respectively.
 
-### Delete users
+</Accordion>
+
+<div id="deleting-users" />
+
+<Accordion title="Delete users">
 
 Multiple users can be deleted from the account in bulk.
 
@@ -277,6 +293,8 @@ Multiple users can be deleted from the account in bulk.
 1. On the **Users** tab, select the checkboxes of the users you want to delete. You can use the search and filters to help find users.
 2. After selecting users, click the **Delete** button that now appears at the top-right of the table.
 3. The confirmation window lists users to be deleted. Click **Yes, delete** to confirm deletion.
+
+</Accordion>
 
 ### Manage users in bulk via API
 
@@ -298,7 +316,7 @@ Roles within AppsFlyer can be [predefined roles](#predefined-roles), [custom rol
 
 AppsFlyer is configured with many predefined roles:
 
-* [Admin—a special role](#admin%E2%80%94a-special-role)
+* [Admin—a special role](#admin)
 * Team manager
 * Marketing lead
 * Marketing
@@ -340,7 +358,7 @@ Only a user with an Admin role can [manage tokens](/docs/managing-appsflyer-toke
 
 #### Role duplication
 
-The Admin role **can't be duplicated** when creating [custom roles](#managing-custom-roles).
+The Admin role **can't be duplicated** when creating [custom roles](#manage-custom-roles).
 
 #### Invite new partners to AppsFlyer
 
@@ -348,7 +366,7 @@ A user with an admin role can [send an invitation link](/docs/partner-integratio
 
 ### Account owner
 
-The user created at the time the account was opened, the "account owner"**,** is **assigned the Admin role by default**. The account owner is initially responsible for creating additional users, until additional users with user management capabilities are created.
+The user created at the time the account was opened, the "account owner", is **assigned the Admin role by default**. The account owner is initially responsible for creating additional users, until additional users with user management capabilities are created.
 
 An account owner has unique characteristics beyond those of the Admin role who isn't the account owner. Unlike any Admin, the account owner **can't** be deleted, removed from the Admin role, or otherwise edited from the [**User management**](/docs/user-management#user-management-page) page. If you need to change the account owner, follow the [steps listed below](#changing-the-account-owner)
 
@@ -356,7 +374,7 @@ An account owner has unique characteristics beyond those of the Admin role who i
 
 The predefined roles in AppsFlyer have been configured with the specific combinations of capabilities required in most situations. For this reason, many advertisers find that they don't need to further customize roles. However, when additional customization is required, predefined roles are still a great starting point for managing your users' capabilities.
 
-Learn more about [managing custom roles](#managing-custom-roles).
+Learn more about [managing custom roles](#manage-custom-roles).
 
 ### Temp roles
 
@@ -370,9 +388,9 @@ Through the [Get roles API](https://dev.appsflyer.com/hc/reference/get_roles), y
 
 ## Manage custom roles
 
-### Create custom roles
+<Accordion title="Create custom roles">
 
-* **Prerequisite:** Only [account owners](#account-owner) or users with the [Admin role access](#admin%E2%80%94a-special-role) can create a custom role.
+* **Prerequisite:** Only [account owners](#account-owner) or users with the [Admin role access](#admin) can create a custom role.
 
 **To create a custom role:**
 
@@ -386,7 +404,9 @@ Through the [Get roles API](https://dev.appsflyer.com/hc/reference/get_roles), y
 5. After setting permissions to all the relevant capabilities, click **Save role**.  
    The new custom role is displayed in the left panel and can be assigned when creating new users or editing existing users.
 
-### Edit custom roles
+</Accordion>
+
+<Accordion title="Edit custom roles">
 
 **To edit a custom role:**
 
@@ -401,7 +421,9 @@ Through the [Get roles API](https://dev.appsflyer.com/hc/reference/get_roles), y
 >
 > Any changes you make to a custom role are automatically applied to **all existing users** in that role.
 
-### Delete custom roles
+</Accordion>
+
+<Accordion title="Delete custom roles">
 
 **To delete a custom role:**
 
@@ -410,9 +432,13 @@ Through the [Get roles API](https://dev.appsflyer.com/hc/reference/get_roles), y
 3. Confirm that you wish to delete the role.
    * A custom role can be deleted only when there are no users assigned to it. If there are users currently assigned to a custom role, assign these users to a different role before deleting the custom role.
 
+</Accordion>
+
 ## Special situations and additional procedures
 
-### Manage temp roles
+<div id="managing-temp-roles" />
+
+<Accordion title="Manage temp roles">
 
 If your account previously used our prior user management system, [**temp roles**](/docs/user-management#temp-roles) were assigned to existing users to ensure that they were brought into the new system with unchanged capabilities.
 
@@ -438,7 +464,11 @@ Temp roles were designed specifically to allow seamless transition from our prio
 > * If you move Diana from Temp role 1 to the Accounting role, she can’t later be moved back to Temp role 1.
 > * If Diana was the last user in Temp role 1 when you moved her to the Accounting role, Temp role 1 will no longer appear in your account.
 
-### Dashboard and feature availability for users with limited media source/geo access
+</Accordion>
+
+<div id="dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access" />
+
+<Accordion title="Dashboard and feature availability for users with limited media source/geo access">
 
 The following AppsFlyer dashboards are **not available** to users whose access is limited to specific media sources and geos:
 
@@ -459,7 +489,9 @@ Additionally, the following AppsFlyer features are **not available** to these us
 * Ad spend ingestion
 * Cost ETL
 
-### Combined media source and agency access
+</Accordion>
+
+<Accordion title="Combined media source and agency access">
 
 When you grant a user access to a specific agency **and** a specific media source, their data access reflects only the overlap between the two. They don't see all of that agency's data across every media source, and they don't see all of that media source's data across every agency — only the portion where both permissions intersect.
 
@@ -467,7 +499,11 @@ When you grant a user access to a specific agency **and** a specific media sourc
 >
 > You give a user access to Agency B and Media Source A. Agency B manages app installs coming from several media sources, including Media Source A. This user sees only the installs from Media Source A that Agency B manages — not Agency B's data from other media sources, and not Media Source A's data managed by other agencies.
 
-### Change the account owner
+</Accordion>
+
+<div id="changing-the-account-owner" />
+
+<Accordion title="Change the account owner">
 
 Because all Admins have essentially the same permissions as the account owner, changing the account owner is not usually necessary. But if you find that you must change the account owner, follow these steps to do so.
 
@@ -508,7 +544,11 @@ Once the change has been processed, you'll receive an email notification from Ap
 * If you want the prior account owner to continue using your AppsFlyer account, [create a new user](/docs/user-management#creating-users) for them and assign them a new role.
 * APIs using token v2 aren't affected by changing the account owner. [Learn more about managing tokens](/docs/managing-appsflyer-tokens).
 
-### Troubleshooting: "Can’t create this user"
+</Accordion>
+
+<div id="troubleshooting-can-t-create-this-user" />
+
+<Accordion title="Troubleshooting: 'Can’t create this user'">
 
 If you receive the error message *Can’t create this user* when entering the email address of a new user, it generally means that the email is already associated with an AppsFlyer user (either in your account or a different one). Follow the steps relevant to your situation:
 
@@ -523,7 +563,11 @@ If the user’s email is used in a different account or you can’t determine th
 * Add them to your account using a different email address. This must be a valid email address at which they can actually receive an email; or
 * Contact your Customer Success Manager (CSM) or send an email to our Customer Engagement team at [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
-### Resend a user invitation
+</Accordion>
+
+<div id="resending-a-user-invitation" />
+
+<Accordion title="Resend a user invitation">
 
 If a new user did not receive their [account activation invitation](#user-activation) or if they did not activate within 48 hours, you can resend the email as follows:
 
@@ -531,7 +575,9 @@ If a new user did not receive their [account activation invitation](#user-activa
    * Note that the user is still shown with an envelope icon ![pending_invitation_icon.png](https://files.readme.io/cd556e0b9137fbcfbf4bef574332622ca1e567ac76a041b7f7f3874052b037e6-31780969031825.png), indicating that they have not yet activated their account).
 2. Select **Resend email invite** from the menu.
 
-### Reset a user's two-factor authentication (2FA)
+</Accordion>
+
+<Accordion title="Reset a user's two-factor authentication (2FA)">
 
 If your account uses 2FA, there may be occasions on which you need to reset a user’s 2FA settings. Do so as follows:
 
@@ -539,3 +585,5 @@ If your account uses 2FA, there may be occasions on which you need to reset a us
 2. Select **Reset 2FA** from the menu.
 
 **Note:** An admin can reset any other admin's 2FA other than their own or the [account owner's](#account-owner). To reset the account owner's 2FA, contact the AppsFlyer Support team.
+
+</Accordion>

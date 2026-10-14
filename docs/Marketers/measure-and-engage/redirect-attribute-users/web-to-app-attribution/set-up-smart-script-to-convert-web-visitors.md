@@ -57,9 +57,11 @@ To set up the Smart Script, you can either:
 **Prerequisites**
 
 * An AppsFlyer account with at least one app.
-* A [OneLink template](/docs/create-a-onelink-template#procedures) that serves as the value of the [OneLinkURL parameter](/docs/set-up-smart-script-to-convert-web-visitors#arguments).
+* A [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template) that serves as the value of the [OneLinkURL parameter](/docs/set-up-smart-script-to-convert-web-visitors#arguments).
 
-### Create a OneLink Smart Script
+<div id="how-to-create-a-onelink-smart-script" />
+
+<Accordion title="Create a OneLink Smart Script">
 
 **To create a OneLink Smart Script:**
 
@@ -105,13 +107,17 @@ To set up the Smart Script, you can either:
 >
 > Every time you update the script, it needs to be implemented again
 
-### Edit or delete a script
+</Accordion>
+
+<div id="how-to-edit-or-delete-a-script" />
+
+<Accordion title="Edit or delete a script">
 
 **To edit or delete a script:**
 
 1. Click the dropdown arrow ![Down_arrow.jpg](https://files.readme.io/a82023665721be681f985548857c4c329f626435780bb1bff7a3821b32b69078-42045468433041.jpg) next to the Smart Script name.  
    Here you can see all your saved scripts  
-     
+
    ![Script_steps.jpg](https://files.readme.io/824c042dc23acaa14b360ce8cd792cfc2e85ee3c9c95e3fa694f96badfeb1fc2-42045468432657.jpg)
 2. Click on the pen icon next to the script you want to edit
    1. Follow the steps in [How to create a OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#set-up-onelink-smart-script)
@@ -121,7 +127,9 @@ To set up the Smart Script, you can either:
 >
 > Every time you update the script, it needs to be implemented again
 
-### Duplicate a script
+</Accordion>
+
+<Accordion title="Duplicate a script">
 
 **To duplicate a script:**
 
@@ -129,52 +137,47 @@ To set up the Smart Script, you can either:
 2. Click on the duplicate button ![SmartScript_duplicate.jpg](https://files.readme.io/ec05ea217331b588dc7033984287d46b61a37e41510546b67a0046ea281e0979-42045454920721.jpg) on the top banner
 3. Follow the steps in [How to create a OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#set-up-onelink-smart-script)
 
-### Argument structure
+</Accordion>
+
+<Accordion title="Argument structure">
 
 The OneLink Smart Script uses arguments to generate an outgoing URL based on the parameters of the incoming URL and the arguments defined in the script. The afParameters argument has a structure made up of several other arguments (parameters) used for attribution and deep linking, each of which contains a structure (referred to by developers as a configuration object) that has keys, override values, and a default value, as described in the table that follows.
 
 | Argument | Description | Example |
 | --- | --- | --- |
-| Incoming URL parameters (referred to by developers as keys) | * List of strings<br />* List of possible parameter/s in the incoming URL the script looks for, the value of which is placed as the value in the outgoing URL.<br />* The script searches from left to right and stops at the first match. | * Example: ['in\_channel', 'utm\_channel']<br />* For the channel parameter in the script, the script searches the incoming link for in\_channel and uses the value as the value for channel. |
-| Default value | * String<br />* State what you want your "fallback" value to be.<br />* If a parameter is not found from your key list, the defaultValue value is used in the outgoing URL.<br />* You can force a default value by passing an empty keys list. | Example: ['web\_video']<br /><br />For the channel parameter in the script, if you have the param in\_channel is not found, web\_video is used as the channel value. |
-| Override values | * Dictionary `\{string: string\}<br />* For values you want changed in the outgoing link, list the values in the incoming URL, alongside what you want them to be replaced with.<br />* The script replaces the param values of the incoming URL with the values you define. | Example: \{'video': 'video_new'\}`<br /><br />For the channel parameter in the script, anytime the incoming value is video, the script changes it to video\_new on the outgoing link. |
+| Incoming URL parameters (referred to by developers as keys) | <ul><li>List of strings</li><li>List of possible parameter/s in the incoming URL the script looks for, the value of which is placed as the value in the outgoing URL.</li><li>The script searches from left to right and stops at the first match.</li></ul> | <ul><li>Example: ['in\_channel', 'utm\_channel']</li><li>For the channel parameter in the script, the script searches the incoming link for in\_channel and uses the value as the value for channel.</li></ul> |
+| Default value | <ul><li>String</li><li>State what you want your "fallback" value to be.</li><li>If a parameter is not found from your key list, the defaultValue value is used in the outgoing URL.</li><li>You can force a default value by passing an empty keys list.</li></ul> | Example: ['web\_video']<br /><br />For the channel parameter in the script, if you have the param in\_channel is not found, web\_video is used as the channel value. |
+| Override values | <ul><li>Dictionary \{string: string\}</li><li>For values you want changed in the outgoing link, list the values in the incoming URL, alongside what you want them to be replaced with.</li><li>The script replaces the param values of the incoming URL with the values you define.</li></ul> | Example: \{'video': 'video\_new'\}<br /><br />For the channel parameter in the script, anytime the incoming value is video, the script changes it to video\_new on the outgoing link. |
 
-### Arguments (parameters and values)
+</Accordion>
+
+<div id="arguments" />
+
+<Accordion title="Arguments (parameters and values)">
 
 The OneLink Smart Script uses arguments to generate an outgoing URL based on the parameters of the incoming URL and the arguments defined in the script.
 
 #### Arguments (parameters and values) to implement the Smart Script
 
-| Argument | | Remarks | Record your responses (for you or your developer to use) |
-| --- | --- | --- | --- |
-| oneLinkURL (required) | | * Provide the OneLink template domain + template ID. **Note:** Not a OneLink custom link URL! * Example: **yourbrand.onelink.me/A1b2** * Branded domain example: **click.yourbrand.com/A1b2** |  |
-| afParameters  (required) | mediaSource  (required) | * Configuration object for media source. * Example:   * Keys: ['incoming\_mediasource’' 'utm\_source']   * Default value: ['any\_source']   * Override values: `\{twitter: 'twitter\_int', orig\_src: 'new\_src',  seo:'false'\} | Keys:  Default value:  Override values: |
-| campaign | * Configuration object for campaign. * Example:   * Keys: ['incoming\_campaign', 'utm\_campaign']   * Default value: ['any\_campaign\_name']   * Override values: \{campaign\_name: 'new\_campaign\_name'\} | Keys:  Default value:  Override values: |
-| channel | * Configuration object for channel. * Example:   * Keys: ['incoming\_channel', 'utm\_channel']   * Default value: ['any\_video']   * Override values: \{video: 'new\_video'\} | Keys:  Default value:  Override values: |
-| ad | * Configuration object for ad. * Example:   * Keys: ['incoming\_ad', 'utm\_ad']   * Default value: ['any\_ad\_name']   * Override values: \{ad\_name: 'new\_ad\_name'\} | Keys:  Default value:  Override values: |
-| adSet | * Configuration object for adset. * Example:   * Keys: ['incoming\_adset', 'utm\_adset']   * Default value: ['any\_ad\_name']   * Override values: \{adset\_name: 'new\_adset\_name'\} | Keys:  Default value:  Override values: |
-| deepLinkValue | * Configuration object for **deep\_link\_value**. * Example:   * Keys: ['product\_id', 'page\_name']   * Default value: 'new\_offers\_page'   * Override values: \{twenty\_percent\_off: 'thirty\_percent\_off'\} | Keys:  Default value:  Override values: |
-| afSub1-5 | Configuration object for **af\_sub[1-5]**. | Keys:  Default value:  Override values: |
-| googleClickIdKey | State what to call the parameter that carries the [GCLID](https://support.google.com/google-ads/answer/9744275?hl=en). **Note**! To display in AppsFlyer raw data reports, the param must be one of **af\_sub[1-5]**. |  |
-| Other (custom) query parameters | * List any other parameters you want to be included in the outgoing OneLink URL for attribution or deep linking, along with their configuration objects. * The name of the custom parameter is listed by the developer as a paramKey in the configuration object. * Example:   * paramKey: 'deep\_link\_sub1'   * Keys: ['page\_id']   * Default value: 'page1'   * Override values: \{page12: 'new\_page12'\}` | Param key:  Keys:  Default value:  Override values: |
+<table><thead><tr><th colspan="2">Argument</th><th>Remarks</th><th>Record your responses (for you or your developer to use)</th></tr></thead><tbody><tr><td colspan="2">oneLinkURL (required)</td><td><ul><li>Provide the OneLink template domain + template ID. <strong>Note: </strong>Not a OneLink custom link URL!</li><li>Example: <strong>yourbrand.onelink.me/A1b2</strong></li><li>Branded domain example: <strong>click.yourbrand.com/A1b2</strong></li></ul></td><td> </td></tr><tr><td rowspan="9"><p>afParameters</p><p>(required)</p></td><td><p>mediaSource</p><p>(required)</p></td><td><ul><li>Configuration object for media source.</li><li>Example:<ul><li>Keys: ['incoming_mediasource’' 'utm_source']</li><li>Default value: ['any_source']</li><li>Override values: `{twitter: 'twitter_int', orig_src: 'new_src',  seo:'false'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>campaign</td><td><ul><li>Configuration object for campaign.</li><li>Example:<ul><li>Keys: ['incoming_campaign', 'utm_campaign']</li><li>Default value: ['any_campaign_name']</li><li>Override values: {campaign_name: 'new_campaign_name'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>channel</td><td><ul><li>Configuration object for channel.</li><li>Example:<ul><li>Keys: ['incoming_channel', 'utm_channel']</li><li>Default value: ['any_video']</li><li>Override values: {video: 'new_video'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>ad</td><td><ul><li>Configuration object for ad.</li><li>Example:<ul><li>Keys: ['incoming_ad', 'utm_ad']</li><li>Default value: ['any_ad_name']</li><li>Override values: {ad_name: 'new_ad_name'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>adSet</td><td><ul><li>Configuration object for adset.</li><li>Example:<ul><li>Keys: ['incoming_adset', 'utm_adset']</li><li>Default value: ['any_ad_name']</li><li>Override values: {adset_name: 'new_adset_name'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>deepLinkValue</td><td><ul><li>Configuration object for <strong>deep_link_value</strong>.</li><li>Example:<ul><li>Keys: ['product_id', 'page_name']</li><li>Default value: 'new_offers_page'</li><li>Override values: {twenty_percent_off: 'thirty_percent_off'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>afSub1-5</td><td>Configuration object for <strong>af_sub[1-5]</strong>.</td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>googleClickIdKey</td><td>State what to call the parameter that carries the <a href="https://support.google.com/google-ads/answer/9744275?hl=en">GCLID</a>.<br/><strong>Note</strong>! <span>To display in AppsFlyer raw data reports, the param must be one of <strong>af_sub[1-5]</strong>.</span></td><td> </td></tr><tr><td><span>Other (custom) query parameters</span><br/> </td><td><ul><li>List any other parameters you want to be included in the outgoing OneLink URL for attribution or deep linking, along with their configuration objects.</li><li>The name of the custom parameter is listed by the developer as a paramKey in the configuration object.<span></span></li><li>Example:<ul><li>paramKey: 'deep_link_sub1'</li><li>Keys: ['page_id']</li><li>Default value: 'page1'</li><li>Override values: {page12: 'new_page12'}`</li></ul></li></ul></td><td><p>Param key:</p><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr></tbody></table>
 
-### Advanced arguments
+</Accordion>
+
+<Accordion title="Advanced arguments">
 
 The following table describes arguments that technical-savvy marketers or developers can implement in the Smart Script.
 
 #### Advanced arguments (parameters and values) to implement in the Smart Script
 
-| Argument | | Remarks | Record your responses (for you or your developer to use) |
-| --- | --- | --- | --- |
-| referrerSkipList | | * List of the strings in the HTTP referrer for a particular click (for example Twitter or Facebook) that if found, cause the Smart Script to return `null`. This can be useful for SRNs like X Ads and Meta ads, for which clicks are already reported. * Implementing this argument results in the script NOT generating a OneLink URL. |  |
-| urlSkipList | | * List of the strings in the URL for a particular click (for example af\_r) that if found, cause the Smart Script to return `null`. This can be useful if you use an AppsFlyer attribution link with af\_r to redirect users to your mobile website, and don't want data from the original click to be lost. * Implementing this argument results in the script NOT generating a OneLink URL. |  |
-| SEO | | * When enabled, and the media source isn't resolved from the **URL parameter mapping** section, we'll check whether users arrived from a search engine based on their web referrer URL and set the media source accordingly. (Available from version 2.10.3) |  |
+<table><thead><tr><th colspan="2">Argument</th><th>Remarks</th><th>Record your responses (for you or your developer to use)</th></tr></thead><tbody><tr><td colspan="2"><br/>referrerSkipList</td><td><ul><li>List of the strings in the HTTP referrer for a particular click (for example Twitter or Facebook) that if found, cause the Smart Script to return <code>null</code>. This can be useful for SRNs like X Ads and Meta ads, for which clicks are already reported.</li><li>Implementing this argument results in the script NOT generating a OneLink URL.</li></ul></td><td> </td></tr><tr><td colspan="2">urlSkipList</td><td><ul><li>List of the strings in the URL for a particular click (for example af_r) that if found, cause the Smart Script to return <code>null</code>. This can be useful if you use an AppsFlyer attribution link with af_r to redirect users to your mobile website, and don't want data from the original click to be lost.</li><li>Implementing this argument results in the script NOT generating a OneLink URL.</li></ul></td><td> </td></tr><tr><td colspan="2">SEO</td><td><ul><li>When enabled, and the media source isn't resolved from the <strong>URL parameter mapping</strong> section, we'll check whether users arrived from a search engine based on their web referrer URL and set the media source accordingly. (Available from version 2.10.3)</li></ul></td><td> </td></tr></tbody></table>
+
+</Accordion>
 
 ## Use cases
 
 The following sections provide Smart Script use cases for some common campaign/media source scenarios.
 
-### UTM parameters
+<Accordion title="UTM parameters">
 
 **To set up the script for UTM parameters**:
 
@@ -183,7 +186,9 @@ The following sections provide Smart Script use cases for some common campaign/m
 
 **Result**: The values in the incoming parameters (**utm\_source** and **utm\_campaign**) are used to populate the values of the (**media\_source** and **campaign**) parameters in the outgoing link.
 
-### Google Ads GCLID
+</Accordion>
+
+<Accordion title="Google Ads GCLID">
 
 The usual process for install attribution of Google Ads campaigns (which carry a GCLID parameter) requires users who click your ad to be redirected to the app store page URL.
 
@@ -196,7 +201,7 @@ You can also map Click IDs to other outgoing parameters (**af\_sub[1-5]**) to ha
 * This applies to install campaigns. For non-ACI search campaigns, meaning re-engagement campaigns, Google may be attributed as the media source, despite the Smart Script output.
 * If a GCLID is found, the script looks for the incoming parameter keyword. If found, it puts the keyword value in the outgoing URL as the value of af\_keywords.
 
-**Prerequisite**: On the Google dashboard, [enable auto-tagging](https://support.google.com/analytics/answer/1033981?hl=en)**.**  
+**Prerequisite**: On the Google dashboard, [enable auto-tagging](https://support.google.com/analytics/answer/1033981?hl=en).  
 With auto-tagging enabled, the URL contains the *GCLID* parameter.
 
 **To set up the script to map Google Ads GCLID to other parameters**:
@@ -218,7 +223,11 @@ With auto-tagging enabled, the URL contains the *GCLID* parameter.
 >
 > This GCLID solution is not officially supported or recommended by Google. In case Google deprecates the GCLID parameter we will change the script to support the changes. Follow this article, by clicking the **Follow** button in the article header, to get informed when there is an update to the article or attached script.
 
-### Facebook FBCLID
+</Accordion>
+
+<div id="facebook-click-id" />
+
+<Accordion title="Facebook FBCLID">
 
 Meta ads carry click IDs, called FBCLID. Starting in Smart Script version 2.8.1, when available, FBCLID will automatically be forwarded "as is" on outgoing URLs generated by the Smart Script. You can also map Click IDs to other outgoing parameters to have them available in AppsFlyer raw data reports.
 
@@ -228,7 +237,9 @@ Meta ads carry click IDs, called FBCLID. Starting in Smart Script version 2.8.1,
    Best practice: Select **af\_sub[1-5]**, so that the data displays in AppsFlyer raw data reports.
 2. Provide this in the [list of arguments](/docs/set-up-smart-script-to-convert-web-visitors#arguments) to the web developer. The result will be that in the outgoing URL, the FBCLID will be the value of the **af\_sub[1-5]** param.
 
-### TikTok (ttclid), X (twclid), and Snap(ScCid)
+</Accordion>
+
+<Accordion title="TikTok (ttclid), X (twclid), and Snap(ScCid)">
 
 Install attribution for TikTok, X (formerly Twitter), and Snap ad campaigns relies on network-specific Click ID parameters that are appended to ad clicks and used to match installs and post-install events to the originating ad.
 
@@ -249,7 +260,9 @@ See the following relevant web integration articles:
 * [TikTok](/docs/tiktok-for-business-create-web-based-campaigns)
 * [Snap](/docs/snapchat-create-web-based-campaigns)
 
-### SRNs, owned media, and other media source links
+</Accordion>
+
+<Accordion title="SRNs, owned media, and other media source links">
 
 [SRNs](/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer) like Snapchat or X Ads, work differently than Google Ads or a cross-platform like Meta ads. Campaigns from these SRNs lead your users to the web/landing page, and you are billed according to clicking leads, unrelated to any derived mobile users.
 
@@ -265,11 +278,13 @@ For these SRNs, script setup is the same as for links from owned media, or other
 
 > 📘 **Example**
 >
-> **Incoming URL**: https://hotel.me/incoming\_mediasource=twitter&incoming\_campaign=big\_social
+> **Incoming URL**: https://hotel.me/incoming_mediasource=twitter&incoming_campaign=big_social
 >
-> **Outgoing URL**: https://hotel.onelink.me/Ac4G?pid=twitter&c=big\_social
+> **Outgoing URL**: https://hotel.onelink.me/Ac4G?pid=twitter&c=big_social
 
-### AppsFlyer attribution links
+</Accordion>
+
+<Accordion title="AppsFlyer attribution links">
 
 AppsFlyer attribution links can be used when the media source is a click ad network. When you set up such a link in AppsFlyer, you have the option to add a **Redirection URL path (af\_r)** parameter with the desired URL path to your mobile website for web campaign-to-app attribution. You may not want the Script to create an outgoing OneLink URL, as then, some of the data from the original click may be lost.
 
@@ -279,11 +294,13 @@ AppsFlyer attribution links can be used when the media source is a click ad netw
 
 > 📘 **Example**
 >
-> **Incoming URL**: https://app.appsflyer.com/id123456789?pid=click\_ad\_network\_int&c=orlando&af\_r=hotel.me
+> **Incoming URL**: https://app.appsflyer.com/id123456789?pid=click_ad_network_int&c=orlando&af_r=hotel.me
 >
 > **Outgoing URL**: No outgoing URL.
 
-### Web referrer mapping
+</Accordion>
+
+<Accordion title="Web referrer mapping">
 
 Web referrer mapping shows you which page users arrived at your website from (for example, organic search results), enriching the data you have for analyzing installs and re-engagements from your Smart Script web-to-app flow.
 
@@ -299,14 +316,20 @@ You can set the Smart Script to collect this information from your landing page 
 
 To learn about organic search attribution for re-engagements using Universal Links and App Links, see [here](/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution).
 
-### SEO referrer mapping
+</Accordion>
+
+<div id="h_01M1BK4M22YAQ6YX4RZXRKZF7C" />
+
+<Accordion title="SEO referrer mapping">
 
 You can turn on **Media source for organic search installs** to automatically set the media source for organic search traffic when it isn't already resolved by the **URL parameter mapping** section.
 
 * If the user's web referrer matches a supported search engine (for example, google.com or bing.com), Media Source is set to the matching channel (for example, google\_organic\_seo).
 * If there's no match, the **Default value**, configured in URL parameter mapping, is used.
 
-### Desktop
+</Accordion>
+
+<Accordion title="Desktop">
 
 Most use cases in this article are of users coming from mobile devices. Therefore, when directed from the mobile website to an app store, they can immediately download your app.
 
@@ -314,13 +337,17 @@ However, desktop users shouldn't immediately be sent to an app store, because th
 
 **To set up the script for desktop users**:
 
-* In your [OneLink template](/docs/create-a-onelink-template#procedures), set a destination URL for **When link is clicked on desktop**. The URL should redirect to a dedicated web/landing page. The landing page can contain a web form where they fill in their details to get an SMS or an email with a link to download the app. It's up to you to create the web form and provide the URL to it in the script.
+* In your [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template), set a destination URL for **When link is clicked on desktop**. The URL should redirect to a dedicated web/landing page. The landing page can contain a web form where they fill in their details to get an SMS or an email with a link to download the app. It's up to you to create the web form and provide the URL to it in the script.
 
 **Result**: The script detects the device or platform the user is on. If it's desktop, the script generates an outgoing OneLink URL that redirects the user to your dedicated web/landing page.
 
 See also [Desktop-to-app conversion](/docs/qr-to-app-conversion).
 
-### QR codes
+</Accordion>
+
+<div id="qr-codes" />
+
+<Accordion title="QR codes">
 
 Smart Script displays a QR code on your web page, instead of a button with a link behind it. 
 
@@ -338,17 +365,19 @@ Smart Script displays a QR code on your web page, instead of a button with a lin
 >
 > **Incoming URL**:
 >
-> https://hotel.me/qr\_code.html?incmp=gogo&inmedia=email
+> https://hotel.me/qr_code.html?incmp=gogo&inmedia=email
 >
 > **Outgoing URL**:
 >
-> https://hotel.onelink.me/LtRd/?af\_js\_web=true&af\_ss\_ver=2\_1\_0&pid=email&c=gogo
+> https://hotel.onelink.me/LtRd/?af_js_web=true&af_ss_ver=2_1_0&pid=email&c=gogo
 >
 > **Outgoing QR code**:
 >
 > ![](https://files.readme.io/2f06149c901d8a97c2a544b8196e9afecbe3b3748ed8419a39c2dc5e3afa61ba-42045454923153.png)
 
-### Impressions
+</Accordion>
+
+<Accordion title="Impressions">
 
 The OneLink Smart Script can be used to count impressions on your website. To do so, the developer needs to call the impression function. Installs are then attributed to the impressions via [view-through attribution](/docs/measure-view-through-engagements).
 
@@ -367,9 +396,11 @@ The OneLink Smart Script can be used to count impressions on your website. To do
 >
 > As of February 1st, 2023 (Chrome 110 stable release), Google has made some changes to [reduce User-Agent data](https://developer.chrome.com/en/docs/privacy-sandbox/user-agent/). In order to properly get [view-thorough attributions](https://www.appsflyer.com/glossary/view-through-attribution/) using the OneLink Smart Script, you should use the OneLink Smart Script version 2.3 and above.
 
+</Accordion>
+
 ## Additional information
 
-### FAQ
+<Accordion title="FAQ">
 
 #### **Will the incoming URL for OneLink link generation work if the user browses to a different page on the website?**
 
@@ -399,9 +430,13 @@ We recommend turning off any ad blockers you have on your browser when creating 
 
 Smart Script uses Javascript and should work on all browsers.
 
-### Specs and limitations
+</Accordion>
+
+<Accordion title="Specs and limitations">
 
 | **Spec** | **Remarks** |
 | --- | --- |
 | URI scheme | Even if a URI scheme is set in the OneLink template to open the app for existing users, for links created using Smart Script, the af\_dp parameter with the URI scheme must be added by the developer to URLs as a [custom parameter](https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#set-additional-custom-parameters). |
-| # in incoming URL | Smart Script encounters issues when handling incoming URLs that include a hash ('#') symbol preceding the query parameters (indicated by a '?' sign). In such cases, Smart Script  reverts to default values. |
+| **in incoming URL**| Smart Script encounters issues when handling incoming URLs that include a hash ('#') symbol preceding the query parameters (indicated by a '?' sign). In such cases, Smart Script  reverts to default values. |
+
+</Accordion>

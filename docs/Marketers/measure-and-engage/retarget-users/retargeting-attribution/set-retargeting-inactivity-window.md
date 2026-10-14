@@ -46,7 +46,7 @@ By setting a minimum inactivity time, Advertisers don't attribute active users. 
 
 In the following retargeting scenarios, the inactivity period is defined for the media source.
 
-### Re-attribution
+<Accordion title="Re-attribution">
 
 The user scenario is depicted in the figure that follows. The user:
 
@@ -58,10 +58,12 @@ The user scenario is depicted in the figure that follows. The user:
 
 | Scenario | Inactivity threshold | User inactivity period | Result |
 | --- | --- | --- | --- |
-| A | 7 days | 8 days.<br /><br />**The user was inactive** for a period exceeding the inactivity threshold | * **Re-attribution** (retargeting reinstall)<br />* Attributed to retargeting media source A |
-| B | 14 days | 5 days<br /><br />The user was active. | * **Organic reinstall**<br />* **Non-organic reinstall:** if the user engaged with a UA media source.<br />* Retargeting media source A can't be attributed due to the user inactivity threshold. |
+| A | 7 days | 8 days.<br /><br />**The user was inactive** for a period exceeding the inactivity threshold | <ul><li>**Re-attribution** (retargeting reinstall)</li><li>Attributed to retargeting media source A</li></ul> |
+| B | 14 days | 5 days<br /><br />The user was active. | <ul><li>**Organic reinstall**</li><li>**Non-organic reinstall:** if the user engaged with a UA media source.</li><li>Retargeting media source A can't be attributed due to the user inactivity threshold.</li></ul> |
 
-### Re-engagement
+</Accordion>
+
+<Accordion title="Re-engagement">
 
 The user scenario is depicted in the figure that follows. The user:
 
@@ -73,12 +75,14 @@ The user scenario is depicted in the figure that follows. The user:
 
 | Scenario | Media source A inactivity threshold | User inactivity period | Result |
 | --- | --- | --- | --- |
-| A | 7 days | 8 days<br /><br />**The user was inactive** for a period exceeding the inactivity threshold | * **Re-engagement** attributed to media source A |
-| B | 7 days | 4 days<br /><br />**The user used the app** within the set inactivity period. | * **Regular session**<br />* Retargeting media source A is not attributed |
+| A | 7 days | 8 days<br /><br />**The user was inactive** for a period exceeding the inactivity threshold | <ul><li>**Re-engagement** attributed to media source A</li></ul> |
+| B | 7 days | 4 days<br /><br />**The user used the app** within the set inactivity period. | <ul><li>**Regular session**</li><li>Retargeting media source A is not attributed</li></ul> |
+
+</Accordion>
 
 ## Partner setup
 
-### SRN
+<Accordion title="SRN">
 
 SRNs that support inactivity periods have this feature set up on their Integration tab.
 
@@ -92,7 +96,9 @@ SRNs that support inactivity periods have this feature set up on their Integrati
 
 [![Inactivity_window_SRN.png](https://files.readme.io/a3a6dfb2270790a28b71581264c924ba1e4146d4975f64d3cee43a9e0ff3f172-36539146170897.png)](https://files.readme.io/a3a6dfb2270790a28b71581264c924ba1e4146d4975f64d3cee43a9e0ff3f172-36539146170897.png)
 
-### Non-SRN (click ad networks)
+</Accordion>
+
+<Accordion title="Non-SRN (click ad networks)">
 
 **To define an inactivity period for non-SRNs that support retargeting:**
 
@@ -104,7 +110,9 @@ SRNs that support inactivity periods have this feature set up on their Integrati
 
 [![](https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png)](https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png)
 
-### Agencies
+</Accordion>
+
+<Accordion title="Agencies">
 
 #### SRN
 
@@ -118,8 +126,8 @@ Agency (permission granted by the advertiser)
 
 | SRN | Agency |
 | --- | --- |
-| DoubleClick | * Enable/disable retargeting<br />* Configure an inactivity period |
-| Google Ads | * Cannot enable/disable retargeting<br />* If an agency has permissions, they can configure an inactivity period |
+| DoubleClick | <ul><li>Enable/disable retargeting</li><li>Configure an inactivity period</li></ul> |
+| Google Ads | <ul><li>Cannot enable/disable retargeting</li><li>If an agency has permissions, they can configure an inactivity period</li></ul> |
 | Meta ads/X Ads/Snapchat | Can't access retargeting and **Inactivity period** setup |
 
 #### Non-SRN
@@ -130,6 +138,8 @@ Partner (supports retargeting)
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations.**
 2. Select a non-SRN Ad network > **Attribution link** tab.
+
+</Accordion>
 
 ## Traits and limitations
 

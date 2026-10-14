@@ -23,7 +23,7 @@ x-zendesk:
   created_at: '2016-11-22T06:25:19Z'
   edited_at: '2023-11-09T16:07:04Z'
 ---
-> ❗️ Important!
+> 📘 **Important!**
 >
 > * The plugin is open-source and available on [GitHub](https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin).
 > * Go to our [Dev Hub](https://dev.appsflyer.com/hc/docs/react-native-plugin) to learn how to install and integrate the React Native plugin in your app.

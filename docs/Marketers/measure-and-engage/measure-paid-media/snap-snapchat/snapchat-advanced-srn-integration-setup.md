@@ -26,7 +26,7 @@ x-zendesk:
 
 ## Overview
 
-An Advanced SRN integration means that all [dual-consented](/docs/appsflyer-knowledge-base-glossary?query=glossar#dual-consent) traffic is attributed and reported as regular SRN traffic. For non-consented traffic, AppsFlyer is able to attribute and measure attribution based on clicks and impressions coming from Snapchat using [other attribution methods](/docs/self-reporting-networks-srns#how-does-attribution-work-with-advanced%E2%80%94srns), in accordance with privacy restrictions.
+An Advanced SRN integration means that all [dual-consented](/docs/appsflyer-knowledge-base-glossary?query=glossar#dual-consent) traffic is attributed and reported as regular SRN traffic. For non-consented traffic, AppsFlyer is able to attribute and measure attribution based on clicks and impressions coming from Snapchat using [other attribution methods](/docs/self-reporting-networks-srns#how-does-attribution-work-with-advanced-srns), in accordance with privacy restrictions.
 
 ## Set up Snapchat integration
 
@@ -130,19 +130,19 @@ Map AppsFlyer events with the partner via postbacks. If postback sending is enab
 
 1. Set the **Partner ID** (if required).
 2. Enable **In-app event postback.**
-3. Set the **In-app event postback window**, if required (read more about [in-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).
+3. Set the **In-app event postback window**, if required (read more about [in-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
 4. If available, select whether to send events automatically or manually. Learn more about [sending all events as they are](/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped).
 5. Click **Add event** to add an SDK or server-to-server event to the list.
 6. Complete the parameters required.
 7. [Optional] Click ![conditional-iae-postbacks-icon.png](https://files.readme.io/6524810d15f08b4b85deab9c2cbfb8fd7880126b3c3180e3ecf4ead5f1f0a9ae-17798909160465.png) to set conditions for sending certain in-app events to the partner.  
-   Learn more about [conditional in-app events postbacks](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks).
+   Learn more about [conditional in-app events postbacks](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks).
 
 | Parameter name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.  <br />**Tip**: Don't see the event you are looking for?<br /><br />* Make sure to activate the event on a device with a non-organic installation and recheck.<br />* Type it in **AppsFlyer event** , then click **Create custom**. Read more about [custom event mapping](/docs/in-app-event-postback-configuration#custom-events). |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<br /><br />* **Text field:** Get the corresponding event ID from the partner.<br />* **Drop-down box:** Select the most suitable pre-defined AppsFlyer event.<br />* **As is**: Send the events as they are, without name mapping. |
-| **for users from** | Select the sending option for the event:<br /><br />* **This partner only**: send postbacks only when this event is attributed to this partner.<br />* **All media sources including organic**: send postbacks for events attributed to any partner and organic events. |
-| **including** | * **No data (default)**: send only the event itself without the event value.<br />* **Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).<br />* **Values without revenue**: send all the parameters **excluding** the revenue value. |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event** , then click **Create custom**. Read more about [custom event mapping](/docs/in-app-event-postback-configuration#custom-events).</li></ul> |
+| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
+| **for users from** | Select the sending option for the event:<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources including organic**: send postbacks for events attributed to any partner and organic events.</li></ul> |
+| **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
 
 </Accordion>
 
@@ -215,7 +215,7 @@ Deep linking with Snapchat is based on using a native deep link in Snapchat's pl
 
 To perform deep linking with Snapchat:
 
-1. Verify that **deep linking** for [retargeting is enabled for Snapchat](/docs/snapchat-advanced-srn-integration-setup#how-to-set-up-deep-links-on-snap-platform).
+1. Verify that **deep linking** for [retargeting is enabled for Snapchat](/docs/snapchat-advanced-srn-integration-setup#set-up-deep-links-on-the-snap-platform).
 2. Verify that [re-engagement attribution is enabled in AppsFlyer](/docs/app-settings#reengagement-attribution).
 3. Take the app's deep link scheme URI and add **at least** the following parameters:
    * **PID** - The media source in this case is always **snapchat\_int**. This enables all data to appear in the AppsFlyer dashboard under the **Snapchat\_int** media source.
@@ -237,8 +237,8 @@ client://home?pid=snapchat\_int&c=TEST&is\_retargeting=true
 
 AppsFlyer provides a number of solutions for deferred deep linking:
 
-* [**UDL (Unified deep linking)**](https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl) **:** Snapchat clicks include a [deep\_link\_value](/docs/about-link-structure-and-parameters#deep_link_value) field (when deep link is set for the ad), and are supported under the UDL solution.
-* [**GCD (Get Conversions Data) API**](https://dev.appsflyer.com/hc/docs/dl_work_flow#recommended-implement-extended-deferred-deep-linking) **:** This is the recommended option to access Snapchat user conversion data in real time, directly at the SDK level. The data returned in the GCD API includes the [`af_dp`](/docs/about-link-structure-and-parameters#af_dp) parameter, which holds the actual deep link destination (user destination within the app).
+* [**UDL (Unified deep linking)**](https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl): Snapchat clicks include a [deep\_link\_value](/docs/about-link-structure-and-parameters#deep_link_value) field (when deep link is set for the ad), and are supported under the UDL solution.
+* [**GCD (Get Conversions Data) API**](https://dev.appsflyer.com/hc/docs/dl_work_flow#recommended-implement-extended-deferred-deep-linking): This is the recommended option to access Snapchat user conversion data in real time, directly at the SDK level. The data returned in the GCD API includes the [`af_dp`](/docs/about-link-structure-and-parameters#af_dp) parameter, which holds the actual deep link destination (user destination within the app).
 * **Using conversion data parameters:** You can create custom logic to navigate the user to your content using other parameters, such as the Campaign name, Adset name, or any other field that is returned as part of the attribution data for Snapchat installs.
 
 ## Set up Snapchat for agencies

@@ -25,11 +25,11 @@ x-zendesk:
 ---
 Watch the video below to learn:
 
-- What is the attribution flow when working with agencies?
-- How to set up an agency integration with your app?
-- How can you get both the agency and ad network attribution data?
+* What is the attribution flow when working with agencies?
+* How to set up an agency integration with your app?
+* How can you get both the agency and ad network attribution data?
 
-> ❗️ Important!
+> 📘 **Important!**
 >
 > When working with agencies, turning off an integrated partner does not automatically disable certain attribution capabilities for the agencies linked to that partner:
 >
@@ -42,4 +42,4 @@ Watch the video below to learn:
 >
 > **Note:** If the advertiser deactivates the partner without first turning off these settings, the agencies may continue to use these attribution capabilities.
 
-![Set up agencies video](https://files.readme.io/667bd473a2843a1a44c8967ba21c3970af91b4803e842bce8ffaeb8e16a41d83-64214fb852dc42840148fa30b7d237bf.webp)
+![](https://fast.wistia.com/embed/medias/3oc17c9r89/swatch)

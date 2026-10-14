@@ -32,21 +32,18 @@ An analytics partner account in AppsFlyer is a specialized account for analytics
 
 **To set up the integration, follow these steps:**
 
-### Step 1: Register account
+<Accordion title="Step 1: Register account">
 
-1. **Create a new PID via advertiser invitation:**
+1. **Create a new PID via advertiser invitation:**   
+   Analytics partner accounts (and PID creation) can only be initiated through an advertiser’s invitation. Share this [link](/docs/set-up-an-integrated-partner#invite-new-partners-to-appsflyer) with your advertiser and ask them to send you an invitation.
+2. **Complete registration:**  
+   Follow the steps provided in the invitation email to complete the ad network registration process.   
 
-Analytics partner accounts (and PID creation) can only be initiated through an advertiser’s invitation. Share this [link](/docs/set-up-an-integrated-partner#invite-new-partners-to-appsflyer) with your advertiser and ask them to send you an invitation.
+   **Note:** Ensure that the email address used for registration is not associated with an existing AppsFlyer account as a team member or admin.
 
-2. **Complete registration:**
+</Accordion>
 
-Follow the steps provided in the invitation email to complete the ad network registration process.
-
-> 📘 Note
->
-> Ensure that the email address used for registration is not associated with an existing AppsFlyer account as a team member or admin.
-
-### Step 2: Set up postback endpoint and profile
+<Accordion title="Step 2: Set up postback endpoint and profile">
 
 1. **Approval email:** Once your registration is approved, you’ll receive an email inviting you to complete mandatory integration steps.
 2. **Configure postback endpoint:** Refer to the [Postback macros for analytics partners](/docs/postback-macros-for-analytics-partners) article to set up your postback endpoint and macros using AppsFlyer’s [postback management platform](/docs/self-serve-integration-management-for-ad-networks).
@@ -55,14 +52,17 @@ Follow the steps provided in the invitation email to complete the ad network reg
    2. On the Profile tab, complete the company information, and upload your company logo.
    3. Click **Save** to apply the changes.
 
-### Step 3: Convert account type
+</Accordion>
 
-1. **Open a ticket for account conversion:**
+<Accordion title="Step 3: Convert account type">
 
-In AppsFlyer, from the top menu, select **Help** > **Contact our team**. Use the partner assistant widget to submit a ticket requesting the conversion of your account to an analytics account. Be sure to include the following information:
-   - A list of mutual advertisers planning to collaborate with your company.
-   - An overview of your company’s background and information about the core services you provide.
+1. **Open a ticket for account conversion:**  
+   In AppsFlyer, from the top menu, select **Help** > **Contact our team**. Use the partner assistant widget to submit a ticket requesting the conversion of your account to an analytics account. Be sure to include the following information:
+   * A list of mutual advertisers planning to collaborate with your company.
+   * An overview of your company’s background and information about the core services you provide.
 2. **Validation and conversion:** AppsFlyer will validate your request and convert your ad network account to an analytics account after verification.
+
+</Accordion>
 
 ## FAQ
 

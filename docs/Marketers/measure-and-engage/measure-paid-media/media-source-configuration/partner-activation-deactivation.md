@@ -26,53 +26,53 @@ x-zendesk:
 
 Partner integrations can be either active or inactive. An integration is first activated by turning on the **Activate partner** toggle from the main integration page. There are various integration types. An integration can also be considered active if any other [integration type](#integration-types) (see table below) is turned on, even while the **Activate partner** toggle is turned off.
 
-> ❗️ Important!
+> 📘 **Important!**
 >
-> When enabling a partner integration, certain data, including personal information (e.g., Advertising ID, IP address), will, by default, be shared with them by you. Please ensure you have the appropriate legal basis and rights to share this data. You can limit data sharing with a partner by following the instructions provided in the Aggregated Advanced Privacy framework and [Privacy preserving methods in the SDK](/docs/apply-privacy-preserving-sdk-methods) articles.
+> When enabling a partner integration, certain data, including personal information (e.g., Advertising ID, IP address), will, by default, be shared with them by you. Please ensure you have the appropriate legal basis and rights to share this data. You can limit data sharing with a partner by following the instructions provided in the [Aggregated Advanced Privacy framework](/docs/apply-aggregated-advanced-privacy-framework) and [Privacy preserving methods in the SDK](/docs/apply-privacy-preserving-sdk-methods) articles.
 
 **To get to the partner integration page of the currently selected app:**
 
-- In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations** and select the partner.
+* In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations** and select the partner.
 
 The sections below describe the various integration types and the impact of partner activation settings on integrations:
 
-### Integration types
+<div id="integration-types" />
 
-The primary integration ( **Activate partner**) is activated on the first integration tab. Additional integration types (see table below) are activated from subsequent tabs. **Each integration runs individually**. For an integration to be considered active, at least one integration type must be turned on, regardless of the state of the Activate partner toggle.
+<Accordion title="Integration types">
+
+The primary integration (**Activate partner**) is activated on the first integration tab. Additional integration types (see table below) are activated from subsequent tabs. **Each integration runs individually**. For an integration to be considered active, at least one integration type must be turned on, regardless of the state of the Activate partner toggle.
 
 | Integration type | Description |
 | --- | --- |
-| **Main integration (** [**Activate partner**](/docs/set-up-an-integrated-partner#a-activate-partner) **)** | Enables conversions to be attributed and postbacks to be sent to partners |
+| **Main integration (**[**Activate partner**](/docs/set-up-an-integrated-partner#a-activate-partner)) | Enables conversions to be attributed and postbacks to be sent to partners |
 | [**Cost**](/docs/roi360-cost-aggregation-overview) (when applicable) | Enables getting data on cost, clicks, and impressions for your campaigns, adsets, ads, and geos/countries |
 | [**Ad revenue**](/docs/roi360-guide-ad-revenue-attribution) (when applicable) | Enables getting data on revenue from your ads |
 | [**SKAN**](/docs/skan-integrated-partners-list) (when applicable) | Enables getting SKAN postbacks from partners |
 | [**Permissions**](/docs/set-up-an-integrated-partner#permissions-tab) | Enables granting permissions for ad networks and agencies to access your data and perform actions in your integration |
 
-### Effect of the partner activation setting
+</Accordion>
+
+<Accordion title="Effect of the partner activation setting">
 
 The following table presents the impact of partner activation settings on attribution and postbacks in various scenarios.
 
-| Scenario | Activate partner:<br />On | Activate partner: Off |
-| --- | --- | --- |
-| Attribution and postbacks for new installs, re-attributions, and re-engagements | **Attribution:** Yes<br />**Postbacks:** Yes | **Attribution:** No<br />**Postbacks:** No |
-| Engagement (click) occurs before deactivation; install/re-attribution/re-engagement occurs after deactivation | Not applicable | The deactivated partner is not attributed. |
-| Clicks and impressions | The engagements can be attributed and displayed in the dashboard. | - The click redirects to a 403 forbidden page.<br />- The engagements cannot be attributed and not displayed in the dashboard. |
-| SKAN attribution | Not applicable.<br />When SKAN attribution is configured, SKAN data is recorded whether **Activate partner** is turned on or off. | |
+<table><thead><tr><th>Scenario</th><th>Activate partner:<br/>On</th><th>Activate partner: Off</th></tr></thead><tbody><tr><td>Attribution and postbacks for new installs, <span>re-attributions, and re-engagements</span></td><td><p><strong>Attribution:</strong> Yes</p><p><strong>Postbacks:</strong> Yes</p></td><td><p><strong>Attribution:</strong> No</p><p><strong>Postbacks:</strong> No</p></td></tr><tr><td><span>Engagement (click) occurs before deactivation; install/re-attribution/re-engagement occurs after deactivation</span></td><td><p><span>Not applicable</span></p><p><strong> </strong></p></td><td><span>The deactivated partner is not attributed.</span></td></tr><tr><td>Clicks and impressions</td><td>The engagements can be attributed and displayed in the dashboard.</td><td><ul><li>The click redirects to a 403 forbidden page.</li><li>The engagements cannot be attributed and not displayed in the dashboard.</li></ul></td></tr><tr><td>SKAN attribution</td><td colspan="2"><p>Not applicable.</p><p>When SKAN attribution is configured, SKAN data is recorded whether <strong>Activate partner</strong> is turned on or off. </p></td></tr></tbody></table>
+
+</Accordion>
 
 ## Activate a partner integration
 
 **To activate or edit the main integration (Integration tab) of the currently selected app:**
 
-1. **To activate:** In AppsFlyer, from the side menu, select **Collaborate > Partner Integrations > Marketplace** tab.
-
-**To edit:** In AppsFlyer, from the side menu, select **Collaborate > Partner Integrations > Active integrations** tab.
+1. **To activate:** In AppsFlyer, from the side menu, select **Collaborate > Partner Integrations > Marketplace** tab.  
+   **To edit:** In AppsFlyer, from the side menu, select**Collaborate > Partner Integrations > Active integrations** tab.
 2. Search for the partner and select it. You’re directed to the integration setup page.
-3. From the **Integration** tab, turn on **Activate partner**.
+3. From the **Integration**tab, turn on **Activate partner**.
 4. Click **Save Integration**.
 
 See [other integration types](#integration-types).
 
-> 🚧 Caution
+> 📘 **Caution**
 >
 > Make sure not to use the **Activate partner** setting to pause or end campaigns. Doing so could cause irreversible damage to active campaign measurement.
 
@@ -93,14 +93,10 @@ You can deactivate a partner integration of your app by turning off the **Activa
 
 1. In AppsFlyer, from the side menu, select **Collaborate > Partner Integrations > Active integrations** tab.
 2. Search for the partner and select it. You’re directed to the integration setup page.
-3. From the **Integration** tab, turn off **Activate partner**.
+3. From the **Integration**tab, turn off **Activate partner**.
 4. Click **Save Integration**.
-5. To completely deactivate the partner from all [other integration types](#integration-types), go through each of the tabs on the integration page and disable them.
-
-> 📘 Note
->
-> For Google and Meta ads, to stop recording SKAN data, go to the SKAN tab and delete the connection.
-
+5. To completely deactivate the partner from all [other integration types](#integration-types), go through each of the tabs on the integration page and disable them.  
+   **Note:** For Google and Meta ads, to stop recording SKAN data, go to the SKAN tab and delete the connection.
 6. Click **Save Integration**.
 7. [Optional] After saving the integration, while remaining on the configuration page, you can **deactivate the partner from other apps:**
    1. From the top-left corner, under the partner name, click the app name to open the list of apps.
@@ -113,8 +109,8 @@ Partners and agencies have different dashboard views and configuration options, 
 
 ### Partner visibility
 
-- Partners view the **Activate partner** setting in read-only mode. This is the case even if the partner has permission to configure the integration.
-- Visibility of partner settings depends on whether it was the marketer or the agency who configured the integration, as detailed in the following table:
+* Partners view the **Activate partner** setting in read-only mode. This is the case even if the partner has permission to configure the integration.
+* Visibility of partner settings depends on whether it was the marketer or the agency who configured the integration, as detailed in the following table:
 
 | Integration configured by | Setup visible to partner |
 | --- | --- |
@@ -132,36 +128,34 @@ You can grant agencies permission to work with your app and run traffic on your 
 3. Go to the **Permissions** tab and turn on **Agency Permissions.**
 4. [Optional] Grant the agency additional [permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
-> 📘 Note
+> 📘 **Note**
 >
-> - An **agency** can activate or deactivate the **Activate partner** setting for **non-SRN partners**.
-> - A **Marketer** can activate or deactivate the **Activate partner** setting for **SRNs**. When doing so, installs from that SRN **aren't attributed to the agency**.
+> * An **agency** can activate or deactivate the **Activate partner** setting for **non-SRN partners**.
+> * A **Marketer** can activate or deactivate the **Activate partner** setting for **SRNs**. When doing so, installs from that SRN **aren't attributed to the agency**.
 
 #### Disabled agency permissions
 
 When permissions are disabled for agencies:
 
-- The agency can't access the app on the AppsFlyer dashboard.
-- New installs and events are not attributed to the agency.
-- Postbacks are not sent to the media sources used by the agency.
-- New events from conversions prior to disabling the agency are attributed and displayed in the marketer's dashboard, but postbacks are not sent to the media sources.
+* The agency can't access the app on the AppsFlyer dashboard.
+* New installs and events are not attributed to the agency.
+* Postbacks are not sent to the media sources used by the agency.
+* New events from conversions prior to disabling the agency are attributed and displayed in the marketer's dashboard, but postbacks are not sent to the media sources.
 
-> 📘 Note
->
-> If the marketer disables agency permissions, the agency's historical data (such as installs and cost) becomes non-transparent.
+**Note:** If the marketer disables agency permissions, the agency's historical data (such as installs and cost) becomes non-transparent.
 
 The following examples describe what happens to traffic that continues to be sent after a marketer removes agency permissions:
 
-#### Example 1
+> 📘 **Example 1**
+>
+> **Agency campaign with a non-SRN (attribution link partner)**
+>
+> The traffic is attributed to organic, or to a prior engagement if still within its lookback window. The agency is not attributed.
+>
+> This example is also applicable to scenarios in which AppsFlyer receives click-through attribution links as well as querying the partner’s API
 
-**Agency campaign with a non-SRN (attribution link partner)**
-
-The traffic is attributed to organic, or to a prior engagement if still within its lookback window. The agency is not attributed.
-
-This example is also applicable to scenarios in which AppsFlyer receives click-through attribution links as well as querying the partner’s API
-
-#### Example 2
-
-**Agency campaign with an SRN (attribution link partner)**
-
-The traffic is attributed to the SRN on the marketer's dashboard, but not attributed to the agency.
+> 📘 **Example 2**
+>
+> **Agency campaign with an SRN (attribution link partner)**
+>
+> The traffic is attributed to the SRN on the marketer's dashboard, but not attributed to the agency.

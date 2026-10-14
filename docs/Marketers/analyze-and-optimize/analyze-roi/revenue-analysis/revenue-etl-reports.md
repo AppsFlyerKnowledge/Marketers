@@ -22,31 +22,31 @@ x-zendesk:
   created_at: '2023-06-25T16:57:02Z'
   edited_at: '2026-05-14T15:39:31Z'
 ---
+## Revenue ETL
+
 With ROI360 Revenue ETL, your revenue data is sent via Data Locker to cloud storage for loading into your BI systems.
 
-> 📘 Note
->
-> With the exception of the Legacy ad revenue [single version] reports, all reports require an ROI360 Advanced package subscription.
+The following table shows the available revenue reports. **Note**: With the exception of the Legacy ad revenue [single version] reports, all reports require an ROI360 Advanced package subscription.
 
 | Report | Integration type | Description | Data freshness |
 | --- | --- | --- | --- |
-| [Legacy ad revenue [single version]](/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level):<br />- Attributed ad revenue [single version x+1]<br />- Organic ad revenue [single version x+1]<br />- Retargeting ad revenue [single version x+1] | - Impression-level (via SDK)<br />- Device-level (via S2S API)<br />- Impression-level (via SDK) with device-level (via S2S API) | - Contains ad revenue data.<br />- Single version (no further data updates).<br />- If there are both API and SDK integrations, reports contain only API data. | - Daily (Available on Day x+1) [Learn more](/docs/roi360-guide-ad-revenue-attribution#data-freshness) |
-| [Ad revenue [versioned]](/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level):<br />- Attributed ad revenue [versioned]<br />- Organic ad revenue [versioned]<br />- Retargeting ad revenue [versioned] | - Impression-level (via SDK)<br />- Device-level (via S2S API)<br />- Impression-level (via SDK) with device-level (via S2S API) | - Contains the most up-to-date ad revenue data.<br />- [Versioned](/docs/data-locker-for-marketers#version-folders) | - Intraday. [Learn more](/docs/roi360-guide-ad-revenue-attribution#data-freshness)<br />- Data updates from 4 hours to 14 days after the ad impression. |
-| [Ad revenue [SDK impression level]](/docs/revenue-etl-reports#impression-level-report) | - Impression-level (via SDK)<br />- Impression-level (via SDK) with device-level (via S2S API) | - Contains ad revenue SDK data.<br />- Provides maximum data freshness and granularity. | Hourly. [Learn more](/docs/roi360-guide-ad-revenue-attribution#data-freshness) |
-| [Transaction-level stores revenue](/docs/revenue-etl-reports#transactionlevel-stores-revenue-report) | ROI360 IAP and subscription revenue integration | - Contains ROI360 validated in-app purchase and subscription raw data at the transaction level.<br />- Provides maximum data freshness and data granularity.<br />- Includes unique ROI360 monetization-related data and net revenue. | Hourly |
-| [Device-level stores revenue [versioned]](/docs/revenue-etl-reports#devicelevel-stores-revenue-report) | ROI360 IAP and subscription revenue integration | - Contains ROI360 validated in-app purchase and subscription raw data at the device level.<br />- Includes unique ROI360 net revenue data. | Every 8 hours |
+| [Legacy ad revenue [single version]](/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level):<ul><li>Attributed ad revenue [single version x+1]</li><li>Organic ad revenue [single version x+1]</li><li>Retargeting ad revenue [single version x+1]</li></ul> | <ul><li>Impression-level (via SDK)</li><li>Device-level (via S2S API)</li><li>Impression-level (via SDK) with device-level (via S2S API)</li></ul> | <ul><li>Contains ad revenue data.</li><li>Single version (no further data updates).</li><li>If there are both API and SDK integrations, reports contain only API data.</li></ul> | <ul><li>Daily (Available on Day x+1) [Learn more](/docs/roi360-guide-ad-revenue-attribution#data-freshness)</li></ul> |
+| [Ad revenue [versioned]](/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level):<ul><li>Attributed ad revenue [versioned]</li><li>Organic ad revenue [versioned]</li><li>Retargeting ad revenue [versioned]</li></ul> | <ul><li>Impression-level (via SDK)</li><li>Device-level (via S2S API)</li><li>Impression-level (via SDK) with device-level (via S2S API)</li></ul> | <ul><li>Contains the most up-to-date ad revenue data.</li><li>[Versioned](/docs/data-locker-for-marketers#version-folders)</li></ul> | <ul><li>Intraday. [Learn more](/docs/roi360-guide-ad-revenue-attribution#data-freshness)</li><li>Data updates from 4 hours to 14 days after the ad impression.</li></ul> |
+| [Ad revenue [SDK impression level]](/docs/revenue-etl-reports#impression-level-report) | <ul><li>Impression-level (via SDK)</li><li>Impression-level (via SDK) with device-level (via S2S API)</li></ul> | <ul><li>Contains ad revenue SDK data.</li><li>Provides maximum data freshness and granularity.</li></ul> | Hourly. [Learn more](/docs/roi360-guide-ad-revenue-attribution#data-freshness) |
+| [Transaction-level stores revenue](/docs/revenue-etl-reports#transactionlevel-stores-revenue-report) | ROI360 IAP and subscription revenue integration | <ul><li>Contains ROI360 validated in-app purchase and subscription raw data at the transaction level.</li><li>Provides maximum data freshness and data granularity.</li><li>Includes unique ROI360 monetization-related data and net revenue.</li></ul> | Hourly |
+| [Device-level stores revenue [versioned]](/docs/revenue-etl-reports#devicelevel-stores-revenue-report) | ROI360 IAP and subscription revenue integration | <ul><li>Contains ROI360 validated in-app purchase and subscription raw data at the device level.</li><li>Includes unique ROI360 net revenue data.</li></ul> | Every 8 hours |
 
 ## Reports
 
 Details about the different reports—how they work, how to subscribe to them, and how to access them—can be found in the sections that follow.
 
-### [Legacy] Ad revenue (single version)
+<div id="ad-revenue-single-version-report-device-level" />
+
+<Accordion title="[Legacy] Ad revenue (single version)">
 
 The report shows a single version of ad revenue data of one day aggregated to the device level. The report is available on day X+1 (X is the day of the revenue event occurrence).
 
-> 📘 Note
->
-> Separate reports provide the organic and retargeting revenue data. These reports are identical in structure and availability.
+**Note:** Separate reports provide the organic and retargeting revenue data. These reports are identical in structure and availability.
 
 [Download the Ad revenue single version report data sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vSuZYSPuAWIG-MappxQDIT3sl8UmN6MLKP2SKsbREekVAvKSHuUAUAtUE6JapanANJbKsTzCOID8z7G/pub?output=xlsx).
 
@@ -54,8 +54,8 @@ The report shows a single version of ad revenue data of one day aggregated to th
 
 Depending on your ad revenue partner integration type, the report data can originate from either:
 
-- **SDK**: Impression-level data payloads sent by the ROI360 Ad Revenue SDK connector.
-- **S2S:** Device-level reports pulled by an API request from partners (mediation or monetization networks).
+* **SDK**: Impression-level data payloads sent by the ROI360 Ad Revenue SDK connector.
+* **S2S:** Device-level reports pulled by an API request from partners (mediation or monetization networks).
 
 To learn how to set the integration type, see: Connect to ad revenue integrated partners.
 
@@ -63,15 +63,13 @@ To learn how to set the integration type, see: Connect to ad revenue integrated 
 
 1. **Data ingestion:** The report can originate from the ad revenue SDK connector or S2S API request (see the section above).
 2. **Data processing**: AppsFlyer ROI360 Ad Revenue performs the following:
+
    1. Data normalization,
    2. Attribution to the install source and data enrichment,
    3. Ad revenue events generation,
    4. Events are aggregated to the device level.
 
-> 📘 Note
->
-> A report can have more than one device-level aggregation for the same device. This may happen because device-level aggregation is based on monetization-related dimensions such as monetization network, placement, and ad type. For example, if the app display ads in two different placements, revenue events from each placement are aggregated separately on the device level.
-
+   **Note:** A report can have more than one device-level aggregation for the same device. This may happen because device-level aggregation is based on monetization-related dimensions such as monetization network, placement, and ad type. For example, if the app display ads in two different placements, revenue events from each placement are aggregated separately on the device level.
 3. **Data delivery**: The device-level data is written to the single report version.
 
 #### When is the report data available?
@@ -87,9 +85,7 @@ To learn how to set the integration type, see: Connect to ad revenue integrated 
 2. In the **Data Locker content** pane scroll down to the **ROI360 RevenueETL** tile.
 3. Select **Attributed revenue [single version].**
 
-> 📘 Note
->
-> You can also select the same report for retargeting and organic (Retargeting/Organic ad revenue [single version]).
+**Note:** You can also select the same report for retargeting and organic  (Retargeting/Organic ad revenue [single version]).
 
 #### How to access the report in your bucket?
 
@@ -101,7 +97,7 @@ With the following format: `<bucket-name>/t=attributed_ad_revenue/dt=<dt=yyyy-mm
 
 An example of the attributed ad revenue single version report folder hierarchy in the advertiser bucket:
 
-```auto
+```
 bucket
 |
 └── t=attributed_ad_revenue
@@ -128,25 +124,25 @@ bucket
     |
     ├── dt=2023-05-31
     |   |
-    .   .
+    .   . 
     .   .
 ```
 
 **Legend:**
 
-- **dt**: Date when the revenue events included in the report occurred.
-- **t:** report type
-- **h:** single version creation hour
+* **dt**: Date when the revenue events included in the report occurred.
+* **t:** report type
+* **h:** single version creation hour
 
-### Ad revenue (versioned)
+</Accordion>
+
+<Accordion title="Ad revenue (versioned)">
 
 The report shows multiple versions of revenue data of a single date. For example, the revenue occurring on June 21 is reported on June 21, June 22, June 23, June 24, June 28, and July 5.
 
 The purpose of collecting multiple versions of the same day is to capture revenue calculation variations that arise from time-dependent conditions. For example impressions that had revenue value in real-time, may have a different value a day later.
 
-> 📘 Note
->
-> Separate reports provide the organic and retargeting revenue data. These reports are identical in structure and availability.
+**Note:** Separate reports provide the organic and retargeting revenue data. These reports are identical in structure and availability.
 
 [Download the Ad revenue versioned report data sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vQek1x3rYnYQq3jctSz5hnWG_Nk_LQk2ixMTQFVMb8K6w-UmeNKvKOif3-nudAyIqp9tyuoq9R-FhVz/pub?output=csv).
 
@@ -154,9 +150,9 @@ The purpose of collecting multiple versions of the same day is to capture revenu
 
 Depending on your partner integration type, the report data can originate from either:
 
-- **SDK**: Impression-level data payloads sent by the ROI360 Ad Revenue SDK connector.
-- **S2S:** Device-level reports pulled by an API request from partners (mediation or monetization networks).
-- **S2S + SDK:** Payloads originating from both SDK and S2S.
+* **SDK**: Impression-level data payloads sent by the ROI360 Ad Revenue SDK connector.
+* **S2S:** Device-level reports pulled by an API request from partners (mediation or monetization networks).
+* **S2S + SDK:** Payloads originating from both SDK and S2S.
 
 To learn how to set the integration type, see: Connect to ad revenue integrated partners.
 
@@ -164,24 +160,24 @@ To learn how to set the integration type, see: Connect to ad revenue integrated 
 
 1. **Data ingestion:** The report can either originate from the SDK or S2S API request (see the section above).
 2. **Data processing:** AppsFlyer ROI360 Ad Revenue performs the following:
+
    1. Data normalization,
    2. Attribution to the install source and data enrichment,
    3. Ad revenue events generation,
    4. Events are aggregated to the device level.
 
-> 📘 Note
->
-> A report can have more than one device-level aggregation for the same device. This may happen because device-level aggregation is based on monetization-related dimensions such as monetization network, placement, and ad type. For example, if the app display ads in two different placements, revenue events from each placement are aggregated separately on the device level.
-
+   **Note:** A report can have more than one device-level aggregation for the same device. This may happen because device-level aggregation is based on monetization-related dimensions such as monetization network, placement, and ad type. For example, if the app display ads in two different placements, revenue events from each placement are aggregated separately on the device level.
 3. **Data delivery**: Device-level data is written to multiple report versions according to a predetermined schedule (specified below).
 
 #### When are the report versions available?
 
 The table provided below outlines the generation schedules for both the S2S and SDK versions. Customers who benefit from ROI360 Ad Revenue Freshness to Accuracy will receive both versions, ensuring optimal accuracy and up-to-date information.
 
-> 📘 Note
->
-> Some S2S-originated versions may not be created. If the data from the partner(s) did not change since the last pull, a new version will NOT be generated.
+**Note:** Some S2S-originated versions may not
+be created.
+If the data from the partner(s) did not change since the
+last pull,
+a new version will NOT be generated.
 
 | Integration type | Version Day (X = revenue event occurrence day) | Version available at | The version includes revenue events occurring between |
 | --- | --- | --- | --- |
@@ -199,17 +195,20 @@ The table provided below outlines the generation schedules for both the S2S and 
 | S2S | Day X+3 | 06:00-07:00 | 00:00 — 24:00 |
 | S2S | Day X+7 | 08:00-09:00 | 00:00 — 24:00 |
 | S2S | Day X+14 | 11:00-12:00 | 00:00 — 24:00 |
-| SDK + S2S | All SDK and S2S versions above | | |
+| SDK + S2S | All SDK and S2S versions above |  |  |
 
 #### How to subscribe to the report?
 
-1. In AppsFlyer, from the side menu, select **Report** > **Data Locker**.
-2. In the **Data Locker content** pane scroll down to the **ROI360 RevenueETL** tile.
+1. In AppsFlyer, from the side menu, select **Report**
+   > **Data Locker**.
+2. In the **Data Locker content** pane scroll
+   down
+   to the **ROI360 RevenueETL** tile.
 3. Select **Attributed Ad revenue [versioned].**
 
-> 📘 Note
->
-> You can also select the same report for retargeting and organic (Retargeting/Organic ad revenue [versioned]).
+**Note:** You can also select the same report
+for retargeting
+and organic  (Retargeting/Organic ad revenue [versioned]).
 
 #### How to access the report in your bucket?
 
@@ -221,8 +220,8 @@ The path to the report consists of the following folder hierarchy:
 
 An example of a report tree in the advertiser bucket:
 
-```auto
-Autobucket
+```
+bucket
 |
 └── t=attributed_ad_revenue_v2
     |
@@ -250,11 +249,21 @@ Autobucket
                 .
 ```
 
-- **Legend:**
-  - **t:** Report type
-  - **dt**: Date when the revenue events included in the report occurred.
-  - **version**: The version’s name is the epoch timestamp of the version creation date and time, e.g., **version=1685588879**.
-- The origin of the version, whether S2S or SDK, can be learned from the version creation time. The first SDK versions originate from the SDK. The others are S2S.
+* **Legend:**
+  * **t:** Report type
+  * **dt**: Date when the revenue events
+    included
+    in the report occurred.
+  * **version:** The version’s name
+    is the epoch
+    timestamp of the version creation date and time,
+    e.g.,
+    **version=1685588879**.
+* The origin of the version, whether S2S or SDK, can be
+  learned
+  from the version creation time. The first SDK versions
+  originate
+  from the SDK. The others are S2S.
 
 | Integration type | Version Day (X = revenue event occurrence day) | Version available at | The version includes revenue events occurring between |
 | --- | --- | --- | --- |
@@ -273,7 +282,11 @@ Autobucket
 | S2S | Day X+7 | 08:00-09:00 | 00:00 — 24:00 |
 | S2S | Day X+14 | 11:00-12:00 | 00:00 — 24:00 |
 
-### Ad revenue (SDK impression level)
+</Accordion>
+
+<div id="impression-level-report" />
+
+<Accordion title="Ad revenue (SDK impression level)">
 
 The report shows impression-level data divided into folders by occurrence hour. Each folder **only contains impressions that occurred during that hour**.
 
@@ -316,7 +329,7 @@ The path to the report consists of the following folder hierarchy:
 
 An example of a report tree in the advertiser bucket:
 
-```auto
+```
 bucket
 |
 └── t=attributed_adrevenue_sdk_impression_level/
@@ -339,9 +352,9 @@ bucket
     |   └── h=24
     |       |
     |       └── part-00000-4762858-d62a-446e-b499-dd05f2d5434d-c000.csv.gz
-    |
+    |    
     ├── dt=2023-06-02
-    |   |
+    |   |  
     |   ├── h=0
         .   .
         .   .
@@ -349,11 +362,15 @@ bucket
 
 **Legend:**
 
-- **t:** Report type
-- **dt**: Date when the revenue events included in the report occurred.
-- **h**: Hourly folder containing the CSV file with impressions that occurred during that specific hour.
+* **t:** Report type
+* **dt**: Date when the revenue events included in the report occurred.
+* **h**: Hourly folder containing the CSV file with impressions that occurred during that specific hour.
 
-### Transaction-level stores revenue
+</Accordion>
+
+<div id="transactionlevel-stores-revenue-report" />
+
+<Accordion title="Transaction-level stores revenue">
 
 This report presents raw in-day data at the transaction level, divided into hourly folders containing only the transactions relevant for that hour.
 
@@ -391,7 +408,7 @@ The path to the report consists of the following folder hierarchy:
 
 An example of a report tree in the advertiser bucket:
 
-```auto
+```
 bucket
 |
 └── t=stores_rawdata
@@ -414,9 +431,9 @@ bucket
     |   └── h=24
     |       |
     |       └── part-00000-4762858-d62a-446e-b499-dd05f2d5434d-c000.csv.gz
-    |
+    |    
     ├── dt=2023-06-02
-    |   |
+    |   |  
     |   ├── h=0
         .   .
         .   .
@@ -424,11 +441,15 @@ bucket
 
 **Legend:**
 
-- **t:** report type
-- **dt**: Date when the revenue events included in the report occurred.
-- **h**: Hourly folder containing the CSV file with transactions that occurred during that specific hour.
+* **t:** report type
+* **dt**: Date when the revenue events included in the report occurred.
+* **h**: Hourly folder containing the CSV file with transactions that occurred during that specific hour.
 
-### Device-level stores revenue (versioned)
+</Accordion>
+
+<div id="devicelevel-stores-revenue-report" />
+
+<Accordion title="Device-level stores revenue (versioned)">
 
 The device-level store revenue report specifies in-app purchase and auto-renewable subscription events captured by ROI360 products. These events include unique ROI360 monetization-related dimensions. Customer-issued in-app events are not included in this report.
 
@@ -472,7 +493,7 @@ The path to the report consists of the following folder hierarchy:
 
 An example of a report tree in the advertiser bucket:
 
-```auto
+```
 bucket
 |
 └── t=stores_devicedata
@@ -503,6 +524,8 @@ bucket
 
 **Legend:**
 
-- **t:** report type
-- **dt**: Date when the revenue events included in the report occurred.
-- **version**: The version’s name is the epoch timestamp of the version creation date and time, e.g., **version=1685588879**.
+* **t:** report type
+* **dt**: Date when the revenue events included in the report occurred.
+* **version**: The version’s name is the epoch timestamp of the version creation date and time, e.g., **version=1685588879**.
+
+</Accordion>

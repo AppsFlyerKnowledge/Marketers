@@ -25,7 +25,7 @@ x-zendesk:
 | **What's new?** | Ad revenue signals have new fields. |
 | --- | --- |
 | **Effective date** | September 19, 2024 |
-| **What you should know** | The following table shows which fields are being added to ad revenue signals for UA ad networks. See the [raw data field dictionary](/docs/raw-data-field-dictionary) for definitions and details of each field.<br /><br />\| Report \| API field names \|<br />\| --- \| --- \|<br />\| [Ad revenue signals for UA ad networks](/docs/ad-revenue-signals-for-ua-ad-networks) \| * ad\_unit * placement * mediation\_network * ad\_revenue\_ad\_type * engagement\_type \| |
+| **What you should know** | The following table shows which fields are being added to ad revenue signals for UA ad networks. See the [raw data field dictionary](/docs/raw-data-field-dictionary) for definitions and details of each field.<table><thead><tr><th>Report</th><th>API field names</th></tr></thead><tbody><tr><td>[Ad revenue signals for UA ad networks](/docs/ad-revenue-signals-for-ua-ad-networks)</td><td>\* ad\_unit \* placement \* mediation\_network \* ad\_revenue\_ad\_type \* engagement\_type</td></tr></tbody></table> |
 | Report | API field names |
-| [Ad revenue signals for UA ad networks](/docs/ad-revenue-signals-for-ua-ad-networks) | * ad\_unit<br />* placement<br />* mediation\_network<br />* ad\_revenue\_ad\_type<br />* engagement\_type |
+| [Ad revenue signals for UA ad networks](/docs/ad-revenue-signals-for-ua-ad-networks) | <ul><li>ad\_unit</li><li>placement</li><li>mediation\_network</li><li>ad\_revenue\_ad\_type</li><li>engagement\_type</li></ul> |
 | **What you need to do** | Configure your BI systems to ingest and use the new fields. |

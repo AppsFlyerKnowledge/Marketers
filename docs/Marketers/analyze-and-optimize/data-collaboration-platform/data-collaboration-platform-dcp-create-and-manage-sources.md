@@ -26,9 +26,9 @@ x-zendesk:
 
 In the Data Collaboration Platform (DCP), a source is a dataset, typically uploaded to AppsFlyer from your cloud storage. These sources form the foundation of any collaboration, supplying the data that your collaborators can use for audience creation and activation. This article contains everything you need to know about creating and managing your sources, including:
 
-* [Source data requirements](#h_01HPKB2ERPANE0CAXFP9RG5YEH)
-* [Creating sources](#h_01HPKB2ERPX2T413N3T93YBBZB)
-* [Managing your sources](#h_01HPKB2ERS5PK2P2XTC4ZMPCMC)
+* [Source data requirements](#source-data-requirements)
+* [Creating sources](#create-a-source)
+* [Managing your sources](#manage-your-sources)
 
 ## Source data requirements
 
@@ -38,7 +38,7 @@ It's recommended to [prepare your source data](/docs/data-collaboration-platform
 
 Data within sources must meet these requirements:
 
-* **Date** (only)**:** yyyy-mm-dd (for example, `2023-04-18`)
+* **Date** (only): yyyy-mm-dd (for example, `2023-04-18`)
 * **Date and time:**
   * **Format:** yyyy-MMM-dd hh:mm:ss (*for example*, `2023-APR-18 15:30:35`)
   * **Time zone:** UTC
@@ -170,7 +170,6 @@ If AppsFlyer generates the folders, the only additional information required is 
 >
 > If you manually created the folder path, make sure the connection and path you enter in the **Source location** section match the path you manually created.
 
-#### 
 
 #### Source location as local files
 
@@ -203,7 +202,6 @@ When setting up a source in the Data Collaboration Platform (DCP), you must choo
 >
 > Please determine which method is best before selecting. Once an option is selected and **Generate folders** is clicked, a file path along with instructions for handling data uploads is created within your selected cloud service. To prevent folder duplications and errors, you can **change the sync method only once** after the initial selection.
 
-#### 
 
 #### Snapshot upload requirements
 
@@ -226,11 +224,11 @@ Use this method to upload a complete, self-contained file that fully replaces th
 | Guideline | Why it matters | How to comply |
 | --- | --- | --- |
 | **Complete dataset** | DCP must replace the prior state in full | Generate an export that includes every record, not just changes |
-| **Date-partitioned folder (**`dt=`**)** | Enables date‑range filtering & retention management | Place each snapshot under `dt=YYYY‑MM‑DD/` |
-| **Version sub‑folder (**`v=`**)** | Allows multiple snapshots on the same day | First upload under `v=1/`; retries use `v=2/`, `v=3/`, etc. |
+| **Date-partitioned folder (**`dt=`) | Enables date‑range filtering & retention management | Place each snapshot under `dt=YYYY‑MM‑DD/` |
+| **Version sub‑folder (**`v=`) | Allows multiple snapshots on the same day | First upload under `v=1/`; retries use `v=2/`, `v=3/`, etc. |
 | `data/` **sub-folder** | Organizes your files | Store Parquet / CSV / Avro files in this folder |
 | `_SUCCESS` **marker** | Signals DCP ingestion to begin | Upload an empty file named `_SUCCESS` inside the `v=` folder after all data files land |
-| **Supported file type and size** |  | * Supported file types: .csv or .gz<br />* Maximum file size: 5 GB |
+| **Supported file type and size** |  | <ul><li>Supported file types: .csv or .gz</li><li>Maximum file size: 5 GB</li></ul> |
 
 > 📘 **Important!**
 >
@@ -283,7 +281,6 @@ Example of how folder structure should look after uploading a complete snapshot 
 
 [![Snapshot example bucket.png](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)
 
-#### 
 
 #### Append upload requirements
 
@@ -315,7 +312,7 @@ Why use Append?
 | **Upload cadence** | Keeps transfer cost & ops overhead low | Upload daily, or bundle 7-day folders and upload weekly |
 | **One folder per day** | Enables date filtering & avoids scanning large batches | Place each day's delta in `dt=YYYY‑MM‑DD/` |
 | **Unique file names** | Prevents accidental overwrites | Give files unique names modeled like this:`events_2025‑08‑04.parquet` `events_2025‑08‑05.parquet` |
-| **Required columns** | Enables tracking of changes | The file must include:<br /><br />* * A date column to associate records with a reporting timeframe.<br />  * A version column to track data revisions.   <br />      <br />    **Note:** Files missing these columns will result in a loading error in DCP. |
+| **Required columns** | Enables tracking of changes | The file must include:<ul><li>A date column to associate records with a reporting timeframe.<ul><li>A version column to track data revisions.</li></ul></li></ul>**Note:** Files missing these columns will result in a loading error in DCP. |
 
 **Folder anatomy:**
 
@@ -360,11 +357,11 @@ source_name/
 
 Map source fields to DCP fields, test it, and save the configured data:
 
-1. [Load your source fields](#h_01HPKB2ERQTJPGG68FSEBHVVJA)
-2. [Configure the source fields](#h_01HX64YHGHMK352E3RXHBFV0B5)
-3. [Verify EU user inclusion](#01HZKZ2T33TYCQ8J59YGDYN7DK)
-4. [Test the source data](#h_01HX6WGD421PCWEWTN5YJ7V42H)
-5. [Save the source](#h_01HYX92EXSJNM5B2PDXEAEBNFS)
+1. [Load your source fields](#1-load-your-source-fields)
+2. [Configure the source fields](#2-configure-the-source-fields)
+3. [Verify EU user inclusion](#3-verify-eu-user-inclusion)
+4. [Test the source data](#4-test-the-source-data)
+5. [Save the source](#5-save-the-source)
 
 #### 1. Load your  source fields
 
@@ -474,7 +471,7 @@ Each field lands in one of these states:
 
 > 📘 **Important!**
 >
-> As with manually added fields, if an AI-suggested mapping uses a [List of... type](#h_01KYSJNEWS5QY5Q13Z11TNJHX1), the source file must be uploaded or connected as Parquet. CSV and GZIP files don't support array-typed columns.
+> As with manually added fields, if an AI-suggested mapping uses a [List of... type](#important-5), the source file must be uploaded or connected as Parquet. CSV and GZIP files don't support array-typed columns.
 
 **To remove a field:**
 
@@ -491,7 +488,7 @@ This option allows you to include a field in the audience that isn't currently p
 
 **Field types include:**
 
-* [**Identifier**](#h_01KYSMJKRA2E13PH2QS671BSKG)
+* [**Identifier**](#identifier-vs-list-of-identifiers)
   * Android ID
   * AppsFlyer ID
   * CUID
@@ -512,7 +509,7 @@ This option allows you to include a field in the audience that isn't currently p
   * ZIP+4 code
   * LUID
   * Person ID
-* [**List of identifiers**](#h_01KYSMJKRA2E13PH2QS671BSKG)
+* [**List of identifiers**](#identifier-vs-list-of-identifiers)
   * Hashed emails (no dots)
   * Hashed phones (no plus)
   * Hashed emails
@@ -602,13 +599,13 @@ The sources you've created are displayed in the **Sources** tab. From here, you 
 
 #### Edit the source name
 
-When editing the source name, make sure to [follow these naming requirements](#h_01K1ZHNZEQ3NSN3V7NQ34G8VC8).
+When editing the source name, make sure to [follow these naming requirements](#requirements-and-guidelines).
 
 #### Edit the source location
 
 1. From the **Edit source** page > **Source location**, select a different data connection.
 2. Select the relevant location details.
-3. [Optional] [Test the source](#h_01HX6WGD421PCWEWTN5YJ7V42H).
+3. [Optional] [Test the source](#4-test-the-source-data).
 4. Click **Save.**
 
 #### Edit the field mapping

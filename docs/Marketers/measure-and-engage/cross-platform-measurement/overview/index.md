@@ -24,7 +24,6 @@ Guides for getting started with Cross-platform measurement
     How to promote, attribute, and measure app installs on platforms to ad views on other platforms. For example, mobile app installs to ads viewed on CTV devices, game console app installs to ads viewed on mobile or desktops (web), and CTV app installs to ads viewed on mobile or desktop (web).
   </Card>
   <Card title="CTV, PC, and console platform direct attribution links" href="/docs/ctv-pc-and-console-platform-direct-attribution-links" icon="fa-solid fa-link">
-    Learn about the AppsFlyer attribution link structure and parameters for CTV, PC, and console platforms. Note : For Android and iOS apps, including Android PC games, use mobile attribution link instructions .
   </Card>
   <Card title="Cross-platform landing pages with Smart Script" href="/docs/cross-platform-landing-pages-with-smart-script" icon="fa-solid fa-globe">
     Use a cross-platform landing page running the AppsFlyer Smart Script to perform web-to-app attribution. Meaning, convert users who see a web ad from any media source into app users on CTV, PC, console, or mobile platforms.

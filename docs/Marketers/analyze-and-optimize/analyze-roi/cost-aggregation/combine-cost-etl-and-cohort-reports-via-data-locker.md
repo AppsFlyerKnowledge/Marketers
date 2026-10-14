@@ -43,7 +43,9 @@ The sections that follow provide the queries and considerations you need to take
 * [Advanced aggregated cohort reports](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-advanced-aggregated-cohort-report)
 * [Cohort reports via Data Locker](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-cohort-report)
 
-### Query to combine Cost ETL and Advanced aggregated cohort report
+<div id="query-to-combine-cost-etl-and-advanced-aggregated-cohort-report" />
+
+<Accordion title="Query to combine Cost ETL and Advanced aggregated cohort report">
 
 **To combine the Cost ETL and cohort reports, your BI developer should**:
 
@@ -143,7 +145,11 @@ WHERE ag.conversion_date between {start date} and {end date}
 GROUP BY ALL;
 ```
 
-### Query to combine Cost ETL and cohort report
+</Accordion>
+
+<div id="query-to-combine-cost-etl-and-cohort-report" />
+
+<Accordion title="Query to combine Cost ETL and cohort report">
 
 **To combine the Cost ETL and cohort reports, your BI developer should**:
 
@@ -239,6 +245,8 @@ WHERE dl.conversion_date between {start date} and {end date}
    and cst.date between {start date} and {end date}
 GROUP BY ALL;
 ```
+
+</Accordion>
 
 > 📘 **See also**
 >

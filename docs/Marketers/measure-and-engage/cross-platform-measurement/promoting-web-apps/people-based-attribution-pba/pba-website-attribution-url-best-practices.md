@@ -30,9 +30,9 @@ To get the best campaign granularity results combined with the most accurate att
 
 The AppsFlyer website attribution solution supports several campaign parameter classes. The classes are ranked in priority as follows:
 
-- [Highest priority] PID
-- Click IDs from specific channels like Google, DoubleClick, and Microsoft
-- [Lowest priority] UTM
+* [Highest priority] PID
+* Click IDs from specific channels like Google, DoubleClick, and Microsoft
+* [Lowest priority] UTM
 
 The [PBA media source attribution rules](/docs/pba-media-source-attribution-rules) determine how a given user is attributed. Parameter classes are ranked by priority. If more than one parameter class is found on a link, the class having the highest priority is awarded the attribution.
 
@@ -59,12 +59,12 @@ Each parameter class functions in the context of a silo. As such, if you need UR
 
 The use of parameters of multiple classes is illustrated in the context of Meta ads as follows:
 
-- **PID group**:  `www.website.com?pid=facebook_int&c={{campaign.name}}&af_c_id={{campaign.id}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}`
-- **UTM group**: `www.website.com?utm_source=facebook&utm_medium=paidsocial&utm_campaign={{campaign.name}}`
-- If you combine classes but include only some of the required parameters, AppsFlyer might not provide the full granularity. For example, if you use `www.website.com?utm_source=facebook&c={{campaign.name}}` the following occurs:
-  - AppsFlyer uses the UTM class because there is no PID class and determines the media source using utm\_source.
-  - However, the campaign can't be determined since _c=_ is part of the PID class, but pid isn't included.
-  - To solve this, assuming you need the utm\_source for other purposes, consider this option: `www.website.com?pid=facebook_int&c={{campaign.name}}&utm_source=facebook`. With this structure, AppsFlyer uses the PID class to identify the media source. Other PID parameters, such as c=, can be included and the utm\_source is disregarded because it has a lower priority.
+* **PID group**:  `www.website.com?pid=facebook_int&c={{campaign.name}}&af_c_id={{campaign.id}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}`
+* **UTM group**: `www.website.com?utm_source=facebook&utm_medium=paidsocial&utm_campaign={{campaign.name}}`
+* If you combine classes but include only some of the required parameters, AppsFlyer might not provide the full granularity. For example, if you use `www.website.com?utm_source=facebook&c={{campaign.name}}` the following occurs:
+  * AppsFlyer uses the UTM class because there is no PID class and determines the media source using utm\_source.
+  * However, the campaign can't be determined since *c=* is part of the PID class, but pid isn't included.
+  * To solve this, assuming you need the utm\_source for other purposes, consider this option: `www.website.com?pid=facebook_int&c={{campaign.name}}&utm_source=facebook`. With this structure, AppsFlyer uses the PID class to identify the media source. Other PID parameters, such as c=, can be included and the utm\_source is disregarded because it has a lower priority.
 
 ### Implement dynamic URLs using ad network macros
 
@@ -72,11 +72,11 @@ Use network macros (AKA valuetrack params) to save time when building templates 
 
 Networks use different macros to populate the parameters in the URL. Consequently, you must check ad network documentation to verify that you use the macros correctly. For example, if you want to pass the campaign ID in the af\_c\_id, you can avoid hard-coding the actual campaign ID for each URL, and just use the macros:
 
-- Google Adwords: `www.website.com?af_c_id={campaignid}`
-- Meta ads: `www.website.com?af_c_id={{campaign.id}}`
-- Pinterest ads: `www.website.com?af_c_id={campaignid}`
-- Snapchat ads: `www.website.com?af_c_id={{campaign.id}}`
-- Microsoft ads (Bing): `www.website.com?af_c_id={campaignid}`
+* Google Adwords: `www.website.com?af_c_id={campaignid}`
+* Meta ads: `www.website.com?af_c_id={{campaign.id}}`
+* Pinterest ads: `www.website.com?af_c_id={campaignid}`
+* Snapchat ads: `www.website.com?af_c_id={{campaign.id}}`
+* Microsoft ads (Bing): `www.website.com?af_c_id={campaignid}`
 
 ### Consistent case within parameters
 
@@ -90,12 +90,12 @@ In the case of Google Ads campaigns, you can get campaign granularity by integra
 
 ### Question marks
 
-- Use only one question mark between the URL landing page and the parameters
-- There should be no other question marks used in the URL
+* Use only one question mark between the URL landing page and the parameters
+* There should be no other question marks used in the URL
 
-For example,  `www.website.com?parameters`
+For example,  `www.website.com?parameters`
 
-Example **incorrect** uses:
+Example **incorrect** uses: 
 
 `www.website.com??parameters`
 

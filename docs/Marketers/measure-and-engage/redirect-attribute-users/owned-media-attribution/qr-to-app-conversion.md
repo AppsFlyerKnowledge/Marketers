@@ -38,7 +38,7 @@ QR codes can be created either:
 * [Manually, in the AppsFlyer UI](/docs/qr-to-app-conversion#manual-qr-code-setup)
 * [Dynamically, using the OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#qr-codes) (specifically designed for web-to-app desktop flows)
 
-### QR to App conversion
+<Accordion title="QR to App conversion">
 
 #### MANUAL QR CODE SETUP
 
@@ -48,7 +48,7 @@ QR codes can be created either:
 * For attribution: [The AppsFlyer SDK already integrated](/docs/integrate-the-appsflyer-sdk) in each of your mobile apps.
   * If the SDK is not yet installed in your apps, it is still possible to create a working redirection link, but it will not be possible to deep link, deferred deep link, or measure installs in your dashboard.
 
-* A [OneLink template](/docs/create-a-onelink-template#procedures) set up.
+* A [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template) set up.
 
 **To set up a QR code for QR-to-app conversion**:
 
@@ -64,7 +64,9 @@ QR codes can be created either:
    * See [best practices](/docs/qr-to-app-conversion#best-practices).
    * Developer assistance may be required.
 
-### Customize QR code
+</Accordion>
+
+<Accordion title="Customize QR code">
 
 ![OnelinkQRFinal__1_.gif](https://files.readme.io/b1ad71a95057994fa0e2d4afbc1e75a99c468696ec90be419e38de664df86659-11941291055505.gif)
 
@@ -94,7 +96,9 @@ You can customize the QR codes generated via OneLink by:
 4. Set the QR code color.
 5. Click **Save**.
 
-### Measure QR-to-app conversions
+</Accordion>
+
+<Accordion title="Measure QR-to-app conversions">
 
 You can measure the performance of your QR code and its placement on different ads/media sources, by comparing impressions (for desktop pageviews), clicks (for QR code scans), and app installs.
 
@@ -103,10 +107,14 @@ You can measure the performance of your QR code and its placement on different a
 1. In AppsFlyer, check the Overview dashboard or other AppsFlyer analytics tools, and record the total **clicks** and **installs** with you QR code media source (such as **desktop\_web**).
 2. Record the total desktop page views (impressions) using your web analytics software.
 3. Measure performance:
-   * [Click-through rate](/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates::74b1530a)
-   * [Click-to-install rate](/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates::74b1530a)
+   * [Click-through rate](/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1)
+   * [Click-to-install rate](/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1)
 
-### Best practices
+</Accordion>
+
+<div id="best-practices" />
+
+<Accordion title="Best practices">
 
 The following are tips to maximize QR-to-app conversions.
 
@@ -121,11 +129,13 @@ The following are tips to maximize QR-to-app conversions.
 
   [![](https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg)](https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg)
 
+</Accordion>
+
 ## FAQ
 
 In this section, you can find a list of frequently asked questions about QR codes.
 
-### QR creation with long links vs. short links – is there any difference?
+<Accordion title="QR creation with long links vs. short links – is there any difference?">
 
 Your QR code will function with either a long or short URL. However, if you use a short URL, you'll be able to update the link parameters and behavior via the OneLink dashboard (under the Link Management or Bulk links section) without needing to replace the published QR code—since the short URL itself remains unchanged.
 
@@ -134,13 +144,17 @@ Your QR code will function with either a long or short URL. However, if you use 
 
 **Tip:** Creating a QR code using a short URL enables you to later modify the link’s parameters and behavior without needing to regenerate the QR code.
 
-### Can you create a QR code and change the behavior behind it retroactively, after printing the QR, for example?
+</Accordion>
+
+<Accordion title="Can you create a QR code and change the behavior behind it retroactively, after printing the QR, for example?">
 
 Yes, you can—if the QR code is based on a short OneLink URL that you can edit (for example, one created via the OneLink UI). A **QR code is a visual representation of the URL behind it**.  Changing the URL itself will create a new corresponding QR code (e.g., the QR code for mike.onelink.me/123A/shorturl is different from the QR code for mike.onelink.me/123A/example).
 
 However, because a OneLink short URL is a hashed URL, its parameters and redirection rules are configured on the backend and aren't visible in the URL. This means you can keep the same visible URL and QR code while editing its backend configuration.
 
-### What AppsFlyer options are available for generating QR codes?
+</Accordion>
+
+<Accordion title="What AppsFlyer options are available for generating QR codes?">
 
 You have the following options:
 
@@ -161,9 +175,13 @@ You have the following options:
   * QR codes are created accordingly
   * Allows QR code customization
 
-### Can you bulk create QR codes?
+</Accordion>
+
+<Accordion title="Can you bulk create QR codes?">
 
 Yes. You can:
 
 * [Bulk QR code creation feature](/docs/perform-onelink-bulk-actions-via-csv) available on the Bulk Links page.
 * Create large volumes of QR codes using [OneLink API](/docs/use-onelink-api-to-create-links-in-large-scale-campaigns).
+
+</Accordion>

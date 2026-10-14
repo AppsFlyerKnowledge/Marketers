@@ -26,13 +26,13 @@ x-zendesk:
 
 DCP uses two types of connections to move data between your cloud services and the platform:
 
-- **Source connections:** Enables you to connect your first-party data to DCP for collaboration and audience creation.
-- **Cloud storage connections:** Enables you to export your audiences to your cloud storage buckets after each audience update.
+* **Source connections:** Enables you to connect your first-party data to DCP for collaboration and audience creation.
+* **Cloud storage connections:** Enables you to export your audiences to your cloud storage buckets after each audience update.
 
 Setting up a connection is a two-step process:
 
-- **Step 1:** Use your cloud service's interface to prepare it for use with DCP.
-- **Step 2:** Connect it to DCP in the AppsFlyer platform. See [Data Collaboration Platform (DCP) - Add connections](/docs/data-collaboration-platform-dcp-add-connections).
+* **Step 1:** Use your cloud service's interface to prepare it for use with DCP.
+* **Step 2:** Connect it to DCP in the AppsFlyer platform. See [Data Collaboration Platform (DCP) - Add connections](/docs/data-collaboration-platform-dcp-add-connections).
 
 The table below shows which services are supported for each connection type:
 
@@ -50,12 +50,11 @@ For Amazon S3 and GCS, the same bucket setup and permissions apply for both sour
 
 Select your cloud service below for setup instructions.
 
-<Tabs>
-<Tab title="Amazon S3">
+<Accordion title="Amazon S3">
 
 Use the following instructions to prepare an Amazon S3 bucket for use with DCP.
 
-> 📘 Note
+> 📘 **Note**
 >
 > The following procedure must be performed by your AWS admin.
 
@@ -65,7 +64,9 @@ Use the following instructions to prepare an Amazon S3 bucket for use with DCP.
 2. Go to the S3 service.
 3. Create the bucket:
    1. Click **Create bucket**.
-   2. Complete the **Bucket name**, starting with `af-dcr-` and followed by your text, according to the [DCR naming requirements](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements).
+   2. Complete the **Bucket name**, starting with `af-dcr-`
+
+       and followed by your text, according to the [DCR naming requirements](#dcr-naming-requirements).
    3. Click **Create bucket**.
 
 **To grant AppsFlyer bucket permissions:**
@@ -75,8 +76,8 @@ Use the following instructions to prepare an Amazon S3 bucket for use with DCP.
 3. In the **Bucket policy** section, click **Edit**. The **Edit bucket policy** window opens.
 4. Paste the following code snippet into the window:
 
-```json
-{
+   ```json
+   {
      "Version": "2012-10-17",
      "Statement": [
        {
@@ -100,23 +101,22 @@ Use the following instructions to prepare an Amazon S3 bucket for use with DCP.
          ]
        }
      ]
-}
-```
-
+   }
+   ```
 5. In the snippet, replace `af-dcr-mybucket` (in the two lines in which it appears) with the name of the bucket you created.
 6. Click **Save changes**.
 
-> ❗️ Important!
+> 📘 **Important!**
 >
 > When replacing the bucket name in the snippet, do not overwrite `/*` in the second line in which the bucket name appears.
 
-</Tab>
+</Accordion>
 
-<Tab title="Google Cloud Storage (GCS)">
+<Accordion title="Google Cloud Storage (GCS)">
 
 Use the following instructions to prepare a GCS bucket for use with DCP.
 
-> 📘 Note
+> 📘 **Note**
 >
 > The following procedure must be performed by your Google Cloud admin.
 
@@ -126,7 +126,9 @@ Use the following instructions to prepare a GCS bucket for use with DCP.
 2. Go to the Cloud Storage Browser page.
 3. Create the bucket:
    1. Click **Create bucket**.
-   2. Enter your bucket information on the **Create a bucket** page. Include the bucket name, starting with `af-dcr-` and followed by your text, according to the [DCR naming requirements](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements).
+   2. Enter your bucket information on the **Create a bucket** page. Include the bucket name, starting with `af-dcr-`
+
+       and followed by your text, according to the [DCR naming requirements](#dcr-naming-requirements).
    3. Click **Continue**.
    4. Click **Create**.
 
@@ -136,18 +138,18 @@ Use the following instructions to prepare a GCS bucket for use with DCP.
 2. Go to the **Permissions** tab.
 3. In the **Permissions** section, click **+ Add**. The **Add members** window opens.
 4. In the **New members** box, enter the following accounts:
-   - `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
-   - `af-data-delivery@af-raw-data.iam.gserviceaccount.com`
+   * `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
+   * `af-data-delivery@af-raw-data.iam.gserviceaccount.com`
 5. From the **Role** list, select **Cloud storage** > **Storage Admin**.
 6. Click **Save**.
 
-</Tab>
+</Accordion>
 
-<Tab title="BigQuery">
+<Accordion title="BigQuery">
 
 BigQuery supports source connections only. Use the following instructions to create a dataset and grant AppsFlyer permissions.
 
-> 📘 Note
+> 📘 **Note**
 >
 > The following procedure must be performed by your Google Cloud admin.
 
@@ -159,10 +161,10 @@ BigQuery supports source connections only. Use the following instructions to cre
    1. In the left-side panel, click the three-dot menu icon (**View actions**) to the right of the project ID.
    2. Select **Create dataset**.
    3. In the right-side panel that opens, enter the name of the dataset and select other options as required.
-      - You can use any name: letters, numbers, and underscores only.
-      - **Recommended:** Use a name that indicates the dataset is being used for a source connection.
-      - Do not use the **Enable table expiration** option, as DCP will be unable to read your data after the tables expire.
-4. Click **Create dataset**.
+      * You can use any name: letters, numbers, and underscores only.
+        * **Recommended:** Use a name that indicates the dataset is being used for a source connection.
+      * Do not use the **Enable table expiration** option, as DCP will be unable to read your data after the tables expire.
+   4. Click **Create dataset**.
 
 **To grant AppsFlyer permissions to the dataset:**
 
@@ -170,18 +172,18 @@ BigQuery supports source connections only. Use the following instructions to cre
 2. Select **Share**.
 3. In the right-side panel that opens, click **Add principal**.
 4. In the **Add principals** section, enter the following account in the **New principals** field:
-   - `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
+   * `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
 5. In the **Assign roles** section, select **BigQuery** > **BigQuery Data Viewer**.
 6. Click **Save**.
 7. Click **Close** to close the right-side panel.
 
-</Tab>
+</Accordion>
 
-<Tab title="Snowflake">
+<Accordion title="Snowflake">
 
 Snowflake supports source connections only. Use the following instructions to create a private share for use by DCP.
 
-> 📘 Note
+> 📘 **Note**
 >
 > The following procedure must be performed by a Snowflake **Accountadmin**.
 
@@ -204,14 +206,13 @@ Snowflake supports source connections only. Use the following instructions to cr
 
 9. Click **Create Share**.
 
-</Tab>
+</Accordion>
 
-<Tab title="Salesforce Cloud/CRM">
+<Accordion title="Salesforce Cloud/CRM">
 
 Salesforce Cloud/CRM supports source connections only. See [DCP - Integration with Salesforce Data Cloud](/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud) for setup instructions.
 
-</Tab>
-</Tabs>
+</Accordion>
 
 ## Traits and limitations
 
@@ -219,20 +220,12 @@ Salesforce Cloud/CRM supports source connections only. See [DCP - Integration wi
 | --- | --- |
 | Supported cloud services | Amazon S3 and GCS support both source and cloud storage connections. BigQuery, Snowflake, and Salesforce Cloud/CRM support source connections only. |
 | Bucket use | S3 and GCS buckets must be for the exclusive use of DCP. No other service can write data to the bucket. |
-| DCR naming requirements | The following naming requirements apply to all DCR data entities, including buckets, folders, and files:<br />- **Maximum length:** 200 characters<br />- **Valid characters:** letters (A-Z, a-z), numbers (0-9), hyphens (-)<br />- **Invalid characters:** spaces, and all other symbols or special characters<br />- Numbers and hyphens cannot be the first character of a name<br />- **Special-purpose characters only:**  - Equal signs (=): only in [date and version folder names](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version)<br />  - Underscores (_): only in [multi-part GZIP file names](/docs/data-collaboration-platform-dcp-create-and-manage-sources#file-format) or [_SUCCESS files](/docs/data-collaboration-platform-dcp-create-and-manage-sources#_success-files)<br />  - Dots (.): only directly before filename extensions (.csv, .gzip) |
-| Bucket naming | Bucket names must begin with `af-dcr-` followed by your text. Example: `af-dcr-example-bucket`. |
+| <span id="dcr-naming-requirements"></span>DCR naming requirements | The following naming requirements apply to all DCR data entities, including buckets, folders, and files:<ul><li>**Maximum length:** 200 characters</li><li>**Valid characters:** letters (A-Z, a-z), numbers (0-9), hyphens (-)</li><li>**Invalid characters:** spaces, and all other symbols or special characters</li><li>Numbers and hyphens cannot be the first character of a name</li><li>**Special-purpose characters only:**<ul><li>Equal signs (=): only in [date and version folder names](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version)</li><li>Underscores (\_): only in [multi-part GZIP file names](/docs/data-collaboration-platform-dcp-create-and-manage-sources#file-format) or [\_SUCCESS files](/docs/data-collaboration-platform-dcp-create-and-manage-sources#_success-files)</li><li>Dots (.): only directly before filename extensions (.csv, .gzip)</li></ul></li></ul> |
+| Bucket naming | Bucket names must begin with `af-dcr-` followed by your text. Example: `af-dcr-example-bucket`.<br /><br />[PENDING R&D: confirm whether af-datalocker- prefix should still be listed as an allowed alternative, or removed] |
 
-<Cards>
-  <Card title="DCP - Add connections" href="/docs/data-collaboration-platform-dcp-add-connections" icon="fa-solid fa-handshake-angle">
-    Learn how to connect your prepared cloud services to DCP in the AppsFlyer platform.
-  </Card>
-  <Card title="DCP - Build and activate audiences" href="/docs/data-collaboration-platform-dcp-build-and-activate-audiences" icon="fa-solid fa-handshake-angle">
-    Learn how to build and activate audiences after setting up your connections.
-  </Card>
-  <Card title="DCP - Create and manage sources" href="/docs/data-collaboration-platform-dcp-create-and-manage-sources" icon="fa-solid fa-handshake-angle">
-    Learn how to create and manage your data sources within the platform.
-  </Card>
-  <Card title="Data Collaboration Platform (DCP) guide" href="/docs/data-collaboration-platform-dcp-guide" icon="fa-solid fa-handshake-angle">
-    Read the comprehensive guide to the Data Collaboration Platform.
-  </Card>
-</Cards>
+> 📘 **See also**
+>
+> * [DCP - Add connections](/docs/data-collaboration-platform-dcp-add-connections)
+> * [DCP - Build and activate audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences)
+> * [DCP - Create and manage sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources)
+> * [Data Collaboration Platform (DCP) guide](/docs/data-collaboration-platform-dcp-guide)

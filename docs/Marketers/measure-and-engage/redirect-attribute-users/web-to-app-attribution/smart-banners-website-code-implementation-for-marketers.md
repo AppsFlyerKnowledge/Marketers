@@ -22,7 +22,7 @@ x-zendesk:
   created_at: '2022-01-10T11:25:54Z'
   edited_at: '2024-04-25T07:23:35Z'
 ---
-> 🚧 Note
+> 📘 **Note**
 >
 > AppsFlyer Smart Banner web SDK v1 was deprecated on Nov. 8th, 2023. To show Smart Banners on your website you need to upgrade to v2. [Learn more](/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1)
 
@@ -30,12 +30,12 @@ x-zendesk:
 
 This article is intended for marketers who want to implement the Smart Banners code on their site via one of:
 
-- Google Tag Manager (GTM)
-- Adobe Launch Tag Manager
-- Shopify
-- Wix
-- Squarespace
-- WordPress
+* Google Tag Manager (GTM)
+* Adobe Launch Tag Manager
+* Shopify
+* Wix
+* Squarespace
+* WordPress
 
 To add the code to your website via other platforms, or to make changes to the code based on need (including adding parameters, deep linking, hiding the banner, or integrating PBA with Smart Banners), see [Smart Banners website code implementation for developers](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2).
 
@@ -44,8 +44,7 @@ To add the code to your website via other platforms, or to make changes to the c
 1. Follow the [website workplace instructions](/docs/smart-banners-mobile-web-to-app-for-marketers#1-website-workplace-setup) to get the Smart Banners code.
 2. Use the platform-specific instructions that follow to implement the code into your website:
 
-<Tabs>
-<Tab title="Google Tag Manager">
+<Accordion title="Google Tag Manager">
 
 **To implement the code via Google Tag Manager**:
 
@@ -59,16 +58,17 @@ To add the code to your website via other platforms, or to make changes to the c
 8. Return to the tag configuration screen. Verify that all is set and click **Save** at the top right-hand corner.
 9. Publish your GTM container.
 
-</Tab>
-<Tab title="Adobe Launch Tag Manager">
+</Accordion>
+
+<Accordion title="Adobe Launch Tag Manager">
 
 **To implement the code via Adobe Launch Tag Manager**:
 
-#### Step 1: Create a property in Adobe Experience Cloud
+<Accordion title="Step 1: Create a property in Adobe Experience Cloud">
 
 **To create a property (tag) that hosts the Smart Banners code**:
 
-1. Go to **Adobe Experience Cloud** > **Launch**.
+1. Go to **Adobe Experience Cloud** >**Launch**.
 2. Under **Adobe Experience Cloud Launch**, click **Go to Launch**.
 3. Click **New Property**.
 4. Name your property.
@@ -76,72 +76,79 @@ To add the code to your website via other platforms, or to make changes to the c
 6. Enter your website domain.
 7. Click **Save**.
 
-#### Step 2: Add Smart Banners code to the Adobe Launch property
+</Accordion>
+
+<Accordion title="Step 2: Add Smart Banners code to the Adobe Launch property">
 
 **To add the Smart Banners code to the tag**:
 
-1. On **My web property** page, select the **Rules** tab.
+1. On **My web property** page, select the **Rules** tab.
 2. Name the rule. Recommended: **AppsFlyer Smart Banners**.
-3. In the **If** section, under **Events**, click **+Add**.
-   - Under **Event Type**, select **Core - DOM Ready**.
-   - Click **Keep Changes**.
+3. In the **If** section, under **Events**, click **+Add**.
+   * Under **Event Type**, select **Core - DOM Ready**.
+   * Click **Keep Changes**.
 4. In the **Then** section, under **Actions**, click **+Add**.
-   - Under **Action Type** > **Custom Code**.
-   - Select **JavaScript** > **Open Editor** and paste the Smart Banners SDK snippet **without the &lt;script&gt; tags**.
-   - Click **Keep Changes** to close the code editor.
+   * Under **Action Type** > **Custom Code**.
+   * Select **JavaScript** > **Open Editor** and paste the Smart Banners SDK snippet **without the &lt;script> tags**.
+   * Click **Keep Changes** to close the code editor.
 5. Click **Save**.
 
-#### Step 3: Add the Adobe Launch tag to your website
+</Accordion>
+
+<Accordion title="Step 3: Add the Adobe Launch tag to your website">
 
 **To add the Adobe Launch tag to your website (which loads the Smart Banners code)**:
 
-1. On the **My web property** page, select the **Environments** tab.
+1. On the **My web property** page, select the **Environments** tab.
 2. Find the row with the environment you want to publish (development or production).
-   - Under the **Install** header, click the box icon on the relevant row; this is usually a production environment.
-   - See the section about publishing the **Adobe Launch** environment.
+   * Under the **Install** header, click the box icon on the relevant row; this is usually a production environment.
+   * See the section about publishing the **Adobe Launch** environment.
 3. In the **Web Install Instructions** dialog box:
-   - Copy the script code snippet.
-   - Close the dialog box.
-4. Paste the code snippet into the &lt;head&gt; tag of your website.
+   * Copy the script code snippet.
+   * Close the dialog box.
+4. Paste the code snippet into the  tag of your website.
 
-#### Step 4: Publish the Adobe Launch environment
+</Accordion>
+
+<Accordion title="Step 4: Publish the Adobe Launch environment">
 
 **To publish the environment to activate the Adobe Launch tag**:
 
-1. On the **My web property** page, go to the **Publishing** tab.
-2. Under the **Development** section, click **Add New Library.**
+1. On the **My web property** page, go to the **Publishing** tab.
+2. Under the **Development** section, click **Add New Library.**
    1. Name the library and choose an environment.
-   2. Under **Resource Changes**, click **Add a Resource.**
-   3. Click **Rules** > **Load Smart Banners** > **Latest** > **Select & Create a New Revision**.
+   2. Under **Resource Changes**, click **Add a Resource.**
+   3. Click **Rules**> **Load Smart Banners** > **Latest** > **Select & Create a New Revision**.
    4. Click **Save**.
-3. Under the **Development** section:
+3. Under the **Development** section:
    1. Next to the newly created library, click the Action menu (3 dots) and select **Build for Development**.
    2. Click the action menu again and select **Submit for Approval**.
-4. Under the **Submitted** section:
+4. Under the **Submitted** section:
    1. Click the action menu and select **Build for Staging**.
    2. Click the action menu again and select **Approve for Publishing**.
-5. Under the **Approved** section click the action menu and select **Build & Publish to Production.** The process is now complete.
+5. Under the **Approved** section click the action menu and select **Build & Publish to Production.** The process is now complete.
+
+</Accordion>
 
 Now, when your website loads on mobile, the banner's active creative will be displayed. To only display the banner on certain pages or according to user actions, see [Adobe Launch rules](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/rules.html).
 
-</Tab>
-<Tab title="Shopify">
+</Accordion>
+
+<Accordion title="Shopify">
 
 **To implement the code in your Shopify website**:
 
-1. In your Shopify dashboard, go to **Sales Channels** > **Online Store** > **Themes**.
+1. In your Shopify dashboard, go to **Sales Channels** > **Online Store** > **Themes**.  
+   Your current theme displays.
+2. Click **Actions** > **Edit code**.  
+   The Edit code page opens for your theme.
+3. In the Layout folder, click the file that starts with **`{/}` theme**.  
+   The webpage code displays.
+4. In the code, directly under , paste your Smart Banners code.
 
-Your current theme displays.
-2. Click **Actions** > **Edit code**.
+</Accordion>
 
-The Edit code page opens for your theme.
-3. In the Layout folder, click the file that starts with **`{/}` theme**.
-
-The webpage code displays.
-4. In the code, directly under **&lt;head&gt;**, paste your Smart Banners code.
-
-</Tab>
-<Tab title="Wix">
+<Accordion title="Wix">
 
 **To implement the code in your Wix website**:
 
@@ -149,16 +156,16 @@ The webpage code displays.
 2. In the Advanced section of the Settings page, click **Custom code**.
 3. Click **+ Add Custom Code**.
 4. In the **Paste the code snippet here** box, paste the Smart Banners code.
-5. In the Name box, enter a name for your code. **Recommended**: AppsFlyer Smart Banners.
+5. In the Name box, enter a name for your code. **Recommended**: AppsFlyer Smart Banners.
 6. In **Add Code to Pages**, select where to display your banners. Either:
-   - All pages
-   - Choose specific pages
-7. Click **Apply**.
+   * All pages
+   * Choose specific pages
+7. Click **Apply**.  
+   The Custom Code page should now show your code. Make sure it is placed in the **Head** section.
 
-The Custom Code page should now show your code. Make sure it is placed in the **Head** section.
+</Accordion>
 
-</Tab>
-<Tab title="Squarespace">
+<Accordion title="Squarespace">
 
 **To implement the code in your Squarespace website**:
 
@@ -169,23 +176,20 @@ The Custom Code page should now show your code. Make sure it is placed in the **
 5. In the **Header** section, paste the Smart Banners code.
 6. Click **Save**.
 
-</Tab>
-<Tab title="WordPress">
+</Accordion>
+
+<Accordion title="WordPress">
 
 **To implement the code in your WordPress website**:
 
-1. In your WordPress dashboard, click **Appearance** > **Theme Editor**.
-
-The Edit Themes page opens and the CSS code for your website displays.
+1. In your WordPress dashboard, click **Appearance** > **Theme Editor**.  
+   The Edit Themes page opens and the CSS code for your website displays.
 2. Under **Theme Files**, click **Theme Header (header.php)**.
-3. In the code that displays, under **&lt;head&gt;**, paste the Smart Banners code.
+3. In the code that displays, under , paste the Smart Banners code.
 4. Click **Update File**.
 
-</Tab>
-</Tabs>
+</Accordion>
 
-<Cards>
-  <Card title="PBA integration with Smart Banners" href="/docs/pba-web-sdk-integration-guide#installation-and-integration" icon="fa-solid fa-code">
-    Learn how to integrate PBA with your Smart Banners setup.
-  </Card>
-</Cards>
+> 📘 **See also**
+>
+> * [PBA integration with Smart Banners](/docs/pba-web-sdk-integration-guide#installation-and-integration)

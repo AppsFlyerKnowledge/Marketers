@@ -38,7 +38,7 @@ x-zendesk:
 
 Yandex Direct's configuration window includes 3 active tabs: **Integration, Attribution link**, and **Permissions**.
 
-## Integration tab
+<Accordion title="Integration tab">
 
 ### Activate partner
 
@@ -79,19 +79,23 @@ As an all-installs network, Yandex Direct prefers to receive postbacks for all n
 In this section, you can configure in-app event postbacks that are sent to Yandex Direct.
 
 1. Turn **In-app event postbacks** on.
-2. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).
+2. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
 3. Click **Add event** to add an SDK Event to the list.
 4. [Complete the required parameters](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration).
 5. Click **Save integration**.
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
 [Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
 
-**To generate an attribution link,**follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
@@ -101,10 +105,16 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table]
 
 [View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue data is not available for this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant Yandex Direct, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for Yandex Direct, the Permissions tab is active and you can grant control to Yandex Direct. [Configure permissions to Yandex Direct](/docs/set-up-an-integrated-partner#permissions-tab).
+
+</Accordion>

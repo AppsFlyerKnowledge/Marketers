@@ -36,24 +36,20 @@ AppsFlyer makes Incrementality testing easy with an automated process that begin
 
 Incrementality is a premium feature. After subscribing, follow these steps to get started. For additional details about each step, see [Set up the experiment](/docs/run-an-incrementality-for-remarketing-experiment#set-up-the-experiment) below.
 
-
-
 |  | Steps |
 | --- | --- |
 | 1 | [**Know your test objectives**](/docs/run-an-incrementality-for-remarketing-experiment#know-your-test-objectives)<br /><br />Maximize the actionability of your experiment results by defining clear test objectives and a hypothesis for the outcome. |
-| 2 | [**Create the target audience and split groups**](/docs/run-an-incrementality-for-remarketing-experiment#create-the-target-audience-and-split-groups)<br /><br />In [Audiences](/docs/audiences-guide):<br /><br />* Configure the audience.<br />* Connect it to ad networks.<br />* The audience is split into test and control groups automatically, via an enabled toggle (for Incrementality subscribers, in audiences created after January 11, 2023).  <br />  AppsFlyer Audiences uploads test group members to the ad networks and holds back control group members. |
-| 3 | [**Launch the campaign and experiment**](/docs/run-an-incrementality-for-remarketing-experiment#launch-the-campaign-and-experiment)<br /><br />* On the ad networks, create and launch a campaign that targets the users in the audience.<br />* The Incrementality experiment is created automatically (for Incrementality subscribers).<br /><br />Test group members are exposed to ads. The control group is not. |
-| 4 | [**Analyze the results**](/docs/run-an-incrementality-for-remarketing-experiment#analyze-the-results)<br /><br />* Incrementality analysis is displayed on the [Incrementality dashboard](/docs/incrementality-for-remarketing-overview#incrementality-dashboard).<br />* Row-level user data is available in [Incrementality raw data reports](/docs/incrementality-for-remarketing-overview#raw-data-reports) (via Data Locker).<br /><br />The insights gained from well-run incrementality experiments enable you to optimize your marketing campaigns for maximum positive impact. For example, it can help point you towards the best messaging for a target audience, the best creative or promotion, the most effective media source, and more. |
-
-
+| 2 | [**Create the target audience and split groups**](/docs/run-an-incrementality-for-remarketing-experiment#create-the-target-audience-and-split-groups)<br /><br />In [Audiences](/docs/audiences-guide):<ul><li>Configure the audience.</li><li>Connect it to ad networks.</li><li>The audience is split into test and control groups automatically, via an enabled toggle (for Incrementality subscribers, in audiences created after January 11, 2023).<br />AppsFlyer Audiences uploads test group members to the ad networks and holds back control group members.</li></ul> |
+| 3 | [**Launch the campaign and experiment**](/docs/run-an-incrementality-for-remarketing-experiment#launch-the-campaign-and-experiment)<ul><li>On the ad networks, create and launch a campaign that targets the users in the audience.</li><li>The Incrementality experiment is created automatically (for Incrementality subscribers).</li></ul>Test group members are exposed to ads. The control group is not. |
+| 4 | [**Analyze the results**](/docs/run-an-incrementality-for-remarketing-experiment#analyze-the-results)<ul><li>Incrementality analysis is displayed on the [Incrementality dashboard](/docs/incrementality-for-remarketing-overview#incrementality-dashboard).</li><li>Row-level user data is available in [Incrementality raw data reports](/docs/incrementality-for-remarketing-overview#raw-data-reports) (via Data Locker).</li></ul>The insights gained from well-run incrementality experiments enable you to optimize your marketing campaigns for maximum positive impact. For example, it can help point you towards the best messaging for a target audience, the best creative or promotion, the most effective media source, and more. |
 
 ## Set up the experiment
 
-### Know your test objectives
+<div id="know-your-test-objectives" />
+
+<Accordion title="Know your test objectives">
 
 As in any experiment, it's important to define exactly what you are testing (variables) and what you expect the outcome will be (the hypothesis). The following table provides guidelines and best practices for designing your experiment:
-
-
 
 | Variables/Hypothesis | Guidelines and best practices |
 | --- | --- |
@@ -62,8 +58,7 @@ As in any experiment, it's important to define exactly what you are testing (var
 | Campaign | Describe the campaign (messaging, incentives, etc.). |
 | Control group % | The control group is automatically set to 15% of the audience size (best practice is between 15% to 25%). |
 | Test group | Determine the ad networks you want to test. The split percentage will be divided equally between them (but you can adjust the percentage of the audience that will be sent to each).<br /><br />**Best practice:** 1-3 ad networks |
-| Hypothesis | Define the expected outcome of the experiment.<br /><br />While it may feel somewhat counterintuitive to predict the outcome before you begin, setting out a hypothesis is an important element of experimental design; it's what helps you interpret your results.<br /><br />**Best practice:** State a hypothesis that is easily testable by using actual percentages as opposed to vague estimates. For example:<br /><br />* ***15% more users will purchase an upgrade*** is an easily testable hypothesis.<br />* ***Significantly more users will purchase an upgrade*** is more difficult to test. |
-
+| Hypothesis | Define the expected outcome of the experiment.<br /><br />While it may feel somewhat counterintuitive to predict the outcome before you begin, setting out a hypothesis is an important element of experimental design; it's what helps you interpret your results.<br /><br />**Best practice:** State a hypothesis that is easily testable by using actual percentages as opposed to vague estimates. For example:<ul><li>***15% more users will purchase an upgrade*** is an easily testable hypothesis.</li><li>***Significantly more users will purchase an upgrade*** is more difficult to test.</li></ul> |
 
 > 📘 **Example**
 >
@@ -80,8 +75,11 @@ As in any experiment, it's important to define exactly what you are testing (var
 > | Test group | Send remaining audience members to:<br /><br />* Network A (42% of audience)<br />* Network B (43% of audience) |
 > | Hypothesis | The rate of test group users who engage with the remarketing campaign and make a purchase will be 10% higher than users in the control group. |
 
+</Accordion>
 
-### Create the target audience and split groups
+<div id="create-the-target-audience-and-split-groups" />
+
+<Accordion title="Create the target audience and split groups">
 
 After you have defined your objectives, the next step is to configure the audience you'll be testing:
 
@@ -114,7 +112,11 @@ In Google Ads, it’s called “Audience expansion”.
 
 ![Google_Ads_Incrementality_limitation_cropped.jpg](https://files.readme.io/042aac534d0a527753b643bb63a52f59889219ebda922cc04f8a61c5984afb80-30780493867409.jpg)
 
-### Launch the campaign and experiment
+</Accordion>
+
+<div id="launch-the-campaign-and-experiment" />
+
+<Accordion title="Launch the campaign and experiment">
 
 **Take the following actions:**
 
@@ -162,9 +164,7 @@ If you’re an Incrementality subscriber who created your audience after January
 * In AppsFlyer, from the side menu, select **Optimize** > **Incrementality**.
 * From the **Incrementality experiments** page, click the **New experiment** button.
 * Follow the steps in the wizard to create the experiment. Detailed instructions are provided as you go through each step.
-  CALLSTART::Note::
-
-  #### Notes
+  <br /><br />**Note**<br />#### Notes
 
   **Wizard step 2** **–** **Audience setup**
 
@@ -174,7 +174,7 @@ If you’re an Incrementality subscriber who created your audience after January
 
   By default, this is the date on which the audience was initially split with a control group. To ensure accurate experiment results, you should change this date if either of the following situations applies:
 
-  * If you've made changes to the definition of the selected audience ([audience segmentation rulesets](/docs/audiences-guide#all-about-rulesets), [user identifier](/docs/audiences-guide#user-identifier%E2%80%94device-id-vs-customer-id), etc.) → change this date to match the last date on which these audience definition changes were made.
+  * If you've made changes to the definition of the selected audience ([audience segmentation rulesets](/docs/audiences-guide#all-about-rulesets), [user identifier](/docs/audiences-guide#user-identifier-device-id-vs-customer-id), etc.) → change this date to match the last date on which these audience definition changes were made.
   * If you're testing a new campaign on a pre-existing audience → change this date to the date on which you launched the new campaign.
 
   **Wizard step 3 – Set targets**
@@ -192,13 +192,19 @@ If you’re an Incrementality subscriber who created your audience after January
   In step 4 of the wizard, you are asked to set the **experiment period.**
 
   * By default, an experiment is set to run for 30 days from the time it is created. This is the minimum recommended period for running an experiment.
-  * Select the **Continue experiment indefinitely** option if you wish to let the experiment continue running until you actively choose to end it.CALLEND::
+  * Select the **Continue experiment indefinitely** option if you wish to let the experiment continue running until you actively choose to end it.
 
-### Analyze the results
+</Accordion>
+
+<div id="analyze-the-results" />
+
+<Accordion title="Analyze the results">
 
 Initial experiment results are available on the [Incrementality dashboard](/docs/incrementality-for-remarketing-overview#incrementality-dashboard) about 48 hours after connected campaigns are launched on the ad networks (updated [daily](/docs/about-data-freshness-and-timezone-support#eod)). you may see [alerts on the experiment page](/docs/understand-incrementality-for-remarketing-experiment-alerts) which help you identify issues that can compromise the accuracy of the results and suggest actions that can be taken to resolve them.
 
 [Incrementality raw data reports](/docs/incrementality-for-remarketing-overview#raw-data-reports) are available via Data Locker.
+
+</Accordion>
 
 > 📘 **See also**
 >

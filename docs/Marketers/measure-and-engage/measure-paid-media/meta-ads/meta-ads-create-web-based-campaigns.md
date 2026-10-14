@@ -39,19 +39,19 @@ Before activating the Meta Ads integration, make sure that you have a [business
 This article contains information and steps on how to set up a web campaign in Meta Ads for Mobile,  PC, and console apps with AppsFlyer. The setup involves defining the integration between Meta Ads and AppsFlyer, setting the campaign configuration on both platforms and creating landing pages with OneLink Smart Script or OneLink Smart Banners.  
 The setup process includes the following mandatory steps:
 
-* [Set up Meta Web Ads integration in AppsFlyer](#h_01HZKNS17J284R2MAN42WV7F0S) (Required)
-* [Set up AppsFlyer integration in Meta Ads](#h_01HZKNS17JJWX7N9W6BN05B57C) (Required)
+* [Set up Meta Web Ads integration in AppsFlyer](#set-up-meta-web-ads-integration-in-appsflyer) (Required)
+* [Set up AppsFlyer integration in Meta Ads](#set-up-appsflyer-integration-in-meta-ads) (Required)
 
 And the following optional steps:
 
-* [Create a landing page with OneLink Smart Script](#h_01HZKNS17KPJMP74HQKWY022T2) (Optional)
-* [Create a landing page with OneLink Smart Banners](#h_01HZKNS17KH8NQ68RPZGMEAQTV) (Optional)
+* [Create a landing page with OneLink Smart Script](#create-a-landing-page-with-onelink-smart-script) (Optional)
+* [Create a landing page with OneLink Smart Banners](#create-a-landing-page-with-onelink-smart-banners) (Optional)
 
 ## Set up Meta Web Ads integration in AppsFlyer
 
 Start with activating the Meta Ads integration and setting the postbacks AppsFlyer sends to CAPI.
 
-### 1. Activate the Meta Web Ads integration
+<Accordion title="1. Activate the Meta Web Ads integration">
 
 To activate the Meta Web Ads integration:
 
@@ -69,7 +69,9 @@ To activate the Meta Web Ads integration:
 7. Fill the **Access Token** field. To retrieve the access token, follow [these instructions](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token)
 8. Turn on **Limit Meta Ads' use of users' personal information (CCPA)** to enable compliance with [data protection laws](/docs/send-opendsr-api-requests). **Note:** Complying with CCPA privacy regulations limits the data coming from Meta Ads users based in California.
 
-### 2. Enable view-through attribution
+</Accordion>
+
+<Accordion title="2. Enable view-through attribution">
 
 AppsFlyer supports view-through attribution for Meta Web campaigns using a [Smart Script](#set-up-smart-script-crossplatform-landing-page) or [Smart Banner](#set-up-smart-banners-landing-page)-enabled landing page. This allows probabilistic modeling (PMOD) attribution of app installs triggered by ad impressions, even when users don't click the ad directly.
 
@@ -80,34 +82,33 @@ When a user clicks a Meta Web ad and lands on a [Smart Script](#set-up-smart-scr
 1. In AppsFlyer, from the sidebar, open **Collaborate** > **Partner Integrations > Active Integrations** > **Meta web ads**.
 2. In the **Integration** tab, scroll to the **Install attribution** section.
 3. Turn on **Install view-through attribution**.
-4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see [Enable equal priority for cross-platform impressions](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions)**.**
+4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see [Enable equal priority for cross-platform impressions](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions).
 5. Open the **Attribution link** tab.
 6. Scroll to the **View-through attribution** section and set the **view-through lookback window** (up to 24 hours).
 7. Click **Save integration** to apply your settings.
 
-### 3. Set in-app event postbacks
+</Accordion>
+
+<Accordion title="3. Set in-app event postbacks">
 
 Installs are currently the only events that trigger automatic default postbacks to Meta Ads. For other event types, you can create custom postbacks by mapping AppsFlyer events to Meta Ads events, which can be viewed in the [Meta Events Manager](https://www.facebook.com/business/help/1541268312717919?id=818859032317965).  
 To set in-app events postbacks perform the following:
 
 1. Turn on **In-app event postbacks**.
-2. If required, set the In-app event postback window (read more about in-app event postback window configuration in general in [this article](/docs/in-app-event-postback-configuration#inapp-event-postback-window)).
+2. If required, set the In-app event postback window (read more about in-app event postback window configuration in general in [this article](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
 3. Click **Add event** to add an event to the list.
 4. In the **AppsFlyer event** column, select the event name from the drop-down box. AppsFlyer receives the event's name either from the SDK integrated into your app or from server-to-server events.
-5. In the **mapped to partner event** column**,** select from the dropdown box the most suitable pre-defined partner event or select CUSTOM.
+5. In the **mapped to partner event** column, select from the dropdown box the most suitable pre-defined partner event or select CUSTOM.
 6. In the **For Users From** column, select the sending option for the event:
    * **This partner only**: send postbacks only when this event is attributed to Meta ads.
    * **All media sources, including organic,** send postbacks for events attributed to any partner and organic events.
 7. In the **including** column, select whether events will be sent with their revenue values. See [Data to include in the postbacks](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks).
 
-   CALLSTART::Note::
+   > 📘 **Note**
+   >
+   > If you are setting a purchase event, set the **including** column to **Values and revenue**. Selecting any other option will cause the postback to fail.
 
-   #### Note
-
-   If you are setting a purchase event, set the **including** column to **Values and revenue**. Selecting any other option will cause the postback to fail.
-
-   CALLEND::
-8. [Optional] Click the **Add condition** icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-inapp-event-postbacks) for an event.
+8. [Optional] Click the **Add condition** icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks) for an event.
 9. Click **Save integration**.
 10. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
     1. From the top-left corner, click the app name under the partner name to open the list of apps.
@@ -118,11 +119,13 @@ To set in-app events postbacks perform the following:
 >
 > If you are sending S2S events to `metaweb_int`, the S2S payload must include the `ua` (User Agent) and `ip` (IP address) parameters. These values are required for Meta CAPI campaign optimization. AppsFlyer includes them automatically for SDK events. For S2S events, advertisers must send them explicitly. See [Server-to-server events API for mobile](/docs/server-to-server-events-api-for-mobile-s2s-mobile).
 
+</Accordion>
+
 ## Set up AppsFlyer integration in Meta Ads
 
 Perform the next steps in Meta Ads Manager.
 
-### 1. Set the campaign type, objective, and goals
+<Accordion title="1. Set the campaign type, objective, and goals">
 
 1. Log in to Meta Ads and create a campaign.
 2. In **Campaign objective** select one of the following: [![](https://files.readme.io/a0cdd42ddf3bc69106de5137e5c842468178bd1dcd76805ea77ead750ba1e9bb-25646834955921.png)](https://files.readme.io/a0cdd42ddf3bc69106de5137e5c842468178bd1dcd76805ea77ead750ba1e9bb-25646834955921.png)
@@ -132,20 +135,21 @@ Perform the next steps in Meta Ads Manager.
    1. In Meta Ads, select the custom event that you want to set as a campaign objective and mark it as a conversion action in Meta Ads.
    2. In AppsFlyer, in the **Meta Web integration** page, under **In-app event postbacks** map an AppsFlyer event to a custom partner event (under the **mapped to partner event** column) and name it with the same name as the conversion action in Meta Ads.
 
-      CALLSTART::Note::
+      > 📘 **Note**
+      >
+      > To learn more about the Meta Campaign objectives, see the [Meta documentation](https://www.facebook.com/business/help/175683976191028).
 
-      #### Note
-
-      To learn more about the Meta Campaign objectives, see the [Meta documentation](https://www.facebook.com/business/help/175683976191028).
-
-      CALLEND::
 4. In **Conversion location** select **Website**. [![](https://files.readme.io/32e4dcb4ced7e2011728ed709069b78cffffc4090f09a33c729a2b2e7e882e8b-25646834954257.png)](https://files.readme.io/32e4dcb4ced7e2011728ed709069b78cffffc4090f09a33c729a2b2e7e882e8b-25646834954257.png)
 5. In **Pixel** enter the same pixel ID you entered for `metaweb_int` in the AppsFlyer Partner Marketplace. To learn more about the Meta Pixel, see the [Meta documentation](https://www.facebook.com/business/help/742478679120153) (a login is required).
 6. Click **Next**.
 
-### 2. Set destination URL
+</Accordion>
 
-1. Under **Destination,** in the **Website URL** field**,** enter the URL that serves as the destination for your ad. The URL should be for one of the following:
+<div id="h_01HZKNS17KT8TRD2TGDBRGKBZ3" />
+
+<Accordion title="2. Set destination URL">
+
+1. Under **Destination,** in the **Website URL** field, enter the URL that serves as the destination for your ad. The URL should be for one of the following:
 
    [![](https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png)](https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png)
 
@@ -155,16 +159,13 @@ Perform the next steps in Meta Ads Manager.
      * You want to use the landing page to give more information about your advertised product.
      * You want to use the landing page to collect more data.
 
-     For all these use cases create a [landing page with a Smart Script](#h_01HZKNS17KPJMP74HQKWY022T2) or [a Smart Banner](#h_01HZKNS17KH8NQ68RPZGMEAQTV).
+     For all these use cases create a [landing page with a Smart Script](#create-a-landing-page-with-onelink-smart-script) or [a Smart Banner](#create-a-landing-page-with-onelink-smart-banners).
    * **AF attribution links:** Using AF attribution links (OneLink, single platform or cross-platform) is recommended when you want the user to be redirected directly to the store to download the app without first visiting a landing page.
 
-     CALLSTART::Note::
+     > 📘 **Important!**
+     >
+     > Sometimes, the use of AF attribution links may lead to errors. If this occurs, ask your Meta representatives for a solution, or simply use a Web landing page as the destination URL.
 
-     #### Important!
-
-     Sometimes, the use of AF attribution links may lead to errors. If this occurs, ask your Meta representatives for a solution, or simply use a Web landing page as the destination URL.
-
-     CALLEND::
 2. Click **Build a URL parameter** to add the URL parameters to the URL (whether it is a landing page URL or an AF attribution link).
 3. Under **Custom parameters**, click **Add parameter**
 
@@ -172,8 +173,6 @@ Perform the next steps in Meta Ads Manager.
 4. Map the AppsFlyer parameters to their Meta values.
 
    * If your destination URL is **a landing page, a OneLink attribution link, or a single platform attribution link**, map the following AF parameters to their Meta counterparts: 
-
-     
 
 | AF Parameter | Mapped Meta value |
 | --- | --- |
@@ -195,13 +194,9 @@ Perform the next steps in Meta Ads Manager.
      * If your app's APK is NOT hosted in Google Play Store, add the [`af_r`](/docs/about-link-structure-and-parameters#af_r) parameter and map to it the store URL, e.g, `https://Add-your-store-url.com`
    * If your destination URL is a **PC or a console store**, create the link by following the instructions in the table below. For additional information see: [CTV, PC, and console platform direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links)
 
-     
-
-<table><thead><tr><th colspan="2">Attribution link structure</th></tr></thead><tbody><tr><td>Base URL</td><td>engagements.appsflyer.com/v1.0/c2s/click/app/</td></tr><tr><td>Mandatory path parameters</td><td><ul><li>platform<br/>Example: steam</li><li>app_id<br/>Example: 123456</li></ul></td></tr><tr><td>Mandatory query parameters</td><td><ul><li>af_media_source</li><li>af_campaign_id</li><li>af_r</li></ul></td></tr><tr><td>Other parameters</td><td><a href="./ctv-pc-and-console-platform-direct-attribution-links#attribution-link-parameters">See all parameters</a></td></tr><tr><td>URL structure</td><td><code>https://engagements.appsflyer.com/v1.0/c2s/click/app/`{platform}/{app_id}?af_media_source={media_source}&amp;af_campaign_id={campaign_id}&amp;af_r={app_store_url}`</code></td></tr></tbody></table>
+<table><thead><tr><th colspan="2">Attribution link structure</th></tr></thead><tbody><tr><td>Base URL</td><td>engagements.appsflyer.com/v1.0/c2s/click/app/</td></tr><tr><td>Mandatory path parameters</td><td><ul><li>platform<br/>Example: steam</li><li>app_id<br/>Example: 123456</li></ul></td></tr><tr><td>Mandatory query parameters</td><td><ul><li>af_media_source</li><li>af_campaign_id</li><li>af_r</li></ul></td></tr><tr><td>Other parameters</td><td><a href="./ctv-pc-and-console-platform-direct-attribution-links#parameters">See all parameters</a></td></tr><tr><td>URL structure</td><td><code>https://engagements.appsflyer.com/v1.0/c2s/click/app/`{platform}/{app_id}?af_media_source={media_source}&amp;af_campaign_id={campaign_id}&amp;af_r={app_store_url}`</code></td></tr></tbody></table>
 
      Map the following AppsFlyer parameters to their Meta counterparts:
-
-     
 
 | AF Parameter | Mapped Meta value |
 | --- | --- |
@@ -218,26 +213,23 @@ Perform the next steps in Meta Ads Manager.
 
      ```
      https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=metaweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello
-     ```CALLSTART::Note::
-
-   #### Note
+     ```
+     <br /><br />**Note**<br />#### Note
 
    Meta adds the `fbclid={{fbclid}}` to the destination URL automatically when the ad is clicked
 
-   CALLEND::
-   CALLSTART::Note::
+   > 👍 **Tip**
+   >
+   > To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
 
-   #### Tip
-
-   To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
-
-   CALLEND::
 
 > 📘 **Note**
 >
 > For a comprehensive guide on the AF link parameters, see [Attribution link parameters](/docs/about-link-structure-and-parameters#attribution-link-parameters).
 
-### 3. Select tracked events
+</Accordion>
+
+<Accordion title="3. Select tracked events">
 
 Use the Tracking section to select the conversion events promoted by your ad (setting up of the events is done via the [Event Manager](https://www.facebook.com/business/help/898185560232180?id=1205376682832142)).
 
@@ -247,11 +239,13 @@ Use the Tracking section to select the conversion events promoted by your ad (se
 >
 > Make sure not to choose **App Events,** otherwise Meta will claim those conversions using the SRN API, which can cause reporting and optimization misalignments.
 
+</Accordion>
+
 ## Create a landing page with OneLink Smart Script
 
 **User journey:** The user clicks on a Meta ad and is directed to your mobile website. They land on a page with CTA buttons urging them to download your app from one or more platforms. Clicking the button redirects the user to the store.
 
-### End-to-end data flow
+<Accordion title="End-to-end data flow">
 
 [![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
 
@@ -268,20 +262,19 @@ Use the Tracking section to select the conversion events promoted by your ad (se
 8. AppsFlyer attributes the install based on probabilistic modeling or deterministically if an [install referrer](https://www.appsflyer.com/glossary/install-referrer/) is available.
 9. A postback containing the `fbclid` parameters and other event parameters is generated and sent to Meta via the CAPI API. Meta uses the `fbclid` parameter to identify the specific click while the other parameters help optimize the campaign.
 
-### Set up a Smart Script landing page
+</Accordion>
+
+<Accordion title="Set up a Smart Script landing page">
 
 To set up your smart script Meta Ads campaigns perform the following:
 
-1. Set up the template for the campaign's OneLink attribution links. For more information, see [How to create OneLink templates](/docs/create-a-onelink-template#procedures).
+1. Set up the template for the campaign's OneLink attribution links. For more information, see [How to create OneLink templates](/docs/create-a-onelink-template#create-a-onelink-template).
 2. Create a smart script. For more information, see [How to create a OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script).
 
-   CALLSTART::Note::
+   > 📘 **Note**
+   >
+   > The instructions below focus on the specific steps required to set up a Meta Ads campaign with Smart Script. For a comprehensive guide on how to set up Smart Script campaigns see the [How to create a OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script) section of the [OneLink Smart Script V2 setup](/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script) article.
 
-   #### Note
-
-   The instructions below focus on the specific steps required to set up a Meta Ads campaign with Smart Script. For a comprehensive guide on how to set up Smart Script campaigns see the [How to create a OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script) section of the [OneLink Smart Script V2 setup](/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script) article.
-
-   CALLEND::
 3. Make sure all relevant URL parameters are appended to the incoming URL. To review the parameters appended to the incoming URL, open Meta Ads Manager and check the URL parameters set during the creation of the destination URL. For more information see: [Set destination URL](#h_01HZKNS17KT8TRD2TGDBRGKBZ3).
 4. Map the incoming URL parameters required for the Meta Ads campaign to the outgoing URL parameters that will be sent to AppsFlyer when the user clicks the CTA button:
    * **PID**: Make sure that Smart Script takes the `pid=metaweb_int` parameter value from the incoming URL and maps it to the corresponding parameters in the outgoing URL.
@@ -290,20 +283,20 @@ To set up your smart script Meta Ads campaigns perform the following:
      * Version 2.8.1 and above: The `fbclid` parameter is forwarded automatically to the outgoing URL parameter when present in the incoming URL, eliminating the need for manual mapping.
      * Version 2.8.0 and below: The `fbclid` parameter should be mapped manually in the **URL parameter mapping** section of the **Smart Script** page:
        1. In **Mapping for**, select **Custom parameter**.
-       2. In **Outgoing URL parameter** and **Incoming URL parameters** enter **fbclid**.CALLSTART::Note::
-
-     #### Note
+       2. In **Outgoing URL parameter** and **Incoming URL parameters** enter **fbclid**.<br /><br />**Note**<br />#### Note
 
      To display in AppsFlyer raw data reports, the incoming `fbclid` parameter must also be mapped (in addition to the outgoing `fbclid` parameter) to one of the outgoing `af_sub[1-5]` parameters. For more information, see [Facebook FBCLID](/docs/set-up-smart-script-to-convert-web-visitors#facebook-click-id).
 
-     CALLEND::
+</Accordion>
 
-### Set up a Smart Script cross-platform landing page
+<div id="set-up-smart-script-crossplatform-landing-page" />
+
+<Accordion title="Set up a Smart Script cross-platform landing page">
 
 To set up your smart script Meta Ads campaigns for cross-platform landing pages perform the following:
 
-1. Set up the template for the campaign's OneLink attribution links. For more information, see [How to create OneLink templates](/docs/create-a-onelink-template#procedures).
-   * Enable your OneLink template for cross-platform attribution, see [here](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-1-create-or-edit-a%C2%A0onelink-template%C2%A0for-crossplatform-attribution).
+1. Set up the template for the campaign's OneLink attribution links. For more information, see [How to create OneLink templates](/docs/create-a-onelink-template#create-a-onelink-template).
+   * Enable your OneLink template for cross-platform attribution, see [here](/docs/set-up-cross-platform-links-for-multi-device-campaigns#create-a-onelink-templatefor-cross-platform-attribution).
 2. Make sure all relevant URL parameters are appended to the incoming URL. To review the parameters appended to the incoming URL, open Meta Ads Manager and examine the URL parameters you set when you built the destination URL. For more information, see [Set destination URL](#h_01HZKNS17KT8TRD2TGDBRGKBZ3).
 3. Decide for each incoming parameter the outgoing parameter to which it will be mapped. For example `af_site_id` in the incoming URL will be mapped to `af_site_id` in the outgoing URL.
 4. Decide on the default value for the mandatory outgoing parameters that cannot be empty.
@@ -316,19 +309,18 @@ To set up your smart script Meta Ads campaigns for cross-platform landing pages 
      * [A demo and instruction](https://appsflyersdk.github.io/appsflyer-sample-app-smartscript-demo-page/) for creating a cross platform landing page.
    * Remind your developer to include the incoming `fbclid` parameter in the outgoing URL.
 
-     CALLSTART::Note::
+     > 📘 **Note**
+     >
+     > To display in AppsFlyer raw data reports, the incoming `fbclid` parameter must also be mapped (in addition to the outgoing `fbclid` parameter) to one of the outgoing `af_sub[1-5]` parameters.
 
-     #### Note
 
-     To display in AppsFlyer raw data reports, the incoming `fbclid` parameter must also be mapped (in addition to the outgoing `fbclid` parameter) to one of the outgoing `af_sub[1-5]` parameters.
-
-     CALLEND::
+</Accordion>
 
 ## Create a landing page with OneLink Smart Banners
 
 **User journey:** The user clicks on a Meta ad and is directed to your mobile website. They land on a page and a Smart Banner is displayed with a CTA to download the app from the app store.
 
-### End-to-end data flow
+<Accordion title="End-to-end data flow">
 
 1. The Meta ad URL includes the the `pid=metaweb_int` parameter. When the user clicks on the ad an `fbclid` parameter is automatically appended to the clicked URL.
 2. The User is redirected to the URL destination - a landing page containing a Smart Banner.
@@ -340,22 +332,25 @@ To set up your smart script Meta Ads campaigns for cross-platform landing pages 
 8. AppsFlyer attributes the install based on probabilistic modeling or deterministically if the install referrer is available.
 9. A postback containing the `fbclid` parameters and other event parameters is generated and sent to Meta via the CAPI API. Meta uses the `fbclid` parameter to identify the specific click while the other parameters help optimize the campaign.
 
-### Set up a Smart Banners landing page
+</Accordion>
+
+<div id="set-up-smart-banners-landing-page" />
+
+<Accordion title="Set up a Smart Banners landing page">
 
 To set up your Smart Banners Meta Ads campaigns perform the following:
 
-1. Set up the template for the campaign's OneLink attribution links. For more information, see [How to create OneLink templates](/docs/create-a-onelink-template#procedures).
+1. Set up the template for the campaign's OneLink attribution links. For more information, see [How to create OneLink templates](/docs/create-a-onelink-template#create-a-onelink-template).
 2. Create a Smart Banner.
 
-   CALLSTART::Note::
+   > 📘 **Note**
+   >
+   > The instructions below focus on the specific steps required to set up a Meta Ads campaign with Smart Banners. For a comprehensive guide on how to set up Smart Banners campaigns, see the [setup section](/docs/smart-banners-mobile-web-to-app-for-marketers#setup) of the [Smart Banners—mobile web-to-app (for marketers)](/docs/smart-banners-mobile-web-to-app-for-marketers) article.
 
-   #### Note
-
-   The instructions below focus on the specific steps required to set up a Meta Ads campaign with Smart Banners. For a comprehensive guide on how to set up Smart Banners campaigns, see the [setup section](/docs/smart-banners-mobile-web-to-app-for-marketers#setup) of the [Smart Banners—mobile web-to-app (for marketers)](/docs/smart-banners-mobile-web-to-app-for-marketers) article.
-
-   CALLEND::
 3. Set the Smart Banner parameters for Meta Ads campaigns:
    * Make sure all relevant URL parameters are appended to the incoming URL. Most importantly the `pid=metaweb_int` and `fbclid` are available in the incoming URL to allow the Smart Banner to collect them. These two parameters are necessary for attribution and for sending postbacks to Meta Ads. To review the parameters that are appended to the incoming URL, open Meta Ads Manager and review the URL parameters that you set when you built the destination URL, see: [Set destination URL](#h_01HZKNS17KT8TRD2TGDBRGKBZ3).
+
+</Accordion>
 
 ## View web-to-app attribution data
 

@@ -24,19 +24,25 @@ x-zendesk:
 ---
 ## X Ads FAQ and discrepancies
 
-### Who can perform the setup on AppsFlyer?
+<Accordion title="Who can perform the setup on AppsFlyer?">
 
 The user who is authorizing the integration between AppsFlyer and X Ads must have X Ads Account Administrator access.
 
-### What happens if no X Ads account is selected for attributing on AppsFlyer?
+</Accordion>
+
+<Accordion title="What happens if no X Ads account is selected for attributing on AppsFlyer?">
 
 All attributions are for campaigns on the selected account. If no account is selected, no in-app events or attributions are sent to X Ads, even if the in-app event mapping is still visible on the X Ads configuration window.
 
-### Do both the account owner and team members see the same X Ads data?
+</Accordion>
+
+<Accordion title="Do both the account owner and team members see the same X Ads data?">
 
 No. The account owner sees all of the connected X Ads accounts. Team members only see their connected X Ads accounts.
 
-### How do I disconnect AppsFlyer from X Ads?
+</Accordion>
+
+<Accordion title="How do I disconnect AppsFlyer from X Ads?">
 
 You can disconnect AppsFlyer from your X Ads account. The following instructions assume that you are logged into your X Ads account using a desktop or laptop browser:
 
@@ -46,9 +52,11 @@ You can disconnect AppsFlyer from your X Ads account. The following instructions
 4. Click AppsFlyer.
 5. Click **Revoke Access**.
 
-You can now go back to your AppsFlyer account and [connect a different X Ads account](/docs/x-ads-formerly-twitter-ads-integration-setup%20Ads-Ads-setup-guide-integration-and-setup) if you want.
+You can now go back to your AppsFlyer account and [connect a different X Ads account](/docs/x-ads-formerly-twitter-ads-integration-setup) if you want.
 
-### Is it possible to attribute installs to multiple X Ads accounts?
+</Accordion>
+
+<Accordion title="Is it possible to attribute installs to multiple X Ads accounts?">
 
 Yes, but it requires some actions on X Ads. But first, some background is required:
 
@@ -63,7 +71,7 @@ Say your team member is Jenny and her handle is @jenny. Your handle is @nivi and
 
    ![twitter_assign_account2.PNG](https://files.readme.io/cd2aa0b7a700fd0eee8754ac850adb99cc22b1c42d0d94f18d31ca71901ff31f-50903273809937.png)
 3. Jenny then gives @nivi access to her X Ads Account as or Account administrator  
-     
+
    [![twitter_edit_access_to_account.png](https://files.readme.io/93cee24a4b77c48d47444c5992cffb40f082beda46bdb96e9f22eef5ae8d9269-4416810307601.png)](https://support.appsflyer.com/hc/article_attachments/360002514658/twitter_edit_access_to_account.png)
 4. Jenny logs into the AppsFlyer account and goes to Active Integrations >> X Ads option
 5. At this stage, she can see her X Ads Account also listed.
@@ -77,7 +85,11 @@ Say your team member is Jenny and her handle is @jenny. Your handle is @nivi and
 
    ![jennys_ads_account__1_.png](https://files.readme.io/d744c0e2de60011a0395a407607ec90f4fac04f76787b430cf1a74eda2342e66-50903273813649.png)
 
-### Any special instructions for agencies?
+</Accordion>
+
+<div id="any-special-instructions-for-agencies" />
+
+<Accordion title="Any special instructions for agencies?">
 
 Yes.  
 When an agency creates a new X Ads campaign, the campaign name must start with the agency name and an underscore (Example: "AgencyName\_Campaign1").
@@ -88,18 +100,24 @@ When an agency creates a new X Ads campaign, the campaign name must start with t
 
 For more details go [here](/docs/about-agency-accounts#srn-configurations).
 
-### Is the X Ads raw data available to agencies?
+</Accordion>
+
+<div id="do-you-make-twitters-raw-data-available-to-agencies" />
+
+<Accordion title="Is the X Ads raw data available to agencies?">
 
 We don't provide X Ads raw data to agencies because X Ads' terms of service regard agencies as third parties.
 
-### I'm clicking save & close but the X Ads configuration is not saved! help!
+</Accordion>
+
+<Accordion title="I'm clicking save & close but the X Ads configuration is not saved! help!">
 
 If your app was subscribed to another attribution provider in the past, which was used to attribute X Ads installs, the following errors below when configuring X Ads on AppsFlyer's dashboard:
 
 **Error: The app is associated with a different attribution provider. Please associate it with AppsFlyer.**
 
 Alternatively, the following error may also appear:  
-  
+
 [![](https://support.appsflyer.com/hc/article_attachments/360001502209/X%20Ads_error_2.png)](https://support.appsflyer.com/hc/article_attachments/360001502209/X%20Ads_error_2.png)
 
 **Error: Error has occurred while saving X Ads configuration. Some accounts failed to update: XX Multiple provider ids to same (appid, conversionType) for event appid2872.**
@@ -111,36 +129,50 @@ If the account selection does not save, this may be because the X Ads account in
 * Click **Save and Close**.
 * If this still doesn't solve the problem you will have to contact your previous measurement provider and ask to remove the past X Ads tags associated with your account.
 
-### How can I set up retargeting campaigns with X Ads?
+</Accordion>
+
+<Accordion title="How can I set up retargeting campaigns with X Ads?">
 
 For details on how to configure an X Ads Retargeting Campaign, click here.
 
-### Does retargeting affect in-app events sent to X Ads?
+</Accordion>
+
+<Accordion title="Does retargeting affect in-app events sent to X Ads?">
 
 Yes. If retargeting is turned on, AppsFlyer doesn't send the af\_app\_opened event postbacks to X Ads, as per X Ads' request.  
 Note that even if the X Ads setup window allows this selection, the af\_app\_opened postbacks are not sent with retargeting.
 
-### How can I stop measuring X Ads attributions?
+</Accordion>
+
+<Accordion title="How can I stop measuring X Ads attributions?">
 
 To deactivate the integration with X Ads, uncheck all accounts and click **Save & Close**.
 
-### Can an agency measure X Ads attributions for advertisers?
+</Accordion>
+
+<Accordion title="Can an agency measure X Ads attributions for advertisers?">
 
 Yes!  
 To establish the connection between AppsFlyer and X Ads, the advertiser MUST select an active account in the X Ads partner page on AppsFlyer's dashboard, so at least one X Ads account is checked.  
 Afterwards, the agency needs to connect its X Ads account directly from its own agency dashboard.
 
-### Can an agency configure in-app events for X Ads?
+</Accordion>
+
+<Accordion title="Can an agency configure in-app events for X Ads?">
 
 Agencies cannot configure in-app events for X Ads. Similar to Meta ads, these must be configured by the Advertiser.
 
-### For how long do you keep X Ads user-level data?
+</Accordion>
+
+<Accordion title="For how long do you keep X Ads user-level data?">
 
 X Ads requires attribution providers to delete their user-level data 3 months after the install. This means that the events performed by these users 3 months after they install the app are counted as organic.
 
 Past aggregate data remains the same.
 
-### Why do I see duplicated cost data?
+</Accordion>
+
+<Accordion title="Why do I see duplicated cost data?">
 
 When you set up a campaign in X Ads, you can add multiple apps to the campaign. When X Ads reports the cost, the total campaign cost data displays under each app in AppsFlyer, and is not divided per app.
 
@@ -148,7 +180,9 @@ For example, if you run one campaign that costs $1,000 for both an Android and i
 
 To avoid cost duplication, it is recommended that you define only one app per line item/campaign.
 
-### I'm trying to link my X Ads account with AppsFlyer, but I get an error message
+</Accordion>
+
+<Accordion title="I'm trying to link my X Ads account with AppsFlyer, but I get an error message">
 
 Your X Ads account needs to be an active Ad Account to receive attribution data from AppsFlyer.
 
@@ -161,6 +195,8 @@ Your X Ads account needs to be an active Ad Account to receive attribution data 
 5. Click on **Login with X Ads**,  
    a X Ads login window opens.
 6. Sign in with your X Ads Account.
+
+</Accordion>
 
 ## Discrepancies between X Ads and AppsFlyer
 
@@ -175,7 +211,7 @@ These are the common reasons for such discrepancies that advertisers should be a
 | **Timezone differences** | X Ads timezone is defined by the advertiser's app configured timezone. | AppsFlyer's default timezone is UTC±00:00, but can be set to any timezone by the advertiser. |
 | **Install time differences** | X Ads shows installs based on the click time (referred to as "engagement time"). | AppsFlyer displays the time of the first app open. |
 | **Attribution touch type** | X Ads attribution is based on their own clicks and impressions. | AppsFlyer gives priority to click-through attribution over view-through attribution. If X Ads counts an impression and AppsFlyer is aware of an additional click within the click-through attribution window, the click from another source is attributed on AppsFlyer's dashboard. On X Ads, the impression is attributed and is presented on their dashboard. |
-| **X Ads data sharing settings** | X Ads allows its users to NOT [share their personal data with third parties](https://twitter.com/settings/account/personalization). This data includes ads they interact with.<br /><br />The stats on X Ads dashboard reflect all engagements, including the users who have opted out from sharing the data. | AppsFlyer shows the aggregate data of these X Ads users, but does not report their user-level raw data (more [details](/docs/x-ads-formerly-twitter-ads-setup-guide-overview#twitter-user-privacy)). |
+| **X Ads data sharing settings** | X Ads allows its users to NOT [share their personal data with third parties](https://twitter.com/settings/account/personalization). This data includes ads they interact with.<br /><br />The stats on X Ads dashboard reflect all engagements, including the users who have opted out from sharing the data. | AppsFlyer shows the aggregate data of these X Ads users, but does not report their user-level raw data (more [details](/docs/x-ads-formerly-twitter-ads-setup-guide-overview#x-ads-user-privacy)). |
 | **X Ads re-engagement logic** | X Ads counts unique users. If a user re-engages more than once as a result of the same campaign, X Ads shows these engagements as one conversion. | AppsFlyer counts each re-engagement instance, and therefore, in a similar case, shows these engagements as multiple conversions. |
 
 > 📘 **Note**

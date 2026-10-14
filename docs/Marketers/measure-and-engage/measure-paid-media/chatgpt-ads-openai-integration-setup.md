@@ -31,7 +31,7 @@ The AppsFlyer integration with ChatGPT Ads (OpenAI) enables you to measure and a
 
 If you also run the ChatGPT Ads pixel on your website, ChatGPT Ads deduplicates the server-side events (sent via the Conversions API, or CAPI) against the pixel events using a shared event ID, so you can run CAPI and the pixel in parallel without inflating your conversion counts.
 
-Include that shared ID as `af_customer_event_id` in the event payload you send to AppsFlyer. See [Integrate your website](#h_01KWVSJRYSQEH12C5RH7BN4CC2) below.
+Include that shared ID as `af_customer_event_id` in the event payload you send to AppsFlyer. See [Integrate your website](#integrate-your-website) below.
 
 ## Set up the integration
 
@@ -48,8 +48,8 @@ Set up the integration separately for each mobile app and website you want to me
    **To edit:** In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active integrations** tab.
 2. Set up the integration for your:
 
-* [**Mobile app**](#h_01KWVBQG0G85W6QJ8AT2520GTX) - attribute installs, re-engagements, and in-app events to ChatGPT Ads campaigns.
-* [**Website**](#h_01KWVSJRYSQEH12C5RH7BN4CC2) - forward web conversion events to ChatGPT Ads' Conversions API, with deduplication against the ChatGPT Ads pixel.
+* [**Mobile app**](#integrate-your-mobile-app) - attribute installs, re-engagements, and in-app events to ChatGPT Ads campaigns.
+* [**Website**](#integrate-your-website) - forward web conversion events to ChatGPT Ads' Conversions API, with deduplication against the ChatGPT Ads pixel.
 
 ## Integrate your mobile app
 
@@ -63,7 +63,7 @@ Use the following steps to set up attribution and in-app event postbacks for Cha
 3. Search for **ChatGPT Ads (OpenAI)** and click **Integrate**.
 4. Complete the configuration in the tabs as described below.
 
-### Integration tab
+<Accordion title="Integration tab">
 
 #### Activate partner
 
@@ -97,7 +97,7 @@ Turn on to share Advanced Matching fields, such as hashed email, hashed phone nu
 
 A postback is a server-to-server notification that AppsFlyer sends to ChatGPT Ads to report an attributed event (like an install or in-app action). This section displays your postbacks. Learn how to [set install and re-attribution postbacks](/docs/set-up-re-attribution-window).
 
-Learn more about the [default postbacks setting](/docs/set-up-an-integrated-partner#default%20postbacks).
+Learn more about the [default postbacks setting](/docs/set-up-an-integrated-partner#default-postbacks).
 
 #### In-app event settings
 
@@ -106,7 +106,7 @@ To be able to send in-app event postbacks to ChatGPT Ads, enter the required cre
 * Pixel ID
 * API key
 
-For details, see [General settings](#h_01KWVKHV36H34XCHYBFRHNF8TB) above.
+For details, see [General settings](#general-settings) above.
 
 #### In-app event postbacks
 
@@ -154,7 +154,9 @@ If you don't send `af_customer_event_id`, AppsFlyer generates an event ID automa
 
 For more information, see Integrate AppsFlyer Web SDK.
 
-### Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 ChatGPT Ads (OpenAI) supports attribution links.
 
@@ -163,7 +165,7 @@ ChatGPT Ads (OpenAI) supports attribution links.
 Decide whether you want to:
 
 1. Send users directly to the app store. If so, you'll need to create either a single-platform attribution link or a [OneLink](/docs/onelink-guide) as your final URL, based on your campaign needs and targeting settings.   
-     
+
    OR
 2. Use a landing page as your ad destination, and then use [Smart Script](/docs/onelink-smart-script-overview) or [Smart Banner](/docs/smart-banners-mobile-web-to-app-for-marketers) to route the user to the App Store or Google Play (while creating a link that will allow attribution).
 
@@ -189,19 +191,27 @@ Select the attribution link parameters you want to include.
 
 Learn more about [attribution links](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
-### Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 There is currently no cost API integration for ChatGPT Ads.
 
-### Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad revenue data can't be pulled from ChatGPT Ads. Use postbacks or UA signals to share ad revenue data for campaign optimization.
 
-### Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Turn on **Ad network permissions** to grant ChatGPT Ads team members access to your data. Once enabled, select which individual permissions to grant, such as configuring the integration, accessing retention and cohort reports, or viewing aggregate conversion and revenue data. Note that even if attribution is disabled for ChatGPT Ads, you can still grant permissions.
 
 Learn more about [permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+
+</Accordion>
 
 ## Integrate your website
 
@@ -214,7 +224,7 @@ Use the following steps to set up server-side event forwarding to ChatGPT Ads fo
 3. Search for **ChatGPT Ads (OpenAI)** and click **Integrate**.
 4. Complete the configuration in the integration tab as described below.
 
-### Integration tab
+<Accordion title="Integration tab">
 
 #### Activate partner
 
@@ -246,21 +256,31 @@ Turn on the **In-app event postbacks** toggle.
 
 To make sure your events match the equivalent events in ChatGPT Ads, map your event names. See the standard event table above for the events ChatGPT Ads supports. [Learn more](/docs/in-app-event-postback-configuration#event-mapping)
 
-### Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 ChatGPT Ads (OpenAI) doesn't use external attribution links for website integrations. The AppsFlyer Web SDK measures web events and forwards them directly to ChatGPT Ads' Conversions API, so no link-based attribution setup is needed.
 
-### Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data isn't available for website integrations with ChatGPT Ads.
 
-### Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad revenue data isn't available for website integrations with ChatGPT Ads.
 
-### Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions aren't available for website integrations with ChatGPT Ads.
+
+</Accordion>
 
 ## Traits and limitations
 

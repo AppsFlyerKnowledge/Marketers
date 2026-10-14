@@ -26,7 +26,6 @@ x-zendesk:
 >
 > [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
-
 ## Setting up Leanplum
 
 Leanplum customers can integrate with AppsFlyer by sending Leanplum a postback containing publisher information. This allows you to view this data in Leanplum analytics as well as use it for targeting in A/B tests or marketing campaigns, using Leanplum’s targeting and segmentation menu.
@@ -51,7 +50,7 @@ The Leanplum configuration window uses only the **Integration** tab.
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration tab is divided into different sections as described below.
 
@@ -98,21 +97,31 @@ Select **Events attributed to any partner or organic** to send postbacks for any
 
 Click **Save.**
 
-## Attribution link tab
+</Accordion>
+
+<Accordion title="Attribution link tab">
 
 Attribution links are not available for Leanplum.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 Permissions are not available for Leanplum.
+
+</Accordion>
 
 ## Viewing user attribution data in Leanplum
 

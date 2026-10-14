@@ -77,7 +77,7 @@ If you’re not allowed to create a conversion target, you can see on WeChat a t
 
 WeChat's configuration window includes 4 tabs: Integration, Attribution link, Data enrichment and Permissions. Click on the items below to read about the tabs setup.
 
-## Integration tab
+<Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
 
@@ -135,7 +135,11 @@ In this section you can map your AppsFlyer events with WeChat via postbacks.
 | **Partner Event Identifier** | The unique name or ID of each event as defined on WeChat's side.  <br />Obtain the corresponding Event ID from Wechat and set in the text field. |
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
-## Attribution link tab
+</Accordion>
+
+<div id="attribution-link-tab" />
+
+<Accordion title="Attribution link tab">
 
 In this tab, you can create the attribution links you want to send to WeChat for attributing WeChat's campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
@@ -160,7 +164,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 ![attribution-link-parameters.png](https://files.readme.io/28112ce5f9706ffc07d69b233f2b6b4756fda36cb4e8438ab6c9cd03e3a39c59-50900431181841.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)**.**
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
 
 ### Click-through attribution
 
@@ -176,14 +180,22 @@ More details about the [click lookback window here](/docs/set-up-lookback-window
 
 This is the attribution link that contains all the setup information you have set for it. Send it to WeChat to be activated when leads click on a corresponding ad.
 
-## Cost tab
+</Accordion>
+
+<Accordion title="Cost tab">
 
 Enable Tencent cost integration to receive cost data for WeChat.
 
-## Ad revenue tab
+</Accordion>
+
+<Accordion title="Ad revenue tab">
 
 Ad revenue integration is not available for this partner.
 
-## Permissions tab
+</Accordion>
+
+<Accordion title="Permissions tab">
 
 No permission configuration available for this partner.
+
+</Accordion>

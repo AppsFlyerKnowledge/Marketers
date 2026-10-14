@@ -21,9 +21,7 @@ x-zendesk:
   created_at: '2026-06-15T08:16:54Z'
   edited_at: '2026-06-23T11:05:18Z'
 ---
-> 📘 At a glance
->
-> If you're migrating from classic Data Locker raw reports, use this guide to find the exact filter selections that reproduce each classic report in [Advanced Reports](/docs/about-data-locker-advanced-reports).
+**At a glance:** If you're migrating from classic Data Locker raw reports, use this guide to find the exact filter selections that reproduce each classic report in [Advanced Reports](/docs/about-data-locker-advanced-reports).
 
 ## Overview
 
@@ -31,9 +29,9 @@ Classic Data Locker delivered the user journey as many separate report topics. A
 
 The three Advanced Reports and the classic topics they replace are:
 
-- The **Engagements** **advanced report** replaces the classic clicks and impressions topics.
-- The **Conversions** **advanced report** replaces the classic installs, retargeting conversions, and CTV installs topics.
-- The **End-user events** **advanced report** replaces the classic in-app events, sessions, CTV in-app events, CTV sessions, and uninstalls topics.
+* The **Engagements** **advanced report** replaces the classic clicks and impressions topics.
+* The **Conversions** **advanced report** replaces the classic installs, retargeting conversions, and CTV installs topics.
+* The **End-user events** **advanced report** replaces the classic in-app events, sessions, CTV in-app events, CTV sessions, and uninstalls topics.
 
 To recreate a specific classic report, apply the report-level filters described in the sections below. For the full list of available filters per report, see [Report-level filters](/docs/about-data-locker-advanced-reports#report-level-filters).
 
@@ -54,9 +52,9 @@ In the Conversions Advanced Report, set the **Conversion type** filter to match 
 
 | Classic report | Conversion type filter | Platform group filter | Comments |
 | --- | --- | --- | --- |
-| User acquisition – Installs | User acquisition | Mobile | - The `conversion_name` field value is `INSTALL`. <br /> - Covers organic and non-organic installs. |
-| Retargeting – Conversions | Retargeting | Mobile | - The `conversion_name` field value is `RE-ENGAGEMENT` or `RE-ATTRIBUTION`. <br /> - Covers non-organic only. |
-| CTV – Installs | User acquisition | CTV | - The `conversion_name` field value is `INSTALL`. <br /> - Covers organic and non-organic installs. |
+| User acquisition – Installs | User acquisition | Mobile | * The `conversion_name` field value is `INSTALL`.<br />* Covers organic and non-organic installs. |
+| Retargeting – Conversions | Retargeting | Mobile | * The `conversion_name` field value is `RE-ENGAGEMENT` or `RE-ATTRIBUTION`.<br />* Covers non-organic only. |
+| CTV – Installs | User acquisition | CTV | * The `conversion_name` field value is `INSTALL`.<br />* Covers organic and non-organic installs. |
 
 ## Recreate classic reports in the End-user events advanced report
 
@@ -64,10 +62,10 @@ In the End-user events Advanced Report, set the **Conversion type** filter to ma
 
 | Classic report | End user event type filter | Conversion type filter | Platform group filter | Comments |
 | --- | --- | --- | --- | --- |
-| User acquisition – In-app events | `In-app` | User acquisition | Mobile | - Covers organic and non-organic in-app events. |
-| Retargeting – In-app events | `In-app` | Retargeting | Mobile | - Covers non-organic only. <br /> - Set **Is primary attribution** to `True` to deduplicate retargeting events published more than once. |
-| User acquisition – Sessions | `Session` | User acquisition | Mobile | - Covers organic and non-organic sessions. |
-| Retargeting – Sessions | `Session` | Retargeting | Mobile | - Covers non-organic only. |
+| User acquisition – In-app events | `In-app` | User acquisition | Mobile | * Covers organic and non-organic in-app events. |
+| Retargeting – In-app events | `In-app` | Retargeting | Mobile | * Covers non-organic only.<br />* Set **Is primary attribution** to `True` to deduplicate retargeting events published more than once. |
+| User acquisition – Sessions | `Session` | User acquisition | Mobile | * Covers organic and non-organic sessions. |
+| Retargeting – Sessions | `Session` | Retargeting | Mobile | * Covers non-organic only. |
 | CTV – In-app events | `In-app` | any value | CTV |  |
 | CTV – Sessions | `Session` | any value | CTV |  |
 
@@ -77,8 +75,6 @@ In the End-user events Advanced Report, set the **Conversion type** filter to ma
 | --- | --- |
 | Reports not reproducible | Cross-platform engagements, reinstalls, and organic reinstalls are not reproducible using Advanced Reports. |
 
-<Cards>
-  <Card title="About Data Locker Advanced Reports" href="/docs/about-data-locker-advanced-reports" icon="fa-solid fa-box-archive">
-    Learn more about the features and capabilities of Advanced Reports in Data Locker.
-  </Card>
-</Cards>
+> 📘 **See also**
+>
+> * [About Data Locker Advanced Reports](/docs/about-data-locker-advanced-reports)

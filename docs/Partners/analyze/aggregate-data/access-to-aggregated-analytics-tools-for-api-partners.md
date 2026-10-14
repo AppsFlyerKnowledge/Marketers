@@ -31,30 +31,34 @@ Advertisers can grant the following app-level permissions:
 | Permission type | Reporting tool | Limitations |
 | --- | --- | --- |
 | Aggregated analytics reporting | [Cohort analytics data via DataLocker](/docs/cohort-analytics-via-data-locker) | X Ads campaign data isn't available to API partners due to their restrictions. |
-| SKAN reporting | - [SKAN performance reporting](/docs/skan-aggregated-performance-report-api)<br />  <br />- [SKAN aggregate postback reporting](/docs/skan-aggregated-postback-arrival-date-api) | -- |
+| SKAN reporting | <ul><li>[SKAN performance reporting](/docs/skan-aggregated-performance-report-api)</li><li>[SKAN aggregate postback reporting](/docs/skan-aggregated-postback-arrival-date-api)</li></ul> | -- |
+
 
 ### Considerations
 
-- **Advertiser perspective**   - Advertisers can grant the API partner permissions as listed in the preceding table.
-- **Partner perspective**
-  - Extract data by API. **Note**: Security is implemented via an authentication [token](/docs/managing-appsflyer-tokens) available in the AppsFlyer dashboard. The same token is valid for all apps and advertisers.
-  - Get data via Data Locker
-  - Advertisers can revoke permissions to access their app data. This won't impact your partner credentials.
+* **Advertiser perspective**
+  * Advertisers can grant the API partner permissions as listed in the preceding table.
+* **Partner perspective**
+  * Extract data by API. **Note**: Security is implemented via an authentication [token](/docs/managing-appsflyer-tokens) available in the AppsFlyer dashboard. The same token is valid for all apps and advertisers.
+  * Get data via Data Locker
+  * Advertisers can revoke permissions to access their app data. This won't impact your partner credentials.
 
-Granting access to the partner
+<Accordion title="Granting access to the partner">
 
-> 🚧 Warning
->
-> - The permissions type lets the partner access data, including traffic brought by other partners and organic data.
-> - Don't share your token with partners.
+**warning**
+
+* The permissions type lets the partner access data, including traffic brought by other partners and organic data.
+* Don't share your token with partners.
 
 **To grant API access to the partner:**
 
-1. In AppsFlyer, from the side menu, select **Collaborate** \> **Integrated partners** _**.**_
+1. In AppsFlyer, from the side menu, select **Collaborate** > **Integrated partners*.***
 2. Search for the partner and select it.
 3. Click **Set up integration**. You're directed to the integration setup page.
 4. From the **API access** tab, turn on one or more permissions. Select from:
-   - **Aggregate analytics reporting**
-   - **SKAdNetwork reporting**(for iOS apps, not relevant for Data Locker)
+   * **Aggregate analytics reporting**
+   * **SKAdNetwork reporting** (for iOS apps, not relevant for Data Locker)
 5. Click **Save API access**.
 6. Notify the partner that you have enabled the necessary API access.
+
+</Accordion>
