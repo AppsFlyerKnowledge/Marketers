@@ -53,11 +53,21 @@ x-zendesk:
   <Card title="Tencent AMS campaign configuration" href="/docs/tencent-ams-campaign-configuration" icon="fa-solid fa-bullhorn">
     Tencent AMS, an AppsFlyer ad network integrated partner, operates social media and mobile utility properties in China, and enables marketers to run app install campaigns on: WeChat, the company’s mobile communication platform, QQ, the instant messaging service, QQ Music, QQ Browser, Myapp, and more.
   </Card>
+  <Card title="TopOn变现配置指南" href="/docs/topon-zh-cn" icon="fa-solid fa-file-lines">
+  </Card>
   <Card title="UC Toutiao Ads campaign configuration" href="/docs/uc-toutiao-ads-campaign-configuration" icon="fa-solid fa-bullhorn">
     UC Toutiao Ads, an AppsFlyer ad network integrated partner, is one of China's leading news aggregator apps.
   </Card>
   <Card title="vivo Ads Campaign Configuration" href="/docs/vivo-ads-campaign-configuration" icon="fa-solid fa-bullhorn">
     vivo Ads is an AppsFlyer ad network integrated partner.
+  </Card>
+  <Card title="爱奇艺奇麟广告平台归因配置" href="/docs/zh-cn-360006784558" icon="fa-solid fa-file-lines">
+  </Card>
+  <Card title="虎牙直播广告平台归因配置" href="/docs/zh-cn-360018681937" icon="fa-solid fa-file-lines">
+  </Card>
+  <Card title="百度搜索归因配置--Baidu Search Ads Configuration" href="/docs/baidu-search-ads-configuration-zh-cn" icon="fa-solid fa-bullhorn">
+  </Card>
+  <Card title="美图（中国）广告归因配置--Meitu China Configuration" href="/docs/meitu-china-configuration-zh-cn" icon="fa-solid fa-earth-asia">
   </Card>
   <Card title="WeChat Ads campaign configuration" href="/docs/wechat-ads-campaign-configuration" icon="fa-solid fa-bullhorn">
     Learn how to measure your campaigns with WeChat on AppsFlyer.

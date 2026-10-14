@@ -19,6 +19,8 @@ Convert and deep link your owned media users with OneLink
   <Card title="OneLink onboarding guide" href="/docs/onelink-onboarding-guide" icon="fa-solid fa-rocket">
     Use OneLink for powerful, customized user redirection, deep linking, and attribution from your campaigns, regardless of user device, operating system, channel, or platform, for maximum conversion.
   </Card>
+  <Card title="원링크 커스텀 링크 : 네이버검색광고 키워드 치환변수 활용법" href="/docs/ko-21679541887633" icon="fa-solid fa-file-lines">
+  </Card>
   <Card title="OneLink guide" href="/docs/onelink-guide" icon="fa-solid fa-link">
     Create links with attribution, redirection, and deep linking capabilities that convert owned or paid media users into app users, regardless of device, operating system, channel, or platform. These links help you provide the best experience for your users, no matter which of your owned media sources they convert from: websites, banners, social media posts, emails, texts, and more.
   </Card>
