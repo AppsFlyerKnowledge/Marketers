@@ -36,6 +36,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partners
@@ -79,6 +81,8 @@ In this section you can map your AppsFlyer events with Fyber via postbacks.
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -133,6 +137,8 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
@@ -156,6 +162,8 @@ Fyber provides ad revenue mediation with [user-level granularity](/docs/roi360-
 * Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -187,3 +195,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKWB8PSR5213FW7TGX1JCFK7=setting-up-fyber h_01HKWB8PSR74F5HSKRMQME3ST5=integration-tab h_01HKWB8PSRKA27MMN1K10VBVP2=activate-partners h_01HKWB8PSRZ2368WVS2C1R0Q10=general-settings h_01HKWB8PSRB9TP5K2KQJF6QQ42=default-postbacks inapp-events-settings=in-app-events-settings h_01HKWB8PSRR23YPXFVF1VT7M30=in-app-events-settings h_01HKWB8PSR25D98WNZ3XDPE775=attribution-link-tab h_01HKWB8PSR3CP2AM6MJCQS00GD=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKWB8PSRHXBX3CZS1E5ETTFM=click-through-attribution h_01HKWB8PSRJX6F3PFKERSBQEXS=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HKWB8PSR77KA62D1FGC9ACAD=view-through-attribution-lookback-window h_01HKWB8PSRX6A88172AH7AW2XB=impressions-attribution-link h_01HKWB8PSRM9BPYE0D2VJ5A4P9=cost-tab h_01HKWB8PSRZGAW17781A32G6MX=ad-revenue-tab h_01HKWB8PSRAE1DTHFSPB7AA7CW=permissions-tab h_01HKWB8PSRE3Q76977BK6D1Z0E=ad-network-permissions h_01HKWB8PSR0B2F8QAX35EJK751=agency-permissions" />

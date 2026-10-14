@@ -40,3 +40,5 @@ The Customer Assistant Chatbot directs your issues to the appropriate team, cove
 ## Viewing support tickets
 
 The support tickets that you open are accessible via your email correspondence with AppsFlyer support. Access it to search, view, and verify the status of your tickets.
+
+<div data-zendesk-anchors="h_01HSRN1H9JRR50VA2PBQHS9MSS=overview h_01HSRN1H9KB5CFTJV67FRKC0K8=viewing-support-tickets" />

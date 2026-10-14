@@ -61,3 +61,5 @@ Since adoption takes time, it is **highly recommended** that your developer upgr
 >
 > * [AppsFlyer Android SDK release notes](/docs/appsflyer-android-sdk-release-notes)
 > * [AppsFlyer iOS SDK release notes](/docs/appsflyer-ios-sdk-release-notes)
+
+<div data-zendesk-anchors="h_01HE7RHYC4YGZWF9EKK96RPMAN=about-versioning h_01HE7RHYC4QSVTA4ZCHTKYQSAT=why-do-we-need-version-control h_01HE7RHYC41QN657ZTEQ0P45GD=sdk-version-lifecycles h_01JVHFG6PN34YFWNZKX2CYHJV8=important h_01JVHEKR4MTFV0FDHMTQW00BCS=end-of-support-vs-deprecated what-happens-when-an-sdk-version-is-sunset=what-happens-when-an-sdk-version-has-reached-its-end-of-support-date h_01HE7RHYC4EVSNA2F4DQ1594DH=what-happens-when-an-sdk-version-has-reached-its-end-of-support-date h_01HE7RPQBD858TQSF27NFGGP43=see-also" />

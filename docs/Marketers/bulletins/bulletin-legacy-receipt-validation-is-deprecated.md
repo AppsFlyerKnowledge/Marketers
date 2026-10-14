@@ -30,6 +30,8 @@ x-zendesk:
 
 ## FAQ
 
+<div id="h_faq_01" />
+
 <Accordion title="How do I know which of my apps still use Legacy Receipt validation?">
 
 Legacy does not appear as a product type in the Revenue settings page, so you cannot confirm Legacy usage from the UI alone. Use the following methods together:
@@ -41,6 +43,8 @@ Legacy does not appear as a product type in the Revenue settings page, so you ca
 * **Contact your CSM.** They can confirm which of your apps are still on Legacy.
 
 </Accordion>
+
+<div id="h_faq_02" />
 
 <Accordion title="What exactly happens on September 7, 2026?">
 
@@ -54,17 +58,23 @@ To keep capturing validated purchases, migrate to one of the supported alternati
 
 </Accordion>
 
+<div id="h_faq_03" />
+
 <Accordion title="Will enabling the new Receipt validation affect my live app versions that still call the legacy method?">
 
 No. The two products run in parallel until September 7, 2026. Enabling the new Receipt validation in AppsFlyer has no effect on app versions that still call the legacy method. They continue to work as before until the sunset date.
 
 </Accordion>
 
+<div id="h_faq_04" />
+
 <Accordion title="What happens to users on old app versions that never get updated?">
 
 Users on old app versions continue to generate validated `af_purchase` events until September 7, 2026. To continue getting validated purchase data, release your updated app version with enough lead time to reach most of your user base before the sunset.
 
 </Accordion>
+
+<div id="h_faq_05" />
 
 <Accordion title="Can I switch from Receipt validation to ROI360 Store Revenue later?">
 
@@ -73,6 +83,8 @@ Yes. Both products use the same `validateAndLogInAppPurchase` (v2) SDK method, s
 If you want to go further and enable automatic purchase detection, full subscription lifecycle coverage (including renewals, upgrades, and existing subscribers), and subscription price-change handling, integrate the **Purchase Connector** SDK component. That's an app update, but it's optional. The manual `validateAndLogInAppPurchase` (v2) flow works in ROI360 Store Revenue without it.
 
 </Accordion>
+
+<div id="h_faq_06" />
 
 <Accordion title="Can I skip AppsFlyer purchase validation entirely?">
 
@@ -86,6 +98,8 @@ For these reasons, AppsFlyer recommends using either Receipt validation or ROI36
 
 </Accordion>
 
+<div id="h_faq_07" />
+
 <Accordion title="What happens if Apple's or Google's validation service has an outage?">
 
 It depends on which product you use:
@@ -95,6 +109,8 @@ It depends on which product you use:
 
 </Accordion>
 
+<div id="h_faq_08" />
+
 <Accordion title="Why did my dashboard revenue change after migration?">
 
 The revenue source changed. Legacy used the value you passed in the SDK call. The new Receipt validation uses the gross revenue returned by the store. If you previously passed a custom value, for example net revenue after store fee deduction, your dashboards and partner postbacks will reflect a different number after migration.
@@ -103,17 +119,23 @@ If you need net revenue, use **ROI360 Store Revenue**. It records both gross and
 
 </Accordion>
 
+<div id="h_faq_09" />
+
 <Accordion title="What happens to my custom af_revenue value?">
 
 If you still pass the `af_revenue` value, it's preserved on the event inside the `custom_data` object. Dashboards and partner postbacks use the gross value from the store response, not your custom value.
 
 </Accordion>
 
+<div id="h_faq_10" />
+
 <Accordion title="Will my partners see the new gross revenue in postbacks?">
 
 Yes. After migration, `af_purchase` postbacks carry the gross revenue from the store. If you previously passed a custom value under Legacy, your partners will see a different number. Make sure to inform your UA partners before rolling out the migration, especially those partners that use revenue data for campaign optimization.
 
 </Accordion>
+
+<div id="h_faq_11" />
 
 <Accordion title="How do event names change after migration?">
 
@@ -129,11 +151,15 @@ Full subscription lifecycle events (renewals, cancellations, refunds, upgrades) 
 
 </Accordion>
 
+<div id="h_faq_12" />
+
 <Accordion title="Can I use the SDK validation response to control access to purchased content?">
 
 The new Receipt validation still returns a validation result to your SDK callback that you can use to control access to purchased content. The result is more accurate because it relies on the latest validation mechanisms provided by the Apple App Store and Google Play, so the signal you receive in the callback is more trustworthy.
 
 </Accordion>
+
+<div id="h_faq_13" />
 
 <Accordion title="How does the new method distinguish between subscriptions and one-time purchases?">
 
@@ -141,14 +167,20 @@ The new `validateAndLogInAppPurchase` requires a mandatory `PurchaseType` parame
 
 </Accordion>
 
+<div id="h_faq_14" />
+
 <Accordion title="Why is the SDK returning 'Purchase validation is not enabled for this app in AppsFlyer'?">
 
 Your app has integrated the new `validateAndLogInAppPurchase` (v2) method, but the product isn't configured in the AppsFlyer dashboard. Open **Settings > ROI360 > Revenue settings > Purchases & subscriptions**, select either **Receipt validation** or **ROI360**, and complete the setup steps.
 
 </Accordion>
 
+<div id="h_faq_15" />
+
 <Accordion title="Why is my new SDK build only logging sandbox events, not af_purchase ?">
 
 `af_purchase` is logged only for production transactions. Sandbox transactions are logged as `af_purchase_sandbox_sdk`. To produce a real `af_purchase` event, test through a production pipeline (non-TestFlight on iOS, non-Licensed Tester on Android).
 
 </Accordion>
+
+<div data-zendesk-anchors="how-do-i-know-which-apps-still-use-legacy=h_faq_01 what-happens-on-september-7-2026=h_faq_02 will-enabling-new-receipt-validation-affect-live-apps=h_faq_03 what-happens-to-users-on-old-app-versions=h_faq_04 can-i-switch-from-receipt-validation-to-roi360-later=h_faq_05 can-i-skip-appsflyer-purchase-validation-entirely=h_faq_06 what-happens-if-store-validation-service-has-outage=h_faq_07 why-did-my-dashboard-revenue-change-after-migration=h_faq_08 where-does-custom-af-revenue-go=h_faq_09 will-partners-see-new-gross-revenue-in-postbacks=h_faq_10 are-event-names-different-in-new-receipt-validation=h_faq_11 sdk-validation-response-for-content-gating=h_faq_12 do-i-need-to-change-anything-for-subscriptions-vs-one-time=h_faq_13 sdk-returning-purchase-validation-not-enabled=h_faq_14 new-sdk-build-only-logging-sandbox-events=h_faq_15" />

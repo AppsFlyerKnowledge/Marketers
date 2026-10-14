@@ -54,6 +54,8 @@ There are two available integration methods with Xsolla:
 
 The configuration window only uses the **Integration** tab.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 #### Activate partner
@@ -95,11 +97,15 @@ In this section, you can map your AppsFlyer events with your partners via postba
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution links aren't available for Xsolla.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -107,11 +113,15 @@ Cost data isn't supported in the integration with Xsolla.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue data isn't supported in the integration with Xsolla.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -163,6 +173,8 @@ Both events are part of the mobile app in-app events.
 Xsolla sends AppsFlyer multiple web events, customized to the specific advertiser activity. The most important one is named "PURCHASE" and contains revenue.  
 Xsolla's web events will appear in PBA's web attribution and raw "Web events" DataLocker reports.
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 PC / Console support - the AppsFlyer integration with Xsolla does not support PC / Console Apps at this phase
@@ -172,3 +184,5 @@ PC / Console support - the AppsFlyer integration with Xsolla does not support PC
 > 📘 **See also**
 >
 > * [Xsolla documentation](https://developers.xsolla.com/solutions/web-shop/analytics/appsflyer/)
+
+<div data-zendesk-anchors="h_01HST42K52VQDWCWGP7TQVFB2X=important h_01J3DB8MCNQKKKCV1M39KN7Q0H=integration-types setting-up-xsolla=setting-up-the-tech-partner-integration h_01HST42K52JKQ70F7Y5PHDZAZ5=setting-up-the-tech-partner-integration h_01HST42K52YZMTE3C2TBTK865M=integration-tab h_01HST42K52RCTSGRNRCJ1C70NP=activate-partner h_01HST42K52BBJ6JS5KM0WCN6CF=advanced-privacy h_01HST47F5BXWV5W8BNHS9M2MTN=default-postbacks inapp-event-postbacks=in-app-event-postbacks h_01H9FKEAV3GG6X17X3NCCSWJAS=in-app-event-postbacks h_01HST42K53GSMD91ACXY9DMP7S=attribution-link-tab h_01HST42K53D0PPXTM7MHBQ8P04=cost-tab h_01HST42K53YS8N6G2V0279F5GA=ad-revenue-tab h_01H9FKEAV3ZNKMZSG76B61H2AS=permissions-tab h_01J3DEZZHDPSRZRXDV6FD4HY6Q=setting-up-the-pba-web-sdk-integration h_01J3F247QEAFGRW7CEP941KZE9=finding-the-web-dev-key-in-appsflyer h_01JMHXRGB60RVZ399FNHS18ZHZ=identifying-xsollas-events-in-appsflyer h_01JMHXS5MZ7B781WNNVYMDGGFY=tech-partner-s2s-integration h_01JMHXX7VBPPS7GQ0VBGWRPT7X=web-sdk-integration h_01JN0HXSEJV9JPAXGSBM7B3X7X=traits-and-limitations h_01J1C78W0MP8KXFB4251FKWJBX=see-also" />

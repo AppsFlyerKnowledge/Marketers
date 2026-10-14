@@ -52,6 +52,8 @@ AppsFlyer offers four types of cost ETL reports to support different analysis ne
 
 ## Report details
 
+<div id="data-freshness" />
+
 <Accordion title="Data freshness">
 
 Campaign cost data is written:
@@ -68,6 +70,8 @@ Campaign cost data is written:
   * Only cost data is updated retroactively; not attribution data.
 
 </Accordion>
+
+<div id="directory-and-filename-structure" />
 
 <Accordion title="Directory and filename structure">
 
@@ -284,6 +288,8 @@ Cost ETL setup requires:
 
 </Accordion>
 
+<div id="edit-or-change-connection" />
+
 <Accordion title="Edit or change connection">
 
 You can edit or change connections to get data sent to different (or additional) places.
@@ -338,6 +344,8 @@ You can edit or change connections to get data sent to different (or additional)
 
 </Accordion>
 
+<div id="aws-object-ownership" />
+
 <Accordion title="Change AWS object ownership">
 
 In AWS, by default, when AppsFlyer writes objects to your bucket, the object owner is AppsFlyer. Depending on your data loading process, you might have to change the default ownership to you—the bucket owner.
@@ -368,6 +376,8 @@ When choosing your report schedule:
 
 </Accordion>
 
+<div id="override-data" />
+
 <Accordion title="Override data">
 
 When pulling and analyzing your data, it is recommended to pull data for a specific date and batch, or override all previous data for the days that the current batch provides. Otherwise, you may see the same data repeated.
@@ -375,6 +385,8 @@ When pulling and analyzing your data, it is recommended to pull data for a speci
 For example, batch 1 on February 20 contains data for Feb 14-20. But, batches written on February 19 also contained data for Feb 14 to Feb 19. Override the data of the previous days received on February 19 with the data received in the most recent February 20 batch.
 
 </Accordion>
+
+<div id="geo-versus-channel" />
 
 <Accordion title="Geo versus channel">
 
@@ -386,11 +398,15 @@ If the integration agreement with a given media source doesn't include channel, 
 
 </Accordion>
 
+<div id="aggregate-data" />
+
 <Accordion title="Aggregate data">
 
 Cost ETL provides flexible and granular data as deep as can be extracted from the ad network. To extract actionable insight from such potentially huge amounts of data, it is recommended to aggregate the data in a way that best suits your business needs. For example, if you need to understand cost data at the campaign and country-level, use those dimensions.
 
 </Accordion>
+
+<div id="standardization-across-networks" />
 
 <Accordion title="Standardization across networks">
 
@@ -398,11 +414,15 @@ Not all networks provide data with the same granularity. For example, Meta ads d
 
 </Accordion>
 
+<div id="compare-data" />
+
 <Accordion title="Compare data">
 
 Cost ETL provides information regarding all your cost data. Some campaigns provided in Cost ETL do not appear in some AppsFlyer dashboards, for example, data of inactive campaigns, meaning campaigns without any recorded installs. To compare the data, find a specific campaign ID in the overview dashboard and compare it to its cost data in Cost ETL. [Learn more about cost data availability](/docs/roi360-cost-aggregation-overview#cost-data-availability-and-reports)
 
 </Accordion>
+
+<div id="combine-geo-report-and-all-cost-report" />
 
 <Accordion title="Combine Geo report and All Cost report">
 
@@ -505,6 +525,8 @@ where rank_for_dedup = 1;
 
 </Accordion>
 
+<div id="combine-cost-etl-and-cohort-reports" />
+
 <Accordion title="Combine Cost ETL and cohort reports">
 
 Consider combining Cost ETL reports with Aggregated advanced cohort reports (or regular Cohort reports via Data Locker) in your BI system. Together, they give the fullest picture of marketing performance with fresh and accurate data, including clicks, impressions, cost, revenue, in-app events, etc.). And you can use this combined data to get ROAS, CPA, etc. [Learn more](/docs/combine-cost-etl-and-cohort-reports-via-data-locker)
@@ -512,6 +534,8 @@ Consider combining Cost ETL reports with Aggregated advanced cohort reports (or 
 </Accordion>
 
 ## Additional information
+
+<div id="traits-and-limitations" />
 
 <Accordion title="Traits and limitations">
 
@@ -525,3 +549,5 @@ Consider combining Cost ETL reports with Aggregated advanced cohort reports (or 
 | Google Web and Meta Web cost availability | To include cost data from [Google Web (`pid=googleads_int`](/docs/google-ads-adwords-create-web-based-campaigns#create-a-google-ads-integration-in-appsflyer)) and [Meta Web (`pid=metaweb_int`)](/docs/meta-ads-create-web-based-campaigns#how-to-create-a-meta-web-ads-campaign) in the All Cost report, you must create a cost connection in the Cost tab of your [Google Ads (`pid=googleadwords_int`)](/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory) and [Meta Ads (`pid=facebook_int`)](/docs/meta-ads-integration-setup#cost-clicks-and-impressions) active integrations. Without these connections Google and Meta Web cost data won’t appear in the report. |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01K4WKGHP4S2B23R0Z57NFESPE=four-types-of-cost-etl-reports h_01JZJVXY0BA25QM9PK4YRT8DZ6=note cost-etl-report-comparison-table=cost-etl-report-types-overview-table h_01K4WN2VMPZYA6273EDW7CSJZ9=cost-etl-report-types-overview-table h_01JYXKJFYG6FKM8S6C8GYHPK6T=report-details h_01JYXKJFYGE8SHR071RNXW5V97=data-freshness h_01HA29GW8PWN30BCQCK29V0FTA=directory-and-filename-structure h_01JD4P98XF9S47EDHP38VXW1XS=data-locker-connection-directory-structure h_01JKWMF6V57C35F1A0BVH18CY1=cost-etl-connection-directory-structure h_01HA29GW8P0B1JJTGYDW863D7Z=file-fields h_01HA29GW8PQATB4K5VJP1HD4NW=fieldsdimensions h_01HA29GW8PZTS7XDWGYWXFZPYG=metrics 01JCZDRERADNNX04RT752793PG=procedures 01JCZP8A5W67W66N886KHNRR4A=set-up-cost-etl 01JCZME67YK848NM0RJTM1J5ZG=edit-or-change-connection h_01JCZMGC8J41Y7H4JGZDVWYDJS=edit-connection change-data-locker-connections=change-data-locker-connection h_01JCZNQF3QE7P8PBQPKXZK1SA2=change-data-locker-connection h_01JKWMF6V70W9FA90SSKJ77R2Z=change-from-cost-etl-to-data-locker-connection h_01HA29GW8Q6D630E8SDVSFYVG7=aws-object-ownership h_01HA29GW8QKPQXE4GHECAC5R5X=best-practices h_01J0NRD227RQR50CMNW60SF7SK=report-schedule h_01HA29GW8QHX8AMK4T7E85H7RS=override-data h_01HA29GW8QT5FNNYSWHCT99D68=geo-versus-channel h_01HA29GW8QA3FP46EMZVYDEZF3=aggregate-data h_01HA29GW8QPW0NXEMF1WGJMKSF=standardization-across-networks h_01HA29GW8Q3FNS0W7SKTG7S9R1=compare-data h_01K4WNM1ZFSMFZEV3V2HQ5PYQE=combine-geo-report-and-all-cost-report h_01J582E5JNR5DJ9T8HKDG2XSRR=combine-cost-etl-and-cohort-reports h_01HA286GA6WPYVNN7KCXK7DGFM=additional-information h_01HA282W8WHHNDG75XZNSV2QQF=traits-and-limitations" />

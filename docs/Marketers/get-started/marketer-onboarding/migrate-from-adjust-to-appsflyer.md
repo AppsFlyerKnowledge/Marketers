@@ -43,6 +43,8 @@ You can work on these tasks simultaneously, meaning the marketers, developers, a
 
 <table><thead><tr><th>Step</th><th>Who's involved</th><th>Estimated time</th><th>Remarks</th></tr></thead><tbody><tr><td>1. Create an AppsFlyer account</td><td>Marketer/AppsFlyer dashboard user</td><td>2 hours</td><td> </td></tr><tr><td>2. Add the app in AppsFlyer</td><td>Marketer/AppsFlyer dashboard user</td><td>2 hours</td><td> </td></tr><tr><td>3. Integrate the SDK</td><td>App developers</td><td>1 day + 1 week of testing and iterating</td><td><ul><li><strong>Recommended</strong>: Integrate the AppsFlyer SDK in a pre-production app for testing.</li><li>Production app must be updated in app stores after all other tasks are completed.</li></ul></td></tr><tr><td>4. Migrate devices (optional)</td><td>Data engineer</td><td>1-2 weeks</td><td rowspan="2"><ul><li>Consider pausing existing campaigns before migration, and resuming them after app version is updated. </li><li>Consider repeating device migration on the final migration date to ensure complete coverage. </li></ul></td></tr><tr><td>5. Migrate campaigns</td><td>Marketer/UA manager</td><td>1-3 days for each media source</td></tr><tr><td>6. Set up data reporting</td><td>Data engineer</td><td>3-6 weeks</td><td> </td></tr></tbody></table>
 
+<div id="step-1-create-an-appsflyer-account" />
+
 <Accordion title="Step 1. Create an AppsFlyer account">
 
 **To create an AppsFlyer account**:
@@ -51,6 +53,8 @@ You can work on these tasks simultaneously, meaning the marketers, developers, a
 2. [Add account users with appropriate permissions](/docs/user-management).
 
 </Accordion>
+
+<div id="step-2-add-your-app" />
 
 <Accordion title="Step 2. Add your app">
 
@@ -61,6 +65,8 @@ You can work on these tasks simultaneously, meaning the marketers, developers, a
 3. As part of the app onboarding wizard in AppsFlyer, prepare and send an email to your developer with instructions and tasks for SDK integration and in-app event mapping.
 
 </Accordion>
+
+<div id="step-3-integrate-the-sdk" />
 
 <Accordion title="Step 3. Integrate the SDK">
 
@@ -89,6 +95,8 @@ The AppsFlyer SDK integrated into the app is the link between the app and the Ap
    * App update rollouts in the app stores can take a couple of days to fully complete. Users installing during this phase may still get the previous version.
 
 </Accordion>
+
+<div id="step-4-migrate-devices-optional" />
 
 <Accordion title="Step 4. Migrate devices — optional">
 
@@ -125,6 +133,8 @@ Once you migrate devices, data reflects in AppsFlyer as follows:
    Your CSM will migrate the device IDs to AppsFlyer.
 
 </Accordion>
+
+<div id="step-5-migrate-campaigns" />
 
 <Accordion title="Step 5. Migrate campaigns">
 
@@ -183,6 +193,8 @@ For SKAdNetwork (SKAN) attribution, you can only have one SDK update the convers
 [Learn about setting up the SKAN conversion value in AppsFlyer.](/docs/skan-conversion-studio)
 
 </Accordion>
+
+<div id="step-6-set-up-data-reporting" />
 
 <Accordion title="Step 6. Set up data reporting">
 
@@ -271,3 +283,5 @@ Devices migrated to AppsFlyer with this method are recorded (but do not display)
 [See sample CSV](https://docs.google.com/spreadsheets/d/e/2PACX-1vQPvcJ3zXjsB5Zrn8vqD_-QXFPjguDU9Y8_LfK6-2eOgdlDltmFdGoM-94Ouw-D327oMp9p0ZbFFawF/pub?gid=935533759&single=true&output=csv)
 
 </Accordion>
+
+<div data-zendesk-anchors="overview=about-migrating-to-appsflyer 01H8EDSTP8N4GZJQ5J609C3DHM=about-migrating-to-appsflyer h_01HQJ10ZFJR43KBYMD9A07CJ99=compare-measurement-between-appsflyer-and-adjust 01H8EDSTP8YGDZBPEY1976JP8C=tasks 01JE3EC4C847ZEK769Y9G237KG=step-1-create-an-appsflyer-account 01JE3EC4C9V83D0V46EJK49JZ2=step-2-add-your-app 01JE3EC4CAKY4FQBPPZSJFP5V5=step-3-integrate-the-sdk step-4-migrate-devices%E2%80%94optional=step-4-migrate-devices-optional 01JE3EC4CPT4KAER27C8C0DHH7=step-4-migrate-devices-optional 01H8EDSTP93QJA4XZB6TDWWH1V=example 01JA2CAMW3HCHC4B9FX7517FJ6=note 01JE3EJ5DVXF1VT28ZCGR7SMF3=step-5-migrate-campaigns 01JE3EXVNRMA2MFVPSJZ2RMR09=srns 01H8EDSTP9ZGMHSM44BWGF1FJN=note-1 nonsrn-ad-networks=non-srn-ad-networks 01JE3EXVNTWK4ZJS55WXHFKSMX=non-srn-ad-networks 01JE3EXVNTS4FVXN370G1CR8Z9=owned-media 01JE3EXVP4TSMGSZD4B460RSQA=skan 01JE3F6VXDG9MDCVWN81RSHXVG=step-6-set-up-data-reporting 01JE3E5VHV2WCFWABC9FYQW3VG=additional-information 01JE3FG6K95QT60C36R88WGDG4=attributed-migration 01H8EDSTP9HABKEZJXMB84CDDE=attributed-device-migration-csv-structure 01JE3FG6MKNJMTHSR5B2ZMQP1K=nonattributed-migration nonattributed-device-migration-csv-file-structure=non-attributed-device-migration-csv-file-structure 01H8EDSTP9AFDMQS6BPQJY19ZH=non-attributed-device-migration-csv-file-structure" />

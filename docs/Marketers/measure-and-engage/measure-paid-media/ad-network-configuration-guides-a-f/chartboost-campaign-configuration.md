@@ -40,6 +40,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The ***Integration Tab*** is divided into different sections as described below.
@@ -96,6 +98,8 @@ In this section, you can configure in-app event postbacks that are sent to Chart
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 In this tab, you can create the attribution links you want to send to Chartboost for attributing Chartboost campaigns, ad sets, or single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
@@ -149,6 +153,8 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
@@ -179,6 +185,8 @@ This section is relevant if you are acting as a publisher, displaying ads of the
 > 2. [Enable Chartboost S2S](https://answers.chartboost.com/en-us/child_article/s2s-setup) - this step is required to allow AppsFlyer to query Chartboost for ad revenue data. **This should not be confused with** [**AppsFlyer S2S**](/docs/server-to-server-events-api-for-mobile-s2s-mobile) **which is your way of sending in-app events to AppsFlyer using a dedicated API.**
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -212,3 +220,5 @@ Advertisers should be aware of the following reasons:
 > 📘 **Note**
 >
 > While Chartboost shows all installs of a retargeting campaign in the same place, on the AppsFlyer dashboard, installs are divided between the Overview page (new installs) and the Retargeting page (re-attribution and re-engagements).
+
+<div data-zendesk-anchors="h_01HFRFDP5V8Q9F0KTEX8X917ZX=note h_01HFRFDP5V0CTXQ0B0JXYD0TKS=setting-up-chartboost h_01HFRFDP5V7BEPGG4226CYWCS7=integration-tab h_01HFRFDP5V26M3RV5986P768A7=activate-partners h_01HFRFDP5VPBY1W81DRVVWJ54D=general-settings h_01HFRFDP5V2GAJQ81NYKDGF16K=default-postbacks h_01HFRFDP5VGFJ8K0J9GA0EX3K1=launch-postbacks inapp-events-settings=in-app-events-settings h_01HFRFDP5V3Z41EEASQD7ZPJRD=in-app-events-settings h_01HFRFDP5VKTGQFHMMXTD6KQTY=attribution-link-tab h_01HFRFDP5VA3DQSH3TRYJC47JZ=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HFRFDP5VQFQHH6ZZ6DWXSJ9C=click-through-attribution h_01HFRFDP5WAJ5Y0K27DY21NZ91=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HFRFDP5WTKE6WJ3CVS16PDF9=view-through-attribution-lookback-window h_01HFRFDP5WSM97SFDS8YC64X31=impressions-attribution-link h_01HFRFDP5W0K5A3E229PS25N9P=cost-tab h_01HFRFDP5WAB1F5YBA9BW3QYPM=ad-revenue-tab h_01HFRFDP5WMREFM3Q0DXJYTHCD=important h_01HFRFDP5WHAKN44VT9Y90P6BJ=permissions-tab h_01HFRFDP5WHWZARGXQ5ZTRC8BD=discrepancies-between-chartboost-and-appsflyer h_01HFRFDP5WN483XJN4PDV2KCR0=note-1" />

@@ -29,6 +29,8 @@ x-zendesk:
 
 The Baidu mDSP Ads (Baiyi) configuration window includes 2 active tabs: Integration and Attribution link. Click on the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -59,6 +61,8 @@ In this section, you can map your AppsFlyer events with Baidu mDSP Ads (Baiyi) v
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -101,17 +105,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost integration is not available for Baidu mDSP Ads (Baiyi).
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue integration is not available for Baidu mDSP Ads (Baiyi).
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -150,3 +160,5 @@ Click **Campaign Management** >> **Create New Campaign**:
 In section **2. Set Up Ad Unit** >> Process to **Objectives**, choose App Install >> Complete other related information and submit the Ad campaign for verification:
 
 ![mDSP_8.png](https://files.readme.io/da064e6811b4c749a20757d711186dc705070629887cdf2e7b514cc17274af75-115014006946.png)
+
+<div data-zendesk-anchors="h_01HKW6TN4YBTMR1ZDH77D7SK7N=setting-up-baidu-mdso-ads-baiyi h_01HKW6TN4YM927W1VAKNWFQ0SJ=integration-tab h_01HKW6TN4Y4EXABZTJ2VE4QRTK=activate-partner inapp-events-settings=in-app-events-settings h_01HKW6TN4YYDKNGCSJB4MARK52=in-app-events-settings h_01HKW6TN4Y2D2K419172AZJXR6=attribution-link-tab h_01HKW6TN4YQTMGSMPGR01FR658=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6TN4Y9ZP7SXMTD0XGNPGV=click-through-attribution h_01HKW6TN4Y5A1PT6RCVCFYRG9Q=click-attribution-link h_01HKW6TN4Z02V726B7379TMBC0=cost-tab h_01HKW6TN4Z01YZWHMGF5N1KC50=ad-revenue-tab h_01HKW6TN4Z3KCEFDW9YA2A2BZV=permissions-tab h_01HKW6TN4ZWEA7683C8MFAT4AY=create-conversion-rule-at-baidu-mdsp-ads" />

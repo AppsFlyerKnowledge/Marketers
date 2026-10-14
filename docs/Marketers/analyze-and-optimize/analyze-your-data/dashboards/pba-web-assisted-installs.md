@@ -52,6 +52,8 @@ Consider the use-case scenarios, in the table that follows, to Web-Assisted Inst
 | --- | --- |
 | <ol><li>In AppsFlyer, from the top menu, select **My Apps** *>* **View brand bundles**</li><li>Click PBA dashboard.</li><li>Go to the **Web-Assisted Installs** tab.</li></ol> | <ol><li>In AppsFlyer, from the side menu, select **Analyze** > **People-based Attribution.**</li><li>Go to the **Web-Assisted Installs** tab.</li></ol> |
 
+<div id="website-assisted-installs-and-reinstalls" />
+
 <Accordion title="Website assisted installs and reinstalls">
 
 ![30day_us-en.png](https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png)
@@ -61,6 +63,8 @@ Installs are considered to have been influenced by a website if they occur withi
 For information about data freshness, see [PBA daily](/docs/about-data-freshness-and-timezone-support#pba-daily).
 
 </Accordion>
+
+<div id="dashboard-features" />
 
 <Accordion title="Dashboard features">
 
@@ -81,3 +85,5 @@ Use dashboard features to:
 | Export CSV | Click **Export CSV** to export the Installs table. |
 
 </Accordion>
+
+<div data-zendesk-anchors="webassisted-installs-analysis=web-assisted-installs-analysis h_01HJR78C5VWASD9M52NR43DKG6=web-assisted-installs-analysis webassisted-installs-headline-metrics=web-assisted-installs-headline-metrics h_01HJR78C5VXJPYP6P2A6BKGVN2=web-assisted-installs-headline-metrics webassisted-installs-dashboard=web-assisted-installs-dashboard h_01HJR78C5WQGENPBB5EBMHJ383=web-assisted-installs-dashboard h_01HJR78C5XY39JFNWRYNP3CR65=website-assisted-installs-and-reinstalls h_01HJR78C5X4AEEX0S34YY08XF6=dashboard-features" />

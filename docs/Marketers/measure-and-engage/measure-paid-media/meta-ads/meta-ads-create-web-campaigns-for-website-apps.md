@@ -56,6 +56,8 @@ The setup involves defining the integration between Meta Ads and AppsFlyer and c
 
 Start by activating the Meta Ads integration and defining the postbacks AppsFlyer sends to CAPI.
 
+<div id="step-1-activate-the-meta-ads-integration" />
+
 <Accordion title="Step 1: Activate the Meta Ads integration">
 
 To activate the Meta Ads integration:
@@ -87,6 +89,8 @@ To activate the Meta Ads integration:
 
 
 </Accordion>
+
+<div id="step-2-set-inapp-event-postbacks" />
 
 <Accordion title="Step 2: Set in-app event postbacks">
 
@@ -146,6 +150,8 @@ For more information, see [[Beta] Integrate AppsFlyer Web SDK](/docs/integrate-a
 
 Complete the following steps in Meta Ads Manager.
 
+<div id="step-1-set-the-campaign-type-objective-and-goals" />
+
 <Accordion title="Step 1: Set the campaign type, objective, and goals">
 
 1. Log in to Meta Ads and create a campaign.
@@ -155,23 +161,39 @@ Complete the following steps in Meta Ads Manager.
 3. [Optional] To add a custom objective, do the following:
 
    1. In Meta Ads, select the custom event you want to set as a campaign objective and mark it as a conversion action.
-   2. In AppsFlyer, on the **Meta Web integration** page, under **In-app event postbacks**, map an AppsFlyer event to a custom partner event in the **Mapped to partner event** column, and give it the same name as the conversion action in Meta Ads.<br /><br />**Note**<br />#### Note
+   2. In AppsFlyer, on the **Meta Web integration** page, under **In-app event postbacks**, map an AppsFlyer event to a custom partner event in the **Mapped to partner event** column, and give it the same name as the conversion action in Meta Ads.
+
+      <br /><br />**Note**<br />
+
+
+   #### Note
 
    To learn more about Meta campaign objectives, see the [Meta documentation](https://www.facebook.com/business/help/175683976191028).
+
+
 4. In **Conversion location**, select **Website**.
 5. In **Pixel**, enter the same pixel ID you entered for `metaweb_int` in the AppsFlyer Partner Marketplace. To learn more about the Meta Pixel, see the [Meta documentation](https://www.facebook.com/business/help/742478679120153) (login required).
 6. Click **Next**.
 
 </Accordion>
 
+<div id="step-2-set-destination-url" />
+
 <Accordion title="Step 2: Set destination URL">
 
 1. Under **Destination**, in the **Website URL** field, enter the URL that serves as the destination for your ad. Choose one of the following:
 
    * **Website URL**: Use your website URL when you want users to land directly on your website and complete web conversion events, such as a purchase or sign-up.
-   * **AF attribution link (OneLink)**: Use an AF attribution link when you want users to be redirected to your mobile app, with a fallback to your website if the app is not installed. This is useful when your campaign targets both app and web users. For more information, see [OneLink links and experiences](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink).<br /><br />**Note**<br />#### Important!
+   * **AF attribution link (OneLink)**: Use an AF attribution link when you want users to be redirected to your mobile app, with a fallback to your website if the app is not installed. This is useful when your campaign targets both app and web users. For more information, see [OneLink links and experiences](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink).
+
+     <br /><br />**Note**<br />
+
+
+   #### Important!
 
    In some cases, using AF attribution links may cause errors. If this occurs, ask your Meta representative for a solution, or use your website URL as the destination URL instead.
+
+
 2. Click **Build a URL parameter** to add URL parameters to the destination URL.
 3. Under **Custom parameters**, click **Add parameter**.
 4. Map the AppsFlyer parameters to their Meta values as shown in the table below:
@@ -207,6 +229,8 @@ https://www.example.com?pid=metaweb_int&c={{campaign.name}}&af_siteid={{site_sou
 
 </Accordion>
 
+<div id="step-3-select-tracked-events" />
+
 <Accordion title="Step 3: Select tracked events">
 
 Use the **Tracking** section to select the conversion events promoted by your ad. You set up events via the [Events Manager](https://www.facebook.com/business/help/898185560232180?id=1205376682832142).
@@ -240,3 +264,5 @@ To get a complete performance view of web attribution data and web cost data fro
 | Trait | Remarks |
 | --- | --- |
 | Clicks and impressions | Clicks and impressions for web campaigns require an [ROI360 subscription](/docs/roi360-onboarding-guide). |
+
+<div data-zendesk-anchors="h_01KQA78RE9FRENQAK31Q641C0N=overview h_01KQC27K5KWP3A6HMM2W7N3MVB=see-also h_01KQA78RE9F82ZBVF4YZHZTEEX=note h_01KQA78RE93B09A9YH2FRB3XRR=prerequisites set-up-meta-ads-web-campaigns=set-up-meta-ads-web-campaigns-for-website-apps h_01KQA78RE9J681CJ8DQNWJC37H=set-up-meta-ads-web-campaigns-for-website-apps h_01KQA78RE93JYCV2P0DDZC0A4B=part-1-set-up-meta-ads-integration-in-appsflyer h_01KQA78RE94B1JSVJFWR1V9QE5=step-1-activate-the-meta-ads-integration h_01KQA78REA5VN1229F2J3QH794=note-1 h_01KQA78REANHAQ88N4MXWM832D=note-2 h_01KQA78REA08SNB0BKCJDJZ2R0=note-3 h_01KQA78REACR7QTMQWJMV6VJSF=step-2-set-inapp-event-postbacks h_01KQA78REA1EB5ZHX4HKJSW7ZD=important h_01KQA78REAEZQPDSKZ0GRNKEJJ=part-2-set-up-appsflyer-integration-in-meta-ads h_01KQA78REASX8JX1H37075WT82=step-1-set-the-campaign-type-objective-and-goals h_01KQA78REA5JZ44C4BE77JCHG8=note-4 h_01KQA78REAKBGQRC713FZ3J02P=step-2-set-destination-url h_01KQA78REAXZ1BFGC5BR75ZB5X=important-1 h_01KQA78REARWGQDCJ4KN3FM120=note-5 h_01KQA78REA7MZSG5JZ1XX2C65P=tip h_01KQA78REA3ZW7W9M3VFSQASB6=see-also-1 h_01KQA78REASTZH19CM58M5Z43R=step-3-select-tracked-events h_01KQA78REBHCR1AHA254BTFZC6=important-2 h_01KQA78REBK1PWXNA1PM9118TA=view-web-attribution-data h_01KQA78REBAW2SM5DRD68DP8W1=note-6 h_01KNM00RR9TF8JRTJXWN23MF1S=measure-web-attribution-data-with-web-cost h_01KQAE3JKMQ6ZEATDAEXBC4PT6=traits-and-limitations" />

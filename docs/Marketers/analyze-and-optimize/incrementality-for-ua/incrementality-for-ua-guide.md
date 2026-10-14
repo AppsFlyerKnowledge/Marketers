@@ -52,6 +52,8 @@ Incrementality for UA provides the insights you need to understand the true incr
 
 This section explains how Incrementality for UA experiments are structured, how to work with them, and how they generate reliable, causal insights into campaign performance.
 
+<div id="understanding-geo-experimentation-explainer" />
+
 <Accordion title="Understanding geo experimentation">
 
 Incrementality for UA uses geo-based experimentation to measure true campaign impact in a scientifically rigorous way. Instead of segmenting users, we segment geographic areas into statistically similar exposed and holdout regions. These regions are selected based on size and historical app behavior. Ads run only in the exposed regions, while the holdout regions receive no exposure. By comparing the behavior of the two groups during the holdout period, we can measure the actual causal effect — not just correlation.
@@ -86,6 +88,8 @@ At the heart of our geo-experimentation is Time-Based Regression (TBR). TBR is u
 
 </Accordion>
 
+<div id="use-cases" />
+
 <Accordion title="Use cases">
 
 Incrementality for UA helps you solve key growth challenges by revealing the true business impact of your campaigns. Below are some common use cases where geo-based incrementality testing adds critical value.
@@ -103,6 +107,8 @@ Incrementality for UA helps you solve key growth challenges by revealing the tru
 
 </Accordion>
 
+<div id="selecting-campaigns" />
+
 <Accordion title="Selecting what to measure">
 
 This section discusses the best campaigns to select for your experiments. Here are a few things to consider:
@@ -114,7 +120,7 @@ This section discusses the best campaigns to select for your experiments. Here a
 
 </Accordion>
 
-<div id="h_01JZQ4Q1C0Z3M002TWYKB8SS3M" />
+<div id="understanding-experiment-results" />
 
 <Accordion title="Understanding experiment results and using the insights">
 
@@ -175,6 +181,8 @@ When used together, the two models provide a holistic view of marketing performa
 
 </Accordion>
 
+<div id="pausing-or-extending-experiments" />
+
 <Accordion title="Pausing or extending experiments">
 
 **Consider pausing experiments (before the default 30 days) if:**
@@ -193,11 +201,13 @@ When used together, the two models provide a holistic view of marketing performa
 
 To get started with Incrementality for UA, follow the steps below:
 
-**Prerequisites**
+<span id="h_01J5WC8Z4J352AHSDTRCEP2W9H"></span>**Prerequisites**
 
 * An AppsFlyer [account](https://www.appsflyer.com/sign-up/) with an **Incrementality for UA** subscription (ask your CSM to enable it).
 * The [AppsFlyer SDK](/docs/basic-sdk-integration-guide) installed in your mobile apps.
 * Your app must have at least 120 days of install data.
+
+<div id="create-the-experiment-" />
 
 <Accordion title="Step 1. Create the experiment">
 
@@ -218,9 +228,16 @@ The first step is creating the experiment.
       After you submit, AppsFlyer reviews your geo design — this usually takes just a few minutes. Your geo design will either be ready to use, or unavailable:
 
       * **Ready** — Your geo design is approved and ready to use. You can proceed with the experiment.
-      * **Unavailable** — The geo design doesn't currently meet the requirements for a valid experiment, based on the data available for the selected app, country, and metric combination. You can try resubmitting after 30 days, as eligibility may change as your app collects more data.<br /><br />**Note**<br />#### Note
+      * **Unavailable** — The geo design doesn't currently meet the requirements for a valid experiment, based on the data available for the selected app, country, and metric combination. You can try resubmitting after 30 days, as eligibility may change as your app collects more data.
+
+        <br /><br />**Note**<br />
+
+
+      #### Note
 
       If geo design rules exist for the selected app and country, they're automatically applied when the geo design is calculated. See [Geo design policy](#h_01_geo-design-policy) to learn more.
+
+
 
       > 📘 **Note**
       >
@@ -233,7 +250,7 @@ The first step is creating the experiment.
       * Select the **Main metric** you want to measure. This can be installs or an in-app event.
    3. **Set campaign details:**
 
-* You'll need to select a **Media source** connection for each experiment cell. This is the media source where your campaign runs. If there are no connections, you can [create a new connection.](#h_01HBB6EJ8T4RRKJY632180KZWM)
+* You'll need to select a **Media source** connection for each experiment cell. This is the media source where your campaign runs. If there are no connections, you can [create a new connection.](#Connections)
 * Then select the relevant campaigns to measure in the experiment.  
   Incrementality experiments can be set to measure individual campaigns (for example, "How is the Google campaign performing vs. the Meta campaign") or the entire media source by selecting multiple campaigns within a single experiment cell (for example, "How is Google performing vs. Meta?").  
 
@@ -271,9 +288,11 @@ The first step is creating the experiment.
 
 </Accordion>
 
+<div id="analyze-the-results" />
+
 <Accordion title="Step 2. Analyze the results and gain insights">
 
-You can see the experiment results on the experiment dashboard.
+<span id="zd-access-the-experiment-dashboard"></span>You can see the experiment results on the experiment dashboard.
 
 #### Access the experiment dashboard
 
@@ -303,7 +322,7 @@ The middle section of the dashboard displays the **Experiment KPIs** by campaign
 * **Lift** - How many more installs occurred because of your campaign, compared to what would have happened without it. Calculated as: Lift (%) = (actual performance in exposed group (excluded regions) - predicted performance in exposed group) / predicted performance in exposed group * 100 * -1.
 * **Confidence** - The level of statistical confidence that the lift is greater than zero.  
 
-  For guidance on how to read the results, see [Understanding experiment results and using the insights.](#h_01JZQ4Q1C0Z3M002TWYKB8SS3M)
+  For guidance on how to read the results, see [Understanding experiment results and using the insights.](#understanding-experiment-results)
 
 The bottom of the dashboard is the **Cumulative incremental installs** graph which shows the cumulative incremental installs per cell.
 
@@ -320,7 +339,7 @@ The bottom of the dashboard is the **Cumulative incremental installs** graph whi
 
 This section explains how to manage your connections, geo design policy, and experiments.
 
-<div id="h_01HBB6EJ8T4RRKJY632180KZWM" />
+<div id="Connections" />
 
 <Accordion title="Connections">
 
@@ -408,6 +427,8 @@ Keep the following in mind when working with geo design rules:
 
 </Accordion>
 
+<div id="Experiments" />
+
 <Accordion title="Experiments">
 
 You can view and manage all your experiments in one place.
@@ -449,6 +470,8 @@ From here you can:
 
 </Accordion>
 
+<div id="extend-experiment" />
+
 <Accordion title="Extend experiment">
 
 **To extend an experiment:**
@@ -460,6 +483,8 @@ From the experiment, click the![action menu.png](https://files.readme.io/0f35ebb
 This will extend the experiment by an additional 14 days.
 
 </Accordion>
+
+<div id="stop-experiment" />
 
 <Accordion title="Stop experiment">
 
@@ -475,6 +500,8 @@ From the experiment, click the ⠇actions icon (on the upper-right) and select *
 
 This section outlines some key traits and limitations of Incrementality for UA.
 
+<div id="key-traits-and-limitations" />
+
 <Accordion title="Key traits and limitations">
 
 | Trait | Description |
@@ -485,3 +512,5 @@ This section outlines some key traits and limitations of Incrementality for UA.
 | Minimum monthly non-organic installs | Each measured app must generate at least 10,000 non-organic installs per month to run a valid experiment. |
 
 </Accordion>
+
+<div data-zendesk-anchors="overview=about-incrementality-for-ua h_01HBB6EJ8SQ3776WCVQZA4MJ6M=about-incrementality-for-ua get-started=experiment-design-and-insights h_01JZQ4N4PEKTP1TZTDQ191ZDM3=experiment-design-and-insights h_01JZQ4Q1C035S9EXVJX8YR3PEA=understanding-geo-experimentation-explainer h_01K049CDW93B3C7VZSNFQ1AD0N=use-cases h_01JZQ4Q1C0BZAH7E0J2T1SCPD0=selecting-campaigns h_01JZQ4Q1C0Z3M002TWYKB8SS3M=understanding-experiment-results h_01JZQ4Q1C0NWWVD8ENVJB50RMD=pausing-or-extending-experiments h_01HBB6EJ8S2T9JHKVWH1JK1FPD=get-started h_01HBB6EJ8SVV71R5W9Z96D7WCG=create-the-experiment- h_01K2F27SEQF8N38FMCW8PSFB36=note h_01KVA5SPC58YXP67G86Z2CHGDF=note-1 h_01K2F1FQ0NN5YPWK5026Y7935D=note-2 01JV7F4ECQAY0PJNV2A94E5GA9=analyze-the-results access-the-experiment-dashboard=zd-access-the-experiment-dashboard h_01JZJ70C1C0ZRD8WMCKZBHKCEP=access-the-experiment-dashboard h_01JZJ70K0QTGZ2V3T1TJ1VG08H=a-tour-of-the-dashboard h_01JZ88Y5TQJCYQ2057RASHCP9D=manage h_01HBB6EJ8T4RRKJY632180KZWM=Connections geo-design-policy=h_01_geo-design-policy h_01KVA5SPC5PCR7BAK971PGHMCW=geo-design-rule-types h_01KVA5SPC5X3VRK60AJ74TJFCS=set-up-a-geo-design-rule h_01KVA5SPC54N4ECEMHJW2PV9K7=delete-a-geo-design-rule h_01KVA5SPC5GY7SVPT8BAFF1BPT=note-3 h_01KVA5SPC5K7M0AEYVGVCAMY4W=view-geo-design-rules-in-an-experiment geo-design-policy-traits-and-limitations=traits-and-limitations h_01KVA5SPC61N9H7PEKYRX01M9Y=traits-and-limitations h_01K2HQ7M74PGY2BC2X1KJ1F0Z4=Experiments h_01K9VPG89HGV9BK8W94WC7WH8Q=status-column h_01K2HMD3QVJX9KYPQ7GS91KQ6Y=extend-experiment h_01JZ894VWK49JW8M97GMTC5JPX=stop-experiment traits-and-limitations=traits-and-limitations-1 h_01KAZQSWB0H9SM7W9PADRJ9B3N=traits-and-limitations-1 h_01KAZQQMBP5AHE8KQ5V71TCVAY=key-traits-and-limitations" />

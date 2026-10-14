@@ -24,11 +24,15 @@ x-zendesk:
 ---
 ## Meta ads FAQ
 
+<div id="i-dont-see-facebook-campaign-clicks-in-appsflyers-dashboard" />
+
 <Accordion title="I don't see Meta ads campaign clicks in AppsFlyer's dashboard">
 
 By default, Meta ads sends only the conversion and engagement data. However, you can easily also start getting [clicks, impressions, and cost data for your Meta ads campaigns](/docs/meta-ads-integration-setup#cost-clicks-and-impressions).
 
 </Accordion>
+
+<div id="can-appsflyer-show-the-campaign-level-and-ad-groups" />
 
 <Accordion title="Can AppsFlyer show the campaign level and ad groups?">
 
@@ -36,11 +40,15 @@ Yes. In fact, AppsFlyer shows you also the single ad level, so you have 3 levels
 
 </Accordion>
 
+<div id="is-facebook-data-shown-in-realtime" />
+
 <Accordion title="Is Meta ads data shown in real-time?">
 
 Yes, all installs and subsequent in-app events are shown in real-time. However, the clicks, impressions, and cost data AppsFlyer gets in an aggregated form from Meta ads arrives periodically every few hours.
 
 </Accordion>
+
+<div id="when-can-i-see-a-new-campaigns-data-on-appsflyer" />
 
 <Accordion title="When can I see a new campaign's data on AppsFlyer?">
 
@@ -50,12 +58,16 @@ For example, a new ad has generated 100 clicks with no installs, and is not show
 
 </Accordion>
 
+<div id="how-can-i-get-more-installs-from-facebook" />
+
 <Accordion title="How can I get more installs from Meta ads?">
 
 If you have activated retargeting for Meta ads you can get up to 100% more installs in your user acquisition campaigns, for free!  
 How? Read [here](/docs/self-reporting-networks-srns#what-is-srn-mistargeting).
 
 </Accordion>
+
+<div id="how-can-i-get-device-level" />
 
 <Accordion title="How can I get device-level Android install data using the Google Play and Meta Install Referrers?">
 
@@ -95,17 +107,23 @@ Both referrer types require a decryption key from your Meta developer account. Y
 
 </Accordion>
 
+<div id="do-you-make-facebook-raw-data-available-to-agencies" />
+
 <Accordion title="Do you make Meta ads raw data available to agencies?">
 
 No. We are not allowed to provide Meta ads raw data to agencies, this is because agencies are regarded as third parties in terms of Meta terms of services.
 
 </Accordion>
 
+<div id="i-dont-see-facebook-raw-data-in-the-installation-and-inapp-events-reports" />
+
 <Accordion title="I don't see Meta ads raw data in the installation and in-app events reports">
 
 By default, Meta Ads does not allow the distribution of device-level data with unrestricted attribution information. However, if you accept the Meta Advanced Mobile Measurement (AMM) Terms, you will be able to access device-level attribution data for Meta ads without restriction. See [Enable Meta ads device-level data.](/docs/meta-ads-integration-setup#enable-meta-ads-device-level-data)
 
 </Accordion>
+
+<div id="any-specific-columns-for-facebook-in-appsflyers-performance-reports" />
 
 <Accordion title="Any specific columns for Meta ads in AppsFlyer's performance reports?">
 
@@ -116,6 +134,8 @@ However, when you download performance reports ONLY for Meta ads, AppsFlyer adds
 
 </Accordion>
 
+<div id="can-i-work-with-facebook-fmps-and-measure-performance-with-appsflyer" />
+
 <Accordion title="Can I work with Meta campaign management partners and measure performance with AppsFlyer?">
 
 Yes. AppsFlyer is integrated with dozens of Meta campaign management partners. These partners can be set up for attribution on the Active Integrations page in the dashboard.
@@ -123,6 +143,8 @@ Yes. AppsFlyer is integrated with dozens of Meta campaign management partners. T
 For details about setting up attribution with Meta campaign management partners, click [here](/docs/configuring-meta-campaign-management-partners).
 
 </Accordion>
+
+<div id="what-should-i-do-when-i-receive-the-following-warning" />
 
 <Accordion title="What should I do when I receive the following warning?">
 
@@ -133,6 +155,8 @@ For details about setting up attribution with Meta campaign management partners,
 
 </Accordion>
 
+<div id="what-happens-with-different-lookback-windows-than-on-facebook" />
+
 <Accordion title="What happens with different lookback windows than on Meta ads?">
 
 7-day click and 1-day view are the maximum and default lookback windows for Meta ads.
@@ -142,6 +166,8 @@ Configuring shorter windows on AppsFlyer decreases Meta ad attribution on AppsFl
 Therefore, to minimize discrepancies, the recommendation is to configure the Meta ads lookback windows in AppsFlyer to 7 day clicks and 1 day views.
 
 </Accordion>
+
+<div id="what-are-the-facebook-api-parameters" />
 
 <Accordion title="What are the Meta API parameters?">
 
@@ -161,6 +187,8 @@ In some AppsFlyer APIs, Meta parameters have different names than displayed on t
 | af\_siteid | Site ID | publisher\_platform when `publisher_platform` value is not equal to `facebook` else `null`. |
 
 </Accordion>
+
+<div id="how-long-do-you-keep-facebook-s-userlevel-data" />
 
 <Accordion title="How long do you keep Meta ads user-level data?">
 
@@ -183,11 +211,15 @@ iOS Universal Links and Android App Links are supported and can be used in Meta 
 
 </Accordion>
 
+<div id="are-ios-universal-links-and-android-app-links-supported-in-metas-non-paid-content" />
+
 <Accordion title="Are iOS Universal links and Android App Links supported in Meta’s Non-paid content?">
 
 iOS Universal Links and Android App Links are only supported in paid ads. In non-paid social apps content, it may be necessary to set up a Social app landing page or URI scheme to redirect or deep link users.
 
 </Accordion>
+
+<div id="aem-attribution-is-not-working" />
 
 <Accordion title="AEM attribution is not working">
 
@@ -203,11 +235,15 @@ Yes. OneLink links with App Links, Universal Links, or URI schemes configured ar
 
 </Accordion>
 
+<div id="conversion-events-are-not-sent-to-meta-ads" />
+
 <Accordion title="Conversion events are not sent to Meta Ads">
 
 You might be on a Zero package which doesn't include attribution.
 
 </Accordion>
+
+<div id="can-i-use-get" />
 
 <Accordion title="Can I use Get Conversion Data (GCD) to retrieve conversion data from Meta?">
 
@@ -228,6 +264,8 @@ You might be on a Zero package which doesn't include attribution.
 
 ## Meta ads cost FAQ
 
+<div id="getting-facebook-cost-data-in-the-appsflyer-dashboard" />
+
 <Accordion title="Getting Meta ads cost data in the AppsFlyer dashboard">
 
 AppsFlyer gets spend data (including clicks and impressions) from Meta ads campaigns if one or more installs occurred during the previous 7 days.
@@ -237,6 +275,8 @@ If a Meta ads campaign engages with multiple platforms (Android, iOS, desktop, e
 [Getting Meta ads cost including clicks and impressions](/docs/meta-ads-integration-setup#cost-clicks-and-impressions).
 
 </Accordion>
+
+<div id="facebook-cost-example" />
 
 <Accordion title="Meta ads cost example">
 
@@ -248,6 +288,8 @@ The cost information is provided by Meta ads to AppsFlyer. The number of **insta
 
 </Accordion>
 
+<div id="i-cant-see-old-facebook-cost-data-in-the-appsflyer-dashboard" />
+
 <Accordion title="I can't see old Meta ads cost data in the AppsFlyer dashboard">
 
 Upon performing the first Meta ads admin login described above AppsFlyer receives Meta ads cost data up to 7 days retroactively for existing campaigns. Cost data from beforehand isn't available.
@@ -256,11 +298,15 @@ In subsequent syncs, AppsFlyer also receives data from the last 7 days. This mea
 
 </Accordion>
 
+<div id="can-i-stop-cost-data-sync" />
+
 <Accordion title="Can I stop cost data sync?">
 
 To stop cost data sync with Meta ads, [remove AppsFlyer from your Business Integration in your Meta ads account](https://www.facebook.com/help/405094243235242).
 
 </Accordion>
+
+<div id="cost-data-was-fine-for-a-few-months-but-it-stopped-displaying" />
 
 <Accordion title="Cost data was fine for a few months, but it stopped displaying">
 
@@ -270,17 +316,23 @@ If the Meta ads admin user changes their Meta ads password the login steps must 
 
 </Accordion>
 
+<div id="i-clicked-on-my-facebook-ad-5-minutes-ago-why-dont-i-see-the-click-in-appsflyer" />
+
 <Accordion title="I clicked on my Facebook ad 5 minutes ago. Why don't I see the click in AppsFlyer?">
 
 AppsFlyer gets aggregated clicks, impressions, and cost data from Meta ads periodically every few hours. Therefore, it may take a few hours before these actions are displayed on AppsFlyer's dashboard.
 
 </Accordion>
 
+<div id="can-i-get-raw-data-on-clicks-and-impressions-from-facebook" />
+
 <Accordion title="Can I get raw data on clicks and impressions from Meta ads?">
 
 As AppsFlyer gets only aggregated click and impression data from Meta ads, the entire set of raw clicks and impressions is not available. The only raw clicks and impressions available in raw reports are those that resulted in installs.
 
 </Accordion>
+
+<div id="are-there-limitations-of-facebook-cost-data-by-geo" />
 
 <Accordion title="Are there limitations of Meta ads cost data by geo?">
 
@@ -302,6 +354,8 @@ To create a report with complete cost data, group it by only one of these dimens
 
 </Accordion>
 
+<div id="the-total-cost-doesnt-match" />
+
 <Accordion title="Why doesn't the total cost shown in Meta and AppsFlyer match?">
 
 There are differences between Meta ads and AppsFlyer attribution models. These differences may lead to discrepancies with Meta ads cost data:
@@ -313,6 +367,8 @@ There are differences between Meta ads and AppsFlyer attribution models. These d
 * **Deleted and archived ads**: Cost for deleted and archived ads isn't reported by Meta to AppsFlyer, but this cost is reflected in the Meta dashboard. This can cause a discrepancy between Meta and AppsFlter reports when comparing data at the campaign level.
 
 </Accordion>
+
+<div id="why-is-the-appsflyer-calculation-for-ecpi-different-from-the-cost-calculated-by-facebook-while-the-total-cost-is-identical" />
 
 <Accordion title="Why is the AppsFlyer calculation for eCPI different from the cost calculated by Meta ads, while the total cost is identical?">
 
@@ -330,11 +386,15 @@ When the user performing the Meta ads login (described above) doesn't have acces
 
 </Accordion>
 
+<div id="is-facebook-cost-data-displayed-for-retargeting-campaigns" />
+
 <Accordion title="Is Meta ads cost data displayed for retargeting campaigns?">
 
 Cost and ROI data for retargeting campaigns can be found in the **unified** view of [Cohort reports](/docs/cohort-and-retention-dashboard).
 
 </Accordion>
+
+<div id="why-does-the-facebook-cost-configuration-window-close-before-login" />
 
 <Accordion title="Why does the Meta ads cost configuration window close before login?">
 
@@ -342,11 +402,15 @@ If you're signed in to Meta ads on the same browser that you're performing the c
 
 </Accordion>
 
+<div id="why-is-there-a-discrepancy-in-cost-data-for-apps-in-the-amazon-app-store" />
+
 <Accordion title="Why is there a discrepancy in cost data for apps in the Amazon app store?">
 
 Contrary to AppsFlyer's data, Meta ads doesn't distinguish between cost data from Android apps as opposed to Amazon apps—which are Android-based. Therefore, the cost data of Amazon users may be attributed to campaigns targeting other Android users instead of the original Amazon campaigns.
 
 </Accordion>
+
+<div id="how-to-connect-cost-data-of-a-new-facebook-ad-account-while-my-old-account-is-linked" />
 
 <Accordion title="How to connect cost data of a new Meta ad account while my old account is linked?">
 
@@ -394,6 +458,8 @@ Your app requires the Facebook SDK in addition to the AppsFlyer SDK for the foll
 
 </Accordion>
 
+<div id="avoiding-duplicates-with-facebook-sdk" />
+
 <Accordion title="Avoiding duplicates with Facebook SDK">
 
 If you have [both the AppsFlyer and Facebook SDKs in your app](https://developers.facebook.com/docs/app-events/faq#faq_593792547454717), installs and in-app events are reported via the Facebook SDK, and then via postbacks to Meta ads servers through AppsFlyer. How can you avoid this duplicate reporting?
@@ -428,6 +494,8 @@ The image below shows all settings that need to be configured by the advertiser 
 
 </Accordion>
 
+<div id="attribution-for-facebook-for-outofstore-android-apps" />
+
 <Accordion title="Attribution for Meta ads for out-of-store Android apps">
 
 Meta ads doesn't allow creating mobile apps install campaigns for Android apps that are in out-of-store markets, for example, Baidu.
@@ -447,6 +515,8 @@ For specific instructions on attribution for apps in Amazon, click [here](/docs/
 
 </Accordion>
 
+<div id="what-is-facebook-android-and-ios-crossattribution" />
+
 <Accordion title="What is a Meta ads Android and iOS cross-attribution?">
 
 Meta ads identifies users based on their Meta ads account. Some users have both iOS and Android devices associated with the same Meta ads account.
@@ -462,6 +532,8 @@ If such a user clicks or views an ad for your app on their Android device, but i
 > In this situation, AppsFlyer attribution takes the Android Meta ads campaign from Meta ads and presents it in the iOS Dashboard where Andrew Josef downloaded and launched it from.
 
 </Accordion>
+
+<div id="what-are-facebook-ads-channels" />
 
 <Accordion title="What are Meta ads channels?">
 
@@ -479,3 +551,5 @@ Use this data to compare the quality of users that you get from the different ch
 ![Facebook_channels.png](https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png)
 
 </Accordion>
+
+<div data-zendesk-anchors="facebook-ads-faq=meta-ads-faq h_01HD1JTW2EP1MY3DD9136E9CHC=meta-ads-faq h_01HD1JTW2EN36V9SHH11283Y3A=i-dont-see-facebook-campaign-clicks-in-appsflyers-dashboard h_01HD1JTW2EJE0K034KSV8B3WZQ=can-appsflyer-show-the-campaign-level-and-ad-groups h_01HD1JTW2EFKCJMNBXBK2C55DN=is-facebook-data-shown-in-realtime h_01HD1JTW2E4SVC1Z9C3K6XJB2G=when-can-i-see-a-new-campaigns-data-on-appsflyer h_01HD1JTW2ECWSXFKQC1YBP1592=how-can-i-get-more-installs-from-facebook h_01K8B4YFDKKYP25V6NR12CE9RF=how-can-i-get-device-level h_google_play_referrer=google-play-install-referrer-api h_meta_install_referrer=meta-install-referrer h_attribution_fields=campaign-attribution-fields h_sdk_requirements=sdk-and-setup-notes sdk-requirements=sdk-and-setup-notes h_decryption=submitting-the-decryption-key decryption-key=submitting-the-decryption-key h_01HD1JTW2ED762B3K1QS6QC38M=do-you-make-facebook-raw-data-available-to-agencies h_01HD1JTW2EWQGK4QA9W8DFZTMH=i-dont-see-facebook-raw-data-in-the-installation-and-inapp-events-reports h_01HD1JTW2EYSBJ38WNS1HP5MCE=any-specific-columns-for-facebook-in-appsflyers-performance-reports h_01HD1JTW2ETTXQAP7ZSTMVGA8K=can-i-work-with-facebook-fmps-and-measure-performance-with-appsflyer h_01HD1JTW2EPY8W5Z84PBWSM86G=what-should-i-do-when-i-receive-the-following-warning h_01HD1JTW2ED2DNPTXAFYJTTGV3=what-happens-with-different-lookback-windows-than-on-facebook h_01HD1JTW2EXF1R0MA91ZSW7QG4=what-are-the-facebook-api-parameters how-long-do-you-keep-facebook%E2%80%99s-userlevel-data=how-long-do-you-keep-facebook-s-userlevel-data h_01HD1JTW2EPDNSY30J45JB443A=how-long-do-you-keep-facebook-s-userlevel-data h_01HD1JTW2EN8THFCRNZ0EBQ2M3=are-ios-universal-links-and-android-app-links-supported-in-meta-ads h_01JJVVX9NCSTVQKG2ENTGDRDK9=are-ios-universal-links-and-android-app-links-supported-in-metas-non-paid-content 01H7YJVNMVBRVTT9HH7KM8P33B=aem-attribution-is-not-working h_01HD1JTW2ETG739TWQVTKPCM2R=can-onelink-links-be-used-for-app-opening-and-deep-linking-in-facebook-dynamic-product-ads h_01JTG2474VHWAD8EK8ASPWZY0W=conversion-events-are-not-sent-to-meta-ads h_01K8B4AKSHSMP18MM0GAAZEQMF=can-i-use-get h_01K8B4AKSH7E8TBEG024NAV1A5=note facebook-ads-cost-faq=meta-ads-cost-faq h_01HD1JTW2EEVD1PDPFW15K45CE=meta-ads-cost-faq h_01HD1JTW2EE0WQ90J431Z8NQ8Q=getting-facebook-cost-data-in-the-appsflyer-dashboard h_01HD1JTW2ESVMMPK32W34PA54T=facebook-cost-example h_01HD1JTW2EVFXAET26WK2KSHTV=i-cant-see-old-facebook-cost-data-in-the-appsflyer-dashboard h_01HD1JTW2EJQHKVJF4XHWGVASJ=can-i-stop-cost-data-sync h_01HD1JTW2EYJTA2TRY7EE75KXA=cost-data-was-fine-for-a-few-months-but-it-stopped-displaying h_01HD1JTW2EYXZW2QCMQH5CRFSK=i-clicked-on-my-facebook-ad-5-minutes-ago-why-dont-i-see-the-click-in-appsflyer h_01HD1JTW2EYE2ZDNVRT5BCRXZJ=can-i-get-raw-data-on-clicks-and-impressions-from-facebook h_01HD1JTW2EG11RRBYHJ5BMJM5M=are-there-limitations-of-facebook-cost-data-by-geo h_01HD1JTW2E3RMV2TMPNZZ86HG5=what-are-the-limitations-of-facebook-cost-data-in-master-api h_01HD1JTW2EKVSAQ3706NC8JV9M=the-total-cost-doesnt-match h_01HD1JTW2EMJQJHBBB9SRJ6MZN=why-is-the-appsflyer-calculation-for-ecpi-different-from-the-cost-calculated-by-facebook-while-the-total-cost-is-identical h_01HD1JTW2E2S79FC9VAHA12X93=why-doesnt-cost-data-include-data-from-all-campaigns h_01HD1JTW2ET6Y2EHG29AQS09NA=is-facebook-cost-data-displayed-for-retargeting-campaigns h_01HD1JTW2EXTS1GDZHN8PAMV8C=why-does-the-facebook-cost-configuration-window-close-before-login h_01HD1JTW2FC0NJK00HZ76SFH30=why-is-there-a-discrepancy-in-cost-data-for-apps-in-the-amazon-app-store how-to-connect-cost-data-of%C2%A0a-new-facebook-ad-account-while-my-old-account-is-linked=how-to-connect-cost-data-of-a-new-facebook-ad-account-while-my-old-account-is-linked h_01HD1JTW2F401DA2NHBSPTKATB=how-to-connect-cost-data-of-a-new-facebook-ad-account-while-my-old-account-is-linked facebook-ads-sdk-faq=facebook-sdk-faq h_01HD1JTW2FPRCVGBF7CG7ZMKXF=facebook-sdk-faq h_01HD1JTW2F03XQSEVTFBW8JCX3=who-needs-facebooks-sdk h_01HD1JTW2FB09HM2CC83GMT901=note-1 h_01HD1JTW2FNNHPZQARZNCCP7ER=avoiding-duplicates-with-facebook-sdk facebook-ads-attribution-faq=meta-ads-attribution-faq h_01HD1JTW2F2JV2BMDS40HFG6K0=meta-ads-attribution-faq h_01HD1JTW2FK1ZTPTA8B8A4N64Z=attributing-agencies-with-facebook h_01HD1JTW2F63AT1NGBY96Y6CCE=attribution-for-facebook-for-outofstore-android-apps h_01HD1JTW2FMKYDHNSM7G182EY0=note-2 h_01HD1JTW2F8JT69CSN04GCZ91V=what-is-facebook-android-and-ios-crossattribution h_01HD1JTW2F5PY7A8T5NMHBZ87B=example h_01HD1JTW2FX3QWC9BKWQ65E5B8=what-are-facebook-ads-channels" />

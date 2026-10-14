@@ -90,3 +90,5 @@ Regard the parameters listed in the table that follows as the recommended minimu
 | `&af_cost_currency={currency}` | Cost Currency — currency code (e.g. USD, EUR). The default value is USD.  <br />[List of currency codes](https://en.wikipedia.org/wiki/ISO_4217). |
 | `&expires={timestamp}` | Unix timestamp after which the ad network doesn't claim the click. Used for click signing to prevent click fraud. [Learn more](/docs/click-signing-for-ad-networks) |
 | `&signature={signature}` | HMAC-SHA256 signature used to validate the click and prevent fraud. [Learn more](/docs/click-signing-for-ad-networks) |
+
+<div data-zendesk-anchors="01H8GPNM9XTR602BWRBQ5JV8DT=attribution-links-for-ad-networks 01H8GPNM9XSKS66F02GZQKK8E8=attribution-model 01H8GPNM9XBCVVXZ5HFKQZQ79D=note 01H8GPNM9XS4JE8B1F6TJGKSBR=attribution-link-template 01H8GPNM9XD0GASJ93PNDGMDE8=recommended-minimum-attribution-link-parameters" />

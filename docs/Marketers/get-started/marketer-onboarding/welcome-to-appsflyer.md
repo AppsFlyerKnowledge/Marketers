@@ -100,3 +100,5 @@ Related reading: [Mobile attribution](/docs/convert-your-mobile-web-visitors-to
 > * [SDK integration overview](/docs/sdk-integration-overview)
 > * [CTV, PC, and console attribution](/docs/ctv-pc-and-console-platform-attribution-concepts)
 > * [Mobile web-to-app attribution](/docs/convert-your-mobile-web-visitors-to-app-users)
+
+<div data-zendesk-anchors="h_01HE7TBV2N5YT6N7QGAPFVJZ47=what-is-app-attribution h_01HE7TBV2N3WK44CMMD7NEMG6C=what-can-you-do-with-appsflyer h_01HBX4Q7CZQWJ89Q94DVC9BWKQ=first-login h_01HC7PNKHT08BPQ2Z4T5CSSF9R=note h_01HSBF86NAKJR2EHHJKK87EXD5=using-multiple-accounts h_01M2ZBFZ1Y1NXQDNG66Y5T24AE=note-1 h_01HSBH0KSV5ASCP17H0BWK5NNT=primary-account switching-between-your-accounts=switch-between-accounts h_01H9G1MP3ZYYQCCE6J8Q8GCAWG=switch-between-accounts h_01M2YVVWHB1TVPWHFSGDA8K3RR=note-2 h_01HE7TBV2N3AG1EPTYX0HSTH1T=get-started h_01HE7TBV2NAXNHJ6461BNCN78A=tip h_01HE7TQV7VDSEX3E7RTKAHBMNN=see-also" />

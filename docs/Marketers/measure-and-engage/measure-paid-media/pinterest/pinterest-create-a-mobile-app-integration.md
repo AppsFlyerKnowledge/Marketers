@@ -42,6 +42,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -94,14 +96,16 @@ In this section, you can map your AppsFlyer events with Pinterest via postbacks.
 
 | Parameter Name | Description |
 | --- | --- |
-| **AppsFlyer event name** | The name of the event, as received by AppsFlyer, either from the SDK integrated with your app or from server-to-server events.   <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| **Partner event name** | The unique name of the event, as defined on Pinterest's side. For the Pinterest event names, see the [Pinterest documentation.](https://developers.pinterest.com/docs/api-features/track-conversion-events/#understand-conversion-events) |
-| **To users from** | <ul><li>**This partner only:** For events coming **only** from users attributed to this partner.</li><li>**All media sources including organic:** To have your entire user base available to be reported to the partner.</li></ul> |
-| **Including** | Select if event revenue or parameter values are sent to the partner in the postback, or if this data isn’t included.<br /><br />AppsFlyer can send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter. Or, AppsFlyer can send all the parameters including the revenue value (if it exists in the event). |
+| <span id="appsflyer-event-name"></span>**AppsFlyer event name** | The name of the event, as received by AppsFlyer, either from the SDK integrated with your app or from server-to-server events.   <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
+| <span id="partner-event-name"></span>**Partner event name** | The unique name of the event, as defined on Pinterest's side. For the Pinterest event names, see the [Pinterest documentation.](https://developers.pinterest.com/docs/api-features/track-conversion-events/#understand-conversion-events) |
+| <span id="to-users-from"></span>**To users from** | <ul><li>**This partner only:** For events coming **only** from users attributed to this partner.</li><li>**All media sources including organic:** To have your entire user base available to be reported to the partner.</li></ul> |
+| <span id="including"></span>**Including** | Select if event revenue or parameter values are sent to the partner in the postback, or if this data isn’t included.<br /><br />AppsFlyer can send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter. Or, AppsFlyer can send all the parameters including the revenue value (if it exists in the event). |
 
 5. Click **Add Event** to add an SDK Event to the list.
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -125,6 +129,8 @@ Use this field if the link is meant to deep link users to any specific activity 
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Once you set Pinterest's cost, don't change the name of any running campaign, ad set, or single ad, nor use dynamic macros with the campaign name parameter, as they may cause serious discrepancies or missing cost data.
@@ -147,11 +153,15 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 * [In the actions column, hover over an account, click ***Delete connection***](/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab). Once deleted, AppsFlyer stops getting the cost. Deleting the connection doesn't impact historical data.
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue data is not supported by this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -166,3 +176,5 @@ Learn more about the [permissions you can grant Pinterest](/docs/set-up-an-integ
 ## Troubleshooting
 
 Cost tab error message: *No matching data* means that the Pinterest account that you connected to AppsFlyer is not the correct Pinterest account. No data was found that matches the app. You should log in to Pinterest with different credentials
+
+<div data-zendesk-anchors="h_01H95QTA3ZZ9GJW9EN1VZ01TH2=note h_01H95QTA3Z5HXW39AHAF8FMFWH=set-up-pinterest h_01H95QTA3ZNQWBRA86E6TRQ46Y=integration-tab h_01H95QTA3ZGEM34HY1A7NC8NX7=activate-partner h_01H95QTA3Z0NW9V51D8J7MHEX0=general-settings inapp-events-settings=in-app-events-settings h_01JTDP2T0BFP5WP03X5EMXVAWA=in-app-events-settings %5Blegacy%5D-set-tag-id=legacy-set-tag-id h_01JTMX6DD0G101KC0HQ0D34S48=legacy-set-tag-id inapp-event-postbacks=in-app-event-postbacks h_01JTDP2T0BTW986GN5HSWPR3JH=in-app-event-postbacks h_01H95QTA3ZT7PVGAJW5AKPC186=attribution-link-tab attribution-link-for-retargeting-campaigns=attribution-link-for-retargeting-campaign h_01H95QTA3ZPQZ422AB2JBZAS07=attribution-link-for-retargeting-campaign h_01H95QTA3ZT23CYTCE2V3728MD=deep-link-url h_01H95QTA3ZYHQED2T5B2FA5PV8=note-1 h_01H95QTA3Z3XJDM5YRXFK7DA0E=cost-tab h_01H95QTA3ZZ56R8EZBJY1ESX5W=enabling-and-testing-pinterest-integration h_01H95QTA3ZST8WS3TAR79H06FM=cost-data-sync-status h_01H95QTA3ZFCJ82E3YDMP7S716=stop-pinterest-cost-sync h_01H95QTA3ZM2REWR2A5DHK1DSA=ad-revenue-tab h_01H95QTA3ZM4WPHV3MB00WZXSB=permissions-tab h_01H95QTA3ZP20DSJQGY4QQX0Z7=troubleshooting" />

@@ -73,3 +73,5 @@ The plans differ mainly by scale, link management capabilities, and access to ad
 > * Most OneLink features require a paid [AppsFlyer subscription plan](/docs/account-management-plans-payments-and-billing#appsflyer-plans).
 > * If your subscription plan is canceled, most OneLink features will no longer be available, and relevant end-user flows may be negatively affected.
 > * Deferred deep linking is not supported for Zero plan subscriptions.
+
+<div data-zendesk-anchors="about-onelink-standalone=about-the-onelink-standalone-deep-linking-suite h_01KKH4TJ3NGERKNRB3T5CH45HR=about-the-onelink-standalone-deep-linking-suite what%E2%80%99s-included=whats-included h_01KKH59BENG1KH3CBTS5MKC47J=whats-included onelink-standalone-plans-comparison=standalone-deep-linking-suite-plans-comparison h_01KKH4TJ3N974VR9QNR0R7JSC7=standalone-deep-linking-suite-plans-comparison h_01KKH4TJ3NMQFNZNJK6NZBFTGQ=key-differences h_01KKH4TJ3NHNZHYCN37CHNKHF0=feature-comparison h_01KKH5C2G8AFK7NVA0GTGKQZ7K=notes" />

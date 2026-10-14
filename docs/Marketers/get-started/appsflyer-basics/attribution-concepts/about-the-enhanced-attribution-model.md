@@ -71,3 +71,5 @@ This metric can indicate potential engagement flooding and helps advertisers und
 * Attribution trends segmented by compromised and non-compromised installs
 
 **Note:** Compromised data starts to appear in the Protect360 dashboard only after an app is added to Enhanced attribution. However, compromised and non-compromised data can still be shown for historical timeframes from before the app was added to the feature.
+
+<div data-zendesk-anchors="h_01KEC2P5M5EPDA22XZ6XSQRZFQ=what-is-the-enhanced-attribution-model h_01KEC2P5M5NZ5F134TPRPN8K15=how-the-enhanced-attribution-model-helps h_01KEC2P5M59QCG1E5C74ERASYE=how-the-enhanced-attribution-model-works h_01KEC2P5M52MG4EWD63PE761G9=where-enhanced-attribution-data-appears-in-appsflyer-reports h_01KEC2P5M5VTJ5YF4NJ13ZY0NF=raw-data-reports h_01KEC2P5M5T43VGNWF9HW9K76Z=note h_01KEC2P5M5TAHRRC3YCSB5EQE5=protect360-dashboards-and-reports" />

@@ -47,6 +47,8 @@ Recording events can help you:
 
 The following section provides a list of event structures that are typical to the flight booking vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
+<div id="complete-registration-af_complete_registration" />
+
 <Accordion title="Complete registration (af_complete_registration)">
 
 **Purpose**
@@ -64,6 +66,8 @@ Event parameters
 | af\_registration\_method | Type of signup method | email, Facebook |
 
 </Accordion>
+
+<div id="login-af_login" />
 
 <Accordion title="Login (af_login)">
 
@@ -227,6 +231,8 @@ When the user lands on the thank you page after a successful purchase
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
+<div id="first-purchase-first_purchase" />
+
 <Accordion title="First purchase (first_purchase)">
 
 **Purpose**
@@ -255,3 +261,5 @@ When the user completes their first purchase
 | af\_receipt\_id | Order ID, required for CRITEO and Google AdWords retargeting integration | X123ABC |
 
 </Accordion>
+
+<div data-zendesk-anchors="flight-booking=-flight-booking h_01HGTAZRKG0SQ66XK7VN9KVGEY=-flight-booking h_01HGTAZRKGGQBBAM4XJHR4B45P=important h_01HGTAZRKHK1427YX16HWRDRPN=recommended-structures-for-predefined-events h_01HGTAZRKHACHNSNX9DSZ3ZZ51=complete-registration-af_complete_registration h_01HGTAZRKHTC9TNWNPACRZW31Y=login-af_login h_01HGTAZRKHZGW442XTZF99VGV9=travel-booking-af_travel_booking h_01HGTAZRKHGY0Z83ETZWAFNSWP=content-view-af_content_view h_01HGTAZRKH8JYE8Q6NDPF1PQC7=search-af_search h_01HGTAZRKH78CR2GH0960MS8R0=add-payment-info-af_add_payment_info h_01HGTAZRKHXE8VF78ZE0KF9AF6=purchase-af_purchase h_01HGTAZRKH4ZZEK5JGXZ7G5QDJ=recommended-structures-for-custom-events h_01HGTAZRKHG7GE4BKFDRHZC163=first-purchase-first_purchase" />

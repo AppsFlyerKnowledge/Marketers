@@ -38,6 +38,8 @@ x-zendesk:
 
 vivo Ads configuration window includes 2 active tabs: Integration and Attribution link. Click the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration Tab">
 
 The integration with vivo Ads only supports the install event in the default postback.
@@ -56,6 +58,8 @@ Toggle this to ON if you want to attribute view-through installs from vivo Ads. 
 ![mceclip2.png](https://files.readme.io/4d6fca06a4e11a8748064bce6510abe8594ef1fb68d1876ba5cd486073adf469-50900339194129.png)
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution Link Tab">
 
@@ -116,11 +120,15 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost Tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="ad-revenue-tab" />
 
 <Accordion title="Ad Revenue Tab">
 
@@ -128,8 +136,12 @@ Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions Tab">
 
 Permissions are not supported in the integration with this partner.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW6Y9CJED5RV97WWSYQNBDG=setting-up-vivo-ads h_01HKW6Y9CJZ1YPFBQH1W0QV21G=integration-tab h_01HKW6Y9CJC0EWH84B7GW29VJM=activate-partner enable-viewthrough-attribution=enable-view-through-attribution h_01HKW6Y9CJ8PNMN2ANR3E3WK1H=enable-view-through-attribution h_01HKW6Y9CJDY5XHWXN3CK0YGK8=default-postbacks h_01HKW6Y9CKQXSWXNK1VEXQFEPA=attribution-link-tab h_01HKW6Y9CKSHBWNBH0RY3X3RR3=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6Y9CKE86Z1Z4QZH0M665T=click-through-attribution h_01HKW6Y9CKNB685ZYXB8RM1P41=attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HKW6Y9CKV48NRWSXD0ZKY3M0=view-through-attribution-lookback-window h_01HKW6Y9CKV6XY1BCD9XX42XZ7=impressions-attribution-link h_01HKW6Y9CKZ0TMJ1F3H8X2W733=cost-tab h_01HKW6Y9CKB65QFDTKX4AW3P23=ad-revenue-tab h_01HKW6Y9CKV3KJ5X5ECEF2JJ8N=permissions-tab" />

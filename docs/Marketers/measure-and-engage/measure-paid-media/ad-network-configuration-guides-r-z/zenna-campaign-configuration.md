@@ -36,6 +36,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -66,6 +68,8 @@ In this section, you can map your AppsFlyer events with Zenna via postbacks.
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -106,17 +110,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost integration is not available for this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue integration is not available for this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -137,3 +147,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HK29KRYQHED4BDRQTXX3QCQG=setting-up-zenna h_01HK29KRYQV8ZB97MB7N8KQYAC=integration-tab h_01HK29KRYQ8P16VHDBZMR7464W=activate-partner h_01HK29KRYQPVTA71RT3V3KMD0Q=note inapp-events-settings=in-app-events-settings h_01HK29KRYQBZ8A63YRC7B8MC5P=in-app-events-settings h_01HK29KRYQ458XWFHVQK58DQ5Z=attribution-link-tab h_01HK29KRYQM4SEJ3JERHK4XP66=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HK29KRYR6E498ZJM8AYEYMZ2=click-through-attribution h_01HK29KRYRBM7ZN2956V3GY1X7=click-attribution-link h_01HK29KRYR203VFA2SX4HAWQVV=cost-tab h_01HK29KRYR03B6TKGVEZXF7CRK=ad-revenue-tab h_01HK29KRYREKNX908FP46XNJT5=permissions-tab h_01HK29KRYRW98Q8XS91DK5BTAA=ad-network-permissions" />

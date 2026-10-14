@@ -36,6 +36,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -82,6 +84,8 @@ In this section, you can map your AppsFlyer events with Appnext via postbacks.
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -91,17 +95,23 @@ Generate and save attribution links and send them to the partner for attributing
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Appnext automatically sends CPI cost data on the attribution link for all installs.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue integration is not available for this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -133,3 +143,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW999WPN45PNK2XN3RD9NTX=setting-up-appnext h_01HKW999WPT67XT04P3GG7PTBS=integration-tab h_01HKW999WPB6KKPN9MZ8N1GM70=activate-partner h_01HKW999WQK8P62W20K1AWHBEN=general-settings h_01HKW999WQS7FM0TE95G7R56M8=default-postbacks h_01HKW999WQP04CC7YPTEJ4E6AJ=note inapp-events-settings=in-app-events-settings h_01HKW999WQFR3DMNGEJFS6ZS7N=in-app-events-settings h_01HKW999WQWFDDS13K2V3F2G3A=attribution-link-tab h_01HKW999WQKB9VNRSVV6JM15ES=cost-tab h_01HKW999WQ1C5CDN4JDYE1XMRZ=ad-revenue-tab h_01HKW999WQ9K1376YHF92GYW45=permissions-tab h_01HKW999WQG5KB588ESQ5XS4HM=ad-network-permissions h_01HKW999WQZMAX4MSM3B49H63W=agency-permissions" />

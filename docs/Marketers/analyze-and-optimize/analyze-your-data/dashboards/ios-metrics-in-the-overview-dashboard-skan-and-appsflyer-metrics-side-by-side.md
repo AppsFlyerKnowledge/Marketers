@@ -99,6 +99,8 @@ This article contains guidance based on our market knowledge and observations on
 
 ## Using side-by-side
 
+<div id="principles" />
+
 <Accordion title="Principles">
 
 * Contains installs reported by both attribution frameworks
@@ -133,11 +135,15 @@ This article contains guidance based on our market knowledge and observations on
 
 </Accordion>
 
+<div id="timerelated-differences" />
+
 <Accordion title="Time-related differences">
 
 <table><thead><tr><th>Difference</th><th>AppsFlyer</th><th>SKAN</th></tr></thead><tbody><tr><td>Historical data</td><td><p>Available; no limitation</p></td><td><p>Available; no limitation. </p></td></tr><tr><td>Time zone</td><td><p>App-specific time zone</p></td><td>UTC </td></tr><tr><td>Data freshness </td><td>Updates continuously with a latency of up to 60 minutes</td><td><p>U<span>pdates daily by 08:00 UTC. </span></p><p><span>Latency depends on the duration of the activity window. Default: 2-5 days; in the case of campaigns run by Google Ads campaign—up to 13 days.</span></p></td></tr><tr><td>Install date</td><td>Date the install occurred </td><td>Derived from the postback arrival time. (1) </td></tr><tr><td>Measurement duration</td><td>Unlimited; LTV-based</td><td><p>Limited to the duration of the activity window of 12-72 hours. Default = 24 hours.</p></td></tr><tr><td>Attribution lookback window</td><td><ul><li>Determined by advertiser or SRN</li><li>Click-to-open: 7 days</li></ul></td><td><ul><li>Determined by Apple</li><li>Click-to-download: 30 days</li><li>Download-to-open: 60 days</li></ul></td></tr><tr><td colspan="3"><p>Notes</p><p>(1) Google Ads data updates with a delay of up to 13 days.</p></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="cost-clicks-and-impressions" />
 
 <Accordion title="Cost, clicks, and impressions">
 
@@ -151,6 +157,8 @@ In the case of cost metrics, the following apply:
 * For installs from Google Ads, the delay can be up to 13 days.
 
 </Accordion>
+
+<div id="data-scope-differences" />
 
 <Accordion title="Data scope differences">
 
@@ -166,11 +174,15 @@ In the case of cost metrics, the following apply:
 
 </Accordion>
 
+<div id="matching-considerations" />
+
 <Accordion title="Matching considerations">
 
 <table><thead><tr><th>Consideration</th><th>AppsFlyer</th><th>SKAN</th></tr></thead><tbody><tr><td>Agency transparency</td><td>Supported</td><td><p>Attributed to the media source bringing the install. Agencies can instruct media sources to prefix campaign names with their <em><a href="./getting-started-agency-onboarding">prt</a>, </em>in which case you can identify agency-driven traffic.</p></td></tr><tr><td>Campaign name changes</td><td><ul><li>Supported</li><li>The most recent name reported by the ad network determines the campaign name used for all installs associated with a given campaign ID. This includes previously recorded installs. </li></ul></td><td><ul><li>Not supported</li><li>The campaign name reported when the user installs the app is used. This doesn't change over time. Consequently, multiple names can be associated with a given campaign ID. </li></ul></td></tr><tr><td>Dimensions supported</td><td>No limitation</td><td><p><strong>Available</strong>: Geo, ad, ad ID, channel, adset, site ID.</p><p><strong>Agency:</strong> Not currently.</p><p>If you select a dimension that isn't supported, SKAN data is displayed as none.</p></td></tr><tr><td>SRN install metrics</td><td>Limited to consenting users; as a result, expect the AppsFlyer-reported metrics to be lower than SKAN-reported metrics and the metrics provided by the SRN itself. </td><td>All SKAN-attributed installs. Usually higher than the AppsFlyer metric. </td></tr><tr><td>Hidden SKAN campaigns</td><td colspan="2"><p>The table in the dashboard contains a limited number of rows. The remaining rows are combined in the row designated <em>others</em>.</p><p>To view a breakdown of this row, export the entire table to a spreadsheet. </p></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="dimensions-available" />
 
 <Accordion title="Dimensions available">
 
@@ -183,3 +195,5 @@ The following dimensions are available in the side-by-side view:
 * Attribution type
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HYAQAR84BP9MRRXP7BPPDJ4N=finding-the-best-ios-14-campaign-performance-metrics h_01HYAQAR856G6VARSH746SJB5Z=campaign-precision h_01HYAQAR856JT2JX28SE3QY7VZ=campaign-effectiveness h_01HYAQAR85GZN1RZYNV2MV7DAP=campaign-efficiency using-sidebyside=using-side-by-side h_01HYAQAR85FY6K8R574GWFQW91=using-side-by-side h_01HYAQAR85Z09SXSE8JGTG5AMF=principles h_01HYAQAR85V6CD29T9AY9XYX0Z=display-skan-metrics-in-the-table h_01HYAQAR85QSTB8QZPGMEV6MR9=timerelated-differences h_01HYAQAR85A03KNAHC5TEAZAZK=cost-clicks-and-impressions h_01HYAQAR85SPYQKDFP3CRGW5FN=data-scope-differences h_01HYAQAR85FSAXQ25X16N6XQEW=matching-considerations h_01HYAQAR85XF7CEG6F7PC44F1C=dimensions-available" />

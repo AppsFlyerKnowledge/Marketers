@@ -36,7 +36,7 @@ The following is an example flow that highlights the most important steps in a u
 
 ![User_windows.jpg](https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg)
 
-1. Marketing touchpoint: Customers interact with your brand through online or offline marketing touchpoints. These can include, email and newsletters, social media, mobile web, and more.
+1. <span id="marketing-touchpoint"></span>Marketing touchpoint: Customers interact with your brand through online or offline marketing touchpoints. These can include, email and newsletters, social media, mobile web, and more.
 2. Game landing page: A game landing page directs customers to your download app page. This step is important for collecting UTM and other URL parameters to attribute customers from the click/install to the original media sources or to your owned media sources.  
    The landing page is also useful because it provides links to the various platforms your game supports. For example, you can also have links to your Xbox, Microsoft store, and Steam page on your landing page.
 3. App page: This is the URL to your Native PC app page that hosts your app for customers to download.
@@ -69,4 +69,6 @@ To remove all AppsFlyer SDK data when uninstalling the app, please ask your deve
 
 > 📘 **See also**
 >
-> * [CTV, PC, and console platform overview](/docs/ctv-pc-and-console-platform-attribution-concepts)
+> * <span id="overview"></span>[CTV, PC, and console platform overview](/docs/ctv-pc-and-console-platform-attribution-concepts)
+
+<div data-zendesk-anchors="about-steam-attribution=about-native-pc-attribution 01H7Z19FJ5J1CB4ESE55Z32C1C=about-native-pc-attribution flow=example-attribution-flow 01H7Z19FJ5R869054GDRKHTBJ8=example-attribution-flow 01H7Z19FJ54WZ7XV91Y36EKYQ6=marketing-touchpoint 01H7Z19FJ5KKPJ88KAQM49FNVA=integration-procedures h_01J3349MAA4J231B6FJ74V3PTB=removing-appsflyer-data-when-uninstalling-the-app h_01HF9W8YG149TMQE1F57BG0ZS7=traits-and-limitations h_01HE0T79YSNWGB3W4S7WEBW1B5=see-also" />

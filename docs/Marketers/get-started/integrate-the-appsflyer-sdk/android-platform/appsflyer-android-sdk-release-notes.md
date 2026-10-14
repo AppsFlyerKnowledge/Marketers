@@ -119,3 +119,5 @@ The following SDK versions have reached **End-of-Support** status. These version
 > 📘 **See also**
 >
 > * [AppsFlyer SDK version control policy](/docs/appsflyer-sdk-version-control-policy)
+
+<div data-zendesk-anchors="h_01JVHFG6PN34YFWNZKX2CYHJV8=important h_01JVHEKR4MTFV0FDHMTQW00BCS=end-of-support-vs-deprecated android-sdk-v6=android-sdk-releases h_01H9ZPCP8RWF24WAZ6YYMA1GS0=android-sdk-releases deprecated-versions=unsupported-sdk-versions 01JHFAXXV51DHADQ7P2Q6RHFX0=unsupported-sdk-versions h_01HDNZ774ME3SVT89JS7R4MSKE=see-also" />

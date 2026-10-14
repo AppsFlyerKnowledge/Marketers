@@ -98,6 +98,8 @@ Attribution-related data for an app comes from a number of sources. The identifi
 
 </Accordion>
 
+<div id="which-dashboard-has-the-install" />
+
 <Accordion title="Which dashboard has the install?">
 
 In iOS 14 an install can be attributed to both the traditional and SKAN dashboards. In addition, depending on the media source context it can be attributed as organic in one dashboard and as non-organic in the other.
@@ -122,6 +124,8 @@ In iOS 14 an install can be attributed to both the traditional and SKAN dashboar
 | iOS 14 | [About self-reporting networks (SRNs) like Google, Meta ads, and so on](/docs/self-reporting-networks-srns) | [Where are SRN installs reported?](/docs/self-reporting-networks-srns#ios-145-srn-attribution) |
 | Billing | [Billing for iOS apps](https://content.appsflyer.com/ios-14-hub/billing/) |  |
 
+<div id="ios-14-impact-on-attribution-and-measurement" />
+
 <Accordion title="IDFA availability impact on attribution and measurement">
 
 #### **Metrics**
@@ -145,6 +149,8 @@ We recommend using [unified deep linking (UDL)](https://dev.appsflyer.com/hc/do
 
 ## FAQ—iOS attribution and ATT
 
+<div id="what-happens-to-an-app-using-an-sdk-version-before-v6" />
+
 <Accordion title="What happens to an app using an SDK version before V6+?">
 
 For apps using an SDK version earlier than V6.0:
@@ -156,6 +162,8 @@ For apps using an SDK earlier than V6.10: SKAN 4 won't work.
 
 </Accordion>
 
+<div id="is-it-mandatory-to-display-the-att-prompt" />
+
 <Accordion title="Is it mandatory to display the ATT prompt?">
 
 No. You only need to ask for ATT consent if you want to *track* a user, collect IDFA, or both.
@@ -163,6 +171,8 @@ No. You only need to ask for ATT consent if you want to *track* a user, collect 
 </Accordion>
 
 ## FAQ—SKAN
+
+<div id="how-do-i-know-when-i-ll-receive-postbacks-and-if-they-ll-be-skan-3-or-skan-4" />
 
 <Accordion title="How do I know when I’ll receive postbacks and if they’ll be SKAN 3 or SKAN 4?">
 
@@ -181,6 +191,8 @@ The following flowchart explains this in further detail.
 
 </Accordion>
 
+<div id="in-skan-am-i-limited-to-100-campaign-ids-per-ad-network" />
+
 <Accordion title="In SKAN, am I limited to a certain number of source identifiers/campaign IDs per ad network?">
 
 Yes. Previously the limit was 100 campaign IDs. However, from SKAN 4, campaign IDs are called hierarchical source identifiers, and the limit is 10,000. The source identifier is a 4-digit integer.
@@ -189,6 +201,8 @@ Ad networks map the SKAN source identifier to their campaign ID.
 
 </Accordion>
 
+<div id="what-is-the-use-case-for-skan-raw-data" />
+
 <Accordion title="What is the use case for SKAN raw data?">
 
 * Use raw data to aggregate dimensions that aren't available via aggregated APIs.
@@ -196,11 +210,15 @@ Ad networks map the SKAN source identifier to their campaign ID.
 
 </Accordion>
 
+<div id="why-dont-the-conversion-values-i-receive-match-my-configuration-in-appsflyer-conversion-studio" />
+
 <Accordion title="Why don't the conversion values I receive match my configuration in AppsFlyer Conversion Studio?">
 
 Usually, this is because of another SDK in your app that has the ability to set conversion values, and that conflicts with your AppsFlyer SDK and the conversion values you have configured in AppsFlyer. Make sure you don't have another SDK that sets conversion values integrated into your app.
 
 </Accordion>
+
+<div id="why-doesn-t-the-aggregate-data-in-my-skan-dashboard-match-the-raw-data-numbers-in-my-skan-data-locker-reports" />
 
 <Accordion title="Why doesn’t the aggregate data in my SKAN dashboard match the raw data numbers in my SKAN Data Locker reports?">
 
@@ -213,3 +231,5 @@ Example: In the June 12 report, it displays 100 installs from Google that occurr
 > 📘 **See also**
 >
 > * [AppsFlyer getting started step-by-step](/docs/getting-started-onboarding-for-marketers#step-3-attribution-setup)
+
+<div data-zendesk-anchors="h_01HE0C8YXSXSX003X0671Z97KZ=attribution-measurement-in-an-att-environment h_01HE0C8YXSCA8M57F1RG4CJ7HK=skan-solution-principles h_01HE0C8YXSSCTQJAPDE27FB1H8=att-principles h_01HE0C8YXS0BFA2M16D1Q2PQYW=which-dashboard-has-the-install ios-14-important-knowledge=ios-attribution-and-privacy-important-knowledge h_01HE0C8YXS3BH109DF1Y1KNK5P=ios-attribution-and-privacy-important-knowledge ios-14-and-skan-articles-and-links=ios-attribution-skan-and-privacy-articles-and-links h_01HE0C8YXSPZKBWXC51Z2636R0=ios-attribution-skan-and-privacy-articles-and-links h_01HE0C8YXSTCVA8YYR4BQVHVXS=ios-14-impact-on-attribution-and-measurement h_01HE0C8YXSJMYN81FKPCA8ATK7=metrics h_01HE0C8YXS6ADG1SQCMVP0W69B=deep-linking faq%E2%80%94ios-14=faqios-attribution-and-att h_01HE0C8YXSV9VSK1NPG9RCTQW1=faqios-attribution-and-att h_01HE0C8YXS1FFYQJ8YZXP9W9ZV=what-happens-to-an-app-using-an-sdk-version-before-v6 h_01HE0C8YXSKA0325YJSXV81ZB9=is-it-mandatory-to-display-the-att-prompt faq%E2%80%94skan=faqskan h_01HE0C8YXSQKH8ER1Q5VS6Z0NM=faqskan how-do-i-know-when-i%E2%80%99ll-receive-postbacks-and-if-they%E2%80%99ll-be-skan-3-or-skan-4=how-do-i-know-when-i-ll-receive-postbacks-and-if-they-ll-be-skan-3-or-skan-4 h_01HE0C8YXS44YXAN2DV2ZR03GE=how-do-i-know-when-i-ll-receive-postbacks-and-if-they-ll-be-skan-3-or-skan-4 h_01HE0C8YXSCWM892QH0N7YQ8HP=in-skan-am-i-limited-to-100-campaign-ids-per-ad-network h_01HE0C8YXSSWHV45M6P7SQGCRD=what-is-the-use-case-for-skan-raw-data h_01HE0C8YXS8GJKFC23S1R9TWW0=why-dont-the-conversion-values-i-receive-match-my-configuration-in-appsflyer-conversion-studio why-doesn%E2%80%99t-the-aggregate-data-in-my-skan-dashboard-match-the-raw-data-numbers-in-my-skan-data-locker-reports=why-doesn-t-the-aggregate-data-in-my-skan-dashboard-match-the-raw-data-numbers-in-my-skan-data-locker-reports h_01HE0C8YXS1VW1T50ARJE0MP62=why-doesn-t-the-aggregate-data-in-my-skan-dashboard-match-the-raw-data-numbers-in-my-skan-data-locker-reports h_01HE7SNR02VQDKG55QP06ECNAR=see-also" />

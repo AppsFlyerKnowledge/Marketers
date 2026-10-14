@@ -44,6 +44,8 @@ To view the ProtectLITE dashboard, in AppsFlyer, go to **Protect360**.
 
 Dashboard features are described in the sections that follow.
 
+<div id="filters-and-groupings" />
+
 <Accordion title="Filters and groupings">
 
 **Filter and groupings window**
@@ -70,6 +72,8 @@ The following filtering and grouping options are available:
   * **Media source + Geo** (available in the In-app events dashboard): compare the handled fraud from each of the media sources used by your apps associated with the relevant countries.
 
 </Accordion>
+
+<div id="installs-headline-metrics" />
 
 <Accordion title="Installs—headline metrics">
 
@@ -112,6 +116,8 @@ The suspected overall threat level:
 
 </Accordion>
 
+<div id="installs-chart" />
+
 <Accordion title="Installs—chart">
 
 #### Fraud trend over time chart
@@ -119,6 +125,8 @@ The suspected overall threat level:
 The chart displays the number of installs per day blocked by ProtectLITE and Validation Rules, for the time period selected in the date filter.
 
 </Accordion>
+
+<div id="installs-table" />
 
 <Accordion title="Installs—table">
 
@@ -169,6 +177,8 @@ The dynamic table structure lets you:
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -179,3 +189,5 @@ The dynamic table structure lets you:
 | Agency transparency | Transparent agency: Can see specific media sources<br /><br />Non-transparent agency: Cannot see specific media sources |
 
 </Accordion>
+
+<div data-zendesk-anchors="01JDHEKR6W19WD6HXFFMRNXKFF=protectlite 01JDHEKR6YGEKRB23M19F5ZGQ5=dashboard 01JDHEKR6YPNDQAK3ATDRDDZTC=filters-and-groupings installs%E2%80%94headline-metrics=installs-headline-metrics 01JDHEKR75TF5RHJTFM91XPYPY=installs-headline-metrics 01JDHEKR76MMVSJSWFTZS5PRBK=estimated-savings 01JDHEKR77VGHR1BWQFPYSWW2E=identified-installs 01JDHEKR78BBFEZS98VG0VTERN=suspected-overall-fraud-threat installs%E2%80%94chart=installs-chart 01JDHEKR795RK8KP9BZ0WECQW8=installs-chart 01JDHEKR79YM7VWE6NH2FJ70NS=fraud-trend-over-time-chart installs%E2%80%94table=installs-table 01JDHEKR79ZBQVSTT4GA162J94=installs-table 01JDHEKR79H7PQFEJGWAY4RMJC=identified-fraud-breakdown 01JDHEKR7BR6ESS9DX03NMHPT0=content-of-the-identified-fraud-breakdown-table 01JDHEKR9JCAR22V33B7TFZSPV=traits-and-limitations" />

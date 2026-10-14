@@ -40,6 +40,8 @@ x-zendesk:
 >
 > The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory**. All other steps are descriptive or **optional**.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Advertiser configuration
@@ -114,6 +116,8 @@ For agencies, the ***Sending option*** and the list of events available for mapp
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 This tab is not applicable for Yahoo.
@@ -123,6 +127,8 @@ This tab is not applicable for Yahoo.
 > For all SRNs, such as Meta ads, Apple Search Ads, Adwords, Snapchat, etc. this tab is not functional, as they do not use external attribution links.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -146,11 +152,15 @@ The cost integration provides the following aggregated data:
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported by this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -197,3 +207,5 @@ AppsFlyer receives the following parameters from Yahoo and maps them to the foll
 ## SKAdNetwork support
 
 SKAdNetwork interoperation with Yahoo is available.
+
+<div data-zendesk-anchors="h_01HJR1D3NZJPKDK3DJ7DT3VZ44=setting-up-yahoo h_01HJR1D3P0RS08SJZJYF2487MM=tip h_01HJR1D3P0TMSSJBKDG130RV2E=integration-tab h_01HJR1D3P05WQGP8SFZ5H5AD6A=advertiser-configuration h_01HJR1D3P0WC1W6H8MKHKR9MX9=activate-partner h_01HJR1D3P0C5TNMHRGWG8JR2TQ=general-settings clickthrough-attribution=click-through-attribution h_01HJR1D3P0V155S0QFVP2RDPP8=click-through-attribution h_01HJR1D3P02HSHKFR45HRQWGCE=agency-configuration inapp-events-settings=in-app-events-settings h_01HJR1D3P0PAT8B60P5313GMQQ=in-app-events-settings h_01HJR1D3P0G9P4FQ5QZWXD9PW8=attribution-link-tab h_01HJR1D3P03WM14AYT4TKXVX0X=note h_01HJR1D3P0YHSB6QDQJ77WFR45=cost-tab h_01HJR1D3P10YRNVR68AAJNMY6K=enabling-and-testing-yahoo-cost-integration h_01HJR1D3P10EF6X40X3YPKRTF0=warning h_01HJR1D3P18KB4AXKN31ZKCHRC=ad-revenue-tab h_01HJR1D3P10GR6AZ7MNS0Q7NWZ=permissions-tab h_01HJR1D3P1D817ABQ7D92KJ1QK=marking-events-as-conversions-in-yahoo h_01HJR1D3P19SM0JFZ7Q2XND911=yahoo-raw-report h_01HJR1D3P1YAJJMCC6TX2NSCTG=limitations h_01HJR1D3P1HBBBCVMRGZ96DC1E=skadnetwork-support" />

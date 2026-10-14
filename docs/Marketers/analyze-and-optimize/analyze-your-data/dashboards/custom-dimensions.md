@@ -49,6 +49,8 @@ The custom dimensions you create are at the account level, meaning different app
 
 ## Procedures
 
+<div id="create-a-custom-dimension" />
+
 <Accordion title="Create a custom dimension">
 
 **To create a custom dimension**:
@@ -74,6 +76,8 @@ The custom dimensions you create are at the account level, meaning different app
 
 </Accordion>
 
+<div id="delete-or-edit-a-custom-dimension" />
+
 <Accordion title="Delete or edit a custom dimension">
 
 **To delete or edit a custom dimension**:
@@ -89,6 +93,8 @@ The custom dimensions you create are at the account level, meaning different app
 
 </Accordion>
 
+<div id="view-custom-dimension-data" />
+
 <Accordion title="View custom dimension data">
 
 Custom dimensions can be used to group and view data in all widgets in the Overview dashboard.
@@ -101,6 +107,8 @@ Custom dimensions can be used to group and view data in all widgets in the Overv
 3. The chart or table data is displayed in a grouping using your custom dimension
 
 </Accordion>
+
+<div id="specifications-and-limitations" />
 
 <Accordion title="Specifications and limitations">
 
@@ -119,3 +127,5 @@ Custom dimensions can be used to group and view data in all widgets in the Overv
 | Dimension rules | You can have up to 10 rules for a dimension value. These are connected with "or." The connector "and" isn't available yet. |
 
 </Accordion>
+
+<div data-zendesk-anchors="organic-search-attribution=overview h_01H8XWQHPERAEDQVD275TFVC5B=overview h_01H8XWQHPE85376WV1Q9SPQ2NM=benefits h_01H8XWQHPETE03XG9GGV9EBA2H=example-use-cases h_01H8XWQHPESY4DDDJSTR0JDHNB=procedures h_01H8XWQHPEDYVDQQV3P8EDARAY=create-a-custom-dimension h_01H8XWQHPE22WZ46RTNCYKX96F=delete-or-edit-a-custom-dimension h_01H8XWQHPED4PFPJP2044FT1H8=view-custom-dimension-data h_01H8XWQHPF7WZ7B5Q7T9CHADRK=specifications-and-limitations" />

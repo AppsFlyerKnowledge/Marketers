@@ -38,6 +38,8 @@ x-zendesk:
 
 Netease's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The integration with Netease Ads only supports the install event in the default postback.
@@ -52,6 +54,8 @@ For more details about partner activation please click [here](/docs/partner-acti
 ![netease-default-postback.png](https://files.readme.io/0b1db2d0f9e772ad7459c8d28d46cf92bb26501da47b9e5f2f3dd4951a469470-50900350199825.png)
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -96,17 +100,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -129,3 +139,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW6VWQKD2K6REG5MN6274MD=setting-up-netease h_01HKW6VWQKNZ067ASNH3W5MK2H=integration-tab h_01HKW6VWQKVN9NKJ67HEJXRBZJ=activate-partner h_01HKW6VWQKJGFGER02BFXNV88C=default-postbacks h_01HKW6VWQKK3P5TE72MQRV0TPA=attribution-link-tab h_01HKW6VWQKEB8DK5YN4E976SQV=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6VWQKNNE4Y46QWR8VZHP0=click-through-attribution h_01HKW6VWQKSW8NYCK7VCQ2PRHW=click-attribution-link h_01HKW6VWQKBRWE8RHFTPF9JADE=cost-tab h_01HKW6VWQMJFES084XN3Z52GC2=ad-revenue-tab h_01HKW6VWQMJ419903HKE1C0GRD=permissions-tab h_01HKW6VWQMDR1K426AVZ25Z7VH=ad-network-permissions" />

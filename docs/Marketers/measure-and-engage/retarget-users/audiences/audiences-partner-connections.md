@@ -20,7 +20,7 @@ x-zendesk:
   promoted: false
   comments_disabled: true
   created_at: '2020-10-05T06:49:59Z'
-  edited_at: '2026-10-01T07:31:47Z'
+  edited_at: '2026-10-14T10:19:10Z'
 ---
 ## About partner connections
 
@@ -752,3 +752,5 @@ AppsFlyer uploads a CSV file of Device IDs to your public Slack channel.
 The connection will be added and displayed in the **Connections** tab, along with the connection status.
 
 </Accordion>
+
+<div data-zendesk-anchors="connecting-to-audiences-partners=about-partner-connections 01H8H2SWZKEFQ75XS6VK8F10MW=about-partner-connections 01H8H2SWZNFBN32QEVG80EX1BT=we-love-working-with-new-audiences-partners Adobe_Marketing_Cloud=adobe-audience-manager-aam 01ECF4ZD12TS7QA0NWS44222SJ=adobe-audience-manager-aam 01ECF4ZD13JNGX7NRKFEPQJCSX=amazon-s3 01ECF4ZD13AEW3SQX80YQZ00NR=note 01H8H2SWZNVYXWPPWHBQBSVWFC=braze 01H8H2SWZNFFSD1HZTJV3V1AJJ=using-a-braze-external-id-parameter 01H8H2SWZN9BNV35XHD5RBZZZN=using-the-cuid-field 01ECF4ZD13Q7QE5C9M8ZS4R8ZG=criteo facebook_audiences=facebook 01ECF4ZD14ZZ19RQDQ8JWH9RTZ=facebook 01H8H2SWZPP1MJXH9EHQXVW1CW=google-ads 01ECF4ZD14JMJVRATZSNC539DQ=httpool 01H8H2SWZP5QRV6VXB9KTEQSPT=Kakao h_01K0PVJZR5E6ZJEANYCEP5K22K=leanplum h_01K0PVJZR5CC8DV4XHH0C15EC7=prerequisite 01H8H2SWZPN1N4X4H2TRJZHRKN=moengage 01H8H2SWZP91437F31Y79KZ7Y9=prerequisite-1 01ECF4ZD15QDRGHCNEA2VGTXBN=slack 01ECF4ZD15KXPJHBYXK6AT9J4M=snapchat 01ECF4ZD15QDZJTFZS9GE9XG3Z=note-2 tapjoy_audiences=tapjoy 01ECF4ZD15P9DFQYHPAY92TFXH=tapjoy 01ECF4ZD16DHBG3VBT769ZYGV9=tiktok-for-business 01ECF4ZD142S55XVX1RS7H5FQ2=mytarget h_01KK93G2SGT60VM6DW27XB30AK=x-formerly-twitter" />

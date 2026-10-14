@@ -36,6 +36,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate Partner
@@ -77,6 +79,8 @@ In this section, map your AppsFlyer events with Criteo via postbacks.
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -85,6 +89,8 @@ Generate and save attribution links and send them to the partner for attributing
 **To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -104,11 +110,15 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue integration is not available for Criteo.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -129,3 +139,5 @@ Ad Network Permissions
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKWB41KJ4XG0SGX69NHGYBYD=setting-up-criteo h_01HKWB41KJR5H4TDH80AG7JEYQ=integration-tab h_01HKWB41KJ2Z3RHNQ2XYJXJBKC=activate-partner h_01HKWB41KJRHZCFJ0CF7K3SMAS=note h_01HKWB41KJHZM1P6ZKJ1Q10C7D=default-postbacks inapp-events-settings=in-app-events-settings h_01HKWB41KJSDADQZYVAD13QYEH=in-app-events-settings h_01HDBZW9XF33FHR418MNVH6BS2=warning h_01HKWB41KKPPSGDVB1EKDXD6A5=attribution-link-tab h_01HKWB41KKW3EEF3VVMS9BSZ53=cost-tab h_01HKWB41KKFT61V0TWGM5P5X8H=ad-revenue-tab h_01HKWB41KKPFBWKE748V5FD5Y3=permissions-tab" />

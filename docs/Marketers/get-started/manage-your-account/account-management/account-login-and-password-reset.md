@@ -32,6 +32,8 @@ Log in instructions for first-time and existing users. This includes a new accou
 
 </Accordion>
 
+<div id="logging-in-for-the-first-time" />
+
 <Accordion title="Logging in for the first time">
 
 Whether you just signed up or have just been invited to AppsFlyer, you will receive an email with an activation link.
@@ -51,6 +53,8 @@ To sign in to AppsFlyer:
 
 </Accordion>
 
+<div id="existing-users" />
+
 <Accordion title="Existing users">
 
 Existing users can log into AppsFlyer through the [main login page](https://hq1.appsflyer.com/auth/login).
@@ -65,6 +69,8 @@ Log in to AppsFlyer can be done using your:
 
 </Accordion>
 
+<div id="twofactor-authentication-2fa" />
+
 <Accordion title="Two-factor authentication (2FA)">
 
 If 2FA is enabled in the Security Management settings, it will be activated after your initial login.
@@ -76,6 +82,8 @@ If 2FA is enabled in the Security Management settings, it will be activated afte
 ## Password, Login, or 2FA reset
 
 Password reset for existing users and users who did not complete the initial registration or invitation process.
+
+<div id="existing-users-and-invited-users-who-have-not-activated-yet" />
 
 <Accordion title="Existing users and invited users who have not activated yet">
 
@@ -91,6 +99,8 @@ To reset your password:
 6. Create a new password
 
 </Accordion>
+
+<div id="users-who-have-not-completed-the-initial-registration" />
 
 <Accordion title="Users who have not completed the initial registration">
 
@@ -116,3 +126,5 @@ If your account uses 2FA, there may be occasions on which you need to reset a us
 **Note:** An admin can reset any other user's 2FA other than their own. To reset the account owner's 2FA, contact AppsFlyer Support team.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01JNDM4M03F0T16ZHY2V1BSRQH=log-in-instructions h_01JNDJFMRHCS20TABKNSHQ2MMW=logging-in-for-the-first-time h_01JNDM9HN8K396432TQ5MEVYCZ=existing-users h_01JNDS7ZT2TMX5315587CHBDY5=twofactor-authentication-2fa h_01JNDSMFB1YAWA340BAEYFXRES=password-login-or-2fa-reset h_01JNDSJPQ4GNV0PD16GE7G9FY6=existing-users-and-invited-users-who-have-not-activated-yet h_01JNDTHN2B6VCH38ER68D3RNFS=users-who-have-not-completed-the-initial-registration h_01H9Q9007R72FAH89XW58MWCXT=resetting-twofactor-authentication-2fa" />

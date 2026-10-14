@@ -38,6 +38,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -123,6 +125,8 @@ The event name and the event value (including the event parameters) configured i
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -134,11 +138,15 @@ Generate and save attribution links and send them to the partner for attributing
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data is not supported by this partner.
 
 </Accordion>
+
+<div id="ad-revenue-tab" />
 
 <Accordion title="Ad revenue tab">
 
@@ -146,8 +154,12 @@ Ad Revenue is not supported by this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 No permission configurations are available for LINE Ads Platform.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW2TJ83EZSV30XH3CM0HHB7=setting-up-line-ads-platform h_01HKW2TJ83RG7W6F2PZMAY7BXZ=integration-tab h_01HKW2TJ83VEK727ZH9FPH6TPJ=note h_01HKW2TJ83VPWD1GK99S4MY3ZB=activate-partner h_01HKW2TJ83PFS3TCPHKZ9HY5PE=general-settings h_01JAA89AWAQ4JZS3522EVZZN8D=connect-multiple-accounts-and-apps 01JB6YF9SFD2TWTZGR0RPVEBTC=note-1 01JAT9SYW9C06P185S9TWKAFM0=example h_01HKW2TJ838FFTAR7NQC9WX295=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW2TJ833VC6SGSRNJSZ53WR=in-app-events-settings custom-inapp-events-mapping=custom-in-app-events-mapping h_01HKW2TJ83GQ7SFKV6YPM49QP1=custom-in-app-events-mapping h_01HKW2TJ83JPB6DSW8Z5PCY1SC=attribution-link-tab h_01HKW2TJ839R8NS3PFHCAJGXTZ=cost-tab h_01HKW2TJ835JT0WD3GN4H3XHT5=ad-revenue-tab h_01HKW2TJ83MPGHKGEMDQQYGGJ1=permissions-tab" />

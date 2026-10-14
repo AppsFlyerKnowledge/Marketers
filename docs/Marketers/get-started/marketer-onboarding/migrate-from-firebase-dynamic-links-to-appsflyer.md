@@ -43,12 +43,16 @@ Before you begin, you'll need your:
 * Dynamic Links from Firebase
 * App developer
 
+<div id="step-1-create-an-appsflyer-account" />
+
 <Accordion title="Step 1. Create an AppsFlyer account">
 
 * [Create an AppsFlyer account](https://www.appsflyer.com/get-started/).
 * [Add account users with appropriate permissions](/docs/user-management).
 
 </Accordion>
+
+<div id="step-2-add-your-app" />
 
 <Accordion title="Step 2. Add your app">
 
@@ -58,6 +62,8 @@ Before you begin, you'll need your:
 ![add](https://files.readme.io/7f7bab2277d0f45434618d28714c727ccbb9e414192b765dd22551bcbd5b0a37-16950840602769.png)
 
 </Accordion>
+
+<div id="step-3-create-a-onelink-template" />
 
 <Accordion title="Step 3. Create a OneLink template (app developer collaboration)">
 
@@ -69,6 +75,8 @@ A OneLink template is required for creating links and end-user experiences. It f
   * You must either be an AppsFlyer admin user or have [permissions to add/edit OneLink templates](/docs/user-management)
 
 </Accordion>
+
+<div id="step-4-set-up-the-appsflyer-sdk" />
 
 <Accordion title="Step 4. Set up the AppsFlyer SDK (app developer task)">
 
@@ -103,6 +111,8 @@ Integrate AppsFlyer SDK in your app using the steps below.
 
 </Accordion>
 
+<div id="step-5-understand-parameter-mapping" />
+
 <Accordion title="Step 5. Understand parameter mapping (app developer task)">
 
 **Your app developer is needed for this step*.***
@@ -122,6 +132,8 @@ Use this table as a reference for all the parameters you currently use when you 
 <table><thead><tr><th>Grouping</th><th>Firebase</th><th>AppsFlyer</th><th>Description</th></tr></thead><tbody><tr><td>Mobile parameters</td><td>link</td><td><ul><li>af_dp</li><li>deep_link_value</li></ul></td><td><ul><li><strong>af_dp</strong> - URI scheme used as a fallback method to launch iOS and Android apps.</li><li><strong>deep_link_value</strong> - Value name for the specific in-app content that users will be directed to.</li></ul></td></tr><tr><td><br/>Android parameters</td><td>afl</td><td>af_android_url</td><td>Allows redirection of Android users to a customized web page (the domain must be in the <a href="./set-up-your-domain-redirect-allowlist">redirect allowlist</a>)</td></tr><tr><td rowspan="2">iOS parameters<br/><br/> </td><td>ifl</td><td>af_ios_url</td><td>Allows redirection of iOS users to a customized web page (the domain must be in the <a href="./set-up-your-domain-redirect-allowlist">redirect allowlist</a>)</td></tr><tr><td>efr</td><td>af_force_deeplink</td><td>Used to force an iOS app to open using the af_dp URI scheme. Without this, the app won't open using the URI scheme</td></tr><tr><td>Other platform URL</td><td>ofl</td><td>af_web_dp</td><td>Allows redirection of desktop users to a customized web page</td></tr><tr><td rowspan="3"><br/>Social tags<br/><br/> </td><td>st</td><td>af_og_title</td><td>Used to customize the title of shared content on Social media</td></tr><tr><td>sd</td><td>af_og_description</td><td>Used to customize the description of shared content on social media</td></tr><tr><td>si</td><td>af_og_image</td><td>Used to customize the image of shared content on social media</td></tr><tr><td rowspan="5"><p>Analytic parameters <br/><br/><br/><br/> </p></td><td>utm_source</td><td>pid</td><td>Media Source</td></tr><tr><td>utm_medium</td><td>af_channel</td><td>Identifies the media source channels where your ads are distributed</td></tr><tr><td>utm_campaign</td><td>c</td><td>Campaign name</td></tr><tr><td>utm_term</td><td>af_keywords</td><td>Keywords list for text-targeted campaigns</td></tr><tr><td>utm_content</td><td>af_adset</td><td>Collection of ads associated with a campaign</td></tr></tbody></table>
 
 </Accordion>
+
+<div id="step-6-create-onelink-links-with-mapped-parameters" />
 
 <Accordion title="Step 6. Create OneLink links with mapped parameters">
 
@@ -147,3 +159,5 @@ Use the following table to determine which method best works for your use.
 >
 > * [Branded Domains](/docs/brand-onelink-with-your-domain)
 > * [Using Firebase and Google Tag Manager with AppsFlyer—Overview](/docs/using-firebase-and-google-tag-manager-with-appsflyer-overview)
+
+<div data-zendesk-anchors="overview=about-the-migration h_01J7ZPPQ340PNQ70FZAQY4GBZ1=about-the-migration 01H8K961JHRXNQHBVN930XW70Q=about-the-migration how-to-migrate-from-firebase-to-appsflyer=migrate-from-firebase-to-appsflyer 01H8K961JHCK0Z4GTTHCAKF98E=migrate-from-firebase-to-appsflyer h_01J5QWWGWGDBEF8RY3DZ5XAN3G=step-1-create-an-appsflyer-account h_01J5QWWGWGN17673GYFZWPNKQR=step-2-add-your-app h_01J5QWWGWGKJPRCG9N93B8KBYW=step-3-create-a-onelink-template h_01J5QWWGWGCQFHBQ9EC0QTPF4S=step-4-set-up-the-appsflyer-sdk h_01J5QXST2K890DV7QS6S9K3A01=appsflyer-sdk-integration-steps h_01J5QWWGWGPRF5DRMMQ14BJCFA=step-5-understand-parameter-mapping 01H8K961JHBXVKXM0XQYY605EQ=note h_01J5QWWGWG3ST19WDRZXN8FK8Q=step-6-create-onelink-links-with-mapped-parameters h_01HE7SZPKKQETH260G45V0D0HN=see-also" />

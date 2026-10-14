@@ -95,6 +95,8 @@ The campaign mapping information is provided to AppsFlyer as a custom data sourc
 
 DCP measures campaigns differently based on where they run — either on a collaborator’s owned site (on-site) or on the media partner platform (off-site). These differences affect how audiences are reached, how data is collected, and how attribution is performed.
 
+<div id="offsite-campaigns" />
+
 <Accordion title="Off-site campaigns">
 
 Off-site campaigns involve user engagements on third-party platforms (such as Meta or Google), with conversions occurring within the collaborator’s owned properties and attributed to those off-site engagements.
@@ -104,12 +106,16 @@ Off-site campaigns involve user engagements on third-party platforms (such as Me
 
 </Accordion>
 
+<div id="onsite-campaigns" />
+
 <Accordion title="On-site campaigns">
 
 On-site campaigns involve user engagements and conversions that occur within a collaborator’s owned properties (such as their app or website), with conversions attributed to on-site engagements.
 
 * **Example:** A brand promotes a product on a Commerce Media Network website. The audience includes past shoppers of the CMN platform, segmented by parameters like category interest or purchase history. When users see and click the campaign banner, they are taken to the product detail page on the same site.
 * **Attribution:** DCP directly attributes conversions to on-site campaigns using first-party engagement data from the collaborator’s website or app.
+
+<div id="combined-onsite-and-offsite-campaigns" />
 
 <Accordion title="Combined on-site and off-site campaigns">
 
@@ -125,6 +131,8 @@ Combined campaigns involve user engagements that occur both on-site and off-site
 ## The DCP measurement process
 
 The DCP measurement process defines how conversion records from SDK in-app events and custom source files are validated, normalized, and matched to campaign engagements across [on-site and off-site campaigns](https://www.notion.so/Collaboration-measurement-Overview-255b7b13af5f80fa83d2dc77e337c960?pvs=21).
+
+<div id="onsite-measurement-flow" />
 
 <Accordion title="On-site measurement flow">
 
@@ -200,6 +208,8 @@ The final output includes:
 
 </Accordion>
 
+<div id="offsite-measurement-flow" />
+
 <Accordion title="Off-site measurement flow">
 
 **Off-site conversion events** are supplied by collaborators through **custom source files** and must include the necessary identifiers for attribution, such as Google click ID (`gclid`) or Facebook click ID (`fbclid`). These events are shared with the external platforms like Google and Meta, which match the data against their campaign records and return **enriched metadata**, including campaign, adset, and creative identifiers.
@@ -264,6 +274,8 @@ The final output includes:
 
 </Accordion>
 
+<div id="combined-onsite-and-offsite-measurement-flow" />
+
 <Accordion title="Combined on-site and off-site measurement flow">
 
 This flow outlines how AppsFlyer’s Data Collaboration Platform (DCP) processes conversion data from multiple sources, including:
@@ -327,3 +339,5 @@ The measurement setup process can be described in four steps, each of which has 
 3. [Configure DCP to access the data sources and perform attribution](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement)
 4. [Consume the attributed measurement data in dashboards](/docs/data-collaboration-platform-dcp-view-measurement-dashboard)
 5. [Consume the attributed measurement data in reports](/docs/data-collaboration-platform-dcp-view-measurement-reports)
+
+<div data-zendesk-anchors="h_01K3GNC7NFJV6W4NPEXJ4SKSKA=the-three-data-sources-of-measurement h_01K3GNC7NF2ZASWHYZJCPYHF2D=conversions h_01K3GNC7NFMAQ8S8A0YN79YRM8=engagements h_01K3GNC7NG2QYKV3ZTGYEHMDYT=campaign-mapping onsite-vs-offsite-campaigns=on-site-vs-off-site-campaigns h_01K3GNC7NGP2FXZXQRAS5H8DE1=on-site-vs-off-site-campaigns h_01K3GNC7NGDDSBGTPD7WVH1H2N=offsite-campaigns h_01K3GNC7NGKHSC7W6B5GG3M10Y=onsite-campaigns h_01K3GNC7NGMG4CCSWVJAVEN24E=combined-onsite-and-offsite-campaigns h_01K3GNC7NG1S37JPMH31A6RRSR=the-dcp-measurement-process h_01K3GNC7NGKJNH3BX53PJ9HQ90=onsite-measurement-flow h_01K3GPJQJC29ZJJTMM9BHA97H1=1-configure-measurement-sources h_01K3GNC7NGMSPQTGNNCRYVWWW4=2-prepare-and-map-conversion-data h_01K3GNC7NGJPNZ3EEMHQP5E04V=3-link-conversions-to-engagements 4-split-multisku-conversions=4-split-multi-sku-conversions h_01K3GNC7NG6DX2B825C5B6TVS0=4-split-multi-sku-conversions 5-filter-nontarget-skus=5-filter-non-target-skus h_01K3GNC7NGSED134G0PGDZGPDB=5-filter-non-target-skus h_01K3GNC7NGBDJ2JCY0HQ61412X=6-deduplicate-conversion-events h_01K3GNC7NG7Y8XZ9VH3SK47DAR=7-apply-attribution-logic h_01K3GNC7NGFY21QVJY8QRNHGVK=8-output-attributed-conversion-dataset h_01K3GNC7NHG5GBRC0X4M5DZ6PP=offsite-measurement-flow h_01K3GNC7NH3CP2HMZTFDK050FA=1-prepare-conversion-data h_01K3GNC7NHD0REAV4Q4EMEXPPX=2-deduplicate-conversion-events h_01K3GNC7NHX6VN5XV5ADTH92CT=3-filter-for-sharing-eligibility 4-filter-according-to-lasttouch-attribution=4-filter-according-to-last-touch-attribution h_01K3GNC7NH598P4G6VVSBQNVTF=4-filter-according-to-last-touch-attribution h_01K3GNC7NHAQMGXH6JJKEWHGV5=5-share-with-google-and-meta h_01K3GNC7NHVWVZ10A1Y4DW5M6G=6-google-and-meta-response-enrichment h_01K3GNC7NHFTD0CKQ2GSNNCE25=7-output-attributed-conversion-dataset h_01K3GNC7NHM6HAYCJ9Q1CX359B=combined-onsite-and-offsite-measurement-flow 1-onsite-and-offsite-record-processing-is-performed=1-on-site-and-off-site-record-processing-is-performed h_01K3GNC7NHW2M399S909QZE9H9=1-on-site-and-off-site-record-processing-is-performed 2-apply-lasttouch-attribution=2-apply-last-touch-attribution h_01K3GNC7NH3XJRK6N0PC8BWPXT=2-apply-last-touch-attribution h_01K3GNC7NHXMDC2CQQN8Q95DNH=3-share-with-google-and-meta 4-offsite-response-enrichment=4-off-site-response-enrichment h_01K3GNC7NHVGQNNVWMKZTAQ03D=4-off-site-response-enrichment 5-onsite-and-offsite-conversion-merge=5-on-site-and-off-site-conversion-merge h_01K3GNC7NH2PZ2KFBJHTG1ZZTE=5-on-site-and-off-site-conversion-merge h_01K3GNC7NHSCW4C2845N0MVQZM=set-up-collaboration-measurement-in-four-steps" />

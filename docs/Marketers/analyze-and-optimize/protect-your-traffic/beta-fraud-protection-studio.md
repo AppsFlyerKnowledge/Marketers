@@ -92,6 +92,8 @@ Tagged detections aren't reflected in fraud reports. Tagged detections are avail
 
 ## How to use fraud protection studio
 
+<div id="general" />
+
 <Accordion title="General">
 
 FPS is a configuration page allowing you to specify when you want detections to be [implemented or tagged](/docs/beta-fraud-protection-studio#fps-modes). The platform helps define tagging requirements by providing:
@@ -217,7 +219,7 @@ Download the New Release report data sample
 
 The New Releases page is broken up into two sections.
 
-* [Future Releases](/docs/beta-fraud-protection-studio#how-to-set-the-tagged-mode-time-period-for-future-packages) - Allows you to evaluate the impact of new fraud detection packages by marking detections as tagged for up to 14 days before they come into effect.
+* [Future Releases](/docs/beta-fraud-protection-studio#how-to-access-new-releases) - Allows you to evaluate the impact of new fraud detection packages by marking detections as tagged for up to 14 days before they come into effect.
 * [New Releases](/docs/beta-fraud-protection-studio#how-to-evaluate-and-implement-current-active-packages) - Allows you to evaluate the current active package by monitoring its detection performance and implementing it now.
 
 #### How to set the tagged mode time period for future packages
@@ -232,7 +234,7 @@ Future Releases allow you to set the number of days you want future detection pa
 > 📘 **Note**
 >
 > * This only affects future packages. Detection packages that are currently in effect will not get delayed or changed.
-> * Selecting 0 days from the dropdown box is equivalent to selecting [Implement now](/docs/beta-fraud-protection-studio#to-implement-the-current-package-if-in-tagged-status), and overrides the the [Future Release](/docs/beta-fraud-protection-studio#how-to-set-the-tagged-mode-time-period-for-future-packages) settings for this package.
+> * Selecting 0 days from the dropdown box is equivalent to selecting [Implement now](/docs/beta-fraud-protection-studio#to-implement-the-current-package-if-in-tagged-status), and overrides the the [Future Release](/docs/beta-fraud-protection-studio#how-to-access-new-releases) settings for this package.
 
 #### How to evaluate and implement current active packages
 
@@ -254,7 +256,7 @@ The New Current Release section allows you to see:
 
 > 📘 **Note**
 >
-> This overrides the [Future Release](/docs/beta-fraud-protection-studio#how-to-set-the-tagged-mode-time-period-for-future-packages) settings for this package.
+> This overrides the [Future Release](/docs/beta-fraud-protection-studio#how-to-access-new-releases) settings for this package.
 
 </Accordion>
 
@@ -311,6 +313,8 @@ The detection status allows you to choose the [detection](/docs/beta-fraud-prote
 
 </Accordion>
 
+<div id="reengagement-hijacking-detection" />
+
 <Accordion title="Re-engagement hijacking detection">
 
 The Re-engagement hijacking detection in Protect360 expands the standard fraud detection coverage specifically for re-engagement activities. This detection enhances your control over fraud management.
@@ -352,6 +356,8 @@ The Re-engagement hijacking page is broken into two sections.
 
 </Accordion>
 
+<div id="inapp-based-detection" />
+
 <Accordion title="In-app based detection">
 
 In-app based detection deterministically marks installs as fraud in post-attribution by analyzing in-app behavioral anomalies. It identifies sophisticated fraud schemes such as bots that mimic real engagement but display unusual event flows and timing patterns after install.
@@ -388,6 +394,8 @@ This section is further broken up into:
 
 </Accordion>
 
+<div id="h_01K0ASM01ADVSECMOD01" />
+
 <Accordion title="Advanced Security Module data">
 
 Review Advanced Security Module detections of install candidate cyberattacks in real time, for Android apps. This helps make sure only verified traffic reaches your app.
@@ -419,15 +427,21 @@ Detections are shown as one of the following:
 
 ## FAQs
 
+<div id="can-i-tag-detection-for-specific-partnersmedia-sources" />
+
 <Accordion title="Can I configure tagged detection for partners or media sources?">
 
 This depends on the detection type. For example, partner tagging is unavailable for hijacking detection to prevent biased detection.
+
+<div id="what-happens-when-the-tagging-period-ends" />
 
 <Accordion title="What happens when the tagging period ends?">
 
 At the end of the evaluation period, tagged detection automatically converts to implemented mode.
 
 </Accordion>
+
+<div id="where-can-i-see-tagged-installs" />
 
 <Accordion title="Where can I see tagged installs?">
 
@@ -451,11 +465,15 @@ The following tagged report is also available in **Data Locker**:
 
 </Accordion>
 
+<div id="can-tagged-detection-be-adjusted-for-appspecific-settings" />
+
 <Accordion title="Can tagged detection be adjusted for app-specific settings?">
 
 Yes, click flood tagging is configurable at the app level.
 
 </Accordion>
+
+<div id="can-i-see-tagged-inapp-events" />
 
 <Accordion title="Can I see tagged in-app events?">
 
@@ -463,11 +481,15 @@ Yes. In-app events that are connected to a tagged install by the same AppsFlyer 
 
 </Accordion>
 
+<div id="who-can-change-set-up-or-view-fps" />
+
 <Accordion title="Who can change, set up, or view FPS?">
 
 Only the admin can change the set up of FPS. FPS is visible according to the [permissions page](/docs/manage-data-access-permissions).
 
 </Accordion>
+
+<div id="are-tagged-installs-credited-back-to-the-consumption-plan" />
 
 <Accordion title="Are tagged installs credited back to the consumption plan?">
 
@@ -475,11 +497,15 @@ No. tagged detection will not be credited back to the consumption plan.
 
 </Accordion>
 
+<div id="are-tagged-installs-considered-as-fraud" />
+
 <Accordion title="Are tagged installs considered as fraud?">
 
 Tagged installs are detected by Protect360. However, they are tagged per the customer configuration. Therefore, both in the Overview and in the Protect360 dashboards they will be reflected under the attributed metrics.
 
 </Accordion>
+
+<div id="can-i-see-how-many-installs-are-tagged-only-by-the-click-flood-tagging" />
 
 <Accordion title="Can I see how many installs are tagged only by the click flood tagging?">
 
@@ -488,3 +514,5 @@ Yes. This data is available in the new dedicated reports on the export page and 
 </Accordion>
 
 </Accordion>
+
+<div data-zendesk-anchors="why-flexible-protection=about-fraud-protection-studio 01JEQR86DC1CK03DKCZH760N4M=about-fraud-protection-studio h_01JK3BGVNMYFQYQGRPJBVN2A7Z=important how-flexible-protection-works=how-the-fraud-protection-studio-works 01JEQR86DEG7RTRNYFP02WHJGQ=how-the-fraud-protection-studio-works 01JETRN5S347ZXV8CGZJDHQH56=key-concepts h_01JEWZEBBA9VAPCKR87NJ5AK3C=fps-modes 01JEWZQ7PBD6W4J15W0HE2Q4MJ=note 01JEWZT9N34FZ9SE8H7EGCMPBZ=where-is-tagged-detection-reflected how-to-use-flexible-protection=how-to-use-fraud-protection-studio 01JEQR86ECSYTM7RN3YPYRSAGE=how-to-use-fraud-protection-studio 01JETF4NJX02APNK1TDV91JQAB=general 01JETF4NJZ7P5M5RTCEFFD0WEP=click-flood-detection 01JFSPDB630RE494JG1W618TKR=important-2 adjust-detection-status=how-to-access-click-flood 01JEQVJS6YTQD299X39Q8E3506=how-to-access-click-flood h_01JJKE1ZKE5WDRSPKS8JE9MRRG=click-flood-page h_01JZQ81MW4HMY9B782Y7PWVE8Y=detection-status h_01JJKE1ZKEJ4QM2HTT37FERA92=how-to-adjust-the-detection-status 01JEQVZCNSTXY4V8H2Y1QP224C=current-detection-status 01JETF4NK2KT4MY2G6WMWGMVKB=new-releases 01JFQPRZ5NGEAFBWB1FS0D6DCT=note-1 h_01JEXC0ABSTCEA939DGQ5SDJBJ=how-this-works how-to-set-the-tagged-mode-time-period-for-future-packages=how-to-access-new-releases h_01JEXC2HAR2S6BWK28N8W3HHSZ=how-to-access-new-releases h_01JJKE1ZKE0K1W2VE3KHQ639B1=new-releases-page h_01JJKE1ZKE13D7EC6BMN3JJNGW=how-to-set-the-tagged-mode-time-period-for-future-packages 01JF50BVZ75ZSXTJEKAV4HVSTZ=note-2 h_01JEXC3DESR10WVV34ED30B7BH=how-to-evaluate-and-implement-current-active-packages h_01JF505FK4NP88WYXP8PVQRYDS=to-implement-the-current-package-if-in-tagged-status 01JF50BVZ9QPT5W41P8KQAREKV=note-3 h_01JQXFMBGXWKXMFFAPHN5V66Q7=app-detection-evaluation h_01JQXPVD4MXPYQQZXNTM2H9BNA=important-2 h_01JQXG4GJ2DB8HM26K3E1WA3A1=how-to-access-app-detection-evaluation h_01JQXG6QDSTAPCJDMQVQMXS86W=app-detection-evaluation-page how-to-adjust-the-detection-status=how-to-adjust-the-detection-status-1 h_01JQXG6QEAM0Y67G504JV2SA5R=how-to-adjust-the-detection-status-1 h_01JWAVMSW1K6R4FJ8J9AYYNHQW=reengagement-hijacking-detection how-this-works::a0e9054=how-this-works-1 h_01JWAVPAVKM9RSXFMZN9CM36ER=how-this-works-1 h_01JWAVPAVK7ZT471AQAFKAS64K=how-to-access reengagement-hijacking-page=re-engagement-hijacking-page h_01JWAVPAVKKB4JSP41P967EESS=re-engagement-hijacking-page h_01JZMAX35E1KT04VTKAFB8FAF3=inapp-based-detection how-to-access::db81debe=how-to-access-1 h_01JZMAZET0JXYEDGKE0B797TQ7=how-to-access-1 the-inapp-based-detection-page=the-in-app-based-detection-page h_01JZMB0NET3Y8CFVZ1WP0WDPMJ=the-in-app-based-detection-page advanced-security-module=h_01K0ASM01ADVSECMOD01 h_01K0ASM02ADVSECMOD02=how-to-access-2 h_01K0ASM07ADVSECMOD07=the-advanced-security-module-page h_01K0ASM13ADVSECMOD13=note-4 01JEQR86EMZQFNSZ5NWZ08F5YQ=faqs 01JETRQMEJHZMHAKHHX5SZ028N=can-i-tag-detection-for-specific-partnersmedia-sources 01JETRQMEKJ27S5GGVR73H6WZB=what-happens-when-the-tagging-period-ends 01JETRQMEMKV8K7EQMS1BJB989=where-can-i-see-tagged-installs 01JETRQMEM6BMEXGYJM6WVE313=can-tagged-detection-be-adjusted-for-appspecific-settings 01JF79M50ZZ7HP0XCW1F4YJH7R=can-i-see-tagged-inapp-events 01JF79M50ZTMM1Y2YW8ARTYVTN=who-can-change-set-up-or-view-fps 01JF79M510HGEVC1WTWXAHSAQH=are-tagged-installs-credited-back-to-the-consumption-plan 01JF79M510B5WW067Q4T4FDVSC=are-tagged-installs-considered-as-fraud 01JF79M5105Z9AH95K6VVANANM=can-i-see-how-many-installs-are-tagged-only-by-the-click-flood-tagging" />

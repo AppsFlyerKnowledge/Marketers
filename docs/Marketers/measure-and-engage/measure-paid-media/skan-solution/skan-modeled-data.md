@@ -160,3 +160,5 @@ Considerations:
 * The accuracy of AppsFlyer geo-modeling is approximately 90%. If the geo can't be modeled, the SKAN install is grouped under None. None means the geo is unknown.
 
 </Accordion>
+
+<div data-zendesk-anchors="01H8TZR38AC6P264CGF4PX4SJ5=overview 01H8TZR38A2V9ZSSGKHF3XCX0P=modeled-data-types-and-availability 01H8TZR38A4RDX42B7J5X9SPMQ=null-conversion-values 01H8TZR38BG9XEM2FTJADJ27VK=revenue-ltv h_01HTW0XNB2W7JMD9ECZHSN91GZ=inapp-event-ltv 01H8TZR38BSFVDSQCH915ACSYH=geo" />

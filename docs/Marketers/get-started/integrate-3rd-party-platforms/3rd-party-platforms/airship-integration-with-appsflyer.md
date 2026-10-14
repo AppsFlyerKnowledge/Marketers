@@ -40,6 +40,8 @@ x-zendesk:
    Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below:
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration tab is divided into different sections as described below.
@@ -128,11 +130,15 @@ Once you have saved the configuration, AppsFlyer sends the following data to Air
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution Links are not available for Airship.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -140,11 +146,15 @@ Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -157,3 +167,5 @@ Permissions are not available for Airship.
 In Airship, attributes are key-value pairs that you associate with your audience to help better target them with messages. Use attributes to target audiences with greater specificity than you would with tags.
 
 Configure your AppsFlyer attribution data in Airship by [adding individual attributes to your project](https://docs.airship.com/partners/appsflyer/#setting-attributes-for-integration).
+
+<div data-zendesk-anchors="h_01H9FJYKH3V1TZ4GYEKKG46F2S=important h_01H9FJYKH3SWMNC8CRPPDQMCGQ=setting-up-airship h_01H9FJYKH4KQMK2N5BTTFTY076=integration-tab h_01H9FJYKH4NTCNVKBW9XSENFTP=activate-partner h_01H9FJYKH4MMRE57BNEBD0P5NT=general-settings h_01H9FJYKH4H93Q5S41HK7S4RD6=important-note h_01H9FJYKH44F4YQSEPKTGN7EYK=default-postbacks h_01H9FJYKH44S8F34YJ97TE32PM=attribution-link-tab h_01H9FJYKH47DYTR8T197CEXH0Z=cost-tab h_01H9FJYKH46AC5X7F6GAD9MQJG=ad-revenue-tab h_01H9FJYKH4N4T5JTGWHQC0A18Z=permissions-tab h_01H9FJYKH4Q09JSBJ25RRE02Y3=set-up-and-manage-the-attribution-data-in-airship-console" />

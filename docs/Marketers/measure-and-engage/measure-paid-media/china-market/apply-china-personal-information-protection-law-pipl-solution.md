@@ -72,3 +72,5 @@ This section describes certain limitations the PIPL solution imposes.
 
 * The S2S solution for OneLink API for short links creation isn’t supported.
 * All device IDs, for all engagements, must be hashed.
+
+<div data-zendesk-anchors="h_01HQ5Y1W7M46BBJGEZZ5VEYW3K=background h_01HQ5Y1W7MRYYGJWJNWY7ZSY9S=apply-pipl-solution-in-appsflyer h_01HQ5Y1W7M39XRY607H4G7X0X4=solution-limitations" />

@@ -43,6 +43,8 @@ Adform configuration window includes 2 active tabs: **Integration** and **Attrib
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -95,6 +97,8 @@ In this section you can map your AppsFlyer events with Adform via postbacks.
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).
@@ -105,11 +109,15 @@ Generate and save attribution links and send them to the partner for attributing
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="ad-revenue-tab" />
 
 <Accordion title="Ad revenue tab">
 
@@ -117,8 +125,12 @@ Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 There are no permissions to be granted Adform.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJR630HMJCK05KSJ1P57KJD1=setting-up-adform h_01HJR630HMXT2T93RH2DZ709Z6=tip h_01HJR630HMT23996KHW0Z2Z9BT=integration-tab h_01HJR630HM3QQVARD5YN3WG6D4=activate-partner h_01HJR630HMR742Z6N1HWFGDM4Z=note h_01HJR630HMYXE1R9WBDBBV5K39=general-settings h_01HJR630HMHMC5WP2F4CYP8GG0=default-postbacks inapp-events-settings=in-app-events-settings h_01HJR630HM4XGH1DYSHYH7EPQ4=in-app-events-settings h_01HJR630HM00A090TQNW6Z11RY=attribution-link-tab h_01HJR630HMP3AE90YEWNVHN19Q=cost-tab h_01HJR630HMSE5DFR6Y4T3TP34C=ad-revenue-tab h_01HJR630HMF4ZJFNX6RAGT8PJA=permissions-tab" />

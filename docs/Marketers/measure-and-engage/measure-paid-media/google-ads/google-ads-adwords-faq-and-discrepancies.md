@@ -24,6 +24,8 @@ x-zendesk:
 ---
 ## Google Ads FAQ
 
+<div id="why-am-i-not-seeing-clicks-from-google-ads" />
+
 <Accordion title="Why am I not seeing clicks from Google Ads?">
 
 Aggregate clicks and impressions data from Google Ads is collected once you have [authenticated cost, clicks and impressions](/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory) collection in the **Cost** tab.
@@ -31,6 +33,8 @@ Aggregate clicks and impressions data from Google Ads is collected once you have
 Clicks and impressions data from Google Ads was made available during August 2018, first for Android apps and later on for iOS apps. Therefore, when analyzing clicks data from 2018 and before, Google Ads clicks data may be missing or incomplete.
 
 </Accordion>
+
+<div id="why-am-i-not-seeing-first_open-conversions-on-google-ads" />
 
 <Accordion title="Why am I not seeing first_open conversions on Google Ads">
 
@@ -41,6 +45,8 @@ If you are not seeing first\_open conversions on Google Ads as shown in the scre
 it means that you need to import conversions in Google Ads. Follow the instruction on [importing conversions](/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory).
 
 </Accordion>
+
+<div id="why-don-t-i-see-installs-from-google-ads" />
 
 <Accordion title="Why don’t I see installs from Google Ads?">
 
@@ -70,6 +76,8 @@ Follow this checklist to troubleshoot missing installs:
    Ensure the Link ID in AppsFlyer matches the Link ID in Google Ads.
 
 </Accordion>
+
+<div id="why-dont-i-see-inapp-events-in-the-google-ads-dashboard" />
 
 <Accordion title="Why don't I see in-app events in the Google Ads dashboard?">
 
@@ -104,6 +112,8 @@ If you’ve modified the Partner Event identifier in Google Ads (for example, if
 
 </Accordion>
 
+<div id="can-i-stop-google-cost-sync" />
+
 <Accordion title="Can I stop Google cost sync?">
 
 To stop cost sync with Google:
@@ -114,6 +124,8 @@ To stop cost sync with Google:
 
 </Accordion>
 
+<div id="do-i-need-to-create-and-then-import-session_start" />
+
 <Accordion title="Do I need to create and then import session_start?">
 
 This depends on the type of campaign you are running. If you are running a re-engagement campaign then it is recommended to create and import `session_start` to measure engagements.
@@ -121,6 +133,8 @@ This depends on the type of campaign you are running. If you are running a re-en
 For a user acquisition campaign, this is not mandatory.
 
 </Accordion>
+
+<div id="can-i-send-uninstall-information-to-google-ads" />
 
 <Accordion title="Can I send uninstall information to Google Ads?">
 
@@ -133,11 +147,15 @@ Yes.
 
 </Accordion>
 
+<div id="what-google-ads-data-does-appsflyer-display" />
+
 <Accordion title="What Google Ads data does AppsFlyer display?">
 
 You can view data at the following levels: campaign, channel, adset, and geo.
 
 </Accordion>
+
+<div id="do-i-need-to-configure-anything-to-create-audience-lists-in-google-ads-based-on-appsflyer-data" />
 
 <Accordion title="Do I need to configure anything to create audience lists in Google Ads based on AppsFlyer data?">
 
@@ -145,11 +163,15 @@ No. In the Google API, this information is already set and is based on your In-A
 
 </Accordion>
 
+<div id="im-running-an-app-campaign-why-cant-i-see-data-or-conversion-events-in-the-appsflyer-or-google-ads-dashboard" />
+
 <Accordion title="I'm running an app campaign, why can't I see data or conversion events in the AppsFlyer or Google Ads dashboard?">
 
 It is very likely that you have not yet imported events. For details about how to import events, click [here](/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory).
 
 </Accordion>
+
+<div id="what-do-i-do-if-there-are-multiple-accounts" />
 
 <Accordion title="What do I do if there are multiple accounts?">
 
@@ -157,11 +179,15 @@ There is no problem using multiple accounts with Google Ads with AppsFlyer. Apps
 
 </Accordion>
 
+<div id="what-happens-with-link-ids-created-at-mcc-level-vs-account-level" />
+
 <Accordion title="What happens with link IDs created at MCC level vs. account level">
 
 Link IDs at MCC or account level are supported by AppsFlyer. We recommend working closely with your Google Ads representative to ensure your account is structured correctly. For more information, click [here](/docs/recording-multiple-agency-mcc-google-ads-accounts).
 
 </Accordion>
+
+<div id="what-is-parallel-tracking" />
 
 <Accordion title="What is parallel tracking?">
 
@@ -198,6 +224,8 @@ Click here to see how to configure Google ad web campaigns with parallel trackin
 
 </Accordion>
 
+<div id="how-do-you-configure-a-campaign-with-android-or-ios-configuration" />
+
 <Accordion title="How do you configure a campaign with Android or iOS configuration">
 
 > 📘 **Important!**
@@ -208,6 +236,8 @@ Click here to see how to configure Google ad web campaigns with parallel trackin
 >
 > AppsFlyer can present any campaign information that is provided by Google. The campaign type (Search, Video, Display, and Re-engagement) and associated information is determined by Google. It is recommended to configure App campaigns. For guidance on other campaign types, you should contact your Google representative. For details of these campaigns, click [here](https://developers.google.com/app-conversion-tracking/api/request-response-specs).
 
+<div id="android-configuration-for-google-ads" />
+
 <Accordion title="Android configuration for Google Ads">
 
 To support Android attribution, make sure that your app supports GAID (Google Advertising ID) collection, and that it is passed to AppsFlyer through our SDK.
@@ -216,7 +246,7 @@ To support Android attribution, make sure that your app supports GAID (Google Ad
 
 For details of how to create conversion recording, click [here](/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory).
 
-Google Ads - Android Configuration - Sending In-App Events
+<span id="inapp_events"></span>Google Ads - Android Configuration - Sending In-App Events
 
 If you want to further measure the success of your Mobile App Install campaigns in Google, you can send in-app events to your Google Ads account from your AppsFlyer account.
 
@@ -225,6 +255,8 @@ If you want to further measure the success of your Mobile App Install campaigns 
 For details of how to measure your app conversions, click [here](/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory).
 
 </Accordion>
+
+<div id="ios-configuration-for-google-ads" />
 
 <Accordion title="iOS configuration for Google Ads">
 
@@ -251,6 +283,8 @@ For details of how to measure your app conversions, click [here](/docs/google-ad
 </Accordion>
 
 </Accordion>
+
+<div id="for-how-long-do-you-keep-google-ads--userlevel-data" />
 
 <Accordion title="For how long do you keep Google Ads’ user-level data?">
 
@@ -295,3 +329,5 @@ While we work closely with Google Ads to minimize these discrepancies, advertise
 > 📘 **See also**
 >
 > * For iOS 14-related considerations, see [Google Ads SKAdNetwork interoperability with AppsFlyer](/docs/get-skan-postback-data-from-google-ads).
+
+<div data-zendesk-anchors="h_01HA1SM7D91QPG17WH752FBAFT=google-ads-faq h_01HA1SM7D9JWBEPNE0E8FE665E=why-am-i-not-seeing-clicks-from-google-ads h_01HA1SM7DAW984PPRGHXA5BYSX=why-am-i-not-seeing-first_open-conversions-on-google-ads why-don%E2%80%99t-i-see-installs-from-google-ads=why-don-t-i-see-installs-from-google-ads h_01K5DZBDMS0D2S5XYDC22WQ19H=why-don-t-i-see-installs-from-google-ads h_01K5DZBDMSBDKAFHVVPYD6YKRK=quick-fix h_01K5DZBDMSVTE6M2J235ST85DE=still-not-working h_01K7NT8FVC3K3861WN9VKRZ2HB=why-dont-i-see-inapp-events-in-the-google-ads-dashboard h_01K7NT8FVC1T557GPG7ZCYX33J=quick-fix-checklist h_01K7PAH7VDS7NGW6R6HERGXK9H=note still-not-working::77f3165b=still-not-working-1 h_01K7NT8FVCD4DNFKP3DS75ZKR0=still-not-working-1 h_01HA1SM7DACQDVGWGKV5MZ63D6=can-i-stop-google-cost-sync h_01HA1SM7DA415FQP3MFC09AE3Y=do-i-need-to-create-and-then-import-session_start h_01HA1SM7DAEKGVPDTX77RJ9Y37=can-i-send-uninstall-information-to-google-ads h_01HA1SM7DAKKVZ82WF6RVEDHE9=what-google-ads-data-does-appsflyer-display h_01HA1SM7DANYQ0DAY54CH4HPV4=do-i-need-to-configure-anything-to-create-audience-lists-in-google-ads-based-on-appsflyer-data h_01HA1SM7DA3XF8NBGYGZ0XTB69=im-running-an-app-campaign-why-cant-i-see-data-or-conversion-events-in-the-appsflyer-or-google-ads-dashboard h_01HA1SM7DAY7JNTFSG86A1QGKC=what-do-i-do-if-there-are-multiple-accounts h_01HA1SM7DAYSVMENT91T2BE26Z=what-happens-with-link-ids-created-at-mcc-level-vs-account-level h_01HA1SM7DAK186BRZN970PKPRM=what-is-parallel-tracking additional-information=what-is-needed h_01HA1SM7DAMNG8X22VNWMKBJ8R=what-is-needed h_01HA1SM7DBNAS6DP8G9D8KFHPW=how-do-you-configure-a-campaign-with-android-or-ios-configuration h_01HA1SM7DB16T3RGBVGT5Z9REW=important h_01HA1SM7DBC38CY8AN3EPMMJFW=android-configuration-for-google-ads h_01HA1SM7DBF9KDRNEV25KJHGHN=creating-conversion-recording-installs create-a-conversion-inapp-events=create-a-conversion-in-app-events h_01HA1SM7DBDQVNDQ5GG7X2PJ8K=create-a-conversion-in-app-events h_01HA1SM7DBKKQ9R8MQMQT9GRXV=ios-configuration-for-google-ads google-ads-ios-configuration-app-campaigns=google-ads---ios-configuration-app-campaigns h_01HA1SM7DBNSDFCJA5BP59MMQ2=google-ads---ios-configuration-app-campaigns creating-conversion-recording-installs::6a56eb4b=creating-conversion-recording-installs-1 h_01HA1SM7DBXCT0NS4W50D4ZGEK=creating-conversion-recording-installs-1 google-ads-ios-configuration-sending-inapp-events=google-ads---ios-configuration---sending-in-app-events h_01HA1SM7DBEV9CJTAB5YHRJHYK=google-ads---ios-configuration---sending-in-app-events creating-a-conversion-inapp-events=creating-a-conversion-in-app-events h_01HA1SM7DBCQYSJ3R67F0856QK=creating-a-conversion-in-app-events for-how-long-do-you-keep-google-ads%E2%80%99-userlevel-data=for-how-long-do-you-keep-google-ads--userlevel-data h_01HA1SM7DBFAAV7C4ENA34B7JP=for-how-long-do-you-keep-google-ads--userlevel-data h_01HA1SM7DBA7KK1DXFCE2G0QTP=google-ads-discrepancies h_01HA1SM7DB18BTDKK5BK4949HX=both-ios-and-android h_01HA1SM7DBSTAREA36YWRRRG82=notes h_01HDP2XBSEJVQ5G0MD0V5R05CM=see-also" />

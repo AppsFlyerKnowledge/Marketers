@@ -28,6 +28,8 @@ This section discusses how to set up and create events in the app with Google Ta
 
 When the event is sent, GTM checks to see if there is a tag that is configured to process this event with the help of the event trigger. The event trigger is set to fire the tag whenever a specific event is sent. If a specific event is sent and it has a corresponding trigger, the tag is fired. When the tag is fired, Google Tag Manager collects all the data in the event. Such data includes the AppsFlyer ID,  event name, and event parameters. After collecting all the data, Google Tag Manager sends the event to AppsFlyer.
 
+<div id="creating-event-variables-for-revenue-and-price" />
+
 <Accordion title="Creating event variables for revenue and price">
 
 #### Android
@@ -88,6 +90,8 @@ Objective C Swift
    ```
 
 </Accordion>
+
+<div id="adding-events-in-the-app" />
 
 <Accordion title="Adding events in the app">
 
@@ -365,3 +369,5 @@ The code snippet above checks if this is the first time the app is launched. If 
 > * [Twitter Data Policy](https://business.twitter.com/en/help/ads-policies/introduction-to-twitter-ads/twitter-ads-policies.html)
 > * [Snapchat Data Policy](https://www.snap.com/en-US/privacy/privacy-policy/)
 > * [Pinterest Data Policy](https://policy.pinterest.com/en/privacy-policy)
+
+<div data-zendesk-anchors="01H8H2MH93M1SB9HEQNHDDJZP0=configuring-events-in-the-app 01H8H2MH93D36ZH7788XCMHHV6=creating-event-variables-for-revenue-and-price 01H8H2MH93RNWN6N6EWE5T26V1=android 01H8H2MH93CZ5TACG3MWJ8YRFK=ios 01H8H2MH9340PQCCKB85BQZQEG=adding-events-in-the-app android::eb294e42=android-1 01H8H2MH9357Z5M1DBK4Z9N22P=android-1 01H8H2MH930VDZH5YSWEPTS8BN=sending-install-events-to-firebase android::319436d3=android-2 01H8H2MH938Y980A9KA9BPP44Y=android-2 01H8H2MH932WYSS6Z5NZJ3195X=creating-the-send-event-method 01H8H2MH93H0WKMV5DAN713EY0=sending-the-install-event creating-the-send-event-method::64b5a305=creating-the-send-event-method-1 01H8H2MH93VYXGMM5H6ZQWCFZY=creating-the-send-event-method-1 sending-the-install-event::aeb9cdb7=sending-the-install-event-1 01H8H2MH93VTPZNF51R05QPK7C=sending-the-install-event-1 ios::95ad6e27=ios-1 01H8H2MH93AQE7PKVW4QKD2ARN=ios-1 creating-the-send-event-method::346138b1=creating-the-send-event-method-2 01H8H2MH93NGBRHBDQTX4DKNTY=creating-the-send-event-method-2 sending-the-install-event::aca3c0e3=sending-the-install-event-2 01H8H2MH93SWYFF2KTC1HJ06FF=sending-the-install-event-2 sending-the-install-event::b6997ad3=sending-the-install-event-3 01H8H2MH93Y5J8QH0YBKPQSV5N=sending-the-install-event-3 01H8H2MH93JQBAR6ZTW77HHFQR=warning" />

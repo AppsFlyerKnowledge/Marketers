@@ -50,6 +50,8 @@ Roku is a unique ad network that has ad inventory across both Connected TV (CTV)
 
 **Note:** There are some differences between iOS, Android, and Roku app settings.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 #### General settings
@@ -113,11 +115,15 @@ Map AppsFlyer in-app events to Roku Ads events, sent via postbacks:
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution links aren't relevant for SRNs or Advanced SRNs.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab (for cost, clicks, and impressions)">
 
@@ -125,11 +131,15 @@ Cost integration is not available for Roku Ads at this phase.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue is not available for Roku Ads.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -184,3 +194,5 @@ Agencies working on behalf of advertisers can turn on the Roku Ads integration a
 > 📘 **Warning**
 >
 > Roku Ads account IDs MUST NOT be shared between the advertiser and the agency. If shared, ALL the advertiser's installs are automatically attributed to the agency's dashboard.
+
+<div data-zendesk-anchors="overview=about-roku-ads-attribution 01H7Z13QPBTKZ9BVCMGASYEM0R=roku-attribution-flow setting-up-roku-ads=setting-up-roku-ads-integration-for-advertisers h_01K0P7PHA89T432XNW0C4BZ4VH=general-settings h_01K0P7PHA8X7E7MC7JNVG86JAV=install-attribution reengagement-attribution=re-engagement-attribution h_01K0P7PHA8GR0SYPNKSP4D90AF=re-engagement-attribution h_01K0P7PHA85619R1SM4SR49TQ3=ignore-active-users-for-retargeting crossplatform-attribution=cross-platform-attribution h_01K0P7PHA80KKG06719ZWE8JB0=cross-platform-attribution inapp-events-postbacks=in-app-events-postbacks h_01K0P7PHA89Y8W70NTF40S6PC4=in-app-events-postbacks cost-tab-for-cost-clicks-and-impressions=cost-tab h_01K0P7PHA840N225ABCSGTTCAN=important h_01K0P7PHA8D7WQR02129YADZZP=types-of-permissions-advertisers-can-grant-to-roku-ads setting-up-agencies=setting-up-roku-ads-integration-for-agencies h_01K0P7PHA8MSV6Q13P9ATAX8SJ=agency-limitations h_01K0P7PHA8KXP5H9WXJ1J2VFR2=warning" />

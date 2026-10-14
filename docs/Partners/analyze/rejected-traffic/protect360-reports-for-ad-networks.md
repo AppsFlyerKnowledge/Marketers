@@ -43,6 +43,8 @@ Ad networks can then ingest this network-level data with cross-customer visibili
 
 ## Report types
 
+<div id="blocked-clicks-and-impressions" />
+
 <Accordion title="Blocked clicks and impressions">
 
 This report contains aggregate level data about clicks and impressions that are blocked due to capping or any other reason. 
@@ -83,3 +85,5 @@ This report contains user-level about failed click signatures. Meaning, when ad 
 | is\_blocking\_enabled | Refers to the configuration mode of the [click signature API](/docs/click-signing-for-ad-networks):<ul><li>TRUE for enabled.</li><li>FALSE for report-only.</li><li>Not included in the report for disabled.</li></ul> |
 
 </Accordion>
+
+<div data-zendesk-anchors="report-structure-fieldsdimensions::44afb679=report-structure-fieldsdimensions-1" />

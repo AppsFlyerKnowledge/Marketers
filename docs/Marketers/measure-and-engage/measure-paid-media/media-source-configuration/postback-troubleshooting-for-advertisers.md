@@ -26,6 +26,8 @@ x-zendesk:
 
 Various toggles control different parts of the integration. The state of the toggle could be the reason for not receiving postbacks.
 
+<div id="the-activate-partner-toggle-was-turned-off" />
+
 <Accordion title="Activate partner is turned off">
 
 When the [**Activate partner**](/docs/partner-activation-deactivation) toggle is turned off, conversions aren't attributed and postbacks aren't sent to partners.
@@ -40,9 +42,13 @@ When the [**Activate partner**](/docs/partner-activation-deactivation) toggle is
 
 Another case may be if the [**Activate partner**](/docs/partner-activation-deactivation) toggle is currently turned on but during the time of the event, it was turned off. Use the Audit log to check and see if the partner integration was active at the time of the event:
 
-* From the top bar, open the account menu (email address dropdown) >**Security center** > **Audit log**.
+* <span id="1703758710.321359"></span>From the top bar, open the account menu (email address dropdown) >**Security center** > **Audit log**.
 
 </Accordion>
+
+<div id="1703760110.503549" />
+
+<div id="the-inapp-event-postbacks-toggle-was-turned-off" />
 
 <Accordion title="In-app event postbacks is turned off">
 
@@ -62,6 +68,8 @@ The [**In-app event postbacks**](/docs/in-app-event-postback-configuration) togg
 
 The event could be configured in a way that certain postbacks aren't sent.
 
+<div id="the-event-wasnt-configured" />
+
 <Accordion title="The event isn't configured">
 
 Check that the event is included in the list of in-app events that were configured. If it’s not defined, a postback isn't sent.
@@ -74,6 +82,8 @@ Check that the event is included in the list of in-app events that were configur
 
 </Accordion>
 
+<div id="the-event-was-configured-incorrectly" />
+
 <Accordion title="The event is configured incorrectly">
 
 Check that the [event mapping](/docs/in-app-event-postback-configuration#event-mapping) is correct. Make sure **AppsFlyer event** (the name of the event as received by AppsFlyer from your mobile app or via S2S) matches the **mapped to partner name** (the exact event name used by the partner).
@@ -81,6 +91,8 @@ Check that the [event mapping](/docs/in-app-event-postback-configuration#event-m
 [![in_app_event_postback_mapping_2.png](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)
 
 </Accordion>
+
+<div id="the-event-was-configured-correctly-but-with-a-condition" />
 
 <Accordion title="The event is configured correctly but with a condition">
 
@@ -90,6 +102,8 @@ If a condition is defined for the event, the postback is sent according to the c
 
 </Accordion>
 
+<div id="the-event-was-configured-to-send-postbacks-only-to-the-attributed-partner" />
+
 <Accordion title="The event is configured to send postbacks only to the attributed partner">
 
 Check to see if the in-app event configuration is set to send postbacks to [**This partner only** or to **All media sources, including organic**](/docs/in-app-event-postback-configuration#options-for-sending-postbacks). If it's set to **This partner only**, only the attributed partner gets the postback.
@@ -97,6 +111,8 @@ Check to see if the in-app event configuration is set to send postbacks to [**Th
 [![in_app_event_sending_options.png](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)
 
 </Accordion>
+
+<div id="the-event-occurred-outside-of-the-configuration-window" />
 
 <Accordion title="The event occurred outside of the configuration window">
 
@@ -112,6 +128,8 @@ Note that for [SRNs](/docs/self-reporting-networks-srns), in-app event postbacks
 
 In the following cases, AppsFlyer doesn't send postbacks due to privacy restrictions.
 
+<div id="the-partner-didnt-set-up-advanced-privacy" />
+
 <Accordion title="The partner doesn't support Advanced Privacy or didn't set it up (iOS)">
 
 For iOS, when [Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework#partner-advanced-privacy-switch) is turned on but the partner didn't configure Advanced Privacy on their side or they don't support Advanced Privacy, they won't receive [Advanced Privacy aggregated postbacks](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks).
@@ -120,11 +138,15 @@ For iOS, when [Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framewo
 
 </Accordion>
 
+<div id="media-source-restrictions-on-thirdparty-platforms" />
+
 <Accordion title="Media source restrictions on third-party platforms">
 
 [Some media sources](/docs/discrepancies-between-appsflyer-and-third-party-platforms#postback-restrictions-on-third-party-platforms) restrict sharing data with third parties. AppsFlyer doesn't enable the sharing of user-level data acquired through these media sources with any third-party platforms or services. All installs from such media sources are therefore sent as organic. Note that Meta ads doesn't enable the sharing of any data with third-party platforms.
 
 </Accordion>
+
+<div id="the-sdk-was-set-not-to-share-information-with-the-partner" />
 
 <Accordion title="The SDK was set not to share information with the partner">
 
@@ -135,6 +157,8 @@ For more information see: [Prevent data sharing with third parties](/docs/apply-
 </Accordion>
 
 ## Miscellaneous
+
+<div id="the-postback-was-sent-but-doesnt-show-on-the-partners-platform" />
 
 <Accordion title="The postback was sent but doesn't show on the partner's platform">
 
@@ -148,6 +172,8 @@ In some cases, although AppsFlyer sends postbacks to a partner, they aren't show
 [![postback_reports.JPG](https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png)](https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png)
 
 </Accordion>
+
+<div id="the-event-didnt-occur" />
 
 <Accordion title="The event didn't occur or wasn't sent to AppsFlyer">
 
@@ -171,6 +197,8 @@ If you think the event occurred, check below how to see if it appears in the Act
 
 </Accordion>
 
+<div id="differences-in-time-zones" />
+
 <Accordion title="Differences in timezones">
 
 There may be discrepancies in receiving postbacks due to a difference in time zones between the AppsFlyer platform and the partner's platform. AppsFlyer dashboards and reports display according to the selected timezone.
@@ -182,17 +210,23 @@ There may be discrepancies in receiving postbacks due to a difference in time zo
 
 </Accordion>
 
+<div id="srns-missing-advertising-ids-idfagaid" />
+
 <Accordion title="SRNs missing advertising IDs (IDFA/GAID)">
 
 There are a number of [specific cases for SRNs](/docs/self-reporting-networks-srns#does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid) in which AppsFlyer doesn't send postbacks for installs, app opens or in-app events.
 
 </Accordion>
 
+<div id="media-source-restrictions-on-thirdparty-platforms::40092c14" />
+
 <Accordion title="Media source restrictions on third-party platforms">
 
 [Some media sources](/docs/discrepancies-between-appsflyer-and-third-party-platforms#postback-restrictions-on-third-party-platforms) restrict sharing data with third parties. AppsFlyer can't share user-level data acquired through these media sources with any third-party platforms or services. All installs from such media sources are therefore sent as organic. Note that Meta ads doesn't share any data with third-party platforms.
 
 </Accordion>
+
+<div id="advanced-privacy-postbacks" />
 
 <Accordion title="Advanced Privacy postbacks">
 
@@ -203,3 +237,5 @@ When Advanced Privacy (AP) is turned on, user-level data for non-consenting user
 > 📘 **See also**
 >
 > [Postback troubleshooting for ad networks](/docs/postback-troubleshooting-for-ad-networks)
+
+<div data-zendesk-anchors="activation-toggles=check-the-integration-toggles h_01H9FT385FY1QJC6M2YVMZF2NC=check-the-integration-toggles h_01H9FT385FJ0W62NB6FBB6ASKP=the-activate-partner-toggle-was-turned-off h_01H9FT385FKK7VQ293HH9RANBP=the-inapp-event-postbacks-toggle-was-turned-off event-configuration-issues=check-the-event-configuration h_01H9FT385FW71JV2KKZ22TP6TN=check-the-event-configuration h_01H9FT385FHFX4PNRQVRXX8A5X=the-event-wasnt-configured h_01H9FT385FE4GCP9D5XCNZ1FAR=the-event-was-configured-incorrectly h_01H9FT385FTT97PJ9NN09K0X9F=the-event-was-configured-correctly-but-with-a-condition h_01H9FT385FDEC21CAZ7V9BBT7M=the-event-was-configured-to-send-postbacks-only-to-the-attributed-partner h_01H9FT385G8HSVJWWGKSRKT381=the-event-occurred-outside-of-the-configuration-window h_01H9FT385G84E2A1J64VWG8H4Z=privacy-restrictions h_01H9FT385G3ECF0PXCE6S2GD5A=the-partner-didnt-set-up-advanced-privacy h_01H9FT385G9YMX9BAEYY0XQR4C=media-source-restrictions-on-thirdparty-platforms h_01HG0YAHWJ565C7BAXAXT75ACB=the-sdk-was-set-not-to-share-information-with-the-partner h_01H9FT385GSWRPKEHKJ4HXCX01=miscellaneous h_01H9FT385GTSH1K93WNCARY2BA=the-postback-was-sent-but-doesnt-show-on-the-partners-platform h_01H9FT385G5HK6N2JEE8C6S245=the-event-didnt-occur h_01H9FT385GPVT9WAC6ZTPK6D10=differences-in-time-zones h_01H9FT385G8RXJD25KAQJ28TF6=srns-missing-advertising-ids-idfagaid h_01H9FT385GAYCY615W7M88XJT3=media-source-restrictions-on-thirdparty-platforms::40092c14 h_01JK86ZFXJGPVYJCAAVAY6F4YD=advanced-privacy-postbacks h_01HE7R6G699RG30ZSSQF02AK5Y=see-also" />

@@ -46,6 +46,8 @@ For each scenario, you can test installs and in-app events. In regards to in-app
 
 Complete the prerequisites and then perform the test procedures in the sections that follow. The test sections each contain a table you can use to record your test results.
 
+<div id="prerequisites" />
+
 <Accordion title="Prerequisites">
 
 Complete the prerequisites before beginning to execute the test procedure.
@@ -61,6 +63,8 @@ Complete the prerequisites before beginning to execute the test procedure.
 | Test using a device running iOS 14.5+ |
 
 </Accordion>
+
+<div id="test-advanced-privacy-off" />
 
 <Accordion title="Test—Advanced Privacy off">
 
@@ -109,6 +113,8 @@ Complete the prerequisites before beginning to execute the test procedure.
 
 </Accordion>
 
+<div id="test-advanced-privacy-on" />
+
 <Accordion title="Test—Advanced Privacy on">
 
 **To trigger postbacks:**
@@ -155,6 +161,8 @@ Complete the prerequisites before beginning to execute the test procedure.
 </Accordion>
 
 ## Supplementary information and procedures
+
+<div id="about-the-partner-integrations-test-app" />
 
 <Accordion title="About the Partner Integrations test app">
 
@@ -239,3 +247,5 @@ https://app.appsflyer.com/id1543229303?pid=pitestap_int&c=c-test-2020-12-20
 | af\_status is Organic | Check that the device iOS version is in accordance with that stated in the prerequisites.<br /><br />Check the format of the attribution link, especially the value of **pid**. |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJR5YDW9ENA1B1AC1DQVX8SF=ios-integration-testing h_01HJR5YDW92MXP9DDBX9C1928V=testing-scope h_01HJR5YDW9Q7B10MXB1V4AKH2D=test-scenario-combinations h_01HJR5YDW9AGY148E1ZD97JFRB=testing h_01HJR5YDW9SGN9KH63CPZ54RM5=prerequisites test%E2%80%94advanced-privacy-off=test-advanced-privacy-off h_01HJR5YDWA20EQT5RE1EJ7QK2X=test-advanced-privacy-off advanced-privacy-off%E2%80%94test-results=advanced-privacy-offtest-results h_01HJR5YDWAEAR22NPXF8ZD5QX6=advanced-privacy-offtest-results test%E2%80%94advanced-privacy-on=test-advanced-privacy-on h_01HJR5YDWAY6B55BFQ1B0WJEHR=test-advanced-privacy-on advanced-privacy-on%E2%80%94test-results=advanced-privacy-ontest-results h_01HJR5YDWAK3DZ1Q0W3TSR7ZKZ=advanced-privacy-ontest-results h_01HJR5YDWA74Q46F6XKY5J375C=supplementary-information-and-procedures h_01HJR5YDWASJWC1NGNABWR1VW5=about-the-partner-integrations-test-app h_01HJR5YDWA0WXWN5B5VNPK40FY=attribution-link h_01HJR5YDWA73BQB478D6N0R8GP=set-advanced-privacy h_01HJR5YDWAGZ5XMQJG1KX3J6CP=test-app-integrated-in-your-account h_01HJR5YDWAXRD7DVHTZPJCFM56=troubleshooting" />

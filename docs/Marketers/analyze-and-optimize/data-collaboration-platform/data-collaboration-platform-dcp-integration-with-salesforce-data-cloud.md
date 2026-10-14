@@ -77,3 +77,5 @@ Access the **Sources** tab using the following methods:
 3. **Configure source schema:** After a table or view is selected, the field names and types are auto-populated. You can edit the field types or remove unwanted fields by selecting the bin icon at the end of the field row.  
    **Note:** Make sure at least one field type serves as an identifier. For example, CUID, Platform ID, AppsFlyer ID, and SHA256 hashed ID.
 4. Click **Save**. The new source is displayed in the list of all existing sources.
+
+<div data-zendesk-anchors="h_01HPKB2ERPGD2PS4JBSDGYW3MC=before-you-begin 01HRW9TK3YZV32CXRM6Q2HCHS4=set-up-the-integration 01HRSFKVQNJ264M16A9X9AEP53=note h_01HRSDCVMHQ6C5R6R4S5XRT5KQ=create-a-salesforce-data-cloud-connection h_01HRSG0P4Q38WHGQWBY3S3D11W=create-a-salesforce-data-cloud-source h_01HRVPJ801B0VC879APZCGKDNE=note-1" />

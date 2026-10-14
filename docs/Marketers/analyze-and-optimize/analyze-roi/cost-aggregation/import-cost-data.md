@@ -304,6 +304,8 @@ The following table lists all possible Cost Import error messages and correspond
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -329,3 +331,5 @@ The following table lists all possible Cost Import error messages and correspond
 >
 > * [Attribution link structure and parameters](/docs/about-link-structure-and-parameters)
 > * Matched rows
+
+<div data-zendesk-anchors="ad-spend-import=overview 01H7VYHJ2BN3EFDC4J3YN3P4WM=overview h_01HYZBZMNTM0244V4PN6AJ45KR=procedures h_01HYZD52VRTMGJ0BFBFJNGQ50E=prepare-csv-file-with-cost-data ad-spend-csv-schema=csv-schema 01H7VYHJ2CWF2HWHCTZDEZHT29=csv-schema h_01HYZEDYKCAPTK1WD6VGWTA6PQ=csv-format-and-rules h_01HYZD52VRWK7D6Q0YBW9SEFK6=upload-file h_01HYZKN3YEPFG8525GFQD0PC5K=email-file h_01HZ4NVKPVHV1KT12V59MZBGPZ=dashboard h_01HZ1SXQQ2CHG77KX96D74J6TQ=cost-import-dashboard h_01HZ4NVKPVSM5ZTG76HJF3GW4J=matched-rows h_01HYZFNKFEQW13F0BWAG3FZF69=additional-information h_01HYZFNKFE3AVH1GNGDT511M5B=using-excel-or-google-sheets-to-prepare-csv-file formatting-date-cells-in-excel=format-date-cells 01H7VYHJ2DSWC2J1NY04Q9Q620=format-date-cells formatting-spend-cells-in-excel=formatting-spend-cells 01H7VYHJ2DA9JM4Q33V2TF7BD3=formatting-spend-cells h_01HYZJJVC463C141AQ3VY5Z0TQ=verify-content-format h_01HYZFNKFEXK4CYRBZ3ABRCWNJ=token-for-email-import h_01HZ1XV6ZX5FAN9JJPQM9RYD3Z=cost-import-permissions-for-ad-networks h_01HZ4PBGAG9R9JMHPXVQC1GX3V=troubleshooting-traits-and-limitations h_01HZ2859J5P6MFKACKBK46J6GP=error-messages-and-solutions h_01HZ27W0409NF4Y6RNT8WPW8HP=traits-and-limitations h_01KZ8QYNGH1Q6QXQDC14QG96FZ=see-also" />

@@ -28,6 +28,8 @@ x-zendesk:
 
 **Note:** These steps are divided into tabs for ease of reading. All steps must be completed in order to create the report.
 
+<div id="perform-preliminary-steps" />
+
 <Accordion title="Perform preliminary steps">
 
 1. Go to the **Reports** tab of the **DCR.**
@@ -47,6 +49,8 @@ x-zendesk:
        * all other symbols or special characters
 
 </Accordion>
+
+<div id="select-sources" />
 
 <Accordion title="Select sources">
 
@@ -71,6 +75,8 @@ Specify the data to be used for the report:
 When defining report structure, you can choose to use data from any of the [custom sources you have set up](/docs/data-clean-room-working-with-sources).
 
 </Accordion>
+
+<div id="join-sources" />
 
 <Accordion title="Join sources">
 
@@ -110,6 +116,8 @@ If the report uses more than one custom source, only one of them needs to be map
 > **✓** This mapping scheme works to match data among all the sources since each custom source is mapped either directly or indirectly to the attribution data key identifier **af\_id.**
 
 </Accordion>
+
+<div id="determine-treatment-of-multiple-matching-events" />
 
 <Accordion title="Determine treatment of multiple matching events">
 
@@ -265,6 +273,8 @@ By default, attribution data dimensions are eliminated in reverse order from the
 
 </Accordion>
 
+<div id="select-metrics" />
+
 <Accordion title="Select metrics">
 
 Metrics are the numeric data you have collected with respect to an app user (examples might include revenue, number of app opens, LTV, etc.) and can be any **numeric** data field from your sources that you have categorized as a metric.
@@ -395,3 +405,5 @@ In addition to dimensions from your custom sources, the following attribution da
 ¹ *For re-engagements and re-attributions, reports will show these fields as empty.*
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HA9W4BCJSS2803JHV9K5KVP8=creating-an-attribution-data-report h_01HA9W4BCJX9PJ2E4ADDC58GJ1=perform-preliminary-steps h_01HA9W4BCJNB64K3GZAKM7G0SS=select-sources h_01HA9W4BCJD51WM7504F94009R=attribution-data-sources h_01HA9W4BCJNRBD1NSWAH92B85V=custom-sources h_01HA9W4BCJW56NG637AZNP0DW0=join-sources h_01HA9W4BCJ6A5EVFVR6G2SHEQD=what-is-a-key-identifier h_01HA9W4BCJ2GAZ96FHNN3HP6BY=important h_01HA9W4BCJ6ZT4DSE3J5364D2C=mapping-schemes-directindirect h_01HA9W4BCJKA8AWQGEHGQ5JT4P=example h_01HA9W4BCJ6ZM47HQMARQ50ZQ1=determine-treatment-of-multiple-matching-events h_01HA9W4BCJE9ABACTWWTNJXVVQ=note h_01HA9W4BCJ6FPCNP8K8D2CR1ST=matching-all-events h_01HA9W4BCJ99Z4A16N05799VZS=matching-a-single-event 01JFZ2GJTJ566AWS3Z3KTWNMVE=note-1 h_01HA9W4BCKDVYTG08M2CWBWYC3=select-dimensions h_01HA9W4BCKWCDWB4W0HZM4Z6E7=selecting-report-dimensions %5Boptional%5D-customizing-dimension-display-names=optional-customizing-dimension-display-names h_01HA9W4BCKEW1Z25ZXS9EXZYSA=optional-customizing-dimension-display-names h_01HA9W4BCKA4248PEYNWZS87EW=preserving-privacy-while-grouping-by-dimension-regrouping h_01HA9W4BCK41W87486KG4RAAX8=regrouping-example %5Boptional%5D-managing-dimension-priority=optional-managing-dimension-priority h_01HA9W4BCKHABH7K80DKAQDDTR=optional-managing-dimension-priority h_01HA9W4BCK1G0A2HTYRDQTMF5B=select-metrics %5Boptional%5D-customizing-metric-display-names=optional-customizing-metric-display-names h_01HA9W4BCKZTAP4AWMNJKEKX2E=optional-customizing-metric-display-names %5Boptional%5D-select-identifiers-to-count=optional-select-identifiers-to-count h_01HA9W4BCK5Y97RFYEMT24BABV=optional-select-identifiers-to-count h_01HA9W4BCKE1P7TBJANN0PD03D=set-the-report-destination-and-save-the-report h_01HA9W4BCK3GX1KMVAXN5ZKA3A=when-does-the-report-run h_01HA9W4BCK0VHS90ZXX00BF80N=reference h_01HA9W4BCMAYC661HFNRY3HWY2=available-attribution-data-dimensions" />

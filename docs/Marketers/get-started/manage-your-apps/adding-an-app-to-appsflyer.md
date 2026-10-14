@@ -74,6 +74,8 @@ See [all the steps](/docs/getting-started-onboarding-for-marketers) for completi
 
 Select the app platform and enter the required details, as listed below:
 
+<div id="android-androidtv-fire" />
+
 <Accordion title="Android, AndroidTV, Fire">
 
 Use this option for the following platforms:
@@ -87,10 +89,12 @@ Use this option for the following platforms:
 | Google Play status | When to use it | Required details |
 | --- | --- | --- |
 | <span id="in-store"></span>In store | Your app is currently available in the Google Play store | **Google Play URL** (copied from Google Play)<ul><li>**Example:** https://play.google.com/store/apps/details?id=com.appsflyer.adNetworkTest&hl=en&gl=GB</li><li>**Important!**<ul><li>If your app is **not** listed in the US Google Play store:<ul><li>The URL must include the country code of any store in which it is listed, as shown in the example above: **&gl=`{country_code}.** If you do not include the country code, you will receive an error when trying to add the app.</li><li>The language code is optional: **&hl={language_code}`**</li></ul></li><li>If your store **is** listed in the US Google Play store, both the country and language codes are optional.</li></ul></li></ul> |
-| Pending approval/not published | Your app is not yet published or is pending approval from Google Play | **Android package name**<ul><li>**Example:** com.appsflyer.adNetworkTest</li><li>**Note:** Package name is case sensitive</li><li>**Format:**<ul><li>At least two segments (one or more dots)</li><li>Each segment must start with a letter</li><li>All characters must be alphanumeric or underscore (a-z, A-Z, 0-9, or \_)</li><li>Maximum length of 100 characters</li></ul></li></ul>For more information, see [Android developer documentation](https://developer.android.com/studio/build/application-id) |
-| 3rd-party store/out-of-store | Your app is in an Android app store other than Google Play, and/or it can be downloaded from a location other than an app store | <ul><li>**Android package name:** For detailed requirements, see previous row.</li><li>**App URL:** (copied from the 3rd-party app store or out-of-store location)</li><li>**Channel name: (optional)** a unique name you set in the AndroidManifest.xml of the individual APK prepared for that store/location, e.g. my\_apk. The name must be:<ul><li>case-sensitive</li><li>identical to the name you entered in [the **Channel name** field when you added the app](/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app).</li></ul></li></ul>```<br />&lt;application><br />...<br /><br />...<br />&lt;/application><br />```<br /><br />Note<br /><br /><br />**Note**<br />Using the channel parameter for multi-store attribution is not recommended. For a simpler and more standardized implementation, use the af\_store parameter instead.<br /><br /><br /><br /><br />**Important!**<br />If your app is available from more than one source (in other words, any combination of Google Play, 3rd-party stores, or out-of-store locations), it is vital to consider the options for [setting up multi-store Android attribution](/docs/set-up-multi-store-android-attribution). |
+| <span id="pending-approval-not-published"></span>Pending approval/not published | Your app is not yet published or is pending approval from Google Play | **Android package name**<ul><li>**Example:** com.appsflyer.adNetworkTest</li><li>**Note:** Package name is case sensitive</li><li>**Format:**<ul><li>At least two segments (one or more dots)</li><li>Each segment must start with a letter</li><li>All characters must be alphanumeric or underscore (a-z, A-Z, 0-9, or \_)</li><li>Maximum length of 100 characters</li></ul></li></ul>For more information, see [Android developer documentation](https://developer.android.com/studio/build/application-id) |
+| <span id="third-party-store-out-of-store"></span>3rd-party store/out-of-store | Your app is in an Android app store other than Google Play, and/or it can be downloaded from a location other than an app store | <ul><li>**Android package name:** For detailed requirements, see previous row.</li><li>**App URL:** (copied from the 3rd-party app store or out-of-store location)</li><li>**Channel name: (optional)** a unique name you set in the AndroidManifest.xml of the individual APK prepared for that store/location, e.g. my\_apk. The name must be:<ul><li>case-sensitive</li><li>identical to the name you entered in [the **Channel name** field when you added the app](/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app).</li></ul></li></ul>```<br />&lt;application><br />...<br /><br />...<br />&lt;/application><br />```<br /><br />Note<br /><br /><br />**<span id="h_01KRB930DZ2NRYBZSERSG7WB3A"></span>Note**<br />Using the channel parameter for multi-store attribution is not recommended. For a simpler and more standardized implementation, use the af\_store parameter instead.<br /><br /><br /><br /><br />**<span id="01H815FE641Q6N5JY5846QE59Y"></span>Important!**<br />If your app is available from more than one source (in other words, any combination of Google Play, 3rd-party stores, or out-of-store locations), it is vital to consider the options for [setting up multi-store Android attribution](/docs/set-up-multi-store-android-attribution). |
 
 </Accordion>
+
+<div id="ios-tvos-macos" />
 
 <Accordion title="ioS, tvOS, MacOS">
 
@@ -102,10 +106,12 @@ Use this option for the following platforms:
 
 | App Store status | When to use it | Required details |
 | --- | --- | --- |
-| In store | Your app is currently available in the App Store | **App Store URL** (copied from the App Store)<ul><li>**Example:** https://apps.apple.com/us/app/partner-integrations/id1543229303</li><li>**Notes:**<ul><li>Be sure that the URL includes the 2-letter country code of the store (for example, **us** in the URL above)</li><li>An app added to the App Store prior to June 14, 2019, may contain itunes.apple.com in its URL (instead of apps.apple.com).</li></ul></li></ul> |
-| Pending approval/not published | Your app is not yet published or is pending approval from the App Store | **Country** of the App Store to which the app has been submitted<br /><br />**App ID** assigned by the App Store, without the prefix id<ul><li>**Example:** 1543229303</li><li>**Format:** 9 or 10 numeric characters, 0-9</li></ul> |
+| <span id="in-store::f93cfa22"></span>In store | Your app is currently available in the App Store | **App Store URL** (copied from the App Store)<ul><li>**Example:** https://apps.apple.com/us/app/partner-integrations/id1543229303</li><li>**Notes:**<ul><li>Be sure that the URL includes the 2-letter country code of the store (for example, **us** in the URL above)</li><li>An app added to the App Store prior to June 14, 2019, may contain itunes.apple.com in its URL (instead of apps.apple.com).</li></ul></li></ul> |
+| <span id="pending-approvalnot-published"></span>Pending approval/not published | Your app is not yet published or is pending approval from the App Store | **Country** of the App Store to which the app has been submitted<br /><br />**App ID** assigned by the App Store, without the prefix id<ul><li>**Example:** 1543229303</li><li>**Format:** 9 or 10 numeric characters, 0-9</li></ul> |
 
 </Accordion>
+
+<div id="windows-xbox" />
 
 <Accordion title="Windows">
 
@@ -260,6 +266,8 @@ Each legacy **Web Dev Key can be reused for only one** new Web app.
 
 </Accordion>
 
+<div id="roku" />
+
 <Accordion title="Roku">
 
 **App name:** Channel name copied from the [Roku Developer Dashboard](https://developer.roku.com/developer).
@@ -297,6 +305,8 @@ For more information, see the “id” field in the [Amazon Vega OS documentatio
 
 </Accordion>
 
+<div id="vizio-smartcast" />
+
 <Accordion title="Vizio SmartCast">
 
 **App name:** The name you have chosen for your app.
@@ -304,6 +314,8 @@ For more information, see the “id” field in the [Amazon Vega OS documentatio
 **App ID:** The ID of the app, as recognized by Vizio. Starts with `vizio.`, followed by 2-10 characters from: `A-Z` `a-z` `0-9.``-`. If you need to confirm the app ID, check with your Vizio representative.
 
 </Accordion>
+
+<div id="samsung-tizen" />
 
 <Accordion title="Samsung Tizen">
 
@@ -325,6 +337,8 @@ For example, if your bundle ID is "G15147002586", the URL of your page will be "
 
 </Accordion>
 
+<div id="lg-webos" />
+
 <Accordion title="LG WebOS">
 
 **App name:** The name you have chosen for your app.
@@ -340,6 +354,8 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 </Accordion>
 
+<div id="playstation" />
+
 <Accordion title="PlayStation">
 
 **App name:** The name you have chosen for your app.
@@ -350,6 +366,8 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 </Accordion>
 
+<div id="vidaa" />
+
 <Accordion title="Vidaa">
 
 **App name:** The name you have chosen for your app.
@@ -357,6 +375,8 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 **App ID:** The Vidaa app ID. Maximum length of 50 characters.
 
 </Accordion>
+
+<div id="steam" />
 
 <Accordion title="Steam">
 
@@ -368,6 +388,8 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 </Accordion>
 
+<div id="meta-quest" />
+
 <Accordion title="Meta Quest (Oculus)">
 
 **App name:** The name you have chosen for your app.
@@ -378,6 +400,8 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 </Accordion>
 
+<div id="nintendo-switch" />
+
 <Accordion title="Nintendo Switch">
 
 **App name:** The name you have chosen for your app.
@@ -387,6 +411,8 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 * **Example:** 70010000012345
 
 </Accordion>
+
+<div id="xbox" />
 
 <Accordion title="Xbox">
 
@@ -400,6 +426,8 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 </Accordion>
 
+<div id="epic-games" />
+
 <Accordion title="Epic Games">
 
 **App name:** The name you have chosen for your app.
@@ -409,6 +437,8 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 ![](https://files.readme.io/81d1f043c8a7ef5e367a62d564f8c6241c6057445363b21286e3f72ad4210cf6-33198275508497.png)
 
 </Accordion>
+
+<div id="native-pc" />
 
 <Accordion title="Native PC">
 
@@ -485,17 +515,23 @@ Once your pending app goes live, AppsFlyer will detect and automatically update 
 
 Find solutions for some common issues:
 
+<div id="app-wasnt-added" />
+
 <Accordion title="App wasn't added">
 
 If this error occurs, contact your CSM or send an email to [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
 </Accordion>
 
+<div id="app-not-in-the-store" />
+
 <Accordion title="App not in the store">
 
 Confirm that you have copied the store URL correctly, using the appropriate app name/ID.
 
 </Accordion>
+
+<div id="cant-access-marketplace" />
 
 <Accordion title="Can't access marketplace">
 
@@ -507,11 +543,15 @@ This error sometimes occurs when adding an Android app from a non-US store. Foll
 
 </Accordion>
 
+<div id="something-went-wrong" />
+
 <Accordion title="Something went wrong. Please try again.">
 
 One possible reason for this error is trying to add an Android app without a country code (for apps **not** listed in the US Google Play Store). See full details for resolving this issue [above](/docs/adding-an-app-to-appsflyer#in-store).
 
 </Accordion>
+
+<div id="my-ios-app" />
 
 <Accordion title="My iOS app was removed from the App Store. Why am I still seeing installs?">
 
@@ -521,8 +561,12 @@ This happens because users can reinstall an app via the operating system if it p
 
 ## Other information
 
+<div id="product-line" />
+
 <Accordion title="Product Line">
 
 You can add or remove apps from a Product Line. For more information on Product Lines and what they offer, [see here](/docs/product-line-group-apps-for-cross-platform-attribution).
 
 </Accordion>
+
+<div data-zendesk-anchors="01H8Y09SSKZS2RHM35JT16ESKM=overview 01H8Y0K9EHWH05DB5K02ASJG11=entering-the-wizard-for-adding-an-app 01H8F2TENNWXADKVZFHY9SE8JC=note 01H8ECFB7V0DCNE0ZKPZ2GCVMP=adding-an-app 01H81661SR41SQFZZ0AW6K2EDM=note-1 01H815FE64VZZS9WGJSC8VY74D=enter-app-details 01H815FE64CXEHWTV40NVYQHGJ=android-androidtv-fire 01H815FE64X0SPA71TBQ9T4ZVB=ios-tvos-macos 01H815FE64ZZA2N1XQFBRXVF41=windows-xbox 01H815FE64XZKDJW1CX5R1JE1T=web-pba 01H815FE646GWA7KJ83KTGHH05=note-2 01H815FE65R1Z06TJR0DNC8PFY=important h_01KGEPG8V7ZZ6V2EYYPES0QM77=web h_01KGPM33BA6AJSX32CTN808AXM=before-you-begin h_01KGPM3GTYJJ0ARD3R1XHVAQ8F=to-add-a-web-app h_01KGPM5TTNSECSWEAQY5VH7DTY=note-3 01H815FE65X37H40AN99EZJ940=roku h_01KDJP1G4QZHAKH13M5D3CD793=amazon-vega-os 01H815FE654W6D4FCANR1DET8A=vizio-smartcast 01H815FE65J6T610QQXWJS0CJS=samsung-tizen 01H815FE65CRW81AD1006KHGV4=lg-webos 01H815FE65ESQZ56C8B4HG9P8M=playstation 01H815FE65483DV8MD4STH3QTR=vidaa 01H815FE655PZS1H9YW95X1R53=steam 01H815FE655XP075WYRVVFKD4F=meta-quest 01H815FE65XJEVHNT45SHGWJS4=nintendo-switch 01H815FE6598PD87PNBE7MFEQ8=xbox 01H815FE658WJCB1ZCPGAD4GGS=epic-games 01H815FE652P3HCWY2PEDJJARM=native-pc 01H815FE65AWE8VKV9FYJ7N8MV=enter-additional-information-not-applicable-to-web-apps h_01HHCFD94K6PGQRED6Z6KXKRQF=select-currency 01H815FE65X7BCFKH1EEFA91GQ=important-1 h_01HHCFDE25S92GZ9TPGQW4PXHV=select-timezone h_01HMNSSBP2EFXCVW290MKW1EFV=note-4 h_01HHCFDRNFDERZZV3TT8BVXMB4=define-app-audience h_01H9MYF17VNBETQ0HS745EJ85H=note-5 h_01HR3Z81NXCAZKK26HWCN5VD9D=manage-your-apps-in-bulk-via-api h_01HR3ZJW7YD4B8WV0NW9MX6EVP=note-6 add-debug-or-testing-app=add-a-debug-or-testing-app h_01K2F8JX66F614HF8D5MWQ26P7=add-a-debug-or-testing-app ios-dummy-app-id-note=note-7 h_01K2F8JX662XEY0A47DZG6DHWQ=note-7 01H815FE65MYPABC3DTVEMA8E9=about-pending-apps 01H815FE655HS8EA4R00D0VCYD=troubleshooting 01H815FE65V2GYP0Q612512DE0=app-wasnt-added 01H815FE65A0HPTVVCT42QQA6M=app-not-in-the-store 01H815FE65EN3PBSH5BKRGNNXD=cant-access-marketplace 01H815FE65FR4ATDA4CVX2FW9N=something-went-wrong h_01JNK9HB2ZWQ78XK9B33QWHV49=my-ios-app h_01K7KSRWCB1Y89T21JFJR42VAJ=other-information h_01K7KSPDSSG8CRCQB5V545Y12Z=product-line" />

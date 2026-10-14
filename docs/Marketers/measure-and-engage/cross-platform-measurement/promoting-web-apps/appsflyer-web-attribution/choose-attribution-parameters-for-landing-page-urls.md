@@ -58,6 +58,8 @@ AppsFlyer evaluates URL parameters independently for each reporting field (such 
 
 Web Performance Measurement checks the priority order for each field individually. If a parameter from the higher-priority PID class is not present for a specific attribute, the system automatically falls back to the corresponding parameter in the UTM class to determine the correct value for that field.
 
+<div id="scenario-a-url-with-pid-class-only-appsflyer-reporting" />
+
 <Accordion title="Scenario A. URL with PID class only (AppsFlyer reporting)">
 
 Use the PID class when AppsFlyer reporting is your primary goal.
@@ -72,6 +74,8 @@ www.website.com?pid=facebook_int&c={{campaign.name}}&af_c_id={{campaign.id}}
 
 </Accordion>
 
+<div id="scenario-b-url-with-utm-class-only-fallback" />
+
 <Accordion title="Scenario B. URL with UTM class only (fallback)">
 
 If `pid` is missing, AppsFlyer falls back to the UTM class.
@@ -85,6 +89,8 @@ If `pid` is missing, AppsFlyer falls back to the UTM class.
 **Result**: AppsFlyer identifies the media source using `utm_source` and the campaign using `utm_campaign`.
 
 </Accordion>
+
+<div id="scenario-c-url-with-both-pid-and-utm-classes" />
 
 <Accordion title="Scenario C. URL with both PID and UTM classes">
 
@@ -116,6 +122,8 @@ www.website.com?utm_source=facebook&c=summer_sale
 
 ## Other Best Practices
 
+<div id="keep-parameter-values-in-a-consistent-case" />
+
 <Accordion title="Keep parameter values in a consistent case">
 
 Parameter values are **case-sensitive**. For example, `utm_source=channel1` and `utm_source=CHANNEL1` are treated as **different media sources**.
@@ -123,6 +131,8 @@ Parameter values are **case-sensitive**. For example, `utm_source=channel1` and 
 Best practice: Define a casing convention (lowercase is common) and apply it across all URLs.
 
 </Accordion>
+
+<div id="use-question-marks-only-once" />
 
 <Accordion title="Use question marks only once">
 
@@ -142,6 +152,8 @@ Incorrect:
 
 </Accordion>
 
+<div id="don-t-use-anchor-signs" />
+
 <Accordion title="Don’t use anchor signs (#)">
 
 Don’t use anchor signs (`#`) in the URL.
@@ -149,3 +161,5 @@ Don’t use anchor signs (`#`) in the URL.
 Why: parameters after `#` may not load and may not be recorded by the web SDK.
 
 </Accordion>
+
+<div data-zendesk-anchors="about-website-attribution-urls=about-url-attribution-parameter-classes h_01KGMRXNWGXQ3CH5XGSREV6Z3R=about-url-attribution-parameter-classes h_01KGMRXNWG88REW1CVJ4XMYFHQ=supported-pid-and-utm-parameters h_01KGMRXNWGP1SFBWE3KG6VRZ9V=choose-the-right-attribution-parameters h_01KGMRXNWGT9MS799QH9EP29XR=scenario-a-url-with-pid-class-only-appsflyer-reporting h_01KGMS1RMN3F1D0Q7HDZMGG19E=example h_01KGMRXNWG0T3YCK0RPKX4B3BT=scenario-b-url-with-utm-class-only-fallback example::4f5c28b5=example-1 h_01KGMS215ARDSY6NFQ8VEF6C2Y=example-1 h_01KGMRXNWGZH2ZBP9XR8C8TNFN=scenario-c-url-with-both-pid-and-utm-classes h_01KGMS10B1QCRJ5N28FBNEEKR2=example-1-overlapping-parameters h_01KGMS17B500RPGHSKJ1AJSYH8=example-2-mixed-parameter-classes h_01KGMRXNWGVJY55M83FVMKBP1X=other-best-practices h_01KGMRXNWG9S03GGBDXPN34DDM=keep-parameter-values-in-a-consistent-case h_01KGMRXNWGEF9D0ZH5M81RP0PH=use-question-marks-only-once don%E2%80%99t-use-anchor-signs-=don-t-use-anchor-signs h_01KGMRXNWGX6HA0R9X3VC2WFXV=don-t-use-anchor-signs" />

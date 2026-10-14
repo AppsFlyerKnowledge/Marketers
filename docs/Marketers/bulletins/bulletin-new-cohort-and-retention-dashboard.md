@@ -28,6 +28,8 @@ x-zendesk:
 | **Where** | [Cohort dashboard](/docs/cohort-and-retention-dashboard) (now called Cohort and Retention dashboard) |
 | **What you must know** | <ul><li>Retention dashboard will be deprecated (date to be decided).</li><li>We recommend using the new and improved Cohort and Retention dashboard.</li><li>For those used to using the old Cohort dashboard, please be aware that as one of the improvements to the dashboard, the old requirement to select a metric and function has largely been replaced. Now, except in a few cases, you only need to select a metric. You can use the table in the mapping section that follows to help you align your previous cohort reports in the new UI.</li></ul> |
 
+<div id="mapping-metrics-from-the-old-cohort-dashboard-ui-to-the-new-ui" />
+
 <Accordion title="Mapping metrics from the old cohort dashboard UI to the new UI">
 
 | Previous metric | Previous function | Previous "per user" | New metric | New function |
@@ -52,3 +54,5 @@ x-zendesk:
 | InApp event name | eCPA | N/A | InApp event name | eCPA |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HK255ASJX5VPV9DDZNWQ1KQW=mapping-metrics-from-the-old-cohort-dashboard-ui-to-the-new-ui" />

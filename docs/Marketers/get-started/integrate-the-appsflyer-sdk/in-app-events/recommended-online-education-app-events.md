@@ -85,6 +85,8 @@ When the user completes the signup process
 
 </Accordion>
 
+<div id="tutorial-completion-af_tutorial_completion" />
+
 <Accordion title="Tutorial completion (af_tutorial_completion)">
 
 **Purpose**
@@ -144,6 +146,8 @@ When the user lands on the thank you page after a successful purchase
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
+<div id="complete-exercise-complete_excercise" />
+
 <Accordion title="Complete exercise (complete_excercise)">
 
 **Purpose**
@@ -162,6 +166,8 @@ When the user completes an exercise
 | exercise\_name | Name of the exercise | 2 |
 
 </Accordion>
+
+<div id="course-completed-course_completed" />
 
 <Accordion title="Course completed (course_completed)">
 
@@ -182,6 +188,8 @@ When the user completes a course
 
 </Accordion>
 
+<div id="certificate-issued-certificate_issued" />
+
 <Accordion title="Certificate issued (certificate_issued)">
 
 **Purpose**
@@ -200,3 +208,5 @@ When the user is issued a certificate
 | certificate\_received | Whether the certificate was issued | yes |
 
 </Accordion>
+
+<div data-zendesk-anchors="online-education=-online-education h_01HGTAYQ9V4Z5YEWTNCZPVMVMF=-online-education h_01HGTAYQ9VJ6GS1XVQPG198C8Z=important h_01HGTAYQ9VS0DYFSFNEPDCDVTG=recommended-structures-for-predefined-events h_01HGTAYQ9VX44FA5HHBT6DGA2R=login-af_login h_01HGTAYQ9VR78MHTJZFVFCKCV4=complete-registration-af_complete_registration h_01HGTAYQ9VE8ZBF1DJ2AAA1HFF=tutorial-completion-af_tutorial_completion h_01HGTAYQ9VSXMR0J1T0KN6WK2G=purchase-af_purchase h_01HGTAYQ9V93HET4AZ7XGE0E3V=recommended-structures-for-custom-events h_01HGTAYQ9VBZZJ5TC1W2S0MK3P=complete-exercise-complete_excercise h_01HGTAYQ9WQJBBEYKDJ8DP9E31=course-completed-course_completed h_01HGTAYQ9WVXX20FNDZWHGDNZ2=certificate-issued-certificate_issued" />

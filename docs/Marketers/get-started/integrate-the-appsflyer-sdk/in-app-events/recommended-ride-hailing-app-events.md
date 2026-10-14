@@ -72,6 +72,8 @@ When the user completes the signup process
 
 </Accordion>
 
+<div id="login-af_login" />
+
 <Accordion title="Login (af_login)">
 
 **Purpose**
@@ -146,6 +148,8 @@ When a passenger spends credits
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
+<div id="ride-booking-requested-ride_booking_requested" />
+
 <Accordion title="Ride booking requested (ride_booking_requested)">
 
 **Purpose**
@@ -181,6 +185,8 @@ When the passenger created a ride-booking request
 
 </Accordion>
 
+<div id="ride-booking-confirmed-ride_booking_confirmed" />
+
 <Accordion title="Ride booking confirmed (ride_booking_confirmed)">
 
 **Purpose**
@@ -215,6 +221,8 @@ When the booking is accepted by a driver
 | af\_order\_id | Order ID | 135790 |
 
 </Accordion>
+
+<div id="ride-booking-canceled-ride_booking_canceled" />
 
 <Accordion title="Ride booking canceled (ride_booking_canceled)">
 
@@ -289,3 +297,5 @@ When the journey is complete
 | credits\_earned | Credits that the passenger earned for completing a ride | 248 |
 
 </Accordion>
+
+<div data-zendesk-anchors="ridehailing=-ride-hailing h_01HGTAZ7J64RZE35JP8XPKMTPZ=-ride-hailing h_01HGTAZ7J6N36EH492QDXCQYB1=important h_01HGTAZ7J6FJ8R9VXKK0F1A1E1=recommended-structures-for-predefined-events h_01HGTAZ7J6FQQKV7JB0Z9MG8CD=complete-registration-af_complete_registration h_01HGTAZ7J6YM8DJ96E7Q4M4Y8Q=login-af_login h_01HGTAZ7J67MNJ8T9B9W4NJ5Y9=add-payment-info-af_add_payment_info h_01HGTAZ7J6Z3EX03JTPZFHJJF6=spent-credits-af_spent_credits h_01HGTAZ7J6Z6NE8D5A10CRJJH4=recommended-structures-for-custom-events h_01HGTAZ7J6WCY2BQJPSNSTJRQ0=ride-booking-requested-ride_booking_requested h_01HGTAZ7J78J1X3VAYMH8Q3ZBA=ride-booking-confirmed-ride_booking_confirmed h_01HGTAZ7J7C4R7A7KT2S95835J=trigger h_01HGTAZ7J797KA791H1621F9TE=ride-booking-canceled-ride_booking_canceled h_01HGTAZ7J789CJ8P6X8B0V7A64=ride-booking-completed-ride_booking_completed" />

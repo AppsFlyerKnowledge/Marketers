@@ -104,3 +104,5 @@ Example **incorrect** uses: 
 ### Anchor signs
 
 Anchor signs (#) should not be used in the URL. Use of an anchor sign in a URL can result in the parameters after the sign form not loading and not being collected by our web SDK.
+
+<div data-zendesk-anchors="pba-website-attribuiton-urls=pba-website-attribution-urls h_01KQS4QK4Z70GC9VVFQCFHK4SQ=pba-website-attribution-urls url-parameters%E2%80%94group-and-priority=url-parametersgroup-and-priority h_01KQS4QK4Z3YTXHGQMYNZ36DZ1=url-parametersgroup-and-priority h_01KQS4QK4Z1RVQKZX94MJJQSQW=supported-parameters h_01KQS4QK4Z3V5Y9RSM20VTESDP=url-parameter-best-practices h_01KQS4QK4ZP6WCWEG4FH9R1N8Q=selecting-url-parameters h_01KQS4QK50MTKRPPNYNWZKPMSD=implement-dynamic-urls-using-ad-network-macros h_01KQS4QK50K5Q5NV2VQTASHDGD=consistent-case-within-parameters h_01KQS4QK505R1Y4TED19FWCY6M=use-google-ads-integration-to-automate-granularity h_01KQS4QK50XDC8216WBJJ6DJJ7=common-url-parameter-mistakes-to-avoid h_01KQS4QK50KAS1DVXASYB81PGJ=question-marks h_01KQS4QK507423MN3RWN94CWEY=anchor-signs" />

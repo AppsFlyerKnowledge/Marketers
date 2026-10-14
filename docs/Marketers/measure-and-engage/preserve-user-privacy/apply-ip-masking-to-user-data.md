@@ -84,3 +84,5 @@ When IP masking is turned on:
 **Example raw data report**
 
 ![ip_masking.png](https://files.readme.io/e52f8bd698191f0b1ac08e595e539f15bda59567ed51ddda32a0d80db3bdf23c-360001962938.png)
+
+<div data-zendesk-anchors="h_01HA91HHADCTT7QS2K79TJEY2C=ip-masking h_01HA92HF3ZYR2NBTXQ1S2AHCAA=note h_01HA91HHAD7BCXRZW6AD9NRDBN=example enabling-ip-masking=turn-on-ip-masking h_01HA91HHAEM220CE8805GFQYKR=turn-on-ip-masking h_01HA91HHAE14D6ES1ERNK93VY9=ip-masking-in-raw-data-reports" />

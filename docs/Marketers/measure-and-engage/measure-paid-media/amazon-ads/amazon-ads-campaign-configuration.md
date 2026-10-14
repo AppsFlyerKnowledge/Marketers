@@ -147,11 +147,15 @@ Configure mapping of in-app events with Amazon Ads events, sent via postbacks.
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution links aren't relevant for Amazon Ads. Attribution is performed by combining engagement data from Amazon Ads with data from AppsFlyer, using the click-through and view-through lookback windows configured in the [Integration tab](#integration-tab).
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost, clicks, and impressions tab">
 
@@ -159,11 +163,15 @@ Cost, clicks, and impressions data aren't available for Amazon Ads.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue isn't available for Amazon Ads.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -236,3 +244,5 @@ AppsFlyer currently supports two methods of DMA consent sharing:
 | Reinstall and re-attributions | Re-install and Re-attribution aren’t supported for this integration. |
 | Preload attribution | Pre-load measurement isn’t supported as part of this integration, but can be achieved via the legacy amazon\_int integration. |
 | Postback limitation | On Android, when the `advertiserIdEnabled` field is set to "false", the install or re-engagement will not be sent to Amazon even if advertiser ID is available. |
+
+<div data-zendesk-anchors="01H88VAJH3B5ESK12D3ATMMVZ8=activate-partner h_01KMG57HR62CC9TX495SG3WSRD=complete-the-setup-in-amazon-ads setting-up-amazon-dsp-integration=setting-up-amazon-ads 01H88VAJH3VENKYVRQY5RXN63P=setting-up-amazon-ads 01H88VAJH3BYZSXQGGZZJQ9N0C=note 01H88VAJH3VZ4GPVE7XXMKTZ2P=integration-tab activate-partner::b746d215=activate-partner-1 01H88VAJH34GP7FK1KTJGRDPM7=activate-partner-1 01H88VAJH3F2FJK5YP3M2V7RWD=general-settings 01H88VAJH3SSG6ZNV7XQ46W5CX=install-attribution reengagement-attribution=re-engagement-attribution h_01J4RC3GR8B04RNFSD61QK45C0=re-engagement-attribution h_01HNWSTJZPFQVQ5C8M0JA1J0T5=ignore-active-users-for-retargeting h_01HMXNJVHK9C3FT8E04RE0TH99=note-1 inapp-event-postbacks=in-app-event-postbacks 01H88VAJH3AS37MVF75GANWX4B=in-app-event-postbacks 01JEXXHXMEC5M7N1BDSGS3ZZ51=note-2 01H88VAJH31GZ4KAY280ZRB8MA=attribution-link-tab 01H88VAJH3RM95V449B6DF8B4D=cost-tab 01H88VAJH3A2Q0CZXQQZMW6YRC=ad-revenue-tab 01H88VAJH30TCC574W2DH7R2A2=permissions-tab 01H88VAJH3XYP81GTFBWDBXECP=note-3 h_01HDNZ59NQEDFC3D8JYGENR1NR=see-also 01J9G5FQGB0219RGWVW06BQPG7=deferred-deep-linking 01JBY7HD39BA9ZNR2N2TYYPBW3=raw-data-restrictions ctvtomobile-attribution=ctv-to-mobile-attribution h_01JZG6S5TB1888XG9560MKEBF3=ctv-to-mobile-attribution h_01KP0DJ73P9FRX51SR3RS4YWVP=support-amazon-eu-consent-policy h_01KP0DJ73PDB7FM1RG0VV99707=note-4 h_01KP0DJ73PG0JMWG3WAWCKXE1S=dma-consent-methods h_01KP0DJ73PNPYT0TRWF089VE9R=note-5 h_01KP0DJ73PC4ABGRPRDAR7BW5B=see-also-1 h_01J6S6HS0H0M6GQ81WGZ3XT0P9=traits-and-limitations" />

@@ -131,3 +131,5 @@ Google has provided a list of purposes from which app developers must choose as 
 >
 > * [Preparing for Google Play's new safety section](https://android-developers.googleblog.com/2021/07/new-google-play-safety-section.html)
 > * [Provide information for Google Play's Data safety section](https://support.google.com/googleplay/android-developer/answer/10787469)
+
+<div data-zendesk-anchors="h_01HDP3NTTKH3X3585J3DM6MCDC=disclaimer h_01HDP3NTTK1BDTZTHNWRM3411D=introduction h_01HDP3NTTKQE2N0HZDNGK2ZQPC=audience h_01HDP3NTTKK6DJSF49326V3BEG=google-safety-form-questionnaire h_01HDP3NTTK89K8YPT6C7S9QM3W=data-collection-and-security h_01HDP3NTTK9DYZTQ2B64QMKGX8=data-types h_01HDP3NTTKT7C0TGVCZJ4GR9BF=ephemeral-processing h_01HDP3NTTK4CT8MJ1S84MAG8VD=user-choice h_01HDP3NTTKD3MND388MWCC6PAT=purpose h_01HDP3RBENN69F150ESQMSVP3Q=see-also" />

@@ -42,6 +42,8 @@ x-zendesk:
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 #### Activate partner
@@ -82,11 +84,15 @@ In this section, you can map your AppsFlyer events with your partners via postba
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution links aren't available for Medialyzer.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -94,14 +100,20 @@ Cost data isn't supported in the integration with Medialyzer.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue data isn't supported in the integration with Medialyzer.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 Permissions aren't available for Medialyzer.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H9FKEAV2225HM5CQAGWS2K99=important setting-up-spoteffects=setting-up-medialyzer h_01H9FKEAV37AT3VTZ5WV1YMWC2=setting-up-medialyzer h_01H9FKEAV3YQY124TSZ5Q7VHAY=integration-tab h_01H9FKEAV3DW2A6RQ1NS44FT5F=activate-partner h_01H9FKEAV3T3YCPBYW70QVF540=advanced-privacy h_01H9FKEAV3Z1Y09P6E18J8AVX2=default-postbacks inapp-event-postbacks=in-app-event-postbacks h_01H9FKEAV3GG6X17X3NCCSWJAS=in-app-event-postbacks h_01H9FKEAV3ZEF1AHRTQGEGYFSJ=attribution-link-tab h_01H9FKEAV3ERXQ98BJGKBQRGP2=cost-tab h_01H9FKEAV32MB7M2Q1ASDAE6RM=ad-revenue-tab h_01H9FKEAV3ZNKMZSG76B61H2AS=permissions-tab" />

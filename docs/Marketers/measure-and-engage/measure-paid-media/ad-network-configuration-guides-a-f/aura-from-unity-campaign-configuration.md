@@ -38,6 +38,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 Connect to Aura from Unity by activating and setting parameters in the Integration tab.
@@ -64,11 +66,15 @@ Connect to Aura from Unity by activating and setting parameters in the Integrati
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide). [Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters). **To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -84,17 +90,23 @@ For the full list of partners supporting cost data [go here](/docs/roi360-cost-
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue attribution is not available for this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 You can give Aura from Unity permission to view information or configure changes in the integration. The type of permission varies according to the business relationship (ad network/ad agency) you have with Aura from Unity.
 
 **Note!** It is possible to give Aura from Unity permissions even if there is no active integration with them.
+
+<div id="ad-network-permissions" />
 
 <Accordion title="Ad network permissions">
 
@@ -114,3 +126,5 @@ You can give Aura from Unity permission to view information or configure changes
 </Accordion>
 
 </Accordion>
+
+<div data-zendesk-anchors="aura-integration-in-appsflyer=aura-from-unity-integration-in-appsflyer h_01HKW9GGARZY4X1FAA6BD89K5N=aura-from-unity-integration-in-appsflyer h_01HKW9GGAR9CWWYGRH6C1EMFVM=integration-tab h_01HKW9GGAR9CVKH192FN4P9YND=attribution-link-tab h_01HKW9GGARNCSQ0TAV69550BS8=cost-tab h_01HKW9GGAR0TET4Q5284NHFM7R=ad-revenue-tab h_01HKW9GGAR5ZTPA9R49WN5P7P4=permissions-tab h_01HKW9GGAREEN9YQ065D1ZX1AQ=ad-network-permissions" />

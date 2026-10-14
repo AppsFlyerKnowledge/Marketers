@@ -43,7 +43,7 @@ AppsFlyer [OneLink](/docs/onelink-guide) enables you to create links for your ca
 
 **To get started using OneLink, follow the steps below:**
 
-**Prerequisites**
+<span id="h_01J5WC8Z4J352AHSDTRCEP2W9H"></span>**Prerequisites**
 
 * An AppsFlyer [account](https://www.appsflyer.com/sign-up/) with at least one of your apps added.
 * Most features require a paid AppsFlyer [subscription plan](/docs/account-management-plans-payments-and-billing#appsflyer-plans). For help, contact [hello@appsflyer.com](mailto:hello@appslfyer.com)
@@ -67,3 +67,5 @@ If you need any help getting started with OneLink, reach out to your salesperson
 | Trait | Remarks |
 | --- | --- |
 | Owned media attribution in iPad Safari | When users click owned media links on an iPad using the Safari browser, the browser may report a **Macintosh-like user agent** instead of an iPad device model. As a result, AppsFlyer identifies the click as originating from a Mac device, while the app install is identified as originating from an iPad. Because probabilistic attribution relies on matching device characteristics between the click and the install, this mismatch prevents attribution and can result in unattributed installs or deferred deep linking failures. This limitation applies only to owned media traffic on iPad devices using Safari. |
+
+<div data-zendesk-anchors="overview=about-onelink h_01J2G7RMHSPPXCWJ60W9HZASXX=about-onelink h_01HKHGX9JJQQCKF9SDZRSCM1XJ=about-onelink xyz-onboarding=onelink-onboarding h_01J2RJFH0B4R815CWDQNEB2C1P=onelink-onboarding h_01KFAG3N0X0W0RCJXK00KX038E=traits-and-limitations" />

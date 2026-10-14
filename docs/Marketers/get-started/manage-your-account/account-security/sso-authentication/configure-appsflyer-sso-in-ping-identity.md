@@ -24,6 +24,8 @@ x-zendesk:
 ---
 The first step in configuring the AppsFlyer SSO process is done on the Ping Identity platform. Follow the steps below:
 
+<div id="create-the-appsflyer-app-in-ping" />
+
 <Accordion title="Create the AppsFlyer app in Ping Identity">
 
 **Prerequisite:** A Ping Identity account with administrative privileges.
@@ -69,6 +71,8 @@ The first step in configuring the AppsFlyer SSO process is done on the Ping Iden
 
 </Accordion>
 
+<div id="create-ping-groups" />
+
 <Accordion title="Create Ping Identity groups">
 
 Now that the Ping Identity SAML application is created, let’s create user groups and then add users to the groups.
@@ -80,6 +84,8 @@ Now that the Ping Identity SAML application is created, let’s create user grou
 3. Repeat steps 1-2 for all user groups.
 
 </Accordion>
+
+<div id="create-ping-identity-users-and-assign-them-to-groups-and-roles" />
 
 <Accordion title="Create Ping identity users and assign them to groups and roles">
 
@@ -95,6 +101,8 @@ Now that the Ping Identity SAML application is created, let’s create user grou
 4. Click the **Roles** tab > **Grant roles**, select the roles for the user, and click **Save**.
 
 </Accordion>
+
+<div id="provide-access-to-your-groups-and-activate-the-app" />
 
 <Accordion title="Provide access to your groups and activate the app">
 
@@ -115,6 +123,8 @@ Now that the Ping Identity SAML application is created, let’s create user grou
 
 </Accordion>
 
+<div id="complete-the-process-in-appsflyer" />
+
 <Accordion title="Complete the process in AppsFlyer">
 
 Now that you've configured the IdP part, go back to AppsFlyer to [complete the configuration](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer). You can then [test](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-process) to see that it works.
@@ -124,3 +134,5 @@ Now that you've configured the IdP part, go back to AppsFlyer to [complete the c
 > 📘 **See also**
 >
 > * [Pin Identity SSO configuration documentation](https://docs.pingidentity.com/r/en-us/pingfederate-112/pf_ident_provid_sso_config)
+
+<div data-zendesk-anchors="h_01HDP087XSDCY9W577GARNQ5GS=create-the-appsflyer-app-in-ping h_01HDP087XSRYXKE5TW7HYR3NYZ=create-ping-groups h_01HDP087XSKBVDREY0YZ27CG8T=create-ping-identity-users-and-assign-them-to-groups-and-roles h_01HDP087XSQPN3DAH8HAKMH3GS=provide-access-to-your-groups-and-activate-the-app h_01HDP087XST1C28TEJXF3X8XK4=provide-access-to-your-groups h_01HDP087XSMBE3G6A4DSQ1WHBT=activate-the-app h_01HDP087XS1S0XC5W74MK2AYY3=complete-the-process-in-appsflyer h_01HDP0ARX3NJZWBK0KC9Q64MG8=see-also" />

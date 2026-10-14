@@ -43,6 +43,8 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 * In AppsFlyer, from the side menu, select **Analyze** > **Pivot**.  
   The list of currently defined reports displays.
 
+<div id="pivot-page-controls-and-options" />
+
 <Accordion title="Pivot page—controls and options">
 
 | Column/option | Description |
@@ -61,6 +63,8 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 | Delete | Delete the selected pivot. |
 
 </Accordion>
+
+<div id="add-a-pivot-report" />
 
 <Accordion title="Add a pivot report">
 
@@ -106,6 +110,8 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 
 ## Traits and limitations
 
+<div id="traits-and-limitations::e6883df" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -129,3 +135,5 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 | Average DAU and Average MAU | When using Average DAU or Average MAU with the Sum aggregation across any grouping (e.g., Media Source or Campaign), the totals may include duplicate user counts. This occurs when a user performs both an install and a re-engagement within the selected period, causing them to appear under multiple groupings. |
 
 </Accordion>
+
+<div data-zendesk-anchors="pivot-reports-page=about-pivot-reports-page h_01HJR8389QPFKR9X6V52N7PHMM=about-pivot-reports-page h_01HJR8389QPNRX8Y26VQWN0ZXP=pivot-procedures pivot-page%E2%80%94controls-and-options=pivot-page-controls-and-options h_01HJR8389QDDWR8ZKCSDZGVAGP=pivot-page-controls-and-options h_01HJR8389R2C1E42JN9NFMS4CJ=add-a-pivot-report h_01HJR8389SQ40HZ8EXQME4807S=view-a-pivot-report h_01HJR8389SPJZG6AYGABB17V1N=traits-and-limitations h_01HJR8389S19TVMVR60ZYAJMAA=traits-and-limitations::e6883df" />

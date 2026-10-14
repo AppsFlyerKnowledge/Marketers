@@ -28,6 +28,8 @@ x-zendesk:
 
 **Note:** These steps are divided into tabs for ease of reading. All steps must be completed in order to create the report. *(Certain steps, as indicated, are not relevant for reports that don't use custom sources.)*
 
+<div id="perform-preliminary-steps" />
+
 <Accordion title="Perform preliminary steps">
 
 1. Go to the **Reports** tab of the **DCR.**
@@ -47,6 +49,8 @@ x-zendesk:
        * all other symbols or special characters
 
 </Accordion>
+
+<div id="select-sources" />
 
 <Accordion title="Select sources">
 
@@ -280,6 +284,8 @@ By default, in-app event dimensions are eliminated in reverse order from the ord
 
 </Accordion>
 
+<div id="select-metrics" />
+
 <Accordion title="Select metrics">
 
 Metrics are the numeric data you have collected with respect to an app user (examples might include revenue, number of app opens, LTV, etc.) and can be any numeric data field from your sources that you have categorized as a metric.
@@ -440,6 +446,8 @@ In addition to dimensions extracted from **event\_value** and dimensions from yo
 
 </Accordion>
 
+<div id="default-inapp-event-metrics" />
+
 <Accordion title="Default in-app event metrics">
 
 In addition to metrics extracted from **event\_value** and metrics from your custom sources (if applicable), the following in-app event metrics can be included in reports:
@@ -448,3 +456,5 @@ In addition to metrics extracted from **event\_value** and metrics from your cus
 * event\_revenue\_u\_s\_d
 
 </Accordion>
+
+<div data-zendesk-anchors="creating-an-inapp-event-report=creating-an-in-app-event-report h_01HA9W7NP4CR9CVXY9CXENYSPF=creating-an-in-app-event-report h_01HA9W7NP4B55Y2SB6ADKE06JV=perform-preliminary-steps h_01HA9W7NP4A7YK5JFYNFXFY6ZJ=select-sources inapp-event-sources=in-app-event-sources h_01HA9W7NP4G0S2TQT9W2RK1QBA=in-app-event-sources custom-sources=data-sources h_01HA9W7NP46D57Q7H8611K4KBB=data-sources h_01HA9W7NP4K2055TXTE98HWTAW=join-sources-only-for-reports-containing-custom-sources h_01HA9W7NP4WTBJ83MY73JQ2ESH=what-is-a-key-identifier h_01HA9W7NP5N8W4X8H1WRN1183Z=important h_01HA9W7NP51HWA36BBP1JC3HMW=mapping-schemes-directindirect h_01HA9W7NP5V1SV5PGF277G5P6T=example h_01HA9W7NP56M09TF9CB7FCBPBR=select-dimensions h_01HA9W7NP5BV7GJXMEMS57HNJ9=extracting-dimensions-from-event_value h_01HA9W7NP5S6EWDE38Q6T42QEB=selecting-report-dimensions %5Boptional%5D-customizing-dimension-display-names=optional-customizing-dimension-display-names h_01HA9W7NP5YC8E3B05GV7J1Z5V=optional-customizing-dimension-display-names h_01HA9W7NP5XJGK4CXNHK02NYT4=preserving-privacy-while-grouping-by-dimension-regrouping h_01HA9W7NP596RGHA1BES64GSK1=regrouping-example %5Boptional%5D-managing-dimension-priority=optional-managing-dimension-priority h_01HA9W7NP5781HV31T5DAYSMMT=optional-managing-dimension-priority h_01HA9W7NP6WCSRSH157P78QEQF=select-metrics h_01HA9W7NP6JEXE67A935BJ93AQ=extracting-metrics-from-event_value h_01HA9W7NP6EF23ZDGZHDKVTS7V=select-report-metrics %5Boptional%5D-customizing-metric-display-names=optional-customizing-metric-display-names h_01HA9W7NP6X584YAXT030A6BEY=optional-customizing-metric-display-names %5Boptional%5D-select-identifiers-to-count=optional-select-identifiers-to-count h_01HA9W7NP6YETQ1ND0K8XZTZZ0=optional-select-identifiers-to-count h_01HA9W7NP6ZH3KRN7YNWCPFZC9=configure-report-settings-and-save-the-report h_01HA9W7NP62DCR2SWD8X4M61R7=schedule-only-for-reports-without-custom-sources h_01HA9W7NP6XQE1MN0J08FE89V4=important-1 h_01HA9W7NP6BQYAF3RMZSW747HH=report-destination h_01HA9W7NP6BS0TE332GNPTW9M1=reference h_01HA9W7NP606HF0MSPQ4S09YRS=default-inapp-event-dimensions h_01HA9W7NP6A1N25KQ947J3EJW3=default-inapp-event-metrics" />

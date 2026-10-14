@@ -59,3 +59,5 @@ See the table that follows for:
 > 📘 **See also**
 >
 > * [Everything you need to know about app marketing KPIs](https://www.appsflyer.com/blog/measurement-analytics/mobile-app-metrics/)
+
+<div data-zendesk-anchors="h_01HE0CXZY2STAERN0SYZJ2QY4K=marketing-funnel-stages h_01HE0CXZY2PZH6WAEEZFNFVT45=marketing-funnel-stages-and-conversion-rates marketing-funnel-stages-and-conversion-rates::74b1530a=marketing-funnel-stages-and-conversion-rates-1 h_01HE0CXZY24CB2YHT4ZQEKQAXX=marketing-funnel-stages-and-conversion-rates-1 h_01HE0CYPNSBRP4JYZV4NDV2HX8=see-also" />

@@ -47,12 +47,12 @@ Raw data reports:
 
 | Report | Description |
 | --- | --- |
-| Installs | Reports include:<ul><li>**Fake installs**: Installs identified as fraudulent by the Protect360 engine. These do not appear in any AppsFlyer dashboard or raw data, except for the Protect360 dashboard and raw data.</li><li>**Hijacked installs**: Real user installs where attribution is stolen, but Protect360 [corrects the attribution](/docs/protect360-raw-data-reports#hijacked-installs-attribution-correction).</li><li>**Validation Rules**: That either blocked the install or blocked the attribution (Protect360 [corrects the attribution](/docs/protect360-raw-data-reports#hijacked-installs-attribution-correction)).</li></ul> |
-| Post-attribution installs | Reports include installs attributed to a media source, but later found to be fraudulent. Protect360 [corrects the attribution](/docs/protect360-raw-data-reports#hijacked-installs-attribution-correction). |
+| <span id="installs"></span>Installs | Reports include:<ul><li>**Fake installs**: Installs identified as fraudulent by the Protect360 engine. These do not appear in any AppsFlyer dashboard or raw data, except for the Protect360 dashboard and raw data.</li><li>**Hijacked installs**: Real user installs where attribution is stolen, but Protect360 [corrects the attribution](/docs/protect360-raw-data-reports#hijacked-installs-attribution-correction).</li><li>**Validation Rules**: That either blocked the install or blocked the attribution (Protect360 [corrects the attribution](/docs/protect360-raw-data-reports#hijacked-installs-attribution-correction)).</li></ul> |
+| <span id="postattribution-installs"></span>Post-attribution installs | Reports include installs attributed to a media source, but later found to be fraudulent. Protect360 [corrects the attribution](/docs/protect360-raw-data-reports#hijacked-installs-attribution-correction). |
 | <span id="blocked-inapp-events"></span>Blocked in-app events | Reports include in-app events from:<ul><li>**Fake installs**: IAEs are blocked.</li><li>**In-app events**: Identified as fraudulent independent of the original installs.</li><li>**Validation Rules**:<ul><li>IAEs from a rule that blocked the install or blocked attribution.</li><li>IAEs from a rule that blocked the in-app event.</li></ul></li></ul> |
-| Post-attribution in-app events | Reports include in-app events:<ul><li>Identified post-attribution.</li><li>Of installs attributed to a media source, but later found to be fraudulent.</li></ul> |
-| Clicks | Reports include blocked clicks with the block reasons. |
-| Blocked install postbacks | Reports include copies of the rejection postbacks sent to media sources bringing blocked installs. |
+| <span id="postattribution-inapp-events"></span>Post-attribution in-app events | Reports include in-app events:<ul><li>Identified post-attribution.</li><li>Of installs attributed to a media source, but later found to be fraudulent.</li></ul> |
+| <span id="clicks"></span>Clicks | Reports include blocked clicks with the block reasons. |
+| <span id="blocked-install-postbacks"></span>Blocked install postbacks | Reports include copies of the rejection postbacks sent to media sources bringing blocked installs. |
 
 </Accordion>
 
@@ -86,6 +86,8 @@ Raw data reports:
 
 </Accordion>
 
+<div id="raw-data-availability-by-tool-type" />
+
 <Accordion title="Raw data availability by tool type">
 
 #### Protect360 raw-data availability by tool type
@@ -97,6 +99,8 @@ Raw data reports:
 ## Getting raw data reports
 
 Raw data reports are available by download, Pull API, and Data Locker (S3 bucket). You can also [give partners access to reports](/docs/protect360-for-integrated-partners).
+
+<div id="download" />
 
 <Accordion title="Download">
 
@@ -164,6 +168,8 @@ Protect360 reports have the same general structure as user acquisition reports f
 In addition to the regular [raw data report fields](/docs/raw-data-field-dictionary), Protect360 reports also have retargeting and blocked reason fields, as follows:
 
 ### Blocked reasons
+
+<div id="click-level-blocked-reasons" />
 
 <Accordion title="Click level blocked reasons">
 
@@ -294,6 +300,8 @@ For hijacked installs use the [rejected\_reason\_value](/docs/raw-data-field-di
 
 **Note**: When hijacked installs are blocked in real-time, the correct attributions display in AppsFlyer dashboards and reports (not just Protect360). When hijacked installs are identified post-attribution, the correct attributions are displayed only in Protect360 raw data.
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remark |
@@ -302,3 +310,5 @@ For hijacked installs use the [rejected\_reason\_value](/docs/raw-data-field-di
 | Empty values | Due to raw data restrictions related to privacy, the raw reports may show fields with empty values. An example of this is the contributor fields. |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HE7S55TCE60A34T6RCNTCQK8=about-protect360-raw-data-reports h_01J91EP40Q69KXXF2SR66AM2FQ=note h_01HE7S55TC4G31R9EANMKCZ7V5=report-types protect360-rawdata-report-types=protect360-raw-data-report-types h_01HE7S55TCKQYTXPV6J54SHM0D=protect360-raw-data-report-types h_01HE7S55TC4F5S243BSGN74RDK=postattribution-reports using-postattribution-reports=using-post-attribution-reports h_01HE7S55TC7KCF75KFXHCE3K2K=using-post-attribution-reports h_01HE7S55TCR8BKZ0PQ5B14X3X4=example h_01HE7S55TC95YC1BJJ0ZERCQ14=raw-data-availability-by-tool-type protect360-rawdata-availability-by-tool-type=protect360-raw-data-availability-by-tool-type h_01HE7S55TCH4CES29C5J3QXQK4=protect360-raw-data-availability-by-tool-type h_01HE7S55TC3MRT6E9QV0J0X6FC=getting-raw-data-reports h_01HE7S55TCBVFQ1DH06G53BNEN=download h_01HE7S55TCMT81J4SWBFQFYV2C=pull-api h_01HE7S55TCRRD95D0QPCXBRF8T=pull-api-raw-data-report-parameters h_01HE7S55TCMAY86J1HKYB0APZ6=data-locker h_01HE7S55TCS91ZC9V3K0VDSVXK=protect360-report-structure h_01HE7S55TC1ZEDD5ABD21FCPY2=blocked-reasons h_01HE7S55TDMDSVQCVSV5YS3CZN=click-level-blocked-reasons h_01HE7S55TD754T07FWHFK5P71K=install-level-blocked-reasons install-level-fake-install-block-reasons=install-level-fake-install-block-sub-reasons h_01HE7S55TDHTE5P47N1CCREGZX=install-level-fake-install-block-sub-reasons install-level-attribution-hijacking-block-reasons=install-level-attribution-hijacking-block-sub-reasons h_01HE7S55TDFA6WGAHE80ECV8CA=install-level-attribution-hijacking-block-sub-reasons h_01HE7S55TDCHG0CVJA3JRSAW3G=cluster-level-blocked-reasons h_01HE7S55TDBES0BY0FF3WKSSVG=cluster-level-fake-install-block-reasons h_01HE7S55TD3M45TH4PY2W805W7=cluster-level-attribution-hijacking-block-reasons h_01HE7S55TDGB05PEZX8KS3J3QJ=inapp-level-blocked-reasons inapp-level-block-reasons=in-app-level-block-reasons h_01HE7S55TD661EHCV50S9BW5MS=in-app-level-block-reasons h_01HE7S55TDSYDC8BWZ8D8DF9JE=retargeting h_01HE7S55TD8SDCQJCCYQC0MNES=hijacked-installs-attribution-correction h_01J91E55BXQ4E01A9R3EB33WYF=traits-and-limitations" />

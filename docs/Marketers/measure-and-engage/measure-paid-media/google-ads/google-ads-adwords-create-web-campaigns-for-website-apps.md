@@ -53,6 +53,8 @@ The setup has two parts:
 
 Start by activating the Google Ads integration for web campaigns and setting up the postbacks that AppsFlyer sends to OCI.
 
+<div id="step-1-activate-the-integration" />
+
 <Accordion title="Step 1: Activate the integration">
 
 1. In AppsFlyer, from the side menu, open **Collaborate > Partner Marketplace**.
@@ -83,6 +85,8 @@ Start by activating the Google Ads integration for web campaigns and setting up 
 
 </Accordion>
 
+<div id="step-2-set-inapp-event-postbacks" />
+
 <Accordion title="Step 2: Set in-app event postbacks">
 
 Map your website events to Google Ads conversion actions. AppsFlyer sends these events to Google via OCI to power conversion-based optimization.
@@ -111,6 +115,8 @@ Map your website events to Google Ads conversion actions. AppsFlyer sends these 
 </Accordion>
 
 ## Set Up a Web Conversion Campaign in Google Ads
+
+<div id="step-1-set-the-campaign-type-objective-and-goals" />
 
 <Accordion title="Step 1: Set the campaign type, objective, and goals">
 
@@ -155,6 +161,8 @@ For each website event you mapped in AppsFlyer, create a corresponding conversio
 10. In AppsFlyer, paste the `ctid` value into the **Mapped to partner event** column of the postback event you want Google to optimize for. See: Set in-app event postbacks.
 
 </Accordion>
+
+<div id="step-3-set-the-campaigns-final-url" />
 
 <Accordion title="Step 3: Set the campaign's Final URL">
 
@@ -206,6 +214,8 @@ To get a complete performance view of web attribution data and web cost data fro
 
 If event data is not appearing in Google Ads, check the following before contacting support.
 
+<div id="set-token-permissions" />
+
 <Accordion title="Set token permissions">
 
 In Google Ads, make sure that your access token has the necessary permissions to upload offline conversions:
@@ -218,11 +228,15 @@ In Google Ads, make sure that your access token has the necessary permissions to
 
 </Accordion>
 
+<div id="mcc-customer-id" />
+
 <Accordion title="MCC Customer ID">
 
 If you have multiple Google Ads accounts running campaigns for your app, you must use the Customer ID of an MCC account. See [Google's instructions on configuring an MCC account](https://support.google.com/google-ads/answer/6139186).
 
 </Accordion>
+
+<div id="conversion-action-id" />
 
 <Accordion title="Conversion Action ID">
 
@@ -235,3 +249,5 @@ Make sure the postback in-app events are mapped to the correct conversion action
 | Trait | Remarks |
 | --- | --- |
 | Clicks and impressions | Clicks and impressions for web campaigns require an [ROI360 subscription](/docs/roi360-onboarding-guide). |
+
+<div data-zendesk-anchors="h_01KNM00RR7V9BAA2BSPDECHC9F=overview h_01KQC2B644Y44631ZQKC1HPEF4=see-also h_01KNM00RR7H7A9CE06APEZSXKR=prerequisites h_01KNM00RR77P8VD2YJ2R7DZBVX=how-to-set-up-a-google-ads-web-campaign h_01KNM00RR7E8MFSTGYKFEJDS1C=set-up-the-google-ads-integration-in-appsflyer h_01KNM00RR71ZXB72H8X1YXWKED=step-1-activate-the-integration h_01KNM00RR84CCGBR3T5WG7C5VW=note h_01KNM00RR86C5VKBVTA9X6QRAS=note-1 h_01KNM00RR8BCJTMPZ29C841BY1=step-2-set-inapp-event-postbacks h_01KNM00RR8PSJ7FEAP7MMEJ1XG=note-2 h_01KNM00RR89XJ0BZKFDXVC4860=note-3 h_01KNM00RR8SAS3TM1NG5DC58TF=set-up-a-web-conversion-campaign-in-google-ads h_01KNM00RR8S24AG7FMN6067PZ2=step-1-set-the-campaign-type-objective-and-goals h_01KNM00RR8H1ZFSHFT0DVB11GN=step-2-create-conversion-actions h_01KNM00RR8EV8XY02YJFV5XSX8=important h_01KNM00RR8N96SNP1YK0CTN6YZ=note-4 h_01KNM00RR82NZSKB7K06HCP1VE=step-3-set-the-campaigns-final-url h_01KNM00RR8EP6J43G29Q8VVA5B=important-1 h_01KNM00RR8A704MKGVVC6MQ2KN=note-5 view-web-attribution-data=view-web-performance-measurement-data h_01KNM00RR8EYJAX2KRGCM65E9M=view-web-performance-measurement-data h_01KNM00RR86Q2GTHVNC505KCXZ=note-6 measure-web-attribution-data-with-web-cost=measure-web-performance-measurement-data-with-web-cost h_01KNM00RR9TF8JRTJXWN23MF1S=measure-web-performance-measurement-data-with-web-cost h_01KNM00RR9Z0BM5EE62M17EE0F=troubleshooting-in-app-event-postbacks h_01KNM00RR9CJJQAP4GAXZ9KK8N=set-token-permissions h_01KNM00RR9215H3KB024BBFZX2=mcc-customer-id h_01KNM00RR9DBR5979GA0FVD5AK=conversion-action-id h_01KQAE3JKMQ6ZEATDAEXBC4PT6=traits-and-limitations" />

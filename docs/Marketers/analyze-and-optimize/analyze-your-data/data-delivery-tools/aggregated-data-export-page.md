@@ -50,3 +50,5 @@ x-zendesk:
 > 📘 **See also**
 >
 > * [Aggregated and analytics reporting overview](/docs/aggregated-and-analytics-reporting-overview)
+
+<div data-zendesk-anchors="01EEA0AHKGE7ECAF5BQ95KXEE3=aggregate-data-reports 01EEA0AHKGS0JECXWWR65JX58N=download-aggregate-data-reports h_01HDNYZ54NY3Z291FNKA7N5J71=see-also" />

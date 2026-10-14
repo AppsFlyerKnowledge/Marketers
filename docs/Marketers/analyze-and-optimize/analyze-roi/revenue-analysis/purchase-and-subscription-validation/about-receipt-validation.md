@@ -114,3 +114,5 @@ If you currently use ROI360 store revenue and want to switch to Receipt validati
 | --- | --- |
 | Supported stores | • Play Store  <br />• App Store  <br />• For any other (third-party) stores, you must manually send in-app purchase events. |
 | iOS sandbox apps | For iOS sandbox apps, meaning apps that are not live in the App Store, 'Validate the Key' will always display invalid status |
+
+<div data-zendesk-anchors="h_01KD0PBEK0M2NEZJ95QXBA1H3W=how-does-receipt-validation-work enable-receipt-validation=activate-receipt-validation h_01KD0PBEK0BZNW8YP02EW0DHH4=activate-receipt-validation h_01KD0PBEK1GZSJQPTP0P2TJMNJ=set-up-receipt-validation inapp-purchase-events-and-parameters-for-receipt-validation=in-app-purchase-events-and-parameters-for-receipt-validation h_01KD0PBEK1DVMRXR64EMSWT75W=in-app-purchase-events-and-parameters-for-receipt-validation h_01KD0PBEK1AKE1XM2XVTCNTJ68=switch-from-roi360-store-revenue-to-receipt-validation h_01KD0PBEK1HQKTGM7JP2KYPJAR=traits-and-limitations" />

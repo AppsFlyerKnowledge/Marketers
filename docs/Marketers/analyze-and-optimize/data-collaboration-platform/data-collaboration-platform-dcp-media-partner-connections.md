@@ -37,6 +37,8 @@ x-zendesk:
 
 This section lists the media partner connections supported by DCP, along with each partner’s setup requirements, permissions, supported campaign types, and any additional requirements or limitations.
 
+<div id="google-ads" />
+
 <Accordion title="Google Ads">
 
 **Media partner platform:**  
@@ -125,6 +127,8 @@ Audience lists from DCP are used as primary targeting criteria, similar to other
 
 </Accordion>
 
+<div id="dv360" />
+
 <Accordion title="DV360">
 
 **Media partner platform:**  
@@ -174,6 +178,8 @@ After that, the DCP uploads audiences automatically via the Partner Link.
 * EU Consent (DMA): You must add that for users in the European Economic Area (EEA), passing explicit, granted consent signals (ad\_user\_data and ad\_personalization) is strictly required to use Customer Match. If consent is denied or missing, the user will not be processed.
 
 </Accordion>
+
+<div id="meta-ads" />
 
 <Accordion title="Meta Ads">
 
@@ -238,6 +244,8 @@ DCP audiences (Custom Audiences) can be used for direct targeting across all Met
 
 </Accordion>
 
+<div id="tiktok" />
+
 <Accordion title="TikTok">
 
 **Media partner platform:**  
@@ -301,6 +309,8 @@ DCP audiences (Custom Audiences) can be used for direct targeting across all Tik
 
 </Accordion>
 
+<div id="pinterest" />
+
 <Accordion title="Pinterest">
 
 **Media partner platform:**  
@@ -352,6 +362,8 @@ DCP audiences (Customer Lists) can be used for direct targeting across all Pinte
 * Recommended audience refresh: every 1–7 days, depending on campaign type
 
 </Accordion>
+
+<div id="the-trade-desk" />
 
 <Accordion title="The Trade Desk">
 
@@ -419,17 +431,21 @@ DCP audiences in The Trade Desk are used for direct targeting across all campaig
 
 You can set up partner connections as part of the audience-builder flow or separately.
 
+<div id="setup-as-part-of-the-audiencebuilder-flow" />
+
 <Accordion title="Setup as part of the audience-builder flow">
 
-**To create a media partner connection as part of the audience-builder flow:**
+<span id="h_01HZHF5BWHBE7W8VNM3QFB7K58"></span>**To create a media partner connection as part of the audience-builder flow:**
 
 Follow the instructions detailed [here](/docs/data-collaboration-platform-dcp-build-and-activate-audiences#step-3-connect-and-export).
 
 </Accordion>
 
+<div id="separate-setup" />
+
 <Accordion title="Separate setup">
 
-**To create a connection outside the audience-builder flow:**
+<span id="h_01HZHF5BWH7P8HCWS9SG1JQ2BT"></span>**To create a connection outside the audience-builder flow:**
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
 2. From the top-right menu, click **Manage connections**.
@@ -443,3 +459,5 @@ Follow the instructions detailed [here](/docs/data-collaboration-platform-dcp-bu
 8. Click **Save**. The new connection is added to the list of partners.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01KNS1JFT1R7K6MCWJRGA2EAAY=at-a-glance h_01KNS1JFT1C788JKA9ZH657TE0=about-partner-connections h_01KP0WCJVS71MZ5XEXRHRWXX2Q=note media-partner-connections=supported-partner-connections h_01KNS1JFT1CT1AC1C6PAZAM779=supported-partner-connections h_01KNS1JFT1RE8MA525AJ99D9DS=google-ads app-campaigns-aci-ace-guidelines=app-campaigns-aci--ace-guidelines h_01KQC3Y84E1GT5VJB463N42SFT=app-campaigns-aci--ace-guidelines h_01KQC759QZPWJ7MWGPK7TJ06HW=notes h_01KNS1JFT1VESJCKHV4S11EKST=dv360 h_01KNS1JFT1P3ZR6EG6YR0M1F98=meta-ads h_01KNS1JFT1GTXJ4PMV5QKSDEX9=tiktok h_01KNS1JFT18VRXFHBYPRTS2MS6=pinterest h_01KNS1JFT2GJMKYNGR6ZRMWN25=the-trade-desk h_01KP115WC2QNT7MAS73HZSHQJT=create-a-partner-connection h_01KP11SX0VMYNRCY9C7GKQPYGB=setup-as-part-of-the-audiencebuilder-flow h_01KP11SX0VCAQM5MEGV3RKG086=separate-setup" />

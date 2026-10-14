@@ -64,3 +64,5 @@ To remove all AppsFlyer SDK data when uninstalling the app, please ask your deve
 > 📘 **See also**
 >
 > * [CTV, PC, and console platform overview](/docs/ctv-pc-and-console-platform-attribution-concepts)
+
+<div data-zendesk-anchors="about-steam-attribution=about-epic-game-attribution 01H7Z1F3SE03BXJD0WAJV8RE7Q=about-epic-game-attribution flow=example-attribution-flow 01H7Z1F3SETVXQKRQ71YAJACY3=example-attribution-flow 01H7Z1F3SF4J2WJ2Y6QG3VGGVK=integration-procedures h_01J3349MAA4J231B6FJ74V3PTB=removing-appsflyer-data-when-uninstalling-the-app h_01HF9WA5FJ6P4C357ZE231GMR0=traits-and-limitations h_01HE7T4JX3RX3SZW2VPW5ZZY7E=see-also" />

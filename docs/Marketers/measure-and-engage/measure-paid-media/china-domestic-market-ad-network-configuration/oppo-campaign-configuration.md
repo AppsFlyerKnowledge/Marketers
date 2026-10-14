@@ -38,6 +38,8 @@ x-zendesk:
 
 OPPO's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration Tab">
 
 The integration with OPPO only supports the install event in the default postback.
@@ -52,6 +54,8 @@ For more details about partner activation please click [here](/docs/partner-acti
 ![mceclip2.png](https://files.readme.io/d9afb0335626638ad4defb6426e20fbb842ba2a19d96c44987b1209e6f56a4c0-50899981124625.png)
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution Link Tab">
 
@@ -96,17 +100,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost Tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad Revenue Tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions Tab">
 
@@ -126,3 +136,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW6WR3NKYN9M2J8ZDNYF1ZC=setting-up-oppo h_01HKW6WR3N3RH4GG5AHZ1TTG6V=integration-tab h_01HKW6WR3NJM4XPPJDMPS04JKN=activate-partner h_01HKW6WR3NDWFHVGERDNMS0REC=default-postbacks h_01HKW6WR3NAE4MNHMCPS2W36F2=attribution-link-tab h_01HKW6WR3P6TGT1NDR6DE2JV3B=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6WR3P0NADPBZ51S4EYJV1=click-through-attribution h_01HKW6WR3P320PGSBHPH0SWQA6=attribution-link h_01HKW6WR3PBTZTWAPD5D7VXXNE=cost-tab h_01HKW6WR3P0299WKGCAM4PJHDR=ad-revenue-tab h_01HKW6WR3P55EE3YNGX8S164CS=permissions-tab h_01HKW6WR3PBC2PZ87RP91RQCFG=ad-network-permissions" />

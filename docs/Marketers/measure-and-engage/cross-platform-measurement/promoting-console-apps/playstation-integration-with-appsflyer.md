@@ -44,7 +44,7 @@ The following is an example flow that highlights the most important steps in a u
 
 ![Diagram of the attribution flow from a marketing touchpoint through a cross-platform landing page to installing a PlayStation app](https://files.readme.io/eaa57bd6977d5eae5dff2d135bc80e847040103eacb00dff6add79e02b450763-small-49667524948369.jpg)
 
-1. Marketing touchpoints: Customers interact with your brand through online or offline channels. These can include email and newsletters, social media, mobile web, and more.
+1. <span id="marketing-touchpoint"></span>Marketing touchpoints: Customers interact with your brand through online or offline channels. These can include email and newsletters, social media, mobile web, and more.
 2. Game landing page: A game landing page directs customers to your download app page. This step is important for collecting UTM (Urchin Tracking Module) and other URL parameters to attribute customers from the click/install to the original media sources or to your owned media sources.  
    The landing page is also useful because it provides links to the various platforms your game supports. For example, you can also have links to your Xbox, Microsoft Store, and Steam page on your landing page.
 3. App page: This is the URL to your PlayStation app page that hosts your app for customers to download.
@@ -118,3 +118,5 @@ https://engagements.appsflyer.com/v1.0/s2s/impression/app/playstation/10000000
 > 📘 **See also**
 >
 > * [CTV, PC, and console platform overview](/docs/ctv-pc-and-console-platform-attribution-concepts)
+
+<div data-zendesk-anchors="01H7Z1HPD0AB0VP6REMBF2HCR8=integrate-your-playstation-app-with-appsflyer h_01HP1Q8B11P0Q8F2Z2FRDSPNDE=example-attribution-flow 01H7Z19FJ54WZ7XV91Y36EKYQ6=marketing-touchpoint 01H7Z1HPD0VAMPEHBPN8MAT3ST=integration-procedures run-and-measure-ads-on-playstation=measure-ads-that-run-on-playstation h_01M2FS60HDHKN7GZWFADVMAEKD=measure-ads-that-run-on-playstation h_01M2FS60HDVJVBNN2MGCA8CVXG=important h_01M2FS60HDQGDT1KCSGCPJAFJC=sample-attribution-links 01H7Z1HPD0CS7CTX2KS2RVD3VA=traits-and-limitations h_01HE0T79YSNWGB3W4S7WEBW1B5=see-also" />

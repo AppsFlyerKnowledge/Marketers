@@ -35,6 +35,8 @@ This guide outlines a phased onboarding approach of 6 weeks:
 
 Protect360 is an advanced fraud protection solution designed to detect, prevent, and respond to ad fraud. Powered by AI and with real-time detection, it helps block fraud, reduce wasted spending, and protect your marketing from threats such as click injection, fake installs, and bots. It enables precise control and full transparency through features like validation rules and Fraud Protection Studio.
 
+<div id="setup-weeks-1-3" />
+
 <Accordion title="Setup (weeks 1–3)">
 
 In this step, the focus is to send in-app data to AppsFlyer, set up the basic settings for Fraud Protection, and align your BI terms with AppsFlyer.
@@ -149,6 +151,8 @@ The [Protect360 dashboard](/docs/protect360-dashboard) provides a visual overvie
 
 </Accordion>
 
+<div id="optimization-weeks-3-5" />
+
 <Accordion title="Optimization (weeks 3–5)">
 
 #### **Campaign optimization**
@@ -174,6 +178,8 @@ Review your [Fraud Protection Studio settings](/docs/protect360-onboarding-guide
 
 </Accordion>
 
+<div id="reconciliation-weeks-5-6" />
+
 <Accordion title="Reconciliation (weeks 5–6)">
 
 #### **Fraud data reconciliation**
@@ -186,6 +192,8 @@ Download your [post-attribution data](/docs/protect360-anti-fraud-guide#postattr
 
 </Accordion>
 
+<div id="advanced-protection-setup-week-6--optional" />
+
 <Accordion title="Advanced protection setup (week 6+) [optional]">
 
 #### **Advanced Security Module**
@@ -197,3 +205,5 @@ By filtering out unauthorized signals at the source, it helps reduce app store d
 Reach out to your CSM or send an email to `<hello@appsflyer.com>`
 
 </Accordion>
+
+<div data-zendesk-anchors="what-to-expect=onboarding-timeline-and-what-to-expect h_01JSBWNSH94Q2FBXJ5JSB2JKQ6=onboarding-timeline-and-what-to-expect h_01JSBWNSHDZ8J3B70KYEG2T03X=about-protect360 setup-weeks-1%E2%80%933=setup-weeks-1-3 h_01JSBWJJMHSF6YQ5PDEWE0YTN5=setup-weeks-1-3 h_01JVVK5Z1HWN0TXKZVNNGK1CBV=note h_01JSY4SNK5X23DBVD374FV12FG=fraud-protection-studio-settings h_01JVVK5Z1HZAVV3ZEA1AM7KVAY=note-1 h_01JSY4SNK57K77TBXZB92QPBKA=data-connection-setup h_01JVVK5Z1H0TZH02S76M7JRKWQ=important h_01JVVJBVB4FRATEHVZ2Q7EWC54=how-to-display-hijacked-installs-correctly-in-your-bi h_01JWDAV3K7JF8ATZP88D4NQRW4=raw-data-report h_01JVVK5Z1HB5AVVF3XV5Q9KNGA=note-2 h_01JWDAV8GC5N1859AD1PMEQXH9=pull-api h_01JWDAVEVDAJD47WQYY0FNSPE9=data-locker h_01JSY4SNK5HAG08PAJQEPB7MQ4=validation-rules h_01JVVK5Z1H05XX8BXECMXAJ4J7=note-3 h_01JSY4SNK50RHSQ95E1E2ZK068=working-with-dashboards optimization-weeks-3%E2%80%935=optimization-weeks-3-5 h_01JSBWJJMH4YW52GSBE6639BP4=optimization-weeks-3-5 h_01JV255GGVBY8XGQS28F0QZRVH=campaign-optimization h_01JV6WFR7MN2X8KTN7RMTXQ5KX=best-practices h_01JV6WGDRP200GHN6MJNZJ5MQE=review-your-fraud-protection-settings h_01JVVK5Z1HXPM2G6HAMTYV7MY5=note-4 reconciliation-weeks-5%E2%80%936=reconciliation-weeks-5-6 h_01JSBWJJMH1481TJW2EQMF118Q=reconciliation-weeks-5-6 h_01JV25RP3VAJBCEWWK2TEZFKB2=fraud-data-reconciliation advanced-protection-setup-week-6-%5Boptional%5D=advanced-protection-setup-week-6--optional h_01JSBWJJMHZQNYE1N0W2BSJ37X=advanced-protection-setup-week-6--optional h_01JV260Y9M3M6CC48854YHQ01S=advanced-security-module" />

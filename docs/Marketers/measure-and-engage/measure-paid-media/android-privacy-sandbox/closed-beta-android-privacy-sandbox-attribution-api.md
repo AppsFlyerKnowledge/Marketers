@@ -26,7 +26,7 @@ x-zendesk:
 
 ## Introduction
 
-**Definitions**
+<span id="h_01HZ1XJRC9V6AFTXMY41J642CX"></span>**Definitions**
 
 * Ad tech - Ad tech in the context of the Android Sandbox Attribution API includes mobile measurement partners (MMPs), advertisers, and ad networks, all working together to measure the performance of ad campaigns while maintaining user privacy.
 * Sources - ad clicks or views.
@@ -55,6 +55,8 @@ An ad tech must register both attribution sources and triggers to receive postba
 
 ## AppsFlyer Sandbox attribution solution
 
+<div id="principles-and-flows" />
+
 <Accordion title="Principles and flows">
 
 [![53090 Android Privacy Sandbox image for KB (1).png](https://files.readme.io/f10d82d0bb685cf8b329c3b3be14ad546531588b876938b41e3b9650b1080cac-26552356197649.png)](https://files.readme.io/f10d82d0bb685cf8b329c3b3be14ad546531588b876938b41e3b9650b1080cac-26552356197649.png)
@@ -73,6 +75,8 @@ To overcome the functional and structural limitations of the Sandbox attribution
 
 ## Additional Privacy Sandbox attribution information
 
+<div id="reporting-options" />
+
 <Accordion title="Reporting options">
 
 Sandbox attribution reports don't contain user-level identifiers.
@@ -80,6 +84,8 @@ Sandbox attribution reports don't contain user-level identifiers.
 | Report name | Type | Enriched by AppsFlyer | Delivery method | Premium feature |
 | --- | --- | --- | --- | --- |
 | Sandbox overview dashboard | Aggregated | Yes | Dashboard | No |
+
+<div id="sandbox-attribution-solution-implementation-checklist" />
 
 <Accordion title="Sandbox attribution solution implementation checklist">
 
@@ -90,6 +96,8 @@ Sandbox attribution reports don't contain user-level identifiers.
 
 </Accordion>
 
+<div id="troubleshooting-guide" />
+
 <Accordion title="Troubleshooting guide">
 
 | Symptom | Description |
@@ -98,12 +106,16 @@ Sandbox attribution reports don't contain user-level identifiers.
 
 </Accordion>
 
+<div id="timing-from-app-install-until-dashboard-and-reports-update" />
+
 <Accordion title="Timing from app install until dashboard and reports update">
 
 Sandbox aggregatable reports received on a given day are processed at the end of the next day—UTC starting at 00:01. The data is available 8 hours later. In other words, it takes around 32-56 hours to process the data, with an average delay of 44 hours.  
 **For example,** a report received on Monday is processed and ready on Wednesday. The dashboard will be updated by Wednesday 08:00 UTC.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 <Accordion title="Traits and limitations">
 
@@ -139,6 +151,8 @@ In the future, we will add such a capability within the AppsFlyer platform to av
 
 </Accordion>
 
+<div id="comparing-sandbox-attribution-results-to-appsflyer-attribution-results" />
+
 <Accordion title="Comparing Sandbox attribution results to AppsFlyer attribution results">
 
 It is not possible to properly compare the Sandbox results to AppsFlyer attribution results for the following reasons:
@@ -158,3 +172,5 @@ It is not possible to properly compare the Sandbox results to AppsFlyer attribut
 >
 > * [Closed Beta] Android privacy sandbox - Integrated partners list
 > * [[Closed Beta] Attribution API dashboard by AppsFlyer](/docs/special-access-android-privacy-sandbox-attribution-api-dashboard-by-appsflyer-cl)
+
+<div data-zendesk-anchors="h_01HZ1YG9WYYKRZADD718ZQ9KER=introduction h_01J0QQGC0FKZQRYFBWYJBXBQQY=about-android-privacy-sandbox-attribution-api h_01HZ46493MDGDZ6GZ0P42NTA2G=how-the-attribution-api-works h_01J14K2NDV7Q0C7XJF74Z6NK8S=appsflyer-sandbox-attribution-solution h_01J14M847B7AFGXCRRYVHXNDQY=principles-and-flows h_01J14KNVMNW6VN8YAXCBR1YQDT=additional-privacy-sandbox-attribution-information h_01J14MG19TY3MZT43BC98QKJN6=reporting-options h_01J14MG19TD6YDYJ4WJXHSEK4N=sandbox-attribution-solution-implementation-checklist h_01J14MG19THCGCD8VXP9T5K8ZN=troubleshooting-guide h_01J14MG19T9CKPSZ1FVRN3X52D=timing-from-app-install-until-dashboard-and-reports-update h_01J14MG19TRVJ6THKADTRP3N3M=traits-and-limitations h_01J14NGKBJM7WWFGT3M8HQ2BGB=redirecting-triggers-to-ad-networks h_01J14NGKBJBGAA0H4MDZ71RXCK=comparing-sandbox-attribution-results-to-appsflyer-attribution-results h_01J1C73JKV6PRBRE5M0CQ1NZH3=see-also" />

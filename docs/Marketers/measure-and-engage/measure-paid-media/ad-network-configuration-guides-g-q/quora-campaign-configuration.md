@@ -47,6 +47,8 @@ For a detailed description of the Partner Configuration Window Header, click [he
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -64,6 +66,8 @@ Send automatic postbacks to Quora following user installs.
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -73,17 +77,23 @@ Generate and save attribution links and send them to the partner for attributing
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost integration is not available for this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue integration is not available for this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -104,3 +114,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW851RK4MHYEW1AY2E2KH5Q=setting-up-quora h_01HKW851RK9KMV6PJ7YEN7ZMW2=tip h_01HKW851RKYQ0T9XY74EXB4GWX=integration-tab h_01HKW851RKD56502S4PSX8096T=activate-partner h_01HKW851RM09VR496Q7XFB3EMY=note h_01HKW851RM4HP8EVGKD2EJH529=attribution-link-tab h_01HKW851RM4DGBABR81ZJZHBYW=cost-tab h_01HKW851RMQ0KY4CMWP7N4F2T4=ad-revenue-tab h_01HKW851RMV5A43RS3ZFZEPW8Z=permissions-tab h_01HKW851RM2G6Y4J4KQBHAEF3A=ad-network-permissions" />

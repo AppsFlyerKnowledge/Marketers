@@ -247,6 +247,8 @@ As you make changes to the mode settings, the **Conversion-value capacity** summ
 
 </Accordion>
 
+<div id="decode" />
+
 <Accordion title="Decode">
 
 Create your own CV-to-event mapping and set the CV in the app yourself. Use this option if you can't integrate the AppsFlyer SDK into your app.
@@ -292,11 +294,15 @@ Create your own CV-to-event mapping and set the CV in the app yourself. Use this
 
 </Accordion>
 
+<div id="funnel-component" />
+
 <Accordion title="Funnel component">
 
 <table><tbody><tr><td colspan="2"><img alt="ConversionValueFunnel.png" src="https://files.readme.io/b43b5db0cee11c9addd50fb56af1ac6d3221e1956e2ee3c4c21a6940e9dfe61b-4406051997969.png"/> </td></tr><tr><td>Mandatory</td><td>No</td></tr><tr><td>Multiple-use permitted</td><td>No</td></tr><tr><td>Setting options</td><td>List a sequential set of events in a funnel. Since the occurrence of a single event is treated as the occurrence of all preceding events, the order in which you list the events is highly important, as illustrated in the example that follows.</td></tr><tr><td>Example</td><td><p>A funnel contains the events a, f, b, k, and z, as illustrated in the preceding image.</p><figure><table><thead><tr><th>Example</th><th>Event performed</th><th>Events recorded</th></tr></thead><tbody><tr><td>1</td><td>a</td><td>a</td></tr><tr><td>2</td><td>b</td><td>a, f, b</td></tr><tr><td>3</td><td>z</td><td>a, f, b, k, z</td></tr></tbody></table></figure></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="priority-measurement-component" />
 
 <Accordion title="Priority measurement component">
 
@@ -504,6 +510,8 @@ In the table:
 
 </Accordion>
 
+<div id="fixed-mode-examples" />
+
 <Accordion title="[Legacy] Fixed mode examples">
 
 > 📘 **Note**
@@ -522,13 +530,13 @@ In the table:
 
 #### Example B: Conversion measurement
 
-<table><thead><tr><th>Factor</th><th>Remarks</th></tr></thead><tbody><tr><td>Example</td><td><ul><li>5 users (A-E) install the app</li><li>They perform 0-3 different in-app events, as depicted in the table</li><li>Cost data provided by API from the ad network: $30</li></ul><h4>In-app events performed by users</h4><figure><table><thead><tr><th> </th><th>in-app-1</th><th>in-app-2</th><th>in-app-3</th></tr></thead><tbody><tr><td>User A</td><td>Performed</td><td>Performed</td><td>-</td></tr><tr><td>User B</td><td>Performed</td><td>-</td><td>Performed</td></tr><tr><td>User C</td><td>Performed</td><td>Performed</td><td>-</td></tr><tr><td>User D</td><td>Performed</td><td>Performed</td><td>-</td></tr><tr><td>User E</td><td>-</td><td>-</td><td>-</td></tr></tbody></table></figure></td></tr><tr><td>SKAdNetwork Attribution Configuration</td><td><p>Select measurement type: Conversion</p><ul><li>Select in-app events: in-app-1, in-app-2, in-app-3</li><li>In the SKAdNetwork <a href="./skadnetwork-skan-overview-dashboard-by-appsflyer#dashboard-settings">dashboard</a>, you select one of the events to calculate the converted users metric. You can change the selected event as needed. </li></ul></td></tr><tr><td>Selected metrics</td><td><h4>In-app related metrics available</h4><figure><table><thead><tr><th>Metric </th><th>App </th><th>in-app-1</th><th>in-app -2</th><th>in-app- 3</th></tr></thead><tbody><tr><td>Installs</td><td>5</td><td> </td><td> </td><td> </td></tr><tr><td>Conversions</td><td>4</td><td> </td><td> </td><td> </td></tr><tr><td>Unique users</td><td> </td><td>4</td><td>3</td><td>1</td></tr><tr><td>eCPA</td><td>$ 7.5</td><td> </td><td> </td><td> </td></tr></tbody></table></figure><p><strong>Note! </strong>Because the designated Conversion Event is in-app 1, the value 4 is used to calculate app-level metrics and for in-app-1 metrics. </p></td></tr><tr><td> </td><td><p><a href="./skan-raw-data-reports">Raw data reports are available via Data Locker</a></p><ul><li>Device postbacks:5 rows</li><li>Installs: 5 rows</li><li>In-app events: 8 rows</li></ul></td></tr><tr><td>Developer considerations</td><td><ul><li>Make sure you send in-app events users perform.</li><li>SKAdNetwork Solution disregards event values (except in relation to revenue measurement.</li></ul></td></tr></tbody></table>
+<table><thead><tr><th>Factor</th><th>Remarks</th></tr></thead><tbody><tr><td>Example</td><td><ul><li>5 users (A-E) install the app</li><li>They perform 0-3 different in-app events, as depicted in the table</li><li>Cost data provided by API from the ad network: $30</li></ul><h4><span id="inapp-events-performed-by-users"></span>In-app events performed by users</h4><figure><table><thead><tr><th> </th><th>in-app-1</th><th>in-app-2</th><th>in-app-3</th></tr></thead><tbody><tr><td>User A</td><td>Performed</td><td>Performed</td><td>-</td></tr><tr><td>User B</td><td>Performed</td><td>-</td><td>Performed</td></tr><tr><td>User C</td><td>Performed</td><td>Performed</td><td>-</td></tr><tr><td>User D</td><td>Performed</td><td>Performed</td><td>-</td></tr><tr><td>User E</td><td>-</td><td>-</td><td>-</td></tr></tbody></table></figure></td></tr><tr><td>SKAdNetwork Attribution Configuration</td><td><p>Select measurement type: Conversion</p><ul><li>Select in-app events: in-app-1, in-app-2, in-app-3</li><li>In the SKAdNetwork <a href="./skadnetwork-skan-overview-dashboard-by-appsflyer#dashboard-settings">dashboard</a>, you select one of the events to calculate the converted users metric. You can change the selected event as needed. </li></ul></td></tr><tr><td>Selected metrics</td><td><h4><span id="inapp-related-metrics-available"></span>In-app related metrics available</h4><figure><table><thead><tr><th>Metric </th><th>App </th><th>in-app-1</th><th>in-app -2</th><th>in-app- 3</th></tr></thead><tbody><tr><td>Installs</td><td>5</td><td> </td><td> </td><td> </td></tr><tr><td>Conversions</td><td>4</td><td> </td><td> </td><td> </td></tr><tr><td>Unique users</td><td> </td><td>4</td><td>3</td><td>1</td></tr><tr><td>eCPA</td><td>$ 7.5</td><td> </td><td> </td><td> </td></tr></tbody></table></figure><p><strong>Note! </strong>Because the designated Conversion Event is in-app 1, the value 4 is used to calculate app-level metrics and for in-app-1 metrics. </p></td></tr><tr><td> </td><td><p><a href="./skan-raw-data-reports">Raw data reports are available via Data Locker</a></p><ul><li>Device postbacks:5 rows</li><li>Installs: 5 rows</li><li>In-app events: 8 rows</li></ul></td></tr><tr><td>Developer considerations</td><td><ul><li>Make sure you send in-app events users perform.</li><li>SKAdNetwork Solution disregards event values (except in relation to revenue measurement.</li></ul></td></tr></tbody></table>
 
 #### Example C: Engagement measurement
 
 | Factor | Remarks |
 | --- | --- |
-| Example | 5 users install the app and open the app the number of times listed in the table.<br /><br />**App opens**<table><thead><tr><th></th><th>Number of times the event is performed</th></tr></thead><tbody><tr><td>User A</td><td>63</td></tr><tr><td>User B</td><td>10</td></tr><tr><td>User C</td><td>5</td></tr><tr><td>User D</td><td>1</td></tr><tr><td>User E</td><td>-</td></tr></tbody></table> |
+| Example | 5 users install the app and open the app the number of times listed in the table.<br /><br />**<span id="app-opens"></span>App opens**<table><thead><tr><th></th><th>Number of times the event is performed</th></tr></thead><tbody><tr><td>User A</td><td>63</td></tr><tr><td>User B</td><td>10</td></tr><tr><td>User C</td><td>5</td></tr><tr><td>User D</td><td>1</td></tr><tr><td>User E</td><td>-</td></tr></tbody></table> |
 |  | Number of times the event is performed |
 | User A | 63 |
 | User B | 10 |
@@ -539,6 +547,8 @@ In the table:
 | Selected metrics | Sample metrics available<ul><li>Installs: 5</li><li>Conversions: 4</li><li>Sessions: 79</li></ul> |
 | Number of raw data rows per report | [Raw data reports are available via Data Locker](/docs/skan-raw-data-reports)<ul><li>Device postbacks:5 rows</li><li>Installs: 5 rows</li><li>In-app events: 4 rows; a row is equivalent to a single session<br />Note: In this example, there are four different rows as four different unique users made this event.<br />To count and calculate the number of actual event occurrences, the rows will have a minimum and a maximum event count attached to them.</li></ul> |
 | Developer considerations | On each occasion the user performs the selected engagement event: send the in-app event. SKAdNetwork counts the number of times you send the event. |
+
+<div id="skan-conversion-studio-api" />
 
 <Accordion title="SKAN Conversion Studio API">
 
@@ -559,6 +569,8 @@ If you have many apps for which you want similar SKAN conversion value configura
 * SKAN Conversion Studio API isn't available for agencies.
 
 </Accordion>
+
+<div id="skan-schema-analysis" />
 
 <Accordion title="SKAN schema analysis">
 
@@ -633,6 +645,8 @@ Ensuring that all selected events occur within the first activity window prevent
 
 ## Additional procedures
 
+<div id="change-skan-measurement-mode" />
+
 <Accordion title="Change SKAN measurement mode">
 
 Consider:
@@ -694,6 +708,8 @@ The S2Sflow is as follows:
 
 </Accordion>
 
+<div id="add-ssot-to-fixed-mode-measurements" />
+
 <Accordion title="Add SSOT to fixed mode measurements">
 
 > 📘 **Note**
@@ -710,6 +726,8 @@ If you have the Revenue or Engagement measurement mode set up, Single Source of 
    * The Single Source of Truth toggle is automatically turned on.
    * Your fixed mode measurement ranges are minimally changed, to allow SSOT some conversion value space.
 4. Click **Save.**
+
+<div id="conversion-value-decrease" />
 
 <Accordion title="Conversion value decrease">
 
@@ -767,6 +785,8 @@ User then did another session event - it will remain on CV 3
 
 </Accordion>
 
+<div id="support-anonymized-users" />
+
 <Accordion title="Support Anonymized Users">
 
 Enabling the **Support anonymized users** toggle ensures that SKAN conversion values are accurately updated for [anonymized users](/docs/apply-privacy-preserving-sdk-methods#anonymize-user-information), while still protecting their privacy.
@@ -782,6 +802,8 @@ By activating the **Support anonymized users** toggle, the system creates hashed
 </Accordion>
 
 </Accordion>
+
+<div id="ssot-mapping-patterns" />
 
 <Accordion title="SSOT mapping patterns">
 
@@ -834,6 +856,8 @@ A: Yes. That is now considered valid behavior under the updated validation logic
 
 </Accordion>
 
+<div id="specifications-and-limitations" />
+
 <Accordion title="Specifications and limitations">
 
 | Spec | Remarks |
@@ -845,3 +869,5 @@ A: Yes. That is now considered valid behavior under the updated validation logic
 | Geo restrictions | Users whose access is limited to specific media sources and geos may not be able to see or access the SKAN Conversion Studio. |
 
 </Accordion>
+
+<div data-zendesk-anchors="01H7Z08MFDASBCBJD18QTXYSXK=skan-conversion-studio-basics 01H7Z08MFDX3VYJTSWXQ5HQ7BZ=measurement-principles-and-definitions 01H7Z08MFDWRGVNXB62Z6CT1G7=s2s-principles 01H7Z08MFDB76C6Z5SSXHFT71P=setting-up-conversion-values-in-skan-conversion-studio 01H7Z08MFDEAYHJAG9XA2TGBWV=important 01H7Z08MFD7VY1QP85W0YPK8RC=skan-4 01H7Z08MFD3SWVZK68K45NYDP8=custom 01H7Z08MFDZ1EKDQNZWGF7DHK9=fixed-modes h_01J14HX28C9TFDP0MDRYWFV6Q3=note 01H7Z08MFDAYVJKJBT08R82N26=fixed-mode-measurement 01H7Z08MFDCJGZGQR2JR4WQVHR=decode 01H7Z08MFDFE345QWHF77RGTD7=measurement-components 01H7Z08MFE5G01NGY5EFTAW93M=single-source-of-truth 01H7Z08MFERDJHSD8NT5KN7DKN=inapp-event-component 01H7Z08MFETMGAE67X499V4092=revenue-component 01H7Z08MFEQG2HRJBWBYFTW3ZK=funnel-component 01H7Z08MFE22J8DDBDNJ18KBEJ=priority-measurement-component 01H7Z08MFES844SS08HS17Y29R=lock-window 01H7Z08MFE61QCC0MZW5RJ910B=activity-window 01H7Z08MFET64PSAVMREQ4HP4S=additional-information 01H7Z08MFEKP9WNGJD2GBVKB0P=view-cv-mapping 01H7Z08MFETCB428W1TXTH2HJ8=csv-mapping-file-columns 01H7Z08MFE5CBQK024CF8FARJ9=conversion-value-capacity-formula 01H7Z08MFETZVQSNWX639E56SK=maximized-custom-cv-examples 01H7Z08MFEXME7RV67XTZRDWJE=example-1 01H7Z08MFEHRF4656X5AR301D8=example-2 01H7Z08MFEK0725CN35TP3MPYT=example-3 01H7Z08MFES7W3EF2JJ8B75K99=example-4 01H7Z08MFF2JXA0BFNKCW3ZCZ7=priority-measurement-detailed-example 01H7Z08MFFXAAC37MBV0ES6ADQ=measurement-priorities-setting-example 01H7Z08MFFJ9TQMH0Q93B7N1A8=user-journey-scenarios 01H7Z08MFFNBXECB8A5Y0KH9C8=fixed-mode-examples h_01JJH6WZY2QMKAR1C7B5JTMMKE=note-1 01H7Z08MFFVKZN3Y2R1ZEVEW4D=example-a-revenue-measurement 01H7Z08MFFNBA5786R5XZDA5FG=example-b-conversion-measurement 01H7Z08MFFA7C6HWQPADZXQQNC=inapp-events-performed-by-users 01H7Z08MFF1PEE91J5CJN1GC7V=inapp-related-metrics-available 01H7Z08MFF8V718C23PQ2NG3C3=example-c-engagement-measurement 01H7Z08MFF4PRHSR8NCJ1Q78WM=app-opens 01H7Z08MFFVS6MYC9EB3KP0H2Y=skan-conversion-studio-api h_01K15P5NJ4CGSH4YR9JXD93PD9=skan-schema-analysis h_01K15P7QQSDHNY1ZN3FC37XTHP=conversion-values-tab 01K15PMAQGDZ4SFKEERXVRR0C2=revenue-tab 01K15PZK56TVQ6WHGYCA54AA4Q=events-tab 01H7Z08MFFPZ4GKM5GFMAE2HDJ=additional-procedures 01H7Z08MFFPKCX5TFQQTMYJEGW=change-skan-measurement-mode 01H7Z08MFF78F9NMWJATYE2YFE=disable-skan-measurement 01H7Z08MFFD4T3D71A6R9K83A3=report-events-by-servertoserver-api 01H7Z08MFFFAEW6NP0YAX773B3=add-ssot-to-fixed-mode-measurements h_01JJH6WZY2R2H1F9ZBGTR0FDNM=note-2 h_01HKVT9N2KFJQGCWVMGP59YWRH=conversion-value-decrease h_01HM3C8BEG5Z7ZRY12MF3Q4W4K=examples 01JCWF4HM4KKB0WC8MN00SV4XK=support-anonymized-users 01JCWFY9RZ7JSC63TVBTPRCYHH=important-1 h_01JRFAN7GT7K18ADDAYGVQ4GGT=ssot-mapping-patterns h_01JRFB0793MK8H75T7CGTNPDCK=half-and-half h_01JRFB1B9A44CRYVBRTK4CRQGP=pairing h_01JRFBAGEZP2GT3XZW4RT255M3=how-to-configure-mapping-patterns h_01JRFBBYER8QMW5XMBBCWFGDP1=faq 01H7Z08MFFG9EQFVEKN3AXE9DD=specifications-and-limitations" />

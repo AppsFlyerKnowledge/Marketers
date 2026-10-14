@@ -88,3 +88,5 @@ Verify  AppsFlyer mobile SDK versions:
    > ![TUNE-link-example2-en_us.png](https://files.readme.io/58f38eb0bb724b66d0c958454651e0950a54f6fd990220f2ac24f93ca89ba344-small-4410086650769.png)
 
 3. To complete the setup, go to the [Managing Mobile Offers with AppsFlyer guide](https://support.tune.com/hc/en-us/articles/1500008336641-Managing-Mobile-Offers-with-Appsflyer) in TUNE's help center, scroll down to Universal Links via OneLink and follow the instructions.
+
+<div data-zendesk-anchors="h_01HJZRGVZ1VQF4N93THDRT5YCJ=setting-up-tune-integration h_01HJZRGVZ1KJ80ZA1THKFZ535P=enabling-deep-linking-into-your-app h_01HJZRGVZ1ZC9G7M72V2HW4XDS=prerequisite h_01HJZRGVZ1GPR3NQQAXRBXV09Z=step-1-configure-links-for-your-campaigns h_01HJZRGVZ2F83PHABEWJXMMJ22=step-2-set-up-the-attribution-link h_01HJZRGVZ2435CGWY4FZ5FKKHV=example" />

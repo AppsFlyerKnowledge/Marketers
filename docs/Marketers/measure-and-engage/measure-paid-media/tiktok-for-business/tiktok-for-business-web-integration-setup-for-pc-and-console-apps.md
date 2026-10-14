@@ -50,6 +50,8 @@ In this part of the setup, you can also set up postbacks to TikTok Web via the T
 
 The integration with TikTok Web only supports sending postbacks for installs and in-app events.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The **Integration** tab comprises several sections, as described below.
@@ -113,6 +115,8 @@ Configure mapping of in-app event postbacks sent to TikTok Web. These events can
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generating an attribution link in the AppsFlyer UI isn't currently available. However, you can either use a cross-platform landing page with SmartScript or create a direct attribution link for your app (see table below).
@@ -128,17 +132,23 @@ Generating an attribution link in the AppsFlyer UI isn't currently available. Ho
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost isn't available for TikTok Web.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue isn't available for TikTok Web.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -175,3 +185,5 @@ Raw data exports and API responses include the `tiktokglobal_int` PID in the `me
 | Trait | Description |
 | --- | --- |
 | Clicks and impressions (Temporary limitation) | Clicks and impressions for campaigns targeting PC & Console apps are temporarily not available from TikTok SRN. |
+
+<div data-zendesk-anchors="h_01K8X90869H29Q9N873FAT8BM4=warning h_01K8X90869QTX2RG0KHHM8EHAT=overview h_01K8X9086AJ6B9BKNF0EZQASCJ=prerequisite h_01K8X9086ADTE56DR3MK8MXAFR=activating-partner-in-appsflyer h_01K8X9086AMHZR7GADTH8N07DZ=setting-up-tiktok-web-in-appsflyer h_01K8X9086AHN8761VPM4QA7E6S=integration-tab h_01K8XAAM5SH1XXNX0DNGGS5NHT=activate-partner h_01K8XAATC3M5NW722QD93DRN94=general-settings h_01K8X9086A2FFDCRE2JHXQHGET=note enable-viewthrough-attribution=enable-view-through-attribution h_01K8XAB2SK68WTGYZY7EGHR4SZ=enable-view-through-attribution h_01K8XABK08NCFQSRN41ASKQ7SY=default-postbacks inapp-event-postbacks=in-app-event-postbacks h_01K8XAC3NAYY8S012K2W60TKBJ=in-app-event-postbacks h_01K8X9086A001XKD94G50XY708=attribution-link-tab h_01K88N0TDSFDX5J22YWZPF2J1N=tip h_01K8X9086AFH7J75J9K1QRV1DR=cost-tab h_01K8X9086ACM5WBH6GW243A0PZ=ad-revenue-tab h_01K8X9086AEHV42XZZKA0ATBH2=permissions-tab h_01K8X9086AARVTEDRMQW32BABF=setting-up-campaigns-in-tiktok-web-for-pc-and-console-apps TikTok-view=view-web-to-app-attribution-data view-webtoapp-attribution-data-from-november-2-2025=view-web-to-app-attribution-data h_01K88J8JFNEYBZNR18133NMRP9=view-web-to-app-attribution-data h_01K88J8JFNMHCVZ0C34E3D7AST=view-in-the-dashboard h_01K88J8JFN8W2572N92466YFZQ=view-in-raw-data-and-api-reports h_01KB58BEK7MDZGT7G7RQ9VK9MZ=traits-and-limitations" />

@@ -83,3 +83,5 @@ In certain instances, due to raw data restrictions from Snapchat, installs via [
 > 📘 **See also**
 >
 > [Snapchat and AppsFlyer SKAdNetwork interoperation](/docs/skan-interoperation-with-snapchat)
+
+<div data-zendesk-anchors="h_01HE7RM7ME5JTFFC2MYSBG6SWC=source-of-discrepancies-and-solutions h_01HE7RM7MEYAZ42A1Y7X8J008Q=different-lookback-windows h_01HE7RM7ME31WACZRZDXRW5CNR=solutions h_01HE7RM7METGPE38QV8FAMW9WA=time-zone-differences h_01HE7RM7MEC91WZDZQMXZ4Q7DV=solution multichannel-source-attribution=multi-channel-source-attribution h_01HE7RM7ME2NAB9ET38P5JD82E=multi-channel-source-attribution h_01HE7RM7MFP65KYHFDZZTC8K3J=solution-1 h_01HE7RM7MFR4CSEK2HCZWB8BT9=fewer-installs-in-raw-data h_01HE7RP6VPPAY2CCSNTJ0RVSXM=see-also" />

@@ -30,6 +30,8 @@ The following sections relate to the [Website Attribution](/docs/pba-website-att
 
 ## Settings
 
+<div id="filtering-options" />
+
 <Accordion title="Filtering options">
 
 Refine PBA dashboard results by using the (A) date picker, (B) main filters, and (C) additional filters to fit the analysis to your needs.
@@ -57,6 +59,8 @@ Refine PBA dashboard results by using the (A) date picker, (B) main filters, and
 <table><tbody><tr><th>Filter</th><th>Description/values</th><th>Website Attribution </th><th>Web-Assisted Installs</th><th>Conversion<br/>Paths</th></tr><tr><td>Date picker</td><td><p>The date one of the following PBA conversion events occurred: </p><ul><li>App install</li><li>Web conversion</li><li>Mobile conversion</li></ul></td><td><p>Y</p></td><td><p>Y</p></td><td><p>Y</p></td></tr><tr><td>Geo </td><td><p>List of countries/territories </p></td><td>Y</td><td><span>Y (1)</span></td><td><p><span>Y (2)</span></p></td></tr><tr><td>Install type</td><td>Organic, smart banner, custom link, paid</td><td>--</td><td><span>Y</span></td><td><span>--</span></td></tr><tr><td>Media channel</td><td>Ad, direct, email, referral, organic search, social</td><td>Y</td><td><span>Y</span></td><td><span>Y (2)</span></td></tr><tr><td>Mobile platform</td><td>Android, iOS</td><td>--</td><td><span>Y</span></td><td><span>--</span></td></tr><tr><td>Media source </td><td><p>Media source to which the event is attributed<span></span></p></td><td><p>Y</p></td><td><span>Y(1)</span></td><td><span> <font>Y (2)</font> </span></td></tr><tr><td><p>Media type</p></td><td><p>Includes paid, <a href="./owned-media-attribution">owned</a>, earned</p></td><td><p>Y</p></td><td>Y</td><td>Y (2)</td></tr><tr><td><p>Conversion events</p></td><td><p>Show paths that lead to the conversion event for the conversion path</p></td><td><p>Y</p></td><td><p>--</p></td><td><p><span>Y</span></p></td></tr><tr><td><p>Path length (steps) </p></td><td><p>Number of steps in the current conversion path view: Media source, media channel, media type</p></td><td><p>--</p></td><td><p>--</p></td><td><p>Y</p></td></tr><tr><td><p>Path duration (days)</p></td><td>Duration of the conversion starting with the first touchpoint</td><td>--</td><td>--</td><td>Y</td></tr><tr><td colspan="5"><p><strong>(1) </strong>In the web-assisted installs dashboard, you associate the filter with the web media source or the mobile media source. You can set multiple instances of the filter. Example case</p></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="grouping-options" />
 
 <Accordion title="Grouping options">
 
@@ -87,6 +91,8 @@ Dashboard data is grouped by, for example, media source, device, or country. Whe
 
 </Accordion>
 
+<div id="other-settings" />
+
 <Accordion title="Other settings">
 
 | Setting | Description |
@@ -112,3 +118,5 @@ PBA dashboards and reports are updated [daily](/docs/about-data-freshness-and-t
 PBA dashboards don't support local currency and data will be shown in USD.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HNJGN4BYRH14QXS4SWQAHR8D=pba-dashboards h_01HNJGN4BYF8NFYYWHG30RHEJH=settings h_01HNJGN4BYSHM9PFYQQ86ZR84X=filtering-options h_01HNJGN4BYVYY2MKK5G3RCS07W=filter-panel-in-pba-dashboards filters-and-date-picker=available-filter-dimensions-per-dashboard h_01HNJGN4BZ2KZAK120ZGT3B23W=available-filter-dimensions-per-dashboard h_01HNJGN4BZV94W8W2GBXCZF563=grouping-options 01EDDQYQ8RWQZZTEZY9AVT1M64=example 01EDDQYQ8R5JPZE30ETV70FJVN=other-settings h_01HNJGN4BZ9BMV7BQRQCKGYSSP=additional-information h_01HNJGN4BZFMG73SPZ1J4Z7TT5=traits-and-limitations" />

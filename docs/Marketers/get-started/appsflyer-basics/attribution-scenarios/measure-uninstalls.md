@@ -41,6 +41,8 @@ Uninstall metrics are available in the Unified dashboard and the user acquisitio
 
 The following are some examples of what you can learn from measuring uninstalls, and how you can use the data to optimize campaigns and user engagement.
 
+<div id="compare-the-quality-of-sources" />
+
 <Accordion title="Compare the quality of sources">
 
 By comparing the quality of users acquired from different sources (media sources, campaigns, ad creatives, and geo), you can determine the media sources with the lowest uninstall rates, and reallocate funds to them.
@@ -59,6 +61,8 @@ Based on these insights, you could reallocate more of your budget to Media sourc
 
 </Accordion>
 
+<div id="share-uninstall-data-with-ad-networks-for-optimization" />
+
 <Accordion title="Share uninstall data with ad networks for optimization">
 
 Sending uninstall event postbacks to the ad networks you work with is useful for optimizing user acquisition campaigns. You can send the uninstall event by [mapping af\_uninstall to your ad network](/docs/measure-uninstalls#mapping-the-uninstall-event). Once the mapping is complete, an event is sent each time a user is identified as having uninstalled the app. Ad networks can use this information to determine which users are less engaged and focus on getting more engaged users.
@@ -75,6 +79,8 @@ Based on insights from the previous campaign, Media source A creates a campaign 
 This allows Media source A to optimize audience targeting to make sure that your campaign budget is not wasted on users who don't need to see certain campaign ads.
 
 </Accordion>
+
+<div id="exclude-uninstalls-from-retargeting-campaigns" />
 
 <Accordion title="Exclude uninstalls from retargeting campaigns">
 
@@ -179,6 +185,8 @@ Android uninstall measurement is available by configuring uninstall measurement 
       AppsFlyer uses silent push notifications solely to measure uninstalls or identify inactive users and does not use them for any other purposes.
 
 </Accordion>
+
+<div id="legacy-http" />
 
 <Accordion title="[Deprecated] Legacy HTTP">
 
@@ -316,6 +324,8 @@ If a P12 certificate is provided and validated, app uninstall measurement is ena
 1. In AppsFlyer, from the side menu, select **Settings** > **App Settings**.
 2. Go to **Attribution** > **Uninstall measurement** and turn off **Enable uninstall measurement.**
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -323,3 +333,5 @@ If a P12 certificate is provided and validated, app uninstall measurement is ena
 | CUID | CUID isn't sent in uninstall postbacks. |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HB8CXQ4824V2WEPYGK8YS4DC=overview h_01HB8CXQ48JEJECC1HR79DXCRK=how-does-it-work h_01HB8CXQ48E2SRN95MH4E2H7ZH=how-to-use-uninstall-data h_01HB8CXQ48HX9RH50G45FZMZTK=compare-the-quality-of-sources h_01HB8CXQ488E22GPCEBE69VQ3M=share-uninstall-data-with-ad-networks-for-optimization h_01HB8CXQ48JTET73GH0QQBX5HF=exclude-uninstalls-from-retargeting-campaigns h_01HB8CXQ4810HTB45FAS5ZVRHF=setting-up-uninstall-measurement h_01HB8CXQ489HRF72VRZ4G532GX=implementation-procedures h_01HB8CXQ48ZD5Y0RKTG1W51TKW=connect-firebase-cloud-messaging-to-appsflyer-android h_01HB8CXQ4865MNVG0VERSNSE3F=http-v1 h_01HB8CXQ48H079WQ6Q6G0XSQC7=legacy-http h_01HB8CXQ48CVA9B8B78W0H357C=configure-uninstall-measurement-in-appsflyer h_01HB8CXQ48SW2TT5Z85XD3XWT6=testing-uninstall-measurement h_01HB8CXQ499ABX9ZGDFB1VAE8W=mapping-the-uninstall-event h_01HB8CXQ49F2ARQTEV8Q032P9V=limitations h_01HB8CXQ49Y5NCG7GK93HXHYMD=turning-off-uninstall-measurement h_01HB8CXQ49WXZS4M6CK5XG1BCX=to-turn-off-uninstall-measurement h_01HB8CXQ4916CJ9NDZWGWQHKSA=traits-and-limitations" />

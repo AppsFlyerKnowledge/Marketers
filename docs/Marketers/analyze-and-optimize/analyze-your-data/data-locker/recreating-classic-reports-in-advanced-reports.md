@@ -78,3 +78,5 @@ In the End-user events Advanced Report, set the **Conversion type** filter to ma
 > 📘 **See also**
 >
 > * [About Data Locker Advanced Reports](/docs/about-data-locker-advanced-reports)
+
+<div data-zendesk-anchors="about-recreating-classic-reports=overview h_01KV55PGFSSE3GWZ9ZW0TXSVNB=overview reproduce-classic-reports-in-the-engagements-advanced-report=recreate-classic-reports-in-the-engagements-advanced-report h_01KV55PGFSBHV59ZA7KFVQVM1S=recreate-classic-reports-in-the-engagements-advanced-report reproduce-classic-reports-in-the-conversions-advanced-report=recreate-classic-reports-in-the-conversions-advanced-report h_01KV55PGFSK35M9XC7EHVDX53X=recreate-classic-reports-in-the-conversions-advanced-report reproduce-classic-reports-in-the-end-user-events-advanced-report=recreate-classic-reports-in-the-end-user-events-advanced-report h_01KV55PGFSCD4AQQWRBY0MHJGK=recreate-classic-reports-in-the-end-user-events-advanced-report h_01KV55PGFSF8QVSBAWA3XN7A8W=traits-and-limitations h_01KV8SEHV9KVY6R5HQA6K2M2JZ=see-also" />

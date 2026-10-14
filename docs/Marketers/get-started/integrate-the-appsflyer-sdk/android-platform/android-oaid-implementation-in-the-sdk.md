@@ -28,7 +28,7 @@ The Open Anonymous Device Identifier (OAID) is a user-resettable unique identifi
 
 The OAID is usually used for ad measurement and install attribution on devices where Google Play Services aren't available (meaning where Google Advertising ID does not exist).
 
-The OAID is readable on all devices using an SDK provided by the MSA, or on Huawei devices using the Huawei Mobile Service (HMS) Core SDK.
+<span id="supported-devices"></span>The OAID is readable on all devices using an SDK provided by the MSA, or on Huawei devices using the Huawei Mobile Service (HMS) Core SDK.
 
 ## Integration
 
@@ -56,6 +56,8 @@ The integration of OAID consists of 3 steps:
 
 </Accordion>
 
+<div id="huawei-hms-sdk" />
+
 <Accordion title="Huawei HMS SDK">
 
 **To integrate and use the Huawei HMS SDK**:
@@ -78,6 +80,8 @@ Android Unity
 
 [setCollectOAID(false) API](https://dev.appsflyer.com/hc/docs/api#setcollectoaid) or [setDisableAdvertisingIdentifiers](https://dev.appsflyer.com/hc/docs/api#setdisableadvertisingidentifiers)
 
+<div id="setting-oaid-manually" />
+
 <Accordion title="Setting OAID manually">
 
 If your app already collects OAID, you can skip the AppsFlyer OAID plugin integration and simply set the OAID value into the AppsFlyer SDK manually, using the [setOaidData API](https://dev.appsflyer.com/hc/docs/oaid#setting-oaid-manually).
@@ -85,3 +89,5 @@ If your app already collects OAID, you can skip the AppsFlyer OAID plugin integr
 </Accordion>
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HG8PXBZS1SN3SY3AAH1EKMNP=about-oaid h_01HG8PXBZS26P9X1TQ7J4WQNF5=integration h_01HG8PXBZSM0QYQE4C9S1FBFB1=msa-sdk h_01HG8PXBZS3HP9X1AZ7HQ8C34Y=huawei-hms-sdk h_01HG8PXBZSW5HNTTDRQ7DFFF4D=additional-information h_01HG8PXBZS8Z3MTQWFN5R6FFA8=opting-out-of-oaid-collection h_01HG8PXBZSYNS8R1PCW4YXHFBA=setting-oaid-manually" />

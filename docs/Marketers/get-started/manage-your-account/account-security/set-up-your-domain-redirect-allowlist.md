@@ -30,6 +30,8 @@ Use the redirect allowlist to define a list of specific root domains and subdoma
 
 You can set up your allowlist manually or via CSV file. Before setup, it's recommended to verify your trusted domain list with your security team.
 
+<div id="manual-setup" />
+
 <Accordion title="Manual setup">
 
 **To set up manually:**
@@ -62,6 +64,8 @@ Once saved, the allowlist will be enforced on clicks within about an hour.
 
 </Accordion>
 
+<div id="setup-via-csv-file" />
+
 <Accordion title="Setup via CSV file">
 
 **To set up via CSV file upload:**
@@ -90,6 +94,8 @@ Once saved, the redirect allowlist will be enforced on clicks within about an ho
 
 </Accordion>
 
+<div id="edit-the-redirect-allowlist" />
+
 <Accordion title="Edit the redirect allowlist">
 
 You can add or delete domains from the allowlist at any time.
@@ -112,3 +118,5 @@ You can add or delete domains from the allowlist at any time.
 | Applicability | <ul><li>The allowlist affects **all links created via AppsFlyer**, either with [OneLink](/docs/onelink-guide), single-platform attribution links via [partner integration](/docs/set-up-an-integrated-partner#attribution-link-tab), or [direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links) for CTV, PC, and console platforms, no matter when they were created.</li><li>Include in the allowlist the domains of any URL set as a value on the link redirection setup specified here, whether it's a custom website/landing page, the Google Play/App Store, or another app store website. The allowlist supports and protects redirections for the following:<ul><li>Link parameters:<ul><li>`af_r`</li><li>`af_web_dp`</li><li>`af_ios_url`</li><li>`af_android_url`</li></ul></li><li>OneLink template redirection setup for iOS, Android, and Desktop.</li><li>`af_dp` with a web URL value, however, this is not a recommended value type. This parameter is intended to populate a [URI scheme](/docs/about-link-structure-and-parameters#af_dp) to open your app.</li></ul></li><li>**Link previews may show fallback content:** When AppsFlyer generates a social preview for a link, it validates the link’s redirect parameters against your redirect allowlist. If it isn’t, AppsFlyer won’t fetch a preview from that page and will instead show a fallback preview.</li></ul> |
 | Domains | <ul><li>The allowlist must include at least one domain.</li><li>Only root domains or subdomains are allowed, not specific paths. Don't include `**https://**` or `**http://**` protocols in the value.</li><li>When adding a root domain, it will apply to all subdomains within the root domain.<br />For example, if the root domain "website.com" is added, it will cover "abc.website.com" and "xyz.website.com" as well.</li><li>Redirection is only supported for publicly accessible domains.</li><li>Don't include AppsFlyer domains (e.g., onelink.me, app.appsflyer.com) or other domains that have their own redirection mechanism (e.g., bit.ly) to fortify the predictability of the redirection of your links.</li><li>Up to 250 domains/subdomains can be added to the allowlist. You can view the number of domains already added by going to the redirect allowlist, where the number of domains is indicated.</li></ul> |
 | Redirection | If you’re unsure whether a domain your link redirects to is allowed:<br /><br />Review the allowlist to make sure it’s included.<br /><br />Or<br /><br />Use the [Link Discovery](/docs/discover-your-campaign-link-parameters-and-behavior) tool. When a link is entered, an alert will appear in the **Parameters** column (under **Redirection**) if a domain isn’t in the allowlist. |
+
+<div data-zendesk-anchors="overview=-about-the-redirect-allowlist h_01HYTJSH4YMAJ3CV88KZ9JD9XR=-about-the-redirect-allowlist h_01HY0BNRBEN91348744YME42SW=set-up-your-redirect-allowlist h_01HY04JEK8J3664HE8J9783S61=manual-setup h_01HY04JEK8Y51EG3H6WFKHYYH4=setup-via-csv-file h_01HY04JEK840Q4DZ2SRMTB7HRE=edit-the-redirect-allowlist h_01J6S6HS0H0M6GQ81WGZ3XT0P9=traits-and-limitations" />

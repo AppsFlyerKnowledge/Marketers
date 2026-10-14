@@ -32,6 +32,8 @@ This section describes how to create a new collaboration.
 
 **To create a collaboration, follow the steps below:**
 
+<div id="step-1-access-collaborations" />
+
 <Accordion title="Step 1. Access collaborations">
 
 **To access DCP collaborations:**
@@ -39,7 +41,7 @@ This section describes how to create a new collaboration.
 1. Access the Data Collaboration Platform by clicking **Collaborate** > **Data Clean Room**, in the AppsFlyer side menu. 
 
    ![Click Data Clean Room.png](https://files.readme.io/3ed65908a57c2a9642bb3afc246abfa490d2039fa1219d1484ce30c9a0fa0f10-42204335550481.png)
-2. (Optional) Add collaboration [Terms and Conditions](#h_01KCRSBK366XXDYWC1BFXXDXF5). This can also be done later.
+2. (Optional) Add collaboration [Terms and Conditions](#terms-and-conditions). This can also be done later.
 3. Go to the **Collaborations** tab > **+ New collaboration**.
 
    ![From collaborations tab click New collaboration w arrow New UI.png](https://files.readme.io/63945589565b79f71d82453c00df9e088fc9a9eaef6dd6a14ecc1130b96c19ca-43774064785425.png)
@@ -49,6 +51,8 @@ This section describes how to create a new collaboration.
    [![New collaboration - empty state.png](https://files.readme.io/8f209f87aaf32315fed0fae46bd55e7bb101084ae6983b08e1566c64a89f0a8e-32192739280273.png)](https://files.readme.io/8f209f87aaf32315fed0fae46bd55e7bb101084ae6983b08e1566c64a89f0a8e-32192739280273.png)
 
 </Accordion>
+
+<div id="step-2-set-collaboration-details" />
 
 <Accordion title="Step 2. Set collaboration details">
 
@@ -62,6 +66,8 @@ This section describes how to create a new collaboration.
 ![Set collaboration details.png](https://files.readme.io/1af9e94bfac35aa85a8857e8aa117939245cf73f7c83700d2fe1c77bf12d6cc3-32324652610961.png)
 
 </Accordion>
+
+<div id="step-3-add-a-collaborator-optional" />
 
 <Accordion title="Step 3. Add a collaborator (optional)">
 
@@ -80,6 +86,8 @@ A collaborator is the brand partner you invite to your collaboration. Once the c
    Once the collaboration is created, the collaborator will receive a collaboration invite in their inbox. When they sign into AppsFlyer from the email, they'll be able to start collaborating with you.
 
 </Accordion>
+
+<div id="step-4-associate-sources-optional" />
 
 <Accordion title="Step 4. Associate sources (optional)">
 
@@ -119,6 +127,8 @@ That's it! Your collaboration is ready. Now it's time for you and your collabora
 
 This section describes how to manage your existing collaborations.
 
+<div id="general-actions" />
+
 <Accordion title="Associate or manage sources">
 
 **To manage associated sources:**
@@ -148,6 +158,8 @@ This section describes how to manage your existing collaborations.
 
 </Accordion>
 
+<div id="edit-or-suspend-a-collaboration" />
+
 <Accordion title="Edit or suspend a collaboration">
 
 **To edit, rename, or suspend a collaboration:**
@@ -166,6 +178,8 @@ This section describes how to manage your existing collaborations.
 > * Once a collaboration is suspended, you can reactivate it by clicking **Reactivate collaboration** from the same menu.
 
 </Accordion>
+
+<div id="invite-team-members" />
 
 <Accordion title="Invite team members">
 
@@ -200,7 +214,7 @@ You can invite all or some members of your team to the collaboration. Once invit
 
 Enforce legal governance that applies to all collaborations.
 
-<div id="h_01KCRSBK366XXDYWC1BFXXDXF5" />
+<div id="terms-and-conditions" />
 
 <Accordion title="Terms and conditions">
 
@@ -241,3 +255,5 @@ You can update the content (or URL) of your existing Terms and Conditions.
 > * If a collaborator doesn’t accept the Terms and Conditions while the collaboration is active, their non-acceptance won’t affect existing data or active audiences.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01JJPMS2D6P3Q9H22FCJ73K0XC=about-collaborations h_01JJPN6P4A6XHE3NN7A2V9GDSY=create-a-collaboration h_01JJS67943FHXD9SDRAKE69DZ1=step-1-access-collaborations h_01JJS679434FJNTWD25J3R8MJW=step-2-set-collaboration-details h_01JJS67943DM2X478959482YB7=step-3-add-a-collaborator-optional h_01JJS67943NKA5051CF8CNW05V=step-4-associate-sources-optional h_01KCP7J826VDPJV0J6WA6TTZNR=optional-set-custom-data-permissions-by-source additional-information=manage-collaborations h_01JG9CWR6DNKA1N67WR61PR05W=manage-collaborations 01JH5HBXYYT56AP6QJXNSBMT4G=general-actions h_01JJPMS2D7FTXTKG1E50RCWTX5=associate-new-sources h_01JWX0XGH0X5AKQ0WE0DP7SMJT=associate-new-sources h_01JWX0Z31E4SGZKF3VNBVME3X6=manage-sources h_01JWX0FYB6PSV600DJSGVMBYHR=edit-or-suspend-a-collaboration h_01JK30ZKC1T298TNVXK9SP17EE=notes-on-suspended-collaborations h_01JWX0FYB68MRHEPY8SNDNC481=invite-team-members h_01KCRS9CDFMKFKD4E5FDQFTBKY=administer-account h_01KCRSBK366XXDYWC1BFXXDXF5=terms-and-conditions h_01KD2R4W1BZXSXE3ERXM3DHGJW=apply-terms-and-conditions h_01KD2R6FX1EG6GBVJR2168PKDQ=update-existing-terms-and-conditions h_01KCRV295BXFV02072CFR5ZKQF=notes" />

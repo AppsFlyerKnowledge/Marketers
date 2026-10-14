@@ -48,7 +48,7 @@ The report shows a single version of ad revenue data of one day aggregated to th
 
 **Note:** Separate reports provide the organic and retargeting revenue data. These reports are identical in structure and availability.
 
-[Download the Ad revenue single version report data sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vSuZYSPuAWIG-MappxQDIT3sl8UmN6MLKP2SKsbREekVAvKSHuUAUAtUE6JapanANJbKsTzCOID8z7G/pub?output=xlsx).
+<span id="download-the-report-data-sample"></span>[Download the Ad revenue single version report data sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vSuZYSPuAWIG-MappxQDIT3sl8UmN6MLKP2SKsbREekVAvKSHuUAUAtUE6JapanANJbKsTzCOID8z7G/pub?output=xlsx).
 
 #### Data sources
 
@@ -135,6 +135,8 @@ bucket
 * **h:** single version creation hour
 
 </Accordion>
+
+<div id="ad-revenue-versioned-report-device-level" />
 
 <Accordion title="Ad revenue (versioned)">
 
@@ -453,7 +455,7 @@ bucket
 
 The device-level store revenue report specifies in-app purchase and auto-renewable subscription events captured by ROI360 products. These events include unique ROI360 monetization-related dimensions. Customer-issued in-app events are not included in this report.
 
-[Download the device-level stores revenue report data sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vSpomvcf2axYeSFcCh0kEx3ShYYRGVfF9WYZXG1UYBkeymeVfh8mcypAOpq2drqE3zhdmbcmrMtahsl/pub?output=csv)
+<span id="download-the-report-data-sample::8cbba4e3"></span>[Download the device-level stores revenue report data sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vSpomvcf2axYeSFcCh0kEx3ShYYRGVfF9WYZXG1UYBkeymeVfh8mcypAOpq2drqE3zhdmbcmrMtahsl/pub?output=csv)
 
 #### Data sources
 
@@ -529,3 +531,5 @@ bucket
 * **version**: The version’s name is the epoch timestamp of the version creation date and time, e.g., **version=1685588879**.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HMBTDD8TASZ2NEBXP7CZ3Q81=revenue-etl h_01HME0BBF2M47M2AV437RYQ070=reports h_01HETBAQVVYW14END06HBPBQSN=ad-revenue-single-version-report-device-level h_01HETBAQVVZB87JNT0JVYSP80D=download-the-report-data-sample the-report-data-sources=data-sources h_01HETBAQVVSKVDM4J90A0WGFJW=data-sources the-report-data-flow=data-flow h_01HETBAQVV97R7G6F67RM6K62K=data-flow h_01HETBAQVVKDAWW2S98TG6682S=when-is-the-report-data-available h_01HETBAQVVFSDRW778VQSSE107=how-to-subscribe-to-the-report how-to-access-the-report-in-dl=how-to-access-the-report-in-your-bucket h_01HETBAQVV15T92VXRHG2CP2KJ=how-to-access-the-report-in-your-bucket the-report-folder-hierarchy-in-aws=report-folder-hierarchy h_01HETBAQVVA750VTE1ABSM2M47=report-folder-hierarchy h_01HETBAQVVCB2SYMW9876HPE7N=ad-revenue-versioned-report-device-level data-sources=data-sources-1 h_01HMTZ9VQ5WE6D7E5NEBYH71SZ=data-sources-1 data-flow=data-flow-1 h_01HMTZ9VQ5PS8G9JTQ2YXF1G7X=data-flow-1 h_01HETBAQVVP1M40KHB66AW545S=when-are-the-report-versions-available how-to-subscribe-to-the-report::cae4aa15=how-to-subscribe-to-the-report-1 h_01HMTZ9VQ5BBFNNE7Z8EP084CF=how-to-subscribe-to-the-report-1 how-to-access-the-report-in-your-bucket=how-to-access-the-report-in-your-bucket-2 h_01HMTZ9VQ5FGBC56AP4R49P4BX=how-to-access-the-report-in-your-bucket-2 report-folder-hierarchy=report-folder-hierarchy-2 h_01HMTZ9VQ5HCKP7T3JQ2RHZV50=report-folder-hierarchy-2 h_01HETBAQVVR90NJC522WNAG190=impression-level-report the-source-of-the-report-data=data-source h_01HETBAQVV3KBEW4VV4RY9VRA2=data-source data-flow::c7ffb834=data-flow-2 h_01HMTZ9VQ5J837PGG99S8ARAGV=data-flow-2 when-is-the-report-data-available::272621c9=when-is-the-report-data-available-1 h_01HMTZ9VQ5YQKBQ779YWBWESDZ=when-is-the-report-data-available-1 how-to-subscribe-to-the-report::67646c99=how-to-subscribe-to-the-report-2 h_01HMTZ9VQ5ZST1M7JYKFC3DA62=how-to-subscribe-to-the-report-2 how-to-access-the-report-in-aws-the-bucket=how-to-access-the-report-in-your-bucket-3 h_01HETBAQVVHE80MH3SM3GX21V1=how-to-access-the-report-in-your-bucket-3 report-folder-hierarchy::26ec73c6=report-folder-hierarchy-2 h_01HMTZ9VQ5FFSA1XF7YSATM6WH=report-folder-hierarchy-2 h_01HETBAQVWZKYBAG5E71KVB9PM=transactionlevel-stores-revenue-report data-sources::68e71455=data-sources-3 h_01HMTZ9VQ5SWTWTSNW5M9KJ1XN=data-sources-3 data-flow::bde19643=data-flow-4 h_01HMTZ9VQ6XVHDHBKV86F3Q9DJ=data-flow-4 when-is-the-report-data-available::87d17fc2=when-is-the-report-data-available-2 h_01HMTZ9VQ64AJQM861M6ENHVWC=when-is-the-report-data-available-2 how-to-subscribe-to-the-report::6569d202=how-to-subscribe-to-the-report-3 h_01HMTZ9VQ60HMM6TXAPYSZG5CT=how-to-subscribe-to-the-report-3 how-to-access-the-report-in-your-bucket::b136ba80=how-to-access-the-report-in-your-bucket-4 h_01HMTZ9VQ67ZEX3KM6CV32SNBD=how-to-access-the-report-in-your-bucket-4 report-folder-hierarchy::805d4d8=report-folder-hierarchy-3 h_01HMTZ9VQ68VRJRHXSNAE38A0E=report-folder-hierarchy-3 h_01HETBAQVVWAFEMK8ENWN7DYEY=devicelevel-stores-revenue-report h_01HETBAQVV9PSDJNS76SNX522C=download-the-report-data-sample::8cbba4e3 the-report-data-sources::af31e5d1=data-sources-3 h_01HETBAQVWE2R75D034VCYMTR1=data-sources-3 the-report-data-processing-flow=data-flow-4 h_01HETBAQVWZRBE84NV403BCZ9F=data-flow-4 when-are-the-report-versions-available::2f1bc55f=when-are-the-report-versions-available-1 h_01HETBAQVWQFCKHMT6PJNPXX7D=when-are-the-report-versions-available-1 how-to-subscribe-to-the-report::a624afde=how-to-subscribe-to-the-report-4 h_01HETBAQVW54MD9Q09RNC673PE=how-to-subscribe-to-the-report-4 how-to-access-the-report-in-the-aws-bucket=how-to-access-the-report-in-your-bucket-4 h_01HETBAQVWYDR81WS9Q9G20ZND=how-to-access-the-report-in-your-bucket-4 the-report-folder-hierarchy-in-aws::45c0d598=report-folder-hierarchy-4 h_01HETBAQVWXHK6DXFA90GJQWPV=report-folder-hierarchy-4" />

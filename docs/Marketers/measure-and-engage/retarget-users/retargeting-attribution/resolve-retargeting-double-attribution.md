@@ -74,3 +74,5 @@ The corresponding record in retargeting in-app event reports during the re-engag
 * The is\_primary\_attribution field is always true.
 * The is\_retargeting field is always true.
 * To clarify, there is no record whatsoever if the event does not happen during a re-engagement window.
+
+<div data-zendesk-anchors="h_01J8FJW0TE4DV5BFHGARS4ERT6=overview attribution-relative-to-the-reengagement-window=attribution-relative-to-the-re-engagement-window h_01J8FJW0TEJH716NXMM2RDN4J1=attribution-relative-to-the-re-engagement-window h_01J8FJW0TEDFGFPPYZEAREKY4Q=support-for-dashboard-view-types h_01J8FJW0TETSV5X6D7NJ4EQHGC=data-filtering-by-view-type-using-the-conversion_type-field how-do-i-identify-doubleattributed-retargeting-events-in-user-acquisition-inapp-reports=how-do-i-identify-double-attributed-retargeting-events-in-user-acquisition-in-app-reports h_01J8FJW0TED4T9JN89PCRA3M9R=how-do-i-identify-double-attributed-retargeting-events-in-user-acquisition-in-app-reports" />

@@ -36,13 +36,13 @@ The AppsFlyer ESP integration solution is a premium feature. If you’d like to 
 
 ## Set up the integration
 
-This section describes how to set up your ESP integration with AppsFlyer.
+<span id="h_01J3JHFXRP57VS9D22FEWS2JZW"></span>This section describes how to set up your ESP integration with AppsFlyer.
 
 ### Prerequisites
 
 Before you begin setting up your ESP integration with AppsFlyer, you'll need to have an account with a supported ESP*. The following items will be required from them:
 
-* A new **click-tracking domain** (described in [Step 1.](/docs/set-up-your-esp-integration-with-appsflyer#h_01J3W0Z161XE7BKMMR62SEEZN7))
+* A new **click-tracking domain** (described in [Step 1.](/docs/set-up-your-esp-integration-with-appsflyer#step-1-create-a-onelink-template-for-your-email-campaign))
 * The **ESP endpoint**: The endpoint is provided to you by the ESP so you can route your clicks to its servers. Example of the ESP endpoint structure: esp.endpoint.com.
 * **Specific ESP integration requirements:**
   * **Emarsys** - Ask your Emarsys customer success manager to enable HTTP redirection.
@@ -51,7 +51,7 @@ Before you begin setting up your ESP integration with AppsFlyer, you'll need to 
 
 **To set up the integration, follow these steps:**
 
-<div id="h_01J3W0Z161XE7BKMMR62SEEZN7" />
+<div id="step-1-create-a-onelink-template-for-your-email-campaign" />
 
 <Accordion title="Step 1. Create a click-tracking domain in your ESP platform (IT / system admin task)">
 
@@ -67,6 +67,8 @@ It consists of a subdomain and your main domain, such as mail.yourbrand.com. Dif
 
 </Accordion>
 
+<div id="h_01JMYD02VRGT8353RDBARRPJ2M" />
+
 <Accordion title="Step 2. Use a OneLink template for your email campaign">
 
 Create a [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template) and configure Universal Links/App Links under "When app is installed". This template will be used later to create OneLink links for your email campaigns.
@@ -75,9 +77,11 @@ Create a [OneLink template](/docs/create-a-onelink-template#create-a-onelink-tem
 
 </Accordion>
 
+<div id="step-3-set-your-esp-integration-in-appsflyer" />
+
 <Accordion title="Step 3. Set your ESP integration in AppsFlyer">
 
-Now it's time to set your ESP integration in AppsFlyer. Please note that this step and the following one ("[Step 4. Configure your app](/docs/set-up-your-esp-integration-with-appsflyer#h_01J3W0Z1613XPYM75GH65R793W)") can be set up at the same time.
+Now it's time to set your ESP integration in AppsFlyer. Please note that this step and the following one ("[Step 4. Configure your app](/docs/set-up-your-esp-integration-with-appsflyer#step-2-configure-your-app-developer-task)") can be set up at the same time.
 
 **To set your ESP integration in AppsFlyer:**
 
@@ -127,7 +131,7 @@ Your ESP integration has been created.
 
 </Accordion>
 
-<div id="h_01J3W0Z1613XPYM75GH65R793W" />
+<div id="step-2-configure-your-app-developer-task" />
 
 <Accordion title="Step 4. Configure your app (developer task)">
 
@@ -195,6 +199,8 @@ We appreciate your assistance with this update.
 
 </Accordion>
 
+<div id="step-4-customize-the-onelink-link-for-your-email-campaign" />
+
 <Accordion title="Step 6. Customize the OneLink link for your email campaign in AppsFlyer">
 
 **To create and customize the OneLink link for your campaign:**
@@ -206,6 +212,8 @@ We appreciate your assistance with this update.
 **Best practice:** Use the same campaign name in both the ESP email campaign and in the AppsFlyer OneLink links used in that campaign.
 
 </Accordion>
+
+<div id="step-5-test-the-link" />
 
 <Accordion title="Step 7. Test the integration in your ESP platform">
 
@@ -220,6 +228,8 @@ Once the test is successful, you're all set.
 
 </Accordion>
 
+<div id="step-6-use-the-link-in-your-email-campaigns-then-measure-the-results-use-the-link-confidently-in-your-email-campaigns" />
+
 <Accordion title="Step 8. Use the link confidently in your email campaigns">
 
 Well done! You're now ready to use links in your email campaigns. Afterwards, you can view the campaign results in your ESP or AppsFlyer dashboards.
@@ -230,11 +240,15 @@ Well done! You're now ready to use links in your email campaigns. Afterwards, yo
 
 ## FAQ
 
+<div id="do-i-need-to-create-an-ssl-certificate-at-any-point" />
+
 <Accordion title="Do I need to create an SSL certificate at any point?">
 
 No, AppsFlyer creates the SSL certificate for you.
 
 </Accordion>
+
+<div id="if-i-have-the-appsflyer-esp-integration-and-sdk-implemented-for-basic-onelink-deep-linking-do-i-need-to-add-both-the-onelink-domain-and-the-esp-click-tracking-domain-to-ios-associated-domains" />
 
 <Accordion title="If I have the AppsFlyer ESP integration and SDK implemented for basic OneLink deep linking, do I need to add both the OneLink domain and the ESP click tracking domain to iOS Associated Domains?">
 
@@ -245,3 +259,5 @@ No, AppsFlyer creates the SSL certificate for you.
   In this setup, AppsFlyer hosts the AASA file for the click tracking domain used in ESP email links. You only need to add that domain to your app’s associated domains, and you don't need to manage the AASA hosting yourself.
 
 </Accordion>
+
+<div data-zendesk-anchors="overview=about-the-appsflyer-esp-integration h_01J6RXTXCS7WC0P5X4J96T8JAP=about-the-appsflyer-esp-integration h_01J3JHJCCASM6E5QYJB5VHQ8HK=about-the-appsflyer-esp-integration set-up-your-esp-integration-with-appsflyer=set-up-the-integration h_01J3JHFRGA6BTMWSK7EEEVGS6T=set-up-the-integration h_01J3JJ74GYF5AJT9R2P2CXDXE1=prerequisites h_01J3W0Z161XE7BKMMR62SEEZN7=step-1-create-a-onelink-template-for-your-email-campaign h_01JMYJG3CTGE9Y3SBFAECV326G=notes h_01J3W0Z161T0D075HPE3Y8H3J4=step-3-set-your-esp-integration-in-appsflyer h_01J3W0Z1613XPYM75GH65R793W=step-2-configure-your-app-developer-task h_01J3W8XR5QS227XNCD453RWYZ9=configure-your-app-to-support-associated-domains h_01J3WS4QWMRT8KSW6J3QHXM9TQ=configure-your-app-to-support-deep-linking h_01J3W8Y7FMSWPG7MFF6FMSXFM3=configure-your-app-to-support-deep-linking ::250c928e=configure-your-app-to-handle-weblinks-and-application-links h_01J3WS4QWMSKZ33APWFR8CG5TZ=configure-your-app-to-handle-weblinks-and-application-links h_01J3W8ZMHSXQGJPQEVR62Q28X9=configure-your-app-to-handle-weblinks-and-application-links h_01J3W0Z1616GFFYCS7WPTNCCHT=step-4-customize-the-onelink-link-for-your-email-campaign h_01J3W0Z161M9NDXAN0KZFA9J4G=step-5-test-the-link h_01J3W0Z161RAYTKH3V9VBAADBM=step-6-use-the-link-in-your-email-campaigns-then-measure-the-results-use-the-link-confidently-in-your-email-campaigns h_01K3R6V0K31816PVY95X5WZC4C=faq h_01K3R6THWT2MCCJHPSXPBAVT8Y=do-i-need-to-create-an-ssl-certificate-at-any-point h_01K3R6THWTG8G8PWPZ2ZRA1CSA=if-i-have-the-appsflyer-esp-integration-and-sdk-implemented-for-basic-onelink-deep-linking-do-i-need-to-add-both-the-onelink-domain-and-the-esp-click-tracking-domain-to-ios-associated-domains" />

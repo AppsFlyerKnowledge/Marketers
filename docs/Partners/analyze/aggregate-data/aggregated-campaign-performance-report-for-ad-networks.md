@@ -48,6 +48,8 @@ Metrics are provided with the best granularity possible using the dimensions rep
 
 ## About the report
 
+<div id="report-structure" />
+
 <Accordion title="Report structure">
 
 #### Dimensions
@@ -91,6 +93,8 @@ Metrics are provided with the best granularity possible using the dimensions rep
 
 </Accordion>
 
+<div id="bi-developer-considerations" />
+
 <Accordion title="BI developer considerations">
 
 **Scope of data in the report**
@@ -116,6 +120,8 @@ In your data consumption process, you must use logic to split the data between c
 * If you don't get data for a given app, verify that the advertiser has granted you the necessary permissions.
 
 </Accordion>
+
+<div id="retention-report-considerations" />
 
 <Accordion title="Retention report considerations">
 
@@ -158,3 +164,5 @@ Ad networks appointed (activated) by agencies: The agency can't grant permission
 9. If you have multiple apps, repeat the procedure for each app integrated with the partner.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HM8SQ5RE1FGQDY6V1A8MMEQX=aggregated-campaign-performance-report h_01HM8SQ5REM6MW5GBRSXTF0N73=about-the-report h_01HM8SQ5RETK7HCPZGGX8KX9VG=report-structure h_01HM8SQ5RE11PW6HGTWGC2AGR5=dimensions h_01HM8SQ5RGQEH6G6W75FVWJKSP=metrics h_01HM8SQ5RGCGTWTSRHB8B4FSY2=bi-developer-considerations h_01HM8SQ5RG4JEE75F6CBTFCBB5=retention-report-considerations h_01HM8SQ5RGNXENZ89GD74KJWH2=permissions h_01HM8SQ5RGQADHTEP5ED3W87VZ=permission-to-get-aggregated-performance-data" />

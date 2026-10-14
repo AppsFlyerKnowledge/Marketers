@@ -46,3 +46,5 @@ The following table lists the tasks required to integrate your Google Play Games
 >
 > * [CTV, PC, and console platform concepts](/docs/ctv-pc-and-console-platform-attribution-concepts)
 > * [Google Ads Web integration for PC and console apps](/docs/google-ads-web-integration-for-pc-and-console-apps)
+
+<div data-zendesk-anchors="about-steam-attribution=about-google-play-games-for-pc-attribution 01H7Z1DJRW1KPJQ4CZ6T85ASRK=about-google-play-games-for-pc-attribution 01H7Z1DJRWX54DN2SNS21GPGXB=integration-procedures h_01HDP2XBSEJVQ5G0MD0V5R05CM=see-also" />

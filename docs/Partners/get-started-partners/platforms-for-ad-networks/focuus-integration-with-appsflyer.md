@@ -73,3 +73,5 @@ To create your install and in-app event postbacks at **FOCUUS**
 * https://traffic.focuusing.com/install?tid=`{TRANSACTION_ID}`
 * https://traffic.focuusing.com/conversion?tid=`{TRANSACTION_ID}`
 * https://traffic.focuusing.com/ftd?tid=`{TRANSACTION_ID}`
+
+<div data-zendesk-anchors="01JFT11W3GWZ3QFYPHEZTS7EX7=creating-your-attribution-link 01JFT11W3QWT08KMGEPGK7MV5R=recommended-attribution-link-parameters 01JFT11W3Y7HRB7FYS1K173G2W=complete-attribution-link-template install-and-inapp-event-postbacks=install-and-in-app-event-postbacks 01JFT11W3YMN4RBW0WFTQ9EADK=install-and-in-app-event-postbacks" />

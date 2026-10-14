@@ -24,11 +24,15 @@ x-zendesk:
 ---
 ## X Ads FAQ and discrepancies
 
+<div id="who-can-perform-the-twitter-setup-on-appsflyer" />
+
 <Accordion title="Who can perform the setup on AppsFlyer?">
 
 The user who is authorizing the integration between AppsFlyer and X Ads must have X Ads Account Administrator access.
 
 </Accordion>
+
+<div id="what-happens-if-no-twitter-accounts-are-selected-for-attributing-on-appsflyer" />
 
 <Accordion title="What happens if no X Ads account is selected for attributing on AppsFlyer?">
 
@@ -36,11 +40,15 @@ All attributions are for campaigns on the selected account. If no account is sel
 
 </Accordion>
 
+<div id="do-the-account-owner-and-the-team-members-see-the-same-twitter-data" />
+
 <Accordion title="Do both the account owner and team members see the same X Ads data?">
 
 No. The account owner sees all of the connected X Ads accounts. Team members only see their connected X Ads accounts.
 
 </Accordion>
+
+<div id="how-do-i-disconnect-twitter-from-appsflyer" />
 
 <Accordion title="How do I disconnect AppsFlyer from X Ads?">
 
@@ -55,6 +63,8 @@ You can disconnect AppsFlyer from your X Ads account. The following instructions
 You can now go back to your AppsFlyer account and [connect a different X Ads account](/docs/x-ads-formerly-twitter-ads-integration-setup) if you want.
 
 </Accordion>
+
+<div id="is-it-possible-to-attribute-installs-to-multiple-twitter-accounts" />
 
 <Accordion title="Is it possible to attribute installs to multiple X Ads accounts?">
 
@@ -110,6 +120,8 @@ We don't provide X Ads raw data to agencies because X Ads' terms of service rega
 
 </Accordion>
 
+<div id="im-clicking-save-close-but-twitters-configuration-is-not-saved-help" />
+
 <Accordion title="I'm clicking save & close but the X Ads configuration is not saved! help!">
 
 If your app was subscribed to another attribution provider in the past, which was used to attribute X Ads installs, the following errors below when configuring X Ads on AppsFlyer's dashboard:
@@ -131,11 +143,15 @@ If the account selection does not save, this may be because the X Ads account in
 
 </Accordion>
 
+<div id="how-can-i-set-up-retargeting-campaigns-with-twitter" />
+
 <Accordion title="How can I set up retargeting campaigns with X Ads?">
 
 For details on how to configure an X Ads Retargeting Campaign, click here.
 
 </Accordion>
+
+<div id="does-retargeting-affect-inapp-events-sending-to-twitter" />
 
 <Accordion title="Does retargeting affect in-app events sent to X Ads?">
 
@@ -144,11 +160,15 @@ Note that even if the X Ads setup window allows this selection, the af\_app\_ope
 
 </Accordion>
 
+<div id="how-can-i-stop-measuring-twitter-attributions" />
+
 <Accordion title="How can I stop measuring X Ads attributions?">
 
 To deactivate the integration with X Ads, uncheck all accounts and click **Save & Close**.
 
 </Accordion>
+
+<div id="can-an-agency-measure-twitter-attributions-for-advertisers" />
 
 <Accordion title="Can an agency measure X Ads attributions for advertisers?">
 
@@ -158,11 +178,15 @@ Afterwards, the agency needs to connect its X Ads account directly from its own 
 
 </Accordion>
 
+<div id="can-an-agency-configure-inapp-events-for-twitter" />
+
 <Accordion title="Can an agency configure in-app events for X Ads?">
 
 Agencies cannot configure in-app events for X Ads. Similar to Meta ads, these must be configured by the Advertiser.
 
 </Accordion>
+
+<div id="for-how-long-do-you-keep-twitter-s-userlevel-data" />
 
 <Accordion title="For how long do you keep X Ads user-level data?">
 
@@ -171,6 +195,8 @@ X Ads requires attribution providers to delete their user-level data 3 months af
 Past aggregate data remains the same.
 
 </Accordion>
+
+<div id="why-do-i-see-duplicated-cost-data" />
 
 <Accordion title="Why do I see duplicated cost data?">
 
@@ -181,6 +207,8 @@ For example, if you run one campaign that costs $1,000 for both an Android and i
 To avoid cost duplication, it is recommended that you define only one app per line item/campaign.
 
 </Accordion>
+
+<div id="im-trying-to-link-my-twitter-account-with-appsflyer-but-i-get-an-error-message" />
 
 <Accordion title="I'm trying to link my X Ads account with AppsFlyer, but I get an error message">
 
@@ -217,3 +245,5 @@ These are the common reasons for such discrepancies that advertisers should be a
 > 📘 **Note**
 >
 > As a result of [AppsFlyer's Validation Rules](/docs/implement-validation-rules-to-prevent-fraud), results may differ in the dashboards as some installs are shown in X Ads and are not shown in the AppsFlyer dashboard.
+
+<div data-zendesk-anchors="twitter-ads-faq-and-discrepancies=x-ads-faq-and-discrepancies h_01HE7S15F9YR28FBA1TYCE3N0X=x-ads-faq-and-discrepancies h_01HE7S15F9NSQJSP268B0WF0JP=who-can-perform-the-twitter-setup-on-appsflyer h_01HE7S15F9PFZ8CATJC5YWC6QP=what-happens-if-no-twitter-accounts-are-selected-for-attributing-on-appsflyer h_01HE7S15F989Y94YFJ7TGK7QN5=do-the-account-owner-and-the-team-members-see-the-same-twitter-data h_01HE7S15F9GNWTK2N50GAHN52Q=how-do-i-disconnect-twitter-from-appsflyer h_01HE7S15F9CE4F29R97EVCG791=is-it-possible-to-attribute-installs-to-multiple-twitter-accounts h_01HE7S15F9G4M44CB2Q1KQMJPJ=any-special-instructions-for-agencies h_01HE7S15F9VG8XMJE7YSNN245P=note h_01HE7S15F9A7BBAW8BNN6H4AKQ=do-you-make-twitters-raw-data-available-to-agencies h_01HE7S15F9MM26SGKMAPGDH9F8=im-clicking-save-close-but-twitters-configuration-is-not-saved-help h_01HE7S15F923NKTTCS3Z1C40B5=how-can-i-set-up-retargeting-campaigns-with-twitter h_01HE7S15F931EWS48QVCQYPBCH=does-retargeting-affect-inapp-events-sending-to-twitter h_01HE7S15F98VN1TS99751S34C5=how-can-i-stop-measuring-twitter-attributions h_01HE7S15F9MEKBKAQ3NA76TFKY=can-an-agency-measure-twitter-attributions-for-advertisers h_01HE7S15F921V3T885F39VSPCQ=can-an-agency-configure-inapp-events-for-twitter for-how-long-do-you-keep-twitter%E2%80%99s-userlevel-data=for-how-long-do-you-keep-twitter-s-userlevel-data h_01HE7S15F90RXSWJ7HV3GSJB65=for-how-long-do-you-keep-twitter-s-userlevel-data h_01HE7S15F9B39KV628NSD29P6P=why-do-i-see-duplicated-cost-data h_01HE7S15F9N3CCJEMAD2QB38F9=im-trying-to-link-my-twitter-account-with-appsflyer-but-i-get-an-error-message discrepancies-between-twitter-and-appsflyer=discrepancies-between-x-ads-and-appsflyer h_01HE7S15F9YWCY883DP9TEGQXK=discrepancies-between-x-ads-and-appsflyer h_01HE7S15FAPS2696J3KQG3P3ME=note-1" />

@@ -20,7 +20,7 @@ x-zendesk:
   promoted: false
   comments_disabled: true
   created_at: '2026-02-04T13:46:22Z'
-  edited_at: '2026-09-15T07:15:11Z'
+  edited_at: '2026-10-14T12:26:51Z'
 ---
 ## What is traffic source resolution?
 
@@ -100,7 +100,7 @@ For more information about how to specify the excluded domains when adding a web
 If the domain is not excluded, AppsFlyer looks for the `pid=` parameter in the URL.
 
 * If found, the media source is taken directly from this value.
-* The following social media partners use specific display labels instead of the raw URL parameter value.
+* <span id="social-media-partners"></span>The following social media partners use specific display labels instead of the raw URL parameter value.
 
 | URL parameter (PID) | Media source display name |
 | --- | --- |
@@ -255,3 +255,5 @@ If `af_channel` isn't present, or the visit doesn't meet the condition above, Ap
 * **Other:** Traffic that does not match any of the categories above.
 
 **Note:** Every visit is assigned a channel. The classification is automatic and deterministic, based on the identified media source and attribution method, unless overridden by `af_channel`.
+
+<div data-zendesk-anchors="h_01KGMEER6DX8W3ECBEBYP4DQV1=what-is-traffic-source-resolution h_01KGMEER6DA4HMSZ3TVEAG84WZ=the-traffic-source-resolution-flow h_01KGMEER6DV02F44C5ZPSBEQEX=step-1-visit-recording h_01KSSEM5P8RX29CD6C6ZD2DVAT=stage-1-referrer-classification h_01KSSEM5P8KBYDBCB7PAPGPX5M=stage-2-session-evaluation-and-visit-recording h_01KGMEER6D082QTZGZYEXT6726=step-2-media-source-resolution h_01KGMF0E1XBSJCVDWGC4R8XMPX=how-utm-logic-works h_01KGMF0JSBZ3WYM65R55BCDAMN=utm-mapping-rules h_01KGMEZA9ETGK6Z89GM111E64Z=the-parsing-mechanism h_01KGMEZESC451HVJT139BSXEA5=referrer-mapping-rules h_01KGMEZKCTASMNXZG13VTVECVH=search-engine-mapping h_01KGMEZQYCDS23MVW3MQH9Q5JQ=android-app-referrers h_01KGMEER6ES1AYT24MC4HZCX9X=step-3-campaign-resolution h_01KGMEER6ETWGFFM3E17KHMDAF=step-4-channel-classification h_01_overriding-the-channel-with-af-channel=overriding-the-channel-with-af_channel h_01_default-channel-classification=default-channel-classification" />

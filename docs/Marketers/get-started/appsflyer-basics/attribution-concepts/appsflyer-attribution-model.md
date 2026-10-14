@@ -89,6 +89,8 @@ Device IDs can be hashed using SHA1 or MD5 on attribution links.
 
 </Accordion>
 
+<div id="device-id-matching-for-selfreporting-networks" />
+
 <Accordion title="Device ID matching for self-reporting networks">
 
 A classic attribution method in which upon the first app launch, AppsFlyer checks in the app settings if traffic is expected from any of the [self-reporting networks](/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer) (SRNs), like Meta ads, Snapchat, and Google Ads.
@@ -147,11 +149,15 @@ See the sections that follow for a full breakdown of which particular attributio
 * AppsFlyer feature used
 * User device: Android or iOS
 
+<div id="owned-media" />
+
 <Accordion title="Owned media">
 
 <table><thead><tr><th rowspan="2">Media source</th><th rowspan="2">Feature</th><th colspan="2">Attribution method</th></tr><tr><th>Android</th><th>iOS</th></tr></thead><tbody><tr><td>Owned media: email (including ESPs), SMS, social media posts, influencers/affiliates, print, etc.</td><td><a href="./onelink-guide"><span>OneLink</span></a></td><td><ul><li>Install referrer</li><li>Probabilistic modeling</li></ul></td><td>Probabilistic modeling</td></tr><tr><td rowspan="2">Owned mobile website/landing page with paid or organic incoming traffic</td><td><a href="./smart-banners-mobile-web-to-app-for-marketers">Smart Banners</a></td><td><ul><li>Install referrer</li><li>Probabilistic modeling</li></ul></td><td>Probabilistic modeling</td></tr><tr><td><a href="./onelink-smart-script-overview">OneLink Smart Script</a></td><td><ul><li>Install referrer</li><li>Probabilistic modeling</li></ul></td><td>Probabilistic modeling</td></tr><tr><td rowspan="2">Owned mobile apps</td><td><a href="./user-invite-attribution">User invites/referral</a></td><td><ul><li>Install referrer</li><li>Probabilistic modeling</li></ul></td><td>Probabilistic modeling</td></tr><tr><td><a href="./cross-promotion-attribution-for-marketers">Cross-promotion</a></td><td><ul><li>Install referrer</li><li>Device ID matching</li></ul></td><td>Device ID matching (subject to ATT consent)</td></tr></tbody></table>
 
 </Accordion>
+
+<div id="paid-media" />
 
 <Accordion title="Paid media">
 
@@ -162,6 +168,8 @@ See the sections that follow for a full breakdown of which particular attributio
 ## User engagement attribution types
 
 Attribution is performed based on click-through and view-through engagements, using AppsFlyer's various campaign measurement methods.
+
+<div id="clickthrough-attribution" />
 
 <Accordion title="Click-through attribution">
 
@@ -203,6 +211,8 @@ In cases where both a click and an impression occur, the **click always prevails
 
 </Accordion>
 
+<div id="engaged-click-attribution" />
+
 <Accordion title="Engaged click attribution">
 
 Engaged clicks occur when users click an ad and remain in the same context—engaging with the ad—without being redirected to the app store or launching the app. For example, interactions may include staying within a playable ad, interacting with in-ad elements, or continuing to browse content within the ad container. For more information, see: [About enhanced engagement types.](/docs/about-enriched-engagement-types)
@@ -221,6 +231,8 @@ Engaged clicks occur when users click an ad and remain in the same context—eng
 [Learn more about lookback windows](/docs/set-up-lookback-windows)
 
 </Accordion>
+
+<div id="engaged-view-attribution" />
 
 <Accordion title="Engaged view attribution">
 
@@ -246,6 +258,8 @@ Engaged views occur when users view an ad and take a qualifying action—such as
 
 ## Advanced attribution topics
 
+<div id="in-app-events" />
+
 <Accordion title="In-app events">
 
 AppsFlyer uses the device ID or unique AppsFlyer ID for attributions (an app install, reinstall, or re-attribution) to **attribute in-app events to the media source**. Advertisers can use this information to follow user journeys in their app's raw data. In aggregate day, the device ID/AppsFlyer ID is used to calculate the number of unique users, for example the number of unique users that perform an in-app event.
@@ -253,6 +267,8 @@ AppsFlyer uses the device ID or unique AppsFlyer ID for attributions (an app ins
 For more information about event attribution, click [here](/docs/in-app-events-overview?query=in%20app%20event#how-does-appsflyer-attribute-events).
 
 </Accordion>
+
+<div id="assisted-installs" />
 
 <Accordion title="Assisted installs">
 
@@ -297,9 +313,13 @@ A user who re-installs an app within the [re-attribution window](/docs/set-up-re
 
 </Accordion>
 
+<div id="app-updates" />
+
 <Accordion title="App updates">
 
 * When existing users update the app to a subsequent version, this is not treated as a countable attribution event, if the user was previously attributed by AppsFlyer. Note! If you migrate to AppsFlyer from a different MMP existing users on the first app-open, after migration, are attributed to organic.
 * Metrics relating to the number of users per app version are available in the [SDK Information dashboard.](/docs/sdk-information-version-consent-dashboard)
 
 </Accordion>
+
+<div data-zendesk-anchors="01H8GG9XPSS8KA9CHPD6ECNR2J=what-is-attribution 01EDRHGMTXK94Y97DPKFAMCJ5B=what-is-an-app-install 01EDRHGMTXCRNVXS9JGHQ1JAQT=attribution-methods attribution-waterfall=attribution-method-priorities-attribution-waterfall h_01JBC8582ABTE00W29PM5Y5X0B=attribution-method-priorities-attribution-waterfall 01H8GG9XPS6P3CXX5AN2KY8WN4=install-referrer-android-only 01H8GG9XPSGVK90FV0K9HZARH7=device-id-matching 01H8GG9XPSV247F3JRCR870JK0=device-id-matching-for-selfreporting-networks 01EDRHGMTXHAKWZK99Q2X86BND=probabilistic-modeling 01H8GG9XPSZ5CPKNSCV7NF1MKW=preload-campaigns h_01K0XWKWQ7TJ2DBT1JZPY5Q4F6=deep-link 01H8GG9XPTXDR41QANF4XVSZMM=attribution-methods-per-media-source-and-appsflyer-feature 01H8GG9XPT65G88DE8548HZREE=owned-media 01H8GG9XPTADWMQ37WBB6P9WVS=paid-media 01EDRHGMTX7851H14R20F9KNAN=user-engagement-attribution-types 01EDRHGMTXJ7WKTWQXFCHTD9AV=clickthrough-attribution 01EDRHGMTXN0Y0ZRVBX7HHW7NN=viewthrough-attribution h_01K0XYZWBVPSXT0T6XGPQT20X8=engaged-view-attribution 01EDRHGMTYYXBSCDPKXCDK1641=advanced-attribution-topics 01EDRHGMTYMH3SVNBTQ28D4F42=in-app-events h_01K0XWKWQ7J20YKEND9A43DRNR=assisted-installs 01EDRHGMTY2CF0B70T3RAGPCJ1=reinstalls 01EDRHGMTYDSNJKQNPNYFXJPAZ=reinstalling-ios-apps-that-are-backed-up-in-icloud 01EDRHGMTYYB9XVM5CBWSPJGMN=retargeting-attribution 01EDRHGMTYTQRMG1W7ZBW4G6W4=app-updates" />

@@ -38,6 +38,8 @@ x-zendesk:
 
 Qutoutiao Ads configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration Tab">
 
 ### Activate Partner
@@ -66,6 +68,8 @@ In this section you can map your AppsFlyer events with Qutoutiao Ads via postbac
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution Link Tab">
 
@@ -110,17 +114,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost Tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad Revenue Tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions Tab">
 
@@ -140,3 +150,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW6WY2H57T49HJPMF29J8XH=setting-up-qutoutiao-ads h_01HKW6WY2JY25ZMQXA963Z0Q71=integration-tab h_01HKW6WY2J4WMBMSAJEP8GGWYA=activate-partner h_01HKW6WY2JJ52DGPRH5KE6K094=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW6WY2JH1QC5QDMQ4RN67JG=in-app-events-settings h_01HKW6WY2JZ7X4EPZ0C3D4QV7J=attribution-link-tab h_01HKW6WY2J5GF13RV6JBW5QPXP=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6WY2J5CBA3VCKKK61N7N7=click-through-attribution h_01HKW6WY2JNAZ769AQ64539P8J=click-attribution-link h_01HKW6WY2J30M3DSQZBY327364=cost-tab h_01HKW6WY2J8MAM70BH33PDKRHB=ad-revenue-tab h_01HKW6WY2J6NHVSVZXC60KATFP=permissions-tab h_01HKW6WY2JJF66DWZS5W4Z95E3=ad-network-permissions" />

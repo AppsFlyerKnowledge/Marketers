@@ -231,3 +231,5 @@ AppsFlyer uninstall measurement isn't automatically enabled with the mParticle-A
 **To implement uninstall measurement for either iOS or Android:**
 
 * Call AppsFlyer methods directly by following our uninstall measurement documentation
+
+<div data-zendesk-anchors="h_01H9HWJRM2612MBM2Y7C5YZ2YY=event-integrations h_01H9HWJRM2BJATV1QHS382J0ZN=configure-the-appsflyer-event-integration h_01H9HWJRM2YV3CEH7J7EMA8E3Y=feed-integrations h_01H9HWJRM2SZYRXFTSZPM1JHCJ=deferred-deep-linking h_01H9HWJRM2HCB4YF2BP9RPK2RP=appsflyermparticle-use-cases h_01H9HWJRM3HAGGWHF4YTQTTS2X=handling-user-flags known-mparticle-integration-limitation=enabling-appsflyer-uninstall-measurement-in-mparticle h_01H9HWJRM321PSNQ480R96BN12=enabling-appsflyer-uninstall-measurement-in-mparticle" />

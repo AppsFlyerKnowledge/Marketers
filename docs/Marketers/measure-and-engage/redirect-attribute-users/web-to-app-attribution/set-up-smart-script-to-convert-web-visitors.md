@@ -85,7 +85,7 @@ To set up the Smart Script, you can either:
       * Override values: Configure one or more values from the incoming URL alongside the values of the outgoing URL you want them to be replaced with.
         * Example: For the campaign parameter, if the value in the incoming URL is campaign\_name, the value in the outgoing URL can be changed to new\_campaign\_name.
    3. [Optional] Click **+ New parameter** to map additional parameters. See all the [additional arguments](/docs/set-up-smart-script-to-convert-web-visitors#arguments) (parameter configurations) you can use.
-7. [Optional] Turn on **Media Source for organic search installs,** under the **Web** **referrer mapping** section, to automatically set the media source for organic search traffic when it isn't already resolved by the URL parameter mapping section. [Learn more](#h_01M1BK4M22YAQ6YX4RZXRKZF7C)
+7. [Optional] Turn on **Media Source for organic search installs,** under the **Web** **referrer mapping** section, to automatically set the media source for organic search traffic when it isn't already resolved by the URL parameter mapping section. [Learn more](#seo-referrer-mapping)
 8. Select how to implement the Smart Script on your website:
    * **Embed the script in your website.**
    * **Use Google Tag Manager.**
@@ -129,6 +129,8 @@ To set up the Smart Script, you can either:
 
 </Accordion>
 
+<div id="how-to-duplicate-a-script" />
+
 <Accordion title="Duplicate a script">
 
 **To duplicate a script:**
@@ -138,6 +140,8 @@ To set up the Smart Script, you can either:
 3. Follow the steps in [How to create a OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#set-up-onelink-smart-script)
 
 </Accordion>
+
+<div id="argument-structure" />
 
 <Accordion title="Argument structure">
 
@@ -163,6 +167,8 @@ The OneLink Smart Script uses arguments to generate an outgoing URL based on the
 
 </Accordion>
 
+<div id="advanced-arguments" />
+
 <Accordion title="Advanced arguments">
 
 The following table describes arguments that technical-savvy marketers or developers can implement in the Smart Script.
@@ -177,6 +183,8 @@ The following table describes arguments that technical-savvy marketers or develo
 
 The following sections provide Smart Script use cases for some common campaign/media source scenarios.
 
+<div id="utm-parameters" />
+
 <Accordion title="UTM parameters">
 
 **To set up the script for UTM parameters**:
@@ -187,6 +195,8 @@ The following sections provide Smart Script use cases for some common campaign/m
 **Result**: The values in the incoming parameters (**utm\_source** and **utm\_campaign**) are used to populate the values of the (**media\_source** and **campaign**) parameters in the outgoing link.
 
 </Accordion>
+
+<div id="google-ads-gclid" />
 
 <Accordion title="Google Ads GCLID">
 
@@ -239,6 +249,8 @@ Meta ads carry click IDs, called FBCLID. Starting in Smart Script version 2.8.1,
 
 </Accordion>
 
+<div id="tiktok-ttclid-x-twclid-and-snapsccid" />
+
 <Accordion title="TikTok (ttclid), X (twclid), and Snap(ScCid)">
 
 Install attribution for TikTok, X (formerly Twitter), and Snap ad campaigns relies on network-specific Click ID parameters that are appended to ad clicks and used to match installs and post-install events to the originating ad.
@@ -262,6 +274,8 @@ See the following relevant web integration articles:
 
 </Accordion>
 
+<div id="srns-owned-media-and-other-media-source-links" />
+
 <Accordion title="SRNs, owned media, and other media source links">
 
 [SRNs](/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer) like Snapchat or X Ads, work differently than Google Ads or a cross-platform like Meta ads. Campaigns from these SRNs lead your users to the web/landing page, and you are billed according to clicking leads, unrelated to any derived mobile users.
@@ -284,6 +298,8 @@ For these SRNs, script setup is the same as for links from owned media, or other
 
 </Accordion>
 
+<div id="appsflyer-attribution-links" />
+
 <Accordion title="AppsFlyer attribution links">
 
 AppsFlyer attribution links can be used when the media source is a click ad network. When you set up such a link in AppsFlyer, you have the option to add a **Redirection URL path (af\_r)** parameter with the desired URL path to your mobile website for web campaign-to-app attribution. You may not want the Script to create an outgoing OneLink URL, as then, some of the data from the original click may be lost.
@@ -299,6 +315,8 @@ AppsFlyer attribution links can be used when the media source is a click ad netw
 > **Outgoing URL**: No outgoing URL.
 
 </Accordion>
+
+<div id="web-referrer-mapping" />
 
 <Accordion title="Web referrer mapping">
 
@@ -318,7 +336,7 @@ To learn about organic search attribution for re-engagements using Universal Lin
 
 </Accordion>
 
-<div id="h_01M1BK4M22YAQ6YX4RZXRKZF7C" />
+<div id="seo-referrer-mapping" />
 
 <Accordion title="SEO referrer mapping">
 
@@ -328,6 +346,8 @@ You can turn on **Media source for organic search installs** to automatically se
 * If there's no match, the **Default value**, configured in URL parameter mapping, is used.
 
 </Accordion>
+
+<div id="desktop" />
 
 <Accordion title="Desktop">
 
@@ -377,6 +397,8 @@ Smart Script displays a QR code on your web page, instead of a button with a lin
 
 </Accordion>
 
+<div id="impressions" />
+
 <Accordion title="Impressions">
 
 The OneLink Smart Script can be used to count impressions on your website. To do so, the developer needs to call the impression function. Installs are then attributed to the impressions via [view-through attribution](/docs/measure-view-through-engagements).
@@ -399,6 +421,8 @@ The OneLink Smart Script can be used to count impressions on your website. To do
 </Accordion>
 
 ## Additional information
+
+<div id="faq" />
 
 <Accordion title="FAQ">
 
@@ -432,6 +456,8 @@ Smart Script uses Javascript and should work on all browsers.
 
 </Accordion>
 
+<div id="specs-and-limitations" />
+
 <Accordion title="Specs and limitations">
 
 | **Spec** | **Remarks** |
@@ -440,3 +466,5 @@ Smart Script uses Javascript and should work on all browsers.
 | **in incoming URL**| Smart Script encounters issues when handling incoming URLs that include a hash ('#') symbol preceding the query parameters (indicated by a '?' sign). In such cases, Smart Script  reverts to default values. |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H95PGMNWR12KQ2P0KT8BBGEC=setup h_01H95PGMNW6N63XQ1EQSQSHHB2=set-up-onelink-smart-script h_01H95PGMNWPBRHSZBPMKNJ2PS6=scope-of-work h_01H95PGMNWWYRRNVNTK31XYRN3=how-to-create-a-onelink-smart-script h_01H95PGMNW5HA4FWBFW7AR89AV=important h_01H95PGMNXZAES8DPJ1B4E1QV8=how-to-edit-or-delete-a-script h_01H95PGMNX5ZT7DPV2WBG0CTKB=important-1 h_01H95PGMNXNT9C07B0YTS1KK82=how-to-duplicate-a-script h_01H95PGMNXWJ9V5JW9JEAHF81S=argument-structure h_01H95PGMNXR2HTV1EF07QVQB6W=arguments arguments-parameters-and-values-to-implement-the-smart-script::d4f6bf94=arguments-parameters-and-values-to-implement-the-smart-script h_01H95PGMNXPMCM73XT3GTDVAXJ=arguments-parameters-and-values-to-implement-the-smart-script h_01H95PGMNX4B8W84DHJR9T4CR2=advanced-arguments arguments-parameters-and-values-to-implement-the-smart-script=advanced-arguments-parameters-and-values-to-implement-in-the-smart-script h_01H95PGMNXCAHTTJATG75Y3TRN=advanced-arguments-parameters-and-values-to-implement-in-the-smart-script h_01H95PGMNXBPFFNE44YGGECBPR=use-cases h_01H95PGMNX3W95JW47YQGSEYQ6=utm-parameters h_01H95PGMNXGZZEMZ6PMAB4XFQQ=google-ads-gclid h_01H95PGMNXZT08G8RTMMG6BQCJ=note h_01H95PGMNXHJXGB2QXH0YTB6Z0=facebook-click-id h_01KD5EZQFF23MYGXGJF1CF6VPT=tiktok-ttclid-x-twclid-and-snapsccid h_01H95PGMNXBKXFG9M169WG89TK=srns-owned-media-and-other-media-source-links h_01H95PGMNXZPB6CT3ZKJ2KMQ1J=example h_01H95PGMNX8Q0BASSESVD06MXE=appsflyer-attribution-links h_01H95PGMNX741EJGPF9G2DS67N=example-1 h_01HAS199KS0C0V3G41WGXTK4PF=web-referrer-mapping h_01M1BK4M22YAQ6YX4RZXRKZF7C=seo-referrer-mapping h_01H95PGMNY0P2354ZFVC92TMVC=desktop h_01H95PGMNYDSFP6GJDWC9AE0J2=qr-codes h_01H95PGMNYGJ9BJ86YCP7FYH6G=example-2 h_01H95PGMNYZBGZWNFESDTE9GY9=impressions h_01H95PGMNYX1FDT1KK9PQAMX5N=important-2 h_01H95PGMNYB6A8VKEAH8Z8TDPE=additional-information h_01H95PGMNYKQ8TNM3KKK9EXANV=faq h_01H95PGMNYM5X2K9J0WZW6PZ8A=will-the-incoming-url-for-onelink-link-generation-work-if-the-user-browses-to-a-different-page-on-the-website why-do-i-get-an-error-when-implemeting-smart-script-via-google-tag-manager=why-do-i-get-an-error-when-implementing-smart-script-via-google-tag-manager h_01H95PGMNYSQX6BJCN56D4XZZF=why-do-i-get-an-error-when-implementing-smart-script-via-google-tag-manager h_01H95PGMNY2AVJ0CYDAM62Q9PA=can-i-add-parameters-that-are-not-listed h_01H95PGMNY97BY6BCPPMYHBF0Q=adset-and-other-parameters-are-not-showing-in-the-dropdown h_01H95PGMNY5AV0DTX51X0DJMTK=what-browsers-does-smart-script-work-on h_01H95PGMNY4W9X51KV6GM4BSPG=specs-and-limitations" />

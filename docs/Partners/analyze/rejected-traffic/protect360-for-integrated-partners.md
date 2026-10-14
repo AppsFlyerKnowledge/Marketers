@@ -117,6 +117,8 @@ Learn more about [Protect360 raw data reports](/docs/protect360-raw-data-reports
 
 ### Curl examples
 
+<div id="installs-blocked_installs_report" />
+
 <Accordion title="Installs (blocked_installs_report)">
 
 Replace the app\_id, from, to, and token placeholders.
@@ -127,6 +129,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 ```
 
 </Accordion>
+
+<div id="postattribution-installs-detection" />
 
 <Accordion title="Post-attribution installs (detection)">
 
@@ -139,6 +143,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 
 </Accordion>
 
+<div id="inapp-event-blocked_in_app_events_report" />
+
 <Accordion title="In-app event (blocked_in_app_events_report)">
 
 Replace the app id, from, to, and token placeholders.
@@ -150,6 +156,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 
 </Accordion>
 
+<div id="postattribution-inapp-events-fraud-fraud_post_inapps" />
+
 <Accordion title="Post-attribution in-app events fraud (fraud_post_inapps)">
 
 Replace the app id, from, to, and token placeholders.
@@ -160,6 +168,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 ```
 
 </Accordion>
+
+<div id="clicks-blockedclicks_report" />
 
 <Accordion title="Clicks (blocked-clicks_report)">
 
@@ -173,6 +183,8 @@ curl --location --request GET 'https://hq1.appsflyer.com/api/adnets-data/v1/expo
 </Accordion>
 
 ### Protect360 ad network API reference guide
+
+<div id="api-basics" />
 
 <Accordion title="API basics">
 
@@ -207,6 +219,8 @@ Protect360 API parameters:
 | detect-to | [Optional for Post-attribution installs]<br /><br />End of the fraud detection date range. (Default is to.) | YYYY-MM-DD | No |
 
 </Accordion>
+
+<div id="protect360-api-http-return-codes" />
 
 <Accordion title="Protect360 API HTTP return codes">
 
@@ -267,3 +281,5 @@ The signatures enable AppsFlyer to validate the clicks and make sure that the c
 * Invalidated clicks are rejected and:
   * Are aggregated in Protect360 reports made available to the ad network (not advertisers).
   * Do not impact the conversion rate of the ad network
+
+<div data-zendesk-anchors="h_01HGSXTKYQB4Q1QQX4ZQS60AAJ=overview h_01HGSXTKYQN42EEMPSZMWVAMWD=note h_01HGSXTKYQPQP72R2VJB68ZDRZ=dashboard-view rawdata-reports=raw-data-reports h_01HGSXTKYQWRZECN905RGSEQ42=raw-data-reports h_01HGSXTKYQ9388SCQTT2MX59Q9=protect360-ad-network-reporting-api h_01HGSXTKYQXZN2DMNZ09HE7355=protect360-api-reports h_01HGSXTKYQ913MF0G38B23NYBG=procedure-for-ad-networks-to-get-protect360-reports-by-download h_01HGSXTKYQX3VN5NRMNQWW4AE4=curl-examples h_01HGSXTKYQQBJTM4ZMMQZ0VZNH=installs-blocked_installs_report h_01HGSXTKYQ5KTCD7K63DSVS6E2=postattribution-installs-detection h_01HGSXTKYQ6MA96W8E6R2SXBS5=inapp-event-blocked_in_app_events_report h_01HGSXTKYQMMC0WNWP56Q9J0ZS=postattribution-inapp-events-fraud-fraud_post_inapps h_01HGSXTKYQEG0JXJHS7QBAEBCA=clicks-blockedclicks_report h_01HGSXTKYQJRE1Y9C5RSCANWT2=protect360-ad-network-api-reference-guide h_01HGSXTKYQE24FAPYHHMFP0B3X=api-basics h_01HGSXTKYRFSZRPHNPDHNREDH2=api-parameters h_01HGSXTKYRGSQ230NVN06SP6DG=protect360-api-http-return-codes impression-and-click-capping=impression-capping h_01HGSXTKYRN6TP3KDYX5YZJV7N=impression-capping h_01HGSXTKYR8BK5A2J6TJECMKZA=faq h_01HGSXTKYR915V6E4NWGWR61PG=click-signing" />

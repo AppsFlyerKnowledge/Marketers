@@ -145,8 +145,10 @@ In this case, you can simply select the **CUID option** as the SDK parameter whe
 
 ## Using Braze data in Audiences
 
-Once the Braze incoming connection is set up, the engagement events you've defined will appear as options in the [ruleset filters](/docs/audiences-guide#h_01HBQMA61AEKT6N97SJBW4B01C) for defining audiences.
+Once the Braze incoming connection is set up, the engagement events you've defined will appear as options in the [ruleset filters](/docs/audiences-guide#ruleset-filters) for defining audiences.
 
 ![audiences_braze_ruleset.png](https://files.readme.io/766a5ec25de3cf82c1411ce25864a5c8ce6c77ac338c20699e61be1c45ae3d98-33375723752337.png)
 
 **Note:** It takes approximately 24 hours for the Braze message engagement events to be available in AppsFlyer after you launch the current in Braze.
+
+<div data-zendesk-anchors="h_01HKW0BS5H1ANWAJZTVBWDQHJH=set-up-the-braze-incoming-connection h_01HKW0BS5HGB2RYGWNXT1M163C=using-a-braze-external-id-parameter h_01HKW0BS5HQJZRR60VKBCWGHQB=using-the-cuid-field h_01HKW0BS5JM8A9XFVX22KWFE3H=supported-events h_01HKW0BS5JTZQ71HFE305ZT1CS=using-braze-data-in-audiences" />

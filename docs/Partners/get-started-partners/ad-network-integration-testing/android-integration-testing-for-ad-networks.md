@@ -39,6 +39,8 @@ For each scenario, you can test installs and in-app events. For in-app events, y
 
 Complete the prerequisites and then perform the test procedures in the sections that follow. The test sections each contain a table you can use to record your test results.
 
+<div id="prerequisites" />
+
 <Accordion title="Prerequisites">
 
 Complete the prerequisites before beginning to execute the test procedure.
@@ -81,6 +83,8 @@ Complete the prerequisites before beginning to execute the test procedure.
 
 ## Supplementary information and procedures
 
+<div id="about-the-partner-integrations-test-app" />
+
 <Accordion title="About the Partner Integrations test app">
 
 The Partner Integrations app is available in Google Play. The app sends install and in-app events to the AppsFlyer platform.
@@ -92,6 +96,8 @@ The following functions are available:
 * **In-App Event Tests**Send `purchase`,`login`, and `registration` and in-app events. By mapping the app in-app event names to your event names, postbacks are populated using your event names.
 
 </Accordion>
+
+<div id="attribution-link" />
 
 <Accordion title="Attribution link">
 
@@ -109,8 +115,8 @@ Prepare an attribution link in the AppsFlyer dashboard, using one of the followi
 
 | Parameter | Example value | Remark |
 | --- | --- | --- |
-| Campaign | c-test-2020-12-20 | Set a value that is identifiable in your postbacks |
-| PID | pitestap |  |
+| <span id="campaign"></span>Campaign | c-test-2020-12-20 | Set a value that is identifiable in your postbacks |
+| <span id="pid"></span>PID | pitestap |  |
 
 5. Copy the resulting link for later use.
 
@@ -122,6 +128,8 @@ https://app.appsflyer.com/com.appsflyer.adNetworkTest?pid=pitestap_int&c=c-test-
 
 </Accordion>
 
+<div id="test-app-integrated-in-your-account" />
+
 <Accordion title="Test app integrated in your account">
 
 **To verify that the test app is available in your account:**
@@ -130,6 +138,8 @@ https://app.appsflyer.com/com.appsflyer.adNetworkTest?pid=pitestap_int&c=c-test-
 2. Verify that the app **Partner Integrations adNewtorkTest** displays under Available Apps. If this is not the case, contact your Partner Development Manager.
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 <Accordion title="Troubleshooting">
 
@@ -140,6 +150,8 @@ https://app.appsflyer.com/com.appsflyer.adNetworkTest?pid=pitestap_int&c=c-test-
 | af\_status is Organic | Check the format of the attribution link, especially the value of **pid**. |
 
 </Accordion>
+
+<div id="test-retargeting-attribution" />
 
 <Accordion title="Test retargeting attribution">
 
@@ -161,6 +173,8 @@ Access your AppsFlyer dashboard and click on **Re-targeting** in the left-side m
 [![com_appsflyer_adNetworkTest-retargeting.png](https://files.readme.io/e46789b004be2f4fc15f095ba11a0f3f5d03abb1240e54e4b534285e3e4efd8d-21266228899601.png)](https://files.readme.io/e46789b004be2f4fc15f095ba11a0f3f5d03abb1240e54e4b534285e3e4efd8d-21266228899601.png)
 
 </Accordion>
+
+<div id="test-viewthrough-attribution" />
 
 <Accordion title="Test view-through attribution">
 
@@ -203,6 +217,8 @@ Allow up to 30 minutes for the install to appear in the app dashboard.
 
 </Accordion>
 
+<div id="raw-data-export" />
+
 <Accordion title="Raw data export">
 
 Data related to apps whose install is attributed to your ad network can be exported in CSV format.
@@ -223,6 +239,8 @@ The data includes the following:
 
 </Accordion>
 
+<div id="verify-postback-data" />
+
 <Accordion title="Verify postback data">
 
 Every install generates a postback that is sent to your servers. To verify the postback URL, its structure, and the parameters that are appended to it, export the **Installation postbacks** report.
@@ -236,3 +254,5 @@ Review the data in that column to verify the following:
 * The **Postback Error Message** column is empty
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJR6V0MYJXD4QSRT95SVXTWH=android-integration-testing h_01HJR6V0MYBPC3CSAJTTQSWGAR=testing h_01HJR6V0MYG42PPWXT7H2AGTAE=prerequisites h_01HJR6V0MYDRZGQQ74TJWDJ2WS=test-install-attribution h_01HJR6V0MYZ5NG21FEKB4HY6HT=supplementary-information-and-procedures h_01HJR6V0MYTZCS097RQP9HG7GY=about-the-partner-integrations-test-app h_01HJR6V0MYVCNVHNCPZ29KRA4K=attribution-link h_01HJR6V0MY6JZXP2NX9YJ9ZY2T=test-app-integrated-in-your-account h_01HJR6V0MYWK7WAAFHRYPCVM7N=troubleshooting h_01HJR6V0MY2SSP17ZEWRM3NXKE=test-retargeting-attribution h_01HJR6V0MYPC0AZF05YF32Z571=viewing-retargeted-installs-in-the-dashboard h_01HJR6V0MY027J9PKXZZ4TCXRX=test-viewthrough-attribution h_01HJR6V0MZ4VA3V8CA3PN5Z31K=view-installs-in-the-dashboard h_01HJR6V0MZCZ3E8NCR6DG6P6P1=raw-data-export h_01HJR6V0MZAHSXCTEZKTVWM96V=verify-postback-data" />

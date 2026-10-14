@@ -112,3 +112,5 @@ https://app.appsflyer.com/com.appsflyer?pid=partnername_int&clickid={transaction
 | af\_cost\_model | adv\_payout\_model | Cost model - CPI is currently the only supported  <br />model |
 | af\_cost\_currency | adv\_payout\_currency | Currency code (example: USD) |
 | af\_cost\_value | adv\_payout\_amount | Cost value |
+
+<div data-zendesk-anchors="01JFT1EB6KZE1D6C9HMXQ5A841=creating-the-attribution-link global-postbacks-for-installs-and-inapp-events=global-postbacks-for-installs-and-in-app-events 01JFT1EB6PH56T619J1197TAK2=global-postbacks-for-installs-and-in-app-events 01JFT1EB70G5V9EBMD4XMAR3GF=finalizing-your-registration 01JFT1EB71F36JD4QNB8KHKZRX=mapping-of-appsflyer-parameters-and-hubscale-macros" />

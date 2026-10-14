@@ -49,6 +49,8 @@ If you are transitioning from the Standard Web SDK to Advanced SDK Verification,
 
 Use this snippet to deploy the standard Web SDK integration. Paste it near the top of the `` tag on all pages where you want to load the SDK.
 
+<div id="standard-without-smart-banners" />
+
 <Accordion title="Without Smart Banners">
 
 ```html
@@ -71,6 +73,8 @@ Use this snippet to deploy the standard Web SDK integration. Paste it near the t
 ```
 
 </Accordion>
+
+<div id="standard-with-smart-banners" />
 
 <Accordion title="With Smart Banners">
 
@@ -109,6 +113,8 @@ Advanced SDK Verification is optional. The standard integration remains fully su
 
 If your website enforces a Content Security Policy (CSP) using a nonce, see [Content Security Policy (CSP)](#content-security-policy-csp) in the Manage privacy section for the nonce-extended variant of this snippet.
 
+<div id="advanced-verification-without-smart-banners" />
+
 <Accordion title="Without Smart Banners">
 
 ```html
@@ -138,6 +144,8 @@ If your website enforces a Content Security Policy (CSP) using a nonce, see [Con
 ```
 
 </Accordion>
+
+<div id="advanced-verification-with-smart-banners" />
 
 <Accordion title="With Smart Banners">
 
@@ -450,6 +458,8 @@ CSP policy compatibility
 
 #### Advanced SDK Verification with CSP nonce snippets
 
+<div id="nonce-without-smart-banners" />
+
 <Accordion title="Without Smart Banners">
 
 ```html
@@ -481,6 +491,8 @@ CSP policy compatibility
 ```
 
 </Accordion>
+
+<div id="nonce-with-smart-banners" />
 
 <Accordion title="With Smart Banners">
 
@@ -534,6 +546,8 @@ You can implement the methods described in relation to urls, referrers, and head
 </Accordion>
 
 ## Principles of event recording
+
+<div id="conversion-and-standard-events" />
 
 <Accordion title="Conversion and standard events">
 
@@ -630,6 +644,8 @@ Suppose you are managing a new outlet. Some events that you might want to record
 * Purchase subscription: conversion event
 
 </Accordion>
+
+<div id="ensuring-that-events-are-sent" />
 
 <Accordion title="Ensuring that events are sent">
 
@@ -1064,6 +1080,8 @@ Use the same CUID value as you do in the setCustomerUserd function in the mobile
 
 ## Addtional information
 
+<div id="web-sdk-cookies" />
+
 <Accordion title="Web SDK cookies">
 
 The cookies listed in the table that follows are set or used by Web SDK on your website.
@@ -1085,6 +1103,8 @@ In the table the following abbreviations are used:
 
 </Accordion>
 
+<div id="release-notes" />
+
 <Accordion title="Web SDK release notes">
 
 | Date | Version | Notes |
@@ -1097,6 +1117,8 @@ In the table the following abbreviations are used:
 
 </Accordion>
 
+<div id="deprecations" />
+
 <Accordion title="Deprecations">
 
 * A deprecation notice provides a heads up of our intention to stop supporting a feature or method. The feature or method continues to work until its sunset date.
@@ -1107,3 +1129,5 @@ In the table the following abbreviations are used:
 | 2020-04-16 | To be announced | **Deprecated method:** Sending the customer user ID (CUID) in the event parameter customUserId with the eventType set to "IDENTIFY"<br /><br />**Current method:** Send the CUID using the setCustomerUserId() function. |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HFKCMH8HAW5DN4K9H1A5Q2NJ=web-sdk-user-and-integration-guide step-2-select-a-code-snippet=selecting-a-code-snippet h_01KP11XJV8RDV378GMFF0DVZ8V=selecting-a-code-snippet standard=standard-web-sdk h_01KP11XJV8MN64YV17D1M0T5B9=standard-web-sdk h_01KP3CJBZWK17M58W9M2EP8VC3=standard-without-smart-banners h_01KP3CJBZWKW1K9P9V1XGYM5ED=standard-with-smart-banners h_01KP11XJV8ZGF4SDXJH6FKX18E=advanced-sdk-verification h_01KP3CJBZWP7HDJ0GE2DF3TTE3=advanced-verification-without-smart-banners h_01KP3CJBZWJWS9H0XVHQFF758B=advanced-verification-with-smart-banners h_01HFKCMH8HCDNGFJEN32BNA9F2=integrating-the-web-sdk-into-the-website h_01HFKCMH8HVTJX37PD22ZFV0AY=installation-and-integration h_01HFKCMH8H0JBGD2GWY127428R=considerations-and-actions-required h_01HFKCMH8HC064MHGH8D66QCYK=javascript-code-snippet h_01HFKCMH8HST7G880G44WXXXB6=to-install-the-web-sdk-without-smart-banners h_01HFKCMH8HX4SQP6YCBHJH4AX5=to-implement-the-web-sdk-with-smart-banners h_01HFKCMH8JMMPMHFR4399QPRJV=create-a-property-in-adobe-experience-cloud h_01HFKCMH8J8WVHP7RZ2ENHGY9V=add-the-web-sdk-to-the-adobe-launch-property h_01HFKCMH8J2MAXJ3YVHJ2AJHWQ=add-the-adobe-launch-tag-to-the-website h_01HFKCMH8JWE1Q2749N54MAYRT=publish-the-adobe-launch-environment h_01HFKCMH8JFQQG0BEQ5CATGQ2P=ensure-that-the-sdk-is-working h_01HFKCMH8JCHH5WB5XRC8029DE=sending-events-optinoptout h_01HFKCMH8JSJR95Y9KNANABBKR=sdk-initial-state-setting h_01HFKCMH8JG2C43P8QZ0SKZCBB=explicit-control h_01HFKCMH8J9XDX87ES4F5WW4GJ=implement-a-content-security-policy-csp-policy h_01KGJCGCQ0QB7NK6YNZT5XJVJY=content-security-policy-csp h_01KP11XJV88YB2NSBZJTX9K7ZQ=advanced-sdk-verification-with-csp-nonce-snippets h_01KP3CJBZXQ4D538H0T7N9FZ6Z=nonce-without-smart-banners h_01KP3CJBZX8K3WK6RHQMB029VN=nonce-with-smart-banners h_01HFKCMH8JG40DT9NHXG6TPMJ1=discard-query-params h_01HFKCMH8JYSV81BEY5XQRZ24Y=query-discard-options h_01HFKCMH8JZCKH1JPTGBVJ3QP4=principles-of-event-recording h_01HFKCMH8JEDEDC48AH5A2797D=conversion-and-standard-events h_01HFKCMH8JYYB7HG2W8XQ7RFPD=conversion-events h_01HFKCMH8JQHSJF3T8SF4ZES7W=standard-events h_01HFKCMH8J79VD5BX96ANAYAFQ=recording-events h_01HFKCMH8JPJZQ81TYZX5PDF91=identifying-users-using-customer-user-id-cuid h_01HFKCMH8JYPNHJGYVRK1SZFYB=web-sdk-event-parameters h_01HFKCMH8J35YT2448PX8ZRM5P=recording-event-scenarios h_01HFKCMH8JQS3CTE6NTZY4G8ZR=online-store h_01HFKCMH8J1EDH3XM5V4ECYCPS=ensuring-that-events-are-sent h_01HFKCMH8J4KQSZ489TMDEN426=examples h_01HFKCMH8JAK25DZ1BZDFS4THD=recording-events::f1e16eae h_01HFKCMH8J4XNY5B9MKAS81T6Z=setting-customer-user-id-after-signup h_01HFKCMH8KJDZ0A15RMQ8BDMDH=addtional-information h_01HFKCMH8KV3QD9CPBSVWM3EVE=web-sdk-cookies h_01HFKCMH8KGJTE7BMK4VSQJF33=release-notes h_01HFKCMH8KP1SHA21JZA5PTZXG=deprecations" />

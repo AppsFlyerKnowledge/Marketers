@@ -60,6 +60,8 @@ This section describes how to create an ID5 connection in DCP and use it for enr
 * An ID5 token (provided by your ID5 account manager)
 * A source containing at least one of the supported identifiers: HEM, MAID, or IP + timestamp
 
+<div id="create-an-id5-connection" />
+
 <Accordion title="Create an ID5 connection">
 
 To use ID5 enrichment, first create a **Data & Identity** connection in DCP.
@@ -81,6 +83,8 @@ Once saved, the connection becomes available for your sources and collaborations
 
 </Accordion>
 
+<div id="enrich-a-source-with-id5" />
+
 <Accordion title="Enrich a source with ID5">
 
 You can enrich your sources using the S2S flow.
@@ -97,6 +101,8 @@ You can enrich your sources using the S2S flow.
    **Note:** If the original source is ever deleted, the new source will also be deleted.
 
 </Accordion>
+
+<div id="grant-id5-permissions-in-a-collaboration" />
 
 <Accordion title="Grant ID5 permissions in a collaboration">
 
@@ -138,3 +144,5 @@ This section outlines some key traits and limitations.
 | Retention window | ID5 stores mappings for 14–90 days, depending on activity. |
 | Identifier requirement | If the source lacks HEM, MAID, or IP + timestamp, enrichment is disabled. |
 | Connection conflicts | A collaboration can include only one ID5 connection. If both parties have their own ID5 connections, neither connection can be used within the collaboration. In this case, each party must enrich their data separately in their own environment, and only the resulting enriched sources can then be used in the collaboration. |
+
+<div data-zendesk-anchors="h_01KD7VPW5NX5QHVPJWX5YCGXAH=about-id5-enrichment h_01KD7VPW5NW24X53QQE2ZVDA2N=how-id5-works h_01KD7VPW5P0FEEAET9RXVPSECY=get-started-with-id5-enrichment h_01KD80FBKDHB6HKTTMXFDPGH5E=create-an-id5-connection h_01KD80FBKE4Q8TMNW7WFCN4QGC=enrich-a-source-with-id5 h_01KD80FBKE6TB00E8PZCFWST6M=grant-id5-permissions-in-a-collaboration h_01KD7VPW5P5XV61Z3X2CWZ7GV9=traits-and-limitations" />

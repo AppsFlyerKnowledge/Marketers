@@ -79,3 +79,5 @@ Consider the following:
 > 📘 **Note**
 >
 > For SRNs, the retention periods in this table apply only to data provided by the SRN directly. They do not apply to attribution made via AppsFlyer W2A attribution links (`googleads_int`, `metaweb_int`, `tiktokweb_int`, `snapweb_int`).
+
+<div data-zendesk-anchors="h_01H95FY07TRAAD3K0A0TSG3RB6=caution h_01H95FY07TABPC769R7TYGY5DD=data-retention-and-deletion-obligations availability-of-userlevel-data-to-advertisers=availability-of-user-level-data-to-advertisers h_01H95FY07T2Q9QAGW5A5S6KP6J=availability-of-user-level-data-to-advertisers h_01H95FY07TXS63FVDJC2NEFXYC=data-retention h_01H95FY07TZ4N0RRJRGJ6FN2EK=partner-data-retention-periods h_01KRKAWSHH2WFZT9Q5M0FSBBAB=note" />

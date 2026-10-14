@@ -28,11 +28,15 @@ Postbacks to partners are a critical part of the integration between AppsFlyer a
 
 ## Important information
 
+<div id="when-does-appsflyer-retry-a-failed-postback" />
+
 <Accordion title="When does AppsFlyer retry a failed postback?">
 
 A postback is retried when the response indicates an error on the receiving server-side 5XX errors.
 
 </Accordion>
+
+<div id="how-often-does-appsflyer-retry-a-failed-postback" />
 
 <Accordion title="How often does AppsFlyer retry a failed postback?">
 
@@ -40,11 +44,15 @@ The first failed postback is retried up to four additional times in 15-minute in
 
 </Accordion>
 
+<div id="can-retried-postbacks-be-identified-in-postback-reports" />
+
 <Accordion title="Can retried postbacks be identified in postback reports?">
 
 The raw data Postback report: "Postback Retry". The first postback sent has a blank value in this column. Any retried postback contains the value TRUE in this column.
 
 </Accordion>
+
+<div id="how-can-a-partner-identify-the-total-eventual-failed-postbacks-in-the-postback-report" />
 
 <Accordion title="How can a partner identify the total eventual failed postbacks in the Postback report?">
 
@@ -52,11 +60,15 @@ A postback that has four TRUE values listed in the "Postback Retry" column and a
 
 </Accordion>
 
+<div id="is-there-anything-special-a-partner-should-consider-about-retried-postbacks" />
+
 <Accordion title="Is there anything special a partner should consider about retried postbacks?">
 
 If the postback has reached your system and has been processed successfully, but there was an error or delay in sending a response—this is considered a failed postback, and retries are sent after 15 minutes. This can cause duplication on the partner's end. The partner must implement a deduplication mechanism on their end.
 
 </Accordion>
+
+<div id="are-postback-retries-automatically-enabled-for-all-partners" />
 
 <Accordion title="Are postback retries automatically enabled for all partners?">
 

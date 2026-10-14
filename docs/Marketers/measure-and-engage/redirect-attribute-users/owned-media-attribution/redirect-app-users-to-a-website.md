@@ -45,3 +45,5 @@ Advertisers can post OneLink URLs leading to external web pages or social media 
 1. Send the short or long URL to your phone, and click it.  
    **Note**: Email or WhatsApp yourself the link, and open it on your phone. Don't paste into iOS notes, or directly into a mobile browser.
 2. You should be redirected to the web URL.
+
+<div data-zendesk-anchors="01JENAXDEE8C81DN0JGPWPZQSY=redirect-app-users-to-a-web-url" />

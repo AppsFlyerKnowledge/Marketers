@@ -26,6 +26,8 @@ x-zendesk:
 
 The API returns attribution metrics reported by Apple SKAdNetwork (real data) and other data points using the install or postback arrival date. The report is similar in structure to the data presented in the [SKAN dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer). 
 
+<div id="using-skan-aggregated-performance-report-api" />
+
 <Accordion title="Using SKAN aggregated performance report API">
 
 **To use SKAN aggregated performance report API**:
@@ -98,6 +100,8 @@ The API returns a CSV file.
 
 </Accordion>
 
+<div id="specifications-and-limitations" />
+
 <Accordion title="Specifications and limitations">
 
 | Spec | Remarks |
@@ -117,3 +121,5 @@ The API returns a CSV file.
 | Total cost | SKAN API may not include the total cost metric if the regular attribution (regular Overview) contains SKAN campaigns that in the lowest granularity level (for example: ad, country, or site ID) have more than 50K rows. |
 
 </Accordion>
+
+<div data-zendesk-anchors="skadnetwork-postback-arrival-date-aggregation-reporting-api=skan-aggregated-performance-report-api h_01HH9WHP1SDQ3TJPZ931R9KWKH=skan-aggregated-performance-report-api h_01HH9WHP1S7PWJHKAKHN434G7Y=using-skan-aggregated-performance-report-api h_01HH9WHP1SZQZGSZ4WEPAAFNV7=parameters h_01HH9WHP1SYEHGJBBWSMS2XQP0=report-structure-and-example skadnetwork-aggregate-report-structure=report-fields h_01HH9WHP1STYNJK3DRESDF23DG=report-fields h_01HH9WHP1T4NEMW56XVYKM3KHM=specifications-and-limitations" />

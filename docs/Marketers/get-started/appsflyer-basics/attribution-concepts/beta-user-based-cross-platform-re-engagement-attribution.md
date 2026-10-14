@@ -54,6 +54,8 @@ For an in-app event to be attributed to a re-engaging media source, all of the f
 
 The following examples show the same user journey twice: first without cross-platform re-engagement, then with re-engagement opted in. Comparing the two illustrates exactly how re-engagement changes attribution.
 
+<div id="user-journey-without-re-engagement" />
+
 <Accordion title="User journey without re-engagement">
 
 Consider a user journey across three platforms. A Google ad drives users to install a mobile app, where they sign up using a customer user ID. Later, a Meta ad drives the same user to visit the web platform, where they sign in with the same customer user ID. After signing in, the user makes two purchases on mobile: $100 and $50.
@@ -68,6 +70,8 @@ Because re-engagement is not enabled in this scenario, all activity is attribute
 | Meta | 0 | 0 | 0 | 0 | 0 | 0 | $0 |
 
 </Accordion>
+
+<div id="user-journey-with-re-engagement" />
 
 <Accordion title="User journey with re-engagement">
 
@@ -96,3 +100,5 @@ To set up cross-platform re-engagement attribution, you need to apply a few sett
 >
 > * [Data Locker end-user events cross-platform report](/docs/end-user-events-cross-platform-report-in-data-locker)
 > * [The cross-platform dashboard](/docs/my-dashboards#crossplatform-dashboard)
+
+<div data-zendesk-anchors="h_01KNEVA6TAJZRZYS11Z0Q59AQJ=about-cross-platform-re-engagement-attribution h_01KNEVA6TASWZ0S6HH5QT0ZZF0=how-does-re-engagement-attribution-work a-cross-platform-re-engagement-user-journey-example=cross-platform-re-engagement-user-journey-example h_01KNEVA6TA5PVF5E8YWFE13QAQ=cross-platform-re-engagement-user-journey-example h_01KNEVA6TAPFZ48SHNN1F8Y8P5=user-journey-without-re-engagement h_01KNEVA6TA0ZRG6Z6A38JGEFAQ=user-journey-with-re-engagement h_01KNEVH8QZ2K59BJX0HZ908FXR=set-up-cross-platform-re-engagement-attribution h_01KNEVH8QZNV046JAF9PRADK4E=view-cross-platform-attribution-results h_01KNEVH8QZK4J276D8RPBH15JY=see-also" />

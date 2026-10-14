@@ -59,3 +59,5 @@ In some cases, there may be differences in the derived location of users between
 * **Different plans/methods:** Digital Element offers different package plans based on the required level of granularity. Other platforms using different Digital Element packages or different methods for defining a device's ID, may provide different results.
 * **Proxy, or VPN:** If a user implements a VPN or proxy, then we won't know the true user IP address. The Geo resolution will be according to the VPN/proxy address.
 * **To learn more:** [The tricky science behind IP geolocation](https://www.digitalelement.com/blog/the-tricky-science-behind-ip-geolocation/)
+
+<div data-zendesk-anchors="h_01HDP1SA5YV96YMPPFGN9H6RGE=determining-user-location h_01HDP1SA5YR7JWDHX2BNXXTKT9=note-regarding-the-united-kingdom-uk h_01HDP1SA5YNA9N4P9AD4RHWS0J=location-discrepancies" />

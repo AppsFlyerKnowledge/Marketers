@@ -25,6 +25,8 @@ x-zendesk:
 ---
 The first step in configuring the AppsFlyer SSO process is done on the Okta platform. Follow the steps below:
 
+<div id="create-the-appsflyer-app-in-okta" />
+
 <Accordion title="Create the AppsFlyer app in Okta">
 
 **Prerequisite:** An Okta account with administrative privileges.
@@ -56,6 +58,8 @@ The first step in configuring the AppsFlyer SSO process is done on the Okta plat
 
 </Accordion>
 
+<div id="create-okta-users" />
+
 <Accordion title="Create Okta users">
 
 Now that the Okta SAML application has been created, let’s add users.
@@ -77,6 +81,8 @@ Now that the Okta SAML application has been created, let’s add users.
 
 </Accordion>
 
+<div id="assign-users-to-your-app" />
+
 <Accordion title="Assign users to your app">
 
 1. From the Admin console, go back to **Applications** > **Applications**.
@@ -90,6 +96,8 @@ Now that the Okta SAML application has been created, let’s add users.
 
 </Accordion>
 
+<div id="get-idp-sso-metadata" />
+
 <Accordion title="Get IdP SSO metadata">
 
 1. From the Admin console, go back to **Applications** > **Applications**.
@@ -100,6 +108,8 @@ Now that the Okta SAML application has been created, let’s add users.
 
 </Accordion>
 
+<div id="complete-the-process-in-appsflyer" />
+
 <Accordion title="Complete the process in AppsFlyer">
 
 Now that you've configured the IdP part, go back to AppsFlyer to [complete the configuration](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer). You can then [test](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-process) to see that it works.
@@ -109,3 +119,5 @@ Now that you've configured the IdP part, go back to AppsFlyer to [complete the c
 > 📘 **See also**
 >
 > * [Okta SSO documentation](https://developer.okta.com/docs/guides/build-sso-integration/openidconnect/main/)
+
+<div data-zendesk-anchors="h_01HDNZYDQGGBMB9MJ97RF4BADM=create-the-appsflyer-app-in-okta h_01HDNZYDQGGFCA2KB9PDQY1ZTG=create-okta-users h_01HDNZYDQGC9MRQH92MM8W4FVE=assign-users-to-your-app h_01HDNZYDQGWRE9K6XG5EPYTYYX=get-idp-sso-metadata h_01HDNZYDQG6GNEP3TQMXVT5FTG=complete-the-process-in-appsflyer h_01HDP00WTAVP0X8FT51JC1JKKC=see-also" />

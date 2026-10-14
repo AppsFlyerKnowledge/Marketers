@@ -45,6 +45,8 @@ Nativex's configuration window includes 4 active tabs: Integration, Attribution 
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partners
@@ -88,6 +90,8 @@ In this section you can map your AppsFlyer events with Nativex via postbacks.
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -142,6 +146,8 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Nativex automatically sends encrypted CPI cost data on the attribution link for all installs.
@@ -150,11 +156,15 @@ For the full list of partners supporting cost data, click [here](/docs/roi360-co
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue data is not supported by this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -183,3 +193,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="setting-up-mobvista=setting-up-nativex h_01HKW7VFYJ6CZP5JD29YAS3AAH=setting-up-nativex h_01HKW7VFYJ02HSZ963PX5H38ZS=tip h_01HKW7VFYJXNP3AP7FZPFBRHA7=integration-tab h_01HKW7VFYJB9F9M8KGEA52ZQGD=activate-partners h_01HKW7VFYJDAT6G9VSC5H50Y9K=general-settings h_01HKW7VFYJVW66881ZHG2Q1B31=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW7VFYJA1919WZ0XPY8SP98=in-app-events-settings h_01HKW7VFYJKD1BHDDAG8VKFTYB=attribution-link-tab h_01HKW7VFYJFGKPDDBT09T3BXAN=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW7VFYJMYJ508P8E3B5WNN2=click-through-attribution h_01HKW7VFYJ6N5JMZTDBAKX02A4=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HKW7VFYK0YRYZXMPFRJNQJKP=view-through-attribution-lookback-window h_01HKW7VFYKD6S2NZ280VXRQT1F=impressions-attribution-link h_01HKW7VFYKDN59CAGE3JC11G7D=cost-tab h_01HKW7VFYK3AGC81SBA00C43AD=ad-revenue-tab h_01HKW7VFYKS66EAP51QECZPFQH=permissions-tab h_01HKW7VFYKRE972AJAM499H241=ad-network-permissions h_01HKW7VFYK1T10MR5AJ436C2NS=agency-permissions" />

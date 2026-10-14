@@ -38,3 +38,5 @@ The receipt validation flow is as follows:
 > * The AppsFlyer iOS SDK version must be 6.9.2+
 > * iOS devices with iOS version 7+ are supported for Install validation.
 > * There are cases where Apple does not provide install receipt data and as such, AppsFlyer considers this a valid install in terms of app store install validation. However, Protect360 can block this install due to other fraud reasons.
+
+<div data-zendesk-anchors="h_01JR7ST09GNZ2NTMP8D2YQ1DCH=receipt-validation-flow h_01JR7ST09G5QFHFTWK98NCJE97=notes" />

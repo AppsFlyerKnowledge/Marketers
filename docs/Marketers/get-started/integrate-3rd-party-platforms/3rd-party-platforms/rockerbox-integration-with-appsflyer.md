@@ -42,6 +42,8 @@ x-zendesk:
    Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -84,11 +86,15 @@ In this section, you map AppsFlyer events with the partner via postbacks. Learn 
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution Links are not available for this partner.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -96,14 +102,20 @@ Cost data is not applicable in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not applicable in the integration with this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 Permissions are not available for this partner.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H9HWJW82HZ9FR31VHHRBZ3EM=important h_01H9HWJW83BKP8DSYTV6YGPHK7=setting-up-rockerbox h_01H9HWJW83WDGQKKMM942NPA1S=integration-tab h_01H9HWJW83Z4NGT000091AHX0Z=activate-partner h_01H9HWJW832NQBPK2VS6TS1QK7=general-settings h_01H9HWJW83CGMBADDBP7EJTR9N=default-postbacks inapp-events-settings=in-app-events-settings h_01H9HWJW84H4SDVRNZAG1D6N0D=in-app-events-settings h_01H9HWJW84G6GXMBTGMHTDPM6R=attribution-link-tab h_01H9HWJW84BZNHN4DRKA33WCVK=cost-tab h_01H9HWJW848DRTKBF3AKR5KYC5=ad-revenue-tab h_01H9HWJW84NTZWKP2FP2WK4FZD=permissions-tab" />

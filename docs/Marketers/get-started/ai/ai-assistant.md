@@ -188,3 +188,5 @@ To turn on or off the AI Assistant:
 *AppsFlyer AI can make mistakes. AI answers are based on your account's aggregated data. Your data is never stored or used to train AI models.*
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01K3JQZ60KZ1FFE56BJ8VE6H33=about-ai-assistant h_01K3JQZWVFBRAQJJSA4JE4G9MS=what-you-can-do h_01K3JQZWVKJC9M6WTMD99BVHF3=where-to-open-it h_01K4A6BP6WXBFRH4BX53CDFSB9=tip h_01K4A7VTJF5KD1MDFTPJD515WE=other-features h_01KC3F9H3IYBC7E8F0A1B2C3D4=conversation-history h_01K3JQZWVTFZH26J2C14D1RCTM=other-information" />

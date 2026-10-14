@@ -38,6 +38,8 @@ QR codes can be created either:
 * [Manually, in the AppsFlyer UI](/docs/qr-to-app-conversion#manual-qr-code-setup)
 * [Dynamically, using the OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#qr-codes) (specifically designed for web-to-app desktop flows)
 
+<div id="qr-to-app-conversion" />
+
 <Accordion title="QR to App conversion">
 
 #### MANUAL QR CODE SETUP
@@ -65,6 +67,8 @@ QR codes can be created either:
    * Developer assistance may be required.
 
 </Accordion>
+
+<div id="customize-qr-code" />
 
 <Accordion title="Customize QR code">
 
@@ -97,6 +101,8 @@ You can customize the QR codes generated via OneLink by:
 5. Click **Save**.
 
 </Accordion>
+
+<div id="measure-qrtoapp-conversions" />
 
 <Accordion title="Measure QR-to-app conversions">
 
@@ -135,6 +141,8 @@ The following are tips to maximize QR-to-app conversions.
 
 In this section, you can find a list of frequently asked questions about QR codes.
 
+<div id="qr-with-long-links-vs-short-links---is-there-any-difference" />
+
 <Accordion title="QR creation with long links vs. short links – is there any difference?">
 
 Your QR code will function with either a long or short URL. However, if you use a short URL, you'll be able to update the link parameters and behavior via the OneLink dashboard (under the Link Management or Bulk links section) without needing to replace the published QR code—since the short URL itself remains unchanged.
@@ -146,6 +154,8 @@ Your QR code will function with either a long or short URL. However, if you use 
 
 </Accordion>
 
+<div id="can-you-create-a-qr-code-and-change-the-behavior-behind-it-retroactively-after-printing-the-qr-for-example" />
+
 <Accordion title="Can you create a QR code and change the behavior behind it retroactively, after printing the QR, for example?">
 
 Yes, you can—if the QR code is based on a short OneLink URL that you can edit (for example, one created via the OneLink UI). A **QR code is a visual representation of the URL behind it**.  Changing the URL itself will create a new corresponding QR code (e.g., the QR code for mike.onelink.me/123A/shorturl is different from the QR code for mike.onelink.me/123A/example).
@@ -153,6 +163,8 @@ Yes, you can—if the QR code is based on a short OneLink URL that you can edit 
 However, because a OneLink short URL is a hashed URL, its parameters and redirection rules are configured on the backend and aren't visible in the URL. This means you can keep the same visible URL and QR code while editing its backend configuration.
 
 </Accordion>
+
+<div id="what-appsflyer-options-are-available-for-generating-qr-codes" />
 
 <Accordion title="What AppsFlyer options are available for generating QR codes?">
 
@@ -177,6 +189,8 @@ You have the following options:
 
 </Accordion>
 
+<div id="can-you-bulk-create-qr-codes" />
+
 <Accordion title="Can you bulk create QR codes?">
 
 Yes. You can:
@@ -185,3 +199,5 @@ Yes. You can:
 * Create large volumes of QR codes using [OneLink API](/docs/use-onelink-api-to-create-links-in-large-scale-campaigns).
 
 </Accordion>
+
+<div data-zendesk-anchors="converting-mobile-nonmobile-and-offline-traffic-into-mobile-app-users=converting-mobile-non-mobile-and-offline-traffic-into-mobile-app-users h_01HKWVMKP3QT59EXPHQEPHW8K9=converting-mobile-non-mobile-and-offline-traffic-into-mobile-app-users h_01HKWWQXVC11E8M3NV3A03SWYD=qr-to-app-conversion h_01HKWWQXVCB96WDMBSE9WH9ZC5=manual-qr-code-setup h_01HKWVMKP3R5C5FPH010ZJZAHS=customize-qr-code h_01HKWVMKP3XTF6NNPNM8J00NWD=measure-qrtoapp-conversions h_01HKWVMKP3P6FNRPP1X7ZTNH10=best-practices qr-code-%E2%80%93-faq=faq h_01K42Q4QQVNQ4579CCM7QF7MQS=faq qr-with-long-links-vs-short-links-%E2%80%93-is-there-any-difference=qr-with-long-links-vs-short-links---is-there-any-difference h_01K42Q4QQVKGQZKAS1PZ3B9H20=qr-with-long-links-vs-short-links---is-there-any-difference h_01K42Q4QQVTV0KP280D15JF7NB=can-you-create-a-qr-code-and-change-the-behavior-behind-it-retroactively-after-printing-the-qr-for-example h_01K42Q4QQVV1RZZXZK2Y9W8R58=what-appsflyer-options-are-available-for-generating-qr-codes h_01K42Q4QQVZF4H8FYZCTJPR0RX=can-you-bulk-create-qr-codes" />

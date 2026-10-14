@@ -73,3 +73,5 @@ On the Google Ads integration page, the following actions are available:
 | No response | We can't contact Google Ads servers | At present, we can't connect to the Google Ads servers. If the status persists for more than 24 hours contact AppsFlyer support. |
 | Invalid credentials | AppsFlyer can't get the data as the credentials are not valid. | Ensure that the correct credentials are set in the Google Ads integration page. Try to connect again using the most recent credentials. If the problem persists contact AppsFlyer support. |
 | General error |  | If this status persists for more than 24 hours contact AppsFlyer support |
+
+<div data-zendesk-anchors="h_01HKW2V24JE5V959999TJDR2RX=integrating-google-ads-campaign-data-in-pba pba%E2%80%94google-ads-status-messages=pbagoogle-ads-status-messages h_01HKW2V24KM85CCC2F0CZHY359=pbagoogle-ads-status-messages" />

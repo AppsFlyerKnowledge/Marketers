@@ -36,6 +36,8 @@ To use Cohort and retention, select users from one or more apps and segment them
 
 ## Using Cohort
 
+<div id="setting-up-an-analysis" />
+
 <Accordion title="Setting up an analysis">
 
 1. In AppsFlyer, from the side menu, select **Analyze** >**Cohort & Retention**.  
@@ -92,6 +94,8 @@ To use Cohort and retention, select users from one or more apps and segment them
 | Action options (![Elipse.png](https://files.readme.io/14b74dc6e733867bd16b6a3594f5f0856d7437462b2e0cf7c12adf11cfa295b3-32127949499409.png)) | <ul><li>**Save as new**<ul><li>Save the report using a different report name</li><li>[Option] Make this report default report</li></ul></li><li>**Rename**: Change the report name</li><li>**Set as default**: Make the report the default report. When you open Cohort this is the report that displays initially</li><li>**Delete**: Delete the report</li></ul> |
 
 </Accordion>
+
+<div id="export-the-cohort-to-a-csv-file" />
 
 <Accordion title="Export the cohort to a CSV file">
 
@@ -190,27 +194,29 @@ Use the partial/complete data control to select the data display mode:
 
 | Dimension | Comments | Group by | Filter by |
 | --- | --- | --- | --- |
-| Ad |  | **✓** | **✓** |
-| Ad ID |  | **✓** | **✓** |
-| Adset |  | **✓** | **✓** |
-| Adset ID |  | **✓** | **✓** |
-| Agency |  | **✓** | **✓** |
-| Apps | Relevant when the report contains multiple apps | **✓** | **x** |
-| Attributed touch-type | Values: Click, impression, or NA (organic) | **✓** | **✓** |
-| Campaign |  | **✓** | **✓** |
-| Campaign ID |  | **✓** | **✓** |
-| Channel |  | **✓** | **✓** |
-| Conversion type | Cohort type dependant:<ul><li>**User acquisition**: Install</li><li>**Retargeting**: Re-engagement, Re-attribution</li></ul> | **✓** | **✓** |
-| Geo | Based on user IP address | **✓** | **✓** |
-| Time. In the case of:<ul><li>Daily granularity is the date</li><li>Hourly granularity is the hour of the day</li><li>Weekly granularity is the week of the year</li><li>Monthly granularity is the month of the year</li></ul> | Cohort type dependant:<ul><li>**User acquisition and unified**: The time the app was launched for the first time.</li><li>**Retargeting**: The time the app was launched for the first time after re-engagement.</li></ul> | **✓** | **x** |
-| Install app store | Relevant for apps implementing Android [multi-store attribution.](/docs/set-up-multi-store-android-attribution)Reach out to your CSM to enable this dimension. | **✓** | **✓** |
-| Keywords | Search keywords provided by the integrated partners | **✓** | **✓** |
-| Media source |  | **✓** | **✓** |
-| Revenue type | In-app purchase or Ad revenue | **x** | **✓** |
-| Site Id |  | **✓** | **✓** |
-| Sub Param 1 |  | **✓** | **✓** |
+| <span id="ad"></span>Ad |  | **✓** | **✓** |
+| <span id="ad-id"></span>Ad ID |  | **✓** | **✓** |
+| <span id="adset"></span>Adset |  | **✓** | **✓** |
+| <span id="adset-id"></span>Adset ID |  | **✓** | **✓** |
+| <span id="agency"></span>Agency |  | **✓** | **✓** |
+| <span id="apps"></span>Apps | Relevant when the report contains multiple apps | **✓** | **x** |
+| <span id="attributed-touchtype"></span>Attributed touch-type | Values: Click, impression, or NA (organic) | **✓** | **✓** |
+| <span id="campaign"></span>Campaign |  | **✓** | **✓** |
+| <span id="campaign-id"></span>Campaign ID |  | **✓** | **✓** |
+| <span id="channel"></span>Channel |  | **✓** | **✓** |
+| <span id="conversion-type"></span>Conversion type | Cohort type dependant:<ul><li>**User acquisition**: Install</li><li>**Retargeting**: Re-engagement, Re-attribution</li></ul> | **✓** | **✓** |
+| <span id="country-geo"></span>Geo | Based on user IP address | **✓** | **✓** |
+| <span id="time-in-the-case-of-daily-granularity-is-the-date-hourly-granularity-is-the-hour-of-the-day-weekly-granularity-is-the-week-of-the-year-monthly-granularity-is-the-month-of-the-year"></span>Time. In the case of:<ul><li>Daily granularity is the date</li><li>Hourly granularity is the hour of the day</li><li>Weekly granularity is the week of the year</li><li>Monthly granularity is the month of the year</li></ul> | Cohort type dependant:<ul><li>**User acquisition and unified**: The time the app was launched for the first time.</li><li>**Retargeting**: The time the app was launched for the first time after re-engagement.</li></ul> | **✓** | **x** |
+| <span id="install-app-store"></span>Install app store | Relevant for apps implementing Android [multi-store attribution.](/docs/set-up-multi-store-android-attribution)Reach out to your CSM to enable this dimension. | **✓** | **✓** |
+| <span id="keywords"></span>Keywords | Search keywords provided by the integrated partners | **✓** | **✓** |
+| <span id="media-source"></span>Media source |  | **✓** | **✓** |
+| <span id="revenue-type"></span>Revenue type | In-app purchase or Ad revenue | **x** | **✓** |
+| <span id="site-id"></span>Site Id |  | **✓** | **✓** |
+| <span id="sub-param-1"></span>Sub Param 1 |  | **✓** | **✓** |
 
 </Accordion>
+
+<div id="metrics-available" />
 
 <Accordion title="Metrics available">
 
@@ -247,6 +253,8 @@ Use the partial/complete data control to select the data display mode:
 
 ## Additional information
 
+<div id="cohort-for-agencies" />
+
 <Accordion title="Cohort for agencies">
 
 * The advertiser needs to grant the agency permission to use Cohort.
@@ -257,6 +265,8 @@ Use the partial/complete data control to select the data display mode:
 * Agencies are limited to accessing data of traffic generated by the agency. They can't see data related to organic traffic or non-organic traffic generated elsewhere.
 
 </Accordion>
+
+<div id="use-cases" />
 
 <Accordion title="Use cases">
 
@@ -277,6 +287,8 @@ An advertiser defines the in-app event af\_purchase. The cohort table displays t
 [![cohort use case 3.png](https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png)](https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png)
 
 </Accordion>
+
+<div id="faq" />
 
 <Accordion title="FAQ">
 
@@ -324,3 +336,5 @@ An advertiser defines the in-app event af\_purchase. The cohort table displays t
 | Events | The top 1,000 in-app events (by event count) are displayed alphabetically in the dropdown in the cohort analysis setup. |
 
 </Accordion>
+
+<div data-zendesk-anchors="cohort-dashboard=cohort-and-retention-dashboard 01H7T5AGP75A36TVWSM7H81E8P=cohort-and-retention-dashboard 01H7T5AGP7SGPZNK8VTDYBTY2B=tip 01H7T5AGP7XDKN85TR0J4V8TP3=using-cohort 01H7T5AGP7FDZNVM9PDBQJPMA0=setting-up-an-analysis using-my-reports%E2%80%94save-and-select-reports=using-my-reports-save-and-select-reports 01H7T5AGP8KRZ9207DCYGRGGC0=using-my-reports-save-and-select-reports 01H7T5AGP84HVD2BQ9Z8S13D5K=export-the-cohort-to-a-csv-file 01H8K817ZPJTRBP1KK90FVV57T=cohort-concepts 01H8K817ZPZTG476KZ83F6Z460=cohort-periods h_01JJH967X8P2NF3AFBSNMBD7B4=view-types 01H8K817ZPBVTGT5R18XGQHYT2=trend-types 01H8VNMYN0149T418BXM8RGBN9=user-lifetime-performance 01H8VNRGMWS8SSDM5KX08EDAS2=kpi-by-attribution-time 01H8K98XE9T23QGB440GHRB8E8=example-user-lifetime-performance-trend-vs-kpi-by-attribution-time-trend 01H7T5AGP8PN12P2C4RGGQ0R95=partial-data 01H7T5AGP8XNG1CW2FPJSEEJ45=list-of-dimensions-for-grouping-and-filtering time-in-the-case-of%0A%20%20%0A%20%20daily-granularity-is-the-date%0A%20%20hourly-granularity-is-the-hour-of-the-day%0A%20%20weekly-granularity-is-the-week-of-the-year%0A%20%20monthly-granularity-is-the-month-of-the-year=time-in-the-case-of-daily-granularity-is-the-date-hourly-granularity-is-the-hour-of-the-day-weekly-granularity-is-the-week-of-the-year-monthly-granularity-is-the-month-of-the-year 01H7T5AGP708H7JGTS1RJ07H27=metrics-available information=additional-information 01H7T5AGP8J9AQ1BREYZ0JWWZ4=additional-information 01H7T5AGP83FRX1H9WVMS485MT=cohort-for-agencies 01H7T5AGP8JF0EAX8WEFNSEKM9=use-cases revenue-sum-by-country=revenue-sum-by-geo 01H7T5AGP8R6913GPXWM6DGASF=revenue-sum-by-geo inapp-event-conversion=in-app-event-conversion 01H7T5AGP80W5J1VEZ40MHGPPF=in-app-event-conversion 01H7T5AGP85T7H25863GXJCVCW=faq 01H7T5AGP90NADB7YXTFEMTSAX=traits-and-limitations" />

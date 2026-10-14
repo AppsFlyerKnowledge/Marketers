@@ -45,6 +45,8 @@ Admins can [add users to multiple accounts](#multiple-accounts) so they can easi
 
 [![user-management-page.jpg](https://files.readme.io/0ca6dd472b6f50bfde693bba9c131ce9454dc1df90e3a0fb029e2e05b2330db4-31780969019665.jpg)](https://files.readme.io/0ca6dd472b6f50bfde693bba9c131ce9454dc1df90e3a0fb029e2e05b2330db4-31780969019665.jpg)
 
+<div id="users-tab" />
+
 <Accordion title="Users tab">
 
 The **Users** tab displays a table of all existing users in your account. This is the starting point for creating, managing, and deleting users.
@@ -103,13 +105,16 @@ The page for creating or editing a user includes a number of sections. Make sure
 
    * Can include letters, numbers, apostrophes ('), ampersands (&), dollar signs ($), hash symbols (#), hyphens (-), underscores (\_), and periods (.)
    * Two consecutive periods (..) and other special characters are not allowed.
-   * Must end with a valid email domain.<br /><br />**Note**<br />#### Important!
+   * Must end with a valid email domain.
 
-   A user’s email address is what identifies them in the AppsFlyer platform, meaning:
+     > 📘 **Important!**
+     >
+     > A user’s email address is what identifies them in the AppsFlyer platform, meaning:
+     >
+     > * It can't later be changed without deleting and recreating the user.
+     > * It must be a valid email address at which the user can receive emails.
+     > * It can't be associated with another user in any AppsFlyer account, [except for users in multiple accounts](#multiple-accounts). If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](/docs/user-management#troubleshooting-can-t-create-this-user) to resolve this issue.
 
-   * It can't later be changed without deleting and recreating the user.
-   * It must be a valid email address at which the user can receive emails.
-   * It can't be associated with another user in any AppsFlyer account, [except for users in multiple accounts](#multiple-accounts). If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](/docs/user-management#troubleshooting-can-t-create-this-user) to resolve this issue.
 4. [Optional] Select the user’s department.
 
 #### Role
@@ -145,7 +150,7 @@ By default, the setting **All** allows access to all media sources within the ac
 There are two types of media sources shown in the list:
 
 * **Paid media sources:** Ad networks, self-reporting ad networks (SRNs), and agencies
-* **Custom media sources:** Predefined media sources. This can include owned media links, single source links, OneLink links, and links the advertiser created outside of AppsFlyer.
+* **<span id="custom_media_sources"></span>Custom media sources:** Predefined media sources. This can include owned media links, single source links, OneLink links, and links the advertiser created outside of AppsFlyer.
 
 **Specifications for the list of media sources:**
 
@@ -219,6 +224,8 @@ Advertiser accounts support having the same user in multiple accounts. With the 
 
 </Accordion>
 
+<div id="editing-users" />
+
 <Accordion title="Edit users">
 
 Users can be edited either one at a time or in groups.
@@ -288,7 +295,7 @@ Multiple users can be deleted from the account in bulk.
 > * The [account owner](/docs/user-management#account-owner) can't be deleted
 > * Deleting users is irreversible
 
-**To delete users:**
+<span id="to-delete-users"></span>**To delete users:**
 
 1. On the **Users** tab, select the checkboxes of the users you want to delete. You can use the search and filters to help find users.
 2. After selecting users, click the **Delete** button that now appears at the top-right of the table.
@@ -388,6 +395,8 @@ Through the [Get roles API](https://dev.appsflyer.com/hc/reference/get_roles), y
 
 ## Manage custom roles
 
+<div id="creating-custom-roles" />
+
 <Accordion title="Create custom roles">
 
 * **Prerequisite:** Only [account owners](#account-owner) or users with the [Admin role access](#admin) can create a custom role.
@@ -406,6 +415,8 @@ Through the [Get roles API](https://dev.appsflyer.com/hc/reference/get_roles), y
 
 </Accordion>
 
+<div id="editing-custom-roles" />
+
 <Accordion title="Edit custom roles">
 
 **To edit a custom role:**
@@ -422,6 +433,8 @@ Through the [Get roles API](https://dev.appsflyer.com/hc/reference/get_roles), y
 > Any changes you make to a custom role are automatically applied to **all existing users** in that role.
 
 </Accordion>
+
+<div id="deleting-custom-roles" />
 
 <Accordion title="Delete custom roles">
 
@@ -490,6 +503,8 @@ Additionally, the following AppsFlyer features are **not available** to these us
 * Cost ETL
 
 </Accordion>
+
+<div id="combined-media-source-and-agency-access" />
 
 <Accordion title="Combined media source and agency access">
 
@@ -577,6 +592,8 @@ If a new user did not receive their [account activation invitation](#user-activa
 
 </Accordion>
 
+<div id="resetting-twofactor-authentication-2fa" />
+
 <Accordion title="Reset a user's two-factor authentication (2FA)">
 
 If your account uses 2FA, there may be occasions on which you need to reset a user’s 2FA settings. Do so as follows:
@@ -587,3 +604,5 @@ If your account uses 2FA, there may be occasions on which you need to reset a us
 **Note:** An admin can reset any other admin's 2FA other than their own or the [account owner's](#account-owner). To reset the account owner's 2FA, contact the AppsFlyer Support team.
 
 </Accordion>
+
+<div data-zendesk-anchors="background=overview h_01H9Q9007QP8YMPDVZ57N4M1HD=overview h_01H9Q9007QW1RD3MTTV01Q8QRE=user-management-page h_01J6W88SQ45MA3AZ29K3WMW9PV=users-tab h_01J6W88SQ5B16Q897YMJ7ZNMQX=roles-tab managing-users=manage-users h_01H9Q9007QYSJZYZMP0C8NA98G=manage-users h_01H9Q9007QH3ME2P8PHC9DJBZV=creating-users h_01HMP4EYM562HFSP80MQQ82B47=user-details h_01H9Q9007Q6SK4391P8C3A147N=important h_01HMP4Q56XP10343YFW17VX00W=role h_01HMP4RDXVRM3Z0WDCJD3P2W8S=app-access h_01HMP4SW7RMESGDFNP1KFN7641=data-access h_01HR6VBJHTZM48493B29FCWQT8=note h_01HRPRS4BHX2AMR9W4FNGE0N1P=media-sources 01HRPRSF0F8ENJ9ZAE1ZDTMAMB=note-1 h_01HRPRVXYFX4P2ZG0H5HPNF2AG=geos h_01HFRCWNR8T5J990TV68K6B45T=user-activation h_01HFRFRQXD1RD66EBRQH0T7Q78=note-2 01HFRF6SENRY51A4ZAQJTMTDA3=multiple-accounts h_01J2GN6ZA29SFC12HR4ZVBDFDT=log-in-to-multiple-accounts h_01M2ZBMHB9P3FEAFDA637ZH4MC=note-3 h_01H9Z7XXE0CKRSE191ZN017MGE=supported-accounts-and-users 01J2GMV7ZYV5G0Q6C18RRY1TY0=limitations-on-adding-users-to-multiple-accounts h_01H9G1MP3Z7VCQQ8ZSQDGSWPC3=add-users-to-multiple-accounts h_01H9Q9007RTMXVRMR4RM6J80CW=editing-users h_01H9Q9007R3QW4AYRJBTF0X7B9=individual-editing multiuser-editing=multi-user-editing h_01H9Q9007R4JQPKQS2HVB251GH=multi-user-editing h_01H9Q9007R9M9YDMJ2YYNZDW3D=note-4 h_01H9Q9007RAFXB899YK6CADD9R=example h_01H9Q9007RF8QKS7YBZ1GRXVCF=deleting-users h_01HGTR4NEBYJZTW4BA5V9JJX5X=note-5 h_01HGTK2664A0R2RBJM37EYWNZG=to-delete-users h_01HYASD07FG0HGX22FTHEQ9APP=manage-users-in-bulk-via-api more-about-roles=manage-roles h_01H9Q9007Q8CMR2RD6E4KN26YE=manage-roles h_01H9Q9007Q28D43B6JRP71NDQM=predefined-roles h_01J6VZ7ANV3JHJZ5EVBF1BY585=note-6 h_01H9Q9007QXSGG375PR2SCS7QS=example-1 admin%E2%80%94a-special-role=admin h_01H9Q9007Q4A6KETAAGAWEPQQ9=admin h_01HF8N2Z8ZP3HV06XJPMQ19DTK=access h_01HV1F5S0FE083B73P8MEYX4FM=manage-tokens h_01HF8N6DKWYKMBE35QKKB55KEM=role-duplication h_01HVK8EB3SMC09VD8TJND9YWCD=invite-new-partners-to-appsflyer h_01HF8N69VYE3ZJVFW1ENC0XA62=account-owner h_01H9Q9007QZ7F2TX8B9D1TNYPN=custom-roles h_01H9Q9007QE8YT1DNRPNTFQWYH=temp-roles h_01J6VZ2XP6HM6NJ2TB5DJXD6SA=get-roles-data-via-api managing-custom-roles=manage-custom-roles h_01H9Q9007RQHHNHZ3M38E88YPW=manage-custom-roles h_01H9Q9007RYZD19CFNSM60EARZ=creating-custom-roles h_01H9Q9007R6E6JGD8BC2WY8G3G=editing-custom-roles h_01H9Q9007RANMZP4T6S8R6WA1B=important-1 h_01H9Q9007R16190B6RB884FY61=deleting-custom-roles h_01H9Q9007RSWFVAZQ5DNVNN7T2=special-situations-and-additional-procedures h_01H9Q9007RNZ28128XDB76ZVZC=managing-temp-roles h_01H9Q9007RJ0CQRGEYNEQJ2QR5=temp-role-limitations h_01H9Q9007RHBYD2B6PHQRD7TWV=example-2 h_01H9Q9007RRY6QERXQ0C4FSYCN=dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access h_01K7B3N5G8R2M4X9Y1D6W0T3PQ=combined-media-source-and-agency-access h_01K7B3N7H9S3N5Y0Z2E7X1U4RT=example-3 h_01H9Q9007R221KXA7DFTXJY0PE=changing-the-account-owner h_01H9Q9007RR4M8V599A19B2M0F=important-2 1%E2%80%93send-an-email-request=1assign-a-team-member-the-admin-role h_01H9Q9007RSA5406WXCB1E4JRK=1assign-a-team-member-the-admin-role h_01K5P1G80QACK6YMKX4AGJA5ZK=2send-an-email-request 2%E2%80%93next-steps=3next-steps h_01H9Q9007RZ2X9RAY8067SZETF=3next-steps troubleshooting-can%E2%80%99t-create-this-user=troubleshooting-can-t-create-this-user h_01H9Q9007RR4VYEPGT90MEHV3T=troubleshooting-can-t-create-this-user h_01H9Q9007R11BQWQZC66X5FV0N=resending-a-user-invitation h_01H9Q9007R72FAH89XW58MWCXT=resetting-twofactor-authentication-2fa" />

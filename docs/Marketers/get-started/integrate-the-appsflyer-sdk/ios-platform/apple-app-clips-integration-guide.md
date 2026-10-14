@@ -84,6 +84,8 @@ The following procedure detail what you and the iOS developer need to do to deve
 | --- |
 | **Prerequisites**<ul><li>An AppsFlyer account with at least one app.</li><li>A OneLink template with Universal Links, and OneLink link set up to direct your full app users.<br />**Recommendation**: The template and link invocation you use for the App Clip sends all users without your full app to the App Clip. Therefore, consider having a separate template and custom link for cases in which you want to send those users to the App Store, instead of the App Clip.</li></ul> |
 
+<div id="develop-app-clip" />
+
 <Accordion title="Develop App Clip">
 
 For complete instructions on how developers create an App Clip for your app, see the Apple [App Clip guide for developers](https://developer.apple.com/app-clips/).
@@ -91,6 +93,8 @@ For complete instructions on how developers create an App Clip for your app, see
 For a simplified sample app that demonstrates the usage of App Clips and its integration with a full application, see the [AppsFlyer App Clip guide](https://www.appsflyer.com/resources/others/apple-app-clips/).
 
 </Accordion>
+
+<div id="integrate-sdk" />
 
 <Accordion title="Integrate SDK">
 
@@ -152,6 +156,8 @@ Send the following links to your iOS developer and tell them to follow the instr
 
 </Accordion>
 
+<div id="configure-app-store-connect" />
+
 <Accordion title="Configure App Store Connect">
 
 **Prerequisites**: Completion of [OneLink template configuration for App Clips](/docs/apple-app-clips-integration-guide#configure-onelink)
@@ -171,6 +177,8 @@ Send the following links to your iOS developer and tell them to follow the instr
 
 </Accordion>
 
+<div id="testing" />
+
 <Accordion title="Testing">
 
 **Prerequisites**: A [registered test device](/docs/registering-test-devices) with iOS 14 without your full app installed.
@@ -186,6 +194,8 @@ Send the following links to your iOS developer and tell them to follow the instr
 
 ## Traits and limitations
 
+<div id="traits-and-limitations::26141033" />
+
 <Accordion title="Traits and limitations">
 
 | Trait/Limitation | Description |
@@ -200,3 +210,5 @@ Send the following links to your iOS developer and tell them to follow the instr
 > 📘 **See also**
 >
 > * [Attribution solution for Apple App Clips by AppsFlyer](https://www.appsflyer.com/resources/guides/ios-14-app-clips/)
+
+<div data-zendesk-anchors="h_01HDNZQTCBXY0Y3QYCBNVH7EAW=app-clip-integration h_01HDNZQTCBPJWY6H2M452QH644=considerations h_01HDNZQTCB7NB682YTSMNCJSDP=example h_01HDNZQTCBNG3TYRAA7GVPF39P=metrics-and-reporting h_01HDNZQTCBJK7SB96G8A4DHR34=app-clip-implementation h_01HDNZQTCB1AKW9QFRRM9VVN4D=scope-of-work h_01HDNZQTCBN04J3GA8H64V70YY=develop-app-clip h_01HDNZQTCBHHENFYJK7MFJTZ14=integrate-sdk h_01HDNZQTCBN9QV4MZAAWMV164Y=configure-onelink h_01HDNZQTCC6F8TTM2FRQK6DB2E=configure-app-store-connect h_01HDNZQTCCN2BX9NZ4027ZCEFB=testing h_01HDNZQTCCMW2YNK1G34EBM7DM=traits-and-limitations h_01HDNZQTCCV0S78NRK00PK4S0J=traits-and-limitations::26141033 h_01HDNZS83EKJNZGG1QEVS9RMCA=see-also" />

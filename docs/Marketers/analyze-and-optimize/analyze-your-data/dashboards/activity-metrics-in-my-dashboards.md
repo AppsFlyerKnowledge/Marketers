@@ -165,3 +165,5 @@ You can group and filter Activity metrics using:
 | Unified view metrics | All metrics are supported only in Unified view |
 | Unique Users from in-app events and Active Users | **Unique Users from in-app events** and **Active Users** in My Dashboards are based on a statistical estimation algorithm that reduces duplicate counting and provides a consistent view of user Activity. |
 | Active Users and Unique Users Actual | If the selected date range includes today and previous days, and the widget isn’t grouped by date, today’s data doesn’t appear. |
+
+<div data-zendesk-anchors="h_01KXNJ1RB3ZWVG9SASCRNSS9N1=note h_01K4Q11V7F3KCHT69SC90J54Q6=about-activity-metrics h_01K4Q11V7MV95K09VC3D0190V3=dashboard-information h_01K4Q11V7QY8DB1FNRG3AJBDWR=available-activity-metrics available-inapp-metrics=available-in-app-metrics h_01K4Q11V7Z4Y4TWT5E2J0354JA=available-in-app-metrics h_01K4Q11V86S336QH6ZG5XS5AWG=supported-filter-and-group-by-dimensions h_01K4Q11V8DCBT4CY5MJZ44X7SX=specifications-and-limitations" />

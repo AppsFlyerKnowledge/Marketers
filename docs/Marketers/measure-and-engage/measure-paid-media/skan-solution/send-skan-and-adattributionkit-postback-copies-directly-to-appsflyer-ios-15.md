@@ -71,3 +71,5 @@ After an app has been configured to send postback copies to AppsFlyer, it may ta
 > 📘 **See also**
 >
 > * [Apple developer](https://developer.apple.com/documentation/storekit/skadnetwork/configuring_an_advertised_app?changes=latest_minor#see-also)
+
+<div data-zendesk-anchors="h_01KDSTGH21EG5MT0KFXZ40VMW1=note h_01HE7SV29Y7DNSKAAR91MJX986=why-send-postback-copies-to-appsflyer h_01HE7SV29YDFA5Z0X4WS87YK0Y=configure-your-app-to-send-postback-copies-to-appsflyer h_01HH9WCVH4C37ZGMRZRB7EQT6B=important h_01HE7SV29YC855TGCXTCT4KHRN=common-misconceptions h_01HE7SV29YMMTPH6EKYF3GQYEN=dont-believe-everything-you-hear h_01HHH74CC5X0T5M1F86XWMNH9V=traits-and-limitations h_01HE7SX466CMCC03K99H68ZRBN=see-also" />

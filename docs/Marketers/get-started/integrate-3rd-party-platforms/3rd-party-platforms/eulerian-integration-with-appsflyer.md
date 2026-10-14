@@ -44,6 +44,8 @@ Eulerian's configuration window includes 4 tabs: **Integration, Attribution link
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/user-level-data-retention).
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -100,11 +102,15 @@ Once saved, AppsFlyer begins sending data to Eulerian for every organic and non-
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution Links are not available for Eulerian.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -112,14 +118,20 @@ Cost is not supported in the integration with Eulerian.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with Eulerian.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 Permissions are not available for Eulerian.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H9FK7FC3ME19HXCRQ0XKVQQC=important h_01H9FK7FC309KKTAKZ1K9AHAN5=setting-up-eulerian h_01H9FK7FC3K3Y8220AG9YK3BP8=integration-tab h_01H9FK7FC316DZHE9YKSWQ5A5N=activate-partner h_01H9FK7FC4ZBQ2XPTFYQ4C7XH6=general-settings h_01H9FK7FC4VBY3TEE6HEJZCWWT=default-postbacks inapp-event-settings=in-app-event-settings h_01H9FK7FC4KF5QGXA9KQ4YQEA3=in-app-event-settings h_01H9FK7FC4H7QSFGWDV1AP0YK6=attribution-link-tab h_01H9FK7FC48YAYF3TGXC2C9EB8=cost-tab h_01H9FK7FC4YAPTGA15172P5TXB=ad-revenue-tab h_01H9FK7FC46W5A1BRSVPBEGJTK=permissions-tab" />

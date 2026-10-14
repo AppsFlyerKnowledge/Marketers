@@ -47,6 +47,8 @@ ironSource's configuration window includes 5 tabs: Integration, Attribution link
 * The General Settings step in the Integration tab is **mandatory** for all partners
 * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partners
@@ -136,6 +138,8 @@ Generate and save attribution links and send them to the partner for attributing
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
@@ -169,6 +173,8 @@ Learn more about [ad revenue attribution](/docs/roi360-guide-ad-revenue-attribut
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant ironSource, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for ironSource, the permissions tab is active and you can grant control to ironSource.
@@ -201,3 +207,5 @@ Learn more about granting [agency permissions](/docs/set-up-an-integrated-partne
 </Accordion>
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01KZX3MPJ9HY5WJB3MS65SZXNY=setting-up-ironsource h_01HKW1E1KBG121H7YJBW2SZS6E=note h_01HCFHXQQ8XYCKWPVTMK8HF165=integration-tab h_01HCFHXQQ8HCXPEWR4CWY55M2H=activate-partners h_01HCFHXQQ8ABQYRSBGC7Z1F1SV=advanced-privacy h_01HCFHXQQ8Q3BX7GSGD5MH4QT8=transaction-id h_01HCFHXQQ8D26KT5E6YEQ50DA4=note-1 h_01HCFHXQQ8J0ZC9FGCNTPMKHK6=general-settings install-and-reengagement-attribution=install-and-re-engagement-attribution h_01HCFHXQQ8V2E8982XRSY4G50F=install-and-re-engagement-attribution h_01HCFHXQQ8Q27JXG2V7G4XZX43=default-postbacks h_01HCFHXQQ8XZ6H3733GPR3ZFYE=note-2 inapp-event-postbacks=in-app-event-postbacks h_01HCFHXQQ891GH196XFRXY8MYS=in-app-event-postbacks h_01HCFHXQQ8VF25W10CWQHTEAYW=note-3 h_01HCFHXQQ8AYNTCH9GHZJG594E=attribution-link-tab h_01HCFHXQQ87EBRW9NBY58XYFGP=cost-tab h_01HCFHXQQ8XZ8XQFH3XRFVHRZV=ad-revenue-tab h_01HCFHXQQ891P7ET9Q4BSQWJXT=permissions-tab h_01HCFHXQQ86VNX9WRFEZECYV7R=ad-network-permissions h_01HCFHXQQ936CQ1FVHCRC58H4C=agency-permissions" />

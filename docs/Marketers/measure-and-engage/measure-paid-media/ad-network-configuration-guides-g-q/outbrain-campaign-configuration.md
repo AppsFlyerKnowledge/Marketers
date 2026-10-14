@@ -55,3 +55,5 @@ If necessary, make additional settings changes according to the campaigns and po
 In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations** tab, search for the partner, and make your changes.
 
 Learn more about [partner integrations](/docs/set-up-an-integrated-partner).
+
+<div data-zendesk-anchors="h_01HKW7YJ8PN19J2HSZR3CPB36D=setting-up-outbrain-integration" />

@@ -28,6 +28,8 @@ x-zendesk:
 
 Explore the actions and functionalities available on the My Apps page:
 
+<div id="add-an-app" />
+
 <Accordion title="Add an app">
 
 [Add your app](/docs/adding-an-app-to-appsflyer) to AppsFlyer to get attribution data on installs and in-app events and analyze the data using the different tools on AppsFlyer.
@@ -35,6 +37,8 @@ Explore the actions and functionalities available on the My Apps page:
 * From the top-right of the **My Apps** page, click **+ Add app**.
 
 </Accordion>
+
+<div id="add-or-view-brand-bundles" />
 
 <Accordion title="Add or view Brand bundles">
 
@@ -47,6 +51,8 @@ Explore the actions and functionalities available on the My Apps page:
 
 </Accordion>
 
+<div id="search-and-filter-the-list-of-apps" />
+
 <Accordion title="Search and filter the list of apps">
 
 * **Search:** Use the search bar at the top-left to search by app name, ID, or brand bundle.
@@ -55,6 +61,8 @@ Explore the actions and functionalities available on the My Apps page:
   * **Platform:** Select platforms by which to filter the apps.
 
 </Accordion>
+
+<div id="pin-your-preferred-apps" />
 
 <Accordion title="Pin your preferred apps">
 
@@ -65,6 +73,8 @@ Select up to 6 apps to pin to the top of the list.
 To unpin, click the Pin ![pin.png](https://files.readme.io/2ae8d880fa15ce03067ce0532107c7d4c19c7c170a64296791a21a91edeb40fb-27439158632849.png) icon next to the app.
 
 </Accordion>
+
+<div id="switch-between-list-and-card-views" />
 
 <Accordion title="Switch between List and Card views">
 
@@ -84,6 +94,8 @@ The status of pending apps in the app store is updated every 4 hours. You can ma
 
 </Accordion>
 
+<div id="more-app-options" />
+
 <Accordion title="More options per app">
 
 Explore additional options available for the selected app:
@@ -96,8 +108,12 @@ Explore additional options available for the selected app:
 
 </Accordion>
 
+<div id="go-to-an-apps-overview-dashboard" />
+
 <Accordion title="Go to an app's Overview dashboard">
 
 * Click an app row or card to access the Overview dashboard of the app.
 
 </Accordion>
+
+<div data-zendesk-anchors="01H8Y09SSKZS2RHM35JT16ESKM=overview h_01J52E5HZAH6CDENRBPGAR9F80=add-an-app h_01J52E5HZASYXT2PSTWQKSH6PP=add-or-view-brand-bundles h_01J50Y3SY0WN1SN9AZTMRCVJY6=search-and-filter-the-list-of-apps h_01J50Y3SY021CHGS6CCW0XSJGJ=pin-your-preferred-apps h_01J50Y3SY0WBC3CSYYJ30H4NGH=switch-between-list-and-card-views h_01J50Y3SY0Y4ZTMTDA5CCDDAVR=refresh-the-status-of-pending-apps h_01J50Y3SY09M899D1YWH7DD4S7=more-app-options h_01J52JJDXB18J87SCP4D69VAX4=go-to-an-apps-overview-dashboard" />

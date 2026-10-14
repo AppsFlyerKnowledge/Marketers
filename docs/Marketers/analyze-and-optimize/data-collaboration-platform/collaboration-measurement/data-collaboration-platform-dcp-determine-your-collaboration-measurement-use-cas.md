@@ -49,7 +49,11 @@ Answer the initial question by choosing the correct answer, and continue to expa
 
 #### **On which platform does the conversion take place?**
 
+<div id="the-conversions-take-place-on-the-cmn-platform" />
+
 <Accordion title="The conversions take place on the CMN platform">
+
+<div id="the-cmn-platform-is-an-app" />
 
 <Accordion title="The CMN platform is an app">
 
@@ -65,6 +69,8 @@ If the CMN platform is an app, follow the instructions below for each data type:
 </Accordion>
 
 **OR**
+
+<div id="the-cmn-platform-is-a-website" />
 
 <Accordion title="The CMN platform is a website">
 
@@ -83,7 +89,11 @@ If the CMN platform is a website, follow the instructions below for each data ty
 
 **OR**
 
+<div id="the-conversions-take-place-on-the-advertiser-platform" />
+
 <Accordion title="The conversions take place on the advertiser platform">
+
+<div id="the-advertiser-platform-is-an-app" />
 
 <Accordion title="The advertiser platform is an app">
 
@@ -99,6 +109,8 @@ If the advertiser platform is an app, follow the instructions below for each dat
 </Accordion>
 
 **OR**
+
+<div id="the-advertiser-platform-is-a-website" />
 
 <Accordion title="The advertiser platform is a website">
 
@@ -123,9 +135,15 @@ Answer the initial question by choosing the correct answer, and continue to expa
 
 #### **Which account on the external platform displays the ad?**
 
+<div id="the-cmn-external-platform-account" />
+
 <Accordion title="The CMN external-platform account displays the ad">
 
+<div id="the-conversions-take-place-on-the-cmn-platform::e7b94fc0" />
+
 <Accordion title="The conversions take place on the CMN platform">
+
+<div id="the-cmn-platform-is-an-app::76ead17" />
 
 <Accordion title="The CMN platform is an app">
 
@@ -141,6 +159,8 @@ If the CMN platform is an app, follow the instructions below for each task:
 </Accordion>
 
 **OR**
+
+<div id="the-cmn-platform-is-a-website::5144f168" />
 
 <Accordion title="The CMN platform is a website">
 
@@ -159,7 +179,11 @@ If the CMN platform is a website, follow the instructions below for each task:
 
 **OR**
 
+<div id="the-conversions-take-place-on-the-advertiser-platform::aa9e89bf" />
+
 <Accordion title="The conversions take place on the advertiser platform">
+
+<div id="the-advertiser-platform-is-an-app::d36436f5" />
 
 <Accordion title="The advertiser platform is an app">
 
@@ -175,6 +199,8 @@ If the advertiser platform is an app, follow the instructions below for each tas
 </Accordion>
 
 **OR**
+
+<div id="the-advertiser-platform-is-a-website::b70163fb" />
 
 <Accordion title="The advertiser platform is a website">
 
@@ -195,9 +221,15 @@ If the advertiser platform is a website, follow the instructions below for each 
 
 **OR**
 
+<div id="the-advertisers-external-platform-account" />
+
 <Accordion title="The Advertiser external-platform account displays the ad">
 
+<div id="the-conversions-take-place-on-the-cmn-platform::7b0781d3" />
+
 <Accordion title="The conversions take place on the CMN platform">
+
+<div id="the-cmn-platform-is-an-app::413a6003" />
 
 <Accordion title="The CMN platform is an app">
 
@@ -213,6 +245,8 @@ If the CMN platform is an app, follow the instructions below for each task:
 </Accordion>
 
 **OR**
+
+<div id="the-cmn-platform-is-a-website::95667666" />
 
 <Accordion title="The CMN platform is a website">
 
@@ -231,7 +265,11 @@ If the CMN platform is a website, follow the instructions below for each task:
 
 **OR**
 
+<div id="the-conversions-take-place-on-the-advertiser-platform::51470bc6" />
+
 <Accordion title="The conversions take place on the advertiser platform">
+
+<div id="h_01K3BAV1SP7RWP7K9TM7Y6MJVX" />
 
 <Accordion title="The advertiser platform is an app">
 
@@ -247,6 +285,8 @@ If the advertiser platform is an app, follow the instructions below for each tas
 </Accordion>
 
 **OR**
+
+<div id="the-advertiser-platform-is-a-website::8cb255ef" />
 
 <Accordion title="The advertiser platform is a website">
 
@@ -264,3 +304,5 @@ If the advertiser platform is a website, follow the instructions below for each 
 </Accordion>
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01JSKXR18RP691PT3Y5JGAJKF8=overview h_01K3JR6NJ906S2HZC7YRWWFT2P=how-does-the-decision-tree-help which-decision-tree-do-i-need-onsite-or-offsite=which-decision-tree-do-i-need-on-site-or-off-site h_01K3JR7AZFWJMTBZGAKYS4BFJS=which-decision-tree-do-i-need-on-site-or-off-site the-onsite-use-case-decision-tree=the-on-site-campaign-decision-tree h_01JSKXR18R4A4WFPTQVB1DVV5Y=the-on-site-campaign-decision-tree h_01JSM17ZMGCF1FWQPM7T04C0MM=on-which-platform-does-the-conversion-take-place h_01JSKXR18RTDSJ6W40D5JVFSS5=the-conversions-take-place-on-the-cmn-platform h_01JSKXR18R9A9MCZ7TPJHXWMBC=the-cmn-platform-is-an-app h_01JSKXR18RWSJTR5AKDBRGP0QS=the-cmn-platform-is-a-website h_01JSKXR18R083C5FY5FTESJDAZ=the-conversions-take-place-on-the-advertiser-platform h_01JSKXR18RH3SCQJRJA7QBVS6Y=the-advertiser-platform-is-an-app h_01JSKXR18R3N816VYJ4910VYGA=the-advertiser-platform-is-a-website the-offsite-use-case-decision-tree=the-off-site-campaign-decision-tree h_01JSKXR18R38YJZ2S410J4EH43=the-off-site-campaign-decision-tree h_01JSM18A2R9015RWB05BE0YK7Q=which-account-on-the-external-platform-displays-the-ad h_01JSKXR18R4EKMWCYKFTBAEPH9=the-cmn-external-platform-account h_01JSKXR18RCKD3E841EQ2RC03B=the-conversions-take-place-on-the-cmn-platform::e7b94fc0 h_01JSKXR18R5115TP1BYE07TJ7V=the-cmn-platform-is-an-app::76ead17 h_01JSKXR18RCBGH6F8SNSRN2CJG=the-cmn-platform-is-a-website::5144f168 h_01JSKXR18RGQX77NM72G4WAC08=the-conversions-take-place-on-the-advertiser-platform::aa9e89bf h_01JSKXR18R61CTQ0VMRKD184VE=the-advertiser-platform-is-an-app::d36436f5 h_01JSKXR18RSQC7MCYZ5JE2VP3B=the-advertiser-platform-is-a-website::b70163fb h_01JSKXR18SYFX87XBSBNPJXAFA=the-advertisers-external-platform-account h_01JSKXR18S6TQMNW6PD65G67AQ=the-conversions-take-place-on-the-cmn-platform::7b0781d3 h_01JSKXR18SCDQXAN5NFQ1W17K2=the-cmn-platform-is-an-app::413a6003 h_01JSKXR18SDCDQX4SJ24ADZA18=the-cmn-platform-is-a-website::95667666 h_01JSKXR18S123PXD3FN2N11GCN=the-conversions-take-place-on-the-advertiser-platform::51470bc6 h_01JSKXR18STJV3GGW83123W7XC=the-advertiser-platform-is-a-website::8cb255ef" />

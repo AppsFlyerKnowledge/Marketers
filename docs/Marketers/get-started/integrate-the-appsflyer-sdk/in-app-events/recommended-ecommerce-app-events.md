@@ -274,6 +274,8 @@ When the user lands on the thank you page after a successful purchase
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
+<div id="first-purchase-first_purchase" />
+
 <Accordion title="First purchase (first_purchase)">
 
 **Purpose**
@@ -304,6 +306,8 @@ When the user completes their first purchase
 
 </Accordion>
 
+<div id="remove-from-cart-remove_from_cart" />
+
 <Accordion title="Remove from cart (remove_from_cart)">
 
 **Purpose**
@@ -326,3 +330,5 @@ When the user removes an item from the cart
 | af\_content\_type | Item category<br /><br />**Required parameter for Meta ads dynamic ads**  <br />  <br />**Note:** When mapping `af_content_type` to Meta’s `fb_content_type`, the only supported values are `product` or `product_group`. | Shoes |
 
 </Accordion>
+
+<div data-zendesk-anchors="ecommerce=-ecommerce h_01HGTAWG2166CZYKJE9166G12J=-ecommerce h_01HGTAWG21Z0C9SR2G54W68G8Q=important h_01HGTAWG2115VB3A8J2WG3DJKK=recommended-structures-for-predefined-events h_01HGTAWG21EQ0FE40WGFJRDJY5=complete-registration-af_complete_registration h_01HGTAWG22HFZ24V2BDCH3RFN8=login-af_login h_01HGTAWG22B5Z9AXENDATKR67T=search-af_search h_01HGTAWG22PSKS80ZQNAC0K24M=content-view-af_content_view h_01HGTAWG2219SVQ86PT1K3TVV9=list-view-af_list_view h_01HGTAWG22EQMVWXJCXC2KQDX8=add-to-wishlist-af_add_to_wishlist h_01HGTAWG23T81SPFJEA6BY5F2W=add-to-cart-af_add_to_cart h_01HGTAWG23FPKQ6RHJ9VYET63Y=initiated-checkout-af_initiated_checkout h_01HGTAWG2385E9Q0FXZXEW38YK=purchase-af_purchase h_01HGTAWG235EXE17EJ5DWQYERM=recommended-structures-for-custom-events h_01HGTAWG23NTG0Q70B9A3685AD=first-purchase-first_purchase h_01HGTAWG239TQ51Z7FQW4FC1TZ=remove-from-cart-remove_from_cart" />

@@ -63,6 +63,8 @@ Use the following steps to set up attribution and in-app event postbacks for Cha
 3. Search for **ChatGPT Ads (OpenAI)** and click **Integrate**.
 4. Complete the configuration in the tabs as described below.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 #### Activate partner
@@ -156,6 +158,8 @@ For more information, see Integrate AppsFlyer Web SDK.
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 ChatGPT Ads (OpenAI) supports attribution links.
@@ -193,17 +197,23 @@ Learn more about [attribution links](/docs/set-up-an-integrated-partner#attribut
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 There is currently no cost API integration for ChatGPT Ads.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue data can't be pulled from ChatGPT Ads. Use postbacks or UA signals to share ad revenue data for campaign optimization.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -223,6 +233,8 @@ Use the following steps to set up server-side event forwarding to ChatGPT Ads fo
 2. Select your website app from the drop-down menu.
 3. Search for **ChatGPT Ads (OpenAI)** and click **Integrate**.
 4. Complete the configuration in the integration tab as described below.
+
+<div id="integration-tab::2739744d" />
 
 <Accordion title="Integration tab">
 
@@ -258,11 +270,15 @@ To make sure your events match the equivalent events in ChatGPT Ads, map your ev
 
 </Accordion>
 
+<div id="h_01KWVSPJ9WATTRLNK" />
+
 <Accordion title="Attribution link tab">
 
 ChatGPT Ads (OpenAI) doesn't use external attribution links for website integrations. The AppsFlyer Web SDK measures web events and forwards them directly to ChatGPT Ads' Conversions API, so no link-based attribution setup is needed.
 
 </Accordion>
+
+<div id="h_01KWVSPJ9WCOST" />
 
 <Accordion title="Cost tab">
 
@@ -270,11 +286,15 @@ Cost data isn't available for website integrations with ChatGPT Ads.
 
 </Accordion>
 
+<div id="h_01KWVSPJ9WADREV" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue data isn't available for website integrations with ChatGPT Ads.
 
 </Accordion>
+
+<div id="h_01KWVSPJ9WPERM" />
 
 <Accordion title="Permissions tab">
 
@@ -291,3 +311,5 @@ Permissions aren't available for website integrations with ChatGPT Ads.
 > 📘 **See also**
 >
 > * [Partner integrations](/docs/set-up-an-integrated-partner)
+
+<div data-zendesk-anchors="about-the-integration=about-the-integration-with-chatgpt-ads h_01KWS8SS8RE2VQ275MFB7CT39J=about-the-integration-with-chatgpt-ads set-up-the%20integration=set-up-the-integration h_01H95QTA3Z5HXW39AHAF8FMFWH=set-up-the-integration h_01KWVBQG0G85W6QJ8AT2520GTX=integrate-your-mobile-app h_01KWVK5J7FBA81238JD4AD0219=integration-tab h_01H95QTA3ZGEM34HY1A7NC8NX7=activate-partner h_01KWVKHV36H34XCHYBFRHNF8TB=general-settings h_01M39MMERMEBK470T0NDCVRN2E=advanced-privacy h_01M39MP266X5KME19RBVQZRDE6=advanced-matching-data-sharing h_01KWVKZJ7AZ8Z4CFM8J0PV071A=default-postbacks inapp-event-settings=in-app-event-settings h_01JTDP2T0BFP5WP03X5EMXVAWA=in-app-event-settings inapp-event-postbacks=in-app-event-postbacks h_01KWVMZC74AQSN7BDQP2QQWBT4=in-app-event-postbacks h_01KWVK5J7FE0ZF74NGXKSASMBV=attribution-link-tab h_01_choose-your-attribution-type=choose-your-attribution-type h_01_select-parameters=select-parameters h_01M254BFC0V68RJ6B903D8XKD3=important h_01KWVK5J7FK8BAQKEMNA35ABPY=cost-tab h_01KWVK5J7FQRYXQ9FGCWHWY16T=ad-revenue-tab h_01KWVK5J7G3E8NSNDG4CR9FA7N=permissions-tab h_01KWVSJRYSQEH12C5RH7BN4CC2=integrate-your-website h_01KWVSPJ9WJERF84ZNGTS7P0HZ=integration-tab::2739744d activate-partner::3c5a91e7=activate-partner-1 h_01KWVSPJ9WBQ2AS5JZPTJZPTRG=activate-partner-1 inapp-event-settings::a3adef08=in-app-event-settings-1 h_01KWVSPJ9WV7ZQZD00ZB7T639X=in-app-event-settings-1 inapp-event-postbacks::c3d06354=in-app-event-postbacks-1 h_01KWVSPJ9WA7Q1M281Q5NBYHV7=in-app-event-postbacks-1 attribution-link-tab::3e2b1646=h_01KWVSPJ9WATTRLNK cost-tab::c486dc3c=h_01KWVSPJ9WCOST ad-revenue-tab::84884d8a=h_01KWVSPJ9WADREV permissions-tab::6f805250=h_01KWVSPJ9WPERM h_01KX3DAS0FBTKGKE7CZJTDTY2X=traits-and-limitations h_01KWVT1XJ2FKP1CACRV24C1R8E=see-also" />

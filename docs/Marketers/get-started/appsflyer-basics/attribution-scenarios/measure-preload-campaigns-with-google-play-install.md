@@ -109,3 +109,5 @@ When included in a postback, macros contain user-relevant data. Supported macros
 ```
 http://YourCompanyDomain.com?pid=(preinstall_partner)&app_name=(app-name)&app_id=(app-id)&install_time=(install-unix-ts)
 ```
+
+<div data-zendesk-anchors="h_01HEJG4FHSGJDZ77Y281F7SG4R=pai-preload-attribution h_01K8XBQ3YKJ8KBMPMAAMBZP25E=note pai-preload-attribution-flow=flow h_01HEJG4FHSF8X1TEMMNJBYP71Z=flow campaign-performance-data-availability=data-availability h_01HEJG4FHSCMPJM5TRNSPNDHVN=data-availability run-preload-referrer-campaigns=set-up-google-play-auto-install-pai-preload-attribution h_01HEJG4FHS7E5JZT2BBYG2BNEK=set-up-google-play-auto-install-pai-preload-attribution h_01K8XBJ9EJ38ST3KAFF879ZQ1H=note-1 partners-supporting-preload-referrer-campaigns=partners-supporting-google-play-auto-install-pai-preload-campaigns h_01HEJG4FHSNEGR7R9VCSDT9TSZ=partners-supporting-google-play-auto-install-pai-preload-campaigns h_01K8XBVZJGG59K3XJ8R346X9FH=note-2 h_01HEJG4FHSKD7DY6W7W65YBMGN=postbacks-for-preload-partners preload-postback-example=postback-example h_01HEJG4FHSBFB456Z752HFC8KN=postback-example" />

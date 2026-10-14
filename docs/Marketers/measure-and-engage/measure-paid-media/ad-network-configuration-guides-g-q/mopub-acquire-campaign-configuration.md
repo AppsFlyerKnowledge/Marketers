@@ -38,6 +38,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration tab is divided into different sections as described below.
@@ -75,6 +77,8 @@ In this section, you can map your AppsFlyer events with MoPub Acquire via postba
 | Send revenue | <ul><li>**No values & no revenue:** sends only the event itself without the event value.</li><li>**Values & no revenue:** sends all the parameters excluding the revenue value.</li><li>**Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).</li></ul> |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -129,6 +133,8 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
@@ -141,14 +147,20 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant MoPub Acquire. Note that even if attribution is disabled for MoPub Acquire, the permissions tab is active and you can grant control to MoPub Acquire. [Learn what permission can you give to MoPub Acquire](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HFP4C4JDPYDGM3RBSQCNHC3T=setting-up-mopub-acquire h_01HFP4C4JDRMK87B48F4MV5B91=integration-tab h_01HFP4C4JD5A9RZP6HBBM2WFHZ=activate-partner h_01HFP4C4JDAK0N210GAH978CM0=default-postbacks inapp-events-settings=in-app-events-settings h_01HFP4C4JDEW2YBFCFR0MN6G91=in-app-events-settings h_01HFP4C4JDWBC03HBEZ13HP3NS=attribution-link-tab h_01HFP4C4JDWAWKMT1CSPQSCNMZ=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HFP4C4JDW2DRVVHXJ8ZAT9W5=click-through-attribution h_01HFP4C4JDTXJYH4S1EZ4HYJWG=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HFP4C4JDDWH23CVQMJNH2V70=view-through-attribution-lookback-window h_01HFP4C4JDYXBYAP5AYBN54A4B=impressions-attribution-link h_01HFP4C4JDP8NDDRHGXM0Y7XM7=cost-tab h_01HFP4C4JDBWCER854NDKTYRW8=ad-revenue-tab h_01HFP4C4JDRYYPW6W2PNA8J8P3=permissions-tab" />

@@ -50,6 +50,8 @@ an account, contact the partner to open one before setting up the integration.
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -85,6 +87,8 @@ In this section, you can map your AppsFlyer events with Ibotta via postbacks.
 | **Send Revenue** | **When unchecked** - Send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - Send all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -125,17 +129,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost integration is not available for this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue integration is not available for this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -156,3 +166,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKA2KDA0JDAF8VEXFH57Q9DP=setting-up-ibotta h_01HKA2KDA0TVNGZQ7EN899112F=tip h_01HKA2KDA05VRNN6YYTBS0AAYD=integration-tab h_01HKA2KDA0GA8GHDP2177EYV3Z=activate-partner inapp-events-settings=in-app-events-settings h_01HKA2KDA0J38WY51ZCP77J7A6=in-app-events-settings h_01HKA2KDA0HKAP9ACF2V8ZCPHX=tip-1 h_01HKA2KDA0QG78TCTKQKPZR0JV=attribution-link-tab h_01HKA2KDA0YP8SYP4YJ5NG5QSN=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKA2KDA0VPPYRMPY3S11ASX5=click-through-attribution h_01HKA2KDA0CZSSXW8DTCBTQ022=click-attribution-link h_01HKA2KDA18SHG1YAZNTE3TBZ8=cost-tab h_01HKA2KDA1JS9YF2WEEHR2K5TD=ad-revenue-tab h_01HKA2KDA1EF0F3JG3F81V3FHG=permissions-tab h_01HKA2KDA1Y2XEFHMV3XWQDDKW=ad-network-permissions" />

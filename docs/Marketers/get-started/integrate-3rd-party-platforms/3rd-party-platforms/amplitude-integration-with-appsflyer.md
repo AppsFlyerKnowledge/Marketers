@@ -33,7 +33,7 @@ There are two Amplitude integration versions:
 * **Amplitude V2 :**  
   This version uses Amplitude's HTTP V2 API. AppsFlyer sends both installs and in-app event data after the integration is complete. Identifiers are prioritized (user\_id and device\_id), and if matching fails, a new user is logged. [Learn more](https://amplitude.com/docs/apis/analytics/http-v2)
 
-**Integration versions:**
+<span id="h_01JSE81SX1FR182N1CZJ5CQP5N"></span>**<span id="integration-methods"></span>Integration versions:**
 
 | Version | API used | Identifiers used | Event coverage |
 | --- | --- | --- | --- |
@@ -320,7 +320,7 @@ To send install postbacks to Amplitude's EU data center, turn Amplitude EU Data 
 
 Amplitude connects with AppsFlyer via a unique API Key. If you don't already have it, you must obtain it from Amplitude to continue with the integration or follow the steps below.
 
-**Obtaining the API key from Amplitude**
+<span id="obtaining-the-api-key-from-amplitude"></span>**Obtaining the API key from Amplitude**
 
 **Note**: Only users who have the Admin or Manager role on Amplitude can access the API Key.
 
@@ -399,3 +399,5 @@ In some cases, Amplitude shows data coming from AppsFlyer as "Blocked". If you c
 ## Sending Amplitude events to AppsFlyer
 
 The integration also allows sending your Amplitude events to AppsFlyer via a Server-to-server API. See [Amplitude documentation](https://www.docs.developers.amplitude.com/data/destinations/appsflyer/) on how to do this.
+
+<div data-zendesk-anchors="h_01JSE81SX1B1RH978Y08W1XXX8=about-the-integration set-up-the-integration=prerequisites h_01JSE958V510B9P6VEQTXC55S7=prerequisites additional-prerequisites-for-the-v2-integration=additional-prerequisites-for-the-amplitude-v2-integration h_01JSKEMMEB00PERVQWPYNF5V2E=additional-prerequisites-for-the-amplitude-v2-integration h_01JSKFH7KPSE5P0CRPVJ3FJ2WN=amplitude-device-id h_01JSKFK4BFH3PP98XAZ0W8GG11=customer-user-id h_01JSKFQXPPJVCW68C4H9B4EJ76=amplitude-session-id set-up-the-integration::45aa5acf=set-up-the-integration h_01JSKFQAZ8Q76KF1JJKZTAPVBQ=set-up-the-integration 01H8KPA9JKDRA680Y0WPZ172EM=activate-partner 01H8KPA9JKF4VCA4S22SYT40WT=general-settings 01H8KPA9JKJ2XN1AEPV74QVJYZ=advanced-data-sharing amplitude-data-center=amplitude-eu-data-center 01H8KPA9JKP0T0FDND97VA23EY=amplitude-eu-data-center 01H8KPA9JKDYDPDGRXZSH2BAV8=api-key 01H8KPA9JK510YKV47816DT7E7=obtaining-the-api-key-from-amplitude 01H8KRBGYQ973CT3H8GHZ8R0BH=default-postbacks inapp-event-settings=in-app-event-settings 01H8KPA9JKM4S79160BEYN3B6V=in-app-event-settings inapp-event-postbacks=in-app-event-postbacks 01H8KSQ76XE9Z191P1RMANF6EQ=in-app-event-postbacks 01H8KPA9JK75TA0H8T4P65BMSE=viewing-attribution-data-in-the-amplitude-console h_01HPYFZDX1WWDWJEBZ4DK706B4=sending-amplitude-events-to-appsflyer" />

@@ -77,3 +77,5 @@ Set out below are links to the previous SDK Integration Guides for iOS:
 ![windows_phone_logo.jpg](https://files.readme.io/19886494c67468d413342f829e68194a9128e44f70a92efbc840319765575c13-360001324197.jpg)
 
 * [AppsFlyer SDK Integration Guide Windows Phone V.2.0](https://support.appsflyer.com/hc/article_attachments/360001399878)
+
+<div data-zendesk-anchors="h_01HHVZD51JXAER240EV5XNFV0R=overview h_01HHVZC42ETEG1RRSXMFBVV4T0=tip h_01HHVZF1STRF4399VNMHWA1T6M=android h_01HHVZFV4NJBFQ0N77PP76EWWP=ios h_01HHVZG8SX1GVBG1JH0VQTYYSX=windows-phone" />

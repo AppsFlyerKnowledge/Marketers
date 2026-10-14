@@ -42,6 +42,8 @@ x-zendesk:
 
 Update setting tabs content as required: Ad revenue.
 
+<div id="ad-revenue" />
+
 <Accordion title="Ad revenue">
 
 Applovin MAX provides ad revenue mediation with aggregate data at the device level.
@@ -60,3 +62,5 @@ Applovin MAX provides ad revenue mediation with aggregate data at the device lev
 ### Best practice
 
 If you monetize with Meta ads and are using Applovin Max, it's best if you don't have a direct Facebook ad revenue integration with AppsFlyer. This way, you'll receive user-level data. If you have a direct Facebook ad revenue integration, data is at aggregate-level.
+
+<div data-zendesk-anchors="01EZPC55J2HP7DPGR3HADZXRFK=setting-up-applovin-max-integration 01EV471WS4J9B4374GXA5R5WXM=setting-tabs 01EV471WS4S7KE1GHQAJNYR5FR=ad-revenue h_01HFVAPG2CEQMRFN7HZZ2H8J3M=note 01FBGVR4ZAMKSHBMFCPAZVHH6A=best-practice" />

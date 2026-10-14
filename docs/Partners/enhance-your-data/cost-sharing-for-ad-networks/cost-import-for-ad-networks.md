@@ -84,3 +84,5 @@ x-zendesk:
 7. Additional procedures:
    * [Overwrite previous ingestion](/docs/import-cost-data#cost-import-dashboard)
    * [Revert (cancel)](/docs/import-cost-data#cost-import-dashboard)
+
+<div data-zendesk-anchors="ad-spend-ingestion-for-ad-networks=cost-import-for-ad-networks h_01HX94WSX07YEG40X66TMRFJGA=cost-import-for-ad-networks h_01HX94WSX0HR2KTGRT7MQ481Y6=overview h_01HX94WSX0G429FTHKYCG07BB9=submitting-ad-spend-files-for-ad-networks h_01HX94WSX0ENTJEDMXWRHDCP0D=submission-by-file-upload h_01HX94WSX0HVTMFQQ0NMW0VSKP=submission-by-email" />

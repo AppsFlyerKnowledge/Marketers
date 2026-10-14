@@ -108,3 +108,5 @@ Before the transfer is finalized, an app transfer process can be deleted (cancel
   Both the sender and receiver admins are notified (email).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJR1G7Q71H5DAH1G9QFSYK35=app-transfer-between-accounts h_01HJR1G7Q7T1Q768MTTR3Y542X=prerequisites h_01HJR1G7Q7EDJZ4E1T17GWYGTP=app-transfer-process h_01HJR1G7Q7JB0XD3NGT0MWYJZ5=transfer-procedures" />

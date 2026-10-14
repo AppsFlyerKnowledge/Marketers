@@ -59,3 +59,5 @@ Supported SSL ciphers for Push API:
 | TLS\_ECDH\_ECDSA\_WITH\_3DES\_EDE\_CBC\_SHA |
 | TLS\_ECDH\_RSA\_WITH\_3DES\_EDE\_CBC\_SHA |
 | TLS\_EMPTY\_RENEGOTIATION\_INFO\_SCSV |
+
+<div data-zendesk-anchors="h_01HM679ZCX155SEV7GP0XEWR5B=introduction h_01HM679ZCXBFAAJ8BTQBF1D810=outgoing-messages-appsflyer-as-client" />

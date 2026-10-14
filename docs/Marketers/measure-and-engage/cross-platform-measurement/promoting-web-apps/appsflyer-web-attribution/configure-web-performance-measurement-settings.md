@@ -80,6 +80,8 @@ For more information see [Adding an app to AppsFlyer](/docs/adding-an-app-to-app
 
 User acquisition (UA) settings determine how AppsFlyer identifies when a user is first acquired and how to attribute that acquisition to marketing sources.
 
+<div id="user-acquisition-event" />
+
 <Accordion title="User acquisition event">
 
 The event that triggers user acquisition. This is an important business action that defines when you consider a user truly "acquired."
@@ -158,6 +160,8 @@ When a user performs the UA event (e.g., sign\_up), AppsFlyer looks back within 
 
 Re-engagement settings control how AppsFlyer attributes activity when acquired users return to your website through retargeting campaigns.
 
+<div id="reengagement-window-item" />
+
 <Accordion title="Re-engagement window">
 
 How long after a re-engagement conversion AppsFlyer continues to attribute events to that marketing touchpoint.
@@ -191,6 +195,8 @@ When an acquired user returns via a non-organic source (e.g., retargeting ad) an
   * UA view: Shows purchase attributed to Facebook
 
 </Accordion>
+
+<div id="inactivity-window-for-reengagement" />
 
 <Accordion title="Inactivity window for re-engagement">
 
@@ -230,6 +236,8 @@ Prevent crediting retargeting campaigns when users are already actively engaged 
 
 Re-acquisition settings determine when inactive users are considered "churned" and how to bring them back as reacquired users.
 
+<div id="inactivity-window-reacquisition" />
+
 <Accordion title="Inactivity window (re-acquisition)">
 
 The period of complete inactivity after which a user is marked as "churned." Churned users can be reacquired, generating a new user acquisition conversion.
@@ -265,6 +273,8 @@ This setting defines your business's churn threshold. It determines when a user 
 
 </Accordion>
 
+<div id="reacquisition-event" />
+
 <Accordion title="Re-acquisition event">
 
 The event that triggers re-acquisition for churned users. Only churned users can be reacquired.
@@ -293,6 +303,8 @@ Many user acquisition events are one-time actions (e.g., sign\_up, first\_purcha
 
 ## Attribution window
 
+<div id="time-period" />
+
 <Accordion title="Time period">
 
 The maximum time period after the user acquisition during which AppsFlyer attributes events to that conversion.
@@ -311,6 +323,8 @@ Domains to exclude from attribution. This prevents AppsFlyer from attributing vi
 
 1. **Prevents self-attribution:** Exclude your own domains
 2. **Excludes third-party flows:** Exclude payment gateways, authentication providers
+
+<div id="domain-types" />
 
 <Accordion title="Domain types">
 
@@ -383,6 +397,8 @@ There are two types of external domain exclusions:
 
 </Accordion>
 
+<div id="adding-excluded-domains" />
+
 <Accordion title="Adding excluded domains">
 
 **To add domains:**
@@ -401,6 +417,8 @@ There are two types of external domain exclusions:
 * Common payment providers and OAuth/SSO sign-in domains are automatically excluded. See the full list under [External (listed by AppsFlyer)](#external-listed-by-appsflyer) (no need to add these manually)
 
 </Accordion>
+
+<div id="requirements-and-validation" />
 
 <Accordion title="Requirements and validation">
 
@@ -426,6 +444,8 @@ There are two types of external domain exclusions:
 
 ## Migrating from People-Based Attribution (PBA)
 
+<div id="key-differences" />
+
 <Accordion title="Key differences">
 
 | **Aspect** | **PBA (Legacy)** | **New Web Performance Measurement** |
@@ -435,6 +455,8 @@ There are two types of external domain exclusions:
 | **Time windows** | Limited control | Full control (1h - lifetime) |
 
 </Accordion>
+
+<div id="migration-steps" />
 
 <Accordion title="Migration steps">
 
@@ -450,3 +472,5 @@ There are two types of external domain exclusions:
 **Note:** Each PBA dev key can only be assigned to ONE new web app.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01KGPFHN8MKTPX5VYDEV30M9A7=overview h_01KGPFK1RNA7ZTJRACJ6M97EAB=who-should-configure-these-settings h_01KGPFM0DJDMVDXZC2B6G6DVX5=accessing-web-attribution-settings h_01KGPFT1W65R724WCNDPBHY3F6=quick-reference h_01KGPGJG092S1TEDB1T9JNBASE=basic-settings h_01KGPGE592EK59XXVKTTFDGX16=user-acquisition-settings h_01KGPGRTEFA0PJ3DB7MR4W85EB=user-acquisition-event h_01KGPHMJWF6Z1VV0KH301TYAS5=why-customize h_01KGPHMSEDGJ2E6NSB1ZCR5CCW=common-alternatives-by-industry h_01KGPHN5M5GBBMPBYRMYHB9F0E=how-it-works example-scenario-ua-event-sign_up=example-scenario-ua-event--sign_up h_01KGPHQES3SF5AKBNYD8CY3RG8=example-scenario-ua-event--sign_up h_01KGPGRTEFYRAZD7Z9NYDKV907=lookback-window-user-acquisition how-it-works::69b3417c=how-it-works-1 h_01KGPHX2JNAWZ8VJZ25CRWP1ER=how-it-works-1 example-1-30day-lookback=example-1-30-day-lookback h_01KGPHX8JMG7FMRS1MYFYS6JRV=example-1-30-day-lookback h_01KGPHXT83JHJ6J0APVN7NRJ3E=example-2-window-expired reengagement-settings=re-engagement-settings h_01KGPJ1ZMXXJJNCBB52CHY95Z2=re-engagement-settings reengagement-window%C2%A0item=reengagement-window-item h_01KGPJ58N3712E1NZ4E6JVGAY2=reengagement-window-item how-it-works::dafb60ec=how-it-works-2 h_01KGPJFG3X578XCP5X353RRVR1=how-it-works-2 h_01KGPJG6WSYX2R0VVQYXXWZSMA=example-within-window h_01KGPJ58N3QH9RKXTVZXCZ1WGW=inactivity-window-for-reengagement how-it-works::4a4cf0f=how-it-works-3 h_01KGPJK3H2JF7PV1ATQB3TE9AX=how-it-works-3 example-7day-inactivity-window=example-7-day-inactivity-window h_01KGPJKDMY4FRAJSMHE19GGJCA=example-7-day-inactivity-window reacquisition-settings=re-acquisition-settings h_01KGPJMJDX83SBA77A7BSRZ87V=re-acquisition-settings h_01KGPJPC0QXYFD6Q09XF7T3XA9=inactivity-window-reacquisition how-it-works::9c91010b=how-it-works-4 h_01KGPJV8EJR94H1P7GZXMP8HSR=how-it-works-4 example-90day-window=example-90-day-window h_01KGPJVHCNBZHD9ZXW288CGG9H=example-90-day-window h_01KGPJPC0QY2726Z583AQ7G5W2=reacquisition-event how-it-works::587eebec=how-it-works-5 h_01KGPJY5PA9907PXBRC2QHNJ6T=how-it-works-5 example-reacquisition-event-sign_in=example-re-acquisition-event--sign_in h_01KGPJYWG31QJ1G5A09QC00AMY=example-re-acquisition-event--sign_in h_01KGPK8H7P5AT59S0GQ9ZK0F01=attribution-window h_01KGPK1CSV5XGKHX3XVS37QFKS=time-period h_01KGPKA56KQRJKRS54HBR50NJN=excluded-domains h_01KGPKCY1EBCMYDDYS6SZEK1ZR=domain-types h_01KGPKJQ7M82KW5VE9ESYNNFEQ=primary-required-automatic h_01KGPKJV9B2BHDR64JD24VHH1X=internal-optional h_01KGPKJZQYZESHHH3D0NA2WC9F=external-optional h_01KGPKK4THXQ88AXT58GZ2MHHE=external-listed-by-you h_01KGPKK96ZAZSKVPBX60FC888X=external-listed-by-appsflyer h_01KGPKCY1ETKF1NQ2BP6Z3JH4T=adding-excluded-domains h_01KGPKCY1EE01631ZEYGC6FEJH=requirements-and-validation h_01KGPKKXRA59A4RDY4QE1M0Q66=domain-format h_01KGPKM213203KA8CEBHZ9KJP3=examples h_01KGPKM8AMQ5BA88ZCSTRJ2JV7=limits migrating-from-peoplebased-attribution-pba=migrating-from-people-based-attribution-pba h_01KGPKPGSF3VSBTQJR6JN80BF4=migrating-from-people-based-attribution-pba h_01KGPKQPWC1GYYGYYD6PCDWX29=key-differences h_01KGPKQPWD00B08Z76ZYGRP4AT=migration-steps" />

@@ -42,6 +42,8 @@ For apps not using this mode, we recommend applying `count(distinct appsflyer_id
 
 Calculate the total number of unique users per day using the queries below.
 
+<div id="query-for-dau---user-acquisition-ua" />
+
 <Accordion title="Query for DAU – User Acquisition (UA)">
 
 Select active UA users for a specified day.
@@ -62,6 +64,8 @@ FROM sessions_cleaned;
 
 </Accordion>
 
+<div id="query-for-dau---retargeting" />
+
 <Accordion title="Query for DAU – Retargeting">
 
 Select active retargeting users for a specified day.
@@ -80,6 +84,8 @@ FROM sessions_retargeting_cleaned;
 ```
 
 </Accordion>
+
+<div id="query-for-dau---unified-ua-retargeting" />
 
 <Accordion title="Query for DAU – Unified (UA & Retargeting)">
 
@@ -134,6 +140,8 @@ AppsFlyer dashboards present MAU in two ways:
 
 The queries below demonstrate how to calculate the first type of MAU. To calculate calendar month MAU instead, simply adjust the date range to match the desired month.
 
+<div id="query-for-mau---user-acquisition-ua" />
+
 <Accordion title="Query for MAU – User Acquisition (UA)">
 
 Select active UA users for a specified month.
@@ -152,6 +160,8 @@ FROM sessions_cleaned;
 ```
 
 </Accordion>
+
+<div id="query-for-mau---retargeting" />
 
 <Accordion title="Query for MAU – Retargeting">
 
@@ -172,6 +182,8 @@ FROM sessions_cleaned;
 ```
 
 </Accordion>
+
+<div id="query-for-mau---unified-ua-retargeting" />
 
 <Accordion title="Query for MAU – Unified (UA & Retargeting)">
 
@@ -216,3 +228,5 @@ FROM all_sessions;
 ```
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01K58WFCYQJE3JVR6Q4G5P1T3V=overview h_01K58WFCYQSX0YTSGWBC02TCG1=note h_01K58WFCYQ942VY9P70GHVG6SH=querying-for-active-unique-users h_01K58WFCYQ406CW66EEYPP5GFJ=calculate-daily-active-users-dau query-for-dau-%E2%80%93-user-acquisition-ua=query-for-dau---user-acquisition-ua h_01K58WFCYQVXBZN97BWHA8FC3C=query-for-dau---user-acquisition-ua query-for-dau-%E2%80%93-retargeting=query-for-dau---retargeting h_01K58WFCYQ4XNKQ9CW4D3KV2E2=query-for-dau---retargeting query-for-dau-%E2%80%93-unified-ua-retargeting=query-for-dau---unified-ua-retargeting h_01K58WFCYQ0NM0E44531YDJBCH=query-for-dau---unified-ua-retargeting h_01K58WFCYQ251WMSNSD0EYXV69=calculate-monthly-active-users-mau query-for-mau-%E2%80%93-user-acquisition-ua=query-for-mau---user-acquisition-ua h_01K58WFCYQAV6T3S7SABSTMYKS=query-for-mau---user-acquisition-ua query-for-mau-%E2%80%93-retargeting=query-for-mau---retargeting h_01K58WFCYQ4H5CFQPPC5JQKHTJ=query-for-mau---retargeting query-for-mau-%E2%80%93-unified-ua-retargeting=query-for-mau---unified-ua-retargeting h_01K58WFCYQA1W91CHM1PN31MFG=query-for-mau---unified-ua-retargeting" />

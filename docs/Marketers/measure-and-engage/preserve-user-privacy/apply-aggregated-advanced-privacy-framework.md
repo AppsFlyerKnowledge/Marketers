@@ -71,6 +71,8 @@ Advanced Privacy behaves differently when served on the web and the af\_media\_t
 
 ### Paid and owned media data availability
 
+<div id="paid-media" />
+
 <Accordion title="Paid media">
 
 Paid media includes mobile ad networks with integrations in the AppsFlyer platform with whom advertisers run campaigns.
@@ -80,6 +82,8 @@ Paid media includes mobile ad networks with integrations in the AppsFlyer platfo
 <table><thead><tr><th rowspan="2">Media type</th><th colspan="2">ATT status</th><th colspan="2">Data available to:</th></tr><tr><th>Publisher app</th><th>Advertiser app</th><th>Advertiser</th><th>Ad network</th></tr></thead><tbody><tr><td rowspan="4">App</td><td>Authorized</td><td>Authorized</td><td>User-level attribution data</td><td>User-level attribution data</td></tr><tr><td>Not authorized</td><td>Authorized</td><td>Limited attribution data for advertisers </td><td>Limited attribution data for partners</td></tr><tr><td>Authorized</td><td>Not authorized</td><td>Limited attribution data for advertisers </td><td>Limited attribution data for partners</td></tr><tr><td>Not authorized</td><td>Not authorized</td><td>Limited attribution data for advertisers </td><td>Limited attribution data for partners</td></tr><tr><td> </td><td colspan="4"> </td></tr><tr><td rowspan="2"><p>Web</p></td><td>N/A</td><td>Authorized</td><td>User-level attribution data</td><td>User-level attribution data</td></tr><tr><td>N/A</td><td>Not authorized</td><td>Limited attribution data for advertisers </td><td>Limited attribution data for partners</td></tr></tbody></table>
 
 </Accordion>
+
+<div id="owned-media" />
 
 <Accordion title="Owned media">
 
@@ -147,6 +151,8 @@ As previously stated, the AAP setting overrides the Advanced Privacy (AP) settin
 
 ## Advanced Aggregated Privacy implications for your partners
 
+<div id="ad-networks" />
+
 <Accordion title="Ad networks">
 
 #### **Postbacks to ad network partners**
@@ -187,6 +193,8 @@ Advanced Privacy behaves differently when served on the web and the af\_media\_t
 
 </Accordion>
 
+<div id="analytics-partners" />
+
 <Accordion title="Analytics partners">
 
 AAP affects analytics partners in relation to data shared with them and is aligned with the AAP principles that apply to advertisers in the context of the analytics partner.  Data shared with the partner is via postbacks.
@@ -205,6 +213,8 @@ The various user consent scenarios and postback type used are illustrated in the
 Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See [here](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns) for more information.
 
 </Accordion>
+
+<div id="agencies" />
 
 <Accordion title="Agencies">
 
@@ -231,3 +241,5 @@ Advanced Privacy behaves differently when served on the web and the af\_media\_t
 > 📘 **See also**
 >
 > * [Advanced Privacy guide & postback macros for ad networks](/docs/advanced-privacy-guide-postback-macros-for-ad-networks)
+
+<div data-zendesk-anchors="aggregated-advanced-privacy-framework=aggregated-advanced-privacy-aap-framework h_01HDPDE0H3SYFWBHK59HBV2P6N=aggregated-advanced-privacy-aap-framework aapimpacted-features=aap-impacted-features h_01HDPDE0H339BPACN235V70MWW=aap-impacted-features h_01HDPDE0H3QBE60DVBZ1MWNB9N=data-availability-principles-in-aggregated-advanced-privacy h_01HDPDE0H326EXNCQHPVJWXK3H=paid-and-owned-media-data-availability h_01HDPDE0H3TBDSXCNW5Q3E1Q7P=paid-media h_01HDPDE0H3SACYAV19WQD9TCQ3=paid-media-data-availability-by-att-status h_01HDPDE0H4M4XPE1C54K284BGW=owned-media controlling-aap=controlling-advanced-aggregated-privacy h_01HDPDE0H4VQC2DWAV68Q9VDVQ=controlling-advanced-aggregated-privacy h_01HDPDE0H4BHG114REGTWCDBP9=aap-central-switch h_01HDPDE0H4SC810EBK7ZGQ02K0=aap-enabled h_01HKHPGQ1R6HZEXSRTX7ATVWE9=aap-disabled h_01HDPDE0H4FRDXWRCYAWTPZZWE=partner-advanced-privacy-switch 01HKHPEBBFGQ5ZX4J6G50GEN64=advanced-aggregated-privacy-implications-for-your-partners h_01HDPDE0H4PDJ4TC02TED0DB8P=ad-networks h_01HDPDE0H47ENYTWRVFPX0VTZC=postbacks-to-ad-network-partners h_01HDPDE0H4B01YG577QZCG7TA7=postbacks-for-attributed-ad-networks h_01HDPDE0H63ZMV255SN7EKDRMV=postbacks-for-unattributed-partners h_01HDPDE0H67T1XFTEB2N0NN6YN=analytics-partners h_01HDPDE0H6AM91W49W2G2Z94DM=agencies h_01HDPDMX05ZZCAMW4TTWF4M4YN=see-also" />

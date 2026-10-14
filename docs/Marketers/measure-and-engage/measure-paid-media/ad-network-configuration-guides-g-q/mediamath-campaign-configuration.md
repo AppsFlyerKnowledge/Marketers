@@ -49,6 +49,8 @@ For a detailed description of the Partner Configuration Window Header, click [he
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -101,6 +103,8 @@ In this section you can map your AppsFlyer events with MediaMath via postbacks.
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -110,17 +114,23 @@ Generate and save attribution links and send them to the partner for attributing
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data is not supported by MediaMath.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported by MediaMath.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -141,3 +151,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW2X0DS3WRS3N268E2SH2HT=setting-up-mediamath h_01HKW2X0DSW1P1RZGK26RS20QM=tip h_01HKW2X0DSSQVB3MSSEK1HB7V7=integration-tab h_01HKW2X0DS26H7GFZKBY3VJV59=activate-partner h_01HKW2X0DSBYTBEDCM4YCPHEPA=note h_01HKW2X0DSQWZY0KPS42RQKCFB=general-settings h_01HKW2X0DSAM76C6S22VMVTPGZ=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW2X0DSS1TN1B4GWP8SHY6X=in-app-events-settings h_01HKW2X0DSWT4VW9J5DMYZ2DPJ=attribution-link-tab h_01HKW2X0DS69CD1QKF8CZM3MN4=cost-tab h_01HKW2X0DS4B391FNY0W6W9YAK=ad-revenue-tab h_01HKW2X0DTC7BR20T5FPP8PW0X=permissions-tab h_01HKW2X0DTFX6A7X3F67WW0XNW=ad-network-permissions" />

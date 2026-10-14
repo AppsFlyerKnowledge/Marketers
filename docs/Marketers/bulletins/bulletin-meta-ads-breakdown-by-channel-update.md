@@ -41,3 +41,5 @@ To check whether Impression Device is already enabled for an ad account:
 4. Under Additional Breakdowns, check whether the plus symbol next to **Impression Device** (`impression_device`) is already selected. If it is, the opt-in is active for this account.
 
 [![Additional Breakdowns panel in Ads Manager with plus icons for Time of Day, Impression Device, and Frequency Value](https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png)](https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png)
+
+<div data-zendesk-anchors="h_01KZ63J08GPADE2AH0KV9NNESC=check-impression-device-in-ads-manager" />

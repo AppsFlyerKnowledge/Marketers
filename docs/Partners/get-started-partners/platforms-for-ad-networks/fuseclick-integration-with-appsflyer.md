@@ -68,3 +68,5 @@ Additional attribution information can be added to the postback by request such 
 
 * If you have an integration with AppsFlyer, contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
 * If you don't have an integration with AppsFlyer, complete the ad Partners Registration application [here](https://www.appsflyer.com/partners-registration/).
+
+<div data-zendesk-anchors="01JFT0DX287AWQND2BYFSV50HW=basic-attribution-link install-and-inapp-event-postbacks=install-and-in-app-event-postbacks 01JFT0DX2B6FFE3K7VTXG1YVJ1=install-and-in-app-event-postbacks 01JFT0DX2BD8A19BY9197X11QW=finalizing-your-registration" />

@@ -62,6 +62,8 @@ Prepare your selected cloud services for use with DCR inbound connections accord
 
 ### Data warehouses – BigQuery and Snowflake
 
+<div id="bigquery-inbound" />
+
 <Accordion title="BigQuery">
 
 **Note:** The following procedure must be performed by your Google Cloud admin.
@@ -93,6 +95,8 @@ Prepare your selected cloud services for use with DCR inbound connections accord
    7. Click **CLOSE** to close the right-side panel.
 
 </Accordion>
+
+<div id="snowflake-inbound" />
 
 <Accordion title="Snowflake">
 
@@ -129,7 +133,7 @@ You can use one or more buckets for uploading data to the DCR (on Amazon S3, GCS
 
 * You can set up the same bucket for use with both inbound and outbound connections by following [these instructions](/docs/data-clean-room-setting-up-cloud-services#setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections).
 
-The following requirements are relevant to buckets on both cloud services:
+<span id="both-cloud-services"></span>The following requirements are relevant to buckets on both cloud services:
 
 * **Use:** The bucket must be for the exclusive use of AppsFlyer Data Clean Room. In other words, no other service can write data to the bucket.
 * **Permissions:** AppsFlyer DCR service must be given bucket permissions. See instructions for granting these permissions in the tabs for each cloud service below.
@@ -163,11 +167,11 @@ The following requirements are relevant to buckets on both cloud services:
    1. Click **Create bucket.**
    2. Complete the **Bucket name**, starting with `af-dcr-` or `af-datalocker-` and followed by your text (according to the [DCR naming requirements](/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements) above).
    3. Click **Create bucket.**
-4. Grant AppsFlyer bucket permissions:
+4. <span id="step-4"></span>Grant AppsFlyer bucket permissions:
    1. Select the bucket you created.
    2. Go to the **Permissions** tab.
    3. In the **Bucket policy** section, click **Edit.** The **Edit bucket policy** window opens.
-   4. Paste the following code snippet into the window.
+   4. <span id="code-snippet"></span>Paste the following code snippet into the window.
 
       ```json
       {
@@ -273,6 +277,8 @@ Your DCR reports can be delivered to one or more locations on your cloud service
 
 </Accordion>
 
+<div id="snowflake-outbound" />
+
 <Accordion title="Snowflake">
 
 The procedure for preparing Snowflake for outbound connections is completed in combination with the [procedure for creating the outbound connection](/docs/data-clean-room-working-with-connections#snowflake-outbound) itself.
@@ -287,11 +293,15 @@ The instructions in the tabs below apply when you are using a bucket for **outbo
 
 * If you will be using the same bucket for both inbound and outbound connections, follow the [special instructions for that setup](/docs/data-clean-room-setting-up-cloud-services#setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections).
 
+<div id="amazon-s3-outbound" />
+
 <Accordion title="Amazon S3">
 
 Follow the instructions for creating an [Amazon S3 bucket for inbound connections](/docs/data-clean-room-setting-up-cloud-services#amazon-s3-inbound) (with no changes to that procedure).
 
 </Accordion>
+
+<div id="gcs-outbound" />
 
 <Accordion title="GCS">
 
@@ -310,6 +320,8 @@ The instructions for this setup vary only slightly from the [instructions for in
 * modifying a bucket previously used only for Data Locker to one now used for both inbound and outbound DCR connections
 
 Instructions for both of these scenarios are included in the tabs below:
+
+<div id="amazon-s3-inbound-outbound" />
 
 <Accordion title="Amazon S3">
 
@@ -362,6 +374,8 @@ Modifying an existing bucket that you used previously only for Data Locker requi
 
 </Accordion>
 
+<div id="gcs-inbound-outbound" />
+
 <Accordion title="GCS">
 
 #### Creating a new bucket for inbound/outbound connections
@@ -390,3 +404,5 @@ Modifying an existing bucket that you used previously only for Data Locker requi
 8. Click **Save.**
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01J6Y2P4CKMZ3R8WZ4X76DZ6ZY=overview h_01J6Y2P4CMJ4CXJZ3EDDXQG4Y3=note h_01J6Y2P4CMNMTSPWDK9GGSDYMJ=supported-cloud-services h_01J6Y2P4CM8VDWCD5XH91DJPYX=important setting-up-cloud-services-inbound=setting-up-cloud-services-for-inbound-connections h_01J6Y2P4CM61DEXMWB626X25TT=setting-up-cloud-services-for-inbound-connections data-warehouses-inbound=data-warehouses--bigquery-and-snowflake h_01J6Y2P4CMDX64XXGNS7ZP3GKZ=data-warehouses--bigquery-and-snowflake h_01J6Y2P4CMY5DHFEFGHQQPAPK9=bigquery-inbound h_01J6Y2P4CMMZFYDZWK82F5J65W=snowflake-inbound cloud-storage-buckets-inbound=cloud-storage-buckets--amazon-s3-and-gcs h_01J6Y2P4CMCJDT2W6C52MF71TB=cloud-storage-buckets--amazon-s3-and-gcs h_01J6Y2P4CMS2JF9Z7F13XW485F=amazon-s3-inbound h_01J6Y2P4CM9Y9114CH1ESY0QPJ=gcs-inbound setting-up-cloud-services-outbound=setting-up-cloud-services-for-outbound-connections h_01J6Y2P4CMEEG6PNM2PMEYGQ3A=setting-up-cloud-services-for-outbound-connections data-warehouses-outbound=data-warehouses--bigquery-and-snowflake-1 h_01J6Y2P4CMNWQ0D3EZXJZZM1EY=data-warehouses--bigquery-and-snowflake-1 h_01J6Y2P4CM8MVS3SZAYE2YDV2T=bigquery-outbound h_01J6Y2P4CN97P8GCV314TQ91EE=snowflake-outbound cloud-storage-buckets-outbound=cloud-storage-buckets--amazon-s3-and-gcs-1 h_01J6Y2P4CNZ61PG9BTCVRFZ20K=cloud-storage-buckets--amazon-s3-and-gcs-1 h_01J6Y2P4CN4ZRAMQ2E3R4Q4KHS=amazon-s3-outbound h_01J6Y2P4CN39GT0QT6THFAA3ZY=gcs-outbound setting-up-cloud-services-inbound-outbound=setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections h_01J6Y2P4CN2ARMJKRSAFZNN59G=setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections h_01J6Y2P4CNKC9P1FKECHZJ6AXP=amazon-s3-inbound-outbound h_01J6Y2P4CN216K0VZSWRP699TF=creating-a-new-bucket-for-inboundoutbound-connections h_01J6Y2P4CNDW888XTMKAMZAFCS=modifying-an-existing-bucket-previously-used-only-for-data-locker h_01J6Y2P4CN0MEEKG0D2SKMDZVY=gcs-inbound-outbound creating-a-new-bucket-for-inboundoutbound-connections::e1cda9c8=creating-a-new-bucket-for-inboundoutbound-connections-1 h_01J6Y2P4CN336CRH1CWRJVCHHY=creating-a-new-bucket-for-inboundoutbound-connections-1 modifying-an-existing-bucket-previously-used-only-for-data-locker::ba0d4803=modifying-an-existing-bucket-previously-used-only-for-data-locker-1 h_01J6Y2P4CNYCTVGN6CH0748S24=modifying-an-existing-bucket-previously-used-only-for-data-locker-1" />

@@ -36,11 +36,13 @@ To generate or download reports, see the procedures section of this article.
 
 [![MyReportsRawDataExport.png](https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png)](https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png)
 
+<div id="raw-data-export-page-features-and-filter-options" />
+
 <Accordion title="Raw data export page features and filter options">
 
 The raw data export page provides reports having the features listed in the following table.
 
-<table><thead><tr><th>Feature</th><th>Remarks</th></tr></thead><tbody><tr><td>Report categories </td><td>Differ according to your subscription plan</td></tr><tr><td>Date range</td><td>Raw data reports are filtered by activity dates (event occurrence). You can also add a filter for install dates. See list of filter options in the table that follows.</td></tr><tr><td>Maximum number of rows</td><td>1M rows</td></tr><tr><td>Rate limitation</td><td>A <a href="./report-generation-quotas-rate-limitations">quota mechanism</a> limits the number of reports that can be generated per day.</td></tr><tr><td>Retention/report window</td><td><p>Install-related reports (installs, install postbacks)<strong> 60 </strong>out of the previous 90 days in a single download. </p><p>In-app event-related reports: 31 out of the previous 90 days in a single download.</p></td></tr><tr><td>Filter options</td><td>The filters listed are available for use. In some cases, depending on the filter, filter options are populated. For example, when filtering by Geo the list of available countries is listed.</td></tr><tr><td>Field selection</td><td><p>The most important fields are pre-selected. You can add/clear select fields in the<strong> Report fields</strong> tab. Some fields may not have relevance to a given report. Nevertheless, you can select the field. We do this so that you can have consistent report formats (columns) </p><p>For example, selecting fraud (Protect360) related fields in the user acquisition in-app events report returns blank columns. These fields are populated only in the context of explicit Protect360 reports. </p></td></tr><tr><td>Report (CSV) field order</td><td><p>Columns in reports are arranged according to the field order setting. The column sequence <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRGYcMOgC5yy_82yn3DWd3ucLE5KtuTA72eJfvu5KVB9fFH_mYwzM3KpR_inQOnat-KzgVjuuvXa6_g/pub?output=xlsx">listed in a spreadsheet </a>contains separate tabs for the legacy and default options. </p><figure><table><thead><tr><th>Setting</th><th>Field selection allowed</th><th>Remarks</th></tr></thead><tbody><tr><td>Default</td><td>Yes</td><td><ul><li>Selected fields are ordered according to an AppsFlyer template.</li><li>Going forward, the sequence will be preserved. Future fields will be appended to the right of the existing fields.</li></ul></td></tr><tr><td>Alphabetical (A-Z)</td><td>Yes</td><td>Selected fields are ordered alphabetically (ascending).</td></tr><tr><td>Alphabetical (Z-A)</td><td>Yes</td><td>Selected fields are ordered in reverse order alphabetically (descending).</td></tr><tr><td>Legacy</td><td>No</td><td><ul><li>Fields are ordered according to the sequence of columns in reports prepared using the previous version of the export data page.</li><li>Field selection is fixed and can't be changed.</li><li>There is some variation of the reports per field depending on the actual report</li></ul></td></tr></tbody></table></figure></td></tr></tbody></table>
+<table><thead><tr><th>Feature</th><th>Remarks</th></tr></thead><tbody><tr><td><span id="report-categories"></span>Report categories </td><td>Differ according to your subscription plan</td></tr><tr><td><span id="date-range"></span>Date range</td><td>Raw data reports are filtered by activity dates (event occurrence). You can also add a filter for install dates. See list of filter options in the table that follows.</td></tr><tr><td><span id="maximum-number-of-rows"></span>Maximum number of rows</td><td>1M rows</td></tr><tr><td><span id="rate-limitation"></span>Rate limitation</td><td>A <a href="./report-generation-quotas-rate-limitations">quota mechanism</a> limits the number of reports that can be generated per day.</td></tr><tr><td><span id="retentionreport-window"></span>Retention/report window</td><td><p>Install-related reports (installs, install postbacks)<strong> 60 </strong>out of the previous 90 days in a single download. </p><p>In-app event-related reports: 31 out of the previous 90 days in a single download.</p></td></tr><tr><td><span id="filter-options"></span>Filter options</td><td>The filters listed are available for use. In some cases, depending on the filter, filter options are populated. For example, when filtering by Geo the list of available countries is listed.</td></tr><tr><td><span id="field-selection"></span>Field selection</td><td><p>The most important fields are pre-selected. You can add/clear select fields in the<strong> Report fields</strong> tab. Some fields may not have relevance to a given report. Nevertheless, you can select the field. We do this so that you can have consistent report formats (columns) </p><p>For example, selecting fraud (Protect360) related fields in the user acquisition in-app events report returns blank columns. These fields are populated only in the context of explicit Protect360 reports. </p></td></tr><tr><td><span id="report-csv-field-order"></span>Report (CSV) field order</td><td><p>Columns in reports are arranged according to the field order setting. The column sequence <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRGYcMOgC5yy_82yn3DWd3ucLE5KtuTA72eJfvu5KVB9fFH_mYwzM3KpR_inQOnat-KzgVjuuvXa6_g/pub?output=xlsx">listed in a spreadsheet </a>contains separate tabs for the legacy and default options. </p><figure><table><thead><tr><th>Setting</th><th>Field selection allowed</th><th>Remarks</th></tr></thead><tbody><tr><td><span id="default"></span>Default</td><td>Yes</td><td><ul><li>Selected fields are ordered according to an AppsFlyer template.</li><li>Going forward, the sequence will be preserved. Future fields will be appended to the right of the existing fields.</li></ul></td></tr><tr><td><span id="alphabetical-az"></span>Alphabetical (A-Z)</td><td>Yes</td><td>Selected fields are ordered alphabetically (ascending).</td></tr><tr><td><span id="alphabetical-za"></span>Alphabetical (Z-A)</td><td>Yes</td><td>Selected fields are ordered in reverse order alphabetically (descending).</td></tr><tr><td><span id="legacy"></span>Legacy</td><td>No</td><td><ul><li>Fields are ordered according to the sequence of columns in reports prepared using the previous version of the export data page.</li><li>Field selection is fixed and can't be changed.</li><li>There is some variation of the reports per field depending on the actual report</li></ul></td></tr></tbody></table></figure></td></tr></tbody></table>
 
 | Filter | Advertiser | Ad network | Agency |
 | --- | --- | --- | --- |
@@ -54,6 +56,8 @@ The raw data export page provides reports having the features listed in the foll
 </Accordion>
 
 ## Procedures
+
+<div id="create-a-default-report" />
 
 <Accordion title="Create a default report">
 
@@ -79,6 +83,8 @@ You can create a report with the default settings without customizing its fields
 | Geo | All geographical areas |
 
 </Accordion>
+
+<div id="create-a-custom-report" />
 
 <Accordion title="Create a custom report">
 
@@ -125,6 +131,8 @@ You can create a custom report by setting its filters and fields.
 
 </Accordion>
 
+<div id="duplicate-and-edit-report-settings" />
+
 <Accordion title="Duplicate and edit report settings">
 
 **To duplicate and edit report settings:**
@@ -139,6 +147,8 @@ You can create a custom report by setting its filters and fields.
 </Accordion>
 
 ## Additional information
+
+<div id="traits-and-limitations" />
 
 <Accordion title="Traits and limitations">
 
@@ -160,16 +170,18 @@ You can create a custom report by setting its filters and fields.
 
 </Accordion>
 
+<div id="field-sequence-templates" />
+
 <Accordion title="Field sequence templates">
 
 The Report field order setting allows you to specify the sequence of columns in reports and in some cases the fields themselves.
 
 | Setting | Field selection allowed | Remarks |
 | --- | --- | --- |
-| Default | Yes | <ul><li>Selected fields are ordered according to an AppsFlyer template.</li><li>Going forward, the sequence will be preserved. Future fields will be appended to the right of the existing fields.</li></ul> |
-| Alphabetical (A-Z) | Yes | Selected fields are ordered alphabetically. |
-| Alphabetical (Z-A) | Yes | Selected fields are ordered in reverse order alphabetically |
-| Legacy | No | <ul><li>Fields are ordered according to the sequence of columns in reports prepared using the previous version of the export data page.</li><li>Field selection is fixed and can't be changed.</li><li>There is some variation of the reports per field depending on the actual report.</li></ul> |
+| <span id="default::b7bb6355"></span>Default | Yes | <ul><li>Selected fields are ordered according to an AppsFlyer template.</li><li>Going forward, the sequence will be preserved. Future fields will be appended to the right of the existing fields.</li></ul> |
+| <span id="alphabetical-az::b08af6b3"></span>Alphabetical (A-Z) | Yes | Selected fields are ordered alphabetically. |
+| <span id="alphabetical-za::f0b3beb8"></span>Alphabetical (Z-A) | Yes | Selected fields are ordered in reverse order alphabetically |
+| <span id="legacy::fb5fd8ec"></span>Legacy | No | <ul><li>Fields are ordered according to the sequence of columns in reports prepared using the previous version of the export data page.</li><li>Field selection is fixed and can't be changed.</li><li>There is some variation of the reports per field depending on the actual report.</li></ul> |
 
 This [spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGYcMOgC5yy_82yn3DWd3ucLE5KtuTA72eJfvu5KVB9fFH_mYwzM3KpR_inQOnat-KzgVjuuvXa6_g/pub?output=xlsx) contains both a Default and Legacy sheet. Each contains the relevant field order list.
 
@@ -179,3 +191,5 @@ This [spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGYcMOgC5yy_
 2. If necessary change the selected fields by selecting or clear selecting the necessary fields.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HA28AT6QRSG68NBFYHH5SQY8=raw-data-export-page-features-and-filter-options h_01HA28AT6Q9PV3M55C1YM3XN2E=procedures h_01HZY1HQ9AVH6Q9QAQB4SM1VPX=create-a-default-report h_01HZY1HQ9ACEMZ4N8WPYNHZQP7=create-a-custom-report h_01_web_srn_media_source_filter=note h_01HA28AT6QV1XP4N952PAEGSSG=download-report h_01HA28AT6QFT88RHJ3M05MV3B3=duplicate-and-edit-report-settings h_01HA28AT6Q4DXKCZ22R9XEN2RR=additional-information h_01HA28AT6Q6SE8CB3EEXFMAN0H=traits-and-limitations h_01HA28AT6RW8C99ZGEBTN5E44R=field-sequence-templates" />

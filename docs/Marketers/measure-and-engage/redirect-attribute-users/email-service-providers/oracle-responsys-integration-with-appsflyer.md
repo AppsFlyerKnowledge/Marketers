@@ -63,6 +63,8 @@ Once you set click domains in Link Tables, Responsys uses these domains to wrap 
 
 ### Step 2: Give Responsys an AASA (iOS) and an Asset Links file (Android)
 
+<div id="aasa-for-ios" />
+
 <Accordion title="AASA for iOS">
 
 For Responsys to support iOS Universal Links, they need an AASA file. See the following instructions.
@@ -76,6 +78,8 @@ When you set up OneLink with Universal Links, you already have an AASA associate
 
 </Accordion>
 
+<div id="asset-links-for-android" />
+
 <Accordion title="Asset Links for Android">
 
 When you set up OneLink with App Links, you already have an Asset Links file associated with the OneLink. To obtain the Asset Links file. To obtain the Asset Links file:
@@ -88,6 +92,8 @@ When you set up OneLink with App Links, you already have an Asset Links file ass
 </Accordion>
 
 ## Setting up your app
+
+<div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
 <Accordion title="Step 1 for Android: Setting up your app to support App Links">
 
@@ -128,6 +134,8 @@ To resolve click domains:
      ```
 
 </Accordion>
+
+<div id="step-1-for-ios-setting-up-your-app-to-support-universal-links" />
 
 <Accordion title="Step 1 for iOS: Setting up your app to support Universal Links">
 
@@ -245,3 +253,5 @@ What should you expect?
 
 If you have the app installed, the app should be invoked. If the relevant AppsFlyer SDK deep linking APIs are implemented you should be deep linked into the relevant content.  
 In addition, a click should appear in both the AppsFlyer dashboard, attributed to the provided media source and campaign, and also in Responsys data.
+
+<div data-zendesk-anchors="h_01HDNSK7GR33AN2M4GP956S1FD=prerequisites h_01HDNSK7GR84QSRTS86GH556WK=setting-up-oracle-responsys-click-domain h_01HDNSK7GRHYJZSMYCMT9RVEBW=step-1-set-up-a-click-domain-in-oracle-responsys h_01HDNSK7GRW57NNXMN1SWFTTFZ=step-2-give-responsys-an-aasa-ios-and-an-asset-links-file-android h_01HDNSK7GR77N60SFVBD57S9GQ=aasa-for-ios h_01HDNSK7GR6ADJCPG63ZVP19NJ=asset-links-for-android h_01HDNSK7GRN751HAPPQ3HVRMDG=setting-up-your-app h_01HDNSK7GRHCK378A8XKMK7ZZF=step-1-for-android-setting-up-your-app-to-support-app-links h_01HDNSK7GRQNQGWXAEGHSTHADH=adding-the-click-domain-to-the-activity-in-the-android-manifest h_01HDNSK7GRP9ND0MHC3ZHD7G8H=setting-up-the-app-to-resolve-click-domains h_01HDNSK7GRJ682QYAMPB4PSGRZ=step-1-for-ios-setting-up-your-app-to-support-universal-links h_01HDNSK7GSRENM232MQ25EB3J3=associating-click-domains-in-xcode h_01HDNSK7GSP08G2EQSNVR5G45B=step-2-setting-up-the-app-to-resolve-click-domains h_01HDNSK7GSA9VAMTRFCX8SZGSC=sending-your-first-email h_01HDNSK7GSTAJXAP6KGKE9TD8T=testing-your-links" />

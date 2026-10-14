@@ -57,6 +57,8 @@ The sessions metric is counted from the first session onwards. From the sixth se
 
 The mechanism impacts the sessions count. **Note!** Consider that if the Minimum time between sessions is long, more than one hour, and users don't open the app many times a day, then some session-related metrics, such as DAU and retention can be impacted. This is especially true in the case of apps where users typically open the app once a day. 
 
+<div id="description-and-example" />
+
 <Accordion title="Description and example">
 
 The mechanism is activated after the first five sessions are counted. From the sixth session onwards a session is counted if the minimum time allowed between sessions has passed.
@@ -74,6 +76,8 @@ Assumption: The minimum allowed time between sessions setting is 10 minutes and 
 | C | 0, 10, 15, 21 | 3 | 15 |
 
 </Accordion>
+
+<div id="timer-setting" />
 
 <Accordion title="Timer setting">
 
@@ -94,6 +98,8 @@ Assumption: The minimum allowed time between sessions setting is 10 minutes and 
 
 ## Sessions related topics
 
+<div id="retargeting-sessions" />
+
 <Accordion title="Retargeting sessions">
 
 * Retargeting sessions are available starting July 12, 2020.
@@ -108,6 +114,8 @@ Assumption: The minimum allowed time between sessions setting is 10 minutes and 
 * In the case of Google Ads and X Ads, to avoid duplicate postbacks, the *af\_app\_opened* event is sent once.
 
 </Accordion>
+
+<div id="sessions-postbacks-to-partners" />
 
 <Accordion title="Sessions postbacks to partners">
 
@@ -157,3 +165,5 @@ See the [`minTimeBetweenSessions`](https://dev.appsflyer.com/hc/docs/ios-sdk-ref
 See the [`setMinTimeBetweenSessions`](https://dev.appsflyer.com/hc/docs/api#setmintimebetweensessions) in the Unity SDK reference
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HB8NDPNKERK1RR1Y09V2R2CC=sessions-counting-principles h_01HB8NDPNKFW6S28A3TC7W5J3C=sessions-calculation h_01HB8NDPNKF32E34M3CBJ6GMP8=minimum-time-between-sessions-mechanism h_01HB8NDPNKERP5YVEXMPKP620B=description-and-example h_01HB8NDPNK6R2P682EPSPQ8MGH=timer-setting h_01HB8NDPNKPTJX56Q2SVAB6V6T=sessions-related-topics h_01HB8NDPNMX2JTFHVTN14MVCCW=retargeting-sessions h_01HB8NDPNM5Z9ZHADD32EG66BJ=sessions-postbacks-to-partners h_01HYARHNQCWEHAFQ6B3FHZ0KTK=note h_01HB8NDPNM0Z7D1ZS7G952SSKK=session-reporting-by-the-app-sdk h_01HB8NTFMR3Y9GHFP3EWMAATHY=explicit-sessions-reporting-by-the-developer-android-apps-only h_01HB8NTMC1JYPDWYG9YC8RNSEQ=setting-minimum-time-between-app-launches" />

@@ -88,6 +88,8 @@ Re-engagement rules checklist for click-through and view-through attribution:
 
 </Accordion>
 
+<div id="example-retargeting-scenarios" />
+
 <Accordion title="Example retargeting scenarios">
 
 | **Scenario 1: Purchases before, during, and after the re-engagement window**<br /><br />User journey:<ul><li>Engage with an ad from network Z, install the app, and make a purchase (A).</li><li>Engage with a retargeting ad from network Y, open the app, and make a purchase (B).</li><li>Make a purchase (C).</li></ul>![](https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png)<br /><br />P/S column: Primary or Secondary described in [double attribution of retargeting events](/docs/resolve-retargeting-double-attribution) |
@@ -157,8 +159,8 @@ Retargeting attribution link parameters
 | --- | --- | --- |
 | `is_retargeting` | Set to: `is_retargeting=true` | Yes |
 | Advertising ID | Where possible send an advertising ID like IDFA, OAID, IDFV, and so on. [Probabilistic Modeling limitations for iOS apps.](/docs/appsflyer-attribution-model#probabilistic-modeling) | No |
-| Retargeting click lookback-window | <ul><li>The retargeting [click lookback window](/docs/set-up-lookback-windows) works like that of user acquisition campaigns.</li><li>It defines the maximum period that can elapse between a user clicking on an ad until the user is attributed.</li><li>The lookback window is set using the using `&af_click_lookback` parameter.</li><li>The default setting is 7 days.</li></ul>**Example**<br />To set a 14-day click-through lookback window, add the following to the retargeting campaign's attribution link: `&af_click_lookback=14d` | No |
-| Retargeting view-through lookback timer | <ul><li>The retargeting [view-through lookback window](/docs/set-up-lookback-windows) works like that of user acquisition campaigns.</li><li>It defines the maximum period that can elapse after a user views an ad until the user is attributed.</li><li>The default is 1 day.</li><li>The lookback window is set using</li></ul>`af_viewthrough_lookback={time}`<br /><br /><br /><br />**Example**<br />To set a 5-hour view-through lookback window, add the following to the retargeting campaign's attribution link: `&af_viewthrough_lookback=5h` | No |
+| Retargeting click lookback-window | <ul><li>The retargeting [click lookback window](/docs/set-up-lookback-windows) works like that of user acquisition campaigns.</li><li>It defines the maximum period that can elapse between a user clicking on an ad until the user is attributed.</li><li>The lookback window is set using the using `&af_click_lookback` parameter.</li><li>The default setting is 7 days.</li></ul>**<span id="01ECF12NKTFH6Q2NH4B1WKSYF9"></span>Example**<br />To set a 14-day click-through lookback window, add the following to the retargeting campaign's attribution link: `&af_click_lookback=14d` | No |
+| Retargeting view-through lookback timer | <ul><li>The retargeting [view-through lookback window](/docs/set-up-lookback-windows) works like that of user acquisition campaigns.</li><li>It defines the maximum period that can elapse after a user views an ad until the user is attributed.</li><li>The default is 1 day.</li><li>The lookback window is set using</li></ul>`af_viewthrough_lookback={time}`<br /><br /><br /><br />**<span id="01ECF12NKTE8W4K72VATN9RM2X"></span>Example**<br />To set a 5-hour view-through lookback window, add the following to the retargeting campaign's attribution link: `&af_viewthrough_lookback=5h` | No |
 | Re-engagement window | <ul><li>The **re-engagement window** can be set in the attribution link user interface. This sets the **af\_reengagement\_window** parameter on to the attribution link. The parameter can be added manually.</li><li>The default is 30 days.</li><li>The following re-engagement window values are available:</li><li>Hours:1- 23 hours</li><li>Days: 1-90 days</li><li>Lifetime: Persists until the user either uninstall or performs another re-engagement, for example, af\_reengagement\_window=lifetime</li></ul>For example, **af\_reengagement\_window=60d** means that events reported within 60 days of the re-engagement are attributed to the retargeting media source. | No |
 
 #### Retargeting view-through lookback period
@@ -206,6 +208,8 @@ Interpretation of raw data reports in the context of retargeting
 
 ## Additional information
 
+<div id="app-requirements" />
+
 <Accordion title="App requirements">
 
 To run retargeting campaigns the app must meet the following minimum requirements.
@@ -218,12 +222,16 @@ To run retargeting campaigns the app must meet the following minimum requirement
 
 </Accordion>
 
+<div id="retargeting-limitations" />
+
 <Accordion title="Retargeting limitations">
 
 * Starting February 17, 2021, retargeting supports Probabilistic Modeling.
 * Campaign cost data for retargeting is available in Overview and Cohort dashboards and reports in the unified view.
 
 </Accordion>
+
+<div id="faq" />
 
 <Accordion title="FAQ">
 
@@ -237,3 +245,5 @@ To run retargeting campaigns the app must meet the following minimum requirement
 >
 > * [AppsFlyer attribution model](/docs/appsflyer-attribution-model)
 > * [Audiences guide](/docs/audiences-guide)
+
+<div data-zendesk-anchors="h_01HCFJHC85VK0A05X5F69E2WKT=retargeting-fundamentals h_01HCFJHC851PV0VR42H07VQAXF=tip h_01HCFJHC85EW8MBQ8MBXBVPF03=reengagement-rules-and-windows h_01HCFJHC85FRFJ531Y08DW03Y2=inclusion-windows h_01HCFJHC85ECS3PJV80D943TVY=exclusion-windows h_01HCFJHC8529NW0ABMQ0RB3E8R=example-flow-implementing-the-rules h_01HCFJHC85E1SWGYN0BH603BV9=example-retargeting-scenarios h_01HCFJHC863XPHNWRHJ60JPSRF=retargeting-operations h_01HCFJHC86XNCT5AQP48R9ZDC4=retargeting-settings nonsrn-settings=non-srn-settings h_01HCFJHC865V36R3H58D5PWXYY=non-srn-settings h_01HCFJHC860BS9YJM99G437G24=retargeting-dashboard h_01HCFJHC860Y5HZN66DRNN2Q89=retargeting-attribution-links retargeting-viewthrough-lookback-period=retargeting-view-through-lookback-period h_01HCFJHC863CSP03AYBXFSNC37=retargeting-view-through-lookback-period h_01HCFJHC86MNFRGYMN776FYHJV=retargeting-reports-and-raw-data h_01HCFJHC86RKKPPMBYEZV4Q3X9=additional-information h_01HCFJHC862E6C46Q7645VJ6CZ=app-requirements h_01HCFJHC86SMKZ1HT5KHQNQS1N=retargeting-limitations h_01HCFJHC86BVSVRNAGJEKZFCJP=faq h_01HE7TPR7928SF2W8ZJS55Y5BG=see-also" />

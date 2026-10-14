@@ -39,6 +39,8 @@ To send events via API, tell your developer to follow their [server-to-server ev
 
 ## Populating parameters
 
+<div id="difference-between-organic-and-nonorganic" />
+
 <Accordion title="Difference between organic and non-organic">
 
 When AppsFlyer processes S2S in-app events, attribution fields are populated by using the AppsFlyer ID to identify the associated install event that preceded the in-app events.
@@ -113,6 +115,8 @@ Once you map AppsFlyer ID with your CUID, you can match the user to events perfo
 
 </Accordion>
 
+<div id="time-stamping-s2s-events" />
+
 <Accordion title="Time stamping S2S events">
 
 ![time stamping logic diagram](https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png)
@@ -140,6 +144,8 @@ On arrival, events are time-stamped as follows:
 
 </Accordion>
 
+<div id="sending-negative-revenue" />
+
 <Accordion title="Sending negative revenue">
 
 Events having a negative revenue value can be sent. For example, if a purchase was canceled. The parameter `af_revenue` can have negative values to record this.
@@ -147,6 +153,8 @@ Events having a negative revenue value can be sent. For example, if a purchase w
 If you populate `af_quantity`, you might want to populate it with a negative value depending on your system logic. AppsFlyer doesn't make use of `af_quantity`.
 
 </Accordion>
+
+<div id="h_01_including-user-agent-and-ip-address-in-s2s-events" />
 
 <Accordion title="Including User Agent and IP address in S2S events">
 
@@ -175,6 +183,8 @@ When using gradual scaling, AppsFlyer can support a high volume of transactions 
 
 ## Troubleshooting
 
+<div id="events-arent-displaying-in-the-dashboard" />
+
 <Accordion title="Events aren't displaying in the dashboard">
 
 * Endpoint: Verify that the endpoint used is correct.
@@ -188,6 +198,8 @@ When using gradual scaling, AppsFlyer can support a high volume of transactions 
 * Event raw data reports: the date range relates to the event date and not the install date.
 
 </Accordion>
+
+<div id="events-dont-contain-revenue" />
 
 <Accordion title="Events don't contain revenue">
 
@@ -206,6 +218,8 @@ Revenue values must not be formatted in any way. They can contain a decimal poin
 
 </Accordion>
 
+<div id="not-all-fields-are-populated-in-s2s-events" />
+
 <Accordion title="Not all fields are populated in S2S events">
 
 S2S events' raw data fields are populated exclusively with the values sent in the S2S call. The following fields cannot be reported through the S2S API, and therefore are not populated for S2S events in raw data reports:
@@ -220,6 +234,8 @@ S2S events' raw data fields are populated exclusively with the values sent in th
 
 </Accordion>
 
+<div id="S2S_in-app_events_are_wrongly_attributed_as_organic" />
+
 <Accordion title="S2S in-app events are wrongly attributed as organic">
 
 S2S events, such as login events, can arrive at AppsFlyer as soon as the app is installed and the SDK is started. However, if these S2S in-app events arrive before AppsFlyer completes the processing of the install event, which generally takes 20-30 seconds or more, they may be marked as unattributed organic events.
@@ -227,3 +243,5 @@ S2S events, such as login events, can arrive at AppsFlyer as soon as the app is 
 We recommend introducing a short delay before reporting S2S in-app events that occur immediately after the install to our servers.
 
 </Accordion>
+
+<div data-zendesk-anchors="servertoserver-events-api-for-mobile=server-to-server-events-api-for-mobile h_01H9Q8KBYGXAA8H4AKKXP8T8DY=server-to-server-events-api-for-mobile h_01H9Q8KBYGHY1SDSMSFZRT2JXZ=populating-parameters h_01H9Q8KBYG6W4TERWHARZZZASZ=difference-between-organic-and-nonorganic h_01H9Q8KBYG6EBKPS5Y2KC1QT7G=mapping-appsflyer-id-with-customer-user-id-cuid h_01H9Q8KBYGR26VMQR9Y0CK85F6=fetching-the-appsflyer-id h_01H9Q8KBYG8ASB1WB9X4XM3CYZ=time-stamping-s2s-events h_01H9Q8KBYG63SZWNM4GWSJG605=sending-negative-revenue including-user-agent-and-ip-address-in-s2s-events=h_01_including-user-agent-and-ip-address-in-s2s-events h_01HX77GDZ1CCWN48CN616P860D=increasing-the-volume-of-data-transactions h_01H9Q8KBYGYR9Y7DPCNWSB4QY0=troubleshooting h_01H9Q8KBYGYHCWAPPNMG9WB8QN=events-arent-displaying-in-the-dashboard h_01H9Q8KBYGDC68637RH4DE2FZX=events-dont-contain-revenue h_01H9Q8KBYGDQKZF90EJAXRTMF3=not-all-fields-are-populated-in-s2s-events h_01JWV0CS5BFBXDT333794BHFER=S2S_in-app_events_are_wrongly_attributed_as_organic" />

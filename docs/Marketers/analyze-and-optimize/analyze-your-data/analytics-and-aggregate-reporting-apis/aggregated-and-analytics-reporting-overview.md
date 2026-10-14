@@ -188,3 +188,5 @@ The date range relates to the install date.
 
 * [Meta campaign management partners configuration](/docs/configuring-meta-campaign-management-partners)
 * [Raw data reporting overview](/docs/raw-data-reporting-overview)
+
+<div data-zendesk-anchors="aggregated-and-analytics-performance-reporting%E2%80%94tools-and-reports=aggregated-and-analytics-performance-reporting-overview 01EWA9VQ2HH93525BMK6WN0P6S=aggregated-and-analytics-performance-reporting-overview 01ED4D7W8CVAQ9V2GCEX1G6KD7=user-journey-reports 01ED4D7W8C3ZNBYR3CMHJF3QSE=examples-of-aggregate-reports h_01HDNYFR9KTQ7ZF35C7E7M7AF1=fields-in-ua-aggregate-reports h_01HDNYFR9MSJWCP3JA4M1WXN1H=aggregate-ltv-retargeting-reports aggregate-ltv-retargeting-reports::b2093953=aggregate-ltv-retargeting-reports-1 h_01HDNYFR9MSK9VQQ0Q889Z55TN=aggregate-ltv-retargeting-reports-1 h_01HDNYFR9MYXVZ5BA9FDZ6D82M=feature-reports h_01HDNYFR9MSZ9K8F283J0WBHCZ=aggregate-protect360-reports-available-via-pull-api h_01HDNYYJXVY9XHX87K06NXYQNS=see-also" />

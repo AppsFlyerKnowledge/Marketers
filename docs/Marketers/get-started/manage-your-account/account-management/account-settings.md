@@ -95,3 +95,5 @@ In general:
 * All users may not see the same settings
 * Some settings may be view-only
 * Admin permissions may be required to change account-level or AI-related controls
+
+<div data-zendesk-anchors="h_01KKRJZMP6CDDSJ6RK8QN4T30A=about-account-settings h_01KKRJZMP81BHTCA01W22CRQYG=profile h_01KKRJZMP9PQB0BZQ0931D23AH=account h_01KKRJZMPA9YTMGY0A3A883T0N=unique-dev-key h_01KKRJZMPCAMQFZM3MKQBTYFVD=ai-capabilities h_01KKRJZMPCQJBRRA0EM2EF4BYB=ai-assistant h_01KKRJZMPDZQKY9VV25EKCP5YE=appsflyer-mcp h_01KKRJZMPEHQHPRJEH9PSDTT00=agent-hub h_01KKRJZMPFQJK110AW1CDS23CW=permissions" />

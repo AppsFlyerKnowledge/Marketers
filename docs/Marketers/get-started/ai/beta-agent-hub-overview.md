@@ -245,6 +245,8 @@ Schedules run in UTC.
 
 The agent appears under **My Agents**. The card shows the latest run status. Completed runs are in **Activity**, filterable by app and agent name.
 
+<div id="h_01M3PDTFQESQY349XK0SNH5NB8" />
+
 <Accordion title="What data Custom Agent works on">
 
 Custom Agent has two data sources, event-level and aggregated data, and picks between them based on the task; you don't need to specify. For some tasks, the agent uses both sources in a single run. In those rare cases, the same metric can show slightly different values across the two parts of a run. To understand which source the agent used during a run, explore the agent's reasoning using the **Analyze activity** feature.
@@ -287,6 +289,8 @@ Aggregated data is in USD and your account currency. Cohorted aggregated data ha
 
 </Accordion>
 
+<div id="h_01M3PDTFQEF8ZPV4PP04YGNGBK" />
+
 <Accordion title="Write a good task">
 
 The plan the agent drafts is only as good as the brief. Include as much of this as applies:
@@ -301,6 +305,8 @@ The plan the agent drafts is only as good as the brief. Include as much of this 
 See **Prerequisites and permissions** above for setup details.
 
 </Accordion>
+
+<div id="h_01M3PDTFQE6GP95M541FYHG15N" />
 
 <Accordion title="Review and refine a run">
 
@@ -318,6 +324,8 @@ See [Agent Hub page](#agent-hub-page) and [Analyze activity with AI Assistant](#
 
 </Accordion>
 
+<div id="h_01M3PDTFQE2XA949N4GPBSHVKY" />
+
 <Accordion title="Manage a Custom Agent">
 
 From the agent card under **My Agents**, you can run the agent now, edit its configuration (name, delivery, schedule), or delete it.
@@ -325,6 +333,8 @@ From the agent card under **My Agents**, you can run the agent now, edit its con
 Deleting an agent also deletes its history, including outputs and reasoning. This action can't be undone.
 
 </Accordion>
+
+<div id="h_01M3PDTFQEENY4TB2QY7M1MPN9" />
 
 <Accordion title="Good to know">
 
@@ -335,9 +345,13 @@ Deleting an agent also deletes its history, including outputs and reasoning. Thi
 
 </Accordion>
 
+<div id="h_01M3PDTFQEDCZ7AJFC1FCTHERZ" />
+
 <Accordion title="Ready-to-use agents">
 
 Ready-to-use agents are ready to deploy as they are: pick one, configure it, and let it run on your data. The table below lists what each agent does at a glance. Expand a section for the full detail before you deploy.
+
+<div id="h_01M3PDTFQET68PRA9CN49CQ8Q7" />
 
 <Accordion title="Spot Creative Opportunities">
 
@@ -350,6 +364,8 @@ Ready-to-use agents are ready to deploy as they are: pick one, configure it, and
 **Cadence:** Configurable via the standard schedule options or on demand.
 
 </Accordion>
+
+<div id="h_01M3PDTFQE2WB2SNWBCS81C2DE" />
 
 <Accordion title="Build Performance Snapshots">
 
@@ -385,6 +401,8 @@ run, and is deleted after 30 days unless you save it.
 
 </Accordion>
 
+<div id="h_01M3PDTFQEB9MKH44X5XX4AGDT" />
+
 <Accordion title="Deep Research Analysis">
 
 **Job:** Runs a weekly investigation into
@@ -410,6 +428,8 @@ Slack or email.
 
 </Accordion>
 
+<div id="h_01M3PDTFQEPFMS38RWXT923VX7" />
+
 <Accordion title="Detect Performance Anomalies">
 
 **Job:** Watches your key KPIs every day
@@ -433,6 +453,8 @@ schedule options or on demand.
 
 </Accordion>
 
+<div id="h_01M3PDTFQEFHYR29GN1XMRM16N" />
+
 <Accordion title="Detect Configuration Issues">
 
 **Job:** Audits your measurement setup and
@@ -454,6 +476,8 @@ Delivered to Slack or email.
 schedule options or on demand.
 
 </Accordion>
+
+<div id="h_01M3PDTFQEP6E7D4TF5G4PX1KV" />
 
 <Accordion title="Monitor App Releases">
 
@@ -479,6 +503,8 @@ schedule options or on demand.
 
 </Accordion>
 
+<div id="h_01M3PDTFQEEKJQTRKEC9GK4TE6" />
+
 <Accordion title="Optimize Anti-Fraud Strategy (Protect360)">
 
 **Job:** Looks for early signs of fraud
@@ -496,6 +522,8 @@ inside the Protect360 dashboard.
 **Cadence:** Weekly, on Mondays, or on demand.
 
 </Accordion>
+
+<div id="h_01M3PDTFQEP2RQW39AD8127J19" />
 
 <Accordion title="Web health check">
 
@@ -579,3 +607,5 @@ If you completed the email notification prerequisites but still don't receive Ag
 No. AppsFlyer doesn't use your data to train any AI models. AI can produce inaccurate or incomplete results, so review outputs before acting on them.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01KA62R2NX6YEFMVG0SN0Y7NQ9=about-agent-hub h_01KQF6P3ED1KB47THJP8J3KAE5=agent-hub-page h_01KQF8YAEDQW52YMK3W4FE2KE1=prerequisites-and-permissions h_01KQF8H9A6FPB3VVBWAAXM257W=slack-optional h_01KQF8HEEMRBFK1K54VH2YDPSC=email-optional h_01KQF8T91KTZ01YKJD8JT6G0ZJ=set-up-an-agent h_01KQF6P3EJMJDMF0BWWXQA091K=view-activity-output h_01KQF6P3EMCX0HQKPVQ89S9VGF=analyze-activity-with-ai-assistant h_01KQF6P3EPWHV7J742F3S4Q0GY=supported-and-unsupported-questions h_01KQF7NTQYDGA17KCCMTNYY72H=notes h_01M3PDTFQDAEVRHJYK4ZJXQ3DH=agent-types h_01M3PDTFQEJA8GAE579P1AZG0E=create-a-custom-agent h_01M3PDTFQECPBKDEXMQMPZJTCS=step-1-define-the-agent h_01M3PDTFQEF9QCN15FKMRST3GW=step-2-review-the-agent-plan h_01M3PDTFQE7FN9GPTJ5GEKSNVG=step-3-configure-and-deploy h_01M3PDTFQEZJGPZ0AY4ZWRDR8D=note h_01M3PDTFQENS64JZYT2Y56QMXQ=note-1 h_01M3VQQHDMVHDFDQYJEP24MW0C=faq" />

@@ -38,6 +38,8 @@ To configure your campaigns with Unity Ads, follow the steps below.
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partners
@@ -112,6 +114,8 @@ Map AppsFlyer events with the partner via postbacks. If postback sending is enab
 > * **Event name:** af\_ad\_revenue
 > * **Mapped to:** ad\_revenue
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -124,6 +128,8 @@ Generate and save attribution links and send them to the partner for attributing
 * When the target audience of an Android app includes children, Unity sends zeroed-out advertising IDs.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -144,6 +150,8 @@ Cost on the attribution link isn't supported. AppsFlyer gets cost details by API
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 This section is relevant if you are acting as a publisher, displaying ads of the partner to your users. As such, you would certainly like to measure the engagement of your users acquired from different sources, to find the most profitable sources for you.
@@ -154,6 +162,8 @@ This section is relevant if you are acting as a publisher, displaying ads of the
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant Unity Ads to perform certain actions. Note that even if attribution is disabled for Unity Ads, the permissions tab is active and you can grant Unity Ads permissions.  
@@ -162,3 +172,5 @@ Learn more about [the permissions you can grant](/docs/set-up-an-integrated-part
 </Accordion>
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HAPVZ510GTJRY1NXE0T3SMR6=setting-up-unity-ads h_01HAPVZ510KPB0HQS9X6R4BCWT=integration-tab h_01HAPVZ510BGQ4KZ3S6ZP0QRE8=activate-partners h_01HAPVZ510EZ3HKJQVPMKHV5FH=general-settings h_01HAPVZ511MRQXKPC78HR61X9P=default-postbacks h_01HAPVZ511CCXS93Y714STGQ67=note inapp-events-settings=in-app-events-settings h_01HAPVZ511CJ6JP49HYG9T6RPF=in-app-events-settings to-configure-inapp-event-postbacks=to-configure-in-app-event-postbacks h_01HAPVZ511RMEVNASSTJNXKCJG=to-configure-in-app-event-postbacks h_01HAPVZ511AV30DEKMZ0YB5ZBD=important h_01HAPVZ511PC45Q5FEXQMZ4MFC=note-1 h_01HAPVZ5110QVYGGCGQDHRJEQM=attribution-link-tab h_01HAPVZ511DSKFAKKNWTKV9522=cost-tab h_01HAPVZ5111WPRRMPF6GZJTRJS=ad-revenue-tab h_01HAPVZ511RBNY3HHSHJHJDPWG=permissions-tab" />

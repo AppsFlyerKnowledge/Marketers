@@ -26,10 +26,10 @@ x-zendesk:
 
 Connections determine how DCP ingests your data and exports your audiences. After [setting up your cloud services](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services), connect them to DCP using the **Manage connections** modal. The following connection types are available:
 
-* [**Source connections**](#h_01KXX80P913HRREW60M6S316PP): for ingesting your first-party data into DCP from cloud storage or a data warehouse.
-* [**Cloud storage connections**](#h_01KXX80P91F8TG9FR1XQ7QVNCY): for exporting your audiences to your Amazon S3 or Google Cloud Storage (GCS) buckets.
-* [**Media partner connections**](#h_01KXX80P91BMB45ETZQSKWJWZB): for sending your audiences to advertising platforms for activation.
-* [**Data & Identity connections**](#h_01KXX80P91PS35EG5P5YJB9EHC): for unifying fragmented user data to improve match rates and expand partner-side audiences.
+* [**Source connections**](#create-source-connections): for ingesting your first-party data into DCP from cloud storage or a data warehouse.
+* [**Cloud storage connections**](#create-cloud-storage-connections): for exporting your audiences to your Amazon S3 or Google Cloud Storage (GCS) buckets.
+* [**Media partner connections**](#create-media-partner-connections): for sending your audiences to advertising platforms for activation.
+* [**Data & Identity connections**](#create-data-identity-connections): for unifying fragmented user data to improve match rates and expand partner-side audiences.
 
 DCP supports different cloud services for different connection directions. Use the table below to see which services you can use for each connection type:
 
@@ -43,7 +43,7 @@ DCP supports different cloud services for different connection directions. Use t
 
 For Amazon S3 and Google Cloud Storage, a single connection serves as both a source (inbound) and a cloud storage export (outbound) destination. Creating a source connection to S3 or GCS automatically creates a matching cloud storage (export) connection, and vice versa.
 
-<div id="h_01KXX80P913HRREW60M6S316PP" />
+<div id="create-source-connections" />
 
 <Accordion title="Create source connections">
 
@@ -85,6 +85,8 @@ Source connections are for connecting your data sources securely to DCP. From th
 
 Local file system connections let you upload data files directly from your computer into DCP. This option is typically used for testing only and isn't recommended for ongoing or large-scale data ingestion.
 
+<div id="set-up-a-local-file-connection" />
+
 <Accordion title="Set up a local file connection">
 
 A local file connection is used to test the platform using a sample file. It lets you get familiar with DCP functionality before starting to share data. Keep in mind that it isn't recommended for sharing data, has a data retention limit of 14 days, and doesn't support automation processes.
@@ -95,7 +97,7 @@ A local file connection can be [set up during source creation](/docs/data-collab
 
 </Accordion>
 
-<div id="h_01KXX80P91F8TG9FR1XQ7QVNCY" />
+<div id="create-cloud-storage-connections" />
 
 <Accordion title="Create cloud storage connections">
 
@@ -116,6 +118,8 @@ Cloud storage connections let you automatically export your DCP audiences to you
 8. Click **Save**. The new connection appears under **Your cloud storage connections** in the **Cloud storage** tab.
 
 You can also create a cloud storage connection directly from the audience builder. See [Build and activate audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences) for instructions.
+
+<div id="understand-export-path" />
 
 <Accordion title="Understand the export path">
 
@@ -169,7 +173,7 @@ c1d3e5f7a9b1c3d5e7f9a1b3c5d7e9f1a3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d3,hashed_phone_nu
 
 </Accordion>
 
-<div id="h_01KXX80P91BMB45ETZQSKWJWZB" />
+<div id="create-media-partner-connections" />
 
 <Accordion title="Create media partner connections">
 
@@ -190,8 +194,6 @@ You can also create a media partner connection directly from the audience builde
 
 </Accordion>
 
-<div id="h_01KXX80P91PS35EG5P5YJB9EHC" />
-
 <div id="create-data-identity-connections" />
 
 <Accordion title="Create Data & Identity connections">
@@ -211,3 +213,5 @@ Data & Identity connections unify fragmented user data to improve match rates wi
 > * [Data Collaboration Platform (DCP) guide](/docs/data-collaboration-platform-dcp-guide)
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01KXX80P91T92MH8KEGHVG3QP1=about-dcp-connections h_01KXX80P913HRREW60M6S316PP=create-source-connections h_01KY4HCGBBCD5FZD9RYNNVDYRC=note source-cloud-service-connections=cloud-service-connections-for-source-data h_01KXX80P914VFMH1T6FQF9KC31=important h_01KXX80P91EFCGH3MYV729TGTH=local-file-connection h_01KXX80P91HG17YTWE15ZWTBZ8=set-up-a-local-file-connection h_01KXX80P91F8TG9FR1XQ7QVNCY=create-cloud-storage-connections h_01KYEP2MX3KQ3BAP7VRSGYTFBB=understand-export-path h_01KYEP2MX3SHFCECTSTHV9RMS4=note-1 h_01KXX80P91BMB45ETZQSKWJWZB=create-media-partner-connections h_01KXX80P91PS35EG5P5YJB9EHC=create-data-identity-connections h_01KXX80P92BXD3B7ZVT1FC5HCF=id5 h_01KXX80P92WMPPRGD7321TBS7Y=see-also" />

@@ -53,6 +53,8 @@ The general configuration window includes the following tabs: Integration, Attri
 
 Before setting up the integration, make sure to implement the required "commission group" parameters in the SDK, as specified in [Awin documentation](https://help.awin.com/docs/appsflyer).
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The **Integration** tab includes a number of sections, as described below.
@@ -119,11 +121,15 @@ Configure mapping of in-app events with Awin events, sent via postbacks:
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide). [Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters). **To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -131,11 +137,15 @@ Cost data isn't available for Awin.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue isn't available for Awin.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -160,3 +170,5 @@ To deep link with OneLink via AWIN:
 > 📘 **Note**
 >
 > For iOS apps, use the `af_force_deeplink=true` parameter on the OneLink URL to activate the deep link [URI scheme](/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users).
+
+<div data-zendesk-anchors="01H88VAJH3B5ESK12D3ATMMVZ8=activate-partner setting-up-amazon-dsp-integration=setting-up-awin 01H88VAJH3VENKYVRQY5RXN63P=setting-up-awin 01H88VAJH3BYZSXQGGZZJQ9N0C=note h_01HFPEEW4FXS9AFQTTEF2ZBDZW=prerequisite 01H88VAJH3VZ4GPVE7XXMKTZ2P=integration-tab activate-partner::b746d215=activate-partner-1 01H88VAJH34GP7FK1KTJGRDPM7=activate-partner-1 01H88VAJH3G5FAR7RRNDEPNGME=advanced-privacy 01H88VAJH3F2FJK5YP3M2V7RWD=general-settings h_01K4VVB00RYB0XRANWQ29M6P36=note-1 01H88VAJH3WE9Z0971WMBRBJRS=default-postbacks inapp-event-settings=in-app-event-settings h_01HA77JYAR06HA5FZGSRQJATHF=in-app-event-settings inapp-event-postbacks=in-app-event-postbacks 01H88VAJH3AS37MVF75GANWX4B=in-app-event-postbacks 01H88VAJH36MYZ9W1YPWA92Z1Z=note-2 01H88VAJH31GZ4KAY280ZRB8MA=attribution-link-tab 01H88VAJH3RM95V449B6DF8B4D=cost-tab 01H88VAJH3A2Q0CZXQQZMW6YRC=ad-revenue-tab 01H88VAJH30TCC574W2DH7R2A2=permissions-tab 01H88VAJH3XYP81GTFBWDBXECP=note-3 h_01HA77Q9RWZ3FRE5KEN854ZZ78=deep-linking-and-deferred-deep-linking-using-onelink h_01HA78QWQVXEWHPEQE6XWBB64M=note-4" />

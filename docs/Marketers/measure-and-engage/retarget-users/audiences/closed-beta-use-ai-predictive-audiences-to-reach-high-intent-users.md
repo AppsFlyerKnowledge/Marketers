@@ -38,6 +38,8 @@ To get started using Predictive Audiences, follow the steps below:
 
 * **Prerequisite:** An AppsFlyer [Audiences](/docs/audiences-guide) subscription. Predictive Audiences is currently in beta and is enabled per account. To gain access, contact your CSM.
 
+<div id="step-1-define-the-goal" />
+
 <Accordion title="Step 1: Define the goal">
 
 In this step, you define what you want Predictive Audiences to predict by selecting the app, target event, and prediction goal for the audience.
@@ -55,6 +57,8 @@ In this step, you define what you want Predictive Audiences to predict by select
 7. Click **Continue**.
 
 </Accordion>
+
+<div id="step-2-set-the-probability-range" />
 
 <Accordion title="Step 2: Set the probability range">
 
@@ -79,6 +83,8 @@ You can select a suggested preset or drag the chart markers to customize the ran
 Compare Audiences is an optional feature that lets you compare your predictive audience with one or more existing audiences. It allows you to compare performance across key indicators (KPIs), such as return on ad spend (ROAS) and conversion rate. You can select any audience to compare; however, performance data is currently available only for campaigns connected to Facebook, TikTok, Google, or Snap.
 
 </Accordion>
+
+<div id="step-3-connect-to-partners" />
 
 <Accordion title="Step 3: Connect to partners">
 
@@ -108,3 +114,5 @@ After creation, your new predictive audience will appear in the **Audiences** ta
 | Eligibility-based selection & data limitations | Only eligible apps and events with a minimum amount of data will appear in selection drop-downs (e.g., 1000 active users in the last 30 days). |
 | Data protection | Your audience data may be processed to support AI-powered Audiences capabilities. Your account data is never shared and is used only to improve internal models and predictions. |
 | Daily refresh | The audience is refreshed and uploaded to partners daily. |
+
+<div data-zendesk-anchors="h_01KP871KNVB69BFATSZYVK9SMM=about-predictive-audiences h_01KP871KNVC3W8WNA9XVCFYCMA=create-a-predictive-audience h_01KP871KNVHD2VK8BQMGQ42QX0=prerequisites h_01KP8835A2Z5QRHGJKR7BH6H1W=step-1-define-the-goal h_01KP8835A2746F64JRHCF9CVF2=step-2-set-the-probability-range h_01KPJJH00TMZ2NQKPDN07RW1B1=compare-audiences-optional h_01KP8835A203NTEVCS3VPQDB0D=step-3-connect-to-partners h_01KP871KNVWVAQMXYXNT6Q0D0P=traits-and-limitations" />

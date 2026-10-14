@@ -38,22 +38,24 @@ To use Master API, you define the data that you want to view (similar to the imp
 2. Give your developer the API token to be used in the authentication header.
 3. Give your developers the parameters to input when they make the API call, as described in the sections that follow. The parameters determine what the report focuses on, how it's organized, and provide a reporting timeframe.
 4. Tell your developer to follow their [Master API instructions](https://dev.appsflyer.com/hc/reference/overview-9) in the developer hub.
-5. 
-<Accordion title="API parameters">
+5.
+   <div id="api-parameters" />
 
-| Parameter | Value | Mandatory |
-| --- | --- | --- |
-| app\_id | <ul><li>App identifier, as found in AppsFlyer.</li><li>Insert the app ID exactly as found in AppsFlyer</li><li>Prefix iOS apps with **id**</li><li>Use **all app IDs** to query for all your apps</li></ul> | Yes |
-| from | Lower-bound of the LTV attribution date range.<ul><li>Format: String yyyy-mm-dd</li><li>Example: `from: 2020-01-02`</li></ul> | Yes |
-| to | Upper-bound of the LTV attribution date range<ul><li>Number of the days in the range: 1-31 days</li><li>For a single day: `from` and `to` values are identical.</li><li>Format: yyyy-mm-dd</li><li>Example: `from: 2021-01-01, to: 2021-01-31` is 31 days.</li></ul> | Yes |
-| [Groupings](/docs/master-api-user-acquisition-metrics-via-api#groupings) | Group by parameters, separated by a comma. See the Groupings table for the list available <br /><br />Example: `groupings=pid,geo` | Yes |
-| [KPIs](/docs/master-api-user-acquisition-metrics-via-api#kpis) | List of KPIs to include, each separated by a comma. See the KPI table that follows for a list of KPIs.<br /><br />Example: `kpis=installs,clicks, impressions,sessions,retention_day_7` | Yes |
-| [Filters](/docs/master-api-user-acquisition-metrics-via-api#filters-optional) | Data can be filtered using one or more filter options. | No |
-| [Currency](/docs/master-api-user-acquisition-metrics-via-api#localization) | To return data using the app-specific currency set currency=preferred | No |
-| [Timezone](/docs/master-api-user-acquisition-metrics-via-api#localization) | To return data using the app-specific timezone set timezone=preferred.  See [localization rules](/docs/master-api-user-acquisition-metrics-via-api#localization) | No |
-| Format | By default, the response data is received in CSV file format. If you prefer to get the data in JSON format, select `format=json`. | No |
+   <Accordion title="API parameters">
 
-</Accordion>
+   | Parameter | Value | Mandatory |
+   | --- | --- | --- |
+   | app\_id | * App identifier, as found in AppsFlyer.<br />* Insert the app ID exactly as found in AppsFlyer<br />* Prefix iOS apps with **id**<br />* Use **all app IDs** to query for all your apps | Yes |
+   | from | Lower-bound of the LTV attribution date range.<br /><br />* Format: String yyyy-mm-dd<br />* Example: `from: 2020-01-02` | Yes |
+   | to | Upper-bound of the LTV attribution date range<br /><br />* Number of the days in the range: 1-31 days<br />* For a single day: `from` and `to` values are identical.<br />* Format: yyyy-mm-dd<br />* Example: `from: 2021-01-01, to: 2021-01-31` is 31 days. | Yes |
+   | [Groupings](/docs/master-api-user-acquisition-metrics-via-api#groupings) | Group by parameters, separated by a comma. See the Groupings table for the list available <br /><br />Example: `groupings=pid,geo` | Yes |
+   | [KPIs](/docs/master-api-user-acquisition-metrics-via-api#kpis) | List of KPIs to include, each separated by a comma. See the KPI table that follows for a list of KPIs.<br /><br />Example: `kpis=installs,clicks, impressions,sessions,retention_day_7` | Yes |
+   | [Filters](/docs/master-api-user-acquisition-metrics-via-api#filters-optional) | Data can be filtered using one or more filter options. | No |
+   | [Currency](/docs/master-api-user-acquisition-metrics-via-api#localization) | To return data using the app-specific currency set currency=preferred | No |
+   | [Timezone](/docs/master-api-user-acquisition-metrics-via-api#localization) | To return data using the app-specific timezone set timezone=preferred.  See [localization rules](/docs/master-api-user-acquisition-metrics-via-api#localization) | No |
+   | Format | By default, the response data is received in CSV file format. If you prefer to get the data in JSON format, select `format=json`. | No |
+
+   </Accordion>
 
    <div id="groupings" />
 
@@ -70,6 +72,8 @@ To use Master API, you define the data that you want to view (similar to the imp
    <Accordion title="KPIs">
 
    KPIs are the metrics used for gaining insights into the behavior of your app. The KPIs are grouped by type in the sections that follow.
+
+   <div id="ltv" />
 
    <Accordion title="LTV">
 
@@ -97,6 +101,8 @@ To use Master API, you define the data that you want to view (similar to the imp
 
    </Accordion>
 
+   <div id="retention" />
+
    <Accordion title="Retention">
 
    Retention is a measure of how many existing users are active in your app.
@@ -112,6 +118,8 @@ To use Master API, you define the data that you want to view (similar to the imp
    | retention\_rate\_day\_[x] | Number of retained users at day X out of installing users |
 
    </Accordion>
+
+   <div id="activity" />
 
    <Accordion title="Activity">
 
@@ -130,6 +138,8 @@ To use Master API, you define the data that you want to view (similar to the imp
    | activity\_average\_unique\_users\_[event\_name] | Average unique users performing a given event within the selected time frame |
 
    </Accordion>
+
+   <div id="cohort" />
 
    <Accordion title="Cohort">
 
@@ -168,6 +178,8 @@ To use Master API, you define the data that you want to view (similar to the imp
    | cohort\_[x]\_days\_total\_event\_[eventname]\_per\_user | Replaces specifying KPIs events to Cohort\_day\_x\_total\_events\_per\_user.<br /><br />For example: cohort\_3\_days\_total\_events\_per\_user on the URL produces 3 report columns:  <br />Cohort\_day\_1\_total\_events\_per\_user+ Cohort\_day\_2\_total\_events\_per\_user+Cohort\_day\_3\_total\_events\_per\_user |
 
    </Accordion>
+
+   <div id="protect360" />
 
    <Accordion title="Protect360">
 
@@ -323,3 +335,5 @@ To use Master API, you define the data that you want to view (similar to the imp
 | Retargeting | <ul><li>Not supported.</li><li>Exception: Activity KPIs for traffic from after February 1, 2025 include unified data (UA and retargeting together).</li></ul> |
 
 </Accordion>
+
+<div data-zendesk-anchors="master-api%E2%80%94user-acquisition-metrics-via-api=master-apiuser-acquisition-metrics-via-api h_01JJVMXKACJ2V4YZFGYXVB8FQF=master-apiuser-acquisition-metrics-via-api h_01JJVMXKACZDXPQG4271HFYWCE=api-parameters h_01JJVMXKAEXMKQQRT0RT6N8P74=groupings h_01JJVMXKAEHM0871GBQHZENRXA=kpis h_01JK2ZEH32Y92Y553540XDYZFA=ltv h_01JK2ZEH32A08EEDZEWFSX3ZFS=retention h_01JK2ZEH3219694E4PFPZ8ZXZF=activity h_01JK2ZEH32NCWZWKTDS0J6DFS2=cohort h_01JK2ZEH32Q7B6RCQYXNHM8KGK=protect360 h_01JJVMXKAFW1TEE35GK9B20TRP=calculated-kpis h_01JJVMXKAFZDPNXKAZCBQ27DBD=example h_01JJVMXKAFWA4D47MH7VSXKN14=filters-optional h_01JJVMXKAFSBXJ9EJJ16BF8H7Q=localization h_01JJVMXKAFFW2G3N7188DHYCB8=additional-information h_01JJVMXKAF25YX092NE9DV9862=limitations" />

@@ -122,6 +122,8 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 
 The Batch configuration only requires the **Integration** tab. The other four tabs are inactive as they are not required in this integration.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate Partner
@@ -147,11 +149,15 @@ Click **Save** in the bottom right-hand corner of the screen.
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution Links are not available for Batch.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -159,11 +165,15 @@ Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -178,3 +188,5 @@ Once AppsFlyer starts sending install postbacks to Batch, you can view the data 
 You can see the data in the **Userbase** tab of your Batch dashboard.
 
 ![Userbase.png](https://files.readme.io/b0277dc43b81630d5b260273b208a5ab9b62e13c7caca08e8b631d73c8de3b2a-small-360001694717.png)
+
+<div data-zendesk-anchors="h_01H9FK389GXG3CDFPNM5ASKJ3N=integrating-batch-and-appsflyer h_01H9FK389MPKFN8J74BX1E3MGG=setting-customer-user-id h_01H9FK389MK1HM1460VAT6X82Y=batch h_01H9FK389MPGNEX8B3923KYDB3=appsflyer batch::28a946d0=batch-1 h_01H9FK389MC4K8PNVPAGC00TBW=batch-1 appsflyer::3f0aa95b=appsflyer-1 h_01H9FK389M7V83A66M6T9EV8QT=appsflyer-1 batch::24c5c955=batch-2 h_01H9FK389MRV4ARHMHXPAXVXQ9=batch-2 appsflyer::deb78dd1=appsflyer-2 h_01H9FK389MT6PD8FW21SYHBPCV=appsflyer-2 setting-up-batch-in-appsflyer-dashboard=setting-up-batch h_01H9FK389MCSR5YDSF4RKFDSDZ=setting-up-batch h_01H9FK389MG9459909JZBDN77E=integration-tab h_01H9FK389M19AVM63DEX5JTTQK=activate-partner h_01H9FK389MN82EKHVGMM9Z6H58=general-settings h_01H9FK389MXA3DS403VXRRK5NX=default-postbacks h_01H9FK389MERP4XBF19T28E6DN=attribution-link-tab h_01H9FK389M3E05PVMNA83TBFJZ=cost-tab h_01H9FK389M06FEQ4RZJ04HTH33=ad-revenue-tab h_01H9FK389MB31S8BR8WX178GHX=permissions-tab h_01H9FK389M8BNRFECN0WG23BCD=viewing-appsflyer-data-in-the-batch-dashboard" />

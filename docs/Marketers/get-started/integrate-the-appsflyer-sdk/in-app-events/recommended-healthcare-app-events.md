@@ -136,6 +136,8 @@ When the user lands on the thank you page after a successful purchase
 
 The following section provides the event structure including the custom event name and sample event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
+<div id="topup-success-top_up_success" />
+
 <Accordion title="Top-up success (top_up_success)">
 
 **Purpose**
@@ -155,3 +157,5 @@ When the user completes the top-up
 | payment\_method\_type | Payment method used | credit card, local payment |
 
 </Accordion>
+
+<div data-zendesk-anchors="healthcare=-healthcare h_01HGTAFRKKJ22SHB4JHMTGW2TV=-healthcare h_01HGTAFRKKPWC1PQTKF227WWBD=important h_01HGTAFRKKRB8EY8KJ9NXM4Z2T=recommended-structures-for-predefined-events h_01HGTAFRKK35Q5W5ADQC2KYHR9=login-af_login h_01HGTAFRKK8E52FRVWQXP4Y3VV=complete-registration-af_complete_registration h_01HGTAFRKN6NJPDB053YYYH202=add-to-cart-af_add_to_cart h_01HGTAFRKNJVFECSFGSWG8B7GN=purchase-af_purchase h_01HGTAFRKN29RJRW2V2WCH2AXT=recommended-structures-for-custom-events h_01HGTAFRKNDWHDDR9KDRKJ4H8E=topup-success-top_up_success" />

@@ -82,6 +82,8 @@ Starting June 17, 2025, Meta has re-enabled **Advanced Mobile Measurement (AMM)*
 
 </Accordion>
 
+<div id="set-the-meta-ads-active-integration" />
+
 <Accordion title="Set the Meta Ads active integration">
 
 1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.
@@ -100,6 +102,8 @@ Starting June 17, 2025, Meta has re-enabled **Advanced Mobile Measurement (AMM)*
 8. Click **Save Integration**.
 
 </Accordion>
+
+<div id="optional--configure-recommended-settings" />
 
 <Accordion title="[Optional] Configure recommended settings">
 
@@ -278,6 +282,8 @@ Learn more about enriching your data with[cost, clicks, and impressions data](/d
 
 </Accordion>
 
+<div id="retargeting-attribution" />
+
 <Accordion title="Retargeting attribution">
 
 AppsFlyer retargeting attribution for Meta ads lets advertisers attribute an existing user's engagement with a Facebook ad, and measure the quality of the user, post engagement, using the AppsFlyer reports. It should be used only if you are actively running campaigns targeted at your own Facebook users.
@@ -333,6 +339,8 @@ When **Advanced Matching data sharing** is turned on, Advanced Matching fields, 
 
 </Accordion>
 
+<div id="use-deep-links-in-meta-ads-campaigns" />
+
 <Accordion title="Use deep links in Meta Ads campaigns">
 
 When running Meta Ads campaigns, you can use deep links to send users directly to a specific in-app page or experience. The sections below describe how to set up ,AppsFlyer deep linking in Meta Ads
@@ -362,6 +370,8 @@ The table below describes which Meta Ads campaign objectives support direct deep
 
 </Accordion>
 
+<div id="comply-with-california-consumer-privacy-act-ccpa" />
+
 <Accordion title="Comply with California Consumer Privacy Act (CCPA)">
 
 Complying with CCPA privacy regulations limits the data coming from Meta ads users based in California, USA.
@@ -371,6 +381,8 @@ Complying with CCPA privacy regulations limits the data coming from Meta ads use
 Learn more about [data protection laws](/docs/send-opendsr-api-requests).
 
 </Accordion>
+
+<div id="ad-revenue-recording" />
 
 <Accordion title="Ad revenue recording">
 
@@ -394,6 +406,8 @@ If your app uses Meta Audience Network Ad Revenue for ad monetization, you can r
 
 </Accordion>
 
+<div id="permissions" />
+
 <Accordion title="Permissions">
 
 Enable Meta ads to perform various actions and to access your data according to the available permissions.
@@ -412,6 +426,8 @@ If you have completed the basic integration and still not seeing results from Me
 
 If so, please consult the main reasons below for solving this issue:
 
+<div id="no-idfa-collection" />
+
 <Accordion title="No IDFA collection">
 
 As stated in the SDK Integration Guide - iOS, you must add the AdSupport.framework to your project for IDFA collection to take place. Check the Installation Raw Data report to see if the IDFA column is indeed empty or not. It is recommended to enable your app to collect IDFA in the case of iOS apps and GAID in the case of Android apps.  
@@ -420,6 +436,8 @@ Starting iOS 14.5 you'll have to display the Apple ATT prompt and get user conse
 **Note:** SKAdNetwork attribution isn't impacted by the availability of IDFA. However, make sure that you enable the iOS 14 Campaign toggle on Meta ads while setting up iOS 14 campaigns.
 
 </Accordion>
+
+<div id="wrong-facebook-app-id" />
 
 <Accordion title="Wrong Facebook App ID">
 
@@ -430,6 +448,8 @@ Note - you can also use [Facebook's Graph API](https://developers.facebook.com/t
 
 </Accordion>
 
+<div id="app-status-on-meta-ads" />
+
 <Accordion title="App status on Meta ads">
 
 The app must be defined on Meta ads as **Live** rather than **In development** for attribution to work.
@@ -438,9 +458,13 @@ The app must be defined on Meta ads as **Live** rather than **In development** f
 
 </Accordion>
 
+<div id="wrong-type-of-meta-ads-campaign" />
+
 <Accordion title="Wrong type of Meta ads campaign">
 
 Make sure the Meta ads campaign is for **Mobile app install ads** or **Mobile App Engagement**. For other campaign objectives, to measure mobile installs, the advertiser must [check the **App Event recording**option](/docs/attributing-app-installs-to-non-mobile-ads-from-meta-ads) when defining the Meta ads campaign.
+
+<div id="aem-attribution-is-not-working" />
 
 <Accordion title="AEM attribution is not working">
 
@@ -449,6 +473,8 @@ If the **Advanced Data Sharing** toggle is turned on and you’re not receiving 
 </Accordion>
 
 </Accordion>
+
+<div id="meta-ads-app-install" />
 
 <Accordion title="Meta ads app install">
 
@@ -472,3 +498,5 @@ AppsFlyer confirms that our MMP integration with Meta ads always implements the 
 >
 > * For iOS 14-related considerations, see [Meta ads SKAN interoperation](/docs/skadnetwork-skan-interoperation-with-meta-ads)
 > * [Meta campaign management partners configuration](/docs/configuring-meta-campaign-management-partners) ([Bidalgo](/docs/bidalgo-meta-campaign-management-partner-configuration) / [Kenshoo](/docs/kenshoo-meta-campaign-management-partner-configuration) / [Adquant](/docs/adquant-meta-campaign-management-partner-configuration) / [Webpals](/docs/webpals-mobile-meta-campaign-management-partner-configuration))
+
+<div data-zendesk-anchors="facebook-ads-setup-guide=meta-ads-setup-guide 01H7YJVNMSZ4WG4HWBZF648HZN=meta-ads-setup-guide basic-facebook-attribution-setup=basic-meta-ads-attribution-setup 01H7YJVNMTFW076FAJZGJWT4R9=basic-meta-ads-attribution-setup h_01JXYJW7AFB53PY7WHGM05HDMH=create-and-retreive-facebook-app-id h_01JKX03GC8ZSMGCSX84381QW0A=enable-meta-ads-device-level-data h_01JYPKG2RH3R08604V7B3NC5WQ=important h_01JXYHEFW19DJXXXRNN186E07B=set-the-meta-ads-active-integration %5Boptional%5D-configure-recommended-settings=optional--configure-recommended-settings h_01JXYHEFW15E6K39JY2VBCN79E=optional--configure-recommended-settings advanced-facebook-attribution-setup=advanced-meta-ads-attribution-setup 01H7YJVNMTHF800PD5CEWPFS49=advanced-meta-ads-attribution-setup h_01JKX03GC8B4VKC6KJT4CZ9VT8=getting-userlevel-data-for-android-installs h_01JKX2BE00WYHMJ3RX1FK8DQV5=google-play-install-referrer-api h_01JKX2BNRDHHNJCN257H3QBZ65=meta-install-referrer h_01JKX03GC8JRZSD13TVDDM1MWE=note h_01JKX2CF8RE4T5R3V83FS1PBQR=campaign-attribution-fields-available-via-the-referrer h_01JKX03GC9BG4GFDKR7JHG31BQ=note-1 meta-install-referrer%E2%80%94faq=meta-install-referrerfaq h_01JKX2DSY85X6570AHYKHM34KS=meta-install-referrerfaq h_01JKX2E4A44QHKADG4S8ZM9KC5=encrypted-data-from-google-play-referrer-api-or-meta-install-referrer 01H7YJVNMTBN9RJ6Q7TJ1AJ0XX=cost-clicks-and-impressions 01H7YJVNMTGRBQG54DVMJDHDKS=notes 01H7YJVNMTRQAYG7TY29AX4MZS=cost-data-sync-status 01H7YJVNMTNRREKWY96CK9JJKV=inapp-event-mapping 01H7YJVNMT2DRVR26F8CDDTWHP=note-2 01H7YJVNMV5AZ9G2KCKEFF1CSV=retargeting-attribution h_01KBZ2CAGX18ZZPXQGMPTEPSCP=whatsapp-retargeting-campaign-attribution 01H7YJVNMVSA4Y33MW6Q8Y777Y=advanced_data_sharing 01JDH9Y65409Y5E162NWJA25E3=note-3 h_01KPK96J1G0BY3PPEBN9RB005V=use-deep-links-in-meta-ads-campaigns h_01KPK96J1GZE9ZHQB5NHFCVAG6=see-also h_01JKTYRMD70ZGN31FSQ7BXF1HB=comply-with-california-consumer-privacy-act-ccpa 01H7YJVNMVWRG10SZY1B33H5EA=ad-revenue-recording 01H7YJVNMV1TTHKMMX4TFB2BF3=record-meta-audience-network-ad-revenue 01H7YJVNMVMW5BXWEP8BPX4D7E=permissions 01H7YJVNMVGFYMHE5FACTD9NS0=aggregate-event-measurement-aem-for-ios 01H7YJVNMVCAQ6ETKBGCAM31B9=meta-ads-integration-troubleshooting 01H7YJVNMV3YRF59RX87TJCT8D=no-idfa-collection 01H7YJVNMVHCYVWKDW5WWPX1A5=wrong-facebook-app-id 01H7YJVNMVE9QJAXQBD4P14C88=app-status-on-meta-ads 01H7YJVNMVBRVTT9HH7KM8P33B=wrong-type-of-meta-ads-campaign h_01JKTYRMD7YPGJRZXR4Y66BAHG=aem-attribution-is-not-working 01H7YJVNMV4G3VP40E6VFD7SJD=meta-ads-app-install ios-14-updates-relating-to-facebook=ios-14-updates-relating-to-meta-ads 01H7YJVNMVQP5PR6XDHTCPXVDC=ios-14-updates-relating-to-meta-ads h_01HDP0Y4CZBZEK5VZ6FG3T31JB=see-also-1" />

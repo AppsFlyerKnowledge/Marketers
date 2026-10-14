@@ -165,12 +165,13 @@ Congratulations! You're now measuring Google Ads mobile campaigns with AppsFlyer
 
 1. Go to the **Integration** tab and scroll down to the **In-app event postbacks** section.
 
-   <br /><br />**Note**<br />#### Note
+   > 📘 **Note**
+   >
+   > When enabling the Google Ads in-app events mapping for an app **for the first time:**
+   >
+   > * The **af\_app\_opened** event is automatically defined and mapped to **session\_start** (if not, add it manually).
+   > * Under **for users from**, you must select **All media sources, including organic** for each event to enable Google Ads to receive these events. After the integration was set successfully, you are able to change this selection for any event.
 
-   When enabling the Google Ads in-app events mapping for an app **for the first time:**
-
-   * The **af\_app\_opened** event is automatically defined and mapped to **session\_start** (if not, add it manually).
-   * Under **for users from**, you must select **All media sources, including organic** for each event to enable Google Ads to receive these events. After the integration was set successfully, you are able to change this selection for any event.
 2. Turn on **In-app event postbacks**.
 3. Click **Add event** to add an SDK or server-to-server event to the list.
 4. Complete the following parameters:
@@ -255,6 +256,8 @@ When a potential user clicks on a feed, they are redirected to the app page. Aft
 3. In AppsFlyer, Go to **Configuration** > **Active Integrations**. Select **Google Ads (Adwords)**.
 4. In the **Integration** tab, turn on **Deferred deep linking with Google Ads.**
 5. Click **Save integration**.
+
+The Google Ads deferred deeplink value is only returned by Google for deterministic matches, based on device ID, and is not supported for probabilistic (ICM) matches.
 
 ## Google Ads parameter mapping
 
@@ -357,6 +360,8 @@ When advertising with Google Ads without the Firebase SDK implemented, the follo
 | IP masking | Using IP masking may impact ICM performance. Google recommends disabling IP masking, as it can affect Google Ads measurement and performance. See [Apply IP masking to user data](/docs/apply-ip-masking-to-user-data#ip-masking). |
 | IDFV | Google requires sending [IDFV](/docs/appsflyer-knowledge-base-glossary#idfv) (when available) with installs, app opens, and in-app events, to maximize ICM performance. |
 
-**See also:**
+<span id="h_01HDP0SBEE75MAT4A4S9E7Y7FF"></span>**See also:**
 
 * For iOS 14-related considerations, see [Google Ads SKAdNetwork interoperability with AppsFlyer](/docs/get-skan-postback-data-from-google-ads).
+
+<div data-zendesk-anchors="google-icm-attribution-flow-with-advanced-data-sharing=google-ads-attribution-flow-with-advanced-data-sharing h_01K0VKGRK7XXC4GNF6B9X76M4T=google-ads-attribution-flow-with-advanced-data-sharing h_01HACTC1H5MANBCRWYQPNW5CC2=configuring-google-ads-attribution-for-advertisers h_01HACTC1H5R995RXYRFQBFHRF1=important h_01HACTC1H5EFJKV6AXNSTNFZA4=stop h_01HSX7TJC7PQ0ATM1J86Z4HMYJ=important-1 h_01KA6S8V6CKRATXHZQZ4YN7V9R=note h_01HACTC1H58WHJDBN2DRQAZKGB=note-1 h_01HACTC1H5Z3XXS1MGBS4WYJBV=tip h_01HACTC1H5PAY95M4H1A6WTSEF=granting-permissions-to-google-ads-team-members h_01HACTC1H5QE93EAYYVVDQV2WC=enabling-google-ads-attribution-for-agencies h_01HACTC1H5Z8B15RHQ75HVV2RP=running-with-multiple-google-ads-accounts h_01HACTC1H5X567H6A8M3FWCTAN=ios-app-campaigns h_01HACTC1H57HJZNAGDKSQD6MVC=using-deferred-deep-linking-in-app-campaigns h_01HACTC1H6P1A2E160Z6GAGZZS=google-ads-parameter-mapping how-to-populate-the-channel-parameter=populate-the-channel-parameter h_01HACTC1H6TPTDDFSMPQ9YVMDY=populate-the-channel-parameter h_01KEYE1W4VJYXYHY4FP1KN3SP9=note-2 h_01HACTC1H6CEGD2E3HXHWFWBRB=campaign-type-app-campaigns h_01HACTC1H6A028HKVXJ66MCF6M=changes-to-campaign-names-by-google-ads h_01HACTC1H6Q6WCTK4Z9RGV6PA4=engaged-view-parameter-in-raw-data-reports h_01HACTC1H62HC36C08ZBFZ05XS=important-2 h_01M20SN9DCHRQP8TD5Q2Z00CWQ=send-complex-in-app-events-to-google-ads h_01HACTC1H6EFDVN9N89Y17HDFR=optimize-google-ads-campaigns-for-conversions-without-device-id h_01HACTC1H6WZNMVJK479M5KJYF=data-visibility-by-operating-system h_01_advertising-without-firebase-sdk=advertising-without-the-firebase-sdk google-icm-traits-and-limitations=google-probabilistic-attribution-icm-traits-and-limitations h_01K0XMCXSS5MKY90DZWJTNVBBS=google-probabilistic-attribution-icm-traits-and-limitations" />

@@ -47,6 +47,8 @@ The general configuration window includes the following tabs: Integration, Attri
 > * Some settings differ for iOS and Android devices
 > * Learn more about [setting up partner integrations](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The **Integration** tab includes a number of sections, as described below.
@@ -121,17 +123,23 @@ Generate and save attribution links and send them to the partner for attributing
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 [Cost data](/docs/roi360-guide-cost-and-revenue-data) isn't available for Bidease.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 [Ad revenue](/docs/roi360-guide-ad-revenue-attribution) isn't available for Bidease.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -142,3 +150,5 @@ Select which [permissions you're granting](/docs/set-up-an-integrated-partner#pe
 > When the integration is [deactivated](/docs/partner-activation-deactivation) while the Permissions toggle is still turned on, permissions remain granted.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HF4ED4B5QHY92B03426260QY=setting-up-bidease h_01HF4DWFAP55JRXTR8Z65YAR68=note h_01HF4DWFAP4S45241VR1PJ3RFC=integration-tab activate-partner::b746d215=activate-partner h_01HF4DWFAP9BS1G612WS5HNQ6S=activate-partner h_01HF4DWFAQHEJATJG6DRVMKA34=advanced-privacy h_01HF4DWFAQ1Y1AVQ0EV63H5YJ1=transaction-id h_01HF4DWFAQQRR8XH5S7NW2NCB6=install-attribution h_01HF4DWFAQG4YEEH3HMD61GEWE=default-postbacks inapp-event-postbacks=in-app-event-postbacks h_01HF4DWFAQQCM4TK3JJNMSM6RD=in-app-event-postbacks h_01HF4DWFAQQ3C7GBA4Q4SA6G0Y=note-1 h_01HF4DWFAQ9D9BV6PG4BEYX788=attribution-link-tab h_01HF4DWFAQT2PD4863N6EB7HHH=cost-tab h_01HF4DWFAQXMNDHWT0Y4C0M6EN=ad-revenue-tab h_01HF4DWFAQJWNFMFDEZ8XT0DM5=permissions-tab h_01HF4DWFAQJ9HRMD1FE717F1WK=note-2" />

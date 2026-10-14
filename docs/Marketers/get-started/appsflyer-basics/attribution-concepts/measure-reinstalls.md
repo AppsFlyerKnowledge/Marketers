@@ -52,6 +52,8 @@ Likewise, attributing in-app events from reinstalls to the original media source
 
 ## Reinstall flow and outcome
 
+<div id="reinstall" />
+
 <Accordion title="Reinstall">
 
 After the first app install, the user uninstalls, then reinstalls during the [re-attribution window](/docs/set-up-re-attribution-window#re-attribution-window). A reinstall can either come from organic or a UA campaign (see [examples](/docs/measure-reinstalls#examples)).
@@ -90,6 +92,8 @@ For more Retargeting Attribution information, click [here](/docs/retargeting-att
 In-app events performed by a user after a reinstall are either attributed organic, attributed non-organic, or unattributed organic, depending on the **Post Reinstall Events attribution** state (see flow chart below). An example of an in-app event is a user who reinstalls an app and then makes an in-app purchase.
 
 [![](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)
+
+<div id="postreinstall-events-attribution-state" />
 
 <Accordion title="Post-reinstall events attribution state">
 
@@ -176,6 +180,8 @@ The next day (day 1), the user reinstalls the app from a UA campaign and makes a
 
 </Accordion>
 
+<div id="confirm-inapps-are-attributed-to-the-original-install" />
+
 <Accordion title="Confirm in-apps are attributed to the original install">
 
 You can verify in your raw data report that your post-reinstall in-app events are in a first-install mode by following these steps:
@@ -230,3 +236,5 @@ You can verify in your raw data report that your post-reinstall in-app events ar
 | [Pull API](/docs/pull-api-aggregate-data) | **✓** | **✓** |
 | [Data Locker](/docs/data-locker-for-marketers) | **✓** | **✓** |
 | Push API | **✓** | **✓** |
+
+<div data-zendesk-anchors="01H7SZVZPGHBQ7VM8TMWRD3CE4=what-is-a-reinstall 01H7SZVZPG6T2AW9B3EMT29AQQ=why-are-reinstalls-important 01H7SZVZPGVQCNCQ7TCZMYM33T=reinstall-flow-and-outcome 01H7SZVZPGCDP3GRK1BWZ04MR6=reinstall 01H7SZVZPG8WNTK30YXNZ44VTS=reattribution inapp-events=post-reinstall-in-app-events 01H7SZVZPGBYRWZGAZRT36EFGH=post-reinstall-in-app-events h_01K47GSZ90CKBGPCZFGQBD1PMK=postreinstall-events-attribution-state 01H7SZVZPH4AE1PZK8V5JG6C6X=unattributed-organic-inapps 01H7SZVZPH7KPM7T42GHZ7N69S=attributed-to-the-first-install h_01KHJV7J6H5KKMZVZN8XPW4CEZ=note 01H7SZVZPH5YGSMPGW7NPKXJAF=note-1 with-attributed-to-the-first-install-enabled=examples-for-first-install-mode-attribution 01H7SZVZPHH3DS9J4VRD70VTX6=examples-for-first-install-mode-attribution h_01K47KBXE2NXXQFMS4RPJ0RA4T=confirm-inapps-are-attributed-to-the-original-install 01H7SZVZPH8MSBQ92XWFK0HWGQ=limitations 01H7SZVZPHHQS4NHEDATD7ZP9V=how-does-the-data-appear-in-the-appsflyer-dashboards 01H7SZVZPHPWN8REBQ5CWVFNJT=reinstalls-raw-data-reports 01H7SZVZPHCVDPDDYD6HHNFMMK=prerequisites how-the-install-and-inapp-events-are-attributed=how-the-install-and-in-app-events-are-attributed 01H7SZVZPHQT8XS3ZBA4W682GB=how-the-install-and-in-app-events-are-attributed 01H7SZVZPH6NY7FMG9YHDBB95R=availability-of-reinstall-reports" />

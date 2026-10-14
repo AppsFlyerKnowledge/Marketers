@@ -62,6 +62,8 @@ For ease of understanding, the table that follows contains examples of the deter
 
 PBA determines the media source, media type, and media channel in a hierarchical manner. This means determining the relevant media source rule and media source. Afterward, the media type and media channel are determined.
 
+<div id="media-source-rules" />
+
 <Accordion title="Media source rules">
 
 Media source rules as shown in the following table are ranked from high to low priority:
@@ -69,6 +71,8 @@ Media source rules as shown in the following table are ranked from high to low p
 <table><tbody><tr><th>Media source rule </th><th>Resolving the media source </th></tr><tr><td>Prevent self-attribution</td><td><p>To prevent attributing events to the website itself (self-attribution), and other related domains, a <a href="./pba-brand-bundles-and-settings#domain-exclusion">domain exclusion</a> list is used. The list consists of:</p><ul><li>Primary domain: Determined by the URL of the web app included in the brand bundle</li><li>Internal domains: Domains forming part of the brand</li><li>External domains: Payment gateways and payment processing sites set by you and some domains, like PayPal and Stripe, set by AppsFlyer are automatically excluded</li></ul></td></tr><tr><td>pid</td><td><p>Resolve to the pid value in the URL. For some SRNs, resolve the pid to the SRNs commercial name for consistency and clarity. For example, pid=facebook_int resolves to Facebook Ads, twitter_int resolves to Twitter.</p></td></tr><tr><td>Click IDs</td><td><p>Major ad networks, like Google, use click IDs to auto-tag campaigns. Click IDs resolve as follows:</p><ul><li><strong><span>gclid: </span></strong><a href="https://support.google.com/searchads/answer/7342044?hl=en"><span>Google click ID</span></a> resolves to <em>googleadwords_int</em><span>. Note!<em> The GCLID solution is not officially supported by Google, who may deprecate it in the future.</em></span></li><li><strong><span>dclid</span></strong><span>: DoubleClick click ID resolves to <em>doubleclick_int.</em></span></li><li><strong><span>msclkid: </span></strong><a href="http://help.ads.microsoft.com/apex/index/3/en/60000"><span>Bing click ID </span></a>resolves to<span> <em>bingsearch_int</em>.</span></li></ul></td></tr><tr><td>UTM parameters</td><td><strong>UTM custom rules</strong><table><tbody><tr><th>utm_source</th><th>utm_medium</th><th>Media source</th></tr><tr><td>\*</td><td><ul><li>email, mail, e-mail</li><li>Note! If utm_medium contains one of these values, the utm_source is ignored.</li></ul></td><td>Email</td></tr><tr><td>google</td><td>cpc/ppc/paidsearch/search</td><td>googleadwords_int</td></tr><tr><td>google</td><td>cpm/display/banner/video/listing</td><td>doubleclick_int</td></tr><tr><td>dfa / dbm</td><td>cpm</td><td>doubleclick_int</td></tr><tr><td><p>facebook</p></td><td>cpc/ppc/cpm/cpa/paidsocial/paid-social</td><td>Facebook Ads</td></tr><tr><td>bing</td><td>cpc</td><td>bingsearch_int</td></tr><tr><td>yahoo / gemini</td><td>cpc/display/listing</td><td>yahoogemini_int</td></tr><tr><td>twitter</td><td>cpc</td><td>X Ads</td></tr><tr><td>snapchat</td><td>swipe</td><td>snapchat_int</td></tr><tr><td>pinterest</td><td>cpc</td><td>pinterest_int</td></tr></tbody></table><p><span>If there is no custom rule match, the media source resolves to the value of the utm_source parameter.</span><span></span><span></span></p><p><a href="https://en.wikipedia.org/wiki/UTM_parameters"><span>Information about UTM parameters</span></a></p></td></tr><tr><td>Referrer</td><td><span>The referrer is the HTTP source that sent the user to the website. The media source is the domain name of the referrer.</span></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="media-source-type" />
 
 <Accordion title="Media source type">
 
@@ -93,6 +97,8 @@ The media channel is determined by rules as listed here.
 <table><thead><tr><th>Priority</th><th>Media channel rule</th><th>Values</th><th>Media channel</th></tr></thead><tbody><tr><td rowspan="4">Highest priority</td><td rowspan="4">The media source is one of the listed values</td><td>Direct</td><td>Direct</td></tr><tr><td><ul><li>Google Search</li><li>Yahoo Search</li><li>Bing Search</li></ul></td><td>Organic search</td></tr><tr><td><ul><li>facebook</li><li>twitter</li><li>snapchat</li><li>pinterest</li><li>linkedin</li><li>whatsapp</li></ul></td><td>Social media</td></tr><tr><td>Email</td><td>Email</td></tr><tr><td> </td><td>Media type is Paid</td><td> </td><td><div>Ad</div></td></tr><tr><td> </td><td>Media source determined by referrer</td><td> </td><td>Referral</td></tr><tr><td>Lowest priority</td><td>No other prior condition matched</td><td> </td><td>Other</td></tr></tbody></table>
 
 </Accordion>
+
+<div id="determine-the-campaign" />
 
 <Accordion title="Determine the campaign">
 
@@ -128,6 +134,8 @@ A visit to the website is recorded using the following rules and considering the
 
 </Accordion>
 
+<div id="data-finalization" />
+
 <Accordion title="Data finalization">
 
 * Data finalization:
@@ -135,3 +143,5 @@ A visit to the website is recorded using the following rules and considering the
   * In the related raw-data reports, the *final\_data*field is false during the initial 7-day period.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H936NV7VP8CTE9BZP6D5E7NK=website-visits-and-web-events h_01H936NV7VZHWBDPHFJRFFCPSW=determining-the-media-source h_01H936NV7V6GMWSCHNDMJ205JS=media-source-rules h_01H936NV7W9ZFMET29GY6JTBGN=media-source-type h_01H936NV7W61DB43D3E1MNEJHN=media-source-channel h_01H936NV7WZYE3EKYZ9PX9ZJXW=determine-the-campaign h_01H936NV7WA9WZM4RTQZHD22VV=additional-attribution-rules h_01H936NV7W323HQMG5E6SQFQEN=visit-recognition-rules h_01H936NV7WSB2FMRBPDN936TWM=data-finalization" />

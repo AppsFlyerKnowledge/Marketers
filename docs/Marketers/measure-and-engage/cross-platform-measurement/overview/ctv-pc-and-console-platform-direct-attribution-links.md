@@ -60,17 +60,17 @@ Alternatively, links can be created via S2S using the [Engagements API](https://
 | af\_ad\_id | Ad ID | Ad ID | String |
 | af\_campaign\_type | Campaign Type | Either:<ul><li>user\_acquisition</li><li>retargeting</li></ul> | String |
 | af\_prt | Partner | <ul><li>Agency account name that enables attributing installs to the agency</li><li>**Caution**: Don't use this parameter before ensuring that **Agency Permissions** are enabled</li></ul> | String |
-| af\_siteid | Site ID | Unique ID that identifies the publisher that displays the ad | String |
-| af\_sub\_siteid | Sub Site ID | Ad sub-network/publisher ID | String |
-| af\_click\_id | N/A | Ad network unique transaction identifier | String |
+| af\_siteid | Site ID | <span id="query-getImpressionAppPlatformApp_id_af_siteid__description"></span>Unique ID that identifies the publisher that displays the ad | String |
+| af\_sub\_siteid | Sub Site ID | <span id="query-getImpressionAppPlatformApp_id_af_sub_siteid__description"></span>Ad sub-network/publisher ID | String |
+| af\_click\_id | N/A | <span id="query-getImpressionAppPlatformApp_id_af_click_id__description"></span>Ad network unique transaction identifier | String |
 | af\_lookback\_window | N/A | <ul><li>Configurable number of days/hours for the lookback window attribution period. Available parameter values:<ul><li>Clicks: 1d-7d (days).</li><li>Impressions: 1d-7d (days) OR 1h-23h (hours).</li></ul></li><li>Validation: 3 char max, using the scheme above.</li><li>Default value is 24 hours for impressions and 7 days for clicks.</li></ul> | String |
-| af\_ad\_placement | N/A | Ad network unique transaction identifier | String |
+| af\_ad\_placement | N/A | <span id="query-getImpressionAppPlatformApp_id_af_ad_placement__description"></span>Ad network unique transaction identifier | String |
 | af\_ad\_type | Ad Type | <ul><li>Ad type. Use the following naming convention:<ul><li>**text:** an ad unit containing only text, for example a search result</li><li>**banner:** a basic format that appears at the top or bottom of the device screen</li><li>**interstitial:** a full-page ad that appears during breaks in the current experience</li><li>**video:** a standard video, that is non-rewarded</li><li>**rewarded\_video:** an ad unit offering in-app rewards in exchange for watching a video</li><li>**playable:** an ad unit containing an interactive preview of the app experience</li><li>**audio:** an audio ad</li></ul></li><li>Case-sensitivity enforcement.</li></ul> | String |
-| af\_channel | Channel | The media source channel through which the ads are distributed, for example, UAC\_Search, UAC\_Display, Instagram, Meta Audience Network, etc. | String |
+| af\_channel | Channel | <span id="query-getImpressionAppPlatformApp_id_af_channel__description"></span>The media source channel through which the ads are distributed, for example, UAC\_Search, UAC\_Display, Instagram, Meta Audience Network, etc. | String |
 | af\_model | Device Model | Device model | String 64 |
 | af\_os\_version | N/A | <ul><li>Device OS version</li><li>Only digits and dots allowed</li><li>Example: 8.1.0</li></ul> | String |
-| af\_device\_id\_type | N/A | Device identifier type. Either:<ul><li>vida</li><li>tifa</li><li>rida</li><li>lgudid</li><li>fire</li><li>advertising\_id</li><li>fire</li><li>custom</li></ul> | String |
-| af\_device\_id\_value | N/A | Device identifier type | String |
+| af\_device\_id\_type | N/A | <span id="query-getImpressionAppPlatformApp_id_af_device_id_type__description"></span>Device identifier type. Either:<ul><li>vida</li><li>tifa</li><li>rida</li><li>lgudid</li><li>fire</li><li>advertising\_id</li><li>fire</li><li>custom</li></ul> | String |
+| af\_device\_id\_value | N/A | <span id="query-getImpressionAppPlatformApp_id_af_device_id_value__description"></span>Device identifier type | String |
 | af\_r | N/A | <ul><li>Contains the link to the correct app store or landing page</li><li>Everything within the af\_r parameter needs to be encoded. This includes any UTM parameter values, if appended.</li></ul>**Note:** Ensure that the URL domain for af\_r is included in your [redirect allowlist](/docs/set-up-your-domain-redirect-allowlist). | String |
 
 ## Traits and limitations
@@ -78,3 +78,4 @@ Alternatively, links can be created via S2S using the [Engagements API](https://
 | Agency attribution | <ul><li>CTV-PC-Console to mobile flow - agency attribution is supported.</li><li>Mobile to CTV-PC-Console flow - agency attribution isn't supported.</li></ul> |
 | --- | --- |
 
+<div data-zendesk-anchors="01H7Z1003GTTMRY072BXWDFNP0=overview 01H7Z1003G0WYBCK3530064WM1=attribution-link attribution-link-parameters=parameters 01H7Z1003GNC551PDCKKFQMPVN=parameters h_01HVED5DJPFR5XCWYDSYCHMCR6=traits-and-limitations h_01J6S6HS0H0M6GQ81WGZ3XT0P9=traits-and-limitations" />

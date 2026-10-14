@@ -74,3 +74,5 @@ To change the Google Play country:
 2. Under **App Store Country** choose the correct country
 3. Scroll down and click **Save Settings**
 4. If the app still appears as pending, [click **Refresh Status**](/docs/why-is-my-app-still-pending#refreshing-the-app-status).
+
+<div data-zendesk-anchors="h_01HKW8NT3DWZMYVDYR13BDZDCT=whats-happening h_01HKW8NT3DY227ASKYX1RC3V5T=refreshing-the-app-status h_01HKW8NT3DHSDAG9C9225TDNRE=store-country h_01HKW8NT3DMWVGRB0RE3H3BQ36=ios h_01HKW8NT3D2V81Z1ZBVQKTYX8T=android" />

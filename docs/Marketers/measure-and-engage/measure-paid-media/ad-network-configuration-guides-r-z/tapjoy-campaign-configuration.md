@@ -45,6 +45,8 @@ an account, contact the partner to open one before setting up the integration.
    more about
    [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The ***Integration Tab*** is divided into different sections as described below.
@@ -109,6 +111,8 @@ In this section, you can configure in-app event postbacks that are sent to Tapjo
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -120,6 +124,8 @@ Generate and save attribution links and send them to the partner for attributing
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
@@ -127,6 +133,8 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 **To enable the cost API**:
 
 * Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
+
+<div id="cost-data-sync-status" />
 
 <Accordion title="Cost data sync status">
 
@@ -141,6 +149,8 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 This section is relevant if you are a publisher displaying partner ads to your users. As such, you would certainly like to measure the engagement of your users acquired from different sources to find the most profitable sources for you. Learn more about [Tapjoy ad revenue setup](https://dev.tapjoy.com/en/graphql-api/Appsflyer#iap-and-ad-revenue-configuration-for-roas).
@@ -150,6 +160,8 @@ This section is relevant if you are a publisher displaying partner ads to your u
 * Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -170,3 +182,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJS1SANCA03NGA11EA2359Z9=setting-up-tapjoy h_01HJS1SANC560TH8VJ2R2ZRKZA=integration-tab h_01HJS1SANC0KMZ3HFM2MNJ6SCV=activate-partners h_01HJS1SANCN7RXVCKCQD4N8B2S=general-settings h_01HJS1SANCSQ8Z3YB41V7KHAZD=app_id enable-viewthrough-attribution=enable-view-through-attribution h_01HJS1SANCR3DEAPQW0F1S0YP9=enable-view-through-attribution h_01HJS1SANCN0KQ7APJBPAVD7G7=default-postbacks h_01HJS1SANCZTZ2NR3XTEPVRKXG=launch-postbacks inapp-events-settings=in-app-events-settings h_01HJS1SANDCNEXH91VMY2E0KYJ=in-app-events-settings h_01HJS1SAND8DY0SNRZKGBFAZKK=note h_01HJS1SANDQK7DT52KF9011YZB=attribution-link-tab h_01HJS1SAND247NKAB9FQBBCSPQ=cost-tab h_01HJS1SANDWEMAHC3SJ64EMR7F=cost-data-sync-status h_01HJS1SANDVWHSW4GPQHS0ZM6G=notes h_01HJS1SANDTWFDTAZYEHB3KKEH=ad-revenue-tab h_01HJS1SAND4S7S8NW05N4R20NB=permissions-tab h_01HJS1SANDAW1MH9EYRZSD5BTG=ad-network-permissions" />

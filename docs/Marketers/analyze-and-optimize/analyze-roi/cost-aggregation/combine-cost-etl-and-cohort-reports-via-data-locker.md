@@ -253,3 +253,5 @@ GROUP BY ALL;
 > * [Cost ETL](/docs/set-up-and-use-roi360-cost-etl-reports)
 > * [Advanced aggregated reports in Data Locker](/docs/advanced-aggregated-reports-in-data-locker)
 > * [Cohort reports via Data Locker](/docs/cohort-analytics-via-data-locker)
+
+<div data-zendesk-anchors="h_01J55PCC5MJ3MJBESDVEFHT796=about-combining-cost-etl-and-cohort-reports h_01J55TR3SRXQPRBYRX6G3EJ7D9=queries-to-combine-reports h_01J55VAQ804JWE6WT552GY98JF=query-to-combine-cost-etl-and-advanced-aggregated-cohort-report h_01J55W908AAPQ6YRT4P1R4CA58=query h_01J55VAQ80PQX00GA9D516ST2Z=query-to-combine-cost-etl-and-cohort-report query::84619524=query-1 h_01J55WCKZFA2JWV0MP72WVK7Y2=query-1 h_01HDNZ24ZDXSAPJ1F5QCB9X1EN=see-also" />

@@ -38,6 +38,8 @@ The Protect360 dashboard:
 
 To view the Protect360 dashboard, in AppsFlyer, go to **Optimize** > **Protect360.**
 
+<div id="filters-and-groupings" />
+
 <Accordion title="Filters and groupings">
 
 **Filter and groupings window**
@@ -75,6 +77,8 @@ The following filtering and grouping options are available:
 The installs dashboard displays LTV-based data, meaning data relating to installs, re-attributions, and re-engagements that occurred during your selected date range.
 
 Dashboard features are described in the sections that follow.
+
+<div id="installs-headline-metrics" />
 
 <Accordion title="Installs—headline metrics">
 
@@ -129,6 +133,8 @@ Installs where the device was detected by AppsFlyer attribution logic as being f
  Average engagement per install shows the average number of engagements associated with the install.
 
 </Accordion>
+
+<div id="installs-charts" />
 
 <Accordion title="Installs—charts">
 
@@ -301,6 +307,8 @@ The in-app events dashboard displays activity-based data, meaning data relating 
 
 Dashboard features are described in the sections that follow.
 
+<div id="inapp-events-headline-metrics" />
+
 <Accordion title="In-app events—headline metrics">
 
 [![](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)
@@ -313,6 +321,8 @@ The headline metrics enable you to see:
 * Total number of identified fraudulent IAEs
 
 </Accordion>
+
+<div id="inapp-events-charts" />
 
 <Accordion title="In-app events—charts">
 
@@ -335,6 +345,8 @@ The top in-app event fraud by media source list contains: 
   * **Non-fraud**
 
 </Accordion>
+
+<div id="inapp-events-table" />
 
 <Accordion title="In-app events—table">
 
@@ -424,6 +436,8 @@ Payable events are IAEs that have a cost. Once enabled and configured, the In-ap
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -439,3 +453,5 @@ Payable events are IAEs that have a cost. Once enabled and configured, the In-ap
 >
 > * [Protect360 Overview](/docs/protect360-anti-fraud-guide)
 > * [Raw data reports](/docs/protect360-raw-data-reports)
+
+<div data-zendesk-anchors="01H8H9GQ17C4PBHCAMXE879BX7=about-protect360-dashboard 01H8H9GQ173SQ8P29C4DETJRTD=filters-and-groupings 01H8H9GQ173H3QH1Y5KZ26XMCW=installs-dashboard installs%E2%80%94headline-metrics=installs-headline-metrics 01H8H9GQ17FJKWE3M2YSZFTQCS=installs-headline-metrics installs%E2%80%94charts=installs-charts 01H8H9GQ18VHMK7FFV3RY409VB=installs-charts 01H8H9GQ18JDSZ2H8BKZVWGBPV=identified-fraud-trend-chart 01H8H9GQ18VXBPQRN55WHM3GG0=hijacked-installs-attribution-correction-chart 01H8H9GQ18FW87TXQZCYERHNDE=identified-fraud-chart h_01KQY7ARA2Z1WJ1V84X5GH832C=affiliate-attribution-model installs%E2%80%94table=installs-table 01H8H9GQ18FYXJA7TXQ4RNQGX2=installs-table 01H8H9GQ18540JJ8X833E6WF44=identified-fraud-breakdown 01H8H9GQ18DMPD7YTPTN2XJMSH=content-of-the-identified-fraud-breakdown-table 01H8H9GQ18PZ8ABG3D51M7J91R=additional-table-options inapp-events-dashboard=in-app-events-dashboard 01H8H9GQ19CQZV00XA62MGVJ86=in-app-events-dashboard inapp-events%E2%80%94headline-metrics=inapp-events-headline-metrics 01H8H9GQ19B95MDK2WEHVNEFS5=inapp-events-headline-metrics inapp-events%E2%80%94charts=inapp-events-charts 01H8H9GQ19XEJ0HNY2Y8BMX7A5=inapp-events-charts 01H8H9GQ1969AB4KK4ENP8AVQJ=fraud-trend-over-time-chart 01H8H9GQ19Z078PK1HR7VEZHXG=top-iae-fraud-by-media-source-chart inapp-events%E2%80%94table=inapp-events-table 01H8H9GQ19PTNWGJV6YDWR7SH6=inapp-events-table content-of-the-inapp-event-fraud-breakdown-table=content-of-the-in-app-event-fraud-breakdown-table 01H8H9GQ19773CS8TGS2QXBRG5=content-of-the-in-app-event-fraud-breakdown-table additional-table-options::44e54bfa=additional-table-options-1 01H8H9GQ192WA6XFNW7CKGBQ03=additional-table-options-1 01H8H9GQ1AVAVQ31ZZA1K024RF=payable-events 01H8H9GQ1BJX0K01NX8VCC0690=traits-and-limitations h_01HE7S2JKX3VMRCF6913S4MCAR=see-also" />

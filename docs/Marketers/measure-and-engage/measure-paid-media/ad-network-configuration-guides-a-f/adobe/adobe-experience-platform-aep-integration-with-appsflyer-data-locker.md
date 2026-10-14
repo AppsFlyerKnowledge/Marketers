@@ -28,14 +28,14 @@ The Data Locker—AEP integration enables you to use AppsFlyer data within the A
 
 ## Setting up the integration
 
-**Prerequisites**:
+<span id="prerequisites"></span>**Prerequisites**:
 
 * A [Data Locker](/docs/data-locker) subscription
 * An [Experience Platform](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) account with Admin permissions
 
 **To set up the integration**:
 
-1. Create a bucket with permissions for Data Locker. Follow the instructions for [GCS](/docs/data-locker-cloud-service-setup#gcs-storage) or [AWS](/docs/data-locker-cloud-service-setup#aws-storage) storage.
+1. <span id="step-1-aws-create-an-aws-iam-user-with-bucket-access"></span>Create a bucket with permissions for Data Locker. Follow the instructions for [GCS](/docs/data-locker-cloud-service-setup#gcs-storage) or [AWS](/docs/data-locker-cloud-service-setup#aws-storage) storage.
 2. Set up Data Locker. Follow the [Data Locker setup instructions](/docs/data-locker-for-marketers#set-up-data-locker), and when you select your GCS or AWS bucket, make sure you select **Make this connection compatible with Adobe Experience Platform**.
 3. Configure the Data Locker schema in AEP.
    1. Login to AEP using your admin credentials.
@@ -64,3 +64,5 @@ The Data Locker—AEP integration enables you to use AppsFlyer data within the A
 >
 > * [Adobe Launch SDK Extension](/docs/adobe-launch-sdk-extension?query=adobe)
 > * [Adobe Air plugin](/docs/adobe-air-plugin?query=adobe)
+
+<div data-zendesk-anchors="h_01HDNYXDFCQQBNBB6ZQQTJS189=overview h_01HDNYXDFCEVVDS5RANQMP6K3G=setting-up-the-integration h_01HDNZ1AS5YTK6N26PD7S7C0XF=see-also" />

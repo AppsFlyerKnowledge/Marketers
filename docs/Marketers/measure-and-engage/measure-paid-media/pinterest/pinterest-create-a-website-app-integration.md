@@ -91,3 +91,5 @@ If you don't send af\_customer\_event\_id, AppsFlyer generates an event ID autom
 For more information, see Integrate AppsFlyer Web SDK.
 
 5. Click **Add Event** to add an event to the list.
+
+<div data-zendesk-anchors="set-up-pinterest=set-up-integration h_01KV339A5ZGK96JNCNR78PDMNH=set-up-integration h_01KV339A67N4436STPW1VJR585=integration-tab h_01KV339A67H0DSSJ3P84PXGQ2F=activate-partner inapp-event-settings=in-app-event-settings h_01KV339A68YZBZZ73T8XTBE6BR=in-app-event-settings inapp-event-postbacks=in-app-event-postbacks h_01KV339A6BN0CWYX7GCJ19RN0J=in-app-event-postbacks" />

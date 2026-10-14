@@ -33,6 +33,8 @@ There are two versions of OneLink Smart Script:
 
 **OneLink Smart Script V1 (legacy)**: If you already have Onelink Smart Script set up, use the documentation for this version to maintain and edit this script. 
 
+<div id="responsibilities" />
+
 <Accordion title="Responsibilities">
 
 | **Who's involved**<ul><li>**Advertiser**:<ul><li>Decides what the outgoing URL should contain. This includes what attribution data to append to the link, and data required for deep linking. Either by manipulating the incoming URL or by forcing certain values.</li><li>Makes sure all campaigns leading to the mobile website have incoming URLs with parameters that the script works for.</li></ul></li><li>**Web developer**:<ul><li>Configures the data to initialize the script.</li><li>Enters the setters necessary to generate the outgoing OneLink URLs based on the incoming URL parameters provided by the marketer. This includes mandatory and optional parameters.</li><li>Embeds the script in the website or specific page/s.</li></ul></li></ul> |
@@ -72,6 +74,8 @@ There are two versions of OneLink Smart Script:
 
 The following sections provide Smart Script use cases for some common campaign/media source scenarios.
 
+<div id="facebook-ads-crossplatform-attribution" />
+
 <Accordion title="Meta ads — cross-platform attribution">
 
 Meta ads is an SRN that doesn't use external attribution links.
@@ -83,6 +87,8 @@ Upon first app launch, AppsFlyer queries Meta ads whether the user has previousl
 **Note**: Meta ads cross-platform attribution may be affected when users opt not to share their device ID, as is expected with iOS 14 users during 2021.
 
 </Accordion>
+
+<div id="google-ads-gclid-and-utm-parameters" />
 
 <Accordion title="Google Ads — GCLID and UTM parameters">
 
@@ -116,6 +122,8 @@ Since in this case, you are redirecting leads from Google Ads to a web/landing p
 
 </Accordion>
 
+<div id="srns-owned-media-and-other-media-source-links" />
+
 <Accordion title="SRNs, owned media, and other media source links">
 
 [SRNs](/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer) like Snapchat or X Ads, work differently than Google Ads or a cross-platform like Meta ads. Campaigns from these SRNs lead your users to the web/landing page, and you are billed according to clicking leads, unrelated to any derived mobile users.
@@ -138,6 +146,8 @@ For these SRNs, script setup is the same as for links from owned media, or other
 
 </Accordion>
 
+<div id="appsflyer-attribution-links" />
+
 <Accordion title="AppsFlyer attribution links">
 
 AppsFlyer attribution links can be used when the media source is a click ad network. When you set up such a link in AppsFlyer, you have the option to add a ***Redirection URL path (af\_r)***parameter with the desired URL path to your mobile website, for web campaign-to-app attribution. 
@@ -151,6 +161,8 @@ AppsFlyer attribution links can be used when the media source is a click ad netw
 > **Outgoing URL**: Same
 
 </Accordion>
+
+<div id="desktop" />
 
 <Accordion title="Desktop">
 
@@ -168,6 +180,8 @@ See also [Desktop-to-app conversion](/docs/qr-to-app-conversion).
 
 </Accordion>
 
+<div id="limitations" />
+
 <Accordion title="Limitations">
 
 | Limitation | Remarks |
@@ -175,3 +189,5 @@ See also [Desktop-to-app conversion](/docs/qr-to-app-conversion).
 | Tag manager | Smart Script cannot be implemented via tag manager. See [OneLink Smart Script V2](/docs/set-up-smart-script-to-convert-web-visitors) or [Smart Banners](/docs/smart-banners-mobile-web-to-app-for-marketers) as an alternative web-to-app attribution solution. |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HDNWHSY8HM30HV1PAF5C3M4E=setup h_01HDNWHSY8J65EB1RZCFP1606H=responsibilities h_01HDNWHSY8CH29FQ2V5DCG2XSP=parameters h_01HDNWHSY8WSPX47VB43MC516Q=parametersvalues-provided-to-the-developer-to-implement-the-smart-script h_01HDNWHSY8N77ZH4CK49ZQ2KZB=use-cases facebook-ads%E2%80%94crossplatform-attribution=facebook-ads-crossplatform-attribution h_01HDNWHSY85QFABA6FAX1XTEPE=facebook-ads-crossplatform-attribution google-ads%E2%80%94gclid-and-utm-parameters=google-ads-gclid-and-utm-parameters h_01HDNWHSY878JTPZSN719KF1Y5=google-ads-gclid-and-utm-parameters h_01HDNWHSY8BJH39TAN46W7HE4G=note h_01HDNWHSY8NER2M8X4DGHCWYPJ=srns-owned-media-and-other-media-source-links h_01HDNWHSY828Q587S28GYB85VR=example h_01HDNWHSY8K1AFSEA1RY04KXJ9=appsflyer-attribution-links h_01HDNWHSY8DDTA6VATN0XXBEY5=example-1 h_01HDNWHSY821DADGKATKH12PSJ=desktop h_01HDNWHSY80QA9CC4S2BPBTJYG=limitations" />

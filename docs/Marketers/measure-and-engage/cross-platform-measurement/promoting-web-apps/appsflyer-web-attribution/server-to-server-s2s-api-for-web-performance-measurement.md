@@ -245,12 +245,12 @@ All personal data fields must be SHA256-hashed before sending. Normalize text (l
 * The `afUserId` parameter is a unique identifier set by the Web SDK when a user first visits your site.
 * If you need `afUserId`, use one of the methods that follow.
 
-**Get afUserId from the HTTP cookie header**
+<span id="h_01HKW2YAW5FK04C3AWCXGP1XAW"></span>**Get afUserId from the HTTP cookie header**
 
 * The `afUserId` is sent by the visitor's browser on calls to your site.
 * Extract it from the HTTP cookie header if needed.
 
-**Viewing afUserId in the visitor's browser**
+<span id="h_01HKW2YAW5CT2WZ229KJD2FWYK"></span>**Viewing afUserId in the visitor's browser**
 
 * View the `afUserId` in the visitor's browser for troubleshooting and debugging.
 * For it to be available, the visitor needs to have first visited a page having the Web SDK at least once.
@@ -379,3 +379,5 @@ Once the destination and payload are in place, roll out in three steps:
 3. Once confirmed, expand the mapping to the remaining events.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01KP13TF66KEZ7F1TGAA7RGQ6G=about-the-s2s-api-for-web-attribution h_01KP13TF66W8V5A40YT2XYWQ5K=how-it-works h_01KP13TF671CF85KMYXFZE6W9D=why-use-s2s h_01KP13TF67N1FVEAD1C7RV25TY=api-specification h_01KP13TF67MHPEQ5J3H69RTQH5=authentication h_01KT98N5SBW812PVXP165FCWR3=note h_01KP13TF67QQC3F1YP9RZRNMTK=measure-an-event h_01KP13TF68HMD8GSR6GSY95WYF=measure-a-visit h_01KZS2SFULLSVR01=set-up-a-fully-server-side-integration h_01KP13TF68F2T3P7P56A5EG2HW=things-to-consider h_01M2T6JS6CPED929FVJS4P4CEG=send-events-via-segment-cdp h_01M2T6JS6CJ75PG72RSRYTCV9N=note-1 h_01M2T6JS6C08V4WZCC9EP724ZG=option-1-webhooks-actions-destination h_01M2T6JS6CZVH4PVH6MK7X5VTZ=option-2-destination-function" />

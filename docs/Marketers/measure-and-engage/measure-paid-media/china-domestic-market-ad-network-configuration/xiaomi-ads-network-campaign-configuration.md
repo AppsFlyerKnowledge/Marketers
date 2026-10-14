@@ -38,6 +38,8 @@ x-zendesk:
 
 Xiaomi's configuration window includes 3 active tabs: Integration, Attribution link and Permissions. Click on the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -61,6 +63,8 @@ AppsFlyer can send automatic postbacks to Xiaomi following user installs and re-
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -70,17 +74,23 @@ Generate and save attribution links and send them to the partner for attributing
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data integration is currently not supported with Xiaomi.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue integration is currently not supported with Xiaomi.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -103,3 +113,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW6ZDW8D6CD60S25FVQ80FC=setting-up-xiaomi h_01HKW6ZDW8JK323YYPCSYZ1PKB=integration-tab h_01HKW6ZDW8B60R3QAZRMPHVC31=activate-partner h_01HKW6ZDW8GW51XT1XXPE7DZ02=default-postbacks h_01HKW6ZDW8ERH0MQ2W2YGC5SXB=attribution-link-tab h_01HKW6ZDW8SHGTTVC4V7R1R90K=cost-tab h_01HKW6ZDW8ENFJN342XN66TM19=ad-revenue-tab h_01HKW6ZDW89CE47NF67TJM4AX9=permissions-tab h_01HKW6ZDW8Y85VBJPQ40MZ5CV5=ad-network-permissions" />

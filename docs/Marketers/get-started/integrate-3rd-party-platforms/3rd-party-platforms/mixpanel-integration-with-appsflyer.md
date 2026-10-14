@@ -44,6 +44,8 @@ The integration between AppsFlyer and Mixpanel enables you to import the Acquisi
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration tab is divided into different sections as described below.
@@ -121,11 +123,15 @@ Once you have saved the integration, AppsFlyer sends the following data to Mixpa
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution Links are not available for this partner.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -133,11 +139,15 @@ Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -199,3 +209,5 @@ The screenshots below are a Funnel report to see the conversion from install thr
 [![](https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png)](https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png)
 
 [![](https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png)](https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png)
+
+<div data-zendesk-anchors="h_01H9FKEWTEN4F8FM5C9A9ES6HN=important h_01H9FKEWTEGMEVH3SK739DD719=setting-up-mixpanel h_01H9FKEWTE90WR75PMNN93JAXE=integration-tab h_01H9FKEWTEMT7VGTTFWFMJHYA8=general-settings h_01H9FKEWTEV3RWKMWZN0EXFFNP=note h_01H9FKEWTER31RXAH216TRXQPM=default-postbacks inapp-events-settings=in-app-events-settings h_01H9FKEWTERRVKPQFF1B8QQERE=in-app-events-settings h_01H9FKEWTEEMMQ0KKRZXRJRE25=note-1 h_01H9FKEWTEEQ0GHF87V20TX9W0=attribution-link-tab h_01H9FKEWTEJ61197SN3R6JXYCP=cost-tab h_01H9FKEWTEA7GN2HHK3QD62A3A=ad-revenue-tab h_01H9FKEWTET4QD1RE0HJZM64D4=permissions-tab h_01H9FKEWTE9DEANTXKPD286GD2=integrating-with-mixpanel-when-using-a-login-mechanism h_01H9FKEWTFZ107Y999WEMB3409=note-2 h_01H9FKEWTF9PFNVHTZGDKBX75Y=viewing-appsflyer-data-in-mixpanel" />

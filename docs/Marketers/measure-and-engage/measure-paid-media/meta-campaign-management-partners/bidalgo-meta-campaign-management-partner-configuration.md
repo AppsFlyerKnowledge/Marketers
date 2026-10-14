@@ -47,3 +47,5 @@ x-zendesk:
 ## Configuring on Bidalgo
 
 When you configure your campaigns on Bidalgo the campaign name must begin with "**bidalgo\_**".
+
+<div data-zendesk-anchors="h_01HKA14TGWCP4N6Z9ESD6MB577=setting-up-bidalgo inapp-events=in-app-events h_01HKA14TGWSPQ8FS4AER86JEVV=in-app-events configuring-on-adquant=configuring-on-bidalgo h_01HKA14TGWMZ1YPY43VS1S6QBD=configuring-on-bidalgo" />

@@ -101,6 +101,8 @@ String appsflyerId = AppsFlyerLib.getInstance().getAppsFlyerUID(this);
 
 You can send the AppsFlyer ID in one of two ways:
 
+<div id="append-appsflyer-id-and-customer-user-id-to-url" />
+
 <Accordion title="Append AppsFlyer ID and customer user ID to URL">
 
 When you build a trusted web activity intent, you can pass parameters to its URL:
@@ -152,6 +154,8 @@ url.searchParams.forEach((value, key) => {
 Once you have the AppsFlyer ID, store in local storage for later use.
 
 </Accordion>
+
+<div id="sending-appsflyer-id-through-custom-headers" />
 
 <Accordion title="Sending AppsFlyer ID through custom headers">
 
@@ -223,6 +227,8 @@ Once you have these three parameters (AppsFlyer ID, SDK dev key, app ID), you ca
 See [here](/docs/server-to-server-events-api-for-mobile-s2s-mobile#server-to-server-events-api-for-mobile) for examples how to send server-to-server in-app events.
 
 </Accordion>
+
+<div id="customizing-web-content-with-conversion-data" />
 
 <Accordion title="Customizing web content with conversion data">
 
@@ -311,6 +317,8 @@ To learn more about conversion data use cases, see [here](/docs/conversion-data-
 
 ## PWA
 
+<div id="measuring-installs-for-pwa" />
+
 <Accordion title="Measuring installs for PWA">
 
 As with any other Android app, you can integrate the AppsFlyer SDK with the app to measure installs and get conversion data.
@@ -318,6 +326,8 @@ As with any other Android app, you can integrate the AppsFlyer SDK with the app 
 To measure installs, all you need to do is integrate the SDK following the instructions [here](/docs/sdk-integration-overview).
 
 </Accordion>
+
+<div id="customizing-content-using-conversion-data" />
 
 <Accordion title="Customizing content using conversion data">
 
@@ -327,6 +337,8 @@ To learn about using conversion data to customize web content, follow the instru
 
 </Accordion>
 
+<div id="recording-events-in-pwa" />
+
 <Accordion title="Recording events in PWA">
 
 PWA makes use of TWA which are essentially web activities. Since TWA is web-based and not a native activity, you cannot send in-app events using the AppsFlyer SDK. As an alternative, you can use server-to-server in-app events.
@@ -334,3 +346,5 @@ PWA makes use of TWA which are essentially web activities. Since TWA is web-bas
 Follow the instructions [here](/docs/using-appsflyer-with-twa#sending-inapp-events-from-twa) to learn how to send in-app events for PWA.
 
 </Accordion>
+
+<div data-zendesk-anchors="retrieving-the-appsflyer-id::a3f31d46=retrieving-the-appsflyer-id-1 sending-the-inapp-event=sending-the-in-app-event fetching-the-conversion-data-from-the-clientside=fetching-the-conversion-data-from-the-client-side" />

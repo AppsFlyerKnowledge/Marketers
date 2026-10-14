@@ -65,6 +65,8 @@ Below we explain two methods of A/B testing using:
 | A/B testing with a single media source | <ul><li>Quick setup</li><li>Easy to test install conversion rate</li></ul> | <ul><li>Results may only apply to users of the specific media source</li><li>May take longer to test</li></ul> |
 | A/B testing across multiple media sources | <ul><li>Fast results</li><li>Results apply to users from all media sources</li></ul> | <ul><li>Need to update attribution links in multiple places</li></ul> |
 
+<div id="method-1-ab-testing-with-a-single-media-source" />
+
 <Accordion title="Method 1: A/B testing with a single media source">
 
 **Setup**:
@@ -82,6 +84,8 @@ Below we explain two methods of A/B testing using:
 * Compare KPIs (for example, install conversion rate, ROI, ARPU, loyal user rate) of the campaigns in the Overview dashboard page.
 
 </Accordion>
+
+<div id="method-2-ab-testing-across-multiple-media-sources" />
 
 <Accordion title="Method 2: A/B testing across multiple media sources">
 
@@ -155,3 +159,5 @@ Helping advertisers identify the best (and worst) performing media sources for t
 If you set the same targeting parameters for each media source, the test includes the targeting abilities of the networks. When A/B testing, it’s best to test a single variation each time. As a result, it's advisable to eliminate the differences in targeting abilities, when A/B testing other factors in the performance of networks.
 
 To achieve this, we recommend splitting an audience randomly and targeting both audiences with the same creative, on each tested network. AppsFlyer offers an **easy method for defining, splitting, and automatically distributing audiences between different media sources**. Read about it [here](/docs/audiences-guide#audience-split-and-incrementality-testing).
+
+<div data-zendesk-anchors="h_01HN5CNKKBHV52ENXJXCBV2CES=what-is-ab-testing h_01HN5CNKKC02NKW4330QB6E01T=how-to-ab-test-mobile-campaigns h_01HN5CNKKCJPZSEEF1RAHC0HXD=ab-testing-creatives-and-targeting h_01HN5CNKKCMVE9YH379RP1S19W=method-1-ab-testing-with-a-single-media-source h_01HN5CNKKC53RTV61K08T9AVRA=method-2-ab-testing-across-multiple-media-sources h_01HN5CNKKCVPSSZZTJ8QGJHY1B=ab-testing-ad-placement-on-mobile-web h_01HN5CNKKC03ZAFCQZ0KJ0RHCE=ab-testing-media-sources h_01HN5CNKKC4M6YMPHTQCFHFDMD=example h_01HN5CNKKC551X3HQFNKHW1JBY=using-audiences-split-for-easy-ab-testing-of-media-sources" />

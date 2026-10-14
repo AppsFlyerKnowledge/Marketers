@@ -633,6 +633,8 @@ Events are the fundamental building blocks of web measurement, representing spec
 AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12, eventValue: {"key1": 123, "key2": "name", "af_customer_event_id": "evt-abc-001"}});
 ```
 
+<div id="web-sdk-event-parameters-table" />
+
 <Accordion title="Web SDK event parameters table">
 
 | Parameter name | Mandatory | Description |
@@ -655,6 +657,8 @@ You can implement this trigger either by adding a window loading method to your 
 
 The following code examples are for illustrative purposes. **Do not use this code as-is**; adapt it to your site's specific structure.
 
+<div id="example-record-event-via-af-web-sdk" />
+
 <Accordion title="Example: Record event via AF Web SDK">
 
 This approach is ideal for recording conversions that occur via redirects, such as a Thank You page for a newsletter subscription.
@@ -676,6 +680,8 @@ window.onload = function(){
 3. The **subscription** event, along with its associated metadata (category and label), is sent directly to AppsFlyer.
 
 </Accordion>
+
+<div id="example-record-event-via-gtm" />
 
 <Accordion title="Example: Record event via GTM">
 
@@ -733,6 +739,8 @@ These interactions are typically handled by binding a click listener to a **nati
 
 The following code examples are for illustrative purposes. **Do not use this code as-is**; adapt it to your site's specific structure.
 
+<div id="example-record-event-via-af-web-sdk-interaction" />
+
 <Accordion title="Example: Record event via AF Web SDK">
 
 Use this method to measure specific actions users take on a page, such as clicking a **Checkout** or **Download** button.
@@ -767,6 +775,8 @@ Use this method to measure specific actions users take on a page, such as clicki
 4. The SDK then transmits the **checkout** event to the AppsFlyer platform.
 
 </Accordion>
+
+<div id="example-record-event-via-gtm-interaction" />
 
 <Accordion title="Example: Record event via GTM">
 
@@ -1056,6 +1066,8 @@ CSP policy compatibility
 
 #### Advanced SDK Verification with CSP nonce snippets
 
+<div id="nonce-without-smart-banners" />
+
 <Accordion title="Without Smart Banners">
 
 ```html
@@ -1088,6 +1100,8 @@ CSP policy compatibility
 ```
 
 </Accordion>
+
+<div id="nonce-with-smart-banners" />
 
 <Accordion title="With Smart Banners">
 
@@ -1148,3 +1162,5 @@ The Web SDK sets or uses the following cookies:
 | af\_id | [onelink.me](http://onelink.me/) | 395 days | Non-Accelerated Mobile Pages when third-party cookies are permitted | Links link banner engagements, OneLink engagements, or both, to app launch events. |
 | amp-afUserid | AMP CDN or your website domain | 1 year | Accelerated Mobile Pages |  |
 | AF\_DEFAULT\_MEASUREMENT\_STATUS | Your website domain | 395 days | Non-Accelerated Mobile Pages | Stores the consent state. Prevents the SDK from operating until the user grants consent. Not set by default. Used only when [consent gating](/docs/pba-web-sdk-integration-guide#sending-events-optinoptout) is configured. |
+
+<div data-zendesk-anchors="h_01KGJCGCPZDJ446QHW80H9Z4C3=overview h_01M11M9ZXB0PFFPKVDCGVD0RFT=integrate-the-sdk-manually ai-prompt=integrate-the-sdk-with-an-ai-coding-agent h_01UJZDE8GXD6NCF10EPF91DH=integrate-the-sdk-with-an-ai-coding-agent step-1-obtain-your-keys=1-obtain-your-keys h_01KP11XJV8B56W7FK2KAAFH0NE=1-obtain-your-keys step-2-select-a-code-snippet=2-select-a-code-snippet h_01KP11XJV8RDV378GMFF0DVZ8V=2-select-a-code-snippet standard=standard-web-sdk h_01KP11XJV8MN64YV17D1M0T5B9=standard-web-sdk h_01KP11XJV8ZGF4SDXJH6FKX18E=advanced-sdk-verification step-3-deploy-the-snippet=3-deploy-the-snippet h_01KP11XJV8JQ5S2BBS18RV2H2R=3-deploy-the-snippet h_01KP11XJV9RWY4TTWACW69YGJH=create-a-property-in-adobe-experience-cloud h_01KP11XJV9ZHMP9M85S3KG0V6R=add-the-snippet-to-the-adobe-launch-property h_01KP11XJVBV5J9E0HV5DM9HS7B=add-the-adobe-launch-tag-to-the-website h_01KP11XJVB0Y4RCBS9QCFBAKRD=publish-the-adobe-launch-environment 2-make-sure-the-sdk-is-working=4-make-sure-the-sdk-is-working h_01KGJCGCPZ38XZAY8SXB48YWBD=4-make-sure-the-sdk-is-working 3-set-and-record-events=5-set-and-record-events h_01KGJCGCPZMPX1FH58MVGM9VQS=5-set-and-record-events h_01KP3CJBZXV66CCP4N0482DG1N=web-sdk-event-parameters-table h_01KP3CJBZXB328CABH2QCRXTHX=example-record-event-via-af-web-sdk h_01KP3CJBZXM3WK0JYB6S8P6SMQ=example-record-event-via-gtm h_01KGJCGCPZQDP9KVBSE1Z1GT48=1-set-up-a-thank-you-page h_01KGJCGCPZ2YVRY6VYJ0BTC14N=2-configure-the-gtm-tag h_01KP3CJBZXD6MPTQ0KCPMTM1Y9=example-record-event-via-af-web-sdk-interaction h_01KP3CJBZX53G1HABG3TKN2X6S=example-record-event-via-gtm-interaction h_01KGJCGCQ0858AAJC82Y2G0GNP=1-set-up-a-checkout-page h_01KGJCGCQ0GGYDQBP9CJNM9AXQ=2-configure-gtm-variables-and-triggers h_01KGJCGCQ0EV557QF3CGZ6YB4X=3-create-the-interaction-tag 4-set-customer-user-id=6-set-customer-user-id h_01KGJCGCQ0RNBW7V5T4PXVXQW1=6-set-customer-user-id h_01KGJCGCQ0M0ESXFMK45PJ3SX9=a-sign-up-form-example h_01KGJCGCQ0FMKFKM2SWV2794T5=a-thank-you-page-example 5-manage-privacy=7-manage-privacy h_01KGJCGCQ01PQWT44ZWE329DWX=7-manage-privacy h_01KGJCGCQ0AQM3Y9NNCJF2XP9G=sdk-initial-state-setting-in-the-snippet h_01KGJCGCQ07KKYGN5JZF41A6W7=explicit-control h_01KGJCGCQ0QB7NK6YNZT5XJVJY=content-security-policy-csp h_01KP11XJV88YB2NSBZJTX9K7ZQ=advanced-sdk-verification-with-csp-nonce-snippets h_01KP3CJBZXQ4D538H0T7N9FZ6Z=nonce-without-smart-banners h_01KP3CJBZX8K3WK6RHQMB029VN=nonce-with-smart-banners h_01KGJCGCQ010K4RMFMGHD5NDC3=discard-query-parameters h_01KGJCGCQ03A1H7NA5ZGPSGKP3=web-sdk-cookies-reference" />

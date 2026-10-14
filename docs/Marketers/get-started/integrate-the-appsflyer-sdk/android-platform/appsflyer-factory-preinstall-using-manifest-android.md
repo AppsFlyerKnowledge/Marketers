@@ -217,6 +217,8 @@ In some cases, the install might not be attributed to the pre-install media sour
 
 </Accordion>
 
+<div id="name-in-manifest-file-method" />
+
 <Accordion title="Name in manifest file method">
 
 The name in the manifest method requires you to add a metadata tag to the app's manifest file. You need to repeat this step for every media source or manufacturer that you collaborate with.
@@ -247,6 +249,8 @@ In some cases, the install might not be attributed to the pre-install media sour
 
 </Accordion>
 
+<div id="pathway-method" />
+
 <Accordion title="Pathway method">
 
 > 📘 **Note**
@@ -269,14 +273,15 @@ The pathway method allows you to specify a path to a file that holds the name of
    com.appsflyer.sampleapp={"pid":"huawei", "c":"special_campaign","af_adset":"some_adset"}
    ```
 
-   <br /><br />**Note**<br />#### Important!
+   > 📘 **Important!**
+   >
+   > It's important to note the following behaviors when using this option:
+   >
+   > 1. It sets "Pre-install" as af\_channel
+   > 2. If pid is not present in the JSON, the Media Source appears as "None".
+   > 3. In the JSON configuration, if c is not present then the campaign name is set to "Pre-install"
+   > 4. If the JSON is malformed, the passed string is treated as the Media Source name
 
-   It's important to note the following behaviors when using this option:
-
-   1. It sets "Pre-install" as af\_channel
-   2. If pid is not present in the JSON, the Media Source appears as "None".
-   3. In the JSON configuration, if c is not present then the campaign name is set to "Pre-install"
-   4. If the JSON is malformed, the passed string is treated as the Media Source name
 
    Once you have the pre\_install.appsflyer file, give it to the media source or manufacturer together with the APK.
 2. Talk to the media source or manufacturer and agree with them on a path where they put the file. The recommended path is "/data/local/tmp/pre\_install.appsflyer".
@@ -337,6 +342,8 @@ This section demonstrates how to test and verify your pre-install configuration.
 > AppsFlyerLib.getInstance().setDebugLog(true);
 > ```
 
+<div id="verifying-the-configuration-in-the-app" />
+
 <Accordion title="Verifying the configuration in the app">
 
 > 📘 **Tip**
@@ -350,6 +357,8 @@ Build your application in Android Studio and install it on the test device. Once
 ![pre_install_logcat_2.png](https://files.readme.io/ce57427b0fb286e632d416378bb65f98370122e6d026ecba99e602524b8351d6-360002655609.png)
 
 </Accordion>
+
+<div id="verifying-the-configuration-in-the-appsflyer-dashboard" />
 
 <Accordion title="Verifying the configuration in the AppsFlyer dashboard">
 
@@ -372,6 +381,8 @@ Head over to your AppsFlyer account and open the dashboard for the app that you 
 
 ## Special cases
 
+<div id="multiple-preinstall-apps-on-the-same-device" />
+
 <Accordion title="Multiple pre-install apps on the same device">
 
 If you have campaigns for several apps that are installed on the same device, you can measure attribution using each of the four methods:
@@ -388,6 +399,8 @@ If you have campaigns for several apps that are installed on the same device, yo
 
 </Accordion>
 
+<div id="sending-install-postbacks" />
+
 <Accordion title="Sending install postbacks">
 
 If the media source or manufacturer that you collaborate with is an [AppsFlyer partner](/docs/set-up-an-integrated-partner#your-integrated-partners), you can enable postbacks for installs.
@@ -397,6 +410,8 @@ To do so, make sure that the media source name is equivalent to the media source
 For example, if you are collaborating with market\_name, its pid is market\_name\_int. You can see the pid by examining the [attribution link of an integrated partner](/docs/set-up-an-integrated-partner#click-through-attribution).
 
 </Accordion>
+
+<div id="agencies" />
 
 <Accordion title="Agencies">
 
@@ -410,3 +425,5 @@ If the af\_prt (parameter for agency name) is a part of the pre-install data, an
 * The agency can't access the user-level data.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01J421581P06FTM7B3XG2GYB2P=introduction what-is-a-preinstall-campaign=what-is-a-pre-install-campaign h_01J421581P6GYK60D5JQ9PK93N=what-is-a-pre-install-campaign h_01J421581PBQQ5AS3S4JPX52CF=important benefits-of-recording-installs-from-preinstall-campaigns=benefits-of-recording-installs-from-pre-install-campaigns h_01J421581P5MS4X9BHSJ3TTWBF=benefits-of-recording-installs-from-pre-install-campaigns how-can-i-measure-preinstall-campaigns=how-can-i-measure-pre-install-campaigns h_01J421581PEZZW2R244ZX9HX0R=how-can-i-measure-pre-install-campaigns viewing-preinstall-data=viewing-pre-install-data h_01J421581PS1CEPK3NN7AZ0ZDE=viewing-pre-install-data h_01J421581PDE1CEXRS6BYTDV35=note h_01J421581PKQTX47GC62K4AB9A=note-1 h_01J421581P28NEVB44R3XTPY75=setup h_01J421581QNSQ7W3VYFDVZ1423=system-properties-method-recommended h_01J421581Q8ZAPZS12PEG4VW3N=developer h_01J421581QYRNXCP16GY8CJTKT=important-1 h_01J421581QF6Y6MY28N5MR5BTM=manufacturer h_01J421581QBFMVT3KPCPPFRX42=note-2 h_01J421581QEPAC0WZK93HH3QYP=advantages h_01J421581QCG3HARVZVECMHQ1K=disadvantages h_01J421581QQ3VJSSQ06DKZQ0BQ=sdk-api-method h_01J421581Q6F1AD0SYXEEJB8FB=when-working-with-a-media-source h_01J421581Q3YSNH7KXQXET7FD4=when-working-with-a-manufacturer h_01J421581QRYRWY2WJKCBHQBFG=note-3 advantages::d999b734=advantages-1 h_01J421581QWHP73CA7P13WAQ7Q=advantages-1 disadvantages::92772f7d=disadvantages-1 h_01J421581QRRFBJWZB5Z6M08BE=disadvantages-1 h_01J421581QF11R7ZXAXRP2YQYR=tip h_01J421581QJ2J54HJFTXF3G5S0=name-in-manifest-file-method advantages::3f0b06fb=advantages-2 h_01J421581Q8WFYYFQJ45KPWZWP=advantages-2 disadvantages::919cb3e3=disadvantages-2 h_01J421581QYC02EKB5P0FN5G3F=disadvantages-2 h_01J421581QNFT2E2P3A6MR3BB5=pathway-method h_01J421581QF43JW6A0B48SK9AE=note-4 developer::7c51f631=developer-1 h_01J421581QB4TH9DMA2ANHG7RD=developer-1 passing-additional-preinstall-parameters=passing-additional-pre-install-parameters h_01J421581Q45AEN4GEM5ZKPYRN=passing-additional-pre-install-parameters h_01J421581Q3MMTKPP3E8SZD13F=important-2 manufacturer::56d9649d=manufacturer-1 h_01J421581Q16AVHRCTHME67VHQ=manufacturer-1 advantages::1fb76031=advantages-3 h_01J421581QTRY13FVNQRMG0H2B=advantages-3 h_01J421581Q0P5VQJHQ9X3VRW8N=important-3 disadvantages::c9cae863=disadvantages-3 h_01J421581QSNNCHPC2VSF48FT3=disadvantages-3 testing-preinstall-configuration=testing-pre-install-configuration h_01J421581QYHRHF119J4YBZD23=testing-pre-install-configuration h_01J421581QW0XKZ635A194W80J=important-4 h_01J421581QPXQDFX5G11B7GSNA=verifying-the-configuration-in-the-app h_01J421581QSZPZVZ6GGQST5FWS=tip-1 h_01J421581Q7PGHJ2HBX1ZDNJS6=verifying-the-configuration-in-the-appsflyer-dashboard h_01J421581Q624TH08PX24B1P3X=special-cases h_01J421581QQHB8624SS6FSSA6D=multiple-preinstall-apps-on-the-same-device h_01J421581Q86AB5GTM91ARYJ23=sending-install-postbacks h_01J421581RD2WQ6SPES729GJEP=agencies" />

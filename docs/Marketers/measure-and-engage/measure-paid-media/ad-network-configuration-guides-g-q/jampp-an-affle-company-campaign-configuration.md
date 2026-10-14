@@ -38,6 +38,10 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="h_01HKW1V0MN1PQ9HWC0TK0WSWER" />
+
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -80,6 +84,8 @@ In this section you can map your AppsFlyer events with Jampp via postbacks.
 | **Send Revenue** | **When unchecked** - Send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - Send all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -167,6 +173,8 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
@@ -179,11 +187,15 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue integration is not available for this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -215,3 +227,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW1V0MNP0000KY7SHWQNF16=setting-up-jampp-integration h_01HKW1V0MNSFFFKSQJTDF91NCS=integration-tab h_01HKW1V0MN2CQGVKBRQ67SMQ2P=activate-partner h_01HKW1V0MNKR4M4EA5JNT361Y1=note h_01HKW1V0MNDPJ67HMC0GXYG55B=general-settings h_01HKW1V0MNVEYNY7PZ12QX30QP=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW1V0MN1Q4AR9HASGTCM6AJ=in-app-events-settings h_01HKW1V0MN5HD3TN7AQ1SS8VM7=attribution-link-tab h_01HKW1V0MNDJG02Q0V315N2HAZ=attribution-link-parameters h_01HKW1V0MNHZ2JKKEAYWWQ36BA=retargeting-settings clickthrough-attribution=click-through-attribution h_01HKW1V0MNKJCETPMASGRYJ368=click-through-attribution h_01HKW1V0MND4RT49E8TX448Q9H=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HKW1V0MN3VB4HJFDKAH1KAAG=view-through-attribution-lookback-window h_01HKW1V0MN86VRX5VPB1K8HACD=impressions-attribution-link h_01HKW1V0MNY13FH61E5AJ27NWJ=cost-tab h_01HKW1V0MNG84N4GKFDACB498E=ad-revenue-tab h_01HKW1V0MNQHRZCMV9WZMFY1G5=permissions-tab h_01HKW1V0MNP0K2WYMQ1AHBKH17=ad-network-permissions h_01HKW1V0MNV7HGV88HVVPG1397=agency-permissions" />

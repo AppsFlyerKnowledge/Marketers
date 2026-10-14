@@ -40,6 +40,8 @@ x-zendesk:
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -72,11 +74,15 @@ The Integration Tab is divided into different sections as described below.
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution Links are not available for TVSquared.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -84,14 +90,20 @@ Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 Permissions are not available for TVSquared.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HF9R4JZ504QNYCQQ8TFDM6FV=setting-up-tvsquared h_01HF9R4JZ5VXT1P5T3RVRXN522=integration-tab h_01HF9R4JZ55HMSRD3TNFF05PKZ=activate-partner h_01HF9R4JZ5KWKPCN3ESQ9K27S7=note h_01HF9R4JZ596NM643Z662BGY0M=attribution-link-tab h_01HF9R4JZ50XY445ABGAPDY962=cost-tab h_01HF9R4JZ5BA74FKFRKY4FPTAS=ad-revenue-tab h_01HF9R4JZ5BV6C6H6V6W53BXXK=permissions-tab" />

@@ -125,3 +125,5 @@ Some reports and pull-down lists are processed once a day, this is referred to a
 > These don't follow the continuous/real-time rate shown above. Same-day data becomes available the following day, after daily processing completes. See [My Dashboards traits and limitations](/docs/my-dashboards#traits-and-limitations) for details.
 
 </Accordion>
+
+<div data-zendesk-anchors="data-freshness-and-support-for-appspecific-time-zones=data-freshness-and-support-for-app-specific-time-zones 01EDBBPAH96ADJ56FRNB34K3VB=data-freshness-and-support-for-app-specific-time-zones 01EDBBPAH9M5KQRXJ1TNN3RJAX=data-freshness 01EDBBPAH92JJVVGXN61N4SV89=time-zones appspecific-time-zone=app-specific-time-zone 01EDBBPAH9WHDY875Y913PV00Z=app-specific-time-zone timezone-guidelines=time-zone-guidelines 01EDBBPAH9TRH8HBB0JAX2369H=time-zone-guidelines 01EDBBPAH98F0641D934W9NJD8=daily-processing h_01M2MJESA4EG1BEVM5T6N9FH0D=exception-my-dashboards-cohort-and-activity-metrics-for-web-ctv-and-pc-and-console-apps" />

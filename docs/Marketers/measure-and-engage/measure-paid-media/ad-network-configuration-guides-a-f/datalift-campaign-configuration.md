@@ -38,6 +38,8 @@ x-zendesk:
 
 DataLift's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -73,6 +75,8 @@ In this section you can map your AppsFlyer events with DataLift via postbacks.
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -146,6 +150,8 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
@@ -158,11 +164,15 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported by Datalift.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -183,3 +193,5 @@ Ad Network Permissions
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKWB7DF793NT8G97RCFA873J=setting-up-datalift h_01HKWB7DF76EHWS5YRMEXTKQDA=integration-tab h_01HKWB7DF704T3BZ16JM5CHYTS=activate-partner h_01HKWB7DF7R0F7J1X6K5BSBEKC=general-settings h_01HKWB7DF70BY7JAG9NXVQ1DPC=default-postbacks inapp-events-settings=in-app-events-settings h_01HKWB7DF7ZE4HKCAHTPNJMPXS=in-app-events-settings h_01HKWB7DF7YNXFFGVWPDDJZTK8=attribution-link-tab h_01HKWB7DF759S8AKVV5RZWQZYG=attribution-link-parameters h_01HKWB7DF7B9BCYGGSXNAC0V4R=retargeting-settings clickthrough-attribution=click-through-attribution h_01HKWB7DF7NGNM5T8SD27PDC1D=click-through-attribution h_01HKWB7DF7D0WN8M0W7RQT7PJC=click-attribution-link h_01HKWB7DF8J8C5PGD257HTK9WD=cost-tab h_01HKWB7DF8X11EE3GTT4E62724=ad-revenue-tab h_01HKWB7DF8309PMXRHWK5HY83E=permissions-tab" />

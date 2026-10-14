@@ -48,6 +48,8 @@ SKAdNetwork (SKAN), part of Apple iOS, lets advertisers measure campaign perform
 
 This article describes the relevant characteristics of the infrastructure and the solution. To set up measurement see [SKAN Conversion Studio](/docs/skan-conversion-studio).
 
+<div id="about-apple-skan" />
+
 <Accordion title="About Apple SKAN">
 
 | Characteristic | Description |
@@ -93,14 +95,16 @@ To overcome the functional and structural limitations of the SKAdNetwork infrast
 
 | Characteristic | Description |
 | --- | --- |
-| Data collection | <ul><li>For the advertiser, SKAdNetwork postbacks are collected from multiple ad networks.</li><li>Advertisers don't need to integrate individually with each ad network—a complex and tedious task.</li></ul> |
-| Data validation | <ul><li>Ensures postbacks are signed by Apple; this reduces the chances of postback manipulation.</li><li>Uses the transaction ID field to validate that postbacks are unique.</li></ul> |
-| Data enrichment | <ul><li>Enriches SKAdNetwork postback data with other data points to provide complete ROI analysis. For example, campaign name provided by the ad network, and so on.</li><li>Data points include impressions, clicks, cost, and more.</li></ul> |
-| Data delivery | Enriched SKAdNetwork data is available using the following:<ul><li>[SKAdNetwork solution dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer)</li><li>[Downloadable reports](/docs/skadnetwork-skan-solution-guide#reporting-options)</li></ul> |
-| Seamless integration | <ul><li>Full encapsulation enables a near-zero effort by the advertiser via the app settings page.</li><li>No coding is required. The app requires the latest SDK version.</li><li>Includes support for expected changes by Apple in the SKAdNetwork infrastructure.</li></ul> |
-| Agility | Advertisers can change measurement configurations as needed in the dashboard. |
+| <span id="data-collection"></span>Data collection | <ul><li>For the advertiser, SKAdNetwork postbacks are collected from multiple ad networks.</li><li>Advertisers don't need to integrate individually with each ad network—a complex and tedious task.</li></ul> |
+| <span id="data-validation"></span>Data validation | <ul><li>Ensures postbacks are signed by Apple; this reduces the chances of postback manipulation.</li><li>Uses the transaction ID field to validate that postbacks are unique.</li></ul> |
+| <span id="data-enrichment"></span>Data enrichment | <ul><li>Enriches SKAdNetwork postback data with other data points to provide complete ROI analysis. For example, campaign name provided by the ad network, and so on.</li><li>Data points include impressions, clicks, cost, and more.</li></ul> |
+| <span id="data-delivery"></span>Data delivery | Enriched SKAdNetwork data is available using the following:<ul><li>[SKAdNetwork solution dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer)</li><li>[Downloadable reports](/docs/skadnetwork-skan-solution-guide#reporting-options)</li></ul> |
+| <span id="seamless-integration"></span>Seamless integration | <ul><li>Full encapsulation enables a near-zero effort by the advertiser via the app settings page.</li><li>No coding is required. The app requires the latest SDK version.</li><li>Includes support for expected changes by Apple in the SKAdNetwork infrastructure.</li></ul> |
+| <span id="agility"></span>Agility | Advertisers can change measurement configurations as needed in the dashboard. |
 
 </Accordion>
+
+<div id="conversion-studio" />
 
 <Accordion title="Conversion Studio">
 
@@ -134,6 +138,8 @@ SKAdNetwork reports don't contain user-level identifiers.
 
 </Accordion>
 
+<div id="skadnetwork-solution-implementation-checklist" />
+
 <Accordion title="SKAdNetwork solution implementation checklist">
 
 | No. | Action | Description | Responsibility |
@@ -144,6 +150,8 @@ SKAdNetwork reports don't contain user-level identifiers.
 | 4 | Partner integrations | Ad network partners must integrate with AppsFlyer using SKAdNetwork integration. Note! AppsFlyer SKAdNetwork simulation contains the data of all your partners irrespective of their current integration status. This won't be the case for the live data reported by SKAdNetwork postbacks.<br /><br />In relation to partners running your campaigns complete the following as required:<br /><br />**Non-SRNs**:<ol><li>Verify that the partner has an AppsFlyer [SKAdNetwork capability badge](/docs/set-up-an-integrated-partner#c-transaction-id) and that in the partner UI, SKAdNetwork campaign reporting is enabled.</li><li>Verify that your [in-app event names are mapped](#sending-postbacks-to-integrated-partners) to partner in-app event names.</li></ol>**Meta ads**:<ul><li>[Configure AppsFlyer SKAdNetwork interoperation with Meta ads](/docs/skadnetwork-skan-interoperation-with-meta-ads)</li></ul> | Marketer |
 
 </Accordion>
+
+<div id="troubleshooting-guide" />
 
 <Accordion title="Troubleshooting guide">
 
@@ -194,6 +202,8 @@ Organic metrics in the SKAdNetwork dashboard are calculated using the following 
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -239,8 +249,8 @@ Take note of the various options and requirements in the table that follows
 
 | Subject | Description |
 | --- | --- |
-| Transaction ID sharing | **Action required**: Check with the integrated partner if they require the [transaction ID](https://developer.apple.com/documentation/storekit/skadnetwork/verifying_an_install_validation_postback) and configure the setting accordingly.<br /><br />AppsFlyer sends the attributed ad network partner postbacks. Meaning the decoded postbacks, not a copy of the SKAdNetwork postback received from iOS. These postbacks contain decoded CV data relating to the install and associated in-app event data of actions performed by the user during the Activity Window.<br /><br />Because the transaction ID can be used to decode your CV, we don't share it without your permission.<br /><br />**Transaction ID sharing**<br /><br />Advertisers [enable transaction ID sharing](/docs/set-up-an-integrated-partner#b-advanced-privacy) as follows: In AppsFlyer, go to **Collaborate** > **Active Integrations** > select a partner > **Integration tab** > **Data sharing**. |
-| In-app event mapping verification | **Action required**: You must [map your in-app events](/docs/in-app-event-postback-configuration#mapping-methods) to the corresponding partner event names so that the partner records postbacks correctly.<br /><br />For each of the partners running SKAdNetwork campaigns verify that the in-app event is set according to the app measurement type selected.<br /><br />**To verify and change partner in-app event mappings**:<ol><li>In AppsFlyer, Go to **Collaborate** > **Active Integrations**.</li><li>Select the partner.</li><li>Go to the **Integration** tab.</li><li>Verify and, if necessary, make settings changes as follows:<ol><li>Turn on **In-app events postback**.</li><li>Verify that the in-app events, **SDK event names** you set in SKAdNetwork measurement are mapped to **Partner event identifiers**.</li></ol></li><li>Click **Save integration**.</li></ol> |
+| <span id="transaction-id-sharing"></span>Transaction ID sharing | **Action required**: Check with the integrated partner if they require the [transaction ID](https://developer.apple.com/documentation/storekit/skadnetwork/verifying_an_install_validation_postback) and configure the setting accordingly.<br /><br />AppsFlyer sends the attributed ad network partner postbacks. Meaning the decoded postbacks, not a copy of the SKAdNetwork postback received from iOS. These postbacks contain decoded CV data relating to the install and associated in-app event data of actions performed by the user during the Activity Window.<br /><br />Because the transaction ID can be used to decode your CV, we don't share it without your permission.<br /><br />**Transaction ID sharing**<br /><br />Advertisers [enable transaction ID sharing](/docs/set-up-an-integrated-partner#b-advanced-privacy) as follows: In AppsFlyer, go to **Collaborate** > **Active Integrations** > select a partner > **Integration tab** > **Data sharing**. |
+| <span id="inapp-event-mapping-verification"></span>In-app event mapping verification | **<span id="1611499069.009700"></span>Action required**: You must [map your in-app events](/docs/in-app-event-postback-configuration#mapping-methods) to the corresponding partner event names so that the partner records postbacks correctly.<br /><br />For each of the partners running SKAdNetwork campaigns verify that the in-app event is set according to the app measurement type selected.<br /><br />**To verify and change partner in-app event mappings**:<ol><li>In AppsFlyer, Go to **Collaborate** > **Active Integrations**.</li><li>Select the partner.</li><li>Go to the **Integration** tab.</li><li>Verify and, if necessary, make settings changes as follows:<ol><li>Turn on **In-app events postback**.</li><li>Verify that the in-app events, **SDK event names** you set in SKAdNetwork measurement are mapped to **Partner event identifiers**.</li></ol></li><li>Click **Save integration**.</li></ol> |
 
 </Accordion>
 
@@ -255,3 +265,5 @@ Take note of the various options and requirements in the table that follows
 >   * [Google Ads](/docs/get-skan-postback-data-from-google-ads)
 >   * [Tik Tok for Business](/docs/skan-interoperation-with-tiktok-for-business)
 >   * [Snapchat](/docs/skan-interoperation-with-snapchat)
+
+<div data-zendesk-anchors="01H7Z06Z03AQY25A3E45Z47A9G=skan 01H7Z06Z03CSKH1ZB9RQP6SHA8=tip 01H7Z06Z03MRE6BCSG1AEXN947=about-apple-skan 01H7Z06Z04G479NAKBEA33SGSZ=appsflyer-skan-solution 01H7Z06Z05CAVK3CR7F5FBKFC5=principles-and-flow 01H7Z06Z05EGK5QBDK6G7BJQJK=skan-attribution-flow 01H7Z06Z053M2H3CJ6SV4VDZPZ=conversion-studio 01H7Z06Z05556NQ35HMR4E2TRY=additional-skadnetwork-information 01H7Z06Z05G0YB56GDG5E196QM=reporting-options 01H7Z06Z05M3BPSBTCMJ3NHK5D=skadnetwork-solution-implementation-checklist 01H7Z06Z05YF4J0MPMJ40EG7BX=troubleshooting-guide 01H7Z06Z0502NW8KFJ7XRZFWJR=timing-from-app-install-until-dashboard-and-reports-update 01H7Z06Z068462E4QTGTSMNS7H=organic-metrics-in-the-context-of-skadnetwork 01H7Z06Z0615QHCY6JZ4MAMTJ8=traits-and-limitations skadnetwork-integrated-partners=skan-integrated-partners 01H7Z06Z06KGT6ESN42XTJSK2F=skan-integrated-partners 01H7Z06Z06NWJQ6W50MCD3P352=recording-ad-revenue 01H7Z06Z06K2ZB949GGTJV6MJP=sending-postbacks-to-integrated-partners h_01HE7TC49KRRX1RVGX1FY7C52T=see-also" />

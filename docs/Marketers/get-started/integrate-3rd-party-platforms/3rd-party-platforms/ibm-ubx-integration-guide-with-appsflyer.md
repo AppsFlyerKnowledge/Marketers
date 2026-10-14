@@ -44,6 +44,8 @@ The IBM configuration window uses only the **Integration** tab.
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -121,11 +123,15 @@ In this section you can map your AppsFlyer events with IBM via postbacks.
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution Links are not available for IBM.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -133,14 +139,20 @@ Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 Permissions are not available for IBM.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H9FK8FS5T9KZ30N87B76QVT5=important h_01H9FK8FS5QPJYSA7JVY4QNB3S=setting-up-ibm h_01H9FK8FS5J30GZS634NMG62BQ=integration-tab h_01H9FK8FS5SYTBF8A3QX4QGESM=activate-partner h_01H9FK8FS5YXRCN83RHG6QBAKS=general-settings h_01H9FK8FS5ZVGX5RK7K72SH6K6=obtaining-the-authorization-key h_01H9FK8FS5SVF4YQC8AG2V6N8D=default-postbacks inapp-event-settings=in-app-event-settings h_01H9FK8FS54N196VQ0XCXJ763Q=in-app-event-settings h_01H9FK8FS50TB7TZH9JKEH3Y7H=attribution-link-tab h_01H9FK8FS54P1MYVXGR46TXN7D=cost-tab h_01H9FK8FS600SP0MS1T6PTBMH4=ad-revenue-tab h_01H9FK8FS65VMZK13D2BE5DT09=permissions-tab" />

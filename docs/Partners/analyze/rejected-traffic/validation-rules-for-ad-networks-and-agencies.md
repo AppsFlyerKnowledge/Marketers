@@ -84,3 +84,5 @@ The **Blocked Reason** and **Blocked Reason Value** fields are populated in the 
 Integrated partners who integrate with AppsFlyer can [receive blocked install postbacks](/docs/rejected-attribution-postbacks-to-integrated-partners) in real-time each time an install is rejected due to enforcement of the rules.
 
 Contact your Partner Development representative for further details.
+
+<div data-zendesk-anchors="h_01HKA04414ZAS0EZX6AGHVTZHY=about-validation-rules h_01HKA04415K37N997EDS8X26PK=availability-to-ad-networks-and-agencies h_01HKA044155S4Y7DAGP05S5FJA=agencies h_01HKA04415P5K6J4VXS64GA2SP=reports h_01HKA0441501DKTQHT3X0G0RC7=protect360-fraud-export-data h_01HKA04415BR5XJABRHSWYTTS7=validation-rules-rejected-installation-postbacks" />

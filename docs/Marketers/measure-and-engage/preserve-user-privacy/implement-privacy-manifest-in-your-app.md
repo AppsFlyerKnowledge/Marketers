@@ -70,6 +70,8 @@ Apple provided a list of APIs that require reasoning for their use. Apps and SDK
 
 To clarify the usage of Required Reason APIs, app developers will be required to declare the API category and specify the reasons for using the API. Below are the AppsFlyer APIs and their usage.
 
+<div id="sdk-version-6140-and-above" />
+
 <Accordion title="SDK version 6.14.0 and above">
 
 | API Category | API Category Type | Reason | Comments |
@@ -78,6 +80,8 @@ To clarify the usage of Required Reason APIs, app developers will be required to
 | [User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401) | NSPrivacyAccessedAPICategoryUserDefaults | CA92.1<br /><br />notionvc: 8aa85ca2-5648-4caa-9cac-b5b5df9ac883 | The SDK stores data that is needed for its operation. For example - maintaining how many times the app was launched. |
 
 </Accordion>
+
+<div id="sdk-versions-6130-and-earlier" />
 
 <Accordion title="SDK versions 6.13.x and earlier">
 
@@ -127,14 +131,20 @@ Any Tracking Domain used in an app or a third-party SDK must be recorded in the 
 
 ## FAQ
 
+<div id="do-i-have-to-update-my-appsflyer-sdk" />
+
 <Accordion title="Does AppsFlyer have an SDK supporting the Privacy Manifest?">
 
 Yes, starting with version 6.14.0, the SDK has full support for the Privacy Manifest.
 
 </Accordion>
 
+<div id="do-i-have-to-report-my-own-data-collection" />
+
 <Accordion title="Do I have to report my own data collection?">
 
 Yes, in addition to AppsFlyer or other SDKs, you will have to determine your own data collection and usage and report that information in the Nutrition Labels, including any configuration changes made to the default AppsFlyer SDK configurations (e.g. measurement of in-app events).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HCY4D9EKHYB5B3YNWRCB53F4=background h_01HCY4ZASEAR69RT3YMHMSE4NP=what-are-nutrition-labels what-to-consider-when-getting-your-app-ready-to-ios17=what-is-in-the-appsflyer-privacy-manifest h_01HCY4D9EKTKB50BSZD7RBMMYB=what-is-in-the-appsflyer-privacy-manifest h_01HQ5C9WGW669HBWSG4WQMJTGP=important h_01HQ03P71BG159MCE3VQY4GTMH=data-usage h_01HT9QHRQSKDQ8GR17N7X5QB8N=note h_01HQ03NV880VHFTXQDE8R6ZRZH=required-reason-apis h_01HSZSWW6Y91BTY1GNXMMVJCEQ=sdk-version-6140-and-above h_01HT9QVD9KZVN7RXWP03XCH8JZ=sdk-versions-6130-and-earlier required-reasons-api=tracking-domains h_01HQ03NV88SJPYKBM66S7X6GP8=tracking-domains 01HQQXSN96D4QTTYHG8CBE8695=faq h_01HCY5XRA96XAYYGB4XCZ8EXXG=do-i-have-to-update-my-appsflyer-sdk h_01HDDQV25KC9XWF7CJ7QBH4XW2=do-i-have-to-report-my-own-data-collection" />

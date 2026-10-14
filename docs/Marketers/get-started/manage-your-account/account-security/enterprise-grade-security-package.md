@@ -20,7 +20,7 @@ x-zendesk:
   promoted: false
   comments_disabled: true
   created_at: '2025-04-03T11:42:43Z'
-  edited_at: '2026-04-26T06:35:42Z'
+  edited_at: '2026-10-14T07:44:39Z'
 ---
 ## Intro
 
@@ -270,6 +270,8 @@ Enhanced IP allowlisting improves security by preventing unauthorized access, en
 
 </Accordion>
 
+<div id="frequently-asked-questions-about-our-security-package" />
+
 <Accordion title="Frequently asked questions about our security package">
 
 #### What is AppsFlyer's Enterprise-Grade Security Package?
@@ -313,3 +315,5 @@ No. The Enterprise-Grade Security Package adds advanced capabilities on top of s
 Deploy enterprise security controls rapidly through seamless SSO integration and automated SCIM provisioning. Most organizations can implement core features within days while maintaining operational continuity and user productivity.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01JRA2GVNZCDW8C9VW6GH3G4KE=intro compare-the-standard-and-advanced-packages=compare-the-standard-and-enterprise-grade-packages h_01JVS101KETCVDMT1B2WZM89NF=compare-the-standard-and-enterprise-grade-packages h_01JQXQ178D9JKZEREHWTQ2FKBF=multitoken-management-with-restrictions h_01JQXRDEMJF2NT73FP1TFJG63Z=key-features h_01JVRZRXPD4AC1GAMJ2HKC1R9E=example h_01JVRZ0ACA19TGC9WJCZ562B70=note h_01JQXSE4TTYXTWCKXDHB20KJ1Z=how-to-access-and-control-tokens h_01JVRZ9X0D5V765FTXHVHMR807=note-1 h_01JQXQ178DHFQ2Y6JDYYBTKJ0V=audit-log-api-and-extended-retention key-features::8c048755=key-features-1 h_01JQXR4X1CT8P8M3NYEVK0WQYM=key-features-1 h_01JVRZ7WBBY3D8GJE2MJ2E4B0G=note-2 h_01JQXQM2H3VCJMWFRBJDWJ5FAZ=how-to-access-the-audit-log-via-api h_01JVRZ69C2JYY9SK12SEVG3KXF=note-3 h_01JQXQ178DSG340QG8R05B8VNX=accordion-item key-features::e7dd8b4e=key-features-2 h_01JV9W8DTENC21GS0380Q9DP8T=key-features-2 h_01JV9W8DTFCE7Z0MQP96MK7BQC=how-to-set-up-scim-provisioning h_01JV9W8DTFHJME1J1JKKJ3NA6C=sso-set-up h_01JV9W8DTG50YYPQ9RS91K2CJ4=enable-scim h_01JVRZ3MC8J0B1E66A47GM5WYZ=note-4 h_01JV9WBJCPQ0X5SKVVNK4TBYRR=idp-instruction-links h_01JV9WTJ33KMJGZGM9P5PRK917=the-instructions-for-the-idps-can-be-found-below-okta-entra-id-azure-onelogin-jumpcloud h_01JV9WBNC51WYW03RKWHBTP0AG=scim-connections h_01JV9WBS928Z7WKJ2A2CFSWNT4=scim-attributes h_01JV9WBX3JHEMAG62JCASYXB59=roles h_01JV9DMY0Y3795TAT3Q1E3PZRM=limitations h_01JVWCNK70QY6PKJRFZGEQ76SW=ip-allowlist key-features::cd0daf96=key-features-3 h_01JVWCSA3D6DJZXJKKYDFWWPC0=key-features-3 h_01K35NHF44511J17KCXTE073QB=adding-ips-to-the-list h_01K3DGBBVYY08KVYS60F2MYDCW=important h_01K35PGV6Y84JR4CZJ0KGQNWZS=removing-ips-from-the-list h_01K85MXJJ7A9ZTS3PSY2Q0ZDGZ=frequently-asked-questions-about-our-security-package what-is-appsflyers-enterprisegrade-security-package=what-is-appsflyers-enterprise-grade-security-package h_01K85MZT9TDAV684V6PBBFGPTX=what-is-appsflyers-enterprise-grade-security-package who-is-the-enterprisegrade-security-package-designed-for=who-is-the-enterprise-grade-security-package-designed-for h_01K85N0D7WVGH94HT1B7NY4KTZ=who-is-the-enterprise-grade-security-package-designed-for h_01K85N0ZV1CMH5VANHQCEGENAW=how-does-scim-provisioning-work h_01K85N1KB8VSR1Y44YJ7CJD4C2=what-compliance-standards-does-this-support h_01K85N26X17PGVN4C6108A47TB=how-many-roles-and-api-tokens-can-i-create h_01K85N2QW51KDHKE4CQE7VJQHE=can-i-integrate-with-my-existing-security-tools h_01K85N37KPK5XTFRRGW62CCN4M=what-network-restrictions-can-i-apply h_01K85N3SVXVC6TD85V1PQ4EF2D=how-long-are-audit-logs-retained h_01K85N4BCQ3NCH1G2P0EFWE3TQ=does-this-replace-standard-security-features h_01K85N4VR1FBESRN1QDRYF077A=how-quickly-can-i-implement-these-security-controls" />

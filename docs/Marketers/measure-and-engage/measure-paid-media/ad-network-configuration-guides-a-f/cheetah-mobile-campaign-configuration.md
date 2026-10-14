@@ -36,6 +36,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partners
@@ -78,6 +80,8 @@ In this section you can map your AppsFlyer events with Cheetah Mobile via postba
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -132,17 +136,23 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cheetah Mobile automatically sends encrypted CPI cost data o the attribution link for all installs.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue data is not supported by this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -174,3 +184,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKWB1JWHPMM479MHE32NEN3Q=setting-up-cheetah-mobile h_01HKWB1JWHSGXPW48YRC2XRBK4=integration-tab h_01HKWB1JWHQH9FT3TW5CP8G45T=activate-partners h_01HKWB1JWHXRJGWJD2J8RAYFZM=note h_01HKWB1JWHHH6F8H8MA8DYD486=general-settings h_01HKWB1JWHMAKZDHQG3MNCFFND=default-postbacks inapp-events-settings=in-app-events-settings h_01HKWB1JWHSW1S1DSTJEBD4ZW0=in-app-events-settings h_01HKWB1JWHAGA1EVKGX1EHWSW5=attribution-link-tab h_01HKWB1JWH7DFXA38WJ0Y2RCV5=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKWB1JWJS6QM7VPSGAY6Y296=click-through-attribution h_01HKWB1JWJTM5SH99NH5X8GVRX=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HKWB1JWJANK35Q2RJQ07Y19T=view-through-attribution-lookback-window h_01HKWB1JWJN47XHK6WY252SR28=impressions-attribution-link h_01HKWB1JWJG9KX8W7GS5HV0ZVY=cost-tab h_01HKWB1JWJJ4G8TK7F15T7CB4Z=ad-revenue-tab h_01HKWB1JWJS5RF65RD0KMA19GF=permissions-tab h_01HKWB1JWJF19NSD07RBKEZTYX=ad-network-permissions h_01HKWB1JWJQ61908VTXKXABGEK=agency-permissions" />

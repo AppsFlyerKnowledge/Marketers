@@ -42,6 +42,8 @@ Using AppsFlyer, these challenges can be overcome by:
 
 Integrate the SDK in the app and prepare the APK using one of the methods according to the target devices Android version.
 
+<div id="integrate-the-sdk-in-the-app" />
+
 <Accordion title="Integrate the SDK in the app">
 
 **Use IMEI and/or OAID instead of GAID**
@@ -70,6 +72,8 @@ An alternative to using GAID is IMEI and/or OAID, where this is available, to en
 
 Use one of the following procedures:
 
+<div id="oaid-starting-from-android-api-level-29" />
+
 <Accordion title="OAID starting from Android API level 29">
 
 There are two methods to collect OAID:
@@ -80,6 +84,8 @@ There are two methods to collect OAID:
 [Instructions to enable the API methods](/docs/android-oaid-implementation-in-the-sdk#msa-sdk)
 
 </Accordion>
+
+<div id="imei-android-api-level-2328" />
 
 <Accordion title="IMEI Android API level 23-28">
 
@@ -291,6 +297,8 @@ Use the following code example to integrate the SDK. **Note:** The code example 
 
 </Accordion>
 
+<div id="preparing-the-apk" />
+
 <Accordion title="Preparing the APK">
 
 Select how attribution data displays in AppsFlyer from:
@@ -348,6 +356,8 @@ The methods described set the parameter AF\_STORE which in turn sets the install
 
 ## Additional attribution considerations
 
+<div id="workaround-for-stores-without-attribution-link-support" />
+
 <Accordion title="Workaround for stores without attribution link support">
 
 Many third-party Android app stores in China also sell traffic, meaning they are also an ad platform. In some cases, these stores do not support the use of attribution links. The following workaround solutions can be used as an alternative:
@@ -356,6 +366,8 @@ Many third-party Android app stores in China also sell traffic, meaning they are
 * [Preinstall name](/docs/appsflyer-factory-preinstall-using-manifest-android) in the manifest file. Using the preinstall name contained in the manifest. The disadvantage of this method is that where the preinstall APK is leaked to the market, attribution information will be incorrect. When using this method ensure that you have the appropriate commercial terms to protect your APK.
 
 </Accordion>
+
+<div id="china-domestic-attribution-links" />
 
 <Accordion title="China domestic attribution links">
 
@@ -381,6 +393,8 @@ For more information about integrated media sources:
 [Android app promotion in China](/docs/android-app-promotion-in-china)
 
 </Accordion>
+
+<div id="detecting-store-hijacking" />
 
 <Accordion title="Detecting store hijacking">
 

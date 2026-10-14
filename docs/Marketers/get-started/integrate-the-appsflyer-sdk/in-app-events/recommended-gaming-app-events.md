@@ -221,6 +221,8 @@ When the user successfully invited a friend to download and install the app
 
 The following section provides an event structure that includes a custom event name and the suggested event parameter to use. Note that in-app events can include any event parameters that meet your business needs.
 
+<div id="bonus-claimed-bonus_claimed" />
+
 <Accordion title="Bonus claimed (bonus_claimed)">
 
 **Purpose**
@@ -238,3 +240,5 @@ When the user claims a bonus and it gets updated to their account
 | bonus\_type | Type of bonus user claims | Coins |
 
 </Accordion>
+
+<div data-zendesk-anchors="gaming=-gaming h_01HGTAVT1XSEY0TS9T2R1H1KXV=-gaming h_01HGTAVT1XTXYHV1MTFR20BR6J=important h_01HGTAVT1X4QQS6GREKC0N0VK6=recommended-structures-for-predefined-events h_01HGTAVT1XAAPGHBTXE6DT9927=login-af_login h_01HGTAVT1X4V41YCXBEXTV0KFR=complete-registration-af_complete_registration h_01HGTAVT1X64710WYNZHTHD7R5=purchase-af_purchase h_01HGTAVT1X24N9J3BMDHV3S54M=level-achieved-af_level_achieved h_01HGTAVT1X5RN4A1MAE0BFB3B4=tutorial-completion-af_tutorial_completion h_01HGTAVT1X952BV07KGZHK68P6=share-af_share h_01HGTAVT1X7KSTYXZGAKEPCXZM=invite-af_invite h_01HGTAVT1YXGTF0E5YQX1C3CJN=recommended-structures-for-custom-events h_01HGTAVT1YNH0YAFYX4PR7D6DH=bonus-claimed-bonus_claimed" />

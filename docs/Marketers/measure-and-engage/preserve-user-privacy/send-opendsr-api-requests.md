@@ -175,6 +175,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_re
 }'
 ```
 
+<div id="zd-gdpr-erasure-request-code-example" />
+
 #### GDPR erasure request code example
 
 <Accordion title="Java">
@@ -585,3 +587,5 @@ Messages having return code 400 contain a JSON with the error code and message.
 
 * **OpenDSR API rate limit: 350 requests per minute**. Exceeding this limit will result in an error, requiring the request to be resent. Staying within this rate limit allows for up to 504,000 requests per day.
 * Checking the status of a request from more than 60 days ago returns "request not found".
+
+<div data-zendesk-anchors="h_01HB866TQ0AWHQ9659Q8Q4XMQM=privacy-regulations h_01HB866TQ0R18S4GCH3KPGNJHD=the-opendsr-initiative h_01HB866TQ06XV2AJDMA3M5Q5KK=definitions h_01HB866TQ0JNEZTHQ7BR1TMD5M=dsr-requirements h_01HB866TQ0HNFGF9QTJNT792N7=appsflyer-gdpr-requests-api h_01HB866TQ0FCZGQ1DWENVSWHSG=gdpr-request-flow h_01HB866TQ0GC7V1081GT53TWEZ=gdpr-request-format h_01HB866TQ0CFAC0X2Y98B4EE5Q=parameters h_01HB866TQ02HMKJMKKPHHR4CMN=subject_identities-objects h_01HB866TQ1CT316PTFBJC59C79=example-gdpr-erasure-request gdpr-erasure-request-code-example=zd-gdpr-erasure-request-code-example h_01HB866TQ1D7290A6G29Q4HDE7=gdpr-erasure-request-code-example h_01HB866TQ1YEZZ4M6QMHTKCEGX=status-request-format h_01HB866TQ1M7G7JNH0V7TEVFYY=status-response-example h_01HB866TQ1109WJ2J13D8FM8KX=status-postbacks h_01HB866TQ1YG0B6JDEQ2KMFEN0=validate-postback h_01HB866TQ1AJCSS2442EEWA19X=discovery-response-example h_01HB866TQ1F72KP3S55ZJYC8Y7=cancellation-response h_01HB866TQ1KFRGX7NZCSJWVW0T=how-does-it-work h_01HB866TQ128R2TSHS4JTCQK70=gdpr-api-return-codes http-return-code-400-bad-request=http-return-code-400---bad-request h_01HB866TQ1A51STZQCJC5TV65X=http-return-code-400---bad-request h_01HB866TQ10MAMTS9WB0CKN55V=return-code-400-bad-request-messages limitations=traits-and-limitations h_01HB866TQ1PXGRX5JRHRSCT0EN=traits-and-limitations" />

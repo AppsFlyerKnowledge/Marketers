@@ -28,6 +28,8 @@ Before you can share eligible conversions with your [off-site campaign](/docs/da
 
 Before the Media partners task can be set up, the collaboration owner needs to assign it to the collaborator who owns the third-party account (e.g, Facebook or Google). For more information, see Assign configuration tasks
 
+<div id="create-a-media-partner-connection" />
+
 <Accordion title="Create a media partner connection">
 
 > 📘 **Note**
@@ -38,10 +40,11 @@ To select or create a media partner connection, follow these steps:
 
 1. On the **Measurement settings** page, click the **Media partners** task.
 
-   <br /><br />**Note**<br />#### Note
+   > 📘 **Note**
+   >
+   > * If the **Media partners** dialog is locked, it means that the **Media partners** task has been assigned to your collaborator and that you cannot view its content. If you are the collaboration owner, you can unlock it and reassign the task to yourself. However, any previous settings will be deleted, and the task will be reset.
+   > * If the **Media partners** pane is grayed out, ask the collaboration owner to assign you the Conversion task.
 
-   * If the **Media partners** dialog is locked, it means that the **Media partners** task has been assigned to your collaborator and that you cannot view its content. If you are the collaboration owner, you can unlock it and reassign the task to yourself. However, any previous settings will be deleted, and the task will be reset.
-   * If the **Media partners** pane is grayed out, ask the collaboration owner to assign you the Conversion task.
 2. In the Media partners dialog, click **+ Connect media partner**.
 3. In the **Connect media partner** dialog, create or select a media partner connection to the media account that activates the campaign:
    * **If an existing connection is available, select it:**
@@ -55,6 +58,8 @@ To select or create a media partner connection, follow these steps:
 
 </Accordion>
 
+<div id="set-the-google-ads-conversion-action-id-parameter" />
+
 <Accordion title="Set the Google Ads Conversion action ID parameter">
 
 If your media partner is Google Ads, provide DCP with the Conversion action ID parameter. The Conversion action ID is obtained from your Google Ads account and included in the conversion data sent to Google Ads. TheConversion Actio**n** must be of type `UPLOAD_CLICKS`.
@@ -67,14 +72,23 @@ To set the Google Ads Conversion Action ID, follow these steps:
 2. In the **Connect media partner** dialog, populate **at least one** of the following fields with the Google Ads conversion action ID. **Note:** You can use the same ID across multiple web or mobile assets, and you may leave some assets unassigned. However, assets without a Conversion Action ID will not be attributed.
 
    * **Web conversion action:** The conversion action ID used for conversion events created on the collaborator website. This must be a **Conversion Action** of type `UPLOAD_CLICKS`.
-   * **App conversion action (per app):** The conversion action ID used for conversion events created on the collaborator app. Enter the corresponding Conversion Action ID, also of type `UPLOAD_CLICKS`.<br /><br />**Note**<br />#### Note
+   * **App conversion action (per app):** The conversion action ID used for conversion events created on the collaborator app. Enter the corresponding Conversion Action ID, also of type `UPLOAD_CLICKS`.
+
+     <br /><br />**Note**<br />
+
+
+   #### Note
 
    These Conversion Actions should be kept **exclusive to DCP measurement** and should not be used for other traffic.
+
+
 3. Click **Done** to return to the main dialog.
 4. Confirm the connection is listed, then click **Save**.
 5. On the **Measurement settings** page, verify the media partner shows a green check mark and status as **Connected**.
 
 </Accordion>
+
+<div id="set-the-meta-ads-meta-pixel-and-dataset-id-parameters" />
 
 <Accordion title="Set the Meta Ads Meta Pixel and Dataset ID parameters">
 
@@ -88,21 +102,27 @@ To set the Google Ads Conversion Action ID, follow these steps:
 2. In the **Connect media partner** dialog, populate **at least one** of the following fields with the Meta or Pixel IDs. **Note:** You may leave some assets unassigned. However, assets without a Conversion Action ID will not be attributed.
 
    * **Meta Pixel:** The ID used for conversion events created on the collaborator website.
-   * **Dataset ID (per app):** The ID used for conversion events created on the collaborator app.<br /><br />**Note**<br />#### Warning
+   * **Dataset ID (per app):** The ID used for conversion events created on the collaborator app.
 
-   The Dataset and Meta Pixel must meet the following conditions:
+     > ⚠️ **Warning**
+     >
+     > The Dataset and Meta Pixel must meet the following conditions:
+     >
+     > * Created specifically for DCP.
+     > * Must **not receive any conversions directly** from the client.
+     > * Meta Pixel and Dataset ID are interchangeable.
 
-   * Created specifically for DCP.
-   * Must **not receive any conversions directly** from the client.
-   * Meta Pixel and Dataset ID are interchangeable.
-   <br /><br />**Note**<br />#### Note
+   > 📘 **Note**
+   >
+   > The **system user** whose credentials are shared with DCP must:
+   >
+   > * Have **access** to the Dataset.
+   > * Be granted **ads\_read** permission.
 
-   The **system user** whose credentials are shared with DCP must:
-
-   * Have **access** to the Dataset.
-   * Be granted **ads\_read** permission.
 3. Click **Done** to return to the main dialog.
 4. Confirm the connection is listed, then click **Save**.
 5. On the **Measurement settings** page, verify the media partner shows a green check mark and status as **Connected**.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01K3G4VZX9X67EG0AA7GASSR51=prerequisites h_01K3G4VZX9QBCX8NGQJ6GV02CS=create-a-media-partner-connection h_01K3G4VZX90X7GFX0S274EP5Y4=note h_01K3G4VZX9GX7JRZ7ZJPSG50VS=note-1 h_01K3G4VZX9S8V2DVCNGNBHEFAD=set-the-google-ads-conversion-action-id-parameter h_01K3G4VZX93P0K0B0R4DR1JMB3=note-2 h_01K3G4VZX9WC21793Q33431PCB=set-the-meta-ads-meta-pixel-and-dataset-id-parameters h_01K3G4VZX9KADAF2XXFEWVXG81=warning h_01K3G4VZXAQBHPPE91WM7R2REH=note-3" />

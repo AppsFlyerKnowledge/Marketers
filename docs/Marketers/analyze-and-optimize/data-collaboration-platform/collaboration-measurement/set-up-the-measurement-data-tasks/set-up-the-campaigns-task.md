@@ -32,6 +32,8 @@ Before the Campaigns task can be set up, the collaboration owner needs to assign
 
 The campaigns source links internal conversion events to campaign-level identifiers (for example, campaign ID) in the context of on-site, off-site, or combined campaigns. The campaign information you set in this task is submitted via a custom data source to DCP.
 
+<div id="1-prepare-campaign-data" />
+
 <Accordion title="1. Prepare campaign data">
 
 Before you set up the campaign source in DCP, prepare the campaign’s custom source and upload it to your cloud service. For details about the mapping schema and how to load the campaign source to your cloud environment, see [Prepare campaign source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source).
@@ -46,6 +48,8 @@ To set up the campaign source in DCP:
 
 </Accordion>
 
+<div id="2-open-campaigns-settings" />
+
 <Accordion title="2. Open campaigns settings">
 
 The **Measurement settings** page is where you configure how campaigns are collected, attributed, and connected to media partner data as part of your collaboration setup.
@@ -58,12 +62,15 @@ To open the **Measurement settings** page, follow these steps:
    * If the link is disabled, set up the collaboration's [data sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources) and [audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences).
 4. On the **Measurement Setting** page, click the **Campaigns** pane to open the **Campaigns** dialog.
 
-   <br /><br />**Note**<br />#### Note
+   > 📘 **Note**
+   >
+   > * If the **Campaigns** dialog is locked, it means that the **Campaigns** task is assigned to your collaborator, and you cannot view its content. If you are the collaboration owner, you can unlock by reassigning the task to yourself. However, any previous settings will be deleted, and the task will be reset.
+   > * If the **Campaigns** pane is grayed out, ask the collaboration owner to assign you the Campaigns task.
 
-   * If the **Campaigns** dialog is locked, it means that the **Campaigns** task is assigned to your collaborator, and you cannot view its content. If you are the collaboration owner, you can unlock by reassigning the task to yourself. However, any previous settings will be deleted, and the task will be reset.
-   * If the **Campaigns** pane is grayed out, ask the collaboration owner to assign you the Campaigns task.
 
 </Accordion>
+
+<div id="3-set-campaign-data-provision-method" />
 
 <Accordion title="3. Set campaign data provision method">
 
@@ -76,6 +83,8 @@ To set up the conversion provision method in DCP, follow these steps:
 3. Click **Next**.
 
 </Accordion>
+
+<div id="4-set-source-location" />
 
 <Accordion title="4. Set source location">
 
@@ -93,6 +102,8 @@ Set the location of the campaign's source in your cloud service.
 4. Click **Next**.
 
 </Accordion>
+
+<div id="5-map-campaign-fields" />
 
 <Accordion title="5. Map campaign fields">
 
@@ -125,6 +136,8 @@ To map the campaigns' custom source fields, follow these steps:
 
 </Accordion>
 
+<div id="5-align-collaborator-name" />
+
 <Accordion title="6. Align collaborator name">
 
 The final step after completing the Campaigns task is to align the collaborator’s name. This is required because each DCP account has only one campaign source. Since the account owner can maintain multiple collaborations with different collaborators, DCP needs to know which collaborator is active in the current collaboration.
@@ -134,3 +147,5 @@ To align the collaborator name:
 * In the **Campaigns** dialog, under **Align collaborator names**, select the collaborator of the current collaboration.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01K3BEVMGMPENVYY18EB0ANQCP=prerequisites h_01K3BEVMGM6EEP6DY54HDDVKTR=set-up-the-campaigns-task h_01K3BEVMGMC9C09FJTRVMS2J32=1-prepare-campaign-data h_01K3BEVMGMT28RXKBN31EBAFYJ=2-open-campaigns-settings h_01K3BEVMGMGV8GVGKZFDCSC0DF=note h_01K3BEVMGM2D9TA52F9F36Z31W=3-set-campaign-data-provision-method h_01K3BEVMGM67JV6VT6TBXTYACC=4-set-source-location h_01K3BEVMGNNFYFF939RHB8Z8E1=5-map-campaign-fields h_01K3BEVMGN4MAV9B0HP2TK5XCC=5-align-collaborator-name" />

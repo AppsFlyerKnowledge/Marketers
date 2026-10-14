@@ -50,3 +50,5 @@ Use the procedure that follows to activate the integration for a given test app.
    2. Turn on **Configure integration**.
    3. Turn on **Configure in-app event postbacks.**
    4. Click **Save permissions**.
+
+<div data-zendesk-anchors="h_01HKA15VM7FM69X0AZ1V2H5XPJ=test-apps-for-ad-networks-ios-and-android h_01HKA15VM7J47374WMRG5132GN=activation-procedure" />

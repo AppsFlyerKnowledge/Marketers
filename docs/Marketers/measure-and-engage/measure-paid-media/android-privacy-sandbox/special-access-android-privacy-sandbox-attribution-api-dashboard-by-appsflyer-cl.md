@@ -40,6 +40,8 @@ The dashboard contains Sandbox campaign performance data and adheres to the foll
 
 ## Dashboard use
 
+<div id="filter-options" />
+
 <Accordion title="Filter options">
 
 | Filter | Remarks |
@@ -53,6 +55,8 @@ The dashboard contains Sandbox campaign performance data and adheres to the foll
 
 </Accordion>
 
+<div id="charts" />
+
 <Accordion title="Charts">
 
 | Chart metric | Remarks |
@@ -60,6 +64,8 @@ The dashboard contains Sandbox campaign performance data and adheres to the foll
 | Installs over time | Elements available: Media source, Campaign, Campaign ID, Ad, Ad ID, Adset, Adset ID, Site ID. |
 
 </Accordion>
+
+<div id="tables" />
 
 <Accordion title="Tables">
 
@@ -101,6 +107,8 @@ The dashboard contains Sandbox campaign performance data and adheres to the foll
 
 ## FAQ
 
+<div id="why-are-there-differences-between-the-overview-dashboard-and-the-sandbox-attribution-dashboard" />
+
 <Accordion title="Why are there differences between the Overview dashboard and the Sandbox attribution dashboard?">
 
 It is not possible to properly compare the Sandbox results to AppsFlyer attribution results for the following reasons:
@@ -114,17 +122,23 @@ It is not possible to properly compare the Sandbox results to AppsFlyer attribut
 
 </Accordion>
 
+<div id="what-revenue-metrics-are-available-in-the-sandbox-attribution-dashboard" />
+
 <Accordion title="What revenue metrics are available in the Sandbox attribution dashboard?">
 
 Currently, total revenue derived exclusively from in-app purchases collected via non-S2S events is supported.
 
 </Accordion>
 
+<div id="what-inapp-event-metrics-are-available-in-the-sandbox-attribution-dashboard" />
+
 <Accordion title="What in-app event metrics are available in the Sandbox attribution dashboard?">
 
 The Sandbox attribution overview dashboard currently supports predefined in-app events only.
 
 </Accordion>
+
+<div id="how-does-the-customer-configure-which-predefined-inapp-events-they-want-to-measure-for-their-app" />
 
 <Accordion title="How does the customer configure which predefined in-app events they want to measure for their app?">
 
@@ -138,3 +152,5 @@ The Sandbox attribution overview dashboard currently supports predefined in-app 
 >
 > * [[Closed Beta] Android privacy sandbox - Attribution API](/docs/closed-beta-android-privacy-sandbox-attribution-api)
 > * [Closed Beta] Android privacy sandbox - Integrated partners list
+
+<div data-zendesk-anchors="h_01J1ANSHFD9989239MAJYX2D35=dashboard-principles h_01J1AP5A97DJPPNZYCM43D4GC4=dashboard-use h_01J1AP8QBP1QGAGTB8HN2896DA=filter-options h_01J1AP8QBPZ3DRWEGZAP25W9C0=charts h_01J1AP8QBP6T04GSHBP92RVWGM=tables h_01J1APR7D7Q6ARZEE2XXDVQJBB=about-the-metrics-table h_01J1AQ09W4FC47P8YY9HYBGQAQ=table-dimensions h_01J1AQ3JZ7VW2432M5A8S4GSBE=table-metrics h_01J1AQ4ST06ZMQW0X17CWKRYN9=faq h_01J1AQWC5G79PH2BY01PCSZ8F6=why-are-there-differences-between-the-overview-dashboard-and-the-sandbox-attribution-dashboard 01JFSFCBQVSEHK5Y0M8P039SFV=what-revenue-metrics-are-available-in-the-sandbox-attribution-dashboard h_01JQ13HZ0587EQ11238BWYFAW3=what-inapp-event-metrics-are-available-in-the-sandbox-attribution-dashboard h_01JQ13HZ05G8HP3TMW5RQ2FT7M=how-does-the-customer-configure-which-predefined-inapp-events-they-want-to-measure-for-their-app h_01J1C7CJ35J21JDPN9TBWZYNVP=see-also" />

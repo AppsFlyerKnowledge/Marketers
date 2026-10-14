@@ -37,6 +37,8 @@ The AppsFlyer SDK collects the data from the customer side, and Protect360 perfo
 
 ## Set up LVL
 
+<div id="add-lvl" />
+
 <Accordion title="Set up process">
 
 Currently, this is a manual process where you'll need to pass the below information to your AppsFlyer CSM so they can add it manually.
@@ -85,6 +87,8 @@ Currently, this is a manual process where you'll need to pass the below informat
 
 </Accordion>
 
+<div id="test-and-troubleshoot" />
+
 <Accordion title="Next steps">
 
 Once we get your request, the Protect360 team will configure LVL verification in STAGING mode. At this stage, the system will only report the results of LVL verification internally for AppsFlyer. A couple of days later, we will check our data.
@@ -121,11 +125,15 @@ Work with your support/SDK team in case there is no LVL information on the insta
 
 ## FAQ
 
+<div id="what-if-an-app-is-installed-from-a-store-other-than-google-play" />
+
 <Accordion title="What if an app is installed from a store other than Google Play?">
 
 LVL validation will not verify and not block installs coming from stores other than Google Play.
 
 </Accordion>
+
+<div id="how-much-time-does-it-take-to-get-lvl-set-up" />
 
 <Accordion title="How much time does it take to get LVL set up?">
 
@@ -133,14 +141,20 @@ Once we get the information, it takes a few business days to set up LVL and veri
 
 </Accordion>
 
+<div id="does-lvl-affect-app-functionality" />
+
 <Accordion title="Does LVL affect app functionality?">
 
 No, app functionality is not affected.
 
 </Accordion>
 
+<div id="what-is-the-difference-between-lvl-and-gpreferrer" />
+
 <Accordion title="What is the difference between LVL and GP-referrer?">
 
 The license verification using LVL, differs from GP-referrer verification algorithms as the LVL handles license verification for the app itself (license per app), while the GP-referrer is used to get the install's redirection source to the Google Play store with the installed package's referrer URL (the timestamps of when a referrer click happened, when the installation began, the app version, etc.). In short, while LVL is used for checking that the user is licensed to use the app, the GP-referrer is used for verifying that the install details were not forged.
 
 </Accordion>
+
+<div data-zendesk-anchors="01H7YJ35YKDHJ2MDZSSYKMDCJ4=overview 01H7YJ35YKDW0CB9TWRBKFBCDJ=set-up-lvl 01H7YJ35YK585NA5F4HZN8C74K=add-lvl 01JGK7NK10ZDD6CM6Y4631FB4Q=note 01H7YJ35YKX1CVYMRZ1W8NRH7Y=test-and-troubleshoot 01H7YJ35YKMCN2E2BDWA5DD5M3=setup-process 01H7YJ35YMR8PBTTSHD77WZ4AE=faq 01H7YJ35YMRZ8KRSVND1JT6JGH=what-if-an-app-is-installed-from-a-store-other-than-google-play 01H7YJ35YM11J0EG0B8PBMSPAC=how-much-time-does-it-take-to-get-lvl-set-up 01H7YJ35YMH0NM73Y1R90JDMEA=does-lvl-affect-app-functionality 01H7YJ35YM6RHCA6QP3MK0Y9J0=what-is-the-difference-between-lvl-and-gpreferrer" />

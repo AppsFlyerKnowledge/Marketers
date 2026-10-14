@@ -129,3 +129,5 @@ You can work with your mobile developers to implement these additional APIs in t
 **See also**
 
 * CTV, PC, and console platform overview
+
+<div data-zendesk-anchors="h_01H9FHRVKE6BHGW05G6YMKF737=about-the-sdk h_01H9FHRVKEQ837Q0GFECNPPAN2=sdk-compatibility h_01H9FHRVKEN0MMGTSD362FTWPS=sdk-integration h_01H9FHRVKE468M1RTMF7VTYV1R=sdk-planning-checklist h_01H9FHRVKERHXY19R97EN86EGP=sdk-integration-tasks" />

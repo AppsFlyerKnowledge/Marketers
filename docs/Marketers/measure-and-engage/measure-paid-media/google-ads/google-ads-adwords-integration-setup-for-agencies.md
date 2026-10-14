@@ -44,6 +44,8 @@ To start agency attribution of Google Ads campaigns with AppsFlyer, follow thes
 
 <Accordion title="Read">
 
+<div id="advertiser-prestep-enabling-the-agency-access-to-google-ads" />
+
 <Accordion title="Advertiser pre-step: enabling the agency access to Google Ads">
 
 **Prerequisites:**
@@ -83,6 +85,8 @@ For more details on sharing your Google Ads Link ID, click [here](https://suppo
 
 </Accordion>
 
+<div id="agency-step-1-accepting-the-link-id" />
+
 <Accordion title="Agency step 1: accepting the Link ID">
 
 On the Google Ads Words dashboard, the Agency receives an Invite and must accept the link.
@@ -94,6 +98,8 @@ The Agency can see the link status is now Active.
 ![Google_ag_8.png](https://files.readme.io/e44b590d4720accfde2ac95b97b18250ba2aab07f12651749592d4ad5aa8c947-50897658832017.png)
 
 </Accordion>
+
+<div id="agency-step-2-setting-up-google-ads-on-appsflyer" />
 
 <Accordion title="Agency step 2: setting up Google Ads on AppsFlyer">
 
@@ -130,6 +136,8 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 
 </Accordion>
 
+<div id="agency-step-3-mapping-your-inapp-events" />
+
 <Accordion title="Agency step 3: mapping your in-app events">
 
 1. Click the **In-App Events** tab.
@@ -156,6 +164,8 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 >   In such a case there is no need to configure the customer id of the MCC account.
 
 </Accordion>
+
+<div id="step-4-measure-your-app-conversions-mandatory" />
 
 <Accordion title="Agency step 4: Measure your app conversions (mandatory)">
 
@@ -205,3 +215,5 @@ Agencies can [retrieve cost data](/docs/set-up-an-integrated-partner#cost-tab) f
 The cost data is displayed on both the agency and advertiser dashboards, at the campaign level.
 
 If the agency is transparent, then in the advertiser's dashboard the cost data is displayed under Google Ads campaigns. If it isn't, the data is displayed under the agency's campaigns.
+
+<div data-zendesk-anchors="h_01HKA1J5ES5T65NT5QMY5ZGXP6=enabling-agency-attribution-of-google-ads h_01HKA1J5ESJYS902S9Z3YY5FV9=setting-up-google-ads-attribution-for-agencies h_01HKA1J5ESF3ZK9E9PKM9AN8C8=advertiser-prestep-enabling-the-agency-access-to-google-ads h_01HKA1J5ETKV3H3KYBEYQZMSXA=agency-step-1-accepting-the-link-id h_01HKA1J5ET2BV8GHXZS5T8KCGZ=agency-step-2-setting-up-google-ads-on-appsflyer h_01HKA1J5ETH4TTVDSP0HNK6F0Q=agency-step-3-mapping-your-inapp-events h_01HKA1J5ETK5PXYFPXPBVH0HJQ=important h_01HKA1J5ETNQ1FCBMVTQED74HG=note h_01HKA1J5ETKH9GKAX3HZMA7W57=step-4-measure-your-app-conversions-mandatory h_01HKA1J5ET210B40MPFQ79PPSN=important-1 h_01HKA1J5ETNTFKKDF6NC635H3W=note-1 h_01HKA1J5ETEWJN8MH9NPWTWX0F=note-2 h_01HKA1J5ETPYE7B2NFPFHA05YT=agencies-collecting-cost-clicks-and-impression-data" />

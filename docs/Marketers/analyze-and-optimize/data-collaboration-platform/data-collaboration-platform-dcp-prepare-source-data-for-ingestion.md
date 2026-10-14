@@ -48,6 +48,8 @@ Most sources used in collaborations involve one or both of the following data ty
 
 This section outlines DCP data structuring guidelines and best practices.
 
+<div id="workflow-and-structuring-guidelines" />
+
 <Accordion title="Recommended data structures">
 
 **To structure your source data for optimal ingestion and maximum outcomes in DCP:**
@@ -58,7 +60,7 @@ This section outlines DCP data structuring guidelines and best practices.
 3. Check that [hashing guidelines](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#appendix-e-hashed-data-formatting-guidelines-by-media-partner) are followed.
 4. For transactional datasets (and other data types where applicable), **use the DCP Data View tool** to create a business-oriented, privacy-safe subset of your data optimized for collaboration, and share it instead of raw tables. [Why Data Views are recommended](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#appendix-c-why-dataviews-matter-and-recommended).
 
-While other structures can be used, they may not be ideally suited for getting the most out of DCP. See [Data structures that aren't recommended](#h_01KFZJ2PK92Y5HHFC2D1H8AD9B).
+While other structures can be used, they may not be ideally suited for getting the most out of DCP. See [Data structures that aren't recommended](#data-structures-that-arent-recommended).
 
 #### Recommended identifier structures
 
@@ -123,6 +125,8 @@ This structure should be represented as **native arrays**.
 
 </Accordion>
 
+<div id="practical-checklist-for-dcp-collaborators" />
+
 <Accordion title="Practical checklist for data structuring">
 
 #### Identity (user-level) dataset checklist
@@ -134,17 +138,19 @@ This structure should be represented as **native arrays**.
 
 #### Transactional (events) dataset checklist
 
-* Keep event/transaction rows as-is. See [Transactional data examples](#h_01KFX6XSJYGYFF052EM8NHNMYQ)
-* Use [Data Views](#h_01KFX6XSJYF4V3ZTX8X07J0FGS) to create collaboration-ready user-level summaries when appropriate.
+* Keep event/transaction rows as-is. See [Transactional data examples](#appendix-a-transactional-data-examples)
+* Use [Data Views](#appendix-c-why-dataviews-matter-and-recommended) to create collaboration-ready user-level summaries when appropriate.
 
 #### Data Views checklist
 
-* Build business-oriented [Data Views](#h_01KFX6XSJYF4V3ZTX8X07J0FGS) (audience-ready, summarized, standardized).
+* Build business-oriented [Data Views](#appendix-c-why-dataviews-matter-and-recommended) (audience-ready, summarized, standardized).
 * Share Data Views instead of raw sensitive tables whenever possible.
 * Minimize shared fields to only what’s needed (for privacy and business protection).
 * Consider aggregations to reduce access to sensitive data and improve efficiency.
 
 </Accordion>
+
+<div id="supported-ingestion-cloud-services-and-formats" />
 
 <Accordion title="Supported ingestion cloud services and formats">
 
@@ -168,9 +174,9 @@ The DCP supports ingestion through multiple cloud services, such as:
 * “Arrays” just means “a list of values.”
 * Parquet and arrays in BigQuery/Snowflake are standard, and most data teams can support this naturally.
 
-See [Connector-specific example assets (AWS S3, GCS, BigQuery, Snowflake).](#h_01KFX6XSJYZNCTGD5CNSKN5KF7)
+See [Connector-specific example assets (AWS S3, GCS, BigQuery, Snowflake).](#appendix-b-connectorspecific-example-assets-aws-s3-gcs-bigquery-snowflake)
 
-<div id="h_01KFZJ2PK92Y5HHFC2D1H8AD9B" />
+<div id="data-structures-that-arent-recommended" />
 
 <Accordion title="Data structures that aren't recommended">
 
@@ -235,7 +241,7 @@ Don’t split identity data across rows when you can keep one row per user.
 
 This section provides additional, in-depth information on relevant topics.
 
-<div id="h_01KFX6XSJYGYFF052EM8NHNMYQ" />
+<div id="appendix-a-transactional-data-examples" />
 
 <Accordion title="Transactional data examples">
 
@@ -254,7 +260,7 @@ Transactional/event data may have multiple rows per user:
 
 </Accordion>
 
-<div id="h_01KFX6XSJYZNCTGD5CNSKN5KF7" />
+<div id="appendix-b-connectorspecific-example-assets-aws-s3-gcs-bigquery-snowflake" />
 
 <Accordion title="Connector-specific example assets (AWS S3, GCS, BigQuery, Snowflake)">
 
@@ -310,8 +316,6 @@ Snowflake supports list-like fields (arrays). This is preferred over creating em
 
 <div id="appendix-c-why-dataviews-matter-and-recommended" />
 
-<div id="h_01KFX6XSJYF4V3ZTX8X07J0FGS" />
-
 <Accordion title="Why Data Views are recommended">
 
 [Data views](/docs/data-collaboration-platform-dcp-create-customized-data-views) are customized subsets of your existing data sources that you can create without changing the original dataset. They let you perform functions that modify, refine, and summarize the data so you can share only what’s relevant in collaborations, keeping the data you share clear and focused, and all other data private and secure. Use Data Views in collaborations because they:
@@ -348,6 +352,8 @@ Data Views can be structured to be lighter and more efficient, which often reduc
 Pre-structuring a collaboration-ready view (especially aggregated views) may make collaboration faster and more operationally predictable.
 
 </Accordion>
+
+<div id="appendix-d-multiple-ids-keys-upload-and-matching-behavior-by-platform" />
 
 <Accordion title="Multiple IDs/keys upload and matching behavior by platform">
 
@@ -417,3 +423,5 @@ Before hashing any data, almost all platforms require the following normalizatio
 | Pinterest | Format: Must include "@". Hashing: SHA-256, MD5, or SHA-1. | Format: E.164. Remove special characters (spaces, hyphens). Hashing: SHA-256, MD5, or SHA-1. | Format: IDFA or GAID. Hashing: SHA-256, MD5, or SHA-1. | Matching Logic: "ID-Centric." Matching is primarily driven by Email and MAID. There is "limited upside" to providing other IDs as cross-ID reinforcement is weak compared to Meta. Upload Behavior: Uploads one identifier type per audience. | DCP Data Ingestion and Structuring Guidelines |
 
 </Accordion>
+
+<div data-zendesk-anchors="about-dcp-ingestion-and-preparation-of-data=about-data-preparation h_01KFX4HVTT50TZMY2YF37B1C4R=about-data-preparation data-types=understand-data-types h_01KFX4HVTTAMFEGJQEYXXWG9PT=understand-data-types data-ingestion-recommendations=data-structuring-guidelines h_01KFX4HVTT2Q2EV4GAC6M8R4A2=data-structuring-guidelines h_01KFZJ2PK9XADZ2143VJB3YZ55=workflow-and-structuring-guidelines h_01KFXB0KEF59QCYET0R8XNH84D=recommended-identifier-structures h_01KFZN8104KSPFRSS5SED7VT19=practical-checklist-for-dcp-collaborators identity-userlevel-dataset-checklist=identity-user-level-dataset-checklist h_01KFZNGRC0XX7YYBYT09M49YFA=identity-user-level-dataset-checklist h_01KFZNJ7YKCT1YFYE400CNY6SP=transactional-events-dataset-checklist dataviews-checklist=data-views-checklist h_01KFZNKBXJQ4S89YHCGKP8J5F4=data-views-checklist h_01KFZJ2PK9TT2RZQ366Y2THS7E=supported-ingestion-cloud-services-and-formats h_01KFX6XSNACVR9JWZWZW12F6C4=format-guidance h_01KFZJ2PK92Y5HHFC2D1H8AD9B=data-structures-that-arent-recommended h_01KFX72MNYH1CSKWZAGZ2XETXY=avoid-multiple-columns-for-the-same-identifier-type avoid-%E2%80%9Clists-inside-a-single-cell%E2%80%9D-free-text=avoid-lists-inside-a-single-cell-free-text h_01KFX70V3BHNK93SKCRGGDVY3W=avoid-lists-inside-a-single-cell-free-text h_01KFX70V3BJE2PR7132QE27C4V=avoid-multiple-rows-per-user-for-identifiers-when-your-goal-is-a-user-identity-table h_01KFZJ2PNKB4X962VKCKSYVFFB=additional-information h_01KFX6XSJYGYFF052EM8NHNMYQ=appendix-a-transactional-data-examples h_01KFX6XSJYZNCTGD5CNSKN5KF7=appendix-b-connectorspecific-example-assets-aws-s3-gcs-bigquery-snowflake what-does-%E2%80%9Carraylist-of-identifiers%E2%80%9D-mean=what-does-arraylist-of-identifiers-mean h_01KFX4HVTVPHZQFNRWDH9VCEZQ=what-does-arraylist-of-identifiers-mean h_01KFX4HVTVNQZY9A8AGEBBHF6Y=1-aws-s3-and-gcs-connector-parquet h_01KFX4HVTVCMB0H1B76TCK36SF=2-bigquery-connector-table-preview-and-schema-screenshot h_01KFX4HVTVN9MSWFB7ZRT9MVCG=3-snowflake-connector-table-preview-and-schema-screenshot h_01KFX6XSJYF4V3ZTX8X07J0FGS=appendix-c-why-dataviews-matter-and-recommended are-businessoriented-and-easier-to-collaborate-with=are-business-oriented-and-easier-to-collaborate-with h_01KFX4HVTV43QFEQARSB2N49Z5=are-business-oriented-and-easier-to-collaborate-with are-more-privacysafe-by-design=are-more-privacy-safe-by-design h_01KFX4HVTVJA8Q3FTQB8A94MA1=are-more-privacy-safe-by-design h_01KFX4HVTVF8A0PM90FA6XA0V5=protect-sensitive-business-data can-make-your-data-more-costeffective-and-performant=can-make-your-data-more-cost-effective-and-performant h_01KFX4HVTVJ70HV606Y8KE4JD1=can-make-your-data-more-cost-effective-and-performant h_01KFX6XSJY4WGJDBP5JEQXC6E3=appendix-d-multiple-ids-keys-upload-and-matching-behavior-by-platform h_01KGFDYKG8KPYR7H5VBKVTXTQS=appendix-e-hashed-data-formatting-guidelines-by-media-partner" />

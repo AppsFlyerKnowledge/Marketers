@@ -88,6 +88,8 @@ The path to the report consists of the following folder hierarchy:
 
 The following are examples of some popular, practical applications of the data that BI developers can extract via Data Locker. Each example is illustrated by an SQL statement
 
+<div id="calculating-total-user-acquisitions" />
+
 <Accordion title="Calculating total User Acquisitions">
 
 Count the number of new unique users per media source and campaign.
@@ -112,6 +114,8 @@ GROUP BY install_date
 ```
 
 </Accordion>
+
+<div id="calculating-total-platform-activations" />
 
 <Accordion title="Calculating total platform activations">
 
@@ -161,6 +165,8 @@ GROUP BY install_date
 
 </Accordion>
 
+<div id="calculating-total-revenue" />
+
 <Accordion title="Calculating total revenue">
 
 Sum the total revenue per media source and campaign.
@@ -184,3 +190,5 @@ GROUP BY install_date
 ```
 
 </Accordion>
+
+<div data-zendesk-anchors="the-report-fields=report-fields h_01K6Z40KG9H1AC81H77XXEGK1B=report-fields h_01K6Z40KG9PTRAFGXB3XJH5TJ7=report-data-freshness h_01K6Z40KG9QPSMXT13N50TE7KE=important h_01K6Z40KG9JTHGJG7YJNH9TTDT=example-of-the-800-am-batch-run h_01K6Z40KG9J1XWV99Z9M7AG0BY=how-to-subscribe-to-the-report how-to-access-the-report-in-your-bucket=how-to-access-the-report-data-in-your-cloud-bucket h_01K6Z40KG9CDQ43ASM5T80AK65=how-to-access-the-report-data-in-your-cloud-bucket h_01K6Z40KG9NSVWTRSHR71Q7PM6=dl-report-folder-hierarchy h_01K6Z7QHDT4Q2D4JFGC28W8MND=bi-developer-considerations h_01K6Z40KG9E2F30Q9P5GFA9TWT=query-examples h_01K6Z40KG9Y4MWKY6HX8A5NPXA=calculating-total-user-acquisitions h_01K6Z40KG9J9VKC3JH6XNNDA52=calculating-total-platform-activations h_01K6Z40KG9SE8068HG75H59E8Q=calculating-total-revenue" />

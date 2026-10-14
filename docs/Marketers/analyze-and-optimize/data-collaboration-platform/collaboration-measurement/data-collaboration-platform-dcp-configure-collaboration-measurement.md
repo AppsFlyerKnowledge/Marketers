@@ -61,6 +61,8 @@ The Measurement settings page includes five key tasks: conversion, engagement, 
 
 The DCP account owner can assign tasks to collaborators to ensure data privacy and reflect the split in responsibilities. For example, one collaborator may handle engagement data while the other handles conversions. Collaborators only have access to the tasks assigned.
 
+<div id="assign-a-configuration-task-to-a-collaborator" />
+
 <Accordion title="Assign a configuration task to a collaborator">
 
 To assign any of the above tasks, follow the steps below:
@@ -74,6 +76,8 @@ To assign any of the above tasks, follow the steps below:
    * **Lookback windows task**– Automatically assigned to the collaboration owner. You may optionally assign the other collaborator.
 
 </Accordion>
+
+<div id="remove-the-configuration-task-assignment-from-a-collaborator" />
 
 <Accordion title="Remove the configuration task assignment from a collaborator">
 
@@ -93,6 +97,8 @@ To remove a configuration task assignment, follow the steps below:
 ## Configure on-site and off-site campaign measurement
 
 Configure the campaign measurement setup in Measurement settings. Use the steps below based on whether your measurement is on-site, off-site, or a combined on-site and off-site setup.
+
+<div id="configure-onsite-campaign-measurement::4f9b35af" />
 
 <Accordion title="Configure on-site campaign measurement">
 
@@ -134,3 +140,5 @@ To set up a [combined on-site and off-site campaign](/docs/data-collaboration-pl
 6. [Set up the lookback windows task](/docs/set-up-the-lookback-windows-task)
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01K3EHANCCZ703MMMM5PTEF68B=overview open-measurement-settings=start-the-measurement-setup h_01JJKK3CQ8F9Q7VM7MM9AFKNN5=start-the-measurement-setup select-campaign-type-onsite-offsite-or-both=select-campaign-type-on-site-off-site-or-both h_01K3EHANCCW8PQ8NWC6ZHWCMGT=select-campaign-type-on-site-off-site-or-both h_01K3EHANCCW97TV88ECVMQKF2N=assign-configuration-task h_01K3EHANCD71R47V88DR61CTMV=assign-a-configuration-task-to-a-collaborator h_01K3EHANCDF1HMTV8X35Q1RHTS=remove-the-configuration-task-assignment-from-a-collaborator configure-onsite-campaign-measurement=configure-on-site-and-off-site-campaign-measurement h_01K3EHANCD936QN2MKFY5QSDBZ=configure-on-site-and-off-site-campaign-measurement h_01KJWCMN3XRTS3361N08RT1SD6=configure-onsite-campaign-measurement::4f9b35af h_01KJWCMN3XRXW6A71P5678AHH1=configure-offsite-campaign-measurement h_01KJWCMN3XKD8YJVPQEZ53K819=configure-combined-onsite-and-offsite-campaign-measurement" />

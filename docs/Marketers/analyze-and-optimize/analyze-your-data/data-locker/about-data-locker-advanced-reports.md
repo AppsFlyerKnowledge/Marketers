@@ -141,3 +141,5 @@ The set of available filters depends on the data product. The table below shows 
 | **Engagements** | Campaign type, Engagement type, Country, Media source, and App |
 | **End-user events** | Event name, Platform group, Conversion type, Country, Is primary attribution, Media source, and App |
 | **Cross-platform end-user events** | Event name, Platform group, Conversion type, Country, Is primary attribution, Media source, and App |
+
+<div data-zendesk-anchors="h_01KNC1RP0RM102X8A8XQK7GKAZ=about-advanced-reports h_01KNC1RP0RK5CGNQ9ZT7PB3EA5=consolidated-data-by-data-product data-thats-ready-to-use=data-that-is-ready-to-use h_01KNC1RP0RZC1Z2EAZGW701789=data-that-is-ready-to-use h_01KNC1RP0RQYQJXYQTQ2GBR26F=precise-control-over-what-you-receive h_01KNC1RP0RNJV2FY8EH6T609FP=advanced-reports-vs-legacy-reports report-types=available-reports h_01KNC1RP0RVMSSTVM8ZADT72RB=available-reports h_01KNC1RP0R4Y6YFCNWGWZK4ETF=report-templates h_01KNC1RP0RRC4498475BQXWT03=report-level-filters" />

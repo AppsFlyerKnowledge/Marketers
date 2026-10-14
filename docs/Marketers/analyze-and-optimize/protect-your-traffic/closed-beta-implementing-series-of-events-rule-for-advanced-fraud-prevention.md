@@ -341,3 +341,5 @@ Fraud. Since the same Event (Event B) happened twice, we presume fraud, as you c
 If the reinstall resets events the user already completed, it's treated as a violation. If the user resumes from where they left off, no violation is flagged.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01J2DZP5DWZ0V52PA0RGQ4PNHN=intro h_01J2E0CYHW4TBK6TQHMHYEVGEM=who-is-this-for h_01J2E0MZYM7GZ2N6Z0NDRQQPTF=how-to-set-up-a-series-of-event-rule h_01J2ED6016XRPDVJBJ0X388THJ=important h_01KWSHAXG3K8PQV334JHGC8A0G=accessing-data h_01J2E0XXG85150ZBSSFVF98W83=examples h_01KWSHAXG4PFT77C0FWCXTF3AH=faq" />

@@ -36,6 +36,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partners
@@ -78,6 +80,8 @@ In this section you can map your AppsFlyer events with Fiksu via postbacks.
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -132,17 +136,23 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost integration is not available for Fiksu.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue data is not supported by this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -174,3 +184,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKWB9WVVQ64QR9YX3MH7VGEQ=setting-up-fiksu h_01HKWB9WVVB2KTKYH4H71KYSPH=integration-tab h_01HKWB9WVWEM3JV591Y10JKSJX=activate-partners h_01HKWB9WVWFXCANSKQ6BHSP7AC=note h_01HKWB9WVWZW406F39Q1Q05PPF=general-settings h_01HKWB9WVW2JJV6GXS6PAW8Z5D=default-postbacks inapp-events-settings=in-app-events-settings h_01HKWB9WVWRWKH9YBPBA0KJXXW=in-app-events-settings h_01HKWB9WVWSN05C4QGGZJ1E07E=attribution-link-tab h_01HKWB9WVW907GFS5DD4Y8BA22=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKWB9WVW55W199VX5NBVVKFK=click-through-attribution h_01HKWB9WVWK0HNABYVH9MVFYB6=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HKWB9WVWKNPP1Y4FET06W02S=view-through-attribution-lookback-window h_01HKWB9WVW0DE7Z290K91HVN92=impressions-attribution-link h_01HKWB9WVXWCA9FQAS7E6V3JR8=cost-tab h_01HKWB9WVX2TETG4366S0YQAB9=ad-revenue-tab h_01HKWB9WVX4697WV73434RGZ9R=permissions-tab h_01HKWB9WVXNCKD1E5Y9AG54B08=ad-network-permissions h_01HKWB9WVXSFDH3309H2ST85NS=agency-permissions" />

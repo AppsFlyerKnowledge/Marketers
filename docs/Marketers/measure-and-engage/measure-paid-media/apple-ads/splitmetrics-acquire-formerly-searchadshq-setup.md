@@ -78,3 +78,5 @@ Before you start configuring SplitMetrics Acquire on AppsFlyer, obtain your **cl
 | Send Revenue | Select one of the following: No values and no revenue, Values & no revenue, or Values & revenue. |
 
 5. Click **Save Integration**.
+
+<div data-zendesk-anchors="enabling-apple-search-ads-attribution=enabling-apple-ads-attribution h_01HBB5JWBAZMD5BHPGQYHYQY0Q=enabling-apple-ads-attribution h_01HBB5JWBA612TQV90K56H319J=note setting-up-searchadshq-on-appsflyer=setting-up-splitmetrics-acquire-on-appsflyer h_01HBB5JWBA6QPV3ZN0FCBK0BHR=setting-up-splitmetrics-acquire-on-appsflyer getting-required-information-from-searchadshq=getting-required-information-from-splitmetrics-acquire h_01HBB5JWBA6CGAAQAA9DZ4XMNS=getting-required-information-from-splitmetrics-acquire h_01HBB5JWBAMHKBAMQD4TTQSZ0H=setting-up-campaigns-on-appsflyer configuring-inapp-event-postbacks=configuring-in-app-event-postbacks h_01HBB5JWBBHMKT3Z9JKEQJAZZ7=configuring-in-app-event-postbacks" />

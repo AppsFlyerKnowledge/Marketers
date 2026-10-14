@@ -52,6 +52,8 @@ Agency traffic is set by default to be transparent. [Learn more](/docs/getting-s
 
 ## Comparing different types of accounts
 
+<div id="agency-versus-marketer-accounts" />
+
 <Accordion title="Agency versus marketer accounts">
 
 * **Marketer accounts** are geared towards serving the app and data-owner. Marketers add apps to their accounts and determine the data-access permissions.
@@ -76,6 +78,8 @@ Account structures permit knowledge-sharing between global agency teams and enab
 | <ul><li>Lifetime value overview dashboard</li><li>In-app events dashboard</li><li>Retargeting dashboard</li><li>Active integrations</li><li>[SSOT dashboard](/docs/getting-started-agency-onboarding#single-source-of-truth-ssot-for-agencies)\*\*</li></ul>\*\* Available only after the marketer has enabled this option. | <ul><li>Activity dashboard</li><li>Custom dashboard</li><li>People-based analytics</li><li>Audiences</li><li>Pivot report</li><li>Push API</li><li>Data locker</li></ul>*Only cohort reports are available upon marketer permission | <ul><li>Retention report</li><li>Cohort dashboard report</li><li>[Cohort report from Data Locker](/docs/data-locker-reports-for-agencies)</li><li>Protect360</li><li>Raw-data export</li><li>Aggregate organic data</li><li>Pull API</li></ul> |
 
 </Accordion>
+
+<div id="agency-vs-ad-network-account" />
 
 <Accordion title="Agency vs. ad network account">
 
@@ -207,6 +211,8 @@ Agencies can give the ad networks permission to configure in-app postbacks to th
 
 </Accordion>
 
+<div id="reporting-for-agencies" />
+
 <Accordion title="Reporting for agencies">
 
 * Traffic statistics are viewed and downloaded directly from the AppsFlyer dashboard.
@@ -271,3 +277,5 @@ If you have a hybrid account, they may appear on your dashboard, but you will ge
 If you would like to use these features, it's recommended to open a new Marketer account and separate your Marketer and Agency apps. The features mentioned above will be available in your Marketer account if you have them enabled.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HDNYNZYR2FTMQ71EV2AY3A3A=about-agency-accounts h_01HDNYNZYRZKK97GZ6R0MB9RQN=agency-access-to-marketer-data h_01J00RYT8J0MBPHTGK5T4WEE43=agency-access-to-ad-network-integrations h_01HJR00RGQX0CQEHDS9BHBGJD4=note h_01HDNYNZYRYHJ98YQWVVENZ07P=agency-transparency h_01HDNYNZYR65409AGM9F2PZRC8=comparing-different-types-of-accounts h_01HDNYNZYS7A2H60EEAJ114VSM=agency-versus-marketer-accounts h_01HDNYNZYSS7WSQ07S7KRADN7Z=differences-between-marketer-and-agency-accounts h_01HDNYNZYSX4WPQKS0H6JN6FCP=features-available-to-agencies h_01HDNYNZYS8KRSPM5CPVJEJ74Y=agency-vs-ad-network-account h_01HDNYNZYS4VPZMY34WA3SG5JT=differences-between-ad-network-and-agency-accounts agency-accounts%E2%80%94campaigns-and-reporting=agency-accountscampaigns-and-reporting h_01HDNYNZYS32SNR5F0WKJ4G9Q1=agency-accountscampaigns-and-reporting h_01HDNYNZYSNF2RQ3E7PM4HK433=agency-setting-up-campaigns h_01KC9MDDRPTB05PV6NCGZVFRMJ=important selfreporting-ad-networks=self-reporting-ad-networks h_01HDNYNZYS8X1VA4T46DQYQZFE=self-reporting-ad-networks h_01HDNYNZYS8AM2MFPRXFA4JXNS=srn-configurations h_01HDNYNZYSFXZXR99T6ME2R43F=example nonsrns=non-srns h_01HDNYNZYSN28VZQKCBRGXAVY0=non-srns h_01HDNYNZYSG5MQDDKV55HF4X9C=ad-network-configuration-visibility h_01HDNYNZYSC7XNJCJ1F27KTM9Z=af_prt-parameter special-case-allinstalls-and-alllaunches-networks=special-case-all-installs-and-all-launches-networks h_01HDNYNZYSB4MKXD47E1VHDN62=special-case-all-installs-and-all-launches-networks h_01HDNYNZYSHNV2B27JQV4EEVFM=how-to-setup-agency-attribution-with-all-installslaunches-networks h_01HDNYNZYS5WYADGW24AVK9RCZ=example h_01HDNYNZYS5W0SMCF1YC6C3G4C=deep-linking h_01HDNYNZYS3Z7RE51M7G7386VZ=retargeting inapp-events=in-app-events h_01HDNYNZYTDFN4MB6QBEQ8P5XW=in-app-events inapp-event-postbacks=in-app-event-postbacks h_01HMDP38S3NPE5R4QZJ5CW404W=in-app-event-postbacks h_01HDNYNZYTA767NGSTNECTBCV2=reporting-for-agencies h_01HDNYNZYTYBWGMY2PP8MPQE2F=note-1 access-to-performance-reports=access-to-aggregate-data h_01HDNYNZYTDH4S38XG3JCZQYJJ=access-to-aggregate-data h_01HDNYNZYT4ZKBNGDR3QR1VTEZ=access-to-raw-data h_01HDNYNZYT97ET1TQHKSRDMWDC=time-zone-and-currency h_01HDNYNZYTYT9NHMHQQ77PK8CQ=cost-reporting h_01HDNYNZYTWB5WVYY8C347G1ME=accessing-and-viewing-cost-data h_01HDNYNZYTKZTCBSBKZEJ7M0JN=hybrid-account-data-access" />

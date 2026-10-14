@@ -43,6 +43,8 @@ NativeX's configuration window includes 4 active tabs: Integration, Attribution 
 * The General Settings step in the Integration tab is **mandatory** for all partners
 * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partners
@@ -85,6 +87,8 @@ In this section, you can map your AppsFlyer events with NativeX via postbacks.
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -139,17 +143,23 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 NativeX automatically sends encrypted CPI cost data on the attribution link for all installs.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue data is not supported by NativeX.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -170,3 +180,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW7WZR589NZ45YYQB48W2M5=setting-up-nativex h_01HKW7WZR52157AQERBZY0VV75=integration-tab h_01HKW7WZR5QY0Y3NAKAGMJ8W6C=activate-partners h_01HKW7WZR51EWEB7Q0JDA69T2Z=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW7WZR5P648PG9P2E7E7XRM=in-app-events-settings h_01HKW7WZR6W3ANFNEKZQ90RBTJ=attribution-link-tab h_01HKW7WZR617PKZ0GT3BME4NQH=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW7WZR68SBAC1XFH5143FXP=click-through-attribution h_01HKW7WZR6GQ15Y45TC5FKDX54=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HKW7WZR6QJ9P1KB54TWFD0YC=view-through-attribution-lookback-window h_01HKW7WZR6Q7Q77EF1J9V3BHMR=impressions-attribution-link h_01HKW7WZR6RGPNHCVPX80FW1Q6=cost-tab h_01HKW7WZR6955K4V6NA6MJ519J=ad-revenue-tab h_01HKW7WZR61N5CH1PZBE9YCNVA=permissions-tab h_01HKW7WZR6KMJS50DNJX5E7KQ1=ad-network-permissions" />

@@ -40,6 +40,8 @@ AppsFlyer integration with Appodeal supports click attribution and [user-level a
    Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below:
 
+<div id="integration" />
+
 <Accordion title="Integration">
 
 Configure this section if Appodeal provides ad network advertising services.
@@ -50,6 +52,8 @@ Configure this section if Appodeal provides ad network advertising services.
 2. Click **Save Integration**.
 
 </Accordion>
+
+<div id="attribution-link" />
 
 <Accordion title="Attribution link">
 
@@ -81,11 +85,15 @@ Generate click attribution links (for use by Appodeal) via this tab. [More about
 
 </Accordion>
 
+<div id="cost" />
+
 <Accordion title="Cost">
 
 Appodeal sends CPI cost data via the attribution link.
 
 </Accordion>
+
+<div id="ad-revenue" />
 
 <Accordion title="Ad revenue">
 
@@ -98,8 +106,12 @@ Appodeal sends CPI cost data via the attribution link.
 
 </Accordion>
 
+<div id="permissions" />
+
 <Accordion title="Permissions">
 
 No permissions need to be set for Appodeal.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW9BK4ZAR4Q22Z9WBVFPPT7=setting-up-appodeal-integration h_01HKW9BK4ZDFDX9X7P2HW4QR1P=integration h_01HKW9BK4ZM4JMQKT4Y8ZC050V=attribution-link h_01HKW9BK4ZV8DWSZQ55332NQWY=cost h_01HKW9BK4ZS3GYMZ6E9T64PPGC=ad-revenue h_01HKW9BK4ZJ1F1Z099NJHRZRNE=permissions" />

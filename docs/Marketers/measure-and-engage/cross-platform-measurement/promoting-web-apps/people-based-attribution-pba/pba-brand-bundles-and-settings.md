@@ -160,11 +160,15 @@ A domain exclusion mechanism, part of [PBA media source rules,](/docs/pba-media-
 
 ## FAQ
 
+<div id="can-i-include-the-same-app-in-more-than-one-bundle" />
+
 <Accordion title="Can I include the same app in more than one bundle?">
 
 **No.** Once an app is added to a bundle, it can't be added to another bundle.
 
 </Accordion>
+
+<div id="can-i-add-or-remove-apps-after-creating-a-bundle" />
 
 <Accordion title="Can I add or remove apps after creating a bundle?">
 
@@ -173,6 +177,8 @@ A domain exclusion mechanism, part of [PBA media source rules,](/docs/pba-media-
 **Why?** Each app has its own data, and AppsFlyer uses this data to analyze the user journey across platforms (web and app). If an app changed, this would involve a different set of data that is not compatible with the previous data.
 
 </Accordion>
+
+<div id="how-do-i-add-or-remove-delete-apps-from-a-bundle" />
 
 <Accordion title="How do I add or remove (delete) apps from a bundle?">
 
@@ -195,12 +201,16 @@ If you delete a bundle:
 
 </Accordion>
 
+<div id="why-are-certain-apps-not-available-for-me-to-add-to-a-bundle" />
+
 <Accordion title="Why are certain apps not available for me to add to a bundle?">
 
 * **Admins:** If you can't select an app when creating a bundle, be sure the app has been added to your AppsFlyer account and is not included in another bundle.
 * **Other account users:** Check with an account admin to ensure you have the required role and permissions to access to the apps you are trying to add.
 
 </Accordion>
+
+<div id="page-404" />
 
 <Accordion title="Why do I get the 'We couldn't find that Page' error when I try to view or create a brand bundle?">
 
@@ -212,3 +222,5 @@ You probably didn’t subscribe to PBA. Please contact your CSM or [hello@appsf
 >
 > * [Onboarding guide to PBA](/docs/onboarding-guide-to-people-based-attribution)
 > * [PBA getting started](/docs/people-based-attribution-pba-overview)
+
+<div data-zendesk-anchors="h_01HE0Y2A3A5W86YY44RWCTKM1Y=about-brand-bundles h_01HE0Y2A3AYAFFSPRSH2BQ00Z3=what-is-a-web-app h_01HE0Y2A3A7265NYM7GVBZVXEN=accessing-brand-bundles h_01HE0Y2A3A272QJ4ZQH7VXJWCC=managing-brand-bundles h_01HE0Y2A3ATX4ZDYZSRQGSJ4G7=add-brand-bundle h_01HE0Y2A3AQC5MMNQA0AV34MZ3=important h_01HE0Y2A3ATN6DEQ2KHCGT6VPQ=web-event-settings h_01HE0Y2A3A76VBZ17W4P1D0K2A=inapp-event-settings h_01HE0Y2A3A7F2YEW2SK0PSXXE4=domain-exclusion h_01HE0Y2A3AB24NCNPAYFC0J4YH=faq h_01HE0Y2A3A5E816CYG2TMZ37DA=can-i-include-the-same-app-in-more-than-one-bundle h_01HE0Y2A3BENKY1AM51VM76TVS=can-i-add-or-remove-apps-after-creating-a-bundle h_01HE0Y2A3BK4JKMTND0JFCB179=how-do-i-add-or-remove-delete-apps-from-a-bundle h_01HE0Y2A3BKJTQZJXV49X32N1E=what-happens-if-i-delete-a-bundle h_01HE0Y2A3B276FV92EYBCZRA6C=faqs-what-happens-if-i-delete-a-bundle h_01HE0Y2A3BEB2JG8CPSX3DA1V9=why-are-certain-apps-not-available-for-me-to-add-to-a-bundle h_01JTQF9DZZZ5JFN43Y5KJJV943=page-404 h_01HE0Y2KTXS06WHN57MQ91AD09=see-also" />

@@ -52,6 +52,8 @@ Petal Ads Global requires to use **OAID** for attribution. Refer to [**our Andro
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The **Integration Tab** is divided into different sections:
@@ -94,6 +96,8 @@ Configure in-app event postbacks that are sent to Petal Ads Global.
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -116,17 +120,23 @@ When generating the attribution link, select parameters from the list below and 
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data is not supported by this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue data is not supported by this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -140,7 +150,7 @@ In this tab, you can select the permissions to grant Petal Ads Global. Note that
 
 **To configure AppsFlyer attribution on Petal Ads Global, please click** [**here**](https://developer.huawei.com/consumer/en/doc/distribution/promotion/appsflyer-0000001122291488) **to learn more from Huawei Support Center.**
 
-1. Obtain the impression and click tracking URLs in AppsFlyer.
+1. <span id="EN-US_TOPIC_0000001122291488__li7712141055015"></span><span id="EN-US_TOPIC_0000001122291488__en-us_topic_0000001122291488_ol75772831710"></span>Obtain the impression and click tracking URLs in AppsFlyer.
 2. Associate AppsFlyer in Petal Ads Global.
 3. Set the data postback in AppsFlyer.
 4. Create a conversion in Petal Ads Global.
@@ -163,3 +173,5 @@ In this tab, you can select the permissions to grant Petal Ads Global. Note that
 | Downloads | Huawei | n/a | AF does not have this metric. |
 | Activations | Activations are from AppsFlyer; Activations HMS is from Huawei | Huawei Activations > AF installs | Huawei’s activations are AF's installs. The data discrepancy results from different data reporting logics. <br /><br />For example, a user downloaded the app from AppGallery on Dec 24th, and first-opened the app on Dec 25th. In this case, AF will record the install on Dec 25th, while Petal Ads Global will record this activation on Dec 24th. |
 | Day2 retention and other in-app events | For non-HMS ones, the data sources are AppsFlyer. | Huawei > AF | The data discrepancy results from different data reporting logics. <br /><br />Following the example above, the user registered in the app on Dec 26th, AF overview dashboard will display the registration data on Dec 25th, same as the install date. While Petal Ads Global promotion dashboard will display the registration on Dec 24th, the same as the download date. |
+
+<div data-zendesk-anchors="huawei-ads-introduction=petal-ads-global-introduction h_01HJQZWW4SH5E9C3VXYM6NNPBA=petal-ads-global-introduction setting-up-huawei-ads=setting-up-petal-ads-global h_01HJQZWW4SQ3CDC1TP9NZGQHH5=setting-up-petal-ads-global h_01HJRA1NPKF36ZV8AB3PKGWMXS=setting-up-the-petal-ads-global-integration h_01HJQZWW4SPFQAKKPJCZ38YNV4=integration-tab h_01HJQZWW4TR0XVYFYWPGAQ2FMX=activate-partner h_01HJQZWW4T9QYECWJKFN8SV5D5=general-settings h_01HJQZWW4T62ZJSH1RBGJSC8MY=default-postbacks inapp-events-settings=in-app-events-settings h_01HJQZWW4T44X5H42KAR432VN7=in-app-events-settings h_01HJQZWW4T7TEZ27VRFPFY7DKA=attribution-link-tab h_01HJQZWW4TGDKCV8Q7B80Y5ZWG=cost-tab h_01HJQZWW4T384J7GVEEJ2EQZ0N=ad-revenue-tab h_01HJQZWW4T2P0NZ51TSF8VDEBP=permissions-tab configuring-campaigns-on-huawei-ads-global=configuring-campaigns-on-petal-ads-global h_01HJQZWW4TEX7SDZSG03AK51H9=configuring-campaigns-on-petal-ads-global h_01HJQZWW4VNTKP5R4KYWX80P5P=data-discrepancies data-reporting-on-huawei-ads-and-faqs-of-data-discrepancy=data-reporting-on-petal-ads-global-and-faqs-of-data-discrepancy h_01HJQZWW4VZV1R32TMGGEVNCVA=data-reporting-on-petal-ads-global-and-faqs-of-data-discrepancy" />

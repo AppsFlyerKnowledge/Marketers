@@ -159,6 +159,8 @@ See our Subscription attribution—Overview for more information.
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
+<div id="media-play-media_play" />
+
 <Accordion title="Media play (media_play)">
 
 **Purpose**
@@ -186,6 +188,8 @@ After a predefined number, for example, 2 minutes, of streamed content.
 | language | Language of the content | en-us, fr, es |
 
 </Accordion>
+
+<div id="media-minutes-media_minutes" />
 
 <Accordion title="Media minutes (media_minutes)">
 
@@ -216,6 +220,8 @@ One of the following:
 
 </Accordion>
 
+<div id="media-downloaded-media_downloaded" />
+
 <Accordion title="Media downloaded (media_downloaded)">
 
 **Purpose**
@@ -238,6 +244,8 @@ When a user starts downloading media
 
 </Accordion>
 
+<div id="media-saved-media_saved" />
+
 <Accordion title="Media saved (media_saved)">
 
 **Purpose**
@@ -259,3 +267,5 @@ Whenever media is saved on the user's device
 | language | Language of the content | en-us, fr, es |
 
 </Accordion>
+
+<div data-zendesk-anchors="entertainment=-entertainment h_01HGTAX1B0KT8Q6PRE41JCPJ60=-entertainment h_01HGTAX1B0K2RKYGPFFARM0E1B=important h_01HGTAX1B05C7G67RJPSG3YF66=recommended-structures-for-predefined-events h_01HGTAX1B0CN19DY7PAR27YATD=complete-registration-af_complete_registration h_01HGTAX1B0MG1MTD7QXBCK6JHN=login-af_login h_01HGTAX1B0GTJ6ZWRNW5SEJVE9=start-trial-af_start_trial h_01HGTAX1B1XW0RAV8WPP0HF8HD=note h_01HGTAX1B1AHHGW6SMXST1KXQE=subscription-af_subscribe h_01HGTAX1B1ATFH70K2BJZ7XW13=recommended-structures-for-custom-events h_01HGTAX1B1WRQ39H27KPRFZH9W=media-play-media_play h_01HGTAX1B15Z24J8JKKAQH2Z2S=media-minutes-media_minutes h_01HGTAX1B1JPY44SYM59K0M9H2=media-downloaded-media_downloaded h_01HGTAX1B1FXF1DRC91VYRCGMP=media-saved-media_saved" />

@@ -45,6 +45,8 @@ an account, contact the partner to open one before setting up the integration.
    more about
    [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 Connect to Hotstar by activating and setting parameters in the integration tab.
@@ -68,6 +70,8 @@ Connect to Hotstar by activating and setting parameters in the integration tab.
 | Send revenue | [Default] **Not enabled:** Send all the in-app parameters to Hotstar, except for the revenue parameter (`af_revenue`).<br /><br />**Enabled**: Send all the in-app parameters including, when available, the revenue amount. |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -101,17 +105,23 @@ Learn more about[link structure and parameters](/docs/about-link-structure-and-p
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost attribution is not available for this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue attribution is not available for this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -135,3 +145,5 @@ You can give Hotstar permission to view information or configure changes in the 
    * **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKA2884DABDCZ8DGY7456A4X=hotstar-integration-in-appsflyer h_01HKA2884DMN9DT8KJQNMJ7P73=integration-tab h_01HKA2884D16FT48173A5TQ44G=attribution-link-tab h_01HKA2884EPHWNNT5MGNNPC5G2=cost-tab h_01HKA2884EPQCRQBX9RRV5YEDK=ad-revenue-tab h_01HKA2884E57SB3X86W6QVB80Y=permissions-tab h_01HKA2884EECK51Z5NQKSGWE96=ad-network-permissions" />

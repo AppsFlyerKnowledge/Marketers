@@ -60,3 +60,5 @@ x-zendesk:
 2. Select one of your registered test devices from the drop-down menu and click Next.
 3. Scan the QR code with your registered test device and follow the instructions on your device.
 4. Wait until the Deep Link is registered successfully on the Integration Test page.
+
+<div data-zendesk-anchors="testing-nonorganic-install=testing-non-organic-install testing-inapp-events=testing-in-app-events" />

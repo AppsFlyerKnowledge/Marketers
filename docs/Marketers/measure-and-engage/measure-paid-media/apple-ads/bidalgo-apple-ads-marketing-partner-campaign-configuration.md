@@ -74,3 +74,5 @@ Installs and re-engagements are sent automatically when the partner is activated
 | Send Revenue | Select one of the following: No values and no revenue, Values and no revenue, or Values and revenue. |
 
 4. Click **Save Integration**.
+
+<div data-zendesk-anchors="enabling-sending-postbacks-to-bidalgo-apple-search-ads-marketing-partner=enabling-sending-postbacks-to-bidalgo-apple-ads-marketing-partner h_01HKW0AZ05126SWNF374821AAH=enabling-sending-postbacks-to-bidalgo-apple-ads-marketing-partner h_01HKW0AZ05SXCVY0M3M7R07KG6=note h_01HKW0AZ06QFMYPJF95XQRAK99=configuring-bidalgo h_01HKW0AZ06SPXE8K9JQN60B8T2=default-postbacks configuring-inapp-events-postbacks=configuring-in-app-events-postbacks h_01HKW0AZ06F0169D59AWKQJN87=configuring-in-app-events-postbacks" />

@@ -27,6 +27,8 @@ Data needs to be received and processed before it becomes available in dashboard
 
 The following sections explain when and how to compare ROI360 ad revenue data in AppsFlyer reports to the data you may see in partner dashboards and reports.
 
+<div id="comparing-appsflyer-data-with-mediation-partner-data" />
+
 <Accordion title="Compare AppsFlyer data with mediation partner data">
 
 | Integration type | Data type | What data can be compared to what |
@@ -38,6 +40,8 @@ The following sections explain when and how to compare ROI360 ad revenue data in
 | SDK and S2S (freshness to accuracy) | Device-level (via S2S API) | <ul><li>Compare the total revenue displayed in the AppsFlyer activity dashboard or the total revenue displayed in the single version ad revenue report via Data Locker to the mediation partner total revenue data.</li><li>Wait until the day after the revenue event (Day 0+1) to compare data, so that both AppsFlyer and the mediation partner have time to process the data.</li><li>Don't compare ad revenue event counts (reported in af\_ad revenue events) with impression counts.</li></ul> |
 
 </Accordion>
+
+<div id="comparing-appsflyer-data-with-user-acquisition-partner-data" />
 
 <Accordion title="Comparing AppsFlyer data with user acquisition partner data">
 
@@ -52,3 +56,5 @@ ROI360 Advanced is required for user acquisition partners to have ad revenue dat
 | SDK and S2S (freshness to accuracy) | Device-level (via S2S API) | UA signals | <ul><li>Compare the total revenue displayed in the AppsFlyer activity dashboard or the total revenue displayed in the single version ad revenue reports via Data Locker to the UA partner total revenue data.</li><li>Wait until the day after the revenue event (Day 0+1) to compare data.</li><li>Don't compare ad revenue event counts (reported in af\_ad revenue events) with impression counts.</li></ul> |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HCSS64Y99ZNAX64JRE5ZN3J7=comparing-appsflyer-data-with-mediation-partner-data h_01HCSS64Y9FDE00JN8XPWXG0CV=comparing-appsflyer-data-with-user-acquisition-partner-data" />

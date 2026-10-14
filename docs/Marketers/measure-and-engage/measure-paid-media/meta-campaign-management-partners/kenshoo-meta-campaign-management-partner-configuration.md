@@ -53,3 +53,5 @@ Learn more about [partner integrations](/docs/set-up-an-integrated-partner).
 ## Configuring on Kenshoo
 
 When you configure your campaigns on Kenshoo the campaign name must begin with "**kenshoo\_**".
+
+<div data-zendesk-anchors="h_01HKA16D48JGQAXKNWPS1MM841=setting-up-kenshoo inapp-events=in-app-events h_01HKA16D48XD9E54N8N84R5W4C=in-app-events h_01HKA16D48F3SH874DHCPRA40M=configuring-on-kenshoo" />

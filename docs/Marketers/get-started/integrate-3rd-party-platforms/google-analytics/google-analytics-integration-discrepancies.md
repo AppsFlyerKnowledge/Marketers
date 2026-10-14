@@ -26,11 +26,15 @@ x-zendesk:
 
 Listed below are reasons for discrepancies between AppsFlyer and Google Analytics.
 
+<div id="high-volume-of-nonconsenting-ios-145-users" />
+
 <Accordion title="High volume of non-consenting iOS 14.5+ users">
 
 When [AAP is enabled for your app](/docs/apply-aggregated-advanced-privacy-framework), AppsFlyer doesn't send postbacks to Google Analytics for non-consenting iOS 14.5+ users. In case your app has a large number of such users, there will be a discrepancy between AppsFlyer and Google Analytics dashboards.
 
 </Accordion>
+
+<div id="customer-user-id" />
 
 <Accordion title="Customer user ID">
 
@@ -58,6 +62,8 @@ In addition, discrepancies might arise if you implement both GA and AppsFlyer SD
 
 </Accordion>
 
+<div id="time-zone-differences" />
+
 <Accordion title="Time zone differences">
 
 If the time zone of your GA dashboard differs from that of your app's timezone in AppsFlyer, data might not align.
@@ -70,6 +76,8 @@ If the time zone of your GA dashboard differs from that of your app's timezone i
 
 </Accordion>
 
+<div id="duplicate-events" />
+
 <Accordion title="Duplicate events">
 
 If events occur in proximity to each other, both AppsFlyer and Google Analytics might drop them as duplicate events. AppsFlyer's [event deduplication mechanism](/docs/in-app-events-overview#how-does-appsflyer-handle-event-deduplication) is different than the one that Google Analytics uses.
@@ -77,6 +85,8 @@ If events occur in proximity to each other, both AppsFlyer and Google Analytics 
 Because AppsFlyer and Google Analytics deduplicate events differently, discrepancies in events data might occur.
 
 </Accordion>
+
+<div id="session-count" />
 
 <Accordion title="Session count">
 
@@ -95,8 +105,12 @@ To learn more about how AppsFlyer and Google Analytics calculate sessions, check
 
 </Accordion>
 
+<div id="google-analytics-views-and-filters" />
+
 <Accordion title="Google Analytics views and filters">
 
 Google Analytics allows you to create different views and apply different filters to them. When you compare data from AppsFlyer and Google Analytics, make sure you view data in the ***All Web Site Data*** view in Google Analytics.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HDP3G48R2XXEQDEAAJYGR9V9=discrepancies-in-data-between-appsflyer-and-google-analytics h_01HDP3G48RQD3EW0DTRE2252JF=high-volume-of-nonconsenting-ios-145-users h_01HDP3G48RPWDY7ZRG9HM1F5AR=customer-user-id h_01HDP3G48RMGSJSWQDSKW5DXD9=example h_01HDP3G48R2JWF3Y23011NDCAN=time-zone-differences h_01HDP3G48RXFWZX4FQ0V2ZE44D=example-1 h_01HDP3G48RHT7PWSWZZAG27CP0=duplicate-events h_01HDP3G48R1044364MF96QX41E=session-count h_01HDP3G48RHQ3VG6N4HTT1KJFS=example-2 h_01HDP3G48R9571AS0WH7TWQWJP=google-analytics-views-and-filters" />

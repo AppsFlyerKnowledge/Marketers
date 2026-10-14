@@ -32,6 +32,8 @@ Follow [this guide from Segment](https://segment.com/docs/destinations/appsflyer
 
 ## FAQs
 
+<div id="how-can-i-integrate-segment-with-appsflyer" />
+
 <Accordion title="How can I integrate Segment with AppsFlyer?">
 
 To integrate Segment with AppsFlyer, follow these steps:
@@ -42,6 +44,8 @@ To integrate Segment with AppsFlyer, follow these steps:
   * [Native Android](https://github.com/segment-integrations/analytics-kotlin-appsflyer)
 
 </Accordion>
+
+<div id="what-sdks-do-i-need-to-add-to-my-app" />
 
 <Accordion title="What SDKs do I need to add to my app?">
 
@@ -67,6 +71,8 @@ This saves you time and effort and requires less coding.
 
 </Accordion>
 
+<div id="is-there-any-difference-in-functionality-between-the-segment-sdk-wrapper-and-the-appsflyer-sdk" />
+
 <Accordion title="Is there any difference in functionality between the Segment SDK wrapper and the AppsFlyer SDK?">
 
 No, there is no change in functionality. All functions in the AppsFlyer SDK are available in the Segment SDK wrapper.
@@ -84,6 +90,8 @@ No, there is no change in functionality. All functions in the AppsFlyer SDK are 
 
 </Accordion>
 
+<div id="install-and-inapp-events-data-in-segment-and-appsflyer-doesnt-match" />
+
 <Accordion title="Install and in-app events data in Segment and AppsFlyer doesn't match">
 
 Make sure that to only use the Segment SDK Wrapper Do not combine the Segment SDK Wrapper with AppsFlyer SDK. See [here](/docs/segment-integration#how-does-the-sdk-wrapper-work) for more info.
@@ -91,6 +99,8 @@ Make sure that to only use the Segment SDK Wrapper Do not combine the Segment SD
 [The FAQ above](/docs/segment-integration#i-dont-see-inapp-event-data-in-the-appsflyer-dashboard) also specifies reasons why data might not align between Segment and AppsFlyer.
 
 </Accordion>
+
+<div id="im-getting-a-validation-error-when-testing-events-in-segment" />
 
 <Accordion title="I'm getting a validation error when testing events in Segment">
 
@@ -102,8 +112,12 @@ However, this is only relevant for server-to-server events. When you use Segment
 
 </Accordion>
 
+<div id="im-using-a-thirdparty-analytics-tool-should-i-integrate-it-with-both-appsflyer-and-segment" />
+
 <Accordion title="I'm using a third-party analytics tool. Should I integrate it with both AppsFlyer and Segment?">
 
 No, you should only use the Segment dashboard to enable the 3rd party analytics tools.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01JZMD855TA62KQ4AWJ5F6WSDP=introduction h_01JZMD855TNEYZG1MDZY7FWV8S=integrating-segment-with-appsflyer h_01JZMD855TAEBDPAMEAEH66F27=faqs h_01JZMD855T2BXFR1AKRNAA7M51=how-can-i-integrate-segment-with-appsflyer h_01JZMD855TG3WEKQH21JJ1PT43=what-sdks-do-i-need-to-add-to-my-app h_01JZMD855TW07PGDA6QHFWPN67=how-does-the-sdk-wrapper-work h_01JZMD855TNZGKVY2G98FPM22Z=warning h_01JZMD855T0BEENPF0BMQDBFS8=is-there-any-difference-in-functionality-between-the-segment-sdk-wrapper-and-the-appsflyer-sdk h_01JZMD855TV6J44PAV1A7JCKT5=i-dont-see-inapp-event-data-in-the-appsflyer-dashboard h_01JZMD855TH07JNZBT8CN4026W=install-and-inapp-events-data-in-segment-and-appsflyer-doesnt-match h_01JZMD855TY8X2PV1HB8Y0QT6Z=im-getting-a-validation-error-when-testing-events-in-segment h_01JZMD855TCE97QW8TSBEN1DYY=im-using-a-thirdparty-analytics-tool-should-i-integrate-it-with-both-appsflyer-and-segment" />

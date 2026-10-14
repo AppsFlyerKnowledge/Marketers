@@ -47,6 +47,8 @@ For a detailed description of the Partner Configuration Window Header, click [he
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -97,6 +99,8 @@ In this section you can map your AppsFlyer events with MOLOCO via postbacks.
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -105,6 +109,8 @@ Generate and save attribution links and send them to the partner for attributing
 **To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -120,11 +126,15 @@ Yesterday's data is available from Moloco at approximately 4 AM (depending on th
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue integration is not available for this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -142,3 +152,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HBB9EEMJRHWC21713D60725N=setting-up-moloco h_01HBB9EEMJQ9VAMJMYG2T5FX0S=tip h_01HBB9EEMJ7X92Y5TK4YXXGSZX=integration-tab h_01HBB9EEMJ0EW14NZE9WCKJR1M=activate-partner h_01HBB9EEMJ55BQDJ1ZEJT136ZF=note h_01HBB9EEMJ2XSWFQZZFJ7J54VY=general-settings h_01HBB9EEMJV2SS4VJW0HW8D12R=default-postbacks inapp-events-settings=in-app-events-settings h_01HBB9EEMJE2X04XZGMSJSSXAT=in-app-events-settings h_01HBB9EEMJ6WA79D7R4BG8S9HS=note-1 h_01HBB9EEMJXGFHY28K2DDHKBF8=attribution-link-tab h_01HBB9EEMJT7VSNFQJC86TS1YX=cost-tab h_01HBB9EEMJ61WDHNPKMW5A1YKM=ad-revenue-tab h_01HBB9EEMJ3Z40S2A6FZG7RJ6K=permissions-tab ad-network-permissions=-ad-network-permissions h_01HBB9EEMJ54Y8KJBK4395ENPJ=-ad-network-permissions" />

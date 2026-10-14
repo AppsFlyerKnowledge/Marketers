@@ -55,3 +55,5 @@ X Ads enriches SKAN postbacks with the following data fields:
 * Campaign ID
 * Adset name
 * Adset ID
+
+<div data-zendesk-anchors="mobile-app-promotion-on-twitter=mobile-app-promotion-on-x-ads h_01H9QR6TH7M0H5YMXRWVVAYRK9=mobile-app-promotion-on-x-ads twitter-user-privacy=x-ads-user-privacy h_01H9QR6TH74R50K00H7FYN61KC=x-ads-user-privacy twitter-ads-and-appsflyer-skan-interoperation=x-ads-and-appsflyer-skan-interoperation h_01H9QR6TH74PKBGM5RC4M118GE=x-ads-and-appsflyer-skan-interoperation" />

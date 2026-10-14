@@ -73,6 +73,8 @@ X Ads is an Advanced Self-Reporting Network (SRN), enabling AppsFlyer to support
 
 For a detailed description of the partner configuration page Header, click [here](/docs/set-up-an-integrated-partner).
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The **Integration Tab** is divided into different sections, as described below. [Partner must be activated](/docs/partner-activation-deactivation) on the first visit to enable its setup.
@@ -173,13 +175,15 @@ In this section, you can map your AppsFlyer events with your partners via postba
 | --- | --- |
 | **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
 | **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Select the most suitable pre-defined AppsFlyer event from the drop-down box. |
-| **for users from** | Select the sending option for the event:<br /><br /><br /><br />**Note**<br />For X Ads to receive agency-attributed postbacks, you must select **All media sources, including organic**. Otherwise, X Ads won't receive such postbacks.<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources, including organic**: send postbacks for events attributed to any partner and organic events.</li></ul> |
+| **for users from** | Select the sending option for the event:<br /><br /><br /><br />**<span id="h_01HDJVBAEZATGM580CNC7BCVTN"></span>Note**<br />For X Ads to receive agency-attributed postbacks, you must select **All media sources, including organic**. Otherwise, X Ads won't receive such postbacks.<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources, including organic**: send postbacks for events attributed to any partner and organic events.</li></ul> |
 | **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
 
 5. [Optional] Click ![conditional-iae-postbacks-icon.png](https://files.readme.io/d84715dd43041f10684d42e4fe56fd4f76aa4c38fbf9df227c8f8f5610c4f859-19616850611857.png) to set conditions for sending certain in-app events to the partner.  
    Learn more about [conditional in-app event postbacks](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks).
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -190,6 +194,8 @@ X Ads does not use attribution links for attribution.
 > For all [self-reporting networks (SRNs)](/docs/self-reporting-networks-srns), such as Meta ads, Apple Ads, Google Ads, X Ads, etc., this tab is not functional since they don't use external attribution links.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -207,11 +213,15 @@ The cost integration provides the following aggregated data:
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue isn't available for X- Ads.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -239,11 +249,15 @@ Learn about [granting agency permissions](/docs/set-up-an-integrated-partner#age
 
 ## X-Ads features
 
+<div id="mobile-app-promotion-on-x-ads" />
+
 <Accordion title="Mobile app promotion on X Ads">
 
 X Ads Mobile App Promotion is a method to promote apps on X Ads. It enables advertisers to promote their mobile apps with great App card design driving installs, app engagement, and deep linking. App users can easily install and engage with apps directly from the X Ads timeline.
 
 </Accordion>
+
+<div id="webtoapp-measuring-app-activity-for-nonapp-campaigns-android-only" />
 
 <Accordion title="Web-to-App: Measuring app activity for non-app campaigns (Android only)">
 
@@ -262,6 +276,8 @@ To measure app activity from X non-app campaigns and gain valuable insights into
 
 </Accordion>
 
+<div id="twitter-ads-and-appsflyer-skan-interoperation" />
+
 <Accordion title="X Ads and AppsFlyer SKAN interoperation">
 
 X Ads sends SKAdNetwork postback data via a dedicated API. SKAN data from X Ads will be displayed in the [SKAN dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer).
@@ -274,6 +290,8 @@ X Ads enriches SKAN postbacks with the following data fields:
 * Adset ID
 
 </Accordion>
+
+<div id="twitter-user-privacy" />
 
 <Accordion title="X Ads user privacy">
 
@@ -313,3 +331,5 @@ The following fields in the Advanced SRN integration for X Ads **replace** their
 | Pre-roll attribution unsupported | X Ads doesn’t support MMP attribution for Pre-roll campaigns. |
 | Ad Name "Untitled" | Ad Name is not a mandatory field in the X (formerly Twitter) Ads data model, so it may be missing. When the ad name is not defined in X Ads Manager, AppsFlyer will display it as **'Untitled.'** |
 | Cost | For X Ads, cost data for SKAN-only campaigns (campaigns that only have SKAN installs and no "regular" installs) isn't available to agencies. The cost integration must be set up by the advertiser. And the data can only be viewed by the advertiser. |
+
+<div data-zendesk-anchors="h_01JV7CGQNZNEM3P98K6KSYKB0D=overview xads-attribution-flow-in-appsflyer=x-ads-attribution-flow-in-appsflyer h_01JZG83EKX39SF8355EW62C462=x-ads-attribution-flow-in-appsflyer connecting-your-X-Ads-ads-account-to-appsflyer=connecting-your-x-ads-account-to-appsflyer h_01HDJVCRYQESA17XZ83GS81YZ3=connecting-your-x-ads-account-to-appsflyer h_01JV7D6AWYQ981HY6C130B021B=note X-Ads-ads-attribution-setup=x-ads-attribution-setup h_01HDJVBAEZ5W3JH1BN7WXJ08P6=x-ads-attribution-setup h_01HDJVBAEZSFKRXAKQJP58N550=integration-tab h_01HDJVBAEZD89BSGHQTPR84HSC=ad-account-connected xads_advanced_privacy_toggle=advanced-privacy h_01JV7HVQJ2GTP74G6JYB300E71=note-1 clickthrough-attribution=click-through-attribution h_01HDJVBAEZFJWQ6FD4Q4GSPD76=click-through-attribution viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HDJVBAEZ2H91WBHNSMRQYQ7H=view-through-attribution-lookback-window h_01HDJVBAF0XRWRZJQSS4STH7YN=reinstall-settings reengagement-settings=re-engagement-settings h_01HDJVBAEZZR1W06YH4XJSBKHV=re-engagement-settings h_01JV9YQ7ZHRDD2NA5ENQXJQ31V=important reengagement-clickthrough-lookback-window=re-engagement-click-through-lookback-window h_01HDJVBAEZ59ERYD2WQQYK6T37=re-engagement-click-through-lookback-window reengagement-viewthrough-lookback-window=re-engagement-view-through-lookback-window h_01HDJVBAEZSCK7430NJ8AMQYVY=re-engagement-view-through-lookback-window reengagement-window=re-engagement-window h_01HDJVBAEZCMWY5X47FEEFXTBX=re-engagement-window ignore-active-users=ignore-active-users-for-retargeting h_01JVC3PWDR9KHEFBQF5NWHCQJN=ignore-active-users-for-retargeting inapp-event-postback-settings=in-app-event-postback-settings h_01HDJVBAEZ5ZM9RDXPWTJPPYVA=in-app-event-postback-settings h_01HDJVBAEZR1Q2SVE9MEQ9EXKP=attribution-link-tab h_01HDJVBAEZ7R7BKFAZYXXBGS5Y=note-2 h_01HDJVBAEZYSWN59VNXTDEWX93=cost-tab 01H88VAJH3A2Q0CZXQQZMW6YRC=ad-revenue-tab h_01HDJVBAF0KEVSWJ0EW54AEAWV=permissions-tab h_01HDJVBAF0BMSCKF6J9NJ019YJ=ad-network-permissions h_01HDJVBAF0W3ZE7J93CRE8EBRP=agency-permissions x-ad-features=x-ads-features h_01JZWQA6DXRZ17SRVT4HM2MQSH=x-ads-features h_01JZWQA6DX3BRNG8B5CJGA57AM=mobile-app-promotion-on-x-ads h_01JZWQA6DX7W9102P5S6KWJ1WB=webtoapp-measuring-app-activity-for-nonapp-campaigns-android-only h_01JZWQA6DX8AX5XG3W4A6XB53S=important-1 h_01H9QR6TH74PKBGM5RC4M118GE=twitter-ads-and-appsflyer-skan-interoperation h_01H9QR6TH74R50K00H7FYN61KC=twitter-user-privacy x-ads-data-differences=advanced-srn-parameter-names h_01JYGPBHHNQARG3GRMQJA95JKD=traits-and-limitations" />

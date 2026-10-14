@@ -53,6 +53,8 @@ Follow these steps to enable AppsFlyer campaign measurement.
 
 </Accordion>
 
+<div id="step-2-define-conversion-events-in-appsflyer" />
+
 <Accordion title="Step 2: Define conversion events in AppsFlyer">
 
 For AppsFlyer to define conversion events and enable you to send event postbacks to TTD, you must first [integrate TTD with AppsFlyer](/docs/the-trade-desk-campaign-configuration#integrating-ttd-with-appsflyer) and set up the following configurations:
@@ -62,6 +64,8 @@ For AppsFlyer to define conversion events and enable you to send event postbacks
 * Permissions
 
 </Accordion>
+
+<div id="step-3-map-defined-conversion-events-from-appsflyer" />
 
 <Accordion title="Step 3: Map defined conversion events from AppsFlyer">
 
@@ -77,6 +81,8 @@ For AppsFlyer to define conversion events and enable you to send event postbacks
 
 </Accordion>
 
+<div id="step-4-add-click-and-impression-trackers-to-campaign-creatives" />
+
 <Accordion title="Step 4: Add click and impression trackers to campaign creatives">
 
 In this step, you'll add the click and impression trackers that were created in AppsFlyer to each of the creatives in TTD.
@@ -84,7 +90,7 @@ In this step, you'll add the click and impression trackers that were created in 
 1. Under **CAMPAIGNS** in the TTD left menu, click the **CREATIVES** from the top tab.
 2. Select a creative from the list of creatives associated with the current campaign.
 3. Scroll down to **Tracking**.
-4. Copy the view-through [attribution link](/docs/the-trade-desk-campaign-configuration#h_01HH2DHQWY7X522JKKC4A45BHN) from AppsFlyer, and paste it to the 1x1 Pixel Impression Tracking URL field.
+4. Copy the view-through [attribution link](/docs/the-trade-desk-campaign-configuration#attribution-link-tab) from AppsFlyer, and paste it to the 1x1 Pixel Impression Tracking URL field.
 5. Copy the click-through attribution link from AppsFlyer, and paste it to the click-Through URL field.
 6. Click **SAVE CHANGES**.
 7. Repeat this step for each of the creatives associated with the campaign.
@@ -119,6 +125,8 @@ In this step, you'll add the click and impression trackers that were created in 
 TTD configuration window includes three active tabs: Integration, Attribution link, and Permissions. Click the items below to read about the tabs setup.
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
+
+<div id="integration-tab" />
 
 <Accordion title="Integration tab">
 
@@ -181,7 +189,7 @@ Map AppsFlyer events with TTD via postbacks. If postback sending is enabled, thi
 
 </Accordion>
 
-<div id="h_01HH2DHQWY7X522JKKC4A45BHN" />
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -246,17 +254,23 @@ Learn more about [view-through attribution](/docs/set-up-lookback-windows).
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost integration is not available for The Trade Desk.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue is not available for The Trade Desk.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -279,3 +293,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HH2DHQWXTB9K2R07SJP1AXER=setting-up-the-trade-desk-ttd h_01HH2DHQWX9Y6R1J3HPYWTAC2Z=step-1-define-conversion-events-in-ttd h_01HH2DHQWXTZ5EMJNYRGJMY7QA=step-2-define-conversion-events-in-appsflyer h_01HH2DHQWXCWF0H1GJGJS2YYDA=step-3-map-defined-conversion-events-from-appsflyer step-4-add-click-and-impression-trackers%C2%A0to-campaign-creatives=step-4-add-click-and-impression-trackers-to-campaign-creatives h_01HH2DHQWX1Z10PTRM8S7538YX=step-4-add-click-and-impression-trackers-to-campaign-creatives h_01HH2DHQWXX1EEARNBC61W3CDK=note h_01GFNDH51M6KYE39C7DJW3BJ8W=integrating-ttd-with-appsflyer h_01GF8CKQYVDW5Z7141MJDGGW4C=integration-tab h_01HH2DHQWYME21J7JV176N71P2=activate-partner h_01HH2DHQWYFJB3ZCWVZZ048AQP=advanced-privacy h_01HH2DHQWYN3CZZCFT9X2R2N9J=general-settings h_01HH2DHQWY1GPVP5W5R4XV2H9C=default-postbacks h_01HH2DHQWY284121FR8HSFGH45=note-1 inapp-events-settings=in-app-events-settings h_01HH2DHQWY0XM70BPE7222XE78=in-app-events-settings h_01HH2DHQWY7X522JKKC4A45BHN=attribution-link-tab h_01HH2DHQWY4GXPMCV5JEBFERG6=attribution-link-parameters h_01HH2DHQWYZSECQWRQEKDB9KZH=default-parameters h_01HH2DHQWYZPKCY947MWK7GEAP=parameters-for-measuring-ctv clickthrough-attribution=click-through-attribution h_01HH2DHQWYCFGJK4ZT9CXFX3X3=click-through-attribution viewthrough-attribution=view-through-attribution h_01HH2DHQWYP6S95MRAS39Q4RTT=view-through-attribution h_01HH2DHQWYP5GYN2GH3C839P3N=cost-tab h_01HH2DHQWYG3KZTE0HH7QV4H6X=ad-revenue-tab h_01HH2DHQWYA9HAWT5PV092T6E9=permissions-tab h_01HH2DHQWYCWYQFBDA19Z9BA8W=ad-network-permissions" />

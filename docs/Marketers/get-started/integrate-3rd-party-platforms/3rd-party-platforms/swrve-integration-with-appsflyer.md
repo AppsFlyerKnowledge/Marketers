@@ -85,6 +85,8 @@ Swrve's configuration window only uses the **Integration** tab.
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration tab is divided into different sections as described below.
@@ -128,11 +130,15 @@ Once saved, AppsFlyer begins sending the following data to Swrve for every organ
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution Links are not available for Swrve.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -140,11 +146,15 @@ Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -160,3 +170,5 @@ The main dashboard page for your app includes all of your app's vital informatio
 
 ![Swrve dashboard acquisition graph](https://files.readme.io/6a3e4cf709f58b20f2932ab47e6fa9289653504d85a0b6eec2580718e2a4dc7c-49839257162769.png)
 ![Swrve dashboard acquisition data table](https://files.readme.io/561403abefae9e98e24934c96dd25b1ee34ae24cf30695354c4930404e0a7f19-49839257163537.png)
+
+<div data-zendesk-anchors="h_01H9HWK5DM1K9P5XXC6S7ENAGV=integrating-swrve-and-appsflyer h_01H9HWK5DMS8HAK25BF5EXZT51=setting-up-swrve h_01H9HWK5DN9D0DS46X72EDAW54=integration-tab h_01H9HWK5DN375XJVHQCZ8Y3K13=activate-partner h_01H9HWK5DN0XK2E0HXS61GRECE=general-settings h_01H9HWK5DNH6SYY8T9NX09MRYS=default-postbacks h_01H9HWK5DNZVQDZ0Q1Z9WSKRSR=attribution-link-tab h_01H9HWK5DNPG89HSB0107TKHED=cost-tab h_01H9HWK5DNARD4K0MPHPXKBPXZ=ad-revenue-tab h_01H9HWK5DNFKAT0J98JWVRPQ1G=permissions-tab h_01H9HWK5DN3QB9V593EV566GAQ=swrve-reporting-with-appsflyer-data" />

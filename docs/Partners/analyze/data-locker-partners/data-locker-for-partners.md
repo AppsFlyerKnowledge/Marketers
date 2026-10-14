@@ -28,6 +28,8 @@ x-zendesk:
 
 Data Locker for partners delivers app data to cloud storage. Advertisers set permissions that allow AppsFlyer to share selected data with a given partner.
 
+<div id="data-locker-features" />
+
 <Accordion title="Data Locker features">
 
 | Feature | Description |
@@ -38,6 +40,8 @@ Data Locker for partners delivers app data to cloud storage. Advertisers set per
 | Data freshness | Freshness depends per report type:<ul><li>**Hourly:** Data generated continuously</li><li>**Daily:** Some reports are prepared on a daily basis and are ready on the following day</li></ul> |
 
 </Accordion>
+
+<div id="reports-available-for-partners" />
 
 <Accordion title="Reports available for partners">
 
@@ -50,6 +54,8 @@ The reports available and the permissions required to get the reports differ per
 </Accordion>
 
 ## Data storage architecture
+
+<div id="overview" />
 
 <Accordion title="Overview">
 
@@ -68,6 +74,8 @@ Data of a given report is contained in the hour (h) folders associated with that
 
 </Accordion>
 
+<div id="folder-structure" />
+
 <Accordion title="Folder structure">
 
 | Folder | Description |
@@ -84,6 +92,8 @@ Data of a given report is contained in the hour (h) folders associated with that
 
 </Accordion>
 
+<div id="data-files" />
+
 <Accordion title="Data files">
 
 Data files depend on segregation type.
@@ -91,6 +101,8 @@ Data files depend on segregation type.
 <table><thead><tr><th>Content</th><th colspan="2">Details</th></tr></thead><tbody><tr><td>Completion flag</td><td colspan="2"><p>The last file (completion) flag is set when all the data for a given h folder has been written. </p><ul><li><p>Don't read data in a folder before verifying that the _SUCCESS flag exists.</p></li><li><p>The _SUCCESS flag is set even in cases where there is no data to write to a given folder and the folder is empty. </p></li><li>Note! In the segregation by app option, the flag is set in the h folder and not the individual app folders. See the figures in the previous section. </li></ul></td></tr><tr><td>File types</td><td colspan="2"><ul><li>Data is provided in Snappy or GZIP compressed files, or uncompressed files, having Parquet or CSV format.</li><li>After unzipping, the data files are in Parquet or CSV format according to your settings.</li></ul></td></tr><tr><td>Column sequence (CSV files) </td><td colspan="2"><p>In the case of CSV files, the sequence of fields in reports is always the same. When we add new fields these are added to the right of the existing fields. </p><p>In this regard: </p><ul><li>The column structure of user journey reports is identical. This means you can have similar data loading procedures for different report types. You select the fields contained in the reports. The field meaning is detailed in the <a href="./raw-data-field-dictionary">raw data dictionary</a>. </li><li>Reports having an FF notation in the report availability section don't adhere to the common column structure. </li></ul></td></tr><tr><td>Field population considerations</td><td colspan="2"><p><strong>Blank or empty fields:</strong> Some fields are populated with <em>null </em>or are empty. This means that in the context of a given report there is no data to report. Typically <em>null </em>means this field is not populated in the context of a given report and app type. Blank "" means the field is relevant in its context but no data was found to populate it with. </p><p>In the case of the restricted media source, the content of restricted fields is set to null. </p><p>Overall regard null and blank as one and the same thing; there is no data available. </p><p><strong>Time zone and currency</strong></p><p>App-specific time zone and currency settings have no effect on data written to Data Locker. The following apply: </p><ul><li><strong>Time zone</strong>: Date and hour data are in UTC.</li><li><strong>Currency</strong>: The field event_revenue_usd is in USD.</li></ul><p><strong>Values with commas</strong>: These commas are contained between double quotes `"`, for example, <code>`"iPhone6,1"`</code>.</p></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="storage-options" />
 
 <Accordion title="Storage options">
 
@@ -120,6 +132,8 @@ Consider:
 * For technical reasons, we sometimes need to delete and rewrite the data. For this reason, we require delete and list permissions. Neither list nor delete are a security risk for you. In the case of list, we are the sole entity writing to the bucket. In the case of delete, we can regenerate the data.
 
 </Accordion>
+
+<div id="multipleconnection-principles-more-than-one-destination" />
 
 <Accordion title="Multiple-connection principles (more than one destination)">
 
@@ -168,6 +182,8 @@ Complete one or more of the following storage procedures:
 
 ## Additional information
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and Limitations">
 
 | **Trait** | Remarks |
@@ -181,8 +197,12 @@ Complete one or more of the following storage procedures:
 
 </Accordion>
 
+<div id="troubleshooting" />
+
 <Accordion title="Troubleshooting">
 
 [Use this troubleshooting guide](/docs/data-locker-for-marketers#troubleshooting).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H8Y0DGS4Y2N99YNYEEJA6RSF=data-locker-for-partners h_01H8Y0DGS4EM06PYNS1DRMZM6Y=data-locker-features h_01H8Y0DGS4A0MYGVZ9XQ49EBT2=reports-available-for-partners h_01H8Y0DGS4WTAJV7QE2DX3VGBP=data-storage-architecture h_01H8Y0DGS4BQHBKNHZ4CD9ZMT4=overview h_01H8Y0DGS43JAREX23YX1F125K=folder-structure h_01H8Y0DGS524WNXY63351XGJKA=data-files h_01H8Y0DGS5MV6J1MMJJS8G4HC4=storage-options h_01H8Y0DGS5R4QX01WBK2S33QP5=notice-to-security-officers h_01H8Y0DGS56GN6TVTSEV713DWQ=multipleconnection-principles-more-than-one-destination h_01H8Y0DGS5588GQPZT7MQ686T3=procedures h_01H8Y0DGS57YK2PZ9ENZ80EWRJ=set-up-data-locker h_01H8Y0DGS5SYZRWFAXDSKE3YHX=additional-information h_01H8Y0DGS540HK8MSCFYT9Q1RM=traits-and-limitations h_01H8Y0DGS55PJ7HV1PQ72XDDAB=troubleshooting" />

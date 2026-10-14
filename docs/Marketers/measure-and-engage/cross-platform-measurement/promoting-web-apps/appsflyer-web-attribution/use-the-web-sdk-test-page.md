@@ -86,3 +86,5 @@ You can just run a test after every change to your Web SDK setup or events. It's
 * **First Web SDK integration:** Browse the pages where you installed the SDK and verify that a `pageLoad` event appears for each one.
 * **Adding or changing an event:** Trigger the event on your website, for example, complete a purchase. Then verify that an EVENT row appears with the correct event name, revenue, and properties in the event details.
 * **Implementing customer user ID:** Sign up or log in on your website and verify that a `setCustomerUserId` event appears. Setting the CUID improves attribution accuracy and unifies user journeys across platforms.
+
+<div data-zendesk-anchors="h_01WSDKTP0000000000OVRVW=overview h_01WSDKTP0000000000PREQ1=prerequisites h_01WSDKTP0000000000RUNT1=run-a-test h_01WSDKTP0000000000REVW1=view-the-live-events-table h_01WSDKTP0000000000RSTR1=restart-or-clear-a-test h_01WSDKTP0000000000WHEN1=common-testing-scenarios" />

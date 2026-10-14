@@ -34,11 +34,15 @@ The following sections include information necessary for using the API.
 
 **Get app list basics**
 
+<div id="get-api-list-basics" />
+
 <Accordion title="Get API list basics">
 
 <table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>GET</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/mng/apps</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>An admin user gets the token in the dashboard as follows: <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a></li></ul></td></tr><tr><td rowspan="3"> Response</td><td>Results</td><td>Return in a JSON</td></tr><tr><td>Request limit</td><td><ul><li>20 requests/minute</li><li>100 requests/day</li></ul></td></tr><tr><td>Record limit</td><td>1,000 records/request. If more than 1,000 records are to return, use follow-on pagination requests described in this article.</td></tr></tbody></table>
 
 </Accordion>
+
+<div id="api-request" />
 
 <Accordion title="API request">
 
@@ -104,6 +108,8 @@ Pagination mechanism parameters (optional):
 
 </Accordion>
 
+<div id="json-response" />
+
 <Accordion title="JSON response">
 
 | **Key** | **Description** |
@@ -118,6 +124,8 @@ Pagination mechanism parameters (optional):
 | links | Pagination mechanism (explained in the parameters section)<ul><li>prev: the call used to generate the previous page</li><li>self: the call used to generate the current page</li><li>next: the call used to generate the next page</li></ul> |
 
 </Accordion>
+
+<div id="get-app-list-curl-example-and-response" />
 
 <Accordion title="Get app list cURL example and response">
 
@@ -178,6 +186,8 @@ cURL --location --request GET 'https://hq1.appsflyer.com/api/mng/apps?limit=1000
 
 </Accordion>
 
+<div id="http-response-codes" />
+
 <Accordion title="HTTP response codes">
 
 | Code | Message | Remarks/troubleshooting |
@@ -190,3 +200,5 @@ cURL --location --request GET 'https://hq1.appsflyer.com/api/mng/apps?limit=1000
 | 429 | Too many requests | Exceeded rate limitation |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01KQS56KS2G7TD4VHZCHVP0W9S=get-app-list-api h_01KQS56KS26TY81ACBN2XBK3W2=get-api-list-basics h_01KQS56KS27NETZ4C5RY28V804=api-request h_01KQS56KS33VFVX099T1S2928G=pagination-mechanism h_01KQS56KS3Q5EEVSSC7G1FEFXR=json-response h_01KQS56KS3EZCH1KBBQQKTXWYP=get-app-list-curl-example-and-response h_01KQS56KS3S04KDZ58J7XKQNCK=http-response-codes" />

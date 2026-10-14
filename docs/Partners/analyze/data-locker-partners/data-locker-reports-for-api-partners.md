@@ -38,6 +38,8 @@ The following reports are available to API partners: (daily)
 
 Reports are streamed to the h=23 folder.
 
+<div id="specifications-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Spec | Remarks |
@@ -57,3 +59,5 @@ Trait
 > 📘 **See also**
 >
 > * [Aggregated analytics tools for API partners](/docs/access-to-aggregated-analytics-tools-for-api-partners)
+
+<div data-zendesk-anchors="data-locker-reports-for-marketing-partners=data-locker-reports-for-api-partners h_01HBZZ5BFJC82MW9JQ9MEX991S=data-locker-reports-for-api-partners h_01HBZZ5BFJYFH54X70RJ63CJCV=specifications-and-limitations h_01HE7RFGCZ65YJRX1VCND691CX=see-also" />

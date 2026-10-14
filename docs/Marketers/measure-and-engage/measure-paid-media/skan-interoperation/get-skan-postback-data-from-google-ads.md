@@ -170,3 +170,5 @@ If you've completed the steps above and installs still aren't showing, check the
 > 📘 **See also**
 >
 > * [AppsFlyer SKAN Solution guide](/docs/skadnetwork-skan-solution-guide)
+
+<div data-zendesk-anchors="h_01HCHYGCVJA3C8WJS8JH7BG0CD=get-skan-postback-data-from-google-ads h_01HCHYGCVJY5KT4J6RQS0BJ90G=set-up-interoperation h_01HCHYGCVJTS53PCGK21BEZB2T=additional-information h_01HE7RMSECNDW9VD9XY6H01H55=see-also" />

@@ -30,6 +30,8 @@ Creative Optimization ETL automatically streams your creative performance data t
 
 **Custom Creative ETL** gives you full control over your report schema (the dimensions, metrics, and events that make up your report, and the order they appear in). Configure your schema directly in the Creative ETL UI, selecting exactly the dimensions, metrics, AI dimensions, and in-app events you need, including retargeting and unified attribution breakdowns. It's available to Creative Optimization Premium plan subscribers.
 
+<div id="standard-creative-etl" />
+
 <Accordion title="Standard Creative ETL">
 
 Creative Optimization ETL equips your data analysts with the information they need for creative performance analysis. It does this by automatically streaming Creative Optimization reporting data to cloud storage for programmatic loading into your BI systems.
@@ -475,6 +477,8 @@ Limits:
 
 A list of frequently asked questions about ETL reporting.
 
+<div id="whats-the-difference-between-standard-creative-etl-and-custom-creative-etl" />
+
 <Accordion title="What's the difference between Standard Creative ETL and Custom Creative ETL?">
 
 **Standard Creative ETL** is configured via Data Locker's Select reports page and delivers a fixed set of fields (schema) once per day. It doesn't support in-app events, retargeting or unified breakdowns, or AI dimensions.
@@ -483,11 +487,15 @@ A list of frequently asked questions about ETL reporting.
 
 </Accordion>
 
+<div id="can-i-run-both-standard-creative-etl-and-custom-creative-etl-at-the-same-time" />
+
 <Accordion title="Can I run both Standard Creative ETL and Custom Creative ETL at the same time?">
 
 Yes. Both can run in parallel. If you have a Standard Creative ETL report active, a notification banner appears on the Creative ETL page with a link to your Data Locker configuration.
 
 </Accordion>
+
+<div id="can-i-have-multiple-custom-creative-etl-reports-with-different-report-types" />
 
 <Accordion title="Can I have multiple Custom Creative ETL reports with different report types?">
 
@@ -495,11 +503,15 @@ Yes. Each report is configured with a single report type (User Acquisition, Reta
 
 </Accordion>
 
+<div id="how-do-i-add-new-inapp-events-to-an-existing-custom-creative-etl-report" />
+
 <Accordion title="How do I add new in-app events to an existing Custom Creative ETL report?">
 
 Go to **Export** > **Creative ETL**, click the **Edit** icon on the report, go to **Step 3 (Schema)**, and add the new events. Changes take effect on the next daily delivery.
 
 </Accordion>
+
+<div id="what-happens-if-a-report-runs-more-than-once-on-the-same-day" />
 
 <Accordion title="What happens if a report runs more than once on the same day?">
 
@@ -513,3 +525,5 @@ If a report is re-run (typically during a backfill), each run receives an increm
 > * [Data Locker advertiser reports](/docs/data-locker-advertiser-reports)
 > * [Set up a Data Locker connection](/docs/data-locker-cloud-service-setup)
 > * [Set up and use ROI360 cost ETL reports](/docs/set-up-and-use-roi360-cost-etl-reports)
+
+<div data-zendesk-anchors="h_01KW7A0CWMCFQA7K6YE909BVW4=about-creative-optimization-etl-reporting h_01KW7A0CWMH2SCPQ917TKASCC7=standard-creative-etl h_01KW7A0CWMJDR014M6JSA2HBHY=note h_01KW7A0CWM2SPE4RYFJKZBDKJG=get-started h_01KW7A0CWMAR0E52M7T6PXMCKT=edit-data-locker-configuration h_01KW7A0CWM9K9J7X64S14TX2AE=data-freshness h_01KW7A0CWM1JYVQXKBDH06X1BA=available-data h_01KW7A0CWMT7Q8BFTB8WAT7M0W=note-1 h_01KW7A0CWNZMPD7RSX41VNGSCF=custom-creative-etl h_01KW7A0CWNK0R6XAB37E5ZP7KG=before-you-begin h_01KW7A0CWN2DZFZP3YK23ZW9EH=set-up-custom-creative-etl h_01KW7A0CWNQJT83A9KAE8E7XHD=step-1---destination h_01KW7A0CWNH69H47EF7FAV1FRF=step-2---details h_01KW7A0CWN0M4ZFRPQ7BN9TRTC=note-2 h_01KW7A0CWNG5PVQNC8ED1RXV28=step-3---schema h_01KW7A0CWNER5KD46VJHE1X0VH=what-is-a-schema h_01KW7A0CWNJYPD5TXZ301PMF7S=note-3 h_01KW7A0CWN4NWNP10TAYD26GCQ=note-4 h_01KW7A0CWNFWY5BYGVPPXTYQ1X=important h_01KW7A0CWNVJJTVW1MP0V25ZC5=edit-an-existing-report h_01KW7A0CWNFZCW1NNBY2H0BSDS=note-5 h_01KW7A0CWNY50EV4EDS3BWGP6S=important-1 h_01KW7A0CWNRKGS9TJ4Y2H7JD5S=report-management h_01KW7A0CWNN3MN0S8Z563BYQ97=note-6 h_01KW7A0CWNS62EYWZ8V41E7RRY=data-delivery h_01KW7A0CWNWM3JTMEFF8B3SPXG=schema-reference h_01KW7A0CWNP32RKD6YW1GNPNEE=mandatory-fields h_01KW7A0CWNJRT87NYJQ19YHSSG=dimensions h_01KW7A0CWNTSGC4BPEBME4WWNC=ai-dimensions h_01KW7A0CWNNA03BG2BAQ4MGGMX=note-7 h_01KW7A0CWN6H39Q9D7SX2TFXAF=metrics h_01KW7A0CWP4JQSDP8E2BQESE2A=in-app-events h_01KW7A0CWPJ8W3ZE2JZ9YTZFQF=limitations h_01KW9K4YXMJ14TX6FMGYY4811K=faq h_01KW9K4YXM8E6ZF226DTTVZHK8=whats-the-difference-between-standard-creative-etl-and-custom-creative-etl h_01KW9K4YXMNDT73BPAV1CC5JZ5=can-i-run-both-standard-creative-etl-and-custom-creative-etl-at-the-same-time h_01KW9K4YXM3F3W45MTNDHS9DM9=can-i-have-multiple-custom-creative-etl-reports-with-different-report-types h_01KW9K4YXMVH2NSM46S63EVX01=how-do-i-add-new-inapp-events-to-an-existing-custom-creative-etl-report h_01KW9K4YXMDQZHF5TZGQE1NR0P=what-happens-if-a-report-runs-more-than-once-on-the-same-day h_01KW7A0CWP90HES8D1S2A1PF6X=see-also" />

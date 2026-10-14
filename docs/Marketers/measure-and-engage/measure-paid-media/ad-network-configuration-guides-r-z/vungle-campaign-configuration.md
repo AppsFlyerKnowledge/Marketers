@@ -50,6 +50,8 @@ an account, contact the partner to open one before setting up the integration.
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration tab is divided into different sections as described below.
@@ -86,6 +88,8 @@ Connect to Vungle by activating and setting parameters in the integration tab. V
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -94,6 +98,8 @@ Generate and save attribution links and send them to the partner for attributing
 **To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -107,6 +113,8 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 This section is relevant if you are acting as a publisher, displaying ads of the partner to your users. As such, you would certainly like to measure the engagement of your users acquired from different sources, to find the most profitable sources for you.
@@ -116,6 +124,8 @@ This section is relevant if you are acting as a publisher, displaying ads of the
 * Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -160,3 +170,5 @@ You can allow Vungle to configure your app as an agency.
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJZVD66Q6ZBPGEASQTAQNH3G=setting-up-vungle h_01HJZVD66QE7BTR3F5QKJZFPMD=tip h_01HJZVD66QDTZAG9GD153SM2AG=integration-tab h_01HJZVD66QG7FHRCEAT7WX7E1R=activate-partners h_01HJZVD66Q9HB72WQM5Y4S60FN=note h_01HJZVD66Q5HGF9GWKHB87GK2Y=attribution-link-tab h_01HJZVD66R0XX4DB12R25Y3PXM=cost-tab h_01HJZVD66SNVAHYSSFN2RMWHZX=ad-revenue-tab h_01HJZVD66SJT203JAYDQQ29ZEC=permissions-tab h_01HJZVD66S4680GJ0A9SFSGY4Z=ad-network-permissions h_01HJZVD66SC6KK9KWHR6WQYGR3=agency-permissions" />

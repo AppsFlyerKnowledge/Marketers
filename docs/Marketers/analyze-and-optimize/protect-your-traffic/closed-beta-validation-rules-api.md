@@ -213,3 +213,5 @@ Install events only. In-app events aren't supported in this version.
 > 📘 **See also**
 >
 > * Implement validation rules to prevent fraud
+
+<div data-zendesk-anchors="h_01KWH1NW583T8SPZFF5REMQC6V=note h_01KWH1NW58A3YK7FKR1C4WBRF3=about-the-validation-rules-api h_01KWH1NW58P5AB47847E99YG6G=how-it-works h_01KWH1NW594YT5S9FT8VWX77SG=note-1 h_01KWH1NW594XM03VQKNJPY37B7=scope-and-supported-configurations h_01KWH1NW59J9QHP37KMMK18JBG=faq h_01KWH1NW59G3WG3KHVRGY9TMV4=see-also" />

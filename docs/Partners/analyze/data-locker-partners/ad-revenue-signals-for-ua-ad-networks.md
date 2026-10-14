@@ -63,6 +63,8 @@ To configure the report output setting, follow the steps below:
 
 ## Report specification
 
+<div id="report-considerations" />
+
 <Accordion title="Report structure and format">
 
 * Format: Data arrives in CSV format to the UA partner's S3 bucket.
@@ -75,6 +77,8 @@ To configure the report output setting, follow the steps below:
 * [See sample report](https://docs.google.com/spreadsheets/d/e/2PACX-1vSoV1U_pMUoTFhIpyYQmUI1zQWArY19c8gMmsfpRiAaGXVZEG4WqgSC26u5-fv32j8ZQN4uxtNgVkYs/pub?output=csv)
 
 </Accordion>
+
+<div id="report-structure" />
 
 <Accordion title="Report fields">
 
@@ -101,3 +105,5 @@ Metrics:
 | revenue\_usd | Daily revenue (in USD) generated for the device ID. **Note**: When the revenue amount is small, it's represented in scientific notation. For example: 8.00E-05 |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H8Y7ABGVR7BNHEYVFKPFM4JN=set-the-ad-revenue-report-in-data-locker h_01H8Y7ABGV2T6GBE9BHJQM6FDF=configure-the-report-output-settings h_01H8Y7ABGVW6Y5RY7CVNM3EJZR=enable-the-ad-revenue-report h_01H8Y7ABGVXJ9ZQCJ8BR0DST6W=report-specification h_01H8Y7ABGV0G4GJBRKKGNBSEC5=report-considerations h_01H8Y7ABGV81X0VFWTRMXGHYSA=report-structure" />

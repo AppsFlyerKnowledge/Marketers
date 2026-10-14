@@ -44,11 +44,15 @@ Currency changes depend on your app's existing data:
 
 Changing your app currency impacts revenue data display and accuracy:
 
+<div id="future-data" />
+
 <Accordion title="Future data">
 
 Once the currency changes, all future events with the af\_revenue parameter use the new currency. Reports after the change will reflect this, but reports spanning the change date may show mixed currencies.
 
 </Accordion>
+
+<div id="historical-data-accuracy" />
 
 <Accordion title="Historical data accuracy">
 
@@ -67,6 +71,8 @@ The impact varies:
 
 ### **Example**
 
+<div id="reporting-impacts" />
+
 <Accordion title="Reporting impacts">
 
 If you change your app currency on **October 1**, here's how revenue reporting methods are affected:
@@ -84,3 +90,5 @@ If you change your app currency on **October 1**, here's how revenue reporting m
 > * Currency changes are **permanent**.
 > * Historical data **cannot be converted or restored**.
 > * Confirm all implications with your AppsFlyer account manager before making changes.
+
+<div data-zendesk-anchors="h_01KD7Q6FR8VKG3HGXDJC6YB5J3=about-changing-app-currency-settings h_01KD7Q6FR96NRV4SBRQ8YEW12X=who-can-change-the-app-currency h_01KD7Q6FRB9TCV2N0KT2N4599A=how-currency-changes-impact-your-data h_01KD7QJQ4FF197R69RAD5Q6KKT=future-data h_01KD7QM57R8TJY5T10R36EB1P9=historical-data-accuracy h_01KD7QW856FFEQ779153KNCYW6=example h_01KD7QG6CB2KFGXE6D4M46B65H=reporting-impacts h_01KD7QS7EYS21KX0Q9WB7ETV99=important" />

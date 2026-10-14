@@ -87,6 +87,8 @@ Use filters to refine the information displayed.
 
 </Accordion>
 
+<div id="headline-metrics" />
+
 <Accordion title="Headline metrics">
 
 | Metric | Remarks |
@@ -99,6 +101,8 @@ Use filters to refine the information displayed.
 | Adjacent period trend | Trend values in % indicate the change of the current metric relative to the metric of the previous equivalent period. For example, if the current period is May 1-10, the previous period is April 21-30. |
 
 </Accordion>
+
+<div id="charts" />
 
 <Accordion title="Charts">
 
@@ -246,3 +250,5 @@ Definitions:
 >
 > * [AppsFlyer SKAN Solution guide](/docs/skadnetwork-skan-solution-guide)
 > * [What's different—AppsFlyer iOS 14 related updates](/docs/about-att-and-skan)
+
+<div data-zendesk-anchors="01H81P8JPZM24J0536GKBPNFMJ=dashboard-principles 01H81P8JPZC5K0KZR64P084N4W=skan-dashboard-view-options 01H81P8JPZGSHQVMG27YEJPARH=dashboard-use 01H81P8JPZ93G4EQY343SV2B1Q=dashboard-settings 01H81P8JPZV5F4VCZHR537HREH=filter-options 01H81P8JQ0KRGXWCVT82YW30CS=headline-metrics 01H81P8JQ0ETB0W3SGS56CBCX8=charts 01H81P8JQ0KK1NMRGFR0GBX4EK=metrics 01H81P8JQ0ZKGTRWNW95D015Z7=modeled-metrics-and-null-cv 01H81P8JQ18NGP8Z74D02DMQ7P=appsflyer-attribution-vs-skan-attribution 01H81P8JQ1VTYX3382WDXDMVT3=attribution-framework-differences 01H81P8JQ1M8M9TSHF0C12Z2QE=metric-differences faq%E2%80%94skan-discrepancies=faq-skan-discrepancies 01H81P8JQ157YYNX9C527ES4C8=faq-skan-discrepancies 01H81P8JQ1T3DE29Y14VARKASK=traits-and-limitations h_01HE7SWGPWNWG26CEN40VSTA9J=see-also" />

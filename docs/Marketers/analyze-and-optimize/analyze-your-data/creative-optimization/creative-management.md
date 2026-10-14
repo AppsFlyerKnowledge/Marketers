@@ -45,6 +45,8 @@ An AppsFlyer account with a [Creative Optimization](/docs/creative-optimization-
 
 **To get started using Creative Management, follow the steps below:**
 
+<div id="sync-creatives-from-the-creative-storage" />
+
 <Accordion title="Sync creatives from creative storage">
 
 Creative Management can sync creatives from connected storage. Once the connection is saved, Creative Management pulls creatives from the connected storage and keeps the library up to date as new creatives are added.
@@ -104,6 +106,8 @@ After the connection is created, Creative Management starts pulling and processi
 
 </Accordion>
 
+<div id="browse-and-select-creatives" />
+
 <Accordion title="Browse and select creatives">
 
 The Creative Management gallery is where you review, search, filter, and select creatives.
@@ -129,6 +133,8 @@ Use the search bar and filters to find the relevant creatives by:
 By default, creatives are sorted by sync date, so recently added creatives appear first. You can also sort by launch date or creative name.
 
 </Accordion>
+
+<div id="upload-creatives-to-media-sources" />
 
 <Accordion title="Upload creatives to media sources">
 
@@ -271,6 +277,8 @@ For AppLovin, you can upload creatives to existing creative sets or create new c
 
 </Accordion>
 
+<div id="review-upload-results" />
+
 <Accordion title="Review upload results">
 
 After you start an upload, the upload window closes automatically, and Creative Management continues the upload process in the background while you keep working.
@@ -288,6 +296,8 @@ Upload history shows previous upload jobs and their results, including:
 If an upload finishes with partial success or failure, Creative Management shows an indication on Upload history so you can review the issue later. In the details view, failed creatives appear with a failure reason.
 
 </Accordion>
+
+<div id="creative-activity-status" />
 
 <Accordion title="Creative activity status">
 
@@ -324,3 +334,5 @@ Use status information to answer questions such as:
 > 📘 **See also**
 >
 > * [Creative Optimization guide](/docs/creative-optimization-guide)
+
+<div data-zendesk-anchors="h_01KXDN2V1R9SRPFSRGZZ4ZA62S=sync-creatives-from-the-creative-storage h_01KXDN2V1RGCDYJ074FV4KJY8T=connect-google-drive h_01KXDN2V1R75971RE5ECTDM8TM=connect-dropbox h_01KXDN2V1RAA882M55HK9152D6=browse-and-select-creatives h_01KXDN2V1RHJJZC67ZM84TNT0Y=filter-creatives h_01KXDN2V1R8CXZ4XGTX656XRWF=upload-creatives-to-media-sources h_01KXDN2V1RE8748NWSCJP824PD=google-ads h_01KXDN2V1R31MABH1A3G0T9B84=note h_01KXDN2V1RG25RR7BXYAFVEAT7=meta-ads h_01KXDN2V1RBANB482286YP1QSY=tiktok-ads h_01KXDN2V1R52Y91AZNVGPPWW44=unity-ads h_01KXDN2V1RF9TZ25DFYQ91RVRC=note-1 h_01KXDN2V1REED32CRW83W7MMC9=mintegral h_01KXDN2V1SVWASV4KGJJ2VC162=note-2 h_01KXDN2V1RSFB2GHDPN95S90EJ=applovin h_01M1H2RMVW2CYMV7KBBSHJ9686=note-3 h_01KXDN2V1S8NZP8F4QN51NS3XP=review-upload-results h_01KXDN2V1SC0PHRY810NJG6QY3=creative-activity-status h_01KXDN2V1SDNR1Z5FTKEJNDZF3=see-also" />

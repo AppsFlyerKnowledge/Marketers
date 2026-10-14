@@ -64,3 +64,5 @@ The table below lists the questions that developers need to address during the w
 | Trait | Remarks |
 | --- | --- |
 | Zero plan | The SDK integration wizard is not included in the [Zero plan](/docs/account-management-plans-payments-and-billing#appsflyer-plans). |
+
+<div data-zendesk-anchors="h_01J6730Y7WE1AJXNXFZ0QX23T8=about-the-sdk-integration-wizard h_01J5K2A8BZS9CTZA45FB5VX8C0=the-installation-and-integration-flow h_01J5K2CG0H1G0BCSWHBJ8DPQWA=the-add-in-app-event-flow h_01J6S6HS0H0M6GQ81WGZ3XT0P9=traits-and-limitations" />

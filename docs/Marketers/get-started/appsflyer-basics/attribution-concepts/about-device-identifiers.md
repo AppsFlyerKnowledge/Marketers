@@ -36,15 +36,15 @@ The SDK supports the following device identifiers for Android platforms:
 
 | Device identifier | Purpose |
 | --- | --- |
-| GAID | A **user-resettable** identifier for Google Play Android users.<br /><br />Starting with SDK V4.8.0, AppsFlyer automatically collects this device identifier. |
+| <span id="gaid"></span>GAID | A **user-resettable** identifier for Google Play Android users.<br /><br />Starting with SDK V4.8.0, AppsFlyer automatically collects this device identifier. |
 
 #### Apps published in third-party app stores
 
 | Device identifier | Purpose |
 | --- | --- |
-| Amazon Advertising ID | A **user-resettable**, unique identifier used by Amazon Fire TV. [See CTV overview](/docs/ctv-pc-and-console-platform-attribution-concepts) |
-| OAID | A **user-resettable** identifier used by some out-of-store Android markets.  For more information, see the [Guide to implementing OAID](/docs/android-oaid-implementation-in-the-sdk). |
-| Android ID | A unique, **non-resettable** mobile-device identifier used in third-party app stores. The SDK does not automatically collect the Android ID. However, if there is a need to collect these identifiers, your developer can implement collection.<br /><br />**Note:** Android ID cannot be used in conjunction with GAID. |
+| <span id="amazon-advertising-id"></span>Amazon Advertising ID | A **user-resettable**, unique identifier used by Amazon Fire TV. [See CTV overview](/docs/ctv-pc-and-console-platform-attribution-concepts) |
+| <span id="oaid"></span>OAID | A **user-resettable** identifier used by some out-of-store Android markets.  For more information, see the [Guide to implementing OAID](/docs/android-oaid-implementation-in-the-sdk). |
+| <span id="android-id"></span>Android ID | A unique, **non-resettable** mobile-device identifier used in third-party app stores. The SDK does not automatically collect the Android ID. However, if there is a need to collect these identifiers, your developer can implement collection.<br /><br />**Note:** Android ID cannot be used in conjunction with GAID. |
 
 ## Apple device identifiers
 
@@ -52,8 +52,8 @@ The SDK supports the following device identifiers for iOS platforms:
 
 | Device identifier | Purpose |
 | --- | --- |
-| IDFA | A unique **user-resettable** identifier for Apple iOS or tvOS (Apple TV) users. Since the release of iOS 14.5, IDFA is available only if the user consents via the [ATT prompt](/docs/about-att-and-skan#att-principles). |
-| IDFV | A device identifier shared by all the apps from the **same vendor** on the device. Once the first app is installed, the ID is assigned to it, and other apps from the same vendor are assigned the same IDFV. Apps from other vendors are assigned a different IDFV.<br /><br />In addition, when all the apps from a specific vendor are removed, the IDFV for that vendor is deleted, and upon a new installation, a new IDFV will be assigned. |
+| <span id="idfa"></span>IDFA | A unique **user-resettable** identifier for Apple iOS or tvOS (Apple TV) users. Since the release of iOS 14.5, IDFA is available only if the user consents via the [ATT prompt](/docs/about-att-and-skan#att-principles). |
+| <span id="idfv"></span>IDFV | A device identifier shared by all the apps from the **same vendor** on the device. Once the first app is installed, the ID is assigned to it, and other apps from the same vendor are assigned the same IDFV. Apps from other vendors are assigned a different IDFV.<br /><br />In addition, when all the apps from a specific vendor are removed, the IDFV for that vendor is deleted, and upon a new installation, a new IDFV will be assigned. |
 
 ## CTV , PC, and console app device identifiers
 
@@ -77,3 +77,5 @@ The SDK supports the following device identifiers for CTV, PC, and console platf
 | PlayStation | psid |
 | Native PC | custom |
 | Google Play Games on PC | See [Android identifiers](/docs/about-device-identifiers#android-device-identifiers) |
+
+<div data-zendesk-anchors="h_01H9YXEYC3PA271B3G3Y3GM9PS=overview h_01H9YXEYC3D95A6G70EGNR8ENK=android-device-identifiers h_01H9YXEYC3RG2XCVVW8MJ5VZSC=apps-published-on-google-play apps-published-in-thirdparty-app-stores=apps-published-in-third-party-app-stores h_01H9YXEYC3JA3DPN6P43J1ZXR9=apps-published-in-third-party-app-stores h_01H9YXEYC3733B1A85TEF35EAY=apple-device-identifiers ctv-device-identifiers=ctv--pc-and-console-app-device-identifiers h_01H9YXEYC3DFPWVXA5Y3XANQ3P=ctv--pc-and-console-app-device-identifiers" />

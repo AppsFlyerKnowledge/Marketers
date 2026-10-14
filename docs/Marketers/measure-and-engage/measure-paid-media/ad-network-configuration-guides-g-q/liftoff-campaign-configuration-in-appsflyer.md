@@ -44,6 +44,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The **Integration tab** is divided into different sections as described below.
@@ -98,6 +100,8 @@ Generate and save attribution links and send them to the partner for attributing
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
@@ -110,11 +114,15 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue data is not supported by this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -183,3 +191,5 @@ For product event attribution to work correctly, Liftoff needs to receive the pr
 These IDs must be linked back to the unique IDs you pass to Liftoff within your product feed. Liftoff supports the [standard AppsFlyer convention of sharing this data](/docs/in-app-events-event-structure#predefined-event-parameters) via af\_content\_id attributes out of the box.
 
 If you have a non-standard event data implementation, please reach out to your Liftoff CSM to see if the integration is possible.
+
+<div data-zendesk-anchors="h_01HGFR9QYBQ3BK3TM364SJDKWZ=important h_01HGFR9QYBPY2XR4KMWMJKHHMQ=setting-up-liftoff h_01HGFR9QYBJG0WD6X203X8MYFV=integration-tab h_01HGFR9QYBXAQQKPRW1KKF6989=activate-partners h_01HGFR9QYBPCYCJRY20S1TCF6R=general-settings h_01HGFR9QYB8JHTAAB591QQ1P6J=default-postbacks h_01HGFR9QYBW8DFZK63EZ3V5622=note h_01HGFR9QYB42YK8FJD308YWXC7=attribution-link-tab h_01HGFR9QYBJ20T4F0W5486B4NW=cost-tab h_01HGFR9QYBV9ZCGJ1D6BD1T9JG=ad-revenue-tab h_01HGFR9QYB9DA5XYXPEARZSCHF=permissions-tab h_01HGFR9QYB0VCPG7YCX64BBKY9=ad-network-permissions h_01HGFR9QYBR3W0JXY7MHQ8PZT7=agency-permissions h_01HGFR9QYBG4830DKGMGV716B7=set-up-skadnetwork-integration-with-liftoff h_01HGFR9QYB302DVBYXMK0XY4ED=product-feed-retargeting-with-liftoff" />

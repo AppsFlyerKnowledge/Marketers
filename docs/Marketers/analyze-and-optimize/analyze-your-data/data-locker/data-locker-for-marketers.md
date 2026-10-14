@@ -29,6 +29,8 @@ x-zendesk:
 
 In Data Locker select your apps, media sources, events, and reports to include in the data AppsFlyer delivers to your selected cloud storage options. Then, load data programmatically from the storage into your systems.
 
+<div id="data-locker-features" />
+
 <Accordion title="Data Locker—features">
 
 | Feature | Description |
@@ -42,6 +44,8 @@ In Data Locker select your apps, media sources, events, and reports to include i
 
 </Accordion>
 
+<div id="reports-available-via-data-locker" />
+
 <Accordion title="Reports available via Data Locker">
 
 [Reports available via Data Locker](/docs/data-locker-advertiser-reports)
@@ -51,6 +55,8 @@ In Data Locker select your apps, media sources, events, and reports to include i
 ## Set Data Locker report settings
 
 To configure Data Locker, follow these steps to connect your cloud service, define export settings, and customize report content:
+
+<div id="1-set-up-your-cloud-service" />
 
 <Accordion title="1. Set up your cloud service">
 
@@ -66,6 +72,8 @@ You can connect your Data Locker to one or more cloud service providers. See the
 **Note**! If you don't have a Data Locker subscription and you access Cohorts analytics or SKAN data, you must still complete a marketer-owned cloud storage service procedure.
 
 </Accordion>
+
+<div id="2-add-a-connection-to-your-cloud-service" />
 
 <Accordion title="2. Add a connection to your cloud service">
 
@@ -83,6 +91,8 @@ To create a connection for your cloud provider perform the following steps:
 4. Click the icon of the cloud service to which you want to connect.
 5. Depending on the service you selected, enter the following connection information.
 
+   <div id="aws-cloud-bucket-connection" />
+
    <Accordion title="AWS cloud bucket connection">
 
    Before setting the AWS connection, create an AWS bucket. To learn, how see [here](/docs/data-locker-cloud-service-setup#aws-storage).
@@ -96,6 +106,8 @@ To create a connection for your cloud provider perform the following steps:
    5. Click **Save**.
 
    </Accordion>
+
+   <div id="gcs-cloud-bucket-connection" />
 
    <Accordion title="GCS cloud bucket connection">
 
@@ -111,6 +123,8 @@ To create a connection for your cloud provider perform the following steps:
 
    </Accordion>
 
+   <div id="azure-cloud-bucket-connection" />
+
    <Accordion title="Azure cloud bucket connection">
 
    Before setting the Azure connection, open a storage account in Azure. To learn how, see [here](/docs/data-locker-cloud-service-setup#beta--azure-storage).
@@ -123,6 +137,8 @@ To create a connection for your cloud provider perform the following steps:
    4. Click **Save**.
 
    </Accordion>
+
+   <div id="yandex-cloud-bucket-connection" />
 
    <Accordion title="Yandex Cloud bucket connection">
 
@@ -137,6 +153,8 @@ To create a connection for your cloud provider perform the following steps:
 
    </Accordion>
 
+   <div id="bigquery-data-warehouse-connection" />
+
    <Accordion title="BigQuery data warehouse connection">
 
    Before setting the BigQuery connection, create a dataset in BigQuery. To learn how, see [here](/docs/data-locker-cloud-service-setup#bigquery).
@@ -149,6 +167,8 @@ To create a connection for your cloud provider perform the following steps:
    4. Click **Save** and continue to [select global-level filters](#select-global-level-filters).
 
    </Accordion>
+
+   <div id="snowflake-data-warehouse-connection" />
 
    <Accordion title="Snowflake data warehouse connection">
 
@@ -170,6 +190,8 @@ To create a connection for your cloud provider perform the following steps:
 > You can [use the audit log](#track-connection-changes-in-the-audit-log) to confirm whether a connection was created, updated, or deleted, and who made the change.
 
 </Accordion>
+
+<div id="3-set-the-report-output-settings" />
 
 <Accordion title="3. Set the report output settings">
 
@@ -204,6 +226,8 @@ To apply a filter, perform the following:
 
 </Accordion>
 
+<div id="5-select-the-report" />
+
 <Accordion title="5. Select the report group">
 
 Select the reports that you want to get in your cloud service. The reports are listed in groups. Clicking on the report group name expands or collapses the groups.
@@ -215,6 +239,8 @@ Select the reports that you want to get in your cloud service. The reports are l
   * **Fields:** the number of fields (or columns) that you selected for the report compared to the total number of fields available for selection.
 
 </Accordion>
+
+<div id="customize-or-duplicate" />
 
 <Accordion title="6. Customize or duplicate the report">
 
@@ -240,6 +266,8 @@ After selecting one or more reports from a report group, you can choose to eithe
 After choosing whether to customize or duplicate, proceed to configure the report fields as described in the next step.
 
 </Accordion>
+
+<div id="6-select-the-report-fields" />
 
 <Accordion title="7. Select the report fields">
 
@@ -283,6 +311,8 @@ To select the filters to apply to a specified report:
 
 </Accordion>
 
+<div id="8-remove-legacy-fields" />
+
 <Accordion title="9. Remove legacy fields">
 
 Legacy fields are those that were previously included in the report schema but are now excluded. We recommend removing these fields to ensure your report contains only relevant information. Before making any changes, make sure that your workflows and integrations do not depend on them.
@@ -314,6 +344,8 @@ Most legacy fields are empty or `null`. However, a few of them contain values bu
 [Download the non-empty legacy fields list (CSV).](https://docs.google.com/spreadsheets/d/e/2PACX-1vRzJr2IgKTHKq_6IFX-PFFv6_89ixtlbGZ9RNH134TniGlWa_M-85D1L2E7LhzQrDjictnSnNNnN2mm/pub?output=csv)
 
 </Accordion>
+
+<div id="9-save-the-connection" />
 
 <Accordion title="10. Save the connection">
 
@@ -360,6 +392,8 @@ For more information about data access restrictions, see [User management > Data
 
 ## Data storage architecture
 
+<div id="zd-overview" />
+
 <Accordion title="Overview">
 
 The structure of your data in storage depends on whether the data is sent to cloud storage or a data warehouse. The folder structure described here applies to storage (buckets). For data warehouse storage, consider that the reference to folders applies to views.
@@ -388,7 +422,7 @@ Data of a given report is contained in the hour (h) folders associated with that
 | Subscription ID | ![DataLockerFolders.png](https://files.readme.io/0cda5728e48dab772878cad13ed3b81168f152e1bf01604ac45b700af804dd16-32966264039185.png)<ul><li>The top-level folder in the bucket depends on the storage owner and provider. In general, the top-level folder is your Subscription ID but in some cases, for example, if you use Cyberduck the ID is set in the bookmark and doesn't display in the folder structure.</li><li>The *data-locker-hourly* folder contains the report topics. Folders above this level depend on bucket ownership and cloud service provider.</li></ul>**Examples of folder structure based on bucket owner and cloud provider**<ul><li>**AppsFlyer bucket**: /&lt;unique\_identifier>/</li><li>**Your AWS bucket**: */*</li><li>**Your GCS bucket:** &lt;your bucket name>//</li></ul> |
 | Topic (t) | Report type relates to the subject matter of the report. |
 | Date (dt) | This is the related data date. In the case of raw data, it means the date the event occurred. In the case of aggregated data, the reporting date itself. |
-| Time (h or version) | Date folders are divided into **hourly (h)** or **<span id="version-folders"></span>version** folders depending on the report type.<br /><br />**Hourly folders**<br /><br />The h folders relate to the time the data was received by AppsFlyer. For example, install events received between 14:00-15:00 UTC are written to the h=14 file. Note! There is a delay, of about 1-3 hours, between the time the data arrives in AppsFlyer until the h folder is written to Data Locker. For example, the h=14 folder is written 1 hour later at 15:00 UTC.<br /><br />**Hourly folder characteristics**:<ul><li>There are 24 h folders numbered 0–23. For example, h=0, h=1, and so on.</li><li>A late folder, h=late, contains events of the preceding day arriving after midnight. Meaning events arriving during 00:00–02:00 UTC of the following day. For example, if a user installs an app on Monday 08:00 UTC and the event arrives on Tuesday 01:00 UTC, the event is written to Monday's late folder.</li><li>Data arriving after 02:00 UTC is written to the folder of the actual arrival date and time.</li><li>Ensure that data in the h=late folder is consumed. It isn't contained in any other folder.</li><li>\_temporary folder: In some cases, we generate a temporary folder within an h folder. Disregard temporary folders and subfolders. Example: /t=impressions/dt=2021-04-11/h=18/**\_temporary**.</li></ul>**Daily reports**<ul><li>Raw data reports having a daily data freshness are stored in the h=23 folder. The uninstall report is usually in the h=2 folder but can be in any folder.</li><li>Cohort and Incrementality reports are stored directly in the dt folder.</li><li>Versioned reports adhere to a different convention described in this section.</li></ul>**Hourly report considerations for apps that don't use UTC time.**<br /><br />To make sure that you get all the data for a given calendar day you must consume the folders according to the day defined by the app timezone as detailed:<ul><li>**Eastern hemisphere timezone**: To get all the data of a given calendar date you must consume folders according to UTC time and date. Example: Your app timezone is UTC+10 (Sydney, Australia). To get all the hourly data related to Tuesday (Sydney) you must consume the following folders: Monday h=14–23 and late, Tuesday h=0–13 and 14-15 Why must you consume Tuesday h=14-15? Some data can arrive late. So the h=14–15 folders can contain late-arriving events. You must filter event\_time to align with the app calendar day relative to UTC.</li><li>**Western hemisphere timezone:** To get all the data of a given calendar date you must consume folders according to UTC time and date. Example: Your app timezone is UTC- 7 (Los Angeles). To get all the hourly data related to Tuesday (Los Angeles) you must consume the following folders: Tuesday h=7–23 and late, Wednesday h=0–6 and 7-8. Why must you consume Wednesday h=7-8? Some data can arrive late. So the h=7–8 folders can contain late-arriving events. You must filter event\_time to align with the app calendar day relative to UTC.</li></ul>**Version folders**<br /><br />Some reports have a versioned option. This means that the most updated data for a given day is provided multiple times. Because data can continue to update due to late-arriving data or more accurate data the same report has multiple versions where the most recent version is the most accurate.<br /><br />The reports for a given day are contained in the versions folder of that day. Each version is contained in a separate folder whose name is set using an Epoch timestamp that uniquely identifies the report.<br /><br />Your data import processes must consider that data can be written retroactively. For example, on January 14, data can be written to the Jan 1 folder. If the bucket is owned by you, consider using cloud service notification to trigger your import process ([AWS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/NotificationHowTo.html)\| [GCS](https://cloud.google.com/storage/docs/pubsub-notifications)) |
+| Time (h or version) | Date folders are divided into **hourly (h)** or **version** folders depending on the report type.<br /><br />**<span id="hourly-folders"></span>Hourly folders**<br /><br />The h folders relate to the time the data was received by AppsFlyer. For example, install events received between 14:00-15:00 UTC are written to the h=14 file. Note! There is a delay, of about 1-3 hours, between the time the data arrives in AppsFlyer until the h folder is written to Data Locker. For example, the h=14 folder is written 1 hour later at 15:00 UTC.<br /><br />**Hourly folder characteristics**:<ul><li>There are 24 h folders numbered 0–23. For example, h=0, h=1, and so on.</li><li>A late folder, h=late, contains events of the preceding day arriving after midnight. Meaning events arriving during 00:00–02:00 UTC of the following day. For example, if a user installs an app on Monday 08:00 UTC and the event arrives on Tuesday 01:00 UTC, the event is written to Monday's late folder.</li><li>Data arriving after 02:00 UTC is written to the folder of the actual arrival date and time.</li><li>Ensure that data in the h=late folder is consumed. It isn't contained in any other folder.</li><li>\_temporary folder: In some cases, we generate a temporary folder within an h folder. Disregard temporary folders and subfolders. Example: /t=impressions/dt=2021-04-11/h=18/**\_temporary**.</li></ul>**Daily reports**<ul><li>Raw data reports having a daily data freshness are stored in the h=23 folder. The uninstall report is usually in the h=2 folder but can be in any folder.</li><li>Cohort and Incrementality reports are stored directly in the dt folder.</li><li>Versioned reports adhere to a different convention described in this section.</li></ul>**Hourly report considerations for apps that don't use UTC time.**<br /><br />To make sure that you get all the data for a given calendar day you must consume the folders according to the day defined by the app timezone as detailed:<ul><li>**Eastern hemisphere timezone**: To get all the data of a given calendar date you must consume folders according to UTC time and date. Example: Your app timezone is UTC+10 (Sydney, Australia). To get all the hourly data related to Tuesday (Sydney) you must consume the following folders: Monday h=14–23 and late, Tuesday h=0–13 and 14-15 Why must you consume Tuesday h=14-15? Some data can arrive late. So the h=14–15 folders can contain late-arriving events. You must filter event\_time to align with the app calendar day relative to UTC.</li><li>**Western hemisphere timezone:** To get all the data of a given calendar date you must consume folders according to UTC time and date. Example: Your app timezone is UTC- 7 (Los Angeles). To get all the hourly data related to Tuesday (Los Angeles) you must consume the following folders: Tuesday h=7–23 and late, Wednesday h=0–6 and 7-8. Why must you consume Wednesday h=7-8? Some data can arrive late. So the h=7–8 folders can contain late-arriving events. You must filter event\_time to align with the app calendar day relative to UTC.</li></ul>**<span id="version-folders"></span>Version folders**<br /><br />Some reports have a versioned option. This means that the most updated data for a given day is provided multiple times. Because data can continue to update due to late-arriving data or more accurate data the same report has multiple versions where the most recent version is the most accurate.<br /><br />The reports for a given day are contained in the versions folder of that day. Each version is contained in a separate folder whose name is set using an Epoch timestamp that uniquely identifies the report.<br /><br />Your data import processes must consider that data can be written retroactively. For example, on January 14, data can be written to the Jan 1 folder. If the bucket is owned by you, consider using cloud service notification to trigger your import process ([AWS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/NotificationHowTo.html)\| [GCS](https://cloud.google.com/storage/docs/pubsub-notifications)) |
 
 </Accordion>
 
@@ -404,6 +438,8 @@ For bucket cloud storage, data is provided in unified data files containing the 
 | Segregated by app | The folder contains subfolders per app. Data files for a given app are contained within the app folder. In the figure that follows, the h=19 folder contains app folders. Each app folder contains the associated data files. Note! The data files don't contain the app\_id you must determine the app\_id using the folder.<br /><br />![DLSegregateByApp.png](https://files.readme.io/90639507da82f7dafacfa5bfb67fa96a8277747cd0eee226d74498bf5ff16869-32966264040977.png)<br /><br />In each app folder the naming convention is unique\_id.gz:<ul><li>Your data loading process must:<ul><li>Load data after the \_SUCCESS flag is set.</li><li>Load all files in the folder having a *.gz* extension. Don't build your import process using part numbering logic.</li></ul></li></ul>Limitation: This option is not available for Peopled-Based Attribution reports. |
 
 </Accordion>
+
+<div id="data-files" />
 
 <Accordion title="Data files">
 
@@ -497,6 +533,8 @@ The following connection lifecycle events are tracked:
 For more information see: [Audit log.](/docs/audit-log)
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 <Accordion title="Traits and Limitations">
 
@@ -623,6 +661,8 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
 
 </Accordion>
 
+<div id="amazon-s3-browser" />
+
 <Accordion title="Amazon S3 browser">
 
 **Before you begin**:
@@ -654,3 +694,5 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
 >
 > * [Reports available via Data Locker](/docs/data-locker-advertiser-reports)
 > * [Selecting the right raw data delivery tool](/docs/raw-data-reporting-overview#reporting-tools-characteristics-and-features)
+
+<div data-zendesk-anchors="data-locker=overview h_01HE2S6FANNTNB580CMHNX34YA=overview data-locker%E2%80%94features=data-locker-features h_01HE2S6FANQH2GZ11S8S87H0YH=data-locker-features h_01HE2S6FAN6BFPJSZJBEE9P5VK=reports-available-via-data-locker h_01JS45N2DNWZBHP5PH8ZG6FBTF=set-data-locker-report-settings h_01JS45N2DNEZZJRF2RKG1RM9NK=1-set-up-your-cloud-service h_01JS45N2DNVA0SHBA49G42GNFE=2-add-a-connection-to-your-cloud-service h_01K22P5FWJ96CPFJPW0XDCHNNJ=note h_01JS4ASE6J6X1DD33PEGQAPXPA=aws-cloud-bucket-connection h_01JS4ASE6J587JPHAMCSBA2Z92=gcs-cloud-bucket-connection h_01JS4ASE6J4NC7M0TRFDT7F2X7=azure-cloud-bucket-connection h_01JS4ASE6JKFTM3FYAEKFHRW2M=yandex-cloud-bucket-connection h_01JS4ASE6JKV8WJG68RMHKVCE5=bigquery-data-warehouse-connection h_01JS4ASE6JBNE5BK04QDRM7CW4=snowflake-data-warehouse-connection h_01JTFRHNRRJB76JBXXT1TBNRBY=note-1 h_01JS45N2DN8JTMQCK76PDBBWA4=3-set-the-report-output-settings h_01JSBTCZ5569RCV6W6QWT400R7=note-2 h_01JS45N2DNMQAGFVHDDD5JGF2M=select-global-level-filters h_01JS45N2DN388YVP29DDBBBFBP=5-select-the-report h_01JVPJ9CG45JREBKP3ZQXKZWRZ=customize-or-duplicate h_01JS45N2DP4FK9EZYNTY2GX2GK=6-select-the-report-fields h_01JS45N2DPN7B73X0TRC82JW87=7-select-the-reportlevel-filters h_01JS45N2DPYYABS9NXFXP23ARA=8-remove-legacy-fields h_01JS45N2DPYNBG9VPCZJ481DFE=note-3 nonempty-legacy-fields=non-empty-legacy-fields h_01JSCC6KZNKJAVYSFCDDSE80YW=non-empty-legacy-fields h_01JS45N2DPH1QAREYGN5H20T8R=9-save-the-connection h_01JS45N2DPNPXAEZ74J0ETP7BS=important h_01KH8D60TDTNS4EWNXJ4JPGXZ2=set-user-permissions h_01KH8D60TEFX2MCW00JT94F9AQ=manage-data-locker-access-and-ownership-admins h_01KH8D60TE541XMXWCVK0HZTJA=give-data-locker-access h_01KH8D60TF69FN7KMBPMZHBW27=manage-ownership-and-editors h_01KH8D60TFYMEY8FEPR4YKJRYJ=review-filters-after-changing-ownership h_01KH8D60TGVN75TMS9QES0G6CQ=note-4 architecture=data-storage-architecture h_01HE2S6FAN4H9DQ5HBTKSNJ72B=data-storage-architecture overview=zd-overview h_01HE2S6FANY1FWEY6Y34T85GHM=zd-overview h_01HE2S6FANDJ65MZ2H2FBAZYJR=folder-structure h_01HE2S6FAN7PBZ8M86FQVSN5KQ=hourly-folders h_01HE2S6FAN366V8HNCY4PFNTFG=version-folders h_01HE2S6FANHFZMCY3WZBZB9QMP=app-segregation h_01HE2S6FANVDFH9S9JN8E9J7ES=data-files h_01HE2S6FAN8ZDF5N4ECKKN1D1H=storage-options h_01HE2S6FAN2HY7V3G9NS9XCVE1=caution notice-to-security-officers-in-the-case-of-customercontrolled-storage=notice-to-security-officers-in-the-case-of-customer-controlled-storage h_01HE2S6FANRVGYPRWWFA50JAQ4=notice-to-security-officers-in-the-case-of-customer-controlled-storage h_01HE2S6FANBRXA0NS4E8SP3618=multipleconnections-principles-more-than-one-destination h_01HE2S6FAP4SA77B0SX7R8JMTY=additional-information h_01JTFQMKN0046SNBB4YSRJMQG9=track-connection-changes-in-the-audit-log h_01HE2S6FAP6FKAJCW92JVWD828=traits-and-limitations h_01HE2S6FAPJC20G7YZSRWP5E34=troubleshooting h_01HE2S6FAPJMKX567HSAR16TCN=aws-data-retrieval h_01HE2S6FAPB5MW09Y4HKFV3RM8=aws-cli h_01HE2S6FAP31H9NK6V870FGXZF=listing-files-and-folders h_01HE2S6FAP2E2TW4F5PJ4226Q0=cyberduck h_01HE2S6FAP74NG5VNEWKWXXJX2=amazon-s3-browser h_01HE7RB5N99WJ3XP69Z69H81AD=see-also" />

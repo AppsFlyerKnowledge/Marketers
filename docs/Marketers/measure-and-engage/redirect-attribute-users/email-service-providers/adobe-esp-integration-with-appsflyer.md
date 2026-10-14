@@ -38,7 +38,7 @@ The AppsFlyer ESP integration solution is a premium feature. If you'd like to le
 
 ## Set up the integration
 
-This section describes how to set up your Adobe ESP integration with AppsFlyer.
+<span id="h_01J3JHFXRP57VS9D22FEWS2JZW"></span>This section describes how to set up your Adobe ESP integration with AppsFlyer.
 
 ### Prerequisites
 
@@ -163,6 +163,8 @@ Learn more about configuring [Universal links](https://dev.appsflyer.com/hc/docs
 Configure your app to enable Android App Linking from the email message to your app. Learn more about configuring Android [App Links](/docs/appsflyer-knowledge-base-glossary#android-app-link).  
 **Note:** The click domain should be added to the current domains already defined in the Android Manifest.
 
+<div id="h_01J3WS4QWMRT8KSW6J3QHXM9TQ" />
+
 #### **Configure your app to support deep linking**
 
 When a click on an App Link or Universal Link occurs, the app should open.
@@ -175,6 +177,8 @@ When a click on an App Link or Universal Link occurs, the app should open.
 * For Android please follow the follow these [instructions](https://dev.appsflyer.com/hc/docs/dl_android_esp_2_setup#flow-description).
 
 2. Use the [Unified DeepLinking API](https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl) to get the deep link parameters and handle the deep link data.
+
+<div id="h_01J3WS4QWMSKZ33APWFR8CG5TZ" />
 
 #### **Configure your app to handle Weblinks and Application Links**
 
@@ -248,3 +252,5 @@ No, AppsFlyer creates the SSL certificate for you.
   In this setup, AppsFlyer hosts the AASA file for the click tracking domain used in ESP email links. You only need to add that domain to your app's associated domains, and you don't need to manage the AASA hosting yourself.
 
 </Accordion>
+
+<div data-zendesk-anchors="overview=about-the-adobe-esp-integration h_01J3JHJCCASM6E5QYJB5VHQ8HK=about-the-adobe-esp-integration set-up-your-esp-integration-with-appsflyer=set-up-the-integration h_01J3JHFRGA6BTMWSK7EEEVGS6T=set-up-the-integration h_01J3JJ74GYF5AJT9R2P2CXDXE1=prerequisites h_01JMYJG3CTGE9Y3SBFAECV326G=notes h_01J3W8XR5QS227XNCD453RWYZ9=configure-your-app-to-support-associated-domains h_01J3W8Y7FMSWPG7MFF6FMSXFM3=configure-your-app-to-support-deep-linking h_01J3W8ZMHSXQGJPQEVR62Q28X9=configure-your-app-to-handle-weblinks-and-application-links h_01K3R6V0K31816PVY95X5WZC4C=faq" />

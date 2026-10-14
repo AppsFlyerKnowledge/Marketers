@@ -43,6 +43,8 @@ AppsFlyer provides an encryption certificate to encrypt data and sign the SSO re
 
 ## Troubleshooting and FAQ
 
+<div id="can-users-log-in-using-both-sso-and-2fa-methods" />
+
 <Accordion title="Can users log in using both SSO and 2FA methods?">
 
 Only one security login method can be used at a time, either SSO or 2FA.
@@ -52,17 +54,23 @@ Only one security login method can be used at a time, either SSO or 2FA.
 
 </Accordion>
 
+<div id="why-cant-some-users-connect-using-sso" />
+
 <Accordion title="Why can't some users connect using SSO?">
 
 Make sure all user emails are set up in both systems—in your IdP and in the AppsFlyer platform. If that isn't the reason, contact your CSM to find why and how to fix it. In the meantime, your CSM can temporarily disable the **Force SSO login** option so that users can log in using their email and password.
 
 </Accordion>
 
+<div id="do-i-need-a-test-environment-to-test-setup-before-pushing-to-production" />
+
 <Accordion title="Do I need a test environment to test setup before setting the configuration?">
 
 A test environment isn’t required. Follow the steps in Step 3 to test the SSO login, either from the IdP or the service provider's side (AppsFlyer).
 
 </Accordion>
+
+<div id="what-should-i-do-before-the-appsflyer-certificate-expires" />
 
 <Accordion title="What should I do before the AppsFlyer certificate expires?">
 
@@ -74,6 +82,8 @@ AppsFlyer will alert you via the platform when your AppsFlyer SSO certificate is
 
 </Accordion>
 
+<div id="how-can-i-unselect-the-force-sso-login-option" />
+
 <Accordion title="Force SSO login is disabled, how can I enable it?">
 
 Once the **Force SSO login** option is selected and the configuration is saved, this option becomes disabled. To revert and have **Force SSO login** enabled, you'll need to re-configure [step 2](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer) of the SSO process from the beginning.
@@ -84,11 +94,15 @@ Once the **Force SSO login** option is selected and the configuration is saved, 
 
 </Accordion>
 
+<div id="is-it-required-to-use-the-appsflyer-certificate-in-my-idp" />
+
 <Accordion title="Is it required to use the AppsFlyer certificate in my IdP?">
 
 Implementing the AppsFlyer certificate in your IdP is **strongly recommended** but isn't mandatory. Some IdPs, such as Google Workspace and Microsoft Entra ID, don't require by default a service provider certificate.
 
 </Accordion>
+
+<div id="what-happens-when-i-deactivate-sso-and-how-do-i-do-it" />
 
 <Accordion title="What happens when I deactivate SSO and how do I do it?">
 
@@ -100,8 +114,12 @@ When deactivating SSO authentication, users will be able to log in using other m
 
 </Accordion>
 
+<div id="can-i-have-negative-serial-numbers-in-the-certificate" />
+
 <Accordion title="Can I have negative serial numbers in the certificate?">
 
 No. AppsFlyer does not support negative serial numbers in the certificate.
 
 </Accordion>
+
+<div data-zendesk-anchors="what-is-sso=what-is-sso-authentication h_01J5QR4DE5EBSVWHXXENZTRPWQ=what-is-sso-authentication h_01HCHG901WVRX1MKNB0KF02PSJ=how-does-sso-authentication-work the-authentication-certificate=the-appsflyer-service-provider-authentication-certificate h_01HCHG901WG05TP2NJBJRDRWPN=the-appsflyer-service-provider-authentication-certificate h_01JJH8DC3AHNC6GST0S41X8MFV=note faq=troubleshooting-and-faq h_01HCHG901XSAQ7HSGM0ZVT7B70=troubleshooting-and-faq h_01HCHG901XJ77NQFVX01YZPGT2=can-users-log-in-using-both-sso-and-2fa-methods h_01HCHG901XH0ED40MK2YM1NGRP=why-cant-some-users-connect-using-sso h_01HCHG901X942E0WCBC00KRFSE=do-i-need-a-test-environment-to-test-setup-before-pushing-to-production h_01HCHG901XNNT8GA3TSP5XJC3B=what-should-i-do-before-the-appsflyer-certificate-expires h_01HCHG901XSKPTTRECJPNA09XR=how-can-i-unselect-the-force-sso-login-option h_01HCHG901XPKMP7HSJ04PY9KHW=note-1 h_01HYDBV18S924FNRCBSPR56CTR=is-it-required-to-use-the-appsflyer-certificate-in-my-idp h_01J5QRR54JNC5YNZHQ463KS7BS=what-happens-when-i-deactivate-sso-and-how-do-i-do-it h_01JJH8F3VFTQA1AANNNS85YBF8=can-i-have-negative-serial-numbers-in-the-certificate" />

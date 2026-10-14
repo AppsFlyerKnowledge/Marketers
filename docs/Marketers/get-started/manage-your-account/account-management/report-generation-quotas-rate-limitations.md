@@ -20,7 +20,7 @@ x-zendesk:
   promoted: false
   comments_disabled: true
   created_at: '2014-05-01T12:55:30Z'
-  edited_at: '2026-06-04T10:17:22Z'
+  edited_at: '2026-10-14T09:37:22Z'
 ---
 ## Rate limits for reports
 
@@ -79,3 +79,5 @@ Ad networks can pull the following postback report types:
 > 📘 **See also**
 >
 > * [Data availability windows](/docs/data-availability-windows)
+
+<div data-zendesk-anchors="h_01H9JNZFPSVXPKMEVR1ZR6PSYG=rate-limits-for-reports h_01H9JNZFPS62A5CFWSXVPN8XM5=aggregated-and-analytics-reports h_01H9JNZFPSPYWBB2MCZV2R2KX1=raw-data ad-network-raw-data-daily-quota=ad-network-postback-reports-daily-quota h_01H9JNZFPSYXZNW81BZTRDS576=ad-network-postback-reports-daily-quota h_01H9JNZFPT76RAV8JBTY2K75V4=faq h_01HE7SW3VWRNVY1WFB4YCSAVY6=see-also" />

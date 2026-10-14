@@ -36,11 +36,13 @@ Enriched Engagement support will be available for networks that meet the Premier
 >
 > To begin reporting engaged views and clicks, ad networks should contact AppsFlyer support.
 
-See [the list of networks eligible to report EET](#allowed-network-list)
+See [the list of networks eligible to report EET](#01JCAT81K2EJNH91YS6NJGMXMB-data-title)
 
 > 📘 **Warning**
 >
 > Clicks and impressions from non-allowed networks that include the `af_engagement_type` parameter will be rejected and won’t be used for attribution.
+
+<div id="engaged-click-or-engaged-view-attribution-flow" />
 
 <Accordion title="Engaged click or engaged view attribution flow">
 
@@ -54,6 +56,8 @@ The following steps outline the flow from the initial ad display to the final at
 6. AppsFlyer attributes the install event to the ad network.
 
 </Accordion>
+
+<div id="parameters-for-reporting-engagement-types-in-attribution-links" />
 
 <Accordion title="Parameters for reporting engagement types in attribution links">
 
@@ -79,6 +83,8 @@ https://impression.appsflyer.com/com.greatapp?pid=greatnetwork_int&c=GreatCampai
 ```
 
 </Accordion>
+
+<div id="user-engagements-to-report-as-engaged-clicks" />
 
 <Accordion title="User engagements to report as engaged clicks">
 
@@ -108,6 +114,8 @@ Below are examples of user engagements that ad networks should **not** report wi
 
 </Accordion>
 
+<div id="user-engagements-to-report-as-engaged-views" />
+
 <Accordion title="User engagements to report as engaged views">
 
 Networks should report user engagements with `af_engagement_type=engaged_view` in the following cases:
@@ -133,7 +141,7 @@ Below is a use case of user engagement that ad networks should **not** report wi
 
 </Accordion>
 
-<div id="allowed-network-list" />
+<div id="01JCAT81K2EJNH91YS6NJGMXMB-data-title" />
 
 <Accordion title="Networks eligible to report EET">
 
@@ -216,3 +224,5 @@ The allowed network list includes partners whose enriched engagement-type events
 | YouAppi |
 
 </Accordion>
+
+<div data-zendesk-anchors="01JA7WZH43ECDKRC0R0J89ED1E=disclaimer h_01JJPVYGWZSFSATZ4TH5VBSVXW=which-networks-can-report-eet-to-appsflyer 01JAN5JRM56C6S6EP27WFJ2Y4W=note h_01J00XFV133YYAB7YPQNXM5R37=warning 01JA7WZH46RJBG996NG9EZV7T9=engaged-click-or-engaged-view-attribution-flow 01JA7WZH4BZVGS9Z1NNHQC72N6=parameters-for-reporting-engagement-types-in-attribution-links 01JA7WZH4JDJFCVT25WJ4GNE20=user-engagements-to-report-as-engaged-clicks 01JA7WZH4Q32TEWM5EKME142R7=user-engagements-to-report-as-engaged-views 01JCAT81K2EJNH91YS6NJGMXMB%20data-title%3D=01JCAT81K2EJNH91YS6NJGMXMB-data-title allowed-network-list=01JCAT81K2EJNH91YS6NJGMXMB-data-title h_01JJPVYGWZ4T6TPFRWTR2AB027=warning-1" />

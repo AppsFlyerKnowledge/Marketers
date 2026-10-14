@@ -44,6 +44,8 @@ The Convertro configuration window uses only the **Integration** tab.
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -122,11 +124,15 @@ Once this configuration is saved, AppsFlyer begins sending the following data to
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution Links are not available for Convertro.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -134,14 +140,20 @@ Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 Permissions are not available for Convertro.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H9FK64HSFKW54BBRVB3W9ZR0=important h_01H9FK64HS75VDP07DGETASAH7=setting-up-convertro h_01H9FK64HSK1B1Y9BRWP7AN96R=integration-tab h_01H9FK64HS7VJWHF1QCWNYVBX8=activate-partner h_01H9FK64HSCAYHB82DZX0JA2ZX=general-settings obtaining-the-client-name-page-url-site-id-from-the-convertro-platform=obtaining-the-client-name-page-url--site-id-from-the-convertro-platform h_01H9FK64HSKR8N45RXQQC3VEW1=obtaining-the-client-name-page-url--site-id-from-the-convertro-platform h_01H9FK64HTPK69QQ92DJ55RNVM=default-postbacks inapp-event-settings=in-app-event-settings h_01H9FK64HTGKXWW0FMN0T445FG=in-app-event-settings h_01H9FK64HTCM3H0243FVFDY0ET=attribution-link-tab h_01H9FK64HT9JHKBN5W8H16E6CK=cost-tab h_01H9FK64HTSP070RX7ZCYM7KE3=ad-revenue-tab h_01H9FK64HTCXAMY6TR186EE0M9=permissions-tab" />

@@ -94,6 +94,8 @@ Consider the following in preparing links:
 
 </Accordion>
 
+<div id="set-custom-impression-links" />
+
 <Accordion title="Set custom impression links">
 
 Advertisers utilize attribution impression links with their own custom media sources, for example, website banners.
@@ -127,3 +129,5 @@ View-through attribution can be disabled per media source. However, if impressio
 In regard to SRNs: Turning off view-through attribution in AppsFlyer doesn't do the same on the network side. Make sure that you align the view-through settings in both AppsFlyer and the networks to avoid discrepancies.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HEMT7T1TB9W7ZBRPQW29SRPF=overview viewthrough-attribution-flow=view-through-attribution-flow h_01HEMT7T1T6ZK4ZH7DKV3162J1=view-through-attribution-flow h_01HEMT7T1TY46QXBDS6MBF1DZ5=terminology viewthrough-attribution-principles=view-through-attribution-principles h_01HEMT7T1THD8TVKRRJ168HKY2=view-through-attribution-principles viewthrough-lookback-window=view-through-lookback-window h_01HEMT7T1TWHN2AB3Q5X36TKKB=view-through-lookback-window viewthrough-attribution-reporting-and-metrics=view-through-attribution-reporting-and-metrics h_01HEMT7T1TQNKM5GABA7VY6KR1=view-through-attribution-reporting-and-metrics viewthrough-operations=view-through-operations h_01HEMT7T1T13JC75ZYY01N8PS6=view-through-operations h_01HEMT7T1TQ3YNQ2Y0CCGPXWDX=set-impression-links h_01HEMT7T1T75MBS64JE837CJ0E=set-custom-impression-links h_01HEMT7T1T253G1CZNS9KVDFCP=turn-off-viewthroughattribution" />

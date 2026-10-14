@@ -38,6 +38,8 @@ x-zendesk:
 
 WiFi Master Key Ads configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration Tab">
 
 ### Activate Partner
@@ -79,6 +81,8 @@ WiFi Master Key Ads connects with AppsFlyer via a unique clientid and secretkey.
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution Link Tab">
 
@@ -123,17 +127,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost Tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad Revenue Tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions Tab">
 
@@ -153,3 +163,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW6Z9DPAYATXWJR4GZMD0KM=setting-up-wifi-master-key-ads h_01HKW6Z9DPYGREGB9VHJJQP6FS=integration-tab h_01HKW6Z9DP6WQD968EQS8G0SZY=activate-partner h_01HKW6Z9DQ3K3RTCT7CMT67WCX=general-settings h_01HKW6Z9DQ26D258602BC43T9B=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW6Z9DQ1XMVERFP97HQ7HM7=in-app-events-settings h_01HKW6Z9DQ0GEE118QKXRA335C=attribution-link-tab h_01HKW6Z9DQ8YMNT6W2B8NEV520=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6Z9DQ9D2F75XWZRM0JAQM=click-through-attribution h_01HKW6Z9DQQE4QP37994K8HMCQ=click-attribution-link h_01HKW6Z9DQJ6F8Z074H9JG97EC=cost-tab h_01HKW6Z9DQ6GW0S9KDG0RFK1BX=ad-revenue-tab h_01HKW6Z9DQ3Y12DV461NHST3FT=permissions-tab h_01HKW6Z9DQZ8TBA8DK6NJNQT4F=ad-network-permissions" />

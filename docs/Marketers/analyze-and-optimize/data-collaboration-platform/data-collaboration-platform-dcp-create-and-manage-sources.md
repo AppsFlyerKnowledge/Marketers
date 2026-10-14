@@ -207,19 +207,19 @@ When setting up a source in the Data Collaboration Platform (DCP), you must choo
 
 Use this method to upload a complete, self-contained file that fully replaces the prior dataset each time the source is updated.
 
-**Supported cloud services**
+<span id="h_01K2A7MAWT05K506384QHYA0FN"></span>**Supported cloud services**
 
 * Amazon S3
 * Google Cloud Storage (GCS)
 * BigQuery
 * Snowflake
 
-**Follow these guidelines for the Snapshot update method:**
+**<span id="h_01K2A7MAWTCYF3VAWJRRRJFNN5"></span>Follow these guidelines for the Snapshot update method:**
 
 1. **Source folder path**
 
    When you register a cloud‑storage source in DCP, a root path (e.g. `input/my_source_folder/`) is defined for that source. Each time you refresh the dataset, you upload a **full snapshot**—a file that contains all current rows—to this folder. This guarantees that DCP always processes the most up‑to‑date and complete view of the data.
-2. **Uploading full snapshot files**
+2. <span id="h_01K2A7MAWTPJ621MGBBG40N8H4"></span>**Uploading full snapshot files**
 
 | Guideline | Why it matters | How to comply |
 | --- | --- | --- |
@@ -261,7 +261,7 @@ s3://af-dcr-xyz/abcd9876/input/source_name1/dt=2025-mm-dd/v=1/data/
 | `v=1/` | Version (optional) | Supports retries or additional snapshots |
 | `data/` | Files | Parquet / CSV / Avro snapshot files |
 
-**Example of a two-day snapshot structure:**
+<span id="h_01K2A7MAWTYFHBANCV9F2NKNCV"></span>**Example of a two-day snapshot structure:**
 
 ```
 source_name1/
@@ -297,7 +297,7 @@ Why use Append?
 
 **Follow these guidelines for the Append update method:**
 
-1. **Source folder setup**
+<span id="h_01K2A7MAWT8E6AX95VG86APXBB"></span>1. **Source folder setup**
 
 | Step | Description |
 | --- | --- |
@@ -305,7 +305,7 @@ Why use Append?
 | **Define root path** | A tenant‑scoped path (e.g. `s3://af‑dcr‑xyz/abcd1234/`) is configured as the input directory |
 | **Security** | Grant the service user write permission only on this path |
 
-2. **Uploading append (delta) files**
+<span id="h_01K2A7MAWT86J2S65D99BC66PQ"></span>2. **Uploading append (delta) files**
 
 | Guideline | Why it matters | How to comply |
 | --- | --- | --- |
@@ -314,7 +314,7 @@ Why use Append?
 | **Unique file names** | Prevents accidental overwrites | Give files unique names modeled like this:`events_2025‑08‑04.parquet` `events_2025‑08‑05.parquet` |
 | **Required columns** | Enables tracking of changes | The file must include:<ul><li>A date column to associate records with a reporting timeframe.<ul><li>A version column to track data revisions.</li></ul></li></ul>**Note:** Files missing these columns will result in a loading error in DCP. |
 
-**Folder anatomy:**
+<span id="h_01K2A7MAWTV3FY1GZSXQFNX4JS"></span>**Folder anatomy:**
 
 ```
 s3://af-dcr-xyz/abcd1234/input/source_name/dt=2025-08-10/
@@ -329,7 +329,7 @@ s3://af-dcr-xyz/abcd1234/input/source_name/dt=2025-08-10/
 | `source_name/` | Logical DCP source (e.g., CRM\_Events) |
 | `dt=2025-08-10/` | Daily partition folder |
 
-**Example weekly delta folder structure:**
+<span id="h_01K2A7MAWTRSYFTTDKG4G0TPZR"></span>**Example weekly delta folder structure:**
 
 ```
 source_name/
@@ -342,7 +342,7 @@ source_name/
   dt=2025-08-10/
 ```
 
-**Rule‑of‑thumb cheat‑sheet:**
+<span id="h_01K2A7MAWT5NDJQAYD16NRZSAQ"></span>**Rule‑of‑thumb cheat‑sheet:**
 
 | Requirement | Why | Example |
 | --- | --- | --- |
@@ -711,10 +711,12 @@ When setting up a source intended for audience activation on Google and confirmi
 
 **Additional consent fields and their response values:**
 
-<table><thead><tr><th>Field name</th><th>Response value</th><th>Field explained</th></tr></thead><tbody><tr><td><code>eea</code></td><td>true/false</td><td>Is the user located in the EEA (European Economic Area), to which the DMA applies?</td></tr><tr><td><code>ad_personalization</code></td><td>\*true/false</td><td>Did the user give Google consent to use their data for personalized advertising?</td></tr><tr><td><code>ad_user_data</code></td><td>\*true/false</td><td>Did the user give consent to send their user data to Google? </td></tr><tr><td colspan="3">\* When “<strong>true</strong>”, AppsFlyer includes the user identifiers you've sent for users who gave consent.<br/>   When “<strong>false</strong>”: AppsFlyer doesn't include them, as they weren't sent to AppsFlyer.</td></tr></tbody></table>
+<table><thead><tr><th>Field name</th><th>Response value</th><th>Field explained</th></tr></thead><tbody><tr><td><span id="eea"></span><code>eea</code></td><td>true/false</td><td>Is the user located in the EEA (European Economic Area), to which the DMA applies?</td></tr><tr><td><span id="ad_personalization"></span><code>ad_personalization</code></td><td>\*true/false</td><td>Did the user give Google consent to use their data for personalized advertising?</td></tr><tr><td><span id="ad_user_data"></span><code>ad_user_data</code></td><td>\*true/false</td><td>Did the user give consent to send their user data to Google? </td></tr><tr><td colspan="3"><span id="when--true--appsflyer-sends-user-identifiers-for-users-who-have-granted-consent-to-google--when--false--appsflyer-abstains-from-sending-them"></span>\* When “<strong>true</strong>”, AppsFlyer includes the user identifiers you've sent for users who gave consent.<br/>   When “<strong>false</strong>”: AppsFlyer doesn't include them, as they weren't sent to AppsFlyer.</td></tr></tbody></table>
 
 #### Potential impact on the audience size
 
 The actual and estimated audience size sent to Google may vary based on the number of users granting or denying consent.
 
 </Accordion>
+
+<div data-zendesk-anchors="introduction=about-dcp-sources h_01HPKB2ERNRQG73AFA0X7XEDEF=about-dcp-sources source-format=source-data-requirements h_01HPKB2ERPANE0CAXFP9RG5YEH=source-data-requirements creating-a-source=create-a-source h_01HPKB2ERPX2T413N3T93YBBZB=create-a-source h_01K1ZHNZEQ3NSN3V7NQ34G8VC8=requirements-and-guidelines 01HX49VY7D8KG5DCB82BP69BXV=source-locations-in-bigquery 01HX49VY7DXH5YN8FF0NFAJBC2=source-locations-in-snowflake 01HX49VY7D3CSF4SQ79Q7CZKWX=source-locations-in-cloud-storage-buckets 01HX49VY7D307DT5VTMGHPF3WA=important local-file-system=source-location-as-local-files h_01HX4SKEGE9NVCA6VYSR77S2DK=source-location-as-local-files h_01K1FW3AW2AW4TPDS0ZGPQCMX3=source-location-as-local-files h_01HX4T0H6SFQJEWFETKFD1CY6S=note h_01K29ETW94GQM9YYF5A4Y6DKB6=important-1 overwrite-method-specifications=snapshot-upload-requirements h_01K1G33RX95KP9TJ4002DDJBCE=snapshot-upload-requirements h_01K2A7MAWS5KR16QV0Y8AE39GW=snapshot-upload-requirements h_01K2CC62XGAVTD5JH5DYXP0947=important-2 data-title=append-upload-requirements append-delta-upload-requirements=append-upload-requirements h_01K2A7MAWT7CRHY1TV5J41MM0D=append-upload-requirements h_01K2C6QNJSAH9D3M48T02JHQ3R=append-upload-requirements load-the-source-fields=1-load-your-source-fields h_01HPKB2ERQTJPGG68FSEBHVVJA=1-load-your-source-fields h_01HPKB2ERRZNPYVVD8GHD7PBPE=important-3 configure-the-source-fields=2-configure-the-source-fields h_01HX64YHGHMK352E3RXHBFV0B5=2-configure-the-source-fields 01HX6HVZ6DK2WH71JVB0J9WPBF=note-1 h_01K5AI0D3TFIELDTYPEDETECT=ai-assisted-field-type-detection h_01K5AI0D3TLIMITATIONS=limitations h_01K5AI0D3TIMPORTANT=important-4 h_01KYSMJKRA2E13PH2QS671BSKG=identifier-vs-list-of-identifiers h_01KYSJNEWS5QY5Q13Z11TNJHX1=important-5 h_01HX6TDNEMJFQM5FA95Y3C1QHD=reload-source-fields h_01HX6WF7YC014Z7ZX359RB5ZRZ=note-2 verify-eu-user-inclusion=3-verify-eu-user-inclusion 01HZKZ2T33TYCQ8J59YGDYN7DK=3-verify-eu-user-inclusion test-the-source-data=4-test-the-source-data h_01HX6WGD421PCWEWTN5YJ7V42H=4-test-the-source-data save-the-source=5-save-the-source h_01HYX92EXSJNM5B2PDXEAEBNFS=5-save-the-source h_01HYXC06K3ZWQE867NKBT95RFH=note-3 working-with-existing-sources=manage-your-sources h_01HPKB2ERS5PK2P2XTC4ZMPCMC=manage-your-sources 01J1SMACQHFEVAR8ZC6W8T0BAV=edit-the-source-name h_01J1SM789AFJBSD0NG826P98Q4=edit-the-source-location edit-the-source-structure=edit-the-field-mapping h_01J1SNB66WQMBV1GQE4PDQ0NW4=edit-the-field-mapping h_01HPKB2ERTYP6BFAESN3MHZSQG=important-6 permissions=sharing-permissions h_01HZHBDPZ8FFQCB9DZ2Q8XSC2R=sharing-permissions reference=additional-information h_01HPKB2ERV1KK3J8YX918GCF3M=additional-information creating-a-dcr-key-folder=create-a-dcr-key-folder h_01HPKB2ERV7MQJ9CK44T92GK2G=create-a-dcr-key-folder toplevel-input-folder=top-level-input-folder h_01HPKB2ERVPG4R9FHWZPQ8TCZQ=top-level-input-folder secondlevel-folder-for-each-data-source=second-level-folder-for-each-data-source h_01HPKB2ERVVFMP81RE8ATZ6SZ8=second-level-folder-for-each-data-source privacy-regulations-eu-digital-markets-act=privacy-regulations h_01HZHBF0NZDTXAA3MY1A0BPE5E=privacy-regulations h_01HZM4EFRJD483NARKDPPPPXCY=note-4 h_01HZHBF0NZSDGDYG2ZWNW4KQYD=adding-consent-fields -when-%E2%80%9Ctrue%E2%80%9D-appsflyer-sends-user-identifiers-for-users-who-have-granted-consent-to-google%C2%A0-when-%E2%80%9Cfalse%E2%80%9D-appsflyer-abstains-from-sending-them=when--true--appsflyer-sends-user-identifiers-for-users-who-have-granted-consent-to-google--when--false--appsflyer-abstains-from-sending-them h_01HZHBF0NZJBSXNBDFZH4YKNSH=potential-impact-on-the-audience-size" />

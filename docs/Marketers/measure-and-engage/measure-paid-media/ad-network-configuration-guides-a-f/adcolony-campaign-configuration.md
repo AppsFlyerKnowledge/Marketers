@@ -36,6 +36,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The **Integration** tag is divided into different sections as described below.
@@ -77,18 +79,19 @@ In this section, you can configure in-app event postbacks that are sent to AdCol
 
 1. Activate ***In-app event postbacks***
 2. Click ***Add event*** to add an SDK Event to the list
-3. 
-
-| Parameter name | Description |
-| --- | --- |
-| **SDK event name** | The name of the event, as received by AppsFlyer either from the SDK, or from server-to-server events.  <br />**Tip**: If you don't see the event you want in the list, activate this event on a device with a non-organic installation and recheck. |
-| **Partner event identifier** | The unique name or ID of each event as defined on the partner's side. Select the most suitable pre-defined event for your SDK event. |
-| **Sending option** | Select the sending option for the event:  <br />**This partner only** for events coming **only** from users attributed to AdColony.  <br />**All sources, including organic** to have your entire user base available to be reported to the partner |
-| **Send event data** | <ul><li>**No values & no revenue:** sends only the event itself without the event value.</li><li>**Values & no revenue:** sends all the parameters excluding the revenue value.</li><li>**Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).</li></ul> |
+3.
+   | Parameter name | Description |
+   | --- | --- |
+   | **SDK event name** | The name of the event, as received by AppsFlyer either from the SDK, or from server-to-server events.  <br />**Tip**: If you don't see the event you want in the list, activate this event on a device with a non-organic installation and recheck. |
+   | **Partner event identifier** | The unique name or ID of each event as defined on the partner's side. Select the most suitable pre-defined event for your SDK event. |
+   | **Sending option** | Select the sending option for the event:  <br />**This partner only** for events coming **only** from users attributed to AdColony.  <br />**All sources, including organic** to have your entire user base available to be reported to the partner |
+   | **Send event data** | * **No values & no revenue:** sends only the event itself without the event value.<br />* **Values & no revenue:** sends all the parameters excluding the revenue value.<br />* **Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event). |
 
 4. Click ***Save***.
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -100,17 +103,23 @@ Generate and save attribution links and send them to the partner for attributing
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost integration via API isn't available for this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue isn't currently supported for this partner integration.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -131,3 +140,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJR62VJZXTFPXYRMYT05EV1X=setting-up-adcolony h_01HJR62VJZZZQRBHAA6FT8D6GY=integration-tab h_01HJR62VJZQRBWFACANBJ6HG14=activate-partners h_01HJR62VJZFDKC4N7BC5P1TSZK=general-settings enable-viewthrough-attribution=enable-view-through-attribution h_01HJR62VJZEC4E5FZVCKWDXNEY=enable-view-through-attribution h_01HJR62VJZR34JMT4TM0YG1DC6=default-postbacks h_01HJR62VJZJX57VMDNEQFKFB9C=launch-postbacks inapp-events-settings=in-app-events-settings h_01HJR62VJZJHHH4Q8P8ZERXVRM=in-app-events-settings h_01HJR62VK0980EE3ZKYT2KFB5H=attribution-link-tab h_01HJR62VK0G62A2S3WTW49150C=cost-tab h_01HJR62VK0869W4K5R1JF7V0C4=ad-revenue-tab h_01HJR62VK0GMA3TTGPPS3ND64F=permissions-tab h_01HJR62VK0AHRTPN92TGGCMC5D=ad-network-permissions" />

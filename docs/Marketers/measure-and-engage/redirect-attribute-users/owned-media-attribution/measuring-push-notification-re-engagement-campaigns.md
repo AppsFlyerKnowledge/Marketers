@@ -146,3 +146,5 @@ You can see data originating from push notifications in the [Retargeting dashboa
 **Note**: AppsFlyer deduplicates push notification data. Meaning, if identical payloads are received more than once, only one is counted.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01J5XFSEG9DR31DP73KTAGQPFW=overview h_01J5XFSEG967HXNT3GFSC2AQYE=how-does-it-work h_01J5XFSEG91SER3JKB3RKK6B6G=prerequisites h_01J5XFSEG9W3RTP62NW7SV4D0F=steps h_01J5XFSEG9PXHTD4C9XCDC01DH=1-creating-the-push-notification h_01J5XFSEG9W73JYPHH9VRZSTZ8=using-onelink-recommended h_01J5XFSEG9V46T6XSG31J4AVET=using-json-legacy h_01J5XFSEG9GYMKAT27AWTN1WZZ=2-configuring-the-sdk h_01J5XFSEG91NH41QMV9K3S4F18=3-testing-the-integration h_01J5XFSEG904NC72K8MWX9YM06=4-viewing-push-notification-campaigns-in-the-dashboard" />

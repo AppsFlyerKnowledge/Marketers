@@ -24,6 +24,8 @@ x-zendesk:
 ---
 ## SKAN conversion value schema API
 
+<div id="api-basics" />
+
 <Accordion title="API basics">
 
 | Overview | View your current SKAdNetwork (SKAN) conversion value (CV) schema as configured in AppsFlyer Conversion Studio.<br /><br />**Note**:<ul><li>Historic SKAN CV schema isn't available.</li><li>You can also view your SKAN schema by downloading the CSV mapping file available in Conversion Studio.</li></ul> |
@@ -46,6 +48,8 @@ GET 'https://hq1.appsflyer.com/api/skan-pull-cs-api/v1/conversion-studio-schema/
 
 </Accordion>
 
+<div id="report-name" />
+
 <Accordion title="Report name">
 
 The API returns a CSV file with the following naming scheme:
@@ -56,6 +60,8 @@ For all other modes: `conversion_schema_report_custom_encode`
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -65,6 +71,8 @@ For all other modes: `conversion_schema_report_custom_encode`
 | Account user access | The authorization token is available to an admin user in the dashboard. |
 
 </Accordion>
+
+<div id="http-response-codes-and-troubleshooting" />
 
 <Accordion title="HTTP response codes and troubleshooting">
 
@@ -78,3 +86,5 @@ For all other modes: `conversion_schema_report_custom_encode`
 | 404 | Not found | <ul><li>Handle any network or firewall-related problems.</li><li>Make sure that AppsFlyer [IP addresses are allowlisted](/docs/appsflyer-server-ip-address-ranges-allowlisting)</li></ul> |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW1B4XQH2JCJ3T0M1D6W7EM=skan-conversion-value-schema-api h_01HKW1B4XQCZPQBQFADGNTZDC3=api-basics h_01HKW1B4XQXQW0Z0G8ZF9EE8AZ=request-example-curl h_01HKW1B4XQ6ZD45YPHKHDHAZX0=report-name h_01HKW1B4XQVFNM33WV73BA5QXG=traits-and-limitations h_01HKW1B4XQY0V30B4BYCRF9HP5=http-response-codes-and-troubleshooting" />

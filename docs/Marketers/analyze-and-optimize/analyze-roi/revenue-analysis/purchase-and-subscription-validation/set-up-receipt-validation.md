@@ -26,6 +26,8 @@ x-zendesk:
 
 The legacy Receipt validation will be shut down on **September 7, 2026**, see [Bulletin: Legacy Receipt validation is deprecated](/docs/bulletin-legacy-receipt-validation-is-deprecated). If your app uses the legacy Receipt validation, migrate to the new one by performing the setup steps below. Before you start, review the key differences and prepare the migration.
 
+<div id="h_migration_key_differences" />
+
 <Accordion title="What's new in Receipt validation">
 
 | Area | Legacy | New Receipt validation |
@@ -43,6 +45,8 @@ The legacy Receipt validation will be shut down on **September 7, 2026**, see [B
 
 </Accordion>
 
+<div id="h_migration_what_to_plan" />
+
 <Accordion title="Prepare the migration">
 
 Before starting the migration, review the following considerations:
@@ -53,6 +57,8 @@ Before starting the migration, review the following considerations:
 * **Plan your app release timeline.** After September 7, 2026, users on app versions built with SDK versions earlier than Android v6.17.5 or iOS v6.17.8 will stop generating validated `af_purchase` events. Ship your new app version with enough lead time to reach the majority of your user base before the sunset.
 
 </Accordion>
+
+<div id="h_migration_upgrade_path" />
 
 <Accordion title="Switch to ROI360 Store Revenue">
 
@@ -91,6 +97,8 @@ In step 1, obtain the following credentials from *App Store Connect* and enter
 * Setting the credentials involves steps performed in both App Store Connect and AppsFlyer. During setup, keep both the App Store Connect and AppsFlyer tabs open.
 * Your iOS app requires StoreKit v1or v2, which provides the framework for handling in-app purchases and subscriptions.
 
+<div id="11-create-the-app-store-connect-keys" />
+
 <Accordion title="1.1 Create the App Store Connect keys">
 
 To set iOS credentials, follow these steps:
@@ -116,6 +124,8 @@ To set iOS credentials, follow these steps:
 
 </Accordion>
 
+<div id="12-set-the-app-store-connect-key" />
+
 <Accordion title="1.2 Set the App Store Connect key">
 
 1. Enable Receipt validation. #enable-receipt-validation
@@ -137,6 +147,8 @@ In step 1, obtain the following credentials from *Google Play* and *Google Cl
 
 * Setting up in-app purchase and subscription revenue measurement involves steps performed in the [Google Cloud Platform](https://cloud.google.com/), [Google Play Console,](https://play.google.com/console/) and the [AppsFlyer UI](https://hq1.appsflyer.com/auth/login). We recommend keeping tabs on all three places open throughout the setup.
 * Setup in the AppsFlyer UI requires admin permissions.
+
+<div id="11-link-your-google-play-developer-account-to-your-google-cloud-project" />
 
 <Accordion title="1.1 Link your Google Play Developer account to your Google Cloud project">
 
@@ -185,6 +197,8 @@ In step 1, obtain the following credentials from *Google Play* and *Google Cl
 
 </Accordion>
 
+<div id="13-set-api-access-permissions-in-google-play-console" />
+
 <Accordion title="1.3 Set API access permissions in Google Play Console">
 
 **Prerequisites**: Access to Google Play Console.
@@ -214,6 +228,8 @@ In step 1, obtain the following credentials from *Google Play* and *Google Cl
    [![](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)
 
 </Accordion>
+
+<div id="14-upload-the-service-account-private-key-to-appsflyer" />
 
 <Accordion title="1.4 Upload the service account private key to AppsFlyer">
 
@@ -255,6 +271,8 @@ To implement the validateAndLog SDK API, follow these steps:
 
 Test the in-app purchase and subscription revenue integration in a sandbox environment to confirm that the SDK connector is correctly integrated and that server notifications are properly configured and received by AppsFlyer.
 
+<div id="test-sdk-implementation" />
+
 <Accordion title="Test SDK implementation">
 
 To check whether AppsFlyer has received valid `validateAndLog` payloads from your app in the last 7 days, perform these steps:
@@ -265,6 +283,8 @@ To check whether AppsFlyer has received valid `validateAndLog` payloads from you
 
 </Accordion>
 
+<div id="sandbox-environment-considerations" />
+
 <Accordion title="Sandbox environment considerations">
 
 In a sandbox environment:
@@ -274,6 +294,8 @@ In a sandbox environment:
 * For Android, tests performed by License Testers result in sandbox events even if the sandbox environment in the SDK isn't configured.
 
 </Accordion>
+
+<div id="test-inapp-purchase-and-subscription-revenue" />
 
 <Accordion title="Test in-app purchase and subscription revenue">
 
@@ -325,3 +347,5 @@ Before the developers release the new app version, make sure that:
 Once the app with the validateAndLog SDK API is released, [in-app purchase and subscription events](/docs/about-receipt-validation#in-app-purchase-events-and-parameters-for-receipt-validation) are generated and made available across all AppsFlyer dashboards, as well as in aggregated and raw data reports.
 
 Events are only generated for users who have updated to a version of the app that includes the validateAndLog SDK API. As a result, a discrepancy between the revenue data from the app and the store data is expected until the updated app version is fully adopted.
+
+<div data-zendesk-anchors="h_migrating-from-legacy=upgrade-to-new-receipt-validation whats-new-in-receipt-validation=h_migration_key_differences prepare-the-migration=h_migration_what_to_plan switch-to-roi360-store-revenue=h_migration_upgrade_path h_01KD0RY1HMV71TGDZZX7JWM3XJ=overview h_01KD0RY1HMMSR4ZDW5GF4N05P1=note h_01KD0RY1HM14KNGKADCBMHJXH6=step-1-ios-set-up-app-store-connect-keys h_01KD0RY1HM08AS4RGNR1QE598K=11-create-the-app-store-connect-keys h_01KD0RY1HMPJGGHQ19D5K70JSZ=12-set-the-app-store-connect-key h_01KD0RY1HMG9DGKGEY8XVR3K7Z=step-1-android-set-up-service-account-key-and-permissions h_01KD0RY1HMRK0B1Z4FKD0DD2KQ=11-link-your-google-play-developer-account-to-your-google-cloud-project h_01KD0RY1HN9ER2FZ7XN93SGEN9=12-configure-your-service-account-in-the-google-cloud-platform h_01KD0RY1HN03Y7T4KCNYX9FWS0=13-set-api-access-permissions-in-google-play-console h_01KD0RY1HNS6EPAKZ4YY3MZZK9=14-upload-the-service-account-private-key-to-appsflyer h_01KD0RY1HN63X3WM1RH19W2HZ5=step-2-implement-sdk h_01KD0RY1HNDMSWGDW6ZQDZ5DAM=step-3-verify-sdk-implementation h_01KD0RY1HNC4VXSRFC1ZMKWWS6=test-sdk-implementation h_01KD0RY1HNDFF6J29AHG6S4EFM=sandbox-environment-considerations h_01KD0RY1HN5EBX3VGMH5PNHTA8=test-inapp-purchase-and-subscription-revenue h_01KD0RY1HN2HZEW9ANBPNRMXPP=step-4-verify-and-update-settings h_01KD0RY1HNECTDNNHK78F9KDPS=step-5-release-the-app-versions-with-the-validateandlog-sdk-api" />

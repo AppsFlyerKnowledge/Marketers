@@ -38,6 +38,8 @@ x-zendesk:
 
 Baidu Native Ads 2.0's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration Tab">
 
 ### Activate Partner
@@ -72,6 +74,8 @@ In this section you can map your AppsFlyer events with Baidu Native Ads 2.0 via 
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution Link Tab">
 
@@ -116,17 +120,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost Tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad Revenue Tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions Tab">
 
@@ -137,3 +147,5 @@ Permissions are not supported in the integration with this partner.
 </Accordion>
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW6TZKDHY5D1VZ5PB7VM2MC=setting-up-baidu-native-ads-20 h_01HKW6TZKDRECSQTP2VSAZZ5V6=integration-tab h_01HKW6TZKDY6EEHMK5SJWBW0EH=activate-partner h_01HKW6TZKDGFFMPSZGN8AZWA80=general-settings h_01HKW6TZKDBAQRP63ST32NN4DN=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW6TZKDYHPZXN0TC219XPA1=in-app-events-settings h_01HKW6TZKEFVXGP11N8G4C6JTP=attribution-link-tab h_01HKW6TZKE5GJV1ZSJTVPG668Q=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6TZKEWA482TABZ8651NPP=click-through-attribution h_01HKW6TZKEWJTMCK86JZN27R1F=attribution-link h_01HKW6TZKEX2JQQNA5JMQ40848=cost-tab h_01HKW6TZKE4N38GCTBK4VDNNF8=ad-revenue-tab h_01HKW6TZKEY7RSV934KZ6XRXM2=permissions-tab" />

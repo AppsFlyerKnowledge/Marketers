@@ -36,6 +36,8 @@ Protect your data from unauthorized access by setting up an API allowlist that s
 
 ## Set up your API allowlist
 
+<div id="set-up-the-api-allowlist" />
+
 <Accordion title="Set up the allowlist">
 
 **![AppsFlyerAdmin_us-en.png](https://files.readme.io/bcee04c81f386f19d25893568f8ddeb0427d386153b2659968a9652e3506c5e6-4406016448401.png) To set up and activate the API allowlist:**
@@ -53,6 +55,8 @@ Protect your data from unauthorized access by setting up an API allowlist that s
    **Note:** The allowlist must contain at least one IP address or range before you can save and activate it.
 
 </Accordion>
+
+<div id="edit-the-api-allowlist" />
 
 <Accordion title="Edit the allowlist">
 
@@ -79,6 +83,8 @@ You can add or delete IP addresses from the allowlist at any time (whether or no
 
 </Accordion>
 
+<div id="api-allowlist-specifications" />
+
 <Accordion title="Allowlist specifications">
 
 * To protect your account from unauthorized API calls, the allowlist must be set to **Active** and include at least one IP address or range.
@@ -86,3 +92,5 @@ You can add or delete IP addresses from the allowlist at any time (whether or no
 * Up to 20 IP addresses or ranges can be added to the allowlist.
 
 </Accordion>
+
+<div data-zendesk-anchors="overview::6f3684c7=overview h_01HZCCCTT52ZQB9VAF6Q7RRKES=overview h_01HZCD0681XNKR2HSNCN4GWGA0=overview h_01HJR00RGQX0CQEHDS9BHBGJD4=note h_01HZCCW4XYJ72Z6KKJPCXQB947=set-up-your-api-allowlist h_01HJR00RGRQ54R71HY0ZBRM1PM=set-up-the-api-allowlist h_01HJR00RGRD7PK2HR5VS1JENWQ=edit-the-api-allowlist h_01HJR00RGRESGGEW3D6NHHF7VY=api-allowlist-specifications" />

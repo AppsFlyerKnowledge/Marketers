@@ -49,6 +49,8 @@ With Creative Optimization, you can:
 
 This section provides information about the creative assets we measure.
 
+<div id="supported-asset-types" />
+
 <Accordion title="Supported asset types">
 
 Asset types supported by the Creative Optimization dashboard include:
@@ -67,6 +69,8 @@ Asset types supported by the Creative Optimization dashboard include:
 
 </Accordion>
 
+<div id="matching-creatives" />
+
 <Accordion title="Matching creatives">
 
 Creative Optimization has the unique ability to identify which assets are the same, across multiple channels and campaigns, regardless of naming conventions or IDs. This is done by AI and computer vision algorithms that match properties such as visual context, sound, and pixels. Additionally:
@@ -75,6 +79,8 @@ Creative Optimization has the unique ability to identify which assets are the sa
 * Videos with different durations are considered different creatives.
 
 </Accordion>
+
+<div id="measuring-creatives-with-multiple-assets" />
 
 <Accordion title="Measuring creatives with multiple assets">
 
@@ -120,18 +126,18 @@ The first step in setting up your dashboards is selecting your filtering options
 1. Select your:
    * **App**
    * **Date range:** A creative is displayed in the dashboard when there is conversion data for the creative during the selected date range. All data is LTV, meaning the metrics are for conversions that occurred from creatives during the selected date range.
-   * [View type](#01H7SZ8RA1RT91HKKD0R93T2TA)
+   * [View type](#view-type)
 2. Click the **+** icon to add any of the following filtering options including:
    * **Dimensions and metrics**
    * **Numeric filters**, which are available for all metrics with the following options:
      * Greater than **-** displays creatives with values higher than or equal to the chosen metric
      * Less than **-** displays creatives with values below the chosen metric
 
-In addition to [standard metrics and dimensions](/docs/creative-optimization-guide#standard-metrics-and-dimensions), the Creative Optimization dashboard offers various [unique metrics and dimensions.](#01H7SZ8RA222QS1AXDKT49DEK3)
+In addition to [standard metrics and dimensions](/docs/creative-optimization-guide#standard-metrics-and-dimensions), the Creative Optimization dashboard offers various [unique metrics and dimensions.](#unique-metrics-and-dimensions)
 
 </Accordion>
 
-<div id="01H7SZ8RA1RT91HKKD0R93T2TA" />
+<div id="view-type" />
 
 <Accordion title="View type">
 
@@ -189,8 +195,6 @@ Standard metrics/dimensions available in the dashboards include:
 </Accordion>
 
 <div id="unique-metrics-and-dimensions" />
-
-<div id="01H7SZ8RA222QS1AXDKT49DEK3" />
 
 <Accordion title="Unique metrics and dimensions">
 
@@ -277,6 +281,8 @@ Add a new [partner integration](/docs/creative-optimization-partner-integrations
 
 **Special instructions and considerations:**
 
+<div id="applovin-metrics" />
+
 <Accordion title="AppLovin metrics">
 
 **Note:**
@@ -285,6 +291,8 @@ Add a new [partner integration](/docs/creative-optimization-partner-integrations
 * AppsFlyer Creative data is aligned with the AppLovin probabilistic report (not the billable report).
 
 </Accordion>
+
+<div id="google-ads-metrics" />
 
 <Accordion title="Google Ads metrics">
 
@@ -296,6 +304,8 @@ Add a new [partner integration](/docs/creative-optimization-partner-integrations
 
 </Accordion>
 
+<div id="meta-ads" />
+
 <Accordion title="Meta Ads metrics">
 
 **Note:**
@@ -304,6 +314,8 @@ Add a new [partner integration](/docs/creative-optimization-partner-integrations
 * Meta doesn't report installs on the asset level for iOS, so it's not available in Creative.
 
 </Accordion>
+
+<div id="unity-ads-metrics" />
 
 <Accordion title="Unity Ads metrics">
 
@@ -383,9 +395,13 @@ After selecting your filters, you can save your selections for quick and easy ac
 
 Group and analyze your creatives based on tags that you upload or by the unique identifiers that are stored in file names. This section describes the different ways of creating custom tags, which appear as dimensions you can select in the filters and view throughout the dashboards.
 
+<div id="custom-dimensions" />
+
 <Accordion title="Custom tags via CSV">
 
 You can add custom dimensions to the dashboard. These custom dimensions and the associated tagged creatives are added via CSV file and aligned with the current creatives used in the various campaigns. Use this feature to view, organize, sort, and filter creatives by any custom dimensions and tags you wish.
+
+<div id="create-and-manage-custom-dimensions" />
 
 <Accordion title="Create and manage custom dimensions">
 
@@ -419,6 +435,8 @@ The data will be available in about 30 minutes.
 
 </Accordion>
 
+<div id="example-csv" />
+
 <Accordion title="Example CSV">
 
 Here's an example of a custom dimensions CSV file (that you download from the dashboard). Each column heading (in row 1) is the name of a custom dimension (for example: “Theme” or "Variant"). You can add additional dimensions or change the existing ones. You can also add or change the tags (for example: “3 Moves" or "DarkPalette").
@@ -446,11 +464,15 @@ Here's an example of a custom dimensions CSV file (that you download from the da
 
 </Accordion>
 
+<div id="name-convention-tags" />
+
 <Accordion title="Name convention tags">
 
 You can create custom tags based on your creative asset naming conventions. These custom tags will appear as dimensions you can select in the filters and view throughout the dashboard.
 
 This is useful for marketing and creative teams whose creatives are named intentionally, with unique identifiers built into the names. These creatives can automatically be tagged by the built-in identifiers, and grouped for analysis and optimization purposes.
+
+<div id="create-and-manage-name-convention-tags" />
 
 <Accordion title="Create and edit name convention tags">
 
@@ -487,6 +509,8 @@ This is useful for marketing and creative teams whose creatives are named intent
 2. Click the  ![Delete icon.jpg](https://files.readme.io/a4bb54fefcdd474edbb897dc334b8219c36273fd5e4f45a03e1b39091856e137-18564742905873.jpg)  icon which appears when you hover to the right of your selection.  
    **Note:** The associated custom tags will no longer apply to your creatives. It may take a few hours for the change to take effect.
 
+<div id="name-tag-traits-and-limitations" />
+
 <Accordion title="Name tag traits and limitations">
 
 * You can create up to 10 different name convention types (and the associated custom tags).
@@ -500,6 +524,8 @@ This is useful for marketing and creative teams whose creatives are named intent
 
 ## Additional information
 
+<div id="h_01HA282W8WHHNDG75XZNSV2QQF" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -510,3 +536,5 @@ This is useful for marketing and creative teams whose creatives are named intent
 | Currency | All monetary metrics in Creative Optimization are in USD. |
 
 </Accordion>
+
+<div data-zendesk-anchors="overview=about-creative-optimization 01H7SZ8R9ZWZ81WHV26P00YAYP=about-creative-optimization 01H7SZ8RA14Q5D32EY5J0WMVYA=creative-assets 01H7SZ8RA1C863VRG1P10CJHTR=supported-asset-types h_01HMXES26N1X3KAFRKKCC9NFXW=notes 01H7SZ8RA1D9JVG1145CAXEZFX=matching-creatives 01H7SZ8RA191221K683N1Z9R69=measuring-creatives-with-multiple-assets 01H7SZ8RA1KRPFF9AW5P4QKQXH=example creative-dashboard=using-the-dashboard 01H7SZ8RA1JX2TCQHB5XW21EK8=using-the-dashboard 01H7SZ8RA1ATSBZPMFJC0T7HRG=filter-bar 01H7SZ8RA1RT91HKKD0R93T2TA=view-type h_01HJDKZWTQVTPSJXP2HWSMD8W6=creative-optimization-roi360 h_01H9JS005MCGMPJM7NYTW2HCAF=standard-metrics-and-dimensions 01H7SZ8RA222QS1AXDKT49DEK3=unique-metrics-and-dimensions 01H7SZ8RA23SCGJ435B4V32CP1=custom-metrics 01H7SZ8RA2R9N2NC6JXNZZ7C5Z=partner-dimensions-and-metrics partner-table=to-set-up-partner-metrics 01H7SZ8RA2VJ9466WSMN3WHR90=to-set-up-partner-metrics 01H8GHNPQKS7REZ9RPH0ZYEBHE=applovin-metrics 01H8GHNPQKCKMDS8AYETEDDZKH=google-ads-metrics 01H8H1GTRV7VNJDKFEF35HCNKY=meta-ads 01H7SZ8RA28T63K3NASWC92R0F=unity-ads-metrics 01H7W4JTRSJJ2R45JQVYHMYGX2=note 01H7SZ8RA3TPD6ED2HJZGTVRMS=save-and-share-views h_01HYT77DSHZ6FE0MSQS83FRGW0=save-private-dashboard-view 01HYT89BRYKRG44AT9MZWKZJNY=save-shared-dashboard-view h_01HYT8GXVJV8Q6GKBDHTTJ1SM2=share-view-url h_01H9J4Z9V9SJBTE63C358FME95=custom-tags h_01H9J4R9MTMGF9F1PNZRT2QZ1W=custom-dimensions 01H7SZ8RA3GW927GJBKKR4582T=create-and-manage-custom-dimensions 01H7SZ8RA3P8VQFH268G453FKM=example-csv 01H7SZ8RA307CBMA0533M3VGWK=traits-and-limitations h_01H9J67GSXXZ20W56NDVW2XDJC=name-convention-tags h_01H9J6PCQNVAB88ZCKRT3MVJEH=create-and-manage-name-convention-tags h_01H9J6PCQN6MV2KPYNFF7SB44Q=name-tag-traits-and-limitations h_01J1VPMV85CT5ZJNN3BW4FCW0D=additional-information" />

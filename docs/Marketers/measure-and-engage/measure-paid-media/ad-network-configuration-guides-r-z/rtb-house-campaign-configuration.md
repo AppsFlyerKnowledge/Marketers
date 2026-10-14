@@ -43,6 +43,8 @@ RTB House's configuration window includes 3 active tabs: **Integration, Attribut
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -85,6 +87,8 @@ Enter the region of your RTB House data center. Possible options: **emea**, **u
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Create and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -94,17 +98,23 @@ Create and save attribution links and send them to the partner for attributing s
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data is supported in the integration with this partner via [InCost API](/docs/incost-api-for-ad-networks).
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -125,3 +135,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJRZXXH277REM62TJA907WX0=setting-up-rtb-house h_01HJRZXXH2P8Q15V7DKQT7AVTT=tip h_01HJRZXXH2DJ8WMYPQ0NV08R05=integration-tab h_01HJRZXXH309BVZZ2VRRJQ02N8=activate-partner h_01HJRZXXH3X46N8KQ8GTP4BYYP=default-postbacks h_01HJRZXXH3SDCH4K86YV4VC5VH=note inapp-events-settings=in-app-events-settings h_01HJRZXXH3HJP28D34NW8A8EZN=in-app-events-settings h_01HJRZXXH3E7STC8XVRDP39282=region inapp-event-postback-settings=in-app-event-postback-settings h_01HJRZXXH3336ZJZZD1P8408GP=in-app-event-postback-settings h_01HJRZXXH3R7F4QA9PYWY7EYZZ=attribution-link-tab h_01HJRZXXH30PDV0S32THB0C4FM=cost-tab h_01HJRZXXH37CHDD10ASEXPN7VH=ad-revenue-tab h_01HJRZXXH3CASE2ZTRJDSW9545=permissions-tab h_01HJRZXXH3TJSTVG4Z8ZDQBATG=ad-network-permissions" />

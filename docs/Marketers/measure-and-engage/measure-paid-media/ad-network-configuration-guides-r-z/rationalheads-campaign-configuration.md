@@ -45,6 +45,8 @@ For a detailed description of the Partner Configuration Window Header, click [he
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -87,6 +89,8 @@ In this section, you can map your AppsFlyer events with RationalHeads via postba
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 In this tab, you can create the attribution links you want to send to RationalHeads for attributing RationalHead's campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
@@ -126,17 +130,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -157,3 +167,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJRZB6JCPYZZJ3QWS9BRJPSX=setting-up-rationalheads h_01HJRZB6JC4GDCV3RVGJBFTPAT=tip h_01HJRZB6JCE5G700RRHGJY3M4A=integration-tab h_01HJRZB6JCXARZ29M8RCP30VBD=general-settings h_01HJRZB6JCXR6ZHH3YV05W6JY1=default-postbacks h_01HJRZB6JCW3C1AWRS4041SKJP=activate-partner inapp-events-settings=in-app-events-settings h_01HJRZB6JDH6A108JYXEST4AQY=in-app-events-settings h_01HJRZB6JDG7YQD0ANE4W8C55C=attribution-link-tab h_01HJRZB6JDM91MC9B4VXCHEW6Z=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HJRZB6JDQ148X9J0XCFPVZD1=click-through-attribution h_01HJRZB6JDZ27KM6N7GVZX54CW=click-attribution-link h_01HJRZB6JDJG6HVCEXMC5S30NM=cost-tab h_01HJRZB6JDTJE0K27Y4XTJG7QX=ad-revenue-tab h_01HJRZB6JDD32KPQ13CTEEMEBB=permissions-tab h_01HJRZB6JD6412B28R5N8MRVH3=ad-network-permissions" />

@@ -34,6 +34,8 @@ Data regarding the custom store product pages is available in the AppsFlyer dash
 
 ## Data availability
 
+<div id="dashboard" />
+
 <Accordion title="Dashboard">
 
 Aggregate data for App Store custom product pages is available in the Overview dashboard. For Google Play custom store listings, availability is coming soon.
@@ -45,6 +47,8 @@ Aggregate data for App Store custom product pages is available in the Overview d
 
 </Accordion>
 
+<div id="raw-data" />
+
 <Accordion title="Raw data">
 
 Raw data is available via the [AppsFlyer reporting tools](/docs/raw-data-reporting-overview#reporting-tools-characteristics-and-features).
@@ -55,6 +59,8 @@ In the reports, the `store_product_page` field indicates which custom page a giv
 
 ## Setup
 
+<div id="google-play" />
+
 <Accordion title="Google Play">
 
 To set up redirections to a custom store listing in Google Play, you can either:
@@ -62,7 +68,7 @@ To set up redirections to a custom store listing in Google Play, you can either:
 * Use the OneLink UI.
 * Add the parameter `af_android_store_csl` to your OneLink URLs or single-platform attribution links with the value being the custom store listing you chose in Google Console. For example: `af_android_store_csl=abc123`
 
-**Note:** Due to system changes in some browsers, including Google Chrome, using custom store listing redirection may lead to a web version of the Google Play store with the custom store listing view (instead of the app version).
+<span id="use-the-onelink-ui-google-play"></span>**Note:** Due to system changes in some browsers, including Google Chrome, using custom store listing redirection may lead to a web version of the Google Play store with the custom store listing view (instead of the app version).
 
 #### Use the OneLink UI—Google Play
 
@@ -84,6 +90,8 @@ Prerequisites:
 6. [Recommended] Test the link on different Android browsers to make sure it works as expected.
 
 </Accordion>
+
+<div id="app-store" />
 
 <Accordion title="App Store">
 
@@ -112,6 +120,8 @@ Prerequisites:
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -119,3 +129,5 @@ Prerequisites:
 | Browsers | <ul><li>Google Play custom store listings aren't supported by Naver Blog.</li></ul> |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01J851YT6WHWEA6RTBFP1S9FT8=overview h_01J851YT6XG2A6VETQ3XSNZWVX=data-availability h_01J851YT6XXTZVMPQFK4YDMACC=dashboard h_01J851YT6XHR6Y3KB30AMMGZXS=raw-data h_01J851YT6XWVEMRG9R5DYKJ70N=setup h_01J851YT6X21X787WNDFGAW5EZ=google-play use-the-onelink-ui%E2%80%94google-play=use-the-onelink-ui-google-play h_01J851YT6XSVG70DX841NKVGDY=use-the-onelink-uigoogle-play h_01J851YT6XYQG2FGWBEPAJ686X=app-store use-the-onelink-ui%E2%80%94app-store=use-the-onelink-uiapp-store h_01J851YT6XJ9NBK5KKHV1Y07M4=use-the-onelink-uiapp-store h_01J851YT6XE6P2FDE9KEMH9SYN=traits-and-limitations" />

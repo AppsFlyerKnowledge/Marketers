@@ -33,6 +33,8 @@ x-zendesk:
 
 Only an admin user can activate, reset, or deactivate a user's 2FA settings.
 
+<div id="activate" />
+
 <Accordion title="Activate">
 
 If an admin activates **Google or Microsoft Authenticator** and **SMS verification**, account users can choose which method they prefer to use.
@@ -66,6 +68,8 @@ For accounts using 2FA, there may be occasions on which you need to reset a user
 
 </Accordion>
 
+<div id="deactivate" />
+
 <Accordion title="Deactivate">
 
 If 2FA is deactivated, account users will log in using only their username and password.
@@ -84,6 +88,8 @@ If 2FA is deactivated, account users will log in using only their username and p
 **Google or Microsoft Authenticator** is the initial default screen; however, the last 2FA method used appears at the next login.
 
 If you choose not to use **Google or Microsoft Authenticator**, then the setup and login screens have a link to the **SMS verification** 2FA screen.
+
+<div id="firsttime-setup" />
 
 <Accordion title="First-time setup">
 
@@ -110,6 +116,8 @@ Before using 2FA for the first time, every account user must download **Google o
 
 </Accordion>
 
+<div id="ongoing-use" />
+
 <Accordion title="Ongoing use">
 
 **Follow these steps for ongoing use.**
@@ -124,6 +132,8 @@ Before using 2FA for the first time, every account user must download **Google o
 ## Account users: Using SMS verification
 
 If you choose not to use **SMS verification**, then the setup and login screens have a link to **Google or Microsoft Authenticator** 2FA screen.
+
+<div id="firsttime-sms-setup" />
 
 <Accordion title="First-time SMS setup">
 
@@ -146,6 +156,8 @@ If you choose not to use **SMS verification**, then the setup and login screens
 
 </Accordion>
 
+<div id="ongoing-sms-use" />
+
 <Accordion title="Ongoing SMS use">
 
 **Follow these steps for ongoing use:**
@@ -157,3 +169,5 @@ If you choose not to use **SMS verification**, then the setup and login screens
 5. Click **Verify.**
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HEHRKE8PY64KWVSSFR6T4F1Z=highlights admin-managing-2fa=-admin-managing-2fa h_01HEHRKE8PZA3H9SXPRD1FZ50S=-admin-managing-2fa h_01HEHRKE8PV0ZADPXHNBBDMKAF=activate 01JCDTA1W486FEFRPT2VYJ2PVX=note h_01HEHRKE8P9N2W871ZEB1D3MYN=reset h_01HEHRKE8PEDWCNKMG1N4CFDMN=deactivate account-users-using-google-authenticator=account-users-using-google-or-microsoft-authenticator h_01HEHRKE8P1A2BARBDVMJPH1WY=account-users-using-google-or-microsoft-authenticator h_01HEHRKE8QQTX3Y9ZY1HZ6GBAG=firsttime-setup h_01HEHRKE8QHWHCMNB5M7S5YVYJ=ongoing-use h_01HEHRKE8QZ245ZYBZ4FF814KN=account-users-using-sms-verification h_01HEHRKE8Q30QHGZ5QYMV4MR27=firsttime-sms-setup h_01HEHRKE8Q0229YE5QP5EJFSD8=ongoing-sms-use" />

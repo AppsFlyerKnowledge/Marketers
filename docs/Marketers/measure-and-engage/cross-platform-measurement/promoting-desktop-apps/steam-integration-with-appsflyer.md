@@ -38,7 +38,7 @@ The following is an example flow that highlights the most important steps in a u
 2. Game landing page: A game landing page directs customers to your Steam game page. This step is important for collecting UTM and other URL parameters to attribute customers from the click/install to the original media sources or to your owned media sources.  
    The landing page is also useful because it provides links to the various platforms your game supports. For example, you can have links to your Xbox, Microsoft store, and Steam page on your landing page.  
    ![awesome_game.png](https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png)
-3. Steam app page: This is your Steam storefront page that hosts your Steam app for customers to download.
+3. <span id="marketing-touchpoint"></span>Steam app page: This is your Steam storefront page that hosts your Steam app for customers to download.
 4. Game install: The user installs the game, triggering attribution and the recording of in-app events and sessions.
 
 ## Integration procedures
@@ -67,3 +67,5 @@ To remove all AppsFlyer SDK data when uninstalling the app, please ask your deve
 > 📘 **See also**
 >
 > * [CTV, PC, and console platform attribution](/docs/ctv-pc-and-console-platform-attribution-concepts)
+
+<div data-zendesk-anchors="01H7Z1DJRW1KPJQ4CZ6T85ASRK=about-steam-attribution flow=example-attribution-flow 01H7Z1DJRWHB8TQC15WW4FVSHG=example-attribution-flow 01H7Z1DJRWX54DN2SNS21GPGXB=integration-procedures h_01J3349MAA4J231B6FJ74V3PTB=removing-appsflyer-data-when-uninstalling-the-app h_01HDEHMH0HF201TH4XDW691STH=traits-and-limitations h_01HDP1K6FDDEED5P2WNESST7GE=see-also" />

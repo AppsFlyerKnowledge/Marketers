@@ -118,3 +118,5 @@ All attribution parameters are listed within the **appsFlyerAttribution** added 
 Use them to build custom analysis queries and reports in any of the deltaDNA Analyze tools.
 
 ![Delta DNA 5](https://files.readme.io/f4b9d0320feb3990182a0c9a835a18565ba959fabf7269c45a4651506666f941-206768946.png)
+
+<div data-zendesk-anchors="h_01H9FK6N8V597T8AY0RF0H6CZW=integrating-with-deltadna h_01H9FK6N8W8011X3JVG2EZ66H4=viewing-the-attribution-data-in-the-deltadna-console" />

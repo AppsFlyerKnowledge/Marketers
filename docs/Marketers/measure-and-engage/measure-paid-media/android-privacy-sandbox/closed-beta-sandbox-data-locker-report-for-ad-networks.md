@@ -37,13 +37,17 @@ Principles:
 
 ## Sandbox raw data report format and content
 
+<div id="raw-data-report-types" />
+
 <Accordion title="Raw data report types">
 
 | Report type | Topic Name | Report name | Description |
 | --- | --- | --- | --- |
-| Decoded aggregated report | sandbox\_attribution\_ad\_network\_performance | Sandbox attribution ad network aggregated performance |  |
+| <span id="postback"></span>Decoded aggregated report | sandbox\_attribution\_ad\_network\_performance | Sandbox attribution ad network aggregated performance |  |
 
 </Accordion>
+
+<div id="raw-data-field-format-types" />
 
 <Accordion title="Raw data field format types">
 
@@ -60,6 +64,8 @@ Principles:
 | Float | Real floating number that can have a decimal point and values after the decimal point. |
 
 </Accordion>
+
+<div id="fields-available-in-postback-and-postback-copy-reports" />
 
 <Accordion title="Report structure">
 
@@ -92,6 +98,8 @@ Principles:
 
 ## Additional information
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -104,3 +112,5 @@ Principles:
 | Data freshness | [Daily](/docs/closed-beta-sandbox-data-locker-report-for-ad-networks#sandbox-raw-data-reports-for-ad-networks) |
 
 </Accordion>
+
+<div data-zendesk-anchors="skan-raw-data-reports=sandbox-raw-data-reports-for-ad-networks 01H8XHATZB2G6YZ9AJNPRZS59Y=sandbox-raw-data-reports-for-ad-networks skan-raw-data-report-format-and-content=sandbox-raw-data-report-format-and-content 01H8XHATZCJQZTZF0Y5P18XMEA=sandbox-raw-data-report-format-and-content 01H8XHATZCR5BC2P5TSQTMDY5Q=raw-data-report-types 01H8XHATZC0MST5ASGWDGGK2R8=raw-data-field-format-types 01H8XHATZCZMNGK72DDE5HS6E9=field-formats 01H8XHATZC24DH4AYB2C523JDH=fields-available-in-postback-and-postback-copy-reports 01H8XHATZD9D7JBHTFZ095EBD5=additional-information 01H8XHATZDMV0VN4BDTECGF91K=traits-and-limitations" />

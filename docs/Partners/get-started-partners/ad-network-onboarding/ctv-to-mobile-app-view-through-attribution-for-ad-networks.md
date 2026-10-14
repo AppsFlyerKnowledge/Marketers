@@ -100,3 +100,5 @@ Other parameters that can be added to the URL can be found in the [attribution l
 | Test partner integration | Not available for ad networks that have been flagged for high rates of mobile app-to-mobile app fraud or are affiliated with different flagged media sources. |
 
 </Accordion>
+
+<div data-zendesk-anchors="ctvtomobile-app-attribution-for-ad-networks=ctv-to-mobile-app-attribution-for-ad-networks h_01HE2X91GTDTPKKFBRRYYFMHDW=ctv-to-mobile-app-attribution-for-ad-networks" />

@@ -61,3 +61,5 @@ Select **Events attributed to any partner or organic** to have your entire use
 > 📘 **See also**
 >
 > * [Snapchat and AppsFlyer SKAdNetwork interoperation](/docs/skan-interoperation-with-snapchat)
+
+<div data-zendesk-anchors="h_01HDNZAAS11ADG02FXNPSYYH69=setting-up-a-snapchat-marketing-partner h_01HDNZAAS1M2317CKQ13SP11KM=default-postbacks inapp-events=in-app-events h_01HDNZAAS1JZPHS32PNFFCR12A=in-app-events h_01HDNZAAS1PRWK6EVQTTV3YNQM=important h_01HDNZBZARD9E54VAFVSRQFWEH=see-also" />

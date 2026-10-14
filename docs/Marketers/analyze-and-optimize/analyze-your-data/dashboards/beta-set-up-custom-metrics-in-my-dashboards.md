@@ -37,6 +37,8 @@ Custom metrics are compatible with all widget types in My Dashboards, including 
 
 ## Procedures
 
+<div id="create-a-custom-metric" />
+
 <Accordion title="Create a custom metric">
 
 **To create a custom metric**:
@@ -58,6 +60,8 @@ Custom metrics are compatible with all widget types in My Dashboards, including 
 
 </Accordion>
 
+<div id="edit-a-custom-metric" />
+
 <Accordion title="Edit a custom metric">
 
 You can edit a custom metric either from the dashboard or from within a specific widget. **Note**! Any changes you make to a custom metric are account-level, meaning the changes affect the metric for all users and dashboards.
@@ -78,6 +82,8 @@ You can edit a custom metric either from the dashboard or from within a specific
 
 </Accordion>
 
+<div id="delete-a-custom-metric" />
+
 <Accordion title="Delete a custom metric">
 
 You can delete a custom metric either from the dashboard or from within a specific widget. **Note**! Any deletions to a custom metric are account-level, meaning the metric is removed for all users and dashboards.
@@ -95,6 +101,8 @@ You can delete a custom metric either from the dashboard or from within a specif
 
 ## Additional information
 
+<div id="best-practices" />
+
 <Accordion title="Best practices">
 
 * **Start simple**: Begin with basic metrics and progressively add complexity as needed and as you become more familiar with formula development.
@@ -103,6 +111,8 @@ You can delete a custom metric either from the dashboard or from within a specif
 * **Review periodically**: Regularly assess your metrics to ensure they remain relevant.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 <Accordion title="Traits and limitations">
 
@@ -114,3 +124,5 @@ You can delete a custom metric either from the dashboard or from within a specif
 | Nesting restriction | Custom metrics can't be used as components in other custom metric formulas. |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H8XWQHPERAEDQVD275TFVC5B=about-custom-metrics h_01H8XWQHPESY4DDDJSTR0JDHNB=procedures h_01H8XWQHPEDYVDQQV3P8EDARAY=create-a-custom-metric h_01H8XWQHPE22WZ46RTNCYKX96F=edit-a-custom-metric h_01H8XWQHPED4PFPJP2044FT1H8=delete-a-custom-metric 01JGGT56V05BJRCV9Q572JJR3W=additional-information 01JGK1XAVB3M5KDA59A9ZASM2K=best-practices h_01H8XWQHPF7WZ7B5Q7T9CHADRK=traits-and-limitations" />

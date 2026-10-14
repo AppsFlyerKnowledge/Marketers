@@ -38,6 +38,8 @@ x-zendesk:
 
 360 Ads configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration Tab">
 
 ### Activate Partner
@@ -77,6 +79,8 @@ In this section you can map your AppsFlyer events with 360 Ads via postbacks.
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution Link Tab">
 
@@ -137,17 +141,23 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost Tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad Revenue Tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions Tab">
 
@@ -167,3 +177,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW6S90SZY55XRP6YN8B3QTJ=setting-up-360-ads h_01HKW6S90TSD0WKZ4ZT7701DX7=integration-tab h_01HKW6S90TVP4K2XFP5EEFWDC4=activate-partner h_01HKW6S90T9ABAX8E7DK02N538=general-settings h_01HKW6S90TEJ68RG9B3S5KD63Y=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW6S90TN3J07GXS8C7NTETR=in-app-events-settings h_01HKW6S90T7P66TMWFA4T4C350=attribution-link-tab h_01HKW6S90TCMRFHFXBEJBCP9C6=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6S90TQW75T0HCCC38ETWB=click-through-attribution h_01HKW6S90T0SVWCEV905DC2VTW=attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HKW6S90T813FYKMGDAF935YJ=view-through-attribution-lookback-window h_01HKW6S90T4TS5EHK8M7E4QV8G=impressions-attribution-link h_01HKW6S90TXR07SQJW3DTD9VS4=cost-tab h_01HKW6S90T489CVTQXQPRM0M8B=ad-revenue-tab h_01HKW6S90VWKHEWNY7AYKRWGBH=permissions-tab h_01HKW6S90V1ZV766FZ20EKJR0N=ad-network-permissions" />

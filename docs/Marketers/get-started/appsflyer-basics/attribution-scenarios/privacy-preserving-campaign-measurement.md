@@ -38,6 +38,8 @@ AppsFlyer provides the following measurement methods:
 
 </Accordion>
 
+<div id="what-networks-can-be-attributed-without-using-a-device-id" />
+
 <Accordion title="What attribution methods do ad networks support?">
 
 **Non-SRN ad networks** can be measured using the additional privacy-preserving attribution methods described in the [FAQ above](#what-methods-of-attribution-dont-require-collecting-device-ids).
@@ -54,12 +56,16 @@ AppsFlyer provides the following measurement methods:
 
 </Accordion>
 
+<div id="can-i-measure-retargeting-without-using-the-device-id" />
+
 <Accordion title="What retargeting measurement options does AppsFlyer support?">
 
 Retargeting attribution can be used with the methods mentioned [above](#what-methods-of-attribution-dont-require-collecting-device-ids).   
 **Note:** Install referrer attribution (for Android) is for re-attributions only, not for re-engagements.
 
 </Accordion>
+
+<div id="can-i-measure-viewthrough" />
 
 <Accordion title="Is view-through measurement supported by the above methods?">
 
@@ -68,6 +74,8 @@ View-through is supported using [probabilistic modeling](/docs/appsflyer-attribu
 Learn more about [view-through attribution](/docs/appsflyer-attribution-model#viewthrough-attribution).
 
 </Accordion>
+
+<div id="can-deep-linking-be-done-without-a-device-id" />
 
 <Accordion title="Does deep linking require an advertising ID?">
 
@@ -84,6 +92,8 @@ The availability of an advertising ID may affect deep linking behavior depending
 
 </Accordion>
 
+<div id="what-are-the-implications-of-childdirected-app-limitations-on-attribution" />
+
 <Accordion title="How does measurement differ when an advertising ID is unavailable?">
 
 In certain privacy-restricted scenarios, measurement coverage may be more limited. AppsFlyer continues to provide meaningful campaign measurement while preserving user privacy.
@@ -94,3 +104,5 @@ In certain privacy-restricted scenarios, measurement coverage may be more limite
 >
 > * [Preserving user privacy](/docs/preserve-user-privacy)
 > * [User privacy on the SDK level](/docs/additional-sdk-integration-guide#user-privacy)
+
+<div data-zendesk-anchors="eeee=overview h_01HMBEZD0P31S8N9ZERB17ZHPT=overview h_01HGAC6QR6XJ20K92DE8KQ02P3=what-methods-of-attribution-dont-require-collecting-device-ids 01HMEBCTBWJX03WEHY3QTR3RAS=what-networks-can-be-attributed-without-using-a-device-id h_01HGAC6QR7VXFNPENAXTAV97Y7=can-i-measure-retargeting-without-using-the-device-id h_01HGAC6QR7E298ZTH8G4TTD7EC=can-i-measure-viewthrough h_01HMRHWVEQCHS7QBJHPZS3B8KZ=can-deep-linking-be-done-without-a-device-id h_01HGAC6QR752QPT4MSDQ7TWAXT=what-are-the-implications-of-childdirected-app-limitations-on-attribution h_01HGAC6QR7R4ZTWJEMSKHACNPF=see-also" />

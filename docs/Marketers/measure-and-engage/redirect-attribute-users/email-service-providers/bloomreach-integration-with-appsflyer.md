@@ -34,6 +34,8 @@ The integration between AppsFlyer and Bloomreach enables smooth deep linking fro
 
 Setting up the integration requires actions in both AppsFlyer and Bloomreach. To set up the integration, follow the steps below:
 
+<div id="step-1-in-appsflyer-create-and-configure-onelink" />
+
 <Accordion title="Step 1: In AppsFlyer, create and configure OneLink">
 
 First, set up OneLink in AppsFlyer and confirm that the required hosting and domain settings are in place.
@@ -66,6 +68,8 @@ See [additional information and instructions.](https://dev.appsflyer.com/hc/docs
 
 </Accordion>
 
+<div id="step-2-in-bloomreach-define-a-universal-link-domain" />
+
 <Accordion title="Step 2: In Bloomreach, define a Universal Link domain">
 
 Next, define a Universal Link domain in Bloomreach so links can support deep linking while still being measured.
@@ -87,6 +91,8 @@ See [additional information and instructions.](https://documentation.bloomreach.
 > ```
 
 </Accordion>
+
+<div id="step-3-in-bloomreach-implement-mobile-and-web-sdks" />
 
 <Accordion title="Step 3: In Bloomreach, implement mobile and web SDKs">
 
@@ -111,6 +117,8 @@ Implement the Bloomreach [JavaScript web SDK](https://Mobile%20SDKs) to ensure t
 See [additional information and instructions.](https://documentation.bloomreach.com/engagement/docs/js-sdk)
 
 </Accordion>
+
+<div id="step-4-test-the-integration-by-sending-a-test-email" />
 
 <Accordion title="Step 4: Test the integration">
 
@@ -143,3 +151,5 @@ Once all validations are complete, the integration setup is complete.
 > * Bloomreach SDKs for iOS, Android, and JavaScript must be implemented correctly for link measurement to work.
 > * Universal Links and App Links should remain unwrapped, with Bloomreach parameters appended automatically.
 > * This integration enables accurate email-to-app and email-to-web click attribution, as well as cross-channel engagement measurement.
+
+<div data-zendesk-anchors="h_01KMWVJR5AQRY8YRAD6ZV6H1VV=about-the-integration h_01KMWVJR5ACS7Q1GKP1GGGBRYK=set-up-the-integration h_01KMWVJR5ABTK766X4G0B9J92E=step-1-in-appsflyer-create-and-configure-onelink h_01KMWVJR5AY8WRV4Y6GTWHDE5D=when-your-app-is-installed h_01KMWVJR5A40099PC91YW2QR1D=hosting-and-ssl h_01KMWVJR5A7JV0FHC5W1EP9502=app-domain-definition h_01KMWVJR5A57Y1ZPAYBC5321DX=step-2-in-bloomreach-define-a-universal-link-domain h_01KMWVJR5BER86B8YV3H60PGF6=example h_01KMWVJR5B6K6EG49VJM7JSEK2=step-3-in-bloomreach-implement-mobile-and-web-sdks h_01KMWVJR5B3505FSJSXRC9NQ4A=ios h_01KMWVJR5BE703X877C40DZ5MX=android h_01KMWVJR5BVTXS8W2WGTYEGP0D=web h_01KMWVJR5BPA0N2YTK2983DHMT=step-4-test-the-integration-by-sending-a-test-email h_01KMWVJR5B6PHSEK7NA5W8ZGNF=note h_01KN1TCDE27DNPJJ8HRHZ4FPA0=important-notes" />

@@ -41,6 +41,8 @@ x-zendesk:
 
 <table><thead><tr><th>Category</th><th> UA</th><th>Retargeting\*</th></tr></thead><tbody><tr><td>Partners (media source)</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Partners by date</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Daily</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Geo</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Geo by date report</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td colspan="3">\* For retargeting reports, add the <code>&amp;reattr=true</code> to the URI. </td></tr></tbody></table>
 
+<div id="using-pull-api-aggregate-data" />
+
 <Accordion title="Using Pull API aggregate data">
 
 **To use Pull API aggregate data**:
@@ -69,6 +71,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Comments |
@@ -94,3 +98,5 @@ x-zendesk:
 >
 > * [Descriptions and examples of aggregate reports](/docs/aggregated-and-analytics-reporting-overview)
 > * [Selecting the right data delivery tool for aggregated data](/docs/aggregated-and-analytics-reporting-overview)
+
+<div data-zendesk-anchors="h_01HE0YP82966QHRAEW979ABCTP=looking-for-pull-api-raw-data h_01HE0YP829WD5TDFHTPYAV30QN=pull-api-aggregate-data h_01HE0YP829EQ7N6CST352X917H=aggregate-performance-reports-available-via-pull-api h_01HE0YP82954F1ACVR2K4AFD5W=using-pull-api-aggregate-data h_01HE0YP8292131Q2561A4E1GYZ=parameters h_01HE0YP829ZPJAPHPDR9H4HMRT=traits-and-limitations h_01HE0Y2KTXS06WHN57MQ91AD09=see-also" />

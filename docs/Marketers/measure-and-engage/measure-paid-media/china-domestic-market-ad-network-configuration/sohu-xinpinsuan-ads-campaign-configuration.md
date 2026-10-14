@@ -36,6 +36,8 @@ x-zendesk:
 
 Sohu XinPinSuan Ads configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration Tab">
 
 ### Activate Partner
@@ -64,6 +66,8 @@ In this section, you can map your AppsFlyer events with AD\_NETWORK via postback
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution Link Tab">
 
@@ -108,17 +112,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost Tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad Revenue Tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions Tab">
 
@@ -138,3 +148,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW6XEHPM944AN2AZY3GQD77=integration-tab h_01HKW6XEHQFNWXN83X5C5N4HR9=activate-partner h_01HKW6XEHQJEDMSAF5N7MBFZTJ=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW6XEHQB43GJ6CSXG930ZYX=in-app-events-settings h_01HKW6XEHQP53XF1H89ZRDKVTK=attribution-link-tab h_01HKW6XEHQN7KDEZE629D50998=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6XEHQCCCDMXXAYD7GEYS0=click-through-attribution h_01HKW6XEHQQ6333VSWK2D3JVWF=click-attribution-link h_01HKW6XEHQTJBXHEBY52A1MCWP=cost-tab h_01HKW6XEHQ69P4GY9QMZS9WCQJ=ad-revenue-tab h_01HKW6XEHQD3FS5YQ7EDDNC7QA=permissions-tab h_01HKW6XEHQ4W2Z79GJW45RZ5KN=ad-network-permissions" />

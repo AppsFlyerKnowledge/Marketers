@@ -47,6 +47,8 @@ For a detailed description of the Partner Configuration Window Header, click [he
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below. General Settings
@@ -80,6 +82,8 @@ In this section, you can map your AppsFlyer events with Mobio via postbacks.
 | **Send Revenue** | **When unchecked** - Send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - Send all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -120,17 +124,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -160,3 +170,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW34PW1Y7S78Z05CNZPGV7J=setting-up-mobio h_01HKW34PW12V6JMYTFG61324AG=tip h_01HKW34PW18K29N92EAC2Q3D9E=integration-tab h_01HKW34PW1HDFQ8YEF9XR8HFG9=activate-partner h_01HKW34PW1SJPB24MBD9BXBDJ9=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW34PW178WVKP0M3032R2H9=in-app-events-settings h_01HKW34PW20BNZYP8KAZA6B0CG=attribution-link-tab h_01HKW34PW212DPA337Y60HB979=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW34PW2ZV9BGDD5Q9E48ABA=click-through-attribution h_01HKW34PW2ASJ1Q12SKDYH1EPV=click-attribution-link h_01HKW34PW2MVBPEE4KXCCZ1V1J=cost-tab h_01HKW34PW2M447QXS82266Y497=ad-revenue-tab h_01HKW34PW28TK2Z5Y8817E16D1=permissions-tab h_01HKW34PW2A8FKTCR03WXDTPZ2=ad-network-permissions h_01HKW34PW2HPQJ5047R02AWX97=agency-permissions" />

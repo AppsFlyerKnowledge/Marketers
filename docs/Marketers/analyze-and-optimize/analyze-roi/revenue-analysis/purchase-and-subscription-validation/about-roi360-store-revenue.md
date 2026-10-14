@@ -88,6 +88,8 @@ The following sections display the IAP-related events that AppsFlyer measures an
 * Sent to partners via postbacks.
 * Supported in SKAN Conversion Studio.
 
+<div id="purchase-af_purchase" />
+
 <Accordion title="Purchase (af_purchase)">
 
 **Description**
@@ -122,6 +124,8 @@ Recorded when a user makes a purchase.
 * af\_net\_revenue\_factors
 
 </Accordion>
+
+<div id="purchase-af_purchase_free" />
 
 <Accordion title="Purchase free (af_purchase_free)">
 
@@ -158,6 +162,8 @@ Recorded when a user makes a purchase that has no revenue amount. All revenue pa
 
 </Accordion>
 
+<div id="purchase-canceled-af_purchase_canceled" />
+
 <Accordion title="Purchase canceled (af_purchase_canceled)">
 
 **Description**
@@ -184,6 +190,8 @@ Recorded when a user cancels a purchase.
 
 </Accordion>
 
+<div id="purchase-pending-af_purchase_pending" />
+
 <Accordion title="Purchase pending (af_purchase_pending)">
 
 **Description**
@@ -209,6 +217,8 @@ Recorded when a user makes a purchase but the payment isn't yet processed.
 * af\_environment
 
 </Accordion>
+
+<div id="refund-af_purchase_refund" />
 
 <Accordion title="Refund (af_purchase_refund)">
 
@@ -249,6 +259,8 @@ Recorded when a purchase is refunded.
 
 </Accordion>
 
+<div id="test-purchase-af_purchase_sandbox_sdk" />
+
 <Accordion title="Test purchase (af_purchase_sandbox_sdk)">
 
 **Description**
@@ -274,6 +286,8 @@ Recorded when testing a purchase recorded via SDK in sandbox environment.
 * af\_sandbox\_revenue
 
 </Accordion>
+
+<div id="test-purchase-af_purchase_sandbox_s2s" />
 
 <Accordion title="Test purchase (af_purchase_sandbox_s2s)">
 
@@ -318,6 +332,8 @@ All generated events:
 
 **Note:** Depending on the user device platform, some parameters aren't always populated for an in-app event.
 
+<div id="trial-started-af_ars_trial_started" />
+
 <Accordion title="Trial started (af_ars_trial_started)">
 
 **Description**
@@ -346,6 +362,8 @@ Recorded when a subscriber begins a trial period.
 * af\_period\_type
 
 </Accordion>
+
+<div id="trial-canceled-af_ars_trial_canceled" />
 
 <Accordion title="Trial canceled (af_ars_trial_canceled)">
 
@@ -376,6 +394,8 @@ Recorded when a subscriber cancels the automatic renewal of the subscription dur
 
 </Accordion>
 
+<div id="trial-churned-af_ars_trial_churned" />
+
 <Accordion title="Trial churned (af_ars_trial_churned)">
 
 **Description**
@@ -405,6 +425,8 @@ Recorded when a subscriber churns following a trial period. This happens after a
 * af\_reason
 
 </Accordion>
+
+<div id="trial-converted-af_ars_trial_converted" />
 
 <Accordion title="Trial converted (af_ars_trial_converted)">
 
@@ -447,6 +469,8 @@ Recorded when a fully priced renewal starts, following a trial period.
 * af\_net\_revenue\_postal\_code
 
 </Accordion>
+
+<div id="subscription-started-af_ars_subscription_started" />
 
 <Accordion title="Subscription started (af_ars_subscription_started)">
 
@@ -496,6 +520,8 @@ Recorded when a discounted or a fully priced subscription starts.
 
 </Accordion>
 
+<div id="subscription-canceled-af_ars_subscription_canceled" />
+
 <Accordion title="Subscription canceled (af_ars_subscription_canceled)">
 
 **Description**
@@ -525,6 +551,8 @@ Recorded when an auto-renewal subscription is canceled in the middle of a billin
 
 </Accordion>
 
+<div id="subscription-paused-af_ars_subscription_paused-android-only" />
+
 <Accordion title="Subscription paused (af_ars_subscription_paused) - Android only">
 
 **Description**
@@ -552,6 +580,8 @@ Recorded when a user pauses an active subscription.
 * af\_period\_type
 
 </Accordion>
+
+<div id="subscription-resumed-af_ars_subscription_resumed" />
 
 <Accordion title="Subscription resumed (af_ars_subscription_resumed)">
 
@@ -590,6 +620,8 @@ Recorded when a fully priced subscription is resumed following a churned or refu
 
 </Accordion>
 
+<div id="subscription-churned-af_ars_subscription_churned" />
+
 <Accordion title="Subscription churned (af_ars_subscription_churned)">
 
 **Description**
@@ -619,6 +651,8 @@ Recorded when a subscriber churns. This usually happens after auto-renewal cance
 * af\_reason
 
 </Accordion>
+
+<div id="subscription-refunded-af_ars_subscription_refunded" />
 
 <Accordion title="Subscription refunded (af_ars_subscription_refunded)">
 
@@ -665,6 +699,8 @@ Recorded when a subscriber is issued a refund.
 
 </Accordion>
 
+<div id="subscription-billing-grace-af_ars_subscription_billing_grace" />
+
 <Accordion title="Subscription billing grace (af_ars_subscription_billing_grace)">
 
 **Description**
@@ -693,6 +729,8 @@ Recorded when a subscription renewal fails due to a billing issue and the subscr
 * af\_period\_type
 
 </Accordion>
+
+<div id="subscription-renewed-af_ars_subscription_renewed" />
 
 <Accordion title="Subscription renewed (af_ars_subscription_renewed)">
 
@@ -731,6 +769,8 @@ Recorded when an auto-renewal subscription takes place.
 
 </Accordion>
 
+<div id="subscription-changed-af_ars_subscription_xgraded" />
+
 <Accordion title="Subscription changed (af_ars_subscription_xgraded)">
 
 **Description**
@@ -768,6 +808,8 @@ Recorded when a subscriber upgrades, downgrades, or cross-grades to a different 
 
 </Accordion>
 
+<div id="existing-subscriber-af_ars_existing_subscriber" />
+
 <Accordion title="Existing subscriber (af_ars_existing_subscriber)">
 
 **Description**
@@ -799,6 +841,8 @@ Recorded when the SDK connector is notified about a subscriber in the middle of 
 * af\_validated
 
 </Accordion>
+
+<div id="test-purchase-af_ars_sandbox_sdk" />
 
 <Accordion title="Test purchase (af_ars_sandbox_sdk)">
 
@@ -835,6 +879,8 @@ Recorded when testing a purchase recorded via SDK in sandbox environment.
 * af\_sandbox\_revenue
 
 </Accordion>
+
+<div id="test-purchase-af_ars_sandbox_s2s" />
 
 <Accordion title="Test purchase (af_ars_sandbox_s2s)">
 
@@ -982,6 +1028,8 @@ When viewing net revenue in reports, the following parameters contain the net re
 
 </Accordion>
 
+<div id="troubleshooting-and-disprepancies" />
+
 <Accordion title="Troubleshooting and discrepancies">
 
 | Symptom | Explanation / Solution |
@@ -989,6 +1037,8 @@ When viewing net revenue in reports, the following parameters contain the net re
 | AppsFlyer shows fewer in-app purchase and subscription events than the actual app stores. | In AppsFlyer, events are generated only for users who have updated to an app version that includes the SDK connector. Meanwhile, the app stores log every event, regardless of the user's app version. As a result, until the updated app version is fully adopted, a discrepancy between the app's revenue data and the store's data is expected. |
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 <Accordion title="Traits and limitations">
 
@@ -1009,3 +1059,5 @@ When viewing net revenue in reports, the following parameters contain the net re
 | Google one-time products | IAP | <ul><li>Supported purchase options: Buy and Rent</li><li>Pre-order: Not supported</li></ul> |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01KSAJW61CZZBWBQ112VR5095C=important h_01KD0W3J6105033NV6FYKGQ8BQ=warning h_01KD2JZQ0JYVF8S1E2W3N91KYV=how-does-roi360-store-revenue-work enable-roi360-store-revenue=activate-roi360-store-revenue h_01KD2JZQ0JS9YQ2SPNN6NHAJEH=activate-roi360-store-revenue h_01KD2JZQ0JD53598CES8ECAHR3=set-up-roi360-store-revenue h_01JKWGTJQY938NV6VCJ7KKS23E=reference h_01KD6B3KC75RFDV08G9RT1BX1M=note h_01HDEPSK8DFQ24EZ5T0EPBSVS4=iaprelated-events-and-parameters 01H8VJJP1ER9N6BPAES8H8CK4T=purchase-af_purchase h_01J50N58GYF2BYC57HA7THSWW6=purchase-af_purchase_free 01H8VJJP1EXYE1EQS08CK8BG02=purchase-canceled-af_purchase_canceled 01H8VJJP1ET5TAAQ17EMK6TVRE=purchase-pending-af_purchase_pending 01H8VJJP1E8JKPGT2V9CCB1XW8=refund-af_purchase_refund 01H8VJJP1ECQMS49M8Z1X1FT4B=test-purchase-af_purchase_sandbox_sdk 01H8VJJP1E3X7YZNYT5D8REVEW=test-purchase-af_purchase_sandbox_s2s h_01HDEQBACTTPZ04YYD1KV49SEZ=subscriptionrelated-events-and-parameters 01H8VJJP1EHAZBGT82WRWB00JT=trial-started-af_ars_trial_started 01H8VJJP1ETCHTK6JMK9ERS5A5=trial-canceled-af_ars_trial_canceled 01H8VJJP1EC45X8PJVPWT3G7S3=trial-churned-af_ars_trial_churned 01H8VJJP1EYPQM50JVX1KPZXAZ=trial-converted-af_ars_trial_converted 01H8VJJP1EA4WTCEJWBB1HPRJF=subscription-started-af_ars_subscription_started 01H8VJJP1EF744NE425Y30VG0M=subscription-canceled-af_ars_subscription_canceled 01H8VJJP1EMKBP27070NRR9CZ5=subscription-paused-af_ars_subscription_paused-android-only 01H8VJJP1EGHNQ35JM1TWV4ND0=subscription-resumed-af_ars_subscription_resumed 01H8VJJP1EM2GJ28VBE6V76SBG=subscription-churned-af_ars_subscription_churned 01H8VJJP1E28XXAQSGZ9PYDT08=subscription-refunded-af_ars_subscription_refunded 01H8VJJP1E399B2AVWP9VKZ0D4=subscription-billing-grace-af_ars_subscription_billing_grace 01H8VJJP1EEZZ0DE75VXAZQP3E=subscription-renewed-af_ars_subscription_renewed 01H8VJJP1FGXHRK3J0XB2G4PCQ=subscription-changed-af_ars_subscription_xgraded 01H8VJJP1FKC8KZ2HKJVGZEV23=existing-subscriber-af_ars_existing_subscriber 01H8VJJP1F720QT97Q0TW4SEM2=test-purchase-af_ars_sandbox_sdk 01H8VJJP1FSRHG26EXMEG3325P=test-purchase-af_ars_sandbox_s2s 01H8VJJP1F0ZV2PX39D9JCG6B4=parameter-dictionary 01H8VJJP1FF219YN3XHRCGW7Z3=true-revenue h_01KBFWTM4XJ417930YVDD36ASK=note-1 h_01KRKEP613DR8RZ5Q2A5H7KZAH=tip 01JHZG8FFHTYE2PMRWWS8WNR6X=troubleshooting-and-disprepancies 01H8VJJP1FP2MPRF8AN77REXD0=traits-and-limitations" />

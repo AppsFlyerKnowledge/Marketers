@@ -77,6 +77,8 @@ If you’re not allowed to create a conversion target, you can see on WeChat a t
 
 WeChat's configuration window includes 4 tabs: Integration, Attribution link, Data enrichment and Permissions. Click on the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -182,11 +184,15 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Enable Tencent cost integration to receive cost data for WeChat.
 
 </Accordion>
+
+<div id="ad-revenue-tab" />
 
 <Accordion title="Ad revenue tab">
 
@@ -194,8 +200,12 @@ Ad revenue integration is not available for this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 No permission configuration available for this partner.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW6Z36NGCWC0R6EQX49S34J=introduction h_01HKW6Z36NTSGCDQM553YMHHDH=setting-up-your-campaign-on-wechat h_01HKW6Z36N8S8KSBNMR8A54RRN=setting-up-wechat-campaign-as-an-agency h_01HKW6Z36N3JSYEWJZH74M5WWJ=setting-up-wechat-on-appsflyer h_01HKW6Z36PDGTT3EERY8F4VA79=integration-tab h_01HKW6Z36P0EQF829NW3GDXKEN=activate-partner h_01HKW6Z36P806MHV6N3D1N9HW3=note h_01HKW6Z36P51EG4BW7WA3JGSKN=general-settings h_01HKW6Z36P3D4EPKC6ZZK94YVF=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW6Z36PA90WEJMFH7BZMD72=in-app-events-settings h_01HKW6Z36PRBT2X6F5BHYW06E1=attribution-link-tab h_01HKW6Z36P73H79MVFXQ29K2M6=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6Z36P95C7CT1J6YS5CQN8=click-through-attribution h_01HKW6Z36PEAPM8RAKB0RM9RES=click-attribution-link h_01HKW6Z36PEG0T9WQQRNY19EVG=cost-tab h_01HKW6Z36WE1SDC7KZHCMTPA0T=ad-revenue-tab h_01HKW6Z36W6QKR583X4Q4BNBZ4=permissions-tab" />

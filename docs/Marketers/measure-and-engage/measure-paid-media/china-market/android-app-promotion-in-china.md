@@ -52,6 +52,8 @@ Meanwhile, many Android installs are generated from APK download links in mobile
 
 AppsFlyer provides three main solutions to attribute Android App installs in China market, use the method most relevant to your needs.
 
+<div id="local-android-app-store-that-supports-ad-attribution" />
+
 <Accordion title="Local android app store that supports ad attribution">
 
 **Solution:** Android out-of-store app with attribution Link
@@ -66,6 +68,8 @@ By using this method, you can attribute both organic install and non-organic ins
 
 </Accordion>
 
+<div id="ad-network" />
+
 <Accordion title="Ad network">
 
 **Solution:** APK Download Link / APK + Attribution Link
@@ -79,6 +83,8 @@ It is easy and fast to launch ad campaigns. It is also convenient to check the p
 **Preparation:** Set up one Android out-of-store app, and generate different attribution links for different ad networks. To learn how to attribute out-of-store apps, click [here](/docs/set-up-multi-store-android-attribution).
 
 </Accordion>
+
+<div id="android-app-store-that-does-not-support-ad-attribution" />
 
 <Accordion title="Android app store that does not support ad attribution">
 

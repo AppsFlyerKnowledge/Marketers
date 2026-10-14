@@ -30,7 +30,7 @@ x-zendesk:
 
 This article contains information and steps on how to set up and use Google Ads Web for PC and console apps with AppsFlyer. This includes:
 
-* [Activate the partner integration in AppsFlyer](/docs/google-ads-web-integration-for-pc-and-console-apps#activate-partner).
+* [Activate the partner integration in AppsFlyer](/docs/google-ads-web-integration-for-pc-and-console-apps#activate-partner-in-appsflyer).
 * [Set up Google Ads Web in AppsFlyer](/docs/google-ads-web-integration-for-pc-and-console-apps#setting-up-Googleadsweb-in-appsflyer).
 * [Set up campaigns in Google Ads for PC and console apps](/docs/google-ads-web-integration-for-pc-and-console-apps#set-up-campaigns-in-google-ads-web-for-pc-and-console-apps).
 
@@ -59,6 +59,8 @@ Before activating the Google Ads Web integration, make sure you have:
 In this part of the setup, you can also set up postbacks to Google Ads. The Google Ads Web (googleads\_int) integration uses an API tool provided by Google Ads for advertisers to send data from their **PC and console apps** directly to Google's servers. Such data may include user actions, such as purchases, registrations, and other types of conversions performed on non-mobile platforms (websites or applications). The data is then used by Google Ads to optimize ad targeting, measure ad performance, and build custom audiences for retargeting.
 
 The integration with Google Ads Web only supports sending postbacks for installs and in-app events.
+
+<div id="integration-tab" />
 
 <Accordion title="Integration tab">
 
@@ -160,6 +162,8 @@ The instructions for setting up campaigns to redirect users to either of these o
 
 **Note**: During campaign setup, you may want to configure your own conversion actions and goals. Instructions on how to do this are also detailed in the sections that follow.
 
+<div id="campaigns-that-redirect-to-a-crossplatform-landing-page" />
+
 <Accordion title="Campaigns that redirect to a cross-platform landing page">
 
 **To set up a campaign that redirects users to a cross-platform landing page**:
@@ -181,6 +185,8 @@ The instructions for setting up campaigns to redirect users to either of these o
 6. Enter the cross-platform landing page URL as Google's final URL.
 
 </Accordion>
+
+<div id="campaigns-that-redirect-to-a-single-app-store" />
 
 <Accordion title="Campaigns that redirect to a single app store">
 
@@ -224,12 +230,13 @@ In Google Ads, you can either select from the predefined list of conversion acti
 3. Select **Conversions offline** as your conversion actions data source.
 4. Select **Import** from the list of conversion types, then select **Manual import using API or uploads** > **Track conversions from clicks**.
 
-   <br /><br />**Note**<br />#### Note
+   > 📘 **Note**
+   >
+   > If **Manual import using API or uploads** is not available:
+   >
+   > 1. Select **CRM, files, or other data sources** > **Track conversions from clicks.**
+   > 2. In **Data source** select **Skip this step and set up data source later.**
 
-   If **Manual import using API or uploads** is not available:
-
-   1. Select **CRM, files, or other data sources** > **Track conversions from clicks.**
-   2. In **Data source** select **Skip this step and set up data source later.**
 5. Click **Continue**.  
    A form displays.
 6. Fill out the form and click **Create and continue** to finish creating your conversion tracker.
@@ -263,3 +270,5 @@ All Google web-to-app attributions appear under `googleadwords_int` in the Overv
 | Trait | Description |
 | --- | --- |
 | Clicks and impressions (Temporary limitation) | Clicks and impressions for campaigns targeting PC & Console apps are temporarily not available from Google SRN (`googleadwords_int`). |
+
+<div data-zendesk-anchors="h_01JP7SMGEPTQGHRYYCBWECH46X=note h_01HK4QHRJG6WTN9P6ZG83XQ6AY=overview h_01HFXV8HPGCRGYPEW0NPJ0NR0S=prerequisites activate-partner=activate-partner-in-appsflyer h_01HFXV8HPH3N4DBKKTQE6DK7FK=activate-partner-in-appsflyer setting-up-metaweb-in-appsflyer=set-up-google-ads-web-in-appsflyer 01H88VAJH3VENKYVRQY5RXN63P=set-up-google-ads-web-in-appsflyer 01H88VAJH3VZ4GPVE7XXMKTZ2P=integration-tab activate-partner::1ca30957=activate-partner h_01HFXV8HPH6X92YETNAGZ910AV=activate-partner transaction-id=general-settings h_01HARQDVEDA206D0BBXBC6WEHH=general-settings h_01JK8XJJWQK5MEJF7GTC5C1707=note-1 enable-viewthrough-attribution=enable-view-through-attribution h_01ZXVWB0GZKWB53KTBWJ51RMBM=enable-view-through-attribution 01H88VAJH3WE9Z0971WMBRBJRS=default-postbacks inapp-event-postbacks=in-app-event-postbacks 01H88VAJH3AS37MVF75GANWX4B=in-app-event-postbacks 01H88VAJH31GZ4KAY280ZRB8MA=attribution-link-tab h_01K88M617Q7SVMDEKP5HTKANJM=tip setting-up-campaigns-in-meta-web-for-pc-and-console-apps=set-up-campaigns-in-google-ads-web-for-pc-and-console-apps h_01HK4S03KVAN99YKXTHAKCT420=set-up-campaigns-in-google-ads-web-for-pc-and-console-apps h_01HMR6HVJF4QT1EZKYZKRVTWEE=campaigns-that-redirect-to-a-crossplatform-landing-page h_01HMR6HVJFMN1V7VM58ZMQFEXF=campaigns-that-redirect-to-a-single-app-store h_01HMTXEZB3W19TKK8ZR6JK2TPG=creating-conversion-actions-and-goals h_01HV6FR2TFYT11H9EVT9Y9TZ3S=note-2 google%20view-web-to-app=view-web-to-app-attribution-data-from-november-2-2025 view-webtoapp-attribution-data-from-november-2-2025=view-web-to-app-attribution-data-from-november-2-2025 h_01K88H6ETM23EV0PTR8GS13KRN=view-web-to-app-attribution-data-from-november-2-2025 h_01K88H6ETMG7007CJ0ADD8VQH4=view-in-the-dashboard h_01K88H6ETM502Z2XDC63602FGD=view-in-raw-data-and-api-reports h_01KB5085FX7G6Y5E200KVH0ABJ=traits-and-limitations" />

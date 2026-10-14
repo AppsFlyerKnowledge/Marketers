@@ -38,6 +38,8 @@ To configure your campaigns with Yeahmobi, follow the steps below.
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partners
@@ -70,6 +72,8 @@ In this section, you can map your AppsFlyer events with Yeahmobi via postbacks.
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -110,17 +114,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Yeahmobi automatically sends CPI cost data on the attribution link for all installs.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue data is not supported by this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -152,3 +162,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HK290F4KYKPR30MW5EH7XSTG=setting-up-yeahmobi h_01HK290F4KJ4JB72D32RPWBA26=integration-tab h_01HK290F4KQVRHB6VB089A9VFH=activate-partners h_01HK290F4KVZPHFD23EKC88BNJ=default-postbacks inapp-events-settings=in-app-events-settings h_01HK290F4KAK84A1M36VNTFM84=in-app-events-settings h_01HK290F4KKVB38XP7VP5KSR7V=attribution-link-tab h_01HK290F4KV3CNJXW6DP7PSTFQ=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HK290F4M10V9K1AWF8M8JXD1=click-through-attribution h_01HK290F4MV18FSH7GEPBPJESC=click-attribution-link h_01HK290F4MY2F9SX963Q1GGFTV=cost-tab h_01HK290F4MHPH43P52J5ZV9ZC3=ad-revenue-tab h_01HK290F4MZ8MKZVEZPAY8ZBEV=permissions-tab h_01HK290F4MEXVTJJGAB2BAEGM5=ad-network-permissions h_01HK290F4MHH62HP0KRBN9FK9W=agency-permissions" />

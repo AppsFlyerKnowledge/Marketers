@@ -28,6 +28,8 @@ Google is updating its [EU user consent policy](https://www.google.com/about/com
 
 ## Relevant integrations and continued use of Google features
 
+<div id="which-integrations-are-involved" />
+
 <Accordion title="Which integrations are involved?">
 
 The following integrations are relevant to Google's new EU consent policy:
@@ -43,6 +45,8 @@ If end users of your apps via these integrations are based in the European Econo
 
 </Accordion>
 
+<div id="what-must-i-do-to-continue-using-googles-features" />
+
 <Accordion title="What should be done to continue using Google's features">
 
 Marketers need to obtain end-user consent in the EEA to continue using Google Ads and GMP DV360 features related to measurement, ad personalization, and remarketing.
@@ -50,6 +54,8 @@ Marketers need to obtain end-user consent in the EEA to continue using Google Ad
 </Accordion>
 
 ## Updating the AppsFlyer SDK
+
+<div id="what-steps-do-i-need-to-take-to-update-the-appsflyer-sdk" />
 
 <Accordion title="Steps needed for implementing consent data via the AppsFlyer SDK">
 
@@ -61,6 +67,8 @@ The AppsFlyer SDK (Android - v6.13.0+, iOS - v6.13.1+) can send the necessary co
 </Accordion>
 
 ## Sending consent data
+
+<div id="how-do-i-send-consent-data-to-appsflyer" />
 
 <Accordion title="Send consent data to AppsFlyer">
 
@@ -75,15 +83,17 @@ See [this video](https://appsflyer.wistia.com/medias/0tnlyre8ai) on how to send 
 
 </Accordion>
 
+<div id="which-consent-values-does-appsflyer-send-to-google" />
+
 <Accordion title="Consent values AppsFlyer sends to Google">
 
 End-user consent values are sent to Google for the relevant AppsFlyer integrations (`googleadwords_int`and `dv360_int`) using the following fields:
 
 | AppsFlyer field | Google field (1) | Values | Field explained |
 | --- | --- | --- | --- |
-| gdpr\_applies | eea | true/false (2) | Does DMA apply to this user? |
-| ad\_personalization\_enabled | ad\_personalization | true/false | Did the user give Google consent to use their data for personalized advertising? |
-| ad\_user\_data\_enabled | ad\_user\_data | true/false | Did the user give consent to send their user data to Google? |
+| <span id="gdpr_applies"></span>gdpr\_applies | eea | true/false (2) | Does DMA apply to this user? |
+| <span id="ad_personalization"></span>ad\_personalization\_enabled | ad\_personalization | true/false | Did the user give Google consent to use their data for personalized advertising? |
+| <span id="ad_user_data"></span>ad\_user\_data\_enabled | ad\_user\_data | true/false | Did the user give consent to send their user data to Google? |
 
 1. See [Google's definition for each field](https://support.google.com/tagmanager/answer/13802165?hl=en).
 2. When DMA doesn't apply to the user, AppsFlyer suggests refraining from sending consent fields other than `gdpr_applies=false`
@@ -112,11 +122,15 @@ AppsFlyer enables advertisers who believe the DMA requirements don't apply to th
 
 </Accordion>
 
+<div id="is-consent-needed-for-mobile-web-events" />
+
 <Accordion title="Is consent needed for mobile web events?">
 
 At this stage, only mobile app events are shared with Google, so there's no need to share consent with AppsFlyer for web events. If users progress from the web to your app, their consent will still be collected within the app at a later stage.
 
 </Accordion>
+
+<div id="which-countries-does-googles-eu-consent-policy-cover" />
 
 <Accordion title="To which countries does the Google DMA consent apply?">
 
@@ -124,11 +138,15 @@ The Digital Markets Act (DMA) applies to users within the EU and the EEA (Europe
 
 </Accordion>
 
+<div id="whats-the-recommended-way-to-ask-for-user-consent-in-a-compliant-way" />
+
 <Accordion title="What's the recommended way to ask for user consent in a compliant way?">
 
 AppsFlyer recommends consulting with your legal team to secure consent in a DMA-compliant manner. While [Google provides general instructions](https://support.google.com/google-ads/answer/14009343?hl=en&sjid=3762335249108620505-NC#app-consent), it doesn't offer specific language for prompts.
 
 </Accordion>
+
+<div id="how-is-appsflyer-translating-tcf-strings-to-google-dma-consent-flags" />
 
 <Accordion title="How is AppsFlyer translating TCF strings to Google DMA consent flags?">
 
@@ -143,6 +161,8 @@ After AppsFlyer receives the TCF strings from your CMP (either through the AppsF
 
 </Accordion>
 
+<div id="if-consent-data-is-sent-via-the-firebase-sdk-do-i-still-need-to-update-the-appsflyer-sdk" />
+
 <Accordion title="Do I need to update both the AppsFlyer and Firebase SDKs to send consent data?">
 
 Yes. Google requires consent data to be included in each event sent from AppsFlyer, as Google doesn't merge user consent data from Firebase with data sent from AppsFlyer. Therefore, consent data must be sent to AppsFlyer, which forwards it to Google. Similarly, sharing consent data with AppsFlyer alone is insufficient for Firebase SDK requirements. This means you must send the data to both AppsFlyer and Firebase.
@@ -150,6 +170,8 @@ Yes. Google requires consent data to be included in each event sent from AppsFly
 </Accordion>
 
 ## Preparing for the upcoming changes
+
+<div id="how-can-i-prepare-for-the-upcoming-changes" />
 
 <Accordion title="Take the following preparatory steps">
 
@@ -179,6 +201,8 @@ If you're still using the legacy AppsFlyer GMP integration (doubleclick\_int), t
 
 ## Impact on advertising activity—FAQ
 
+<div id="how-will-the-upcoming-change-impact-my-remarketing-campaigns" />
+
 <Accordion title="How will the upcoming change impact my campaign attribution?">
 
 In some cases, EU users who opt out of having their data used by Google for advertising purposes (`ad_user_data=0`) won't be claimed for attribution by Google Ads and DV360. This means AppsFlyer won't be able to attribute them.
@@ -186,6 +210,8 @@ In some cases, EU users who opt out of having their data used by Google for adve
 Google and AppsFlyer can still perform attribution in some cases when `ad_user_data=0`, based on Google's interpretation of the Digital Markets Act (DMA).
 
 </Accordion>
+
+<div id="how-will-the-upcoming-change-affect-my-audiences" />
 
 <Accordion title="How will the upcoming change affect Audiences?">
 
@@ -206,3 +232,5 @@ In case you have further questions or any uncertainties, you can reach out to th
 > * [Additional SDK integration guide](/docs/additional-sdk-integration-guide)
 > * [Transition to the new DV360 integration](/docs/bulletin-google-marketing-platform-gmp-integration-transition)
 > * [Audiences user identifier policy](/docs/audiences-user-identifier-policy)
+
+<div data-zendesk-anchors="h_01HP195KV35FD6X67WTMXJWWSZ=overview h_01HP1M37V1CYW5T5E4K1ES3NQA=relevant-integrations-and-continued-use-of-google-features 01HP1KN2H7NTS2V1S2PGF0C41N=which-integrations-are-involved h_01HP2HRPJR72Z0R5VEG5N36CN2=note h_01HP1K1088SJK60QRSTQF4WF6S=what-must-i-do-to-continue-using-googles-features h_01HP1Z2G2M56DDQS9T47GMCFHJ=updating-the-appsflyer-sdk h_01HP1ZASRQGABCEFV67P961XAV=what-steps-do-i-need-to-take-to-update-the-appsflyer-sdk how-consent-data-is-sent=sending-consent-data h_01HP1KPSMCH3EG373BWVQZM4ZT=sending-consent-data h_01HP1JJ2AYHYJET9GYMXA93E86=how-do-i-send-consent-data-to-appsflyer h_01HP1JJ2AYWRBREW5GD0KPDF1R=which-consent-values-does-appsflyer-send-to-google sending-consent-data%E2%80%94faq=sending-consent-datafaq h_01HR1X08VZ5MEAV01E9X54KAQS=sending-consent-datafaq h_01HP1JJ2AYZ57G0GMR8QRDTEZ7=do-i-have-control-over-consent-data-for-nonue-users h_01HP2MRPFA2ECJGAZ93NQHVD2J=important 01HVE9TVZWTRW3VQ8TSXWA13QM=is-consent-needed-for-mobile-web-events h_01JVYS49FCZT3Z91KNACNR6GET=which-countries-does-googles-eu-consent-policy-cover h_01HRXZYZJBDTP8CHJDHQ187CTN=whats-the-recommended-way-to-ask-for-user-consent-in-a-compliant-way 01HR6SD3PBWN5X9AHT66ZADQ3R=how-is-appsflyer-translating-tcf-strings-to-google-dma-consent-flags 01J2V4XRKRSEPA6KPJFMSTHE1F=if-consent-data-is-sent-via-the-firebase-sdk-do-i-still-need-to-update-the-appsflyer-sdk what-i-can-do-on-my-side=preparing-for-the-upcoming-changes 01HR1XYXRDVEW6H9Q3WP17E2N3=preparing-for-the-upcoming-changes h_01HP1JJ2AYFHRRDYZS8YFYE6WP=how-can-i-prepare-for-the-upcoming-changes address-user-consent-in-the-european-economic-area-eea-and-in-the-uk=address-user-consent-in-the-european-economic-area-eea h_01HPGNBQCTJFVZR99BY6E5J2JF=address-user-consent-in-the-european-economic-area-eea verify-cmp-compliance-and-tcf-22-support=verify-cmp-compliance-and-tcf-2223-support h_01HPGNC0HAMA7Z0B4DNV2QSFYG=verify-cmp-compliance-and-tcf-2223-support implement-the-newest-sdkservertoserver-s2s-apis=implement-the-newest-sdkserver-to-server-s2s-apis h_01HPGNCAG3M9XPHDTP03WHQQ9F=implement-the-newest-sdkserver-to-server-s2s-apis h_01HPGNCHP6SSFCVZ3P4AG0N1FB=transition-from-the-legacy-gmp-integration-doubleclick impact-on-my-advertising-activity=impact-on-advertising-activityfaq h_01HP1PKNZN32TQYHGJNNM3JFVZ=impact-on-advertising-activityfaq h_01HP1PKNZN0VJGYAPFHR5JVV5H=how-will-the-upcoming-change-impact-my-remarketing-campaigns h_01HP4K2ZJW11BFSKNPRH7FA092=how-will-the-upcoming-change-affect-my-audiences h_01HQ2VJES04CYF4J8YBB4GQS73=further-information-and-contact-details h_01KZZYSDB33GZ47RSDRP9ACAH0=see-also" />

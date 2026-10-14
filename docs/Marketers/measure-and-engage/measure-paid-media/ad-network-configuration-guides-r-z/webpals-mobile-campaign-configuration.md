@@ -40,6 +40,8 @@ To configure your campaigns with Webpals Mobile, follow the steps below.
 
 Webpals Mobile configuration includes 3 active tabs: **Integration**, **Attribution link**, and **Permissions**. Click on the tabs below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -73,6 +75,8 @@ In this section, you can map your AppsFlyer events with Webpals Mobile via postb
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -113,17 +117,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -154,3 +164,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJZW1R6FFQZ5WETP6FCMW7VN=setting-up-webpals-mobile h_01HJZW1R6F51BEYH46VPZ23X1B=integration-tab h_01HJZW1R6GKV9ZD222NSWDXVNE=activate-partner h_01HJZW1R6G1S7M82QVKQPKKDSE=default-postbacks inapp-events-settings=in-app-events-settings h_01HJZW1R6GWT322E28533S7F8N=in-app-events-settings h_01HJZW1R6G3Z21RK8ANKRP5BRY=attribution-link-tab h_01HJZW1R6GVEGEWJHWAW8N368X=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HJZW1R6G6F4Z010A7FYG6HF9=click-through-attribution h_01HJZW1R6GC6G4T3NV3FZYZ0RN=click-attribution-link h_01HJZW1R6GHK1TKD0BC72QFB0S=cost-tab h_01HJZW1R6GHP4S7BFTZZS6NDPA=ad-revenue-tab h_01HJZW1R6GV3AB25V5SA0Y3YR2=permissions-tab h_01HJZW1R6G1486DSCDP92P4MGJ=ad-network-permissions h_01HJZW1R6HXXRVWM3773VSM8WC=agency-permissions" />

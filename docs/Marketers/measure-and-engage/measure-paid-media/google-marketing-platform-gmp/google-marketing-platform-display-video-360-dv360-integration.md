@@ -77,13 +77,14 @@ Before setting up the integration, make sure to:
 * [Contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
 * [Get the GMP-DV360 link ID](https://support.google.com/displayvideo/answer/10956727).
 
-  <br /><br />**Note**<br />#### Note
+  > 📘 **Note**
+  >
+  > The link ID from DV360 must comply with the following:
+  >
+  > * It must contain numbers and letters.
+  > * It must be longer than 20 characters.
+  > * Android and iOS must each use a different link ID.
 
-  The link ID from DV360 must comply with the following:
-
-  * It must contain numbers and letters.
-  * It must be longer than 20 characters.
-  * Android and iOS must each use a different link ID.
 
 **To set up a new integration:**  
   
@@ -97,6 +98,8 @@ Before setting up the integration, make sure to:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 When AppsFlyer queries GMP-DV360, they return the parameters listed in their response. These are mapped to AppsFlyer parameters and raw data as detailed in the table that follows.
@@ -108,7 +111,7 @@ When AppsFlyer queries GMP-DV360, they return the parameters listed in their res
 | Site ID | Site ID | Site ID | af\_siteid |
 | Creative ID | Creative ID | Ad ID | af\_ad\_id |
 
-The **Integration** tab includes a number of sections, as described below.
+<span id="activate-partner::e4f2f638"></span>The **Integration** tab includes a number of sections, as described below.
 
 #### Activate partner
 
@@ -224,6 +227,8 @@ AppsFlyer supports sending additional parameters (u parameters), limited up to u
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 You can **use AppsFlyer attribution links with DV360 for impressions and click recording only**. These links are NOT used for attribution, and any additional information contained within them is not parsed or used for any purpose.
@@ -252,6 +257,8 @@ https://impression.appsflyer.com/ADD-APP-ID?pid=dv360_int&af_siteid=%24{UNIVERSA
 
 </Accordion>
 
+<div id="cost-tab-for-cost-clicks-and-impressions" />
+
 <Accordion title="Cost tab (for cost, clicks, and impressions)">
 
 Cost, clicks, and impressions are supported for this integration through ROI360.
@@ -275,6 +282,8 @@ Starting September 7, 2026, clicks and impressions will no longer be reported th
 > * Activation after September 12: no discrepancy is expected.
 
 </Accordion>
+
+<div id="ad-revenue-tab" />
 
 <Accordion title="Ad revenue tab">
 
@@ -307,3 +316,5 @@ See possible reasons for discrepancies and how to minimize them:
 > * [Set up ROI360 cost API to measure cost data](/docs/set-up-roi360-cost-api-to-measure-cost-data)
 > * [AppsFlyer's Retargeting Attribution](/docs/retargeting-attribution-guide)
 > * [Custom event mapping](/docs/in-app-event-postback-configuration)
+
+<div data-zendesk-anchors="h_01HMEH8VW3PYCZ6GC4T5BYBS3V=important 01H8E4ZJNRMXY183TQCPW15ZQB=overview 01H8DYEV7JPV80T3YAJQQHBA6C=note data-sharing-between-appsflyer-and-gmp=data-sharing-between-appsflyer-and-gmp---dv360 h_01HQ0QJJRMYP3E6B5FVA0V6861=data-sharing-between-appsflyer-and-gmp---dv360 advertiser-gmp-integration=setting-up-gmp-dv360-for-advertisers 01H8DYEV7KYNB2FJG7N1CTEE86=setting-up-gmp-dv360-for-advertisers h_01KC714WNQWGCM1C1MC8S2PZXH=note-1 h_01HPYMRJ1WVVKCHKKEA6WD0XZP=integration-tab 01H8VVCC8G0KR4AA2HD9S8QBKD=activate-partner 01H8VVCC8GSDPSNN0AJPVZPR8P=general-settings 01H8VVCC8GK8VFPBEPAMVHCAWM=install-attribution reengagement-attribution=re-engagement-attribution 01H8VVCC8HHG5290PYF0BT29QA=re-engagement-attribution h_01K4AFW71RG9YE5EJE1FQCN4SE=note-2 reengagement-window=re-engagement-window h_01HQ06JCJZD6AMFR2B6GTMSM9S=re-engagement-window h_01HNWSTJZPFQVQ5C8M0JA1J0T5=ignore-active-users-for-retargeting h_01HMXNJVHK9C3FT8E04RE0TH99=note-3 inapp-event-postbacks=in-app-event-postbacks 01H8VVCC8HHZRFQ2T1X478YZMP=in-app-event-postbacks 01H8VVCC8HDMTY1P2SG31HD61K=note-4 parameter-mapping=u-parameter-mapping h_01HBBJQZSTT1HFENXNACMHFC18=u-parameter-mapping 01H8VVCC8H53ZRMDBNK1436NAX=attribution-link-tab h_01HBBJQZSW45X3SM92H4FS94HM=important-1 01H8VVCC8H74GDVCNAXT0741MG=cost-tab-for-cost-clicks-and-impressions h_01_dv360_cutover_discrepancy=note-5 01H8VVCC8H90ANM70QAHKTQQ1S=ad-revenue-tab 01H8VVCC8HVNNQ9PJS4ZQCVDNS=setting-up-gmp-dv360-for-agencies 01H8DYEV7MNFFY9ESFF2S3ETEB=agency-setup gmp-discrepancies=gmp-dv360-discrepancies 01H8DYEV7MTPJMY12AVHX45YFF=gmp-dv360-discrepancies h_01KYS9JJ9RSTDPHRZWW47DN438=see-also" />

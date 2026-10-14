@@ -42,3 +42,5 @@ The Partner Assistant Chatbot directs your issues to the appropriate team, cover
 ## Viewing partner tickets
 
 The partner tickets that you open are accessible via your email correspondence with AppsFlyer support. Access it to search, view, and verify the status of your tickets.
+
+<div data-zendesk-anchors="h_01J17HPCFCATZQJF49J2T19VWM=overview h_01J17HPCFC2QSC4899WCKD5GG2=viewing-partner-tickets" />

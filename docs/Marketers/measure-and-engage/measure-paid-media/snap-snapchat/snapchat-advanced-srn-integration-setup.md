@@ -166,11 +166,15 @@ The cost integration provides the following aggregated data:
 
 * Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
 
+<div id="cost-data-sync-status" />
+
 <Accordion title="Cost data sync status">
 
 [View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 </Accordion>
+
+<div id="stop-snapchat-cost-sync" />
 
 <Accordion title="Stop Snapchat cost sync">
 
@@ -280,3 +284,5 @@ Snapchat account IDs mustn't be shared between the advertiser and the agency. If
 Snapchat requires attribution providers to delete its user-level data 12 months after the install. This means that the events performed by these users 12 months after they install the app are counted as organic.
 
 Past aggregate data remains the same.
+
+<div data-zendesk-anchors="01H8F1RWVPTHBDGF3830DY7G7M=overview setting-up-snapchat-integration=set-up-snapchat-integration 01H7WQ47ECTZHPKMG5Z5ZPAND5=set-up-snapchat-integration 01H7WQ47ECZB5GNCQ0XH68N1DK=activate-partner 01H7WQ47ECQSQPP63H398NTQ6M=general-settings h_01_advanced-privacy=advanced-privacy h_01_advanced-matching-data-sharing=advanced-matching-data-sharing 01H8VVCC8GK8VFPBEPAMVHCAWM=install-attribution reengagement-attribution=re-engagement-attribution 01H8VVCC8HHG5290PYF0BT29QA=re-engagement-attribution h_01HNWSTJZPFQVQ5C8M0JA1J0T5=ignore-active-users-for-retargeting inapp-event-postback-settings=in-app-event-postbacks 01H8VVCC8HHZRFQ2T1X478YZMP=in-app-event-postbacks 01H7WQ47ED1HYEBHFJDHTB6HJH=cost-data-sync-status 01H7WQ47ED3P53B269W93Z341E=stop-snapchat-cost-sync web-to-app-measuring-app-activity-for-nonapp-campaigns=web-to-app-measuring-app-activity-for-non-app-campaigns h_01JJMAS0W9WMEPJCQWD9BXAEZ2=web-to-app-measuring-app-activity-for-non-app-campaigns 01H7WQ47EDC973V7CPE38QAQE7=deep-linking-with-snapchat how-to-set-up-deep-links-on-snap-platform=set-up-deep-links-on-the-snap-platform 01H7WQ47EDJAX2DW7A2JJ4XVJN=set-up-deep-links-on-the-snap-platform 01H7WQ47EDS3MYRN9A9ZPHXG9Z=deferred-deep-linking-with-snapchat setting-up-snapchat-for-agencies=set-up-snapchat-for-agencies 01H7WQ47EDARK9SSP47V5MGX18=set-up-snapchat-for-agencies h_01HHVGS94CB9XC0T63VFDZ18JS=agency-limitations h_01HA3XZPWSKVRX7VTRXT1WQ1EZ=raw-data-restrictions keeping-snapchat-data=snapchat-data-retention 01H7WQ47ED9STKS1CVW5EXYX0Z=snapchat-data-retention" />

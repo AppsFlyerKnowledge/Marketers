@@ -117,6 +117,8 @@ The My Dashboards user interface is designed for interactive dashboard building.
 
 </Accordion>
 
+<div id="add-custom-dimensions-to-your-dashboard" />
+
 <Accordion title="Add custom dimensions to your dashboard">
 
 <Embed title="My Dashboards" typeOfEmbed="youtube" url="https://[www.youtube.com/embed/NiySU8z12qU](https://www.youtube.com/embed/NiySU8z12qU)" providerUrl="https://[www.youtube.com" />
@@ -150,6 +152,8 @@ Custom dimensions help you:
 
 ### **Procedures**
 
+<div id="create-a-custom-dimension" />
+
 <Accordion title="Create a custom dimension">
 
 To create a custom dimension:
@@ -173,6 +177,8 @@ To create a custom dimension:
 The custom dimension is available in My Dashboards widget settings.
 
 </Accordion>
+
+<div id="edit-or-delete-a-custom-dimension" />
 
 <Accordion title="Edit or delete a custom dimension">
 
@@ -202,6 +208,8 @@ To edit a custom dimension from widget settings:
 
 </Accordion>
 
+<div id="use-a-custom-dimension-in-a-widget" />
+
 <Accordion title="Use a custom dimension in a widget">
 
 Custom dimensions can be used in all widgets in My Dashboards as group-by dimensions and widget-level filters.
@@ -219,6 +227,8 @@ To use a custom dimension in a widget:
 Click **Save**.
 
 </Accordion>
+
+<div id="traits-and-limitations::b86d548" />
 
 <Accordion title="Traits and limitations">
 
@@ -243,6 +253,8 @@ Click **Save**.
 
 </Accordion>
 
+<div id="order-table-data-by-metric" />
+
 <Accordion title="Order table data by metric">
 
 In table widgets, you can order data by a specific metric to control which rows are shown first. This helps you focus on the highest-performing campaigns, media sources, apps, or other selected group-by dimensions based on the metric that matters most to your analysis.  
@@ -258,6 +270,8 @@ Some metrics don't support ordering. Ordering isn't currently supported for:
 * Some cohort metrics
 
 </Accordion>
+
+<div id="skan-data" />
 
 <Accordion title="SKAN data">
 
@@ -419,6 +433,8 @@ Here's what to keep in mind when analyzing web data in this dashboard:
 
 </Accordion>
 
+<div id="my-dashboards-preferences" />
+
 <Accordion title="My Dashboards preferences">
 
 My Dashboards preferences are global settings that apply to the whole Dashboard. Use them to control dashboard layout behavior, visual appearance, and how data is displayed.
@@ -572,6 +588,8 @@ Custom dimensions can also be used to group and filter widget data. Custom dimen
 
 </Accordion>
 
+<div id="metrics-breakdown-support" />
+
 <Accordion title="Metrics breakdown support">
 
 Not all metrics in My Dashboards support all groupings. Metric compatibility depends on the metric configuration, including period, time breakdown, and the attribution method.  
@@ -698,6 +716,8 @@ When using **two groupings**:
 
 </Accordion>
 
+<div id="date-range-and-time-granularity" />
+
 <Accordion title="Date range, view type, and time breakdown">
 
 Users can configure the date range at both the dashboard level and widget level.
@@ -722,6 +742,8 @@ Users can configure the date range at both the dashboard level and widget level.
 
 </Accordion>
 
+<div id="stacked-area-charts" />
+
 <Accordion title="Stacked area charts">
 
 Stacked area charts let you see how different segments contribute to a total metric over time. Use them when you group a time-based chart by a dimension such as Media source, Campaign, Geo, or Revenue type.
@@ -744,6 +766,8 @@ To use a stacked area chart:
 4. Use the **# / %** toggle to switch between Absolute and Percentage views, depending on whether you want to focus on volume or on proportional breakdown.
 
 </Accordion>
+
+<div id="combo-charts" />
 
 <Accordion title="Combo charts">
 
@@ -825,6 +849,8 @@ Add a comparison to the previous week and sort by **% Change DESC** to see which
 
 </Accordion>
 
+<div id="conditional-formatting" />
+
 <Accordion title="Conditional formatting">
 
 Conditional formatting helps visualize performance trends in your dashboard at a glance. By applying color-based indicators directly on your table widgets, you can quickly identify patterns, outliers, and values that require attention, without manually scanning through numbers.
@@ -863,6 +889,8 @@ You can apply one of the following formatting options to your table cells:
 
 </Accordion>
 
+<div id="view-types" />
+
 <Accordion title="View types">
 
 ![](https://fast.wistia.com/embed/medias/31zhcq4hv7/swatch)
@@ -885,6 +913,8 @@ These view types contain LTV data as follows:
 Note: The retargeting view doesn't contain any cost-related metrics. Use the User Acquisition and Unified views to get the cost-related metrics
 
 </Accordion>
+
+<div id="late-event-dates" />
 
 <Accordion title="Late event dates">
 
@@ -945,6 +975,8 @@ See also [view dashboards](/docs/my-dashboards#view-dashboard).
 
 </Accordion>
 
+<div id="migration-to-my-dashboards-from-events-overview-and-activity-dashboards" />
+
 <Accordion title="Migration to My Dashboards from Events, Overview, and Activity dashboards">
 
 My Dashboards replaces the legacy Events, Overview, and Activity dashboards. Use My Dashboards to view the same analytics data with more flexible templates, filters, groupings, custom metrics, enhanced tables, and shared or private views.
@@ -993,6 +1025,8 @@ You can export large data from your dashboard to a CSV file for further analysis
 
 </Accordion>
 
+<div id="agency-and-ad-networks" />
+
 <Accordion title="Agency and ad networks">
 
 The KPIs available in **My Dashboards** depend on the **permissions granted by the advertiser** to agencies and ad networks. These permissions control which data sources, metrics, and attribution views partners can access.
@@ -1036,3 +1070,5 @@ Advertisers manage agency and ad network access in the **Permissions tab** in th
 <table><colgroup><col/><col/></colgroup><thead><tr><th>Trait</th><th>Description</th></tr></thead><tbody><tr><td colspan="2"><strong>Metrics &amp; attribution methods</strong></td></tr><tr><td>SSOT</td><td><ul><li>SSOT is turned on by default if both Android and iOS apps are selected.</li><li>When attribution method is SSOT but SSOT isn't configured for iOS apps in SKAN Conversion Studio, data is incorrect.</li><li>D7 metrics for organic attributions aren't supported.</li><li>Organic attributions for Android aren't supported.</li></ul></td></tr><tr><td>Activity metrics</td><td><ul><li>Activity metrics are supported in Unified view types only.</li><li>A date range of up to 60 days can be chosen.</li></ul></td></tr><tr><td>Cohort metrics</td><td><ul><li>Organic data of unique users and retention metrics doesn't include unattributed events. This can cause lower values for cohort metrics than for LTV metrics.</li><li>For weekly and monthly time granularity, 4 cohort metrics can be added per table. If more are needed, they can be added in a separate table.<ul><li>There's no limit on cohort metrics when the time granularity is Daily</li></ul></li><li>A date range of up to 62 days can be chosen.</li></ul></td></tr><tr><td>Cohort periods</td><td><ul><li>The conversion period is referred to as Day 0, Week 0, or Month 0. The next period after the conversion is referred to as Day 1, Week 1, or Month 1, and so on.</li><li>AppsFlyer cohort periods are based on calendar units, not the exact install timestamp. This may result in discrepancies when comparing AppsFlyer cohort data with networks that define cohort periods based on specific install timestamp (meaning a day is the 24-hour post-install period after the install timestamp, etc.).</li></ul></td></tr><tr><td>Active Users, Active Users last 31 days, and DAU/MAU</td><td><ul><li>Active Users last 31 days and DAU/MAU metrics do not support groupings in charts.</li></ul><p>The total values might be lower than the sum of the values when grouped by any dimension. </p><p>The total is the distinctive number of users, while in some cases a user can be counted in more than one grouping. </p><p>For example, if a user performed a UA session and a reengagement session within the time range, the user will be counted under 2 different media sources (the retargeting network and the UA network/organic).</p></td></tr><tr><td>In-app events table or in-app events charts</td><td><ul><li>Group by Event name must be the primary dimension and cannot be removed.</li><li>Metrics are supported only for the LTV (user lifetime) period.</li><li>Count, Unique users, or Revenue metrics are available.</li><li>Attribution sources:  Classic (default), SSOT (default in SSOT views), SKAN </li></ul></td></tr><tr><td>Assisted installs</td><td><ul><li>From August 1, 2024, assisted installs are available in any timezone.</li><li>For data July 31, 2024 and earlier, assisted installs are only available when viewing data in UTC timezone.</li></ul></td></tr><tr><td>Cross-platform</td><td><ul><li>To view cross platform data you need to create a product line and opt in to cross platform attribution </li><li>Data freshness - limited to daily updates.</li><li>Assist metrics - Not available for Cross-platform dashboards</li></ul></td></tr><tr><td>Event widgets and the Events template</td><td>Cohort data isn't supported. The exception is Revenue and Unique users on Day 2 and Day 7, which are available for the SSOT attribution method only.</td></tr><tr><td colspan="2"><strong>Time: date ranges &amp; data freshness</strong></td></tr><tr><td>Historical data</td><td><ul><li>LTV metrics has up to 25 months (2 years + 1 month).</li><li>Activity metrics has up to:<ul><li>3 years for daily metrics</li><li>1 year for monthly metrics</li></ul></li><li>Cohort metrics include data starting from October 1, 2024.</li><li><div>Date range has up to:</div><ul><li>3 years for Impressions, clicks, cost, attributions, and LTV metrics</li></ul></li><li>Activity and Cohort metrics:<ul><li>60 days for Daily</li><li>Up to 12 months for monthly</li></ul></li><li>Weekly and monthly data is displayed in UTC timezone.</li></ul></td></tr><tr><td>Data freshness</td><td><p>Real-time data is not available for weekly and monthly cohorts, and for grouping or filtering by App version and OS version. Real-time is also not available for Web, CTV, or PC and console apps for Cohort and Activity metrics. This doesn't apply to LTV metrics for CTV and PC and console apps, which remain available in real-time.</p><p><strong>Note</strong>: For Web, CTV, and PC and console apps, the Installs, re-engagements, and re-attributions metrics are now served from our AI-ready data pipeline (migrated between July 21 and August 10, 2026). This means these metrics for these platforms now show up with a delay instead of continuously.</p><p>Data will only show after it has been completed (meaning at the end of the day, week or month). However, data, where some of the install data has been completed, such as some data has finished (post-install time) and others haven't started yet, will be displayed.</p></td></tr><tr><td>Attribution dates date range</td><td>If your computer is set to a timezone where it's a specific day, and the app timezone in AppsFlyer is for a timezone where it's still the previous day, "Today" isn't an option in the date range picker. For example, if, according to your computer settings, it's Monday, but according to your app timezone in AppsFlyer, it's still Sunday.</td></tr><tr><td>Week and Month time breakdowns</td><td><ul><li>Week and month time breakdowns are available only for Cohorted metrics and for the "Active Users" Activity metric (which supports monthly breakdown only). Weekly and monthly time breakdowns aren't available for Web, CTV, or PC and console apps — Cohort and Activity data is daily-only for these platforms.</li><li><strong>Unique users</strong>, <strong>retention</strong> and <strong>conversion rate</strong> metrics are not available if the data includes installs from before November 2022.</li></ul></td></tr><tr><td><p>Changing app timezone settings</p></td><td><p>If you've changed your app's timezone configuration, historical data from before the change is only available when viewing the dashboard in UTC. To access this data, switch the dashboard's timezone setting to UTC manually.</p></td></tr><tr><td>Intraday SRN impressions and clicks</td><td>Self-reporting networks (SRNs) don't update impression and click data on the standard intraday cadence. This data is collected only a few times a day. As a result, impressions and clicks from SRNs might be missing from dashboards during the day. To view complete data for a specific date, review the dashboards on the following day, after the SRN completes its reporting cycles.</td></tr><tr><td colspan="2"><strong>Filtering, dimensions &amp; scale limits</strong></td></tr><tr><td>Filter dimensions</td><td>Filters at the widget level also take into account filters set at the dashboard level. If there's a conflict, data doesn't display.</td></tr><tr><td>Geo</td><td>Aggregation by geo is based on the geo where the install occurred.</td></tr><tr><td>Multiple apps</td><td><ul><li>Up to 10 apps can be selected. However, if more than 5 apps are selected, only the following dimensions are available to group by and filter:<ul><li>Attribution type</li><li>Media source</li><li>Campaign</li><li>Geo</li><li>Agency</li><li>Channel</li><li>Source</li></ul></li></ul></td></tr><tr><td>Filter and value limit</td><td><p>All dimension-based filters (for example, <strong>Media source</strong>, <strong>Campaign</strong>, <strong>Adset</strong>, <strong>Ad</strong>, <strong>Site ID</strong>, <strong>Channel</strong>) display up to <strong>2,000 values</strong>. If a dimension contains more than 2,000 values, some values might not appear in the list. </p><p>To view a missing value, first apply a narrowing filter, such as selecting a relevant media source. This reduces the number of possible values and enables the missing value to appear.</p></td></tr><tr><td>Media source name standardization</td><td><p>Media source names are standardized to ensure consistent grouping and reporting across My Dashboards.</p><p>When data is received from partners, incoming values may be transformed before being displayed in the dashboards and metrics. This standardization aligns different naming variations under a single, unified media source name.</p><p>Examples:</p><figure><table><thead><tr><th>Incoming value from media source</th><th>Displayed in My Dashboards</th></tr></thead><tbody><tr><td>facebook</td><td>Facebook Ads</td></tr><tr><td>Facebook Ads</td><td>Facebook Ads</td></tr><tr><td>twitter</td><td>Twitter</td></tr><tr><td>Twitter</td><td>Twitter</td></tr></tbody></table></figure></td></tr><tr><td>Heavy affiliate traffic</td><td>For apps with heavy affiliate traffic, grouping or filtering impressions or clicks by Ad set, Ad set ID, Ad, Ad ID, or Site ID displays NA. These restrictions apply when daily impressions plus clicks exceed 100 million and do not apply to SRN networks, such as Meta, Google, TikTok, Snapchat, LinkedIn, and others. This limitation affects dashboards and aggregated APIs only. Attribution and raw data are not affected</td></tr><tr><td colspan="2"><strong>Tables &amp; charts display limits</strong></td></tr><tr><td>Table</td><td>Max columns: 100</td></tr><tr><td>Multiple metrics</td><td><ul><li>For line, bar, and column charts: Maximum 10 metrics per chart widget.</li><li>For combo charts: Maximum 5 metrics per chart widget.</li><li>Donut charts don't support multiple metrics.</li><li>Group by dimensions aren't available when multiple metrics are selected.</li></ul></td></tr><tr><td>Charts</td><td>When grouping by a dimension, charts can display up to dimension values. For example, when grouping data by media source, the top 10 media sources display.</td></tr><tr><td>Conditional formatting</td><td><p>Rule based coloring:</p><ul><li>Up to <strong>five</strong> conditions are supported.</li><li>If multiple conditions apply to the same value, only the <strong>first</strong> matching rule is applied.</li></ul></td></tr><tr><td><a href="./my-dashboards#compare-in-tables">Compare in tables</a></td><td><ul><li>Rounded values may show unexpected % change. If the displayed metric is rounded (for example, eCPI shown as <strong>0.01 vs. 0.01</strong>) but the underlying values differ (for example, <strong>0.0123 vs. 0.0189</strong>), the table may display a noticeable percentage change such as <strong>20%</strong></li><li>Small changes may display as 0%<strong>. </strong>Very small percentage differences (for example, <strong>0.3%</strong>) may round to <strong>0%</strong> in the table.</li></ul></td></tr><tr><td colspan="2"><strong>Exporting data</strong></td></tr><tr><td>Export table data</td><td>Limited up to top 1000 rows</td></tr><tr><td><a href="./my-dashboards#export-data">Table Export data</a></td><td>Table exports include only the first 2 group by dimensions. If a table is configured with 3 or 4 groupings, only the first 2 dimensions appear in the exported CSV file. Additional groupings are ignored.</td></tr><tr><td colspan="2"><strong>Access &amp; navigation</strong></td></tr><tr><td>My Dashboards</td><td>The My Dashboards section in the side menu shows up to 7 of your most recently viewed or pinned dashboards.</td></tr><tr><td>Agency and Adnets</td><td><ul><li>Agencies can grant ad networks access to My Dashboards data, if the agency received access from the advertiser.</li></ul></td></tr><tr><td colspan="2"><strong>Legacy &amp; migration quirks</strong></td></tr><tr><td>Retention and cohort data</td><td>Migrated devices have no install record. As such, they aren't associated with any cohort, and can't be shown in the Retention and Cohort reports. </td></tr><tr><td>Legacy unattributed organic in-apps mode</td><td>If your app uses the legacy <strong>Unattributed organic in-apps</strong> mode, real-time <strong>organic Active Users</strong> may appear lower than expected. Values correct automatically after the current day completes. For the most accurate real-time view, we recommend switching to <strong>first-install mode</strong>.<br/>Learn more about <a href="./measure-reinstalls#unattributed-organic-inapps">Unattributed organic in-apps mode</a> and <a href="./measure-reinstalls#attributed-to-the-first-install">first-install mode</a>.</td></tr></tbody></table>
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HSE6E4XTVG6EKSF318D01BEW=about-my-dashboards h_01HSE6E4XTRFV4ABNDV135B2BP=get-started procedures%E2%80%94set-up-your-dashboard=proceduresusing-the-platform h_01HT2EG6X5NQCM9MD7R689WFCF=proceduresusing-the-platform h_01HSZPQ31R0F4JV685WC2Z5WX8=create-dashboard h_01HSZPQ31S6TY5MZ70N9DFRQD0=add-widget h_01K0EZY2BYJQ8D2ABK1NA3VNPB=add-metric h_01KSHNVHZ6HC9AD3SVZ6771DKS=add-custom-dimensions-to-your-dashboard h_01KSHNZS19EDZ174G6RT2DCXQ0=suggested-custom-dimensions h_01KSHNZS1BYJ2KYG2CFCSYA3AS=example-use-cases h_01KSHPQ8MASYKDY9DMX8H906QW=procedures h_01KSHNNAGKRN4VH0ZRHXDNWZBR=create-a-custom-dimension h_01KSHNNAGKJDHNRGSR7M74368R=edit-or-delete-a-custom-dimension h_01KSHNNAGKS88D6NDNFY1RPMY3=use-a-custom-dimension-in-a-widget h_01KSHNNAGKDJ32PK32V96ETH9Q=traits-and-limitations::b86d548 h_01KQ477EZD55HEHVXC39T0N22H=order-table-data-by-metric limitations::4059e7a7=limitations h_01KQ47B08EPZPXYB6SA8GXPZNQ=limitations h_01K5ZZFKAP5T1GQKBHATK4XA6X=skan-data h_01KCNS97640WH2AEE2BX5YA4D7=skan-and-appsflyer-data-scope-differences h_01K5ZZJGTGNC0RDKJN1MZJET8G=available-skan-metrics h_01K5ZZJGTMHH8DWNZ8Q0XQ9BE0=supported-dimensions h_01K5ZZJGTMMS4TJNWVC2GGGPM9=how-to-use h_01K9Y9XFD69DZCDD0QPGPRZ4E6=crossplatform-dashboard h_01K9YA32D36H9G12V51N1D6DT7=intro h_01K9YA2PSG21P694X2EWW8VZGC=prerequisites h_01K9YA2PSJJMF34ZDZCS7K86KG=dashboard-overview h_01K9YA2PSKX2Y0X4A52QW5QG7F=widgets h_01K9YA2PSR8J4YXTKTM1WHDPS8=metrics-and-dimensions h_01KX0XHZZRDSMZJETNX8HAG6KH=note h_NEW_ID=web-attribution-in-the-cross-platform-dashboard web-attribution-in-cross-platform=web-attribution-in-the-cross-platform-dashboard limitations=limitations-1 h_01K9YA2PSSJ6P623J3G9H11446=limitations-1 h_01HTM4FT86HXQT6845D63GRCPW=view-dashboard h_01KQPT13R22WNGZDN9ZWHTJD35=my-dashboards-preferences h_01KQPT5117YJYDHEV7Q1KK5XZM=theme autosave=auto-save h_01KQPT5QED6HT0KJ03A3QR0YBJ=auto-save h_01KQPT8ZK96SP4KRAQQZ1EZQPG=data-labels h_01HT2EKBMP6C255FTAZSXGJ9S5=concepts h_01HT2ERXJWAQ9AYCT3TMG22H4A=metrics h_01JNX32FZ03X7EXX2H5BZ8Q5MR=custom-metrics h_01HT2EMPAD9WVRF90QFRQBEBKV=periods h_01HT2EMPADSGATYMMWP5FJ2QX5=calculation h_01HT2ERXJXTCPZ50PQ2AFX5V9B=attribution-method h_01HT2ERXJXWS8SYAF11K2CS6PT=group-by-dimensions h_01JYKHSVE502QSPKFTGKMBHGZA=ssot-supported-dimension-metrics h_01KH5WT9GG7N8Y0VCPTHJT8KA3=metrics-breakdown-support installs-reattributions-reengagements=installs-re-attributions-re-engagements h_01KH5X19Y38V52A0WDATJJ30KP=installs-re-attributions-re-engagements cost-impressions-clicks-ctr-clicktoinstall-rate-ipm-ecpi=cost-impressions-clicks-ctr-click-to-install-rate-ipm-ecpi h_01KH5X6EF48PYGB0GA4T89MAP4=cost-impressions-clicks-ctr-click-to-install-rate-ipm-ecpi h_01KH5X8X366P618T5CNGH74RY3=click-through-view-through total-revenue-roas-roi-arpu-grossprofit-sessions=total-revenue-roas-roi-arpu-gross-profit-sessions h_01KH5XKVGX7GR56C20HPCHCTJE=total-revenue-roas-roi-arpu-gross-profit-sessions total-revenue-roas-roi-arpu-grossprofit-sessions-retention-rate=total-revenue-roas-roi-arpu-gross-profit-sessions-retention-rate h_01KH5XW5RAR2SEWZCMPVPXCGJ2=total-revenue-roas-roi-arpu-gross-profit-sessions-retention-rate inapp-events-unique-users-count-revenue-ecpi-conversion-rate-average-count=in-app-events-unique-users-count-revenue-ecpi-conversion-rate-average-count h_01KH5Y49E6K2KFS3NX5EX0TN42=in-app-events-unique-users-count-revenue-ecpi-conversion-rate-average-count h_01KH60ZDTRW2NV7HG4G3QQXHS4=active-users h_01KH6126RG34ECQZHXE7XCT4R5=active-users-last-31-days h_01KH6148DH5APNTDVJJF2X5EM8=daumau h_01KH6169WFG3XS2M865H1714Z6=uninstalls h_01KH61AKF20CGENVFXSNVBFY8C=assisted-installs h_01KH61CEHXTTRYW19SN37QQRVY=skan-duplicates h_NEW_FVRV_ID=first-visits-re-visits first-visits-revisits=first-visits-re-visits h_01KH61E4J8MN8TQAZR8JYWY1WS=multiple-metrics-in-a-table h_01KH61F4TD5ZYN82C1FQHF765K=multiple-groupings-in-a-table h_01JQ425AQ62G2X7NARN0N339A4=date-range-and-time-granularity h_01JQ42ASVZE0EGKET51PZSMHNH=dashboard-level h_01JQ42D1PZVJV29G5E7T4C3B74=widget-level h_01KADZ6ZQCXKK126C5ST86CPJP=stacked-area-charts h_01JYNM9Z09W799ZDFCMZM9GQGR=combo-charts 01J9GKX4G40DPKB2SQR4A0Y9KR=compare-to h_01KATH2DE2C6GNXX056876S8KR=compare-in-tables h_01KATH56Q6P9Z4V8HRZG981TF4=comparison-period-options h_01KATHCWPZHC456C5DWXBC2EHN=how-to-add-a-compare-to-in-tables h_01KATHF2DV34G0A8V063ZP99F1=use-case-example h_01JYZWQ5KZ3TQ4DKPJBF4EW0EC=conditional-formatting h_01KF0E9Z4SG9TZNQY3ZJMG9T12=available-formatting-types h_01KF0EPNEPCA2K6A0WD9Y76R88=how-to-apply-conditional-formatting h_01G8QRAG5J7EXZC8NSSKP95KGX=view-types h_01KJ53F0KG44TJCVGQ3KSPVKNG=late-event-dates h_01KJ53H1ASSKNYMJ3TJHFGRYDB=understand-event-dates-and-late-events h_01KJ53GPR604J068WMMHXG6NJF=what-are-late-events h_01KJ53GPR69K8EGMHKCYRB8M7K=how-dashboards-determine-the-event-date h_01KJ53GPR86J5ZHVK97AN6JJQD=example-event-date-differences-between-utc-and-utc-8 h_01HTM0KJA8979PBYGV4HMGDXWB=additional-information h_01J0JZXV1885HNZKTAVPTYMRBF=dashboard-templates h_01KRG7CHX5TRV8V57CTBRWS0NM=migration-to-my-dashboards-from-events-overview-and-activity-dashboards h_01KRG7CW0C8A6WGH10Y32GK4JR=match-legacy-dashboards-to-my-dashboards h_01KRG7CW0EQF9PH5HSNNCPN765=open-the-replacement-template-or-view h_01K91XBAWX1B3QP56DV21ZB5C9=export-data h_01K91XPFMVFBFHA7R0PWC5K1FC=how-it-works h_01KD7NHPD68HB2YDM3NENTQW30=agency-and-ad-networks h_01KD7P33GZMS80BFDB3A1SCCES=agency-access h_01KD7P3BTBTH9YD59P5NXVT3XN=ad-network-access h_01KD7PA5MHPFEWR6WY1SKEEGVS=configure-settings h_01HTM0KJA8TB44TSV5N2151N4N=traits-and-limitations" />

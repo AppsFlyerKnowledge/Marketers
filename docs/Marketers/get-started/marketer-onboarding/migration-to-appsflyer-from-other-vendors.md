@@ -52,6 +52,8 @@ The following table describes the scope of work required for each task. To see a
 
 ### SDK integration
 
+<div id="sdk-integration::c763138b" />
+
 <Accordion title="SDK integration">
 
 The AppsFlyer SDK integrated into the app is the link between the app and the AppsFlyer platform. It reports app installs, app opens, in-app events, and so on.
@@ -80,6 +82,8 @@ The AppsFlyer SDK integrated into the app is the link between the app and the Ap
 
 ### Device migration—optional
 
+<div id="about-device-migration" />
+
 <Accordion title="About device migration">
 
 Device migration is the process of uploading a list of your existing user device IDs (IDFA, IDFV, GAID, CUID) into AppsFlyer. You should perform this process before releasing the new app version, which will include the AppsFlyer SDK. There are two options when migrating devices, [attributed](/docs/migration-to-appsflyer-from-other-vendors#attributed-migration) or [non-attributed migration](/docs/migration-to-appsflyer-from-other-vendors#nonattributed-migration).
@@ -105,6 +109,8 @@ Once you migrate devices, data reflects in AppsFlyer as follows:
 > If the app is not opened within 180 days from the migration date, all of the migrated device data is deleted. Consequently, if the app is opened after the 180 days period, a new install will be recorded.
 
 </Accordion>
+
+<div id="how-to-migrate-devices" />
 
 <Accordion title="How to migrate devices">
 
@@ -192,6 +198,8 @@ Switch existing marketing campaigns to AppsFlyer to enable AppsFlyer attribution
 
 **Note**: You can choose to only migrate a few marketing campaigns at a time. In this case, you can segment the ones you want to migrate by media source (for example, ad network or agency), geo, or campaign.
 
+<div id="srns" />
+
 <Accordion title="SRNs">
 
 SRNs reply to Mobile Measurement Partners (MMPs) when queried about engagements of specific devices. If two MMPs, for example, AppsFlyer and a competing attribution vendor, query the same SRN about the same device install, you may incur double charges.
@@ -207,6 +215,8 @@ SRNs reply to Mobile Measurement Partners (MMPs) when queried about engagements 
 
 </Accordion>
 
+<div id="nonsrn-ad-networks" />
+
 <Accordion title="Non-SRN ad networks">
 
 Ad network attribution links record the engagements of users and are subsequently used to attribute the engagements that become actual installs.
@@ -218,6 +228,8 @@ Ad network attribution links record the engagements of users and are subsequentl
 3. Switch the existing links in each of your campaigns with the AppsFlyer attribution links.
 
 </Accordion>
+
+<div id="owned-media" />
 
 <Accordion title="Owned media">
 
@@ -240,6 +252,8 @@ For these campaigns, AppsFlyer uses [OneLink links](/docs/onelink-guide). OneLin
 
 </Accordion>
 
+<div id="skan" />
+
 <Accordion title="SKAN">
 
 For SKAdNetwork (SKAN) attribution, you can only have one SDK update the conversion value. Otherwise, SKAN data is rendered meaningless. Therefore, make sure that after migration, only the AppsFlyer SDK updates the SKAN conversion value.
@@ -250,6 +264,8 @@ For SKAdNetwork (SKAN) attribution, you can only have one SDK update the convers
 
 ### Data report setup
 
+<div id="adapt-and-map-report-structures" />
+
 <Accordion title="Adapt and map report structures">
 
 Before migration, your systems store your attribution data from your current vendor according to the reporting structures, fields, and parameters you have set up with them. For AppsFlyer to correctly report data, you must adapt and map your current report structures to AppsFlyer report structure, fields, and parameters.
@@ -259,6 +275,8 @@ Before migration, your systems store your attribution data from your current ven
 * Contact your AppsFlyer CSM for help in quickly adapting/migrating your report data structures from Adjust, Branch/Tune, or Kochava to AppsFlyer.
 
 </Accordion>
+
+<div id="prepare-report-methods" />
 
 <Accordion title="Prepare report methods">
 
@@ -273,3 +291,5 @@ Reporting methods include:
 * Data Locker
 
 </Accordion>
+
+<div data-zendesk-anchors="overview=about-migrating-to-appsflyer-from-other-vendors 01H8EDSTP8N4GZJQ5J609C3DHM=about-migrating-to-appsflyer-from-other-vendors h_01HQJ10ZFJR43KBYMD9A07CJ99=compare-measurement-between-appsflyer-and-other-mmps 01H8EDSTP8YGDZBPEY1976JP8C=tasks 01H8EDSTP8HGCVHYX49GQQEHBB=scope-of-work h_01F0RDXJ4F34DDKRFV5G6WZQX0=sdk-integration 01H8EDSTP97C85X2E9EKBSVFQJ=sdk-integration::c763138b device-migration%E2%80%94optional=device-migrationoptional h_01F0RDXVSQ13R9Q2KT7PK1KSCQ=device-migrationoptional 01H8EDSTP9NDF6611MVEMWQSMZ=about-device-migration 01H8EDSTP93QJA4XZB6TDWWH1V=example 01JA2CAMW3HCHC4B9FX7517FJ6=note 01H8EDSTP9M2MDMGZ8QBQGPM6S=how-to-migrate-devices h_01F0RPWKQ4B0T1TXRGPVTYPPFB=attributed-migration 01H8EDSTP9HABKEZJXMB84CDDE=attributed-device-migration-csv-structure h_01KV852C6CGBHSB6EFY122DRQY=note-1 h_01F0RPX3SJ391M8SPNNN50DDA8=nonattributed-migration nonattributed-device-migration-csv-file-structure=non-attributed-device-migration-csv-file-structure 01H8EDSTP9AFDMQS6BPQJY19ZH=non-attributed-device-migration-csv-file-structure h_01F0RDY9WPSBZVP3B7XN3ZEJKK=campaign-migration 01H8EDSTP94KSE1J4J5B7HX96Z=srns 01H8EDSTP9ZGMHSM44BWGF1FJN=note-1 01H8EDSTP981XVWVM2NE0A45RM=nonsrn-ad-networks 01H8EDSTP9XNJA80Z5XR7WR9QN=owned-media 01H8EDSTP9Q8JAPNXSQWSHSK32=skan h_01F0RDYKYHAEZ65GZBZ3MWTB5Z=data-report-setup 01H8EDSTP91E934EDXTPXW2ARJ=adapt-and-map-report-structures 01H8EDSTPAF8H5ESHDVK42M0RB=prepare-report-methods" />

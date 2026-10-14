@@ -77,3 +77,5 @@ After the first sync is completed successfully, a new audience for this cohort w
 By default, the name of the new audience is the name of the synced Amplitude cohort, followed by an alphanumeric identifier. You can edit the audience name from the Audiences dashboard if you wish.
 
 [![amplitude_imported_audience.png](https://files.readme.io/a4f8efc6818d94a68b28ca62ae26215f17bfc7edcfb990855a042a2dee71f8b6-33375708383249.png)](https://files.readme.io/a4f8efc6818d94a68b28ca62ae26215f17bfc7edcfb990855a042a2dee71f8b6-33375708383249.png)
+
+<div data-zendesk-anchors="overview=about-the-amplitude-integration h_01HNZP6HDVC5RBMKTCZY81HG4M=about-the-amplitude-integration h_01HNZP6HDVZH6Q1KGJE7FXSPMT=setting-up-the-integration h_01HNZP6HDVV3GSEPARCY1VABX8=define-appsflyer-data-destinations h_01HNZP6HDV6EFPCM5FE5XBAS78=sync-amplitude-cohorts-to-appsflyer-destinations" />

@@ -152,7 +152,7 @@ Smart Script does this by:
 * Creating a relevant `pid` (later displayed as the media source) based on the user's specific origin
 * Mapping it to a parameter key of your choosing, such as `af_sub1`, in the outgoing URL
 
-To learn how to set up Smart Script to collect the web referrer, see [OneLink Smart Script V2 setup guide](/docs/set-up-smart-script-to-convert-web-visitors#h_01M1BK4M22YAQ6YX4RZXRKZF7C).
+To learn how to set up Smart Script to collect the web referrer, see [OneLink Smart Script V2 setup guide](/docs/set-up-smart-script-to-convert-web-visitors#seo-referrer-mapping).
 
 </Accordion>
 
@@ -167,3 +167,5 @@ To learn how to set up Smart Script to collect the web referrer, see [OneLink Sm
 | Reengagement window | Organic search has a fixed reengagement window of 30 days. The window size cannot be modified. For more information, see [Retargeting attribution guide](/docs/retargeting-attribution-guide#inclusion-windows). |
 
 </Accordion>
+
+<div data-zendesk-anchors="organic-search-attribution=overview h_01H9G0W21SRDC6ZSR1E8AQFZFC=overview h_01H9G0W21S4RB56PNV9DAYZPB2=flow h_01H9G0W21S6Z0A5QXC52KSYVQS=setup h_01H9G0W21S7KVJ2Z5DRPCHZF4Z=data-availability h_01H9G0W21SERW2HC44KD77FNCG=additional-information" />

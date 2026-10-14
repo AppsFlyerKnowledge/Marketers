@@ -73,3 +73,5 @@ For example, if ad-network-X is working with a certain app (id1234567890), and w
 ```
 https://app.appsflyer.com/id1234567890?pid=ad-network-X_int&af_siteid={ApplicationId}_{ApplicationName}&c={CampaignName}&af_adset={adgroup_name}&af_ad={CreativeName}&clickid={DynamicParameter}&af_addpb=1
 ```
+
+<div data-zendesk-anchors="h_01H9FKCW1FJ2QCVVE6HEE640H9=important h_01HJR5M5C0P759S4X5SSJCY501=setting-up-luna-labs h_01H9FKCW1FE6JCY5FAFF3Y4TGH=integration h_01H9FKCW1FNPCF1M7SRWTMNDCW=note h_01H9FKCW1FV00605GYK498JZN9=activate-partner h_01H9FKCW1FGMA3FKAY5B9YCJVH=default-postbacks" />

@@ -32,7 +32,7 @@ The following is an example flow that highlights the most important steps in a u
 
 ![User_windows.jpg](https://files.readme.io/ce8489a16998ffbc4720fe2aae4496393db921cc582a331f59edb775a59b1331-small-22325350590097.jpg)
 
-1. Marketing touchpoint: Customers interact with your brand through online or offline marketing touchpoints. These can include, email and newsletters, social media, mobile web, and more.
+1. <span id="marketing-touchpoint"></span>Marketing touchpoint: Customers interact with your brand through online or offline marketing touchpoints. These can include, email and newsletters, social media, mobile web, and more.
 2. Game landing page: A game landing page directs customers to your download app page. This step is important for collecting UTM and other URL parameters to attribute customers from the click/install to the original media sources or to your owned media sources.  
    The landing page is also useful because it provides links to the various platforms your game supports. For example, you can also have links to your Xbox, Microsoft store, and Steam page on your landing page.
 3. App page: This is the URL to your Nintendo Switch app page that hosts your app for customers to download.
@@ -50,6 +50,8 @@ The following table lists the tasks required to integrate your Nintendo Switch a
 | Link setup | If you don't use a cross-platform landing page, you can create direct attribution links to place behind ads.<br /><br />[Learn how to create direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links) | Marketer |
 | Report setup/view data | [Learn about data availability in dashboards and reports](/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability) | Marketer/Data engineer |
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -62,3 +64,5 @@ The following table lists the tasks required to integrate your Nintendo Switch a
 > 📘 **See also**
 >
 > * [CTV, PC, and console platform overview](/docs/ctv-pc-and-console-platform-attribution-concepts)
+
+<div data-zendesk-anchors="01H7Z1HPD0AB0VP6REMBF2HCR8=about-nintendo-switch-attribution h_01HP1QDGDAXV0Y7MVJYHW3H4SQ=example-attribution-flow 01H7Z19FJ54WZ7XV91Y36EKYQ6=marketing-touchpoint 01H7Z1HPD0VAMPEHBPN8MAT3ST=integration-procedures 01H7Z1HPD0CS7CTX2KS2RVD3VA=traits-and-limitations h_01HE0T79YSNWGB3W4S7WEBW1B5=see-also" />

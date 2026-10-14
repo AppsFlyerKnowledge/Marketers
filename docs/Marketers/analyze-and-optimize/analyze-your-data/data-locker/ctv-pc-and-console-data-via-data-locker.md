@@ -44,3 +44,5 @@ Cross-platform reports:
 > 📘 **See also**
 >
 > * [Data Locker for Advertisers](/docs/data-locker-for-marketers)
+
+<div data-zendesk-anchors="reports-available-via-data-locker-for-advertisers=cross-platform-reports 01H7WFZN6P1S49NYX8Q0W55P0B=cross-platform-reports h_01H95A1GA2YZ4C4ZPS870WEMAJ=report-types-and-availability h_01HE0T79YSNWGB3W4S7WEBW1B5=see-also" />

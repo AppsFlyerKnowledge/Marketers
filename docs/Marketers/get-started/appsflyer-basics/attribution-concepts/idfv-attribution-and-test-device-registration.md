@@ -35,6 +35,8 @@ IDFV has the following uses in AppsFlyer:
 
 IDFV can be used for matching in a cross-promotion attribution scenario. In this scenario, the user is served an ad within an app your company owns. The ad is promoting another app also owned by your company.
 
+<div id="how-does-crosspromotion-attribution-using-idfv-work" />
+
 <Accordion title="How does cross-promotion attribution using IDFV work?">
 
 1. An ad for the promoted app is displayed within one of the vendor's apps. The same vendor also owns the promoted app.
@@ -43,6 +45,8 @@ IDFV can be used for matching in a cross-promotion attribution scenario. In this
 4. Upon receiving the installation event, AppsFlyer attempts to match it with the corresponding click or impression engagement. If both events share the same IDFV, the install event is attributed to the cross-promotion campaign.
 
 </Accordion>
+
+<div id="a-few-examples-of-idfv-attribution" />
 
 <Accordion title="A few examples of IDFV cross-promotion attribution">
 
@@ -57,11 +61,15 @@ IDFV matching is employed for cross-promotion attribution in the following scena
 
 Advertisers conduct tests during the AppsFlyer onboarding process to verify their app can successfully record and send install events. The IDFV serves as a unique identifier that allows AppsFlyer to recognize the devices used for testing.
 
+<div id="why-identify-devices-as-test-devices" />
+
 <Accordion title="Why identify devices as test devices?">
 
 AppsFlyer treats install events that originate from test devices differently to accommodate multiple installations of the same app. This is often necessary for integration testing purposes. To enable AppsFlyer to recognize these events as coming from test devices, the test device IDFV is registered on the **Test Device** page accessible through the **User Account** menu.
 
 </Accordion>
+
+<div id="why-use-idfv-as-an-identifier-in-test-device-registration" />
 
 <Accordion title="Why use IDFV as an identifier in test device registration?">
 
@@ -73,3 +81,5 @@ Test device registration can also be done with IDFA. However, an iOS app does no
 >
 > * [Cross-promotion attribution for marketers](/docs/cross-promotion-attribution-for-marketers)
 > * [How to register your test device with IDFV](/docs/registering-test-devices#how-to-register-your-device-with-idfv)
+
+<div data-zendesk-anchors="idfv-in-crosspromotion-attribution=idfv-in-cross-promotion-attribution h_01H9041HQ7H18541W83A72B85B=idfv-in-cross-promotion-attribution h_01H9041HQ7JE11FTWTD0XYQWRS=how-does-crosspromotion-attribution-using-idfv-work a-few-examples-of-idfv-attribution%E2%80%A6=a-few-examples-of-idfv-attribution h_01H9041HQ7YDCTJQYBYDVJZPW0=a-few-examples-of-idfv-attribution h_01H9041HQ8ZC679PX7HWRMG1YC=idfv-for-test-device-registration h_01H9041HQ8K76JD72VR4EXCEZB=why-identify-devices-as-test-devices h_01H9041HQ8WS1GEAY6RGV10PF5=why-use-idfv-as-an-identifier-in-test-device-registration h_01HG809S72YC5W61GGN0CE6TP1=see-also" />

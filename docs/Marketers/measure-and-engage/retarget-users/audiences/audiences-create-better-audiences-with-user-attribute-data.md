@@ -40,6 +40,8 @@ User attributes are housed at either the app-level or account-level as described
 
 The following scenario provides a detailed explanation of user attributes.
 
+<div id="scenario-app-marketer-requirements" />
+
 <Accordion title="Scenario—app marketer requirements">
 
 You, the app marketer, are busy with the following:
@@ -61,8 +63,8 @@ In Audiences, create user attributes (favorite sport and game score). This gives
 
 | Name | Format | Level |
 | --- | --- | --- |
-| Game score | **Number**: Lets you set rules like '*ScoreGameB is greater than 29'*. | **App-level**: User's score is recorded for each game played.<br /><br />Meaning: ScoreGameA, ScoreGameB. |
-| Favorite sport | **String:** Lets you set rules like '*whose favorite sport is tennis'.*<br /><br />Note! Values are case-sensitive. | **Account-level**: User's favorite sport is the same regardless of the app.<br /><br />Note! A user can have only 1 value associated with account-level attributes. |
+| <span id="game-score"></span>Game score | **Number**: Lets you set rules like '*ScoreGameB is greater than 29'*. | **App-level**: User's score is recorded for each game played.<br /><br />Meaning: ScoreGameA, ScoreGameB. |
+| <span id="favorite-sport"></span>Favorite sport | **String:** Lets you set rules like '*whose favorite sport is tennis'.*<br /><br />Note! Values are case-sensitive. | **Account-level**: User's favorite sport is the same regardless of the app.<br /><br />Note! A user can have only 1 value associated with account-level attributes. |
 
 **User attributes in rulesets**
 
@@ -75,6 +77,8 @@ User attributes act as filters in Audiences rulesets. This example uses criteria
 ## Implement user attributes
 
 Set up, add, manage, and delete user attributes.
+
+<div id="set-up" />
 
 <Accordion title="Set up">
 
@@ -111,13 +115,15 @@ To manage app-level attributes, an account user must have app permission.
 
 | Field | Characteristics |
 | --- | --- |
-| Attribute name | <ul><li>English characters only</li><li>No punctuation or special characters</li><li>Same name cannot be used at both the app- and account-level</li><li>Same name **can** be used at the app-level; for example, above scenario use of ScoreGameA and ScoreGameB</li></ul> |
-| Format | <ul><li>Text: Test if the attribute value **is** or **is not equal** to a specified rule value. Example: Is cricket or is not cricket.</li><li>Number: Test if the attribute value is greater than, less than, or equal to a specified rule value. Example: Score greater than 15</li></ul> |
-| Level | <ul><li>Account-level: An attribute has no connection to the app.<br />Example: gender, favorite sport</li><li>App-level: An attribute is app-related. Select the apps associated with the attribute.</li></ul> |
+| <span id="attribute-name"></span>Attribute name | <ul><li>English characters only</li><li>No punctuation or special characters</li><li>Same name cannot be used at both the app- and account-level</li><li>Same name **can** be used at the app-level; for example, above scenario use of ScoreGameA and ScoreGameB</li></ul> |
+| <span id="format"></span>Format | <ul><li>Text: Test if the attribute value **is** or **is not equal** to a specified rule value. Example: Is cricket or is not cricket.</li><li>Number: Test if the attribute value is greater than, less than, or equal to a specified rule value. Example: Score greater than 15</li></ul> |
+| <span id="level"></span>Level | <ul><li>Account-level: An attribute has no connection to the app.<br />Example: gender, favorite sport</li><li>App-level: An attribute is app-related. Select the apps associated with the attribute.</li></ul> |
 
 **User attribute fields**
 
 </Accordion>
+
+<div id="manage" />
 
 <Accordion title="Manage">
 
@@ -127,14 +133,16 @@ To manage user attributes, go to **Audiences** > **User attributes** tab.
 
 | Function | Description |
 | --- | --- |
-| Search and filter | By attribute name, app name, and attribute level. |
-| Sort by | Click a column header to sort table rows. |
-| Import data | <ul><li>[Import data by CSV](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[Import data by API](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
-| Change API import key | **To change the API import key:**<ol><li>Click **Import data**.</li><li>Select **API**.</li><li>Click **Refresh import key***.*</li></ol>**Note!** If scripts have embedded keys, make sure to update them with the new key. |
+| <span id="search-and-filter"></span>Search and filter | By attribute name, app name, and attribute level. |
+| <span id="sort-by"></span>Sort by | Click a column header to sort table rows. |
+| <span id="zd-import-data"></span>Import data | <ul><li>[Import data by CSV](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[Import data by API](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
+| <span id="change-api-import-key"></span>Change API import key | **To change the API import key:**<ol><li>Click **Import data**.</li><li>Select **API**.</li><li>Click **Refresh import key***.*</li></ol>**Note!** If scripts have embedded keys, make sure to update them with the new key. |
 
 Manage user attributes
 
 </Accordion>
+
+<div id="delete" />
 
 <Accordion title="Delete">
 
@@ -155,11 +163,11 @@ Manage user attributes
 
 | Field | Content | Format | Add data  <br />by CSV | Remove data by CSV |
 | --- | --- | --- | --- | --- |
-| device\_id | Includes 1 of these user IDs:<ul><li>IDFA</li><li>GAID</li></ul> | Text | Either **device\_id** or **customer\_id** is mandatory | Either **device\_id** or **customer\_id** is mandatory<br /><br />To remove existing data, don't send |
-| customer\_id | [Customer user ID](/docs/customer-user-id-field-cuid) | Text | Either **device\_id** or **customer\_id** is mandatory | Either **device\_id** or **customer\_id** is mandatory<br /><br />To remove existing data, don't send |
-| app\_id | **App-level attribute:** App ID as it displays in the dashboard.<br /><br />For iOS apps, include the prefix *ID*.<br /><br />**Account-level attribute**: Always populate with * | Text | Mandatory | Mandatory |
-| attribute\_key | User-attribute name, exactly as it displays on the user-attributes tab. | Text | Mandatory | Mandatory |
-| attribute\_value | Assigned value<br /><br />[*See limitations](/docs/audiences-create-better-audiences-with-user-attribute-data#limitations) | Text or number | Mandatory | Don't send |
+| <span id="device_id"></span>device\_id | Includes 1 of these user IDs:<ul><li>IDFA</li><li>GAID</li></ul> | Text | Either **device\_id** or **customer\_id** is mandatory | Either **device\_id** or **customer\_id** is mandatory<br /><br />To remove existing data, don't send |
+| <span id="customer_id"></span>customer\_id | [Customer user ID](/docs/customer-user-id-field-cuid) | Text | Either **device\_id** or **customer\_id** is mandatory | Either **device\_id** or **customer\_id** is mandatory<br /><br />To remove existing data, don't send |
+| <span id="app_id"></span>app\_id | **App-level attribute:** App ID as it displays in the dashboard.<br /><br />For iOS apps, include the prefix *ID*.<br /><br />**Account-level attribute**: Always populate with * | Text | Mandatory | Mandatory |
+| <span id="attribute_key"></span>attribute\_key | User-attribute name, exactly as it displays on the user-attributes tab. | Text | Mandatory | Mandatory |
+| <span id="attribute_value"></span>attribute\_value | Assigned value<br /><br />[*See limitations](/docs/audiences-create-better-audiences-with-user-attribute-data#limitations) | Text or number | Mandatory | Don't send |
 
 User-attribute field list
 
@@ -247,7 +255,7 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 
 > 📘 **Note**
 >
-> You must authenticate the request using an Authorization Bearer Header with an [API token V2.0](/docs/managing-appsflyer-tokens#advertiser)
+> You must authenticate the request using an Authorization Bearer Header with an [API token V2.0](/docs/managing-appsflyer-tokens#advertiser-1)
 
 **Example with multiple device IDs, attribute keys, and attribute values**
 
@@ -362,3 +370,5 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 * When adding user attribute values, there is a maximum of 10 million rows per CSV file.
 
 </Accordion>
+
+<div data-zendesk-anchors="user-attributes=about-user-attributes h_01HDNZH1XVX5BYQBPG848M8QZM=about-user-attributes scenario%E2%80%94app-marketer-requirements=scenario-app-marketer-requirements h_01HDNZH1XV8AWVVGNYVA9G4PAG=scenario-app-marketer-requirements h_01HDNZH1XW32ZJJRSANBQCTBV0=scenario-user-attributes h_01HDNZH1XWPBVDHJ7AGPT5ZM9W=implement-user-attributes h_01HDNZH1XWYA9TQZ1B342A661R=set-up h_01HDNZH1XW0PPJF78EVFQTW3R7=add h_01HDNZH1XWGZ04TQXD5D50771A=manage import-data=zd-import-data h_01HDNZH1XWP8P1ZVJX11AXCS2P=delete import-data::b50dc884=import-data h_01HDNZH1XWCXV89YJV7EBJXNK5=import-data h_01HDNZH1XW87W1PV4C3PMY9QD6=import-field-specifications h_01HDNZH1XW3XC893Q8BQZQW2AG=import-data-by-csv h_01M45D4VCXXKXV25MQNAKW53ZW=note h_01HDNZH1XX7PMGNTD683DD2B49=import-data-by-api h_01HDNZH1XXF6DSNKG19ZRZ01AZ=note-1 h_01HDNZH1XX61DVGK96C2TDSYW9=limitations h_01HDNZH1XXZZFA3WHZEE5N24AB=general-limitations h_01GZTGPK2FTHTV4NQ2HKV1HK00=attribute-value-limitations h_01HDNZH1XX4JWSMSF4672ENWNS=api-import-limitations h_01J3APYQ8MXG1SGREVN638R75N=csv-import-limitations" />

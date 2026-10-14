@@ -38,6 +38,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partners
@@ -97,6 +99,8 @@ Generate and save attribution links and send them to the partner for attributing
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
@@ -105,11 +109,15 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 * Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
 
+<div id="cost-data-sync-status" />
+
 <Accordion title="Cost data sync status">
 
 [View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 </Accordion>
+
+<div id="removing-connected-accounts" />
 
 <Accordion title="Removing connected accounts">
 
@@ -126,11 +134,15 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue data is not supported by VK Ads.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -149,3 +161,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJZV9DR3A3W91BQCE2548M0P=setting-up-vk-ads h_01HJZV9DR31B2EW88NG57XV2WH=integration-tab h_01HJZV9DR4A51AC03J82BMH8R0=activate-partners h_01HJZV9DR4WXN4985B5YYHN065=general-settings h_01HJZV9DR4RDFCE9FF8P61H5G7=app-id enable-viewthrough-attribution=enable-view-through-attribution h_01HJZV9DR4EFADPVTYYRT4ZYZD=enable-view-through-attribution h_01HJZV9DR408AXGRVRBV6KK9CJ=default-postbacks inapp-events-postbacks=in-app-events-postbacks h_01HJZV9DR43RZ5W4B71SASKY42=in-app-events-postbacks h_01HJZV9DR47N1SFC26DHT4BCCE=attribution-link-tab h_01HJZV9DR4G92S9CZZW3JE5HTS=cost-tab h_01HJZV9DR47Q48ZTJVK1M5DDM8=cost-data-sync-status h_01HJZV9DR5SHYA20GE711S6VT5=removing-connected-accounts h_01HJZV9DR5Q8W34HW2GRWCCMEB=notes h_01HJZV9DR5696R8NE7R5YYZ2JB=ad-revenue-tab h_01HJZV9DR5YQH7HF32M8R1YBKZ=permissions-tab" />

@@ -228,3 +228,5 @@ Most partners don't use hashed email or hashed phone for install, re-engagement,
 No. As explained in the "Important!" callout near the top of this article, identifiers are always hashed before they reach AppsFlyer, whether on-device via the SDK or server-side via the S2S API. AppsFlyer only accepts hashed values.
 
 </Accordion>
+
+<div data-zendesk-anchors="about-advancedmatching-data-sharing=about-advanced-matching-data-sharing h_01KVFJHWK1TYAPPMZDYFAP0RX0=about-advanced-matching-data-sharing h_01KVFJHWK1VTJZH53FKNE8NZ59=supported-partners the-endtoend-flow=the-end-to-end-flow h_01KVFJHWK1JQ7J838YNDTYDD4A=the-end-to-end-flow h_01KVFJHWK197KW8YBQ1NBD9XT1=how-hashed-user-identifiers-reach-appsflyer h_why-two-phone-fields=why-are-there-two-phone-number-fields h_01KVFJHWK16KQ1X1WFTTTFFND3=normalize-and-hash-identifiers turn-on-advancedmatching-data-sharing=turn-on-advanced-matching-data-sharing h_01KVFJHWK27C5FA358M526EJED=turn-on-advanced-matching-data-sharing h_01KVFJHWK2BN2T7BTXANAWAX4B=privacy-and-data-handling h_01KVFJHWK2XB5VF8V2KPG62QYV=faq" />

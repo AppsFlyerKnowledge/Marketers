@@ -71,3 +71,5 @@ Note: Once an insight is dismissed, it won’t appear again for the current week
 5. The widgets below the action item provide information that assists you in making a decision.
 
 ![image (11).png](https://files.readme.io/0b3d88e18897b7f38c1f70c779e7e5cdcf09565fb5cb7bdc6d9d72309d58e6ad-37563710384529.png)
+
+<div data-zendesk-anchors="about-val-antifraud-assistant=about-val-anti-fraud-assistant h_01JYEJW1KXSVXXRA1ZDQQZZ46W=about-val-anti-fraud-assistant h_01JYEJW1M0DT985B1GARTFBPMQ=insight-types h_01JYEJW1M8CFEKZBHBE70AQD4G=how-val-works h_01JYEJW1MGP0FMS24GVBYJ890R=how-to-access-and-use-explore-insights-val" />

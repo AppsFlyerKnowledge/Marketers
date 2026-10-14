@@ -228,6 +228,8 @@ GROUP BY media_source;
 
 </Accordion>
 
+<div id="complex-attribution-and-firstparty-data-join" />
+
 <Accordion title="Complex attribution and first-party data join">
 
 This query utilizes a more intricate data-join process, allowing for advanced insight generation. First, it retrieves and unifies data from 2 distinct attribution tables ("install" and "installRetarget"). Next, it combines this data with 2 first-party custom sources to provide insights about various conversion types, including an aggregated custom performance metric (score) and maximum age for each.
@@ -248,6 +250,8 @@ GROUP BY conversion_type
 
 These queries illustrate some of the rules that Dynamic Query uses to ensure compliance with user privacy requirements. Use them to better understand the *do*s and *don't*s of constructing queries for the DCR.
 
+<div id="no-group-by-statement" />
+
 <Accordion title="No GROUP BY statement">
 
 Each of the following queries is invalid because it utilizes attribution data but doesn't include a **GROUP BY** statement:
@@ -266,6 +270,8 @@ JOIN install af on af.appsflyer_id = c.appsflyer_id;
 ```
 
 </Accordion>
+
+<div id="grouped-by-nonpermitted-attribution-data-field" />
 
 <Accordion title="Grouped by non-permitted attribution data field">
 
@@ -299,6 +305,8 @@ GROUP BY 1
 
 </Accordion>
 
+<div id="grouped-by-nonpermitted-custom-data-field" />
+
 <Accordion title="Grouped by custom source field joined to non-permitted attribution data field">
 
 The following query is invalid because it groups by a custom source field (my\_id) that is joined to a non-permitted attribution data field (appsflyer\_id); therefore, the same grouping restriction applies to my\_id.
@@ -311,6 +319,8 @@ GROUP BY my_id
 ```
 
 </Accordion>
+
+<div id="restricted-function" />
 
 <Accordion title="Restricted function">
 
@@ -345,3 +355,5 @@ GROUP BY app_id
 ```
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HAS0VY179VDWWV6N5YY2578E=overview h_01HF9G8TXGTAJDFZFVT8WS3QJE=why-use-dynamic-query query-language-and-syntax=query-language-and-dialect h_01HF3KZXC2VHNG92YX25K9HX7Q=query-language-and-dialect h_01HASGQZ5ATBPQ0HF28ETAGPMJ=available-sources h_01HF45KMZNF95SC0K6DE7P4K1R=note 01HF3EJEN2KSRR56F9XF0VSPQF=preserving-privacy accessing-the-dynamic-query=accessing-dynamic-query h_01J3FBVTVW2NCNESK3SYR0G9Q8=accessing-dynamic-query h_01HAS0X3NDFM136YMYSAG88JD7=reference h_01HFKFTBD7BCVP8PT0FDNGVHXS=query-reference h_01HFM169F3W9FDZZ3A4SG7WW58=combining-sources h_01HFM169F3WECT4M32H1CVCMKS=querying-attribution-data h_01HF3TDC0A8N9ZXGJHY4MZE3Y6=sample-queries h_01HF40PRZV7DBMYQRS6YJK2RM4=obtain-crossapp-insights h_01HF40PRZVFHY7B0R1G5S5PRTG=explore-data-integrity h_01HF40PRZVB5N2B14VEYW2CB3N=calculate-custom-attribution-metrics h_01HF40PRZVDXPZBDT25B9JK2EE=enrich-your-custom-data-with-attribution-insights h_01HF40PRZVM2HGQMX9TCK8WF7Y=complex-attribution-and-firstparty-data-join h_01HF3V03EFAVYR6M4WX0BHSVDK=invalid-queries h_01HF40PRZVZWTSK4BJ6BQ1D7S0=no-group-by-statement h_01HF40PRZVY13XM4RVETNK7E6K=grouped-by-nonpermitted-attribution-data-field h_01HF40PRZVJ9G4BAXKGW5VZMJX=grouped-by-nonpermitted-custom-data-field h_01HF42A4B20727TQGPPMP20629=restricted-function" />

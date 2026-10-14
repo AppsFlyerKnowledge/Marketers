@@ -44,6 +44,8 @@ The Localytics configuration window includes 4 tabs: **Integration, Attribution 
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -92,11 +94,15 @@ Click **Save.**
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution Links are not available for Localytics.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -104,11 +110,15 @@ Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -123,3 +133,5 @@ Go to the Localytics Attribution Settings screen and enable Third Party Attribut
 [![](https://files.readme.io/0c171096b9bfd8a559ba8e1a0ad4296559dc050c7b3b52b8987bd9707e44220a-205662666.png)](https://files.readme.io/0c171096b9bfd8a559ba8e1a0ad4296559dc050c7b3b52b8987bd9707e44220a-205662666.png)
 
 [![](https://files.readme.io/53524088099556d72e6e7573f3997bbb55b1a89e38a2f7a74eec1a1632125c72-205663286.png)](https://files.readme.io/53524088099556d72e6e7573f3997bbb55b1a89e38a2f7a74eec1a1632125c72-205663286.png)
+
+<div data-zendesk-anchors="h_01H9FKCBM5W16BYJQ6TH9SSBVC=important h_01H9FKCBM5Z39GPE5772799DB1=setting-up-localytics h_01H9FKCBM5JZ5V4YMB6S24JA6V=integration-tab h_01H9FKCBM5PSZZ5FP1G12M9F63=activate-partner h_01H9FKCBM5N4RB5ZSB61W02368=general-settings h_01H9FKCBM5STZ79NBP3EFYGMB9=default-postbacks h_01H9FKCBM54S067F1Z51E4FXQD=attribution-link-tab h_01H9FKCBM591RG57Q80JZ7FJWY=cost-tab h_01H9FKCBM5Q8P53V34QRQMS0BS=ad-revenue-tab h_01H9FKCBM5GGXX04JEH3DHNV78=permissions-tab h_01H9FKCBM5VBM87C2PHNZVZ4RJ=viewing-the-attribution-data-in-the-localytics-console" />

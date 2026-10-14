@@ -46,3 +46,5 @@ The AppsFlyer SDK returns conversion data using the following:
     * iOS: [onConversionDataSuccess](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlibdelegate#onconversiondatasuccess)
     * Unity: loadConversionData
   * `onAppOpenAttribution`: For re-engagement conversions
+
+<div data-zendesk-anchors="h_01K9KSQQDVDEACFRXS0M4JNW9M=important h_01HTZ6M409RPZAQM66R0H5HA16=get-conversion-data" />

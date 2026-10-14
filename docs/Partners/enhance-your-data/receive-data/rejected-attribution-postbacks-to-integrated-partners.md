@@ -75,3 +75,5 @@ The following table lists the reject reason, reject reason value, and an explana
 >   * `blocked-sub-reason`
 >   * `blocked-reason-value`
 > * When the parameters above are added to both the Default postback and the Advanced Privacy postback, rejected install/in-app event postbacks are enabled.
+
+<div data-zendesk-anchors="h_01J5597AMDVWR2KTANSF7Y7T4P=rejected-attribution-postbacks-relating-to-fraud-and-validation-rules reject-reasons-for-inapp-events=reject-reasons-for-in-app-events h_01J5597AMDHT5GJQN7QJZKV41F=reject-reasons-for-in-app-events h_01J5597AMD29TAZSKZS9WTFSM5=important" />

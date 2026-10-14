@@ -83,3 +83,5 @@ Movable Ink is a dynamic content optimization partner that provides personalized
 ## Traits and limitations
 
 See additional [attribution link traits and limitations](/docs/about-link-structure-and-parameters#traits-and-limitations).
+
+<div data-zendesk-anchors="h_01J8HQFV2ZYYN7G1FDA1DH1GV3=about-the-integration h_01J8HX53FVT1N4MG2HPE743RTS=about-the-integration h_01J710N8QBFHSX9BS6H0NFY918=set-up-the-integration 01J9GSWGHBA01N227MCEV91YMV=note h_01J9GAS3T6STFKHD4C6Z6GYFMF=traits-and-limitations" />

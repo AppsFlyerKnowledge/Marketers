@@ -285,6 +285,8 @@ Before using and testing, Branded Domains complete the steps in the [Branded Dom
 
 </Accordion>
 
+<div id="editing-verifying-and-deleting-branded-domains" />
+
 <Accordion title="Editing, verifying, and deleting Branded Domains">
 
 #### **Edit a branded domain mapping**
@@ -327,6 +329,8 @@ To delete a branded domain contact your AppsFlyer CSM or hello@appsflyer.com.
 
 ## Troubleshooting, traits, and limitations
 
+<div id="troubleshooting" />
+
 <Accordion title="Troubleshooting">
 
 | Symptom | Cause/solution |
@@ -341,6 +345,8 @@ To delete a branded domain contact your AppsFlyer CSM or hello@appsflyer.com.
 | **err\_cert\_authority\_invalid** error when loading a branded domain page | This error indicates that your branded domain lacks a valid HTTPS certificate because the Certificate Authority is not recognized. Since AppsFlyer certifies your Branded domains with Let's Encrypt the error is likely due to Let's Encrypt not being recognized as a valid Certificate Authority (CA) according to the CAA (Certification Authority Authorization) DNS records of your domain.<br /><br />**Solution**<br />Please perform the following:<ol><li>Determine if your domain recognize Let's Encrypt as CA using services such as [this one](https://www.entrust.com/resources/certificate-solutions/tools/caa-lookup).</li><li>Ask your system administrators to update your domain CAA records to include Let's Encrypt as an authorized CA.</li></ol> |
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 <Accordion title="Traits and limitations">
 
@@ -364,3 +370,5 @@ To delete a branded domain contact your AppsFlyer CSM or hello@appsflyer.com.
 | SSL/HTTP certificate renewal | **✓** | Your branded Domain SSL/HTTP certificates managed by AppsFlyer are automatically renewed without any action required on your part. |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HFM51V4PE53FQAED68V8Q834=branded-domains h_01HFM51V4PPJXMCSV5ZVDPT49M=principles-of-implementation h_01HFM51V4PH58ZA4ZXHP5J6K2W=setting-up-branded-domains h_01HFM51V4PWWX7TBCHFMPR3QVB=procedures h_01HQ5CWGQNRBXQ6QQDADV7XCQP=set-up-a-branded-domain-in-appsflyer renew-the-day=renew-the-7-day-period-for-mapping-the-cname-record h_01HQ5CWGQNQJJ1CXDKTGZ8N9ZE=renew-the-7-day-period-for-mapping-the-cname-record custom-ssl-certificate=custom-ssl-certificate-optional h_01KM0E8VHARA2JRAR2H37QM91Y=custom-ssl-certificate-optional h_01HFM51V4PP0NQHVHTKB86250R=set-up-branded-domains-in-the-app h_01HFM51V4PN0FPEDNAF0Q1QS8P=using-and-testing-branded-domains h_01HQ5CWGQPZ6MEFA6MDTHYHCSA=editing-verifying-and-deleting-branded-domains h_01HQ5FJZD6QMNFA45Z2C7CA3ST=edit-a-branded-domain-mapping h_01HQ5FK5XJNZ1EABJA66RMYBCN=verify-a-branded-domain-mapping h_01JSHFECXS00M6BXH8168ZWJE5=domain-cname-record-no-longer-pointing-to-appsflyer h_01JSHF5RMXXFJTXC246KKAQBSS=delete-a-branded-domain-mapping h_01HFM51V4PH4YM13DVXENRWF2E=troubleshooting-traits-and-limitations h_01HFM51V4PJNHZTD97X75WPN98=troubleshooting h_01HFM51V4QQ2TZQMJ2ATNDG91F=traits-and-limitations" />

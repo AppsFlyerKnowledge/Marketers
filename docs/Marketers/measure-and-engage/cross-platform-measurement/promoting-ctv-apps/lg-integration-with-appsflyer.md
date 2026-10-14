@@ -45,6 +45,8 @@ The following table lists the tasks required to integrate your LG CTV app with A
 | Link setup | [Learn how to create direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links) | Marketer |
 | Report setup/view data | [Learn about data availability in dashboards and reports](/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability) | Mareketer/Data engineer |
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -60,3 +62,5 @@ The following table lists the tasks required to integrate your LG CTV app with A
 > 📘 **See also**
 >
 > * [CTV, PC, and console platform overview](/docs/ctv-pc-and-console-platform-attribution-concepts)
+
+<div data-zendesk-anchors="01H7Z17N0YAAGTDPMGZ89F7AVB=about-lg-ctv-attribution 01H7Z17N0Y8RE5PS15N2JG5NRH=integration-procedures 01H7Z17N0YCX89SYYJ1AMPM6W4=traits-and-limitations h_01HE0T79YSNWGB3W4S7WEBW1B5=see-also" />

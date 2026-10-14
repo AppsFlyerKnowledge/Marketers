@@ -63,3 +63,5 @@ Link Discovery shows the following information about a URL:
 | Ad networks | Not supported |
 | Impression URLs | Not supported |
 | Cross-platform links | Not supported |
+
+<div data-zendesk-anchors="what-is-app-attribution=about-link-discovery h_01HKW0CMGXXFKEY7W0NCN1SH76=about-link-discovery h_01HKW0CMGXEAYPDFMR4QCS9F52=benefits h_01HKW0CMGXHZ2NYP6YVPW6QNX3=information-available-via-link-discovery h_01HKW0CMGXD4Z0J7CCKJFZNVCG=using-link-discovery h_01HKW0CMGXX4VXBHFGG3TGGPRV=specifications-and-limitations" />

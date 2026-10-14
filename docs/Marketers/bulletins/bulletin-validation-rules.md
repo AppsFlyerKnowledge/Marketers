@@ -28,3 +28,5 @@ x-zendesk:
 >
 > * [Validation Rules for app owners](/docs/implement-validation-rules-to-prevent-fraud)
 > * What's new in AppsFlyer
+
+<div data-zendesk-anchors="h_01HDPFM863RB69KWQ8NV0SQ5NK=see-also" />

@@ -194,6 +194,8 @@ The source of your campaign mapping data is a custom data source file with the s
 >
 > We recommend using a single mapping file for all collaborations, as it is easier to maintain and update.
 
+<div id="the-campaign-mapping-scheme" />
+
 <Accordion title="The campaign mapping scheme">
 
 Use the schema below to create the campaign mapping source.
@@ -214,6 +216,8 @@ For more information about how to create source files and upload them to your cl
 
 Each attribution job is dedicated to a single day and runs after the day ends. At the beginning of this process, the job ingests the relevant conversions, engagements, and campaign mapping data from the cloud service or from in-app events.
 
+<div id="campaign-mapping-source-ingestion" />
+
 <Accordion title="Campaign mapping source ingestion">
 
 Before each attribution run, DCP loads campaign mapping records from the custom sources. You can choose between two modes for loading these records:
@@ -224,6 +228,8 @@ Before each attribution run, DCP loads campaign mapping records from the custom 
 * **Daily Strategy**: DCP only takes records whose upload date matches the day of the attribution run. For example, if the run occurs at midnight on Jan 19, the system will only select campaign records with the Jan 19 upload date.
 
 </Accordion>
+
+<div id="conversion-source-ingestion" />
 
 <Accordion title="Conversion source ingestion">
 
@@ -236,6 +242,8 @@ At the end of each day, DCP runs the attribution job for that day **only if it c
 
 </Accordion>
 
+<div id="engagement-source-ingestion" />
+
 <Accordion title="Engagement source ingestion">
 
 For each conversion record, DCP searches for the engagement events that triggered it.
@@ -245,6 +253,8 @@ For each conversion record, DCP searches for the engagement events that triggere
 * The attribution job collects all engagement events that fall within the engagement lookback window.
 
 </Accordion>
+
+<div id="inapp-data-ingestion" />
 
 <Accordion title="In-app data ingestion">
 
@@ -261,3 +271,5 @@ To connect data through custom sources customer will first need to follow the in
 * [Data Collaboration Platform — Set up your cloud services](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services)
 * [Data Collaboration Platform — Add connections](/docs/data-collaboration-platform-dcp-add-connections)
 * [Data Collaboration Platform — Create and manage sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources)
+
+<div data-zendesk-anchors="h_01JJKFW5Z2D7Y1MM5A7YR0TY0T=overview prepare-inapp-events-for-conversions-and-engagements=prepare-in-app-events h_01JJKFW5Z22DG4CKFMXPGR3BW0=prepare-in-app-events h_01JJKFW5Z2NP9187GYHS0YEXED=note h_01JJKFW5Z2AX7SHHZ23P0KDQJY=prepare-conversion-inapp-events h_01JJKFW5Z2YD0B151VSR3TG6SP=prepare-engagement-inapp-events h_01JJKFW5Z3QES9BAZX7KNSPCM8=create-inapp-events prepare-custom-source-files-for-engagements-and-conversions=prepare-custom-source-files h_01JJKFW5Z3QX33NK3XP452AAFB=prepare-custom-source-files h_01JK3QFQCK30A7SSPWXSH3VP0D=the-conversion-source-scheme h_01K399C7NME67HQGJKRG1A5JB2=media-partners h_01K399DC8ZAEA86DD4W0181EM6=background-colors h_01JK3QFQCKD1TV5G4N0KP85AWS=the-engagement-source-scheme h_01JK3QFQCK6C16SCW8EYQNS47F=note-1 h_01JJKFW5Z3QR107P3M111P4STG=prepare-campaign-mapping-source h_01JJKFW5Z3ZSYET4HMWD7TWSD8=note-2 h_01JJKFW5Z3Q6F3DP0EMTNQRD8R=the-campaign-mapping-scheme prepare-data-for-attribution-job-ingestion=attribution-job-ingestion-flow h_01JJKFW5Z38W581F4CBW3T4CPZ=attribution-job-ingestion-flow h_01JK5R1VPJ0WAF3WX4R1ECE0R7=campaign-mapping-source-ingestion h_01JK5R1VPJT41RF2EN8806ZY5C=conversion-source-ingestion h_01JK5R1VPJN8KTFTN21DA3619Y=engagement-source-ingestion h_01JK5R1VPJV6F5Y5JB3Q45R89B=inapp-data-ingestion h_01JJKFW5Z3NKB0MB7GN2FC87H5=create-and-connect-custom-data-sources" />

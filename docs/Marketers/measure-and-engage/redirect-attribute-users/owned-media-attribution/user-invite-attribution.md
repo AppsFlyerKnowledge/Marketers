@@ -96,6 +96,8 @@ In reports, the media source (`pid` parameter) is sent by the SDK with the defau
 
 </Accordion>
 
+<div id="example" />
+
 <Accordion title="Example">
 
 Mark the marketer has an app that sells fruit. He wants to create a link that deep links users to a specific fruit page, with the option to buy a specific amount of fruit.
@@ -116,6 +118,8 @@ To get all this to work, Mark send his developer the following list of parameter
 </Accordion>
 
 ## Additional information
+
+<div id="record-user-invites-as-inapp-events" />
 
 <Accordion title="Record user invites as in-app events">
 
@@ -149,6 +153,8 @@ Example:
 
 </Accordion>
 
+<div id="reward-referrers-for-referred-user-actions" />
+
 <Accordion title="Reward referrers for referred user actions">
 
 **To reward referrers for a user invite that results in a specific in-app event**:
@@ -167,6 +173,8 @@ Example:
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Description |
@@ -180,3 +188,5 @@ Example:
 | URL ID | The URL ID (or shortlink ID) can be edited to highlight your campaign offering. For example: https://myapp.onelink.me/abc123/apples.The URL ID must not exceed 50 characters and can be a combination of letters and numbers. By default, it is 8 characters.<br /><br />**Note**: You can only edit the URL ID if the current ID isn't already in use. |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H98E1CZ2AG8AW2H77SPPHFGR=about-user-invite-attribution h_01H98E1CZ234MRBWDEYGZFCDRE=flow h_01H98E1CZ23FEAS8JJC7FFTFXD=viewing-data h_01H98E1CZ2VBCG0RREERW8FNJE=procedures h_01H98E1CZ2WE6DJW717C6AJWXD=parameters h_01H98E1CZ2CANBK1T55DD103JB=parametersvalues-provided-to-the-developer-to-implement-in-the-sdk h_01H98E1CZ2NXCCYEV12JC6EMFG=example h_01H98E1CZ28T2SJ3YNY8TNCAZY=additional-information h_01H98E1CZ2172W6845K099F814=record-user-invites-as-inapp-events h_01H98E1CZ316WWYK55XTN4C8JE=reward-referrers-for-user-invite-installs h_01H98E1CZ330FXG06A4MVQ56PW=reward-referrers-for-referred-user-actions h_01H98E1CZ3SPASZDF5CCY3T3B3=traits-and-limitations" />

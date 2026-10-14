@@ -47,6 +47,8 @@ For a detailed description of the Partner Configuration Window Header, click [he
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -80,6 +82,8 @@ In this section, you can map your AppsFlyer events with Wakeapp via postbacks.
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -120,17 +124,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -148,3 +158,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJZVGH83HTK5PZBCSTKC1ZYV=setting-up-wakeapp h_01HJZVGH83T3H15CNPDEC0G580=tip h_01HJZVGH836Y6104G1HJVG22NE=integration-tab h_01HJZVGH83DXZ1JZ5B14DSAY47=activate-partner h_01HJZVGH84EHZJEY0EERDK4WP1=default-postbacks inapp-events-settings=in-app-events-settings h_01HJZVGH840N0W4JXRM82K6936=in-app-events-settings h_01HJZVGH844DSMXM6M07MG5GNC=attribution-link-tab h_01HJZVGH84FZMXM843ZXQ1WKEX=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HJZVGH849REDVA5HGEWJTZQH=click-through-attribution h_01HJZVGH84QASMHXVGCF0DGXN8=click-attribution-link h_01HJZVGH84AGW72MCGDMR4YXM2=cost-tab h_01HJZVGH84P75Z4N4EPD4121DY=ad-revenue-tab h_01HJZVGH84MAQKSTCFPEG70YF3=permissions-tab h_01HJZVGH84YD3AH66K633T6S00=agency-permissions" />

@@ -54,6 +54,8 @@ The setup involves defining the integration between Snapchat Web Ads and AppsFly
 
 Start by activating the Snapchat Web Ads integration. Then configure the postbacks that AppsFlyer sends to the Conversions API.
 
+<div id="1-activate-the-snapchat-ads-integration" />
+
 <Accordion title="1. Activate the Snapchat Web Ads integration">
 
 To activate the Snapchat Web Ads integration:
@@ -66,6 +68,8 @@ To activate the Snapchat Web Ads integration:
 6. **Access token:** Enter the access token. To create or retrieve it, follow the [instructions in the official Snapchat Web Ads documentation](https://developers.snap.com/api/marketing-api/Conversions-API/GetStarted).
 
 </Accordion>
+
+<div id="2-set-inapp-event-postbacks" />
 
 <Accordion title="2. Set in-app event postbacks">
 
@@ -96,14 +100,16 @@ To set in-app event postbacks:
 8. [Optional] Click the **Add condition** icon to
    [set conditions](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks)
    for an event.
-   <br /><br />**Note**<br />#### Note
 
-   * If you are setting a purchase event, set the
-     **including** column to
-     **Values and revenue**. Selecting any other
-     option causes the postback to fail.
-   * Currently, you can set only the purchase event to include
-     revenue.
+   > 📘 **Note**
+   >
+   > * If you are setting a purchase event, set the
+   >   **including** column to
+   >   **Values and revenue**. Selecting any other
+   >   option causes the postback to fail.
+   > * Currently, you can set only the purchase event to include
+   >   revenue.
+
 9. Click **Save integration**.
 
 If you also run the Snap Pixel on your website, send the same event ID to both AppsFlyer and Snapchat so AppsFlyer can deduplicate the events:
@@ -123,11 +129,15 @@ For more information, see [[Beta] Integrate AppsFlyer Web SDK](/docs/integrate-a
 
 Perform the following steps in Snapchat Ads Manager.
 
+<div id="1-set-the-campaign-type-objective-and-goals" />
+
 <Accordion title="1. Set the campaign type, objective, and goals">
 
 You can choose any predefined in-app event sent from AppsFlyer as your campaign goal. Select a campaign objective that aligns with your website conversion goals, for example, driving traffic to your website or optimizing for on-site conversions.
 
 </Accordion>
+
+<div id="2-set-the-destination-url" />
 
 <Accordion title="2. Set the destination URL">
 
@@ -188,3 +198,5 @@ To get a complete performance view of web attribution data and web cost data fro
 | --- | --- |
 | Clicks and impressions | Clicks and impressions for web campaigns require an [ROI360 subscription](/docs/roi360-onboarding-guide). |
 | Re-engagement | Re-engagement postbacks via the Conversions API are not currently supported. |
+
+<div data-zendesk-anchors="h_01KQC7RA5R1PS69N3015WY4QRY=overview h_01KQC80MBB1KCVVNDSFSJHG5ZT=see-also h_01KQC7RA5RAY6R70GNHCYWAMRC=important h_01KQC7RA5R02QV60T81NX055DM=prerequisites how-to-set-up-snapchat-ads-for-your-website-app=how-to-set-up-snapchat-web-ads-for-your-website-app h_01KQC7RA5RPWP0X927ENN6KJ9V=how-to-set-up-snapchat-web-ads-for-your-website-app part-1-set-up-snapchat-ads-integration-in-appsflyer=part-1-set-up-snapchat-web-ads-integration-in-appsflyer h_01KQC7RA5RY1HF9VHC332FVBFR=part-1-set-up-snapchat-web-ads-integration-in-appsflyer h_01KQC7RA5RJXR5N13SYW3QMMDQ=1-activate-the-snapchat-ads-integration h_01KQC7RA5R3TZZ8PPHHC8EXPG1=2-set-inapp-event-postbacks h_01KQC7RA5RZVTM2X3N6WXRTAT8=note part-2-set-up-appsflyer-integration-in-snapchat-ads=part-2-set-up-appsflyer-integration-in-snapchat-web-ads h_01KQC7RA5REPX0WDDHT7YWDHMC=part-2-set-up-appsflyer-integration-in-snapchat-web-ads h_01KQC7RA5R8MDFAF9R5YH1TFPX=1-set-the-campaign-type-objective-and-goals h_01KQC7RA5SB11HRSQR493PM121=2-set-the-destination-url h_01KQC7RA5S422C22YQX1VQ4R7A=note-1 h_01KQC7RA5SKRWGGCKV71MV8J56=view-web-attribution-data h_01KQC7RA5S5VWHT4DW2MPSMNY0=note-2 h_01KQC7XYSWPTHVDY5R3EG8H4K2=measure-web-attribution-data-with-web-cost h_01KQC7RA5SSZB8M8G00NTXG71K=traits-and-limitations" />

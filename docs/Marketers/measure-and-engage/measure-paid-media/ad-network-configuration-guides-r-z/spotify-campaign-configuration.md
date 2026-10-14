@@ -47,6 +47,8 @@ Learn more about [partner activation rules](/docs/partner-activation-deactivatio
 > * The [general settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners.
 > * All the rest of the steps are either descriptive or **optional.**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration tab is divided into different sections as described below.
@@ -59,11 +61,15 @@ If you want to attribute view-through installs from Spotify, enable this toggle.
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Spotify has a server-to-server integration with AppsFlyer, so attribution links are not used for campaign measurement. When you select your app as the conversion measurement source during Spotify campaign setup, the AppsFlyer integration will automatically be activated, and Spotify will send AppsFlyer impression and click data with the necessary identifiers for attribution.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -71,11 +77,15 @@ Cost integration is not available for Spotify.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue is not available for Spotify.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -107,3 +117,5 @@ The following are the permissions types that advertisers can grant Spotify:
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJS1DB7YV8T6RNXH1JRNTGDN=setting-up-spotify h_01HJS1DB7YKBY0Q7GY7QT9DHKZ=important h_01HJS1DB7YQKM7DRR0MJGHX95G=integration-tab h_01HJS1DB7YEQZ7JQ0T2NWFBQBM=general-settings h_01HJS1DB7YHN0PCMFWQ9SZKE27=attribution-link-tab h_01HJS1DB7ZVSQCYJZENWJ9G77H=cost-tab h_01HJS1DB7Z03PTQSQB0JVJEFY0=ad-revenue-tab h_01HJS1DB7Z6CBDQFVNC75X2Z6Z=permissions-tab h_01HJS1DB7ZPZET71JAZ8E4CZ7S=important-1" />

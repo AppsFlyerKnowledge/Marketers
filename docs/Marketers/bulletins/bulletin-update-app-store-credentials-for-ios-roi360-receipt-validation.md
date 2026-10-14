@@ -20,10 +20,11 @@ x-zendesk:
   promoted: false
   comments_disabled: false
   created_at: '2024-08-28T09:24:00Z'
-  edited_at: '2026-07-06T10:17:56Z'
+  edited_at: '2026-10-14T08:08:41Z'
 ---
-| **What's new** | AppsFlyer will transition the ROI360 iOS validation flow to Apple's new in-app purchase validation APIs, as the current API is deprecated by Apple.  <br />To ensure your iOS revenue data continues to be validated accurately and in real-time, you’ll need to update your App Store credentials in the AppsFlyer platform.  <br />If your app still uses Apple Server Notifications Version 1, you’ll also be required to switch to Version 2 notifications before updating credentials. |
+| Section | Details |
 | --- | --- |
+| **What's new** | AppsFlyer will transition the ROI360 iOS validation flow to Apple's new in-app purchase validation APIs, as the current API is deprecated by Apple.  <br />To ensure your iOS revenue data continues to be validated accurately and in real-time, you’ll need to update your App Store credentials in the AppsFlyer platform.  <br />If your app still uses Apple Server Notifications Version 1, you’ll also be required to switch to Version 2 notifications before updating credentials. |
 | **Update date** | 02/04/2025 |
 | **What you need to know** | This change affects apps using ROI360 for iOS in-app purchase and subscription revenue validation.<br />By upgrading to the new iOS validation flow, you’ll benefit from:<ul><li>Enhanced real-time validation with the Apple Store using new Apple endpoints.</li><li>No changes to in-app event structure or parameters.</li><li>Updated validation result responses in the AppsFlyer Purchase SDK Connector, including a new `store_status` code for failed validations.</li><li>No changes to your SDK implementation are required.</li></ul>**Note:** StoreKit 2-based receipt validation is only supported with the new App Store credentials. Make sure to complete the update if your app uses StoreKit 2 to ensure continued validation.<br /><br />Apple may sunset the old API at any time, so we strongly recommend updating your credentials to stay ahead of any potential disruptions. |
 | **What you need to do** | To complete the setup:<ol><li>Generate In-App Purchase Key from App Store Connect.</li><li>Upload the new key in the Revenue Settings section of the AppsFlyer platform.</li></ol>If your app is using Apple Server Notifications Version 1, you must switch to Version 2 before updating your credentials. You’ll see a message in the Revenue Settings page if this applies to your app as prerequisite.<br /><br />Follow the detailed instructions below:<ul><li>[Update the App Store credentials for ROI360 iOS receipt validation](#get-ios-credentials)</li><li>[Set up Version 2 of Apple Server Notifications](#send-app-store-notifications-directly-to-appsflyer)</li></ul> |
@@ -87,3 +88,5 @@ The required credentials for the iOS In-App Purchase API integration are:
 14. Click **Update keys**. Once the keys are updated, your app will be fully transitioned to Apple’s new iOS validation flow.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01JP2XAKZABDJYB9ZQS4N3ST4Z=send-app-store-notifications-directly-to-appsflyer h_01J14M3C6WNXPJJQHVWVNFB4GS=get-ios-credentials" />

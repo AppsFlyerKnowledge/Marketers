@@ -85,6 +85,8 @@ When the user completes the signup process
 
 </Accordion>
 
+<div id="content-view-af_content_view" />
+
 <Accordion title="Content view (af_content_view)">
 
 **Purpose**
@@ -109,6 +111,8 @@ When the user views a specific product details page
 | af\_currency | Currency in the product details page | THB, USD |
 
 </Accordion>
+
+<div id="list-view-af_list_view" />
 
 <Accordion title="List view (af_list_view)">
 
@@ -161,6 +165,8 @@ When the user lands on the thank you page after a successful purchase
 
 The following section provides an event structure that includes a custom event name and the suggested event parameter to use. Note that in-app events can include any event parameters that meet your business needs.
 
+<div id="select-package-select_package" />
+
 <Accordion title="Select package (select_package)">
 
 **Purpose**
@@ -179,6 +185,8 @@ When the user selects a package but has not completed the payment
 | af\_content\_type | Type of content the user selected | Data 5 GB |
 
 </Accordion>
+
+<div id="topup-success-top_up_success" />
 
 <Accordion title="Top-up success (top_up_success)">
 
@@ -200,6 +208,8 @@ When the user completes the top-up
 
 </Accordion>
 
+<div id="topup-unsuccessful-top_up_unsuccessful" />
+
 <Accordion title="Top-up unsuccessful (top_up_unsuccessful)">
 
 **Purpose**
@@ -217,6 +227,8 @@ When the user tries to top up but the action fails
 | error\_reason | Reason for the top-up failure | exceeded\_daily\_limit |
 
 </Accordion>
+
+<div id="subscription-complete-subscription_complete" />
 
 <Accordion title="Subscription complete (subscription_complete)">
 
@@ -241,3 +253,5 @@ Recording this event can help you:
 | [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Amount of the subscription | 555.50 |
 
 </Accordion>
+
+<div data-zendesk-anchors="telecommunication=-telecommunication h_01HGTAGFNFWKWYHPG6F5EK17YD=-telecommunication h_01HGTAGFNG1Z8NAFJ71DP0YSYD=important h_01HGTAGFNG99PQC03F13WQ4CVK=recommended-structures-for-predefined-events h_01HGTAGFNGQ56C8CN7A325SQ7M=login-af_login h_01HGTAGFNG1W5QWGN1D969JHGY=complete-registration-af_complete_registration h_01HGTAGFNGRJHD89332473DZFE=content-view-af_content_view h_01HGTAGFNG10GNZVMDNXRJSYJ9=list-view-af_list_view h_01HGTAGFNGV82NQSZ29B96YJCQ=purchase-af_purchase h_01HGTAGFNG3A2A6KCX8GGQAJBX=recommended-structures-for-custom-events h_01HGTAGFNGE3MKZEDKDZ0B9XDD=select-package-select_package h_01HGTAGFNGFSE2DAYRGG039GT9=topup-success-top_up_success h_01HGTAGFNGXBBYWJEMBVMN1YQS=topup-unsuccessful-top_up_unsuccessful h_01HGTAGFNGT3CJFRS2YC7R57KG=subscription-complete-subscription_complete" />

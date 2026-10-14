@@ -36,6 +36,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -88,6 +90,8 @@ In this section you can map which of your AppsFlyer events to send to AppLovin v
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -96,6 +100,8 @@ Generate and save attribution links and send them to the partner for attributing
 **To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -133,6 +139,8 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant AppLovin. Note that even if attribution is disabled for AppLovin, the permissions tab is active and you can grant control to AppLovin.
@@ -152,3 +160,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW93TKBNYVC05MA5GB37JVH=setting-up-applovin h_01HKW93TKCPCFYD6HV2XH1QTHS=integration-tab h_01HKW93TKCG5JCQK52QJ65483M=activate-partner h_01HKW93TKC2XGTZ7WAQ2E2AGPD=note h_01HKW93TKCZCK6GB7M4VV5C1NB=general-settings h_01HKW93TKCCRB21JAFDA2GWH6F=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW93TKCVWKTM9C8J220Q41E=in-app-events-settings h_01HKW93TKCCXVQMBCGW02J7JK4=attribution-link-tab h_01HKW93TKCXMG7BHMEWRFSCM6N=cost-tab h_01J43V7Z67C98TG7CE2QQGVVWE=applovin-billable-cost h_01HKW93TKDDWXA2C7456E8Q8GG=ad-revenue-tab h_01HKW93TKD8Z0QQADBJWMBP962=note-1 h_01HKW93TKDBCXNA68YVMQVBVP0=permissions-tab h_01HKW93TKD21RF42KMNA9J9WXF=ad-network-permissions" />

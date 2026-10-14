@@ -24,7 +24,7 @@ x-zendesk:
 ---
 ## Activation overview
 
-Partner integrations can be either active or inactive. An integration is first activated by turning on the **Activate partner** toggle from the main integration page. There are various integration types. An integration can also be considered active if any other [integration type](#integration-types) (see table below) is turned on, even while the **Activate partner** toggle is turned off.
+Partner integrations can be either active or inactive. An integration is first activated by turning on the **Activate partner** toggle from the main integration page. There are various integration types. An integration can also be considered active if any other [integration type](#id) (see table below) is turned on, even while the **Activate partner** toggle is turned off.
 
 > 📘 **Important!**
 >
@@ -36,7 +36,7 @@ Partner integrations can be either active or inactive. An integration is first a
 
 The sections below describe the various integration types and the impact of partner activation settings on integrations:
 
-<div id="integration-types" />
+<div id="id" />
 
 <Accordion title="Integration types">
 
@@ -51,6 +51,8 @@ The primary integration (**Activate partner**) is activated on the first integra
 | [**Permissions**](/docs/set-up-an-integrated-partner#permissions-tab) | Enables granting permissions for ad networks and agencies to access your data and perform actions in your integration |
 
 </Accordion>
+
+<div id="effect-of-the-partner-activation-setting" />
 
 <Accordion title="Effect of the partner activation setting">
 
@@ -70,7 +72,7 @@ The following table presents the impact of partner activation settings on attrib
 3. From the **Integration**tab, turn on **Activate partner**.
 4. Click **Save Integration**.
 
-See [other integration types](#integration-types).
+See [other integration types](#id).
 
 > 📘 **Caution**
 >
@@ -87,15 +89,15 @@ Partner integrations can be activated by marketers and agencies in accordance wi
 
 ## Deactivate a partner integration
 
-You can deactivate a partner integration of your app by turning off the **Activate partner** toggle. This means partners don't get conversion attribution and postbacks aren't sent to them. However, if any of the other [integration types](#integration-types) are still activated, they continue to operate even after the **Activate partner** toggle is deactivated. This means that the **integration is still Active** and data may still be collected.
+You can deactivate a partner integration of your app by turning off the **Activate partner** toggle. This means partners don't get conversion attribution and postbacks aren't sent to them. However, if any of the other [integration types](#id) are still activated, they continue to operate even after the **Activate partner** toggle is deactivated. This means that the **integration is still Active** and data may still be collected.
 
-**To deactivate a partner integration:**
+<span id="deactivating-a-partner"></span>**To deactivate a partner integration:**
 
 1. In AppsFlyer, from the side menu, select **Collaborate > Partner Integrations > Active integrations** tab.
 2. Search for the partner and select it. You’re directed to the integration setup page.
 3. From the **Integration**tab, turn off **Activate partner**.
 4. Click **Save Integration**.
-5. To completely deactivate the partner from all [other integration types](#integration-types), go through each of the tabs on the integration page and disable them.  
+5. To completely deactivate the partner from all [other integration types](#id), go through each of the tabs on the integration page and disable them.  
    **Note:** For Google and Meta ads, to stop recording SKAN data, go to the SKAN tab and delete the connection.
 6. Click **Save Integration**.
 7. [Optional] After saving the integration, while remaining on the configuration page, you can **deactivate the partner from other apps:**
@@ -159,3 +161,5 @@ The following examples describe what happens to traffic that continues to be sen
 > **Agency campaign with an SRN (attribution link partner)**
 >
 > The traffic is attributed to the SRN on the marketer's dashboard, but not attributed to the agency.
+
+<div data-zendesk-anchors="overview=activation-overview h_01HRA982WC3519NMGXV5WEY1AZ=activation-overview 01JDM949M75Q3BAG6M65DYMHZT=important %20id%3D=id integration-types=id h_01HRAERWRJ2SBRY9XQG983WP5M=effect-of-the-partner-activation-setting activating-a-partner=activate-a-partner-integration h_01HJR1D6THJ9TNGZZV78SEVBZN=activate-a-partner-integration h_01HJR1D6THSEA65CY71VWJYX1P=caution who-can-activate-partners=who-can-activate-an-integration h_01HJR1D6THRMF854SCSFVZFWM9=who-can-activate-an-integration deactivated-partners=deactivate-a-partner-integration h_01HJR1D6THE2QWSF971VQFXCBX=deactivate-a-partner-integration h_01HJR1D6THS60X7VTDN2X6FT0K=deactivating-a-partner partner-and-agency-dashboards=partner-and-agency-access-to-dashboards h_01HJR1D6THB0N1C8XCC5YAMQQ3=partner-and-agency-access-to-dashboards h_01HJR1D6TJ6D3TV2PCFWP4SEAR=partner-visibility h_01HJR1D6TJ9PHVG6GGQ2Z1KJRQ=agency-permissions h_01HJR1D6TJ9T55PSPBRNW1XXS7=note h_01HJR1D6TJ1ABQM6HCPK277R0Z=disabled-agency-permissions h_01HJR1D6TJBT0D3G2KWKFKEW5S=example-1 h_01HJR1D6TJTXF49JP3VJE6ZYC9=example-2" />

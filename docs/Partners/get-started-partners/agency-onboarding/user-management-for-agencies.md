@@ -120,14 +120,17 @@ Click on the name of any role in the left panel to see:
 3. Enter the user’s email address (required):
    * Can include letters, numbers, apostrophes ('), ampersands (&), dollar signs ($), hash symbols (#), hyphens (-), underscores (\_), and periods (.)
    * Two consecutive periods (..) and other special characters are not allowed.
-   * Must end with a valid email domain.<br /><br />**Note**<br />#### Important!
+   * Must end with a valid email domain.
 
-   A user’s email address is what identifies them in the AppsFlyer platform, meaning:
+     > 📘 **Important!**
+     >
+     > A user’s email address is what identifies them in the AppsFlyer platform, meaning:
+     >
+     > * It cannot later be changed without deleting and recreating the user.
+     > * It must be a valid email address at which the user can receive email.
+     > * It cannot be associated with another user in any AppsFlyer account.
+     > * If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](/docs/user-management-for-agencies#troubleshooting-can-t-create-this-user) to resolve this issue.
 
-   * It cannot later be changed without deleting and recreating the user.
-   * It must be a valid email address at which the user can receive email.
-   * It cannot be associated with another user in any AppsFlyer account.
-     * If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](/docs/user-management-for-agencies#troubleshooting-can-t-create-this-user) to resolve this issue.
 4. Select the user’s department (optional).
 5. Select the user’s role (required).
 6. Select the apps the user can access:
@@ -297,8 +300,12 @@ If a new user did not receive their [account activation invitation](/docs/user-m
 
 </Accordion>
 
+<div id="resetting-twofactor-authentication-2fa" />
+
 <Accordion title="Resetting two-factor authentication (2FA) of a user">
 
 For accounts using a 2FA, there may be occasions on which you need to reset a user’s 2FA. See [here](/docs/implementing-and-using-2fa-login#reset) how to do this.
 
 </Accordion>
+
+<div data-zendesk-anchors="background=user-roles-and-access-permissions h_01HC72J0H988V27YCTWPFGF7EP=user-roles-and-access-permissions h_01HC72J0H98447W34RD0ND2MC0=predefined-roles h_01HC72J0H9RVA83J9F5QN4YS79=predefined-roles-hash h_01HC72J0H9Y54Q2Y6AGP6H1DG0=example temp-roles%E2%80%94an-exception-to-the-rule=temp-rolesan-exception-to-the-rule h_01HC72J0H9NXMKJN64C73ZXZN1=temp-rolesan-exception-to-the-rule admin%E2%80%94a-special-role=admina-special-role h_01HC72J0HANGXV4GVJCQ5X2T84=admina-special-role h_01HC72J0HA5RFZE1G0KNKR30KV=account-owner-hash h_01HC72J0HANQ3Z6FCWXA0TF3TN=user-management-page h_01HC72J0HAFBMYM792GXMCEY3T=users-tab h_01HC72J0HAXC2NAVQC4J2PMB0Z=roles-tab h_01HC72J0HATN656W4B9DT82M60=creating-a-user h_01HC72J0HAP1GDH8JKGMT6XH67=important h_01HC72J0HA3QJ2CH8TGEMJBY3A=account-activation-hash h_01HC72J0HAG2XF42NSYRZDEKVN=editing-users h_01HC72J0HAF739MQPF482T0WVA=individual-editing multiuser-editing=multi-user-editing h_01HC72J0HA3BKXJCAVRQ5SJYYE=multi-user-editing h_01HC72J0HAZM2NBXN5ZHZET4BS=note h_01HC72J0HAE70AMWSDP5BXGWK9=example-1 h_01HC72J0HAQFD33VT0ARRWG0ZF=deleting-users h_01HC72J0HAF5QFC5ZR7EHFMBM6=special-situations-and-additional-procedures h_01HC72J0HAD8JXPPFET4N2P3EK=managing-temp-roles h_01HC72J0HA8PP79VV1F03E5AXV=temp-role-limitations h_01HC72J0HAJES0N195DZ797C4V=example-2 h_01HC72J0HAVXK83AK99NQVDT8T=changing-the-account-owner h_01HC72J0HANXBK4T1SD6V2KHE4=important-1 1%E2%80%93send-an-email-request=1send-your-request-via-the-chat-widget h_01HC72J0HAJ3C8WJ767KG2307C=1send-your-request-via-the-chat-widget 2%E2%80%93next-steps=2next-steps h_01HC72J0HAM13NY9EKNKG8R1CA=2next-steps troubleshooting-can%E2%80%99t-create-this-user=troubleshooting-can-t-create-this-user h_01HC72J0HAWRBVWGVT12W6M711=troubleshooting-can-t-create-this-user h_01HC72J0HANPD39FRCWSPMRY5D=resending-a-user-invitation h_01HC72J0HARYRSXHKX41A41MPG=resetting-twofactor-authentication-2fa" />

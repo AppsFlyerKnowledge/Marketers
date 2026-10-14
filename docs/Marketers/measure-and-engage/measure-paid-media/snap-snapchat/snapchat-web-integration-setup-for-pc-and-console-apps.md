@@ -50,6 +50,8 @@ In this part of the setup, you can also set up postbacks to Snapchat Ads web via
 
 The integration with Snapchat Ads web only supports sending postbacks for installs and in-app events.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The **Integration** tab comprises several sections, as described below.
@@ -107,6 +109,8 @@ Configure the mapping of in-app event postbacks that are sent to Snapchat Ads we
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generating an attribution link in the AppsFlyer UI isn't currently available. You can use a cross-platform landing page with SmartScript, or you can create a direct attribution link for your app. See the table below.
@@ -118,17 +122,23 @@ Generating an attribution link in the AppsFlyer UI isn't currently available. Yo
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost isn't available for Snapchat Ads web.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue isn't available for Snapchat Ads web.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -168,3 +178,5 @@ All Snapchat web-to-app attributions appear under `snapchat_int` in the Overview
 | Trait | Description |
 | --- | --- |
 | Clicks and impressions (Temporary limitation) | Clicks and impressions for campaigns targeting PC & Console apps are temporarily not available from Snapchat SRN. |
+
+<div data-zendesk-anchors="h_01KB58BEK73PMXZXB8RA59YHM2=warning h_01KB58BEK78P4C35JYZXKJFPHW=overview h_01KB58BEK77YP1T2XCHZJ00V7S=prerequisite h_01KB58BEK7A3MJT4C9ZA9ZFGDA=activating-partner-in-appsflyer h_01KB58BEK7CGYB1DZJCG2WMH0Y=setting-up-snapchat-ads-web-in-appsflyer h_01KB58BEK7SE837F67MKRFY6K2=integration-tab h_01KB58BEK74Q2K3SNCPFQSCJ2B=attribution-link-tab h_01KB58BEK7WAVABV4YBR728FCF=cost-tab h_01KB58BEK7ESEZFARRQ3HB6P8H=ad-revenue-tab h_01KB58BEK7WXEFMSSB0QRE4E6B=permissions-tab h_01KB58BEK7D8760J2ZWJ9B1K3Y=setting-up-campaigns-in-snapchat-ads-web-for-pc-and-console-apps view-webtoapp-attribution-data=view-web-to-app-attribution-data h_01KB58BEK7M96WYN7YMERH7CWW=view-web-to-app-attribution-data h_01KB58BEK70FB5SYQAV938CB5W=view-in-the-dashboard h_01KB58BEK7YWM10A7RCNV7YDEM=view-in-raw-data-and-api-reports h_01KB58BEK7MDZGT7G7RQ9VK9MZ=traits-and-limitations" />

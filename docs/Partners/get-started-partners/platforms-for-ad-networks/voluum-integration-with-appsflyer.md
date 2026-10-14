@@ -80,3 +80,5 @@ https://{Company-Domain}.trackvoluum.com/postback?cid={clickid}&payout={monetary
 
 * If you have an integration with AppsFlyer, contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
 * If you don't have an integration with AppsFlyer, complete the ad Partners Registration application [here](https://www.appsflyer.com/partners-registration/).
+
+<div data-zendesk-anchors="01JFT0VZZ5KVMKYRD222JT55NH=starting-the-integration 01JFT0VZZ7B1RRY82B65GWF4P7=complete-attribution-link-template install-and-inapp-event-postbacks=install-and-in-app-event-postbacks 01JFT0VZZ86KYXSVE1QBD2V0HF=install-and-in-app-event-postbacks appsflyers-inapp-event-dashboard=appsflyers-in-app-event-dashboard 01JFT0VZZ9A4JWG38KPH0CNQ72=appsflyers-in-app-event-dashboard 01JFT0VZZATFYY75QPCPKZF3S6=finalizing-your-registration" />

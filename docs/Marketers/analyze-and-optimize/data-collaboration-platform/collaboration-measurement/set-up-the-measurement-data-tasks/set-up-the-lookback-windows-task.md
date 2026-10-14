@@ -72,3 +72,5 @@ If you are running an off-site campaign with Google Ads, the Lookback windows ta
 1. In the **Lookback windows** dialog, scroll to the ![Google-ads.png](https://files.readme.io/afa0e2cd15ea4214eba625da397dccd04118b564450c59993fd0e668c31f023b-38392832994321.png) **Google Ads** pane.
 2. Click the **arrow icon** to open the relevant Conversion Action settings page on the Google Ads platform.
 3. Update the lookback window settings as needed within Google Ads.
+
+<div data-zendesk-anchors="h_01K3G9Q0G79BDATM6T80T6F6TX=set-lookback-windows h_01K3G9Q0G7XSM1VS4VF9VCTWD0=prerequisites h_01K3G9Q0G7FM4MMR6CVWM4ATRA=open-the-lookback-windows-task h_01K3G9Q0G7DQRCX9FH9Q3N17N3=note h_01K3G9Q0G7X7FY6C0H4DQYSP3F=set-the-collaboration-lookback-window h_01K3G9Q0G71ADFQ9QHBXJBTEAA=set-the-meta-ads-lookback-window h_01K3G9Q0G7HEFS65XA6YD0V6YD=google-ads-lookback-window" />

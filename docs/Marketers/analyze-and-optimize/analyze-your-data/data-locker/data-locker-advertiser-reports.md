@@ -20,7 +20,7 @@ x-zendesk:
   promoted: false
   comments_disabled: true
   created_at: '2021-11-11T09:48:51Z'
-  edited_at: '2026-05-01T12:12:32Z'
+  edited_at: '2026-10-14T12:22:43Z'
 ---
 ## Reports available via Data Locker for advertisers
 
@@ -86,6 +86,8 @@ See [about Protect360 reports](/docs/protect360-raw-data-reports)
 
 </Accordion>
 
+<div id="peoplebased-attribution" />
+
 <Accordion title="People-Based Attribution">
 
 **Data freshness**
@@ -106,11 +108,15 @@ Daily available 10-12 hours after the end of the previous day UTC. For example, 
 
 </Accordion>
 
+<div id="incrementality" />
+
 <Accordion title="Incrementality">
 
 See [Incrementality reports](/docs/incrementality-for-remarketing-overview#available-reports)
 
 </Accordion>
+
+<div id="skan" />
 
 <Accordion title="SKAN">
 
@@ -132,6 +138,8 @@ About [SKAN raw data reports](/docs/skan-raw-data-reports)
 
 </Accordion>
 
+<div id="ad-revenue" />
+
 <Accordion title="Revenue">
 
 See [Revenue ETL Data Locker reports](/docs/revenue-etl-reports)
@@ -139,6 +147,8 @@ See [Revenue ETL Data Locker reports](/docs/revenue-etl-reports)
 See [ad revenue raw data](/docs/roi360-guide-ad-revenue-attribution#ad-revenue-raw-data)
 
 </Accordion>
+
+<div id="ctv" />
 
 <Accordion title="CTV, PC, and console platform data">
 
@@ -151,6 +161,8 @@ See [CTV, PC, and console platform data via Data Locker](/docs/ctv-pc-and-consol
 Advanced Reports introduce a new generation of raw data reports designed to provide structured, validated, and **AI-ready datasets**. They enable the ingestion and analysis of the **entire user journey, from the first engagement to conversion and post-install activity, using just three reports**.  
 Built with **typed fields**, **refined field naming**, and a consistent schema across all datasets, these reports ensure clarity, accuracy, and ease of use. The unified structure simplifies joins between datasets, **reduces ETL and downstream processing complexity**, and delivers data that supports advanced analytics and gives you the flexibility to work with your data however you need. For more information, see [About Data Locker Advanced Reports](/docs/about-data-locker-advanced-reports).
 
+<div id="advanced-reports" />
+
 <Accordion title="Raw engagements report">
 
 The Raw engagements report consolidates click and impression data across user acquisition and retargeting activities from both mobile and connected TV (CTV) platforms. By providing a unified view of user interactions with your ads, this report enables in-depth analysis of top-of-funnel performance and helps marketers identify which creatives and channels drive meaningful engagement. It also supports cost and reach optimization at the engagement level, providing a solid foundation for evaluating marketing exposure and traffic quality. For more information, see [Raw engagements report](/docs/about-data-locker-advanced-reports#engagements) in About Data Locker Advanced Reports.
@@ -160,6 +172,8 @@ The Raw engagements report consolidates click and impression data across user ac
 | User acquisition and retargeting | Clicks and impressions | 1–3 hours | ✅ |
 
 </Accordion>
+
+<div id="conversion-report" />
 
 <Accordion title="Conversion report">
 
@@ -175,6 +189,8 @@ The Conversions report provides a comprehensive view of all app installations, i
 > * For extended platform apps, including CTV, PC, and console, retargeting conversion events are not included.
 
 </Accordion>
+
+<div id="h_01K9CROSSPLATFORMREPORT" />
 
 <Accordion title="End-user events report">
 
@@ -192,6 +208,8 @@ The End User Events report captures detailed in-app event data, including sessio
 
 ## Aggregated reports
 
+<div id="cohort-analytics" />
+
 <Accordion title="Cohort analytics">
 
 **Data freshness**
@@ -206,14 +224,20 @@ The reports are typically available by 12:00 UTC in the folder of the preceding 
 
 </Accordion>
 
+<div id="advanced-aggregated-reports" />
+
 <Accordion title="Advanced aggregated reports">
 
 Advanced aggregated reports in Data Locker contain aggregated data with optimal data freshness, accuracy, granularity, and unlimited volume. [Learn more](/docs/advanced-aggregated-reports-in-data-locker)
 
 </Accordion>
 
+<div id="creative-optimization-etl" />
+
 <Accordion title="Creative Optimization ETL">
 
 Creative Optimization ETL reports equip your data analysts with all the information they need for creative performance analysis. Full asset-level performance reporting is provided, including all key performance indicators (KPIs), upper and lower funnel KPIs, attribution data, and creative asset data. [Learn more](/docs/creative-optimization-etl-reporting)
 
 </Accordion>
+
+<div data-zendesk-anchors="01H7WFZN6P1S49NYX8Q0W55P0B=reports-available-via-data-locker-for-advertisers 01H7WFZN6PQWASTMXM9V72QZER=data-freshness-explanations 01H7WFZN6P94YW1V79NT3HV5G4=raw-data-reports 01H7WFZN6PD75S557PDB5PSFFR=user-journey 01H7WFZN6QY2GV69N464EE196M=protect360 01H7WFZN6QW72FDBTMW2ZD7NZQ=peoplebased-attribution 01H7WFZN6QZ1B7BS6E59RVAF30=incrementality 01H7WFZN6Q0P99DCFA7MZQTVSX=skan 01H7WFZN6Q717F9Z1HG38JVBG3=ad-revenue 01H7WFZN6QMJGSAJR00MHYJB6Z=ctv Unified%20raw-data-reports=advanced-raw-data-reports-beta h_01JX9T0PGE93JNJ3S4NDP0C2YW=advanced-raw-data-reports-beta h_01K85EE8DA4E8D4SVHYV2PE42E=conversion-report h_01K85EE8DAWY52B7RJQ33MJ59B=note cross-platform-end-user-events-report=h_01K9CROSSPLATFORMREPORT h_01KMD3WY9MQABBWFCTJYVWG66S=note-1 01H7WFZN6Q90AT8N0VY5PKQ407=aggregated-reports 01H7WFZN6QNKXTRM7G6VFANSZ7=cohort-analytics h_01J0K1MEKEEAQBXF1YRZTG8V0X=advanced-aggregated-reports h_01J0TQ88VNSFZJ27T3E2P3MVE6=creative-optimization-etl" />

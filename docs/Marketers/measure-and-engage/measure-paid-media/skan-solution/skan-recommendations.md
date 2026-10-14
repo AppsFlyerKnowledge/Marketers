@@ -38,6 +38,8 @@ AppsFlyer SKAN recommendations:
 
 ## Recommendations
 
+<div id="revenue" />
+
 <Accordion title="Revenue">
 
 #### **Understanding revenue recommendations**
@@ -84,3 +86,5 @@ The recommendations:
    * If you then change anything in your revenue configuration, you can recheck your configuration and view new recommendations.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HGSZ05CH4P8BQT23VYH6DKVP=overview h_01HGSZ05CHPZKWKY7MR6MA68YZ=recommendations h_01HGSZ05CH2RG3514N576ZGDFM=revenue h_01HGSZ05CHC93SHP28DN9EK27N=understanding-revenue-recommendations h_01HGSZ05CH5DVKAQ24EED16JRN=revenue-recommendations-layout h_01HGSZ05CJ4W0V3Y4XBWRMFW8K=using-revenue-recommendations h_01HGSZCYCWRYEJPWZKDBC9SX8H=note" />

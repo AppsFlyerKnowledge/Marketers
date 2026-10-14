@@ -164,35 +164,37 @@ If you’re an Incrementality subscriber who created your audience after January
 * In AppsFlyer, from the side menu, select **Optimize** > **Incrementality**.
 * From the **Incrementality experiments** page, click the **New experiment** button.
 * Follow the steps in the wizard to create the experiment. Detailed instructions are provided as you go through each step.
-  <br /><br />**Note**<br />#### Notes
 
-  **Wizard step 2** **–** **Audience setup**
+  > 📘 **Notes**
+  >
+  > **Wizard step 2** **–** **Audience setup**
+  >
+  > [![](https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png)](https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png)
+  >
+  > In step 2 of the wizard, you are asked to select the **date from which audience members should be included in the experiment.**
+  >
+  > By default, this is the date on which the audience was initially split with a control group. To ensure accurate experiment results, you should change this date if either of the following situations applies:
+  >
+  > * If you've made changes to the definition of the selected audience ([audience segmentation rulesets](/docs/audiences-guide#all-about-rulesets), [user identifier](/docs/audiences-guide#user-identifier-device-id-vs-customer-id), etc.) → change this date to match the last date on which these audience definition changes were made.
+  > * If you're testing a new campaign on a pre-existing audience → change this date to the date on which you launched the new campaign.
+  >
+  > **Wizard step 3 – Set targets**
+  >
+  > ![Step_3_Set_targets.jpg](https://files.readme.io/9c58ad61463b1751f5ad8b2c5235d6d61b13baa156db56d5edeb156debbcfeaa-30780522104081.jpg)
+  >
+  > Here's where to select the target app and KPIs.
+  >
+  > **Note:** All other KPIs will be available at the end of the experiment, even if not selected.
+  >
+  > **Wizard step 4** **–** **Review**
+  >
+  > [![](https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png)](https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png)
+  >
+  > In step 4 of the wizard, you are asked to set the **experiment period.**
+  >
+  > * By default, an experiment is set to run for 30 days from the time it is created. This is the minimum recommended period for running an experiment.
+  > * Select the **Continue experiment indefinitely** option if you wish to let the experiment continue running until you actively choose to end it.
 
-  [![](https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png)](https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png)
-
-  In step 2 of the wizard, you are asked to select the **date from which audience members should be included in the experiment.**
-
-  By default, this is the date on which the audience was initially split with a control group. To ensure accurate experiment results, you should change this date if either of the following situations applies:
-
-  * If you've made changes to the definition of the selected audience ([audience segmentation rulesets](/docs/audiences-guide#all-about-rulesets), [user identifier](/docs/audiences-guide#user-identifier-device-id-vs-customer-id), etc.) → change this date to match the last date on which these audience definition changes were made.
-  * If you're testing a new campaign on a pre-existing audience → change this date to the date on which you launched the new campaign.
-
-  **Wizard step 3 – Set targets**
-
-  ![Step_3_Set_targets.jpg](https://files.readme.io/9c58ad61463b1751f5ad8b2c5235d6d61b13baa156db56d5edeb156debbcfeaa-30780522104081.jpg)
-
-  Here's where to select the target app and KPIs.
-
-  **Note:** All other KPIs will be available at the end of the experiment, even if not selected.
-
-  **Wizard step 4** **–** **Review**
-
-  [![](https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png)](https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png)
-
-  In step 4 of the wizard, you are asked to set the **experiment period.**
-
-  * By default, an experiment is set to run for 30 days from the time it is created. This is the minimum recommended period for running an experiment.
-  * Select the **Continue experiment indefinitely** option if you wish to let the experiment continue running until you actively choose to end it.
 
 </Accordion>
 
@@ -209,3 +211,5 @@ Initial experiment results are available on the [Incrementality dashboard](/docs
 > 📘 **See also**
 >
 > * [Audiences guide](/docs/audiences-guide)
+
+<div data-zendesk-anchors="overview=about-the-experiment h_01HARVCSMM80QXXXKJC8TX7CKC=about-the-experiment h_01HARVCSMMYJVN6GJ3TB46P8AC=get-started h_01HARVCSMMMAJ6VTYHZ2ZJ5HNS=set-up-the-experiment h_01HARVCSMM9P2HN5WA9C16PA5E=know-your-test-objectives h_01HARVCSMM2THH54JH58GM1K57=example h_01HARVCSMM77RV7NM9K7D5FJM5=create-the-target-audience-and-split-groups h_01HARVCSMMXNE4NCWSQZ9SHK1J=check-for-audience-expansion-features h_01HARVCSMMH11D6RKDZQZ3WVZ6=launch-the-campaign-and-experiment h_01HARVCSMMVXJWCT2BX3CVC3VT=1-configure-campaigns-on-ad-networks 2-link-campaigns-to-experiment=2-ensure-the-correct-campaign-is-linked-to-the-experiment h_01HARVCSMNAWNYEY83NC6Y5XV4=2-ensure-the-correct-campaign-is-linked-to-the-experiment h_01HARVCSMNZVWK8Z36ER1HH10W=manually-create-an-experiment h_01HARVCSMN5944HRD9N7YEKT3P=notes h_01HARVCSMNS961WKFX280J3R2X=analyze-the-results h_01HE7RBMSE1RHVSJC7B7FZG8SJ=see-also" />

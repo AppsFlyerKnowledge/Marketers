@@ -52,10 +52,10 @@ There are various types of tokens for different purposes. By default, an API tok
 
 | Token type | Intended use |
 | --- | --- |
-| API token | A JWT token (JSON Web Token) used to authorize API calls, such as Pull API, Cohort API, ROI API, and others. |
-| [OneLink API](/docs/use-onelink-api-to-create-links-in-large-scale-campaigns) (premium) | A unique token used for OneLink API, which generates personalized links for optimal user engagement in large-scale campaigns. |
-| S2S token | Used for sending data using server-to-server calls. |
-| MCP token | Used to authenticate third-party or self-hosted systems with the AppsFlyer MCP. |
+| <span id="api-token"></span>API token | A JWT token (JSON Web Token) used to authorize API calls, such as Pull API, Cohort API, ROI API, and others. |
+| <span id="onelink-api-premium"></span>[OneLink API](/docs/use-onelink-api-to-create-links-in-large-scale-campaigns) (premium) | A unique token used for OneLink API, which generates personalized links for optimal user engagement in large-scale campaigns. |
+| <span id="s2s-token"></span>S2S token | Used for sending data using server-to-server calls. |
+| <span id="mcp-token"></span>MCP token | Used to authenticate third-party or self-hosted systems with the AppsFlyer MCP. |
 
 > 📘 **Note**
 >
@@ -159,3 +159,5 @@ Use cases for advertisers using the OneLink API token:
 ## Applications for the MCP token
 
 See the [AppsFlyer MCP article](/docs/beta-appsflyer-mcp) to see available use cases for MCP tokens.
+
+<div data-zendesk-anchors="01HFNX0XS4RAB543NKR12B2W50=important overview=about-appsflyer-tokens h_01HFY5D0E1H66CEB3KMJQEXV4K=about-appsflyer-tokens h_01HFTT570KF3XM9MBSFYRDYN9S=reaching-the-tokens-page h_01HFBR7KP8BZN7KH0BNJ982WK8=token-types h_01M36NWJZ03NKZVAC2SCTAWBFX=note h_01HFY5D0E1AF4NYPX31W3VJYQC=manage-your-tokens retrieving-api-tokens=retrieve-tokens h_01HBQN3T2HKEMNC8MSR0THYW2S=retrieve-tokens h_01HFY5D0E1FECQC1HN0EXWMXAV=create-a-token h_01HFY5D0E1HJFKFPRT8WVNPHDG=note-1 h_01HFY5D0E2B1KXGSFZR0AYAER5=delete-a-token h_01HFY5D0E2KZYG0J2R7GR1R7W5=warning h_01HG64DMW7PYRXBMZN00EQN991=applications-of-the-api-v2-token v20-token%E2%80%94advertiser-apis=advertiser h_01HBQN7TBASK192P8D7AEWM9P6=advertiser v20-token%E2%80%94ad-network-apis=ad-network h_01HBQN7TBAWAHEQXMYK9V14G0M=ad-network h_01HG64M8K1PPY2Z2406MC78EEN=applications-of-the-s2s-token advertiser=advertiser-1 h_01JSKCVT6ACKHECVJGZ0QVD8C6=advertiser-1 h_01JSKD341C1EKE51Z16MMPG3Ckjh=ad-network-1 ad-network=ad-network-1 h_01KKBYBR8M9ZJWVB3MP1QG4FR4=note-2 h_01JSKCWS5406YQJP3RR9KAXJC9=applications-for-the-onelink-token h_01K9YD2Y9M1C8QDBS5H048XYYD=applications-for-the-mcp-token" />

@@ -204,7 +204,7 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 >
 > You can also configure your in-app event postbacks to send net revenue in place of gross revenue in the standard revenue (monetary) parameter. To get access to this configuration, contact your Customer Success Manager (CSM).
 
-**Example**
+<span id="h_01HBZCRNKGBEDSBZEY87KYQ60G"></span>**Example**
 
 A marketer sends a purchase event with the following `event_value`:
 
@@ -229,7 +229,7 @@ Filter in-app event postbacks using multiple conditions that can be mapped to di
 * Minimizing data
 * Protecting user privacy
 
-**Example**
+<span id="h_01HBZCRNKHRTMHP3JPFVCS8D6N"></span>**Example**
 
 A marketer with a gaming app wants to optimize campaigns running through an ad network, but only for users who pass level 10 or level 50, or for users who spend $3 on in-app purchases.
 
@@ -356,7 +356,9 @@ Marketers can allow agencies to configure in-app event postbacks.
 
 ![Agency event-sharing and revenue permission settings](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
 
-**See also**
+<span id="h_01HDP3XHBPA5GZEVERMBN43JH0"></span>**See also**
 
 * [Rich in-app events, Overview](/docs/in-app-events-overview)
 * [Rich in-app events, Event structure](/docs/in-app-events-event-structure)
+
+<div data-zendesk-anchors="h_01HE0FQ1AB6NQCTKFTDW22SRYC=overview postback-inapp-event-selection=postback-in-app-event-selection h_01HBZCRNKGH1PAK8RC846PPRTS=postback-in-app-event-selection h_01HBZCRNKGQTJ4VJ00TVTS14N2=note inapp-event-postback-window=in-app-event-postback-window h_01HBZCRNKGS71QGK5506N07K84=in-app-event-postback-window h_01K9MBNYC6PPHXSZ3KNVNSDASJ=note-1 h_01HBZCRNKGV5CREN5K0RBDMBH6=default-postback-window h_01HBZCRNKGVXN233AFFHG42NW9=note-2 h_01HBZCRNKG7AECFSBXV2WDD9AR=who-can-configure-postback-windows h_01HBZCRNKG7SZ4T41BY60BAJZN=event-mapping h_01HBZCRNKGT64TE2XYK9VS4ATD=note-3 h_01HBZCRNKG4EF9MSY696SD5VQ9=mapping-methods h_01HBZCVAGPSNDJMWRWENEP45N7=note-4 h_01HBZCRNKG1E63DZRSDWTB8CJN=note-5 h_01HBZCRNKGXJ683VHFTE277ER9=note-6 h_01HBZCRNKG1VN7E6TVCPDW7M73=options-for-sending-postbacks h_01HBZCRNKGESY50NSZGTVPT25M=data-to-include-in-the-postbacks h_01KRKDVVV246YZYGM5G2ZJR63W=note-7 sharing-revenue=share-revenue 01J9Y0T400M5Z62Q9CKF8M75WR=share-revenue h_01KRKDVVV2YF4XMKNCVEG1FFSG=note-8 h_01KRKDVVV242YPHP2W8EWTBSMD=tip conditional-inapp-event-postbacks=conditional-in-app-event-postbacks h_01HBZCRNKG5X3B2NJZZP6ER2CX=conditional-in-app-event-postbacks h_01HBZCRNKHBR57YVHZQP7NJBAP=considerations h_01HBZCRNKHF6TFP0N302D7DCMD=note-9 h_01HBZCRNKHHD3WC4GTJT9NSJ4C=editing-multiple-events h_01HBZCRNKH754PANWSZ4FMXJVQ=custom-events h_01HBZCRNKH4PVR3FEMTMERW3M1=note-10 h_01HBZCRNKH1GCZY17R04WTZ0MQ=event-mapping-by-ad-networks h_01HBZCRNKHHF3E6CZNQQG0Q4VS=event-mapping-by-agencies h_01K5B6QS6YXKMJSEWE2WFT5AQC=note-11" />

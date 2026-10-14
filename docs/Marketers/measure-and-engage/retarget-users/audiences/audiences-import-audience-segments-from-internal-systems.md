@@ -130,8 +130,8 @@ Prepare a CSV file, with the following specifications:
 
 | AppsFlyer consent columns | Google field | Values | Field explained |
 | --- | --- | --- | --- |
-| ad\_personalization\_enabled | ad\_personalization | true/false | Did the user give Google consent to use their data for personalized advertising? |
-| ad\_user\_data\_enabled | ad\_user\_data | true/false | Did the user give consent to send their user data to Google? |
+| <span id="ad_personalization"></span>ad\_personalization\_enabled | ad\_personalization | true/false | Did the user give Google consent to use their data for personalized advertising? |
+| <span id="ad_user_data"></span>ad\_user\_data\_enabled | ad\_user\_data | true/false | Did the user give consent to send their user data to Google? |
 
 If the consent fields are not filled in with values, they will be sent to Google as “Unspecified”, and will not likely be included in the audience on Google's side. Filling in these fields ensures maximum inclusion of users from the [European Economic Area (EEA)](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)) in your Google audiences.
 
@@ -140,7 +140,7 @@ If the consent fields are not filled in with values, they will be sent to Google
 [new-import-android-example.csv](https://support.appsflyer.com/hc/article_attachments/4413851475729)  
 [new-import-ios-example.csv](https://support.appsflyer.com/hc/article_attachments/4413840980497)
 
-**To create and import a new audience using a CSV file:**
+<span id="01ECF4ZD0RB90HZC6ZFNTKMDSG"></span>**To create and import a new audience using a CSV file:**
 
 1. In the AppsFlyer left-side panel, go to **Engage** > **Audiences**.
 2. Click **New audience**.
@@ -275,3 +275,5 @@ The Import Audience API is used to either add or remove devices from an audience
 The [Imported Audience Management API](https://dev.appsflyer.com/hc/reference/overview-2) allows advertisers to create and configure imported audiences, connect imported audiences to partners, upload imported audiences to partners, and more.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HA4M61P4H5AVXQFA5ETABA67=why-import-audiences 01ECF4ZD0QQ5JJNH624D0E9WRF=examples h_01HA4M61P41RSJMKSJ2V9WJH8W=audiences-import-v20 h_01HA4M61P4TEBNF264RNFC57YP=imported-audience-types h_01HA4M61P4NVDJ393HA4V75PQV=important h_01HA4M61P4EEYGJNZ3N2D0KXS5=audience-import-procedures 01ECF4ZD0RHJAQ31NKFCX8QEWW=import-a-csv-file h_01HA4M61P4BJZKN97ZTT8TKRBK=identifier-hash h_01M45CYAAKF4MV0S3Z89NW6PQS=note confirmation-messages=error-messages h_01HA4M61P57TMZRK4XX7ARK896=error-messages h_01HA4M61P5XZR7C20Y5D3XX4K9=use-the-import-audience-api h_01HA4M61P5YGX4QP2PDSVW7D3G=response-codes h_01HA4M61P6CE4RBCVTA3KE15VN=imported-audience-management-api" />

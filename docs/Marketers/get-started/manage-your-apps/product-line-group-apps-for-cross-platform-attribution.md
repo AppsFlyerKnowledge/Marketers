@@ -66,6 +66,8 @@ For a more complete overview of Product Lines, see [User-based cross-platform at
 
 **Note:** Cross-platform re-engagement attribution works on top of cross-platform attribution. Before you can opt in to re-engagement, you must create a Product Line, activate cross-platform attribution, and send events with a valid CUID.To learn how re-engagement attribution works across platforms, see [Cross-platform re-engagement attribution](/docs/beta-user-based-cross-platform-re-engagement-attribution).
 
+<div id="how-to-remove-an-app-from-a-product-line" />
+
 <Accordion title="How to remove an app from a Product Line">
 
 > 📘 **Important!**
@@ -80,6 +82,8 @@ For a more complete overview of Product Lines, see [User-based cross-platform at
 
 </Accordion>
 
+<div id="how-to-add-an-app-to-a-product-line" />
+
 <Accordion title="How to add an app to a Product Line">
 
 1. Go to **My Apps**
@@ -89,6 +93,8 @@ For a more complete overview of Product Lines, see [User-based cross-platform at
 5. Confirm everything is correct in the Product Line window, and then click **Update** at the bottom of the window.
 
 </Accordion>
+
+<div id="how-to-delete-a-product-line" />
 
 <Accordion title="How to delete a Product Line">
 
@@ -124,3 +130,5 @@ It is not recommended to remove an app from a Product Line. When an app is remov
 **Does creating a Product Line have any impact about classic AppsFlyer attribution results?**
 
 No, creating a Product Line does not impact classic AppsFlyer device-level attribution results
+
+<div data-zendesk-anchors="h_01K6CQ3YXD9QGGMM08WJWNKX65=about-product-line h_01K6CQ3YXHBXVHE2V0WATR74T5=how-to-set-up-a-product-line h_01K6CQ3YXHXXYXKKQ3Q7B6N9JQ=prerequisites h_01K6CQ3YXKBMS7NZSH0GSJMTBM=how-to-create-a-product-line h_01K6CQ8MJFXS6WNWE0GPV18NPT=how-to-remove-an-app-from-a-product-line h_01K6CQPY31VW8BS7DR2TSKRPZZ=important h_01K6CQ8MJFRD9R9SNZ84D6QQB4=how-to-add-an-app-to-a-product-line h_01K6CQ8MJF61375RE001YMMS4E=how-to-delete-a-product-line h_01K6CQPY31DB9DKQJEBX1PXDPT=important-1 h_01K6CQ3YXZM5F0DVGTAQNHHN9B=traits-and-limitations h_01K6CQD81T4VNMMNVH0X9SZ1TT=faqs" />

@@ -61,3 +61,5 @@ When working with agencies, you can view the traffic they generated in AppsFlyer
 The **Group By** filter allows you to group data by agency and media source to reflect the agency traffic.
 
 [![transparent-agency-retention.png](https://files.readme.io/8137dbf39a8de019a85028fd98898086318072383c9477f75e988bd0bdf43d53-32354172434449.png)](https://files.readme.io/8137dbf39a8de019a85028fd98898086318072383c9477f75e988bd0bdf43d53-32354172434449.png)
+
+<div data-zendesk-anchors="agency-transparency-in-reports=about-agency-data h_01HKA2A2BYF409JV71QY4QVE0R=about-agency-data h_01HKA2A2BYF378MG9GCWMMTMS9=viewing-agency-traffic-in-reports h_01HKA2A2BYYM4FBC0XTVMB6Q16=viewing-agency-traffic-in-the-overview-dashboard h_01HKA2A2BY1E0PKNXWRXEHVN78=viewing-agency-traffic-in-the-retention-dashboard" />

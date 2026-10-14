@@ -67,3 +67,5 @@ After changing the time-zone:
 #### Raw data reports
 
 <table><thead><tr><th rowspan="2">Reporting method </th><th colspan="3">Report date range</th></tr><tr><th>Starts and ends <span>before</span> the change </th><th>Starts and ends <span>after</span> the change </th><th>Starts before and ends after the change</th></tr></thead><tbody><tr><td>Export page raw data</td><td>Current time zone</td><td>Current time zone</td><td>Current time zone</td></tr><tr><td>Push API</td><td colspan="3">Separate fields for UTC and the app-specific time zone calculated using the selected time zone at the time of the event.</td></tr><tr><td>Pull API</td><td colspan="3"><ul><li>Default: UTC</li><li>Option: <a href="./pull-api-aggregate-data">Select the time zone when you pull the data</a></li></ul></td></tr><tr><td>Data Locker</td><td colspan="3">No impact—date fields are in UTC</td></tr></tbody></table>
+
+<div data-zendesk-anchors="h_01HJR69P6Z44SZA5A684H82PNV=why-change-the-time-zone h_01HJR69P6ZWJQ47FQY2HATAAE3=changing-the-time-zone h_01HJR69P6Z6B0Q6E6996WXVZ0N=example h_01HJR69P6ZY8JJBCBSDZKN75N6=aggregate-data h_01HJR69P6ZDXXK8ZTKK3E774VJ=raw-data-reports" />

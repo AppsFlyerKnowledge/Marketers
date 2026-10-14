@@ -71,6 +71,8 @@ Add parameters to the attribution link according to your requirements and the da
 
 </Accordion>
 
+<div id="testing-install-attribution" />
+
 <Accordion title="Testing install attribution">
 
 Send the attribution link to the test device. Open the link in the browser, install the app, and launch.
@@ -85,6 +87,8 @@ You can then [view the install in your dashboard](/docs/test-marketer-campaign-i
 
 You can test a marketer's campaign integration with your ad network even if the app is not live. However, you need to ask the marketer to provide you with the app (an .apk or .ipa file) so you can install it on your test devices.
 
+<div id="generate-an-attribution-link" />
+
 <Accordion title="Generate an attribution link">
 
 Generate an attribution link. You can use the [same instructions as listed above](/docs/test-marketer-campaign-integration-with-the-ad-network#installing-the-app-through-the-attribution-link). Send the attribution link to the test device and navigate to it using the device's browser.
@@ -96,6 +100,8 @@ The following screen appears:
 This is the expected result. Since the app is not live, the attribution link doesn't lead to any app store. However, the attribution link is still valid for attribution purposes. the attribution link and its parameters are recorded by AppsFlyer servers and the data is used for attribution.
 
 </Accordion>
+
+<div id="installing-the-app" />
 
 <Accordion title="Installing the app">
 
@@ -122,6 +128,8 @@ In your app's AppsFlyer dashboard, from the side menu, select **Active integrati
 [![partner-in-app-events-postbacks-mapping.png](https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png)](https://files.readme.io/2fe64793de5946d457a8fcb567db761c539755bdbe4cf910953b178eca84d841-21414453211793.png)
 
 </Accordion>
+
+<div id="triggering-inapp-events" />
 
 <Accordion title="Triggering in-app events">
 
@@ -175,3 +183,5 @@ Review the data in that column to verify the following:
   `sdk_event=af_purchase&mapped-event=purchase`  
   `sdk_event=af_login&mapped-event=login`
 * The **Postback Error Message** column is empty
+
+<div data-zendesk-anchors="h_01HKA1DE8VKXM92D7S5BANFZJ4=prerequisites h_01HKA1DE8V9A9AJWYQR9VJQ0H8=getting-started h_01HKA1DE8VA7HAM8BT3KZ8HYGP=example h_01HKA1DE8V0J2Y8DQ60J9S5DAK=testing-live-apps h_01HKA1DE8VDQGKYSYFDF5K2HSX=important h_01HKA1DE8VEEH8YE1QT28QVFZQ=installing-the-app-through-the-attribution-link h_01HKA1DE8VV0K8J2AG7W0FDDWY=tip h_01HKA1DE8VEH7S0JAJTJ91KE7X=testing-install-attribution h_01HKA1DE8VK9RQGQ8BCG157H1Y=testing-apps-in-development h_01HKA1DE8VSPE0FFM65AFQRJ8S=generate-an-attribution-link h_01HKA1DE8V68Z5CM4EF7YBPHPS=installing-the-app testing-inapp-events=testing-in-app-events h_01HKA1DE8VVJXK11BM77D3YWA5=testing-in-app-events h_01HKA1DE8W2VT648E022BHJP0K=note h_01HKA1DE8WQVGPSTG2SQCM2BQW=mapping-events h_01HKA1DE8WRZPCX3GGV01ZK10K=triggering-inapp-events h_01HKA1DE8W8XXM4BK7843TAEJQ=note-1 h_01HKA1DE8WY7VCST4XDN1HWGC7=viewing-installs-in-the-dashboard h_01HKA1DE8WYRTTNC2Q0VGKMM82=important-1 h_01HKA1DE8WEQY58XAPS9MBNGKE=verifying-postback-data" />

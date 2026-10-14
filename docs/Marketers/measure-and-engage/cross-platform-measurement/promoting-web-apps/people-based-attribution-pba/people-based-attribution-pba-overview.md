@@ -68,3 +68,5 @@ Raw data reports are available via Data Locker. They offer in-depth insights and
 > 📘 **See also**
 >
 > * [Onboarding guide to PBA](/docs/onboarding-guide-to-people-based-attribution)
+
+<div data-zendesk-anchors="01ECF26CMJ8TB4ADT6VN277EMQ=pba-principles 01ECF26CMJDA1HBC22DGRWY2EA=pba-analytics-dashboards-and-raw-data 01ECF26CMK0T5C9JKQ0SYMXQVM=website-attribution webassisted-installs=web-assisted-installs 01ECF26CMKDS16XWRBQ1SDAX2Q=web-assisted-installs 01ECF26CMM4KHX9W94DND4BY8C=raw-data h_01HE0Y2KTXS06WHN57MQ91AD09=see-also" />

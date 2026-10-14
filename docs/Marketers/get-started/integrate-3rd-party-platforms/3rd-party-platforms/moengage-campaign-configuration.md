@@ -42,6 +42,8 @@ x-zendesk:
 
 Learn more about [setting the partner page header.](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The **Integration** tab is divided into different sections, as described below.
@@ -75,11 +77,15 @@ AppsFlyer can send automatic postbacks to MoEngage following user installs. Sele
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 **Attribution link** isn't supported in the integration with this partner.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -87,14 +93,20 @@ AppsFlyer can send automatic postbacks to MoEngage following user installs. Sele
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 **Ad revenue** isn't supported in the integration with this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 **Permissions** isn't supported in the integration with this partner.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H9HWJPMX1TXBZY6C94HQ7J85=important h_01H9HWJPMXN58VV9SQQPY4T5HZ=setting-up-moengage h_01H9HWJPMX946NS52DTPAZWVEK=integration-tab h_01H9HWJPMX46NV79HHGRRD6D56=activate-partner h_01H9HWJPMXPZ5QV9D08CJMHMHS=general-settings h_01H9HWJPMX0TZ496PP8EY3H336=default-postbacks h_01H9HWJPMX4CHJ9MADEQBSDMGY=note h_01H9HWJPMXJVWPK67W5X88GYHZ=attribution-link-tab h_01H9HWJPMXQ07XNN8Y79P5DCAN=cost-tab h_01H9HWJPMX8MC1GSD2VD3QQ82Y=ad-revenue-tab h_01H9HWJPMXKYXVCH3HRA2FCPSQ=permissions-tab" />

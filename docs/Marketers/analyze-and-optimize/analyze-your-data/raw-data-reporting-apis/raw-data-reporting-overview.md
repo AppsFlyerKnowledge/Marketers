@@ -70,6 +70,8 @@ Raw data records occurring in a given context are grouped together in reports. F
   For example: click > install > in-app event > uninstall.
 * **Feature:** Relate to a given AppsFlyer feature but aren't part of the main user journey. For example, postbacks to ad networks, fraud and Validation Rules reports, and user-level ad revenue reports.
 
+<div id="report-fields" />
+
 <Accordion title="Report fields">
 
 The [raw data](/docs/raw-data-field-dictionary) field dictionary contains fields relevant to user journey reports and some feature report fields. The principles are as follows:
@@ -99,6 +101,8 @@ For ease of understanding, user journey fields are divided into groups based on 
 ## User journey reports
 
 ![Raw_data_-_User_acquisition_.png](https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png)
+
+<div id="user-journey-basics" />
 
 <Accordion title="User journey basics">
 
@@ -144,6 +148,8 @@ To follow a user journey, combine the reports that relate to the part of the jou
 
 </Accordion>
 
+<div id="user-journey-report-descriptions" />
+
 <Accordion title="User journey report descriptions">
 
 #### Clicks and impressions
@@ -165,12 +171,12 @@ To follow a user journey, combine the reports that relate to the part of the jou
 
 | Report | Characteristics |
 | --- | --- |
-| Report context | Chronological list of the actions performed by users after attribution (install, re-attribution, or re-engagement) |
-| Characteristics | <ul><li>The report structure and fields are similar to those of install reports.</li><li>Dedicated fields describe the event. These include the event name, value, revenue, and time.</li></ul> |
-| Use case | Use the report to:<ul><li>Gain insights by observing the user journey during the user's lifetime</li><li>Combine the install and in-app-event raw data to follow the complete user journey.</li></ul> |
+| <span id="report-context"></span>Report context | Chronological list of the actions performed by users after attribution (install, re-attribution, or re-engagement) |
+| <span id="characteristics"></span>Characteristics | <ul><li>The report structure and fields are similar to those of install reports.</li><li>Dedicated fields describe the event. These include the event name, value, revenue, and time.</li></ul> |
+| <span id="use-case"></span>Use case | Use the report to:<ul><li>Gain insights by observing the user journey during the user's lifetime</li><li>Combine the install and in-app-event raw data to follow the complete user journey.</li></ul> |
 | <span id="event-values"></span>Event values | **Event value field**<br /><br />The event value field contains all the data related to the event in a JSON. You can load this into your BI system for further analysis.<br /><br />**Tip!** You can use [Power Query in Microsoft Excel](https://docs.microsoft.com/en-us/power-query/parse-json-xml) to parse the event parameters from the JSON text strings.<br /><br />```<br />{"af_level":"10","af_user_journey":"3387","arena":"7","char_type":"paladin"}<br />```<br /><br />**Reporting revenue**<br /><br />The revenue and ROI data in AppsFlyer are derived from the af\_revenue sent in events.<br /><br />When the af\_revenue parameter is sent in an in-app-event, AppsFlyer uses this to populate the event revenue field. It is in this field that AppsFlyer uses to update the dashboard and aggregated reports.<br /><br />Note! Use only the af\_revenue parameter with in-app-events that describe **actual revenue generated.** For other events that involve revenue, but are not final, for example, add\_to\_cart, use different parameters like af\_price |
-| Example report | [In-app events](https://docs.google.com/spreadsheets/d/e/2PACX-1vQhOF-g3HeqZt3rXx7WZVQnB54p7ALW_IEpnJ9xtAkrcb9XzZwweiNCZzEmuX7q0i1g6yYMxYtuuX1c/pub?output=csv) |
-| Remarks | <ul><li>Retargeting in-app events are [doubly recorded](/docs/resolve-retargeting-double-attribution) in both the UA and retargeting in-app event raw data reports.</li><li>In-app events don't include the launch (af\_app\_opened) event. This is available in the [sessions](/docs/measure-sessions) raw data report.</li><li>Geo location: Is derived using the user IP address at the time the event is performed.</li></ul> |
+| <span id="example-report"></span>Example report | [In-app events](https://docs.google.com/spreadsheets/d/e/2PACX-1vQhOF-g3HeqZt3rXx7WZVQnB54p7ALW_IEpnJ9xtAkrcb9XzZwweiNCZzEmuX7q0i1g6yYMxYtuuX1c/pub?output=csv) |
+| <span id="remarks"></span>Remarks | <ul><li>Retargeting in-app events are [doubly recorded](/docs/resolve-retargeting-double-attribution) in both the UA and retargeting in-app event raw data reports.</li><li>In-app events don't include the launch (af\_app\_opened) event. This is available in the [sessions](/docs/measure-sessions) raw data report.</li><li>Geo location: Is derived using the user IP address at the time the event is performed.</li></ul> |
 
 #### Sessions
 
@@ -193,6 +199,8 @@ To follow a user journey, combine the reports that relate to the part of the jou
 
 </Accordion>
 
+<div id="user-journey-report-availability-per-tool" />
+
 <Accordion title="User journey report availability per tool">
 
 #### Ad engagement report by tool
@@ -214,6 +222,8 @@ To follow a user journey, combine the reports that relate to the part of the jou
 
 </Accordion>
 
+<div id="faq" />
+
 <Accordion title="FAQ">
 
 | Details |
@@ -223,6 +233,8 @@ To follow a user journey, combine the reports that relate to the part of the jou
 | **What is the keywords field—why isn't available in all non-organic installs?**<br /><br />Installs attributed to Google Ads or Apple Ads, can contain the keywords or keyword ID associated with the ad bringing the install. |
 
 </Accordion>
+
+<div id="install-report-tips" />
 
 <Accordion title="Install report tips">
 
@@ -320,3 +332,5 @@ Use postback reports, to review copies of data sent to an ad network. For exampl
 > 📘 **See also**
 >
 > * [Aggregate reports and analytics](/docs/aggregated-and-analytics-reporting-overview)
+
+<div data-zendesk-anchors="raw-data-reporting%E2%80%94tools-and-reports=raw-data-reportingtools-and-reports h_01HE7SRDXQ9TR0CRB2JC9XCQE2=raw-data-reportingtools-and-reports h_01HE7SRDXQQJFMV9EJKPY34D00=tip reporting-tools%E2%80%94characteristics-and-features=reporting-tools-characteristics-and-features h_01HE7SRDXQFJGMY05K1SV4TF63=reporting-tools-characteristics-and-features h_01HE7SRDXQ647XRQ8QVMPGH43B=reporting-tools h_01HE7SRDXQWQAKR0G6CNKC5AMT=tool-limitations h_01HE7SRDXQN3HSMGAPBAX9S3MB=integration-considerations h_01HE7SRDXQRPD8MHC8M5916HTQ=report-fields h_01HE7SRDXQMGQEG1QWGWEESQER=user-journey-raw-data-field-groups h_01HE7SRDXQZ50WMKCMYHZM7D92=user-journey-reports h_01HE7SRDXQFN0P9QK8SKAZKVKP=user-journey-basics h_01HE7SRDXRS2B12Z67MYMH0QN9=user-journey-report-availability user-journey-reports::d286e1f5=user-journey-reports-1 h_01HE7SRDXR7YQGWN4FNDXMNMX8=user-journey-reports-1 h_01HE7SRDXRK6G27SDFK3CGDCRC=user-journey-report-descriptions h_01HE7SRDXRC9YKZ0P9ED0218SJ=clicks-and-impressions h_01HE7SRDXRN60XE5BSDQY28N71=installs-and-retargeting-conversions inapp-events=in-app-events h_01HE7SRDXR3ZT39EDNW4MVZZTX=in-app-events h_01HE7SRDXRY05XQCMZE6YPXGWQ=sessions h_01HE7SRDXRA7ESDD4ME51WWBPR=uninstalls h_01HE7SRDXRZYNFGK4CNP4VPAE0=user-journey-report-availability-per-tool h_01HE7SRDXR171M74HMQBZJ2E8R=ad-engagement-report-by-tool h_01HE7SRDXRMGEP5QB452ZKQ8X7=user-acquisition-reports-by-tool h_01HE7SRDXRXR4J3HTMYW2P233Y=retargeting-raw-data-reports-by-tool h_01HE7SRDXRWW3JKNESSN2QA4DV=faq h_01HE7SRDXR61K28JGA8944D6HV=install-report-tips h_01HE7SRDXRKFR2WYGNF317CTRX=retargeting-raw-data-reports-by-tool engaged-user%E2%80%94strong=engaged-userstrong h_01HE7SRDXRW0CWHGQV75VF66DC=engaged-userstrong engaged-user%E2%80%94weak=engaged-userweak h_01HE7SRDXRNMDZEJQ32665T14F=engaged-userweak h_01HE7SRDXRRET0YN4Q8WYMENSR=analyzing-the-user-journey-for-campaign-optimization h_01HE7SRDXSVAHKBYQK0C71K6AR=feature-reports h_01HE7SRDXSFWMVY61NBYFQ4XSM=postbacks h_01HE7SRDXS6T4M4CRQN0ZTJETR=postback-reports-available-via-the-export-data-page-and-pull-api h_01HE7SRDXSYBDG0H2QEYBFWSRH=additional-fields-in-postback-reports h_01HE7SRDXS8K4MB76WVBCBHASQ=protect360-fraud-and-validation-rules h_01HE7ST20N8ZBFNY2QXW5G44A1=see-also" />

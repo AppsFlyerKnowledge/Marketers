@@ -43,12 +43,16 @@ To set the tax rate rules using the Net Revenue API, follow these steps:
 
 1. Complete the following steps in your ROI360 store revenue settings:
 
+   <div id="ios" />
+
    <Accordion title="iOS">
 
    * [Step 1. Set up App Store Connect keys](/docs/set-up-roi360-store-revenue#step-1-ios-set-up-app-store-connect-keys)
    * [Step 2. Set up App Store Server Notifications](/docs/set-up-roi360-store-revenue#step-2-ios-set-up-app-store-server-notifications)
 
    </Accordion>
+
+   <div id="android" />
 
    <Accordion title="Android">
 
@@ -99,12 +103,16 @@ Before using the API:
 
 1. Complete the following steps in your ROI360 store revenue settings:
 
+   <div id="ios::f410adfc" />
+
    <Accordion title="iOS">
 
    * [Step 1. Set up App Store Connect keys](/docs/set-up-roi360-store-revenue#step-1-ios-set-up-app-store-connect-keys)
    * [Step 2. Set up App Store Server Notifications](/docs/set-up-roi360-store-revenue#step-2-ios-set-up-app-store-server-notifications)
 
    </Accordion>
+
+   <div id="android::659c7976" />
 
    <Accordion title="Android">
 
@@ -124,3 +132,5 @@ Before using the API:
    * If no custom commission is set, AppsFlyer uses the **default store commission logic**
 
 For full request structures and examples, see the [Net Revenue API documentation](https://dev.appsflyer.com/hc/reference/overview-7).
+
+<div data-zendesk-anchors="h_01KEFDF4KD0DCMP5DGE7ZJDBGX=note h_01KEFDF4KDJ5PVS3AW46BS57NC=update-tax-rate-rules h_01KEFDRXY0FWKKK0DK6PS340TC=ios h_01KEFDRXY0RTBH293JQXFWYAM2=android h_01KEFDF4KD60SEVBQ8G228PEXD=tax-rate-api-parameters h_01KEFDF4KDP4PFKFQ0D9FN8P5D=set-up-store-commission-rates h_01KEFDF4KDVTHTGKJ35CQ1GQ1E=update-store-commission-with-the-net-revenue-api h_01KEFDWVDFBPP7NPSZV0PRGKPZ=ios::f410adfc h_01KEFDWVDFZPHJP6EG0CPNG5A0=android::659c7976" />

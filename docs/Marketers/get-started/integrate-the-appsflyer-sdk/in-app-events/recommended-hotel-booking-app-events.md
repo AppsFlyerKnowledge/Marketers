@@ -296,6 +296,8 @@ When the user reaches the thank you page after booking a hotel
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
+<div id="first-purchase-first_purchase" />
+
 <Accordion title="First purchase (first_purchase)">
 
 **Purpose**
@@ -324,3 +326,5 @@ When the user completes their first purchase
 | af\_receipt\_id | Order ID, required for CRITEO and Google AdWords retargeting integration | X123ABC |
 
 </Accordion>
+
+<div data-zendesk-anchors="hotel-booking=-hotel-booking h_01HGTB0APWWTRER6GAWJ7TJ05S=-hotel-booking h_01HGTB0APWQDX7VN96GM7520ZH=important h_01HGTB0APW933179Q90HFASW1V=recommended-structures-for-predefined-events h_01HGTB0APWRKRGCJ5TFKTPHH33=complete-registration-af_complete_registration h_01HGTB0APW1XY5R69CJ8PSQV6C=login-af_login h_01HGTB0APW5YF2DASC0HYDPTA9=search-af_search h_01HGTB0APXTQWBS4EXJ8D724G0=content-view-af_content_view h_01HGTB0APXS95QGK17RE8B3Y1E=add-to-wishlist-af_add_to_wishlist h_01HGTB0APX1XX2W3YX85W75F6B=initiated-checkout-af_initiated_checkout h_01HGTB0APXGPW16FRY3C7VSMDM=purchase-af_purchase h_01HGTB0APXJFHMPGYC63ZTV4R9=travel-booking-af_travel_booking h_01HGTB0APXP6WVM1AVEMEY6KVS=recommended-structures-for-custom-events h_01HGTB0APX4ND0NGVTK9FA38QR=first-purchase-first_purchase" />

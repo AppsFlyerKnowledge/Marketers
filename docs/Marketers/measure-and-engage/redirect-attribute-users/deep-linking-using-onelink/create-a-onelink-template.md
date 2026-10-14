@@ -55,11 +55,12 @@ A OneLink template:
    [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
 3. In the **OneLink template name** field, enter a name.
 
-   <br /><br />**Note**<br />#### Note
+   > 📘 **Note**
+   >
+   > * A good OneLink template name includes the **name of the app** (for example feed\_me) or the use case or experience represented by the OneLink (for example pre\_launch\_landing\_page).
+   > * The name should not include the campaign or channel name or media source (since this isn't the actual end-user link, just the underlying template to create many links), or the name of the platform (Android, iOS, since multiple platforms are usually the reason for using a OneLink template in the first place).
+   > * This template name is only used internally. It doesn't affect your marketing attribution data and is not seen by users.
 
-   * A good OneLink template name includes the **name of the app** (for example feed\_me) or the use case or experience represented by the OneLink (for example pre\_launch\_landing\_page).
-   * The name should not include the campaign or channel name or media source (since this isn't the actual end-user link, just the underlying template to create many links), or the name of the platform (Android, iOS, since multiple platforms are usually the reason for using a OneLink template in the first place).
-   * This template name is only used internally. It doesn't affect your marketing attribution data and is not seen by users.
 4. In the **Subdomain**field, enter your [subdomain](/docs/appsflyer-knowledge-base-glossary#subdomain) name.
    * Choose a subdomain that matches your brand. For example, if your website is www.abcd.com choose abcd as your subdomain.
    * Users will see this subdomain as part of the link URL. For example: `https://abcd.onelink.me/RPsv/37e5cd36`.
@@ -175,11 +176,12 @@ For the best user experience, security, and device coverage, we recommend enabli
 
    1. Contact your iOS AND Android developers and decide on a URI scheme. For example: `feedmeapp://`
 
-      <br /><br />**Note**<br />#### Tip
+      > 👍 **Tip**
+      >
+      > * Neither Apple or Google enforce unique naming for app schemes. **Choose a scheme name unique to your brand** to avoid conflicting schemes across different applications. A good scheme name could be your app bundle ID, for example, **com.company.app**
+      > * To enable OneLink to serve both iOS and Android, it is important that **the same scheme is defined for both platforms**. Here are instructions for [iOS](https://help.contrast.co/hc/en-us/articles/200865293-URL-Scheme-Intro-for-App-Developers) and [Android](https://developer.android.com/training/app-links/deep-linking.html).
+      > * The URI scheme should not start with http or https.
 
-      * Neither Apple or Google enforce unique naming for app schemes. **Choose a scheme name unique to your brand** to avoid conflicting schemes across different applications. A good scheme name could be your app bundle ID, for example, **com.company.app**
-      * To enable OneLink to serve both iOS and Android, it is important that **the same scheme is defined for both platforms**. Here are instructions for [iOS](https://help.contrast.co/hc/en-us/articles/200865293-URL-Scheme-Intro-for-App-Developers) and [Android](https://developer.android.com/training/app-links/deep-linking.html).
-      * The URI scheme should not start with http or https.
    2. Tell the iOS developer to implement the URI scheme in their app by [following these instructions](https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#procedures-for-uri-scheme).  
       **AND**  
       Tell the Android developer to implement the URI scheme in their app by [following these instructions](https://dev.appsflyer.com/hc/docs/dl_android_init_setup#procedures-for-uri-scheme).
@@ -200,6 +202,8 @@ For the best user experience, security, and device coverage, we recommend enabli
 > * It can take up to 1 hour for OneLink template updates to take effect.
 
 </Accordion>
+
+<div id="customize-qr-codes" />
 
 <Accordion title="Customize QR codes">
 
@@ -229,7 +233,7 @@ You can customize the QR codes generated via OneLink by:
 
 </Accordion>
 
-<div id="set-a-favicon-for-link-previews" />
+<div id="h_favicon" />
 
 <Accordion title="Set a favicon for link previews">
 
@@ -257,6 +261,8 @@ A favicon is the small icon that appears next to your link title when a link is 
 
 ## Traits and limitations
 
+<div id="key-traits-and-limitations" />
+
 <Accordion title="Key traits and limitations">
 
 | Trait | Remarks |
@@ -276,3 +282,5 @@ Got a question about OneLink templates? Check out our [FAQ](/docs/onelink-troubl
 ## Next step
 
 Follow the instructions to [create OneLink links](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink) based on your template.
+
+<div data-zendesk-anchors="h_01H9Q4E7VQ0GKZ9HFF88190TYN=onelink-templates procedures=create-a-onelink-template h_01H9Q4E7VQYGZ1MH5SS3ZYZF1K=create-a-onelink-template h_01H9Q4E7VQ648CQ1VJTB1TC571=create-a-onelink-template-with-redirection-logic-for-new-app-users h_01H9Q4E7VQ15AAR1VXNKWR1XGT=note h_01H9Q4E7VQ4NEWYAD6AMR9YKGY=add-redirection-logic-for-existing-app-users h_01H9Q4E7VR4CAK0PJY269GQ9XJ=tip h_01H9Q4E7VR8164HR6MD0EAV2SN=note-1 h_01H9Q4E7VR0F4B7CTF08YTG715=customize-qr-codes set-a-favicon-for-link-previews=h_favicon h_01KT6GG94CRBYFDWZ28BA8HEYY=note-2 h_01KZX85DYWA1TJ0AS3QV27VPA4=traits-and-limitations h_01H9Q4E7VR2B50EQE31DDG8GNZ=key-traits-and-limitations h_01H9Q4E7VRJK31P9CSGJFCKQQF=next-step" />

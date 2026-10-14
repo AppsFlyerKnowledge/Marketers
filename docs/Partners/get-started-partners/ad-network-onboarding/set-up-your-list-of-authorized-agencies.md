@@ -66,3 +66,5 @@ From the **Authorized agencies** page, you can add agencies, view the existing 
 1. From the right pane of the **Authorized agencies** page, hover over the agency you want to delete and click the dustbin icon.
 2. Confirm the deletion. An indication confirms the successful deletion of the agency.
 3. [Optional] Repeat steps 1-2 for deleting more agencies.
+
+<div data-zendesk-anchors="h_01HJR00RGQ2PK3T8BB2ZG3PFQN=overview h_01HJR00RGQX0CQEHDS9BHBGJD4=note accessing-the-allowlists=manage-authorized-agencies h_01HZZ5FP1560HJYDVDNSJ8WAAP=manage-authorized-agencies h_01HZZ691KMKTYVAETT4RM3AD97=add-an-agency-to-the-list h_01HZZ7QGY0VTS0FY0HJJAZ2AXV=note-1 h_01HJR00RGQ4ZEGE0RDK01S5SQQ=delete-an-agency-from-the-list" />

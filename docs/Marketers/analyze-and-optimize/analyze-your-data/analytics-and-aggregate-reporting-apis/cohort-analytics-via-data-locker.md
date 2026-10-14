@@ -47,6 +47,8 @@ You can load the data into your BI systems and use them as part of your campaign
 
 The metrics available are revenue, unique users performing an event and the number of event occurrences. To calculate cost-related metrics like ROI, and ROAS you need both revenue and cost metrics. Revenue metrics are in Cohort, and cost metrics are provided by [ROI360 Cost ETL](/docs/set-up-and-use-roi360-cost-etl-reports).
 
+<div id="facts" />
+
 <Accordion title="Cohort analytics facts">
 
 | Reports available | The following reports are available for download. The reports types are described in more detail in [Cohort dashboard.](/docs/cohort-and-retention-dashboard#cohort-principles)<ul><li>**User acquisition:** attributed to a user acquisition media source including LTV occurring during re-engagement windows.</li><li>**Retargeting:** attributed to a retargeting media source for events occurring:<ul><li>During a re-engagement window</li><li>As a result of re-attributions</li></ul></li><li>**Unified:** display data under the last touch media source bringing the user according to AppsFlyer [double attribution](/docs/resolve-retargeting-double-attribution) rules. Meaning that LTV occurring during re-engagements displays under the retargeting media source and not under the UA media source.</li></ul> |
@@ -114,6 +116,8 @@ The format of the fields is as follows:
 
 </Accordion>
 
+<div id="bi-developer-considerations" />
+
 <Accordion title="BI developer considerations">
 
 **Scope of data in the report**
@@ -141,6 +145,8 @@ If you just use the unified view in your data loading process, you can use logic
 The data of all apps is provided in a single file. Use the App ID field to segregate data per app or set Data Locker to segregate by app.
 
 </Accordion>
+
+<div id="use-cases" />
 
 <Accordion title="Use cases">
 
@@ -388,6 +394,8 @@ limit 20
 
 ## Additional information
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait |  |
@@ -411,3 +419,5 @@ limit 20
 >
 > * [Combine Cost ETL and cohort reports](/docs/combine-cost-etl-and-cohort-reports-via-data-locker)
 > * [Cohort dashboard](/docs/cohort-and-retention-dashboard)
+
+<div data-zendesk-anchors="01H7WG3CA1DDAN79D1PBPE0RJ3=cohort-analytics-in-data-locker 01H7WG3CA1ZMNTGZ5B8FNXNC4A=enable-data-locker 01H7WG3CA179D6VCWYPCJ1G49M=facts 01H7WG3CA1R3PZCKSGWC90E7RC=report-structure 01H7WG3CA14PQ2PJ58FX8TE6ZH=dimensions 01H7WG3CA24VQKFVP99S82GCXZ=metrics 01H7WG3CA2C3HV8YT5ZMP9E0QY=bi-developer-considerations 01H7WG3CA2YF03SC6RBMCJYYVX=use-cases h_01HMTZ0DZWN54HBQ0ZTY0VFNFM=1-calculating-retention 2-calculating-arpu-of-multiple-inapp-events=2-calculating-arpu-of-multiple-in-app-events h_01HMTZ0DZWHZ77RYWYAQEJV7X5=2-calculating-arpu-of-multiple-in-app-events 3-calculating-inapp-event-conversion-rate-for-a-specific-cohort-day=3-calculating-in-app-event-conversion-rate-for-a-specific-cohort-day h_01HMTZ0DZW7VA6T6MQY7BY1JZT=3-calculating-in-app-event-conversion-rate-for-a-specific-cohort-day h_01HMTZ0DZWARZFAQ9R4VF56YN3=4-calculating-daily-installs h_01HMTZ0DZW74HWW6Z3VDWDMGRF=5-calculating-revenue-from-facebook-ads h_01HMTZ0DZWSN83V0TEHVM2H5XS=6-calculating-arpu-per-asa-keyword-id-for-up-to-365-cohort-days calculating-arpu-days-0-7-by-attribution-time-per-geo=7-calculating-arpu-days-7-by-attribution-time-per-geo 01H8XYTJVQ1YFBHPWVPP9D7MJ8=7-calculating-arpu-days-7-by-attribution-time-per-geo 01H7WG3CA255TG9HW150RW1QTX=additional-information 01H7WG3CA2Y59D2EVMN3YFFY1W=traits-and-limitations h_01HDNZ8A0QH74CGSEG6TKKARJP=see-also" />

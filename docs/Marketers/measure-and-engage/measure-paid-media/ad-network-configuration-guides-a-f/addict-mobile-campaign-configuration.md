@@ -36,6 +36,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -74,6 +76,8 @@ In this section, you can map your AppsFlyer events with Addict Mobile via postba
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -128,17 +132,23 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost integration is not available for Addict Mobile.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue data is not supported by Addict Mobile.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -170,3 +180,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJR633087HDAET7KHT8E9XEB=setting-up-addict-mobile h_01HJR63308JRT30ATJGHK8ENGD=integration-tab h_01HJR6330800PFWSAB8A3GXMW4=activate-partner h_01HJR63308AZ4815GFH2JMV1G5=general-settings h_01HJR63308QQN56PHAZJJEEN46=default-postbacks inapp-events-settings=in-app-events-settings h_01HJR63309W68NWQ8JBH44HJRT=in-app-events-settings h_01HJR63309HPDZGQTG2P5429GX=attribution-link-tab h_01HJR63309YXMMFWC3BJ5P4QZ6=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HJR63309B694DZTGKBCEJ9Q5=click-through-attribution h_01HJR633091B528NHJC60RQ9QT=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HJR63309G1W0P1Y5CZQ9MWYF=view-through-attribution-lookback-window h_01HJR633092XASXD3STXJW5RN7=impressions-attribution-link h_01HJR63309MSKSWQNCSCYC33BR=cost-tab h_01HJR633092FJD6G3P97ZBG4WA=ad-revenue-tab h_01HJR63309BHWNSKQ7Y63P2B9M=permissions-tab h_01HJR63309BKERBX97ZRPHC4EC=ad-network-permissions h_01HJR6330A35DEFCHZA2DC95WR=agency-permissions" />

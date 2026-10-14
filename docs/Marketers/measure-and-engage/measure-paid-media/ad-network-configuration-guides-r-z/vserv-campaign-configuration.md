@@ -36,6 +36,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partners
@@ -71,6 +73,8 @@ In this section you can map your AppsFlyer events with Vserv via postbacks.
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -111,17 +115,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost integration is not available for Vserv.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue data is not supported by Vserv.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -140,3 +150,5 @@ In this tab, you can select the permissions to grant Vserv, whether the partner 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJZVBAHC7Y1T02AZK42AT59S=setting-up-vserv h_01HJZVBAHC6SYY021F2Z1W4RGR=integration-tab h_01HJZVBAHCXS16GYP3016EH1SF=activate-partners h_01HJZVBAHCN1992B9A1883TFQM=note h_01HJZVBAHC6C7QZ2J6ZEX091JP=default-postbacks inapp-events-settings=in-app-events-settings h_01HJZVBAHCB071S91V63BQW5EG=in-app-events-settings h_01HJZVBAHDV2MDHCCZ928X1GNW=attribution-link-tab h_01HJZVBAHDJ754YN20BZ2S69MS=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HJZVBAHD5YVQ6MV9KAHETQVQ=click-through-attribution h_01HJZVBAHD04E14BE61W10Y5HJ=click-attribution-link h_01HJZVBAHDBY5F580GCRWH3BNG=cost-tab h_01HJZVBAHDR79RZ69T4E78T6SR=ad-revenue-tab h_01HJZVBAHD4BAADJXZMK4QSX58=permissions-tab h_01HJZVBAHDEFT99AY91S264205=ad-network-permissions" />

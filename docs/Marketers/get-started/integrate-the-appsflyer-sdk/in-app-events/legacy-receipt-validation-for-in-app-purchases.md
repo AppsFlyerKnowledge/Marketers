@@ -65,3 +65,5 @@ For details about the implementation of receipt validation, see our developer SD
 >
 > * *T*he legacy receipt validation explained here does not support *StoreKit v2*. For the current version, see Set up integration with iOS App Store.
 > * Receipt validation for in-app purchases isn't supported for third-party Android app stores.
+
+<div data-zendesk-anchors="h_01KDJ7QZD8X692EVP1XXGV0KY4=important 01JDSM0JDAQXH8QX8ZAXNB0ZMB=receipt-validation-flow 01JDSM0JDT6Q3WYW9K484QHY2M=important-1 01JDSM0JD90J3EDMVN6D6Z9J40=note" />

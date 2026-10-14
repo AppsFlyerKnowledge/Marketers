@@ -44,6 +44,8 @@ To extract and share Adobe Experience Cloud ID:
 1. [Update the application and extract the Marketing Cloud Visitor ID](https://experienceleague.adobe.com/en/docs/id-service/using/id-service-api/methods/getmcvid) using the Adobe SDK method right after the Adobe SDK is initialized.
 2. Use one of the following AppsFlyer SDK methods to set the Adobe Marketing Cloud Visitor ID:
 
+<div id="setadditionaldata" />
+
 <Accordion title="setAdditionalData">
 
 Android iOS Unity
@@ -84,6 +86,8 @@ AppsFlyer.setAdditionalData(CustomDataMap);
 ```
 
 </Accordion>
+
+<div id="setcustomeruserid" />
 
 <Accordion title="setCustomerUserId">
 
@@ -171,3 +175,5 @@ Set out below are the details of the domain and security issues:
 2. The protocol (HTTP/HTTPS) of the URL depends on whether the ANALYTIC Server Domain is secure or not. It is important that you use the correct protocol. To find out if the setting is secure, check whether the analytics (SSL) setting is set to **true** in the **ADBMobile.config** file. If your connection is secure use HTTPS, if it is not secure use HTTP.
 3. REPORT SUITE ID can be found as the **rsids** variable in your Apps’ Config file. You can give any name to your report suite.
 4. The ts=`{timestamp}` is only used if your **offlineEnabled** configuration is true in your Config file. Remove this parameter from the URL if the **offlineEnabled** is set to False or if your report suite is not **Time Stamp** enabled.
+
+<div data-zendesk-anchors="h_01HA4ZWDM1MEW2VDFXYMAJ2QE2=overview h_01HA4ZWDM11RJ6GRJ7W8QMFACT=setting-up-adobe-analytics-integration prerequisite=prerequisites h_01HA4ZWDM1YK58Q56Y0S8PC1E2=prerequisites h_01HA4ZWDM1J65D32PVXY0ZD9YV=step-1-share-adobe-experience-cloud-id-ecid-marketing-cloud-id-or-visitor-id-with-appsflyer h_01HA4ZWDM1RDRDGZ3X7WC0ACV1=setadditionaldata h_01HA4ZWDM1CAXZH7ZNJ0Z37EE1=setcustomeruserid h_01HA4ZWDM26AVEQKC4CXF18D22=step-2-configure-adobe-analytics-in-appsflyer h_01HA4ZWDM23A6BFXDV2JH4NR2J=note h_01HA4ZWDM27S52KY36GS1QPKJ5=step-3-map-data-to-evars-in-adobe-analytics step-4-%5Boptional%5D-set-up-your-marketing-channel=step-4-optional-set-up-your-marketing-channel h_01HA4ZX6FG6RM5JNDKQP6GVAD1=step-4-optional-set-up-your-marketing-channel h_01HA4ZWDM2NNFVPP1XYWKPS89A=domain-and-security-details" />

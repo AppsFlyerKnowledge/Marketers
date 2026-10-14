@@ -396,3 +396,5 @@ See also
 | Trait | Remarks |
 | --- | --- |
 | Testing links | When using a registered test device, remove the `af_inactivity_window` parameter from the testing link. Otherwise, the install may be incorrectly attributed as *Organic* instead of being attributed to the test link. |
+
+<div data-zendesk-anchors="01H88X11QS2VYFXJGC95TXC6PN=overview h_01HYX9R159XMZKMH1MBMBH9K9J=testing-using-the-sdk-integration-tests-page h_01J9GTS4S2RXJAMYGG6XJ5HFRZ=prepare-a-test-device h_01J9GTW7RAGZXE7GK5BWGBA7N5=perform-the-integration-tests 01H88X11QT0WDRW5GZDCR7MZ3D=testing-using-attribution-links 01H88X11QTQ94BAJGEE1V11F6X=testing-retargeting-using-attribution-links h_01HYX9R1594DD9BEZ6PMV9PJM8=testing-organic-installs Testing%20CTV=testing-ctv 01H88X11QT72F71N49G65BAEAE=testing-ctv h_01J6S6HS0H0M6GQ81WGZ3XT0P9=traits-and-limitations" />

@@ -29,6 +29,8 @@ The ad revenue partner integration API is used to:
 * Set app-level ad revenue partner configurations for your entire account.
 * Get a list of current ad revenue partner configurations for your entire account.
 
+<div id="set-api" />
+
 <Accordion title="Set API">
 
 **To set (configure) ad revenue partner integrations via API**:
@@ -54,6 +56,8 @@ The ad revenue partner integration API is used to:
 
 </Accordion>
 
+<div id="get-api" />
+
 <Accordion title="Get API">
 
 **To get a list of your ad revenue partner integrations via API**:
@@ -69,3 +73,5 @@ The ad revenue partner integration API is used to:
 | --- | --- |
 | Call limit | Up to 1,000 integrations within a single call. |
 | OAuth | Partners that are integrated via OAuth (like Google and Facebook) aren't supported. |
+
+<div data-zendesk-anchors="h_01HYD2M7E1PH0ARZRF0P17K80J=ad-revenue-partner-integration-api h_01HYD2M7E1DX9FAJ0MGN500NZV=set-api h_01HYD2M7E1FYY96HNM6DSHXPQ5=request-parameters h_01HYD2M7E19XCCFF1NT40VBWH7=get-api h_01HYD2M7E1X2PEQ616PWMTWCH7=specs-and-limitations" />

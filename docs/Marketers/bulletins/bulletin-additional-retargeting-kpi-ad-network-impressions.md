@@ -48,3 +48,5 @@ Summary of KPIs available in the Retargeting dashboard after the change:
 #### What you need to do to prepare for the change
 
 No action needed
+
+<div data-zendesk-anchors="h_01HG5VG63WEYMG831AATZ0754V=before-the-change h_01HG5VG63WHTD3RMGMEFARGW3A=after-the-change h_01HG5VG63WXFZNH43FTJ1GS6CS=what-you-need-to-do-to-prepare-for-the-change" />

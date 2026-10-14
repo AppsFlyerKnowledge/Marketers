@@ -57,7 +57,7 @@ An AppsFlyer account can have **one or more** Admins, but every account has at l
   * All media sources and geos
 
   This "all-access" characteristic of the Admin role cannot be changed or limited.
-* **Account owner:** The user created at the time the account was opened is assigned the Admin role by default.
+* <span id="account-owner"></span>**Account owner:** The user created at the time the account was opened is assigned the Admin role by default.
   * The account owner cannot be deleted, removed from the Admin role, or otherwise edited from the [User management](/docs/user-management-for-ad-networks#user-management-page) page. Likewise, the account owner’s email address cannot be changed.
     * If you do need to change the account owner, follow the [steps listed below](/docs/user-management-for-ad-networks#changing-the-account-owner).
   * The account owner is initially responsible for creating additional users (until additional users with user management capabilities are created).
@@ -106,14 +106,17 @@ Click on the name of any role in the left panel to see:
 
    * Can include letters, numbers, apostrophes ('), ampersands (&), dollar signs ($), hash symbols (#), hyphens (-), underscores (\_), and periods (.)
    * Two consecutive periods (..) and other special characters are not allowed.
-   * Must end with a valid email domain.<br /><br />**Note**<br />#### Important!
+   * Must end with a valid email domain.
 
-   A user’s email address is what identifies them in the AppsFlyer platform, meaning:
+     > 📘 **Important!**
+     >
+     > A user’s email address is what identifies them in the AppsFlyer platform, meaning:
+     >
+     > * It cannot later be changed without deleting and recreating the user.
+     > * It must be a valid email address at which the user can receive email.
+     > * It cannot be associated with another user in any AppsFlyer account.
+     > * If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](/docs/user-management-for-ad-networks#troubleshooting-can-t-create-this-user) to resolve this issue.
 
-   * It cannot later be changed without deleting and recreating the user.
-   * It must be a valid email address at which the user can receive email.
-   * It cannot be associated with another user in any AppsFlyer account.
-     * If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](/docs/user-management-for-ad-networks#troubleshooting-can-t-create-this-user) to resolve this issue.
 4. Select the user’s department (optional).
 5. Select the user’s role (required).
 6. Select the apps the user can access:
@@ -255,6 +258,8 @@ If a new user did not receive their [account activation invitation](/docs/user-m
 
 </Accordion>
 
+<div id="resetting-twofactor-authentication-2fa" />
+
 <Accordion title="Resetting two-factor authentication (2FA)">
 
 If your account uses 2FA, there may be occasions on which you need to reset a user’s 2FA settings. Do so as follows:
@@ -267,3 +272,5 @@ If your account uses 2FA, there may be occasions on which you need to reset a us
 </Accordion>
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HEN51924E23493MKXPEKHS03=background h_01HEN51924R007XNM3N45CA73A=more-about-roles h_01HEN51924WBY63ASRGH7ZQFP4=example temp-roles%E2%80%94an-exception-to-the-rule=temp-rolesan-exception-to-the-rule h_01HEN51924DT5GVPMJBQD3ZY9R=temp-rolesan-exception-to-the-rule admin%E2%80%94a-special-role=admina-special-role h_01HEN51924G6GXVH8HH5DAWZ26=admina-special-role h_01HEN51924PQEM4R974HMWPH98=user-management-page h_01HEN51924RDZFSJN0KN0YJFND=users-tab h_01HEN519249AHVKGM5CDTXPEP7=roles-tab h_01HEN51924C56PAKQYTQM05DMV=creating-a-user h_01HEN519241VD35W7AYQ08NMHJ=important h_01HEN51924F0G8287RP08EB464=becoming-an-active-user 01HEPXYXV78HEXK5SD4QBDGEGH=editing-users h_01HEN51924AP4TT97C2X5CRB35=individual-editing multiuser-editing=multi-user-editing h_01HEN519246HC2M4BB35GR29SQ=multi-user-editing h_01HEN51925ZWQ8V3XJNAD4F4V9=note h_01HEN51925Q9P2GFJWWWW9MMQ2=deleting-users h_01HEN51925JBC3R887CVFNFA27=special-situations-and-additional-procedures h_01HEN519258745RNY4RNT4MWK6=managing-temp-roles h_01HEN51925REZEKBA501T0RMME=temp-role-limitations h_01HEN51925FMKJ5D7BE93GVN2G=example-1 h_01HEN51925J3NKAJSKYEF9AMMJ=changing-the-account-owner h_01HEN51925FR6AGT1M2YHJJB6A=important-1 1%E2%80%93send-an-email-request=1send-your-request-via-the-chat-widget h_01HEN51925GQGFAZYRTHPBBXA2=1send-your-request-via-the-chat-widget 2%E2%80%93next-steps=2next-steps h_01HEN51925SPRA034581N8BWYK=2next-steps troubleshooting-can%E2%80%99t-create-this-user=troubleshooting-can-t-create-this-user h_01HEN51925YAY0E37S799S7S1J=troubleshooting-can-t-create-this-user h_01HEN519253VMNBPNW61M10QZW=resending-a-user-invitation h_01HEN51925C7X1AEM2FJ6152Z1=resetting-twofactor-authentication-2fa" />

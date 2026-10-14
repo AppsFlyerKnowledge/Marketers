@@ -91,10 +91,11 @@ To open the **measurement settings** page, follow these steps:
 3. At the bottom of the collaboration page, click **Set up measurement.** (If the link is disabled, set up the collaboration's [data sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources) and [audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences).)
 4. On the **Measurement Settings** page, click the **Conversions** pane to open the **Conversions** dialog.
 
-   <br /><br />**Note**<br />#### Note
+   > 📘 **Note**
+   >
+   > * If the **Conversion** dialog is locked, it means that the **Conversion** task has been assigned to your collaborator and that you cannot view its content. If you are the collaboration owner, you can unlock it by reassigning the task to yourself. However, any previous settings will be deleted, and the task will be reset.
+   > * If the **Conversion** pane is grayed out, ask the collaboration owner to assign you the Conversion task.
 
-   * If the **Conversion** dialog is locked, it means that the **Conversion** task has been assigned to your collaborator and that you cannot view its content. If you are the collaboration owner, you can unlock it by reassigning the task to yourself. However, any previous settings will be deleted, and the task will be reset.
-   * If the **Conversion** pane is grayed out, ask the collaboration owner to assign you the Conversion task.
 
 </Accordion>
 
@@ -236,9 +237,18 @@ The fields shown here depend on the conversion source types you selected during 
 
    * Map all five required fields under **Required**.
    * Map at least one identifier under **At least one is required**.
-   * Expand **Optional enrichment data** to map recommended fields like revenue, client user agent, or hashed identifiers.<br /><br />**Note**<br />#### Note
+   * Expand **Optional enrichment data** to map recommended fields like revenue, client user agent, or hashed identifiers.
+
+     <br /><br />**Note**<br />
+
+
+   #### Note
 
    If the campaign is combined withan Off-site campaign, and you map a field (for example, Event ID) that's already mapped in an off-site channel, you'll be prompted with an **Override field?** message. Click **Yes, continue** to confirm and apply the mapping across channels.
+
+
 3. Click **Save** to complete the source setup.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01K38T7G97M4403CPYYVG4F0SG=prerequisites set-up-onsite-campaign-conversions=set-up-on-site-campaign-conversions h_01K38T7G970AVGNTPN6JN7E5SC=set-up-on-site-campaign-conversions set-up-offsite-campaign-conversions=set-up-off-site-campaign-conversions h_01K38T7G97KP9NHFPPFG3F4992=set-up-off-site-campaign-conversions set-up-onsite-and-offsite-conversions=set-up-on-site-and-off-site-conversions h_01K38T7G97ZXZZQ48ZRY4A019F=set-up-on-site-and-off-site-conversions h_01K38T7G975KF5036EZTNA4NYJ=configuration-activities h_01K38T7G974NCK1XE35KG4CF79=prepare-conversion-data h_01K38T7G97156TM1AJD7HTNZ2K=open-conversion-settings h_01K38T7G97VGR60QBE1YP565XQ=note h_01K38T7G975CFGND94MK9B4PZS=set-conversion-data-provision-method h_01K38T7G979CKD39QCFV7ZESY5=set-conversion-source-location h_01K38T7G97XNE4AS4YE64QWK80=map-onsite-conversion-source-fields h_01K38T7G9738EZBAM1XVMASGK0=note-3 h_01K38T7G97HV111FQ6CQCQMXHH=note-5 h_01K38T7G976GHY5W6YDHJD1DY7=map-offsite-conversion-source-fields h_01K38T7G97WFBS0HHX1ASR2F5W=note-3 h_01K38T7G97MZF6RYY3YRG2EVPQ=note-4 h_01K38T7G976MJZWGDYMK6EB76A=note-5" />

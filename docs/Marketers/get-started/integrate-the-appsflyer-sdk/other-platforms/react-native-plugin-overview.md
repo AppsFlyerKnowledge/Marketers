@@ -27,3 +27,5 @@ x-zendesk:
 >
 > * The plugin is open-source and available on [GitHub](https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin).
 > * Go to our [Dev Hub](https://dev.appsflyer.com/hc/docs/react-native-plugin) to learn how to install and integrate the React Native plugin in your app.
+
+<div data-zendesk-anchors="h_01HE7SAKK0E1HGGRGS6PMQ4Q28=important" />

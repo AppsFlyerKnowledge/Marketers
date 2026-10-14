@@ -38,6 +38,8 @@ To configure your campaigns with Sojern for Advertisers, follow the steps below.
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -232,6 +234,8 @@ Set out below is an example of the Search and Confirmation for the hotel and fli
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 In this tab, you can create the attribution links you want to send to Sojern for Advertisers for attributing campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
@@ -271,11 +275,15 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost integration is not available for Sojern for Advertisers.
 
 </Accordion>
+
+<div id="ad-revenue-tab" />
 
 <Accordion title="Ad revenue tab">
 
@@ -283,8 +291,12 @@ Ad Revenue Tab integration is not available for Sojern for Advertisers.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 No configuration of permissions is available for Sojern for Advertisers.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJS0FHZ6KE2Z93F3SWGEM5B8=setting-up-sojern-for-advertisers h_01HJS0FHZ7Z9H58D8SWRCM64JH=integration-tab h_01HJS0FHZ7SZ1EPN7PDH7EYP0T=activate-partner h_01HJS0FHZ778T3QF4XNM8FCHX0=note h_01HJS0FHZ7EEAGSCDM4XXJVYC3=general-settings h_01HJS0FHZ78EV1K8DVKN50VJ0B=default-postbacks inapp-events-settings=in-app-events-settings h_01HJS0FHZ7AN3ZQYF4ZS3X4BVT=in-app-events-settings h_01HJS0FHZ7EVPMN25Y1985NFSS=event-types correct-configuration-of-inapp-events=correct-configuration-of-in-app-events h_01HJS0FHZ8807QADT9Z35NAWFT=correct-configuration-of-in-app-events h_01HJS0FHZ9J3MWRKF2YCWZ611Z=example h_01HJS0FHZ9ASEYGFWZ681EMZ47=attribution-link-tab h_01HJS0FHZ9YVAG37CQQK33RNJ2=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HJS0FHZ9R2SM91Y5WBP002M1=click-through-attribution h_01HJS0FHZ9GVGWJEPJ337B1DHE=click-attribution-link h_01HJS0FHZ9BXJHQWC9CQWNVANS=cost-tab h_01HJS0FHZ9TARRTF5WZZ6P2V30=ad-revenue-tab h_01HJS0FHZ9J271QZ8SKXKY6Z67=permissions-tab" />

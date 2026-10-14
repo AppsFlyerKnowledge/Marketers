@@ -49,6 +49,8 @@ The following table lists the tasks required to integrate your Vizio CTV app wit
 | Link setup | [Learn how to create direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links) | Marketer |
 | Report setup/view data | [Learn about data availability in dashboards and reports](/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability) | Marketer/Data engineer |
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -61,4 +63,6 @@ The following table lists the tasks required to integrate your Vizio CTV app wit
 
 > 📘 **See also**
 >
-> * [CTV, PC, and console platform overview](/docs/ctv-pc-and-console-platform-attribution-concepts)
+> * <span id="overview"></span>[CTV, PC, and console platform overview](/docs/ctv-pc-and-console-platform-attribution-concepts)
+
+<div data-zendesk-anchors="01H7Z16QWWCPR309JDKV7H0469=about-vizio-ctv-attribution 01H7Z16QWW3GJEAGV0F3JHTKE1=vizio-attribution-flow 01H7Z16QWW1WX5F947WPH9HBQX=integration-procedures 01H7Z16QWX24K8QCEJVBX1SQEA=traits-and-limitations h_01HE0T79YSNWGB3W4S7WEBW1B5=see-also" />

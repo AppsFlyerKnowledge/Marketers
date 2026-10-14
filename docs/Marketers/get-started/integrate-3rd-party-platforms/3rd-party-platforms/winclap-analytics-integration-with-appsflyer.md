@@ -46,6 +46,8 @@ The setup is done from the **Active Integrations** page, but to find the partner
 
 Winclap Analytics configuration makes use of the ***Integration*** tab only.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -131,11 +133,15 @@ Once this configuration is saved, AppsFlyer sends the following data to Winclap 
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution Links are not available for Winclap Analytics.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -143,14 +149,20 @@ Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 Permissions are not available for Winclap Analytics.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H9HWQK6JA2194MPE8PVQJ346=important h_01H9HWQK6JAQ2GCHHGQ57PJ570=setting-up-winclap h_01H9HWQK6JRZ1KVDJK00PZR7T9=note h_01H9HWQK6JX9MAD64MQ1HPK4T0=integration-tab h_01H9HWQK6JKRB5MDE43RKV3SEH=activate-partner h_01H9HWQK6JP4HQHRFC011KW6XQ=default-postbacks inapp-events-settings=in-app-events-settings h_01H9HWQK6J1MEK67XDMAMKAQKW=in-app-events-settings h_01H9HWQK6JBH1M2MZQM12R0SAR=attribution-link-tab h_01H9HWQK6JG46BGNRMR8ZM9W2J=cost-tab h_01H9HWQK6J7HHJWKVB55WE1VW9=ad-revenue-tab h_01H9HWQK6J6BD0ER2M9Z7GYGSM=permissions-tab" />

@@ -22,7 +22,7 @@ x-zendesk:
   created_at: '2024-07-08T14:14:21Z'
   edited_at: '2026-05-20T11:20:13Z'
 ---
-Note: The SSOT Data Locker report contains LTV-based data, not activity-based data. This means the data reflects users’ lifetime value across all touchpoints, rather than their in-app or event activity
+<span id="ssot-reports-in-data-locker"></span>Note: The SSOT Data Locker report contains LTV-based data, not activity-based data. This means the data reflects users’ lifetime value across all touchpoints, rather than their in-app or event activity
 
 ## What is Data Locker
 
@@ -40,6 +40,8 @@ The Single Source of Truth report:
 * **Load data into your BI systems:** SSOT provides an efficient and accurate way to build your internal BI systems using aggregated data. This includes attributions, in-app events, and revenue data, covering all dimensions and metrics. By loading this data into your BI systems, you can enhance your campaign performance and optimization processes while maintaining user privacy.
 * **Best granularity**: SSOT offers the highest level of granularity possible, even when modeling data gaps inherent in SKAN. This detailed data helps in making precise and informed decisions.
 
+<div id="setting-up-data-locker" />
+
 <Accordion title="Setting up Data Locker">
 
 To enable Single Source of Truth or SSOT reports, complete one of the following procedures.
@@ -50,6 +52,8 @@ To enable Single Source of Truth or SSOT reports, complete one of the following 
 | No | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/06f3ff8ccacda390fa259853b93e8b0e4ad01a692272f945fd71ca913e445bbb-30159015098129.png)**To set up Data Locker**:<ol><li>Complete the first-time Data Locker ([advertiser](/docs/data-locker-for-marketers#set-up-data-locker) \| [partner](/docs/data-locker-for-partners)) setup.</li><li>Add the reports to Data Locker:<ol><li>In AppsFlyer, from the side menu, select **Export > Data Locker**.</li><li>Select all the reports you want to get.</li><li>Click **Save configuration**.<br />The reports will be available the next day.</li></ol></li></ol> |
 
 </Accordion>
+
+<div id="ssot-report-facts" />
 
 <Accordion title="SSOT report facts">
 
@@ -95,6 +99,8 @@ all metrics are fully fixed and completed.
 [Learn more](/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#partial-data).
 
 </Accordion>
+
+<div id="directory-and-filename-structure" />
 
 <Accordion title="Directory and filename structure">
 
@@ -153,6 +159,8 @@ The metrics covers data of attributions, revenue, and the unique users performin
 
 [Download sample report](https://docs.google.com/spreadsheets/d/1e32M7XW7Lr7s7LTZUKO4EGwm4VrbbfwT/pub?output=xlsx)
 
+<div id="field-formats" />
+
 <Accordion title="Field formats">
 
 | Format name | Description |
@@ -167,11 +175,15 @@ The metrics covers data of attributions, revenue, and the unique users performin
 
 </Accordion>
 
+<div id="dimensions" />
+
 <Accordion title="Dimensions">
 
 <table><thead><tr><th>Field name</th><th>Description</th><th>Format</th></tr></thead><tbody><tr><td>af_ad_id</td><td>Ad identifier. Campaign hierarchy.</td><td>string</td></tr><tr><td>af_ad</td><td>Ad name.</td><td>string</td></tr><tr><td>af_adset_id</td><td>Ad-set identifier. Campaign hierarchy.</td><td>string</td></tr><tr><td>af_adset</td><td>Ad-set name.</td><td>string</td></tr><tr><td>app_id</td><td>App ID (advertiser app) with prefix ID.</td><td>string</td></tr><tr><td>attribution_method</td><td>The mechanism used for attributing the event. Examples of such mechanisms include AppsFlyer methods, SKAdNetwork (SKAN), and organic.</td><td>string</td></tr><tr><td>attributed_touch_type</td><td>Possible values: click impression, null.</td><td>string</td></tr><tr><td>campaign</td><td>Campaign name reported by the ad network to AppsFlyer.</td><td>string</td></tr><tr><td>af_c_id</td><td>Campaign identifier.</td><td>string</td></tr><tr><td>days_post_attribution</td><td>The number of days elapsed since the conversion date (not the specific conversion timestamp).<br/>Tip! Use this to calculate retention and KPI days.</td><td>int</td></tr><tr><td>event_name</td><td><p>Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app.</p><figure><table><colgroup><col/><col/></colgroup><thead><tr><th>event_name</th><th>What did the user do</th></tr></thead><tbody><tr><td>af_conversion</td><td>User converted. Use conversion_type to identify if it is an install, re-download, re-attribution. or re-engagement.</td></tr><tr><td>Advertiser defined in-app event</td><td>Performed an in-app event in the app</td></tr><tr><td>af_ssot_organic</td><td>Used to aggregate organic revenue from all events.<br/><br/>Note:af_ssot_organic is a system-generated event that aggregates all organic revenue data for apps using the SKAN Overall revenue measurement schema. This event appears when granular revenue by specific in-app events isn’t available due to SKAN limitations. It ensures that total organic revenue is still visible, even when attributed events can't be individually reported.</td></tr></tbody></table></figure></td><td>string</td></tr><tr><td>geo</td><td>The ISO country code. Derived from the user IP address in AppsFlyer classic attribution methods, while in SKAN the data is either enriched from ad-networks or modeled.</td><td>string</td></tr><tr><td>install_date</td><td>The installation date of the app. <br/><br/>SKAN: Estimated by AppsFlyer based on the postback arrival time. <br/><br/>AppsFlyer attribution methods: <br/>• User acquisition: First launch after install <br/>• Retargeting: First launch after re-engagement or re-attribution <br/><br/>Note: <code>install_date</code> is available as a column only for data warehouse connections, such as BigQuery and Snowflake.</td><td>string</td></tr><tr><td>is_primary_attribution</td><td><p>UA: True</p><p>Retargeting: During a re-engagement window, we attribute to both the original media source (before the re-engagement) and to the re-engagement media source. While the event is within the re-engagement window. The original media source will be FALSE (not primary attribution). The re-engagement media source will be TRUE.</p></td><td>bool</td></tr><tr><td>media_source</td><td>Ad network attributed to an event.</td><td>string</td></tr><tr><td>selected_currency</td><td>3-letter currency code (USD, EUR) set by you in the app settings. Format ISO-4217. This is the same currency used to display revenue in SSOT user interface.</td><td>string</td></tr><tr><td>conversion_type</td><td>Possible values:<br/>Install: User downloads and opens an app for the first time.<br/>Re-attribution: User reinstalls and is attributed to a new campaign.<br/>Re-download (SKAN): User installs the app again after uninstalling.<br/>Re-engagement: Re-engagement: User reopens the app after interacting with a retargeting ad.</td><td>string</td></tr></tbody></table>
 
 </Accordion>
+
+<div id="metrics" />
 
 <Accordion title="Metrics">
 
@@ -184,6 +196,8 @@ The metrics covers data of attributions, revenue, and the unique users performin
 | unique\_users | The number of distinct users performing an event. Values are cumulative.  <br />Example: For event\_name=purchase with days\_post\_attribution=2, the value reflects unique users who made purchases within two days post-install (not only on the second day). | int |
 
 </Accordion>
+
+<div id="modeled-data" />
 
 <Accordion title="Modeled data">
 
@@ -237,6 +251,8 @@ Note: The same logic applies to SKAN data for days 14, 21, and 30. This means th
 
 The reports contain data on user acquisition installs, retargeting re-attributions (re-downloads in SKAN), and re-engagements, along with their related in-app events.
 
+<div id="loading-reports" />
+
 <Accordion title="Loading reports">
 
 You can load unified, user acquisition, and retargeting reports separately or together into your BI system. If you load them together and want to filter views on your own:
@@ -250,6 +266,8 @@ You can load unified, user acquisition, and retargeting reports separately or to
 * Refer to [Double attribution of retargeting events](/docs/resolve-retargeting-double-attribution) for more details
 
 </Accordion>
+
+<div id="days-postattribution" />
 
 <Accordion title="Days post-attribution">
 
@@ -266,6 +284,8 @@ An example of a common mistake is to apply a simplified logic that sums the reve
 
 </Accordion>
 
+<div id="considerations" />
+
 <Accordion title="Tips">
 
 * Latest Version: Always retrieve the highest version number available for each install date, as it represents the most recent data. The version number is in Unix timestamp format, so the highest value indicates the latest version. This ensures your analysis uses the most accurate and up-to-date information.
@@ -280,9 +300,13 @@ An example of a common mistake is to apply a simplified logic that sums the reve
 
 </Accordion>
 
+<div id="example-use-cases" />
+
 <Accordion title="Example use cases">
 
 The following are examples of some popular, practical applications of the data that BI developers can extract via Data Locker. Each example is illustrated by an SQL statement and a sample Excel visual.
+
+<div id="calculating-total-attributions-per-campaign" />
 
 <Accordion title="Calculating total attributions per campaign">
 
@@ -301,6 +325,8 @@ GROUP BY install_date;
 ```
 
 </Accordion>
+
+<div id="calculating-conversions-installs-redownloads-to-compare-to-the-installs-in-the-dashboard-per-unique-campaign" />
 
 <Accordion title="Calculating conversions (installs & re-downloads) to compare with dashboard installs">
 
@@ -324,6 +350,8 @@ Note: When comparing Data Locker data with dashboard installs, include both inst
 
 </Accordion>
 
+<div id="calculating-retargeting-conversions-per-geo" />
+
 <Accordion title="Calculating retargeting conversions per geo">
 
 In this query, we:
@@ -342,6 +370,8 @@ GROUP BY install_date, conversion_type, geo;
 ```
 
 </Accordion>
+
+<div id="calculating-installs-by-attribution-method-per-media-source" />
 
 <Accordion title="Calculating installs by attribution method per media source">
 
@@ -362,6 +392,8 @@ GROUP BY install_date, attribution_method, media_source;
 
 </Accordion>
 
+<div id="calculating-cumulative-revenue-of-7-days-postinstall-for-facebook-per-adset" />
+
 <Accordion title="Calculating cumulative revenue of 30 days post-install for Facebook per ad-set">
 
 In this query, we measure the accumulated revenue within a 30-day period post-install for ads served on Facebook.
@@ -378,6 +410,8 @@ GROUP BY install_date, af_adset;
 ```
 
 </Accordion>
+
+<div id="calculating-cumulative-revenue-for-selected-postinstall-periods" />
 
 <Accordion title="Calculating cumulative revenue for selected post-install periods">
 
@@ -397,6 +431,8 @@ GROUP BY install_date;
 
 </Accordion>
 
+<div id="calculating-revenue-from-a-specific-inapp-event-purchase-per-media-source" />
+
 <Accordion title="Calculating revenue from a specific in-app event (purchase) per media source">
 
 In this query, we:
@@ -414,6 +450,8 @@ GROUP BY install_date, media_source;
 ```
 
 </Accordion>
+
+<div id="calculating-inapp-event-conversion-rate-for-2-days-postinstalls" />
 
 <Accordion title="Calculating in-app event conversion rate for 2 days post-installs">
 
@@ -433,6 +471,8 @@ GROUP BY install_date;
 ```
 
 </Accordion>
+
+<div id="calculating-arpu-for-7-days-and-2-days-postinstall-per-campaign-id" />
 
 <Accordion title="Calculating ARPU for 7 days and 2 days post-install per campaign ID">
 
@@ -457,6 +497,8 @@ GROUP BY install_date, af_c_id;
 
 </Accordion>
 
+<div id="calculating-amount-of-duplicates-per-media-source-in-this-query" />
+
 <Accordion title="Calculating Amount of Duplicates per Media Source In this query">
 
 In this query, we count the total number of duplicated user attributions by media source and install date, to highlight media channels that may have higher duplication in user attribution.
@@ -476,6 +518,8 @@ WHERE app_id = 'YOUR_APP'
 GROUP BY install_date, media_source;
 ```
 
+<div id="nonorganic-d7-revenue" />
+
 <Accordion title="Non-organic D7 revenue">
 
 Returns the total Day 7 revenue for non-organic installs (`AF Model` + `SKAN`), grouped by install date.
@@ -491,6 +535,8 @@ GROUP BY install_date;
 ```
 
 </Accordion>
+
+<div id="organic-d7-revenue" />
 
 <Accordion title="Organic D7 revenue">
 
@@ -527,6 +573,8 @@ GROUP BY install_date;
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Name | Description |
@@ -554,3 +602,5 @@ GROUP BY install_date;
 | SSOT Dashboard | The dashboard only shows D2 and D7 revenue. Long-term revenue cohorts (Day 14/21/30 ) are currently available only in the SSOT Data Locker export. |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01J454K90GWKME8F4JCDQKM3CK=what-is-data-locker h_01J454K90GRCFR3PSAQRTX98B4=what-is-single-source-of-truth-ssot h_01J454PANH9J6ZZ069RS6FVWZM=benefits-of-ssot-reports-in-data-locker h_01J46BV63AM52S5NFRJQ0CTG4M=setting-up-data-locker h_01J29BTC9CESJF592P616WMK46=ssot-report-facts h_01J29MB7B7Q3PJ9YWFQESWN0KD=directory-structure h_01J29MCSH4V41CPB7ZG41751QW=report-folder-hierarchy h_01J29MCSH40ATHNAJMY8KR7ANZ=directory-and-filename-structure report-structure::673746b9=report-structure h_01J29CQ5K4JBEP4X8YQ0V32WYR=report-structure h_01J29CHBX2QNFTAQSA1W01PFH0=field-formats h_01J29BTC9CJ8GZDDCHK9NBZ4YX=dimensions h_01J29BTC9C86YMVEY17QQZNZCV=metrics h_01J29BTC9CH3DAA7ZRHG8C04MF=modeled-data h_01J29M72WAPH3KEW9N60JHTT3W=partial-data h_01J29MS6XV7XYTA9Q81454WEQN=bi-developer-considerations h_01J2F4HG8YHDGYFKHBBC5KSN2G=loading-reports h_01J2F4HG8YKNEVGEWTR91ADSDS=days-postattribution h_01J3YT1X908JVMDXKRQBCRD1JR=important h_01J2F4HG8YAAE0E04Y6Q9Z62NZ=considerations h_01J3A82HZF14CCS027FE991M0T=example-use-cases h_01J3A883DQFQE0WTTY4FMX3AQ4=calculating-total-attributions-per-campaign h_01J3A883DQ82K71XY408M2BW0B=calculating-conversions-installs-redownloads-to-compare-to-the-installs-in-the-dashboard-per-unique-campaign h_01J3A883DQ5QAVH6AX7CGCBSWG=calculating-retargeting-conversions-per-geo h_01J3A883DQE25X31SPPF166BRH=calculating-installs-by-attribution-method-per-media-source h_01J3A883DQ8QVR8WKPPX1QF414=calculating-cumulative-revenue-of-7-days-postinstall-for-facebook-per-adset h_01J3A883DQ51T3Z6H239P5JDJ1=calculating-cumulative-revenue-for-selected-postinstall-periods h_01J3A883DQXRCQ4NWY0BCX886E=calculating-revenue-from-a-specific-inapp-event-purchase-per-media-source h_01J3A883DQRR62BWQ6JBTZ7238=calculating-inapp-event-conversion-rate-for-2-days-postinstalls h_01J3A883DRPEVDQCWKCT9M3EC1=calculating-arpu-for-7-days-and-2-days-postinstall-per-campaign-id h_01J3A883DRRZ9Y8F3KNAAPZT2S=calculating-amount-of-duplicates-per-media-source-in-this-query h_01JR7TG1QB16TAKGE22HB4XAF8=nonorganic-d7-revenue h_01JR7TG1QCEDHS9NCRJCSJWSB2=organic-d7-revenue h_01J29MV69M667QDHMS5WGYKPCZ=traits-and-limitations" />

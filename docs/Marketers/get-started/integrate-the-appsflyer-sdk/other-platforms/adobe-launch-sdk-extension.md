@@ -34,6 +34,8 @@ If you're using the Adobe Launch extension, there's no need for the standard [Ad
 
 A few things are required before integrating AppsFlyer Adobe SDK Extension.
 
+<div id="get-your-appsflyer-dev-key" />
+
 <Accordion title="Get your AppsFlyer dev key">
 
 ![dev_key.png](https://files.readme.io/bf25b5d583f3eaab57c230b68764f08c49806a50401955a511993d8a847e7d42-360006050318.png)
@@ -42,6 +44,8 @@ A few things are required before integrating AppsFlyer Adobe SDK Extension.
 2. Under ***SDK Installation***, copy the ***Dev Key***.
 
 </Accordion>
+
+<div id="get-your-app-id" />
 
 <Accordion title="Get your app ID">
 
@@ -53,6 +57,8 @@ A few things are required before integrating AppsFlyer Adobe SDK Extension.
 ## Step 1: Configuring Adobe Launch
 
 Follow the instructions here to configure Adobe Launch.
+
+<div id="11-creating-a-new-property-in-adobe-launch" />
 
 <Accordion title="1.1 Creating a new property in Adobe Launch">
 
@@ -66,6 +72,8 @@ Follow the instructions here to configure Adobe Launch.
 6. Click ***Save***.
 
 </Accordion>
+
+<div id="12-installing-required-adobe-launch-extensions" />
 
 <Accordion title="1.2 Installing required Adobe Launch extensions">
 
@@ -111,6 +119,8 @@ Install the following extensions in Adobe Launch:
 
 Follow the instructions in this section to Implement the Adobe SDK Extension into your app.
 
+<div id="21-adding-the-sdk-to-the-app" />
+
 <Accordion title="2.1 Adding the SDK to the app">
 
 ![adobe_sdk.png](https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png)
@@ -121,6 +131,8 @@ Follow the instructions in this section to Implement the Adobe SDK Extension int
 4. Copy the code snippets from the window that opens and follow the instructions. If you're the marketer configuring Adobe, send these code snippets to your app developer.
 
 </Accordion>
+
+<div id="22-publishing-the-environment" />
 
 <Accordion title="2.2 Publishing the environment">
 
@@ -138,6 +150,8 @@ To complete the SDK implementation, you need to publish the environment to a lib
 8. Under ***Approve***, click the three dots next to the library and select ***Build & Publish to Production***.
 
 </Accordion>
+
+<div id="23-adding-android-install-referrer-to-your-app" />
 
 <Accordion title="2.3 Adding Android install referrer to your app">
 
@@ -184,6 +198,8 @@ If you are using ProGuard and want to use Google's new referrer API, set the fol
 
 </Accordion>
 
+<div id="24-setting-required-permissions" />
+
 <Accordion title="2.4 Setting required permissions">
 
 Adding permissions helps increase the rate of [Probabilistic modeling attribution](/docs/appsflyer-attribution-model#probabilistic-modeling). It also allows the SDK to send more data like Wifi and carrier network data. You can find this data in [raw data reports](/docs/raw-data-reporting-overview) and use it for analysis and optimization of campaigns.
@@ -209,6 +225,8 @@ Now you can start using the Adobe SDK extension to send data to Adobe and AppsFl
 **Note**
 
 Currently, the Adobe Launch SDK extension only supports getting conversion data and sending events. However, when you add Adobe Launch SDK extension to your app, AppsFlyer SDK is also added. Therefore, any functionality currently missing from Adobe SDK extension can be implemented using AppsFlyer SDK.
+
+<div id="sending-events" />
 
 <Accordion title="Sending events">
 
@@ -255,6 +273,8 @@ All [conversion data](https://dev.appsflyer.com/docs/direct-deep-linking-1) that
 Conversion data is available in the Analysis Workspace in Adobe Analytics. For more information about how to migrate Adobe Mobile Services processing rules to Adobe Analytics, see [the Adobe documentation](https://experienceleague.adobe.com/en/docs/analytics/technotes/migrate-mobile).
 
 </Accordion>
+
+<div id="getting-data-for-deep-linking-and-deferred-deep-linking" />
 
 <Accordion title="Getting data for deep linking and deferred deep linking">
 
@@ -350,3 +370,5 @@ See the following table for mapping AppsFlyer Context Data variables:
 All data coming from the SDK is available in the Adobe Analytics report suite that is connected to the app.
 
 The data and its related dimensions and metrics can be used across your generated Adobe Analytics reports and dashboards. This data is also available in the AppsFlyer dashboard for attribution and in-app event analysis.
+
+<div data-zendesk-anchors="h_01HQQN1Y7MP7B0GXJFP5330G80=overview h_01HQQN1JWAQZZ9S3YV7VXTMRWM=prerequisites h_01HQQN1JWA4JYET26CB11JGY46=get-your-appsflyer-dev-key h_01HQQN1JWAHYQBRY43EWANQ57Z=get-your-app-id h_01HQQN1JWAAR873B679QGA9NSX=step-1-configuring-adobe-launch h_01HQQN1JWAE1T7SP3DHTFB55TK=11-creating-a-new-property-in-adobe-launch h_01HQQN1JWA8FDWMNZ4Y17AWYKW=12-installing-required-adobe-launch-extensions h_01HQQN1JWAMB8607K8V2F3YKHE=installing-adobe-analytics-extension h_01HQQN1JWAYHP9243MTFZ4B2EF=installing-appsflyer-sdk-extension h_01HQQN1JWA1TEBQY1NH3YP2HQB=install-profile-and-mobile-core-extension h_01HQQN1JWB3B24RHP9QMNPJK8J=step-2-implementing-appsflyer-adobe-sdk-extension h_01HQQN1JWBMP4ARMH2VPX35TGH=21-adding-the-sdk-to-the-app h_01HQQN1JWBV3144WY92PAX6PW2=22-publishing-the-environment h_01HQQN1JWBRRCTGA6Q9RDC41KN=23-adding-android-install-referrer-to-your-app h_01HQQN1JWB19NTCNTWX9QRP8AC=24-setting-required-permissions h_01HQQN1JWBVVVGRRXGX9ZJTBT8=add-required-permissions h_01HQQN1JWBFD2CZ4PMCBRM3JN8=using-the-adobe-sdk-extension h_01HQQN1JWBVZDAVAZD4NXMBG4S=sending-events h_01HQQN1JWBXG0JCE9RKA659H6V=getting-data-for-deep-linking-and-deferred-deep-linking h_01HQQN1JWBMBXGQFKGWHE058VT=connecting-appsflyer-conversion-data h_01HQQN1JWB0WBD6HZXQN6STJY9=using-appsflyer-mapped-conversion-data-for-analytics-and-analysis" />

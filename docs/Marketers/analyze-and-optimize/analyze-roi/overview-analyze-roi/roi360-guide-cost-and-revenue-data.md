@@ -49,3 +49,5 @@ The ROI360 revenue tools aggregate and report revenue data, taking into account 
 * [In-app purchase receipt validation](/docs/about-receipt-validation)
 * [Subscription revenue measurement](/docs/purchase-and-subscription-validation-overview)
 * [Revenue recording via customized in-app events](/docs/roi360-revenue-attribution-overview)
+
+<div data-zendesk-anchors="h_01HKHGX9JJQQCKF9SDZRSCM1XJ=overview h_01HKHGX9JJRWDP9PMYP9CFA7MQ=cost-tools h_01HKHGX9JJFQ9ZM6J3B2D5G6C5=revenue-tools" />

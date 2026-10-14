@@ -68,3 +68,5 @@ This method overcomes the lack of visual interface and allows user attribution w
 #### Who gets the attribution?
 
 In AppsFlyer, the "podcast" media source is considered a custom media source, and not an integrated partner. However, by integrating with AppsFlyer, Podcast app owners can receive postbacks for installs attributed to them. Podcast app owners are welcome to [contact](https://www.appsflyer.com/get-started/partners) AppsFlyer's partner development group.
+
+<div data-zendesk-anchors="01JB9NB6DY4ZTS1VAK9S0QSM2R=podcast-attribution-methods 01JB9NB6E5BHETTEY7Q0WD8JXE=dedicated-landing-page 01JB9NB6E9DZXTJTGDPT6HA3FS=example 01JB9NB6EANCCA0FG7ZQY48VSB=firing-onelink-click-from-a-podcast-app 01JB9NB6EDW22XGAM2HCA3CY9Q=example-1 01JB9NB6EDFJ3YNP1JYKDGPHEX=who-gets-the-attribution" />

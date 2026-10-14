@@ -127,3 +127,5 @@ public void onConversionDataSuccess(Map<String, String> conversionData)
 Most GA reports have a drill-down option called ***Custom Dimensions***. You can select the dimensions ***AppsFlyer Media Source*** or ***AppsFlyer Campaign*** ([set in step 1](/docs/google-analytics-integration-custom-dimensions#step-1-define-it-on-google-analytics)) to see which media sources and campaigns bring users that install your app.
 
 ![G_analytics1.png](https://files.readme.io/dde9219a7a8eec5c861b5031ad741ff7377d85ba9c3693bcbc455fd735f8af2d-4413121449617.png)
+
+<div data-zendesk-anchors="h_01HDP3FHGNR06EV1KS8F1PFQ09=custom-dimensions-on-google-analytics h_01HDP3FHGP9H18VJKNSR27HXEZ=setting-media-source-as-a-custom-dimension-on-google-analytics h_01HDP3FHGPTJ4EVYPDA7RWPJF9=step-1-define-it-on-google-analytics h_01HDP3FHGPF3BJZSG6G0QP5T1R=step-2-setting-and-sending-the-data-from-the-app h_01HDP3FHGP9G9BP956KM4ACDRC=step-3-see-the-results-in-google-analytics" />

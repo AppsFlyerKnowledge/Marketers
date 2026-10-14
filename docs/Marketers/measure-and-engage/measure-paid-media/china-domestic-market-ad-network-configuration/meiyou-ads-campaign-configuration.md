@@ -38,6 +38,8 @@ x-zendesk:
 
 Meiyou Ads configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration Tab">
 
 ### Activate Partner
@@ -81,6 +83,8 @@ Meiyou Ads connects with AppsFlyer via a unique Key. If you don't already have t
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution Link Tab">
 
@@ -147,17 +151,23 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost Tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad Revenue Tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions Tab">
 
@@ -177,3 +187,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW6VQGVGFA45SQK1KANQ10Q=setting-up-meiyou-ads h_01HKW6VQGV71MM2T401TGHEMHA=integration-tab h_01HKW6VQGV3HG1ZTR41BD43ZTC=activate-partner h_01HKW6VQGVNG13KARWZBSD59KX=general-settings h_01HKW6VQGV32R49RCEKCYK1G18=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW6VQGVHCVWR4KDHTH24D17=in-app-events-settings h_01HKW6VQGVV9X64XHW48VGW6E6=attribution-link-tab h_01HKW6VQGVZJ36JVCZ3SW7Z3YD=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6VQGWZQQZWT476QT496YF=click-through-attribution h_01HKW6VQGWG7BH11EK5HQACKVY=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HKW6VQGWFJEJYD9KG8BH9EX0=view-through-attribution-lookback-window h_01HKW6VQGWXCB2W13TM4WAGWE1=impressions-attribution-link h_01HKW6VQGWY3AFFTN0DP8BCV7S=cost-tab h_01HKW6VQGWARB4409DWKVDY45W=ad-revenue-tab h_01HKW6VQGW20F6TTCBPGDH57JW=permissions-tab h_01HKW6VQGWXBME473RXA5K1217=ad-network-permissions" />

@@ -51,3 +51,5 @@ Learn more about [partner integrations](/docs/set-up-an-integrated-partner).
 ## Configuring on Adquant
 
 When you configure your campaigns on Kenshoo the campaign name must begin with "**adquant\_**".
+
+<div data-zendesk-anchors="h_01HKA16FBVZFPFYAYCEP9Z5EGS=setting-up-adquant inapp-events=in-app-events h_01HKA16FBVM6Z921JKWR7Y0RJG=in-app-events h_01HKA16FBVZFMZ5CGGQW49E7R4=configuring-on-adquant" />

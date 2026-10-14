@@ -63,6 +63,8 @@ When the user's registration is approved
 
 </Accordion>
 
+<div id="login-af_login" />
+
 <Accordion title="Login (af_login)">
 
 **Purpose**
@@ -82,6 +84,8 @@ Can be sent without any additional parameters
 ## Recommended structures for custom events
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
+
+<div id="registration-submitted-registration_submitted" />
 
 <Accordion title="Registration submitted (registration_submitted)">
 
@@ -104,6 +108,8 @@ After the user submits a request to register
 
 </Accordion>
 
+<div id="fill-loan-form-fill_loan_form_form_name" />
+
 <Accordion title="Fill loan form (fill_loan_form_&lt;FORM_NAME>)">
 
 **Purpose**
@@ -123,6 +129,8 @@ Can be sent without any additional parameters
 > 📘 **Note**
 >
 > It is highly recommended that you associate loans with lenders. To do so, make sure to set the Customer User ID. [Setting the Customer User ID](/docs/customer-user-id-field-cuid) is your way to match lenders with users of your app as they appear in AppsFlyer. By setting the Customer User ID you make sure that any event is sent with the Customer User ID.
+
+<div id="submit-loan-application-submit_loan_application" />
 
 <Accordion title="Submit loan application (submit_loan_application)">
 
@@ -148,6 +156,8 @@ When the user successfully submits a loan application
 
 </Accordion>
 
+<div id="loan-form-loan_form" />
+
 <Accordion title="Loan form (loan_form)">
 
 **Purpose**
@@ -168,6 +178,8 @@ When the borrower successfully submits a loan application
 
 </Accordion>
 
+<div id="submit-credit-check-submit_credit_check" />
+
 <Accordion title="Submit credit check (submit_credit_check)">
 
 **Purpose**
@@ -187,6 +199,8 @@ After the lender receives a request for a loan
 | loan\_type | Loan period | 3 months |
 
 </Accordion>
+
+<div id="loan-accepted-loan_accepted" />
 
 <Accordion title="Loan accepted (loan_accepted)">
 
@@ -212,6 +226,8 @@ When a loan is accepted
 
 </Accordion>
 
+<div id="loan-rejected-loan_rejected" />
+
 <Accordion title="Loan rejected (loan_rejected)">
 
 **Purpose**
@@ -229,6 +245,8 @@ When a lender rejects a loan
 | loan\_id | ID of the loan | 1735102 |
 
 </Accordion>
+
+<div id="payment-payment" />
 
 <Accordion title="Payment (payment)">
 
@@ -250,6 +268,8 @@ When a borrower makes a payment on their loan
 
 </Accordion>
 
+<div id="payment-completed-payment_completed" />
+
 <Accordion title="Payment completed (payment_completed)">
 
 **Purpose**
@@ -267,6 +287,8 @@ When a loan is fully paid back
 | loan\_id | ID of the loan | 1735102 |
 
 </Accordion>
+
+<div id="payment-received-payment_received" />
 
 <Accordion title="Payment received (payment_received)">
 
@@ -289,3 +311,5 @@ When a borrower makes a payment on their loan
 </Accordion>
 
 </Accordion>
+
+<div data-zendesk-anchors="p2p-lending=-p2p-lending h_01HGTAY6DHKXCTP52P2EPHXN5H=-p2p-lending h_01HGTAY6DHDDG3MVCXEM705MTK=important h_01HGTAY6DH1V6S5NKJEFCVW1PF=recommended-structures-for-predefined-events h_01HGTAY6DHHGW3M6NQ0K3J6HTC=complete-registration-af_complete_registration h_01HGTAY6DHZTKJR94T8B6WEYZ6=login-af_login h_01HGTAY6DH00660DSP5RX3PA9C=recommended-structures-for-custom-events h_01HGTAY6DHETK285KPGW54YV5Z=registration-submitted-registration_submitted h_01HGTAY6DHCQKWMG4YRZDHBMZT=fill-loan-form-fill_loan_form_form_name h_01HGTAY6DHHNJ9EKV3FQ6BKKBF=note h_01HGTAY6DH4D6NV1NHV5717CDH=submit-loan-application-submit_loan_application h_01HGTAY6DHVWFEFJYB4TGK1B9W=loan-form-loan_form h_01HGTAY6DH7V1JSPCDHDTFR4YA=submit-credit-check-submit_credit_check h_01HGTAY6DH22HRQQJ5NQ2T71QM=loan-accepted-loan_accepted h_01HGTAY6DHTMJ22KQSXHNBJ8B3=loan-rejected-loan_rejected h_01HGTAY6DHD8A2H61XKFPXW589=payment-payment h_01HGTAY6DJWJDQBW52RPG7W7P4=payment-completed-payment_completed h_01HGTAY6DJE0K3VC0YNVWAXT29=payment-received-payment_received" />

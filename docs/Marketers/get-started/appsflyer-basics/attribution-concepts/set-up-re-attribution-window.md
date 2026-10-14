@@ -50,6 +50,8 @@ Installs are evaluated relative to the setting at the moment of install. As such
 
 ## Re-attribution window use cases
 
+<div id="first-install" />
+
 <Accordion title="First install">
 
 A lead (who never had the app installed) engages with either a user acquisition or retargeting campaign and installs the mobile app.
@@ -76,6 +78,8 @@ The following happens:
 * Depending on the [**Post Reinstall Events Attribution**](/docs/measure-reinstalls#overview) state, in-app events of these reinstalling users are either attributed to organic or to the original install.
 
 </Accordion>
+
+<div id="reattribution" />
 
 <Accordion title="Re-attribution">
 
@@ -105,8 +109,12 @@ The user uninstalls the app. Then, after the re-attribution window ends, the use
 
 </Accordion>
 
+<div id="ios-app-restored-from-icloud-backup" />
+
 <Accordion title="iOS app restored from iCloud backup">
 
 Regardless of the re-attribution window, when an application is backed up using iCloud and later restored (on the same device or on another device), AppsFlyer doesn't count it as a new install or reinstall. A user who restores an app from iCloud maintains their AppsFlyer ID and attribution data.
 
 </Accordion>
+
+<div data-zendesk-anchors="reattribution-window=re-attribution-window h_01H95B0F8XEX9RFXW8W6QBQJBY=re-attribution-window setting-the-reattribution-window=setting-the-re-attribution-window h_01H95B0F8X2YQWBB9H0WFXPK8C=setting-the-re-attribution-window reattribution-window-use-cases=re-attribution-window-use-cases h_01H95B0F8Y4T13VYEN2D7T5GHR=re-attribution-window-use-cases h_01H95B0F8Y58QFRSJ9TV3J34EX=first-install h_01H95B0F8YBY482KHT09CZNT9E=reinstall h_01H95B0F8YCQV3H6ZSZE0DF5VV=reattribution h_01H95B0F8Y046Q80V0S8YZ1DWG=new-install h_01H95B0F8Y6M7W02ZSNYCN66PD=ios-app-restored-from-icloud-backup" />

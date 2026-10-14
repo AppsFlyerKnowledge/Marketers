@@ -24,6 +24,8 @@ x-zendesk:
 ---
 ## Use Partner Integrations
 
+<div id="what-information-can-i-see-on-a-partner-card-without-entering-the-page" />
+
 <Accordion title="What information can I see on a partner card without entering the page?">
 
 To make it easier for you to evaluate the partner without going to the partner page for more details, you can see the following information on [partner cards](/docs/partner-integrations#partner-cards):
@@ -35,11 +37,15 @@ To make it easier for you to evaluate the partner without going to the partner p
 
 </Accordion>
 
+<div id="how-do-i-use-filters-with-a-search-query" />
+
 <Accordion title="What filters are available for searching partners?">
 
 AppsFlyer Partner Integrations allow you to use filters to refine your search results. Use filters such as Partner type, Target region and geo, High-Quality traffic, and AppsFlyer performance index. See the [description of each filter.](/docs/partner-integrations?query=marketplace#filters)
 
 </Accordion>
+
+<div id="with-the-new-marketplace-how-do-i-integrate-with-new-partners" />
 
 <Accordion title="How do I integrate with new partners?">
 
@@ -51,8 +57,12 @@ Learn [how to integrate with new partners in Partner Integrations](/docs/partner
 
 ## Troubleshooting
 
+<div id="if-i-see-an-interesting-partner-without-any-contact-details-what-should-i-do" />
+
 <Accordion title="If I see an interesting partner without any contact details—what should I do?">
 
 We’re doing our best to make sure all partners provide their contact details, but in case it’s still missing, reach out to your contact person in AppsFlyer.
 
 </Accordion>
+
+<div data-zendesk-anchors="using-the-marketplace=use-partner-integrations h_01HDP4CWFT45A39SPKSEPBEK60=use-partner-integrations h_01HDP4CWFTCRPR87K9J6J5PG7M=what-information-can-i-see-on-a-partner-card-without-entering-the-page h_01HDP4CWFTPGJ2C71H98M6DYGN=how-do-i-use-filters-with-a-search-query h_01HDP4CWFTTPK6GRGFHPT3YXBM=with-the-new-marketplace-how-do-i-integrate-with-new-partners h_01HDP4CWFTCYYWTG09PVF044RW=troubleshooting if-i-see-an-interesting-partner-without-any-contact-details%E2%80%94what-should-i-do=if-i-see-an-interesting-partner-without-any-contact-details-what-should-i-do h_01HDP4CWFTHSY5X9FA7VAWD15M=if-i-see-an-interesting-partner-without-any-contact-details-what-should-i-do" />

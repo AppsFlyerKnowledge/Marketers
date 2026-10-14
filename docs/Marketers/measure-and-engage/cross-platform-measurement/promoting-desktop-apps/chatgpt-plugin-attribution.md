@@ -59,3 +59,5 @@ Webmovs is a streaming service, which promotes a new ChatGPT plugin on CTV ads. 
 The ChatGPT plugin attribution feature is still in Beta testing.
 
 If you’d like to take part in this please contact your CSM.
+
+<div data-zendesk-anchors="about-chatgpt-attribution=what-are-chatgpt-plugins use-case-1-holistic-ltv=use-case-1---holistic-ltv use-case-2-platform-performance-comparison=use-case-2---platform-performance-comparison use-case-3-show-me-the-movie=use-case-3---show-me-the-movie" />

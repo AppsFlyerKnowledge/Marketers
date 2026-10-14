@@ -80,3 +80,5 @@ Therefore, app developers should select **Yes** when asked if the data is linked
 >
 > * [AppsFlyer Service Privacy Policy](https://www.appsflyer.com/services-privacy-policy/): How AppsFlyer handles and uses data.
 > * [App privacy details on the App Store by Apple](https://developer.apple.com/app-store/app-privacy-details/).
+
+<div data-zendesk-anchors="h_01HE7T7J409620K5KX5XKPEQVZ=nutrition-labels-and-the-app-store-review h_01HE7T7J4004XVJTMF6S964DVB=data-types-collected h_01HE7T7J4098NNW8D0BCD3EFBJ=data-use-purposes h_01HE7T7J41BJG9GTBWMVKG7031=data-linked-to-an-identity h_01HE7TES34MEF1XR4B6BDEMJW4=see-also" />

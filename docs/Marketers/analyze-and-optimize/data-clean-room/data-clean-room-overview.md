@@ -84,3 +84,5 @@ Follow these steps to set up the DCR to meet your organization's needs:
 5. Set up your [sources](/docs/data-clean-room-working-with-sources) in the AppsFlyer DCR platform.
 6. Set up your [reports](/docs/data-clean-room-working-with-reports) in the AppsFlyer DCR platform.
 7. Develop the automations that will ingest the reports after they are delivered by the DCR to your cloud storage.
+
+<div data-zendesk-anchors="h_01HE7SDH5PWCW6YG00GC12W4BS=introduction h_01HE7SDH5PW64CHNJVJJ30V5ZY=how-does-it-work h_01HE7SDH5P82HCEN52ZBPMQV16=how-does-the-dcr-obtain-data h_01HE7SDH5PWDQ61389TT7V83F8=what-does-the-dcr-do-with-the-data h_01HE7SDH5P3QSG874XASXNH1YS=dcr-terminology h_01HE7SDH5P0S9542P2CB22KKVT=working-with-the-dcr-setup-workflow" />

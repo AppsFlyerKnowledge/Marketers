@@ -54,6 +54,8 @@ The setup involves defining the integration between TikTok Web Ads and AppsFlyer
 
 Start by activating the TikTok Web Ads integration and setting the postbacks AppsFlyer sends to the Events API.
 
+<div id="1-activate-the-tiktok-ads-integration" />
+
 <Accordion title="1. Activate the TikTok Web Ads integration">
 
 To activate the TikTok Web Ads integration:
@@ -71,6 +73,8 @@ To activate the TikTok Web Ads integration:
 > Enabling CCPA compliance limits the data coming from TikTok Web Ads users based in California or other sensitive states in the US.
 
 </Accordion>
+
+<div id="2-set-inapp-event-postbacks" />
 
 <Accordion title="2. Set in-app event postbacks">
 
@@ -104,14 +108,16 @@ To set in-app event postbacks:
    events
    will be sent with their revenue values. See
    [Data to include in the postbacks](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks).
-   <br /><br />**Note**<br />#### Note
 
-   * If you are setting a purchase event, set the
-     **including** column to
-     **Values and revenue**. Selecting any other
-     option will cause the postback to fail.
-   * Currently, only the purchase event can be set to include
-     revenue.
+   > 📘 **Note**
+   >
+   > * If you are setting a purchase event, set the
+   >   **including** column to
+   >   **Values and revenue**. Selecting any other
+   >   option will cause the postback to fail.
+   > * Currently, only the purchase event can be set to include
+   >   revenue.
+
 8. [Optional] Click the **Add condition** icon
    to
    [set conditions](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks)
@@ -151,11 +157,15 @@ For more information, see
 
 Complete the following steps in TikTok Ads Manager.
 
+<div id="1-set-the-campaign-type-objective-and-goals" />
+
 <Accordion title="1. Set the campaign type, objective, and goals">
 
 You can choose any pre-defined in-app event sent from AppsFlyer as your campaign goal. Select a campaign objective that aligns with your website conversion goals, for example, driving traffic to your website or optimizing for on-site conversions.
 
 </Accordion>
+
+<div id="2-set-destination-url" />
 
 <Accordion title="2. Set destination URL">
 
@@ -215,3 +225,5 @@ Measure TikTok cost, clicks, and impressions alongside your web attribution data
 | Trait | Remarks |
 | --- | --- |
 | Re-engagement | Re-engagement postbacks via the Events API are not currently supported. |
+
+<div data-zendesk-anchors="h_01KQC152Q49R7P96BPMMZGVZWS=overview h_01KQC25PY3PPRTQBJ7K8NV3JWQ=see-also h_01KQC152Q42VT7XKTGCEJV7V7S=important h_01KQC152Q4A31VJ1JTXWJG6CN0=prerequisites how-to-set-up-tiktok-ads-for-your-website-app=how-to-set-up-tiktok-web-ads-for-your-website-app h_01KQC152Q4S1VTK7BGWPHHD27W=how-to-set-up-tiktok-web-ads-for-your-website-app part-1-set-up-tiktok-ads-integration-in-appsflyer=part-1-set-up-tiktok-web-ads-integration-in-appsflyer h_01KQC152Q4J5ZCSFVM8EZ8ZBTZ=part-1-set-up-tiktok-web-ads-integration-in-appsflyer h_01KQC152Q4WDH8W6AVV679JPGS=1-activate-the-tiktok-ads-integration h_01KQC152Q492SBJMJ3J10B1R84=note h_01KQC152Q4QWF2996MBS0BYCK7=2-set-inapp-event-postbacks h_01KQC152Q4561EWHVKB7A1AWDX=note-1 part-2-set-up-appsflyer-integration-in-tiktok-ads=part-2-set-up-appsflyer-integration-in-tiktok-web-ads h_01KQC152Q4NKQHF75Y14XCCFNH=part-2-set-up-appsflyer-integration-in-tiktok-web-ads h_01KQC152Q4TMJ0F09Q1PZYV71A=1-set-the-campaign-type-objective-and-goals h_01KQC152Q414XNHHR0Q2B8ZCST=2-set-destination-url h_01KQC152Q4F3WQKETR34WRHACT=note-2 h_01KQC152Q4BYHRW52BYBJHBGJ4=note-3 h_01KQC152Q45QE5M5BGD4RJNFR9=view-web-attribution-data h_01KQD9Z1XY7AB3CDE4FGHTKLM=measure-cost-clicks-and-impressions h_01KQC152Q45WC7HNZ64T98JJ6Y=traits-and-limitations" />

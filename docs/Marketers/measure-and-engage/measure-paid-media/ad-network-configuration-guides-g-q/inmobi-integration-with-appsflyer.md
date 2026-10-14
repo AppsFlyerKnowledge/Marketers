@@ -45,6 +45,8 @@ Inmobi's configuration window includes 4 active tabs: **Integration, Attribution
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partners
@@ -94,6 +96,8 @@ In this section you can map your AppsFlyer events with InMobi via postbacks.
 | **Send Revenue** | **When unchecked** - Send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - Send all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -191,6 +195,8 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
@@ -203,11 +209,15 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue data is not supported by this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -218,3 +228,5 @@ Select which [permissions to grant](/docs/set-up-an-integrated-partner#permissio
 > When the integration is [deactivated](/docs/partner-activation-deactivation) while the Permissions toggle is still turned on, permissions remain granted.
 
 </Accordion>
+
+<div data-zendesk-anchors="setting-up-glispa=setting-up-inmobi h_01HKA0TGE08PJDBQHFER5ZZ785=setting-up-inmobi h_01HHVXZ7FSGDRCECE93ZF69VMS=tip h_01HHVXZ7FSZ7W855TSN5TSPD0G=integration-tab h_01HHVXZ7FSJ0PS5KQ0YZHVSFKF=activate-partners h_01HHVXZ7FSM5PT4VJRGVWDBRDK=note h_01HHVXZ7FSDF06G1848W0YH8W6=general-settings h_01HHVXZ7FS0DEZPEEH7D68SH0B=default-postbacks inapp-events-settings=in-app-events-settings h_01HHVXZ7FS47Y4T3KDR732WCE6=in-app-events-settings h_01HHVXZ7FSX2TJC13GT3TGR7ZK=attribution-link-tab h_01HHVXZ7FSCE4NP1XC0ZJ81858=attribution-link-parameters h_01HHVXZ7FSAVKE25TSS98RMK8V=retargeting-settings clickthrough-attribution=click-through-attribution h_01HHVXZ7FTE8EZYBA4HS45MFAR=click-through-attribution h_01HHVXZ7FTP962PWNMEEDB31H5=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HHVXZ7FT8HVSEXB5YWABPXNA=view-through-attribution-lookback-window h_01HHVXZ7FT7V6M8VC69EYRK700=impressions-attribution-link h_01HHVXZ7FT9W1RN6P06JE53S7X=cost-tab h_01HHVXZ7FTGSKZCB57RT9GPYC9=ad-revenue-tab h_01HHVY4WHSM3B33KYACR9DJ5ZW=permissions-tab 01H88VAJH3XYP81GTFBWDBXECP=note-1" />

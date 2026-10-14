@@ -55,6 +55,8 @@ See the sections that follow for instructions for the view, add, edit, and delet
 
 </Accordion>
 
+<div id="add-rule" />
+
 <Accordion title="Add rule">
 
 The rule builder user interface is designed for interactive rule building. **Tip!** Familiarize and experiment with the rule builder before reviewing this article in detail.
@@ -83,6 +85,8 @@ The rule builder user interface is designed for interactive rule building. **Ti
 
 </Accordion>
 
+<div id="edit-duplicate-or-delete-a-rule" />
+
 <Accordion title="Edit, duplicate, or delete a rule">
 
 **Considerations:**
@@ -104,6 +108,8 @@ When you edit or delete a rule, previously calculated data (up to 90 days in the
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -116,3 +122,5 @@ When you edit or delete a rule, previously calculated data (up to 90 days in the
 Traits and limitations
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HFV23CD24HQVC82NNNBDKFRH=overview h_01HFV23CD38RXRT59DNGZAADV1=procedures h_01HFV23CD3F5ZPT4D3X8PHJS4T=view-rule-list h_01HFV23CD3MZSZDKTH8CZAY954=add-rule h_01HFV23CD3W6J9QSPHBV9NE19S=note h_01HFV23CD3SHHR1HRK6DX4QCET=edit-duplicate-or-delete-a-rule h_01HFV23CD3QH6X0WJEAFTMXNMD=note-1 h_01HFV23CD3E486GBA5XBSN41RA=traits-and-limitations" />

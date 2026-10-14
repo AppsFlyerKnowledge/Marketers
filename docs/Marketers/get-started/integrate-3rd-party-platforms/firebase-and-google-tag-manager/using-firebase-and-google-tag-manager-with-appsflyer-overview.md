@@ -57,3 +57,5 @@ Once everything is in place, proceed to [GTM setup](/docs/using-firebase-and-goo
 > 📘 **See also**
 >
 > * [Migrate from Firebase Dynamic Links to AppsFlyer](/docs/migrate-from-firebase-dynamic-links-to-appsflyer)
+
+<div data-zendesk-anchors="h_01HE7SKSCBH47YYFTKBWY3JVSV=considerations h_01HE7SKSCBBTTWATRZ87BYRW6G=note h_01HE7SKSCB9QHA4WEERVSWMF0P=prerequisites h_01HE7SQQG2VJW9179Q77PTZFPH=see-also" />

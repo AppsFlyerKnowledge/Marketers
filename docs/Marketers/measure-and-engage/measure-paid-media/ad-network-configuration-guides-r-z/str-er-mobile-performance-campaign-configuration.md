@@ -45,6 +45,8 @@ Ströer Mobile Performance's configuration window includes 3 active tabs: Integr
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -85,6 +87,8 @@ In this section, you can map your AppsFlyer events with Ströer Mobile Performan
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 In this tab, you can create the attribution links you want to send to Ströer Mobile Performance for attributing Ströer Mobile Performance's campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
@@ -124,6 +128,8 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Ströer Mobile Performance automatically sends CPI cost data on the attribution link for all installs.
@@ -132,11 +138,15 @@ For the full list of partners supporting cost data, click [here](/docs/roi360-co
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue data is not supported by this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -157,3 +167,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJS1HC2Q3DAFRS8VJ9F3N5DP=setting-up-str%C3%B6er-mobile-performance h_01HJS1HC2QQKDQR5EF5DBJMYRQ=tip h_01HJS1HC2Q5YXB8Q8XNNMGG44S=integration-tab h_01HJS1HC2QYD5B3ZM06SVE42SK=activate-partners h_01HJS1HC2QK20MTWR68JNP49QV=default-postbacks inapp-events-settings=in-app-events-settings h_01HJS1HC2R1WET88A5HX3F20W7=in-app-events-settings h_01HJS1HC2RVNDZD3AC967A38KN=attribution-link-tab h_01HJS1HC2RBBX2BMHVPSPW3VD5=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HJS1HC2RQADFCQ2MHD0E60NC=click-through-attribution h_01HJS1HC2RMPPRFZR2X02KGDD0=click-attribution-link h_01HJS1HC2R1PVYA6N2QSHHFWVZ=cost-tab h_01HJS1HC2R34B2SQDBW4D3JEC5=ad-revenue-tab h_01HJS1HC2RZX1WPTF60M0ARKTV=permissions-tab h_01HJS1HC2RW0SPDXWBA7H6SRGP=ad-network-permissions" />

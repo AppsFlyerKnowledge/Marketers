@@ -101,3 +101,5 @@ Learn more about [Dynamic Event Mapping for In-App Events](/docs/dynamic-event-m
 
 * If you have an integration with AppsFlyer, contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
 * If you don't have an integration with AppsFlyer, complete the ad Partners Registration application [here](https://www.appsflyer.com/partners-registration/).
+
+<div data-zendesk-anchors="h_01ET22GJ5N67DKECBQ41QEPEAT=create-attribution-link 01JFT1MXJJF3C17B3Y9Q8604BM=example-attribution-link-after-adding-tune-macros create-install-and-inapp-event-postbacks=create-install-and-in-app-event-postbacks h_01ET22H0A0MQ3HH30AJ1TMFNTQ=create-install-and-in-app-event-postbacks 01JFT1MXJNSTV7YRVX3BPZ50CY=sample-postbacks 01JFT1MXJNJBY1P51JQ3ES7QYS=global-install-postback inapp-event-postback=in-app-event-postback 01JFT1MXJNMF0FWJ2RFER3E316=in-app-event-postback 01JFT1MXJQAXV53RKACW0VAS6E=finalizing-your-registration" />

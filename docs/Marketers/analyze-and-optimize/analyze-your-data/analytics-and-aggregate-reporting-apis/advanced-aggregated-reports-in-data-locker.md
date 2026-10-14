@@ -42,6 +42,8 @@ To get advanced aggregated reports, complete one of the following procedures.
 
 ## Reports available
 
+<div id="cohort-versioned-report" />
+
 <Accordion title="Advanced aggregated (cohort versioned) reports">
 
 ### Report facts
@@ -173,6 +175,8 @@ bucket
 | 10 | Day 8 at 7 AM | Complete conversion and in-app event data for Day 0, and complete ad revenue data sent via S2S, accounting for any potential issues that may have occurred on the ad revenue network side | Day 8 at 1 PM |
 
 </Accordion>
+
+<div id="cohort-timezone-versioned-report" />
 
 <Accordion title="Advanced aggregated (cohort timezone versioned) reports">
 
@@ -335,6 +339,8 @@ Report use cases may be different depending on your geo and timezone. Use the fo
 
 </Accordion>
 
+<div id="bi-developer-considerations" />
+
 <Accordion title="BI developer considerations">
 
 **Scope of data in the report**
@@ -361,6 +367,8 @@ If you just use the unified view in your data loading process, you can use logic
 The data of all apps is configurable; it can be provided in a single file or separate files per app.
 
 </Accordion>
+
+<div id="use-cases" />
 
 <Accordion title="Use cases">
 
@@ -709,3 +717,5 @@ group by 1,2,3
 >
 > * [Combine Cost ETL and Advanced aggregated cohort reports](/docs/combine-cost-etl-and-cohort-reports-via-data-locker)
 > * [Cohort dashboard](/docs/cohort-and-retention-dashboard)
+
+<div data-zendesk-anchors="h_01HWWH83KNSF4BRGTDJ0JD271G=advanced-aggregated-reports-in-data-locker h_01HWWH83KN9CM7ZY43W01AV6TA=setup h_01HWWNY76W6RFKX33MXHE4GSBD=reports-available h_01HWWNR256DRMBNFX3NV8ATNAY=cohort-versioned-report h_01HVRBVXS47K91A6KVV33S1BY6=report-facts h_01HWWH83KNE46SPK1MS99XX64D=report-structure 01H7WG3CA14PQ2PJ58FX8TE6ZH=dimensions 01H7WG3CA24VQKFVP99S82GCXZ=metrics h_01HVRDKKQA17SMJFFAEDG7A2X2=directory-and-filename-structure the-report-folder-hierarchy-in-aws=report-folder-hierarchy h_01HETBAQVVA750VTE1ABSM2M47=report-folder-hierarchy h_01HWWH83KN51RR2VJ2F5N8YQ3J=report-versions-and-data-freshness h_01HWWNVFCWJ7DZCKKKSBMH9NM5=cohort-timezone-versioned-report report-facts::15e071f=report-facts-1 h_01HWWH83KNPZETHR2TQS2E4QNT=report-facts-1 report-structure::43ffff28=report-structure-1 h_01HWWH83KNG0V2ZMZZ7CTV2GE7=report-structure-1 01HWSX3FA0K39D9M5RQ7J36Q23=dimensions-1 01HWSX3FA035Z8W6EPV4Q6E3JP=metrics-1 01HWSX3FA189EMBJZ1P21YHC45=directory-and-filename-structure-1 01HX97NC4F2WCJABSM2NBSBEDN=report-folder-hierarchy-1 report-versions-and-data-freshness::e0755e26=report-versions-and-data-freshness-1 h_01HWWH83KPS2ANCQKS2B3V529Z=report-versions-and-data-freshness-1 h_01HWWH83KPK8535X9EBZVJ9SQK=additional-information h_01HWWN6GAAD75HPC5GTE40QA37=timezone-geos 01H7WG3CA2C3HV8YT5ZMP9E0QY=bi-developer-considerations 01H7WG3CA2YF03SC6RBMCJYYVX=use-cases 1-Calculate-retention=1-calculate-retention h_01HMTZ0DZWN54HBQ0ZTY0VFNFM=1-calculate-retention 2-Calculate-arpu-of-multiple-inapp-events=2-calculate-arpu-of-multiple-in-app-events h_01HMTZ0DZWHZ77RYWYAQEJV7X5=2-calculate-arpu-of-multiple-in-app-events 3-Calculate-inapp-event-conversion-rate-for-a-specific-cohort-day=3-calculate-in-app-event-conversion-rate-for-a-specific-cohort-day h_01HMTZ0DZW7VA6T6MQY7BY1JZT=3-calculate-in-app-event-conversion-rate-for-a-specific-cohort-day 4-Calculate-daily-installs=4-calculate-daily-installs h_01HMTZ0DZWARZFAQ9R4VF56YN3=4-calculate-daily-installs 5-Calculate-revenue-from-facebook-ads=5-calculate-revenue-from-facebook-ads h_01HMTZ0DZW74HWW6Z3VDWDMGRF=5-calculate-revenue-from-facebook-ads 6-Calculate-arpu-per-asa-keyword-id-for-up-to-365-cohort-days=6-calculate-arpu-per-asa-keyword-id-for-up-to-365-cohort-days h_01HMTZ0DZWSN83V0TEHVM2H5XS=6-calculate-arpu-per-asa-keyword-id-for-up-to-365-cohort-days Calculate-arpu-days-0-7-by-attribution-time-per-geo=7-calculate-arpu-days-7-by-attribution-time-per-geo 01H8XYTJVQ1YFBHPWVPP9D7MJ8=7-calculate-arpu-days-7-by-attribution-time-per-geo h_01J7N4VB83T4KZ6G0Q634ASMHV=8-calculate-purchases-day-7-after-conversion h_01J55D2FFW0XSH3G6AXRS06RPV=9-calculate-dau 01H7WG3CA2Y59D2EVMN3YFFY1W=traits-and-limitations h_01HDNZ8A0QH74CGSEG6TKKARJP=see-also" />

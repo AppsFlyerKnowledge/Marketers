@@ -66,3 +66,5 @@ Most of the setup is done in Salesforce (steps 1-4). Step 5 is done in AppsFlyer
 > 📘 **Note**
 >
 > Make sure the `AF_xxxxxxxxx` custom key you entered in [step 4](/docs/salesforce-marketing-cloud-mobilepush-integration-setup#step-4-set-up-app-push-notifications) has the same value as the one entered in the `addPushNotificationDeepLinkPath` function.
+
+<div data-zendesk-anchors="h_01H9HWK3F5TQZ8YQZBHGBZACPG=overview h_01H9HWK5DM87JTDVFND0KB965G=important h_01H9HWK3F52YGQPX4B82N40PPD=setting-up-salesforce-marketing-cloud-mobilepush h_01H9HWK3F5HCVZ0225MFRYRW5Q=step-1-set-up-mobilepush-sdk h_01H9HWK3F5RNCZG340E0CT5XJC=step-2-provision-for-push-notifications h_01H9HWK3F5E4W8FG35V4JTFN7F=step-3-enable-app-push-notifications h_01H9HWK3F5K8V8AVADXNNG25GY=step-4-set-up-app-push-notifications h_01H9HWK3F5VG2GBCE93B69AADH=note h_01H9HWK3F5YJ71YCWHV4B02VYP=step-5-set-up-push-notifications-in-appsflyer h_01H9HWK3F5T67NSPE9CVPS1KTA=note-1" />

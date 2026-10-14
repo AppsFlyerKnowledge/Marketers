@@ -212,3 +212,5 @@ If you previously sent this information in the format Meta expects (under af\_co
 | Supported networks | AppsFlyer supports `af_order_info` only for the networks listed in this article. Other networks might still support the older format. |
 | Supported platforms | This solution currently supports only in-app purchases for mobile apps. AppsFlyer plans to add support for other platforms, such as websites, in a later phase. |
 | Event value length | The total length of the `event_value` field, including `af_order_info`, cannot exceed 3,000 characters. |
+
+<div data-zendesk-anchors="h_01_why-item-level-data-matters=why-item-level-data-matters h_01_parameter-structure=parameter-structure h_01_per-network-mapping=per-network-mapping h_01_backward-compatibility=backward-compatibility h_01_traits-and-limitations=traits-and-limitations" />

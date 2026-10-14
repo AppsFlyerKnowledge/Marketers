@@ -63,6 +63,8 @@ Your click recording domain must include your domain’s SSL certificate. The SS
 
 ### Step 2: Give Iterable an AASA (iOS) and an Asset Links file (Android)
 
+<div id="aasa-for-ios" />
+
 <Accordion title="AASA for iOS">
 
 For Iterable to support iOS Universal Links, they need an AASA file. See the following instructions.
@@ -76,6 +78,8 @@ When you set up OneLink with Universal Links, you already have an AASA associate
 5. Send this AASA file to Iterable. For more information and to learn more about the contents of this file, see [Iterable's guide](https://support.iterable.com/hc/en-us/articles/360035496511-iOS-Universal-Lin).
 
 </Accordion>
+
+<div id="asset-links-for-android" />
 
 <Accordion title="Asset Links for Android">
 
@@ -91,6 +95,8 @@ When you set up OneLink with App Links, you already have an Asset Links file ass
 ## Setting up your app
 
 See the following to set up your apps to support App and Universal links.
+
+<div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
 <Accordion title="Step 1 for Android: Setting up your app to support App Links">
 
@@ -126,6 +132,8 @@ To resolve click domains:
 
 </Accordion>
 
+<div id="step-1-for-ios-setting-up-your-app-to-support-universal-links" />
+
 <Accordion title="Step 1 for iOS: Setting up your app to support Universal Links">
 
 This section discusses how to set up your app to support Universal Links.
@@ -142,6 +150,8 @@ This section discusses how to set up your app to support Universal Links.
 
 See the following to set up configure the SDK to resolve deep links.
 
+<div id="step-2-for-android-resolve-deep-links" />
+
 <Accordion title="Step 2 for Android: resolve deep links">
 
 The SDK needs to resolve the OneLink behind the click domain to get the campaign details. The details are returned in the `onAppOpenAttribution` method.
@@ -156,6 +166,8 @@ To resolve click domains:
    ```
 
 </Accordion>
+
+<div id="step-2-for-ios-resolve-deep-links" />
 
 <Accordion title="Step 2 for iOS: resolve deep links">
 
@@ -257,3 +269,5 @@ What should you expect?
 
 If you have the app installed, the app should be invoked. If the relevant AppsFlyer SDK deep linking APIs are implemented you should be deep linked into the relevant content.  
 In addition, a click should appear in both the AppsFlyer dashboard, attributed to the provided media source and campaign, and also in Iterable data.
+
+<div data-zendesk-anchors="h_01HV6PJQRMT8037JMVMMXDPWGN=introduction h_01HV6PJQRM5N1K6CY0NSSFXT3X=prerequisites h_01HV6PJQRMX18FRB3NMZH6NCH0=setting-up-iterable h_01HV6PJQRMMYV3A5ZSEGTT7993=step-1-setting-up-link-branding-in-iterable h_01HV6PJQRMYDDWK9AKGN258TTM=step-2-uploading-your-ssl-certificate-to-iterable h_01HV6PJQRMFJ23627KS83D4C6A=step-2-give-iterable-an-aasa-ios-and-an-asset-links-file-android h_01HV6PJQRMNSYK8N7QEE00KSPE=aasa-for-ios h_01HV6PJQRMSMZCVJ5XRXZ3SWEH=asset-links-for-android h_01HV6PJQRMJHDF94JSAT8N8SP9=setting-up-your-app h_01HV6PJQRM5S772CTH219MGY44=step-1-for-android-setting-up-your-app-to-support-app-links h_01HV6PJQRM2V31JAJ52Q3FHQWH=step-1-adding-the-click-domain-to-the-activity-in-the-android-manifest step-2%20setting-up-the-app-to-resolve-click-domains=step-2-setting-up-the-app-to-resolve-click-domains h_01HV6PJQRMCRFM90QSP5SS72SE=step-2-setting-up-the-app-to-resolve-click-domains h_01HV6PJQRMVJB6J6GV41DCYAVQ=step-1-for-ios-setting-up-your-app-to-support-universal-links h_01HV6PJQRNRW8Y97JWHP0MSXZF=step-1-associating-click-domains-in-xcode h_01HV6PJQRNHFH8XGMCEWVGSPA5=step-2-for-android-resolve-deep-links h_01HV6PJQRN4NYPWS2XQQSJAM5R=step-2-for-ios-resolve-deep-links h_01HV6PJQRN2H29D8HKXHBYE1NB=sending-your-first-email h_01HV6PJQRNET2J17ZGGZE0K0Q6=testing-your-links" />

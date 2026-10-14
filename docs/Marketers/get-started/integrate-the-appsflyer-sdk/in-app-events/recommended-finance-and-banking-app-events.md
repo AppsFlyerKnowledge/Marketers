@@ -90,6 +90,8 @@ When the user completes the signup process
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
+<div id="registration-verified-registration_verified" />
+
 <Accordion title="Registration verified (registration_verified)">
 
 **Purpose**
@@ -107,6 +109,8 @@ When the registration is verified
 | submit\_registration | Type of signup method verified. Do not enter personal identifiable information (PII). | Email, Facebook |
 
 </Accordion>
+
+<div id="submit-account-application-submit_account_application" />
 
 <Accordion title="Submit account application (submit_account_application)">
 
@@ -128,6 +132,8 @@ When the user completes the account application process
 
 </Accordion>
 
+<div id="open-account-success-open_account_success" />
+
 <Accordion title="Open account success (open_account_success)">
 
 **Purpose**
@@ -148,6 +154,8 @@ When the user application is accepted and the account is opened
 
 </Accordion>
 
+<div id="open-account-rejected-open_account_rejected" />
+
 <Accordion title="Open account rejected (open_account_rejected)">
 
 **Purpose**
@@ -165,3 +173,5 @@ When the user completes the signup process
 | account\_type | Type of account applied for | savings |
 
 </Accordion>
+
+<div data-zendesk-anchors="finance-and-banking=-finance-and-banking h_01HGTAXN8PV7TPNRBWD593BR4K=-finance-and-banking h_01HGTAXN8Q652HG7412X583KWX=important h_01HGTAXN8QWEWD86FMF6GEZNZD=recommended-structures-for-predefined-events h_01HGTAXN8Q3K0EFGXZ41XZH438=login-af_login h_01HGTAXN8Q6KFDPB8XSVT3F9E8=complete-registration-af_complete_registration h_01HGTAXN8Q47F6CXXBEVCDPSBA=recommended-structures-for-custom-events h_01HGTAXN8QB911JMER3EV7RGTM=registration-verified-registration_verified h_01HGTAXN8QCYR0BQ3Q3VN0EQ9X=submit-account-application-submit_account_application h_01HGTAXN8QJ4DKQS2FY9KY0AX4=open-account-success-open_account_success h_01HGTAXN8QK1P5QYEN5SNBQ5ED=open-account-rejected-open_account_rejected" />

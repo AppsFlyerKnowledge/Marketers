@@ -46,6 +46,8 @@ The general configuration window includes the following tabs: Integration, Attri
 > * Some settings differ for iOS and Android devices
 > * Learn more about [setting up partner integrations](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The **Integration** tab includes a number of sections, as described below.
@@ -121,6 +123,8 @@ Generate and save attribution links and send them to the partner for attributing
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
@@ -133,11 +137,15 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue isn't available for Persona.ly RTB.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -148,3 +156,5 @@ Select which [permissions to grant](/docs/set-up-an-integrated-partner#permissio
 > When the integration is [deactivated](/docs/partner-activation-deactivation) while the Permissions toggle is still turned on, permissions remain granted.
 
 </Accordion>
+
+<div data-zendesk-anchors="setting-up-amazon-dsp-integration=setting-up-personaly-rtb 01H88VAJH3VENKYVRQY5RXN63P=setting-up-personaly-rtb 01H88VAJH3BYZSXQGGZZJQ9N0C=note 01H88VAJH3VZ4GPVE7XXMKTZ2P=integration-tab activate-partner::b746d215=activate-partner 01H88VAJH34GP7FK1KTJGRDPM7=activate-partner h_01HBB9EEMJ55BQDJ1ZEJT136ZF=note-1 01H88VAJH3G5FAR7RRNDEPNGME=advanced-privacy h_01HARQDVEDA206D0BBXBC6WEHH=transaction-id h_01HA6PNN6RJYTNXRAS3M9EA4M4=install-attribution 01H88VAJH3WE9Z0971WMBRBJRS=default-postbacks inapp-event-postbacks=in-app-event-postbacks 01H88VAJH3AS37MVF75GANWX4B=in-app-event-postbacks 01H88VAJH36MYZ9W1YPWA92Z1Z=note-2 01H88VAJH31GZ4KAY280ZRB8MA=attribution-link-tab 01H88VAJH3RM95V449B6DF8B4D=cost-tab 01H88VAJH3A2Q0CZXQQZMW6YRC=ad-revenue-tab 01H88VAJH30TCC574W2DH7R2A2=permissions-tab 01H88VAJH3XYP81GTFBWDBXECP=note-3" />

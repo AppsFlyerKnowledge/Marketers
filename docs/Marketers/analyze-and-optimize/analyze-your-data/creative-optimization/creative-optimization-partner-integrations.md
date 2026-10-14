@@ -43,6 +43,8 @@ Once a partner integration is added:
 
 This section describes how to set up integrations with each partner.
 
+<div id="adikteev" />
+
 <Accordion title="Adikteev">
 
 **Prerequisites:**
@@ -69,6 +71,8 @@ This section describes how to set up integrations with each partner.
 
 </Accordion>
 
+<div id="adjoe" />
+
 <Accordion title="Adjoe">
 
 **Prerequisite:**
@@ -90,6 +94,8 @@ This section describes how to set up integrations with each partner.
 6. Click **Save**.
 
 </Accordion>
+
+<div id="applovin" />
 
 <Accordion title="AppLovin">
 
@@ -117,6 +123,8 @@ This section describes how to set up integrations with each partner.
 > AppLovin's asset-level reporting API only returns data for the previous day. It doesn't support historical lookback. Because of this, when you activate the integration, AppsFlyer can only start collecting asset-level data from the activation date forward. As a result, full data coverage builds up gradually and is typically complete within 30 days of activation.
 
 </Accordion>
+
+<div id="google-ads" />
 
 <Accordion title="Google Ads">
 
@@ -146,6 +154,8 @@ This section describes how to set up integrations with each partner.
 
 </Accordion>
 
+<div id="ironsource" />
+
 <Accordion title="ironSource">
 
 **Prerequisites:**
@@ -172,6 +182,8 @@ This section describes how to set up integrations with each partner.
 
 </Accordion>
 
+<div id="liftoff" />
+
 <Accordion title="Liftoff">
 
 **To add an integration:**
@@ -187,6 +199,8 @@ This section describes how to set up integrations with each partner.
 6. Click **Save**.
 
 </Accordion>
+
+<div id="facebook-ads" />
 
 <Accordion title="Meta Ads">
 
@@ -215,6 +229,8 @@ This section describes how to set up integrations with each partner.
 
 </Accordion>
 
+<div id="mintegral" />
+
 <Accordion title="Mintegral">
 
 **Prerequisites:**
@@ -237,6 +253,8 @@ This section describes how to set up integrations with each partner.
 6. Click **Save**.
 
 </Accordion>
+
+<div id="moloco" />
 
 <Accordion title="Moloco">
 
@@ -262,6 +280,8 @@ This section describes how to set up integrations with each partner.
 
 </Accordion>
 
+<div id="personaly" />
+
 <Accordion title="Persona.ly">
 
 **Prerequisites:**
@@ -279,6 +299,8 @@ This section describes how to set up integrations with each partner.
 6. Click **Save**.
 
 </Accordion>
+
+<div id="reddit" />
 
 <Accordion title="Reddit">
 
@@ -301,6 +323,8 @@ This section describes how to set up integrations with each partner.
 
 </Accordion>
 
+<div id="remerge" />
+
 <Accordion title="Remerge">
 
 **Prerequisites:**
@@ -322,6 +346,8 @@ This section describes how to set up integrations with each partner.
 
 </Accordion>
 
+<div id="revx" />
+
 <Accordion title="RevX">
 
 **Prerequisites:**
@@ -339,6 +365,8 @@ This section describes how to set up integrations with each partner.
 6. Click **Save**.
 
 </Accordion>
+
+<div id="smadex" />
 
 <Accordion title="Smadex">
 
@@ -361,6 +389,8 @@ This section describes how to set up integrations with each partner.
 
 </Accordion>
 
+<div id="snap" />
+
 <Accordion title="Snapchat">
 
 **Prerequisites:** Ad account permissions for the relevant apps you want to integrate. **Note**: The integration with Snapchat is per user, which means that multiple users can have active integrations simultaneously.
@@ -381,6 +411,8 @@ This section describes how to set up integrations with each partner.
 **Note:** Certain ad types aren’t supported, which means that their data in Creative Optimization is available on the ad level only (not the creative level). Unsupported ad types include Collection Ads.
 
 </Accordion>
+
+<div id="tiktok" />
 
 <Accordion title="TikTok">
 
@@ -488,6 +520,8 @@ This section describes how to set up integrations with each partner.
 
 </Accordion>
 
+<div id="x-ads" />
+
 <Accordion title="X Ads (formerly Twitter Ads)">
 
 **Prerequisites:**
@@ -508,6 +542,8 @@ This section describes how to set up integrations with each partner.
 7. Click **Save**.
 
 </Accordion>
+
+<div id="youappi" />
 
 <Accordion title="YouAppi">
 
@@ -534,9 +570,11 @@ YouAppi credentials for integration :
 
 ## Additional information
 
+<div id="creative-integrations-dashboard" />
+
 <Accordion title="Creative Integrations dashboard">
 
-The Creative Integrations dashboard is where you can add new media partner integrations. To add a new integration, follow the [specific instructions per partner](/docs/creative-optimization-partner-integrations#media-partner-integrations).
+The Creative Integrations dashboard is where you can add new media partner integrations. To add a new integration, follow the [specific instructions per partner](/docs/creative-optimization-partner-integrations#data-availability).
 
 Once added, the dashboard displays the status of all your current integrations, with the following columns:
 
@@ -545,7 +583,7 @@ Once added, the dashboard displays the status of all your current integrations, 
 | Partner | The name of the integrated partner, for example, Meta Ads or ironsource\_int. Expand the partner column to see all the different connections for the partner. For example, each user might have their own connection. |
 | App | The list of apps per integrated partner and specific user connection. |
 | Integration update | The date when the partner integration settings were last updated. |
-| Coverage status | The amount of creative performance data from the partner integration available in Creative Optimization dashboards and reports:<ul><li>**Low**: All apps included in this integration are missing data.</li><li>**Partial**: Some apps included in this integration are missing data.</li><li>**High**: All apps included in this integration have data.</li><li>**In progress**: Wait up to 24 hours for a status update.</li><li>**No data**: No data from this partner for the past 30 days.</li></ul>Click the status to see the coverage status breakdown by app. The per-app status means different things depending on whether you’re an ROI360 subscriber or not.<br /><br />**Non-ROI360 subscriber:**<ul><li>**High**: App has a lot of data available. Meaning the creatives pulled cover more than 85% of the total app installs (as reported by AppsFlyer) in the last 30 days.</li><li>**Low**: App is missing data. Meaning the creatives pulled cover less than 85% of the total app installs (as reported by AppsFlyer) in the last 30 days.</li></ul>**ROI360 subscriber:**<ul><li>**High**: Creatives pulled cover more than 85% of the cost as measured by AppsFlyer ROI360 in the last 30 days.</li><li>**Low**: Creatives pulled cover less than 85% of the cost as measured by AppsFlyer ROI360 in the last 30 days.<br />**Example**:<ul><li>AppsFlyer gets data for media source "Network A" with a total ad spend of $100.</li><li>Creative 1 had $85 ad spend and Creative 2 had $15.</li><li>If AppsFlyer pulls Creative 1 data, that covers 85% of cost, so it's "high" coverage.</li><li>If AppsFlyer pulls only Creative 2 data, that covers just 15% of cost, so it's "low" coverage.</li></ul></li></ul>**For both ROI360 and non-ROI360 subscribers:**<ul><li>**In progress**: Wait up to 24 hours for a status update.</li><li>**Low data**: Make sure the partner is correctly integrated, following the [partner-specific instructions](/docs/creative-optimization-partner-integrations#media-partner-integrations).</li><li>**No data**: No data from this app for the past 30 days.<ul><li>Make sure your general AppsFlyer setup is complete and working (not specifically for Creative).</li><li>Make sure that your app is active and there is traffic.<br />If the integration is managed by an agency, make sure the integration is correct, following the [agency instructions](/docs/creative-optimization-partner-integrations#agencies).</li></ul></li></ul> |
+| Coverage status | The amount of creative performance data from the partner integration available in Creative Optimization dashboards and reports:<ul><li>**Low**: All apps included in this integration are missing data.</li><li>**Partial**: Some apps included in this integration are missing data.</li><li>**High**: All apps included in this integration have data.</li><li>**In progress**: Wait up to 24 hours for a status update.</li><li>**No data**: No data from this partner for the past 30 days.</li></ul>Click the status to see the coverage status breakdown by app. The per-app status means different things depending on whether you’re an ROI360 subscriber or not.<br /><br />**Non-ROI360 subscriber:**<ul><li>**High**: App has a lot of data available. Meaning the creatives pulled cover more than 85% of the total app installs (as reported by AppsFlyer) in the last 30 days.</li><li>**Low**: App is missing data. Meaning the creatives pulled cover less than 85% of the total app installs (as reported by AppsFlyer) in the last 30 days.</li></ul>**ROI360 subscriber:**<ul><li>**High**: Creatives pulled cover more than 85% of the cost as measured by AppsFlyer ROI360 in the last 30 days.</li><li>**Low**: Creatives pulled cover less than 85% of the cost as measured by AppsFlyer ROI360 in the last 30 days.<br />**Example**:<ul><li>AppsFlyer gets data for media source "Network A" with a total ad spend of $100.</li><li>Creative 1 had $85 ad spend and Creative 2 had $15.</li><li>If AppsFlyer pulls Creative 1 data, that covers 85% of cost, so it's "high" coverage.</li><li>If AppsFlyer pulls only Creative 2 data, that covers just 15% of cost, so it's "low" coverage.</li></ul></li></ul>**For both ROI360 and non-ROI360 subscribers:**<ul><li>**In progress**: Wait up to 24 hours for a status update.</li><li>**Low data**: Make sure the partner is correctly integrated, following the [partner-specific instructions](/docs/creative-optimization-partner-integrations#data-availability).</li><li>**No data**: No data from this app for the past 30 days.<ul><li>Make sure your general AppsFlyer setup is complete and working (not specifically for Creative).</li><li>Make sure that your app is active and there is traffic.<br />If the integration is managed by an agency, make sure the integration is correct, following the [agency instructions](/docs/creative-optimization-partner-integrations#agencies).</li></ul></li></ul> |
 
 </Accordion>
 
@@ -597,6 +635,8 @@ You can grant your agencies access to view their own creative performance data i
 
 </Accordion>
 
+<div id="update-credentials" />
+
 <Accordion title="Update credentials">
 
 Once certain partner integrations are set up, their account-level credentials can't be changed (this doesn't apply to Meta ads, Google Ads, TikTok, and AppLovin). If you need to update credentials for a partner:
@@ -606,3 +646,5 @@ Once certain partner integrations are set up, their account-level credentials ca
 3. Create a new integration for the partner with the updated credentials.
 
 </Accordion>
+
+<div data-zendesk-anchors="about-creative-partner-integrations=about-partner-integrations h_01HAP6JQEFKAFK96WDBN0MERB6=about-partner-integrations media-partner-integrations=data-availability h_01HEQ2QR21MZB57S6MQ5ZWZ7ZQ=data-availability h_01K4M4JF53A3J1R5VACNVN4X8A=note h_01HC7W736NDRRAJ95Z28JS2J46=media-partner-integrations h_01HBAZ8724YYFVQWYV5F8F4F5S=adikteev 01H7SZ8RA055S4M11TTX1J0E55=adjoe 01H7SZ8RA0A52YQEMYX0GV44AB=applovin h_01KY4CAH2MKX650JS1R0N8X6B4=note-1 01H7SZ8RA0980TH09EP2ED9WSF=google-ads 01H7SZ8RA0DRWC76119ED96KHP=ironsource 01H7SZ8RA0428ZPRYD99GWRMK0=liftoff 01H7SZ8RA06V5BR4ABV0ZVK82Z=facebook-ads h_01JXCRAESXDAHGGJ71EB32NAPD=mintegral 01H7SZ8RA06G1W04NSEHSPSV2D=moloco h_01KRGPVZH0Z0DHEEJNP4ST5CD9=personaly 01J9V2ZJR6KYJERPR2Y2XNCREP=reddit 01H7SZ8RA0CDR1M5V2F177TG84=remerge h_01KRGPVZH00WKJ4VJN8QHAW3YS=revx h_01HZEP4F6M2W5HC76WVFP5Z5C0=smadex 01H7SZ8RA1H0Q47N1W3NST4PZW=snap 01H7SZ8RA1E221TK8VRWEF1FA4=tiktok 01H8VVCC8GW5AZ3M475XFZY9JW=notes 01H7SZ8RA1YTA3MGVJMXVTP78Y=unity-ads h_01GT6Z998RCBQWKDC9YGPJQGN6=instructions-for-retrieving-the-credentials h_01GT6ZFTGKMR18DTNVX706DH1R=to-select-a-service-account-organization-role to-add-a-unity-connection-to-the-creative-dashboard=to-add-a-unity-integration-to-the-creative-dashboard h_01GT6ZS52ZWY47BCT2NJVCFFEP=to-add-a-unity-integration-to-the-creative-dashboard 01J9V2ZJSKN37WSGKA6D12MYBH=x-ads 01H7SZ8RA1E37649AAH1DNRXA9=youappi agency-integrations=additional-information h_01HC7WCZ143S29PGTVNFEX962Y=additional-information 01J9WK9A78RP6BKX6860MAABFM=creative-integrations-dashboard h_01HC7WCE9EJK3NDJQE88RZ3T0Z=agencies h_01K5PE1K1G75KEF9HXMAW9YP2F=add-an-agency-integration grant-dashboard-access=grant-dashboard-access-to-an-agency h_01K5PE1WK5AE2MX235B8FA4YJ0=grant-dashboard-access-to-an-agency 01J9WKGYM1D04ZT14EPZ13VE4P=update-credentials" />

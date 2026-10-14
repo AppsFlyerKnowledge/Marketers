@@ -45,6 +45,8 @@ YouAppi's configuration includes 4 active tabs: Integration, Attribution link, C
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners.
 > * All the rest of the steps are either descriptive or **optional**.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -94,6 +96,8 @@ In this section, you can map your AppsFlyer events with YouAppi via postbacks.
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -148,6 +152,8 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
@@ -160,11 +166,15 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported by this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -196,3 +206,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HK29DCA2B0VJM46KYCPWZ0V0=setting-up-youappi h_01HK29DCA3XH6B98018C6G5MQY=tip h_01HK29DCA3J3TVPAEEH00T1RS8=integration-tab h_01HK29DCA3E890TQ7MZ8BEEA5J=activate-partner h_01HK29DCA3KGV3S44XQ52ZV8YM=note h_01HK29DCA3SR6BGN8PD8X4R198=general-settings h_01HK29DCA390TAZGD1A1EM06VY=default-postbacks inapp-events-settings=in-app-events-settings h_01HK29DCA3VQRZT8SYTQ5T0Z8F=in-app-events-settings h_01HK29DCA3ESN9EA4RKE1F6HE9=attribution-link-tab h_01HK29DCA3CJ5J19D7MGN9ZAWB=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HK29DCA3BGEC5VVC2X00M6HQ=click-through-attribution h_01HK29DCA30YW2PTWKF0HSPG9Q=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HK29DCA3DSF3D8GETECYCZXE=view-through-attribution-lookback-window h_01HK29DCA33HGQRRNXN096W2HY=impressions-attribution-link h_01HK29DCA3PRMEEYGB15JWD5N7=cost-tab h_01HK29DCA4KNSAG2XYZQNX26S9=ad-revenue-tab h_01HK29DCA4EV987C7GPPXSKS7V=permissions-tab h_01HK29DCA4ZEYMM46NYRH6VWW1=ad-network-permissions h_01HK29DCA4923EKBV6X8DBCWFZ=agency-permissions" />

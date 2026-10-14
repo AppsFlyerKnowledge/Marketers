@@ -32,6 +32,8 @@ Follow the onboarding instructions below to get the ROI360 tools for cost, ad re
 
 **Tip**! To onboard quickly, prioritize one app and complete all steps to get ROI360 operational. You can focus on cost, ad revenue, or in-app purchase and subscription revenue, but ensure you finish onboarding for one app first.
 
+<div id="cost-onboarding" />
+
 <Accordion title="Cost onboarding">
 
 ![](https://files.readme.io/0e7102766b3b7cdba3f301ca89c51edf8e4bd2ec88e09bc912ce3c1436c43fcb-26137252929681.png)
@@ -53,6 +55,8 @@ After completing the cost onboarding, you'll be able to:
 | Configure agency fees. | If you use agencies, get the total campaign cost, including the percentage fees agencies charge for traffic. | Create [agency fee rules](/docs/incorporate-agency-fees-into-campaign-costs) for each agency you work with. | Marketer |
 
 </Accordion>
+
+<div id="ad-revenue-onboarding" />
 
 <Accordion title="Ad revenue onboarding">
 
@@ -76,6 +80,8 @@ After completing the ad revenue onboarding, including connecting to the mediatio
 
 </Accordion>
 
+<div id="revenue-onboarding" />
+
 <Accordion title="In-app purchase and subscription revenue onboarding">
 
 ![](https://files.readme.io/811c90ec42465994455fe42be8400b4ebb94ab6d1a5703bc9a77251aba95ed3b-26137252934545.png)
@@ -94,3 +100,5 @@ After completing the revenue onboarding, including setting up store notification
 | Set up Revenue ETL reports. (Available to ROI360 Advanced subscribers) | Stream and view revenue data in your BI with the best granularity available updated multiple times per day. | Set up[revenue ETL reports](/docs/revenue-etl-reports). | Marketer/BI developer |
 
 </Accordion>
+
+<div data-zendesk-anchors="overview=about-roi360 h_01HKHGX9JJQQCKF9SDZRSCM1XJ=about-roi360 h_01HYJ8PSPTFR6QH329TBR73AXM=cost-onboarding h_01HYJ8PSPTKBZ60TF7T0EMSCXW=ad-revenue-onboarding h_01HYJ8PSPTWK4SEGVJWG5J86E2=revenue-onboarding" />

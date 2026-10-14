@@ -132,3 +132,5 @@ http://`{networkname}.offerstrack.net/advBack.php?click_id={click_id}&adv_id={ad
 
 * If you have an integration with AppsFlyer, contact us using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif).
 * If you don't have an integration with AppsFlyer, complete the ad Partners Registration application [here](https://www.appsflyer.com/partners-registration/).
+
+<div data-zendesk-anchors="01JFT1JFND230EFDBRTWNKXKSH=creating-your-attribution-link 01JFT1JFP8T3HF5GQBR19YHQW5=new-macros 01JFT1JFP9BMZM99TKDR58FNZP=creating-your-install-postbacks" />

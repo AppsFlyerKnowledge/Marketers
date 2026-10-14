@@ -66,3 +66,5 @@ To prevent loss of attributions and revenue for the ad network, clicks and impre
 
 * **Impression URLs** must be reported once an ad is served
 * **Click URLs** must be reported once a user clicks the ad
+
+<div data-zendesk-anchors="h_01HDY3CARC0A9504XGMJHYHGY4=overview h_01HDY3CARCZK06C5XHEQFQYA8W=note redirect-users-via-appsflyer=users-redirected-via-appsflyer 01HDYFGYW3FDR64C54KKPXRHDF=users-redirected-via-appsflyer send-users-directly-by-the-ad-network=users-sent-directly-by-the-ad-network 01HDYFH8ZCSP2SN4ZYQQVG7EED=users-sent-directly-by-the-ad-network send-engagement-data-to-appsflyer=sending-engagement-data-to-appsflyer h_01HDYGSEFHVF8ZD43XCVNGYT9N=sending-engagement-data-to-appsflyer h_01HDXXDDXDEP43YHE3GF81BSKV=timing-of-sending-redirects" />

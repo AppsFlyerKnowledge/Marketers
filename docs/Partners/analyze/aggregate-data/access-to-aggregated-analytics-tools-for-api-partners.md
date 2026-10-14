@@ -62,3 +62,5 @@ Advertisers can grant the following app-level permissions:
 6. Notify the partner that you have enabled the necessary API access.
 
 </Accordion>
+
+<div data-zendesk-anchors="api-access-permissions=api-token-permissions h_01HGG3N6KVF9MCQRW8594YG0HV=api-token-permissions h_01HT2J7ZFVDA812R35948XXEM1=considerations h_01KZXND2TWVKK51RH3JWNMFENK=considerations" />

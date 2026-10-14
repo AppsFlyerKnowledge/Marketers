@@ -40,6 +40,8 @@ x-zendesk:
    Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -84,11 +86,15 @@ Once this configuration is saved, AppsFlyer begins sending the following data to
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution Links are not available for Liquid.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -96,14 +102,20 @@ Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 Permissions are not available for Liquid.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H9FKBW5QYQGZ7PNEJMHZ6H2R=important h_01H9FKBW5QMJTARZ6KZ41QT1BN=setting-up-liquid h_01H9FKBW5QM601CMQ6Y2PNJ1HQ=integration-tab h_01H9FKBW5RRYW1JTK2S9V4V6SA=activate-partner h_01H9FKBW5RB52QQKVF5TMFVKKT=general-settings h_01H9FKBW5RCGHVJRJEBQW4KNGD=obtaining-the-api-token h_01H9FKBW5RVYXPEEFDG948P1XV=default-postbacks h_01H9FKBW5RNH2BRV8S31DT8SWA=attribution-link-tab h_01H9FKBW5RRQZZC4YQNWGHQTW6=cost-tab h_01H9FKBW5R7TNN5YA5YP36EJ63=ad-revenue-tab h_01H9FKBW5RC55F56K3EMQBJGEK=permissions-tab" />

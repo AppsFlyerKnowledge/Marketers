@@ -33,6 +33,8 @@ Cost data is reported to AppsFlyer by:
 
   * Cost aggregation methods support cost models used by the partner in addition to CPI, including, CPA, CPC, and CPM.
 
+<div id="viewing-ad-cost-by-click" />
+
 <Accordion title="Viewing ad cost reported on the attribution link">
 
 Cost data reported on attribution links is aggregated and available for viewing in real-time (maximum up to 2 hours after the link is clicked) in the AppsFlyer dashboards, performance reports, and raw data reports.
@@ -70,6 +72,8 @@ For ad networks that report cost on the attribution link, the dimensions support
 
 </Accordion>
 
+<div id="limitations" />
+
 <Accordion title="Limitations">
 
 Cost on the attribution link limitations:
@@ -79,3 +83,5 @@ Cost on the attribution link limitations:
 * Cost data on the attribution link data is immutable. Therefore, once it's logged in AppsFlyer, it cannot be changed, even if there are data-reporting errors.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HX954Y5X7ZP2VMB5W2XAMCR0=basic-cost-reporting h_01HX954Y5XTRRQV4JHA5XX1AQ0=viewing-ad-cost-by-click h_01HX954Y5XV8M2R2VDAV34641R=ad-networks-providing-cost-by-click-data h_01HX954Y5X84BM7F8TGQRDPBTS=limitations" />

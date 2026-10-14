@@ -50,6 +50,8 @@ For a detailed description of the Partner Configuration Window Header, click [he
 On the **first visit** here, you must toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation, click [here](/docs/partner-activation-deactivation).
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -85,6 +87,8 @@ In this section, you can map your AppsFlyer events with Clickzoot via postbacks.
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -125,17 +129,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -156,3 +166,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKWB2T5BJFHZN82BHC97JWRZ=setting-up-clickzoot h_01HKWB2T5BWSQPVDPAFYV8KD2N=tip h_01HKWB2T5BGXSXZZBT7CF84HZ4=activate-partner h_01HKWB2T5BYB92GV7KGRDDP6C1=integration-tab h_01HKWB2T5B7ZSRVZGQGAC10533=general-settings h_01HKWB2T5BKYVPJDB115FW1F8A=default-postbacks inapp-events-settings=in-app-events-settings h_01HKWB2T5CJ0BCA2AVVEWMEEZH=in-app-events-settings h_01HKWB2T5CF5BS3YS8BJPM4CGQ=attribution-link-tab h_01HKWB2T5C6HFZDZ4DQ3AD2100=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKWB2T5C03VMECXQM6A9EQV8=click-through-attribution h_01HKWB2T5C42HKK8QFHWXAAV8T=click-attribution-link h_01HKWB2T5C9XYC5326RTSRTHV4=cost-tab h_01HKWB2T5CZE8508SQF05159NG=ad-revenue-tab h_01HKWB2T5CYFTGWWWH8GFNWWXK=permissions-tab h_01HKWB2T5CFSJPGNPDAZV7YY84=ad-network-permissions" />

@@ -53,3 +53,5 @@ If you are looking for instructions on creating new DCR reports, you can find th
 2. In the list of reports, hover over the row of the report you want to delete.
 3. Click the delete button ![delete_button.png](https://files.readme.io/6a9aa9444651449ba4c11cabbb6964bb4661aaad8806bdf8198c3e3e1b66ca72-7430526510737.png) that displays on the right side of the row.
 4. In the dialog, confirm that you want to delete the report.
+
+<div data-zendesk-anchors="h_01HR9CBMVQQ45W1GXPGW9EQ41D=introduction h_01HR9CBMVQHSYQ4C8HA6NA3NHX=editing-or-deleting-a-report" />

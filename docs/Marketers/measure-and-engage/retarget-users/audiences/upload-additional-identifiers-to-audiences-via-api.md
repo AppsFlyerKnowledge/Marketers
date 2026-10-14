@@ -57,7 +57,7 @@ The request must include an HTTP header containing your account's [AppsFlyer V2.
 
 <Accordion title="Add/modify identifiers (PUT)">
 
-**API request URL**
+<span id="01ECF4ZD0T03JBV8DDH25MM01W"></span>**API request URL**
 
 ```
 https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{app-id}
@@ -67,7 +67,7 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 | --- | --- | --- |
 | `{app-id}` | App ID of the app from which the identifiers were collected (as it appears in the AppsFlyer dashboard) | Yes |
 
-**API request body**
+<span id="01ECF4ZD0TWPH3DXV2YKN7G9B0"></span>**API request body**
 
 ```json
 {
@@ -223,6 +223,8 @@ body:
 
 </Accordion>
 
+<div id="responses" />
+
 <Accordion title="Responses">
 
 | Code | Message | Description |
@@ -276,9 +278,13 @@ body:
 
 </Accordion>
 
+<div id="rate-limitations" />
+
 <Accordion title="Rate limitations">
 
 * 5 requests per second
 * 350 requests per minute
 
 </Accordion>
+
+<div data-zendesk-anchors="api-overview=about-the-api h_01HNZP1Y2MQ8W25SNP2XVNZ7WW=about-the-api h_01HNZP1Y2MJY56TMN6QH4BVRPA=when-should-i-use-this-api h_01HNZP1Y2MX414NJ49BCVW7KZC=important methods=actions h_01HNZP1Y2MS5V43XS008GG4S32=actions h_01HNZP1Y2MH2Y4P8ZT4SVM5GM2=authentication h_01HNZP1Y2MR0GCCA1916RMB6GJ=api-specifications-and-sample-code h_01HNZP1Y2M1N548KSMA6MQ601W=addmodify-identifiers-put h_01HNZP1Y2P2VVV4WT88D82QXJ4=notes h_01HNZP1Y2Q0FAQQE3MTZ8B3FFS=remove-identifiers-delete h_01HNZP1Y2QK2J8ERP1SQTYB20C=responses h_01HNZP1Y2Q1WZCN2TCEAS6HB2X=rate-limitations" />

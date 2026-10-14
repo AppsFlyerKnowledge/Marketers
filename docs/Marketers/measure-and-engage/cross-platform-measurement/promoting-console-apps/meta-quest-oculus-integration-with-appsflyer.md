@@ -40,6 +40,8 @@ The following table lists the tasks required to integrate your Meta Quest (Oculu
 | Link setup | [Learn how to create direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links) | Marketer |
 | Report setup/view data | [Learn about data availability in dashboards and reports](/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability) | Marketer/Data engineer |
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -52,3 +54,5 @@ The following table lists the tasks required to integrate your Meta Quest (Oculu
 > 📘 **See also**
 >
 > * [CTV, PC, and console platform overview](/docs/ctv-pc-and-console-platform-attribution-concepts)
+
+<div data-zendesk-anchors="about-meta-quest-attribution=about-meta-quest-oculus-attribution 01H7Z1MK9JHA4C5CB7YME4AJMA=about-meta-quest-oculus-attribution 01H7Z1MK9JNRKAY9VNH5RTF03F=integration-procedures 01H7Z1MK9KXFY4XVPCDSJPQ26N=traits-and-limitations h_01HE0T79YSNWGB3W4S7WEBW1B5=see-also" />

@@ -37,6 +37,8 @@ This article explains how to manage your user identifier policy at the account l
 
 This section describes the identifiers that can be shared with partners.
 
+<div id="shared-identifiers" />
+
 <Accordion title="Default identifier settings">
 
 By default, Audiences is configured for you to send the following identifiers to partners:
@@ -58,6 +60,8 @@ The following identifiers are not sent to advertising partners but can be config
 For additional information (including requirements for using specific identifiers in AppsFlyer), please take a look at the identifiers table below.
 
 </Accordion>
+
+<div id="identifiers-table" />
 
 <Accordion title="Identifiers table">
 
@@ -108,6 +112,8 @@ Additionally, all users from the European Economic Area (EEA) are subject to Goo
 
 </Accordion>
 
+<div id="android" />
+
 <Accordion title="Android">
 
 Android users from the European Economic Area (EEA) are subject to Google's enforcement of the [Digital Markets Act (DMA)](/docs/audiences-user-identifier-policy#eu-digital-markets-act).
@@ -141,8 +147,8 @@ As part of Google’s enforcement of the Digital Markets Act (DMA) on March 6, 2
 
 | AppsFlyer field (1) | Google field (2) | Values | Field explained |
 | --- | --- | --- | --- |
-| ad\_personalization\_enabled | ad\_personalization | true/false | Did the user give Google consent to use their data for personalized advertising? |
-| ad\_user\_data\_enabled | ad\_user\_data | true/false | Did the user give consent to send their user data to Google? |
+| <span id="ad_personalization"></span>ad\_personalization\_enabled | ad\_personalization | true/false | Did the user give Google consent to use their data for personalized advertising? |
+| <span id="ad_user_data"></span>ad\_user\_data\_enabled | ad\_user\_data | true/false | Did the user give consent to send their user data to Google? |
 
 If the consent fields are not filled in with values, they will be sent to Google as “Unspecified”.
 
@@ -151,3 +157,5 @@ If the consent fields are not filled in with values, they will be sent to Google
 > Google’s enforcement of the Digital Markets Act (DMA) applies to both Android and iOS platforms.
 
 </Accordion>
+
+<div data-zendesk-anchors="background=about h_01HKA2FS9VBCSV8FP8FH79H4R0=about h_01HKA2FS9VSVJD54R14GC7G0P4=user-identifiers h_01HNZH99Z8NA9607VHSYH5XVW0=shared-identifiers h_01HKA2FS9V1KBK9BJAJ63FP6CV=identifiers-table setting-accountlevel-user-identifier-policy=setting-account-level-user-identifier-policy h_01HKA2FS9WNGGRP3NX5NKV15SK=setting-account-level-user-identifier-policy user-identifier-policy-options=privacy-regulations h_01HKA2FS9W5NSKKRK2VCZARG15=privacy-regulations h_01HNZJ1ET6F87AHHVQK17QHZDD=ios h_01HNZJ1ET67JQQCPYSM3H6Y9VW=android h_01HNZN8MWETDCMGWKJ0MMM8JK4=eu-digital-markets-act h_01HPGV1GYT8DW0GYWTC031TNVH=importing-audiences h_01HNZEAJT00KKEBDPR7FD0TJNR=note" />

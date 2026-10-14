@@ -65,6 +65,8 @@ When registering a test device, you should add IMEI or Android ID device identif
 
 1. Download and install the app using the QR code (Google Play store) or one of the provided links:
 
+   <div id="android" />
+
    <Accordion title="Android">
 
    [![kb_qr_code.png](https://files.readme.io/e9b6e2c498b76b5d673d750b4721b2b428603d9e8fdc941ebb6e106274b93bba-49173115688593.png)](https://files.readme.io/e9b6e2c498b76b5d673d750b4721b2b428603d9e8fdc941ebb6e106274b93bba-49173115688593.png)
@@ -73,11 +75,15 @@ When registering a test device, you should add IMEI or Android ID device identif
 
    </Accordion>
 
+   <div id="ios" />
+
    <Accordion title="iOS">
 
    [![kb_qr_code.png](https://files.readme.io/e9b6e2c498b76b5d673d750b4721b2b428603d9e8fdc941ebb6e106274b93bba-49173115688593.png)](https://files.readme.io/e9b6e2c498b76b5d673d750b4721b2b428603d9e8fdc941ebb6e106274b93bba-49173115688593.png)
 
    </Accordion>
+
+   <div id="windows" />
 
    <Accordion title="Windows">
 
@@ -88,17 +94,23 @@ When registering a test device, you should add IMEI or Android ID device identif
 2. On an iOS 14.5+ device, if you want to allow IDFA collection, tap**Allow** when the ATT prompt displays. [![](https://files.readme.io/3be1b8f24bf558d022c45913b393cf8c8011639354d8b11d9c591e58024f1c8d-31773660957329.png)](https://files.readme.io/3be1b8f24bf558d022c45913b393cf8c8011639354d8b11d9c591e58024f1c8d-31773660957329.png)
 3. On the Android/iOS/Windows screen, tap **Register** to register the device:
 
+   <div id="android::db8cc168" />
+
    <Accordion title="Android">
 
    [![](https://files.readme.io/b6deed582cc87925576b893fb8f021e4aa254c15a99ec532fd456e146769a125-31773630607889.png)](https://files.readme.io/b6deed582cc87925576b893fb8f021e4aa254c15a99ec532fd456e146769a125-31773630607889.png)
 
    </Accordion>
 
+   <div id="ios::80f176b3" />
+
    <Accordion title="iOS">
 
    [![](https://files.readme.io/f06f609433b8ce483e5281cc2a0d062ab71a150318d7892879f3defb706f5429-31773660968081.png)](https://files.readme.io/f06f609433b8ce483e5281cc2a0d062ab71a150318d7892879f3defb706f5429-31773660968081.png)
 
    </Accordion>
+
+   <div id="windows::6c6af14b" />
 
    <Accordion title="Windows">
 
@@ -126,6 +138,8 @@ Account users can manually register a device:
    * **Device ID type:** Select a device identifier.
    * **Device ID:** Provide the device ID according to the operating system:
 
+     <div id="ios::41efa11e" />
+
      <Accordion title="iOS">
 
      How to obtain the IDFA or IDFV identifiers:
@@ -136,6 +150,8 @@ Account users can manually register a device:
      To learn when to use IDFA or IDFV see [Registering an iOS test device](#registering-an-ios-test-device).
 
      </Accordion>
+
+     <div id="android::7db075c7" />
 
      <Accordion title="Android">
 
@@ -227,3 +243,5 @@ Use this option only if you cannot register a test device with either IDFA or ID
 * For iOS only: To prevent Protect360 from flagging clicks as fraudulent, add the query parameter `pid="ios_testing"` to your test attribution link.
 
 </Accordion>
+
+<div data-zendesk-anchors="why-register-a-testing-device=why-register-a-test-device 01H7W9EA7RQDB69QS339XFHAFZ=why-register-a-test-device methods-for-registering-a-testing-device=methods-for-registering-a-test-device 01H7W9EA7RRRJBFSXW3KY53R9K=methods-for-registering-a-test-device managing-testingdevice-registration=managing-test-device-registration 01H7W9EA7R7SJVVQCST3WA6YBM=managing-test-device-registration 01JHJKN5Z3562N4W2H543XPC7E=android 01JHJKN5Z54T180C7G462C26Z4=ios 01JHJKN5Z51FABEGCFVTK0MPYR=windows 01JHJKTNRHHSZSC44WDWA9J2PD=android::db8cc168 01JHJKTNRJJBBA6WAC44PD33V7=ios::80f176b3 01JHJKTNRK9DY99SZ759ZGRP23=windows::6c6af14b 01JHJKDZK8084GMZ9QAZPHVBHQ=ios::41efa11e 01JHJKDZK9MTNXANVEHCM18EBM=android::7db075c7 registering-an-ios-testing-device=registering-an-ios-test-device h_01H6S2AKDH181MBDFGPBP1BQPV=registering-an-ios-test-device when-to-use-idfa-for-testing-device-registration=when-to-use-idfa-for-test-device-registration 01H7W9EA7SRD5V5134H2BRZ2AF=when-to-use-idfa-for-test-device-registration how-to-register-your-testing-device-with-an-idfa=how-to-register-your-test-device-with-an-idfa 01H7W9EA7SBBCAP3Y24FFCCGJW=how-to-register-your-test-device-with-an-idfa when-to-use-idfv-for-testing-device-registration=when-to-use-idfv-for-test-device-registration 01H7W9EA7S3103TSHSH4XHTP1R=when-to-use-idfv-for-test-device-registration 01H7W9EA7SGTDQCRVJKKRH0EVT=how-to-register-your-device-with-idfv" />

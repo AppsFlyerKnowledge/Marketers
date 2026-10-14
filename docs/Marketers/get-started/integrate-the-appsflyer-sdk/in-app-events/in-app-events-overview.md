@@ -116,7 +116,7 @@ AppsFlyer uses [Open Exchange Rates](https://openexchangerates.org/) for currenc
 
 #### Currency conversion
 
-**Example**
+<span id="h_01HDBZW9XERK3VN1GS8GHM911W"></span>**Example**
 
 In your app settings, you set currency to GBP. A user from France purchases a product using your app. The price is quoted in EUR (€). The in-app event that you send to AppsFlyer looks like this:
 
@@ -135,7 +135,7 @@ In this case, AppsFlyer converts revenue from EUR to USD and then to GBP. Let's 
 
 [Currency is set in the app settings](/docs/app-settings#localization-currency). The currency that you set in the app settings, is the currency that appears in the dashboard. No matter what currency you send in-app events, the revenue in the dashboard always appears in the currency that you set in the app settings.
 
-**Example**
+<span id="h_01HDBZW9XEQNG1RDH7A8H002ZD"></span>**Example**
 
 Let's say that you send in-app events with different currencies than the one set in the app settings, or with no currency at all. In this example, currency in the app settings is set to **GBP**.
 
@@ -201,7 +201,7 @@ Once you determine the in-app events that you want to measure, use our [In-app e
 2. Select the event parameters that you want to associate with the event. Choose parameters that will provide additional context to the event and enrich the data.
 3. Download the completed file from the in-app event generator, and then share it with your developer.
 
-**Example**
+<span id="h_01HDBZW9XFN2B8AC18VW99G8Z6"></span>**Example**
 
 A marketer for an ecommerce app wants to record the type of content users view in order to better understand what categories are the most popular and connect product views with product sales.
 
@@ -359,7 +359,7 @@ See [Item-level order data for ad networks (af\_order\_info)](/docs/item-level-o
 
 As an alternative, you can still structure the event using `af_content` as a JSON array. Each object in the array must include `id` and `quantity`. `af_content_list` is optional and can be omitted.
 
-**Example**
+<span id="h_01KSMX2ECGTDXQP3G9PZW1PFQD"></span>**Example**
 
 ```json
 {
@@ -384,7 +384,7 @@ For full details about sending complex in-app events to Meta, see [Send complex 
 
 You can add multiple items to a single transaction. Instead of single values per event parameter, you can have an array of items describing the transaction, separated by commas. The format should be a JSON string.
 
-**Example**
+<span id="h_01HDBZW9XFB9TAT8W4CGNP1892"></span>**Example**
 
 In the same transaction, Mr. Smith purchases two identical shirts, one pair of shoes, and a hat from a US-based online store. The sequence in which each item is listed must be identical for each
 
@@ -449,3 +449,5 @@ This solution is supported for `metaweb_int`, `tiktokweb_int`, `snapweb_int`, `p
 ## See also
 
 * [In-app event postback configuration](/docs/in-app-event-postback-configuration)
+
+<div data-zendesk-anchors="why-record-inapp-events=why-record-in-app-events h_01HDBZW9XEBTY13MG4AN93RNCD=why-record-in-app-events about-inapp-events=about-in-app-events h_01HDBZW9XEBDSDA9T5X5B6KGTG=about-in-app-events h_01HDBZW9XE3Z40JE9576C4XSF4=tip predefind-and-custom-events=predefined-and-custom-events 01J9XGXGC7R9B19MMX4CQV7DAY=predefined-and-custom-events revenue-in-inapp-events=revenue-in-in-app-events 01J9XGXGC990R3AG0R0XT9E5Y7=revenue-in-in-app-events h_01M43GXKW5NCRE5MJG45EG9AYX=note h_NETREVENUE0002=note-1 h_01HDBZW9XEMGA5RAW0DBBPV3FQ=currency-conversion h_01HDBZW9XE85YC3JHG58YYAB8F=currency-display h_01HDBZW9XEVWB9045N0YEVWE6Z=revenue-data-in-the-dashboard h_01HDBZW9XEGYFD3W9FT1N3ZGQW=revenue-data-in-raw-data-reports h_01HDBZW9XFESG6MP9QF1XCJKE6=sending-events setting-up-inapp-events=setting-up-in-app-events h_01HDBZW9XF13AGRCN2HJ18RHS2=setting-up-in-app-events 01JEWW8YB6A91VT8Z4PM9NCV00=note-2 h_01HDBZW9XF5H24H2HCJKKHCRTE=faq h_01HDBZW9XFCDMKNWJ75AWHC2Y0=note-3 h_01KSMX2ECGNMX39RD2F6ZHQEK4=important h_01HDBZW9XFJ68WSM3066NVRATS=notes h_01HDBZW9XFWKN7W90PSVMX73FS=note-4 h_01HDNZ708FN0N286R5HDQGMNGZ=see-also" />

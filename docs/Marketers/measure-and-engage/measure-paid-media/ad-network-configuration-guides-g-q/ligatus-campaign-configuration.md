@@ -45,6 +45,8 @@ Ligatus's configuration window includes 2 active tabs: Integration and Attributi
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners.
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration tab is divided into different sections as described below.
@@ -61,6 +63,8 @@ send automatic postbacks to Ligatus following user installs and re-engagements. 
 Select **Only events attributed to this partner** for events coming only from users attributed to Ligatus.
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -101,11 +105,15 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="ad-revenue-tab" />
 
 <Accordion title="Ad revenue tab">
 
@@ -113,8 +121,12 @@ Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 Permission configuration is not available for Ligatus.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW2DXQHTK9HVAWK0ECR46AZ=setting-up-ligatus h_01HKW2DXQJ4DBPP38P4RRZGX10=tip h_01HKW2DXQJYQ7PJVN6HAM0AHXB=integration-tab h_01HKW2DXQJEF1KX2C489M18EB7=activate-partner h_01HKW2DXQJPJKBMA7ZN75JSSNR=default-postbacks h_01HKW2DXQJNFZJT6NVC2R3GDSB=attribution-link-tab h_01HKW2DXQJC123Y5DPX0V86M4K=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW2DXQK53YBMRBF2RC26SG8=click-through-attribution h_01HKW2DXQKFGXMBB31N3EJAA55=click-attribution-link h_01HKW2DXQKPZBFVKQ71G6076VN=cost-tab h_01HKW2DXQKQ0YDVHMGJ0WMP1CB=ad-revenue-tab h_01HKW2DXQKBC42EMXQRVZSK7N4=permissions-tab" />

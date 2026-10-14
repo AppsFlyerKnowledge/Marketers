@@ -131,6 +131,8 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
    Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below:
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ![onesignal-integration-tab.png](https://files.readme.io/95ec88041360d492367ed383aa3242bebe1cd5c5abcff8fba64e7888f0a9c052-360017329277.png)
@@ -173,11 +175,15 @@ Once you have saved the configuration, AppsFlyer sends the following data to One
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution Links are not available for this partner.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -185,11 +191,15 @@ Cost data is not applicable in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not applicable in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -202,3 +212,5 @@ Permissions are not available for this partner.
 You can view attribution in the Segment Editor under the OneSignal tags either as the individual device level or when creating a segment to use in a campaign.
 
 ![onesignal-view-attribution_en-us.png](https://files.readme.io/ac23c9310cad560f692598127f3e9efb7c2b905efb6fd5de21efabe90bf58eea-360014377737.png)
+
+<div data-zendesk-anchors="h_01H9HWJTEYDEZ8AGVQBHZZTP7K=setting-up-onesignal h_01H9HWJTEY71PTXR1YSAK709QT=set-up-the-appsflyer-sdk h_01H9HWJTEZC62F9JW1KD4Y1CYS=integration-tab h_01H9HWJTEZH60AEPE7AB43X4YG=activate-partner h_01H9HWJTEZJAK2PTF4HQP3DQ1X=general-settings h_01H9HWJTEZCNZX17K86H9KCRFN=onesignal-appid h_01H9HWJTEZ91KR3ZA8NX5BVZCF=default-postbacks h_01H9HWJTEZZYRBS6PPRBBQAXZ5=attribution-link-tab h_01H9HWJTEZNT0EHJ7G4SFRD8K5=cost-tab h_01H9HWJTEZS7TN4FCAN40QB1NT=ad-revenue-tab h_01H9HWJTEZEY5VKCKDZ1Q7APRG=permissions-tab h_01H9HWJTEZZTJFTZC1Z2A6F5QM=view-user-attribution-data-in-onesignal" />

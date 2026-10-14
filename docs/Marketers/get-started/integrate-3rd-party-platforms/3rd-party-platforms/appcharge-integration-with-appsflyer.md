@@ -54,6 +54,8 @@ This guide walks you through setting up the Appcharge integration.
 
 In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations** tab, search for the partner, and make your changes.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 #### Activate partner
@@ -113,11 +115,15 @@ via postbacks.
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution links aren't available for Appcharge.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -125,11 +131,15 @@ Cost data isn't supported in the integration with Appcharge.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue data isn't supported in the integration with Appcharge.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -144,6 +154,8 @@ Appcharge sends AppsFlyer two kinds of mobile in-app events:
 * `ac_af_purchase` - When a user successfully completes a purchase
 * `ac_af_refund` - When a refund is completed
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 PC / Console support - the AppsFlyer integration with Appcharge does not support PC / Console Apps.
@@ -151,3 +163,5 @@ PC / Console support - the AppsFlyer integration with Appcharge does not support
 </Accordion>
 
 Learn more about [partner integrations](/docs/set-up-an-integrated-partner).
+
+<div data-zendesk-anchors="integration-types=about-appcharge h_01J3DB8MCNQKKKCV1M39KN7Q0H=about-appcharge setting-up-appcharge=set-up-the-integration h_01HST42K52JKQ70F7Y5PHDZAZ5=set-up-the-integration h_01HST42K52YZMTE3C2TBTK865M=integration-tab h_01HST42K52RCTSGRNRCJ1C70NP=activate-partner h_01HST42K52BBJ6JS5KM0WCN6CF=advanced-privacy h_01HST47F5BXWV5W8BNHS9M2MTN=default-postbacks inapp-event-postbacks=in-app-event-postbacks h_01H9FKEAV3GG6X17X3NCCSWJAS=in-app-event-postbacks h_01HST42K53GSMD91ACXY9DMP7S=attribution-link-tab h_01HST42K53D0PPXTM7MHBQ8P04=cost-tab h_01HST42K53YS8N6G2V0279F5GA=ad-revenue-tab h_01H9FKEAV3ZNKMZSG76B61H2AS=permissions-tab identifying-appcharge-events-in-appsflyer=identify-appcharge-events-in-appsflyer h_01JMHXRGB60RVZ399FNHS18ZHZ=identify-appcharge-events-in-appsflyer h_01JN0HXSEJV9JPAXGSBM7B3X7X=traits-and-limitations" />

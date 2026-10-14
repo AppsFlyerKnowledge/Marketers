@@ -72,3 +72,5 @@ Before you start configuring SearchAds.com in AppsFlyer, obtain your **api\_key*
 3. Select **Send all events**.
 4. Under **Send revenue**, select **Values&Revenue**.
 5. Click **Save Integration**.
+
+<div data-zendesk-anchors="enabling-apple-search-ads-attribution=enabling-apple-ads-attribution h_01HKW0B2AZ40F0N9A7YYGTHCE0=enabling-apple-ads-attribution h_01HKW0B2AZ411647BAS75M5BG6=note h_01HKW0B2AZWC9AQBAYDWFPAKQN=setting-up-searchadscom-in-appsflyer h_01HKW0B2AZ49R66CMJ747M485M=getting-required-information-from-searchadscom h_01HKW0B2AZ419YS071HNXHPZXY=setting-up-campaigns-in-appsflyer configuring-inapp-event-postbacks=configuring-in-app-event-postbacks h_01HKW0B2AZ4GHJE5SQHB3ZSZ8D=configuring-in-app-event-postbacks" />

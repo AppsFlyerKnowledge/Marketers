@@ -63,6 +63,8 @@ To opt in to a particular notification, it must be:
 
 If you have opted in to receive a particular notification, you will receive a notification when the trigger event for that notification occurs, but **only when** that trigger event is applicable to **apps and media sources** to which you have permissions.
 
+<div id="example" />
+
 <Accordion title="Example">
 
 Consider the following scenario:
@@ -152,3 +154,5 @@ To set up Slack notifications, Slack first has to be connected:
       4. When your Slack admin approves the connection, click **Connect** to start the integration and go from pending to connected.
 
 </Accordion>
+
+<div data-zendesk-anchors="accessing-email-notifications=accessing-and-configuring-notification-preferences h_01HKA254W4XDVNP816N46N59ZV=accessing-and-configuring-notification-preferences h_01JQ66J4YSCSX7ZGG81XHGJ3MM=to-access-notifications h_01HKA254W497H0SKTZ33CVSA4P=configuring-notifications h_01HKA254W47XRG1D3HZ6VBZ2BH=what-notifications-can-i-receive h_01JQ66BX52MV5WQ7RXH6SY3QHK=when-will-i-receive-notifications h_01JQ6EYTZ13FHYERT48K3J25SV=example h_01HKA254W4Z95M335V7KWAJA6N=where-will-i-receive-notifications h_01JQ667RAW19658DVMZNFXNAJK=bell-notification h_01JQ667RAWCAVYBZD3J0T8XH2G=email-notification h_01JJGTDQFM1WE9G3XWSN9S7Z02=note emailonly-notifications=email-only-notifications h_01JQ6EQR8JRBZ2ECJ7SHHWDWFC=email-only-notifications h_01JQ667RAW48YQ64VXW899EW3X=slack-notification" />

@@ -36,6 +36,8 @@ While matching conversion data and custom source data is at the heart of the DCR
 >
 > Utilizing tech partner integrations involves 2 primary cost considerations:
 >
+<div id="data-access" />
+
 > * **Data access:** Charges vary by partner and are discussed in more detail in the tabs below. In many cases where data access involves additional charges, we offer free data-access trial periods so you can experiment.
 > * **DCR credits:**
 >
@@ -116,3 +118,5 @@ Once you've made the necessary arrangements on the Braze side, there are no addi
 * Note that activating Evorra data within the DCR may take some time, so be sure to contact us at least one week prior to your projected start date.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01KSYY4VF60H3EYKV0W2B444SZ=try-out-this-new-feature h_01KSYY4VF6T66N55BTPY0M4H3H=overview h_01KSYY4VF6EBH1JN8FQS1VSBB9=cost-considerations h_01KSYY4VF6W8RV27NNFF6NBB6S=available-integrations h_01KSYY4VF76KGFP82NER6VB0JB=getting-started h_01KSYY4VF7PBN61GXX05HRFWBB=braze h_01KSYY4VF7CTZ4RYC69YP4NVX1=prerequisites activating-the-integration-braze=activating-the-integration h_01KSYY4VF7EV5AEADD4F5XEGRG=activating-the-integration h_01KSYY4VF7DYKA6JQH02EG2NPD=startio activating-the-integration-startio=activating-the-integration-1 h_01KSYY4VF7J7SX4X40P9RD60W4=activating-the-integration-1 h_01KSYY4VF7BE2NAVWTM7XM1W64=techsalerator activating-the-integration-techsalerator=activating-the-integration-2 h_01KSYY4VF79H4J722SX3TFAK8F=activating-the-integration-2 h_01KSYY4VF76D2NMDVR710P0MFS=evorra h_01KSYY4VF7V0DRRJZ6Q6DNDS8Q=activating-the-integration-3" />

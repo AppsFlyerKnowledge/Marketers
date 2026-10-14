@@ -47,6 +47,8 @@ For a detailed description of the Partner Configuration Window Header, click [he
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -87,6 +89,8 @@ In this section you can map your AppsFlyer events with Taptica via postbacks.
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -174,6 +178,8 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
@@ -186,11 +192,15 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -222,3 +232,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJS1NM4SSXEM83HWQPMV9JAF=setting-up-taptica h_01HJS1NM4SNMBHCFKNFQJRJ76B=tip h_01HJS1NM4T0TJ91WZ3PTSYS4QQ=integration-tab h_01HJS1NM4TBMQFKSD8MR28XDRZ=activate-partner h_01HJS1NM4TY71SZX6HF2FEWDJM=general-settings h_01HJS1NM4T5KWZJBPW9NZX9B4E=default-postbacks inapp-events-settings=in-app-events-settings h_01HJS1NM4TJC317ZJA7ZP5FG93=in-app-events-settings h_01HJS1NM4TAXE0PSFQFZ8WY335=attribution-link-tab h_01HJS1NM4TY8VCKQAHAGYKC4S2=attribution-link-parameters h_01HJS1NM4TFKAC93D0SMZD3AYJ=retargeting-settings clickthrough-attribution=click-through-attribution h_01HJS1NM4T5NMQ360S8YTGMSF6=click-through-attribution h_01HJS1NM4T3J870BWR9GXMR4E1=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HJS1NM4V649HCT6JY4HE6J0J=view-through-attribution-lookback-window h_01HJS1NM4VGNJ66P6ARHJA5Z1X=impressions-attribution-link h_01HJS1NM4VHFKRTYAEZ3X4FKF7=cost-tab h_01HJS1NM4VG74QAEFKJPZ3PCP7=ad-revenue-tab h_01HJS1NM4V01E1KECDG0WX3D59=permissions-tab h_01HJS1NM4VKSJT38G04FFN400F=ad-network-permissions h_01HJS1NM4VMP8CG58Z134BB6CW=agency-permissions" />

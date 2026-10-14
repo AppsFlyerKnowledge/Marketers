@@ -62,3 +62,5 @@ In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations**
 >
 > * Disabling attribution for Google Ads prevents sending postbacks to Google Ads Partners.
 > * You can configure multiple Google Ads accounts (CID) to send postbacks (step 5) by separating each CID with a comma.
+
+<div data-zendesk-anchors="h_01HKA1JQRK5BVGW13P72YEXZT7=setting-up-adquant-by-kenshoo h_01HKA1JQRKGDMZHTVSPVDSV463=note inapp-events=in-app-events h_01HKA1JQRK4YNEXKAHVBYP3EC1=in-app-events h_01HKA1JQRKZJJ4RXCCVSS1BG7Z=important-note" />

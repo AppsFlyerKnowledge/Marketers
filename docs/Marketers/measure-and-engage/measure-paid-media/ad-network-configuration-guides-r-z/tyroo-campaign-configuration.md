@@ -38,6 +38,8 @@ To configure your campaigns with Tyroo, follow the steps below.
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -86,6 +88,8 @@ In this section, you can map your AppsFlyer events with Tyroo via postbacks.
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -140,17 +144,23 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Tyroo automatically sends CPI cost data on the attribution link for all installs.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -169,3 +179,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJZTZ361TE694SVPQTN8Q4C1=setting-up-tyroo h_01HJZTZ361V5G81NBA1G0ZBXJG=integration-tab h_01HJZTZ361FKYED35K4E57DEJ4=activate-partner h_01HJZTZ361QM6Z3N693N3PJ1Z9=note h_01HJZTZ362XG66Q54JRATHJW9X=general-settings h_01HJZTZ3621ZWG5TZD76Z80DHE=default-postbacks inapp-events-settings=in-app-events-settings h_01HJZTZ362WMPD0C1HMG8HC2HD=in-app-events-settings h_01HJZTZ3627FHZS6J5FABPJJ1Q=attribution-link-tab h_01HJZTZ362TG648JZEXWX3MK5P=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HJZTZ362TCHGN0MGRA0B9Z7P=click-through-attribution h_01HJZTZ36282E6VNNH740AF9EW=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HJZTZ362V11V157Q2NFN550W=view-through-attribution-lookback-window h_01HJZTZ362ZF2FY83NMD5ZJ89J=impressions-attribution-link h_01HJZTZ362JBBAZ5RDWJ03EE2X=cost-tab h_01HJZTZ36323B1PET2X3FPD1H1=ad-revenue-tab h_01HJZTZ3637M1AMNTWXV9NPNGV=permissions-tab" />

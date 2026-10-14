@@ -44,6 +44,8 @@ You can personalize a dashboard by moving and sizing widgets.
 
 ## Procedures
 
+<div id="managing-dashboards" />
+
 <Accordion title="Dashboard actions">
 
 | Action | Description |
@@ -54,6 +56,8 @@ You can personalize a dashboard by moving and sizing widgets.
 | Delete | Remove the dashboard |
 
 </Accordion>
+
+<div id="add-a-custom-dashboard" />
 
 <Accordion title="Add a custom dashboard">
 
@@ -67,6 +71,8 @@ You can personalize a dashboard by moving and sizing widgets.
 5. Add one or more widgets as described in the section that follows.
 
 </Accordion>
+
+<div id="managing-widgets" />
 
 <Accordion title="Managing widgets">
 
@@ -94,6 +100,8 @@ You can personalize a dashboard by moving and sizing widgets.
 
 </Accordion>
 
+<div id="export-widget-data" />
+
 <Accordion title="Export widget data">
 
 ![Widget_table.png](https://files.readme.io/b04e80e16d0d34946e6783103fc6fbbdf89b390842db27226b4fdba6c1f7e506-360015717057.png)
@@ -109,6 +117,8 @@ You can personalize a dashboard by moving and sizing widgets.
 </Accordion>
 
 ## Traits and limitations
+
+<div id="traits-and-limitations::6693dfa7" />
 
 <Accordion title="Traits and limitations">
 
@@ -130,3 +140,5 @@ You can personalize a dashboard by moving and sizing widgets.
 | Historical data | LTV data is available for up to 25 months (2 years + 1 month). |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW1YXVNE5R4XA2T089WP4SV=custom-dashboards h_01HKW1YXVN36YFAQNHXBDS8Z50=dashboard-personalization h_01HKW1YXVNK44TB98N3S1N0B8N=procedures h_01HKW1YXVNX1J1BFHW2KMS0XEV=managing-dashboards h_01HKW1YXVNRFR7F3G3G870NPP0=add-a-custom-dashboard h_01HKW1YXVNRS55CTY4461NGEM1=managing-widgets h_01HKW1YXVN94CWPFFGWM6SYBAD=export-widget-data h_01HKW1YXVNSNAT7FGWH7BGBKH1=traits-and-limitations h_01HKW1YXVNTWXPZKD79MTPH556=traits-and-limitations::6693dfa7" />

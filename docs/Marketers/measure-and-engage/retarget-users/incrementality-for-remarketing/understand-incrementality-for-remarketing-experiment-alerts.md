@@ -32,6 +32,8 @@ Once you've [set up an Incrementality experiment](/docs/run-an-incrementality-fo
 
 Experiment alerts fall into the following categories:
 
+<div id="experiment-setup" />
+
 <Accordion title="Experiment setup">
 
 #### Audience deletion or control group removal
@@ -61,6 +63,8 @@ This alert describes a situation in which for some reason we're not receiving im
 
 </Accordion>
 
+<div id="experiment-background-environment" />
+
 <Accordion title="Experiment background environment">
 
 #### Background campaign (one or multiple)
@@ -81,6 +85,8 @@ It's not unusual for unrelated campaigns to exist in the background, but if thos
 **Note:** It is best practice to minimize the targeting of the tested audience with other campaigns.
 
 </Accordion>
+
+<div id="linked-campaign-performance" />
 
 <Accordion title="Linked campaign performance">
 
@@ -142,3 +148,5 @@ Therefore, when spending money on unrelated users, metrics that involve the cost
 Make sure the campaign's targeting configuration contains only the tested audience and that the campaign's configuration doesn't allow the campaign to target outside of the audience.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HNZPQJDA5D7Q04CDKMYCW763=about-experiment-alerts types-of-alerts=alert-types h_01HE7R6CQ5R9HAYG83B3903AY8=alert-types h_01HE7R6CQ5SNX6VYFD18501JYT=experiment-setup h_01HE7R6CQ5DM1QNN1E55TGDKKH=audience-deletion-or-control-group-removal more-suitable-campaigns-srns-only=more-suitable-campaign-srns-only h_01HE7R6CQ518RS50X87243M7BV=more-suitable-campaign-srns-only no-impressions-received-nonsrns-only=no-impressions-non-srns-only h_01HE7R6CQ57DV8D642APE01JV0=no-impressions-non-srns-only h_01HE7R6CQ5XFAE56PTX6RRZD5J=experiment-background-environment h_01HE7R6CQ5AZW1RB7XJH4GEEBT=background-campaign-one-or-multiple h_01HE7R6CQ5C6009QZK6TQS6QGC=linked-campaign-performance h_01HE7R6CQ6X5C0D4E519W535PH=audience-overlap h_01HE7R6CQ5NFH58H8ZNRG6E4MG=control-group-is-targeted h_01HKSTD08WK37RHM5DM922GGWF=detailed-targeting-toggle-is-enabled h_01HE7R6CQ6C76SZEAN0R93H9QN=low-activity h_01HKSTFSKDTD2Z8HKCCX2MWBJQ=multiple-audiences-connected outofaudience-targeting=out-of-audience-targeting h_01HE7R6CQ6TVCGW5X8GBX0AJKS=out-of-audience-targeting" />

@@ -39,11 +39,15 @@ For full information about the SDK V6, and to integrate it into a new app that d
 
 To update to iOS SDK V6, complete the procedures (1-5) that follow.
 
+<div id="1-update-sdk-version" />
+
 <Accordion title="1. Update SDK version">
 
 Download and add the [SDK V6](https://dev.appsflyer.com/hc/docs/install-ios-sdk) to your Xcode.
 
 </Accordion>
+
+<div id="2-implement-sdk-v6" />
 
 <Accordion title="2. Implement SDK V6">
 
@@ -264,6 +268,8 @@ extension AppDelegate: AppsFlyerLibDelegate {
 
 </Accordion>
 
+<div id="3-support-for-skadnetwork-attribution" />
+
 <Accordion title="3. Support for SKAdNetwork attribution">
 
 [SKAdNetwork](https://developer.apple.com/documentation/storekit/skadnetwork/configuring_the_participating_apps) is a class used by iOS that validates advertiser-driven app installations. The app install validation process involves the source app and the advertised app.
@@ -282,6 +288,8 @@ To use the [SKAdNetwork Solution](/docs/skadnetwork-skan-solution-guide):
 There is no other action or registration process required by either the developer or the marketer in the App Store.
 
 </Accordion>
+
+<div id="4-change-apis" />
 
 <Accordion title="4. Change APIs">
 
@@ -303,6 +311,8 @@ The AppsFlyer iOS SDK V6 has some API name changes. See the following table to c
 
 </Accordion>
 
+<div id="5-ensure-push-notification-integration" />
+
 <Accordion title="5. Ensure push notification integration">
 
 The following is required if push notification integration is already implemented.
@@ -315,6 +325,8 @@ Follow the [push notification instructions](/docs/measuring-push-notification-re
 
 The following V6 plugins are available:
 
+<div id="unity" />
+
 <Accordion title="Unity">
 
 The AppsFlyer Unity V6 plugin helps app owners and developers support iOS 14, providing app attribution and event reporting functionality to Android and iOS mobile apps developed on the Unity development platform. The plugin is functionally equivalent to the AppsFlyer iOS and Android SDKs.
@@ -325,6 +337,8 @@ To update your plugin from an earlier version, see our guides on updating to the
 * [From Unity plugin V5](https://github.com/AppsFlyerSDK/appsflyer-unity-plugin/blob/master/README.md#--migration) (requires an update of the Unity package)
 
 </Accordion>
+
+<div id="react-native" />
 
 <Accordion title="React Native">
 
@@ -337,6 +351,8 @@ To update your plugin from an earlier version:
 
 </Accordion>
 
+<div id="segment" />
+
 <Accordion title="Segment">
 
 The AppsFlyer Segment plugin helps app owners and developers prepare for iOS 14, providing app attribution and event reporting functionality to Android and iOS mobile apps. The plugin is functionally equivalent to the AppsFlyer iOS and Android SDKs.
@@ -344,6 +360,8 @@ The AppsFlyer Segment plugin helps app owners and developers prepare for iOS 14,
 To update your plugin from an earlier version, remove the earlier plugin and replace it following the instructions in our [GitHub guide](https://github.com/AppsFlyerSDK/segment-appsflyer-ios/tree/dev/sdk-v6-beta).
 
 </Accordion>
+
+<div id="cordova" />
 
 <Accordion title="Cordova">
 
@@ -353,6 +371,8 @@ To update your plugin from an earlier version, remove the earlier plugin and rep
 
 </Accordion>
 
+<div id="flutter" />
+
 <Accordion title="Flutter">
 
 The AppsFlyer Flutter plugin helps app owners and developers prepare for iOS 14, providing app attribution and event reporting functionality to Android and iOS mobile apps. The plugin is functionally equivalent to the AppsFlyer iOS and Android SDKs.
@@ -360,6 +380,8 @@ The AppsFlyer Flutter plugin helps app owners and developers prepare for iOS 14,
 To update your plugin from an earlier version, remove the earlier plugin and add the V6 version to `pubspec.yaml`, following the instructions in our [pub.dev guide](https://pub.dev/packages/appsflyer_sdk).
 
 </Accordion>
+
+<div id="adobe-air" />
 
 <Accordion title="Adobe AIR">
 

@@ -45,6 +45,8 @@ A description of the data provided by the audit log and a summary of its capabil
 
 ## Troubleshooting
 
+<div id="why-does-an-advertiser-audit-log-show-partner-api-call-requests" />
+
 <Accordion title="Why does an advertiser's audit log show partner API call requests?">
 
 When a partner makes an API request on an app owned by an advertiser, both the partner and the advertiser see the request in their audit log.
@@ -52,3 +54,5 @@ When a partner makes an API request on an app owned by an advertiser, both the p
 When an advertiser makes an API request using their own token, it will only show in the advertiser's audit log.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H9Q3XYYBKYSRP3T0R2MP712C=overview h_01H9Q3XYYBBCB6PXBZBF97QE11=using-the-audit-log h_01H9Q3XYYB24R3EATM7R32V0G7=troubleshooting h_01H9Q3XYYCHWJ1NQS389MR311X=why-does-an-advertiser-audit-log-show-partner-api-call-requests" />

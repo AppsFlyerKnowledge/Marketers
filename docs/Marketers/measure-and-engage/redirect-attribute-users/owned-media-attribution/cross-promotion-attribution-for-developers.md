@@ -231,3 +231,5 @@ Impressions cross-promotion URL format:
 https://impression.appsflyer.com/{PROMOTED APP ID}?pid=af_cross_promotion&
 af_siteid={SOURCE APP NAME}
 ```
+
+<div data-zendesk-anchors="implementing-crosspromotion-attribution-in-the-sdk=implementing-cross-promotion-attribution-in-the-sdk h_01HBDHCWSEPQFTYPXGZG2Y770S=implementing-cross-promotion-attribution-in-the-sdk attribute-crosspromotion-clicks=attribute-cross-promotion-clicks h_01HBDHCWSEB2709HGSKDR78J36=attribute-cross-promotion-clicks attribute-crosspromotion-impressions=attribute-cross-promotion-impressions h_01HBDHCWSE5CVWP7AMJ533S7DG=attribute-cross-promotion-impressions attribute-crosspromotion-with-nonnative-platforms=attribute-cross-promotion-with-non-native-platforms h_01HBDHCWSEKH16WSW0ANYFFH7A=attribute-cross-promotion-with-non-native-platforms" />

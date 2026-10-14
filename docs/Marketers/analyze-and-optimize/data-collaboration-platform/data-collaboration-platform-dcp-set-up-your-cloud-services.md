@@ -50,6 +50,8 @@ For Amazon S3 and GCS, the same bucket setup and permissions apply for both sour
 
 Select your cloud service below for setup instructions.
 
+<div id="amazon-s3" />
+
 <Accordion title="Amazon S3">
 
 Use the following instructions to prepare an Amazon S3 bucket for use with DCP.
@@ -112,6 +114,8 @@ Use the following instructions to prepare an Amazon S3 bucket for use with DCP.
 
 </Accordion>
 
+<div id="google-cloud-storage-gcs" />
+
 <Accordion title="Google Cloud Storage (GCS)">
 
 Use the following instructions to prepare a GCS bucket for use with DCP.
@@ -144,6 +148,8 @@ Use the following instructions to prepare a GCS bucket for use with DCP.
 6. Click **Save**.
 
 </Accordion>
+
+<div id="bigquery" />
 
 <Accordion title="BigQuery">
 
@@ -179,6 +185,8 @@ BigQuery supports source connections only. Use the following instructions to cre
 
 </Accordion>
 
+<div id="snowflake" />
+
 <Accordion title="Snowflake">
 
 Snowflake supports source connections only. Use the following instructions to create a private share for use by DCP.
@@ -208,6 +216,8 @@ Snowflake supports source connections only. Use the following instructions to cr
 
 </Accordion>
 
+<div id="salesforce-cloudcrm" />
+
 <Accordion title="Salesforce Cloud/CRM">
 
 Salesforce Cloud/CRM supports source connections only. See [DCP - Integration with Salesforce Data Cloud](/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud) for setup instructions.
@@ -229,3 +239,5 @@ Salesforce Cloud/CRM supports source connections only. See [DCP - Integration wi
 > * [DCP - Build and activate audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences)
 > * [DCP - Create and manage sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources)
 > * [Data Collaboration Platform (DCP) guide](/docs/data-collaboration-platform-dcp-guide)
+
+<div data-zendesk-anchors="h_01KY1VRHDTX2W1YC4QX1N093GF=about-cloud-service-setup h_01KY1VRHDT63WWBPNNN3QC9N49=set-up-your-cloud-services h_01KY1VRHDT2GRP2MMYTKFNRN3P=amazon-s3 h_01KY1VRHDTYMG39CRENZC971RS=note h_01KY1VRHDVV1ZHTVV5SXGXRZ59=important h_01KY1VRHDVS3S0F22T0EQ5MCKY=google-cloud-storage-gcs h_01KY1VRHDVX4KYCT627NN92TCT=note-2 h_01KY1VRHDVR3CZAZK0PGXDBWRC=bigquery h_01KY1VRHDV8Q3TRG7TBM5TRDYM=note-2 h_01KY1VRHDVSE9WJSDFXYV7W2R3=snowflake h_01KY1VRHDVDDK9B8Y7DKA5GA75=note-3 h_01KY1VRHDV9PJQMAGBY52G9RS8=salesforce-cloudcrm h_01KY1VRHDVT3PYP5QVKNKQ803G=traits-and-limitations h_01KY1VRHDVEWNCDKZYCGWD1SRM=see-also" />

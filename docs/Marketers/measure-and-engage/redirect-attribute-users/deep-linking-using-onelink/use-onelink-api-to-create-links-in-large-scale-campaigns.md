@@ -65,6 +65,8 @@ In AppsFlyer, from the side menu, select **Engage** > **OneLink API**.
 
 The following use cases highlight common ways to use OneLink API to create seamless, contextual journeys into your app.
 
+<div id="crossplatform-journeys-ctv-desktop-webtoapp" />
+
 <Accordion title="Cross-platform journeys (CTV, desktop, web-to-app)">
 
 Generate short-lived or per-session links that help users move seamlessly across devices. Common examples include QR codes on TV spots or “scan to continue” flows on desktop that take users directly to the correct in-app step.
@@ -72,6 +74,8 @@ Generate short-lived or per-session links that help users move seamlessly across
 **Value:** Seamless continuity and improved conversion across devices.
 
 </Accordion>
+
+<div id="crmpowered-channels-sms-email-whatsapp" />
 
 <Accordion title="CRM-powered channels (SMS, email, WhatsApp)">
 
@@ -81,6 +85,8 @@ Create per-user, personalized short links at send-time for high-intent messages 
 
 </Accordion>
 
+<div id="offline-and-qrbased-engagement" />
+
 <Accordion title="Offline and QR-based engagement">
 
 Produce scannable links for in-store materials, receipts, packaging, or event signage. You can update destination settings without reprinting physical assets.
@@ -88,6 +94,8 @@ Produce scannable links for in-store materials, receipts, packaging, or event si
 **Value:** Dynamic routing and offline attribution without reprinting physical assets.
 
 </Accordion>
+
+<div id="referral-and-advocate-sharing" />
 
 <Accordion title="Referral and advocate sharing">
 
@@ -109,3 +117,5 @@ This section lists some of the key OneLink API traits and limitations. See a [co
 > 📘 **Note**
 >
 > A new version of OneLink API (v2.0) was released in December 2025. The previous version (v1.0) is deprecated and will continue to work until June 2026, after which it won’t be maintained. New integrations should use OneLink API v2.0. For migration guidance, see the Dev Hub [migration guide](https://dev.appsflyer.com/hc/reference/migrate_to_onelink_api_v2).
+
+<div data-zendesk-anchors="onelink-api=about-onelink-api h_01HJR5MAKKNH236MVDZ03X1B1P=about-onelink-api h_01HJR5MAKKTDRPS0WQ44VN594X=example h_01KATK4KWTGSHTW5BEY8TEE5JD=get-started h_01KATKWCPHZB1MKCJ8DVDYZ1B3=dashboard h_01KAGQNZZA0NM19KV29QZ9ZDKP=use-cases h_01KBJ92FSTKCH9KXGWKJAF1DFH=crossplatform-journeys-ctv-desktop-webtoapp h_01KBJ92FST51NKDB465N76EX3M=crmpowered-channels-sms-email-whatsapp h_01KBJ92FST5H7V5S13TZ502VJV=offline-and-qrbased-engagement h_01KBJ92FST4FP4ZES5T643DD3R=referral-and-advocate-sharing h_01KAGQP00QZ2VBE9EY3SNPHGBP=traits-and-limitations h_01KAGM8HN6FHRK73FSF0TGXSX7=note" />

@@ -38,6 +38,8 @@ x-zendesk:
 
 UC Toutiao's configuration window includes 2 active tabs: Integration and Attribution link.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partners
@@ -72,6 +74,8 @@ In this section, you can map your AppsFlyer events with UC Toutiao via postbacks
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -118,17 +122,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost integration is not available for this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue integration is not available for this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -159,3 +169,5 @@ Use Alipay App or Dingding App to scan the 2-dimension code to install your App.
 Create you ad by going to: **Ad Unit Level** >> **Bid Setting Section** >> **Enable the Conversion**
 
 ![Toutiao_7.png](https://files.readme.io/f2c49499432c3c358d737544ea02cb5b1e634244313606a62102707dd8a3c31e-115015832146.png)
+
+<div data-zendesk-anchors="h_01HKW6Y1PVGS22BXK54VW8C488=setting-up-uc-toutiao h_01HKW6Y1PWJEJHCCY5WM8AYNGE=integration-tab h_01HKW6Y1PWX3TMM41S78MJ21C1=activate-partners h_01HKW6Y1PWRZNRX6061KFECTDN=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW6Y1PWRMK1H7QCW1GQWAA7=in-app-events-settings h_01HKW6Y1PW95EWPGP09CCJF97M=attribution-link-tab h_01HKW6Y1PWVTGGNX96AWVZJ9PP=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6Y1PWEW2FWN8K5S8DKQJJ=click-through-attribution h_01HKW6Y1PWKPJ09G70XMQG8H1S=click-attribution-link h_01HKW6Y1PWFS5X835MYJG0CVJ0=cost-tab h_01HKW6Y1PWJW4EW33MYRDN2FJB=ad-revenue-tab h_01HKW6Y1PWDWN4KWMA1KX5FYDT=permissions-tab h_01HKW6Y1PWVMM70F6MJVCJYKT3=create-conversion-at-uc-toutiao-ads" />

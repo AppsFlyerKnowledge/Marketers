@@ -102,3 +102,5 @@ Google Ads (AdWords) revenue integration is deprecated as of November 30, 2020. 
 **See also**
 
 * For iOS 14-related considerations, see [Google Ads SKAdNetwork interoperability with AppsFlyer](/docs/get-skan-postback-data-from-google-ads).
+
+<div data-zendesk-anchors="h_01HDP2SMHJ26S1BCER3KKZ8H14=cost-clicks-and-impressions h_01HDP2SMHJT8Z6DP7BHC0Y5RRN=cost-data-sync-status h_01HDP2SMHJPEDKKZF9SBXW56KG=stopping-google-cost-sync h_01HDP2SMHKC9TSZZZPFFNK8TPH=recording-ad-revenue-with-google-ads" />

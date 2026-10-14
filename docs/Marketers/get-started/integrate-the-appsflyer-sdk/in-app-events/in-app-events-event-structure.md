@@ -34,6 +34,8 @@ The following section provides a list of the predefined event names and the even
 
 Each event name also includes the typical predefined event parameters associated with that event. You can choose to include any event parameters that meet your business needs.
 
+<div id="achievement-unlocked-af_achievement_unlocked" />
+
 <Accordion title="Achievement unlocked (af_achievement_unlocked)">
 
 **Description**: Used to record achievement unlocking events
@@ -58,6 +60,8 @@ Click the link to view the mapping to SRNs.
 * [af\_description](/docs/in-app-events-event-structure#af_description)
 
 </Accordion>
+
+<div id="ad-click-af_ad_click" />
 
 <Accordion title="Ad click (af_ad_click)">
 
@@ -84,6 +88,8 @@ Click the links to view the mapping to SRNs.
 
 </Accordion>
 
+<div id="ad-view-af_ad_view" />
+
 <Accordion title="Ad view (af_ad_view)">
 
 **Description**: Used to record ad views of ads displayed in the app
@@ -108,6 +114,8 @@ Click the links to view the mapping to SRNs.
 * [af\_currency](/docs/in-app-events-event-structure#af_currency)
 
 </Accordion>
+
+<div id="add-payment-info-af_add_payment_info" />
 
 <Accordion title="Add payment info (af_add_payment_info)">
 
@@ -135,6 +143,8 @@ Click the link to view the mapping to SRNs.
 * [af\_success](/docs/in-app-events-event-structure#af_success)
 
 </Accordion>
+
+<div id="add-to-cart-af_add_to_cart" />
 
 <Accordion title="Add to cart (af_add_to_cart)">
 
@@ -168,6 +178,8 @@ Click the links to view the mapping to SRNs.
 
 </Accordion>
 
+<div id="add-to-wishlist-af_add_to_wishlist" />
+
 <Accordion title="Add to wishlist (af_add_to_wishlist)">
 
 **Description**: Used to record add to wishlist events of specific items. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
@@ -200,6 +212,8 @@ Click the links to view the mapping to SRNs.
 
 </Accordion>
 
+<div id="app-open-af_app_opened" />
+
 <Accordion title="App open (af_app_opened)">
 
 Roku Ads event mapping:
@@ -209,6 +223,8 @@ Roku Ads event mapping:
 | Roku Ads | SESSION\_START |
 
 </Accordion>
+
+<div id="complete-registration-af_complete_registration" />
 
 <Accordion title="Complete registration (af_complete_registration)">
 
@@ -236,6 +252,8 @@ Click the link to view the mapping to SRNs.
 * [af\_registration\_method](/docs/in-app-events-event-structure#af_registration_method)
 
 </Accordion>
+
+<div id="content-view-af_content_view" />
 
 <Accordion title="Content view (af_content_view)">
 
@@ -295,6 +313,8 @@ Click the parameters that are relevant to your business needs to view the mappin
 * [af\_preferred\_num\_stops](/docs/in-app-events-event-structure#af_preferred_num_stops)
 
 </Accordion>
+
+<div id="initiated-checkout-af_initiated_checkout" />
 
 <Accordion title="Initiated checkout (af_initiated_checkout)">
 
@@ -386,6 +406,8 @@ Click the link to view the mapping to SRNs.
 
 </Accordion>
 
+<div id="lead-lead" />
+
 <Accordion title="Lead (lead)">
 
 Roku Ads event mapping:
@@ -395,6 +417,8 @@ Roku Ads event mapping:
 | Roku Ads | LEAD |
 
 </Accordion>
+
+<div id="level-achieved-af_level_achieved" />
 
 <Accordion title="Level achieved (af_level_achieved)">
 
@@ -424,6 +448,8 @@ Click the links to view the mapping to SRNs.
 
 </Accordion>
 
+<div id="list-view-af_list_view" />
+
 <Accordion title="List view (af_list_view)">
 
 **Description**: Used to record listings view events
@@ -451,6 +477,8 @@ Click the links to view the mapping to SRNs.
 
 </Accordion>
 
+<div id="login-af_login" />
+
 <Accordion title="Login (af_login)">
 
 **Description**: Used to record user login events
@@ -471,6 +499,8 @@ Click the links to view the mapping to SRNs.
 
 </Accordion>
 
+<div id="opened-from-push-notification-af_opened_from_push_notification" />
+
 <Accordion title="Opened from push notification (af_opened_from_push_notification)">
 
 **Description**: Used to record app opens from push notification events
@@ -488,6 +518,8 @@ Click the links to view the mapping to SRNs.
 | Criteo | - |
 
 </Accordion>
+
+<div id="purchase-af_purchase" />
 
 <Accordion title="Purchase (af_purchase)">
 
@@ -556,6 +588,8 @@ Click the parameters that are relevant to your business needs to view the mappin
 
 </Accordion>
 
+<div id="rate-af_rate" />
+
 <Accordion title="Rate (af_rate)">
 
 **Description**: Used to record app/item rating events. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
@@ -584,6 +618,8 @@ Click the links to view the mapping to SRNs.
 
 </Accordion>
 
+<div id="reengage-af_re_engage" />
+
 <Accordion title="Re-engage (af_re_engage)">
 
 **Description**: Used to record user re-engagement events
@@ -606,6 +642,8 @@ Click the link to view the mapping to SRNs.
 * [af\_description](/docs/in-app-events-event-structure#af_description)
 
 </Accordion>
+
+<div id="search-af_search" />
 
 <Accordion title="Search (af_search)">
 
@@ -664,6 +702,8 @@ Click the parameters that are relevant to your business needs to view the mappin
 
 </Accordion>
 
+<div id="share-af_share" />
+
 <Accordion title="Share (af_share)">
 
 **Description**: Used to record sharing events
@@ -689,6 +729,8 @@ Click the link to view the mapping to SRNs.
 * [af\_description](/docs/in-app-events-event-structure#af_description)
 
 </Accordion>
+
+<div id="spent-credits-af_spent_credits" />
 
 <Accordion title="Spent credits (af_spent_credits)">
 
@@ -718,6 +760,8 @@ Click the links to view the mapping to SRNs.
 * [af\_content](/docs/in-app-events-event-structure#af_content)
 
 </Accordion>
+
+<div id="start-trial-af_start_trial" />
 
 <Accordion title="Start trial (af_start_trial)">
 
@@ -752,6 +796,8 @@ Click the links to view the mapping to SRNs.
 
 </Accordion>
 
+<div id="subscription-af_subscribe" />
+
 <Accordion title="Subscription (af_subscribe)">
 
 **Description**: Used to record paid subscription purchases. To record and validate this event, see [Purchase and subscription validation](/docs/purchase-and-subscription-validation-overview).
@@ -780,6 +826,8 @@ Click the links to view the mapping to SRNs.
 * [af\_subscription\_id](/docs/in-app-events-event-structure#af_subscription_id)
 
 </Accordion>
+
+<div id="travel-booking-af_travel_booking" />
 
 <Accordion title="Travel booking (af_travel_booking)">
 
@@ -841,6 +889,8 @@ Click the parameters that are relevant to your business needs to view the mappin
 
 </Accordion>
 
+<div id="tutorial-completion-af_tutorial_completion" />
+
 <Accordion title="Tutorial completion (af_tutorial_completion)">
 
 **Description**: Used to record tutorial completions. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
@@ -868,6 +918,8 @@ Click the links to view the mapping to SRNs.
 * [af\_content](/docs/in-app-events-event-structure#af_content)
 
 </Accordion>
+
+<div id="update-af_update" />
 
 <Accordion title="Update (af_update)">
 
@@ -1308,7 +1360,7 @@ The following section provides a list of the predefined event parameters. Each e
 
 </Accordion>
 
-<div id="af_net_revenue" />
+<div id="h_01NEWAFNETREVENUE0001" />
 
 <Accordion title="af_net_revenue">
 
@@ -1514,6 +1566,8 @@ Parameter mapping:
 
 </Accordion>
 
+<div id="af_projected_revenue" />
+
 <Accordion title="af_projected_revenue">
 
 The estimated revenue an advertiser expects from a user based on their early interactions or behaviors before the actual revenue is realized.
@@ -1665,7 +1719,7 @@ The estimated revenue an advertiser expects from a user based on their early int
 
 To learn more about how to use the revenue parameter, click [here](/docs/in-app-events-overview#revenue-in-in-app-events).
 
-**Net revenue:** To report net revenue alongside gross revenue, send [af\_net\_revenue](/docs/in-app-events-event-structure#af_net_revenue) as a custom event parameter. You define what net means for your business (for example, revenue after store fees and/or taxes, gross margin, or revenue after service fees). Apps with ROI360 store revenue enabled have it populated automatically on the purchase and subscription events it records, as gross minus app store fees and taxes.
+**Net revenue:** To report net revenue alongside gross revenue, send [af\_net\_revenue](/docs/in-app-events-event-structure#h_01NEWAFNETREVENUE0001) as a custom event parameter. You define what net means for your business (for example, revenue after store fees and/or taxes, gross margin, or revenue after service fees). Apps with ROI360 store revenue enabled have it populated automatically on the purchase and subscription events it records, as gross minus app store fees and taxes.
 
 **Parameter mapping:**
 
@@ -1901,3 +1955,5 @@ The following is a list of predefined event parameters that do not include SRN m
 > 📘 **See also**
 >
 > * [In-app event postback configuration](/docs/in-app-event-postback-configuration)
+
+<div data-zendesk-anchors="h_01H9HT8C713A4NV9WCB0FJZJ4R=overview h_01H9HT8C7189W1JXAR3J3KT8KV=predefined-event-names h_01H9HT8C71MV7V7C75MB6ESHMM=achievement-unlocked-af_achievement_unlocked h_01H9HT8C7171PB7KAC83MYBWQ8=ad-click-af_ad_click h_01H9HT8C72KJ6ZA663SH7HJ7MP=ad-view-af_ad_view h_01H9HT8C72HSM88DJG0PDV5140=add-payment-info-af_add_payment_info h_01H9HT8C72BWFSPKWDVQW926WG=add-to-cart-af_add_to_cart h_01H9HT8C7228B57XKAACPZG8NK=add-to-wishlist-af_add_to_wishlist h_01K0PJ4C3HP9DMJT1DFZ848WF0=app-open-af_app_opened h_01H9HT8C72DX0DXBDHRJFG19G2=complete-registration-af_complete_registration h_01H9HT8C72SPY9VQ9AD648AKZK=content-view-af_content_view h_01H9HT8C722T2VH6A9257Q7T4P=initiated-checkout-af_initiated_checkout h_01H9HT8C72F0RZ4JS9929SE465=invite-af_invite h_01K0PJ4C3H72BDTRH7WAYW4V7S=lead-lead h_01H9HT8C72VFGC08Q858EX7XTN=level-achieved-af_level_achieved h_01H9HT8C72DZW77YTQ9KB0XEVG=list-view-af_list_view h_01H9HT8C720W10QEBCTPAGMRFB=login-af_login h_01H9HT8C72QC4WV10Z4JZTZM7D=opened-from-push-notification-af_opened_from_push_notification h_01H9HT8C7263J0YSX5K10R497N=purchase-af_purchase h_01H9HT8C73MPYMG8KSYE04DKDZ=rate-af_rate h_01H9HT8C734DAC6GPJE58DB5JD=reengage-af_re_engage h_01H9HT8C73YSYBK0YSDPRWDBNW=search-af_search h_01H9HT8C734GJ07V67QC9V3TVC=share-af_share h_01H9HT8C73H4VT2M0P3M1SYG88=spent-credits-af_spent_credits h_01H9HT8C73YWDCKAZPY0BVRS6F=start-trial-af_start_trial h_01H9HT8C736BF2VNRCFSJSVXWS=note h_01H9HT8C73N69S45H82NWQ5FN1=subscription-af_subscribe h_01H9HT8C73CD6HNT5GA6B4CHQ9=travel-booking-af_travel_booking h_01H9HT8C73NFDPS1P5AVXXZEX7=tutorial-completion-af_tutorial_completion h_01H9HT8C73JPH6Q9XFKA3GNYT8=update-af_update h_01H9HT8C74SGGK2FW92JH4BJPZ=note-1 h_01H9HT8C74N4TJZ5ZVBTKAX810=predefined-event-parameters h_01H9HT8C74VQ9ZWF079V50E5HE=note-2 h_01H9HT8C74Y0BWS565DFTY75KJ=af_adrev_ad_type h_01H9HT8C742NHGXFKWSS4P07K2=af_city h_01H9HT8C7442PFZEK7QC6R0K67=af_class h_01H9HT8C7462KG3030WWZ2XGZW=af_content h_01H9HT8C74ZX07907NXFHKGJ91=af_content_id h_01H9HT8C744CMWSYHJB74JFSS5=af_content_list h_01H9HT8C74GKGG5V4X54BCAADC=af_content_type h_01H9HT8C74RD08Z9EBZTKY5KSD=af_country h_01H9HT8C75BJYK4R3WYSN4BF43=af_currency h_01H9HT8C752E2PK6QKTA2GNGH5=af_customer_user_id h_01H9HT8C75BN0A92X9BRY4A74T=af_date_a h_01H9HT8C75406KV9264ZZT9DKM=af_date_b h_01H9HT8C7526AEHJAA7FM7442E=af_departing_arrival_date h_01H9HT8C75W9X61ZH0849EPDBY=af_departing_departure_date h_01H9HT8C75VEV3C8CJBDN6X5HW=af_description h_01H9HT8C75Z8TBZEPEY9EGSR4Y=af_destination_a h_01H9HT8C751G216VB6GYTPEPE1=af_destination_b h_01H9HT8C75CVM0MHSKTK2CZ8HD=af_destination_list h_01H9HT8C75CVVDFABSTN5R4MWT=af_hotel_score h_01H9HT8C75GEMHE2NHEFK9J7NT=af_level h_01H9HT8C7505H4CMY70EMDQWSF=af_max_rating_value af_net_revenue=h_01NEWAFNETREVENUE0001 h_01NEWAFNETREVENUENOTE0001=note-3 h_01H9HT8C75ST9XBDC3SR6XFDPB=af_num_adults h_01H9HT8C75NNZ5NP6PRPXDSKP8=af_num_children h_01H9HT8C757X70AAGNWFV0CKRY=af_num_infants h_01H9HT8C75A0HESE5FD10VD1P8=af_order_id h_01H9HT8C75B488VKY8SW9M4GG4=af_payment_info_available h_01H9HT8C75W7SRB0KF4E5FB2YF=af_preferred_neighborhoods h_01H9HT8C75GC61D1A0P6P42TMR=af_preferred_num_stops h_01H9HT8C76XRY6CD1TJEPCJJTR=af_preferred_price_range h_01H9HT8C76Y9ZQQ2X4EJT2DC14=af_preferred_star_ratings h_01H9HT8C76KCDRJKBWSM9JKFE1=af_price 01J9XHWVFHXPN6N3EZF1P8XWYM=af_projected_revenue h_01H9HT8C76Y5VXBKF3TBVVJG1C=af_quantity h_01H9HT8C768WXZ126Q425PHDWX=af_rating_value h_01H9HT8C76XX9J6FZ6RWQB6B6R=af_receipt_id h_01H9HT8C760S0F7QZMFYW1BKRD=af_region h_01H9HT8C76N4S3SGES5SQ2J4AC=af_registration_method h_01H9HT8C76ZR36A4CM2PY6PJ10=af_returning_arrival_date h_01H9HT8C760JPVXYC5WH9ZSDPX=af_returning_departure_date h_01H9HT8C76PYB14WPCQKSEK69J=af_revenue h_01H9HT8C762BGPRHFX228APEHR=important h_01H9HT8C76P55HN8K6D7PHFS2J=af_score h_01H9HT8C76TB4KNTZVD6JVPEYQ=af_search_string h_01H9HT8C762R2PJ573W8TJFJHG=af_subscription_id h_01H9HT8C76VZ6FA20K471V0EKK=af_success h_01H9HT8C76029H94AY5EHCZX6X=af_suggested_destinations h_01H9HT8C76N6C694TCPVCK4EC3=af_suggested_hotels h_01H9HT8C765EM1SAEJ67FNXZDE=af_travel_end h_01H9HT8C76YP8VEM5E6WB9NQ7T=af_travel_start h_01H9HT8C771SYQWQ8VBTPA2V2E=af_user_score h_01H9HT8C771XFSQJX42QVBNZAJ=af_validated h_01HDNZ30NH2QXSHD7B4EMFG4T5=see-also" />

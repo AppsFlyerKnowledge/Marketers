@@ -48,6 +48,8 @@ Recording events can help you determine:
 
 The following section provides a list of event structures that are typical to the sports betting vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
+<div id="login-af_login" />
+
 <Accordion title="Login (af_login)">
 
 **Purpose**
@@ -63,6 +65,8 @@ Whenever the user successfully logs in
 Can be sent without any additional parameters
 
 </Accordion>
+
+<div id="complete-registration-af_complete_registration" />
 
 <Accordion title="Complete registration (af_complete_registration)">
 
@@ -85,6 +89,8 @@ When the user completes the signup process and the registration is confirmed by 
 ## Recommended structures for custom events
 
 The following section provides an event structure that includes a custom event name and the suggested event parameter to use. Note that in-app events can include any event parameters that meet your business needs.
+
+<div id="first-time-deposit-first_time_deposit" />
 
 <Accordion title="First time deposit (first_time_deposit)">
 
@@ -110,6 +116,8 @@ First time the user makes a deposit into their betting account
 
 </Accordion>
 
+<div id="deposit-deposit" />
+
 <Accordion title="Deposit (deposit)">
 
 **Purpose**
@@ -128,6 +136,8 @@ Subsequent deposit the user makes after the first time deposit
 | af\_currency | Currency in which the deposit was made | AUD |
 
 </Accordion>
+
+<div id="placed-bet-placed_bet" />
 
 <Accordion title="Placed bet (placed_bet)">
 
@@ -152,6 +162,8 @@ When a bet is successfully placed
 
 </Accordion>
 
+<div id="withdrawal-withdrawal" />
+
 <Accordion title="Withdrawal (withdrawal)">
 
 **Purpose**
@@ -170,6 +182,8 @@ When a user withdraws money from their betting account
 | af\_currency | Currency that was withdrawn | AUD |
 
 </Accordion>
+
+<div id="bonus-bet-bonus_bet" />
 
 <Accordion title="Bonus bet (bonus_bet)">
 
@@ -195,6 +209,8 @@ When a bet is successfully placed
 | bonus\_id | ID of the bonus bet | 221 |
 
 </Accordion>
+
+<div id="cancels-bet-canceled_bet" />
 
 <Accordion title="Cancels bet (canceled_bet)">
 
@@ -222,6 +238,8 @@ When the user cancels a bet
 
 </Accordion>
 
+<div id="account-deducted-account_deducted" />
+
 <Accordion title="Account deducted (account_deducted)">
 
 **Purpose**
@@ -245,6 +263,8 @@ When a bet is lost
 
 </Accordion>
 
+<div id="account-credited-account_credited" />
+
 <Accordion title="Account credited (account_credited)">
 
 **Purpose**
@@ -267,3 +287,5 @@ When a bet is won
 | event\_time | Time of the event that was bet on | 17:30 |
 
 </Accordion>
+
+<div data-zendesk-anchors="sports-betting=-sports-betting h_01HGTAE0AT9KD9RKX7XPR7A4AT=-sports-betting h_01HGTAE0ATTMEART2R1BD1ZDSB=important h_01HGTAE0ATYW0RDDZZD5EAR7BZ=recommended-structures-for-predefined-events h_01HGTAE0ATMBJVKS14SGWGK0DG=login-af_login h_01HGTAE0ATHZWSM0R9A6R9BV96=complete-registration-af_complete_registration h_01HGTAE0ATJQDWWBB8D836QRJ5=recommended-structures-for-custom-events h_01HGTAE0AT3ZBH5G16QJW4MGQ1=first-time-deposit-first_time_deposit h_01HGTAE0ATTRCNX1Y4AFJ8VGWC=deposit-deposit h_01HGTAE0ATNW97Y8WJWWXTXX7V=placed-bet-placed_bet h_01HGTAE0ATPB6KHMHHBW7T9B0Q=withdrawal-withdrawal h_01HGTAE0ATGS9VS7QY1974XAPY=bonus-bet-bonus_bet h_01HGTAE0AVKKGGJCB9WWXMWT0D=cancels-bet-canceled_bet h_01HGTAE0AVMB59TDT6AM65DE94=account-deducted-account_deducted h_01HGTAE0AVXMY0J983V9NTYQ2J=account-credited-account_credited" />

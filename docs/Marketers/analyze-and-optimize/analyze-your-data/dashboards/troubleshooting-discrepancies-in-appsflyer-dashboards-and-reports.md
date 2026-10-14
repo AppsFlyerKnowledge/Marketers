@@ -104,6 +104,8 @@ The following table shows which dashboards and reports are LTV and which are act
 
 The following sections explain how you can compare data between different dashboards and reports while effectively mitigating and troubleshooting the reasons why you might see differences or discrepancies in the data.
 
+<div id="compare-ltv-and-activity-data-in-appsflyer" />
+
 <Accordion title="Compare LTV and activity data in AppsFlyer">
 
 When comparing AppsFlyer data, consider that when comparing LTV data and activity data, there are 2 differences to consider:
@@ -129,6 +131,8 @@ To compare the two types of data correctly we need to neutralize the differences
 
 </Accordion>
 
+<div id="compare-different-appsflyer-aggregated-data-dashboards-and-reports" />
+
 <Accordion title="Compare different AppsFlyer aggregated data dashboards and reports">
 
 When comparing data between different AppsFlyer aggregated data dashboards and reports, LTV vs, activity may be the reason for discrepancies.
@@ -138,6 +142,8 @@ If you're aggregating data by geo, another reason for discrepancies could be tha
 However, consider that there may be other reasons as well. [See the aggregated reporting method comparison for more information](/docs/aggregated-and-analytics-reporting-overview#toolapi-comparison)
 
 </Accordion>
+
+<div id="compare-appsflyer-data-with-external-data" />
 
 <Accordion title="Compare AppsFlyer data with external data">
 
@@ -157,6 +163,8 @@ There may also be other reasons for discrepancies between AppsFlyer data and ext
 * [Third-party platform discrepancies](/docs/discrepancies-between-appsflyer-and-third-party-platforms)
 
 </Accordion>
+
+<div id="compare-inapp-event-raw-data-with-the-activity-view" />
 
 <Accordion title="Compare in-app event raw data with the Activity view">
 
@@ -189,3 +197,5 @@ Apply this filter before aggregating the UA reports so that only the primary att
 4. **Compare the aggregated total** with the event count displayed in the **Activity dashboard**.
 
 </Accordion>
+
+<div data-zendesk-anchors="ltv-vs-activity=about-data-differences-and-discrepancies h_01HKA0R42YZMAM5Y20B7T2JCDZ=about-data-differences-and-discrepancies h_01J5WGZ13WPMNSB1NA0SMA77WJ=ltv-vs-activity h_01HKA0R42YQ2CJS67MDQSJHKEW=ltv-data h_01HKA0R42Y987PJRM70M7DFJ98=activity-data h_01J5WGZ13W5W8NJ1CRZQPHY939=the-train-analogy appsflyer-dashboards%E2%80%94ltv-or-activity=appsflyer-dashboards-and-reportsltv-or-activity h_01HKA0R42Y558BQ45Y9MFZHZM0=appsflyer-dashboards-and-reportsltv-or-activity h_01J5WKA06A7XYFN07V60VQ4FY5=compare-data-between-different-dashboards-and-reports h_01J5WHVQSNEA2WK83RBRDM1GT3=compare-ltv-and-activity-data-in-appsflyer retrieving-ltv-data-out-of-raw-activity-data=to-retrieve-ltv-data-out-of-raw-activity-data h_01HKA0R42Z3ZSMEM7T5F0V3VM7=to-retrieve-ltv-data-out-of-raw-activity-data retrieving-activity-data-out-of-ltv-data=to-retrieve-activity-data-out-of-ltv-data h_01HKA0R42ZHFM4RHG78GE51XK3=to-retrieve-activity-data-out-of-ltv-data h_01J5WK0AEN2N6J4P06CC3DMWPJ=compare-different-appsflyer-aggregated-data-dashboards-and-reports h_01J5WHVQSNZW66CQ4VGQGAKZB1=compare-appsflyer-data-with-external-data h_01KCNZWKFAWQ3KBJPCXP4BP8RM=compare-inapp-event-raw-data-with-the-activity-view h_01KCNZXRJKTGPH104H5Y1QNTM9=reconcile-raw-data-with-activity-event-metrics" />

@@ -49,3 +49,5 @@ You can build a custom audience from scratch, import one from your own database,
 * After subscribing to Audiences, AppsFlyer retrieves all of your in-app event data from the past 90 days. This process can take between 1-2 weeks. Once complete, you'll be notified and you can begin creating audiences.
 
 ** Audiences is a premium feature. If you need help getting started, reach out to your salesperson, or write to [hello@appsflyer.com](mailto:hello@appsflyer.com)
+
+<div data-zendesk-anchors="overview=about-audiences h_01J2G7RMHSPPXCWJ60W9HZASXX=about-audiences h_01HKHGX9JJQQCKF9SDZRSCM1XJ=about-audiences xyz-onboarding=audiences-onboarding h_01J2RJFH0B4R815CWDQNEB2C1P=audiences-onboarding" />

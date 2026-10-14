@@ -49,6 +49,8 @@ Before you create custom data sources, you should first:
 
 Sources must meet these requirements in order to prevent errors in source creation and report processing.
 
+<div id="data-format" />
+
 <Accordion title="Data format (relevant to all data sources)">
 
 Data within sources must meet these requirements:
@@ -349,6 +351,8 @@ For multi-part GZIP files:
 
 </Accordion>
 
+<div id="example-after-uploading-files" />
+
 <Accordion title="Example (after uploading files)">
 
 After uploading source files on 2 days (and programmatically creating date/version/data folders and `_SUCCESS` files), your bucket/folder structure might look something like this:
@@ -424,6 +428,8 @@ Don't forget to make corresponding changes reflecting the new source structure i
 
 ## Reference
 
+<div id="manually-creating-a-folder-structure" />
+
 <Accordion title="Manually creating a storage bucket folder structure (relevant only if you choose to do so)">
 
 In general, it's easiest to allow AppsFlyer to automatically generate the required folder structure as part of the source creation process. However, if you wish to create these folders manually, you can do so as follows.
@@ -470,3 +476,5 @@ After creating 2 data source folders, your bucket/folder structure might look so
 Under each data source folder, [nested subfolders by date and version](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version) must be created each time the source is updated.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HPKB2ERNRQG73AFA0X7XEDEF=introduction source-format=source-requirements h_01HPKB2ERPANE0CAXFP9RG5YEH=source-requirements h_01HPKB2ERPQ787V0PAABP7Q2YY=data-format h_01HPKB2ERPJ5PVQ2QM5XCYZE0D=table-columns h_01HPKB2ERPWZFZN2DSCHWNXKXX=file-format h_01HPKB2ERPX2T413N3T93YBBZB=creating-a-source h_01HPKB2ERPQMT0NKTE5NN40KG4=1-name-the-source h_01HPKB2ERQWDMYBEPDZY17T9PG=2-specify-the-source-location h_01HPKB2ERQ28JQ2CK16RYZ38G6=source-locations-in-bigquery h_01HPKB2ERQWFGF8MN8ZYAXWC87=source-locations-in-snowflake h_01HPKB2ERQZT3Y6GNZ2WWWM0M7=source-locations-in-cloud-storage-buckets h_01HPKB2ERQ40VTVZA5DGNR907G=3-define-the-source-structure h_01HPKB2ERQTJPGG68FSEBHVVJA=loading-source-fields h_01HPKB2ERSYCFE1EYTCK550VTK=categorize-fields h_01HPKB2ERS55YGWY3RMRPR02Y4=4-save-the-source uploading-source-files-to-trigger-report-processing=updating-sources-to-trigger-report-processing h_01HPKB2ERSCPAPB6WE3354ECW9=updating-sources-to-trigger-report-processing h_01HPKB2ERSEVBTS3DR2TB6Y1AQ=nested-subfolders-for-each-date-and-version h_01HPKB2ERSJ9KNDK6CEBRQB65C=_success-files h_01HPKB2ERSJKGVE61T6J9HXTCK=example-after-uploading-files h_01HPKB2ERS5PK2P2XTC4ZMPCMC=working-with-existing-sources h_01HPKB2ERTC48MGS0BM5SDR6XV=editing-the-source-name h_01HPKB2ERTS6DEQX0KP0EQTGSP=editing-the-source-structure h_01HPKB2ERVGJYJ9KW1RGX24CGV=deleting-a-source h_01HPKB2ERV1KK3J8YX918GCF3M=reference h_01HPKB2ERVZ88MJ35JC66YDPAB=manually-creating-a-folder-structure creating-a-dcr-key-folder=create-a-dcr-key-folder h_01HPKB2ERV7MQJ9CK44T92GK2G=create-a-dcr-key-folder toplevel-input-folder=top-level-input-folder h_01HPKB2ERVPG4R9FHWZPQ8TCZQ=top-level-input-folder secondlevel-folder-for-each-data-source=second-level-folder-for-each-data-source h_01HPKB2ERVVFMP81RE8ATZ6SZ8=second-level-folder-for-each-data-source" />

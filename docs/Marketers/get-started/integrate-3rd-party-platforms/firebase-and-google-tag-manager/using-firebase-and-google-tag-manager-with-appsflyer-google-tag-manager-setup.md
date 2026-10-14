@@ -35,6 +35,8 @@ The following steps are for Google Tag Manager for mobile apps. If the UI that y
 
 The steps described in this section relate to a purchase event but are relevant for any event that you wish to send.
 
+<div id="1-creating-event-parameter-variables" />
+
 <Accordion title="1. Creating event parameter variables">
 
 Event parameter variables allow Google Tag Manager to obtain data from the event. When the event is sent, the AppsFlyer ID and Dev Key variables are passed along with it. Google Tag Manager then evaluates their value and this is how it obtains them. The data from the event has two functions:
@@ -89,6 +91,8 @@ The example here shows how to create event parameter variables for Revenue and P
 
 </Accordion>
 
+<div id="2-creating-a-trigger-for-the-purchase-event" />
+
 <Accordion title="2. Creating a trigger for the purchase event">
 
 In order for Google Tag Manager to know if the event should be sent to AppsFlyer, a trigger for the event must be configured.
@@ -107,6 +111,8 @@ Below is a screenshot from GTM UI. It shows the trigger's final configuration:
 ![trigger_purchase_event.png](https://files.readme.io/ef2e70fb2aa0b25f1243d6fa565e3cdb1df407fd2d4b3105dee412ccad7f2704-49839256428689.png)
 
 </Accordion>
+
+<div id="3-creating-a-tag-for-the-purchase-event" />
 
 <Accordion title="3. Creating a tag for the purchase event">
 
@@ -139,6 +145,8 @@ Below is a screenshot from GTM UI. It shows the Tag's final configuration:
 
 </Accordion>
 
+<div id="4-publishing-the-tag-manager-container" />
+
 <Accordion title="4. Publishing the tag manager container">
 
 After each change in Google Tag Manager (adding tags etc.) you must download the container and add it to your app root folder:
@@ -149,3 +157,5 @@ After each change in Google Tag Manager (adding tags etc.) you must download the
 Build and install the application on a test device and check the debug log to see that the event is triggered and sent.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HE7SFG97FKSVAY5QHVHGF3GV=google-tag-manager-setup h_01HE7SFG97YVYNT385MNFA9ECN=1-creating-event-parameter-variables h_01HE7SFG98XGBMTA7ZF8XSNF29=2-creating-a-trigger-for-the-purchase-event h_01HE7SFG98R4DGTRWXE247MRPK=3-creating-a-tag-for-the-purchase-event h_01HE7SFG98R2KGRRDA9TQTYD3B=4-publishing-the-tag-manager-container" />

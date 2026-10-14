@@ -35,6 +35,8 @@ Data in the dashboard is derived from the af\_open (session) event and isn't rel
 2. Set the activity date range.   
    The metrics displayed are described in the sections that follow.
 
+<div id="sdk-information-ios-and-android" />
+
 <Accordion title="SDK information (iOS and Android)">
 
 The following shows the version metrics available for iOS and Android apps using the most recent app open (launch) date
@@ -47,6 +49,8 @@ The following shows the version metrics available for iOS and Android apps using
 | Device type | [![UsersByDevice.png](https://files.readme.io/2f320f91d6a5a9f4bca0e3715cd33dfff2ac971af29e961592b4494bafe721f0-4402595560977.png)](https://files.readme.io/2f320f91d6a5a9f4bca0e3715cd33dfff2ac971af29e961592b4494bafe721f0-4402595560977.png) |
 
 </Accordion>
+
+<div id="att-metrics-ios-14" />
 
 <Accordion title="iOS and ATT metrics">
 
@@ -75,3 +79,5 @@ The [ATT status](/docs/att-implications-ios-14-and-deprecation-of-lat) is set by
 | iOS 16.1 user adoption rate | [![iso_user_adoption_rate.png](https://files.readme.io/2a29749fd968354f9836595cf20f07954be1aedce97df140d1d14452eb7306b3-15478514320529.png)](https://files.readme.io/2a29749fd968354f9836595cf20f07954be1aedce97df140d1d14452eb7306b3-15478514320529.png) |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HGX98Q4FRVS2B35BVT683D5W=version-adoption-and-att-consent-dashboard h_01HGX98Q4F8PQYRSC0J2WE4RQX=sdk-information-ios-and-android h_01HGX98Q4FKWD5496P446FB31B=att-metrics-ios-14 h_01HGX98Q4G0C4XTC1DSVP96M19=att-and-ios-adoption-metrics-for-ios-apps" />

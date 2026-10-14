@@ -115,3 +115,5 @@ When the advertiser gives permission for the ad network to configure their attri
 Once your client has granted you permission to the integration parameter configurations, you are able to access it from the left side of the main dashboard and select **Active Integrations.**
 
 If your client has granted you permission to the Retention Report, you are able to access it from the left side of the main dashboard and select **Retention.**
+
+<div data-zendesk-anchors="h_01HCF5VPHN5RRQFXVJJFPFQBSW=using-the-appsflyer-dashboard h_01HCF5VPHNXBQZNF9MNEVCQ243=overview-dashboard h_01HCF5VPHN08CV555KDHB7QP1Z=report-access h_01HCF5VPHN3REJ2FPD8386Z92S=note h_01HCF5VPHN8RV3GBX1NNFX10P0=using-postback-reports h_01HCF5VPHNSW9X7SNQPC17Q45A=viewing-configuration-settings-and-data h_01HCF5VPHN6AJ7SE6MGW57BPW8=permissions h_01HCF5VPHNRCQ5P3MZF9S5RWZW=enabling-permissions h_01HCF5VPHP2EXY705GW2VM5YMA=granting-permissions-to-ad-network-team-members h_01HCF5VPHPHS8QQBMVTGV7B4VJ=granting-additional-permissions h_01HCF5VPHPCD52R9222AFQH176=note-1" />

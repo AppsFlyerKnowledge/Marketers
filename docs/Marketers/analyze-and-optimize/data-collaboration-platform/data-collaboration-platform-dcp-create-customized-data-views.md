@@ -48,6 +48,8 @@ To get started creating a data view, follow the steps below:
 
 An AppsFlyer [account](https://www.appsflyer.com/sign-up/) with DCP access.
 
+<div id="set-the-data-view-general-details" />
+
 <Accordion title="Step 1. Set the data view general details">
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
@@ -77,6 +79,8 @@ An AppsFlyer [account](https://www.appsflyer.com/sign-up/) with DCP access.
 
 </Accordion>
 
+<div id="h_01K4SDE8H7R9YZYXMRVXV5GZSV" />
+
 <Accordion title="Step 2. Filter your data (optional)">
 
 You can apply filters to narrow down the data by using selected attributes, helping you focus on specific and relevant information.
@@ -97,6 +101,8 @@ You can apply filters to narrow down the data by using selected attributes, help
 
 </Accordion>
 
+<div id="transform-aggregate-and-filter-data" />
+
 <Accordion title="Step 3. Create calculated fields (optional)">
 
 Calculated fields enable you to use functions to add new fields, change data format and values, or combine records using logic, calculations, or aggregation.
@@ -105,7 +111,7 @@ Calculated fields enable you to use functions to add new fields, change data for
 
 1. Under **Calculated fields**, click **+ New field**.
 2. Enter a **New field name**.
-3. Click **Set function**, and select a function from the [list of functions](#list-of-functions-and-use-case-examples). The relevant fields for entering the required information are automatically added.
+3. Click **Set function**, and select a function from the [list of functions](#zd-list-of-functions-and-use-case-examples). The relevant fields for entering the required information are automatically added.
 4. For **Aggregation** fields:  The **Group by** section will automatically open and you can select the field that defines how the aggregated data will be grouped.
 5. [Optional] Click **+ New field** to add more **Transformation** or **Aggregation** fields. You can add as many as needed.
 
@@ -124,6 +130,8 @@ Once created, the new field is:
 * Included in the **Calculated fields** section.
 * Included in the list of fields available for use in all functions and filters.
 * Included in the list of fields under the [Select fields](#select-fields) section.
+
+<div id="zd-list-of-functions-and-use-case-examples" />
 
 #### List of functions and use case examples
 
@@ -169,11 +177,15 @@ The data view structure includes fields from the original data source and any cu
 > * If you created a new field that is using an aggregation function, the fields available in the selection will only be the ones that are in the **Group by** of the function.
 > * Removing a field from the selected fields will not affect the aggregation function results.
 
+<div id="adjust-field-types" />
+
 <Accordion title="Adjust field types">
 
 Review each field and select the appropriate data type from the dropdown list beside it to change it.
 
 </Accordion>
+
+<div id="remove-fields" />
 
 <Accordion title="Remove fields">
 
@@ -186,6 +198,8 @@ You can remove any of the fields. If there are multiple identifier fields, you c
 3. Click [Save](#save-your-data-view).
 
 </Accordion>
+
+<div id="restoring-temporarily-removed-fields" />
 
 <Accordion title="Restoring temporarily removed fields">
 
@@ -229,6 +243,8 @@ You can [associate your data view with a collaboration](You%20can%20share%20(ass
 ## Use cases
 
 This section outlines some common use cases for data views.
+
+<div id="common-use-cases" />
 
 <Accordion title="Common use cases">
 
@@ -279,6 +295,8 @@ Transactional datasets can contain multiple records per user. Using them directl
 
 The data views appear in the **Sources** tab, under the original source. You can edit the functions, filters, and fields, delete data views, or share them with collaborators.
 
+<div id="edit-details" />
+
 <Accordion title="Edit a data view">
 
 You can modify the data view description or the labels used in the description.
@@ -289,6 +307,8 @@ You can modify the data view description or the labels used in the description.
 4. Edit the description or the labels applied.
 
 </Accordion>
+
+<div id="delete-a-data-view" />
 
 <Accordion title="Delete a data view">
 
@@ -336,3 +356,5 @@ Share your data view with the collaborator and grant them the necessary permissi
 > You can only associate data views created from your sources.
 
 </Accordion>
+
+<div data-zendesk-anchors="overview=about-data-views 01JD9Z4WKKDWS2EQND0SY7EADZ=about-data-views 01JD9Z4WKMTZ18E13E6V3KZYB3=data-view-functions 01JD9Z4WKNREMCMB9PNSVVQ024=the-data-view-builder set-a-data-view=create-a-data-view 01JD9Z4WKRD4V4A07WT5YG42RZ=create-a-data-view 01JD9Z4WKWQJJE9Q8EMQY8NCMD=set-the-data-view-general-details naming-requirements=naming-requirements-and-guidelines 01JD9Z4WKX3BGN7V9V1V1YBYWT=naming-requirements-and-guidelines 01JDEVRX2EV64YQN2JE901CEK8=note 01JD9Z4WM1EQVKS9B4EHMTHW41=transform-aggregate-and-filter-data h_01KC69N1HAVXE2NVB6DZRJG91N=group-by list-of-functions-and-use-case-examples=zd-list-of-functions-and-use-case-examples 01JD9Z4WMDV8B7P8W5E13J7HNJ=zd-list-of-functions-and-use-case-examples h_01JDA45VWKH2ZKVBTK87VFVKTB=transformation-functions h_01JDA4611HFFEA17352NSNCJYX=example-transformation h_01JDA467NV99FDAXJCXYSD5PBF=aggregate-functions h_01JDA46DWD6G3S4S5FM48KWQXA=example-aggregation 01JDETVS9XQ9XCNEFVCSC8GAJR=example-aggregation-with-a-condition 01JD9Z4WMJ9XFBXPJAM6RNRP96=select-fields 01JD9Z4WMJJGXG9XXSW6Q6S5KE=note-1 01JD9Z4WMKA2J94AYW9VXKKVKQ=adjust-field-types 01JD9Z4WMM4QQDP749R7H93Z67=remove-fields 01JD9Z4WMNHXCP4Q66C1TN67Y4=restoring-temporarily-removed-fields 01JD9Z4WMQGY8DCEWMPGX8FC2Y=save-your-data-view h_transactional_share_note=note-2 h_01JVSHYGNEFEKP713NNYSSZPS2=use-cases h_01JVSHX282XSCWMN2JRZJ593KN=common-use-cases h_01KT964QX4EW74REN13T1TBKGN=transactional-data-sources h_transactional_banner_note=note-3 01JD9Z4WMRFS0S408ZJ2YKBZF3=manage-data-views 01JD9Z4WMT7GG4JV91JE5KAJ4X=edit-details 01JD9Z4WMZGV916XJ77V3NR1HK=delete-a-data-view 01JD9Z4WN3VX56JDWK937D1WXH=share-a-data-view 01JDA2A87RG8V8RZW4EB1B2K56=note-4" />

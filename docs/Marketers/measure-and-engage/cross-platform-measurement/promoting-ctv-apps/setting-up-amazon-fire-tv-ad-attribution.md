@@ -42,3 +42,5 @@ Requirements: 
 | [Multiple apps](/docs/set-up-multi-store-android-attribution#dashboard-per-store-apk-preparation) | <ul><li>View individual, out-of-store market results for each app</li><li>For Amazon Fire ads: Amazon Appstore install data is associated with each app</li></ul> |
 
 4. [Test the integration](/docs/testing-the-sdk-integration-for-marketers#testing-from-the-dashboard) using the Android SDK testing method in the AppsFlyer dashboard.
+
+<div data-zendesk-anchors="h_01J57TS6K5CY33HXZCS3VAPQFV=setting-up-amazon-fire-tv-ad-attribution" />

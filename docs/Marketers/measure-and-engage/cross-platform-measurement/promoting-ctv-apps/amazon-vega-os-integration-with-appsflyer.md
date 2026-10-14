@@ -55,3 +55,5 @@ The following table lists the tasks required to integrate your Amazon Vega OS CT
 ### **See also**
 
 * [CTV, PC, and console platform overview](/docs/ctv-pc-and-console-platform-attribution-concepts)
+
+<div data-zendesk-anchors="h_01KFAJYYX01B4E6CDMCH6REGY9=about-amazon-vega-os-ctv-attribution h_01KFAJYYX0WZY682B0SSWJM40V=integration-procedures h_01KFAJYYX0E95XEYQCQPCTN700=traits-and-limitations h_01KFAJYYX00K3RKMYB9QX6KXKN=see-also" />

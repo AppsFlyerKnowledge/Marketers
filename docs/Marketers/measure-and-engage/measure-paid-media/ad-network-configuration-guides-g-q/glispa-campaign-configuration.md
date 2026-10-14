@@ -38,6 +38,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -79,6 +81,8 @@ In this section you can map which of your AppsFlyer events to send to Glispa via
 | **Send Revenue** | **When unchecked** - send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - send all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -135,17 +139,23 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Glispa Media CPI automatically sends encrypted CPI cost data on the attribution link for all installs.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -175,3 +185,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKA0TGE08PJDBQHFER5ZZ785=setting-up-glispa h_01HKA0TGE02G8YFSQSKMQVSWK2=integration-tab h_01HKA0TGE02R2V2WP9S47QZRDC=activate-partner h_01HKA0TGE04YGTY2D9758KFJ0P=general-settings h_01HKA0TGE0TPCZWZXX5YQHW59Q=default-postbacks inapp-events-settings=in-app-events-settings h_01HKA0TGE0Y9ZQDZBRHQGCSEHH=in-app-events-settings h_01HKA0TGE0VQY6MB69G02TE1T6=attribution-link-tab h_01HKA0TGE0BYX5YB9XYCWX5YJH=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKA0TGE0TVP7JRW3J9E4QGKC=click-through-attribution h_01HKA0TGE10GVS8G2HYTB9V13X=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HKA0TGE1CNX84Y3JSWQPMP1Y=view-through-attribution-lookback-window h_01HKA0TGE1GVH38JF1AYEBM8EC=impressions-attribution-link h_01HKA0TGE1QXYQ1A5MYHGHZ4B4=cost-tab h_01HKA0TGE10TWPQZRF1NMET76A=ad-revenue-tab h_01HKA0TGE12N0Y8Y88C9PTTF6P=permissions-tab h_01HKA0TGE1TANWDZ23PJKRPWKT=ad-network-permissions h_01HKA0TGE16J58NXGA0VDBBHWY=agency-permissions" />

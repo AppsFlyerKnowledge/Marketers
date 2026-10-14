@@ -52,3 +52,5 @@ To set up preload attribution:
    * [Google Play auto-install (PAI)](/docs/measure-preload-campaigns-with-google-play-install): Configure the media source information in the Google Play Referrer API for PAI campaigns using the following UTM parameters: `utm_source=play-auto-installs&utm_medium=preload&utm_campaign=brandnamepai_int`. For example: `utm_source=play-auto-installs&utm_medium=preload&utm_campaign=xiaomipai_int`.
 3. Contact the AppsFlyer partner solutions team via the support widget to complete the integration and optionally set up postbacks.  
    **Note**: See which postback macros are supported for the preload method of [Google PAI](/docs/measure-preload-campaigns-with-google-play-install#postbacks-for-preload-partners) and [AppsFlyer referrer/Android manifest file](/docs/postback-macros-for-ad-networks).
+
+<div data-zendesk-anchors="organic-search-attribution=overview h_01HQFFB20SKDVW1X3ECMZCZQW0=overview h_01HQFFB20S6KJH3PBF5N2190TJ=set-up-preload-attribution" />

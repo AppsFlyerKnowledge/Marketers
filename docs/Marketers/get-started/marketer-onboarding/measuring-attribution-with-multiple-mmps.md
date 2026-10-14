@@ -72,3 +72,5 @@ When MMPs use different attribution models to measure traffic, it may lead to di
 * Make sure both MMPs use the same timezone for the app. Here's how to [set the app timezone in AppsFlyer](/docs/changing-app-time-zone-settings).
 * For non-SRNs and owned media: Make sure to configure the attribution link using the same parameter values. For example, set the same lookback window in both MMPs.
 * When comparing the data on the MMPs dashboards or reports, make sure to compare the same criteria, such as traffic from the same date range, and geo.
+
+<div data-zendesk-anchors="ability-to-measure-with-multiple-mmps=overview 01H7TP9P86DE0J04VHXJYKE3PA=overview 01H81ANMGMEKCZCS2FNBY67321=details-and-limitations-of-media-source-measurement selfreporting-networks=self-reporting-networks 01H81APGNBGCMREZVFXJW9KN6H=self-reporting-networks 01H7TP9P86YQ75N0XFY7EW2JHQ=skan nonsrn-ad-networks=non-srn-ad-networks 01H7TP9P86TEWC47MZZVQ1965K=non-srn-ad-networks 01H7W2YTXYMAEN403WCHYH8G7W=owned-media 01H7YVHVW3YY8XY8GHQX1B0WZN=avoiding-attribution-discrepancies" />

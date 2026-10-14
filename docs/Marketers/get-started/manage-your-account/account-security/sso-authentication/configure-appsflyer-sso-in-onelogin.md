@@ -25,6 +25,8 @@ x-zendesk:
 ---
 The first stage in configuring the AppsFlyer SSO process is done on the OneLogin platform. Follow the steps below:
 
+<div id="create-the-appsflyer-app-in-oonelogin" />
+
 <Accordion title="Create the AppsFlyer app in OneLogin">
 
 **Prerequisite:** A OneLogin account with administrative privileges.
@@ -61,12 +63,16 @@ The first stage in configuring the AppsFlyer SSO process is done on the OneLogin
 
 </Accordion>
 
+<div id="get-idp-sso-metadata" />
+
 <Accordion title="Get IdP SSO metadata">
 
 1. From your selected application (**Applications** > **[Applications](https://appsflyer-dev.onelogin.com/admin2/apps)**), select **SSO** from the side menu.
 2. Copy the **Issuer URL** and paste it into a new tab to download the SSO metadata.
 
 </Accordion>
+
+<div id="create-onelogin-users" />
 
 <Accordion title="Create OneLogin users">
 
@@ -77,6 +83,8 @@ The first stage in configuring the AppsFlyer SSO process is done on the OneLogin
 5. Set a password for the user and click **Update**.
 
 </Accordion>
+
+<div id="assign-users-to-your-app" />
 
 <Accordion title="Assign users to your app">
 
@@ -91,8 +99,12 @@ The first stage in configuring the AppsFlyer SSO process is done on the OneLogin
 
 </Accordion>
 
+<div id="complete-the-process-in-appsflyer" />
+
 <Accordion title="Complete the process in AppsFlyer">
 
 Now that you've configured the IdP part, go back to AppsFlyer to [complete the configuration](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer). You can then [test](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-process) to see that it works.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HF690GVE4FXXTMC5QWSJTY3C=create-the-appsflyer-app-in-oonelogin h_01HF690GVECMCVQAJFZ509MD50=get-idp-sso-metadata h_01HF690GVEKMV3TZ8MAD4HM635=create-onelogin-users h_01HF690GVEVEQ4GNJGXHKF5VT1=assign-users-to-your-app h_01HF690GVEWYEGR2Z9F22FQHGE=complete-the-process-in-appsflyer" />

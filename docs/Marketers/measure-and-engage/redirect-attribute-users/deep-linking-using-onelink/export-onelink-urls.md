@@ -53,3 +53,5 @@ The CSV file contains info regarding each link as follows:
 | --- | --- |
 | Agencies | Can only get the links they created based on the OneLink template. |
 | Advertisers | Can only get the links they created based on the OneLink template. |
+
+<div data-zendesk-anchors="h_01HKA1YMN4J2HAXWWF00252XC3=export-onelink-urls h_01HKA1YMN4P9AR949BFCSG93VY=traits-and-limitations" />

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 ## Account and dashboard
 
+<div id="i-want-to-become-an-integrated-partner" />
+
 <Accordion title="I want to become an integrated partner">
 
 An advertiser should invite you to be onboarded with us.
@@ -35,6 +37,8 @@ Important: Use an email that has never been used before to create an account in 
 
 </Accordion>
 
+<div id="how-can-i-update-my-integration" />
+
 <Accordion title="How can I update my integration?">
 
 Take a look at the required update [here](/docs/integration-requests-for-partners) and follow the instructions provided.
@@ -43,11 +47,15 @@ If your update isn't listed, contact AppsFlyer using the [partner assistant widg
 
 </Accordion>
 
+<div id="how-do-i-change-the-login-email-of-the-account" />
+
 <Accordion title="How do I change the login email of the account?">
 
 Follow [these instructions](/docs/integration-requests-for-partners#create-update-partner-dashboard-login-email).
 
 </Accordion>
+
+<div id="i-cant-add-an-app-to-the-dashboard" />
 
 <Accordion title="I can't find or add an app to the dashboard">
 
@@ -58,6 +66,8 @@ If you can't add an app to the **App search** screen, verify that:
 
 </Accordion>
 
+<div id="the-integration-with-the-app-isnt-active-in-the-dashboard-when-it-definitely-should-be-active" />
+
 <Accordion title="The integration with the app isn't active in the dashboard when it definitely should be active">
 
 | Reason | Solution |
@@ -65,6 +75,8 @@ If you can't add an app to the **App search** screen, verify that:
 | The integration was activated by an agency and not by the advertiser. Ad network setup is visible to ad networks only when the advertiser (app owner) configures it. | No further action is required. Once the agency activates the integration, attribution and postbacks work normally. |
 
 </Accordion>
+
+<div id="im-not-receiving-password-recovery-emails" />
 
 <Accordion title="I'm not receiving password recovery emails">
 
@@ -75,6 +87,8 @@ If you can't add an app to the **App search** screen, verify that:
 
 </Accordion>
 
+<div id="how-do-i-enable-the-appsflyer-audience-integration" />
+
 <Accordion title="How do I enable the AppsFlyer Audience integration?">
 
 1. Get approval from the advertiser to implement the Audience integration.
@@ -83,11 +97,15 @@ If you can't add an app to the **App search** screen, verify that:
 
 </Accordion>
 
+<div id="how-do-i-enable-advanced-privacy" />
+
 <Accordion title="How do I enable Advanced Privacy postbacks?">
 
 Follow [these instructions](/docs/self-serve-integration-management-for-ad-networks#advanced-privacy-and-skan-postbacks).
 
 </Accordion>
+
+<div id="Why-can-t-advertisers-find-my-account" />
 
 <Accordion title="Why can't advertisers find my account?">
 
@@ -100,6 +118,8 @@ For agency accounts seeking further assistance, contact AppsFlyer via the [partn
 
 </Accordion>
 
+<div id="why-don-t-i-see-event-data-on-the-dashboard" />
+
 <Accordion title="Why don’t I see event data on the dashboard?">
 
 To view event data on the dashboard, the advertiser must grant you permission to access aggregated in-app event data. If this permission hasn’t been enabled, event data won’t be displayed.
@@ -109,6 +129,8 @@ To view event data on the dashboard, the advertiser must grant you permission to
 </Accordion>
 
 ## Partner permissions
+
+<div id="what-are-the-partner-permissions" />
 
 <Accordion title="What are the partner permissions?">
 
@@ -127,6 +149,8 @@ For more information, visit the [Providing permissions to ad networks](/docs/set
 
 </Accordion>
 
+<div id="i-cant-configure-the-integration-with-the-advertiser" />
+
 <Accordion title="I can't configure the integration with the advertiser">
 
 | Reason | Solution |
@@ -135,11 +159,15 @@ For more information, visit the [Providing permissions to ad networks](/docs/set
 
 </Accordion>
 
+<div id="what-about-agency-permissions" />
+
 <Accordion title="What about agency permissions?">
 
 [Read here](/docs/getting-started-agency-onboarding#what-does-it-mean-to-get-permission-from-a-marketer) about agency permissions given by a marketer.
 
 </Accordion>
+
+<div id="why-can-t-i-redirect-users-to-a-designated-landing-page" />
 
 <Accordion title="Why can’t I redirect users to a designated landing page?">
 
@@ -151,6 +179,8 @@ The allowlist is managed by the advertiser. To use a specific landing page, shar
 
 ## Data - postbacks and reports
 
+<div id="how-long-does-it-take-for-results-to-appear-in-the-dashboard" />
+
 <Accordion title="How long does it take for results to appear in the dashboard?">
 
 Installs appear in the dashboard within two minutes from the moment of an install.
@@ -158,6 +188,8 @@ Installs appear in the dashboard within two minutes from the moment of an instal
 Install and in-app data appears in reports within 15 minutes.
 
 </Accordion>
+
+<div id="there-are-missing-dashboard-parameters-in-the-postback" />
 
 <Accordion title="There are missing dashboard parameters in the postback">
 
@@ -167,6 +199,8 @@ Install and in-app data appears in reports within 15 minutes.
 
 </Accordion>
 
+<div id="servertoserver-event-data-from-the-advertiser-is-missing-or-incorrect" />
+
 <Accordion title="Server-to-Server event data from the advertiser is missing or incorrect">
 
 | Reason | Solution |
@@ -174,6 +208,8 @@ Install and in-app data appears in reports within 15 minutes.
 | The Advertiser didn't correctly configure sending S2S data to AppsFlyer. | Contact the advertiser and ask to verify the configuration. |
 
 </Accordion>
+
+<div id="im-not-receiving-reengagement-postbacks" />
 
 <Accordion title="I'm not receiving re-engagement postbacks">
 
@@ -185,6 +221,8 @@ Install and in-app data appears in reports within 15 minutes.
 
 </Accordion>
 
+<div id="im-not-receiving-reattribution-postbacks" />
+
 <Accordion title="I'm not receiving re-attribution postbacks">
 
 | Reason | Solution |
@@ -193,6 +231,8 @@ Install and in-app data appears in reports within 15 minutes.
 | Retargeting parameter isn't included in a click attribution URL, and therefore reattribution cannot get recorded in AppsFlyer. | Make sure the parameter `is_retargeting=true` is added to the click attribution URL. |
 
 </Accordion>
+
+<div id="im-not-receiving-correct-event-identifiers-on-event-postbacks" />
 
 <Accordion title="I'm not receiving correct event identifiers on event postbacks">
 
@@ -203,11 +243,15 @@ Install and in-app data appears in reports within 15 minutes.
 
 </Accordion>
 
+<div id="i-cant-see-campaignlevel-data-for-nonattributed-traffic-on-postbacks" />
+
 <Accordion title="I can't see campaign-level data for non-attributed traffic on postbacks">
 
 Even if the Advertiser allows sending you postbacks for traffic attributed to all sources, AppsFlyer doesn't share with the partners the campaign-level data attributed to other partners.
 
 </Accordion>
+
+<div id="i-cant-export-reports" />
 
 <Accordion title="I can't export reports">
 
@@ -217,6 +261,8 @@ Even if the Advertiser allows sending you postbacks for traffic attributed to al
 | Too much browser cache can prevent the request from sending out. | Clear the browser cache and try again, or export the report from a different browser. |
 
 </Accordion>
+
+<div id="test-installs-dont-appear-in-the-dashboard" />
 
 <Accordion title="Test installs don't appear in the dashboard">
 
@@ -229,6 +275,8 @@ To perform an integration test with an advertised app, follow these [guidelines]
 
 </Accordion>
 
+<div id="install-postbacks-arent-sent-to-my-servers" />
+
 <Accordion title="Install postbacks aren't sent to my servers">
 
 If you believe that postbacks aren't sent to your servers:
@@ -238,6 +286,8 @@ If you believe that postbacks aren't sent to your servers:
 
 </Accordion>
 
+<div id="inapp-event-postbacks-arent-sent-to-my-servers" />
+
 <Accordion title="In-app event postbacks aren't sent to my servers">
 
 If you believe postbacks aren’t being sent to your servers, verify the following:
@@ -246,6 +296,8 @@ If you believe postbacks aren’t being sent to your servers, verify the followi
 * For iOS users, ensure you’ve completed the [Advanced Privacy postback integration](/docs/advanced-privacy-guide-postback-macros-for-ad-networks).
 
 </Accordion>
+
+<div id="i-cant-see-the-inapp-events-postback-setup-of-agencies" />
 
 <Accordion title="I can't see the in-app events postback setup of agencies">
 
@@ -260,6 +312,8 @@ Ad networks get visibility to their setup done by advertisers, **but not when it
 
 </Accordion>
 
+<div id="click-data-is-missing" />
+
 <Accordion title="Click data is missing">
 
 If click data is missing from postbacks, make sure that the AppsFlyer link has all the data you want to return to you in the postbacks. See our [attribution link guide](/docs/about-link-structure-and-parameters) for more information.
@@ -267,6 +321,8 @@ If click data is missing from postbacks, make sure that the AppsFlyer link has a
 If the advertiser configured the ad network to receive all postbacks, postbacks for events not attributed to the ad network don't contain click data.
 
 </Accordion>
+
+<div id="revenue-data-is-missing" />
 
 <Accordion title="Revenue data is missing">
 
@@ -276,6 +332,8 @@ If revenue data is missing or appears as N/A in the advertiser postbacks, there 
 * The advertiser has defined the in-app event incorrectly.
 
 </Accordion>
+
+<div id="dashboard-data-is-missing" />
 
 <Accordion title="Dashboard data is missing">
 
@@ -291,6 +349,8 @@ Verify that the advertiser provided the necessary credentials or keys when confi
 
 </Accordion>
 
+<div id="data-from-the-advertiser-is-missing-or-incorrect" />
+
 <Accordion title="Data from the advertiser is missing or incorrect">
 
 If you test integration with an advertiser and no data (installs, in-app events) is available, follow the suggestions below:
@@ -301,6 +361,8 @@ If you test integration with an advertiser and no data (installs, in-app events)
   * verify with the advertiser that the SDK implementation is correct
 
 </Accordion>
+
+<div id="my-agency-account-doesnt-show-skan-data" />
 
 <Accordion title="My agency account doesn't show SKAN data">
 
@@ -315,6 +377,8 @@ For example, if your *af\_prt* is *greatagency*, your campaign name may look lik
 </Accordion>
 
 ## Anti-fraud (Protect360)
+
+<div id="how-can-i-investigate-fraud-from-appsflyer-dashboard" />
 
 <Accordion title="How can I investigate fraud from AppsFlyer dashboard?">
 
@@ -331,6 +395,8 @@ Learn more about [fraud](/docs/protect360-anti-fraud-guide).
 
 </Accordion>
 
+<div id="why-do-clicks-and-impressions-get-capped" />
+
 <Accordion title="Why are impressions/clicks being capped?">
 
 AppsFlyer Protect360 evaluates multiple parameters when determining whether to apply ad engagement capping. These include, but are not limited to, the volume of impressions and clicks, conversion rate (CVR), detected anomaly rates, expected normal fluctuations in activity, and industry- and geography-specific benchmarks. The capping algorithm is dynamic and recalculated on an hourly basis to account for changing trends.
@@ -346,6 +412,8 @@ For more information, see:
 
 </Accordion>
 
+<div id="why-was-my-test-install-rejected-from-attribution" />
+
 <Accordion title="Why was my test install rejected from attribution?">
 
 AppsFlyer’s anti-fraud system evaluates installs using multiple protection layers, including analysis of individual installs and install clusters. Install clusters are reviewed across different aggregations—such as by publisher, media source, app, and are assessed using statistical models and machine-learning algorithms.
@@ -358,6 +426,8 @@ For instructions, see [Registering test devices](/docs/registering-test-devices)
 
 </Accordion>
 
+<div id="what-detection-methods-are-used-to-detect-install-rejections" />
+
 <Accordion title="What detection methods are used to detect install rejections?">
 
 Review the fraud sub-reason associated with the rejection to better understand why the event was blocked. This information is also available in Protect360 reports and on the Protect360 dashboard, subject to the advertiser’s access permissions.
@@ -365,3 +435,5 @@ Review the fraud sub-reason associated with the rejection to better understand w
 For more details, see [Protect360 blocked reasons](/docs/protect360-raw-data-reports#blocked-reasons).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW6K6RFAEX8SKMAWSCKC3AD=account-and-dashboard h_01HKW6K6RF7M3YBCAE2QWDKP81=i-want-to-become-an-integrated-partner h_01HKW6K6RF4ZFY3YDW0KR1TQP2=how-can-i-update-my-integration h_01HKW6K6RF7JAC8MKMZGS8K01C=how-do-i-change-the-login-email-of-the-account h_01HKW6K6RFEDYV0T3019THZHF7=i-cant-add-an-app-to-the-dashboard h_01HKW6K6RF81BHWCAERR50QY1E=the-integration-with-the-app-isnt-active-in-the-dashboard-when-it-definitely-should-be-active h_01HKW6K6RFTBAJ1Y2HJTR3GKFD=im-not-receiving-password-recovery-emails h_01HKW6K6RFQ37XXGMVY7N3AP16=how-do-i-enable-the-appsflyer-audience-integration h_01HKW6K6RF50HWPS1E3KPYWQN0=how-do-i-enable-advanced-privacy Why-can%27t-advertisers-find-my-account%3F=Why-can-t-advertisers-find-my-account h_01HW8HSMSX2RJZQ6ABXE4WRW00=Why-can-t-advertisers-find-my-account why-don%E2%80%99t-i-see-event-data-on-the-dashboard=why-don-t-i-see-event-data-on-the-dashboard h_01KDHYCJ8W5A32MBP183F448TZ=why-don-t-i-see-event-data-on-the-dashboard h_01HW8J4Q9J83ANG3VX2T2V0JMH=partner-permissions h_01HKW6K6RFRJXJ0JF5MPJ5SKZY=what-are-the-partner-permissions h_01HKW6K6RFX8V6AFKNBJBFZAK0=i-cant-configure-the-integration-with-the-advertiser h_01HKW6K6RFJ54162BJFWAW36DJ=what-about-agency-permissions why-can%E2%80%99t-i-redirect-users-to-a-designated-landing-page=why-can-t-i-redirect-users-to-a-designated-landing-page h_01KDHYT69MCT665SQ39EY3T1ZF=why-can-t-i-redirect-users-to-a-designated-landing-page data-postbacks-and-reports=data---postbacks-and-reports h_01HKW6K6RFHBVQMMWZYCE0VWB6=data---postbacks-and-reports h_01HKW6K6RF53FWYZJDYGJ3GWA8=how-long-does-it-take-for-results-to-appear-in-the-dashboard h_01HKW6K6RGV4FJ6B0HDV0N4P37=there-are-missing-dashboard-parameters-in-the-postback h_01HKW6K6RG9Y6J5RW4AYQABX95=servertoserver-event-data-from-the-advertiser-is-missing-or-incorrect h_01HKW6K6RGV8TEJ1N6MQFMXSXX=im-not-receiving-reengagement-postbacks h_01HKW6K6RGWXBDPEFQ2T2019Y5=im-not-receiving-reattribution-postbacks h_01HKW6K6RGKQY5YS1V1PVE97ZK=im-not-receiving-correct-event-identifiers-on-event-postbacks h_01HKW6K6RGJFD51XTBBSTMAW92=i-cant-see-campaignlevel-data-for-nonattributed-traffic-on-postbacks h_01HKW6K6RG401RK36GVWGX1JNP=i-cant-export-reports h_01HKW6K6RGGD3BQR36R971C952=test-installs-dont-appear-in-the-dashboard h_01HKW6K6RGZ0F4J75RSR94S0ZP=install-postbacks-arent-sent-to-my-servers h_01HKW6K6RGR8GM3GBSNW5SE502=inapp-event-postbacks-arent-sent-to-my-servers h_01HKW6K6RGZ8J5RTYX5CZED36R=i-cant-see-the-inapp-events-postback-setup-of-agencies h_01HKW6K6RGCRPTK1B78JH94WR4=example h_01HKW6K6RGN804BA8SSTNP6SGG=click-data-is-missing h_01HKW6K6RG5HCS5XXTWJF42D89=revenue-data-is-missing h_01HKW6K6RGEYF4VZZTQW2BPMPN=dashboard-data-is-missing h_01HKW6K6RGWAEAP4YV4AWDVRKW=data-from-the-advertiser-is-missing-or-incorrect h_01HKW6K6RH18CM36N29K2QGXB7=my-agency-account-doesnt-show-skan-data protect360=anti-fraud-protect360 h_01HKW6K6RHWS457Q0DAKK0R1Q6=anti-fraud-protect360 h_01HKW6K6RHK2ZP0XHY5MWAGM42=how-can-i-investigate-fraud-from-appsflyer-dashboard h_01HKW6K6RHFV096ST796K53XQC=why-do-clicks-and-impressions-get-capped h_01KDJ4WS2ZGDM6RSCP1QHXBVJC=why-was-my-test-install-rejected-from-attribution h_01KDJ4WS2Z1CWENMY875E22QCE=what-detection-methods-are-used-to-detect-install-rejections" />

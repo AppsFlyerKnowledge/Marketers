@@ -32,8 +32,8 @@ PBA raw data report topics
 
 | Raw data report topic | Description |
 | --- | --- |
-| [Website visits](#website-visits-and-website-events) | <ul><li>Visits to the website.</li><li>Measure user exposure and engagement with web traffic campaigns.</li></ul> |
-| [Website events](/docs/pba-website-attribution-dashboard) | <ul><li>Contain the actions performed by website visitors like subscribe or purchase.</li><li>Events are attributed to the last non-direct web visit occurring in the previous 30 days.</li><li>Attribution parameters associated with the event can include media source, media channel, campaign, and so on.</li><li>Use these parameters to optimize your marketing efforts.</li><li>Analyze user behavior per media source.</li><li>The values for these fields are determined through the attributed visit using [PBA media source attribution rules.](/docs/pba-media-source-attribution-rules)</li><li>The intent is to associate events with a specific website visit and not a specific page view.</li><li>Use this to find out which sources and campaigns drive users and what actions the users perform.</li></ul> |
+| <span id="website-visits"></span>[Website visits](#website-visits-and-website-events) | <ul><li>Visits to the website.</li><li>Measure user exposure and engagement with web traffic campaigns.</li></ul> |
+| <span id="website-events"></span>[Website events](/docs/pba-website-attribution-dashboard) | <ul><li>Contain the actions performed by website visitors like subscribe or purchase.</li><li>Events are attributed to the last non-direct web visit occurring in the previous 30 days.</li><li>Attribution parameters associated with the event can include media source, media channel, campaign, and so on.</li><li>Use these parameters to optimize your marketing efforts.</li><li>Analyze user behavior per media source.</li><li>The values for these fields are determined through the attributed visit using [PBA media source attribution rules.](/docs/pba-media-source-attribution-rules)</li><li>The intent is to associate events with a specific website visit and not a specific page view.</li><li>Use this to find out which sources and campaigns drive users and what actions the users perform.</li></ul> |
 
 ## Raw-data report fields
 
@@ -101,6 +101,8 @@ Raw data fields are populated in part from data originating in the mobile app us
 
 </Accordion>
 
+<div id="field-release-notes" />
+
 <Accordion title="Field release notes">
 
 | Date | Report | Change |
@@ -133,6 +135,8 @@ Example: t=website\_events/dt=2020-11-26/h=23
 
 </Accordion>
 
+<div id="combining-pba-and-mobile-data" />
+
 <Accordion title="Combining PBA and mobile data">
 
 The data reflects the users most likely to engage with both your mobile app and website.
@@ -160,6 +164,8 @@ Combine mobile and web data to see user activity across platforms and devices. T
 * Measure your efforts at switching users from web to mobile
 
 </Accordion>
+
+<div id="application-note-downloading-and-combining-data-locker-files" />
 
 <Accordion title="Application note - downloading and combining Data Locker files">
 
@@ -207,3 +213,5 @@ Install [Q](http://harelba.github.io/q/) on your computer.
 3. Open the file using Excel or any other tool
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW341NVTCP4FY5G4TC94MZY=pba-raw-data-reports h_01HKW341NVC83ZC3HCH86QBJYG=report-descriptions rawdata-report-fields=raw-data-report-fields h_01HKW341NVNYM1AGFC8GHV7VR2=raw-data-report-fields h_01EQD0FBKE0J71MA9MNETEZAMA=website-visits-and-website-events h_01HKW341NVX51NQFAA79BD7MF3=sample-reports website-visits-events=field-list-website-visits-and-website-events-report h_01J53BGNDSQCCFV1VQA8EV50GR=field-list-website-visits-and-website-events-report h_01HKW341NW43C07KYAN3WCV0WY=field-release-notes h_01HKW341NWXQ19ZB5QXZK84VMQ=procedures h_01HKW341NXR3MP2T99AAHNH3SG=setting-up-pba-reports-in-data-locker h_01HKW341NX2S093V1Y8YVY45VP=combining-pba-and-mobile-data h_01HKW341NXTXX4FJ2ZZQFZ2V85=use-cases-for-pba-and-mobile h_01HKW341NX95YBGHZZG8KZC3KX=application-note-downloading-and-combining-data-locker-files" />

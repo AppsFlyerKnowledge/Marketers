@@ -119,3 +119,5 @@ Use the tables below to determine which solution best fits your needs.
 | af\_ars\_sandbox\_s2s | ✖ | ✔ |
 
 </Accordion>
+
+<div data-zendesk-anchors="about-purchase-validation=about-purchase-and-subscription-validation h_01KCY9DHB7PBM3CZS65WMHR8B5=about-purchase-and-subscription-validation appsflyer-solutions=the-two-solutions-for-purchase-and-subscription-validation h_01KCY9DHB7XKWP0P8WMTSXVT4A=the-two-solutions-for-purchase-and-subscription-validation h_01KCY9DHB7DC66Q3H9W9064CZY=receipt-validation roi360-store-revenue=roi360-store-revenuepremium h_01KCY9DHB70VN27BYR3ZG0JD86=roi360-store-revenuepremium h_01KSAJM50XFXVQXZC59D1BE5XN=important compare-receipt-validation-and-roi360-stores-revenue=compare-receipt-validation-and-roi360-store-revenue h_01KCY9DHB7RJ89GB5CM29T2AK5=compare-receipt-validation-and-roi360-store-revenue" />

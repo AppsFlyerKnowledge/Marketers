@@ -47,7 +47,7 @@ Using AppsFlyer clean room infrastructure and integrations with identity resolut
 
 **To get started using Signal Hub, follow the steps below:**
 
-**Prerequisite:** An AppsFlyer [account](https://www.appsflyer.com/sign-up/). To access Signal Hub, contact your CSM or write to hello@appsflyer.com
+**<span id="h_01J5WC8Z4J352AHSDTRCEP2W9H"></span>Prerequisite:** An AppsFlyer [account](https://www.appsflyer.com/sign-up/). To access Signal Hub, contact your CSM or write to hello@appsflyer.com
 
 <Accordion title="Step 1. Accept the collaboration invite">
 
@@ -145,3 +145,5 @@ You can add your own custom first-party data to Signal Hub as external data sour
 3. [Connect your cloud services to AppsFlyer](/docs/data-collaboration-platform-dcp-add-connections).
 
 </Accordion>
+
+<div data-zendesk-anchors="introduction=about-signal-hub h_01J174QBCMPNBXTVVPZ9WD1C1R=about-signal-hub get-started-using-dcp=get-started-using-signal-hub h_01JF5ECVHPW0FS8E4KVK4WDDNE=get-started-using-signal-hub h_01K59AKK88MNMA1CBJKEQ9WJ0T=use-cases h_01K59BYQ59VDW3W13G50W401E1=additional-information" />

@@ -51,6 +51,8 @@ Tip
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners.
 > * All the rest of the steps are either descriptive or **optional**.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -94,6 +96,8 @@ In this section, you can map your AppsFlyer events with ByteDance Ads China via 
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -131,6 +135,8 @@ Go to **New Ad** >> **Set Budget and Bid** select the conversion you created for
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. Note that AppsFlyer doesn't support the ad-level cost data for ByteDance, except for campaigns running on the v1.0 ByteDance system.
@@ -151,6 +157,8 @@ AppsFlyer gets cost details by API. Note that AppsFlyer doesn't support the ad-l
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 This section is relevant if you are acting as a publisher, displaying ads of the partner to your users. As such, you would certainly like to measure the engagement of your users acquired from different sources, to find the most profitable sources for you.
@@ -160,6 +168,8 @@ This section is relevant if you are acting as a publisher, displaying ads of the
 * Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -180,3 +190,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJR1HREQDCQDN6JZRPD356VS=note h_01HJR1HREQ6YAW1WPX2BTZS2R7=setting-up-bytedance-ads-china h_01HJR1HRERBBZFKBHH78BK6QW2=integration-tab h_01HJR1HRER22XX94R1WEQK60GJ=activate-partners h_01HJR1HRERMXHAAGXEFJS4ZS8C=default-postbacks inapp-events-settings=in-app-events-settings h_01HJR1HRERF2Y205KP0J8HZFR3=in-app-events-settings h_01HJR1HRER391J6PD9Q0M1MW3F=attribution-link-tab h_01HJR1HRERCHNHQGX3X1E1ARDK=click-attribution-link h_01HJR1HRER1G4K3PQG1Z7M6CCX=cost-tab h_01HJR1HRES86BJM4ABQ0B414F1=api-dimensions-supported h_01HJR1HRES470MKXS1S08X202D=ad-revenue-tab h_01HJR1HRESJ7KNFZ9TDHZKESJ7=permissions-tab h_01HJR1HRESZCC6YV9D40YYSYX0=ad-network-permissions" />

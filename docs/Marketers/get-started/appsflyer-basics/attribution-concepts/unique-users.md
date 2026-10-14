@@ -40,6 +40,8 @@ The calculation of unique users is based on the device ID (like IDFA or GAID). I
 
 Although the unique user calculation is usually straightforward, questions sometimes arise around certain user behaviors or actions. The following use cases explain how unique users are counted in some of those more complicated instances.
 
+<div id="install-and-reinstall" />
+
 <Accordion title="Install and reinstall">
 
 ![](https://files.readme.io/8b9f3c442f98c056069b4449c7e5115cbea828a64ace3a98e0090fb0d8d1d8d6-27455116159889.png)
@@ -53,6 +55,8 @@ The install and reinstall have the same device ID/AppsFlyer ID. Therefore, only 
 
 </Accordion>
 
+<div id="install-and-reattribution" />
+
 <Accordion title="Install and re-attribution">
 
 ![](https://files.readme.io/40420c5ea201ba7cf13d03e5968d20c2fffaa31b74c47ae36cd917cccbaae353-27453973190289.png)
@@ -64,6 +68,8 @@ The install and re-attribution have the same device ID (AppsFlyer ID is the same
 * In the Overview dashboard, the unified view, displays 2 unique users, 1 connected to the first install and the 2nd connected to the re-attribution. Same for unified reports.
 
 </Accordion>
+
+<div id="install-and-reengagement" />
 
 <Accordion title="Install and re-engagement">
 
@@ -77,6 +83,8 @@ The install and re-engagement have the same device ID/AppsFlyer ID. However, in 
 
 </Accordion>
 
+<div id="unattributed-inapp-events" />
+
 <Accordion title="Unattributed in-app events">
 
 ![](https://files.readme.io/94bf078bcf4ba26a1dc4ca323a1b4a7543cfb4e3fc8b780d0d29713c4266aa95-27455116170001.png)
@@ -85,6 +93,8 @@ When an in-app event is unattributed, meaning it's following a reinstall but for
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Details |
@@ -92,3 +102,5 @@ When an in-app event is unattributed, meaning it's following a reinstall but for
 | Ad revenue events<br /><br />(af\_ad revenue) | <ul><li>Unique user count is supported for ad revenue events for:<ul><li>Cohort on-day metrics</li><li>Activity metrics</li><li>SKAN metrics</li></ul></li><li>Unique user count isn't supported for ad revenue events for:<ul><li>Cohort cumulative metrics</li><li>LTV metrics via Classic attribution method. **Note**: To clarify, this means that when looking at a dashboard with SSOT view, unique user metric for ad revenue events is available for SKAN data, but not Classic attribution data.</li></ul></li></ul> |
 
 </Accordion>
+
+<div data-zendesk-anchors="overview=about-unique-users 01H7Z1003GTTMRY072BXWDFNP0=about-unique-users h_01J52T4MT63JVJEQ050E2BXMVQ=use-cases h_01J52T9B4ZZH1TBW98YM5MY675=install-and-reinstall h_01J52T9B4ZYWQAGS3QHG99G3AS=install-and-reattribution h_01J531V2AKW8QP33B6K8QFH72R=install-and-reengagement h_01J52WPCZEBFP4RR0Y4ZC5TABK=unattributed-inapp-events h_01J52ZHXKYDG77PE70QZV63KY3=traits-and-limitations" />

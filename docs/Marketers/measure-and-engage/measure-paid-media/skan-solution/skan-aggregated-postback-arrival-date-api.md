@@ -28,6 +28,8 @@ The API returns aggregated SKAdNetwork postbacks, using the postback arrival dat
 
 **Note**! Postback arrival date differs from the install date used in the SKAdNetwork dashboard and reports.
 
+<div id="using-skan-aggregated-performance-report-api" />
+
 <Accordion title="Using SKAN aggregated postback arrival date API">
 
 **To use SKAN aggregated postback arrival date API**:
@@ -90,6 +92,8 @@ Examples: [V1](https://docs.google.com/spreadsheets/d/e/2PACX-1vRXgsWlkyvMS20Hg
 
 </Accordion>
 
+<div id="specifications-and-limitations" />
+
 <Accordion title="Specifications and limitations">
 
 | Spec | Remarks |
@@ -112,3 +116,5 @@ Examples: [V1](https://docs.google.com/spreadsheets/d/e/2PACX-1vRXgsWlkyvMS20Hg
 > 📘 **See also**
 >
 > * [SKAN aggregated performance report API](/docs/skan-aggregated-performance-report-api)
+
+<div data-zendesk-anchors="skadnetwork-postback-arrival-date-aggregation-reporting-api=skan-aggregated-postback-arrival-date-api h_01HDNZKFEHWET0FPX9WN136MB2=skan-aggregated-postback-arrival-date-api h_01HDNZKFEH76Y06091QS6Y5K1Z=using-skan-aggregated-performance-report-api h_01HDNZKFEHA6N6EE4RMG0HGABA=parameters h_01HDNZKFEHM2D7GS3RMSRCKZY7=report-structure-and-example h_01HDNZKFEJ5P3245V1R99DGAQW=specifications-and-limitations h_01HDNZP87CWGVJ3G1BDXAR1WN0=see-also" />

@@ -48,3 +48,5 @@ In other words, **the AppsFlyer SDK has no effect on app performance or user ex
 ## Can I record in-app events that occur outside my app?
 
 You can use the [S2S API to report events](/docs/server-to-server-events-api-for-mobile-s2s-mobile) that take place outside the app; for example, a user renews their subscription using your web interface. S2S events, once recorded, are available across the platform, including dashboards, raw data, and analytics.
+
+<div data-zendesk-anchors="h_01HSXBYM9WMD9CDX03RFHM0JY1=how-to-install-and-update-the-appsflyer-sdk h_01HMTWQHQRGE6Z2BM1BBQY04H1=is-it-hard-to-integrate-the-appsflyer-sdk h_01HMTWQHQRQQ47CAJCA4Y0AASZ=does-the-appsflyer-sdk-affect-app-download-time h_01HMTWQHQRXBPQN75J0KM48AJ2=does-the-appsflyer-sdk-affect-app-performance can-i-record-inapp-events-that-occur-outside-my-app=can-i-record-in-app-events-that-occur-outside-my-app h_01HMTWQHQSP646Y8KVZSBA01TF=can-i-record-in-app-events-that-occur-outside-my-app" />

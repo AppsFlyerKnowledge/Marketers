@@ -417,3 +417,5 @@ Make sure the events in the postbacks you send to GA4 are registered and read by
   ![GA4 Traffic acquisition report](https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png)
 
 </Accordion>
+
+<div data-zendesk-anchors="set-up-google-analytics-ga4-integration=how-does-it-work h_01HZXY8R12MQWKNHX2BXA68MR3=how-does-it-work h_01J35AP3FF599P0XA8VPWTS5R9=set-up-google-analytics-ga4-integration h_01HZQ4ABBN0YEVFJXBNS0HTSQ5=the-event-mapping-table h_01HZQ4ABBN6ZEB7RJQMFS0AB73=reserved-google-event-names" />

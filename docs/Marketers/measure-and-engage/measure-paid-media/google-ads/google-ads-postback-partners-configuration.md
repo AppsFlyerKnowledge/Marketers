@@ -66,6 +66,8 @@ Other GAPPs integrated with AppsFlyer: Blackbox, Appreciate, Marin Software, Mir
 
 ## Google Ads postback partners use cases
 
+<div id="use-case-1-advertiser-postbacks-only" />
+
 <Accordion title="Use case 1 - Advertiser postbacks only">
 
 An advertiser is running Google Ads campaigns and wants the traffic from its Google Ads accounts to be sent to GAPP X.
@@ -76,6 +78,8 @@ An advertiser is running Google Ads campaigns and wants the traffic from its Goo
 The advertiser must enter all its CIDs (Ads Account IDs) in the GAPP X - Google Ads configuration.
 
 </Accordion>
+
+<div id="use-case-2-active-agency-with-advertiser-postbacks-only" />
 
 <Accordion title="Use case 2 - Active agency, with advertiser postbacks only">
 
@@ -89,6 +93,8 @@ The advertiser must enter ONLY its CIDs in the GAPP X - Google Ads configuration
 
 </Accordion>
 
+<div id="use-case-3-active-advertiser-with-agency-postbacks-only" />
+
 <Accordion title="Use case 3 - Active advertiser, with agency postbacks only">
 
 An advertiser and agency are running Google Ads campaigns, the agency wants only its traffic to be sent to GAPP X.
@@ -100,6 +106,8 @@ An advertiser and agency are running Google Ads campaigns, the agency wants only
 The agency must enter ONLY their CIDs in the GAPP X - Google Ads configuration
 
 </Accordion>
+
+<div id="use-case-4-advertiser-agency-postbacks" />
 
 <Accordion title="Use case 4 - Advertiser & agency postbacks">
 
@@ -146,3 +154,5 @@ There are two sources for GAPP postback parameters:
 > 📘 **Note**
 >
 > The information available is based solely on the information sent by Google to AppsFlyer. If, for some reason, Google does not send an install's information, AppsFlyer can't pass it on to the GAPP.
+
+<div data-zendesk-anchors="h_01HKA1HTJ4VW4YRXMSVG7WBTJM=important h_01HKA1HTJ5BE5EVQJ2T9HSHKQC=google-ads-postback-partner-setup h_01HKA1HTJ5BJTTS15QC44M63B2=tip h_01HKA1HTJ5KSD1CVJ4FKDSATJX=important-notes h_01HKA1HTJ5DX0Z2ZCGX07EX15F=google-ads-postback-partners-use-cases h_01HKA1HTJ5T2XJJ4M9YZ1S52SF=use-case-1-advertiser-postbacks-only h_01HKA1HTJ5EFADYE33NQVP1NBQ=use-case-2-active-agency-with-advertiser-postbacks-only h_01HKA1HTJ5H4KK2M94QY0VFRSA=use-case-3-active-advertiser-with-agency-postbacks-only h_01HKA1HTJ537CYXEBQRCV5FSPK=use-case-4-advertiser-agency-postbacks h_01HKA1HTJ5H0SXEMBVB6K2EZ91=available-parameters-for-gapps h_01HKA1HTJ55XWMX90KSYTGFB6C=note" />

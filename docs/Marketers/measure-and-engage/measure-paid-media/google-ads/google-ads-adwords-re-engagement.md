@@ -40,6 +40,8 @@ Before you begin, review [Google’s instructions for how to share a link with o
 
 To measure Google Ads App Campaigns for Engagement, follow these three steps:
 
+<div id="enabling-retargeting-in-app-settings" />
+
 <Accordion title="Enabling retargeting in app settings">
 
 To enable retargeting campaigns of any media source, you need to enable it on the app level. If this is the first retargeting campaign for your app, do the following:
@@ -50,11 +52,15 @@ To enable retargeting campaigns of any media source, you need to enable it on th
 
 </Accordion>
 
+<div id="enable-google-ads-retargeting-in-appsflyer" />
+
 <Accordion title="Enable Google Ads retargeting in AppsFlyer">
 
 * Follow the [instructions](/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory) for setting up Google Ads in AppsFlyer.
 
 </Accordion>
+
+<div id="importing-session-start-conversions-in-google-ads" />
 
 <Accordion title="Importing session start conversions in Google Ads">
 
@@ -70,6 +76,8 @@ To learn how to import conversions in Google Ads, see [here](/docs/google-ads-ad
 > However, in that case, these conversions would still be attributed in AppsFlyer. This **creates a substantial discrepancy between your data in AppsFlyer and in Google Ads**. Furthermore, this **prevents Google Ads from optimizing** your campaign user targeting.
 
 </Accordion>
+
+<div id="setting-up-deep-linking-for-app-campaigns-for-engagement" />
 
 <Accordion title="Setting up deep linking for app campaigns for engagement">
 
@@ -108,3 +116,5 @@ These campaigns work **out of the box** with AppsFlyer and do not require:
 > 📘 **See also**
 >
 > * For iOS 14-related considerations, see [Google Ads SKAdNetwork interoperability with AppsFlyer](/docs/get-skan-postback-data-from-google-ads).
+
+<div data-zendesk-anchors="h_01HDP34BWZFG09ABN5NQB6EY32=google-ads-retargeting-campaigns h_01HDP34BWZXXNZDE0SR4MXBC9V=setting-up-google-ads-app-campaigns-for-engagement h_01HDP34BWZNHY08NDX6YSE9CXR=enabling-retargeting-in-app-settings h_01HDP34BWZNNNT4HRMXJB2X3S2=enable-google-ads-retargeting-in-appsflyer h_01HDP34BWZ8MGJKEZFC77VYWNG=importing-session-start-conversions-in-google-ads h_01HDP34BWZHWVKKNB7CEHY73R0=note h_01HDP34BWZ64XG2G0PTH6XCCMG=setting-up-deep-linking-for-app-campaigns-for-engagement h_01HDP34BWZ990SD3B1C5DZRESK=dynamic-remarketing-and-shopping-campaigns h_google-non-app-campaign-support=support-for-non-app-campaigns-demand-gen-and-sem support-for-nonapp-campaigns-demand-gen-and-sem=support-for-non-app-campaigns-demand-gen-and-sem h_01HDP2XBSEJVQ5G0MD0V5R05CM=see-also" />

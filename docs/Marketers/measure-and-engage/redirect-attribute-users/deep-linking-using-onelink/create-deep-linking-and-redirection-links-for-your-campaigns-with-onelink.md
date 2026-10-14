@@ -46,7 +46,7 @@ The steps required to set up a link are described in detail in the section that 
 
 **Create OneLink links from your AI tool**
 
-You can also create OneLink links by describing them in plain language in an AI tool connected to the [AppsFlyer MCP](/docs/beta-appsflyer-mcp "/docs/beta-appsflyer-mcp")[.](/docs/beta-appsflyer-mcp) For example: "Create a link for our Black Friday email newsletter that opens the sale page in the app." The AI maps your request to the right parameters, shows you the link details, and creates the link only after you approve. Links are created under an existing OneLink template. [Learn more](/docs/beta-appsflyer-mcp#h_01JY3VJEQMRDFAFTKZMPZ90RHP)
+You can also create OneLink links by describing them in plain language in an AI tool connected to the [AppsFlyer MCP](/docs/beta-appsflyer-mcp "/docs/beta-appsflyer-mcp")[.](/docs/beta-appsflyer-mcp) For example: "Create a link for our Black Friday email newsletter that opens the sale page in the app." The AI maps your request to the right parameters, shows you the link details, and creates the link only after you approve. Links are created under an existing OneLink template. [Learn more](/docs/beta-appsflyer-mcp#onelink-management)
 
 **To create a OneLink link with a specific user experience:**
 
@@ -156,8 +156,8 @@ These OG tags may automatically be taken from the web URL or app store you are r
    * Description
    * Image URL
 4. [Optional] Review the **Template favicon** field.
-   * This shows the favicon configured in your OneLink [template settings](/docs/create-a-onelink-template#set-a-favicon-for-link-previews). It displays automatically in link previews on supported platforms.
-   * To change the favicon, go to your [template settings](/docs/create-a-onelink-template#set-a-favicon-for-link-previews).
+   * This shows the favicon configured in your OneLink [template settings](/docs/create-a-onelink-template#h_favicon). It displays automatically in link previews on supported platforms.
+   * To change the favicon, go to your [template settings](/docs/create-a-onelink-template#h_favicon).
    * If no favicon is shown, none has been configured on the template yet. You can still use Custom preview without a favicon.
 
 **To add OG tag parameters to your link**(if it was not created in the OneLink UI):
@@ -444,6 +444,8 @@ https://impressions.onelink.me/j7rN?pid=email&c=Spring&af_viewthrough_lookback=1
 
 </Accordion>
 
+<div id="deep-linking-post-event" />
+
 <Accordion title="Deep linking post-event">
 
 You may want to deep link users into specific activities or pages only after an event, for example:
@@ -459,6 +461,8 @@ Ask your developers to follow their instructions for deep linking users post-eve
 
 </Accordion>
 
+<div id="deferred-deep-linking-with-ios-private-relay" />
+
 <Accordion title="Deferred deep linking with iOS Private Relay">
 
 With the launch of iOS 15, Apple provides iCloud+ users with a feature called [Private Relay](https://www.macworld.com/article/348965/icloud-plus-private-relay-safari-vpn-ip-address-encryption-privacy.html), which gives them the option to encrypt their web-browsing traffic and hide their exact location, IP address, and the contents of their browsing traffic. If users opt-in to Private Relay, this could interfere with attribution and deferred deep linking. Meaning, once a new user without the app goes to the App Store, and installs and launches the app, Private Relay could prevent them from being sent to a specific page in the app.
@@ -467,6 +471,8 @@ To make sure that deferred deep linking (DDL) continues to work as expected, you
 
 * **[Recommended] App Clip-based solution**: Create an App Clip that gives you user attribution data, and directs users to a customized App Clip experience similar to the one you want DDL to achieve. The app clip can also include a flow to direct users from your App Clip to your full app.
 * **Clipboard-based solution**: Create a web landing page that copies the deferred deep linking data from the URL and correctly redirects the user to the app. **Note**: This solution does not help with attribution.
+
+<div id="app-clipbased-solution" />
 
 <Accordion title="App Clip-based solution">
 
@@ -502,6 +508,8 @@ The flow of the App Clip-based DDL solution is as follows:
    **Note**: If you enter a OneLink custom link, the App Clip-based solution will only work for users tapping that specific link; other links created based off the OneLink template will not work.
 
 </Accordion>
+
+<div id="clipboardbased-solution" />
 
 <Accordion title="Clipboard-based solution">
 
@@ -547,6 +555,8 @@ The copy/paste landing page DDL solution requires:
 
 ## Additional information
 
+<div id="examples" />
+
 <Accordion title="Examples">
 
 **Basic example**
@@ -581,19 +591,21 @@ To solve this, Mark sends users an SMS containing a short URL powered by OneLink
 
 | Trait | Remarks |
 | --- | --- |
-| OneLink characters | <ul><li>Total URL length must not exceed 2000 characters</li><li>Link name and media source: must not exceed 150 characters</li><li>Short URL ID must not exceed 50 characters</li><li>See additional redirection parameter [traits and limitations](/docs/about-link-structure-and-parameters#special-characters).</li></ul> |
-| Maximum links | The maximum number of OneLink links you can create in AppsFlyer is 120,000 per account. |
-| Posting OneLink URLs in web pages | Using `target="_blank"`in the HTML href tag does not result in redirection to Google Play or App Store. If the OneLink URL is placed inside an html **a** tag with the **target="\_blank"** attribute, it opens a blank page in Chrome on Android and iOS. This affects OneLink functionality. Make sure that the **a** tag doesn't include the target attribute. |
-| Agencies | Agencies can't use OneLink templates or links. They're for custom/owned media sources only. |
-| Ad networks | Ad networks can't use OneLink templates or links. They're for custom/owned media sources only. |
-| Social media preview image | <ul><li>If the image type is not supported by the social media platform, it doesn't display.</li><li>For WhatsApp, the image can't exceed 300 KB.</li></ul> |
-| Desktop | When you set the OneLink URL or template to redirect desktop users to a different URL, the web URL is added to the link in the `af_web_dp` parameter. When the link contains `af_web_dp`, AppsFlyer does not register a click when it comes from a desktop. |
-| af\_enc\_data | Not supported in impression URLs. |
+| <span id="onelink-characters"></span>OneLink characters | <ul><li>Total URL length must not exceed 2000 characters</li><li>Link name and media source: must not exceed 150 characters</li><li>Short URL ID must not exceed 50 characters</li><li>See additional redirection parameter [traits and limitations](/docs/about-link-structure-and-parameters#special-characters).</li></ul> |
+| <span id="maximum-links"></span>Maximum links | The maximum number of OneLink links you can create in AppsFlyer is 120,000 per account. |
+| <span id="posting-onelink-urls-in-web-pages"></span>Posting OneLink URLs in web pages | Using `target="_blank"`in the HTML href tag does not result in redirection to Google Play or App Store. If the OneLink URL is placed inside an html **a** tag with the **target="\_blank"** attribute, it opens a blank page in Chrome on Android and iOS. This affects OneLink functionality. Make sure that the **a** tag doesn't include the target attribute. |
+| <span id="agencies"></span>Agencies | Agencies can't use OneLink templates or links. They're for custom/owned media sources only. |
+| <span id="ad-networks"></span>Ad networks | Ad networks can't use OneLink templates or links. They're for custom/owned media sources only. |
+| <span id="social-media-preview-image"></span>Social media preview image | <ul><li>If the image type is not supported by the social media platform, it doesn't display.</li><li>For WhatsApp, the image can't exceed 300 KB.</li></ul> |
+| <span id="desktop"></span>Desktop | When you set the OneLink URL or template to redirect desktop users to a different URL, the web URL is added to the link in the `af_web_dp` parameter. When the link contains `af_web_dp`, AppsFlyer does not register a click when it comes from a desktop. |
+| <span id="af_enc_data"></span>af\_enc\_data | Not supported in impression URLs. |
 | <span id="android-social-apps-webview-deep-linking-redirection"></span>Android social apps WebView | Due to recent changes in various Android social apps, some deep linking and store redirection flows in the internal browser view (WebView) were broken.<br /><br />**Android App links**<br /><br />Android App links are currently not supported when clicked from within the Facebook in-app browser. Using a URI scheme on links in this flow works as before.<br /><br />**Store redirection**<br /><br />To accommodate the changes and re-enable store redirection, we had to introduce additional user interaction for the following Android social apps:<ul><li>Facebook versions above v420</li><li>Instagram</li><li>Facebook Messenger</li><li>Snapchat</li></ul>The new user flow requires users of the above apps to click on an additional landing page button to trigger the redirection to the Google Play Store and other third-party stores.<br /><br />This button is added automatically, requiring no action.<br /><br />**Notes:**<ul><li>Facebook versions 420 and below work as before, with no additional user interaction.</li><li>Facebook App Links (using URI scheme) in Facebook posts work as before with no additional user interaction.</li><li>Facebook App Links in Instagram chat work as before with no additional user interaction.</li><li>In a deep linking flow, when the app is not installed, there is a known limitation: an error pop-up message. This message does not affect the flow; the user is still redirected to the store as expected.</li></ul> |
-| OneLink link previews | **Description**  <br />OneLink link previews sometimes fail to display correctly on Facebook and LinkedIn. The issue arises when the destination website does not recognize the `AppsFlyerBot-Previewer/1.0` user-agent string in the preview request as coming from a robot (or crawler). In such cases, the website fails to respond with the appropriate OG-tagged preview content.<br /><br />**Solution**  <br />You can configure your landing page to treat pages with the `AppsFlyerBot-Previewer/1.0` user-agent header string as coming from a robot by [updating your website robot.txt file](https://moz.com/learn/seo/robotstxt).<br /><br />The preview robot also checks every link's redirect parameters against your redirect allowlist. When a parameter points to a domain that isn't in the list, the robot ignores the URL, so the preview stays blank or generic. Make sure every landing-page domain you expect to preview is added to your redirect allowlist. |
-| Android Naver Blog app | Deep linking is not supported on Android Naver Blog app. Users will be taken to Google Play or to the web redirection as defined on the link. |
+| <span id="onelink-link-previews-sometimes-fail-to-display-correctly-on-facebook-and-linkedin"></span>OneLink link previews | **Description**  <br />OneLink link previews sometimes fail to display correctly on Facebook and LinkedIn. The issue arises when the destination website does not recognize the `AppsFlyerBot-Previewer/1.0` user-agent string in the preview request as coming from a robot (or crawler). In such cases, the website fails to respond with the appropriate OG-tagged preview content.<br /><br />**Solution**  <br />You can configure your landing page to treat pages with the `AppsFlyerBot-Previewer/1.0` user-agent header string as coming from a robot by [updating your website robot.txt file](https://moz.com/learn/seo/robotstxt).<br /><br />The preview robot also checks every link's redirect parameters against your redirect allowlist. When a parameter points to a domain that isn't in the list, the robot ignores the URL, so the preview stays blank or generic. Make sure every landing-page domain you expect to preview is added to your redirect allowlist. |
+| <span id="deep-linking-is-not-supported-on-android-naver-blog-app"></span>Android Naver Blog app | Deep linking is not supported on Android Naver Blog app. Users will be taken to Google Play or to the web redirection as defined on the link. |
 | <span id="chrome-browser-on-ios"></span>Chrome browser on iOS | Due to a change in Chrome iOS, whenever a user clicks a OneLink link which contains a URI scheme link (af\_dp parameter) in Chrome on iOS, a pop-up is displayed, prompting users to confirm opening the app or redirecting to the App Store. |
 | <span id="telegram-webview"></span>Telegram WebView | Probabilistic modeling attribution doesn't work for user engagement in Telegram WebView (Telegram browser). The reason is because WebView doesn't include device models and OS versions in its engagement requests. |
-| Xiaomi Browser | Probabilistic modeling attribution doesn't work for user engagement in Xiaomi Browser. |
+| <span id="xiaomi-browser"></span>Xiaomi Browser | Probabilistic modeling attribution doesn't work for user engagement in Xiaomi Browser. |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H8Y6DDT4M8XGAEJJVTHKHPKV=onelink-links-and-experiences h_01H8Y6DDT41C6JYKXET0NDRB1G=create-a-onelink-link h_01JRX3VWTVE77QVNG37BKPKHWW=note h_01H8Y6DDT4C543RS2BXAGS487M=experiences h_01H8Y6DDT4WZ5FKZYBX2H08MFD=general-settings h_01KY2AWC72SCQKY3XEQGW2J269=important h_01H8Y6DDT4R7785X5DRES66BKJ=enable-retargeting-for-the-app h_01H8Y6DDT4JT9H0R13ZNGHJ79S=social-media-preview-og-tags h_01KY2AWC72V1JR1BBGKHPDQ7AF=note-1 h_01H8Y6DDT4PHY2F5E3GK582P51=social-app-landing-page h_01H8Y6DDT463F5569B28DD17SV=important-1 h_01H8Y6DDT4MMD1AW6D1PNGNX5X=note-2 h_01H8Y6DDT4JB4RT438MAGNNX2S=to-use-the-social-app-landing-page h_01H8Y6DDT4G34S3RV3ZH64XT19=to-set-up-the-social-apps-landing-page h_01H8Y6DDT5XNJVYW2Y8F6JWPK2=deep-linking-and-deferred-deep-linking h_01KY2AWC73CNKHAF4HV26F132E=note-3 h_01H8Y6DDT5JR3B3DMR87JCBZ69=tips h_01H8Y6DDT5KSBE00WWDGQ5R1AQ=note-4 h_01H8Y6DDT58FC3HMSRZBMGZZRJ=redirection h_01H8Y6DDT5AAQ3BZD8QB9H19QB=additional-parameters h_01H8Y6DDT5B6M7CETQRD9NKX8R=testing h_01H8Y6DDT50DH5TGVVPJPJC4MG=new-users-without-your-app-installed h_01H8Y6DDT5KDEWS40XPYGYC8HK=existing-users-with-your-app-installed h_01H8Y6DDT5YR8JA5YMZFPMCC2X=additional-procedures h_01H8Y6DDT58EFS8S46D1AVP3T1=create-a-custom-impression-url h_01H8Y6DDT5S4NEJMNJR4K3QMNH=deep-linking-post-event h_01H8Y6DDT58Y6CS27M2W3MHYAD=deferred-deep-linking-with-ios-private-relay h_01H8Y6DDT5A7J07KNNRWCXCBH2=app-clipbased-solution h_01H8Y6DDT5VDKAR89B8N6D7YMB=flow h_01H8Y6DDT62H71A8DPG00A3ZTN=clipboardbased-solution flow::21baf6ac=flow-1 h_01H8Y6DDT638T7C9HQHZ1CJ726=flow-1 h_01H8Y6DDT6JGP33AWFQV6Z8FF0=requirements h_01H8Y6DDT61ENGJFZ1XS28GS1T=setup h_01H8Y6DDT679SGBTSM669F9FHV=additional-information h_01H8Y6DDT6TX4WTP2HYRF11DZ3=examples h_01H8Y6DDT6TQYRS81BMHARB62S=traits-and-limitations" />

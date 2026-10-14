@@ -32,6 +32,8 @@ Before the Engagements task can be set up, the collaboration owner needs to assi
 
 In the context of on-site and combined campaigns, all engagement events originate from the collaborator’s owned properties—such as their app, website, or in-store systems. These engagement events are typically collected using the AppsFlyer SDK or submitted via custom data sources and are attributed solely to on-site user activity.
 
+<div id="1-prepare-engagement-data" />
+
 <Accordion title="1. Prepare engagement data">
 
 Before you set up the custom engagement source in DCP, you can provide engagement data in one of two ways:
@@ -40,6 +42,8 @@ Before you set up the custom engagement source in DCP, you can provide engagemen
 * **AppsFlyer SDK:** Integrate the AppsFlyer SDK into your app to automatically send in-app engagement events to DCP. For more information, see [Prepare in-app events for engagements](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-engagement-inapp-events).
 
 </Accordion>
+
+<div id="2-open-engagement-settings" />
 
 <Accordion title="2. Open engagement settings">
 
@@ -53,12 +57,15 @@ To open the **Measurement settings** page, follow these steps:
    * If the link is grayed out, set up the collaboration's [data sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources) and [audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences).
 4. On the **Measurement Setting** page, click the **Engagements** pane to open the **Engagements** dialog.
 
-   <br /><br />**Note**<br />#### Note
+   > 📘 **Note**
+   >
+   > * If the **Engagements** dialog is locked, it means that the Engagements task has been assigned to your collaborator and that you cannot view its content. If you are the collaboration owner, you can unlock it by reassigning the task to yourself. However, any previous settings will be deleted, and the task will be reset.
+   > * If the **Engagements** pane is grayed out, ask the collaboration ownerto assign you the Engagements task.
 
-   * If the **Engagements** dialog is locked, it means that the Engagements task has been assigned to your collaborator and that you cannot view its content. If you are the collaboration owner, you can unlock it by reassigning the task to yourself. However, any previous settings will be deleted, and the task will be reset.
-   * If the **Engagements** pane is grayed out, ask the collaboration ownerto assign you the Engagements task.
 
 </Accordion>
+
+<div id="3-set-data-provision-method" />
 
 <Accordion title="3. Set data provision method">
 
@@ -82,6 +89,8 @@ To set up the engagement provision method in DCP, follow these steps:
 
 </Accordion>
 
+<div id="4-set-source-location" />
+
 <Accordion title="4. Set source location">
 
 If a custom source is used to provide engagement events to DCP, set the details that enable DCP to access it in your cloud service.
@@ -98,6 +107,8 @@ If a custom source is used to provide engagement events to DCP, set the details 
 4. Click **Next**.
 
 </Accordion>
+
+<div id="5-map-engagement-source-fields" />
 
 <Accordion title="5. Map engagement source fields">
 
@@ -134,3 +145,5 @@ To map the engagement custom source fields, follow these steps
 4. Click **Save**. The **`{source name}` source created** message is displayed.[![](https://files.readme.io/670c7ca42d066bf2d874785108d84318387e393512973d2fff5056ab3f5a45cd-38381396764817.png)](https://files.readme.io/670c7ca42d066bf2d874785108d84318387e393512973d2fff5056ab3f5a45cd-38381396764817.png)
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01K3EFVGA56P7FB605JY1BQ34M=prerequisites set-up-engagements-for-onsite-or-combined-campaigns=set-up-engagements-for-on-site-or-combined-campaigns h_01K3EFVGA6GT10BXJYE9SFM9TE=set-up-engagements-for-on-site-or-combined-campaigns h_01K3EFVGA6NM4YKZ8MEEYXX58B=1-prepare-engagement-data h_01K3EFVGA65CFME4H3ZC89X471=2-open-engagement-settings h_01K3EFVGA618KT7PGSVQXF6JSV=note h_01K3EFVGA6BKGAS5GZR3GW2N2M=3-set-data-provision-method h_01K3EFVGA64CQTKZ8C227042PY=4-set-source-location h_01K3EFVGA6J7PX1QE8TRA42QEY=5-map-engagement-source-fields h_01K3EFVGA6E3WH7FEYCW09P74V=note-1" />

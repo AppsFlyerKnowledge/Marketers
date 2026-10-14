@@ -42,6 +42,8 @@ x-zendesk:
    Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below:
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -79,12 +81,13 @@ CleverTap connects with AppsFlyer via a unique Account Token, Region, Account Pa
 2. To reveal the values, click the ‘eye’ icons next to each field.
 3. Copy the values and paste them into the AppsFlyer CleverTap page.
 
-   <br /><br />**Note**<br />#### Note
+   > 📘 **Note**
+   >
+   > * The region depends on the CleverTap dashboard URL for your account:
+   > * If your account URL is [https://eu1.dashboard.clevertap.com](https://eu1.dashboard.clevertap.com/), the region is EU1, meaning that the account data is hosted in an EU-based data center.
+   > * If your account URL is[https://in1.dashboard.clevertap.com](https://in1.dashboard.clevertap.com), the region is IN1, meaning that the account data is hosted in an IN-based data center.
+   > * If your account URL is [https://aps3.dashboard.clevertap.com](https://aps3.dashboard.clevertap.com), the region is ID, meaning that the account data is hosted in an Indonesia-based data center.* The region setting is case-sensitive and must be used with capital letters only. When lowercase letters are used, the postback will be sent to the default server (EU1).
 
-   * The region depends on the CleverTap dashboard URL for your account:
-   * If your account URL is [https://eu1.dashboard.clevertap.com](https://eu1.dashboard.clevertap.com/), the region is EU1, meaning that the account data is hosted in an EU-based data center.
-   * If your account URL is[https://in1.dashboard.clevertap.com](https://in1.dashboard.clevertap.com), the region is IN1, meaning that the account data is hosted in an IN-based data center.
-   * If your account URL is [https://aps3.dashboard.clevertap.com](https://aps3.dashboard.clevertap.com), the region is ID, meaning that the account data is hosted in an Indonesia-based data center.* The region setting is case-sensitive and must be used with capital letters only. When lowercase letters are used, the postback will be sent to the default server (EU1).
 4. Finalize the integration according to [CleverTap's documentation](https://developer.clevertap.com/docs/appsflyer#section-step-2-integration).
 
 ### Default postbacks
@@ -116,11 +119,15 @@ Learn more about [in-app event postbacks.](/docs/set-up-an-integrated-partner#g-
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution Links are not available for this partner.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -128,11 +135,15 @@ Cost data is not applicable for this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue data is not applicable for this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -143,3 +154,5 @@ Permissions are not available for CleverTap.
 ## Measure CleverTap owned media
 
 Since CleverTap is a platform that uses emails, SMS, push notifications, etc., for marketing automation purposes, you can use [AppsFlyer OneLink](/docs/onelink-guide) as a solution for measuring owned media that originates from CleverTap.
+
+<div data-zendesk-anchors="h_01H9FK5JT1TM77CAH0JTDCV376=important h_01H9FK5JT1ATCHY6WAVB6E2YEW=setting-up-clevertap h_01HKW9C39FKN3QN21NKDS6N3BQ=integration-tab h_01H9FK5JT12Z1M6WW3GQQF5QVN=activate-partner h_01H9FK5JT1FMC6JANBP9KBB0V2=general-settings h_01H9FK5JT1MQKT7KWJ3EVNEA1E=important-1 h_01H9FK5JT1RVJ1V0CGXSH1XZPM=obtain-clevertap-account-token h_01H9FK5JT2QV9CKSZ1N3S4WTGE=note h_01H9FK5JT2CE0WQ9HAGVGAQA5B=default-postbacks inapp-events-settings=in-app-events-settings h_01H9FK5JT2YS7G5WDD4F5MPYVZ=in-app-events-settings h_01H9FK5JT2939VDXQCDDG7MZ0R=attribution-link-tab h_01H9FK5JT2AEDDCD11K77WJHBX=cost-tab h_01H9FK5JT2WYWRGZAS1HBYYBSJ=ad-revenue-tab h_01H9FK5JT2FD6WN3Z1RET108JZ=permissions-tab h_01H9FK5JT2AZTT5936DD88ZZV3=measure-clevertap-owned-media" />

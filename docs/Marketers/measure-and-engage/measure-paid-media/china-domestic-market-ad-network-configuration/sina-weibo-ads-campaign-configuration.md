@@ -38,6 +38,8 @@ x-zendesk:
 
 The Sina Weibo Ads configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 This section is used for connecting the partner with AppsFlyer. Relevant messages for the advertiser regarding the specific partner also appear here.
@@ -144,17 +146,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost integration is not available for Sina Weibo Ads.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue data is not supported by this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -286,3 +294,5 @@ On the ad level, set up the deep link and AppsFlyer attribution link:
    > * `&af_ad=ad_name`
    >
    > Read more about [AppsFlyer's Attribution Link Structure and Parameters](/docs/about-link-structure-and-parameters) and Sina Weibo's [attribution links](#attribution-link-tab).
+
+<div data-zendesk-anchors="h_01HKW6X6G9WGKHT7MXM3BKYX40=setting-up-sina-weibo-ads h_01HKW6X6G9865NFC261ZCPC4AM=integration-tab h_01HKW6X6G98F7ERDGKN7K5PDVE=activate-partners h_01HKW6X6GAR48FSFX7DVEWAMX8=attribution-link-tab h_01HKW6X6GA0FPN5EMR68FH2HSR=attribution-link-parameters h_01HKW6X6GA287ZKAWG69497WRN=retargeting-settings clickthrough-attribution=click-through-attribution h_01HKW6X6GABBB9ZP8GP87JYZAE=click-through-attribution h_01HKW6X6GAY9GP9P57RFPSFTVN=click-attribution-link h_01HKW6X6GADFS59WJT2GHYQ317=cost-tab h_01HKW6X6GAG7TM4WFNJFHGY9QN=ad-revenue-tab h_01HKW6X6GAK8PN5PBFPZTGC0ES=permissions-tab h_01HKW6X6GA96QHGJY220JF5DF4=setting-appsflyer-attribution-on-weibo-ads-dashboard h_01HKW6X6GA6XJSV02NTNDSRZ19=setting-the-attribution-link h_01HKW6X6GAJBYM89RYH65BAVNH=setup-ad-series h_01HKW6X6GC2RHPJXWZAX8S758B=uploading-ad-creatives-and-set-the-attribution-link h_01HKW6X6GCNS88DFZTMM7BXMKT=example h_01HKW6X6GCBQNG4Q2RHJPCRCKS=note h_01HKW6X6GE2RVQGSN9JM63SZYA=creating-retargeting-campaigns-on-weibo-ads-dashboard h_01HKW6X6GEKZWAPZ6V2EXGY9SA=example-1 h_01HKW6X6GFQQSY19CRREVR8GRY=example-2 h_01HKW6X6GF815M1XE9HF631F1W=note-1" />

@@ -38,6 +38,8 @@ x-zendesk:
 
 Youdao DSP's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration Tab">
 
 The integration with Youdao DSP only supports the install event in the default postback.
@@ -52,6 +54,8 @@ For more details about partner activation please click [here](/docs/partner-acti
 ![mceclip2.png](https://files.readme.io/8e104f89182a421579a067a4904a0d6ddc7ae4fbae7da6a9a8e0c800ccc42e99-50900269840529.png)
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution Link Tab">
 
@@ -96,17 +100,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost Tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad Revenue Tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions Tab">
 
@@ -126,3 +136,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW6ZN60XK9DSCEVQ216P1G9=setting-up-youdao-dsp h_01HKW6ZN60TAMV09SSD8JM29GS=integration-tab h_01HKW6ZN60PGGR7RDWKP5S2HJ9=activate-partner h_01HKW6ZN61B4KY1BEA76MYX4BC=default-postbacks h_01HKW6ZN61WPTBRKNTG3BXHYRP=attribution-link-tab h_01HKW6ZN6172ASA82J51CM13NW=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6ZN614J1A71A9B38QRN7E=click-through-attribution h_01HKW6ZN61EZP9ES6GK09C68DH=attribution-link h_01HKW6ZN61AWQFR8VD489ZEC6J=cost-tab h_01HKW6ZN68J89ZY3QCJZARYSTP=ad-revenue-tab h_01HKW6ZN68EQS2MB9MK7TV7TB1=permissions-tab h_01HKW6ZN68HZECRSMR3GPTAG4R=ad-network-permissions" />

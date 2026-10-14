@@ -36,6 +36,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The ***Integration Tab*** is divided into different sections:
@@ -101,6 +103,8 @@ Generate and save attribution links and send them to the partner for attributing
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
@@ -113,11 +117,15 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue data is not supported by Reddit.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -129,14 +137,14 @@ In this tab, you can select the permissions to grant Reddit. Note that even if a
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
 
-* ***Allow to configure integration:*** permit the partner to set up the integration tab (except in-app event postbacks)
-* ***Allow to configure in-app event postbacks:*** permit the partner to set up in-app event postbacks mapping to itself on the integration tab
-* ***Allow access to your retention report:*** only to the partner's own retention data
-* ***Allow access to your aggregate loyal user data:*** only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data:*** only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*a:** only to the revenue data attributed to the partner
-* ***Allow spend ingestion:*** permit the partner to send ad spend data in files for this app only.
-* ***Allow access to your Protect360 dashboard:*** only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+* <span id="01EDKYCTJGZCQ05BQ5JXR6457Y"></span>***<span id="01EDKYCTJHNYT3SRD6Q40YJKR1"></span>Allow to configure integration:*** permit the partner to set up the integration tab (except in-app event postbacks)
+* <span id="01EDKYCTJHVW0E6TD5ARMFEQQC"></span>***Allow to configure in-app event postbacks:*** permit the partner to set up in-app event postbacks mapping to itself on the integration tab
+* <span id="01EDKYCTJH6C06V91M50CXNSZS"></span>***Allow access to your retention report:*** only to the partner's own retention data
+* <span id="01EDKYCTJHY2JXJHQRQM6S1T7H"></span>***Allow access to your aggregate loyal user data:*** only to the partner's own loyal user data
+* <span id="01EDKYCTJHF1W3FPJCSSEKJ4GZ"></span>***Allow access to your aggregate in-app events data:*** only to the partner's own in-app events data
+* <span id="01EDKYCTJHVN8E1QPY3BSMC3WD"></span>***Allow access to your aggregate revenue dat*a:** only to the revenue data attributed to the partner
+* <span id="01EDKYCTJHX0T89JNPJKY71WVW"></span>***Allow spend ingestion:*** permit the partner to send ad spend data in files for this app only.
+* <span id="01EDKYCTJHWKWYJS7ZFCJ8558V"></span>***Allow access to your Protect360 dashboard:*** only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
@@ -161,3 +169,5 @@ The following restrictions apply to click-through attribution:
 * Clicks and impressions: Not included in raw data reports
 
 **Reminder:** Data received about a Reddit campaign is subject to [Reddit Business Tool Terms](https://protect.checkpoint.com/v2/___https:/business.reddithelp.com/s/article/Reddit-Business-Tool-Terms___.YzJ1OnJlZGRpdDpjOmc6OGFlZGI3Y2U5MDg3ZTgxNzYxYzdjMzEzYzgwZjI3ZDI6NjowMDg5Ojg1MmViZDg4YWY2ZTg4NThjMDE2NjhkYTk2ZjZkYmZlYWI1NGY3MGEwNDk0MmE0ODQ0NTI3ZDM0ZWYwOWVlMmI6cDpUOk4#:%7E:text=These%20Reddit%20Business%20Tool%20Terms,advertising%20purposes%20or%20to%20otherwise), and includes, among other restrictions, a prohibition on using Reddit data to create profiles of any users.
+
+<div data-zendesk-anchors="01EDKYCH117BTY81G0Z2NF181F=setting-up-reddit 01EDKYCH11YM04HDJTAWP4XHWH=integration-tab 01EDKYCH11E2X1VSSG2HKKP6VS=activate-partners h_01HJRZF42CYME3EZ37470339CF=advanced-privacy h_01HJRZF42CN7VT8SKNX5E638R0=transaction-id 01EDKYCH11WFJ09XBND6RQT0XA=general-settings 01EDKYCH11KZT2BN64AGETTMD6=default-postbacks inapp-events-settings=in-app-events-settings 01EDKYCH11QAYSV2GMYD4R6DJJ=in-app-events-settings h_01HJRZF42DHDDHPCE4NYA7QKV2=attribution-link-tab h_01HJRZF42DYG18DTKSV4G8NHV4=cost-tab 01EDKYCH124QTAFK6VQ3ARHCTM=ad-revenue-tab 01EDKYCH12RY4P6DY3QSWG1A18=permissions-tab 01EDKYCH12FXE1WASY5YQF80CV=ad-network-permissions 01JAQ0TCR54Q03RQWPNT5PJGPN=raw-data-restrictions" />

@@ -58,6 +58,8 @@ The table that follows lists the cardinality limits per day, per app.
 
 ## Cardinality limits per dimension
 
+<div id="exceeded_adset_limit-and-exceeded_ad_limit" />
+
 <Accordion title="Exceeded_AdSet_Limit and Exceeded_Ad_Limit">
 
 * Up to 1000 unique adset names and 1000 unique ad names per media source are available.
@@ -71,12 +73,16 @@ The table that follows lists the cardinality limits per day, per app.
 
 </Accordion>
 
+<div id="exceeded_adsetid_limit-and-exceeded_adid_limit" />
+
 <Accordion title="Exceeded_AdSetID_Limit and Exceeded_AdID_Limit">
 
 * Up to 1000 unique ad set IDs and 1000 unique ad IDs per media source are available.
   * On a given day, ad set ID information from the 1001st ad set ID and above is grouped in the **Exceeded\_AdSetID\_Limit** source. The same applies to the **Exceeded\_AdID\_Limit** source.
 
 </Accordion>
+
+<div id="exceeded_campaign_limit" />
 
 <Accordion title="Exceeded_Campaign_Limit">
 
@@ -93,12 +99,16 @@ The table that follows lists the cardinality limits per day, per app.
 
 </Accordion>
 
+<div id="exceeded_campaignid_limit" />
+
 <Accordion title="Exceeded_CampaignID_Limit">
 
 * Up to 3000 unique campaign IDs per day are available.
   * During a single day, all campaign information from the 3001st campaign ID and above is attributed to the **Exceeded\_CampaignID\_Limit** source.
 
 </Accordion>
+
+<div id="exceeded_channels_limit" />
 
 <Accordion title="Exceeded_Channels_Limit">
 
@@ -127,12 +137,16 @@ The table that follows lists the cardinality limits per day, per app.
 
 </Accordion>
 
+<div id="exceeded_keywords_limit" />
+
 <Accordion title="Exceeded_Keywords_Limit">
 
 * Up to 1000 unique keywords per day per media source are available.
   * On a day, keyword information from the 1001st keyword and above is grouped in the **Exceeded\_Keywords\_Limit** source.
 
 </Accordion>
+
+<div id="exceeded_mediasource_limit" />
 
 <Accordion title="Exceeded_MediaSource_Limit">
 
@@ -188,3 +202,5 @@ As explained, an **Exceeded** source occurs when AppsFlyer receives the N+1 clic
 > 📘 **Tip**
 >
 > Forget today and look only at data from yesterday and beforehand. Every day an aggregation process recalculates the last day's data and in retrospect assigns only the smallest (not most late) sources, to any **Exceeded** source. This ensures that the distortion caused by the overflow of clicks is minimal!
+
+<div data-zendesk-anchors="h_01J1VY82KFVMRW99RK0SXWSEZ4=what-are-exceeded-dimensions h_01J1VY82KFXYA0XCA1XFVTJ2DZ=example h_01J1VY82KF5WP6PJQ1MKYPP7YY=cardinality-limits-per-dimension h_01J1VY82KF9XQ08EQ2BH89B6QK=exceeded_adset_limit-and-exceeded_ad_limit h_01J1VY82KFM4VAD4FG5CEKTQK6=tip h_01J1VY82KFWMF6DN3XNFSWBFHH=exceeded_adsetid_limit-and-exceeded_adid_limit h_01J1VY82KFF7AWBCB54KRPJNS4=exceeded_campaign_limit h_01J1VY82KFBPK2PAHSSMCER6TW=tip-1 h_01J1VY82KF4TFVTGQ31RCE3QK7=exceeded_campaignid_limit h_01J1VY82KFXPX63XKKKTZ9AWN1=exceeded_channels_limit h_01J1VY82KFRDRVNEAG6S72Q1T4=exceeded_events_limit h_01J1VY82KFYXAXTJ613VAN1PXX=tip-2 h_01J1VY82KF48N1M8DZ89XQBJTD=example-1 h_01J1VY82KFAFK03F3SDJBA5ZNX=exceeded_keywords_limit h_01J1VY82KFV85460FCZB77EY1A=exceeded_mediasource_limit h_01J1VY82KFQG2ZGF91F80X2AAK=exceeded_siteid_limit h_01J1VY82KFMD2DJWDYXF8528CY=tip-3 h_01J1VY82KFQRVCAW82ZSNJ96G7=note h_01J1VY82KFE9E2DNRNPBRQSW22=how-to-avoid-getting-exceeded-sources h_01J1VY82KFDBASKPRK2GJ16FDZ=the-long-term-solution h_01J1VY82KFSWQ2Y4WSSASYDFWR=tip-4 h_01J1VY82KFR7Z8422MYFK71ET8=the-short-term-solution h_01J1VY82KF83SADWJCESRNSJCJ=tip-5" />

@@ -38,13 +38,13 @@ The following is the list of the enriched engagement types:
 
 | engagement\_type | Description |
 | --- | --- |
-| preload | The app is preloaded by the OEM at the factory or by the provider the first time the device is activated. Alternatively, a wizard prompts users to download the app when the device is first activated. |
-| click\_to\_download | When the user engages with an ad, the app is automatically downloaded and installed on the device without redirecting to an app store. |
-| click\_to\_app | An ad click, QR code scan, deep link, or any other click that redirects the user to the app or to the relevant app store to download the app. |
+| <span id="preload"></span>preload | The app is preloaded by the OEM at the factory or by the provider the first time the device is activated. Alternatively, a wizard prompts users to download the app when the device is first activated. |
+| <span id="click_to_download"></span>click\_to\_download | When the user engages with an ad, the app is automatically downloaded and installed on the device without redirecting to an app store. |
+| <span id="click_to_app"></span>click\_to\_app | An ad click, QR code scan, deep link, or any other click that redirects the user to the app or to the relevant app store to download the app. |
 | <span id="engaged_click"></span>engaged\_click | A click that keeps the user in the same context, engaging with the ad, and does NOT direct that user to the app store or to launch the app. |
 | <span id="engaged_view"></span>engaged\_view | An engaged view occurs when a meaningful view takes place within skippable videos, rewarded videos, or StoreKit-rendered ads. For example, when a user watches a skippable video ad for at least 5 seconds after the skip option appears. |
-| view | An ad view is when an ad is rendered, and an impression takes place. |
-| listening | Listening is when a user listens to an audio ad, such as a podcast ad. |
+| <span id="view"></span>view | An ad view is when an ad is rendered, and an impression takes place. |
+| <span id="listening"></span>listening | Listening is when a user listens to an audio ad, such as a podcast ad. |
 
 ## **EET Attribution priority and lookback window**
 
@@ -154,11 +154,15 @@ Total impressions include both engaged views and regular views. To calculate the
 
 ## FAQs
 
+<div id="what-kinds-of-campaigns-are-relevant-for-enriched-engagement-types" />
+
 <Accordion title="What kinds of campaigns are relevant for Enriched Engagement Types?">
 
 Enriched Engagement Types can apply to both UA and retargeting campaigns, depending on the particular network. To learn whether a network supports a retargeting campaign, refer to the network's raw data reports and check whether `engagement_type` is populated for the retargeting campaign.
 
 </Accordion>
+
+<div id="are-engaged_clicks-and-engaged_views-included-in-the-aggregate-numbers-of-clicks-and-impressions-on-the-overview-dashboard" />
 
 <Accordion title="Are engaged clicks and engaged views included in the aggregate numbers of clicks and impressions on the Overview dashboard?">
 
@@ -166,11 +170,15 @@ For non-SRNs, the numbers are included and counted according to the touch type (
 
 </Accordion>
 
+<div id="why-cant-i-see-the-engagement-type-in-metas-gp_referrer-conversions" />
+
 <Accordion title="Why can't I see the engagement type in Meta's gp_referrer conversions?">
 
 Meta only reports engagement\_type=engaged\_view in its SRN API. There is no engagement\_type value available for other conversions, including gp\_referrer.
 
 </Accordion>
+
+<div id="why-cant-i-see-the-engagement-type-i2" />
 
 <Accordion title="Why do I still see installs and re-engagements with attributed_touch_type = impression even after turning the view-through toggles off?">
 
@@ -182,5 +190,7 @@ Engaged views are measured and reported even if the **view-through** toggles are
 
 | Trait | Remarks |
 | --- | --- |
-| Cross-platform engaged view support | Enhanced Engagement Types  are not yet supported in cross-platform use cases. Even when `engaged_view` is sent in the impression URL, partners and advertisers will see `view` in the attribution data. |
-| Owned media support | Owned media is currently not supported. Links used in owned media must not include the `af_engagement_type` parameter. |
+| <span id="cross-platform-engaged-view-support"></span>Cross-platform engaged view support | Enhanced Engagement Types  are not yet supported in cross-platform use cases. Even when `engaged_view` is sent in the impression URL, partners and advertisers will see `view` in the attribution data. |
+| <span id="owned-media-support"></span>Owned media support | Owned media is currently not supported. Links used in owned media must not include the `af_engagement_type` parameter. |
+
+<div data-zendesk-anchors="h_01HNCNA03SZ0MJFQ9XHDFXNTA1=introduction enriched-engagement-types=what-are-enriched-engagement-types h_01HNCNBR7KMT1KQBG5CPZY8YQY=what-are-enriched-engagement-types h_01HNCVYDH17NGA8SH5XNWR4P9X=eet-attribution-priority-and-lookback-window allowed-networks=which-networks-can-report-engaged-views-and-engaged-clicks h_01J00XFV136HPEHVQNPD934409=which-networks-can-report-engaged-views-and-engaged-clicks 01JENXRAMPFXTMF7SKDN2Y0E5M=note set%C2%A0engaged-enrichment-attribution=set-lookback-windows-for-engaged-clicks-and-engaged-views h_01J5B6EVM9P3M1SVR3K7WWK02J=set-lookback-windows-for-engaged-clicks-and-engaged-views h_01J5B97RCQQG6GN4PCKTQWVF54=note-1 reporting=view-and-analyze-eet-data h_01J00XFV13YN8QNFZJTGM78EG2=view-and-analyze-eet-data raw-data=raw-data-reports h_01J00XFV132M8TM6EGFZ7A7C3A=raw-data-reports 01JFCPX6WKCWY9RM470H23EDQ0=note-2 h_01J00XFV13W0SD4MD7H4BT1RC9=dashboards 01JFCPX6WNCFC0R0N90G4HFYZX=note-3 h_01JHG3EQN6FNJAHX1S91JE3MPT=how-to-calculate-installs-per-mille-ipm 01JFCKK7FK0B5Z7QCZNSX14WF2=faqs h_01HNFTS74KF3YFA0SWRGEQAGYQ=what-kinds-of-campaigns-are-relevant-for-enriched-engagement-types h_01HNYY1S6YQ6YNR6RSY7B8H4EM=are-engaged_clicks-and-engaged_views-included-in-the-aggregate-numbers-of-clicks-and-impressions-on-the-overview-dashboard h_01HQG5Y4JVNCB60AXR9K2GGD0H=why-cant-i-see-the-engagement-type-in-metas-gp_referrer-conversions h_01JJP3TT2QMH5Y94C4Q7V6HFP1=why-cant-i-see-the-engagement-type-i2 cross-platform-traits-limitations=traits-and-limitations" />

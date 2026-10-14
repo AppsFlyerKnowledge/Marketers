@@ -24,10 +24,10 @@ x-zendesk:
 ---
 ## Advertiser API list and interfaces
 
-Specific information about reports, reporting tools, and reporting APIs:
+<span id="01EEQJERAWW3HY59HVPY3YWA0B"></span>Specific information about reports, reporting tools, and reporting APIs:
 
-* [Raw-data reporting tools/APIs](/docs/raw-data-reporting-overview)
-* [Aggregate and analytics reporting tools/APIs](/docs/aggregated-and-analytics-reporting-overview)
+* <span id="01EEQJERAW2ZTBWBQKBCDSC76Z"></span><span id="01EEQJERAWQ2WCPV0207XM6FR4"></span>[<span id="01EEQJERAX0W7RCYQWVM2M5S13"></span>Raw-data reporting tools/APIs](/docs/raw-data-reporting-overview)
+* <span id="01EEQJERAWA09P200SGR985846"></span><span id="01EEQJERAW6AC6WR7E46T5DMHW"></span>[Aggregate and analytics reporting tools/APIs](/docs/aggregated-and-analytics-reporting-overview)
 
 #### Interfaces for advertisers
 
@@ -50,3 +50,5 @@ Specific information about reports, reporting tools, and reporting APIs:
 | Reporting | [SKAN reporting](/docs/skadnetwork-skan-solution-guide#reporting-options) | No | SKAN aggregate reporting | V2.0 | REST API |
 | Integrated partners | [Copy partner integration settings](https://dev.appsflyer.com/hc/reference/post_v1-copy) | No | Copy integration configuration parameters from one app to the other | V2.0 | REST API |
 | Integrated partners | [Set install referrer decryption key](https://dev.appsflyer.com/hc/reference/post_v1-integration-params) | No | Set install referrer decryption key received from Meta ads | V2.0 | REST API |
+
+<div data-zendesk-anchors="h_01HX9638DX6EHR4ETMSH10K68F=advertiser-api-list-and-interfaces h_01HX9638DXNJM3A968A2PSRRKS=interfaces-for-advertisers" />

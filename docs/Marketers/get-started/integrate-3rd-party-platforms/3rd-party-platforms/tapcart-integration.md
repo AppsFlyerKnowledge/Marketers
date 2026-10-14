@@ -62,3 +62,5 @@ After Tapcart has integrated the AppsFlyer SDK in your app, the following in-app
    3. Copy the ID displayed on the right-hand side.  
        [![OneLink-template-id.png](https://files.readme.io/bb9524b5aecacba00c7f4801f7c854567119c032fa99a6d39122079e3f7956d1-small-4631542470673.png)](https://files.readme.io/bb9524b5aecacba00c7f4801f7c854567119c032fa99a6d39122079e3f7956d1-small-4631542470673.png)
 3. **OneLink URL:** a specific OneLink URL generated in AppsFlyer for a specific campaign. Learn more about [how to generate your OneLink](/docs/onelink-guide).
+
+<div data-zendesk-anchors="h_01JQ6D9NCM8K3E6GS12V2CR1CH=introduction h_01JQ6D9NCM95VJB19G2F7SDRG1=integrating-tapcart-with-appsflyer default-inapp-events-configured-in-the-appsflyer-sdk=default-in-app-events-configured-in-the-appsflyer-sdk h_01JQ6D9NCMYBNJ6WJ09R1EHXH4=default-in-app-events-configured-in-the-appsflyer-sdk h_01JQ6D9NCMC97JQ759B44M9TDJ=enable-deep-linking-with-appsflyer" />

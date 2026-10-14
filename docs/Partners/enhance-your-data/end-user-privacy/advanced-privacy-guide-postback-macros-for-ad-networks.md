@@ -250,6 +250,8 @@ In the case of any issues, reach out to us using the [partner assistant widget](
 
 ## Additional information
 
+<div id="ap-for-analytics-partners" />
+
 <Accordion title="AP for analytics partners">
 
 Postbacks are sent to analytics partners as follows:
@@ -270,3 +272,5 @@ Postbacks are sent to analytics partners as follows:
 [SKAdNetwork](/docs/skan-integration-guide-for-ad-networks) is an Apple-provided attribution technology for iOS devices. Advanced Privacy is part of the [AppsFlyer Aggregated Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework) (AAP) framework and pertains to AppsFlyer's attribution. AAP enables advertisers to control which attribution data they make available via the AppsFlyer platform. Typically, ad networks support both AP and SKAdNetwork integration.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJR7MWPM9XA4BXHDRD2K6D56=advanced-privacy-for-ad-networks-news ad-network-advanced-privacy-datasharing-principles=ad-network-advanced-privacy-data-sharing-principles h_01HJR7MWPNYNMKZ3R8C3BB5EVG=ad-network-advanced-privacy-data-sharing-principles h_01HJR7MWPN92BDJRK734P6YXSK=types-of-templates-for-sending-postbacks h_01HJR7MWPN71TP0KWVVBHPC0H2=note h_01HJR7MWPNJEDNDT1ZY7P78HMG=type-of-postback-used h_01HJR7MWPNESP8BDC4D6Y7SBFZ=postback-type-for-ios-145 h_01HJR7MWPNXHHCSQ6BGCNRBHZK=web-campaigns h_01HJR7MWPNQCCNGHQY5RQHQ6D1=postback-type-used-for-ios-145-when-ap-is-on h_01HJR7MWPP7YGRXJQR29F3ERHH=integration h_01HJR7MWPPAXK18KER56E30G8R=click-url-requirements h_01HJR7MWPPRN8XYVSS7HX7NQB9=caution h_01HJR7MWPPK2HET3XYW4WBFAZ1=parameters-for-advanced-privacy-attribution h_01HJR7MWPQ60F4CESKRRMTQ7HX=advanced-privacy-postback-specification h_01HJR7MWPQ8K06A1YM4KV4RTN8=important advanced-privacy-postback-endpoint-%5Bcomplete-as-required%5D=advanced-privacy-postback-endpoint-complete-as-required h_01HJR7MWPQX9SXJZMBS6QR07WD=advanced-privacy-postback-endpoint-complete-as-required h_01HJR7MWPQKH52XMD6H9TJ0SM3=advanced-privacy-attribution-macros-available h_01HJR7MWPRC44K908A4EAPN9GV=setting-up-your-advanced-privacy-postback h_01HJR7MWPRVFR6YN56Y0DGBAXH=additional-information h_01HJR7MWPR6ACNYVZHK7YPHQGP=ap-for-analytics-partners h_01HJR7MWPRZDJNSZNB981WB5Z1=analytics-partner-postback-type-according-to-att-status-and-user-source h_01HJR7MWPR3YR7E9S49P9ZZ3CT=ap-vs-skadnetwork" />

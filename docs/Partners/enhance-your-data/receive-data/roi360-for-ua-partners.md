@@ -26,6 +26,8 @@ x-zendesk:
 
 AppsFlyer receives revenue information from both its partners and the app stores (Apple App Store and Google Play Store). Once received, the data undergoes a series of steps including validation, normalization, attribution, and enrichment with additional properties and dimensions.  AppsFlyer can send the information to the UA partner. Following this process, AppsFlyer transmits the enriched and attributed data to the UA partner. The UA partner can then utilize this information to optimize their user acquisition campaigns and enhance the service they offer to advertisers.
 
+<div id="what-revenue-types-are-reported-to-the-partners" />
+
 <Accordion title="What revenue types are reported to the partners?">
 
 Apps create two revenue types:
@@ -34,6 +36,8 @@ Apps create two revenue types:
 * **In-app purchase and auto-renewal subscription:** Store revenue is generated whenever an in-app purchase or subscription-related transaction is performed.
 
 </Accordion>
+
+<div id="how-does-appsflyer-provide-revenue-signals-to-ua-partners" />
 
 <Accordion title="How does AppsFlyer provide revenue signals to UA partners?">
 
@@ -49,6 +53,8 @@ AppsFlyer provides partners with information on in-app ads, in-app purchases, an
 
 What actions do partners need to take to receive the UA signals report and the ad revenue and store revenue postbacks?
 
+<div id="how-to-subscribe-to-the-roi360-ua-signals-report" />
+
 <Accordion title="How to subscribe to the ROI360 UA Signals report">
 
 To enable the partner to get the report via Data Locker:
@@ -59,6 +65,8 @@ To enable the partner to get the report via Data Locker:
 * The advertiser has to [grant the partner permission for the report](/docs/roi360-guide-ad-revenue-attribution#permission-to-get-ad-revenue-data).
 
 </Accordion>
+
+<div id="how-to-receive-roi360-postbacks-from-appsflyer" />
 
 <Accordion title="How to receive ROI360 postbacks from AppsFlyer">
 
@@ -76,6 +84,8 @@ The report provides complete and accurate day x+1 CSV/parquet revenue records to
 
 The UA Signals report does not provide real-time data as ad revenue postbacks do. However, it is both more accurate and complete. This is because the value of an impression can change over time. This is especially true when the impression-level revenue data is for an ad impression that was sold through standard CPM bidding rather than real-time bidding.
 
+<div id="what-are-the-report-data-sources" />
+
 <Accordion title="What are the report data sources?">
 
 Depending on the advertiser integration type, the report data can originate from either:
@@ -85,6 +95,8 @@ Depending on the advertiser integration type, the report data can originate from
 3. A combination of the two (Freshness to Accuracy). **Note:** The transfer of data from the advertiser to AppsFlyer is contingent upon advertiser permissions and whether the advertiser is a ROI360 advanced customer.
 
 </Accordion>
+
+<div id="what-data-processing-is-performed-on-the-report-data" />
 
 <Accordion title="What data processing is performed on the report data?">
 
@@ -97,17 +109,23 @@ AppsFlyer ROI360 Ad Revenue performs the following:
 
 </Accordion>
 
+<div id="how-is-the-report-data-delivered" />
+
 <Accordion title="How is the report data delivered?">
 
 Device-level data is written daily to the report in Data Locker
 
 </Accordion>
 
+<div id="what-is-the-report-data-freshness" />
+
 <Accordion title="What is the report data freshness?">
 
 Data is written daily to the h=23 folder of your Data Locker bucket at 21:00 [UTC time](/docs/about-data-freshness-and-timezone-support#daily-processing).
 
 </Accordion>
+
+<div id="what-are-the-report-fields" />
 
 <Accordion title="What are the report fields?">
 
@@ -127,6 +145,8 @@ Data is written daily to the h=23 folder of your Data Locker bucket at 21:00 [U
 
 </Accordion>
 
+<div id="download-the-report-data-sample" />
+
 <Accordion title="Download the report data sample">
 
 [Click to download the report](https://docs.google.com/spreadsheets/d/e/2PACX-1vSiPD52sbLAcl3mGbAFAiqsCZuSpUamrWP8n9BDyvI11DyNlckiKj-Peuo_fbSuIu-XnUxZqwAMEojT/pub?output=csv)
@@ -142,6 +162,8 @@ However, real-time freshness is less accurate compared to X+1:
 * Real-time IAA postbacks data is ±5% less accurate on average than the UA signals report X+1 data.
 * Real-time IAA postbacks data is ±7% less complete on average than the UA signals report X+1 data.
 
+<div id="what-are-the-iaa-postback-data-sources" />
+
 <Accordion title="What are the IAA postback data sources ?">
 
 The data for the IAA postback originates from Impression-level data that partners load onto client devices. This data is then shared with AppsFlyer through the ROI360 Ad Revenue SDK, which is installed on the device by the advertiser. The SDK API allows the app developer to report an impression event including certain parameters like the ILRD, the currency, the mediation platform, and the monetization source.
@@ -149,6 +171,8 @@ The data for the IAA postback originates from Impression-level data that partner
 Data transfer from the advertiser client devices to AppsFlyer is subject to advertiser permissions and whether an advertiser is a ROI360 advanced customer.
 
 </Accordion>
+
+<div id="what-processing-is-performed-on-the-iaa-postback-data" />
 
 <Accordion title="What processing is performed on the IAA postback data?">
 
@@ -160,6 +184,8 @@ AppsFlyer ROI360 performs the following steps for each impression-level data rec
 
 </Accordion>
 
+<div id="how-is-the-postback-data-delivered" />
+
 <Accordion title="How is the postback data delivered?">
 
 The event is sent to the partner through an existing postback configuration between the partner and AppsFlyer as an additional parameter.
@@ -169,6 +195,8 @@ The event is sent to the partner through an existing postback configuration betw
 ## In-app purchase (IAP) postbacks
 
 ROI360 in-app purchase postbacks deliver multiple layers of reporting accuracy by first validating each transaction, deduplicating it, and then deducting store commission and sales tax.
+
+<div id="what-are-the-iap-postback-data-sources" />
 
 <Accordion title="What are the IAP postback data sources?">
 
@@ -184,6 +212,8 @@ The data for the IAP postback originates from:
 
 </Accordion>
 
+<div id="what-data-processing-is-performed-on-the-iap-postback-data" />
+
 <Accordion title="What data processing is performed on the IAP postback data?">
 
 AppsFlyer ROI360 performs the following steps for each transaction-level data received:
@@ -197,11 +227,15 @@ AppsFlyer ROI360 performs the following steps for each transaction-level data re
 
 </Accordion>
 
+<div id="how-is-the-postback-delivered" />
+
 <Accordion title="How is the postback delivered?">
 
 The IAP event is sent to the partner through an existing postbacks integration between the partner and AppsFlyer.
 
 </Accordion>
+
+<div id="what-are-the-iap-events" />
 
 <Accordion title="What are the IAP events?">
 
@@ -221,3 +255,5 @@ ROI360 customers may share the following revenue-bearing event names:
 | af\_ars\_subscription\_xgraded | Recorded when a subscriber upgrades, downgrades, or cross-grades to a different product |
 
 </Accordion>
+
+<div data-zendesk-anchors="01H7T1DS6SNC7X8GX4DGXT4GC0=introduction 01H7T1DS6TYHE3A4XWBDNHCFCZ=what-revenue-types-are-reported-to-the-partners 01H7T1DS6T82RWQ4BBWNPQ6BT2=how-does-appsflyer-provide-revenue-signals-to-ua-partners 01H7T1DS6TDA8CX1ZF3GGE4EHB=set-up-roi360-for-partners 01H7T1DS6T0QFB6K6R78PMVVB2=how-to-subscribe-to-the-roi360-ua-signals-report 01H7T1DS6TBNJBBR6M98RTVMFF=how-to-receive-roi360-postbacks-from-appsflyer 01H7T1DS6T93844DMZY744ECQE=roi360-ua-signals-report-for-ua-networks 01H7T1DS6T4AF6GTETE6HZMYF7=what-are-the-report-data-sources 01H7T1DS6TDNTYDY4JF70F40SV=what-data-processing-is-performed-on-the-report-data 01H7T1DS6T94V4674AMNVCD4T6=how-is-the-report-data-delivered 01H7T1DS6T4F0QV5VE8XZVV1RY=what-is-the-report-data-freshness 01H7T1DS6TYER08FGK9GDKHFEG=what-are-the-report-fields 01H7T1DS6TH98NT4KGKPR7DRDM=download-the-report-data-sample inapp-ad-revenue-iaa-postbacks=in-app-ad-revenue-iaa-postbacks 01H7T1DS6T0CN30EC97VARN80D=in-app-ad-revenue-iaa-postbacks 01H7T1DS6TCA8338NAD9Q8CJWW=what-are-the-iaa-postback-data-sources 01H7T1DS6TQ2G43HSQMH8Y6Q4H=what-processing-is-performed-on-the-iaa-postback-data 01H7T1DS6TQZA3W9KE3783G9G1=how-is-the-postback-data-delivered inapp-purchase-iap-postbacks=in-app-purchase-iap-postbacks 01H7T1DS6TH8AV2ZTY3M8ZXPYA=in-app-purchase-iap-postbacks 01H7T1DS6TGF4XEMD4CRBD8QS2=what-are-the-iap-postback-data-sources 01H7T1DS6T9W85F40QQ2497RNW=what-data-processing-is-performed-on-the-iap-postback-data 01H7T1DS6VAPRMCGZ9YCPTA9EQ=how-is-the-postback-delivered 01H7T1DS6VKE2G6XR02VF4TWH4=what-are-the-iap-events" />

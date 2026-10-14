@@ -80,3 +80,5 @@ See this guide for details: [Transferring apps between accounts](/docs/transferr
 ## Delete your account or downgrade your subscription plan
 
 Reach out to your CSM or send an email to [hello@appsflyer.com](mailto:hello@appsFlyer.com).
+
+<div data-zendesk-anchors="h_01HNZ7TNZM4P5APM2B1WQ4X7S5=delete-user-history h_01HNZ7VPA16065PGCSZDMQZ3ZC=stop-attributing-installs-to-a-media-source delete-an-app=remove-or-delete-an-app h_01HNZ7XKEFRNEWGQZ58T7H0KDH=remove-or-delete-an-app removing-an-app=temporarily-removing-an-app h_01J52J31FDKSPNWSD5J2V5BYTW=temporarily-removing-an-app h_01HYJ5EPX4B1G1SAF6XGZ7ADWZ=note h_01HNZ7ZW7ZKDSD2TTEX55PYB91=transfer-apps-between-accounts h_01HNZ81GQ8Z6R8DV8Z6SAXYRB9=delete-your-account-or-downgrade-your-subscription-plan" />

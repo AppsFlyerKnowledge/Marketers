@@ -35,6 +35,8 @@ We recommend adding at least one trusted admin as an exception user during initi
 * SSO must be configured for the account.
 * To manage SSO and exception users, you must have **Login security** permission set to **Manage**.
 
+<div id="add-exception-users-during-sso-setup" />
+
 <Accordion title="Add exception users during SSO setup">
 
 **Recommended:** Add at least one trusted admin as an exception user before activating SSO. This helps prevent account lockout if the SSO configuration is incorrect.
@@ -55,6 +57,8 @@ If you don’t add exception users, everyone on the account must log in through 
 
 </Accordion>
 
+<div id="add-login-methods-for-multiple-users" />
+
 <Accordion title="Add login methods for multiple users">
 
 To add the same alternative login method for multiple users:
@@ -66,6 +70,8 @@ To add the same alternative login method for multiple users:
    * **Apply authenticator app for all selected users**
 
 </Accordion>
+
+<div id="edit-exception-users-after-sso-activation" />
 
 <Accordion title="Edit exception users after SSO activation">
 
@@ -85,6 +91,8 @@ Previously added exception users appear with their current alternative login met
 
 </Accordion>
 
+<div id="delete-exception-users" />
+
 <Accordion title="Delete exception users">
 
 To delete an exception user:
@@ -97,6 +105,8 @@ The user is deleted from the list immediately.
 
 </Accordion>
 
+<div id="alternative-login-methods" />
+
 <Accordion title="Alternative login methods">
 
 | **Login method** | **Description** |
@@ -105,6 +115,8 @@ The user is deleted from the list immediately.
 | Authenticator app | Lets the exception user log in using an authenticator app. SMS isn’t supported. |
 
 </Accordion>
+
+<div id="handle-partial-activation-failures" />
 
 <Accordion title="Handle partial activation failures">
 
@@ -118,6 +130,8 @@ When this happens:
 
 </Accordion>
 
+<div id="reset-passwords-for-sso-accounts" />
+
 <Accordion title="Reset passwords for SSO accounts">
 
 All users can start the forgot-password flow. However, only exception users assigned the **Username & password** alternative login method can log in with the new password.
@@ -126,6 +140,8 @@ Users who aren’t exception users must continue logging in through SSO.
 
 </Accordion>
 
+<div id="migrate-from-legacy-unforce-sso" />
+
 <Accordion title="Migrate from legacy Unforce SSO">
 
 For accounts migrated from legacy account-level Unforce SSO, existing users who logged in with username and password are added as exception users with **Username & password** as their alternative login method.
@@ -133,6 +149,8 @@ For accounts migrated from legacy account-level Unforce SSO, existing users who 
 New users created after migration must log in through SSO unless an admin explicitly adds them as exception users.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 <Accordion title="Traits and limitations">
 
@@ -146,3 +164,5 @@ New users created after migration must log in through SSO unless an admin explic
 | New users after migration | New users must log in through SSO unless an admin adds them as exception users. |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01KSM9MR6FEJH62VN5BPG7C8C8=about-exception-users h_01KSM9MR6GG6K3JVYEDKKSARH5=prerequisites h_01KSM9RZPTBKSBH788FNP1PMDH=add-exception-users-during-sso-setup h_01KSM9RZPT9WGSMX5K10BA9WSY=add-login-methods-for-multiple-users h_01KSM9RZPTXDTM7Y0RV2PVRAX7=edit-exception-users-after-sso-activation h_01KSM9RZPT1G9MJ4BQYTSKPZ0F=delete-exception-users h_01KSM9RZPT3CZR4QGMWAH534H5=alternative-login-methods h_01KSM9RZPTJ988PFQA68DVE73G=handle-partial-activation-failures h_01KSM9RZPVS8AVWAD7EPGCG6F9=reset-passwords-for-sso-accounts h_01KSM9RZPV36BQWH360QSP98SY=migrate-from-legacy-unforce-sso h_01KSMA3KYT6F2FSB2QGDPV4CAM=traits-and-limitations" />

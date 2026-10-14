@@ -57,6 +57,8 @@ In step 1, obtain the following credentials from App Store Connect and input the
 
 Setting the credentials involves steps performed in both App Store Connect and AppsFlyer. During setup, keep both the App Store Connect and AppsFlyer tabs open.
 
+<div id="11-create-the-app-store-connect-keys" />
+
 <Accordion title="1.1 Create the App Store Connect keys">
 
 To set iOS credentials,follow these step:
@@ -82,6 +84,8 @@ To set iOS credentials,follow these step:
 
 </Accordion>
 
+<div id="12-set-the-app-store-connect-key-in-appsflyer" />
+
 <Accordion title="1.2 Set the App Store Connect key in AppsFlyer">
 
 1. [Enable ROI360 Store revenue](/docs/about-roi360-store-revenue#activate-roi360-store-revenue).
@@ -104,6 +108,8 @@ In step 1, you can obtain the following credentials from App Store Connect and i
 
 * Setting up in-app purchase and subscription revenue measurement involves steps performed in the [Google Cloud Platform](https://cloud.google.com/), [Google Play Console](https://play.google.com/console/), and the [AppsFlyer UI](https://hq1.appsflyer.com/auth/login). We recommend keeping tabs on all three places open throughout the setup.
 * Setting up in the AppsFlyer UI requires admin permissions.
+
+<div id="11-link-your-google-play-developer-account-to-your-google-cloud-project" />
 
 <Accordion title="1.1. Link your Google Play Developer Account to your Google Cloud Project">
 
@@ -164,6 +170,8 @@ In step 1, you can obtain the following credentials from App Store Connect and i
 
 </Accordion>
 
+<div id="13-set-api-access-permissions-in-google-play-console" />
+
 <Accordion title="1.3. Set API access permissions in Google Play Console">
 
 **Prerequisites**: Access to Google Play Console.
@@ -193,6 +201,8 @@ In step 1, you can obtain the following credentials from App Store Connect and i
    [![](https://files.readme.io/7e643e577d3134dcf352eeeafc26cacbcb8dcee718892f2ca14132fa593c1015-42158608083729.png)](https://files.readme.io/7e643e577d3134dcf352eeeafc26cacbcb8dcee718892f2ca14132fa593c1015-42158608083729.png)
 
 </Accordion>
+
+<div id="14-upload-the-service-account-private-key-to-appsflyer" />
 
 <Accordion title="1.4. Upload the Service Account Private Key to AppsFlyer">
 
@@ -421,6 +431,8 @@ If you want to set AppsFlyer as a subscriber to your existing PUB/SUB topic, con
 
 </Accordion>
 
+<div id="23-send-a-test-notification-from-google-play-console" />
+
 <Accordion title="2.3 Send a test notification from Google Play Console">
 
 To verify that Google Play real-time developer notifications (RTDN) are correctly received by AppsFlyer, send a test notification from Google Play Console:
@@ -431,6 +443,8 @@ To verify that Google Play real-time developer notifications (RTDN) are correctl
 2. Under **Google Play Billing**, locate the Topic name section.
 3. In the left menu, navigate to **Monetise with Play** → **Monetisation setup**.
 4. Go to the Google Play Console.
+
+<div id="24-confirm-notification-delivery-in-appsflyer" />
 
 <Accordion title="2.4 Confirm notification delivery in AppsFlyer">
 
@@ -468,6 +482,8 @@ This message provides all the information your developers need to complete the i
 
 Test the in-app purchase and subscription revenue integration in a sandbox environment to confirm that the SDK connector is correctly integrated and that server notifications are properly configured and received by AppsFlyer.
 
+<div id="test-sdk-implementation" />
+
 <Accordion title="Test SDK implementation">
 
 To check whether AppsFlyer has received valid purchase and subscription event payloads from your app in the last 7 days, perform these steps:
@@ -482,6 +498,8 @@ To check whether AppsFlyer has received valid purchase and subscription event pa
 3. To fully validate the implementation, continue with the testing steps below.
 
 </Accordion>
+
+<div id="sandbox-events-and-parameters" />
 
 <Accordion title="Sandbox events and parameters">
 
@@ -512,6 +530,8 @@ Ensure that every sandbox purchase event includes:
 * `af_validation_type` **=** `receipt_validation`.
 
 </Accordion>
+
+<div id="test-inapp-purchase-and-subscription-revenue" />
 
 <Accordion title="Test in-app purchase and subscription revenue">
 
@@ -596,3 +616,5 @@ If you completed onboarding for Receipt Validation but want to activate the ROI3
 >
 > 1. Go to the **Integrate SDK Connector** step.
 > 2. Click **Test SDK integration**. You’ll see when the most recent SDK payload was received by AppsFlyer within the past 7 days, and whether it originated from either the **Purchase SDK Connector** or **Validate and Log**.
+
+<div data-zendesk-anchors="h_01KSAG4Y3BP0NWYNCX3AJG47JR=important h_01KD31QE0BCW0BX9BNNDK6DJRA=overview h_01KD31QE0BQAQ0CS1FJ46TV6K1=note h_01KD31QE0BE3ST0TV3KQ1M5AB0=step-1-ios-set-up-app-store-connect-keys h_01KD31QE0BBYES1C2Y1MB665EF=11-create-the-app-store-connect-keys h_01KD31QE0B4G0NGRYBTS2TRZQR=12-set-the-app-store-connect-key-in-appsflyer h_01KD31QE0BVQNJZ8PKKYKK9Q79=step-1-android-set-up-service-account-key-and-permissions h_01KD31QE0BP21EHP5RPBZ5PX2N=11-link-your-google-play-developer-account-to-your-google-cloud-project h_01KD31QE0B5G8SDGZQ8NE07QAE=12-configure-your-service-account-in-the-google-cloud-platform h_01KD31QE0CBMGHXJTXT4JPBV70=13-set-api-access-permissions-in-google-play-console h_01KD31QE0CH5M5X9M9G68N2PPZ=14-upload-the-service-account-private-key-to-appsflyer h_01KD31QE0CZAJ7SH2EECDJ11YN=step-2-ios-set-up-app-store-server-notifications option-1-recommended-appsflyer-as-the-primary-endpoint=option-1-recommended---appsflyer-as-the-primary-endpoint h_01KW7HDDAQEHGY33SQ2AHWVJAC=option-1-recommended---appsflyer-as-the-primary-endpoint option-2-your-endpoint-as-the-primary-endpoint=option-2---your-endpoint-as-the-primary-endpoint h_01KW7HDDAQK8Z279CEG7N33FKT=option-2---your-endpoint-as-the-primary-endpoint h_01_roi360_notification_types=note-1 h_01KD31QE0C9YFBM01GGE2PZDNR=21-copy-the-appsflyer-server-notifications-endpoint h_01KD31QE0C4MRYPMMQ31BRAYS7=22-send-notifications-directly-to-appsflyer 23-%5Boptional%5D-forward-notifications-from-your-endpoint-to-appsflyer=23--optional--forward-notifications-from-your-endpoint-to-appsflyer h_01KD31QE0CWXTKDND5F4Q34J7G=23--optional--forward-notifications-from-your-endpoint-to-appsflyer h_01KD31QE0C2QWHBJ8AWMEMP2SD=24-test-the-server-notifications-integration h_01KD31QE0CA26Y430AMK474NTC=note-2 h_01KD31QE0CKP0PTBQ4XCT9NDE1=step-2-android-set-up-google-play-server-notifications h_01KD31QE0C1RYXW6ADHMQJ3908=21-send-google-play-notifications-directly-to-appsflyer 22-%5Boptional%5D-forward-google-play-notifications-to-appsflyer=22--optional--forward-google-play-notifications-to-appsflyer h_01KD31QE0CFVEBJV3E93Z5RDAP=22--optional--forward-google-play-notifications-to-appsflyer h_01KD31QE0CTFNTY52F0C9D3RY2=23-send-a-test-notification-from-google-play-console h_01KD31QE0CV17JMVVB7ZPT1G8W=24-confirm-notification-delivery-in-appsflyer h_01KD31QE0CPK1EYVT0BSYTTZFM=step-3-implement-sdk-connector h_01KD31QE0C65DQ59ZKG8V886JW=note-3 h_01KD31QE0C9KGGFVQR6HYR5AYM=step-4-verify-sdk-implementation h_01KD31QE0C0VKWF5EBBR761C1J=test-sdk-implementation h_01KD31QE0C7RN657P9KPFV5725=note-4 h_01KD31QE0D0CR02260J5K8V8QX=sandbox-events-and-parameters h_01KD31QE0DNEBYXH4672363WYM=test-inapp-purchase-and-subscription-revenue h_01KD31QE0DQP78QG5HRSERR5S9=step-5-verify-and-update-settings h_01KD31QE0D3HX2DEH7FQ1JR4MS=step-6-release-the-app-versions-with-the-sdk-connector h_01KD31QE0DJNJ8T5XSZFCACMQF=switch-to-roi360-store-revenue-from-receipt-validation h_01KD31QE0DX0VDXKHDZTWTYHHX=note-5" />

@@ -70,3 +70,5 @@ x-zendesk:
    [![](https://files.readme.io/53bd68c390389e48eb55802418c601e7523ab7d816d21c1ae672ed55d7ade365-360016243798.jpg)](https://files.readme.io/53bd68c390389e48eb55802418c601e7523ab7d816d21c1ae672ed55d7ade365-360016243798.jpg)
 2. Go to the link for which you want the long URL, and in the **Actions** column, click **Get URL**.  
    The long URL displays.
+
+<div data-zendesk-anchors="onelink-long-urls=about-onelink-links 01JBXQENR6QHQ1HXQQQ5NBBMKN=about-onelink-links h_01JGXTFWS509NW0ESM1CZZ1KZM=advantages-of-a-short-onelink-url-compared-to-a-long-url h_01JBXQTQ3DXPTP9BY06QKXN3NP=procedures" />

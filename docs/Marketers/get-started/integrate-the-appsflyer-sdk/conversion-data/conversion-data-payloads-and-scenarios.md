@@ -76,6 +76,8 @@ See [raw-data fields dictionary](/docs/raw-data-field-dictionary#data-fields-dic
 
 ### Limitations
 
+<div id="custom-parameter-names" />
+
 <Accordion title="Custom parameter names">
 
 Custom parameters cannot be called `name` (lower case "n". `Name` is valid).
@@ -266,6 +268,8 @@ Examine the following JSON payloads.
 
 **Note!** Conversion data returns as a map-like data structure. The developer **does not** interact with raw JSON.
 
+<div id="applovin" />
+
 <Accordion title="Applovin">
 
 #### Attribution link:
@@ -320,6 +324,8 @@ https://app.appsflyer.com/com.company.app?af_ad=ad_name&af_ad_type=INTER
 * AppLovin supports ad cost-sharing but sends cost data to AppsFlyer in bulk. Cost-related fields return as 0.
 
 </Accordion>
+
+<div id="ironsource" />
 
 <Accordion title="ironSource">
 
@@ -405,6 +411,8 @@ Setting the campaign name such that it indicates retargeting **is not a foolproo
 
 Attribution to ad networks relies on attribution links. Whether regular attribution links or OneLink, with retargeting the attribution link always has the `is_retargeting=true` parameter set in it.
 
+<div id="retargeting-campaign-with-criteo" />
+
 <Accordion title="Retargeting campaign with Criteo">
 
 #### Attribution link
@@ -460,6 +468,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 Oftentimes, you want to deep link re-attributed users who, by definition of being re-attributed, don't have the app installed. For example, You set a campaign that aims to bring back users who uninstalled the app. The campaign promotes a product or service and you want to serve the users with content related to the product or service that you advertise.
 
 This is referred to as Deferred Deep Linking. Conversion data payload for Deferred Deep Linking comes from the `onConversionDataSuccess` method.
+
+<div id="deferred-deep-linking-with-srns" />
 
 <Accordion title="Deferred deep linking with SRNs">
 
@@ -542,6 +552,8 @@ You can use the data in getConversionData response, such as campaign, adset, etc
 The app is an eCommerce app that specializes in sportswear. A user who doesn't have the app installed engages with an ad and installs the app. Once the app launches, the SDK returns the conversion data. The developer makes the app open the **summer running shoe collection** (campaign) activity in the store and serves the **running shoes for women** category (adset).
 
 </Accordion>
+
+<div id="deferred-deep-linking-with-attribution-links" />
 
 <Accordion title="Deferred deep linking with attribution links">
 
@@ -668,11 +680,15 @@ A major part of Re-Engagement is to send the user to a specific activity. For ex
 
 To do so, you use Deep Linking. The conversion data in Deep Linking is really important. It holds the information necessary for the developer to customize the user experience and send them to the correct activity.
 
+<div id="reengagement-deep-linking-with-srns" />
+
 <Accordion title="Re-engagement: deep linking with SRNs">
 
 Conversion data is not available when a re-engaged user comes from an SRN. The developer needs to use the SRN methods to get it upon app launch.
 
 </Accordion>
+
+<div id="reengagement-deep-linking-with-ad-networks" />
 
 <Accordion title="Re-engagement: deep linking with ad networks">
 
@@ -729,3 +745,5 @@ Another reason to use the short version of OneLink is the conversion data struct
    In this case, the campaign name doesn't indicate re-attribution.
 2. Let's take the same example, only this time the user is outside the re-attribution window. In this case, the install is a new non-organic install.
 3. Let's look at another example. You set a retargeting campaign on Meta ads. Some users come across the campaign and install the app. However, these users install the app for the first time. Such users are not considered re-attributed users. Instead, AppsFlyer considers them as users that come from a user acquisition campaign.
+
+<div data-zendesk-anchors="h_01HCY86CKDJK9TNHPAZB0QX2ZX=overview nonorganic-conversion-data-payload-fields=non-organic-conversion-data-payload-fields h_01HCY86CKDEMB3428YHCNJQA5R=non-organic-conversion-data-payload-fields h_01HCY86CKDBQRGAY7GHNBJE4WK=fields-always-available h_01HCY86CKDYQMYB9BQ4MXWP8A5=fields-available-in-some-cases h_01HCY86CKD47M85AZVEA5C4JH7=additional-fields h_01HCY86CKEFX646H9BSKSFGZ36=limitations h_01HCY86CKEZ2483XB461M2C9EC=custom-parameter-names h_01EGKTQN6XDYHA60P2WKHBBVFT=ua-conversion-data-with-srns a-note-about-facebook=a-note-about-meta-ads h_01HCY86CKENFEGX53G9G4SGPSK=a-note-about-meta-ads facebook-conversion-data=meta-ads-conversion-data h_01HCY86CKE658H36F3VJQMATQK=meta-ads-conversion-data h_01HCY86CKF6FY96PAWB5Y7YXSQ=google-ads-conversion-data h_01HCY86CKFMNNNJZTPGK4870YN=apple-search-ads-conversion-data h_01HCY86CKF26JRT64JR9JZEAKJ=snapchat-conversion-data twitter-conversion-data=x-ads-conversion-data h_01HCY86CKFM94SQWYARCM0GEJ9=x-ads-conversion-data tiktok-conversion-data=tiktok-for-business-conversion-data h_01HSQRQSK8W9K6871K0EWHDF76=tiktok-for-business-conversion-data h_01HCY86CKFS5SJBECSY42VRJWP=oath-ad-platforms-conversion-data h_01HCY86CKFB0GEJRTYSXN9YZ08=ua-conversion-with-other-ad-networks h_01HCY86CKFY787RD4BHQDVEVFV=applovin h_01HCY86CKFXM5XXJZSPXPB6397=attribution-link h_01HCY86CKFDDXWT2KKFTKKBGHM=payload h_01HCY86CKFV55GYY7C51D7F72S=ironsource attribution-link::a45a1b4a=attribution-link-1 h_01HCY86CKFYGEYR2TRPSD87KDA=attribution-link-1 payload::81867f5c=payload-1 h_01HCY86CKFKKFQDG1P42R1FSDJ=payload-1 h_01EHQ74JS84509GT6M93SZA4HX=retargeting-conversion-data reattribution-with-srns=re-attribution-with-srns h_01HCY86CKFAVWP1W0ZNEN5P30A=re-attribution-with-srns reattribution-with-regular-ad-networks=re-attribution-with-regular-ad-networks h_01HCY86CKF1PV8MRR902RAHQGW=re-attribution-with-regular-ad-networks h_01HCY86CKF1RGK01VTV3EEHQVM=retargeting-campaign-with-criteo attribution-link::c16e96bb=attribution-link-2 h_01HCY86CKFSKBBMFKA8NN8XTPC=attribution-link-2 h_01HCY86CKG2YQQC629SC3RAFKE=conversion-data-payload reattribution-with-deferred-deep-linking=re-attribution-with-deferred-deep-linking h_01HCY86CKGXV50H79R0YH1GB2C=re-attribution-with-deferred-deep-linking h_01HCY86CKG12YRGFEEJ27DQART=deferred-deep-linking-with-srns conversion-data-for-deferred-deep-linking-with-facebook=conversion-data-for-deferred-deep-linking-with-meta-ads h_01HCY86CKGX9VHSV3ASKXMFM0X=conversion-data-for-deferred-deep-linking-with-meta-ads h_01HCY86CKG3XWM4X0YH7WYCEH4=deferred-deep-linking-with-attribution-links h_01HCY86CKGDM2NE1FCRC92K8R0=uri-schemes h_01HCY86CKGY1NE4214DES0Y2AV=ios-universal-links-and-android-app-links reengagement-with-srns=re-engagement-with-srns h_01HCY86CKG4TRYR6TWYYVB0FJE=re-engagement-with-srns reengagement-with-regular-ad-networks=re-engagement-with-regular-ad-networks h_01HCY86CKGM2JS7C9T71R6GPH1=re-engagement-with-regular-ad-networks reengagement-with-deep-linking=re-engagement-with-deep-linking h_01HCY86CKG0NPQAA2ZRWWNKGQD=re-engagement-with-deep-linking h_01HCY86CKGEBHQVFRGJH96KDFJ=reengagement-deep-linking-with-srns h_01HCY86CKGJ9HG7AGB5MFP33RK=reengagement-deep-linking-with-ad-networks h_01HCY86CKG3N6ZXV70G4VMZ0X5=alternative-conversion-data-sources examples-of-mixed-user-acquisition-and-reattribution=examples-of-mixed-user-acquisition-and-re-attribution h_01HCY86CKGK9DVVB7T6CVNB8ZN=examples-of-mixed-user-acquisition-and-re-attribution" />

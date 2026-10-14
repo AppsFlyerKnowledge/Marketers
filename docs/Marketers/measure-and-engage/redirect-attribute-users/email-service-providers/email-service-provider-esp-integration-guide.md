@@ -81,3 +81,5 @@ Here's a list of other ESPs that, while not supported by the AppsFlyer ESP integ
 | Iterable | No. Uses their own redirection method. Learn how to [integrate with Iterable.](/docs/iterable-integration-with-appsflyer) |
 | Oracle | No. Uses their own redirection method. Learn how to [integrate with Oracle.](/docs/oracle-responsys-integration-with-appsflyer) |
 | Salesforce | No. Uses their own redirection method. Learn how to [integrate with Salesforce](/docs/salesforce-marketing-cloud-sfmc-integration-with-appsflyer). |
+
+<div data-zendesk-anchors="overview=about-esp-integration h_01J3JHJCCASM6E5QYJB5VHQ8HK=about-esp-integration supported-email-service-providers=supported-esps h_01H92VH355BQ13SP72VNJEKW1E=supported-esps h_01K06J2Z9QRW4VPVBP6QT81W8Y=other-esps" />

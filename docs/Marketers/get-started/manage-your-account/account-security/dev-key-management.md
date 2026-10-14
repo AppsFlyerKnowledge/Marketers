@@ -77,9 +77,16 @@ After you generate or assign a new Dev Key, it is important to:
 
       1. The new Dev Key will be created in a *Pending* state
       2. Your current Dev Key will remain active until activation
-      3. **Activation is required** after the updated app version is live<br /><br />**Note**<br />#### Important!
+      3. **Activation is required** after the updated app version is live
+
+         <br /><br />**Note**<br />
+
+
+      #### Important!
 
       Regardless of which option you choose, the Dev Key change only takes effect after you manually activate the Dev Key.
+
+
 5. Click Next.
 6. Copy and send the Dev key to your developer to they can implement your changes in your SDK and upload the new version of your app to the store.
 7. The Dev Key will go into a pending state.
@@ -98,3 +105,5 @@ After you generate or assign a new Dev Key, it is important to:
 2. Click the **Account** tab.
 3. Under **Security**, turn on Create unique Dev key per app (for future reference).
 4. Note: When enabling unique Dev keys for future apps, existing apps are not affected.
+
+<div data-zendesk-anchors="h_01K04ARS7NRB6H9JVPAZNXE36H=what-is-a-dev-key h_01K0BS18HAZ2QK2ADHEZAH5QNF=where-to-find-your-dev-keys h_01K04ASZEQHRAE4AVS88NMTTC4=dev-key-management h_01K09HM57MXQY4R3MCVB4KCV1G=why-you-might-need-to-change-your-dev-key h_01K04AXYR6J4ETE8GF6K7B8NSY=how-to-set-up-and-change-a-dev-key h_01KGY7X3KFAZM49FG8WE5R8VHB=important h_01KGY84Z53QW9QVNX4DJ2SR1QC=important-1 h_01KGY12P0CJZR6FV9WEE6MNW0A=note how-to-set-a-unique-dev-key-for-future-apps=how-to-set-a-unique-dev-key-for-future-apps-coming-soon---q2-2026 h_01K04AY1SF0FMHS4QJJDK6VZAK=how-to-set-a-unique-dev-key-for-future-apps-coming-soon---q2-2026" />

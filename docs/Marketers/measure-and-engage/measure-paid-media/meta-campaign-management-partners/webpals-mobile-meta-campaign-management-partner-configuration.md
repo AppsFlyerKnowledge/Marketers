@@ -48,3 +48,5 @@ x-zendesk:
 ## Configuring on Webpals mobile
 
 When you configure your campaigns on Webpals mobile the campaign name must begin with "**webpalsmobile\_**".
+
+<div data-zendesk-anchors="h_01HDP72QCJ0JD9H1QY9KEXG2MC=setting-up-webpals-mobile inapp-events=in-app-events h_01HDP72QCJ8VDXYK19XKAC4AZ4=in-app-events configuring-on-adquant=configuring-on-webpals-mobile h_01HDP72QCJ4GBNC4V5T9B2W3TJ=configuring-on-webpals-mobile" />

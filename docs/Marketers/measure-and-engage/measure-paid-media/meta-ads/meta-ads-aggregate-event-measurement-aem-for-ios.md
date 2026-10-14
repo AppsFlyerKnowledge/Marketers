@@ -61,6 +61,8 @@ The following attribution data parameters, as shared by Meta Ads, are included i
 
 ### FAQs on deep link re-engagement attribution
 
+<div id="what-must-the-advertiser-do-to-enable-this-attribution" />
+
 <Accordion title="What must the advertiser do to enable this attribution?">
 
 **No action is needed** from the advertiser to receive these parameters for attribution.
@@ -71,11 +73,15 @@ However, for the deep link re-engagement attribution to be measured, the **Re-en
 
 </Accordion>
 
+<div id="what-about-agencies-and-meta-campaign-management-partners" />
+
 <Accordion title="What about agencies and Meta campaign management partners?">
 
 At this stage, attribution for agencies and Meta campaign management partners is not supported. This means all traffic is attributed to Meta Ads. This is temporary and will change soon.
 
 </Accordion>
+
+<div id="are-there-any-restrictions-on-data-from-this-attribution" />
 
 <Accordion title="Are there any restrictions on data from this attribution?">
 
@@ -127,6 +133,8 @@ Use the table below as a quick checklist to enable Meta Ads AEM in AppsFlyer.
 
 ## Troubleshooting
 
+<div id="troubleshooting-ineligible-events-in-meta-aem" />
+
 <Accordion title="Troubleshooting ineligible events in Meta AEM">
 
 If Meta Ads flags your app events as ineligible—showing errors like **“Missing opt-out events”** or other AEM-related messages—it’s typically due to missing or misconfigured data. Use the checklist below to diagnose and fix common issues.
@@ -135,12 +143,16 @@ If Meta Ads flags your app events as ineligible—showing errors like **“Missi
 >
 > After you complete the steps below, allow time for changes to take effect. After changes are applied, Meta Ads may take up to **2–3 days** to reflect AEM eligibility.
 
+<div id="step-1-advanced-data-sharing-is-enabled" />
+
 <Accordion title="Step 1: Advanced Data Sharing is enabled">
 
 1. Go to **Collaborate** > **Active Integrations** > **Meta Ads**.
 2. Make sure that **Advanced Data Sharing** is turned on.
 
 </Accordion>
+
+<div id="step-2-ip-masking-is-disabled" />
 
 <Accordion title="Step 2: IP masking is disabled">
 
@@ -151,6 +163,8 @@ Events with masked IPs aren’t eligible for AEM.
 
 </Accordion>
 
+<div id="step-3-servertoserver-s2s-events-include-required-parameters" />
+
 <Accordion title="Step 3: Server-to-Server (S2S) events include required parameters">
 
 Every S2S event must include:
@@ -160,17 +174,23 @@ Every S2S event must include:
 
 </Accordion>
 
+<div id="step-4-review-att-consent-rate" />
+
 <Accordion title="Step 4: Review ATT consent rate">
 
 Meta accepts a limited volume of events with missing or zeroed-out IDFAs. If your app exceeds this threshold, you may see this error: **Advertiser Tracking Enabled parameter volume out of range.**
 
 </Accordion>
 
+<div id="step-5-postback-mapping-configuration" />
+
 <Accordion title="Step 5: Postback mapping configuration">
 
 Ensure event postbacks are mapped to **Send all (including organic)**.
 
 </Accordion>
+
+<div id="step-6-check-reengagement-settings-if-relevant" />
 
 <Accordion title="Step 6: Check re-engagement settings (if relevant)">
 
@@ -197,14 +217,20 @@ If the issue persists:
 
 </Accordion>
 
+<div id="i-dont-receive-aem-data-in-dashboards-and-reports-although-my-campaigns-are-aemeligible" />
+
 <Accordion title="I don't receive AEM data in dashboards and reports, although my campaigns are AEM-eligible">
 
 Here is Meta's reply: "We are rolling out this update in collaboration with your MMP over the next several months and some advertisers may not have access until rollout is complete."
 
 </Accordion>
 
+<div id="why-can-t-i-see-aemattributed-installs-in-raw-reports-even-after-signing-the-amm-agreement" />
+
 <Accordion title="Why can't I see AEM-attributed installs in raw reports even after signing the AMM agreement?">
 
 When AAP is enabled, installs attributed via Meta's Aggregate Event Measurement (AEM) are excluded from raw data reports. This applies even if the AMM agreement is signed.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HCAM4CEVRCG13CA32B0GM9QS=overview app-aem-for-reengagement=app-aem-for-re-engagement 01H88ZM20H99W37M0H6XXQVMQA=app-aem-for-re-engagement 01H7YJVNMV7QSZJWKZZA9042K6=attribution-flow 01H7YJVNMVPPCD08Z2R0V5GCMY=attribution-data-parameters h_attribution_deeplink_note=note faqs-on-deep-link-reengagement-attribution=faqs-on-deep-link-re-engagement-attribution 01H7YJVNMV4ZKMWKD06RC6GKFW=faqs-on-deep-link-re-engagement-attribution 01H7YJVNMVSGMNJ3K84MCENXYG=what-must-the-advertiser-do-to-enable-this-attribution 01H7YJVNMVP7ZRCKXDRRH7GZBY=what-about-agencies-and-meta-campaign-management-partners are-there-any-restrictions-on-data-from-this%20attribution=are-there-any-restrictions-on-data-from-this-attribution 01H7YJVNMVQF0B0DV2NQYQVYHK=are-there-any-restrictions-on-data-from-this-attribution 01H88ZM20HQFMG962AZGYA98FR=app-aem-for-app-promotion 01H7YJVNMVPB054VFS60KH9N7W=aem-eligibility h_01HR886Q0KPM99FCQXD6RDPSBK=note-1 01H88ZM20HK2HY32M4BKZ4N0B9=aem-data-sharing 01H7YK9CHHNARCD7M2VZRMEW6S=note-2 check-eligibility=check-if-your-app-events-are-eligible-for-aem 01JBHQSHF8NA4SGVJ3WYPRN9B3=check-if-your-app-events-are-eligible-for-aem enable-aem-toggles-summary=how-to-enable-aem---summary h_01KJ28ETP9GK6TBTJK8SBZ5PFW=how-to-enable-aem---summary faqs-and-troubleshooting=troubleshooting 01H7YK9CHHZN78CBHFTQ7E9RKQ=troubleshooting h_01K720W9MYXFTYG18368SKHGGC=troubleshooting-ineligible-events-in-meta-aem h_01K720W9MYDKK5Q2J1M8VT9JFP=important h_01K722GQSB92J5KFFYQNP5WR29=step-1-advanced-data-sharing-is-enabled h_01K722GQSBV3GY2ZNN29ENG7Q2=step-2-ip-masking-is-disabled h_01K722GQSBVTSC09EPPCZQ6WN3=step-3-servertoserver-s2s-events-include-required-parameters h_01K722GQSBSX06A56ZX8RJ6YKT=step-4-review-att-consent-rate h_01K722GQSB26TN65JVJD6R7BAV=step-5-postback-mapping-configuration h_01K722GQSBTD4J9TZHBRGYS1XV=step-6-check-reengagement-settings-if-relevant h_01K722GQSB8CXSSCVZPA3R3CJX=still-not-working h_01K722GQSBBB8KS8JNRBJZ4WWT=need-help 01JCX7SKJ76KGW9SN7RCFA18E6=i-dont-receive-aem-data-in-dashboards-and-reports-although-my-campaigns-are-aemeligible why-can%27t-i-see-aemattributed-installs-in-raw-reports-even-after-signing-the-amm-agreement=why-can-t-i-see-aemattributed-installs-in-raw-reports-even-after-signing-the-amm-agreement h_01K4ADBT26D2KD5MH568542XSV=why-can-t-i-see-aemattributed-installs-in-raw-reports-even-after-signing-the-amm-agreement" />

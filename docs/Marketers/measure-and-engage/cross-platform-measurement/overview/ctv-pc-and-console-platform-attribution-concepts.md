@@ -20,7 +20,7 @@ x-zendesk:
   promoted: false
   comments_disabled: true
   created_at: '2021-07-15T11:30:45Z'
-  edited_at: '2026-10-05T06:53:54Z'
+  edited_at: '2026-10-14T12:13:28Z'
 ---
 ![Diagram of AppsFlyer's cross-platform attribution solution for CTV, PC, and console](https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png)
 
@@ -173,3 +173,5 @@ Data is available as follows:
 | Data freshness | In My Dashboards, the Installs, re-engagements, and re-attributions metrics for CTV, PC, and console platforms are served from our AI-ready data pipeline (migrated between July 21 and August 10, 2026). This means these metrics for these platforms now show up with a delay instead of continuously. See [My Dashboards traits and limitations](/docs/my-dashboards#traits-and-limitations) for details. |
 
 </Accordion>
+
+<div data-zendesk-anchors="about-ctv-attribution=the-appsflyer-cross-platform-solution 01H7ZRK7PCNZG54ZQ0804HMR38=the-appsflyer-cross-platform-solution list-of-supported-ctv-and-gaming-device-types=supported-platforms 01H7ZRK7PCP1KWRX1A5K81F4KR=supported-platforms list-of-specified-platforms=integrate-with-ad-networks-that-support-specified-ctv-pc-and-console-platforms h_01JMA8F9F6M2MZFNRXFQWJF8B8=integrate-with-ad-networks-that-support-specified-ctv-pc-and-console-platforms crossplatform-attribution=cross-platform-attribution-flows 01H8EHHJNBA8NKMX2C8RSV7P31=cross-platform-attribution-flows h_01H9G52NKMQG9QD9S3N537BM7N=data-availability h_01M2MN6SN9SW7RGGK5R1MFW91B=note" />

@@ -41,6 +41,8 @@ If you haven't configured Creative Optimization yet, you can find instructions o
 
 ## Procedures—Using the Discovery AI dashboard
 
+<div id="set-up-the-dashboard" />
+
 <Accordion title="Set up the dashboard">
 
 **To set up the Discovery AI dashboard to view data about specific creatives**:
@@ -61,6 +63,8 @@ If you haven't configured Creative Optimization yet, you can find instructions o
 7. Click on a specific card to drill down deeper and get additional performance data and insights.
 
 </Accordion>
+
+<div id="set-discovery-card-metrics" />
 
 <Accordion title="Set discovery card metrics">
 
@@ -241,6 +245,8 @@ There are preset quick queries that you can use for searching creatives, scenes,
 
 Explore performance data for creatives and the scenes, elements, and texts that make up those creatives.
 
+<div id="creatives" />
+
 <Accordion title="Creatives">
 
 See a gallery of all your creatives, along with their performance data. The tiles displayed are based on the main Creative filter selections. Additionally, metrics the tiles display and the sorting method used to display tiles can be customized. See settings and sorting.
@@ -258,6 +264,8 @@ See a gallery of all your creatives, along with their performance data. The tile
 | 7 | Fullscreen | Plays video in fullscreen. |
 
 </Accordion>
+
+<div id="scenes" />
 
 <Accordion title="Scenes">
 
@@ -278,6 +286,8 @@ Powered by AI, video creatives are automatically broken down into scenes and dis
 
 </Accordion>
 
+<div id="elements" />
+
 <Accordion title="Elements">
 
 Our fully automated AI algorithms further break down video creatives into significant elements (basic visual components) which are identified and displayed to enable the most granular analysis. The performance data is taken from the creative it comes from. If the same element appears in more than one creative, the data is an aggregate of all the creatives it appears in. The data is available in the dashboard about 24 hours after [partner integration](/docs/creative-optimization-partner-integrations). This feature **is available with Creative Optimization Advanced and Premium subscription plans only.**
@@ -295,6 +305,8 @@ Our fully automated AI algorithms further break down video creatives into signif
 | 5 | Fullscreen | Plays video in fullscreen. |
 
 </Accordion>
+
+<div id="texts" />
 
 <Accordion title="Texts">
 
@@ -316,6 +328,8 @@ Our fully automated AI algorithms break down video creatives into significant te
 </Accordion>
 
 </Accordion>
+
+<div id="discovery-card-drilldown" />
 
 <Accordion title="Discovery card drilldown">
 
@@ -341,6 +355,8 @@ For creatives and elements, you can open the **Similarities** tab by clicking **
 
 ## Additional information
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -348,3 +364,5 @@ For creatives and elements, you can open the **Similarities** tab by clicking **
 | Language | In search and discovery cards, the below languages are supported:<ul><li>English (en)</li><li>Spanish (es)</li><li>French (fr)</li><li>German (de)</li><li>Italian (it)</li><li>Portuguese (pt)</li><li>Dutch (nl)</li><li>Turkish (tr)</li><li>Romanian (ro)</li><li>Swedish (sv)</li><li>Korean (ko)</li><li>Japanese (ja)</li><li>Chinese (zh)</li><li>Norwegian (no)</li><li>Danish (da)</li><li>Icelandic (is)</li><li>Finnish (fi)</li><li>Polish (pl)</li><li>Czech (cs)</li><li>Slovak (sk)</li><li>Hungarian (hu)</li><li>Indonesian (id)</li></ul> |
 
 </Accordion>
+
+<div data-zendesk-anchors="about-the-creative-discovery-dashboard=about-the-creative-optimization-discovery-ai-dashboard h_01HAP6Q6MMXQS6PNQDBZKWJ0WJ=about-the-creative-optimization-discovery-ai-dashboard h_01HASFAZQCAV1JM280ZZDHTGGB=get-started procedures%E2%80%94using-the-discovery-ai-dashboard=proceduresusing-the-discovery-ai-dashboard h_01JCFXW94MJKSN660VWCTV35FN=proceduresusing-the-discovery-ai-dashboard 01JCFY06PREVEB6FCMV29AFZ8G=set-up-the-dashboard 01JCFY06PSDM83T2N8JGH2QEF5=set-discovery-card-metrics filtering-quick-queries-and-sorting=concepts h_01HASFAZQCKSBCX4X14ASFJEA3=concepts 01JCG0C47TJYWWYB958J60J5BK=discovery-ai-search h_01KK6NC3DW69CHV9C47PDZC13V=what-you-can-search-for h_01KK6NZ59ZQF7RCHWMXRX1KERH=visual h_01KK6NZTA0ZV5MYHWTQ9KWZ0FQ=text h_01KK6P0HZ0DZCPVR29MSB955A5=audio h_01KK6P0X2H2HCV23X0JR6GJ2AV=narrative-and-high-level-concepts h_01KK6NC3DWTV3EVBNRZSXG8Y9Y=combining-properties h_01KK6PP282MX5M9J9J5ZPYZ682=notes %5Bcoming-soon%5D-smart-tags=coming-soon--smart-tags 01JCG0C47TY74EEQE8Y46YP744=coming-soon--smart-tags h_01JJHENCAJMV5YSF3NX3GT9BFY=quick-queries 01JCG8BQCQVHVB8Q2VPPX1TCGP=discovery-tabs 01H7SZ8RA3SPR8VNMZSAS6Y8W2=creatives 01H7SZ8RA3QWYYATG40PWBRA8Z=scenes 01H7SZ8RA3AXNVCQ954G6HY1Z5=elements h_01J308YG5297XZKY0N72KWH2N9=texts 01JCG8MA4N5BFTC18PM2QFSAQZ=discovery-card-drilldown h_01J1VPMV85CT5ZJNN3BW4FCW0D=additional-information h_01HA282W8WHHNDG75XZNSV2QQF=traits-and-limitations" />

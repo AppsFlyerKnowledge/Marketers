@@ -25,6 +25,8 @@ x-zendesk:
 ---
 The first stage in configuring the AppsFlyer SSO process is done on the JumpCloud platform. Follow the steps below:
 
+<div id="create-the-appsflyer-app-in-jumpcloud" />
+
 <Accordion title="Create the AppsFlyer app in JumpCloud">
 
 **Prerequisite:** A JumpCloud account with administrative privileges.
@@ -44,6 +46,8 @@ The first stage in configuring the AppsFlyer SSO process is done on the JumpClou
 
 </Accordion>
 
+<div id="create-jumpcloud-users" />
+
 <Accordion title="Create JumpCloud users">
 
 1. Go to [Users](https://console.jumpcloud.com/#/users) from the JumpCloud admin menu, and click the **+** icon.
@@ -54,6 +58,8 @@ The first stage in configuring the AppsFlyer SSO process is done on the JumpClou
 5. To continue adding users, click **Save And Create Another**, then repeat step 3. When done adding all users, click **Save**.
 
 </Accordion>
+
+<div id="create-jumpcloud-groups" />
 
 <Accordion title="Create JumpCloud groups and assign them to the AppsFlyer app">
 
@@ -67,6 +73,8 @@ Create a group and assign users to it:
 
 </Accordion>
 
+<div id="get-idp-sso-metadata" />
+
 <Accordion title="Get IdP SSO metadata">
 
 1. From the JumpCloud admin menu, go to **SSO**.
@@ -74,8 +82,12 @@ Create a group and assign users to it:
 
 </Accordion>
 
+<div id="complete-the-process-in-appsflyer" />
+
 <Accordion title="Complete the process in AppsFlyer">
 
 Now that you've configured the IdP part, go back to AppsFlyer to [complete the configuration](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer). You can then [test](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-process) to see that it works.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HF99ZFBKPYCP8228VKWPCRHX=create-the-appsflyer-app-in-jumpcloud h_01HF99ZFBKXD6HQE44FDQVQZWK=create-jumpcloud-users h_01HF99ZFBK0T9JQVFNTX705V9M=create-jumpcloud-groups h_01HF99ZFBKDFKTFXEE8Q0MH6SY=get-idp-sso-metadata h_01HF99ZFBK40ZTFKKJNXP4N294=complete-the-process-in-appsflyer" />

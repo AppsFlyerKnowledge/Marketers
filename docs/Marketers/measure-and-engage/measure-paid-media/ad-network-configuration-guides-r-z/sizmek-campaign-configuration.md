@@ -45,6 +45,8 @@ For a detailed description of the Partner Configuration Window Header, click [he
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -97,6 +99,8 @@ In this section you can map your AppsFlyer events with Sizmek via postbacks.
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -106,17 +110,23 @@ Generate and save attribution links and send them to the partner for attributing
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data integration is not supported for Sizmek
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue integration is not supported for Sizmek
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -135,3 +145,5 @@ In this tab, you can select the permissions to grant Sizmek, whether the partner
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJS0B22MZSA0TXJZ48E27N8S=setting-up-sizmek h_01HJS0B22MABYZKHHD7BJ4BYWB=tip h_01HJS0B22MGEW9A5CCXHKGA7PH=integration-tab h_01HJS0B22MXNRKJ37DRZSJZ6YX=activate-partner h_01HJS0B22MT5NK2BKTFM5K34CH=note h_01HJS0B22M1J0A024DKMXY8C9V=general-settings h_01HJS0B22MM8RZN0T912VPPN6H=default-postbacks inapp-events-settings=in-app-events-settings h_01HJS0B22MT7674SP6TNMR7JVG=in-app-events-settings h_01HJS0B22NJYBS7HV6AT5G400Z=note-1 h_01HJS0B22NAZ40BHR338ZA4H7K=attribution-link-tab h_01HJS0B22NACQQ85MFFDGPMZ9N=cost-tab h_01HJS0B22NGAZBEXRQXF7J49R6=ad-revenue-tab h_01HJS0B22NMCXSPHJJX07CEHMK=permissions-tab h_01HJS0B22NBV1RM3GES734RWGB=ad-network-permissions" />

@@ -34,11 +34,15 @@ Web SDK sends web events to PBA, which are made available via PBA dashboards and
 
 #### Web SDK integration test page
 
+<div id="page-main-view" />
+
 <table><tbody><tr><td><p><strong>Page main view</strong></p><p><a href="https://files.readme.io/345bb7bfffcb7756c0a61d05daadd8a355df5a7b7a07adaeeef203a64adc79bf-360011199758.jpg"><img alt="TestScreen_us-en.jpg" src="https://files.readme.io/345bb7bfffcb7756c0a61d05daadd8a355df5a7b7a07adaeeef203a64adc79bf-360011199758.jpg"/></a></p><ul><li>The most recent events appear first.</li><li><strong>Event cache</strong>:<ul><li>Contains up to 100 events</li><li>Older events are deleted to make way for newer events</li><li>Cached events are deleted after 24 hours</li></ul></li><li><strong>Page controls</strong>:<ul><li><strong>Refresh rate indicator</strong>: The page refreshes automatically every 5 seconds.</li><li><strong>Clear all</strong>: Clears events from the cache permanently. <strong>Note!</strong> The cache is common to websites sharing the same web dev key. Thus, if another developer is using the test page, it will clear for them as well. </li><li><strong>Pause/start</strong>: Pauses automatic refresh. New events don't display until you click start. </li></ul></li></ul><p><strong>Event table columns</strong></p><table><thead><tr><th>Field</th><th>Description</th></tr></thead><tbody><tr><td>Time (UTC)</td><td>Event time</td></tr><tr><td>Event type</td><td><p>Event types are as follows:</p><ul><li>Events sent by you:<ul><li><code>EVENT</code></li><li><code>setCustomerUserId</code></li><li><code>pageLoad</code>: Sent by the web SDK each time a page is loaded/refreshed on your website</li></ul></li></ul></td></tr><tr><td>Event content</td><td><p>The event payload, as recorded by PBA.</p></td></tr><tr><td>Comments</td><td><ul><li><strong><span>Valid</span></strong>: PBA received and recorded the event. No further action is required.</li><li><strong>Invalid</strong>: List of errors requiring corrective action. The error message format is:<br/>event field name: error description </li><li>Hover over error messages to see details:<br/><p><img alt="PBAWebSDKTestingErrorMessagesPopup_en-us.png" src="https://files.readme.io/0e050e60dbf9f1289880b5d58c4885d4be66392265986eaf4b2f76876697e429-360011317358.png"/></p></li></ul></td></tr></tbody></table></td></tr><tr><td><p><strong>Drill-down view<br/><br/></strong><a href="https://files.readme.io/893f2654c8a3d4f9e8bce43728c65723d9fe1583825b2ae8c2276afc33612511-360011199738.png"><img alt="mceclip0.png" src="https://files.readme.io/893f2654c8a3d4f9e8bce43728c65723d9fe1583825b2ae8c2276afc33612511-360011199738.png"/></a></p><p>Click an event row to display its contents after processing. See <a href="./pba-web-sdk-integration-guide#web-sdk-event-parameters">Web SDK event parameters</a> for additional information</p></td></tr></tbody></table>
 
 ## Procedures
 
 Complete the procedures that follow.
+
+<div id="enable-test-mode" />
 
 <Accordion title="Enable test mode">
 
@@ -93,6 +97,8 @@ If test mode is enabled on a given browser, irrespective of the tab; the browser
 
 </Accordion>
 
+<div id="send-test-events" />
+
 <Accordion title="Send test events">
 
 * In test mode, events that you send are displayed in the test integration page
@@ -110,6 +116,8 @@ Send example events of each of the types described.
 
 ## Troubleshooting
 
+<div id="events-do-not-display-in-the-test-page" />
+
 <Accordion title="Events do not display on the test page">
 
 1. In the browser developer tools, go to **Network** tab.
@@ -119,3 +127,5 @@ Send example events of each of the types described.
    * 400: Check that all parameters are enclosed in " ".
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW32BE04AKHFMY853211C1A=test-pba-web-events h_01HKW32BE0Z2ZKTBHSCSWVT04N=web-sdk-integration-test-page h_01HKW32BE0VA0X9ZX4Z26EY6CZ=procedures h_01HKW32BE08Z9CCMBPK4Z0854C=enable-test-mode h_01HKW32BE0E4A1W221FKY97EZB=send-test-events h_01HKW32BE1HFV0NM64QMASBCCT=troubleshooting h_01HKW32BE1QHV0W6ZDYHG94RQA=events-do-not-display-in-the-test-page" />

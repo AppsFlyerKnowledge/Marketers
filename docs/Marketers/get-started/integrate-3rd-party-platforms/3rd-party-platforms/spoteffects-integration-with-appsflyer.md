@@ -44,6 +44,8 @@ The Spoteffects configuration window uses only the ***Integration*** tab.
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -92,11 +94,15 @@ Once you have saved the configuration, AppsFlyer sends the following data to Spo
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution Links are not available for Spoteffects.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -104,14 +110,20 @@ Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 Permissions are not available for Spoteffects.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H9HWJYD7AZTFXKESY1KHW52S=important h_01H9HWJYD75MTKJBMSZRFAG66Q=setting-up-spoteffects h_01H9HWJYD7MAWK9S226YWPZJ8G=integration-tab h_01H9HWJYD7X6KEFF3VEZEP4PGM=activate-partner h_01H9HWJYD7PW2TCYJRA815YNQE=default-postbacks inapp-event-settings=in-app-event-settings h_01H9HWJYD7SK47G91GF9J9Q2ZB=in-app-event-settings h_01H9HWJYD8RJM9BDX9RKSCC4RY=attribution-link-tab h_01H9HWJYD81VXJPT5D2TKQQN9C=cost-tab h_01H9HWJYD8XBV0V0KDNY955JCT=ad-revenue-tab h_01H9HWJYD8B9AQMVVMT16EH602=permissions-tab" />

@@ -37,9 +37,9 @@ The following tools are available for building your audiences:
 
 | Visual audience builder | SQL audience builder |
 | --- | --- |
-| Supports using either one source from each collaborating party or multiple sources from one collaborator | Supports multiple sources from both parties |
-| For one source for each collaborator, supports using overlapping data only | Supports querying all the data |
-| Supports retrieving values within the selected attribute range. | Supports querying values beyond the attribute range |
+| <span id="supports-using-one-source-from-each-collaborating-party"></span>Supports using either one source from each collaborating party or multiple sources from one collaborator | Supports multiple sources from both parties |
+| <span id="supports-using-overlapping-data-only"></span>For one source for each collaborator, supports using overlapping data only | Supports querying all the data |
+| <span id="supports-retrieving-values-within-the-selected-attribute-range"></span>Supports retrieving values within the selected attribute range. | Supports querying values beyond the attribute range |
 
 Learn how to [prepare source data](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion) to maximize match rates between collaborator datasets.
 
@@ -76,10 +76,11 @@ The audience can be created using data from a single collaborator or by merging 
    * For a one-sided collaboration: select either your own source or your collaborator's source.
    * For a two-sided collaboration: select one of your own sources and one of your collaborator's sources.
 
-     <br /><br />**Note**<br />#### Note
+     > 📘 **Note**
+     >
+     > * When both sources share intersecting users, the right pane shows a summary of the source intersection, providing an estimated count of users common to both sources.
+     > * Transactional data sources will not be available in the source dropdown. See [Working with transactional data sources](#working-with-transactional-data-sources) below.
 
-     * When both sources share intersecting users, the right pane shows a summary of the source intersection, providing an estimated count of users common to both sources.
-     * Transactional data sources will not be available in the source dropdown. See [Working with transactional data sources](#working-with-transactional-data-sources) below.
 3. **Data combination method:** Select which data you want to build the audience from:
    * **Intersecting users** - Includes only users that appear in both sources (yours and your collaborator's).
    * **Users from my source only** - Includes only users unique to your source. Excludes all users appearing in your collaborator's source.
@@ -102,10 +103,11 @@ After the data sources are selected, this step involves choosing which attribute
    * **Text attributes** can be filtered with the operators:  
      Equals or Non-equals
 
-     <br /><br />**Note**<br />#### Note
+     > 📘 **Note**
+     >
+     > * If an attribute isn't selected, all the attributes are included by default.
+     > * Once attribute values are selected, the audience size is adjusted.
 
-     * If an attribute isn't selected, all the attributes are included by default.
-     * Once attribute values are selected, the audience size is adjusted.
 3. [Optional] Click **+ Condition** to add another attribute, and select its values.  
    Repeat as needed.
 4. Click **Next**.
@@ -245,10 +247,10 @@ Name the audience, and click **Next**.
 >
 > | Section | Description |
 > | --- | --- |
-> | Left pane | Presents all available sources for creating your audience. This may include your sources and those shared with you. You'll only be able to view sources to which you have the [**Build audience**](/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source) permission.<br /><br />Selecting a source expands it to reveal corresponding columns. |
-> | Top-middle section (query editor) | The query editor for writing your SQL statements. |
-> | Bottom-middle section (context panel) | This section dynamically shows details based on the selected object from the left pane:<br /><br />* **When selecting a source:** Shows the column names ("Field name") and their corresponding types ("Type").<br />* **When a column is selected:** Shows the column values ("Distinct values") and the row count for each value ("Count").<br />* **Following query execution:** Shows a sample of the query results.  <br />  **Note:** As a privacy measure, the results table doesn't display hashed values, such as emails and IDs. These values are shown as "Restricted". |
-> | Right pane | This section dynamically shows details based on the selected object:<br /><br />* **When selecting a source:** Shows the permissions granted for the source.<br />* **While writing the SQL query:**<br />  * Shows the query validity status on the top right of the page. This may include any of the following statuses:<br />  * **Ready to run:** No issues found. You can test the query and proceed to the next step.<br />  * **Syntax error:** An error in syntax was detected along with guidance on resolving it.<br />  * **Permission error:** Indicates a lack of required permissions, with a tooltip detailing which [access rights are provided for the source](/docs/data-collaboration-platform-dcp-create-and-manage-sources#view-permissions-for-collaborator%E2%80%99s-source).<br />  * Shows a **Test** button on the top right of the page. Once you've completed writing your query, you must test it to confirm the accuracy of the intended audience.  <br />    Click **Test** to test your query and examine the results. |
+> | <span id="left-pane"></span>Left pane | Presents all available sources for creating your audience. This may include your sources and those shared with you. You'll only be able to view sources to which you have the [**Build audience**](/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source) permission.<br /><br />Selecting a source expands it to reveal corresponding columns. |
+> | <span id="topmiddle-section-text-editor"></span>Top-middle section (query editor) | The query editor for writing your SQL statements. |
+> | <span id="bottommiddle-section-context-panel"></span>Bottom-middle section (context panel) | This section dynamically shows details based on the selected object from the left pane:<br /><br />* **When selecting a source:** Shows the column names ("Field name") and their corresponding types ("Type").<br />* **When a column is selected:** Shows the column values ("Distinct values") and the row count for each value ("Count").<br />* **Following query execution:** Shows a sample of the query results.  <br />  **Note:** As a privacy measure, the results table doesn't display hashed values, such as emails and IDs. These values are shown as "Restricted". |
+> | <span id="right-pane"></span>Right pane | This section dynamically shows details based on the selected object:<br /><br />* **When selecting a source:** Shows the permissions granted for the source.<br />* **While writing the SQL query:**<br />  * Shows the query validity status on the top right of the page. This may include any of the following statuses:<br />  * **Ready to run:** No issues found. You can test the query and proceed to the next step.<br />  * **Syntax error:** An error in syntax was detected along with guidance on resolving it.<br />  * **Permission error:** Indicates a lack of required permissions, with a tooltip detailing which [access rights are provided for the source](/docs/data-collaboration-platform-dcp-create-and-manage-sources#view-permissions-for-collaborator%E2%80%99s-source).<br />  * Shows a **Test** button on the top right of the page. Once you've completed writing your query, you must test it to confirm the accuracy of the intended audience.  <br />    Click **Test** to test your query and examine the results. |
 >
 >
 >
@@ -262,9 +264,9 @@ Name the audience, and click **Next**.
 >
 > | Pattern | Description |
 > | --- | --- |
-> | Single transactional source with aggregation | A query that aggregates a transactional source into one row per user. For example, aggregating purchase records to produce a total purchase count per user. |
-> | Transactional source joined to a profile/user-level source | Allowed when the transactional side is aggregated before the join. For example, aggregating purchase history by user, then joining the result to a customer profile dataset. |
-> | Aggregated transactional output in downstream joins | Once aggregated to the user level, the output can be used in further joins and audience-building workflows, and is treated similarly to a profile-level dataset. |
+> | <span id="single-transactional-source-with-aggregation"></span>Single transactional source with aggregation | A query that aggregates a transactional source into one row per user. For example, aggregating purchase records to produce a total purchase count per user. |
+> | <span id="transactional-source-joined-to-a-profileuserlevel-source"></span>Transactional source joined to a profile/user-level source | Allowed when the transactional side is aggregated before the join. For example, aggregating purchase history by user, then joining the result to a customer profile dataset. |
+> | <span id="aggregated-transactional-output-in-downstream-joins"></span>Aggregated transactional output in downstream joins | Once aggregated to the user level, the output can be used in further joins and audience-building workflows, and is treated similarly to a profile-level dataset. |
 >
 >
 >
@@ -274,8 +276,8 @@ Name the audience, and click **Next**.
 >
 > | Pattern | Description |
 > | --- | --- |
-> | Transactional source joined directly to another transactional source | Direct joins between two transactional datasets, such as purchases joined to orders, aren't supported. These joins are blocked before execution because they can multiply records, produce incorrect audience results, and create transactional expansion. |
-> | Non-aggregated transactional query | Queries that use transactional records directly, without aggregation, aren't supported. |
+> | <span id="transactional-source-joined-directly-to-another-transactional-source"></span>Transactional source joined directly to another transactional source | Direct joins between two transactional datasets, such as purchases joined to orders, aren't supported. These joins are blocked before execution because they can multiply records, produce incorrect audience results, and create transactional expansion. |
+> | <span id="nonaggregated-transactional-query"></span>Non-aggregated transactional query | Queries that use transactional records directly, without aggregation, aren't supported. |
 
 </Accordion>
 
@@ -283,15 +285,15 @@ Name the audience, and click **Next**.
 
 After an audience is built, activate it where it can drive results. Select a destination, such as media partners for campaign targeting or a cloud storage bucket for downstream use, and DCP refreshes and delivers the audience daily based on the latest source data and [permissions](/docs/data-collaboration-platform-dcp-create-and-manage-sources#sharing-permissions).
 
-* [**Connect an audience to media partners**](#h_01KFG12R13ADFBY4XBDRGE956V) - Media partner platforms include Meta Ads, Google Ads, and many more. Connect your audience to media partners when you want to run paid campaigns, remarketing, or look-alike expansion.
-* [**Export an audience to cloud storage**](#h_01KFG12R13R9B6ATHTBTKAVAMX) - Connect your audience to cloud storage when you need the file in BI models, CDPs, or internal enrichment pipelines.
+* [**Connect an audience to media partners**](#connect-an-audience-to-media-partners) - Media partner platforms include Meta Ads, Google Ads, and many more. Connect your audience to media partners when you want to run paid campaigns, remarketing, or look-alike expansion.
+* [**Export an audience to cloud storage**](#export-to-cloud-storage) - Connect your audience to cloud storage when you need the file in BI models, CDPs, or internal enrichment pipelines.
 
 > 📘 **Note**
 >
 > * The audience is sent for activation as a list of user IDs. This list is continually refreshed and sent to the selected destinations daily.
 > * With every update to the source data, the audience is automatically refreshed and sent to the selected destinations.
 
-<div id="h_01KFG12R13ADFBY4XBDRGE956V" />
+<div id="connect-an-audience-to-media-partners" />
 
 <Accordion title="Connect an audience to media partners">
 
@@ -321,7 +323,7 @@ Send the audience for activation directly in your preferred media partner platfo
 
 </Accordion>
 
-<div id="h_01KFG12R13R9B6ATHTBTKAVAMX" />
+<div id="export-to-cloud-storage" />
 
 <Accordion title="Export to cloud storage">
 
@@ -344,6 +346,8 @@ Send the audience directly to your cloud storage bucket. With every audience upd
 
 View and manage audiences associated with a collaboration.
 
+<div id="access-audience-management" />
+
 <Accordion title="Access audience management">
 
 **To view and manage audiences associated with a collaboration:**
@@ -356,19 +360,19 @@ View and manage audiences associated with a collaboration.
 
 * **Search for an audience:** Search by either the source name or the audience name.
 * **Sort audiences:** Sort audiences by clicking on any of the column headings.
-* **View audience details:** See details such as the collaborator's name, statistics on overlapping users, [audience status](#h_01KFB4HVDZFCJNYG6VVWTWVAQ8), and activation location.
+* **View audience details:** See details such as the collaborator's name, statistics on overlapping users, [audience status](#view-audience-statuses), and activation location.
 * **More actions:** Clicking the 3-dot menu icon of an audience card opens additional available actions:
-  * [**Edit:**](#h_01KFB4HVDZZ0MA4Q69DXKH4YY7) Modify the audience activation destination.
+  * [**Edit:**](#edit-the-audience-activation-destination) Modify the audience activation destination.
   * **Duplicate:** Create a new, independent copy of the audience.
     * The new audience's sources and data combination method carry over locked (can't be changed); filters and activation destinations carry over pre-filled but are fully editable.
     * Duplicate is disabled for SQL audience builder audiences and for audiences with an "Invalid" status.
   * **View history:** See all instances of the audience activation, with details such as the connection and activation status.
-  * [**Delete:**](#h_01KFB4HVDZJ08STDXGA7ZP8MM3) Delete the audience.
+  * [**Delete:**](#delete-an-audience) Delete the audience.
   * **Pause audience:** Prevents the audience from being updated and re-activated when the data source is modified.
 
 </Accordion>
 
-<div id="h_01KFB4HVDZZ0MA4Q69DXKH4YY7" />
+<div id="edit-the-audience-activation-destination" />
 
 <Accordion title="Edit the audience activation destination">
 
@@ -381,12 +385,12 @@ While building an audience, you can save it as a draft and then return to it and
 3. Click the 3-dot menu icon that appears when hovering on the audience > **Edit**.
 4. Under **Connect and export** (at the bottom of the audience page), turn on the relevant toggle:
 
-   * [Connect to media partners](#h_01KFG12R13ADFBY4XBDRGE956V)
-   * [Export to cloud storage](#h_01KFG12R13R9B6ATHTBTKAVAMX)
+   * [Connect to media partners](#connect-an-audience-to-media-partners)
+   * [Export to cloud storage](#export-to-cloud-storage)
 
 </Accordion>
 
-<div id="h_01KFB4HVDZJ08STDXGA7ZP8MM3" />
+<div id="delete-an-audience" />
 
 <Accordion title="Delete an audience">
 
@@ -401,7 +405,7 @@ You can delete an audience created in your account. Doing so removes it permanen
 
 </Accordion>
 
-<div id="h_01KFB4HVDZFCJNYG6VVWTWVAQ8" />
+<div id="view-audience-statuses" />
 
 <Accordion title="View audience statuses">
 
@@ -435,3 +439,5 @@ Click the dropdown next to the specific audience and select **View history**.
 * **N/A:** The audience is in draft or pending status. Upload history status is not applicable.
 
 </Accordion>
+
+<div data-zendesk-anchors="overview=about-dcp-audiences h_01HWG1P909NHBXC5VF23BDVVPH=about-dcp-audiences key-features=build-an-audience h_01HWG5B2MEJH7M8E9BWA3FQFQ2=build-an-audience 01KFDX0R4BYSTE1V5G7ATQ6FZS=key-features h_01HWG62BA9X4VRRDXAEKA07FTJ=visual-audience-builder h_01HZMBFKV40PHFN1B8PVVCMWQQ=note step-1-join-sources=step-1-details-and-sources h_01HWFRRGP99KKGBSQ6QB10RD26=step-1-details-and-sources h_01KT94AC4N81MBE0DAT7TX2QA7=note-1 step-2-build-audiences=step-2-define-the-audience h_01HWFRRPFTCFGEHY1AW8G4VMY4=step-2-define-the-audience h_01JSEPSRF3FFJJ4S20GJJPJVWF=note-2 summary-rightside-preview-pane=summary-right-side-preview-pane h_01KBMPR7BHCTTVE8DR1TCRYAHJ=summary-right-side-preview-pane h_01KBMPK2HXMZ6YNQMJTST9BD8Y=note-3 h_transactional-data-visual-builder=working-with-transactional-data-sources h_01HWG62BAAD46MTK385756T4AQ=sql-audience-builder h_01HZM8X9RZ1A9CKWYNM61QW515=note-4 step-1-set-details=set-details h_01HWG9VX0QB3GFZDARAT5QKHV0=set-details step-2-build-query=build-query h_01HWG9Y6B9X3T1FFM9ZR8TVBVC=build-query h_01KT6SCS53699DZXE4EF92WC44=note-5 h_01HZM9P2GNCPGJDEA51HCV1Y99=the-sql-audience-builder h_transactional-data-sql-patterns=transactional-data-in-sql-queries send-audience-for-activation=send-an-audience-for-activation h_01HZMCHKMVXRWK7RXZ7NN65JQX=send-an-audience-for-activation h_01HZMCRJBBXFEV6JXEHGFXZDZW=note-6 h_01KFG12R13ADFBY4XBDRGE956V=connect-an-audience-to-media-partners h_01HZMDXEEABQRQE8XMZNE86SRF=note-7 h_01KFG12R13R9B6ATHTBTKAVAMX=export-to-cloud-storage h_01KY2FJV90NYBVTQBN6K63K9DS=note-8 h_01HZPWTG23YQ5Y1GAPXT65DK07=manage-audiences h_01KFBA379S9ZZAKN7FC7X2S297=access-audience-management h_01KFB4HVDZZ0MA4Q69DXKH4YY7=edit-the-audience-activation-destination h_01KFB4HVDZJ08STDXGA7ZP8MM3=delete-an-audience h_01KFB4HVDZFCJNYG6VVWTWVAQ8=view-audience-statuses" />

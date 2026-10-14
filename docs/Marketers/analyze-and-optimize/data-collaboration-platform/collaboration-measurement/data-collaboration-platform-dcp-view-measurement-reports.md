@@ -72,6 +72,8 @@ To generate a predefined report, follow these steps:
 
 To create a custom report, follow these steps:
 
+<div id="1-open-the-new-report-page" />
+
 <Accordion title="1. Open the New report page">
 
 1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
@@ -82,11 +84,15 @@ To create a custom report, follow these steps:
 
 </Accordion>
 
+<div id="2-set-the-report-type" />
+
 <Accordion title="2. Set the report type">
 
 Under the **Report type** step, select ![](https://files.readme.io/c94890451d831a5a3f1f12b6f42c1c86de1453c175c40cc450e915f6f1f128ad-34061156898449.png)  **Commerce media measurement,** then, click **Next.**
 
 </Accordion>
+
+<div id="3-set-the-report-scope" />
 
 <Accordion title="3. Set the report scope">
 
@@ -109,6 +115,8 @@ Under the **Filters and data sources** step:
 4. Click **Next**.
 
 </Accordion>
+
+<div id="4-set-the-report-dimensions-and-metrics" />
 
 <Accordion title="4. Set the report dimensions and metrics">
 
@@ -162,6 +170,8 @@ To create or edit a calculated field perform the following:
 
 </Accordion>
 
+<div id="5-manage-dimension-priority" />
+
 <Accordion title="5. Manage dimension priority">
 
 Dimension groups with very few user-level events may conflict with data privacy regulations.
@@ -184,6 +194,8 @@ By default, dimensions are removed in reverse order of their position in the **R
    * The **Report dimensions** list on the main screen remains in its original order, but the revised order has been saved. (Click again on the **Manage dimension priority** button to review or edit your selection.)
 
 </Accordion>
+
+<div id="6-set-the-report-schedule-and-destination" />
 
 <Accordion title="6. Set the report schedule and destination">
 
@@ -211,6 +223,8 @@ DCP delivers reports to your selected cloud services using [AppsFlyer Data Lock
 
 The report is comprised of the following dimensions and metrics categorized as calculated fields and attribution fields:
 
+<div id="calculated-fields" />
+
 <Accordion title="Calculated fields">
 
 | **Field** | **Description** |
@@ -223,6 +237,8 @@ The report is comprised of the following dimensions and metrics categorized as c
 |  |  |
 
 </Accordion>
+
+<div id="attribution-fields" />
 
 <Accordion title="Attribution fields">
 
@@ -257,6 +273,8 @@ The report is comprised of the following dimensions and metrics categorized as c
 
 </Accordion>
 
+<div id="scheme-fields" />
+
 <Accordion title="Scheme fields">
 
 | **Field** | **Description** | **Onsite Availability** | **Offsite availability** |
@@ -265,3 +283,5 @@ The report is comprised of the following dimensions and metrics categorized as c
 | Count\_AFID | Total number of unique users | TRUE | TRUE |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01JQY1FA02JN6VR67HJ5118SFF=what-are-dimensions-and-metrics h_01JR5NBE6NQ22QCFZG9XRVGM45=dimensions h_01JR5NC59TQ45QPWP7JG6BQKXX=metrics h_01JQY33FZ2H59YZVVXBN9J61RE=what-are-basic-and-calculated-fields h_01JQY1FA03AXH588Z5C9HCJHMS=create-a-predefined-report h_01JQY1FA038V0V1PKBF1CC0B5J=create-a-custom-report h_01JQY1FA035K7VWX4BDC796SVT=1-open-the-new-report-page h_01JQY1FA03Z0W8N8PFVGEC3HRM=2-set-the-report-type h_01JQY1FA03CWP0GSJY46CEJRJY=3-set-the-report-scope h_01JQY1FA03WA8NNB4RT1VBK0F5=4-set-the-report-dimensions-and-metrics h_01JQY1FA03PA40NCTZXHWGQ86C=create-calculated-field h_01JQY1FA03TMN4N7V3F83EK4EY=5-manage-dimension-priority h_01JQY1FA03PRSGHSKNTKNV4NH3=6-set-the-report-schedule-and-destination h_01JQY1FA03S41J7TR5HAF6G8PW=report-scheme h_01JQY1FA0494AK29M0R7ZRJ4DT=calculated-fields h_01JQY1FA0486WK4GHV5G3TZ77V=attribution-fields h_01JQY1FA04DTN2C6A541J25RZJ=scheme-fields" />

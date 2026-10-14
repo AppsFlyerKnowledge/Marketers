@@ -76,6 +76,8 @@ The implementation consists of the following steps:
 1. HTML code for webview or web page
 2. Native code implementation for webview
 
+<div id="android" />
+
 <Accordion title="Android">
 
 #### HTML code for Android
@@ -193,6 +195,8 @@ the
 class.
 
 </Accordion>
+
+<div id="ios" />
 
 <Accordion title="iOS">
 
@@ -594,3 +598,5 @@ class WebViewController: UIViewController, WKNavigationDelegate {
 ```
 
 The code above listens to any URL loading. If a URL with "af-event" in it loads, it extracts the necessary parameters (eventName and eventValue) and passes them on to the native SDK `logEvent` method.
+
+<div data-zendesk-anchors="h_01HGWH2AEJ0DHTGD41YN7R5A1V=introduction h_01KB7M7ZSM5AZACJNB32F65A62=note h_01HGWH2AEJZHV3KZR0ZPPFK71T=example recording-inapp-events-in-hybrid-apps=recording-in-app-events-in-hybrid-apps h_01HGWH2AEJFEZY7WBJTFP9N3AN=recording-in-app-events-in-hybrid-apps JavaScript-interface=javascript-interface h_01HGWH2AEJFVDZBPRS8DP64TRY=javascript-interface h_01HGWH2AEKB47CJ386AN7NNX4Y=android h_01HGWH2AEKZG98VWPECP6FBHN3=html-code-for-android h_01HGWH2AEKA5X1DPWS51WRCMD4=webactivity-class JavaScript-interface-class=javascript-interface-class h_01HGWH2AEK07MGR1FPFSWXYRKP=javascript-interface-class h_01HGWH2AEN4WHKBSM69S200F5H=ios h_01HGWH2AENKC2EEYJPW9KZDVJS=html-code-for-ios h_01HGWH2AENTMA7A71K2Y7XQF9T=note-1 h_01HGWH2AENGAWEGD5TRTR2P6PR=objective-c h_01HGWH2AENJVMVHSDPMKBP6HNT=web-view-controller h_01HGWH2AENV1J1M0KH36K1YSCJ=swift-webview-controller h_01HGWH2AENV0Q83A0GF8NK7S4B=url-loading h_01HGWH2AENFH6M2ZQSGH4EGEGB=webview-implementation h_01HGWH2AENEDT95283SQZDHPCD=html-code-for-both-android-webview-and-ios-wkwebview h_01HGWH2AENS43N93D65RN80VXN=native-implementation h_01HGWH2AEN0QYYJJGV90A27VAM=android-implementation h_01HGWH2AEN38VWNXE90BHGQQ9A=ios-implementation" />

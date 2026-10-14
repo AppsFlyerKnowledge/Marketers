@@ -43,3 +43,5 @@ Watch the video below to learn:
 > **Note:** If the advertiser deactivates the partner without first turning off these settings, the agencies may continue to use these attribution capabilities.
 
 ![](https://fast.wistia.com/embed/medias/3oc17c9r89/swatch)
+
+<div data-zendesk-anchors="h_01KC9MDDRPTB05PV6NCGZVFRMJ=important" />

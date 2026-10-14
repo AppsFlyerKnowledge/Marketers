@@ -44,6 +44,8 @@ The WebEngage configuration window uses only the **Integration** tab.
 
 Learn more about [setting the partner page header.](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration tab is divided into different sections, as described below.
@@ -97,11 +99,15 @@ Map AppsFlyer events with WebEngage via postbacks. If postback sending is enable
 
 <Accordion title="">
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 **Attribution link** isn't supported in the integration with this partner.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -109,11 +115,15 @@ Map AppsFlyer events with WebEngage via postbacks. If postback sending is enable
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 **Ad revenue** isn't supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -122,3 +132,5 @@ Map AppsFlyer events with WebEngage via postbacks. If postback sending is enable
 </Accordion>
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H9HWK7APBFK7RWVFH79VW0ME=important h_01H9HWK7AP6Z398NP3G2BQQBTF=setting-up-webengage h_01H9HWK7AP3ERT0TM39E6S5M79=integration-tab h_01H9HWK7AP3FMR5RMANZCMQ6M0=activate-partner h_01H9HWK7APG1STZ4Q19QVX4KRY=general-settings h_01H9HWK7AP23GK6WWJTB543FEQ=default-postbacks h_01H9HWK7APMBSZ1PG8MK88HZFS=note inapp-event-settings=in-app-event-settings h_01H9HWK7APFNAFE9YM2484DDHD=in-app-event-settings to-configure-inapp-event-postbacks=to-configure-in-app-event-postbacks h_01H9HWK7APZM8328V0EV4B5QDN=to-configure-in-app-event-postbacks h_01H9HWK7AQTZXE7GPX5E9X2ZYN=attribution-link-tab h_01H9HWK7AQ8SXED5KHVD5T4DZZ=cost-tab h_01H9HWK7AQ2JG4BRS784M85Z6E=ad-revenue-tab h_01H9HWK7AQ5YJDY2M96CA05H6P=permissions-tab" />

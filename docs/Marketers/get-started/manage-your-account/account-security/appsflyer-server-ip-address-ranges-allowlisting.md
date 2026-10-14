@@ -49,3 +49,5 @@ Learn more about [Audiences](/docs/audiences-guide).
 ### Pull API and server-to-server (S2S)
 
 Pull API and S2S aren't affected by the addresses listed in this article. However, verify that the **.appsflyer.com* domain is allowlisted and isn't blocked in any way.
+
+<div data-zendesk-anchors="pull-api-and-servertoserver-s2s=pull-api-and-server-to-server-s2s" />

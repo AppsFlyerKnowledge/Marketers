@@ -101,3 +101,5 @@ To summarize, `total_candidates` indicates engagements received, which are not n
 > 📘 **Note**
 >
 > AppsFlyer Support will not provide engagement-level explanations or breakdowns of `total_candidates` due to the complexity of the attribution logic.
+
+<div data-zendesk-anchors="h_01HCBC922K9PCDXGDCCVEARADH=assisted-installs h_01HCBC922KRHB043FK1CQRKXDA=view-assisted-installs-metrics-in-the-overview-dashboard h_01HCBC922KDAG8T27KK2JGRE7C=why-are-assists-important h_01HCBC922KJV54QW6G85SN2JM7=assisted-installs-reporting h_01KSFPXWNAX8FZ6H2ZKN1Z2TJQ=note h_01HCBC922K5HKF94JCY7C88R88=note-1 h_01K453B1K1X7QVJHPQ505P745N=note-2" />

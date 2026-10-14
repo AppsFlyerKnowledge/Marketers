@@ -19,7 +19,7 @@ x-zendesk:
   promoted: false
   comments_disabled: false
   created_at: '2017-03-09T19:49:54Z'
-  edited_at: '2026-09-09T15:41:07Z'
+  edited_at: '2026-10-14T12:47:44Z'
 ---
 **At a glance:** The SDK release notes provide a quick overview of the latest changes to the iOS SDK. Developers looking for more comprehensive details should review [the iOS Release Notes on the Dev Hub](https://dev.appsflyer.com/hc/docs/ios-release-notes).
 
@@ -136,3 +136,5 @@ The following SDK versions have reached **End-of-Support** status. These version
 > 📘 **See also**
 >
 > * [Quickstart guide to iOS 14, ATT, and SKAdNetwork](/docs/about-att-and-skan)
+
+<div data-zendesk-anchors="h_01JVHFG6PN34YFWNZKX2CYHJV8=important h_01JVHEKR4MTFV0FDHMTQW00BCS=end-of-support-vs-deprecated ios-sdk-v6=ios-sdk-release-notes 01H8W3DDM1BYRSPMFTA3TCY8EQ=ios-sdk-release-notes h_01JVHGN5NVRMGN9SJ5DWEAJYN3=unsupported-sdk-versions h_01HE7RE2EPQX872DKNDBJ2G2QE=see-also" />

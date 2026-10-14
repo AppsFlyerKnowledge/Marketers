@@ -75,3 +75,5 @@ The following table shows which dashboards and reports support campaign name cha
 * Most ad networks support campaign name changes, but a few don't, and for these you may see duplicate rows with the same data. To avoid such display anomalies ensure that campaigns have a unique campaign ID assigned to them.
 * Don't use the same campaign name with different campaign IDs.
 * Don't use the same ad name with different ad IDs.
+
+<div data-zendesk-anchors="rollout-details=campaign-name-changes h_01HW896QQ2T4J0N5PDY6YFTJ49=campaign-name-changes h_01HW896QQ34YVGF6P212ZHAQHG=example h_01HW896QQ3G07XM06HR2CRXA3G=example-campaign-data overview-dashboard-display-before-the-behavior-change=overview-dashboard-display h_01HW896QQ3J9NE9GZRKKAPX46B=overview-dashboard-display h_01HW896QQ4RAQ51GPD17YYZBJF=best-practice" />

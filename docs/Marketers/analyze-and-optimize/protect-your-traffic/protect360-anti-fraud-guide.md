@@ -32,6 +32,8 @@ x-zendesk:
 * Uses a layered approach of real-time fraud blocking and post-attribution fraud identification
 * Does not impact the app user experience. In case of fraud attempts involving real users, app installs complete normally, and only attribution recording is affected.
 
+<div id="realtime-blocking" />
+
 <Accordion title="Real-time blocking">
 
 * In real-time, before attribution, the install is identified as coming from a fraudulent media source and is blocked from attribution.
@@ -73,6 +75,8 @@ Examples of post-attribution fraud:
 
 </Accordion>
 
+<div id="common-fraud-issues-and-solutions" />
+
 <Accordion title="Common fraud issues and solutions">
 
 When AppsFlyer identifies fraud, **the attribution** **event**associated with the fraud is blocked. This eliminates fraudster gains and motivation. **Note**: The app install itself takes place and is not blocked. This means the app user can use the app and generate revenue for the advertiser.
@@ -83,14 +87,14 @@ The following table describes some fraud types and how Protect360 handles them.
 
 | Fraud type | Description | AppsFlyer solution |
 | --- | --- | --- |
-| **Device ID reset fraud** | Device ID is constantly reset by the fraudster on the same physical device, so as to generate a large number of installs. | AppsFlyer identifies abnormal rates of new devices and consequently denylists sources delivering them. |
-| **Install hijacking** | Fraudsters plant malware on mobile devices that alerts when a download of an app takes place. Instantly a click is sent to AppsFlyer claiming credit for the install. | Blocks attributed clicks with a very quick CTIT ([Click To Install Time](https://www.appsflyer.com/mobile-fraud-glossary/click-to-install-time-ctit/)) and based on Google Play Server-Side API. |
-| [**Click hijacking**](https://www.appsflyer.com/mobile-fraud-glossary/click-hijacking/) | Malware identifies an install attribution link click and instantly sends another click that credits them if it is attributed. | Blocks attributed clicks occurring very fast after other clicks for the same app on the same device. |
-| [**Click flooding**](https://www.appsflyer.com/mobile-fraud-glossary/click-flooding/) | Mobile fraud where large numbers of fraudulent clicks are sent, with the purpose of delivering the last-click prior to installs. | Blocks attributed clicks from site IDs with a low conversion rate and long CTIT. |
-| **Behavioral anomalies** | Mobile fraud where the fraudster generates an inconsistent and abnormal post-install activity. | Our unique scale allows us to track and understand behavioral engagement patterns on multiple levels - such as by app, region, media source, and publisher. Non-human behavioral patterns are identified in near real-time and blocked at the source. |
+| <span id="device-id-reset-fraud"></span>**Device ID reset fraud** | Device ID is constantly reset by the fraudster on the same physical device, so as to generate a large number of installs. | AppsFlyer identifies abnormal rates of new devices and consequently denylists sources delivering them. |
+| <span id="install-hijacking"></span>**Install hijacking** | Fraudsters plant malware on mobile devices that alerts when a download of an app takes place. Instantly a click is sent to AppsFlyer claiming credit for the install. | Blocks attributed clicks with a very quick CTIT ([Click To Install Time](https://www.appsflyer.com/mobile-fraud-glossary/click-to-install-time-ctit/)) and based on Google Play Server-Side API. |
+| <span id="click-hijacking"></span>[**Click hijacking**](https://www.appsflyer.com/mobile-fraud-glossary/click-hijacking/) | Malware identifies an install attribution link click and instantly sends another click that credits them if it is attributed. | Blocks attributed clicks occurring very fast after other clicks for the same app on the same device. |
+| <span id="click-flooding"></span>[**Click flooding**](https://www.appsflyer.com/mobile-fraud-glossary/click-flooding/) | Mobile fraud where large numbers of fraudulent clicks are sent, with the purpose of delivering the last-click prior to installs. | Blocks attributed clicks from site IDs with a low conversion rate and long CTIT. |
+| <span id="behavioral-anomalies"></span>**Behavioral anomalies** | Mobile fraud where the fraudster generates an inconsistent and abnormal post-install activity. | Our unique scale allows us to track and understand behavioral engagement patterns on multiple levels - such as by app, region, media source, and publisher. Non-human behavioral patterns are identified in near real-time and blocked at the source. |
 | <span id="ip-denylists"></span>**IP denylists** | Fraudsters usually operate from [click farms](https://www.appsflyer.com/mobile-fraud-glossary/click-farms/), which may be identified by their IP addresses for long periods of time. | <ul><li>IP addresses suspected of fraud are denylisted on a daily basis based on up to date data received from third party global provider [Digital Element](http://www.digitalelement.com/).</li><li>IP denylist protection is enabled for all apps.</li></ul> |
-| **SDK authentication** | Fraudsters send fake SDK messages to simulate valuable user actions. | <ul><li>A proprietary hashing protocol is used to encrypt messages between SDKs and web services, preventing fraudsters from mimicking the messages.</li><li>SDK authentication protection is enabled for all apps.</li></ul> |
-| **Store validations** | Fraudsters send fake SDK messages to simulate installs or in-app purchases so they can claim high CPA fees. [Apple store validations](/docs/implement-apple-app-store-itunes-install-validation). | Enables [install validation](https://www.appsflyer.com/mobile-fraud-glossary/install-validation/) on iTunes and in-app purchase validation for both iTunes and Google Play, of any install or in-app purchase that has taken place to prevent attribution of fraudulent activities. |
+| <span id="sdk-authentication"></span>**SDK authentication** | Fraudsters send fake SDK messages to simulate valuable user actions. | <ul><li>A proprietary hashing protocol is used to encrypt messages between SDKs and web services, preventing fraudsters from mimicking the messages.</li><li>SDK authentication protection is enabled for all apps.</li></ul> |
+| <span id="store-validations"></span>**Store validations** | Fraudsters send fake SDK messages to simulate installs or in-app purchases so they can claim high CPA fees. [Apple store validations](/docs/implement-apple-app-store-itunes-install-validation). | Enables [install validation](https://www.appsflyer.com/mobile-fraud-glossary/install-validation/) on iTunes and in-app purchase validation for both iTunes and Google Play, of any install or in-app purchase that has taken place to prevent attribution of fraudulent activities. |
 
 **Note**: The exact time values cited above, are withheld to protect our clients.
 
@@ -139,6 +143,8 @@ Raw data reports are divided as follows:
 
 </Accordion>
 
+<div id="validation-rules" />
+
 <Accordion title="Validation rules">
 
 [Validation Rules](/docs/implement-validation-rules-to-prevent-fraud) enable app owners to set conditions to block certain installs, block attribution (and ensure that installs are attributed to the most recent valid media source), or block in-app events.
@@ -172,6 +178,8 @@ You can also use Protect360 data to reconcile with ad networks and receive full 
 </Accordion>
 
 ## Traits and limitations
+
+<div id="traits-and-limitations::a07033c3" />
 
 <Accordion title="Traits and limitations">
 
@@ -209,6 +217,8 @@ FAQ
 
 </Accordion>
 
+<div id="benchmarks-and-tips" />
+
 <Accordion title="Benchmarks and tips">
 
 | **Detecting new devices fraud**<br /><br />Fraudsters may mask their devices by frequently resetting the main IDs of their devices, i.e. IDFA for iOS and GAID for Android.<br /><br />Fortunately, AppsFlyer identifies over 98% of mobile devices globally.<br /><br />Therefore, a high percentage of unknown new devices is a strong indication of fraud by click farms, unless intentionally targeting new devices.<br /><br />**Detecting new devices:**<ol><li>In Protect360 go to the ***Identified fraud breakdown*** table.</li><li>Scroll right to the ***Device farm indicators - new devices*** columns.</li><li>Click on the ***Installs %*** column name to sort the table in descending order of new device ratio.</li><li>New device fraud indicators:</li></ol><ul><li>Sources with a high percentage of **new** devices. **Note**: As the number of installs rises, lower percentages can also be considered as fraud (since the overall amount is large).<ul><li>When the source loyal user ratio is compared with the overall loyal user ratio, a relatively low percentage is a strong indication of fraud.</li></ul></li></ul>**Note**: Campaigns of [pre-installed apps](/docs/appsflyer-factory-preinstall-using-manifest-android) usually have extremely high rates of new devices, as these may be among the very first apps that users launch when activating their new devices. Therefore, for pre-installed apps, new device fraud is unlikely, even with high new devices rates. |
@@ -220,6 +230,8 @@ FAQ
 Benchmarks and tips
 
 </Accordion>
+
+<div id="advanced-antifraud-tips" />
 
 <Accordion title="Advanced anti-fraud tips">
 
@@ -239,3 +251,5 @@ Advanced anti-fraud tips
 >
 > * [Raw data](/docs/protect360-raw-data-reports)
 > * [Introductory guide for marketers to mobile ad fraud](https://www.appsflyer.com/resources/others/marketers-guide-mobile-ad-fraud/)
+
+<div data-zendesk-anchors="h_01HE7RSPPQ4T5J3W038EZRCTCE=protect360-overview h_01HE7RSPPQ5BH7HBK0R8SY1T16=realtime-blocking h_01HE7RSPPRW4CQ3GB9ZEYAA6YN=postattribution-detection h_01HE7RSPPRYMQKJH46JET2ZZ0T=common-fraud-issues-and-solutions h_01HE7RSPPR8Y8J1VJJXXDCAZE6=using-protect360 h_01HE7RSPPR04G3SCSYHSWJKQDG=dashboard h_01HE7RSPPRS6PSTZCR5RT4A5ND=raw-data h_01HE7RSPPR8C9MHRAGJXYD2VVZ=validation-rules h_01HE7RSPPR1PQ2R6NJPRQGS1K1=fraud-reconciliation-with-ad-networks h_01HE7RSPPRV797PS12NFQHX1X5=traits-and-limitations h_01HE7RSPPRWRKR1Y25PZV2RMVV=traits-and-limitations::a07033c3 h_01HE7RSPPSV2TT8SMK8JZXFKMC=faq-and-tips h_01HE7RSPPS01J796008HDS1CRW=faq h_01HE7RSPPS018W98JWZGED54W8=benchmarks-and-tips h_01HE7RSPPSEDZWRH929DBSWEWM=advanced-antifraud-tips h_01HE7RSPPSY161MSQVQW7M767F=tip h_01HE7RX6167Q5QP5JNZDSXCCK5=see-also" />

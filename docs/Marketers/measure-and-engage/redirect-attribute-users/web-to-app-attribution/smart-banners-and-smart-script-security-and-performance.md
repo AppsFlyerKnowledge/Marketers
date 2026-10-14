@@ -26,6 +26,8 @@ In this Q&A, we discuss common queries about smart banners and smart script inte
 
 ## Smart banners API security
 
+<div id="what-data-does-the-smart-banner-capture-when-someone-clicks-or-views-it" />
+
 <Accordion title="What data does the smart banner capture when someone clicks or views it?">
 
 | Data | Remarks |
@@ -41,6 +43,8 @@ In this Q&A, we discuss common queries about smart banners and smart script inte
 
 </Accordion>
 
+<div id="what-api-calls-are-needed-to-show-a-smart-banner" />
+
 <Accordion title="What API calls are needed to show a smart banner?">
 
 * An API to fetch the SDK from a CDN located at `https://websdk.appsflyersdk.com`.
@@ -49,11 +53,15 @@ In this Q&A, we discuss common queries about smart banners and smart script inte
 
 </Accordion>
 
+<div id="do-these-api-calls-include-an-identifier" />
+
 <Accordion title="Do these API calls include an identifier?">
 
 Yes. The client's unique web key acts as an identifier in API calls, enabling the retrieval of necessary data for banner display and the generation of the OneLink URL for the banner CTA.
 
 </Accordion>
+
+<div id="is-it-possible-for-a-malicious-entity-to-change-the-url-or-alter-the-apis-web-key" />
 
 <Accordion title="Is it possible for a malicious entity to change the URL or alter the APIs web key?">
 
@@ -63,6 +71,8 @@ No. It's not possible to access and modify the code dictating the web key used i
 
 ## Smart banners script hosting security
 
+<div id="can-clients-host-a-copy-of-the-smart-banner-script-on-their-server" />
+
 <Accordion title="Can clients host a copy of the Smart Banner script on their server?">
 
 Clients cannot host Smart Banners script on their servers. However they can use [Smart Script](/docs/set-up-smart-script-to-convert-web-visitors?query=smart%20script) for OneLink URL generation and implement their own banner creatives.
@@ -71,11 +81,15 @@ Using Smart Script along with your own banners lets you design custom creatives 
 
 </Accordion>
 
+<div id="can-clients-host-their-own-code-and-still-use-banners" />
+
 <Accordion title="Can clients host their own code and still use banners?">
 
 Clients can develop their own banners, including the design, development, and integration on the site, and utilize [Smart Script](/docs/set-up-smart-script-to-convert-web-visitors?query=smart%20script) to generate the links for their banner's call-to-action (CTA).
 
 </Accordion>
+
+<div id="can-smart-banners-be-supported-without-embedding-their-code-snippet-on-the-page" />
 
 <Accordion title="Can Smart Banners be supported without embedding their code snippet on the page?">
 
@@ -83,6 +97,8 @@ Clients can develop their own banners, including the design, development, and in
 * Running the script in an iFrame is not supported.
 
 </Accordion>
+
+<div id="how-does-appsflyer-protect-your-banners-from-postsave-tampering" />
 
 <Accordion title="How does AppsFlyer protect your banners from post-save tampering">
 
@@ -96,6 +112,8 @@ We implement multiple measures to ensure Smart Banners are secure from potential
 
 </Accordion>
 
+<div id="do-smart-banners-use-cookies" />
+
 <Accordion title="Do Smart Banners use cookies?">
 
 By default, Smart Banners do not use cookies. However, we provide an optional configuration to use first-party cookies for customers who prefer increased persistence (for example, to address storage volatility in Safari on iOS 26).
@@ -106,6 +124,8 @@ The website owner must explicitly [enable this option](https://dev.appsflyer.com
 
 ## Smart Banners Performance
 
+<div id="does-the-smart-banner-web-sdk-impact-website-load-speed" />
+
 <Accordion title="Does the Smart Banner web SDK impact website load speed?">
 
 While adding any additional code to a website might potentially affect loading times, most of the smart banner's work is done server-side, asynchronously, and without blocking the page from loading.
@@ -113,6 +133,8 @@ While adding any additional code to a website might potentially affect loading t
 Furthermore, we employ CDNs to expedite the loading of pages and banners.
 
 </Accordion>
+
+<div id="can-you-share-some-metrics-regarding-banner-speed-performance" />
 
 <Accordion title="Can you share some metrics regarding banner speed performance?">
 
@@ -127,6 +149,8 @@ These factors, when added to the minimal response time from AppsFlyer servers to
 Since the above variables are not related to AppsFlyer, we cannot specify exact time frames for the complete end-to-end process.
 
 </Accordion>
+
+<div id="how-can-i-actively-improve-the-banner-loading-time" />
 
 <Accordion title="How can I actively minimize the banner loading time?">
 
@@ -143,11 +167,15 @@ Banner loading time is impacted by the Largest Contentful Paint (LCP), which pri
 
 ## Smart Script Security and Performance
 
+<div id="does-smart-script-use-cookies" />
+
 <Accordion title="Does Smart Script use cookies?">
 
 No, we do not use cookies in our Smart Script solution.
 
 </Accordion>
+
+<div id="does-smart-script-make-any-external-calls-to-generate-links" />
 
 <Accordion title="Does Smart Script make any external calls to generate links?">
 
@@ -155,8 +183,12 @@ No, the script is executed locally on the client's website, so it doesn't rely o
 
 </Accordion>
 
+<div id="is-there-a-download-time-associated-with-smart-script" />
+
 <Accordion title="Is there a download time associated with Smart Script?">
 
 You can embed the script directly on your website, ensuring no download time. The script loads quickly because it doesn't require any server calls.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HNDDT0XHK5Y5NYTQMSXYSCZ4=smart-banners-api-security h_01HNDDT0XHY7BZNXA2CRT1W46F=what-data-does-the-smart-banner-capture-when-someone-clicks-or-views-it h_01HNDDT0XJGFJE3XBAXTE0C2K5=what-api-calls-are-needed-to-show-a-smart-banner h_01HNDDT0XJVX8KXSZC10GTJMCS=do-these-api-calls-include-an-identifier h_01HNDDT0XJ7MGPFSZKJ7YRZ2HJ=is-it-possible-for-a-malicious-entity-to-change-the-url-or-alter-the-apis-web-key h_01HNDDT0XJSS77BFVVT2QQV5HP=smart-banners-script-hosting-security h_01HNDDT0XJYW3Y0MQZWW1C1ETJ=can-clients-host-a-copy-of-the-smart-banner-script-on-their-server h_01HNDDT0XJG1SKBMA14KBGKZGD=can-clients-host-their-own-code-and-still-use-banners h_01HNDDT0XJDEGBK5WTBJ52ZVST=can-smart-banners-be-supported-without-embedding-their-code-snippet-on-the-page h_01HNDDT0XJC7FT514HEGN68T68=how-does-appsflyer-protect-your-banners-from-postsave-tampering h_01HNDDT0XJR4BQPN20FNGJPARY=do-smart-banners-use-cookies smart-banner-performance=smart-banners-performance h_01HNDDT0XJNJXY52BZJS9T1G72=smart-banners-performance h_01HNDDT0XJ456B4DG38BMMP98W=does-the-smart-banner-web-sdk-impact-website-load-speed h_01HNDDT0XJSEXVNRT8H27EMCNS=can-you-share-some-metrics-regarding-banner-speed-performance h_01HNDDT0XJK99RH6MAJFGQ7FPX=how-can-i-actively-improve-the-banner-loading-time h_01HNDDT0XJSGVRA6SB2YYYAE0P=smart-script-security-and-performance h_01HNDDT0XJW9B4GJ3J4RMJDG6V=does-smart-script-use-cookies h_01HNDDT0XJNZXGPZN2NDHQ34KF=does-smart-script-make-any-external-calls-to-generate-links h_01HNDDT0XJXV12C5P1CD32FZW3=is-there-a-download-time-associated-with-smart-script" />

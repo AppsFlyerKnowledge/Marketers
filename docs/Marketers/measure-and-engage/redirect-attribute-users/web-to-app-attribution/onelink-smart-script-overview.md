@@ -57,6 +57,8 @@ There are two versions of OneLink Smart Script:
 
 The examples in this section demonstrate how OneLink Smart Script is used to generate outgoing OneLink URLs that provide accurate attribution, or deep linking functionality. For use cases of campaign types with particular media sources, see [Use cases](/docs/set-up-smart-script-to-convert-web-visitors#use-cases).
 
+<div id="attribution" />
+
 <Accordion title="Attribution">
 
 Mark is the marketer for a hotel chain. He sends an email advertising a hotel vacation in Orlando, Florida. The link in the email looks like this: https://hotel.me/pid=email&c=orlando
@@ -66,6 +68,8 @@ The link redirects users to the hotel’s mobile website. There, users see butto
 When users click the buttons on the mobile site to download the app, the app install is attributed to Mark’s Orlando email campaign.
 
 </Accordion>
+
+<div id="deep-linking" />
 
 <Accordion title="Deep linking">
 
@@ -82,3 +86,5 @@ When she clicks the link, it redirects her to the hotel’s mobile website. Ther
 > The deep linking is in accordance with the app settings implemented by the app developers. [Learn more](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HE7RW9G26CNME9TP350GFGS4=about-onelink-smart-script h_01HE7RW9G2BV2NFJ0YZ9QKAA2V=note h_01HE7RW9G2WBZ1A0RS66CJ7BNH=examples h_01HE7RW9G24Y604NTZFGKJJXSS=attribution h_01HE7RW9G2ZDDWE1M1B2G175ZF=deep-linking h_01HE7RW9G3W5GKQ2CD2BZW8YAW=note-1" />

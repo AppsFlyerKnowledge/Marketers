@@ -36,6 +36,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -80,6 +82,8 @@ If you wish to send af\_app\_opened events to Remerge you must add each event ma
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -153,6 +157,8 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
@@ -165,11 +171,15 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported by Remerge.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -190,3 +200,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJRZQ2X3A955H1T76X8GF35A=setting-up-remerge h_01HJRZQ2X45PTBDQARWHDSJS1V=integration-tab h_01HJRZQ2X4PG81M9GYBGPNANGY=activate-partner h_01HJRZQ2X4THDK9AV0MFGKD5GG=note install-and-reengagement-attribution=install-and-re-engagement-attribution h_01HJRZQ2X4KQHXXJH3F4TNABC4=install-and-re-engagement-attribution h_01HJRZQ2X4TY2DT0DTTEMJYWPG=default-postbacks inapp-events-settings=in-app-events-settings h_01HJRZQ2X549ZMW6SZGHPG6853=in-app-events-settings h_01HJRZQ2X56BEBQ0FHJYCMGE4J=attribution-link-tab h_01HJRZQ2X5EE1XDFN56VEEPWKM=attribution-link-parameters h_01HJRZQ2X60JEVJYVK5X934DP4=retargeting-settings clickthrough-attribution=click-through-attribution h_01HJRZQ2X6DGP82VBKNF86S0E0=click-through-attribution h_01HJRZQ2X61NZQB1JSMSRMNTH7=click-attribution-link h_01HJRZQ2X6M83KFXR58BS4B024=cost-tab h_01HJRZQ2X6GZ51M21S5PTD3NC4=ad-revenue-tab h_01HJRZQ2X67S37CAH31KNVRQPG=permissions-tab h_01HJRZQ2X6CEX8T2A57JHBHERR=ad-network-permissions" />

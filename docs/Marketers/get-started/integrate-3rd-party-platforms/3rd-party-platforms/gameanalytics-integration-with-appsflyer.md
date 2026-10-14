@@ -46,6 +46,8 @@ The platform is trusted by more than 40,000 game developers worldwide, from indi
 
 The Game Analytics configuration window uses only the ***Integration*** tab.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -101,11 +103,15 @@ Once this configuration is saved, AppsFlyer begins sending the following data to
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution Links are not available for Game Analytics.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -113,14 +119,20 @@ Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 Permissions are not available for Game Analytics.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H9FK7ZH27GNEHRZ5KKVH5CHY=important h_01H9FK7ZH24E9AD7Z0J94NS0JJ=setting-up-gameanalytics h_01H9FK7ZH3VPBE965Z8MCVXSMQ=integration-tab h_01H9FK7ZH3D2H5AWW0DMBQP9R3=activate-partner h_01H9FK7ZH3E32TT8EGAYWPRWBE=general-settings h_01H9FK7ZH3P0HSQGR2409BFA2F=default-postbacks inapp-event-settings=in-app-event-settings h_01H9FK7ZH366RDSY36QVVWJMJN=in-app-event-settings h_01H9FK7ZH39J4Q7W5XSFZAEZWH=attribution-link-tab h_01H9FK7ZH37FQ6RN80E90TH4K9=cost-tab h_01H9FK7ZH3GE3G69AA03KJK499=ad-revenue-tab h_01H9FK7ZH3RQJQPAYSZBR208H7=permissions-tab" />

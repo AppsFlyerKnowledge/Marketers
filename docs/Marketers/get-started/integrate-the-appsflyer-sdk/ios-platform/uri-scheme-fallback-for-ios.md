@@ -42,6 +42,8 @@ x-zendesk:
 
 ## Use cases
 
+<div id="browsers-that-can-use-uri-schemes-by-default" />
+
 <Accordion title="Browsers that can use URI schemes by default">
 
 Sometimes, Universal Links fail to open the app, either because the app does not exist, or the link does not have Universal Links configured. In those cases, the following browsers/platforms can use URI schemes as a fallback method to open the app by default:
@@ -57,6 +59,8 @@ Sometimes, Universal Links fail to open the app, either because the app does not
 ![use case flowchart.png](https://files.readme.io/9b68ccc634b55d72a9be8f8b07d9744214a10b2f14f11bf97416fcb377b28963-41284872656401.png)
 
 </Accordion>
+
+<div id="safari" />
 
 <Accordion title="Safari">
 
@@ -94,6 +98,8 @@ The following describes the flow for users when Universal Links fail to open the
 
 </Accordion>
 
+<div id="facebook-post-unpaid" />
+
 <Accordion title="Facebook post—unpaid">
 
 The following describes the flow for users when Universal Links fail to open the app, and the link contains `af_dp` (that carries the URI scheme as the value).
@@ -121,3 +127,5 @@ The following describes the flow for users when Universal Links fail to open the
 ![diagram-X.png](https://files.readme.io/0c8040d27bbf34fdf1374b4b40a8239b6af7b6c7719db9666f36dd2829bc3217-small-17710399441553.png)
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HFV6PXS5401CCW6N2T04HGSM=about-uri-fallback-for-ios h_01KAXQDBSG2YCPBDYYPFHBXR91=note h_01HFV6PXS5WWS0B1VYF7RJAV1J=scenarios-flowchart h_01HFV6PXS51B2W497TADRGBX7Y=use-cases h_01HFV6PXS5HE462CJEE18CM5ZR=browsers-that-can-use-uri-schemes-by-default h_01HFV6PXS5N98MHJFYPSAB5XKZ=flowchart h_01HFV6PXS521E3MTCHJ5QBQGJ2=safari flowchart::db5f50ee=flowchart-1 h_01HFV6PXS57ZRSX2WAECS69XB4=flowchart-1 facebook-post%E2%80%94unpaid=facebook-post-unpaid h_01HFV6PXS5K8YZPE2B82V3DNTV=facebook-post-unpaid flowchart::df1b7de0=flowchart-2 h_01HFV6PXS504YQRDHZ1S1WS8CV=flowchart-2" />

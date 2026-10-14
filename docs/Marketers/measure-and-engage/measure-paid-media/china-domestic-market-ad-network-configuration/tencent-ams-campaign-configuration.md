@@ -38,6 +38,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -88,6 +90,8 @@ In this section, you can configure in-app event postbacks that are sent to Tence
 
 </Accordion>
 
+<div id="attribution-link" />
+
 <Accordion title="Attribution link">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -96,6 +100,8 @@ Generate and save attribution links and send them to the partner for attributing
 **To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -109,11 +115,15 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue integration is not available for Tencent AMS.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -133,3 +143,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#ad-network-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJNQZJX2TX4C8ZR2Y9JCANGC=setting-up-tencent-ams h_01HJNQZJX26YHHDX8GBBGBG68M=integration-tab h_01HJNQZJX2QSYR4D6EWB8S1BHQ=general-settings h_01KXZFXJJGZHGQT345V190R5RJ=note enable-viewthrough-attribution=enable-view-through-attribution h_01HJNQZJX2VSCTVPE1B63P24TQ=enable-view-through-attribution h_01HJNQZJX2K7EJZ89TQBKF8SB7=default-postbacks inapp-event-settings=in-app-event-settings h_01HJNQZJX2W7F5HCEGNVQHMTVE=in-app-event-settings h_01HJNQZJX2XFD0Q8J3XSCN6ZVP=attribution-link h_01HJNQZJX2R4R6FQ01BTAR184H=cost-tab h_01HJNQZJX2T985MXFNSHAP58Y9=ad-revenue-tab h_01HJNQZJX29H2ZTR0PSRHMXAM8=permissions-tab" />

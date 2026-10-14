@@ -32,6 +32,8 @@ An analytics partner account in AppsFlyer is a specialized account for analytics
 
 **To set up the integration, follow these steps:**
 
+<div id="step-1-account-registration-and-eligibility" />
+
 <Accordion title="Step 1: Register account">
 
 1. **Create a new PID via advertiser invitation:**   
@@ -43,6 +45,8 @@ An analytics partner account in AppsFlyer is a specialized account for analytics
 
 </Accordion>
 
+<div id="step-2-postback-configuration-and-profile-setup" />
+
 <Accordion title="Step 2: Set up postback endpoint and profile">
 
 1. **Approval email:** Once your registration is approved, you’ll receive an email inviting you to complete mandatory integration steps.
@@ -53,6 +57,8 @@ An analytics partner account in AppsFlyer is a specialized account for analytics
    3. Click **Save** to apply the changes.
 
 </Accordion>
+
+<div id="step-3-convert-account-type" />
 
 <Accordion title="Step 3: Convert account type">
 
@@ -66,11 +72,15 @@ An analytics partner account in AppsFlyer is a specialized account for analytics
 
 ## FAQ
 
+<div id="can-i-change-my-current-ad-network-account-to-an-analytics-account" />
+
 <Accordion title="Can I change my current ad network account to an analytics account?">
 
 No, only a newly registered PID can be converted to an analytics account. A new PID refers to one that has not sent any clicks or impressions to AppsFlyer.
 
 </Accordion>
+
+<div id="do-i-have-access-to-raw-data-export" />
 
 <Accordion title="Do I have access to raw data export?">
 
@@ -78,8 +88,12 @@ No, analytics accounts can only receive install and in-app event postbacks.
 
 </Accordion>
 
+<div id="can-i-use-attribution-links-to-generate-traffic-for-advertisers-in-an-analytics-account" />
+
 <Accordion title="Can I use attribution links to generate traffic for advertisers in an analytics account?">
 
 No, an analytics account does not have attribution links and cannot send clicks or impressions to AppsFlyer.
 
 </Accordion>
+
+<div data-zendesk-anchors="what-is-an-analytics-account=about-the-analytics-partner-integration h_01JRZE65YT0KASS4T56P0HBDWA=about-the-analytics-partner-integration onboarding-steps=set-up-the-integration h_01JRZE6BJT65Q7SQZHH1JDS6DQ=set-up-the-integration h_01JRZE9YJXSVZ10K582F45TME6=step-1-account-registration-and-eligibility h_01JRZE9YJY2VWM47X1254EHHQN=step-2-postback-configuration-and-profile-setup h_01JRZE9YJYYHT1XEZ0PC900Y0A=step-3-convert-account-type h_01JRZH0CCGQVN5Y199TCRHKYB7=faq h_01JRZH6MH4PT29S12H0QJBECW5=can-i-change-my-current-ad-network-account-to-an-analytics-account h_01JRZH6MH4ZMJA0D8N7W3JBCSJ=do-i-have-access-to-raw-data-export h_01JRZH6MH4EXZ2MFMTYPTBFYSJ=can-i-use-attribution-links-to-generate-traffic-for-advertisers-in-an-analytics-account" />

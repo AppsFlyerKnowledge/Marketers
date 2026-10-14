@@ -209,3 +209,5 @@ Your user base can be segmented by attribution data in the Braze dashboard using
 Additionally, attribution data for a particular user is available on each user’s profile in the Braze dashboard.
 
 ![Attribution data on a user profile in Braze](https://files.readme.io/d9ee5206a8bf3c092c5297c361cf38b2c77717fbb9638b282032e4fc4c31091e-360001907289.png)
+
+<div data-zendesk-anchors="h_01H9FK453A9W5DCPR4X8PR06MZ=integration-overview h_01H9FK453AWXF006KEVKD797QF=setting-up-braze h_01H9FK453AVK4YKF41FEP0YRJN=activate-partner h_01H9FK453AG6AXA7J43X6NGZT1=general-settings h_01H9FK453ASAKVHT7GV8BG56YS=default-postbacks h_01H9FK453AQXG7NNT2841686MJ=viewing-user-attribution-data-in-braze" />

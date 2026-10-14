@@ -48,3 +48,5 @@ An availability window limits data provided by Pull API and the Aggregated Data 
 > 📘 **See also**
 >
 > * [Report generation quotas](/docs/report-generation-quotas-rate-limitations)
+
+<div data-zendesk-anchors="h_01HE0FT9CNECNKYMVX9ZJJ9DNV=data-availability-windows h_01HE0FT9CNS4N1GD1AYRBSRWPF=raw-data-availability-window h_01HE0FT9CPW91ASDH9MEW083ZH=aggregated-data-availability-window h_01HE7S7VH4PC6FQAYKP6A0G4YY=see-also" />

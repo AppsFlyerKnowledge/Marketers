@@ -38,6 +38,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -76,6 +78,8 @@ In this section you can map your AppsFlyer events with Mobrain via postbacks.
 | **Send Revenue** | **When unchecked** - Send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - send all the parameters, including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -163,17 +167,23 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Mobrain automatically sends CPI cost data on the attribution link for all installs.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue data is not supported by Mobrain.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -205,3 +215,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKA1AEYTDZ5H5J33Z9FW10QW=setting-up-headway-digital-mobrain h_01HKA1AEYV5A1J168WK2D6FTVP=integration-tab h_01HKA1AEYVAM34GGG30SKTGK3X=activate-partner h_01HKA1AEYVQEEJZQBVXG29T999=general-settings h_01HKA1AEYVPH65388RM6SCPH8H=default-postbacks inapp-events-settings=in-app-events-settings h_01HKA1AEYVYSNGNKR738X9QCKB=in-app-events-settings h_01HKA1AEYV3C0VN31RM44N2Q93=attribution-link-tab h_01HKA1AEYV50HE549X8FGZ48DJ=attribution-link-parameters h_01HKA1AEYVDJSSQGSCYRK75J35=retargeting-settings clickthrough-attribution=click-through-attribution h_01HKA1AEYV721RG0D13GQDTAFH=click-through-attribution h_01HKA1AEYVBZH3W5M8GWDGM8NS=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HKA1AEYV0X18DS118ZRW9XXH=view-through-attribution-lookback-window h_01HKA1AEYV0KM6GCZESTM7DGD5=impressions-attribution-link h_01HKA1AEYVWANYAXHW5Z8N3KEK=cost-tab h_01HKA1AEYW6HCFKSSF9MZZ3BJ9=ad-revenue-tab h_01HKA1AEYWHD46RKKV3R13FXJE=permissions-tab h_01HKA1AEYWXZT0S754P18VY9R2=ad-network-permissions h_01HKA1AEYWJDXRM0QVBQQ7J58T=agency-permissions" />

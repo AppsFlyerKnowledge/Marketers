@@ -45,7 +45,7 @@ This section describes the main principles of aggregating campaign cost data.
 
 <Accordion title="Cost aggregation methods">
 
-AppsFlyer obtains cost data from media sources using one or more methods. If a media source reports cost through more than one method, then the [cost prioritization mechanism](#h_01HC7K2Y62112X308A0Y7DDDRM) determines which data AppsFlyer uses. This prevents cost data from being inflated.
+AppsFlyer obtains cost data from media sources using one or more methods. If a media source reports cost through more than one method, then the [cost prioritization mechanism](#cost-prioritization-mechanism) determines which data AppsFlyer uses. This prevents cost data from being inflated.
 
 After AppsFlyer processes the data, it shows in UTC time zone (default) or according to your [app-specific time zone](/docs/changing-app-time-zone-settings) settings.
 
@@ -54,8 +54,6 @@ After AppsFlyer processes the data, it shows in UTC time zone (default) or accor
 </Accordion>
 
 <div id="cost-data-availability-and-reports" />
-
-<div id="h_01HC7K2Y62YPM3A6Z0HBY58J00" />
 
 <Accordion title="Cost data availability and reports">
 
@@ -116,7 +114,7 @@ The following examples show how the ±10-day window affects where cost appears:
 
 </Accordion>
 
-<div id="h_01HC7K2Y62112X308A0Y7DDDRM" />
+<div id="cost-prioritization-mechanism" />
 
 <Accordion title="Cost prioritization mechanism">
 
@@ -140,6 +138,8 @@ The cost prioritization mechanism impacts aggregate data reports and dashboards.
 > **Result:** AppsFlyer aggregates cost from both the attribution link and the Cost API. Because the Cost API has priority, AppsFlyer ignores the cost on the attribution link.
 
 </Accordion>
+
+<div id="closed-beta--cost-split" />
 
 <Accordion title="Cost split">
 
@@ -196,6 +196,8 @@ Download file: [CSV](https://docs.google.com/spreadsheets/d/e/2PACX-1vQT0acJlUFI
 
 </Accordion>
 
+<div id="changing-campaign-names" />
+
 <Accordion title="Changing campaign names">
 
 AppsFlyer displays campaigns using the campaign ID as the key.
@@ -208,6 +210,8 @@ To avoid display anomalies, make sure that:
 [Learn more about campaign name changes](/docs/campaign-name-changes)
 
 </Accordion>
+
+<div id="costs-without-installs" />
 
 <Accordion title="Costs without installs">
 
@@ -257,6 +261,8 @@ AppsFlyer completes the cost data for missing dimensions from an upper-level hie
 
 </Accordion>
 
+<div id="cost-currency-conversion" />
+
 <Accordion title="Cost currency conversion">
 
 If the campaign cost currency provided by the media source differs from the app-defined currency on the platform, AppsFlyer converts the cost to the app-defined currency as follows:
@@ -267,11 +273,13 @@ If the campaign cost currency provided by the media source differs from the app-
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Description |
 | --- | --- |
-| Agencies | <ul><li>When transparent agencies run campaigns, advertisers can see costs displayed in dashboards and reports, providing a unified view. [Learn more about cost data availability and reports](#h_01HC7K2Y62YPM3A6Z0HBY58J00)</li><li>If an advertiser ends their relationship with an agency and the agency has cost configured for the app, AppsFlyer continues to pull cost data even if the advertiser disables the agency permissions at the app level. To prevent this, the advertiser must ask the agency to deactivate their cost integration in AppsFlyer before disabling the agency permissions.</li><li>For some media sources, agencies must contact the advertiser to activate the integration, and the AppsFlyer UI prompts them to do so. For these media sources, agencies and advertisers must make sure that when the media source sends data, it includes the `af_prt` parameter, required for agency cost attribution.</li><li>For X Ads, cost data for SKAN-only campaigns (those with only SKAN installs and no "regular" installs) isn't available to agencies. The advertiser must set up the cost integration. Only the advertiser can view the data.</li></ul> |
+| Agencies | <ul><li>When transparent agencies run campaigns, advertisers can see costs displayed in dashboards and reports, providing a unified view. [Learn more about cost data availability and reports](#cost-data-availability-and-reports)</li><li>If an advertiser ends their relationship with an agency and the agency has cost configured for the app, AppsFlyer continues to pull cost data even if the advertiser disables the agency permissions at the app level. To prevent this, the advertiser must ask the agency to deactivate their cost integration in AppsFlyer before disabling the agency permissions.</li><li>For some media sources, agencies must contact the advertiser to activate the integration, and the AppsFlyer UI prompts them to do so. For these media sources, agencies and advertisers must make sure that when the media source sends data, it includes the `af_prt` parameter, required for agency cost attribution.</li><li>For X Ads, cost data for SKAN-only campaigns (those with only SKAN installs and no "regular" installs) isn't available to agencies. The advertiser must set up the cost integration. Only the advertiser can view the data.</li></ul> |
 | API data freshness | <ul><li>[Intraday](/docs/about-data-freshness-and-timezone-support#intraday-during-the-day) (except for Moloco)</li><li>Mintegral data is available via the API the following day, approximately 4 hours after the previous day ends. For example, if the event occurred on Day 1, cost data is available by Day 2, at approximately 4:00.</li></ul> |
 | Campaign name changes | Ad spend data displays the most recent reported campaign name. This applies to aggregate data only, not to the raw data itself. |
 | Time zone | If a media source supports only one time zone, and that time zone differs from the one set in your app settings, AppsFlyer uses the media source's time zone. |
@@ -286,3 +294,5 @@ If the campaign cost currency provided by the media source differs from the app-
 | Mintegral: ad-level granularity | To get cost reporting with ad-level granularity from Mintegral, each ad account requires the following ad network permissions: **Sub/Package × Creative dimension**. |
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HC7K2Y627P56F5JH9QT47GB2=cost-aggregation h_01HC7K2Y62ZC932EDX00YP7DAW=principles-of-cost-data-aggregation h_01HC7K2Y62K78M02ZN034N99T0=cost-aggregation-methods h_01HC7K2Y62YPM3A6Z0HBY58J00=cost-data-availability-and-reports h_01KGS7NM964HW175AW2CF59P5K=cost-in-the-ua-view h_01M3VZAVTP7F3TF607B49TGZQ4=note cost-in-unified-view=cost-in-the-unified-view h_01KGS7QG5GNKG1YVACWQKCQFZ4=cost-in-the-unified-view h_01KGS7R5SJ3NSVJAHG3BM922VS=example cost-data-availability-and-reports::865c5bcd=cost-data-availability-and-reports-table h_01HC7K2Y62ZY6HWG5TJDEPHZKH=cost-data-availability-and-reports-table h_01M3VZAVTPK4Q2X817ER2CW62D=note-1 h_01HC7K2Y62112X308A0Y7DDDRM=cost-prioritization-mechanism h_01HC7K2Y62SZKXD4W0EJGYF6RS=example-1 %5Bclosed-beta%5D-cost-split=closed-beta--cost-split h_01KHR3PQTNF5XP7J4HZEYVRK95=closed-beta--cost-split h_01KHR3PQTNMDX8AGM1C73N7SMK=proportional-split-by-conversions h_01KZ8TMT06KNYFZ7VBX1GY07JB=note-2 h_01KHR3PQTPG8GTHV64MFCM628H=equal-split-no-conversions h_01KHR3PQTPPJYKXRYKNHM4W95A=limitations list-of-ad-networks=additional-information h_01HC7K2Y63T9GK0WW95YM39B5C=additional-information h_01HC7K2Y63MG10M4Z66VHY5WYW=ad-networks-supporting-cost-api h_01HE0T3TGPZFB2ZBHFGGWXY6AP=changing-campaign-names h_01HE0T3TGQGK6135KM7AYJ7S1G=costs-without-installs h_01HE0T3TGQMK285N8RV48KG8N9=example-2 h_01HE0T3TGQ7MSSB09GFNPYFKR1=cost-currency-conversion h_01HJ10FMTJKH48CEXM0G40Y9J1=traits-and-limitations" />

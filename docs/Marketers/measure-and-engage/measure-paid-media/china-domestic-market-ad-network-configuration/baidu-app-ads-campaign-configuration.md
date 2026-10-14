@@ -38,6 +38,8 @@ x-zendesk:
 
 Baidu App Ads configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -56,6 +58,8 @@ The Integration with Baidu Baitong Ads supports only the install event for Defau
 ![baidu-baitong-default-postback.png](https://files.readme.io/c464429db3eae2dac9fbc13df1a56090ef587cd386ed8214eabd21dac653a622-50900467293713.png)
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -98,17 +102,23 @@ Cost tab
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -129,3 +139,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW6SB83X3G0CV5A8SNB6DSJ=setting-up-baidu-app-ads-baitong h_01HKW6SB83NPWAQ0HKVJDMSXKR=integration-tab h_01HKW6SB83QKQW6D8F72ENFDB1=activate-partner h_01HKW6SB83XK3V4FT17PK0X5PZ=default-postbacks h_01HKW6SB83G06N2PWR760310XV=attribution-link-tab h_01HKW6SB83VTAYK08P42698YRR=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6SB83R8X1PWPTWG528HPY=click-through-attribution h_01HKW6SB84ZA8KXN7A7N9PEZ7X=click-attribution-link h_01HKW6SB840JT24A8QTB6Z7N7T=cost-tab h_01HKW6SB84MV2RYRQQVPYMFFJ8=ad-revenue-tab h_01HKW6SB84XA73Y64M3S8D2V58=permissions-tab h_01HKW6SB84Q2NWK0Z3YF7ZQ5QJ=ad-network-permissions" />

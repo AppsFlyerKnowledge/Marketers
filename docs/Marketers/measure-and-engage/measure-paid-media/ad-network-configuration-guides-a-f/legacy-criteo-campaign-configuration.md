@@ -45,6 +45,8 @@ For a detailed description of the Partner Configuration Window Header, click [he
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -83,6 +85,8 @@ In this section, you can map your AppsFlyer events with Criteo (Legacy) via post
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -156,11 +160,15 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data via API integration is not available from this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -193,3 +201,5 @@ Use these toggles to give the agency permissions to handle its own configuration
 Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKWB5RYT5Y39MWXD6F57T4MN=setting-up-criteo-legacy h_01HKWB5RYT26M2R3HMG35A51GA=tip h_01HKWB5RYV88ATKSS55B29GT6F=integration-tab h_01HKWB5RYVSMPRK7RD6QN8BANB=activate-partners h_01HKWB5RYVSK56GNW4805XDFCT=note h_01HKWB5RYV68B5XWQA5D9W4ZM9=default-postbacks inapp-events-settings=in-app-events-settings h_01HKWB5RYVCPM15F8DWBZ3BEMZ=in-app-events-settings h_01HKWB5RYV9TKBY8V3R4N8FWNM=attribution-link-tab h_01HKWB5RYVKXJT3MFGS7A8EKB9=attribution-link-parameters h_01HKWB5RYVYMY772BDY4Z83N84=retargeting-settings clickthrough-attribution=click-through-attribution h_01HKWB5RYV6Z028TM6YF0X6PWQ=click-through-attribution h_01HKWB5RYVGK3DT0AB89YPZS22=click-attribution-link h_01HKWB5RYVZ367Y3GY329608G3=cost-tab h_01HKWB5RYVNTRC44XVZ3H7M2H5=permissions-tab h_01HKWB5RYV6MSCFCB387342NJ4=agency-permissions" />

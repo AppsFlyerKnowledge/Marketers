@@ -78,6 +78,8 @@ When an app is first launched:
 
 #### Install attribution examples
 
+<div id="example-a-assisted-attribution" />
+
 <Accordion title="Example A: Assisted attribution">
 
 ![SRN_1.png](https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png)
@@ -93,6 +95,8 @@ When an app is first launched:
 AppsFlyer gives advertisers assist data (unattributed engagements that occur before an install). This lets advertisers customize their multi-touch or fractional attribution models. For more information, see [Assisted installs explained](/docs/measure-assisted-installs).
 
 </Accordion>
+
+<div id="example-b-last-click-attribution" />
 
 <Accordion title="Example B: Last click attribution">
 
@@ -123,6 +127,8 @@ Attribution windows include lookback and view-through. Some SRNs charge adverti
 For users to open your app when the link is clicked, you just need to set up App Links/Universal Links/URI scheme. However, to perform deep or deferred deep linking to a specific page or activity in your app, SRNs use their own methods—without involving AppsFlyer's deep linking method.
 
 So how can you deep link your users and get the relevant data from SRNs?
+
+<div id="direct-deep-linking" />
 
 <Accordion title="Direct deep linking">
 
@@ -169,6 +175,8 @@ Starting iOS 14.5, when users give ATT consent in both the advertiser and publis
 
 </Accordion>
 
+<div id="sending-event-postbacks-to-srns" />
+
 <Accordion title="Sending event postbacks to SRNs">
 
 SRNs receiving event postbacks rely on the device ID being included in the postback. This enables SRNs to self-attribute reported user actions. Many iOS 14 users are non-consenting, meaning they don't allow access to their device ID (IDFA). In this case, you should expect:
@@ -184,6 +192,8 @@ SRNs receiving event postbacks rely on the device ID being included in the postb
 </Accordion>
 
 ## FAQ
+
+<div id="how-does-retargeting-work-with-srns" />
 
 <Accordion title="How does retargeting work with SRNs?">
 
@@ -244,11 +254,15 @@ AppsFlyer research shows that solving mistargeting can have a dramatic impact on
 
 </Accordion>
 
+<div id="why-is-the-original-url-field-empty-in-raw-data-reports" />
+
 <Accordion title="Why is the Original URL field empty in raw data reports?">
 
 Click is performed in the SRN environment but without an AppsFlyer attribution link. Therefore, the click's associated Original URL data is not available to AppsFlyer.
 
 </Accordion>
+
+<div id="dashboard-doesnt-show-srn-clicks-and-impressions" />
 
 <Accordion title="Dashboard doesn't show SRN clicks and impressions">
 
@@ -257,6 +271,8 @@ Click is performed in the SRN environment but without an AppsFlyer attribution l
 [Meta Ads](/docs/meta-ads-integration-setup#cost-clicks-and-impressions) and [Google](/docs/google-ads-adwords-cost-and-ad-revenue) provide aggregated data to AppsFlyer.
 
 </Accordion>
+
+<div id="can-agencies-configure-srn-campaigns" />
 
 <Accordion title="Can agencies configure SRN campaigns?">
 
@@ -281,8 +297,12 @@ When advertising IDs contain an empty string (“”) or show the value ‘00000
 
 </Accordion>
 
+<div id="are-clicks-and-impressions-from-srns-available-in-raw-data-reports" />
+
 <Accordion title="Are clicks and impressions from SRNs available in raw data reports?">
 
 No, clicks and impressions from SRNs are not shared in raw data reports. While SRN data is used for attribution, raw clicks and impressions are not included in reports. This applies to all SRNs, including TikTok, Snap, Meta, and Google.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HFM2MET40AFB84AW5N8GKWF3=srns-integrated-with-appsflyer h_01HFM2MET4ZNKEZBT3S74N8CMC=attribution h_01HFM2MET42R6C87XB5RWX9ABJ=how-does-attribution-work-with-srns how-does-attribution-work-with-advanced%E2%80%94srns=how-does-attribution-work-with-advanced-srns h_01HFM2MET4Q6WCSANH18VTGBQX=how-does-attribution-work-with-advanced-srns h_01HFM2MET4YQGN3GZKTTBRQ4HK=install-attribution h_01HFM2MET40Y9V8YGA20CCGVNN=install-attribution-examples h_01HFM2MET47BP3T07NTRVDWSJ3=example-a-assisted-attribution h_01HFM2MET4FY6SRS534NEA25WV=example-b-last-click-attribution h_01HFM2MET4ZJF290QNE3TPXQMA=attribution-windows h_01HFM2MET4ZA6WD6HX92JNFW7X=deep-linking-with-srns h_01HFM2MET4VZX943736W52V0ZJ=direct-deep-linking h_01HFM2MET4HSVHM0Q1C8D5Z279=example h_01HFM2MET4WGVMRJW7NJ7TF8GQ=deferred-deep-linking h_01HFM2MET4DGERZJ18A7CEFDS9=ios-implications h_01HFM2MET4SRX0YRZRMHBY6DKT=ios-145-srn-attribution h_01HFM2MET471M5J2XFE7G2Z6J3=note h_01HFM2MET42KNAMWE9S9BSF4PK=sending-event-postbacks-to-srns h_01HFM2MET4WJ6TMTXM03NFFCAG=note-1 h_01HFM2MET49FZ8QHDMA7H92BTE=faq h_01HFM2MET4VYGPWR98HMAWK4YP=how-does-retargeting-work-with-srns h_01HFM2MET4JGYTW6P1VGYMYGFS=what-is-srn-mistargeting h_01HFM2MET4C1HMWH715XP42ZAQ=is-mistargeting-a-problem h_01HFM2MET41CDCP8VNGR39YMCK=solving-the-mistargeting-problem h_01HFM2MET4DETEHT8PACHS6C6B=why-is-the-original-url-field-empty-in-raw-data-reports h_01HFM2MET48Y4ATGB1HNDGSFEP=dashboard-doesnt-show-srn-clicks-and-impressions h_01HFM2MET4JEA8BBGN564CQPYX=can-agencies-configure-srn-campaigns h_01HFM2MET42V7AVV2BPZGDRARV=does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid h_01JMJ79S862T4M96ECZPVRZVJJ=are-clicks-and-impressions-from-srns-available-in-raw-data-reports" />

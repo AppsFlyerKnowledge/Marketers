@@ -38,6 +38,8 @@ x-zendesk:
 
 Yandex Direct's configuration window includes 3 active tabs: **Integration, Attribution link**, and **Permissions**.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -86,6 +88,8 @@ In this section, you can configure in-app event postbacks that are sent to Yande
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
@@ -94,6 +98,8 @@ Generate and save attribution links and send them to the partner for attributing
 **To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -107,14 +113,20 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table]
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue data is not available for this partner.
 
 </Accordion>
 
+<div id="permissions-tab" />
+
 <Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant Yandex Direct, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for Yandex Direct, the Permissions tab is active and you can grant control to Yandex Direct. [Configure permissions to Yandex Direct](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJZW81YDFP6ZV188XP3H4H54=set-up-yandex-direct h_01HJZW81YD3S8BEE6MNT30VYZH=integration-tab h_01HJZW81YD1JA5N01HT248PR8K=activate-partner h_01HJZW81YDNWAEKA2DP0QPPQRC=advanced-privacy h_01HJZW81YD8QEETTP4NSG2QCPQ=transaction-id h_01HJZW81YDT69PGFTJMQ8WTYN2=general-settings h_01HJZW81YD18MW2BNGTZCZM7ZW=yandex-ecom-feed-counter-id h_01HJZW81YDTQ0Q4H39GVJMHYNG=yandex-app-id h_01HJZW81YDZDYDES5ZPRQ5BEC3=default-postbacks inapp-events-postbacks=in-app-events-postbacks h_01HJZW81YDMTRZ2VG8S9B48GTD=in-app-events-postbacks h_01HJZW81YE8XP6Q9RA9XTCKX2T=attribution-link-tab h_01HJZW81YES6M13VVJMTAB6KXQ=cost-tab h_01HJZW81YE7CYXEDFZKWZYVYET=ad-revenue-tab h_01HJZW81YERG3X6RG9Z2CM3YSF=permissions-tab" />

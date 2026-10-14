@@ -136,6 +136,8 @@ Complete the following procedures to set up a Smart Banner that:
 
 </Accordion>
 
+<div id="2-banner-group-setup" />
+
 <Accordion title="2. Banner group setup">
 
 Banner groups contain one or more banners. Here you can:
@@ -160,7 +162,7 @@ Banner groups contain one or more banners. Here you can:
 5. Enter a unique **Banner group name**. The name should reflect a general common theme between the Banners to be defined for the banner group (e.g., the advertised app).
 6. Select the OneLink template for the banner group.
 7. [optional] Set **URI scheme** for the banner group as a fallback for Universal Links and Android App Links users. This is rarely needed as, by default, the value is taken from the OneLink template. Set this for the banner group only if you need a different value than the one in the template.
-8. Set the primary and fallback **Attributed sources** to be attributed with new installs coming from this banner group.   
+8. <span id="attributed-sources"></span>Set the primary and fallback **Attributed sources** to be attributed with new installs coming from this banner group.   
 
    **Note on click ID forwarding:** FBCLID, GCLID, WBRAID, GBRAID, ttclid, twclid, and ScCid are automatically forwarded to the outgoing URL if available on the incoming URL. For the Google click IDs, if the “keyword” parameter is also found, it puts the keyword value in the outgoing URL as the value of af\_keywords.
 
@@ -176,13 +178,14 @@ Banner groups contain one or more banners. Here you can:
 | **Use default attribution parameters** | ◦ Select when:   ▪ Most mobile website visitors are organic.   ▪ Non-organic visitors don't get to the website from click ad networks or from sources with UTM parameters. ◦ You can customize the parameter values. | **Important:** Best practice is to select UTM or incoming attribution link parameters, since the default Smart Banner attribution parameters are anyway used on the custom link as a fallback if the media source, campaign, or channel names are not available. |
 
 9. [Recommended] Set the default attribution parameter **Channel name** to attribute all installs coming from the Smart Banner to the specified channel. This enables you to aggregate information from multiple media sources under the same channel in the **Cohort report**, **Overview dashboard**, **Retention report**, and more.
-10. [Optional] Turn on **Retargeting** if you plan to use the banner group to record re-engagements performed by users clicking on the banner. To learn more on Retargeting see the [Retargeting attribution guide](/docs/retargeting-attribution-guide).
+10. <span id="2-banner-group-setup-step10"></span>[Optional] Turn on **Retargeting** if you plan to use the banner group to record re-engagements performed by users clicking on the banner. To learn more on Retargeting see the [Retargeting attribution guide](/docs/retargeting-attribution-guide).
 
-    <br /><br />**Note**<br />#### ***Important***
+    > 📘 **Important**
+    >
+    > For retargeting to work, you also need to:
+    >
+    > * [Enable retargeting for the app](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#enable-retargeting-for-the-app)
 
-    For retargeting to work, you also need to:
-
-    * [Enable retargeting for the app](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#enable-retargeting-for-the-app)
 
     Existing users who click on OneLink-powered non-retargeting banner links (UA) also launch the app and have the same user experience. However, their re-engagements are recorded as regular sessions, which means it's impossible to measure the success of the owned media campaign.
 11. [Optional] Turn on **Ignore active users for retargeting** and select the inactivity window. This adds the parameter af\_inactivity\_window=[number of days] to your smart banner group links, and all users active during the period are ignored for retargeting.
@@ -338,6 +341,8 @@ Banner performance data includes:
 * Data displayed is per banner and OneLink template. This means that if your banner and OneLink template are configured for more than one app (for example, both an Android and iOS app), the performance data that displays is for more than one app.
 * CVR may be higher than expected, sometimes even above 100%, as both view-through attributions and click-through attributions are counted.
 
+<div id="performance-page" />
+
 <Accordion title="Performance page">
 
 The performance page lets you view and compare the performance data of all your Smart Banners, up to the past 90 days.
@@ -349,6 +354,8 @@ The performance page lets you view and compare the performance data of all your 
 3. [Optional] Turn on **Show only currently active banners**. If turned on, data for banners that are paused or aren't currently active don't display, even if they were active during the selected date range. The performance data displays for the selected date range.
 
 </Accordion>
+
+<div id="performance-cards" />
 
 <Accordion title="Performance cards">
 
@@ -393,11 +400,15 @@ You can A/B test banners by comparing their performance in the performance dashb
 
 ## FAQ
 
+<div id="why-does-my-banner-not-display" />
+
 <Accordion title="Why does my banner not display?">
 
 This is due to the frequency cap set in your banner group. Frequency capping determines how many times the banner is shown to a unique user. For example, if frequency capping is set to three, and a user visits the site four times, the user sees the banner on the first 3 visits but not on the fourth and onward. Frequency capping can be disabled. Select a frequency capping value or disable frequency capping.
 
 </Accordion>
+
+<div id="can-i-use-my-own-font-for-my-banner" />
 
 <Accordion title="Can I use my own font for my banner?">
 
@@ -411,6 +422,8 @@ Yes. you can set your own font used on your website for your banner using the [i
 
 </Accordion>
 
+<div id="can-i-add-parameters-to-the-url-of-my-smart-banners" />
+
 <Accordion title="Can I add parameters to the URL of my Smart Banners?">
 
 Yes, by invoking the following two functions in your smart script:
@@ -419,6 +432,8 @@ Yes, by invoking the following two functions in your smart script:
 * [updateParams](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#updateparams)
 
 </Accordion>
+
+<div id="do-smart-banners-support-deep-linking" />
 
 <Accordion title="Do Smart Banners support deep linking?">
 
@@ -432,11 +447,15 @@ Make sure your developer implements the desired behavior of the deep\_link\_valu
 
 </Accordion>
 
+<div id="can-smart-banners-show-different-content-based-on-whether-or-not-users-have-the-app-installed" />
+
 <Accordion title="Can Smart Banners show different content based on whether or not users have the app installed?">
 
 No. If you don't know whether or not users have the app, we recommend you make your call to action applicable to both. For example: "Go to the app" or "open the app."
 
 </Accordion>
+
+<div id="do-original-incoming-url-parameters-remain-available-for-the-smart-banner-url-when-users-navigate-away-from-and-then-return-to-the-banners-landing-page" />
 
 <Accordion title="Do original incoming URL parameters remain available for the Smart Banner URL when users navigate away from, and then return to, the banner's landing page?">
 
@@ -444,11 +463,15 @@ Yes. If the original incoming URL contains a utm\_source or pid parameter, the o
 
 </Accordion>
 
+<div id="can-i-set-my-banners-to-display-on-my-mobile-site-but-not-on-my-wrapperhybrid-app" />
+
 <Accordion title="Can I set my banners to display on my mobile site but not on my wrapper/hybrid app?">
 
 Yes. To do so, when you implement Smart Banners in a wrapper/hybrid app and load the banner page from the app (and not from a web browser), don't use the [showBanner](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner%20target=) function, as this displays the banner in the app. Alternatively, use the [hideBanner](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#hidebanner) function.
 
 </Accordion>
+
+<div id="do-smart-banners-support-web-accessibility" />
 
 <Accordion title="Do Smart Banners support web accessibility?">
 
@@ -461,6 +484,8 @@ However, determining the relevant accessibility requirements for your own intend
 Please note that various changes to the Smart Banner might impact its compatibility with the relevant accessibility requirements, including for example, by editing the colors and size of internal banner elements.
 
 </Accordion>
+
+<div id="if-a-smart-banner-is-deleted-from-a-banner-group-will-the-data-associated-with-that-banner-group-also-be-removed" />
 
 <Accordion title="If a smart banner is deleted from a banner group, will the data associated with that banner group also be removed?">
 
@@ -479,3 +504,5 @@ No. Attribution data is not deleted if a smart banner is deleted.
 | Specific page | When you set up your banner group to display banners on a specific page, the banner rule applies only to the host/path you enter. If there is not a perfect match (for example, if your site page has additional strings not included in the rule setup), the rule doesn't apply. |
 | Tablets | • Smart Banners are designed for mobile devices and their resolutions may not be optimized for tablets with large screens. • Browsers on tablets may not be recognized as mobile devices. |
 | The banner displays alongside a vacant area | When encountering this behavior, assess its cause using the following criteria:<ul><li>Verify that the SDK code snippet has not been implemented more than once on the webpage.</li><li>Ensure that the [`showBanner`](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner) function has not been invoked multiple times.</li></ul> |
+
+<div data-zendesk-anchors="h_01HB5W700P3GP7JS4PFDF65EWT=note h_01HB5W700PWY5G45BYNWPKAC52=smart-banners h_01HB5W700QQMYSEFBBXVJ97M0M=example h_01HB5W700QGWTWDXBNB2GAPQ3B=important h_01HB5W700QVNYJT48VAP9Y7HQS=setup h_01HB5W700Q7G5E98V0DBN9P5VZ=1-website-workplace-setup h_01HB5W700QE7MDBSN5GH4E7ABR=prepare-your-mobile-site-to-display-smart-banners-for-the-first-time h_01HB5W700Q57WXKFSWXNF22QZ1=to-create-website-workplaces-after-the-first-time h_01HB5W700QY1FH2SYX6DM4HDEQ=2-banner-group-setup h_01HDH1BQSXCQV9QCJGZ4VNXGPQ=important-1 h_01HB5W700QYJ9NR5F4VT59NG2Q=example-1 targeting-behavior=targeting--behavior h_01HB5W700QYC48YTJY9B8JT0XM=targeting--behavior h_01HB5W700QG54YYQFHGA2J41RY=3-banner-setup h_01HB5W700QD0WKNAP5X6T9E6DQ=example-2 h_01HB5W700QX5J59BBK1AV7VFV6=4-testing h_01HB5W700Q6WHMVFNSVM2E9JXN=view-banner-performance h_01HB5W700QEP46WV78KEYD1RT1=performance-page h_01HB5W700QZ705H5EE0PFHB1KY=performance-cards h_01HB5W700Q9XD8MGEK0B3ZZJS3=additional-information h_01HB5W700QHW078W3RRCB81AWM=banner-group-display-logic h_01HB5W700QNYT482FR0FRHP2DC=ab-testing-banner-performance h_01HB5W700Q90F1KMASF94EZWEM=faq h_01HB5W700Q1ZP3RAR94T41SXK2=why-does-my-banner-not-display h_01HB5W700QKBVFQHH9D8WD36R2=can-i-use-my-own-font-for-my-banner h_01HB5W700R2AJC2C1PRT5PTH8G=can-i-add-parameters-to-the-url-of-my-smart-banners h_01HB5W700RAVG10QZDBPXWT14G=do-smart-banners-support-deep-linking h_01HB5W700R12DSA6HF4HVWGW9P=can-smart-banners-show-different-content-based-on-whether-or-not-users-have-the-app-installed h_01HB5W700RT122T2M6NXFPSXDV=do-original-incoming-url-parameters-remain-available-for-the-smart-banner-url-when-users-navigate-away-from-and-then-return-to-the-banners-landing-page h_01HB5W700RH40FGHWVJ9J31R9F=can-i-set-my-banners-to-display-on-my-mobile-site-but-not-on-my-wrapperhybrid-app h_01HB5W700R11SHAKV5W21MXCX8=do-smart-banners-support-web-accessibility h_01JSVH17EH97S8B7EBCD4QHS1Q=if-a-smart-banner-is-deleted-from-a-banner-group-will-the-data-associated-with-that-banner-group-also-be-removed traits-and-limitations=troubleshooting--traits-and-limitations h_01HB5W700RXHC22QGXDX4GG1AR=troubleshooting--traits-and-limitations" />

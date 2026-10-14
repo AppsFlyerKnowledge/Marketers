@@ -61,6 +61,8 @@ From the **New connection** dialog, select the cloud service you are connecting
 
 ![dcr_create_inbound_connection.png](https://files.readme.io/b30606026761528f4a0d3efcc1a3207e8b9c99ca8202f76b2d698a86efaa21ee-13913809617297.png)
 
+<div id="bigquery-inbound" />
+
 <Accordion title="BigQuery">
 
 In the **New connection** dialog, enter the BigQuery **project ID** for the project that contains your custom data source.
@@ -71,6 +73,8 @@ In the **New connection** dialog, enter the BigQuery **project ID** for the proj
 
 </Accordion>
 
+<div id="snowflake-inbound" />
+
 <Accordion title="Snowflake">
 
 In the **New connection** dialog, enter the **Snowflake account ID** and **region** for the account that contains your custom data source. You can get this information by clicking on the account name at the bottom-left menu of your Snowflake console:
@@ -80,6 +84,8 @@ In the **New connection** dialog, enter the **Snowflake account ID** and **regio
 ![ui-snowsight-account-identifier.png](https://files.readme.io/9995c3fd523548de93bafc7c575203e7d38be3b6be2a5e876d7a0a8495ca04c9-24698313004433.png)
 
 </Accordion>
+
+<div id="s3-gcs-inbound" />
 
 <Accordion title="Amazon S3 and GCS">
 
@@ -129,10 +135,12 @@ From the **New connection** dialog, select the cloud service you are connecting
 
 [![dcr_dl_new_connection_dialog.png](https://files.readme.io/fe77a008f036e15f6e192a7a2dc660efd54c92fb3bcceb0be9625420f66893e3-13928181611025.png)](https://files.readme.io/fe77a008f036e15f6e192a7a2dc660efd54c92fb3bcceb0be9625420f66893e3-13928181611025.png)
 
+<div id="bigquery-outbound" />
+
 <Accordion title="BigQuery">
 
 1. In the **New connection** dialog, enter a name for the connection; then select the **BigQuery** option.
-2. Enter the **Project ID** and **Dataset name** for the BigQuery project that contains the [dataset you created](/docs/data-clean-room-setting-up-cloud-services#bigquery-outbound) for Data Locker.  
+2. Enter the **Project ID** and **Dataset name** for the BigQuery project that contains the [dataset you created](/docs/data-clean-room-setting-up-cloud-services#bigquery-inbound) for Data Locker.  
    * You can get this information from the Big Query page of your Google Cloud Console.
 
      ![BQ_project_ID_dataset_name.png](https://files.readme.io/c784b0369c51a6e123279fdc5b2fa1fba255ae371d436e9247cb5e4685387983-13928683779089.png)
@@ -154,7 +162,7 @@ The procedure for connecting Snowflake to Data Locker is a 2-step process:
 
 **Note:** The following procedure must be performed by a Snowflake **Accountadmin.**
 
-*<span id="step-1"></span>*Step #1 (create the initial connection) –**
+<span id="step-1"></span>**Step #1 (create the initial connection) –**
 
 1. In the **New connection** dialog, enter a name for the connection; then select the **Snowflake** option.
 2. Enter your Snowflake account region and account ID.
@@ -164,7 +172,7 @@ The procedure for connecting Snowflake to Data Locker is a 2-step process:
 3. Click the ![dcr_dl_test_connection_button.png](https://files.readme.io/8c789303491a4524515216aca06dc4b3435b5b0baa3aaa8726ff73cce968c5bc-13928683412241.png) button to ensure that Data Locker is connected to your Snowflake account.
 4. Click **Save** to create the connection.
 
-*<span id="step-2"></span>*Step #2 (create a database from share)** –
+<span id="step-2"></span>**Step #2 (create a database from share)** –
 
 1. [Log in to your Snowflake account](https://docs.snowflake.com/en/user-guide/connecting.html#logging-in-using-the-web-interface).
 2. Switch your role to **Accountadmin.**
@@ -176,9 +184,13 @@ The procedure for connecting Snowflake to Data Locker is a 2-step process:
 
 </Accordion>
 
+<div id="s3-gcs-outbound" />
+
 <Accordion title="Amazon S3 and GCS">
 
 1. In the Data Locker **New connection** dialog, enter a name for the connection; then select either the **Amazon S3** or **GCS** option.
 2. Enter the name of the [bucket you created](/docs/data-clean-room-setting-up-cloud-services#cloud-storage-buckets--amazon-s3-and-gcs) for the exclusive use of DCR.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKA1AS2QGDTPW85WA07K35M0=overview h_01HKA1AS2QRRBJAYNKSWWZXE3N=creating-inbound-connections complete-the-connection-inbound=complete-the-connection h_01HKA1AS2Q06F07RDD8W384RE2=complete-the-connection h_01HKA1AS2QXP5H2HBJ911F3TPZ=bigquery-inbound h_01HKA1AS2QCPC6515FZ45E8Q67=snowflake-inbound h_01HKA1AS2QQZWFMRQD0T0FNQM5=s3-gcs-inbound h_01HKA1AS2QAV9DJWZQ2703TS0Z=creating-outbound-connections h_01HKA1AS2Q76NP9FY7S4H0QP4D=note complete-the-connection-outbound=complete-the-connection-1 h_01HKA1AS2RKTWNY2ZR7VYAJC90=complete-the-connection-1 h_01HKA1AS2R7RFWKM2W89QSEH3V=important h_01HKA1AS2RJXZPCBKE7ST0SA63=bigquery-outbound h_01HKA1AS2R7TV495V39N35CWAR=snowflake-outbound h_01HKA1AS2RBTK8NZF09BYWDX2G=s3-gcs-outbound" />

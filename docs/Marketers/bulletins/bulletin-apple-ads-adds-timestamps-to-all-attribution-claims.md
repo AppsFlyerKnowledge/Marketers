@@ -32,3 +32,5 @@ x-zendesk:
 #### See also
 
 * [Apple Ads integration setup](/docs/apple-ads-integration-setup)
+
+<div data-zendesk-anchors="h_01M0YZSHS593T92XC58PR1FXYY=see-also" />

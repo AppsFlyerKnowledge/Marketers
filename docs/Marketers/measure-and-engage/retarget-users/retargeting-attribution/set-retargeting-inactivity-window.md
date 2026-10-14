@@ -46,6 +46,8 @@ By setting a minimum inactivity time, Advertisers don't attribute active users. 
 
 In the following retargeting scenarios, the inactivity period is defined for the media source.
 
+<div id="reattribution" />
+
 <Accordion title="Re-attribution">
 
 The user scenario is depicted in the figure that follows. The user:
@@ -62,6 +64,8 @@ The user scenario is depicted in the figure that follows. The user:
 | B | 14 days | 5 days<br /><br />The user was active. | <ul><li>**Organic reinstall**</li><li>**Non-organic reinstall:** if the user engaged with a UA media source.</li><li>Retargeting media source A can't be attributed due to the user inactivity threshold.</li></ul> |
 
 </Accordion>
+
+<div id="reengagement" />
 
 <Accordion title="Re-engagement">
 
@@ -82,6 +86,8 @@ The user scenario is depicted in the figure that follows. The user:
 
 ## Partner setup
 
+<div id="zd-srn" />
+
 <Accordion title="SRN">
 
 SRNs that support inactivity periods have this feature set up on their Integration tab.
@@ -98,6 +104,8 @@ SRNs that support inactivity periods have this feature set up on their Integrati
 
 </Accordion>
 
+<div id="nonsrn-click-ad-networks" />
+
 <Accordion title="Non-SRN (click ad networks)">
 
 **To define an inactivity period for non-SRNs that support retargeting:**
@@ -111,6 +119,8 @@ SRNs that support inactivity periods have this feature set up on their Integrati
 [![](https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png)](https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png)
 
 </Accordion>
+
+<div id="agencies" />
 
 <Accordion title="Agencies">
 
@@ -146,3 +156,5 @@ Partner (supports retargeting)
 | Trait | Remarks |
 | --- | --- |
 | Testing links | When using a registered test device, make sure to remove the `af_inactivity_window` parameter from the testing link. Otherwise, the install may be incorrectly attributed as *Organic* instead of being attributed to the test link. |
+
+<div data-zendesk-anchors="h_01H9JS3QKW5S7VP9YW05CB6STR=inactivity-period h_01H9JS3QKXMBS95RG06A9JXGT0=retargeting-inactivity-terminology h_01H9JS3QKXWDX8Y58GX1G5HNYY=scenarios h_01H9JS3QKXN0E0MGD35173C9FR=reattribution h_01H9JS3QKXNS77EFYBZP94YQMT=reengagement h_01H9JS3QKXGNFM8499G52458B2=partner-setup srn=zd-srn h_01H9JS3QKXCAHG91VS6VSVJTTT=zd-srn h_01H9JS3QKX8R8AXHQWKX7FR9GZ=nonsrn-click-ad-networks h_01H9JS3QKXSDXA5Z7TWN2A7S5K=agencies srn::bd853114=srn h_01H9JS3QKX88HQYJ5881W7VXF2=srn nonsrn=non-srn h_01H9JS3QKXRJ8W9H89JBVSZ3R3=non-srn h_01J6S6HS0H0M6GQ81WGZ3XT0P9=traits-and-limitations" />

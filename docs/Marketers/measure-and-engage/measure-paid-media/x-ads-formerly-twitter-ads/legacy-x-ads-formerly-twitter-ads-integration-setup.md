@@ -68,6 +68,8 @@ x-zendesk:
 
 For a detailed description of the partner configuration page Header, click [here](/docs/set-up-an-integrated-partner).
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The **Integration Tab** is divided into different sections, as described below. [Partner must be activated](/docs/partner-activation-deactivation) on the first visit to enable its setup.
@@ -147,6 +149,8 @@ In this section, you can map your AppsFlyer events with your partners via postba
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 X Ads does not use attribution links for attribution.
@@ -156,6 +160,8 @@ X Ads does not use attribution links for attribution.
 > For all [self-reporting networks (SRNs)](/docs/self-reporting-networks-srns), such as Meta ads, Apple Ads, Google Ads, X Ads, etc., this tab is not functional since they don't use external attribution links.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -173,11 +179,15 @@ The cost integration provides the following aggregated data:
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue is not currently available for X-Ads.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -211,6 +221,8 @@ Learn about [granting agency permissions](/docs/set-up-an-integrated-partner#age
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
@@ -222,3 +234,5 @@ Learn about [granting agency permissions](/docs/set-up-an-integrated-partner#age
 Traits and limitations
 
 </Accordion>
+
+<div data-zendesk-anchors="connecting-your-twitter-ads-account-to-appsflyer=connecting-your-x-ads-account-to-appsflyer h_01HDJVCRYQESA17XZ83GS81YZ3=connecting-your-x-ads-account-to-appsflyer h_01HDJVBAEZXA0WJ94JYMK84MAX=before-you-begin twitter-ads-attribution-setup=x-ads-attribution-setup h_01HDJVBAEZ5W3JH1BN7WXJ08P6=x-ads-attribution-setup h_01HDJVBAEZSFKRXAKQJP58N550=integration-tab h_01HDJVBAEZD89BSGHQTPR84HSC=ad-account-connected clickthrough-attribution=click-through-attribution h_01HDJVBAEZFJWQ6FD4Q4GSPD76=click-through-attribution viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HDJVBAEZ2H91WBHNSMRQYQ7H=view-through-attribution-lookback-window reengagement-settings=re-engagement-settings h_01HDJVBAEZZR1W06YH4XJSBKHV=re-engagement-settings h_01JV9YQ7ZHRDD2NA5ENQXJQ31V=important reengagement-clickthrough-lookback-window=re-engagement-click-through-lookback-window h_01HDJVBAEZ59ERYD2WQQYK6T37=re-engagement-click-through-lookback-window reengagement-viewthrough-lookback-window=re-engagement-view-through-lookback-window h_01HDJVBAEZSCK7430NJ8AMQYVY=re-engagement-view-through-lookback-window reengagement-window=re-engagement-window h_01HDJVBAEZCMWY5X47FEEFXTBX=re-engagement-window inapp-event-postback-settings=in-app-event-postback-settings h_01HDJVBAEZ5ZM9RDXPWTJPPYVA=in-app-event-postback-settings h_01HDJVBAEZATGM580CNC7BCVTN=note h_01HDJVBAEZR1Q2SVE9MEQ9EXKP=attribution-link-tab h_01HDJVBAEZ7R7BKFAZYXXBGS5Y=note h_01HDJVBAEZYSWN59VNXTDEWX93=cost-tab h_01HDJVBAF0VPBBAEHJPG40HJP8=ad-revenue-tab h_01HDJVBAF0KEVSWJ0EW54AEAWV=permissions-tab h_01HDJVBAF0BMSCKF6J9NJ019YJ=ad-network-permissions h_01HDJVBAF0W3ZE7J93CRE8EBRP=agency-permissions advanced-twitter-ads-setup-video=advanced-x-ads-setup-video h_01HDJVBAF0SJ93TNQ8WSFVE91P=advanced-x-ads-setup-video h_01HGWGG2422VR9PFV88AMEHNT8=traits-and-limitations" />

@@ -35,6 +35,8 @@ x-zendesk:
 >
 > After you set up 2FA, don’t delete your authenticator app. Doing so breaks the connection to AppsFlyer, and you won’t be able to log in.
 
+<div id="firsttime-setup" />
+
 <Accordion title="First-time setup">
 
 #### **New account user**
@@ -58,6 +60,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="ongoing-use" />
+
 <Accordion title="Ongoing use">
 
 **Follow these steps for ongoing use.**
@@ -68,6 +72,8 @@ x-zendesk:
 4. Click **Verify,** and you'll be redirected to the **My apps** page.
 
 </Accordion>
+
+<div id="reset-a-users-2fa" />
 
 <Accordion title="Reset a user's 2FA">
 
@@ -94,6 +100,8 @@ Note: If you are an account owner, you can reset your own 2FA in [the steps that
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 <Accordion title="Traits and limitations">
 
 | Name | Description |
@@ -101,3 +109,5 @@ Note: If you are an account owner, you can reset your own 2FA in [the steps that
 | AppsFlyer apps | With 2FA enabled, both the AppsFlyer apps, **My Device ID by AppsFlyer** and **AppsFlyer**, cannot be used. To register test devices, use the method [here](/docs/registering-test-devices). |
 
 </Accordion>
+
+<div data-zendesk-anchors="highlights=intro h_01HEHRKE8PY64KWVSSFR6T4F1Z=intro h_01KBVXP9J12428VNPQAG7N2B52=note h_01KBVXHY4VHJG6CJWHFTVK4644=important h_01HEHRKE8QQTX3Y9ZY1HZ6GBAG=firsttime-setup h_01KBMCFPDWRBF5NPKWF3JSHBS4=new-account-user h_01KBMCFSS5ACAB5T6SAJ2ETNGC=existing-account-users h_01HEHRKE8QHWHCMNB5M7S5YVYJ=ongoing-use h_01KBMBVZX1N60YJKTJRAN66DY7=reset-a-users-2fa h_01KBMCSYNWA41JAP498F19JQKZ=for-an-admin-resetting-a-users-2fa h_01KBMCVPFMZAC6Z05SNW3CEHQ4=for-an-account-owner-resetting-their-own-2fa h_01KBVY16MN92WV0TC81QBWCNW4=traits-and-limitations" />

@@ -50,6 +50,8 @@ The Leanplum configuration window uses only the **Integration** tab.
 
 For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration tab is divided into different sections as described below.
@@ -99,11 +101,15 @@ Click **Save.**
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Attribution links are not available for Leanplum.
 
 </Accordion>
+
+<div id="cost-tab" />
 
 <Accordion title="Cost tab">
 
@@ -111,11 +117,15 @@ Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -130,3 +140,5 @@ Once you have set up the integration between Leanplum and Appsflyer, you can acc
 [![](https://files.readme.io/5685cfe357930bd57611365d7f47fff1608a8e7c345110070763af26374e01bc-206117523.png)](https://files.readme.io/5685cfe357930bd57611365d7f47fff1608a8e7c345110070763af26374e01bc-206117523.png)
 
 This menu is available in the Analytics, Messages, A/B Tests, and Users sections of the Leanplum platform. You can filter by, group by, and cohort by this data in Analytics, filter by this data in the Users section, and target by this data in Analytics and A/B Tests.
+
+<div data-zendesk-anchors="h_01H9FKB51R253NAXWEKSYVRZ3P=important h_01H9FKB51RA35X0G19ZPN2KAQ7=setting-up-leanplum h_01H9FKB51VVVS5C4WEQ4FKHH4H=integration-tab h_01H9FKB51VY7QASRV8XW8KRZK1=activate-partner h_01H9FKB51VA8A6XZYM3W6AVNMH=general-settings h_01H9FKB51VFGCW21AG0BYWGFXZ=obtaining-the-app-id-and-client-key h_01H9FKB51V63GPAS3R1GBWNTWR=default-postbacks h_01H9FKB51VR8160P1RQK994DGZ=attribution-link-tab h_01H9FKB51VEJWHZXKENFASR9NG=cost-tab h_01H9FKB51V7C44MGTWR3RNX4D8=ad-revenue-tab h_01H9FKB51VY9V478W297NB58EM=permissions-tab h_01H9FKB51VHAYS1STK6GQE4515=viewing-user-attribution-data-in-leanplum" />

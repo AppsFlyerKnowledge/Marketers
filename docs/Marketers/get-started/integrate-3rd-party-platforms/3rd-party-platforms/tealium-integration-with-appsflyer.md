@@ -54,3 +54,5 @@ Set up the AppsFlyer App Events connector in your Customer Data Hub account to t
 **To integrate Tealium using server-side integration:**
 
 * Follow the [AppsFlyer App Events connector guide](https://docs.tealium.com/server-side-connectors/appsflyer-app-events-connector/)
+
+<div data-zendesk-anchors="h_01H9HWK1ACY09ZVD7WHEQR4MR3=overview h_01H9HWK1ACA6A743PDY3Q1Y0KV=important h_01H9HWK1AC27GPZPZR13SFC3GM=setting-up-tealium clientside-integration=client-side-integration h_01H9HWK1ACH6K0FDTVCHAPSKME=client-side-integration serverside-integration=server-side-integration h_01H9HWK1ACDZQEYVRZ7QWQ4KY3=server-side-integration" />

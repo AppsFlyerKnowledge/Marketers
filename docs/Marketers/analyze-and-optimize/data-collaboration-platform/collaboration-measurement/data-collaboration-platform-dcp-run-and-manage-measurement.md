@@ -68,10 +68,11 @@ Use the guidance below to decide which measurement fits your goal.
    If **Run now** is disabled, your measurement tasks are incomplete. Complete all required setup tasks to run the measurement.
 2. In the **Prepare to run** dialog, select **Live dashboard**.
 
-   <br /><br />**Note**<br />#### Note
+   > 📘 **Note**
+   >
+   > * If the measurement uses [Overwrite](/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method) sources, only the **Historical dashboard** is available. **Live dashboard** requires **Append-type** sources (or AppsFlyer SDK in-app events) to refresh automatically.
+   > * Only **one live measurement** can run at a time in a collaboration. If you start a new live measurement while another one is already running, you’ll be prompted to pause the existing one.
 
-   * If the measurement uses [Overwrite](/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method) sources, only the **Historical dashboard** is available. **Live dashboard** requires **Append-type** sources (or AppsFlyer SDK in-app events) to refresh automatically.
-   * Only **one live measurement** can run at a time in a collaboration. If you start a new live measurement while another one is already running, you’ll be prompted to pause the existing one.
 3. Rename the dashboard or keep the default name.
 4. Select the **measurement start date**. The default is today’s date, but you can select a past date from the date picker. (You can only select dates that exist in your data sources.)
 5. Click **Start** to begin the live measurement. You’ll be redirected to the collaboration measurement page.
@@ -99,6 +100,8 @@ After you set up and run your measurement, manage it from the measurement panel 
 
 [![](https://files.readme.io/f1ff9677dcae50df83fe32a8c54925c52ea91f5a2f7f133bc6bce3041fe0341d-44437720904209.png)](https://files.readme.io/f1ff9677dcae50df83fe32a8c54925c52ea91f5a2f7f133bc6bce3041fe0341d-44437720904209.png)
 
+<div id="pause-or-restart-live-measurement" />
+
 <Accordion title="Pause or restart live measurement">
 
 #### Legend
@@ -116,6 +119,8 @@ After you set up and run your measurement, manage it from the measurement panel 
    * To **restart** live attribution, turn on **Activate measurement**.
 
 </Accordion>
+
+<div id="change-measurement-start-and-end-dates" />
 
 <Accordion title="Change measurement start and end dates">
 
@@ -135,6 +140,8 @@ To change the measurement start and end dates, follow these steps:
 
 </Accordion>
 
+<div id="rerun-a-historical-measurement" />
+
 <Accordion title="Re-run a historical measurement">
 
 Re-running a historical measurement recalculates attribution using the latest data. The current results are replaced with the new results.
@@ -147,6 +154,8 @@ Re-running a historical measurement recalculates attribution using the latest da
 
 </Accordion>
 
+<div id="duplicate-a-live-or-historical-measurement" />
+
 <Accordion title="Duplicate a live or historical measurement">
 
 Duplicating creates a new measurement based on an existing setup. You can update the settings and run it as a new measurement.
@@ -157,6 +166,8 @@ Duplicating creates a new measurement based on an existing setup. You can update
 4. In the duplicated **Measurement settings** page, customize the measurement to your needs.
 
 </Accordion>
+
+<div id="share-a-dashboard" />
 
 <Accordion title="Share a dashboard">
 
@@ -181,3 +192,5 @@ To share a dashboard:
 3. Turn off **Shared** to stop sharing. When sharing is turned off, only you (and users with the right permissions) can access the dashboard.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01KJW81RSZPK2Y1PSAF9FSMXB6=about-the-measurement-run-modes h_01KJW81RSZBG5ZC8HE9WFXE34D=live-vs-historical-measurements h_01KJW81RSZQG21Z0MRHWPMD69F=choose-the-measurement-you-need h_01KJW81RT0Q1RWEHZP66B5141M=run-a-live-measurement h_01KJW81RT0N37ARE5570X7MYJF=note h_01KJW81RT0QECMGBTRFSETA5A8=run-a-historical-measurement h_01KJW81RT046RE5FVHPGEDMCC5=manage-measurements h_01KJWNTR04PRG54W0GZVGQY72X=the-collaboration-measurement-page h_01KJWNF8NAJ9NT5T8NAVTCMZVA=legend h_01KJW81RT0A148W49X0BR0V9YM=pause-or-restart-live-measurement h_01KJW81RT0GYDCZCXXV2G5EJD7=change-measurement-start-and-end-dates h_01KJW81RT054CCYMTKFN7TS1XV=rerun-a-historical-measurement h_01KJW81RT0RKQJRCTRVP36YBKV=duplicate-a-live-or-historical-measurement h_01KJW81RT0C3R95JQVPGSZ043B=share-a-dashboard" />

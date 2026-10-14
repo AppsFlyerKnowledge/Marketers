@@ -45,6 +45,8 @@ For a detailed description of the Partner Configuration Window Header, click [he
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -75,6 +77,8 @@ In this section, you can map your AppsFlyer events with Adcash via postbacks.
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -117,17 +121,23 @@ This is the attribution link that contains all the setup information you have se
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost data is not supported by Adcash.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue is not supported by Adcash.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -148,3 +158,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJR5XJE7Q9RNPPF86QX7RBZM=setting-up-adcash h_01HJR5XJE7T4ECXFCG58T9Q856=tip h_01HJR5XJE7AR07Y75GBM6JRXBT=integration-tab h_01HJR5XJE7AHST79EBMKXQ2B62=activate-partner h_01HJR5XJE7ZCWWKD8PE6192JXF=general-settings h_01HJR5XJE76R9VRV34QFMAEVCB=default-postbacks inapp-events-settings=in-app-events-settings h_01HJR5XJE7VZ1KC0MJJMWC87S2=in-app-events-settings h_01HJR5XJE7HGJ190GEEYCF61YQ=attribution-link-tab h_01HJR5XJE74T0HF0KVQNF6D3NR=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HJR5XJE72JNRGC4SHV32CYM1=click-through-attribution h_01HJR5XJE8J29TB6GQMEKYHCPF=click-attribution-link h_01HJR5XJE88YGHBF3FC73EMTEB=cost-tab h_01HJR5XJE8R0BP3EVJ50W9MV1Y=ad-revenue-tab h_01HJR5XJE8ZQ6X5KYYWGGM8VKH=permissions-tab h_01HJR5XJE8B4W3E3SAT89YQVR3=ad-network-permissions" />

@@ -75,3 +75,5 @@ Organic keyword data is found in the following:
 5. Install and launch the app.  
    [![Hotels_Tonight_3.png](https://files.readme.io/c455f8229ba7879157eec6782d0eb2d94a91e1080a3c081f5452cc7e92608047-205710046.png)](https://files.readme.io/c455f8229ba7879157eec6782d0eb2d94a91e1080a3c081f5452cc7e92608047-205710046.png)
 6. Search for the keyword in the AppsFlyer sources described above.
+
+<div data-zendesk-anchors="h_01HKA1D1TW1R20X6K05Q9GX904=keyword-data h_01HKA1D1TW9YXBMGERHW4EHZZN=ios-keywords h_01HKA1D1TWT1VQ6NZ789BTCZJX=android-keywords h_01HKA1D1TW7E2RM7SXC9R5SA99=note using-the%C2%A0keyword%C2%A0data=using-thekeyworddata h_01HKA1D1TWRPGTNGJKF7T1R71B=using-thekeyworddata testing-organic%C2%A0keyword%C2%A0data=testing-organickeyworddata h_01HKA1D1TW5W9A72V2NMPX932H=testing-organickeyworddata" />

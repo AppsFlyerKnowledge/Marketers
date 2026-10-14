@@ -60,6 +60,8 @@ The scenarios below cover the requirements for all possible media source cases.
 
 Follow the implementation instructions below **for all the media sources** sending leads to your landing pages.
 
+<div id="facebook-ads-crossplatform-attribution" />
+
 <Accordion title="Meta ads: cross-platform attribution">
 
 #### Description:
@@ -93,6 +95,8 @@ The landing page script makes no changes. The script is designed to detect a use
 In the script, look for a method called ***isFacebook()*** to learn more about what the script does when a user comes from the Facebook app.
 
 </Accordion>
+
+<div id="google-ads-gclid-offline-conversion-upload" />
 
 <Accordion title="Google Ads: GCLID + offline conversion upload">
 
@@ -219,6 +223,8 @@ To learn more about what the script does, look for **pidValue** in the script.
 
 </Accordion>
 
+<div id="attribution-links-redirect-with-af_r" />
+
 <Accordion title="Attribution links: redirect with af_r">
 
 #### Description:
@@ -256,6 +262,8 @@ To learn more about what the script does to handle cases where users reach the l
 
 </Accordion>
 
+<div id="links-with-utm-parameters-dynamic-onelink" />
+
 <Accordion title="Links with utm parameters: dynamic OneLink">
 
 #### Description
@@ -289,6 +297,8 @@ The script looks for UTM parameters in the landing page URL. If it finds any, it
 
 </Accordion>
 
+<div id="mobile-organic-visitors-onelink-with-pidwebsite" />
+
 <Accordion title="Mobile organic visitors: OneLink with pid=website">
 
 #### Description
@@ -315,6 +325,8 @@ To learn how to set and build OneLink URLs go [here](/docs/create-a-onelink-temp
 Exhausting all other options, the script determines that the user is an organic user that doesn't come from any campaign. The script creates a OneLink that reflects that and puts it as the link behind the download button on the landing page.
 
 </Accordion>
+
+<div id="desktop-visitors-telephoneemail-form" />
 
 <Accordion title="Desktop visitors: telephone/email form">
 
@@ -353,6 +365,8 @@ Below you can find the code implementation of the javascript that performs the f
 For your convenience, you can also download the attached landing page example.
 
 Below the code, you can find the instructions for adapting it to your landing page needs.
+
+<div id="the-script" />
 
 <Accordion title="The script">
 
@@ -530,6 +544,8 @@ function generateUrl(isDebug) {
 
 </Accordion>
 
+<div id="html-sample-for-landing-page" />
+
 <Accordion title="HTML sample for landing page">
 
 ```html
@@ -630,3 +646,5 @@ If you haven't implemented OneLink for your app:
 1. Configure [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template).
 2. Create a [OneLink URL](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link) based on the template.
 3. In the script, replace https://yourapp.onelink.me/abcd with your OneLink URL.
+
+<div data-zendesk-anchors="description::7888dd9d=description-1 conclusion::11bed45=conclusion-1 instructions::5aa3290f=instructions-1 what-the-script-does::2a675257=what-the-script-does-1 description::650e3f28=description-2 conclusion::a982e4bd=conclusion-2 instructions::afffc83f=instructions-2 what-the-script-does::3fd4ce35=what-the-script-does-2 description::9c3fcdaa=description-3 conclusion::bf993a93=conclusion-3 instructions::350b4cb1=instructions-3 what-the-script-does::3dda504d=what-the-script-does-3 description::5150e1b5=description-4 conclusion::d51c1aec=conclusion-4 instructions::e083609=instructions-4 what-the-script-does::85ffec6c=what-the-script-does-4 description::f5a2038b=description-5 conclusion::4593a93c=conclusion-5 instructions::2e4dd2ee=instructions-5 what-the-script-does::d6370587=what-the-script-does-5 description::e20640cf=description-6 conclusion::c818491=conclusion-6 instructions::ba61ae3e=instructions-6 what-the-script-does::3668d917=what-the-script-does-6 instructions::10da52a9=instructions-7" />

@@ -129,6 +129,8 @@ In fact, almost 62% of users who launch the app, do so within 15 minutes of enga
 
 Below is a list of possible scenarios and examples of lookback window usage.
 
+<div id="srn-discrepancy-srn-lookback-longer-than-appsflyer" />
+
 <Accordion title="SRN discrepancy: SRN lookback longer than AppsFlyer">
 
 You set a campaign on X Ads and configure the click-through lookback window to 7 days. X Ads, on the other hand, has a default lookback window of 14 days.
@@ -137,6 +139,8 @@ You set a campaign on X Ads and configure the click-through lookback window to 7
 
 </Accordion>
 
+<div id="srn-lookback-smaller-than-appsflyer" />
+
 <Accordion title="SRN lookback smaller than AppsFlyer">
 
 You set a campaign on X Ads and configure the click-through lookback window to 28 days. X Ads, on the other hand, has a default lookback window of 14 days.
@@ -144,6 +148,8 @@ You set a campaign on X Ads and configure the click-through lookback window to 2
 [![srn-lookback-smaller-than-appsflyer.png](https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png)](https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png)
 
 </Accordion>
+
+<div id="attribution-link-without-a-lookback-window-parameter" />
 
 <Accordion title="Attribution link without a lookback window parameter">
 
@@ -168,3 +174,5 @@ In addition, the app's developer can identify the users that come from this flas
 > 📘 **Tip**
 >
 > Want some tips and tricks on lookback windows and attribution? Check out this short, informative [course on the AppsFlyer Learning Portal](https://elevate.appsflyer.com/learn/course/7768/play/18612/attribution-102-tips-and-tricks).
+
+<div data-zendesk-anchors="h_01HGFQVP7QZACJ3EGSWEP4HPFV=lookback-windows h_01HGFQVP7QM0J507CFQ753YS5X=configurable-lookback-windows-per-attribution-type h_01JKWV7S7J5B4YA84VGEB478TT=probabilistic-modeling-lookback-window h_01HGFQVP7QCCN7CHRCAFSNJVHA=lookback-window-setup h_01HGFQVP7QP61C2K0P7C7YM56Z=attribution-lookback-window-for-srns h_01HGFQVP7QXTQKGVQJEZ0NEW0M=important attribution-lookback-window-with-attribution-links=non-srn-attribution-lookback-window-for-click-through-and-view-through h_01HGFQVP7QDBFP85A9DJFZE38S=non-srn-attribution-lookback-window-for-click-through-and-view-through h_01JKWVQB6TTA24VAZ9WVJMGY4X=non-srn-attribution-lookback-window-for-engaged-click-through-and-engaged-view-through h_01HGFQVP7Q69H5621GXMYZ441N=tip lookback-window-in-onelink%E2%84%A2=lookback-window-in-onelink h_01HGFQVP7QSJEE8D7TCWZMSXGK=lookback-window-in-onelink h_01HGFQVP7Q96827N7Q9Q0363SR=distribution-of-first-app-launches h_01HGFQVP7Q02NS8MXF7WKYQ8V1=scenarios-and-examples h_01HGFQVP7Q1CYRAHAKY3WK8BK0=srn-discrepancy-srn-lookback-longer-than-appsflyer h_01HGFQVP7QAWDP40H89YBN66GV=srn-lookback-smaller-than-appsflyer h_01HGFQVP7QYE3V2DKW7T4171MX=attribution-link-without-a-lookback-window-parameter h_01HGFQVP7Q7CXSK5G8A0937H5Z=lookback-in-hours-for-flash-campaigns h_01HGFQVP7QM3R973QS99661VPG=tip-1" />

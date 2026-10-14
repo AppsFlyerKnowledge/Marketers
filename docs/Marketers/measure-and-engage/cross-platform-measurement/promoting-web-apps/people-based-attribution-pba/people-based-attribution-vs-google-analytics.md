@@ -45,6 +45,8 @@ If you compare data from PBA and Google Analytics, refer to the following reason
 
 The way you implement PBA and Google Analytics could affect data collection.
 
+<div id="google-analytics-shows-more-sessions-and-visitors" />
+
 <Accordion title="Google Analytics shows more sessions and visitors">
 
 #### Cause
@@ -58,6 +60,8 @@ We strongly recommend positioning the Web SDK such that it loads as early as pos
 Whether you [load the SDK directly or through Google Tag Manager](/docs/pba-web-sdk-integration-guide#integrating-the-web-sdk-into-the-website), late loading of the SDK can cause significant discrepancies.
 
 </Accordion>
+
+<div id="google-analytics-shows-more-data-for-sessions-campaign-and-conversions" />
 
 <Accordion title="Google Analytics shows more data for sessions, campaign, and conversions">
 
@@ -74,6 +78,8 @@ Implement the Web SDK on all pages of your website.
 ### Dashboard settings
 
 Dashboard settings such as timezone and data filter could affect how data is presented to you.
+
+<div id="timezone-settings-discrepancies-in-data" />
 
 <Accordion title="Timezone settings - discrepancies in data">
 
@@ -93,6 +99,8 @@ Make sure time zone settings are the same in both AppsFlyer and Google Analytics
 
 </Accordion>
 
+<div id="data-filters--discrepancies-in-data" />
+
 <Accordion title="Data filters - discrepancies in data">
 
 #### Issue
@@ -109,6 +117,8 @@ When you compare data from the two dashboards, make sure no filters are applied 
 
 Different attribution models, lookback windows, how you send events, and cookie settings, can all affect data collection and processing.
 
+<div id="lookback-window-discrepancies-in-conversion-measurement" />
+
 <Accordion title="Lookback window - discrepancies in conversion measurement">
 
 #### Cause
@@ -121,6 +131,8 @@ PBA's lookback window is always 30 days. Make sure to set a 30-day lookback wind
 
 </Accordion>
 
+<div id="attribution-model--discrepancies-in-conversion-measurement" />
+
 <Accordion title="Attribution model - discrepancies in conversion measurement">
 
 #### Cause
@@ -132,6 +144,8 @@ Different attribution models in PBA and Google Analytics can cause discrepancies
 Google Analytics offers [default attribution models](https://support.google.com/analytics/answer/1665189?hl=en) that you can choose from. However, PBA operates in a last non-direct touch, 30-day lookback window attribution model. Make sure to choose a last non-direct touch attribution model in Google Analytics.
 
 </Accordion>
+
+<div id="sending-events" />
 
 <Accordion title="Sending events">
 
@@ -149,6 +163,8 @@ When you send events, verify the following:
 Click [here](/docs/pba-web-sdk-integration-guide#principles-of-event-recording) to learn how to send events using the Web SDK.
 
 </Accordion>
+
+<div id="cookies" />
 
 <Accordion title="Cookies">
 
@@ -187,3 +203,5 @@ Google Analytics allows you to set cookies for subdomains whereas PBA only sets 
 > The end result is two users in Google Analytics and one user in PBA.
 
 </Accordion>
+
+<div data-zendesk-anchors="cause::49d3e519=cause-1 solution::447e7ac9=solution-1 cause::30244d2c=cause-2 solution::f1a0e066=solution-2 data-filters-%C2%A0discrepancies-in-data=data-filters--discrepancies-in-data solution::df8f3921=solution-3 cause::b346571c=cause-3 solution::4bb14ac9=solution-4 attribution-model%C2%A0-discrepancies-in-conversion-measurement=attribution-model--discrepancies-in-conversion-measurement cause::2296f6c1=cause-4 solution::b2be4a33=solution-5 issue::b412f5ba=issue-1 solution::39b4d7d6=solution-6" />

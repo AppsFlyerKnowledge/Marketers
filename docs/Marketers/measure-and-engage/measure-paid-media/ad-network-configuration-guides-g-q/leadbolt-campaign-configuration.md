@@ -38,6 +38,10 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
 
+<div id="h_01HKW22J9FD92D3X3TY0KZMT02" />
+
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 ### Activate partner
@@ -80,6 +84,8 @@ In this section, you can map your AppsFlyer events with Leadbolt via postbacks.
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -134,17 +140,23 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost integration is not available for Leadbolt.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue integration is not available for Leadbolt.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -165,3 +177,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW22J9F43T9E4DGB7R5JQMC=setting-up-leadbolt-integration h_01HKW22J9FPX748HK6WGYQWQW5=integration-tab h_01HKW22J9FKR3G9R0ZMX3R8ESQ=activate-partner h_01HKW22J9GZ52VRVJWW5361KWP=note h_01HKW22J9GARYNP2EP5MKWDHCN=general-settings h_01HKW22J9G2P3DW3VJ0RTPVAAZ=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW22J9G2QEBT62HYFECTYGE=in-app-events-settings h_01HKW22J9G8BB13YT8PM6WT20V=attribution-link-tab h_01HKW22J9G3P1913HASGB0BPRP=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW22J9HJQWGQRC3E9MZJV5G=click-through-attribution h_01HKW22J9HT8PV3FEPT4T84N3S=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HKW22J9H27S9FVV8PQ7W64T9=view-through-attribution-lookback-window h_01HKW22J9HMHT0XQ99SHCEP8A7=impressions-attribution-link h_01HKW22J9HK8TVMPQ67CKQ12Q8=cost-tab h_01HKW22J9HH60TCDMDXZ74D2T0=ad-revenue-tab h_01HKW22J9H3YRYRZFC5YPFWEJA=permissions-tab h_01HKW22J9H187534M60RBXX33S=ad-network-permissions" />

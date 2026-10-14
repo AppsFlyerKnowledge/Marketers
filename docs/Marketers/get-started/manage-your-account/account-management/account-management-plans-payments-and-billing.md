@@ -44,6 +44,8 @@ Learn more about all included features and [compare plans](https://www.appsflyer
 
 </Accordion>
 
+<div id="plan-usage-and-units" />
+
 <Accordion title="Usage, units, and premium features">
 
 Payment for your plan is calculated according to your **plan usage** and **premium features**.
@@ -56,7 +58,7 @@ Each plan is based on measurement of a specific [unit](/docs/account-management-
 >
 > You can [download usage reports](/docs/account-management-plans-payments-and-billing#download-a-usage-report) to get detailed information about your unit usage.
 
-**Exceeding plan usage**
+<span id="zd-premium-features"></span>**Exceeding plan usage**
 
 When exceeding the number of units in your plan cycle, extra costs are applied. You can see all costs in the [**Plan details**](/docs/account-management-plans-payments-and-billing#details) section. To help prevent exceeding plan usage or reduce extra costs, alerts are sent via the notification center in the following cases:
 
@@ -116,6 +118,8 @@ The ROI360 add-on measures the return on investments of your ad marketing. The a
 
 </Accordion>
 
+<div id="understand-billing-for-extended-platform-apps" />
+
 <Accordion title="Understand billing for extended platform apps">
 
 Extended platform apps include apps running on CTV, PC, console, and other platforms that aren’t iOS, Android, Windows phone, PBA, or website.
@@ -158,17 +162,21 @@ The page includes 3 tabs: **My plan**, **Payment and invoices**, and **Billing d
 
 * From the top bar, open the account menu (email address dropdown) > **Account**.
 
+<div id="my-plan" />
+
 <Accordion title="My plan">
 
 From the **My plan** tab, you can see the details of your current plan, review plan usage, and [upgrade your plan](/docs/account-management-plans-payments-and-billing#upgrade-downgrade-or-delete-an-account).
 
+<div id="my-plan-table" />
+
 | Section | Description |
 | --- | --- |
 | <span id="details"></span>**Plan details** | Includes details that differ by plan, such as those listed below:<ul><li>Plan start and end date</li><li>**Remaining units:** The remaining number of [units](/docs/account-management-plans-payments-and-billing#plan-units) available in your plan</li><li>**Extra unit cost:** Cost per unit after the regular units have been used up</li><li>**Clicks:** The number of clicks included in your plan</li><li>**Impressions:** The number of impressions included in your plan</li><li>**Organic installs:** The number of organic installs included in your plan</li><li>**Users:** The number of users included in your plan</li></ul> |
-| **Included features** | A list of the features included in your plan |
-| **Plan usage** | Shows the [unit](/docs/account-management-plans-payments-and-billing#plan-units) usage in your plan, since the last update (UTC). You can view and [download usage reports](/docs/account-management-plans-payments-and-billing#download-a-usage-report) to get aggregated data on unit usage.  <br />**Note:** Your [invoice payment](/docs/account-management-plans-payments-and-billing#payments-and-invoices) depends on the number of units used and the add-ons included according to [your plan](/docs/account-management-plans-payments-and-billing#appsflyer-plans). |
-| **Add-ons** | Add-ons included in your plan and their start/end dates. These are premium features, for example:<ul><li>[Protect360](/docs/protect360-anti-fraud-guide): Mobile fraud protection</li><li>[ROI360](/docs/roi360-cost-aggregation-overview): Cost data</li><li>[Audiences](/docs/audiences-guide)</li><li>[Pivot table](/docs/pivot-table-user-metrics)</li><li>[Data Locker](/docs/data-locker-for-marketers)</li></ul>To learn more about these features and their potential benefits for your business, check with your CSM or contact [hello@appsflyer.com](mailto:hello@appsflyer.com). |
-| **Future plan** | This section appears only when a future plan has been purchased. If this is the case, you'll see details on your next plan here. |
+| <span id="features"></span>**Included features** | A list of the features included in your plan |
+| <span id="usage"></span>**Plan usage** | Shows the [unit](/docs/account-management-plans-payments-and-billing#plan-units) usage in your plan, since the last update (UTC). You can view and [download usage reports](/docs/account-management-plans-payments-and-billing#download-a-usage-report) to get aggregated data on unit usage.  <br />**Note:** Your [invoice payment](/docs/account-management-plans-payments-and-billing#payments-and-invoices) depends on the number of units used and the add-ons included according to [your plan](/docs/account-management-plans-payments-and-billing#appsflyer-plans). |
+| <span id="addons"></span>**Add-ons** | Add-ons included in your plan and their start/end dates. These are premium features, for example:<ul><li>[Protect360](/docs/protect360-anti-fraud-guide): Mobile fraud protection</li><li>[ROI360](/docs/roi360-cost-aggregation-overview): Cost data</li><li>[Audiences](/docs/audiences-guide)</li><li>[Pivot table](/docs/pivot-table-user-metrics)</li><li>[Data Locker](/docs/data-locker-for-marketers)</li></ul>To learn more about these features and their potential benefits for your business, check with your CSM or contact [hello@appsflyer.com](mailto:hello@appsflyer.com). |
+| <span id="future"></span>**Future plan** | This section appears only when a future plan has been purchased. If this is the case, you'll see details on your next plan here. |
 
 ### Usage Report
 
@@ -199,9 +207,9 @@ The Usage Report page shows your billable conversions and your return on investm
 
 | Complete/Partial | Current day of the month | Selected date range |
 | --- | --- | --- |
-| Complete | 10th and onwards | Previous month |
-| Partial | Between 1st-9th | Previous month |
-| Partial | Any day of the month | Current month |
+| <span id="complete"></span>Complete | 10th and onwards | Previous month |
+| <span id="partial"></span>Partial | Between 1st-9th | Previous month |
+| <span id="partial::64822c61"></span>Partial | Any day of the month | Current month |
 
 * All data in the report is aggregated and includes billable conversions and ROI360 events. Non-chargeable events, such as organic installs and fraud, aren’t included.
 * based on the selected filters.
@@ -217,19 +225,23 @@ The Usage Report page shows your billable conversions and your return on investm
 
 See below the field specifications for measurement conversions and ROI360 events in the usage reports.
 
+<div id="measurement" />
+
 <Accordion title="Measurement">
 
 | Field | Description |
 | --- | --- |
-| **Date** | Conversion date |
-| **Account** | AppsFlyer account or sub-account name |
-| **App/Bundle** | App ID from the relevant app store -***or-*** Bundle ID from [AppsFlyer People-Based Attribution](/docs/people-based-attribution-pba-overview) |
-| **Media Source** | The media source to which the conversions were attributed.  <br />**Note:** When a media source uses an agency, the agency name appears and not the media source, regardless of the **Allow transparency** toggle state. |
-| **Conversion** | Source of aggregate attribution data. Possible values include:<ul><li>**Real-time attribution (RTA):** AppsFlyer is the source of aggregate attribution data</li><li>**SKAd Network:** SKAdNetwork is the source of aggregate attribution data</li><li>**Protect360 - post attribution:** Adjustments for previous attributions and in-app events identified as fraud by [AppsFlyer Protect360](/docs/protect360-anti-fraud-guide)</li><li>**People-based attribution (PBA):** Web conversions attributed as referred visits by AppsFlyer PBA</li></ul> |
-| **Conversion type** | Type of attributed conversions. Possible [unit](/docs/account-management-plans-payments-and-billing#plan-units) values include:<ul><li>Non-organic installs (NOI)</li><li>Re-engagements</li><li>Re-attributions</li><li>Organic installs</li><li>App opens</li><li>Organic app opens</li><li>In-app events</li><li>Organic in-app events</li><li>Monthly active users (MAU)</li><li>Direct web conversion events</li><li>Non-direct web conversion events</li><li>Direct web standard events</li><li>Non-direct web standard events</li></ul>The **Conversion type** field is **not** populated for **Protect360 - post attribution** conversions. |
-| **Billable Conversions** | The number of conversions for which your account is charged.<ul><li>The number of conversions varies according to the selected filters</li><li>Billable data doesn't include non-chargeable conversions, such as organic installs and non-countable contract obligations (for example, fraud-related installs, free trial, transferred or deleted apps). This may result in fewer conversions compared to the total number of conversions in the dashboards.</li><li>**Protect360 - post attribution** conversions are always **negative** since they reverse charge conversions identified as fraud.</li><li>Starting February 1, 2026, non-organic installs from extended platform apps (for example, CTV, PC, and console) are included in billable conversions, according to your existing conversion-based commercial terms.</li><li>For more information about how iOS app conversions are calculated, see [Billing for iOS apps](/docs/account-management-plans-payments-and-billing#conversion-measurement-options-for-ios-app-billing) (below).</li></ul> |
+| <span id="date"></span>**Date** | Conversion date |
+| <span id="account-name"></span>**Account** | AppsFlyer account or sub-account name |
+| <span id="appbundle-id"></span>**App/Bundle** | App ID from the relevant app store -***or-*** Bundle ID from [AppsFlyer People-Based Attribution](/docs/people-based-attribution-pba-overview) |
+| <span id="media-source"></span>**Media Source** | The media source to which the conversions were attributed.  <br />**Note:** When a media source uses an agency, the agency name appears and not the media source, regardless of the **Allow transparency** toggle state. |
+| <span id="conversion-source"></span>**Conversion** | Source of aggregate attribution data. Possible values include:<ul><li>**Real-time attribution (RTA):** AppsFlyer is the source of aggregate attribution data</li><li>**SKAd Network:** SKAdNetwork is the source of aggregate attribution data</li><li>**Protect360 - post attribution:** Adjustments for previous attributions and in-app events identified as fraud by [AppsFlyer Protect360](/docs/protect360-anti-fraud-guide)</li><li>**People-based attribution (PBA):** Web conversions attributed as referred visits by AppsFlyer PBA</li></ul> |
+| <span id="conversion-type"></span>**Conversion type** | Type of attributed conversions. Possible [unit](/docs/account-management-plans-payments-and-billing#plan-units) values include:<ul><li>Non-organic installs (NOI)</li><li>Re-engagements</li><li>Re-attributions</li><li>Organic installs</li><li>App opens</li><li>Organic app opens</li><li>In-app events</li><li>Organic in-app events</li><li>Monthly active users (MAU)</li><li>Direct web conversion events</li><li>Non-direct web conversion events</li><li>Direct web standard events</li><li>Non-direct web standard events</li></ul>The **Conversion type** field is **not** populated for **Protect360 - post attribution** conversions. |
+| <span id="total-conversions"></span>**Billable Conversions** | The number of conversions for which your account is charged.<ul><li>The number of conversions varies according to the selected filters</li><li>Billable data doesn't include non-chargeable conversions, such as organic installs and non-countable contract obligations (for example, fraud-related installs, free trial, transferred or deleted apps). This may result in fewer conversions compared to the total number of conversions in the dashboards.</li><li>**Protect360 - post attribution** conversions are always **negative** since they reverse charge conversions identified as fraud.</li><li>Starting February 1, 2026, non-organic installs from extended platform apps (for example, CTV, PC, and console) are included in billable conversions, according to your existing conversion-based commercial terms.</li><li>For more information about how iOS app conversions are calculated, see [Billing for iOS apps](/docs/account-management-plans-payments-and-billing#conversion-measurement-options-for-ios-app-billing) (below).</li></ul> |
 
 </Accordion>
+
+<div id="roi360" />
 
 <Accordion title="ROI360">
 
@@ -331,6 +343,8 @@ To use, go to **Payments & invoices**, select the open invoice, and click **Pay*
 
 Follow these simple steps to set up or make a payment using your preferred method.
 
+<div id="ach-for-us-customers-recurring-or-paynow" />
+
 <Accordion title="ACH for US customers (recurring or PayNow)">
 
 This secure, automated process takes place directly within the AppsFlyer portal.
@@ -361,6 +375,8 @@ This secure, automated process takes place directly within the AppsFlyer portal.
 
 </Accordion>
 
+<div id="credit-card" />
+
 <Accordion title="Credit card">
 
 This secure, automated process takes place directly within the AppsFlyer portal.
@@ -379,6 +395,8 @@ This secure, automated process takes place directly within the AppsFlyer portal.
 * **Accepted Cards:** MasterCard, Visa, Diners, Discover, JCB, UnionPay, American Express.
 
 </Accordion>
+
+<div id="other-payment-methods" />
 
 <Accordion title="Other Payment Methods">
 
@@ -416,6 +434,8 @@ Paying overdue invoices for accounts with a [status](/docs/account-management-pl
 
 </Accordion>
 
+<div id="zd-billing-details" />
+
 <Accordion title="Billing details">
 
 From this tab you can view and update your company details and contact persons for billing. [![billing_details_tab2.png](https://files.readme.io/b1695dd5bdc0a593a2140aea99f727a6838aee7dfbe83504751b60addf7f62a8-36118432522129.png)](https://files.readme.io/b1695dd5bdc0a593a2140aea99f727a6838aee7dfbe83504751b60addf7f62a8-36118432522129.png)
@@ -443,7 +463,7 @@ Act as a focal point to receive invoices and for communications regarding any pa
 
 **To add or update Billing contacts:**
 
-1. Click **Add contact** and enter the [required details](/docs/account-management-plans-payments-and-billing#billing-details) or make changes to a current contact.
+1. Click **Add contact** and enter the [required details](/docs/account-management-plans-payments-and-billing#zd-billing-details) or make changes to a current contact.
 2. Click **Save billing details**. Make sure to have There must be at least one billing contact.
 3. A popup message indicates if the changes were saved successfully.
 
@@ -480,3 +500,5 @@ Since the introduction of iOS 14.5, AppsFlyer offers two possible methods to det
 [Learn more](https://content.appsflyer.com/ios-14-hub/billing/) about AppsFlyer iOS billing policy.
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01H91AJDKJ13D5AM5B1E5KTNQY=appsflyer-plans-and-usage h_01H91AJDKJ09N1X0FSP04ER18S=appsflyer-plans h_01H91AJDKJC26MT1HS9C3CVQRS=plan-usage-and-units h_01H91AJDKJ5P8A97T70DAJNGNH=plan-usage h_01H91AJDKJBR19V0CPP7CAKDH1=note premium-features=zd-premium-features h_01H91AJDKJ48EYW5MVHHMTH960=premium-features h_01H91AJDKJ4M05VCZH6YF82J50=plan-units premium-addon-units=premium-add-on-units h_01H91AJDKJQACEZCW1B2WX5GCG=premium-add-on-units h_01H91AJDKJV6R14R10JCD3FX4J=roi360-dollar-units h_01KENXT2745Y7N7D6NZZ4VMRFK=understand-billing-for-extended-platform-apps h_01KENXV9V42XJK2CKKJ6YBR1WX=what-is-billed what-isn%E2%80%99t-billed=what-isnt-billed h_01KENXV9V63ZX16MWQXC9GSTPB=what-isnt-billed account-management-page=account-page h_01H91AJDKJNPHVY18T4PCDCH91=account-page h_01H91AJDKJ9R0Q9HHR0WTFGZX8=note-1 h_01H91AJDKJFR0PGVT5ZBM0RADT=my-plan h_01H91AJDKKCHS3BHGEQSHKBC2K=usage-report access-the-usage-report=access-to-the-usage-report-page h_01HGAYH3YK9XBW6QA90NKK7MC8=access-to-the-usage-report-page h_01HKQBRQSBNB3GRX73PFXHCKKV=note-2 h_01HGAX61GWK51EEPJ5JNXWE93W=data-included-in-the-usage-report h_01HGAZSYCJCQQE5EG55RS0JBZB=note-3 h_01HGAXAJRKJZF8695VJJQCQHTM=usage-report-fields h_01J17Q7H1PPDXRRV70H9D89C67=measurement h_01J17Q7H1P1X5FJCAP0Z7H9HSS=roi360 downloading-usage-reports=download-a-usage-report h_01H91AJDKKZJA70YXWCM112ZWH=download-a-usage-report h_01HGAZKWRAFGM1QTYCZQ1558T0=note-4 h_01H91AJDKK3611H2ZBJWVV0X92=account-status h_01H91AJDKKD1M3QXC45JQDXXC1=upgrade-downgrade-or-delete-an-account h_01H91AJDKKBASMK6BYXJBAHNZJ=payments-and-invoices h_01H91AJDKK27MQF3YZ6T31J40M=note-5 payment-method=payment-methods-easy--secure-invoicing h_01H91AJDKK1K5KR1D9R9SG1JRD=payment-methods-easy--secure-invoicing h_01KBHZ39NSGRT33PM89KENM2KD=recommended-for-us-customers-ach-automated-clearing-house h_01KBJ0G4QA8VP9K23T2T7ZBN41=payment-types h_01KBJ0HFPF2TMQT04Y9GS6AQTZ=hands-free-recurring-payments h_01KBM86A4HW6DCVAX9PNH14DBR=note-6 h_01KBJ0N4EQY065B7XMR9ZVZ8CR=paynow-manual-invoice-payment h_01KBJ0N4EQJ18S65WPGSAHYE69=set-up h_01KBJ0TY2XZZY9ZDYRWMT7AEKJ=ach-for-us-customers-recurring-or-paynow h_01KBM9FV4K6JWPM0R09QWC278K=credit-card h_01KBMAAFCFK18XBMMHCTZZSRXG=other-payment-methods h_01KBYP20A0CH7Z7KG5CZHEBQ3P=managing-payment-methods h_01H91AJDKKE71QR6YA7H4VK5ST=invoices h_01H91AJDKKAN2SYSFYD86CYVH4=pay-overdue-invoices billing-details=zd-billing-details h_01H91AJDKK9KGQ9M0EXVMR6VBE=zd-billing-details h_01H91AJDKKJSPZ932MAXNDYACP=company-billing-details h_01H91AJDKKFCFHN19MGMR6Y1YY=note-7 h_01H91AJDKKDD5PHZ45QNW7D2A1=billing-contacts h_01H91AJDKKPZ8KAYD91HZSZPSB=note-8 billing-details::638793ce=billing-details h_01H91AJDKKSTJJTSAM136JQPKG=billing-details h_01H91AJDKK7SPVKX31CS42RB5R=company-tax-number h_01H91AJDKK8JSZ1V91TQQ6YA1H=countries-requiring-company-tax-number h_01H91AJDKMJDZP1GZAS8BZG9S4=conversion-measurement-options-for-ios-app-billing" />

@@ -45,3 +45,5 @@ AppsFlyer provides basic revenue measurement tools. These tools are less robust 
 
 * Revenue recording via [customized in-app events](/docs/in-app-events-overview#revenue-in-in-app-events). You can also share this data with ad networks via [postbacks](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks). **Note**: Consider using validated in-app purchases (a premium product) to include the automatic measurement of refunds, taxes, app store commissions, etc.
 * Receipt validation
+
+<div data-zendesk-anchors="01JC364VBGSCYBHHZENZXJQ39R=overview 01JC364VBHQ4C12YVEJ0Q7X6R4=premium-revenue-reporting 01JC364VBK86C9ZV94P0FJGZSV=basic-revenue-reporting" />

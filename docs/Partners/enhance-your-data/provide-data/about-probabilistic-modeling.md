@@ -38,3 +38,5 @@ Except where otherwise configured by the customer, probabilistic modeling will a
 * Web-to-app conversions
 * Cross-device experiences (for example, a desktop ad followed by a mobile install)
 * CTV, PC, or console environments where deterministic attribution isn’t possible
+
+<div data-zendesk-anchors="about-probabilistic-modeling-attribution=about-probabilistic-modeling h_01K83JWQ84H0P1WABG939X55KD=about-probabilistic-modeling h_01K83JWQ8412VK2ZN39CQ5TJEZ=when-is-probabilistic-modeling-used" />

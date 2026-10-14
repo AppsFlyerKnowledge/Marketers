@@ -44,6 +44,8 @@ To add the code to your website via other platforms, or to make changes to the c
 1. Follow the [website workplace instructions](/docs/smart-banners-mobile-web-to-app-for-marketers#1-website-workplace-setup) to get the Smart Banners code.
 2. Use the platform-specific instructions that follow to implement the code into your website:
 
+<div id="google-tag-manager" />
+
 <Accordion title="Google Tag Manager">
 
 **To implement the code via Google Tag Manager**:
@@ -60,9 +62,13 @@ To add the code to your website via other platforms, or to make changes to the c
 
 </Accordion>
 
+<div id="adobe-launch-tag-manager" />
+
 <Accordion title="Adobe Launch Tag Manager">
 
 **To implement the code via Adobe Launch Tag Manager**:
+
+<div id="step-1-create-a-property-in-adobe-experience-cloud" />
 
 <Accordion title="Step 1: Create a property in Adobe Experience Cloud">
 
@@ -77,6 +83,8 @@ To add the code to your website via other platforms, or to make changes to the c
 7. Click **Save**.
 
 </Accordion>
+
+<div id="step-2-add-smart-banners-code-to-the-adobe-launch-property" />
 
 <Accordion title="Step 2: Add Smart Banners code to the Adobe Launch property">
 
@@ -95,6 +103,8 @@ To add the code to your website via other platforms, or to make changes to the c
 
 </Accordion>
 
+<div id="step-3-add-the-adobe-launch-tag-to-your-website" />
+
 <Accordion title="Step 3: Add the Adobe Launch tag to your website">
 
 **To add the Adobe Launch tag to your website (which loads the Smart Banners code)**:
@@ -109,6 +119,8 @@ To add the code to your website via other platforms, or to make changes to the c
 4. Paste the code snippet into the  tag of your website.
 
 </Accordion>
+
+<div id="step-4-publish-the-adobe-launch-environment" />
 
 <Accordion title="Step 4: Publish the Adobe Launch environment">
 
@@ -134,6 +146,8 @@ Now, when your website loads on mobile, the banner's active creative will be dis
 
 </Accordion>
 
+<div id="shopify" />
+
 <Accordion title="Shopify">
 
 **To implement the code in your Shopify website**:
@@ -147,6 +161,8 @@ Now, when your website loads on mobile, the banner's active creative will be dis
 4. In the code, directly under , paste your Smart Banners code.
 
 </Accordion>
+
+<div id="wix" />
 
 <Accordion title="Wix">
 
@@ -165,6 +181,8 @@ Now, when your website loads on mobile, the banner's active creative will be dis
 
 </Accordion>
 
+<div id="squarespace" />
+
 <Accordion title="Squarespace">
 
 **To implement the code in your Squarespace website**:
@@ -177,6 +195,8 @@ Now, when your website loads on mobile, the banner's active creative will be dis
 6. Click **Save**.
 
 </Accordion>
+
+<div id="wordpress" />
 
 <Accordion title="WordPress">
 
@@ -193,3 +213,5 @@ Now, when your website loads on mobile, the banner's active creative will be dis
 > 📘 **See also**
 >
 > * [PBA integration with Smart Banners](/docs/pba-web-sdk-integration-guide#installation-and-integration)
+
+<div data-zendesk-anchors="h_01HBT97B1ZGKKTD0TN2J2W56ZQ=note h_01HBT97B1Z0F4B8E9GQWJEE6BH=website-code-implementation h_01HBT97B1ZKW36W9F0XQKM323P=google-tag-manager h_01HBT97B1ZX6VM1YER2HXTYQJ2=adobe-launch-tag-manager h_01HBT97B1ZPP0AKB5E31W36VC2=step-1-create-a-property-in-adobe-experience-cloud h_01HBT97B1ZK4T23MF4D6VGP4B8=step-2-add-smart-banners-code-to-the-adobe-launch-property h_01HBT97B1Z0W9VJ5FCW4605RDC=step-3-add-the-adobe-launch-tag-to-your-website h_01HBT97B1Z1W33DTT6NR4PQHQ0=step-4-publish-the-adobe-launch-environment h_01HBT97B1Z0NTYJKB2YFMX62P9=shopify h_01HBT97B1ZYVJ6PW7F811V5TAX=wix h_01HBT97B1ZS0FDM60M1GA04PRT=squarespace h_01HBT97B1ZKYB7XPGFG00PB2BT=wordpress h_01HE7SG3MJ4WTPMTXF0DA0M07D=see-also" />

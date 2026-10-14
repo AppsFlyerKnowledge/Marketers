@@ -33,3 +33,5 @@ Non-organic users are attributed to the media source motivating the install or e
 | **Not attributed** has no media source | **Attributed** to a media source |
 | **No attribution** due to the following:<ul><li>App was installed without using an attribution link. For example, when the user downloads the app from your site or the app store without engaging with an ad first.</li><li>Click and app launch couldn't be matched. For example, when data is not available due to privacy policy, or install was attributed by a different MMP first.</li></ul> | **Attribution** of an install or launch due to any of the following:<ul><li>Use of an AppsFlyer attribution link</li><li>Click and launch are matched by AppsFlyer</li><li>Claimed by an SRN</li></ul> |
 |  | **Attribution info:**<ul><li>Uses *last-click attribution*: Last ad interaction gets credit for the app install or action.</li><li>Only one media source is credited per install.</li><li>Learn more about [AppsFlyer attribution](/docs/appsflyer-attribution-model).</li></ul> |
+
+<div data-zendesk-anchors="organic-vs-nonorganic=organic-vs-non-organic" />

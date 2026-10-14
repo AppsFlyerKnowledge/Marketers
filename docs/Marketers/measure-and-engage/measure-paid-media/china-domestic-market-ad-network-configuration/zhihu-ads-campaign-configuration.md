@@ -38,6 +38,8 @@ x-zendesk:
 
 Zhihu Ads's configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
+<div id="integration-tab" />
+
 <Accordion title="Integration Tab">
 
 ### Activate Partner
@@ -72,6 +74,8 @@ In this section you can map your AppsFlyer events with Zhihu Ads via postbacks.
 | **Send Revenue** | **When unchecked** - AppsFlyer sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - AppsFlyer sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution Link Tab">
 
@@ -138,17 +142,23 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost Tab">
 
 Cost data is not supported in the integration with this partner.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad Revenue Tab">
 
 Ad Revenue is not supported in the integration with this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions Tab">
 
@@ -168,3 +178,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HKW6ZTB5WW8KHP9TDQGCMY01=setting-up-zhihu-ads h_01HKW6ZTB6SGP5MCASKW4EJNYE=integration-tab h_01HKW6ZTB633DTKTTT6P2DMZ2K=activate-partner h_01HKW6ZTB6X2EZ9DH0X8XGKWE8=general-settings h_01HKW6ZTB63KZW3XE3YQQFPFBA=default-postbacks inapp-events-settings=in-app-events-settings h_01HKW6ZTB65M8DXV21BWDF1RHK=in-app-events-settings h_01HKW6ZTB6KKF60N9RSP8VWF7S=attribution-link-tab h_01HKW6ZTB62HDV9YM3W71H7FMQ=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6ZTB6M3CTGFRF05S3QQ42=click-through-attribution h_01HKW6ZTB6A2K925V5250TEX0F=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HKW6ZTB6JSTQ9947YEP3BN4J=view-through-attribution-lookback-window h_01HKW6ZTB7RZEZD9P0N66NZEJG=impressions-attribution-link h_01HKW6ZTB7HKKM3S0NPD8TBNMQ=cost-tab h_01HKW6ZTB7A117WNHQJ0N2V0KS=ad-revenue-tab h_01HKW6ZTB76WTKQNRF385K319K=permissions-tab h_01HKW6ZTB7PFHP0M25A4C6HEEJ=ad-network-permissions" />

@@ -86,3 +86,5 @@ By using the In-app event generator marketers can:
 > 📘 **See also**
 >
 > * Events dashboard
+
+<div data-zendesk-anchors="h_01HE7T0ZA12E7KHS7WBQ757KF1=introduction using-the-inapp-event-generator=using-the-in-app-event-generator h_01HE7T0ZA2A1KS4NF43GRZB87X=using-the-in-app-event-generator h_01HE7T0ZA2KQ44P40Y028VVA4K=creating-a-new-event-set h_01HE7T0ZA2P2WZ07CT880ZSK0Z=updating-an-existing-event-set h_01HE7T0ZA2Z3D3J014E7E0T13X=adding-events h_01HE7T0ZA2KAH7N44EQ9W5BH5G=adding-parameters h_01HE7T4ZR4AY2J71B3PJKJP490=see-also" />

@@ -47,6 +47,8 @@ Recording these events can help you determine:
 
 The following section provides a list of event structures that are typical to the eWallet vertical. Each structure includes a predefined event name and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
+<div id="complete-registration-af_complete_registration" />
+
 <Accordion title="Complete registration (af_complete_registration)">
 
 **Purpose**
@@ -65,6 +67,8 @@ When the user completes the signup process
 
 </Accordion>
 
+<div id="login-af_login" />
+
 <Accordion title="Login (af_login)">
 
 **Purpose**
@@ -80,6 +84,8 @@ When the user successfully logs in
 Can be sent without any additional parameters
 
 </Accordion>
+
+<div id="content-view-af_content_view" />
 
 <Accordion title="Content view (af_content_view)">
 
@@ -107,6 +113,8 @@ When the user views a specific item or category content
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
 
+<div id="wallet-complete-topup-wallet_complete_topup" />
+
 <Accordion title="Wallet complete top-up (wallet_complete_topup)">
 
 **Purpose**
@@ -125,6 +133,8 @@ When the user completes the top-up from their bank or credit card to the eWallet
 | top\_up\_method | Type of payment method | bank transfer |
 
 </Accordion>
+
+<div id="payment-transaction-completed-payment_transaction_completed" />
 
 <Accordion title="Payment transaction completed ( payment_transaction_completed )">
 
@@ -149,6 +159,8 @@ When the transaction of a specific purchase is completed
 
 </Accordion>
 
+<div id="bill-payment-success-bill_payment_success" />
+
 <Accordion title="Bill payment success (bill_payment_success)">
 
 **Purpose**
@@ -168,6 +180,8 @@ When the user is using eWallet to make payments, such as bills, or credit card s
 | category | Type of service | Electricity |
 
 </Accordion>
+
+<div id="promo-promo" />
 
 <Accordion title="Promo (promo)">
 
@@ -189,6 +203,8 @@ When the user selects the promotion available within the app
 | promo\_type | Type of promotion being offered | 30% off |
 
 </Accordion>
+
+<div id="voucher-redeem-voucher_redeem" />
 
 <Accordion title="Voucher redeem (voucher_redeem)">
 
@@ -212,6 +228,8 @@ When a user promotion code is redeemed
 
 </Accordion>
 
+<div id="select-merchant-select_merchant" />
+
 <Accordion title="Select merchant ( select_merchant )">
 
 **Purpose**
@@ -232,6 +250,8 @@ When the user selects a merchant from the list of available merchants
 | merchant\_ID | Specific ID attached to a business that tells the payment processing systems involved in a transaction where to send which funds | 123456 |
 
 </Accordion>
+
+<div id="scan-barcode-success-scan_barcode_success" />
 
 <Accordion title="Scan barcode success ( scan_barcode_success )">
 
@@ -254,3 +274,5 @@ When the user scans the QR code from each merchant that they visited using the e
 | merchant\_ID | Specific ID attached to a business that tells the payment processing systems involved in a transaction where to send which funds | 123456 |
 
 </Accordion>
+
+<div data-zendesk-anchors="ewallet=-ewallet h_01HGTAEVWFZXCA7AV0P35W992F=-ewallet h_01HGTAEVWFR4QS6XAT1T28N1R5=important h_01HGTAEVWF8SVYTQMQ12219HX0=recommended-structures-for-predefined-events h_01HGTAEVWFBA3CD7ZA40VCER95=complete-registration-af_complete_registration h_01HGTAEVWGDBN8B3P2YHQJ5RYF=login-af_login h_01HGTAEVWGYFYEZBD3ZED7GGFG=content-view-af_content_view h_01HGTAEVWG39P9A84P926BG3VE=recommended-structures-for-custom-events h_01HGTAEVWGNYC5Z0ACHV8CFVNQ=wallet-complete-topup-wallet_complete_topup h_01HGTAEVWG36K4V4Z0NN8QYDNV=payment-transaction-completed-payment_transaction_completed h_01HGTAEVWG136M86GM1JPV74RH=bill-payment-success-bill_payment_success h_01HGTAEVWG34EXM28GW2ZN0NRC=promo-promo h_01HGTAEVWG0EHESWPQHCX4P3SH=voucher-redeem-voucher_redeem h_01HGTAEVWGKGC7N8ZB0MMQJ4YE=select-merchant-select_merchant h_01HGTAEVWG20101JC5VVK29Y0E=scan-barcode-success-scan_barcode_success" />

@@ -35,11 +35,11 @@ The Smart Script in a cross-platform landing page uses the incoming link (the li
 
 #### SCOPE OF WORK
 
-| **Who's involved**<ul><li>**Advertiser**:<ul><li>Decides what the outgoing [cross-platform impression](#01H8EQ4KS75Q62Z7WVNSTDXBZX) and [direct attribution links](#01H8EQ4KS7C6HADNKQZYNTTFMF) should contain based on the [arguments](/docs/set-up-smart-script-to-convert-web-visitors#arguments) in the Smart Script. This determines the attribution data that gets appended to the outgoing URL, either by manipulating the incoming URL or by forcing certain values.</li><li>Makes sure all campaigns leading to the website have incoming URLs with parameters that the script can process.</li><li>[Tests the Smart Script](https://appsflyersdk.github.io/appsflyer-onelink-smart-script/examples/test_page.html).</li></ul></li><li>**Web developer**:<ul><li>Adds the arguments to the script and implements the Smart Script on the landing page.</li><li>Tests the Smart Script.</li></ul></li></ul> |
+| **Who's involved**<ul><li>**Advertiser**:<ul><li>Decides what the outgoing [cross-platform impression](#create-crossplatform-impression-link) and [direct attribution links](#create-direct-attribution-links) should contain based on the [arguments](/docs/set-up-smart-script-to-convert-web-visitors#arguments) in the Smart Script. This determines the attribution data that gets appended to the outgoing URL, either by manipulating the incoming URL or by forcing certain values.</li><li>Makes sure all campaigns leading to the website have incoming URLs with parameters that the script can process.</li><li>[Tests the Smart Script](https://appsflyersdk.github.io/appsflyer-onelink-smart-script/examples/test_page.html).</li></ul></li><li>**Web developer**:<ul><li>Adds the arguments to the script and implements the Smart Script on the landing page.</li><li>Tests the Smart Script.</li></ul></li></ul> |
 | --- |
 | **Prerequisites**<ul><li>An AppsFlyer account with at least one app.</li><li>For the impression URL: A [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template) with cross-platform attribution enabled.</li></ul> |
 
-<div id="01H8EQ4KS75Q62Z7WVNSTDXBZX" />
+<div id="create-crossplatform-impression-link" />
 
 <Accordion title="Create cross-platform impression link">
 
@@ -53,7 +53,7 @@ The Smart Script in a cross-platform landing page uses the incoming link (the li
 
 </Accordion>
 
-<div id="01H8EQ4KS7C6HADNKQZYNTTFMF" />
+<div id="create-direct-attribution-links" />
 
 <Accordion title="Create direct attribution links">
 
@@ -68,3 +68,5 @@ The Smart Script in a cross-platform landing page uses the incoming link (the li
 | redirectURL | <ul><li>The URL to which the platform/app user should be redirected.</li><li>Example: `https://store.steampowered.com/app/123456/Team_Fortress_2/`</li></ul> |  |
 
 </Accordion>
+
+<div data-zendesk-anchors="01H8V0RV7X8JEVEJ36TJB1X43D=overview 01H8V0RV7X0K157JTDQMJSQYKF=setup h_01H95PGMNWPBRHSZBPMKNJ2PS6=scope-of-work 01H8EQ4KS75Q62Z7WVNSTDXBZX=create-crossplatform-impression-link 01H8EQ4KS7C6HADNKQZYNTTFMF=create-direct-attribution-links" />

@@ -30,7 +30,7 @@ x-zendesk:
 
 This article contains information and steps on how to set up and use Meta Web for PC and console apps with AppsFlyer. This includes:
 
-* [Activating the partner integration in AppsFlyer](#activate-partner).
+* [Activating the partner integration in AppsFlyer](#activating-partner-in-appsflyer).
 * [Setting up Meta Web in AppsFlyer](#setting-up-meta-web-in-appsflyer).
 * [Setting up campaigns in Meta for PC and console apps](/docs/meta-ads-web-integration-setup-for-pc-and-console-apps#setting-up-campaigns-in-meta-web-for-pc-and-console-apps).
 
@@ -54,6 +54,8 @@ Before activating the Meta Web integration, make sure you have a [business accou
 In this part of the setup, you can also set up postbacks to Meta Web. The Meta Web (metaweb\_int) integration uses a Conversions API tool provided by Meta ads for advertisers to send data from their **PC and console apps** directly to Meta's servers. Such data may include user actions, such as purchases, registrations, and other types of conversions performed on non-mobile platforms (websites or applications). The data is then used by Meta ads to optimize ad targeting, measure ad performance, and build custom audiences for retargeting.
 
 The integration with Meta Web only supports sending postbacks for installs and in-app events.
+
+<div id="integration-tab" />
 
 <Accordion title="Integration tab">
 
@@ -122,6 +124,8 @@ Configure mapping of in-app event postbacks sent to Meta Web. These events can b
 
 </Accordion>
 
+<div id="attribution-link-tab" />
+
 <Accordion title="Attribution link tab">
 
 Generating an attribution link in the AppsFlyer UI isn't currently available. However, you can either use a cross-platform landing page with SmartScript or create a direct attribution link for your app (see table below).
@@ -133,17 +137,23 @@ Generating an attribution link in the AppsFlyer UI isn't currently available. Ho
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 Cost isn't available for Meta Web.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad revenue isn't available for Meta Web.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -185,3 +195,5 @@ All Meta web-to-app attributions appear under `Facebook Ads` in the Overview and
 | Trait | Description |
 | --- | --- |
 | Clicks and impressions (Temporary limitation) | Clicks and impressions for campaigns targeting PC & Console apps are temporarily not available from Meta SRN (`Facebook Ads`). |
+
+<div data-zendesk-anchors="h_01HE2XD0FSY0QMJSKVC0FHHK5P=important h_01HK4QHRJG6WTN9P6ZG83XQ6AY=overview h_01HFXV8HPGCRGYPEW0NPJ0NR0S=prerequisite activate-partner=activating-partner-in-appsflyer h_01HFXV8HPH3N4DBKKTQE6DK7FK=activating-partner-in-appsflyer setting-up-metaweb-in-appsflyer=setting-up-meta-web-in-appsflyer 01H88VAJH3VENKYVRQY5RXN63P=setting-up-meta-web-in-appsflyer 01H88VAJH3VZ4GPVE7XXMKTZ2P=integration-tab activate-partner::1ca30957=activate-partner h_01HFXV8HPH6X92YETNAGZ910AV=activate-partner transaction-id=general-settings h_01HARQDVEDA206D0BBXBC6WEHH=general-settings enable-viewthrough-attribution=enable-view-through-attribution h_01ZXVWB1ZYKK4DP38QY1RMEY6M=enable-view-through-attribution 01H88VAJH3WE9Z0971WMBRBJRS=default-postbacks inapp-event-postbacks=in-app-event-postbacks 01H88VAJH3AS37MVF75GANWX4B=in-app-event-postbacks 01H88VAJH31GZ4KAY280ZRB8MA=attribution-link-tab 01H88VAJH3RM95V449B6DF8B4D=cost-tab 01H88VAJH3A2Q0CZXQQZMW6YRC=ad-revenue-tab 01H88VAJH30TCC574W2DH7R2A2=permissions-tab h_01HK4S03KVAN99YKXTHAKCT420=setting-up-campaigns-in-meta-web-for-pc-and-console-apps meta%20view=view-web-to-app-attribution-data view-webtoapp-attribution-data-from-november-2-2025=view-web-to-app-attribution-data h_01K88J8JFNEYBZNR18133NMRP9=view-web-to-app-attribution-data h_01K88J8JFNMHCVZ0C34E3D7AST=view-in-the-dashboard h_01K88J8JFN8W2572N92466YFZQ=view-in-raw-data-and-api-reports h_01KB503RDVWPSFBAPAPW4CNZXM=traits-and-limitations" />

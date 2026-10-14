@@ -47,6 +47,8 @@ For a detailed description of the Partner Configuration Window Header, click [he
 > * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
+<div id="integration-tab" />
+
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
@@ -91,6 +93,8 @@ In this section, you can map your AppsFlyer events with StartApp via postbacks.
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
 
 </Accordion>
+
+<div id="attribution-link-tab" />
 
 <Accordion title="Attribution link tab">
 
@@ -178,17 +182,23 @@ The impression attribution link contains similar attribution data to the click r
 
 </Accordion>
 
+<div id="cost-tab" />
+
 <Accordion title="Cost tab">
 
 StartApp automatically sends encrypted CPI cost data on the attribution link for all installs.
 
 </Accordion>
 
+<div id="ad-revenue-tab" />
+
 <Accordion title="Ad revenue tab">
 
 Ad Revenue integration is not available for this partner.
 
 </Accordion>
+
+<div id="permissions-tab" />
 
 <Accordion title="Permissions tab">
 
@@ -209,3 +219,5 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
 
 </Accordion>
+
+<div data-zendesk-anchors="h_01HJS066SXX0W7DC81VDREFN1T=setting-up-startapp h_01HJS066SXGFZ2FWKQ4F6VR081=tip h_01HJS066SX3R7N34PTFWCP1W5Y=integration-tab h_01HJS066SXE913QSB0CYQMSY04=activate-partner h_01HJS066SX19P84WN0BT4KYC12=note h_01HJS066SX9D6FMANAK0GZ303P=general-settings h_01HJS066SYHCHF56ZYD51JXYSK=default-postbacks inapp-events-settings=in-app-events-settings h_01HJS066SY0SC8R4098V4V19HA=in-app-events-settings h_01HJS066SYSBHM3C3HH8WD2DYE=attribution-link-tab h_01HJS066SYVDYD2Q8K13CQ8HHR=attribution-link-parameters h_01HJS066SY7ZB2ZP98JN7N4M6J=retargeting-settings clickthrough-attribution=click-through-attribution h_01HJS066SYT59WAV9RGYBZXAY9=click-through-attribution h_01HJS066SYF3TAZBFNPMAV40TP=click-attribution-link viewthrough-attribution-lookback-window=view-through-attribution-lookback-window h_01HJS066SYMRX14D36G4MB6CWW=view-through-attribution-lookback-window h_01HJS066SYECNKHCRW4SE7FPQF=impressions-attribution-link h_01HJS066SYNY9NFSV2YQRJJ08R=cost-tab h_01HJS066SYVQ9C5G21VARRJ7FR=ad-revenue-tab h_01HJS066SYVSNZDT3Z89G0HRWS=permissions-tab h_01HJS066SYH20AG9XFNDWFBM0W=ad-network-permissions" />
