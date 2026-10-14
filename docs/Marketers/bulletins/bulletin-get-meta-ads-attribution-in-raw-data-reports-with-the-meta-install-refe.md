@@ -28,7 +28,7 @@ x-zendesk:
 | **Prerequisites** | Make sure of the following:<ul><li>You have the AppsFlyer SDK version **V6.12.6** or later to ensure the referrer data is passed properly</li><li>The [Install Referrer decryption key](/docs/meta-ads-integration-setup#encrypted-data-from-the-referrer) on the integration page is entered</li><li>The versions [described here](https://dev.appsflyer.com/hc/docs/install-android-sdk#prerequisites) are installed on your user devices</li></ul> |
 | **Required actions** | [Configure the Meta install referrer support](https://dev.appsflyer.com/hc/docs/install-android-sdk#configure-meta-install-referrer-support) |
 | **What must I know?** | Referrer data has priority over data provided via the Meta ads integration and is available in raw data reports. This solution applies to both click-through attribution and view-through attribution. |
-| **What's the impact?** | * You may see an increase in Meta-attributed installs in raw data reports<br />* Two new match-type fields are now included in raw data reports, `fb_referrer` and `ig_referrer`:  <br />  * `fb_referrer` for attribution from the Facebook app<br />  * `ig_referrer` for attribution from the Instagram app<br />  * `fb_referrer` or `ig_referrer`for attribution from the Audience Network. |
+| **What's the impact?** | <ul><li>You may see an increase in Meta-attributed installs in raw data reports</li><li>Two new match-type fields are now included in raw data reports, `fb_referrer` and `ig_referrer`:<ul><li>`fb_referrer` for attribution from the Facebook app</li><li>`ig_referrer` for attribution from the Instagram app</li><li>`fb_referrer` or `ig_referrer`for attribution from the Audience Network.</li></ul></li></ul> |
 
 > 📘 **See also**
 >

@@ -47,7 +47,7 @@ AppsFlyer provides the following measurement methods:
 | SRN | Method |
 | --- | --- |
 | Advanced SRNs (such as Tiktok and Snapchat) | Based on clicks and impressions from the Advanced SRN |
-| Meta ads | * [Using AEM for iOS devices](/docs/meta-ads-integration-setup#aggregate-event-measurement-aem-for-ios)<br />* [Using the following parameters for Android devices:](/docs/meta-ads-integration-setup#getting-userlevel-data-for-android-installs)<br />  * `gp_referrer`<br />  * `fb_referrer`<br />  * `ig_referrer` |
+| Meta ads | <ul><li>[Using AEM for iOS devices](/docs/meta-ads-integration-setup#aggregate-event-measurement-aem-for-ios)</li><li>[Using the following parameters for Android devices:](/docs/meta-ads-integration-setup#getting-userlevel-data-for-android-installs)<ul><li>`gp_referrer`</li><li>`fb_referrer`</li><li>`ig_referrer`</li></ul></li></ul> |
 | Google Ads | Using the `gbraid` parameter for iOS devices |
 | Apple Search Ads (ASA) | Using [ASA attribution](/docs/apple-ads-integration-setup#asa-attribution) |
 | <ul><li>Google Ads</li><li>Meta Ads</li><li>Snapchat</li><li>TikTok</li><li>X ads</li><li>Yahoo! Japan</li></ul> | [SKAN](/docs/skadnetwork-skan-solution-guide) |

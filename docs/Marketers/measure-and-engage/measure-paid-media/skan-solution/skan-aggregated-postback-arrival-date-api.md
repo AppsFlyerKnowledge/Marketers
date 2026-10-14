@@ -41,14 +41,14 @@ The API returns aggregated SKAdNetwork postbacks, using the postback arrival dat
 
 | Parameter name | Details | Mandatory |
 | --- | --- | --- |
-| `start_date` | The postback arrival date range is bounded by start\_date and end\_date. Note! The arrival date differs from the install date used in the SKAdNetwork dashboard and reports.<br /><br />* YYYY-MM-DD<br />* Earliest date permitted: 2020-11-01  <br />  Example: `2020-11-05` | Yes |
-| `end_date` | * YYYY-MM-DD<br />* Maximum number of days per report call: 60 days<br />* Example: `2020-11-12` | Yes |
+| `start_date` | The postback arrival date range is bounded by start\_date and end\_date. Note! The arrival date differs from the install date used in the SKAdNetwork dashboard and reports.<ul><li>YYYY-MM-DD</li><li>Earliest date permitted: 2020-11-01<br />Example: `2020-11-05`</li></ul> | Yes |
+| `end_date` | <ul><li>YYYY-MM-DD</li><li>Maximum number of days per report call: 60 days</li><li>Example: `2020-11-12`</li></ul> | Yes |
 | `ad_network_name` | Filter by media source | No |
 | `geo` | Filter by country code using ISO 3166 (alpha-2). Example: `US`, `CN` | No |
 | `skad_redownload` | Filter by `true` or `false` | No |
 | `skad_source_app_id` | Filter by source app ID | No |
 | `ad_network_campaign_id` | Filter by ad network campaign ID.<br /><br />**Note**: This is not the campaign ID reported by SKAdNetwork. | No |
-| `modeled_conversion_values` | * Only supported from V2<br />* Value can be either `true` or `false`<br />* If `true`, the postback populates the “count” column with modeled conversion value data.  [See available field for modeled data](/docs/skan-aggregated-postback-arrival-date-api#report-structure-and-example)<br />* If `false`, the postback presents the conversion value count and with all available fields as received by listed in the report structure, without modeled data.<br />* Default value is `false`. | No |
+| `modeled_conversion_values` | <ul><li>Only supported from V2</li><li>Value can be either `true` or `false`</li><li>If `true`, the postback populates the “count” column with modeled conversion value data.  [See available field for modeled data](/docs/skan-aggregated-postback-arrival-date-api#report-structure-and-example)</li><li>If `false`, the postback presents the conversion value count and with all available fields as received by listed in the report structure, without modeled data.</li><li>Default value is `false`.</li></ul> | No |
 
 </Accordion>
 

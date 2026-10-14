@@ -66,13 +66,13 @@ To set the tax rate rules using the Net Revenue API, follow these steps:
 
 | Parameter | Mandatory | Remarks |
 | --- | --- | --- |
-| `tax_name` | Yes | * Name appearing in the customer invoice that describes the specific type of tax.<br />* Example: Sales, VAT, GST |
-| `tax_rate` | Yes | * Value must be greater than 0. <br />- Number up to 4 decimal places representing the tax percentage to be collected.<br />* Example: 7.25 |
-| `tax_exclusive` | No | * Boolean parameter, either true or false.<br />* False means tax is included in the overall revenue.<br />* True means tax is in addition to the overall stated revenue. For example, in the USA or Canada, where the list price doesn't include sales tax.<br />* Default is false. |
-| `country` | No | * [Two-letter ISO country code](https://www.nationsonline.org/oneworld/country_code_list.htm) for which the tax is applied.<br />* Example: CA<br />* **Note:** For United Kingdom, the code implemented is UK, not GB. |
-| `subdivision` | No | * For some countries, there can be an additional state or subdivision.<br />* Handled according to [ISO 3166-2 subdivision codes](https://service.unece.org/trade/locode/2022-2%20SubdivisionCodes.htm).<br />* Must include the country code and subdivision code.<br />* Example: US-CA |
-| `postal_code` | No | * String of letters and/or numbers.<br />* Example: L4J8E3 |
-| `deduction_order` | No | * Enum, either **0**, **1**, or **2**:<br />  * **0** means store commission is deducted first from the gross revenue and tax is deducted from the remaining amount.<br />  * **1** means tax is deducted first from the gross revenue and store commission is deducted from the remaining amount.<br />  * **2** means that both tax and store commission are deducted from the total revenue. |
+| `tax_name` | Yes | <ul><li>Name appearing in the customer invoice that describes the specific type of tax.</li><li>Example: Sales, VAT, GST</li></ul> |
+| `tax_rate` | Yes | <ul><li>Value must be greater than 0.</li><li>Number up to 4 decimal places representing the tax percentage to be collected.</li><li>Example: 7.25</li></ul> |
+| `tax_exclusive` | No | <ul><li>Boolean parameter, either true or false.</li><li>False means tax is included in the overall revenue.</li><li>True means tax is in addition to the overall stated revenue. For example, in the USA or Canada, where the list price doesn't include sales tax.</li><li>Default is false.</li></ul> |
+| `country` | No | <ul><li>[Two-letter ISO country code](https://www.nationsonline.org/oneworld/country_code_list.htm) for which the tax is applied.</li><li>Example: CA</li><li>**Note:** For United Kingdom, the code implemented is UK, not GB.</li></ul> |
+| `subdivision` | No | <ul><li>For some countries, there can be an additional state or subdivision.</li><li>Handled according to [ISO 3166-2 subdivision codes](https://service.unece.org/trade/locode/2022-2%20SubdivisionCodes.htm).</li><li>Must include the country code and subdivision code.</li><li>Example: US-CA</li></ul> |
+| `postal_code` | No | <ul><li>String of letters and/or numbers.</li><li>Example: L4J8E3</li></ul> |
+| `deduction_order` | No | <ul><li>Enum, either **0**, **1**, or **2**:<ul><li>**0** means store commission is deducted first from the gross revenue and tax is deducted from the remaining amount.</li><li>**1** means tax is deducted first from the gross revenue and store commission is deducted from the remaining amount.</li><li>**2** means that both tax and store commission are deducted from the total revenue.</li></ul></li></ul> |
 
 ## Set up store commission rates
 

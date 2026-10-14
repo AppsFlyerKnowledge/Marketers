@@ -42,7 +42,7 @@ The table below provides release notes for supported iOS SDK versions, including
 
 | Version | Release date | Notes |
 | --- | --- | --- |
-| 7.0.1 | 2026-07-22 | * Apps can now provide a hashed customer email, phone number, name, and Facebook login ID to the SDK for sharing with ad network partners. The SDK doesn't collect this information itself. The app provides it, and only hashed values are sent, never plain text.<br />* Removed the `setUserEmails` and `setPhoneNumber` methods. Developers using these must switch to `setUserEmail` and `setUserPhone` |
+| 7.0.1 | 2026-07-22 | <ul><li>Apps can now provide a hashed customer email, phone number, name, and Facebook login ID to the SDK for sharing with ad network partners. The SDK doesn't collect this information itself. The app provides it, and only hashed values are sent, never plain text.</li><li>Removed the `setUserEmails` and `setPhoneNumber` methods. Developers using these must switch to `setUserEmail` and `setUserPhone`</li></ul> |
 | 6.18.1 | 2026-05-25 | <ul><li>Fixed an issue where purchase validation requests from the Purchase Connector that failed due to a network error were permanently lost after the app restarted.</li></ul> |
 | 6.18.0 | 2026-04-21 | <ul><li>Added support for fetching AppTransaction - a representation of an app's download, cryptographically signed by the app store.</li><li>Bug fixes and improvements</li></ul> |
 | 6.17.9 | 2026-03-10 | <ul><li>Fixed an issue where the SDK could get stuck while attempting to fetch ODM data, preventing requests from being sent to the server.</li><li>Fixed an issue where Customer User ID set by the app would not be sent in the install event.</li></ul> |
@@ -52,7 +52,7 @@ The table below provides release notes for supported iOS SDK versions, including
 | 6.17.5  <br />Deprecated | 2025-09-03 | <ul><li>**This version is deprecated and should not be used.**</li></ul> |
 | 6.17.4  <br />Deprecated | 2025-08-27 | <ul><li>**This version is deprecated and should not be used.**</li><li>Fixed an issue where in rare cases the app would crash when the SDK is initialized.</li></ul> |
 | 6.17.3  <br />Deprecated | 2025-08-21 | <ul><li>**This version is deprecated and should not be used.**</li><li>Updated logic for fetching data from Google's ICM library to improve accuracy.</li></ul> |
-| 6.17.2 | 2025-07-15 | * Updated the`validateAndLogInAppPurchase` API (beta)<br />* Improved handling of Apple Search Ads (ASA) tokens for apps that collect ATT (AppTrackingTransparency) consent. |
+| 6.17.2 | 2025-07-15 | <ul><li>Updated the`validateAndLogInAppPurchase` API (beta)</li><li>Improved handling of Apple Search Ads (ASA) tokens for apps that collect ATT (AppTrackingTransparency) consent.</li></ul> |
 | 6.17.1 | 2025-06-24 | <ul><li>Added support for [Google Integrated Conversion](https://support.google.com/google-ads/answer/16203286) (ICM) measurement.</li><li>Fixed an issue causing an App Store login popup to appear when running the SDK in a development environment.</li></ul> |
 | 6.17.0 | 2025-04-23 | <ul><li>Stability and performance improvements</li></ul> |
 | 6.16.2 | 2025-03-10 | <ul><li>Technical update required to release this version into plugins</li></ul> |
@@ -61,8 +61,8 @@ The table below provides release notes for supported iOS SDK versions, including
 | 6.15.3 | 2024-09-23 | SDK Maintenance |
 | 6.15.2 | 2024-08-28 | <ul><li>Fixed an issue with event transmission in the Purchase Connector. This fix does not affect any production versions of the Purchase Connector and is related to its update to version 6.15.x.</li></ul> |
 | 6.15.1 | 2024-08-19 | <ul><li>Fixed an issue with Reinstall Detection that occurred when two or more apps from the same vendor were installed on the device.</li></ul> |
-| 6.15.0 | 2024-08-06 | * Added the `logAdRevenue` API to send ad revenue data to AppsFlyer. **Note:** Starting with this version, the AdRevenue Connector should no longer be used; it must be replaced by the `logAdRevenue`method. For more details, see [here](https://dev.appsflyer.com/hc/docs/ad-revenue-2).<br />* Made internal updates related to the Purchase Connector. Apps that use the Purchase Connector and update to this SDK release must also update their Purchase Connector to v6.15.0. |
-| 6.14.6 | 2024-07-24 | * Fixed an issue where the SDK was making redundant calls to the `getConversionData` API (GCD) when starting a new session; this does not impact measurement. |
+| 6.15.0 | 2024-08-06 | <ul><li>Added the `logAdRevenue` API to send ad revenue data to AppsFlyer. **Note:** Starting with this version, the AdRevenue Connector should no longer be used; it must be replaced by the `logAdRevenue`method. For more details, see [here](https://dev.appsflyer.com/hc/docs/ad-revenue-2).</li><li>Made internal updates related to the Purchase Connector. Apps that use the Purchase Connector and update to this SDK release must also update their Purchase Connector to v6.15.0.</li></ul> |
+| 6.14.6 | 2024-07-24 | <ul><li>Fixed an issue where the SDK was making redundant calls to the `getConversionData` API (GCD) when starting a new session; this does not impact measurement.</li></ul> |
 | 6.14.5 | 2024-07-03 | <ul><li>Fixed an issue where the SDK would send the manual consent data that had been set by the app, even if the code for sending the manual consent had been removed.</li></ul> |
 | 6.14.4 | 2024-06-10 | <ul><li>Updated Privacy Manifest for the [Strict-Mode  SDK](https://dev.appsflyer.com/hc/docs/install-ios-sdk#strict-mode-sdk).</li></ul> |
 | 6.14.3 | 2024-04-26 | <ul><li>Fixed automated merging of the Privacy Manifest for apps utilizing Cocoapods.</li></ul> |
@@ -79,7 +79,7 @@ The following SDK versions have reached **End-of-Support** status. These version
 
 | Version | Release date | Notes |
 | --- | --- | --- |
-| 6.12.3 | 2024-01-04 | * A new `original_link` parameter has been added to the Deep Linking callback within the Email Service Provider (ESP) resolving flow.<br />* All references to the iAd Framework have been removed. |
+| 6.12.3 | 2024-01-04 | <ul><li>A new `original_link` parameter has been added to the Deep Linking callback within the Email Service Provider (ESP) resolving flow.</li><li>All references to the iAd Framework have been removed.</li></ul> |
 | 6.12.2 | 2023-08-24 | SDK Maintenance |
 | 6.12.1 | 2023-07-20 | <ul><li>Fixed an issue in SKAdNetwork 4.0 causing the Coarse conversion value to be reported as "None"</li><li>Fixed a crash in the tvOS implementation</li></ul> |
 | 6.12.0 | 2023-06-28 | Removed bitcode support from the SDK |
@@ -110,16 +110,16 @@ The following SDK versions have reached **End-of-Support** status. These version
 | 6.3.4  <br />End of support: 2024-08-31 | 2021-07-21 | <ul><li>**Bugfix:** Fixed issue with running the SDK on XCode 12.5 Simulators</li><li>Minor fixes and updates.</li></ul> |
 | 6.3.2  <br />End of support: 2024-08-31 | 2021-06-17 | Improved debug logs. |
 | 6.3.1  <br />End of support: 2024-08-31 | 2021-06-02 | SDK Maintenance |
-| 6.3.0  <br />End of support: 2024-08-31 | 2021-05-13 | * Apple Silicon support: Added support to run the SDK on a simulator using Mac machines with the M1 chipset<br />* Starting this version, the SDK supports iOS `9`+. iOS `8` is no longer supported.<br />* iOS Strict Mode SDK: Added support for Carthage dependency manager<br />* Technical update for the OneLink API |
-| 6.2.6  <br />End of support: 2024-08-31 | 2021-04-25 | * Bugfix: SKAdNetwork rules didn't load when SDK initialization occurred after `didFinishLaunchingWithOptions`<br />* Bugfix: `waitForATTUserAuthorization` edge-case causing the launch event to be sent without IDFA, even if user consent is given<br />* Allow the SDK to run on iOS 8 devices<br />* Cleanup and removal of unused code and data |
-| 6.2.5  <br />End of support: 2024-08-31 | 2021-04-06 | Refactoring, cleanup, removal of unused data from the SDK.<br /><br />Starting this version:<br /><br />* The `setShouldCollectDeviceName` method is deprecated and will not return the device name<br />* The `wifi` parameter sent from the SDK is set to `False` |
+| 6.3.0  <br />End of support: 2024-08-31 | 2021-05-13 | <ul><li>Apple Silicon support: Added support to run the SDK on a simulator using Mac machines with the M1 chipset</li><li>Starting this version, the SDK supports iOS `9`+. iOS `8` is no longer supported.</li><li>iOS Strict Mode SDK: Added support for Carthage dependency manager</li><li>Technical update for the OneLink API</li></ul> |
+| 6.2.6  <br />End of support: 2024-08-31 | 2021-04-25 | <ul><li>Bugfix: SKAdNetwork rules didn't load when SDK initialization occurred after `didFinishLaunchingWithOptions`</li><li>Bugfix: `waitForATTUserAuthorization` edge-case causing the launch event to be sent without IDFA, even if user consent is given</li><li>Allow the SDK to run on iOS 8 devices</li><li>Cleanup and removal of unused code and data</li></ul> |
+| 6.2.5  <br />End of support: 2024-08-31 | 2021-04-06 | Refactoring, cleanup, removal of unused data from the SDK.<br /><br />Starting this version:<ul><li>The `setShouldCollectDeviceName` method is deprecated and will not return the device name</li><li>The `wifi` parameter sent from the SDK is set to `False`</li></ul> |
 | 6.2.4  <br />End of support: 2024-08-31 | 2021-03-15 | Bugfix related to SKAdNetwork revenue measurement mode and in-app events that contain `AF_REVENUE`  parameter.<br /><br />Starting this version, in the case of revenue measurement: any event containing `AF_REVENUE` affects the conversion value. Prior to this change, the conversion value was set only if it was in the framework of the`AF_PURCHASE` event.<br /><br />**Note:** If you implement SKAdNetwork Revenue measurement, you must upgrade to this version. |
 | 6.2.3  <br />End of support: 2024-08-31 | 2021-03-07 | Bugfix related to calling SKAdNetwork's `updateConversionValue`. |
 | 6.2.2  <br />End of support: 2024-08-31 | 2021-02-18 | SDK Maintenance |
 | 6.2.1  <br />End of support: 2024-08-31 | 2021-02-15 | Support [Event reporting by S2S](/docs/server-to-server-events-api-for-mobile-s2s-mobile) |
 | 6.2.0  <br />End of support: 2024-08-31 | 2021-02-07 | Additional API: [setPartnerData](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#setpartnerdata) |
 | 6.1.4  <br />End of support: 2024-08-31 | 2021-01-12 | SDK Maintenance |
-| 6.1.3  <br />End of support: 2024-08-31 | 2020-12-24 | * Additional API: [`addPushNotificationDeepLinkPath`](/docs/additional-sdk-integration-guide#record-push-notifications) (supports Movable Ink)<br />* Support [Apple AdServices Framework](https://developer.apple.com/documentation/adservices) |
+| 6.1.3  <br />End of support: 2024-08-31 | 2020-12-24 | <ul><li>Additional API: [`addPushNotificationDeepLinkPath`](/docs/additional-sdk-integration-guide#record-push-notifications) (supports Movable Ink)</li><li>Support [Apple AdServices Framework](https://developer.apple.com/documentation/adservices)</li></ul> |
 | 6.1.2  <br />End of support: 2024-08-31 | 2020-12-03 | SDK Maintenance |
 | 6.1.1  <br />End of support: 2024-08-31 | 2020-11-17 | Introduce [Strict mode SDK](https://dev.appsflyer.com/hc/docs/install-ios-sdk#strict-mode-sdk) |
 | 6.1.0  <br />End of support: 2024-08-31 | 2020-11-09 | Support [Unified deep linking API](https://dev.appsflyer.com/docs/ios-unified-deep-linking) |

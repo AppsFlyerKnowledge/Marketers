@@ -435,7 +435,7 @@ Data files depend on segregation type.
 
 |  | AppsFlyer-owned storage (AWS) | Marketer-owned storage (GCS, AWS, Azure, Yandex, BigQuery, Snowflake) |
 | --- | --- | --- |
-| Bucket name | Set by AppsFlyer | * [GCS](/docs/data-locker-cloud-service-setup#gcs-storage): No restriction<br />* [AWS](/docs/data-locker-cloud-service-setup#aws-storage): Set by you. Must have the prefix af-.<br /><br />Example: `af-datalocker-your-bucket-name` |
+| Bucket name | Set by AppsFlyer | <ul><li>[GCS](/docs/data-locker-cloud-service-setup#gcs-storage): No restriction</li><li>[AWS](/docs/data-locker-cloud-service-setup#aws-storage): Set by you. Must have the prefix af-.</li></ul>Example: `af-datalocker-your-bucket-name` |
 | Storage ownership | AppsFlyer | Marketer |
 | Storage platform | AWS | AWS, GCS, Azure, Yandex, BigQuery, Snowflake |
 | Credentials to access data by you | Available in the Data Locker user interface to your AppsFlyer account admins | Not known to AppsFlyer. Use credentials provided by the cloud provider. |

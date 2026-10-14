@@ -329,7 +329,7 @@ The table below shows the availability of attribution parameters in raw data rep
 | Adset name | For this parameter to be available, you must enable the [Cost](/docs/apple-ads-integration-setup#cost-tab) API on the Apple Ads integration page. The API is available to all advertisers, irrespective of their subscription plan |
 | Adset ID | Always available |
 | Ad | Currently unavailable |
-| Ad ID | This parameter is only available when both of the following conditions are met:<br /><br />* Users are on iOS 15.2 and later<br />* The ad uses<br /><br />  [Custom Product Pages](https://developer.apple.com/app-store/product-page/) for campaigns that are associated with either of the following ad placements:<br /><br />  * `Today tab`<br />  * `Search results` |
+| Ad ID | This parameter is only available when both of the following conditions are met:<ul><li>Users are on iOS 15.2 and later</li><li>The ad uses</li></ul>[Custom Product Pages](https://developer.apple.com/app-store/product-page/) for campaigns that are associated with either of the following ad placements:<ul><li>`Today tab`</li><li>`Search results`</li></ul> |
 | Keywords | For this parameter to be available, you must enable the [Cost](/docs/apple-ads-integration-setup#cost-tab) API on the Apple Ads integration page. The API is available to all advertisers, irrespective of their subscription plan |
 | Keyword ID | This parameter is available via raw data reports. However, it must be explicitly selected in Data Locker, Push API, and Export data. In the case of Pull API, add `keyword_id` to the  `&additional_fields` parameter [of the Pull API call](/docs/pull-api-raw-data#additional-fields). |
 | Keyword Match Type | Currently unavailable |

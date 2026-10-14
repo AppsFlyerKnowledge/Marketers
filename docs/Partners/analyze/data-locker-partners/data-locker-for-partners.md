@@ -80,7 +80,7 @@ Data of a given report is contained in the hour (h) folders associated with that
 | Completion flag | The last file (completion) flag is set when all of the data for a given h folder has been written.<ul><li>Don't read data in a folder before verifying that the \_SUCCESS flag exists.</li><li>The \_SUCCESS flag is set even in cases where no data is written to the folder. Meaning the folder is empty.</li></ul> |
 | Zipping | Files are zipped using gz. After unzipping:<ul><li>The files have no extension.</li><li>Each file has a header row containing the column (field) names.</li></ul> |
 | Column sequence | The sequence of fields in reports is always the same. New fields are added to the right of existing fields.<br /><br />Column (field) definitions are defined per report. Check the relevant report article for the description. |
-| Field population considerations | **Blank or empty fields**: Some fields are populated with *null*or are empty. This means that in the context of a given report there is no data to report. Typically *null*means this field is not populated in the context of a given report and app type. Blank "" means the field is relevant in its context but no data was found to populate it with.<br /><br />**Time zone and currency**:<br /><br />App-specific time zone and currency settings are disregarded for data provided by Data Locker. As such:<br /><br />* **Time zone**: Date and hour data are in UTC<br />* **Currency**: The field event\_revenue\_usd is in USD<br /><br />**Values with commas**: These comas are contained between double quotes `"`, for example, `` `"iPhone6,1"` ``. |
+| Field population considerations | **Blank or empty fields**: Some fields are populated with *null*or are empty. This means that in the context of a given report there is no data to report. Typically *null*means this field is not populated in the context of a given report and app type. Blank "" means the field is relevant in its context but no data was found to populate it with.<br /><br />**Time zone and currency**:<br /><br />App-specific time zone and currency settings are disregarded for data provided by Data Locker. As such:<ul><li>**Time zone**: Date and hour data are in UTC</li><li>**Currency**: The field event\_revenue\_usd is in USD</li></ul>**Values with commas**: These comas are contained between double quotes `"`, for example, `` `"iPhone6,1"` ``. |
 
 </Accordion>
 
@@ -103,7 +103,7 @@ Data files depend on segregation type.
 
 |  | Partner-owned storage (GCS, AWS, BigQuery) |
 | --- | --- |
-| Bucket name | * GCS: No restriction<br />* AWS: Set by you. Must have the prefix af-.<br /><br />Example: `af-datalocker-your-bucket-name` |
+| Bucket name | <ul><li>GCS: No restriction</li><li>AWS: Set by you. Must have the prefix af-.</li></ul>Example: `af-datalocker-your-bucket-name` |
 | Storage owner | Partner |
 | Storage platform | AWS, GCS, Yandex, BigQuery |
 | Credentials to access data by you | Not known to AppsFlyer. Use credentials provided by the storage provider. |

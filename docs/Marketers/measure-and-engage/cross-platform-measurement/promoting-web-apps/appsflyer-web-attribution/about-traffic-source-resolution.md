@@ -224,8 +224,8 @@ AppsFlyer pulls campaign information from the following URL parameters, in order
 
 | URL parameter(s) | Maps to | Priority order |
 | --- | --- | --- |
-| `c`, `af_campaign`, `utm_campaign` | Campaign name | 1. `c`<br />2. `af_campaign`<br />3. `utm_campaign` |
-| `af_c_id`, `af_campaign_id` | Campaign ID | 1. `af_c_id`<br />2. `af_campaign_id` |
+| `c`, `af_campaign`, `utm_campaign` | Campaign name | <ol><li>`c`</li><li>`af_campaign`</li><li>`utm_campaign`</li></ol> |
+| `af_c_id`, `af_campaign_id` | Campaign ID | <ol><li>`af_c_id`</li><li>`af_campaign_id`</li></ol> |
 | `af_adset` | Ad set name | — |
 | `af_adset_id` | Ad set ID | — |
 | `af_ad` | Ad name | — |

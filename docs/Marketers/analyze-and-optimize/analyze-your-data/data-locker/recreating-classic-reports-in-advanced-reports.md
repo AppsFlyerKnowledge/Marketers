@@ -52,9 +52,9 @@ In the Conversions Advanced Report, set the **Conversion type** filter to match 
 
 | Classic report | Conversion type filter | Platform group filter | Comments |
 | --- | --- | --- | --- |
-| User acquisition – Installs | User acquisition | Mobile | * The `conversion_name` field value is `INSTALL`.<br />* Covers organic and non-organic installs. |
-| Retargeting – Conversions | Retargeting | Mobile | * The `conversion_name` field value is `RE-ENGAGEMENT` or `RE-ATTRIBUTION`.<br />* Covers non-organic only. |
-| CTV – Installs | User acquisition | CTV | * The `conversion_name` field value is `INSTALL`.<br />* Covers organic and non-organic installs. |
+| User acquisition – Installs | User acquisition | Mobile | <ul><li>The `conversion_name` field value is `INSTALL`.</li><li>Covers organic and non-organic installs.</li></ul> |
+| Retargeting – Conversions | Retargeting | Mobile | <ul><li>The `conversion_name` field value is `RE-ENGAGEMENT` or `RE-ATTRIBUTION`.</li><li>Covers non-organic only.</li></ul> |
+| CTV – Installs | User acquisition | CTV | <ul><li>The `conversion_name` field value is `INSTALL`.</li><li>Covers organic and non-organic installs.</li></ul> |
 
 ## Recreate classic reports in the End-user events advanced report
 
@@ -62,10 +62,10 @@ In the End-user events Advanced Report, set the **Conversion type** filter to ma
 
 | Classic report | End user event type filter | Conversion type filter | Platform group filter | Comments |
 | --- | --- | --- | --- | --- |
-| User acquisition – In-app events | `In-app` | User acquisition | Mobile | * Covers organic and non-organic in-app events. |
-| Retargeting – In-app events | `In-app` | Retargeting | Mobile | * Covers non-organic only.<br />* Set **Is primary attribution** to `True` to deduplicate retargeting events published more than once. |
-| User acquisition – Sessions | `Session` | User acquisition | Mobile | * Covers organic and non-organic sessions. |
-| Retargeting – Sessions | `Session` | Retargeting | Mobile | * Covers non-organic only. |
+| User acquisition – In-app events | `In-app` | User acquisition | Mobile | <ul><li>Covers organic and non-organic in-app events.</li></ul> |
+| Retargeting – In-app events | `In-app` | Retargeting | Mobile | <ul><li>Covers non-organic only.</li><li>Set **Is primary attribution** to `True` to deduplicate retargeting events published more than once.</li></ul> |
+| User acquisition – Sessions | `Session` | User acquisition | Mobile | <ul><li>Covers organic and non-organic sessions.</li></ul> |
+| Retargeting – Sessions | `Session` | Retargeting | Mobile | <ul><li>Covers non-organic only.</li></ul> |
 | CTV – In-app events | `In-app` | any value | CTV |  |
 | CTV – Sessions | `Session` | any value | CTV |  |
 

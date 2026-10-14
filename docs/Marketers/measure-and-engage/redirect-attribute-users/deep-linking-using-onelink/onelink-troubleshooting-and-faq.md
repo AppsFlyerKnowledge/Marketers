@@ -53,7 +53,7 @@ Universal Links, App Links, and URI schemes are secure methods for **opening** a
 
 | OS | Do URI schemes work to open the app? |
 | --- | --- |
-| iOS | **Yes.** Use as a fallback for Universal Links failure.<br /><br />**Important notes:**<br /><br />* Using URI schemes as a fallback is subject to iOS-based limitations.<br />* For many browsers, including Safari, you must add the `af_force_deeplink=true` parameter to the URL to use URI schemes as a fallback. [Learn more](/docs/uri-scheme-fallback-for-ios).<br />* If an error message appears that says: "Something went wrong. The application couldn’t be opened.”, this generally means that the application isn’t installed or an incorrect URI scheme was used. |
+| iOS | **Yes.** Use as a fallback for Universal Links failure.<br /><br />**Important notes:**<ul><li>Using URI schemes as a fallback is subject to iOS-based limitations.</li><li>For many browsers, including Safari, you must add the `af_force_deeplink=true` parameter to the URL to use URI schemes as a fallback. [Learn more](/docs/uri-scheme-fallback-for-ios).</li><li>If an error message appears that says: "Something went wrong. The application couldn’t be opened.”, this generally means that the application isn’t installed or an incorrect URI scheme was used.</li></ul> |
 | Android | **Yes.** Use for Samsung devices, Android versions prior to 6.0 and as a fallback for when App Links fail on later Android versions. |
 | Amazon | **No** |
 | Windows Mobile | **No** |

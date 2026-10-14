@@ -977,8 +977,8 @@ When viewing net revenue in reports, the following parameters contain the net re
 | `af_net_revenue_postal_code` | Tax |
 | `af_net_revenue_country` | Tax |
 | `af_net_revenue_subdivision` | Tax |
-| `af_net_revenue` | * Store commission<br />* Tax |
-| `af_net_revenue_factors` | * Store commission<br />* Tax |
+| `af_net_revenue` | <ul><li>Store commission</li><li>Tax</li></ul> |
+| `af_net_revenue_factors` | <ul><li>Store commission</li><li>Tax</li></ul> |
 
 </Accordion>
 

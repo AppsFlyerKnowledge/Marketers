@@ -96,7 +96,7 @@ Learn more about [Protect360 raw data reports](/docs/protect360-raw-data-reports
 
 | Report | Data freshness | Description |
 | --- | --- | --- |
-| Post-attribution in-app events fraud | Daily 10:00 UTC | * In-app events performed by installs identified as fraudulent.<br />* Any other in-app event judged as fraudulent irrespective of the install.<br /><br />The report can be optionally filtered by in-app event type as described in the parameters table that follows.<br /><br />Report topic: `fraud-post-inapps` |
+| Post-attribution in-app events fraud | Daily 10:00 UTC | <ul><li>In-app events performed by installs identified as fraudulent.</li><li>Any other in-app event judged as fraudulent irrespective of the install.</li></ul>The report can be optionally filtered by in-app event type as described in the parameters table that follows.<br /><br />Report topic: `fraud-post-inapps` |
 | Post-attribution installs | Daily 10:00 UTC | <ul><li>Installs identified as fraudulent post-attribution.</li><li>The report can be optionally filtered by the detection date as described in the section that follows.</li></ul>Report topic: detection |
 | Installs | Real-time | Blocked installs with the block reason<br /><br />Report topic: blocked\_installs\_report |
 | In-app event | Real-time | In-app events performed by blocked users<br /><br />Report topic: `blocked_in-app_events_report` |
@@ -181,7 +181,7 @@ Protect360 ad network API basics:
 | Path | `https://hq1.appsflyer.com/api/adnets-data/v1/export/report_topic/app/app_id` |
 | --- | --- |
 | Method | GET |
-| Path parameters (mandatory) | * `app_id`:<br />  * The app identifier, as found in the AppsFlyer dashboard. Insert it precisely as it displays in the dashboard.<br />  * Make sure to prefix iOS apps with **id.**<br />* `report_topic`: |
+| Path parameters (mandatory) | <ul><li>`app_id`:<ul><li>The app identifier, as found in the AppsFlyer dashboard. Insert it precisely as it displays in the dashboard.</li><li>Make sure to prefix iOS apps with **id.**</li></ul></li><li>`report_topic`:</li></ul> |
 | Accepted content types | `application/json` |
 | Authorization | <ul><li>Bearer token in the request header.</li><li>![AppsFlyerAdmin_us-en.png](https://files.readme.io/5708713f5adc7560748b16d2df4a439163e1310fc7d32f2e5ca786d176cbc8d3-44928678665617.png)Ask the admin to get the V2.0 token from the [tokens](/docs/managing-appsflyer-tokens) page. This token is about 700 characters in length.</li></ul> |
 | Rate limitation | [Rate limitations](/docs/report-generation-quotas-rate-limitations) |

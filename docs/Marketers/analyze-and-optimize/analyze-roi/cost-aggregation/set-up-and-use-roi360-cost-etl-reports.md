@@ -93,7 +93,7 @@ Data written to the cloud service or bucket has the directory and file structure
 | t | The name of the specific report. Either:<ul><li>cost\_etl\_summary</li><li>cost\_etl\_geo</li><li>cost\_etl\_channel</li><li>cost\_etl\_all\_cost\_geo</li></ul> |
 | dt | <ul><li>The report date, meaning the date the report was sent.</li><li>YYYY-MM-DD</li></ul> |
 | v | <ul><li>The chronological version of the report per day (up to 4 possible daily reports)</li><li>Integer between 1-4</li></ul> |
-| Parquet file number | * Numbered starting from 00000<br />* Example: `part-<number>` |
+| Parquet file number | <ul><li>Numbered starting from 00000</li><li>Example: `part-<number>`</li></ul> |
 
 #### Cost ETL connection directory structure
 
@@ -108,7 +108,7 @@ Data written to the cloud service or bucket has the directory and file structure
 | batch | Number 1-4 |
 | dimension | Data dimension:<ul><li>geo</li><li>channel</li></ul> |
 | file\_name | <ul><li>summary</li><li>all-cost</li></ul> |
-| Parquet file number | * Numbered starting from 00000<br />* Example: `part-<number>` |
+| Parquet file number | <ul><li>Numbered starting from 00000</li><li>Example: `part-<number>`</li></ul> |
 
 **Example:** For the first data pull of June 23, 2020, the directory and file name structure is as follows: `/bucket-name/cost_etl/v1/dt=2020-06-23/b=1/geo/part-00001`
 

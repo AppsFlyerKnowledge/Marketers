@@ -96,4 +96,4 @@ The traits specific to Samsung preload referrer are as follows:
 | SDK version | v6.16.0 |
 | Match type | `preload_rfr` |
 | Overview dashboard | Engagements count as clicks in aggregate reports and dashboards. They are aggregated at the preload partner (media source) and campaign levels. |
-| Raw data reports | * Engagements are available in the clicks reports only via Data Locker.<br />* In the install reports, the preload events are NOT found in the original URL due to Samsung’s privacy restrictions.<br />* They can be identified in the `af_engagement_type` parameter as `preload`. |
+| Raw data reports | <ul><li>Engagements are available in the clicks reports only via Data Locker.</li><li>In the install reports, the preload events are NOT found in the original URL due to Samsung’s privacy restrictions.</li><li>They can be identified in the `af_engagement_type` parameter as `preload`.</li></ul> |

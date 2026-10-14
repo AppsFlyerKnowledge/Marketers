@@ -198,7 +198,7 @@ Install and in-app data appears in reports within 15 minutes.
 
 | Reason | Solution |
 | --- | --- |
-| Macro `(mapped-iae)` isn't integrated in the in-app event postback. | Use the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif) and request to integrate the macro. Include the following information:<br /><br />* pid or ad network email<br />* receiving parameter of partner event identifier<br /><br />[More on postback macros](/docs/postback-macros-for-ad-networks#postback-macros). |
+| Macro `(mapped-iae)` isn't integrated in the in-app event postback. | Use the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif) and request to integrate the macro. Include the following information:<ul><li>pid or ad network email</li><li>receiving parameter of partner event identifier</li></ul>[More on postback macros](/docs/postback-macros-for-ad-networks#postback-macros). |
 | Advertiser or agency didn't configure the partner event identifier correctly or at all. | If the click attribution URL contains `af_prt`<br /><br />ask the agency to check if the partner event identifier is correctly configured on their dashboard.<br /><br />If not,<br /><br />ask the advertiser to check if the partner event identifier is correctly configured on their dashboard. |
 
 </Accordion>

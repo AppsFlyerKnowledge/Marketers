@@ -99,8 +99,8 @@ Pagination mechanism parameters (optional):
 
 | Query parameter | Description |
 | --- | --- |
-| limit | Number of records that return per call<br /><br />* Maximum: 1,000<br />* If you don't send`limit`, it is automatically set to 1,000.<br />* Example: `limit=2`<br />* Mandatory: No |
-| offset | The first record to return in the call. Record numbers start with 0.<br /><br />* If you don't send `offset`, it is automatically set to 0.<br />* Example: `offset=2`<br />* Mandatory: No |
+| limit | Number of records that return per call<ul><li>Maximum: 1,000</li><li>If you don't send`limit`, it is automatically set to 1,000.</li><li>Example: `limit=2`</li><li>Mandatory: No</li></ul> |
+| offset | The first record to return in the call. Record numbers start with 0.<ul><li>If you don't send `offset`, it is automatically set to 0.</li><li>Example: `offset=2`</li><li>Mandatory: No</li></ul> |
 
 </Accordion>
 

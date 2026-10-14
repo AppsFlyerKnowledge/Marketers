@@ -86,7 +86,7 @@ In this section, you can map your AppsFlyer events with your partners via postba
 
 | Parameter Name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br /><br />**Note:**<br /><br />* For Xsolla, make sure to add the `af_login` event or any other event that represents user login to the mobile app, as shown in the screenshot above. |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br /><br />**Note:**<ul><li>For Xsolla, make sure to add the `af_login` event or any other event that represents user login to the mobile app, as shown in the screenshot above.</li></ul> |
 | **mapped to partner event** | Enter the corresponding event name you want to send to Xsolla. Xsolla's naming is flexible and any name can be used in this field. |
 | **for users from** | Select **All media sources, including organic** to send postbacks for events attributed to any partner and for organic events. |
 | **including** | <ul><li>**No values & no revenue**: Send just the event itself without any parameters (values or revenue).</li><li>**Values & no revenue**: Send all the parameters **excluding** the revenue value.</li><li>**Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li></ul>Note: Xsolla's integration with AppsFlyer doesn't require sending values or revenue. Therefore, any option selected is applicable. |

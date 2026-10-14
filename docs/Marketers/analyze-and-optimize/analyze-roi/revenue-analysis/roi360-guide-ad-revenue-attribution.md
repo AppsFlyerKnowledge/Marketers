@@ -322,7 +322,7 @@ The fields in ad revenue reports are populated:
 | monetization\_network | Monetization Network | Specific | Network is sending the ad |
 | impressions | Impressions | Specific | Number of times that the user saw the ad |
 | mediation\_network | Mediation Network | Specific | Mediation platform reporting the event to AppsFlyer |
-| customer\_user\_id | Customer User ID | Context | Populated if available from the advertiser:<br /><br />* For impression-level (SDK) integrations: Collected via `setCustomerUserId()` in the AppsFlyer SDK.<br />* For device-level (API) integrations: Collected from the mediation API (user ID or publisher user ID set via the mediation SDK).<br />* Not supported by Odeeo and Appodeal. |
+| customer\_user\_id | Customer User ID | Context | Populated if available from the advertiser:<ul><li>For impression-level (SDK) integrations: Collected via `setCustomerUserId()` in the AppsFlyer SDK.</li><li>For device-level (API) integrations: Collected from the mediation API (user ID or publisher user ID set via the mediation SDK).</li><li>Not supported by Odeeo and Appodeal.</li></ul> |
 
 #### Fields by network
 

@@ -73,7 +73,7 @@ As of July 1, 2020, we no longer send launch postbacks to Chartboost. If your in
 
 | Your configuration | Will be updated to | Your next actions |
 | --- | --- | --- |
-| Send to Chartboost **all launches** (from all media sources, including organic) | Send to Chartboost:<br /><br />* **all installs** (from all media sources, including organic)<br />* **all** `af_app_opened` **events** (from all media sources, including organic) | No further actions required. This update has no actual impact on the configuration. |
+| Send to Chartboost **all launches** (from all media sources, including organic) | Send to Chartboost:<ul><li>**all installs** (from all media sources, including organic)</li><li>**all** `af_app_opened` **events** (from all media sources, including organic)</li></ul> | No further actions required. This update has no actual impact on the configuration. |
 
 ### In-app events settings
 

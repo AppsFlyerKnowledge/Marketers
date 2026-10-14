@@ -97,7 +97,7 @@ The columns in the table below have the following meaning:
 | install\_time | SDK | Yes | Install timestamp | Yes |  |
 | install\_unix\_ts | SDK | Yes | Install timestamp in unix format | Yes |  |
 | is\_attributed | AF | Yes | A flag marking if the install or event is attributed to this media source | Yes |  |
-| is\_contrib | AF | Yes | Indicates whether the ad network was among the top 3 contributors to an install.<br /><br />* If the ad network did not win the attribution but is in the top 3 contributors, `is_contrib=1`.<br />* If the ad network won the attribution, `is_contrib=0`.<br />* If the ad network is not in the top 3 contributors, `is_contrib=0`. | Yes |  |
+| is\_contrib | AF | Yes | Indicates whether the ad network was among the top 3 contributors to an install.<ul><li>If the ad network did not win the attribution but is in the top 3 contributors, `is_contrib=1`.</li><li>If the ad network won the attribution, `is_contrib=0`.</li><li>If the ad network is not in the top 3 contributors, `is_contrib=0`.</li></ul> | Yes |  |
 | is\_lat | SDK | Yes | Limit ad tracking (LAT): iOS: Starting iOS 14 LAT is deprecated by Apple. Determine user privacy status using ATT. In this case disregard is\_lat. Before iOS 14, if true, IDFA is not available and is set to 0. Android: When true, the user has opted-out of interest-based ads. This does not prevent the collection of GAID. | Yes |  |
 | is\_organic | AF | Yes | If an install postback is sent for all media sources including organic, then the ad network will receive an indication as to whether an install was organic or non-organic. | Installs only |  |
 | is\_primary\_attribution | AF | Yes | If false, see is\_retargeting. | No | In-app |

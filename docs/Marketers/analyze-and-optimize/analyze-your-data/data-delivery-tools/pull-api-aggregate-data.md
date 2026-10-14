@@ -59,13 +59,13 @@ x-zendesk:
 | Parameter | Description |
 | --- | --- |
 | app\_id | Application ID |
-| from | * The date range consists of a `from`and `to` parameter. The range is the LTV (install) date range.<br />* Format: `yyyy-mm-dd`,<br />* Example: 2010-01-01 |
+| from | <ul><li>The date range consists of a `from`and `to` parameter. The range is the LTV (install) date range.</li><li>Format: `yyyy-mm-dd`,</li><li>Example: 2010-01-01</li></ul> |
 | to | End date. As for `from` |
-| media\_source | Use to limit (filter) to a specific media source.<br /><br />* Example:`media_source=facebook` |
+| media\_source | Use to limit (filter) to a specific media source.<ul><li>Example:`media_source=facebook`</li></ul> |
 | attribution\_touch\_type | Set this parameter as shown in the example to get [view-through attribution](/docs/pull-api-aggregate-data) (VTA) KPIs.<br /><br />Example: `attribution_touch_type=impression`<br /><br />Some VTA KPIs, like clicks, impressions, and cost APIs, don't have values associated with them and display the value N/A instead. |
 | currency | Currency of revenue and cost.<br /><br />Aggregate Pull API reports always use the app-specific currency. |
-| reattr | Get retargeting conversions data.<br /><br />* [Default] If false, user acquisition data (UA) campaigns returns.<br />* If true, retargeting conversion returns.<br />* **Example**:`reattr=true` |
-| timezone | [Default] Data returns using UTC.<br /><br />* Template URIs are populated with the timezone parameter set to the app-specific time zone.<br />* [Default] If the parameter is not sent, data returns using UTC.<br />* If you send`timezone=[Joda-Time]`, data returns using the app-specific time zone.<br /><br />Notes about selecting timezones<br /><br />* Joda-Time time zone format takes into account daylight saving time.<br />* The Joda-Time value must be identical to the value in the app settings page. For example, if the timezone setting is Paris, the timezone value in the Pull API URL should be `timezone=Europe%2fParis`.<br />* Pulling data in the selected time zone is only available from the date when the time zone setting was made. Any data prior to the date of the change uses UTC as the timezone. |
+| reattr | Get retargeting conversions data.<ul><li>[Default] If false, user acquisition data (UA) campaigns returns.</li><li>If true, retargeting conversion returns.</li><li>**Example**:`reattr=true`</li></ul> |
+| timezone | [Default] Data returns using UTC.<ul><li>Template URIs are populated with the timezone parameter set to the app-specific time zone.</li><li>[Default] If the parameter is not sent, data returns using UTC.</li><li>If you send`timezone=[Joda-Time]`, data returns using the app-specific time zone.</li></ul>Notes about selecting timezones<ul><li>Joda-Time time zone format takes into account daylight saving time.</li><li>The Joda-Time value must be identical to the value in the app settings page. For example, if the timezone setting is Paris, the timezone value in the Pull API URL should be `timezone=Europe%2fParis`.</li><li>Pulling data in the selected time zone is only available from the date when the time zone setting was made. Any data prior to the date of the change uses UTC as the timezone.</li></ul> |
 
 </Accordion>
 

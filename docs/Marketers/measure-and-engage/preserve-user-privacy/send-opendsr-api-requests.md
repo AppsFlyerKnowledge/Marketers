@@ -114,9 +114,9 @@ For the API authorization, use the same V2 API token as for Pull API. An admin u
 
 | Object type | **Mandatory** | **Description** |
 | --- | --- | --- |
-| identity\_type | Yes | * The identity type in string format for `android`, `ios`, `web`, `windowsphone` platforms are any of the following:<br />  * ios\_advertising\_id<br />  * android\_advertising\_id<br />  * fire\_advertising\_id<br />  * microsoft\_advertising\_id<br />  * appsflyer\_id<br />  * customer\_user\_id (CUID)<br /><br />* For `CTV`, `PC`, and `Console`platforms only the following:<br />  * appsflyer\_id<br />  * customer\_user\_id (CUID)<br /><br />* Example: `android_advertising_id`<br /><br />**Important!**<br /><br />To use CUID through the OpenDSR API, you must send the CUID with `idfa` / `appsflyer_id` inside in-app events using `event_name`: `Login - Complete` or `Registration - Account created` |
+| identity\_type | Yes | <ul><li>The identity type in string format for `android`, `ios`, `web`, `windowsphone` platforms are any of the following:<ul><li>ios\_advertising\_id</li><li>android\_advertising\_id</li><li>fire\_advertising\_id</li><li>microsoft\_advertising\_id</li><li>appsflyer\_id</li><li>customer\_user\_id (CUID)</li></ul></li></ul><ul><li>For `CTV`, `PC`, and `Console`platforms only the following:<ul><li>appsflyer\_id</li><li>customer\_user\_id (CUID)</li></ul></li></ul><ul><li>Example: `android_advertising_id`</li></ul>**Important!**<br /><br />To use CUID through the OpenDSR API, you must send the CUID with `idfa` / `appsflyer_id` inside in-app events using `event_name`: `Login - Complete` or `Registration - Account created` |
 | identity\_value | Yes | <ul><li>Format: String</li><li>Example: "a7551968-d5d6-44b2-9831-815ac9017798"</li></ul> |
-| identity\_format | Yes | * The method used to encode the identity\_value: `raw` is the only supported:<br />* Example: "raw" |
+| identity\_format | Yes | <ul><li>The method used to encode the identity\_value: `raw` is the only supported:</li><li>Example: "raw"</li></ul> |
 
 #### Example: GDPR erasure request
 

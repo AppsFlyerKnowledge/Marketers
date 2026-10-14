@@ -158,7 +158,7 @@ The SDK API includes the following methods to disable identifiers.
 
 | Method | Identifiers disabled |
 | --- | --- |
-| [`setdisableadvertisingIdentifiers`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisableadvertisingidentifiers) | * Google Advertising ID (GAID)  <br />* Open Anonymous Device Identifier (OAID)  <br />* Amazon Advertising ID (AAID) |
+| [`setdisableadvertisingIdentifiers`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisableadvertisingidentifiers) | <ul><li>Google Advertising ID (GAID)</li><li>Open Anonymous Device Identifier (OAID)</li><li>Amazon Advertising ID (AAID)</li></ul> |
 | [`setcollectoaid`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectoaid) | Open Anonymous Device Identifier (OAID) |
 
 ### iOS identifiers

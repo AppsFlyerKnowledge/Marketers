@@ -49,7 +49,7 @@ Alternatively, links can be created via S2S using the [Engagements API](https://
 | Parameter | Display name in Raw data export and Pull API | Description | Field type |
 | --- | --- | --- | --- |
 | platform | Platform | <ul><li>Path param that specified the application platform.</li><li>Possible values:<ul><li>smartcast</li><li>tizen</li><li>roku</li><li>webos</li><li>vidaa</li><li>playstation</li><li>steam</li><li>quest</li><li>battlenet</li><li>epic</li><li>switch</li><li>xbox</li><li>nativepc</li></ul></li></ul> | String |
-| app\_id | App ID | * Path param that specifies the app ID of the app for which you are posting.<br />* Example: `ap123456`<br />* Do not add a platform prefix to the app ID value. For example, If the app ID is `ap123456`, and the platform is `platformX` , do not use `platformX_ap123456` as the `app_id` value. | String |
+| app\_id | App ID | <ul><li>Path param that specifies the app ID of the app for which you are posting.</li><li>Example: `ap123456`</li><li>Do not add a platform prefix to the app ID value. For example, If the app ID is `ap123456`, and the platform is `platformX` , do not use `platformX_ap123456` as the `app_id` value.</li></ul> | String |
 | af\_media\_source | Media Source | This is the unique partner identifier as defined on the AppsFlyer platform.  <br />The following special characters are not allowed: ;, *, !, @, #, ?, $, ^, :, &, ~, \`, =, +, ’, >, &lt;, /, \{, \}, %. | String |
 | af\_campaign | Campaign | Campaign name | String |
 | af\_campaign\_id | Campaign ID | Campaign ID | String |

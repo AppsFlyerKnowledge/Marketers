@@ -65,6 +65,6 @@ The Smart Script in a cross-platform landing page uses the incoming link (the li
 | --- | --- | --- |
 | platform | A string describes the platform and must be from this list:<ul><li>smartcast</li><li>tizen</li><li>roku</li><li>webos</li><li>vidaa</li><li>playstation</li><li>android</li><li>ios</li><li>steam</li><li>quest</li><li>battlenet</li><li>nativepc</li></ul> |  |
 | app\_id | <ul><li>App ID</li><li>Example: 123456</li></ul> |  |
-| redirectURL | * The URL to which the platform/app user should be redirected.<br />* Example: `https://store.steampowered.com/app/123456/Team_Fortress_2/` |  |
+| redirectURL | <ul><li>The URL to which the platform/app user should be redirected.</li><li>Example: `https://store.steampowered.com/app/123456/Team_Fortress_2/`</li></ul> |  |
 
 </Accordion>

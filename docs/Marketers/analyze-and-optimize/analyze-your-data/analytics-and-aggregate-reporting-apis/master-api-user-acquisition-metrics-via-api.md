@@ -44,8 +44,8 @@ To use Master API, you define the data that you want to view (similar to the imp
 | Parameter | Value | Mandatory |
 | --- | --- | --- |
 | app\_id | <ul><li>App identifier, as found in AppsFlyer.</li><li>Insert the app ID exactly as found in AppsFlyer</li><li>Prefix iOS apps with **id**</li><li>Use **all app IDs** to query for all your apps</li></ul> | Yes |
-| from | Lower-bound of the LTV attribution date range.<br /><br />* Format: String yyyy-mm-dd<br />* Example: `from: 2020-01-02` | Yes |
-| to | Upper-bound of the LTV attribution date range<br /><br />* Number of the days in the range: 1-31 days<br />* For a single day: `from` and `to` values are identical.<br />* Format: yyyy-mm-dd<br />* Example: `from: 2021-01-01, to: 2021-01-31` is 31 days. | Yes |
+| from | Lower-bound of the LTV attribution date range.<ul><li>Format: String yyyy-mm-dd</li><li>Example: `from: 2020-01-02`</li></ul> | Yes |
+| to | Upper-bound of the LTV attribution date range<ul><li>Number of the days in the range: 1-31 days</li><li>For a single day: `from` and `to` values are identical.</li><li>Format: yyyy-mm-dd</li><li>Example: `from: 2021-01-01, to: 2021-01-31` is 31 days.</li></ul> | Yes |
 | [Groupings](/docs/master-api-user-acquisition-metrics-via-api#groupings) | Group by parameters, separated by a comma. See the Groupings table for the list available <br /><br />Example: `groupings=pid,geo` | Yes |
 | [KPIs](/docs/master-api-user-acquisition-metrics-via-api#kpis) | List of KPIs to include, each separated by a comma. See the KPI table that follows for a list of KPIs.<br /><br />Example: `kpis=installs,clicks, impressions,sessions,retention_day_7` | Yes |
 | [Filters](/docs/master-api-user-acquisition-metrics-via-api#filters-optional) | Data can be filtered using one or more filter options. | No |

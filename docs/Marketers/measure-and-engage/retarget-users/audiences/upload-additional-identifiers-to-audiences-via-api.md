@@ -102,13 +102,13 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 
 | Parameter | Description | Mandatory |
 | --- | --- | --- |
-| `{key_type}` | The identifier used as the unique value to represent the user in each data row of the request.<br /><br />The value specified here applies to every row in the request.<br /><br />Possible values:<br /><br />* idfa<br />* gaid<br />* idfv<br />* customer\_user\_id<br />* imei<br />* oaid | Yes |
+| `{key_type}` | The identifier used as the unique value to represent the user in each data row of the request.<br /><br />The value specified here applies to every row in the request.<br /><br />Possible values:<ul><li>idfa</li><li>gaid</li><li>idfv</li><li>customer\_user\_id</li><li>imei</li><li>oaid</li></ul> | Yes |
 | `{action}` | "add" | No<br /><br />Default value: "add" |
 | `{key_value}` | Valid identifier value for the key\_type specified | Yes |
 | \{identifiers\} | Object containing the names and values of the identifiers to add:<ul><li>\{hashed\_emails\}</li><li>\{phone\_number\_sha256\}</li><li>\{phone\_number\_e164\_sha256\}</li></ul> | Yes<ul><li>Must include a value for at least 1 of these 3 identifiers</li></ul> |
-| `{hashed_emails}` | An array of up to 2 hashed email addresses<br /><br />Format:<br /><br />* Lowercase<br />* No white spaces<br />* SHA256 hashed<br /><br />Example value before hashing: name@domain.com | No |
-| `{phone_number_sha256}` | Phone number (see note below)<br /><br />Format:<br /><br />* No symbols, letters, or leading zeroes<br />* Include country code<br />* SHA256 hashed<br /><br />Example value before hashing:<br /><br />442070313000 | No |
-| `{phone_number_e164_sha256}` | Phone number in E164 format (see note below)<br /><br />Format<br /><br />* E164 phone number<br />* SHA256 hashed<br /><br />Example value before hashing:<br /><br />+442070313000 | No |
+| `{hashed_emails}` | An array of up to 2 hashed email addresses<br /><br />Format:<ul><li>Lowercase</li><li>No white spaces</li><li>SHA256 hashed</li></ul>Example value before hashing: name@domain.com | No |
+| `{phone_number_sha256}` | Phone number (see note below)<br /><br />Format:<ul><li>No symbols, letters, or leading zeroes</li><li>Include country code</li><li>SHA256 hashed</li></ul>Example value before hashing:<br /><br />442070313000 | No |
+| `{phone_number_e164_sha256}` | Phone number in E164 format (see note below)<br /><br />Format<ul><li>E164 phone number</li><li>SHA256 hashed</li></ul>Example value before hashing:<br /><br />+442070313000 | No |
 
 > 📘 **Notes**
 >
@@ -191,7 +191,7 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 
 | Parameter | Description | Mandatory |
 | --- | --- | --- |
-| `{key_type}` | The identifier used as the unique value to represent the user in each data row of the request.<br /><br />The value specified here applies to every row in the request.<br /><br />Possible values:<br /><br />* idfa<br />* gaid<br />* idfv<br />* customer\_user\_id<br />* imei<br />* oaid | Yes |
+| `{key_type}` | The identifier used as the unique value to represent the user in each data row of the request.<br /><br />The value specified here applies to every row in the request.<br /><br />Possible values:<ul><li>idfa</li><li>gaid</li><li>idfv</li><li>customer\_user\_id</li><li>imei</li><li>oaid</li></ul> | Yes |
 | `{key_value}` | Valid identifier value for the key\_type specified | Yes |
 | `{action}` | "remove" | No<br /><br />Default value: "add" |
 | \{identifiers\} | An array containing the names of the identifiers for which values should be deleted:<ul><li>\{hashed\_emails\}</li><li>\{phone\_number\_sha256\}</li><li>\{phone\_number\_e164\_sha256\}</li></ul> | Yes<ul><li>Must include at least 1 of these 3 identifiers</li></ul> |
@@ -232,7 +232,7 @@ body:
 | 400 | Request must have ‘data’ with at least 1 element | Data list can not be empty. |
 | 400 | Request ‘data’ should not exceed the size of 4000 in a single request | Data list can include a maximum of 4,000 rows. |
 | 400 | Request data has too many invalid ‘data’ elements | More than 10% of the data to modify is not valid according to the specification. |
-| 404 | AppsFlyer - Page Not Found | Check that:<br /><br />* The `{app-id}` as specified in the API request URL is correct.<br />* The HTTP header contains the correct [AppsFlyer V2.0 API token](/docs/managing-appsflyer-tokens). Your account admin can obtain this token from the AppsFlyer dashboard. |
+| 404 | AppsFlyer - Page Not Found | Check that:<ul><li>The `{app-id}` as specified in the API request URL is correct.</li><li>The HTTP header contains the correct [AppsFlyer V2.0 API token](/docs/managing-appsflyer-tokens). Your account admin can obtain this token from the AppsFlyer dashboard.</li></ul> |
 
 **Response examples**
 
