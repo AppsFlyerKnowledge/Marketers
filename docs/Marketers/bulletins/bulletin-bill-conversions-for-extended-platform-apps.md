@@ -17,8 +17,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/42720965896721-Bulletin-Bill-conversions-for-extended-platform-apps
 ---
-| **What's new** | Starting February 1, 2026, non-organic installs from extended platform apps (for example, CTV, PC, and console) are included in billable conversions, according to your existing conversion-based commercial terms. |
+| Section | Details |
 | --- | --- |
+| **What's new** | Starting February 1, 2026, non-organic installs from extended platform apps (for example, CTV, PC, and console) are included in billable conversions, according to your existing conversion-based commercial terms. |
 | **Effective date** | February 1, 2026 |
 | **Who's affected** | Customers with extended platform apps on conversion packages or Adaptive Pricing. |
 | **Recommended action** | Review expected conversion volume and Adaptive Pricing credit usage. |

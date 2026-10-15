@@ -40,6 +40,7 @@ The table below provides release notes for supported iOS SDK versions, including
 
 | Version | Release date | Notes |
 | --- | --- | --- |
+| 7.0.3 | 2026-10-12 | <ul><li>SDK now supports googleAdManager and cloudX as ad revenue mediation partners.</li><li>Added a net revenue field developers can attach to in-app events, for more precise revenue reporting.</li><li>Reduced the SDK’s memory footprint.</li></ul> |
 | 7.0.1 | 2026-07-22 | <ul><li>Apps can now provide a hashed customer email, phone number, name, and Facebook login ID to the SDK for sharing with ad network partners. The SDK doesn't collect this information itself. The app provides it, and only hashed values are sent, never plain text.</li><li>Removed the `setUserEmails` and `setPhoneNumber` methods. Developers using these must switch to `setUserEmail` and `setUserPhone`</li></ul> |
 | 6.18.1 | 2026-05-25 | <ul><li>Fixed an issue where purchase validation requests from the Purchase Connector that failed due to a network error were permanently lost after the app restarted.</li></ul> |
 | 6.18.0 | 2026-04-21 | <ul><li>Added support for fetching AppTransaction - a representation of an app's download, cryptographically signed by the app store.</li><li>Bug fixes and improvements</li></ul> |

@@ -14,7 +14,7 @@ x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2026-04-12T15:09:07Z'
-  edited_at: '2026-10-04T12:54:37Z'
+  edited_at: '2026-10-15T07:58:25Z'
   id: 45670116601617
   locale: en-us
   section: AppsFlyer Web Attribution
@@ -142,7 +142,7 @@ Measures a page visit for a given web app. This endpoint shares all base fields 
 | `user_agent` | string | Optional | Full user agent string from the browser. Max 1,024 characters. |
 | `http_referrer` | string | Optional | Referrer URL of the current page. |
 | `event_value` | object | Optional | Free-form event parameters, including a `custom_parameters` sub-object. |
-| `customer_dedup_id` | string | Optional | Customer-provided deduplication identifier. |
+| `af_customer_event_id` | string | Optional | Your own unique ID for the event, which you use to deduplicate conversions on ad network platforms. AppsFlyer forwards it to the network as the event ID.<br /><br />Send it when either applies:<ul><li>You run a network pixel on your site, alongside AppsFlyer measurement.</li><li>You send the same event through both the Web SDK and this API.</li></ul>When you send it, also send the same value in the network's own pixel event (for example, `eventID` in `fbq()`), so the network counts the conversion once instead of twice.<br /><br />If you omit it, AppsFlyer generates its own ID, and the network can't match your pixel events.<br /><br />**Limits:** Max 256 characters. Matching is exact and case-sensitive. |
 | `email_hashed` | string | Optional | SHA256 of normalized email. Must be a 64-character hex string. |
 | `phone_number_hashed` | string | Optional | SHA256 of phone number. Must be a 64-character hex string. |
 | `phone_number_e164_hashed` | string | Optional | SHA256 of E.164 phone number. Must be a 64-character hex string. |
@@ -154,7 +154,7 @@ Measures a page visit for a given web app. This endpoint shares all base fields 
 <Accordion title="Example request">
 
 ```json
-{"user_id":{"appsflyer_id":"1234567890abcdef","customer_user_id":"15667737-366d-4994-ac8b-653fe6b2be4a"},"event_url":"https://example.com/products/sneakers","timestamp":1712000000000,"ip":"35.244.183.10","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) ...","http_referrer":"https://www.google.com/","email_hashed":"a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2"}
+{"user_id":{"appsflyer_id":"1234567890abcdef","customer_user_id":"15667737-366d-4994-ac8b-653fe6b2be4a"},"af_customer_event_id": "550e8400-e29b-41d4-a716-446655440000","event_url":"https://example.com/products/sneakers","timestamp":1712000000000,"ip":"35.244.183.10","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) ...","http_referrer":"https://www.google.com/","email_hashed":"a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2"}
 ```
 
 </Accordion>

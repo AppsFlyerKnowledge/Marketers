@@ -159,7 +159,7 @@ Data is available as follows:
 
 > 📘 **Note**
 >
-> For platforms with Android and iOS operating systems, [aggregate](/docs/aggregated-and-analytics-reporting-overview) and [raw data](/docs/raw-data-reporting-overview) report availability is the same as for mobile apps.
+> For platforms with Android and iOS operating systems, the availability of [aggregate](/docs/aggregated-and-analytics-reporting-overview) and [raw data reports](/docs/raw-data-reporting-overview) is the same as for mobile apps.
 
 <Accordion title="Traits and limitations">
 
@@ -171,7 +171,7 @@ Data is available as follows:
 | Attribution method | [See CTV, PC, and console platform attribution methods](/docs/appsflyer-attribution-model#attribution-methods) |
 | Currency | USD or as defined in AppsFlyer app settings |
 | Timezone | UTC |
-| Cost data | For apps on these platforms, impoer cost data via [Ad Spend Ingestion](/docs/import-cost-data) using the upload-by-email method.<br /><br />You can also pull data via API for Google, Meta, or TikTok for the following platforms:<ul><li>Steam</li><li>Native PC</li><li>Smart Cast</li><li>Windows Phone</li><li>Tizen</li><li>Quest</li></ul> |
+| Cost data | For apps on these platforms, import cost data via [Cost Import](/docs/import-cost-data) using the upload-by-email method.<br /><br />You can also pull data via API for Google, Meta, or TikTok for the following platforms:<ul><li>Steam</li><li>Native PC</li><li>Smart Cast</li><li>Windows Phone</li><li>Tizen</li><li>Quest</li></ul> |
 | Data freshness | In My Dashboards, the Installs, re-engagements, and re-attributions metrics for CTV, PC, and console platforms are served from our AI-ready data pipeline (migrated between July 21 and August 10, 2026). This means these metrics for these platforms now show up with a delay instead of continuously. See [My Dashboards traits and limitations](/docs/my-dashboards#traits-and-limitations) for details. |
 
 </Accordion>

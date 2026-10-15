@@ -98,6 +98,7 @@ A partner connection enables you to easily and continuously send your audiences 
 | Gameappzone | ![](https://cdn.appsflyer.com/marketplace/static/logo/gameappzo45i.png) | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Gamelight | ![](https://cdn.appsflyer.com/marketplace/static/logo/thespotlight.png) | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Glance | ![Screen_Shot_2022-08-02_at_10.26.22.png](https://files.readme.io/32870ef5ab9e2714b7cae55d87c843b7a39116c1b2c020b869b2595fcb256635-31237648111633.png) | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
+| Globo | ![](https://cdn.appsflyer.com/marketplace/static/logo/globo.png) | API key | <ul><li>IDFA</li><li>GAID</li><li>Email (hashed)</li><li>Phone (hashed)</li></ul> |
 | Google Ads<br /><br />\*\*Check with your CSM or [hello@appsflyer.com](mailto:hello@appsflyer.com) to determine if your account is eligible for Google Ads integration with Audiences. | ![](https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png) | Connection instructions for [Google Ads](/docs/audiences-partner-connections#google-ads) | <ul><li>IDFA</li><li>GAID</li><li>Email (hashed)</li><li>Phone (hashed)</li></ul> |
 | Gotripmobi | ![](https://cdn.appsflyer.com/marketplace/static/logo/gotripmob06.png?v=1) | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Gravite | ![](https://cdn.appsflyer.com/marketplace/static/logo/gravite1xj.png%0A?v=1) | API key | <ul><li>IDFA</li><li>GAID</li></ul> |

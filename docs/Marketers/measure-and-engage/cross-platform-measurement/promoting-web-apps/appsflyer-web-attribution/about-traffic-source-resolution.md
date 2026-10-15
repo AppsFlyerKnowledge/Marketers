@@ -4,8 +4,8 @@ excerpt: >-
   Use traffic source resolution to identify the initial media source, campaign,
   and channel for each web visit, using the URL parameters and referrer data
   available at landing page load. This gives attribution the traffic-source
-  context it needs to accurately attribute downstream web events, including the
-  user-acquisition event.
+  context it needs to attribute downstream web events, including the
+  user-acquisition event, accurately.
 metadata:
   keywords:
     - Agencies
@@ -16,7 +16,7 @@ x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2026-02-04T13:46:22Z'
-  edited_at: '2026-10-14T12:26:51Z'
+  edited_at: '2026-10-15T07:23:49Z'
   id: 43518064765201
   locale: en-us
   section: AppsFlyer Web Attribution
@@ -132,16 +132,22 @@ If no PID is found in the URL, AppsFlyer evaluates the `utm_source` and `utm_med
 
 | utm\_source | utm\_medium | Media source |
 | --- | --- | --- |
-| Google | cpc / ppc / paidsearch / paid\_search / paid-search / search / paid | googleadwords\_int |
+| Google, googleads\_int | cpc / ppc / paidsearch / paid\_search / paid-search / search / paid | googleadwords\_int |
 | Google | cpm / display / banner / video / listing | dv360\_int |
 | dfa / dbm / dcm / doubleclick | cpm | dv360\_int |
-| Facebook / FB / Meta | cpc / ppc / cpm / cpa / paidsocial / paid-social / paid\_social / paid | Facebook Ads |
+| Facebook / FB / Meta, metaweb\_int, facebook\_int | cpc / ppc / cpm / cpa / paidsocial / paid-social / paid\_social / paid | Facebook Ads |
 | Bing / microsoft / ms | cpc / ppc / paidsearch / paid\_search / paid-search / search / paid | bingsearch\_int |
 | Yahoo / gemini | cpm / display / listing | yahoogemini\_int |
-| twitter | cpc / ppc / paid / paidsocial / paid-social / paid\_social | Twitter |
-| Snapchat / snap | swipe / cpc / ppc / paid / paidsocial / paid-social / paid\_social | snapchat\_int |
+| twitter, twitter\_int, twitterweb\_int | cpc / ppc / paid / paidsocial / paid-social / paid\_social | Twitter |
+| Snapchat / snap, snapweb\_int | swipe / cpc / ppc / paid / paidsocial / paid-social / paid\_social | snapchat\_int |
 | pinterest | cpc / ppc / paid / paidsocial / paid-social / paid\_social | pinterest\_int |
-| tiktok | cpc / ppc / paid / paidsocial / paid-social / paid\_social | tiktokglobal\_int |
+| tiktok, tiktokweb\_int | cpc / ppc / paid / paidsocial / paid-social / paid\_social | tiktokglobal\_int |
+| iossearchads\_int | any / none | Apple Search Ads |
+| chatgpt.com | paid: cpc / ppc / cpm / paid / paid\_search / paidsearch / display / banner / video | openai\_int |
+| chatgpt.com | none of the above* | chatgpt\_organic\_aeo (channel: aeo) |
+| perplexity | any / none | perplexity\_organic\_aeo (channel: aeo) |
+
+**If an* `oppref` *click ID is present, AppsFlyer skips this row and resolves the visit from* `oppref` *instead (see Click IDs).*
 
 </Accordion>
 
@@ -200,9 +206,34 @@ To identify the source, AppsFlyer cleans the referrer string by:
 
 | If the domain host contains… | Resolved media source |
 | --- | --- |
-| `google.` | Google Search |
-| `search.yahoo` | Yahoo Search |
-| `bing.com` | Bing Search |
+| `google.` | google\_organic\_seo |
+| `search.yahoo` | yahoo\_organic\_seo |
+| `bing.com` | bing\_organic\_seo |
+| `ask.com`, `de.ask.com`, `uk.ask.com` | ask\_organic\_seo |
+| `duckduckgo.com` | duckduckgo\_organic\_seo |
+| `yandex.com`, `yandex.ru` | yandex\_organic\_seo |
+| `search.naver.com` | naver\_organic\_seo |
+| `daum.net` | daum\_organic\_seo |
+| `baidu.com` | baidu\_organic\_seo |
+| `ecosia.org/search` | ecosia\_organic\_seo |
+| `coccoc.com/search` | coccoc\_organic\_seo |
+| `sogou.com` | sogou\_organic\_seo |
+| `yahoo.co.jp` | yahoojapan\_organic\_seo |
+
+All rows in this table resolve to channel `seo`.
+
+#### **AI answer engine referrer mapping**
+
+| If the domain host contains… | Media source | Channel |
+| --- | --- | --- |
+| `chatgpt.com`, `chat.openai.com` | chatgpt\_organic\_aeo | aeo |
+| `perplexity.ai` | perplexity\_organic\_aeo | aeo |
+| `gemini.google.com` | gemini\_organic\_aeo | aeo |
+| `claude.ai` | claude\_organic\_aeo | aeo |
+| `deepseek.com` | deepseek\_organic\_aeo | aeo |
+| `manus.im` | manus\_organic\_aeo | aeo |
+| `grok.com` | grok\_organic\_aeo | aeo |
+| `copilot.microsoft.com` | copilot\_organic\_aeo | aeo |
 
 #### **Android app referrers**
 
@@ -249,13 +280,14 @@ To assign a custom channel value, add the `af_channel` parameter to the landing 
 If `af_channel` isn't present, or the visit doesn't meet the condition above, AppsFlyer falls back to automatic classification based on the identified media source:
 
 * **Direct:** The user typed the URL directly or used a bookmark. No attribution source is identified.
-* **Organic search:** Unpaid traffic from search engines such as Google, Yahoo, and Bing.
-* **Social media:** Traffic originating from the social platforms.
+* **Social Media:** Traffic originating from the social platforms.
 * **Email:** Traffic from email campaigns or email service providers.
 * **Ad:** Traffic generated by paid advertising.
 * **Referral:** Traffic from other websites, identified via the referrer.
 * **Other:** Traffic that does not match any of the categories above.
+* **seo:** Unpaid traffic from search engines.
+* **aeo:** Traffic from AI answer engines.
 
 **Note:** Every visit is assigned a channel. The classification is automatic and deterministic, based on the identified media source and attribution method, unless overridden by `af_channel`.
 
-<div data-zendesk-anchors="h_01KGMEER6DX8W3ECBEBYP4DQV1=what-is-traffic-source-resolution h_01KGMEER6DA4HMSZ3TVEAG84WZ=the-traffic-source-resolution-flow h_01KGMEER6DV02F44C5ZPSBEQEX=step-1-visit-recording h_01KSSEM5P8RX29CD6C6ZD2DVAT=stage-1-referrer-classification h_01KSSEM5P8KBYDBCB7PAPGPX5M=stage-2-session-evaluation-and-visit-recording h_01KGMEER6D082QTZGZYEXT6726=step-2-media-source-resolution h_01KGMF0E1XBSJCVDWGC4R8XMPX=how-utm-logic-works h_01KGMF0JSBZ3WYM65R55BCDAMN=utm-mapping-rules h_01KGMEZA9ETGK6Z89GM111E64Z=the-parsing-mechanism h_01KGMEZESC451HVJT139BSXEA5=referrer-mapping-rules h_01KGMEZKCTASMNXZG13VTVECVH=search-engine-mapping h_01KGMEZQYCDS23MVW3MQH9Q5JQ=android-app-referrers h_01KGMEER6ES1AYT24MC4HZCX9X=step-3-campaign-resolution h_01KGMEER6ETWGFFM3E17KHMDAF=step-4-channel-classification h_01_overriding-the-channel-with-af-channel=overriding-the-channel-with-af_channel h_01_default-channel-classification=default-channel-classification" />
+<div data-zendesk-anchors="h_01KGMEER6DX8W3ECBEBYP4DQV1=what-is-traffic-source-resolution h_01KGMEER6DA4HMSZ3TVEAG84WZ=the-traffic-source-resolution-flow h_01KGMEER6DV02F44C5ZPSBEQEX=step-1-visit-recording h_01KSSEM5P8RX29CD6C6ZD2DVAT=stage-1-referrer-classification h_01KSSEM5P8KBYDBCB7PAPGPX5M=stage-2-session-evaluation-and-visit-recording h_01KGMEER6D082QTZGZYEXT6726=step-2-media-source-resolution h_01KGMF0E1XBSJCVDWGC4R8XMPX=how-utm-logic-works h_01KGMF0JSBZ3WYM65R55BCDAMN=utm-mapping-rules h_01KGMEZA9ETGK6Z89GM111E64Z=the-parsing-mechanism h_01KGMEZESC451HVJT139BSXEA5=referrer-mapping-rules h_01KGMEZKCTASMNXZG13VTVECVH=search-engine-mapping h_01M2G7SJBDHFPEZ0WREHHD2YQF=ai-answer-engine-referrer-mapping h_01KGMEZQYCDS23MVW3MQH9Q5JQ=android-app-referrers h_01KGMEER6ES1AYT24MC4HZCX9X=step-3-campaign-resolution h_01KGMEER6ETWGFFM3E17KHMDAF=step-4-channel-classification h_01_overriding-the-channel-with-af-channel=overriding-the-channel-with-af_channel h_01_default-channel-classification=default-channel-classification" />

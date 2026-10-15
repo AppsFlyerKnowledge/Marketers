@@ -29,7 +29,7 @@ User management, billing, quotas, and how to get support from AppsFlyer
     Create and manage your account's AppsFlyer users, and assign them permissions to access features, apps, and data.
   </Card>
   <Card title="Report generation quotas (rate limitations)" href="/docs/report-generation-quotas-rate-limitations" icon="fa-solid fa-chart-column">
-    A quota (rate limitation) mechanism limits the number of reports that can be generated per day by both Pull API and the data export pages.
+    A quota (rate limitation) mechanism limits the number of reports you can generate per day through both Pull API and the data export pages.
   </Card>
   <Card title="Deleting things in AppsFlyer" href="/docs/deleting-things-in-appsflyer" icon="fa-solid fa-file-lines">
     Learn how advertisers can remove apps to stop attribution, remove media sources, or delete user-related data.

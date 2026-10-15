@@ -34,7 +34,7 @@ This section provides resources and guides for setting up and managing AppsFlyer
     Use the Web SDK Test page to validate the Web SDK installation and event recording in real time. Run it when you first integrate the SDK and whenever you add or change an event.
   </Card>
   <Card title="About traffic source resolution" href="/docs/about-traffic-source-resolution" icon="fa-solid fa-circle-info">
-    Use traffic source resolution to identify the initial media source, campaign, and channel for each web visit, using the URL parameters and referrer data available at landing page load. This gives attribution the traffic-source context it needs to accurately attribute downstream web events, including the user-acquisition event.
+    Use traffic source resolution to identify the initial media source, campaign, and channel for each web visit, using the URL parameters and referrer data available at landing page load. This gives attribution the traffic-source context it needs to attribute downstream web events, including the user-acquisition event, accurately.
   </Card>
   <Card title="Choose attribution parameters for landing page URLs" href="/docs/choose-attribution-parameters-for-landing-page-urls" icon="fa-solid fa-diagram-project">
     Use consistent, complete URL parameters in your website landing page links to get the best campaign granularity while maintaining accurate attribution in Web Performance Measurement.
