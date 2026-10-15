@@ -20,7 +20,7 @@ x-zendesk:
 
 1. ### 点击 AppsFlyer 后台左侧菜单栏“合作伙伴配置”入口，并在搜索栏键入”Toponad”：
 
-   ![WechatIMG118.png](https://support.appsflyer.com/hc/article_attachments/360015765698/WechatIMG118.png)
+   ![WechatIMG118.png](https://files.readme.io/a6c01dcfb087743eb4056a42580b04872462b228338c6f3c667d029c28201f5d-360015765698.png)
 2. ### 打开 Toponad 对接页面下的“广告收入”栏，并且完成以下配置：
 
    a. 打开 “Get ad revenue data” 按钮。
@@ -29,7 +29,7 @@ x-zendesk:
 
    c. 输入对应的 Publisher Key和 Network App id；如果您还未生成 Publisher Key和 Network App id，请联系 TopOn 获取。
 
-   ![WechatIMG120.png](https://support.appsflyer.com/hc/article_attachments/360015765718/WechatIMG120.png)
+   ![WechatIMG120.png](https://files.readme.io/b6d56d350adf6c39571047d256d67488b26d0de1b3bb8b7d3e1e0ca557ae9b08-360015765718.png)
 3. ### 点击 “Test connection” 测试接口链接状态
 
    a. 如链接成功，点击右下角“save”保存配置即可。  
