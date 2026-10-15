@@ -87,10 +87,6 @@ Principles:
 
 </Accordion>
 
-<Accordion title="">
-
-</Accordion>
-
 ## Additional information
 
 <div id="traits-and-limitations" />

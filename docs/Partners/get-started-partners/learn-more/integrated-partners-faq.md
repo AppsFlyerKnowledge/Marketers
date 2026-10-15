@@ -335,11 +335,8 @@ If revenue data is missing or appears as N/A in the advertiser postbacks, there 
 
 <Accordion title="Dashboard data is missing">
 
-<Accordion title="">
-
 If your network requires credentials or keys for integration and the advertiser doesn't provide them, postbacks from AppsFlyer are rejected by your servers. Data can't be posted to your server and is therefore missing.
 
-</Accordion>
 
 In this case, you'll see data in the dashboard but not in your servers. The advertiser should add any credentials, keys, or tokens in the **General Settings** section of the **Integration** tab.
 

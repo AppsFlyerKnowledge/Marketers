@@ -132,8 +132,6 @@ To set the report dimensions and metrics, follow these steps:
    * **Count distinct**: The metric value is the number of unique values for a given field across the events grouped in the report record. For example, If the selected metric is count-distinct of `sku` and a grouped record includes 10 events containing 4 different SKUs, the metric value will be **4**.
 5. To change the display name of the field, hover over the field and click **Edit display name.**
 
-<Accordion title="">
-
 #### Create calculated field
 
 Calculated fields contain values calculated from basic values using a specified function.
@@ -163,7 +161,6 @@ To create or edit a calculated field perform the following:
 | `SUBSTRING` | Substring of a string from index `start` to `end` | `SUBSTRING(Campaign_ID, 0, 5)` | Extracts the first 5 characters of the campaign ID. |
 | `SUBTRACT` | Subtraction of two numbers | `Budget_Allocated - Budget_Spent` | Calculates the remaining budget for the campaign. |
 
-</Accordion>
 
 </Accordion>
 

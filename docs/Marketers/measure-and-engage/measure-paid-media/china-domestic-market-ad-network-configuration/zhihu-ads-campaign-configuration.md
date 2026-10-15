@@ -115,8 +115,6 @@ More details about the [click lookback window here](/docs/set-up-lookback-window
 
 This is the attribution link that contains all the setup information you have set for it. Send it to Zhihu Ads to be activated when leads click on a corresponding ad.
 
-<Accordion title="">
-
 ### View-through attribution lookback window
 
 This slider allows you to set the **maximum time from impression to install**. Only installs (first launches) that take place within this lookback window, following an ad impression, are attributed to Zhihu Ads, providing there was no other relevant ad click.
@@ -133,7 +131,6 @@ More details about the [view-through attribution here](/docs/set-up-lookback-win
 
 The impression attribution link contains similar attribution data to the click recording link (besides the different lookback window). Send it to Zhihu Ads to be activated when a corresponding ad is watched, usually for 1 second or more.
 
-</Accordion>
 
 </Accordion>
 

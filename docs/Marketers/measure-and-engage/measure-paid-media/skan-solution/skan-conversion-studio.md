@@ -263,10 +263,6 @@ Create your own CV-to-event mapping and set the CV in the app yourself. Use this
 3. Click **Save**.
 4. Verify that your partner in-app event postback mappings map the events you have configured.
 
-   <Accordion title="">
-
-   </Accordion>
-
 </Accordion>
 
 ## Measurement components

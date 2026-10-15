@@ -135,11 +135,8 @@ Ad Revenue is not supported in the integration with this partner.
 
 <Accordion title="Permissions Tab">
 
-<Accordion title="">
-
 Permissions are not supported in the integration with this partner.
 
-</Accordion>
 
 </Accordion>
 

@@ -245,8 +245,6 @@ IMEI Android API level up to 22
 
 </Accordion>
 
-<Accordion title="">
-
 There are two methods to collect IMEI:
 
 * setImeiData
@@ -293,7 +291,6 @@ Use the following code example to integrate the SDK. **Note:** The code example 
 }
 ```
 
-</Accordion>
 
 </Accordion>
 

@@ -66,10 +66,6 @@ The following happens:
 
 </Accordion>
 
-<Accordion title="">
-
-</Accordion>
-
 <div id="reattribution" />
 
 <Accordion title="Re-attribution">
