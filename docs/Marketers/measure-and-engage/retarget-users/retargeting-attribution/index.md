@@ -13,6 +13,6 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551326229265-Retargeting-attribution
 ---
-- [Retargeting attribution guide](/docs/retargeting-attribution-guide) ★
+- [Retargeting attribution guide <span class="af-star">★</span>](/docs/retargeting-attribution-guide)
 - [Resolve retargeting double attribution](/docs/resolve-retargeting-double-attribution)
 - [Set retargeting inactivity window](/docs/set-retargeting-inactivity-window)

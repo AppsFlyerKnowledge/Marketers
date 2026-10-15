@@ -14,7 +14,7 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6550925337873-Dashboards
 ---
-- [Getting started with AppsFlyer dashboards](/docs/getting-started-with-appsflyer-dashboards) ★
+- [Getting started with AppsFlyer dashboards <span class="af-star">★</span>](/docs/getting-started-with-appsflyer-dashboards)
 - [My Dashboards](/docs/my-dashboards)
 - [Activity metrics in My Dashboards](/docs/activity-metrics-in-my-dashboards)
 - [\[Beta\] Set up custom metrics in My Dashboards](/docs/beta-set-up-custom-metrics-in-my-dashboards)

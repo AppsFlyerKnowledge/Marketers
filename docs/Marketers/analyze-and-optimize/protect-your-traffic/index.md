@@ -20,7 +20,7 @@ x-zendesk:
 - [Protect360 onboarding guide](/docs/protect360-onboarding-guide)
 - [\[Beta\] Fraud protection studio](/docs/beta-fraud-protection-studio)
 - [\[Closed beta\] Implementing Series of Events Rule for advanced fraud prevention](/docs/closed-beta-implementing-series-of-events-rule-for-advanced-fraud-prevention)
-- [Protect360 anti-fraud guide](/docs/protect360-anti-fraud-guide) ★
+- [Protect360 anti-fraud guide <span class="af-star">★</span>](/docs/protect360-anti-fraud-guide)
 - [Protect360 dashboard](/docs/protect360-dashboard)
 - [Basic fraud detection and insights​ with ProtectLITE dashboard and reporting](/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting)
 - [Protect360 raw data reports](/docs/protect360-raw-data-reports)

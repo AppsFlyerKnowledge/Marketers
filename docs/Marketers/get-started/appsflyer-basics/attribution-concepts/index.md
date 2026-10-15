@@ -13,8 +13,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551394235409-Attribution-concepts
 ---
-- [AppsFlyer attribution model](/docs/appsflyer-attribution-model) ★
-- [About link structure and parameters](/docs/about-link-structure-and-parameters) ★
+- [AppsFlyer attribution model <span class="af-star">★</span>](/docs/appsflyer-attribution-model)
+- [About link structure and parameters <span class="af-star">★</span>](/docs/about-link-structure-and-parameters)
 - [About Enriched Engagement Types](/docs/about-enriched-engagement-types)
 - [\[Beta\] User-based cross-platform attribution](/docs/beta-user-based-cross-platform-attribution)
 - [\[Beta\] User-based cross-platform re-engagement attribution](/docs/beta-user-based-cross-platform-re-engagement-attribution)

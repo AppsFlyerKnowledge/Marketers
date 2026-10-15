@@ -13,7 +13,7 @@ x-zendesk:
   url: https://support.appsflyer.com/hc/en-us/sections/6551336428945-Audiences
 ---
 - [Audiences onboarding guide](/docs/audiences-onboarding-guide)
-- [Audiences guide](/docs/audiences-guide) ★
+- [Audiences guide <span class="af-star">★</span>](/docs/audiences-guide)
 - [\[Closed beta\] Use AI Predictive Audiences to reach high-intent users](/docs/closed-beta-use-ai-predictive-audiences-to-reach-high-intent-users)
 - [Audiences user identifier policy](/docs/audiences-user-identifier-policy)
 - [Audiences partner connections](/docs/audiences-partner-connections)

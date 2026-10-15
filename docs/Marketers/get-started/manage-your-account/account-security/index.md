@@ -13,7 +13,7 @@ x-zendesk:
     https://support.appsflyer.com/hc/en-us/sections/6551173202065-Account-security
 ---
 - [SSO authentication](/docs/sso-authentication)
-- [Security Center](/docs/security-center) ★
+- [Security Center <span class="af-star">★</span>](/docs/security-center)
 - [Dev Key management](/docs/dev-key-management)
 - [Enterprise-Grade Security Package](/docs/enterprise-grade-security-package)
 - [Implementing and using 2FA login](/docs/implementing-and-using-2fa-login)

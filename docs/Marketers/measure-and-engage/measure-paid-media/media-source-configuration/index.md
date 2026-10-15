@@ -15,7 +15,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551067072785-Media-source-configuration
 ---
-- [Set up an integrated partner](/docs/set-up-an-integrated-partner) ★
+- [Set up an integrated partner <span class="af-star">★</span>](/docs/set-up-an-integrated-partner)
 - [Postback troubleshooting for advertisers](/docs/postback-troubleshooting-for-advertisers)
 - [Partner activation/deactivation](/docs/partner-activation-deactivation)
 - [In-app event postback configuration](/docs/in-app-event-postback-configuration)

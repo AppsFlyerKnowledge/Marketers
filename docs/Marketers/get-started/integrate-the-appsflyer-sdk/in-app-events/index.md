@@ -14,7 +14,7 @@ x-zendesk:
 ---
 - [In-app events—Overview](/docs/in-app-events-overview)
 - [In-app events—Event structure](/docs/in-app-events-event-structure)
-- [In-app event generator](/docs/in-app-event-generator) ★
+- [In-app event generator <span class="af-star">★</span>](/docs/in-app-event-generator)
 - [Server-to-server events API for mobile (S2S-mobile)](/docs/server-to-server-events-api-for-mobile-s2s-mobile)
 - [Customer User ID field (CUID)](/docs/customer-user-id-field-cuid)
 - [\[Legacy\] Receipt validation for in-app purchases](/docs/legacy-receipt-validation-for-in-app-purchases)

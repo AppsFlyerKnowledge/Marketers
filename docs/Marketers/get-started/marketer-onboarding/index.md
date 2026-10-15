@@ -15,8 +15,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6550866490129-Marketer-onboarding
 ---
-- [Welcome to AppsFlyer](/docs/welcome-to-appsflyer) ★
-- [Getting started—Onboarding for marketers](/docs/getting-started-onboarding-for-marketers) ★
+- [Welcome to AppsFlyer <span class="af-star">★</span>](/docs/welcome-to-appsflyer)
+- [Getting started—Onboarding for marketers <span class="af-star">★</span>](/docs/getting-started-onboarding-for-marketers)
 - [Migrate from Adjust to AppsFlyer](/docs/migrate-from-adjust-to-appsflyer)
 - [Using the Customer Assistant Chatbot](/docs/using-the-customer-assistant-chatbot)
 - [Migration to AppsFlyer from other vendors](/docs/migration-to-appsflyer-from-other-vendors)

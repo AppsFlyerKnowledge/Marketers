@@ -15,7 +15,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6550976670225-Analytics-and-aggregate-reporting-APIs
 ---
-- [Aggregated and analytics reporting overview](/docs/aggregated-and-analytics-reporting-overview) ★
+- [Aggregated and analytics reporting overview <span class="af-star">★</span>](/docs/aggregated-and-analytics-reporting-overview)
 - [Calculate daily and monthly active users (DAU and MAU)](/docs/calculate-daily-and-monthly-active-users-dau-and-mau)
 - [Advanced aggregated reports in Data Locker](/docs/advanced-aggregated-reports-in-data-locker)
 - [Cohort analytics via Data Locker](/docs/cohort-analytics-via-data-locker)

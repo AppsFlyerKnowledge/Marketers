@@ -15,7 +15,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/4591191779217-Data-Clean-Room
 ---
-- [Data Clean Room—Overview](/docs/data-clean-room-overview) ★
+- [Data Clean Room—Overview <span class="af-star">★</span>](/docs/data-clean-room-overview)
 - [Data Clean Room—Setting up cloud services](/docs/data-clean-room-setting-up-cloud-services)
 - [Data Clean Room—Working with connections](/docs/data-clean-room-working-with-connections)
 - [Data Clean Room—Working with sources](/docs/data-clean-room-working-with-sources)

@@ -13,9 +13,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551328497041-Attribution-scenarios
 ---
-- [About ATT and SKAN](/docs/about-att-and-skan) ★
+- [About ATT and SKAN <span class="af-star">★</span>](/docs/about-att-and-skan)
 - [Privacy-preserving campaign measurement](/docs/privacy-preserving-campaign-measurement)
-- [Set up multi-store Android attribution](/docs/set-up-multi-store-android-attribution) ★
+- [Set up multi-store Android attribution <span class="af-star">★</span>](/docs/set-up-multi-store-android-attribution)
 - [Set up AppsFlyer preload referrer attribution](/docs/set-up-appsflyer-preload-referrer-attribution)
 - [Measure attribution in the Chinese domestic market](/docs/measure-attribution-in-the-chinese-domestic-market)
 - [Measure preload campaigns with Google Play Install](/docs/measure-preload-campaigns-with-google-play-install)
