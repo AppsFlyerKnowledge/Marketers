@@ -13,11 +13,5 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/15329056926353-Promoting-Web-apps
 ---
-How to promote and measure attribution of your Web apps from anywhere
-
-<Cards>
-  <Card title="AppsFlyer Web Attribution" href="/docs/appsflyer-web-attribution" icon="fa-solid fa-diagram-project">
-  </Card>
-  <Card title="People Based Attribution (PBA)" href="/docs/people-based-attribution-pba" icon="fa-solid fa-diagram-project">
-  </Card>
-</Cards>
+- [AppsFlyer Web Attribution](/docs/appsflyer-web-attribution)
+- [People Based Attribution (PBA)](/docs/people-based-attribution-pba)

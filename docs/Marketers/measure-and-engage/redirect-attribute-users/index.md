@@ -15,19 +15,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551169161745-Redirect-attribute-users
 ---
-Set up owned media, deep link users, attribute web and mobile user journeys (PBA)
-
-<Cards>
-  <Card title="Deep linking using OneLink" href="/docs/deep-linking-using-onelink" icon="fa-solid fa-link">
-    Convert and deep link your owned media users with OneLink
-  </Card>
-  <Card title="Web-to-app attribution" href="/docs/web-to-app-attribution" icon="fa-solid fa-diagram-project">
-    Convert and attribute mobile website visitors with our attribution solutions
-  </Card>
-  <Card title="Owned media attribution" href="/docs/owned-media-attribution" icon="fa-solid fa-diagram-project">
-    Measure owned-media user journeys: user invites, cross-promotion, SMS, and more
-  </Card>
-  <Card title="Email service providers" href="/docs/email-service-providers" icon="fa-solid fa-envelope">
-    Integrate AppsFlyer with leading email service providers (ESPs)
-  </Card>
-</Cards>
+- [Deep linking using OneLink](/docs/deep-linking-using-onelink)
+- [Web-to-app attribution](/docs/web-to-app-attribution)
+- [Owned media attribution](/docs/owned-media-attribution)
+- [Email service providers](/docs/email-service-providers)

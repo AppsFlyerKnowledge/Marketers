@@ -15,13 +15,5 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551054625937-Manage-your-account
 ---
-Manage account security, users, permissions, invoices, support tickets, and more
-
-<Cards>
-  <Card title="Account management" href="/docs/account-management" icon="fa-solid fa-user-gear">
-    User management, billing, quotas, and how to get support from AppsFlyer
-  </Card>
-  <Card title="Account security" href="/docs/account-security" icon="fa-solid fa-user-gear">
-    Securely connect your account users and BI systems with AppsFlyer services
-  </Card>
-</Cards>
+- [Account management](/docs/account-management)
+- [Account security](/docs/account-security)

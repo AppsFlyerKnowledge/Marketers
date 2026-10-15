@@ -13,17 +13,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551190827921-Android-platform
 ---
-Android SDK release notes and other Android platform-related topics
-
-<Cards>
-  <Card title="AppsFlyer Android SDK release notes" href="/docs/appsflyer-android-sdk-release-notes" icon="fa-solid fa-bullhorn">
-  </Card>
-  <Card title="Android OAID implementation in the SDK" href="/docs/android-oaid-implementation-in-the-sdk" icon="fa-solid fa-sack-dollar">
-    Collect the Android OAID to attribute installs from third-party Android app stores.
-  </Card>
-  <Card title="AppsFlyer factory preinstall using manifest (Android)" href="/docs/appsflyer-factory-preinstall-using-manifest-android" icon="fa-solid fa-sack-dollar">
-  </Card>
-  <Card title="Using AppsFlyer with TWA" href="/docs/using-appsflyer-with-twa" icon="fa-solid fa-file-lines">
-    Use AppsFlyer with Trusted Web Activities (TWA) to measure installs and record in-app events.
-  </Card>
-</Cards>
+- [AppsFlyer Android SDK release notes](/docs/appsflyer-android-sdk-release-notes)
+- [Android OAID implementation in the SDK](/docs/android-oaid-implementation-in-the-sdk)
+- [AppsFlyer factory preinstall using manifest (Android)](/docs/appsflyer-factory-preinstall-using-manifest-android)
+- [Using AppsFlyer with TWA](/docs/using-appsflyer-with-twa)

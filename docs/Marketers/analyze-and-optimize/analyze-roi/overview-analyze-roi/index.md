@@ -12,11 +12,5 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/15173289016593-Overview
 ---
-<Cards>
-  <Card title="ROI360 guide - cost and revenue data" href="/docs/roi360-guide-cost-and-revenue-data" icon="fa-solid fa-sack-dollar">
-    Get cost and revenue data to understand your total ROI and ROAS.
-  </Card>
-  <Card title="ROI360 - onboarding guide" href="/docs/roi360-onboarding-guide" icon="fa-solid fa-rocket">
-    Follow the onboarding instructions in this article to get ROI360 for cost and revenue data up and running.
-  </Card>
-</Cards>
+- [ROI360 guide - cost and revenue data](/docs/roi360-guide-cost-and-revenue-data)
+- [ROI360 - onboarding guide](/docs/roi360-onboarding-guide)

@@ -13,32 +13,12 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551244207121-Other-platforms
 ---
-<Cards>
-  <Card title="React Native plugin overview" href="/docs/react-native-plugin-overview" icon="fa-solid fa-code">
-    Integrate AppsFlyer SDK into iOS/Android apps developed with React Native to measure installs, in-app events, media sources, and more.
-  </Card>
-  <Card title="Flutter plugin" href="/docs/flutter-plugin" icon="fa-solid fa-code">
-    Integrate AppsFlyer to apps developed using Flutter to measure installs, in-app events, media sources, and more.
-  </Card>
-  <Card title="Unreal Engine plugin" href="/docs/unreal-engine-plugin" icon="fa-solid fa-code">
-    Integrate AppsFlyer into games developed in Unreal Engine to measure app installs, in-app events, media sources, and more.
-  </Card>
-  <Card title="NativeScript plugin" href="/docs/nativescript-plugin" icon="fa-solid fa-code">
-    Integrate AppsFlyer into apps developed in NativeScript to measure app installs, in-app events, media sources and more.
-  </Card>
-  <Card title="Xamarin Android/iOS plugin" href="/docs/xamarin-android-ios-plugin" icon="fa-solid fa-sack-dollar">
-    Integrate AppsFlyer into apps developed using Xamarin to measure installs, in-app events, media sources, and more.
-  </Card>
-  <Card title="Adobe Launch SDK extension" href="/docs/adobe-launch-sdk-extension" icon="fa-solid fa-code">
-    Send data to Adobe Launch SDK and AppsFlyer SDK with the single implementation of AppsFlyer Adobe Launch SDK Extension.
-  </Card>
-  <Card title="Adobe AIR plugin" href="/docs/adobe-air-plugin" icon="fa-solid fa-code">
-    Integrate AppsFlyer SDK into iOS/Android apps developed with Adobe AIR development platform to measure installs, in-app events, media sources, and more.
-  </Card>
-  <Card title="Cordova" href="/docs/cordova" icon="fa-solid fa-file-lines">
-    Integrate AppsFlyer into your Cordova apps to measure installs, in-app events, media sources, and more.
-  </Card>
-  <Card title="Cocos2ds" href="/docs/cocos2ds" icon="fa-solid fa-file-lines">
-    Integrate AppsFlyer into games developed in cocos2dX to measure installs, in-app events, media sources, and more.
-  </Card>
-</Cards>
+- [React Native plugin overview](/docs/react-native-plugin-overview)
+- [Flutter plugin](/docs/flutter-plugin)
+- [Unreal Engine plugin](/docs/unreal-engine-plugin)
+- [NativeScript plugin](/docs/nativescript-plugin)
+- [Xamarin Android/iOS plugin](/docs/xamarin-android-ios-plugin)
+- [Adobe Launch SDK extension](/docs/adobe-launch-sdk-extension)
+- [Adobe AIR plugin](/docs/adobe-air-plugin)
+- [Cordova](/docs/cordova)
+- [Cocos2ds](/docs/cocos2ds)

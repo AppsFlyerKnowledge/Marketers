@@ -12,16 +12,6 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6551715006353-Aggregate-data
 ---
-Use aggregate attribution data to see trends and gain insights
-
-<Cards>
-  <Card title="Integrated partners dashboard" href="/docs/integrated-partners-dashboard" icon="fa-solid fa-handshake">
-    Integrated partners use the dashboard and reports to view and analyze campaign traffic attributed to you.
-  </Card>
-  <Card title="Access to aggregated analytics tools for API partners" href="/docs/access-to-aggregated-analytics-tools-for-api-partners" icon="fa-solid fa-handshake">
-    API partners can use their API token to access advertisers' data when granted permission by the advertiser, allowing them to extract performance metrics from the platform.
-  </Card>
-  <Card title="Aggregated campaign performance report for ad networks" href="/docs/aggregated-campaign-performance-report-for-ad-networks" icon="fa-solid fa-handshake">
-    Ad networks load the aggregated performance report (AKA Cohort report) into their BI systems to calculate campaign performance metrics like the 7-day retention KPI.
-  </Card>
-</Cards>
+- [Integrated partners dashboard](/docs/integrated-partners-dashboard)
+- [Access to aggregated analytics tools for API partners](/docs/access-to-aggregated-analytics-tools-for-api-partners)
+- [Aggregated campaign performance report for ad networks](/docs/aggregated-campaign-performance-report-for-ad-networks)

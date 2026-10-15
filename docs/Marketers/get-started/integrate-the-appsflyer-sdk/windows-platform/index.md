@@ -13,13 +13,5 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551223206417-Windows-platform
 ---
-Windows SDK integration and testing guides
-
-<Cards>
-  <Card title="Windows SDK integration for developers" href="/docs/windows-sdk-integration-for-developers" icon="fa-solid fa-code">
-    Add AppsFlyer to Windows apps and games to measure app installs, in-app events, media sources, and more.
-  </Card>
-  <Card title="Testing Windows SDK integration" href="/docs/testing-windows-sdk-integration" icon="fa-solid fa-code">
-    Test your Windows app integration with AppsFlyer.
-  </Card>
-</Cards>
+- [Windows SDK integration for developers](/docs/windows-sdk-integration-for-developers)
+- [Testing Windows SDK integration](/docs/testing-windows-sdk-integration)

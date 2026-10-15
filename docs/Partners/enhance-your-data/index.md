@@ -13,17 +13,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551110127761-Enhance-your-data
 ---
-<Cards columns={2}>
-  <Card title="Provide data" href="/docs/provide-data" icon="fa-solid fa-file-lines">
-    Send engagement data to AppsFlyer for attribution
-  </Card>
-  <Card title="Receive data" href="/docs/receive-data" icon="fa-solid fa-file-lines">
-    Create postback templates to receive advertiser attribution data
-  </Card>
-  <Card title="End-user privacy" href="/docs/end-user-privacy" icon="fa-solid fa-user-shield">
-    Optimize your platform for the user privacy era
-  </Card>
-  <Card title="Cost sharing for ad networks" href="/docs/cost-sharing-for-ad-networks" icon="fa-solid fa-handshake">
-    Refine customer data by providing cost information
-  </Card>
-</Cards>
+- [Provide data](/docs/provide-data)
+- [Receive data](/docs/receive-data)
+- [End-user privacy](/docs/end-user-privacy)
+- [Cost sharing for ad networks](/docs/cost-sharing-for-ad-networks)

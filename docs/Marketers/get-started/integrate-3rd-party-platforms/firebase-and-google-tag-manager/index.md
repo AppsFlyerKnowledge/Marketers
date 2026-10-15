@@ -13,16 +13,6 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551267006225-Firebase-and-Google-Tag-Manager
 ---
-Integrate Firebase with AppsFlyer using Google Tag Manager
-
-<Cards>
-  <Card title="Using Firebase and Google Tag Manager with AppsFlyer—Overview" href="/docs/using-firebase-and-google-tag-manager-with-appsflyer-overview" icon="fa-solid fa-circle-info">
-    About sending events reported via Firebase SDK to AppsFlyer using Google Tag Manager.
-  </Card>
-  <Card title="Using Firebase and Google Tag Manager with AppsFlyer—Google Tag Manager setup" href="/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup" icon="fa-solid fa-puzzle-piece">
-    Instructions for setting up event sending reported via Firebase SDK to AppsFlyer in Google Tag Manager.
-  </Card>
-  <Card title="Using Firebase and Google Tag Manager with AppsFlyer—Sending installs and events" href="/docs/using-firebase-and-google-tag-manager-with-appsflyer-sending-installs-and-events" icon="fa-solid fa-bolt">
-    Instructions for setting up event sending reported via Firebase SDK to AppsFlyer in your app.
-  </Card>
-</Cards>
+- [Using Firebase and Google Tag Manager with AppsFlyer—Overview](/docs/using-firebase-and-google-tag-manager-with-appsflyer-overview)
+- [Using Firebase and Google Tag Manager with AppsFlyer—Google Tag Manager setup](/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup)
+- [Using Firebase and Google Tag Manager with AppsFlyer—Sending installs and events](/docs/using-firebase-and-google-tag-manager-with-appsflyer-sending-installs-and-events)

@@ -12,35 +12,12 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551069075089-Revenue-analysis
 ---
-### [Purchase and subscription validation](/docs/purchase-and-subscription-validation)
-
-## Articles
-
-<Cards>
-  <Card title="Purchase and subscription validation" href="/docs/purchase-and-subscription-validation" icon="fa-solid fa-sack-dollar">
-  </Card>
-  <Card title="ROI360 - revenue attribution overview" href="/docs/roi360-revenue-attribution-overview" icon="fa-solid fa-diagram-project">
-    Revenue data helps give you a clear and complete picture of ROI and ROAS. Learn about the different products and features available for advertisers to aggregate and view revenue data.
-  </Card>
-  <Card title="ROI360 guide - ad revenue attribution" href="/docs/roi360-guide-ad-revenue-attribution" icon="fa-solid fa-diagram-project">
-    Attribute ad revenue to complete the LTV (lifetime value) performance view.
-  </Card>
-  <Card title="Set up tax and store commission rates with the Net Revenue API" href="/docs/set-up-tax-and-store-commission-rates-with-the-net-revenue-api" icon="fa-solid fa-plug">
-    Configure how AppsFlyer calculates net revenue for in-app purchases and subscriptions by using the Net Revenue API to customize store commission rates and tax rules per app. This ensures that your reports accurately reflect actual earnings, including cases with non-standard commission fees or specific tax rules.
-  </Card>
-  <Card title="Integrate the ROI360 ad revenue SDK API" href="/docs/integrate-the-roi360-ad-revenue-sdk-api" icon="fa-solid fa-plug">
-    The AppsFlyer ad revenue SDK API works with ad networks to report ad revenue with impression-level granularity.
-  </Card>
-  <Card title="Revenue ETL reports" href="/docs/revenue-etl-reports" icon="fa-solid fa-chart-column">
-    Learn about ROI360 revenue reports, their sources, how they are generated, when they are available, and how you can access them. Learn more about the fields and structure of the reports by downloading the data sample.
-  </Card>
-  <Card title="Share ad revenue data with partners" href="/docs/share-ad-revenue-data-with-partners" icon="fa-solid fa-handshake">
-    Allow partners to receive ad revenue information from mediation networks so they can optimize their user acquisition (UA) campaigns. Note : This requires an ROI360 Advanced subscription.
-  </Card>
-  <Card title="Compare ROI360 ad revenue data with partner data" href="/docs/compare-roi360-ad-revenue-data-with-partner-data" icon="fa-solid fa-handshake">
-    Compare AppsFlyer ROI360 ad revenue data with mediation and user acquisition partner data.
-  </Card>
-  <Card title="Set up ROI360 ad revenue partner integrations via API" href="/docs/set-up-roi360-ad-revenue-partner-integrations-via-api" icon="fa-solid fa-handshake">
-    Configure ad revenue partner integrations for your AppsFlyer account or individual apps via API.
-  </Card>
-</Cards>
+- [Purchase and subscription validation](/docs/purchase-and-subscription-validation)
+- [ROI360 - revenue attribution overview](/docs/roi360-revenue-attribution-overview)
+- [ROI360 guide - ad revenue attribution](/docs/roi360-guide-ad-revenue-attribution)
+- [Set up tax and store commission rates with the Net Revenue API](/docs/set-up-tax-and-store-commission-rates-with-the-net-revenue-api)
+- [Integrate the ROI360 ad revenue SDK API](/docs/integrate-the-roi360-ad-revenue-sdk-api)
+- [Revenue ETL reports](/docs/revenue-etl-reports)
+- [Share ad revenue data with partners](/docs/share-ad-revenue-data-with-partners)
+- [Compare ROI360 ad revenue data with partner data](/docs/compare-roi360-ad-revenue-data-with-partner-data)
+- [Set up ROI360 ad revenue partner integrations via API](/docs/set-up-roi360-ad-revenue-partner-integrations-via-api)

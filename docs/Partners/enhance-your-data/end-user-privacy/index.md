@@ -13,16 +13,6 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551186412689-End-user-privacy
 ---
-Optimize your platform for the user privacy era
-
-<Cards>
-  <Card title="SKAN CV schema API for ad networks" href="/docs/skan-cv-schema-api-for-ad-networks" icon="fa-solid fa-lock">
-    See the SKAN CV schema as mapped by the advertiser.
-  </Card>
-  <Card title="SKAN integration guide for ad networks" href="/docs/skan-integration-guide-for-ad-networks" icon="fa-solid fa-lock">
-    Ad networks integrate with AppsFlyer SKAdNetworks (SKAN), enabling them to optimize campaigns and to be attributed to the traffic they generate.
-  </Card>
-  <Card title="Advanced Privacy guide & postback macros for ad networks" href="/docs/advanced-privacy-guide-postback-macros-for-ad-networks" icon="fa-solid fa-user-shield">
-    Data sharing with partners when Advanced Privacy is enabled. Instructions for ad networks on setting up Advanced Privacy postbacks. Note! This article is not related to either SKAdNetwork postbacks nor is it intended for use by advertisers.
-  </Card>
-</Cards>
+- [SKAN CV schema API for ad networks](/docs/skan-cv-schema-api-for-ad-networks)
+- [SKAN integration guide for ad networks](/docs/skan-integration-guide-for-ad-networks)
+- [Advanced Privacy guide & postback macros for ad networks](/docs/advanced-privacy-guide-postback-macros-for-ad-networks)

@@ -15,10 +15,4 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/40761623209873-Incrementality-for-UA
 ---
-Run experiments to understand the true impact of your User Acquisition (UA) campaigns
-
-<Cards>
-  <Card title="Incrementality for UA Guide" href="/docs/incrementality-for-ua-guide" icon="fa-solid fa-flask">
-    Run an Incrementality experiment to understand the true impact of your User Acquisition (UA) campaigns.
-  </Card>
-</Cards>
+- [Incrementality for UA Guide](/docs/incrementality-for-ua-guide)

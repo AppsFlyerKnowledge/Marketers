@@ -12,20 +12,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551084534545-Integrate-3rd-party-platforms
 ---
-Integrate 3rd-party platforms with AppsFlyer
-
-<Cards>
-  <Card title="3rd-party platforms" href="/docs/3rd-party-platforms" icon="fa-solid fa-file-lines">
-    Integrate tech partners and analytics platforms, such as Segment, mParticle, Amplitude, MixPanel, and Braze
-  </Card>
-  <Card title="Firebase and Google Tag Manager" href="/docs/firebase-and-google-tag-manager" icon="fa-solid fa-file-lines">
-    Integrate Firebase with AppsFlyer using Google Tag Manager
-  </Card>
-  <Card title="Google Analytics" href="/docs/google-analytics" icon="fa-solid fa-chart-line">
-    Integrate Google Analytics with AppsFlyer
-  </Card>
-</Cards>
-
-## Articles
-
-* [Discrepancies between AppsFlyer and third-party platforms](/docs/discrepancies-between-appsflyer-and-third-party-platforms)
+- [3rd-party platforms](/docs/3rd-party-platforms)
+- [Firebase and Google Tag Manager](/docs/firebase-and-google-tag-manager)
+- [Google Analytics](/docs/google-analytics)
+- [Discrepancies between AppsFlyer and third-party platforms](/docs/discrepancies-between-appsflyer-and-third-party-platforms)

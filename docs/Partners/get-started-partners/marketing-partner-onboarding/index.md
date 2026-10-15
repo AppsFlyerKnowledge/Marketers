@@ -13,10 +13,4 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551118224657-Marketing-partner-onboarding
 ---
-Getting started with AppsFlyer for marketing technology platforms
-
-<Cards>
-  <Card title="Integrating Meta campaign management partners with AppsFlyer" href="/docs/integrating-meta-campaign-management-partners-with-appsflyer" icon="fa-solid fa-handshake">
-    Learn what data types Meta campaign management partners can receive from AppsFlyer.
-  </Card>
-</Cards>
+- [Integrating Meta campaign management partners with AppsFlyer](/docs/integrating-meta-campaign-management-partners-with-appsflyer)

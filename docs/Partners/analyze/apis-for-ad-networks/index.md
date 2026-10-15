@@ -13,6 +13,4 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551618728209-APIs-for-ad-networks
 ---
-Use AppsFlyer APIs designated for ad networks
-
-* [App list API for ad networks](/docs/app-list-api-for-ad-networks)
+- [App list API for ad networks](/docs/app-list-api-for-ad-networks)

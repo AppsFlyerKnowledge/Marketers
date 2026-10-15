@@ -13,16 +13,6 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551326229265-Retargeting-attribution
 ---
-Understand retargeting attribution with our specialized guides
-
-<Cards>
-  <Card title="Retargeting attribution guide" href="/docs/retargeting-attribution-guide" icon="fa-solid fa-users">
-    Retargeting (remarketing) campaigns motivate users to open and re-engage with the app or cause users who deleted the app to reinstall it.
-  </Card>
-  <Card title="Resolve retargeting double attribution" href="/docs/resolve-retargeting-double-attribution" icon="fa-solid fa-users">
-    To evaluate performance during the retargeting campaign's re-engagement window, in-app events and sessions are double-attributed to the user acquisition (UA) and retargeting media sources.
-  </Card>
-  <Card title="Set retargeting inactivity window" href="/docs/set-retargeting-inactivity-window" icon="fa-solid fa-users">
-    Increase incremental lift by retargeting inactive users. Set inactivity windows by media source.
-  </Card>
-</Cards>
+- [Retargeting attribution guide](/docs/retargeting-attribution-guide) ★
+- [Resolve retargeting double attribution](/docs/resolve-retargeting-double-attribution)
+- [Set retargeting inactivity window](/docs/set-retargeting-inactivity-window)

@@ -13,19 +13,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551113099153-AppsFlyer-basics
 ---
-Review attribution concepts, learn the AppsFlyer platform, work with agencies
-
-<Cards>
-  <Card title="Attribution concepts" href="/docs/attribution-concepts" icon="fa-solid fa-diagram-project">
-    Understand the AppsFlyer attribution model, terms, dashboards, and A/B testing
-  </Card>
-  <Card title="Attribution scenarios" href="/docs/attribution-scenarios" icon="fa-solid fa-diagram-project">
-    Measure uninstalls, apps in multiple stores, impressions, affiliates, and more
-  </Card>
-  <Card title="The AppsFlyer platform" href="/docs/the-appsflyer-platform" icon="fa-solid fa-file-lines">
-    The ins-and-outs of the platform, notifications, data access, APIs, and more
-  </Card>
-  <Card title="Working with agencies" href="/docs/working-with-agencies" icon="fa-solid fa-file-lines">
-    Get the most out of working with ad agencies and AppsFlyer
-  </Card>
-</Cards>
+- [Attribution concepts](/docs/attribution-concepts)
+- [Attribution scenarios](/docs/attribution-scenarios)
+- [The AppsFlyer platform](/docs/the-appsflyer-platform)
+- [Working with agencies](/docs/working-with-agencies)

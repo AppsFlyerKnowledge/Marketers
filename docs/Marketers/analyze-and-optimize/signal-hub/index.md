@@ -14,8 +14,4 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/41021664993425-Signal-Hub
 ---
-<Cards>
-  <Card title="Signal Hub guide" href="/docs/signal-hub-guide" icon="fa-solid fa-tower-broadcast">
-    The AppsFlyer Signal Hub enables marketers to create privacy-safe audiences with real-world purchase signals and activate them instantly across major media platforms.
-  </Card>
-</Cards>
+- [Signal Hub guide](/docs/signal-hub-guide)

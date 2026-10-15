@@ -15,13 +15,10 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551947798801-Cross-platform-measurement
 ---
-<Cards>
-  <Card title="Overview" href="/docs/overview" icon="fa-solid fa-circle-info">
-    Guides for getting started with Cross-platform measurement
-  </Card>
-  <Card title="Cross platform reports" href="/docs/cross-platform-reports" icon="fa-solid fa-chart-column">
-  </Card>
-  <Card title="Platforms" href="/docs/platforms" icon="fa-solid fa-file-lines">
-    Find out how to promote and measure the attribution of your apps according to the platforms they belong to
-  </Card>
-</Cards>
+- [Overview](/docs/overview)
+- [Cross platform reports](/docs/cross-platform-reports)
+- [Platforms](/docs/platforms)
+- [Promoting CTV apps](/docs/promoting-ctv-apps)
+- [Promoting Console apps](/docs/promoting-console-apps)
+- [Promoting Desktop apps](/docs/promoting-desktop-apps)
+- [Promoting Web apps](/docs/promoting-web-apps)

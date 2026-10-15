@@ -12,19 +12,7 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6552042145425-China-market
 ---
-Promote Android and iOS apps in China from elsewhere in the world
-
-<Cards>
-  <Card title="App promotion in China" href="/docs/app-promotion-in-china" icon="fa-solid fa-earth-asia">
-    Promote your app in the Chinese market.
-  </Card>
-  <Card title="Apply China Personal Information Protection Law (PIPL) solution" href="/docs/apply-china-personal-information-protection-law-pipl-solution" icon="fa-solid fa-earth-asia">
-    Improve flexibility while measuring with AppsFlyer and complying with PIPL.
-  </Card>
-  <Card title="Android app promotion in China" href="/docs/android-app-promotion-in-china" icon="fa-solid fa-sack-dollar">
-    Best practices to promote your Android app in the Chinese market.
-  </Card>
-  <Card title="iOS app promotion in China" href="/docs/ios-app-promotion-in-china" icon="fa-solid fa-mobile">
-    Learn about marketing your iOS apps in China.
-  </Card>
-</Cards>
+- [App promotion in China](/docs/app-promotion-in-china)
+- [Apply China Personal Information Protection Law (PIPL) solution](/docs/apply-china-personal-information-protection-law-pipl-solution)
+- [Android app promotion in China](/docs/android-app-promotion-in-china)
+- [iOS app promotion in China](/docs/ios-app-promotion-in-china)

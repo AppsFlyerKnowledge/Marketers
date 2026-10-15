@@ -13,13 +13,5 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551289835025-Working-with-agencies
 ---
-Get the most out of working with ad agencies and AppsFlyer
-
-<Cards>
-  <Card title="Set up agencies" href="/docs/set-up-agencies" icon="fa-solid fa-puzzle-piece">
-    Get started working with agencies in AppsFlyer: all the details in this video!
-  </Card>
-  <Card title="View agency data" href="/docs/view-agency-data" icon="fa-solid fa-handshake">
-    Learn about agency data to understand its impact on how your data is presented in AppsFlyer.
-  </Card>
-</Cards>
+- [Set up agencies](/docs/set-up-agencies)
+- [View agency data](/docs/view-agency-data)
