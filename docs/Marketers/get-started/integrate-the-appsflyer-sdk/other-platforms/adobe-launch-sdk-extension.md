@@ -177,7 +177,8 @@ There are two ways to add the install referrer to your app:
 
 Add the Android Install Referrer as a dependency. You can find the latest version [here](https://mvnrepository.com/artifact/com.android.installreferrer/installreferrer/1.0).
 
-1. ```
+1.
+   ```
    dependencies {
    //make sure to use the latest SDK version: https://mvnrepository.com/artifact/com.appsflyer/af-android-sdk
    	implementation 'com.appsflyer:af-android-sdk:5.+'

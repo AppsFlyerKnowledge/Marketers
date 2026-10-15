@@ -95,7 +95,7 @@ You can customize which metrics you see on the Discovery tiles.
 * ROAS (D1, D3, D7, D14, D30, D60, D90)
 * [Custom metrics](/docs/creative-optimization-guide#custom-metrics)
 * [Partner metrics](/docs/creative-optimization-guide#partner-metrics::e592ecd3)
-* [In-app events](/docs/creative-optimization-overview-dashboard/preview/eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MTg1NjU2NDk0ODY0ODEsImV4cCI6MTcwOTgxOTgyNn0.hL95F1E6q9xGRjKvMCz0moJU_8M0iwhdvjlf55jH5F4#inapp-events)
+* [In-app events](/docs/creative-optimization-overview-dashboard#in-app-events)
 
 See an in-depth [list](/docs/creative-optimization-guide#standard-metrics-and-dimensions) of metric definitions.
 

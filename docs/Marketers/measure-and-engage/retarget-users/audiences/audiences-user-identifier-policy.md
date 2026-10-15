@@ -109,7 +109,7 @@ For detailed ATT status definitions, see:
 * [Apple ATT status definitions](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/)
 * [AppsFlyer ATT status definitions](/docs/att-implications-ios-14-and-deprecation-of-lat#att-values) (af\_authorized, af\_unavailable)
 
-Additionally, all users from the European Economic Area (EEA) are subject to Google's enforcement of the [Digital Markets Act (DMA)](/docs/audiences-user-identifier-policy/preview/eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MzYwMDE2NzkxMTE4LCJleHAiOjE3MDcyOTgxNjR9.Ov2n430ww3yS2fhn4GH30c1ZNd-YPmgXu2FFNsXv98M#eu-digital-markets-act).
+Additionally, all users from the European Economic Area (EEA) are subject to Google's enforcement of the [Digital Markets Act (DMA)](/docs/audiences-user-identifier-policy#eu-digital-markets-act).
 
 </Accordion>
 

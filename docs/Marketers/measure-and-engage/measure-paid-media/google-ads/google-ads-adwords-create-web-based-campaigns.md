@@ -250,7 +250,8 @@ The Final URL can't be an AppsFlyer URL (OneLink or a single platform attributio
 
 Suppose you use the store URL as your Final URL. The only way to send attribution and custom parameter information to AppsFlyer is to insert and map AF parameters to the Tracking Template URL.
 
-* ```
+*
+  ```
   https://play.google.com/store/apps/details?id=.com.app.id&hl=en&gl=US&referrer=`{gclid}&gclid={gclid}&campaignid={campaignid}`
   ```
 * **A direct download link to the app APK file** if you want users to download the app directly without being redirected to a store.

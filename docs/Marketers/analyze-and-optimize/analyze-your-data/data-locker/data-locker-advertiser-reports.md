@@ -27,7 +27,7 @@ x-zendesk:
 
 <Accordion title="Data freshness">
 
-Data Locker report availability varies by report type. Depending on the report, data is delivered using an hourly, daily, or versioned freshness model. For more information on how these freshness intervals map to the Data Locker folder hierarchy, see [Folder structure](/docs/data-locker-for-marketers/live_preview/01KKER5X9ZVJNR5RWJ08ZN1P8Y#folder-structure).
+Data Locker report availability varies by report type. Depending on the report, data is delivered using an hourly, daily, or versioned freshness model. For more information on how these freshness intervals map to the Data Locker folder hierarchy, see [Folder structure](/docs/data-locker-for-marketers#folder-structure).
 
 | Data Freshness | Description | Report Example |
 | --- | --- | --- |

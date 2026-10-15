@@ -90,7 +90,7 @@ The columns in the table below have the following meaning:
 | <span id="country_code"></span>country\_code | AF | Yes | Country Code using ISO 3166 (alpha-2) Example: US, CN. | Yes |  |
 | <span id="event_name"></span>event\_name | SDK | Yes | Name allocated to an event | No | In-app |
 | <span id="event_revenue_currency"></span>event\_revenue | SDK | Yes | Event value reported by SDK using event\_revenue\_currency or currency selected by you. | No | In-app |
-| event\_revenue  <br />\_currency | SDK | Yes | The event revenue currency code reported in the event or the currency selected by you | No | In-app |
+| {"event_revenue"}  <br />{"_currency"} | SDK | Yes | The event revenue currency code reported in the event or the currency selected by you | No | In-app |
 | <span id="event_revenue_usd"></span>event\_revenue\_USD | AF | Yes | Event value in USD | No | In-app |
 | <span id="event_time"></span>event\_time | SDK | Yes | Event time | No | In-app |
 | <span id="event_value"></span>event\_value | SDK | Yes | in-app event includes attributes with values, which can be sent entirely on the postback in JSON format. URL encoded using the (encode) macro. | No | In-app |
