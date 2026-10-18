@@ -61,7 +61,7 @@ MMP attribution links record the engagements of users on non-SRN ad networks and
 
 ### Owned media
 
-As with non-SRN ad networks, attributing installs from owned media requires using MMP attribution links. However, for some types of owned media, such as email lists, SMSs, or QR codes, MMPs can send data on a single engagement only once. AppsFlyer's[mobile web-to-app attribution](/docs/convert-your-mobile-web-visitors-to-app-users) solution enables measuring **installs coming from a website or a landing page**. The advantage of using owned media for comparing MMP attribution is the fact that no install or event deduping is needed.
+As with non-SRN ad networks, attributing installs from owned media requires using MMP attribution links. However, for some types of owned media, such as email lists, SMSs, or QR codes, MMPs can send data on a single engagement only once. AppsFlyer's [mobile web-to-app attribution](/docs/convert-your-mobile-web-visitors-to-app-users) solution enables measuring **installs coming from a website or a landing page**. The advantage of using owned media for comparing MMP attribution is the fact that no install or event deduping is needed.
 
 ## Avoiding attribution discrepancies
 
