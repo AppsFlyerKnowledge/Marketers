@@ -167,7 +167,7 @@ If you work with Liftoff as an agency partner, in this section you can give them
   * **Allow to send event revenue** - permit the agency to send events including their monetary value
   * Make sure to select specific events you want to grant the agency permission to. Click **Add event** and pick the event from the drop-down list. Do this for each event you want to add.
 
-Learn more about [working with agencies](/docs/about-agency-accounts).
+Learn more about [working with agencies](/appsflyer-partners/docs/about-agency-accounts).
 
 </Accordion>
 

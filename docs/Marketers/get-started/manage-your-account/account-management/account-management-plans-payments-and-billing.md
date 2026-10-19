@@ -227,7 +227,7 @@ The Usage Report page shows your billable conversions and your return on investm
 > 📘 **Note**
 >
 > * Usage reports and invoices are calculated based on the UTC+0 time zone. As a result, there may be slight discrepancies between usage reports and the data reported on dashboards, Cohort reports, and other aggregated reports.
-> * Data in the usage report remains **non-transparent** whether or not [**Allow transparency**](/docs/getting-started-agency-onboarding#transparency) is turned on, meaning they show the agency name and not the attributed media source
+> * Data in the usage report remains **non-transparent** whether or not [**Allow transparency**](/appsflyer-partners/docs/getting-started-agency-onboarding#transparency) is turned on, meaning they show the agency name and not the attributed media source
 
 #### Usage report fields
 

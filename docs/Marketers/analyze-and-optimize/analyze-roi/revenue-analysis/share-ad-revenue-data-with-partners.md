@@ -58,7 +58,7 @@ You may want to work with ad networks that can receive UA signals. This means th
 9. Click **Save Settings**.
 10. Contact the ad network:
     1. Notify it that you've granted the permissions.
-    2. Tell them to follow [their instructions](/docs/ad-revenue-signals-for-ua-ad-networks#enable-the-ad-revenue-report) to receive the report.
+    2. Tell them to follow [their instructions](/appsflyer-partners/docs/ad-revenue-signals-for-ua-ad-networks#enable-the-ad-revenue-report) to receive the report.
 
 **List of mediation partners that can send UA signals to ad networks:**
 

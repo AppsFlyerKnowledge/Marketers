@@ -55,7 +55,7 @@ MMP attribution links record the engagements of users on non-SRN ad networks and
 
 | Ad network requirement | Details |
 | --- | --- |
-| Data for a single engagement must be sent to both MMPs | <ul><li>**Clicks:** As attribution links redirect users to the app store, only one attribution link can be used. We recommend continuing to use the attribution link from the existing MMP while [sending click-attribution data to AppsFlyer](/docs/redirecting-users-to-the-app-store#overview).</li><li>**Impressions:** As impressions don't redirect users to the app store, the ad network should send impression data to both MMPs.</li></ul> |
+| Data for a single engagement must be sent to both MMPs | <ul><li>**Clicks:** As attribution links redirect users to the app store, only one attribution link can be used. We recommend continuing to use the attribution link from the existing MMP while [sending click-attribution data to AppsFlyer](/appsflyer-partners/docs/redirecting-users-to-the-app-store#overview).</li><li>**Impressions:** As impressions don't redirect users to the app store, the ad network should send impression data to both MMPs.</li></ul> |
 | Received install postbacks should be deduped | Ad networks receive install postbacks from both MMPs. To avoid double charges, the ad network should dedupe one of these postbacks. |
 | Received in-app event postbacks should be deduped | When each of the MMPs is configured to send in-app event postbacks, ad networks receive in-app event postbacks from both MMPs. To avoid double attribution resulting in double charges, the ad network should dedupe one of these postbacks. If the ad network can't dedupe double in-app event postbacks, make sure in-app event postbacks are configured in only one MMP. |
 

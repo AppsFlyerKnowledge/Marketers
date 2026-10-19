@@ -339,7 +339,7 @@ Grant ad networks and agencies specific permissions to access your data and perf
 
 * You don't need the integration with a partner to be turned on to grant them permissions.
 * **Ad network set up by an agency:** When partner setup is performed by an agency, the advertiser can view neither the ad network activation status nor the permissions granted.
-* If your association with the partner is solely as an agency, use the **Agency permissions** instead of the **Ad network permissions**. By turning on the Agency permissions toggle, you allow the agency to control the Ad network permissions. For more information, see the note in [What does it mean to get permission from a marketer](/docs/getting-started-agency-onboarding#what-does-it-mean-to-get-permission-from-a-marketer).
+* If your association with the partner is solely as an agency, use the **Agency permissions** instead of the **Ad network permissions**. By turning on the Agency permissions toggle, you allow the agency to control the Ad network permissions. For more information, see the note in [What does it mean to get permission from a marketer](/appsflyer-partners/docs/getting-started-agency-onboarding#what-does-it-mean-to-get-permission-from-a-marketer).
 * Permissions are granted for the currently selected app.
 
 #### Ad network permissions
@@ -357,7 +357,7 @@ Turning on **Ad network permissions** allows the ad network access to your dashb
    * Your app appears on the ad network's dashboard.
    * The ad network admin has permissions to [see basic data about the app.](/docs/manage-data-access-permissions)
 
-   **Note:** Ad network team members are managed directly by the ad network. If you want a specific team member to have access, please contact your ad network. [Learn more](/docs/user-management-for-ad-networks#creating-a-user)
+   **Note:** Ad network team members are managed directly by the ad network. If you want a specific team member to have access, please contact your ad network. [Learn more](/appsflyer-partners/docs/user-management-for-ad-networks#creating-a-user)
 2. Select additional permissions to grant to the ad network:
 
 | **Permission** | **Capability granted** |
@@ -366,17 +366,17 @@ Turning on **Ad network permissions** allows the ad network access to your dashb
 | <span id="configure-inapp-event-postbacks"></span>Configure in-app event postbacks | The ad network can configure in-app event postbacks. This means they can create, define (map), and change postback settings.<br /><br />**Caution**! When both this permission and **Configure integration** are enabled simultaneously, the ad network has access to all events. This includes organic traffic and non-organic traffic from all media sources. |
 | <span id="access-retention-report"></span>Access retention and cohort reports | The ad network can access retention/cohort data created by the users brought by the ad network only. |
 | <span id="access-aggregate-loyal-users-data"></span>Access aggregate loyal users data | The ad network can access its own [loyal users](/docs/about-a-loyal-user) metric. |
-| <span id="access-aggregate-conversions-data"></span>Access aggregate conversions data | The ad network can access their aggregate conversion events metric reports. This includes installs, re-engagements, re-installs, and re-attributions. Example: [Aggregated campaign performance for ad networks report](/docs/aggregated-campaign-performance-report-for-ad-networks). |
+| <span id="access-aggregate-conversions-data"></span>Access aggregate conversions data | The ad network can access their aggregate conversion events metric reports. This includes installs, re-engagements, re-installs, and re-attributions. Example: [Aggregated campaign performance for ad networks report](/appsflyer-partners/docs/aggregated-campaign-performance-report-for-ad-networks). |
 | <span id="access-aggregate-inapp-events-data"></span>Access aggregate in-app events data | The ad network can:<ul><li>Access in-app event data aggregate reports. The access includes all in-app events data of the selected app, including Protect360 in-app events data. This means they can access not just the events mapped in the postback configuration.</li><li>Access ad monetization data aggregate reports,  which may include ad monetization events from other media sources.</li></ul> |
 | <span id="view-validation-rules"></span>View validation rules | The ad network can view [validation rule](/docs/implement-validation-rules-to-prevent-fraud) details. |
 | <span id="access-aggregate-revenue-data"></span>Access aggregate revenue data | The ad network can access aggregate reports of in-app and ad revenue data attributed to users brought by the ad network. **Note:** This permission doesn't directly identify the ad revenue partner. However, if you've set the monetization event name to include the partner name, you may inadvertently disclose the identity of the monetization network. |
 | <span id="use-ad-spend-ingestion"></span>Use ad spend ingestion | The ad network can:<ul><li>Access the [Ad Spend Ingestion](/docs/import-cost-data) window. This window displays only the apps they have permissions for.</li><li>Send ad spend files for ingestion.</li></ul> |
 | <span id="access-protect360-dashboard-raw-data"></span>Access Protect360 dashboard & raw data | The ad network can:<ul><li>Access their Protect360 dashboard (including [ProtectLITE](/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting)).</li><li>Access Protect360, Validation Rules, and raw data if they are part of the subscription plan. ProtectLITE doesn't include access to raw data.</li></ul>**Note:** When you have a [Protect360](/docs/protect360-anti-fraud-guide) subscription, the ad network can see the full dashboard. Without a Protect360 subscription, they can see the lite dashboard. |
-| <span id="access-ad-revenue-raw-data"></span>Access ad revenue raw data | The ad network can access their [ad revenue data to use for UA optimization](/docs/ad-revenue-signals-for-ua-ad-networks).   <br />**Note:** This permission is only available for apps with an [ROI360](/docs/roi360-cost-aggregation-overview?query=xpend) subscription. |
+| <span id="access-ad-revenue-raw-data"></span>Access ad revenue raw data | The ad network can access their [ad revenue data to use for UA optimization](/appsflyer-partners/docs/ad-revenue-signals-for-ua-ad-networks).   <br />**Note:** This permission is only available for apps with an [ROI360](/docs/roi360-cost-aggregation-overview?query=xpend) subscription. |
 
 #### Agency permissions
 
-Read all about [what agencies can do](/docs/getting-started-agency-onboarding#what-does-it-mean-to-get-permission-from-a-marketer) when granted permissions.
+Read all about [what agencies can do](/appsflyer-partners/docs/getting-started-agency-onboarding#what-does-it-mean-to-get-permission-from-a-marketer) when granted permissions.
 
 > 📘 **Important!**
 >
@@ -409,7 +409,7 @@ Read all about [what agencies can do](/docs/getting-started-agency-onboarding#wh
 | <span id="access-protect360-dashboard-raw-data::dd9829fd"></span>Access Protect360 dashboard & raw data | The agency can:<ul><li>Access your Protect360 aggregate dashboard</li><li>Access Protect360, Validation Rules, and raw data if they are part of the subscription plan</li></ul>**Note:** For advertisers that work with ad networks through an agency, in order for both the ad network and agency to access data, the advertiser must integrate both the agency and ad network in AppsFlyer and grant them both permission to access data. If only the agency is integrated and granted permission, the ad network does not have access to the data. |
 | <span id="configure-inapp-event-postbacks::8743ba60"></span>Configure in-app event postbacks | The agency can configure in-app event postbacks of specific events you select:<ul><li>**Add event:** From the drop-down menu, select events you approve granting the agency permission.</li></ul>The following options apply to the events you selected:<ul><li>**Send events revenue:** When turned on, the agency can configure sending events including their monetary value.</li><li>**Sending option:**<ul><li>**This partner only:** When selected, the agency can configure sending postbacks only for events attributed to their own brought traffic</li><li>**All media sources, including organic:** When selected, the agency can configure sending postbacks for events attributed to all other media sources, agencies, and organic users.</li></ul></li></ul> |
 
-Learn more about [working with agencies](/docs/about-agency-accounts#agency-access-to-marketer-data).
+Learn more about [working with agencies](/appsflyer-partners/docs/about-agency-accounts#agency-access-to-marketer-data).
 
 </Accordion>
 

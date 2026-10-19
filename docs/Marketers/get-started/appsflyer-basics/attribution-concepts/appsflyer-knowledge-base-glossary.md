@@ -57,7 +57,7 @@ x-zendesk:
 :   Gathers apps and websites as traffic media sources for marketers.
     Ad networks aggregate publisher ad space and match it with marketer
     demand.
-    [[Article]](/docs/ad-network-onboarding)
+    [[Article]](/appsflyer-partners/docs/ad-network-onboarding)
 
 #### Ad revenue
 :   Ad revenue is the money apps generate from in-app advertising.
@@ -72,7 +72,7 @@ x-zendesk:
 :   Amount of money spent on advertising for a product or activity.  
     *Formula:* Revenue produced by advertising / Advertising
     spend = Return on Ad Spend (ROAS)  
-    [[Article]](/docs/import-cost-data) and [[Article]](/docs/cost-import-for-ad-networks)
+    [[Article]](/docs/import-cost-data) and [[Article]](/appsflyer-partners/docs/cost-import-for-ad-networks)
 
 #### Ad types
 :   *Includes:* Audio, banner, interstitial,
@@ -123,7 +123,7 @@ x-zendesk:
     [Article]
 
 #### Agency
-:   Third-party that runs, attributes, and measures app marketing campaigns for clients. Agency clients include advertisers/marketers and app owners. [[Article]](/docs/about-agency-accounts)
+:   Third-party that runs, attributes, and measures app marketing campaigns for clients. Agency clients include advertisers/marketers and app owners. [[Article]](/appsflyer-partners/docs/about-agency-accounts)
 
 #### Aggregate data
 :   High-level data, for example, at the account or app level, compiled as a summary using more granular data. [[Article]](/docs/aggregated-and-analytics-reporting-overview)
@@ -769,7 +769,7 @@ KPI
 <Accordion title="M">
 
 #### Macros
-:   Parameters used by partners in attribution links and postbacks. Macros, when placed in a postback, are automatically replaced by user-related data. [[Article]](/docs/postback-macros-for-ad-networks#in-app-event-only-macros)
+:   Parameters used by partners in attribution links and postbacks. Macros, when placed in a postback, are automatically replaced by user-related data. [[Article]](/appsflyer-partners/docs/postback-macros-for-ad-networks#in-app-event-only-macros)
 
 #### Marketer
 :   Related to, **advertiser** and **app owner**  

@@ -29,7 +29,7 @@ The **Security Center** provides you with an at-a-glance overview of your AppsFl
 | --- | --- |
 | <span id="user-management"></span>[User management](/docs/user-management) | Create and manage your AppsFlyer users. Assign them permissions to access the features, apps, and data they need. |
 | <span id="redirect-allowlist"></span>[Redirect allowlist](/docs/set-up-your-domain-redirect-allowlist) | Define allowed domains for link redirects. |
-| <span id="list-of-authorized-agencies-for-ad-networks"></span>[List of authorized agencies](/docs/set-up-your-list-of-authorized-agencies) (for ad networks) | Manage which agencies you authorize to run campaigns through your network integration. |
+| <span id="list-of-authorized-agencies-for-ad-networks"></span>[List of authorized agencies](/appsflyer-partners/docs/set-up-your-list-of-authorized-agencies) (for ad networks) | Manage which agencies you authorize to run campaigns through your network integration. |
 | <span id="api-allowlist"></span>[API allowlist](/docs/set-up-your-api-allowlist) | Define allowed IP addresses for API requests. |
 | <span id="enhanced-login-security"></span>Enhanced login security | Configure [single sign-on (SSO)](/docs/set-up-sso-authentication-with-your-identity-provider-idp) or [two-factor authentication (2FA)](/docs/implementing-and-using-2fa-login) to keep your account safe from unauthorized entry. |
 | <span id="appsflyer-api-and-s2s-tokens"></span>[AppsFlyer tokens](/docs/managing-appsflyer-tokens) | Use AppsFlyer tokens to authenticate your API and S2S calls. Manage the tokens and replace them periodically to ensure maximum security |

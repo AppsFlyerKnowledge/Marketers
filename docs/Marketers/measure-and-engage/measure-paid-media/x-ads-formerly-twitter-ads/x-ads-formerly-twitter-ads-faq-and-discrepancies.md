@@ -104,7 +104,7 @@ When an agency creates a new X Ads campaign, the campaign name must start with t
 >
 > To establish the connection between AppsFlyer and X Ads, the advertiser MUST configure X Ads permissions allowing agencies to run X Ads traffic.
 
-For more details go [here](/docs/about-agency-accounts#srn-configurations).
+For more details go [here](/appsflyer-partners/docs/about-agency-accounts#srn-configurations).
 
 </Accordion>
 

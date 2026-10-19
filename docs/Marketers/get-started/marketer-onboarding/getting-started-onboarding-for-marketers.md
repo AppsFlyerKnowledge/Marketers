@@ -142,7 +142,7 @@ Recommended for all AppsFlyer users:
 > New to AppsFlyer but not a marketer? No worries!
 > Choose the guide for you below and get started:
 >
-> * [Getting started for agencies](/docs/getting-started-agency-onboarding)
-> * [Getting started for ad networks](/docs/getting-started-onboarding-guide-for-ad-networks)
+> * [Getting started for agencies](/appsflyer-partners/docs/getting-started-agency-onboarding)
+> * [Getting started for ad networks](/appsflyer-partners/docs/getting-started-onboarding-guide-for-ad-networks)
 
 <div data-zendesk-anchors="01H8BD2FJ6TQ5FP9625MNP2B3Z=introduction step-1-account-setup=account-setup 01H8BD2FJ6E8KZW41V04SBDQPQ=account-setup 01H8BD2FJ6A39JB8J0PQ3EY52N=tip 01H8V6FS97NTTF1VPQQDZQT973=app-onboarding step-2-app-setup=step-1-app-setup 01H8BD2FJ61S3Z22CD01H6F39E=step-1-app-setup step-3-sdk-integration=step-2-sdk--api-integration 01H8BD2FJ6CY53QXVB5QC98KTT=step-2-sdk--api-integration step-4-attribution-setup=step-3-attribution-setup 01H8BD2FJ6Q8R83FV0XS5B93B3=step-3-attribution-setup step-5-additional-setup=step-4-additional-setup 01H8BD2FJ76WD0MRCJXZH8XABN=step-4-additional-setup 01H8BD2FJ7ZV0ZYHQZ8DBTTFFK=enrich-your-knowledge 01H8BD2FJ748GFC4VJWWYGGN1K=related 01H8BD2FJ712NGA534TCSWQGR8=tip-1 01H8BD2FJ7PRJAA1K8MESRK7VA=note" />

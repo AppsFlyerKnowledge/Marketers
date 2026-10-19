@@ -65,7 +65,7 @@ Raw data reports:
 
 * Post-attribution raw data fraud reports have the same structure as the blocked fraud reports.
 * The current month (by install date) post-attribution report continues to be updated until the seventh day of the following month (detection date).
-* Post attribution raw data reports are limited to advertisers. Agencies need [permissions](/docs/protect360-for-integrated-partners) enabled to access.
+* Post attribution raw data reports are limited to advertisers. Agencies need [permissions](/appsflyer-partners/docs/protect360-for-integrated-partners) enabled to access.
 * Reports contain post-attribution fraud events identified by Protect360 and include all media sources in a single report. **Note**: If no post attribution fraud events are identified for the selected date range, the report returns empty,
 * Post-attribution raw data fraud reports are available as follows:
   * Dashboard user interface: limited to one media source during one calendar month.
@@ -101,7 +101,7 @@ Raw data reports:
 
 ## Getting raw data reports
 
-Raw data reports are available by download, Pull API, and Data Locker (S3 bucket). You can also [give partners access to reports](/docs/protect360-for-integrated-partners).
+Raw data reports are available by download, Pull API, and Data Locker (S3 bucket). You can also [give partners access to reports](/appsflyer-partners/docs/protect360-for-integrated-partners).
 
 <div id="download" />
 
@@ -181,8 +181,8 @@ At the click level, clicks are blocked, and the attribution process ignores them
 | Blocked reason | Description |
 | --- | --- |
 | ip\_blacklist | Based on a dynamically created list ([details](/docs/protect360-anti-fraud-guide#ip-denylists)) |
-| click\_capping | Extremely high rates of click fraud are detected from that ad network. [Learn more](/docs/protect360-for-integrated-partners#impression-capping) |
-| click\_signing | Signature on the click is not validated. [Learn more](/docs/click-signing-for-ad-networks) |
+| click\_capping | Extremely high rates of click fraud are detected from that ad network. [Learn more](/appsflyer-partners/docs/protect360-for-integrated-partners#impression-capping) |
+| click\_signing | Signature on the click is not validated. [Learn more](/appsflyer-partners/docs/click-signing-for-ad-networks) |
 | input\_validation | Invalid media source name |
 
 </Accordion>

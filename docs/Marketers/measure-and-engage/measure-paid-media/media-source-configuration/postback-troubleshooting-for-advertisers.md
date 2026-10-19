@@ -133,7 +133,7 @@ In the following cases, AppsFlyer doesn't send postbacks due to privacy restrict
 
 <Accordion title="The partner doesn't support Advanced Privacy or didn't set it up (iOS)">
 
-For iOS, when [Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework#partner-advanced-privacy-switch) is turned on but the partner didn't configure Advanced Privacy on their side or they don't support Advanced Privacy, they won't receive [Advanced Privacy aggregated postbacks](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks).
+For iOS, when [Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework#partner-advanced-privacy-switch) is turned on but the partner didn't configure Advanced Privacy on their side or they don't support Advanced Privacy, they won't receive [Advanced Privacy aggregated postbacks](/appsflyer-partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks).
 
 ![partner_not_supporting_ap_postbacks.png](https://files.readme.io/1d8784e8994eba5c403ac706673490b91b7b34ed4d5dbea8c3fe58f227d382c5-15140294126353.png)
 
@@ -231,12 +231,12 @@ There are a number of [specific cases for SRNs](/docs/self-reporting-networks-sr
 
 <Accordion title="Advanced Privacy postbacks">
 
-When Advanced Privacy (AP) is turned on, user-level data for non-consenting users running iOS 14.5+ is not available via postbacks. Postbacks are sent according to the [Advanced Privacy template](/docs/advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks).
+When Advanced Privacy (AP) is turned on, user-level data for non-consenting users running iOS 14.5+ is not available via postbacks. Postbacks are sent according to the [Advanced Privacy template](/appsflyer-partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks).
 
 </Accordion>
 
 > 📘 **See also**
 >
-> [Postback troubleshooting for ad networks](/docs/postback-troubleshooting-for-ad-networks)
+> [Postback troubleshooting for ad networks](/appsflyer-partners/docs/postback-troubleshooting-for-ad-networks)
 
 <div data-zendesk-anchors="activation-toggles=check-the-integration-toggles h_01H9FT385FY1QJC6M2YVMZF2NC=check-the-integration-toggles h_01H9FT385FJ0W62NB6FBB6ASKP=the-activate-partner-toggle-was-turned-off h_01H9FT385FKK7VQ293HH9RANBP=the-inapp-event-postbacks-toggle-was-turned-off event-configuration-issues=check-the-event-configuration h_01H9FT385FW71JV2KKZ22TP6TN=check-the-event-configuration h_01H9FT385FHFX4PNRQVRXX8A5X=the-event-wasnt-configured h_01H9FT385FE4GCP9D5XCNZ1FAR=the-event-was-configured-incorrectly h_01H9FT385FTT97PJ9NN09K0X9F=the-event-was-configured-correctly-but-with-a-condition h_01H9FT385FDEC21CAZ7V9BBT7M=the-event-was-configured-to-send-postbacks-only-to-the-attributed-partner h_01H9FT385G8HSVJWWGKSRKT381=the-event-occurred-outside-of-the-configuration-window h_01H9FT385G84E2A1J64VWG8H4Z=privacy-restrictions h_01H9FT385G3ECF0PXCE6S2GD5A=the-partner-didnt-set-up-advanced-privacy h_01H9FT385G9YMX9BAEYY0XQR4C=media-source-restrictions-on-thirdparty-platforms h_01HG0YAHWJ565C7BAXAXT75ACB=the-sdk-was-set-not-to-share-information-with-the-partner h_01H9FT385GSWRPKEHKJ4HXCX01=miscellaneous h_01H9FT385GTSH1K93WNCARY2BA=the-postback-was-sent-but-doesnt-show-on-the-partners-platform h_01H9FT385G5HK6N2JEE8C6S245=the-event-didnt-occur h_01H9FT385GPVT9WAC6ZTPK6D10=differences-in-time-zones h_01H9FT385G8RXJD25KAQJ28TF6=srns-missing-advertising-ids-idfagaid h_01H9FT385GAYCY615W7M88XJT3=media-source-restrictions-on-thirdparty-platforms::40092c14 h_01JK86ZFXJGPVYJCAAVAY6F4YD=advanced-privacy-postbacks h_01HE7R6G699RG30ZSSQF02AK5Y=see-also" />

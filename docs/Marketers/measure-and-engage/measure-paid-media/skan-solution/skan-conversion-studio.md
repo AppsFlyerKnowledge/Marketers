@@ -859,7 +859,7 @@ A: Yes. That is now considered valid behavior under the updated validation logic
 
 | Spec | Remarks |
 | --- | --- |
-| Agencies | Agencies have [limited access to advertisers' SKAN Conversion Studio](/docs/getting-started-agency-onboarding#access-to-skan-conversion-studio). |
+| Agencies | Agencies have [limited access to advertisers' SKAN Conversion Studio](/appsflyer-partners/docs/getting-started-agency-onboarding#access-to-skan-conversion-studio). |
 | Coarse values | <ul><li>Up to 10 measurement components.</li><li>When using more than one measurement, all events must happen for course value to be encoded.</li></ul> |
 | Organic in-app events | In SKAN 4, Custom and Decode modes, organic metrics for in-app events and overall revenue aren't available. |
 | Ambiguous data | After changing the SKAN configuration for the next 48-72 hours, data in the dashboard and raw data reports is ambiguous. Due to iOS timer issues, it is uncertain if the configuration used to decode the postbacks matches the configuration used to encode them before. |

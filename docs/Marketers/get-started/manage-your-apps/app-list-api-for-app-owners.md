@@ -20,7 +20,7 @@ x-zendesk:
 ---
 ![mceclip0.png](https://files.readme.io/34b4b3d56ca5d7419830ba26701483f64ebb0a908e1e8e7ed65779bb89a14c67-24507752775313.png)
 
-If you are an ad network, use the [app list for ad networks](/docs/app-list-api-for-ad-networks) API.
+If you are an ad network, use the [app list for ad networks](/appsflyer-partners/docs/app-list-api-for-ad-networks) API.
 
 **Further reading**: [API list for advertisers](/docs/about-advertiser-apis)
 

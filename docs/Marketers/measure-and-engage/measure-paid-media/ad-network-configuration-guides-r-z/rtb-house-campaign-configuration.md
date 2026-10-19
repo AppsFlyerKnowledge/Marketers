@@ -105,7 +105,7 @@ Create and save attribution links and send them to the partner for attributing s
 
 <Accordion title="Cost tab">
 
-Cost data is supported in the integration with this partner via [InCost API](/docs/incost-api-for-ad-networks).
+Cost data is supported in the integration with this partner via [InCost API](/appsflyer-partners/docs/incost-api-for-ad-networks).
 
 </Accordion>
 

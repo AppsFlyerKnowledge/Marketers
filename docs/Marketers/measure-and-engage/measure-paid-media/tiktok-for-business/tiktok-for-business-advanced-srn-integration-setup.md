@@ -68,7 +68,7 @@ For iOS apps only: Use **Advanced Data Sharing** (ADS) to control how AppsFlyer 
 | Advanced Data Sharing: On | Advanced Data Sharing: Off |
 | --- | --- |
 | AppsFlyer shares all installs and reinstalls with TikTok. | AppsFlyer shares installs and reinstalls only for users who have opted in. |
-| Postbacks are sent according to your configuration:<ul><li>**All media sources, including organic**</li><li>**This partner only**</li></ul> | Postbacks are sent according to the following templates:<ul><li>**Opted-in users:** Postbacks follow the regular template.</li><li>**Opted-out users:** Postbacks follow the [Advanced Privacy template](/docs/advanced-privacy-guide-postback-macros-for-ad-networks).</li></ul> |
+| Postbacks are sent according to your configuration:<ul><li>**All media sources, including organic**</li><li>**This partner only**</li></ul> | Postbacks are sent according to the following templates:<ul><li>**Opted-in users:** Postbacks follow the regular template.</li><li>**Opted-out users:** Postbacks follow the [Advanced Privacy template](/appsflyer-partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks).</li></ul> |
 
 When activating the integration (`tiktokglobal_int`), the **Advanced Data Sharing** toggle is turned off by default.
 

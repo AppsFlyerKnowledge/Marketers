@@ -30,7 +30,7 @@ Cost data is reported to AppsFlyer by:
 
 * Ad networks: each time a user clicks on an ad. Viewing campaign cost in AppsFlyer helps advertisers measure ROI and make appropriate budgetary decisions.
   * Cost is reported on the [attribution link](/docs/about-link-structure-and-parameters) using the cost-per-install (CPI) model.
-  * When sending the attribution link to the ad network, ensure the ad network [adds the cost reporting parameters](/docs/cost-reporting-on-the-attribution-link-for-ad-networks).
+  * When sending the attribution link to the ad network, ensure the ad network [adds the cost reporting parameters](/appsflyer-partners/docs/cost-reporting-on-the-attribution-link-for-ad-networks).
 * [Advanced options for cost aggregation](/docs/roi360-cost-aggregation-overview), including by API and Cost Import (CSV file upload).
 
   * Cost aggregation methods support cost models used by the partner in addition to CPI, including, CPA, CPC, and CPM.

@@ -166,7 +166,7 @@ After enabling permissions for Roku Ads, you can add team members and assign the
 | Configure in-app event postbacks | Allow the partner to set up in-app event postback.<br /><br />**Caution!** Combined with "Configure integration", this grants access to all attribution events, including organic and non-organic traffic from all media sources. |
 | Access retention report | Allow access only to the partner's own retention data. |
 | Access aggregate loyal user data | Allow the partner to access your loyal users metric. |
-| Access aggregate conversion data | Allow access to metrics for installs, re-engagements, re-installs, and re-attributions. An example is [Aggregate campaign performance reports](/docs/aggregated-campaign-performance-report-for-ad-networks). |
+| Access aggregate conversion data | Allow access to metrics for installs, re-engagements, re-installs, and re-attributions. An example is [Aggregate campaign performance reports](/appsflyer-partners/docs/aggregated-campaign-performance-report-for-ad-networks). |
 | Access aggregate in-app events data | Grant the partner access to all in-app events data, including Protect360 data—not just the events configured in the postback mapping.  <br />This also includes access to ad monetization data, which may contain events from other media sources. |
 | View validation rules | Allow the partner to view your validation rule details. |
 | Access aggregate revenue data | Allow access to ad revenue data for UA optimization. |

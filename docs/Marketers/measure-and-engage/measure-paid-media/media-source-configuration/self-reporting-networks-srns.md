@@ -280,7 +280,7 @@ Click is performed in the SRN environment but without an AppsFlyer attribution l
 
 <Accordion title="Can agencies configure SRN campaigns?">
 
-Yes, [see here about SRN configuration by Agencies](/docs/about-agency-accounts#self-reporting-ad-networks).
+Yes, [see here about SRN configuration by Agencies](/appsflyer-partners/docs/about-agency-accounts#self-reporting-ad-networks).
 
 </Accordion>
 

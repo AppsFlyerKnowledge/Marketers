@@ -24,5 +24,5 @@ x-zendesk:
 | --- | --- |
 | **Effective date** | July 31, 2024 |
 | **Where** | <ul><li>**Agency:** Integration page</li><li>**Ad network:** Security center</li></ul> |
-| **What you should know** | <ul><li>**Agency:** Reach out to the partner and make sure your agency ID ([the af\_prt name](/docs/about-agency-accounts#af_prt-parameter)) is added to their list of authorized agencies.</li><li>**Partner:** Make sure to add all agency IDs (af\_prt) in the [new authorized agencies section](/docs/set-up-your-list-of-authorized-agencies).</li></ul> |
+| **What you should know** | <ul><li>**Agency:** Reach out to the partner and make sure your agency ID ([the af\_prt name](/appsflyer-partners/docs/about-agency-accounts#af_prt-parameter)) is added to their list of authorized agencies.</li><li>**Partner:** Make sure to add all agency IDs (af\_prt) in the [new authorized agencies section](/appsflyer-partners/docs/set-up-your-list-of-authorized-agencies).</li></ul> |
 | **Implications** | Starting from the specified date, agencies not on the ad network's approved list won't have their traffic recorded and measured, nor will they be able to access the integration page for all apps running campaigns on the ad network. |
