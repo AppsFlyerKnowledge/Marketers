@@ -1,6 +1,7 @@
 ---
 title: Collaboration measurement
 excerpt: Number of articles
+table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
@@ -20,3 +21,4 @@ x-zendesk:
 - [Data collaboration platform (DCP) - Run and manage measurement](/docs/data-collaboration-platform-dcp-run-and-manage-measurement)
 - [Data Collaboration Platform (DCP) - View measurement dashboard](/docs/data-collaboration-platform-dcp-view-measurement-dashboard)
 - [Data Collaboration Platform (DCP) - View measurement reports](/docs/data-collaboration-platform-dcp-view-measurement-reports)
+- [Data Collaboration Platform (DCP) - Run a dynamic query in DCP](/docs/data-collaboration-platform-dcp-run-a-dynamic-query-in-dcp)

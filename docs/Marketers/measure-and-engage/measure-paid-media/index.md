@@ -1,6 +1,7 @@
 ---
 title: Measure paid media
 excerpt: Set up paid media sources and SKAdNetwork for attribution measurement
+table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985

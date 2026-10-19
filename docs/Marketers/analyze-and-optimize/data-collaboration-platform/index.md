@@ -3,6 +3,7 @@ title: Data Collaboration Platform
 excerpt: >-
   Leverage your first-party data in a secure environment to build targeted
   audiences and activate them within media networks
+table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985

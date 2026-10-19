@@ -25,6 +25,8 @@ Log in instructions for first-time and existing users. This includes a new accou
 
 <div id="logging-in-for-the-first-time"></div>
 
+<div id="logging-in-for-the-first-time" />
+
 <Accordion title="Logging in for the first time">
   Whether you just signed up or have just been invited to AppsFlyer, you will receive an email with an activation link.
 
@@ -42,6 +44,8 @@ Log in instructions for first-time and existing users. This includes a new accou
 
 <div id="existing-users"></div>
 
+<div id="existing-users" />
+
 <Accordion title="Existing users">
   Existing users can log into AppsFlyer through the [main login page](https://hq1.appsflyer.com/auth/login).
 
@@ -56,6 +60,8 @@ Log in instructions for first-time and existing users. This includes a new accou
 
 <div id="twofactor-authentication-2fa"></div>
 
+<div id="twofactor-authentication-2fa" />
+
 <Accordion title="Two-factor authentication (2FA)">
   If 2FA is enabled in the Security Management settings, it will be activated after your initial login.
 
@@ -67,6 +73,8 @@ Log in instructions for first-time and existing users. This includes a new accou
 Password reset for existing users and users who did not complete the initial registration or invitation process.
 
 <div id="existing-users-and-invited-users-who-have-not-activated-yet"></div>
+
+<div id="existing-users-and-invited-users-who-have-not-activated-yet" />
 
 <Accordion title="Existing users and invited users who have not activated yet">
   To reset your password:
@@ -81,6 +89,8 @@ Password reset for existing users and users who did not complete the initial reg
 
 <div id="users-who-have-not-completed-the-initial-registration"></div>
 
+<div id="users-who-have-not-completed-the-initial-registration" />
+
 <Accordion title="Users who have not completed the initial registration">
   When signing up to AppsFlyer, an email invitation was sent to your email. The activation link in the email is valid for 7 days. To complete sign up, do the following:
 
@@ -92,6 +102,8 @@ Password reset for existing users and users who did not complete the initial reg
 
 <div id="resetting-twofactor-authentication-2fa"></div>
 
+<div id="resetting-twofactor-authentication-2fa" />
+
 <Accordion title="Reset a user's two-factor authentication (2FA)">
   If your account uses 2FA, there may be occasions on which you need to reset a user’s 2FA settings. Do so as follows:
 
@@ -102,3 +114,5 @@ Password reset for existing users and users who did not complete the initial reg
 </Accordion>
 
 <div data-zendesk-anchors="h_01JNDM4M03F0T16ZHY2V1BSRQH=log-in-instructions h_01JNDJFMRHCS20TABKNSHQ2MMW=logging-in-for-the-first-time h_01JNDM9HN8K396432TQ5MEVYCZ=existing-users h_01JNDS7ZT2TMX5315587CHBDY5=twofactor-authentication-2fa h_01JNDSMFB1YAWA340BAEYFXRES=password-login-or-2fa-reset h_01JNDSJPQ4GNV0PD16GE7G9FY6=existing-users-and-invited-users-who-have-not-activated-yet h_01JNDTHN2B6VCH38ER68D3RNFS=users-who-have-not-completed-the-initial-registration h_01H9Q9007R72FAH89XW58MWCXT=resetting-twofactor-authentication-2fa"></div>
+
+<div data-zendesk-anchors="h_01JNDM4M03F0T16ZHY2V1BSRQH=log-in-instructions h_01JNDJFMRHCS20TABKNSHQ2MMW=logging-in-for-the-first-time h_01JNDM9HN8K396432TQ5MEVYCZ=existing-users h_01JNDS7ZT2TMX5315587CHBDY5=twofactor-authentication-2fa h_01JNDSMFB1YAWA340BAEYFXRES=password-login-or-2fa-reset h_01JNDSJPQ4GNV0PD16GE7G9FY6=existing-users-and-invited-users-who-have-not-activated-yet h_01JNDTHN2B6VCH38ER68D3RNFS=users-who-have-not-completed-the-initial-registration h_01H9Q9007R72FAH89XW58MWCXT=resetting-twofactor-authentication-2fa" />

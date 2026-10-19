@@ -1,6 +1,7 @@
 ---
 title: Integrate 3rd-party platforms
 excerpt: Integrate 3rd-party platforms with AppsFlyer
+table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985

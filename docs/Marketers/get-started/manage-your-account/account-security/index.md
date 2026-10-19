@@ -1,6 +1,7 @@
 ---
 title: Account security
 excerpt: Securely connect your account users and BI systems with AppsFlyer services
+table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985

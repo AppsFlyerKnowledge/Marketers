@@ -1,6 +1,7 @@
 ---
 title: Ad network configuration guides (A-F)
 excerpt: Set up selected ad networks for AppsFlyer attribution
+table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985

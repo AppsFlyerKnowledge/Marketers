@@ -16,7 +16,7 @@ x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2025-11-16T10:18:23Z'
-  edited_at: '2026-10-05T08:00:46Z'
+  edited_at: '2026-10-18T11:15:00Z'
   id: 40967933109649
   locale: en-us
   section: AI
@@ -357,49 +357,27 @@ Ready-to-use agents are ready to deploy as they are: pick one, configure it, and
 
 <Accordion title="Spot Creative Opportunities">
 
-**Job:** Finds the creatives that are performing best for you and tells you where they aren't running yet. The agent evaluates creative performance across all your partners over the past 30 days, ranks the winners, and then checks each partner to see which of those winners are missing. You get a list of concrete placements to add, with the numbers behind each.
+**Job.** Finds the creatives that are performing best for you and tells you where they aren't running yet. The agent evaluates creative performance across all your partners over the past 30 days, ranks the winners, and then checks each partner to see which of those winners are missing. You get a list of concrete placements to add, with the numbers behind each.
 
-**What it works on:** Creative-level spend and ROAS across partners, over the past 30 days. Requires Creative optimization.
+**What it works on.** Creative-level spend and ROAS across partners, over the past 30 days. Requires Creative optimization.
 
-**What a run delivers:** Top-performing creatives with their spend and ROAS, plus, for each partner, which of these creatives aren't currently running and the case for adding them. Delivered to Slack or email.
+**What a run delivers.** Top-performing creatives with their spend and ROAS, plus, for each partner, which of these creatives aren't currently running and the case for adding them. Delivered to Slack or email.
 
-**Cadence:** Configurable via the standard schedule options or on demand.
+**Cadence.** Configurable via the standard schedule options or on demand.
 
 </Accordion>
 
 <div id="h_01M3PDTFQE2WB2SNWBCS81C2DE" />
 
-<Accordion title="Build Performance Snapshots">
+<Accordion title="Custom Executive Summaries">
 
-**Job:** Write the performance update you'd
-otherwise assemble by hand for managers and stakeholders. The agent reads
-your aggregated analytics with
-your chosen KPIs, identifies the trends, top performers, and changes
-that matter for the period, and turns
-them into a summary with recommendations, ready to forward.
+**Job.** Writes the performance update you'd otherwise assemble by hand for managers and stakeholders. The agent reads your aggregated analytics, identifies the trends, top performers, and changes that matter for the period, and turns them into a summary with recommendations, ready to forward.
 
-**What it works on:** Aggregated analytics
-data across your apps, geos, media sources, and more. No premium subscription
-required.
+**What it works on.** Aggregated analytics data across your apps and media sources. No premium subscription required.
 
-**What a run delivers:**
+**What a run delivers.** A written summary: headline trends, top and bottom performers, notable shifts, and recommended next steps. Delivered to Slack or email.
 
-* A written summary: headline highlights, needs attention, notable
-  shifts, and recommended next steps.
-* A My Dashboards view, built by the agent around the KPIs you selected,
-  so you can dig into the numbers behind the summary.
-
-Both delivered to Slack or email.
-
-**Cadence:** Configurable. Weekly is the common choice.
-
-**Set up:** Choose the app(s), the KPIs to cover, the grouping
-level, and any additional filters — media source, geo, agency.
-
-**Good to know:** The paired My Dashboards view is a temporary
-AI-generated view, found under **My Dashboards** >
-**AI generated**. It's overwritten with fresh data on each
-run, and is deleted after 30 days unless you save it.
+**Cadence.** Configurable via the standard schedule options or on demand.
 
 </Accordion>
 
@@ -407,26 +385,13 @@ run, and is deleted after 30 days unless you save it.
 
 <Accordion title="Deep Research Analysis">
 
-**Job:** Runs a weekly investigation into
-what changed and why. Every Monday, the agent compares
-the two most recent complete weeks (Monday to Sunday)
-and digs through raw event-level data, across partners,
-geos, OS versions, and SDK versions, to find shifts that
-aggregated dashboards can't show, including setup problems
-that look like performance changes.
+**Job.** Runs a weekly investigation into what changed and why. Every Monday, the agent compares the two most recent complete weeks (Monday to Sunday) and digs through raw event-level data, across partners, geos, OS versions, and SDK versions, to find shifts that aggregated dashboards can't show, including setup problems that look like performance changes.
 
-**What it works on:** Raw, mature event-level
-data. The agent deliberately excludes the current week
-to avoid partial or immature data. For example, on Monday,
-January 26, it compares January 12–18 against January
-5–11. No premium subscription required.
+**What it works on.** Raw, mature event-level data. The agent deliberately excludes the current week to avoid partial or immature data. For example, on Monday, January 26, it compares January 12–18 against January 5–11. No premium subscription required.
 
-**What a run delivers:** A written report
-of meaningful week-over-week shifts, what's driving them,
-and setup issues uncovered along the way. Delivered to
-Slack or email.
+**What a run delivers.** A written report of meaningful week-over-week shifts, what's driving them, and setup issues uncovered along the way. Delivered to Slack or email.
 
-**Cadence:** Weekly, on Mondays or on demand.
+**Cadence.** Weekly, on Mondays or on demand.
 
 </Accordion>
 
@@ -434,24 +399,13 @@ Slack or email.
 
 <Accordion title="Detect Performance Anomalies">
 
-**Job:** Watches your key KPIs every day
-and tells you when something moves that shouldn't have.
-The agent compares each metric to its expected range,
-flags significant positive or negative anomalies, and
-explains what changed and where: a CPI spike on one partner,
-an IPM drop in a geo, or a campaign that fell off a cliff.
+**Job.** Watches your key KPIs every day and tells you when something moves that shouldn't have. The agent compares each metric to its expected range, flags significant positive or negative anomalies, and explains what changed and where: a CPI spike on one partner, an IPM drop in a geo, or a campaign that fell off a cliff.
 
-**What it works on:** Daily KPI data across
-partners, campaigns, and geos. No premium subscription
-required.
+**What it works on.** Daily KPI data across partners, campaigns, and geos. No premium subscription required.
 
-**What a run delivers:** Story-style alerts:
-which metric moved, by how much, on which partner, campaign,
-or geo, and the likely reason. Delivered to Slack or
-email. No alert on quiet days. [CONFIRM]
+**What a run delivers.** Story-style alerts: which metric moved, by how much, on which partner, campaign, or geo, and the likely reason. Delivered to Slack or email. No alert on quiet days. [CONFIRM]
 
-**Cadence:** Configurable via the standard
-schedule options or on demand.
+**Cadence.** Configurable via the standard schedule options or on demand.
 
 </Accordion>
 
@@ -459,23 +413,13 @@ schedule options or on demand.
 
 <Accordion title="Detect Configuration Issues">
 
-**Job:** Audits your measurement setup and
-alerts you to gaps that quietly degrade data quality.
-The agent checks for inactive integrations in SKAdNetwork
-and Cost, disabled view-through attribution via probabilistic
-modeling, and other configuration problems, so you catch
-them before they distort a campaign read.
+**Job.** Audits your measurement setup and alerts you to gaps that quietly degrade data quality. The agent checks for inactive integrations in SKAdNetwork and Cost, disabled view-through attribution via probabilistic modeling, and other configuration problems, so you catch them before they distort a campaign read.
 
-**What it works on:** Integration and configuration
-status across your apps and partners. No premium subscription
-required.
+**What it works on.** Integration and configuration status across your apps and partners. No premium subscription required.
 
-**What a run delivers:** Alerts listing
-each issue found, where it is, and how to remediate it.
-Delivered to Slack or email.
+**What a run delivers.** Alerts listing each issue found, where it is, and how to remediate it. Delivered to Slack or email.
 
-**Cadence:** Configurable via the standard
-schedule options or on demand.
+**Cadence.** Configurable via the standard schedule options or on demand.
 
 </Accordion>
 
@@ -483,25 +427,13 @@ schedule options or on demand.
 
 <Accordion title="Monitor App Releases">
 
-**Job:** Keeps you informed about your own
-app's releases without waiting on the dev team. The agent
-watches iOS and Android app store releases, alerts you
-when a version goes live, tracks rollout progress, and
-calls out the marketing-relevant changes: new features,
-changed in-app behavior, and events added or removed.
-That lets you align UA campaigns with what's actually
-in the app.
+**Job.** Keeps you informed about your own app's releases without waiting on the dev team. The agent watches iOS and Android app store releases, alerts you when a version goes live, tracks rollout progress, and calls out the marketing-relevant changes: new features, changed in-app behavior, and events added or removed. That lets you align UA campaigns with what's actually in the app.
 
-**What it works on:** App store release
-data and in-app event definitions for your apps. No premium
-subscription required.
+**What it works on.** App store release data and in-app event definitions for your apps. No premium subscription required.
 
-**What a run delivers:** Release alerts
-with version, rollout status, and a summary of marketing-relevant
-changes. Delivered to Slack or email.
+**What a run delivers.** Release alerts with version, rollout status, and a summary of marketing-relevant changes. Delivered to Slack or email.
 
-**Cadence:** Configurable via the standard
-schedule options or on demand.
+**Cadence.** Configurable via the standard schedule options or on demand.
 
 </Accordion>
 
@@ -509,19 +441,31 @@ schedule options or on demand.
 
 <Accordion title="Optimize Anti-Fraud Strategy (Protect360)">
 
-**Job:** Looks for early signs of fraud
-in your traffic and tells you what to do about it. The
-agent scans your Protect360 data for emerging patterns,
-reports key findings, and recommends actions that cut
-fraud exposure without sacrificing performance.
+**Job.** Looks for early signs of fraud in your traffic and tells you what to do about it. The agent scans your Protect360 data for emerging patterns, reports key findings, and recommends actions that cut fraud exposure without sacrificing performance.
 
-**What it works on:** Protect360 data. Requires
-Protect360 and Protect360 closed beta features.
+**What it works on.** Protect360 data. Requires Protect360 and Protect360 closed beta features.
 
-**What a run delivers:** Findings and recommendations
-inside the Protect360 dashboard.
+**What a run delivers.** Findings and recommendations inside the Protect360 dashboard.
 
-**Cadence:** Weekly, on Mondays, or on demand.
+**Cadence.** Weekly, on Mondays, or on demand.
+
+</Accordion>
+
+<div id="h_01M57AQ8G83P5H1JDJ4FM9ETCV" />
+
+<Accordion title="Incrementality for UA strategist">
+
+**Job.** The Incrementality for UA agent guides you through the full incrementality-testing lifecycle so you don't have to be an expert to run it. It defines what to test, explains what your experiment results mean, and recommends concrete marketing actions — turning a steep, specialist learning curve into a guided workflow aimed to measure the causal impact of your paid UA spend: which installs or events happened because of your ads, versus growth you'd have captured anyway.
+
+**What it works on.** Installs, in-app events, revenue and cost data from the last 90 days; All Incrementality for UA experiment data.
+
+**What a run delivers.** A structured report in three parts: (1) your current UA state and analysis of any active or completed experiments, (2) a sequenced testing plan that defines what to test next and why it matters for your budget, and (3) recommended marketing actions — grow, hold, cut, or re-test.
+
+**Cadence.** Runs on a schedule, weekly by default. You can increase it to as often as daily, or trigger it ad-hoc for a fresh read whenever you need one.
+
+**Set up.** Requires an Incrementality for UA premium product subscription. Launch the agent from the Agent Hub and select an app, country, and success metric, then set your cadence (or run it ad-hoc); The agent inherits any existing Incrementality for UA geo design policy.
+
+**Good to know.** The agent recommends — it never moves budget or launches an experiment on its own, you approve and act. Agents are app, country and event specific. For example, your Android and iOS apps would require two separate agents. As with any AI output, always validate before acting.
 
 </Accordion>
 
@@ -529,36 +473,21 @@ inside the Protect360 dashboard.
 
 <Accordion title="Web health check">
 
-**Job:** Audits how your web app collects
-events and attributes conversions to marketing sources.
-The report shows what's working, flags issues that could
-make attribution inaccurate, and recommends improvements
-to your implementation.
+**Job.** Audits how your web app collects events and attributes conversions to marketing sources. The report shows what's working, flags issues that could make attribution inaccurate, and recommends improvements to your implementation.
 
-**What it works on:** Your selected web
-app's attribution settings and recent SDK or server-to-server
-data. Checks cover data collection, events and revenue,
-campaign links, referrers, identity, and cross-platform
-setup. The default analysis window is seven days.
+**What it works on.** Your selected web app's attribution settings and recent SDK or server-to-server data. Checks cover data collection, events and revenue, campaign links, referrers, identity, and cross-platform setup. The default analysis window is seven days.
 
-**What a run delivers:** One report with
-two sections: what was checked and looks good, and recommended
-improvements. Findings include supporting numbers, a
-recommended fix, and a green, yellow, or red status based
-on impact.
+**What a run delivers.** One report with two sections: what was checked and looks good, and recommended improvements. Findings include supporting numbers, a recommended fix, and a green, yellow, or red status based on impact.
 
-**Cadence:** Configurable via the standard
-schedule options or on demand.
+**Cadence.** Configurable via the standard schedule options or on demand.
 
 </Accordion>
 
 </Accordion>
-
-## FAQ
 
 <Accordion title="Can I create my own agents?">
 
-Yes. Custom Agent lets you define the job you want done. See [**Custom Agent**](#h_01M3PDTFQDFQNMHTWKP23JV1A8) above.
+Yes. Custom Agent lets you define the job you want done. See **Custom Agent** above.
 
 </Accordion>
 
@@ -610,4 +539,4 @@ No. AppsFlyer doesn't use your data to train any AI models. AI can produce inacc
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01KA62R2NX6YEFMVG0SN0Y7NQ9=about-agent-hub h_01KQF6P3ED1KB47THJP8J3KAE5=agent-hub-page h_01KQF8YAEDQW52YMK3W4FE2KE1=prerequisites-and-permissions h_01KQF8H9A6FPB3VVBWAAXM257W=slack-optional h_01KQF8HEEMRBFK1K54VH2YDPSC=email-optional h_01KQF8T91KTZ01YKJD8JT6G0ZJ=set-up-an-agent h_01KQF6P3EJMJDMF0BWWXQA091K=view-activity-output h_01KQF6P3EMCX0HQKPVQ89S9VGF=analyze-activity-with-ai-assistant h_01KQF6P3EPWHV7J742F3S4Q0GY=supported-and-unsupported-questions h_01KQF7NTQYDGA17KCCMTNYY72H=notes h_01M3PDTFQDAEVRHJYK4ZJXQ3DH=agent-types h_01M3PDTFQEJA8GAE579P1AZG0E=create-a-custom-agent h_01M3PDTFQECPBKDEXMQMPZJTCS=step-1-define-the-agent h_01M3PDTFQEF9QCN15FKMRST3GW=step-2-review-the-agent-plan h_01M3PDTFQE7FN9GPTJ5GEKSNVG=step-3-configure-and-deploy h_01M3PDTFQEZJGPZ0AY4ZWRDR8D=note h_01M3PDTFQENS64JZYT2Y56QMXQ=note-1 h_01M3VQQHDMVHDFDQYJEP24MW0C=faq" />
+<div data-zendesk-anchors="h_01KA62R2NX6YEFMVG0SN0Y7NQ9=about-agent-hub h_01KQF6P3ED1KB47THJP8J3KAE5=agent-hub-page h_01KQF8YAEDQW52YMK3W4FE2KE1=prerequisites-and-permissions h_01KQF8H9A6FPB3VVBWAAXM257W=slack-optional h_01KQF8HEEMRBFK1K54VH2YDPSC=email-optional h_01KQF8T91KTZ01YKJD8JT6G0ZJ=set-up-an-agent h_01KQF6P3EJMJDMF0BWWXQA091K=view-activity-output h_01KQF6P3EMCX0HQKPVQ89S9VGF=analyze-activity-with-ai-assistant h_01KQF6P3EPWHV7J742F3S4Q0GY=supported-and-unsupported-questions h_01KQF7NTQYDGA17KCCMTNYY72H=notes h_01M3PDTFQDAEVRHJYK4ZJXQ3DH=agent-types h_01M3PDTFQEJA8GAE579P1AZG0E=create-a-custom-agent h_01M3PDTFQECPBKDEXMQMPZJTCS=step-1-define-the-agent h_01M3PDTFQEF9QCN15FKMRST3GW=step-2-review-the-agent-plan h_01M3PDTFQE7FN9GPTJ5GEKSNVG=step-3-configure-and-deploy h_01M3PDTFQEZJGPZ0AY4ZWRDR8D=note h_01M3PDTFQENS64JZYT2Y56QMXQ=note-1" />

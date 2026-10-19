@@ -15,7 +15,7 @@ x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2016-03-10T14:37:44Z'
-  edited_at: '2026-10-14T11:49:09Z'
+  edited_at: '2026-10-18T07:44:51Z'
   id: 208387843
   locale: en-us
   section: Raw data reporting/APIs
@@ -89,7 +89,7 @@ The following table lists every available raw data field, including its field gr
 | <span id="skan::5125d426"></span>SKAN | ad\_network\_creative | Creative | Ad network | <ul><li>Value is based on data enrichment received from the ad network.</li><li>For SKAN 3 the value is null.</li></ul> | String |
 | <span id="skan::5a2fa279"></span>SKAN | ad\_network\_name | Ad network name | Ad network | Ad network name reported by the ad network to AppsFlyer.<ul><li>If this field is blank, the ad network didn't (couldn't) populate it.</li><li>You can resolve the ad network name using [skad\_ad\_network\_id](#skan::70c7a914). Use [this table](/docs/skan-integrated-partners-list#zd-apple-skadnetwork-ids-of-ad-networks) to do so.</li></ul> | String |
 | <span id="skan::39724216"></span>SKAN | ad\_network\_source\_app\_id | Ad network source app ID | Ad network | Publisher app ID reported by the ad network. Use to help reconcile cost; reported by the ad network. The publisher app gives the basis for this data. | String |
-| <span id="skan::11414be7"></span>SKAN | ad\_network\_timestamp | Ad network timestamp | Ad network | <ul><li>Time the postback was received by the ad network.</li><li>In the case of Google Ads, this field isn't populated.</li></ul> | Timestamp |
+| <span id="skan::11414be7"></span>SKAN | ad\_network\_timestamp | Ad network timestamp | Ad network | Time the postback was received by the ad network. For Google Ads, this field is populated, but the value is an estimated install time, not the actual postback receipt time. See [Get SKAN postback data from Google Ads](/docs/get-skan-postback-data-from-google-ads) for more detail. | Timestamp |
 | <span id="device-info::e7dfb109"></span>Device info | ad\_personalization\_enabled | Ad personalization enabled | SDK | Indicates whether the user has consented to allow Google to use their user-level data for personal ads (true), or not (false) | Boolean |
 | <span id="attribution::7ea87d9e"></span>Attribution | ad\_placement | Ad placement | Link | Populated to CTV ad placement | String |
 | <span id="ad-revenue::a77b252f"></span>Ad revenue | ad\_revenue\_ad\_type | Ad revenue ad type | Ad revenue SDK | The type of the ad that was displayed | String |
@@ -366,7 +366,7 @@ The following table lists every available raw data field, including its field gr
 | <span id="protect360::3b89b7c1"></span>Protect360 | tagged\_additional\_data |  | AF | A dynamic field which is being filled with relevant data per the tagged type. For example: if the tagged reason is “new release” - we will reflect the package number of the relevant release package | String |
 | <span id="protect360::d46f7957"></span>Protect360 | tagged\_type |  | AF | Represents the type of tagging which flagged the detection. Tagging type examples are: New release, App evaluation, and more. | String |
 | <span id="protect360::c64c1afb"></span>Protect360 | tagged\_validation\_reason\_value |  | AF | States the rightful contributor to receive the attribution in case the detection was in implemented mode and in real time. | String |
-| <span id="skan::c7910cfb"></span>SKAN | timestamp | Timestamp | Ad network | Time the postback was received by AppsFlyer  <br />For Google Ads and Meta ads, this is the time AppsFlyer gets the data from the Google and Meta ads API, respectively. | Timestamp |
+| <span id="skan::c7910cfb"></span>SKAN | timestamp | Timestamp | Ad network | Time the postback was received by the ad network. For Google Ads and Meta ads API, this field is populated, but the value is an estimated install time, not the actual postback receipt time. See [Get SKAN postback data from Google Ads](/docs/get-skan-postback-data-from-google-ads) and [SKAdNetwork (SKAN) interoperation with Meta ads](/docs/skadnetwork-skan-interoperation-with-meta-ads) for more detail. | Timestamp |
 | <span id="time::tzc00001"></span>Time | timezone\_customer | Timezone (Customer) | AF | The timezone preferred by the App Owner, in IANA format (e.g., Europe/Paris, America/Sao\_Paulo).<ul><li>Only available in [advanced reports](/docs/about-data-locker-advanced-reports).</li></ul> | String |
 | <span id="time::tzcc0001"></span>Time | timezone\_customer\_\_conversion | Timezone (Customer) at Conversion | AF | The timezone preferred by the App Owner, in IANA format (e.g., Europe/Paris, America/Sao\_Paulo), at the time of conversion.<ul><li>Only available in [advanced reports](/docs/about-data-locker-advanced-reports).</li></ul> | String |
 | <span id="attribution::a543f19e"></span>Attribution | total\_candidates | Total Candidates | AF | Represents the total number of engagements (clicks, impressions, and other engagement types) evaluated for a given device at the time of conversion. | String |

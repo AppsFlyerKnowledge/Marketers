@@ -2,8 +2,8 @@
 title: Meta Ads—Create web campaigns for website apps
 excerpt: >-
   Set up a Meta Ads integration for your website app to send web conversion
-  signals to Meta via the Conversions API (CAPI), so Meta can optimize ad
-  targeting and measure campaign performance.
+  signals to Meta via the Conversions API (CAPI). Meta uses these signals to
+  optimize ad targeting and measure campaign performance.
 metadata:
   keywords:
     - Web Attribution
@@ -14,7 +14,7 @@ x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2026-04-28T14:18:14Z'
-  edited_at: '2026-08-30T15:18:44Z'
+  edited_at: '2026-10-16T09:33:29Z'
   id: 46172666260241
   locale: en-us
   section: Meta ads
@@ -26,11 +26,7 @@ x-zendesk:
 
 AppsFlyer supports integration with Meta Ads (`metaweb_int`) for website app campaigns. The integration lets you report attribution and conversion data directly through Meta's Conversions API (CAPI), which Meta then uses to optimize ad targeting, measure performance, and build custom audiences.
 
-Here's how it works: when a user clicks a Meta ad and lands on your website, AppsFlyer captures any conversion events the user completes, such as a purchase or sign-up, and sends that signal to Meta via CAPI. Meta uses this data to refine targeting and evaluate campaign results.
-
-> 📘 **See also**
->
-> * [Web Performance Measurement - Overview](/docs/web-performance-measurement-overview)
+Here's how it works: a user clicks a Meta ad and lands on your website. AppsFlyer captures any conversion events the user completes, such as a purchase or sign-up, and sends that signal to Meta via CAPI. Meta uses this data to refine targeting and evaluate campaign results.
 
 > 📘 **Note**
 >
@@ -49,7 +45,7 @@ Before activating the Meta Ads integration, make sure you have:
 
 The setup involves defining the integration between Meta Ads and AppsFlyer and configuring the campaign in both platforms. Complete both parts in order.
 
-* [Part 1: Set up Meta Ads integration in AppsFlyer](#set-up-meta-ads-integration-in-appsflyer) (required)
+* [Part 1: Set up Meta Ads integration in AppsFlyer](#part-1-set-up-meta-ads-integration-in-appsflyer) (required)
 * [Part 2: Set up AppsFlyer integration in Meta Ads](#part-2-set-up-appsflyer-integration-in-meta-ads) (required)
 
 ## Part 1: Set up Meta Ads integration in AppsFlyer
@@ -76,7 +72,7 @@ To activate the Meta Ads integration:
 
       > 📘 **Note**
       >
-      > Make sure you have the correct business selected from the drop-down in the top right.
+      > Make sure you have the correct business selected from the dropdown in the top right.
 
    2. From the **Events Manager** side menu, select **Data sources**. You'll see a list of your pixels. If you don't have a pixel for the selected business, you can create one from the same view.
    3. Copy the pixel ID shown under the pixel name and paste it into the **Pixel ID** field in AppsFlyer.
@@ -99,23 +95,29 @@ You can define which web conversion events AppsFlyer sends to Meta Ads by mappin
 To set in-app event postbacks:
 
 1. Turn on **In-app event postbacks**.
-2. If required, set the in-app event postback window. For more information,
+2. If required, set the in-app event postback window. For more
+   information,
    see
    [In-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window).
 3. Click **Add event** to add an event to the list.
-4. In the **AppsFlyer event** column, select the event
-   name from the drop-down list. AppsFlyer receives the event name
+4. In the **AppsFlyer event** column, select the
+   event
+   name from the dropdown list. AppsFlyer receives the event
+   name
    from the Web SDK integrated on your website, or from server-to-server
    (S2S) events you send to AppsFlyer.
 5. In the **Mapped to partner event** column, select
-   the most suitable pre-defined partner event from the drop-down
+   the most suitable predefined partner event from the dropdown
    list, or select **CUSTOM**.
-6. In the **For users from** column, select the sending
+6. In the **For users from** column, select the
+   sending
    option for the event:
-   * **This partner only**: Send postbacks only
+   * **This partner only**: Send postbacks
+     only
      when this event is attributed to Meta Ads.
    * **All media sources, including organic**:
-     Send postbacks for events attributed to any partner and
+     Send postbacks for events attributed to any partner
+     and
      organic events.
 7. In the **Including** column, select whether
    events are sent with their revenue values. See
@@ -125,24 +127,42 @@ To set in-app event postbacks:
    >
    > If you are setting a purchase event, set the
    > **Including** column to
-   > **Values and revenue**. Selecting any other
+   > **Values and revenue**. Selecting any
+   > other
    > option causes the postback to fail.
 
-8. [Optional] Click the **Add condition** icon to
+8. [Optional] Click the **Add condition** icon
+   to
    [set conditions](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks)
    for an event.
 9. Click **Save integration**.
 
-If you also run the Meta Pixel on your website, send the same event ID to both AppsFlyer and Meta so AppsFlyer can deduplicate the events:
+If you also run the Meta Pixel on your website, send
+the same event ID to both AppsFlyer and Meta so AppsFlyer
+can deduplicate the events:
 
-* Include `af_customer_event_id` in the event payload you send to AppsFlyer, inside `eventValue` for the Web SDK or `event_value` for the S2S (server-to-server) API.
+* Include `af_customer_event_id` in the
+  event payload you send to AppsFlyer. For the Web SDK,
+  send it inside `eventValue`. For the S2S
+  (server-to-server) API, send it either as a top-level
+  field or inside `event_value`.
 * Send the same value in the corresponding Pixel event.
 
-AppsFlyer forwards this value to Meta as the event ID. Meta then uses it to deduplicate the server-side event it receives from AppsFlyer against the Pixel event, so AppsFlyer counts the conversion once.
+AppsFlyer forwards this value to Meta as the event ID.
+Meta then uses it to deduplicate the server-side event
+it receives from AppsFlyer against the Pixel event, so
+AppsFlyer counts the conversion once.
 
-If you don't send `af_customer_event_id`, AppsFlyer generates an event ID automatically. This ID won't match your Pixel events.
+If you don't send `af_customer_event_id`,
+AppsFlyer generates an event ID automatically. This ID
+won't match your Pixel events.
 
-For more information, see [[Beta] Integrate AppsFlyer Web SDK](/docs/integrate-appsflyer-web-sdk).
+For more information, see
+[[Beta] Integrate AppsFlyer Web SDK](/docs/integrate-appsflyer-web-sdk).
+
+> 📘 **Note**
+>
+> If you send S2S events and want AppsFlyer to send postbacks for them to Meta Ads, make sure each event includes at least one of `ip`, `user_agent`, or `customer_user_id`. If all three are missing, AppsFlyer doesn't send the postback. For all supported event fields, see [Server-to-Server (S2S) API for Web Performance Measurement](/docs/server-to-server-s2s-api-for-web-performance-measurement#measure-an-event).
 
 </Accordion>
 
@@ -156,12 +176,12 @@ Complete the following steps in Meta Ads Manager.
 
 1. Log in to Meta Ads and create a campaign.
 2. In **Campaign objective**, select one of the following:
-   * **Sales**: Lets Meta optimize towards a specific event (your main KPI).
-   * **Traffic**: Lets Meta optimize towards ad clicks. Use this option only if you don't have other KPIs or if the volume of other KPI events is too low.
+   * **Sales**: Lets Meta optimize toward a specific event (your main KPI).
+   * **Traffic**: Lets Meta optimize toward ad clicks. Use this option only if you don't have other KPIs or if the volume of other KPI events is too low.
 3. [Optional] To add a custom objective, do the following:
 
    1. In Meta Ads, select the custom event you want to set as a campaign objective and mark it as a conversion action.
-   2. In AppsFlyer, on the **Meta Web integration** page, under **In-app event postbacks**, map an AppsFlyer event to a custom partner event in the **Mapped to partner event** column, and give it the same name as the conversion action in Meta Ads.
+   2. In AppsFlyer, on the **Meta Web integration** page, under **In-app event postbacks**, map an AppsFlyer event to a custom partner event in the **Mapped to partner event** column. Give it the same name as the conversion action in Meta Ads.
 
       <br /><br />**Note**<br />
 
@@ -191,7 +211,7 @@ Complete the following steps in Meta Ads Manager.
 
    #### Important!
 
-   In some cases, using AF attribution links may cause errors. If this occurs, ask your Meta representative for a solution, or use your website URL as the destination URL instead.
+   In some cases, using AF attribution links might cause errors. If this occurs, ask your Meta representative for a solution, or use your website URL as the destination URL instead.
 
 
 2. Click **Build a URL parameter** to add URL parameters to the destination URL.
@@ -245,16 +265,12 @@ Use the **Tracking** section to select the conversion events promoted by your ad
 
 Here's what to expect when you review your attribution data after setup:
 
+* **Dashboard:** In [the cross-platform dashboard](/docs/my-dashboards#crossplatform-dashboard), web and app data are displayed side by side, giving you a unified view of campaign performance across platforms.
 * **Raw data exports and API responses** include Meta Web in the `media_source` field for Meta web activity.
-* To verify web campaign setup details, check the `original_url` field that shows `facebook_int` as the PID used during web campaign creation.
-
-> 📘 **Note**
->
-> Dashboard reporting for website app campaigns is not yet available. A unified reporting view that lets you analyze web campaign performance alongside other channels is planned for a future release.
 
 ## Measure web attribution data with web cost
 
-To get a complete performance view of web attribution data and web cost data from Meta Ads, in the dashboard and in [Cost ETL reports](/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl), make sure you have [the ROI360 package](/docs/roi360-onboarding-guide#about-roi360), and you complete the following setup:
+You can get a complete performance view of web attribution data and web cost data from Meta Ads in the dashboard and in [Cost ETL reports](/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl). To do this, make sure you have [the ROI360 package](/docs/roi360-onboarding-guide#about-roi360) and complete the following setup:
 
 1. Connect the cost to your website app via  `facebook_int` (not via `metaweb_int`)  from the **Cost** tab or the **Cost Settings** page. For more information about how to connect to cost, see [Set up ROI360 cost API to measure cost data](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
 2. Include the campaign ID (`af_c_id`) in the landing page URL. Make sure the URL includes the full campaign hierarchy to view cost, clicks, and impressions matched to web attribution at the most granular level.
@@ -264,5 +280,10 @@ To get a complete performance view of web attribution data and web cost data fro
 | Trait | Remarks |
 | --- | --- |
 | Clicks and impressions | Clicks and impressions for web campaigns require an [ROI360 subscription](/docs/roi360-onboarding-guide). |
+| Re-engagement | Re-engagement postbacks via CAPI are not currently supported. |
 
-<div data-zendesk-anchors="h_01KQA78RE9FRENQAK31Q641C0N=overview h_01KQC27K5KWP3A6HMM2W7N3MVB=see-also h_01KQA78RE9F82ZBVF4YZHZTEEX=note h_01KQA78RE93B09A9YH2FRB3XRR=prerequisites set-up-meta-ads-web-campaigns=set-up-meta-ads-web-campaigns-for-website-apps h_01KQA78RE9J681CJ8DQNWJC37H=set-up-meta-ads-web-campaigns-for-website-apps h_01KQA78RE93JYCV2P0DDZC0A4B=part-1-set-up-meta-ads-integration-in-appsflyer h_01KQA78RE94B1JSVJFWR1V9QE5=step-1-activate-the-meta-ads-integration h_01KQA78REA5VN1229F2J3QH794=note-1 h_01KQA78REANHAQ88N4MXWM832D=note-2 h_01KQA78REA08SNB0BKCJDJZ2R0=note-3 h_01KQA78REACR7QTMQWJMV6VJSF=step-2-set-inapp-event-postbacks h_01KQA78REA1EB5ZHX4HKJSW7ZD=important h_01KQA78REAEZQPDSKZ0GRNKEJJ=part-2-set-up-appsflyer-integration-in-meta-ads h_01KQA78REASX8JX1H37075WT82=step-1-set-the-campaign-type-objective-and-goals h_01KQA78REA5JZ44C4BE77JCHG8=note-4 h_01KQA78REAKBGQRC713FZ3J02P=step-2-set-destination-url h_01KQA78REAXZ1BFGC5BR75ZB5X=important-1 h_01KQA78REARWGQDCJ4KN3FM120=note-5 h_01KQA78REA7MZSG5JZ1XX2C65P=tip h_01KQA78REA3ZW7W9M3VFSQASB6=see-also-1 h_01KQA78REASTZH19CM58M5Z43R=step-3-select-tracked-events h_01KQA78REBHCR1AHA254BTFZC6=important-2 h_01KQA78REBK1PWXNA1PM9118TA=view-web-attribution-data h_01KQA78REBAW2SM5DRD68DP8W1=note-6 h_01KNM00RR9TF8JRTJXWN23MF1S=measure-web-attribution-data-with-web-cost h_01KQAE3JKMQ6ZEATDAEXBC4PT6=traits-and-limitations" />
+> 📘 **See also**
+>
+> * [Web Performance Measurement - Overview](/docs/web-performance-measurement-overview)
+
+<div data-zendesk-anchors="h_01KQA78RE9FRENQAK31Q641C0N=overview h_01KQA78RE9F82ZBVF4YZHZTEEX=note h_01KQA78RE93B09A9YH2FRB3XRR=prerequisites set-up-meta-ads-web-campaigns=set-up-meta-ads-web-campaigns-for-website-apps h_01KQA78RE9J681CJ8DQNWJC37H=set-up-meta-ads-web-campaigns-for-website-apps h_01KQA78RE93JYCV2P0DDZC0A4B=part-1-set-up-meta-ads-integration-in-appsflyer h_01KQA78RE94B1JSVJFWR1V9QE5=step-1-activate-the-meta-ads-integration h_01KQA78REA5VN1229F2J3QH794=note-1 h_01KQA78REANHAQ88N4MXWM832D=note-2 h_01KQA78REA08SNB0BKCJDJZ2R0=note-3 h_01KQA78REACR7QTMQWJMV6VJSF=step-2-set-inapp-event-postbacks h_01KQA78REA1EB5ZHX4HKJSW7ZD=important h_01M520Y7YQYY70W2S24N2AXRG4=note-4 h_01KQA78REAEZQPDSKZ0GRNKEJJ=part-2-set-up-appsflyer-integration-in-meta-ads h_01KQA78REASX8JX1H37075WT82=step-1-set-the-campaign-type-objective-and-goals h_01KQA78REA5JZ44C4BE77JCHG8=note-5 h_01KQA78REAKBGQRC713FZ3J02P=step-2-set-destination-url h_01KQA78REAXZ1BFGC5BR75ZB5X=important-1 h_01KQA78REARWGQDCJ4KN3FM120=note-6 h_01KQA78REA7MZSG5JZ1XX2C65P=tip h_01KQA78REA3ZW7W9M3VFSQASB6=see-also h_01KQA78REASTZH19CM58M5Z43R=step-3-select-tracked-events h_01KQA78REBHCR1AHA254BTFZC6=important-2 h_01KQA78REBK1PWXNA1PM9118TA=view-web-attribution-data h_01KNM00RR9TF8JRTJXWN23MF1S=measure-web-attribution-data-with-web-cost h_01KQAE3JKMQ6ZEATDAEXBC4PT6=traits-and-limitations h_01KQC27K5KWP3A6HMM2W7N3MVB=see-also-1" />

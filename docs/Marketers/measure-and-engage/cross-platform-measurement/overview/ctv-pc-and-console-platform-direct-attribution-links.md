@@ -9,7 +9,7 @@ x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2023-05-10T10:21:14Z'
-  edited_at: '2026-01-05T17:09:17Z'
+  edited_at: '2026-10-16T08:45:49Z'
   id: 15199908310801
   locale: en-us
   section: Overview
@@ -71,7 +71,8 @@ Alternatively, links can be created via S2S using the [Engagements API](https://
 
 ## Traits and limitations
 
-| Agency attribution | <ul><li>CTV-PC-Console to mobile flow - agency attribution is supported.</li><li>Mobile to CTV-PC-Console flow - agency attribution isn't supported.</li></ul> |
+| Trait | Remarks |
 | --- | --- |
+| Agency attribution | <ul><li>CTV-PC-Console to mobile flow - agency attribution is supported.</li><li>Mobile to CTV-PC-Console flow - agency attribution isn't supported.</li></ul> |
 
-<div data-zendesk-anchors="01H7Z1003GTTMRY072BXWDFNP0=overview 01H7Z1003G0WYBCK3530064WM1=attribution-link attribution-link-parameters=parameters 01H7Z1003GNC551PDCKKFQMPVN=parameters h_01HVED5DJPFR5XCWYDSYCHMCR6=traits-and-limitations h_01J6S6HS0H0M6GQ81WGZ3XT0P9=traits-and-limitations" />
+<div data-zendesk-anchors="01H7Z1003GTTMRY072BXWDFNP0=overview 01H7Z1003G0WYBCK3530064WM1=attribution-link attribution-link-parameters=parameters 01H7Z1003GNC551PDCKKFQMPVN=parameters h_01HVED5DJPFR5XCWYDSYCHMCR6=traits-and-limitations" />
