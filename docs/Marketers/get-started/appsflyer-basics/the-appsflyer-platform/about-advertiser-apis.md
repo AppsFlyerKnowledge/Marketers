@@ -40,7 +40,7 @@ x-zendesk:
 | Reporting | [Cohort analytics](/docs/cohort-api) | Yes | Cohort metrics in JSON or CSV files | [V2.0](/docs/managing-appsflyer-tokens) | REST API |
 | Reporting | [Data Locker](/docs/data-locker-for-marketers) | Yes | Raw and aggregate data reports | N/A | Cloud storage |
 | Mobile attribution | [Push](/docs/push-api-streaming-raw-data) | Yes | Real-time installs and in-app events sent to advertisers' servers | N/A | REST API |
-| Campaign cost | [Cost Import](/appsflyer-partners/docs/cost-import-for-ad-networks) | No | Report campaign cost | N/A | File upload |
+| Campaign cost | [Cost Import](/partners/docs/cost-import-for-ad-networks) | No | Report campaign cost | N/A | File upload |
 | Account | [Get app list](/docs/app-list-api-for-app-owners) | No | Get a list of apps in your account | [V2.0](/docs/managing-appsflyer-tokens) | REST API |
 | Reporting | [ETL Cost](/docs/set-up-and-use-roi360-cost-etl-reports) | Yes | Cost ETL granular campaign cost | N/A | Cloud storage |
 | Reporting | [SKAN reporting](/docs/skadnetwork-skan-solution-guide#reporting-options) | No | SKAN aggregate reporting | V2.0 | REST API |

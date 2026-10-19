@@ -32,7 +32,7 @@ X Ads is an Advanced Self-Reporting Network (SRN), enabling AppsFlyer to support
    * If both the install event and the engagement include a mobile advertiser ID (MAID), AppsFlyer performs deterministic ID matching.
    * If either the install or the engagement is missing an advertising ID, probabilistic modeling is used for attribution, unless the customer has otherwise configured it.
 2. All install postbacks are sent to X Ads through the customer's integration, regardless of whether the install is attributed to X Ads.
-3. When an advertiser ID is unavailable, and [Advanced Privacy (AP)](/appsflyer-partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks) is active, certain fields in postbacks sent to X Ads will be restricted. The restricted fields are:
+3. When an advertiser ID is unavailable, and [Advanced Privacy (AP)](/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks) is active, certain fields in postbacks sent to X Ads will be restricted. The restricted fields are:
 
    * X Ads engagement ID
    * Hashed device ID
@@ -90,7 +90,7 @@ Select the accounts to enable attribution.
 For iOS apps only: The **Advanced Privacy (AP)** toggle lets you control the level of user data shared with X Ads via postbacks. This setting complies with iOS 14.5+ privacy requirements.  
 When AP toggle is ON:
 
-* Postbacks follow the [Advanced Privacy template](/appsflyer-partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks).
+* Postbacks follow the [Advanced Privacy template](/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks).
 * Only [aggregated and anonymous data](/docs/apply-aggregated-advanced-privacy-framework) is shared. No device-level identifiers are included.
 
 > 📘 **Note**

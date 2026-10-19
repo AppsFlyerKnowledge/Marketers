@@ -126,10 +126,10 @@ Use cases for advertisers and ad networks using the API V2 token:
 
 | API V2 token |
 | --- |
-| [App list for ad networks](/appsflyer-partners/docs/app-list-api-for-ad-networks) |
-| [Integration with campaign management platforms](/appsflyer-partners/docs/access-to-aggregated-analytics-tools-for-api-partners) |
-| [Protect360 reports for integrated partners](/appsflyer-partners/docs/protect360-for-integrated-partners#protect360-ad-network-reporting-api) |
-| [InCost](/appsflyer-partners/docs/incost-api-for-ad-networks) |
+| [App list for ad networks](/partners/docs/app-list-api-for-ad-networks) |
+| [Integration with campaign management platforms](/partners/docs/access-to-aggregated-analytics-tools-for-api-partners) |
+| [Protect360 reports for integrated partners](/partners/docs/protect360-for-integrated-partners#protect360-ad-network-reporting-api) |
+| [InCost](/partners/docs/incost-api-for-ad-networks) |
 
 ## Applications of the S2S token
 

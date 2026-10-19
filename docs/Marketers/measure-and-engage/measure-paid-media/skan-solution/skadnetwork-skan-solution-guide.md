@@ -207,7 +207,7 @@ Organic metrics in the SKAdNetwork dashboard are calculated using the following 
 | Trait | Remarks |
 | --- | --- |
 | Ad network access | Ad networks are provided with postbacks |
-| Agencies | Not supported. This means that agencies mustn't enable ad networks running SKAdNetwork campaigns. Agency! Ask the advertiser to enable the Ad network don't do it yourself. Agencies can indicate that they brought the user by implementing [SKAN agency recognition](/appsflyer-partners/docs/getting-started-agency-onboarding#skadnetwork-agency-campaigns). |
+| Agencies | Not supported. This means that agencies mustn't enable ad networks running SKAdNetwork campaigns. Agency! Ask the advertiser to enable the Ad network don't do it yourself. Agencies can indicate that they brought the user by implementing [SKAN agency recognition](/partners/docs/getting-started-agency-onboarding#skadnetwork-agency-campaigns). |
 | Agency transparency | N/A |
 | Timezone | UTC |
 | Currency | USD |

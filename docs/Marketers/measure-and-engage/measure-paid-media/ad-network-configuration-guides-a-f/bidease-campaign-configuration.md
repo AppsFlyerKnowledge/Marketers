@@ -65,7 +65,7 @@ Turn on the **Activate partner** toggle.
 | Advanced Privacy: On | Advanced Privacy: Off |
 | --- | --- |
 | Postbacks are sent only for events attributed to the partner | Postbacks are sent according to your configuration:<ul><li>**All media sources, including organic**</li><li>**This partner only**</li></ul> |
-| Postbacks are sent according to the [Advanced Privacy template](/appsflyer-partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks) |  |
+| Postbacks are sent according to the [Advanced Privacy template](/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks) |  |
 | [Aggregated and anonymous data](/docs/apply-aggregated-advanced-privacy-framework) is shared with the partner, meaning no user-level data (device ID) is shared. |  |
 
 #### Transaction ID

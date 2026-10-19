@@ -124,7 +124,7 @@ Sandbox aggregatable reports received on a given day are processed at the end of
 
 | Traits | Remarks |
 | --- | --- |
-| Agencies | Agencies can indicate that they brought the user by implementing [Sandbox attribution agency recognition](/appsflyer-partners/docs/getting-started-agency-onboarding#sandbox-attribution-agency-campaigns) |
+| Agencies | Agencies can indicate that they brought the user by implementing [Sandbox attribution agency recognition](/partners/docs/getting-started-agency-onboarding#sandbox-attribution-agency-campaigns) |
 | Agency transparency | N/A |
 | Timezone | UTC |
 | Currency | N/A |

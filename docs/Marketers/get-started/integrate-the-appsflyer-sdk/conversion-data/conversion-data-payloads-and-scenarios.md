@@ -118,7 +118,7 @@ If you run campaigns on Meta ads and don't sign the Meta terms of service, AppsF
 | --- | --- | --- |
 | `match_type` | `srn`, `gp_referrer`, `probabilistic` | AF |
 | `media_source` | Always `Facebook Ads` | AF |
-| `agency` | `null` or contains the agency name when [running Meta ads campaigns](/appsflyer-partners/docs/about-agency-accounts#srn-configurations) | Meta ads |
+| `agency` | `null` or contains the agency name when [running Meta ads campaigns](/partners/docs/about-agency-accounts#srn-configurations) | Meta ads |
 | `http_referrer` | Always `null` | Meta ads |
 | `retargeting_conversion_type` |  | AF |
 | `af_channel` |  | Meta ads (publisher\_platform) |

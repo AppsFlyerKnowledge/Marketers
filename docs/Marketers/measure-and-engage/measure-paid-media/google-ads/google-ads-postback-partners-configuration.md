@@ -130,7 +130,7 @@ For example, `campaign type`, `city`, `carrier` and `ad_type` are parameters, 
 
 There are two sources for GAPP postback parameters:
 
-1. **AppsFlyer macros** - for details of all the macros available on AppsFlyer's postbacks, click [here](/appsflyer-partners/docs/postback-macros-for-ad-networks).
+1. **AppsFlyer macros** - for details of all the macros available on AppsFlyer's postbacks, click [here](/partners/docs/postback-macros-for-ad-networks).
 2. **Google Response** - with every install attributed to Google Ads, AppsFlyer receives relevant information from Google. The following are available parameters on GAPPs postbacks, as received by AppsFlyer from Google Ads (for detailed parameter descriptions, click [here](https://developers.google.com/app-conversion-tracking/api/request-response-specs#sample_responses))
    * Ad Events ID
    * Campaign ID

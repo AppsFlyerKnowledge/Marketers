@@ -68,7 +68,7 @@ The terms defined are used in the figure and sections that follow to describe th
 
 ![Advanced Privacy Framework - Advertisers (4).png](https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png)
 
-Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See [here](/appsflyer-partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns) for more information.
+Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See [here](/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns) for more information.
 
 ### Paid and owned media data availability
 
@@ -158,7 +158,7 @@ As previously stated, the AAP setting overrides the Advanced Privacy (AP) settin
 
 #### **Postbacks to ad network partners**
 
-[AAP affects ad networks](/appsflyer-partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks) in relation to data shared with them and is aligned with the AAP principles that apply to advertisers in the context of an ad network. Data shared with ad networks is via postbacks which differ between the attributed ad network and the unattributed ad network.
+[AAP affects ad networks](/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks) in relation to data shared with them and is aligned with the AAP principles that apply to advertisers in the context of an ad network. Data shared with ad networks is via postbacks which differ between the attributed ad network and the unattributed ad network.
 
 Data sharing rules described apply to a given ad network if either of the following toggles is on:
 
@@ -178,7 +178,7 @@ The various user consent scenarios and postback types used are illustrated in th
 
 ![AAP - Attributed ad networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
 
-Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See [here](/appsflyer-partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns) for more information.
+Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See [here](/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns) for more information.
 
 #### **Postbacks for unattributed partners**
 
@@ -190,7 +190,7 @@ The various user consent scenarios and postback type used are illustrated in the
 
 ![AAP - Unattributed ad networks.png](https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png)
 
-Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See [here](/appsflyer-partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns) for more information.
+Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See [here](/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns) for more information.
 
 </Accordion>
 
@@ -211,7 +211,7 @@ The various user consent scenarios and postback type used are illustrated in the
 
 ![AAP - Analytics partner.png](https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png)
 
-Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See [here](/appsflyer-partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns) for more information.
+Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See [here](/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns) for more information.
 
 </Accordion>
 
@@ -241,6 +241,6 @@ Advanced Privacy behaves differently when served on the web and the af\_media\_t
 
 > 📘 **See also**
 >
-> * [Advanced Privacy guide & postback macros for ad networks](/appsflyer-partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks)
+> * [Advanced Privacy guide & postback macros for ad networks](/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks)
 
 <div data-zendesk-anchors="aggregated-advanced-privacy-framework=aggregated-advanced-privacy-aap-framework h_01HDPDE0H3SYFWBHK59HBV2P6N=aggregated-advanced-privacy-aap-framework aapimpacted-features=aap-impacted-features h_01HDPDE0H339BPACN235V70MWW=aap-impacted-features h_01HDPDE0H3QBE60DVBZ1MWNB9N=data-availability-principles-in-aggregated-advanced-privacy h_01HDPDE0H326EXNCQHPVJWXK3H=paid-and-owned-media-data-availability h_01HDPDE0H3TBDSXCNW5Q3E1Q7P=paid-media h_01HDPDE0H3SACYAV19WQD9TCQ3=paid-media-data-availability-by-att-status h_01HDPDE0H4M4XPE1C54K284BGW=owned-media controlling-aap=controlling-advanced-aggregated-privacy h_01HDPDE0H4VQC2DWAV68Q9VDVQ=controlling-advanced-aggregated-privacy h_01HDPDE0H4BHG114REGTWCDBP9=aap-central-switch h_01HDPDE0H4SC810EBK7ZGQ02K0=aap-enabled h_01HKHPGQ1R6HZEXSRTX7ATVWE9=aap-disabled h_01HDPDE0H4FRDXWRCYAWTPZZWE=partner-advanced-privacy-switch 01HKHPEBBFGQ5ZX4J6G50GEN64=advanced-aggregated-privacy-implications-for-your-partners h_01HDPDE0H4PDJ4TC02TED0DB8P=ad-networks h_01HDPDE0H47ENYTWRVFPX0VTZC=postbacks-to-ad-network-partners h_01HDPDE0H4B01YG577QZCG7TA7=postbacks-for-attributed-ad-networks h_01HDPDE0H63ZMV255SN7EKDRMV=postbacks-for-unattributed-partners h_01HDPDE0H67T1XFTEB2N0NN6YN=analytics-partners h_01HDPDE0H6AM91W49W2G2Z94DM=agencies h_01HDPDMX05ZZCAMW4TTWF4M4YN=see-also" />

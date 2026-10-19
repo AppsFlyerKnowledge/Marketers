@@ -54,7 +54,7 @@ Connect to Aura from Unity by activating and setting parameters in the Integrati
    * **Disable**: View-through installs from the partner are not attributed.
 3. **Default postbacks** are sent to Aura from Unity for:
    * **Installs**: Postbacks are sent every time a user installs the app. Choose if you want to send postbacks for users attributed to Aura from Unity or all users, including organic installs.
-   * **Rejected installs**: With **Protect360**, postbacks are sent when an [install is rejected due to fraud](/appsflyer-partners/docs/rejected-attribution-postbacks-to-integrated-partners). Only users attributed to Aura from Unity are reported.
+   * **Rejected installs**: With **Protect360**, postbacks are sent when an [install is rejected due to fraud](/partners/docs/rejected-attribution-postbacks-to-integrated-partners). Only users attributed to Aura from Unity are reported.
 4. **In-app events settings**: To send postbacks, map your in-app event IDs to Aura from Unity's in-app IDs. Configure the parameters as follows:
    * Enable **In-app event postbacks**.
    * Sending option: Select if you want to send **Only events attributed to this partner** or **Events attributed to any partners**, including organic installs.

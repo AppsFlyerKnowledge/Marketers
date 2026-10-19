@@ -297,7 +297,7 @@ Use postback reports, to review copies of data sent to an ad network. For exampl
   * In-app events relating to Meta ads, X Ads, and Apple Ads.
   * Unattributed partner postbacks. See [events attributed to any partner or organic](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration).
   * Organic users. See [about organic installs.](/docs/set-up-an-integrated-partner#default-postbacks)
-* Starting in March 2021, fields are populated according to a network's Advanced Privacy setting. Meaning, if Advanced Privacy is on, some fields, like user identifiers aren't included. See [Advanced Privacy postback specification for ad networks.](/appsflyer-partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification)
+* Starting in March 2021, fields are populated according to a network's Advanced Privacy setting. Meaning, if Advanced Privacy is on, some fields, like user identifiers aren't included. See [Advanced Privacy postback specification for ad networks.](/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification)
 * [Get postback reports by PULL API](https://dev.appsflyer.com/hc/reference/get_app-id-postbacks-v5)
 
 #### Postback reports (available via the Export Data page and Pull API)

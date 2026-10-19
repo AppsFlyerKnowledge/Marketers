@@ -16,19 +16,19 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/28637170445073--Closed-beta-Sandbox-Data-Locker-report-for-ad-networks
 ---
-At a glance: Sandbox raw data reports contain aggregated data generated after translating and decoding reports received by AppsFlyer from Android Privacy Sandbox Attribution API. Data is available via [Data Locker](/appsflyer-partners/docs/data-locker-partners).
+At a glance: Sandbox raw data reports contain aggregated data generated after translating and decoding reports received by AppsFlyer from Android Privacy Sandbox Attribution API. Data is available via [Data Locker](/partners/docs/data-locker-partners).
 
 ## Sandbox raw data reports for ad networks
 
 Principles:
 
 * **Data is provided by:**
-  * [**Data Locker**](/appsflyer-partners/docs/data-locker-for-partners)
+  * [**Data Locker**](/partners/docs/data-locker-for-partners)
     * If you aren't currently using Data Locker, an admin user must configure Data Locker and enable the sandbox reports. To do so, go to **Reports** > **Data Locker**. Select the Sandbox attribution reports.
     * **Data freshness rate**: Data is contained in the h=23 folder of the date the aggregated report is received by AppsFlyer. Example: If the report was received on Monday, it is processed after the end of the next day. Processing is completed by 10:00 AM UTC Wednesday, and the data is written to the Monday h=23 folder.
     * **Timezone**: UTC
     * **Metrics**: Metrics are incremental. As an example, on DT = 20-06-2024 we received 10 installs for install date = 18-06-2024 and a few days later we received another 5 installs for the same install date (18-06-2024) then the event count column will mention 5 additional installs.
-    * **Permissions**: The report is only available to ad networks. Ad networks will be able to access specific app data only if the app owner has given permission to [get app data](/appsflyer-partners/docs/aggregated-campaign-performance-report-for-ad-networks#permission-to-get-aggregated-performance-data).
+    * **Permissions**: The report is only available to ad networks. Ad networks will be able to access specific app data only if the app owner has given permission to [get app data](/partners/docs/aggregated-campaign-performance-report-for-ad-networks#permission-to-get-aggregated-performance-data).
 
 ## Sandbox raw data report format and content
 

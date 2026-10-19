@@ -22,7 +22,7 @@ x-zendesk:
 ---
 ## Overview
 
-This integration allows you to grant AppTweak permission to access your aggregated analytics reports and SKAN reposts (for iOS apps), using their API token. See [more details and limitations about these permissions](/appsflyer-partners/docs/access-to-aggregated-analytics-tools-for-api-partners).
+This integration allows you to grant AppTweak permission to access your aggregated analytics reports and SKAN reposts (for iOS apps), using their API token. See [more details and limitations about these permissions](/partners/docs/access-to-aggregated-analytics-tools-for-api-partners).
 
 ## Setting up AppTweak
 
@@ -45,6 +45,6 @@ This integration allows you to grant AppTweak permission to access your aggregat
 
 > 📘 **Note**
 >
-> AppsFlyer provides aggregate reporting via the [Data Locker solution for partners](/appsflyer-partners/docs/data-locker-reports-for-api-partners).
+> AppsFlyer provides aggregate reporting via the [Data Locker solution for partners](/partners/docs/data-locker-reports-for-api-partners).
 
 <div data-zendesk-anchors="h_01HSZP6Z6Y2Y89SNPDRHNTSRG9=overview setting-up-AppTweak=setting-up-apptweak h_01HST42K52JKQ70F7Y5PHDZAZ5=setting-up-apptweak h_01HWQ2MYJWAGCNS00TCBFBVWHA=note" />

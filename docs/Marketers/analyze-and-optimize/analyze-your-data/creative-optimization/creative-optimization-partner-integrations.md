@@ -614,7 +614,7 @@ You can integrate with your agency partners to pull their data into the Creative
 
 #### Grant dashboard access to an agency
 
-You can grant your agencies access to view their own creative performance data in the Creative Optimization dashboard if they have an AppsFlyer [agency account](/appsflyer-partners/docs/about-agency-accounts). This could serve to enhance transparency and collaboration.
+You can grant your agencies access to view their own creative performance data in the Creative Optimization dashboard if they have an AppsFlyer [agency account](/partners/docs/about-agency-accounts). This could serve to enhance transparency and collaboration.
 
 **To enable access:**
 
@@ -629,7 +629,7 @@ You can grant your agencies access to view their own creative performance data i
    ![Agency permissions.png](https://files.readme.io/b307601f9b41800a146c664bdd9f6d24a5398be9022801505419aebb0741162c-39258856594705.png)
 4. Then enable **Access Creative Optimization dashboard**  
 
-   The agency will now have access to see your shared creatives in their dashboard. For agencies that haven't yet set up an AppsFlyer agency account and would like to, they can learn more [here.](/appsflyer-partners/docs/getting-started-agency-onboarding)
+   The agency will now have access to see your shared creatives in their dashboard. For agencies that haven't yet set up an AppsFlyer agency account and would like to, they can learn more [here.](/partners/docs/getting-started-agency-onboarding)
 
 </Accordion>
 

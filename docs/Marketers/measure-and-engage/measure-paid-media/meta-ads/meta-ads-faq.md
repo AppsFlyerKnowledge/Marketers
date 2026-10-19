@@ -479,7 +479,7 @@ Agencies and Meta campaign management partners can run and attribute Meta ads ca
 
 Note that for iOS 14 users, only **one** agency can run campaigns for a specific ad account. See more about [Meta ads and AppsFlyer SKAdNetwork interoperability](/docs/skadnetwork-skan-interoperation-with-meta-ads#skan-interoperability-appsflyer---meta-ads).
 
-For more details about agencies and Meta ads install attribution please [go here](/appsflyer-partners/docs/about-agency-accounts#srn-configurations).
+For more details about agencies and Meta ads install attribution please [go here](/partners/docs/about-agency-accounts#srn-configurations).
 
 In addition, **agencies can't alter Meta ads lookback windows and retargeting control**. Rather, they need to ask the advertiser to perform these changes if they're needed.
 
