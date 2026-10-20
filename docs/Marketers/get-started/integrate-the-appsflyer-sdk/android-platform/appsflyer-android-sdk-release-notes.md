@@ -44,6 +44,7 @@ The table below provides release notes for supported Android SDK versions, inclu
 
 | Version | Release date | Notes |
 | --- | --- | --- |
+| 7.0.2 | 2026-10-19 | <ul><li>Added ad revenue reporting support for two new ad mediation partners - Google Ad Manager and CloudX.</li><li>Added a new event parameter for reporting net revenue.</li><li>Stability and performance improvements.</li></ul> |
 | 7.0.1 | 2026-07-22 | <ul><li>Apps can now provide a hashed customer email, phone number, name, and Facebook login ID to the SDK for sharing with ad network partners. The SDK doesn't collect this information itself. The app provides it, and only hashed values are sent, never plain text.</li><li>Removed the `setUserEmails` and `setPhoneNumber` methods. Developers using these must switch to `setUserEmail` and `setUserPhone`</li></ul> |
 | 6.18.1 | 2026-05-25 | <ul><li>Fixed an issue in the Purchase Connector where purchase validations that failed due to connectivity problems were cached and not retried, which could result in missing purchase data.</li></ul> |
 | 6.18.0 | 2026-03-17 | <ul><li>Stability improvements and fixes.</li></ul> |

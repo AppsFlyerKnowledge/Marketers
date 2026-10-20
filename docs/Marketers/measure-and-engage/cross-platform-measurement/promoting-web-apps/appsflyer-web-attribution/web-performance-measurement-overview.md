@@ -12,6 +12,7 @@ metadata:
     - Agencies
     - Web Attribution
     - Web Attribution SDK
+    - Premium
     - Marketers
 x-zendesk:
   category: Marketers
@@ -30,6 +31,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/43521734577809-Web-Performance-Measurement-Overview
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## About Web Performance Measurement
 
 Web attribution is the process of identifying which media sources and campaigns drive users to visit a website and influence their subsequent actions.

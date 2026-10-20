@@ -13,7 +13,6 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6550990672401-Measure-paid-media
 ---
-- [Android privacy sandbox](/docs/android-privacy-sandbox)
 - [Media source configuration](/docs/media-source-configuration)
 - [SKAN interoperation](/docs/skan-interoperation)
 - [SKAN solution](/docs/skan-solution)
