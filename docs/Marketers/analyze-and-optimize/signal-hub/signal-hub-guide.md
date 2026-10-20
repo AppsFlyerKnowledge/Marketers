@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-gilad-katan
+    - Marketers
+    - Signal Hub
   created_at: '2025-09-16T10:56:07Z'
   edited_at: '2026-08-19T09:03:23Z'
   id: 39096485642001
@@ -21,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/39096485642001-Signal-Hub-guide
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 <Embed title="Signal Hub guide" typeOfEmbed="youtube" url="https://www.youtube.com/embed/B71XCosnTXo" providerUrl="https://www.youtube.com" />
 
 ## About Signal Hub

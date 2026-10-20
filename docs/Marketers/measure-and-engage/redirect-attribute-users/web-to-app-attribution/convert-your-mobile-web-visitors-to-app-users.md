@@ -13,6 +13,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-asaf-mashiah
+    - Marketers
+    - Smart Banners and Scripts
   created_at: '2019-03-19T08:54:10Z'
   edited_at: '2026-09-07T10:17:00Z'
   id: 360001237818
@@ -38,7 +42,7 @@ Using web-to-app campaigns helps you:
 
 ### Attribution solutions
 
-![](https://fast.wistia.com/embed/medias/kv67fa3rvn/swatch)
+<Embed title="Convert your mobile web visitors to app users" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/kv67fa3rvn" height="417px" />
 
 For mobile web-to-app users, since there are two clicks (the first that directs to the web page and the second that directs from the web page to the app store), attribution and deep linking are problematic. Users who eventually download the app may be wrongfully attributed, or attributed as organic, even if the first click comes from an ad network, Google click, or owned media source. 
 

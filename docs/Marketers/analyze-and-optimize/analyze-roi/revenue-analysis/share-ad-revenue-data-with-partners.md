@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-michael-talapov
+    - Marketers
+    - ROI360
   created_at: '2024-04-11T11:04:45Z'
   edited_at: '2026-09-15T11:11:27Z'
   id: 24100803679761
@@ -21,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/24100803679761-Share-ad-revenue-data-with-partners
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## About sharing ad revenue data with partners
 
 You can allow ad networks responsible for user acquisition to receive ad revenue data from mediation networks. The partners can then use the information to optimize their UA campaigns.

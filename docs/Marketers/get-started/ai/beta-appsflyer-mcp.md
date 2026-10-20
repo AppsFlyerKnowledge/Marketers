@@ -13,6 +13,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-eden-locker
+    - Marketers
+    - MCP
   created_at: '2025-06-19T07:19:33Z'
   edited_at: '2026-10-07T10:00:26Z'
   id: 36349070304785
@@ -22,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/36349070304785--Beta-AppsFlyer-MCP
 ---
+<span class="af-tag af-tag--beta-feature">Beta feature</span>
+
 <Embed title="[Beta] AppsFlyer MCP" typeOfEmbed="youtube" url="https://www.youtube.com/embed/jAw7oocIx6o?si=-s107vTaTTwO076n" providerUrl="https://www.youtube.com" />
 
 <div id="disclaimer" />

@@ -13,6 +13,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roy-yanai
+    - Marketers
+    - Protect360
   created_at: '2026-07-02T09:03:27Z'
   edited_at: '2026-09-27T13:16:32Z'
   id: 48341412127249
@@ -22,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/48341412127249--Closed-beta-Validation-Rules-API
 ---
+<span class="af-tag af-tag--closed-beta">Closed beta</span>
+
 > 📘 **Note**
 >
 > The Validation Rules API is available to Protect360 customers. It's currently in closed beta, and access is limited and enabled per account. Contact your Customer Success Manager (CSM) to request access.

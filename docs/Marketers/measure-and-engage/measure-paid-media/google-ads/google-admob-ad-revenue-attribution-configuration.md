@@ -14,6 +14,10 @@ table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-michael-talapov
+    - Marketers
+    - ROI360
   created_at: '2020-03-23T16:51:19Z'
   edited_at: '2026-04-27T10:08:17Z'
   id: 360006951817

@@ -16,6 +16,11 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - Marketers
+    - Platform essentials
+    - Agencies
+    - pm-guy-riesenberg
   created_at: '2026-09-09T09:10:13Z'
   edited_at: '2026-09-23T10:38:40Z'
   id: 50696362899089

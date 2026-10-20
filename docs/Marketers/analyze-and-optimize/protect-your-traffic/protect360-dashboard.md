@@ -16,6 +16,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roy-yanai
+    - Marketers
+    - Protect360
   created_at: '2020-08-11T09:58:07Z'
   edited_at: '2026-05-07T00:01:09Z'
   id: 360011793077
@@ -25,6 +29,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360011793077-Protect360-dashboard
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## About Protect360 dashboard
 
 The Protect360 dashboard:

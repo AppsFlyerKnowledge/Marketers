@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-nohar-avigal
+    - Marketers
+    - Marketing Analytics
   created_at: '2016-01-12T15:50:15Z'
   edited_at: '2025-11-24T09:07:15Z'
   id: 207602503

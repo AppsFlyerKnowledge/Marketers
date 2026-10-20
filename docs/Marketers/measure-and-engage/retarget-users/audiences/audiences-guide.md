@@ -15,6 +15,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-neama-benhabib
+    - Marketers
+    - Audience Segmentation
   created_at: '2017-05-30T07:21:22Z'
   edited_at: '2026-05-31T10:25:39Z'
   id: 115002689186
@@ -23,6 +27,8 @@ x-zendesk:
   section_id: 6551336428945
   url: https://support.appsflyer.com/hc/en-us/articles/115002689186-Audiences-guide
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
 
 ## Audiences basics

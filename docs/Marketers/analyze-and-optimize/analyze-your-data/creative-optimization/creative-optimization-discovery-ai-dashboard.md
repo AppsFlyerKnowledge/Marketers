@@ -13,6 +13,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-omer-katzburg
+    - Marketers
+    - Creative Optimization
   created_at: '2023-09-14T14:10:49Z'
   edited_at: '2026-05-31T10:35:58Z'
   id: 18565941422993
@@ -22,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/18565941422993-Creative-Optimization-Discovery-AI-dashboard
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 [![Main Discovery image.jpg](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)
 
 ## About the Creative Optimization Discovery AI dashboard

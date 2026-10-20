@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-neama-benhabib
+    - Marketers
+    - Audience Segmentation
   created_at: '2024-08-05T11:44:00Z'
   edited_at: '2024-12-09T09:29:35Z'
   id: 27276077637649
@@ -21,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/27276077637649-Audiences-onboarding-guide
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## ![53010_Audiences.jpg](https://files.readme.io/37aa78c4e885438f7912110a424a9ddbb9ddb7842fcb7239c7e2bc893eb36a50-30778512024081.jpg)
 
 ## About Audiences

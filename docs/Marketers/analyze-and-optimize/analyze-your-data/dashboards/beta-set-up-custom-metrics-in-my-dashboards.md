@@ -9,6 +9,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-maya-kahane
+    - Marketers
+    - Marketing Analytics
   created_at: '2025-01-01T09:21:05Z'
   edited_at: '2026-08-19T10:32:26Z'
   id: 31400289569169
@@ -18,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/31400289569169--Beta-Set-up-custom-metrics-in-My-Dashboards
 ---
+<span class="af-tag af-tag--beta-feature">Beta feature</span>
+
 ## About custom metrics
 
 Custom metrics let you tailor data analysis to your unique business needs by defining calculations based on existing data. They provide more control and flexibility than standard metrics, enabling you to combine multiple metrics, create projections, and customize KPIs.

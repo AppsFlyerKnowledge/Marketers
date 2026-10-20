@@ -8,6 +8,11 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-maya-kahane
+    - Marketers
+    - Marketing Analytics
+    - Ad Networks
   created_at: '2025-09-09T10:46:09Z'
   edited_at: '2026-08-06T06:38:18Z'
   id: 38874924986001

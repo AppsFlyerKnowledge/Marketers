@@ -19,6 +19,12 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-maytav-avnat
+    - Marketers
+    - Agencies
+    - ROI360
+    - Ad Networks
   created_at: '2019-09-15T15:53:44Z'
   edited_at: '2026-08-05T10:36:56Z'
   id: 360002516838
@@ -28,6 +34,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002516838-Import-cost-data
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## Overview
 
 Use Cost Import to:

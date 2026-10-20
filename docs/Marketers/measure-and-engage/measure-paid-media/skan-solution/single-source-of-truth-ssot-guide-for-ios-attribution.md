@@ -17,6 +17,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-gil-or
+    - Marketers
+    - SKAdNetwork (SKAN)
   created_at: '2021-11-11T09:28:42Z'
   edited_at: '2026-06-11T08:37:47Z'
   id: 4410634145425
@@ -26,7 +30,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410634145425-Single-Source-of-Truth-SSOT-guide-for-iOS-attribution
 ---
-![](https://fast.wistia.com/embed/medias/545isomgo1/swatch)
+<Embed title="Single Source of Truth (SSOT) guide for iOS attribution" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/545isomgo1" height="417px" />
 
 ## About Single Source of Truth—True iOS performance data
 

@@ -12,6 +12,11 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-maytav-avnat
+    - Marketers
+    - Agencies
+    - ROI360
   created_at: '2015-12-24T10:45:16Z'
   edited_at: '2026-10-05T06:57:44Z'
   id: 207040526
@@ -21,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207040526-ROI360-cost-aggregation-overview
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## Cost aggregation
 
 ROI360 does the following:

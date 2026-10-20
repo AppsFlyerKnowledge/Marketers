@@ -15,6 +15,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-eden-locker
+    - AI Assistant
+    - Marketers
   created_at: '2025-08-26T08:30:32Z'
   edited_at: '2026-10-04T07:37:17Z'
   id: 38423389662609

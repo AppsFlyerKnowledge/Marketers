@@ -15,6 +15,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-rona-einat
+    - Marketers
+    - Agent Hub
   created_at: '2025-11-16T10:18:23Z'
   edited_at: '2026-10-18T11:15:00Z'
   id: 40967933109649
@@ -24,6 +28,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/40967933109649--Beta-Agent-Hub-overview
 ---
+<span class="af-tag af-tag--beta-feature">Beta feature</span>
+
 <Embed title="[Beta] Agent Hub overview" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LEuqdVEXBD0" providerUrl="https://www.youtube.com" />
 
 ## About Agent Hub

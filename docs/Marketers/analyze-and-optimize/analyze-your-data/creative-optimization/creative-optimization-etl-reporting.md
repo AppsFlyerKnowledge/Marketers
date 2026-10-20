@@ -14,6 +14,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-omer-katzburg
+    - Marketers
+    - Creative Optimization
   created_at: '2023-10-10T14:33:17Z'
   edited_at: '2026-07-06T07:18:48Z'
   id: 19253873174801
@@ -23,6 +27,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/19253873174801-Creative-Optimization-ETL-reporting
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## About Creative Optimization ETL reporting
 
 Creative Optimization ETL automatically streams your creative performance data to cloud storage daily, making it available for programmatic loading into your BI systems. Two options are available depending on your needs and subscription plan.

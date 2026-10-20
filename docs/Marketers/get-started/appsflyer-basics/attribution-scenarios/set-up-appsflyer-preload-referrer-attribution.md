@@ -13,6 +13,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-alina-koifman
+    - Marketers
+    - Mobile Attribution
   created_at: '2022-03-02T09:54:10Z'
   edited_at: '2026-09-15T11:20:06Z'
   id: 4543811207313

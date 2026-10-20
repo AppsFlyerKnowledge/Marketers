@@ -11,6 +11,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-yael-sharabi
+    - Marketers
+    - Data Clean Room
   created_at: '2024-02-29T14:30:51Z'
   edited_at: '2025-02-03T13:14:45Z'
   id: 22977208909969
@@ -20,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/22977208909969-Data-Collaboration-Platform-DCP-Integration-with-Salesforce-Data-Cloud
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 > 📘 **Before you begin**
 >
 > Before integrating Salesforce Data Cloud, you must **install the AppsFlyer app extension** from the Salesforce AppExchange. This must be performed by a Salesforce admin user with permission to download AppExchange packages.

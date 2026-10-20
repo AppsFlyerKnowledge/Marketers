@@ -19,6 +19,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-ravid-naori
+    - Marketers
+    - Mobile Attribution
   created_at: '2015-06-03T08:06:04Z'
   edited_at: '2026-09-07T07:23:50Z'
   id: 207033946

@@ -9,6 +9,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-rona-einat
+    - Marketers
+    - Raw Reports
   created_at: '2020-04-14T18:24:00Z'
   edited_at: '2026-03-12T12:19:12Z'
   id: 360007530258
@@ -18,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360007530258-Pull-API-raw-data
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 [![PullAPIRaw_us-en.png](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)
 
 ## Pull API raw data

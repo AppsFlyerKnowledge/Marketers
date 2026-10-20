@@ -13,6 +13,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-neama-benhabib
+    - Marketers
+    - Audience Segmentation
   created_at: '2026-04-15T09:20:36Z'
   edited_at: '2026-04-27T10:30:56Z'
   id: 45762246838801
@@ -22,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/45762246838801--Closed-beta-Use-AI-Predictive-Audiences-to-reach-high-intent-users
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 <Embed title="[Closed beta] Use AI Predictive Audiences to reach high-intent users" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LuEJrfARo5g" providerUrl="https://www.youtube.com" />
 
 ## About Predictive Audiences

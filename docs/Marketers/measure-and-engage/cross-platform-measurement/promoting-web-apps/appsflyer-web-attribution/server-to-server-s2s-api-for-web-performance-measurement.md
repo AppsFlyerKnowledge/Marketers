@@ -13,6 +13,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-gil-or
+    - Marketers
+    - Web Attribution
   created_at: '2026-04-12T15:09:07Z'
   edited_at: '2026-10-15T07:58:25Z'
   id: 45670116601617

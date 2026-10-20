@@ -7,6 +7,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-rona-einat
+    - Marketers
+    - Data Locker
   created_at: '2024-09-24T14:41:32Z'
   id: 28637170445073
   locale: en-us

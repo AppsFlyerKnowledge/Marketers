@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-inbar-agassi
+    - Marketers
+    - Data Clean Room
   created_at: '2022-03-27T10:58:23Z'
   edited_at: '2026-08-14T16:22:51Z'
   id: 5041487011601
@@ -21,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/5041487011601-Data-Clean-Room-Working-with-sources
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## Introduction
 
 Many DCR reports are designed to match your **attribution data** with data from your **custom data sources.** This article contains everything you need to know about working with your custom data sources, including how to:

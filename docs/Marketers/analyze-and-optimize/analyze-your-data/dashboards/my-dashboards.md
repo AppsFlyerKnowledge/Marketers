@@ -13,8 +13,14 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-maya-kahane
+    - Marketers
+    - Marketing Analytics
+    - Agencies
+    - Ad Networks
   created_at: '2024-03-19T14:29:53Z'
-  edited_at: '2026-10-11T10:42:20Z'
+  edited_at: '2026-10-19T18:31:39Z'
   id: 23461861877009
   locale: en-us
   section: Dashboards
@@ -892,7 +898,7 @@ You can apply one of the following formatting options to your table cells:
 
 <Accordion title="View types">
 
-![](https://fast.wistia.com/embed/medias/31zhcq4hv7/swatch)
+<Embed title="My Dashboards" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/31zhcq4hv7" height="391px" />
 
 Data in the dashboard is presented via view types Unified, User acquisition, and Retargeting as described in the figure that follows.
 

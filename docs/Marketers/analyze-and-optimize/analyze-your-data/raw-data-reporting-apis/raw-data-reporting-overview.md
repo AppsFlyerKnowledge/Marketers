@@ -20,6 +20,11 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-rona-einat
+    - Marketers
+    - Agencies
+    - Raw Reports
   created_at: '2016-03-21T08:32:06Z'
   edited_at: '2026-08-11T08:38:12Z'
   id: 209680773

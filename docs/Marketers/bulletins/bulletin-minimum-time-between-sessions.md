@@ -10,6 +10,11 @@ table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-guy-sarfatty
+    - Marketers
+    - Mobile Attribution
+    - Ad Networks
   created_at: '2021-01-03T11:28:55Z'
   edited_at: '2023-11-26T12:53:54Z'
   id: 360016827858

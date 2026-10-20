@@ -21,6 +21,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-maytav-avnat
+    - Marketers
+    - ROI360
   created_at: '2020-05-17T15:36:41Z'
   edited_at: '2026-08-13T15:58:03Z'
   id: 360008849238
@@ -30,6 +34,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360008849238-Set-up-and-use-ROI360-cost-ETL-reports
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 [![5896_CostETL_graphic__2_.png](https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png)](https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png)
 
 Cost ETL, part of AppsFlyer ROI360, provides advertisers with campaign cost data with the best granularity available per media source. Up to four times daily, the data is updated and delivered to your Data Locker cloud service, ready for loading into advertiser BI systems.

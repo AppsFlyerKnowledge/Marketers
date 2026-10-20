@@ -21,6 +21,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-guy-sarfatty
+    - Marketers
+    - Mobile Attribution
   created_at: '2012-12-26T14:34:58Z'
   edited_at: '2026-08-13T12:37:40Z'
   id: 207032126
@@ -34,7 +38,7 @@ x-zendesk:
 
 Watch this video to get the big picture of SDK integration.
 
-![](https://fast.wistia.com/embed/medias/4iybquc6q3/swatch)
+<Embed title="SDK integration overview" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/4iybquc6q3" height="417px" />
 
 The SDK provides app installation and event recording functionality. You can record installs, sessions, and in-app events. In-app events include, for example, in-app purchases or leveling up in a game. Recording these events can help you evaluate ROI and user quality.
 

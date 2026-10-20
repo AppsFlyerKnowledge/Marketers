@@ -9,6 +9,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-neama-benhabib
+    - Marketers
+    - Audience Segmentation
   created_at: '2020-10-05T06:49:59Z'
   edited_at: '2026-10-14T10:19:10Z'
   id: 360013960577
@@ -18,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360013960577-Audiences-partner-connections
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## About partner connections
 
 A partner connection enables you to easily and continuously send your audiences to partners so you can serve your tailored campaigns. Below is a list of Audiences partners, connection requirements, and the user identifiers supported by each.

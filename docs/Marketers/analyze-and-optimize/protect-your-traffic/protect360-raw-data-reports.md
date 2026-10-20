@@ -16,6 +16,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roy-yanai
+    - Marketers
+    - Protect360
   created_at: '2020-11-09T13:03:45Z'
   edited_at: '2026-03-28T14:03:09Z'
   id: 360015179337
@@ -25,6 +29,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360015179337-Protect360-raw-data-reports
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## About Protect360 raw data reports
 
 Raw data reports:

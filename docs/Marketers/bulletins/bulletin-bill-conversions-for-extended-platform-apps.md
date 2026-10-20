@@ -8,6 +8,10 @@ table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roi-tamir
+    - Marketers
+    - Cross-Platform Measurement
   created_at: '2026-01-11T07:07:19Z'
   edited_at: '2026-10-14T09:40:34Z'
   id: 42720965896721

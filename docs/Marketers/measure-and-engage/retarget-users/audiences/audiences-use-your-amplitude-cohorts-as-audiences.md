@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-neama-benhabib
+    - Marketers
+    - Audience Segmentation
   created_at: '2022-02-23T14:27:13Z'
   edited_at: '2025-03-18T08:53:05Z'
   id: 4470658876817
@@ -21,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4470658876817-Audiences-Use-your-Amplitude-cohorts-as-audiences
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## About the Amplitude integration
 
 The **AppsFlyer Audiences-Amplitude integration** allows you to sync the cohorts you define in your Amplitude account directly to AppsFlyer as [imported audiences](/docs/audiences-import-audience-segments-from-internal-systems). AppsFlyer can then serve as your centralized location for connecting and maintaining these audience segments with partners, reviewing connected campaign metrics, and linking your first-party Amplitude and AppsFlyer data to leverage the power of both.

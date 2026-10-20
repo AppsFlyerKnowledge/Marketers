@@ -11,6 +11,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-michael-talapov
+    - Marketers
+    - ROI360
   created_at: '2025-12-21T16:34:39Z'
   edited_at: '2026-10-05T09:07:40Z'
   id: 42138855425297
@@ -20,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/42138855425297-About-ROI360-store-revenue
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 > 📘 **Important!**
 >
 > ROI360 store revenue is available only to customers on the ROI360 premium plan. To check your plan or upgrade, contact your Customer Success Manager (CSM).

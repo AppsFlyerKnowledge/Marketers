@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-asaf-mashiah
+    - Marketers
+    - Text-to-App
   created_at: '2016-05-22T10:03:37Z'
   edited_at: '2026-10-07T10:22:41Z'
   id: 208874366

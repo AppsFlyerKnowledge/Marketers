@@ -14,6 +14,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-michael-talapov
+    - Marketers
+    - ROI360
   created_at: '2016-12-12T10:53:27Z'
   edited_at: '2026-09-06T10:09:17Z'
   id: 217490046
@@ -23,6 +27,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/217490046-ROI360-guide-ad-revenue-attribution
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
 
 ## Ad revenue attribution

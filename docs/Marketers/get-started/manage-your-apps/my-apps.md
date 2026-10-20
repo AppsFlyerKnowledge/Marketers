@@ -10,6 +10,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roy-negri
+    - Marketers
+    - Platform essentials
   created_at: '2024-08-11T12:26:13Z'
   edited_at: '2024-09-13T06:57:52Z'
   id: 27438234288529

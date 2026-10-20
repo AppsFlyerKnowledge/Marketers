@@ -8,6 +8,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-yael-sharabi
+    - Marketers
+    - Retail Media Measurement
   created_at: '2025-01-27T08:21:27Z'
   edited_at: '2026-10-15T11:44:26Z'
   id: 32143318560017

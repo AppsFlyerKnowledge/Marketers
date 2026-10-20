@@ -8,6 +8,10 @@ table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-ravid-naori
+    - Marketers
+    - Raw Reports
   created_at: '2023-11-15T10:46:08Z'
   edited_at: '2023-12-12T09:37:55Z'
   id: 20161752179601

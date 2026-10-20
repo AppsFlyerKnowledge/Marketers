@@ -14,6 +14,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-niv-klein
+    - Marketers
+    - Incrementality
   created_at: '2020-05-29T19:29:03Z'
   edited_at: '2026-05-31T11:53:31Z'
   id: 360009360978
@@ -23,6 +27,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360009360978-Incrementality-for-remarketing-overview
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## What is Incrementality?
 
 Probably the best way to understand incrementality analysis is through an example:

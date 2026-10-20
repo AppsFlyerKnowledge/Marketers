@@ -13,6 +13,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-inbar-agassi
+    - Marketers
+    - Data Clean Room
   created_at: '2022-09-22T12:03:40Z'
   edited_at: '2024-07-22T12:05:41Z'
   id: 9312610473233
@@ -22,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/9312610473233-Data-Clean-Room-Creating-In-app-event-reports
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## Creating an In-app event report
 
 **To create an In-app event report, follow the steps detailed in the tabs below.**

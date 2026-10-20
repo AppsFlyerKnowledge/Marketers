@@ -15,6 +15,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-omer-katzburg
+    - Marketers
+    - Creative Optimization
   created_at: '2023-09-14T13:32:13Z'
   edited_at: '2026-09-23T08:06:40Z'
   id: 18564718580625
@@ -24,6 +28,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/18564718580625-Creative-Optimization-guide
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 [![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
 
 ## About Creative Optimization

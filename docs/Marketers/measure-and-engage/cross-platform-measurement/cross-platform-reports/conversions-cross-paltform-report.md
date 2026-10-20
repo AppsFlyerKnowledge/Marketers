@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - Marketers
+    - Data Locker
+    - Cross-Platform Measurement
   created_at: '2026-09-02T07:11:54Z'
   edited_at: '2026-09-16T13:31:34Z'
   id: 50451304393617

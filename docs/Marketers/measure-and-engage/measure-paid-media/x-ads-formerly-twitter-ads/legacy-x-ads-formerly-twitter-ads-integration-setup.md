@@ -11,6 +11,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-shay-maoz
+    - Marketers
+    - Mobile Attribution
   created_at: '2025-06-22T11:41:06Z'
   edited_at: '2026-09-15T09:20:35Z'
   id: 36433415114769
@@ -24,7 +28,7 @@ x-zendesk:
 
 <Accordion title="Watch">
 
-![](https://fast.wistia.com/embed/medias/a65pnqoyxw/swatch)
+<Embed title="[Legacy] X Ads (formerly Twitter Ads) integration setup" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/a65pnqoyxw" height="556px" />
 
 </Accordion>
 
@@ -215,7 +219,7 @@ Learn about [granting agency permissions](/docs/set-up-an-integrated-partner#age
 
 <Accordion title="Watch">
 
-![](https://fast.wistia.com/embed/medias/3ypfld8enr/swatch)
+<Embed title="[Legacy] X Ads (formerly Twitter Ads) integration setup" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/3ypfld8enr" height="556px" />
 
 </Accordion>
 

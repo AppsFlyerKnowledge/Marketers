@@ -13,6 +13,11 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-guy-sarfatty
+    - Marketers
+    - Web Attribution
+    - Agencies
   created_at: '2026-02-03T15:23:52Z'
   edited_at: '2026-08-30T17:19:30Z'
   id: 43485611331473

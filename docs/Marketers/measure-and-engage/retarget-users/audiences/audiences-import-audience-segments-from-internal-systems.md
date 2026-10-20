@@ -13,6 +13,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-neama-benhabib
+    - Marketers
+    - Audience Segmentation
   created_at: '2020-09-15T10:45:43Z'
   edited_at: '2026-10-05T06:46:48Z'
   id: 360013291857
@@ -22,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360013291857-Audiences-Import-audience-segments-from-internal-systems
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## Why import audiences?
 
 In certain circumstances, you may have predefined audience segments in your internal systems. Importing these audiences (as lists of device and/or user identifiers) to AppsFlyer allows you to use Audiences as your central point for connecting and maintaining all of your audience segments with your advertising partners. Additionally, it enables you to take full advantage of other Audiences features, such as identifier matching/data enrichment and connected campaign metrics.

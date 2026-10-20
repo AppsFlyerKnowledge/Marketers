@@ -15,6 +15,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-gil-or
+    - Marketers
+    - SKAdNetwork (SKAN)
   created_at: '2021-08-02T07:18:18Z'
   edited_at: '2025-05-28T09:43:16Z'
   id: 4404976682257

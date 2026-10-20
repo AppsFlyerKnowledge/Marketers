@@ -11,6 +11,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-niv-klein
+    - Marketers
+    - Incrementality
   created_at: '2023-03-05T12:31:35Z'
   edited_at: '2025-07-06T10:54:14Z'
   id: 13479545385489

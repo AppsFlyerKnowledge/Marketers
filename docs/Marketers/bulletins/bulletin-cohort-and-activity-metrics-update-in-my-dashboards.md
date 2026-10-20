@@ -9,6 +9,10 @@ table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-maya-kahane
+    - Marketers
+    - Marketing Analytics
   created_at: '2026-04-19T14:38:57Z'
   edited_at: '2026-10-14T09:45:16Z'
   id: 45887523041425

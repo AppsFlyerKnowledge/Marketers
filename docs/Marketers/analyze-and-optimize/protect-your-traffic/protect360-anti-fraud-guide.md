@@ -19,6 +19,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roy-yanai
+    - Marketers
+    - Protect360
   created_at: '2016-12-06T07:47:17Z'
   edited_at: '2025-09-17T10:12:30Z'
   id: 218254203
@@ -28,6 +32,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/218254203-Protect360-anti-fraud-guide
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
 
 ## Protect360 overview

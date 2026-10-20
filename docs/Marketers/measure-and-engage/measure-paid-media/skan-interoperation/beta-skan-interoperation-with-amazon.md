@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-gil-or
+    - Marketers
+    - SKAdNetwork (SKAN)
   created_at: '2024-08-15T09:36:46Z'
   edited_at: '2026-09-08T06:52:18Z'
   id: 27548444974353
@@ -21,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/27548444974353--Beta-SKAN-interoperation-with-Amazon
 ---
+<span class="af-tag af-tag--beta-feature">Beta feature</span>
+
 > 📘 **Note**
 >
 > To participate in this closed beta, notify your Amazon representative.

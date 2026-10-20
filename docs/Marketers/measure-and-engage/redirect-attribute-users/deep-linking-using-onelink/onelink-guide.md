@@ -14,6 +14,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-asaf-mashiah
+    - Marketers
+    - Smart Banners and Scripts
   created_at: '2017-10-19T08:53:16Z'
   edited_at: '2026-05-13T07:18:11Z'
   id: 115005248543

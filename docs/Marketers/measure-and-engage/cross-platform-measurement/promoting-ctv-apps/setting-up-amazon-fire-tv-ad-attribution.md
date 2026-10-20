@@ -17,6 +17,11 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roi-tamir
+    - Marketers
+    - CTV Attribution
+    - Agencies
   created_at: '2019-01-23T14:07:37Z'
   edited_at: '2024-08-14T06:58:21Z'
   id: 360000808118

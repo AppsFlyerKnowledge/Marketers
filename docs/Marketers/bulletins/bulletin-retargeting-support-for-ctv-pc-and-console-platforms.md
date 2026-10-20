@@ -8,6 +8,10 @@ table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roi-tamir
+    - Marketers
+    - CTV Attribution
   created_at: '2026-07-07T14:08:17Z'
   edited_at: '2026-08-12T08:37:22Z'
   id: 48515925079313

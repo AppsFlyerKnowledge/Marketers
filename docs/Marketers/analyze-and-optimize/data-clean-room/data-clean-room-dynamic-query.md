@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-inbar-agassi
+    - Marketers
+    - Data Clean Room
   created_at: '2023-09-20T10:05:34Z'
   edited_at: '2024-12-11T09:29:24Z'
   id: 18704719821329
@@ -21,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/18704719821329-Data-Clean-Room-Dynamic-Query
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## Overview
 
 ### Why use Dynamic Query?

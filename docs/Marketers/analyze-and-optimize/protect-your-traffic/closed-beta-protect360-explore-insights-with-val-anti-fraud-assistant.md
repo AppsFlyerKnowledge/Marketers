@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roy-yanai
+    - Marketers
+    - Protect360
   created_at: '2025-06-23T14:26:18Z'
   edited_at: '2025-07-28T11:12:52Z'
   id: 36467082193553

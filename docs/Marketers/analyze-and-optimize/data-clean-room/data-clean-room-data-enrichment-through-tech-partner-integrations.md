@@ -11,6 +11,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-inbar-agassi
+    - Marketers
+    - Data Clean Room
   created_at: '2023-03-26T08:07:17Z'
   edited_at: '2026-05-31T11:54:51Z'
   id: 14035927509137
@@ -20,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/14035927509137-Data-Clean-Room-Data-enrichment-through-tech-partner-integrations
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ![beta feature](https://files.readme.io/d57432ddeb4d168760f9acd97f4287473658a8528edc1114ecee8ee2f8e9c9b2-16484830033425.png)
 
 > 📘 **Try out this new feature!**

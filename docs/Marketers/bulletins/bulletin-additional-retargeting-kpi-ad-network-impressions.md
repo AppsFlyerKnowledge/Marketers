@@ -12,6 +12,12 @@ table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-moran-davida
+    - Marketers
+    - Mobile Attribution
+    - Agencies
+    - Ad Networks
   created_at: '2020-01-06T11:46:25Z'
   edited_at: '2024-11-11T13:24:45Z'
   id: 360004587258

@@ -14,6 +14,11 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roy-negri
+    - Marketers
+    - Platform essentials
+    - Agencies
   created_at: '2016-08-23T11:55:41Z'
   edited_at: '2026-09-20T12:08:48Z'
   id: 212017846
@@ -29,7 +34,7 @@ App attribution **determines which campaigns, partners, and channels drive your 
 
 ## What can you do with AppsFlyer?
 
-![](https://fast.wistia.com/embed/medias/471j74dt90/swatch)
+<Embed title="Welcome to AppsFlyer" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/471j74dt90" height="417px" />
 
 **At a glance:** How to log in to your account for the first time and how to switch between your accounts.
 

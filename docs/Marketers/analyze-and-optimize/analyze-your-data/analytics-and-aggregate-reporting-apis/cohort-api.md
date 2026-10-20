@@ -16,6 +16,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-nohar-avigal
+    - Marketers
+    - Marketing Analytics
   created_at: '2020-01-14T07:04:32Z'
   edited_at: '2026-05-04T15:23:53Z'
   id: 360004799057
@@ -24,6 +28,8 @@ x-zendesk:
   section_id: 6550976670225
   url: https://support.appsflyer.com/hc/en-us/articles/360004799057-Cohort-API
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## Cohort API
 
 The Cohort API is used to get cohorted campaign performance data from the AppsFlyer platform. It is functionally equivalent to the [Cohort dashboard](/docs/cohort-and-retention-dashboard).

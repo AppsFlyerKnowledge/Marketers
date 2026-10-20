@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-inbar-agassi
+    - Marketers
+    - Data Clean Room
   created_at: '2022-03-06T08:23:55Z'
   edited_at: '2024-09-04T08:34:44Z'
   id: 4591167507217
@@ -21,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4591167507217-Data-Clean-Room-Setting-up-cloud-services
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## Overview
 
 Preparing to use the Data Clean Room (DCR) involves setting up:

@@ -13,6 +13,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-yael-sharabi
+    - Marketers
+    - Data Clean Room
   created_at: '2024-06-25T07:41:51Z'
   edited_at: '2025-12-18T10:57:39Z'
   id: 26183285566353
@@ -22,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/26183285566353-Data-Collaboration-Platform-DCP-guide
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ![53877 Need KB image for a new DCP KB (1) - Blurred.png](https://files.readme.io/09539acd55618af4f99fb3a1118c7ba7ed9273ecabf7d80b007f95ca236d82b9-38491408127633.png)
 
 ## About the Data Collaboration Platform (DCP)

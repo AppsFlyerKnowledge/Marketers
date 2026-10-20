@@ -11,6 +11,11 @@ table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roy-negri
+    - Marketers
+    - Platform essentials
+    - Agencies
   created_at: '2019-12-02T14:01:53Z'
   edited_at: '2025-12-14T14:20:57Z'
   id: 360004013198
@@ -38,6 +43,6 @@ Watch the video below to learn:
 >
 > **Note:** If the advertiser deactivates the partner without first turning off these settings, the agencies may continue to use these attribution capabilities.
 
-![](https://fast.wistia.com/embed/medias/3oc17c9r89/swatch)
+<Embed title="Set up agencies" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/3oc17c9r89" height="556px" />
 
 <div data-zendesk-anchors="h_01KC9MDDRPTB05PV6NCGZVFRMJ=important" />

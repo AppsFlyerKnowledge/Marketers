@@ -9,6 +9,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-gil-or
+    - Marketers
+    - Cross-Platform Measurement
   created_at: '2020-04-21T04:53:54Z'
   edited_at: '2024-02-01T14:21:50Z'
   id: 360007630318

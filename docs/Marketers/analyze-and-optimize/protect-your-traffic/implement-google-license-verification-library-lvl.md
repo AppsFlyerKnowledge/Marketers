@@ -13,6 +13,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roy-yanai
+    - Marketers
+    - Protect360
   created_at: '2023-07-27T14:45:46Z'
   edited_at: '2025-08-06T08:14:01Z'
   id: 17329535522961
@@ -22,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/17329535522961-Implement-Google-License-Verification-Library-LVL
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## Overview
 
 The License Verification Library (LVL) is a library you can add to your apps (downloadable from the Android SDK) that handles all of the licensing-related communication with the Google Play licensing service.

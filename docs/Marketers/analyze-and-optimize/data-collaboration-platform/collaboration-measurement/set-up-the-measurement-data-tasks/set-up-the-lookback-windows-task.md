@@ -10,6 +10,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-yael-sharabi
+    - Marketers
+    - Data Clean Room
   created_at: '2025-08-18T11:38:51Z'
   edited_at: '2025-08-26T00:01:05Z'
   id: 38191154658193

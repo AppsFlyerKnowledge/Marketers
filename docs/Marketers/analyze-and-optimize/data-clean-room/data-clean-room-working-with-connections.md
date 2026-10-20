@@ -11,6 +11,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-inbar-agassi
+    - Marketers
+    - Data Clean Room
   created_at: '2023-03-20T13:18:17Z'
   edited_at: '2024-09-04T08:35:26Z'
   id: 13886278812817
@@ -20,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/13886278812817-Data-Clean-Room-Working-with-connections
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## Overview
 
 Once you have set up your cloud services for use with the Data Clean Room (DCR), the next step is to connect them to the DCR.

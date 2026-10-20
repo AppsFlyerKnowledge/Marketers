@@ -16,6 +16,11 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roi-tamir
+    - Marketers
+    - Mobile Attribution
+    - Ad Networks
   created_at: '2024-06-24T07:50:19Z'
   id: 26152436542097
   locale: en-us

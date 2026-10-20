@@ -11,6 +11,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-nohar-avigal
+    - Marketers
+    - Marketing Analytics
   created_at: '2023-06-06T09:28:20Z'
   edited_at: '2025-01-01T11:17:18Z'
   id: 15920604187921
@@ -20,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/15920604187921-Custom-dimensions
 ---
-![](https://fast.wistia.com/embed/medias/tvcdofnwjo/swatch)
+<Embed title="Custom dimensions" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/tvcdofnwjo" height="417px" />
 
 ## Overview
 

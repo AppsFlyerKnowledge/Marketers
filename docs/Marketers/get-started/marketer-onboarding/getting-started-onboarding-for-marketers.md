@@ -15,6 +15,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roy-negri
+    - Marketers
+    - Platform essentials
   created_at: '2015-01-18T11:03:01Z'
   edited_at: '2025-03-25T11:21:10Z'
   id: 207033486
@@ -24,7 +28,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207033486-Getting-started-Onboarding-for-marketers
 ---
-![](https://fast.wistia.com/embed/medias/gamcb25kgu/swatch)
+<Embed title="Getting started—Onboarding for marketers" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/gamcb25kgu" height="417px" />
 
 ## Introduction
 

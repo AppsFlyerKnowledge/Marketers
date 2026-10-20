@@ -8,6 +8,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-guy-sarfatty
+    - Marketers
+    - Mobile Attribution
   created_at: '2024-04-10T12:17:00Z'
   edited_at: '2026-08-13T12:48:39Z'
   id: 24073235369617

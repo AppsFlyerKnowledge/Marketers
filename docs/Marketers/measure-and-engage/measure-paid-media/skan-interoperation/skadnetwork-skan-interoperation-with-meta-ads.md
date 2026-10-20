@@ -15,6 +15,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-gil-or
+    - Marketers
+    - SKAdNetwork (SKAN)
   created_at: '2021-01-17T10:08:28Z'
   edited_at: '2026-09-15T11:51:07Z'
   id: 360017095198
@@ -24,7 +28,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360017095198-SKAdNetwork-SKAN-interoperation-with-Meta-ads
 ---
-![](https://fast.wistia.com/embed/medias/15jnbml3h7/swatch)
+<Embed title="SKAdNetwork (SKAN) interoperation with Meta ads" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/15jnbml3h7" height="417px" />
 
 ## SKAN interoperability: AppsFlyer &lt;-> Meta ads
 

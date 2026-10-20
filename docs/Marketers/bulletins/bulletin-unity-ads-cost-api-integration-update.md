@@ -7,6 +7,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-maytav-avnat
+    - Marketers
+    - ROI360
   created_at: '2024-06-20T14:43:15Z'
   edited_at: '2024-08-08T08:32:27Z'
   id: 26078530790289

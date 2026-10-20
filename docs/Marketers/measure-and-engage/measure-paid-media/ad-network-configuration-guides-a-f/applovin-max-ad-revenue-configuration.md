@@ -13,6 +13,11 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-michael-talapov
+    - Marketers
+    - ROI360
+    - Ad Networks
   created_at: '2020-01-09T10:53:21Z'
   edited_at: '2026-06-16T09:35:28Z'
   id: 360004707378

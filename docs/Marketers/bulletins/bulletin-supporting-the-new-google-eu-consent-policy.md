@@ -10,6 +10,12 @@ table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-shay-maoz
+    - Marketers
+    - Mobile Attribution
+    - Agencies
+    - Ad Networks
   created_at: '2024-01-14T13:18:23Z'
   edited_at: '2024-03-05T07:21:55Z'
   id: 21660448176785

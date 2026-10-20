@@ -10,6 +10,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-yael-sharabi
+    - Marketers
+    - Audience Activation
   created_at: '2024-04-28T14:01:34Z'
   edited_at: '2026-07-27T06:59:59Z'
   id: 24604528827921

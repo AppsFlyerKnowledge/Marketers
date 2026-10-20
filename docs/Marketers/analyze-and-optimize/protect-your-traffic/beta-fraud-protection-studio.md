@@ -13,6 +13,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roy-yanai
+    - Marketers
+    - Protect360
   created_at: '2024-12-08T06:38:30Z'
   edited_at: '2026-08-19T10:37:41Z'
   id: 30754984040977
@@ -22,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/30754984040977--Beta-Fraud-protection-studio
 ---
+<span class="af-tag af-tag--beta-feature">Beta feature</span>
+
 ## About fraud protection studio
 
 Fraud protection studio introduces a tagged detection status.

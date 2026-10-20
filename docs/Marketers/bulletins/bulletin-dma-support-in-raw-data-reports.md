@@ -8,6 +8,10 @@ table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-rona-einat
+    - Marketers
+    - Raw Reports
   created_at: '2024-05-29T16:52:12Z'
   edited_at: '2024-09-11T11:28:36Z'
   id: 25485269115793

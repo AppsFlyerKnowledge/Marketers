@@ -11,6 +11,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-asaf-mashiah
+    - Marketers
+    - OneLink
   created_at: '2020-10-27T11:26:30Z'
   edited_at: '2026-09-14T13:45:26Z'
   id: 360014821438

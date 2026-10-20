@@ -15,6 +15,11 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-maytav-avnat
+    - Marketers
+    - Agencies
+    - ROI360
   created_at: '2021-06-03T13:53:23Z'
   edited_at: '2025-08-07T17:10:38Z'
   id: 4402103019665
@@ -24,6 +29,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4402103019665-Incorporate-agency-fees-into-campaign-costs
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## Overview
 
 Agency fee rules are defined by the advertiser (with AppsFlyer account admin privileges) in the rule builder using customized conditions that add fee percentages to the cost of agency campaigns for specific apps and/or media sources.

@@ -11,6 +11,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-niv-klein
+    - Marketers
+    - Incrementality
   created_at: '2025-11-18T06:58:45Z'
   edited_at: '2026-07-30T09:04:57Z'
   id: 41021758795025
@@ -20,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/41021758795025-Incrementality-for-UA-Guide
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 <Embed title="Incrementality for UA Guide" typeOfEmbed="youtube" url="https://www.youtube.com/embed/vGrLyOvgdN0?si=91ZV8Xw25mmShB_F" providerUrl="https://www.youtube.com" />
 
 ## About Incrementality for UA

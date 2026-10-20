@@ -14,6 +14,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-ravid-naori
+    - Marketers
+    - Raw Reports
   created_at: '2013-04-24T15:19:42Z'
   edited_at: '2026-08-13T16:57:14Z'
   id: 207034356
@@ -23,6 +27,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207034356-Push-API-streaming-raw-data
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ![6970_Push_API_image.png](https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png)
 
 ## Push API

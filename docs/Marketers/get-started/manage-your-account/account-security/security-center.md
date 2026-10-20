@@ -12,6 +12,11 @@ table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roy-negri
+    - Marketers
+    - Platform essentials
+    - Ad Networks
   created_at: '2021-12-26T12:49:02Z'
   edited_at: '2026-09-30T07:39:07Z'
   id: 4414816418065

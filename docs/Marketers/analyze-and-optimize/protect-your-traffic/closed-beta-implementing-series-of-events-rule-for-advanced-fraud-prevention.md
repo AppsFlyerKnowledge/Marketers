@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roy-yanai
+    - Marketers
+    - Protect360
   created_at: '2024-07-10T09:41:19Z'
   edited_at: '2026-09-28T07:49:15Z'
   id: 26596474431761
@@ -21,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/26596474431761--Closed-beta-Implementing-Series-of-Events-Rule-for-advanced-fraud-prevention
 ---
+<span class="af-tag af-tag--closed-beta">Closed beta</span>
+
 ## Intro
 
 Advertisers can define an event sequence a real user should go through in your app. AppsFlyer evaluates this sequence using an evaluation window that starts the day the rule is saved: it grows daily up to 30 days, then becomes a rolling 30-day window that shifts forward every day. Events fired before the rule was created are never evaluated.

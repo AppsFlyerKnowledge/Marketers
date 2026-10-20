@@ -16,6 +16,11 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roi-tamir
+    - Marketers
+    - Mobile Attribution
+    - Ad Networks
   created_at: '2024-05-29T10:14:59Z'
   id: 25471654983825
   locale: en-us
@@ -24,6 +29,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/25471654983825--Closed-beta-Android-privacy-sandbox-Attribution-API
 ---
+<span class="af-tag af-tag--closed-beta">Closed beta</span>
+
 [![53090 Android Privacy Sandbox image for KB (1).png](https://files.readme.io/6d9489a792351c33ed0c5f9669fe8bf998c04c8ab665c016aea4c859cec65fe2-26337856151441.png)](https://files.readme.io/6d9489a792351c33ed0c5f9669fe8bf998c04c8ab665c016aea4c859cec65fe2-26337856151441.png)
 
 ## Introduction

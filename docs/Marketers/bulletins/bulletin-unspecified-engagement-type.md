@@ -8,6 +8,10 @@ table_of_contents: false
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-moran-davida
+    - Marketers
+    - Mobile Attribution
   created_at: '2024-12-09T15:17:50Z'
   edited_at: '2025-02-05T10:02:08Z'
   id: 30795194720785

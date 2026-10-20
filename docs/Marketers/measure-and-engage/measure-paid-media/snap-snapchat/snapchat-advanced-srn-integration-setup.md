@@ -16,6 +16,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-shay-maoz
+    - Marketers
+    - Mobile Attribution
   created_at: '2016-06-13T12:28:59Z'
   edited_at: '2026-10-07T11:44:22Z'
   id: 211011983

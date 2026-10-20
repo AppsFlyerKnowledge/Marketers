@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roi-tamir
+    - Marketers
+    - PC & Console Attribution
   created_at: '2023-04-03T07:18:07Z'
   edited_at: '2026-05-19T08:10:01Z'
   id: 14241298075921

@@ -15,6 +15,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-nohar-avigal
+    - Marketers
+    - Marketing Analytics
   created_at: '2017-03-16T13:11:23Z'
   edited_at: '2026-03-19T11:52:08Z'
   id: 115001421846
@@ -24,6 +28,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115001421846-Pivot-table-user-metrics
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## About pivot reports page
 
 Using Pivot, you generate customized reports containing user acquisition metrics. Pivot comes with a number of pre-defined reports to use as a base from which you create your customized reports. Reports created by a given account user are available to all users.

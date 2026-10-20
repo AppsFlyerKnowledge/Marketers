@@ -16,6 +16,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-asaf-mashiah
+    - Marketers
+    - OneLink
   created_at: '2019-12-31T10:43:24Z'
   edited_at: '2026-09-23T11:00:22Z'
   id: 360004556077
@@ -25,6 +29,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360004556077-Email-service-provider-ESP-integration-guide
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## About ESP integration
 
 Email marketing is a simple, powerful, and effective way of engaging with customers and potential customers. Many marketers rely on email service providers (ESPs) to send large-scale email campaigns to their users. And while this should be a straightforward and simple process, delivering the perfect mobile user journey you envision, this is usually not the case.

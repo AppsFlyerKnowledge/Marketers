@@ -11,6 +11,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-asaf-mashiah
+    - Marketers
+    - Social-to-App
   created_at: '2022-02-22T11:45:43Z'
   edited_at: '2024-12-09T09:17:42Z'
   id: 4460838224273

@@ -12,6 +12,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-shani-elkabetz
+    - Marketers
+    - Marketing Analytics
   created_at: '2016-09-15T11:06:24Z'
   edited_at: '2026-03-18T09:05:20Z'
   id: 212750286

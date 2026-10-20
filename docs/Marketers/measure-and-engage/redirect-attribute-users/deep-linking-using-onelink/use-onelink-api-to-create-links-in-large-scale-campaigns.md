@@ -14,6 +14,11 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - Premium
+    - pm-asaf-mashiah
+    - Marketers
+    - QR-to-App
   created_at: '2018-06-27T12:00:29Z'
   edited_at: '2026-05-13T09:31:09Z'
   id: 360001250345
@@ -23,6 +28,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001250345-Use-OneLink-API-to-create-links-in-large-scale-campaigns
 ---
+<span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
 ## About OneLink API
 
 OneLink API is a premium feature that lets you turn any owned channel into a direct path into your mobile app. By generating personalized short links programmatically, you can deliver customized user journeys at scale, deepen engagement, and drive higher conversions across SMS, email, websites, social posts, and more. With OneLink API, you can:

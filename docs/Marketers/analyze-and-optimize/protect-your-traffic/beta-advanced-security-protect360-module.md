@@ -15,6 +15,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-roy-yanai
+    - Marketers
+    - Protect360
   created_at: '2025-09-17T15:23:22Z'
   edited_at: '2026-09-23T09:06:08Z'
   id: 39145848948625
@@ -24,6 +28,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/39145848948625--Beta-Advanced-Security-Protect360-Module
 ---
+<span class="af-tag af-tag--beta-feature">Beta feature</span>
+
 > 📘 **Important!**
 >
 > The Advanced Security Protect360 Module beta is available to all Protect360 customers. To join, contact your CSM.

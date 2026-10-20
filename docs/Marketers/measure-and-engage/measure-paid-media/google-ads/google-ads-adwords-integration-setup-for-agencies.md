@@ -14,6 +14,11 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-shay-maoz
+    - Marketers
+    - Mobile Attribution
+    - Agencies
   created_at: '2017-07-23T11:26:20Z'
   edited_at: '2026-09-15T09:37:15Z'
   id: 115003669983
@@ -39,7 +44,7 @@ To start agency attribution of Google Ads campaigns with AppsFlyer, follow thes
 
 <Accordion title="Watch">
 
-![](https://fast.wistia.com/embed/medias/fzihkki0qd/swatch)
+<Embed title="Google Ads (AdWords)—Integration setup for agencies" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/fzihkki0qd" height="556px" />
 
 </Accordion>
 

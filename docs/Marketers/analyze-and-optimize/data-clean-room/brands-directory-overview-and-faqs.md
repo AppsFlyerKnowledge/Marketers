@@ -7,6 +7,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-inbar-agassi
+    - Marketers
+    - Data Clean Room
   created_at: '2024-05-07T09:27:31Z'
   edited_at: '2024-05-12T07:07:03Z'
   id: 24853411853329

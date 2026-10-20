@@ -10,6 +10,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-asaf-mashiah
+    - Marketers
+    - QR-to-App
   created_at: '2019-11-21T09:13:52Z'
   edited_at: '2026-05-05T06:54:49Z'
   id: 360003799658

@@ -10,6 +10,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-omer-katzburg
+    - Marketers
+    - Creative Optimization
   created_at: '2024-08-27T09:21:03Z'
   edited_at: '2024-11-10T15:25:29Z'
   id: 27849428801809

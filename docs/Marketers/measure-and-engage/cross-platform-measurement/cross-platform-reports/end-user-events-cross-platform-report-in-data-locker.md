@@ -10,6 +10,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-moran-davida
+    - Marketers
+    - Cross-Platform Measurement
   created_at: '2025-10-07T10:37:56Z'
   edited_at: '2026-09-03T09:06:58Z'
   id: 39748676204817

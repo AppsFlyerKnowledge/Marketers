@@ -14,6 +14,10 @@ metadata:
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
+  content_tags:
+    - pm-neama-benhabib
+    - Marketers
+    - Audience Segmentation
   created_at: '2020-12-23T15:39:55Z'
   edited_at: '2026-04-19T12:45:31Z'
   id: 360016791118
