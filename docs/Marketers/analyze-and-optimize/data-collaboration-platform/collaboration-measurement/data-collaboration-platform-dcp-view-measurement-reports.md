@@ -280,7 +280,7 @@ The report is comprised of the following dimensions and metrics categorized as c
 
 </Accordion>
 
-<Accordion title="Let see if its working" icon="fa-info-circle">
+<Accordion title="Let's see if it's working" icon="fa-info-circle">
   This is to see if the anchors work when you add it manually.
 </Accordion>
 
