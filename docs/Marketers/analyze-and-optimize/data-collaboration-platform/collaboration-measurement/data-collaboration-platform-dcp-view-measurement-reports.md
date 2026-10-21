@@ -280,4 +280,8 @@ The report is comprised of the following dimensions and metrics categorized as c
 
 </Accordion>
 
+<Accordion title="Let see if its working" icon="fa-info-circle">
+  This is to see if the anchors work when you add it manually.
+</Accordion>
+
 <div data-zendesk-anchors="h_01JQY1FA02JN6VR67HJ5118SFF=what-are-dimensions-and-metrics h_01JR5NBE6NQ22QCFZG9XRVGM45=dimensions h_01JR5NC59TQ45QPWP7JG6BQKXX=metrics h_01JQY33FZ2H59YZVVXBN9J61RE=what-are-basic-and-calculated-fields h_01JQY1FA03AXH588Z5C9HCJHMS=create-a-predefined-report h_01JQY1FA038V0V1PKBF1CC0B5J=create-a-custom-report h_01JQY1FA035K7VWX4BDC796SVT=1-open-the-new-report-page h_01JQY1FA03Z0W8N8PFVGEC3HRM=2-set-the-report-type h_01JQY1FA03CWP0GSJY46CEJRJY=3-set-the-report-scope h_01JQY1FA03WA8NNB4RT1VBK0F5=4-set-the-report-dimensions-and-metrics h_01JQY1FA03PA40NCTZXHWGQ86C=create-calculated-field h_01JQY1FA03TMN4N7V3F83EK4EY=5-manage-dimension-priority h_01JQY1FA03PRSGHSKNTKNV4NH3=6-set-the-report-schedule-and-destination h_01JQY1FA03S41J7TR5HAF6G8PW=report-scheme h_01JQY1FA0494AK29M0R7ZRJ4DT=calculated-fields h_01JQY1FA0486WK4GHV5G3TZ77V=attribution-fields h_01JQY1FA04DTN2C6A541J25RZJ=scheme-fields" />
