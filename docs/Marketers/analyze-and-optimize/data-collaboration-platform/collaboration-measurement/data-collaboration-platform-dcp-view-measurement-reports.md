@@ -76,13 +76,11 @@ To create a custom report, follow these steps:
 <div id="1-open-the-new-report-page" />
 
 <Accordion title="1. Open the New report page">
-
-1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
-2. On the **Data Collaboration Platform** page, select the relevant collaboration.
-3. On the measurement dashboard, click ![](https://files.readme.io/ed483d2c2b845f1274b3cf84887ea15e0b0384a5f1cf3a5148b1fb8458cd6ec9-34061156892177.png) **C![]() reate report.**
-4. In the dialog that appears click ![](https://files.readme.io/317ded6d0dbe6b0acfee8d3b8c7898dbab1c9b7ae621802fa867f2a6069f5d79-34061156893457.png) **Customize**.
-5. On the **New report** page, perform the listed steps.
-
+  1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
+  2. On the **Data Collaboration Platform** page, select the relevant collaboration.
+  3. On the measurement dashboard, click ![](https://files.readme.io/ed483d2c2b845f1274b3cf84887ea15e0b0384a5f1cf3a5148b1fb8458cd6ec9-34061156892177.png) **C**![]()**&#x20;reate report.**
+  4. In the dialog that appears click ![](https://files.readme.io/317ded6d0dbe6b0acfee8d3b8c7898dbab1c9b7ae621802fa867f2a6069f5d79-34061156893457.png) **Customize**.
+  5. On the **New report** page, perform the listed steps.
 </Accordion>
 
 <div id="2-set-the-report-type" />
@@ -193,7 +191,7 @@ By default, dimensions are removed in reverse order of their position in the **R
 
 </Accordion>
 
-<div id="6-set-the-report-schedule-and-destination" />
+
 
 <Accordion title="6. Set the report schedule and destination">
 
