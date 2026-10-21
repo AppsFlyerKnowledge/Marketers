@@ -13,7 +13,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551084534545-Integrate-3rd-party-platforms
 ---
-- <Anchor target="_blank" href="/marketers/docs/3rd-party-platforms">3rd-party platforms</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/firebase-and-google-tag-manager">Firebase and Google Tag Manager</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/google-analytics">Google Analytics</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/discrepancies-between-appsflyer-and-third-party-platforms">Discrepancies between AppsFlyer and third-party platforms</Anchor>
+- [3rd-party platforms](/docs/3rd-party-platforms)
+- [Firebase and Google Tag Manager](/docs/firebase-and-google-tag-manager)
+- [Google Analytics](/docs/google-analytics)
+- [Discrepancies between AppsFlyer and third-party platforms](/docs/discrepancies-between-appsflyer-and-third-party-platforms)

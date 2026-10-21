@@ -15,10 +15,10 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551947798801-Cross-platform-measurement
 ---
-- <Anchor target="_blank" href="/marketers/docs/overview">Overview</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/cross-platform-reports">Cross platform reports</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/platforms">Platforms</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/promoting-ctv-apps">Promoting CTV apps</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/promoting-console-apps">Promoting Console apps</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/promoting-desktop-apps">Promoting Desktop apps</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/promoting-web-apps">Promoting Web apps</Anchor>
+- [Overview](/docs/overview)
+- [Cross platform reports](/docs/cross-platform-reports)
+- [Platforms](/docs/platforms)
+- [Promoting CTV apps](/docs/promoting-ctv-apps)
+- [Promoting Console apps](/docs/promoting-console-apps)
+- [Promoting Desktop apps](/docs/promoting-desktop-apps)
+- [Promoting Web apps](/docs/promoting-web-apps)

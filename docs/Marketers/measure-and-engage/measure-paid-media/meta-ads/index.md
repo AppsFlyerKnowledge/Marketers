@@ -12,13 +12,13 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6551109855761-Meta-ads
 ---
-- <Anchor target="_blank" href="/marketers/docs/meta-ads-integration-setup">Meta Ads—integration setup</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/meta-ads-create-web-campaigns-for-website-apps">Meta Ads—Create web campaigns for website apps</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/meta-ads-web-integration-setup-for-pc-and-console-apps">Meta Ads—Web integration setup for PC and console apps</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/meta-ads-create-web-based-campaigns">Meta Ads— Create web-based campaigns</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/meta-ads-in-app-event-mapping">Meta ads in-app event mapping</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/meta-ads-faq">Meta ads FAQ</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/meta-ads-discrepancies">Meta ads discrepancies</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/meta-ads-aggregate-event-measurement-aem-for-ios">Meta Ads—Aggregate Event Measurement (AEM) for iOS</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/attributing-app-installs-to-non-mobile-ads-from-meta-ads">Attributing app installs to non-mobile ads from Meta ads</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/instagram-mobile-app-install-ads-configuration">Instagram mobile app install ads configuration</Anchor>
+- [Meta Ads—integration setup](/docs/meta-ads-integration-setup)
+- [Meta Ads—Create web campaigns for website apps](/docs/meta-ads-create-web-campaigns-for-website-apps)
+- [Meta Ads—Web integration setup for PC and console apps](/docs/meta-ads-web-integration-setup-for-pc-and-console-apps)
+- [Meta Ads— Create web-based campaigns](/docs/meta-ads-create-web-based-campaigns)
+- [Meta ads in-app event mapping](/docs/meta-ads-in-app-event-mapping)
+- [Meta ads FAQ](/docs/meta-ads-faq)
+- [Meta ads discrepancies](/docs/meta-ads-discrepancies)
+- [Meta Ads—Aggregate Event Measurement (AEM) for iOS](/docs/meta-ads-aggregate-event-measurement-aem-for-ios)
+- [Attributing app installs to non-mobile ads from Meta ads](/docs/attributing-app-installs-to-non-mobile-ads-from-meta-ads)
+- [Instagram mobile app install ads configuration](/docs/instagram-mobile-app-install-ads-configuration)

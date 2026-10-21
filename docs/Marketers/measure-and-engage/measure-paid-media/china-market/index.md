@@ -12,7 +12,7 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6552042145425-China-market
 ---
-- <Anchor target="_blank" href="/marketers/docs/app-promotion-in-china">App promotion in China</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/apply-china-personal-information-protection-law-pipl-solution">Apply China Personal Information Protection Law (PIPL) solution</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/android-app-promotion-in-china">Android app promotion in China</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/ios-app-promotion-in-china">iOS app promotion in China</Anchor>
+- [App promotion in China](/docs/app-promotion-in-china)
+- [Apply China Personal Information Protection Law (PIPL) solution](/docs/apply-china-personal-information-protection-law-pipl-solution)
+- [Android app promotion in China](/docs/android-app-promotion-in-china)
+- [iOS app promotion in China](/docs/ios-app-promotion-in-china)

@@ -13,7 +13,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551190827921-Android-platform
 ---
-- <Anchor target="_blank" href="/marketers/docs/appsflyer-android-sdk-release-notes">AppsFlyer Android SDK release notes</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/android-oaid-implementation-in-the-sdk">Android OAID implementation in the SDK</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/appsflyer-factory-preinstall-using-manifest-android">AppsFlyer factory preinstall using manifest (Android)</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/using-appsflyer-with-twa">Using AppsFlyer with TWA</Anchor>
+- [AppsFlyer Android SDK release notes](/docs/appsflyer-android-sdk-release-notes)
+- [Android OAID implementation in the SDK](/docs/android-oaid-implementation-in-the-sdk)
+- [AppsFlyer factory preinstall using manifest (Android)](/docs/appsflyer-factory-preinstall-using-manifest-android)
+- [Using AppsFlyer with TWA](/docs/using-appsflyer-with-twa)

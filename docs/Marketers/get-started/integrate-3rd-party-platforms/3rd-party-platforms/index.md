@@ -15,37 +15,37 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551199962257-3rd-party-platforms
 ---
-- <Anchor target="_blank" href="/marketers/docs/airship-integration-with-appsflyer">Airship integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/appcharge-integration-with-appsflyer">Appcharge integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/apptweak-integration-with-appsflyer">AppTweak integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/amplitude-integration-with-appsflyer">Amplitude integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/batch-integration-with-appsflyer">Batch integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/braze-formerly-appboy-integration-with-appsflyer">Braze (formerly Appboy) integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/clevertap-integration-with-appsflyer">CleverTap integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/convertro-integration-with-appsflyer">Convertro integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/deltadna-integration-with-appsflyer">deltaDNA integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/eulerian-integration-with-appsflyer">Eulerian integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/gameanalytics-integration-with-appsflyer">GameAnalytics integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/ibm-ubx-integration-guide-with-appsflyer">IBM UBX integration guide with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/insider-integration-with-appsflyer">Insider integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/itunes-app-analytics-integration-with-appsflyer">iTunes App Analytics integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/kahuna-integration-with-appsflyer">Kahuna integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/leanplum-integration-with-appsflyer">Leanplum integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/liquid-integration-with-appsflyer">Liquid integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/localytics-integration-with-appsflyer">Localytics integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/luna-labs-integration-with-appsflyer">Luna Labs integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/medialyzer-integration-with-appsflyer">Medialyzer integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/mixpanel-integration-with-appsflyer">Mixpanel integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/moengage-campaign-configuration">MoEngage campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/mparticle-integration-with-appsflyer">mParticle integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/onesignal-integration-with-appsflyer">OneSignal integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/rockerbox-integration-with-appsflyer">Rockerbox integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/salesforce-marketing-cloud-mobilepush-integration-setup">Salesforce Marketing Cloud MobilePush integration setup</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/segment-integration">Segment integration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/spoteffects-integration-with-appsflyer">Spoteffects integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/swrve-integration-with-appsflyer">Swrve integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/tapcart-integration">Tapcart integration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/tealium-integration-with-appsflyer">Tealium integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/webengage-integration-with-appsflyer">WebEngage integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/winclap-analytics-integration-with-appsflyer">Winclap Analytics integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/xsolla-integration-with-appsflyer">Xsolla integration with AppsFlyer</Anchor>
+- [Airship integration with AppsFlyer](/docs/airship-integration-with-appsflyer)
+- [Appcharge integration with AppsFlyer](/docs/appcharge-integration-with-appsflyer)
+- [AppTweak integration with AppsFlyer](/docs/apptweak-integration-with-appsflyer)
+- [Amplitude integration with AppsFlyer](/docs/amplitude-integration-with-appsflyer)
+- [Batch integration with AppsFlyer](/docs/batch-integration-with-appsflyer)
+- [Braze (formerly Appboy) integration with AppsFlyer](/docs/braze-formerly-appboy-integration-with-appsflyer)
+- [CleverTap integration with AppsFlyer](/docs/clevertap-integration-with-appsflyer)
+- [Convertro integration with AppsFlyer](/docs/convertro-integration-with-appsflyer)
+- [deltaDNA integration with AppsFlyer](/docs/deltadna-integration-with-appsflyer)
+- [Eulerian integration with AppsFlyer](/docs/eulerian-integration-with-appsflyer)
+- [GameAnalytics integration with AppsFlyer](/docs/gameanalytics-integration-with-appsflyer)
+- [IBM UBX integration guide with AppsFlyer](/docs/ibm-ubx-integration-guide-with-appsflyer)
+- [Insider integration with AppsFlyer](/docs/insider-integration-with-appsflyer)
+- [iTunes App Analytics integration with AppsFlyer](/docs/itunes-app-analytics-integration-with-appsflyer)
+- [Kahuna integration with AppsFlyer](/docs/kahuna-integration-with-appsflyer)
+- [Leanplum integration with AppsFlyer](/docs/leanplum-integration-with-appsflyer)
+- [Liquid integration with AppsFlyer](/docs/liquid-integration-with-appsflyer)
+- [Localytics integration with AppsFlyer](/docs/localytics-integration-with-appsflyer)
+- [Luna Labs integration with AppsFlyer](/docs/luna-labs-integration-with-appsflyer)
+- [Medialyzer integration with AppsFlyer](/docs/medialyzer-integration-with-appsflyer)
+- [Mixpanel integration with AppsFlyer](/docs/mixpanel-integration-with-appsflyer)
+- [MoEngage campaign configuration](/docs/moengage-campaign-configuration)
+- [mParticle integration with AppsFlyer](/docs/mparticle-integration-with-appsflyer)
+- [OneSignal integration with AppsFlyer](/docs/onesignal-integration-with-appsflyer)
+- [Rockerbox integration with AppsFlyer](/docs/rockerbox-integration-with-appsflyer)
+- [Salesforce Marketing Cloud MobilePush integration setup](/docs/salesforce-marketing-cloud-mobilepush-integration-setup)
+- [Segment integration](/docs/segment-integration)
+- [Spoteffects integration with AppsFlyer](/docs/spoteffects-integration-with-appsflyer)
+- [Swrve integration with AppsFlyer](/docs/swrve-integration-with-appsflyer)
+- [Tapcart integration](/docs/tapcart-integration)
+- [Tealium integration with AppsFlyer](/docs/tealium-integration-with-appsflyer)
+- [WebEngage integration with AppsFlyer](/docs/webengage-integration-with-appsflyer)
+- [Winclap Analytics integration with AppsFlyer](/docs/winclap-analytics-integration-with-appsflyer)
+- [Xsolla integration with AppsFlyer](/docs/xsolla-integration-with-appsflyer)

@@ -12,5 +12,5 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/50467263168657-Cross-platform-reports
 ---
-- <Anchor target="_blank" href="/marketers/docs/conversions-cross-paltform-report">Conversions cross-platform report</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/end-user-events-cross-platform-report-in-data-locker">End-user events cross-platform report in Data Locker</Anchor>
+- [Conversions cross-platform report](/docs/conversions-cross-paltform-report)
+- [End-user events cross-platform report in Data Locker](/docs/end-user-events-cross-platform-report-in-data-locker)

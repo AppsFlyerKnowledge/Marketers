@@ -14,4 +14,4 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/41021664993425-Signal-Hub
 ---
-- <Anchor target="_blank" href="/marketers/docs/signal-hub-guide">Signal Hub guide</Anchor>
+- [Signal Hub guide](/docs/signal-hub-guide)

@@ -13,4 +13,4 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/50896333547281-Web-platform
 ---
-- <Anchor target="_blank" href="/marketers/docs/integrate-appsflyer-web-sdk-web-platform">Integrate AppsFlyer Web SDK</Anchor>
+- [Integrate AppsFlyer Web SDK](/docs/integrate-appsflyer-web-sdk-web-platform)

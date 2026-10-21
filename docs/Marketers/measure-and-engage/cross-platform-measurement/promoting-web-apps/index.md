@@ -13,5 +13,5 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/15329056926353-Promoting-Web-apps
 ---
-- <Anchor target="_blank" href="/marketers/docs/appsflyer-web-attribution">AppsFlyer Web Attribution</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba">People Based Attribution (PBA)</Anchor>
+- [AppsFlyer Web Attribution](/docs/appsflyer-web-attribution)
+- [People Based Attribution (PBA)](/docs/people-based-attribution-pba)

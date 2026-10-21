@@ -228,7 +228,7 @@ The metrics covers data of attributions, revenue, and the unique users performin
         Boolean
       </td>
       <td>
-        The value of the field can be either \*TRUE\* or \*FALSE\*
+        The value of the field can be either *TRUE* or *FALSE*
       </td>
     </tr>
     <tr>

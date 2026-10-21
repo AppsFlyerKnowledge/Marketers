@@ -15,10 +15,10 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/4419063475217-Creative-Optimization
 ---
-- <Anchor target="_blank" href="/marketers/docs/creative-optimization-onboarding-guide">Creative Optimization—onboarding guide</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide">Creative Optimization guide</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/creative-optimization-overview-dashboard">Creative Optimization Overview dashboard</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/creative-optimization-discovery-ai-dashboard">Creative Optimization Discovery AI dashboard</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/creative-optimization-partner-integrations">Creative Optimization partner integrations</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/creative-management">Creative Management</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/creative-optimization-etl-reporting">Creative Optimization ETL reporting</Anchor>
+- [Creative Optimization—onboarding guide](/docs/creative-optimization-onboarding-guide)
+- [Creative Optimization guide](/docs/creative-optimization-guide)
+- [Creative Optimization Overview dashboard](/docs/creative-optimization-overview-dashboard)
+- [Creative Optimization Discovery AI dashboard](/docs/creative-optimization-discovery-ai-dashboard)
+- [Creative Optimization partner integrations](/docs/creative-optimization-partner-integrations)
+- [Creative Management](/docs/creative-management)
+- [Creative Optimization ETL reporting](/docs/creative-optimization-etl-reporting)

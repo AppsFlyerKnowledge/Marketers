@@ -12,13 +12,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/43560690387729-AppsFlyer-Web-Attribution
 ---
-- <Anchor target="_blank" href="/marketers/docs/web-performance-measurement-overview">Web Performance Measurement - Overview</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/migrate-from-pba-to-web-performance-measurement">Migrate from PBA to Web Performance Measurement</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/onboard-web-performance-measurement">Onboard Web Performance Measurement</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/configure-web-performance-measurement-settings">Configure Web Performance Measurement settings</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/integrate-appsflyer-web-sdk">Integrate AppsFlyer Web SDK</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/use-the-web-sdk-test-page">Use the Web SDK Test page</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/about-traffic-source-resolution">About traffic source resolution</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/choose-attribution-parameters-for-landing-page-urls">Choose attribution parameters for landing page URLs</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/server-to-server-s2s-api-for-web-performance-measurement">Server-to-Server (S2S) API for Web Performance Measurement</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/export-web-performance-measurement-report-data-from-data-locker">Export Web Performance Measurement report data from Data Locker</Anchor>
+- [Web Performance Measurement - Overview](/docs/web-performance-measurement-overview)
+- [Migrate from PBA to Web Performance Measurement](/docs/migrate-from-pba-to-web-performance-measurement)
+- [Onboard Web Performance Measurement](/docs/onboard-web-performance-measurement)
+- [Configure Web Performance Measurement settings](/docs/configure-web-performance-measurement-settings)
+- [Integrate AppsFlyer Web SDK](/docs/integrate-appsflyer-web-sdk)
+- [Use the Web SDK Test page](/docs/use-the-web-sdk-test-page)
+- [About traffic source resolution](/docs/about-traffic-source-resolution)
+- [Choose attribution parameters for landing page URLs](/docs/choose-attribution-parameters-for-landing-page-urls)
+- [Server-to-Server (S2S) API for Web Performance Measurement](/docs/server-to-server-s2s-api-for-web-performance-measurement)
+- [Export Web Performance Measurement report data from Data Locker](/docs/export-web-performance-measurement-report-data-from-data-locker)

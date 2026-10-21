@@ -15,8 +15,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551188365457-Meta-campaign-management-partners
 ---
-- <Anchor target="_blank" href="/marketers/docs/configuring-meta-campaign-management-partners">Configuring Meta campaign management partners</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/bidalgo-meta-campaign-management-partner-configuration">Bidalgo (Meta campaign management partner) configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/kenshoo-meta-campaign-management-partner-configuration">Kenshoo (Meta campaign management partner) configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/adquant-meta-campaign-management-partner-configuration">Adquant (Meta campaign management partner) configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/webpals-mobile-meta-campaign-management-partner-configuration">Webpals mobile (Meta campaign management partner) configuration</Anchor>
+- [Configuring Meta campaign management partners](/docs/configuring-meta-campaign-management-partners)
+- [Bidalgo (Meta campaign management partner) configuration](/docs/bidalgo-meta-campaign-management-partner-configuration)
+- [Kenshoo (Meta campaign management partner) configuration](/docs/kenshoo-meta-campaign-management-partner-configuration)
+- [Adquant (Meta campaign management partner) configuration](/docs/adquant-meta-campaign-management-partner-configuration)
+- [Webpals mobile (Meta campaign management partner) configuration](/docs/webpals-mobile-meta-campaign-management-partner-configuration)

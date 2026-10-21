@@ -13,28 +13,28 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551990971793-Ad-network-configuration-guides-A-F
 ---
-- <Anchor target="_blank" href="/marketers/docs/adobe">Adobe</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/rzr-formerly-aarki-campaign-configuration">RZR (formerly Aarki) campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/adcash-campaign-configuration">Adcash campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/adcolony-campaign-configuration">AdColony campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/adform-campaign-configuration">Adform campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/addict-mobile-campaign-configuration">Addict Mobile campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/adikteev-campaign-configuration">Adikteev campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/appgrowth-campaign-configuration">Appgrowth campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/applovin-campaign-configuration">AppLovin campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/applovin-max-ad-revenue-configuration">Applovin MAX ad revenue configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/appnext-campaign-configuration">Appnext campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/appodeal-campaign-configuration">Appodeal campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/aura-from-unity-campaign-configuration">Aura from Unity campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/avow-gmbh-campaign-configuration">Avow GmbH campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/awin-campaign-configuration">Awin campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/bidease-campaign-configuration">Bidease campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/bing-campaign-configuration">Bing campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/chartboost-campaign-configuration">Chartboost campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/cheetah-mobile-campaign-configuration">Cheetah Mobile campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/clickzoot-campaign-configuration">ClickZoot campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/criteo-campaign-configuration">Criteo campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/legacy-criteo-campaign-configuration">\[Legacy\] Criteo campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/datalift-campaign-configuration">DataLift campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/fyber-campaign-configuration">Fyber campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/fiksu-campaign-configuration">Fiksu campaign configuration</Anchor>
+- [Adobe](/docs/adobe)
+- [RZR (formerly Aarki) campaign configuration](/docs/rzr-formerly-aarki-campaign-configuration)
+- [Adcash campaign configuration](/docs/adcash-campaign-configuration)
+- [AdColony campaign configuration](/docs/adcolony-campaign-configuration)
+- [Adform campaign configuration](/docs/adform-campaign-configuration)
+- [Addict Mobile campaign configuration](/docs/addict-mobile-campaign-configuration)
+- [Adikteev campaign configuration](/docs/adikteev-campaign-configuration)
+- [Appgrowth campaign configuration](/docs/appgrowth-campaign-configuration)
+- [AppLovin campaign configuration](/docs/applovin-campaign-configuration)
+- [Applovin MAX ad revenue configuration](/docs/applovin-max-ad-revenue-configuration)
+- [Appnext campaign configuration](/docs/appnext-campaign-configuration)
+- [Appodeal campaign configuration](/docs/appodeal-campaign-configuration)
+- [Aura from Unity campaign configuration](/docs/aura-from-unity-campaign-configuration)
+- [Avow GmbH campaign configuration](/docs/avow-gmbh-campaign-configuration)
+- [Awin campaign configuration](/docs/awin-campaign-configuration)
+- [Bidease campaign configuration](/docs/bidease-campaign-configuration)
+- [Bing campaign configuration](/docs/bing-campaign-configuration)
+- [Chartboost campaign configuration](/docs/chartboost-campaign-configuration)
+- [Cheetah Mobile campaign configuration](/docs/cheetah-mobile-campaign-configuration)
+- [ClickZoot campaign configuration](/docs/clickzoot-campaign-configuration)
+- [Criteo campaign configuration](/docs/criteo-campaign-configuration)
+- [\[Legacy\] Criteo campaign configuration](/docs/legacy-criteo-campaign-configuration)
+- [DataLift campaign configuration](/docs/datalift-campaign-configuration)
+- [Fyber campaign configuration](/docs/fyber-campaign-configuration)
+- [Fiksu campaign configuration](/docs/fiksu-campaign-configuration)

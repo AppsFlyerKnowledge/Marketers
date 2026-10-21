@@ -13,14 +13,14 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551173202065-Account-security
 ---
-- <Anchor target="_blank" href="/marketers/docs/sso-authentication">SSO authentication</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/security-center">Security Center <span class="af-star">★</span></Anchor>
-- <Anchor target="_blank" href="/marketers/docs/dev-key-management">Dev Key management</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/enterprise-grade-security-package">Enterprise-Grade Security Package</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/implementing-and-using-2fa-login">Implementing and using 2FA login</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">Managing AppsFlyer tokens</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/set-up-your-api-allowlist">Set up your API allowlist</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/set-up-your-domain-redirect-allowlist">Set up your domain redirect allowlist</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/audit-log">Audit log</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/appsflyer-server-ip-address-ranges-allowlisting">AppsFlyer server IP address ranges (allowlisting)</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/appsflyer-https-ssl-encryption-policy-support">AppsFlyer HTTPS/SSL encryption policy support</Anchor>
+- [SSO authentication](/docs/sso-authentication)
+- [Security Center <span class="af-star">★</span>](/docs/security-center)
+- [Dev Key management](/docs/dev-key-management)
+- [Enterprise-Grade Security Package](/docs/enterprise-grade-security-package)
+- [Implementing and using 2FA login](/docs/implementing-and-using-2fa-login)
+- [Managing AppsFlyer tokens](/docs/managing-appsflyer-tokens)
+- [Set up your API allowlist](/docs/set-up-your-api-allowlist)
+- [Set up your domain redirect allowlist](/docs/set-up-your-domain-redirect-allowlist)
+- [Audit log](/docs/audit-log)
+- [AppsFlyer server IP address ranges (allowlisting)](/docs/appsflyer-server-ip-address-ranges-allowlisting)
+- [AppsFlyer HTTPS/SSL encryption policy support](/docs/appsflyer-https-ssl-encryption-policy-support)

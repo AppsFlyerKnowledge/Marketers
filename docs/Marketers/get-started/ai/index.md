@@ -12,6 +12,6 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/36348470056081-AI
 ---
-- <Anchor target="_blank" href="/marketers/docs/beta-agent-hub-overview">\[Beta\] Agent Hub overview</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/ai-assistant">AI Assistant</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/beta-appsflyer-mcp">\[Beta\] AppsFlyer MCP</Anchor>
+- [\[Beta\] Agent Hub overview](/docs/beta-agent-hub-overview)
+- [AI Assistant](/docs/ai-assistant)
+- [\[Beta\] AppsFlyer MCP](/docs/beta-appsflyer-mcp)

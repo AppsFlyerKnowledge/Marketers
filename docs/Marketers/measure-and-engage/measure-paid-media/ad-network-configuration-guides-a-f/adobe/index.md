@@ -12,5 +12,5 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6551419728657-Adobe
 ---
-- <Anchor target="_blank" href="/marketers/docs/adobe-analytics-integration-with-appsflyer">Adobe Analytics integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/adobe-experience-platform-aep-integration-with-appsflyer-data-locker">Adobe Experience Platform (AEP) integration with AppsFlyer Data Locker</Anchor>
+- [Adobe Analytics integration with AppsFlyer](/docs/adobe-analytics-integration-with-appsflyer)
+- [Adobe Experience Platform (AEP) integration with AppsFlyer Data Locker](/docs/adobe-experience-platform-aep-integration-with-appsflyer-data-locker)

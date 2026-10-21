@@ -204,8 +204,8 @@ To follow a user journey, combine the reports that relate to the part of the jou
         Characteristics
       </td>
       <td>
-        \* The report structure and fields are similar to those of install reports.
-        \* Dedicated fields describe the event. These include the event name, value, revenue, and time.
+        * The report structure and fields are similar to those of install reports.
+        * Dedicated fields describe the event. These include the event name, value, revenue, and time.
       </td>
     </tr>
     <tr>
@@ -215,8 +215,8 @@ To follow a user journey, combine the reports that relate to the part of the jou
       <td>
         Use the report to:
 
-        \* Gain insights by observing the user journey during the user's lifetime
-        \* Combine the install and in-app-event raw data to follow the complete user journey.
+        * Gain insights by observing the user journey during the user's lifetime
+        * Combine the install and in-app-event raw data to follow the complete user journey.
       </td>
     </tr>
     <tr>
@@ -224,23 +224,23 @@ To follow a user journey, combine the reports that relate to the part of the jou
         Event values
       </td>
       <td>
-        \*\*Event value field\*\*
+        **Event value field**
 
         The event value field contains all the data related to the event in a JSON. You can load this into your BI system for further analysis.
 
-        \*\*Tip!\*\* You can use <Anchor target="_blank" href="https://docs.microsoft.com/en-us/power-query/parse-json-xml">Power Query in Microsoft Excel</Anchor> to parse the event parameters from the JSON text strings.
+        **Tip!** You can use <Anchor target="_blank" href="https://docs.microsoft.com/en-us/power-query/parse-json-xml">Power Query in Microsoft Excel</Anchor> to parse the event parameters from the JSON text strings.
 
         ```json
         {"af_level":"10","af_user_journey":"3387","arena":"7","char_type":"paladin"}
         ```
 
-        \*\*Reporting revenue\*\*
+        **Reporting revenue**
 
         The revenue and ROI data in AppsFlyer are derived from the af\_revenue sent in events.
 
         When the af\_revenue parameter is sent in an in-app-event, AppsFlyer uses this to populate the event revenue field. It is in this field that AppsFlyer uses to update the dashboard and aggregated reports.
 
-        Note! Use only the af\_revenue parameter with in-app-events that describe \*\*actual revenue generated.\*\* For other events that involve revenue, but are not final, for example, add\_to\_cart, use different parameters like af\_price
+        Note! Use only the af\_revenue parameter with in-app-events that describe **actual revenue generated.** For other events that involve revenue, but are not final, for example, add\_to\_cart, use different parameters like af\_price
       </td>
     </tr>
     <tr>
@@ -256,9 +256,9 @@ To follow a user journey, combine the reports that relate to the part of the jou
         Remarks
       </td>
       <td>
-        \* Retargeting in-app events are <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">doubly recorded</Anchor> in both the UA and retargeting in-app event raw data reports.
-        \* In-app events don't include the launch (af\_app\_opened) event. This is available in the <Anchor target="_blank" href="/marketers/docs/measure-sessions">sessions</Anchor> raw data report.
-        \* Geo location: Is derived using the user IP address at the time the event is performed.
+        * Retargeting in-app events are <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">doubly recorded</Anchor> in both the UA and retargeting in-app event raw data reports.
+        * In-app events don't include the launch (af\_app\_opened) event. This is available in the <Anchor target="_blank" href="/marketers/docs/measure-sessions">sessions</Anchor> raw data report.
+        * Geo location: Is derived using the user IP address at the time the event is performed.
       </td>
     </tr>
   </tbody>

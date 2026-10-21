@@ -13,9 +13,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551191075473-Account-management
 ---
-- <Anchor target="_blank" href="/marketers/docs/account-settings">Account settings</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/account-login-and-password-reset">Account login and password reset</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/account-management-plans-payments-and-billing">Account management—plans, payments, and billing</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/user-management">User management</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/report-generation-quotas-rate-limitations">Report generation quotas (rate limitations)</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/deleting-things-in-appsflyer">Deleting things in AppsFlyer</Anchor>
+- [Account settings](/docs/account-settings)
+- [Account login and password reset](/docs/account-login-and-password-reset)
+- [Account management—plans, payments, and billing](/docs/account-management-plans-payments-and-billing)
+- [User management](/docs/user-management)
+- [Report generation quotas (rate limitations)](/docs/report-generation-quotas-rate-limitations)
+- [Deleting things in AppsFlyer](/docs/deleting-things-in-appsflyer)

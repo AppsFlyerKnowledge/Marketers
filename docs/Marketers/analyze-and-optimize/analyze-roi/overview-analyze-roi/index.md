@@ -12,5 +12,5 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/15173289016593-Overview
 ---
-- <Anchor target="_blank" href="/marketers/docs/roi360-guide-cost-and-revenue-data">ROI360 guide - cost and revenue data</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/roi360-onboarding-guide">ROI360 - onboarding guide</Anchor>
+- [ROI360 guide - cost and revenue data](/docs/roi360-guide-cost-and-revenue-data)
+- [ROI360 - onboarding guide](/docs/roi360-onboarding-guide)

@@ -13,6 +13,6 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551226043793-Google-Analytics
 ---
-- <Anchor target="_blank" href="/marketers/docs/google-analytics-ga4-integration">Google Analytics (GA4) integration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/google-analytics-integration-custom-dimensions">Google Analytics integration—Custom dimensions</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/google-analytics-integration-discrepancies">Google Analytics integration—Discrepancies</Anchor>
+- [Google Analytics (GA4) integration](/docs/google-analytics-ga4-integration)
+- [Google Analytics integration—Custom dimensions](/docs/google-analytics-integration-custom-dimensions)
+- [Google Analytics integration—Discrepancies](/docs/google-analytics-integration-discrepancies)

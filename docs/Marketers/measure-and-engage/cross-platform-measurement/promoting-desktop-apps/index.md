@@ -13,8 +13,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/15329004312593-Promoting-Desktop-apps
 ---
-- <Anchor target="_blank" href="/marketers/docs/google-play-games-on-pc-integration-with-appsflyer">Google Play Games on PC integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/native-pc-integration-with-appsflyer">Native PC integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/chatgpt-plugin-attribution">ChatGPT plugin attribution</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/steam-integration-with-appsflyer">Steam integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/epic-integration-with-appsflyer">Epic integration with AppsFlyer</Anchor>
+- [Google Play Games on PC integration with AppsFlyer](/docs/google-play-games-on-pc-integration-with-appsflyer)
+- [Native PC integration with AppsFlyer](/docs/native-pc-integration-with-appsflyer)
+- [ChatGPT plugin attribution](/docs/chatgpt-plugin-attribution)
+- [Steam integration with AppsFlyer](/docs/steam-integration-with-appsflyer)
+- [Epic integration with AppsFlyer](/docs/epic-integration-with-appsflyer)

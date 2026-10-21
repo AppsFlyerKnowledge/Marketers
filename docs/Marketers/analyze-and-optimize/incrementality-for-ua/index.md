@@ -15,4 +15,4 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/40761623209873-Incrementality-for-UA
 ---
-- <Anchor target="_blank" href="/marketers/docs/incrementality-for-ua-guide">Incrementality for UA Guide</Anchor>
+- [Incrementality for UA Guide](/docs/incrementality-for-ua-guide)

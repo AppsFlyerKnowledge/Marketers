@@ -13,7 +13,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/15329052471057-Promoting-Console-apps
 ---
-- <Anchor target="_blank" href="/marketers/docs/playstation-integration-with-appsflyer">PlayStation integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/nintendo-switch-integration-with-appsflyer">Nintendo Switch integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/meta-quest-oculus-integration-with-appsflyer">Meta Quest (Oculus) integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/xbox-integration-with-appsflyer">Xbox integration with AppsFlyer</Anchor>
+- [PlayStation integration with AppsFlyer](/docs/playstation-integration-with-appsflyer)
+- [Nintendo Switch integration with AppsFlyer](/docs/nintendo-switch-integration-with-appsflyer)
+- [Meta Quest (Oculus) integration with AppsFlyer](/docs/meta-quest-oculus-integration-with-appsflyer)
+- [Xbox integration with AppsFlyer](/docs/xbox-integration-with-appsflyer)

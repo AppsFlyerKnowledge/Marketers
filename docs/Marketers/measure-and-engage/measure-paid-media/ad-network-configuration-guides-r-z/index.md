@@ -13,30 +13,30 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6552025468305-Ad-network-configuration-guides-R-Z
 ---
-- <Anchor target="_blank" href="/marketers/docs/rationalheads-campaign-configuration">RationalHeads campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/reddit-campaign-configuration">Reddit campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/remerge-campaign-configuration">Remerge campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/rtb-house-campaign-configuration">RTB House campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/startapp-campaign-configuration">StartApp campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/sizmek-campaign-configuration">Sizmek campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/sojern-for-advertisers-campaign-configuration">Sojern for Advertisers campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/spotify-campaign-configuration">Spotify campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/str-er-mobile-performance-campaign-configuration">Ströer Mobile Performance campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/taptica-campaign-configuration">Taptica campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/tapjoy-campaign-configuration">Tapjoy campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/the-trade-desk-campaign-configuration">The Trade Desk campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/tune-integration-with-appsflyer">TUNE integration with AppsFlyer</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/tvsquared-formerly-wywy-campaign-configuration">TVSquared (formerly Wywy) campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/tyroo-campaign-configuration">Tyroo campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/unity-ads-campaign-configuration">Unity Ads campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/vk-ads-mytarget-mail-ru-campaign-configuration">VK Ads (myTarget, Mail.ru) campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/vserv-campaign-configuration">Vserv campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/vungle-campaign-configuration">Vungle campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/wakeapp-campaign-configuration">WakeApp campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/webpals-mobile-campaign-configuration">Webpals Mobile campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/yandex-direct-campaign-configuration">Yandex Direct campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/yahoo-integration-setup">Yahoo integration setup</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/yahoo-japan-search-ads-campaign-configuration">Yahoo Japan Search Ads campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/yeahmobi-campaign-configuration">Yeahmobi campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/youappi-campaign-configuration">YouAppi campaign configuration</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/zenna-campaign-configuration">Zenna campaign configuration</Anchor>
+- [RationalHeads campaign configuration](/docs/rationalheads-campaign-configuration)
+- [Reddit campaign configuration](/docs/reddit-campaign-configuration)
+- [Remerge campaign configuration](/docs/remerge-campaign-configuration)
+- [RTB House campaign configuration](/docs/rtb-house-campaign-configuration)
+- [StartApp campaign configuration](/docs/startapp-campaign-configuration)
+- [Sizmek campaign configuration](/docs/sizmek-campaign-configuration)
+- [Sojern for Advertisers campaign configuration](/docs/sojern-for-advertisers-campaign-configuration)
+- [Spotify campaign configuration](/docs/spotify-campaign-configuration)
+- [Ströer Mobile Performance campaign configuration](/docs/str-er-mobile-performance-campaign-configuration)
+- [Taptica campaign configuration](/docs/taptica-campaign-configuration)
+- [Tapjoy campaign configuration](/docs/tapjoy-campaign-configuration)
+- [The Trade Desk campaign configuration](/docs/the-trade-desk-campaign-configuration)
+- [TUNE integration with AppsFlyer](/docs/tune-integration-with-appsflyer)
+- [TVSquared (formerly Wywy) campaign configuration](/docs/tvsquared-formerly-wywy-campaign-configuration)
+- [Tyroo campaign configuration](/docs/tyroo-campaign-configuration)
+- [Unity Ads campaign configuration](/docs/unity-ads-campaign-configuration)
+- [VK Ads (myTarget, Mail.ru) campaign configuration](/docs/vk-ads-mytarget-mail-ru-campaign-configuration)
+- [Vserv campaign configuration](/docs/vserv-campaign-configuration)
+- [Vungle campaign configuration](/docs/vungle-campaign-configuration)
+- [WakeApp campaign configuration](/docs/wakeapp-campaign-configuration)
+- [Webpals Mobile campaign configuration](/docs/webpals-mobile-campaign-configuration)
+- [Yandex Direct campaign configuration](/docs/yandex-direct-campaign-configuration)
+- [Yahoo integration setup](/docs/yahoo-integration-setup)
+- [Yahoo Japan Search Ads campaign configuration](/docs/yahoo-japan-search-ads-campaign-configuration)
+- [Yeahmobi campaign configuration](/docs/yeahmobi-campaign-configuration)
+- [YouAppi campaign configuration](/docs/youappi-campaign-configuration)
+- [Zenna campaign configuration](/docs/zenna-campaign-configuration)

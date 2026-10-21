@@ -13,5 +13,5 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551289835025-Working-with-agencies
 ---
-- <Anchor target="_blank" href="/marketers/docs/set-up-agencies">Set up agencies</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/view-agency-data">View agency data</Anchor>
+- [Set up agencies](/docs/set-up-agencies)
+- [View agency data](/docs/view-agency-data)

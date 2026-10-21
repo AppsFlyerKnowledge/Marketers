@@ -13,9 +13,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6552115163153-SKAN-interoperation
 ---
-- <Anchor target="_blank" href="/marketers/docs/beta-skan-interoperation-with-amazon">\[Beta\] SKAN interoperation with Amazon</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/get-skan-postback-data-from-google-ads">Get SKAN postback data from Google Ads</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/skan-integrated-partners-list">SKAN integrated partners list</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-interoperation-with-meta-ads">SKAdNetwork (SKAN) interoperation with Meta ads</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/skan-interoperation-with-snapchat">SKAN interoperation with Snapchat</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/skan-interoperation-with-tiktok-for-business">SKAN interoperation with TikTok for Business</Anchor>
+- [\[Beta\] SKAN interoperation with Amazon](/docs/beta-skan-interoperation-with-amazon)
+- [Get SKAN postback data from Google Ads](/docs/get-skan-postback-data-from-google-ads)
+- [SKAN integrated partners list](/docs/skan-integrated-partners-list)
+- [SKAdNetwork (SKAN) interoperation with Meta ads](/docs/skadnetwork-skan-interoperation-with-meta-ads)
+- [SKAN interoperation with Snapchat](/docs/skan-interoperation-with-snapchat)
+- [SKAN interoperation with TikTok for Business](/docs/skan-interoperation-with-tiktok-for-business)

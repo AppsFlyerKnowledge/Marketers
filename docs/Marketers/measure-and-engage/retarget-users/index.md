@@ -14,6 +14,6 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6551296371217-Retarget-users
 ---
-- <Anchor target="_blank" href="/marketers/docs/audiences">Audiences</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/incrementality-for-remarketing">Incrementality for remarketing</Anchor>
-- <Anchor target="_blank" href="/marketers/docs/retargeting-attribution">Retargeting attribution</Anchor>
+- [Audiences](/docs/audiences)
+- [Incrementality for remarketing](/docs/incrementality-for-remarketing)
+- [Retargeting attribution](/docs/retargeting-attribution)
