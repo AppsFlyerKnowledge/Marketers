@@ -416,8 +416,6 @@ Retargeting includes two types of conversions, re-attribution or re-engagement.
 
 > 👍 **Tip**
 >
-> **Tip**
->
 > Conversion data for retargeting doesn't always give a clear indication as to the type of conversion. See [alternative conversion data sources](#alternative-conversion-data-sources).
 
 ### Re-attribution with SRNs
@@ -427,8 +425,6 @@ When a user is re-attributed through an SRN, the conversion data payload doesn't
 What this means is that there is no way to determine, on the SDK level, if an install comes from a retargeting campaign. The only way is to set the campaign name such that it indicates a retargeting campaign.
 
 > 📘 **Note**
->
-> **Note**
 >
 > Setting the campaign name such that it indicates retargeting **is not a foolproof method**. See [examples to learn more](#examples-of-mixed-user-acquisition-and-re-attribution).
 
@@ -685,16 +681,12 @@ When using universal links or app links, the OneLink and payload are as follows:
 
   > 🚧 **Important**
   >
-  > **Important!**
-  >
   > The field `shortlink` does not appear in the payload when using the long OneLink.
   >
   > In both cases (short or long OneLink) we recommend adding a custom parameter that indicates the activity. For example `&deep_link_activity=shoes_cateogry`
 
 
 > 📘 **Note**
->
-> **Note**
 >
 > Using universal links and app links is only possible with OneLink.
 
@@ -745,8 +737,6 @@ Example:
 * The app developer can use such parameters, like `af_dp` and campaign name, to send the user to a specific activity and serve the relevant content.
 
 > 🚧 **Important**
->
-> **Important!**
 >
 > We recommend using the short version of OneLink. Click <Anchor target="_blank" href="/marketers/docs/understand-onelink-short-vs-long-urls">here</Anchor> to learn more.
 

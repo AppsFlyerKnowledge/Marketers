@@ -66,8 +66,6 @@ However, with ESPs that support Universal Links on top of their click recording 
 
 > 📘 **Note**
 >
-> **Note**
->
 > If you haven’t already done so, make sure you have configured your app to support <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">deep linking with OneLink</Anchor>.
 
 After configuring your click recording domain to support Universal Links as described previously, you need to set up your app to deep-link and resolve that Universal Link.

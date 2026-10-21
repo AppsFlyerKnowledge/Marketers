@@ -30,8 +30,6 @@ There is another method for sending AppsFlyer's attribution data to Google analy
 
 > 🚧 **Important**
 >
-> **Important!**
->
 > The Custom Dimensions method **IS NOT RECOMMENDED** due to the following:
 >
 > * Integrating Google Analytics through AppsFlyer dashboard is simple, quick and easy
@@ -42,8 +40,6 @@ There is another method for sending AppsFlyer's attribution data to Google analy
 Advertisers that use the new <Anchor target="_blank" href="/marketers/docs/google-analytics-ga4-integration">integration with Google Analytics</Anchor> don't need to use the custom dimensions method.
 
 > 📘 **Note**
->
-> **Note**
 >
 > This method requires you to integrate GA SDK into your app.
 >

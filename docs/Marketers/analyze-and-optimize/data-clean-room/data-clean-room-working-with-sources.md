@@ -190,8 +190,6 @@ If AppsFlyer generates the folders, the only additional information required is 
 
 > 🚧 **Important**
 >
-> **Important!**
->
 > If you manually created the folder path, make sure the connection and path you enter in the **Source location** section match the path you manually created.
 
 </Accordion>
@@ -219,8 +217,6 @@ Load source fields using the relevant instructions below:
 To load fields from a data source located in a data warehouse (BigQuery or Snowflake), click the ![dcr_load_fields_from_source.png](https://files.readme.io/667761e044a45e9a63bf904ada0ba07917014b5b446379213742510278b5a2dd-14986195290897.png) button.
 
 > 🚧 **Important**
->
-> **Important!**
 >
 > If the selected source table does not include the required [date and version columns](/docs/data-clean-room-working-with-sources#table-columns), you will receive an error.
 
@@ -293,8 +289,6 @@ After you load the fields, AppsFlyer analyzes the file, and a list of all data f
    * If a previously categorized field is not found in the reloaded source data, it will still display in the relevant category list, but it will be marked with an error icon.
 
 > 📘 **Note**
->
-> **Note**
 >
 > If you decide to use additional fields from this source after saving it, you can do so by [editing the source structure](/docs/data-clean-room-working-with-sources#editing-the-source-structure).
 
@@ -418,8 +412,6 @@ To edit the source structure:
 9. Once you have made all necessary changes, click the **Save** button to save the source with the updated structure or **Cancel** to undo your changes.
 
 > 🚧 **Important**
->
-> **Important!**
 >
 > Don't forget to make corresponding changes reflecting the new source structure in any reports for which this source is used:
 >

@@ -178,8 +178,6 @@ AppsFlyer includes `ua` and `ip` automatically for events reported through the S
 
 > 📘 **Note**
 >
-> **Note**
->
 > In order to be measured in <Anchor target="_blank" href="/marketers/docs/incrementality-for-remarketing-overview">Incrementality</Anchor>, S2S events must include the advertising ID in their payload (IDFA for iOS, GAID for Android).
 
 ## Increasing the volume of data transactions

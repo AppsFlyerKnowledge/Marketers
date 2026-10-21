@@ -28,8 +28,6 @@ Due to media sources' data-sharing policies, not all user-level <Anchor target="
 
 > 📘 **Note**
 >
-> **Note**
->
 > Aggregated and analytics data from the AppsFlyer platform is available without limitation.
 
 ## Postback restrictions on third-party platforms
@@ -61,8 +59,6 @@ For events other than restricted raw data events, the ad networks listed below r
 * Yahoo (Oath: Ad Platforms / Yahoo Gemini)
 
 > 📘 **Note**
->
-> **Note**
 >
 > For Meta ads, postback behavior depends on whether the advertiser has accepted the Advanced Mobile Measurement (AMM) terms:
 >

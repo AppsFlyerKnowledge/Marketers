@@ -71,8 +71,6 @@ First, create a push notification that contains attribution data using one of th
 
 > 📘 **Note**
 >
-> **Note**
->
 > In the following demonstration, we're using Firebase as the push provider. The instructions should be applicable to any push provider, with minor differences (if any). Consult the respective push provider's documentation.
 
 <Tabs>
@@ -103,8 +101,6 @@ This is the recommended method of integrating AppsFlyer with push notifications.
 #### **Using JSON (legacy)**
 
 > 📘 **Note**
->
-> **Note**
 >
 > The following documents the legacy method of integrating AppsFlyer with push notifications, and is available for backward-compatibility purposes. If you're setting up a new app, use the [recommended OneLink-based solution](/docs/measuring-push-notification-re-engagement-campaigns#using-onelink-recommended).
 

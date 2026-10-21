@@ -28,15 +28,11 @@ x-zendesk:
 
 > 🚧 **Important**
 >
-> **Important!**
->
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Integrating with deltaDNA
 
 > 🚧 **Important**
->
-> **Important!**
 >
 > The deltaDNA SDK userID, whether auto-generated or provided by the game, must be set as the customer user id in the AppsFlyer SDK to ensure the attribution data received from AppsFlyer is applied to the correct user. This must only be done on builds of the game integrated against the LIVE environment on the deltaDNA side.
 
@@ -102,8 +98,6 @@ Once you have saved the configuration, AppsFlyer sends the following data to del
 * Campaign name
 
 > 📘 **Note**
->
-> **Note**
 >
 > deltaDNA rejects install postbacks from AppsFlyer if there is no Customer User ID or UserID defined.
 

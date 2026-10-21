@@ -30,8 +30,6 @@ x-zendesk:
 
 > 📘 **Note**
 >
-> **Note**
->
 > The information presented in this article is intended solely to provide insight into the methods available to app developers for controlling the sharing of user-related data with app owners, ad networks, and social networks. **This article does not include or constitute guidance on compliance with privacy regulations such as COPPA or GDPR or any specific privacy-preserving regulations.**
 
 The AppsFlyer SDK offers app owners several methods to protect user privacy and control data. In this article, we will explore these methods and assess how they impact user data and how to use them to preserve user privacy while still permitting attribution.
@@ -90,8 +88,6 @@ When you use this method, AppsFlyer will disable the sharing of user data with t
 
   > 📘 **Note**
   >
-  > **Note**
-  >
   > AppsFlyer cannot attribute engagement data for any SRNs excluded from getting your data.
 
 
@@ -144,8 +140,6 @@ This flow ensures that:
 As a result, these in-app events are either counted as **organic** or **disregarded**, depending on the reporting method.
 
 > 📘 **Note**
->
-> **Note**
 >
 > <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#attribution">SRN</Anchor>, <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#probabilistic-modeling">PMOD (probabilistic)</Anchor>, and <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#install-referrer-android-only">Referrer-based attribution</Anchor> are supported in anonymized mode. This includes <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#google-play-install-referrer">Google Play Install Referrer</Anchor>, other store referrers (such as <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution#referrer-implementation-thirdparty-android-app-stores">Xiaomi, Huawei,</Anchor> <Anchor target="_blank" href="/marketers/docs/set-up-appsflyer-preload-referrer-attribution#samsung-preload-referrer">and Samsung</Anchor>), and <Anchor target="_blank" href="/marketers/docs/set-up-appsflyer-preload-referrer-attribution?utm_source=chatgpt.com">AppsFlyer preload referrer</Anchor>
 

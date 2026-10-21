@@ -182,8 +182,6 @@ Click **Save.**
 
 > 📘 **Note**
 >
-> **Note**
->
 > Although all events are sent by AppsFlyer, organic installs are not counted by Braze and therefore are ignored by the Braze API.
 
 </Accordion>

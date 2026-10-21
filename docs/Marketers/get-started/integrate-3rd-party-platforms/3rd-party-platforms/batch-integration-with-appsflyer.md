@@ -29,8 +29,6 @@ Batch allows advertisers to maximize user engagement while offering a personaliz
 
 > 🚧 **Important**
 >
-> **Important!**
->
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Integrating Batch and AppsFlyer

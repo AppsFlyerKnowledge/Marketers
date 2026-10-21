@@ -37,8 +37,6 @@ To understand the value of your app users, you must analyze both install and uni
 
 > 📘 **Note**
 >
-> **Note**
->
 > Uninstall metrics are available in the Unified dashboard and the user acquisition view.
 
 ## How to use uninstall data
@@ -194,8 +192,6 @@ Android uninstall measurement is available by configuring uninstall measurement 
 
       > 📘 **Note**
       >
-      > **Note**
-      >
       > AppsFlyer uses silent push notifications solely to measure uninstalls or identify inactive users and does not use them for any other purposes.
 
 
@@ -206,8 +202,6 @@ Android uninstall measurement is available by configuring uninstall measurement 
 <Accordion title="[Deprecated] Legacy HTTP">
 
 > 🚧 **Important**
->
-> **Important!**
 >
 > HTTP legacy API were deprecated by Firebase on June 20, 2023, and will be removed on June 21st, 2024. If you are using the legacy API, we strongly recommend that you [use the HTTP v1 API](/docs/measure-uninstalls#http-v1). <Anchor target="_blank" href="https://firebase.google.com/docs/cloud-messaging/http-server-ref">Learn more</Anchor>
 
@@ -243,8 +237,6 @@ Uninstall measurement using Firebase Messaging is supported by Android SDK V4.7.
    The success message displays.
 
    > 📘 **Note**
-   >
-   > **Note**
    >
    > If you get the **Project ID is invalid or access permissions are missing** error message, after testing your connection, review your connection settings in FCM. For more information, see [Connect Firebase Cloud Messaging to AppsFlyer (Android)](#connect-firebase-cloud-messaging-to-appsflyer-android) in this article.  
    > and make sure that permissions/project ID are set correctly

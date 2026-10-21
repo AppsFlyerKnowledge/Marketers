@@ -46,8 +46,6 @@ There are two Amplitude integration versions:
 
 > 🚧 **Important**
 >
-> **Important!**
->
 > * Choose either the Amplitude V1 or V2 integration. **Do not use both** simultaneously. Using both versions at the same time may result in duplicate events being sent to Amplitude.
 > * Some media sources restrict data sharing with third parties. Postbacks for restricted events won't be sent to this partner, even if configured.
 
@@ -403,8 +401,6 @@ Attribution data sent from AppsFlyer to Amplitude is displayed in your dashboard
 ![amplitude-properties.png](https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png)
 
 > 🚧 **Important**
->
-> **Important!**
 >
 > In some cases, Amplitude shows data coming from AppsFlyer as "Blocked". If you can't see AppsFlyer data in Amplitude, check if it's defined as a blocked event.
 

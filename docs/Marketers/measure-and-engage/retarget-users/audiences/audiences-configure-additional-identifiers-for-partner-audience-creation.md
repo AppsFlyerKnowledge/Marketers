@@ -72,8 +72,6 @@ When sending identifiers for Audiences via the SDK:
 
 > 📘 **Note**
 >
-> **Note**
->
 > Keep the following version-dependent changes in mind:
 >
 > * **Email:** As of SDK v7.0.1, setUserEmails (iOS/Android) has been fully removed and replaced by setUserEmail. This is a breaking change, not a deprecation. Apps on v7.0.0 and earlier must keep using setUserEmails. Apps on v7.0.1 and later must switch to setUserEmail. Check your integrated SDK version before choosing which sample to follow.
@@ -117,8 +115,6 @@ AppsFlyerLib.shared().customData = customData
 
 > 📘 **Note**
 >
-> **Note**
->
 > You must pre-hash both values (SHA-256) before passing them in.
 
 ### **SDK v7.0.1 and later — setUserPhone (recommended)**
@@ -151,8 +147,6 @@ AppsFlyerLib.shared().setUserPhone(countryCode: "1", phoneNumber: "(650) 555-121
 </Tabs>
 
 > 📘 **Note**
->
-> **Note**
 >
 > Pass the country dialing code and local number as plain text. Symbols and spaces are allowed in the local number. The SDK concatenates, normalizes, and hashes both values locally (SHA-256). Don't pre-hash.
 
@@ -219,8 +213,6 @@ AppsFlyerLib.shared().setUserEmail("name@domain.com")
 
 > 📘 **Note**
 >
-> **Note**
->
 > Pass the plain-text email. The SDK normalizes and hashes it locally (SHA-256). Don't pre-hash. Only a single email is accepted per call: calling setUserEmail again overrides the previously set value rather than adding to it.
 
 ## Android SDK configuration
@@ -259,8 +251,6 @@ AppsFlyerLib.getInstance().setAdditionalData(customDataMap)
 
 > 📘 **Note**
 >
-> **Note**
->
 > You must pre-hash both values (SHA-256) before passing them in.
 
 ### **SDK v7.0.1 and later — setUserPhone (recommended)**
@@ -292,8 +282,6 @@ AppsFlyerLib.getInstance().setUserPhone("1", "(650) 555-1212")
 </Tabs>
 
 > 📘 **Note**
->
-> **Note**
 >
 > Pass the country dialing code and local number as plain text. The SDK concatenates, normalizes, and hashes both values locally (SHA-256). Don't pre-hash.
 
@@ -353,8 +341,6 @@ AppsFlyerLib.getInstance().setUserEmail("name@domain.com");
 ```
 
 > 📘 **Note**
->
-> **Note**
 >
 > Only a single email is accepted per call in v7.0.1 and later. Multiple emails aren't supported: calling setUserEmail again overrides the previously set value rather than adding to it.
 

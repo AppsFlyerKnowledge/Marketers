@@ -34,8 +34,6 @@ The following steps are for Google Tag Manager for mobile apps. If the UI that y
 
 > 📘 **Note**
 >
-> **Note**
->
 > The steps described in this section relate to a purchase event but are relevant for any event that you wish to send.
 
 <div id="1-creating-event-parameter-variables" />
@@ -69,8 +67,6 @@ Whenever Google Tag Manager sends an event to AppsFlyer, it must send it with th
 
 > 🚧 **Important**
 >
-> **Important!**
->
 > For iOS, an additional Event Parameter should be configured. Follow the same flow as listed above. Create a variable and name it "Apple App ID". In the Event Parameter field, enter "apple\_app\_id" and save.
 
 The next step is to create and set AppsFlyer ID and Dev Key variables inside the app. This step is discussed in the <Anchor target="_blank" href="/marketers/docs/using-firebase-and-google-tag-manager-with-appsflyer-sending-installs-and-events#configuring-events-in-the-app">Sending Events</Anchor> Section.
@@ -94,8 +90,6 @@ Most in-app events require event value parameters. In this case, it is the af\_r
 > ![event_parameter_variable_revenue.png](https://files.readme.io/40e6ccd8d2df9370210847d6ff54a5a44c04f295dac9ece18dac715e5fc335a1-49839295696657.png)
 
 > 📘 **Note**
->
-> **Note**
 >
 > The example here shows how to create event parameter variables for Revenue and Price event parameters. You can create event parameter variables for any kind of event parameter, according to the event that is sent.
 
@@ -139,8 +133,6 @@ Now that the required variables and the event trigger are set, you can create th
 4. In the ***Application ID*** field, set the built-in variable the App ID
 
    > 🚧 **Important**
-   >
-   > **Important!**
    >
    > For iOS, set the "apple\_app\_id" custom variable in the ***Application ID*** field.
 

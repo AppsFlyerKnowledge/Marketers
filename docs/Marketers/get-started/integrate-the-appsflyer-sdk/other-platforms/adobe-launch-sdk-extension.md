@@ -34,8 +34,6 @@ The Adobe Launch SDK is an integral part of the Adobe Experience Platform. Adobe
 
 > 📘 **Note**
 >
-> **Note**
->
 > If you're using the Adobe Launch extension, there's no need for the standard <Anchor target="_blank" href="/marketers/docs/adobe-analytics-integration-with-appsflyer">Adobe Analytics integration</Anchor>.
 
 ## Prerequisites
@@ -167,8 +165,6 @@ The Android Install Referrer improves attribution accuracy, protects from instal
 
 > 📘 **Note**
 >
-> **Note**
->
 > Google deprecated the [BroadcastReceiver](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html) in March 2020.
 >
 > * This change does not affect the app.
@@ -236,8 +232,6 @@ Adding permissions helps increase the rate of <Anchor target="_blank" href="/mar
 Now you can start using the Adobe SDK extension to send data to Adobe and AppsFlyer.
 
 > 📘 **Note**
->
-> **Note**
 >
 > Currently, the Adobe Launch SDK extension only supports getting conversion data and sending events. However, when you add Adobe Launch SDK extension to your app, AppsFlyer SDK is also added. Therefore, any functionality currently missing from Adobe SDK extension can be implemented using AppsFlyer SDK.
 

@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > 📘 **Note**
 >
-> **Note:** On January 30, 2023, the new **TikTok for Business—advanced SRN** integration `tiktokglobal_int` was added, while the **Legacy** **TikTok for Business** integration `bytedanceglobal_int` is gradually phasing out and will be deprecated by Sept 9, 2025 This transition is handled by TikTok and they will notify all customers when to delete their old integration. **To avoid any data loss, make sure to keep both integrations live during the transition phase**.
+> On January 30, 2023, the new **TikTok for Business—advanced SRN** integration `tiktokglobal_int` was added, while the **Legacy** **TikTok for Business** integration `bytedanceglobal_int` is gradually phasing out and will be deprecated by Sept 9, 2025 This transition is handled by TikTok and they will notify all customers when to delete their old integration. **To avoid any data loss, make sure to keep both integrations live during the transition phase**.
 
 | <span id="headline"></span>**Headline** | AppsFlyer now supports TikTok For Business as an advanced Self-Reporting Network (SRN) |
 | --- | --- |

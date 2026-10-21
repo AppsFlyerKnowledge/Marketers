@@ -96,8 +96,6 @@ Setting up a Branded Domain consists of associating a full domain set in your DN
 
      > 📘 **Note**
      >
-     > **Note**
-     >
      > The CNAME record must be mapped within a time span of 7 days, starting from the branded domain creation date and ending on the date specified in the confirmation dialog.  
      > If the CNAME record is not mapped by the specified date, you must  
      > [renew the 7-day period](#renew-the-7-day-period-for-mapping-the-cname-record).
@@ -105,8 +103,6 @@ Setting up a Branded Domain consists of associating a full domain set in your DN
 7. Click **Done**. You can now create new links based on the OneLink template with your branded domain.
 
    > 📘 **Note**
-   >
-   > **Note**
    >
    > * If you already created links based on your OneLink template without the branded domain, they still work.
    > * It can take up to 24 hours for a new branded domain to start working.
@@ -118,8 +114,6 @@ The new branded domain does not work if the CNAME record of your full domain isn
 
 > 📘 **Note**
 >
-> **Note**
->
 > If the record was mapped after the 7-day period expired, you still need to renew the 7-day period for the new branded domain to work.
 
 **To renew the 7-day period:**
@@ -129,8 +123,6 @@ The new branded domain does not work if the CNAME record of your full domain isn
 3. Click the refresh icon **(**<Image alt="refresh.png" src="https://files.readme.io/052b47c423612c1b0549f37ed6394373d37f28331e09f4c709601a7e5473bf2b-30192959741585.png" width="18px" />) to renew the 7-day period.
 
 > 📘 **Note**
->
-> **Note**
 >
 > You can delete the branded domain by clicking the Delete icon **(**<Image alt="delete-subdomain.png" src="https://files.readme.io/0029cc63db331d998182d46a63f9da9856de9b2351abd5b2d87fb2b47ae853c2-30192959748241.png" width="16px" />) if you decide not to renew the 7-day period. Only branded domains that are not yet mapped to AppsFlyer can be deleted.
 
@@ -155,8 +147,6 @@ AppsFlyer-managed SSL is the default and recommended option for most customers a
 <Image alt="Upload new SSL certificate to AF.png" src="https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png" width="811px" />
 
 > 📘 **Note**
->
-> **Note**
 >
 > SSL certificates expire. You are responsible for renewing it and uploading the updated certificate to AppsFlyer before the current one expires.
 
@@ -332,8 +322,6 @@ After changing the OneLink subdomain mapped to your branded domain verify that t
 3. Click the Verify icon **(**<Image alt="verify-2.png" src="https://files.readme.io/4ac94a535e9101b3e727351f67df8917c0870d6ede8ec963de8c5528893b8e2b-30192946342929.png" width="17px" />).
 
 > 📘 **Note**
->
-> **Note**
 >
 > If the verification fails because the CNAME record isn't mapped yet, you have a time span of up to 7 days to do so ending on the date specified in the verification failure dialog.
 > If the CNAME record is not mapped by the specified date you must renew the 7-day period.

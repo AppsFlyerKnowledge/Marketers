@@ -30,8 +30,6 @@ x-zendesk:
 
 > 📘 **Note**
 >
-> **Note**
->
 > Regular mobile ads activate a URL when clicked. Cross-promotion mobile ads don't have a link, but instead, they activate the AppsFlyer SDK ***logAndOpenStore*** method.
 
 Attributing cross-promotion clicks and impressions is performed by using two separate API calls as described below. Each API call can also be passed a map of key values, which can be anything that fits your cross-promotion use case.
@@ -144,8 +142,6 @@ In iOS, an attribution Link is generated and returned to the `onOpenStoreLinkGen
 </Tabs>
 
 > 📘 **Note**
->
-> **Note**
 >
 > You can add any of these <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters">attribution link parameters</Anchor> to the generated link.
 

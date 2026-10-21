@@ -44,8 +44,6 @@ Choose the snippet that matches your integration type and security requirements.
 
 > 🚧 **Important**
 >
-> **Important!**
->
 > If you are transitioning from the Standard Web SDK to Advanced SDK Verification, replace your existing snippet with the new one. Do not add the new snippet on top of the existing one.
 
 ### Standard Web SDK

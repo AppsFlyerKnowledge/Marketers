@@ -24,8 +24,6 @@ x-zendesk:
 
 > 🚧 **Important**
 >
-> **Important!**
->
 > This integration works with iOS and Android apps that already have the [Google Analytics for Firebase SDK implemented](https://firebase.google.com/docs/analytics). For the integration to succeed, the AppsFlyer SDK has to collect the `app_instance_id` value from the Firebase SDK. See instructions on [how to retrieve the app instance ID from the Firebase SDK](#5-retrieve-app-instance-id-in-appsflyer-sdk).
 
 ## How does it work?
@@ -73,8 +71,6 @@ Configure the following settings:
 
 > 📘 **Note**
 >
-> **Note**
->
 > The install postback includes only the touchpoint details (media source, campaign name, and campaign ID).
 
 </Accordion>
@@ -90,8 +86,6 @@ AppsFlyer can send automatic postbacks to GA4 following user installs, including
 In the **Integration** tab, map AppsFlyer in-app events to Google Analytics (GA4) events, sent via postbacks.
 
 > 📘 **Note**
->
-> **Note**
 >
 > * Postbacks for mobile in-app events sent via S2S aren't supported.
 > * GA4 does not deduplicate events sent from both the Firebase SDK and AppsFlyer. We recommend configuring in-app event postbacks only for events that are not already sent to GA4 via the Firebase SDK.
@@ -121,15 +115,11 @@ After you have set up the in-app event mapping, send your developer a table wher
 
 > 🚧 **Important**
 >
-> **Important!**
->
 > Don’t use any of the [Google reserved events](#reserved-google-event-names) as names for custom Google Analytics events.
 
 * **AF event parameters (MANDATORY):** Predefined AppsFlyer event parameters that must be included in the event postback sent to Google Analytics.
 
 > 🚧 **Important**
->
-> **Important!**
 >
 > It is mandatory to include all predefined AF event parameters within the event definition exactly as they are listed in the table; failure to do so will result in Google Analytics rejecting the postback.
 
@@ -221,8 +211,6 @@ Let your developer implement the code to:
 2. Call `setAdditionalData`, before the first launch, to include the app instance ID and `ga_session_id`, in installs, sessions, and in-app events.
 
 > 🚧 **Important**
->
-> **Important!**
 >
 > `setAdditionalData` (Android / Unity / React Native) and `customData` (iOS) accept a **mapping of key-value pairs**. Sends both `app_instance_id` and `ga_session_id` **together in the same mapping,** so both values are included. If you send them in **separate** `setAdditionalData` calls, the later one will overwrite the earlier one.
 
@@ -317,8 +305,6 @@ Let your developer implement the code to:
 3. Use the key `ga_session_id` when calling the API.
 
 > 🚧 **Important**
->
-> **Important!**
 >
 > `setAdditionalData` (Android / Unity / React Native) and `customData` (iOS) accept a **mapping of key-value pairs**. If your app sends both `app_instance_id` and `ga_session_id` (see [step 5](#5-retrieve-app-instance-id-in-appsflyer-sdk)), **send them together in the same mapping** so both values are included. If you send them in **separate** `setAdditionalData` calls, the later one will overwrite the earlier one.
 
