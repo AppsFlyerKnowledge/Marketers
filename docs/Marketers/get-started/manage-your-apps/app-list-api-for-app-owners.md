@@ -77,7 +77,7 @@ A pagination mechanism, always operational, is implemented.
 
 **Use one of the following pagination control methods:**
 
-* [Best practice] Use the *links* in the JSON: If the *links.next* key exists, use it to create a request to get the next page. Continue to do so until you receive a JSON without a *links.next* key*.*
+* [Best practice] Use the *links* in the JSON: If the *links.next* key exists, use it to create a request to get the next page. Continue to do so until you receive a JSON without a *links.next* key.
 * Programmatically implement *limit* and *offset* parameters in conjunction with the *total\_items* key.
 
 **Pagination links JSON example**

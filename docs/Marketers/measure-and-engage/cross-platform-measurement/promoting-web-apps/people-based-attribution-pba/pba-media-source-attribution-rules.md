@@ -30,7 +30,7 @@ x-zendesk:
 
 * **Recognizing a visit:** PBA records a visit according to [visit recognition rules.](/docs/pba-media-source-attribution-rules#visit-recognition-rules)
 * **Visit attribution**
-  * To determine the media source responsible for bringing a user to the website, PBA analyzes the query parameters on the URL and the HTTP document referrers collected by the web SDK*.*
+  * To determine the media source responsible for bringing a user to the website, PBA analyzes the query parameters on the URL and the HTTP document referrers collected by the web SDK.
   * Rules-based media source determination uses the data collected as detailed in this article. Similarly, media type and media channel are determined.
   * The visit is recorded in <Anchor target="_blank" href="/marketers/docs/pba-raw-data-reports">PBA raw data</Anchor>.
 * **Campaign** information is extracted from:

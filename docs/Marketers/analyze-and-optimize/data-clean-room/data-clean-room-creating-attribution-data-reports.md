@@ -44,7 +44,7 @@ x-zendesk:
      * Valid characters:
        * letters **(A-Z, a-z)**
        * numbers **(0-9)**, *cannot be the first character of a name*
-       * a hyphen **(-)**, *cannot be the first character of a name*
+       * a hyphen (-), *cannot be the first character of a name*
      * Invalid characters:
        * spaces
        * all other symbols or special characters
@@ -114,7 +114,7 @@ If the report uses more than one custom source, only one of them needs to be map
 > * Custom source #4 identifier **ID** is mapped directly to the attribution data key identifier **af\_id.**
 >   * Note that it could have been mapped indirectly instead (through custom source #3 identifier **user\_id**), but either option works fine.
 >
-> **✓** This mapping scheme works to match data among all the sources since each custom source is mapped either directly or indirectly to the attribution data key identifier **af\_id.**
+> ✓ This mapping scheme works to match data among all the sources since each custom source is mapped either directly or indirectly to the attribution data key identifier **af\_id.**
 
 </Accordion>
 
@@ -217,8 +217,8 @@ However, instead of removing or hiding the data from the report completely, the 
 >
 > | media  <br />source | campaign | adset  <br />name | ad  <br />id | user  <br />type | rev  <br />D0 | rev  <br />D7 | count | reportable? |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-> | media\_source | UA\_100 | green | kjh867 | buyer | 1 | 4 | 120 | **✓** |
-> | media\_source | UA\_101 | green | jkj987 | ultra | 2 | 23 | 220 | **✓** |
+> | media\_source | UA\_100 | green | kjh867 | buyer | 1 | 4 | 120 | ✓ |
+> | media\_source | UA\_101 | green | jkj987 | ultra | 2 | 23 | 220 | ✓ |
 > | media\_source | UA\_200 | green | lkh123 | beg | 6 | 7 | x | **X** |
 > | media\_source | UA\_200 | green | ilk945 | beg | 3 | 21 | x | **X** |
 > | media\_source | UA\_200 | green | plm654 | beg | 8 | 17 | x | **X** |
@@ -237,9 +237,9 @@ However, instead of removing or hiding the data from the report completely, the 
 >
 > | media  <br />source | campaign | adset  <br />name | ad  <br />id | user  <br />type | rev  <br />D0 | rev  <br />D7 | count | reportable? |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-> | media\_source | UA\_100 | green | kjh867 | buyer | 1 | 4 | 120 | **✓** |
-> | media\_source | UA\_101 | green | jkj987 | ultra | 2 | 23 | 220 | **✓** |
-> | media\_source | UA\_200 | green | RESTRICTED | beg | 17 | 45 | y (x+x+x) | **✓** |
+> | media\_source | UA\_100 | green | kjh867 | buyer | 1 | 4 | 120 | ✓ |
+> | media\_source | UA\_101 | green | jkj987 | ultra | 2 | 23 | 220 | ✓ |
+> | media\_source | UA\_200 | green | RESTRICTED | beg | 17 | 45 | y (x+x+x) | ✓ |
 >
 >
 >
@@ -341,7 +341,7 @@ The DCR delivers reports to your selected cloud services using <Anchor target="
 
 Once you have created and saved a report, the report runs whenever new versions of all of the [custom sources it uses](/docs/data-clean-room-creating-attribution-data-reports#custom-sources) are detected:
 
-* For sources located in **data warehouses** (BigQuery and Snowflake), the DCR recognizes that a new version of a source has been created when it detects a new value in [the `v` column of the source table](/docs/data-clean-room-working-with-sources#table-columns).
+* For sources located in **data warehouses** (BigQuery and Snowflake), the DCR recognizes that a new version of a source has been created when it detects a new value in <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#table-columns">the `v` column of the source table</Anchor>.
   * **Important!** Whenever the column value changes, be sure to populate the source table with a complete set of data to ensure the completeness of your report.
 * The DCR recognizes that a new version of a source has been created when it detects that a <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#updating-sources-to-trigger-report-processing">new version of a source file has been uploaded</Anchor> to a connected cloud account, along with its accompanying \_SUCCESS file.
 
@@ -355,7 +355,7 @@ AppsFlyer continually scans for new versions of sources for the **current date a
 
 In addition to dimensions from your custom sources, the following attribution data dimensions can be used to group reports:
 
-* media\_source *(*[*included as a report dimension by default*](#selecting-report-dimensions)*)*
+* media\_source ([*included as a report dimension by default*](#selecting-report-dimensions))
 * ad
 * ad\_id
 * ad\_type

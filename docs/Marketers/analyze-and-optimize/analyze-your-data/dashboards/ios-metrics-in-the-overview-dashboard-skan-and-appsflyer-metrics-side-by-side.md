@@ -123,7 +123,7 @@ This article contains guidance based on our market knowledge and observations on
 
 **To display SKAN metrics in the table**:
 
-1. Click **⚙** (table settings).   
+1. Click ⚙ (table settings).   
    The metrics selection window opens.
 
    ![SelectSkan.png](https://files.readme.io/6b60fa8e2d10a1b61b1bfb4b7a968adb5ee16086d80c9cc8bc097b8e8ed77b51-4408473842833.png)

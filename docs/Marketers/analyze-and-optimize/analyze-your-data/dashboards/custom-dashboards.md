@@ -66,7 +66,7 @@ You can personalize a dashboard by moving and sizing widgets.
 
 1. In AppsFlyer, from the side menu, select **Analyze** > **Custom Dashboards**.  
    A dashboard displays.
-2. Click **+** (Add new dashboard).
+2. Click + (Add new dashboard).
 3. Enter **Your dashboard title**.
 4. Click **Add.**
 5. Add one or more widgets as described in the section that follows.

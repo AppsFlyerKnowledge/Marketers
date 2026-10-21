@@ -45,7 +45,7 @@ Most of the setup is done in Salesforce (steps 1-4). Step 5 is done in AppsFlyer
 
 ### Step 2: Provision for push notifications
 
-* [Create a `.p12` certificate](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/get-started/get-started-provision.html)
+* <Anchor target="_blank" href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/get-started/get-started-provision.html">Create a `.p12` certificate</Anchor>
 
 ### Step 3: Enable app push notifications
 

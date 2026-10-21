@@ -148,7 +148,7 @@ Once you obtain the two keys, enter each in the relevant field. Under **General 
 
 ### Default Postbacks
 
-Under **Default Postbacks**, in the **Sending Option** drop-down list, select **Events attributed to any partner or organic***.*
+Under **Default Postbacks**, in the **Sending Option** drop-down list, select **Events attributed to any partner or organic**.
 
 ![batch-default-postbacks.png](https://files.readme.io/e3e84f990d7f05c94fb69195a7e57caeffcd1ca35a5fb0148fc6a81ab9816673-360001778958.png)
 

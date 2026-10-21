@@ -36,7 +36,7 @@ Once you have set up your cloud services for use with the Data Clean Room (DCR),
 
 You can choose to create inbound connections either:
 
-* Before using them to create sources; *** or ***
+* Before using them to create sources; ***or***
 * As part of the source creation process.
 
 Either way, the process is the same, and you can use the created connections in exactly the same way. The only difference is the timing and the way you initiate the process.
@@ -100,7 +100,7 @@ In the **New connection** dialog, enter the name of the <Anchor target="_blank" 
 
 The DCR delivers reports to your selected cloud services using <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>. Because reports are delivered via Data Locker, outbound DCR connections are actually Data Locker connections. You can choose to create these connections either:
 
-* Before using them to create reports (starting from the Data Locker page in AppsFlyer); *** or ***
+* Before using them to create reports (starting from the Data Locker page in AppsFlyer); ***or***
 * As part of the report creation process (starting from the DCR page in AppsFlyer).
 
 Either way, the process is largely the same, and you can use the created connections in exactly the same way.

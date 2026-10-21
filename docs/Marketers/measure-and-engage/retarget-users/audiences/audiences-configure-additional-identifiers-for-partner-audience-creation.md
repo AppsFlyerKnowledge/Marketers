@@ -30,7 +30,7 @@ x-zendesk:
 
 AppsFlyer Audiences automatically supports the following device identifiers for sending custom audiences to <Anchor target="_blank" href="/marketers/docs/audiences-partner-connections">advertising partners</Anchor>:
 
-* **iOS:** IDFA
+* **iOS**: IDFA
 * **Android (Google Play):** GAID
 * **Android (3rd-party app stores):** <Anchor target="_blank" href="/marketers/docs/android-oaid-implementation-in-the-sdk">OAID</Anchor> and IMEI
 
@@ -54,7 +54,7 @@ You can elect to configure one or more identifiers, shown in the table below.
 
 <Accordion title="Additional identifiers — parameters and formatting">
 
-<table><tbody><tr><td>Identifier</td><td>Parameter name</td><td>Format</td><td>Example value (before hashing)</td></tr><tr><td>Email address</td><td>email_sha256</td><td><p><strong>SDK v7.0.0 and earlier:</strong></p><ul><li>Lowercase</li><li>No white spaces</li><li>Client-hashed (SHA256) before passing in</li></ul><p><strong>SDK v7.0.1 and later:</strong> Plain text. The SDK normalizes and hashes it automatically.</p></td><td>name@domain.com</td></tr><tr><td>Phone number<br/>(see note below)</td><td><p><strong>v7.0.0 and earlier (or S2S):</strong> phone_number_sha256</p><p><strong>v7.0.1 and later:</strong> phone_number_hashed</p></td><td><p><strong>v7.0.0 and earlier (or S2S):</strong></p><ul><li>No symbols, letters, or leading zeroes</li><li>Include country code</li><li>SHA256 hashed</li></ul><p><strong>v7.0.1 and later:</strong> Plain text. The SDK concatenates the country code and number, normalizes, and hashes it automatically.</p></td><td>442070313000</td></tr><tr><td><p>Phone number E164</p><p>(see note below)</p></td><td><p><strong>v7.0.0 and earlier (or S2S):</strong> phone_number_e164_sha256</p><p><strong>v7.0.1 and later:</strong> phone_number_e164_hashed</p></td><td><p><strong>v7.0.0 and earlier (or S2S):</strong></p><ul><li>E164 phone number</li><li>SHA256 hashed</li></ul><p><strong>v7.0.1 and later:</strong> Plain text. The SDK concatenates the country code and number, normalizes, and hashes it automatically.</p></td><td>+442070313000</td></tr><tr><td colspan="4"><p><br /><br />**Note**<br /></p><p><strong><span id="h_01HNZNWZ9XSY47T58Z5YR7Q65S"></span>Note</strong></p><p>Different advertising partners support different phone number formats. So, if you choose to use phone number, configure both identifiers: <em>Phone number</em> and <em>Phone number E164.</em></p></td></tr></tbody></table>
+<table><tbody><tr><td>Identifier</td><td>Parameter name</td><td>Format</td><td>Example value (before hashing)</td></tr><tr><td>Email address</td><td>email_sha256</td><td><p><strong>SDK v7.0.0 and earlier:</strong></p><ul><li>Lowercase</li><li>No white spaces</li><li>Client-hashed (SHA256) before passing in</li></ul><p><strong>SDK v7.0.1 and later:</strong> Plain text. The SDK normalizes and hashes it automatically.</p></td><td>name@domain.com</td></tr><tr><td>Phone number<br/>(see note below)</td><td><p><strong>v7.0.0 and earlier (or S2S):</strong> phone_number_sha256</p><p><strong>v7.0.1 and later:</strong> phone_number_hashed</p></td><td><p><strong>v7.0.0 and earlier (or S2S):</strong></p><ul><li>No symbols, letters, or leading zeroes</li><li>Include country code</li><li>SHA256 hashed</li></ul><p><strong>v7.0.1 and later:</strong> Plain text. The SDK concatenates the country code and number, normalizes, and hashes it automatically.</p></td><td>442070313000</td></tr><tr><td><p>Phone number E164</p><p>(see note below)</p></td><td><p><strong>v7.0.0 and earlier (or S2S):</strong> phone_number_e164_sha256</p><p><strong>v7.0.1 and later:</strong> phone_number_e164_hashed</p></td><td><p><strong>v7.0.0 and earlier (or S2S):</strong></p><ul><li>E164 phone number</li><li>SHA256 hashed</li></ul><p><strong>v7.0.1 and later:</strong> Plain text. The SDK concatenates the country code and number, normalizes, and hashes it automatically.</p></td><td>+442070313000</td></tr><tr><td colspan="4"><p><br /><br /><strong>Note</strong><br /></p><p><strong><span id="h_01HNZNWZ9XSY47T58Z5YR7Q65S"></span>Note</strong></p><p>Different advertising partners support different phone number formats. So, if you choose to use phone number, configure both identifiers: <em>Phone number</em> and <em>Phone number E164.</em></p></td></tr></tbody></table>
 
 </Accordion>
 
@@ -346,7 +346,7 @@ AppsFlyerLib.getInstance().setUserEmail("name@domain.com");
 
 ## S2S reference and code samples
 
-When sending identifiers for Audiences via <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">S2S</Anchor>, use the `custom_data` parameter for **all identifiers (including hashed** ***Email address*).** You can send one or more identifiers.
+When sending identifiers for Audiences via <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">S2S</Anchor>, use the `custom_data` parameter for **all identifiers (including hashed** ***Email address***). You can send one or more identifiers.
 
 <Accordion title="Sending identifiers via S2S">
 

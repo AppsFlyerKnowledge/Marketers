@@ -131,11 +131,11 @@ The first step in setting up your dashboards is selecting your filtering options
    * **App**
    * **Date range:** A creative is displayed in the dashboard when there is conversion data for the creative during the selected date range. All data is LTV, meaning the metrics are for conversions that occurred from creatives during the selected date range.
    * [View type](#view-type)
-2. Click the **+** icon to add any of the following filtering options including:
+2. Click the + icon to add any of the following filtering options including:
    * **Dimensions and metrics**
    * **Numeric filters**, which are available for all metrics with the following options:
-     * Greater than **-** displays creatives with values higher than or equal to the chosen metric
-     * Less than **-** displays creatives with values below the chosen metric
+     * Greater than - displays creatives with values higher than or equal to the chosen metric
+     * Less than - displays creatives with values below the chosen metric
 
 In addition to [standard metrics and dimensions](/docs/creative-optimization-guide#standard-metrics-and-dimensions), the Creative Optimization dashboard offers various [unique metrics and dimensions.](#unique-metrics-and-dimensions)
 
@@ -325,7 +325,7 @@ Add a new <Anchor target="_blank" href="/marketers/docs/creative-optimization-pa
 
 **To get partner metrics from Unity Ads:**
 
-1. From the Creative Optimization dashboard, click the  **⋮**  icon on the upper right to get to **Creative integrations**.  
+1. From the Creative Optimization dashboard, click the  ⋮  icon on the upper right to get to **Creative integrations**.  
    ![icon for creative integrations.jpg](https://files.readme.io/5af3cc395743cf305a9d19dca41dc53c7cbf82e18434d2eb335c9e58a4245456-21366803702033.jpg)
 2. Click **+ New integration**.
 3. Select **Unity Ads** in the **Partner** dropdown list.  
@@ -482,7 +482,7 @@ This is useful for marketing and creative teams whose creatives are named intent
 
 **To create name convention tags:**
 
-1. Click the  **⋮**  icon on the upper right of the dashboard, and select **Name convention tags**.  
+1. Click the  ⋮  icon on the upper right of the dashboard, and select **Name convention tags**.  
    The **Manage name convention tags** window appears.  
    <Image alt="Name convention tags main window.jpg" src="https://files.readme.io/e59721daabccd23ae7735d3e8cca68194983a3c28453daf00bf0ab39ad76fa98-18564727397393.jpg" width="795px" />
 2. Under **Create new name convention type**, enter the details:
@@ -503,7 +503,7 @@ This is useful for marketing and creative teams whose creatives are named intent
 
 **To edit name convention tags:**
 
-1. Click the  **⋮**  icon on the upper right of the dashboard, and select **Name convention tags**.
+1. Click the  ⋮  icon on the upper right of the dashboard, and select **Name convention tags**.
 2. Click the **Edit name convention type** dropdown to make your selection.
 3. Make the required changes, and click **Save**.
 

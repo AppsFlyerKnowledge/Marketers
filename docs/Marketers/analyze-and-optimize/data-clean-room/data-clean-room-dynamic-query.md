@@ -115,7 +115,7 @@ The following tabs provide additional information about constructing queries in 
 
 **UNION** statements append tables with matching schema (containing the same columns and datatypes):
 
-* **Can** be used to combine attribution data tables *** or *** custom sources; **cannot** be used to combine attribution data tables ***with*** custom sources
+* **Can** be used to combine attribution data tables ***or*** custom sources; **cannot** be used to combine attribution data tables ***with*** custom sources
 * Can be used to combine an unlimited number of sources
 * **Typically used to perform queries on** [**multiple attribution data tables**](#querying-attribution-data)
 

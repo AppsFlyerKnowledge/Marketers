@@ -73,7 +73,7 @@ To set iOS credentials, follow these step:
 2. Go to **Users and Access** > **Integrations**, and from the **Keys** list, select **In-App Purchase**.
 
    [![](https://files.readme.io/a24c642acd6d2470cd0b7e575e9ecb36c40eaef9d5fa9e8337a758e2b404ba14-42158637491729.png)](https://files.readme.io/a24c642acd6d2470cd0b7e575e9ecb36c40eaef9d5fa9e8337a758e2b404ba14-42158637491729.png)
-3. Click **+** to generate a new In-App Purchase key.
+3. Click + to generate a new In-App Purchase key.
 
    [![](https://files.readme.io/2ac7ba9197d1d3f134539eba3f315f497ccd8664a25ed6144606199c125dbba6-42158608030609.png)](https://files.readme.io/2ac7ba9197d1d3f134539eba3f315f497ccd8664a25ed6144606199c125dbba6-42158608030609.png)
 4. Enter a name for your API key.
@@ -531,7 +531,7 @@ Ensure that every sandbox purchase event includes:
 * **Revenue = 0** (to avoid affecting real reports).
 * `af_sandbox_revenue` = actual product price (so the correct revenue is attributed).
 * `af_validated` **= true**. If `false` go back and verify the store key.
-* `af_validation_type` **=** `receipt_validation`.
+* `af_validation_type` = `receipt_validation`.
 
 </Accordion>
 

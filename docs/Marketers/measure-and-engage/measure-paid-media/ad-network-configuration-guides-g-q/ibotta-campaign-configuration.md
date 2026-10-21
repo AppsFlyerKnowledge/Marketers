@@ -162,7 +162,7 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow access to your retention report*** - only to the partner's own retention data
 * ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
 * ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
-* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
+* **Allow access to your aggregate revenue data** - only to the revenue data attributed to the partner
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.

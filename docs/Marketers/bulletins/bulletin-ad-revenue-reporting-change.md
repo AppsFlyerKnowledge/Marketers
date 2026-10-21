@@ -26,7 +26,7 @@ x-zendesk:
 ---
 * **What's changing**: The date of Ad revenue data (user-level and aggregate-level) in the platform is the day of the ad display event itself (the day the ad revenue occurs), instead of the day after. Meaning if an ad displays on Monday, the revenue displays under Monday. This gives advertisers a more accurate and actionable understanding of their ad revenue data.
 * **Who is impacted**: App owners, agencies
-* **Where is it changing**: Essentially, data alignment to the day of the ad display event is active in all reports and APIs, for all types of network integrations.See the following table for where and when the alignment took effect.
+* **Where is it changing**: Essentially, data alignment to the day of the ad display event is active in all reports and APIs, for all types of network integrations. See the following table for where and when the alignment took effect.
 
 #### Ad revenue reporting change
 

@@ -65,7 +65,7 @@ The Integration Tab is divided into different sections as described below.
 * ***SITEID***: Fill in the SITEID you obtained from TVSquared.
 * ***COLLECTORID***: Fill in the COLLECTORID obtained from TVSquared.
 * **customerid:** (optional) You can leave this field blank.
-* (optional) Enable ***In-App Events Postback***: Map your in-app events with TVSquared using postbacks. Configure the parameters as follows: 
+* (optional) Enable ***In-App Events Postback***: Map your in-app events with TVSquared using postbacks. Configure the parameters as follows:
   * Click Add Event to add an SDK event to the list and complete the parameters.
 * Click **Save integration.**
 

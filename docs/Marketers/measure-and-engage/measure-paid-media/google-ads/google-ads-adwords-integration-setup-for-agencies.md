@@ -139,7 +139,7 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 7. ***Reinstall attribution***:
    * To enable reinstall attribution, switch it on.
    * No need to enable view-through attribution or configure lookback windows for reinstall attribution, as the values are taken from install attribution settings.
-8. Click ***Save & Close*.**
+8. Click ***Save & Close***.
 
 </Accordion>
 
@@ -176,7 +176,7 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 
 <Accordion title="Agency step 4: Measure your app conversions (mandatory)">
 
-**(Google Ads** **admin only)**
+(**Google Ads** **admin only)**
 
 > 🚧 **Important!**
 >

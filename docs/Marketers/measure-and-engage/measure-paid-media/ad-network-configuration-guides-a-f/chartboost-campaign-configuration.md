@@ -216,7 +216,7 @@ Advertisers should be aware of the following reasons:
 
 | Cause | Chartboost | AppsFlyer |
 | --- | --- | --- |
-| **Attribution Window** | Chartboost attribution window is 21 days | AppsFlyer lookback window is 7 days<br /><br /> This is the main cause of discrepancies between AppsFlyer and Chartboost\*\* |
+| **Attribution Window** | Chartboost attribution window is 21 days | AppsFlyer lookback window is 7 days<br /><br />**\*\* This is the main cause of discrepancies between AppsFlyer and Chartboost** |
 | **Multi-Channel Source Attribution** | Chartboost attribution works as specified above regardless of other sources. | AppsFlyer uses the last click attribution (For more information about AppsFlyer attribution, click <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">here</Anchor>) |
 
 > 📘 **Note**

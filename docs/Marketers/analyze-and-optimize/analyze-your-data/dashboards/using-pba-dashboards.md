@@ -47,7 +47,7 @@ Refine PBA dashboard results by using the (A) date picker, (B) main filters, and
 
 (2) Default filters
 
-(3) Additional filters: Click **+** to select an additional filter.
+(3) Additional filters: Click + to select an additional filter.
 
 **Principles**
 
@@ -78,7 +78,7 @@ Dashboard data is grouped by, for example, media source, device, or country. Whe
 >
 > **Goal:** Look at which media source is more successful.
 >
-> **How?** Group by *media source*, then look at a campaign that is directed towards the same target audience*.*
+> **How?** Group by *media source*, then look at a campaign that is directed towards the same target audience.
 
 | Group | Description | Web-Assisted Installs | Website Attribution |
 | --- | --- | --- | --- |

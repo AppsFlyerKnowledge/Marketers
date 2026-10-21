@@ -76,7 +76,7 @@ Connect to Vungle by activating and setting parameters in the integration tab. V
 
    * Select **Only events attributed to this partner** for events attributed to Vungle users.
    * Select **Events attributed to any partner or organic** to make your entire user available for reporting to Vungle.
-4. ***I**n-app events settings***: To send postbacks to Vungle, map in-app event IDs to Vungle’s. Configure the parameters as follows:
+4. ***In-app events settings***: To send postbacks to Vungle, map in-app event IDs to Vungle’s. Configure the parameters as follows:
    * Enter the Vungle app\_id.
    * Enable ***In-app events postbacks***.
    * Select a ***Sending Option***.

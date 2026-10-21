@@ -93,7 +93,7 @@ The first stage in configuring the AppsFlyer SSO process is done on the OneLogin
 <Accordion title="Assign users to your app">
 
 1. Go to the **Application** tab in the side menu of the selected user.
-2. Click the **+** sign near **Applications**.
+2. Click the + sign near **Applications**.
 3. Select the AppsFlyer app you've created and click **Continue**.  
 
    <Image alt="onelogin_assign_app.png" src="https://files.readme.io/a1769673f3f167f728a00fb1cccb951bd246798fd7327c51b021f73987bc8fb2-15552909316241.png" width="326px" />

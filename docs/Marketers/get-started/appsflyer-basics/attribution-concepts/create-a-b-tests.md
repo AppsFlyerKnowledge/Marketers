@@ -75,7 +75,7 @@ Below we explain two methods of A/B testing using:
 1. Select a trusted media source with sufficient traffic.
 2. Create two campaigns or <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers#3-banner-setup">Smart Banners</Anchor> in AppsFlyer by using one of the following methods:
    * Vary the campaign that is the name that is "**c**" parameter in the attribution link.
-   * Alternately you can create two ad sets ("**af\_adset**=**"**) within a campaign or single ads ("**af\_ad=**") within an ad set. **Note**: In Smart Banners, you can also <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers#ab-testing-banner-performance">A/B test by putting different parameters for each banner</Anchor> within the same banner group.
+   * Alternately you can create two ad sets ("**af\_adset**=") within a campaign or single ads ("**af\_ad=**") within an ad set. **Note**: In Smart Banners, you can also <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers#ab-testing-banner-performance">A/B test by putting different parameters for each banner</Anchor> within the same banner group.
    * For iOS 15+, you can also test the efficacy of different custom product pages, by sending different OneLink URLs to different product pages. <Anchor target="_blank" href="/marketers/docs/redirect-users-to-custom-app-store-product-pages">Learn more</Anchor>
 3. Use the same creative in both campaigns, except for the tested variation.
 4. Send the same amount of traffic to both campaigns.

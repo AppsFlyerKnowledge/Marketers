@@ -103,7 +103,8 @@ The table that follows lists the cardinality limits per day, per app.
 > 👍 **Tip**
 >
 > Define a small number of general campaign names (ideally up to 300), and assign all previous campaign names as ad sets. On AppsFlyer attribution links the parameter is **af\_adset**. This enables you to:
-> 1. Prevent seeing **Exceeded\_Campaign\_Limit**.2. Efficiently optimize according to significant adset traffic.
+> 1. Prevent seeing **Exceeded\_Campaign\_Limit**.
+> 2. Efficiently optimize according to significant adset traffic.
 > 3. Perform deep analysis based on the campaigns and ad set names in the raw data.
 
 </Accordion>

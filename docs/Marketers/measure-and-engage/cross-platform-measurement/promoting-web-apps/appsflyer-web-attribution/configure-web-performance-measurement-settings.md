@@ -288,7 +288,7 @@ Many user acquisition events are one-time actions (e.g., sign\_up, first\_purcha
 
 #### How it works
 
-**If set to a custom event (e.g.,** **sign\_in):**
+**If set to a custom event (e.g.,** **sign\_in**):
 
 * Churned users must perform the specific event to be reacquired
 * User can visit multiple times before reacquisition occurs

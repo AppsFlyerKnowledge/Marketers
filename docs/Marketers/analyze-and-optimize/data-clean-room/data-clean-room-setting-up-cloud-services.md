@@ -319,7 +319,7 @@ As previously mentioned, it's common to use the same bucket on Amazon S3 or GCS 
 
 The instructions for this setup vary only slightly from the [instructions for inbound connections](/docs/data-clean-room-setting-up-cloud-services#setting-up-cloud-services-for-inbound-connections). They do differ, however, depending on whether you are:
 
-* creating a new bucket for use with DCR inbound and outbound connections; *** or ***
+* creating a new bucket for use with DCR inbound and outbound connections; ***or***
 * modifying a bucket previously used only for Data Locker to one now used for both inbound and outbound DCR connections
 
 Instructions for both of these scenarios are included in the tabs below:

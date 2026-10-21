@@ -56,7 +56,7 @@ Movable Ink is a dynamic content optimization partner that provides personalized
 
    **Link structure:**
 
-   https://`{{onelink.domain}}/{{template_id}}?pid={{pid_value}}&c={{link_name}}deep_link_value={{mi_link_from_creative_tag}}`
+   `https://{{onelink.domain}}/{{template_id}}?pid={{pid_value}}&c={{link_name}}deep_link_value={{mi_link_from_creative_tag}}`
 
    **Example:**
 

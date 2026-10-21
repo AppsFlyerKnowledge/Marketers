@@ -44,7 +44,7 @@ Create your API call using the sections that follow.
 | No. | Item | Remarks |
 | --- | --- | --- |
 | 1 | Unique user ID | <ul><li>Strive to give us the best unique user ID available. This has a significant impact on data analysis.</li><li>Best practice is to send the customerUserId. If it's not available send the afUserId being the website cookie ID set by the WebSdk.</li><li>At any time you associate your customer user ID (<Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">CUID</Anchor>) with the [afUserId](/docs/web-server-to-server-events-api-for-pba-web-s2s#extracting-the-web-sdk-afuserid) send a setCuID() message with both IDs.</li></ul> |
-| 2 | Timestamp | <ul><li>AppsFlyer applies strict validation to incoming event timestamps:</li></ul><ul><li>**Late-arriving events:** Events are accepted with their original timestamp if they arrive within 24 hours of the day they belong to. **For example,** an event with a Monday timestamp (2025-08-18 23:59 UTC) will retain that timestamp if it is sent **anytime up until Tuesday** 23:59:59 UTC. If the same event is sent after Tuesday 23:59:59 UTC, the timestamp is overwritten with the server’s reception time.</li><li>**Future timestamps:** Events with a timestamp later than the actual arrival time are not permitted. Such timestamps are also overwritten with the server’s reception time.</li></ul><ul><li>Timestamps are UTC-based. If necessary, convert from local time to UTC time before populating the parameter</li></ul> |
+| 2 | Timestamp | <ul><li>AppsFlyer applies strict validation to incoming event timestamps:</li></ul><ul><li>**Late-arriving events:** Events are accepted with their original timestamp if they arrive within 24 hours of the day they belong to. **For example**, an event with a Monday timestamp (2025-08-18 23:59 UTC) will retain that timestamp if it is sent **anytime up until Tuesday** 23:59:59 UTC. If the same event is sent after Tuesday 23:59:59 UTC, the timestamp is overwritten with the server’s reception time.</li><li>**Future timestamps:** Events with a timestamp later than the actual arrival time are not permitted. Such timestamps are also overwritten with the server’s reception time.</li></ul><ul><li>Timestamps are UTC-based. If necessary, convert from local time to UTC time before populating the parameter</li></ul> |
 | 3 | Revenue and currency | You must populate *eventRevenueCurrency* and *eventRevenue* even if they are contained in the eventValue. Do so because we use them in our dashboards. |
 
 <div id="api-basics" />
@@ -58,7 +58,8 @@ API implementation requires the following credentials available in the dashboard
 
 **To get the credentials:**
 
-1. In AppsFlyer, from the top menu, select **My Apps** > **View brand bundles*.***The list of bundles display.
+1. In AppsFlyer, from the top menu, select **My Apps** > **View brand bundles**.  
+   The list of bundles display.
 2. Copy and record the appropriate:
    * ***Brand bundle ID***
    * ***Web dev key***
@@ -82,7 +83,7 @@ API implementation requires the following credentials available in the dashboard
 | Method name | setCuId |
 | --- | --- |
 | Use case | On associating a CUID with a visitor to your website. For example, any time you match the web `afUserId` with your customer user ID. Doing so enables PBA to match data from various sources. This is similar to <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid">setCustomerUserId</Anchor> on the website. |
-| Method path | *`https://webs2s.appsflyer.com/v1/bundleId/setcuid`* |
+| Method path | `https://webs2s.appsflyer.com/v1/bundleId/setcuid` |
 | Payload | The JSON payload consists of the parameters listed here. All parameters are mandatory.<ul><li>[customerUserID](/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method)</li><li>[afUserId](/docs/web-server-to-server-events-api-for-pba-web-s2s#extracting-the-web-sdk-afuserid)</li><li>[webDevKey](/docs/web-server-to-server-events-api-for-pba-web-s2s#webdevkey)</li></ul> |
 
 #### Curl example setCuId

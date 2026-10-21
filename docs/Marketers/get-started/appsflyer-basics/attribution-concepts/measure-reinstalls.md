@@ -228,9 +228,9 @@ You can verify in your raw data report that your post-reinstall in-app events ar
 
 | Report delivery method | Non-organic reinstall | Organic reinstall |
 | --- | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">Export data</Anchor> | **✓** | **✓** |
-| <Anchor target="_blank" href="/marketers/docs/pull-api-aggregate-data">Pull API</Anchor> | **✓** | **✓** |
-| <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">Data Locker</Anchor> | **✓** | **✓** |
-| Push API | **✓** | **✓** |
+| <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">Export data</Anchor> | ✓ | ✓ |
+| <Anchor target="_blank" href="/marketers/docs/pull-api-aggregate-data">Pull API</Anchor> | ✓ | ✓ |
+| <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">Data Locker</Anchor> | ✓ | ✓ |
+| Push API | ✓ | ✓ |
 
 <div data-zendesk-anchors="01H7SZVZPGHBQ7VM8TMWRD3CE4=what-is-a-reinstall 01H7SZVZPG6T2AW9B3EMT29AQQ=why-are-reinstalls-important 01H7SZVZPGVQCNCQ7TCZMYM33T=reinstall-flow-and-outcome 01H7SZVZPGCDP3GRK1BWZ04MR6=reinstall 01H7SZVZPG8WNTK30YXNZ44VTS=reattribution inapp-events=post-reinstall-in-app-events 01H7SZVZPGBYRWZGAZRT36EFGH=post-reinstall-in-app-events h_01K47GSZ90CKBGPCZFGQBD1PMK=postreinstall-events-attribution-state 01H7SZVZPH4AE1PZK8V5JG6C6X=unattributed-organic-inapps 01H7SZVZPH7KPM7T42GHZ7N69S=attributed-to-the-first-install h_01KHJV7J6H5KKMZVZN8XPW4CEZ=note 01H7SZVZPH5YGSMPGW7NPKXJAF=note-1 with-attributed-to-the-first-install-enabled=examples-for-first-install-mode-attribution 01H7SZVZPHH3DS9J4VRD70VTX6=examples-for-first-install-mode-attribution h_01K47KBXE2NXXQFMS4RPJ0RA4T=confirm-inapps-are-attributed-to-the-original-install 01H7SZVZPH8MSBQ92XWFK0HWGQ=limitations 01H7SZVZPHHQS4NHEDATD7ZP9V=how-does-the-data-appear-in-the-appsflyer-dashboards 01H7SZVZPHPWN8REBQ5CWVFNJT=reinstalls-raw-data-reports 01H7SZVZPHCVDPDDYD6HHNFMMK=prerequisites how-the-install-and-inapp-events-are-attributed=how-the-install-and-in-app-events-are-attributed 01H7SZVZPHQT8XS3ZBA4W682GB=how-the-install-and-in-app-events-are-attributed 01H7SZVZPH6NY7FMG9YHDBB95R=availability-of-reinstall-reports" />

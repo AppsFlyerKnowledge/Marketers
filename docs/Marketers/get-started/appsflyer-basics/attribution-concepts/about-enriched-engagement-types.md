@@ -97,7 +97,7 @@ The table below lists networks that are qualified by AppsFlyer to report `engage
 | youappi\_int | Yes | Yes |
 | jampp\_int | Yes | Yes |
 
-***** TikTok supports the enriched engagement type, but their engaged views are currently not properly reflected in reporting. AppsFlyer is working with TikTok to resolve this issue.
+* TikTok supports the enriched engagement type, but their engaged views are currently not properly reflected in reporting. AppsFlyer is working with TikTok to resolve this issue.
 
 > 📘 **Note**
 >

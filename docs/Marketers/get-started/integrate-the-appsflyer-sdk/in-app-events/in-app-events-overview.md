@@ -290,8 +290,8 @@ Keep in mind the following when defining event names and parameters in the app:
 * We recommend using only lower-case alpha-numeric characters (a-z and 0-9) for your in-app event names. Event names are case-sensitive, meaning that af\_purchase and af\_PURCHASE are two different events in the raw data. However, in aggregate reports and dashboards (for example, Overview or Events), only lowercase letters are permitted, and therefore, they can be displayed as a single event.
 * There is a cardinality limit of 300 unique events per day. <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_events_limit">Learn more</Anchor>
 * Unique users are only counted for the first 100 events after they install the app.
-* Event names cannot begin with these characters: **" = + -**
-* Event values should not contain the **+** character, except in encoded URLs or encoded as per <Anchor target="_blank" href="https://www.w3schools.com/tags/ref_urlencode.ASP">ASCII</Anchor>.
+* Event names cannot begin with these characters: " = + -
+* Event values should not contain the + character, except in encoded URLs or encoded as per <Anchor target="_blank" href="https://www.w3schools.com/tags/ref_urlencode.ASP">ASCII</Anchor>.
 * Event names cannot contain empty spaces. You can use underlined spaces (low dashes) before or after the name of the event.
 * Event values should not exceed 2,000 characters to avoid being shortened in raw data reports. However, if the event originates from the SDK, it is recommended to keep it under 1,000 characters to make sure that the payload is not truncated when sent in the HTTP request.
 * If you include the referring URL as an event value, it must be <Anchor target="_blank" href="https://www.w3schools.com/tags/ref_urlencode.ASP">URL encoded</Anchor>.

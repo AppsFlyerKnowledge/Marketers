@@ -158,7 +158,8 @@ dependencies {
 }
 ```
 
-MainActivity MainActivity (legacy)
+<Tabs>
+<Tab title="MainActivity">
 
 ```java
 import androidx.appcompat.app.AppCompatActivity;
@@ -214,6 +215,10 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
+</Tab>
+
+<Tab title="MainActivity (legacy)">
+
 ```java
 public class MainActivity extends AppCompactActivity {
     @Override
@@ -244,7 +249,8 @@ AppsFlyerLib.getInstance().setCollectAndroidID(true);
 }
 ```
 
-IMEI Android API level up to 22
+</Tab>
+</Tabs>
 
 </Accordion>
 

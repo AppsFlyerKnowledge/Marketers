@@ -117,7 +117,7 @@ Use this option for the following platforms:
       <td>
         **Google Play URL** (copied from Google Play)
 
-        * **Example:** https://play.google.com/store/apps/details?id=com.appsflyer.adNetworkTest **&hl=en&gl=GB**
+        * **Example:** https://play.google.com/store/apps/details?id=com.appsflyer.adNetworkTest&hl=en&gl=GB
         * **Important!**
           * If your app is **not** listed in the US Google Play store:
             * The URL must include the country code of any store in which it is listed, as shown in the example above: **&gl=`{country_code}`.** If you do not include the country code, you will receive an error when trying to add the app.

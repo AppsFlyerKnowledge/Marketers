@@ -198,7 +198,7 @@ For a full explanation of Parallel Tracking, click <Anchor target="_blank" href=
 
 #### What is needed?
 
-In order for parallel tracking to work as intended, the final URL must match what is in the campaign URL and be put in [Google's `{lpurl}` ValueTrack parameter.](https://support.google.com/google-ads/answer/6305348?hl=en)
+In order for parallel tracking to work as intended, the final URL must match what is in the campaign URL and be put in <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6305348?hl=en">Google's `{lpurl}` ValueTrack parameter.</Anchor>
 
 This is done by:
 

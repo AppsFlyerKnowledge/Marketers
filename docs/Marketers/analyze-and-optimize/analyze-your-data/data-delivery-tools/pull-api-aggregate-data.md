@@ -50,7 +50,7 @@ x-zendesk:
 
 #### Aggregate performance reports available via Pull API
 
-<table><thead><tr><th>Category</th><th> UA</th><th>Retargeting\*</th></tr></thead><tbody><tr><td>Partners (media source)</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Partners by date</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Daily</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Geo</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td>Geo by date report</td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td colspan="3">\* For retargeting reports, add the <code>&amp;reattr=true</code> to the URI. </td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th> UA</th><th>Retargeting\*</th></tr></thead><tbody><tr><td>Partners (media source)</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Partners by date</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Daily</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Geo</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Geo by date report</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="3">\* For retargeting reports, add the <code>&amp;reattr=true</code> to the URI. </td></tr></tbody></table>
 
 <div id="using-pull-api-aggregate-data" />
 

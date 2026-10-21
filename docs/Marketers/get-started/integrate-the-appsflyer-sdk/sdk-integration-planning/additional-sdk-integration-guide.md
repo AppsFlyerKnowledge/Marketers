@@ -185,21 +185,21 @@ Data sharing with partners is controlled via the `setSharingFilterForPartners` m
 <Tabs>
 <Tab title="Android native">
 
-See [`setSharingFilterForPartners`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setsharingfilterforpartners) in the Android SDK reference
+See <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setsharingfilterforpartners">`setSharingFilterForPartners`</Anchor> in the Android SDK reference
 
 </Tab>
 
 <Tab title="iOS native">
 
-See [`resolveDeepLinkURLs`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#setsharingfilterforpartners) in the iOS SDK reference
+See <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#setsharingfilterforpartners">`resolveDeepLinkURLs`</Anchor> in the iOS SDK reference
 
 </Tab>
 
 <Tab title="UnityReact Native">
 
-See [`setSharingFilterForPartners`](https://dev.appsflyer.com/hc/docs/api#setsharingfilterforpartners) in the Unity SDK reference
+See <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setsharingfilterforpartners">`setSharingFilterForPartners`</Anchor> in the Unity SDK reference
 
-See [`setSharingFilterForPartners`](https://dev.appsflyer.com/hc/docs/rn_api#setsharingfilterforpartners) in the React Native SDK reference
+See <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#setsharingfilterforpartners">`setSharingFilterForPartners`</Anchor> in the React Native SDK reference
 
 </Tab>
 </Tabs>

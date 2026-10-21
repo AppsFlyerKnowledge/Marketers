@@ -162,15 +162,15 @@ You can choose any pre-defined INAPP event sent from Appsflyer as your campaign 
 
 | AF Parameter | Mapped TikTok value |
 | --- | --- |
-| [`pid`](/docs/about-link-structure-and-parameters#pid) | `tiktokweb_int` |
-| [`c`](/docs/about-link-structure-and-parameters#c)* | **\_\_campaign\_name\_\_** |
-| [`af_c_id`](/docs/about-link-structure-and-parameters#af_c_id) | **\_\_campaign\_id\_\_** |
-| [`af_adset`](/docs/about-link-structure-and-parameters#af_adset) | **\_\_aid\_name\_\_** |
-| [`af_adset_id`](/docs/about-link-structure-and-parameters#af_adset_id) | **\_\_aid\_\_** |
-| [`af_ad`](/docs/about-link-structure-and-parameters#af_ad) | **\_\_cid\_name\_\_** |
-| [`af_ad_id`](/docs/about-link-structure-and-parameters#af_ad_id) | **\_\_cid\_\_** |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#pid">`pid`</Anchor> | `tiktokweb_int` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#c">`c`</Anchor>* | **\_\_campaign\_name\_\_** |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_c_id">`af_c_id`</Anchor> | **\_\_campaign\_id\_\_** |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_adset">`af_adset`</Anchor> | **\_\_aid\_name\_\_** |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_adset_id">`af_adset_id`</Anchor> | **\_\_aid\_\_** |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ad">`af_ad`</Anchor> | **\_\_cid\_name\_\_** |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ad_id">`af_ad_id`</Anchor> | **\_\_cid\_\_** |
 
-   ***** To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
+   * To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
 
    An example of the resulting URL should be:
 
@@ -178,7 +178,7 @@ You can choose any pre-defined INAPP event sent from Appsflyer as your campaign 
    https://app.appsflyer.com/{app_id}?pid=tiktokweb_int&c=__campaign_name__&af_c_id=__campaign_id__&af_adset=__aid_name__&af_adset_id=__aid__&af_ad=__cid_name__&af_ad_id=__cid__&af_r={https://Add-your-store-url.com}
    ```
 
-   If your app’s APK is NOT hosted in Google Play Store, add the [`af_r`](/docs/about-link-structure-and-parameters#af_r) parameter and map to it the store URL, e.g, `https://Add-your-store-url.com`
+   If your app’s APK is NOT hosted in Google Play Store, add the <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_r">`af_r`</Anchor> parameter and map to it the store URL, e.g, `https://Add-your-store-url.com`
 
    #### PC or console store
 
@@ -197,14 +197,14 @@ You can choose any pre-defined INAPP event sent from Appsflyer as your campaign 
 | AF Parameter | Mapped TikTok value |
 | --- | --- |
 | `af_media_source` | `tiktokweb_int` |
-| `af_campaign` ***** | **\_\_campaign\_name\_\_** |
-| [`af_campaign_id`](/docs/about-link-structure-and-parameters#af_c_id) | **\_\_campaign\_id\_\_** |
-| [`af_adset`](/docs/about-link-structure-and-parameters#af_adset) | **\_\_aid\_name\_\_** |
-| [`af_adset_id`](/docs/about-link-structure-and-parameters#af_adset_id) | **\_\_aid\_\_** |
-| [`af_ad`](/docs/about-link-structure-and-parameters#af_ad) | **\_\_cid\_name\_\_** |
-| [`af_ad_id`](/docs/about-link-structure-and-parameters#af_ad_id) | **\_\_cid\_\_** |
+| `af_campaign` * | **\_\_campaign\_name\_\_** |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_c_id">`af_campaign_id`</Anchor> | **\_\_campaign\_id\_\_** |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_adset">`af_adset`</Anchor> | **\_\_aid\_name\_\_** |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_adset_id">`af_adset_id`</Anchor> | **\_\_aid\_\_** |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ad">`af_ad`</Anchor> | **\_\_cid\_name\_\_** |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ad_id">`af_ad_id`</Anchor> | **\_\_cid\_\_** |
 
-   ***** To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
+   * To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
 
    An example of cross-platform URL:
 

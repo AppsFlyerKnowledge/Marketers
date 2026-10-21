@@ -61,8 +61,8 @@ This section describes how to set up integrations with each partner.
 **To add an integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.  
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
      ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Adikteev**.
@@ -87,8 +87,8 @@ This section describes how to set up integrations with each partner.
 **To add an integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.  
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
      ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Adjoe GmbH**.
@@ -111,11 +111,11 @@ This section describes how to set up integrations with each partner.
 
 1. Log in to **Creative Optimization** and do one of the following:
 
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.
 
    ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
-2. Click **+** **New integration**.
+2. Click + **New integration**.
 3. In the **Partner** list, select **AppLovin**.
 4. Select the apps that you are promoting.
 5. Enter the AppLovin **Account ID**, **Campaign Management API key**, and **Reporting API Key.**
@@ -143,10 +143,10 @@ This section describes how to set up integrations with each partner.
 **To add an integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.  
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
      ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
-2. Click **+** **New integration**.
+2. Click + **New integration**.
 3. Click the **Partner** list and select **Google Ads (AdWords)**.
 4. Select the apps that you are promoting.
 5. Click **Log in to Google**. The **Sign in with Google window** opens.
@@ -172,8 +172,8 @@ This section describes how to set up integrations with each partner.
 **To add an integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.  
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
      ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
 2. Click **+ New integration**.
 3. In the **Partner** list, select **ironSource**.
@@ -192,8 +192,8 @@ This section describes how to set up integrations with each partner.
 **To add an integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.  
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
      ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Liftoff**.
@@ -215,8 +215,8 @@ This section describes how to set up integrations with each partner.
 **To add an integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.  
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
      ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Meta Ads**.
@@ -246,8 +246,8 @@ This section describes how to set up integrations with each partner.
 **To add an integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.  
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
      ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Mintegral**.
@@ -269,8 +269,8 @@ This section describes how to set up integrations with each partner.
 **To add an integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Moloco**.
 4. Select the apps that you are promoting.
@@ -292,8 +292,8 @@ This section describes how to set up integrations with each partner.
 **To add an integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.  
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
      <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Persona.ly**.
@@ -314,8 +314,8 @@ This section describes how to set up integrations with each partner.
 **To add an integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.  
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
      ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Reddit**.
@@ -339,8 +339,8 @@ This section describes how to set up integrations with each partner.
 **To add an integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Remerge**.
 4. Select the apps that you are promoting.
@@ -358,8 +358,8 @@ This section describes how to set up integrations with each partner.
 **To add an integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.  
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
      <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **RevX**.
@@ -382,8 +382,8 @@ This section describes how to set up integrations with each partner.
 **To add an integration:**
 
 1. **Log in to Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Smadex**.
 4. Select the apps that you are promoting.
@@ -401,8 +401,8 @@ This section describes how to set up integrations with each partner.
 **To add an integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.  
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
      ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Snapchat**.
@@ -427,8 +427,8 @@ This section describes how to set up integrations with each partner.
 **To add an integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.  
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
      ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
 2. Click **+ New integration**.
 3. In the **Partner** list, select **TikTok**.
@@ -511,8 +511,8 @@ This section describes how to set up integrations with each partner.
 #### **To add a Unity integration to the Creative dashboard:**
 
 1. In the **Creative Optimization** dashboard, do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.  
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
      ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Unity Ads**.
@@ -534,8 +534,8 @@ This section describes how to set up integrations with each partner.
 **To add an integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.  
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
      <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **X Ads**.
@@ -560,8 +560,8 @@ YouAppi credentials for integration :
 **To add an integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.  
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
      ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
 2. Click **+ New integration**.
 3. In the **Partner** list, select **YouAppi**.
@@ -601,10 +601,10 @@ You can integrate with your agency partners to pull their data into the Creative
 **To add an agency integration:**
 
 1. Log in to **Creative Optimization** and do one of the following:
-   * If you don't have any partner integrations, click **+** **Add new integration**.
-   * Otherwise, click the  **⋮**  icon on the upper right of the dashboard to get to **Creative integrations**.  
+   * If you don't have any partner integrations, click + **Add new integration**.
+   * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
      <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
-2. Click **+** N**ew integration**.
+2. Click + N**ew integration**.
 3. After selecting the Partner and Apps in the partner integration window, click the **Advanced settings: Agency** dropdown, and select the relevant agency.  
 
    <Image alt="Creative agencies.png" src="https://files.readme.io/74f0dc492bc530278687becdd0061e9c06081653b69ed525f237b97a9568e413-38395601553169.png" width="288px" />

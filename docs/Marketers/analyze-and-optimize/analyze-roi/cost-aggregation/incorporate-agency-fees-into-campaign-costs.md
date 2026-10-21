@@ -71,7 +71,7 @@ The rule builder user interface is designed for interactive rule building. **Ti
 **![AppsFlyerAdmin_us-en.png](https://files.readme.io/90ad4b15e0e27f2043e3e6dc1dfaf0581add5e5df2122f95b235728fb140fa5c-4408750662545.png) To add a new rule**:
 
 1. In AppsFlyer, from the side menu, select **Settings** > **Cost Control.**
-2. Click **+** **Add Agency fees rule**.  
+2. Click + **Add Agency fees rule**.  
    The Agency fees rule screen displays.
 3. Select a partner (agency).
 4. Choose one or more Apps or select **All apps**. If you select **All apps**, the rule applies to all your apps, including apps added to your account in the future.

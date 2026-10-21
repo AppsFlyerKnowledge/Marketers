@@ -41,11 +41,11 @@ The following section describes the actions you have to take to apply the AppsFl
 1. Stop collecting device IDs by the SDK. Make sure to not send AppsFlyer the device IDs for both engagements and events.
    * For Android:
      * Set `setDisableAdvertisingIdentifiers` to true
-     * Set [`setCollectIMEI`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectimei) to false
-     * Set [`setCollectAndroidID`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectandroidid) to false
+     * Set <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectimei">`setCollectIMEI`</Anchor> to false
+     * Set <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectandroidid">`setCollectAndroidID`</Anchor> to false
    * For iOS:
-     * Set [`disableAdvertisingIdentifier`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableadvertisingidentifier) to true
-     * Set [`disableIDFVCollection`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableidfvcollection) to true
+     * Set <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableadvertisingidentifier">`disableAdvertisingIdentifier`</Anchor> to true
+     * Set <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableidfvcollection">`disableIDFVCollection`</Anchor> to true
 
    Note that configuring these methods affects identifier collection not only in China. To disable identifiers specifically for the Chinese market, you must implement custom logic.
 2. Mask and hash clicks and impressions by using dedicated Chinese domains to pass these events to AppsFlyer.

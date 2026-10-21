@@ -184,14 +184,14 @@ Perform the next steps in Meta Ads Manager.
 
 | AF Parameter | Mapped Meta value |
 | --- | --- |
-| [`pid`](/docs/about-link-structure-and-parameters#pid) | `metaweb_int` |
-| [`c`](/docs/about-link-structure-and-parameters#c) | `{{campaign.name}}` |
-| [`af_siteid`](/docs/about-link-structure-and-parameters#af_siteid) | `{{site_source_name}}` |
-| [`af_c_id`](/docs/about-link-structure-and-parameters#af_c_id) | `{{campaign.id}}` |
-| [`af_adset`](/docs/about-link-structure-and-parameters#af_adset) | `{{adset.name}}` |
-| [`af_adset_id`](/docs/about-link-structure-and-parameters#af_adset_id) | `{{adset.id}}` |
-| [`af_ad`](/docs/about-link-structure-and-parameters#af_ad) | `{{ad.name}}` |
-| [`af_ad_id`](/docs/about-link-structure-and-parameters#af_ad_id) | `{{ad.id}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#pid">`pid`</Anchor> | `metaweb_int` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#c">`c`</Anchor> | `{{campaign.name}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_siteid">`af_siteid`</Anchor> | `{{site_source_name}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_c_id">`af_c_id`</Anchor> | `{{campaign.id}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_adset">`af_adset`</Anchor> | `{{adset.name}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_adset_id">`af_adset_id`</Anchor> | `{{adset.id}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ad">`af_ad`</Anchor> | `{{ad.name}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ad_id">`af_ad_id`</Anchor> | `{{ad.id}}` |
 
      An example of the resulting URL should be:
 
@@ -199,7 +199,7 @@ Perform the next steps in Meta Ads Manager.
      https://app.appsflyer.com/{app_id}?pid=metaweb_int&c={{campaign.name}}&af_siteid={{site_source_name}}&af_c_id={{campaign.id}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}&af_r={https://Add-your-store-url.com}
      ```
 
-     * If your app's APK is NOT hosted in Google Play Store, add the [`af_r`](/docs/about-link-structure-and-parameters#af_r) parameter and map to it the store URL, e.g, `https://Add-your-store-url.com`
+     * If your app's APK is NOT hosted in Google Play Store, add the <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_r">`af_r`</Anchor> parameter and map to it the store URL, e.g, `https://Add-your-store-url.com`
    * If your destination URL is a **PC or a console store**, create the link by following the instructions in the table below. For additional information see: <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">CTV, PC, and console platform direct attribution links</Anchor>
 
 <table><thead><tr><th colspan="2">Attribution link structure</th></tr></thead><tbody><tr><td>Base URL</td><td>engagements.appsflyer.com/v1.0/c2s/click/app/</td></tr><tr><td>Mandatory path parameters</td><td><ul><li>platform<br/>Example: steam</li><li>app_id<br/>Example: 123456</li></ul></td></tr><tr><td>Mandatory query parameters</td><td><ul><li>af_media_source</li><li>af_campaign_id</li><li>af_r</li></ul></td></tr><tr><td>Other parameters</td><td><a href="./ctv-pc-and-console-platform-direct-attribution-links#parameters" target="_blank">See all parameters</a></td></tr><tr><td>URL structure</td><td><code>https://engagements.appsflyer.com/v1.0/c2s/click/app/`{platform}/{app_id}?af_media_source={media_source}&amp;af_campaign_id={campaign_id}&amp;af_r={app_store_url}`</code></td></tr></tbody></table>
@@ -210,12 +210,12 @@ Perform the next steps in Meta Ads Manager.
 | --- | --- |
 | `af_media_source` | `metaweb_int` |
 | `af_campaign` | `{{campaign.name}}` |
-| [`af_siteid`](/docs/about-link-structure-and-parameters#af_siteid) | `{{site_source_name}}` |
-| [`af_campaign_id`](/docs/about-link-structure-and-parameters#af_c_id) | `{{campaign.id}}` |
-| [`af_adset`](/docs/about-link-structure-and-parameters#af_adset) | `{{adset.name}}` |
-| [`af_adset_id`](/docs/about-link-structure-and-parameters#af_adset_id) | `{{adset.id}}` |
-| [`af_ad`](/docs/about-link-structure-and-parameters#af_ad) | `{{ad.name}}` |
-| [`af_ad_id`](/docs/about-link-structure-and-parameters#af_ad_id) | `{{ad.id}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_siteid">`af_siteid`</Anchor> | `{{site_source_name}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_c_id">`af_campaign_id`</Anchor> | `{{campaign.id}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_adset">`af_adset`</Anchor> | `{{adset.name}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_adset_id">`af_adset_id`</Anchor> | `{{adset.id}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ad">`af_ad`</Anchor> | `{{ad.name}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ad_id">`af_ad_id`</Anchor> | `{{ad.id}}` |
 
      An example of cross-platform URL:
 

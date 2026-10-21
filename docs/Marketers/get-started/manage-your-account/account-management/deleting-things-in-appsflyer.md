@@ -65,9 +65,9 @@ When an app is temporarily removed, data recording stops, the app doesn't show o
 
 **To delete an app:**
 
-1. From the top bar, click **My Apps*.***
+1. From the top bar, click **My Apps**.
 2. Select an app action menu.
-3. Click **Remove*,*** then confirm.  
+3. Click **Remove**, then confirm.  
    The app is deleted and no longer displays in the app list.
 
 **To restore an app that was removed:**

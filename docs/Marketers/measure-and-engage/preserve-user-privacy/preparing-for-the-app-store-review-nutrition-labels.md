@@ -30,7 +30,7 @@ x-zendesk:
 ---
 **At a glance**: Starting iOS 14 App developers must provide the App Store information related to their Privacy Practices when they submit an app. The App Store publishes the practices in the format of a *nutrition label.*
 
-**A word from our lawyers:***Nothing stated here is legal advice. It is provided for your information and convenience. You should work closely with legal and other professional advisors to determine exactly how Apple policies apply to you.*
+**A word from our lawyers:** *Nothing stated here is legal advice. It is provided for your information and convenience. You should work closely with legal and other professional advisors to determine exactly how Apple policies apply to you.*
 
 ## Nutrition labels and the App Store review
 

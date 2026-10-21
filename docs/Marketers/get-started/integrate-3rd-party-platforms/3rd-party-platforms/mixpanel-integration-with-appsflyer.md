@@ -63,7 +63,7 @@ The Integration tab is divided into different sections as described below.
 <Image alt="mixpanel-general-settings.png" src="https://files.readme.io/df1b95eb3926aa7e10db338f156a87b88aabda6b97a4d28db2953e9e48a114e6-360017400598.png" width="542px" />
 
 * **EU Data Residency**: AppsFlyer send data to Mixpanel's US servers as a default. To send data to Mixpanel's EU servers instead, turn this toggle on.  
-  ***token**: Mixpanel connects with AppsFlyer via a unique Token. If you don't already have it, you must obtain it from Mixpanel to continue with the integration.
+  **\*token**: Mixpanel connects with AppsFlyer via a unique Token. If you don't already have it, you must obtain it from Mixpanel to continue with the integration.
 
   **To get the Token from Mixpanel:**
 

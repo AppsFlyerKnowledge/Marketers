@@ -109,7 +109,7 @@ To set iOS credentials, follow these steps:
 2. Go to **Users and Access** > **Integrations**, and from the **Keys** list, select **In-App Purchase**.
 
    [![](https://files.readme.io/f29bb10190a7dff35bddf0b1736202b439a9238925187eaef4247565f00f8805-42144939163025.png)](https://files.readme.io/f29bb10190a7dff35bddf0b1736202b439a9238925187eaef4247565f00f8805-42144939163025.png)
-3. Click **+** to generate a new In-App Purchase key.
+3. Click + to generate a new In-App Purchase key.
 
    [![](https://files.readme.io/0495e6793159e14fb1b27169665493cd0b8950228ebb859e3442f1024be58222-42144939165073.png)](https://files.readme.io/0495e6793159e14fb1b27169665493cd0b8950228ebb859e3442f1024be58222-42144939165073.png)
 4. Enter a name for your API key.

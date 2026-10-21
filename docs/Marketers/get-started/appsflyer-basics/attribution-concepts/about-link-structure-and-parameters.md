@@ -276,7 +276,7 @@ like email, SMS, or mail pigeons.
   that do not match the names of integrated partners.
 * **Use only legal characters.** If the PID parameter
   in the Attribution Link contains one of the following characters
-  ***/&lt;>*&?\***
+  /&lt;>*&?\
   * The click or install appears in the dashboard under
     ***af\_invalid\_param***
   * Attribution links will not be attributed

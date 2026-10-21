@@ -119,12 +119,12 @@ The new branded domain does not work if the CNAME record of your full domain isn
 **To renew the 7-day period:**
 
 1. In AppsFlyer, from the side menu, select **Engage** > **Branded Domains.**
-2. Go to the branded domain that is not yet mapped to AppsFlyer, indicated by the warning icon **(**![alert.png](https://files.readme.io/7df53739ca5c629ec0bda789563f59717da9699986222705228f57e0d947c8de-30192946335761.png)).
-3. Click the refresh icon **(**<Image alt="refresh.png" src="https://files.readme.io/052b47c423612c1b0549f37ed6394373d37f28331e09f4c709601a7e5473bf2b-30192959741585.png" width="18px" />) to renew the 7-day period.
+2. Go to the branded domain that is not yet mapped to AppsFlyer, indicated by the warning icon (![alert.png](https://files.readme.io/7df53739ca5c629ec0bda789563f59717da9699986222705228f57e0d947c8de-30192946335761.png)).
+3. Click the refresh icon (<Image alt="refresh.png" src="https://files.readme.io/052b47c423612c1b0549f37ed6394373d37f28331e09f4c709601a7e5473bf2b-30192959741585.png" width="18px" />) to renew the 7-day period.
 
 > 📘 **Note**
 >
-> You can delete the branded domain by clicking the Delete icon **(**<Image alt="delete-subdomain.png" src="https://files.readme.io/0029cc63db331d998182d46a63f9da9856de9b2351abd5b2d87fb2b47ae853c2-30192959748241.png" width="16px" />) if you decide not to renew the 7-day period. Only branded domains that are not yet mapped to AppsFlyer can be deleted.
+> You can delete the branded domain by clicking the Delete icon (<Image alt="delete-subdomain.png" src="https://files.readme.io/0029cc63db331d998182d46a63f9da9856de9b2351abd5b2d87fb2b47ae853c2-30192959748241.png" width="16px" />) if you decide not to renew the 7-day period. Only branded domains that are not yet mapped to AppsFlyer can be deleted.
 
 #### Custom SSL certificate (optional)
 
@@ -302,7 +302,7 @@ You can change the mapping of an existing full domain to a different OneLink sub
 
 1. In AppsFlyer, from the side menu, select **Engage** > **Branded Domains.**
 2. Go to the branded domain you want to edit.
-3. Click the Edit icon **(**<Image alt="edit-subdomain.png" src="https://files.readme.io/ffe3da7d1c065a806a44c607bcf1231e06bf7e7478ca50187e57cb5ab876ae72-30192959751185.png" width="17px" />).
+3. Click the Edit icon (<Image alt="edit-subdomain.png" src="https://files.readme.io/ffe3da7d1c065a806a44c607bcf1231e06bf7e7478ca50187e57cb5ab876ae72-30192959751185.png" width="17px" />).
 4. Select the new OneLink subdomain.
 5. Click **Next.** There is no need to set a CNAME.
 6. Click **Done**.
@@ -319,7 +319,7 @@ After changing the OneLink subdomain mapped to your branded domain verify that t
 
 1. In AppsFlyer, from the side menu, select **Engage** > **Branded Domains.**
 2. Go to the branded domain you want to verify.
-3. Click the Verify icon **(**<Image alt="verify-2.png" src="https://files.readme.io/4ac94a535e9101b3e727351f67df8917c0870d6ede8ec963de8c5528893b8e2b-30192946342929.png" width="17px" />).
+3. Click the Verify icon (<Image alt="verify-2.png" src="https://files.readme.io/4ac94a535e9101b3e727351f67df8917c0870d6ede8ec963de8c5528893b8e2b-30192946342929.png" width="17px" />).
 
 > 📘 **Note**
 >
@@ -359,9 +359,9 @@ To delete a branded domain contact your AppsFlyer CSM or hello@appsflyer.com.
 
 <Accordion title="Traits and limitations">
 
-| Trait | Yes **✓** / No **x** | Remarks |
+| Trait | Yes ✓ / No **x** | Remarks |
 | --- | --- | --- |
-| Account user access | **✓** |  |
+| Account user access | ✓ |  |
 | Ad network access | **x** |  |
 | Agency access | **x** | Agencies cannot create Branded Domains (or OneLink links). |
 | Agency transparency | **x** |  |
@@ -370,13 +370,13 @@ To delete a branded domain contact your AppsFlyer CSM or hello@appsflyer.com.
 | Branded domain availability | N/A | Branded domains are available with eligible paid plans only. If your subscription plan lapses or is canceled, access to branded domains is removed, and existing links that use your branded domains won't work. |
 | Character limitation | N/A | When entering your branded domain, the last character cannot be a period ("."). |
 | Data freshness | N/A |  |
-| Historical data | **✓** |  |
+| Historical data | ✓ |  |
 | HTTP | **x** | The HTTP protocol is not supported by branded links. HTTPS must be used. |
-| Non-organic data | **✓** |  |
-| Organic data | **✓** |  |
-| Rate limitation | **✓** | Branded Domain SSL/HTTP certificates are arranged by AppsFlyer using <Anchor target="_blank" href="https://letsencrypt.org/">Let's Encrypt</Anchor>, with a rate limit of 50 new certificates per week per domain. |
+| Non-organic data | ✓ |  |
+| Organic data | ✓ |  |
+| Rate limitation | ✓ | Branded Domain SSL/HTTP certificates are arranged by AppsFlyer using <Anchor target="_blank" href="https://letsencrypt.org/">Let's Encrypt</Anchor>, with a rate limit of 50 new certificates per week per domain. |
 | Size limitations | N/A |  |
-| SSL/HTTP certificate renewal | **✓** | Your branded Domain SSL/HTTP certificates managed by AppsFlyer are automatically renewed without any action required on your part. |
+| SSL/HTTP certificate renewal | ✓ | Your branded Domain SSL/HTTP certificates managed by AppsFlyer are automatically renewed without any action required on your part. |
 
 </Accordion>
 

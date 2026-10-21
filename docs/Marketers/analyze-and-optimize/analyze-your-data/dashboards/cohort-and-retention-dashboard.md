@@ -197,25 +197,25 @@ Use the partial/complete data control to select the data display mode:
 
 | Dimension | Comments | Group by | Filter by |
 | --- | --- | --- | --- |
-| <span id="ad"></span>Ad |  | **✓** | **✓** |
-| <span id="ad-id"></span>Ad ID |  | **✓** | **✓** |
-| <span id="adset"></span>Adset |  | **✓** | **✓** |
-| <span id="adset-id"></span>Adset ID |  | **✓** | **✓** |
-| <span id="agency"></span>Agency |  | **✓** | **✓** |
-| <span id="apps"></span>Apps | Relevant when the report contains multiple apps | **✓** | **x** |
-| <span id="attributed-touchtype"></span>Attributed touch-type | Values: Click, impression, or NA (organic) | **✓** | **✓** |
-| <span id="campaign"></span>Campaign |  | **✓** | **✓** |
-| <span id="campaign-id"></span>Campaign ID |  | **✓** | **✓** |
-| <span id="channel"></span>Channel |  | **✓** | **✓** |
-| <span id="conversion-type"></span>Conversion type | Cohort type dependant:<ul><li>**User acquisition**: Install</li><li>**Retargeting**: Re-engagement, Re-attribution</li></ul> | **✓** | **✓** |
-| <span id="country-geo"></span>Geo | Based on user IP address | **✓** | **✓** |
-| <span id="time-in-the-case-of-daily-granularity-is-the-date-hourly-granularity-is-the-hour-of-the-day-weekly-granularity-is-the-week-of-the-year-monthly-granularity-is-the-month-of-the-year"></span>Time. In the case of:<ul><li>Daily granularity is the date</li><li>Hourly granularity is the hour of the day</li><li>Weekly granularity is the week of the year</li><li>Monthly granularity is the month of the year</li></ul> | Cohort type dependant:<ul><li>**User acquisition and unified**: The time the app was launched for the first time.</li><li>**Retargeting**: The time the app was launched for the first time after re-engagement.</li></ul> | **✓** | **x** |
-| <span id="install-app-store"></span>Install app store | Relevant for apps implementing Android <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution">multi-store attribution.</Anchor> Reach out to your CSM to enable this dimension. | **✓** | **✓** |
-| <span id="keywords"></span>Keywords | Search keywords provided by the integrated partners | **✓** | **✓** |
-| <span id="media-source"></span>Media source |  | **✓** | **✓** |
-| <span id="revenue-type"></span>Revenue type | In-app purchase or Ad revenue | **x** | **✓** |
-| <span id="site-id"></span>Site Id |  | **✓** | **✓** |
-| <span id="sub-param-1"></span>Sub Param 1 |  | **✓** | **✓** |
+| <span id="ad"></span>Ad |  | ✓ | ✓ |
+| <span id="ad-id"></span>Ad ID |  | ✓ | ✓ |
+| <span id="adset"></span>Adset |  | ✓ | ✓ |
+| <span id="adset-id"></span>Adset ID |  | ✓ | ✓ |
+| <span id="agency"></span>Agency |  | ✓ | ✓ |
+| <span id="apps"></span>Apps | Relevant when the report contains multiple apps | ✓ | **x** |
+| <span id="attributed-touchtype"></span>Attributed touch-type | Values: Click, impression, or NA (organic) | ✓ | ✓ |
+| <span id="campaign"></span>Campaign |  | ✓ | ✓ |
+| <span id="campaign-id"></span>Campaign ID |  | ✓ | ✓ |
+| <span id="channel"></span>Channel |  | ✓ | ✓ |
+| <span id="conversion-type"></span>Conversion type | Cohort type dependant:<ul><li>**User acquisition**: Install</li><li>**Retargeting**: Re-engagement, Re-attribution</li></ul> | ✓ | ✓ |
+| <span id="country-geo"></span>Geo | Based on user IP address | ✓ | ✓ |
+| <span id="time-in-the-case-of-daily-granularity-is-the-date-hourly-granularity-is-the-hour-of-the-day-weekly-granularity-is-the-week-of-the-year-monthly-granularity-is-the-month-of-the-year"></span>Time. In the case of:<ul><li>Daily granularity is the date</li><li>Hourly granularity is the hour of the day</li><li>Weekly granularity is the week of the year</li><li>Monthly granularity is the month of the year</li></ul> | Cohort type dependant:<ul><li>**User acquisition and unified**: The time the app was launched for the first time.</li><li>**Retargeting**: The time the app was launched for the first time after re-engagement.</li></ul> | ✓ | **x** |
+| <span id="install-app-store"></span>Install app store | Relevant for apps implementing Android <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution">multi-store attribution.</Anchor> Reach out to your CSM to enable this dimension. | ✓ | ✓ |
+| <span id="keywords"></span>Keywords | Search keywords provided by the integrated partners | ✓ | ✓ |
+| <span id="media-source"></span>Media source |  | ✓ | ✓ |
+| <span id="revenue-type"></span>Revenue type | In-app purchase or Ad revenue | **x** | ✓ |
+| <span id="site-id"></span>Site Id |  | ✓ | ✓ |
+| <span id="sub-param-1"></span>Sub Param 1 |  | ✓ | ✓ |
 
 </Accordion>
 

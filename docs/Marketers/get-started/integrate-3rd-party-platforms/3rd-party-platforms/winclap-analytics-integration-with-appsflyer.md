@@ -106,7 +106,7 @@ In this section, you can map which in-app events to send to Winclap Analytics us
 | **Sending option** | Select the sending option for the event:  <br />**This partner only** for events coming **only** from users attributed to this partner  <br />**All media sources, including organic** to have your entire user base available to be reported to the partner |
 | **Send event data** | <ul><li>**No values & no revenue:** sends only the event itself without the event value.</li><li>**Values & no revenue:** sends all the parameters excluding the revenue value.</li><li>**Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).</li></ul> |
 
-5. Click ***Save*.**
+5. Click ***Save***.
 
 Once this configuration is saved, AppsFlyer sends the following data to Winclap Analytics for each non-organic event:
 

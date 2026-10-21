@@ -114,7 +114,7 @@ Learn more about the different measurement modes in the sections that follow.
 
 > 🚧 **Important!**
 >
-> Setting conversion values in SKAN Conversion Studio must be performed by an admin or an account user with the **Manage*** permissions in **SKAN Conversion Studio**.
+> Setting conversion values in SKAN Conversion Studio must be performed by an admin or an account user with the **Manage\*** permissions in **SKAN Conversion Studio**.
 >
 > **To view or change user permissions:**
 >
@@ -141,7 +141,7 @@ To manually set SKAN 4, experiment with different options. As you make changes, 
 **![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) To manually set conversion values in Conversion Studio using SKAN 4 mode:**
 
 1. In the AppsFlyer dashboard, go to **Settings** > **SKAN Conversion Studio.**
-2. Click options **(⋮)** to display the options menu and make sure **SKAN measurement** is turned on. **Note**! If off, the SDK does not call iOS SKAN functions like *registerAppForAdNetworkAttribution*, *updateConversionValue.*
+2. Click options (⋮) to display the options menu and make sure **SKAN measurement** is turned on. **Note**! If off, the SDK does not call iOS SKAN functions like *registerAppForAdNetworkAttribution*, *updateConversionValue.*
 3. Select the **SKAN 4.0** measurement mode.
 4. Click **Continue**.  
    The settings for **Window 1 (1-2 days) fine** CV opens.
@@ -181,12 +181,12 @@ To set Custom, experiment with different options. As you make changes, the **Con
 
 ![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
 
-Note: By default, AppsFlyer displays SKAN 4 on the Conversion Studio. To revert to a previous mode, click options **(⋮)** to display the options menu and select Revert to the previous SKAN version.
+Note: By default, AppsFlyer displays SKAN 4 on the Conversion Studio. To revert to a previous mode, click options (⋮) to display the options menu and select Revert to the previous SKAN version.
 
 **![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) To manually set conversion values in Conversion Studio using Custom mode:**
 
 1. In the AppsFlyer dashboard, go to **Settings** > **SKAN Conversion Studio.**
-2. Click options **(⋮)** to display the options menu and make sure **SKAN measurement** is turned on. **Note**! If off, the SDK does not call iOS SKAN functions like *registerAppForAdNetworkAttribution*, *updateConversionValue.*
+2. Click options (⋮) to display the options menu and make sure **SKAN measurement** is turned on. **Note**! If off, the SDK does not call iOS SKAN functions like *registerAppForAdNetworkAttribution*, *updateConversionValue.*
 3. Select the **Custom** measurement mode.
 4. Click **Continue**.
 5. [Optional] Turn on **Single Source of Truth (SSOT)**.  
@@ -230,7 +230,7 @@ As you make changes to the mode settings, the **Conversion-value capacity** summ
 **![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) To manually set conversion values in Conversion Studio using a fixed mode:**
 
 1. In the AppsFlyer dashboard, go to **Settings** > **SKAN Conversion Studio.**
-2. Click options **(⋮)** to display the options menu and:
+2. Click options (⋮) to display the options menu and:
    * Make sure **SKAN measurement** is turned on. **Note**! If off, the SDK does not call iOS SKAN functions like *registerAppForAdNetworkAttribution*, *updateConversionValue.*
    * [Optional] [Enable sending events by S2S](/docs/skan-conversion-studio#report-events-by-servertoserver-api). Available if the selected mode is revenue, conversion, or engagement.
 3. Select a fixed measurement mode.
@@ -257,7 +257,7 @@ Create your own CV-to-event mapping and set the CV in the app yourself. Use this
 **To use Decode**:
 
 1. In the AppsFlyer dashboard, go to **Settings** > **SKAN Conversion Studio.**
-2. Click options **(⋮)** to display the options menu and:
+2. Click options (⋮) to display the options menu and:
    * Make sure **SKAN measurement** is turned on. **Note**! If off, the SDK does not call iOS SKAN functions like *registerAppForAdNetworkAttribution*, *updateConversionValue.*
    * Upload your Decode mapping file.
 3. Click **Save**.
@@ -348,9 +348,9 @@ Priority is best explained in the [detailed example](/docs/skan-conversion-studi
    The **Priority is valid message** displays. If this isn't the case, correct your priority before you continue.
 8. Do one of the following:
    * To add a priority, click **+ Add priority.** The existing priority 1 is shifted down and becomes priority 2. Complete the priority settings as previously described.
-   * To delete a priority, click **…** > **Delete.**
-   * To change the priority level, click **Options** (**⋮**), and select either **Change order** or **Make lowest priority**.
-   * To duplicate a priority, click **Options** (**⋮**), and select **Duplicate**.
+   * To delete a priority, click … > **Delete.**
+   * To change the priority level, click **Options** (⋮), and select either **Change order** or **Make lowest priority**.
+   * To duplicate a priority, click **Options** (⋮), and select **Duplicate**.
    * Click **Save**, to complete setting priorities.
 
 </Accordion>
@@ -492,7 +492,7 @@ The table that follows contains user journey scenarios. Each scenario contains t
 
 In the table:
 
-* Multiple actions are separated using **>**
+* Multiple actions are separated using >
 * The value in brackets (), is the priority determined by AppsFlyer set after the user completes the action. Using the priority AppsFlyer update the CV in the app.
 
 #### User journey scenarios
@@ -661,7 +661,7 @@ Consider:
 To turn off SKAdNetwork measurement:
 
 1. In AppsFlyer, go to **Settings** > **SKAN Conversion Studio.**
-2. Click **⋮** .
+2. Click ⋮ .
 3. Turn off **SKAdNetwork measurement.**   
    Among other things, the SDK stops calling SKAN functions like *registerAppForAdNetworkAttribution*, *updateConversionValue.*
 4. Click **Save changes.**
@@ -735,7 +735,7 @@ To enable conversion value decrease:
 
 1. In AppsFlyer, go to **Settings** > **SKAN Conversion Studio**.
 2. Select the **SKAN 4.0** measurement mode.
-3. Click options **(⋮)** to display the options menu and:
+3. Click options (⋮) to display the options menu and:
    * Make sure **Allow conversion decrease** is turned on.   
      **Note**! This will only be available to:
      * Apps that have been previously saved in SKAN 4 mode in conversion studio.

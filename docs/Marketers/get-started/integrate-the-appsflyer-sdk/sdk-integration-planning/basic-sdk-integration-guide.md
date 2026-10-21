@@ -195,8 +195,8 @@ AppsFlyer supports attribution in the context of third-party app stores as follo
 
     See the Android SDK reference for:
 
-    * [`setImeiData`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setimeidata)
-    * [`setAndroidIdData`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setandroididdata)
+    * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setimeidata">`setImeiData`</Anchor>
+    * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setandroididdata">`setAndroidIdData`</Anchor>
 
     </Tab>
 
@@ -204,8 +204,8 @@ AppsFlyer supports attribution in the context of third-party app stores as follo
 
     See the Unity SDK reference for:
 
-    * [`setImeiData`](https://dev.appsflyer.com/hc/docs/api#setimeidata)
-    * [`setAndroidIdData`](https://dev.appsflyer.com/hc/docs/api#setandroididdata)
+    * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setimeidata">`setImeiData`</Anchor>
+    * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setandroididdata">`setAndroidIdData`</Anchor>
 
     </Tab>
     </Tabs>
@@ -217,8 +217,8 @@ AppsFlyer supports attribution in the context of third-party app stores as follo
 
     See the Android SDK reference for:
 
-    * [`setCollectIMEI`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectimei)
-    * [`setCollectAndroidID`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectandroidid)
+    * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectimei">`setCollectIMEI`</Anchor>
+    * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectandroidid">`setCollectAndroidID`</Anchor>
 
     </Tab>
 
@@ -226,8 +226,8 @@ AppsFlyer supports attribution in the context of third-party app stores as follo
 
     See the Unity SDK reference for:
 
-    * [`setCollectIMEI`](https://dev.appsflyer.com/hc/docs/api#setcollectimei)
-    * [`setCollectAndroidID`](https://dev.appsflyer.com/hc/docs/api#setcollectandroidid)
+    * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setcollectimei">`setCollectIMEI`</Anchor>
+    * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setcollectandroidid">`setCollectAndroidID`</Anchor>
 
     </Tab>
 
@@ -235,8 +235,8 @@ AppsFlyer supports attribution in the context of third-party app stores as follo
 
     See the React Native reference for:
 
-    * [`setCollectIMEI`](https://dev.appsflyer.com/hc/docs/rn_api#setcollectimei)
-    * [`setCollectAndroidID`](https://dev.appsflyer.com/hc/docs/rn_api#setcollectandroidid)
+    * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#setcollectimei">`setCollectIMEI`</Anchor>
+    * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#setcollectandroidid">`setCollectAndroidID`</Anchor>
 
     </Tab>
     </Tabs>
@@ -353,19 +353,19 @@ To disable SKAN attribution, instruct your developer to disable it in the SDK.
 <Tabs>
 <Tab title="iOS native">
 
-To disable SKAN attribution use [`disableSKAdNetwork`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableskadnetwork)
+To disable SKAN attribution use <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableskadnetwork">`disableSKAdNetwork`</Anchor>
 
 </Tab>
 
 <Tab title="Unity">
 
-To disable SKAN attribution use [`disableSKAdNetwork`](https://dev.appsflyer.com/hc/docs/api#disableskadnetwork)
+To disable SKAN attribution use <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#disableskadnetwork">`disableSKAdNetwork`</Anchor>
 
 </Tab>
 
 <Tab title="React Native">
 
-To disable SKAN attribution use [`disableSKAd`](https://dev.appsflyer.com/hc/docs/rn_api#disableskad)
+To disable SKAN attribution use <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#disableskad">`disableSKAd`</Anchor>
 
 </Tab>
 </Tabs>

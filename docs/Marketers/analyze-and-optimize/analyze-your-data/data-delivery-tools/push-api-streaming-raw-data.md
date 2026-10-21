@@ -199,7 +199,7 @@ All team members with permissions to access the API can make changes to Push API
 3. Click **Add Endpoint.**   
    **Note**: You can define 1-3 SKAdNetwork endpoints per app.
 4. Select an HTTP method: **POST** or **GET**
-5. Enter the **EndpointURL**. If you get the message *this URL is not safe*, contact AppsFlyer support.
+5. Enter the **Endpoint** **URL**. If you get the message *this URL is not safe*, contact AppsFlyer support.
 6. We don't send null/empty fields and the associated key. Take this into account when planning your import/parsing processes.
 7. Click **Save**.  
    The Push API is now active. Data is sent to the endpoint.

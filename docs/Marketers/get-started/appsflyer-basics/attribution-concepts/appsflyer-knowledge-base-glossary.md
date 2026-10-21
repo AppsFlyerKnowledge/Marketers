@@ -31,7 +31,7 @@ x-zendesk:
 
 **[A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [I](#i) · J · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [Q](#q) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [X](#X) · Y · Z**
 
-**Translated glossary terms are ordered according to the English alphabet.*
+*\*Translated glossary terms are ordered according to the English alphabet.*
 
 <Accordion title="A">
 
@@ -210,7 +210,7 @@ x-zendesk:
     session. <Anchor target="_blank" href="/marketers/docs/measure-sessions">[Article]</Anchor>
 
 #### App owner
-:   Related to*,* **Advertiser** and
+:   Related to, **Advertiser** and
     **Marketer**  
     Owns an app and advertises/markets it across various platforms
     in order to increase the user base.
@@ -249,7 +249,7 @@ x-zendesk:
     Used to improve app visibility in the App Store.
 
 #### Assisted installs
-:   Also*,* **Multi-touch attribution**  
+:   Also, **Multi-touch attribution**  
     Engagements, via media sources, that contribute to the last attributed
     engagement before an install. <Anchor target="_blank" href="/marketers/docs/measure-assisted-installs">[Article]</Anchor>
 
@@ -907,7 +907,8 @@ KPI
 <Accordion title="P">
 
 #### Package ID
-:   Also, [App ID (Android & iOS)](#a) Unique
+:   Also, [App ID (Android & iOS)](#a)  
+    Unique
     identifier that appears in the URL address of a store's app page.
     The format reflects the associated operating system (OS).
 
@@ -1036,7 +1037,8 @@ KPI
     Platforms belonging to super publishers who independently perform
     attribution (install and in-app event) calculations on their
     own traffic. They don't use the input of 3rd-party attribution
-    providers.*Examples:* Meta ads, Google
+    providers.  
+    *Examples:* Meta ads, Google
     Ads, X Ads.
     <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">[See full list]</Anchor>
 

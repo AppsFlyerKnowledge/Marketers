@@ -139,7 +139,7 @@ If you run campaigns on Meta ads and don't sign the Meta terms of service, AppsF
 | `adgroup` | Available in raw-data: Ad | Meta ads (adgroup\_name) |
 | `adgroup_id` | Available in raw-data: Ad ID | Meta ads (adgroup\_id) |
 | `adset` | Available in raw-data: Adset | Meta ads (campaign\_name) |
-| `af_siteid` | **af\_siteid mapping:**  <br />  <br />***publisher\_platform***  → ***af\_siteid***  <br />Facebook → ""  <br />Instagram → Instagram  <br />AudienceNetwork → AudienceNetwork  <br />Messenger → Messenger  <br />unknown → unknown  <br />"" + is\_instagram=true → Instagram  <br />"" + is\_external=true → AudienceNetwork | Meta ads |
+| `af_siteid` | **af\_siteid mapping:**  <br />  <br />***publisher\_platform*** → ***af\_siteid***  <br />Facebook → ""  <br />Instagram → Instagram  <br />AudienceNetwork → AudienceNetwork  <br />Messenger → Messenger  <br />unknown → unknown  <br />"" + is\_instagram=true → Instagram  <br />"" + is\_external=true → AudienceNetwork | Meta ads |
 | `af_sub[1-5]` | Always `null` | Advertiser |
 
 **Note:** Cost-related fields are not available because Meta ads does not share cost data upon conversion. If <Anchor target="_blank" href="/marketers/docs/meta-ads-integration-setup#cost-clicks-and-impressions">cost-sharing</Anchor> is enabled, Meta ads shares cost data with AppsFlyer several times a day.

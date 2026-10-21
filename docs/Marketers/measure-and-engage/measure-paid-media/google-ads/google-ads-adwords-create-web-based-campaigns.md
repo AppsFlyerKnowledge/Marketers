@@ -164,9 +164,9 @@ Before creating a OneLink attribution link for your Google Ads campaign, you nee
 > The instructions below focus on creating a OneLink template for Google web campaigns with Smart Script. For a comprehensive guide on how to set up OneLink templates, see the How to create OneLink templates section of the OneLink templates article.
 
 1. Under the **Redirection** section of the **New template** or **Edit template** page, configure the following settings:
-   * **When app isn’t installed** > **Redirect to**: Select your preferred option. The redirection value you set here is overridden by the `{lpurl}` value of the redirection parameters ( [`af_android_url`](/docs/about-link-structure-and-parameters#af_android_url), [`af_ios_url`](/docs/about-link-structure-and-parameters#af_ios_url) ) you place in the Google Tracking Template; see [Set the Tracking Template URL](#set-the-tracking-template-url).
+   * **When app isn’t installed** > **Redirect to**: Select your preferred option. The redirection value you set here is overridden by the `{lpurl}` value of the redirection parameters ( <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_android_url">`af_android_url`</Anchor>, <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ios_url">`af_ios_url`</Anchor> ) you place in the Google Tracking Template; see [Set the Tracking Template URL](#set-the-tracking-template-url).
    * **When app is installed**: Make sure **not** to set up Universal Links, URI scheme, or All Links for launching the app because Google does not allow any redirection apart from the redirection to the Final URL.
-   * **When link is clicked on desktop web page** > **Redirect to**: Select your preferred option. The redirection value you set here is overridden by the `{lpurl}` value of the redirection parameters ([`af_web_dp`](/docs/about-link-structure-and-parameters#af_web_dp)) you place in the Google Tracking Template, see [Set the Tracking Template URL](#set-the-tracking-template-url).
+   * **When link is clicked on desktop web page** > **Redirect to**: Select your preferred option. The redirection value you set here is overridden by the `{lpurl}` value of the redirection parameters (<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_web_dp">`af_web_dp`</Anchor>) you place in the Google Tracking Template, see [Set the Tracking Template URL](#set-the-tracking-template-url).
 2. Click **Create template**.
 
 </Accordion>
@@ -294,13 +294,13 @@ Because Google Ads, by default, uses Parallel Tracking, the Tracking Template UR
 >
 > If your Final URL points directly to the Google Play store or the App Store (the user platform is known), use a single-platform attribution link in the Tracking Template URL. Using a OneLink URL in this scenario results in a "Tracking call unsuccessful" error from Google.
 
-* **The PID parameter:** Add the mandatory [`pid`](/docs/about-link-structure-and-parameters#pid)`=googleads_int` parameter.
+* **The PID parameter:** Add the mandatory <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#pid">`pid`</Anchor>`=googleads_int` parameter.
 
 > 👍 **Tip**
 >
 > To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name, for example, campaign-name\_web
 
-* **The site ID  parameter:** Add the mandatory [`af_siteid`](/docs/about-link-structure-and-parameters#af_siteid) parameter. You can manually assign any value to it.
+* **The site ID  parameter:** Add the mandatory <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_siteid">`af_siteid`</Anchor> parameter. You can manually assign any value to it.
 * **The campaign name parameter:** Add the mandatory <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#c">c</Anchor> parameter and manually assign its value (There is no ValueTrack parameter for this parameter).
 * **The force transparent parameter**: Add the mandatory `af_force_transparent=true` parameter. This parameter is designed to enhance security in redirection behavior and make sure your setup complies with Google’s requirements. Please note that if you do not add the required parameter, Google may disapprove your ad.
 * **Redirection parameters for a OneLink attribution link:** For parallel tracking to function as intended, set the AF redirection parameters in one of the following combinations:
@@ -317,7 +317,7 @@ Because Google Ads, by default, uses Parallel Tracking, the Tracking Template UR
 > * It must be encoded.
 > * The URL domain is included in your redirect allowlist.
 
-* **AppsFlyer attribution parameters mapped to Google ValueTrack parameters**, for example, [`af_c_id`](/docs/about-link-structure-and-parameters#af_c_id)`={campaignid}`. To learn about the available ValueTrack parameters, see the [Google documentation](https://support.google.com/google-ads/answer/6305348?sjid=9660882197247124000-EU#zippy=%2Cfinal-url-tracking-template-or-custom-parameter).
+* **AppsFlyer attribution parameters mapped to Google ValueTrack parameters**, for example, <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_c_id">`af_c_id`</Anchor>`={campaignid}`. To learn about the available ValueTrack parameters, see the [Google documentation](https://support.google.com/google-ads/answer/6305348?sjid=9660882197247124000-EU#zippy=%2Cfinal-url-tracking-template-or-custom-parameter).
 * Don't include any of the following parameters. Requests that contain these parameters are not supported in the Parallel Tracking flow and will be rejected:
   * `af_dp`
   * `af_android_store_csl`

@@ -46,7 +46,7 @@ x-zendesk:
      * Valid characters:
        * letters **(A-Z, a-z)**
        * numbers **(0-9)**, *cannot be the first character of a name*
-       * a hyphen **(-)**, *cannot be the first character of a name*
+       * a hyphen (-), *cannot be the first character of a name*
      * Invalid characters:
        * spaces
        * all other symbols or special characters
@@ -124,7 +124,7 @@ If the report includes more than one custom source, only one of them needs to be
 > * Custom source #4 identifier **ID** is mapped directly to the in-app event key identifier **af\_id.**
 >   * Note that it could have been mapped indirectly instead (through custom source #3 identifier **user\_id**), but either option works fine.
 >
-> **✓** This mapping scheme works to match data among all the sources since each custom source is mapped either directly or indirectly to the in-app event key identifier **af\_id.**
+> ✓ This mapping scheme works to match data among all the sources since each custom source is mapped either directly or indirectly to the in-app event key identifier **af\_id.**
 
 </Accordion>
 
@@ -151,7 +151,7 @@ One of the major advantages of In-app event reports is that they allow you to ex
    The **Extract field from event\_value** window opens.
 2. In the **Report field** box, enter the name of the extracted dimension as you would like it to appear in your report.
 3. From the **Event\_value parameter** list, select the in-app event parameter that should be mapped by default to the report field (dimension) you defined in step 2.
-   * The available parameters include those that have been configured in the **selected in-app events** **in the selected apps.**
+   * The available parameters include those that have been configured in the **selected in-app events** **in the selected apps**.
 4. It may be that the default mapping differs by app and/or event. If this is the case:
    1. Click the **Add exception** button
    2. Select the app and event for which the report field should be mapped differently.
@@ -230,8 +230,8 @@ However, instead of removing or hiding the data from the report completely, the 
 >
 > | media  <br />source | campaign | adset  <br />name | ad  <br />id | user  <br />type | rev  <br />D0 | rev  <br />D7 | count | reportable? |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-> | media\_source | UA\_100 | green | kjh867 | buyer | 1 | 4 | 120 | **✓** |
-> | media\_source | UA\_101 | green | jkj987 | ultra | 2 | 23 | 220 | **✓** |
+> | media\_source | UA\_100 | green | kjh867 | buyer | 1 | 4 | 120 | ✓ |
+> | media\_source | UA\_101 | green | jkj987 | ultra | 2 | 23 | 220 | ✓ |
 > | media\_source | UA\_200 | green | lkh123 | beg | 6 | 7 | x | **X** |
 > | media\_source | UA\_200 | green | ilk945 | beg | 3 | 21 | x | **X** |
 > | media\_source | UA\_200 | green | plm654 | beg | 8 | 17 | x | **X** |
@@ -250,9 +250,9 @@ However, instead of removing or hiding the data from the report completely, the 
 >
 > | media  <br />source | campaign | adset  <br />name | ad  <br />id | user  <br />type | rev  <br />D0 | rev  <br />D7 | count | reportable? |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-> | media\_source | UA\_100 | green | kjh867 | buyer | 1 | 4 | 120 | **✓** |
-> | media\_source | UA\_101 | green | jkj987 | ultra | 2 | 23 | 220 | **✓** |
-> | media\_source | UA\_200 | green | RESTRICTED | beg | 17 | 45 | y (x+x+x) | **✓** |
+> | media\_source | UA\_100 | green | kjh867 | buyer | 1 | 4 | 120 | ✓ |
+> | media\_source | UA\_101 | green | jkj987 | ultra | 2 | 23 | 220 | ✓ |
+> | media\_source | UA\_200 | green | RESTRICTED | beg | 17 | 45 | y (x+x+x) | ✓ |
 >
 >
 >
@@ -304,7 +304,7 @@ Just as you can for [report dimensions](/docs/data-clean-room-creating-in-app-ev
    The **Extract field from event\_value** window opens.
 2. In the **Report field** box, enter the name of the extracted metric as you would like it to appear in your report.
 3. From the **Event\_value parameter** list, select the in-app event parameter that should be mapped by default to the report field (metric) you defined in step 2.
-   * The available parameters include those that have been configured in the **selected in-app events** **in the selected apps.**
+   * The available parameters include those that have been configured in the **selected in-app events** **in the selected apps**.
 4. It may be that the default mapping differs by app and/or event. If this is the case:
    1. Click the **Add exception** button
    2. Select the app and event for which the report field should be mapped differently.
@@ -382,7 +382,7 @@ Reports without custom sources are run according to the schedule you define.
 >
 > Scheduling options are disabled for reports that use custom sources. This type of report runs whenever new versions of all of the <Anchor target="_blank" href="/marketers/docs/data-clean-room-creating-attribution-data-reports#custom-sources">custom sources it uses</Anchor> are detected:
 >
-> * For sources located in **data warehouses** (BigQuery and Snowflake), the DCR recognizes that a new version of a source has been created when it detects a new value in [the `v` column of the source table](/docs/data-clean-room-working-with-sources#table-columns).
+> * For sources located in **data warehouses** (BigQuery and Snowflake), the DCR recognizes that a new version of a source has been created when it detects a new value in <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#table-columns">the `v` column of the source table</Anchor>.
 >   * **Important!** To ensure the completeness of your report, be sure to populate the source table with a complete set of data whenever the column value is changed.
 > * For sources located in **cloud storage buckets** (Amazon S3 and GCS), the DCR recognizes that a new version of a source has been created when it detects that a <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#updating-sources-to-trigger-report-processing">new version of a source file has been uploaded</Anchor> along with its accompanying \_SUCCESS file.
 >

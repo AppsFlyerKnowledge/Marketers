@@ -140,7 +140,7 @@ To manage user attributes, go to **Audiences** > **User attributes** tab.
 | <span id="search-and-filter"></span>Search and filter | By attribute name, app name, and attribute level. |
 | <span id="sort-by"></span>Sort by | Click a column header to sort table rows. |
 | <span id="zd-import-data"></span>Import data | <ul><li>[Import data by CSV](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[Import data by API](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
-| <span id="change-api-import-key"></span>Change API import key | **To change the API import key:**<ol><li>Click **Import data**.</li><li>Select **API**.</li><li>Click **Refresh import key***.*</li></ol>**Note!** If scripts have embedded keys, make sure to update them with the new key. |
+| <span id="change-api-import-key"></span>Change API import key | **To change the API import key:**<ol><li>Click **Import data**.</li><li>Select **API**.</li><li>Click **Refresh import key**.</li></ol>**Note!** If scripts have embedded keys, make sure to update them with the new key. |
 
 Manage user attributes
 

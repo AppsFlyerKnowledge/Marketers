@@ -99,7 +99,8 @@ The usual process for install attribution of Google Ads campaigns (which carry a
 
 Since in this case, you are redirecting leads from Google Ads to a web/landing page, the script takes the GCLID parameter from the Google Ads install campaign URL and puts it into the outgoing URL in your choice of output parameter **af\_sub[1-5].** **Note!** This applies to install campaigns. For non-ACI search campaigns, meaning re-engagement campaigns, Google may be attributed as the media source, despite the Smart Script output.
 
-**Prerequisite**: On the Google dashboard, <Anchor target="_blank" href="https://support.google.com/analytics/answer/1033981?hl=en">enable auto-tagging</Anchor>.With auto-tagging enabled, the URL contains the *GCLID* parameter.
+**Prerequisite**: On the Google dashboard, <Anchor target="_blank" href="https://support.google.com/analytics/answer/1033981?hl=en">enable auto-tagging</Anchor>.   
+With auto-tagging enabled, the URL contains the *GCLID* parameter.
 
 **To set up the script for Google Ads**:
 

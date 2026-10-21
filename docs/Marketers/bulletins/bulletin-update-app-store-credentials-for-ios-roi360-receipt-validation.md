@@ -70,7 +70,7 @@ The required credentials for the iOS In-App Purchase API integration are:
 1. In the App Store Connect, go to **Users and Access** <Image alt="" src="https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png" width="486px" />
 2. Go to **Users and Access** > **Integrations**, and from the **Keys** list, select **In-App Purchase**.  
    <Image alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" width="532px" />
-3. Click **+** to generate a new In-App Purchase key.  
+3. Click + to generate a new In-App Purchase key.  
    <Image alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" width="384px" />
 4. Enter a name for your API key.
 5. Click **Generate**.

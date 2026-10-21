@@ -216,14 +216,14 @@ Complete the following steps in Meta Ads Manager.
 
 | AF parameter | Mapped Meta value |
 | --- | --- |
-| [`pid`](/docs/about-link-structure-and-parameters#pid) | `metaweb_int` |
-| [`c`](/docs/about-link-structure-and-parameters#c) | `{{campaign.name}}` |
-| [`af_siteid`](/docs/about-link-structure-and-parameters#af_siteid) | `{{site_source_name}}` |
-| [`af_c_id`](/docs/about-link-structure-and-parameters#af_c_id) | `{{campaign.id}}` |
-| [`af_adset`](/docs/about-link-structure-and-parameters#af_adset) | `{{adset.name}}` |
-| [`af_adset_id`](/docs/about-link-structure-and-parameters#af_adset_id) | `{{adset.id}}` |
-| [`af_ad`](/docs/about-link-structure-and-parameters#af_ad) | `{{ad.name}}` |
-| [`af_ad_id`](/docs/about-link-structure-and-parameters#af_ad_id) | `{{ad.id}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#pid">`pid`</Anchor> | `metaweb_int` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#c">`c`</Anchor> | `{{campaign.name}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_siteid">`af_siteid`</Anchor> | `{{site_source_name}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_c_id">`af_c_id`</Anchor> | `{{campaign.id}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_adset">`af_adset`</Anchor> | `{{adset.name}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_adset_id">`af_adset_id`</Anchor> | `{{adset.id}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ad">`af_ad`</Anchor> | `{{ad.name}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ad_id">`af_ad_id`</Anchor> | `{{ad.id}}` |
 
 An example of a resulting URL:
 

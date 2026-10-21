@@ -130,14 +130,14 @@ For the best user experience, security, and device coverage, we recommend enabli
 
 1. In AppsFlyer, from the side menu, select **Engage** > **OneLink management**.
 2. Select the OneLink template you want to edit.
-3. Click the menu icon (**⋮**), then click **Edit OneLink template**.
+3. Click the menu icon (⋮), then click **Edit OneLink template**.
 4. Scroll down to **When app is installed**. [![](https://files.readme.io/c0e8e5364f0b184f33d72e33f28df131d5a8bb6c377dc74f0ec190bcc6e63e75-18363965490833.png)](https://files.readme.io/c0e8e5364f0b184f33d72e33f28df131d5a8bb6c377dc74f0ec190bcc6e63e75-18363965490833.png)
 5. Follow the instructions for iOS, Android, and fallback setup:
 
    <Tabs>
    <Tab title="iOS Universal Links">
 
-   Universal Links take the format of regular web links (e.g. https://yourbrand.onelink.me or https://www.yourbrand.com)** and thus require setting a subdomain (covered in the [previous guide](/docs/create-a-onelink-template#create-a-onelink-template)). OneLink also supports fully <Anchor target="_blank" href="/marketers/docs/brand-onelink-with-your-domain">branded domains</Anchor>, but that isn't necessary to complete this guide.
+   Universal Links take the format of regular web links (e.g. https://yourbrand.onelink.me or https://www.yourbrand.com) and thus require setting a subdomain (covered in the [previous guide](/docs/create-a-onelink-template#create-a-onelink-template)). OneLink also supports fully <Anchor target="_blank" href="/marketers/docs/brand-onelink-with-your-domain">branded domains</Anchor>, but that isn't necessary to complete this guide.
 
    **To launch the app using Universal Links**:
 
@@ -157,7 +157,7 @@ For the best user experience, security, and device coverage, we recommend enabli
 
    <Tab title="Android App Links">
 
-   App Links take the format of regular web links (e.g. https://yourbrand.onelink.me or https://www.yourbrand.com)** and thus require setting a subdomain (covered in the [previous guide](/docs/create-a-onelink-template#create-a-onelink-template)). OneLink also supports fully <Anchor target="_blank" href="/marketers/docs/brand-onelink-with-your-domain">branded domains</Anchor>, but that isn't necessary to complete this guide.
+   App Links take the format of regular web links (e.g. https://yourbrand.onelink.me or https://www.yourbrand.com) and thus require setting a subdomain (covered in the [previous guide](/docs/create-a-onelink-template#create-a-onelink-template)). OneLink also supports fully <Anchor target="_blank" href="/marketers/docs/brand-onelink-with-your-domain">branded domains</Anchor>, but that isn't necessary to complete this guide.
 
    **Before you begin**:
 
@@ -263,7 +263,7 @@ A favicon is the small icon that appears next to your link title when a link is 
 
 1. In AppsFlyer, from the side menu, select **Engage** > **OneLink management**.
 2. Select the OneLink template you want to edit.
-3. Click the menu icon (**⋮**), then click **Edit OneLink template**.
+3. Click the menu icon (⋮), then click **Edit OneLink template**.
 4. Scroll down to the **Favicon** section.
 5. In the **Favicon Image URL** field, enter the URL of your favicon image.
    * Supported format: ICO

@@ -67,7 +67,7 @@ Before you begin, you'll need your:
 
 <Accordion title="Step 3. Create a OneLink template (app developer collaboration)">
 
-**You and your app developer are both needed for this step*.***
+**You and your app developer are both needed for this step**.
 
 A OneLink template is required for creating links and end-user experiences. It forms the basis of the redirection logic for all OneLink links you create for your various marketing campaigns.
 
@@ -80,7 +80,7 @@ A OneLink template is required for creating links and end-user experiences. It f
 
 <Accordion title="Step 4. Set up the AppsFlyer SDK (app developer task)">
 
-**Your app developer is needed for this step*.***
+**Your app developer is needed for this step**.
 
 The AppsFlyer SDK integrated into the app is the link between the app and the AppsFlyer platform. It provides:
 
@@ -115,7 +115,7 @@ Integrate AppsFlyer SDK in your app using the steps below.
 
 <Accordion title="Step 5. Understand parameter mapping (app developer task)">
 
-**Your app developer is needed for this step*.***
+**Your app developer is needed for this step**.
 
 Understand how Firebase Dynamic Links parameters map to AppsFlyer's corresponding parameters.
 

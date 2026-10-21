@@ -52,10 +52,10 @@ For a description of the report types, see <Anchor target="_blank" href="/market
 
 | Category | Report type (topic) | Data freshness | Organic/Non-organic | Unique to Data Locker |
 | --- | --- | --- | --- | --- |
-| User acquisition | Clicks | 1-3 hours | N/A | **✓** |
-| Retargeting | Clicks | 1-3 hours | N/A | **✓** |
-| User acquisition | Impressions | 1-3 hours | N/A | **✓** |
-| Retargeting | Impressions | 1-3 hours | N/A | **✓** |
+| User acquisition | Clicks | 1-3 hours | N/A | ✓ |
+| Retargeting | Clicks | 1-3 hours | N/A | ✓ |
+| User acquisition | Impressions | 1-3 hours | N/A | ✓ |
+| Retargeting | Impressions | 1-3 hours | N/A | ✓ |
 | User acquisition | Installs | 1-3 hours | Both |  |
 | User acquisition | In-app events | 1-3 hours | Both |  |
 | User acquisition | Attributed ad revenue | Daily+1 | Non-organic |  |
@@ -63,13 +63,13 @@ For a description of the report types, see <Anchor target="_blank" href="/market
 | Retargeting | Retargeting ad revenue | Daily+1 | Non-organic |  |
 | Retargeting | Conversions | 1-3 hours | Non-organic |  |
 | Retargeting | In-app events | 1-3 hours | Non-organic |  |
-| Retargeting | Sessions | 1-3 hours | Both | **✓** |
-| User acquisition | Sessions | 1-3 hours | Both | **✓** |
+| Retargeting | Sessions | 1-3 hours | Both | ✓ |
+| User acquisition | Sessions | 1-3 hours | Both | ✓ |
 | User acquisition | Uninstalls | Daily-uninstall | Non-organic |  |
 | User acquisition | Organic uninstalls | Daily-uninstall | Organic |  |
 | Reinstalls | Reinstalls | 1-3 hours | Non-organic |  |
 | Reinstalls | Organic reinstalls | 1-3 hours | Organic |  |
-| User acquisition | Cross-platform engagements | Hourly | Both | **✓** |
+| User acquisition | Cross-platform engagements | Hourly | Both | ✓ |
 
 </Accordion>
 

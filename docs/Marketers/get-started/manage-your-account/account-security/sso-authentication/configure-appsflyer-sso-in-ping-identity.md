@@ -36,7 +36,7 @@ The first step in configuring the AppsFlyer SSO process is done on the Ping Iden
 
 **Prerequisite:** A Ping Identity account with administrative privileges.
 
-1. In the Ping Identity admin menu, go to **<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/applications">Applications</Anchor>** and click **+**.
+1. In the Ping Identity admin menu, go to **<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/applications">Applications</Anchor>** and click +.
 2. From the section opened on the right:
    * Enter the name that you want to show in the Ping Identity plugin list of apps.
    * Select SAML Application as the app type.
@@ -83,7 +83,7 @@ The first step in configuring the AppsFlyer SSO process is done on the Ping Iden
 
 Now that the Ping Identity SAML application is created, let’s create user groups and then add users to the groups.
 
-1. In the Ping Identity admin menu, go to **Identity** > **<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/group">Groups</Anchor>** and click **+**.  
+1. In the Ping Identity admin menu, go to **Identity** > **<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/group">Groups</Anchor>** and click +.  
 
    <Image alt="ping" src="https://files.readme.io/fcc2a3f035a285d96d7b7c3e83cfeed64e86cb0f0807e6acced75df89bd8dfc4-16292210866705.png" width="216px" />
 2. From the section opened on the right, enter the group name and click **Save**.
@@ -95,7 +95,7 @@ Now that the Ping Identity SAML application is created, let’s create user grou
 
 <Accordion title="Create Ping identity users and assign them to groups and roles">
 
-1. In the Ping Identity admin menu, go to **Identity** > <Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/user">**Users**</Anchor> and click **+**.  
+1. In the Ping Identity admin menu, go to **Identity** > <Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/user">**Users**</Anchor> and click +.  
 
    ![ping](https://files.readme.io/802946a62c1df918b82cccc1cf0855ffea8167ed91aa6b0d6bce8973c37b4e75-16292200536081.png)
 2. From the section opened on the right:

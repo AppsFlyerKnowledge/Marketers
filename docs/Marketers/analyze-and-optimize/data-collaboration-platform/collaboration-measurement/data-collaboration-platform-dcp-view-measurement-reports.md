@@ -106,7 +106,7 @@ Under the **Filters and data sources** step:
      * Valid characters:
        * letters **(A-Z, a-z)**
        * numbers **(0-9)**, *cannot be the first character of a name*
-       * a hyphen **(-)**, *cannot be the first character of a name*
+       * a hyphen (-), *cannot be the first character of a name*
      * Invalid characters:
        * spaces
        * all other symbols or special characters

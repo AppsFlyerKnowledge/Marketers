@@ -54,7 +54,7 @@ The first stage in configuring the AppsFlyer SSO process is done on the JumpClou
 
 <Accordion title="Create JumpCloud users">
 
-1. Go to <Anchor target="_blank" href="https://console.jumpcloud.com/#/users">Users</Anchor> from the JumpCloud admin menu, and click the **+** icon.
+1. Go to <Anchor target="_blank" href="https://console.jumpcloud.com/#/users">Users</Anchor> from the JumpCloud admin menu, and click the + icon.
 2. Select **Manual user entry**.  
    <Image alt="cloud_jump_manual_user_entry.png" src="https://files.readme.io/d00299979fa5e036c464c8c6d360965d46e42d5042a31366ced7adc84914c0be-14947838808081.png" width="417px" />
 3. Enter all required fields: **Username**, **Company Email**, and click **save user**.
@@ -69,7 +69,7 @@ The first stage in configuring the AppsFlyer SSO process is done on the JumpClou
 
 Create a group and assign users to it:
 
-1. Go to <Anchor target="_blank" href="https://console.jumpcloud.com/#/groups/user">User Groups</Anchor> from the JumpCloud admin menu, and click the **+** icon.
+1. Go to <Anchor target="_blank" href="https://console.jumpcloud.com/#/groups/user">User Groups</Anchor> from the JumpCloud admin menu, and click the + icon.
 2. Enter the group name.
 3. From the **Users** tab, select the users to add to this group.
 4. From the **Applications** tab, select the AppsFlyer app you've just created.

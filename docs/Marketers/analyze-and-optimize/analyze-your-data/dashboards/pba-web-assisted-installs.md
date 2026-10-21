@@ -51,7 +51,7 @@ Consider the use-case scenarios, in the table that follows, to Web-Assisted Inst
 
 | Option 1 | Option 2 |
 | --- | --- |
-| <ol><li>In AppsFlyer, from the top menu, select **My Apps** *>* **View brand bundles**</li><li>Click PBA dashboard.</li><li>Go to the **Web-Assisted Installs** tab.</li></ol> | <ol><li>In AppsFlyer, from the side menu, select **Analyze** > **People-based Attribution.**</li><li>Go to the **Web-Assisted Installs** tab.</li></ol> |
+| <ol><li>In AppsFlyer, from the top menu, select **My Apps** > **View brand bundles**</li><li>Click PBA dashboard.</li><li>Go to the **Web-Assisted Installs** tab.</li></ol> | <ol><li>In AppsFlyer, from the side menu, select **Analyze** > **People-based Attribution.**</li><li>Go to the **Web-Assisted Installs** tab.</li></ol> |
 
 <div id="website-assisted-installs-and-reinstalls" />
 

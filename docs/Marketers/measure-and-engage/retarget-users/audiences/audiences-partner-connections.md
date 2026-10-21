@@ -339,7 +339,7 @@ Creating an S3 integration allows AppsFlyer to send the audience device IDs dire
 
     > 📘 **Note**
     >
-    > The policy must contain only the root bucket and not additional directories in the path. For example, the resource **arn:aws:s3:::BUCKET-NAME/Directory/*** is not supported. If you need the files to be transferred to a specific directory, see step 14.
+    > The policy must contain only the root bucket and not additional directories in the path. For example, the resource **arn:aws:s3:::BUCKET-NAME/Directory/\*** is not supported. If you need the files to be transferred to a specific directory, see step 14.
 
 
     The actions `PutObject`, `DeleteObject` and `ListBucket` are mandatory for AppsFlyer to perform the necessary actions on your bucket.
@@ -362,7 +362,7 @@ Creating an S3 integration allows AppsFlyer to send the audience device IDs dire
 23. Record the **Role ARN**.
 24. In the AppsFlyer S3 integration window, enter the ARN and bucket name in the appropriate fields
 
-    If you want to transfer the files into a specific folder within a bucket, provide the bucket name with the subsequent folders inside it, separated by "/" for example (bucketname **/** foldername **/** foldername).
+    If you want to transfer the files into a specific folder within a bucket, provide the bucket name with the subsequent folders inside it, separated by "/" for example (bucketname/foldername/foldername).
 
     If you provide a folder name that does not already exist, AppsFlyer creates it during the upload process.
 25. Click **Add connection**.  

@@ -56,16 +56,16 @@ The plans differ mainly by scale, link management capabilities, and access to ad
 
 | Capability | Standard | Advanced | Premium |
 | --- | --- | --- | --- |
-| User Invites | **✓** | **✓** | **✓** |
-| Smart Banners | **x** | **✓** | **✓** |
-| Smart Script | **✓** | **✓** | **✓** |
-| Branded domains | **x** | **✓** | **✓** |
-| Bulk Links | **x** | **✓** | **✓** |
+| User Invites | ✓ | ✓ | ✓ |
+| Smart Banners | **x** | ✓ | ✓ |
+| Smart Script | ✓ | ✓ | ✓ |
+| Branded domains | **x** | ✓ | ✓ |
+| Bulk Links | **x** | ✓ | ✓ |
 | OneLink API | **x** | Up to 100K requests/mo. | Up to 7.5M requests/mo. |
-| ESP integration | **x** | **x** | **✓** |
-| Data Locker | **x** | **x** | **✓** |
-| UI raw data export | **x** | **✓** | **✓** |
-| Customer Success Manager | **x** | **✓** | **✓** |
+| ESP integration | **x** | **x** | ✓ |
+| Data Locker | **x** | **x** | ✓ |
+| UI raw data export | **x** | ✓ | ✓ |
+| Customer Success Manager | **x** | ✓ | ✓ |
 
 > 📘 **Notes**
 >

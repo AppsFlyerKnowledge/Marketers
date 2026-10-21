@@ -148,7 +148,7 @@ If no PID is found in the URL, AppsFlyer evaluates the `utm_source` and `utm_med
 | chatgpt.com | none of the above* | chatgpt\_organic\_aeo (channel: aeo) |
 | perplexity | any / none | perplexity\_organic\_aeo (channel: aeo) |
 
-**If an* `oppref` *click ID is present, AppsFlyer skips this row and resolves the visit from* `oppref` *instead (see Click IDs).*
+*\*If an* `oppref` *click ID is present, AppsFlyer skips this row and resolves the visit from* `oppref` *instead (see Click IDs).*
 
 </Accordion>
 
@@ -194,7 +194,7 @@ To identify the source, AppsFlyer cleans the referrer string by:
 2. Removing **domain suffixes** (top-level domains like `.com`, `.org`, or extensions like `.co.uk`)
 3. Removing **domain prefixes** (such as `www.`, `m.`, `l.`, or `lm.`)
 
-*Example: A referrer of* `www.mywebsite.com?param=example` *resolves to a media source of* `mywebsite`*.*
+*Example: A referrer of* `www.mywebsite.com?param=example` *resolves to a media source of* `mywebsite`.
 
 #### **Referrer mapping rules**
 

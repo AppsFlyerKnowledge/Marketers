@@ -52,7 +52,7 @@ Connect to Aura from Unity by activating and setting parameters in the Integrati
 
 **To configure the integration**:
 
-1. Enable **Activate partner*.***
+1. Enable **Activate partner**.
 2. Under **General settings** enable/disable **View-through attribution**:
    * [Default] **Enable**: Activate to attribute view-through installs to Aura from Unity . The lookback window is configured in the **Attribution link** tab.
    * **Disable**: View-through installs from the partner are not attributed.
@@ -120,14 +120,14 @@ You can give Aura from Unity permission to view information or configure changes
 
 1. Enable **Ad network permissions**.
 2. Give Aura from Unity team members access to one or more of the following:
-   * **Allow to configure integration*:*** Permit the partner to set up the integration tab (except in-app event postbacks).
-   * **Allow to configure in-app event postbacks*:*** Permit the partner to map in-app event postbacks to itself on the integration tab.
-   * **Allow access to your retention report*:*** Only permit access to the partner's own retention data.
-   * **Allow access to your aggregate loyal user data*:*** Only permit access to the partner's own loyal user data.
-   * **Allow access to your aggregate in-app events data*:** O*nly permit access to the partner's own in-app events data.
+   * **Allow to configure integration**: Permit the partner to set up the integration tab (except in-app event postbacks).
+   * **Allow to configure in-app event postbacks**: Permit the partner to map in-app event postbacks to itself on the integration tab.
+   * **Allow access to your retention report**: Only permit access to the partner's own retention data.
+   * **Allow access to your aggregate loyal user data**: Only permit access to the partner's own loyal user data.
+   * **Allow access to your aggregate in-app events data***: O*nly permit access to the partner's own in-app events data.
    * **Allow access to your aggregate revenue data:** Only permit access to the revenue data attributed to the partner.
-   * **Allow spend ingestion*:*** Permit the partner to upload ad spend data for this app.
-   * **Allow access to your Protect360 dashboard*:*** Only to the partner's own **Protect360** data if the feature is enabled for the advertiser.
+   * **Allow spend ingestion**: Permit the partner to upload ad spend data for this app.
+   * **Allow access to your Protect360 dashboard**: Only to the partner's own **Protect360** data if the feature is enabled for the advertiser.
 
 </Accordion>
 

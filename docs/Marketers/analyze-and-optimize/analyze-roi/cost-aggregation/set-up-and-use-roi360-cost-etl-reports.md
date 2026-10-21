@@ -145,7 +145,7 @@ Data written to the cloud service or bucket has the directory and file structure
 | af\_bid\_strategy | Bid strategy mapped and normalized by AppsFlyer. Component of campaign properties. <Anchor target="_blank" href="/marketers/docs/campaign-properties-in-cost-etl-reports">Learn more</Anchor> | No | String | - |
 | af\_cost\_model | Cost model mapped and normalized by AppsFlyer. Component of campaign properties. <Anchor target="_blank" href="/marketers/docs/campaign-properties-in-cost-etl-reports">Learn more</Anchor> | No | String | - |
 | agency | Agency responsible for placing the ad | No | String | - |
-| app\_id | App id in the AppsFlyer platform | Yes | String | **✓** |
+| app\_id | App id in the AppsFlyer platform | Yes | String | ✓ |
 | bid\_amount | Component of campaign properties. <Anchor target="_blank" href="/marketers/docs/campaign-properties-in-cost-etl-reports">Learn more</Anchor> | No | Integer | - |
 | bid\_strategy | Component of campaign properties. <Anchor target="_blank" href="/marketers/docs/campaign-properties-in-cost-etl-reports">Learn more</Anchor> | No | String | - |
 | campaign | Component of the advertising hierarchy | No | String | - |
@@ -153,15 +153,15 @@ Data written to the cloud service or bucket has the directory and file structure
 | campaign\_objective | Component of campaign properties. <Anchor target="_blank" href="/marketers/docs/campaign-properties-in-cost-etl-reports">Learn more</Anchor> | No | String | - |
 | channel | Dimension in the advertising hierarchy | No | String | - |
 | cost\_model | Component of campaign properties. <Anchor target="_blank" href="/marketers/docs/campaign-properties-in-cost-etl-reports">Learn more</Anchor> | No | String | - |
-| currency | Currency of advertiser spend as defined for the app in AppsFlyer | Yes | 3 character string compliant with ISO-4217 | **✓** |
-| date | Date cost incurred reported by the media source | Yes | String yyyy-mm-dd | **✓** |
-| geo | Dimension in the advertising hierarchy | No | 2 character string compliant with ISO 3166 | **✓** |
+| currency | Currency of advertiser spend as defined for the app in AppsFlyer | Yes | 3 character string compliant with ISO-4217 | ✓ |
+| date | Date cost incurred reported by the media source | Yes | String yyyy-mm-dd | ✓ |
+| geo | Dimension in the advertising hierarchy | No | 2 character string compliant with ISO 3166 | ✓ |
 | keyword\_id | ID of the ASA keyword terms | Yes | String | - |
 | keyword\_term | Word(s) used by the user for online search | Yes | String | - |
-| media\_source | Media source responsible for display the ad | Yes | String | **✓** |
+| media\_source | Media source responsible for display the ad | Yes | String | ✓ |
 | original\_bid\_amount | Component of campaign properties. <Anchor target="_blank" href="/marketers/docs/campaign-properties-in-cost-etl-reports">Learn more</Anchor> | No | Integer | - |
 | original\_currency | Currency of cost as reported by the network before any conversions | No | 3 character string compliant with ISO-4217 | - |
-| os | Operating system of the device. Possible values:<ul><li>android</li><li>windowsphone</li><li>ios</li></ul> | Yes | String | **-** |
+| os | Operating system of the device. Possible values:<ul><li>android</li><li>windowsphone</li><li>ios</li></ul> | Yes | String | - |
 | platform | The platform used for running the campaign (mobile, tablet, desktop, and CTV) | All cost report only | String | - |
 | site\_id | Publisher ID | No | String | - |
 | timezone | <ul><li>Timezone of the data as it is stored in AppsFlyer</li><li>Sometimes networks report data in a different time zone compared to what is defined in AppsFlyer. This data point helps explain cost discrepancies between AppsFlyer and networks</li></ul> | Yes | String | - |
@@ -171,29 +171,29 @@ Data written to the cloud service or bucket has the directory and file structure
 | **Field** | **Remarks** | **Always populated** | **Format** | **Included in summary file** |
 | --- | --- | --- | --- | --- |
 | ccvr | <ul><li>Cost per conversion</li><li>Formula: Cost / (installs + re-attributions + re-engagements)</li></ul> |  | Integer | - |
-| clicks | <ul><li>Counted by AppsFlyer.</li><li>Includes both UA and retargeting.</li><li><Anchor target="_blank" href="/marketers/docs/about-enriched-engagement-types#engaged_click">Engaged clicks</Anchor> are subtracted from the total number of clicks.</li></ul> |  | Integer | **✓** |
+| clicks | <ul><li>Counted by AppsFlyer.</li><li>Includes both UA and retargeting.</li><li><Anchor target="_blank" href="/marketers/docs/about-enriched-engagement-types#engaged_click">Engaged clicks</Anchor> are subtracted from the total number of clicks.</li></ul> |  | Integer | ✓ |
 | clicks\_discrepancy | <ul><li>Difference between those counted by ad network and AppsFlyer</li><li>Disregard this metric if:<ul><li>There isn't a match between cost and attribution.</li><li>The ad network doesn't support <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">reported clicks.</Anchor></li></ul></li></ul> |  | Integer | - |
-| cost | Amount of spend (including agency fees where relevant) |  | Value | **✓** |
-| cost\_without\_fees | Cost minus the agency fee. Counted by AppsFlyer | Yes | Integer | **-** |
+| cost | Amount of spend (including agency fees where relevant) |  | Value | ✓ |
+| cost\_without\_fees | Cost minus the agency fee. Counted by AppsFlyer | Yes | Integer | - |
 | cpi | <ul><li>Counted by AppsFlyer</li><li>Formula: Cost / installs</li></ul> |  | Integer | - |
 | ctr | <ul><li>Click-through rate. Counted by AppsFlyer</li><li>Formula: Click / impressions</li></ul> | No | Integer | - |
 | cvr | <ul><li>Conversion rate. Counted by AppsFlyer</li><li>Formula: Install / clicks</li></ul> |  | Integer | - |
 | cvvr | <ul><li>Completed video view rate. Counted by AppsFlyer</li><li>Formula: Video completions / impressions</li></ul> |  | Integer | - |
 | ecpc | <ul><li>Counted by AppsFlyer</li><li>Formula: Cost / clicks</li></ul> |  | Integer | - |
 | ecpm | <ul><li>Counted by AppsFlyer</li><li>Formula: (Cost / impressions) * 1000</li></ul> |  | Integer | - |
-| fees | Fees an agency charges in addition to the usual ad cost. Counted by AppsFlyer | Yes | Integer | **-** |
-| impressions | <ul><li>Counted by AppsFlyer.</li><li>Includes both UA and retargeting.</li><li><Anchor target="_blank" href="/marketers/docs/about-enriched-engagement-types#engaged_view">Engaged views</Anchor>  are subtracted from the total number of impressions.</li></ul> | Yes.<br /><br />If no value is available for a particular metric, it is populated with 0. | Integer | **✓** |
+| fees | Fees an agency charges in addition to the usual ad cost. Counted by AppsFlyer | Yes | Integer | - |
+| impressions | <ul><li>Counted by AppsFlyer.</li><li>Includes both UA and retargeting.</li><li><Anchor target="_blank" href="/marketers/docs/about-enriched-engagement-types#engaged_view">Engaged views</Anchor>  are subtracted from the total number of impressions.</li></ul> | Yes.<br /><br />If no value is available for a particular metric, it is populated with 0. | Integer | ✓ |
 | impressions\_discrepancy | <ul><li>Difference between those counted by ad network and AppsFlyer</li><li>Disregard this metric if:<ul><li>There isn't a match between cost and attribution.</li><li>The ad network doesn't support <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">reported impressions.</Anchor></li></ul></li></ul> |  | Integer | - |
-| installs | Counted by AppsFlyer |  | Integer | **✓** |
+| installs | Counted by AppsFlyer |  | Integer | ✓ |
 | installs\_discrepancy | <ul><li>Difference between those counted by ad network and AppsFlyer</li><li>Disregard this metric if:<ul><li>There isn't a match between cost and attribution.</li><li>The ad network doesn't support <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">reported conversions.</Anchor></li></ul></li></ul> |  | Integer | - |
 | original\_cost | Cost as reported by the network, in the currency reported by the network before any currency conversion (with agency fees calculated by AppsFlyer added where relevant) |  | Value | - |
-| original\_cost\_without\_fees | Original cost as reported by the ad network, without agency fees | Yes | Integer | **-** |
-| re\_attributions | Counted by AppsFlyer |  | Integer | **✓** |
-| re\_engagements | Counted by AppsFlyer |  | Integer | **✓** |
-| reported\_clicks | Counted by the Media source |  | Integer | **✓** |
+| original\_cost\_without\_fees | Original cost as reported by the ad network, without agency fees | Yes | Integer | - |
+| re\_attributions | Counted by AppsFlyer |  | Integer | ✓ |
+| re\_engagements | Counted by AppsFlyer |  | Integer | ✓ |
+| reported\_clicks | Counted by the Media source |  | Integer | ✓ |
 | reported\_conversions | Counted by the Media source |  | Integer |  |
 | reported\_cvr | <ul><li>Reported conversion rate</li><li>Formula: Reported conversions / reported clicks</li></ul> |  | Integer | - |
-| reported\_impressions | Counted by the Media source |  | Integer | **✓** |
+| reported\_impressions | Counted by the Media source |  | Integer | ✓ |
 | video\_25p\_views | Video played 25%. Reported by  ad network |  | Integer | - |
 | video\_50p\_views | Video played 50%. Reported by  ad network |  | Integer | - |
 | video\_75p\_views | Video played 75%. Reported by  ad network |  | Integer | - |
@@ -557,7 +557,7 @@ Consider combining Cost ETL reports with Aggregated advanced cohort reports (or 
 | All cost report | <ul><li>Doesn't include cost data for Google Performance Max campaigns.</li><li>Doesn't support Campaign name changes</li></ul> |
 | SKAN campaign cost data | <ul><li>Cost ETL provides cost data for SKAN campaigns only if the campaign has at least one classic conversion.</li><li>For campaigns with SKAN-only conversions, cost data is available only if:<ul><li>The related ad network is Twitter (X) or Meta, or</li><li>The integration with the related ad network is marked as Inactive campaign (Column M= "Yes" in <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">this list</Anchor>).</li></ul></li></ul> |
 | CTV and PC apps support | PC and CTV apps are not supported in Cost ETL reporting. |
-| Google Web and Meta Web cost availability | To include cost data from [Google Web (`pid=googleads_int`](/docs/google-ads-adwords-create-web-based-campaigns#create-a-google-ads-integration-in-appsflyer)) and [Meta Web (`pid=metaweb_int`)](/docs/meta-ads-create-web-based-campaigns#how-to-create-a-meta-web-ads-campaign) in the All Cost report, you must create a cost connection in the Cost tab of your [Google Ads (`pid=googleadwords_int`)](/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory) and [Meta Ads (`pid=facebook_int`)](/docs/meta-ads-integration-setup#cost-clicks-and-impressions) active integrations. Without these connections Google and Meta Web cost data won’t appear in the report. |
+| Google Web and Meta Web cost availability | To include cost data from <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-create-web-based-campaigns#create-a-google-ads-integration-in-appsflyer">Google Web (`pid=googleads_int`</Anchor>) and <Anchor target="_blank" href="/marketers/docs/meta-ads-create-web-based-campaigns#how-to-create-a-meta-web-ads-campaign">Meta Web (`pid=metaweb_int`)</Anchor> in the All Cost report, you must create a cost connection in the Cost tab of your <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">Google Ads (`pid=googleadwords_int`)</Anchor> and <Anchor target="_blank" href="/marketers/docs/meta-ads-integration-setup#cost-clicks-and-impressions">Meta Ads (`pid=facebook_int`)</Anchor> active integrations. Without these connections Google and Meta Web cost data won’t appear in the report. |
 
 </Accordion>
 

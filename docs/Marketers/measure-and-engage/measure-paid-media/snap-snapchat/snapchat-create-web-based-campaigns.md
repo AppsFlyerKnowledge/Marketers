@@ -157,14 +157,14 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
 
 | AF Parameter | Mapped Snapchat value |
 | --- | --- |
-| [`pid`](/docs/about-link-structure-and-parameters#pid) | `snapweb_int` |
-| [`c`](/docs/about-link-structure-and-parameters#c) | `{{campaign.name}}`* |
-| [`af_c_id`](/docs/about-link-structure-and-parameters#af_c_id) | `{{campaign.id}}`* |
-| [`af_adset`](/docs/about-link-structure-and-parameters#af_adset) | `{{adSet.name }}`* |
-| [`af_adset_id`](/docs/about-link-structure-and-parameters#af_adset_id) | `{{adSet.id}}`* |
-| [`af_ad`](/docs/about-link-structure-and-parameters#af_ad) | `{{creative.name }}` |
-| [`af_ad_id`](/docs/about-link-structure-and-parameters#af_ad_id) | `{{ad.id}}`* |
-| [`af_channel`](/docs/raw-data-field-dictionary#attribution::1d1e08b5) | `{{site_source_name}}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#pid">`pid`</Anchor> | `snapweb_int` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#c">`c`</Anchor> | `{{campaign.name}}`* |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_c_id">`af_c_id`</Anchor> | `{{campaign.id}}`* |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_adset">`af_adset`</Anchor> | `{{adSet.name }}`* |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_adset_id">`af_adset_id`</Anchor> | `{{adSet.id}}`* |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ad">`af_ad`</Anchor> | `{{creative.name }}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ad_id">`af_ad_id`</Anchor> | `{{ad.id}}`* |
+| <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#attribution::1d1e08b5">`af_channel`</Anchor> | `{{site_source_name}}` |
 
      An example of the resulting URL should be:
 
@@ -172,7 +172,7 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
      https://app.appsflyer.com/{app_id}?pid=snapweb_int&c=__campaign_name__&af_c_id=__campaign_id__&af_adset=__aid_name__&af_adset_id=__aid__&af_ad=__cid_name__&af_ad_id=__cid__&af_r={https://Add-your-store-url.com}
      ```
 
-     * If your app’s APK is NOT hosted in Google Play Store, add the [`af_r`](/docs/about-link-structure-and-parameters#af_r) parameter and map to it the store URL, e.g, `https://Add-your-store-url.com`
+     * If your app’s APK is NOT hosted in Google Play Store, add the <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_r">`af_r`</Anchor> parameter and map to it the store URL, e.g, `https://Add-your-store-url.com`
 
 * If your destination URL is a **PC or a console store**, create the link by following the instructions in the table below. For additional information, see: <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">CTV, PC, and console platform direct attribution links</Anchor>
 
@@ -189,15 +189,15 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
 | AF Parameter | Mapped Snapchat value |
 | --- | --- |
 | `af_media_source` | `snapweb_int` |
-| `af_campaign` ***** | `{{campaign.name}}`* |
-| [`af_campaign_id`](/docs/about-link-structure-and-parameters#af_c_id) | `{{campaign.id}}`* |
-| [`af_adset`](/docs/about-link-structure-and-parameters#af_adset) | `{{adSet.name }}`* |
-| [`af_adset_id`](/docs/about-link-structure-and-parameters#af_adset_id) | `{{adSet.id}}`* |
-| [`af_ad`](/docs/about-link-structure-and-parameters#af_ad) | `{{creative.name }}` |
-| [`af_ad_id`](/docs/about-link-structure-and-parameters#af_ad_id) | `{{ad.id}}`* |
-| [`af_channel`](/docs/raw-data-field-dictionary#attribution::1d1e08b5) | `{{site_source_name}}` |
+| `af_campaign` * | `{{campaign.name}}`* |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_c_id">`af_campaign_id`</Anchor> | `{{campaign.id}}`* |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_adset">`af_adset`</Anchor> | `{{adSet.name }}`* |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_adset_id">`af_adset_id`</Anchor> | `{{adSet.id}}`* |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ad">`af_ad`</Anchor> | `{{creative.name }}` |
+| <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_ad_id">`af_ad_id`</Anchor> | `{{ad.id}}`* |
+| <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#attribution::1d1e08b5">`af_channel`</Anchor> | `{{site_source_name}}` |
 
-  ***** To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
+  * To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
 
   An example of cross-platform URL:
 
