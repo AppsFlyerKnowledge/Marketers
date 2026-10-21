@@ -191,7 +191,7 @@ By default, dimensions are removed in reverse order of their position in the **R
 
 </Accordion>
 
-
+<div id="6-set-the-report-schedule-and-destination"></div>
 
 <Accordion title="6. Set the report schedule and destination">
 
